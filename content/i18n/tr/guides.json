@@ -2074,5 +2074,1053 @@
         "answer": "Normalde hayır. Silindir serisini, boyları, bölünmeleri, kaplamaları, miktarları, profili ve anahtar kontrolü konusunda taahhüt edileni sipariş bazında yazılı olarak teyit ediyoruz. Hiyerarşinin kendisi platformun kendi masterlama kurallarına ve bizim taraf olmadığımız bir organizasyon şemasına bağlıdır; bu yüzden sistemin sahibine aittir."
       }
     ]
+  },
+  "material-traceability-mill-certs-2026": {
+    "title": "Malzeme İzlenebilirliği 2026: EN 10204 Tip 2.1, 2.2, 3.1 ve 3.2, Döküm Numaraları ve Bir Donanım Fabrikasının Dürüstçe İzleyebilecekleri",
+    "summary": "\"Malzeme sertifikasını gönderin\" dört farklı belge anlamına gelir ve aralarındaki fark, belgeyi kimin imzaladığı ve testin sizin metalinizde yapılıp yapılmadığıdır. Bu sayfa EN 10204 belge tiplerini ortaya koyuyor, döküm numaralarını ve küçük donanımda izlenebilirlik zincirinin gerçekte nerede koptuğunu açıklıyor, malzeme izlenebilirliğini RoHS ve REACH uyumundan ayırıyor ve bir kapı donanımı fabrikasının bunlardan hangilerini dürüstçe sağlayabileceğini söylüyor.",
+    "seoTitle": "Malzeme İzlenebilirliği 2026: EN 10204 3.1 ve 3.2, Döküm No",
+    "seoDescription": "EN 10204 belge tipleri 2.1, 2.2, 3.1 ve 3.2, döküm numarasının neyi izlediği ve bir kapı donanımı fabrikasının malzemesi için neyi belgeleyebileceği.",
+    "body": [
+      "\"Malzeme sertifikasını gönderebilir misiniz?\" neredeyse her ciddi donanım talebinde sorulur ve kimin cevapladığına bağlı olarak gerçekten birbirinden farklı dört belgeyle cevaplanır.",
+      "Farklar titizlik dereceleri değildir. Testi kimin yaptığı, testin sizin malzemenizde yapılıp yapılmadığı ve sayfadaki imzanın kime ait olduğu farklarıdır; hangisini aldığını bilmeyen bir alıcı elinde bir kanıt mı yoksa bir mektup mu olduğunu ayırt edemez.",
+      "## Dört EN 10204 belge tipi",
+      "EN 10204, metalik ürünlerin muayene belgeleri için Avrupa standardıdır. Dört tip tanımlar ve bunları ayıran iki eksen, özel ve özel olmayan test ile sonucu kimin onayladığıdır.",
+      "| Tip | Nedir | Sizin malzemenizde test edildi mi? | İmzalayan |\n| --- | --- | --- | --- |\n| 2.1 | Siparişe uygunluk beyanı | Hiç test sonucu yok | Üretici |\n| 2.2 | Test raporu | Hayır: özel olmayan testten sonuçlar | Üretici |\n| 3.1 | Muayene sertifikası | Evet: teslim edilen üründe özel test | Üreticinin, üretim bölümünden bağımsız muayene temsilcisi |\n| 3.2 | Muayene sertifikası | Evet | Bu temsilci ile alıcının muayene görevlisi ya da mevzuatla atanmış bir görevli |",
+      "Önemli olan çizgi 2.2 ile 3.1 arasından geçer. 2.x düzeyindeki her şey size üreticinin malzemesinin genel olarak ne olduğunu söyler; 3.x düzeyindeki her şey ise sizin malzemenizin özel olarak ne olduğunu, onu üreten kişiye bağlı olmayan biri tarafından test edilip imzalanmış olarak söyler.",
+      "2.1 değersiz değildir; siparişin karşılandığına dair sözleşmesel bir beyandır ve pek çok ürün için orantılıdır. Yalnızca bir test sonucu değildir ve 3.1 isteyen bir şartname, iyi sunulmuş bir 2.1 ile karşılanmış olmaz.",
+      "## Döküm numarası gerçekte neyi izler",
+      "Döküm numarası, haddehanedeki tek bir ergitmeyi tanımlar. O ergitmeden dökülen her kilogram aynı kimyasal bileşimi paylaşır ve o döküm için bir 3.1 sertifikası, üzerinde ölçülen analizi ve mekanik özellikleri belirtir.",
+      "Malzeme büyük ve az sayıdayken bu güçlü bir zincirdir: bir levha, bir çubuk, bir rulo. Her parça numarayı damgalı ya da kazınmış olarak taşıyabilir ve sertifika parçayı izler.",
+      "Zincirin zayıfladığı yer tam olarak kapı donanımının bulunduğu yerdir. Tek bir ergitme tonlarca çubuğa dönüşür; çubuk yüz binlerce küçük parçaya kesilir; parçalar kasalara girer. Bir kol, bir kasadaki kırk bin özdeş koldan biri olduğunda bir döküm numarası taşımaz ve tüm partiyi ayrı tutmaktan başka hiçbir şey ona bir numarayı geri koyamaz.",
+      "Dolayısıyla küçük donanım için dürüst ifade şudur: bir dökümle izlenebilirlik bir parçanın değil, *ayrı tutulmuş bir partinin* özelliğidir. Bir projenin buna ihtiyacı varsa bu üretimden önce belirtilmelidir, çünkü fabrikanın malzemeyi nasıl ele aldığını değiştirir ve bir maliyeti vardır, çünkü ayrı tutulan partiler birleştirilemez.",
+      "## Zincirin koptuğu iki yer daha; ikisi de sahtekârlık değil",
+      "Yüzey işlemi: bir parça çoğu zaman fabrika dışında uzman bir firma tarafından kaplanır ya da boyanır. Ana metalin dökümü bilinebilir; kaplama banyosunun kimyası ise ayrı bir şirketin tuttuğu ayrı bir kayıttır ve ikisini kapsayan bir sertifika bir değil iki belgedir.",
+      "Çok parçalı montajlar: bir gömme kilit; gövde, ön alın, dil, göbek, yaylar ve bağlantı elemanlarından oluşur ve bunlar çoğu zaman farklı tedarikçilerden ve farklı ergitmelerden gelir. Bir kilit için tek bir \"malzeme sertifikası\" bir kategori hatasıdır; var olan, sertifikası olan bileşenler için bileşen başına bir sertifikadır.",
+      "Bunların hiçbiri bir fabrikanın kaçamak yapması değildir. Tedarik zincirinin biçimidir ve monte edilmiş bir kilit için hiçbir kayıt koymadan \"evet, tam izlenebilirlik\" diyen bir tedarikçi, doğru olamayacak bir şey söylemiştir.",
+      "## Malzeme izlenebilirliği RoHS değildir, REACH de değildir",
+      "Bu üçü tek bir cümlede istenir ve tek bir şeymiş gibi cevaplanır. Değildirler.",
+      "| Belge | Cevapladığı | Tipik biçim |\n| --- | --- | --- |\n| EN 10204 3.1 | Bu metal kimyasal ve mekanik olarak nedir | Döküm numaralı haddehane sertifikası |\n| RoHS beyanı | Kısıtlanmış tehlikeli maddeler sınırlarının altında mı | Beyan, çoğu zaman destekleyici test raporlarıyla |\n| REACH beyanı | Çok yüksek önem arz eden maddeler eşiğin üzerinde var mı | Güncel aday listeye göre beyan |\n| Çatışma mineralleri | Kalay, tantal, tungsten ve altın nereden geldi | Tedarik zinciri beyanı |",
+      "Bir RoHS beyanı çekme dayanımı hakkında hiçbir şey söylemez. Bir haddehane sertifikası kısıtlanmış maddeler hakkında hiçbir şey söylemez. \"Sertifikaları\" isteyip bunlardan birini almak sorunuza kısmi bir cevap değildir; başka bir soruya tam bir cevaptır.",
+      "REACH satırı adını koymaya değer bir tuzak taşır: aday liste periyodik olarak revize edilir, dolayısıyla bir REACH beyanı bir tarih itibarıyla doğrudur. Üzerinde tarih olmayan bir beyan kullanılamaz ve üç yıl önceki bir beyan dosyalanmak yerine yenilenmelidir.",
+      "## Ne istenmeli, cevap getiren sırayla",
+      "Belge tipini açıkça adlandırın. \"Kilit gövdesi için EN 10204 3.1\" cevaplanabilir; \"malzeme sertifikası\" ise fabrikanın elindeki en yakın belgeyi getirir.",
+      "Ürünü değil bileşeni adlandırın. Yukarıdaki montaj konusuna bakın.",
+      "Buna üretimden önce mi sonra mı ihtiyacınız olduğunu söyleyin. Belirli bir parti için 3.1 planlanmalıdır; 2.1 ise mevcut bir siparişe karşı düzenlenebilir. Mallar sevk edilip stoğa karıştıktan sonra 3.1 istemek, artık var olmayan bir şeyi istemektir.",
+      "Şartın nereden geldiğini söyleyin. Bir şartname maddesi, bir gümrük şartı ve bir iç kalite politikası farklı belgelere götürür ve hangisine cevap verdiğinizi bilen bir fabrika size daha ucuz bir belgenin onu karşılayıp karşılamadığını söyleyebilir.",
+      "## Size gönderilen bir sertifikada beş kontrol",
+      "Kötü sertifikaların çoğu sahte değildir. Başka bir şeye ait gerçek belgelerdir ve elde en yakın o olduğu için iletilmişlerdir. Bu beş kontrol neredeyse hepsini yakalar ve yaklaşık iki dakika sürer.",
+      "Sertifikadaki malzeme kalitesi siparişinizdeki kaliteyle eşleşiyor mu? 304 siparişine eklenmiş 201 paslanmaz için bir sertifika en yaygın tek uyuşmazlıktır ve ikisi elde görünüş olarak aynıdır. Nedenini paslanmaz sayfalarımız anlatıyor.",
+      "Sertifikadaki miktar ya da parti siparişinizi makul biçimde kapsıyor mu? İki tonluk bir dökümü adlandıran bir 3.1, beş farklı dökümü barındıran bir kasadan çekilmiş bir siparişin kanıtı olamaz.",
+      "Düzenleyen taraf adresiyle birlikte adlandırılmış mı? Haddehane sertifikasını haddehane düzenler. Size parçaları satan ticaret şirketinin, kendisine verilen rakamları yeniden yazarak düzenlediği bir belge sertifika değil, bir kopyadır.",
+      "Tarihli mi ve tarih üretiminizden önce mi? Mallar sevk edildikten sonra tarihlenmiş bir sertifika bir testi kaydetmek için değil, sorunuzu cevaplamak için yazılmıştır.",
+      "Belge testin hangi standarda göre yapıldığını söylüyor mu? Yanında yöntem olmayan bir sayı tablosunu, yazan kişi dahil hiç kimse kontrol edemez.",
+      "Bir sertifika bunlardan birinde kalırsa yararlı tepki ret değil, belirli bir sorudur. \"Bu, sevkiyatımızdan sonra tarihlenmiş; parçalarımızın geldiği döküm için daha önceki bir sertifika var mı?\" cevaplanabilir bir sorudur ve cevap size nasıl bir tedarikçiyle çalıştığınızı söyler.",
+      "## Kendi malzememiz hakkında neler söyleyebiliriz",
+      "Her ürünün malzemesini ve kaplamasını tedarik ettiğimiz şekliyle yayımlıyoruz: alaşım ailesi, kaplama kodu ve bir model birden fazlasıyla tedarik ediliyorsa hepsi.",
+      "Yapmadığımız şey toptan bir izlenebilirlik iddiası yayımlamaktır, çünkü dürüst cevap bileşene ve partinin ayrı tutulup tutulmadığına bağlıdır. Belgeler sayfamız test belgelerini talep üzerine sunulan belgeler olarak listeliyor ve oradaki \"talep üzerine\", istediğinize benzeyen bir belge göndermek yerine her sipariş için tam o bileşenlerde neyin var olduğunu size söylediğimiz anlamına gelir.",
+      "Bir proje belirli bir bileşen için EN 10204 3.1 gerektiriyorsa bu, sonradan işaretlenen bir kutu değil, üretimden önceki bir konuşmadır; parti ayırmanın maliyeti de sessizce üstlenilip sonra fiyatta keşfedilmek yerine açıkça belirtilir.",
+      "## Bir kâğıt parçası konusunda neden bu kadar dikkatliyiz",
+      "Çünkü arıza biçimi gecikmeli ve pahalıdır. Ödünç alınmış bir sertifika, 3.1 diye sunulan bir 2.2 ya da hiç ayrı tutulmamış bir parçaya iliştirilmiş bir döküm numarası, o gün muayeneden geçer.",
+      "Sonra, bir denetimde, birinin kontrol ettiği bir projede kalırlar ve kalan tek bir belge değildir. Tedarikçinin şimdiye kadar yayımladığı diğer her rakamdır, çünkü dayanıksız çıkan tek bir kâğıt bulan alıcının diğerlerinden hangilerinin dayandığını bilmesinin yolu yoktur.",
+      "Bu, bir ölçü eksik olduğunda tire koymakla aynı mantıktır. Eksik bir belge bir soruya mal olur; uydurulmuş bir belge ise müşterinin kendisine.",
+      "Yukarıdaki beş kontrolün uzaklaşma gerekçeleri olarak değil, gönderilecek sorular olarak yazılmasının nedeni budur. Bunları kesin biçimde cevaplayan bir tedarikçi, evrakı ilk seferde düzgün olan birinden daha değerlidir, çünkü artık sorduğunuzda ne olduğunu biliyorsunuz. Zor bir soruya kesin bir cevap, bir fabrikanın verebileceği en ucuz kalite sinyalidir ve bir denetimden sağ çıkan tek sinyaldir."
+    ],
+    "faq": [
+      {
+        "question": "EN 10204 3.1 ile 3.2 arasındaki fark nedir?",
+        "answer": "İkisi de gerçekte teslim edilen malzemede yapılmış özel testi belgeler. 3.1'i üreticinin, üretim bölümünden bağımsız olması gereken muayene temsilcisi onaylar. 3.2 ise ikinci bir imza ekler: alıcının muayene görevlisi ya da resmî mevzuatla atanmış bir görevli."
+      },
+      {
+        "question": "2.2 test raporu yeterli mi?",
+        "answer": "Ne istediğinize bağlı. 2.2 özel olmayan bir testi raporlar; size sizin malzemenizin özel olarak ne olduğunu değil, üreticinin malzemesinin genel olarak ne olduğunu söyler. Bir şartname 3.1'i adlandırıyorsa iyi sunulmuş bir 2.2 onu karşılamaz, çünkü ayrımın tamamı sizin partinizin test edilip edilmediğidir."
+      },
+      {
+        "question": "Küçük bir donanım parçası döküm numarası taşıyabilir mi?",
+        "answer": "Ancak partisi bilinçli olarak ayrı tutulduysa. Tek bir ergitme tonlarca çubuğa, sonra kasalarda yüz binlerce küçük parçaya dönüşür; bir kol kırk bin özdeş koldan biri olduğunda hiçbir şey ona bir döküm numarasını geri koyamaz. Bir dökümle izlenebilirlik bir parçanın değil, ayrı tutulmuş bir partinin özelliğidir."
+      },
+      {
+        "question": "Komple bir gömme kilit için tek bir malzeme sertifikası alabilir miyim?",
+        "answer": "Hayır ve bunu teklif eden bir tedarikçi doğru olamayacak bir şey söylemiştir. Bir kilit; gövde, ön alın, dil, göbek, yaylar ve bağlantı elemanlarıdır ve bunlar çoğu zaman farklı tedarikçilerden ve farklı ergitmelerden gelir. Var olan, sertifikası olan bileşenler için bileşen başına bir sertifikadır."
+      },
+      {
+        "question": "RoHS beyanı malzeme izlenebilirliğini kapsar mı?",
+        "answer": "Hayır. RoHS kısıtlanmış tehlikeli maddelerin sınırlarının altında olup olmadığını cevaplar; haddehane sertifikası metalin kimyasal ve mekanik olarak ne olduğunu. Farklı sorulara tam cevaplardır. REACH üçüncü bir belgedir ve aday liste periyodik olarak revize edildiği için üzerinde tarih olmayan bir REACH beyanı kullanılamaz."
+      },
+      {
+        "question": "3.1'i ne zaman istemeliyim?",
+        "answer": "Üretimden önce. Belirli bir partide 3.1, fabrikanın malzemeyi ele alış biçimini değiştirir (ayrı tutulan partiler birleştirilemez); bu yüzden planlanmalıdır ve bir maliyeti vardır. Mallar sevk edilip stoğa karıştıktan sonra istemek, artık var olmayan bir şeyi istemektir."
+      }
+    ]
+  },
+  "moq-tooling-and-lead-time-2026": {
+    "title": "MOQ, Kalıp ve Termin 2026: Minimumu Gerçekte Ne Belirler ve Neden Hem 300 Hem 5.000 Doğrudur",
+    "summary": "Bir alıcı minimum sipariş miktarını sorar ve bir aralık alır; bu kaçamak gibi okunur ama değildir. Bu sayfa bir MOQ'yu gerçekte belirleyen dört şeyi (kaplama partisi, kalıp, ambalaj ve modelin kendi üretim serisi), yayımladığımız aralığın neden 300 ile 5.000 adet arasında olduğunu, 30 günlük terminin gerçekte neyi saydığını ve bir alıcının bunların hepsini lehine çevirebilecek üç kararını açıklıyor.",
+    "seoTitle": "MOQ, Kalıp ve Termin 2026: Minimumu Ne Belirler",
+    "seoDescription": "Kapı donanımında MOQ'yu ne belirler (kaplama partisi, kalıp, ambalaj, üretim serisi), aralık neden 300 ile 5.000 adet ve 30 günlük termin neyi sayar.",
+    "body": [
+      "\"MOQ'nuz nedir?\" çoğu ilk e-postadaki ikinci sorudur ve gelen cevap neredeyse her zaman bir aralıktır. Bu, tedarikçinin seçeneklerini açık tutması gibi okunur. Değildir; tek dürüst cevap budur ve nedenini anlamaya değer, çünkü size tam olarak hangi kolları çekebileceğinizi söyler.",
+      "Yayımladığımız aralık çoğu model için 300 ile 5.000 adettir ve bu iki sayı arasındaki fark pazarlık payı değildir. Gerçekten farklı iki üretim durumu arasındaki farktır.",
+      "MOQ'YU BELİRLEYEN DÖRT ŞEY",
+      "Kaplama partisi. En büyüğü budur ve en az göze çarpanıdır. Bir kaplama ya da boya hattı parti hâlinde çalışır ve partinin, tankların hacmi ve kaplamalar arası geçiş süresiyle belirlenen asgari ekonomik bir büyüklüğü vardır. Altı kaplamada sunulan bir modelin tek bir MOQ'su yoktur; kaplama başına bir MOQ'su vardır, çünkü her kaplama ayrı bir seridir.",
+      "Bir siparişi kaplamalara bölmenin toplam minimumu düşürmek yerine yükseltmesinin nedeni budur. Tek kaplamada beş yüz adet tek bir partidir. Beş kaplamaya yüzer adet bölünmüş beş yüz adet ise her biri kendi ekonomik minimumunun altında kalan beş partidir. Ambalaj verilerimizin aynı modeli iki kaplamada tamamen farklı koli ölçüleriyle göstermesinin nedeni de budur: operasyonel olarak iki ayrı üründürler.",
+      "Kalıp. Bir döküm ya da bir pres parçası bir kalıp ister ve kalıbın, ondan kaç parça çıkarsa çıksın her seride ödenen bir kurulum maliyeti vardır. Zaten üretimde olan bir model için kalıp amorti edilmiştir ve MOQ düşük olabilir. Yeni bir geometri için kalıbın işlenmesi gerekir ve ilk seri, bu işlemeyi haklı çıkaracak kadar büyük olmalıdır.",
+      "Ambalaj. Baskılı koliler, baskılı iç kutular ve baskılı talimat sayfalarının hepsinin kendi baskı minimumları vardır ve bu minimumlar çoğu zaman donanım minimumundan yüksektir. Kutunun üzerinde kendi markasını isteyen bir alıcı, sipariş büyüklüğünü kilidin değil kutunun belirlediğini görebilir.",
+      "Üretim serisinin kendisi. Montaj hatları bir model için kurulur ve sonra çalıştırılır. Geçiş maliyeti gerçektir ve belirli bir büyüklüğün altındaki bir seri, çalışmaktan çok kurulumla vakit geçirir.",
+      "NEDEN HEM 300 HEM 5.000 DOĞRUDUR",
+      "Kalıbı hazır, standart bir kaplamada olan ve stok koliye paketlenen bir model aralığın altında yer alır. Fabrika zaten yapacağı bir şeyi, normal bir partiye uyan bir büyüklükte yapıyordur.",
+      "Alıcının şartnamesine göre üretilen bir model (stokta tutmadığımız bir kaplama, özel bir backset, baskılı bir kutu, değiştirilmiş bir geometri) üst uçta yer alır, çünkü yukarıdaki dört etkenin her biri sıfırlanır.",
+      "Alibaba mağazamızda zaten listelenen bazı ürünler, siparişe göre üretilmek yerine stoktan satılan stok ürünler oldukları için ikisinden de düşük bir yayımlanmış minimuma sahiptir. Bu beşinci bir durumdur ve miktar küçükse ilk sorulması gereken odur.",
+      "30 GÜNLÜK TERMİN NEYİ SAYAR",
+      "Üretim terminimiz sipariş teyidinden itibaren 30 günden başlar ve burada işi gören ifade \"sipariş teyidinden itibaren\"dir.",
+      "Saat, talep geldiğinde değil, şartname kapandığında ve avans alındığında başlar. O noktadan önceki her şey şartnamedir ve şartname süresi tamamen alıcının kontrolündedir.",
+      "30 günün içinde malzeme tedariki, döküm ya da pres, talaşlı işleme, yüzey işlemi, montaj, kontrol ve paketleme vardır. Yüzey işlemi genellikle en uzun tek bloktur ve fikir değişikliğine en açık olandır, çünkü parçalar var olmadan başlanamaz ve sökülmeden yeniden yapılamaz.",
+      "30 günün dışında malları size ulaştırmakla ilgili her şey vardır: rezervasyon, limana iç nakliye, gümrük, sefer ve varış noktasındaki gümrükleme. 35 günlük bir sefer üzerindeki 30 günlük bir üretim terminini, 65 günün üzerinde bir varış demektir ve 30 güne göre plan yapan bir alıcı fabrika yüzünden değil, aritmetik yüzünden hayal kırıklığına uğrar.",
+      "BUNLARIN HEPSİNİ DEĞİŞTİREN ÜÇ KARAR",
+      "Kaplamaları birleştirin. Bir alıcının yapabileceği en etkili tek şey budur. İki kaplamada 2.000 adetlik bir sipariş, altı kaplamaya dağılmış 2.000 adetten daha kolay ve daha ucuz üretilir ve daha tutarlı bir sonuç da verir, çünkü bir kaplama partisindeki her şey birlikte kaplanır.",
+      "Tarih sormadan önce şartnameyi kapatın. Çözülmemiş her soru (backset, mil boyu, yön, kaplama kodu, ambalaj) saatin işlemediği bir gündür. Bir siparişin gerçekten tamamlanması için neye ihtiyaç olduğunu altı değer sayfamız listeliyor.",
+      "Numuneyi siparişten ayırın. Numune, bizim anladığımızın sizin kastettiğiniz olduğunu teyit eder ve farkı bir konteynerde keşfetmekten çok daha ucuzdur. Numuneyi avanstan sonra değil, şartname hâlâ açıkken isteyin.",
+      "KALIBIN MALİYETİ VE BUNU SİZ SORMADAN NEDEN SÖYLEYECEĞİMİZ",
+      "Bir modelin yeni kalıba ihtiyacı varsa bu ayrı bir maliyet, ayrı bir zaman çizelgesi ve ayrı bir karardır ve birim fiyata katılmak yerine bu şekilde belirtilmelidir.",
+      "Yeni bir panik çıkış cihazı için kalıp yapmanın neler gerektirdiğini başka bir yazıda anlattık; kısa versiyonu şudur: kalıp, bir alıcı ile bir fabrikanın birbirine gerçekten bağlandığı noktadır. Kalıp bir geometri için işlenir. Devredilemez, iade edilemez ve işleme kararı rakamlar görünür durumdayken verilmelidir.",
+      "Düşük bir birim fiyat verip kalıptan söz etmeyen bir tedarikçi size para kazandırmamıştır; bir maliyeti, onunla daha sonra karşılaşacağınız bir yere taşımıştır.",
+      "GERÇEK BİR RAKAM ALMAK İÇİN BİZE NE GÖNDERMELİSİNİZ",
+      "Model numaraları. Her biri için kaplama. Toplam değil, her model-kaplama kombinasyonu için miktar. Ambalajın bizim mi sizin mi olduğu. Katalog şartnamesinden farklı bir şey olup olmadığı.",
+      "Bu beşiyle ihracat ekibi, siz hiçbir şeye bağlanmadan önce tam o kalem için minimumu ve bir tarihi teyit edebilir. Bunlar olmadan her MOQ rakamı bir aralıktır ve dürüst bir tedarikçi, soru henüz daraltılmamışken tam olarak bir aralık verir."
+    ],
+    "faq": [
+      {
+        "question": "Minimum sipariş miktarınız nedir?",
+        "answer": "Çoğu model, modele, kaplamaya ve siparişin stoktan mı yoksa sizin şartnamenize göre mi üretileceğine bağlı olarak 300 ile 5.000 adet arasındadır. Alibaba mağazamızda zaten listelenen bazı ürünler, siparişe göre üretilmek yerine stoktan satıldıkları için daha düşük bir yayımlanmış minimuma sahiptir."
+      },
+      {
+        "question": "MOQ neden bir sayı değil de bir aralık?",
+        "answer": "Çünkü onu dört ayrı şey belirler: kaplama partisi büyüklüğü, kalıbın zaten amorti edilmiş olup olmadığı, ambalajdaki baskı minimumları ve üretim serisi geçişi. Kalıbı hazır, stok kaplamada, stok kolideki bir model altta yer alır. Şartnameye göre üretilen bir model dördünü de sıfırlar ve üstte yer alır."
+      },
+      {
+        "question": "Siparişimi kaplamalara bölmek minimumu düşürür mü?",
+        "answer": "Yükseltir. Her kaplama, kendi ekonomik minimumu olan ayrı bir kaplama ya da boya partisidir. Tek kaplamada beş yüz adet tek bir partidir; beş kaplamaya yüzer adet ise her biri kendi minimumunun altında kalan beş partidir. Kaplamaları birleştirmek bir alıcının yapabileceği en etkili tek şeydir."
+      },
+      {
+        "question": "30 günlük termin gerçekte neyi sayar?",
+        "answer": "Yalnızca üretimi; talepten değil, sipariş teyidinden ve avanstan itibaren. Malzeme tedarikini, döküm ya da presi, talaşlı işlemeyi, yüzey işlemini, montajı, kontrolü ve paketlemeyi kapsar. Rezervasyonu, iç nakliyeyi, gümrüğü, seferi ya da varış noktasındaki gümrüklemeyi içermez."
+      },
+      {
+        "question": "Termini nasıl kısaltabilirim?",
+        "answer": "Tarih sormadan önce şartnameyi kapatın, çünkü saat şartname kapanmadan başlamaz. Kaplamaları birleştirin. Ve numuneyi avanstan sonra değil şartname hâlâ açıkken alın; böylece bir yanlış anlama bir konteynere değil bir numuneye mal olur."
+      },
+      {
+        "question": "Kalıp nasıl fiyatlandırılır?",
+        "answer": "Birim fiyata katılmadan, ayrı bir zaman çizelgesiyle ayrı bir maliyet olarak. Kalıp tek bir geometri için işlenir: devredilemez ve iade edilemez; bu yüzden karar rakamlar görünür durumdayken verilmelidir. Kalıptan söz etmeyen düşük bir birim fiyat bir maliyeti ortadan kaldırmamış, taşımıştır."
+      }
+    ]
+  },
+  "mortise-lock-case-comparison-2026": {
+    "title": "Gömme Kilit Gövdesi Karşılaştırması 2026: Yayımlanan Tüm Backset ve Aks Mesafesi Değerleri Yan Yana",
+    "summary": "Gömme kilit gövdelerimizden 32'si hem backset hem aks mesafesi yayımlıyor. İşte hepsi, dar profil ve standart olmak üzere iki tabloda; adlandırma tuzakları ve eksikler açıkça belirtilerek.",
+    "seoTitle": "Gömme Kilit Gövdeleri: Backset ve Aks Mesafesi Tablosu",
+    "seoDescription": "Backset ve aks mesafesi yayımlanan tüm gömme kilit gövdelerimiz iki tabloda: 20–35 mm dar profil ve 40–90 mm standart backset.",
+    "body": [
+      "Her gömme kilit gövdesi her şeyden önce iki sayıyla tanımlanır: kapı kenarının yüzünden mil merkezine kadar olan backset ve milden silindir merkezine kadar olan aks mesafesi. Bu ikisini doğru alırsanız kol ve anahtar kapıdaki deliklerle hizalanır. Birini yanlış alırsanız kilitle ilgili başka hiçbir şeyin önemi kalmaz, çünkü delikler zaten açılmıştır.",
+      "Bu rehber, kataloğumuzda iki sayıyı da yayımlayan tüm kilit gövdelerini (Eylül 2026 itibarıyla 58 kilit gövdesi kaydından 32'si) yan yana koyuyor; böylece bir alıcı 58 ürün sayfasını okumak yerine kapıya uyan gövdeyi bulabilir. Tablolar o sayfalardaki şartname satırlarından üretilmiştir; içlerinde tahmini hiçbir şey yoktur.",
+      "TABLOLAR NASIL OKUNUR",
+      "İki ölçü de milimetre olarak, yanında inç karşılığıyla yayımlanır. Backset, arkasındaki gövdeden değil, ön alının dış yüzünden ölçülür. Aradaki fark ön alın kalınlığıdır ve bir kolu rozeti üzerinde eksenden kaydırmaya yeter. Aks mesafesi, kare mil deliğinin merkezi ile silindir deliğinin merkezi arasında ölçülür. Bir kayıt ayrıca bir silindir tipi, bir sürgü düzeni ya da bir ön alın ölçüsü yayımlıyorsa son sütunda görünür; \"yayımlanmadı\", özelliğin olmadığı değil, kaydın bunu belirtmediği anlamına gelir.",
+      "İKİ AİLE: DAR PROFİL VE STANDART",
+      "Sayıların gösterdiği ilk şey, kilit gövdelerimizin örtüşmeyen iki aileye ayrıldığıdır. 20 ila 35 mm backset'ler dar profil gövdelerdir; dikey kayıtı geleneksel bir kilidi alamayacak kadar dar olan alüminyum doğramalı kapılar için üretilmiştir ve 32'nin 12'si bu gruptadır. 40 mm ve üzeri backset'ler ahşap ve çelik kapılar için standart gövdelerdir ve 20'si bu gruptadır. Alüminyum kapıların neden sarktığını anlatan yazımız, dar profil bir kapının neden kendine özgü bir kilit gövdesine ihtiyaç duyduğunu ve standart bir gövdenin kısa backset'li bir versiyonunu neden öylece alamayacağını açıklıyor.",
+      "Dar profil gövdeler, backset'e göre:",
+      "| Model | Backset | Aks mesafesi | Silindir | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| LC8520 | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8520B | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8520PS | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| 140 | 25 mm (1\") | 72 mm (2-13/16\") | yayımlanmadı | ön alın 183,5 × 20 mm |\n| LC8525 | 25 mm (1\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8525B | 25 mm (1\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| AI8530 | 30 mm (1-3/16\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC8530BK | 30 mm (1-3/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8530PS | 30 mm (1-3/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC9230 | 30 mm (1-3/16\") | 92 mm (3-5/8\") | yayımlanmadı | yayımlanmadı |\n| LC8535 | 35 mm (1-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8535B | 35 mm (1-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |",
+      "Standart gövdeler, backset'e göre:",
+      "| Model | Backset | Aks mesafesi | Silindir | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| LC02 85×40mm | 40 mm (1-9/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC03 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC07 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | ön alın 240 × 23 mm |\n| LC22 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC34 50×72mm | 50 mm (1-15/16\") | 72 mm (2-13/16\") | Avrupa profil | yayımlanmadı |\n| LC06 85_50PS | 50 mm (1-15/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC14 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | Avrupa profil | Dört yuvarlak sürgü |\n| LC21 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC33-5572 | 55 mm (2-3/16\") | 72 mm (2-13/16\") | Avrupa profil | yayımlanmadı |\n| LC08 85×55mm | 55 mm (2-3/16\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC6860 | 60 mm (2-3/8\") | 68 mm (2-11/16\") | yayımlanmadı | yayımlanmadı |\n| LC04 85*60 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Avrupa profil | Dört yuvarlak sürgü |\n| LC05 8560 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC09 85×60mm | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC32 65×72mm | 65 mm (2-9/16\") | 72 mm (2-13/16\") | yayımlanmadı | yayımlanmadı |\n| LC7065 | 70 mm (2-3/4\") | 65 mm (2-9/16\") | yayımlanmadı | yayımlanmadı |\n| LC7065PS | 70 mm (2-3/4\") | 65 mm (2-9/16\") | Avrupa profil | yayımlanmadı |\n| LC7065S | 70 mm (2-3/4\") | 65 mm (2-9/16\") | yayımlanmadı | yayımlanmadı |\n| LC04 85*70 | 70 mm (2-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC9045 | 90 mm (3-9/16\") | 45 mm (1-3/4\") | yayımlanmadı | yayımlanmadı |",
+      "KOLU AKS MESAFESİ BELİRLER",
+      "Yayımlanan gövdeler arasında 85 mm (3-3/8\") açık ara en yaygın aks mesafesidir: 32'nin 22'si, on iki dar profil gövdenin onu dahil. Diğerleri 92 mm (LC9230), 72 mm (dört gövde: 140, LC34 50×72mm, LC33-5572 ve LC32 65×72mm), 68 mm (LC6860), 65 mm (üç gövde: LC7065, LC7065PS ve LC7065S) ve 45 mm'dir (LC9045).",
+      "Bu önemlidir, çünkü aks mesafesi kolla ortaktır. Uzun plakalı bir kol ve silindir deliğini aynı plaka üzerinde taşıyan her aksesuar tek bir aks mesafesine göre delinir ve yalnızca aynı mesafedeki bir kilit gövdesiyle çalışır. Yeni bir kapıda önce aks mesafesini, sonra kolu seçin. Yedek parçada mevcut delikler bunu sizin için zaten seçmiştir: onları ölçün ve her şeyden önce o sayıyı tablolarda arayın. Paslanmaz 9000 kolları ve LH kol serisi hakkındaki yazılarımız, bir plakanın delik aralığının gövdeyle nasıl eşleştirildiğini açıklıyor.",
+      "Farklı pazarlar farklı aks mesafelerinde standartlaşır ve birkaç pazara hizmet veren bir tedarikçi birkaçını stokta tutar. Böyle bir serinin 72 mm ve 92 mm'nin yanında 85 mm taşımasının nedeni budur: her biri birilerinin kapıları için doğru cevaptır.",
+      "KISA BACKSET'İN BEDELİ",
+      "Dar profil bir gövde bir sorunu çözer ve başka bir sorun yaratır. 20 ya da 25 mm backset ile mil kapı kenarına çok yakın durur, kol da öyle; bu da kol ile kasa ya da çift kanatlı bir kapıda komşu kanat arasındaki boşluğun küçük olduğu anlamına gelir. Uzun dönüşlü bir kol ya da bir topuz, kapı her açıldığında parmak eklemlerini kasaya sıkıştırabilir. Dar profil kapılara ahşap kapıya uyan kollar yerine genellikle dar profil kollar, çekme kolları ya da itme pedleri takılmasının ve backset'in koldan önce değil kolla birlikte seçilmesi gerekmesinin nedeni budur. Kayıt 30 ya da 35 mm'ye izin veriyorsa ek alan yalnızca el için bile almaya değer.",
+      "MODEL NUMARALARINDAKİ EKLER",
+      "Birkaç gövde rakamlardan sonra harf taşır: LC8520B, LC8525B ve LC8535B'de B; LC8530BK'de BK; LC8520PS, LC8530PS, LC06 85_50PS ve LC7065PS'te PS; LC7065S'te S. Silindirik kilitlerimizde PS geçiş, BK ise banyo (mahremiyet) anlamına gelir ve bunları aynı şekilde okumak cazip gelir. Kilit gövdesi kayıtları eklerini tanımlamıyor; bu yüzden burada onları çözmeyeceğiz. İki varyant arasındaki farkın önemli olduğu durumlarda (örneğin yalnız dilli bir gövdeye karşı kilitlemeli bir gövde) hangi fonksiyona ihtiyacınız olduğunu kelimelerle söyleyin; biz de tersini değil, onu varyantla eşleştiririz.",
+      "MODEL ADLARI TEK BİR SIRAYI İZLEMEZ",
+      "Bu model adlarının çoğu iki sayıyı içerir ve kilidi doğrudan addan okumak cazip gelir. Okumayın. Adlandırma seri genelinde tutarlı değildir. LC8530 ve LC6860 aks mesafesini önce, backset'i sonra koyar; LC32 65×72mm ve LC34 50×72mm ise backset'i önce koyar. LC7065 varyantları ve LC9045 yalnızca backset-önce sırasıyla doğru okunur: kayıtları 65 mm aksla 70 mm backset ve 45 mm aksla 90 mm backset diyor. Bu ikisi tablolardaki aykırı değerlerdir ve istediğiniz gövde bunlardan biriyse sipariş vermeden önce iki sayıyı da bizimle teyit edin.",
+      "Bundan çıkan kural kısadır: adı değil, her zaman şartname satırlarını okuyun. Yukarıdaki tablolar tam da bu nedenle satırlardan oluşturulmuştur.",
+      "TABLOLARIN DIŞARIDA BIRAKTIKLARI",
+      "Bilinmeye değer iki tür eksik vardır. Birincisi, 26 kilit gövdesi kaydı iki sayıyı da yayımlamıyor ve tablolarda yer almıyor. Bazıları yalnızca bir backset (16 mm ile LC17, 45 mm ile LC5845), bazıları yalnızca bir ön alın, bazıları ise henüz hiçbir şey yayımlıyor. İkincisi, tablolarda yer alan gövdelerin çoğu geometrinin geri kalanını değil yalnızca iki sayıyı yayımlıyor. Tam setini yayımlayan yalnızca LC07'dir: 240 × 23 mm ön alın, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı.",
+      "Mevcut bir kapıda kilit değiştirirken bu ikinci eksik önemlidir, çünkü yeni gövdenin eski yuvaya oturup oturmayacağına ön alın boyu ve gövde derinliği karar verir. Zaten satın aldığınız bir kilidin karşılığını bulmayla ilgili yazımız, birbirinin yerine geçebilirliği belirleyen altı sayıyı ortaya koyuyor; istediğiniz gövde bunlardan yalnızca ikisini yayımlıyorsa sipariş vermeden önce diğer dördünü isteyin; biz de onları tahmin etmek yerine ölçeriz.",
+      "ÜÇ ADIMDA SEÇİM",
+      "Birincisi, aileyi kapı belirler: alüminyum dar profil bir kapı birinci tablodan, ahşap ya da çelik bir kapı ikinci tablodan bir gövde alır. İkincisi, backset'i kapı hazırlığı ya da kolun kanatta nerede durması gerektiği, yedek parçada ise eski kilit belirler. Üçüncüsü, aks mesafesini kullanmayı planladığınız kol ya da aksesuar veya kapıda zaten bulunan delikler belirler. Ancak bu üçünden sonra fonksiyon (yalnız dil, dil ve sürgü, geçiş) seçimi tek bir modele indirir ve ancak ondan sonra kaplama konuşmaya girer.",
+      "Bir talepte bu üç bilgiyi gönderin; cevap ilk seferde bu tablolardan bir gövdeyi adlandırabilir. Yalnızca bir model adı gönderirseniz, adlandırma bölümünün gösterdiği gibi yanlış olanı adlandırabilir."
+    ],
+    "faq": [
+      {
+        "question": "Gömme kilit gövdelerinizde en yaygın aks mesafesi hangisi?",
+        "answer": "85 mm. İki sayıyı da yayımlayan 32 kilit gövdesinden 22'si 85 mm aks mesafesi kullanıyor; on iki dar profil gövdenin onu dahil. Diğerleri 92 mm (LC9230), 72 mm (dört gövde: 140, LC34 50×72mm, LC33-5572 ve LC32 65×72mm), 68 mm (LC6860), 65 mm (üç gövde: LC7065, LC7065PS ve LC7065S) ve 45 mm'dir (LC9045). Aks mesafesi kola ya da plakaya uymalıdır; bu yüzden yedek parçada önce mevcut delikleri ölçün."
+      },
+      {
+        "question": "Dar profil alüminyum kapı kilit gövdesinin backset'i nedir?",
+        "answer": "Serimizde 20 mm ile 35 mm arası. Yayımlanan on iki gövde bu aralıkta: LC8520, LC8520B, LC8520PS, 140, LC8525, LC8525B, AI8530, LC8530BK, LC8530PS, LC9230, LC8535 ve LC8535B. Ahşap ve çelik kapılar için standart gövdeler 40 mm'den başlar ve 70 mm'ye kadar gider; bir de 90 mm'lik aykırı bir değer vardır."
+      },
+      {
+        "question": "Backset ve aks mesafesini kilit gövdesi model adından okuyabilir miyim?",
+        "answer": "Güvenilir biçimde okuyamazsınız. Adlandırma tutarlı değildir: LC8530 ve LC6860 aks mesafesini önce koyar, LC32 65×72mm ve LC34 50×72mm ise backset'i önce koyar; LC7065 varyantları ve LC9045 yalnızca backset-önce okunduğunda doğrudur. Her zaman, karşılaştırma tablolarının da oluşturulduğu şartname satırlarını kullanın."
+      },
+      {
+        "question": "Kilit gövdeleriniz ön alın ve gövde ölçülerini yayımlıyor mu?",
+        "answer": "Çoğu henüz yayımlamıyor. Hem backset hem aks mesafesi olan 32 gövdeden yalnızca LC07 tam geometrisini yayımlıyor: 240 × 23 mm ön alın, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı. Yedek parça için sipariş vermeden önce ön alın ve gövde ölçülerini isteyin; biz de tahmin etmek yerine ölçeriz."
+      },
+      {
+        "question": "Dar profil kapılar neden farklı kollar ister?",
+        "answer": "Çünkü dar profil bir kilit gövdesi mili, dolayısıyla kolu, kapı kenarına çok yakın koyar; serimizde 20 ila 35 mm. 20 ya da 25 mm backset ile kol ile kasa ya da komşu kanat arasında az yer kalır ve uzun dönüşlü bir kol ya da topuz parmak eklemlerini sıkıştırabilir. Dar profil kollar, çekme kolları ya da itme pedleri olağandır ve kayıt izin veriyorsa 30 ya da 35 mm backset seçmeye değer."
+      },
+      {
+        "question": "Kilit gövdesi modellerindeki B, BK ve PS ekleri ne anlama geliyor?",
+        "answer": "Kilit gövdesi kayıtları bunları tanımlamıyor; bu yüzden onları çözmüyoruz. Silindirik kilitlerimizde PS geçiş, BK ise banyo (mahremiyet) anlamına gelir; ama bu, LC8520PS, LC8530BK ya da LC8535B gibi kilit gövdeleri için teyit edilmiş değildir. İhtiyacınız olan fonksiyonu kelimelerle belirtin (yalnız dil, kilitlemeli, geçiş), biz de doğru varyantla eşleştirelim."
+      }
+    ]
+  },
+  "powder-coating-and-ral-2026": {
+    "title": "Toz Boya ve RAL 2026: Bir Renk Numarası Neden Bir Kaplamayı Tanımlamaz, Ön İşlem Neyi Belirler ve Siparişe Ne Yazılmalı",
+    "summary": "Bir RAL numarası bir rengi adlandırır, başka hiçbir şeyi değil: ne parlaklığı, ne dokuyu, ne prosesi, ne dayanıklılığı. Bu sayfa RAL'in neyi tanımlayıp neyi açık bıraktığını, bir boyanın dayanıp dayanmayacağına neden ön işlemin karar verdiğini, toz boyanın donanım geometrisinde nerede başarısız olduğunu, hangi testlerin alıntılanmaya değer olduğunu ve bir kaplamayı sipariş edilebilir kılan dört satırı açıklıyor.",
+    "seoTitle": "Toz Boya ve RAL 2026: Renk, Parlaklık ve Ön İşlem",
+    "seoDescription": "Kapı donanımında RAL neyi tanımlar, neyi tanımlamaz; ön işlem boya ömrünü nasıl belirler, toz boya dişlerde ve kenarlarda neden kalır, siparişe ne yazılır.",
+    "body": [
+      "İki parça gelir, ikisi de aynı RAL numarasına boyanmıştır ve birbirini tutmaz. Tedarikçilerin hiçbiri yanlış değildir ve bütün sorun da budur: RAL bir rengi tanımlar, bir kaplama ise rengin yalnızca biri olduğu beş şeyden oluşur.",
+      "Bu, donanımda düz bir panelde olduğundan daha önemlidir, çünkü donanımda dişler, girintiler ve kenarlar vardır (boyanın ilk başarısız olduğu üç yer) ve aynı kapıdaki iki donanım parçası aynı ışıkta yan yana görülür.",
+      "## Bir RAL numarası neyi tanımlar, neyi tanımlamaz",
+      "| Özellik | RAL belirler mi? | Onun yerine ne belirler |\n| --- | --- | --- |\n| Renk tonu | Evet | RAL numarasının kendisi |\n| Parlaklık düzeyi | Hayır | ISO 2813'e göre ölçülen ayrı bir parlaklık şartı |\n| Doku | Hayır | Düz, ince doku, buruşuk: ayrıca adlandırılır |\n| Metalik ya da efekt | Hayır | Toz boya kalitesi; RAL Effect ayrı bir koleksiyondur |\n| Proses | Hayır | Toz boya, yaş boya, eloksal, PVD: hepsi bir RAL'i tutturabilir |\n| Film kalınlığı | Hayır | µm cinsinden belirtilmiş bir aralık |\n| Korozyon direnci | Hayır | Bir test sınıfı, örneğin EN 1670'e göre |\n| Partiden partiye uyum | Hayır | Bir tolerans ve üzerinde anlaşılmış bir referans numune |",
+      "Gerçek hayatta en yaygın uyuşmazlık ikinci satırdır. Mat RAL 9005 ve saten RAL 9005 ikisi de doğru biçimde RAL 9005'tir ve bir kapıda iki farklı siyah gibi görünür, çünkü parlaklık parçada çevredeki odanın ne kadarının yansıdığını değiştirir ve göz bunu bir renk değişikliği olarak okur.",
+      "İkinci en yaygın olanı beşincisidir. Toz boyalı siyah bir kol ile yaş boyalı siyah bir rozet ikisi de numarayı tutturabilir; ama farklı yaşlanır, farklı çatlar ve elin altında farklı hissettirir.",
+      "Dolayısıyla bir renk numarası tek başına bir şartname değildir. Dört satırın ilkidir.",
+      "## Boyalar gerçekte ön işlemde başarısız olur",
+      "Donanımdaki boya arızalarının neredeyse hiçbiri boya filminin arızası değildir. Altındaki bağın arızasıdır ve bu bağ herhangi bir toz püskürtülmeden önce kurulur.",
+      "Sıra şudur: yağ alma, durulama, dağlama ya da dönüşüm kaplaması, durulama, kurutma; ve durulamalar kimya kadar önemlidir. Fırına çekme yağı, polisaj pastası ya da tuz kalıntısı taşıyan bir parça ilk gün kusursuz görünen, bir yıl içinde kenardan kalkan bir boya alır.",
+      "Bir boya sorusunun bir ön işlem sorusu olarak sorulmasının nedeni budur. \"Ön işlem hattınız nedir ve zamak parçalar ile çelik parçalar için aynı mı?\" sorusu \"hangi tozu kullanıyorsunuz\" sorusundan çok daha fazla bilgi verir, çünkü toz satın alınan bir emtiadır, ön işlem ise birinin ya düzgün yürüttüğü ya da yürütmediği bir prosestir.",
+      "Her ana malzeme farklı bir cevap ister ve sormanın amacı da budur:",
+      "Çelik, çinko fosfat ya da demir fosfat dönüşüm kaplaması alır. Ucuzdur, iyi bilinir ve geri kalan her şeyin karşılaştırıldığı temel çizgidir.",
+      "Zamak (çinko alaşımı basınçlı döküm) zor olanıdır. Çelikten daha yumuşak bir kimya ister ve fırında gaz çıkarır: dökümdeki gözeneklilik, kürlenen filmin içinden gaz salar ve iğne delikleri bırakır. Olağan cevap, boyadan önce bir gaz alma fırınlamasıdır ve bir hattın bunu yapıp yapmaması gerçek bir ayırt edicidir. O gözenekliliğin arkasındaki kaliteyi zamak sayfamız anlatıyor.",
+      "Alüminyum, kromat ya da kromsuz bir dönüşüm kaplaması ister; Qualicoat ve GSB gibi mimari kalite etiketleri bu ana malzeme etrafında yazılmıştır ve şartları mimari dışında bile makul bir ölçüttür.",
+      "Paslanmaz çelik tuhaf olanıdır, çünkü onu korozyona dayanıklı kılan pasif tabaka aynı zamanda ona tutunmayı zorlaştırır. Genellikle mekanik pürüzlendirme gerekir. Paslanmazı boyamak çoğu zaman yanlış cevaptır: amaç renkse PVD onu daha iyi tutar; amaç korozyon direnciyse paslanmaz zaten buna sahipti. Boyanın altında ne olduğunu paslanmaz kaliteleri sayfamız anlatıyor.",
+      "## Donanım geometrisinin boyayı yendiği yerler",
+      "Dişler: tipik bir toz boya filmi bir dişin iki yanağına da malzeme ekler ve boyalı bir M5 dişi bir M5 vidayı kabul etmeyebilir. Bu yüzden dişler maskelenir ve maskeleme ya yapılan ya da yapılmayan elle yapılan bir iştir. Dişli deliklerinizi düşünmemiş bir tedarikçi size monte edemeyeceğiniz parçalar gönderir.",
+      "Girintiler ve iç köşeler: elektrostatik püskürtme alan çizgilerini izler ve alan çizgileri derin bir girintiye girmez; bu Faraday kafesi etkisidir. Bir cebin dibi yanındaki yüzden daha ince bir film alır ve korozyonun başladığı yer ince filmdir. Donanımda bu tipik olarak bir kol dönüşünün içi, bir silindir cebinin dibi, bir rozetin alt yüzü demektir.",
+      "Kenarlar: toz, kürlenme sırasında akarken keskin bir kenardan geri çekilir; böylece kenar yüzden daha ince kalır. Radyuslu bir kenar boyayı tutar; keskin bir kenar tutmaz. Bu, kimse bir renk seçmeden çok önce verilen bir kalıp kararıdır.",
+      "Bağlantı noktaları ve temas yüzleri: sonradan bir vidayla sıkıştırılan boyalı bir yüz iz yapar ve iki parça arasındaki boyalı bir temas yüzü montaj ölçüsünü değiştirir. İkisi de normaldir ve ikisine de keşfedilmek yerine karar verilmelidir.",
+      "Mimari toz boya için tipik film kalınlığı 60–80 µm civarındadır ve bu bir hedef değil bir aralıktır: çok ince olursa kenar kaplaması başarısız olur, çok kalın olursa dişler ve sıkı geçen parçalar monte edilemez hâle gelir. Montaj sıkıysa kalınlık aralığı çizimde yer almalıdır.",
+      "## Hangi testler alıntılanmaya değer ve her biri neyi kanıtlar",
+      "ASTM B117, nötr tuz püskürtme: en çok alıntılanan ve en çok yanlış anlaşılan test. Sabit, yapay bir koşul altında karşılaştırmalı bir testtir ve tuz sisi kabinindeki saatler bir binadaki yıllara dönüşmez. Aynı ana malzeme üzerindeki iki boyayı karşılaştırmak için gerçekten yararlıdır; bir kullanım ömrü tahmini değildir ve saatleri yıllara çeviren her tedarikçi size testleri nasıl okuduğu hakkında bir şey söylemiştir.",
+      "EN 1670, yapı donanımının korozyon direnci, bu ürün sınıfı için yazılmış olanıdır. Her biri bir tuz püskürtme süresini adlandıran bir dizi sınıf tanımlar; böylece B117 tipi sayıyı (\"B117-style\" değer) çıplak bir rakam olarak bırakmak yerine donanım için tasarlanmış bir ölçeğe koyar. Sınıflar ve süreler baskıdan baskıya değişmiştir; bu yüzden yalnızca sınıfı değil, sözleşme yaptığınız baskıyı da belirtin.",
+      "ISO 2409, çapraz kesim yapışma testi. Filmin içinden bir ızgara kesilir, bantla kaldırılır ve sonuç sınıflandırılır. Ucuzdur, hızlıdır ve yukarıdaki ön işlem sorusunu bu listedeki her şeyden daha doğrudan cevaplar.",
+      "ISO 2813, 20°, 60° ya da 85°'de parlaklık ölçümü. \"Mat\"ı bir sıfattan bir sayıya dönüştüren budur ve bir kaplama şartnamesinde en sık eksik olan satırdır.",
+      "ISO 1520, çukurlaştırma ve darbe testleri; filmin ana malzemeyle birlikte hareket edip etmediğini ya da çatlayıp kopup kopmadığını söyler. Boyadan sonra bükülen, perçinlenen ya da preslenen her parçada önemlidir.",
+      "Uygulamanın gerektirdiklerini alıntılayın. Bir ofis koridorundaki siyah bir kolun 480 saatlik bir tuz püskürtme sınıfına ihtiyacı yoktur; kıyı kasabasındaki bir dış kolun vardır ve boyasının hangi sınıfı karşıladığını söyleyemeyen bir tedarikçi o soruyu cevaplamayarak cevaplamıştır.",
+      "## Rötuş: şantiyeye kadar kimsenin sormadığı soru",
+      "Toz boyaya tozla rötuş yapılamaz: çıplak bir parçada, fırın sıcaklığında kürlenir ve takılı bir kapıda bu koşulların hiçbiri yoktur. Bir binadaki her toz boyalı parçaya havada kuruyan boyayla rötuş yapılır; bu da aynı nominal renkte farklı bir bağlayıcı, farklı bir parlaklık eğrisi ve farklı bir yaşlanma hızı demektir.",
+      "Dolayısıyla pratik sorular şunlardır: bu renk ve parlaklık için eşleştirilmiş bir rötuş kalemi var mı, onu kim tedarik ediyor ve rötuşlanmış bir parçaya iki yıl sonra kimse baktı mı. Büyük bir projede dürüst cevap çoğu zaman hiç rötuş yapmak yerine az sayıda yedek parça tutmaktır.",
+      "## Bir kaplamayı sipariş edilebilir kılan dört satır",
+      "Renk, RAL numarası ve koleksiyonuyla: RAL Classic 9005, bir RAL Design ya da RAL Effect referansından farklı bir şartnamedir.",
+      "Parlaklık, ölçüm açısı belirtilmiş olarak ISO 2813'e göre bir sayı.",
+      "Doku, adıyla: düz, ince doku ya da belirli bir toz boya referansı.",
+      "İki tarafın imzaladığı fiziksel bir referans numune; uyuşmazlıkları gerçekten çözen satır budur. Böylece her parti, son partinin hatırasıyla değil numuneyle karşılaştırılır.",
+      "Uygulama gerektiriyorsa korozyon sınıfını ve film kalınlığı aralığını ekleyin ve hangi yüzeylerin maskelendiğini belirtin.",
+      "## Ne yayımlıyoruz, ne yayımlamıyoruz",
+      "588 HYDE katalog kaydında 326'sı bir kaplama satırı taşıyor. Kaplama adları tam olarak normalleştirilmiş değil: aynı kaplama farklı kayıtlarda \"Satin Nickel (SN)\", \"Satin nickel\" ve \"SN\" olarak görünüyor. Bu, bir şartname sorunu olmadan önce bir veri sorunudur.",
+      "Bazı satırlar toz boyayı adlandırıyor, bazıları yalnızca \"paint\" ya da \"painting\" diyor, bazıları ise toz boya mı, yaş boya mı, siyah nikel kaplama mı yoksa PVD mi olduğunu belirtmeden siyah bir kaplamayı adlandırıyor. Bu proseslerin onarım yolları farklıdır; bu yüzden bir sipariş için prosesin teyit edilmesi gerekir.",
+      "588 HYDE kaydında tek bir RAL numarası yok. Belirli bir renk önemliyse kodu ve prosesi üretim kayıtlarına göre teyit etmemizi isteyin.",
+      "Eksik budur, sıfatlarla değil sayılarla belirtilmiş olarak; ve paslanmaz ve zamak kaliteleriyle aynı şekilde kapatılıyor: satırların ne demesi gerektiğinden değil, üretim kayıtlarından. O zamana kadar, siparişinizde bir kaplama önemliyse onu yukarıdaki dört satırla isteyin ve her birini katalogla değil parçayla teyit etmemizi isteyin."
+    ],
+    "faq": [
+      {
+        "question": "Bir RAL numarası bir kaplamayı tamamen tanımlar mı?",
+        "answer": "Hayır. RAL renk tonunu belirler, başka hiçbir şeyi değil. Parlaklık, doku, metalik efekt, proses, film kalınlığı ve korozyon direnci ayrı ayrı tanımlanır. Mat RAL 9005 ve saten RAL 9005 ikisi de doğru biçimde RAL 9005'tir ve bir kapıda iki farklı siyah gibi görünür, çünkü parlaklık parçada odanın ne kadarının yansıdığını değiştirir."
+      },
+      {
+        "question": "Donanımda bir boyanın başarısız olmasına gerçekte ne yol açar?",
+        "answer": "Neredeyse hiçbir zaman boya filmi değil; altındaki bağ, ve o bağ herhangi bir toz püskürtülmeden önce kurulur. Yağ alma, durulama, dağlama ya da dönüşüm kaplaması, durulama, kurutma; durulamalar kimya kadar önemlidir. Ön işlem hattının ne olduğunu ve zamak ile çelik parçalar için aynı olup olmadığını sorun; toz satın alınan bir emtiadır, ön işlem ise bir prosestir."
+      },
+      {
+        "question": "Zamak neden çelikten daha zor toz boyanır?",
+        "answer": "Çelikten daha yumuşak bir kimya ister ve fırında gaz çıkarır: dökümdeki gözeneklilik kürlenen filmin içinden gaz salar ve iğne delikleri bırakır. Olağan cevap boyadan önce bir gaz alma fırınlamasıdır ve bir hattın bunu yapıp yapmaması boyacılar arasında gerçek bir ayırt edicidir."
+      },
+      {
+        "question": "Toz boyalı dişler bir vidayı kabul eder mi?",
+        "answer": "Güvenilir biçimde etmez. Toz boya filmi iki yanağa da malzeme ekler; bu yüzden boyalı bir M5 dişi bir M5 vidayı kabul etmeyebilir. Bunun yerine dişler maskelenir ve maskeleme ya yapılan ya da yapılmayan elle yapılan bir iştir. Hangi yüzeylerin maskelendiğini siparişte belirtin."
+      },
+      {
+        "question": "Tuz püskürtme saati neyi kanıtlar?",
+        "answer": "Bir boyanın sabit, yapay bir koşul altında bir başkasından daha uzun dayandığını. ASTM B117 saatleri bir binadaki yıllara dönüşmez ve onları dönüştüren her tedarikçi size testleri nasıl okuduğunu söylemiştir. EN 1670 rakamı yapı donanımı için yazılmış bir sınıf ölçeğine koyar; baskıyı belirtin, çünkü sınıflar ve süreler baskıdan baskıya değişmiştir."
+      },
+      {
+        "question": "Toz boyalı bir parçaya şantiyede nasıl rötuş yapılır?",
+        "answer": "Tozla değil; toz boya çıplak bir parçada fırın sıcaklığında kürlenir ve takılı bir kapıda bu koşulların hiçbiri yoktur. Rötuş her zaman havada kuruyan boyayla yapılır; yani aynı nominal renkte farklı bir bağlayıcı, parlaklık eğrisi ve yaşlanma hızı. Büyük bir projede yedek parça tutmak çoğu zaman rötuş yapmaktan daha dürüsttür."
+      }
+    ]
+  },
+  "qualifying-a-hardware-supplier-2026": {
+    "title": "Donanım Tedarikçisini Değerlendirmek 2026: Fabrika, Tüccar ya da Aracı, Onları Ayıran Beş Soru ve Neyin Doğrulanması Gerektiği",
+    "summary": "Bir donanım talebine üç tür şirket cevap verir ve üçü de evet der. Bu sayfa bir fabrikanın, bir ticaret şirketinin ve bir aracının gerçekte neyi kontrol ettiğini açıklıyor, kimseyle yüzleşmeye gerek kalmadan onları ayıran beş soru veriyor, bağımsız olarak doğrulanabilecekleri listeliyor ve testin tamamını bize uyguluyor.",
+    "seoTitle": "Donanım Tedarikçisi Değerlendirme 2026: Fabrika mı Tüccar mı",
+    "seoDescription": "Donanım fabrikasını ticaret şirketinden ya da aracıdan ayırmak: beş soru, bağımsız olarak doğrulanabilecekler ve ilk siparişin ne olması gerektiği.",
+    "body": [
+      "Bir kapı donanımı talebine üç tür şirket cevap verir ve üçü de aynı şekilde cevap verir. Fark ancak sonra ortaya çıkar: neyi değiştirebildiklerinde, ne kadar hızlı cevap verebildiklerinde ve bir şey ters gittiğinde sorunu kimin elinde tuttuğunda.",
+      "Üçünün hiçbiri gayrimeşru değildir. İyi bir ticaret şirketi kötü bir fabrikadan daha yararlıdır. Ama kiminle konuştuğunuzu bilmelisiniz, çünkü makul olarak ne isteyebileceğinizi o belirler.",
+      "## Her birinin gerçekte kontrol ettikleri",
+      "| | Fabrika | Ticaret şirketi | Aracı |\n| --- | --- | --- | --- |\n| Kalıbın sahibi | Evet | Hayır | Hayır |\n| Bir ölçüyü değiştirebilir | Evet, kalıp maliyetiyle | Yalnızca bir fabrikaya sorarak | Yalnızca başka bir fabrika bularak |\n| Kaplama hattını kontrol eder | Genellikle | Hayır | Hayır |\n| Test sertifikalarını tutar | Kendi adına | Fabrikanınkini iletir | Ne varsa onu iletir |\n| Teknik bir soruyu cevaplar | Çizimden | Aktararak | Aktararak |\n| Yararlı olduğu yer | Özel işler, hacim, uzun ilişkiler | Karma siparişler, konsolidasyon, küçük miktarlar | Başka kimsede olmayan bir ürünü bulmak |",
+      "Teknik bir üründe en önemli satır sondan ikincisidir. Bir fabrika ölçüyle ilgili bir soruyu kendi çiziminden cevaplar; diğer herkes birine sorarak cevaplar. Bu cevabı yanlış yapmaz, daha yavaş yapar ve cevabın, benzer iki ölçüden hangisini kastettiğinizi bilmeyebilecek bir taraf üzerinden gelmesi demektir.",
+      "## Beş soru",
+      "Bunların hiçbiri yüzleştirici değildir ve beşi de bir alıcının bilmek isteyeceği sıradan şeylerdir. Cevaplar üç kategoriyi kendiliğinden ayırır.",
+      "\"Bu modellerden hangilerini kendiniz üretiyorsunuz, hangilerini dışarıdan alıyorsunuz?\" Neredeyse her gerçek fabrika bazı şeyleri dışarıdan alır: silindirler, yaylar, ambalaj, bazen bütün kategoriler. Bir fabrika bunu kolayca ve somut olarak cevaplar. Bir ticaret şirketi ise genel olarak cevaplar, çünkü dürüst cevap \"hepsini\"dir.",
+      "\"Bu modelin backset'ini değiştirebilir misiniz ve kalıp maliyeti ne olur?\" Bir fabrika bir rakamla ya da bir gerekçeyle cevap verir. Diğer herkes bir gecikmeyle cevap verir, çünkü sormaları gerekir.",
+      "\"Kaplamanızı kim yapıyor, kendi bünyenizde mi?\" Kaplama, gerçek fabrikalarda bile sıklıkla dışarıya verilir ve bunu söylemek normaldir. Bilgi veren şey, cevabı hemen bilip bilmedikleridir.",
+      "\"Bu modelde tek kaplamada minimum nedir ve neden bu sayı?\" MOQ sayfamız bir minimumu belirleyen dört şeyi açıklıyor. Bir fabrikanın cevabı bunlardan en az birine atıf yapar: bir kaplama partisi, bir kalıp amortismanı, bir baskı adedi. Aktarılmış bir cevap ise yalnızca bir sayıdır.",
+      "\"Bu modelin ölçülü çizimini alabilir miyiz?\" Listedeki en yararlı tek soru. Bir fabrika ya ona sahiptir ya da o model için var olmadığını bilir. Bir tüccarın elinde fabrikanın ona ne gönderdiyse o vardır; bu da çoğu zaman bir katalog sayfasıdır.",
+      "Kimsenin bunlarla köşeye sıkıştırılmasına gerek yok. \"Bunları biz üretmiyoruz, Guangdong'da üç fabrikayla çalışıyoruz, bunu şu üretiyor\" diyen bir ticaret şirketi, muğlak bir fabrikadan daha iyi bir cevap vermiştir ve artık doğru biçimde çalışabileceğiniz bir tedarikçidir.",
+      "## Bağımsız olarak doğrulanabilecekler",
+      "Ticaret sicil kaydı: çoğu hukuk düzeninde şirketler bir sicil numarası, tescilli faaliyet alanı ve kuruluş tarihiyle kamuya açık bir sicilde yer alır. Bir üretici ile bir ticaret şirketinin tescilli faaliyet alanları genellikle gözle görülür biçimde farklıdır.",
+      "Adres, harita üzerinde: tescilli bir adresin uydu görüntüsü size bunun bir sanayi binası mı yoksa bir ofis katı mı olduğunu söyler. Kabadır ve aynı zamanda mevcut en hızlı tek kontroldür.",
+      "Herhangi bir sertifika, düzenleyen kuruluşun sicilinde: sertifika doğrulama sayfamızda eksiksiz anlatılıyor; şirket adıyla değil sertifika numarasıyla arayın ve kapsamın ürününüzü kapsadığını kontrol edin.",
+      "İhracat geçmişi, varış ülkesinin ticaret verisi yayımladığı durumlarda. Size kaliteyi söylemez; ama pazarınıza yirmi yıllık ihracat iddia eden bir şirketin gerçekten hiç ihracatı olup olmadığını söyler.",
+      "Masa başından doğrulanamayan şey en önemli olandır: üçüncü siparişte söylediklerini yapıp yapmayacakları. İlk sipariş bunun içindir.",
+      "## Görüntülü görüşme ve görmek istemeye değer üç şey",
+      "Fabrika ziyareti gerçek cevaptır ve her zaman mümkün değildir. Bir tur yerine belirli şeyler isterseniz görüntülü görüşme makul bir ikamedir.",
+      "Satın aldığınız modelin kalıbı: üzerinde parça numarası olan, başkalarıyla birlikte bir rafta duran bir döküm kalıbı ya da enjeksiyon kalıbı. Bu, taklit edilmesi en zor ve en çok bilgi veren tek şeydir.",
+      "O modeli üreten hat; herhangi bir şeyi üreten bir hat değil. Bitmiş bir parçayı onu yapan makinenin yanında tutmalarını isteyin.",
+      "Kalite kontrol tezgâhı ve üzerindekiler. Bir kumpas, bir mastar, bir numune panosu, bir kayıt defteri. Boş bir tezgâh da bir cevaptır.",
+      "Bunları video dosyası olarak değil canlı isteyin. Bir kayıt, birinin tesisindeki iyi bir günün kaydıdır ve mutlaka bu tesis olmak zorunda değildir.",
+      "## İlk sipariş ne olmalı",
+      "Proje değil. Önce numune, sonra küçük bir sipariş, sonra proje; ve küçük sipariş numuneden daha önemlidir, çünkü numuneyi mevcut en iyi kişi yapar, küçük siparişi ise siparişler nasıl yapılıyorsa öyle yapılır.",
+      "Geldiğinde neyin kontrol edileceğini numune sayfamız anlatıyor. İlk küçük siparişin size söyleyip numunenin söyleyemeyeceği üç şey: ambalajın çeki listesiyle eşleşip eşleşmediği, terminin gerçek olup olmadığı ve kolinin ortasındaki parçaların üsttekilerle eşleşip eşleşmediği.",
+      "Ödeme koşulları da her iki yönde bir sinyaldir. İlk siparişte üretimden önce tam ödeme isteyen bir tedarikçi sizden tüm riski taşımanızı istiyordur; ilk siparişi kazanmak için alışılmadık derecede yumuşak koşullar sunan biri ise finanse edemeyeceği bir ilişkiyi satın alıyor olabilir. İkisi de eleme nedeni değildir ve ikisi de dikkate değerdir.",
+      "## İstemeye değer referans ve ona sorulacak üç soru",
+      "\"Referans verebilir misiniz\" sorusu bir tedarikçinin en memnun üç müşterisini getirir ve size neredeyse hiçbir şey söylemez. Daha dar bir talep kullanılabilir bir şey getirir: benim pazarımda bu modeli bu kaplamada alan bir müşteri. Daraltmanın amacı budur: tedarikçinin yalnızca coşkusuna göre seçemeyeceği bir referans ister ve gerçekten böyle bir referansı olan tedarikçi genellikle bunu hemen söyler.",
+      "Her tedarikçi size iletişim kurulabilir bir referans veremez ve gizlilik gerekçesiyle reddetmek kaçamak değil, meşrudur. Bilgi veren şey, müşteriyi hiç tarif edip edemedikleridir: bir pazar, bir sipariş örüntüsü, bir model. Satın aldığınız şeyi başka kimin satın aldığı hakkında somut bir cevabı olmayan bir tedarikçi, onun ne sıklıkla satın alındığı hakkında size bir şey söylüyordur.",
+      "Bir referansa ulaşırsanız değerin neredeyse tamamını üç soru taşır.",
+      "\"İkinci sipariş birinciyle eşleşti mi?\" İlk sipariş genellikle her yerde iyidir. Zor olan ve kendi başınıza keşfetmesi pahalı olan şey siparişler arası tutarlılıktır.",
+      "\"Bir şey ters gittiğinde ne oldu?\" Hiç bir şey ters gidip gitmediği değil; her zaman bir şey ters gitmiştir. Nasıl ele alındığını, kimin ödediğini ve ne kadar sürdüğünü sorun. Bu tek soru tedarikçileri herhangi bir fabrika turundan daha güvenilir biçimde ayırır.",
+      "\"Teknik bir sorunun cevabı ne kadar sürede geliyor?\" Gün cevabında bir sayı. Yukarıdaki fabrika mı tüccar mı sorusu için mevcut en net göstergedir; kimseyi övmek için hiçbir nedeni olmayan biri tarafından dışarıdan ölçülmüştür.",
+      "## Kötü görünen ama kötü olmayan dört cevap ve iyi görünen ama iyi olmayan bir cevap",
+      "\"Kaplamamızı fason yaptırıyoruz.\" Büyük ve yetkin fabrikalar dahil normaldir. Kaplama uzmanlık gerektiren, sıkı düzenlenen bir prosestir ve onu dışarıya vermek çoğu zaman daha kaliteli seçimdir. Önemli olan, kaplamacının adını verip prosesini bilip bilmedikleridir.",
+      "\"O model için sertifikamız yok.\" Bu da normaldir. Test model başına pahalıdır ve çoğu katalog yalnızca kısmen test edilmiştir. Hangi modellerin test edildiğini, hangilerinin edilmediğini söyleyen bir tedarikçi, tüm serisi sertifikalı diye tanımlanan birinden daha güvenilirdir.",
+      "\"O modelde minimumumuz yüksek.\" Arkasında bir gerekçe olan bir minimum, birinin işin maliyetini hesapladığının işaretidir. Bir minimumu belirleyen dört şeyi MOQ sayfamız ortaya koyuyor.",
+      "\"Bunu yapamayız.\" Listedeki en hafife alınan cevap. İyi uygulayamayacağı bir değişikliği reddeden bir tedarikçi az önce size bir projeyi kurtarmıştır ve retlerinin bir anlam taşıdığını size söylemiştir.",
+      "Ve iyi görünen: her şeye, hemen evet. Her ölçü, her kaplama, her miktar, her termin, geri hiç soru sorulmadan. Bunların hepsini gerçekten yapabilen bir tedarikçi kapınız hakkında en az bir netleştirme sorusu sorardı. Sorusuz onay yetkinlik değildir; talebi kimse okumadan yazılmış bir tekliftir.",
+      "## Bunu kendimize uygulamak",
+      "Bu sayfayı yayımlayıp kendimiz cevaplamamak tutarsız olurdu.",
+      "Biz bir fabrikayız ve her gerçek fabrika gibi her şeyi kendimiz üretmek yerine bazı bileşenleri dışarıdan alıyoruz. Model bazında hangileri olduğunu sorun; cevap somut olarak gelir.",
+      "Katalogdaki her şey için test sertifikamız yok. 307 ve 311 panik çıkış cihazlarımız teste giriyor ve sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bu iddianın bize karşı da dahil nasıl kontrol edileceğini sertifika sayfamız açıklıyor.",
+      "Çoğu model için çizim yayımlamıyoruz. 588 HYDE kaydında 84 ölçülü SVG dosyası var; bunların 72'si görünür 521 ürün listelemesinde; HYDE kapı hazırlık SVG'si ise 0. Çizimler sayfamız bu ayrı sayıları veriyor, çünkü yukarıdaki beşinci soru, aksi hâlde fazla gevşek cevaplayacağımız sorudur.",
+      "Birkaç şartname eksiği açık ve yayımlanmış durumda: 224 satırda paslanmaz kalitesi, 156'sında zamak kalitesi, 57'sinde pirinç alaşımı ve DZR durumu, 45'inde silindir bölünmesi. Her birinin, sayısıyla birlikte, kendi sayfası var.",
+      "Bu, çoğu tedarikçinin verdiğinden daha kötü görünen bir cevap ve beş sorudan sağ çıkan cevap da bu. Kataloğunda hiç eksik olmayan bir tedarikçi ya her şeyi ölçmüştür ya da eksiklerin ne demesi gerektiğini yazmıştır ve ikincisi birincisinden çok daha yaygındır."
+    ],
+    "faq": [
+      {
+        "question": "Fabrika, ticaret şirketi ve aracı arasındaki fark nedir?",
+        "answer": "Bir fabrika kalıbın sahibidir, bir ölçüyü kalıp maliyetiyle değiştirebilir, genellikle kaplama hattını kontrol eder ve ölçüyle ilgili bir soruyu kendi çiziminden cevaplar. Bir ticaret şirketi ve bir aracı ise soruyu aktararak cevaplar. Hiçbiri gayrimeşru değildir (iyi bir ticaret şirketi kötü bir fabrikadan daha yararlıdır) ama kiminle konuştuğunuzu bilmelisiniz."
+      },
+      {
+        "question": "En çok şey anlatan tek soru hangisi?",
+        "answer": "\"Bu modelin ölçülü çizimini alabilir miyiz?\" Bir fabrika ya ona sahiptir ya da o model için var olmadığını bilir. Bir tüccarın elinde fabrikanın ona ne gönderdiyse o vardır; bu da çoğu zaman bir katalog sayfasıdır. Cevap, kimseyle yüzleşmeye gerek kalmadan kategorileri ayırır."
+      },
+      {
+        "question": "Bir tedarikçi hakkında masamdan neleri doğrulayabilirim?",
+        "answer": "Ticaret sicil kaydını ve tescilli faaliyet alanını; bu genellikle üretici ile tüccar arasında gözle görülür biçimde farklıdır. Tescilli adresi uydu görüntüsünde; kaba ama mevcut en hızlı kontrol. Herhangi bir sertifikayı, düzenleyen kuruluşun kendi sicilinde, numarasıyla arayarak. Ve ülkeniz ticaret verisi yayımlıyorsa ihracat geçmişini."
+      },
+      {
+        "question": "Görüntülü görüşmede neyi görmek istemeliyim?",
+        "answer": "Bir tur yerine üç belirli şeyi. Satın aldığınız modelin kalıbını, yani parça numaralı bir kalıbı; taklit edilmesi en zor şey budur. O modeli üreten hattı, bitmiş bir parça onu yapan makinenin yanında tutulurken. Ve kalite kontrol tezgâhını ve üzerindekileri. Bunları video dosyası olarak değil canlı isteyin."
+      },
+      {
+        "question": "Büyük bir siparişten önce numune yeterli mi?",
+        "answer": "Hayır. Numune, sonra küçük bir sipariş, sonra proje; ve küçük sipariş daha önemlidir, çünkü numuneyi mevcut en iyi kişi yapar, küçük siparişi ise siparişler nasıl yapılıyorsa öyle yapılır. Size ambalajın çeki listesiyle eşleşip eşleşmediğini, terminin gerçek olup olmadığını ve kolinin ortasındaki parçaların üsttekilerle eşleşip eşleşmediğini söyler."
+      },
+      {
+        "question": "Canton Hyland kendi beş sorusunu nasıl cevaplıyor?",
+        "answer": "Biz bir fabrikayız ve her gerçek fabrika gibi bazı bileşenleri dışarıdan alıyoruz. Her şey için test sertifikamız yok; 307 ve 311 teste giriyor. 588 HYDE kaydında 84 ölçülü SVG dosyası var, 72'si görünür ürün listelemelerinde, HYDE kapı hazırlık SVG'si ise 0. Birkaç şartname eksiği kendi sayfalarında sayılarıyla veriliyor."
+      }
+    ]
+  },
+  "samples-and-incoming-inspection-2026": {
+    "title": "Numuneler ve Giriş Kontrolü 2026: Altın Numune, Neyin Ölçüleceği ve Bir Numunenin Size Söyleyemeyecekleri",
+    "summary": "Numune, bir tedarikçinin bir şeyi sizin kastettiğinizden farklı anladığını keşfetmenin en ucuz yeridir. Bu sayfa üç numune türünü ve hangisinin isteneceğini, bir numuneyi süs olmaktan çıkarıp bağlayıcı kılan altın numune prosedürünü, bir numune geldiğinde tam olarak neyin ölçüleceğini, bir numunenin gerçekten gösteremeyeceği üç özelliği ve bağımsız bir kontrolörün sizi aramadan uygulayabileceği bir kontrol standardının nasıl yazılacağını ortaya koyuyor.",
+    "seoTitle": "Numuneler ve Giriş Kontrolü 2026: Altın Numune",
+    "seoDescription": "Donanım numuneleri doğru nasıl kullanılır: üç numune türü, altın numune prosedürü, varışta neyin ölçüleceği ve bir numunenin gösteremeyeceği üç şey.",
+    "body": [
+      "İthal bir donanım siparişindeki ciddi sorunların neredeyse tamamı bir üretim hatası değil, bir çeviri hatasıdır. İki yetkin taraf kelimeler üzerinde anlaşmıştır ve kelimeler farklı şeyler anlatmıştır.",
+      "Bunu bir konteynere dönüşmeden önce yakalayan tek araç numunedir. Bir tarifi bir nesneye dönüştürür ve bir nesne aynı anda iki şekilde yanlış anlaşılamaz.",
+      "ÜÇ NUMUNE TÜRÜ",
+      "Stok numune, raftan alınmış mevcut bir üründür. Size modeli, kaplama kalitesini ve genel yapıyı gösterir. Hızlı ve ucuzdur ve bir şartnameyi değil bir tedarikçiyi değerlendirirken istenecek doğru şeydir.",
+      "Üretim öncesi numune, seri başlamadan önce sizin şartnamenize göre yapılır. Katalogdan farklı bir şey olduğunda (bir kaplama, bir backset, bir mil boyu, baskılı bir kutu) önemli olan budur, çünkü şartnamenin yalnızca alınmadığını, anlaşıldığını kanıtlar.",
+      "Üretim numunesi gerçek seriden çekilir. Kolilerde ne olduğunu kanıtlar ve bir kontrolün karşısında yapıldığı numune budur.",
+      "Yaygın hata, stok numuneyi üretim öncesi numuneymiş gibi ele almaktır. Stok kaplamadaki bir stok numune, sipariş ettiğiniz özel kaplama hakkında size hiçbir şey söylemez ve onu onaylamak farklı bir ürünü onaylamaktır.",
+      "ALTIN NUMUNE",
+      "Bu, bir numuneyi bir nezaket jestinden bir araca dönüştüren prosedürdür ve neredeyse hiçbir şeye mal olmaz.",
+      "İki özdeş numune hazırlanır. İkisi de iki tarafça imzalanır ve tarihlenir. Biri mühürlenir ve alıcıda kalır; diğeri mühürlenir ve fabrikada kalır. İkisi de satın alma siparişinde yer alan bir referans numarası taşır.",
+      "O noktadan sonra \"altın numune 2026-0147'ye göre\" bir şartname satırıdır ve kaplama ya da uyumla ilgili bir anlaşmazlık sıfat alışverişiyle değil, iki kutu açılarak çözülür. Fabrikada durmayan bir alıcının elindeki en etkili tek kalite kontrol önlemidir.",
+      "Kendinizinkini sipariş sevk edilene, teslim alınana ve kabul edilene kadar saklayın. Onaydan sonra atılan bir altın numune, ihtiyaç duyulduğunda var olmayan bir altın numunedir.",
+      "BİR NUMUNE GELDİĞİNDE NE ÖLÇÜLÜR",
+      "Çizimin hatırasına göre değil çizime göre ölçün ve yalnızca geçti ya da kaldı değil, okunan değerleri de kaydedin.",
+      "Bir kilit için: backset, mil ile silindir arasındaki aks mesafesi, ön alın boyu ve genişliği, gövde ölçüleri, mil karesi ve kapı kalınlığı aralığı.",
+      "Bir kapı kolu için: mil ekseninden kol uzunluğu, kapı yüzünden çıkıntı, rozet ya da plaka izi, mil karesi ve aks, ve dönüş geometrisi.",
+      "Bir menteşe için: kanat ölçüleri, kalınlık, boğum uzunluğu, pim çapı, vida deliği konumları ve havşa tipi.",
+      "Bir kapı kapatıcı için: gövde ölçüleri, montaj delik aralıkları, kol boyu ve kol setinin desteklediği montaj şekilleri.",
+      "Cam bağlantı parçaları için: cam kalınlığı aralığı, cam boşluğu ve köşe radyusları dahil her oyuk ölçüsü.",
+      "Hepsi için: kaplama, bir fotoğrafa ya da bir koda göre değil, fiziksel bir referansa göre. Kaplama kodu sayfamızın açıkladığı gibi, iki tedarikçiden aynı kod gözle görülür biçimde farklı olabilir.",
+      "BİR NUMUNENİN SİZE GÖSTEREMEYECEĞİ ÜÇ ŞEY",
+      "Bir numunenin sınırları konusunda dürüst olmak, prosedürün geri kalanını inandırıcı kılan şeydir.",
+      "Parti tutarlılığı. Bir numune bir numunedir. Size fabrikanın ne yapabileceğini söyler; beş bin parça boyunca ne yapacağını söylemez. Örnekleme planlı bir kontrol bunun içindir.",
+      "Korozyon direnci. 240 saatlik tuz püskürtmeyi göremezsiniz. Kusursuz görünen bir numune ile bir yıl içinde lekelenecek bir numune elde ayırt edilemez; korozyon sınıfının bir izlenimden değil bir testten gelmesi gerekmesinin nedeni budur.",
+      "Çevrim ömrü. On çevrimde tatlı dönen bir kilit, iki yüz bin çevrimdeki durumu hakkında size hiçbir şey söylemez. Dayanıklılık bir test sonucudur ve bir numune bir test değildir.",
+      "Size bir numunenin bu üçünü çözdüğünü söyleyen herkes ya yanılıyordur ya da satış yapıyordur.",
+      "BAŞKASININ UYGULAYABİLECEĞİ BİR KONTROL STANDARDI YAZMAK",
+      "Bağımsız bir kontrolör kullanıyorsanız kontrolün kalitesini tamamen talimatın kalitesi belirler, çünkü kontrolör binanızı bilmez ve sizi fabrika zemininden aramaz.",
+      "Altın numune referansını belirtin. Alınacak ölçüleri ve her birinin toleransını belirtin; bir ölçümü bir karara dönüştüren toleranstır. Örnekleme planını belirtin: kaç koli açılacak, kaç parça ölçülecek ve neyin kalma sayılacağı.",
+      "Neyin işlevsel olarak ve kaç kez kontrol edileceğini belirtin. \"Kilidi çalıştırın\" bir talimat değildir; \"kilidi on kez çalıştırın ve her seferinde dilin tamamen geri çekildiğini ve kolun yatay konuma döndüğünü teyit edin\" bir talimattır.",
+      "Ambalaj kontrollerini belirtin: koli işaretleri, koli başına miktar, iç ambalaj ve koli ölçülerinin çeki listesiyle eşleşip eşleşmediği; çünkü çeki listesinin söylediği ölçüde olmayan bir koli, sevkiyatın planlandığı şekilde yüklenmez.",
+      "Ve kalma durumunda ne olacağını belirtin (sevkiyatı durdur, yeniden işlemeden sonra tekrar kontrol et ya da tavizle kabul et), çünkü bir sorun bulan ve talimatı olmayan bir kontrolör hiçbir şey yapmaz; bu da üç sonucun en kötüsüdür.",
+      "NUMUNE NE ZAMAN ALINMALI",
+      "Şartname hâlâ açıkken. Sonucu en çok etkileyen zamanlama noktası budur ve en sık yanlış yapılan da budur.",
+      "Avans ödendikten ve seri planlandıktan sonra alınan bir numunenin yalnızca iki olası sonucu vardır: rahatlama ve bir tartışma. Şartname hâlâ düzenlenebilirken alınan bir numune ise bir konuşmadır ve orada bulunan bir yanlış anlama bir e-postaya mal olur.",
+      "Termin sayfamızın ortaya koyduğu gibi, üretim saati sipariş teyidinde başlar; dolayısıyla erken numune almak siparişi geciktirmez. İşi zaten sizin kontrolünüzde olan döneme taşır.",
+      "BİZ NE YAPIYORUZ",
+      "Numuneleri yazılı bir şartnameye göre hazırlıyor ve numune kaydında hangi şartnameye göre yapıldığını belirtiyoruz; böylece bir onay, bir kutudaki nesnenin değil, tanımlanabilir bir şeyin onayı olur.",
+      "Bir numune katalogdan herhangi bir açıdan farklıysa, farkın keşfedilmesini beklemek yerine bunu numuneyle birlikte yazılı olarak söylüyoruz. Üretim hedefinden sessizce daha iyi bir numune gönderen bir tedarikçi bir onay kazanmamıştır; karşısında kalacağı bir standart koymuştur ve bu, iki taraf için de dürüst bir numune ve kısa bir konuşmadan daha kötü bir sonuçtur."
+    ],
+    "faq": [
+      {
+        "question": "Altın numune nedir?",
+        "answer": "Alıcı ve fabrika tarafından imzalanıp tarihlenmiş, her biri bir tarafta mühürlü olarak saklanan ve satın alma siparişinde yer alan bir referans numarası taşıyan iki özdeş numune. O andan itibaren \"altın numune 2026-0147'ye göre\" bir şartname satırıdır ve bir anlaşmazlık sıfat alışverişi yerine iki kutu açılarak çözülür."
+      },
+      {
+        "question": "Nasıl bir numune istemeliyim?",
+        "answer": "Bir tedarikçiyi değerlendiriyorsanız stok numune. Katalogdan farklı bir şey varsa (bir kaplama, bir backset, bir mil boyu, baskılı bir kutu) üretim öncesi numune, çünkü şartnamenin anlaşıldığını kanıtlar. Gerçek seriden çekilen üretim numunesi ise kontrolün karşısında yapıldığı numunedir."
+      },
+      {
+        "question": "Numuneyi ne zaman almalıyım?",
+        "answer": "Şartname hâlâ açıkken, avanstan önce. Seri planlandıktan sonra alınan bir numunenin yalnızca iki olası sonucu vardır: rahatlama ya da bir tartışma. Daha erken alındığında bir konuşmadır ve orada bulunan bir yanlış anlama bir e-postaya mal olur. Üretim saati zaten sipariş teyidinde başlar; dolayısıyla erken numune almak hiçbir şeyi geciktirmez."
+      },
+      {
+        "question": "Bir numune bana neyi söyleyemez?",
+        "answer": "Üç şeyi. Parti tutarlılığı: bir numune fabrikanın ne yapabileceğini gösterir, beş bin parça boyunca ne yapacağını değil. Korozyon direnci: 240 saatlik tuz püskürtmeyi göremezsiniz. Ve çevrim ömrü: on çevrimde tatlı dönen bir kilit iki yüz bin çevrim hakkında hiçbir şey söylemez. Üçü de izlenim değil test ister."
+      },
+      {
+        "question": "Bir kilit numunesinde neyi ölçmeliyim?",
+        "answer": "Backset, mil ile silindir arasındaki aks mesafesi, ön alın boyu ve genişliği, gövde ölçüleri, mil karesi ve kapı kalınlığı aralığı; çizimin hatırasına göre değil çizime göre ve yalnızca geçti ya da kaldı değil okunan değerleri kaydederek. Kaplamayı bir koda ya da fotoğrafa göre değil, fiziksel bir referansa göre kontrol edin."
+      },
+      {
+        "question": "Bağımsız bir kontrolörün kullanabileceği bir talimatı nasıl yazarım?",
+        "answer": "Altın numune referansını belirtin. Her ölçüyü toleransıyla belirtin, çünkü bir ölçümü karara dönüştüren toleranstır. Örnekleme planını ve neyin kalma sayılacağını belirtin. İşlevsel kontrolleri somut ve sayılabilir yapın. Ambalaj ve koli ölçüsü kontrollerini ekleyin. Ve kalma durumunda ne olacağını belirtin; yoksa kontrolör hiçbir şey yapmaz."
+      }
+    ]
+  },
+  "specification-section-08-71-00-2026": {
+    "title": "2026'da Kapı Donanımı Bölümü 08 71 00 Yazmak: Üç Kısım, Her Birine Ne Girer ve Paraya Mal Olan Maddeler",
+    "summary": "Bir kapı donanımı şartnamesi, sabit bir biçimi olan üç kısımlı bir belgedir ve bir donanım paketinde kaybedilen paranın çoğu, doğru cümleyi yanlış kısma koymaktan kaybedilir. Bu sayfa Kısım 1, Kısım 2 ve Kısım 3'e neyin girdiğini ortaya koyuyor, bir donanım setinin bir fabrikanın telefon açmadan fiyatlandırabileceği şekilde nasıl yazıldığını gösteriyor ve fiyatı sessizce belirleyen dört maddeyi adlandırıyor.",
+    "seoTitle": "Kapı Donanımı Şartnamesi 08 71 00 (2026): Nasıl Yazılır",
+    "seoDescription": "Kapı donanımı şartname bölümü nasıl kurulur, Kısım 1, 2 ve 3'e ne girer, fabrikanın fiyatlandırabileceği donanım seti ve fiyatı belirleyen dört madde.",
+    "body": [
+      "Kapı donanımı MasterFormat'ta 08 71 00 numaralı bölümdür ve bu bölümün her tasarımcının, yüklenicinin ve tedarikçinin aynı sırayla okuduğu sabit, üç kısımlı bir biçimi vardır. Bu biçimi bilmek bilgiçlik değildir; fiyatlandırılan bir paket ile dört tur soru doğuran bir paket arasındaki farktır.",
+      "Hataların çoğunu açıklayan kural: Kısım 1 yükümlülüklerdir, Kısım 2 nesnelerdir, Kısım 3 şantiyede olanlardır. Yanlış kısımdaki bir cümle ya görmezden gelinir ya da iki kez fiyatlandırılır.",
+      "## Her kısma ne girer",
+      "| Kısım | İçerdiği | Örnekler |\n| --- | --- | --- |\n| 1: Genel | Yükümlülükler, referanslar, onay dosyaları, garanti, anahtarlama süreci | \"Kesimden önce onay için bir anahtarlama çizelgesi sunun\", \"Listede belirtilen yerlerde EN 1634-1'e uyun\" |\n| 2: Ürünler | Nesnelerin kendisi, tipe ve performansa göre | Kapı kolları, kapı kapatıcılar, menteşeler, kaplamalar, donanım setleri |\n| 3: Uygulama | Montaj, montaj yükseklikleri, ayar, teslim | \"Kolları bitmiş döşemenin 1.050 mm (41-3/8\") üzerine monte edin\", \"Kapı kapatıcıları HVAC dengelemesinden sonra ayarlayın\" |",
+      "En yaygın iki yanlış yerleştirmeyi adlandırmaya değer. Kısım 2'ye yazılan bir garanti maddesi pakete değil tek bir ürüne bağlanır. Ve Kısım 2'ye yazılan bir montaj yüksekliği, ona ihtiyacı olan tek kişi olan montajcıyla değil, ürün verileriyle birlikte gelir.",
+      "## Kısım 1: fiyatı belirleyen dört madde",
+      "Bunlar prosedürel görünen ama öyle olmayan maddelerdir.",
+      "Muadil prosedürü: muadillere izin verilip verilmediği, hangi kanıtın gerektiği ve ne zamana kadar. Bu konuda sessiz kalan bir bölüm yine de muadil alır ve bunlara maliyet baskısı en fazla olan kişi karar verir. Bir muadil talebinin değerlendirilebilir olması için neleri içermesi gerektiğini onay dosyası sayfamız anlatıyor.",
+      "Anahtarlama: anahtar sisteminin sahibinin kim olduğu, bir kesimi kimin yetkilendirebileceği ve kaydın bir teslimat kalemi olup olmadığı. Bu madde, binanın on yıl sonra belgelenmiş bir anahtar sistemine mi yoksa bir arkeoloji sorununa mı sahip olacağını belirler. Yazmak hiçbir şeye mal olmaz ve sonradan eklenemez.",
+      "Test kanıtı: hangi sertifikaların, hangi standarda göre gerektiği ve ihalede mi yoksa onay dosyası aşamasında mı istendiği. İhalede istemek teklif verenleri kanıtı elinde tutanlarla sınırlar; onay dosyası aşamasında istemek ise bunu fiyat sabitlendikten sonra öğrenir ve bir pazarlama iddiasını kabul etme baskısı da buradan gelir.",
+      "Garanti: süresi, neyi kapsadığı ve bina sahibi değişince geçerliliğini koruyup korumadığı. \"Üreticinin standart garantisi\" bir şart değildir; üreticinin standardı ne çıkarsa kabul etmeye dair bir sözdür.",
+      "## Kısım 2: bir donanım seti nasıl yazılır",
+      "Donanım seti, bir fabrikanın fiyatlandırdığı birimdir. Binayı hiç görmemiş birinin fiyatlandırabileceği şekilde yazılmalıdır.",
+      "Sete bir numara verin, her kalemi miktarı, üreticisi, katalog numarası, kaplama kodu ve fonksiyonuyla listeleyin ve setin uygulandığı kapıları belirtin. Kapı listesi sonra kalemleri tekrarlamak yerine kapıları set numaralarına eşler.",
+      "Dışarıda bırakılan dört değer, ne kadar pahalı oldukları sırasıyla: kaplama kodu (bir ad bir kod değildir), fonksiyon (bir tarif bir fonksiyon değildir), kuralı adlandırılmış yön ve gömme ya da delikli montajlı her şey için kapı kalınlığı ve backset.",
+      "Performans şartlarını genel bir paragrafa değil, sınırladıkları ürünün yanına yazın. Kısım 2'nin başında \"Grade 1\" ve sonunda bir kol olması, kolun buna dahil olup olmadığını belirsiz bırakır.",
+      "## Performans şartnamesi ile marka şartnamesi",
+      "İki meşru yaklaşım vardır ve bölümlerin ters gittiği yer, ikisinin kötü karıştırılmasıdır.",
+      "Marka şartnamesi üreticileri ve katalog numaralarını adlandırır. Kesindir ve alanı daraltır; amaç tam olarak bu olabilir.",
+      "Performans şartnamesi ürünün neyi başarması gerektiğini belirtir (bir dayanıklılık sınıfı, bir korozyon sınıfı, bir yangın sınıflandırması, azami bir açma kuvveti) ve bunu kanıtlanabilir biçimde karşılayan her ürünün rekabet etmesine izin verir.",
+      "Yaygın karma biçim, \"X üreticisi Y modeli ya da onaylı muadili\", ancak bölüm muadilin ne anlama geldiğini de söylüyorsa yararlıdır. Bu olmadan \"muadil\", değer mühendisliği sırasında farklar yerine ortak özellikler karşılaştırılarak kararlaştırılır; bu da onay dosyası sayfamızda anlatılan arıza biçimidir.",
+      "Daha güçlü karma biçim, ürünü ve onu tercih ettiren iki üç özelliği adlandırır. O zaman bir muadil bir şeye göre değerlendirilebilir.",
+      "## Kısım 3: montajcıların gerçekten ihtiyaç duyduğu maddeler",
+      "Montaj yükseklikleri, bir kez ve birimleriyle belirtilmiş olarak. Bir kol merkezi belirtiliyorsa bunu şantiyenin çalıştığı birimlerde verin ve hangi referanstan ölçüldüğünü söyleyin; olağan olanı bitmiş döşemenin üzeridir ve şap ya da halı henüz gelecekse \"bitmiş\" kelimesi önemlidir.",
+      "Ayar sıralaması. Kapı kapatıcılar binanın havalandırması dengelendikten sonra ayarlanmalıdır, çünkü hava basıncı bir kapının ihtiyaç duyduğu kuvveti değiştirir. Basınçlandırılmamış bir binada kusursuz ayarlanmış bir kapı kapatıcı, hakkında şikâyet edilecek bir kapı kapatıcıdır.",
+      "Yangın kapısı talimatı. Yangına dayanıklı bir sistemin hiçbir bileşeninin test edilen konfigürasyonun ötesinde değiştirilemeyeceği ya da delinemeyeceği ve her varyasyonun kanıt gerektirdiği.",
+      "Teslim. Anahtar kaydı, kullanım talimatları ve listede olana karşı gerçekte neyin takıldığının listesi; çünkü bu iki liste her projede farklıdır ve fark, birileri hâlâ nedenini hatırlarken kaydedilmeye değer.",
+      "## Referans maddesi ve bir standart bağlayıcı olacak şekilde nasıl alıntılanır",
+      "Kısım 1, bölümün dayandığı standartları listeler ve özensiz bir referans maddesi, bir şartnamenin kimse fark etmeden uygulanamaz hâle gelmesinin en yaygın yoludur.",
+      "Standardı tam tanımıyla alıntılayın ve hangi kısmın ya da sınıflandırmanın gerektiğini söyleyin. \"EN 1935'e uyun\" bir şart değildir: EN 1935 menteşeleri sekiz alan üzerinden sınıflandırır ve her sınıftaki bir menteşe ona uyar. \"EN 1935 sınıf 13, korozyon sınıfı 4, yangın kapılarına uygun\" bir şarttır, çünkü bir ürün onu ya karşılar ya karşılamaz.",
+      "Standardı yayımlandığı hâliyle mi yoksa tadil edilmiş hâliyle mi kastettiğinizi söyleyin. Tarihli bir referans şartı bilinen bir metinde dondurur; tarihsiz bir referans ise standartla birlikte hareket eder. Uzun bir projenin istediği genellikle budur, ama zaman zaman değildir.",
+      "Kontrol etmeyeceğiniz bir standardı alıntılamayın. On bir standart adlandırıp hiçbiri için kanıt almayan bir bölüm, tedarik zincirine referans listesinin süs olduğunu öğretmiştir ve bu ders önemli olan standartlar için de geçerlidir.",
+      "Ve yanlış pazardan bir standart alıntılamayın. Yangın kapısı sayfamızın ortaya koyduğu gibi EN 1634-1 ve UL 10C örtüşen ama farklı şeyleri test eder ve ikisini adlandırıp hangisinin geçerli olduğunu söylemeyen bir bölüm, hiçbir ürünün sahip olmadığı bir şeyi istemiştir.",
+      "## Montaj yükseklikleri ve onları belirleyen referans",
+      "Yükseklikler Kısım 3'e aittir, çünkü okuyucu montajcıdır. İki şey belirtilmelidir: sayı ve neyden ölçüldüğü.",
+      "Ters giden kısım referanstır. \"Bitmiş döşemenin üzeri\", döşemenin nihai hâlinin, yani şaptan, karodan, halıdan sonraki hâlinin üzeri demektir. Donanımın döşeme kaplamasından önce takıldığı bir projede, kaba betondan ölçülen bir yükseklik sonradan gelecek olanın kalınlığı kadar yanlıştır ve binadaki her kapıda tutarlı biçimde yanlıştır.",
+      "Yaygın uygulama kol merkezini bitmiş döşemenin yaklaşık 1.050 mm (41-3/8\") üzerine koyar; panik çıkış cihazı itme barları ve çekme kolları ise cihaza ve mevzuat bölgesine bağlı olarak kabaca 900 mm (35-7/16\") ile 1.100 mm (43-5/16\") arasındaki bir banda düşer. Bunları bir şart değil bir başlangıç noktası olarak kabul edin: bağlayıcı rakamları erişilebilirlik kuralları belirler ve bunlar ülkeden ülkeye değişir; yazmadan önce binaya uygulanan rakamı teyit edin.",
+      "Bir proje bir erişilebilirlik standardına bağlıysa standardı Kısım 1'de alıntılayın ve ortaya çıkan yüksekliği Kısım 3'te tekrarlayın. Montajcı Kısım 3'ten çalışır ve referans listesini okumaz; yüksekliği savunulabilir kılan ise referans listesidir.",
+      "## Revizyonlar ve en kötü tartışmaları önleyen tek alışkanlık",
+      "Bir donanım bölümü revize edilir: ihalede zeyilname ile, inşaat sırasında talimatla ve ihaleden sonra muadil ile. Her revizyon, iki tarafın farklı belgeleri elinde tutmasına bir fırsattır.",
+      "Her yayına bir revizyon numarası ve bir tarih verin, ikisini de bölümün olduğu kadar kapı listesinin de başlığına koyun ve Kısım 1'de yalnızca en son yayının geçerli olduğunu belirtin. Bürokrasi gibi gelir ve paketteki en ucuz anlaşmazlık önlemidir.",
+      "Önlediği tartışma belirli ve yaygındır: bir set zeyilnameyle değişir, zeyilname yükleniciye ulaşır ama tedarikçiye ulaşmaz ve kırk kapının donanımı geçerliliğini yitirmiş sete göre gelir. Bu sıradaki hiç kimse makul olmayan bir şey yapmamıştır ve maliyet, hangi yayına göre çalıştığını kanıtlayamayan kişinin üzerine düşer.",
+      "Geçerliliğini yitirmiş yayınların üzerine yazmak yerine onları saklayın. On sekiz ay sonra bir kapının neden o donanıma sahip olduğu sorusu geldiğinde cevap, sipariş verildiğinde geçerli olan sürümdedir.",
+      "## Bir bölümü soru sormadan fiyatlandırmak için neye ihtiyacımız var",
+      "Satır başına yukarıdaki dört değerle birlikte donanım setleri. Setleri kapılara eşleyen kapı listesi. Kaplama kodları. Yangına dayanıklı kapılar, öyle işaretlenmiş olarak. Ve kapı tipleri ile kalınlıkları, çünkü 45 mm'lik ahşap bir kanada uyan bir kilit 45 mm'lik içi boş metal bir kanada uymayabilir.",
+      "Bunlarla bir teklif, teklif olarak geri gelir. Bunlar olmadan bir soru listesi olarak geri gelir ve her tur genellikle bir hafta sürer; bu bölümün, düzgün yazmak için harcanan bir saate değmesinin nedeni budur.",
+      "Kataloğumuz bir maddeyi karşılayamıyorsa onu dolanarak teklif vermek yerine hangi madde olduğunu söyleriz. Kanıtı elinde olmadan bir performans şartnamesine teklif veren bir tedarikçi paketi kazanmamıştır; konuşmayı herkese daha pahalıya mal olduğu onay dosyası aşamasına ertelemiştir."
+    ],
+    "faq": [
+      {
+        "question": "Bir donanım şartnamesinin Kısım 1, Kısım 2 ve Kısım 3'üne ne girer?",
+        "answer": "Kısım 1 yükümlülüklerdir: referanslar, onay dosyaları, garanti, anahtarlama süreci. Kısım 2, donanım setleri dahil, tipe ve performansa göre nesnelerin kendisidir. Kısım 3 şantiyede olanlardır: montaj, montaj yükseklikleri, ayar sıralaması ve teslim. Yanlış kısımdaki bir cümle ya görmezden gelinir ya da iki kez fiyatlandırılır."
+      },
+      {
+        "question": "Fiyatı gerçekte hangi maddeler belirler?",
+        "answer": "Dört madde ve hepsi prosedürel görünür. Muadil prosedürü, anahtarlama maddesi, test kanıtının ne zaman istendiği (ihalede mi onay dosyası aşamasında mı) ve garanti şartları. \"Üreticinin standart garantisi\" bir şart değildir; o standart ne çıkarsa kabul etmeye dair bir sözdür."
+      },
+      {
+        "question": "Bir donanım seti nasıl yazılmalı?",
+        "answer": "Binayı hiç görmemiş birinin fiyatlandırabileceği şekilde: bir set numarası, her kalem miktarı, üreticisi, katalog numarası, kaplama kodu ve fonksiyonuyla, ve setin uygulandığı kapılar. Kapı listesi sonra kalemleri tekrarlamak yerine kapıları set numaralarına eşler."
+      },
+      {
+        "question": "\"Ya da onaylı muadili\" yeterli mi?",
+        "answer": "Ancak bölüm muadilin ne anlama geldiğini de söylüyorsa. Aksi hâlde \"muadil\", değer mühendisliği sırasında iki ürünün farklılıkları yerine ortak özellikleri karşılaştırılarak kararlaştırılır. Daha güçlü biçim, ürünü ve onu tercih ettiren iki üç özelliği adlandırır; böylece bir muadil bir şeye göre değerlendirilebilir."
+      },
+      {
+        "question": "Kapı kapatıcılar ne zaman ayarlanmalı?",
+        "answer": "Binanın havalandırması dengelendikten sonra. Hava basıncı bir kapının ihtiyaç duyduğu kuvveti değiştirir; bu yüzden basınçlandırılmamış bir binada kusursuz ayarlanmış bir kapı kapatıcı, sonradan hakkında şikâyet edilecek bir kapı kapatıcıdır. Bu sıralama, montajcının okuduğu Kısım 3'e aittir."
+      },
+      {
+        "question": "Bir şartnameyi soru sormadan fiyatlandırmak için neye ihtiyacınız var?",
+        "answer": "Satır başına kaplama kodu, fonksiyon, yön ve kalınlıkla birlikte donanım setleri; setleri kapılara eşleyen kapı listesi; öyle işaretlenmiş yangına dayanıklı kapılar; ve kapı tipleri ile kalınlıkları, çünkü 45 mm'lik ahşap bir kanada uyan bir kilit 45 mm'lik içi boş metal bir kanada uymayabilir."
+      }
+    ]
+  },
+  "spindle-sizes-and-length-2026": {
+    "title": "Kapı Kolu Mil Ölçüleri 2026: 8 mm ve 9 mm Kare, Bölünmüş Miller ve Boyun Nasıl Hesaplanacağı",
+    "summary": "Mil, bir kapı kolu takımının en ucuz parçasıdır ve bir sevkiyatı en sık kullanılamaz hâle getiren parçadır. Bir kolun bir kilidi çevirip çevirmeyeceğini üç sayı belirler: kare ölçüsü, mil boyu ve milin tek parça mı bölünmüş mü olduğu. Bu sayfa üçünü de ortaya koyuyor, boy formülünü veriyor ve kendi kataloğumuzun gerçekte ne yayımladığını gösteriyor.",
+    "seoTitle": "Mil Ölçüleri 2026: 8 mm, 9 mm, Bölünmüş Miller ve Boy",
+    "seoDescription": "Kapı kolu mil karesi 8 mm ve 9 mm, tek parça ve bölünmüş miller, kapı kalınlığı ve rozet derinliğinden boy hesabı ve mil aksı ölçüsü.",
+    "body": [
+      "Mil, genellikle 100 mm'den kısa, tahrik ettiği kolun fiyatının küçük bir kesrine mal olan kare bir çubuktur. Aynı zamanda yanlış şartnameyle gelme olasılığı en yüksek tek bileşendir, çünkü bir alıcının çoğu zaman ayrı ayrı sipariş ettiği iki şeyi, kolu ve kilidi birbirine bağlayan parçadır.",
+      "Bir kol takımının çalışıp çalışmayacağını üç sayı belirler: kare ölçüsü, boy ve tip.",
+      "KARE ÖLÇÜSÜ",
+      "Mil karesi çubuğun kesitidir; kare olduğu için tek bir sayıyla ifade edilir. Ticari kapı donanımında önemli olan iki ölçü 8 mm ve 9 mm'dir.",
+      "8 mm (yaklaşık 5/16\") Avrupa geleneğidir ve gömme ve tübüler kilitlerdeki kapı kolları için dünya genelinde baskın ölçüdür. Şartname hiçbir şey söylemiyorsa çoğu pazarda 8 mm güvenli varsayımdır.",
+      "9 mm (yaklaşık 3/8\") daha ağır hizmet tipi ve bazı bölgesel serilerde görülür; orada daha büyük kesit daha fazla burulma dayanımı sağlar. İki yönde de 8 mm ile birbirinin yerine geçmez: 9 mm'lik bir mil 8 mm'lik bir göbeğe girmez, 9 mm'lik bir göbekteki 8 mm'lik bir mil ise önce takırtıya, sonra yuvarlanmış bir köşeye dönüşen bir milimetrelik boşluğa sahiptir.",
+      "Bazı seriler ikisini de kabul edecek şekilde tedarik edilir ve bu durumda ürün sayfası ikisini de belirtir, örneğin \"kare mil: 8×8 mm ya da 9×9 mm\". Bu bir tolerans değil, bir tedarik seçeneğidir. Kol bunlardan biri için üretilir ve onunla sevk edilir.",
+      "Kilitteki eşleşen delik göbektir. Göbek ile mil aynı kare ölçüsünde olmalıdır ve göbek kola değil kilide aittir. Kolları bir tedarikçiden, kilitleri bir başkasından sipariş eden bir alıcının kare ölçüsünü ikisine de belirtmesi gerekmesinin nedeni budur.",
+      "TEK PARÇA VE BÖLÜNMÜŞ",
+      "Tek parça mil, kilidin içinden geçen tek bir çubuktur; böylece iki kol mekanik olarak bağlıdır. Birini çevirirseniz öteki de döner.",
+      "Bölünmüş mil, kilidin içinde birbirini kavramadan buluşan iki yarım çubuktur; böylece her kol bağımsız çalışır. Tek taraflı bir fonksiyonu mümkün kılan budur: dış kol kilitliyken iç kol dili her zaman geri çeker; çoğu giriş fonksiyonunun arkasındaki düzen budur.",
+      "Bölünmüş mil etrafında tasarlanmış bir kilit için tek parça mil sipariş etmek, kilidin fonksiyonunu tamamen ortadan kaldırır: dış kol, çalışması gerekse de gerekmese de dili çalıştırır. Bu, her görsel kontrolden geçen ve ancak kapıyı deneyerek bulunan bir arızadır.",
+      "BOY NASIL HESAPLANIR",
+      "Mil tüm montajın içinden geçmeli ve iki kolda da yeterli kavrama bırakmalıdır. Çalışma formülü şudur: kapı kalınlığı, artı iki rozetin ya da plakanın derinliği, artı her kolun göbeğinin içinde ihtiyaç duyduğu kavrama.",
+      "Yaygın bir durum için (sığ rozetli 40 mm (1-9/16\") bir kapı) bu, boy belirten modellerde mil boyu olarak yayımladığımız 60 mm'ye (2-3/8\") yakın bir değere düşer.",
+      "Daha kalın bir kapı daha uzun bir mil ister ve bir kol sevkiyatının takılamamasının en yaygın nedeni budur. 40 mm'ye göre kesilmiş milli 45 mm ya da 50 mm'lik bir kapı dış kolda çok az çubuk bırakır; kol oynar, setuskur düz yüzeye değil konik kısma oturur ve bağlantı sonunda yuvarlanır.",
+      "Çok uzun bir mil daha küçük bir sorundur ama yine de sorundur: kolun dışına taşar, rozete sürtebilir ve şantiyede testere ve eğe olmadan düzgünce kısaltılamaz.",
+      "Bazı seriler kapı kalınlığına göre ayarlanabilir mil boyuyla tedarik edilir. Bir ürün sayfası bunu söylüyorsa mil belirttiğiniz kapı kalınlığına göre kesilir ya da ayarlanır; bu da kapı kalınlığının siparişte yer alması gerektiği anlamına gelir.",
+      "MİL AKSI",
+      "Milin kendisinden ayrı olarak, bazı ürünler çizimlerde P= olarak yazılan bir mil aksı ölçüsü yayımlar. Bu, bir referanstan (genellikle montaj deliği merkezi ya da bir plakanın kenarı) mil eksenine olan mesafedir.",
+      "Kataloğumuz farklı modellerde hem P=25 mm (yaklaşık 1\") hem de P=34 mm (yaklaşık 1-5/16\") yayımlıyor. Sayı önemlidir, çünkü kolu montaj deliklerine göre konumlandırır ve P ölçüsü kilidinkiyle uyuşmayan bir plaka, kol göbeğe ortalanmış şekilde vidalanamayan bir plakadır.",
+      "Bu, bir tariften değil bir çizimden gelmesi gereken ölçülerden biridir. Fotoğrafta aynı görünen iki kolun P ölçüleri farklı olabilir ve fark ancak ikisi de aynı kapıya tutulduğunda görünür.",
+      "MALZEME VE NEDEN AYRINTI OLMADIĞI",
+      "Mil, bir kapı kolunun tüm torkunu montajdaki en küçük kesitte taşır. Yumuşak ya da küçük ölçülü bir çubuk kilitten önce burulur; bu da ulaşılması zor bir yerde ucuz bir arızadır.",
+      "Sayfalarımız, bir model yayımlıyorsa mil malzemesini belirtir; bir modelde demir. Bir mil farklı bir malzemede ya da farklı bir sertlikte tedarik ediliyorsa ürün sayfası bunu okuyucunun varsayımına bırakmak yerine söyler.",
+      "NE YAYIMLIYORUZ",
+      "Katalog genelinde mil kare ölçüleri çoğu kol modelinde 8 mm, birinde 9 mm olarak yayımlanıyor; bazı seriler 8×8 mm ya da 9×9 mm kabul ettiği belirtilerek veriliyor. Mil boyu, bir modelin belirttiği yerde yayımlanıyor; belirten modelde 60 mm. Mil aksı, çizimleri bunu veren modellerde P=25 mm ya da P=34 mm olarak görünüyor.",
+      "Bir model bir mil değeri yayımlamıyorsa satır tipik bir değerle doldurulmak yerine boş bırakılır. Mil, bir siparişte doğru yapılması en ucuz, yanlış yapılması en pahalı parçalardan biridir, çünkü kilitlere uymayan bir konteyner dolusu kol kısmi bir sorun değildir.",
+      "SİPARİŞE YAZILACAK ÜÇ SATIR",
+      "Milimetre cinsinden kare ölçüsü. Mil tipi, tek parça ya da bölünmüş. Boyun ona göre teyit edilebilmesi için milimetre cinsinden kapı kalınlığı.",
+      "Bu üç satırı yazmak hiçbir şeye mal olmaz ve bu sayfanın anlattığı arıza sınıfının tamamını ortadan kaldırır. Kolları ve kilitleri farklı tedarikçilerden sipariş ediyorsanız üçünü de ikisine gönderin."
+    ],
+    "faq": [
+      {
+        "question": "Kapı kolları hangi mil ölçüsünü kullanır?",
+        "answer": "8 mm (yaklaşık 5/16\") Avrupa geleneğidir ve kapı kolları için dünya genelinde baskın ölçüdür. 9 mm (yaklaşık 3/8\") daha ağır hizmet tipi ve bazı bölgesel serilerde görülür. Birbirinin yerine geçmezler: 9 mm'lik bir mil 8 mm'lik bir göbeğe girmez, 9 mm'lik bir göbekteki 8 mm'lik bir mil ise takırdar ve sonra yuvarlanır."
+      },
+      {
+        "question": "Tek parça ve bölünmüş mil arasındaki fark nedir?",
+        "answer": "Tek parça mil iki kolu bağlayan tek bir çubuktur; birini çevirmek ötekini de çevirir. Bölünmüş mil, kilidin içinde birbirini kavramayan iki yarım çubuktur; böylece her kol bağımsız çalışır. Dış kol kilitliyken iç kolun dili her zaman geri çekmesini sağlayan bölünmüş mildir."
+      },
+      {
+        "question": "Bir mil ne kadar uzun olmalı?",
+        "answer": "Kapı kalınlığı, artı iki rozetin ya da plakanın derinliği, artı her kolun göbeğinin içinde ihtiyaç duyduğu kavrama. Sığ rozetli 40 mm (1-9/16\") bir kapı için bu 60 mm'ye (2-3/8\") yakın bir değere düşer. Daha kalın bir kapı daha uzun bir mil ister ve bir kol sevkiyatının takılamamasının en yaygın nedeni budur."
+      },
+      {
+        "question": "Bir kol çiziminde P= ne anlama gelir?",
+        "answer": "Mil aksıdır: bir referanstan, genellikle montaj deliği merkezinden ya da plaka kenarından, mil eksenine olan mesafe. Kataloğumuz farklı modellerde P=25 mm (yaklaşık 1\") ve P=34 mm (yaklaşık 1-5/16\") yayımlıyor. P ölçüsü kilitle uyuşmayan bir plaka, kol göbeğe ortalanmış şekilde vidalanamaz."
+      },
+      {
+        "question": "Bölünmüş mil için tasarlanmış bir kilide tek parça mil takarsam ne olur?",
+        "answer": "Kilidin fonksiyonu ortadan kalkar. Dış kol, kilitli olması gerekse de gerekmese de dili geri çeker. Bu, her görsel kontrolden geçer ve ancak kapıyı deneyerek bulunur; mil tipinin varsayılmak yerine siparişte yer alması gerekmesinin nedeni budur."
+      },
+      {
+        "question": "Bir kol siparişine hangi üç şeyi yazmalıyım?",
+        "answer": "Milimetre cinsinden kare ölçüsü, mil tipi (tek parça ya da bölünmüş) ve boyun teyit edilebilmesi için milimetre cinsinden kapı kalınlığı. Kolları ve kilitleri farklı tedarikçilerden alıyorsanız üçünü de ikisine gönderin; göbek kola değil, kilide aittir."
+      }
+    ]
+  },
+  "stainless-grade-selection-201-304-316-2026": {
+    "title": "Paslanmaz Kalite Seçimi 2026: 201, 304 ve 316, Her Birinin Maliyeti ve Şartname Sayfasındaki \"304/201\" İfadesinin Neden Asıl Sorun Olduğu",
+    "summary": "201, 304 ve 316 elde aynı görünür ve bir binada çok farklı davranır. Bu sayfa onları kimyasal olarak neyin ayırdığını, her birinin nereye ait olduğunu, maliyet farkının gerçekte ne olduğunu ortaya koyuyor ve sonra rahatsız edici kısmı yapıyor: kendi 313 paslanmaz ürünümüzden kaçının bir kalite adlandırdığını sayıyor ve \"304/201\" diyen bir şartnamenin neden hiçbir şeyi cevaplamadığını açıklıyor.",
+    "seoTitle": "Paslanmaz 201, 304 ve 316 (2026): Kalite Seçimi ve Maliyet",
+    "seoDescription": "Paslanmaz 201, 304 ve 316 kimyasal olarak ve kullanımda nasıl ayrılır, her biri nereye ait, maliyet farkı ne ve 304/201 yazan bir şartname neden yetmez.",
+    "body": [
+      "Paslanmaz kapı donanımının neredeyse tamamını üç kalite kapsar. İki numuneyi elinde tutan bir alıcı için ayırt edilemezler ve aralarındaki fark on sekiz ay sonra, kimsenin kolayca tekrar gidemeyeceği bir binada ortaya çıkar.",
+      "Bu açıklık (masada aynı, duvarda farklı) bu konuda kesin olmaya değmesinin ve bir tedarikçinin buradaki muğlaklığının bir katalogdaki başka her yerdeki muğlaklıktan daha pahalıya mal olmasının nedenidir.",
+      "## Onları gerçekte ayıran",
+      "Üçü de östenitik paslanmaz çeliktir. Farklar, korozyona direnme işini neyin yaptığında ve alaşımı ucuzlatmak için neyin ikame edildiğindedir.",
+      "| Kalite | Temel alaşım elementleri | Korozyon davranışı | Manyetik mi? |\n| --- | --- | --- | --- |\n| 201 | Krom, düşük nikel; nikelin yerine mangan ve azot | İç mekânda ve kuruda yeterli; klorürde erken oyuklanır | Çoğu zaman, özellikle şekillendirmeden sonra, hafif manyetik |\n| 304 | Krom ~%18, nikel ~%8 | Genel amaçlı mimari kalite; iç bölgelerde dış mekânda iyi | Tavlanmış hâlde manyetik değil; soğuk işlendiğinde hafif manyetik olabilir |\n| 316 | 304 artı molibden ~%2 | Molibden özellikle klorür oyuklanmasına direnir | 304 ile aynı |",
+      "Pratik farkın büyük kısmını taşıyan tek cümle: klorüre direnen molibdendir. 316'nın kıyı ve havuz kalitesi olup 304'ün olmamasının nedeni budur ve bu bir pazarlama ayrımı değil, belirli bir saldırıya karşı belirli bir kimyasal mekanizmadır.",
+      "201'in hikâyesi farklıdır. Pahalı element nikeldir ve 201 onun bir kısmının yerine mangan ve azot koyar. Sonuç, kuru iç mekân kullanımında kabul edilebilir performans gösterir ve klorür, nem ya da kirliliğin olduğu her yerde fark edilir biçimde daha hızlı bozulur.",
+      "## Her biri nereye ait",
+      "201: kuru, iklimlendirilmiş binalardaki iç kapılar; arka hizmet alanları; mobilya ve dolap donanımı; maliyet farkının önemli ve ortamın zararsız olduğu her yer. Hileli bir kalite değildir; kendi aralığının dışında çok sık kullanılan meşru bir malzemedir.",
+      "304: mimari donanım için varsayılan kalite. Girişler, iç bölgelerdeki dış kapılar, çoğu ticari şartname. Bir şartname \"paslanmaz\" diyor ve tek bir şey kastediyorsa bunu kastediyordur.",
+      "316: kıyı sahaları, yüzme havuzları ve teknik odaları, endüstriyel atmosferler, buz çözücü tuz kullanılan her yer ve sahibinin temizlemeyeceği her dış kapı. Korunaklı bir kıyı konumunun neden açık bir konumdan daha kötü olabileceğini korozyon sayfamız anlatıyor.",
+      "## Maliyet sorusu, dürüstçe cevaplanmış",
+      "Fiyat merdiveni nikeli ve molibdeni izler ve aralıklar simetrik değildir. 201'den 304'e geçiş gerçek bir tasarruftur; 304'ten 316'ya geçiş ise parça bitirilip paketlendiğinde çoğu kişinin beklediğinden daha küçük bir ek maliyettir, çünkü küçük donanımda ham madde teslim maliyetinin küçük bir kısmıdır.",
+      "Bu asimetriyi bilmeye değer, çünkü kararı değiştirir. Para tasarrufu için 304 yerine 201 seçmek, gerçek bir riski olan gerçek bir takastır. Bir kıyı projesinde para tasarrufu için 316 yerine 304 seçmek ise genellikle küçük bir bugünkü maliyet için büyük bir gelecek maliyetini takas etmektir: metal, talaşlı işlenmiş, parlatılmış, kaplanmış, paketlenmiş ve sevk edilmiş bir kolun fiyatının küçük bir kesridir.",
+      "Kimse bir web sayfasından, bizimki dahil, kesin bir yüzde almamalıdır, çünkü bu nikel piyasasıyla birlikte hareket eder. Farkı gerçek siparişiniz için isteyin; bu, tedarikçinizin o hafta verebileceği gerçek bir sayıdır.",
+      "## Bir şartnamedeki \"304/201\" neden asıl sorundur",
+      "Bu sayfanın en önemli kısmı burası ve metalurjiyle değil, kalitelerin nasıl yazıldığıyla ilgili.",
+      "\"Stainless Steel 304/201\" diye okunan bir şartname satırı bir alaşım anlamına gelmez. Fabrikanın bu ikisinden birini tedarik edeceği, alıcıya hangisinin söylenmeyeceği ve alıcının bakarak bunu anlayamayacağı anlamına gelir.",
+      "Bir iç ofis kapısı için bu tamamen kabul edilebilir olabilir. Bir kıyı sahasındaki dış kapı için ise bu, bir şartname gibi görünen bir biçimde yazılmış riskin tamamıdır. İki kalite görsel olarak aynıdır; fark ilk kıştan sonra oyuklanma olarak ortaya çıkar.",
+      "Dolayısıyla eğik çizgiyle ayrılmış bir kalite çifti gördüğünüzde onu bir şartname olarak değil, cevaplanmamış bir soru olarak ele alın. Yararlı cevap tek satırdır: \"Bu siparişte hangi kalite tedarik edilecek ve bu faturada belirtilebilir mi?\"",
+      "## Kalite yüzey işlemi değildir ve yüzey işlemi kaliteyi kurtarmaz",
+      "Çürütülmeye değer yinelenen bir varsayım: iyi bir yüzey işleminin daha düşük bir kaliteyi telafi ettiği. Etmez ve nedenini anlamak birkaç başka kararı da kolaylaştırır.",
+      "Paslanmaz korozyona direnir, çünkü krom ince, pasif bir oksit tabakası oluşturur ve bu tabaka, oksijen yüzeye ulaşabildiği sürece her hasar gördüğünde yeniden oluşur. Bu bir kaplama değil, tüm kesit boyunca süren bir metal özelliğidir.",
+      "Saten, ayna ya da fırçalanmış bir yüzey, yüzey dokusunu ve dolayısıyla birikintilerin ona ne kadar kolay tutunduğunu değiştirir; ayna yüzey kiri kaba fırçalanmış bir yüzeyden daha iyi atar ve bu gerçek ve yararlı bir farktır. Yapmadığı şey, alaşımda olmayan korozyon direncini eklemektir. Parlatılmış 201, 201'dir.",
+      "Paslanmaz üzerindeki bir PVD ya da galvanik kaplama ise yine başka bir konudur: bu bir kaplamadır, kendi aşınma ve yapışma davranışı vardır ve aşınıp ya da kesilip delindiği yerde işi alttaki metal yapar. O metal bir kıyı kapısında 201 ise kaplama sorunu çözmemiş, ertelemiştir.",
+      "Dolayısıyla kaliteyi ortama göre, yüzey işlemini görünüme ve temizlik rejimine göre belirleyin. Bunlar iki ayrı karardır ve biri ötekinin yerini tutmaz.",
+      "## Bir binada paslanmaza gerçekten zarar veren dört şey",
+      "Klorür: yukarıda anlatıldı ve asıl mesele budur. Pasif tabakaya yerel olarak saldırır ve oyuklanma üretir; bu da küçük, derin ve erken aşamada genel pastan çok daha zor görülen bir hasardır.",
+      "Demir bulaşması: paslanmaz bir yüzeye aktarılan serbest demir paslanır ve bu pas, tıpkı paslanmazın bozulması gibi görünür. İnşaat sırasındaki taşlama kıvılcımlarından, temizlikte kullanılan çelik yünden, karbon çeliği bağlantı elemanlarından ve aletlerden gelir. Alttaki paslanmaz genellikle sağlamdır; çare değiştirmek değil, temizlik ve pasivasyondur. Bir binanın ilk yılındaki en yaygın tek yanlış alarm budur.",
+      "Çay lekesi: kıyıdaki paslanmazda yaygın olan kahverengi bir yüzey renk değişimi; genellikle yapısal değil kozmetiktir. Yüzey pürüzlülüğü ve durulama eksikliğiyle güçlü biçimde ilişkilidir; ilk olarak yağmurun hiç yıkamadığı korunaklı yüzeylerde görülmesinin nedeni budur.",
+      "Mekanik hasar: çizikler ve ezikler pasif tabakayı bozar ve tabaka yeniden oluşur; ama kiri ya da klorürü hapseden bir çizik daha yavaş yeniden oluşur ve kıyı ortamındaki derin çizikler oyuklanma başlangıç noktalarına dönüşür.",
+      "Bu dördünden üçü montajdan sonra olanlarla ilgilidir; korozyon sayfamızın bir bakım planının malzeme şartnamesine sonradan eklenen bir şey değil, onun bir parçası olduğunu savunmasının nedeni budur.",
+      "## Mıknatıs testi ve insanların sandığından neden daha azını kanıtladığı",
+      "Şantiyedeki yaygın test parçaya bir mıknatıs tutmaktır: teoriye göre yapışırsa 201, yapışmazsa 304'tür.",
+      "Bunu bir sonuç olarak değil, her zaman bir ipucu olarak ele alın. Tavlanmış 304 esasen manyetik değildir; ama soğuk işleme (çekme, presleme, bir kolu şekillendirme) onu ölçülebilir biçimde manyetik yapar ve pek çok gerçek 304 donanım şekillendirilmiş bir kenarda mıknatısa tepki verir. 201 çoğu zaman hafif manyetiktir; dolayısıyla test, tam da donanımın yapıldığı parçalarda iki yönde de yanlış pozitifler üretir.",
+      "Ayrıca 304'ü 316'dan hiç ayırt edemez ve genellikle daha pahalı olan soru da odur.",
+      "Kalite gerçekten önemliyse cevap belgesel ya da analitiktir: haddehaneden bir malzeme sertifikası ya da parça üzerinde taşınabilir bir analiz cihazı. Bir sertifikanın bir mektup değil kanıt olması için neleri içermesi gerektiğini malzeme izlenebilirliği sayfamız anlatıyor.",
+      "## Kendi kataloğumuz ne diyor, sayılmış hâliyle",
+      "Bu standardı başkasından istemeden önce kendimize uygulamalıyız. Kataloğumuzda paslanmaz çelikten söz eden her ürünün malzeme satırlarından sayılmıştır.",
+      "| Malzeme satırının dediği | Ürün |\n| --- | --- |\n| \"Paslanmaz çelik\", kalite adlandırılmamış | 224 |\n| Bir çift ya da aralık, örn. \"304/201\", \"304/316L\" | 73 |\n| Tek bir kalite adlandırılmış | 16 |\n| Paslanmazdan söz eden toplam | 313 |",
+      "Paslanmaz ürünlerimizin yüzde yetmiş ikisi hiç kalite adlandırmıyor ve 73'ü daha iki kalite adlandırıyor. 313'ten on altısı, bu sayfanın bir alıcının sorması gerektiğini söylediği soruyu cevaplıyor.",
+      "Bu iyi bir sayı değil ve onu yayımlamak bilinçli bir tercih. Bunu okuyan bir alıcı tam olarak ne yapacağını bilir (kaliteyi, yazılı olarak, sipariş bazında sormak); kataloğun bunu cevapladığını varsayan bir alıcı ise sormazdı.",
+      "Böyle olmasının nedeni kötü niyet değil, sıradan bir durumdur: kalite, fabrikanın malzeme kayıtlarında duran bir satın alma bilgisidir ve katalog o kayıtlardan değil ürün tariflerinden oluşturulmuştur. Bu eksik, 224 satıra akla yatkın bir kalite yazarak değil, model model mutabakatla kapatılıyor.",
+      "## Siparişinize ne yazmalısınız",
+      "Aileyi değil kaliteyi adlandırın. \"Paslanmaz\" değil, \"304\".",
+      "Ortam sıradan bir iç mekân değilse onu belirtin (kıyı, havuz, endüstriyel, kıyı ve korunaklı); çünkü bu, tedarikçinin kaliteniz yanlış olduğunda onu teklif etmek yerine size söylemesini sağlar.",
+      "Kalitenin faturada ya da çeki listesinde yer almasını isteyin. Bu, onu bir konuşmadan bir belgeye dönüştürür; proje daha güçlü bir belge gerektiriyorsa bunun ne olacağını malzeme izlenebilirliği sayfamız açıklıyor.",
+      "Ve bağlantı elemanlarını da aynı kalitede belirtin. 201 vidalarla tutturulmuş 316 bir kol vidalardan korozyona uğrar; herkesin baktığı parça da orasıdır."
+    ],
+    "faq": [
+      {
+        "question": "201, 304 ve 316 paslanmaz arasındaki fark nedir?",
+        "answer": "Üçü de östenitiktir. 201 nikelin bir kısmının yerine mangan ve azot koyar; bu onu daha ucuz ve korozyona fark edilir biçimde daha az dayanıklı yapar. 304 yaklaşık %18 krom ve %8 nikel içerir ve genel amaçlı mimari kalitedir. 316, 304 artı yaklaşık %2 molibdendir ve klorür oyuklanmasına özellikle direnen molibdendir."
+      },
+      {
+        "question": "304 yerine ne zaman 316'ya ihtiyacım olur?",
+        "answer": "Kıyı sahaları, yüzme havuzları ve teknik odaları, endüstriyel atmosferler, buz çözücü tuz kullanılan her yer ve kimsenin temizlemeyeceği her dış kapı. Mekanizma belirlidir: molibden klorür saldırısına direnir ve kıyı havasının, havuz atmosferinin ve yol tuzunun getirdiği de budur."
+      },
+      {
+        "question": "201 paslanmaz kötü bir malzeme mi?",
+        "answer": "Hayır; kendi aralığının dışında çok sık kullanılan meşru bir malzemedir. Kuru, iklimlendirilmiş binalardaki iç kapılarda ve arka hizmet uygulamalarında kabul edilebilir performans gösterir. Klorür, nem ya da kirliliğin olduğu her yerde fark edilir biçimde daha hızlı bozulur."
+      },
+      {
+        "question": "Bir şartname sayfasında \"Stainless Steel 304/201\" ne anlama gelir?",
+        "answer": "Fabrikanın bu ikisinden birini tedarik edeceği ve size hangisinin söylenmeyeceği. Bu bir alaşım değil; bir şartname gibi görünen bir biçimde yazılmış cevaplanmamış bir sorudur. İkisi görsel olarak aynıdır ve fark, açık bir sahada ilk kıştan sonra oyuklanma olarak ortaya çıkar."
+      },
+      {
+        "question": "316, 304'ten ne kadar pahalı?",
+        "answer": "Küçük donanımda çoğu kişinin beklediğinden daha az, çünkü ham metal talaşlı işlenmiş, parlatılmış, kaplanmış, paketlenmiş ve sevk edilmiş bir parçanın teslim maliyetinin küçük bir kısmıdır. Merdiven nikel piyasasıyla birlikte hareket eder; bu yüzden herhangi bir web sayfasından bir yüzde almak yerine farkı gerçek siparişiniz için isteyin."
+      },
+      {
+        "question": "Ürün sayfalarınız paslanmaz kalitesini adlandırıyor mu?",
+        "answer": "Çoğunlukla hayır ve bunu söylemeyi tercih ediyoruz. Paslanmazdan söz eden 313 üründen 224'ü yalnızca \"paslanmaz çelik\" diyor, 73'ü 304/201 gibi bir çift adlandırıyor ve 16'sı tek bir kalite adlandırıyor. Eksik, 224 satıra akla yatkın bir kalite yazarak değil, fabrika malzeme kayıtlarıyla model model mutabakat yapılarak kapatılıyor."
+      }
+    ]
+  },
+  "strike-plates-and-keeps-2026": {
+    "title": "Karşılıklar 2026: ANSI Karşılık ile T Karşılık, Dudak Boyu ve Kimsenin Ölçmediği Ölçü",
+    "summary": "Karşılık, bir kapı açıklığının en ucuz bileşenidir ve kilidin hiç düzgün kilitlenip kilitlenmeyeceğine karar veren bileşendir. Bu sayfa iki standart Kuzey Amerika karşılık ölçüsünü, Avrupa karşılık geleneklerini, dudak boyunun tahmin etmek yerine nasıl hesaplanacağını, düz ve radyuslu köşeler arasındaki farkı ve kilitte duran bir güvenlik yükseltmesinin neden hiçbir şeyi yükseltmediğini ortaya koyuyor.",
+    "seoTitle": "Karşılıklar 2026: ANSI Karşılık, T Karşılık, Dudak Boyu",
+    "seoDescription": "4-7/8 inç ANSI ve 2-3/4 inç T karşılık dahil standart karşılık ölçüleri, dudak boyu hesabı, düz ve radyuslu köşeler, kutulu karşılık ve toz kutusu.",
+    "body": [
+      "Her kapı açıklığında en son tanımlanan, sonradan akla gelerek sipariş edilen ve hiçbir şey için suçlanmayan bir bileşen vardır. Bu karşılıktır ve kapının elde nasıl hissettirdiği konusunda kilitten daha fazlasına karar verir.",
+      "Kilitlemek için çekilmesi gereken bir kapı, tık sesi çıkarıp tutmayan bir dil, sert çıkan bir sürgü, kasada takırdayan bir kapı; bu dördü kilit sorunu olmaktan çok daha sık karşılık sorunudur.",
+      "İKİ STANDART KUZEY AMERİKA ÖLÇÜSÜ",
+      "ANSI karşılık, bazen tam dudaklı ya da 4-7/8 karşılık da denir, 4-7/8\" × 1-1/4\" (yaklaşık 124 mm × 32 mm) ölçüsündedir. Ticari içi boş metal kasalar için standart hazırlıktır ve buna göre hazırlanmış bir kasa, karşılığı eşleşen her kilidi alır.",
+      "T karşılık 2-3/4\" × 1-1/8\" (yaklaşık 70 mm × 29 mm) ölçüsündedir; üst kısmı daraltılmıştır, böylece plaka ters çevrilmiş bir T'ye benzer. Yaygın konut ve hafif ticari ölçüdür ve ahşap bir kasa genellikle buna göre frezelenir.",
+      "İkisi kasa yeniden işlenmeden birbirinin yerine geçmez. ANSI oyuğuna bir T karşılık takmak plakanın çevresinde büyük bir oyuk bırakır; T karşılık oyuğuna bir ANSI karşılık takmak frezenin genişletilmesini gerektirir. İkisi de bitmiş açıklıkta görünür; karşılık ölçüsünün şantiyede kararlaştırılmak yerine donanım listesinde yer alması gerekmesinin nedeni budur.",
+      "AVRUPA KARŞILIKLARI",
+      "Avrupa geleneğinde eşdeğer bileşen karşılık ya da karşılık sacıdır ve ölçüleri ayrı bir ölçü standardını değil kilidi izler. Bir gömme kilidin karşılığı ön alınına uyacak şekilde tedarik edilir: aynı genişlik, aynı köşe işlemi ve aynı aralıklarda delikler.",
+      "Avrupa karşılığının genellikle kilitle birlikte, Kuzey Amerika karşılığının ise genellikle ayrı bir satır olarak sipariş edilmesinin nedeni budur. İki yaklaşımdan biri daha iyi değildir; farklı şekillerde başarısız olurlar. Bir Avrupa açıklığı, biri kilidi değiştirip eski karşılığı koruduğunda başarısız olur. Bir Kuzey Amerika açıklığı ise kimse karşılığı hiç tanımlamadığında başarısız olur.",
+      "DUDAK BOYU VE ONU TAHMİN ETMEYİ NASIL BIRAKIRSINIZ",
+      "Dudak, karşılıktan kapı stoperine doğru uzanan kıvrık dildir ve görevi, dilin kasaya takılmaması için onu kasanın kenarı üzerinden yönlendirmektir.",
+      "Çok kısa bir dudak dilin kasa kenarına takılmasına izin verir; montajdan bir ay sonra ortaya çıkan sürtünme sesi budur. Çok uzun bir dudak açıklığa taşar, giysilere takılır ve bükülür; çift kanatlı bir kapıda diğer kanada da çarpabilir.",
+      "Çalışma yöntemi, kapı yüzünün eksen çizgisinden (dilin geçeceği noktadan) kasanın lamba yuvasının arka kenarına kadar ölçmek ve dudağın dışarı taşmadan kenarı aşması için küçük bir pay eklemektir. Sayı kasa profiline bağlıdır; bir katalogdan okunamamasının nedeni budur.",
+      "Bir donanım listesi için pratik sonuç: kasa profilini belirtin ya da dudak boyunu verin. İkisi de olmadan sipariş edilen bir karşılık, üreticinin standart dudağıyla sevk edilir; bu da üreticinin aklındaki kasa için doğrudur, sizinki için olmayabilir.",
+      "DÜZ VE RADYUSLU KÖŞELER",
+      "Bir karşılık plakasının köşeleri ya düz ya da radyusludur ve seçimi tercih değil, kasanın nasıl kesildiği belirler.",
+      "Freze ucuyla frezelenmiş bir kasanın köşeleri radyusludur, çünkü dönen bir uç keskin bir iç köşe kesemez. Zımba ya da keskiyle kesilmiş bir kasanın köşeleri düzdür. Radyus ölçüleri genellikle 1/4\" (yaklaşık 6 mm) ya da 5/8\"tir (yaklaşık 16 mm) ve ikisi takıldıktan sonra gözle görülür biçimde farklıdır.",
+      "Radyuslu bir yuvaya düz köşeli bir karşılık takmak dört hilal biçimli boşluk bırakır. Düz köşeli bir yuvaya radyuslu köşeli bir karşılık takmak dört kare boşluk bırakır. İkisi de işlevsel bir arıza değildir ve ikisi de işin umursamayan biri tarafından bitirildiği izlenimini verir; müşterinin bir şartname için para ödediği bir binada bu bir şikâyettir.",
+      "KUTULU KARŞILIKLAR VE TOZ KUTULARI",
+      "Karşılık plakasının arkasında dilin ya da sürgünün gidebileceği bir yer olmalıdır. Toz kutusu, deliğe pislik girmesini önleyen sığ, preslenmiş bir kaptır. Kutulu karşılık ise sürgünün kanırtılmasına ya da yana doğru zorlanmasına da direnen tamamen kapalı bir yuvadır.",
+      "Bir sürgü kilitte bu önemlidir. Ahşap bir kasada astarsız bir deliğe giren bir sürgü, kasanın kendi malzemesi ve iki kısa vidayla tutulur ve bir kapıdan zorla girişlerin çoğunun başarısızlık noktası da burasıdır: kilit gövdesi değil, silindir değil, kapı değil.",
+      "Gerçekten işe yarayan güvenlik yükseltmesi, kasayı geçip arkasındaki taşıyıcı yapıya ulaşan uzun vidalarla sabitlenmiş kutulu bir karşılıktır. Düz bir karşılığı tutan iki 3/4\" (19 mm) vidalı bir kasadaki yüksek sınıf bir silindir yükseltilmemiş, süslenmiştir.",
+      "AYARLANABİLİR VE İKİ PARÇALI KARŞILIKLAR",
+      "Bazı karşılıkların, montajdan sonra kavramanın ince ayarına izin veren ayarlanabilir bir dili ya da iki parçalı bir yapısı vardır. Var olmalarının nedeni kapı ve kasa toleranslarının birikmesidir; montaj günü kilitlenen bir kapı, bina oturduğunda ya da contalar sıkıştığında kilitlenmez olabilir.",
+      "Yeniden işleme erişiminin zor olduğu açıklıklarda ve kapı kapatıcı takılı kapılarda belirtmeye değerler; oralarda küçük bir hizasızlık, kilitlenmek yerine karşılıktan geri seken bir kapıya dönüşür.",
+      "Doğru ölçüdeki bir karşılığın yerini tutmazlar. Ayarlanabilir bir dil birikmiş toleransın bir iki milimetresini alır; 5 mm kısa bir dudağı düzeltmez.",
+      "ELEKTRİKLİ KARŞILIKLAR",
+      "Elektrikli karşılık, sabit karşılığı bir sinyalle serbest bırakan bir karşılıkla değiştirir ve mekanik bir karşılığın doğurmadığı iki soru ortaya çıkarır.",
+      "Fail-safe ya da fail-secure. Fail-safe enerji kesildiğinde serbest bırakır; fail-secure kilitli kalır. Hangisinin doğru olduğu bir ürün tercihi değil, bina için bir can güvenliği ve emniyet kararıdır ve aynı koridordaki iki kapı arasında sıklıkla, iyi nedenlerle tersine çevrilir.",
+      "Kapının yangın kapısı olup olmadığı. Bir yangın kapısındaki elektrikli karşılık bu kullanıma uygun olmalıdır, çünkü karşılık kapıyı kilitli tutan şeyin parçasıdır ve kilitlenmeyen bir yangın kapısı başarısız olmuş bir yangın kapısıdır.",
+      "DONANIM LİSTESİNE NE YAZILMALI",
+      "Karşılık tipi ve ölçüsü. Dudak boyu ya da uyması gereken kasa profili. Köşe işlemi, düz ya da radyuslu; radyusluysa radyus ölçüsüyle. Açıklığın geri kalanıyla eşleşen kaplama. Kutu ya da toz kutusu ve güvenlik bir şartsa vida boyu.",
+      "Altı satır. Karşılık genellikle listedeki en ucuz satırdır ve bir eksik listesi doğurma olasılığı en yüksek olan satırdır."
+    ],
+    "faq": [
+      {
+        "question": "Standart karşılık ölçüsü nedir?",
+        "answer": "Kuzey Amerika'da iki tane vardır. ANSI ya da tam dudaklı karşılık 4-7/8\" × 1-1/4\" (yaklaşık 124 mm × 32 mm) ölçüsündedir ve ticari içi boş metal kasalar için standarttır. T karşılık 2-3/4\" × 1-1/8\" (yaklaşık 70 mm × 29 mm) ölçüsündedir ve yaygın konut ve hafif ticari ölçüdür."
+      },
+      {
+        "question": "Dudak boyunu nasıl hesaplarım?",
+        "answer": "Kapı yüzünün, dilin geçtiği eksen çizgisinden kasanın lamba yuvasının arka kenarına kadar ölçün, sonra dudağın dışarı taşmadan kenarı aşması için küçük bir pay ekleyin. Kasa profiline bağlıdır; bu yüzden bir katalogdan okunamaz: siparişte kasa profilini belirtin ya da dudak boyunu verin."
+      },
+      {
+        "question": "Karşılığımın köşeleri düz mü radyuslu mu olmalı?",
+        "answer": "Kasanın nasıl kesildiğiyle hangisi eşleşiyorsa. Freze radyuslu köşeler bırakır, genellikle 1/4\" (6 mm) ya da 5/8\" (16 mm); zımba ya da keski ise düz köşeler bırakır. Uyumsuzluk dört köşede de görünür boşluklar bırakır; işlevsel bir arıza değil, ama şartnamesi olan her işte bir eksik listesi kalemidir."
+      },
+      {
+        "question": "Kutulu karşılık güvenliği gerçekten artırır mı?",
+        "answer": "Evet ve çoğu ahşap kasada daha iyi bir silindirden daha fazla. Astarsız bir kasa deliğine giren bir sürgü, ahşap ve iki kısa vidayla tutulur; bir kapıdan zorla girişlerin çoğunun başarılı olduğu yer de burasıdır. Kasanın arkasındaki taşıyıcı yapıya ulaşan uzun vidalı kutulu bir karşılık, işe yarayan yükseltmedir."
+      },
+      {
+        "question": "Kapım neden bazı günler kilitleniyor, bazı günler kilitlenmiyor?",
+        "answer": "Birikmiş tolerans. Kapı ve kasa toleransları üst üste biner, contalar sıkışır ve binalar hareket eder; bu yüzden montaj günü kilitlenen bir kapı kilitlenmez olabilir. Ayarlanabilir ya da iki parçalı bir karşılık bunun bir iki milimetresini alır; kapı kapatıcılı kapılarda ve yeniden işleme erişimi zor açıklıklarda belirtmeye değmesinin nedeni budur."
+      },
+      {
+        "question": "Elektrikli karşılıkta fail-safe ile fail-secure arasındaki fark nedir?",
+        "answer": "Fail-safe enerji kesildiğinde serbest bırakır; fail-secure kilitli kalır. Hangisinin doğru olduğu bir ürün tercihi değil, bina için bir can güvenliği ve emniyet kararıdır ve aynı koridordaki iki kapı meşru olarak farklı tanımlanabilir."
+      }
+    ]
+  },
+  "submittal-package-contents-2026": {
+    "title": "Kapı Donanımı Onay Dosyası 2026: İnceleyenin İhtiyaç Duyduğu Her Belge ve Reddettiren Dört Eksik",
+    "summary": "Bir donanım onay dosyası neredeyse her projede aynı birkaç nedenle reddedilir ve bunların hiçbiri donanımın kendisi değildir. Bu sayfa eksiksiz bir dosyanın neleri içerdiğini listeliyor, dosyayı geri gönderten dört eksiği adlandırıyor, bir ürün veri sayfası ile kanıt arasındaki farkı açıklıyor, kimin neyi imzaladığını ortaya koyuyor ve bu belgelerden hangilerini yayımladığımızı, hangilerini talep üzerine verdiğimizi ve hangilerine hiç sahip olmadığımızı açıkça belirtiyor.",
+    "seoTitle": "Kapı Donanımı Onay Dosyası 2026: Eksiksiz İçerik",
+    "seoDescription": "Kapı donanımı onay dosyası neleri içermeli, reddettiren dört eksik, ürün verisi ile test kanıtı farkı ve bir fabrikanın gerçekte sunabileceği belgeler.",
+    "body": [
+      "Onay dosyası bir satış belgesi değildir. Bir tasarımcının sipariş edilenin tanımlanan olup olmadığını kontrol ettiği andır ve işi ikna olmak değil açığı bulmak olan biri tarafından incelenir.",
+      "Bu ayrım reddedilen dosyaların neredeyse tamamını açıklar. Bir tedarikçi pazarlama materyali gönderir, çünkü elinde olan pazarlama materyalidir; inceleyenin kanıta ihtiyacı vardır ve dosyayı geri gönderir. İki hafta geçer. Aynı şey tekrar olur.",
+      "Bu sayfa dosyaya neyin girdiğini, bir inceleyenin okuduğu sırayla veriyor.",
+      "## Eksiksiz bir dosyanın biçimi",
+      "Bir donanım onay dosyasının beş kısmı vardır ve inceleyen bunları bu sırayla arar.",
+      "| Kısım | Nedir | Kim hazırlar |\n| --- | --- | --- |\n| Donanım listesi | Her kapı, set numarası ve o setteki her kalem | Tedarikçi ya da donanım danışmanı |\n| Ürün verisi | Katalog numarası başına ölçüleri ve kaplamayı içeren bir veri sayfası | Üretici |\n| İmalat çizimleri | Ölçülü çizimler ve kapı/kasa hazırlığı | Üretici |\n| Test kanıtı | Şartnamenin gerektirdiği her şey için sertifikalar ve raporlar | Akredite laboratuvar |\n| Anahtarlama çizelgesi | Projede varsa anahtar sistemi | Müşterinin güvenlik sorumlusuyla birlikte tedarikçi |",
+      "Liste önce gelir, çünkü dizindir. İnceleyen projenin ne satın aldığını öğrenmek için onu okur, sonra her satırı diğer dört kısımla karşılaştırır. Listesi olmayan bir dosya inceleyeni bir liste oluşturmaya zorlar; bir dosyanın iki hafta incelenmeden beklemesinin en yaygın nedeni budur.",
+      "## Donanım listesi, kapı kapı",
+      "Liste ürüne göre değil, kapıya göre düzenlenir. Her kapı çizimlerle eşleşen bir numara, bir donanım seti referansı ve o setin tam kalem listesini taşır.",
+      "Her kalemde üretici, katalog numarası, kaplama kodu, miktar ve ürünün bir fonksiyonu varsa fonksiyon bulunmalıdır. \"Kapı kolu, SSS\" diyen bir satır bir biçimi ve bir kaplamayı adlandırmış, modeli ise dışarıda bırakmıştır; oysa bütün belge o bilgiyi taşımak için vardır.",
+      "Liste aynı zamanda yönün yer aldığı yerdir ve yön bu aşamada yanlış yapılması en pahalı tek şeydir, çünkü çoğu ürün için şantiyede düzeltilemez. Yönün kendisinin yanı sıra kullandığınız kuralı da belirtin; Avrupa ve Kuzey Amerika kurallarının aynı kapıyı neden farklı kelimelerle tarif edebildiğini yön sayfamız anlatıyor.",
+      "## Ürün verisi: bir veri sayfasının taşıması gerekenler",
+      "Veri sayfası, üreticinin ürünün ne olduğuna dair beyanıdır. Bir inceleyen için dört soruyu telefon açmaya gerek bırakmadan cevaplamalıdır.",
+      "Ölçüleri nedir, şartnamenin kullandığı birimlerde. İnç cinsinden yazılmış bir şartname ile yalnızca milimetre cinsinden yayımlanmış bir veri sayfası, inceleyenin yapması ve sonra sorumluluğunu alması gereken bir dönüşümdür; İngilizce sayfalarımızın ikisini de taşımasının nedeni budur.",
+      "Kaplaması nedir, bir renk adı olarak değil bir kod olarak. \"Saten paslanmaz\" bir tariftir; US32D / 630 ise iki tarafın aynı standarda göre kontrol edebileceği bir koddur.",
+      "Neye uyar: kapı kalınlığı aralığı, backset, hazırlık tipi, ilgiliyse cam kalınlığı.",
+      "Fonksiyonu nedir, ürünün fonksiyonları varsa. Fonksiyon eki olmayan bir kilit model numarası eksiktir ve inceleyen depo kapısının birinin arkasından kilitlenip kilitlenmeyeceğini anlayamaz.",
+      "## Test kanıtı ürün verisi değildir ve farkın kendisi asıl meseledir",
+      "Dosyaların çoğunun kaldığı yer burasıdır ve tedarikçinin tarafından makul görünen bir kategori karışıklığı yüzünden kalır.",
+      "Veri sayfası, üreticinin kendi ürünü hakkındaki beyanıdır. Test sertifikası ise akredite bir üçüncü tarafın belirli bir test edilmiş konfigürasyon hakkındaki beyanıdır. Bir yangın dayanımı, bir dayanıklılık sınıfı ya da bir korozyon sınıfı isteyen bir şartname ikincisini istiyordur ve birincisi, ne kadar kendinden emin yazılmış olursa olsun, onun yerini tutmaz.",
+      "İnceleyenin uyguladığı pratik test: rapor numarasını, düzenleyen laboratuvarı, standardı, tarihi, uygulama kapsamını ve test edilen tam konfigürasyonu okuyabiliyor muyum. Bunlardan biri eksikse belge kanıt değil bir iddiadır.",
+      "Aynı seriden benzer bir ürün için verilmiş bir sertifika da kanıt değildir. Test sonuçları test edilene bağlıdır; bu, aynı boyutta bir menteşe takmanın kapıyı sertifikasının dışına çıkardığını anlatan yangın kapısı donanımı sayfamızdaki ilkenin aynısıdır.",
+      "## Bir dosyayı reddettiren dört eksik",
+      "Kabaca ne sıklıkla olduklarına göre sıralanmış olarak.",
+      "Kaplama kodu yok, yalnızca kaplama adları var: kırk kapı boyunca \"parlak krom\" diyen bir liste doğrulanamaz. İki üreticinin parlak kromu gözle görülür biçimde farklı ürünlerdir ve inceleyenin projenin tanımlananı alacağını teyit etmesinin yolu yoktur. Kodları ve aynı kodun iki tedarikçide neden yine de farklı olabileceğini kaplama kodu rehberimiz anlatıyor.",
+      "Yön yok ya da kuralı belirtilmeden verilmiş: yukarıda anlatıldı. Dördünün en pahalısıdır, çünkü düzeltme genellikle yeniden gönderim değil yeni üründür.",
+      "Test kanıtının yerine bir pazarlama iddiası: arkasında sertifika numarası olmayan bir ürünün yanına yazılmış \"yangına dayanıklı\", \"ANSI Grade 1\", \"UL listeli\". Bunlardan birini yakalayan bir inceleyen yalnızca o satırı reddetmez; diğerlerini kontrol etmeye başlar ve dosyanın güvenilirliği projenin geri kalanı için gitmiştir.",
+      "Hazırlık bilgisi yok: liste bir gömme kilidi adlandırır; kapı üreticisinin yuva ölçülerine, mil ve silindir deliği konumlarına ve aks mesafesine ihtiyacı vardır. \"Hazırlanmış\" ifadesinin neyi garanti edip neyi etmediğini kapı hazırlığı sayfamız ortaya koyuyor; kısa versiyonu şudur: bir hazırlık tipi bir şablon değildir.",
+      "## Kim neyi imzalar ve neden önemlidir",
+      "Bir onay dosyası bilginin yanı sıra sorumluluk da taşır ve inceleyen bunu da kontrol eder.",
+      "Üretici ürün verisinin ve çizimlerin arkasında durur. Akredite laboratuvar test kanıtının arkasında durur. Tedarikçi ya da donanım danışmanı listenin, yani doğru ürünün doğru kapıda olduğunun arkasında durur. İnceleyen şartnameye göre onaylar; bu, ürünün amaca uygunluğunu onaylamakla aynı şey değildir.",
+      "Bir test sonucunun başka sözcüklerle yeniden yazılmış hâli dahil tamamını tedarikçinin yazdığı bir dosya, bu rollerden üçünü tek bir role indirgemiştir. Bir inceleyenin tam olarak fark etmek üzere eğitildiği şey budur.",
+      "## Ne yayımlıyoruz, talep üzerine ne gönderiyoruz ve neye sahip değiliz",
+      "Tedarikçilerin normalde muğlak bıraktığı kısım burası; işte bir tablo olarak. Belgeler sayfamızın taşıdığı envanterin aynısıdır.",
+      "| Belge | Durum |\n| --- | --- |\n| Ölçülü çizimler | Yayımlanıyor |\n| Şartnameler | Yayımlanıyor |\n| Katalog | Yayımlanıyor |\n| Şartname dışa aktarımı (listeniz için yapılandırılmış veri) | Talep üzerine |\n| Test belgeleri | Talep üzerine |\n| BIM / Revit aileleri | Mevcut değil |\n| Yerel CAD (düzenlenebilir DWG kaynak) | Mevcut değil |",
+      "Dikkatle okunmaya değer olan son iki satırdır. BIM ailelerimiz ve düzenlenebilir yerel CAD dosyalarımız yok ve bunu burada söylemek bize, sizin bunu bir onay döngüsünün üçüncü haftasında keşfetmenizin size mal olacağından daha az projeye mal oluyor.",
+      "\"Evet, BIM sağlayabiliriz\" deyip sonra .rvt uzantısıyla yeniden adlandırılmış bir PDF gönderen bir tedarikçi hiçbir şeyi çözmemiştir; keşfi, bir modelin zaten o varsayım üzerine kurulmakta olduğu noktaya taşımıştır.",
+      "## Yeniden gönderimi gereksiz kılan iki şey",
+      "Şartname bölümünü fabrikaya siparişten sonra değil, tekliften önce gönderin. Reddedilen dosyaların neredeyse hepsi, eksik bir soruya göre doğru teklif edilmiş bir ürün içerir. Şartname EN 1634-1 EI 30 diyorsa bu kısıt, bir muadil hâlâ bedavayken fabrikaya ulaşmalıdır.",
+      "Kanıtı ihtiyaç duymadan önce isteyin. Bir test raporu ya vardır ya yoktur ve bunu onay dosyası aşamasında öğrenmek bir belge sorusunu bir program gecikmesine dönüştürür. Gerçekte hangi belgeleri alabileceğinizi anlatan sayfamız neyin isteneceğini ve cevabın nasıl okunacağını listeliyor.",
+      "## Muadil talepleri ve çoğunun neden reddedildiği",
+      "Bir muadil talebi, tasarımcıdan adı verilenden başka bir ürünü kabul etmesini ister. Sürecin normal bir parçasıdır ve tamamen düzeltilebilir bir nedenle gerekenden çok daha sık reddedilir.",
+      "Reddedilen bir talep neredeyse her zaman yanlış şeyleri karşılaştırır. Muadilin eşdeğer olduğunu öne sürer ve sonra iki ürünün paylaştığı özellikleri listeler. Tasarımcının ihtiyaç duyduğu ise tam tersidir: farklı oldukları her husus ve her farkın bu kapıda kabul edilebilir olduğuna dair kanıt.",
+      "Dolayısıyla işe yarayan bir talep tanımlanan ürünü, önerilen ürünü ve şartnamenin gerçekten sınırladığı özelliklerin (sınıf, çevrim, yangına uygunluk, korozyon sınıfı, kaplama kodu, ölçüler) her birinin arkasındaki test kanıtıyla birlikte satır satır karşılaştırmasını belirtir. Bir özellik daha kötüyse bunu söyleyin ve burada neden önemli olmadığını söyleyin.",
+      "Bir farkı gizleyen talep, inceleyen onu bulduğu anda reddedilir ve aynı tedarikçiden gelen sonraki her talep bu akılda tutularak okunur. Ortak özellikler hiçbir zaman soru değildi.",
+      "## Kendi eksiklerimiz nerede",
+      "Ürünlerimizin bir kısmı teste giriyor ve henüz sertifikası yok. Bunun doğru olduğu yerde bir dayanım ima etmek yerine ürün sayfasında bunu söylüyoruz ve sahip olmadığımız bir sertifikayı gerektiren bir onay dosyası, size tamamlayamayacağımızı söyleyeceğimiz bir onay dosyasıdır.",
+      "Bu, kulağa geldiğinden daha az sayıda kaybedilmiş talep demektir ve bu sayfanın geri kalanıyla bağdaşan tek tutumdur. Bir onay dosyasına desteksiz bir \"yangına dayanıklı\" yazacak bir tedarikçi bir çizime de desteksiz bir ölçü yazar ve inceleyen bunu bilir."
+    ],
+    "faq": [
+      {
+        "question": "Bir kapı donanımı onay dosyasına neler girer?",
+        "answer": "Bu sırayla okunan beş kısım: donanım listesi (dizin, kapıya göre düzenlenmiş), katalog numarası başına ürün verisi, kapı ve kasa hazırlığını içeren imalat çizimleri, şartnamenin gerektirdiği her şey için test kanıtı ve projede bir anahtar sistemi varsa anahtarlama çizelgesi."
+      },
+      {
+        "question": "Veri sayfası ile test kanıtı arasındaki fark nedir?",
+        "answer": "Veri sayfası, üreticinin kendi ürünü hakkındaki beyanıdır. Test sertifikası, akredite bir üçüncü tarafın belirli bir test edilmiş konfigürasyon hakkındaki beyanıdır. Bir yangın dayanımı, dayanıklılık sınıfı ya da korozyon sınıfı isteyen bir şartname ikincisini istiyordur ve birincisi asla onun yerini tutmaz."
+      },
+      {
+        "question": "Onay dosyaları neden reddedilir?",
+        "answer": "Kabaca sıklık sırasıyla dört şey yüzünden: kaplama kodları yerine kaplama adları; yönün olmaması ya da kuralı belirtilmeden verilmesi; bir sertifika numarasının yerini tutan bir pazarlama iddiası; ve kapı üreticisi için hazırlık bilgisinin olmaması. Bunların hiçbiri donanımın kendisi değildir."
+      },
+      {
+        "question": "Aynı seriden benzer bir ürünün sertifikasını kullanabilir miyim?",
+        "answer": "Hayır. Test sonuçları, sertifikada basılı uygulama kapsamı içinde, test edilen konfigürasyona bağlıdır. Komşu bir model için verilmiş bir sertifika bu model için kanıt değildir; aynı boyutta bir menteşe takmanın bir yangın kapısını sertifikasının dışına çıkarmasının arkasındaki ilkenin aynısıdır."
+      },
+      {
+        "question": "BIM aileleri ya da düzenlenebilir CAD sağlıyor musunuz?",
+        "answer": "İkisine de hayır ve bunu bir onay döngüsünün üçüncü haftasında değil burada söylemeyi tercih ediyoruz. Ölçülü çizimleri, şartnameleri ve kataloğu yayımlıyoruz; şartname dışa aktarımları ve test belgeleri talep üzerine sunuluyor. BIM/Revit ailelerimiz ve yerel düzenlenebilir CAD dosyalarımız yok."
+      },
+      {
+        "question": "Yeniden gönderimden nasıl kaçınırım?",
+        "answer": "Şartname bölümünü fabrikaya siparişten sonra değil tekliften önce gönderin; böylece EN 1634-1 EI 30 gibi bir kısıt, bir muadil hâlâ bedavayken ulaşır. Ve test kanıtını erken isteyin: bir rapor ya vardır ya yoktur ve bunu onay dosyası aşamasında öğrenmek bir evrak sorusunu bir program gecikmesine dönüştürür."
+      }
+    ]
+  },
+  "technical-drawings-what-to-expect-2026": {
+    "title": "Kapı Donanımı Çizimleri 2026: PDF, DWG, STEP ve BIM Karşılaştırması ve Bir Fabrikanın Size Gerçekte Verebilecekleri",
+    "summary": "Bir donanım fabrikasından \"CAD'i\" istemek her ülkede farklı bir dosya getirir ve çoğu zaman aldığınız dosya onu istediğiniz işi yapamaz. Bu sayfa üç farklı soruyu cevaplayan üç çizim türünü birbirinden ayırıyor, formatları ve her birinin gerçekte ne için olduğunu karşılaştırıyor, yetkin bir fabrikada bile 3D katı modelin neden çoğu zaman bulunmadığını açıklıyor ve kendi çizim kapsamımızı bir vaat olarak değil bir sayı olarak veriyor.",
+    "seoTitle": "Kapı Donanımı Çizimleri 2026: PDF, DWG, STEP ve BIM",
+    "seoDescription": "Üç tür donanım çizimi; PDF, DWG, DXF, STEP ve BIM ne işe yarar, 3D katı model neden çoğu zaman yoktur ve bir fabrikadan doğru dosya nasıl istenir.",
+    "body": [
+      "\"CAD'i gönderebilir misiniz?\" bir donanım fabrikasının aldığı en yaygın ve en az belirgin teknik taleptir. CAD bir format değildir ve insanların bu cümleyle kastettiği üç şey üç farklı dosya gerektirir.",
+      "Belirsizliğin bedeli bir haftadır. Alıcı sorar, fabrika elinde olanı gönderir, alıcı bunun ihtiyaç duyduğu işi görmeyeceğini keşfeder ve yazışma, ilk seferde kullanılabilecek daha iyi kelimelerle yeniden başlar.",
+      "## Üç farklı soruyu cevaplayan üç çizim",
+      "Formattan önce hangi soruyu sorduğunuza karar verin. Uyuşmayan taleplerin neredeyse hepsi gerçekte burada uyuşmaz.",
+      "| Çizim | Cevapladığı soru | Tipik kullanım |\n| --- | --- | --- |\n| Genel görünüş | Neye benziyor ve kabaca ne büyüklükte | Seçim, bir liste, bir müşteri sunumu |\n| Ölçülü çizim | Her parçası tam olarak ne büyüklükte | Uyumu kontrol etmek, şartname yazmak, iki ürünü karşılaştırmak |\n| Montaj şablonu | Delikler nereye açılacak | Bir kapıyı ya da kasayı kesmek |",
+      "Genel görünüş bir kapıyı kesmenize izin vermez. Şablon, kolun bir duvar dönüşünü aşıp aşmadığını söylemez. \"Bir çizim\" isteyip bu üçünden yanlış olanını almak fabrikanın yardımsever olmaması değildir; sorunun üç cevabı olmasıdır.",
+      "## Formatlar ve her birinin dürüstçe ne için olduğu",
+      "| Format | Nedir | İyi olduğu iş | Yapamadığı |\n| --- | --- | --- | --- |\n| PDF | Herkesin açabileceği sabit bir sayfa | Belirleyici ölçülü çizimler, şablonlar | Düzenlenmek ya da ekranda güvenilir biçimde ölçülmek |\n| SVG | Vektör, bulanıklaşmadan ölçeklenir | Web çizimleri, her boyutta baskı | CAD üst verisi ya da katman taşımak |\n| DXF | Çoğu CAD'in okuduğu bir değişim formatı | 2D geometriyi kendi CAD'inize almak | Katmanların ya da notların korunmasını garanti etmek |\n| DWG | AutoCAD'in yerel 2D/3D dosyası | AutoCAD'de düzenleme | Herkes tarafından açılmak; sürümler farklıdır |\n| STEP / IGES | 3D katı geometri | Çakışma kontrolü, talaşlı işleme, 3D montaj | Parçayı kimse 3D modellemediyse var olmak |\n| Revit / IFC | Veri eklenmiş bir BIM nesnesi | Bina modelleri, koordinasyon | Gerçek modelleme işi yapılmadan 2D bir çizimden üretilmek |",
+      "İki kez okunmaya değer satır sonuncusudur. BIM ailesi bir çizimin format dönüşümü değil, parametre taşıyan modellenmiş bir nesnedir ve onu üretmek kendi maliyeti olan ayrı bir iştir. BIM'e \"evet\" deyip yeniden adlandırılmış bir PDF gönderen bir fabrika formatı yanlış anlamamıştır; keşfi ertelemiştir.",
+      "## 3D katı model neden çoğu zaman yoktur",
+      "Bu insanları şaşırtır ve açıklamaya değer, çünkü ciddiyetsiz bir fabrikanın işareti değildir.",
+      "Donanımın büyük bir kısmı 2D olarak tasarlanır ve kalıplanır. Kalıp 2D profillerden işlenir, talaşlı işleme 2D'den programlanır ve parça 2D çizimlere göre kontrol edilir. Kimsenin hiçbir zaman katı modele ihtiyacı olmadı, bu yüzden kimse yapmadı.",
+      "Bu, parçayı on beş yıldır yapan ve size her ölçüsünü verebilen bir fabrikanın STEP talebine dürüstçe \"öyle bir şey yok\" diye cevap verebileceği anlamına gelir. Doğru devam sorusu onlardan şüphe etmek değil, ölçülü bir 2D çizimin işinizi görüp görmeyeceğini sormaktır; çünkü genellikle görür.",
+      "3D bir modelin gerçekten önemli olduğu durumlarda (koordineli bir modelde çakışma kontrolü ya da sizin tarafınızda bir talaşlı işleme operasyonu) ona ne için ihtiyaç duyduğunuzu söyleyin. Amacı bilen bir fabrika bazen bütün bir katı model yerine ihtiyacınız olan belirli kesiti üretebilir.",
+      "## Toleransı olmayan bir çizim nominal bir çizimdir",
+      "Bir çizimdeki her ölçü bir hedeftir. Bir çizimin size söyleyebileceği ya da söylemeyebileceği şey, gerçek parçanın o hedeften ne kadar uzak olmasına izin verildiğidir.",
+      "Bu en çok iki parçanın buluşması gereken yerde önemlidir: yuvadaki bir kilit gövdesi, göbekteki bir mil, bir cam üzerindeki bir cam bağlantı parçası. Nominal 29 mm'lik bir yuvadaki nominal 29 mm'lik bir gövde oturmaz; yuvanın boşluğa ihtiyacı vardır ve boşluk nominal rakamlardan değil toleranslardan gelir.",
+      "Dolayısıyla soru uyumsa çizimin tolerans taşıyıp taşımadığını açıkça sorun, taşımıyorsa çalışma boşluğunun ne olması gerektiğini sorun. Bir fabrika, çizim bunu basmasa bile deneyimden cevaplayabilir.",
+      "## Bir çizimi belirleyici kılan nedir",
+      "Model numarası, revizyon numarası ve tarih içeren bir antet. Bir ölçek ya da açık bir \"ölçeksiz\" ibaresi. Bir kez ve açıkça belirtilmiş birimler. Bir izdüşüm kuralı (birinci açı ya da üçüncü açı), çünkü iki kuralda çizilen aynı parça yan görünüşleri karşı taraflara koyar.",
+      "Bir çizimi belirleyici kılmayanlar: ekran görüntüsü olması, basılı bir çizimin fotoğrafı olması ya da revizyon numarası olmadan gelmesi. Revizyonu olmayan bir çizimin yerine yenisi geçemez; bu da kimsenin onun güncel olup olmadığını anlayamayacağı anlamına gelir.",
+      "## Kendi kapsamımız, bir sayı olarak",
+      "Tedarikçiler çizim bulunabilirliğini sıfatlarla tarif eder. İşte sitede gerçekte olanlardan sayılmış rakamlar.",
+      "| Ne | Sayı |\n| --- | --- |\n| HYDE katalog kayıtları | 588 |\n| Fotoğraflı görünür ürün listelemeleri | 521 |\n| HYDE modelleri için ölçülü SVG dosyaları | 84 |\n| Bu dosyalardan görünür listelemelerde olanlar | 72 |\n| HYDE kapı hazırlık SVG'leri | 0 |\n| Yerel düzenlenebilir CAD (DWG kaynak) | yok |\n| BIM / Revit aileleri | yok |",
+      "84 ölçülü SVG dosyası HYDE model kayıtlarına karşılık geliyor, ama yalnızca 72'si 521 görünür ürün listelemesinde yer alıyor: bir alıcının göz atabildiklerinin kabaca yüzde 14'ü. Diğer 12 dosya, listelenmiş ürün fotoğrafı olmayan kayıtlara ait. Görünür modellerin çoğu için var olan şey şartname tablosudur ve bir çizimin istenmesi ya da üretilmesi gerekir.",
+      "Yayımlanan çizimler SVG'dir; yani yumuşamadan her boyuta ölçeklenir ve A3 ya da A0'da temiz basılır. CAD kaynağı değildir ve onları CAD olarak tanımlamıyoruz.",
+      "## İlk cevabın doğru cevap olması için nasıl sorulur",
+      "Formatı değil soruyu adlandırın. \"Kolun 90 mm'lik bir duvar dönüşünü aştığını kontrol etmem gerekiyor\" size ölçülü bir görünüş getirir; \"CAD'i gönderin\" ise elde en yakın ne varsa onu getirir.",
+      "Onunla ne yapacağınızı belirtin. Bir kapıyı kesmek, bir model kurmak, iki ürünü karşılaştırmak ve bir liste yazmak dört farklı ihtiyaç ve üç farklı dosyadır.",
+      "Tam olarak hangi model numaraları olduğunu söyleyin. Bir seri için çizim talebi, fabrikanın tek bir işlemle karşılayamayacağı bir taleptir ve bir soru olarak geri döner.",
+      "Çalıştığınız birimleri söyleyin. Milimetre yayımlıyoruz ve İngilizce sayfalarda inç karşılıklarını veriyoruz; ama iki birimde de ölçülendirilmiş bir çizim, iki kat kopyalama hatası olasılığı olan bir çizimdir; bu yüzden hangisini istediğinizi bilmek daha iyidir.",
+      "## Çizim olmadığında ve yine de ihtiyacınız olduğunda",
+      "Görünür modellerin çoğu için gerçek durum budur; bu yüzden okuyucuyu yüzde 14'te bırakmak yerine ne yapılacağını söylemeye değer.",
+      "En hızlı yol bir numune ve bir kumpastır. Fiziksel bir parça, bir çizimin cevaplayacağı her ölçü sorusunu cevaplar ve bunları birinin çizdiği parça için değil, gerçekte alacağınız parça için cevaplar. Neyin isteneceğini ve geldiğinde neyin ölçüleceğini numuneler ve giriş kontrolü sayfamız anlatıyor.",
+      "Sonra olan asıl önemli kısımdır ve ölçümle değil sahiplikle ilgili bir sorudur. Bir numuneden aldığınız ölçü sizin ölçümünüzdür. Onu bir şartnameye koyarsanız ve bir kapı ona göre kesilirse o sayının sorumluluğu size geçmiştir ve daha sonra yarım milimetre farklı bir parça sevk eden bir fabrika mutlaka yanlış bir şey yapmış olmaz, çünkü aranızda hiçbir zaman bir nominal ve bir tolerans üzerinde anlaşılmamıştır.",
+      "Dolayısıyla numuneyi ölçün, sonra sayıları geri gönderin ve fabrikadan bunları yazılı olarak teyit etmesini isteyin. Bu, sizin ölçümünüzü onların beyanına dönüştürür; bir çizim de tam olarak bu olurdu. Bir e-postaya mal olur ve bir ölçü ile bir varsayım arasındaki farkın tamamıdır.",
+      "Bir çizim olsa bile alınmaya değer iki ölçü vardır, çünkü çizimlerin en sık atladığı ikisidir. Birincisi, bir parçanın kendi nominal ölçüsüne karşılık yuvasında ya da deliğinde ihtiyaç duyduğu çalışma boşluğudur; yukarıda anlatıldı ve 29 mm'lik bir gövdenin 29 mm'lik bir yuvaya girmemesinin nedenidir. İkincisi, rozetten değil kapının bitmiş yüzünden ölçülen gerçek çıkıntıdır; bir kolun bir duvar dönüşünü aşıp aşmadığına karar veren budur.",
+      "İkisi de kâğıt üzerinde uyan bir parça ile gerçekten uyan bir parça arasındaki farktır. Numune elinizdeyken hiçbiri bir dakikadan fazla sürmez ve ikisini de şimdi belirlemek, bir konteyner dolusu kapı işlendikten sonra keşfetmekten daha ucuzdur.",
+      "## Üstünü örtmeyeceğimiz eksik",
+      "Görünür listelemelerde yüzde 14 kapsam bir övünme değildir. Sayı budur ve eksik çizimler bir tariften üretilmek yerine gerçek parçadan çıkarılmalıdır.",
+      "588 akla yatkın çizim yayımlamaktansa bu rakamı yayımlamayı tercih ederiz. Çizim, şartnamenin ikinci taslağıdır (ilki fotoğraftır) ve kimsenin ölçmediği çizilmiş bir ölçü, bir şartname tablosundaki uydurulmuş bir rakamla aynı hatadır; üstelik birinin ona göre bir kapı kesebileceği ek ağırlığıyla."
+    ],
+    "faq": [
+      {
+        "question": "Genel görünüş, ölçülü çizim ve şablon arasındaki fark nedir?",
+        "answer": "Üç farklı soruyu cevaplarlar. Genel görünüş neye benzediğini ve kabaca ne büyüklükte olduğunu söyler. Ölçülü çizim her parçanın tam olarak ne büyüklükte olduğunu söyler. Şablon deliklerin nereye açılacağını söyler. Genel görünüş bir kapıyı kesmenize izin vermez, şablon da bir kolun bir duvarı aşıp aşmadığını söylemez."
+      },
+      {
+        "question": "Hangi çizim formatını istemeliyim?",
+        "answer": "Belirleyici bir ölçülü çizim ya da şablon için PDF. 2D geometriyi kendi CAD'inize almak için DXF. Yalnızca gerçekten 3D katılara ihtiyacınız varsa STEP ya da IGES. Revit ya da IFC, bir çizimin format dönüşümü değil, veri eklenmiş bir BIM nesnesidir; birini üretmek kendi maliyeti olan ayrı bir iştir."
+      },
+      {
+        "question": "Fabrika neden 3D model gönderemiyor?",
+        "answer": "Çünkü donanımın büyük bir kısmı tamamen 2D olarak tasarlanır, kalıplanır, işlenir ve kontrol edilir. Kimsenin hiçbir zaman katı modele ihtiyacı olmadı, bu yüzden kimse yapmadı. Bir parçayı on beş yıldır yapan ve size her ölçüsünü verebilen bir fabrika yine de dürüstçe STEP dosyasının olmadığını söyleyebilir."
+      },
+      {
+        "question": "Bir çizim toleransları içerir mi?",
+        "answer": "Her zaman değil ve bu, iki parçanın buluştuğu her yerde önemlidir. Nominal 29 mm'lik bir yuvadaki nominal 29 mm'lik bir kilit gövdesi oturmaz; boşluk nominal rakamlardan değil toleranslardan gelir. Soru uyumsa toleransların çizimde olup olmadığını ve ne kadar çalışma boşluğu bırakılacağını açıkça sorun."
+      },
+      {
+        "question": "Ürünlerinizin kaçının çizimi var?",
+        "answer": "588 HYDE kaydında 84 ölçülü SVG dosyası var, ama yalnızca 72'si 521 görünür ürün listelemesinde yer alıyor; yaklaşık yüzde 14. HYDE'nin kapı hazırlık SVG'si 0. Ölçülü bir ürün görünüşü bir kapı kesim şablonu değildir; işlemeden önce modele özel hazırlık ölçülerini isteyin."
+      },
+      {
+        "question": "Bir çizimi belirleyici kılan nedir?",
+        "answer": "Model numarası, revizyon ve tarih içeren bir antet; belirtilmiş bir ölçek ya da açık bir \"ölçeksiz\" ibaresi; bir kez ve açıkça belirtilmiş birimler; ve izdüşüm kuralı, çünkü birinci ve üçüncü açı yan görünüşleri karşı taraflara koyar. Revizyon numarası olmayan bir çizimin yerine yenisi geçemez; bu yüzden kimse onun güncel olup olmadığını anlayamaz."
+      }
+    ]
+  },
+  "universal-vs-handed-hardware-2026": {
+    "title": "Yönsüz mü Yönlü mü 2026: Hangi Donanım Ters Çevrilebilir, Hangisi Çevrilemez ve Projeleri Zora Sokan Dört Ürün",
+    "summary": "\"Üniversal\" bir donanım kataloğunda üç farklı anlama gelir ve bunlardan yalnızca biri yön konusunu düşünmeyi bırakabileceğiniz anlamına gelir. Bu sayfa yönsüzü, şantiyede ters çevrilebilirden ve fabrikada yönlendirilmişten ayırıyor, insanların yönsüz sandığı hâlde yönlü olan dört ürünü adlandırıyor, ters çevirmenin bir kilidin içinde gerçekte ne yaptığını açıklıyor ve sorunun hiç gelmemesi için siparişe yazılacak satırı veriyor.",
+    "seoTitle": "Yönsüz ve Yönlü Donanım 2026: Ne Ters Çevrilebilir",
+    "seoDescription": "Hangi kapı donanımı yönsüz, hangisi şantiyede ters çevrilebilir, hangisi fabrikada yönlü; projeleri zora sokan dört ürün ve siparişe ne yazılmalı.",
+    "body": [
+      "Bir katalog \"üniversal\" der ve alıcı yön konusunda endişelenmeyi bırakır. Amaçlanan etki budur ve kabaca üç seferden birinde doğrudur.",
+      "Kelime gerçekten farklı üç durumu kapsar ve fark, yanlış bir yönün beş dakikalık bir düzeltme mi, iki dakikalık bir düzeltme mi yoksa yeni bir sipariş mi olacağına karar verir.",
+      "## Üniversal'in üç anlamı",
+      "| Kategori | Ne anlama gelir | Yön yanlışsa |\n| --- | --- | --- |\n| Yönsüz | Ürünün yönü yoktur. Hiçbir işlem gerekmeden iki yönde de çalışır | Düzeltilecek bir şey yok; yanlış yön yoktu |\n| Şantiyede ters çevrilebilir | Tek yönde sevk edilir ve şantiyede, genellikle dakikalar içinde değiştirilebilir | Bir tornavida ve birkaç dakika |\n| Fabrikada yönlü | Yön üründe yerleşiktir ve değiştirilemez | Yeni bir ürün |",
+      "Yalnızca ilki gerçekten üniversaldir. İkincisi, çoğu kataloğun bunu söylerken kastettiğidir ve ayrım önemlidir, çünkü şantiyede ters çevrilebilir olan yine de birinin onu çevirmesini gerektirir; kırk kapının tesliminden bir gün önce geldiği bir işte \"her biri birkaç dakika\" kimsenin planlamadığı bir gündür.",
+      "## Gerçekten yönsüz olanlar",
+      "Normal bir kanatlı kapıdaki yaprak menteşelerin çoğu. Menteşe pimine göre simetriktir; yönü, onu açıklığın hangi tarafına sabitlediğiniz belirler.",
+      "Kolun asimetrik bir ayrıntısı olmayan düz ya da hafif kıvrık bir form olduğu, rozete monteli kapı kollarının çoğu. Rozet yuvarlaktır ve düz bir kol ters çevrilerek yön değiştirir.",
+      "Çekme kolları, itme plakaları, tekmelikler, kapı stoperleri ve gömme sürgülerin çoğu.",
+      "Silindirler. Avrupa tipi ya da oval bir silindirin yönü yoktur; olan şey bir boy ve bir bölünmedir. Bunu Avrupa tipi silindir sayfamız anlatıyor; insanlar bunu bazen yönle karıştırır, çünkü ikisinden birini yanlış almak aynı belirtiyi doğurur: bu kapıda çalışmayan bir parça.",
+      "## Şantiyede ters çevrilebilir olanlar ve ters çevirmenin gerçekte ne yaptığı",
+      "Silindirik ve tübüler dillerin çoğu, dilin 180 derece döndürülmesiyle yön değiştirir; böylece eğimli yüz karşılığa diğer taraftan gelir. Birçok modelde bu, alet gerektirmeyen bir bas-çevir hareketidir.",
+      "Gömme kilit gövdelerinin çoğu da aynı şekilde, bazen bir vida ya da tutucu plaka söküldükten sonra yön değiştirir. Yön değiştiren yalnızca dildir; varsa sürgü simetriktir ve yönü umursamaz.",
+      "Mekanizmanın tamamı tek cümlede şudur: bir kilidi ters çevirmek, dili rampası kapanma yönüne bakacak şekilde döndürmek demektir. Gövdedeki diğer her şey genellikle simetriktir.",
+      "İki sonuç çıkar. Model izin veriyorsa ters çevirmek hızlıdır, vermiyorsa imkânsızdır; yarım bir versiyonu yoktur. Ve şantiyede ters çevrilmiş bir kilit birinin açtığı bir kilittir; dolayısıyla bir yangın kapısında, ters çevirme üreticinin talimatlarının izin verdiği sınırlar içinde değilse bu, sistemde bir değişikliktir.",
+      "## Projeleri zora sokan dört ürün",
+      "İnsanların üniversal sandığı ve yanıldığı ürünler bunlardır.",
+      "Panik çıkış cihazı dış kolu: cihaz genellikle yönsüzdür; dış kol çoğu zaman değildir. Kollu bir dış kolun doğru tarafı gösteren bir kolu ve doğru taraftan kavraması gereken bir kuyruk parçası vardır. Panik çıkış cihazı dış kolu sayfamızın dış kolu şartnamenin tamamı olarak ele almasının nedeni tam da bu türdendir.",
+      "Paralel kollu montajlı kapı kapatıcılar: gövde yönsüz olabilir; paralel kol takımı genellikle değildir. \"Yönsüz\" olarak sipariş edilip paralel kolla monte edilen bir kapı kapatıcı, kutuda olmayan bir kol setine ihtiyaç duyabilir; bunu kapı kapatıcı montajı sayfamız anlatıyor.",
+      "Biçimli ya da asimetrik formlu kollar: başparmak detayı, oyulmuş bir alt yüzü ya da yönlü bir incelmesi olan bir kol ters çevrilerek yön değiştirmez, baş aşağı olur. Fotoğraftan sağ çıkıp kapıda kalan budur.",
+      "Ölü dil pimli ya da kaçık göbekli kilit gövdeleri: bazı gövdeler ölçü olarak simetrik, işlev olarak yönlüdür. Dördünün en az görüneni ve bir koridorun sonunda bir montajcı tarafından keşfedilme olasılığı en yüksek olanıdır.",
+      "## Bir teslimat notunda \"ters çevrilebilir\" ile \"ters çevrilmiş\" neden aynı kelime değildir",
+      "Büyük siparişlerde küçük ama pahalı bir ayrım.",
+      "Ters çevrilebilir bir ürün tek yönde sevk edilir. Kapı listesi kırk sol el kapı diyorsa ve ürün ters çevrilebilirse birinin yine de kırk kilidi çevirmesi gerekir ya da tedarikçi bunu paketlemeden önce yapar; bu da yapılması gereken bir taleptir.",
+      "Dolayısıyla büyük bir siparişte yalnızca ters çevrilebilir bir ürün değil, ürünün gereken yöne çevrilmiş olarak tedarik edilmesini isteyin. Kutu kapanmadan önce bir dilin döndürüldüğü fabrikada hiçbir şeye mal olmaz; yapılmazsa şantiyede bir güne mal olur.",
+      "Ve sipariş karışıksa dağılımı belirtin (\"24 LH, 16 RH\"), çünkü söylenmeyen bir tedarikçi hepsini tek yönde sevk eder ve haklı olur.",
+      "## İki kural, her biri bir paragrafta",
+      "Yön sayfamızı baştan tekrarlamadan, kullanmaya yetecek kadar.",
+      "Avrupa kuralı kapıya size doğru açıldığı taraftan (çekme tarafından) bakar ve yönü menteşelerin hangi tarafta olduğuna göre adlandırır. Menteşeler solda ise sol el. Avrupa ürün kodlarında göreceğiniz DIN tanımlarının arkasındaki kural budur.",
+      "Kuzey Amerika kuralı kapının dış tarafında durur ve ikinci bir eksen ekler: kapının sizden uzağa mı yoksa size doğru mu açıldığı. Bu, iki yerine dört terim üretir (sol el, sağ el, sol el ters ve sağ el ters); ters çifti, dışarıda duran kişiye doğru açılan kapıları kapsar.",
+      "Tuzak kuralların birbiriyle çelişmesi değildir. Birinde doğru biçimde sol el olarak tanımlanan bir kapının ötekinde doğru biçimde sağ el olarak tanımlanabilmesi ve iki tarafın da hata yapmamış olmasıdır. Kuralın her seferinde yönün yanında adlandırılması gerekmesinin ve uluslararası bir siparişte tek başına \"LH\"nin yazı tura olmasının nedeni budur.",
+      "## Hangi kuralı kullanırsanız kullanın, bir kapıyı on saniyede kontrol etmek",
+      "Kapının önünde durun. Üç şeyi not edin; yön iki sistemde de bunlardan çıkar.",
+      "Baktığınızda menteşelerin hangi tarafta olduğu.",
+      "Hangi yöne açıldığı: size doğru mu, sizden uzağa mı.",
+      "Hangi tarafın dış taraf olduğu; bir dış kapıda bu bellidir, bir iç kapıda ise birinin vermesi ve kaydetmesi gereken bir karardır.",
+      "Bir yön yerine bu üçünü yazın. Üç yalın gözlem kurallar, ofisler ve diller arası çeviriden sağ çıkar; iki harflik bir kısaltma çıkmaz. Bir kapı listesi üçünü de taşıyorsa, sonraki herkes kendi çalıştığı sistemde doğru yönü çıkarabilir ve daha da yararlısı, zaten yazılmış yönün yanlış olduğunu anlayabilir.",
+      "## Yönün geri alınamaz hâle geldiği yer: keşif noktası",
+      "Bir yenileme işinde yön bir tercih değil, bir ölçümdür ve ölçüm siparişten sonra değil önce yapılmalıdır.",
+      "Bunu göründüğünden daha zor yapan iki şey vardır. Bir binada nadiren tek yön vardır: koridorlar dönüşümlüdür ve simetrik görünen bir kat genellikle simetrik değildir. Ve kapılar yeniden asılır: önceki bir tadilatta ters çevrilmiş bir kanat, o kattaki hiçbir şeyle eşleşmeyen bir yönde donanım taşır.",
+      "Dolayısıyla çizimleri değil kapıları keşfedin, iki yönü de sayın ve kat başına dağılımı kaydedin. Kilidin kendisini ölçmeyi birbirinin yerine geçebilirlik sayfamız anlatıyor; yön, koridordan hiçbir şeye dokunmadan alabileceğiniz tek alandır ve en sık, yıllar önce doğru olmaktan çıkmış bir çizimden alınan alandır.",
+      "## Siparişe yazılacak satır",
+      "Yönü ve kuralı adlandırın. \"Sol el, Avrupa kuralı, dış taraftan bakıldığında\" nettir. Tek başına \"LH\" net değildir, çünkü yön sayfamız Avrupa ve Kuzey Amerika kurallarının aynı kapıyı farklı kelimelerle nasıl tarif edebildiğini ortaya koyuyor.",
+      "Bunun belli olmadığı bir kapıda hangi tarafın dış taraf olduğunu söyleyin: bir teknik oda, iki alan arasındaki bir iç koridor, ikisi de kendini iç taraf sayan iki oda arasındaki bir kapı.",
+      "Yukarıdaki bölüme göre ters çevrilebilirin kabul edilebilir olup olmadığını ya da yönüne göre tedarikin gerekip gerekmediğini belirtin.",
+      "Ve çift kanatlılarda bunu kanat başına belirtin. Çift kanat, iki yönlü kapıdır ve bir çift için tek bir yön veren bir liste satırı açıklığın yarısını tarif etmiştir.",
+      "## Ne yayımlıyoruz ve dürüst eksik",
+      "Bir model yönlüyse ürün sayfası bunu söyler ve sipariş kodu bunu taşır. Bir model ters çevrilebilirse sayfa üniversal değil ters çevrilebilir der, çünkü bunlar farklı vaatlerdir ve biz daha dar olanı yazmayı tercih ederiz.",
+      "Sayfalarımızın henüz tutarlı biçimde belirtmediği şey, ters çevrilebilir bir ürünün varsayılan olarak hangi yönde sevk edildiğidir. Yukarıdaki \"ters çevrilebilir, ters çevrilmiş değildir\" noktasının arkasındaki bilgi budur ve satırlar bunu taşıyana kadar cevap katalogdan değil sipariş bazında gelir.",
+      "Birbirinin yerine geçebilirlik sayfamızdaki ölçü eksiklerinde olduğu gibi, bu akla yatkın bir varsayılanla doldurulacak bir şey değil, bir mutabakat işidir: bir satıra yazılmış ve yüz kapıda yanlış çıkan bir varsayılan yön, sorgulanan boş bir satırdan daha pahalı bir hatadır. Kapı başına üç gözlem kaydeden bir keşif bir öğleden sonraya mal olur ve bir konteynerin yanlış yönde gelmesinin en yaygın tek nedenini ortadan kaldırır."
+    ],
+    "faq": [
+      {
+        "question": "Bir donanım kataloğunda \"üniversal\" ne anlama gelir?",
+        "answer": "Üç farklı şey. Yönsüz, ürünün hiç yönü olmadığı anlamına gelir. Şantiyede ters çevrilebilir, tek yönde sevk edildiği ve şantiyede değiştirilebileceği anlamına gelir. Fabrikada yönlü, yönün üründe yerleşik olduğu ve yanlış yönün yeni bir ürün demek olduğu anlamına gelir. Yalnızca ilki gerçekten üniversaldir; çoğu kataloğun kastettiği ikincisidir."
+      },
+      {
+        "question": "Hangi donanım gerçekten yönsüzdür?",
+        "answer": "Normal bir kanatlı kapıdaki yaprak menteşelerin çoğu, rozete monteli düz kolların çoğu, çekme kolları, itme plakaları, tekmelikler, kapı stoperleri, gömme sürgülerin çoğu ve silindirler. Avrupa tipi bir silindirin hiç yönü yoktur; olan bir boy ve bir bölünmedir ve insanlar bunu bazen yönle karıştırır, çünkü ikisi de yanlış olduğunda aynı belirtiyi doğurur."
+      },
+      {
+        "question": "Bir kilidi ters çevirdiğinizde gerçekte ne olur?",
+        "answer": "Dil 180 derece döner ve eğimli rampası kapanma yönüne bakar. Mekanizmanın tamamı genellikle budur; sürgü simetriktir ve yönü umursamaz. Model izin veriyorsa hızlıdır, vermiyorsa imkânsızdır; yarım bir versiyonu yoktur."
+      },
+      {
+        "question": "İnsanların yönsüz sandığı hangi ürünler yönlüdür?",
+        "answer": "Dört ürün. Cihazın genellikle yönsüz, dış kolun ise yönlü olduğu panik çıkış cihazı dış kolu. Gövde yönsüz olsa bile kol setinin yönlü olduğu paralel kollu montajlı kapı kapatıcılar. Ters çevrilmek yerine baş aşağı olan biçimli ya da asimetrik formlu kollar. Ve ölçü olarak simetrik, işlev olarak yönlü olan ölü dil pimli ya da kaçık göbekli kilit gövdeleri."
+      },
+      {
+        "question": "Büyük bir siparişte ters çevrilebilir bir ürün istemek yeterli mi?",
+        "answer": "Hayır. Ters çevrilebilir bir ürün tek yönde sevk edilir; dolayısıyla kırk sol el kapı, yine de birinin kırk kilidi çevirmesi demektir. Ürünün gereken yöne çevrilmiş olarak tedarik edilmesini isteyin. Kutu kapanmadan önce dilin döndürüldüğü fabrikada hiçbir şeye mal olmaz; yapılmazsa şantiyede bir güne mal olur."
+      },
+      {
+        "question": "Siparişteki yön satırı ne demeli?",
+        "answer": "Yönü ve kuralı: \"LH\" yerine \"sol el, Avrupa kuralı, dış taraftan bakıldığında\", çünkü Avrupa ve Kuzey Amerika kuralları aynı kapıyı farklı kelimelerle tarif edebilir. Belli olmayan yerlerde hangi tarafın dış taraf olduğunu söyleyin. Ters çevrilebilirin kabul edilebilir olup olmadığını belirtin. Ve çift kanatlılarda bunu kanat başına belirtin."
+      }
+    ]
+  },
+  "zinc-alloy-die-cast-hardware-2026": {
+    "title": "Zamak (Çinko Alaşımı) Donanım 2026: Zamak Gerçekte Nedir, Nereye Aittir ve Kötü Bir Dökümün Başarısız Olduğu Dört Yol",
+    "summary": "Zamak (çinko alaşımı), kataloğumuzdaki en yaygın ikinci malzemedir ve alıcıların en çok şüphelendiği malzemedir; genellikle malzemeyi değil kötü dökümleri anlatan nedenlerle. Bu sayfa zamakın ne olduğunu, basınçlı dökümün gerçekten neyde iyi olduğunu, kötü bir zamak parçanın başarısız olduğu dört ayrı yolu, çinkonun hiç kullanılmaması gereken yerleri ve cevabın bir anlam taşıması için bir fabrikaya neyin sorulacağını açıklıyor.",
+    "seoTitle": "Zamak (Çinko Alaşımı) Donanım 2026: Nereye Aittir",
+    "seoDescription": "Zamak çinko alaşımı nedir, basınçlı döküm neyi iyi yapar, kötü bir zamak döküm nasıl bozulur, çinko nerede kullanılmamalı ve fabrikaya ne sorulmalı.",
+    "body": [
+      "Deneyimli bir alıcıya \"çinko alaşımı\" deyin ve tepkisini izleyin. Bir maliyet tavizi olarak okunma olasılığı en yüksek malzemedir ve bu şüphe hak edilmiştir; alaşım tarafından değil, kötü dökümler tarafından.",
+      "Dürüst sayımla, kendi kataloğumuzdaki en yaygın ikinci malzeme de odur. Bu yüzden bu sayfa onu tedarikçilerin genellikle başvurduğu sıfatlarla tarif etmek yerine ne olduğunu, neyi iyi yaptığını ve başarısız olduğunda tam olarak nasıl başarısız olduğunu ortaya koyuyor.",
+      "## Zamak nedir",
+      "Zamak bir çinko döküm alaşımları ailesidir. Adı, bileşenlerinin (çinko, alüminyum, magnezyum ve bakır) Almanca adlarının kısaltmasıdır ve donanımda kullanılan kaliteler çoğunlukla Zamak 3 ve Zamak 5'tir.",
+      "Zamak 3 yaklaşık %4 alüminyum, küçük bir magnezyum katkısı ve geri kalanı çinkodan oluşur. Zamak 5 esasen aynıdır ve yaklaşık %1 bakır eklenmiştir; bu, uzun vadeli boyutsal kararlılıktan bir miktar ödün vererek dayanımı ve sertliği biraz artırır. Tam kaliteyi varsaymak yerine fabrikayla teyit edin; fark yük taşıyan bir parçada önemlidir, bir kapak plakasında ise hiç önemli değildir.",
+      "Bu alaşımların var olma nedeni mekanik özellikler değil döküm davranışıdır. Düşük sıcaklıkta erirler, ince ve karmaşık biçimlere akarlar, ince ayrıntıyı aynen verirler ve kalıptan doğrudan kaplanabilecek kadar iyi bir yüzeyle çıkarlar.",
+      "## Basınçlı dökümün gerçekten iyi olduğu işler",
+      "| Özellik | Donanım için neden önemli |\n| --- | --- |\n| Tek seferde karmaşık biçim | Kıvrımı, dönüşü, göbeği ve çıkıntısı olan bir kol tek parça olarak çıkar |\n| İnce ayrıntı ve dar tolerans | Kaplamaya hazır yüzey; dişler ve çıkıntılar dökümle birlikte oluşur |\n| Düşük erime noktasında düşük kalıp aşınması | Uzun kalıp ömrü; birim maliyet hacimle hızla düşer |\n| Mükemmel kaplama yapışması | Kaplamalı kolların ve rozetlerin çoğunun çinko olmasının nedeni |\n| Pirince yakın yoğunluk | Çoğu plastiğin ya da ince çeliğin aksine elde dolgun hissettirir |",
+      "Son satır üzerinde durmaya değer, çünkü şartname davranışının çoğunu açıklar. Zamak bir kol ile pirinç bir kol benzer ağırlıktadır. Kaliteyi ağırlığa göre değerlendiren bir alıcı ikisini ayırt edemez; çinkonun ürünün his olarak önemli olduğu yerde kullanılmasının ve kötü bir zamak parçanın herkesin uyguladığı ilk testten geçmesinin nedeni budur.",
+      "Dürüst özet: çinko alaşımı bir dayanım malzemesi değil, bir biçim verme malzemesidir. İşin, iyi yüzeyli karmaşık bir formu hacimli üretmek olduğu yerde bir taviz değil, doğru prosestir; pirinç ya da paslanmaz daha pahalı olur ve daha iyi olmaz.",
+      "## Kötü bir zamak dökümün başarısız olduğu dört yol",
+      "Bunları ayrı ayrı adlandırmak önemlidir, çünkü farklı nedenleri ve farklı işaretleri vardır.",
+      "Gözeneklilik: döküm sırasında hapsolan gaz, dökümün içinde boşluklar bırakır. Parça kusursuz görünür ve boşlukta zayıftır. Taşıması gereken bir yük altında kırılan bir kol ya da yüzeye yakın bir boşluğun gaz çıkardığı yerde kabaran bir kaplama olarak ortaya çıkar. Neden: proses kontrolü; döküm hızı, kalıp sıcaklığı, hava tahliyesi.",
+      "Yük altındaki ince kesitler: bir döküm, yükün gerektirdiğinden daha ince yapılabilir, çünkü kalıp onu doldurur ve parça doğru görünür. Donanımdaki zamak arızalarının en yaygın gerçek nedeni budur ve bu bir malzeme özelliği değil, bir tasarım kararıdır. Neden: yüke göre değil ağırlığa göre tasarlamak.",
+      "Sürünme: çinko alaşımları oda sıcaklığında sürekli yük altında yavaşça, çelik ya da pirinçten daha fazla deforme olur. Sabit kuvvet tutan bir parçada (bir yay tutucusu, sıkıştırılmış bir bağlantı) bir zamak bileşen yıllar içinde gevşeyebilir ve kırılmadan boşalabilir. Neden: çinkoyu yükün hiç kalkmadığı yerde kullanmak.",
+      "Safsızlıklardan kaynaklanan taneler arası korozyon: eser düzeyin üzerindeki kurşun, kalay ve kadmiyum, zamak dökümlerin yıllar içinde, özellikle nemde şişmesine, çatlamasına ve ufalanmasına yol açar. \"Pot metal\"e ününü veren arıza budur ve tamamen alaşım saflığıyla ilgili bir sorudur. Neden: ergiyikte kontrolsüz hurda.",
+      "Bu dördünden üçü çinkonun özellikleri değil, proses ve tasarım arızalarıdır. Dördüncüsü bir saflık arızasıdır. Hiçbiri çinko alaşımına karşı başlı başına bir argüman değildir ve hepsi parçayı hangi fabrikanın yaptığını bilmekten yana argümanlardır.",
+      "## Çinkonun hiç kullanılmaması gereken yerler",
+      "Miller: bir mil, bir kolun tüm torkunu montajdaki en küçük kesitte taşır. Çelik olmalıdır. Oradaki malzemenin neden ayrıntı olmadığını mil sayfamız anlatıyor.",
+      "Yaylar ve yay tutucuları: yukarıdaki gibi sürünme yüzünden.",
+      "Aynı nedenle, sürekli sıkıştırma yükü altındaki parçalar.",
+      "Kararlı bir saldırıya direnmesi gereken her şey: bir güvenlik silindiri gövdesi, bir sürgü, zorla girişin etki edeceği bir karşılık; bunlar çelik ya da pirinç ister ve o yoldaki bir zamak bileşen, saldırının bulduğu bileşendir.",
+      "Bir yangın dayanımının söz konusu olduğu her yer dahil yüksek sıcaklık uygulamaları. Çinkonun erime noktası çelik ve pirince göre düşüktür; yangın kapısı donanımı seçiminin bir malzeme sorusu değil bir sertifika sorusu olmasının nedenlerinden biri de budur.",
+      "## Bir kol için çinko, pirinç ve paslanmazın karşılaştırması",
+      "| | Zamak (çinko alaşımı) | Pirinç | Paslanmaz |\n| --- | --- | --- | --- |\n| Biçim özgürlüğü | En yüksek | Yüksek (döküm ya da dövme) | En düşük (genellikle şekillendirilmiş ya da talaşlı işlenmiş) |\n| Dayanım | En düşük | Orta | En yüksek |\n| Kaplama yapışması | Mükemmel | Mükemmel | İyi, çoğu zaman kaplamasız bırakılır |\n| Hacimde maliyet | En düşük | Orta | En yüksek |\n| Korozyon, kaplamasız | Zayıf | İyi, kararır | En iyi |\n| Eldeki his | Dolgun | Dolgun | Dolgun |",
+      "Gerçek şartnamelerin çoğuna karar veren satır kaplamasız korozyondur. Zamak donanım esasen her zaman kaplanır ya da boyanır ve korozyon performansı alaşımın değil kaplamanın performansıdır. O kaplamanın kesileceği, aşınıp delineceği ya da agresif bir şeyle temizleneceği yerde (bunu yapan temizleyicileri krom kaplama sayfamız listeliyor) ana malzeme açığa çıkar ve çinko üçünün en zayıfıdır.",
+      "Gerçek kural budur: çinko iç mekânda ve kaplamalı; yüzeyin saldırıya uğrayacağı yerde pirinç ve paslanmaz.",
+      "## İyi bir zamak dökümü kötüsünden elde nasıl ayırt edersiniz",
+      "Bunların hiçbiri tek başına kesin değildir; birlikte ise iyi yapılmış bir parçayı ucuz bir parçadan ağırlıktan daha güvenilir biçimde ayırırlar.",
+      "Kalıp ayırma çizgisine bakın: her basınçlı dökümün, kalıbın iki yarısının buluştuğu yerde bir ayırma çizgisi vardır. İyi yapılmış bir parçada bu, temizlenmiş, ince ve düzgün bir çizgidir; ucuz bir parçada ise elle hissedebileceğiniz, bazen hâlâ çapak taşıyan bir sırttır. Ayırma çizgisi, parçanın ne kadar son işlem gördüğünün en ucuz işaretidir.",
+      "İç boşluğa bakın: bir kolu ters çevirin ve dökümün göründüğü kaplamasız iç yüze bakın. İyi bir dökümün düzgün, ince taneli bir yüzeyi vardır; kötü bir döküm pürüzlü, kumlu bir doku ya da görünür çekme boşlukları gösterir. Bu kimsenin parlatmadığı yüzeydir ve gerçeği söylemesinin nedeni de tam olarak budur.",
+      "Kolun göbekle buluştuğu kesiti kontrol edin: eğilme yükünün yoğunlaştığı ve ince kesit tasarımının kendini gösterdiği yer orasıdır. Göbekte neredeyse hiçliğe incelen bir parça bir ağırlık hedefine göre tasarlanmıştır.",
+      "Vurun: sağlam bir döküm kısaca çınlar; gözenekli bir döküm ölü bir ses çıkarır. Kaba bir testtir ve deneyimli alıcılar yine de kullanır, çünkü gözenekliliğin başka hiçbir dış işareti yoktur.",
+      "Bunların hiçbirinin yakalayamadığı şey, safsızlık kaynaklı taneler arası korozyondur; yıllarca görünmez ve sonra her yerde aynı anda ortaya çıkar. Bu, fabrikanın ergiyik kontrolüyle ilgili bir sorudur ve onu cevaplamanın tek dürüst yolu sormaktır.",
+      "## Kataloğumuz gerçekte ne kullanıyor",
+      "Malzeme satırı olan her üründen sayılmıştır.",
+      "| Malzeme | Satır | Pay |\n| --- | --- | --- |\n| Paslanmaz çelik | 262 | %46 |\n| Zamak (çinko alaşımı) | 156 | %28 |\n| Pirinç | 57 | %10 |\n| Demir | 39 | %7 |\n| Alüminyum | 26 | %5 |\n| Diğer ya da karışık | 24 | %4 |",
+      "Yüzde yirmi sekiz çinko alaşımı, çok sayıda kaplamalı kol ve rozet içeren bir donanım serisi için normal bir orandır. Saklanacak bir sayı değildir ve onu yayımlamak, her şeyi \"yüksek kaliteli alaşım\" olarak tanımlama alışkanlığından daha yararlıdır.",
+      "Satırlarımızın şu anda söylemediği şey zamak kalitesidir. \"Zinc Alloy\" 70 kez, \"Zinc alloy\" ise 62 kez daha geçiyor; hiçbiri Zamak 3 ya da Zamak 5'i adlandırmıyor. Bu, paslanmaz sayfamızın 201'e karşı 304 için raporladığı eksiğin aynısıdır ve dürüst cevabı da aynıdır: sipariş bazında sorun; eksik, 156 satıra akla yatkın bir kalite yazarak değil, fabrika kayıtlarıyla mutabakat yapılarak kapatılıyor.",
+      "## Cevabın bir anlam taşıması için ne sorulmalı",
+      "Hangi zamak kalitesi ve yük taşıyan iç parçaların çinko mu çelik mi olduğu. Bir kilitte cevap çoğu zaman \"gövde çinko, çalışan parçalar çelik\"tir; bu iyi bir cevaptır, ama varsayılmak yerine verilmelidir.",
+      "Yük noktalarındaki kesit kalınlığı: bunu bir çizim cevaplar; bir tarif cevaplamaz.",
+      "Alaşımın saf mı olduğu yoksa yeniden işlenmiş malzeme mi içerdiği ve yeniden işlenmişse safsızlıkların nasıl kontrol edildiği. Taneler arası korozyonun arkasındaki soru budur ve bir cevabı olan fabrika bunu düşünmüştür.",
+      "Kaplamanın ne olduğu ve ne kalınlıkta olduğu: çünkü çinkoda korozyon performansı kaplamadır.",
+      "Dördünü de cevaplayan bir tedarikçi size parça hakkında herhangi bir sıfatın söyleyebileceğinden fazlasını söylemiştir. \"Yüksek kaliteli çinko alaşımı\" diye cevap veren bir tedarikçi size malzemenin adını söylemiştir, başka hiçbir şeyi değil."
+    ],
+    "faq": [
+      {
+        "question": "Zamak nedir?",
+        "answer": "Bir çinko döküm alaşımları ailesidir; adı çinko, alüminyum, magnezyum ve bakırın kısaltmasıdır. Donanımda çoğunlukla Zamak 3 (yaklaşık %4 alüminyum, geri kalanı çinko) ve Zamak 5 (aynısı, yaklaşık %1 bakırla, biraz daha dayanıklı) kullanılır. Dayanımları için değil, döküm davranışları için vardırlar."
+      },
+      {
+        "question": "Zamak donanım düşük kaliteli midir?",
+        "answer": "Doğası gereği değil. Çinko alaşımı bir biçim verme malzemesidir: karmaşık formlara akar, ince ayrıntıyı tutar ve çok iyi kaplanır; kaplamalı kolların ve rozetlerin çoğunun çinko olmasının nedeni budur. Şüphe, alaşımın özellikleri değil proses ve tasarım arızaları olan kötü dökümlerden (gözeneklilik, ince kesitler, safsızlık kaynaklı korozyon) gelir."
+      },
+      {
+        "question": "Kötü bir zamak döküm nasıl başarısız olur?",
+        "answer": "Dört ayrı yolla. Gözeneklilik (gaz boşlukları, parçayı kusursuz göründüğü yerde zayıf bırakır). Yüke göre değil ağırlığa göre tasarlanmış ince kesitler. Sürünme: çinko sürekli yük altında yavaşça deforme olur ve bir bağlantı kırılmadan gevşer. Ve kurşun, kalay ya da kadmiyum safsızlıklarından kaynaklanan taneler arası korozyon; \"pot metal\"e adını kazandıran arıza."
+      },
+      {
+        "question": "Zamak asla nerede kullanılmamalı?",
+        "answer": "Millerde; tüm torku en küçük kesitte taşıdıkları için çelik olmalıdırlar. Sürünme nedeniyle yaylarda, yay tutucularında ve sürekli sıkıştırma yükü altındaki her şeyde. Güvenlik silindiri gövdesi ya da sürgü gibi kararlı bir saldırıya direnen her şeyde. Ve bir yangın dayanımının söz konusu olduğu her yerde."
+      },
+      {
+        "question": "Bir kol için çinko, pirinç ve paslanmazla nasıl karşılaştırılır?",
+        "answer": "Çinko en fazla biçim özgürlüğünü ve hacimde en düşük maliyeti verir, pirinç ortadadır, paslanmaz en dayanıklı ve korozyona en dirençli olanıdır. Çoğu şartnameye karar veren satır kaplamasız korozyondur: zamak donanım esasen her zaman kaplanır, bu yüzden korozyon performansı alaşımın değil kaplamanındır. Çinko iç mekânda ve kaplamalı; yüzeyin saldırıya uğrayacağı yerde pirinç ya da paslanmaz."
+      },
+      {
+        "question": "Kataloğunuzun ne kadarı zamak?",
+        "answer": "564 malzeme satırından 156'sı, %28; %46 ile paslanmazdan sonra ikinci. Bu, çok sayıda kaplamalı kol ve rozet içeren bir seri için normal bir orandır. Satırlarımızın henüz söylemediği şey zamak kalitesidir: \"Zinc Alloy\" 70 kez, \"Zinc alloy\" 62 kez daha geçiyor ve hiçbiri Zamak 3 ya da 5'i adlandırmıyor. Sipariş bazında sorun."
+      }
+    ]
   }
 }
