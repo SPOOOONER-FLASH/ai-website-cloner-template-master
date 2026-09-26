@@ -39,4 +39,5 @@
 
 - 不写「任何产品都能定制」「最低起订 1 件」这类无法兑现的话；不写未确认的周期和价格。
 - 不把 ironmongery 塞进每个标题；它是英联邦工程语境的行业名，美国语境仍用 door hardware。
+- **英文 SEO 标题的词序（甲方 09-25）**：door hardware 在前，ironmongery 作第二个词（美国买家搜 door hardware，英联邦买家搜 ironmongery）。已按此写：服务页、产品目录页、定制指南、首页描述。首页标题保留 Panic Exit Devices 开头，不加 ironmongery（加了超 60 字符，只能删主力词）。
 - 不生成「定制产品」的效果图 —— 门五金不许想象产品（AGENTS.md）；用真实的模具、样品、307/311 实拍。
