@@ -42,7 +42,9 @@ export const REGIONAL_TERMS = {
  * category is ironmongery, so every one carries it. See
  * docs/collaboration/tasks/2026-09-25-ironmongery-customize-brief.md.
  */
-const TRADE_TERMS = "ironmongery architectural ironmongery";
+// Both trade names on every record (client 2026-09-25: win the US and the Commonwealth markets),
+// so a search for either finds the whole catalogue.
+const TRADE_TERMS = "door hardware ironmongery architectural ironmongery";
 
 /** Terms for a product or category whose top-level category slug is `slug`. */
 export const regionalTermsFor = (slug) => `${REGIONAL_TERMS[slug] ?? ""} ${TRADE_TERMS}`.trim();
