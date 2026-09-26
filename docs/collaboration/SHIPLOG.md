@@ -12,9 +12,9 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 18:23 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `db25a6fb4da` |
-| 18:23 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `1b5f74749af` |
-| 18:22 | 中立 | 按文案会话的四项裁定改术语表；顺带统一同概念的另两个葡语键 | `4ab47d48198` |
+| 18:24 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `89d50ff9f7a` |
+| 18:24 | HYDE | 指南三处：删去“整条推杠线 EN 1125 认证并 CE”无据说法，forend 计数 6→8，B117 写全称，三语 | `ef0b927b583` |
+| 18:20 | 中立 | 合并本地提交（七语种指南批次与 origin/main） | `67deaf3ea1e` |
 | 18:16 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `f1f7fa76b78` |
 | 18:16 | 中立 | 删六个死键；Electroplating 三条记录统一成一个词；审计加近似键检查 | `4c882908aec` |
 | 18:07 | 中立 | 目标清单：#54 等七语种发布；#58 cron 自动装跳转规则已实测生效 | `980aeb2b49b` |
