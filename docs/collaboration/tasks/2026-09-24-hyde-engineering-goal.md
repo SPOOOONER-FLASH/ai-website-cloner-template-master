@@ -58,8 +58,9 @@
 | 51 | Cloudflare Security Insights / AI 抓取报告（甲方 09-25）：security.txt 上线、改名视频 18 条 301、mail CNAME 不代理（网易企业邮箱）、MFA 与 Archive 写进手册 ⑥、AI 抓取数据进看板 | 09-25 完成（源码；随下一次发布上线） |
 | 52 | 七语种产品 seoTitle / seoDescription（#45）：多语言会话 M1–M4 已给出 glossary 与 categories | 09-25 完成（3,647 条：7 语 × 521；只写 seoTitle / seoDescription；--check 覆盖七语种） |
 | 53 | 视频不在观看页面上（97 个，09-24 验证失败）：建 /video/<slug>/ 观看页与 /video/ 目录，VideoObject 和 sitemap 视频条目移到观看页 | 09-25 完成（源码） |
-| 54 | HYDE 发布（#51 #53，排在发布会话的 M1 之后），上线后实测观看页与视频跳转 | 待做 |
+| 54 | HYDE 发布（#51 #53，排在发布会话的 M1 之后），上线后实测观看页与视频跳转 | 等待（发布会话的七语种 M1 发布进行中；发完由它或我接着发，含 #51 #53 #55–#57） |
 | 55 | DS011 移门吸子类 | 09-25 完成 |
 | 56 | DSL02、DC01（闭门顺序器）、HY-0SS（锁舌护板）改名、改 slug、301、移类、重跑标题 | 等待（文案会话定三语名） |
 | 57 | 英文规格值错误（BH01 500m、DS05 ф、DV05/06 多 N、AR4-1121 背距、Electroplatingbhgh、LC9045 疑似写反） | 等待（已转规格会话；LC9045 问工厂） |
+| 58 | cron 自动安装跳转规则实测：09-25 推送 18 条视频跳转后，未经人工，/videos/products/026-panic-exit-device.mp4 已 301 到 -trim | 09-25 完成 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
