@@ -12,7 +12,7 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 18:07 | HYDE | 计数随移类更新：五金配件 71、锁体 57、推杠 47；推杠指南改写顺序器所在类目，三语 | `9522d3c3875` |
+| 18:06 | 中立 | DS05、AR4-1121 标题随规格修正重跑（ф→Ø、背距补单位）；目标清单 #57 | `4e3abe0717d` |
 | 18:05 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `3a8ea5f05ef` |
 | 18:05 | HYDE | DSL02、DC01、HY-0SS 改名改 slug、301、移类（文案会话定名后） | `3f729ee4850` |
 | 17:58 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `881e5f83be3` |
