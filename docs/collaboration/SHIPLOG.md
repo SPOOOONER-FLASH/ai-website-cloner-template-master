@@ -6,13 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 618 次提交
+最近 30 天 · 共 619 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 18:01 | 中立 | 英文规格值修四处；N 不是多余的代号；还原文案字段做成脚本 | `e75b239637a` |
+| 17:58 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `881e5f83be3` |
+| 17:57 | 中立 | 七语种产品 seoTitle / seoDescription：生成器扩到 fr de ja ko tr ru ar（3,647 条） | `7f441723dbf` |
 | 17:54 | 中立 | 目标清单：#55–#57 | `c74fdc911a7` |
 | 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `8d9485369d2` |
 | 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `65285e19984` |

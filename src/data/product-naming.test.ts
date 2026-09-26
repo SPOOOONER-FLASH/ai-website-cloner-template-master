@@ -128,6 +128,9 @@ test("models sharing a letter prefix in one category share a product name", () =
   const DIFFERENT_PART_TYPE = new Set<string>([
     "lever-handles::ET::ET4017",
     "care-grab-bars/flip-up-grab-bars::BH::BH57",
+    // HY-0SS: a stainless latch guard for Australian outswing doors, renamed from "Lock Case" on
+    // 2026-09-25. It moves to hardware-accessories/armoured-lock-covers next; delete this entry then.
+    "lock-cases::HY::HY-0SS",
   ]);
 
   const disagreements: string[] = [];

@@ -56,7 +56,7 @@
 | 49 | HYDE 发布（#47） + #48 指南，上线后实测 | 09-25 完成（0e8f7649e2f 上线：定制指南三语、服务页、产品目录页、首页描述实测正确；第八次发布构建进程崩溃 0xC0000409，未重发，因为剩下的门孔图修复不影响 HYDE 页面） |
 | 50 | GTM「Test」一直报未检测到：查明是 Cloudflare Bot Fight Mode 对 Google 服务器出 403 质询页（translate.goog 实测），与代码无关；手册 ⑤ 写了用 Preview 验证 | 09-25 完成 |
 | 51 | Cloudflare Security Insights / AI 抓取报告（甲方 09-25）：security.txt 上线、改名视频 18 条 301、mail CNAME 不代理（网易企业邮箱）、MFA 与 Archive 写进手册 ⑥、AI 抓取数据进看板 | 09-25 完成（源码；随下一次发布上线） |
-| 52 | 七语种产品 seoTitle / seoDescription（#45）：多语言会话 M1–M4 已给出 glossary 与 categories | 待做 |
+| 52 | 七语种产品 seoTitle / seoDescription（#45）：多语言会话 M1–M4 已给出 glossary 与 categories | 09-25 完成（3,647 条：7 语 × 521；只写 seoTitle / seoDescription；--check 覆盖七语种） |
 | 53 | 视频不在观看页面上（97 个，09-24 验证失败）：建 /video/<slug>/ 观看页与 /video/ 目录，VideoObject 和 sitemap 视频条目移到观看页 | 09-25 完成（源码） |
 | 54 | HYDE 发布（#51 #53，排在发布会话的 M1 之后），上线后实测观看页与视频跳转 | 待做 |
 | 55 | DS011 移门吸子类 | 09-25 完成 |

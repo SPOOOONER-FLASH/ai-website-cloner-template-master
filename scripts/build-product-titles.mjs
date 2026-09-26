@@ -49,7 +49,7 @@
  *   node scripts/build-product-titles.mjs --sample 40  多看几条样例
  *   node scripts/build-product-titles.mjs --write --only LC04,140  只重写这几个型号
  */
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const POSITIONING = JSON.parse(
@@ -798,6 +798,137 @@ for (const file of files) {
     if (WRITE) writeFileSync(path, `${JSON.stringify(product, null, 2)}\n`);
   }
 }
+
+
+/* ---------------------------------------------------------------------------
+  七个旁挂语种（fr de ja ko tr ru ar），2026-09-25。
+
+  分工（多语言会话 09-25）：译文在 content/i18n/<code>/products.json，以 slug 为键、字段不带后缀；
+  标题和描述由这里生成，只合并写 seoTitle / seoDescription 两个键，同文件其他字段一律不碰。
+  页面用 t(product, "seoTitle", locale) 读，缺了回英文。
+
+  比英西葡简单，是刻意的：
+  - 名字只用译文里的 name（译者写的），型号原样放前面；
+  - 尺寸只取「纯数字 + 单位」那种（300×75mm、300–1000mm），带英文说明的（"for 40mm doors"）
+    不进，免得标题里夹英文；fr de tr ru 小数用逗号；
+  - 材质只用 glossary.materialNames 里有的译名，没有就不写，不回退英文；
+  - 没有场景词（category-positioning 只有英西葡），也不写表面数量（俄语、阿语的复数变化规则
+    写不对就宁可不写）；
+  - 日韩一个字约占两个拉丁字母的宽度，标题正文上限按 32 个字符算。
+  不写任何认证、等级，也没有这里之外的数字。
+*/
+const OVERLAY_LOCALES = ["fr", "de", "ja", "ko", "tr", "ru", "ar"];
+const OVERLAY_NEXT = {
+  fr: "Direct usine, échantillons et devis sur demande.",
+  de: "Direkt ab Werk, Muster und Angebot auf Anfrage.",
+  ja: "工場直販。サンプルとお見積りはご相談ください。",
+  ko: "공장 직거래. 샘플과 견적은 문의해 주십시오.",
+  tr: "Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+  ru: "Напрямую с завода, образцы и цена по запросу.",
+  ar: "مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
+};
+const OVERLAY_SEP = { ja: "、", ar: "، " };
+const OVERLAY_TITLE_MAX = { ja: 32, ko: 32 };
+const COMMA_DECIMAL = new Set(["fr", "de", "tr", "ru"]);
+const LOWER_IN_SENTENCE = new Set(["fr", "ru", "tr"]);
+const NUMERIC_DIM_LABELS = ["Size", "Leaf size", "Plate size", "Overall length", "Available lengths", "Length", "Lever length"];
+
+function numericDimension(product) {
+  for (const label of NUMERIC_DIM_LABELS) {
+    const c = condense(spec(product, label)?.value);
+    if (c && /^[≤\d.,×–/]+(?:mm|cm|in)$/.test(c)) return c;
+  }
+  return null;
+}
+
+/** HYDE records by slug, regardless of --only (the overlay files cover the whole catalogue). */
+const hydeBySlug = new Map();
+for (const file of files) {
+  const p = JSON.parse(readFileSync(join(DIR, file), "utf8"));
+  if (p.sites && !p.sites.includes("hyde")) continue;
+  hydeBySlug.set(p.slug, p);
+}
+
+let overlayChanged = 0;
+const overlayIssues = [];
+for (const loc of OVERLAY_LOCALES) {
+  const file = `content/i18n/${loc}/products.json`;
+  if (!existsSync(file)) continue;
+  const raw = readFileSync(file, "utf8");
+  const crlf = raw.includes("\r\n");
+  const data = JSON.parse(raw);
+  const glossaryFile = `content/i18n/${loc}/glossary.json`;
+  const glossary = existsSync(glossaryFile) ? JSON.parse(readFileSync(glossaryFile, "utf8")) : {};
+  const materials = new Map(Object.entries(glossary.materialNames ?? {}).map(([k, v]) => [k.toLowerCase(), v]));
+  const sep = OVERLAY_SEP[loc] ?? ", ";
+  const max = OVERLAY_TITLE_MAX[loc] ?? MAX;
+  let fileChanged = false;
+
+  for (const [slug, tr] of Object.entries(data)) {
+    const p = hydeBySlug.get(slug);
+    if (!p || !tr?.name) continue;
+    if (only && !only.has(String(p.model ?? "").toLowerCase()) && !only.has(slug.toLowerCase())) continue;
+    const name = String(tr.name).trim();
+    const model = p.modelTbc || modelIsName(p) ? "" : glossModel(p.model, "en").trim();
+    const head = model && !name.toLowerCase().startsWith(model.toLowerCase()) ? `${model} ${name}` : name;
+
+    const matEn = shortMaterial(p.material ?? spec(p, "Material")?.value);
+    let mat = matEn ? materials.get(matEn.toLowerCase()) ?? materials.get(String(p.material ?? "").toLowerCase()) ?? null : null;
+    /* 名字里已有这个材质就不重复。按词根比（前 4 个字母）：俄语「латуни」和「Латунь」是同一个词的不同格。 */
+    if (mat) {
+      const n = name.toLocaleLowerCase(loc);
+      const roots = String(mat).toLocaleLowerCase(loc).split(/\s+/).filter((w) => w.length >= 4).map((w) => w.slice(0, 4));
+      if (n.includes(String(mat).toLocaleLowerCase(loc)) || roots.some((r) => n.includes(r))) mat = null;
+    }
+    /* 句中小写：法、俄、土的普通名词在逗号和冒号后不大写（德语名词照旧大写）。 */
+    // Whole phrase: the Turkish glossary title-cases every word ("Paslanmaz Çelik").
+    if (mat && LOWER_IN_SENTENCE.has(loc)) mat = String(mat).toLocaleLowerCase(loc);
+    let dim = numericDimension(p);
+    if (dim && COMMA_DECIMAL.has(loc)) dim = dim.replace(/(\d)\.(\d)/g, "$1,$2");
+
+    let title = null;
+    for (const parts of [[head, dim, mat], [head, dim], [head, mat], [head]]) {
+      const body = parts.filter(Boolean).join(sep);
+      if (body.length <= max || parts.length === 1) {
+        title = `${body} | ${BRAND.en}`;
+        break;
+      }
+    }
+
+    const facts = [mat, dim].filter(Boolean);
+    const lead = facts.length
+      ? loc === "ja"
+        ? `${head}（${facts.join(sep)}）。`
+        : `${head}${loc === "fr" ? " :" : ":"} ${facts.join(sep)}.`
+      : loc === "ja"
+        ? `${head}。`
+        : `${head}.`;
+    const withNext = `${lead} ${OVERLAY_NEXT[loc]}`.replace("。 ", "。");
+    const desc = withNext.length <= DESC_MAX ? withNext : lead;
+
+    if (CERT.test(title) || CERT.test(desc)) overlayIssues.push(`${loc} ${slug}: certification-like wording`);
+    if (tr.seoTitle !== title || tr.seoDescription !== desc) {
+      tr.seoTitle = title;
+      tr.seoDescription = desc;
+      fileChanged = true;
+      overlayChanged++;
+    }
+  }
+  if (fileChanged && WRITE) {
+    const out = `${JSON.stringify(data, null, 2)}\n`;
+    writeFileSync(file, crlf ? out.replace(/\n/g, "\r\n") : out);
+  }
+}
+if (overlayIssues.length) {
+  console.error(`product-titles: 七语种 ${overlayIssues.length} 条疑似认证措辞：`);
+  for (const i of overlayIssues.slice(0, 10)) console.error(`  ${i}`);
+  if (CHECK) process.exit(1);
+}
+if (CHECK && overlayChanged) {
+  console.error(`product-titles: 七语种 ${overlayChanged} 条标题/描述与生成器不一致 —— 跑 --write 重新生成`);
+  process.exit(1);
+}
+if (!CHECK) console.log(`七语种标题/描述：${overlayChanged} 条需要更新${WRITE ? "（已写入）" : ""}`);
 
 if (warnings.length) console.warn(`product-titles: ${warnings.length} 条命名过长、放不下长尾成分（警告，不拦发布）`);
 if (issues.length) {
