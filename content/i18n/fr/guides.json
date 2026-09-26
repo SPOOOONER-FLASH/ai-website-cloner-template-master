@@ -2074,5 +2074,1053 @@
         "answer": "Normalement non. Nous confirmons par écrit, commande par commande, la gamme de cylindres, les longueurs, les répartitions, les finitions, les quantités, le profil et nos engagements de maîtrise des clés. La hiérarchie elle-même dépend des règles de passe propres à la plateforme et d'un organigramme de l'organisation auquel nous n'avons pas part : elle revient à celui qui détient le système."
       }
     ]
+  },
+  "material-traceability-mill-certs-2026": {
+    "title": "Traçabilité des matériaux 2026 : EN 10204 types 2.1, 2.2, 3.1 et 3.2, numéros de coulée, et ce qu'une usine de quincaillerie peut honnêtement tracer",
+    "summary": "« Envoyez le certificat matière » désigne quatre documents différents, et ce qui les distingue, c'est qui l'a signé et si l'essai a porté sur votre métal. Cette page présente les types de documents EN 10204, explique les numéros de coulée et les points où la chaîne de traçabilité se rompt réellement dans la petite quincaillerie, distingue la traçabilité des matériaux de la conformité RoHS et REACH, et dit lesquels de ces documents une usine de quincaillerie de porte peut honnêtement fournir.",
+    "seoTitle": "Traçabilité matière 2026 : EN 10204 3.1 ou 3.2",
+    "seoDescription": "Documents de contrôle EN 10204 types 2.1, 2.2, 3.1 et 3.2 comparés, ce que trace un numéro de coulée, et ce qu'une usine de quincaillerie peut certifier.",
+    "body": [
+      "« Pouvez-vous envoyer le certificat matière ? » est une question posée dans presque toute demande sérieuse en quincaillerie, et selon qui répond, on reçoit quatre documents réellement différents.",
+      "Les différences ne sont pas des degrés de sérieux. Elles portent sur qui a réalisé l'essai, s'il a été réalisé sur votre matériau, et quelle signature figure sur la page ; un acheteur qui ne sait pas lequel il a reçu ne peut pas dire s'il détient une preuve ou une simple lettre.",
+      "## Les quatre types de documents EN 10204",
+      "EN 10204 est la norme européenne des documents de contrôle des produits métalliques. Elle définit quatre types, séparés selon deux axes : contrôle spécifique ou non spécifique, et qui valide le résultat.",
+      "| Type | Ce que c'est | Essai sur votre matériau ? | Signé par |\n| --- | --- | --- | --- |\n| 2.1 | Attestation de conformité à la commande | Aucun résultat d'essai | Le fabricant |\n| 2.2 | Relevé de contrôle | Non : résultats d'un contrôle non spécifique | Le fabricant |\n| 3.1 | Certificat de réception | Oui : contrôle spécifique sur le produit livré | Le représentant du contrôle du fabricant, indépendant du service de fabrication |\n| 3.2 | Certificat de réception | Oui | Ce représentant et l'inspecteur de l'acheteur ou celui désigné par la réglementation |",
+      "La ligne qui compte passe entre 2.2 et 3.1. Tout ce qui relève de 2.x vous dit ce qu'est généralement le matériau du fabricant ; tout ce qui relève de 3.x vous dit ce qu'est précisément votre matériau, essayé et signé par quelqu'un qui ne dépend pas de celui qui l'a fabriqué.",
+      "Un 2.1 n'est pas sans valeur : c'est une déclaration contractuelle que la commande a été respectée, et pour un grand nombre de produits, c'est proportionné. Ce n'est simplement pas un résultat d'essai, et une prescription qui demande un 3.1 n'est pas satisfaite par un 2.1 bien présenté.",
+      "## Ce que trace réellement un numéro de coulée",
+      "Un numéro de coulée identifie une fusion unique à l'aciérie. Chaque kilogramme coulé de cette fusion partage une même composition chimique, et un certificat 3.1 pour cette coulée indique l'analyse et les caractéristiques mécaniques mesurées sur elle.",
+      "C'est une chaîne solide tant que le matériau est volumineux et en petit nombre de pièces : une tôle, une barre, une bobine. Chaque pièce peut porter le numéro frappé ou gravé, et le certificat suit la pièce.",
+      "Elle s'affaiblit précisément là où vit la quincaillerie de porte. Une seule fusion devient des tonnes de barre ; la barre est découpée en centaines de milliers de petites pièces ; les pièces vont dans des bacs. Une fois qu'une béquille est l'une de quarante mille béquilles identiques dans un bac, elle ne porte plus de numéro de coulée, et rien, sauf la séparation de tout le lot, ne lui en rendra un.",
+      "L'énoncé honnête pour la petite quincaillerie est donc le suivant : la traçabilité jusqu'à une coulée est une propriété d'un *lot maintenu séparé*, pas d'une pièce. Si un projet l'exige, il faut le prescrire avant la production, car cela change la façon dont l'usine traite le matériau, et cela a un coût, car des lots séparés ne peuvent pas être regroupés.",
+      "## Deux autres points de rupture de la chaîne, et aucun n'est malhonnête",
+      "La finition : une pièce est souvent revêtue par un spécialiste extérieur à l'usine. La coulée du métal de base peut être connue ; la chimie du bain de revêtement est un enregistrement distinct tenu par une autre entreprise, et un certificat couvrant les deux, ce sont deux documents et non un seul.",
+      "Les assemblages multipièces : une serrure à mortaiser, c'est un coffre, une têtière, un pêne, un fouillot, des ressorts et des fixations, souvent de fournisseurs et de coulées différents. Un « certificat matière » unique pour une serrure est une erreur de catégorie ; ce qui existe, c'est un certificat par composant, pour les composants qui en ont un.",
+      "Aucun de ces deux points ne traduit une usine qui se dérobe. C'est la forme de la chaîne d'approvisionnement, et un fournisseur qui répond « oui, traçabilité complète » pour une serrure assemblée sans nuancer vous a dit quelque chose qui ne peut pas être vrai.",
+      "## La traçabilité des matériaux n'est ni RoHS, ni REACH",
+      "Ces trois demandes arrivent dans une même phrase et reçoivent une réponse comme s'il s'agissait d'une seule chose. Ce n'est pas le cas.",
+      "| Document | Répond à | Forme habituelle |\n| --- | --- | --- |\n| EN 10204 3.1 | Qu'est ce métal, chimiquement et mécaniquement | Certificat d'aciérie avec numéro de coulée |\n| Déclaration RoHS | Les substances dangereuses restreintes sont-elles sous leurs limites | Déclaration, souvent avec rapports d'essai à l'appui |\n| Déclaration REACH | Des substances extrêmement préoccupantes sont-elles présentes au-delà du seuil | Déclaration au regard de la liste candidate en vigueur |\n| Minerais de conflit | D'où proviennent l'étain, le tantale, le tungstène et l'or | Déclaration sur la chaîne d'approvisionnement |",
+      "Une déclaration RoHS ne dit rien de la résistance à la traction. Un certificat d'aciérie ne dit rien des substances restreintes. Demander « les certificats » et en recevoir un n'est pas une réponse partielle à votre question ; c'est une réponse complète à une autre question.",
+      "La ligne REACH comporte un piège qui mérite d'être nommé : la liste candidate est révisée périodiquement, de sorte qu'une déclaration REACH est vraie à une date donnée. Une déclaration non datée est inutilisable, et une déclaration vieille de trois ans doit être renouvelée plutôt qu'archivée.",
+      "## Que demander, dans l'ordre qui obtient une réponse",
+      "Nommez explicitement le type de document. « EN 10204 3.1 pour le coffre de serrure » appelle une réponse ; « le certificat matière » produit ce que l'usine a de plus proche sous la main.",
+      "Nommez le composant, pas le produit. Voir ci-dessus le point sur les assemblages.",
+      "Dites si vous en avez besoin avant ou après la production. Un 3.1 sur un lot précis doit être planifié ; un 2.1 peut être émis sur une commande existante. Demander un 3.1 une fois la marchandise expédiée et mélangée au stock, c'est demander quelque chose qui n'existe plus.",
+      "Dites d'où vient l'exigence. Une clause de prescription, une exigence douanière et une politique qualité interne mènent à des documents différents, et une usine qui sait à laquelle vous répondez peut vous dire si un document moins coûteux la satisfait.",
+      "## Cinq vérifications sur un certificat qu'on vous a envoyé",
+      "La plupart des mauvais certificats ne sont pas des faux. Ce sont de vrais documents concernant autre chose, transmis parce qu'ils étaient ce qu'il y avait de plus proche. Ces cinq vérifications les repèrent presque tous et prennent environ deux minutes.",
+      "La nuance de matériau du certificat correspond-elle à celle de votre commande ? Un certificat d'inox 201 joint à une commande de 304 est l'écart le plus fréquent, et les deux sont identiques à l'œil et en main. Nos pages sur l'inox expliquent pourquoi.",
+      "La quantité ou le lot indiqué couvre-t-il plausiblement votre commande ? Un 3.1 visant une coulée de deux tonnes ne peut pas prouver quoi que ce soit pour une commande tirée d'un bac contenant cinq coulées différentes.",
+      "L'émetteur est-il nommé, avec une adresse ? Un certificat d'aciérie est émis par l'aciérie. Un document émis par la société de négoce qui vous a vendu les pièces, reprenant des chiffres qu'on lui a transmis, est une transcription et non un certificat.",
+      "Est-il daté, et la date est-elle antérieure à votre production ? Un certificat daté après l'expédition de la marchandise a été rédigé pour répondre à votre question, pas pour consigner un essai.",
+      "Le document indique-t-il selon quelle norme l'essai a été réalisé ? Un tableau de chiffres sans méthode en regard ne peut être vérifié par personne, pas même par son auteur.",
+      "Si un certificat échoue à l'une de ces vérifications, la réponse utile est une question précise plutôt qu'un rejet. « Ce document est daté après notre expédition ; en existe-t-il un antérieur pour la coulée dont proviennent nos pièces ? » appelle une réponse, et cette réponse vous dit quel genre de fournisseur vous avez.",
+      "## Ce que nous pouvons dire de notre propre matériau",
+      "Nous publions le matériau et la finition de chaque produit tels que nous les livrons : la famille d'alliage, le code de finition et, lorsqu'un modèle est proposé en plusieurs, tous.",
+      "Ce que nous ne faisons pas, c'est publier une affirmation générale de traçabilité, car la réponse honnête dépend du composant et du fait que le lot a été ou non maintenu séparé. Notre page de documents indique les documents d'essai comme disponibles sur demande, et « sur demande » signifie que nous vous disons, commande par commande, ce qui existe pour ces composants précis, au lieu d'envoyer un document qui ressemble à celui que vous avez demandé.",
+      "Lorsqu'un projet exige un EN 10204 3.1 sur un composant précis, c'est une discussion avant la production et non une case cochée après coup, et le coût de la séparation des lots est annoncé plutôt qu'absorbé discrètement puis découvert dans le prix.",
+      "## Pourquoi tant de soin pour un morceau de papier",
+      "Parce que la défaillance est différée et coûteuse. Un certificat emprunté, un 2.2 présenté comme un 3.1, ou un numéro de coulée attribué à une pièce jamais séparée passent tous le contrôle le jour même.",
+      "Ils échouent plus tard, lors d'un audit, sur un projet où quelqu'un vérifie, et ce qui échoue n'est pas un seul document. C'est chaque autre chiffre que le fournisseur a jamais publié, car un acheteur qui trouve un papier qui ne tient pas n'a aucun moyen de savoir lesquels des autres tiennent.",
+      "C'est le même raisonnement que le tiret à la place d'une cote manquante. Un document manquant coûte une question ; un document inventé coûte le client.",
+      "C'est pourquoi les cinq vérifications ci-dessus sont rédigées comme des questions à envoyer plutôt que comme des motifs de rupture. Un fournisseur qui y répond avec précision vaut plus qu'un fournisseur dont les papiers étaient impeccables la première fois, car vous savez maintenant ce qui se passe quand vous demandez. Une réponse précise à une question gênante est le signal de qualité le moins coûteux qu'une usine puisse donner, et le seul qui survive à un audit."
+    ],
+    "faq": [
+      {
+        "question": "Quelle différence entre EN 10204 3.1 et 3.2 ?",
+        "answer": "Les deux certifient un contrôle spécifique sur le matériau réellement livré. Un 3.1 est validé par le représentant du contrôle du fabricant, qui doit être indépendant du service de fabrication. Un 3.2 ajoute une seconde signature : celle de l'inspecteur de l'acheteur, ou d'un inspecteur désigné par la réglementation officielle."
+      },
+      {
+        "question": "Un relevé de contrôle 2.2 suffit-il ?",
+        "answer": "Cela dépend de ce que vous avez demandé. Un 2.2 rend compte d'un contrôle non spécifique : il vous dit ce qu'est généralement le matériau du fabricant, pas ce qu'est précisément le vôtre. Si une prescription cite un 3.1, un 2.2 bien présenté ne la satisfait pas, car toute la distinction tient à l'essai de votre lot."
+      },
+      {
+        "question": "Une petite pièce de quincaillerie peut-elle porter un numéro de coulée ?",
+        "answer": "Seulement si son lot a été délibérément maintenu séparé. Une seule fusion devient des tonnes de barre puis des centaines de milliers de petites pièces en bacs ; une fois qu'une béquille est l'une de quarante mille béquilles identiques, rien ne lui rendra un numéro de coulée. La traçabilité jusqu'à une coulée est une propriété d'un lot séparé, pas d'une pièce."
+      },
+      {
+        "question": "Puis-je obtenir un seul certificat matière pour une serrure à mortaiser complète ?",
+        "answer": "Non, et un fournisseur qui en propose un vous a dit quelque chose qui ne peut pas être vrai. Une serrure, c'est un coffre, une têtière, un pêne, un fouillot, des ressorts et des fixations, souvent de fournisseurs et de coulées différents. Ce qui existe, c'est un certificat par composant, pour les composants qui en ont un."
+      },
+      {
+        "question": "Une déclaration RoHS couvre-t-elle la traçabilité des matériaux ?",
+        "answer": "Non. RoHS répond à la question de savoir si les substances dangereuses restreintes sont sous leurs limites ; un certificat d'aciérie dit ce qu'est le métal, chimiquement et mécaniquement. Ce sont des réponses complètes à des questions différentes. REACH est un troisième document, et comme la liste candidate est révisée périodiquement, une déclaration REACH non datée est inutilisable."
+      },
+      {
+        "question": "Quand dois-je demander un 3.1 ?",
+        "answer": "Avant la production. Un 3.1 sur un lot précis change la façon dont l'usine traite le matériau (des lots séparés ne peuvent pas être regroupés) : il doit donc être planifié et il a un coût. Le demander une fois la marchandise expédiée et mélangée au stock, c'est demander quelque chose qui n'existe plus."
+      }
+    ]
+  },
+  "moq-tooling-and-lead-time-2026": {
+    "title": "MOQ, outillage et délai 2026 : ce qui fixe réellement le minimum, et pourquoi 300 et 5 000 sont tous deux vrais",
+    "summary": "Un acheteur demande une quantité minimale de commande et reçoit une fourchette, ce qui ressemble à une esquive et n'en est pas une. Cette page explique les quatre éléments qui fixent réellement une MOQ (le lot de finition, l'outillage, l'emballage et la série de production du modèle), pourquoi notre fourchette publiée va de 300 à 5 000 pièces, ce que compte réellement le délai de 30 jours, et les trois décisions par lesquelles un acheteur peut faire bouger tout cela en sa faveur.",
+    "seoTitle": "MOQ, outillage et délai 2026 : ce qui fixe le minimum",
+    "seoDescription": "Ce qui fixe la MOQ en quincaillerie (lot de finition, outillage, emballage, série), pourquoi elle va de 300 à 5 000 pièces, et ce que compte le délai.",
+    "body": [
+      "« Quelle est votre MOQ ? » est la deuxième question de la plupart des premiers courriels, et la réponse est presque toujours une fourchette. On y lit un fournisseur qui se garde des marges. Ce n'est pas le cas : c'est la seule réponse véridique, et la raison mérite d'être comprise, car elle vous dit précisément sur quels leviers agir.",
+      "Notre fourchette publiée va de 300 à 5 000 pièces pour la plupart des modèles, et l'écart entre ces deux chiffres n'est pas une marge de négociation. C'est la différence entre deux situations de fabrication réellement distinctes.",
+      "LES QUATRE ÉLÉMENTS QUI FIXENT UNE MOQ",
+      "Le lot de finition. C'est le principal, et le moins évident. Une ligne de revêtement galvanique ou de peinture fonctionne par lots, et le lot a une taille économique minimale fixée par le volume des bains et le temps de changement entre finitions. Un modèle proposé en six finitions n'a pas une MOQ ; il a une MOQ par finition, car chaque finition est une série distincte.",
+      "C'est pourquoi répartir une commande sur plusieurs finitions augmente le minimum total au lieu de le réduire. Cinq cents pièces dans une finition, c'est un lot. Cinq cents pièces réparties par cent sur cinq finitions, ce sont cinq lots, chacun sous son propre minimum économique. C'est aussi pourquoi nos données de colisage montrent le même modèle dans deux finitions avec des dimensions de carton complètement différentes : sur le plan de la production, ce sont deux produits.",
+      "L'outillage. Une pièce moulée ou emboutie nécessite une matrice, et la matrice a un coût de réglage payé à chaque série, quel que soit le nombre de pièces qui en sortent. Pour un modèle déjà en production, l'outillage est amorti et la MOQ peut être basse. Pour une nouvelle géométrie, l'outil doit être fabriqué, et la première série doit être assez importante pour le justifier.",
+      "L'emballage. Les cartons imprimés, les boîtes intérieures imprimées et les notices imprimées ont chacun leur propre minimum d'impression, souvent supérieur au minimum de la quincaillerie. Un acheteur qui veut sa propre marque sur la boîte peut découvrir que c'est la boîte, et non la serrure, qui fixe la taille de la commande.",
+      "La série de production elle-même. Les lignes d'assemblage sont réglées pour un modèle, puis tournent. Le coût du changement de série est réel, et une série en dessous d'une certaine taille passe plus de temps en réglage qu'en production.",
+      "POURQUOI 300 ET 5 000 SONT TOUS DEUX VRAIS",
+      "Un modèle déjà outillé, dans une finition standard et emballé dans un carton standard se situe en bas de la fourchette. L'usine fait quelque chose qu'elle allait déjà faire, dans une taille qui correspond à un lot normal.",
+      "Un modèle fabriqué selon la spécification d'un acheteur (une finition que nous n'avons pas en stock, un axe sur mesure, une boîte imprimée, une géométrie modifiée) se situe en haut, car chacun des quatre éléments ci-dessus repart de zéro.",
+      "Certains articles déjà présents sur notre vitrine Alibaba affichent un minimum publié inférieur aux deux, car ce sont des articles en stock vendus sur inventaire plutôt que produits à la commande. C'est une cinquième situation, et c'est celle sur laquelle se renseigner en premier si la quantité est faible.",
+      "CE QUE COMPTE UN DÉLAI DE 30 JOURS",
+      "Notre délai de production commence à 30 jours à compter de la confirmation de commande, et c'est l'expression « à compter de la confirmation de commande » qui fait tout le travail.",
+      "Le compteur démarre quand la spécification est arrêtée et l'acompte reçu, pas à l'arrivée de la demande. Tout ce qui précède relève de la spécification, et le temps de spécification dépend entièrement de l'acheteur.",
+      "Les 30 jours comprennent l'approvisionnement en matière, le moulage ou l'emboutissage, l'usinage, la finition, l'assemblage, le contrôle et l'emballage. La finition est généralement le bloc le plus long, et le plus exposé à un changement d'avis, car elle ne peut commencer qu'une fois les pièces fabriquées et ne peut être refaite sans décapage.",
+      "En dehors des 30 jours se trouve tout ce qui concerne l'acheminement jusqu'à vous : réservation, transport terrestre jusqu'au port, douane, traversée et dédouanement à l'arrivée. Un délai de production de 30 jours sur une traversée de 35 jours, c'est au moins 65 jours avant l'arrivée, et un acheteur qui planifie sur 30 jours sera déçu par l'arithmétique, pas par l'usine.",
+      "LES TROIS DÉCISIONS QUI FONT BOUGER TOUT CELA",
+      "Regrouper les finitions. C'est de loin la mesure la plus efficace à la portée d'un acheteur. Une commande de 2 000 pièces en deux finitions est plus simple et moins coûteuse à produire que 2 000 pièces en six, et le résultat est aussi plus homogène, car tout ce qui relève d'un lot de finition est fini ensemble.",
+      "Arrêter la spécification avant de demander une date. Chaque question non résolue (l'axe, la longueur du carré, la main, le code de finition, l'emballage) est un jour où le compteur ne tourne pas. Notre page sur les six valeurs liste ce dont une commande a réellement besoin pour être complète.",
+      "Séparer l'échantillon de la commande. Un échantillon confirme que ce que nous avons compris est bien ce que vous vouliez dire, et il coûte beaucoup moins cher que de découvrir l'écart dans un conteneur. Demandez l'échantillon tant que la spécification est encore ouverte, pas après l'acompte.",
+      "CE QUE COÛTE L'OUTILLAGE, ET POURQUOI NOUS VOUS LE DIRONS AVANT QUE VOUS NE DEMANDIEZ",
+      "Si un modèle demande un nouvel outillage, c'est un coût distinct, un calendrier distinct et une décision distincte, et il doit être présenté comme tel plutôt que noyé dans un prix unitaire.",
+      "Nous avons expliqué ailleurs ce qu'implique l'outillage d'une nouvelle fermeture anti-panique, et en bref, l'outillage est le moment où un acheteur et une usine s'engagent réellement l'un envers l'autre. Un outil est fabriqué pour une géométrie. Il n'est pas transférable, il n'est pas remboursable, et la décision de le fabriquer doit se prendre chiffres en main.",
+      "Un fournisseur qui annonce un prix unitaire bas sans mentionner l'outillage ne vous a pas fait économiser d'argent ; il a déplacé un coût là où vous le rencontrerez plus tard.",
+      "CE QU'IL FAUT NOUS ENVOYER POUR OBTENIR UN VRAI CHIFFRE",
+      "Les références. La finition de chacune. La quantité pour chaque combinaison modèle et finition, pas le total. Si l'emballage est le nôtre ou le vôtre. Si quoi que ce soit diffère de la spécification du catalogue.",
+      "Avec ces cinq éléments, l'équipe export peut confirmer le minimum pour cette ligne précise et une date, avant que vous ne vous engagiez sur quoi que ce soit. Sans eux, toute MOQ est une fourchette, et une fourchette est ce que donne un fournisseur honnête quand la question n'a pas encore été précisée."
+    ],
+    "faq": [
+      {
+        "question": "Quelle est votre quantité minimale de commande ?",
+        "answer": "La plupart des modèles se situent entre 300 et 5 000 pièces, selon le modèle, la finition, et selon que la commande porte sur du stock ou sur une fabrication selon votre spécification. Certains articles déjà présents sur notre vitrine Alibaba affichent un minimum publié inférieur, car ils sont vendus sur inventaire plutôt que produits à la commande."
+      },
+      {
+        "question": "Pourquoi la MOQ est-elle une fourchette et non un chiffre ?",
+        "answer": "Parce que quatre éléments distincts la fixent : la taille du lot de finition, l'amortissement ou non de l'outillage, les minimums d'impression de l'emballage, et le changement de série en production. Un modèle déjà outillé, dans une finition et un carton standard, se situe en bas. Un modèle fabriqué sur spécification remet les quatre à zéro et se situe en haut."
+      },
+      {
+        "question": "Répartir ma commande sur plusieurs finitions réduit-il le minimum ?",
+        "answer": "Cela l'augmente. Chaque finition est un lot de revêtement distinct, avec son propre minimum économique. Cinq cents pièces dans une finition, c'est un lot ; cent pièces sur cinq finitions, ce sont cinq lots, chacun sous son propre minimum. Regrouper les finitions est de loin la mesure la plus efficace à la portée d'un acheteur."
+      },
+      {
+        "question": "Que compte réellement le délai de 30 jours ?",
+        "answer": "La production seulement, à compter de la confirmation de commande et de l'acompte, pas de la demande. Il couvre l'approvisionnement en matière, le moulage ou l'emboutissage, l'usinage, la finition, l'assemblage, le contrôle et l'emballage. Il n'inclut ni la réservation, ni le transport terrestre, ni la douane, ni la traversée, ni le dédouanement à l'arrivée."
+      },
+      {
+        "question": "Comment raccourcir le délai ?",
+        "answer": "Arrêtez la spécification avant de demander une date, car le compteur ne démarre qu'une fois celle-ci arrêtée. Regroupez les finitions. Et demandez l'échantillon tant que la spécification est encore ouverte, pas après l'acompte, pour qu'un malentendu coûte un échantillon plutôt qu'un conteneur."
+      },
+      {
+        "question": "Comment l'outillage est-il chiffré ?",
+        "answer": "Comme un coût distinct, avec un calendrier distinct, et non noyé dans le prix unitaire. Un outil est fabriqué pour une géométrie : il n'est ni transférable ni remboursable, et la décision doit donc se prendre chiffres en main. Un prix unitaire bas qui ne mentionne pas l'outillage a déplacé un coût, il ne l'a pas supprimé."
+      }
+    ]
+  },
+  "mortise-lock-case-comparison-2026": {
+    "title": "Comparatif des coffres de serrure à mortaiser 2026 : tous les axes et entraxes publiés, côte à côte",
+    "summary": "32 de nos coffres de serrure à mortaiser publient à la fois un axe et un entraxe. Les voici en deux tableaux, profil étroit et standard, avec les pièges de dénomination et les lacunes énoncés clairement.",
+    "seoTitle": "Coffres de serrure à mortaiser : axe et entraxe",
+    "seoDescription": "Tous nos coffres de serrure à mortaiser avec axe et entraxe publiés, en deux tableaux : profil étroit, axe de 20 à 35 mm, et standard, axe de 40 à 90 mm.",
+    "body": [
+      "Tout coffre de serrure à mortaiser se décrit d'abord par deux chiffres : l'axe, de la face du chant de la porte au centre du carré, et l'entraxe, du carré au centre du cylindre. Si ces deux chiffres sont justes, la béquille et la clé tombent en face des trous de la porte. Si l'un d'eux est faux, rien d'autre dans la serrure ne compte, car les trous sont déjà percés.",
+      "Ce guide présente côte à côte tous les coffres de notre catalogue qui publient ces deux chiffres (32 des 58 fiches de coffres de serrure, en septembre 2026), pour qu'un acheteur trouve le coffre adapté à une porte sans lire 58 fiches produit. Les tableaux sont générés à partir des lignes de caractéristiques de ces fiches ; rien n'y est estimé.",
+      "COMMENT LIRE LES TABLEAUX",
+      "Les deux mesures sont publiées en millimètres, avec l'équivalent en pouces en regard. L'axe se mesure depuis la face extérieure de la têtière, pas depuis le coffre situé derrière. La différence est l'épaisseur de la têtière, et elle suffit à décentrer une béquille sur sa rosace. L'entraxe se mesure entre le centre du trou du carré et le centre du trou du cylindre. Lorsqu'une fiche publie aussi un type de cylindre, une disposition de pênes ou une dimension de têtière, elle figure dans la dernière colonne ; « non publié » signifie que la fiche ne l'indique pas, pas que la caractéristique est absente.",
+      "DEUX FAMILLES : PROFIL ÉTROIT ET STANDARD",
+      "La première chose que montrent les chiffres, c'est que nos coffres se répartissent en deux familles qui ne se chevauchent pas. Les axes de 20 à 35 mm sont des coffres pour profil étroit, faits pour les portes à cadre aluminium dont le montant vertical est trop étroit pour une serrure classique : 12 des 32 sont dans ce groupe. Les axes de 40 mm et plus sont des coffres standard pour portes en bois et en acier : 20 sont dans ce groupe. Notre article sur l'affaissement des portes en aluminium explique pourquoi une porte à profil étroit a besoin de son propre type de coffre et ne peut pas simplement recevoir une version à axe court d'un coffre standard.",
+      "Coffres pour profil étroit, par axe :",
+      "| Modèle | Axe | Entraxe | Cylindre | Autres données publiées |\n| --- | --- | --- | --- | --- |\n| LC8520 | 20 mm (13/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC8520B | 20 mm (13/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC8520PS | 20 mm (13/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| 140 | 25 mm (1\") | 72 mm (2-13/16\") | non publié | têtière 183,5 × 20 mm |\n| LC8525 | 25 mm (1\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC8525B | 25 mm (1\") | 85 mm (3-3/8\") | non publié | non publié |\n| AI8530 | 30 mm (1-3/16\") | 85 mm (3-3/8\") | Profil européen | non publié |\n| LC8530BK | 30 mm (1-3/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC8530PS | 30 mm (1-3/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC9230 | 30 mm (1-3/16\") | 92 mm (3-5/8\") | non publié | non publié |\n| LC8535 | 35 mm (1-3/8\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC8535B | 35 mm (1-3/8\") | 85 mm (3-3/8\") | non publié | non publié |",
+      "Coffres standard, par axe :",
+      "| Modèle | Axe | Entraxe | Cylindre | Autres données publiées |\n| --- | --- | --- | --- | --- |\n| LC02 85×40mm | 40 mm (1-9/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC03 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | Profil européen | non publié |\n| LC07 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | non publié | têtière 240 × 23 mm |\n| LC22 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC34 50×72mm | 50 mm (1-15/16\") | 72 mm (2-13/16\") | Profil européen | non publié |\n| LC06 85_50PS | 50 mm (1-15/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC14 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | Profil européen | Quatre pênes ronds |\n| LC21 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC33-5572 | 55 mm (2-3/16\") | 72 mm (2-13/16\") | Profil européen | non publié |\n| LC08 85×55mm | 55 mm (2-3/16\") | 85 mm (3-3/8\") | Profil européen | non publié |\n| LC6860 | 60 mm (2-3/8\") | 68 mm (2-11/16\") | non publié | non publié |\n| LC04 85*60 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Profil européen | Quatre pênes ronds |\n| LC05 8560 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC09 85×60mm | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Profil européen | non publié |\n| LC32 65×72mm | 65 mm (2-9/16\") | 72 mm (2-13/16\") | non publié | non publié |\n| LC7065 | 70 mm (2-3/4\") | 65 mm (2-9/16\") | non publié | non publié |\n| LC7065PS | 70 mm (2-3/4\") | 65 mm (2-9/16\") | Profil européen | non publié |\n| LC7065S | 70 mm (2-3/4\") | 65 mm (2-9/16\") | non publié | non publié |\n| LC04 85*70 | 70 mm (2-3/4\") | 85 mm (3-3/8\") | non publié | non publié |\n| LC9045 | 90 mm (3-9/16\") | 45 mm (1-3/4\") | non publié | non publié |",
+      "L'ENTRAXE DÉCIDE DE LA BÉQUILLE",
+      "Parmi les coffres publiés, 85 mm (3-3/8\") est de loin l'entraxe le plus courant : 22 sur 32, dont dix des douze coffres pour profil étroit. Les autres sont 92 mm (LC9230), 72 mm (quatre coffres : 140, LC34 50×72mm, LC33-5572 et LC32 65×72mm), 68 mm (LC6860), 65 mm (trois coffres : LC7065, LC7065PS et LC7065S) et 45 mm (LC9045).",
+      "Cela compte parce que l'entraxe est partagé avec la béquille. Une béquille sur plaque longue, et toute garniture qui porte le trou du cylindre sur la même platine, est percée pour un seul entraxe, et ne fonctionne qu'avec un coffre de même entraxe. Sur une porte neuve, choisissez d'abord l'entraxe, puis la béquille. Sur un remplacement, les trous existants ont déjà choisi pour vous : mesurez-les, et cherchez ce chiffre dans les tableaux avant toute chose. Nos articles sur les béquilles inox 9000 et sur la gamme de béquilles LH expliquent comment l'écartement des trous d'une plaque s'accorde au coffre.",
+      "Chaque marché se standardise sur ses propres entraxes, et un fournisseur qui sert plusieurs marchés en stocke plusieurs. C'est pourquoi une gamme comme celle-ci propose 85 mm à côté de 72 mm et 92 mm : chacun est la bonne réponse pour les portes de quelqu'un.",
+      "CE QUE COÛTE UN AXE COURT",
+      "Un coffre pour profil étroit résout un problème et en crée un autre. Avec un axe de 20 ou 25 mm, le carré se trouve très près du chant de la porte, et la béquille aussi : l'espace entre la béquille et l'huisserie, ou le vantail voisin sur une double porte, est donc réduit. Une béquille à long retour ou un bouton peut coincer les phalanges contre l'huisserie à chaque ouverture. C'est pourquoi les portes à profil étroit reçoivent généralement des béquilles pour profil étroit, des poignées de tirage ou des plaques de poussée plutôt que les béquilles adaptées à une porte en bois, et pourquoi l'axe doit être choisi en même temps que la béquille, pas avant. Si le montant permet 30 ou 35 mm, l'espace supplémentaire vaut la peine, ne serait-ce que pour la main.",
+      "LES SUFFIXES DES RÉFÉRENCES",
+      "Plusieurs coffres portent des lettres après les chiffres : B sur les LC8520B, LC8525B et LC8535B ; BK sur le LC8530BK ; PS sur les LC8520PS, LC8530PS, LC06 85_50PS et LC7065PS ; S sur le LC7065S. Sur nos serrures cylindriques, PS signifie passage et BK condamnation, et il est tentant de les lire de la même façon ici. Les fiches de coffres ne définissent pas leurs suffixes : nous ne les décoderons donc pas. Lorsque la différence entre deux variantes compte (un coffre à pêne demi-tour seul face à un coffre à pêne dormant, par exemple), indiquez en toutes lettres la fonction souhaitée, et nous l'associerons à la variante, et non l'inverse.",
+      "LES NOMS DE MODÈLES NE SUIVENT PAS UN ORDRE UNIQUE",
+      "La plupart de ces noms de modèles contiennent les deux chiffres, et il est tentant de lire la serrure directement dans le nom. Ne le faites pas. La dénomination n'est pas cohérente dans la gamme. LC8530 et LC6860 placent l'entraxe en premier et l'axe en second ; LC32 65×72mm et LC34 50×72mm placent l'axe en premier. Les variantes LC7065 et le LC9045 ne se lisent correctement que dans l'ordre axe puis entraxe : leurs fiches indiquent un axe de 70 mm avec un entraxe de 65 mm, et un axe de 90 mm avec un entraxe de 45 mm. Ce sont les deux cas atypiques des tableaux, et si l'un d'eux est le coffre que vous voulez, confirmez les deux chiffres avec nous avant de commander.",
+      "La règle qui en découle est simple : lisez les lignes de caractéristiques, jamais le nom. C'est précisément pour cela que les tableaux ci-dessus sont construits à partir des lignes.",
+      "CE QUE LES TABLEAUX LAISSENT DE CÔTÉ",
+      "Deux types de lacunes sont à connaître. D'abord, 26 fiches de coffres ne publient pas les deux chiffres et ne figurent pas dans les tableaux. Certaines ne publient qu'un axe (LC17 à 16 mm, LC5845 à 45 mm), d'autres seulement une têtière, et d'autres rien pour l'instant. Ensuite, la plupart des coffres présents dans les tableaux ne publient que ces deux chiffres et pas le reste de la géométrie. Seul le LC07 publie l'ensemble : têtière de 240 × 23 mm, hauteur de coffre de 173 mm, profondeur de coffre de 72 mm, course du pêne demi-tour de 26 mm et saillie du pêne dormant de 18,5 mm.",
+      "Cette seconde lacune compte quand vous remplacez une serrure dans une porte existante, car la longueur de la têtière et la profondeur du coffre décident si le nouveau coffre entre dans l'ancienne mortaise. Notre article sur la correspondance avec une serrure que vous achetez déjà expose les six cotes qui décident de l'interchangeabilité ; si le coffre souhaité n'en publie que deux, demandez les quatre autres avant de commander, et nous les mesurerons au lieu de les estimer.",
+      "CHOISIR EN TROIS ÉTAPES",
+      "D'abord, la porte décide de la famille : une porte aluminium à profil étroit reçoit un coffre du premier tableau, une porte en bois ou en acier un coffre du second. Ensuite, l'axe est fixé par la préparation de la porte ou par l'emplacement voulu de la béquille sur le vantail, et sur un remplacement par l'ancienne serrure. Enfin, l'entraxe est fixé par la béquille ou la garniture prévue, ou par les trous déjà présents dans la porte. Ce n'est qu'après ces trois étapes que la fonction (pêne demi-tour seul, pêne demi-tour et pêne dormant, passage) ramène le choix à un modèle, et seulement ensuite que la finition entre dans la discussion.",
+      "Envoyez ces trois éléments avec votre demande, et la réponse pourra nommer un coffre de ces tableaux du premier coup. Envoyez seulement un nom de modèle, et, comme le montre la section sur la dénomination, elle risque de nommer le mauvais."
+    ],
+    "faq": [
+      {
+        "question": "Quel entraxe est le plus courant sur vos coffres de serrure à mortaiser ?",
+        "answer": "85 mm. Sur les 32 coffres qui publient les deux chiffres, 22 ont un entraxe de 85 mm, dont dix des douze coffres pour profil étroit. Les autres sont 92 mm (LC9230), 72 mm (quatre coffres : 140, LC34 50×72mm, LC33-5572 et LC32 65×72mm), 68 mm (LC6860), 65 mm (trois coffres : LC7065, LC7065PS et LC7065S) et 45 mm (LC9045). L'entraxe doit correspondre à la béquille ou à la plaque : sur un remplacement, mesurez d'abord les trous existants."
+      },
+      {
+        "question": "Quel axe a un coffre de serrure pour porte aluminium à profil étroit ?",
+        "answer": "Entre 20 et 35 mm dans notre gamme. Douze coffres publiés se situent dans cette plage : LC8520, LC8520B, LC8520PS, 140, LC8525, LC8525B, AI8530, LC8530BK, LC8530PS, LC9230, LC8535 et LC8535B. Les coffres standard pour portes en bois et en acier commencent à 40 mm et vont jusqu'à 70 mm, avec un cas atypique à 90 mm."
+      },
+      {
+        "question": "Puis-je lire l'axe et l'entraxe dans le nom du modèle de coffre ?",
+        "answer": "Pas de façon fiable. La dénomination n'est pas cohérente : LC8530 et LC6860 placent l'entraxe en premier, LC32 65×72mm et LC34 50×72mm placent l'axe en premier, et les variantes LC7065 et le LC9045 ne se lisent correctement que dans l'ordre axe puis entraxe. Utilisez toujours les lignes de caractéristiques, à partir desquelles les tableaux comparatifs sont construits."
+      },
+      {
+        "question": "Vos coffres publient-ils la dimension de la têtière et du coffre ?",
+        "answer": "La plupart pas encore. Parmi les 32 coffres qui publient axe et entraxe, seul le LC07 publie sa géométrie complète : têtière de 240 × 23 mm, hauteur de coffre de 173 mm, profondeur de coffre de 72 mm, course du pêne demi-tour de 26 mm et saillie du pêne dormant de 18,5 mm. Pour un remplacement, demandez les dimensions de têtière et de coffre avant de commander, et nous les mesurerons au lieu de les estimer."
+      },
+      {
+        "question": "Pourquoi les portes à profil étroit demandent-elles d'autres béquilles ?",
+        "answer": "Parce qu'un coffre pour profil étroit place le carré, et donc la béquille, très près du chant de la porte : 20 à 35 mm dans notre gamme. Avec un axe de 20 ou 25 mm, il reste peu d'espace entre la béquille et l'huisserie ou le vantail voisin, et une béquille à long retour ou un bouton peut coincer les phalanges. Les béquilles pour profil étroit, poignées de tirage ou plaques de poussée sont d'usage, et un axe de 30 ou 35 mm vaut la peine là où le montant le permet."
+      },
+      {
+        "question": "Que signifient les suffixes B, BK et PS sur les références de coffres ?",
+        "answer": "Les fiches de coffres ne les définissent pas : nous ne les décodons donc pas. Sur nos serrures cylindriques, PS signifie passage et BK condamnation, mais ce n'est pas confirmé pour des coffres comme le LC8520PS, le LC8530BK ou le LC8535B. Indiquez en toutes lettres la fonction souhaitée (pêne demi-tour seul, pêne dormant, passage), et nous l'associerons à la bonne variante."
+      }
+    ]
+  },
+  "powder-coating-and-ral-2026": {
+    "title": "Thermolaquage et RAL 2026 : pourquoi un numéro de teinte ne spécifie pas une finition, ce que décide le prétraitement, et quoi écrire sur la commande",
+    "summary": "Un numéro RAL désigne une teinte et rien d'autre : ni brillance, ni texture, ni procédé, ni durabilité. Cette page explique ce que RAL spécifie et ce qu'il laisse ouvert, pourquoi le prétraitement décide de la tenue d'un revêtement, où le thermolaquage échoue sur la géométrie de la quincaillerie, quels essais valent d'être cités, et les quatre lignes qui rendent une finition commandable.",
+    "seoTitle": "Thermolaquage et RAL 2026 : teinte, brillance",
+    "seoDescription": "Ce que spécifie ou non un numéro RAL en quincaillerie, pourquoi le prétraitement décide de la tenue, où la poudre échoue, et quoi écrire à la commande.",
+    "body": [
+      "Deux pièces arrivent, toutes deux laquées au même numéro RAL, et elles ne sont pas assorties. Aucun des deux fournisseurs n'a tort, et c'est tout le problème : RAL spécifie une teinte, et une finition se compose de cinq éléments dont la teinte n'est qu'un.",
+      "Cela compte davantage en quincaillerie que sur un panneau plan, car la quincaillerie a des filetages, des creux et des arêtes (les trois endroits où un revêtement cède en premier), et parce que deux pièces de quincaillerie d'une même porte se voient côte à côte, sous la même lumière.",
+      "## Ce que spécifie un numéro RAL, et ce qu'il ne spécifie pas",
+      "| Propriété | Fixée par RAL ? | Fixée à la place par |\n| --- | --- | --- |\n| Teinte | Oui | Le numéro RAL lui-même |\n| Niveau de brillance | Non | Une spécification de brillance distincte, mesurée selon ISO 2813 |\n| Texture | Non | Lisse, fine texture, givré : nommé séparément |\n| Métallisé ou effet | Non | La qualité de poudre ; RAL Effect est une collection distincte |\n| Procédé | Non | Poudre, peinture liquide, anodisation, PVD : tous peuvent atteindre un RAL |\n| Épaisseur de film | Non | Une plage spécifiée en µm |\n| Résistance à la corrosion | Non | Une classe d'essai, par exemple selon EN 1670 |\n| Constance d'un lot à l'autre | Non | Une tolérance, et un échantillon de référence convenu |",
+      "L'écart le plus fréquent en pratique vient de la deuxième ligne. Un RAL 9005 mat et un RAL 9005 satiné sont tous deux correctement RAL 9005, et sur une porte ils ressemblent à deux noirs différents, car la brillance change la part de la pièce environnante que l'on voit se refléter, ce que l'œil lit comme un changement de teinte.",
+      "Le deuxième plus fréquent vient de la cinquième. Une béquille noire thermolaquée et une rosace noire en peinture liquide peuvent toutes deux atteindre le numéro, et elles vieilliront, s'écailleront et se sentiront sous la main différemment.",
+      "Un numéro de teinte seul n'est donc pas une spécification. C'est la première de quatre lignes.",
+      "## C'est au prétraitement que les revêtements échouent réellement",
+      "Presque aucune défaillance de revêtement en quincaillerie n'est une défaillance du film. C'est une défaillance de l'adhérence en dessous, et cette adhérence se crée avant la pulvérisation de la moindre poudre.",
+      "La séquence est dégraissage, rinçage, décapage ou conversion, rinçage, séchage, et les rinçages comptent autant que la chimie. Une pièce qui entre au four avec du lubrifiant d'étirage, de la pâte à polir ou des résidus de sel reçoit un revêtement parfait le premier jour, qui se soulève par l'arête au bout d'un an.",
+      "C'est pourquoi une question sur le revêtement doit se poser comme une question sur le prétraitement. « Quelle est votre ligne de prétraitement, et est-elle la même pour les pièces en zinc et les pièces en acier ? » est bien plus instructif que « quelle poudre utilisez-vous ? », car la poudre est une matière achetée, et le prétraitement un procédé que quelqu'un conduit correctement ou non.",
+      "Chaque support demande une réponse différente, et c'est tout l'intérêt de la question :",
+      "L'acier reçoit une couche de conversion au phosphate de zinc ou au phosphate de fer. Peu coûteuse, bien maîtrisée, c'est la référence à laquelle tout le reste se compare.",
+      "Le zinc moulé sous pression (zamak) est le cas difficile. Il demande une chimie plus douce que l'acier, et il dégaze au four : la porosité de la pièce moulée libère du gaz à travers le film en cours de cuisson et laisse des piqûres. Une cuisson de dégazage avant le laquage est la réponse habituelle, et le fait qu'une ligne la pratique ou non est un vrai facteur de différenciation. Notre page sur le zamak explique quelle nuance se cache derrière cette porosité.",
+      "L'aluminium demande une conversion chromique ou sans chrome ; c'est le support autour duquel ont été rédigés les labels de qualité architecturaux comme Qualicoat et GSB, et leurs exigences constituent une référence raisonnable même hors architecture.",
+      "L'acier inoxydable est le cas délicat, car la couche passive qui le rend résistant à la corrosion en fait aussi un mauvais support d'adhérence. Un accrochage mécanique est généralement nécessaire. Laquer l'inox est souvent la mauvaise réponse : si le but est la couleur, le PVD la tient mieux ; si le but est la résistance à la corrosion, l'inox l'avait déjà. Notre page sur les nuances d'inox explique ce qu'il y a sous le revêtement.",
+      "## Là où la géométrie de la quincaillerie met le revêtement en échec",
+      "Les filetages : un film de poudre courant ajoute de la matière sur les deux flancs d'un filet, et un taraudage M5 laqué peut ne plus accepter une vis M5. Les filetages sont donc masqués, et le masquage est un travail manuel qui se fait ou ne se fait pas. Un fournisseur qui n'a pas pensé à vos trous taraudés vous enverra des pièces impossibles à assembler.",
+      "Les creux et angles intérieurs : la pulvérisation électrostatique suit les lignes de champ, et les lignes de champ ne pénètrent pas dans un creux profond, c'est l'effet cage de Faraday. Le fond d'une cavité reçoit un film plus mince que la face voisine, et c'est dans le film mince que commence la corrosion. En quincaillerie, cela concerne typiquement l'intérieur du retour d'une béquille, le fond d'un logement de cylindre, le dessous d'une rosace.",
+      "Les arêtes : la poudre se retire d'une arête vive en fluant pendant la cuisson, si bien que l'arête finit plus mince que la face. Une arête arrondie retient le revêtement ; une arête vive non. C'est une décision d'outillage, prise bien avant que quiconque ait choisi une teinte.",
+      "Les points de fixation et faces de contact : une face laquée ensuite serrée par une vis se marque, et une face de contact laquée entre deux pièces modifie la cote assemblée. Les deux sont normaux, et les deux doivent être décidés plutôt que découverts.",
+      "L'épaisseur de film courante d'un thermolaquage architectural se situe autour de 60 à 80 µm, et c'est une plage, pas une cible : trop mince, la couverture des arêtes échoue ; trop épais, les filetages et les pièces ajustées ne s'assemblent plus. Si l'assemblage est serré, la plage d'épaisseur doit figurer sur le plan.",
+      "## Quels essais valent d'être cités, et ce que prouve chacun",
+      "ASTM B117, brouillard salin neutre : le plus cité et le plus mal compris. C'est un essai comparatif sous une condition constante et artificielle, et des heures en enceinte de brouillard salin ne se convertissent pas en années sur un bâtiment. Il est réellement utile pour comparer deux revêtements sur un même support ; ce n'est pas une prédiction de durée de vie, et tout fournisseur qui convertit des heures en années vous a appris quelque chose sur sa façon de lire les essais.",
+      "EN 1670, résistance à la corrosion de la quincaillerie pour le bâtiment, est celle qui a été rédigée pour cette catégorie de produits. Elle définit une série de grades, chacun correspondant à une durée d'exposition au brouillard salin : elle place donc un résultat de type B117 (« B117-style ») sur une échelle conçue pour la quincaillerie au lieu de le laisser brut. Les grades et les durées ont changé d'une édition à l'autre : citez l'édition sur laquelle vous contractez, et non le grade seul.",
+      "ISO 2409, adhérence par quadrillage. Un quadrillage est incisé à travers le film puis arraché au ruban adhésif, et le résultat est classé. C'est peu coûteux, rapide, et cela répond à la question du prétraitement ci-dessus plus directement que tout autre essai de cette liste.",
+      "ISO 2813, mesure de brillance à 20°, 60° ou 85°. C'est ce qui transforme « mat » d'adjectif en chiffre, et c'est la ligne qui manque le plus souvent dans une spécification de finition.",
+      "ISO 1520, emboutissage, et les essais de choc, qui indiquent si le film suit le support ou s'en détache en se fissurant ; ils concernent toute pièce pliée, sertie ou pressée après laquage.",
+      "Citez ceux que l'application justifie. Une béquille noire dans un couloir de bureaux n'a pas besoin d'une classe de 480 heures au brouillard salin ; une poignée extérieure dans une ville côtière, si, et un fournisseur incapable de dire quel grade atteint son revêtement a répondu à la question en n'y répondant pas.",
+      "## Les retouches, la question que personne ne pose avant le chantier",
+      "La poudre ne se retouche pas à la poudre : elle cuit à température de four, sur une pièce nue, et aucune de ces deux conditions n'existe sur une porte posée. Toute pièce thermolaquée d'un bâtiment se retouche à la peinture séchant à l'air, c'est-à-dire avec un autre liant, une autre courbe de brillance et une autre vitesse de vieillissement, dans la même teinte nominale.",
+      "Les questions pratiques sont donc : existe-t-il un stylo de retouche assorti à cette teinte et à cette brillance, qui le fournit, et quelqu'un a-t-il regardé une pièce retouchée deux ans plus tard ? Sur un grand projet, la réponse honnête est souvent de garder un petit nombre de pièces de rechange plutôt que de retoucher.",
+      "## Les quatre lignes qui rendent une finition commandable",
+      "La teinte, sous forme de numéro RAL et de collection : RAL Classic 9005 n'est pas la même spécification qu'une référence RAL Design ou RAL Effect.",
+      "La brillance, sous forme de chiffre selon ISO 2813, avec l'angle de mesure indiqué.",
+      "La texture, nommée : lisse, fine texture, ou une référence de poudre précise.",
+      "Un échantillon de référence physique, signé par les deux parties : c'est la ligne qui règle réellement les litiges. Chaque lot est alors comparé à l'échantillon, et non au souvenir du lot précédent.",
+      "Ajoutez la classe de corrosion et la plage d'épaisseur de film quand l'application le justifie, et nommez les surfaces masquées.",
+      "## Ce que nous publions, et ce que nous ne publions pas",
+      "Sur les 588 fiches du catalogue HYDE, 326 comportent une ligne finition. Les noms de finition ne sont pas entièrement normalisés : la même finition apparaît sous « Satin Nickel (SN) », « Satin nickel » et « SN » selon les fiches. C'est un problème de données avant d'être un problème de spécification.",
+      "Certaines lignes mentionnent le thermolaquage, d'autres disent seulement « paint » ou « painting », et d'autres nomment une finition noire sans préciser s'il s'agit de thermolaquage, de peinture liquide, de nickelage noir ou de PVD. Ces procédés se réparent différemment : le procédé doit donc être confirmé pour une commande.",
+      "Il n'y a pas un seul numéro RAL dans les 588 fiches HYDE. Si une teinte précise compte, demandez-nous de confirmer le code et le procédé d'après les registres de production.",
+      "Voilà la lacune, énoncée en chiffres plutôt qu'en adjectifs, et elle se comble de la même façon que pour les nuances d'inox et de zamak : à partir des registres de production, pas de ce que les lignes devraient dire. D'ici là, si une finition compte pour votre commande, demandez-la selon les quatre lignes ci-dessus et demandez-nous de confirmer chacune sur la pièce plutôt que d'après le catalogue."
+    ],
+    "faq": [
+      {
+        "question": "Un numéro RAL spécifie-t-il entièrement une finition ?",
+        "answer": "Non. RAL fixe la teinte et rien d'autre. Brillance, texture, effet métallisé, procédé, épaisseur de film et résistance à la corrosion se spécifient séparément. Un RAL 9005 mat et un RAL 9005 satiné sont tous deux correctement RAL 9005 et ressemblent à deux noirs différents sur une porte, car la brillance change la part de la pièce que l'on voit se refléter."
+      },
+      {
+        "question": "Qu'est-ce qui fait réellement échouer un revêtement en quincaillerie ?",
+        "answer": "Presque jamais le film lui-même, mais l'adhérence en dessous, qui se crée avant la pulvérisation de la moindre poudre. Dégraissage, rinçage, décapage ou conversion, rinçage, séchage, et les rinçages comptent autant que la chimie. Demandez quelle est la ligne de prétraitement et si elle est la même pour les pièces en zinc et en acier ; la poudre est une matière achetée, le prétraitement un procédé."
+      },
+      {
+        "question": "Pourquoi le zinc moulé sous pression est-il plus difficile à thermolaquer que l'acier ?",
+        "answer": "Il demande une chimie plus douce que l'acier, et il dégaze au four : la porosité de la pièce moulée libère du gaz à travers le film en cours de cuisson et laisse des piqûres. Une cuisson de dégazage avant le laquage est la réponse habituelle, et le fait qu'une ligne la pratique ou non distingue réellement les applicateurs."
+      },
+      {
+        "question": "Un filetage thermolaqué accepte-t-il une vis ?",
+        "answer": "Pas de façon fiable. Un film de poudre ajoute de la matière sur les deux flancs : un taraudage M5 laqué peut ne plus accepter une vis M5. Les filetages sont donc masqués, et le masquage est un travail manuel qui se fait ou ne se fait pas. Indiquez sur la commande les surfaces à masquer."
+      },
+      {
+        "question": "Que prouve un nombre d'heures au brouillard salin ?",
+        "answer": "Qu'un revêtement a tenu plus longtemps qu'un autre dans une condition constante et artificielle. Les heures ASTM B117 ne se convertissent pas en années sur un bâtiment, et un fournisseur qui les convertit vous a appris comment il lit les essais. EN 1670 place ce chiffre sur une échelle de grades conçue pour la quincaillerie du bâtiment ; citez l'édition, car grades et durées ont changé d'une édition à l'autre."
+      },
+      {
+        "question": "Comment retouche-t-on sur place une pièce thermolaquée ?",
+        "answer": "Pas à la poudre : la poudre cuit à température de four sur une pièce nue, et aucune de ces conditions n'existe sur une porte posée. La retouche se fait toujours à la peinture séchant à l'air, donc avec un autre liant, une autre courbe de brillance et une autre vitesse de vieillissement dans la même teinte nominale. Sur un grand projet, garder des pièces de rechange est souvent plus honnête que retoucher."
+      }
+    ]
+  },
+  "qualifying-a-hardware-supplier-2026": {
+    "title": "Qualifier un fournisseur de quincaillerie 2026 : usine, négociant ou courtier, les cinq questions qui les distinguent, et ce qu'il faut vérifier",
+    "summary": "Trois types d'entreprises répondent à une demande de quincaillerie, et les trois diront oui. Cette page explique ce que maîtrisent réellement une usine, une société de négoce et un courtier, donne cinq questions dont les réponses les distinguent sans que personne n'ait à être mis en cause, liste ce qui peut être vérifié de façon indépendante, et applique tout le test à nous-mêmes.",
+    "seoTitle": "Qualifier un fournisseur 2026 : usine ou négociant",
+    "seoDescription": "Distinguer une usine de quincaillerie d'un négociant ou d'un courtier : cinq questions, ce qui se vérifie seul, et ce que doit être une première commande.",
+    "body": [
+      "Trois types d'entreprises répondent à une demande de quincaillerie de porte, et toutes trois répondent de la même façon. La différence n'apparaît que plus tard : dans ce qu'elles peuvent modifier, la rapidité de leurs réponses, et qui porte le problème quand quelque chose ne va pas.",
+      "Aucune des trois n'est illégitime. Une bonne société de négoce est plus utile qu'une mauvaise usine. Mais vous devez savoir à qui vous parlez, car cela détermine ce que vous pouvez raisonnablement demander.",
+      "## Ce que chacune maîtrise réellement",
+      "| | Usine | Société de négoce | Courtier |\n| --- | --- | --- | --- |\n| Possède l'outillage | Oui | Non | Non |\n| Peut modifier une cote | Oui, au coût de l'outillage | Seulement en le demandant à une usine | Seulement en trouvant une autre usine |\n| Maîtrise la ligne de finition | En général | Non | Non |\n| Détient les certificats d'essai | À son propre nom | Transmet ceux de l'usine | Transmet ce qui existe |\n| Répond à une question technique | À partir du plan | En la relayant | En la relayant |\n| Utile pour | Fabrication sur mesure, volume, relations durables | Commandes mixtes, groupage, petites quantités | Trouver un produit que personne d'autre n'a |",
+      "Sur un produit technique, la ligne qui compte le plus est l'avant-dernière. Une usine répond à une question dimensionnelle à partir de son propre plan ; tous les autres y répondent en demandant à quelqu'un. Cela ne rend pas la réponse fausse, cela la rend plus lente, et cela signifie qu'elle passe par une partie qui peut ne pas savoir laquelle de deux cotes voisines vous vouliez dire.",
+      "## Les cinq questions",
+      "Aucune n'est conflictuelle, et toutes les cinq sont des choses qu'un acheteur voudrait normalement savoir. Les réponses séparent d'elles-mêmes les trois catégories.",
+      "« Lesquels de ces modèles fabriquez-vous vous-mêmes, et lesquels achetez-vous ? » Presque toute véritable usine achète certaines choses : cylindres, ressorts, emballages, parfois des catégories entières. Une usine répond facilement et précisément. Une société de négoce répond de façon générale, car la réponse honnête est « tous ».",
+      "« Pouvez-vous modifier l'axe de ce modèle, et quel serait le coût d'outillage ? » Une usine répond par un chiffre ou une raison. Tous les autres répondent par un délai, car ils doivent demander.",
+      "« Qui réalise vos revêtements galvaniques, et est-ce en interne ? » La galvanoplastie est souvent sous-traitée, même par de vraies usines, et le dire est normal. Ce qui est instructif, c'est de savoir si elles connaissent la réponse immédiatement.",
+      "« Quel est le minimum sur ce modèle dans une finition, et pourquoi ce chiffre ? » Notre page sur la MOQ explique les quatre éléments qui fixent un minimum. La réponse d'une usine renvoie à au moins l'un d'eux : un lot de finition, un amortissement d'outillage, un tirage d'impression. Une réponse relayée n'est qu'un chiffre.",
+      "« Pouvons-nous avoir le plan coté de ce modèle ? » La question la plus utile de la liste. Une usine l'a, ou sait qu'il n'existe pas pour ce modèle. Un négociant a ce que l'usine lui a envoyé, souvent une page de catalogue.",
+      "Personne n'a besoin d'être pris en défaut par ces questions. Une société de négoce qui répond « nous ne fabriquons pas ces produits, nous travaillons avec trois usines du Guangdong, voici celle qui fabrique celui-ci » a donné une meilleure réponse qu'une usine évasive, et c'est désormais un fournisseur avec lequel vous pouvez travailler en connaissance de cause.",
+      "## Ce qui peut être vérifié de façon indépendante",
+      "L'immatriculation de l'entreprise : dans la plupart des juridictions, les entreprises figurent dans un registre public avec un numéro d'immatriculation, un objet social enregistré et une date de création. Un fabricant et une société de négoce ont généralement des objets sociaux visiblement différents.",
+      "L'adresse, sur une carte : une vue satellite de l'adresse enregistrée vous dit s'il s'agit d'un bâtiment industriel ou d'un étage de bureaux. C'est rudimentaire, et c'est aussi la vérification la plus rapide qui soit.",
+      "Tout certificat, dans le registre de l'organisme émetteur : traité en détail dans notre page sur la validation des certificats. Recherchez par numéro de certificat plutôt que par nom d'entreprise, et vérifiez que le domaine couvre votre produit.",
+      "L'historique d'exportation, lorsque le pays de destination publie ses données commerciales. Il ne vous dira rien de la qualité, mais il vous dira si une entreprise qui revendique vingt ans d'exportations vers votre marché en a réellement.",
+      "Ce qui ne peut pas être vérifié depuis un bureau, c'est ce qui compte le plus : fera-t-elle ce qu'elle a dit à la troisième commande ? C'est à cela que sert une première commande.",
+      "## L'appel vidéo, et les trois choses qu'il vaut la peine de demander à voir",
+      "Une visite d'usine est la vraie réponse, et elle n'est pas toujours possible. Un appel vidéo est un substitut raisonnable si vous demandez des choses précises plutôt qu'une visite guidée.",
+      "L'outillage du modèle que vous achetez : une matrice ou un moule portant une référence, rangé avec d'autres. C'est la chose la plus difficile à simuler, et la plus instructive.",
+      "La ligne qui produit ce modèle, pas une ligne qui produit quelque chose. Demandez qu'on tienne une pièce finie à côté de la machine qui l'a produite.",
+      "Le poste de contrôle qualité, et ce qui s'y trouve : un pied à coulisse, un calibre, un panneau d'échantillons, un registre. Un poste vide est aussi une réponse.",
+      "Demandez-les en direct plutôt que sous forme de fichier vidéo. Un enregistrement est l'enregistrement d'une bonne journée dans les installations de quelqu'un, et pas nécessairement dans celles-ci.",
+      "## Ce que doit être une première commande",
+      "Pas le projet. Un échantillon, puis une petite commande, puis le projet, et la petite commande compte davantage que l'échantillon, car un échantillon est fait par la meilleure personne disponible, et une petite commande est faite comme se font les commandes.",
+      "Notre page sur les échantillons indique ce qu'il faut vérifier à l'arrivée. Les trois choses qu'une première petite commande vous apprend et qu'un échantillon ne peut pas vous apprendre : si le colisage correspond à la liste de colisage, si le délai était réel, et si les pièces du milieu du carton correspondent à celles du dessus.",
+      "Les conditions de paiement sont aussi un signal, dans les deux sens. Un fournisseur qui exige le paiement intégral avant production sur une première commande vous demande de porter tout le risque ; un fournisseur qui offre des conditions inhabituellement souples pour remporter une première commande achète peut-être une relation qu'il ne peut pas financer. Ni l'un ni l'autre n'est rédhibitoire, et les deux méritent d'être remarqués.",
+      "## La référence qui vaut d'être demandée, et les trois questions à lui poser",
+      "« Pouvez-vous nous donner des références ? » produit les trois clients les plus satisfaits d'un fournisseur et ne vous apprend presque rien. Une demande plus étroite produit quelque chose d'utilisable : un client sur mon marché qui achète ce modèle, dans cette finition. C'est l'étroitesse qui compte : elle demande une référence que le fournisseur ne peut pas choisir uniquement pour son enthousiasme, et un fournisseur qui en a réellement une le dit généralement tout de suite.",
+      "Tous les fournisseurs ne peuvent pas vous donner une référence joignable, et refuser pour des raisons de confidentialité est légitime, pas évasif. Ce qui est instructif, c'est de savoir s'ils peuvent décrire le client : un marché, un rythme de commandes, un modèle. Un fournisseur qui n'a aucune réponse précise sur les autres acheteurs du produit que vous achetez vous dit quelque chose sur la fréquence à laquelle il est acheté.",
+      "Si vous joignez une référence, trois questions portent presque toute la valeur.",
+      "« La deuxième commande correspondait-elle à la première ? » La première commande se passe généralement bien partout. La constance d'une commande à l'autre est ce qui est difficile, et ce qu'il est coûteux de découvrir soi-même.",
+      "« Que s'est-il passé la fois où quelque chose n'allait pas ? » Pas si quelque chose a déjà mal tourné : c'est toujours arrivé. Demandez comment cela a été traité, qui a payé, et combien de temps cela a pris. Cette seule question distingue les fournisseurs plus sûrement que n'importe quelle visite d'usine.",
+      "« Combien de temps met une question technique pour revenir ? » Un nombre de jours. C'est l'indicateur le plus clair de la question usine ou négociant ci-dessus, mesuré de l'extérieur par quelqu'un qui n'a aucune raison de flatter qui que ce soit.",
+      "## Quatre réponses qui semblent mauvaises et ne le sont pas, et une qui semble bonne et ne l'est pas",
+      "« Nous sous-traitons nos revêtements galvaniques. » Normal, y compris dans de grandes usines compétentes. La galvanoplastie est un procédé spécialisé et très réglementé, et la sous-traiter est souvent le choix de la qualité. Ce qui compte, c'est qu'elles nomment le sous-traitant et connaissent son procédé.",
+      "« Nous n'avons pas de certificat pour ce modèle. » Normal aussi. Les essais coûtent cher par modèle, et la plupart des catalogues ne sont que partiellement essayés. Un fournisseur qui dit quels modèles sont essayés et lesquels ne le sont pas est plus fiable qu'un fournisseur dont toute la gamme est présentée comme certifiée.",
+      "« Notre minimum sur ce produit est élevé. » Un minimum fondé sur une raison montre que quelqu'un a chiffré le travail. Notre page sur la MOQ expose les quatre éléments qui le fixent.",
+      "« Nous ne pouvons pas faire cela. » La réponse la plus sous-estimée de la liste. Un fournisseur qui refuse une modification qu'il ne peut pas bien exécuter vient de vous épargner un projet, et vous a montré que ses refus ont un sens.",
+      "Et celle qui semble bonne : oui à tout, immédiatement. N'importe quelle cote, n'importe quelle finition, n'importe quelle quantité, n'importe quel délai, sans aucune question en retour. Un fournisseur réellement capable de tout cela aurait posé au moins une question de clarification sur votre porte. Un accord sans questions n'est pas une capacité ; c'est un devis rédigé avant que quiconque ait lu la demande.",
+      "## L'appliquer à nous-mêmes",
+      "Il serait incohérent de publier cette page sans y répondre.",
+      "Nous sommes une usine, et comme toute véritable usine, nous achetons certains composants au lieu de tout fabriquer. Demandez lesquels, modèle par modèle, et la réponse vous reviendra précise.",
+      "Nous ne détenons pas de certificats d'essai pour tout le catalogue. Nos fermetures anti-panique 307 et 311 sont en cours d'essai, et tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement au feu, un grade ANSI ou une homologation UL. Notre page sur les certificats explique comment vérifier cette déclaration, y compris la nôtre.",
+      "Nous ne publions pas de plan pour la plupart des modèles. Les 588 fiches HYDE comptent 84 fichiers SVG cotés, dont 72 sur les 521 fiches produit visibles, et 0 SVG HYDE de préparation de porte. Notre page sur les plans donne ces décomptes séparés, car la cinquième question ci-dessus est celle à laquelle nous répondrions sinon de façon trop vague.",
+      "Plusieurs lacunes de spécification sont ouvertes et publiées : la nuance d'inox sur 224 lignes, la nuance de zamak sur 156, l'alliage de laiton et le statut DZR sur 57, la répartition des cylindres sur 45. Chacune a sa propre page, avec le décompte.",
+      "C'est une réponse moins flatteuse que celle de la plupart des fournisseurs, et c'est celle qui résiste aux cinq questions. Un fournisseur dont le catalogue n'a aucune lacune a soit tout mesuré, soit écrit ce que les lacunes devraient dire, et le second cas est bien plus fréquent que le premier."
+    ],
+    "faq": [
+      {
+        "question": "Quelle différence entre une usine, une société de négoce et un courtier ?",
+        "answer": "Une usine possède l'outillage, peut modifier une cote au coût de l'outillage, maîtrise généralement sa ligne de finition et répond à une question dimensionnelle à partir de son propre plan. Une société de négoce et un courtier répondent en relayant la question. Aucun n'est illégitime (une bonne société de négoce est plus utile qu'une mauvaise usine), mais vous devez savoir à qui vous parlez."
+      },
+      {
+        "question": "Quelle est la question la plus révélatrice ?",
+        "answer": "« Pouvons-nous avoir le plan coté de ce modèle ? » Une usine l'a, ou sait qu'il n'existe pas pour ce modèle. Un négociant a ce que l'usine lui a envoyé, souvent une page de catalogue. La réponse sépare les catégories sans que personne n'ait à être mis en cause."
+      },
+      {
+        "question": "Que puis-je vérifier sur un fournisseur depuis mon bureau ?",
+        "answer": "L'immatriculation de l'entreprise et son objet social enregistré, généralement visiblement différent entre un fabricant et un négociant. L'adresse enregistrée en vue satellite : rudimentaire, et la vérification la plus rapide qui soit. Tout certificat, dans le registre de l'organisme émetteur, recherché par numéro. Et l'historique d'exportation lorsque votre pays publie ses données commerciales."
+      },
+      {
+        "question": "Que demander à voir lors d'un appel vidéo ?",
+        "answer": "Trois choses précises plutôt qu'une visite guidée. L'outillage du modèle que vous achetez, une matrice portant une référence : c'est la chose la plus difficile à simuler. La ligne qui produit ce modèle, avec une pièce finie tenue à côté de la machine. Et le poste de contrôle qualité et ce qui s'y trouve. Demandez-le en direct plutôt qu'en fichier vidéo."
+      },
+      {
+        "question": "Un échantillon suffit-il avant une grosse commande ?",
+        "answer": "Non. Un échantillon, puis une petite commande, puis le projet, et la petite commande compte davantage, car un échantillon est fait par la meilleure personne disponible et une petite commande est faite comme se font les commandes. Elle vous dit si le colisage correspond à la liste de colisage, si le délai était réel, et si les pièces du milieu du carton correspondent à celles du dessus."
+      },
+      {
+        "question": "Comment Canton Hyland répond-il à ses propres cinq questions ?",
+        "answer": "Nous sommes une usine et, comme toute véritable usine, nous achetons certains composants. Nous ne détenons pas de certificats d'essai pour tout ; les 307 et 311 sont en cours d'essai. Sur 588 fiches HYDE, il existe 84 fichiers SVG cotés, dont 72 sur des fiches visibles, et 0 SVG HYDE de préparation de porte. Plusieurs lacunes de spécification sont décomptées sur leurs propres pages."
+      }
+    ]
+  },
+  "samples-and-incoming-inspection-2026": {
+    "title": "Échantillons et contrôle à réception 2026 : l'échantillon de référence, ce qu'il faut mesurer, et ce qu'un échantillon ne peut pas vous dire",
+    "summary": "Un échantillon est l'endroit le moins coûteux pour découvrir qu'un fournisseur a compris quelque chose autrement que vous ne l'entendiez. Cette page présente les trois types d'échantillons et celui qu'il faut demander, la procédure de l'échantillon de référence qui rend un échantillon opposable au lieu de décoratif, ce qu'il faut mesurer précisément à son arrivée, les trois propriétés qu'un échantillon ne peut réellement pas démontrer, et comment rédiger un référentiel de contrôle qu'un inspecteur tiers peut appliquer sans vous appeler.",
+    "seoTitle": "Échantillons et contrôle à réception 2026",
+    "seoDescription": "Bien utiliser les échantillons de quincaillerie : les trois types, l'échantillon de référence, quoi mesurer, et les trois choses qu'il ne prouve pas.",
+    "body": [
+      "Presque tout problème sérieux sur une commande de quincaillerie importée est un échec de traduction plutôt qu'un échec de fabrication. Deux parties compétentes se sont accordées sur des mots, et ces mots voulaient dire des choses différentes.",
+      "L'échantillon est le seul outil qui le détecte avant que cela ne devienne un conteneur. Il transforme une description en objet, et un objet ne peut pas être compris de deux façons à la fois.",
+      "LES TROIS TYPES D'ÉCHANTILLONS",
+      "L'échantillon de stock est un produit existant pris en rayon. Il montre le modèle, la qualité de finition et la construction générale. Il est rapide et peu coûteux, et c'est ce qu'il faut demander quand vous évaluez un fournisseur plutôt qu'une spécification.",
+      "L'échantillon de présérie est fabriqué selon votre spécification avant le lancement de la série. C'est celui qui compte dès que quelque chose diffère du catalogue (une finition, un axe, une longueur de carré, une boîte imprimée), car il prouve que la spécification a été comprise, et pas seulement reçue.",
+      "L'échantillon de production est prélevé sur la série réelle. Il prouve ce qu'il y a dans les cartons, et c'est par rapport à lui que se fait le contrôle.",
+      "L'erreur courante consiste à traiter un échantillon de stock comme un échantillon de présérie. Un échantillon de stock dans une finition standard ne vous dit rien de la finition spéciale que vous avez commandée, et l'approuver revient à approuver un autre produit.",
+      "L'ÉCHANTILLON DE RÉFÉRENCE",
+      "C'est la procédure qui transforme un échantillon de politesse en instrument, et elle ne coûte presque rien.",
+      "Deux échantillons identiques sont préparés. Les deux sont signés et datés par les deux parties. L'un est scellé et conservé par l'acheteur ; l'autre est scellé et conservé par l'usine. Tous deux portent un numéro de référence qui figure sur le bon de commande.",
+      "À partir de là, « conforme à l'échantillon de référence 2026-0147 » est une ligne de spécification, et un litige sur la finition ou l'ajustement se règle en ouvrant deux boîtes plutôt qu'en échangeant des adjectifs. C'est la mesure de contrôle qualité la plus efficace à la portée d'un acheteur qui ne se trouve pas dans l'usine.",
+      "Conservez le vôtre jusqu'à ce que la commande soit expédiée, reçue et acceptée. Un échantillon de référence jeté après approbation est un échantillon de référence qui n'existe plus au moment où l'on en a besoin.",
+      "CE QU'IL FAUT MESURER À L'ARRIVÉE D'UN ÉCHANTILLON",
+      "Mesurez par rapport au plan, pas au souvenir du plan, et consignez les valeurs relevées plutôt que le seul résultat conforme ou non conforme.",
+      "Pour une serrure : axe, entraxe entre carré et cylindre, longueur et largeur de têtière, dimensions du coffre, section du carré et plage d'épaisseur de porte.",
+      "Pour une béquille : longueur depuis l'axe du carré, saillie par rapport à la face de la porte, emprise de la rosace ou de la plaque, section et centre du carré, et géométrie du retour.",
+      "Pour une paumelle : dimensions des lames, épaisseur, longueur du nœud, diamètre de l'axe, position des trous de fixation et type de fraisure.",
+      "Pour un ferme-porte : dimensions du corps, entraxes de fixation, longueur du bras, et montages que permet le jeu de bras.",
+      "Pour les ferrures pour verre : plage d'épaisseur de verre, ouverture de serrage, et chaque cote de découpe, rayons d'angle compris.",
+      "Pour tous : la finition, par rapport à une référence physique plutôt qu'à une photo ou un code. Comme l'explique notre page sur les codes de finition, un même code chez deux fournisseurs peut donner un résultat visiblement différent.",
+      "LES TROIS CHOSES QU'UN ÉCHANTILLON NE PEUT PAS MONTRER",
+      "Être honnête sur les limites d'un échantillon est ce qui rend le reste de la procédure crédible.",
+      "La constance d'un lot. Un échantillon est un échantillon. Il vous dit ce que l'usine sait faire ; il ne vous dit pas ce qu'elle fera sur cinq mille pièces. C'est le rôle d'un contrôle avec plan d'échantillonnage.",
+      "La résistance à la corrosion. On ne voit pas 240 heures de brouillard salin. Un échantillon parfait et un échantillon qui se tachera dans un an sont indiscernables en main ; c'est pourquoi le grade de corrosion doit venir d'un essai et non d'une impression.",
+      "La durée de vie en cycles. Une serrure qui tourne en douceur à dix cycles ne dit rien de son état à deux cent mille. L'endurance est un résultat d'essai, et un échantillon n'est pas un essai.",
+      "Quiconque vous dit qu'un échantillon règle ces trois points se trompe ou cherche à vendre.",
+      "RÉDIGER UN RÉFÉRENTIEL DE CONTRÔLE QU'UN AUTRE PEUT APPLIQUER",
+      "Si vous faites appel à un inspecteur tiers, la qualité du contrôle dépend entièrement de la qualité de l'instruction, car l'inspecteur ne connaît pas votre bâtiment et ne vous appellera pas depuis l'atelier.",
+      "Citez la référence de l'échantillon de référence. Indiquez les mesures à prendre et la tolérance de chacune : c'est la tolérance qui transforme une mesure en décision. Indiquez le plan d'échantillonnage : combien de cartons ouverts, combien de pièces mesurées, et ce qui constitue un rejet.",
+      "Indiquez ce qui est vérifié en fonctionnement, et combien de fois. « Actionner la serrure » n'est pas une instruction ; « actionner la serrure dix fois et vérifier à chaque fois que le pêne se rétracte complètement et que la béquille revient à l'horizontale » en est une.",
+      "Indiquez les contrôles d'emballage : marquage des cartons, quantité par carton, calage intérieur, et correspondance des dimensions des cartons avec la liste de colisage, car un carton qui n'a pas la taille indiquée sur la liste de colisage ne se chargera pas comme l'expédition a été prévue.",
+      "Et indiquez ce qui se passe en cas de rejet (bloquer l'expédition, recontrôler après reprise, ou accepter avec dérogation), car un inspecteur qui trouve un problème sans instruction ne fera rien, ce qui est la pire des trois issues.",
+      "QUAND PRENDRE L'ÉCHANTILLON",
+      "Tant que la spécification est encore ouverte. C'est le point de calendrier qui influe le plus sur le résultat, et celui qu'on rate le plus souvent.",
+      "Un échantillon pris après le versement de l'acompte et la planification de la série n'a que deux issues possibles : le soulagement ou la dispute. Un échantillon pris tant que la spécification peut encore être modifiée est une conversation, et un malentendu découvert à ce stade coûte un courriel.",
+      "Comme l'explique notre page sur les délais, le compteur de production démarre à la confirmation de commande : échantillonner tôt ne retarde donc pas la commande. Cela déplace le travail vers la période qui, de toute façon, dépend de vous.",
+      "CE QUE NOUS FAISONS",
+      "Nous préparons les échantillons selon une spécification écrite, et nous indiquons sur la fiche d'échantillon selon quelle spécification il a été fabriqué, pour qu'une approbation porte sur quelque chose d'identifiable et non sur un objet dans une boîte.",
+      "Lorsqu'un échantillon diffère du catalogue en quoi que ce soit, nous le disons par écrit avec l'échantillon, au lieu de laisser la différence être découverte. Un fournisseur qui envoie un échantillon discrètement meilleur que la production prévue n'a pas gagné une approbation ; il a fixé une norme qu'il ne tiendra pas, ce qui est pire pour les deux parties qu'un échantillon honnête et une courte conversation."
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce qu'un échantillon de référence ?",
+        "answer": "Deux échantillons identiques, signés et datés par l'acheteur et l'usine, chacun scellé et conservé par une partie, portant un numéro de référence qui figure sur le bon de commande. Dès lors, « conforme à l'échantillon de référence 2026-0147 » est une ligne de spécification, et un litige se règle en ouvrant deux boîtes au lieu d'échanger des adjectifs."
+      },
+      {
+        "question": "Quel type d'échantillon demander ?",
+        "answer": "Un échantillon de stock si vous évaluez un fournisseur. Un échantillon de présérie si quoi que ce soit diffère du catalogue (une finition, un axe, une longueur de carré, une boîte imprimée), car il prouve que la spécification a été comprise. Un échantillon de production prélevé sur la série réelle est celui par rapport auquel se fait le contrôle."
+      },
+      {
+        "question": "Quand prendre un échantillon ?",
+        "answer": "Tant que la spécification est encore ouverte, avant l'acompte. Un échantillon pris après la planification de la série n'a que deux issues possibles : le soulagement ou la dispute. Pris plus tôt, c'est une conversation, et un malentendu découvert à ce stade coûte un courriel. Le compteur de production démarre de toute façon à la confirmation de commande : échantillonner tôt ne retarde rien."
+      },
+      {
+        "question": "Que ne peut pas me dire un échantillon ?",
+        "answer": "Trois choses. La constance d'un lot : un échantillon montre ce que l'usine sait faire, pas ce qu'elle fera sur cinq mille pièces. La résistance à la corrosion : on ne voit pas 240 heures de brouillard salin. Et la durée de vie en cycles : une serrure qui tourne en douceur à dix cycles ne dit rien de deux cent mille. Les trois demandent des essais, pas des impressions."
+      },
+      {
+        "question": "Que mesurer sur un échantillon de serrure ?",
+        "answer": "L'axe, l'entraxe entre carré et cylindre, la longueur et la largeur de têtière, les dimensions du coffre, la section du carré et la plage d'épaisseur de porte, par rapport au plan et non au souvenir du plan, en consignant les valeurs relevées plutôt que le seul résultat conforme ou non conforme. Vérifiez la finition par rapport à une référence physique, pas à un code ou une photo."
+      },
+      {
+        "question": "Comment rédiger une instruction de contrôle utilisable par un tiers ?",
+        "answer": "Citez la référence de l'échantillon de référence. Indiquez chaque mesure avec sa tolérance, car c'est la tolérance qui transforme une mesure en décision. Indiquez le plan d'échantillonnage et ce qui constitue un rejet. Rendez les contrôles fonctionnels précis et dénombrables. Incluez les contrôles d'emballage et de dimensions des cartons. Et indiquez ce qui se passe en cas de rejet, sinon l'inspecteur ne fera rien."
+      }
+    ]
+  },
+  "specification-section-08-71-00-2026": {
+    "title": "Rédiger la section 08 71 00 de quincaillerie de porte en 2026 : les trois parties, ce qui va dans chacune, et les clauses qui coûtent de l'argent",
+    "summary": "Une prescription de quincaillerie de porte est un document en trois parties à la forme fixe, et l'essentiel de l'argent perdu sur un lot de quincaillerie l'est en plaçant la bonne phrase dans la mauvaise partie. Cette page indique ce qui va dans la partie 1, la partie 2 et la partie 3, montre comment rédiger un ensemble de quincaillerie qu'une usine peut chiffrer sans téléphoner, et nomme les quatre clauses qui décident discrètement du prix.",
+    "seoTitle": "Prescription de quincaillerie 08 71 00 (2026)",
+    "seoDescription": "Structure d'une prescription de quincaillerie : parties 1, 2 et 3, un ensemble qu'une usine peut chiffrer, et les quatre clauses qui fixent le prix.",
+    "body": [
+      "Dans MasterFormat, la quincaillerie de porte est la section 08 71 00, et cette section a une forme fixe en trois parties que chaque prescripteur, entreprise et fournisseur lit dans le même ordre. Connaître cette forme n'a rien de pédant : c'est la différence entre un lot qui se chiffre et un lot qui déclenche quatre séries de questions.",
+      "La règle qui explique la plupart des erreurs : la partie 1, ce sont les obligations ; la partie 2, les produits ; la partie 3, ce qui se passe sur le chantier. Une phrase dans la mauvaise partie est soit ignorée, soit chiffrée deux fois.",
+      "## Ce qui va dans chaque partie",
+      "| Partie | Contient | Exemples |\n| --- | --- | --- |\n| 1 : Généralités | Obligations, références, soumissions, garantie, processus de combinaison | « Soumettre un plan de combinaison pour approbation avant la taille », « Respecter EN 1634-1 lorsque c'est prévu au tableau » |\n| 2 : Produits | Les produits eux-mêmes, par type et par performance | Béquilles, ferme-portes, paumelles, finitions, ensembles de quincaillerie |\n| 3 : Exécution | Pose, hauteurs de montage, réglage, remise | « Poser les béquilles à 1050 mm (41-3/8\") au-dessus du sol fini », « Régler les ferme-portes après l'équilibrage CVC » |",
+      "Les deux erreurs de placement les plus courantes méritent d'être nommées. Une clause de garantie écrite dans la partie 2 s'attache à un produit plutôt qu'au lot. Et une hauteur de montage écrite dans la partie 2 arrive avec la documentation produit plutôt qu'avec le poseur, qui est la seule personne qui en avait besoin.",
+      "## Partie 1 : les quatre clauses qui décident du prix",
+      "Ce sont celles qui semblent de pure procédure et ne le sont pas.",
+      "Procédure de substitution : les substitutions sont-elles permises, quelles preuves sont exigées, et dans quel délai. Une section muette sur ce point reçoit quand même des substitutions, décidées par celui qui subit la plus forte pression sur les coûts. Notre page sur les dossiers de soumission indique ce que doit contenir une demande de substitution pour pouvoir être évaluée.",
+      "Combinaison : qui est responsable de l'organigramme de clés, qui peut autoriser une taille, et si le registre est un livrable. Cette clause décide si le bâtiment disposera dans dix ans d'un organigramme documenté ou d'un problème d'archéologie. Elle ne coûte rien à écrire et ne peut pas être ajoutée plus tard.",
+      "Preuves d'essai : quels certificats sont exigés, selon quelle norme, et s'ils sont exigés à l'appel d'offres ou à la soumission. Les exiger à l'appel d'offres réduit les soumissionnaires à ceux qui détiennent les preuves ; les exiger à la soumission, c'est le découvrir une fois le prix fixé, et c'est de là que vient la pression pour accepter une affirmation commerciale.",
+      "Garantie : durée, couverture, et survie à un changement de propriétaire du bâtiment. « Garantie standard du fabricant » n'est pas une condition ; c'est l'engagement d'accepter ce que ce standard se révélera être.",
+      "## Partie 2 : comment rédiger un ensemble de quincaillerie",
+      "L'ensemble de quincaillerie est l'unité que chiffre une usine. Il doit être rédigé de façon que quelqu'un qui n'a jamais vu le bâtiment puisse le chiffrer.",
+      "Numérotez l'ensemble, listez chaque article avec quantité, fabricant, référence catalogue, code de finition et fonction, et indiquez les baies auxquelles l'ensemble s'applique. Le tableau associe ensuite les baies aux numéros d'ensemble au lieu de répéter les articles.",
+      "Les quatre valeurs que l'on omet, par ordre de coût : le code de finition (un nom n'est pas un code), la fonction (une description n'est pas une fonction), la main avec sa convention nommée, et l'épaisseur de porte et l'axe pour tout ce qui est mortaisé ou percé.",
+      "Écrivez les exigences de performance à côté du produit qu'elles encadrent, pas dans un paragraphe général. « Grade 1 » en tête de la partie 2 et une béquille en bas de page laissent planer le doute sur l'inclusion de la béquille.",
+      "## Prescription par performance ou prescription par marque",
+      "Deux approches légitimes, et c'est en les mélangeant mal que les sections dérapent.",
+      "Une prescription par marque nomme des fabricants et des références catalogue. Elle est précise et elle restreint le choix, ce qui peut être exactement l'intention.",
+      "Une prescription par performance énonce ce que le produit doit atteindre (un grade d'endurance, une classe de corrosion, une classification au feu, un effort d'ouverture maximal) et laisse concourir tout produit qui y satisfait de façon démontrable.",
+      "L'hybride courant, « Fabricant X modèle Y, ou équivalent approuvé », n'est utile que si la section dit aussi ce que signifie équivalent. Sinon, l'« équivalent » se décide pendant l'optimisation des coûts en comparant les caractéristiques communes plutôt que les différences, ce qui est le mode de défaillance décrit dans notre page sur les dossiers de soumission.",
+      "L'hybride plus solide nomme le produit et les deux ou trois propriétés qui l'ont fait choisir. Un produit de substitution peut alors être évalué par rapport à quelque chose.",
+      "## Partie 3 : les clauses dont les poseurs ont réellement besoin",
+      "Les hauteurs de montage, indiquées une fois, avec leurs unités. Quand un axe de béquille est prescrit, donnez-le dans les unités du chantier et précisez la référence : au-dessus du sol fini est l'usage, et « fini » compte lorsqu'une chape ou une moquette reste à poser.",
+      "L'ordre des réglages. Les ferme-portes doivent être réglés après l'équilibrage du traitement d'air du bâtiment, car la pression d'air modifie l'effort nécessaire à une porte. Un ferme-porte parfaitement réglé dans un bâtiment non pressurisé est un ferme-porte dont on se plaindra.",
+      "L'instruction sur les portes coupe-feu. Qu'aucun composant d'un ensemble classé au feu ne peut être substitué ni percé au-delà de la configuration essayée, et que toute variante exige une preuve.",
+      "La remise. Le registre des clés, les notices d'utilisation, et la liste de ce qui a réellement été posé face à ce qui était prévu au tableau, car ces deux listes diffèrent sur chaque projet et l'écart mérite d'être consigné tant que quelqu'un se souvient encore pourquoi.",
+      "## La clause de références, et comment citer une norme pour qu'elle engage",
+      "La partie 1 liste les normes sur lesquelles s'appuie la section, et une clause de références négligée est la façon la plus courante dont une prescription devient inapplicable sans que personne ne s'en aperçoive.",
+      "Citez la norme par sa désignation complète, et dites quelle partie ou quelle classification est exigée. « Respecter EN 1935 » n'est pas une exigence : EN 1935 classe les paumelles selon huit champs, et une paumelle de n'importe quel grade y est conforme. « EN 1935 grade 13, grade de corrosion 4, apte aux portes coupe-feu » est une exigence, car un produit y satisfait ou non.",
+      "Dites si vous visez la norme telle que publiée ou telle qu'amendée. Une référence datée fige l'exigence sur un texte connu ; une référence non datée évolue avec la norme, ce qui convient généralement à un long projet, et parfois non.",
+      "Ne citez pas une norme que vous n'allez pas vérifier. Une section qui cite onze normes et ne reçoit de preuve pour aucune a appris à la chaîne d'approvisionnement que la liste des références est décorative, et cette leçon vaut aussi pour les normes qui comptaient.",
+      "Et ne citez pas une norme du mauvais marché. EN 1634-1 et UL 10C essaient des choses qui se recoupent sans être identiques, comme l'explique notre page sur les portes coupe-feu, et une section qui cite les deux sans dire laquelle prévaut a demandé quelque chose qu'aucun produit ne détient.",
+      "## Les hauteurs de montage, et la référence qui les décide",
+      "Les hauteurs vont dans la partie 3, car c'est le poseur qui la lit. Deux choses doivent être indiquées : le chiffre, et ce à partir de quoi il se mesure.",
+      "C'est la référence qui pose problème. « Au-dessus du sol fini » signifie au-dessus du sol tel qu'il existera finalement, après la chape, après le carrelage, après la moquette. Sur un projet où la quincaillerie est posée avant le revêtement de sol, une hauteur prise depuis la dalle est fausse de l'épaisseur de ce qui arrivera plus tard, et elle l'est uniformément sur toutes les portes du bâtiment.",
+      "L'usage courant place l'axe d'une béquille autour de 1050 mm (41-3/8\") au-dessus du sol fini, les barres de poussée des fermetures anti-panique et les poignées de tirage se situant dans une plage d'environ 900 mm (35-7/16\") à 1100 mm (43-5/16\") selon le dispositif et la juridiction. Prenez ces valeurs comme un point de départ, pas comme une exigence : les règles d'accessibilité fixent les chiffres qui s'imposent et elles varient d'un pays à l'autre ; confirmez donc le chiffre applicable au bâtiment avant de l'écrire.",
+      "Lorsqu'un projet est soumis à une norme d'accessibilité, citez-la dans la partie 1 et reprenez la hauteur qui en découle dans la partie 3. Le poseur travaille à partir de la partie 3 et ne lira pas la liste des références, et c'est la liste des références qui rend la hauteur défendable.",
+      "## Les révisions, et la seule habitude qui évite les pires disputes",
+      "Une section de quincaillerie est révisée : par addendum à l'appel d'offres, par instruction pendant les travaux, et par substitution après attribution. Chaque révision est une occasion pour deux parties de se retrouver avec des documents différents.",
+      "Donnez à chaque émission un numéro de révision et une date, placez-les dans l'en-tête du tableau aussi bien que dans la section, et indiquez dans la partie 1 que seule la dernière émission fait foi. Cela ressemble à de la bureaucratie, et c'est la prévention des litiges la moins coûteuse de tout le lot.",
+      "La dispute qu'elle évite est précise et fréquente : un ensemble modifié par addendum, l'addendum parvenu à l'entreprise mais pas au fournisseur, et quarante baies livrées selon l'ensemble périmé. Personne dans cette chaîne n'a rien fait de déraisonnable, et le coût retombe sur celui qui ne peut pas prouver sur quelle émission il travaillait.",
+      "Conservez les émissions périmées au lieu de les écraser. Quand la question arrivera dix-huit mois plus tard de savoir pourquoi une baie porte la quincaillerie qu'elle porte, la réponse se trouvera dans la version en vigueur au moment de la commande.",
+      "## Ce qu'il nous faut pour chiffrer une section sans poser de questions",
+      "Les ensembles de quincaillerie, avec les quatre valeurs ci-dessus pour chaque ligne. Le tableau des baies qui associe ensembles et portes. Les codes de finition. Les baies coupe-feu, signalées comme telles. Et les types et épaisseurs de porte, car une serrure adaptée à un vantail bois de 45 mm peut ne pas convenir à une porte métallique creuse de 45 mm.",
+      "Avec cela, un devis revient sous forme de devis. Sans cela, il revient sous forme de liste de questions, et chaque aller-retour prend généralement une semaine, c'est pourquoi cette section mérite l'heure qu'il faut pour bien la rédiger.",
+      "Lorsque notre catalogue ne peut pas satisfaire une clause, nous disons laquelle plutôt que de chiffrer en la contournant. Un fournisseur qui chiffre une prescription par performance sans détenir les preuves n'a pas remporté le lot ; il a reporté la discussion au stade de la soumission, où elle coûte plus cher à tout le monde."
+    ],
+    "faq": [
+      {
+        "question": "Que met-on dans les parties 1, 2 et 3 d'une prescription de quincaillerie ?",
+        "answer": "La partie 1 contient les obligations, les références, les soumissions, la garantie et le processus de combinaison. La partie 2, les produits eux-mêmes, par type et par performance, y compris les ensembles de quincaillerie. La partie 3, ce qui se passe sur le chantier : pose, hauteurs de montage, ordre des réglages et remise. Une phrase dans la mauvaise partie est soit ignorée, soit chiffrée deux fois."
+      },
+      {
+        "question": "Quelles clauses décident réellement du prix ?",
+        "answer": "Quatre, et toutes semblent de pure procédure. La procédure de substitution, la clause de combinaison, le moment où les preuves d'essai sont exigées (à l'appel d'offres ou à la soumission) et les conditions de garantie. « Garantie standard du fabricant » n'est pas une condition ; c'est l'engagement d'accepter ce que ce standard se révélera être."
+      },
+      {
+        "question": "Comment rédiger un ensemble de quincaillerie ?",
+        "answer": "De façon que quelqu'un qui n'a jamais vu le bâtiment puisse le chiffrer : un numéro d'ensemble, chaque article avec quantité, fabricant, référence catalogue, code de finition et fonction, et les baies auxquelles l'ensemble s'applique. Le tableau associe ensuite les baies aux numéros d'ensemble au lieu de répéter les articles."
+      },
+      {
+        "question": "« Ou équivalent approuvé » suffit-il ?",
+        "answer": "Seulement si la section dit aussi ce que signifie équivalent. Sinon, l'« équivalent » se décide pendant l'optimisation des coûts en comparant les caractéristiques que deux produits partagent plutôt que leurs différences. La forme plus solide nomme le produit et les deux ou trois propriétés qui l'ont fait choisir, pour qu'un produit de substitution puisse être évalué par rapport à quelque chose."
+      },
+      {
+        "question": "Quand faut-il régler les ferme-portes ?",
+        "answer": "Après l'équilibrage du traitement d'air du bâtiment. La pression d'air modifie l'effort nécessaire à une porte : un ferme-porte parfaitement réglé dans un bâtiment non pressurisé est un ferme-porte dont on se plaindra plus tard. Cet ordre des opérations a sa place dans la partie 3, là où le poseur le lit."
+      },
+      {
+        "question": "Que vous faut-il pour chiffrer une prescription sans poser de questions ?",
+        "answer": "Les ensembles de quincaillerie avec code de finition, fonction, main et épaisseur pour chaque ligne ; le tableau des baies qui associe ensembles et portes ; les baies coupe-feu signalées comme telles ; et les types et épaisseurs de porte, car une serrure adaptée à un vantail bois de 45 mm peut ne pas convenir à une porte métallique creuse de 45 mm."
+      }
+    ]
+  },
+  "spindle-sizes-and-length-2026": {
+    "title": "Carrés de béquille 2026 : carrés de 8 et 9 mm, carrés fendus, et comment calculer la longueur",
+    "summary": "Le carré est la pièce la moins chère d'un ensemble de béquilles, et celle qui rend le plus souvent une livraison inutilisable. Trois chiffres décident si une béquille actionnera une serrure : la section du carré, sa longueur, et s'il est plein ou fendu. Cette page présente les trois, donne la formule de longueur, et montre ce que publie réellement notre catalogue.",
+    "seoTitle": "Carrés de béquille 2026 : 8 mm, 9 mm, longueur",
+    "seoDescription": "Sections de carré de béquille de 8 et 9 mm, carré plein ou fendu, calcul de la longueur selon l'épaisseur de porte et de rosace, et cote d'axe du carré.",
+    "body": [
+      "Un carré est une barre de section carrée, généralement de moins de 100 mm de long, qui coûte une fraction de la béquille qu'il entraîne. C'est aussi le composant qui risque le plus d'arriver avec la mauvaise spécification, car c'est la pièce qui relie deux éléments qu'un acheteur commande souvent séparément : la béquille et la serrure.",
+      "Trois chiffres décident si un ensemble de béquilles fonctionnera : la section, la longueur et le type.",
+      "LA SECTION DU CARRÉ",
+      "La section du carré s'indique par un seul chiffre, puisqu'elle est carrée. Les deux sections qui comptent en quincaillerie de porte tertiaire sont 8 mm et 9 mm.",
+      "Le 8 mm (environ 5/16\") est la convention européenne et la section dominante dans le monde pour les béquilles sur serrures à mortaiser et tubulaires. Si une prescription ne dit rien, le 8 mm est l'hypothèse sûre sur la plupart des marchés.",
+      "Le 9 mm (environ 3/8\") se rencontre sur des gammes renforcées et certaines gammes régionales, où la section plus forte donne une meilleure résistance à la torsion. Il n'est interchangeable avec le 8 mm dans aucun sens : un carré de 9 mm n'entre pas dans un fouillot de 8 mm, et un carré de 8 mm dans un fouillot de 9 mm garde un millimètre de jeu qui devient un claquement, puis un angle arrondi.",
+      "Certaines gammes sont livrées pour accepter l'un ou l'autre, et dans ce cas la fiche produit indique les deux, par exemple « carré : 8×8mm ou 9×9mm ». C'est une option de fourniture, pas une tolérance. La béquille est fabriquée pour l'un des deux et livrée avec lui.",
+      "Le trou correspondant dans la serrure est le fouillot. Fouillot et carré doivent avoir la même section, et le fouillot appartient à la serrure, pas à la béquille. C'est pourquoi un acheteur qui commande ses béquilles chez un fournisseur et ses serrures chez un autre doit indiquer la section du carré aux deux.",
+      "CARRÉ PLEIN OU CARRÉ FENDU",
+      "Un carré plein est une seule barre qui traverse la serrure : les deux béquilles sont liées mécaniquement. On en tourne une, l'autre tourne.",
+      "Un carré fendu est composé de deux demi-barres qui se rejoignent dans la serrure sans s'entraîner l'une l'autre : chaque béquille fonctionne de façon indépendante. C'est ce qui rend possible une fonction d'un seul côté : la béquille intérieure rétracte toujours le pêne tandis que la béquille extérieure est condamnée, disposition qui est à la base de la plupart des fonctions d'entrée.",
+      "Commander un carré plein pour une serrure conçue autour d'un carré fendu annule complètement la fonction de la serrure : la béquille extérieure actionnera le pêne, qu'elle soit censée le faire ou non. C'est une défaillance qui passe tous les contrôles visuels et qu'on ne découvre qu'en essayant la porte.",
+      "COMMENT CALCULER LA LONGUEUR",
+      "Le carré doit traverser tout l'ensemble et laisser un engagement suffisant dans les deux béquilles. La formule de travail est l'épaisseur de la porte, plus l'épaisseur des deux rosaces ou plaques, plus l'engagement dont chaque béquille a besoin dans son moyeu.",
+      "Pour un cas courant (une porte de 40 mm, soit 1-9/16\", avec des rosaces peu épaisses), on arrive près des 60 mm (2-3/8\") que nous publions comme longueur de carré sur les modèles qui en indiquent une.",
+      "Une porte plus épaisse demande un carré plus long, et c'est la raison la plus fréquente pour laquelle une livraison de béquilles ne peut pas être posée. Sur une porte de 45 ou 50 mm avec un carré coupé pour 40 mm, il reste trop peu de barre dans la béquille extérieure ; la béquille prend du jeu, la vis pointeau mord sur la partie conique au lieu du plat, et l'assemblage finit par s'arrondir.",
+      "Un carré trop long est un problème moindre, mais c'en est un : il dépasse de la béquille, il peut frotter contre la rosace, et il ne se raccourcit pas proprement sur place sans scie et sans lime.",
+      "Certaines gammes sont livrées avec une longueur de carré ajustée à l'épaisseur de porte. Quand une fiche produit l'indique, le carré est coupé ou réglé selon l'épaisseur de porte que vous précisez, ce qui veut dire que l'épaisseur de porte doit figurer sur la commande.",
+      "L'AXE DU CARRÉ",
+      "Indépendamment du carré lui-même, certains produits publient une cote d'axe du carré, notée P= sur les plans. C'est la distance entre une référence (généralement l'axe de fixation ou le bord d'une plaque) et l'axe du carré.",
+      "Notre catalogue publie à la fois P=25mm (environ 1\") et P=34mm (environ 1-5/16\") selon les modèles. Ce chiffre compte parce qu'il positionne la béquille par rapport aux trous de fixation, et une plaque dont la cote P ne concorde pas avec celle de la serrure est une plaque qu'on ne peut pas visser avec la béquille centrée sur le fouillot.",
+      "C'est l'une des cotes qui doivent venir d'un plan plutôt que d'une description. Deux béquilles identiques en photo peuvent avoir des cotes P différentes, et l'écart ne se voit qu'une fois les deux présentées contre la même porte.",
+      "LE MATÉRIAU, ET POURQUOI CE N'EST PAS UN DÉTAIL",
+      "Un carré transmet tout le couple d'une béquille par la plus petite section de l'ensemble. Une barre tendre ou sous-dimensionnée se tord avant la serrure, défaillance bon marché à un endroit difficile d'accès.",
+      "Nos fiches indiquent le matériau du carré lorsqu'un modèle le publie : sur un modèle, du fer. Lorsqu'un carré est livré dans un autre matériau ou un autre état métallurgique, la fiche produit le dit au lieu de laisser le lecteur le supposer.",
+      "CE QUE NOUS PUBLIONS",
+      "Dans l'ensemble du catalogue, les sections de carré publiées sont de 8 mm sur la plupart des modèles de béquilles et de 9 mm sur un seul, certaines gammes étant indiquées comme acceptant 8×8mm ou 9×9mm. La longueur de carré est publiée lorsqu'un modèle en indique une : 60 mm sur le modèle concerné. L'axe du carré apparaît sous la forme P=25mm ou P=34mm sur les modèles dont les plans le donnent.",
+      "Lorsqu'un modèle ne publie pas de valeur de carré, la ligne est absente au lieu d'être remplie par une valeur type. Le carré est la pièce la moins chère à bien spécifier dans une commande et l'une des plus coûteuses à mal spécifier, car un conteneur de béquilles qui ne s'adaptent pas aux serrures n'est pas un problème partiel.",
+      "LES TROIS LIGNES À METTRE SUR UNE COMMANDE",
+      "La section du carré, en millimètres. Le type de carré, plein ou fendu. L'épaisseur de la porte, en millimètres, pour que la longueur puisse être confirmée par rapport à elle.",
+      "Ces trois lignes ne coûtent rien à écrire et suppriment toute la catégorie de défaillances décrite dans cette page. Si vous commandez béquilles et serrures chez des fournisseurs différents, envoyez les trois aux deux."
+    ],
+    "faq": [
+      {
+        "question": "Quelle section de carré utilisent les béquilles de porte ?",
+        "answer": "Le 8 mm (environ 5/16\") est la convention européenne et la section dominante dans le monde pour les béquilles. Le 9 mm (environ 3/8\") se rencontre sur des gammes renforcées et certaines gammes régionales. Ils ne sont pas interchangeables : un carré de 9 mm n'entre pas dans un fouillot de 8 mm, et un carré de 8 mm dans un fouillot de 9 mm claque, puis s'arrondit."
+      },
+      {
+        "question": "Quelle différence entre un carré plein et un carré fendu ?",
+        "answer": "Un carré plein est une seule barre qui lie les deux béquilles : en tourner une fait tourner l'autre. Un carré fendu est composé de deux demi-barres qui ne s'entraînent pas dans la serrure : chaque béquille fonctionne de façon indépendante. C'est le carré fendu qui permet à la béquille intérieure de toujours rétracter le pêne pendant que l'extérieure est condamnée."
+      },
+      {
+        "question": "Quelle longueur doit avoir un carré ?",
+        "answer": "L'épaisseur de la porte plus l'épaisseur des deux rosaces ou plaques plus l'engagement dont chaque béquille a besoin dans son moyeu. Pour une porte de 40 mm (1-9/16\") avec des rosaces peu épaisses, on arrive près de 60 mm (2-3/8\"). Une porte plus épaisse demande un carré plus long, et c'est la raison la plus fréquente pour laquelle une livraison de béquilles ne peut pas être posée."
+      },
+      {
+        "question": "Que signifie P= sur un plan de béquille ?",
+        "answer": "C'est l'axe du carré : la distance entre une référence, généralement l'axe de fixation ou le bord de la plaque, et l'axe du carré. Notre catalogue publie P=25mm (environ 1\") et P=34mm (environ 1-5/16\") selon les modèles. Une plaque dont la cote P ne concorde pas avec la serrure ne peut pas être vissée avec la béquille centrée sur le fouillot."
+      },
+      {
+        "question": "Que se passe-t-il si je pose un carré plein sur une serrure conçue pour un carré fendu ?",
+        "answer": "La fonction de la serrure est annulée. La béquille extérieure rétractera le pêne, qu'elle soit censée être condamnée ou non. Cela passe tous les contrôles visuels et ne se découvre qu'en essayant la porte ; c'est pourquoi le type de carré doit figurer sur la commande au lieu d'être supposé."
+      },
+      {
+        "question": "Quelles trois informations mettre sur une commande de béquilles ?",
+        "answer": "La section du carré en millimètres, le type de carré (plein ou fendu) et l'épaisseur de la porte en millimètres, pour que la longueur puisse être confirmée. Si vous achetez béquilles et serrures chez des fournisseurs différents, envoyez les trois aux deux : le fouillot appartient à la serrure, pas à la béquille."
+      }
+    ]
+  },
+  "stainless-grade-selection-201-304-316-2026": {
+    "title": "Choisir la nuance d'inox 2026 : 201, 304 ou 316, ce que coûte chacune, et pourquoi « 304/201 » sur une fiche technique est le vrai problème",
+    "summary": "Les nuances 201, 304 et 316 sont identiques en main et se comportent très différemment sur un bâtiment. Cette page explique ce qui les distingue chimiquement, où chacune a sa place, quel est réellement l'écart de coût, puis fait la partie inconfortable : compter combien de nos 313 produits en inox nomment une nuance, et expliquer pourquoi une prescription qui dit « 304/201 » n'a répondu à rien.",
+    "seoTitle": "Inox 201, 304 ou 316 (2026) : choix et coût",
+    "seoDescription": "En quoi les inox 201, 304 et 316 diffèrent en chimie et en service, où chacun a sa place, l'écart de coût, et pourquoi « 304/201 » ne répond à rien.",
+    "body": [
+      "Trois nuances couvrent presque toute la quincaillerie de porte en inox. Elles sont indiscernables pour un acheteur qui tient deux échantillons, et la différence apparaît dix-huit mois plus tard sur un bâtiment où personne ne retourne facilement.",
+      "C'est cet écart (identiques sur le bureau, différentes sur le mur) qui justifie d'être précis, et qui explique pourquoi le flou d'un fournisseur coûte plus cher ici que n'importe où ailleurs dans un catalogue.",
+      "## Ce qui les distingue réellement",
+      "Les trois sont des aciers inoxydables austénitiques. Les différences tiennent à ce qui assure la résistance à la corrosion, et à ce qui a été substitué pour rendre l'alliage moins cher.",
+      "| Nuance | Éléments d'alliage clés | Comportement à la corrosion | Magnétique ? |\n| --- | --- | --- | --- |\n| 201 | Chrome, peu de nickel, manganèse et azote substitués au nickel | Suffisant à l'intérieur et au sec ; piqûres précoces en présence de chlorures | Souvent légèrement magnétique, surtout après formage |\n| 304 | Chrome ~18 %, nickel ~8 % | La nuance architecturale polyvalente ; bonne en extérieur loin des côtes | Amagnétique à l'état recuit ; peut devenir légèrement magnétique après écrouissage |\n| 316 | 304 plus molybdène ~2 % | Le molybdène résiste spécifiquement à la corrosion par piqûres due aux chlorures | Comme le 304 |",
+      "La phrase qui porte l'essentiel de la différence pratique : c'est le molybdène qui résiste aux chlorures. C'est pourquoi le 316 est la nuance des bords de mer et des piscines et le 304 ne l'est pas, et ce n'est pas une distinction commerciale : c'est un mécanisme chimique précis contre une attaque précise.",
+      "Le cas du 201 est différent. Le nickel est l'élément coûteux, et le 201 en remplace une partie par du manganèse et de l'azote. Le résultat se comporte correctement en intérieur sec et se dégrade nettement plus vite partout où il y a des chlorures, de l'humidité ou de la pollution.",
+      "## Où chacune a sa place",
+      "201 : portes intérieures de bâtiments secs et climatisés ; zones de service ; quincaillerie de meubles et d'agencement ; partout où l'écart de coût compte et où l'environnement est bénin. Ce n'est pas une nuance frauduleuse ; c'est un matériau légitime, beaucoup trop souvent employé hors de son domaine.",
+      "304 : la nuance par défaut de la quincaillerie architecturale. Entrées, portes extérieures loin des côtes, la plupart des prescriptions tertiaires. Si une prescription dit « inox » et vise une seule chose, c'est celle-ci.",
+      "316 : sites côtiers, piscines et leurs locaux techniques, atmosphères industrielles, partout où l'on utilise du sel de déneigement, et toute baie extérieure que le propriétaire ne nettoiera pas. Notre page sur la corrosion explique pourquoi un emplacement abrité en bord de mer peut être pire qu'un emplacement exposé.",
+      "## La question du coût, sans détour",
+      "L'échelle des prix suit le nickel et le molybdène, et les écarts ne sont pas symétriques. Passer du 201 au 304 représente une vraie économie ; passer du 304 au 316 coûte moins cher que la plupart des gens ne le pensent une fois la pièce finie et emballée, car sur de la petite quincaillerie la matière première ne représente qu'une minorité du coût livré.",
+      "Cette asymétrie mérite d'être connue, car elle change la décision. Choisir le 201 plutôt que le 304 pour économiser est un vrai arbitrage avec un vrai risque. Choisir le 304 plutôt que le 316 sur un projet côtier pour économiser revient généralement à échanger un gros coût futur contre un petit coût présent : le métal ne pèse qu'une fraction du prix d'une béquille usinée, polie, revêtue, emballée et expédiée.",
+      "Personne ne devrait retenir un pourcentage précis d'une page web, la nôtre comprise, car il suit le marché du nickel. Demandez l'écart sur votre commande réelle ; c'est un chiffre réel que votre fournisseur peut produire dans la semaine.",
+      "## Pourquoi « 304/201 » sur une prescription est le vrai problème",
+      "Voici la partie de cette page qui compte le plus, et elle porte sur la façon d'écrire les nuances plutôt que sur la métallurgie.",
+      "Une ligne de spécification indiquant « Acier inoxydable 304/201 » ne désigne pas un alliage. Elle signifie que l'usine fournira l'une de ces deux nuances, que l'acheteur ne saura pas laquelle, et qu'il ne pourra pas le voir.",
+      "Pour une porte de bureau intérieure, cela peut être tout à fait acceptable. Pour une porte extérieure sur un site côtier, c'est tout le risque, écrit sous une forme qui ressemble à une spécification. Les deux nuances sont visuellement identiques ; la différence apparaît sous forme de piqûres après le premier hiver.",
+      "Quand vous voyez deux nuances séparées par une barre oblique, traitez-les donc comme une question sans réponse plutôt que comme une spécification. La réponse utile tient en une ligne : « quelle nuance sera livrée sur cette commande, et peut-elle être indiquée sur la facture ? »",
+      "## La nuance n'est pas la finition, et la finition ne rachète pas la nuance",
+      "Une idée reçue mérite d'être démontée : une bonne finition compenserait une nuance inférieure. Ce n'est pas le cas, et comprendre pourquoi simplifie plusieurs autres décisions.",
+      "L'inox résiste à la corrosion parce que le chrome forme une fine couche d'oxyde passive qui se reforme chaque fois qu'elle est endommagée, à condition que l'oxygène atteigne la surface. C'est une propriété du métal, continue dans toute la section, pas un revêtement.",
+      "Une finition satinée, miroir ou brossée modifie la texture de surface, et donc la facilité avec laquelle les dépôts s'y accrochent : une finition miroir retient moins la saleté qu'un brossé grossier, différence réelle et utile. Ce qu'elle ne fait pas, c'est ajouter une résistance à la corrosion que l'alliage n'a pas. Du 201 poli reste du 201.",
+      "Un revêtement PVD ou galvanique sur inox est encore autre chose : c'est un revêtement, avec sa propre usure et sa propre adhérence, et là où il est usé ou entaillé, c'est le métal dessous qui travaille. Si ce métal est du 201 sur une porte en bord de mer, le revêtement a retardé le problème, il ne l'a pas résolu.",
+      "Prescrivez donc la nuance pour l'environnement, et la finition pour l'aspect et le régime de nettoyage. Ce sont deux décisions, et aucune ne remplace l'autre.",
+      "## Les quatre choses qui abîment réellement l'inox sur un bâtiment",
+      "Les chlorures : traités ci-dessus, et c'est l'essentiel. Ils attaquent localement la couche passive et produisent des piqûres, petites, profondes et bien plus difficiles à repérer tôt qu'une rouille généralisée.",
+      "La contamination ferreuse : du fer libre déposé sur une surface en inox rouille, et cette rouille ressemble exactement à une défaillance de l'inox. Elle vient des étincelles de meulage pendant les travaux, de la laine d'acier utilisée pour nettoyer, des fixations en acier au carbone et des outils. L'inox dessous va généralement bien ; le remède est un nettoyage et une passivation, pas un remplacement. C'est la fausse alerte la plus fréquente de la première année d'un bâtiment.",
+      "Le tea staining : une coloration brune de surface fréquente sur l'inox en bord de mer, généralement esthétique plutôt que structurelle. Elle est fortement liée à la rugosité de surface et à l'absence de rinçage, c'est pourquoi elle apparaît d'abord sur les surfaces abritées que la pluie ne lave jamais.",
+      "Les dommages mécaniques : rayures et chocs rompent la couche passive, qui se reforme, mais une rayure qui retient saleté ou chlorures se reforme plus lentement, et les rayures profondes en milieu côtier deviennent des sites d'amorçage de piqûres.",
+      "Trois de ces quatre causes concernent ce qui se passe après la pose ; c'est pourquoi notre page sur la corrosion soutient qu'un plan d'entretien fait partie de la spécification du matériau, et n'en est pas un complément accessoire.",
+      "## Le test à l'aimant, et pourquoi il prouve moins qu'on ne le croit",
+      "Le test courant sur chantier consiste à approcher un aimant de la pièce : s'il colle, dit la théorie, c'est du 201 ; sinon, c'est du 304.",
+      "Prenez-le comme un indice, jamais comme un résultat. Le 304 recuit est pratiquement amagnétique, mais l'écrouissage (étirage, emboutissage, formage d'une béquille) le rend mesurablement magnétique, et beaucoup de quincaillerie en véritable 304 réagit à l'aimant sur une arête formée. Le 201 est souvent légèrement magnétique : le test donne donc des faux positifs dans les deux sens, précisément sur les pièces dont est faite la quincaillerie.",
+      "Il ne permet pas non plus de distinguer le 304 du 316, et c'est généralement la question la plus coûteuse.",
+      "Si la nuance compte vraiment, la réponse est documentaire ou analytique : un certificat matière de l'aciérie, ou un analyseur portable sur la pièce. Notre page sur la traçabilité des matériaux explique ce que doit contenir un certificat pour être une preuve et non une lettre.",
+      "## Ce que dit notre propre catalogue, en chiffres",
+      "Nous devons nous appliquer cette exigence avant de la demander à qui que ce soit. Décompte établi à partir des lignes matériau de chaque produit de notre catalogue qui mentionne l'acier inoxydable.",
+      "| Ce que dit la ligne matériau | Produits |\n| --- | --- |\n| « Acier inoxydable », sans nuance | 224 |\n| Une paire ou une plage, p. ex. « 304/201 », « 304/316L » | 73 |\n| Une seule nuance nommée | 16 |\n| Total mentionnant l'inox | 313 |",
+      "Soixante-douze pour cent de nos produits en inox ne nomment aucune nuance, et 73 autres en nomment deux. Seize sur 313 répondent à la question que cette page dit qu'un acheteur doit poser.",
+      "Ce n'est pas un bon chiffre, et le publier est délibéré. Un acheteur qui le lit sait exactement quoi faire (demander la nuance, par écrit, à chaque commande), alors qu'un acheteur qui aurait cru que le catalogue y répondait n'aurait pas demandé.",
+      "La raison est banale plutôt qu'inquiétante : la nuance est une donnée d'achat qui figure dans les registres matière de l'usine, et le catalogue a été construit à partir de descriptions de produits plutôt qu'à partir de ces registres. La lacune se comble par rapprochement, modèle par modèle, et non en inscrivant une nuance plausible dans 224 lignes.",
+      "## Ce qu'il faut mettre sur votre commande",
+      "Nommez la nuance, pas la famille : « 304 » plutôt qu'« inox ».",
+      "Indiquez l'environnement s'il ne s'agit pas d'un intérieur ordinaire (bord de mer, piscine, industriel, bord de mer et abrité), car cela permet à un fournisseur de vous dire quand votre nuance est inadaptée au lieu de simplement la chiffrer.",
+      "Demandez que la nuance figure sur la facture ou la liste de colisage. Elle passe ainsi d'une conversation à un document, et notre page sur la traçabilité des matériaux explique quel document plus solide existe si le projet l'exige.",
+      "Et prescrivez les fixations dans la même nuance. Une béquille en 316 tenue par des vis en 201 rouille aux vis, c'est-à-dire à l'endroit que tout le monde regarde."
+    ],
+    "faq": [
+      {
+        "question": "Quelle différence entre les inox 201, 304 et 316 ?",
+        "answer": "Les trois sont austénitiques. Le 201 remplace une partie du nickel par du manganèse et de l'azote, ce qui le rend moins cher et nettement moins résistant à la corrosion. Le 304 contient environ 18 % de chrome et 8 % de nickel : c'est la nuance architecturale polyvalente. Le 316, c'est du 304 avec environ 2 % de molybdène, et c'est précisément le molybdène qui résiste à la corrosion par piqûres due aux chlorures."
+      },
+      {
+        "question": "Quand ai-je besoin de 316 plutôt que de 304 ?",
+        "answer": "Sites côtiers, piscines et leurs locaux techniques, atmosphères industrielles, partout où l'on utilise du sel de déneigement, et toute baie extérieure que personne ne nettoiera. Le mécanisme est précis : le molybdène résiste à l'attaque des chlorures, et c'est exactement ce qu'apportent l'air marin, l'atmosphère des piscines et le sel de voirie."
+      },
+      {
+        "question": "L'inox 201 est-il un mauvais matériau ?",
+        "answer": "Non : c'est un matériau légitime, beaucoup trop souvent employé hors de son domaine. Il se comporte correctement sur les portes intérieures de bâtiments secs et climatisés et dans les zones de service. Il se dégrade nettement plus vite partout où il y a des chlorures, de l'humidité ou de la pollution."
+      },
+      {
+        "question": "Que signifie « Acier inoxydable 304/201 » sur une fiche technique ?",
+        "answer": "Que l'usine fournira l'une de ces deux nuances sans vous dire laquelle. Ce n'est pas un alliage ; c'est une question sans réponse écrite sous une forme qui ressemble à une spécification. Les deux sont visuellement identiques, et la différence apparaît sous forme de piqûres après le premier hiver sur un site exposé."
+      },
+      {
+        "question": "Combien coûte le 316 de plus que le 304 ?",
+        "answer": "Moins que la plupart des gens ne le pensent en petite quincaillerie, car le métal brut ne représente qu'une minorité du coût livré d'une pièce usinée, polie, revêtue, emballée et expédiée. L'échelle suit le marché du nickel : demandez l'écart sur votre commande réelle plutôt que de retenir un pourcentage d'une page web."
+      },
+      {
+        "question": "Vos fiches produit indiquent-elles la nuance d'inox ?",
+        "answer": "La plupart non, et nous préférons le dire. Sur 313 produits mentionnant l'inox : 224 disent seulement « acier inoxydable », 73 nomment une paire comme 304/201, et 16 nomment une seule nuance. La lacune se comble en rapprochant, modèle par modèle, les registres matière de l'usine, et non en inscrivant une nuance plausible dans 224 lignes."
+      }
+    ]
+  },
+  "strike-plates-and-keeps-2026": {
+    "title": "Gâches 2026 : gâche ANSI ou gâche en T, longueur de bec, et la cote que personne ne mesure",
+    "summary": "La gâche est le composant le moins cher d'une baie, et celui qui décide si la serrure se verrouillera jamais correctement. Cette page présente les deux dimensions standard nord-américaines, les conventions européennes, comment déterminer la longueur de bec au lieu de la deviner, la différence entre angles vifs et angles arrondis, et pourquoi un renforcement de sécurité qui s'arrête à la serrure n'a rien renforcé.",
+    "seoTitle": "Gâches 2026 : gâche ANSI, gâche en T, bec",
+    "seoDescription": "Dimensions standard de gâche, dont la gâche ANSI de 4-7/8 pouces et la gâche en T de 2-3/4 pouces, calcul du bec, angles vifs ou arrondis, gâche à boîtier.",
+    "body": [
+      "Chaque baie comporte un composant que l'on prescrit en dernier, que l'on commande après coup et que l'on ne tient responsable de rien. C'est la gâche, et elle décide davantage que la serrure de la sensation de la porte sous la main.",
+      "Une porte qu'il faut tirer pour la verrouiller, un pêne qui claque sans tenir, un pêne dormant qui sort difficilement, une porte qui bat dans son huisserie : les quatre sont bien plus souvent des problèmes de gâche que de serrure.",
+      "LES DEUX DIMENSIONS STANDARD NORD-AMÉRICAINES",
+      "La gâche ANSI, parfois appelée gâche à bec complet ou gâche 4-7/8, mesure 4-7/8\" × 1-1/4\" (environ 124 × 32 mm). C'est la préparation standard des huisseries métalliques creuses tertiaires, et une huisserie préparée pour elle accepte toute serrure dont la gâche correspond.",
+      "La gâche en T mesure 2-3/4\" × 1-1/8\" (environ 70 × 29 mm), sa partie haute étant rétrécie pour que la plaque ressemble à un T renversé. C'est la dimension courante en résidentiel et en tertiaire léger, et c'est celle pour laquelle un montant bois est habituellement défoncé.",
+      "Les deux ne sont pas interchangeables sans reprendre l'huisserie. Poser une gâche en T dans une découpe ANSI laisse une mortaise surdimensionnée autour de la plaque ; poser une gâche ANSI dans une découpe pour gâche en T impose d'agrandir le défonçage. Les deux se voient sur la baie finie, c'est pourquoi la dimension de la gâche a sa place au tableau de quincaillerie au lieu d'être décidée sur le chantier.",
+      "LES GÂCHES EUROPÉENNES",
+      "Dans la convention européenne, le composant équivalent est la gâche, et ses dimensions suivent la serrure plutôt qu'une norme dimensionnelle distincte. La gâche d'une serrure à mortaiser est livrée assortie à sa têtière : même largeur, même traitement des angles, trous aux mêmes entraxes.",
+      "C'est pourquoi une gâche européenne se commande généralement avec la serrure, et une gâche nord-américaine sur une ligne séparée. Aucune approche n'est meilleure ; elles échouent différemment. Une baie européenne échoue quand quelqu'un remplace la serrure et garde l'ancienne gâche. Une baie nord-américaine échoue quand personne ne prescrit la gâche.",
+      "LA LONGUEUR DU BEC, ET COMMENT CESSER DE LA DEVINER",
+      "Le bec est la languette recourbée qui dépasse de la gâche vers la butée de la porte, et son rôle est de guider le pêne par-dessus l'arête de l'huisserie pour qu'il n'accroche pas le montant.",
+      "Un bec trop court laisse le pêne accrocher l'arête de l'huisserie : c'est le bruit de frottement qui apparaît un mois après la pose. Un bec trop long dépasse dans la baie, accroche les vêtements et se tord, et sur une double porte il peut gêner l'autre vantail.",
+      "La méthode de travail consiste à mesurer depuis l'axe de la face de la porte (là où passera le pêne) jusqu'au bord arrière de la feuillure de l'huisserie, et à ajouter une petite marge pour que le bec dégage l'arête sans dépasser. Le chiffre dépend du profil de l'huisserie, c'est pourquoi il ne se lit pas dans un catalogue.",
+      "Conséquence pratique pour un tableau : indiquez le profil de l'huisserie, ou fournissez la longueur du bec. Une gâche commandée sans l'un ni l'autre sera livrée avec le bec standard du fabricant, correct pour l'huisserie qu'il avait en tête, pas forcément pour la vôtre.",
+      "ANGLES VIFS OU ANGLES ARRONDIS",
+      "Les angles d'une gâche sont vifs ou arrondis, et le choix dépend de la façon dont l'huisserie a été découpée plutôt que d'une préférence.",
+      "Une huisserie défoncée à la défonceuse a des angles arrondis, car une fraise rotative ne peut pas tailler un angle intérieur vif. Une huisserie découpée au poinçon ou au bédane a des angles vifs. Les rayons courants sont de 1/4\" (environ 6 mm) ou 5/8\" (environ 16 mm), et les deux se distinguent nettement une fois posés.",
+      "Poser une gâche à angles vifs dans une mortaise à angles arrondis laisse quatre jours en croissant. Poser une gâche à angles arrondis dans une mortaise à angles vifs laisse quatre jours carrés. Ni l'un ni l'autre n'est une défaillance fonctionnelle, et les deux donnent l'impression d'un travail fini par quelqu'un qui s'en moquait, ce qui, sur un bâtiment où le client paie une prescription, devient une réclamation.",
+      "GÂCHES À BOÎTIER ET CACHE-POUSSIÈRE",
+      "Derrière la gâche, le pêne ou le verrou doit avoir un logement. Un cache-poussière est une coupelle emboutie peu profonde qui empêche les débris d'entrer dans le trou. Une gâche à boîtier est un logement entièrement fermé qui résiste aussi à ce que le pêne soit forcé ou poussé latéralement.",
+      "Sur un pêne dormant, cela compte. Un pêne dormant qui s'engage dans un trou non renforcé d'un montant bois n'est tenu que par le bois du montant et par deux vis courtes, et c'est là que cèdent la plupart des effractions par une porte : ni le coffre de serrure, ni le cylindre, ni la porte.",
+      "Le renforcement de sécurité qui fonctionne réellement est une gâche à boîtier fixée par de longues vis qui traversent le montant jusqu'à l'ossature porteuse derrière. Un cylindre haut de gamme dans une huisserie où deux vis de 3/4\" (19 mm) tiennent une gâche ordinaire n'a pas été renforcé ; il a été décoré.",
+      "GÂCHES RÉGLABLES ET EN DEUX PARTIES",
+      "Certaines gâches ont une languette réglable ou une construction en deux parties qui permet d'ajuster l'engagement après la pose. Elles existent parce que les tolérances de la porte et de l'huisserie s'additionnent, et qu'une porte qui se verrouille le jour de la pose peut cesser de le faire quand le bâtiment se tasse ou que les joints se compriment.",
+      "Elles valent d'être prescrites sur les baies où une reprise est difficile d'accès, et sur les portes équipées d'un ferme-porte, où un léger désalignement produit une porte qui rebondit sur la gâche au lieu de se verrouiller.",
+      "Elles ne remplacent pas une gâche correctement dimensionnée. Une languette réglable absorbe un ou deux millimètres de tolérance cumulée ; elle ne corrige pas un bec trop court de 5 mm.",
+      "GÂCHES ÉLECTRIQUES",
+      "Une gâche électrique remplace la gâche fixe par une gâche qui se libère sur signal, et elle soulève deux questions que ne pose pas une gâche mécanique.",
+      "Rupture ou émission de courant. En rupture de courant (fail-safe), elle se libère à la coupure d'alimentation ; en émission de courant (fail-secure), elle reste verrouillée. Le bon choix est une décision de sécurité des personnes et de sûreté propre au bâtiment, pas une préférence de produit, et il est souvent inversé entre deux portes d'un même couloir, pour de bonnes raisons.",
+      "La porte est-elle coupe-feu ? Une gâche électrique sur une porte coupe-feu doit être apte à cet usage, car la gâche fait partie de ce qui maintient la porte verrouillée, et une porte coupe-feu qui ne se verrouille pas est une porte coupe-feu défaillante.",
+      "CE QU'IL FAUT METTRE AU TABLEAU",
+      "Le type et la dimension de gâche. La longueur du bec, ou le profil d'huisserie auquel elle doit convenir. Le traitement des angles, vifs ou arrondis, avec le rayon s'ils sont arrondis. La finition, assortie au reste de la baie. Boîtier ou cache-poussière, et longueur des vis si la sécurité est une exigence.",
+      "Six lignes. La gâche est généralement la ligne la moins chère du tableau, et celle qui risque le plus de générer une liste de réserves."
+    ],
+    "faq": [
+      {
+        "question": "Quelle est la dimension standard d'une gâche ?",
+        "answer": "Il en existe deux en Amérique du Nord. La gâche ANSI, ou à bec complet, mesure 4-7/8\" × 1-1/4\" (environ 124 × 32 mm) et c'est le standard des huisseries métalliques creuses tertiaires. La gâche en T mesure 2-3/4\" × 1-1/8\" (environ 70 × 29 mm) et c'est la dimension courante en résidentiel et en tertiaire léger."
+      },
+      {
+        "question": "Comment déterminer la longueur du bec ?",
+        "answer": "Mesurez depuis l'axe de la face de la porte, là où passe le pêne, jusqu'au bord arrière de la feuillure de l'huisserie, puis ajoutez une petite marge pour que le bec dégage l'arête sans dépasser. Elle dépend du profil de l'huisserie et ne se lit donc pas dans un catalogue : indiquez le profil d'huisserie sur la commande ou fournissez la longueur du bec."
+      },
+      {
+        "question": "Ma gâche doit-elle avoir des angles vifs ou arrondis ?",
+        "answer": "Ceux qui correspondent à la découpe de l'huisserie. Une défonceuse laisse des angles arrondis, couramment de 1/4\" (6 mm) ou 5/8\" (16 mm) ; un poinçon ou un bédane laisse des angles vifs. Une discordance laisse des jours visibles aux quatre angles : ce n'est pas une défaillance fonctionnelle, mais une réserve sur tout chantier doté d'une prescription."
+      },
+      {
+        "question": "Une gâche à boîtier améliore-t-elle vraiment la sécurité ?",
+        "answer": "Oui, et davantage qu'un meilleur cylindre sur la plupart des huisseries bois. Un pêne dormant qui s'engage dans un trou non renforcé du montant n'est tenu que par le bois et deux vis courtes, et c'est là que cèdent la plupart des effractions par une porte. Une gâche à boîtier avec de longues vis atteignant l'ossature porteuse derrière le montant est le renforcement qui fonctionne."
+      },
+      {
+        "question": "Pourquoi ma porte se verrouille-t-elle certains jours et pas d'autres ?",
+        "answer": "À cause des tolérances cumulées. Les tolérances de la porte et de l'huisserie s'additionnent, les joints se compriment et les bâtiments bougent : une porte qui se verrouillait le jour de la pose peut cesser de le faire. Une gâche réglable ou en deux parties absorbe un ou deux millimètres de cet écart ; c'est pourquoi elle vaut d'être prescrite sur les portes à ferme-porte et les baies où une reprise est difficile d'accès."
+      },
+      {
+        "question": "Quelle différence entre rupture et émission de courant sur une gâche électrique ?",
+        "answer": "En rupture de courant (fail-safe), la gâche se libère à la coupure d'alimentation ; en émission de courant (fail-secure), elle reste verrouillée. Le bon choix est une décision de sécurité des personnes et de sûreté propre au bâtiment plutôt qu'une préférence de produit, et deux portes d'un même couloir peuvent légitimement être prescrites différemment."
+      }
+    ]
+  },
+  "submittal-package-contents-2026": {
+    "title": "Dossier de soumission de quincaillerie de porte 2026 : chaque document dont le contrôleur a besoin, et les quatre qui le font rejeter",
+    "summary": "Un dossier de soumission de quincaillerie est rejeté pour la même poignée de raisons sur presque tous les projets, et aucune ne tient à la quincaillerie. Cette page liste ce que contient un dossier complet, nomme les quatre omissions qui le font renvoyer, explique la différence entre une fiche technique et une preuve, précise qui signe quoi, et dit clairement quels documents nous publions, lesquels nous fournissons sur demande, et lesquels nous n'avons pas du tout.",
+    "seoTitle": "Dossier de soumission de quincaillerie 2026",
+    "seoDescription": "Contenu d'un dossier de soumission de quincaillerie, les quatre omissions qui le font rejeter, fiche produit ou preuve d'essai, et ce qu'une usine fournit.",
+    "body": [
+      "Un dossier de soumission n'est pas un document commercial. C'est le moment où un prescripteur vérifie que ce qui a été commandé correspond à ce qui a été prescrit, et il est examiné par quelqu'un dont le métier est de trouver l'écart, pas de se laisser convaincre.",
+      "Cette distinction explique presque tous les dossiers rejetés. Un fournisseur envoie de la documentation commerciale, parce que c'est ce qu'il a ; un contrôleur a besoin de preuves, et renvoie le dossier. Deux semaines passent. La même chose se reproduit.",
+      "Cette page décrit ce que contient le dossier, dans l'ordre où un contrôleur le lit.",
+      "## La forme d'un dossier complet",
+      "Un dossier de soumission de quincaillerie comporte cinq parties, et un contrôleur les cherche dans cet ordre.",
+      "| Partie | Ce que c'est | Qui la produit |\n| --- | --- | --- |\n| Tableau de quincaillerie | Chaque baie, son numéro d'ensemble, et chaque article de cet ensemble | Le fournisseur ou le consultant en quincaillerie |\n| Données produit | Une fiche technique par référence catalogue, avec dimensions et finition | Le fabricant |\n| Plans d'atelier | Plans cotés et préparation de la porte et de l'huisserie | Le fabricant |\n| Preuves d'essai | Certificats et rapports pour tout ce qu'exige la prescription | Un laboratoire accrédité |\n| Plan de combinaison | L'organigramme de clés, quand le projet en comporte un | Le fournisseur avec le responsable sûreté du client |",
+      "Le tableau vient en premier parce qu'il sert d'index. Un contrôleur le lit pour savoir ce que le projet achète, puis vérifie chaque ligne par rapport aux quatre autres parties. Un dossier sans tableau l'oblige à en construire un lui-même, et c'est la raison la plus fréquente pour laquelle un dossier reste quinze jours sans être examiné.",
+      "## Le tableau de quincaillerie, baie par baie",
+      "Un tableau s'organise par baie, pas par produit. Chaque baie porte un numéro correspondant aux plans, une référence d'ensemble de quincaillerie, et la liste complète des articles de cet ensemble.",
+      "Chaque ligne d'article doit indiquer le fabricant, la référence catalogue, le code de finition, la quantité et la fonction lorsque le produit en a une. Une ligne qui dit « béquille, SSS » a nommé une forme et une finition et omis le modèle, qui est précisément l'information que tout le document existe pour transmettre.",
+      "C'est aussi dans le tableau que figure la main, et la main est l'élément le plus coûteux à rater à ce stade, car pour la plupart des produits elle ne se corrige pas sur le chantier. Indiquez la convention utilisée en plus de la main elle-même ; notre page sur les mains explique pourquoi les conventions européenne et nord-américaine peuvent décrire la même porte avec des mots différents.",
+      "## Données produit : ce que doit porter une fiche technique",
+      "Une fiche technique est la déclaration du fabricant sur ce qu'est le produit. Pour un contrôleur, elle doit répondre à quatre questions sans coup de téléphone.",
+      "Quelles sont ses dimensions, dans les unités de la prescription ? Une prescription rédigée en pouces face à une fiche publiée uniquement en millimètres, c'est une conversion que le contrôleur doit faire puis assumer ; c'est pourquoi nos pages anglaises indiquent les deux.",
+      "Quelle est sa finition, sous forme de code plutôt que de nom de couleur ? « Inox satiné » est une description ; US32D / 630 est un code que deux parties peuvent vérifier au regard de la même norme.",
+      "À quoi s'adapte-t-il : plage d'épaisseur de porte, axe, type de préparation, épaisseur de verre le cas échéant.",
+      "Quelle est sa fonction, lorsque le produit a des fonctions ? Une référence de serrure sans suffixe de fonction est incomplète, et le contrôleur ne peut pas savoir si la porte de réserve se verrouillera derrière quelqu'un.",
+      "## Une preuve d'essai n'est pas une donnée produit, et toute la question est là",
+      "C'est là qu'échouent la plupart des dossiers, et ils échouent à cause d'une confusion de catégories qui paraît raisonnable du côté du fournisseur.",
+      "Une fiche technique est une déclaration du fabricant sur son propre produit. Un certificat d'essai est une déclaration d'un tiers accrédité sur une configuration précise essayée. Une prescription qui demande un classement au feu, un grade d'endurance ou une classe de corrosion demande le second, et le premier ne s'y substitue pas, aussi assuré soit-il.",
+      "Le test pratique d'un contrôleur : puis-je lire le numéro de rapport, le laboratoire émetteur, la norme, la date, le domaine d'application et la configuration exacte essayée ? Si l'un de ces éléments manque, le document est une affirmation, pas une preuve.",
+      "Un certificat pour un produit similaire de la même gamme n'est pas non plus une preuve. Les résultats d'essai s'attachent à ce qui a été essayé : c'est le même principe que celui exposé dans notre page sur la quincaillerie des portes coupe-feu, où remplacer une paumelle par une autre de même dimension fait sortir la porte de son certificat.",
+      "## Les quatre omissions qui font rejeter un dossier",
+      "À peu près dans l'ordre de fréquence.",
+      "Pas de codes de finition, seulement des noms : un tableau qui indique « chromé poli » sur quarante baies est invérifiable. Le chromé poli de deux fabricants, ce sont deux produits visiblement différents, et le contrôleur n'a aucun moyen de confirmer que le projet reçoit celui qui a été prescrit. Notre référentiel des codes de finition présente les codes et explique pourquoi le même code chez deux fournisseurs peut encore différer.",
+      "Main absente ou indiquée sans sa convention : voir ci-dessus. C'est la plus coûteuse des quatre, car la correction passe généralement par un produit neuf plutôt que par une nouvelle soumission.",
+      "Preuve d'essai remplacée par une affirmation commerciale : « Coupe-feu », « ANSI Grade 1 », « UL listed » écrits à côté d'un produit sans numéro de certificat derrière. Un contrôleur qui en repère une ne rejette pas seulement cette ligne ; il commence à vérifier les autres, et le dossier perd sa crédibilité pour le reste du projet.",
+      "Pas d'information de préparation : le tableau nomme une serrure à mortaiser ; le fabricant de portes a besoin des dimensions de la mortaise, des positions des trous du carré et du cylindre, et de l'entraxe. Notre page sur la préparation des portes explique ce que « préparé pour » garantit ou non, et en bref, un type de préparation n'est pas un gabarit.",
+      "## Qui signe quoi, et pourquoi cela compte",
+      "Un dossier de soumission porte des responsabilités autant que des informations, et le contrôleur le vérifie aussi.",
+      "Le fabricant répond des données produit et des plans. Le laboratoire accrédité répond des preuves d'essai. Le fournisseur ou le consultant en quincaillerie répond du tableau, c'est-à-dire du bon produit sur la bonne baie. Le contrôleur approuve au regard de la prescription, ce qui n'équivaut pas à approuver l'aptitude du produit à l'emploi.",
+      "Un dossier entièrement rédigé par le fournisseur, y compris une paraphrase d'un résultat d'essai, a fondu trois de ces rôles en un seul. C'est exactement ce qu'un contrôleur est formé à repérer.",
+      "## Ce que nous publions, ce que nous envoyons sur demande, et ce que nous n'avons pas",
+      "C'est la partie que les fournisseurs laissent d'ordinaire dans le flou ; la voici donc sous forme de tableau. C'est le même inventaire que celui de notre page de documents.",
+      "| Document | Statut |\n| --- | --- |\n| Plans cotés | Publiés |\n| Caractéristiques | Publiées |\n| Catalogue | Publié |\n| Export des caractéristiques (données structurées pour votre tableau) | Sur demande |\n| Documents d'essai | Sur demande |\n| Familles BIM / Revit | Non disponibles |\n| CAO native (source DWG modifiable) | Non disponible |",
+      "Les deux dernières lignes méritent une lecture attentive. Nous n'avons pas de familles BIM et nous n'avons pas de CAO native modifiable, et le dire ici nous coûte moins de projets que la découverte au bout de trois semaines de cycle de soumission ne vous coûterait.",
+      "Un fournisseur qui répond « oui, nous pouvons fournir du BIM » puis envoie un PDF renommé avec l'extension .rvt n'a rien résolu ; il a déplacé la découverte au moment où une maquette est déjà construite sur cette hypothèse.",
+      "## Deux choses qui rendent une nouvelle soumission inutile",
+      "Envoyez la section de prescription à l'usine avant le devis, pas après la commande. Presque tous les dossiers rejetés contiennent un produit correctement chiffré en réponse à une question incomplète. Si la prescription dit EN 1634-1 EI 30, cette contrainte doit parvenir à l'usine tant qu'une substitution est encore gratuite.",
+      "Demandez les preuves avant d'en avoir besoin. Un rapport d'essai existe ou n'existe pas, et le découvrir au stade de la soumission transforme une question de documentation en retard de planning. Notre page sur les documents que vous pouvez réellement obtenir liste ce qu'il faut demander et comment lire la réponse.",
+      "## Les demandes de substitution, et pourquoi la plupart sont refusées",
+      "Une demande de substitution invite le prescripteur à accepter un autre produit que celui qui est nommé. C'est une étape normale du processus, et elle est refusée bien plus souvent que nécessaire, pour une raison entièrement corrigeable.",
+      "Une demande refusée compare presque toujours les mauvaises choses. Elle affirme que le produit de substitution est équivalent, puis liste les caractéristiques que les deux produits partagent. Ce dont le prescripteur a besoin, c'est l'inverse : chaque point sur lequel ils diffèrent, et la preuve que chaque différence est acceptable sur cette baie.",
+      "Une demande qui aboutit indique donc le produit prescrit, le produit proposé, et une comparaison ligne par ligne des propriétés que la prescription encadre réellement (grade, cycles, aptitude au feu, classe de corrosion, code de finition, dimensions), avec la preuve d'essai derrière chacune. Là où une propriété est inférieure, dites-le, et dites pourquoi cela ne compte pas ici.",
+      "Une demande qui cache une différence est refusée dès que le contrôleur la trouve, et chaque demande ultérieure du même fournisseur est lue à cette lumière. Les caractéristiques communes n'ont jamais été la question.",
+      "## Où sont nos propres lacunes",
+      "Certains de nos produits sont en cours d'essai et ne détiennent pas encore de certificats. Dans ce cas, nous le disons sur la fiche produit au lieu de laisser entendre un classement, et une soumission qui exige un certificat que nous ne détenons pas est une soumission dont nous vous dirons que nous ne pouvons pas la compléter.",
+      "Cela fait perdre moins de demandes qu'il n'y paraît, et c'est la seule position compatible avec le reste de cette page. Un fournisseur qui écrira un « coupe-feu » non étayé dans une soumission écrira aussi une cote non étayée sur un plan, et le contrôleur le sait."
+    ],
+    "faq": [
+      {
+        "question": "Que contient un dossier de soumission de quincaillerie de porte ?",
+        "answer": "Cinq parties, lues dans cet ordre : le tableau de quincaillerie (l'index, organisé par baie), les données produit par référence catalogue, les plans d'atelier avec la préparation de la porte et de l'huisserie, les preuves d'essai pour tout ce qu'exige la prescription, et un plan de combinaison lorsque le projet comporte un organigramme de clés."
+      },
+      {
+        "question": "Quelle différence entre une fiche technique et une preuve d'essai ?",
+        "answer": "Une fiche technique est la déclaration du fabricant sur son propre produit. Un certificat d'essai est la déclaration d'un tiers accrédité sur une configuration précise essayée. Une prescription qui demande un classement au feu, un grade d'endurance ou une classe de corrosion demande le second, et le premier ne s'y substitue jamais."
+      },
+      {
+        "question": "Pourquoi les dossiers de soumission sont-ils rejetés ?",
+        "answer": "Pour quatre raisons, à peu près dans cet ordre : des noms de finition au lieu de codes ; une main absente ou indiquée sans sa convention ; une affirmation commerciale à la place d'un numéro de certificat ; et l'absence d'information de préparation pour le fabricant de portes. Aucune ne tient à la quincaillerie elle-même."
+      },
+      {
+        "question": "Puis-je utiliser le certificat d'un produit similaire de la même gamme ?",
+        "answer": "Non. Les résultats d'essai s'attachent à la configuration essayée, dans le domaine d'application imprimé sur le certificat. Le certificat d'un modèle voisin ne prouve rien pour celui-ci : c'est le même principe qui fait qu'une paumelle de même dimension substituée fait sortir une porte coupe-feu de son certificat."
+      },
+      {
+        "question": "Fournissez-vous des familles BIM ou de la CAO modifiable ?",
+        "answer": "Non pour les deux, et nous préférons le dire ici plutôt qu'au bout de trois semaines de cycle de soumission. Nous publions des plans cotés, les caractéristiques et le catalogue ; les exports de caractéristiques et les documents d'essai sont disponibles sur demande. Les familles BIM/Revit et la CAO native modifiable, nous ne les avons pas."
+      },
+      {
+        "question": "Comment éviter une nouvelle soumission ?",
+        "answer": "Envoyez la section de prescription à l'usine avant le devis plutôt qu'après la commande, pour qu'une contrainte comme EN 1634-1 EI 30 arrive tant qu'une substitution est encore gratuite. Et demandez les preuves d'essai tôt : un rapport existe ou n'existe pas, et le découvrir au stade de la soumission transforme une question de papiers en retard de planning."
+      }
+    ]
+  },
+  "technical-drawings-what-to-expect-2026": {
+    "title": "Plans de quincaillerie de porte 2026 : PDF, DWG, STEP et BIM comparés, et ce qu'une usine peut réellement vous fournir",
+    "summary": "Demander « la CAO » à une usine de quincaillerie produit un fichier différent dans chaque pays, et une fois sur deux le fichier reçu ne peut pas faire ce pour quoi vous le vouliez. Cette page distingue les trois types de plans qui répondent à trois questions différentes, compare les formats et ce à quoi chacun sert vraiment, explique pourquoi un solide 3D n'existe souvent pas, même dans une usine compétente, et donne notre propre couverture en plans sous forme de chiffre plutôt que de promesse.",
+    "seoTitle": "Plans de quincaillerie 2026 : PDF, DWG, STEP, BIM",
+    "seoDescription": "Les trois types de plans de quincaillerie, à quoi servent PDF, DWG, DXF, STEP et BIM, pourquoi le solide 3D manque souvent, et quel fichier demander.",
+    "body": [
+      "« Pouvez-vous envoyer la CAO ? » est la demande technique la plus fréquente que reçoit une usine de quincaillerie, et la moins précise. La CAO n'est pas un format, et les trois choses que l'on entend par cette phrase demandent trois fichiers différents.",
+      "Le coût de l'ambiguïté, c'est une semaine. Un acheteur demande, une usine envoie ce qu'elle a, l'acheteur découvre que cela ne fait pas ce dont il avait besoin, et l'échange reprend avec de meilleurs mots, qu'on aurait pu employer la première fois.",
+      "## Trois plans qui répondent à trois questions différentes",
+      "Avant le format, décidez quelle question vous posez. Presque toutes les demandes mal servies le sont en réalité à ce niveau.",
+      "| Plan | Question à laquelle il répond | Usage type |\n| --- | --- | --- |\n| Plan d'ensemble | À quoi cela ressemble-t-il, et quelle taille à peu près | Sélection, tableau de quincaillerie, présentation au client |\n| Plan coté | Quelle est exactement la dimension de chaque partie | Vérifier l'adaptation, rédiger une prescription, comparer deux produits |\n| Gabarit de pose | Où vont les trous | Usiner une porte ou une huisserie |",
+      "Un plan d'ensemble ne permet pas d'usiner une porte. Un gabarit ne vous dira pas si la béquille dégage un mur en retour. Demander « un plan » et recevoir le mauvais des trois, ce n'est pas l'usine qui se montre peu serviable ; c'est la question qui a trois réponses.",
+      "## Les formats, et ce à quoi chacun sert honnêtement",
+      "| Format | Ce que c'est | Utile pour | Ne peut pas |\n| --- | --- | --- | --- |\n| PDF | Une page figée que tout le monde peut ouvrir | Plans cotés qui font foi, gabarits | Être modifié ou mesuré de façon fiable à l'écran |\n| SVG | Vectoriel, se met à l'échelle sans flou | Plans web, impression à toute taille | Porter des métadonnées ou calques CAO |\n| DXF | Un format d'échange lu par la plupart des logiciels de CAO | Importer une géométrie 2D dans votre propre CAO | Garantir que calques et annotations survivent |\n| DWG | Le fichier natif 2D/3D d'AutoCAD | Modifier dans AutoCAD | Être ouvert par tous ; les versions diffèrent |\n| STEP / IGES | Géométrie solide 3D | Détection de conflits, usinage, assemblage 3D | Exister si personne n'a modélisé la pièce en 3D |\n| Revit / IFC | Un objet BIM avec des données attachées | Maquettes de bâtiment, coordination | Être produit à partir d'un plan 2D sans vrai travail de modélisation |",
+      "La ligne à relire est la dernière. Une famille BIM n'est pas la conversion de format d'un plan : c'est un objet modélisé porteur de paramètres, et sa production est un travail distinct avec son propre coût. Une usine qui répond « oui » au BIM puis envoie un PDF renommé n'a pas mal compris le format ; elle a reporté la découverte.",
+      "## Pourquoi un solide 3D n'existe souvent pas",
+      "Cela surprend, et cela mérite d'être expliqué, car ce n'est pas le signe d'une usine peu sérieuse.",
+      "Une grande partie de la quincaillerie est conçue et outillée en 2D. La matrice est taillée à partir de profils 2D, l'usinage est programmé en 2D, et la pièce est contrôlée par rapport à des plans 2D. Personne n'a jamais eu besoin d'un modèle solide, donc personne n'en a fait.",
+      "Une usine qui fabrique une pièce depuis quinze ans et peut vous en donner chaque cote peut donc répondre honnêtement à une demande de STEP par « cela n'existe pas ». La bonne suite n'est pas de douter d'elle ; c'est de demander si un plan coté 2D fera l'affaire, car en général c'est le cas.",
+      "Lorsqu'un modèle 3D compte réellement (détection de conflits dans une maquette coordonnée, ou usinage de votre côté), dites à quoi il vous sert. Une usine qui connaît l'objectif peut parfois produire la coupe précise dont vous avez besoin plutôt qu'un solide complet.",
+      "## Un plan sans tolérances est un plan nominal",
+      "Chaque cote d'un plan est une cible. Ce qu'un plan peut ou non vous dire, c'est de combien la pièce réelle peut s'en écarter.",
+      "Cela compte surtout là où deux pièces doivent se rencontrer : un coffre de serrure dans sa mortaise, un carré dans un fouillot, une ferrure sur une vitre. Un coffre nominal de 29 mm dans une mortaise nominale de 29 mm n'entre pas ; la mortaise a besoin de jeu, et ce jeu vient des tolérances, pas des cotes nominales.",
+      "Quand l'adaptation est en jeu, demandez donc explicitement si le plan porte des tolérances et, s'il n'en porte pas, quel jeu de travail prévoir. Une usine peut répondre d'expérience même quand le plan ne l'imprime pas.",
+      "## Ce qui fait qu'un plan fait foi",
+      "Un cartouche avec la référence, un indice de révision et une date. Une échelle, ou la mention explicite « pas à l'échelle ». Les unités indiquées, une fois, sans ambiguïté. Une convention de projection (méthode européenne ou américaine), car la même pièce dessinée selon les deux conventions place les vues de côté de part et d'autre.",
+      "Ce qui ne fait pas foi : une capture d'écran, la photo d'un plan imprimé, ou un plan sans indice de révision. Un plan sans révision ne peut pas être remplacé, et personne ne peut donc dire s'il est le plan en vigueur.",
+      "## Notre propre couverture, en chiffres",
+      "Les fournisseurs décrivent la disponibilité de leurs plans avec des adjectifs. La voici en chiffres, comptés à partir de ce qui se trouve réellement sur le site.",
+      "| Élément | Nombre |\n| --- | --- |\n| Fiches du catalogue HYDE | 588 |\n| Fiches produit visibles avec photos | 521 |\n| Fichiers SVG cotés pour des modèles HYDE | 84 |\n| Dont fichiers sur des fiches visibles | 72 |\n| SVG HYDE de préparation de porte | 0 |\n| CAO native modifiable (source DWG) | aucune |\n| Familles BIM / Revit | aucune |",
+      "Les 84 fichiers SVG cotés correspondent à des fiches de modèles HYDE, mais seuls 72 apparaissent sur les 521 fiches produit visibles : environ 14 % de ce qu'un acheteur peut consulter. Les 12 autres fichiers appartiennent à des fiches sans photo de produit publiée. Pour la plupart des modèles visibles, c'est le tableau de caractéristiques qui existe, et un plan doit être demandé ou produit.",
+      "Les plans publiés sont en SVG : ils se mettent à l'échelle à n'importe quelle taille sans perdre en netteté et s'impriment proprement en A3 ou en A0. Ce ne sont pas des sources CAO, et nous ne les présentons pas comme telles.",
+      "## Comment demander pour que la première réponse soit la bonne",
+      "Nommez la question, pas le format. « Je dois vérifier que la béquille dégage un mur en retour de 90 mm » vous vaut une élévation cotée ; « envoyez la CAO » vous vaut ce qui se trouve à portée de main.",
+      "Dites ce que vous en ferez. Usiner une porte, construire une maquette, comparer deux produits et rédiger un tableau sont quatre besoins différents et trois fichiers différents.",
+      "Indiquez les références exactes. Une demande de plans pour une gamme est une demande que l'usine ne peut pas satisfaire en une seule action, et elle vous reviendra sous forme de question.",
+      "Indiquez les unités dans lesquelles vous travaillez. Nous publions en millimètres et donnons les équivalents en pouces sur les pages anglaises, mais un plan coté dans les deux unités a deux fois plus de risques d'erreur de transcription : mieux vaut savoir laquelle vous voulez.",
+      "## Quand il n'y a pas de plan et qu'il vous en faut un quand même",
+      "Pour la plupart des modèles visibles, c'est la situation réelle ; il vaut donc la peine de dire quoi faire plutôt que de laisser le lecteur à 14 %.",
+      "La voie la plus rapide est un échantillon et un pied à coulisse. Une pièce physique répond à toutes les questions dimensionnelles auxquelles répondrait un plan, et elle y répond pour la pièce que vous recevrez réellement plutôt que pour celle que quelqu'un a dessinée. Notre page sur les échantillons et le contrôle à réception indique ce qu'il faut demander et mesurer à l'arrivée.",
+      "La suite est ce qui compte, et c'est une question de responsabilité plutôt que de mesure. Une cote relevée sur un échantillon est votre mesure. Si vous la mettez dans une prescription et qu'une porte est usinée d'après elle, la responsabilité de ce chiffre vous revient, et une usine qui livre ensuite une pièce différente d'un demi-millimètre n'a pas forcément commis de faute, car aucune cote nominale ni aucune tolérance n'ont jamais été convenues entre vous.",
+      "Mesurez donc l'échantillon, puis renvoyez les chiffres à l'usine en lui demandant de les confirmer par écrit. Votre mesure devient ainsi sa déclaration, ce qu'aurait été un plan. Cela coûte un courriel, et c'est toute la différence entre une cote et une hypothèse.",
+      "Deux mesures valent la peine même quand un plan existe, car ce sont les deux que les plans omettent le plus souvent. La première est le jeu de travail dont une pièce a besoin dans sa mortaise ou son alésage, par opposition à sa propre cote nominale : voir ci-dessus, et la raison pour laquelle un coffre de 29 mm n'entre pas dans une mortaise de 29 mm. La seconde est la saillie réelle mesurée depuis la face finie de la porte plutôt que depuis la rosace, qui décide si une béquille dégage un mur en retour.",
+      "Les deux font la différence entre une pièce qui s'adapte sur le papier et une pièce qui s'adapte. Aucune ne prend plus d'une minute avec l'échantillon en main, et les deux coûtent moins cher à établir maintenant qu'à découvrir après l'usinage d'un conteneur de portes.",
+      "## La lacune que nous n'allons pas maquiller",
+      "Une couverture de 14 % des fiches visibles n'a rien d'une fierté. C'est le chiffre, et les plans manquants doivent être produits à partir de la pièce réelle, pas générés à partir d'une description.",
+      "Nous préférons publier ce chiffre plutôt que 588 plans plausibles. Un plan est la deuxième version de la spécification (la photo est la première), et une cote dessinée que personne n'a mesurée relève de la même erreur qu'un chiffre inventé dans un tableau de caractéristiques, avec ce poids supplémentaire que quelqu'un peut usiner une porte d'après elle."
+    ],
+    "faq": [
+      {
+        "question": "Quelle différence entre un plan d'ensemble, un plan coté et un gabarit ?",
+        "answer": "Ils répondent à trois questions différentes. Un plan d'ensemble dit à quoi ressemble le produit et quelle est sa taille approximative. Un plan coté donne la dimension exacte de chaque partie. Un gabarit dit où vont les trous. Un plan d'ensemble ne permet pas d'usiner une porte, et un gabarit ne vous dira pas si une béquille dégage un mur."
+      },
+      {
+        "question": "Quel format de plan demander ?",
+        "answer": "Le PDF pour un plan coté ou un gabarit qui fait foi. Le DXF pour importer une géométrie 2D dans votre propre CAO. Le STEP ou l'IGES seulement si vous avez réellement besoin de solides 3D. Revit ou IFC, c'est un objet BIM avec des données attachées, pas la conversion de format d'un plan : sa production est un travail distinct avec son propre coût."
+      },
+      {
+        "question": "Pourquoi l'usine ne peut-elle pas envoyer de modèle 3D ?",
+        "answer": "Parce qu'une grande partie de la quincaillerie est conçue, outillée, usinée et contrôlée entièrement en 2D. Personne n'a jamais eu besoin d'un modèle solide, donc personne n'en a fait. Une usine qui fabrique une pièce depuis quinze ans et peut vous en donner chaque cote peut quand même dire honnêtement que le fichier STEP n'existe pas."
+      },
+      {
+        "question": "Un plan comporte-t-il des tolérances ?",
+        "answer": "Pas toujours, et cela compte partout où deux pièces se rencontrent. Un coffre de serrure nominal de 29 mm dans une mortaise nominale de 29 mm n'entre pas : le jeu vient des tolérances, pas des cotes nominales. Si l'adaptation est en jeu, demandez explicitement si le plan porte des tolérances et quel jeu de travail prévoir."
+      },
+      {
+        "question": "Combien de vos produits ont des plans ?",
+        "answer": "Sur 588 fiches HYDE, il existe 84 fichiers SVG cotés, mais seuls 72 apparaissent sur les 521 fiches produit visibles, soit environ 14 %. HYDE compte 0 SVG de préparation de porte. Une vue cotée d'un produit n'est pas un gabarit d'usinage de porte : demandez les cotes de préparation propres au modèle avant tout usinage."
+      },
+      {
+        "question": "Qu'est-ce qui fait qu'un plan fait foi ?",
+        "answer": "Un cartouche avec référence, révision et date ; une échelle indiquée ou la mention explicite « pas à l'échelle » ; des unités indiquées une fois et sans ambiguïté ; et la convention de projection, car les méthodes européenne et américaine placent les vues de côté de part et d'autre. Un plan sans indice de révision ne peut pas être remplacé, et personne ne peut donc dire s'il est en vigueur."
+      }
+    ]
+  },
+  "universal-vs-handed-hardware-2026": {
+    "title": "Universel ou à main 2026 : quelle quincaillerie est réversible, laquelle ne l'est pas, et les quatre produits qui piègent les projets",
+    "summary": "« Universel » veut dire trois choses différentes dans un catalogue de quincaillerie, et une seule signifie que vous pouvez cesser de penser à la main. Cette page distingue le sans main, le réversible sur chantier et le à main d'usine, nomme les quatre produits qui ont une main quand on suppose le contraire, explique ce que fait réellement l'inversion dans une serrure, et donne la ligne à mettre sur une commande pour que la question ne se pose jamais.",
+    "seoTitle": "Quincaillerie universelle ou à main 2026",
+    "seoDescription": "Quelle quincaillerie est sans main, réversible sur chantier ou à main d'usine, les quatre produits qui piègent les projets, et quoi écrire sur la commande.",
+    "body": [
+      "Un catalogue dit « universel », et un acheteur cesse de s'inquiéter de la main. C'est l'effet recherché, et il est justifié environ une fois sur trois.",
+      "Le mot recouvre trois situations réellement différentes, et la différence décide si une mauvaise main se règle en cinq minutes, en deux minutes, ou par une nouvelle commande.",
+      "## Les trois sens d'universel",
+      "| Catégorie | Ce que cela signifie | Si la main est fausse |\n| --- | --- | --- |\n| Sans main | Le produit n'a pas de main. Il fonctionne dans les deux sens sans aucune intervention | Rien à corriger ; il n'y avait pas de mauvaise main |\n| Réversible sur chantier | Il est livré dans un sens et peut être inversé sur place, généralement en quelques minutes | Un tournevis et quelques minutes |\n| À main d'usine | La main est intégrée et ne peut pas être changée | Un nouveau produit |",
+      "Seul le premier est réellement universel. Le deuxième est celui que la plupart des catalogues désignent par ce mot, et la distinction compte, car un produit réversible sur chantier exige toujours que quelqu'un l'inverse ; sur un chantier où quarante portes arrivent la veille de la réception, « quelques minutes chacune », c'est une journée que personne n'a prévue.",
+      "## Ce qui est réellement sans main",
+      "La plupart des paumelles, sur une porte battante ordinaire. Une paumelle est symétrique par rapport à son axe ; la main se décide par le côté de la baie où on la fixe.",
+      "La plupart des béquilles sur rosace, lorsque la béquille est droite ou légèrement courbe, sans détail asymétrique. Une rosace est ronde, et une béquille simple s'inverse en la retournant.",
+      "Les poignées de tirage, plaques de poussée, plaques de propreté, butoirs de porte et la plupart des verrous à encastrer.",
+      "Les cylindres. Un cylindre européen ou ovale n'a pas de main ; il a une longueur et une répartition, que traite notre page sur le cylindre européen, et que l'on confond parfois avec la main parce qu'une erreur sur l'une ou l'autre produit le même symptôme : une pièce qui ne fonctionne pas sur cette porte.",
+      "## Ce qui est réversible sur chantier, et ce que fait réellement l'inversion",
+      "La plupart des serrures cylindriques et tubulaires s'inversent en faisant pivoter le pêne demi-tour de 180 degrés, pour que sa face biseautée rencontre la gâche de l'autre côté. Sur beaucoup de modèles, c'est une manœuvre pousser-tourner sans outil.",
+      "La plupart des coffres de serrure à mortaiser s'inversent de la même façon, parfois après le retrait d'une vis ou d'une plaquette de retenue. Seul le pêne demi-tour s'inverse ; le pêne dormant, s'il y en a un, est symétrique et indifférent.",
+      "Tout le mécanisme tient en une phrase : inverser une serrure, c'est retourner le pêne demi-tour pour que son biseau fasse face au sens de fermeture. Le reste du coffre est généralement symétrique.",
+      "Deux conséquences en découlent. L'inversion est rapide quand le modèle la permet et impossible quand il ne la permet pas ; il n'y a pas de demi-mesure. Et une serrure inversée sur chantier est une serrure que quelqu'un a ouverte : sur une porte coupe-feu, c'est une modification de l'ensemble, sauf si l'inversion reste dans ce que permettent les instructions du fabricant.",
+      "## Les quatre produits qui piègent les projets",
+      "Ce sont ceux que l'on croit universels à tort.",
+      "La garniture extérieure de fermeture anti-panique : le dispositif est généralement sans main ; la garniture, souvent pas. Une garniture à béquille a une béquille qui doit pointer du bon côté et une queue d'entraînement qui doit s'engager du bon côté. Notre page sur les garnitures de fermetures anti-panique traite la garniture comme toute la prescription, précisément pour ce genre de raison.",
+      "Les ferme-portes en montage à bras parallèle : le corps peut être sans main ; l'ensemble de bras parallèle ne l'est généralement pas. Un ferme-porte commandé « sans main » et monté en bras parallèle peut exiger un jeu de bras absent de la boîte, ce que traite notre page sur le montage des ferme-portes.",
+      "Les béquilles de forme travaillée ou asymétrique : une béquille avec un appui-pouce, un dessous sculpté ou un effilement orienté ne s'inverse pas en la retournant, elle se retrouve à l'envers. C'est celle qui passe l'épreuve de la photo et échoue sur la porte.",
+      "Les coffres de serrure à pêne de condamnation automatique ou à fouillot décalé : certains coffres sont symétriques en dimensions et à main dans leur fonctionnement. C'est le moins visible des quatre, et celui qu'un poseur a le plus de chances de découvrir au bout d'un couloir.",
+      "## Pourquoi « réversible » et « inversé » ne sont pas le même mot sur un bon de livraison",
+      "Une distinction mince mais coûteuse sur les grosses commandes.",
+      "Un produit réversible est livré dans une main. Si un tableau indique quarante portes main gauche et que le produit est réversible, quelqu'un doit encore inverser quarante serrures, à moins que le fournisseur ne le fasse avant l'emballage, ce qu'il faut demander.",
+      "Sur une grosse commande, demandez donc que le produit soit livré inversé dans la main requise, et pas seulement un produit réversible. Cela ne coûte rien à l'usine, où l'on retourne un pêne avant de fermer la boîte, et cela coûte une journée sur le chantier dans le cas contraire.",
+      "Et si la commande est mixte, indiquez la répartition (« 24 LH, 16 RH »), car un fournisseur à qui on ne dit rien livrera tout dans le même sens, et il aura raison.",
+      "## Les deux conventions, en un paragraphe chacune",
+      "Assez pour s'en servir, sans reprendre en entier notre page sur les mains.",
+      "La convention européenne regarde la porte du côté où elle s'ouvre vers vous (côté tirage) et nomme la main selon le côté des paumelles. Paumelles à gauche : main gauche. C'est la convention derrière les désignations DIN que vous verrez dans les références de produits européens.",
+      "La convention nord-américaine se place à l'extérieur de la porte et ajoute un second axe : la porte s'ouvre-t-elle en s'éloignant de vous ou vers vous ? Cela donne quatre termes au lieu de deux (main gauche, main droite, main gauche inverse et main droite inverse), la paire inverse couvrant les portes qui s'ouvrent vers la personne placée à l'extérieur.",
+      "Le piège n'est pas que les conventions se contredisent. C'est qu'une porte correctement décrite comme main gauche dans l'une peut être correctement décrite comme main droite dans l'autre, sans que personne ne se soit trompé. C'est pourquoi la convention doit être nommée à côté de la main, à chaque fois, et pourquoi « LH » seul sur une commande internationale revient à jouer à pile ou face.",
+      "## Comment vérifier une porte en dix secondes, quelle que soit votre convention",
+      "Placez-vous devant la porte. Notez trois choses, et la main en découle dans l'un ou l'autre système.",
+      "De quel côté se trouvent les paumelles, telles que vous les voyez.",
+      "Dans quel sens elle s'ouvre, vers vous ou en s'éloignant de vous.",
+      "Quel côté est l'extérieur : évident sur une porte extérieure, et sur une porte intérieure, une décision que quelqu'un doit prendre et consigner.",
+      "Notez ces trois éléments plutôt qu'une main. Trois observations simples survivent à la traduction entre conventions, bureaux et langues ; une abréviation de deux lettres, non. Si un tableau porte les trois, toute personne en aval peut en déduire la bonne main dans son propre système et, plus utile encore, voir quand la main déjà écrite est fausse.",
+      "## Là où la main cesse d'être réversible : le relevé",
+      "En rénovation, la main n'est pas un choix, c'est une mesure, et cette mesure doit avoir lieu avant la commande et non après.",
+      "Deux choses rendent cela plus difficile qu'il n'y paraît. Un bâtiment a rarement une seule main : les couloirs alternent, et un étage qui paraît symétrique l'est rarement. Et les portes sont rependues : un vantail retourné lors d'une rénovation antérieure porte une quincaillerie dont la main ne correspond à rien d'autre sur l'étage.",
+      "Relevez donc les portes plutôt que les plans, comptez les deux mains, et notez la répartition par étage. Notre page sur l'interchangeabilité traite de la mesure de la serrure elle-même ; la main est le seul champ que l'on relève depuis le couloir sans rien toucher, et c'est celui que l'on reprend le plus souvent d'un plan qui a cessé d'être vrai depuis des années.",
+      "## La ligne à mettre sur une commande",
+      "Nommez la main et la convention. « Main gauche, convention européenne, vue de l'extérieur » est sans ambiguïté. « LH » seul ne l'est pas, car notre page sur les mains montre comment les conventions européenne et nord-américaine peuvent décrire la même porte avec des mots différents.",
+      "Indiquez quel côté est l'extérieur sur une porte où ce n'est pas évident : un local technique, un couloir intérieur entre deux espaces, une porte entre deux pièces qui se considèrent toutes deux comme l'intérieur.",
+      "Précisez si un produit réversible est acceptable ou s'il doit être livré dans la main, selon la section ci-dessus.",
+      "Et sur les doubles portes, indiquez-le par vantail. Une double porte, ce sont deux portes à main, et une ligne de tableau qui donne une seule main pour une double porte a décrit la moitié de la baie.",
+      "## Ce que nous publions, et la lacune honnête",
+      "Lorsqu'un modèle a une main, la fiche produit le dit et la référence de commande la porte. Lorsqu'un modèle est réversible, la fiche dit réversible et non universel, car ce sont deux promesses différentes et nous préférons écrire la plus étroite.",
+      "Ce que nos fiches n'indiquent pas encore systématiquement, c'est dans quelle main un produit réversible est livré par défaut. C'est l'information qui sous-tend le point « réversible n'est pas inversé » ci-dessus, et tant que les lignes ne la portent pas, la réponse vient commande par commande et non du catalogue.",
+      "Comme pour les lacunes de cotes de notre page sur l'interchangeabilité, c'est un travail de rapprochement et non une case à remplir avec une valeur par défaut plausible : une main par défaut inscrite dans une ligne et fausse sur cent portes est une erreur plus coûteuse qu'une ligne absente qui suscite une question. Un relevé qui consigne trois observations par porte coûte un après-midi et supprime la cause la plus fréquente d'un conteneur livré dans la mauvaise main."
+    ],
+    "faq": [
+      {
+        "question": "Que signifie « universel » dans un catalogue de quincaillerie ?",
+        "answer": "Trois choses différentes. Sans main : le produit n'a aucune main. Réversible sur chantier : il est livré dans un sens et peut être inversé sur place. À main d'usine : la main est intégrée, et une mauvaise main impose un nouveau produit. Seul le premier est réellement universel ; le deuxième est ce que désignent la plupart des catalogues."
+      },
+      {
+        "question": "Quelle quincaillerie est réellement sans main ?",
+        "answer": "La plupart des paumelles sur une porte battante ordinaire, la plupart des béquilles simples sur rosace, les poignées de tirage, plaques de poussée, plaques de propreté, butoirs, la plupart des verrous à encastrer, et les cylindres. Un cylindre européen n'a aucune main : il a une longueur et une répartition, que l'on confond parfois avec la main parce qu'une erreur sur l'une ou l'autre produit le même symptôme."
+      },
+      {
+        "question": "Que se passe-t-il réellement quand on inverse une serrure ?",
+        "answer": "Le pêne demi-tour pivote de 180 degrés pour que son biseau fasse face au sens de fermeture. C'est généralement tout le mécanisme : le pêne dormant est symétrique et indifférent. L'opération est rapide quand le modèle la permet et impossible quand il ne la permet pas ; il n'y a pas de demi-mesure."
+      },
+      {
+        "question": "Quels produits ont une main quand on suppose le contraire ?",
+        "answer": "Quatre. La garniture extérieure de fermeture anti-panique, le dispositif étant généralement sans main et la garniture non. Les ferme-portes en montage à bras parallèle, dont le jeu de bras a une main même quand le corps n'en a pas. Les béquilles de forme travaillée ou asymétrique, qui se retrouvent à l'envers au lieu d'être inversées. Et les coffres à pêne de condamnation automatique ou à fouillot décalé, symétriques en dimensions et à main dans leur fonctionnement."
+      },
+      {
+        "question": "Demander un produit réversible suffit-il sur une grosse commande ?",
+        "answer": "Non. Un produit réversible est livré dans une main : quarante portes main gauche signifient toujours que quelqu'un inverse quarante serrures. Demandez que le produit soit livré inversé dans la main requise. Cela ne coûte rien à l'usine, où l'on retourne un pêne avant de fermer la boîte, et cela coûte une journée sur le chantier dans le cas contraire."
+      },
+      {
+        "question": "Que doit dire la ligne de main sur une commande ?",
+        "answer": "La main et la convention, « main gauche, convention européenne, vue de l'extérieur » plutôt que « LH », car les conventions européenne et nord-américaine peuvent décrire la même porte avec des mots différents. Indiquez quel côté est l'extérieur quand ce n'est pas évident. Précisez si un produit réversible est acceptable. Et sur les doubles portes, indiquez-la par vantail."
+      }
+    ]
+  },
+  "zinc-alloy-die-cast-hardware-2026": {
+    "title": "Quincaillerie en alliage de zinc 2026 : ce qu'est vraiment le zamak, où il a sa place, et les quatre façons dont une mauvaise pièce moulée cède",
+    "summary": "L'alliage de zinc est le deuxième matériau le plus courant de notre catalogue, et celui dont les acheteurs se méfient le plus, généralement pour des raisons qui décrivent de mauvaises pièces moulées plutôt que le matériau. Cette page explique ce qu'est le zamak, ce que le moulage sous pression fait vraiment bien, les quatre façons distinctes dont une mauvaise pièce en zinc cède, où le zinc ne doit jamais être employé, et quoi demander à une usine pour que la réponse ait un sens.",
+    "seoTitle": "Quincaillerie en zamak 2026 : où il a sa place",
+    "seoDescription": "Ce qu'est le zamak, ce que fait bien le moulage sous pression, les quatre défaillances d'une mauvaise pièce, où éviter le zinc, et quoi demander.",
+    "body": [
+      "Dites « alliage de zinc » à un acheteur expérimenté et observez sa réaction. C'est le matériau le plus souvent perçu comme un compromis sur le coût, et cette méfiance est méritée, par les mauvaises pièces moulées, pas par l'alliage.",
+      "C'est aussi, en comptant honnêtement, le deuxième matériau le plus courant de notre propre catalogue. Plutôt que de le décrire avec les adjectifs habituels des fournisseurs, cette page dit ce qu'il est, ce qu'il fait bien, et précisément comment il cède quand il cède.",
+      "## Ce qu'est le zamak",
+      "Le zamak est une famille d'alliages de zinc de fonderie. Son nom est un acronyme des noms allemands de ses constituants (zinc, aluminium, magnésium et cuivre), et les nuances employées en quincaillerie sont surtout le Zamak 3 et le Zamak 5.",
+      "Le Zamak 3 contient environ 4 % d'aluminium, une petite addition de magnésium, et du zinc pour le reste. Le Zamak 5 est pratiquement identique avec environ 1 % de cuivre en plus, ce qui augmente légèrement la résistance et la dureté au prix d'une moindre stabilité dimensionnelle à long terme. Confirmez la nuance exacte avec l'usine au lieu de la supposer ; la différence compte sur une pièce sollicitée et pas du tout sur une plaque de recouvrement.",
+      "Ces alliages existent pour leur comportement en fonderie plutôt que pour leurs propriétés mécaniques. Ils fondent à basse température, remplissent des formes fines et complexes, reproduisent les détails, et sortent du moule avec une surface assez bonne pour être revêtue directement.",
+      "## Ce que le moulage sous pression fait vraiment bien",
+      "| Propriété | Pourquoi elle compte en quincaillerie |\n| --- | --- |\n| Forme complexe en une injection | Une béquille avec une courbe, un retour, un moyeu et un bossage sort en une seule pièce |\n| Détail fin et tolérance serrée | Surface prête au revêtement, filetages et bossages venus de fonderie |\n| Faible usure du moule grâce au bas point de fusion | Longue durée de vie du moule, donc un coût unitaire qui baisse vite avec le volume |\n| Excellente adhérence des revêtements galvaniques | La raison pour laquelle la plupart des béquilles et rosaces revêtues sont en zinc |\n| Densité proche de celle du laiton | La pièce paraît consistante en main, contrairement à la plupart des plastiques ou des aciers minces |",
+      "Cette dernière ligne mérite qu'on s'y arrête, car elle explique beaucoup de comportements de prescription. Une béquille en zinc et une béquille en laiton pèsent à peu près autant. Un acheteur qui juge la qualité au poids ne peut pas les distinguer ; c'est pourquoi le zinc est employé là où la sensation du produit compte, et pourquoi une mauvaise pièce en zinc passe le premier test que l'on applique.",
+      "Le résumé honnête : l'alliage de zinc est un matériau de mise en forme, pas un matériau de résistance. Là où il s'agit de produire en volume une forme compliquée avec une bonne surface, ce n'est pas un compromis, c'est le bon procédé, et le laiton ou l'inox coûteraient plus cher sans être meilleurs.",
+      "## Les quatre façons dont une mauvaise pièce en zinc cède",
+      "Les nommer séparément compte, car elles ont des causes et des indices différents.",
+      "La porosité : du gaz piégé pendant l'injection laisse des vides dans la pièce. Elle paraît parfaite et elle est faible à l'endroit du vide. Cela se manifeste par une béquille qui casse sous une charge qu'elle aurait dû supporter, ou par une surface revêtue qui cloque là où un vide sous-jacent dégaze. Cause : maîtrise du procédé, vitesse d'injection, température du moule, évents.",
+      "Les sections minces sous charge : une pièce peut être moulée plus mince que ne le justifie la charge, car le moule la remplira et la pièce aura l'air juste. C'est la cause réelle la plus fréquente des défaillances du zinc en quincaillerie, et c'est une décision de conception, pas une propriété du matériau. Cause : concevoir au poids plutôt qu'à la charge.",
+      "Le fluage : les alliages de zinc se déforment lentement sous une charge permanente à température ambiante, davantage que l'acier ou le laiton. Sur une pièce soumise à un effort constant (un ancrage de ressort, un assemblage serré), un composant en zinc peut se relâcher au fil des années et prendre du jeu sans casser. Cause : employer du zinc là où la charge ne disparaît jamais.",
+      "La corrosion intergranulaire due aux impuretés : le plomb, l'étain et le cadmium au-delà de l'état de traces font gonfler, fissurer et s'effriter les pièces en zinc au fil des années, surtout en milieu humide. C'est la défaillance qui a fait la réputation du « pot metal », et c'est entièrement une question de pureté de l'alliage. Cause : des chutes non maîtrisées dans la fusion.",
+      "Trois de ces quatre défaillances relèvent du procédé et de la conception plutôt que des propriétés du zinc. La quatrième relève de la pureté. Aucune n'est un argument contre l'alliage de zinc en tant que tel, et toutes sont des arguments pour savoir quelle usine a fabriqué la pièce.",
+      "## Où le zinc ne doit pas être employé du tout",
+      "Les carrés : un carré transmet tout le couple d'une béquille par la plus petite section de l'ensemble. Il doit être en acier. Notre page sur les carrés explique pourquoi le matériau n'y est pas un détail.",
+      "Les ressorts et ancrages de ressort : à cause du fluage, comme ci-dessus.",
+      "Les pièces soumises à un serrage permanent, pour la même raison.",
+      "Tout ce qui doit résister à une attaque déterminée : un corps de cylindre de sécurité, un pêne dormant, une gâche sur laquelle agira une effraction ; ces pièces demandent de l'acier ou du laiton, et un composant en zinc sur ce chemin est celui que l'attaque trouvera.",
+      "Les applications à haute température, y compris partout où un classement au feu est en jeu. Le point de fusion du zinc est bas par rapport à celui de l'acier et du laiton, ce qui est l'une des raisons pour lesquelles le choix de la quincaillerie coupe-feu est une question de certificat plutôt que de matériau.",
+      "## Zinc, laiton et inox comparés pour une béquille",
+      "| | Alliage de zinc | Laiton | Inox |\n| --- | --- | --- | --- |\n| Liberté de forme | La plus grande | Grande (moulé ou forgé) | La plus faible (généralement formé ou usiné) |\n| Résistance | La plus faible | Moyenne | La plus élevée |\n| Adhérence des revêtements | Excellente | Excellente | Bonne, souvent laissé sans revêtement |\n| Coût en volume | Le plus bas | Moyen | Le plus élevé |\n| Corrosion sans revêtement | Faible | Bonne, se ternit | La meilleure |\n| Sensation en main | Consistante | Consistante | Consistante |",
+      "La ligne qui décide la plupart des prescriptions réelles est la corrosion sans revêtement. La quincaillerie en alliage de zinc est pratiquement toujours revêtue, et sa tenue à la corrosion est celle du revêtement, pas de l'alliage. Là où ce revêtement sera entaillé, usé ou nettoyé avec un produit agressif (notre page sur les finitions chromées liste les produits en cause), le support est exposé et le zinc est le plus faible des trois.",
+      "Voilà la vraie règle : le zinc à l'intérieur et revêtu, le laiton et l'inox là où la surface sera agressée.",
+      "## Distinguer en main une bonne pièce en zinc d'une mauvaise",
+      "Aucun de ces indices n'est concluant seul, mais ensemble ils séparent une pièce bien faite d'une pièce bon marché plus sûrement que le poids.",
+      "Regardez le plan de joint : toute pièce moulée sous pression en a un, là où les deux moitiés du moule se rencontrent. Sur une pièce bien faite, c'est une ligne fine et régulière qui a été ébavurée ; sur une pièce bon marché, c'est une arête que l'on sent au doigt, parfois avec une bavure encore attachée. Le plan de joint est l'indice le moins coûteux de la finition qu'a reçue la pièce.",
+      "Regardez l'intérieur du creux : retournez une béquille et observez l'intérieur non revêtu où la fonderie est visible. Une bonne pièce présente une surface régulière et à grain fin ; une mauvaise montre une texture rugueuse et sableuse ou des retassures visibles. C'est la surface que personne ne polit, et c'est justement pour cela qu'elle dit la vérité.",
+      "Vérifiez la section à la jonction entre la béquille et le moyeu : c'est là que se concentre l'effort de flexion, et là que se voit une conception en sections minces. Une pièce qui s'amincit presque à rien au niveau du moyeu a été conçue pour un objectif de poids.",
+      "Tapotez-la : une pièce saine sonne brièvement ; une pièce poreuse sonne mat. C'est un test rudimentaire, et les acheteurs expérimentés l'utilisent quand même, car la porosité n'a aucun autre indice extérieur.",
+      "Ce qu'aucun de ces indices ne détecte, c'est la corrosion intergranulaire due aux impuretés, invisible pendant des années puis apparente partout à la fois. C'est une question sur la maîtrise de la fusion à l'usine, et la seule façon honnête d'y répondre est de la poser.",
+      "## Ce qu'utilise réellement notre catalogue",
+      "Décompte établi à partir des lignes matériau de chaque produit qui en comporte une.",
+      "| Matériau | Lignes | Part |\n| --- | --- | --- |\n| Acier inoxydable | 262 | 46 % |\n| Alliage de zinc | 156 | 28 % |\n| Laiton | 57 | 10 % |\n| Fer | 39 | 7 % |\n| Aluminium | 26 | 5 % |\n| Autre ou mixte | 24 | 4 % |",
+      "Vingt-huit pour cent d'alliage de zinc est une proportion normale pour une gamme de quincaillerie qui comprend beaucoup de béquilles et de rosaces revêtues. Ce n'est pas un chiffre à cacher, et le publier est plus utile que l'alternative habituelle consistant à tout décrire comme un « alliage de haute qualité ».",
+      "Ce que nos lignes n'indiquent pas actuellement, c'est la nuance de zamak. « Zinc Alloy » apparaît 70 fois et « Zinc alloy » 62 fois de plus ; aucune ne nomme le Zamak 3 ou le Zamak 5. C'est la même lacune que notre page sur l'inox signale pour le 201 face au 304, avec la même réponse honnête : demandez à chaque commande ; la lacune se comble par rapprochement avec les registres de l'usine, et non en inscrivant une nuance plausible dans 156 lignes.",
+      "## Quoi demander, pour que la réponse ait un sens",
+      "Quelle nuance de zamak, et si les pièces internes sollicitées sont en zinc ou en acier. Sur une serrure, la réponse est souvent « le coffre est en zinc, les pièces de travail en acier », ce qui est une bonne réponse, mais elle doit être donnée et non supposée.",
+      "L'épaisseur des sections aux points de charge : un plan y répond ; une description, non.",
+      "Si l'alliage est neuf ou contient de la matière recyclée et, dans ce cas, comment les impuretés sont maîtrisées. C'est la question qui se cache derrière la corrosion intergranulaire, et une usine qui a une réponse y a réfléchi.",
+      "Quel est le revêtement, et quelle est son épaisseur : car sur le zinc, le revêtement, c'est la tenue à la corrosion.",
+      "Un fournisseur qui répond aux quatre vous en a dit plus sur la pièce que n'importe quel adjectif. Un fournisseur qui répond « alliage de zinc de haute qualité » vous a donné le nom du matériau, et rien d'autre."
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce que le zamak ?",
+        "answer": "Une famille d'alliages de zinc de fonderie ; le nom est un acronyme de zinc, aluminium, magnésium et cuivre. La quincaillerie utilise surtout le Zamak 3 (environ 4 % d'aluminium, zinc pour le reste) et le Zamak 5 (le même avec environ 1 % de cuivre, un peu plus résistant). Ces alliages existent pour leur comportement en fonderie plutôt que pour leur résistance."
+      },
+      {
+        "question": "La quincaillerie en alliage de zinc est-elle de mauvaise qualité ?",
+        "answer": "Pas par nature. L'alliage de zinc est un matériau de mise en forme : il remplit des formes complexes, conserve les détails fins et se revêt remarquablement bien, c'est pourquoi la plupart des béquilles et rosaces revêtues sont en zinc. La méfiance vient des mauvaises pièces moulées (porosité, sections minces, corrosion due aux impuretés), qui sont des défaillances de procédé et de conception plutôt que des propriétés de l'alliage."
+      },
+      {
+        "question": "Comment cède une mauvaise pièce en zinc ?",
+        "answer": "De quatre façons distinctes. La porosité : des vides gazeux laissent la pièce faible là où elle paraît parfaite. Les sections minces conçues au poids plutôt qu'à la charge. Le fluage : le zinc se déforme lentement sous une charge permanente, et un assemblage prend du jeu sans casser. Et la corrosion intergranulaire due au plomb, à l'étain ou au cadmium, la défaillance qui a valu son nom au « pot metal »."
+      },
+      {
+        "question": "Où ne faut-il jamais employer d'alliage de zinc ?",
+        "answer": "Pour les carrés, qui doivent être en acier car ils transmettent tout le couple par la plus petite section. Pour les ressorts et ancrages de ressort, et tout ce qui subit un serrage permanent, à cause du fluage. Pour tout ce qui doit résister à une attaque déterminée, comme un corps de cylindre de sécurité ou un pêne dormant. Et partout où un classement au feu est en jeu."
+      },
+      {
+        "question": "Comment le zinc se compare-t-il au laiton et à l'inox pour une béquille ?",
+        "answer": "Le zinc offre la plus grande liberté de forme et le coût le plus bas en volume, le laiton se situe au milieu, l'inox est le plus résistant et le plus résistant à la corrosion. La ligne qui décide la plupart des prescriptions est la corrosion sans revêtement : la quincaillerie en zinc est pratiquement toujours revêtue, et sa tenue à la corrosion est celle du revêtement, pas de l'alliage. Le zinc à l'intérieur et revêtu ; le laiton ou l'inox là où la surface sera agressée."
+      },
+      {
+        "question": "Quelle part de votre catalogue est en alliage de zinc ?",
+        "answer": "156 lignes matériau sur 564, soit 28 %, en deuxième position après l'inox à 46 %. C'est une proportion normale pour une gamme riche en béquilles et rosaces revêtues. Ce que nos lignes n'indiquent pas encore, c'est la nuance de zamak : « Zinc Alloy » apparaît 70 fois et « Zinc alloy » 62 fois de plus, et aucune ne nomme le Zamak 3 ou 5. Demandez-la à chaque commande."
+      }
+    ]
   }
 }

@@ -58,6 +58,15 @@ DV05/DV06 表面列表里多一个 "n"；DS05 用西里尔字母 ф 当直径符
 **hreflang 互惠修复**：`(en|es|pt)/products/[category]/[slug]/page.tsx` 三处硬编码 en/es/pt 的 `languages` 改为 `alternateLanguages()`，
 否则七语种产品页指向英西葡而对方不指回，`scripts/seo-audit.test.mjs` 报 10,841 处 `hreflang-not-reciprocal`。
 
+## M5–M7 文章（后续提交 85d024a03a6 … 及之后）
+
+新闻 37 篇 × 7、案例 5 篇 × 7 已合入；指南 44（+1 新增）逐批合入中。写手的英文源报告已转文案会话并改好 47 条记录，
+用 `git diff <old>..<new> -- content/products` 算出变动字段，`i18n-batch --slugs` 只重译这些字段。工程会话把七语种 seoTitle/seoDescription 写进了
+`products.json`（看板「产品字段」升到 100%），并按文案会话定名改了三条 slug（dsl02/dc01 → door-coordinator，hy-0ss → latch-guard）。
+
+**并发纪律（本轮学到的）**：子代理只写 `tmp/i18n/` 和经 merge 写 `content/i18n/`；改 `i18n-merge.mjs` 时先写临时文件再 `mv` 原子替换，因为七个子代理随时在调用它；
+提交前把每个暂存的 JSON `git show :path | JSON.parse` 一遍，防止抓到写了一半的文件。
+
 ## 测试
 
 | 检查 | 结果 |

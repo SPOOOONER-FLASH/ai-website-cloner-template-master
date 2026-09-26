@@ -60,9 +60,9 @@ downloads、finishes、model-lookup、glossary、documents、faq、certification
 - [x] M2 术语表七语种（09-25，~1,087 条/语种；不可译条目按 `i18n-prune-untranslatable.mjs` 规则不入表）。
 - [x] M3 界面文案 ui.json 七语种（09-25，662 键；`en-GB`/`English` 等常量表不再提取）。
 - [x] M4 产品 **521 条在售 HYDE 记录** × 7（09-25 合入；seoTitle/seoDescription 归工程会话标题生成器；合页 25 条摘要待英文源改后重译）（`!sites || sites.includes("hyde")` 且有主图；发布会话 09-25 校正，雷茵专属的另一半不渲染）。分批，每批 60。
-- [ ] M5 新闻 37 篇 × 7。
+- [x] M5 新闻 37 篇 × 7（09-25 合入；之后新增的文章按看板差额补）。
 - [ ] M6 指南 44 篇 × 7。
-- [ ] M7 应用案例 5 篇 × 7（ja/ko/tr/ru/ar 已合入，fr/de 待重派）、首页文案、下载中心。
+- [x] M7 应用案例 5 篇 × 7（09-25 合入）；首页文案与下载中心走 ui.json（M3 已含）。
 - [x] M4b 材质一致性校验（09-25）：`i18n-batch` 产品作业带 `material`，`i18n-merge` 用 `scripts/lib/i18n-material.mjs` 拒绝「摘要提到别的金属却从不提本品材质」的译文（只查 summary；description 的模板句嵌类目名是英文源的问题，已转文案会话）。首轮跑出 42 条——8 条「颜色当材质」产品的摘要丢了 Zinc alloy——已重译。
 - [ ] M8 母语抽查（阿、土、俄、日、韩）与页面级英文残留清零；Search Console 提交。
 
