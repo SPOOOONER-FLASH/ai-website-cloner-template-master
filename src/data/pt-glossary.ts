@@ -483,6 +483,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Hydraulic Hinge": "Dobradiça hidráulica",
   "Door Closer": "Mola aérea",
   "Door Coordinator": "Coordenador de fechamento",
+  "Latch Guard": "Protetor antialavanca para fechadura",
   "Pry Latch": "Lingueta antialavanca",
   "Door Flush Bolt": "Ferrolho embutido",
   "Stainless Steel Flush Bolt": "Ferrolho embutido em inox",

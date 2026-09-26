@@ -1,7 +1,7 @@
 {
   "model": "DSL02",
   "slug": "dsl02-panic-exit-device",
-  "name": "Panic Exit Device",
+  "name": "Door Coordinator",
   "series": "Panic Exit Device",
   "categoryPath": [
     "panic-exit-devices"
@@ -71,7 +71,7 @@
   "relatedModels": [],
   "seoTitle": "DSL02 Panic Exit Device for Fire Escape & Exit Doors | Canton Hyland",
   "seoDescription": "DSL02 panic exit device for fire escape & exit doors. Stainless steel 304, Automatic Door Sequencing.",
-  "nameEs": "Barra antipánico",
+  "nameEs": "Selector de cierre",
   "specsEs": [
     {
       "label": "Material",
@@ -98,7 +98,7 @@
       "value": "Nylon"
     }
   ],
-  "summaryEs": "Una barra antipánico de acero inoxidable 304, función secuenciador automático de cierre.",
+  "summaryEs": "Selector de cierre de acero inoxidable 304 para puertas de dos hojas, con fuerza de cierre regulable y rodillos de nailon.",
   "seoTitleEs": "DSL02 Barra antipánico para puertas de evacuación y salida | Canton Hyland",
   "seoDescriptionEs": "DSL02 barra antipánico para puertas de evacuación y salida. Acero inoxidable 304. Directo de fábrica, muestras y cotización a pedido.",
   "summarySource": "https://stahlock.com/index.php?id=2422",
@@ -115,8 +115,8 @@
     "fetchedAt": "2026-09-04"
   },
   "description": "",
-  "namePt": "Barra antipânico",
-  "summaryPt": "Barra antipânico em aço inoxidável 304.",
+  "namePt": "Coordenador de fechamento",
+  "summaryPt": "Coordenador de fechamento em aço inox 304 para portas de duas folhas, com força de fechamento regulável e roletes de náilon.",
   "specsPt": [
     {
       "label": "Material",
