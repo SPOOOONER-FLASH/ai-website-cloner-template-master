@@ -17,6 +17,11 @@
       "fixed-grab-bars": {
         "name": "고정식 안전 손잡이"
       }
+    },
+    "sourceHash": {
+      "name": "1d8703f479b4",
+      "summary": "bb00f73bf257",
+      "children": "a9fe67671893"
     }
   },
   "deadbolts": {
@@ -46,6 +51,11 @@
       "hydraulic-hinges": {
         "name": "유압 힌지"
       }
+    },
+    "sourceHash": {
+      "name": "9050e2258d52",
+      "summary": "22c3f4c1a620",
+      "children": "b272580d2905"
     }
   },
   "glass-door-accessories": {
@@ -58,6 +68,11 @@
       "glass-door-handles": {
         "name": "유리문 핸들"
       }
+    },
+    "sourceHash": {
+      "name": "2927a876fed1",
+      "summary": "50b31e571b2e",
+      "children": "aa0f23c9d2a3"
     }
   },
   "grip-handle-sets": {
@@ -95,6 +110,11 @@
       "security-door-guards": {
         "name": "방범 도어 가드"
       }
+    },
+    "sourceHash": {
+      "name": "08acb49c598f",
+      "summary": "353582668f2a",
+      "children": "e4bd852bf182"
     }
   },
   "knob-locks": {
@@ -116,6 +136,11 @@
       "wafer-locks": {
         "name": "웨이퍼 락"
       }
+    },
+    "sourceHash": {
+      "name": "54834eed75c2",
+      "summary": "f32acdb308fa",
+      "children": "3c7e1e75a2a1"
     }
   },
   "lever-handles": {
@@ -153,6 +178,11 @@
       "special-applications": {
         "name": "특수 용도"
       }
+    },
+    "sourceHash": {
+      "name": "b505be3b9f88",
+      "summary": "b26cfbb3d8a2",
+      "children": "7e1732635b1a"
     }
   },
   "sliding-hook-locks": {
@@ -166,6 +196,11 @@
       "brass-pull-handles": {
         "name": "황동 풀 핸들"
       }
+    },
+    "sourceHash": {
+      "name": "ba12e4fd6c34",
+      "summary": "7aa9cbc9a23c",
+      "children": "a9f97ecb4ef5"
     }
   }
 }

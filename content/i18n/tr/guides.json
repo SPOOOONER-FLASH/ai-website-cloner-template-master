@@ -52,7 +52,15 @@
         "question": "Eski kilidi mi ölçmeliyim, kapıyı mı?",
         "answer": "Kapıdaki işlemeyi ölçün. Önceki kilit zaten bir uzlaşmaysa (yeniden asılmış ya da kaplaması yenilenmiş kapılarda sık görülür), onu ölçmek o uzlaşmayı yeni kilide taşır. Kalınlığı kilit kenarında kumpasla, backset'i ise kapı kenarından mil deliği merkezine kadar ölçün."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "5ea9fb528972",
+      "summary": "0f0dd30a01bc",
+      "seoTitle": "3d9bbb1322c6",
+      "seoDescription": "1656c80177da",
+      "body": "3405e0a6131f",
+      "faq": "5c92f1406bac"
+    }
   },
   "brass-alloys-and-dezincification-2026": {
     "title": "Pirinç Kapı Donanımı 2026: Hangi Pirinç, İçinde Neden Kurşun Var ve Kıyı Projelerine Karar Veren Tek Arıza Türü",
@@ -140,7 +148,15 @@
         "question": "Ürün sayfalarınız pirinç alaşımını belirtiyor mu?",
         "answer": "Hayır. Pirinç 564 malzeme satırının 57'sinde (%10) geçiyor; bu satırlarda CZ121, C36000 veya başka bir tanım olmadan “Pirinç” ya da “Masif Pirinç” yazıyor ve alaşımın DZR olup olmadığı belirtilmiyor. Her siparişte sorun ve yazılı alın; cevap alınamıyorsa varsayımda bulunmayın, parçayı DZR olmayan kabul edin."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "a1a9ad3d23f9",
+      "summary": "27d2eb1c5b9e",
+      "seoTitle": "6b4550ca54ee",
+      "seoDescription": "d2c2fe2477c0",
+      "body": "00b316df6465",
+      "faq": "51b5f399ef56"
+    }
   },
   "certification-and-test-validation-2026": {
     "title": "2026'da Donanım Sertifikası Doğrulama: Yedi Bölüm, DoP ve CE İşareti, Altı Uyarı İşareti",
@@ -225,7 +241,15 @@
         "question": "Panik çıkış cihazlarınızın yangın belgesi var mı?",
         "answer": "307 ve 311 panik çıkış cihazlarımız test aşamasındadır. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bir ürünün test edildiği yerde sayfa standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine verilir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "44cb79616657",
+      "summary": "63892f788aae",
+      "seoTitle": "35c004da3cb5",
+      "seoDescription": "092e11d1aec4",
+      "body": "57e62f3e9f1a",
+      "faq": "fc86e6f3ef20"
+    }
   },
   "chrome-finish-differences-2026": {
     "title": "2026'da Krom, Saten Krom ve Saten Nikel: İki Tedarikçinin \"Parlak Kromu\" Neden Uyuşmaz ve Uyuşanı Nasıl Belirtirsiniz",
@@ -308,7 +332,15 @@
         "question": "Ürün sayfalarınız kaplama kodu veriyor mu?",
         "answer": "Tutarsız biçimde ve bunu söylemek için doğru yer bu sayfa. 336 kaplama satırında aynı kaplama birkaç şekilde yazılmış: 41 kez \"Satin Nickel (SN)\", 38 kez daha \"Satin nickel\"; krom ise \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" ve çıplak \"chrome\" olarak. Kodu olmayan satırlar yeniden sipariş veremeyeceğiniz satırlardır. Kaplama kodu tablomuza göre normalleştiriliyor."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "98247ea9077e",
+      "summary": "6619ce04a91d",
+      "seoTitle": "b665add1ab44",
+      "seoDescription": "b95446a4e3c4",
+      "body": "66900bbdb6bc",
+      "faq": "1fdc19bda3a8"
+    }
   },
   "commercial-lock-function-decision-2026": {
     "title": "2026'da Kilit Fonksiyonu Seçimi: Oda Tipine Göre Karar Tablosu ve Her Açıklığı Çözen İki Soru",
@@ -386,7 +418,15 @@
         "question": "Kataloğunuz gerçekte hangi fonksiyonları taşıyor?",
         "answer": "Kataloğumuzdaki 588 kayıtta: giriş 78, mahremiyet 27, geçiş 18, tek/çift silindir ya da kendiliğinden kilitleme 21, seçilebilir fonksiyon 8; derslik, depo, ara kapı, giriş ve ara kapı ile çıkış dili ise birer model. Giriş, mahremiyet ve geçişte güçlüyüz ve geniş bir kurumsal fonksiyon yelpazesi değiliz; kırk açıklığı bize göre tasarlamadan önce sorun."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "dd606844d309",
+      "summary": "80eb5664bd3f",
+      "seoTitle": "6dda3d33e6ef",
+      "seoDescription": "1a7bacec2dca",
+      "body": "a4d66906967c",
+      "faq": "604001007d0e"
+    }
   },
   "container-loading-door-hardware-2026": {
     "title": "2026'da Kapı Donanımı Konteyner Yüklemesi: 40HQ Neden 40GP'den Fazlasını Almaz",
@@ -447,7 +487,15 @@
         "question": "Her model için paketleme verisi yayımlıyor musunuz?",
         "answer": "Hayır. Bu sayfanın arkasındaki çalışma tablosu 26 kalemi kapsar ve bunların 19'u kullanılacak kadar eksiksizdir; diğer yedisi kaynakta kısmen okunamaz ve buradaki her değerin dışında tutulmuştur. Bir satır yoksa komşu bir modelden ara değer hesaplamak yerine bunu söyleriz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "65920f957172",
+      "summary": "74b34a80c519",
+      "seoTitle": "77f4ec3c316e",
+      "seoDescription": "73ae1beb2ca5",
+      "body": "b53eebb1b94f",
+      "faq": "d11128cd8176"
+    }
   },
   "copper-or-brass-hinges-2026": {
     "title": "Bakır Menteşe mi, Pirinç Menteşe mi? Kapı Menteşesi Sipariş Ederken \"Bakır Menteşe\" Ne Demektir",
@@ -482,7 +530,15 @@
         "question": "Menteşelerinizden hangileri pirinç?",
         "answer": "B024 ve B025 malzeme olarak pirinç yayımlar. İkisi de diğer kaplamaların yanında antik bakırda sunulur ve 90 ile 180 derece arasında açılır; B024 2,0 ile 3,5 mm kalınlığındadır."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "53f403ec9baf",
+      "summary": "7bde88911274",
+      "seoTitle": "c6133c9d0be4",
+      "seoDescription": "9ed3436e203f",
+      "body": "f05ccf837790",
+      "faq": "421f74431085"
+    }
   },
   "corrosion-resistance-en-1670-2026": {
     "title": "2026'da Korozyon Direnci: EN 1670 Sınıfları 0–5, Tuz Püskürtme Saatleri ve Testin Size Söylemedikleri",
@@ -547,7 +603,15 @@
         "question": "Tüm kaplamalarınız için tuz püskürtme değeri yayımlıyor musunuz?",
         "answer": "Hayır. Bir korozyon sınıfını ya da tuz püskürtme sonucunu yalnızca model gerçekten test edilmişse, test edildiği standartla birlikte belirtiriz. Test edilmemiş bir kaplama için hiçbir değer görünmez; çünkü bir değer vermek bir laboratuvar sonucu uydurmak olurdu. Ölçmediğimiz ölçüler konusundaki tutumumuzla aynı."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "1e910cc3e537",
+      "summary": "fcef160d6f59",
+      "seoTitle": "ee06b025f62c",
+      "seoDescription": "94c0251601c0",
+      "body": "43ceb7e51ae3",
+      "faq": "2df7773598bc"
+    }
   },
   "cycle-testing-durability-grades-2026": {
     "title": "200.000 Çevrim: EN 1906'da ve ANSI/BHMA'da Dayanıklılık Değeri Ne Demektir ve Neden Aynı Sayı Değildir",
@@ -607,7 +671,15 @@
         "question": "200.000 değeriniz üçüncü taraf belgeli mi?",
         "answer": "Onu taşıyan 132 kaydın her birinde değil. Bir test raporu olduğunda laboratuvarını, referans numarasını, düzenleme tarihini ve kapsanan belirli modeli yayımlar, belgeyi uygun yoldan göndeririz. Bir kayıt değeri adı geçen bir standart olmadan belirtiyorsa, onu üreticinin beyan ettiği bir değer olarak ele alın ve bir onay dosyasına yazmadan önce sorun."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "02121f32bf17",
+      "summary": "c052dc39cc77",
+      "seoTitle": "34edf915b52d",
+      "seoDescription": "e5a4424a0d26",
+      "body": "758851cc7e22",
+      "faq": "b42c916771b4"
+    }
   },
   "cylindrical-and-tubular-lock-comparison-2026": {
     "title": "2026'da Silindirik ve Tübüler Kilit Karşılaştırması: Dört Aile, Her Seri ve \"Ağır Hizmet\" Gerçekte Neyi Değiştirir",
@@ -667,7 +739,15 @@
         "question": "Silindirik kilitleriniz ANSI Grade 1 mi Grade 2 mi?",
         "answer": "Hiçbir sınıf iddia edilmez. ANSI/BHMA sertifikamız yoktur ve bu sayfalardaki 200.000 çevrim sınıflandırılmış bir test sonucu değil, yayımladığımız beklentidir. Bir şartname BHMA sınıfı gerektiriyorsa, bir sertifika oluşana kadar bu gereklilik bu kilitlerle karşılanamaz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "314a85b76295",
+      "summary": "a1495f21fa4b",
+      "seoTitle": "532b656512d1",
+      "seoDescription": "01e047ebdecd",
+      "body": "0e68c49bcc3d",
+      "faq": "0fefb97329cc"
+    }
   },
   "dimensional-interchangeability-2026": {
     "title": "2026'da Ölçüsel Değiştirilebilirlik: Bir Kilidin Yerine Oturup Oturmayacağını Belirleyen Yedi Ölçü ve Kaçını Yayımladığımız",
@@ -747,7 +827,15 @@
         "question": "Mevcut kilidi kopyalamak her zaman doğru yaklaşım mı?",
         "answer": "Hayır. Yeniden asılmış, yeniden kaplanmış ya da yeniden boyanmış bir kapıda takılı kilit çoğu zaman birinin uydurduğu bir parçadır; onu kopyalamak uzlaşmayı gelecekteki her siparişe kopyalar. İçindeki kilidi değil kapı hazırlığını ölçün. Bir yangın kapısında ise ölçüsel eşleşme sertifika sorusunu cevaplamaz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "0940f1649707",
+      "summary": "123e64582159",
+      "seoTitle": "7a2193d4b314",
+      "seoDescription": "10577d7b7cb0",
+      "body": "2ffdc192dfcd",
+      "faq": "523500ce46eb"
+    }
   },
   "door-closer-mounting-positions-2026": {
     "title": "2026'da Kapı Kapatıcı Montajı: Standart Kol, Kasa Üstü, Paralel Kol ve Kızaklı Kol Karşılaştırması",
@@ -813,7 +901,15 @@
         "question": "Gizli kapatıcı yalnızca başka bir montaj pozisyonu mu?",
         "answer": "Hayır, farklı bir cihaz sınıfıdır. Gizli bir kapatıcı kapı kanadının ya da üst kasanın içinde durur ve üretim sırasında kapıya planlanmalıdır; bir yer menteşesi ise döşemeye planlanmalıdır. Hiçbiri buna göre hazırlanmamış bir kapıya ya da zemine sonradan takılamaz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "118927252950",
+      "summary": "ec9809e4aff7",
+      "seoTitle": "6e75c1b4ac89",
+      "seoDescription": "df5ffd713ec9",
+      "body": "e163b15aa61b",
+      "faq": "dce3662bf14c"
+    }
   },
   "door-closer-power-size-2026": {
     "title": "2026'da Kapı Kapatıcı Güç Sınıfı: EN 1154 Sınıf 1–7, A156.4 ve Kapıdan Yola Çıkarak Seçim",
@@ -875,7 +971,15 @@
         "question": "Yangın kapısında gecikmeli kapanmaya izin verilir mi?",
         "answer": "Mekanik bir ayar olarak değil. Gecikmeli kapanma kapıyı geniş bir açıda açık tutar ve bir yangın kapısını açık tutan her şey montajın yangında ne yaptığını değiştirir. Yangın kapısındaki açık tutma, alarm sistemi tarafından serbest bırakılan elektromanyetik bir cihaz olmalıdır."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "7e4b49a5c4a4",
+      "summary": "20bff732ec18",
+      "seoTitle": "9f003190f10f",
+      "seoDescription": "49dea6e1f284",
+      "body": "c9e5ea9f521f",
+      "faq": "9cbc143b9694"
+    }
   },
   "door-hardware-hs-codes-2026": {
     "title": "2026'da Kapı Donanımı HS Kodları: 8301 ve 8302 Pozisyonları ve Altı Hanenin Bittiği Yer",
@@ -937,7 +1041,15 @@
         "question": "Yasal olarak güvenli bir sınıflandırmayı nasıl alırım?",
         "answer": "Kendi gümrük idarenizden önceden karar isteyin: AB'de Bağlayıcı Tarife Bilgisi, ABD'de bir CBP karar yazısı, başka yerlerde eşdeğerleri. İdareyi belirli bir süre bağlar. Bir fatura satırı, bir komisyoncunun alışkanlığı ve geçmiş bir sevkiyattan kopyalanmış bir kod uygulamadır, yetki değildir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "cf74dc5ec077",
+      "summary": "d1308e879027",
+      "seoTitle": "610568188876",
+      "seoDescription": "a5a9713b5432",
+      "body": "c7e7ebb45db2",
+      "faq": "da176340d2f9"
+    }
   },
   "door-preparation-161-and-86-2026": {
     "title": "2026'da Kapı Hazırlığı: 161 Delme, 86 Gömme Cep ve \"Hazırlanmış\" İfadesinin Gerçekte Neyi Garanti Ettiği",
@@ -1007,7 +1119,15 @@
         "question": "Yanlış kesilmiş bir kapı düzeltilebilir mi?",
         "answer": "Nadiren iyi biçimde. Konumundan 6 mm kaymış bir delik taşınamaz; kapı ya hurdadır ya da bir kapak plakası alır. Şartnamenin kilit sipariş edildiğinde değil kapı sipariş edildiğinde eksiksiz olması gerekmesinin ve kilit şablonunu kapı üreticisine göndermenin ucuz bir sigorta olmasının nedeni budur."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "59a3b6979e70",
+      "summary": "5eafcc64706f",
+      "seoTitle": "be526a84b6d6",
+      "seoDescription": "7c491fc49985",
+      "body": "4a7536befe8e",
+      "faq": "9871377be00e"
+    }
   },
   "door-thickness-to-cylinder-length-2026": {
     "title": "2026'da Kapı Kalınlığından Silindir Boyuna: Hesap, Başvuru Tablosu ve Cevabın Neden Çoğu Zaman Yukarı Yuvarlandığı",
@@ -1088,7 +1208,15 @@
         "question": "Ürün sayfalarınız bölünmeyi veriyor mu?",
         "answer": "Hayır. Dokuz toplam boyda (45, 47, 54, 56, 60, 65, 70, 80 ve 90 mm) 45 silindir modeli yayımlıyoruz ve boy model numarasında taşınıyor. 45 kaydın tamamında iç ve dış yarımı belirten kayıt sayısı sıfırdır. Bölünmeyi sipariş başına isteyin ve eşit bir bölünme varsaymak yerine yazılı olarak alın."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "77e639df99fe",
+      "summary": "13a48570611b",
+      "seoTitle": "4198d0f68dd3",
+      "seoDescription": "1f59c1513cd8",
+      "body": "32e94f37c71b",
+      "faq": "a9f86c1b8ff6"
+    }
   },
   "en-1125-vs-en-179-2026": {
     "title": "2026'da EN 1125 mi EN 179 mu: Panik Bar mı Acil Çıkış Kolu mu ve Kararı Veren İnsanlarla İlgili Tek Soru",
@@ -1172,7 +1300,15 @@
         "question": "Panik çıkış cihazlarınız EN 1125 ya da EN 179 belgeli mi?",
         "answer": "307 ve 311 modellerimiz test aşamasındadır. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bugün belgelendirme gerektiren bir projede sorun, karşılayıp karşılayamayacağımızı açıkça söyleyelim; birkaç modelde cevap şu anda hayırdır."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "a77240f0412b",
+      "summary": "33a2e0481503",
+      "seoTitle": "8c8fd4020bcb",
+      "seoDescription": "a0daadf81e9e",
+      "body": "333d1a4d9a9c",
+      "faq": "a828c5bf11fe"
+    }
   },
   "en-ansi-bhma-cross-reference-2026": {
     "title": "2026'da EN ile ANSI/BHMA Karşılık Tablosu: Neyin Eşleştiği, Neyin Eşleşmediği ve Neden",
@@ -1201,9 +1337,9 @@
       "Üçüncüsü, yangın testi basıncı farklıdır. Avrupa ve Kuzey Amerika fırın testlerinde kullanılan nötr basınç düzlemi aynı değildir; bu yüzden bir EN 1634-1 sonucu, aynı montaj için bile UL 10C'ye ya da NFPA 252'ye aktarılamaz. Bir Avrupa yangın kapısı sertifikasının bir Kuzey Amerika yetkili kurumunu tatmin etmemesinin teknik özü budur.",
       "Dördüncüsü, kaplama kodları bir performans sınıfı değil bir adlandırma sistemidir. US26D, BHMA 626 ve SN gibi bir fabrika kodu aynı saten kaplamayı tarif edebilir ve hiçbiri korozyon performansını belirtmez. Bu EN 1670'in işidir ve bir kaplama kodu yanında hiçbir EN 1670 sınıfı taşımaz.",
       "NEYE SAHİP OLDUĞUMUZ, AÇIKÇA",
-      "Panik çıkış cihazı yelpazemiz EN 1125'e göre belgelendirilmiştir ve CE işaretlidir. Bu yelpazede bugün ANSI/BHMA sınıflarına ya da UL listelemelerine sahip değiliz. İki model, 307 ve 311, Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur.",
+      "Çıkış cihazı yelpazemizdeki belirli modeller için EN 1125 test raporları mevcuttur; bunların büyük kısmı müşterilerimizin adınadır. Kendi adımıza CE ve ANSI testleri hazırlanmaktadır. Bu yelpazede bugün ANSI/BHMA sınıflarına ya da UL listelemelerine sahip değiliz. İki model, 307 ve 311, Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur.",
       "Bu cümle böyle yazıldı; çünkü UL Product iQ ve BHMA belgelendirilmiş ürün dizini kamuya açık olarak aranabilir ve bir şartname yazarı onay belgelerine sertifika numaralarını yazar. Bir aramadan sağ çıkamayan bir iddia, kazanmak için yapıldığı siparişten daha pahalıya mal olur.",
-      "Bir proje bugün bir ANSI/BHMA sınıfı ya da bir UL listelemesi gerektiriyorsa dürüst cevap, EN 1125 belgelendirmemizin onun yerini tutmadığıdır ve bunu bir konteyner yola çıktıktan sonra değil, şimdi söylemeyi tercih ederiz.",
+      "Bir proje bugün bir ANSI/BHMA sınıfı ya da bir UL listelemesi gerektiriyorsa dürüst cevap, bir EN 1125 raporunun onun yerini tutmadığıdır ve bunu bir konteyner yola çıktıktan sonra değil, şimdi söylemeyi tercih ederiz.",
       "İKİ PAZARDA DA İŞE YARAYAN BİR ŞARTNAME NASIL YAZILIR",
       "Davranışı belirtin, sonra binanın bulunduğu pazar için standardı adlandırın. Bir cihazın dili kaçış yönünde tek bir hareketle serbest bırakması gerektiğini söyleyen bir liste, iki sistemin de test ettiği bir gerekliliği tarif eder. Grade 1 diyen bir liste ise yalnızca birinin cevaplayabileceği bir gerekliliği tarif eder.",
       "Bir proje gerçekten iki pazarı kapsıyorsa işe yarayan düzen, iki sertifikalı tek bir set değil, tek bir fonksiyonel tarifle iki donanım setidir. Bu daha fazla evrak işi ve daha az yeniden iş demektir; donanımda yeniden iş ise kapanmayan bir kapı demektir."
@@ -1231,9 +1367,17 @@
       },
       {
         "question": "Canton Hyland'ın ANSI ya da UL belgesi var mı?",
-        "answer": "Panik çıkış cihazı yelpazesinde bugün yok. Bu yelpaze EN 1125'e göre belgelendirilmiştir ve CE işaretlidir. 307 ve 311 modelleri Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur. UL Product iQ ve BHMA dizini kamuya açık olarak aranabilir; bunun ima edilmek yerine açıkça söylenmesinin nedeni budur."
+        "answer": "Çıkış cihazı yelpazesinde bugün yok. Belirli modeller için EN 1125 test raporları mevcuttur; bunların büyük kısmı müşterilerimizin adınadır. Kendi adımıza CE ve ANSI testleri hazırlanmaktadır. 307 ve 311 modelleri Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur. UL Product iQ ve BHMA dizini kamuya açık olarak aranabilir; bunun ima edilmek yerine açıkça söylenmesinin nedeni budur."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "9c369f92ad96",
+      "summary": "036dd1b2d40c",
+      "seoTitle": "be50fdd1bf25",
+      "seoDescription": "54f0ba780bec",
+      "body": "08cc582b8319",
+      "faq": "84c409c9a4d8"
+    }
   },
   "euro-cylinder-size-chart-2026": {
     "title": "2026 Avrupa Tipi Silindir Ölçü Tablosu: Tüm Boylar ve Bölünmeler, Kendinizinkini Nasıl Ölçersiniz",
@@ -1295,16 +1439,24 @@
         "question": "Eski silindirimi ölçüp aynı boyu sipariş edebilir miyim?",
         "answer": "Silindiri uçtan uca değil, her yarımı sabitleme vidası deliğinin merkezinden ayrı ayrı ölçün. Uçtan uca ölçüm toplam boyu verir ve bölünmeyi atar; 30/40 ile 40/30 da aynı ölçülür. Eski silindirin kendisi yanlış boydaysa onu ölçmek hatayı kopyalar."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "ee41eb827eaf",
+      "summary": "4bdfe76c548c",
+      "seoTitle": "fb81d637a79c",
+      "seoDescription": "cfd9f9c982af",
+      "body": "85ebfa2bf126",
+      "faq": "e110ea3ebfb5"
+    }
   },
   "exit-device-comparison-2026": {
     "title": "2026 Panik Çıkış Cihazı Karşılaştırması: Yelpazedeki Her Panik Bar Boy, Kilitleme ve Kapıya Göre",
-    "summary": "Panik çıkış cihazı ailemizde 46 kayıt var ve bunların yalnızca 27'si panik çıkış cihazı. Burada, özellik satırlarından kurulmuş üç tabloda (tek kanatlı kapılar, çift kanatlar, özel amaçlar) yer alıyorlar; eksik satırlar ve birbiriyle çelişen satırlar da adlarıyla belirtilmiş.",
+    "summary": "Panik çıkış cihazı ailemizde 44 kayıt var ve bunların yalnızca 27'si çıkış cihazı. Burada, özellik satırlarından kurulmuş üç tabloda (tek kanatlı kapılar, çift kanatlar, özel amaçlar) yer alıyorlar; eksik satırlar ve birbiriyle çelişen satırlar da adlarıyla belirtilmiş.",
     "seoTitle": "Panik Çıkış Cihazı ve Panik Bar Karşılaştırması: Boy, Kilit",
     "seoDescription": "Tüm panik çıkış cihazları yan yana: 650–1110 mm bar boyları, tek kanatlı kapılar, üst ve alt kilitlemeli çiftler, alarmlı ve soğuk oda modelleri.",
     "body": [
       "Bir tedarikçinin sitesinde panik bar araması genellikle birbirine neredeyse tıpatıp benzeyen bir fotoğraf duvarı döndürür: kırmızı ya da gümüş bir bar, gri bir muhafaza, bir model numarası. Bir cihazın kapıya uyup uymayacağını belirleyen farklar özellik satırlarındadır ve çoğu sitede düzinelerce sayfaya dağılmıştır. Bu rehber, 23 Eylül 2026 itibarıyla kataloğumuzdaki her panik çıkış cihazını tek bir sayfaya koyuyor; böylece karşılaştırma bir öğleden sonra yerine birkaç dakikada yapılabilir.",
-      "Önce ailenin gerçekte ne içerdiği. Panik çıkış cihazı ailemizde 46 yayımlanmış kayıt var ve bunların 27'si panik çıkış cihazı. Diğer 19'u onlarla birlikte kullanılan parçalardır: 16 dış kol (kapının çekme tarafındaki kol ya da tutamak), 307 için bir kilit gövdesi ve çiftler için iki kapanma sıralayıcı. Dış kolların bu sitede kendi rehberi, sıralayıcıların kendi yazısı var; bu sayfa cihazlarla ilgili.",
+      "Önce ailenin gerçekte ne içerdiği. Panik çıkış cihazı ailemizde 44 yayımlanmış kayıt var ve bunların 27'si çıkış cihazı. Diğer 17'si onlarla birlikte kullanılan parçalardır: 16 dış kol (kapının çekme tarafındaki kol ya da tutamak) ve 307 için bir kilit gövdesi. Dış kolların bu sitede kendi rehberi var; çift kanatların ihtiyaç duyduğu kapanma sıralayıcılar ise yardımcı aksesuarlar arasında listeleniyor. Bu sayfa cihazlarla ilgili.",
       "TABLOLAR NASIL OKUNUR",
       "Her hücre ürün sayfasındaki bir özellik satırından gelir. Bir cihaz bir satır yayımlıyorsa tablo onu kaydın kullandığı kelimelerle gösterir; yayımlamıyorsa hücre \"yayımlanmadı\" der. Boylar yayımlanmış bar boylarıdır; milimetre olarak, yanında inç. Malzeme, yayımlandığı hâliyle malzeme satırıdır ve bu her zaman sayfanın üstündeki tek satırlık malzeme alanıyla aynı değildir; ikisi uyuşmadığında bu rehber birini seçmek yerine bunu söyler.",
       "27 cihazın 13'ü bir boy yayımlar. Bir panik bar için en önemli tek satır budur; çünkü bar takıldığı kanada uymalıdır ve alıcıların bize en sık onsuz gönderdiği satır da budur. Panik bar boyu üzerine yazımız, boy sorusunun bir cevabı olsun diye kanadın nasıl ölçüleceğini anlatıyor.",
@@ -1316,7 +1468,7 @@
       "ÇİFT KANATLI KAPILAR VE ÇOK NOKTALI KİLİTLEME",
       "Panik çıkış cihazlarının en çok ayrıştığı ve yanlış seçimin en pahalıya mal olduğu yer çift kanatlı kapılardır. Her kanatta sıva üstü bir cihaz, ancak karşılıklar için bir orta kayıt varsa çalışır. Yoksa pasif kanadın üstten ve alttan tutulması gerekir; dikey çubuklu ve çok noktalı cihazların yaptığı budur.",
       "| Model | Kapı | Kilitleme | Boy | Malzeme ve yayımlanan diğer satırlar |\n| --- | --- | --- | --- | --- |\n| 309-D | çift | aktif ve pasif kanat | 1110 mm (43-11/16\") | alüminyum alaşımı ve demir; toz boyalı |\n| 316-D | çift | üstten ve alttan kilitleme | yayımlanmadı | alev geciktirici ABS muhafaza, alüminyum alaşımı gövde, demir panik bar, kalınlaştırılmış demir dil; yüzeye monte; çevrilebilir; dış kol isteğe bağlı |\n| 320 | çift | iki noktadan kilitleme | boya göre yapılır | demir; kırmızı ya da siyah |\n| 306-D | çift | yayımlanmadı | yayımlanmadı | başka satır yok |\n| 308-D | çift | yayımlanmadı | yayımlanmadı | henüz satır yok |",
-      "316-D en fazla bilgi yayımlayan çift setidir ve kilitlemesini kelimelerle belirtir: üstten ve alttan. 309-D aktif ve pasif kanadı çalıştırdığını belirtir ve yelpazedeki en uzun barı yayımlar. Her çiftte cihaz cevabın yalnızca yarısıdır: kanatların doğru sırayla da kapanması gerekir; bu sıralayıcının işidir ve çift kanatlı yangın kapıları için kapanma sıralayıcılar yazımız bunu ele alıyor. Bu ailedeki iki sıralayıcı, DC01 ve DSL02, tam da bu nedenle oradadır.",
+      "316-D en fazla bilgi yayımlayan çift setidir ve kilitlemesini kelimelerle belirtir: üstten ve alttan. 309-D aktif ve pasif kanadı çalıştırdığını belirtir ve yelpazedeki en uzun barı yayımlar. Her çiftte cihaz cevabın yalnızca yarısıdır: kanatların doğru sırayla da kapanması gerekir; bu sıralayıcının işidir ve çift kanatlı yangın kapıları için kapanma sıralayıcılar yazımız bunu ele alıyor. Sıralayıcılarımız DC01, DC02 ve DSL02, yardımcı aksesuarlar arasında listeleniyor.",
       "Bu tablodaki iki kayıt neredeyse hiçbir şey yayımlamaz. 306-D'ye ya da 308-D'ye komşularının satırlarını vermeyeceğiz: sorun, şartnameye yazmadan önce kilitlemelerini ve boylarını çizime göre teyit edelim.",
       "ÖZEL AMAÇLAR",
       "Dört cihaz her biri tek bir durum için yapılmıştır ve her biri yalnızca orada doğru cevaptır.",
@@ -1338,7 +1490,7 @@
       },
       {
         "question": "Orta kaydı olmayan çift kanatlı bir kapıda hangi panik barı kullanmalıyım?",
-        "answer": "Pasif kanadı üstten ve alttan kilitleyen bir cihaz, artı kanatların sırayla kapanması için bir sıralayıcı. Yelpazemizde 316-D üstten ve alttan kilitleme yayımlar, 309-D aktif ve pasif kanadı 1110 mm'lik bir barla çalıştırır ve 320 boya göre yapılan iki noktadan kilitlemeli bir cihazdır. DC01 ve DSL02 sıralayıcılar aynı ailededir."
+        "answer": "Pasif kanadı üstten ve alttan kilitleyen bir cihaz, artı kanatların sırayla kapanması için bir sıralayıcı. Yelpazemizde 316-D üstten ve alttan kilitleme yayımlar, 309-D aktif ve pasif kanadı 1110 mm'lik bir barla çalıştırır ve 320 boya göre yapılan iki noktadan kilitlemeli bir cihazdır. DC01, DC02 ve DSL02 sıralayıcılarımız yardımcı aksesuarlar arasında listeleniyor."
       },
       {
         "question": "Panik çıkış cihazlarınızdan hangileri gömme kilitle çalışır?",
@@ -1356,7 +1508,15 @@
         "question": "Bazı panik çıkış cihazlarınız neden neredeyse hiç teknik özellik göstermiyor?",
         "answer": "Dokuz cihaz (036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01) karşılaştırmaya yetecek kadar satır yayımlamaz; 312 ve SH01 hiç yayımlamaz. Benzer modellerden satır kopyalamayız. Bize kanat ölçüsünü ve kapı kalınlığını söyleyin, teklif vermeden önce cihazın satırlarını çizime göre teyit edelim."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "1ba60425dc01",
+      "summary": "9770d1f6fcac",
+      "seoTitle": "58c651aa7c76",
+      "seoDescription": "df271522780d",
+      "body": "e48076644ee0",
+      "faq": "1d5a07474d2c"
+    }
   },
   "exit-device-outside-trim-functions-2026": {
     "title": "Panik Çıkış Cihazı Dış Kolu 2026: Tüm Dış Kol Fonksiyonları, Dogging Kuralları ve Kararın Neden Asla Bar Olmadığı",
@@ -1435,7 +1595,15 @@
         "question": "Dış kolu cihazdan ayrı sipariş edebilir miyim?",
         "answer": "Yalnızca model bazında eşleştirilmiş bir çift olarak. Dış kolun mili ya da kuyruk parçası o cihazın mekanizmasını kavramalı, montaj delik aralıkları hizalanmalıdır ve birçok seride dış kol yönlüdür. Katalog fotoğrafında aynı görünen bir dış kol hiç kavramayabilir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "356dec39cbb4",
+      "summary": "4d9cfe83be5c",
+      "seoTitle": "436da21c0bc4",
+      "seoDescription": "a6d9f0d49bd2",
+      "body": "84b30a6ab3e4",
+      "faq": "7dac59076eed"
+    }
   },
   "finish-code-reference-2026": {
     "title": "Yüzey Kaplama Kodları Rehberi 2026: 23 Kod, BHMA Numaraları ve Ters Yazılan Dört Çift",
@@ -1492,7 +1660,15 @@
         "question": "Kataloğunuz neden 94 farklı kaplama listeliyor?",
         "answer": "94 kaplama listelemiyor; tek bir söz dağarcığını üç şekilde yazıyor. Yirmi üç kayıt temiz kod, elli üçü aynı kaplamaların ad olarak yazılmış hâli, on sekizi ise yıllar içinde birkaç kaynaktan derlemenin bıraktığı parçalar ya da yazım hatalarıdır. Kodu ve adı birlikte yazın; o zaman iki belirsizlik de siparişe ulaşamaz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "ffa1fa134e74",
+      "summary": "2a4a1965c5bf",
+      "seoTitle": "2cc8c3772d53",
+      "seoDescription": "b010c733b521",
+      "body": "27b03ed32309",
+      "faq": "98af293d07e1"
+    }
   },
   "fire-door-hardware-what-must-be-rated-2026": {
     "title": "Yangın Kapısı Donanımı 2026: Hangi Bileşenler Sertifikalı Olmalı, EN 1634-1 ile UL 10C ve NFPA 252 Farkı, Bir Sertifika Neyi Kapsar",
@@ -1563,7 +1739,15 @@
         "question": "Panik çıkış cihazlarınızın yangın sertifikası var mı?",
         "answer": "307 ve 311 panik çıkış cihazlarımız teste giriyor. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Test edilmiş bir ürünün sayfası standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine sunulur."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "ca19e24bc00b",
+      "summary": "4a2cbb549db9",
+      "seoTitle": "5274aab3d4bb",
+      "seoDescription": "9a66acd4ffdf",
+      "body": "b7aeb9daf389",
+      "faq": "08c49558371c"
+    }
   },
   "glass-door-thickness-and-cutouts-2026": {
     "title": "Cam Kapı Donanımı 2026: Kalınlık Aralıkları, Oyuk Ölçüleri ve Geri Alınamayan Tek Adım",
@@ -1633,7 +1817,15 @@
         "question": "İşleri hangi sırayla yapmalıyım?",
         "answer": "Donanımı seçin, çizimlerini ya da şablonlarını alın, bunları cam işleyiciye verin, bir imalat çizimi hazırlatın, bunu donanım çizimleriyle karşılaştırın, yazılı olarak onaylayın, sonra kestirip temperletin. Yaygın sıra (camı sipariş et, donanımı seç, oyukların yanlış olduğunu keşfet) camın fiyatına mal olur."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "89f10092ae0a",
+      "summary": "3f0df815c2d3",
+      "seoTitle": "610f7accfef4",
+      "seoDescription": "44eca3d24f18",
+      "body": "703147a244fd",
+      "faq": "9bf876e0f006"
+    }
   },
   "hardware-refurbishment-survey-2026": {
     "title": "Kapı Donanımı Yenileme Keşfi 2026: On Dört Alan, Tornavida Gerektirenler ve Tamamen Açamadığınız Bir Binadan Nasıl Örnek Alınır",
@@ -1680,7 +1872,7 @@
       "## Kataloğumuzun sizin için neyi cevaplayıp neyi cevaplayamayacağı",
       "Bir keşif, tedarikçinin cevaplaması gereken sorular üretir. 588 HYDE katalog kaydı genelinde, yayımlanmış bir kaydın şu anda kimse bir çizim açmadan çözebildikleri şunlardır:",
       "| Keşif alanı | Bunu yayımlayan ürünler |\n| --- | --- |\n| Kapı kalınlığı aralığı | 588'in 201'i |\n| Yön | 588'in 184'ü |\n| Backset | 588'in 180'i |\n| Aks mesafesi | 588'in 42'si |\n| Ön alın ölçüsü ve biçimi | 588'in 8'i |",
-      "Son satırı önceden bilmek işe yarar. Ön alın ölçüleri 6 üründe yayımlanıyor. Keşfiniz, yedek kilidin ön alınının mevcut kilit yuvasını örtüp örtmediğine bağlıysa katalog bunu çoğu model için cevaplamaz. Cevap teyitli bir çizimden ya da fiziksel bir numuneden gelmelidir. Montaj anında değil, erkenden sorun.",
+      "Son satırı önceden bilmek işe yarar. Ön alın ölçüleri 8 üründe yayımlanıyor. Keşfiniz, yedek kilidin ön alınının mevcut kilit yuvasını örtüp örtmediğine bağlıysa katalog bunu çoğu model için cevaplamaz. Cevap teyitli bir çizimden ya da fiziksel bir numuneden gelmelidir. Montaj anında değil, erkenden sorun.",
       "Bu, bir sıfatla değil bir sayıyla ifade edilmiş bir sınırlamadır; bu sitedeki her eksiklik böyle yazılır. Bir yenileme işi için ölçmeye başlamadan önce size söyleyebileceğimiz en yararlı tek şey de budur."
     ],
     "faq": [
@@ -1708,7 +1900,15 @@
         "question": "Canton Hyland kataloğu bir keşiften neyi cevaplayabilir?",
         "answer": "588 HYDE kaydından kapı kalınlığı aralığı 201'inde, yön 184'ünde, backset 180'inde, aks mesafesi 42'sinde, ön alın ölçüsü ve biçimi ise 8'inde yayımlanıyor. Yedek ön alının mevcut kilit yuvasını örtmesi gerekiyorsa montajdan önce teyitli bir çizim ya da numune isteyin."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "ea574ebd067b",
+      "summary": "07af596e0840",
+      "seoTitle": "674b9de85346",
+      "seoDescription": "ca9076f8d3c2",
+      "body": "2d1c021fffe5",
+      "faq": "a691cfb1e05f"
+    }
   },
   "hardware-warranty-what-it-covers-2026": {
     "title": "Kapı Donanımı Garantisi 2026: \"On Yıl\" Gerçekte Neyi Kapsar, İşi Gören Beş İstisna ve Bir Talep Nasıl Kabul Görür",
@@ -1786,7 +1986,15 @@
         "question": "Neden başlık olarak bir garanti süresi yayımlamıyorsunuz?",
         "answer": "Çünkü anlam taşıyan bir şart ürünü, uygulamayı ve istisnaları adlandırmalıdır; bu yüzden bunu sipariş ve pazar bazında belirliyoruz. Bir sayıyla söze başlayıp kapının ne olduğunu sormamış bir tedarikçi size ne kadar süre olduğunu söylemiştir, ne için olduğunu değil."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "8aa751178204",
+      "summary": "bad7f4febe06",
+      "seoTitle": "66ef7aef8d33",
+      "seoDescription": "338ff45b3007",
+      "body": "c4fcf6c1d93b",
+      "faq": "796cb2d34c7f"
+    }
   },
   "hinge-grades-and-count-2026": {
     "title": "Menteşe Sınıfları ve Menteşe Sayısı 2026: EN 1935 Sınıf 1–14, ANSI/BHMA A156.1 ve Bir Kapıya Kaç Menteşe Gerekir",
@@ -1849,7 +2057,15 @@
         "question": "Kapım sarktı ve karşılığa sürtüyor. Ne arızalandı?",
         "answer": "Çoğu zaman üst menteşede vida sökülmesi; menteşe değil kasa pes eder. Bu, kapının ağırlığı için yetersiz tanımlanmış bir menteşenin ya da bağlantının imzasıdır. Karşılığı ayarlamadan önce üst menteşe bağlantılarını kontrol edin, çünkü karşılığı kaydırmak arızayı gidermez, gizler."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "34f67e5119cd",
+      "summary": "21146251a995",
+      "seoTitle": "dc63fd47cbf1",
+      "seoDescription": "216f52b12ee7",
+      "body": "cc7128c9aaca",
+      "faq": "5d6d35613c73"
+    }
   },
   "key-blanks-and-restricted-profiles-2026": {
     "title": "Anahtar Taslakları ve Kısıtlı Profiller 2026: Açık, Kısıtlı ve Patentli Anahtar Yolları ve Anahtar Kontrolünün Gerçekte Ne Sağladığı",
@@ -1922,7 +2138,15 @@
         "question": "Açık anahtar yolu hiç doğru seçim olur mu?",
         "answer": "Sıklıkla. Bir kırtasiye dolabı, bir iç ofis, bir konut iç kapısı; bunların hiçbirinin anahtar kontrolüne ihtiyacı yoktur ve orada bunu satın almak güvenlik değil zahmet satın almaktır. Açık bir anahtar yolunun yapamadığı şey kaç kopya olduğunu söylemektir; bu yüzden mevcut açık bir sistemde anahtar sayısının bilinmediğini varsayın."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "c110f8c181d2",
+      "summary": "a2cf40fea24b",
+      "seoTitle": "98660cb7cd4d",
+      "seoDescription": "4dd4ca2743a6",
+      "body": "2411fc80cc41",
+      "faq": "d1adb3f6c8ab"
+    }
   },
   "lever-return-and-en-1906-2026": {
     "title": "Kol Dönüşü ve EN 1906 2026: Bir Kapı Kolu Neden Kapıya Doğru Kıvrılmalı ve Sekiz Haneli Sınıflandırma Ne Söyler",
@@ -1990,7 +2214,15 @@
         "question": "Dekoratif bir kol ucu şartnamede kalır mı?",
         "answer": "Kalabilir. Kapı yüzeyinden uzakta duran bir top, konik ya da genişlemeyle biten bir kol, bir şeyin takılabileceği bir boşluk bırakır ve test estetik değil geometriktir. Doğru dönüşlü daha sade bir kol, daha gösterişli bir kolun kaldığı yerde geçer."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "9cbe2e121fda",
+      "summary": "7437caad0423",
+      "seoTitle": "a8e9c7c43f7a",
+      "seoDescription": "ad48474bfddb",
+      "body": "591c40b047a0",
+      "faq": "1295a44ddca5"
+    }
   },
   "master-key-hierarchy-planning-2026": {
     "title": "Master Anahtar Hiyerarşisi Planlama 2026: Seviyeler, Çapraz Anahtarlamanın Gerçek Maliyeti ve Yarınki Binanız İçin Nasıl Pay Bırakılır",
@@ -2073,7 +2305,15 @@
         "question": "Master anahtar hiyerarşisi tasarlıyor musunuz?",
         "answer": "Normalde hayır. Silindir serisini, boyları, bölünmeleri, kaplamaları, miktarları, profili ve anahtar kontrolü konusunda taahhüt edileni sipariş bazında yazılı olarak teyit ediyoruz. Hiyerarşinin kendisi platformun kendi masterlama kurallarına ve bizim taraf olmadığımız bir organizasyon şemasına bağlıdır; bu yüzden sistemin sahibine aittir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "d3ae9dfc3161",
+      "summary": "888492d769fe",
+      "seoTitle": "a7b6bfdeee17",
+      "seoDescription": "2e5d713090d8",
+      "body": "7e67d4358eaf",
+      "faq": "6b04b0dd5eee"
+    }
   },
   "material-traceability-mill-certs-2026": {
     "title": "Malzeme İzlenebilirliği 2026: EN 10204 Tip 2.1, 2.2, 3.1 ve 3.2, Döküm Numaraları ve Bir Donanım Fabrikasının Dürüstçe İzleyebilecekleri",
@@ -2150,7 +2390,15 @@
         "question": "3.1'i ne zaman istemeliyim?",
         "answer": "Üretimden önce. Belirli bir partide 3.1, fabrikanın malzemeyi ele alış biçimini değiştirir (ayrı tutulan partiler birleştirilemez); bu yüzden planlanmalıdır ve bir maliyeti vardır. Mallar sevk edilip stoğa karıştıktan sonra istemek, artık var olmayan bir şeyi istemektir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "d8f88a5a81a1",
+      "summary": "35bef0575900",
+      "seoTitle": "d572f0fa7b53",
+      "seoDescription": "8c89077ace32",
+      "body": "83c080c608e6",
+      "faq": "323304228a7e"
+    }
   },
   "moq-tooling-and-lead-time-2026": {
     "title": "MOQ, Kalıp ve Termin 2026: Minimumu Gerçekte Ne Belirler ve Neden Hem 300 Hem 5.000 Doğrudur",
@@ -2212,7 +2460,15 @@
         "question": "Kalıp nasıl fiyatlandırılır?",
         "answer": "Birim fiyata katılmadan, ayrı bir zaman çizelgesiyle ayrı bir maliyet olarak. Kalıp tek bir geometri için işlenir: devredilemez ve iade edilemez; bu yüzden karar rakamlar görünür durumdayken verilmelidir. Kalıptan söz etmeyen düşük bir birim fiyat bir maliyeti ortadan kaldırmamış, taşımıştır."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "db9555141c32",
+      "summary": "7aa04df27c8c",
+      "seoTitle": "1368832b6c09",
+      "seoDescription": "a94506ad59e5",
+      "body": "2b856c0cafc1",
+      "faq": "4d1498331722"
+    }
   },
   "mortise-lock-case-comparison-2026": {
     "title": "Gömme Kilit Gövdesi Karşılaştırması 2026: Yayımlanan Tüm Backset ve Aks Mesafesi Değerleri Yan Yana",
@@ -2221,7 +2477,7 @@
     "seoDescription": "Backset ve aks mesafesi yayımlanan tüm gömme kilit gövdelerimiz iki tabloda: 20–35 mm dar profil ve 40–90 mm standart backset.",
     "body": [
       "Her gömme kilit gövdesi her şeyden önce iki sayıyla tanımlanır: kapı kenarının yüzünden mil merkezine kadar olan backset ve milden silindir merkezine kadar olan aks mesafesi. Bu ikisini doğru alırsanız kol ve anahtar kapıdaki deliklerle hizalanır. Birini yanlış alırsanız kilitle ilgili başka hiçbir şeyin önemi kalmaz, çünkü delikler zaten açılmıştır.",
-      "Bu rehber, kataloğumuzda iki sayıyı da yayımlayan tüm kilit gövdelerini (Eylül 2026 itibarıyla 58 kilit gövdesi kaydından 32'si) yan yana koyuyor; böylece bir alıcı 58 ürün sayfasını okumak yerine kapıya uyan gövdeyi bulabilir. Tablolar o sayfalardaki şartname satırlarından üretilmiştir; içlerinde tahmini hiçbir şey yoktur.",
+      "Bu rehber, kataloğumuzda iki sayıyı da yayımlayan tüm kilit gövdelerini (Eylül 2026 itibarıyla 57 kilit gövdesi kaydından 32'si) yan yana koyuyor; böylece bir alıcı 57 ürün sayfasını okumak yerine kapıya uyan gövdeyi bulabilir. Tablolar o sayfalardaki şartname satırlarından üretilmiştir; içlerinde tahmini hiçbir şey yoktur.",
       "TABLOLAR NASIL OKUNUR",
       "İki ölçü de milimetre olarak, yanında inç karşılığıyla yayımlanır. Backset, arkasındaki gövdeden değil, ön alının dış yüzünden ölçülür. Aradaki fark ön alın kalınlığıdır ve bir kolu rozeti üzerinde eksenden kaydırmaya yeter. Aks mesafesi, kare mil deliğinin merkezi ile silindir deliğinin merkezi arasında ölçülür. Bir kayıt ayrıca bir silindir tipi, bir sürgü düzeni ya da bir ön alın ölçüsü yayımlıyorsa son sütunda görünür; \"yayımlanmadı\", özelliğin olmadığı değil, kaydın bunu belirtmediği anlamına gelir.",
       "İKİ AİLE: DAR PROFİL VE STANDART",
@@ -2242,7 +2498,7 @@
       "Bu model adlarının çoğu iki sayıyı içerir ve kilidi doğrudan addan okumak cazip gelir. Okumayın. Adlandırma seri genelinde tutarlı değildir. LC8530 ve LC6860 aks mesafesini önce, backset'i sonra koyar; LC32 65×72mm ve LC34 50×72mm ise backset'i önce koyar. LC7065 varyantları ve LC9045 yalnızca backset-önce sırasıyla doğru okunur: kayıtları 65 mm aksla 70 mm backset ve 45 mm aksla 90 mm backset diyor. Bu ikisi tablolardaki aykırı değerlerdir ve istediğiniz gövde bunlardan biriyse sipariş vermeden önce iki sayıyı da bizimle teyit edin.",
       "Bundan çıkan kural kısadır: adı değil, her zaman şartname satırlarını okuyun. Yukarıdaki tablolar tam da bu nedenle satırlardan oluşturulmuştur.",
       "TABLOLARIN DIŞARIDA BIRAKTIKLARI",
-      "Bilinmeye değer iki tür eksik vardır. Birincisi, 26 kilit gövdesi kaydı iki sayıyı da yayımlamıyor ve tablolarda yer almıyor. Bazıları yalnızca bir backset (16 mm ile LC17, 45 mm ile LC5845), bazıları yalnızca bir ön alın, bazıları ise henüz hiçbir şey yayımlıyor. İkincisi, tablolarda yer alan gövdelerin çoğu geometrinin geri kalanını değil yalnızca iki sayıyı yayımlıyor. Tam setini yayımlayan yalnızca LC07'dir: 240 × 23 mm ön alın, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı.",
+      "Bilinmeye değer iki tür eksik vardır. Birincisi, 25 kilit gövdesi kaydı iki sayıyı da yayımlamıyor ve tablolarda yer almıyor. Bazıları yalnızca bir backset (16 mm ile LC17, 45 mm ile LC5845), bazıları yalnızca bir ön alın yayımlıyor, bazıları ise henüz hiçbir şey yayımlamıyor. İkincisi, tablolarda yer alan gövdelerin çoğu geometrinin geri kalanını değil yalnızca iki sayıyı yayımlıyor. Tam setini yayımlayan yalnızca LC07'dir: 240 × 23 mm ön alın, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı.",
       "Mevcut bir kapıda kilit değiştirirken bu ikinci eksik önemlidir, çünkü yeni gövdenin eski yuvaya oturup oturmayacağına ön alın boyu ve gövde derinliği karar verir. Zaten satın aldığınız bir kilidin karşılığını bulmayla ilgili yazımız, birbirinin yerine geçebilirliği belirleyen altı sayıyı ortaya koyuyor; istediğiniz gövde bunlardan yalnızca ikisini yayımlıyorsa sipariş vermeden önce diğer dördünü isteyin; biz de onları tahmin etmek yerine ölçeriz.",
       "ÜÇ ADIMDA SEÇİM",
       "Birincisi, aileyi kapı belirler: alüminyum dar profil bir kapı birinci tablodan, ahşap ya da çelik bir kapı ikinci tablodan bir gövde alır. İkincisi, backset'i kapı hazırlığı ya da kolun kanatta nerede durması gerektiği, yedek parçada ise eski kilit belirler. Üçüncüsü, aks mesafesini kullanmayı planladığınız kol ya da aksesuar veya kapıda zaten bulunan delikler belirler. Ancak bu üçünden sonra fonksiyon (yalnız dil, dil ve sürgü, geçiş) seçimi tek bir modele indirir ve ancak ondan sonra kaplama konuşmaya girer.",
@@ -2273,7 +2529,15 @@
         "question": "Kilit gövdesi modellerindeki B, BK ve PS ekleri ne anlama geliyor?",
         "answer": "Kilit gövdesi kayıtları bunları tanımlamıyor; bu yüzden onları çözmüyoruz. Silindirik kilitlerimizde PS geçiş, BK ise banyo (mahremiyet) anlamına gelir; ama bu, LC8520PS, LC8530BK ya da LC8535B gibi kilit gövdeleri için teyit edilmiş değildir. İhtiyacınız olan fonksiyonu kelimelerle belirtin (yalnız dil, kilitlemeli, geçiş), biz de doğru varyantla eşleştirelim."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "f2a659b6d971",
+      "summary": "74c93cbb5ff0",
+      "seoTitle": "2a8a61475200",
+      "seoDescription": "7c5a3483bd71",
+      "body": "1d8b8218fa77",
+      "faq": "e11f5f015633"
+    }
   },
   "powder-coating-and-ral-2026": {
     "title": "Toz Boya ve RAL 2026: Bir Renk Numarası Neden Bir Kaplamayı Tanımlamaz, Ön İşlem Neyi Belirler ve Siparişe Ne Yazılmalı",
@@ -2305,7 +2569,7 @@
       "Mimari toz boya için tipik film kalınlığı 60–80 µm civarındadır ve bu bir hedef değil bir aralıktır: çok ince olursa kenar kaplaması başarısız olur, çok kalın olursa dişler ve sıkı geçen parçalar monte edilemez hâle gelir. Montaj sıkıysa kalınlık aralığı çizimde yer almalıdır.",
       "## Hangi testler alıntılanmaya değer ve her biri neyi kanıtlar",
       "ASTM B117, nötr tuz püskürtme: en çok alıntılanan ve en çok yanlış anlaşılan test. Sabit, yapay bir koşul altında karşılaştırmalı bir testtir ve tuz sisi kabinindeki saatler bir binadaki yıllara dönüşmez. Aynı ana malzeme üzerindeki iki boyayı karşılaştırmak için gerçekten yararlıdır; bir kullanım ömrü tahmini değildir ve saatleri yıllara çeviren her tedarikçi size testleri nasıl okuduğu hakkında bir şey söylemiştir.",
-      "EN 1670, yapı donanımının korozyon direnci, bu ürün sınıfı için yazılmış olanıdır. Her biri bir tuz püskürtme süresini adlandıran bir dizi sınıf tanımlar; böylece B117 tipi sayıyı (\"B117-style\" değer) çıplak bir rakam olarak bırakmak yerine donanım için tasarlanmış bir ölçeğe koyar. Sınıflar ve süreler baskıdan baskıya değişmiştir; bu yüzden yalnızca sınıfı değil, sözleşme yaptığınız baskıyı da belirtin.",
+      "Yapı donanımının korozyon direncini ele alan EN 1670, bu ürün sınıfı için yazılmış standarttır. Her biri bir tuz püskürtme süresini adlandıran bir dizi sınıf tanımlar; böylece ASTM B117 tuz püskürtme saatlerini çıplak bir rakam olarak bırakmak yerine donanım için tasarlanmış bir ölçeğe yerleştirir. Sınıflar ve süreler baskıdan baskıya değişmiştir; bu yüzden yalnızca sınıfı değil, sözleşme yaptığınız baskıyı da belirtin.",
       "ISO 2409, çapraz kesim yapışma testi. Filmin içinden bir ızgara kesilir, bantla kaldırılır ve sonuç sınıflandırılır. Ucuzdur, hızlıdır ve yukarıdaki ön işlem sorusunu bu listedeki her şeyden daha doğrudan cevaplar.",
       "ISO 2813, 20°, 60° ya da 85°'de parlaklık ölçümü. \"Mat\"ı bir sıfattan bir sayıya dönüştüren budur ve bir kaplama şartnamesinde en sık eksik olan satırdır.",
       "ISO 1520, çukurlaştırma ve darbe testleri; filmin ana malzemeyle birlikte hareket edip etmediğini ya da çatlayıp kopup kopmadığını söyler. Boyadan sonra bükülen, perçinlenen ya da preslenen her parçada önemlidir.",
@@ -2350,7 +2614,15 @@
         "question": "Toz boyalı bir parçaya şantiyede nasıl rötuş yapılır?",
         "answer": "Tozla değil; toz boya çıplak bir parçada fırın sıcaklığında kürlenir ve takılı bir kapıda bu koşulların hiçbiri yoktur. Rötuş her zaman havada kuruyan boyayla yapılır; yani aynı nominal renkte farklı bir bağlayıcı, parlaklık eğrisi ve yaşlanma hızı. Büyük bir projede yedek parça tutmak çoğu zaman rötuş yapmaktan daha dürüsttür."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "c996ad667af8",
+      "summary": "cfc30de95c69",
+      "seoTitle": "ac9904bc8b64",
+      "seoDescription": "c20fa316c032",
+      "body": "2c29dac14fdd",
+      "faq": "826feadcde73"
+    }
   },
   "qualifying-a-hardware-supplier-2026": {
     "title": "Donanım Tedarikçisini Değerlendirmek 2026: Fabrika, Tüccar ya da Aracı, Onları Ayıran Beş Soru ve Neyin Doğrulanması Gerektiği",
@@ -2433,7 +2705,15 @@
         "question": "Canton Hyland kendi beş sorusunu nasıl cevaplıyor?",
         "answer": "Biz bir fabrikayız ve her gerçek fabrika gibi bazı bileşenleri dışarıdan alıyoruz. Her şey için test sertifikamız yok; 307 ve 311 teste giriyor. 588 HYDE kaydında 84 ölçülü SVG dosyası var, 72'si görünür ürün listelemelerinde, HYDE kapı hazırlık SVG'si ise 0. Birkaç şartname eksiği kendi sayfalarında sayılarıyla veriliyor."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "035bcbc4baf9",
+      "summary": "de5e9959ca06",
+      "seoTitle": "92d83c3b55dd",
+      "seoDescription": "680a58a09c39",
+      "body": "2698673ab28e",
+      "faq": "e2fabfe4effd"
+    }
   },
   "samples-and-incoming-inspection-2026": {
     "title": "Numuneler ve Giriş Kontrolü 2026: Altın Numune, Neyin Ölçüleceği ve Bir Numunenin Size Söyleyemeyecekleri",
@@ -2506,7 +2786,15 @@
         "question": "Bağımsız bir kontrolörün kullanabileceği bir talimatı nasıl yazarım?",
         "answer": "Altın numune referansını belirtin. Her ölçüyü toleransıyla belirtin, çünkü bir ölçümü karara dönüştüren toleranstır. Örnekleme planını ve neyin kalma sayılacağını belirtin. İşlevsel kontrolleri somut ve sayılabilir yapın. Ambalaj ve koli ölçüsü kontrollerini ekleyin. Ve kalma durumunda ne olacağını belirtin; yoksa kontrolör hiçbir şey yapmaz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "d1274e4d83a8",
+      "summary": "23dcdf73ca48",
+      "seoTitle": "cdcd2908faf9",
+      "seoDescription": "1a9528daded8",
+      "body": "a95e9ccc502a",
+      "faq": "b349c914d5b4"
+    }
   },
   "specification-section-08-71-00-2026": {
     "title": "2026'da Kapı Donanımı Bölümü 08 71 00 Yazmak: Üç Kısım, Her Birine Ne Girer ve Paraya Mal Olan Maddeler",
@@ -2587,7 +2875,15 @@
         "question": "Bir şartnameyi soru sormadan fiyatlandırmak için neye ihtiyacınız var?",
         "answer": "Satır başına kaplama kodu, fonksiyon, yön ve kalınlıkla birlikte donanım setleri; setleri kapılara eşleyen kapı listesi; öyle işaretlenmiş yangına dayanıklı kapılar; ve kapı tipleri ile kalınlıkları, çünkü 45 mm'lik ahşap bir kanada uyan bir kilit 45 mm'lik içi boş metal bir kanada uymayabilir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "017c2fac3f99",
+      "summary": "ce1d764c6d1f",
+      "seoTitle": "6f9c210f7086",
+      "seoDescription": "daf084c1cd09",
+      "body": "7fd22ab84c95",
+      "faq": "c54d55d2c87d"
+    }
   },
   "spindle-sizes-and-length-2026": {
     "title": "Kapı Kolu Mil Ölçüleri 2026: 8 mm ve 9 mm Kare, Bölünmüş Miller ve Boyun Nasıl Hesaplanacağı",
@@ -2652,7 +2948,15 @@
         "question": "Bir kol siparişine hangi üç şeyi yazmalıyım?",
         "answer": "Milimetre cinsinden kare ölçüsü, mil tipi (tek parça ya da bölünmüş) ve boyun teyit edilebilmesi için milimetre cinsinden kapı kalınlığı. Kolları ve kilitleri farklı tedarikçilerden alıyorsanız üçünü de ikisine gönderin; göbek kola değil, kilide aittir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "92b6f4e38db1",
+      "summary": "7aa39b99f6ac",
+      "seoTitle": "eaa562aa4b61",
+      "seoDescription": "a38db751e3bb",
+      "body": "7f36885591b1",
+      "faq": "df14401e3453"
+    }
   },
   "stainless-grade-selection-201-304-316-2026": {
     "title": "Paslanmaz Kalite Seçimi 2026: 201, 304 ve 316, Her Birinin Maliyeti ve Şartname Sayfasındaki \"304/201\" İfadesinin Neden Asıl Sorun Olduğu",
@@ -2734,7 +3038,15 @@
         "question": "Ürün sayfalarınız paslanmaz kalitesini adlandırıyor mu?",
         "answer": "Çoğunlukla hayır ve bunu söylemeyi tercih ediyoruz. Paslanmazdan söz eden 313 üründen 224'ü yalnızca \"paslanmaz çelik\" diyor, 73'ü 304/201 gibi bir çift adlandırıyor ve 16'sı tek bir kalite adlandırıyor. Eksik, 224 satıra akla yatkın bir kalite yazarak değil, fabrika malzeme kayıtlarıyla model model mutabakat yapılarak kapatılıyor."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "5ae3984f33ba",
+      "summary": "50e13b3f4840",
+      "seoTitle": "dd8266256598",
+      "seoDescription": "dd1c8c9bf2f3",
+      "body": "c2186668496c",
+      "faq": "a0e9ae4e16e6"
+    }
   },
   "strike-plates-and-keeps-2026": {
     "title": "Karşılıklar 2026: ANSI Karşılık ile T Karşılık, Dudak Boyu ve Kimsenin Ölçmediği Ölçü",
@@ -2801,7 +3113,15 @@
         "question": "Elektrikli karşılıkta fail-safe ile fail-secure arasındaki fark nedir?",
         "answer": "Fail-safe enerji kesildiğinde serbest bırakır; fail-secure kilitli kalır. Hangisinin doğru olduğu bir ürün tercihi değil, bina için bir can güvenliği ve emniyet kararıdır ve aynı koridordaki iki kapı meşru olarak farklı tanımlanabilir."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "7b937423e46b",
+      "summary": "52c02def8414",
+      "seoTitle": "dfdd64d19878",
+      "seoDescription": "d5914b5d0894",
+      "body": "b5b3004f3357",
+      "faq": "a65be9fd475a"
+    }
   },
   "submittal-package-contents-2026": {
     "title": "Kapı Donanımı Onay Dosyası 2026: İnceleyenin İhtiyaç Duyduğu Her Belge ve Reddettiren Dört Eksik",
@@ -2883,7 +3203,15 @@
         "question": "Yeniden gönderimden nasıl kaçınırım?",
         "answer": "Şartname bölümünü fabrikaya siparişten sonra değil tekliften önce gönderin; böylece EN 1634-1 EI 30 gibi bir kısıt, bir muadil hâlâ bedavayken ulaşır. Ve test kanıtını erken isteyin: bir rapor ya vardır ya yoktur ve bunu onay dosyası aşamasında öğrenmek bir evrak sorusunu bir program gecikmesine dönüştürür."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "846af929d085",
+      "summary": "f88de41087d3",
+      "seoTitle": "0a676aa65028",
+      "seoDescription": "250b45fed100",
+      "body": "4167d2695ee3",
+      "faq": "b8c3b65d86e4"
+    }
   },
   "technical-drawings-what-to-expect-2026": {
     "title": "Kapı Donanımı Çizimleri 2026: PDF, DWG, STEP ve BIM Karşılaştırması ve Bir Fabrikanın Size Gerçekte Verebilecekleri",
@@ -2958,7 +3286,15 @@
         "question": "Bir çizimi belirleyici kılan nedir?",
         "answer": "Model numarası, revizyon ve tarih içeren bir antet; belirtilmiş bir ölçek ya da açık bir \"ölçeksiz\" ibaresi; bir kez ve açıkça belirtilmiş birimler; ve izdüşüm kuralı, çünkü birinci ve üçüncü açı yan görünüşleri karşı taraflara koyar. Revizyon numarası olmayan bir çizimin yerine yenisi geçemez; bu yüzden kimse onun güncel olup olmadığını anlayamaz."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "05a14719e8c8",
+      "summary": "3f21b6143e21",
+      "seoTitle": "76f2f68626fd",
+      "seoDescription": "354da3f18472",
+      "body": "8637dded2891",
+      "faq": "401d2fb17508"
+    }
   },
   "universal-vs-handed-hardware-2026": {
     "title": "Yönsüz mü Yönlü mü 2026: Hangi Donanım Ters Çevrilebilir, Hangisi Çevrilemez ve Projeleri Zora Sokan Dört Ürün",
@@ -3042,7 +3378,15 @@
         "question": "Siparişteki yön satırı ne demeli?",
         "answer": "Yönü ve kuralı: \"LH\" yerine \"sol el, Avrupa kuralı, dış taraftan bakıldığında\", çünkü Avrupa ve Kuzey Amerika kuralları aynı kapıyı farklı kelimelerle tarif edebilir. Belli olmayan yerlerde hangi tarafın dış taraf olduğunu söyleyin. Ters çevrilebilirin kabul edilebilir olup olmadığını belirtin. Ve çift kanatlılarda bunu kanat başına belirtin."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "5d09c0e0357e",
+      "summary": "1e9f4449bd0a",
+      "seoTitle": "bc9b64cd0513",
+      "seoDescription": "b8375842134b",
+      "body": "d3778dfd6a3e",
+      "faq": "51442ec2f905"
+    }
   },
   "zinc-alloy-die-cast-hardware-2026": {
     "title": "Zamak (Çinko Alaşımı) Donanım 2026: Zamak Gerçekte Nedir, Nereye Aittir ve Kötü Bir Dökümün Başarısız Olduğu Dört Yol",
@@ -3121,6 +3465,14 @@
         "question": "Kataloğunuzun ne kadarı zamak?",
         "answer": "564 malzeme satırından 156'sı, %28; %46 ile paslanmazdan sonra ikinci. Bu, çok sayıda kaplamalı kol ve rozet içeren bir seri için normal bir orandır. Satırlarımızın henüz söylemediği şey zamak kalitesidir: \"Zinc Alloy\" 70 kez, \"Zinc alloy\" 62 kez daha geçiyor ve hiçbiri Zamak 3 ya da 5'i adlandırmıyor. Sipariş bazında sorun."
       }
-    ]
+    ],
+    "sourceHash": {
+      "title": "506c51d91896",
+      "summary": "94b59c7aab60",
+      "seoTitle": "61fa12ef5973",
+      "seoDescription": "3291d29baf1a",
+      "body": "83d2ba973cd2",
+      "faq": "8739e9e9a76d"
+    }
   }
 }
