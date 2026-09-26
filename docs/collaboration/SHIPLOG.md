@@ -6,12 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 634 次提交
+最近 30 天 · 共 638 次提交
 
 ## 2026-09-26
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 01:42 | 中立 | 目标清单：#62 sitemap 瘦身上线实测 | `58d4d4135b2` |
+| 01:34 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 09f1652b440 | `c57f1a6b88f` |
+| 01:05 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 3f1d378ef11 | `09f1652b440` |
+| 00:58 | 中立 | 产品页特性条目读本语种：七个新语种此前一律显示西语 featuresEs（侧车里有各自的 features），改用 i18n t() | `ce48bd0d2a7` |
 | 00:56 | 中立 | /sitemap.xml 只放英文网址（14 MB → 约 1/10），各语种 sitemap 已由 robots.txt 声明；audit-seo 读全部声明的 sitemap | `2f5d959c29d` |
 | 00:47 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9dca1ab789e` |
 | 00:47 | 中立 | 目标清单：#54 #60 上线实测完成；#61 待甲方点验证 | `c9b20330428` |
