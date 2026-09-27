@@ -17,7 +17,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   enPath: "/euro-cylinder-calculator",
   locale: "en",
-  title: "Euro Cylinder Length Calculator",
+  title: "Euro Cylinder Calculator: Measure, Round Up, Order",
   description:
     "Enter the door thickness and the escutcheon depth on each side to get the two half-lengths, the overall euro cylinder length to order, and how far it will stand proud.",
 });

@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   enPath: "/euro-cylinder-calculator",
   locale: "es",
-  title: "Calculadora de longitud de cilindro europeo",
+  title: "Calculadora de cilindro europeo: medir, redondear, pedir",
   description:
     "Introduzca el espesor de la puerta y la profundidad del escudo de cada lado para obtener las dos semilongitudes, la longitud total del cilindro europeo que debe pedir y cuánto sobresaldrá.",
 });

@@ -18,3 +18,9 @@
 **没动**：seoDescription（en-1125-or-ansi 和 ansi-grade-1 的描述里仍都提到"按国家选"，下一轮可再分）；/euro-cylinder-calculator 的 metadata 记为目标清单 #71。
 
 **上线**：下一次 release:hyde，purge 后 `npm run seo:indexnow:release`。
+
+## 追加：/euro-cylinder-calculator 的 title（目标 #71）
+
+三个页面分词：door-thickness-to-cylinder-length 指南占「查表」，length-and-split 占「总长 vs 分段」，计算器只占 **calculator**。
+新 title：`Euro Cylinder Calculator: Measure, Round Up, Order`（es/pt 同义）。原来的 "Euro Cylinder Length Calculator" 和 length-and-split 重叠 0.75。
+7 个叠加语种的 title/description 以前没有译文，`tx()` 原样输出英文；已在 `content/i18n/<7>/ui.json` 补这两条。**页面正文在这 7 个语种仍是英文**，归文案/多语言会话。

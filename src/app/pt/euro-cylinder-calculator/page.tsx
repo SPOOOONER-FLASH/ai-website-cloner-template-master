@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   enPath: "/euro-cylinder-calculator",
   locale: "pt",
-  title: "Calculadora de comprimento de cilindro europeu",
+  title: "Calculadora de cilindro europeu: medir, arredondar e pedir",
   description:
     "Informe a espessura da porta e a profundidade do espelho de cada lado para obter os dois meios-comprimentos, o comprimento total do cilindro europeu a pedir e quanto ele vai sobressair.",
 });
