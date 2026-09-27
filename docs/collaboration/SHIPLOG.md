@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 606 次提交
+最近 30 天 · 共 609 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 14:15 | 中立 | IndexNow 只比 head + main：页头页脚改动不再把全站算作变化；3d9ab7aec9c 实推 6,329 条 | `57fbe356aec` |
+| 14:03 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 9fbb19322d7 | `3d9ab7aec9c` |
+| 13:41 | 中立 | release-site：子进程输出上限提到 256 MB；46,188 个暂存文件的清单被默认 1 MB 截断成 "o"，误判为 out/ 以外的文件而中止发布 | `9fbb19322d7` |
 | 13:13 | 中立 | 合 origin/main：ansi-grade-1 文章 seoDescription 七语种译文（文案会话）补 sourceHash，看板过期归零 | `3a904394634` |
 | 13:12 | HYDE | Merge remote-tracking branch 'origin/main' | `114e4600821` |
 | 12:56 | 中立 | 规格覆盖报告：重新生成（origin 的规格值 MM→mm 归一后两个字段的不同取值数 30→28、85→84） | `60ba0e16694` |
