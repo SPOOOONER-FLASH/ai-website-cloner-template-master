@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 610 次提交
+最近 30 天 · 共 611 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 11:55 | 中立 | 计算器组件文字改走 dict()，七语可翻译；重新生成 ui-keys.json | `69a7cf7c3ad` |
 | 11:53 | HYDE | /euro-cylinder-calculator title 只占 calculator，不再和 length-and-split 抢词；7 语种 title/description 补译 | `5823546b3c6` |
 | 11:51 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `ee5cea1282f` |
 | 11:50 | HYDE | 5 对文章 seoTitle 分流（文案会话建议）：6 篇 × 10 语种改主词，≥0.7 重叠 5 对 → 1 对 | `426f7d4063b` |
