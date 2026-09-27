@@ -68,4 +68,12 @@
 | 61 | 甲方在 Search Console 视频索引报告点「验证修正」，观看页被抓取后复查已编入索引数 | 待甲方 |
 | 62 | Bing SEO 报告（09-26）：5 篇指南「不在 sitemap」实际在（14 MB sitemap 读不完）→ /sitemap.xml 只放英文，语种 sitemap 各自一份；audit-seo 改读 robots.txt 声明的全部 sitemap；2 个 index.php 缺 description 实为 301；修 M8 留下的 3 个测试 | 09-26 完成（c57f1a6b88f 上线实测：/sitemap.xml 1.55 MB、881 个网址、含那 5 篇指南；9 个语种 sitemap 各 681 个网址、内容各自独立；robots.txt 列出 10 个） |
 | 63 | 甲方在 Bing 提交 10 个 sitemap 并重扫（手册 ⑦） | 待甲方（sitemap 已上线，可以提交） |
+| 64 | IndexNow 每次发布后只推「内容真变了」的页：`npm run seo:indexnow -- --last-release`，先核对线上已是新构建（未 purge 就拒绝）；09-27 首推 3,954 条 → 200 | 09-27 完成 |
+| 65 | 产品页 ↔ 应用案例互链（甲方 09-27 转来的「案例和产品关联」）：案例页已列产品，产品页还没有反向链接；十语种都要有，文案用已有译文 | 09-27 完成（18 个产品页 × 10 语种，本地实测；待下次 release:hyde） |
+| 66 | Zuperior Hardware（Dan，info@zuperiorhardware.com）询 magnetic door latch：官网没有这个品类；起草英文回信给甲方（价格留空由老板定，不编参数） | 09-27 完成（草稿在对话里交甲方） |
+| 69 | 磁性门锁舌（magnetic door latch）上官网：工厂确认能做后，给实拍照片 + 尺寸（锁舌中心距/面板/锁体长度、通道/隐私功能、表面）即可建品类页；现在不建，不编图不编参数 | 待甲方（工厂能否做 + 实物资料） |
+| 70 | 文案会话 09-27（docs/copy/guide-keyword-split.md）：5 对文章 seoTitle 同词分流 → 6 篇 × 10 语种改主词（功能开头 / 认报价钢种 / 总长 vs 分段 / 读锁体型号 / 按项目国家 vs 等级对比） | 09-27 完成 |
+| 71 | /euro-cylinder-calculator（文案会话新建，10 语种）title/description 目前写在页面 metadata；接手时按 seoTitle 规则审一遍，避免和 euro-cylinder-size-chart、length-and-split 抢词 | 09-27 完成（主词只占 calculator；7 语种 title/description 已译，正文待文案/多语言会话） |
+| 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 等待（视觉会话） |
+| 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

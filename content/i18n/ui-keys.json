@@ -99,6 +99,9 @@
   "{total} models": [
     "src/components/site/ModelIndex.tsx:30"
   ],
+  "{total}mm overall. Halves needed: {outside} outside, {inside} inside.": [
+    "src/components/site/CylinderCalculator.tsx:64"
+  ],
   "← Back to all guides": [
     "src/components/site/NewsDetail.tsx:193"
   ],
@@ -106,7 +109,7 @@
     "src/components/site/NewsDetail.tsx:42"
   ],
   "← Back to previous results": [
-    "src/components/site/ProductDetail.tsx:71"
+    "src/components/site/ProductDetail.tsx:74"
   ],
   "1 model": [
     "src/components/site/OrderCodeTables.tsx:34"
@@ -269,7 +272,7 @@
     "src/data/home.ts:217"
   ],
   "Additional product views are not yet available. Request drawings or samples from our export team.": [
-    "src/components/site/ProductDetail.tsx:75"
+    "src/components/site/ProductDetail.tsx:78"
   ],
   "Address": [
     "src/components/locale-pages/ContactPage.tsx:93"
@@ -350,11 +353,14 @@
   "Applications + Projects": [
     "src/components/locale-pages/ProjectPages.tsx:16"
   ],
+  "Arithmetic total": [
+    "src/components/site/CylinderCalculator.tsx:62"
+  ],
   "Ask a question": [
     "src/components/locale-pages/FaqPage.tsx:38"
   ],
   "Ask a technical question": [
-    "src/components/site/ProductDetail.tsx:72"
+    "src/components/site/ProductDetail.tsx:75"
   ],
   "Ask about a code": [
     "src/components/locale-pages/FinishesPage.tsx:65"
@@ -397,7 +403,7 @@
     "src/components/site/DocumentInventory.tsx:184"
   ],
   "Available finishes": [
-    "src/components/site/ProductDetail.tsx:59"
+    "src/components/site/ProductDetail.tsx:60"
   ],
   "Back to the catalog": [
     "src/components/site/ProductStudies.tsx:40"
@@ -438,6 +444,9 @@
   "Bolt detail": [
     "src/components/site/ProductDrawing.tsx:73"
   ],
+  "Both halves stand up to {mm}mm proud, more than the {max}mm we treat as the limit. On a door this thin there is no shorter half to order; fit a raised escutcheon or security rose on each side to take up the difference.": [
+    "src/components/site/CylinderCalculator.tsx:66"
+  ],
   "Both work. Some buyers place their first order through Alibaba, with the platform's payment protection, and move to direct orders once they know us. Others order directly from the first container.": [
     "src/components/locale-pages/ContactPage.tsx:77"
   ],
@@ -445,7 +454,7 @@
     "src/data/category-sourcing.ts:39"
   ],
   "Breadcrumb": [
-    "src/components/site/ProductDetail.tsx:67"
+    "src/components/site/ProductDetail.tsx:70"
   ],
   "Bright Chrome": [
     "src/data/finish-codes.ts:286",
@@ -480,8 +489,11 @@
     "src/components/site/SiteHeader.tsx:597"
   ],
   "Buy on Alibaba": [
-    "src/components/site/SiteFooter.tsx:250",
+    "src/components/site/SiteFooter.tsx:253",
     "src/components/site/SiteHeader.tsx:629"
+  ],
+  "Calculated": [
+    "src/components/site/CylinderCalculator.tsx:59"
   ],
   "Canton Hyland": [
     "src/components/site/CompanyOverview.tsx:22"
@@ -570,7 +582,7 @@
     "src/components/locale-pages/CertificationsPage.tsx:13"
   ],
   "Certification scope must be checked against the named model before specification.": [
-    "src/components/site/ProductDetail.tsx:83"
+    "src/components/site/ProductDetail.tsx:86"
   ],
   "Certifications": [
     "src/components/locale-pages/CertificationsPage.tsx:33"
@@ -721,7 +733,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:72"
   ],
   "Compare every model in this range": [
-    "src/components/site/ProductDetail.tsx:52"
+    "src/components/site/ProductDetail.tsx:53"
   ],
   "Compare models in this range": [
     "src/components/site/SpecMatrix.tsx:38"
@@ -733,7 +745,7 @@
     "src/lib/configurator.ts:439"
   ],
   "Configuration": [
-    "src/components/site/ProductDetail.tsx:48"
+    "src/components/site/ProductDetail.tsx:49"
   ],
   "Configurator": [
     "src/components/locale-pages/ConfiguratorPage.tsx:33",
@@ -791,6 +803,9 @@
   "Cylinder": [
     "src/data/hardware-terms.ts:359"
   ],
+  "Cylinder calculator": [
+    "src/components/site/SiteFooter.tsx:46"
+  ],
   "Cylinder, LC04, finish, EN 1125…": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
@@ -798,10 +813,10 @@
     "src/lib/configurator.ts:430"
   ],
   "Data preferences": [
-    "src/components/site/SiteFooter.tsx:187"
+    "src/components/site/SiteFooter.tsx:190"
   ],
   "Datasheets, CAD files and installation instructions are available on request while the verified download library is being prepared.": [
-    "src/components/site/ProductDetail.tsx:81"
+    "src/components/site/ProductDetail.tsx:84"
   ],
   "days minimum lead time": [
     "src/data/capability.ts:191"
@@ -952,7 +967,7 @@
   ],
   "Documents": [
     "src/components/locale-pages/DocumentsPage.tsx:24",
-    "src/components/site/SiteFooter.tsx:46"
+    "src/components/site/SiteFooter.tsx:47"
   ],
   "Documents already available": [
     "src/components/site/ServicesView.tsx:100"
@@ -1013,6 +1028,9 @@
   "Door thickness": [
     "src/data/hardware-terms.ts:114"
   ],
+  "Door thickness at the lock edge (mm)": [
+    "src/components/site/CylinderCalculator.tsx:50"
+  ],
   "Door type, dimensions, finish, standards, quantity and delivery market": [
     "src/components/site/InquiryForm.tsx:42"
   ],
@@ -1032,7 +1050,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:17"
   ],
   "Download the export catalog (PDF)": [
-    "src/components/site/ProductDetail.tsx:64"
+    "src/components/site/ProductDetail.tsx:67"
   ],
   "Download the plan sheet (XLSX)": [
     "src/data/feature-columns.ts:108"
@@ -1040,7 +1058,7 @@
   "Downloads": [
     "src/components/site/menu-experience.ts:80",
     "src/components/site/menu-experience.ts:201",
-    "src/components/site/ProductDetail.tsx:50",
+    "src/components/site/ProductDetail.tsx:51",
     "src/components/site/SiteHeader.tsx:97"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
@@ -1070,6 +1088,9 @@
   "Each family opens onto its models and the figures that decide whether they fit. The complete catalog below compares them side by side.": [
     "src/components/site/products-architecture.ts:200"
   ],
+  "Each half is measured from the center of the fixing screw to the outer face of the escutcheon or rose on its side. Half-lengths come in 5mm steps from a minimum of 27.5mm, so the calculated figure is always rounded up: a half that is a little long can be covered with a rose, a half that is short cannot be fixed at the door.": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:45"
+  ],
   "Editorial atlas of nine architectural door-hardware families on a neutral field": [
     "src/components/site/products-architecture.ts:124"
   ],
@@ -1091,14 +1112,38 @@
   "Enlarge image of": [
     "src/components/site/ProductStudies.tsx:48"
   ],
+  "Enter a door thickness above zero, trim depths of 0 to 50mm, and a center that sits inside the door.": [
+    "src/components/site/CylinderCalculator.tsx:72"
+  ],
+  "Enter the door thickness and the escutcheon depth on each side to get the two half-lengths, the overall euro cylinder length to order, and how far it will stand proud.": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:20"
+  ],
   "Entrance and communication": [
     "src/data/finish-codes.ts:432"
   ],
   "Entrance, keyed outside": [
     "src/data/finish-codes.ts:396"
   ],
+  "Escutcheon or rose depth, inside (mm)": [
+    "src/components/site/CylinderCalculator.tsx:52"
+  ],
+  "Escutcheon or rose depth, outside (mm)": [
+    "src/components/site/CylinderCalculator.tsx:51"
+  ],
   "Estimated quantity": [
     "src/components/site/InquiryForm.tsx:40"
+  ],
+  "Euro cylinder calculator": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:32"
+  ],
+  "Euro Cylinder Calculator: Measure, Round Up, Order": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:19"
+  ],
+  "Euro cylinder length calculator. Two halves, rounded up, outside first.": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:38"
+  ],
+  "Euro cylinder size chart": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:72"
   ],
   "Events": [
     "src/components/site/menu-experience.ts:213",
@@ -1224,7 +1269,7 @@
     "src/components/site/ProductFinder.tsx:57"
   ],
   "Find {model} on our Alibaba storefront": [
-    "src/components/site/ProductDetail.tsx:88"
+    "src/components/site/ProductDetail.tsx:93"
   ],
   "Find a guide": [
     "src/components/site/GuideListing.tsx:15"
@@ -1281,6 +1326,9 @@
   ],
   "flip-up grab bar": [
     "src/data/category-sourcing.ts:49"
+  ],
+  "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.": [
+    "src/components/site/ProductDetail.tsx:66"
   ],
   "For a sliding leaf, where a bolt cannot travel straight out. A hook swings from the case into the keep.": [
     "src/lib/configurator.ts:415"
@@ -1370,6 +1418,9 @@
   "Gun Metal": [
     "src/data/finish-codes.ts:193"
   ],
+  "Half": [
+    "src/components/site/CylinderCalculator.tsx:56"
+  ],
   "Handing": [
     "src/data/hardware-terms.ts:257"
   ],
@@ -1424,6 +1475,7 @@
     "src/components/locale-pages/ComparePage.tsx:70",
     "src/components/locale-pages/ConfiguratorPage.tsx:31",
     "src/components/locale-pages/ConfiguratorPage.tsx:42",
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:32",
     "src/components/locale-pages/DocumentsPage.tsx:24",
     "src/components/locale-pages/DownloadsPage.tsx:41",
     "src/components/locale-pages/FinishesPage.tsx:26",
@@ -1433,7 +1485,7 @@
     "src/components/locale-pages/ProductPage.tsx:94",
     "src/components/locale-pages/ProductsIndexPage.tsx:34",
     "src/components/site/NewsDetail.tsx:40",
-    "src/components/site/ProductDetail.tsx:69",
+    "src/components/site/ProductDetail.tsx:72",
     "src/components/site/ProductsEditorialOverview.tsx:20",
     "src/components/site/ProjectDetail.tsx:14"
   ],
@@ -1465,7 +1517,7 @@
     "src/components/site/FinderModeSwitch.tsx:41"
   ],
   "How to buy": [
-    "src/components/site/SiteFooter.tsx:225"
+    "src/components/site/SiteFooter.tsx:228"
   ],
   "How to read a Canton Hyland model number: the finish codes (SSS, PB, SN, GM), the lock-function codes (ET, BK, PS) and the single/double door letter, with the models each appears on.": [
     "src/components/locale-pages/FinishesPage.tsx:15"
@@ -1528,10 +1580,13 @@
     "src/components/site/ProductStudies.tsx:54"
   ],
   "Information available on request": [
-    "src/components/site/ProductDetail.tsx:61"
+    "src/components/site/ProductDetail.tsx:62"
   ],
   "Inquiry submitted": [
     "src/components/site/InquirySuccess.tsx:10"
+  ],
+  "Inside": [
+    "src/components/site/CylinderCalculator.tsx:58"
   ],
   "Inside the factory": [
     "src/components/site/CompanyOverview.tsx:31"
@@ -1584,6 +1639,9 @@
   "Latch only. Specified for corridors and rooms that must never be lockable.": [
     "src/data/finish-codes.ts:418"
   ],
+  "Leave unticked for a lock case centered in the leaf, which is most mortise cases in most doors.": [
+    "src/components/site/CylinderCalculator.tsx:55"
+  ],
   "Leave with a model number": [
     "src/components/site/ConfiguratorIntro.tsx:41"
   ],
@@ -1629,6 +1687,9 @@
   "Locks, cylinders and handles from our catalog, presented in studio compositions. Open each model to explore its original photographs, dimensions and finish options.": [
     "src/components/site/ProductStudies.tsx:43"
   ],
+  "Longer than the 90mm our catalog publishes. Send the three measurements and we will say what can be supplied.": [
+    "src/components/site/CylinderCalculator.tsx:67"
+  ],
   "Made for the day nobody plans for. Push bars for escape and fire doors, single-point to multi-point.": [
     "src/components/site/products-architecture.ts:43"
   ],
@@ -1672,7 +1733,7 @@
     "content/news/master-key-systems-how-many-levels-you-need.json"
   ],
   "Material": [
-    "src/components/site/ProductDetail.tsx:58"
+    "src/components/site/ProductDetail.tsx:59"
   ],
   "Material & finish": [
     "src/components/site/ProductStudies.tsx:45"
@@ -1692,6 +1753,9 @@
   "Meaning": [
     "src/components/site/OrderCodeTables.tsx:29"
   ],
+  "Measure the door with a caliper at the lock edge. A tape hooked over a rebated edge reads the rebate, and the error always runs toward a cylinder that is too short.": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:51"
+  ],
   "Mechanism": [
     "src/components/site/HardwareTerms.tsx:37"
   ],
@@ -1702,7 +1766,7 @@
     "src/components/site/SiteHeader.tsx:65"
   ],
   "Minimum order quantity, production lead time, sample policy, payment terms and OEM work — answered in full.": [
-    "src/components/site/ProductDetail.tsx:57"
+    "src/components/site/ProductDetail.tsx:58"
   ],
   "Minimum order, lead time, samples, payment, OEM": [
     "src/components/site/SiteHeader.tsx:96"
@@ -1757,10 +1821,10 @@
     "src/components/site/ProductFinder.tsx:58"
   ],
   "More in {category}": [
-    "src/components/site/ProductDetail.tsx:86"
+    "src/components/site/ProductDetail.tsx:91"
   ],
   "More in the {series} series": [
-    "src/components/site/ProductDetail.tsx:85"
+    "src/components/site/ProductDetail.tsx:90"
   ],
   "More links": [
     "src/components/site/WelcomeIntro.tsx:19"
@@ -1835,13 +1899,13 @@
     "src/components/site/NewsListing.tsx:17"
   ],
   "Newsletter": [
-    "src/components/site/SiteFooter.tsx:202"
+    "src/components/site/SiteFooter.tsx:205"
   ],
   "Next step": [
     "src/components/site/ProductsEditorialOverview.tsx:24"
   ],
   "Next steps": [
-    "src/components/site/ProductDetail.tsx:51"
+    "src/components/site/ProductDetail.tsx:52"
   ],
   "Nickel Plated": [
     "src/data/finish-codes.ts:173"
@@ -1874,7 +1938,7 @@
     "src/components/site/ConfiguratorTeaser.tsx:38"
   ],
   "No product-specific certificate is published for this model. Company credentials remain available through the export team.": [
-    "src/components/site/ProductDetail.tsx:79"
+    "src/components/site/ProductDetail.tsx:82"
   ],
   "No releases published yet.": [
     "src/components/site/NewsListing.tsx:20"
@@ -1971,7 +2035,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:57"
   ],
   "One table, one row per model, across the specifications that differ between them.": [
-    "src/components/site/ProductDetail.tsx:54"
+    "src/components/site/ProductDetail.tsx:55"
   ],
   "One tubular lock.": [
     "src/data/finish-codes.ts:490"
@@ -2016,13 +2080,13 @@
     "src/components/site/products-architecture.ts:168"
   ],
   "Opens our storefront already searched for this model — trade assurance, tiered pricing and order tracking are handled there.": [
-    "src/components/site/ProductDetail.tsx:91"
+    "src/components/site/ProductDetail.tsx:96"
   ],
   "Opens this model's listing, with current pricing, MOQ and lead time.": [
-    "src/components/site/ProductDetail.tsx:89"
+    "src/components/site/ProductDetail.tsx:94"
   ],
   "Or email us about this model:": [
-    "src/components/site/ProductDetail.tsx:68"
+    "src/components/site/ProductDetail.tsx:71"
   ],
   "Or start from our catalog": [
     "src/components/site/ServicesView.tsx:45"
@@ -2031,7 +2095,7 @@
     "src/components/site/CompanyOverview.tsx:41"
   ],
   "Order {model} on Alibaba": [
-    "src/components/site/ProductDetail.tsx:87"
+    "src/components/site/ProductDetail.tsx:92"
   ],
   "Order codes": [
     "src/components/locale-pages/FinishesPage.tsx:26",
@@ -2043,6 +2107,9 @@
   ],
   "Order codes and finishes": [
     "src/components/locale-pages/GlossaryPage.tsx:63"
+  ],
+  "Order from our range": [
+    "src/components/site/CylinderCalculator.tsx:63"
   ],
   "Order from the Canton Hyland export catalog": [
     "src/data/home.ts:83"
@@ -2057,7 +2124,7 @@
     "src/components/site/HardwareTerms.tsx:38"
   ],
   "Ordering, lead times and samples": [
-    "src/components/site/ProductDetail.tsx:55"
+    "src/components/site/ProductDetail.tsx:56"
   ],
   "Ordering, samples, lead times, finishes, master key systems, certification and export questions for Canton Hyland door hardware.": [
     "src/components/locale-pages/FaqPage.tsx:14"
@@ -2077,17 +2144,32 @@
   "original-photo composition": [
     "src/components/site/ProductStudies.tsx:49"
   ],
+  "Our catalog publishes overall lengths, not the split of each model. Ask for the split in writing and we confirm it before anything ships.": [
+    "src/components/site/CylinderCalculator.tsx:71"
+  ],
   "Our catalog uses this label for two different measurements, and it is worth knowing which one you are reading. On a mortise lock case it is the distance from the cylinder center to the spindle center — we publish 45, 65, 68, 72, 85 and 92mm, of which 72 and 85 are the common European figures. On a pull handle or a glass-door fitting it is the distance between the two fixing points, and our range runs from 125 to 179mm.": [
     "src/data/hardware-terms.ts:99"
   ],
   "Our flagship range, and the one we know best: push bars for escape and fire doors, from single-point rim devices to multi-point sets for double doors.": [
     "src/data/home.ts:109"
   ],
+  "Our lock cylinders": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:73"
+  ],
   "Our panic devices, lock cases and lever sets are fitted in commercial, institutional and residential buildings in the markets we export to, often under our customers' own names, with master-key and construction-key systems planned for each building.": [
     "src/data/home.ts:116"
   ],
   "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.": [
     "src/components/site/CompanyOverview.tsx:29"
+  ],
+  "Outside": [
+    "src/components/site/CylinderCalculator.tsx:57"
+  ],
+  "Outside face of the door to the fixing-screw center (mm)": [
+    "src/components/site/CylinderCalculator.tsx:54"
+  ],
+  "Overall lengths we publish": [
+    "src/components/site/CylinderCalculator.tsx:73"
   ],
   "Overview": [
     "src/components/site/NewsDetail.tsx:146",
@@ -2205,7 +2287,7 @@
     "src/components/locale-pages/ProductFinderPage.tsx:21"
   ],
   "Product images": [
-    "src/components/site/ProductDetail.tsx:65"
+    "src/components/site/ProductDetail.tsx:68"
   ],
   "Product pages": [
     "src/components/site/CategoryFilter.tsx:51",
@@ -2232,7 +2314,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:35",
     "src/components/site/menu-experience.ts:67",
     "src/components/site/menu-experience.ts:191",
-    "src/components/site/ProductDetail.tsx:70",
+    "src/components/site/ProductDetail.tsx:73",
     "src/components/site/ProductsEditorialOverview.tsx:21",
     "src/components/site/SiteHeader.tsx:472",
     "src/components/site/SiteHeader.tsx:481"
@@ -2253,6 +2335,7 @@
     "src/data/hardware-terms.ts:154"
   ],
   "Projects + Applications": [
+    "src/components/site/ProductDetail.tsx:88",
     "src/components/site/ProjectDetail.tsx:15"
   ],
   "Public-building corridor with glazed partitions and fire-egress doors": [
@@ -2329,7 +2412,7 @@
   ],
   "Reference available on request": [
     "src/components/site/ProductCard.tsx:91",
-    "src/components/site/ProductDetail.tsx:62"
+    "src/components/site/ProductDetail.tsx:63"
   ],
   "Reference pages for hardware decisions: euro cylinder charts, EN to ANSI/BHMA cross-references, finish code tables and what each standard covers.": [
     "src/components/locale-pages/ArticlePages.tsx:36"
@@ -2339,7 +2422,7 @@
     "src/components/site/NewsDetail.tsx:321"
   ],
   "Related products": [
-    "src/components/site/ProductDetail.tsx:84",
+    "src/components/site/ProductDetail.tsx:87",
     "src/components/site/ProjectDetail.tsx:20"
   ],
   "Renamed records": [
@@ -2352,6 +2435,7 @@
     "src/components/site/InquiryForm.tsx:38"
   ],
   "Representative application": [
+    "src/components/site/ProductDetail.tsx:89",
     "src/components/site/ProjectDetail.tsx:16"
   ],
   "Representative architectural entrance combining glass, metal and coordinated door hardware": [
@@ -2376,7 +2460,7 @@
     "src/data/home.ts:137"
   ],
   "Request a quote": [
-    "src/components/site/ProductDetail.tsx:63"
+    "src/components/site/ProductDetail.tsx:64"
   ],
   "Request a quote for this configuration": [
     "src/components/site/Configurator.tsx:72"
@@ -2509,6 +2593,9 @@
   "Send the door schedule to our export team": [
     "src/components/site/menu-experience.ts:59"
   ],
+  "Send the door thickness, the escutcheon or rose you are fitting on each side, and whether the inside needs a key or a thumbturn. With those three a length and a split come back as a recommendation rather than a question. For keyed-alike or master-keyed cylinders, say so in the same message: they are made to order.": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:65"
+  ],
   "Send the drawing or sample, the target market and your expected annual quantity.": [
     "src/components/site/ServicesView.tsx:63"
   ],
@@ -2520,6 +2607,9 @@
   ],
   "Send the standard you need, the model number and the destination market. We will tell you whether a report names that exact model before we send it, and say so if none does.": [
     "src/components/locale-pages/CertificationsPage.tsx:103"
+  ],
+  "Send the three measurements": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:74"
   ],
   "Send us your hardware requirements": [
     "src/data/home.ts:188"
@@ -2578,7 +2668,7 @@
     "src/lib/configurator.ts:455"
   ],
   "Sign-up here": [
-    "src/components/site/SiteFooter.tsx:213"
+    "src/components/site/SiteFooter.tsx:216"
   ],
   "Single door": [
     "src/data/finish-codes.ts:536"
@@ -2587,7 +2677,7 @@
     "src/data/category-sourcing.ts:47"
   ],
   "Social Media": [
-    "src/components/site/SiteFooter.tsx:282"
+    "src/components/site/SiteFooter.tsx:285"
   ],
   "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.": [
     "src/lib/configurator.ts:460"
@@ -2637,14 +2727,20 @@
   "Stamping": [
     "src/data/capability.ts:92"
   ],
+  "Standard half": [
+    "src/components/site/CylinderCalculator.tsx:60"
+  ],
   "Standards & testing": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Standards and certifications": [
-    "src/components/site/ProductDetail.tsx:49"
+    "src/components/site/ProductDetail.tsx:50"
   ],
   "Standoff": [
     "src/data/hardware-terms.ts:174"
+  ],
+  "Stands proud by": [
+    "src/components/site/CylinderCalculator.tsx:61"
   ],
   "Start again": [
     "src/components/site/Configurator.tsx:64"
@@ -2678,7 +2774,7 @@
     "src/lib/configurator.ts:412"
   ],
   "Suitable door types": [
-    "src/components/site/ProductDetail.tsx:60"
+    "src/components/site/ProductDetail.tsx:61"
   ],
   "Surface and concealed systems": [
     "src/components/site/products-architecture.ts:186"
@@ -2699,7 +2795,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:44"
   ],
   "Technical specifications": [
-    "src/components/site/ProductDetail.tsx:47"
+    "src/components/site/ProductDetail.tsx:48"
   ],
   "Tell us the door type, the finish, the standard, the quantity and the destination market, and our first reply can already be a useful one.": [
     "src/components/locale-pages/ContactPage.tsx:44"
@@ -2758,8 +2854,14 @@
   "The {m} takes a {v} cylinder.": [
     "src/lib/product-faq.ts:192"
   ],
+  "The {side} half stands {mm}mm proud, more than the {max}mm we treat as the limit. Use a raised escutcheon or security rose on that side to take up the difference; do not order a shorter half, because there is none that still reaches.": [
+    "src/components/site/CylinderCalculator.tsx:69"
+  ],
+  "The arithmetic, with a worked table": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
+  ],
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
-    "src/components/site/SiteFooter.tsx:206"
+    "src/components/site/SiteFooter.tsx:209"
   ],
   "The center distance on the {m} is {v}.": [
     "src/lib/product-faq.ts:147"
@@ -2817,6 +2919,9 @@
   ],
   "The link carries your selections, so the export team sees the same configuration you do.": [
     "src/components/site/Configurator.tsx:74"
+  ],
+  "The lock case is not centered in the door": [
+    "src/components/site/CylinderCalculator.tsx:53"
   ],
   "The longer version, with the reasoning": [
     "src/components/site/DocumentInventory.tsx:149"
@@ -2902,6 +3007,9 @@
   "The throw sets the depth of the pocket that has to be cut in the frame, and several markets write a minimum throw into the building code for entrance doors. A short throw in a deep-rebated frame leaves a bolt that can be levered.": [
     "src/data/hardware-terms.ts:146"
   ],
+  "The two halves differ, so the split has a direction. State it outside first, in words, when you order.": [
+    "src/components/site/CylinderCalculator.tsx:70"
+  ],
   "The upper half of a pivot set: it locates the door, the floor spring carries it.": [
     "src/lib/configurator.ts:440"
   ],
@@ -2941,6 +3049,9 @@
   "Three exterior studies based on published dimensions. These are partial models; each file’s scope is described before downloading.": [
     "src/components/site/ProductModel.tsx:15"
   ],
+  "Three lines for the inquiry": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:59"
+  ],
   "Three tabs: a door schedule with catalog dropdowns, a free-format tab if you already keep your own schedule, and a worked example of a three-level building. Fill in what you know and leave the rest.": [
     "content/news/master-key-systems-how-many-levels-you-need.json"
   ],
@@ -2952,6 +3063,9 @@
   ],
   "Too small and a gloved hand cannot use it, which matters on a cold-store or a workshop entrance. Accessibility guidance in several markets sets a minimum.": [
     "src/data/hardware-terms.ts:186"
+  ],
+  "Tool": [
+    "src/components/locale-pages/CylinderCalculatorPage.tsx:36"
   ],
   "Tooled here": [
     "src/lib/flagship-tooling.ts:106"
@@ -3017,7 +3131,7 @@
     "src/components/site/products-architecture.ts:174"
   ],
   "Verified dimensions are pending the current technical catalog. No values have been inferred from similar products.": [
-    "src/components/site/ProductDetail.tsx:77"
+    "src/components/site/ProductDetail.tsx:80"
   ],
   "Verified model-scoped reports": [
     "src/components/site/SiteHeader.tsx:66"
@@ -3035,7 +3149,7 @@
     "src/components/site/ProductCard.tsx:94"
   ],
   "View certificate": [
-    "src/components/site/ProductDetail.tsx:73"
+    "src/components/site/ProductDetail.tsx:76"
   ],
   "View lever handles": [
     "src/data/home.ts:32"
@@ -3062,7 +3176,7 @@
     "src/data/home.ts:28"
   ],
   "Watch it work": [
-    "src/components/site/ProductDetail.tsx:66"
+    "src/components/site/ProductDetail.tsx:69"
   ],
   "We are the factory, not a trading office in front of one. Everything below happens on our own floor, from the mould to the carton — which is why a change of finish or a customer's own drawing is a scheduling question here rather than a subcontracting one.": [
     "src/data/capability.ts:211"

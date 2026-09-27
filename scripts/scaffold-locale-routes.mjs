@@ -27,6 +27,7 @@ const STATIC = [
   ["contact", "ContactPage", "ContactPage", "contactMetadata"],
   ["documents", "DocumentsPage", "DocumentsPage", "documentsMetadata"],
   ["downloads", "DownloadsPage", "DownloadsPage", "downloadsMetadata"],
+  ["euro-cylinder-calculator", "CylinderCalculatorPage", "CylinderCalculatorPage", "cylinderCalculatorMetadata"],
   ["faq", "FaqPage", "FaqPage", "faqMetadata"],
   ["finishes", "FinishesPage", "FinishesPage", "finishesMetadata"],
   ["glossary", "GlossaryPage", "GlossaryPage", "glossaryMetadata"],

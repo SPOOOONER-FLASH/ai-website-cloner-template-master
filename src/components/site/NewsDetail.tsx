@@ -410,6 +410,25 @@ export function NewsDetail({
               </a>
             ) : null}
 
+            {/*
+              A tool page that does what the article explains (2026-09-27). Same row style as
+              the take-away file: the reader who has just followed the arithmetic is the one
+              most likely to want it done for their own door.
+            */}
+            {article.tool ? (
+              <Link
+                href={`${base}${article.tool.href}`}
+                className="mt-48 block border-t border-ink pt-16 hover:text-brand-hover"
+              >
+                <span className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+                  {pickText("Tool", "Herramienta", "Ferramenta")}
+                </span>
+                <span className="short-marker short-marker-arrow relative mt-8 block ps-12 text-c1 text-brand">
+                  {pickText(article.tool.title, article.tool.titleEs, article.tool.titlePt)}
+                </span>
+              </Link>
+            ) : null}
+
             {article.gallery && article.gallery.length > 0 ? (
               <div className="mt-48 space-y-48">
                 {article.gallery.map((image, index) => (
