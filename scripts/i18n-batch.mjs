@@ -142,7 +142,25 @@ if (kind === "products") {
         features: p.features ?? [],
         specs: (p.specs ?? []).map(({ label, value }) => ({ label, value })),
       },
-      target: { name: "", summary: "", description: "", features: [], specs: (p.specs ?? []).map(({ label }) => ({ label, value: "" })) },
+      /*
+        A stale job pre-fills the fields whose English did NOT move from the overlay, so the
+        writer rewrites only `retranslate` (and only `changedIndices` of an array). Until
+        2026-09-27 every target arrived empty and seven writers each copied the old
+        translation back by hand before the merge would accept the record.
+      */
+      target: forcedMap
+        ? {
+            name: forcedMap[p.slug].includes("name") ? "" : (done[p.slug]?.name ?? ""),
+            summary: forcedMap[p.slug].includes("summary") ? "" : (done[p.slug]?.summary ?? ""),
+            description: forcedMap[p.slug].includes("description") ? "" : (done[p.slug]?.description ?? ""),
+            features: forcedMap[p.slug].includes("features") ? [] : (done[p.slug]?.features ?? []),
+            specs: (p.specs ?? []).map(({ label }, i) => {
+              const old = done[p.slug]?.specs?.[i];
+              const keep = !forcedMap[p.slug].includes("specs") || (changedIndices(p.slug, p, forcedMap[p.slug])?.specs && !changedIndices(p.slug, p, forcedMap[p.slug]).specs.includes(i));
+              return { label, value: keep && old?.label === label ? old.value : "" };
+            }),
+          }
+        : { name: "", summary: "", description: "", features: [], specs: (p.specs ?? []).map(({ label }) => ({ label, value: "" })) },
     }));
 } else if (kind === "categories") {
   const done = overlay("categories");

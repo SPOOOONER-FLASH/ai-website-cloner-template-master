@@ -84,6 +84,12 @@ card-figure 的 overlay 分支、product-faq 的模板句（改成带 `{m}`/`{v}
 两轮共新增 ui 键 94 + 92 + 160，七语种各由一名 opus 写手翻译并 `i18n-merge` 合入。本轮结束用 `.claude/settings.local.json` 的 Stop 钩子（`tmp/claude-market/gate.mjs`）
 把「构建 → parity ≤ 2% → 提交 → test:export → ship → 通知发布会话」六步做成停机门槛，任何一步没过会话不许停。
 
+**09-27 第三轮（合 origin/main 之后）**：本地重建 `audit-locale-parity` 按板块拆开看，guides 430/4353、news 316/2491 —— 每篇约 10 行，
+全是文章 FAQ：articleFaqItems 走 dict({en,es,pt}) 看不见旁挂 faq，改 articleFaqItemsFor 优先；glossary 44/82 是 HardwareTerms 的 pick 仍是三元；
+configurator 38/77 是 HardwareGlossary 直接读 OPTION_NOTES。三处修完、合入文案会话的计算器页/去模板化摘要（41 键 + 177 条产品 + 6 篇 seoTitle 补译）后重建：
+**fr 0.4% / de 0.5% / ja 0.8% / ko 0.5% / tr 0.4% / ru 0.4% / ar 0.4%（西语基准 0.5%，及格线 ≤ 2%），七语种 audit 全部「完成 是」**。
+`i18n-batch --stale` 现在会预填未变字段（之前七位写手各自手工复制回来）；ProductDrawing 的 {centres} 占位符改 {centers}（us-spelling 测试）。
+
 **hreflang 互惠修复**：`(en|es|pt)/products/[category]/[slug]/page.tsx` 三处硬编码 en/es/pt 的 `languages` 改为 `alternateLanguages()`，
 否则七语种产品页指向英西葡而对方不指回，`scripts/seo-audit.test.mjs` 报 10,841 处 `hreflang-not-reciprocal`。
 

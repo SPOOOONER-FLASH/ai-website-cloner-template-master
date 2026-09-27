@@ -3100,7 +3100,7 @@
   "Two closers and no coordinator means the leaves close in whichever order the springs decide. If the active leaf lands first the door never latches — and an unlatched fire door is not a fire door.": [
     "src/data/feature-columns.ts:136"
   ],
-  "Two holes, Ø{diameter}mm, at {centres}mm centers.": [
+  "Two holes, Ø{diameter}mm, at {centers}mm centers.": [
     "src/components/site/ProductDrawing.tsx:52"
   ],
   "Two locks that are visually identical can be a bathroom lock and an entrance lock. Specify a privacy set on a store room and it cannot be keyed; specify an entrance set on a bathroom and there is no way in when someone faints behind the door.": [
