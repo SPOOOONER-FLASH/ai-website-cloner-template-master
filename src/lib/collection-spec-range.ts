@@ -1,6 +1,6 @@
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
-import { t } from "./i18n.ts";
+import { t, tx } from "./i18n.ts";
 import { specLabels } from "./i18n.ts";
 
 /**
@@ -173,9 +173,7 @@ export function collectionSpecRanges(products: Product[], locale: Locale = "en")
 }
 
 export function specRangeHeading(locale: Locale = "en"): string {
-  if (locale === "es") return "Lo que abarca esta gama";
-  if (locale === "pt") return "O que esta linha abrange";
-  return "What this range covers";
+  return tx(locale, "What this range covers", { es: "Lo que abarca esta gama", pt: "O que esta linha abrange" });
 }
 
 /** "stated on 12 of 19 models" — so a reader knows how much of the family the line speaks for. */

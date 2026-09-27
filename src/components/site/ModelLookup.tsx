@@ -7,7 +7,7 @@ import {
   retiredPaths,
   type MergeReason,
 } from "@/lib/superseded-models";
-import { dict, tx } from "@/lib/i18n";
+import { dict, fill, tx } from "@/lib/i18n";
 
 /**
  * The three tables of /model-lookup. See src/lib/superseded-models.ts for why they are
@@ -88,10 +88,11 @@ const COPY = {
     nowCalled: "Now",
     retiredTitle: "Retired catalog paths",
     retiredIntro: "A whole category was withdrawn and everything under it moved.",
-    movedProducts: (n: number) => (n === 1 ? "1 product moved" : `${n} products moved`),
+    oneMoved: "1 product moved",
+    movedProducts: "{n} products moved",
     notShownTitle: "In the catalog, not on the site",
-    notShownIntro: (n: number) =>
-      `${n} models are in the catalog and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.`,
+    notShownIntro:
+      `{n} models are in the catalog and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.`,
     notShownNote:
       "These are printed as text rather than links on purpose: the page behind each one has no photograph on it yet, and sending you to a blank page is not an answer.",
     ask: "Ask about a model number",
@@ -104,10 +105,11 @@ const COPY = {
     nowCalled: "Ahora",
     retiredTitle: "Rutas de catálogo retiradas",
     retiredIntro: "Se retiró una categoría entera y todo lo que contenía se trasladó.",
-    movedProducts: (n: number) => (n === 1 ? "1 producto trasladado" : `${n} productos trasladados`),
+    oneMoved: "1 producto trasladado",
+    movedProducts: "{n} productos trasladados",
     notShownTitle: "En el catálogo, no en la web",
-    notShownIntro: (n: number) =>
-      `${n} modelos están en el catálogo y no tienen fotografía publicada, así que la web no los lista. No están descatalogados — no usamos esa palabra para un producto que seguimos fabricando. Envíenos el número de modelo y le mandamos la fotografía y la ficha técnica.`,
+    notShownIntro:
+      `{n} modelos están en el catálogo y no tienen fotografía publicada, así que la web no los lista. No están descatalogados — no usamos esa palabra para un producto que seguimos fabricando. Envíenos el número de modelo y le mandamos la fotografía y la ficha técnica.`,
     notShownNote:
       "Van escritos como texto y no como enlaces a propósito: la página de cada uno todavía no tiene fotografía, y mandarle a una página en blanco no es una respuesta.",
     ask: "Consultar un número de modelo",
@@ -120,10 +122,11 @@ const COPY = {
     nowCalled: "Agora",
     retiredTitle: "Rotas de catálogo retiradas",
     retiredIntro: "Retirou-se uma categoria inteira e tudo o que continha foi transferido.",
-    movedProducts: (n: number) => (n === 1 ? "1 produto transferido" : `${n} produtos transferidos`),
+    oneMoved: "1 produto transferido",
+    movedProducts: "{n} produtos transferidos",
     notShownTitle: "No catálogo, não no site",
-    notShownIntro: (n: number) =>
-      `${n} modelos estão no catálogo e não têm fotografia publicada, por isso o site não os lista. Não estão descontinuados — não usamos essa palavra para um produto que continuamos a fabricar. Envie-nos o número de modelo e mandamos a fotografia e a ficha técnica.`,
+    notShownIntro:
+      `{n} modelos estão no catálogo e não têm fotografia publicada, por isso o site não os lista. Não estão descontinuados — não usamos essa palavra para um produto que continuamos a fabricar. Envie-nos o número de modelo e mandamos a fotografia e a ficha técnica.`,
     notShownNote:
       "Estão escritos como texto e não como links de propósito: a página de cada um ainda não tem fotografia, e mandá-lo para uma página em branco não é uma resposta.",
     ask: "Consultar um número de modelo",
@@ -216,7 +219,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                     {tx(locale, path.categoryName, { es: path.categoryNameEs, pt: path.categoryNamePt })}
                   </Link>
                   <span className="mt-4 block text-c2 text-ink-secondary">
-                    {copy.movedProducts(path.moved)}
+                    {path.moved === 1 ? copy.oneMoved : fill(copy.movedProducts, { n: path.moved })}
                   </span>
                 </dd>
               </div>
@@ -230,7 +233,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
           {copy.notShownTitle}
         </h2>
         <p className="mt-16 max-w-[68ch] text-c1 text-ink-secondary">
-          {copy.notShownIntro(notShownModels.length)}
+          {fill(copy.notShownIntro, { n: notShownModels.length })}
         </p>
         <p className="mt-16 max-w-[68ch] text-c2 text-ink-secondary">{copy.notShownNote}</p>
 

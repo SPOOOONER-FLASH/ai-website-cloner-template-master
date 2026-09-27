@@ -26,7 +26,7 @@ const SiteMenuDrawer = dynamic(() =>
   { ssr: false },
 );
 import navigationStyles from "./HeaderNavigation.module.css";
-import { dict } from "@/lib/i18n-client";
+import { dict, tx } from "@/lib/i18n-client";
 
 /**
  * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
@@ -142,8 +142,6 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const locale = localeFromPath(pathname);
   const homeHref = locale === "en" ? "/" : `/${locale}`;
   /* Copy in the page's own language, in source order en / es / pt. */
-  const say = (en: string, es: string, pt: string) =>
-    locale === "es" ? es : locale === "pt" ? pt : en;
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
   const companyCurrent = dict(companyShelfLinks, locale).some((link) =>
     isCurrent(localisedHref(link.href, locale)),
@@ -290,7 +288,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                           buyCurrent && "current-nav",
                         )}
                       >
-                        {say("Buy it now", "Comprar ahora", "Comprar agora")}
+                        {tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
                       </button>
                     );
                   }
@@ -338,7 +336,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 <LocalePicker locale={locale} />
                 <button
                   type="button"
-                  aria-label={say("Search", "Buscar", "Pesquisar")}
+                  aria-label={tx(locale, "Search", { es: "Buscar", pt: "Pesquisar" })}
                   aria-expanded={searchOpen}
                   onClick={() => {
                     setOpenShelf(null);
@@ -351,7 +349,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 </button>
                 <button
                   type="button"
-                  aria-label={say("Open menu", "Abrir menú", "Abrir menu")}
+                  aria-label={tx(locale, "Open menu", { es: "Abrir menú", pt: "Abrir menu" })}
                   ref={menuTriggerRef}
                   aria-controls="site-menu-dialog"
                   aria-expanded={menuOpen}
@@ -385,7 +383,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
         */}
         <div className={cn("layout border-t border-line bg-surface xl:hidden", navigationStyles.compactNavigation)}>
           <nav
-            aria-label={say("Main navigation", "Navegación principal", "Navegação principal")}
+            aria-label={tx(locale, "Main navigation", { es: "Navegación principal", pt: "Navegação principal" })}
             className="nav-rail col-content"
           >
             {headerNav
@@ -448,7 +446,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     }}
                     className="nav-rail-cta"
                   >
-                    {say("Buy it now", "Comprar ahora", "Comprar agora")}
+                    {tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
                     <span aria-hidden="true">›</span>
                   </button>
                 );
@@ -471,7 +469,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       <section
         id="products-shelf"
-        aria-label={say("Products", "Productos", "Produtos")}
+        aria-label={tx(locale, "Products", { es: "Productos", pt: "Produtos" })}
         aria-hidden={openShelf !== "products"}
         className={cn("header-shelf", openShelf === "products" && "header-shelf-open")}
       >
@@ -480,21 +478,17 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
               <div>
                 <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {say("Products", "Productos", "Produtos")}
+                  {tx(locale, "Products", { es: "Productos", pt: "Produtos" })}
                 </p>
                 <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {say(
-                    "Fifteen product families. The number is how many verified records each one holds.",
-                    "Quince familias de producto. El número es cuántas referencias verificadas contiene cada una.",
-                    "Quinze famílias de produto. O número é quantas referências verificadas cada uma contém.",
-                  )}
+                  {tx(locale, "Fifteen product families. The number is how many verified records each one holds.", { es: "Quince familias de producto. El número es cuántas referencias verificadas contiene cada una.", pt: "Quinze famílias de produto. O número é quantas referências verificadas cada uma contém." })}
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
                   onClick={() => setOpenShelf(null)}
                   className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
                 >
-                  {say("Product Finder", "Buscador de productos", "Localizador de produtos")}
+                  {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
                 </Link>
               </div>
               {/* Four columns of fifteen: the whole catalogue reachable in one hover
@@ -561,7 +555,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       <section
         id="company-shelf"
-        aria-label={say("Company", "Empresa", "Empresa")}
+        aria-label={tx(locale, "Company", { es: "Empresa", pt: "Empresa" })}
         aria-hidden={openShelf !== "company"}
         className={cn("header-shelf", openShelf === "company" && "header-shelf-open")}
       >
@@ -570,14 +564,10 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
               <div>
                 <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {say("Company", "Empresa", "Empresa")}
+                  {tx(locale, "Company", { es: "Empresa", pt: "Empresa" })}
                 </p>
                 <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {say(
-                    "The factory, markets and technical support behind HYDE.",
-                    "La fábrica, sus mercados y el apoyo técnico detrás de HYDE.",
-                    "A fábrica, os mercados e o apoio técnico por trás da HYDE.",
-                  )}
+                  {tx(locale, "The factory, markets and technical support behind HYDE.", { es: "La fábrica, sus mercados y el apoyo técnico detrás de HYDE.", pt: "A fábrica, os mercados e o apoio técnico por trás da HYDE." })}
                 </p>
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-5">
@@ -604,7 +594,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       <section
         id="buy-shelf"
-        aria-label={say("Buy it now", "Comprar ahora", "Comprar agora")}
+        aria-label={tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
         aria-hidden={openShelf !== "buy"}
         className={cn("header-shelf", openShelf === "buy" && "header-shelf-open")}
       >
@@ -636,7 +626,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 onClick={() => setOpenShelf(null)}
                 className="alibaba-hard-cta"
               >
-                <span>{say("Buy on Alibaba", "Comprar en Alibaba", "Comprar no Alibaba")}</span>
+                <span>{tx(locale, "Buy on Alibaba", { es: "Comprar en Alibaba", pt: "Comprar no Alibaba" })}</span>
                 <span aria-hidden="true">›</span>
               </a>
             </div>

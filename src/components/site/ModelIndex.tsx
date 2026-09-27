@@ -8,7 +8,7 @@ import {
   modelSearchKey,
   type ModelIndexEntry,
 } from "@/lib/model-index-core";
-import { dict } from "@/lib/i18n-client";
+import { dict, fill } from "@/lib/i18n-client";
 
 /**
  * The model-code index: every published model number, and the page it resolves to.
@@ -24,36 +24,33 @@ import { dict } from "@/lib/i18n-client";
 const COPY = {
   en: {
     heading: "Every model number, and where it goes",
-    lede: (n: number) =>
-      `All ${n} published model numbers, as they are printed on a drawing or a purchase order. Type any part of one to narrow the list.`,
+    lede: "All {n} published model numbers, as they are printed on a drawing or a purchase order. Type any part of one to narrow the list.",
     placeholder: "Model number — 306 PS, LH852, 70720",
     clear: "Clear",
-    showing: (shown: number, total: number) =>
-      shown === total ? `${total} models` : `${shown} of ${total} models`,
+    all: "{total} models",
+    showing: "{shown} of {total} models",
     none: "No model number contains that.",
     noneHelp:
       "Separators do not matter — 306 PS, 306-PS and 306ps all find the same part. If it is still not here, the number may be a renamed or withheld record: the three tables below say which.",
   },
   es: {
     heading: "Todos los números de modelo, y a dónde llevan",
-    lede: (n: number) =>
-      `Los ${n} números de modelo publicados, tal como aparecen en un plano o en un pedido. Escriba cualquier parte de uno para filtrar la lista.`,
+    lede: "Los {n} números de modelo publicados, tal como aparecen en un plano o en un pedido. Escriba cualquier parte de uno para filtrar la lista.",
     placeholder: "Número de modelo — 306 PS, LH852, 70720",
     clear: "Borrar",
-    showing: (shown: number, total: number) =>
-      shown === total ? `${total} modelos` : `${shown} de ${total} modelos`,
+    all: "{total} modelos",
+    showing: "{shown} de {total} modelos",
     none: "Ningún número de modelo contiene eso.",
     noneHelp:
       "Los separadores no importan: 306 PS, 306-PS y 306ps encuentran la misma pieza. Si aun así no está, puede ser un registro renombrado o sin fotografía publicada: las tres tablas de abajo dicen cuál.",
   },
   pt: {
     heading: "Todos os números de modelo, e para onde levam",
-    lede: (n: number) =>
-      `Os ${n} números de modelo publicados, como aparecem num desenho ou num pedido de compra. Digite qualquer parte de um para filtrar a lista.`,
+    lede: "Os {n} números de modelo publicados, como aparecem num desenho ou num pedido de compra. Digite qualquer parte de um para filtrar a lista.",
     placeholder: "Número de modelo — 306 PS, LH852, 70720",
     clear: "Limpar",
-    showing: (shown: number, total: number) =>
-      shown === total ? `${total} modelos` : `${shown} de ${total} modelos`,
+    all: "{total} modelos",
+    showing: "{shown} de {total} modelos",
     none: "Nenhum número de modelo contém isso.",
     noneHelp:
       "Os separadores não importam: 306 PS, 306-PS e 306ps encontram a mesma peça. Se mesmo assim não estiver aqui, pode ser um registro renomeado ou sem fotografia publicada: as três tabelas abaixo dizem qual.",
@@ -84,7 +81,7 @@ export function ModelIndex({
     >
       <div className="col-span-full lg:col-span-5 xl:col-span-9">
         <h2 className="text-h2 text-ink">{copy.heading}</h2>
-        <p className="mt-16 text-c1 text-ink-secondary">{copy.lede(entries.length)}</p>
+        <p className="mt-16 text-c1 text-ink-secondary">{fill(copy.lede, { n: entries.length })}</p>
       </div>
 
       <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-15 xl:col-start-10">
@@ -118,7 +115,7 @@ export function ModelIndex({
         </div>
 
         <p aria-live="polite" className="mt-12 text-c2 text-ink-secondary">
-          {copy.showing(shown.length, entries.length)}
+          {shown.length === entries.length ? fill(copy.all, { total: entries.length }) : fill(copy.showing, { shown: shown.length, total: entries.length })}
         </p>
 
         <div id="model-index-list" className="mt-32">

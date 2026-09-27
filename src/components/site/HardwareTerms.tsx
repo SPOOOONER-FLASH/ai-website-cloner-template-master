@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { termsByGroup } from "@/lib/hardware-term-usage";
-import { dict, t } from "@/lib/i18n";
+import { dict, fill, t } from "@/lib/i18n";
 
 /** "Backset" → "backset" inside a sentence; "UL listing" and "BHMA code" keep their capitals. */
 const soft = (t: string) => (/^\p{Lu}\p{Ll}/u.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
@@ -37,10 +37,10 @@ const COPY = {
       mechanism: "Mechanism",
       ordering: "Ordering and evidence",
     },
-    models: (n: number) =>
-      n === 1 ? "1 model states it" : `${n} models state it`,
+    oneModel: "1 model states it",
+    models: "{n} models state it",
     notPublished: "a term, not a spec row",
-    read: (term: string) => `More on ${soft(term)}`,
+    read: "More on {term}",
   },
   es: {
     groups: {
@@ -48,10 +48,10 @@ const COPY = {
       mechanism: "Mecanismo",
       ordering: "Pedido y evidencia",
     },
-    models: (n: number) =>
-      n === 1 ? "1 modelo la indica" : `${n} modelos la indican`,
+    oneModel: "1 modelo la indica",
+    models: "{n} modelos la indican",
     notPublished: "un término, no una fila de ficha",
-    read: (term: string) => `Más sobre ${soft(term)}`,
+    read: "Más sobre {term}",
   },
   pt: {
     groups: {
@@ -59,10 +59,10 @@ const COPY = {
       mechanism: "Mecanismo",
       ordering: "Pedido e evidência",
     },
-    models: (n: number) =>
-      n === 1 ? "1 modelo a indica" : `${n} modelos a indicam`,
+    oneModel: "1 modelo a indica",
+    models: "{n} modelos a indicam",
     notPublished: "um termo, não uma linha de ficha",
-    read: (term: string) => `Mais sobre ${soft(term)}`,
+    read: "Mais sobre {term}",
   },
 } as const;
 
@@ -101,7 +101,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
                     {t(term, "term", locale)}
                   </span>
                   <span className="mt-8 block text-c2 text-ink-secondary">
-                    {models > 0 ? copy.models(models) : copy.notPublished}
+                    {models > 0 ? (models === 1 ? copy.oneModel : fill(copy.models, { n: models })) : copy.notPublished}
                   </span>
                 </dt>
                 <dd className="col-span-full lg:col-span-7 lg:col-start-5 xl:col-span-14 xl:col-start-9">
@@ -125,7 +125,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
                         href={`${prefix}/news/${term.article}/`}
                         className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
                       >
-                        {copy.read(t(term, "term", locale))}
+                        {fill(copy.read, { term: soft(t(term, "term", locale)) })}
                       </Link>
                     </p>
                   ) : null}

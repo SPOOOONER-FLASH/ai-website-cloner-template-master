@@ -1,7 +1,7 @@
 import drawings from "../../../public/images/drawings/index.json";
 import doorPrep from "../../../public/images/door-prep/index.json";
 import type { Locale } from "@/data/site";
-import { dict } from "@/lib/i18n";
+import { dict, fill } from "@/lib/i18n";
 
 /**
  * The dimensioned drawing, where the record publishes enough geometry to draw one.
@@ -49,22 +49,19 @@ const PREP_INDEX = doorPrep as Record<string, PrepEntry>;
 const PREP_COPY = {
   en: {
     heading: "Door preparation",
-    pattern: (diameter: number, centres: number) =>
-      `Two holes, Ø${diameter}mm, at ${centres}mm centers.`,
+    pattern: "Two holes, Ø{diameter}mm, at {centres}mm centers.",
     caution:
       "Hole positions only — this is not a product outline. Confirm door thickness and the material you are drilling before cutting.",
   },
   es: {
     heading: "Preparación de la puerta",
-    pattern: (diameter: number, centres: number) =>
-      `Dos taladros de Ø${diameter} mm a ${centres} mm entre ejes.`,
+    pattern: "Dos taladros de Ø{diameter} mm a {centres} mm entre ejes.",
     caution:
       "Solo posiciones de taladro — no es un plano de contorno del producto. Confirme el espesor de la puerta y el material que va a taladrar antes de cortar.",
   },
   pt: {
     heading: "Preparação da porta",
-    pattern: (diameter: number, centres: number) =>
-      `Dois furos de Ø${diameter} mm a ${centres} mm entre eixos.`,
+    pattern: "Dois furos de Ø{diameter} mm a {centres} mm entre eixos.",
     caution:
       "Apenas posições de furação — não é o contorno do produto. Confirme a espessura da porta e o material que vai furar antes de cortar.",
   },
@@ -174,7 +171,7 @@ export function DoorPreparation({ slug, locale = "en" }: { slug: string; locale?
       </a>
 
       <p className="mt-12 text-c2 text-ink-secondary">
-        {t.pattern(entry.diameter, entry.centres)}
+        {fill(t.pattern, { diameter: entry.diameter, centres: entry.centres })}
       </p>
       <p className="mt-4 text-c2 text-ink-secondary">{t.caution}</p>
     </div>

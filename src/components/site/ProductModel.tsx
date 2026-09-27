@@ -3,7 +3,7 @@ import { productModels, type ProductModelEntry } from "@/data/product-models";
 import { formatDownloadSize } from "@/data/downloads";
 import { ModelPreview } from "./ModelPreview";
 import type { Locale } from "@/data/site";
-import { localised } from "@/lib/localised";
+import { dict } from "@/lib/i18n";
 
 const COPY = {
   en: {
@@ -40,13 +40,13 @@ const COPY = {
 } as const;
 
 export function ProductModel({ model, locale = "en" }: { model: ProductModelEntry; locale?: Locale }) {
-  const t = localised(COPY, locale);
+  const t = dict(COPY, locale);
   return (
     <div id={`model-${model.id}`} className="border-t border-line pt-24">
       <p className="text-c2 font-semibold uppercase text-ink-secondary">{t.partial}</p>
       <h3 className="mt-8 text-h3 text-ink">{model.model}</h3>
-      <p className="mt-16 max-w-[70ch] text-c1 text-ink">{localised(model.scope, locale)}</p>
-      <p className="mt-12 max-w-[70ch] text-c2 text-ink-secondary">{localised(model.omissions, locale)}</p>
+      <p className="mt-16 max-w-[70ch] text-c1 text-ink">{dict(model.scope, locale)}</p>
+      <p className="mt-12 max-w-[70ch] text-c2 text-ink-secondary">{dict(model.omissions, locale)}</p>
       <p className="mt-12 max-w-[70ch] text-c2 font-semibold text-ink">{t.warning}</p>
       <ModelPreview src={model.glb} model={model.model} orbit={model.orbit} locale={locale} />
       <div className="mt-24 flex flex-wrap gap-x-32 gap-y-16 text-c1 text-ink">
@@ -59,7 +59,7 @@ export function ProductModel({ model, locale = "en" }: { model: ProductModelEntr
 }
 
 export function ModelLibrary({ locale = "en" }: { locale?: Locale }) {
-  const t = localised(COPY, locale);
+  const t = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
   return (
     <section id="reference-models" aria-labelledby="reference-models-title">

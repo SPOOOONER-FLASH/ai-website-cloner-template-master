@@ -27,7 +27,7 @@ import {
   type ConfiguratorStep,
   type StepKey,
 } from "@/lib/configurator";
-import { dict } from "@/lib/i18n-client";
+import { dict, fill } from "@/lib/i18n-client";
 
 /**
  * The guided configurator.
@@ -64,8 +64,7 @@ const COPY = {
     restart: "Start again",
     back: "Change",
     matchOne: "1 model matches",
-    matchMany: (n: number) => `${n} models match`,
-    narrowing: (n: number) => `${n} ${n === 1 ? "product" : "products"}`,
+    matchMany: "{n} models match",
     unitOne: "product",
     unitMany: "products",
     nothingMatches: "No model matches this combination.",
@@ -86,8 +85,7 @@ const COPY = {
     restart: "Empezar de nuevo",
     back: "Cambiar",
     matchOne: "1 modelo coincide",
-    matchMany: (n: number) => `${n} modelos coinciden`,
-    narrowing: (n: number) => `${n} ${n === 1 ? "producto" : "productos"}`,
+    matchMany: "{n} modelos coinciden",
     unitOne: "producto",
     unitMany: "productos",
     nothingMatches: "Ningún modelo coincide con esta combinación.",
@@ -108,8 +106,7 @@ const COPY = {
     restart: "Começar de novo",
     back: "Alterar",
     matchOne: "1 modelo corresponde",
-    matchMany: (n: number) => `${n} modelos correspondem`,
-    narrowing: (n: number) => `${n} ${n === 1 ? "produto" : "produtos"}`,
+    matchMany: "{n} modelos correspondem",
     unitOne: "produto",
     unitMany: "produtos",
     nothingMatches: "Nenhum modelo corresponde a esta combinação.",
@@ -454,7 +451,7 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
                       and the bare count run together — "Tubular locks16". The number is
                       meaningful and should be read, but as a phrase.
                     */
-                    aria-label={`${humanise(option.value)} — ${t.narrowing(option.count)}`}
+                    aria-label={`${humanise(option.value)} — ${option.count} ${option.count === 1 ? t.unitOne : t.unitMany}`}
                   >
                     {option.image ? (
                       <span className="config-option-media">
@@ -480,7 +477,7 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
         ) : (
           <>
             <h2 className="text-h2 text-ink">
-              {left.length === 1 ? t.matchOne : t.matchMany(left.length)}
+              {left.length === 1 ? t.matchOne : fill(t.matchMany, { n: left.length })}
             </h2>
             <ul className="config-options mt-32">
               {left.map((product, index) => (

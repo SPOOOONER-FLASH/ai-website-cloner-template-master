@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { localisedHref } from "@/data/navigation";
+import { dict } from "@/lib/i18n";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 /**
@@ -232,7 +233,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
 };
 
 export function ServicesView({ locale }: { locale: Locale }) {
-  const c = SERVICES_COPY[locale] ?? SERVICES_COPY.en;
+  const c = dict(SERVICES_COPY, locale);
   const href = (path: string) => localisedHref(path, locale);
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">

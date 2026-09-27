@@ -3,7 +3,7 @@ import { publishedProducts } from "@/data/products";
 import rawStudies from "@/data/generated/product-studies.json";
 import studioStudies from "@/data/studio-studies.json";
 import type { Locale } from "@/data/site";
-import { localised } from "@/lib/localised";
+import { dict } from "@/lib/i18n";
 
 /**
  * The generated studies, with the caption fields declared optional.
@@ -111,7 +111,7 @@ export function ProductStudies({ locale }: { locale: Locale }) {
     English strings. Grouped into one record read through `localised` so a fourth locale
     is one object and not nineteen edits.
   */
-  const t = localised(COPY, locale);
+  const t = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
   return (
     <main className="layout mt-32 flex-grow pb-96 lg:mt-48">

@@ -215,11 +215,10 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             ))}
           </div>
           <p className="mt-24 max-w-[62ch] text-c2 text-ink-secondary">
-            {locale === "es"
-              ? "Fabricamos en Zhongshan. Fuera de China trabajamos con representantes: son puntos de contacto, no filiales."
-              : locale === "pt"
-                ? "A fabricação fica em Zhongshan. Fora da China trabalhamos com representantes: são pontos de contato, e não filiais."
-                : "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries."}
+            {tx(locale, "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries.", {
+              es: "Fabricamos en Zhongshan. Fuera de China trabajamos con representantes: son puntos de contacto, no filiales.",
+              pt: "A fabricação fica em Zhongshan. Fora da China trabalhamos com representantes: são pontos de contato, e não filiais.",
+            })}
           </p>
         </section>
 

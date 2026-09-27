@@ -62,6 +62,28 @@ DV05/DV06 表面列表里多一个 "n"；DS05 用西里尔字母 ф 当直径符
 - `/model-lookup/` 的客户端组件经 `lib/model-index.ts` 拖进整本目录 + 七语种覆盖层，chunk 17 MB。纯函数拆到 `src/lib/model-index-core.ts`。
 - sitemap：`/sitemap.xml` 保持全量（十几个脚本和审计都读它），另加 `/<locale>/sitemap.xml`（`src/lib/locale-sitemap-xml.ts` 从同一份 `src/lib/site-sitemap.ts` 条目按前缀切片；七语种路由由 scaffold 生成，es/pt 手写），robots.txt 全部列出。按语种建的 Search Console 资源只能收其路径下的 sitemap，这就是给它的。
 
+**09-26/27 页面级英文残留（发布会话审计第 6 项：r6 上 fr 14%～ja 23%，及格线 ≤ 2%）**：看板只数「数据翻了没有」，页面还在走旧路径。修的是渲染路径，不是译文：
+NewsDetail / ProductDetail 的 features（发布会话改）、SiteHeader / SiteFooter / SiteMenuDrawer 的 `say(en,es,pt)`、HardwareTerms / ProjectCard 的 `pick`、
+ProductImageZoom / ProductModel / ProductStudies / products-architecture 的 `localised()`、ServicesView 的 `COPY[locale] ?? en`、ProductStudies 的数据字幕 captionEn、
+card-figure 的 overlay 分支、product-faq 的模板句（改成带 `{m}`/`{v}` 的 ui 键）。提取器补：跟着 `en:` 后面的标识符走（CompanyOverview 的 profile/stats）、
+整模块提取 src/data/home.ts（发布会话加）、`enA:` 答案模板；新增 94 键七语种已译。教训：**每个 `locale === "es" ? … : en` 三元和每个 `[locale] ?? en` 都是一个永远英文的洞**，
+以后新组件一律 `tx` / `dict` / `t`，`i18n-extract-ui` 抓不到的写法不要用。
+
+**09-27 第二轮（本地构建复测：fr 8.6%、de 10.7%、ja 16.6%、ko 11.9%、tr 10.0%、ru 9.7%、ar 10.0%，仍未及格）**，按页面上出现次数从高到低逐个找源头：
+1. **服务端组件读到的是空字典**：`<I18nClientBundle />` 只在客户端/SSR 那一层注册，Next 给服务端组件另起一份 `src/lib/i18n-client.ts` 实例，
+   首页/相关产品里服务端渲染的 ProductCard 于是印 "Stainless Steel"、"Model"；品类页（客户端 CategoryFilter）却是对的。修法：`scaffold-locale-routes.mjs` 的 layout 模板
+   在模块顶层再 `registerClientBundle(LOCALE, clientBundle)` 一次（JSON 导入不进浏览器包）。
+2. **`say()`/`pick()` 包装函数提取器不认**：页脚五句（Data preferences / How to buy / Sign-up here / Social Media / 通讯句）748 页全英文。提取器改为 `tx` 取第 2 参、`say`/`pick` 取第 1 参。
+3. **函数值的文案字典无法翻**：`models: (n) => \`${n} models match\``（Configurator、ConfiguratorTeaser、HardwareTerms、ModelIndex、ModelLookup、ProductFinder、ProductDrawing、SpecMatrix、
+   OrderCodeTables、CategoryFilter）一律改成 `"{n} models match"` 模板 + `fill()`（`i18n-core` 新导出）。
+4. **67 个无主图产品**（不在 sitemap，但 `[category]/[slug]` 照样构建）从未切过翻译任务：`i18n-batch --unpublished` 纳入，七语种各 67 条已合。
+5. **数据文件里的英文字段**：finish-codes（name/note）、hardware-terms（term/definition/consequence）、capability（title/label/body）、`OPTION_NOTES`、company `stats`、
+   `public/downloads/models/index.json` 的 scope、文章作者 role —— 提取器加 `FIELD_MODULES` / `NAMED_CONSTS` / 内容读取；ProductDetail 规格表标签改走 `specLabel`；
+   日期改用 `LOCALE_TAG`（ar 用 `ar-u-nu-latn` 保持西文数字）。
+6. `i18n-untranslatable` 的单位正则 `\bmm\b` 对 "70mm" 不匹配（数字与字母间无词边界），韩/土写手被迫在数字后加空格；改成前后查找。
+两轮共新增 ui 键 94 + 92 + 160，七语种各由一名 opus 写手翻译并 `i18n-merge` 合入。本轮结束用 `.claude/settings.local.json` 的 Stop 钩子（`tmp/claude-market/gate.mjs`）
+把「构建 → parity ≤ 2% → 提交 → test:export → ship → 通知发布会话」六步做成停机门槛，任何一步没过会话不许停。
+
 **hreflang 互惠修复**：`(en|es|pt)/products/[category]/[slug]/page.tsx` 三处硬编码 en/es/pt 的 `languages` 改为 `alternateLanguages()`，
 否则七语种产品页指向英西葡而对方不指回，`scripts/seo-audit.test.mjs` 报 10,841 处 `hreflang-not-reciprocal`。
 

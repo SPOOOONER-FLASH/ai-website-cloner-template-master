@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { mirrorHref } from "@/lib/spanish-mirror";
 import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
-import { LANGUAGE_LABELS as FOOTER_LANGUAGE_LABELS, dict } from "@/lib/i18n-client";
+import { LANGUAGE_LABELS as FOOTER_LANGUAGE_LABELS, dict, tx } from "@/lib/i18n-client";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
@@ -81,8 +81,8 @@ export function SiteFooter() {
   const pathname = usePathname();
   const locale = localeFromPath(pathname);
   /* Copy in the page's own language, in source order en / es / pt. */
-  const say = (en: string, es: string, pt: string) =>
-    locale === "es" ? es : locale === "pt" ? pt : en;
+  /* Overlay locales answer from ui.json (keyed by the English sentence); es/pt keep their literals. */
+  const say = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
 
   /*
     A FOOTER LINK TO THE PAGE YOU ARE ALREADY ON IS A DEAD CLICK.

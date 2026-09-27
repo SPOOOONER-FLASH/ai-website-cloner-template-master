@@ -1,9 +1,10 @@
+import { isOverlayLocale } from "../data/locales.ts";
 import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
 import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
 import { bhmaFinishesFor } from "./bhma-finish.ts";
-import { t } from "./i18n.ts";
+import { t, tx } from "./i18n.ts";
 import { specLabels } from "./i18n.ts";
 
 /**
@@ -67,10 +68,12 @@ export interface ProductFaqItem {
 */
 const QUESTIONS: Array<{
   labels: string[];
-  en: (model: string) => string;
+  /** English template with `{m}` (model/subject); overlay locales look it up in ui.json. */
+  en: string;
   es: (model: string) => string;
   pt: (model: string) => string;
-  enA: (model: string, value: string) => string;
+  /** English answer template with `{m}` and `{v}`. */
+  enA: string;
   esA: (model: string, value: string) => string;
   ptA: (model: string, value: string) => string;
 }> = [
@@ -84,118 +87,118 @@ const QUESTIONS: Array<{
   */
   {
     labels: ["Type", "Product Type", "Lock Type"],
-    en: (m) => `What type of hardware is the ${m}?`,
+    en: "What type of hardware is the {m}?",
     es: (m) => `¿Qué tipo de herraje es el ${m}?`,
     pt: (m) => `Que tipo de ferragem é o ${m}?`,
-    enA: (m, v) => `The ${m} is a ${v}.`,
+    enA: "The {m} is a {v}.",
     esA: (m, v) => `El ${m} es un ${v}.`,
     ptA: (m, v) => `O ${m} é um ${v}.`,
   },
   {
     labels: ["Material"],
-    en: (m) => `What is the ${m} made from?`,
+    en: "What is the {m} made from?",
     es: (m) => `¿De qué material es el ${m}?`,
     pt: (m) => `De que material é o ${m}?`,
-    enA: (m, v) => `The ${m} is made from ${v}.`,
+    enA: "The {m} is made from {v}.",
     esA: (m, v) => `El ${m} está fabricado en ${v}.`,
     ptA: (m, v) => `O ${m} é fabricado em ${v}.`,
   },
   {
     labels: ["Finish", "Finishes", "Surface Finish", "Finishes Available"],
-    en: (m) => `Which finishes is the ${m} available in?`,
+    en: "Which finishes is the {m} available in?",
     es: (m) => `¿En qué acabados está disponible el ${m}?`,
     pt: (m) => `Em que acabamentos o ${m} está disponível?`,
-    enA: (m, v) => `The ${m} is available in ${v}.`,
+    enA: "The {m} is available in {v}.",
     esA: (m, v) => `El ${m} está disponible en ${v}.`,
     ptA: (m, v) => `O ${m} está disponível em ${v}.`,
   },
   {
     labels: ["Backset"],
-    en: (m) => `What backset does the ${m} use?`,
+    en: "What backset does the {m} use?",
     es: (m) => `¿Qué entrada (backset) tiene el ${m}?`,
     pt: (m) => `Qual a distância ao eixo do ${m}?`,
-    enA: (m, v) => `The ${m} has a backset of ${v}.`,
+    enA: "The {m} has a backset of {v}.",
     esA: (m, v) => `El ${m} tiene una entrada de ${v}.`,
     ptA: (m, v) => `O ${m} tem distância ao eixo de ${v}.`,
   },
   {
     labels: ["Door thickness", "Suitable Door Thickness", "Door Thickness Range"],
-    en: (m) => `What door thickness does the ${m} suit?`,
+    en: "What door thickness does the {m} suit?",
     es: (m) => `¿Para qué espesor de puerta sirve el ${m}?`,
     pt: (m) => `Para que espessura de porta serve o ${m}?`,
-    enA: (m, v) => `The ${m} suits a door thickness of ${v}.`,
+    enA: "The {m} suits a door thickness of {v}.",
     esA: (m, v) => `El ${m} sirve para un espesor de puerta de ${v}.`,
     ptA: (m, v) => `O ${m} serve para espessura de porta de ${v}.`,
   },
   {
     labels: ["Function"],
-    en: (m) => `What function does the ${m} provide?`,
+    en: "What function does the {m} provide?",
     es: (m) => `¿Qué función cumple el ${m}?`,
     pt: (m) => `Que função o ${m} cumpre?`,
-    enA: (m, v) => `The ${m} provides ${v}.`,
+    enA: "The {m} provides {v}.",
     esA: (m, v) => `El ${m} cumple la función ${v}.`,
     ptA: (m, v) => `O ${m} cumpre a função ${v}.`,
   },
   {
     labels: ["Center distance", "Center Distance", "Grip center distance"],
-    en: (m) => `What is the center distance on the ${m}?`,
+    en: "What is the center distance on the {m}?",
     es: (m) => `¿Cuál es la distancia entre ejes del ${m}?`,
     pt: (m) => `Qual a distância entre centros do ${m}?`,
-    enA: (m, v) => `The center distance on the ${m} is ${v}.`,
+    enA: "The center distance on the {m} is {v}.",
     esA: (m, v) => `La distancia entre ejes del ${m} es ${v}.`,
     ptA: (m, v) => `A distância entre centros do ${m} é ${v}.`,
   },
   {
     labels: ["Cycle life", "Durability"],
-    en: (m) => `How many cycles is the ${m} tested to?`,
+    en: "How many cycles is the {m} tested to?",
     es: (m) => `¿A cuántos ciclos está probado el ${m}?`,
     pt: (m) => `A quantos ciclos o ${m} foi ensaiado?`,
-    enA: (m, v) => `The ${m} is tested to ${v}.`,
+    enA: "The {m} is tested to {v}.",
     esA: (m, v) => `El ${m} está probado a ${v}.`,
     ptA: (m, v) => `O ${m} foi ensaiado a ${v}.`,
   },
   {
     labels: ["Application", "Suitable for", "Suitable For", "Door Type"],
-    en: (m) => `Where is the ${m} used?`,
+    en: "Where is the {m} used?",
     es: (m) => `¿Dónde se usa el ${m}?`,
     pt: (m) => `Onde o ${m} é usado?`,
-    enA: (m, v) => `The ${m} is used on ${v}.`,
+    enA: "The {m} is used on {v}.",
     esA: (m, v) => `El ${m} se usa en ${v}.`,
     ptA: (m, v) => `O ${m} é usado em ${v}.`,
   },
   {
     labels: ["Handing"],
-    en: (m) => `Is the ${m} handed?`,
+    en: "Is the {m} handed?",
     es: (m) => `¿El ${m} tiene mano (izquierda/derecha)?`,
     pt: (m) => `O ${m} tem mão (esquerda/direita)?`,
-    enA: (m, v) => `Handing for the ${m}: ${v}.`,
+    enA: "Handing for the {m}: {v}.",
     esA: (m, v) => `Mano del ${m}: ${v}.`,
     ptA: (m, v) => `Mão do ${m}: ${v}.`,
   },
   {
     labels: ["Size", "Sizes", "Plate size", "Length"],
-    en: (m) => `What size is the ${m}?`,
+    en: "What size is the {m}?",
     es: (m) => `¿Qué medidas tiene el ${m}?`,
     pt: (m) => `Que medidas tem o ${m}?`,
-    enA: (m, v) => `The ${m} measures ${v}.`,
+    enA: "The {m} measures {v}.",
     esA: (m, v) => `El ${m} mide ${v}.`,
     ptA: (m, v) => `O ${m} mede ${v}.`,
   },
   {
     labels: ["Cylinder", "Lock Cylinder", "Cylinder Type"],
-    en: (m) => `What cylinder does the ${m} take?`,
+    en: "What cylinder does the {m} take?",
     es: (m) => `¿Qué cilindro admite el ${m}?`,
     pt: (m) => `Que cilindro o ${m} aceita?`,
-    enA: (m, v) => `The ${m} takes a ${v} cylinder.`,
+    enA: "The {m} takes a {v} cylinder.",
     esA: (m, v) => `El ${m} admite un cilindro ${v}.`,
     ptA: (m, v) => `O ${m} aceita um cilindro ${v}.`,
   },
   {
     labels: ["Packing", "Pieces per carton"],
-    en: (m) => `How is the ${m} packed?`,
+    en: "How is the {m} packed?",
     es: (m) => `¿Cómo se embala el ${m}?`,
     pt: (m) => `Como o ${m} é embalado?`,
-    enA: (m, v) => `The ${m} is packed as ${v}.`,
+    enA: "The {m} is packed as {v}.",
     esA: (m, v) => `El ${m} se embala como ${v}.`,
     ptA: (m, v) => `O ${m} é embalado como ${v}.`,
   },
@@ -250,12 +253,27 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     if (!label) continue;
     const value = byLabel.get(label) as string;
     items.push({
-      question: pt ? entry.pt(subject) : es ? entry.es(subject) : entry.en(subject),
+      /*
+        The seven overlay locales read the template as a ui.json key with placeholders —
+        entry.en("{m}") is "What is the {m} made from?" — and fill the subject and value in
+        afterwards. Until 2026-09-26 they got the English template with a translated
+        value inside it ("What is the DSL02 made from? / The DSL02 is made from Acier
+        inoxydable 304."), which the release session's rendered audit caught.
+      */
+      question: pt
+        ? entry.pt(subject)
+        : es
+          ? entry.es(subject)
+          : isOverlayLocale(locale)
+            ? tx(locale, entry.en).replace("{m}", subject)
+            : entry.en.replace("{m}", subject),
       answer: pt
         ? entry.ptA(subject, value)
         : es
           ? entry.esA(subject, value)
-          : entry.enA(subject, value),
+          : isOverlayLocale(locale)
+            ? tx(locale, entry.enA).replace("{m}", subject).replace("{v}", value)
+            : entry.enA.replace("{m}", subject).replace("{v}", value),
     });
   }
 
@@ -343,7 +361,7 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
 export function productFaqHeading(locale: Locale = "en"): string {
   if (locale === "es") return "Preguntas frecuentes";
   if (locale === "pt") return "Perguntas frequentes";
-  return "Common questions";
+  return tx(locale, "Common questions");
 }
 
 /**

@@ -755,6 +755,24 @@
       "specs": "fda9498b1147"
     }
   },
+  "100-30mm-glass-door-handle": {
+    "name": "Cam Kapı Kolu",
+    "summary": "Paslanmaz çelik cam kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
+    }
+  },
   "100-glass-door-handle": {
     "name": "Cam Kapı Kolu",
     "summary": "Saten 304 paslanmaz çelik cam kapı kolu.",
@@ -813,6 +831,24 @@
       "description": "dd29ecf524b0",
       "features": "338c5bfbed14",
       "specs": "01bcb01eaac5"
+    }
+  },
+  "102-30mm-glass-door-handle": {
+    "name": "Cam Kapı Kolu",
+    "summary": "Paslanmaz çelik cam kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
     }
   },
   "102-glass-door-handle": {
@@ -933,6 +969,28 @@
       "description": "dd29ecf524b0",
       "features": "c12f7e7ad034",
       "specs": "1d7568990c6b"
+    }
+  },
+  "105-600-glass-door-handle": {
+    "name": "Cam Kapı Kolu",
+    "summary": "Paslanmaz çelik cam kapı kolu, 25x25x600 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Size",
+        "value": "25 × 25 × 600 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "7659422164f3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "18243fc43159"
     }
   },
   "105-glass-door-handle": {
@@ -1454,6 +1512,64 @@
       "specs": "c0c4f70b3890"
     }
   },
+  "201-pbet-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Parlak pirinç (US3) kaplamalı, giriş fonksiyonlu paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Parlak pirinç (US3)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9ee3b97de435",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b4093a712f1f"
+    }
+  },
   "260-night-latch-and-rim-lock": {
     "name": "Gece Kilidi ve Sıva Üstü Kilit",
     "specs": [
@@ -1606,6 +1722,32 @@
       "specs": "d35fdd87c761"
     }
   },
+  "301-s-s-panic-exit-device": {
+    "name": "S Serisi Panik Çıkış Cihazı",
+    "summary": "Paslanmaz çelik S serisi panik çıkış cihazı.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "paslanmaz çelik"
+      },
+      {
+        "label": "Color",
+        "value": "Gümüş renk püskürtme boya"
+      },
+      {
+        "label": "Application",
+        "value": "Hem sol hem sağ yönlü kapılara uygundur."
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "949f400c60e8",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "52f4a782b053"
+    }
+  },
   "302-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
     "summary": "Paslanmaz çelik ve demir panik çıkış cihazı, 1040 mm (uzunluk ayarlanabilir).",
@@ -1646,6 +1788,32 @@
       "description": "dd29ecf524b0",
       "features": "832f23bcd801",
       "specs": "ff6a9de568cf"
+    }
+  },
+  "302-s-s-panic-exit-device": {
+    "name": "S Serisi Panik Çıkış Cihazı",
+    "summary": "Paslanmaz çelik S serisi panik çıkış cihazı, 1040 mm (uzunluk ayarlanabilir).",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Length",
+        "value": "1040 mm (uzunluk ayarlanabilir)"
+      },
+      {
+        "label": "Finish",
+        "value": "Boya"
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "389e7356e46a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c423b76d7892"
     }
   },
   "303-panic-exit-device": {
@@ -2496,6 +2664,60 @@
       "specs": "883c849b1798"
     }
   },
+  "3431-snet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Saten nikel kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
   "3431-sset-lever-handle": {
     "name": "Kapı Kolu",
     "features": [],
@@ -2550,6 +2772,32 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "b5bc39a6da6d"
+    }
+  },
+  "400-indicator": {
+    "name": "Boş/Dolu Göstergesi",
+    "summary": "Zamak boş/dolu göstergesi.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Color",
+        "value": "Gümüş"
+      },
+      {
+        "label": "Application",
+        "value": "WC kapısı veya diğer kapılar için uygundur"
+      }
+    ],
+    "sourceHash": {
+      "name": "75886ae6cc32",
+      "summary": "3d7945c4d1a1",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c8dfeeb38a75"
     }
   },
   "410-glass-door-handle": {
@@ -3522,6 +3770,122 @@
       "specs": "095408bc8e35"
     }
   },
+  "571-sset-light-duty-cylindrical-lock": {
+    "name": "Hafif Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik hafif hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Standart konut kullanımı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilit serisiyle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz çelik (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "4ef86a8fed83",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "33004bec0ade"
+    }
+  },
+  "5733-sset-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Saten paslanmaz çelik (US32D) yüzeyli, giriş fonksiyonlu paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz çelik (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
+    }
+  },
   "575-abet-tubular-lock": {
     "name": "Tübüler Kilit",
     "summary": "AB/AC/PB/SB/SS/SP/SC ve diğer kaplamalarda paslanmaz çelik topuzlu kilit; 60 mm / 70 mm ayarlanabilir backset, pirinç silindire hazır, giriş fonksiyonu, konut kullanımı için.",
@@ -3805,6 +4169,64 @@
       "specs": "275b2c5c21eb"
     }
   },
+  "576-pbps-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "PB parlak pirinç kaplamalı, 60 mm / 70 mm ayarlanabilir backset'li, geçiş fonksiyonlu pirinç veya paslanmaz çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Pirinç veya Paslanmaz Çelik"
+      },
+      {
+        "label": "Finish",
+        "value": "PB parlak pirinç"
+      },
+      {
+        "label": "Function",
+        "value": "Geçiş"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "0281a0d9c452",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c82641f11968"
+    }
+  },
   "578-acet-light-duty-cylindrical-lock": {
     "name": "Hafif Hizmet Tipi Silindirik Kilit",
     "summary": "Antik bakır (US11) kaplamalı paslanmaz çelik topuzlu kilit, giriş fonksiyonu; standart konut kullanımı için.",
@@ -4043,6 +4465,160 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "bf72e2a7643c"
+    }
+  },
+  "5790-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-e-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-f-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Ahşap desen boyalı paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Ahşap desen boyalı"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "ad2b2d27e451",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11162cdd2585"
     }
   },
   "5807-sscl-commercial-lock": {
@@ -4333,6 +4909,56 @@
       "specs": "1eb3d9d5516b"
     }
   },
+  "5832-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
   "5833-night-latch-and-rim-lock": {
     "name": "Gece Kilidi ve Sıva Üstü Kilit",
     "summary": "Demir ve pirinç gece kilidi ve sıva üstü kilit, 50 mm backset.",
@@ -4403,6 +5029,64 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "e6f68e644a51"
+    }
+  },
+  "5833-sset-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Saten paslanmaz çelik (US32D) yüzeyli, giriş fonksiyonlu paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz çelik (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
     }
   },
   "5834-night-latch-and-rim-lock": {
@@ -4607,6 +5291,180 @@
       "description": "dd29ecf524b0",
       "features": "68262fe6515a",
       "specs": "01ade8243318"
+    }
+  },
+  "586-abet-light-duty-cylindrical-lock": {
+    "name": "Hafif Hizmet Tipi Silindirik Kilit",
+    "summary": "Antik pirinç (US5) kaplamalı, giriş fonksiyonlu paslanmaz çelik topuzlu kilit; standart konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Standart konut kullanımı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilit serisiyle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "1fde5fc422b2",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "dd1537428129"
+    }
+  },
+  "587-abet-light-duty-cylindrical-lock": {
+    "name": "Hafif Hizmet Tipi Silindirik Kilit",
+    "summary": "Masif pirinç ya da zamak ve pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik topuzlu kilit; standart konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "paslanmaz çelik"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel, krom, antik pirinç, parlak pirinç; hepsi mevcut"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Masif pirinç / zamak ve pirinç silindir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Standart konut kullanımı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilit serisiyle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "587-fet-light-duty-cylindrical-lock": {
+    "name": "Hafif Hizmet Tipi Silindirik Kilit",
+    "summary": "Masif pirinç ya da zamak ve pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik topuzlu kilit; standart konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "paslanmaz çelik"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel, krom, antik pirinç, parlak pirinç; hepsi mevcut"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Masif pirinç / zamak ve pirinç silindir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Standart konut kullanımı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilit serisiyle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
     }
   },
   "587-mbbk-light-duty-cylindrical-lock": {
@@ -5172,6 +6030,122 @@
       "specs": "97d170e1550e"
     }
   },
+  "587-wlet-light-duty-cylindrical-lock": {
+    "name": "Hafif Hizmet Tipi Silindirik Kilit",
+    "summary": "Masif pirinç ya da zamak ve pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik topuzlu kilit; standart konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "paslanmaz çelik"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel, krom, antik pirinç, parlak pirinç; hepsi mevcut"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Masif pirinç / zamak ve pirinç silindir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Standart konut kullanımı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilit serisiyle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "5870-abet-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Antik pirinç (US5) kaplamalı, giriş fonksiyonlu paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "8521bcceb49f",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ca9dc6948e6b"
+    }
+  },
   "5870-acet-heavy-duty-cylindrical-lock": {
     "name": "Ağır Hizmet Tipi Silindirik Kilit",
     "summary": "Demir ve paslanmaz çelik ağır hizmet tipi silindirik kilit, 60 mm / 70 mm backset.",
@@ -5365,6 +6339,68 @@
       "specs": "e54b4f86476c"
     }
   },
+  "5870-ssps-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik 201/304 ağır hizmet tipi silindirik kilit, 70 mm backset.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "SS"
+      },
+      {
+        "label": "Backset",
+        "value": "70 mm"
+      },
+      {
+        "label": "Function",
+        "value": "Geçiş"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "51519a497507",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "1a632978c79c"
+    }
+  },
   "5871-sset-heavy-duty-cylindrical-lock": {
     "name": "Ağır Hizmet Tipi Silindirik Kilit",
     "summary": "Saten paslanmaz çelik (US32D) kaplamalı paslanmaz çelik topuzlu kilit, giriş fonksiyonu.",
@@ -5515,6 +6551,114 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "d68d1a120968"
+    }
+  },
+  "5874-bnac-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik topuzlu kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "592-abet-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Antik pirinç (US5) kaplamalı, 60 mm / 70 mm ayarlanabilir backset'li, giriş fonksiyonlu pirinç veya paslanmaz çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Pirinç veya Paslanmaz Çelik"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5bb4d63a7a1d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "3caac711886c"
     }
   },
   "592-bset-tubular-lock": {
@@ -6552,6 +7696,68 @@
       "specs": "d5d93da0d212"
     }
   },
+  "607-abet-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Antik pirinç (US5) kaplamalı, 60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "db706bb1d867",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "4eaf66e21d11"
+    }
+  },
   "607-acbk-tubular-lock": {
     "name": "Tübüler Kilit",
     "summary": "Antik bakır (US11) kaplamalı tübüler kilit, mahremiyet (banyo) fonksiyonu.",
@@ -6626,6 +7832,184 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "d6cb5b12b1b0"
+    }
+  },
+  "607-bnet-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Siyah nikel kaplamalı, 60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Siyah nikel"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "c68e2a3fef59",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ef8ed6652852"
+    }
+  },
+  "607-fet-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Ahşap desen boyalı, 60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Ahşap desen boyalı"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "125eba3105a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b64c1168ee6c"
+    }
+  },
+  "607-ket-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "4862ca672861",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "99f7c46f76d2"
     }
   },
   "607-pbbk-tubular-lock": {
@@ -6778,6 +8162,68 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "7b33cb92cb7f"
+    }
+  },
+  "607-pbps-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Parlak pirinç (US3) kaplamalı, 60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır, geçiş fonksiyonlu paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Function",
+        "value": "Geçiş"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Parlak pirinç (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "8ad143e8c9bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5b3d6e3d6a98"
     }
   },
   "607-spet-tubular-lock": {
@@ -7081,6 +8527,184 @@
       "specs": "1ab4860f8a8f"
     }
   },
+  "607-wbk-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Beyaz renkli, 60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır, mahremiyet fonksiyonlu paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Beyaz"
+      },
+      {
+        "label": "Function",
+        "value": "Mahremiyet fonksiyonu, banyo, içte çevirme düğmesi"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "30d0c742693d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9c3d222403af"
+    }
+  },
+  "607-wlet-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Beyaz boyalı, 60 mm / 70 mm ayarlanabilir backset'li, pirinç silindire hazır, giriş fonksiyonlu paslanmaz çelik / pirinç / masif çelik topuzlu kilit; konut kullanımı için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik / pirinç / masif çelik"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Pirinç silindir"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Konut kullanımı"
+      },
+      {
+        "label": "Finish",
+        "value": "Beyaz boyalı"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "ff9a380742de",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5524d41241f7"
+    }
+  },
+  "6082-sn-tubular-lock": {
+    "name": "Tübüler Kilit",
+    "summary": "Saten nikel kaplamalı, 60 mm / 70 mm ayarlanabilir backset'li paslanmaz çelik tübüler topuzlu kilit; 35 mm ile 45 mm arası kalınlıktaki kapılar için. Oda ve giriş kapılarına uygundur.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik"
+      },
+      {
+        "label": "Application",
+        "value": "Oda kapısı, giriş kapısı."
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme paslanmaz çelik veya pirinç"
+      },
+      {
+        "label": "Strike",
+        "value": "Standart 57 mm kıvrık dudaklı karşılık; talep üzerine 70 mm"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5c28c88587a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "2df4d1c2438f"
+    }
+  },
   "609-pbet-tubular-lock": {
     "name": "Tübüler Kilit",
     "summary": "Parlak pirinç (US3) kaplamalı paslanmaz çelik / pirinç / masif çelik topuzlu kilit; 60 mm / 70 mm ayarlanabilir backset, pirinç silindire hazır, giriş fonksiyonu, konut kullanımı için.",
@@ -7209,6 +8833,180 @@
       "specs": "456bd208bb3b"
     }
   },
+  "6094-pbbk-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik 201/304 ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = parlak pirinç"
+      },
+      {
+        "label": "Application",
+        "value": "WC veya diğer mahremiyet kapıları için"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Function",
+        "value": "Mahremiyet fonksiyonu, banyo, içte çevirme düğmesi"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e99cb8440b14"
+    }
+  },
+  "6094-pbet-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik 201/304 ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = parlak pirinç"
+      },
+      {
+        "label": "Application",
+        "value": "WC veya diğer mahremiyet kapıları için"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c9c889855586"
+    }
+  },
+  "6094-pbps-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik 201/304 ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = parlak pirinç"
+      },
+      {
+        "label": "Application",
+        "value": "WC veya diğer mahremiyet kapıları için"
+      },
+      {
+        "label": "Function",
+        "value": "Geçiş"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c7a159eb9a03"
+    }
+  },
   "6491-snet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı kapı kolu, giriş fonksiyonu.",
@@ -7263,6 +9061,60 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "05da5b16b0b2"
+    }
+  },
+  "6491-sset-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Saten paslanmaz çelik (US32D) yüzeyli, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz çelik (US32D)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
     }
   },
   "6491abet-lever-handle": {
@@ -8155,6 +10007,122 @@
       "specs": "36d86128d47e"
     }
   },
+  "70900-bk-grip-handle-set": {
+    "name": "Çekme Kol Takımı",
+    "summary": "Alüminyum çekme kol takımı.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir, dil ve sürgü için"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm, testere direnci için sertleştirilmiş çelik takviyeli"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm, mevcut kilitlerin çoğunun yerine takılır"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik iç yapı, korozyona karşı korumalı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme masif pirinç veya elektrolitik kaplı zamak döküm"
+      },
+      {
+        "label": "Handing",
+        "value": "Yön bağımsız, sol veya sağ"
+      },
+      {
+        "label": "Feature",
+        "value": "Dışta görünür bağlantı yok; serbest dönen silindir halkası zorlamaya karşı direnir"
+      },
+      {
+        "label": "Function",
+        "value": "Mahremiyet fonksiyonu, banyo, içte çevirme düğmesi"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e60eaaf0c275"
+    }
+  },
+  "70900-et-grip-handle-set": {
+    "name": "Çekme Kol Takımı",
+    "summary": "Alüminyum çekme kol takımı.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm ayarlanabilir, dil ve sürgü için"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm, testere direnci için sertleştirilmiş çelik takviyeli"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm, mevcut kilitlerin çoğunun yerine takılır"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik iç yapı, korozyona karşı korumalı"
+      },
+      {
+        "label": "Trim",
+        "value": "Dövme masif pirinç veya elektrolitik kaplı zamak döküm"
+      },
+      {
+        "label": "Handing",
+        "value": "Yön bağımsız, sol veya sağ"
+      },
+      {
+        "label": "Feature",
+        "value": "Dışta görünür bağlantı yok; serbest dönen silindir halkası zorlamaya karşı direnir"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "00cf38a2f12b"
+    }
+  },
   "70900-mbbk-grip-handle-set": {
     "name": "Çekme Kol Takımı",
     "summary": "Mat siyah kaplamalı çekme kol takımı, mahremiyet (banyo) fonksiyonu.",
@@ -8572,6 +10540,60 @@
       "specs": "97d170e1550e"
     }
   },
+  "801-pbet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Parlak pirinç (US3) kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Parlak pirinç (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
   "803-pbet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Parlak pirinç (US3) kaplamalı zamak kapı kolu; 60/70 mm backset, giriş fonksiyonu.",
@@ -8696,6 +10718,114 @@
       "specs": "aa7103d820e4"
     }
   },
+  "804-pbet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "AB/AC/PB/SB/SS/SP/SC kaplamaların tümüyle sunulan, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (AB), antik bakır (AC), parlak pirinç (PB), saten pirinç (SB), paslanmaz çelik (SS), ayna parlak (SP), saten krom (SC); hepsi mevcut"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
+  "805pbet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "AB/AC/PB/SB/SS/SP/SC kaplamaların tümüyle sunulan, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (AB), antik bakır (AC), parlak pirinç (PB), saten pirinç (SB), paslanmaz çelik (SS), ayna parlak (SP), saten krom (SC); hepsi mevcut"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
   "807-abbk-lever-handle": {
     "name": "Kapı Kolu",
     "features": [
@@ -8759,6 +10889,69 @@
       "description": "dd29ecf524b0",
       "features": "e44b49734491",
       "specs": "61cc97f59b50"
+    }
+  },
+  "807-abet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Antik pirinç (US5) kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [
+      "Yatak odaları ve mahremiyet gerektiren odalar için ideal",
+      "Düğmeli kilit mekanizması: kilitlemek için düğmeye basın, açmak için serbest bırakın",
+      "Dayanıklı, ağır hizmet tipi yapı",
+      "İç mekân stiline uyum için birden fazla kaplama seçeneği"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik pirinç (US5)"
+      },
+      {
+        "label": "Surface Finish Options",
+        "value": "AB, AC, PB, SB, SS, SP, SC (ör. antik pirinç, parlak pirinç, saten nikel, mat siyah vb.)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "6b4c4e58e0f1",
+      "description": "dd29ecf524b0",
+      "features": "e44b49734491",
+      "specs": "6443051c79a8"
     }
   },
   "808-abet-lever-handle": {
@@ -9045,6 +11238,114 @@
       "specs": "54c530cab2b0"
     }
   },
+  "809-pbet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Parlak pirinç (US3) kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Parlak pirinç (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
+  "809-sbet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Saten pirinç (US4) kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten pirinç (US4)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "e25da1e51909",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "aa7103d820e4"
+    }
+  },
   "80sn-lock-cylinder": {
     "name": "Kilit Silindiri",
     "summary": "Masif pirinç kilit silindiri, 80 mm.",
@@ -9274,6 +11575,114 @@
       "description": "a5dcd6558377",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "822-snet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Saten nikel kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
+  "823-pbet-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Parlak pirinç (US3) kaplamalı, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Parlak pirinç (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
     }
   },
   "836-lever-handle": {
@@ -11026,6 +13435,268 @@
       "specs": "97d170e1550e"
     }
   },
+  "9211-bnac-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Zamak ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Finish",
+        "value": "BN siyah nikel"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9fc059bbbbdc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "87ca2e4390eb"
+    }
+  },
+  "9212-bnbs-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik + pirinç ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik + pirinç"
+      },
+      {
+        "label": "Finish",
+        "value": "BN siyah nikel"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c4b444e47e0c"
+    }
+  },
+  "9216-ac-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik + pirinç ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik + pirinç"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Antik bakır (US11)"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5ee1299f9cbb"
+    }
+  },
+  "9217-bnac-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik + pirinç ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik + pirinç"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
+  "9221-bset-heavy-duty-cylindrical-lock": {
+    "name": "Ağır Hizmet Tipi Silindirik Kilit",
+    "summary": "Paslanmaz çelik + pirinç ağır hizmet tipi silindirik kilit.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik + pirinç"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik şasi ve dil gövdesi, çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5 pimli, pirinç göbek, iki adet nikel kaplı pirinç anahtar"
+      },
+      {
+        "label": "Latch",
+        "value": "Anahtarlı fonksiyonlarda emniyet dili"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Application",
+        "value": "Ticari ofisler, okullar ve yoğun kullanımlı konutlar"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
   "aah024-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
     "features": [],
@@ -11776,6 +14447,44 @@
       "description": "1ec34c14b019",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "bh15-barrel-bolt": {
+    "name": "Sıva Üstü Sürgü",
+    "summary": "Kapılar için sıva üstü sürgü: 80 veya 100 mm boy, 38 mm en, karşılığıyla birlikte; saten veya parlak paslanmaz çelik.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz Çelik"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz çelik (SSS), parlak paslanmaz çelik (PSS)"
+      },
+      {
+        "label": "Length",
+        "value": "80 mm / 100 mm"
+      },
+      {
+        "label": "Thickness",
+        "value": "1,2 mm"
+      },
+      {
+        "label": "Application",
+        "value": "Kapı güvenliği"
+      },
+      {
+        "label": "Size",
+        "value": "80 mm / 100 mm (U) × 38 mm (G) × 1,2 mm (K)"
+      }
+    ],
+    "sourceHash": {
+      "name": "5d6407620197",
+      "summary": "ed9ef3f275ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "989660e0d7a4"
     }
   },
   "bh16-flat-slide-bolt": {
@@ -14196,6 +16905,32 @@
       "specs": "80d569a05845"
     }
   },
+  "ddh001-panic-exit-device": {
+    "name": "Panik Çıkış Cihazı",
+    "summary": "Demir panik çıkış cihazı, 175x53x73mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Demir"
+      },
+      {
+        "label": "Application",
+        "value": "Çift kanatlı yangın kapısı"
+      },
+      {
+        "label": "Size",
+        "value": "175x53x73 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "0de8a5dcc6a5",
+      "summary": "9e22176c89e9",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "27a55b6a00f7"
+    }
+  },
   "dh02-ab-grip-handle-set": {
     "name": "Çekme Kol Takımı",
     "summary": "Canton Hyland tarafından üretilen DH02 AB model çekme kol takımı.",
@@ -16518,6 +19253,50 @@
       "specs": "e5161e80ef27"
     }
   },
+  "hd02-stainless-steel-handle": {
+    "name": "Paslanmaz Çelik Kapı Kolu",
+    "summary": "Paslanmaz çelik kapı kolu, 64/56/128/192/284.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
+  "hd03-stainless-steel-handle": {
+    "name": "Paslanmaz Çelik Kapı Kolu",
+    "summary": "Paslanmaz çelik kapı kolu, 64/56/128/192/284.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Paslanmaz çelik"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
   "hy-0ss-latch-guard": {
     "name": "Dil Koruma Plakası",
     "summary": "Dışa açılan kapılar için 304 paslanmaz çelik dil koruma plakası; dili kapatarak kanırtmaya karşı direnç sağlar. Avustralya pazarı için üretilmiştir ve 304 paslanmaz çelik vidalarla birlikte sunulur.",
@@ -17123,6 +19902,24 @@
       "specs": "2b38ae988b6a"
     }
   },
+  "ju-071-door-closer": {
+    "name": "Kapı Kapatıcı",
+    "summary": "Alüminyum kapı kapatıcı.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
+    }
+  },
   "ju-072-door-closer": {
     "name": "Kapı Kapatıcı",
     "summary": "Alüminyum kapı kapatıcı.",
@@ -17217,6 +20014,24 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "1d6549b88cce"
+    }
+  },
+  "ju-088a-door-closer": {
+    "name": "Kapı Kapatıcı",
+    "summary": "Alüminyum kapı kapatıcı.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
     }
   },
   "ju-093-door-closer": {
@@ -17876,6 +20691,28 @@
       "specs": "e97d52578fb8"
     }
   },
+  "lc06-85-50mm-ps-lock-case": {
+    "name": "Kilit Gövdesi",
+    "summary": "Geçiş fonksiyonlu gömme kilit gövdesi; ahşap ve metal kapılar için.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Function",
+        "value": "Geçiş"
+      },
+      {
+        "label": "Application",
+        "value": "Ahşap ve metal kapılar"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "c7bc182eb5bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "872184db3a17"
+    }
+  },
   "lc06-85-50ps-lock-case": {
     "name": "Kilit Gövdesi",
     "summary": "Canton Hyland tarafından üretilen LC06 85_50PS model kilit gövdesi.",
@@ -18069,6 +20906,19 @@
       "specs": "97d170e1550e"
     }
   },
+  "lc16-lock-case": {
+    "name": "Kilit Gövdesi",
+    "summary": "Kilit gövdesi.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
   "lc17-lock-case": {
     "name": "Kilit Gövdesi",
     "summary": "16 mm backset'li alüminyum ve çelik gömme kilit gövdesi; kancalı sürgü fonksiyonu, sürme kapılar için.",
@@ -18201,6 +21051,63 @@
       "specs": "f52340c38527"
     }
   },
+  "lc22-85-45mm-lock-case": {
+    "name": "Kilit Gövdesi",
+    "summary": "85 mm aks mesafeli, 45 mm backset'li gömme kilit gövdesi.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "85 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "45 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "aedba2221782",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "30189bf927a5"
+    }
+  },
+  "lc31-lock-case": {
+    "name": "Kilit Gövdesi",
+    "summary": "Kilit gövdesi.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc32-65-72mm-lock-case": {
+    "name": "Kilit Gövdesi",
+    "summary": "72 mm aks mesafeli, 65 mm backset'li gömme kilit gövdesi.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "65 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "1b05ddca7ea3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "90cf4eaefbef"
+    }
+  },
   "lc33-5572-lock-case": {
     "name": "Kilit Gövdesi",
     "summary": "Avrupa profil silindire hazır gömme kilit gövdesi; panik çıkış fonksiyonu, acil çıkış ve kaçış kapıları için.",
@@ -18309,6 +21216,19 @@
       "name": "c12be339ca52",
       "summary": "56d5673187bd",
       "description": "cf9fb9d82901",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc45-85-lock-case": {
+    "name": "Kilit Gövdesi",
+    "summary": "Kilit gövdesi.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
     }
@@ -19596,6 +22516,164 @@
       "specs": "35ebfebc15a9"
     }
   },
+  "lh852-sset-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Saten paslanmaz çelik (US32D) yüzeyli, 60/70 mm backset'li, giriş fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Giriş fonksiyonu, dıştan anahtarlı"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz çelik (US32D)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
+    }
+  },
+  "lh853-bk-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Zamak kapı kolu, 60 mm backset.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Mahremiyet fonksiyonu, banyo, içte çevirme düğmesi"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "194720c76c78"
+    }
+  },
+  "lh853-bnbk-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Siyah nikel kaplamalı, 60/70 mm backset'li, mahremiyet fonksiyonlu zamak kapı kolu.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Function",
+        "value": "Mahremiyet fonksiyonu, banyo, içte çevirme düğmesi"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      },
+      {
+        "label": "Finish",
+        "value": "Siyah nikel"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "727e202208ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f470df2368fa"
+    }
+  },
   "lh853-cpbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Krom kaplamalı kapı kolu, mahremiyet (banyo) fonksiyonu.",
@@ -19726,6 +22804,56 @@
       "description": "dd29ecf524b0",
       "features": "37b4f519c18c",
       "specs": "bd192ac83133"
+    }
+  },
+  "lh853-ps-lever-handle": {
+    "name": "Kapı Kolu",
+    "summary": "Zamak kapı kolu, 60 mm backset.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zamak (çinko alaşımı)"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Function",
+        "value": "Geçiş"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35 mm – 45 mm arası ayarlanabilir"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 çevrim"
+      },
+      {
+        "label": "Chassis",
+        "value": "Masif çelik, korozyona karşı çinko kaplı"
+      },
+      {
+        "label": "Trim",
+        "value": "Elektrolitik kaplı zamak döküm veya masif pirinç"
+      },
+      {
+        "label": "Handing",
+        "value": "Tamamen çevrilebilir, sol veya sağ yön"
+      },
+      {
+        "label": "Keying",
+        "value": "Sürgü kilitlerle aynı anahtara ya da master anahtar sistemine göre yapılabilir"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "a7ae842c589c"
     }
   },
   "lh853-snbk-lever-handle": {

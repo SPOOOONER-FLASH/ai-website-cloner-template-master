@@ -49,8 +49,9 @@ const COPY = {
     filters: "Product filters",
     order: "Catalog order",
     pages: "Product pages",
-    showing: (from: number, to: number) => ` · showing ${from}–${to}`,
-    count: (n: number) => `${n} product${n === 1 ? "" : "s"}`,
+    showing: " · showing {from}–{to}",
+    one: "{n} product",
+    many: "{n} products",
     empty:
       "Verified product records for this filter are still being prepared. Contact the export team for the current catalog.",
   },
@@ -60,8 +61,9 @@ const COPY = {
     filters: "Filtros de producto",
     order: "Orden de catálogo",
     pages: "Páginas de productos",
-    showing: (from: number, to: number) => ` · mostrando ${from}–${to}`,
-    count: (n: number) => `${n} producto${n === 1 ? "" : "s"}`,
+    showing: " · mostrando {from}–{to}",
+    one: "{n} producto",
+    many: "{n} productos",
     empty:
       "Las fichas verificadas de este filtro aún se están preparando. Escriba al equipo de exportación para recibir el catálogo vigente.",
   },
@@ -71,8 +73,9 @@ const COPY = {
     filters: "Filtros de produto",
     order: "Ordem de catálogo",
     pages: "Páginas de produtos",
-    showing: (from: number, to: number) => ` · a mostrar ${from}–${to}`,
-    count: (n: number) => `${n} produto${n === 1 ? "" : "s"}`,
+    showing: " · a mostrar {from}–{to}",
+    one: "{n} produto",
+    many: "{n} produtos",
     empty:
       "As fichas verificadas deste filtro ainda estão sendo preparadas. Escreva à equipe de exportação para receber o catálogo atual.",
   },
@@ -162,10 +165,10 @@ export function CategoryFilter({ products, options, locale = "en" }: CategoryFil
         <div ref={top} className="scroll-mt-96" />
         <div className="flex items-end justify-between gap-24 border-b border-line pb-16">
           <p className="text-c2 text-ink-secondary" aria-live="polite">
-            {t.count(current.total)}
+            {(current.total === 1 ? t.one : t.many).replace("{n}", String(current.total))}
             {current.pageCount > 1 && (
               <span className="text-ink-secondary">
-                {t.showing(current.from, current.to)}
+                {t.showing.replace("{from}", String(current.from)).replace("{to}", String(current.to))}
               </span>
             )}
           </p>

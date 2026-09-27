@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { publishedProducts } from "@/data/products";
 import { STEPS, STEPS_ES, STEPS_PT } from "@/lib/configurator";
-import { dict } from "@/lib/i18n";
+import { dict, fill } from "@/lib/i18n";
 
 /**
  * The configurator, offered from inside the catalogue.
@@ -36,7 +36,7 @@ import { dict } from "@/lib/i18n";
 const COPY = {
   en: {
     eyebrow: "No model number yet?",
-    heading: (n: number) => `Describe the door. ${n} questions find the part.`,
+    heading: "Describe the door. {n} questions find the part.",
     body: "Tell us what you are specifying, what it should be made of, what door it goes on and the finish. Every answer sets aside the models that won't fit, and every choice we show still leads to a part we supply.",
     stepsLabel: "questions",
     modelsLabel: "models we choose from",
@@ -47,7 +47,7 @@ const COPY = {
   },
   es: {
     eyebrow: "¿Aún no tiene el número de modelo?",
-    heading: (n: number) => `Describa la puerta: ${n} preguntas bastan para dar con la pieza.`,
+    heading: "Describa la puerta: {n} preguntas bastan para dar con la pieza.",
     body: "Díganos qué está especificando, de qué material, en qué puerta va y con qué acabado. Cada respuesta aparta los modelos que no encajan, y cada opción que le mostramos lleva a una pieza que suministramos.",
     stepsLabel: "preguntas",
     modelsLabel: "modelos entre los que buscamos",
@@ -58,7 +58,7 @@ const COPY = {
   },
   pt: {
     eyebrow: "Ainda sem o número do modelo?",
-    heading: (n: number) => `Descreva a porta: ${n} perguntas bastam para achar a peça.`,
+    heading: "Descreva a porta: {n} perguntas bastam para achar a peça.",
     body: "Diga o que você está especificando, de que material, em que porta vai e com qual acabamento. Cada resposta separa os modelos que não servem, e cada opção que mostramos leva a uma peça que fornecemos.",
     stepsLabel: "perguntas",
     modelsLabel: "modelos entre os quais buscamos",
@@ -78,7 +78,7 @@ export function ConfiguratorTeaser({ locale = "en" }: { locale?: Locale }) {
   return (
     <aside className="border-t border-ink pt-16">
       <p className="drawer-eyebrow">{t.eyebrow}</p>
-      <p className="mt-12 text-h3 text-ink">{t.heading(steps)}</p>
+      <p className="mt-12 text-h3 text-ink">{fill(t.heading, { n: steps })}</p>
       <p className="mt-12 max-w-[46ch] text-c2 text-ink-secondary">{t.body}</p>
 
       {/*

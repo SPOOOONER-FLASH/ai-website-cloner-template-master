@@ -1,6 +1,6 @@
 import type { Locale } from "../data/locales.ts";
 import type { NewsArticle } from "../data/types.ts";
-import { dict } from "./i18n.ts";
+import { dict, tx } from "./i18n.ts";
 import type { Overlayed } from "./i18n.ts";
 
 /**
@@ -45,9 +45,7 @@ export interface ArticleFaq {
 
 /** The heading above the block, per locale. */
 export function articleFaqHeading(locale: Locale): string {
-  if (locale === "es") return "Preguntas frecuentes sobre este tema";
-  if (locale === "pt") return "Perguntas frequentes sobre este tema";
-  return "Questions this answers";
+  return tx(locale, "Questions this answers", { es: "Preguntas frecuentes sobre este tema", pt: "Perguntas frequentes sobre este tema" });
 }
 
 /**

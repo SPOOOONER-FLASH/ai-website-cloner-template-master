@@ -2,6 +2,7 @@
 import type { Locale } from "@/data/site";
 
 import { createElement, useEffect, useRef, useState } from "react";
+import { tx } from "@/lib/i18n-client";
 
 interface ModelPreviewProps {
   src: string;
@@ -45,16 +46,8 @@ export function ModelPreview({ src, model, orbit, locale }: ModelPreviewProps) {
       {!ready ? (
         <button type="button" onClick={openPreview} disabled={loading} className="short-marker short-marker-compact cursor-pointer text-c1 text-ink disabled:opacity-50">
           {loading
-            ? es
-              ? "Cargando visor…"
-              : pt
-                ? "Carregando o visualizador…"
-                : "Loading viewer…"
-            : es
-              ? "Abrir vista 3D"
-              : pt
-                ? "Abrir visualização 3D"
-                : "Open 3D preview"}
+            ? tx(locale, "Loading viewer…", { es: "Cargando visor…", pt: "Carregando o visualizador…" })
+            : tx(locale, "Open 3D preview", { es: "Abrir vista 3D", pt: "Abrir visualização 3D" })}
         </button>
       ) : createElement("model-viewer", {
         ref: viewer,

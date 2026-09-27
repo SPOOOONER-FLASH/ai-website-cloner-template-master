@@ -78,9 +78,18 @@ import { absoluteUrl, defaultDescription, defaultTitle, indexable, siteName, sit
 import { LOCALE_DIR, LOCALE_TAG, OG_LOCALE } from "@/lib/i18n";
 import { alternateLanguages } from "@/lib/seo";
 import { I18nClientBundle } from "@/data/generated/i18n-client/${code}";
+import clientBundle from "@/data/generated/i18n-client/${code}.json" with { type: "json" };
+import { registerClientBundle } from "@/lib/i18n-client";
 
 ${HEADER}
 const LOCALE = "${code}" as const;
+/*
+  Register the dictionary in THIS module graph as well. <I18nClientBundle /> below registers
+  it in the client/SSR layer, but Next evaluates a separate instance of src/lib/i18n-client.ts
+  for server components; a server-rendered ProductCard (home page, related products) read an
+  empty registry and printed "Stainless Steel" and "Model" on every overlay locale (2026-09-27).
+*/
+registerClientBundle(LOCALE, clientBundle);
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

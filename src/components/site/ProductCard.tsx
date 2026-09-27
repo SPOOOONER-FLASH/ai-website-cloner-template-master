@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { cardFigure } from "@/lib/card-figure";
-import { localiseProductValues, t } from "@/lib/i18n-client";
+import { localiseProductValues, t, tx } from "@/lib/i18n-client";
 
 interface ProductCardProps {
   /* The narrow shape, not the full record: this card reads a dozen fields and a full
@@ -88,14 +88,10 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
         */}
         <p className="mt-8 text-c1 text-ink-secondary">
           {product.modelTbc
-            ? es
-              ? "Referencia disponible a pedido"
-              : pt
-                ? "Referência disponível sob consulta"
-                : "Reference available on request"
-            : `${es || pt ? "Modelo" : "Model"} ${product.model}`}
+            ? tx(locale, "Reference available on request", { es: "Referencia disponible a pedido", pt: "Referência disponível sob consulta" })
+            : `${tx(locale, "Model", { es: "Modelo", pt: "Modelo" })} ${product.model}`}
           {product.videos?.length ? (
-            <span className="text-ink-secondary"> · {es || pt ? "Vídeo" : "Video"}</span>
+            <span className="text-ink-secondary"> · {tx(locale, "Video", { es: "Vídeo", pt: "Vídeo" })}</span>
           ) : null}
         </p>
         <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">

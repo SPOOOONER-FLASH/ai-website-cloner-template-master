@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { dict, specLabel, t as tr } from "@/lib/i18n";
+import { dict, fill, specLabel, t as tr } from "@/lib/i18n";
 
 /**
  * A side-by-side spec table for one category.
@@ -39,7 +39,7 @@ const COPY = {
     intro:
       "The specifications that differ between models, side by side. An empty cell means we have not published that figure for that model yet.",
     model: "Model",
-    more: (n: number) => `Showing the first ${MAX_ROWS} of ${n} models — open a product for its full table.`,
+    more: "Showing the first {max} of {n} models — open a product for its full table.",
     openCompare: "Open the full comparison page",
   },
   es: {
@@ -47,7 +47,7 @@ const COPY = {
     intro:
       "Las especificaciones que distinguen un modelo de otro, en paralelo. Una celda vacía significa que aún no publicamos ese dato para ese modelo.",
     model: "Modelo",
-    more: (n: number) => `Se muestran los primeros ${MAX_ROWS} de ${n} modelos — abra un producto para su tabla completa.`,
+    more: "Se muestran los primeros {max} de {n} modelos — abra un producto para su tabla completa.",
     openCompare: "Abrir la página de comparación",
   },
   pt: {
@@ -55,7 +55,7 @@ const COPY = {
     intro:
       "As especificações que distinguem um modelo de outro, lado a lado. Uma célula vazia significa que ainda não publicámos esse dado para esse modelo.",
     model: "Modelo",
-    more: (n: number) => `Mostrados os primeiros ${MAX_ROWS} de ${n} modelos — abra um produto para a sua tabela completa.`,
+    more: "Mostrados os primeiros {max} de {n} modelos — abra um produto para a sua tabela completa.",
     openCompare: "Abrir a página de comparação",
   },
 } as const;
@@ -197,7 +197,7 @@ export function SpecMatrix({
         </div>
 
         {rows.length > MAX_ROWS ? (
-          <p className="mt-16 text-c2 text-ink-secondary">{t.more(rows.length)}</p>
+          <p className="mt-16 text-c2 text-ink-secondary">{fill(t.more, { max: MAX_ROWS, n: rows.length })}</p>
         ) : null}
 
         {/*

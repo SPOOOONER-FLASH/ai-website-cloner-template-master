@@ -1,6 +1,7 @@
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
-import { specLabel } from "./i18n-client.ts";
+import { specLabel, t } from "./i18n-client.ts";
+import { isOverlayLocale } from "../data/locales.ts";
 
 /**
  * The one figure worth printing on a catalogue card.
@@ -99,6 +100,18 @@ export function cardFigure(
         (spec) => spec.label === localeLabel && hasDigit(spec.value),
       );
       return { label: localeLabel, value: localeRow?.value ?? row.value };
+    }
+
+    /*
+      The seven overlay locales (2026-09-25): the translated rows live on `product.i18n`,
+      keyed by the same English label, and the label itself comes from the glossary.
+      Without this branch every catalogue card in French carried an English label and an
+      English value — the release session's rendered audit, 2026-09-26.
+    */
+    if (isOverlayLocale(locale)) {
+      const localeRows = t(product as Product, "specs", locale);
+      const localeRow = localeRows?.find((spec) => spec.label === label && hasDigit(spec.value));
+      return { label: specLabel(label, locale), value: localeRow?.value ?? row.value };
     }
 
     return { label, value: row.value };

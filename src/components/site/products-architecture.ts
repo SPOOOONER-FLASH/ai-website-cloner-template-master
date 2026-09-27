@@ -1,4 +1,4 @@
-import { localised } from "../../lib/localised.ts";
+import { dict } from "../../lib/i18n.ts";
 import { localisedHref } from "../../lib/spanish-mirror.ts";
 import type { Locale } from "@/data/site";
 /* Kept as a named alias so call sites read well; it is just Locale now. */
@@ -279,27 +279,27 @@ function localizedHref(href: string, locale: Locale): string {
 }
 
 export function getProductsArchitecture(locale: Locale) {
-  const copy = localised(COPY, locale);
+  const copy = dict(COPY, locale);
 
   return {
     ...copy,
     families: PRODUCT_FAMILIES.map((family) => ({
       slug: family.slug,
-      label: localised(family.label, locale),
-      description: localised(family.description, locale),
+      label: dict(family.label, locale),
+      description: dict(family.description, locale),
       href: localizedHref(`/products/${family.slug}/`, locale),
     })),
     story: PRODUCT_STORY.map((chapter) => ({
       ...chapter,
-      title: localised(chapter.title, locale),
-      description: localised(chapter.description, locale),
-      alt: localised(chapter.alt, locale),
+      title: dict(chapter.title, locale),
+      description: dict(chapter.description, locale),
+      alt: dict(chapter.alt, locale),
       href: localizedHref(chapter.href, locale),
     })),
     photographySeries: PHOTOGRAPHY_SERIES.map((series) => ({
       ...series,
-      label: localised(series.label, locale),
-      detail: localised(series.detail, locale),
+      label: dict(series.label, locale),
+      detail: dict(series.detail, locale),
       href: localizedHref(series.href, locale),
     })),
   };

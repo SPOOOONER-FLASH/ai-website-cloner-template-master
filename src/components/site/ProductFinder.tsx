@@ -26,7 +26,7 @@ import {
   type Selection,
   type FinderProduct,
 } from "@/lib/product-finder";
-import { dict } from "@/lib/i18n-client";
+import { dict, fill } from "@/lib/i18n-client";
 
 /**
  * Product Finder.
@@ -51,18 +51,18 @@ import { dict } from "@/lib/i18n-client";
  */
 const COPY = {
   en: {
-    clearAll: (n: number) => `Clear all (${n})`,
+    clearAll: "Clear all ({n})",
     search: "Search",
     searchPlaceholder: "Model, name or finish…",
     filters: "Filters",
     moreFilters: "More filters",
     moreFiltersHint: "Series, material, finish, door type and certification.",
-    clearThese: (n: number) => `Clear these (${n})`,
+    clearThese: "Clear these ({n})",
     product: "product",
     products: "products",
     matching: " matching your filters",
     inCatalogue: " in the catalog",
-    showing: (from: number, to: number) => ` · showing ${from}–${to}`,
+    showing: " · showing {from}–{to}",
     emptyTitle: "Nothing matches this combination.",
     emptyTry: "Try removing a filter, or ",
     emptyAsk: "ask an export engineer",
@@ -72,18 +72,18 @@ const COPY = {
     facets: FACET_LABELS,
   },
   es: {
-    clearAll: (n: number) => `Borrar todo (${n})`,
+    clearAll: "Borrar todo ({n})",
     search: "Buscar",
     searchPlaceholder: "Modelo, nombre o acabado…",
     filters: "Filtros",
     moreFilters: "Más filtros",
     moreFiltersHint: "Serie, material, acabado, tipo de puerta y certificación.",
-    clearThese: (n: number) => `Borrar estos (${n})`,
+    clearThese: "Borrar estos ({n})",
     product: "producto",
     products: "productos",
     matching: " coinciden con sus filtros",
     inCatalogue: " en el catálogo",
-    showing: (from: number, to: number) => ` · mostrando ${from}–${to}`,
+    showing: " · mostrando {from}–{to}",
     emptyTitle: "Nada coincide con esta combinación.",
     emptyTry: "Pruebe a quitar un filtro, o ",
     emptyAsk: "consulte a un ingeniero de exportación",
@@ -93,18 +93,18 @@ const COPY = {
     facets: FACET_LABELS_ES,
   },
   pt: {
-    clearAll: (n: number) => `Limpar tudo (${n})`,
+    clearAll: "Limpar tudo ({n})",
     search: "Procurar",
     searchPlaceholder: "Modelo, nome ou acabamento…",
     filters: "Filtros",
     moreFilters: "Mais filtros",
     moreFiltersHint: "Série, material, acabamento, tipo de porta e certificação.",
-    clearThese: (n: number) => `Limpar estes (${n})`,
+    clearThese: "Limpar estes ({n})",
     product: "produto",
     products: "produtos",
     matching: " correspondem aos seus filtros",
     inCatalogue: " no catálogo",
-    showing: (from: number, to: number) => ` · a mostrar ${from}–${to}`,
+    showing: " · a mostrar {from}–{to}",
     emptyTitle: "Nada corresponde a esta combinação.",
     emptyTry: "Experimente tirar um filtro, ou ",
     emptyAsk: "fale com um engenheiro de exportação",
@@ -262,7 +262,7 @@ export function ProductFinder({
               }}
               className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
             >
-              {t.clearAll(activeCount)}
+              {fill(t.clearAll, { n: activeCount })}
             </button>
           )}
         </div>
@@ -329,7 +329,7 @@ export function ProductFinder({
                     }
                     className="short-marker short-marker-compact mt-24 text-c2 text-brand hover:text-brand-hover"
                   >
-                    {t.clearThese(secondaryActive)}
+                    {fill(t.clearThese, { n: secondaryActive })}
                   </button>
                 )}
               </div>
@@ -347,7 +347,7 @@ export function ProductFinder({
           {current.pageCount > 1 && (
             <span className="text-ink-secondary">
               {" "}
-              {t.showing(current.from, current.to)}
+              {fill(t.showing, { from: current.from, to: current.to })}
             </span>
           )}
         </p>

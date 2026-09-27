@@ -12,7 +12,7 @@ import { getMenuExperience, MENU_VARIANT } from "./menu-experience";
 import { ArrowUpRight } from "lucide-react";
 import { EditorialAtlas } from "./EditorialAtlas";
 import styles from "./EditorialCatalogue.module.css";
-import { dict } from "@/lib/i18n-client";
+import { dict, tx } from "@/lib/i18n-client";
 
 const buyingLinks = {
   en: [
@@ -40,8 +40,8 @@ interface SiteMenuDrawerProps {
 
 export function SiteMenuDrawer({ locale, currentPath, categories, onClose }: SiteMenuDrawerProps) {
   const prefix = locale === "en" ? "" : `/${locale}`;
-  const say = (en: string, es: string, pt: string) =>
-    locale === "es" ? es : locale === "pt" ? pt : en;
+  /* Overlay locales answer from ui.json (keyed by the English sentence); es/pt keep their literals. */
+  const say = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
   const experience = getMenuExperience(locale, MENU_VARIANT);
   const [openCategory, setOpenCategory] = useState<string | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);

@@ -7,7 +7,9 @@
  */
 export const BRAND = /^(HYDE|STAHLOCK|Canton Hyland(?: Hardware\s*\(Group\) Co\.,? Ltd\.?)?|cantonlock\.com)$/u;
 /* Tokens that are not words to translate: SI and trade units, standards bodies, alloy codes. */
-export const UNIT_WORDS = /\b(mm|cm|m|kg|g|N·?m|Nm|N|kN|dB|°C|inch|inches|EN|DIN|ANSI|BHMA|UL|CE|ISO|SS|SUS|AISI|PVD|OEM|ODM|MOQ|PC|PCS|CTN|USD|RMB|HRC|IP\d+)\b/g;
+/* Lookarounds rather than \b: "70mm" has no word boundary between the digit and the unit, so
+   the ko/tr writers were refused on figures-only values on 2026-09-27 and had to respace them. */
+export const UNIT_WORDS = /(?<![A-Za-z])(mm|cm|m|kg|g|N·?m|Nm|N|kN|dB|°C|inch|inches|EN|DIN|ANSI|BHMA|UL|CE|ISO|SS|SUS|AISI|PVD|OEM|ODM|MOQ|PC|PCS|CTN|USD|RMB|HRC|IP\d+)(?![A-Za-z])/g;
 export const untranslatable = (en) => BRAND.test(en.trim()) || !/\p{L}/u.test(en.replace(UNIT_WORDS, ""));
 
 /*

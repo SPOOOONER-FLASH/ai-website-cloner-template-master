@@ -755,6 +755,24 @@
       "specs": "fda9498b1147"
     }
   },
+  "100-30mm-glass-door-handle": {
+    "name": "ガラスドアハンドル",
+    "summary": "ステンレス製のガラスドアハンドルです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
+    }
+  },
   "100-glass-door-handle": {
     "name": "ガラスドアハンドル",
     "summary": "304ステンレス製、サテン仕上げのガラスドアハンドルです。",
@@ -813,6 +831,24 @@
       "description": "dd29ecf524b0",
       "features": "338c5bfbed14",
       "specs": "01bcb01eaac5"
+    }
+  },
+  "102-30mm-glass-door-handle": {
+    "name": "ガラスドアハンドル",
+    "summary": "ステンレス製のガラスドアハンドルです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
     }
   },
   "102-glass-door-handle": {
@@ -933,6 +969,28 @@
       "description": "dd29ecf524b0",
       "features": "c12f7e7ad034",
       "specs": "1d7568990c6b"
+    }
+  },
+  "105-600-glass-door-handle": {
+    "name": "ガラスドアハンドル",
+    "summary": "ステンレス製のガラスドアハンドル。寸法は25×25×600 mmです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Size",
+        "value": "25×25×600 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "7659422164f3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "18243fc43159"
     }
   },
   "105-glass-door-handle": {
@@ -1454,6 +1512,64 @@
       "specs": "c0c4f70b3890"
     }
   },
+  "201-pbet-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。仕上げは真鍮鏡面（US3）、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "真鍮鏡面（US3）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9ee3b97de435",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b4093a712f1f"
+    }
+  },
   "260-night-latch-and-rim-lock": {
     "name": "ナイトラッチ・面付錠",
     "specs": [
@@ -1606,6 +1722,32 @@
       "specs": "d35fdd87c761"
     }
   },
+  "301-s-s-panic-exit-device": {
+    "name": "S型パニックデバイス",
+    "summary": "ステンレス製のS型パニックデバイスです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Color",
+        "value": "シルバー吹付塗装"
+      },
+      {
+        "label": "Application",
+        "value": "左勝手・右勝手のどちらのドアにも使用できます。"
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "949f400c60e8",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "52f4a782b053"
+    }
+  },
   "302-panic-exit-device": {
     "name": "パニックデバイス",
     "summary": "ステンレスと鉄を組み合わせたパニックデバイスです。長さは1040 mmで、調整できます。",
@@ -1646,6 +1788,32 @@
       "description": "dd29ecf524b0",
       "features": "832f23bcd801",
       "specs": "ff6a9de568cf"
+    }
+  },
+  "302-s-s-panic-exit-device": {
+    "name": "S型パニックデバイス",
+    "summary": "ステンレス製のS型パニックデバイス。長さ1040 mm（調整可能）です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Length",
+        "value": "1040 mm（長さ調整可能）"
+      },
+      {
+        "label": "Finish",
+        "value": "塗装"
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "389e7356e46a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c423b76d7892"
     }
   },
   "303-panic-exit-device": {
@@ -2496,6 +2664,60 @@
       "specs": "883c849b1798"
     }
   },
+  "3431-snet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはサテンニッケル、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンニッケル"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
   "3431-sset-lever-handle": {
     "name": "レバーハンドル",
     "features": [],
@@ -2550,6 +2772,32 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "b5bc39a6da6d"
+    }
+  },
+  "400-indicator": {
+    "name": "表示錠",
+    "summary": "亜鉛合金製の表示錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Color",
+        "value": "シルバー"
+      },
+      {
+        "label": "Application",
+        "value": "トイレのドアなどに適合"
+      }
+    ],
+    "sourceHash": {
+      "name": "75886ae6cc32",
+      "summary": "3d7945c4d1a1",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c8dfeeb38a75"
     }
   },
   "410-glass-door-handle": {
@@ -3522,6 +3770,122 @@
       "specs": "095408bc8e35"
     }
   },
+  "571-sset-light-duty-cylindrical-lock": {
+    "name": "ライトデューティー円筒錠",
+    "summary": "ステンレス製のライトデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "一般住宅用"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠シリーズとの同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンステンレス（US32D）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "4ef86a8fed83",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "33004bec0ade"
+    }
+  },
+  "5733-sset-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。仕上げはサテンステンレス（US32D）、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンステンレス（US32D）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
+    }
+  },
   "575-abet-tubular-lock": {
     "name": "チューブラー錠",
     "summary": "ステンレス製のノブ錠です。仕上げはAB／AC／PB／SB／SS／SP／SCほかに対応します。バックセットは60 mm／70 mmの調整式で、真鍮シリンダーを組み込める玄関用。住宅向けです。",
@@ -3805,6 +4169,64 @@
       "specs": "275b2c5c21eb"
     }
   },
+  "576-pbps-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "真鍮またはステンレス製のノブ錠。仕上げはPB 真鍮鏡面、バックセットは60 mm / 70 mmの調整式、空錠で、住宅用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "真鍮またはステンレス"
+      },
+      {
+        "label": "Finish",
+        "value": "PB 真鍮鏡面"
+      },
+      {
+        "label": "Function",
+        "value": "空錠"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "0281a0d9c452",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c82641f11968"
+    }
+  },
   "578-acet-light-duty-cylindrical-lock": {
     "name": "ライトデューティー円筒錠",
     "summary": "アンティークカッパー（US11）仕上げのステンレス製ノブ錠です。玄関用で、一般住宅向けです。",
@@ -4043,6 +4465,160 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "bf72e2a7643c"
+    }
+  },
+  "5790-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-e-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-f-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。仕上げは木目調塗装です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "木目調塗装"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "ad2b2d27e451",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11162cdd2585"
     }
   },
   "5807-sscl-commercial-lock": {
@@ -4333,6 +4909,56 @@
       "specs": "1eb3d9d5516b"
     }
   },
+  "5832-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
   "5833-night-latch-and-rim-lock": {
     "name": "ナイトラッチ・面付錠",
     "summary": "鉄と真鍮を組み合わせたナイトラッチ・面付錠です。バックセットは50 mmです。",
@@ -4403,6 +5029,64 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "e6f68e644a51"
+    }
+  },
+  "5833-sset-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。仕上げはサテンステンレス（US32D）、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンステンレス（US32D）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
     }
   },
   "5834-night-latch-and-rim-lock": {
@@ -4607,6 +5291,180 @@
       "description": "dd29ecf524b0",
       "features": "68262fe6515a",
       "specs": "01ade8243318"
+    }
+  },
+  "586-abet-light-duty-cylindrical-lock": {
+    "name": "ライトデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。仕上げはアンティークブラス（US5）、玄関用で、一般住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "一般住宅用"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠シリーズとの同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（US5）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "1fde5fc422b2",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "dd1537428129"
+    }
+  },
+  "587-abet-light-duty-cylindrical-lock": {
+    "name": "ライトデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。真鍮無垢または亜鉛と真鍮のシリンダーに対応し、玄関用で、一般住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンニッケル、クローム、アンティークブラス、真鍮鏡面、いずれも対応可"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮無垢/亜鉛・真鍮シリンダー"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "一般住宅用"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠シリーズとの同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "587-fet-light-duty-cylindrical-lock": {
+    "name": "ライトデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。真鍮無垢または亜鉛と真鍮のシリンダーに対応し、玄関用で、一般住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンニッケル、クローム、アンティークブラス、真鍮鏡面、いずれも対応可"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮無垢/亜鉛・真鍮シリンダー"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "一般住宅用"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠シリーズとの同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
     }
   },
   "587-mbbk-light-duty-cylindrical-lock": {
@@ -5172,6 +6030,122 @@
       "specs": "97d170e1550e"
     }
   },
+  "587-wlet-light-duty-cylindrical-lock": {
+    "name": "ライトデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。真鍮無垢または亜鉛と真鍮のシリンダーに対応し、玄関用で、一般住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンニッケル、クローム、アンティークブラス、真鍮鏡面、いずれも対応可"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮無垢/亜鉛・真鍮シリンダー"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "一般住宅用"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠シリーズとの同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "5870-abet-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠。仕上げはアンティークブラス（US5）、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（US5）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "8521bcceb49f",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ca9dc6948e6b"
+    }
+  },
   "5870-acet-heavy-duty-cylindrical-lock": {
     "name": "ヘビーデューティー円筒錠",
     "summary": "鉄とステンレスを組み合わせたヘビーデューティー円筒錠です。バックセットは60 mm／70 mmです。",
@@ -5365,6 +6339,68 @@
       "specs": "e54b4f86476c"
     }
   },
+  "5870-ssps-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "SUS201/304ステンレス製のヘビーデューティー円筒錠。バックセットは70 mmです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "SS"
+      },
+      {
+        "label": "Backset",
+        "value": "70 mm"
+      },
+      {
+        "label": "Function",
+        "value": "空錠"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "51519a497507",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "1a632978c79c"
+    }
+  },
   "5871-sset-heavy-duty-cylindrical-lock": {
     "name": "ヘビーデューティー円筒錠",
     "summary": "サテンステンレス（US32D）仕上げのステンレス製ノブ錠です。玄関用です。",
@@ -5515,6 +6551,114 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "d68d1a120968"
+    }
+  },
+  "5874-bnac-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス製のノブ錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "592-abet-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "真鍮またはステンレス製のノブ錠。仕上げはアンティークブラス（US5）、バックセットは60 mm / 70 mmの調整式、玄関用で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "真鍮またはステンレス"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（US5）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5bb4d63a7a1d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "3caac711886c"
     }
   },
   "592-bset-tubular-lock": {
@@ -6552,6 +7696,68 @@
       "specs": "d5d93da0d212"
     }
   },
+  "607-abet-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。仕上げはアンティークブラス（US5）、バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、玄関用で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（US5）"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "db706bb1d867",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "4eaf66e21d11"
+    }
+  },
   "607-acbk-tubular-lock": {
     "name": "チューブラー錠",
     "summary": "アンティークカッパー（US11）仕上げのプライバシー用チューブラー錠です。",
@@ -6626,6 +7832,184 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "d6cb5b12b1b0"
+    }
+  },
+  "607-bnet-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。仕上げはブラックニッケル、バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、玄関用で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "ブラックニッケル"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "c68e2a3fef59",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ef8ed6652852"
+    }
+  },
+  "607-fet-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。仕上げは木目調塗装、バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、玄関用で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "木目調塗装"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "125eba3105a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b64c1168ee6c"
+    }
+  },
+  "607-ket-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "4862ca672861",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "99f7c46f76d2"
     }
   },
   "607-pbbk-tubular-lock": {
@@ -6778,6 +8162,68 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "7b33cb92cb7f"
+    }
+  },
+  "607-pbps-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。仕上げは真鍮鏡面（US3）、バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、空錠で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Function",
+        "value": "空錠"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "真鍮鏡面（US3）"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "8ad143e8c9bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5b3d6e3d6a98"
     }
   },
   "607-spet-tubular-lock": {
@@ -7081,6 +8527,184 @@
       "specs": "1ab4860f8a8f"
     }
   },
+  "607-wbk-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。仕上げはホワイト、バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、プライバシー用で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "ホワイト"
+      },
+      {
+        "label": "Function",
+        "value": "プライバシー用：浴室向け、内側はターンボタン"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "30d0c742693d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9c3d222403af"
+    }
+  },
+  "607-wlet-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス/真鍮/無垢スチール製のノブ錠。仕上げはホワイト塗装、バックセットは60 mm / 70 mmの調整式です。真鍮シリンダーに対応し、玄関用で、住宅向けです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス/真鍮/無垢スチール"
+      },
+      {
+        "label": "Cylinder",
+        "value": "真鍮シリンダー"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "住宅用"
+      },
+      {
+        "label": "Finish",
+        "value": "ホワイト塗装"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "ff9a380742de",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5524d41241f7"
+    }
+  },
+  "6082-sn-tubular-lock": {
+    "name": "チューブラー錠",
+    "summary": "ステンレス製のチューブラーノブ錠。仕上げはサテンニッケル、バックセットは60 mm / 70 mmの調整式で、扉厚35～45 mmに対応します。居室ドアと玄関ドアに使えます。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Application",
+        "value": "居室ドア、玄関ドア"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "ステンレスまたは真鍮の展伸材"
+      },
+      {
+        "label": "Strike",
+        "value": "標準は57 mmの曲面リップ、70 mmはご要望に応じて対応"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンニッケル"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5c28c88587a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "2df4d1c2438f"
+    }
+  },
   "609-pbet-tubular-lock": {
     "name": "チューブラー錠",
     "summary": "真鍮鏡面（US3）仕上げの、ステンレス／真鍮／鋼製のノブ錠です。バックセットは60 mm／70 mmの調整式で、真鍮シリンダーを組み込める玄関用。住宅向けです。",
@@ -7209,6 +8833,180 @@
       "specs": "456bd208bb3b"
     }
   },
+  "6094-pbbk-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "SUS201/304ステンレス製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB=真鍮鏡面"
+      },
+      {
+        "label": "Application",
+        "value": "トイレなどのプライバシー用ドア向け"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Function",
+        "value": "プライバシー用：浴室向け、内側はターンボタン"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e99cb8440b14"
+    }
+  },
+  "6094-pbet-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "SUS201/304ステンレス製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB=真鍮鏡面"
+      },
+      {
+        "label": "Application",
+        "value": "トイレなどのプライバシー用ドア向け"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c9c889855586"
+    }
+  },
+  "6094-pbps-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "SUS201/304ステンレス製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB=真鍮鏡面"
+      },
+      {
+        "label": "Application",
+        "value": "トイレなどのプライバシー用ドア向け"
+      },
+      {
+        "label": "Function",
+        "value": "空錠"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c7a159eb9a03"
+    }
+  },
   "6491-snet-lever-handle": {
     "name": "レバーハンドル",
     "summary": "サテンニッケル仕上げの玄関用レバーハンドルです。",
@@ -7263,6 +9061,60 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "05da5b16b0b2"
+    }
+  },
+  "6491-sset-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはサテンステンレス（US32D）、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンステンレス（US32D）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
     }
   },
   "6491abet-lever-handle": {
@@ -8155,6 +10007,122 @@
       "specs": "36d86128d47e"
     }
   },
+  "70900-bk-grip-handle-set": {
+    "name": "グリップハンドルセット",
+    "summary": "アルミ製のグリップハンドルセットです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式（ラッチ、デッドボルトとも）"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm、鋸引き防止の焼入れ鋼インサート入り"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm、既存の錠前の大半と交換可能"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製の内部構造、防食処理済み"
+      },
+      {
+        "label": "Trim",
+        "value": "鍛造の真鍮無垢、または亜鉛ダイカストに電気めっき"
+      },
+      {
+        "label": "Handing",
+        "value": "勝手なし、左右どちらにも対応"
+      },
+      {
+        "label": "Feature",
+        "value": "外側に露出した固定具なし。空転式シリンダーリングでこじ回しに強い構造"
+      },
+      {
+        "label": "Function",
+        "value": "プライバシー用：浴室向け、内側はターンボタン"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e60eaaf0c275"
+    }
+  },
+  "70900-et-grip-handle-set": {
+    "name": "グリップハンドルセット",
+    "summary": "アルミ製のグリップハンドルセットです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm調整式（ラッチ、デッドボルトとも）"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm、鋸引き防止の焼入れ鋼インサート入り"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm、既存の錠前の大半と交換可能"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製の内部構造、防食処理済み"
+      },
+      {
+        "label": "Trim",
+        "value": "鍛造の真鍮無垢、または亜鉛ダイカストに電気めっき"
+      },
+      {
+        "label": "Handing",
+        "value": "勝手なし、左右どちらにも対応"
+      },
+      {
+        "label": "Feature",
+        "value": "外側に露出した固定具なし。空転式シリンダーリングでこじ回しに強い構造"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "00cf38a2f12b"
+    }
+  },
   "70900-mbbk-grip-handle-set": {
     "name": "グリップハンドルセット",
     "summary": "マットブラック仕上げのプライバシー用グリップハンドルセットです。",
@@ -8572,6 +10540,60 @@
       "specs": "97d170e1550e"
     }
   },
+  "801-pbet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げは真鍮鏡面（US3）、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "真鍮鏡面（US3）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
   "803-pbet-lever-handle": {
     "name": "レバーハンドル",
     "summary": "真鍮鏡面（US3）仕上げの亜鉛合金製レバーハンドルです。バックセットは60／70 mmで、玄関用です。",
@@ -8696,6 +10718,114 @@
       "specs": "aa7103d820e4"
     }
   },
+  "804-pbet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはAB/AC/PB/SB/SS/SP/SCのいずれにも対応、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（AB）、アンティークカッパー（AC）、真鍮鏡面（PB）、サテンブラス（SB）、ステンレス（SS）、鏡面仕上げ（SP）、サテンクローム（SC）、いずれも対応可"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
+  "805pbet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはAB/AC/PB/SB/SS/SP/SCのいずれにも対応、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（AB）、アンティークカッパー（AC）、真鍮鏡面（PB）、サテンブラス（SB）、ステンレス（SS）、鏡面仕上げ（SP）、サテンクローム（SC）、いずれも対応可"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
   "807-abbk-lever-handle": {
     "name": "レバーハンドル",
     "features": [
@@ -8759,6 +10889,69 @@
       "description": "dd29ecf524b0",
       "features": "e44b49734491",
       "specs": "61cc97f59b50"
+    }
+  },
+  "807-abet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはアンティークブラス（US5）、バックセット60/70 mm、玄関用です。",
+    "features": [
+      "寝室やプライバシーを要する部屋に最適",
+      "押しボタン式施錠：押して施錠、解除で解錠",
+      "耐久性の高いヘビーデューティー構造",
+      "内装に合わせて複数の仕上げから選択可能"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークブラス（US5）"
+      },
+      {
+        "label": "Surface Finish Options",
+        "value": "AB、AC、PB、SB、SS、SP、SC（例：アンティークブラス、真鍮鏡面、サテンニッケル、マットブラックなど）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "6b4c4e58e0f1",
+      "description": "dd29ecf524b0",
+      "features": "e44b49734491",
+      "specs": "6443051c79a8"
     }
   },
   "808-abet-lever-handle": {
@@ -9045,6 +11238,114 @@
       "specs": "54c530cab2b0"
     }
   },
+  "809-pbet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げは真鍮鏡面（US3）、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "真鍮鏡面（US3）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
+  "809-sbet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはサテンブラス（US4）、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンブラス（US4）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "e25da1e51909",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "aa7103d820e4"
+    }
+  },
   "80sn-lock-cylinder": {
     "name": "シリンダー",
     "summary": "真鍮無垢のシリンダーです。サイズは80 mmです。",
@@ -9274,6 +11575,114 @@
       "description": "a5dcd6558377",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "822-snet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはサテンニッケル、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンニッケル"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
+  "823-pbet-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げは真鍮鏡面（US3）、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "真鍮鏡面（US3）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
     }
   },
   "836-lever-handle": {
@@ -11026,6 +13435,268 @@
       "specs": "97d170e1550e"
     }
   },
+  "9211-bnac-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "亜鉛合金製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Finish",
+        "value": "BN ブラックニッケル"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9fc059bbbbdc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "87ca2e4390eb"
+    }
+  },
+  "9212-bnbs-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス+真鍮製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス+真鍮"
+      },
+      {
+        "label": "Finish",
+        "value": "BN ブラックニッケル"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c4b444e47e0c"
+    }
+  },
+  "9216-ac-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス+真鍮製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス+真鍮"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "アンティークカッパー（US11）"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5ee1299f9cbb"
+    }
+  },
+  "9217-bnac-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス+真鍮製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス+真鍮"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
+  "9221-bset-heavy-duty-cylindrical-lock": {
+    "name": "ヘビーデューティー円筒錠",
+    "summary": "ステンレス+真鍮製のヘビーデューティー円筒錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス+真鍮"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール製のシャーシとラッチケース、亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5ピンタンブラー、真鍮製内筒、ニッケルめっき真鍮キー2本"
+      },
+      {
+        "label": "Latch",
+        "value": "鍵付き機能ではデッドラッチ機構付き"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Application",
+        "value": "商業オフィス、学校、使用頻度の高い住宅"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
   "aah024-brass-and-steel-hinges": {
     "name": "真鍮・スチール丁番",
     "features": [],
@@ -11776,6 +14447,44 @@
       "description": "1ec34c14b019",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "bh15-barrel-bolt": {
+    "name": "バレルボルト",
+    "summary": "ドア用の面付バレルボルト。長さ80または100 mm、幅38 mmで、受け金具付きです。仕上げはサテンステンレスまたはステンレス鏡面です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンステンレス（SSS）、ステンレス鏡面（PSS）"
+      },
+      {
+        "label": "Length",
+        "value": "80 mm/100 mm"
+      },
+      {
+        "label": "Thickness",
+        "value": "1.2 mm"
+      },
+      {
+        "label": "Application",
+        "value": "ドアの防犯"
+      },
+      {
+        "label": "Size",
+        "value": "80 mm / 100 mm（長さ）× 38 mm（幅）× 1.2 mm（厚さ）"
+      }
+    ],
+    "sourceHash": {
+      "name": "5d6407620197",
+      "summary": "ed9ef3f275ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "989660e0d7a4"
     }
   },
   "bh16-flat-slide-bolt": {
@@ -14196,6 +16905,32 @@
       "specs": "80d569a05845"
     }
   },
+  "ddh001-panic-exit-device": {
+    "name": "パニックデバイス",
+    "summary": "鉄製のパニックデバイス。寸法は175×53×73 mmです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "鉄"
+      },
+      {
+        "label": "Application",
+        "value": "防火戸（両開き）"
+      },
+      {
+        "label": "Size",
+        "value": "175×53×73 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "0de8a5dcc6a5",
+      "summary": "9e22176c89e9",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "27a55b6a00f7"
+    }
+  },
   "dh02-ab-grip-handle-set": {
     "name": "グリップハンドルセット",
     "summary": "DH02 ABは、Canton Hylandが製造するグリップハンドルセットです。",
@@ -16518,6 +19253,50 @@
       "specs": "e5161e80ef27"
     }
   },
+  "hd02-stainless-steel-handle": {
+    "name": "ステンレスハンドル",
+    "summary": "ステンレス製のハンドル。サイズは64/56/128/192/284です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
+  "hd03-stainless-steel-handle": {
+    "name": "ステンレスハンドル",
+    "summary": "ステンレス製のハンドル。サイズは64/56/128/192/284です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ステンレス"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
   "hy-0ss-latch-guard": {
     "name": "ラッチガード",
     "summary": "外開きドア用のSUS304ステンレス製ラッチガードです。ラッチを覆ってこじ開けを防ぎます。オーストラリア市場向けに設計され、SUS304ステンレス製ビスが付属します。",
@@ -17123,6 +19902,24 @@
       "specs": "2b38ae988b6a"
     }
   },
+  "ju-071-door-closer": {
+    "name": "ドアクローザー",
+    "summary": "アルミ製のドアクローザーです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
+    }
+  },
   "ju-072-door-closer": {
     "name": "ドアクローザー",
     "summary": "アルミ製のドアクローザーです。",
@@ -17217,6 +20014,24 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "1d6549b88cce"
+    }
+  },
+  "ju-088a-door-closer": {
+    "name": "ドアクローザー",
+    "summary": "アルミ製のドアクローザーです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
     }
   },
   "ju-093-door-closer": {
@@ -17876,6 +20691,28 @@
       "specs": "e97d52578fb8"
     }
   },
+  "lc06-85-50mm-ps-lock-case": {
+    "name": "箱錠",
+    "summary": "空錠タイプの箱錠。木製ドアと金属製ドアに使えます。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Function",
+        "value": "空錠"
+      },
+      {
+        "label": "Application",
+        "value": "木製・金属ドア"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "c7bc182eb5bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "872184db3a17"
+    }
+  },
   "lc06-85-50ps-lock-case": {
     "name": "箱錠",
     "summary": "LC06 85_50PSは、Canton Hylandが製造する箱錠です。",
@@ -18069,6 +20906,19 @@
       "specs": "97d170e1550e"
     }
   },
+  "lc16-lock-case": {
+    "name": "箱錠",
+    "summary": "箱錠です。",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
   "lc17-lock-case": {
     "name": "箱錠",
     "summary": "アルミとスチールを組み合わせた引き戸用の箱錠です。バックセットは16 mmで、鎌錠の機能を備えます。",
@@ -18201,6 +21051,63 @@
       "specs": "f52340c38527"
     }
   },
+  "lc22-85-45mm-lock-case": {
+    "name": "箱錠",
+    "summary": "芯々距離85 mm、バックセット45 mmの箱錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "85 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "45 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "aedba2221782",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "30189bf927a5"
+    }
+  },
+  "lc31-lock-case": {
+    "name": "箱錠",
+    "summary": "箱錠です。",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc32-65-72mm-lock-case": {
+    "name": "箱錠",
+    "summary": "芯々距離72 mm、バックセット65 mmの箱錠です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "65 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "1b05ddca7ea3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "90cf4eaefbef"
+    }
+  },
   "lc33-5572-lock-case": {
     "name": "箱錠",
     "summary": "ユーロプロファイルシリンダーに対応した、パニック機能付きの箱錠です。非常口や避難扉に使用します。",
@@ -18309,6 +21216,19 @@
       "name": "c12be339ca52",
       "summary": "56d5673187bd",
       "description": "cf9fb9d82901",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc45-85-lock-case": {
+    "name": "箱錠",
+    "summary": "箱錠です。",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
     }
@@ -19596,6 +22516,164 @@
       "specs": "35ebfebc15a9"
     }
   },
+  "lh852-sset-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはサテンステンレス（US32D）、バックセット60/70 mm、玄関用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "玄関用：外側は鍵"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "サテンステンレス（US32D）"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
+    }
+  },
+  "lh853-bk-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。バックセットは60 mmです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "プライバシー用：浴室向け、内側はターンボタン"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "194720c76c78"
+    }
+  },
+  "lh853-bnbk-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。仕上げはブラックニッケル、バックセット60/70 mm、プライバシー用です。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Function",
+        "value": "プライバシー用：浴室向け、内側はターンボタン"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      },
+      {
+        "label": "Finish",
+        "value": "ブラックニッケル"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "727e202208ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f470df2368fa"
+    }
+  },
   "lh853-cpbk-lever-handle": {
     "name": "レバーハンドル",
     "summary": "クロームめっき仕上げのプライバシー用レバーハンドルです。",
@@ -19726,6 +22804,56 @@
       "description": "dd29ecf524b0",
       "features": "37b4f519c18c",
       "specs": "bd192ac83133"
+    }
+  },
+  "lh853-ps-lever-handle": {
+    "name": "レバーハンドル",
+    "summary": "亜鉛合金製のレバーハンドル。バックセットは60 mmです。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "亜鉛合金"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Function",
+        "value": "空錠"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35～45 mmで調整可能"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000回"
+      },
+      {
+        "label": "Chassis",
+        "value": "無垢スチール、防食用の亜鉛めっき"
+      },
+      {
+        "label": "Trim",
+        "value": "亜鉛ダイカストに電気めっき、または真鍮無垢"
+      },
+      {
+        "label": "Handing",
+        "value": "左右勝手に完全対応"
+      },
+      {
+        "label": "Keying",
+        "value": "本締錠との同一キー、またはマスターキーに対応"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "a7ae842c589c"
     }
   },
   "lh853-snbk-lever-handle": {

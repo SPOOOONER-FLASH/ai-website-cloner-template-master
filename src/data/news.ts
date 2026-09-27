@@ -1,5 +1,6 @@
 import type { NewsArticle, NewsKind } from "./types";
 import type { Locale } from "@/data/site";
+import { LOCALE_TAG } from "@/lib/i18n-core";
 
 /**
  * The newsroom.
@@ -112,7 +113,7 @@ export function formatNewsDate(iso: string, locale: Locale = "en"): string {
     03/04/2026 is two different dates depending on who reads it, and this catalogue sells
     into both conventions.
   */
-  const tag = locale === "es" ? "es-ES" : locale === "pt" ? "pt-BR" : "en-GB";
+  const tag = locale === "ar" ? "ar-u-nu-latn" : LOCALE_TAG[locale];
   return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(tag, {
     day: "numeric",
     month: "long",

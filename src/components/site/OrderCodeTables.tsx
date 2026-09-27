@@ -31,7 +31,8 @@ const COPY = {
     exampleHead: "Example",
     unknown: "Not confirmed — ask",
     none: "—",
-    models: (n: number) => (n === 1 ? "1 model" : `${n} models`),
+    oneModel: "1 model",
+    models: "{n} models",
     notPublished: "none published",
   },
   es: {
@@ -41,7 +42,8 @@ const COPY = {
     exampleHead: "Ejemplo",
     unknown: "Sin confirmar — consúltenos",
     none: "—",
-    models: (n: number) => (n === 1 ? "1 modelo" : `${n} modelos`),
+    oneModel: "1 modelo",
+    models: "{n} modelos",
     notPublished: "ninguno publicado",
   },
   pt: {
@@ -51,7 +53,8 @@ const COPY = {
     exampleHead: "Exemplo",
     unknown: "Por confirmar — consulte-nos",
     none: "—",
-    models: (n: number) => (n === 1 ? "1 modelo" : `${n} modelos`),
+    oneModel: "1 modelo",
+    models: "{n} modelos",
     notPublished: "nenhum publicado",
   },
 } as const;
@@ -154,7 +157,7 @@ function CodeTable({
                   ) : null}
                 </td>
                 <td className="py-16 pe-16 text-c2 whitespace-nowrap text-ink-secondary">
-                  {row.models > 0 ? copy.models(row.models) : copy.notPublished}
+                  {row.models > 0 ? (row.models === 1 ? copy.oneModel : copy.models.replace("{n}", String(row.models))) : copy.notPublished}
                 </td>
                 <td className="py-16 font-mono text-c2 whitespace-nowrap text-ink-secondary">
                   {row.example ?? copy.none}

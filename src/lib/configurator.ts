@@ -1,5 +1,6 @@
 import type { FinderProduct } from "./product-finder";
 import type { Locale } from "@/data/site";
+import { tx } from "./i18n-client.ts";
 
 /**
  * The narrowing model behind the guided configurator.
@@ -655,7 +656,10 @@ export const OPTION_NOTES_PT: Record<string, string> = {
 export function noteFor(value: string, locale: Locale = "en"): string | undefined {
   if (locale === "es") return OPTION_NOTES_ES[value];
   if (locale === "pt") return OPTION_NOTES_PT[value] ?? OPTION_NOTES[value];
-  return OPTION_NOTES[value];
+  /* The seven overlay locales read the English note through ui.json (OPTION_NOTES is a
+     named constant in scripts/i18n-extract-ui.mjs, 2026-09-27). */
+  const note = OPTION_NOTES[value];
+  return note === undefined ? undefined : tx(locale, note);
 }
 
 /**

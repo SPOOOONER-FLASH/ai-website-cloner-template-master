@@ -44,6 +44,15 @@ export function mapStrings<T>(value: T, ui: Record<string, string>, locale: Over
   return value;
 }
 
+/**
+ * Substitute {name} placeholders in a translated template. Copy dictionaries used to hold
+ * functions for their counters — (n) => `${n} models match` — which no overlay can
+ * translate; since 2026-09-27 they hold "{n} models match" and callers fill() them.
+ */
+export function fill(template: string, vars: Record<string, string | number>): string {
+  return Object.entries(vars).reduce((out, [k, v]) => out.split(`{${k}}`).join(String(v)), template);
+}
+
 export function makeDict(uiOf: UiOf) {
   /**
    * A whole copy dictionary in the reader's language.

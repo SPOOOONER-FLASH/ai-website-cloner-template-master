@@ -2,6 +2,7 @@ import { products } from "./products";
 import { keyableProducts } from "../lib/keyable-products";
 import drawingIndex from "../../public/images/drawings/index.json";
 import type { Locale } from "./site";
+import { tx } from "../lib/i18n";
 
 /**
  * The columns rail: a few subjects the catalogue can answer in depth, on the homepage.
@@ -38,7 +39,8 @@ export interface FeatureColumn {
   title: { en: string; es: string; pt?: string };
   body: { en: string; es: string; pt?: string };
   /** One counted fact, or undefined when the catalogue cannot support one. */
-  figure?: { en: string; es: string; pt?: string };
+  /** A template with {n}; the count is derived, the sentence is copy. */
+  figure?: { n?: number; en: string; es: string; pt?: string };
   image: { src: string; label: string; labelEs: string };
   /** An optional second action — a file to take away, shown under the main link. */
   extra?: { href: string; en: string; es: string; pt?: string };
@@ -90,9 +92,10 @@ export function featureColumns(): FeatureColumn[] {
         pt: "Uma hierarquia é uma decisão sobre quem passa por qual porta, não uma especificação de ferragem. Cinco níveis, da chave grande-mestra geral até a chave de mudança, e o que precisamos de você para desenhar o quadro.",
       },
       figure: {
-        en: `${keyable} models can be keyed alike or master keyed`,
-        es: `${keyable} modelos admiten llave igual o amaestramiento`,
-        pt: `${keyable} modelos aceitam chave igual ou chave-mestra`,
+        n: keyable,
+        en: "{n} models can be keyed alike or master keyed",
+        es: "{n} modelos admiten llave igual o amaestramiento",
+        pt: "{n} modelos aceitam chave igual ou chave-mestra",
       },
       /*
         The one column with something to DO at the end of it. The article asks for a door
@@ -173,9 +176,10 @@ export function featureColumns(): FeatureColumn[] {
         pt: "Dois números decidem se uma caixa entra na porta que está à sua frente, e os dois já estão no número do modelo. Os nossos desenhos os mostram em escala — e param onde a cota para, em vez de completar um contorno que não podemos afirmar.",
       },
       figure: {
-        en: `${drawings} dimension drawings, drawn only from published dimensions`,
-        es: `${drawings} planos acotados, trazados solo con cotas publicadas`,
-        pt: `${drawings} desenhos cotados, traçados só com cotas publicadas`,
+        n: drawings,
+        en: "{n} dimension drawings, drawn only from published dimensions",
+        es: "{n} planos acotados, trazados solo con cotas publicadas",
+        pt: "{n} desenhos cotados, traçados só com cotas publicadas",
       },
       image: {
         src: "/images/editorial/news-mortise-lock-inspection.webp",
@@ -199,7 +203,5 @@ export function featureColumnsLede(locale: Locale = "en"): string {
 }
 
 export function featureColumnsCta(locale: Locale = "en"): string {
-  if (locale === "es") return "Leer la columna";
-  if (locale === "pt") return "Ler a coluna";
-  return "Read the column";
+  return tx(locale, "Read the column", { es: "Leer la columna", pt: "Ler a coluna" });
 }

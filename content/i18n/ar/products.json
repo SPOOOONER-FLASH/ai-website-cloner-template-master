@@ -755,6 +755,24 @@
       "specs": "fda9498b1147"
     }
   },
+  "100-30mm-glass-door-handle": {
+    "name": "مقبض باب زجاجي",
+    "summary": "مقبض باب زجاجي من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
+    }
+  },
   "100-glass-door-handle": {
     "name": "مقبض باب زجاجي",
     "summary": "مقبض باب زجاجي من الفولاذ المقاوم للصدأ 304 بتشطيب ساتان.",
@@ -813,6 +831,24 @@
       "description": "dd29ecf524b0",
       "features": "338c5bfbed14",
       "specs": "01bcb01eaac5"
+    }
+  },
+  "102-30mm-glass-door-handle": {
+    "name": "مقبض باب زجاجي",
+    "summary": "مقبض باب زجاجي من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
     }
   },
   "102-glass-door-handle": {
@@ -933,6 +969,28 @@
       "description": "dd29ecf524b0",
       "features": "c12f7e7ad034",
       "specs": "1d7568990c6b"
+    }
+  },
+  "105-600-glass-door-handle": {
+    "name": "مقبض باب زجاجي",
+    "summary": "مقبض باب زجاجي من الفولاذ المقاوم للصدأ، بمقاس 25 × 25 × 600 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Size",
+        "value": "25 × 25 × 600 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "7659422164f3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "18243fc43159"
     }
   },
   "105-glass-door-handle": {
@@ -1454,6 +1512,64 @@
       "specs": "c0c4f70b3890"
     }
   },
+  "201-pbet-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب نحاس مصقول (US3)، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس مصقول (US3)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9ee3b97de435",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b4093a712f1f"
+    }
+  },
   "260-night-latch-and-rim-lock": {
     "name": "سقاطة ليلية وقفل سطحي",
     "specs": [
@@ -1606,6 +1722,32 @@
       "specs": "d35fdd87c761"
     }
   },
+  "301-s-s-panic-exit-device": {
+    "name": "جهاز الخروج الطارئ من السلسلة S",
+    "summary": "جهاز الخروج الطارئ من السلسلة S، من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Color",
+        "value": "مطلي بالرش باللون الفضي"
+      },
+      {
+        "label": "Application",
+        "value": "مناسب للأبواب اليسرى واليمنى."
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "949f400c60e8",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "52f4a782b053"
+    }
+  },
   "302-panic-exit-device": {
     "name": "جهاز الخروج الطارئ",
     "summary": "جهاز خروج طارئ من الفولاذ المقاوم للصدأ والحديد بطول 1040 mm (قابل للضبط).",
@@ -1646,6 +1788,32 @@
       "description": "dd29ecf524b0",
       "features": "832f23bcd801",
       "specs": "ff6a9de568cf"
+    }
+  },
+  "302-s-s-panic-exit-device": {
+    "name": "جهاز الخروج الطارئ من السلسلة S",
+    "summary": "جهاز الخروج الطارئ من السلسلة S، من الفولاذ المقاوم للصدأ، بطول 1040 mm (الطول قابل للضبط).",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Length",
+        "value": "1040 mm (الطول قابل للضبط)"
+      },
+      {
+        "label": "Finish",
+        "value": "طلاء"
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "389e7356e46a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c423b76d7892"
     }
   },
   "303-panic-exit-device": {
@@ -2496,6 +2664,60 @@
       "specs": "883c849b1798"
     }
   },
+  "3431-snet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نيكل ساتان، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل ساتان"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
   "3431-sset-lever-handle": {
     "name": "مقبض ذراع",
     "features": [],
@@ -2550,6 +2772,32 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "b5bc39a6da6d"
+    }
+  },
+  "400-indicator": {
+    "name": "مؤشر شاغر / مشغول",
+    "summary": "مؤشر شاغر / مشغول من سبيكة الزنك.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Color",
+        "value": "فضي"
+      },
+      {
+        "label": "Application",
+        "value": "مناسب لأبواب دورات المياه وغيرها من الأبواب"
+      }
+    ],
+    "sourceHash": {
+      "name": "75886ae6cc32",
+      "summary": "3d7945c4d1a1",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c8dfeeb38a75"
     }
   },
   "410-glass-door-handle": {
@@ -3522,6 +3770,122 @@
       "specs": "095408bc8e35"
     }
   },
+  "571-sset-light-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الخفيفة",
+    "summary": "قفل أسطواني للخدمة الخفيفة من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني القياسي"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع سلسلة الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ ساتان (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "4ef86a8fed83",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "33004bec0ade"
+    }
+  },
+  "5733-sset-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب فولاذ مقاوم للصدأ ساتان (US32D)، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ ساتان (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
+    }
+  },
   "575-abet-tubular-lock": {
     "name": "قفل أنبوبي",
     "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيبات AB/AC/PB/SB/SS/SP/SC وغيرها، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، ومجهّز لأسطوانة نحاسية، بوظيفة المدخل، للاستخدام السكني.",
@@ -3805,6 +4169,64 @@
       "specs": "275b2c5c21eb"
     }
   },
+  "576-pbps-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من النحاس أو الفولاذ المقاوم للصدأ بتشطيب نحاس مصقول (PB)، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، بوظيفة الممر، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "نحاس أو فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Finish",
+        "value": "PB نحاس مصقول"
+      },
+      {
+        "label": "Function",
+        "value": "ممر"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "0281a0d9c452",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c82641f11968"
+    }
+  },
   "578-acet-light-duty-cylindrical-lock": {
     "name": "قفل أسطواني للخدمة الخفيفة",
     "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب نحاس أحمر عتيق (US11)، بوظيفة المدخل، للاستخدام السكني القياسي.",
@@ -4043,6 +4465,160 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "bf72e2a7643c"
+    }
+  },
+  "5790-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-e-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-f-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ، مطلي بالرش بنقشة الخشب.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Finish",
+        "value": "مطلي بالرش بنقشة الخشب"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "ad2b2d27e451",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11162cdd2585"
     }
   },
   "5807-sscl-commercial-lock": {
@@ -4333,6 +4909,56 @@
       "specs": "1eb3d9d5516b"
     }
   },
+  "5832-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
   "5833-night-latch-and-rim-lock": {
     "name": "سقاطة ليلية وقفل سطحي",
     "summary": "سقاطة ليلية وقفل سطحي من الحديد والنحاس، بمسافة ظهر 50 mm.",
@@ -4403,6 +5029,64 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "e6f68e644a51"
+    }
+  },
+  "5833-sset-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب فولاذ مقاوم للصدأ ساتان (US32D)، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ ساتان (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
     }
   },
   "5834-night-latch-and-rim-lock": {
@@ -4607,6 +5291,180 @@
       "description": "dd29ecf524b0",
       "features": "68262fe6515a",
       "specs": "01ade8243318"
+    }
+  },
+  "586-abet-light-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الخفيفة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب نحاس عتيق (US5)، بوظيفة المدخل، للاستخدام السكني القياسي.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني القياسي"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع سلسلة الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "1fde5fc422b2",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "dd1537428129"
+    }
+  },
+  "587-abet-light-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الخفيفة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ، مجهّز لأسطوانة من النحاس المصمت أو من الزنك والنحاس، بوظيفة المدخل، للاستخدام السكني القياسي.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل ساتان، كروم، نحاس عتيق، نحاس مصقول، جميعها متاحة"
+      },
+      {
+        "label": "Cylinder",
+        "value": "نحاس مصمت/أسطوانة من الزنك والنحاس"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني القياسي"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع سلسلة الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "587-fet-light-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الخفيفة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ، مجهّز لأسطوانة من النحاس المصمت أو من الزنك والنحاس، بوظيفة المدخل، للاستخدام السكني القياسي.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل ساتان، كروم، نحاس عتيق، نحاس مصقول، جميعها متاحة"
+      },
+      {
+        "label": "Cylinder",
+        "value": "نحاس مصمت/أسطوانة من الزنك والنحاس"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني القياسي"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع سلسلة الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
     }
   },
   "587-mbbk-light-duty-cylindrical-lock": {
@@ -5172,6 +6030,122 @@
       "specs": "97d170e1550e"
     }
   },
+  "587-wlet-light-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الخفيفة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ، مجهّز لأسطوانة من النحاس المصمت أو من الزنك والنحاس، بوظيفة المدخل، للاستخدام السكني القياسي.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل ساتان، كروم، نحاس عتيق، نحاس مصقول، جميعها متاحة"
+      },
+      {
+        "label": "Cylinder",
+        "value": "نحاس مصمت/أسطوانة من الزنك والنحاس"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني القياسي"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع سلسلة الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "5870-abet-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب نحاس عتيق (US5)، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "8521bcceb49f",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ca9dc6948e6b"
+    }
+  },
   "5870-acet-heavy-duty-cylindrical-lock": {
     "name": "قفل أسطواني للخدمة الشاقة",
     "summary": "قفل أسطواني للخدمة الشاقة من الحديد والفولاذ المقاوم للصدأ، بمسافة ظهر 60 mm/70 mm.",
@@ -5365,6 +6339,68 @@
       "specs": "e54b4f86476c"
     }
   },
+  "5870-ssps-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ 201/304، بمسافة ظهر 70 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ (SS)"
+      },
+      {
+        "label": "Backset",
+        "value": "70 mm"
+      },
+      {
+        "label": "Function",
+        "value": "ممر"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "51519a497507",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "1a632978c79c"
+    }
+  },
   "5871-sset-heavy-duty-cylindrical-lock": {
     "name": "قفل أسطواني للخدمة الشاقة",
     "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب ساتان (US32D)، بوظيفة المدخل.",
@@ -5515,6 +6551,114 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "d68d1a120968"
+    }
+  },
+  "5874-bnac-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "592-abet-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من النحاس أو الفولاذ المقاوم للصدأ بتشطيب نحاس عتيق (US5)، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، بوظيفة المدخل، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "نحاس أو فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5bb4d63a7a1d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "3caac711886c"
     }
   },
   "592-bset-tubular-lock": {
@@ -6552,6 +7696,68 @@
       "specs": "d5d93da0d212"
     }
   },
+  "607-abet-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت بتشطيب نحاس عتيق (US5)، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، بوظيفة المدخل، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "db706bb1d867",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "4eaf66e21d11"
+    }
+  },
   "607-acbk-tubular-lock": {
     "name": "قفل أنبوبي",
     "summary": "قفل أنبوبي بتشطيب نحاس أحمر عتيق (us11)، بوظيفة الخصوصية.",
@@ -6626,6 +7832,184 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "d6cb5b12b1b0"
+    }
+  },
+  "607-bnet-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت بتشطيب نيكل أسود، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، بوظيفة المدخل، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل أسود"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "c68e2a3fef59",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ef8ed6652852"
+    }
+  },
+  "607-fet-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت، مطلي بالرش بنقشة الخشب، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، بوظيفة المدخل، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "مطلي بالرش بنقشة الخشب"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "125eba3105a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b64c1168ee6c"
+    }
+  },
+  "607-ket-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "4862ca672861",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "99f7c46f76d2"
     }
   },
   "607-pbbk-tubular-lock": {
@@ -6778,6 +8162,68 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "7b33cb92cb7f"
+    }
+  },
+  "607-pbps-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت بتشطيب نحاس مصقول (US3)، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، بوظيفة الممر، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Function",
+        "value": "ممر"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس مصقول (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "8ad143e8c9bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5b3d6e3d6a98"
     }
   },
   "607-spet-tubular-lock": {
@@ -7081,6 +8527,184 @@
       "specs": "1ab4860f8a8f"
     }
   },
+  "607-wbk-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت باللون الأبيض، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، بوظيفة الخصوصية، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "أبيض"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة الخصوصية للحمامات: زر دوّار من الداخل"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "30d0c742693d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9c3d222403af"
+    }
+  },
+  "607-wlet-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ/النحاس/الفولاذ المصمت، مطلي باللون الأبيض، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، مجهّز لأسطوانة نحاسية، بوظيفة المدخل، للاستخدام السكني.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ/نحاس/فولاذ مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة نحاسية"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "للاستخدام السكني"
+      },
+      {
+        "label": "Finish",
+        "value": "مطلي باللون الأبيض"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "ff9a380742de",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5524d41241f7"
+    }
+  },
+  "6082-sn-tubular-lock": {
+    "name": "قفل أنبوبي",
+    "summary": "قفل أنبوبي بمقبض كروي من الفولاذ المقاوم للصدأ بتشطيب نيكل ساتان، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، للأبواب بسماكة من 35 mm إلى 45 mm. مناسب لأبواب الغرف وأبواب المداخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Application",
+        "value": "باب الغرفة، باب المدخل."
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "فولاذ مقاوم للصدأ مشغول أو نحاس"
+      },
+      {
+        "label": "Strike",
+        "value": "صفيحة إغلاق بحافة منحنية 57 mm قياسية؛ 70 mm متاحة عند الطلب"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل ساتان"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5c28c88587a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "2df4d1c2438f"
+    }
+  },
   "609-pbet-tubular-lock": {
     "name": "قفل أنبوبي",
     "summary": "قفل بمقبض كروي من الفولاذ المقاوم للصدأ أو النحاس أو الفولاذ المصمت بتشطيب نحاس مصقول (US3)، بمسافة ظهر قابلة للضبط 60 mm / 70 mm، ومجهّز لأسطوانة نحاسية، بوظيفة المدخل، للاستخدام السكني.",
@@ -7209,6 +8833,180 @@
       "specs": "456bd208bb3b"
     }
   },
+  "6094-pbbk-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ 201/304.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = نحاس مصقول"
+      },
+      {
+        "label": "Application",
+        "value": "لأبواب دورات المياه وغيرها من أبواب الخصوصية"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة الخصوصية للحمامات: زر دوّار من الداخل"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e99cb8440b14"
+    }
+  },
+  "6094-pbet-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ 201/304.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = نحاس مصقول"
+      },
+      {
+        "label": "Application",
+        "value": "لأبواب دورات المياه وغيرها من أبواب الخصوصية"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c9c889855586"
+    }
+  },
+  "6094-pbps-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ 201/304.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = نحاس مصقول"
+      },
+      {
+        "label": "Application",
+        "value": "لأبواب دورات المياه وغيرها من أبواب الخصوصية"
+      },
+      {
+        "label": "Function",
+        "value": "ممر"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c7a159eb9a03"
+    }
+  },
   "6491-snet-lever-handle": {
     "name": "مقبض ذراع",
     "summary": "مقبض ذراع بتشطيب نيكل ساتان، بوظيفة المدخل.",
@@ -7263,6 +9061,60 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "05da5b16b0b2"
+    }
+  },
+  "6491-sset-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب فولاذ مقاوم للصدأ ساتان (US32D)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ ساتان (US32D)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
     }
   },
   "6491abet-lever-handle": {
@@ -8155,6 +10007,122 @@
       "specs": "36d86128d47e"
     }
   },
+  "70900-bk-grip-handle-set": {
+    "name": "طقم مقبض سحب",
+    "summary": "طقم مقبض سحب من الألومنيوم.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ألومنيوم"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط، للسقاطة والترباس معًا"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm، مع حشوة من الفولاذ المقسّى لمقاومة النشر"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm، يحل محل معظم الأقفال القائمة"
+      },
+      {
+        "label": "Chassis",
+        "value": "بنية داخلية من الفولاذ المصمت، محمية من التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "نحاس مصمت مطروق، أو زنك مصبوب بالقالب مطلي كهربائيًا"
+      },
+      {
+        "label": "Handing",
+        "value": "غير محدد الجهة، لليسار أو لليمين"
+      },
+      {
+        "label": "Feature",
+        "value": "لا براغي تثبيت ظاهرة من الخارج؛ حلقة الأسطوانة الدوّارة تقاوم الليّ بمفاتيح الربط"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة الخصوصية للحمامات: زر دوّار من الداخل"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e60eaaf0c275"
+    }
+  },
+  "70900-et-grip-handle-set": {
+    "name": "طقم مقبض سحب",
+    "summary": "طقم مقبض سحب من الألومنيوم.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ألومنيوم"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm، قابل للضبط، للسقاطة والترباس معًا"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm، مع حشوة من الفولاذ المقسّى لمقاومة النشر"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm، يحل محل معظم الأقفال القائمة"
+      },
+      {
+        "label": "Chassis",
+        "value": "بنية داخلية من الفولاذ المصمت، محمية من التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "نحاس مصمت مطروق، أو زنك مصبوب بالقالب مطلي كهربائيًا"
+      },
+      {
+        "label": "Handing",
+        "value": "غير محدد الجهة، لليسار أو لليمين"
+      },
+      {
+        "label": "Feature",
+        "value": "لا براغي تثبيت ظاهرة من الخارج؛ حلقة الأسطوانة الدوّارة تقاوم الليّ بمفاتيح الربط"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "00cf38a2f12b"
+    }
+  },
   "70900-mbbk-grip-handle-set": {
     "name": "طقم مقبض سحب",
     "summary": "طقم مقبض سحب بتشطيب أسود مطفأ، بوظيفة الخصوصية.",
@@ -8572,6 +10540,60 @@
       "specs": "97d170e1550e"
     }
   },
+  "801-pbet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نحاس مصقول (US3)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس مصقول (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
   "803-pbet-lever-handle": {
     "name": "مقبض ذراع",
     "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نحاس مصقول (US3)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
@@ -8696,6 +10718,114 @@
       "specs": "aa7103d820e4"
     }
   },
+  "804-pbet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك، متاح بجميع التشطيبات AB/AC/PB/SB/SS/SP/SC، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (AB)، نحاس أحمر عتيق (AC)، نحاس مصقول (PB)، نحاس ساتان (SB)، فولاذ مقاوم للصدأ (SS)، مصقول لامع (SP)، كروم ساتان (SC)، جميعها متاحة"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
+  "805pbet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك، متاح بجميع التشطيبات AB/AC/PB/SB/SS/SP/SC، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (AB)، نحاس أحمر عتيق (AC)، نحاس مصقول (PB)، نحاس ساتان (SB)، فولاذ مقاوم للصدأ (SS)، مصقول لامع (SP)، كروم ساتان (SC)، جميعها متاحة"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
   "807-abbk-lever-handle": {
     "name": "مقبض ذراع",
     "features": [
@@ -8759,6 +10889,69 @@
       "description": "dd29ecf524b0",
       "features": "e44b49734491",
       "specs": "61cc97f59b50"
+    }
+  },
+  "807-abet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نحاس عتيق (US5)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [
+      "مثالي لغرف النوم والغرف التي تتطلب الخصوصية",
+      "آلية قفل بالزر: اضغط للقفل، وحرّر للفتح",
+      "بنية متينة للخدمة الشاقة",
+      "تشطيبات متعددة متاحة لتلائم أنماط الديكور الداخلي"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس عتيق (US5)"
+      },
+      {
+        "label": "Surface Finish Options",
+        "value": "AB، AC، PB، SB، SS، SP، SC (مثل النحاس العتيق، والنحاس المصقول، والنيكل الساتان، والأسود المطفأ، وغيرها)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "6b4c4e58e0f1",
+      "description": "dd29ecf524b0",
+      "features": "e44b49734491",
+      "specs": "6443051c79a8"
     }
   },
   "808-abet-lever-handle": {
@@ -9045,6 +11238,114 @@
       "specs": "54c530cab2b0"
     }
   },
+  "809-pbet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نحاس مصقول (US3)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس مصقول (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
+  "809-sbet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نحاس ساتان (US4)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس ساتان (US4)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "e25da1e51909",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "aa7103d820e4"
+    }
+  },
   "80sn-lock-cylinder": {
     "name": "أسطوانة القفل",
     "summary": "أسطوانة قفل من النحاس المصمت، 80 mm.",
@@ -9274,6 +11575,114 @@
       "description": "a5dcd6558377",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "822-snet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نيكل ساتان، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل ساتان"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
+  "823-pbet-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نحاس مصقول (US3)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس مصقول (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
     }
   },
   "836-lever-handle": {
@@ -11026,6 +13435,268 @@
       "specs": "97d170e1550e"
     }
   },
+  "9211-bnac-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من سبيكة الزنك.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Finish",
+        "value": "BN نيكل أسود"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9fc059bbbbdc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "87ca2e4390eb"
+    }
+  },
+  "9212-bnbs-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ والنحاس.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ + نحاس"
+      },
+      {
+        "label": "Finish",
+        "value": "BN نيكل أسود"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c4b444e47e0c"
+    }
+  },
+  "9216-ac-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ والنحاس.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ + نحاس"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      },
+      {
+        "label": "Finish",
+        "value": "نحاس أحمر عتيق (US11)"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5ee1299f9cbb"
+    }
+  },
+  "9217-bnac-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ والنحاس.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ + نحاس"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
+  "9221-bset-heavy-duty-cylindrical-lock": {
+    "name": "قفل أسطواني للخدمة الشاقة",
+    "summary": "قفل أسطواني للخدمة الشاقة من الفولاذ المقاوم للصدأ والنحاس.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ + نحاس"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "هيكل وجسم سقاطة من الفولاذ المصمت، مطليان بالزنك"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Cylinder",
+        "value": "أسطوانة بـ 5 مسامير، قلب من النحاس، مفتاحان من النحاس المطلي بالنيكل"
+      },
+      {
+        "label": "Latch",
+        "value": "قفل تلقائي للسقاطة في الوظائف ذات المفتاح"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Application",
+        "value": "المكاتب التجارية والمدارس والاستخدام السكني الكثيف"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
   "aah024-brass-and-steel-hinges": {
     "name": "مفصلات من النحاس والفولاذ",
     "features": [],
@@ -11776,6 +14447,44 @@
       "description": "1ec34c14b019",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "bh15-barrel-bolt": {
+    "name": "ترباس أسطواني",
+    "summary": "ترباس أسطواني يُركَّب على سطح الباب، بطول 80 أو 100 mm وعرض 38 mm، مع قطعة الاستقبال الخاصة به، بتشطيب فولاذ مقاوم للصدأ ساتان أو مصقول.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ ساتان (SSS)، فولاذ مقاوم للصدأ مصقول (PSS)"
+      },
+      {
+        "label": "Length",
+        "value": "80 mm/100 mm"
+      },
+      {
+        "label": "Thickness",
+        "value": "1.2 mm"
+      },
+      {
+        "label": "Application",
+        "value": "أمن الأبواب"
+      },
+      {
+        "label": "Size",
+        "value": "80 mm / 100 mm (الطول) × 38 mm (العرض) × 1.2 mm (السماكة)"
+      }
+    ],
+    "sourceHash": {
+      "name": "5d6407620197",
+      "summary": "ed9ef3f275ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "989660e0d7a4"
     }
   },
   "bh16-flat-slide-bolt": {
@@ -14196,6 +16905,32 @@
       "specs": "80d569a05845"
     }
   },
+  "ddh001-panic-exit-device": {
+    "name": "جهاز الخروج الطارئ",
+    "summary": "جهاز الخروج الطارئ من الحديد، بمقاس 175 × 53 × 73 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "حديد"
+      },
+      {
+        "label": "Application",
+        "value": "باب حريق مزدوج"
+      },
+      {
+        "label": "Size",
+        "value": "175 × 53 × 73 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "0de8a5dcc6a5",
+      "summary": "9e22176c89e9",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "27a55b6a00f7"
+    }
+  },
   "dh02-ab-grip-handle-set": {
     "name": "طقم مقبض سحب",
     "summary": "طقم مقبض سحب طراز DH02 AB من تصنيع Canton Hyland.",
@@ -16518,6 +19253,50 @@
       "specs": "e5161e80ef27"
     }
   },
+  "hd02-stainless-steel-handle": {
+    "name": "مقبض من الفولاذ المقاوم للصدأ",
+    "summary": "مقبض من الفولاذ المقاوم للصدأ، بالأطوال 64/56/128/192/284.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
+  "hd03-stainless-steel-handle": {
+    "name": "مقبض من الفولاذ المقاوم للصدأ",
+    "summary": "مقبض من الفولاذ المقاوم للصدأ، بالأطوال 64/56/128/192/284.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
   "hy-0ss-latch-guard": {
     "name": "واقي لسان القفل",
     "summary": "واقي لسان القفل من الفولاذ المقاوم للصدأ 304 للأبواب التي تُفتح للخارج، يغطي اللسان لمقاومة محاولات الخلع بالعتلة؛ مصمم للسوق الأسترالية ويُورَّد مع براغي من الفولاذ المقاوم للصدأ 304.",
@@ -17123,6 +19902,24 @@
       "specs": "2b38ae988b6a"
     }
   },
+  "ju-071-door-closer": {
+    "name": "غلاق الباب",
+    "summary": "غلاق باب من الألومنيوم.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ألومنيوم"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
+    }
+  },
   "ju-072-door-closer": {
     "name": "غلاق الباب",
     "summary": "غلاق باب من الألومنيوم.",
@@ -17217,6 +20014,24 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "1d6549b88cce"
+    }
+  },
+  "ju-088a-door-closer": {
+    "name": "غلاق الباب",
+    "summary": "غلاق باب من الألومنيوم.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ألومنيوم"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
     }
   },
   "ju-093-door-closer": {
@@ -17876,6 +20691,28 @@
       "specs": "e97d52578fb8"
     }
   },
+  "lc06-85-50mm-ps-lock-case": {
+    "name": "جسم القفل",
+    "summary": "جسم قفل غاطس بوظيفة الممر، للأبواب الخشبية والمعدنية.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Function",
+        "value": "ممر"
+      },
+      {
+        "label": "Application",
+        "value": "أبواب خشبية ومعدنية"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "c7bc182eb5bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "872184db3a17"
+    }
+  },
   "lc06-85-50ps-lock-case": {
     "name": "جسم القفل",
     "summary": "جسم قفل طراز LC06 85_50PS من تصنيع Canton Hyland.",
@@ -18069,6 +20906,19 @@
       "specs": "97d170e1550e"
     }
   },
+  "lc16-lock-case": {
+    "name": "جسم القفل",
+    "summary": "جسم قفل.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
   "lc17-lock-case": {
     "name": "جسم القفل",
     "summary": "جسم قفل غاطس من الألومنيوم والفولاذ بمسافة ظهر 16 mm، بوظيفة الخطاف المنزلق، للأبواب المنزلقة.",
@@ -18201,6 +21051,63 @@
       "specs": "f52340c38527"
     }
   },
+  "lc22-85-45mm-lock-case": {
+    "name": "جسم القفل",
+    "summary": "جسم قفل غاطس بمسافة بين المحورين 85 mm ومسافة ظهر 45 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "85 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "45 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "aedba2221782",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "30189bf927a5"
+    }
+  },
+  "lc31-lock-case": {
+    "name": "جسم القفل",
+    "summary": "جسم قفل.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc32-65-72mm-lock-case": {
+    "name": "جسم القفل",
+    "summary": "جسم قفل غاطس بمسافة بين المحورين 72 mm ومسافة ظهر 65 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "65 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "1b05ddca7ea3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "90cf4eaefbef"
+    }
+  },
   "lc33-5572-lock-case": {
     "name": "جسم القفل",
     "summary": "جسم قفل غاطس، مجهّز لأسطوانة بروفيل أوروبية، بوظيفة الخروج الطارئ، لأبواب الطوارئ والهروب.",
@@ -18309,6 +21216,19 @@
       "name": "c12be339ca52",
       "summary": "56d5673187bd",
       "description": "cf9fb9d82901",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc45-85-lock-case": {
+    "name": "جسم القفل",
+    "summary": "جسم قفل.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
     }
@@ -19596,6 +22516,164 @@
       "specs": "35ebfebc15a9"
     }
   },
+  "lh852-sset-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب فولاذ مقاوم للصدأ ساتان (US32D)، بمسافة ظهر 60/70 mm، بوظيفة المدخل.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة المدخل: بمفتاح من الخارج"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ ساتان (US32D)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
+    }
+  },
+  "lh853-bk-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك، بمسافة ظهر 60 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة الخصوصية للحمامات: زر دوّار من الداخل"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "194720c76c78"
+    }
+  },
+  "lh853-bnbk-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك بتشطيب نيكل أسود، بمسافة ظهر 60/70 mm، بوظيفة الخصوصية.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Function",
+        "value": "وظيفة الخصوصية للحمامات: زر دوّار من الداخل"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      },
+      {
+        "label": "Finish",
+        "value": "نيكل أسود"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "727e202208ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f470df2368fa"
+    }
+  },
   "lh853-cpbk-lever-handle": {
     "name": "مقبض ذراع",
     "summary": "مقبض ذراع مطلي بالكروم، بوظيفة الخصوصية.",
@@ -19726,6 +22804,56 @@
       "description": "dd29ecf524b0",
       "features": "37b4f519c18c",
       "specs": "bd192ac83133"
+    }
+  },
+  "lh853-ps-lever-handle": {
+    "name": "مقبض ذراع",
+    "summary": "مقبض ذراع من سبيكة الزنك، بمسافة ظهر 60 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "سبيكة الزنك"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Function",
+        "value": "ممر"
+      },
+      {
+        "label": "Door thickness",
+        "value": "قابل للضبط من 35 mm إلى 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200,000 دورة"
+      },
+      {
+        "label": "Chassis",
+        "value": "فولاذ مصمت مطلي بالزنك لمقاومة التآكل"
+      },
+      {
+        "label": "Trim",
+        "value": "زنك مصبوب بالقالب مطلي كهربائيًا، أو نحاس مصمت"
+      },
+      {
+        "label": "Handing",
+        "value": "قابل للعكس بالكامل، لليسار أو لليمين"
+      },
+      {
+        "label": "Keying",
+        "value": "يمكن توحيد مفتاحه مع الترابيس، أو إدخاله في نظام المفتاح الرئيسي"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "a7ae842c589c"
     }
   },
   "lh853-snbk-lever-handle": {

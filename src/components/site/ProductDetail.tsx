@@ -20,7 +20,7 @@ import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
 import { productModelFor } from "@/data/product-models";
 import { ProductModel } from "./ProductModel";
-import { dict, t as tr } from "@/lib/i18n";
+import { dict, specLabel, t as tr } from "@/lib/i18n";
 
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
@@ -655,7 +655,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                           key={`${spec.label}-${spec.value}`}
                           className="grid grid-cols-2 gap-16 border-b border-line py-12 text-c1"
                         >
-                          <dt className="text-ink-secondary">{spec.label}</dt>
+                          <dt className="text-ink-secondary">{specLabel(spec.label, locale)}</dt>
                           {/*
                             英文页面的公制值后面配一个英制括号。见 src/lib/imperial.ts：
                             换算是表现层的事，content/products 里那 891 条行一个字节都不动。

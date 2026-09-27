@@ -47,7 +47,7 @@ export const tx = makeTx(uiOf);
 /** A whole copy dictionary in the reader's language (see i18n-core.ts). Server side: the full overlay. */
 export const dict = makeDict(uiOf);
 
-export { t, isEnglishFallback, type Overlayed } from "./i18n-core.ts";
+export { t, fill, isEnglishFallback, type Overlayed } from "./i18n-core.ts";
 
 
 /**

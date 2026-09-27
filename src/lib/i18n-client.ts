@@ -45,7 +45,7 @@ export const dict = makeDict(uiOf);
 export const specLabels = makeSpecLabels((locale: OverlayLocale) => bundles[locale]?.specLabels ?? {});
 /** A spec label in the reader's language, or the English label. */
 export const specLabel = (label: string, locale: Locale): string => specLabels(locale)[label] ?? label;
-export { t, isEnglishFallback, type Overlayed } from "./i18n-core.ts";
+export { t, fill, isEnglishFallback, type Overlayed } from "./i18n-core.ts";
 export { LOCALE_TAG, OG_LOCALE, LANGUAGE_LABELS, LOCALE_DIR, type LocaleDict } from "./i18n-core.ts";
 
 /** Material / finish values on a card, from the subset (materials, finishes, the spec values products use as `material`). */

@@ -64,7 +64,11 @@ const materials = new Set();
 for (const f of readdirSync("content/products")) {
   if (!f.endsWith(".json")) continue;
   const p = JSON.parse(readFileSync(`content/products/${f}`, "utf8"));
-  if ((!p.sites || p.sites.includes("hyde")) && p.material) for (const part of String(p.material).split(/\s*[/+,]\s*/)) materials.add(part.trim());
+  if ((!p.sites || p.sites.includes("hyde")) && p.material) {
+    /* Whole string first (localise-values.ts looks the whole value up before splitting), then its parts. */
+    materials.add(String(p.material).trim());
+    for (const part of String(p.material).split(/\s*[/+,]\s*/)) materials.add(part.trim());
+  }
 }
 const out = {};
 for (const locale of LOCALES) {

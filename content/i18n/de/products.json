@@ -755,6 +755,24 @@
       "specs": "fda9498b1147"
     }
   },
+  "100-30mm-glass-door-handle": {
+    "name": "Glastürgriff",
+    "summary": "Glastürgriff aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
+    }
+  },
   "100-glass-door-handle": {
     "name": "Glastürgriff",
     "summary": "Glastürgriff aus Edelstahl 304, matt.",
@@ -813,6 +831,24 @@
       "description": "dd29ecf524b0",
       "features": "338c5bfbed14",
       "specs": "01bcb01eaac5"
+    }
+  },
+  "102-30mm-glass-door-handle": {
+    "name": "Glastürgriff",
+    "summary": "Glastürgriff aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "f4f6775d2925",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "8567301aadd1"
     }
   },
   "102-glass-door-handle": {
@@ -933,6 +969,28 @@
       "description": "dd29ecf524b0",
       "features": "c12f7e7ad034",
       "specs": "1d7568990c6b"
+    }
+  },
+  "105-600-glass-door-handle": {
+    "name": "Glastürgriff",
+    "summary": "Glastürgriff aus Edelstahl, 25 × 25 × 600 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Size",
+        "value": "25 × 25 × 600 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "e03b63bd48d5",
+      "summary": "7659422164f3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "18243fc43159"
     }
   },
   "105-glass-door-handle": {
@@ -1454,6 +1512,64 @@
       "specs": "c0c4f70b3890"
     }
   },
+  "201-pbet-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl in Messing poliert (US3), Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing poliert (US3)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9ee3b97de435",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b4093a712f1f"
+    }
+  },
   "260-night-latch-and-rim-lock": {
     "name": "Nachtriegel und Aufschraubschloss",
     "specs": [
@@ -1606,6 +1722,32 @@
       "specs": "d35fdd87c761"
     }
   },
+  "301-s-s-panic-exit-device": {
+    "name": "S-Panikverschluss",
+    "summary": "S-Panikverschluss aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Color",
+        "value": "Silber lackiert"
+      },
+      {
+        "label": "Application",
+        "value": "Für DIN-linke und DIN-rechte Türen geeignet."
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "949f400c60e8",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "52f4a782b053"
+    }
+  },
   "302-panic-exit-device": {
     "name": "Panikverschluss",
     "summary": "Panikverschluss aus Edelstahl und Eisen, 1040 mm (Länge anpassbar).",
@@ -1646,6 +1788,32 @@
       "description": "dd29ecf524b0",
       "features": "832f23bcd801",
       "specs": "ff6a9de568cf"
+    }
+  },
+  "302-s-s-panic-exit-device": {
+    "name": "S-Panikverschluss",
+    "summary": "S-Panikverschluss aus Edelstahl, 1040 mm (Länge anpassbar).",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Length",
+        "value": "1040 mm (Länge anpassbar)"
+      },
+      {
+        "label": "Finish",
+        "value": "Lackierung"
+      }
+    ],
+    "sourceHash": {
+      "name": "f10519ee636b",
+      "summary": "389e7356e46a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c423b76d7892"
     }
   },
   "303-panic-exit-device": {
@@ -2496,6 +2664,60 @@
       "specs": "883c849b1798"
     }
   },
+  "3431-snet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel matt"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
   "3431-sset-lever-handle": {
     "name": "Drücker",
     "features": [],
@@ -2550,6 +2772,32 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "b5bc39a6da6d"
+    }
+  },
+  "400-indicator": {
+    "name": "WC-Anzeiger",
+    "summary": "WC-Anzeiger aus Zinklegierung.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Color",
+        "value": "Silber"
+      },
+      {
+        "label": "Application",
+        "value": "Für WC-Türen und andere Türen geeignet"
+      }
+    ],
+    "sourceHash": {
+      "name": "75886ae6cc32",
+      "summary": "3d7945c4d1a1",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c8dfeeb38a75"
     }
   },
   "410-glass-door-handle": {
@@ -3522,6 +3770,122 @@
       "specs": "095408bc8e35"
     }
   },
+  "571-sset-light-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für leichte Beanspruchung",
+    "summary": "Zylindrisches Schloss für leichte Beanspruchung aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Üblicher Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit der Riegelschloss-Serie oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Edelstahl matt (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "4ef86a8fed83",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "33004bec0ade"
+    }
+  },
+  "5733-sset-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl in Edelstahl matt (US32D), Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Edelstahl matt (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
+    }
+  },
   "575-abet-tubular-lock": {
     "name": "Tubular-Schloss",
     "summary": "Edelstahl-Knaufschloss in AB/AC/PB/SB/SS/SP/SC (weitere Oberflächen lieferbar), Dornmaß verstellbar 60 mm / 70 mm, vorbereitet für Messingzylinder; Eingangsfunktion, für den Wohnbereich.",
@@ -3805,6 +4169,64 @@
       "specs": "275b2c5c21eb"
     }
   },
+  "576-pbps-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Messing oder Edelstahl in PB Messing poliert, Dornmaß 60 mm / 70 mm einstellbar, Durchgangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Messing oder Edelstahl"
+      },
+      {
+        "label": "Finish",
+        "value": "PB Messing poliert"
+      },
+      {
+        "label": "Function",
+        "value": "Durchgangsfunktion"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "0281a0d9c452",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c82641f11968"
+    }
+  },
   "578-acet-light-duty-cylindrical-lock": {
     "name": "Zylindrisches Schloss für leichte Beanspruchung",
     "summary": "Edelstahl-Knaufschloss in Kupfer antik (US11), Eingangsfunktion, für den üblichen Wohnbereich.",
@@ -4043,6 +4465,160 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "bf72e2a7643c"
+    }
+  },
+  "5790-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-e-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "5807-f-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl, Holzmaserung lackiert.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Holzmaserung lackiert"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "ad2b2d27e451",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11162cdd2585"
     }
   },
   "5807-sscl-commercial-lock": {
@@ -4333,6 +4909,56 @@
       "specs": "1eb3d9d5516b"
     }
   },
+  "5832-pbbset-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
   "5833-night-latch-and-rim-lock": {
     "name": "Nachtriegel und Aufschraubschloss",
     "summary": "Nachtriegel- bzw. Aufschraubschloss aus Eisen und Messing, Dornmaß 50 mm.",
@@ -4403,6 +5029,64 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "e6f68e644a51"
+    }
+  },
+  "5833-sset-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl in Edelstahl matt (US32D), Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Edelstahl matt (US32D)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "7450884f957a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e54b4f86476c"
     }
   },
   "5834-night-latch-and-rim-lock": {
@@ -4607,6 +5291,180 @@
       "description": "dd29ecf524b0",
       "features": "68262fe6515a",
       "specs": "01ade8243318"
+    }
+  },
+  "586-abet-light-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für leichte Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl in Messing antik (US5), Eingangsfunktion, für den üblichen Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Üblicher Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit der Riegelschloss-Serie oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "1fde5fc422b2",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "dd1537428129"
+    }
+  },
+  "587-abet-light-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für leichte Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl, vorbereitet für einen Zylinder aus Massivmessing bzw. Zink und Messing, Eingangsfunktion, für den üblichen Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel matt, Chrom, Messing antik, Messing poliert, alle lieferbar"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Massivmessing/Zylinder aus Zink und Messing"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Üblicher Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit der Riegelschloss-Serie oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "587-fet-light-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für leichte Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl, vorbereitet für einen Zylinder aus Massivmessing bzw. Zink und Messing, Eingangsfunktion, für den üblichen Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel matt, Chrom, Messing antik, Messing poliert, alle lieferbar"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Massivmessing/Zylinder aus Zink und Messing"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Üblicher Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit der Riegelschloss-Serie oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
     }
   },
   "587-mbbk-light-duty-cylindrical-lock": {
@@ -5172,6 +6030,122 @@
       "specs": "97d170e1550e"
     }
   },
+  "587-wlet-light-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für leichte Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl, vorbereitet für einen Zylinder aus Massivmessing bzw. Zink und Messing, Eingangsfunktion, für den üblichen Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel matt, Chrom, Messing antik, Messing poliert, alle lieferbar"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Massivmessing/Zylinder aus Zink und Messing"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Üblicher Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit der Riegelschloss-Serie oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "3e8320439599",
+      "summary": "577bcb04426a",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c95555948c4c"
+    }
+  },
+  "5870-abet-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl in Messing antik (US5), Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "8521bcceb49f",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ca9dc6948e6b"
+    }
+  },
   "5870-acet-heavy-duty-cylindrical-lock": {
     "name": "Zylindrisches Schloss für hohe Beanspruchung",
     "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Eisen und Edelstahl, Dornmaß 60 mm/70 mm.",
@@ -5365,6 +6339,68 @@
       "specs": "e54b4f86476c"
     }
   },
+  "5870-ssps-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl 201/304, Dornmaß 70 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "SS"
+      },
+      {
+        "label": "Backset",
+        "value": "70 mm"
+      },
+      {
+        "label": "Function",
+        "value": "Durchgangsfunktion"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "51519a497507",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "1a632978c79c"
+    }
+  },
   "5871-sset-heavy-duty-cylindrical-lock": {
     "name": "Zylindrisches Schloss für hohe Beanspruchung",
     "summary": "Edelstahl-Knaufschloss in Edelstahl matt (US32D), Eingangsfunktion.",
@@ -5515,6 +6551,114 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "d68d1a120968"
+    }
+  },
+  "5874-bnac-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Knaufschloss aus Edelstahl.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "dafaaeae702b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "67aef9b67a82"
+    }
+  },
+  "592-abet-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Messing oder Edelstahl in Messing antik (US5), Dornmaß 60 mm / 70 mm einstellbar, Eingangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Messing oder Edelstahl"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5bb4d63a7a1d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "3caac711886c"
     }
   },
   "592-bset-tubular-lock": {
@@ -6552,6 +7696,68 @@
       "specs": "d5d93da0d212"
     }
   },
+  "607-abet-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl in Messing antik (US5), Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, Eingangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (US5)"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "db706bb1d867",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "4eaf66e21d11"
+    }
+  },
   "607-acbk-tubular-lock": {
     "name": "Tubular-Schloss",
     "summary": "Tubular-Schloss in Kupfer antik (US11), WC-Funktion.",
@@ -6626,6 +7832,184 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "d6cb5b12b1b0"
+    }
+  },
+  "607-bnet-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl in Schwarznickel, Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, Eingangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Schwarznickel"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "c68e2a3fef59",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "ef8ed6652852"
+    }
+  },
+  "607-fet-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl, Holzmaserung lackiert, Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, Eingangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Holzmaserung lackiert"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "125eba3105a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b64c1168ee6c"
+    }
+  },
+  "607-ket-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl, Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "4862ca672861",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "99f7c46f76d2"
     }
   },
   "607-pbbk-tubular-lock": {
@@ -6778,6 +8162,68 @@
       "description": "dd29ecf524b0",
       "features": "fe71d271b7e4",
       "specs": "7b33cb92cb7f"
+    }
+  },
+  "607-pbps-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl in Messing poliert (US3), Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, Durchgangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Function",
+        "value": "Durchgangsfunktion"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing poliert (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "8ad143e8c9bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5b3d6e3d6a98"
     }
   },
   "607-spet-tubular-lock": {
@@ -7081,6 +8527,184 @@
       "specs": "1ab4860f8a8f"
     }
   },
+  "607-wbk-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl in Weiß, Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, WC-Funktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Weiß"
+      },
+      {
+        "label": "Function",
+        "value": "WC-Funktion, Bad, innen Drehknopf"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "30d0c742693d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9c3d222403af"
+    }
+  },
+  "607-wlet-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Knaufschloss aus Edelstahl/Messing/Vollstahl, Weiß lackiert, Dornmaß 60 mm / 70 mm einstellbar, vorbereitet für einen Messingzylinder, Eingangsfunktion, für den Wohnbereich.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl/Messing/Vollstahl"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Messingzylinder"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Wohnbereich"
+      },
+      {
+        "label": "Finish",
+        "value": "Weiß lackiert"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "ff9a380742de",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5524d41241f7"
+    }
+  },
+  "6082-sn-tubular-lock": {
+    "name": "Tubular-Schloss",
+    "summary": "Tubular-Knaufschloss aus Edelstahl in Nickel matt, Dornmaß 60 mm / 70 mm einstellbar, für Türblattstärken von 35 mm bis 45 mm. Für Zimmer- und Eingangstüren.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Application",
+        "value": "Zimmertür, Eingangstür."
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Edelstahl oder Messing, geschmiedet"
+      },
+      {
+        "label": "Strike",
+        "value": "Standardmäßig 57 mm mit gebogener Lippe; 70 mm auf Anfrage"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel matt"
+      }
+    ],
+    "sourceHash": {
+      "name": "7471c2c642ad",
+      "summary": "5c28c88587a3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "2df4d1c2438f"
+    }
+  },
   "609-pbet-tubular-lock": {
     "name": "Tubular-Schloss",
     "summary": "Knaufschloss aus Edelstahl, Messing oder Vollstahl in Messing poliert (US3), Dornmaß verstellbar 60 mm / 70 mm, vorbereitet für Messingzylinder; Eingangsfunktion, für den Wohnbereich.",
@@ -7209,6 +8833,180 @@
       "specs": "456bd208bb3b"
     }
   },
+  "6094-pbbk-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl 201/304.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = Messing poliert"
+      },
+      {
+        "label": "Application",
+        "value": "Für WC- oder andere Türen mit Sperrfunktion"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Function",
+        "value": "WC-Funktion, Bad, innen Drehknopf"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e99cb8440b14"
+    }
+  },
+  "6094-pbet-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl 201/304.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = Messing poliert"
+      },
+      {
+        "label": "Application",
+        "value": "Für WC- oder andere Türen mit Sperrfunktion"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c9c889855586"
+    }
+  },
+  "6094-pbps-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl 201/304.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl 201/304"
+      },
+      {
+        "label": "Finish",
+        "value": "PB = Messing poliert"
+      },
+      {
+        "label": "Application",
+        "value": "Für WC- oder andere Türen mit Sperrfunktion"
+      },
+      {
+        "label": "Function",
+        "value": "Durchgangsfunktion"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "d2facf046070",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c7a159eb9a03"
+    }
+  },
   "6491-snet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker in Nickel matt, Eingangsfunktion.",
@@ -7263,6 +9061,60 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "05da5b16b0b2"
+    }
+  },
+  "6491-sset-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Edelstahl matt (US32D), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Edelstahl matt (US32D)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
     }
   },
   "6491abet-lever-handle": {
@@ -8155,6 +10007,122 @@
       "specs": "36d86128d47e"
     }
   },
+  "70900-bk-grip-handle-set": {
+    "name": "Stoßgriffgarnitur",
+    "summary": "Stoßgriffgarnitur aus Aluminium.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminium"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar, für Falle und Riegel"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm, mit gehärtetem Stahleinsatz gegen Durchsägen"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm, ersetzt die meisten vorhandenen Schlösser"
+      },
+      {
+        "label": "Chassis",
+        "value": "Innenaufbau aus Vollstahl, korrosionsgeschützt"
+      },
+      {
+        "label": "Trim",
+        "value": "Massivmessing geschmiedet oder Zinkdruckguss galvanisiert"
+      },
+      {
+        "label": "Handing",
+        "value": "Richtungsneutral, DIN links oder rechts"
+      },
+      {
+        "label": "Feature",
+        "value": "Keine außenliegenden Befestigungen; frei drehender Zylinderring gegen Abdrehen"
+      },
+      {
+        "label": "Function",
+        "value": "WC-Funktion, Bad, innen Drehknopf"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "e60eaaf0c275"
+    }
+  },
+  "70900-et-grip-handle-set": {
+    "name": "Stoßgriffgarnitur",
+    "summary": "Stoßgriffgarnitur aus Aluminium.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminium"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm / 70 mm einstellbar, für Falle und Riegel"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Deadbolt throw",
+        "value": "25 mm, mit gehärtetem Stahleinsatz gegen Durchsägen"
+      },
+      {
+        "label": "Latch extension",
+        "value": "13 mm"
+      },
+      {
+        "label": "Cross bore",
+        "value": "51 mm, ersetzt die meisten vorhandenen Schlösser"
+      },
+      {
+        "label": "Chassis",
+        "value": "Innenaufbau aus Vollstahl, korrosionsgeschützt"
+      },
+      {
+        "label": "Trim",
+        "value": "Massivmessing geschmiedet oder Zinkdruckguss galvanisiert"
+      },
+      {
+        "label": "Handing",
+        "value": "Richtungsneutral, DIN links oder rechts"
+      },
+      {
+        "label": "Feature",
+        "value": "Keine außenliegenden Befestigungen; frei drehender Zylinderring gegen Abdrehen"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      }
+    ],
+    "sourceHash": {
+      "name": "6bb8b7bdb3b8",
+      "summary": "0da2c73b9665",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "00cf38a2f12b"
+    }
+  },
   "70900-mbbk-grip-handle-set": {
     "name": "Stoßgriffgarnitur",
     "summary": "Stoßgriffgarnitur in Schwarz matt, WC-Funktion.",
@@ -8572,6 +10540,60 @@
       "specs": "97d170e1550e"
     }
   },
+  "801-pbet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Messing poliert (US3), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing poliert (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
   "803-pbet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Messing poliert (US3), Dornmaß 60/70 mm, Eingangsfunktion.",
@@ -8696,6 +10718,114 @@
       "specs": "aa7103d820e4"
     }
   },
+  "804-pbet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung, in AB/AC/PB/SB/SS/SP/SC lieferbar, Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (AB), Kupfer antik (AC), Messing poliert (PB), Messing matt (SB), Edelstahl (SS), hochglanzpoliert (SP), Chrom matt (SC), alle lieferbar"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
+  "805pbet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung, in AB/AC/PB/SB/SS/SP/SC lieferbar, Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (AB), Kupfer antik (AC), Messing poliert (PB), Messing matt (SB), Edelstahl (SS), hochglanzpoliert (SP), Chrom matt (SC), alle lieferbar"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "be6a05acbedb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f39aaf0da25d"
+    }
+  },
   "807-abbk-lever-handle": {
     "name": "Drücker",
     "features": [
@@ -8759,6 +10889,69 @@
       "description": "dd29ecf524b0",
       "features": "e44b49734491",
       "specs": "61cc97f59b50"
+    }
+  },
+  "807-abet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Messing antik (US5), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [
+      "Ideal für Schlafzimmer und Räume mit Sperrbedarf",
+      "Druckknopf-Verriegelung: drücken zum Sperren, lösen zum Entsperren",
+      "Robuste Ausführung für hohe Beanspruchung",
+      "In mehreren Oberflächen lieferbar, passend zum Innenausbau"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing antik (US5)"
+      },
+      {
+        "label": "Surface Finish Options",
+        "value": "AB, AC, PB, SB, SS, SP, SC (z. B. Messing antik, Messing poliert, Nickel matt, Schwarz matt usw.)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "6b4c4e58e0f1",
+      "description": "dd29ecf524b0",
+      "features": "e44b49734491",
+      "specs": "6443051c79a8"
     }
   },
   "808-abet-lever-handle": {
@@ -9045,6 +11238,114 @@
       "specs": "54c530cab2b0"
     }
   },
+  "809-pbet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Messing poliert (US3), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing poliert (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
+    }
+  },
+  "809-sbet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Messing matt (US4), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing matt (US4)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "e25da1e51909",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "aa7103d820e4"
+    }
+  },
   "80sn-lock-cylinder": {
     "name": "Schließzylinder",
     "summary": "Schließzylinder aus Massivmessing, 80 mm.",
@@ -9274,6 +11575,114 @@
       "description": "a5dcd6558377",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "822-snet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel matt"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "a867726fb173",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "05da5b16b0b2"
+    }
+  },
+  "823-pbet-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Messing poliert (US3), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Messing poliert (US3)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "fc0eb71a2c05",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "013db2998658"
     }
   },
   "836-lever-handle": {
@@ -11026,6 +13435,268 @@
       "specs": "97d170e1550e"
     }
   },
+  "9211-bnac-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Zinklegierung.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Finish",
+        "value": "BN Schwarznickel"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "9fc059bbbbdc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "87ca2e4390eb"
+    }
+  },
+  "9212-bnbs-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl + Messing.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl + Messing"
+      },
+      {
+        "label": "Finish",
+        "value": "BN Schwarznickel"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "c4b444e47e0c"
+    }
+  },
+  "9216-ac-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl + Messing.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl + Messing"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Kupfer antik (US11)"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "5ee1299f9cbb"
+    }
+  },
+  "9217-bnac-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl + Messing.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl + Messing"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
+  "9221-bset-heavy-duty-cylindrical-lock": {
+    "name": "Zylindrisches Schloss für hohe Beanspruchung",
+    "summary": "Zylindrisches Schloss für hohe Beanspruchung aus Edelstahl + Messing.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl + Messing"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Schlosskörper und Fallengehäuse aus Vollstahl, verzinkt"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Cylinder",
+        "value": "5-Stift-Zuhaltung, Messingkern, zwei Schlüssel aus vernickeltem Messing"
+      },
+      {
+        "label": "Latch",
+        "value": "Fallensperre bei Schlüsselfunktionen"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Application",
+        "value": "Büros, Schulen und stark beanspruchter Wohnbereich"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "523311dcb6b3",
+      "summary": "aa8e3fb2a276",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "11593fb4fa9e"
+    }
+  },
   "aah024-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
     "features": [],
@@ -11776,6 +14447,44 @@
       "description": "1ec34c14b019",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
+    }
+  },
+  "bh15-barrel-bolt": {
+    "name": "Schubriegel",
+    "summary": "Aufschraub-Schubriegel für Türen, 80 oder 100 mm lang und 38 mm breit, mit Schließkloben, in Edelstahl matt oder poliert.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Finish",
+        "value": "Edelstahl matt (SSS), Edelstahl poliert (PSS)"
+      },
+      {
+        "label": "Length",
+        "value": "80 mm/100 mm"
+      },
+      {
+        "label": "Thickness",
+        "value": "1,2 mm"
+      },
+      {
+        "label": "Application",
+        "value": "Türsicherheit"
+      },
+      {
+        "label": "Size",
+        "value": "80 mm / 100 mm (L) × 38 mm (B) × 1,2 mm (S)"
+      }
+    ],
+    "sourceHash": {
+      "name": "5d6407620197",
+      "summary": "ed9ef3f275ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "989660e0d7a4"
     }
   },
   "bh16-flat-slide-bolt": {
@@ -14196,6 +16905,32 @@
       "specs": "80d569a05845"
     }
   },
+  "ddh001-panic-exit-device": {
+    "name": "Panikverschluss",
+    "summary": "Panikverschluss aus Eisen, 175 × 53 × 73 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Eisen"
+      },
+      {
+        "label": "Application",
+        "value": "Zweiflügelige Feuerschutztür"
+      },
+      {
+        "label": "Size",
+        "value": "175 × 53 × 73 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "0de8a5dcc6a5",
+      "summary": "9e22176c89e9",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "27a55b6a00f7"
+    }
+  },
   "dh02-ab-grip-handle-set": {
     "name": "Stoßgriffgarnitur",
     "summary": "Stoßgriffgarnitur DH02 AB, hergestellt von Canton Hyland.",
@@ -16518,6 +19253,50 @@
       "specs": "e5161e80ef27"
     }
   },
+  "hd02-stainless-steel-handle": {
+    "name": "Edelstahl-Drücker",
+    "summary": "Edelstahl-Drücker, 64/56/128/192/284.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
+  "hd03-stainless-steel-handle": {
+    "name": "Edelstahl-Drücker",
+    "summary": "Edelstahl-Drücker, 64/56/128/192/284.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Edelstahl"
+      },
+      {
+        "label": "Length",
+        "value": "64/56/128/192/284"
+      }
+    ],
+    "sourceHash": {
+      "name": "c1d5cd61fb53",
+      "summary": "25e52353e6f6",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "9aaf4585c94d"
+    }
+  },
   "hy-0ss-latch-guard": {
     "name": "Riegelschutzblech",
     "summary": "Riegelschutzblech aus Edelstahl 304 für nach außen öffnende Türen: Es deckt die Falle ab und schützt so vor Aufhebeln. Für den australischen Markt entwickelt und mit Schrauben aus Edelstahl 304 geliefert.",
@@ -17123,6 +19902,24 @@
       "specs": "2b38ae988b6a"
     }
   },
+  "ju-071-door-closer": {
+    "name": "Türschließer",
+    "summary": "Türschließer aus Aluminium.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminium"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
+    }
+  },
   "ju-072-door-closer": {
     "name": "Türschließer",
     "summary": "Türschließer aus Aluminium.",
@@ -17217,6 +20014,24 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "1d6549b88cce"
+    }
+  },
+  "ju-088a-door-closer": {
+    "name": "Türschließer",
+    "summary": "Türschließer aus Aluminium.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminium"
+      }
+    ],
+    "sourceHash": {
+      "name": "81d2ebe0faec",
+      "summary": "616fc9f4a90d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f059fe5593ca"
     }
   },
   "ju-093-door-closer": {
@@ -17876,6 +20691,28 @@
       "specs": "e97d52578fb8"
     }
   },
+  "lc06-85-50mm-ps-lock-case": {
+    "name": "Schlosskasten",
+    "summary": "Einsteckschlosskasten mit Durchgangsfunktion, für Holz- und Metalltüren.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Function",
+        "value": "Durchgangsfunktion"
+      },
+      {
+        "label": "Application",
+        "value": "Holz- und Metalltüren"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "c7bc182eb5bc",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "872184db3a17"
+    }
+  },
   "lc06-85-50ps-lock-case": {
     "name": "Schlosskasten",
     "summary": "Schlosskasten LC06 85_50PS, hergestellt von Canton Hyland.",
@@ -18069,6 +20906,19 @@
       "specs": "97d170e1550e"
     }
   },
+  "lc16-lock-case": {
+    "name": "Schlosskasten",
+    "summary": "Schlosskasten.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
   "lc17-lock-case": {
     "name": "Schlosskasten",
     "summary": "Einsteckschlosskasten aus Aluminium und Stahl mit 16 mm Dornmaß und Hakenriegel – für Schiebetüren.",
@@ -18201,6 +21051,63 @@
       "specs": "f52340c38527"
     }
   },
+  "lc22-85-45mm-lock-case": {
+    "name": "Schlosskasten",
+    "summary": "Einsteckschlosskasten mit 85 mm Entfernung und 45 mm Dornmaß.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "85 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "45 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "aedba2221782",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "30189bf927a5"
+    }
+  },
+  "lc31-lock-case": {
+    "name": "Schlosskasten",
+    "summary": "Schlosskasten.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc32-65-72mm-lock-case": {
+    "name": "Schlosskasten",
+    "summary": "Einsteckschlosskasten mit 72 mm Entfernung und 65 mm Dornmaß.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "65 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "1b05ddca7ea3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "90cf4eaefbef"
+    }
+  },
   "lc33-5572-lock-case": {
     "name": "Schlosskasten",
     "summary": "Einsteckschlosskasten, vorgerichtet für Profilzylinder, mit Panikfunktion – für Not- und Fluchttüren.",
@@ -18309,6 +21216,19 @@
       "name": "c12be339ca52",
       "summary": "56d5673187bd",
       "description": "cf9fb9d82901",
+      "features": "97d170e1550e",
+      "specs": "97d170e1550e"
+    }
+  },
+  "lc45-85-lock-case": {
+    "name": "Schlosskasten",
+    "summary": "Schlosskasten.",
+    "features": [],
+    "specs": [],
+    "sourceHash": {
+      "name": "c12be339ca52",
+      "summary": "704d554a3a50",
+      "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
     }
@@ -19596,6 +22516,164 @@
       "specs": "35ebfebc15a9"
     }
   },
+  "lh852-sset-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Edelstahl matt (US32D), Dornmaß 60/70 mm, Eingangsfunktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "Eingangsfunktion, außen mit Schlüssel"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Edelstahl matt (US32D)"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "eb26a1d9593d",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "b5bc39a6da6d"
+    }
+  },
+  "lh853-bk-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung, Dornmaß 60 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "WC-Funktion, Bad, innen Drehknopf"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "194720c76c78"
+    }
+  },
+  "lh853-bnbk-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung in Schwarznickel, Dornmaß 60/70 mm, WC-Funktion.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60/70 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Function",
+        "value": "WC-Funktion, Bad, innen Drehknopf"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      },
+      {
+        "label": "Finish",
+        "value": "Schwarznickel"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "727e202208ba",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "f470df2368fa"
+    }
+  },
   "lh853-cpbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker, verchromt, WC-Funktion.",
@@ -19726,6 +22804,56 @@
       "description": "dd29ecf524b0",
       "features": "37b4f519c18c",
       "specs": "bd192ac83133"
+    }
+  },
+  "lh853-ps-lever-handle": {
+    "name": "Drücker",
+    "summary": "Drücker aus Zinklegierung, Dornmaß 60 mm.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Zinklegierung"
+      },
+      {
+        "label": "Backset",
+        "value": "60 mm"
+      },
+      {
+        "label": "Function",
+        "value": "Durchgangsfunktion"
+      },
+      {
+        "label": "Door thickness",
+        "value": "Einstellbar von 35 mm bis 45 mm"
+      },
+      {
+        "label": "Cycle life",
+        "value": "200.000 Zyklen"
+      },
+      {
+        "label": "Chassis",
+        "value": "Vollstahl, verzinkt gegen Korrosion"
+      },
+      {
+        "label": "Trim",
+        "value": "Zinkdruckguss galvanisiert oder Massivmessing"
+      },
+      {
+        "label": "Handing",
+        "value": "Vollständig umstellbar, DIN links oder rechts"
+      },
+      {
+        "label": "Keying",
+        "value": "Gleichschließend mit Riegelschlössern oder als Hauptschlüsselanlage lieferbar"
+      }
+    ],
+    "sourceHash": {
+      "name": "fccb4a64e711",
+      "summary": "cfa36b079d21",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "a7ae842c589c"
     }
   },
   "lh853-snbk-lever-handle": {

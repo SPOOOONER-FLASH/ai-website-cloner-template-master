@@ -41,8 +41,14 @@ const dir = `content/i18n/${locale}`;
 const overlay = (name) => (existsSync(`${dir}/${name}.json`) ? readJson(`${dir}/${name}.json`) : {});
 const today = new Date().toISOString().slice(0, 10);
 
+/*
+  --unpublished: also the 67 HYDE records without a hero photograph. They are not in the
+  sitemap, but src/app/…/products/[category]/[slug] builds a page for every catalogue record,
+  and the rendered-English audit samples them like any other page (2026-09-27).
+*/
+const includeUnpublished = process.argv.includes("--unpublished");
 function published(p) {
-  return (!p.sites || p.sites.includes("hyde")) && Boolean(p.heroImage?.src);
+  return (!p.sites || p.sites.includes("hyde")) && (includeUnpublished || Boolean(p.heroImage?.src));
 }
 function records(folder) {
   return readdirSync(`content/${folder}`)

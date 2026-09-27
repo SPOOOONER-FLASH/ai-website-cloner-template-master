@@ -9,7 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "./icons";
 import { MediaPlaceholder } from "./MediaPlaceholder";
-import { dict } from "@/lib/i18n";
+import { dict, fill } from "@/lib/i18n";
 
 /**
  * A rail of columns, sitting directly under the flagship pair.
@@ -94,7 +94,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                   */}
                   {column.figure ? (
                     <p className="border-t border-line pb-24 pt-16 text-c2 tabular-nums text-ink">
-                      {dict(column.figure, locale)}
+                      {fill(dict(column.figure, locale), { n: column.figure.n ?? "" })}
                     </p>
                   ) : null}
                   <p>

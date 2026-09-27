@@ -234,7 +234,7 @@ export function NewsDetail({
                   )}
                 </span>
                 <span className="mt-4 block">
-                  {tr(article.author, "role", locale)}
+                  {tx(locale, article.author.role, { es: article.author.roleEs, pt: article.author.rolePt })}
                 </span>
                 {article.author.credential ? (
                   <span className="block text-ink-secondary">{article.author.credential}</span>

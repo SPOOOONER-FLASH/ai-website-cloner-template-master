@@ -5,7 +5,7 @@ import type { PointerEvent as ReactPointerEvent } from "react";
 import { X } from "lucide-react";
 import type { ImageRef } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { localised } from "@/lib/localised";
+import { dict } from "@/lib/i18n-client";
 import { cn } from "@/lib/utils";
 import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { MediaPlaceholder } from "./MediaPlaceholder";
@@ -49,7 +49,7 @@ export function ProductImageZoom({
     pointer hint on every product photograph, so one unreachable branch put English on
     three quarters of the Portuguese catalogue.
   */
-  const copy = localised(
+  const copy = dict(
     {
       en: {
         enlarge: `Enlarge ${label}`,
