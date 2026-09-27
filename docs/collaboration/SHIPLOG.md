@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 603 次提交
+最近 30 天 · 共 604 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 11:41 | 中立 | 产品摘要去模板化：100 条“manufactured by Canton Hyland”样板清零，24 条不锈钢执手按规格重写；加重复审计生成器 | `1b982b3976e` |
 | 11:33 | 中立 | 测试名美式拼写：labelled → labeled（main 上 us-spelling 测试转红） | `f090c7e4e97` |
 | 11:32 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `791a6bba434` |
 | 11:29 | HYDE | 工具页：欧式锁芯长度计算器（/euro-cylinder-calculator，三语 + 7 语种路由） | `e753119a9e7` |
