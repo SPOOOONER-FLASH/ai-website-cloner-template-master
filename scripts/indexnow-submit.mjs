@@ -86,7 +86,15 @@ if (!all.length) {
   and hrefs survive the normalisation, which is what a re-crawl would pick up.
 */
 function readable(html) {
-  return html
+  /*
+    The <head> and the <main>, not the chrome around them. A header or footer edit (the
+    2026-09-27 language-switcher fix) changes all ~7,700 pages at once, and re-announcing the
+    whole site for it is the batch submission IndexNow discounts. Search results are built
+    from the head and the main content; that is what a re-crawl would actually update.
+  */
+  const head = html.match(/<head\b[\s\S]*?<\/head>/)?.[0] ?? "";
+  const main = html.match(/<main\b[\s\S]*<\/main>/)?.[0] ?? html;
+  return (head + main)
     .replace(/<script\b[\s\S]*?<\/script>/g, "")
     .replace(/<link\b[^>]*_next\/[^>]*>/g, "")
     .replace(/\sclass="[^"]*"/g, "")

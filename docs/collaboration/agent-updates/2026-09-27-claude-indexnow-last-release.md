@@ -13,3 +13,9 @@
 **以后**：甲方说 purge 完，跑 `npm run seo:indexnow:release`。一次约 20 秒。
 
 **没碰**：RAYEN、视觉文件、out/。
+
+## 追加：只比 <head> + <main>
+
+3d9ab7aec9c 发布后第一次实跑：页头语言切换一改，7,692 页全算「内容变了」。改为只比 head 与 main（页头页脚不算）。
+这一版实际仍有 6,999 页变化：每个产品页（10 语种）新增了一句询价要点，是真改动。实推 6,329 条（在 sitemap 里的）→ 200 OK。
+线上核对：/fr/…/310… 有「Projets + applications」区块；计算器和锁体文章的新 title 已生效。
