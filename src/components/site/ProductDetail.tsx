@@ -61,7 +61,9 @@ const COPY = {
     doorTypes: "Suitable door types",
     onRequest: "Information available on request",
     referenceOnRequest: "Reference available on request",
-    quote: "Request a quote",
+        quote: "Request a quote",
+    quoteNeeds:
+      "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.",
     downloadCatalogue: "Download the export catalog (PDF)",
     images: "Product images",
     watch: "Watch it work",
@@ -111,7 +113,9 @@ const COPY = {
     doorTypes: "Tipos de puerta compatibles",
     onRequest: "Información disponible a pedido",
     referenceOnRequest: "Referencia disponible a pedido",
-    quote: "Solicitar cotización",
+        quote: "Solicitar cotización",
+    quoteNeeds:
+      "Para cotizar, envíenos el modelo y el acabado, la cantidad, el país de destino y un plano o una foto de lo que quiera cambiar.",
     downloadCatalogue: "Descargar el catálogo de exportación (PDF)",
     images: "Imágenes del producto",
     watch: "Véalo funcionar",
@@ -162,7 +166,9 @@ const COPY = {
     doorTypes: "Tipos de porta compatíveis",
     onRequest: "Informação disponível mediante pedido",
     referenceOnRequest: "Referência disponível mediante pedido",
-    quote: "Pedir orçamento",
+        quote: "Pedir orçamento",
+    quoteNeeds:
+      "Para cotar, envie o modelo e o acabamento, a quantidade, o país de destino e um desenho ou uma foto do que quiser alterar.",
     downloadCatalogue: "Baixar o catálogo de exportação (PDF)",
     images: "Imagens do produto",
     watch: "Veja funcionar",
@@ -596,10 +602,17 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                   <Button href={`${base}/contact/`} variant="secondary">
                     {t.ask}
                   </Button>
-                  <Button href={CATALOGUE_PDF} variant="secondary">
+                                    <Button href={CATALOGUE_PDF} variant="secondary">
                     {t.downloadCatalogue}
                   </Button>
                 </div>
+
+                {/*
+                  What a quotation needs, said before the form asks (2026-09-27, from the
+                  Product-Led SEO brief: state the delivery boundary). Four facts turn the
+                  first reply into a price instead of a list of questions.
+                */}
+                <p className="mt-16 max-w-[62ch] text-c2 text-ink-secondary">{t.quoteNeeds}</p>
 
                 {/*
                   A direct address at the point of highest intent. The two buttons above
