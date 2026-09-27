@@ -6,25 +6,18 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 611 次提交
+最近 30 天 · 共 604 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 11:55 | 中立 | 计算器组件文字改走 dict()，七语可翻译；重新生成 ui-keys.json | `69a7cf7c3ad` |
-| 11:53 | HYDE | /euro-cylinder-calculator title 只占 calculator，不再和 length-and-split 抢词；7 语种 title/description 补译 | `5823546b3c6` |
-| 11:51 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `ee5cea1282f` |
-| 11:50 | HYDE | 5 对文章 seoTitle 分流（文案会话建议）：6 篇 × 10 语种改主词，≥0.7 重叠 5 对 → 1 对 | `426f7d4063b` |
-| 11:46 | 中立 | 文章主词重叠审计生成器 + 五对 seoTitle 分工建议（交工程会话） | `af7803319c6` |
-| 11:45 | 中立 | 产品页：按钮下补“询价请提供什么”一行，三语 | `5634567999d` |
-| 11:42 | 中立 | 公司页：三语补“适合谁”一句（进口商/分销商/品牌，300–5,000 件起，样品费从首单扣回，引自 FAQ） | `d1a77eb75b3` |
-| 11:41 | 中立 | 产品摘要去模板化：100 条“manufactured by Canton Hyland”样板清零，24 条不锈钢执手按规格重写；加重复审计生成器 | `1b982b3976e` |
-| 11:33 | 中立 | 测试名美式拼写：labelled → labeled（main 上 us-spelling 测试转红） | `f090c7e4e97` |
-| 11:32 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `791a6bba434` |
-| 11:29 | HYDE | 工具页：欧式锁芯长度计算器（/euro-cylinder-calculator，三语 + 7 语种路由） | `e753119a9e7` |
-| 11:19 | 中立 | 文案任务表：加 QuickCreator 七篇文章转成的 6 项待做（12–17） | `4bde5e3f8ee` |
-| 11:04 | 中立 | 规格值：MM→mm、首字母小写改大写（64 条 / 109 值） | `9ab2b6caedc` |
+| 12:56 | 中立 | 规格覆盖报告：重新生成（origin 的规格值 MM→mm 归一后两个字段的不同取值数 30→28、85→84） | `60ba0e16694` |
+| 12:55 | 中立 | 产品标题生成器重跑：177 条产品名/摘要改后七语种 497 条 seoTitle/seoDescription 重新生成（titles:check） | `cb8a7a0ded5` |
+| 12:54 | 中立 | 合 origin/main 后七语种补译：计算器页 41 键、177 条改过英文的产品、6 篇文章 seoTitle、8 条无主图产品规格哈希 | `92d0975e6e8` |
+| 12:18 | HYDE | Merge remote-tracking branch 'origin/main' | `6f82b5483f3` |
+| 12:11 | 中立 | 七语种页面英文残留：文章问答读旁挂译文、术语表/配置器释义走 tx、附件与作者字段进提取器 | `7faa51d331f` |
+| 11:57 | 中立 | 七语种页面英文残留第二轮：服务端字典注册、包装函数与函数值文案可翻、67 个无主图产品、数据文件字段进提取器 | `dcc67ff59a2` |
 
 ## 2026-09-26
 
