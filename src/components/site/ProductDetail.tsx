@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { getRelatedProducts, publishedProducts } from "@/data/products";
+import { getProductByModel, getRelatedProducts, publishedProducts } from "@/data/products";
+import { projects } from "@/data/projects";
 import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
 import { productFaqHeading, productFaqItems } from "@/lib/product-faq";
@@ -82,6 +83,8 @@ const COPY = {
     scope:
       "Certification scope must be checked against the named model before specification.",
     related: "Related products",
+    applications: "Projects + Applications",
+    representative: "Representative application",
     moreInSeries: "More in the {series} series",
     moreInCategory: "More in {category}",
     orderListing: "Order {model} on Alibaba",
@@ -130,6 +133,8 @@ const COPY = {
     scope:
       "Antes de especificar, verifique que el alcance del certificado incluya el modelo indicado.",
     related: "Productos relacionados",
+    applications: "Proyectos + Aplicaciones",
+    representative: "Aplicación representativa",
     moreInSeries: "Más modelos de la serie {series}",
     moreInCategory: "Más modelos en {category}",
     orderListing: "Comprar {model} en Alibaba",
@@ -179,6 +184,8 @@ const COPY = {
     scope:
       "Antes de especificar, verifique que o âmbito do certificado inclui o modelo indicado.",
     related: "Produtos relacionados",
+    applications: "Obras + Aplicações",
+    representative: "Aplicação representativa",
     moreInSeries: "Mais modelos da série {series}",
     moreInCategory: "Mais modelos em {category}",
     orderListing: "Comprar {model} no Alibaba",
@@ -314,6 +321,19 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
     catalogue: publishedProducts,
     categoryName,
   });
+  /*
+    The application packages that schedule this model — the reverse of the product list on
+    each project page, resolved the same way (getProductByModel), so the two directions can
+    never disagree. Client 2026-09-27: a buyer who reads a spec table also wants to see where
+    the part goes, and a project page that links products needs products that link back.
+    Every entry is a representative application, and the label says so on each one.
+  */
+  const usedIn = projects.filter((project) =>
+    project.productModels.some((model) => {
+      const match = getProductByModel(model);
+      return match?.slug === product.slug && match.categoryPath[0] === product.categoryPath[0];
+    }),
+  );
   const quoteParams = new URLSearchParams({ product: product.name });
 
   if (!product.modelTbc) quoteParams.set("model", product.model);
@@ -874,6 +894,38 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
           </div>
         </div>
       </section>
+
+      {/* 6b — Application packages that use this model. Omitted when there are none. */}
+      {usedIn.length ? (
+        <section className="layout mt-144 lg:mt-288" aria-labelledby="applications-heading">
+          <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+            <div className="col-span-full xl:col-span-8">
+              <h2 id="applications-heading" className="text-h3 text-ink">
+                {t.applications}
+              </h2>
+            </div>
+            <div className="col-span-full xl:col-span-16 xl:col-start-9">
+              <ul className="border-t border-line">
+                {usedIn.map((project) => (
+                  <li key={project.slug} className="border-b border-line py-16">
+                    <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
+                      {t.representative}
+                    </p>
+                    <div className="mt-8">
+                      <ArrowLink href={`${base}/projects/${project.slug}/`}>
+                        {tr(project, "name", locale)}
+                      </ArrowLink>
+                    </div>
+                    <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">
+                      {tr(project, "summary", locale)}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {/* 7 — Related products.
           Omitted entirely when the product has no siblings — an empty-state sentence here
