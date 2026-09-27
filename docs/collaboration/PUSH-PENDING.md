@@ -138,3 +138,19 @@
 - `e753119a9e7` 工具页：欧式锁芯长度计算器（/euro-cylinder-calculator，三语 + 7 语种路由）
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/27 13:05:53 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `9f0f3612165` shiplog: 更新上线存档
+- `60ba0e16694` 规格覆盖报告：重新生成（origin 的规格值 MM→mm 归一后两个字段的不同取值数 30→28、85→84）
+- `cb8a7a0ded5` 产品标题生成器重跑：177 条产品名/摘要改后七语种 497 条 seoTitle/seoDescription 重新生成（titles:check）
+- `92d0975e6e8` 合 origin/main 后七语种补译：计算器页 41 键、177 条改过英文的产品、6 篇文章 seoTitle、8 条无主图产品规格哈希
+- `6f82b5483f3` Merge remote-tracking branch 'origin/main'
+- `7faa51d331f` 七语种页面英文残留：文章问答读旁挂译文、术语表/配置器释义走 tx、附件与作者字段进提取器
+- `dcc67ff59a2` 七语种页面英文残留第二轮：服务端字典注册、包装函数与函数值文案可翻、67 个无主图产品、数据文件字段进提取器
+
+下一次 `npm run ship` 成功时这些会一起推上去。
