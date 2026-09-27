@@ -88,6 +88,8 @@ const SPANISH_MIRROR_PREFIXES = [
   "/guides",
   "/documents",
   "/glossary",
+  // The euro cylinder calculator, 2026-09-27: a tool page, same buyer in every language.
+  "/euro-cylinder-calculator",
   // OEM / private-label services, 2026-09-24: Spanish copy written by the copy session.
   "/services",
 ];
@@ -199,6 +201,8 @@ const PORTUGUESE_MIRROR_PREFIXES = [
   "/finishes",
   "/model-lookup",
   "/glossary",
+  // The euro cylinder calculator, 2026-09-27: a tool page, same buyer in every language.
+  "/euro-cylinder-calculator",
   "/documents",
   "/guides",
   // OEM / private-label services, 2026-09-24: Portuguese copy written by the copy session.

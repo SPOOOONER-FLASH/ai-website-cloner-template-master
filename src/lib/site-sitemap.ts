@@ -125,6 +125,9 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     // The model-number lookup. Long-tail by nature — every row is a number somebody is
     // searching for and currently finding nothing for.
     ...entry("/model-lookup", PRIORITY.support),
+    // The euro cylinder calculator, 2026-09-27. A tool page: it ranks for the sizing
+    // question a buyer asks before looking for a supplier.
+    ...entry("/euro-cylinder-calculator", PRIORITY.support),
     // The specification glossary. Definitional content is the most-cited kind we publish.
     ...entry("/glossary", PRIORITY.support),
     /*

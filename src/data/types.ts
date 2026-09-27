@@ -492,6 +492,12 @@ export interface NewsArticle {
     noteEs?: string;
   notePt?: string;
   };
+  /**
+   * A tool page that performs what the article explains, e.g. the euro cylinder calculator
+   * beside the cylinder sizing guides. `href` is the English path; the locale prefix is added
+   * at render. Bodies carry no markup, so this is how an article links to its tool.
+   */
+  tool?: { href: string; title: string; titleEs?: string; titlePt?: string };
   /** One or two sentences for the listing card and the meta description fallback. */
   summary: string;
   summaryEs?: string;
