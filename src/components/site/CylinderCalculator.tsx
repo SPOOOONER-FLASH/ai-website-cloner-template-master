@@ -8,6 +8,7 @@ import {
   sizeCylinder,
   validCylinderInput,
 } from "@/lib/cylinder-length";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * Euro cylinder length calculator. The arithmetic lives in src/lib/cylinder-length.ts and
@@ -31,17 +32,20 @@ type Copy = {
   proud: string;
   total: string;
   order: string;
-  orderAs: (total: string, outside: string, inside: string) => string;
+  /** Placeholders: {total} {outside} {inside}. */
+  orderAs: string;
   noModel: string;
-  proudWarning: (side: string, mm: string) => string;
-  proudBoth: (mm: string) => string;
+  /** Placeholders: {side} {mm} {max}. */
+  proudWarning: string;
+  /** Placeholders: {mm} {max}. */
+  proudBoth: string;
   asymmetric: string;
   splitNote: string;
   invalid: string;
   published: string;
 };
 
-const COPY: Record<"en" | "es" | "pt", Copy> = {
+const COPY: { en: Copy; es: Copy; pt: Copy } = {
   en: {
     door: "Door thickness at the lock edge (mm)",
     outsideTrim: "Escutcheon or rose depth, outside (mm)",
@@ -57,12 +61,12 @@ const COPY: Record<"en" | "es" | "pt", Copy> = {
     proud: "Stands proud by",
     total: "Arithmetic total",
     order: "Order from our range",
-    orderAs: (t, o, i) => `${t}mm overall. Halves needed: ${o} outside, ${i} inside.`,
-    proudBoth: (mm) =>
-      `Both halves stand up to ${mm}mm proud, more than the ${MAX_PROUD_MM}mm we treat as the limit. On a door this thin there is no shorter half to order; fit a raised escutcheon or security rose on each side to take up the difference.`,
+    orderAs: "{total}mm overall. Halves needed: {outside} outside, {inside} inside.",
+    proudBoth:
+      "Both halves stand up to {mm}mm proud, more than the {max}mm we treat as the limit. On a door this thin there is no shorter half to order; fit a raised escutcheon or security rose on each side to take up the difference.",
     noModel: "Longer than the 90mm our catalog publishes. Send the three measurements and we will say what can be supplied.",
-    proudWarning: (side, mm) =>
-      `The ${side.toLowerCase()} half stands ${mm}mm proud, more than the ${MAX_PROUD_MM}mm we treat as the limit. Use a raised escutcheon or security rose on that side to take up the difference; do not order a shorter half, because there is none that still reaches.`,
+    proudWarning:
+      "The {side} half stands {mm}mm proud, more than the {max}mm we treat as the limit. Use a raised escutcheon or security rose on that side to take up the difference; do not order a shorter half, because there is none that still reaches.",
     asymmetric: "The two halves differ, so the split has a direction. State it outside first, in words, when you order.",
     splitNote: "Our catalog publishes overall lengths, not the split of each model. Ask for the split in writing and we confirm it before anything ships.",
     invalid: "Enter a door thickness above zero, trim depths of 0 to 50mm, and a center that sits inside the door.",
@@ -83,12 +87,12 @@ const COPY: Record<"en" | "es" | "pt", Copy> = {
     proud: "Sobresale",
     total: "Total aritmético",
     order: "Pedir de nuestra gama",
-    orderAs: (t, o, i) => `${t} mm en total. Mitades necesarias: ${o} exterior, ${i} interior.`,
-    proudBoth: (mm) =>
-      `Las dos mitades sobresalen hasta ${mm} mm, más de los ${MAX_PROUD_MM} mm que tomamos como límite. En una puerta tan delgada no existe una mitad más corta; monte un escudo elevado o una roseta de seguridad en cada lado para absorber la diferencia.`,
+    orderAs: "{total} mm en total. Mitades necesarias: {outside} exterior, {inside} interior.",
+    proudBoth:
+      "Las dos mitades sobresalen hasta {mm} mm, más de los {max} mm que tomamos como límite. En una puerta tan delgada no existe una mitad más corta; monte un escudo elevado o una roseta de seguridad en cada lado para absorber la diferencia.",
     noModel: "Más largo que los 90 mm que publica nuestro catálogo. Envíenos las tres medidas y le diremos qué se puede suministrar.",
-    proudWarning: (side, mm) =>
-      `La mitad ${side.toLowerCase()} sobresale ${mm} mm, más de los ${MAX_PROUD_MM} mm que tomamos como límite. Use un escudo elevado o una roseta de seguridad en ese lado para absorber la diferencia; no pida una mitad más corta, porque no existe ninguna que siga llegando.`,
+    proudWarning:
+      "La mitad {side} sobresale {mm} mm, más de los {max} mm que tomamos como límite. Use un escudo elevado o una roseta de seguridad en ese lado para absorber la diferencia; no pida una mitad más corta, porque no existe ninguna que siga llegando.",
     asymmetric: "Las dos mitades son distintas, así que la división tiene sentido. Indíquela al pedir, primero el exterior y por escrito.",
     splitNote: "Nuestro catálogo publica longitudes totales, no la división de cada modelo. Pida la división por escrito y la confirmamos antes de enviar nada.",
     invalid: "Introduzca un espesor de puerta mayor que cero, profundidades de 0 a 50 mm y un centro que quede dentro de la puerta.",
@@ -109,12 +113,12 @@ const COPY: Record<"en" | "es" | "pt", Copy> = {
     proud: "Sobressai",
     total: "Total aritmético",
     order: "Pedir da nossa linha",
-    orderAs: (t, o, i) => `${t} mm no total. Metades necessárias: ${o} externa, ${i} interna.`,
-    proudBoth: (mm) =>
-      `As duas metades sobressaem até ${mm} mm, mais que os ${MAX_PROUD_MM} mm que tratamos como limite. Numa porta tão fina não existe metade mais curta; use um espelho elevado ou uma roseta de segurança em cada lado para absorver a diferença.`,
+    orderAs: "{total} mm no total. Metades necessárias: {outside} externa, {inside} interna.",
+    proudBoth:
+      "As duas metades sobressaem até {mm} mm, mais que os {max} mm que tratamos como limite. Numa porta tão fina não existe metade mais curta; use um espelho elevado ou uma roseta de segurança em cada lado para absorver a diferença.",
     noModel: "Mais longo que os 90 mm que nosso catálogo publica. Envie as três medidas e diremos o que pode ser fornecido.",
-    proudWarning: (side, mm) =>
-      `A metade ${side.toLowerCase()} sobressai ${mm} mm, mais que os ${MAX_PROUD_MM} mm que tratamos como limite. Use um espelho elevado ou uma roseta de segurança desse lado para absorver a diferença; não peça uma metade mais curta, porque não existe nenhuma que ainda alcance.`,
+    proudWarning:
+      "A metade {side} sobressai {mm} mm, mais que os {max} mm que tratamos como limite. Use um espelho elevado ou uma roseta de segurança desse lado para absorver a diferença; não peça uma metade mais curta, porque não existe nenhuma que ainda alcance.",
     asymmetric: "As duas metades são diferentes, então a divisão tem direção. Informe no pedido, primeiro o lado externo, por escrito.",
     splitNote: "Nosso catálogo publica comprimentos totais, não a divisão de cada modelo. Peça a divisão por escrito e confirmamos antes de qualquer envio.",
     invalid: "Informe uma espessura de porta maior que zero, profundidades de 0 a 50 mm e um centro dentro da porta.",
@@ -125,10 +129,13 @@ const COPY: Record<"en" | "es" | "pt", Copy> = {
 const FIELD_CLASS =
   "field min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink";
 
+const fill = (template: string, vars: Record<string, string>) =>
+  template.replace(/\{(\w+)\}/g, (m, k: string) => vars[k] ?? m);
+
 const num = (s: string) => (s.trim() === "" ? Number.NaN : Number(s.replace(",", ".")));
 
 export function CylinderCalculator({ locale }: { locale: Locale }) {
-  const t = COPY[locale === "es" || locale === "pt" ? locale : "en"];
+  const t = dict(COPY, locale);
   const [door, setDoor] = useState("60");
   const [outTrim, setOutTrim] = useState("4");
   const [inTrim, setInTrim] = useState("4");
@@ -213,19 +220,19 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
             <p className="mt-32 text-c2 uppercase tracking-[0.08em] text-ink-secondary">{t.order}</p>
             <p className="mt-8 text-h3 text-ink">
               {r.publishedMm !== null
-                ? t.orderAs(fmt(r.publishedMm), fmt(r.outside.halfMm), fmt(r.inside.halfMm))
+                ? fill(t.orderAs, { total: fmt(r.publishedMm), outside: fmt(r.outside.halfMm), inside: fmt(r.inside.halfMm) })
                 : t.noModel}
             </p>
             <ul className="mt-24 space-y-12 text-c1 text-ink-secondary">
               {r.outside.proudMm > MAX_PROUD_MM && r.inside.proudMm > MAX_PROUD_MM ? (
-                <li>{t.proudBoth(fmt(Math.max(r.outside.proudMm, r.inside.proudMm)))}</li>
+                <li>{fill(t.proudBoth, { mm: fmt(Math.max(r.outside.proudMm, r.inside.proudMm)), max: String(MAX_PROUD_MM) })}</li>
               ) : (
                 ([
                   [t.outside, r.outside.proudMm],
                   [t.inside, r.inside.proudMm],
                 ] as const)
                   .filter(([, mm]) => mm > MAX_PROUD_MM)
-                  .map(([side, mm]) => <li key={side}>{t.proudWarning(side, fmt(mm))}</li>)
+                  .map(([side, mm]) => <li key={side}>{fill(t.proudWarning, { side: side.toLowerCase(), mm: fmt(mm), max: String(MAX_PROUD_MM) })}</li>)
               )}
               {r.asymmetric ? <li>{t.asymmetric}</li> : null}
               <li>{t.splitNote}</li>
