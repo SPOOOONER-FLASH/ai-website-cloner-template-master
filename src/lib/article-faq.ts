@@ -58,7 +58,11 @@ export function articleFaqHeading(locale: Locale): string {
 export function articleFaqItems(article: NewsArticle, locale: Locale): ArticleFaqItem[] {
   const faq = article.faq;
   if (!faq) return [];
-  return dict(faq, locale) ?? faq.en;
+  /* Overlay locales: the sidecar's pairs (content/i18n/<code>/{news,guides}.json), else English.
+     Until 2026-09-27 this went through dict(), which cannot see the sidecar, so every article
+     printed its FAQ in English on all seven locales (≈10 lines per article, the largest single
+     bucket of the rendered-English audit). */
+  return articleFaqItemsFor(article, locale) ?? dict(faq, locale) ?? faq.en;
 }
 
 /**

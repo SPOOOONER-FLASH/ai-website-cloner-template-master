@@ -160,12 +160,14 @@ for (const file of files(ROOT)) {
 for (const folder of ["news", "guides"]) {
   for (const f of readdirSync(`content/${folder}`)) {
     if (!f.endsWith(".json")) continue;
-    const role = JSON.parse(readFileSync(`content/${folder}/${f}`, "utf8")).author?.role;
-    if (worth(role)) {
+    const article = JSON.parse(readFileSync(`content/${folder}/${f}`, "utf8"));
+    /* author.role, attachment.title/note: NewsDetail renders each through tx(locale, en, { es, pt }). */
+    for (const text of [article.author?.role, article.attachment?.title, article.attachment?.note]) {
+      if (!worth(text)) continue;
       const where = `content/${folder}/${f}`;
-      const list = keys.get(role) ?? [];
+      const list = keys.get(text) ?? [];
       if (!list.includes(where)) list.push(where);
-      keys.set(role, list);
+      keys.set(text, list);
     }
   }
 }

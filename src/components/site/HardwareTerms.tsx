@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { termsByGroup } from "@/lib/hardware-term-usage";
-import { dict, fill, t } from "@/lib/i18n";
+import { dict, fill, t, tx } from "@/lib/i18n";
 
 /** "Backset" → "backset" inside a sentence; "UL listing" and "BHMA code" keep their capitals. */
 const soft = (t: string) => (/^\p{Lu}\p{Ll}/u.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
@@ -75,8 +75,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
     worse on this page than reading as foreign: the whole argument here is that we are
     precise about words.
   */
-  const pick = (en: string, es: string, pt: string) =>
-    locale === "es" ? es : locale === "pt" ? pt : en;
+  const pick = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
 
   return (
     <>

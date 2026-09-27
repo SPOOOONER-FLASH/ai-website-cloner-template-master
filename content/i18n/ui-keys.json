@@ -127,7 +127,7 @@
     "src/data/company.ts:48"
   ],
   "307 and 311": [
-    "src/lib/flagship-tooling.ts:106"
+    "src/lib/flagship-tooling.ts:107"
   ],
   "307 with lock case 072 and handle 015. The 307 specification also lists handle 9080E. Cylinder length is selected for the door thickness.": [
     "src/components/site/ProductStudies.tsx:52"
@@ -332,7 +332,7 @@
   "Application": [
     "src/components/site/InquiryForm.tsx:31",
     "src/components/site/products-architecture.ts:132",
-    "src/lib/flagship-tooling.ts:54"
+    "src/lib/flagship-tooling.ts:55"
   ],
   "Application + hardware": [
     "src/components/site/ProjectDetail.tsx:19"
@@ -412,7 +412,7 @@
     "src/components/locale-pages/GlossaryPage.tsx:16"
   ],
   "Bar length": [
-    "src/lib/flagship-tooling.ts:46"
+    "src/lib/flagship-tooling.ts:47"
   ],
   "bathroom accessory": [
     "src/data/category-sourcing.ts:38"
@@ -553,7 +553,7 @@
     "src/data/hardware-terms.ts:93"
   ],
   "Center distances": [
-    "src/lib/flagship-tooling.ts:49"
+    "src/lib/flagship-tooling.ts:50"
   ],
   "Certificate register": [
     "src/components/locale-pages/CertificationsPage.tsx:62"
@@ -1265,7 +1265,7 @@
     "src/data/capability.ts:118"
   ],
   "Fire rating": [
-    "src/lib/flagship-tooling.ts:45"
+    "src/lib/flagship-tooling.ts:46"
   ],
   "Fitting a standard case into a narrow stile removes material the door was relying on, and the leaf sags within a season. The sag is blamed on the hinges and caused by the lock pocket.": [
     "src/data/hardware-terms.ts:551"
@@ -1667,6 +1667,9 @@
   ],
   "Manufacturing, and where inspection visits are received.": [
     "src/components/locale-pages/ContactPage.tsx:94"
+  ],
+  "Master key plan, input sheet": [
+    "content/news/master-key-systems-how-many-levels-you-need.json"
   ],
   "Material": [
     "src/components/site/ProductDetail.tsx:58"
@@ -2456,7 +2459,7 @@
     "src/data/home.ts:110"
   ],
   "See the full panic exit range": [
-    "src/lib/flagship-tooling.ts:109"
+    "src/lib/flagship-tooling.ts:110"
   ],
   "See the models": [
     "src/components/site/HardwareGlossary.tsx:39"
@@ -2557,7 +2560,7 @@
     "src/components/site/SiteHeader.tsx:64"
   ],
   "Set includes": [
-    "src/lib/flagship-tooling.ts:53"
+    "src/lib/flagship-tooling.ts:54"
   ],
   "Share the Incoterm and destination port when you know them.": [
     "src/components/site/ServicesView.tsx:93"
@@ -2938,6 +2941,9 @@
   "Three exterior studies based on published dimensions. These are partial models; each file’s scope is described before downloading.": [
     "src/components/site/ProductModel.tsx:15"
   ],
+  "Three tabs: a door schedule with catalog dropdowns, a free-format tab if you already keep your own schedule, and a worked example of a three-level building. Fill in what you know and leave the rest.": [
+    "content/news/master-key-systems-how-many-levels-you-need.json"
+  ],
   "Throws several bolts up and down the leaf from one turn, pulling a tall door tight.": [
     "src/lib/configurator.ts:458"
   ],
@@ -2948,7 +2954,7 @@
     "src/data/hardware-terms.ts:186"
   ],
   "Tooled here": [
-    "src/lib/flagship-tooling.ts:105"
+    "src/lib/flagship-tooling.ts:106"
   ],
   "Tooling": [
     "src/data/capability.ts:74"
@@ -2990,7 +2996,7 @@
     "src/data/feature-columns.ts:174"
   ],
   "Two panic exit devices built on moulds we cut ourselves. That is the difference a specifier feels rather than reads: the bar length, the centers and the fire rating are ours to hold to, and a change to any of them is a production decision made by people who can walk to the press.": [
-    "src/lib/flagship-tooling.ts:108"
+    "src/lib/flagship-tooling.ts:109"
   ],
   "Two records described one product. The one carrying the complete specification and the photographs survived; the other now redirects to it.": [
     "src/components/site/ModelLookup.tsx:48"

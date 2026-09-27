@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getTopLevelCategories } from "@/data/categories";
 import { OPTION_NOTES, OPTION_NOTES_ES, OPTION_NOTES_PT } from "@/lib/configurator";
 import type { Locale } from "@/data/site";
-import { dict, t as tr } from "@/lib/i18n";
+import { dict, t as tr, tx } from "@/lib/i18n";
 
 /**
  * The trade definitions, rendered on the server.
@@ -55,12 +55,14 @@ const COPY = {
 export function HardwareGlossary({ locale = "en" }: { locale?: Locale }) {
   const t = dict(COPY, locale);
   /* Portuguese notes where they exist, English where they do not — never Spanish. */
-  const notes =
+  const notes: Record<string, string | undefined> =
     locale === "es"
       ? OPTION_NOTES_ES
       : locale === "pt"
         ? { ...OPTION_NOTES, ...OPTION_NOTES_PT }
-        : OPTION_NOTES;
+        : locale === "en"
+          ? OPTION_NOTES
+          : Object.fromEntries(Object.entries(OPTION_NOTES).map(([k, v]) => [k, tx(locale, v)]));
   const base = locale === "en" ? "" : `/${locale}`;
 
   /*

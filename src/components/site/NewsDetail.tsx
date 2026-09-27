@@ -116,7 +116,7 @@ export function NewsDetail({
      in src/lib/localised.ts and not an oversight. */
   /* English, never Spanish, for the fields that have no Portuguese yet. */
   const pickText = (en?: string, esText?: string, ptText?: string) =>
-    (locale === "es" ? esText : locale === "pt" ? ptText : undefined) ?? en;
+    en === undefined ? undefined : tx(locale, en, { es: esText, pt: ptText });
   /*
     `tr` (i18n `t`) reads the `…Es` / `…Pt` fields AND the overlay sidecar
     (content/i18n/<code>/{news,guides}.json). Until 2026-09-26 this read a `{ en, es, pt }`

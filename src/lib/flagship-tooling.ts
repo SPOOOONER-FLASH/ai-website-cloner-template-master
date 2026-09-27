@@ -1,5 +1,6 @@
 import { getProductByModel } from "../data/products.ts";
 import type { Locale } from "../data/site.ts";
+import { tx } from "./i18n.ts";
 
 /**
  * The two panic exit devices the factory tooled itself — 307 and 311.
@@ -81,7 +82,7 @@ export function flagshipTooling(locale: Locale = "en"): FlagshipCard[] | null {
       const spec = (product.specs ?? []).find((s) => surfaced.labels.includes(s.label));
       if (!spec?.value) continue;
       rows.push({
-        label: locale === "es" ? surfaced.es : locale === "pt" ? surfaced.pt : surfaced.en,
+        label: tx(locale, surfaced.en, { es: surfaced.es, pt: surfaced.pt }),
         /* Some rows carry a trailing clause the client wrote; keep it, trim the padding. */
         value: String(spec.value).trim(),
       });

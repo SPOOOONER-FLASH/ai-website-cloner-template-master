@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Project } from "@/data/types";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import type { Locale } from "@/data/site";
-import { t } from "@/lib/i18n";
+import { t, tx } from "@/lib/i18n";
 
 export function ProjectCard({
   project,
@@ -17,8 +17,7 @@ export function ProjectCard({
     the Portuguese listing handed the reader to the English tree — and from there the whole
     visit is English. See src/data/locale-route-parity.test.ts.
   */
-  const pick = (en: string, es?: string, pt?: string) =>
-    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
+  const pick = (en: string, es?: string, pt?: string) => tx(locale, en, { es, pt });
 
   const prefix = locale === "en" ? "" : `/${locale}`;
   const name = t(project, "name", locale);
