@@ -24,7 +24,7 @@ test("every product a project names is a published product page", () => {
   }
 });
 
-test("the product page renders its application packages, labelled as representative", () => {
+test("the product page renders its application packages, labeled as representative", () => {
   const page = readFileSync("src/components/site/ProductDetail.tsx", "utf8");
   assert.match(page, /project\.productModels\.some/);
   assert.match(page, /getProductByModel\(model\)/);

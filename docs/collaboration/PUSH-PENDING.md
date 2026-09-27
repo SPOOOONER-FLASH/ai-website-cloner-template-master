@@ -127,3 +127,14 @@
 - `73de868825d` 门叶数量统一为 de dos hojas / de duas folhas（含七处复合值）；葡语补上大小写折叠
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/27 11:32:00 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in package.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `fcdd3036d14` shiplog: 更新上线存档
+- `e753119a9e7` 工具页：欧式锁芯长度计算器（/euro-cylinder-calculator，三语 + 7 语种路由）
+
+下一次 `npm run ship` 成功时这些会一起推上去。
