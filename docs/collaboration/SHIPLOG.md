@@ -12,10 +12,10 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 11:28 | 中立 | 目标清单：#66 Zuperior 回信草稿已交；#69 磁性门锁舌品类待工厂资料 | `0122e2780d2` |
-| 11:28 | 中立 | 产品页加「Projects + Applications」：链回用到该型号的应用案例（18 页 × 10 语种） | `aab9044b098` |
-| 11:20 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `777e0435a57` |
-| 11:19 | 中立 | IndexNow --last-release：只推内容真变的页，未 purge 则拒绝；09-27 实推 3,954 条 | `5c2f9546574` |
+| 11:33 | 中立 | 测试名美式拼写：labelled → labeled（main 上 us-spelling 测试转红） | `f090c7e4e97` |
+| 11:32 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `791a6bba434` |
+| 11:29 | HYDE | 工具页：欧式锁芯长度计算器（/euro-cylinder-calculator，三语 + 7 语种路由） | `e753119a9e7` |
+| 11:19 | 中立 | 文案任务表：加 QuickCreator 七篇文章转成的 6 项待做（12–17） | `4bde5e3f8ee` |
 | 11:04 | 中立 | 规格值：MM→mm、首字母小写改大写（64 条 / 109 值） | `9ab2b6caedc` |
 
 ## 2026-09-26
