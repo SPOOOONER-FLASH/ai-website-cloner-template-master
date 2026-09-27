@@ -67,6 +67,9 @@ function run(cmd, cmdArgs, cwd, { capture = false, timeout } = {}) {
     encoding: "utf8",
     shell: process.platform === "win32",
     timeout,
+    /* The default 1 MB cut the staged-file list of the 2026-09-27 release (46,188 paths) mid-line;
+       the truncated last entry "o" read as a file outside out/ and aborted the release. */
+    maxBuffer: 256 * 1024 * 1024,
   });
   if (r.error?.code === "ETIMEDOUT") return { status: 124, out: "超时" };
   return { status: r.status ?? 1, out: `${r.stdout ?? ""}${r.stderr ?? ""}` };
