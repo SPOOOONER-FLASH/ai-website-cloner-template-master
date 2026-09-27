@@ -76,7 +76,7 @@
 | 10 | 雷茵“品质与认证”栏目的改写建议已写进 section-voice.md 第五节，交给雷茵会话去改；本会话不改雷茵 | 已转交 |
 | 11 | 四个参考页的 H1 前面加买家会搜的词（/finishes、/glossary、/model-lookup、/documents，三语），工程会话 09-24 提出 | 09-24 完成：搜索词在前，原句保留（Finish codes / Códigos de acabado / Códigos de acabamento 等）；葡语 model-lookup 顺带改成巴西说法 |
 | 12 | 工具页（QuickCreator《工具页》《Product-Led SEO》）：欧式锁芯长度计算器，三语。算法只用 door-thickness-to-cylinder-length 指南已发布的规则（半长 =门厚÷2+饰板厚+余量，向上取 5mm 阶梯，最小 27.5），结果对应我们实际发布的 9 个总长；不给单个型号的分段（目录里没有） | 09-27 完成：/euro-cylinder-calculator 三语（另 7 个语种按路由对等规则同时建好，页面文字先显示英文，等多语会话翻译），算法测试对上指南查表 8 行、9 个总长对上目录；两篇锁芯指南文末加工具入口，页脚加链接 |
-| 13 | 模板重复审计（《8 月 Spam Update》《程序化 SEO》）：写生成器 `scripts/audit-duplicate-copy.mjs`，统计 HYDE 产品 summary/description 完全相同或只差型号的组；把最大的几组改成按规格行区分的文字 | 待做 |
+| 13 | 模板重复审计（《8 月 Spam Update》《程序化 SEO》）：写生成器 `scripts/audit-duplicate-copy.mjs`，统计 HYDE 产品 summary/description 完全相同或只差型号的组；把最大的几组改成按规格行区分的文字 | 09-27 完成：生成器 `scripts/audit-duplicate-copy.mjs`（报告 `docs/copy/duplicate-copy-audit.md`）。“型号+名称 manufactured by Canton Hyland.” 这组 100 条清零：33 条英文补上西葡已有的图纸事实，48 条按订货代码表里已确认的表面/功能代码三语重写（KT 等未确认代码不用，锁芯“实心黄铜”无依据删掉），19 条无从解码的改成如实的“规格下单前与工厂确认”；另 24 条不锈钢执手按规格行加门厚、执手长和底座直径，西语“de acero inoxidable de acero inoxidable”重复一并改掉。112 条没有任何规格行，是否暂不收录由甲方和工程会话定 |
 | 14 | 公司页实体（《About Us》）：首句说清是谁（小榄的门五金 / ironmongery 制造商、OEM）、地点和职能分开写、每条主张旁边放证据；德国那一格仍等甲方（见下方） | 待做 |
 | 15 | 产品页 CTA 按采购阶段 + 交付边界（《Product-Led SEO》）：核对产品页模板现有按钮文案，补“询价时请提供什么”一行，三语；只动文案，不动样式 | 待做 |
 | 16 | 关键词分工（《关键词扩展》）：45 篇指南各定一个主搜索词，写生成器列出主词重叠的指南对，重叠的对改标题或互链分工 | 待做 |
