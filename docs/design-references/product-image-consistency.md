@@ -12,132 +12,305 @@
 | Scenes (not scored) | 0 | 580 |
 | Median fill | 85% | 90% |
 | Fill, 10th–90th percentile | 74%–92% | 75%–96% |
+| On the common horizon (18% ± 6%) | 276 of 521 | 527 of 1331 |
 | Median baseline (space under product) | 18% | 13% |
 | Baseline, 10th–90th percentile | 6%–27% | 3%–25% |
 | Old corner logo (excluded; HYDE watermark covers it on site) | 142 | 473 |
 | Missing file | 0 | 0 |
 
-Hero flags: **93** images — small 2, cropped 4, off-centre 22, off-baseline 48, off-scale 22, grey-field 4, scene 0, empty 0.
+Hero flags: **265** images — small 2, cropped 4, off-centre 22, off-baseline 245, off-scale 22, grey-field 4, scene 0, empty 0.
 
-Thresholds: small < 60% fill · off-scale > 15% from the category median · off-centre > 8% horizontally · off-baseline > 10% from the category median · cropped = subject within 1% of an edge · grey-field = field luminance < 240.
+Thresholds: small < 60% fill · off-scale > 15% from the category median · off-centre > 8% horizontally · off-baseline = more than 6% off the common horizon at 18% above the bottom edge · cropped = subject within 1% of an edge · grey-field = field luminance < 240.
 
 ## By category (hero plates)
 
 | Category | Plates | Median fill | Fill range (10–90%) | Median baseline | Baseline range (10–90%) | Flagged |
 |---|---|---|---|---|---|---|
-| bathroom-accessories | 42 | 78% | 69%–85% | 20% | 12%–32% | 8 |
-| brass-steel-hinges | 29 | 77% | 70%–91% | 12% | 7%–16% | 8 |
-| care-grab-bars | 8 | 92% | 74%–95% | 25% | 4%–40% | 3 |
+| bathroom-accessories | 42 | 78% | 69%–85% | 20% | 12%–32% | 19 |
+| brass-steel-hinges | 29 | 77% | 70%–91% | 12% | 7%–16% | 18 |
+| care-grab-bars | 8 | 92% | 74%–95% | 25% | 4%–40% | 7 |
 | deadbolts | 11 | 78% | 68%–82% | 20% | 17%–21% | 1 |
-| door-closers | 7 | 80% | 75%–85% | 11% | 9%–22% | 1 |
-| glass-door-accessories | 23 | 86% | 83%–89% | 9% | 6%–19% | 2 |
-| grip-handle-sets | 14 | 89% | 77%–95% | 5% | 2%–9% | 8 |
-| hardware-accessories | 69 | 81% | 73%–87% | 18% | 8%–25% | 10 |
-| knob-locks | 59 | 85% | 79%–89% | 21% | 16%–24% | 2 |
-| lever-handles | 48 | 88% | 80%–92% | 23% | 14%–28% | 4 |
-| lock-cases | 51 | 90% | 81%–94% | 5% | 3%–10% | 11 |
-| lock-cylinders | 45 | 80% | 67%–92% | 21% | 12%–23% | 9 |
-| night-latches-rim-locks | 25 | 89% | 81%–93% | 29% | 21%–31% | 4 |
-| panic-exit-devices | 44 | 89% | 82%–94% | 14% | 5%–26% | 15 |
-| sliding-hook-locks | 3 | 89% | 85%–91% | 9% | 3%–9% | 0 |
-| stainless-steel-handles | 43 | 77% | 71%–89% | 17% | 9%–19% | 7 |
+| door-closers | 7 | 80% | 75%–85% | 11% | 9%–22% | 4 |
+| glass-door-accessories | 23 | 86% | 83%–89% | 9% | 6%–19% | 15 |
+| grip-handle-sets | 14 | 89% | 77%–95% | 5% | 2%–9% | 14 |
+| hardware-accessories | 69 | 81% | 73%–87% | 18% | 8%–25% | 31 |
+| knob-locks | 59 | 85% | 79%–89% | 21% | 16%–24% | 8 |
+| lever-handles | 48 | 88% | 80%–92% | 23% | 14%–28% | 25 |
+| lock-cases | 51 | 90% | 81%–94% | 5% | 3%–10% | 49 |
+| lock-cylinders | 45 | 80% | 67%–92% | 21% | 12%–23% | 10 |
+| night-latches-rim-locks | 25 | 89% | 81%–93% | 29% | 21%–31% | 21 |
+| panic-exit-devices | 44 | 89% | 82%–94% | 14% | 5%–26% | 27 |
+| sliding-hook-locks | 3 | 89% | 85%–91% | 9% | 3%–9% | 3 |
+| stainless-steel-handles | 43 | 77% | 71%–89% | 17% | 9%–19% | 13 |
 
 ## Flagged hero images
 
 Sorted by category, then by how far the fill is from the category median.
 
-| Model | Category | Flags | Fill (cat. median) | Center x | Baseline (cat. median) | Field | Image |
+| Model | Category | Flags | Fill (cat. median) | Center x | Baseline → horizon | Field | Image |
 |---|---|---|---|---|---|---|---|
-| BH12 | bathroom-accessories | off-scale | 62% (78%) | −1% | 18% (20%) | 255 | `bh12-robe-hook.webp` |
-| BH07 | bathroom-accessories | off-baseline | 86% (78%) | +0% | 33% (20%) | 255 | `bh07-hook-rail.webp` |
-| BH33 | bathroom-accessories | off-baseline | 86% (78%) | +0% | 32% (20%) | 255 | `bh33-towel-shelf.webp` |
-| BH09 | bathroom-accessories | off-baseline | 85% (78%) | +0% | 33% (20%) | 255 | `bh09-hook-rail.webp` |
-| Stainless Steel Wall Hook | bathroom-accessories | off-baseline | 85% (78%) | +1% | 33% (20%) | 255 | `stainless-steel-wall-hook.webp` |
-| BH51 | bathroom-accessories | off-baseline | 85% (78%) | −0% | 35% (20%) | 255 | `bh51-shower-shelf.webp` |
-| BH34 | bathroom-accessories | off-baseline | 81% (78%) | 0% | 30% (20%) | 255 | `bh34-towel-bar.webp` |
-| BH54 | bathroom-accessories | off-baseline | 76% (78%) | −1% | 31% (20%) | 255 | `bh54-double-robe-hook.webp` |
-| F100 SS | brass-steel-hinges | off-scale | 95% (77%) | +1% | 9% (12%) | 255 | `f100-ss-door-hinge.webp` |
-| Stainless Steel Door Hinge | brass-steel-hinges | off-scale | 95% (77%) | +1% | 13% (12%) | 255 | `stainless-steel-door-hinge.webp` |
-| SSH015 | brass-steel-hinges | small, off-scale | 59% (77%) | −0% | 20% (12%) | 255 | `ssh015-brass-and-steel-hinges.webp` |
-| 6*3*3mm | brass-steel-hinges | off-centre | 89% (77%) | −11% | 8% (12%) | 255 | `6-3-3mm-brass-and-steel-hinges.webp` |
-| AAH024 | brass-steel-hinges | off-centre | 88% (77%) | −14% | 9% (12%) | 255 | `aah024-brass-and-steel-hinges.webp` |
-| BL027 | brass-steel-hinges | off-centre | 86% (77%) | −10% | 11% (12%) | 255 | `bl027-brass-and-steel-hinges.webp` |
-| CH01 | brass-steel-hinges | off-baseline | 83% (77%) | −0% | 25% (12%) | 255 | `ch01-brass-and-steel-hinges.webp` |
-| BL028 | brass-steel-hinges | off-centre | 82% (77%) | −10% | 15% (12%) | 255 | `bl028-brass-and-steel-hinges.webp` |
-| BH01 | care-grab-bars | off-baseline, off-scale | 74% (92%) | −1% | 13% (25%) | 255 | `bh01-grab-bar-3.webp` |
-| BH56 | care-grab-bars | off-baseline | 95% (92%) | −0% | 40% (25%) | 255 | `bh56-flip-up-grab-bar.webp` |
-| BH02 | care-grab-bars | off-baseline | 93% (92%) | 0% | 4% (25%) | 255 | `bh02-knurled-grab-bar.webp` |
-| D103 AC | deadbolts | off-scale | 63% (78%) | −0% | 17% (20%) | 255 | `d103-ac-deadbolts.webp` |
-| JU-088 | door-closers | off-baseline | 81% (80%) | 0% | 22% (11%) | 255 | `ju-088-door-closer.webp` |
-| F132 | glass-door-accessories | off-baseline | 84% (86%) | 0% | 22% (9%) | 255 | `f132-glass-door-patch-fittings.webp` |
-| 410 | glass-door-accessories | off-baseline | 86% (86%) | −3% | 20% (9%) | 255 | `410-glass-door-handle.webp` |
-| Keyed Deadbolt Lock Set | grip-handle-sets | off-scale | 74% (89%) | −1% | 9% (5%) | 255 | `ansi-grade-3-keyed-deadbolt.webp` |
-| DH02 PB | grip-handle-sets | off-centre | 77% (89%) | +11% | 10% (5%) | 255 | `dh02-pb-grip-handle-set.webp` |
-| 70610 AB | grip-handle-sets | off-centre | 95% (89%) | −11% | 2% (5%) | 255 | `70610-ab-grip-handle-set.webp` |
-| 70610 SC | grip-handle-sets | off-centre | 95% (89%) | −13% | 2% (5%) | 255 | `70610-sc-grip-handle-set.webp` |
-| 70710 PB | grip-handle-sets | off-centre | 95% (89%) | −11% | 2% (5%) | 255 | `70710-pb-grip-handle-set.webp` |
-| 70900 MBET | grip-handle-sets | off-centre | 94% (89%) | −11% | 4% (5%) | 255 | `70900-mbet-grip-handle-set.webp` |
-| 70900 MBBK | grip-handle-sets | off-centre | 93% (89%) | −10% | 5% (5%) | 255 | `70900-mbbk-grip-handle-set.webp` |
-| 70722 DC | grip-handle-sets | off-centre | 88% (89%) | −8% | 6% (5%) | 255 | `70722-dc-grip-handle-set.webp` |
-| Dust Proof 01 | hardware-accessories | off-scale | 63% (81%) | 0% | 19% (18%) | 255 | `dust-proof-01-door-viewer.webp` |
-| Dust Proof 02 | hardware-accessories | off-scale | 63% (81%) | +0% | 19% (18%) | 255 | `dust-proof-02-door-viewer.webp` |
-| DC02 | hardware-accessories | off-baseline | 95% (81%) | 0% | 5% (18%) | 255 | `dc02-door-coordinator.webp` |
-| EPT01 | hardware-accessories | off-baseline | 92% (81%) | +1% | 4% (18%) | 255 | `ept01-door-power-transfer-devices.webp` |
-| HY-0SS | hardware-accessories | off-centre, off-baseline | 92% (81%) | −10% | 5% (18%) | 255 | `hy-0ss-latch-guard.webp` |
-| FB015 | hardware-accessories | off-baseline | 86% (81%) | +1% | 7% (18%) | 255 | `fb015-door-flush-bolt.webp` |
-| FB001 AC | hardware-accessories | off-baseline | 85% (81%) | 0% | 8% (18%) | 255 | `fb001-ac-door-flush-bolt.webp` |
-| FB001 | hardware-accessories | off-baseline | 85% (81%) | +0% | 7% (18%) | 255 | `fb001-door-flush-bolt.webp` |
-| FB001 SS | hardware-accessories | off-baseline | 85% (81%) | 0% | 7% (18%) | 255 | `fb001-ss-door-flush-bolt.webp` |
-| BH15-80mm | hardware-accessories | off-baseline | 80% (81%) | +1% | 33% (18%) | 255 | `bh15-80mm-barrel-bolt.webp` |
-| 5870 SNET | knob-locks | off-scale | 69% (85%) | −3% | 20% (21%) | 255 | `5870-snet-tubular-lock.webp` |
-| 5831-90mm grey | knob-locks | off-baseline | 88% (85%) | −3% | 10% (21%) | 255 | `5831-90mm-grey-tubular-lock.webp` |
-| EH01 | lever-handles | off-baseline | 90% (88%) | −0% | 9% (23%) | 255 | `eh01-lever-handle.webp` |
-| EH02 | lever-handles | off-baseline | 88% (88%) | 0% | 9% (23%) | 255 | `eh02-lever-handle.webp` |
-| EH03 | lever-handles | off-baseline | 88% (88%) | 0% | 9% (23%) | 255 | `eh03-lever-handle.webp` |
-| Stainless Steel Lever Handle Lock | lever-handles | off-baseline | 88% (88%) | +0% | 9% (23%) | 255 | `stainless-steel-lever-handle-lock.webp` |
-| AR4-101 | lock-cases | grey-field | 83% (90%) | +2% | 13% (5%) | 237 | `argentina-ar4/hyde-ar4-101.webp` |
-| AR4-1121 | lock-cases | cropped, grey-field | 95% (90%) | +7% | 0% (5%) | 228 | `argentina-ar4/hyde-ar4-1121.webp` |
-| 1121 | lock-cases | off-centre | 94% (90%) | −9% | 4% (5%) | 255 | `1121-lock-case.webp` |
-| LC15 | lock-cases | off-centre | 93% (90%) | −17% | 5% (5%) | 255 | `lc15-lock-case.webp` |
-| LC35 8550 | lock-cases | cropped | 93% (90%) | +4% | 0% (5%) | 255 | `lc35-8550-lock-case.webp` |
-| HY008 | lock-cases | off-centre | 92% (90%) | −10% | 5% (5%) | 255 | `hy008-lock-case.webp` |
-| LC09 85×60mm | lock-cases | off-centre | 91% (90%) | +9% | 4% (5%) | 255 | `lc09-85-60mm-lock-case.webp` |
-| AR4-140 | lock-cases | grey-field | 90% (90%) | −2% | 4% (5%) | 230 | `argentina-ar4/hyde-ar4-140.webp` |
-| AR4-110 | lock-cases | grey-field | 89% (90%) | −0% | 7% (5%) | 239 | `argentina-ar4/hyde-ar4-110.webp` |
-| 6068 | lock-cases | off-baseline | 90% (90%) | 0% | 21% (5%) | 255 | `6068-mortise-lever-handle-lock.webp` |
-| HY006ET | lock-cases | off-centre | 90% (90%) | −14% | 7% (5%) | 255 | `hy006et-lock-case.webp` |
-| 90 SNDK | lock-cylinders | off-scale | 63% (80%) | +1% | 20% (21%) | 255 | `90-sndk-lock-cylinder.webp` |
-| 70ANTI-THEFT | lock-cylinders | off-scale | 97% (80%) | 0% | 13% (21%) | 255 | `70anti-theft-lock-cylinder.webp` |
-| 70MB | lock-cylinders | off-scale | 96% (80%) | 0% | 13% (21%) | 254 | `70mb-lock-cylinder.webp` |
-| 80SN | lock-cylinders | off-scale | 96% (80%) | 0% | 11% (21%) | 255 | `80sn-lock-cylinder.webp` |
-| 70SN | lock-cylinders | off-baseline, off-scale | 96% (80%) | −0% | 10% (21%) | 255 | `70sn-lock-cylinder.webp` |
-| 60 SNKT | lock-cylinders | off-scale | 65% (80%) | 0% | 21% (21%) | 255 | `60-snkt-lock-cylinder.webp` |
-| 80 SNKT | lock-cylinders | off-scale | 65% (80%) | 0% | 21% (21%) | 255 | `80-snkt-lock-cylinder.webp` |
-| 70PB ANTI-THEFT | lock-cylinders | off-baseline | 87% (80%) | −1% | 10% (21%) | 255 | `70pb-anti-theft-lock-cylinder.webp` |
-| Single oval cylinder | lock-cylinders | off-baseline | 84% (80%) | +4% | 8% (21%) | 255 | `single-oval-cylinder-lock-cylinder.webp` |
-| Night Latch & Rim Lock | night-latches-rim-locks | off-scale | 72% (89%) | −1% | 31% (29%) | 255 | `night-latch-rim-lock.webp` |
-| 559 | night-latches-rim-locks | cropped | 99% (89%) | −0% | 25% (29%) | 255 | `559-night-latch-and-rim-lock.webp` |
-| 1073D MB | night-latches-rim-locks | cropped | 93% (89%) | +4% | 22% (29%) | 255 | `1073d-mb-night-latch-and-rim-lock.webp` |
-| G559 | night-latches-rim-locks | off-baseline | 91% (89%) | 0% | 15% (29%) | 255 | `g559-night-latch-and-rim-lock.webp` |
-| SH01 | panic-exit-devices | off-scale | 72% (89%) | +3% | 13% (14%) | 254 | `sh01-panic-exit-device.webp` |
-| 301 | panic-exit-devices | off-baseline | 96% (89%) | +0% | 26% (14%) | 255 | `301-panic-exit-device.webp` |
-| 330 | panic-exit-devices | off-baseline | 95% (89%) | −5% | 1% (14%) | 255 | `330-panic-exit-device.webp` |
-| 320 | panic-exit-devices | off-baseline | 95% (89%) | −8% | 2% (14%) | 255 | `320-two-point-locking-exit-device.webp` |
-| 039 | panic-exit-devices | off-baseline | 94% (89%) | 0% | 3% (14%) | 255 | `039-panic-exit-device-trim.webp` |
-| 072 | panic-exit-devices | off-centre | 85% (89%) | −16% | 12% (14%) | 255 | `072-panic-exit-device-lock-case.webp` |
-| 308 | panic-exit-devices | off-baseline | 92% (89%) | +1% | 27% (14%) | 255 | `308-panic-exit-device.webp` |
-| X2 | panic-exit-devices | off-baseline | 86% (89%) | −1% | 31% (14%) | 255 | `x2-panic-exit-device-trim.webp` |
-| 316-D | panic-exit-devices | off-centre | 91% (89%) | −8% | 4% (14%) | 255 | `316-d-panic-exit-device.webp` |
-| 023 ET | panic-exit-devices | off-baseline | 91% (89%) | +2% | 25% (14%) | 255 | `023-et-panic-exit-device-trim.webp` |
-| 300 | panic-exit-devices | off-baseline | 87% (89%) | +0% | 26% (14%) | 255 | `300-panic-exit-device.webp` |
-| 310 | panic-exit-devices | off-baseline | 87% (89%) | +0% | 27% (14%) | 255 | `310-panic-exit-device.webp` |
-| 306 PS | panic-exit-devices | off-baseline | 90% (89%) | +1% | 26% (14%) | 255 | `306-ps-panic-exit-device.webp` |
-| 303 | panic-exit-devices | off-baseline | 89% (89%) | +3% | 28% (14%) | 255 | `303-panic-exit-device.webp` |
-| 317 | panic-exit-devices | off-baseline | 89% (89%) | −0% | 24% (14%) | 255 | `317-cold-room-push-bar-exit-device.webp` |
-| 9007 | stainless-steel-handles | off-baseline, off-scale | 97% (77%) | 0% | 1% (17%) | 255 | `9007-stainless-steel-handle.webp` |
-| LH1083 | stainless-steel-handles | off-scale | 95% (77%) | −0% | 18% (17%) | 255 | `lh1083-stainless-steel-handle.webp` |
-| NC182 | stainless-steel-handles | small, off-scale | 60% (77%) | +6% | 18% (17%) | 255 | `nc182-stainless-steel-handle.webp` |
-| 9016S | stainless-steel-handles | off-centre, off-baseline | 91% (77%) | −9% | 6% (17%) | 255 | `9016s-stainless-steel-handle.webp` |
-| 9021 | stainless-steel-handles | off-centre, off-baseline | 91% (77%) | −10% | 6% (17%) | 255 | `9021-stainless-steel-handle.webp` |
-| 9082E | stainless-steel-handles | off-centre | 84% (77%) | −14% | 12% (17%) | 255 | `9082e-stainless-steel-handle.webp` |
-| 9088 SS | stainless-steel-handles | off-baseline | 83% (77%) | +7% | 4% (17%) | 255 | `9088-ss-stainless-steel-handle.webp` |
+| BH12 | bathroom-accessories | off-scale | 62% (78%) | −1% | 18% | 255 | `bh12-robe-hook.webp` |
+| BH07 | bathroom-accessories | off-baseline | 86% (78%) | +0% | 33% → lower 15% | 255 | `bh07-hook-rail.webp` |
+| BH33 | bathroom-accessories | off-baseline | 86% (78%) | +0% | 32% → lower 14% | 255 | `bh33-towel-shelf.webp` |
+| BH08 | bathroom-accessories | off-baseline | 85% (78%) | 0% | 30% → lower 12% | 255 | `bh08-hook-rail.webp` |
+| BH09 | bathroom-accessories | off-baseline | 85% (78%) | +0% | 33% → lower 15% | 255 | `bh09-hook-rail.webp` |
+| BH29 | bathroom-accessories | off-baseline | 85% (78%) | +0% | 24% → lower 6% | 255 | `bh29-corner-shower-basket.webp` |
+| Stainless Steel Wall Hook | bathroom-accessories | off-baseline | 85% (78%) | +1% | 33% → lower 15% | 255 | `stainless-steel-wall-hook.webp` |
+| BH51 | bathroom-accessories | off-baseline | 85% (78%) | −0% | 35% → lower 17% | 255 | `bh51-shower-shelf.webp` |
+| BH27 | bathroom-accessories | off-baseline | 83% (78%) | +1% | 28% → lower 10% | 255 | `bh27-wire-soap-dish.webp` |
+| BH23 | bathroom-accessories | off-baseline | 82% (78%) | −0% | 26% → lower 8% | 254 | `bh23-toilet-roll-holder-with-shelf.webp` |
+| BH34 | bathroom-accessories | off-baseline | 81% (78%) | 0% | 30% → lower 12% | 255 | `bh34-towel-bar.webp` |
+| BH26 | bathroom-accessories | off-baseline | 81% (78%) | 0% | 29% → lower 11% | 255 | `bh26-soap-dish.webp` |
+| BH54 | bathroom-accessories | off-baseline | 76% (78%) | −1% | 31% → lower 13% | 255 | `bh54-double-robe-hook.webp` |
+| BH31 | bathroom-accessories | off-baseline | 80% (78%) | −0% | 10% → raise 8% | 255 | `bh31-two-tier-corner-shower-basket.webp` |
+| BH21 | bathroom-accessories | off-baseline | 77% (78%) | −3% | 11% → raise 7% | 255 | `bh21-toilet-roll-holder.webp` |
+| BH05 | bathroom-accessories | off-baseline | 79% (78%) | −1% | 29% → lower 11% | 255 | `bh05-hook-rail.webp` |
+| BH52 | bathroom-accessories | off-baseline | 77% (78%) | +0% | 11% → raise 7% | 255 | `bh52-two-tier-corner-shower-shelf.webp` |
+| BH53 | bathroom-accessories | off-baseline | 79% (78%) | −0% | 27% → lower 9% | 254 | `bh53-corner-shower-shelf.webp` |
+| BH40 | bathroom-accessories | off-baseline | 78% (78%) | −2% | 11% → raise 7% | 255 | `bh40-robe-hook.webp` |
+| F100 SS | brass-steel-hinges | off-baseline, off-scale | 95% (77%) | +1% | 9% → raise 9% | 255 | `f100-ss-door-hinge.webp` |
+| Stainless Steel Door Hinge | brass-steel-hinges | off-scale | 95% (77%) | +1% | 13% | 255 | `stainless-steel-door-hinge.webp` |
+| SSH015 | brass-steel-hinges | small, off-scale | 59% (77%) | −0% | 20% | 255 | `ssh015-brass-and-steel-hinges.webp` |
+| SSH016 | brass-steel-hinges | off-baseline | 91% (77%) | −2% | 7% → raise 11% | 255 | `ssh016-brass-and-steel-hinges.webp` |
+| BL031 | brass-steel-hinges | off-baseline | 90% (77%) | −8% | 7% → raise 11% | 255 | `bl031-brass-and-steel-hinges.webp` |
+| 6*3*3mm | brass-steel-hinges | off-centre, off-baseline | 89% (77%) | −11% | 8% → raise 10% | 255 | `6-3-3mm-brass-and-steel-hinges.webp` |
+| AAH024 | brass-steel-hinges | off-centre, off-baseline | 88% (77%) | −14% | 9% → raise 9% | 255 | `aah024-brass-and-steel-hinges.webp` |
+| IH01 | brass-steel-hinges | off-baseline | 87% (77%) | −8% | 10% → raise 8% | 255 | `ih01-brass-and-steel-hinges.webp` |
+| BL027 | brass-steel-hinges | off-centre, off-baseline | 86% (77%) | −10% | 11% → raise 8% | 255 | `bl027-brass-and-steel-hinges.webp` |
+| SSH023 | brass-steel-hinges | off-baseline | 69% (77%) | +2% | 11% → raise 7% | 255 | `ssh023-brass-and-steel-hinges.webp` |
+| CH01 | brass-steel-hinges | off-baseline | 83% (77%) | −0% | 25% → lower 7% | 255 | `ch01-brass-and-steel-hinges.webp` |
+| SSH011 | brass-steel-hinges | off-baseline | 82% (77%) | −0% | 11% → raise 7% | 255 | `ssh011-brass-and-steel-hinges.webp` |
+| BL028 | brass-steel-hinges | off-centre | 82% (77%) | −10% | 15% | 255 | `bl028-brass-and-steel-hinges.webp` |
+| BL029 | brass-steel-hinges | off-baseline | 73% (77%) | +2% | 11% → raise 8% | 255 | `bl029-brass-and-steel-hinges.webp` |
+| BL030 | brass-steel-hinges | off-baseline | 73% (77%) | −1% | 10% → raise 8% | 255 | `bl030-brass-and-steel-hinges.webp` |
+| SS026 | brass-steel-hinges | off-baseline | 77% (77%) | +1% | 11% → raise 8% | 255 | `ss026-brass-and-steel-hinges.webp` |
+| SSH019 | brass-steel-hinges | off-baseline | 77% (77%) | +0% | 11% → raise 7% | 255 | `ssh019-brass-and-steel-hinges.webp` |
+| SSH013 | brass-steel-hinges | off-baseline | 77% (77%) | +1% | 7% → raise 11% | 255 | `ssh013-brass-and-steel-hinges.webp` |
+| BH01 | care-grab-bars | off-scale | 74% (92%) | −1% | 13% | 255 | `bh01-grab-bar-3.webp` |
+| BH03 | care-grab-bars | off-baseline | 87% (92%) | 0% | 25% → lower 7% | 255 | `bh03-angled-grab-bar.webp` |
+| BH56 | care-grab-bars | off-baseline | 95% (92%) | −0% | 40% → lower 22% | 255 | `bh56-flip-up-grab-bar.webp` |
+| BH57 | care-grab-bars | off-baseline | 95% (92%) | 0% | 32% → lower 14% | 255 | `bh57-double-flip-up-grab-bar.webp` |
+| BH58 | care-grab-bars | off-baseline | 94% (92%) | −0% | 28% → lower 10% | 255 | `bh58-flip-up-grab-bar.webp` |
+| BH02 | care-grab-bars | off-baseline | 93% (92%) | 0% | 4% → raise 14% | 255 | `bh02-knurled-grab-bar.webp` |
+| BH55 | care-grab-bars | off-baseline | 92% (92%) | 0% | 25% → lower 7% | 255 | `bh55-fold-down-shower-seat.webp` |
+| D103 AC | deadbolts | off-scale | 63% (78%) | −0% | 17% | 255 | `d103-ac-deadbolts.webp` |
+| JU-051 | door-closers | off-baseline | 79% (80%) | −1% | 11% → raise 8% | 255 | `ju-051-door-closer.webp` |
+| JU-073 | door-closers | off-baseline | 82% (80%) | +0% | 9% → raise 9% | 255 | `ju-073-door-closer.webp` |
+| JU-061 | door-closers | off-baseline | 80% (80%) | +0% | 9% → raise 9% | 255 | `ju-061-door-closer.webp` |
+| JU-072 | door-closers | off-baseline | 80% (80%) | −0% | 9% → raise 9% | 255 | `ju-072-door-closer.webp` |
+| Glass Door Patch Fitting Set | glass-door-accessories | off-baseline | 78% (86%) | +0% | 11% → raise 7% | 255 | `glass-door-patch-fitting-set.webp` |
+| 104 | glass-door-accessories | off-baseline | 91% (86%) | −1% | 4% → raise 14% | 255 | `104-glass-door-handle.webp` |
+| 100 | glass-door-accessories | off-baseline | 90% (86%) | +0% | 5% → raise 13% | 255 | `100-glass-door-handle.webp` |
+| 102 | glass-door-accessories | off-baseline | 89% (86%) | −1% | 6% → raise 12% | 255 | `102-glass-door-handle.webp` |
+| 107 | glass-door-accessories | off-baseline | 89% (86%) | −0% | 6% → raise 13% | 255 | `107-glass-door-handle.webp` |
+| 106 | glass-door-accessories | off-baseline | 89% (86%) | +0% | 6% → raise 13% | 255 | `106-glass-door-handle.webp` |
+| 109 | glass-door-accessories | off-baseline | 89% (86%) | +0% | 6% → raise 13% | 255 | `109-glass-door-handle.webp` |
+| 108 | glass-door-accessories | off-baseline | 88% (86%) | +8% | 6% → raise 12% | 255 | `108-glass-door-handle.webp` |
+| GL125 SS | glass-door-accessories | off-baseline | 83% (86%) | −0% | 9% → raise 9% | 255 | `gl125-ss-glass-door-patch-fittings.webp` |
+| 105 | glass-door-accessories | off-baseline | 87% (86%) | −0% | 7% → raise 11% | 255 | `105-glass-door-handle.webp` |
+| 112 | glass-door-accessories | off-baseline | 87% (86%) | +1% | 6% → raise 12% | 255 | `112-glass-door-handle.webp` |
+| G130 | glass-door-accessories | off-baseline | 86% (86%) | −8% | 9% → raise 9% | 255 | `g130-glass-door-handle.webp` |
+| 19-130MM | glass-door-accessories | off-baseline | 86% (86%) | −0% | 7% → raise 11% | 255 | `19-130mm-glass-door-handle.webp` |
+| F113 | glass-door-accessories | off-baseline | 85% (86%) | 0% | 9% → raise 9% | 255 | `f113-glass-door-patch-fittings.webp` |
+| Stainless Steel Glass Door Pull Handle | glass-door-accessories | off-baseline | 85% (86%) | 0% | 9% → raise 9% | 255 | `stainless-steel-glass-door-pull-handle.webp` |
+| Keyed Deadbolt Lock Set | grip-handle-sets | off-baseline, off-scale | 74% (89%) | −1% | 9% → raise 9% | 255 | `ansi-grade-3-keyed-deadbolt.webp` |
+| DH02 PB | grip-handle-sets | off-centre, off-baseline | 77% (89%) | +11% | 10% → raise 8% | 255 | `dh02-pb-grip-handle-set.webp` |
+| 70610 AB | grip-handle-sets | off-centre, off-baseline | 95% (89%) | −11% | 2% → raise 16% | 255 | `70610-ab-grip-handle-set.webp` |
+| 70610 SC | grip-handle-sets | off-centre, off-baseline | 95% (89%) | −13% | 2% → raise 16% | 255 | `70610-sc-grip-handle-set.webp` |
+| 70710 PB | grip-handle-sets | off-centre, off-baseline | 95% (89%) | −11% | 2% → raise 16% | 255 | `70710-pb-grip-handle-set.webp` |
+| 70900 MBET | grip-handle-sets | off-centre, off-baseline | 94% (89%) | −11% | 4% → raise 14% | 255 | `70900-mbet-grip-handle-set.webp` |
+| 70900 MBBK | grip-handle-sets | off-centre, off-baseline | 93% (89%) | −10% | 5% → raise 13% | 255 | `70900-mbbk-grip-handle-set.webp` |
+| DH02 AB | grip-handle-sets | off-baseline | 92% (89%) | −7% | 5% → raise 13% | 254 | `dh02-ab-grip-handle-set.webp` |
+| 70722 DC | grip-handle-sets | off-centre, off-baseline | 88% (89%) | −8% | 6% → raise 12% | 255 | `70722-dc-grip-handle-set.webp` |
+| 70750 PB | grip-handle-sets | off-baseline | 88% (89%) | +1% | 6% → raise 12% | 255 | `70750-pb-grip-handle-set.webp` |
+| 70720 SM | grip-handle-sets | off-baseline | 89% (89%) | 0% | 6% → raise 13% | 255 | `70720-sm-grip-handle-set.webp` |
+| 70780 AB | grip-handle-sets | off-baseline | 89% (89%) | −1% | 6% → raise 13% | 255 | `70780-ab-grip-handle-set.webp` |
+| 70710 SN | grip-handle-sets | off-baseline | 89% (89%) | −0% | 5% → raise 13% | 255 | `70710-sn-grip-handle-set.webp` |
+| 70720 PB | grip-handle-sets | off-baseline | 89% (89%) | +0% | 5% → raise 13% | 255 | `70720-pb-grip-handle-set.webp` |
+| Dust Proof 01 | hardware-accessories | off-scale | 63% (81%) | 0% | 19% | 255 | `dust-proof-01-door-viewer.webp` |
+| Dust Proof 02 | hardware-accessories | off-scale | 63% (81%) | +0% | 19% | 255 | `dust-proof-02-door-viewer.webp` |
+| L010 | hardware-accessories | off-baseline | 66% (81%) | 0% | 24% → lower 6% | 255 | `l010-latch.webp` |
+| DC02 | hardware-accessories | off-baseline | 95% (81%) | 0% | 5% → raise 13% | 255 | `dc02-door-coordinator.webp` |
+| EPT01 | hardware-accessories | off-baseline | 92% (81%) | +1% | 4% → raise 14% | 255 | `ept01-door-power-transfer-devices.webp` |
+| HY-0SS | hardware-accessories | off-centre, off-baseline | 92% (81%) | −10% | 5% → raise 13% | 255 | `hy-0ss-latch-guard.webp` |
+| DV07 | hardware-accessories | off-baseline | 73% (81%) | +1% | 25% → lower 7% | 255 | `dv07-door-viewer.webp` |
+| DV08 | hardware-accessories | off-baseline | 75% (81%) | +1% | 27% → lower 9% | 255 | `dv08-door-viewer.webp` |
+| DV08 SN | hardware-accessories | off-baseline | 75% (81%) | +1% | 27% → lower 9% | 255 | `dv08-sn-door-viewer.webp` |
+| FB015 | hardware-accessories | off-baseline | 86% (81%) | +1% | 7% → raise 11% | 255 | `fb015-door-flush-bolt.webp` |
+| DS01 | hardware-accessories | off-baseline | 75% (81%) | 0% | 11% → raise 8% | 255 | `ds01-door-stopper.webp` |
+| BH17 | hardware-accessories | off-baseline | 86% (81%) | +0% | 26% → lower 8% | 255 | `bh17-spring-latch.webp` |
+| DV04 | hardware-accessories | off-baseline | 86% (81%) | +0% | 25% → lower 7% | 255 | `dv04-door-viewer.webp` |
+| FB001 AC | hardware-accessories | off-baseline | 85% (81%) | 0% | 8% → raise 10% | 255 | `fb001-ac-door-flush-bolt.webp` |
+| FB001 | hardware-accessories | off-baseline | 85% (81%) | +0% | 7% → raise 11% | 255 | `fb001-door-flush-bolt.webp` |
+| FB001 SS | hardware-accessories | off-baseline | 85% (81%) | 0% | 7% → raise 11% | 255 | `fb001-ss-door-flush-bolt.webp` |
+| DS02 | hardware-accessories | off-baseline | 77% (81%) | −2% | 10% → raise 8% | 255 | `ds02-door-stopper.webp` |
+| FB012 | hardware-accessories | off-baseline | 77% (81%) | −0% | 25% → lower 7% | 255 | `fb012-door-flush-bolt.webp` |
+| DV05 BL | hardware-accessories | off-baseline | 77% (81%) | +0% | 27% → lower 9% | 255 | `dv05-bl-door-viewer.webp` |
+| DV06 | hardware-accessories | off-baseline | 77% (81%) | +2% | 24% → lower 6% | 255 | `dv06-door-viewer.webp` |
+| FB016 | hardware-accessories | off-baseline | 84% (81%) | +1% | 9% → raise 9% | 255 | `fb016-door-flush-bolt.webp` |
+| DS011 | hardware-accessories | off-baseline | 83% (81%) | +0% | 12% → raise 6% | 255 | `ds011-door-stopper.webp` |
+| DV12-B | hardware-accessories | off-baseline | 79% (81%) | +1% | 25% → lower 7% | 255 | `dv12-b-door-viewer.webp` |
+| FB013 | hardware-accessories | off-baseline | 79% (81%) | +0% | 11% → raise 8% | 254 | `fb013-door-flush-bolt.webp` |
+| DV05 | hardware-accessories | off-baseline | 82% (81%) | +1% | 28% → lower 10% | 255 | `dv05-door-viewer.webp` |
+| FB017 | hardware-accessories | off-baseline | 80% (81%) | −0% | 10% → raise 8% | 254 | `fb017-door-flush-bolt.webp` |
+| NO01 | hardware-accessories | off-baseline | 80% (81%) | −0% | 10% → raise 8% | 255 | `no01-gate-house-no.webp` |
+| BH15-80mm | hardware-accessories | off-baseline | 80% (81%) | +1% | 33% → lower 15% | 255 | `bh15-80mm-barrel-bolt.webp` |
+| DS022 | hardware-accessories | off-baseline | 81% (81%) | −0% | 9% → raise 9% | 255 | `ds022-door-stopper.webp` |
+| BH15-100mm | hardware-accessories | off-baseline | 81% (81%) | 0% | 25% → lower 7% | 255 | `bh15-100mm-barrel-bolt.webp` |
+| BH16 | hardware-accessories | off-baseline | 81% (81%) | 0% | 25% → lower 7% | 255 | `bh16-flat-slide-bolt.webp` |
+| 5870 SNET | knob-locks | off-scale | 69% (85%) | −3% | 20% | 255 | `5870-snet-tubular-lock.webp` |
+| 609 SSET | knob-locks | off-baseline | 89% (85%) | −2% | 24% → lower 6% | 255 | `609-sset-tubular-lock.webp` |
+| 5831-90mm grey | knob-locks | off-baseline | 88% (85%) | −3% | 10% → raise 8% | 255 | `5831-90mm-grey-tubular-lock.webp` |
+| 592 BSET | knob-locks | off-baseline | 83% (85%) | −0% | 27% → lower 9% | 255 | `592-bset-tubular-lock.webp` |
+| 5871 SSET | knob-locks | off-baseline | 84% (85%) | −0% | 24% → lower 6% | 255 | `5871-sset-heavy-duty-cylindrical-lock.webp` |
+| 598 SSET | knob-locks | off-baseline | 85% (85%) | +0% | 25% → lower 7% | 255 | `598-sset-tubular-lock.webp` |
+| 9210 PBBK | knob-locks | off-baseline | 85% (85%) | +0% | 24% → lower 6% | 255 | `9210-pbbk-tubular-lock.webp` |
+| 9210 PBET | knob-locks | off-baseline | 85% (85%) | +0% | 24% → lower 6% | 255 | `9210-pbet-tubular-lock.webp` |
+| 8806 SSBK | lever-handles | off-baseline | 81% (88%) | +2% | 28% → lower 10% | 255 | `8806-ssbk-lever-handle.webp` |
+| Black Tubular Lever Lock Set | lever-handles | off-baseline | 82% (88%) | +6% | 27% → lower 9% | 255 | `black-tubular-lever-lock-set.webp` |
+| 8806 SSET | lever-handles | off-baseline | 82% (88%) | +1% | 28% → lower 10% | 255 | `8806-sset-lever-handle.webp` |
+| LH855 | lever-handles | off-baseline | 84% (88%) | +2% | 26% → lower 8% | 255 | `lh855-lever-handle.webp` |
+| LH853 SNET | lever-handles | off-baseline | 91% (88%) | +1% | 24% → lower 6% | 255 | `lh853-snet-lever-handle.webp` |
+| LH853 CPBK | lever-handles | off-baseline | 91% (88%) | +1% | 28% → lower 10% | 255 | `lh853-cpbk-lever-handle.webp` |
+| LH853 CPPS | lever-handles | off-baseline | 91% (88%) | +2% | 25% → lower 7% | 254 | `lh853-cpps-lever-handle.webp` |
+| 803 PBET | lever-handles | off-baseline | 91% (88%) | 0% | 28% → lower 10% | 255 | `803-pbet-lever-handle.webp` |
+| LH853 SNBK | lever-handles | off-baseline | 91% (88%) | +2% | 24% → lower 6% | 255 | `lh853-snbk-lever-handle.webp` |
+| LH853 SNPS | lever-handles | off-baseline | 91% (88%) | +1% | 25% → lower 7% | 255 | `lh853-snps-lever-handle.webp` |
+| S802 SNET | lever-handles | off-baseline | 90% (88%) | 0% | 25% → lower 7% | 255 | `s802-snet-lever-handle.webp` |
+| 3431 SSET | lever-handles | off-baseline | 90% (88%) | −0% | 26% → lower 8% | 255 | `3431-sset-lever-handle.webp` |
+| 812 SSET | lever-handles | off-baseline | 86% (88%) | +3% | 28% → lower 10% | 255 | `812-sset-lever-handle.webp` |
+| EH01 | lever-handles | off-baseline | 90% (88%) | −0% | 9% → raise 9% | 255 | `eh01-lever-handle.webp` |
+| LH855 SNBK | lever-handles | off-baseline | 89% (88%) | −0% | 27% → lower 9% | 255 | `lh855-snbk-lever-handle.webp` |
+| 807 ABBK | lever-handles | off-baseline | 89% (88%) | +3% | 25% → lower 7% | 255 | `807-abbk-lever-handle.webp` |
+| LH855 BNBK | lever-handles | off-baseline | 89% (88%) | −1% | 26% → lower 8% | 255 | `lh855-bnbk-lever-handle.webp` |
+| 8828 SSET | lever-handles | off-baseline | 88% (88%) | +3% | 27% → lower 9% | 255 | `8828-sset-lever-handle.webp` |
+| EH02 | lever-handles | off-baseline | 88% (88%) | 0% | 9% → raise 9% | 255 | `eh02-lever-handle.webp` |
+| EH03 | lever-handles | off-baseline | 88% (88%) | 0% | 9% → raise 9% | 255 | `eh03-lever-handle.webp` |
+| LH851 | lever-handles | off-baseline | 88% (88%) | +2% | 27% → lower 9% | 255 | `lh851-lever-handle.webp` |
+| Stainless Steel Lever Handle Lock | lever-handles | off-baseline | 88% (88%) | +0% | 9% → raise 9% | 255 | `stainless-steel-lever-handle-lock.webp` |
+| LH854 | lever-handles | off-baseline | 88% (88%) | +0% | 25% → lower 7% | 255 | `lh854-lever-handle.webp` |
+| LH854 SNET | lever-handles | off-baseline | 88% (88%) | +2% | 25% → lower 7% | 255 | `lh854-snet-lever-handle.webp` |
+| LH855 SNET | lever-handles | off-baseline | 88% (88%) | −1% | 26% → lower 8% | 255 | `lh855-snet-lever-handle.webp` |
+| 7066 | lock-cases | off-baseline | 75% (90%) | +3% | 10% → raise 8% | 255 | `7066-lock-case.webp` |
+| LC7065S | lock-cases | off-baseline | 77% (90%) | +1% | 10% → raise 8% | 255 | `lc7065s-lock-case.webp` |
+| LC9045 | lock-cases | off-baseline | 77% (90%) | −2% | 10% → raise 8% | 255 | `lc9045-lock-case.webp` |
+| LC18 | lock-cases | off-baseline | 80% (90%) | −1% | 9% → raise 9% | 255 | `lc18-lock-case.webp` |
+| LC7065PS | lock-cases | off-baseline | 81% (90%) | −1% | 10% → raise 8% | 255 | `lc7065ps-lock-case.webp` |
+| HY007-S | lock-cases | off-baseline | 81% (90%) | 0% | 11% → raise 8% | 255 | `hy007-s-lock-case.webp` |
+| AR4-101 | lock-cases | grey-field | 83% (90%) | +2% | 13% | 237 | `argentina-ar4/hyde-ar4-101.webp` |
+| 110 | lock-cases | off-baseline | 95% (90%) | +5% | 2% → raise 16% | 255 | `110-lock-case.webp` |
+| AR4-1121 | lock-cases | cropped, off-baseline, grey-field | 95% (90%) | +7% | 0% → raise 18% | 228 | `argentina-ar4/hyde-ar4-1121.webp` |
+| LC08 85×55mm | lock-cases | off-baseline | 94% (90%) | +5% | 3% → raise 15% | 255 | `lc08-85-55mm-lock-case.webp` |
+| LC21 85×50mm | lock-cases | off-baseline | 94% (90%) | +7% | 3% → raise 15% | 255 | `lc21-85-50mm-lock-case.webp` |
+| LC5845 | lock-cases | off-baseline | 94% (90%) | −7% | 3% → raise 15% | 255 | `lc5845-lock-case.webp` |
+| LC04 85*70 | lock-cases | off-baseline | 85% (90%) | +6% | 7% → raise 11% | 255 | `lc04-85-70-lock-case.webp` |
+| LC8520 | lock-cases | off-baseline | 85% (90%) | +3% | 7% → raise 11% | 255 | `lc8520-lock-case.webp` |
+| 1121 | lock-cases | off-centre, off-baseline | 94% (90%) | −9% | 4% → raise 14% | 255 | `1121-lock-case.webp` |
+| LC17 | lock-cases | off-baseline | 86% (90%) | −1% | 7% → raise 11% | 255 | `lc17-lock-case.webp` |
+| HY006DK | lock-cases | off-baseline | 86% (90%) | +0% | 7% → raise 11% | 255 | `hy006dk-lock-case.webp` |
+| LC7065 | lock-cases | off-baseline | 86% (90%) | −6% | 11% → raise 8% | 255 | `lc7065-lock-case.webp` |
+| LC15 | lock-cases | off-centre, off-baseline | 93% (90%) | −17% | 5% → raise 13% | 255 | `lc15-lock-case.webp` |
+| LC35 8550 | lock-cases | cropped, off-baseline | 93% (90%) | +4% | 0% → raise 18% | 255 | `lc35-8550-lock-case.webp` |
+| LC8535B | lock-cases | off-baseline | 87% (90%) | +6% | 6% → raise 13% | 255 | `lc8535b-lock-case.webp` |
+| HY007 | lock-cases | off-baseline | 92% (90%) | −0% | 4% → raise 14% | 255 | `hy007-lock-case.webp` |
+| LC8525 PS | lock-cases | off-baseline | 92% (90%) | −1% | 3% → raise 15% | 255 | `lc8525-ps-lock-case.webp` |
+| LC8525B | lock-cases | off-baseline | 92% (90%) | +3% | 4% → raise 14% | 255 | `lc8525b-lock-case.webp` |
+| LC20 | lock-cases | off-baseline | 87% (90%) | +5% | 7% → raise 11% | 253 | `lc20-lock-case.webp` |
+| HY008 | lock-cases | off-centre, off-baseline | 92% (90%) | −10% | 5% → raise 13% | 255 | `hy008-lock-case.webp` |
+| LC04 85*60 | lock-cases | off-baseline | 92% (90%) | +6% | 4% → raise 14% | 255 | `lc04-85-60-lock-case.webp` |
+| LC06 85_50PS | lock-cases | off-baseline | 88% (90%) | +5% | 6% → raise 13% | 255 | `lc06-85-50ps-lock-case.webp` |
+| LC19 | lock-cases | off-baseline | 88% (90%) | −0% | 6% → raise 13% | 254 | `lc19-lock-case.webp` |
+| LC34 50×72mm | lock-cases | off-baseline | 88% (90%) | +4% | 5% → raise 13% | 255 | `lc34-50-72mm-lock-case.webp` |
+| LC07 85×45mm | lock-cases | off-baseline | 91% (90%) | +4% | 4% → raise 14% | 255 | `lc07-85-45mm-lock-case.webp` |
+| LC09 85×60mm | lock-cases | off-centre, off-baseline | 91% (90%) | +9% | 4% → raise 14% | 255 | `lc09-85-60mm-lock-case.webp` |
+| LC8530PS | lock-cases | off-baseline | 88% (90%) | +5% | 5% → raise 13% | 255 | `lc8530ps-lock-case.webp` |
+| LC9230 | lock-cases | off-baseline | 88% (90%) | +3% | 4% → raise 14% | 255 | `lc9230-lock-case.webp` |
+| AI8530 | lock-cases | off-baseline | 91% (90%) | +2% | 4% → raise 14% | 253 | `ai8530-lock-case.webp` |
+| LC03 85×45mm | lock-cases | off-baseline | 91% (90%) | +2% | 4% → raise 14% | 255 | `lc03-85-45mm-lock-case.webp` |
+| LC6860 | lock-cases | off-baseline | 91% (90%) | +6% | 4% → raise 14% | 254 | `lc6860-lock-case.webp` |
+| LC33-5572 | lock-cases | off-baseline | 89% (90%) | +4% | 5% → raise 13% | 255 | `lc33-5572-lock-case.webp` |
+| LC8525 | lock-cases | off-baseline | 89% (90%) | +4% | 5% → raise 13% | 255 | `lc8525-lock-case.webp` |
+| 140 | lock-cases | off-baseline | 90% (90%) | 0% | 5% → raise 13% | 255 | `140-lock-case.webp` |
+| AR4-140 | lock-cases | off-baseline, grey-field | 90% (90%) | −2% | 4% → raise 14% | 230 | `argentina-ar4/hyde-ar4-140.webp` |
+| LC05 8560 | lock-cases | off-baseline | 90% (90%) | +5% | 5% → raise 13% | 255 | `lc05-8560-lock-case.webp` |
+| LC8520B | lock-cases | off-baseline | 90% (90%) | +1% | 4% → raise 14% | 255 | `lc8520b-lock-case.webp` |
+| LC8530BK | lock-cases | off-baseline | 90% (90%) | +2% | 4% → raise 14% | 255 | `lc8530bk-lock-case.webp` |
+| AR4-110 | lock-cases | off-baseline, grey-field | 89% (90%) | −0% | 7% → raise 11% | 239 | `argentina-ar4/hyde-ar4-110.webp` |
+| LC14 85×50mm | lock-cases | off-baseline | 90% (90%) | +6% | 5% → raise 13% | 255 | `lc14-85-50mm-lock-case.webp` |
+| HY006ET | lock-cases | off-centre, off-baseline | 90% (90%) | −14% | 7% → raise 11% | 255 | `hy006et-lock-case.webp` |
+| LC02 85×40mm | lock-cases | off-baseline | 90% (90%) | +6% | 5% → raise 13% | 255 | `lc02-85-40mm-lock-case.webp` |
+| LC8535 | lock-cases | off-baseline | 90% (90%) | +8% | 6% → raise 12% | 255 | `lc8535-lock-case.webp` |
+| 90 SNDK | lock-cylinders | off-scale | 63% (80%) | +1% | 20% | 255 | `90-sndk-lock-cylinder.webp` |
+| 70ANTI-THEFT | lock-cylinders | off-scale | 97% (80%) | 0% | 13% | 255 | `70anti-theft-lock-cylinder.webp` |
+| 70MB | lock-cylinders | off-scale | 96% (80%) | 0% | 13% | 254 | `70mb-lock-cylinder.webp` |
+| 80SN | lock-cylinders | off-baseline, off-scale | 96% (80%) | 0% | 11% → raise 7% | 255 | `80sn-lock-cylinder.webp` |
+| 70SN | lock-cylinders | off-baseline, off-scale | 96% (80%) | −0% | 10% → raise 8% | 255 | `70sn-lock-cylinder.webp` |
+| 60 SNKT | lock-cylinders | off-scale | 65% (80%) | 0% | 21% | 255 | `60-snkt-lock-cylinder.webp` |
+| 80 SNKT | lock-cylinders | off-scale | 65% (80%) | 0% | 21% | 255 | `80-snkt-lock-cylinder.webp` |
+| 70PB ANTI-THEFT | lock-cylinders | off-baseline | 87% (80%) | −1% | 10% → raise 8% | 255 | `70pb-anti-theft-lock-cylinder.webp` |
+| XF-1 | lock-cylinders | off-baseline | 85% (80%) | 0% | 27% → lower 9% | 255 | `xf-1-lock-cylinder.webp` |
+| Single oval cylinder | lock-cylinders | off-baseline | 84% (80%) | +4% | 8% → raise 10% | 255 | `single-oval-cylinder-lock-cylinder.webp` |
+| Night Latch & Rim Lock | night-latches-rim-locks | off-baseline, off-scale | 72% (89%) | −1% | 31% → lower 13% | 255 | `night-latch-rim-lock.webp` |
+| 559 | night-latches-rim-locks | cropped, off-baseline | 99% (89%) | −0% | 25% → lower 7% | 255 | `559-night-latch-and-rim-lock.webp` |
+| S564 | night-latches-rim-locks | off-baseline | 81% (89%) | −1% | 27% → lower 9% | 255 | `s564-night-latch-and-rim-lock.webp` |
+| 564 MB | night-latches-rim-locks | off-baseline | 81% (89%) | 0% | 32% → lower 14% | 255 | `564-mb-night-latch-and-rim-lock.webp` |
+| 5835 | night-latches-rim-locks | off-baseline | 93% (89%) | +1% | 30% → lower 12% | 255 | `5835-night-latch-and-rim-lock.webp` |
+| 1073D MB | night-latches-rim-locks | cropped | 93% (89%) | +4% | 22% | 255 | `1073d-mb-night-latch-and-rim-lock.webp` |
+| 5687 | night-latches-rim-locks | off-baseline | 86% (89%) | 0% | 29% → lower 11% | 255 | `5687-night-latch-and-rim-lock.webp` |
+| 5683 | night-latches-rim-locks | off-baseline | 86% (89%) | −0% | 24% → lower 6% | 255 | `5683-night-latch-and-rim-lock.webp` |
+| 1073D | night-latches-rim-locks | off-baseline | 87% (89%) | 0% | 29% → lower 11% | 255 | `1073d-night-latch-and-rim-lock.webp` |
+| 5834 | night-latches-rim-locks | off-baseline | 87% (89%) | −0% | 30% → lower 12% | 255 | `5834-night-latch-and-rim-lock.webp` |
+| 5836 | night-latches-rim-locks | off-baseline | 91% (89%) | 0% | 29% → lower 11% | 255 | `5836-night-latch-and-rim-lock.webp` |
+| H101 | night-latches-rim-locks | off-baseline | 91% (89%) | 0% | 27% → lower 9% | 255 | `h101-night-latch-and-rim-lock.webp` |
+| 5688 | night-latches-rim-locks | off-baseline | 87% (89%) | +0% | 31% → lower 13% | 255 | `5688-night-latch-and-rim-lock.webp` |
+| 5689 | night-latches-rim-locks | off-baseline | 87% (89%) | +0% | 31% → lower 13% | 255 | `5689-night-latch-and-rim-lock.webp` |
+| 556 | night-latches-rim-locks | off-baseline | 91% (89%) | −0% | 31% → lower 13% | 255 | `556-night-latch-and-rim-lock.webp` |
+| H102 | night-latches-rim-locks | off-baseline | 91% (89%) | −0% | 28% → lower 10% | 255 | `h102-night-latch-and-rim-lock.webp` |
+| 5833 | night-latches-rim-locks | off-baseline | 88% (89%) | +0% | 31% → lower 13% | 255 | `5833-night-latch-and-rim-lock.webp` |
+| 558 | night-latches-rim-locks | off-baseline | 91% (89%) | −0% | 26% → lower 8% | 255 | `558-night-latch-and-rim-lock.webp` |
+| 260 | night-latches-rim-locks | off-baseline | 89% (89%) | −1% | 29% → lower 11% | 255 | `260-night-latch-and-rim-lock.webp` |
+| F102 | night-latches-rim-locks | off-baseline | 90% (89%) | −0% | 26% → lower 8% | 255 | `f102-night-latch-and-rim-lock.webp` |
+| 564 | night-latches-rim-locks | off-baseline | 89% (89%) | −1% | 30% → lower 12% | 255 | `564-night-latch-and-rim-lock.webp` |
+| SH01 | panic-exit-devices | off-scale | 72% (89%) | +3% | 13% | 254 | `sh01-panic-exit-device.webp` |
+| 301 | panic-exit-devices | off-baseline | 96% (89%) | +0% | 26% → lower 8% | 255 | `301-panic-exit-device.webp` |
+| 016 | panic-exit-devices | off-baseline | 82% (89%) | −3% | 7% → raise 11% | 255 | `016-exterior-trim.webp` |
+| 330 | panic-exit-devices | off-baseline | 95% (89%) | −5% | 1% → raise 17% | 255 | `330-panic-exit-device.webp` |
+| 320 | panic-exit-devices | off-baseline | 95% (89%) | −8% | 2% → raise 16% | 255 | `320-two-point-locking-exit-device.webp` |
+| 039 | panic-exit-devices | off-baseline | 94% (89%) | 0% | 3% → raise 15% | 255 | `039-panic-exit-device-trim.webp` |
+| 072 | panic-exit-devices | off-centre, off-baseline | 85% (89%) | −16% | 12% → raise 6% | 255 | `072-panic-exit-device-lock-case.webp` |
+| 302 | panic-exit-devices | off-baseline | 93% (89%) | +0% | 9% → raise 9% | 255 | `302-panic-exit-device.webp` |
+| 308-D | panic-exit-devices | off-baseline | 85% (89%) | +7% | 6% → raise 12% | 254 | `308-d-d-panic-exit-device.webp` |
+| 308 | panic-exit-devices | off-baseline | 92% (89%) | +1% | 27% → lower 9% | 255 | `308-panic-exit-device.webp` |
+| X2 | panic-exit-devices | off-baseline | 86% (89%) | −1% | 31% → lower 13% | 255 | `x2-panic-exit-device-trim.webp` |
+| 316-D | panic-exit-devices | off-centre, off-baseline | 91% (89%) | −8% | 4% → raise 14% | 255 | `316-d-panic-exit-device.webp` |
+| 035 | panic-exit-devices | off-baseline | 86% (89%) | 0% | 9% → raise 9% | 255 | `035-panic-exit-device-trim.webp` |
+| 023 ET | panic-exit-devices | off-baseline | 91% (89%) | +2% | 25% → lower 7% | 255 | `023-et-panic-exit-device-trim.webp` |
+| 001 | panic-exit-devices | off-baseline | 87% (89%) | 0% | 9% → raise 9% | 255 | `001-panic-exit-device-trim.webp` |
+| 300 | panic-exit-devices | off-baseline | 87% (89%) | +0% | 26% → lower 8% | 255 | `300-panic-exit-device.webp` |
+| 309-D | panic-exit-devices | off-baseline | 87% (89%) | 0% | 9% → raise 9% | 255 | `309-d-double-door-panic-exit-device.webp` |
+| 310 | panic-exit-devices | off-baseline | 87% (89%) | +0% | 27% → lower 9% | 255 | `310-panic-exit-device.webp` |
+| 033 | panic-exit-devices | off-baseline | 90% (89%) | −1% | 10% → raise 8% | 255 | `033-panic-exit-device-trim.webp` |
+| 306-D | panic-exit-devices | off-baseline | 90% (89%) | −1% | 5% → raise 13% | 255 | `306-d-panic-exit-device.webp` |
+| 036 | panic-exit-devices | off-baseline | 90% (89%) | −1% | 10% → raise 8% | 255 | `036-panic-exit-device.webp` |
+| 306 PS | panic-exit-devices | off-baseline | 90% (89%) | +1% | 26% → lower 8% | 255 | `306-ps-panic-exit-device.webp` |
+| 015 | panic-exit-devices | off-baseline | 90% (89%) | −1% | 7% → raise 11% | 255 | `015-panic-exit-device-trim.webp` |
+| 312 | panic-exit-devices | off-baseline | 88% (89%) | +1% | 10% → raise 8% | 255 | `312-panic-exit-device.webp` |
+| 9080E | panic-exit-devices | off-baseline | 89% (89%) | −0% | 9% → raise 9% | 255 | `9080e-panic-exit-device-trim.webp` |
+| 030 | panic-exit-devices | off-baseline | 89% (89%) | −2% | 8% → raise 10% | 255 | `030-panic-exit-device-trim.webp` |
+| 303 | panic-exit-devices | off-baseline | 89% (89%) | +3% | 28% → lower 10% | 255 | `303-panic-exit-device.webp` |
+| 881 SS | sliding-hook-locks | off-baseline | 85% (89%) | +1% | 3% → raise 15% | 255 | `881-ss-sliding-hook-lock.webp` |
+| S02 CP | sliding-hook-locks | off-baseline | 91% (89%) | −1% | 9% → raise 9% | 255 | `s02-cp-sliding-hook-lock.webp` |
+| S03 | sliding-hook-locks | off-baseline | 89% (89%) | −2% | 9% → raise 9% | 255 | `s03-sliding-hook-lock.webp` |
+| 9007 | stainless-steel-handles | off-baseline, off-scale | 97% (77%) | 0% | 1% → raise 17% | 255 | `9007-stainless-steel-handle.webp` |
+| LH1083 | stainless-steel-handles | off-scale | 95% (77%) | −0% | 18% | 255 | `lh1083-stainless-steel-handle.webp` |
+| NC182 | stainless-steel-handles | small, off-scale | 60% (77%) | +6% | 18% | 255 | `nc182-stainless-steel-handle.webp` |
+| 9016S | stainless-steel-handles | off-centre, off-baseline | 91% (77%) | −9% | 6% → raise 12% | 255 | `9016s-stainless-steel-handle.webp` |
+| 9021 | stainless-steel-handles | off-centre, off-baseline | 91% (77%) | −10% | 6% → raise 12% | 255 | `9021-stainless-steel-handle.webp` |
+| 600 | stainless-steel-handles | off-baseline | 89% (77%) | 0% | 27% → lower 9% | 255 | `600-concealed-sliding-door-handle.webp` |
+| 9014 | stainless-steel-handles | off-baseline | 88% (77%) | −1% | 11% → raise 7% | 255 | `9014-stainless-steel-handle.webp` |
+| 9087 SS | stainless-steel-handles | off-baseline | 87% (77%) | −6% | 9% → raise 9% | 255 | `9087-ss-stainless-steel-handle.webp` |
+| 9082E | stainless-steel-handles | off-centre | 84% (77%) | −14% | 12% | 255 | `9082e-stainless-steel-handle.webp` |
+| 9088 SS | stainless-steel-handles | off-baseline | 83% (77%) | +7% | 4% → raise 14% | 255 | `9088-ss-stainless-steel-handle.webp` |
+| NCD | stainless-steel-handles | off-baseline | 74% (77%) | +3% | 9% → raise 9% | 255 | `ncd-stainless-steel-handle.webp` |
+| 9012E | stainless-steel-handles | off-baseline | 77% (77%) | 0% | 25% → lower 7% | 255 | `9012e-stainless-steel-handle.webp` |
+| 9014 SSBK | stainless-steel-handles | off-baseline | 77% (77%) | 0% | 27% → lower 9% | 255 | `9014-ssbk-stainless-steel-handle.webp` |

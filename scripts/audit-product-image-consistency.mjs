@@ -41,8 +41,12 @@
  *   cropped     the subject touches the frame edge. Part of the product may be cut off.
  *   off-centre  horizontal centre offset above OFF_CENTRE. (Vertical position is the
  *               baseline's job: a lever sits higher in its square than a lock case does.)
- *   off-baseline  baseline more than BASELINE_DRIFT away from its category's median, so the
- *               product floats or sinks against its neighbours in the same grid.
+ *   off-baseline  the product does not stand on the catalogue's common horizon: its baseline
+ *               is more than HORIZON_TOLERANCE above or below HORIZON. Client decision
+ *               2026-09-28: 「共同地平线」 — every plate puts the product's lowest point on
+ *               one line, as FSB does, rather than centring each product in its square.
+ *               A tall product (lock case, panic bar) meets the horizon by being scaled
+ *               down, not by overhanging it; the report says which way each plate must move.
  *   off-scale   fill more than SCALE_DRIFT away from its category's median. Neighbours in
  *               the same grid will visibly disagree in size.
  *   grey-field  a uniform field darker than WHITE_FIELD — a grey or cream background in a
@@ -82,7 +86,11 @@ const SCENE_BORDER = 0.12; // share of border pixels off the field colour → a 
 const SMALL_FILL = 0.6;
 const SCALE_DRIFT = 0.15;
 const OFF_CENTRE = 0.08;
-const BASELINE_DRIFT = 0.1;
+// The common horizon: the product's lowest point sits this share of the frame above the
+// bottom edge. Fixed at the 2026-09-28 catalogue median (18%) so the target does not move
+// as plates are corrected towards it.
+const HORIZON = 0.18;
+const HORIZON_TOLERANCE = 0.06;
 const EDGE = 0.01;
 const WHITE_FIELD = 240;
 const MARK_ZONE = { w: 0.32, h: 0.14 }; // top-left corner where legacy logos sit
@@ -238,7 +246,6 @@ function flag(heroes) {
   const byCategory = new Map();
   for (const r of plates) byCategory.set(r.category, [...(byCategory.get(r.category) ?? []), r]);
   const categoryMedian = new Map([...byCategory].map(([c, rs]) => [c, median(rs.map((r) => r.fill))]));
-  const categoryBaseline = new Map([...byCategory].map(([c, rs]) => [c, median(rs.map((r) => r.baseline))]));
   const flagged = [];
   for (const r of heroes) {
     const flags = [];
@@ -248,20 +255,20 @@ function flag(heroes) {
       if (r.fill < SMALL_FILL) flags.push("small");
       if (Math.min(r.marginTop, r.baseline, r.marginLeft, r.marginRight) < EDGE) flags.push("cropped");
       if (Math.abs(r.centreX) > OFF_CENTRE) flags.push("off-centre");
-      if (Math.abs(r.baseline - categoryBaseline.get(r.category)) > BASELINE_DRIFT) flags.push("off-baseline");
+      if (Math.abs(r.baseline - HORIZON) > HORIZON_TOLERANCE) flags.push("off-baseline");
       if (Math.abs(r.fill - categoryMedian.get(r.category)) > SCALE_DRIFT) flags.push("off-scale");
       if (r.luminance < WHITE_FIELD) flags.push("grey-field");
     }
     if (flags.length) flagged.push({ ...r, flags });
   }
-  return { plates, byCategory, categoryMedian, categoryBaseline, flagged };
+  return { plates, byCategory, categoryMedian, flagged };
 }
 
 const pct = (value) => `${Math.round(value * 100)}%`;
 const signed = (value) => `${value > 0 ? "+" : value < 0 ? "−" : ""}${Math.round(Math.abs(value) * 100)}%`;
 
 function report({ products, noPhoto, heroes, gallery, missing }) {
-  const { plates, byCategory, categoryMedian, categoryBaseline, flagged } = flag(heroes);
+  const { plates, byCategory, categoryMedian, flagged } = flag(heroes);
   const galleryPlates = gallery.filter((r) => !r.scene && !r.empty);
   const count = (name) => flagged.filter((r) => r.flags.includes(name)).length;
   const lines = [];
@@ -279,6 +286,8 @@ function report({ products, noPhoto, heroes, gallery, missing }) {
   lines.push(`| Scenes (not scored) | ${heroes.filter((r) => r.scene).length} | ${gallery.filter((r) => r.scene).length} |`);
   lines.push(`| Median fill | ${pct(median(plates.map((r) => r.fill)))} | ${pct(median(galleryPlates.map((r) => r.fill)))} |`);
   lines.push(`| Fill, 10th–90th percentile | ${pct(percentile(plates.map((r) => r.fill), 0.1))}–${pct(percentile(plates.map((r) => r.fill), 0.9))} | ${pct(percentile(galleryPlates.map((r) => r.fill), 0.1))}–${pct(percentile(galleryPlates.map((r) => r.fill), 0.9))} |`);
+  const onHorizon = (rs) => rs.filter((r) => Math.abs(r.baseline - HORIZON) <= HORIZON_TOLERANCE).length;
+  lines.push(`| On the common horizon (${pct(HORIZON)} ± ${pct(HORIZON_TOLERANCE)}) | ${onHorizon(plates)} of ${plates.length} | ${onHorizon(galleryPlates)} of ${galleryPlates.length} |`);
   lines.push(`| Median baseline (space under product) | ${pct(median(plates.map((r) => r.baseline)))} | ${pct(median(galleryPlates.map((r) => r.baseline)))} |`);
   lines.push(`| Baseline, 10th–90th percentile | ${pct(percentile(plates.map((r) => r.baseline), 0.1))}–${pct(percentile(plates.map((r) => r.baseline), 0.9))} | ${pct(percentile(galleryPlates.map((r) => r.baseline), 0.1))}–${pct(percentile(galleryPlates.map((r) => r.baseline), 0.9))} |`);
   lines.push(`| Old corner logo (excluded; HYDE watermark covers it on site) | ${heroes.filter((r) => r.cornerMark).length} | ${gallery.filter((r) => r.cornerMark).length} |`);
@@ -292,7 +301,7 @@ function report({ products, noPhoto, heroes, gallery, missing }) {
   lines.push("");
   lines.push(
     `Thresholds: small < ${pct(SMALL_FILL)} fill · off-scale > ${pct(SCALE_DRIFT)} from the category median · ` +
-      `off-centre > ${pct(OFF_CENTRE)} horizontally · off-baseline > ${pct(BASELINE_DRIFT)} from the category median · cropped = subject within ${pct(EDGE)} of an edge · grey-field = field luminance < ${WHITE_FIELD}.`,
+      `off-centre > ${pct(OFF_CENTRE)} horizontally · off-baseline = more than ${pct(HORIZON_TOLERANCE)} off the common horizon at ${pct(HORIZON)} above the bottom edge · cropped = subject within ${pct(EDGE)} of an edge · grey-field = field luminance < ${WHITE_FIELD}.`,
   );
   lines.push("");
   lines.push("## By category (hero plates)");
@@ -312,13 +321,19 @@ function report({ products, noPhoto, heroes, gallery, missing }) {
   lines.push("");
   lines.push("Sorted by category, then by how far the fill is from the category median.");
   lines.push("");
-  lines.push("| Model | Category | Flags | Fill (cat. median) | Center x | Baseline (cat. median) | Field | Image |");
+  lines.push("| Model | Category | Flags | Fill (cat. median) | Center x | Baseline → horizon | Field | Image |");
   lines.push("|---|---|---|---|---|---|---|---|");
   const drift = (r) => (r.fill === undefined ? 0 : Math.abs(r.fill - (categoryMedian.get(r.category) ?? r.fill)));
   for (const r of [...flagged].sort((a, b) => a.category.localeCompare(b.category) || drift(b) - drift(a) || a.slug.localeCompare(b.slug))) {
     const fill = r.fill === undefined ? "—" : `${pct(r.fill)} (${pct(categoryMedian.get(r.category) ?? 0)})`;
     const centre = r.centreX === undefined ? "—" : signed(r.centreX);
-    const base = r.baseline === undefined ? "—" : `${pct(r.baseline)} (${pct(categoryBaseline.get(r.category) ?? 0)})`;
+    const shift = r.baseline === undefined ? 0 : HORIZON - r.baseline;
+    const base =
+      r.baseline === undefined
+        ? "—"
+        : Math.abs(shift) > HORIZON_TOLERANCE
+          ? `${pct(r.baseline)} → ${shift > 0 ? "raise" : "lower"} ${pct(Math.abs(shift))}`
+          : pct(r.baseline);
     lines.push(`| ${r.model} | ${r.category} | ${r.flags.join(", ")} | ${fill} | ${centre} | ${base} | ${r.luminance} | \`${r.src.replace("/images/products/", "")}\` |`);
   }
   if (missing.length) {
