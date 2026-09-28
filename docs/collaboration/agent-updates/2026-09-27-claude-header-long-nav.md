@@ -10,3 +10,16 @@
 后台标签页里 ResizeObserver 不触发帧，所以「页面打开后文字变长」这一路只能靠代码审查。测试：header-shelf.test.ts 新增一条。
 
 **随后**：甲方要把 Applications / Guides / News 合并成一个下拉栏目（见下一条更新），合并后导航更短，这份守卫继续兜底。
+
+## 追加：Applications / Guides / News 合并为「Resources」（目标 #76）
+
+甲方：「把这三个合并到一个栏目下面，想一个新的导航名，鼠标挪到那自动向下弹出这三」。
+桌面顶栏 7 项 → 5 项：Products · Product Finder · **Resources** · Company · Buy it now。Resources 是按钮，悬停/聚焦/点击都打开 `#resources-shelf`，
+样式同 Company 面板：左侧一句说明，右侧三栏（Applications / Guides / News 各带一行说明）。Company 面板里重复的 Applications 去掉（5 列 → 4 列）。
+手机和紧凑导航条保持三个独立链接（没有悬停，滚动条多一项不花钱）。
+
+名字：Resources / Recursos / Recursos / Ressources / Ressourcen / 資料 / 자료 / Kaynaklar / Материалы / الموارد。
+新句子写进 7 个 ui.json，`npm run i18n:keys` 重新生成 ui-keys.json 和客户端译文表（SiteHeader 是客户端组件，只读生成表）。
+
+合并后各语种导航实宽 fr ≈603px（原 859）、ru 554、de 512，都小于 680px 栏宽，所以 `LONG_NAV_LOCALES` 清空，法/德/俄也用完整导航；运行时守卫保留兜底。
+核对：本地 1600px /fr/ 导航到 716px，logo 从 801px 起，无横向滚动；面板法文完整。npm test 407 通过，i18n --check、i18n-lint 通过。

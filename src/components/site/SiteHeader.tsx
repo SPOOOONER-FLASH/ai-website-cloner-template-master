@@ -55,30 +55,54 @@ import { dict, tx } from "@/lib/i18n-client";
   of those two is about to happen, before they lose their place.
 */
 
-type ShelfName = "products" | "company" | "buy";
+type ShelfName = "products" | "company" | "buy" | "resources";
 
 const companyShelfLinks = {
   en: [
     { label: "Company overview", detail: "Manufacturing since 1998", href: "/company" },
-    { label: "Applications", detail: "What each building type takes", href: "/projects" },
     { label: "Services", detail: "OEM tooling, private label, export", href: "/services" },
     { label: "Events", detail: "Meet HYDE in global markets", href: "/events" },
     { label: "Certificates", detail: "Verified model-scoped reports", href: "/certifications" },
   ],
   es: [
     { label: "La empresa", detail: "Fabricación desde 1998", href: "/company" },
-    { label: "Proyectos", detail: "Aplicaciones representativas", href: "/projects" },
     { label: "Servicios", detail: "Moldes OEM, marca propia, exportación", href: "/services" },
     { label: "Ferias", detail: "Encuentre HYDE en mercados globales", href: "/events" },
     { label: "Certificados", detail: "Informes verificados por modelo", href: "/certifications" },
   ],
   pt: [
     { label: "A empresa", detail: "Fabricação desde 1998", href: "/company" },
-    { label: "Aplicações", detail: "O que cada tipo de obra exige", href: "/projects" },
     { label: "Serviços", detail: "Moldes OEM, marca própria, exportação", href: "/services" },
     { label: "Feiras", detail: "Encontre a HYDE nos mercados globais", href: "/events" },
     { label: "Certificados", detail: "Relatórios verificados por modelo", href: "/certifications" },
   ],
+} as const;
+
+/*
+  Resources: Applications, Guides and News under one desktop item (client, 2026-09-27:
+  「把这三个合并到一个栏目下面，鼠标挪到那自动向下弹出」). Seven top-level items became
+  five, which also shortens every locale's row (fr needed 859px of a 680px column).
+  Only the desktop row merges. The phone and compact rails keep the three as separate
+  links: there is no hover there, and a scroll rail costs nothing per item.
+  The first href present in headerNav is where the merged item sits.
+*/
+const RESOURCE_HREFS = ["/projects", "/guides", "/news"];
+const resourceDetails = {
+  en: {
+    "/projects": "What each building type takes",
+    "/guides": "Size charts, standards and selection references",
+    "/news": "Short answers to what buyers ask",
+  },
+  es: {
+    "/projects": "Aplicaciones representativas",
+    "/guides": "Tablas de medidas, normas y guías de selección",
+    "/news": "Respuestas breves a lo que preguntan los compradores",
+  },
+  pt: {
+    "/projects": "O que cada tipo de obra exige",
+    "/guides": "Tabelas de medidas, normas e guias de seleção",
+    "/news": "Respostas curtas ao que os compradores perguntam",
+  },
 } as const;
 
 /*
@@ -128,8 +152,12 @@ const buyShelfLinks = {
   centered wordmark ("Acheter maintenant" across HYDE, client screenshot 09-27). Listed here
   rather than only measured at runtime so the static HTML is already right and the header
   does not jump after hydration; the runtime check below catches anything this list misses.
+
+  Emptied the same day: merging Applications, Guides and News into "Resources" took the
+  row from seven items to five, and the longest (fr) now measures 603px. Kept as the place
+  to list a locale again if a translation grows past the column.
 */
-const LONG_NAV_LOCALES = new Set(["fr", "de", "ru"]);
+const LONG_NAV_LOCALES = new Set<string>([]);
 
 export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const pathname = usePathname();
@@ -188,6 +216,9 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   }, [locale]);
   /* Copy in the page's own language, in source order en / es / pt. */
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const resourceLinks = headerNav.filter((link) => RESOURCE_HREFS.includes(link.href));
+  const firstResourceHref = resourceLinks[0]?.href;
+  const resourcesCurrent = resourceLinks.some((link) => isCurrent(localisedHref(link.href, locale)));
   const companyCurrent = dict(companyShelfLinks, locale).some((link) =>
     isCurrent(localisedHref(link.href, locale)),
   );
@@ -313,6 +344,29 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                         )}
                       >
                         {navLabel(link, locale)}
+                      </button>
+                    );
+                  }
+
+                  if (RESOURCE_HREFS.includes(link.href)) {
+                    if (link.href !== firstResourceHref) return null;
+                    return (
+                      <button
+                        key="resources"
+                        type="button"
+                        aria-controls="resources-shelf"
+                        aria-expanded={openShelf === "resources"}
+                        aria-haspopup="true"
+                        aria-current={resourcesCurrent ? "page" : undefined}
+                        onClick={() => setOpenShelf("resources")}
+                        onFocus={() => setOpenShelf("resources")}
+                        onMouseEnter={() => setOpenShelf("resources")}
+                        className={cn(
+                          "nav-marker bg-transparent text-c1 text-ink",
+                          resourcesCurrent && "current-nav",
+                        )}
+                      >
+                        {tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
                       </button>
                     );
                   }
@@ -616,7 +670,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                   {tx(locale, "The factory, markets and technical support behind HYDE.", { es: "La fábrica, sus mercados y el apoyo técnico detrás de HYDE.", pt: "A fábrica, os mercados e o apoio técnico por trás da HYDE." })}
                 </p>
               </div>
-              <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-5">
+              <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-4">
                 {dict(companyShelfLinks, locale).map((link) => {
                   const href = localisedHref(link.href, locale);
                   return (
@@ -629,6 +683,49 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     >
                       <span className="short-marker text-c1">{link.label}</span>
                       <span className="mt-8 block text-c2 text-ink-secondary">{link.detail}</span>
+                    </Link>
+                  );
+                })}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="resources-shelf"
+        aria-label={tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
+        aria-hidden={openShelf !== "resources"}
+        className={cn("header-shelf", openShelf === "resources" && "header-shelf-open")}
+      >
+        <div className="header-shelf-clip">
+          <div className="layout py-32">
+            <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
+              <div>
+                <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
+                  {tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
+                </p>
+                <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
+                  {tx(locale, "Where the products are used, how to specify them, and what buyers ask.", {
+                    es: "Dónde se usan los productos, cómo especificarlos y qué preguntan los compradores.",
+                    pt: "Onde os produtos são usados, como especificá-los e o que os compradores perguntam.",
+                  })}
+                </p>
+              </div>
+              <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-3">
+                {resourceLinks.map((link) => {
+                  const href = localisedHref(link.href, locale);
+                  const detail = dict(resourceDetails, locale)[link.href as keyof typeof resourceDetails.en];
+                  return (
+                    <Link
+                      key={link.href}
+                      href={href}
+                      onClick={() => setOpenShelf(null)}
+                      aria-current={isCurrent(href) ? "page" : undefined}
+                      className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
+                    >
+                      <span className="short-marker text-c1">{navLabel(link, locale)}</span>
+                      <span className="mt-8 block text-c2 text-ink-secondary">{detail}</span>
                     </Link>
                   );
                 })}

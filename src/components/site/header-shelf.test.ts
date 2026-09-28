@@ -182,7 +182,11 @@ test("a locale whose link row is wider than its column uses the compact rail, no
     The row is whitespace-nowrap in a column that stops at 680px; fr needs 859px, ru 789, de 729.
   */
   const styles = readFileSync(join(componentRoot, "HeaderNavigation.module.css"), "utf8");
-  assert.match(header, /const LONG_NAV_LOCALES = new Set\(\["fr", "de", "ru"\]\)/);
+  assert.match(header, /const LONG_NAV_LOCALES = new Set/);
+  /* Resources (2026-09-27) collapses Applications, Guides and News into one desktop item. */
+  assert.match(header, /const RESOURCE_HREFS = \["\/projects", "\/guides", "\/news"\]/);
+  assert.match(header, /aria-controls="resources-shelf"/);
+  assert.match(header, /id="resources-shelf"/);
   assert.match(header, /data-long-nav=\{longNav \? "" : undefined\}/);
   assert.match(header, /new ResizeObserver\(check\)/);
   assert.match(styles, /\.header\[data-long-nav\] \.wideNavigation \{ display: none; \}/);
