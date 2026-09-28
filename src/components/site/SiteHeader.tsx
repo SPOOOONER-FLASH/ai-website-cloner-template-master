@@ -249,13 +249,48 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
     };
   }, [menuOpen]);
 
+  const restoreMenuFocus = () => {
+    if (menuOpenerRef.current?.isConnected) menuOpenerRef.current.focus();
+    else menuTriggerRef.current?.focus();
+  };
+
   const closeMenu = () => {
     setMenuOpen(false);
-    requestAnimationFrame(() => {
-      if (menuOpenerRef.current?.isConnected) menuOpenerRef.current.focus();
-      else menuTriggerRef.current?.focus();
-    });
+    /*
+      Focus goes back to the button that opened the menu. It used to wait on
+      requestAnimationFrame alone, and where frames never come (a background tab, some
+      embedded webviews — 0 frames in 500 ms on the 09-28 live test) focus was left nowhere.
+      Whichever arrives first, the frame or the timer.
+    */
+    let restored = false;
+    const restore = () => {
+      if (restored) return;
+      restored = true;
+      restoreMenuFocus();
+    };
+    requestAnimationFrame(restore);
+    window.setTimeout(restore, 50);
   };
+
+  /*
+    Escape closes the menu wherever focus is. The drawer's own handler only hears keys
+    pressed inside it, and focus reaches the drawer one effect after it appears; a reader
+    who presses Escape at once got nothing (09-28 live test). The drawer's handler calls
+    stopPropagation, so a key pressed inside it is not handled twice.
+  */
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Escape" || event.defaultPrevented) return;
+      setMenuOpen(false);
+      window.setTimeout(() => {
+        if (menuOpenerRef.current?.isConnected) menuOpenerRef.current.focus();
+        else menuTriggerRef.current?.focus();
+      }, 0);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
 
   useEffect(() => {
     if (!openShelf) return;

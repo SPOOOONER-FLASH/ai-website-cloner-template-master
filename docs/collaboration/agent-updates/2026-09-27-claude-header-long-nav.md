@@ -29,3 +29,13 @@
 发布会话在 r8 线上实测时发现：1440 宽的页头仍显示 Guides / News，没有 Resources。这不是缓存问题。1376–1599px 用的是紧凑导航条，而我当时给导航条保留了独立链接。但这个宽度是带鼠标的笔记本，甲方要的合并下拉在这里就看不到了。
 现在改为：xl（1376px）以上，导航条把 Guides、News 换成 Resources 按钮，打开的是同一个 `#resources-shelf`；xl 以下（平板、手机）仍是独立链接。Applications 在导航条里本来就不显示，可以从 Resources 面板进入。
 本地实测：1440 宽时导航条为 Buy it now · Products · Product Finder · Resources · Company，点击后面板打开，无横向滚动；1000 宽仍是独立链接。
+
+## 追加（09-28）：菜单在「没有动画帧」的环境里关不好（目标 #89）
+
+r9 上线了发布会话的修复：`useOverlayPresence` 不再等 requestAnimationFrame 才挂载。线上实测在 500ms 内 0 帧的浏览器面板里，抽屉 177ms 打开。
+同一次实测又发现两处：
+1. `closeMenu` 把焦点回退放在 rAF 里，没有动画帧时，关闭后焦点落不到任何地方。
+2. Esc 只由抽屉自己的 onKeyDown 处理；抽屉刚出现、焦点还没移进去时按 Esc 没有反应。
+
+修法：焦点回退改为 rAF 与 50ms 定时器谁先到用谁；菜单打开期间在 document 上监听 Esc（抽屉内的按键已被 stopPropagation，不会重复处理）。
+本地实测，同样 0 帧：先把焦点移进抽屉再按 Esc、抽屉一出现就按 Esc，两种情况都能关闭，aria-expanded 为 false，焦点回到菜单按钮。

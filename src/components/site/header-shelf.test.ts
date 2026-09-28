@@ -189,6 +189,9 @@ test("a locale whose link row is wider than its column uses the compact rail, no
   assert.match(header, /id="resources-shelf"/);
   /* 09-28: the 1376–1599px compact rail gets the same button; tablets and phones keep links. */
   assert.match(header, /nav-rail-item hidden bg-transparent xl:inline-block/);
+  /* 09-28 live test with no animation frames: focus return and Escape must not wait on rAF. */
+  assert.match(header, /requestAnimationFrame\(restore\);\s*window\.setTimeout\(restore, 50\)/);
+  assert.match(header, /if \(!menuOpen\) return;\s*const onKeyDown/);
   assert.match(header, /RESOURCE_HREFS\.includes\(link\.href\) && "xl:hidden"/);
   assert.match(header, /data-long-nav=\{longNav \? "" : undefined\}/);
   assert.match(header, /new ResizeObserver\(check\)/);
