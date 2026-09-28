@@ -488,13 +488,11 @@
     "src/data/company.ts:51"
   ],
   "Buy it now": [
-    "src/components/site/SiteHeader.tsx:440",
-    "src/components/site/SiteHeader.tsx:619",
-    "src/components/site/SiteHeader.tsx:796"
+    "src/components/site/SiteHeader.tsx:181"
   ],
   "Buy on Alibaba": [
     "src/components/site/SiteFooter.tsx:243",
-    "src/components/site/SiteHeader.tsx:828"
+    "src/components/site/SiteHeader.tsx:570"
   ],
   "Buying": [
     "src/components/site/menu-experience.ts:98"
@@ -554,7 +552,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:46"
   ],
   "Catalog and verified documents": [
-    "src/components/site/SiteHeader.tsx:122"
+    "src/components/site/SiteHeader.tsx:109"
   ],
   "catalog categories": [
     "src/lib/site-facts.ts:64"
@@ -578,7 +576,7 @@
     "src/components/locale-pages/CertificationsPage.tsx:62"
   ],
   "Certificates": [
-    "src/components/site/SiteHeader.tsx:66",
+    "src/components/site/SiteHeader.tsx:53",
     "src/components/site/menu-experience.ts:91",
     "src/components/site/menu-experience.ts:262"
   ],
@@ -720,8 +718,8 @@
   ],
   "Company": [
     "src/components/site/InquiryForm.tsx:27",
-    "src/components/site/SiteHeader.tsx:714",
-    "src/components/site/SiteHeader.tsx:723",
+    "src/components/site/SiteHeader.tsx:483",
+    "src/components/site/SiteHeader.tsx:489",
     "src/components/site/menu-experience.ts:90",
     "src/components/site/menu-experience.ts:269"
   ],
@@ -729,7 +727,7 @@
     "src/components/site/NewsListing.tsx:19"
   ],
   "Company overview": [
-    "src/components/site/SiteHeader.tsx:63"
+    "src/components/site/SiteHeader.tsx:50"
   ],
   "Compare": [
     "src/components/locale-pages/ComparePage.tsx:61",
@@ -770,7 +768,7 @@
   ],
   "Contact": [
     "src/components/site/SiteFooter.tsx:17",
-    "src/components/site/SiteHeader.tsx:120",
+    "src/components/site/SiteHeader.tsx:107",
     "src/components/site/SiteMenuDrawer.tsx:19",
     "src/components/site/menu-experience.ts:102",
     "src/components/site/menu-experience.ts:274"
@@ -1069,7 +1067,7 @@
   ],
   "Downloads": [
     "src/components/site/ProductDetail.tsx:52",
-    "src/components/site/SiteHeader.tsx:122",
+    "src/components/site/SiteHeader.tsx:109",
     "src/components/site/menu-experience.ts:93",
     "src/components/site/menu-experience.ts:261"
   ],
@@ -1158,7 +1156,7 @@
     "src/components/locale-pages/CylinderCalculatorPage.tsx:72"
   ],
   "Events": [
-    "src/components/site/SiteHeader.tsx:65",
+    "src/components/site/SiteHeader.tsx:52",
     "src/components/site/menu-experience.ts:83",
     "src/components/site/menu-experience.ts:273"
   ],
@@ -1247,7 +1245,7 @@
   ],
   "FAQ": [
     "src/components/site/SiteFooter.tsx:53",
-    "src/components/site/SiteHeader.tsx:121",
+    "src/components/site/SiteHeader.tsx:108",
     "src/components/site/menu-experience.ts:94"
   ],
   "Featured door hardware": [
@@ -1257,7 +1255,7 @@
     "src/components/site/InquiryForm.tsx:45"
   ],
   "Fifteen product families. The number is how many verified records each one holds.": [
-    "src/components/site/SiteHeader.tsx:640"
+    "src/components/site/SiteHeader.tsx:415"
   ],
   "Fill these in and send them back. Each carries a worked example — copy its pattern rather than inventing a format.": [
     "src/components/locale-pages/DownloadsPage.tsx:32"
@@ -1715,7 +1713,7 @@
     "src/components/site/WelcomeIntro.tsx:16"
   ],
   "Main navigation": [
-    "src/components/site/SiteHeader.tsx:542"
+    "src/components/site/SiteHeader.tsx:348"
   ],
   "Manufactured in Zhongshan, Guangdong. Production lead time starts at 30 days from order confirmation, and we produce under our customers' own brands.": [
     "src/components/locale-pages/CollectionPage.tsx:125"
@@ -1742,7 +1740,7 @@
     "src/lib/site-facts.ts:66"
   ],
   "Manufacturing since 1998": [
-    "src/components/site/SiteHeader.tsx:63"
+    "src/components/site/SiteHeader.tsx:50"
   ],
   "Manufacturing, and where inspection visits are received.": [
     "src/components/locale-pages/ContactPage.tsx:105"
@@ -1781,13 +1779,13 @@
     "src/components/site/ProductsEditorialOverview.tsx:29"
   ],
   "Meet HYDE in global markets": [
-    "src/components/site/SiteHeader.tsx:65"
+    "src/components/site/SiteHeader.tsx:52"
   ],
   "Minimum order quantity, production lead time, sample policy, payment terms and OEM work — answered in full.": [
     "src/components/site/ProductDetail.tsx:59"
   ],
   "Minimum order, lead time, samples, payment, OEM": [
-    "src/components/site/SiteHeader.tsx:121"
+    "src/components/site/SiteHeader.tsx:108"
   ],
   "Model": [
     "src/components/site/ProductCard.tsx:92"
@@ -2018,7 +2016,7 @@
     "src/components/site/menu-experience.ts:100"
   ],
   "OEM tooling, private label, export": [
-    "src/components/site/SiteHeader.tsx:64"
+    "src/components/site/SiteHeader.tsx:51"
   ],
   "OEM, private label and everything else": [
     "src/components/locale-pages/ContactPage.tsx:24"
@@ -2076,7 +2074,7 @@
     "src/components/site/ProductDrawing.tsx:91"
   ],
   "Open menu": [
-    "src/components/site/SiteHeader.tsx:501"
+    "src/components/site/SiteHeader.tsx:317"
   ],
   "Open original image": [
     "src/components/site/GuideCover.tsx:16"
@@ -2308,7 +2306,7 @@
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductFinderPage.tsx:58",
     "src/components/site/ProductStudies.tsx:47",
-    "src/components/site/SiteHeader.tsx:647",
+    "src/components/site/SiteHeader.tsx:421",
     "src/components/site/menu-experience.ts:68",
     "src/components/site/menu-experience.ts:252",
     "src/components/site/menu-experience.ts:280"
@@ -2344,8 +2342,8 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:35",
     "src/components/site/ProductDetail.tsx:77",
     "src/components/site/ProductsEditorialOverview.tsx:21",
-    "src/components/site/SiteHeader.tsx:628",
-    "src/components/site/SiteHeader.tsx:637",
+    "src/components/site/SiteHeader.tsx:406",
+    "src/components/site/SiteHeader.tsx:412",
     "src/components/site/menu-experience.ts:65",
     "src/components/site/menu-experience.ts:251"
   ],
@@ -2411,7 +2409,7 @@
     "src/components/site/ServicesView.tsx:92"
   ],
   "Quotes, pricing and export specialists": [
-    "src/components/site/SiteHeader.tsx:120"
+    "src/components/site/SiteHeader.tsx:107"
   ],
   "Range": [
     "src/components/site/products-architecture.ts:116"
@@ -2502,10 +2500,7 @@
     "src/components/site/InquiryForm.tsx:35"
   ],
   "Resources": [
-    "src/components/site/SiteHeader.tsx:418",
-    "src/components/site/SiteHeader.tsx:603",
-    "src/components/site/SiteHeader.tsx:753",
-    "src/components/site/SiteHeader.tsx:762"
+    "src/components/site/SiteHeader.tsx:180"
   ],
   "Retired catalog paths": [
     "src/components/site/ModelLookup.tsx:89"
@@ -2548,7 +2543,7 @@
   ],
   "Search": [
     "src/components/site/ProductFinder.tsx:55",
-    "src/components/site/SiteHeader.tsx:488"
+    "src/components/site/SiteHeader.tsx:314"
   ],
   "Search and filter all models": [
     "src/components/site/FinderModeSwitch.tsx:43"
@@ -2678,7 +2673,7 @@
   ],
   "Services": [
     "src/components/site/ServicesView.tsx:40",
-    "src/components/site/SiteHeader.tsx:64",
+    "src/components/site/SiteHeader.tsx:51",
     "src/components/site/menu-experience.ts:260"
   ],
   "Set includes": [
@@ -2691,7 +2686,7 @@
     "src/components/site/ProductStudies.tsx:58"
   ],
   "Short answers to what buyers ask": [
-    "src/components/site/SiteHeader.tsx:95"
+    "src/components/site/SiteHeader.tsx:82"
   ],
   "Showing {count} published products. Filters for backset, center distance and door thickness arrive with the full technical catalog; until then, each product page lists the figures it has.": [
     "src/components/locale-pages/ProductFinderPage.tsx:68"
@@ -2709,7 +2704,7 @@
     "src/data/finish-codes.ts:536"
   ],
   "Size charts, standards and selection references": [
-    "src/components/site/SiteHeader.tsx:94"
+    "src/components/site/SiteHeader.tsx:81"
   ],
   "sliding hook lock": [
     "src/data/category-sourcing.ts:47"
@@ -2929,7 +2924,7 @@
     "src/components/site/CompanyOverview.tsx:27"
   ],
   "The factory, markets and technical support behind HYDE.": [
-    "src/components/site/SiteHeader.tsx:726"
+    "src/components/site/SiteHeader.tsx:492"
   ],
   "The first handshake a building gives. Lever sets in stainless steel, brass and matte black.": [
     "src/components/site/products-architecture.ts:34"
@@ -3172,7 +3167,7 @@
     "src/components/site/ProductDetail.tsx:84"
   ],
   "Verified model-scoped reports": [
-    "src/components/site/SiteHeader.tsx:66"
+    "src/components/site/SiteHeader.tsx:53"
   ],
   "verified product records": [
     "src/lib/site-facts.ts:63"
@@ -3274,7 +3269,7 @@
     "src/lib/product-faq.ts:126"
   ],
   "What each building type takes": [
-    "src/components/site/SiteHeader.tsx:93"
+    "src/components/site/SiteHeader.tsx:80"
   ],
   "What function does the {m} provide?": [
     "src/lib/product-faq.ts:135"
@@ -3326,7 +3321,7 @@
     "src/data/home.ts:115"
   ],
   "Where the products are used, how to specify them, and what buyers ask.": [
-    "src/components/site/SiteHeader.tsx:765"
+    "src/components/site/SiteHeader.tsx:521"
   ],
   "Where we are": [
     "src/components/site/CompanyOverview.tsx:26"
