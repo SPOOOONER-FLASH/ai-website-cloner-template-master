@@ -175,3 +175,16 @@ test("removing footer shortcuts does not remove their destination pages", () => 
     "expected /request/price-list/ page to remain available",
   );
 });
+
+test("a locale whose link row is wider than its column uses the compact rail, not the logo's space", () => {
+  /*
+    2026-09-27, client screenshot: on /fr/ "Acheter maintenant" ran under the HYDE wordmark.
+    The row is whitespace-nowrap in a column that stops at 680px; fr needs 859px, ru 789, de 729.
+  */
+  const styles = readFileSync(join(componentRoot, "HeaderNavigation.module.css"), "utf8");
+  assert.match(header, /const LONG_NAV_LOCALES = new Set\(\["fr", "de", "ru"\]\)/);
+  assert.match(header, /data-long-nav=\{longNav \? "" : undefined\}/);
+  assert.match(header, /new ResizeObserver\(check\)/);
+  assert.match(styles, /\.header\[data-long-nav\] \.wideNavigation \{ display: none; \}/);
+  assert.match(styles, /\.header\[data-long-nav\] \.compactNavigation \{ display: grid; \}/);
+});

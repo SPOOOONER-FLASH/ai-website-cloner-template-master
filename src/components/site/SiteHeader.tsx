@@ -120,9 +120,22 @@ const buyShelfLinks = {
  *   A-style black underline is revealed only on hover or keyboard focus.
  *   Utility icons remain tertiary grey and darken to ink on interaction.
  */
+/*
+  Locales whose desktop link row can never fit its column, so they use the compact rail at
+  every width. Measured 2026-09-27 at 1700px, where the column is 680px and does not grow:
+  fr 859px, ru 789px, de 729px (en 618, es 632, tr 630, pt 624, ja 574, ar 511, ko 505).
+  The row is `whitespace-nowrap`, so an over-long row does not wrap — it runs under the
+  centered wordmark ("Acheter maintenant" across HYDE, client screenshot 09-27). Listed here
+  rather than only measured at runtime so the static HTML is already right and the header
+  does not jump after hydration; the runtime check below catches anything this list misses.
+*/
+const LONG_NAV_LOCALES = new Set(["fr", "de", "ru"]);
+
 export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const pathname = usePathname();
   const headerRef = useRef<HTMLDivElement>(null);
+  const wideNavRef = useRef<HTMLDivElement>(null);
+  const [navOverflows, setNavOverflows] = useState(false);
   const menuTriggerRef = useRef<HTMLButtonElement>(null);
   const menuOpenerRef = useRef<HTMLButtonElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -141,6 +154,38 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   */
   const locale = localeFromPath(pathname);
   const homeHref = locale === "en" ? "/" : `/${locale}`;
+  const longNav = LONG_NAV_LOCALES.has(locale) || navOverflows;
+
+  /*
+    Runtime guard for the list above: a translation edit or a fallback font can make any
+    locale's row too wide. The row's natural width is read once while it is visible; after
+    that it is compared with half the grid (the column it gets from 100rem up), so the
+    header can switch back when the window widens even though the row is hidden by then.
+  */
+  useEffect(() => {
+    const column = wideNavRef.current;
+    const row = column?.parentElement;
+    if (!column || !row || LONG_NAV_LOCALES.has(locale)) return;
+    let natural = 0;
+    const check = () => {
+      /* The links' own extent: the flex row is as wide as its column, so its scrollWidth
+         only reports the overflow case and would read "fits" as "exactly full". */
+      const links = column.querySelector("nav")?.children;
+      if (links?.length && column.offsetParent !== null) {
+        natural = links[links.length - 1].getBoundingClientRect().right - links[0].getBoundingClientRect().left;
+      }
+      if (!natural) return;
+      const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
+      setNavOverflows(natural > (row.clientWidth - gap) / 2);
+    };
+    check();
+    const observer = new ResizeObserver(check);
+    observer.observe(row);
+    /* The row stops growing at the layout's max width, so a label that grows (a web font
+       arriving late) is only seen through the links themselves. */
+    for (const link of Array.from(column.querySelector("nav")?.children ?? [])) observer.observe(link);
+    return () => observer.disconnect();
+  }, [locale]);
   /* Copy in the page's own language, in source order en / es / pt. */
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
   const companyCurrent = dict(companyShelfLinks, locale).some((link) =>
@@ -190,7 +235,8 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
     // pins at the very top instead of scrolling a banner away first.
     <div
       ref={headerRef}
-      className="relative sticky top-0 z-10 flex-grow-0 bg-surface"
+      data-long-nav={longNav ? "" : undefined}
+      className={cn("relative sticky top-0 z-10 flex-grow-0 bg-surface", navigationStyles.header)}
       onMouseLeave={() => setOpenShelf(null)}
       onBlurCapture={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) setOpenShelf(null);
@@ -200,7 +246,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
         {/* Nav row */}
         <div className="layout z-30 bg-surface">
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
-            <div className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12", navigationStyles.wideNavigation)}>
+            <div ref={wideNavRef} className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12", navigationStyles.wideNavigation)}>
               {/*
                 `whitespace-nowrap` is load-bearing. Unwrapped, the five labels need
                 523px and the gaps at xl were 4 × 48px, for 715px inside a 680px column,

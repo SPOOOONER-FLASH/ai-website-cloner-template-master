@@ -7,3 +7,11 @@
      display:block dropped them — the rail ran from x=0 on every 1376–1599px screen (09-25). */
   .compactNavigation { display: grid; }
 }
+
+/* Locales whose link row is wider than its column keep the compact rail at every width
+   (SiteHeader.tsx, LONG_NAV_LOCALES and the runtime check). 09-27: fr ran under the logo. */
+@media (min-width: 86rem) {
+  .header[data-long-nav] .wideNavigation { display: none; }
+  .header[data-long-nav] .controls { grid-column: 1 / -1; }
+  .header[data-long-nav] .compactNavigation { display: grid; }
+}

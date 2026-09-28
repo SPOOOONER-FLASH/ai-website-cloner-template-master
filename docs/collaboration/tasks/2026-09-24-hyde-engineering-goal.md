@@ -76,6 +76,9 @@
 | 71 | /euro-cylinder-calculator（文案会话新建，10 语种）title/description 目前写在页面 metadata；接手时按 seoTitle 规则审一遍，避免和 euro-cylinder-size-chart、length-and-split 抢词 | 09-27 完成（主词只占 calculator；7 语种 title/description 已译，正文待文案/多语言会话） |
 | 72 | 文案会话 09-27：ansi-grade-1-vs-en-1125 的 seoDescription 只讲等级对比，「按国家/项目市场选标准」留给 en-1125-or-ansi（10 语种） | 09-27 完成 |
 | 73 | 3d9ab7aec9c 发布后：IndexNow 改为只比 head+main（页头改动不再算全站），实推 6,329 条 200；产品页案例区块、计算器与文章新 title 线上实测生效 | 09-27 完成 |
+| 74 | 页头乱（甲方 09-27 截图，法语约 1530px）：左侧导航「Acheter maintenant」压到中间 HYDE logo 上；长语种导航要在撞 logo 前收进菜单 | 09-27 完成（fr/de/ru 固定紧凑导航 + 运行时守卫） |
+| 75 | 死链检查（甲方 09-27）：跑 seo:deadlinks + 线上抽查，修掉发现的 | 待做 |
+| 76 | 甲方 09-27：Applications / Guides / News 合并成一个导航栏目（新名），鼠标移上去向下弹出这三项，10 语种 | 待做 |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 等待（视觉会话） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
