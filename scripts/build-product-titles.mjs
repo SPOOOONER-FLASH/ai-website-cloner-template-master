@@ -862,6 +862,21 @@ const OVERLAY_NEXT = {
   ar: "مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
 };
 const OVERLAY_SEP = { ja: "、", ar: "، " };
+/*
+  短标题兜底（多语言 SEO 会话 09-28：七语种 420 条标题不足 30 个字符，只剩「型号 + 品类名」，
+  如 "L001 Falle | Canton Hyland"）。正文短于下限时依次补：译好的品类名（子类名已在名字里就用父类），
+  再补「工厂直供」—— 对每个产品都成立，西葡描述里本来就是同一句。仍受上限约束，补不下就不补。
+*/
+const OVERLAY_SHORT = { ja: 16, ko: 16 };
+const OVERLAY_FACTORY = {
+  fr: "direct usine",
+  de: "direkt ab Werk",
+  ja: "工場直販",
+  ko: "공장 직거래",
+  tr: "fabrikadan doğrudan",
+  ru: "напрямую с завода",
+  ar: "مباشرة من المصنع",
+};
 const OVERLAY_TITLE_MAX = { ja: 32, ko: 32 };
 const COMMA_DECIMAL = new Set(["fr", "de", "tr", "ru"]);
 const LOWER_IN_SENTENCE = new Set(["fr", "ru", "tr"]);
@@ -896,6 +911,9 @@ for (const loc of OVERLAY_LOCALES) {
   const materials = new Map(Object.entries(glossary.materialNames ?? {}).map(([k, v]) => [k.toLowerCase(), v]));
   const sep = OVERLAY_SEP[loc] ?? ", ";
   const max = OVERLAY_TITLE_MAX[loc] ?? MAX;
+  const short = OVERLAY_SHORT[loc] ?? 30;
+  const catFile = `content/i18n/${loc}/categories.json`;
+  const cats = existsSync(catFile) ? JSON.parse(readFileSync(catFile, "utf8")) : {};
   let fileChanged = false;
 
   for (const [slug, tr] of Object.entries(data)) {
@@ -937,13 +955,30 @@ for (const loc of OVERLAY_LOCALES) {
     if (dim && COMMA_DECIMAL.has(loc)) dim = dim.replace(/(\d)\.(\d)/g, "$1,$2");
 
     let title = null;
+    let body = null;
     for (const parts of [[head, dim, mat], [head, dim], [head, mat], [head]]) {
-      const body = parts.filter(Boolean).join(sep);
-      if (body.length <= max || parts.length === 1) {
-        title = `${body} | ${BRAND.en}`;
-        break;
+      body = parts.filter(Boolean).join(sep);
+      if (body.length <= max || parts.length === 1) break;
+    }
+    if (body.length < short) {
+      const path = [].concat(p.categoryPath ?? []);
+      const top = cats[path[0]];
+      const inName = (label) => {
+        const n = name.toLocaleLowerCase(loc);
+        /* Words by space; Arabic words lose the article (السقاطات → سقاط); ja/ko compare the first two characters. */
+        const words = String(label).toLocaleLowerCase(loc).split(/s+/).map((w) => (loc === "ar" ? w.replace(/^ال/, "") : w));
+        const cjk = loc === "ja" || loc === "ko";
+        return words.some((w) => (cjk ? w.length >= 2 && n.includes(w.slice(0, 2)) : w.length >= (loc === "ar" ? 3 : 4) && n.includes(w.slice(0, loc === "ar" ? 3 : 4))));
+      };
+      let cat = [top?.children?.[path[1]]?.name, top?.name].find((label) => label && !inName(label)) ?? null;
+      if (cat && LOWER_IN_SENTENCE.has(loc)) cat = String(cat).toLocaleLowerCase(loc);
+      for (const extra of [cat, OVERLAY_FACTORY[loc]]) {
+        if (!extra) continue;
+        const longer = `${body}${sep}${extra}`;
+        if (longer.length <= max) body = longer;
       }
     }
+    title = `${body} | ${BRAND.en}`;
 
     const facts = [mat, dim].filter(Boolean);
     const lead = facts.length
