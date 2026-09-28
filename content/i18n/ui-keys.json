@@ -25,34 +25,37 @@
     "src/components/locale-pages/ComparePage.tsx:27"
   ],
   "{count} {name} from the Canton Hyland {category} range, manufactured in Guangdong, China. Lead time from 30 days.": [
-    "src/components/locale-pages/CollectionPage.tsx:64"
+    "src/components/locale-pages/CollectionPage.tsx:65"
   ],
   "{count} {name} from the Canton Hyland {category} range.": [
-    "src/components/locale-pages/CollectionPage.tsx:117"
+    "src/components/locale-pages/CollectionPage.tsx:118"
   ],
   "{count} files are here to download now. Datasheets, installation guides and CAD or BIM files are sent for a named model on a real project, so we can check them against current production first.": [
     "src/components/locale-pages/DownloadsPage.tsx:54"
   ],
   "{count} models made in Guangdong, China.": [
-    "src/components/locale-pages/CategoryPage.tsx:32"
+    "src/components/locale-pages/CategoryPage.tsx:33"
   ],
   "{count} models made in Guangdong. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:30"
+    "src/components/locale-pages/CategoryPage.tsx:31"
   ],
   "{count} models manufactured in Guangdong, China. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:29"
+    "src/components/locale-pages/CategoryPage.tsx:30"
   ],
   "{count} models. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:31"
+    "src/components/locale-pages/CategoryPage.tsx:32"
   ],
   "{count} models. Narrow them by what is on your schedule.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:85"
   ],
   "{count} published models state at least one of them. Each entry gives the definition first and the consequence second, because the consequence is the half that tells you whether this is the field you are about to get wrong.": [
-    "src/components/locale-pages/GlossaryPage.tsx:45"
+    "src/components/locale-pages/GlossaryPage.tsx:48"
   ],
   "{count} records, each listed with the one model it covers. A report on one model does not cover another. Ask for a copy and we will send it in full, as the issuer requires.": [
     "src/components/locale-pages/DownloadsPage.tsx:112"
+  ],
+  "{materials}, with the tube wall thickness stated on the model where the record carries it. Ask for a load statement by model before specifying for a care facility; we send the test figure we have and say when we have none.": [
+    "src/data/category-buying-guides.ts:294"
   ],
   "{n} dimension drawings, drawn only from published dimensions": [
     "src/data/feature-columns.ts:180"
@@ -82,13 +85,13 @@
     "src/components/site/ModelLookup.tsx:92"
   ],
   "{name} catalog": [
-    "src/components/locale-pages/CategoryPage.tsx:98"
+    "src/components/locale-pages/CategoryPage.tsx:99"
   ],
   "{name}, Manufacturer": [
-    "src/components/locale-pages/CategoryPage.tsx:37"
+    "src/components/locale-pages/CategoryPage.tsx:38"
   ],
   "{name}, Manufacturer & Supplier": [
-    "src/components/locale-pages/CategoryPage.tsx:36"
+    "src/components/locale-pages/CategoryPage.tsx:37"
   ],
   "{readable} of {total} published models carry a finish in the number itself. The rest state it in the specification instead.": [
     "src/components/locale-pages/FinishesPage.tsx:42"
@@ -159,6 +162,9 @@
   "A bore is a hole that already exists. A chassis larger than the bore means re-boring a hung door; a chassis much smaller leaves the rose covering nothing.": [
     "src/data/hardware-terms.ts:206"
   ],
+  "A brass door hinge manufacturer and a stainless steel hinge supplier in one range: butt hinges, ball-bearing hinges, spring hinges, flag hinges and continuous piano hinges for timber, metal and fire doors. Buyers specify by leaf size, thickness and bearing; the {count} models are stamped and finished in our own factory for wholesale and project orders.": [
+    "src/data/category-buying-guides.ts:305"
+  ],
   "A chassis inside the door with the working parts around the spindle. The pattern used in schools, hospitals and offices, where one door is opened thousands of times a year.": [
     "src/lib/configurator.ts:426"
   ],
@@ -173,6 +179,9 @@
   ],
   "A design you are free to put your name on": [
     "src/components/site/ServicesView.tsx:67"
+  ],
+  "A door closer manufacturer in China supplying overhead closers with aluminum bodies for commercial, office and fire doors, plus a floor hinge for timber doors. Buyers select by door width and leaf weight, then ask for a double-door coordinator where a pair must close in order. {count} models, made in our own plant.": [
+    "src/data/category-buying-guides.ts:367"
   ],
   "A door hardware maker in Xiaolan, since 1998.": [
     "src/components/site/CompanyOverview.tsx:23"
@@ -232,6 +241,9 @@
   "A quotation outlives the catalog that produced it. If a number on an old schedule no longer finds a page, one of three things happened to it, and this page says which — {renamed} records were renamed, {unpublished} are in the catalog without a published photograph, and one category path was retired.": [
     "src/components/locale-pages/ModelLookupPage.tsx:40"
   ],
+  "A rim night latch is the lock a distributor buys for apartment and residential entrance doors that are already hung: it mounts on the face of the door through one cylinder hole. The {count} models here are made in our own factory for wholesale and private-label orders.": [
+    "src/data/category-buying-guides.ts:113"
+  ],
   "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalog's vocabulary.": [
     "src/data/finish-codes.ts:357"
   ],
@@ -245,7 +257,7 @@
     "src/components/site/DocumentInventory.tsx:57"
   ],
   "A term we have not defined?": [
-    "src/components/locale-pages/GlossaryPage.tsx:53"
+    "src/components/locale-pages/GlossaryPage.tsx:56"
   ],
   "a term, not a spec row": [
     "src/components/site/HardwareTerms.tsx:42"
@@ -295,6 +307,9 @@
   ],
   "All products": [
     "src/components/site/CategoryFilter.tsx:47"
+  ],
+  "All three functions are in the range: {functions}. Single-cylinder versions open from inside without a key; double-cylinder versions need a key on both sides; self-locking versions latch as the door closes.": [
+    "src/data/category-buying-guides.ts:130"
   ],
   "Already know what you need?": [
     "src/components/site/ConfiguratorIntro.tsx:43"
@@ -391,7 +406,7 @@
     "src/components/locale-pages/ContactPage.tsx:70"
   ],
   "Ask us": [
-    "src/components/locale-pages/GlossaryPage.tsx:65"
+    "src/components/locale-pages/GlossaryPage.tsx:68"
   ],
   "Assembly": [
     "src/data/capability.ts:141"
@@ -411,11 +426,32 @@
   "Backset": [
     "src/data/hardware-terms.ts:72"
   ],
+  "Backset {backset} and center distance {center} across the range. An 85mm center with a 60mm backset is the most common European case; the narrow-stile cases go down to a 25–30mm backset for aluminum doors.": [
+    "src/data/category-buying-guides.ts:492"
+  ],
+  "Backset {backset}, adjustable on the latch; deadbolt throw {throw}. Door thickness accepted is {thickness}, so the same deadbolt fits the standard residential door preparations without a new bore.": [
+    "src/data/category-buying-guides.ts:348"
+  ],
+  "Backset {backset}, door thickness {thickness}, cycle life {cycle}. The figures are on each model's table, and the comparison page lists every model side by side.": [
+    "src/data/category-buying-guides.ts:230"
+  ],
+  "Backset {backset}, door thickness {thickness}, deadbolt throw {throw}. Two bores in the door face for latch and deadbolt, at the centers on the model's drawing.": [
+    "src/data/category-buying-guides.ts:410"
+  ],
+  "Backset across the range is {backset} and the door thickness range is {thickness}; both figures are on each model's specification table, and a 60mm backset is the most common.": [
+    "src/data/category-buying-guides.ts:121"
+  ],
   "Backset and center distance: reading a lock case number": [
     "src/data/feature-columns.ts:169"
   ],
+  "Backset is {backset} and door thickness {thickness} across the range; most latches are adjustable between 60 and 70mm, so one set covers both common door preparations.": [
+    "src/data/category-buying-guides.ts:185"
+  ],
   "Backset, center distance, handing, chassis, spindle, deadbolt throw and cross bore — the terms on Canton Hyland specification tables, defined with what ordering each one wrong costs.": [
-    "src/components/locale-pages/GlossaryPage.tsx:16"
+    "src/components/locale-pages/GlossaryPage.tsx:18"
+  ],
+  "Ball bearing or plain bearing?": [
+    "src/data/category-buying-guides.ts:320"
   ],
   "Bar length": [
     "src/lib/flagship-tooling.ts:47"
@@ -443,6 +479,9 @@
   ],
   "Bolt detail": [
     "src/components/site/ProductDrawing.tsx:73"
+  ],
+  "Both are in the range. Ball-bearing hinges are specified for heavy leaves and doors in constant use, such as corridors and fire doors with closers; plain-bearing hinges suit residential doors. The bearing type is on the model's record, and the same size is usually offered in both.": [
+    "src/data/category-buying-guides.ts:322"
   ],
   "Both halves stand up to {mm}mm proud, more than the {max}mm we treat as the limit. On a door this thin there is no shorter half to order; fit a raised escutcheon or security rose on each side to take up the difference.": [
     "src/components/site/CylinderCalculator.tsx:66"
@@ -492,8 +531,29 @@
     "src/components/site/SiteFooter.tsx:253",
     "src/components/site/SiteHeader.tsx:629"
   ],
+  "Buyers come to this range for a panic bar on a fire exit door, an anti-panic device for a double door, or the outside trim that lets a keyed user in while the bar still works from inside. We manufacture the {count} models here in Zhongshan and supply them to distributors, contractors and OEM brands.": [
+    "src/data/category-buying-guides.ts:78"
+  ],
   "Calculated": [
     "src/components/site/CylinderCalculator.tsx:59"
+  ],
+  "Can I get the whole set in one finish?": [
+    "src/data/category-buying-guides.ts:264"
+  ],
+  "Can the deadbolt be keyed to match my other locks?": [
+    "src/data/category-buying-guides.ts:417"
+  ],
+  "Can the exit door be opened from outside?": [
+    "src/data/category-buying-guides.ts:93"
+  ],
+  "Can they be keyed alike for a block of flats?": [
+    "src/data/category-buying-guides.ts:137"
+  ],
+  "Can they be master keyed with the rest of the building?": [
+    "src/data/category-buying-guides.ts:237"
+  ],
+  "Can you supply them keyed alike or master keyed?": [
+    "src/data/category-buying-guides.ts:534"
   ],
   "Canton Hyland": [
     "src/components/site/CompanyOverview.tsx:22"
@@ -515,7 +575,7 @@
     "src/components/site/products-architecture.ts:216"
   ],
   "Canton Product Collection": [
-    "src/components/locale-pages/CategoryPage.tsx:84",
+    "src/components/locale-pages/CategoryPage.tsx:85",
     "src/components/locale-pages/ComparePage.tsx:78",
     "src/components/site/products-architecture.ts:193"
   ],
@@ -681,6 +741,9 @@
   "Closer and hinge in one casting — no floor work, no overhead arm.": [
     "src/lib/configurator.ts:445"
   ],
+  "Closing speed and latching speed are adjusted with the valves on the body; the record for each model says whether a hold-open arm is offered. Hold-open must not be used on a fire door, which has to close every time.": [
+    "src/data/category-buying-guides.ts:384"
+  ],
   "Code": [
     "src/components/site/OrderCodeTables.tsx:28"
   ],
@@ -808,6 +871,9 @@
   ],
   "Cylinder, LC04, finish, EN 1125…": [
     "src/components/site/GuideLibrary.tsx:13"
+  ],
+  "Cylindrical and tubular knob locks in the function sets a commercial or residential specification asks for: entrance, privacy, passage, classroom and communication. Buyers compare our heavy-duty and light-duty ranges by chassis and cycle life; the {count} models are made in our factory for wholesale, project and OEM supply.": [
+    "src/data/category-buying-guides.ts:214"
   ],
   "Cylindrical locks in the function sets a commercial specification asks for — classroom, storeroom, entrance, passage.": [
     "src/lib/configurator.ts:430"
@@ -953,6 +1019,12 @@
   "Distribution / wholesale": [
     "src/components/site/InquiryForm.tsx:36"
   ],
+  "Do they take a euro profile cylinder?": [
+    "src/data/category-buying-guides.ts:499"
+  ],
+  "Do you have a certified closer for fire doors?": [
+    "src/data/category-buying-guides.ts:390"
+  ],
   "Document": [
     "src/components/site/DocumentInventory.tsx:184"
   ],
@@ -1003,11 +1075,14 @@
   "Door Hardware Factory in China: Contact the Export Team": [
     "src/components/locale-pages/ContactPage.tsx:15"
   ],
+  "Door hardware glossary": [
+    "src/components/locale-pages/GlossaryPage.tsx:26"
+  ],
   "Door Hardware Glossary": [
-    "src/components/locale-pages/GlossaryPage.tsx:15"
+    "src/components/locale-pages/GlossaryPage.tsx:17"
   ],
   "Door hardware glossary. The words on our specification tables, and what each one costs to get wrong.": [
-    "src/components/locale-pages/GlossaryPage.tsx:32"
+    "src/components/locale-pages/GlossaryPage.tsx:35"
   ],
   "Door Hardware Manufacturer in Xiaolan, China, Since 1998": [
     "src/components/locale-pages/SimplePages.tsx:14"
@@ -1121,8 +1196,14 @@
   "Entrance and communication": [
     "src/data/finish-codes.ts:432"
   ],
+  "Entrance is keyed outside with a turn button inside; privacy has the turn button and no key, for bathrooms and bedrooms; passage latches without locking. The functions published here are {functions}. Order by function code as well as model number so the two cannot be confused.": [
+    "src/data/category-buying-guides.ts:203"
+  ],
   "Entrance, keyed outside": [
     "src/data/finish-codes.ts:396"
+  ],
+  "Entrance, privacy or passage — which function do I order?": [
+    "src/data/category-buying-guides.ts:201"
   ],
   "Escutcheon or rose depth, inside (mm)": [
     "src/components/site/CylinderCalculator.tsx:52"
@@ -1144,6 +1225,9 @@
   ],
   "Euro cylinder size chart": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:72"
+  ],
+  "Euro profile lock cylinders in solid brass, single, double and thumbturn, supplied keyed to differ, keyed alike or as a master-key system for a whole project. Buyers order by overall length and split; the {count} models here are made and pinned in our own factory.": [
+    "src/data/category-buying-guides.ts:519"
   ],
   "Events": [
     "src/components/site/menu-experience.ts:213",
@@ -1327,6 +1411,9 @@
   "flip-up grab bar": [
     "src/data/category-sourcing.ts:49"
   ],
+  "Flush bolts to hold the inactive leaf, and a door coordinator (door selector) where both leaves have closers, so the inactive leaf closes first and the active leaf latches over it. On a fire door pair both are required for the latch to engage.": [
+    "src/data/category-buying-guides.ts:474"
+  ],
   "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.": [
     "src/components/site/ProductDetail.tsx:66"
   ],
@@ -1380,13 +1467,16 @@
     "src/components/site/products-architecture.ts:179"
   ],
   "Glossary": [
-    "src/components/locale-pages/GlossaryPage.tsx:27",
+    "src/components/locale-pages/GlossaryPage.tsx:30",
     "src/components/site/menu-experience.ts:79",
     "src/components/site/menu-experience.ts:205",
     "src/components/site/SiteFooter.tsx:44"
   ],
   "grab bar": [
     "src/data/category-sourcing.ts:48"
+  ],
+  "Grab bars for accessible bathrooms and care homes: fixed straight bars and flip-up bars beside the WC, in stainless steel. Specifiers ask for length, fixing centers and whether the bar folds; the {count} models here answer those from the record, and we supply them to distributors and healthcare projects.": [
+    "src/data/category-buying-guides.ts:277"
   ],
   "Grab bars for an accessible WC or bathroom — the support a user pulls against to transfer, sit or stand.": [
     "src/lib/configurator.ts:417"
@@ -1402,6 +1492,9 @@
   ],
   "grip handle set": [
     "src/data/category-sourcing.ts:42"
+  ],
+  "Grip handle sets for entrance doors: a long pull outside, a lever inside, latch and deadbolt in one box. Distributors order them for residential and apartment entrances in the finish of the rest of the door; the {count} models are made here with an adjustable backset.": [
+    "src/data/category-buying-guides.ts:402"
   ],
   "Guangdong, China": [
     "src/data/company.ts:52"
@@ -1466,11 +1559,11 @@
   "Home": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:38",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:47",
-    "src/components/locale-pages/CategoryPage.tsx:66",
-    "src/components/locale-pages/CategoryPage.tsx:77",
+    "src/components/locale-pages/CategoryPage.tsx:67",
+    "src/components/locale-pages/CategoryPage.tsx:78",
     "src/components/locale-pages/CertificationsPage.tsx:33",
-    "src/components/locale-pages/CollectionPage.tsx:90",
-    "src/components/locale-pages/CollectionPage.tsx:102",
+    "src/components/locale-pages/CollectionPage.tsx:91",
+    "src/components/locale-pages/CollectionPage.tsx:103",
     "src/components/locale-pages/ComparePage.tsx:58",
     "src/components/locale-pages/ComparePage.tsx:70",
     "src/components/locale-pages/ConfiguratorPage.tsx:31",
@@ -1479,7 +1572,7 @@
     "src/components/locale-pages/DocumentsPage.tsx:24",
     "src/components/locale-pages/DownloadsPage.tsx:41",
     "src/components/locale-pages/FinishesPage.tsx:26",
-    "src/components/locale-pages/GlossaryPage.tsx:27",
+    "src/components/locale-pages/GlossaryPage.tsx:30",
     "src/components/locale-pages/ModelLookupPage.tsx:28",
     "src/components/locale-pages/ProductFinderPage.tsx:41",
     "src/components/locale-pages/ProductPage.tsx:94",
@@ -1489,11 +1582,17 @@
     "src/components/site/ProductsEditorialOverview.tsx:20",
     "src/components/site/ProjectDetail.tsx:14"
   ],
+  "Hook locks for sliding doors, where a straight bolt cannot travel out of the edge: the hook swings from the case into the keep. The {count} models here are zinc alloy, made for pocket doors and sliding partitions, and are supplied to distributors and door manufacturers.": [
+    "src/data/category-buying-guides.ts:546"
+  ],
   "Hospitality + Residential": [
     "src/data/home.ts:139"
   ],
   "How a set of locks relates to a set of keys. Keyed different: every lock its own key. Keyed alike: one key opens a group. Master keyed: each lock has its own key and one key above opens them all.": [
     "src/data/hardware-terms.ts:455"
+  ],
+  "How buyers specify {category}": [
+    "src/components/site/CategoryBuyingGuide.tsx:45"
   ],
   "How far the deadbolt projects from the lock face when fully thrown. Our published figure is 25mm.": [
     "src/data/hardware-terms.ts:140"
@@ -1506,6 +1605,9 @@
   ],
   "How it works": [
     "src/components/site/ConfiguratorIntro.tsx:37"
+  ],
+  "How many cycles are they tested to?": [
+    "src/data/category-buying-guides.ts:192"
   ],
   "How many cycles is the {m} tested to?": [
     "src/lib/product-faq.ts:153"
@@ -1594,8 +1696,14 @@
   "Inspection": [
     "src/data/capability.ts:154"
   ],
+  "Is it certified for fire doors?": [
+    "src/data/category-buying-guides.ts:101"
+  ],
   "Is the {m} handed?": [
     "src/lib/product-faq.ts:171"
+  ],
+  "Is the closing speed adjustable, and is there hold-open?": [
+    "src/data/category-buying-guides.ts:382"
   ],
   "ISO 9001 since 2002": [
     "src/data/company.ts:50"
@@ -1621,6 +1729,9 @@
   "It is the single most common wrong number on a door-hardware order. A door already bored for 60mm will not take a 70mm lock: the handle lands in the wrong place and the latch does not reach the strike. Metal cannot be adjusted on site, so a wrong backset is a container that gets stored rather than fitted.": [
     "src/data/hardware-terms.ts:84"
   ],
+  "Keyed-alike groups and master-key systems are quoted per project. Send the door schedule with the inquiry; the cylinders are cut before shipment, and the keying plan has to be decided before the order is confirmed.": [
+    "src/data/category-buying-guides.ts:139"
+  ],
   "Keying": [
     "src/data/hardware-terms.ts:449"
   ],
@@ -1638,6 +1749,9 @@
   ],
   "Latch only. Specified for corridors and rooms that must never be lockable.": [
     "src/data/finish-codes.ts:418"
+  ],
+  "Leaf size is stated per model in inches and millimeters — 4\" × 3\" is the most common — in the materials {materials}. Leaf thickness is stated per model, and several sizes are made to order for a project quantity.": [
+    "src/data/category-buying-guides.ts:313"
   ],
   "Leave unticked for a lock case centered in the leaf, which is most mortise cases in most doors.": [
     "src/components/site/CylinderCalculator.tsx:55"
@@ -1700,13 +1814,13 @@
     "src/components/site/SiteHeader.tsx:386"
   ],
   "Manufactured in Zhongshan, Guangdong. Production lead time starts at 30 days from order confirmation, and we produce under our customers' own brands.": [
-    "src/components/locale-pages/CollectionPage.tsx:125"
+    "src/components/locale-pages/CollectionPage.tsx:126"
   ],
   "Manufacturer": [
     "src/data/company.ts:51"
   ],
   "Manufacturer & Supplier": [
-    "src/components/locale-pages/CollectionPage.tsx:59"
+    "src/components/locale-pages/CollectionPage.tsx:60"
   ],
   "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
     "src/components/locale-pages/HomePage.tsx:29"
@@ -1732,6 +1846,9 @@
   "Master key plan, input sheet": [
     "content/news/master-key-systems-how-many-levels-you-need.json"
   ],
+  "Match the backset first: latches here are published at {backset}, with the faceplate size on each record. A 60/70mm adjustable latch covers both common door preparations for tubular lever and knob sets.": [
+    "src/data/category-buying-guides.ts:465"
+  ],
   "Material": [
     "src/components/site/ProductDetail.tsx:59"
   ],
@@ -1747,6 +1864,12 @@
   "Materials + Engineering": [
     "src/data/home.ts:166"
   ],
+  "Materials on the records are {materials}; sheet thickness is stated per model where it matters for load, such as shelves and grab rails. Every visible face is polished before finishing.": [
+    "src/data/category-buying-guides.ts:257"
+  ],
+  "Materials stated on the records are {materials}. Grade 304 is the standard for interior and sheltered entrance doors; ask for 316 when the door faces a coastal or chlorinated environment.": [
+    "src/data/category-buying-guides.ts:166"
+  ],
   "Matte Black": [
     "src/data/finish-codes.ts:203"
   ],
@@ -1755,6 +1878,9 @@
   ],
   "Measure the door with a caliper at the lock edge. A tape hooked over a rebated edge reads the rebate, and the error always runs toward a cylinder that is too short.": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:51"
+  ],
+  "Measure the leaf, not the opening. Published bar lengths in this range run {barLength}; several models are cut to length on request. Give us the leaf width and thickness with the inquiry and we confirm the model.": [
+    "src/data/category-buying-guides.ts:86"
   ],
   "Mechanism": [
     "src/components/site/HardwareTerms.tsx:37"
@@ -1784,7 +1910,7 @@
     "src/components/site/ModelIndex.tsx:28"
   ],
   "Model number lookup": [
-    "src/components/locale-pages/GlossaryPage.tsx:64"
+    "src/components/locale-pages/GlossaryPage.tsx:67"
   ],
   "Model Number Lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:16"
@@ -1840,6 +1966,9 @@
   ],
   "Mortise Lock Cases": [
     "src/data/home.ts:64"
+  ],
+  "Mortise lock cases for timber, metal and aluminum narrow-stile doors, bought by distributors and door manufacturers who fit their own handles and cylinders. A lock body is specified by two numbers, backset and center distance, and both are in the model name of most of the {count} cases we make.": [
+    "src/data/category-buying-guides.ts:484"
   ],
   "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalog.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:19"
@@ -1997,6 +2126,9 @@
   "OEM, private label and everything else": [
     "src/components/locale-pages/ContactPage.tsx:24"
   ],
+  "Often, when backset, center distance and faceplate size match. Send the faceplate drawing or the existing model number; we compare it against the drawings we publish and say which case is a drop-in and which needs a new cut-out.": [
+    "src/data/category-buying-guides.ts:509"
+  ],
   "Old address": [
     "src/components/site/ModelLookup.tsx:87"
   ],
@@ -2106,7 +2238,7 @@
     "src/components/locale-pages/FinishesPage.tsx:14"
   ],
   "Order codes and finishes": [
-    "src/components/locale-pages/GlossaryPage.tsx:63"
+    "src/components/locale-pages/GlossaryPage.tsx:66"
   ],
   "Order from our range": [
     "src/components/site/CylinderCalculator.tsx:63"
@@ -2200,6 +2332,9 @@
   "Patch fittings, clamps and locks that grip toughened glass without a frame, holding the leaf at its corners.": [
     "src/lib/configurator.ts:404"
   ],
+  "Patch fittings, glass door locks and pull handles for frameless toughened glass doors in shopfronts and offices. A patch fitting is specified by the glass thickness it clamps; the {count} models here are stainless steel and are supplied to glaziers, shopfitters and distributors.": [
+    "src/data/category-buying-guides.ts:429"
+  ],
   "Patch, lock and pull families": [
     "src/components/site/products-architecture.ts:180"
   ],
@@ -2269,7 +2404,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:26"
   ],
   "Product data shown here is limited to verified client records. Additional references from the legacy catalog are being prepared for structured publication.": [
-    "src/components/locale-pages/CategoryPage.tsx:92"
+    "src/components/locale-pages/CategoryPage.tsx:93"
   ],
   "Product filters": [
     "src/components/site/CategoryFilter.tsx:49"
@@ -2299,10 +2434,10 @@
   "Products": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:39",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:48",
-    "src/components/locale-pages/CategoryPage.tsx:67",
-    "src/components/locale-pages/CategoryPage.tsx:78",
-    "src/components/locale-pages/CollectionPage.tsx:91",
-    "src/components/locale-pages/CollectionPage.tsx:103",
+    "src/components/locale-pages/CategoryPage.tsx:68",
+    "src/components/locale-pages/CategoryPage.tsx:79",
+    "src/components/locale-pages/CollectionPage.tsx:92",
+    "src/components/locale-pages/CollectionPage.tsx:104",
     "src/components/locale-pages/ComparePage.tsx:59",
     "src/components/locale-pages/ComparePage.tsx:71",
     "src/components/locale-pages/ConfiguratorPage.tsx:32",
@@ -2340,6 +2475,21 @@
   ],
   "Public-building corridor with glazed partitions and fire-egress doors": [
     "src/data/home.ts:62"
+  ],
+  "Published door widths run {doorWidth} and leaf capacities {capacity}. Pick the model whose band contains your leaf weight, then confirm the mounting position on the drawing; an exposed door or a wind load moves the choice one band up.": [
+    "src/data/category-buying-guides.ts:375"
+  ],
+  "Published handle lengths run {sizes}, back-to-back through drilled glass with no frame to fix to. Center distance is on each model's record where it is stated.": [
+    "src/data/category-buying-guides.ts:446"
+  ],
+  "Published lengths run {sizes}, in {materials}. The case drawing gives the mortise depth and the keep position; both are needed before the door is routed.": [
+    "src/data/category-buying-guides.ts:554"
+  ],
+  "Published lengths run {sizes}. Straight bars are listed by length; flip-up bars by their arm length in the folded and lowered position. Fixing centers are on each model's drawing where one is published.": [
+    "src/data/category-buying-guides.ts:285"
+  ],
+  "Published lengths run {sizes}. The split is chosen from the door thickness and the trim on each side; our euro cylinder calculator works it out from those two figures, and the length goes on the order line.": [
+    "src/data/category-buying-guides.ts:527"
   ],
   "published models. Select a product to explore.": [
     "src/components/site/ProductsEditorialOverview.tsx:25"
@@ -2407,7 +2557,7 @@
   "Reference": [
     "src/components/locale-pages/DownloadsPage.tsx:137",
     "src/components/locale-pages/FinishesPage.tsx:29",
-    "src/components/locale-pages/GlossaryPage.tsx:30",
+    "src/components/locale-pages/GlossaryPage.tsx:33",
     "src/components/locale-pages/ModelLookupPage.tsx:31"
   ],
   "Reference available on request": [
@@ -2552,7 +2702,7 @@
     "src/components/site/products-architecture.ts:118"
   ],
   "See the whole {category} range": [
-    "src/components/locale-pages/CollectionPage.tsx:132"
+    "src/components/locale-pages/CollectionPage.tsx:133"
   ],
   "See what each choice decides": [
     "src/components/site/ConfiguratorIntro.tsx:40"
@@ -2588,7 +2738,7 @@
     "src/components/site/InquiryForm.tsx:44"
   ],
   "Send it. If it is a word on one of our own pages that is not here, that is a gap in this page rather than a question about the word, and we would rather fix the page. The two references beside this one answer the questions that come next: how our order codes are built, and what happened to a model number that no longer resolves.": [
-    "src/components/locale-pages/GlossaryPage.tsx:59"
+    "src/components/locale-pages/GlossaryPage.tsx:62"
   ],
   "Send the door schedule to our export team": [
     "src/components/site/menu-experience.ts:59"
@@ -2670,8 +2820,20 @@
   "Sign-up here": [
     "src/components/site/SiteFooter.tsx:216"
   ],
+  "Single cylinder has a thumbturn inside and is the usual choice for an entrance door, because it opens from inside without a key. Double cylinder needs a key on both sides and is specified where a glazed panel sits within reach of the lock. Check local egress rules before choosing double cylinder on an exit door.": [
+    "src/data/category-buying-guides.ts:357"
+  ],
+  "Single cylinder, double cylinder or self-locking?": [
+    "src/data/category-buying-guides.ts:128"
+  ],
   "Single door": [
     "src/data/finish-codes.ts:536"
+  ],
+  "Single or double cylinder — which one?": [
+    "src/data/category-buying-guides.ts:355"
+  ],
+  "Single- and double-cylinder deadbolts for residential entrance doors, bought by hardware distributors alongside our knob locks and lever sets so the whole door keys alike. The {count} models are made here with a 25mm throw and an adjustable backset.": [
+    "src/data/category-buying-guides.ts:340"
   ],
   "sliding hook lock": [
     "src/data/category-sourcing.ts:47"
@@ -2697,6 +2859,9 @@
   "Specifications as a spreadsheet": [
     "src/components/site/DocumentInventory.tsx:84"
   ],
+  "Specifiers searching for a stainless steel door handle manufacturer usually need three things confirmed: the grade of steel, the door thickness the rose or plate will take, and whether the lever is solid or hollow. The {count} models here are stainless throughout, made for entrance, glass and commercial doors.": [
+    "src/data/category-buying-guides.ts:149"
+  ],
   "Specify": [
     "src/components/site/menu-experience.ts:189"
   ],
@@ -2718,8 +2883,14 @@
   "Spindle": [
     "src/data/hardware-terms.ts:339"
   ],
+  "Stainless hinges are supplied satin or polished from the base metal. Brass and steel hinges are plated — polished brass, satin brass, antique brass, antique copper and chrome are the codes on the records, with other finishes to order — and the finish code goes on the order line with the size.": [
+    "src/data/category-buying-guides.ts:330"
+  ],
   "Stainless Steel": [
     "src/data/finish-codes.ts:103"
+  ],
+  "Stainless steel bathroom accessories for hotel, residential and commercial washrooms: towel rails, robe hooks, paper holders, shelves and shower baskets. Buyers order this range as a matched set in one finish; the {count} models are stamped and polished in our own plant for wholesale and OEM supply.": [
+    "src/data/category-buying-guides.ts:249"
   ],
   "stainless steel handle": [
     "src/data/category-sourcing.ts:35"
@@ -2753,6 +2924,9 @@
   ],
   "Start with the evidence.": [
     "src/components/site/GuideListing.tsx:18"
+  ],
+  "stated on {count} of {total} models": [
+    "src/lib/collection-spec-range.ts:186"
   ],
   "Step": [
     "src/components/site/Configurator.tsx:77",
@@ -2815,6 +2989,12 @@
   "Test documents, with their exact scope": [
     "src/components/site/DocumentInventory.tsx:98"
   ],
+  "Test reports are published per model on the certificates page, not per range. Where a model has no report yet, the page says so, and we do not describe it as certified. Ask for the report by model number before you specify.": [
+    "src/data/category-buying-guides.ts:103"
+  ],
+  "Test reports are published per model on the certificates page; a closer without a report is not described as fire-door rated. Ask for the report by model number, and for a double fire door add a coordinator so the inactive leaf closes first.": [
+    "src/data/category-buying-guides.ts:392"
+  ],
   "Thank you. Your inquiry has been sent to our export team.": [
     "src/components/site/InquiryForm.tsx:46"
   ],
@@ -2863,8 +3043,14 @@
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
     "src/components/site/SiteFooter.tsx:209"
   ],
+  "The cases with a cylinder hole take a euro profile cylinder, sized to the door thickness; our lock cylinders page lists the published lengths. Cylinder and handles are ordered separately from the case, which is how door factories want it.": [
+    "src/data/category-buying-guides.ts:501"
+  ],
   "The center distance on the {m} is {v}.": [
     "src/lib/product-faq.ts:147"
+  ],
+  "The chassis. Heavy-duty cylindrical locks use a steel chassis and latch case for schools, offices and heavy residential use; light-duty and tubular locks use a lighter mechanism for standard residential doors. Both share the same backset and door-thickness figures, so the door preparation is the same.": [
+    "src/data/category-buying-guides.ts:222"
   ],
   "The count of matching models falls as you answer, so you can see which question actually mattered.": [
     "src/components/site/ConfiguratorIntro.tsx:40"
@@ -2929,6 +3115,9 @@
   "The mechanism itself, let into a pocket cut in the edge of the door. Handles and cylinders are ordered separately and fit to it.": [
     "src/lib/configurator.ts:390"
   ],
+  "The model numbers or a drawing, the finish, the quantity per model and the destination port. Minimum order and lead time are confirmed per line; most models fall between 300 and 5,000 pieces, and production starts at 30 days from order confirmation. Samples are available before a production order.": [
+    "src/data/category-buying-guides.ts:69"
+  ],
   "The most common suffix in the catalog. Key outside, turn or lever inside.": [
     "src/data/finish-codes.ts:400"
   ],
@@ -2950,6 +3139,9 @@
   "The part inside the door that keeps its word. Mortise cases by backset and bolt.": [
     "src/components/site/products-architecture.ts:52"
   ],
+  "The parts that finish a door schedule: latches for tubular levers, flush bolts and door coordinators for double doors, door viewers, door stops, security door guards, occupied indicators for cubicles and power-transfer devices for electrified locks. A latch hardware catalog in one place: {count} models, made or finished here.": [
+    "src/data/category-buying-guides.ts:457"
+  ],
   "The plate let into the frame that the latch or bolt enters. Its lip guides the latch in as the door closes.": [
     "src/data/hardware-terms.ts:325"
   ],
@@ -2958,6 +3150,15 @@
   ],
   "The product overview": [
     "src/components/site/WelcomeIntro.tsx:24"
+  ],
+  "The published cycle life is {cycle}. It is a laboratory figure, comparable between products tested the same way, and it is stated on the specification table of each model that carries it.": [
+    "src/data/category-buying-guides.ts:194"
+  ],
+  "The published range is {thickness}. The figure is set by the spindle and fixing screws supplied; a thicker door needs a longer spindle, which we can supply when the thickness is on the order.": [
+    "src/data/category-buying-guides.ts:157"
+  ],
+  "The published range is {thickness}. Toughened glass cannot be cut after tempering, so the fitting is chosen to the glass, not the other way round; give us the glass thickness and the cut-out drawing with the inquiry.": [
+    "src/data/category-buying-guides.ts:437"
   ],
   "The range of leaf thickness a product is built to fit. It is a range rather than a figure because the spindle and the fixing screws have travel in them.": [
     "src/data/hardware-terms.ts:120"
@@ -3020,13 +3221,16 @@
     "src/components/site/DocumentInventory.tsx:113"
   ],
   "These {count} terms were not chosen from a trade dictionary. They are the specification labels that appear most often on our own published product pages, counted — so every one of them is a field you will meet on this site, and the figure beside each entry is how many models state it.": [
-    "src/components/locale-pages/GlossaryPage.tsx:39"
+    "src/components/locale-pages/GlossaryPage.tsx:42"
   ],
   "These are outside trim handles for panic exit devices, not the devices themselves — each record's own Type row said so while its name did not. Nothing about the part changed.": [
     "src/components/site/ModelLookup.tsx:34"
   ],
   "These are printed as text rather than links on purpose: the page behind each one has no photograph on it yet, and sending you to a blank page is not an answer.": [
     "src/components/site/ModelLookup.tsx:97"
+  ],
+  "These are tubular lever handle sets: lever, latch and spindle in one box, bored straight through the door. They are what a hardware wholesaler orders for apartments, hotels and interior doors, in entrance, privacy and passage functions. {count} models, manufactured here, with finishes to match the rest of the door.": [
+    "src/data/category-buying-guides.ts:177"
   ],
   "This is the line that goes on a door schedule. It fills in as you answer, and you can copy it straight out.": [
     "src/components/site/Configurator.tsx:82"
@@ -3214,20 +3418,53 @@
   "Website inquiry": [
     "src/components/site/InquiryForm.tsx:51"
   ],
+  "What {name} are": [
+    "src/components/site/CollectionNote.tsx:22"
+  ],
   "What a door schedule actually contains, by building type — which lock, which handle, which closer, and where each part sits on the leaf.": [
     "src/components/site/ProjectListing.tsx:24"
+  ],
+  "What are they made of?": [
+    "src/data/category-buying-guides.ts:292"
   ],
   "What are you trying to specify?": [
     "src/components/site/menu-experience.ts:45"
   ],
+  "What backset and center distance do you make?": [
+    "src/data/category-buying-guides.ts:490"
+  ],
+  "What backset and door thickness do the sets take?": [
+    "src/data/category-buying-guides.ts:183"
+  ],
+  "What backset and door thickness do they take?": [
+    "src/data/category-buying-guides.ts:119"
+  ],
+  "What backset and throw do they have?": [
+    "src/data/category-buying-guides.ts:346"
+  ],
   "What backset does the {m} use?": [
     "src/lib/product-faq.ts:117"
+  ],
+  "What backset, door thickness and cycle life are published?": [
+    "src/data/category-buying-guides.ts:228"
   ],
   "What buyers asked for this quarter": [
     "src/data/demand-showcase.ts:98"
   ],
   "What cylinder does the {m} take?": [
     "src/lib/product-faq.ts:189"
+  ],
+  "What do I need for a double door?": [
+    "src/data/category-buying-guides.ts:472"
+  ],
+  "What do you need from me to quote?": [
+    "src/data/category-buying-guides.ts:64"
+  ],
+  "What door preparation do they need?": [
+    "src/data/category-buying-guides.ts:408"
+  ],
+  "What door thickness do the handles fit?": [
+    "src/data/category-buying-guides.ts:155"
   ],
   "What door thickness does the {m} suit?": [
     "src/lib/product-faq.ts:126"
@@ -3251,11 +3488,23 @@
   "What is the center distance on the {m}?": [
     "src/lib/product-faq.ts:144"
   ],
+  "What is the difference between heavy duty and light duty?": [
+    "src/data/category-buying-guides.ts:220"
+  ],
+  "What lengths are the pull handles?": [
+    "src/data/category-buying-guides.ts:444"
+  ],
+  "What material and wall thickness are the pieces made from?": [
+    "src/data/category-buying-guides.ts:255"
+  ],
   "What people reach for first. Grip, pull and concealed handles for entrance and sliding doors.": [
     "src/components/site/products-architecture.ts:88"
   ],
   "What size is the {m}?": [
     "src/lib/product-faq.ts:180"
+  ],
+  "What sizes are the hook locks?": [
+    "src/data/category-buying-guides.ts:552"
   ],
   "What the lock does rather than what it looks like: entrance (keyed outside), privacy (turn button inside, emergency release outside), passage (latch only, no locking), classroom, communication. The function is the last two letters of our order code.": [
     "src/data/hardware-terms.ts:476"
@@ -3264,7 +3513,7 @@
     "src/components/site/HardwareGlossary.tsx:36"
   ],
   "What this range covers": [
-    "src/lib/collection-spec-range.ts:176"
+    "src/lib/collection-spec-range.ts:181"
   ],
   "What type of hardware is the {m}?": [
     "src/lib/product-faq.ts:90"
@@ -3290,17 +3539,47 @@
   "Where you will sell it, and the standard it must meet": [
     "src/components/site/ServicesView.tsx:52"
   ],
+  "Which closer fits my door width and weight?": [
+    "src/data/category-buying-guides.ts:373"
+  ],
   "Which edge the door is hinged on and which way it swings, described from a fixed point of view so that two people can agree about it. Many of our models are reversible, which means the handing is set during installation rather than at the order.": [
     "src/data/hardware-terms.ts:263"
   ],
+  "Which finishes can I order hinges in?": [
+    "src/data/category-buying-guides.ts:328"
+  ],
   "Which finishes is the {m} available in?": [
     "src/lib/product-faq.ts:108"
+  ],
+  "Which glass thickness do the patch fittings take?": [
+    "src/data/category-buying-guides.ts:435"
+  ],
+  "Which latch fits my lever set?": [
+    "src/data/category-buying-guides.ts:463"
+  ],
+  "Which lengths and splits are available?": [
+    "src/data/category-buying-guides.ts:525"
+  ],
+  "Which lengths are available?": [
+    "src/data/category-buying-guides.ts:283"
+  ],
+  "Which push bar length fits my door?": [
+    "src/data/category-buying-guides.ts:84"
+  ],
+  "Which sizes and thicknesses do you make?": [
+    "src/data/category-buying-guides.ts:311"
+  ],
+  "Which steel grade is used?": [
+    "src/data/category-buying-guides.ts:164"
   ],
   "White": [
     "src/data/finish-codes.ts:362"
   ],
   "Why a double fire door needs a coordinator": [
     "src/data/feature-columns.ts:131"
+  ],
+  "Will your case fit another brand's faceplate cut-out?": [
+    "src/data/category-buying-guides.ts:507"
   ],
   "with its backset, center distance, finish and handing: the values an order needs.": [
     "src/components/site/ConfiguratorIntro.tsx:36"
@@ -3328,6 +3607,21 @@
   ],
   "Written out in full on 42 catalog records as “Satin Stainless Steel (SSS)”. Solid stainless, not a plating — the color goes all the way through.": [
     "src/data/finish-codes.ts:88"
+  ],
+  "Yes, with an outside lever trim. The trim is a separate part fitted to the same device: a keyed lever lets authorized users in, and the bar inside still opens the door with one push. Trims are listed under Exterior Trim in this category.": [
+    "src/data/category-buying-guides.ts:95"
+  ],
+  "Yes. Finishes stated across the range are {finishes}; order every piece of a washroom in the same finish code and they are polished and plated together so the tones match.": [
+    "src/data/category-buying-guides.ts:266"
+  ],
+  "Yes. Keyed alike, keyed to differ in groups, and master-key hierarchies from one master down to change keys are cut to a keying schedule agreed before production. The schedule cannot be changed after the cylinders are pinned without new cylinders.": [
+    "src/data/category-buying-guides.ts:536"
+  ],
+  "Yes. Keyed-alike and master-key systems are cut to a keying schedule agreed before production, and the knob locks can be keyed to match our deadbolts. Send the door list and the levels you need with the inquiry.": [
+    "src/data/category-buying-guides.ts:239"
+  ],
+  "Yes. The cylinder can be keyed alike with our bored locks and deadbolts, or cut into a master-key system. State the keying with the order; cylinders are cut before shipment.": [
+    "src/data/category-buying-guides.ts:419"
   ],
   "Your brand, on every layer": [
     "src/components/site/ServicesView.tsx:73"

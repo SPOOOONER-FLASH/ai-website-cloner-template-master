@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { CategoryBuyingGuide } from "@/components/site/CategoryBuyingGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
@@ -176,6 +177,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <ProductIndexList products={products} label={`${products.length} ${category.name.toLowerCase()}`} />
         </div>
       </section>
+      <CategoryBuyingGuide categorySlug={category.slug} categoryName={category.name} products={products} />
       <SpecMatrix products={products} categorySlug={category.slug} showCompareLink />
     </main>
     </>

@@ -6,6 +6,7 @@ import { JsonLd, breadcrumbSchema, videoObjectSchema } from "@/components/site/J
 import { findCategoryByPath } from "@/data/categories";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
+import { specValueFor } from "@/lib/imperial";
 import {
   clock,
   getWatchPageProduct,
@@ -105,6 +106,24 @@ export default async function VideoWatchPage({ params }: Props) {
           <div className="col-span-full lg:col-span-7 xl:col-span-14">
             {product.summary ? (
               <p className="max-w-[64ch] text-c1 text-ink">{product.summary}</p>
+            ) : null}
+            {product.specs?.length ? (
+              <>
+                <h2 className="mt-32 text-c1 font-semibold text-ink">
+                  {product.modelTbc ? "Specifications" : `${product.model} specifications`}
+                </h2>
+                <dl className="mt-12 max-w-[64ch] border-t border-line">
+                  {product.specs.slice(0, 8).map((spec) => (
+                    <div key={`${spec.label}-${spec.value}`} className="grid grid-cols-2 gap-16 border-b border-line py-8 text-c2">
+                      <dt className="text-ink-secondary">{spec.label}</dt>
+                      <dd className="tabular-nums text-ink">
+                        {specValueFor(spec.value, "en")}
+                        {spec.unit ? ` ${spec.unit}` : ""}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </>
             ) : null}
           </div>
           <div className="col-span-full flex flex-col gap-16 lg:col-span-3 lg:col-start-9 xl:col-span-6 xl:col-start-17">

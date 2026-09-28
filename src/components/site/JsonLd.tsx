@@ -10,6 +10,7 @@ import { serializeJsonLd } from "@/lib/json-ld";
 import { productFaqItems } from "@/lib/product-faq";
 import type {
   BreadcrumbList,
+  DefinedTermSet,
   FAQPage,
   ItemList,
   NewsArticle as SchemaNewsArticle,
@@ -21,7 +22,7 @@ import type {
   WebSite,
   WithContext,
 } from "schema-dts";
-import { t } from "@/lib/i18n";
+import { t, tx } from "@/lib/i18n";
 
 /**
  * Schema.org structured data.
@@ -404,6 +405,31 @@ export function breadcrumbSchema(
 }
 
 /** Category listing as an ItemList, so Google understands the collection. */
+/**
+ * DefinedTermSet for the glossary: one DefinedTerm per entry, named and defined in the page's
+ * language, so the definition is attributable to the page that prints it (2026-09-28).
+ */
+export function definedTermSetSchema(
+  terms: readonly { term: string; termEs?: string; termPt?: string; definition: string; definitionEs?: string; definitionPt?: string; id: string }[],
+  pageUrl: string,
+  name: string,
+  locale: Locale = "en",
+): WithContext<DefinedTermSet> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": pageUrl,
+    name,
+    hasDefinedTerm: terms.map((term) => ({
+      "@type": "DefinedTerm",
+      "@id": `${pageUrl}#${term.id}`,
+      name: tx(locale, term.term, { es: term.termEs, pt: term.termPt }),
+      description: tx(locale, term.definition, { es: term.definitionEs, pt: term.definitionPt }),
+      inDefinedTermSet: pageUrl,
+    })),
+  };
+}
+
 export function itemListSchema(name: string, urls: string[]): WithContext<ItemList> {
   return {
     "@context": "https://schema.org",

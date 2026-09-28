@@ -5,6 +5,7 @@ import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { CategoryBuyingGuide } from "@/components/site/CategoryBuyingGuide";
 import { getTopLevelCategories } from "@/data/categories";
 import { categorySourcingLine } from "@/data/category-sourcing";
 import type { Locale } from "@/data/locales";
@@ -101,6 +102,7 @@ export function CategoryPage({ locale, slug }: { locale: Locale; slug: string })
             <ProductIndexList products={products} label={`${products.length} ${lower(name, locale)}`} locale={locale} />
           </div>
         </section>
+        <CategoryBuyingGuide categorySlug={category.slug} categoryName={name} products={products} locale={locale} />
         <SpecMatrix products={products} categorySlug={category.slug} locale={locale} showCompareLink />
       </main>
     </>

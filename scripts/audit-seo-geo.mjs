@@ -99,9 +99,17 @@ for (const file of files) {
 
 /* --------------------------------------------------------------- sitemap */
 
-const sitemapPath = join(OUT, "sitemap.xml");
-const sitemapUrls = existsSync(sitemapPath)
-  ? [...readFileSync(sitemapPath, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)]
+/*
+  Every sitemap robots.txt declares — /sitemap.xml is English only since 2026-09-27 and each
+  locale carries its own /<code>/sitemap.xml. Reading one file reported 5,456 indexable pages
+  as "absent from the sitemap" on 2026-09-28; they were all in the locale files.
+*/
+const robotsText = existsSync(join(OUT, "robots.txt")) ? readFileSync(join(OUT, "robots.txt"), "utf8") : "";
+const sitemapFiles = [...robotsText.matchAll(/^Sitemap:\s*https?:\/\/[^/]+(\/\S*)/gim)].map((m) => join(OUT, m[1]));
+if (!sitemapFiles.length) sitemapFiles.push(join(OUT, "sitemap.xml"));
+const sitemapPath = sitemapFiles[0];
+const sitemapUrls = sitemapFiles.some(existsSync)
+  ? sitemapFiles.filter(existsSync).flatMap((f) => [...readFileSync(f, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)])
       .map((m) => m[1].replace(ORIGIN, "") || "/")
   : [];
 
@@ -238,7 +246,7 @@ if (noindexInSitemap.length) {
 }
 
 const notInSitemap = [...pages.values()]
-  .filter((p) => !p.noindex && !sitemapUrls.includes(p.route) && !p.route.startsWith("/es/"))
+  .filter((p) => !p.noindex && !sitemapUrls.includes(p.route))
   .map((p) => p.route);
 if (notInSitemap.length) {
   add("warn", "indexable-not-in-sitemap", "indexable but absent from the sitemap", notInSitemap);

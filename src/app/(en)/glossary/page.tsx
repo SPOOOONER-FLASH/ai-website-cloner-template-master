@@ -3,6 +3,8 @@ import { ArrowLink } from "@/components/site/ArrowLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { HardwareTerms } from "@/components/site/HardwareTerms";
 import { HARDWARE_TERMS } from "@/data/hardware-terms";
+import { JsonLd, definedTermSetSchema } from "@/components/site/JsonLd";
+import { absoluteUrl } from "@/data/site";
 import { modelsWithGlossaryTerm } from "@/lib/hardware-term-usage";
 import { pageMetadata } from "@/lib/seo";
 
@@ -46,6 +48,7 @@ export const metadata: Metadata = pageMetadata({
 export default function GlossaryPage() {
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+      <JsonLd data={definedTermSetSchema(HARDWARE_TERMS, absoluteUrl("/glossary/"), "Door hardware glossary", "en")} />
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid grid-cols gap-x gap-y-48">
           <div className="col-span-full">
