@@ -133,13 +133,15 @@ export function AuthorProfile({ locale, slug }: { locale: Locale; slug: string }
           <div className="col-span-full lg:col-span-6 xl:col-span-12">
             {/*
               The client's own photograph of the person this page is about, supplied
-              2026-09-28. `alt` is empty because the <h1> directly below already gives the
-              name, and a screen reader reading it twice is worse than reading it once.
+              2026-09-28. The alt names the person: image search indexes it, the SEO/GEO
+              graph audit counts an unnamed portrait as a missing alt (830 across the ten
+              locales on 2026-09-28), and a screen reader announcing the name beside the
+              heading costs one short repeat.
             */}
             {portrait ? (
               <img
                 src={portrait.portraitSrc}
-                alt=""
+                alt={author.name}
                 width={portrait.portraitWidth}
                 height={portrait.portraitHeight}
                 className="mb-32 block h-auto w-[18rem] max-w-full rounded-[2px]"

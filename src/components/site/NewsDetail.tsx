@@ -237,13 +237,13 @@ export function NewsDetail({
               <div className="mt-16 flex items-start gap-12">
                 {/*
                   A real photograph of the person named, supplied by the client, or nothing.
-                  `alt` is empty on purpose: the name is right beside it, and a screen reader
-                  announcing "Johnson Liu, Johnson Liu" is worse than announcing it once.
+                  The alt names the author: image search indexes the portrait and the
+                  SEO/GEO graph audit counts an unnamed one as a missing alt (2026-09-28).
                 */}
                 {portrait ? (
                   <img
                     src={portrait.src}
-                    alt=""
+                    alt={article.author?.name ?? ""}
                     width={portrait.width}
                     height={portrait.height}
                     loading="lazy"

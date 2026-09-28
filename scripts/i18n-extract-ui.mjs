@@ -19,7 +19,8 @@
  * skipped; `dict()` passes those through untouched anyway.
  */
 import ts from "typescript";
-import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
+import { safeWrite } from "./lib/safe-write.mjs";
 import { join, relative } from "node:path";
 
 const ROOT = "src";
@@ -184,5 +185,5 @@ for (const m of JSON.parse(readFileSync("public/downloads/models/index.json", "u
 }
 
 const sorted = Object.fromEntries([...keys.entries()].sort(([a], [b]) => a.localeCompare(b, "en")));
-writeFileSync(OUT, JSON.stringify(sorted, null, 2) + "\n");
+safeWrite(OUT, JSON.stringify(sorted, null, 2) + "\n");
 console.log(`${OUT}: ${keys.size} interface sentences from src/`);

@@ -75,9 +75,9 @@ const ORDERING: GuideItem = {
 export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
   "panic-exit-devices": {
     intro: {
-      en: "Buyers come to this range for a panic bar on a fire exit door, an anti-panic device for a double door, or the outside trim that lets a keyed user in while the bar still works from inside. We manufacture the {count} models here in Zhongshan and supply them to distributors, contractors and OEM brands.",
-      es: "Los compradores llegan a esta gama buscando una barra antipánico para una puerta de salida de emergencia, un dispositivo antipánico para puerta doble o la manilla exterior que deja entrar con llave mientras la barra sigue funcionando desde dentro. Fabricamos los {count} modelos en Zhongshan y los suministramos a distribuidores, contratistas y marcas OEM.",
-      pt: "Os compradores chegam a esta linha procurando uma barra antipânico para porta de saída de emergência, um dispositivo antipânico para porta dupla ou o trim externo que deixa entrar com chave enquanto a barra continua funcionando por dentro. Fabricamos os {count} modelos em Zhongshan e fornecemos a distribuidores, construtoras e marcas OEM.",
+      en: "Buyers come to this range for a panic bar on a fire exit door, an anti-panic device for a double door, or the outside trim that lets a keyed user in while the bar still works from inside. As a panic exit device manufacturer we make the {count} models here in Zhongshan and supply them wholesale to distributors, contractors and OEM brands.",
+      es: "Los compradores llegan a esta gama buscando una barra antipánico para una puerta de salida de emergencia, un dispositivo antipánico para puerta doble o la manilla exterior que deja entrar con llave mientras la barra sigue funcionando desde dentro. Como fabricante de barras antipánico fabricamos los {count} modelos en Zhongshan y los suministramos al por mayor a distribuidores, contratistas y marcas OEM.",
+      pt: "Os compradores chegam a esta linha procurando uma barra antipânico para porta de saída de emergência, um dispositivo antipânico para porta dupla ou o trim externo que deixa entrar com chave enquanto a barra continua funcionando por dentro. Como fabricante de barras antipânico, fabricamos os {count} modelos em Zhongshan e fornecemos no atacado a distribuidores, construtoras e marcas OEM.",
     },
     items: [
       {
@@ -337,9 +337,9 @@ export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
   },
   deadbolts: {
     intro: {
-      en: "Single- and double-cylinder deadbolts for residential entrance doors, bought by hardware distributors alongside our knob locks and lever sets so the whole door keys alike. The {count} models are made here with a 25mm throw and an adjustable backset.",
-      es: "Cerrojos de cilindro simple y doble para puertas de entrada residenciales, que los distribuidores compran junto con nuestras cerraduras de pomo y juegos de manija para que toda la puerta abra con la misma llave. Los {count} modelos se fabrican aquí con 25 mm de recorrido y entrada ajustable.",
-      pt: "Ferrolhos de cilindro simples e duplo para portas de entrada residenciais, comprados por distribuidores junto com nossas fechaduras de maçaneta e conjuntos de alavanca para que toda a porta use a mesma chave. Os {count} modelos são feitos aqui com 25 mm de curso e backset ajustável.",
+      en: "Single- and double-cylinder deadbolts for residential entrance doors, bought by hardware distributors alongside our knob locks and lever sets so the whole door keys alike. The {count} models are made here, by the manufacturer, with a 25mm throw and an adjustable backset, for wholesale supply.",
+      es: "Cerrojos de cilindro simple y doble para puertas de entrada residenciales, que los distribuidores compran junto con nuestras cerraduras de pomo y juegos de manija para que toda la puerta abra con la misma llave. Los {count} modelos se fabrican aquí, en nuestra propia planta como fabricante, con 25 mm de recorrido y entrada ajustable, para venta al por mayor.",
+      pt: "Ferrolhos de cilindro simples e duplo para portas de entrada residenciais, comprados por distribuidores junto com nossas fechaduras de maçaneta e conjuntos de alavanca para que toda a porta use a mesma chave. Os {count} modelos são feitos aqui, por nós como fabricante, com 25 mm de curso e backset ajustável, para venda no atacado.",
     },
     items: [
       {
@@ -399,9 +399,9 @@ export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
   },
   "grip-handle-sets": {
     intro: {
-      en: "Grip handle sets for entrance doors: a long pull outside, a lever inside, latch and deadbolt in one box. Distributors order them for residential and apartment entrances in the finish of the rest of the door; the {count} models are made here with an adjustable backset.",
-      es: "Juegos de manillón para puertas de entrada: un tirador largo por fuera, manija por dentro, picaporte y cerrojo en una caja. Los distribuidores los piden para entradas de vivienda y apartamento en el acabado del resto de la puerta; los {count} modelos se fabrican aquí con entrada ajustable.",
-      pt: "Conjuntos de puxador de entrada: um puxador longo por fora, alavanca por dentro, trinco e ferrolho numa caixa. Os distribuidores pedem para entradas residenciais e de apartamento no acabamento do resto da porta; os {count} modelos são feitos aqui com backset ajustável.",
+      en: "Grip handle sets for entrance doors: a long pull outside, a lever inside, latch and deadbolt in one box. Distributors order them for residential and apartment entrances in the finish of the rest of the door; the {count} models are made here by the manufacturer, with an adjustable backset, for wholesale and project supply.",
+      es: "Juegos de manillón para puertas de entrada: un tirador largo por fuera, manija por dentro, picaporte y cerrojo en una caja. Los distribuidores los piden para entradas de vivienda y apartamento en el acabado del resto de la puerta; los {count} modelos se fabrican aquí, como fabricante, con entrada ajustable, para venta al por mayor y proyectos.",
+      pt: "Conjuntos de puxador de entrada: um puxador longo por fora, alavanca por dentro, trinco e ferrolho numa caixa. Os distribuidores pedem para entradas residenciais e de apartamento no acabamento do resto da porta; os {count} modelos são feitos aqui, por nós como fabricante, com backset ajustável, para atacado e projetos.",
     },
     items: [
       {
@@ -426,9 +426,9 @@ export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
   },
   "glass-door-accessories": {
     intro: {
-      en: "Patch fittings, glass door locks and pull handles for frameless toughened glass doors in shopfronts and offices. A patch fitting is specified by the glass thickness it clamps; the {count} models here are stainless steel and are supplied to glaziers, shopfitters and distributors.",
-      es: "Herrajes de pinza, cerraduras para puerta de vidrio y tiradores para puertas de vidrio templado sin marco en locales y oficinas. Una pinza se especifica por el espesor de vidrio que aprieta; los {count} modelos son de acero inoxidable y se suministran a cristaleros, montadores de locales y distribuidores.",
-      pt: "Ferragens tipo patch, fechaduras para porta de vidro e puxadores para portas de vidro temperado sem caixilho em lojas e escritórios. Um patch fitting é especificado pela espessura do vidro que prende; os {count} modelos são de aço inoxidável e fornecidos a vidraceiros, montadores de lojas e distribuidores.",
+      en: "Patch fittings, glass door locks and pull handles for frameless toughened glass doors in shopfronts and offices. A patch fitting is specified by the glass thickness it clamps; the {count} models here are stainless steel and are supplied by the manufacturer to glaziers, shopfitters and wholesale distributors.",
+      es: "Herrajes de pinza, cerraduras para puerta de vidrio y tiradores para puertas de vidrio templado sin marco en locales y oficinas. Una pinza se especifica por el espesor de vidrio que aprieta; los {count} modelos son de acero inoxidable y los suministra el fabricante a cristaleros, montadores de locales y distribuidores mayoristas.",
+      pt: "Ferragens tipo patch, fechaduras para porta de vidro e puxadores para portas de vidro temperado sem caixilho em lojas e escritórios. Um patch fitting é especificado pela espessura do vidro que prende; os {count} modelos são de aço inoxidável e fornecidos pelo fabricante a vidraceiros, montadores de lojas e distribuidores atacadistas.",
     },
     items: [
       {
@@ -454,9 +454,9 @@ export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
   },
   "hardware-accessories": {
     intro: {
-      en: "The parts that finish a door schedule: latches for tubular levers, flush bolts and door coordinators for double doors, door viewers, door stops, security door guards, occupied indicators for cubicles and power-transfer devices for electrified locks. A latch hardware catalog in one place: {count} models, made or finished here.",
-      es: "Las piezas que completan una relación de puertas: picaportes para manijas tubulares, pasadores y selectores de cierre para puertas dobles, mirillas, topes, cadenas de seguridad, indicadores de libre/ocupado para cabinas y pasacables para cerraduras eléctricas. Un catálogo de accesorios en un solo sitio: {count} modelos, fabricados o acabados aquí.",
-      pt: "As peças que completam uma lista de portas: trincos para alavancas tubulares, ferrolhos embutidos e coordenadores para portas duplas, olhos mágicos, batentes, correntes de segurança, indicadores livre/ocupado para cabines e passa-cabos para fechaduras elétricas. Um catálogo de acessórios num só lugar: {count} modelos, fabricados ou acabados aqui.",
+      en: "The parts that finish a door schedule: latches for tubular levers, flush bolts and door coordinators for double doors, door viewers, door stops, security door guards, occupied indicators for cubicles and power-transfer devices for electrified locks. A latch hardware catalog in one place: {count} models, made or finished here by the manufacturer for wholesale supply.",
+      es: "Las piezas que completan una relación de puertas: picaportes para manijas tubulares, pasadores y selectores de cierre para puertas dobles, mirillas, topes, cadenas de seguridad, indicadores de libre/ocupado para cabinas y pasacables para cerraduras eléctricas. Un catálogo de accesorios en un solo sitio: {count} modelos, fabricados o acabados aquí por el fabricante para venta al por mayor.",
+      pt: "As peças que completam uma lista de portas: trincos para alavancas tubulares, ferrolhos embutidos e coordenadores para portas duplas, olhos mágicos, batentes, correntes de segurança, indicadores livre/ocupado para cabines e passa-cabos para fechaduras elétricas. Um catálogo de acessórios num só lugar: {count} modelos, fabricados ou acabados aqui pelo fabricante para venda no atacado.",
     },
     items: [
       {
@@ -516,9 +516,9 @@ export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
   },
   "lock-cylinders": {
     intro: {
-      en: "Euro profile lock cylinders in solid brass, single, double and thumbturn, supplied keyed to differ, keyed alike or as a master-key system for a whole project. Buyers order by overall length and split; the {count} models here are made and pinned in our own factory.",
-      es: "Cilindros de perfil europeo en latón macizo, simples, dobles y con mariposa, suministrados con llaves distintas, llave igual o como sistema de amaestramiento para todo un proyecto. Los compradores piden por largo total y reparto; los {count} modelos se fabrican y montan en nuestra planta.",
-      pt: "Cilindros de perfil europeu em latão maciço, simples, duplos e com borboleta, fornecidos com chaves diferentes, chave igual ou como sistema de chave mestra para um projeto inteiro. Os compradores pedem por comprimento total e divisão; os {count} modelos são feitos e pinados em nossa fábrica.",
+      en: "Euro profile lock cylinders in solid brass, single, double and thumbturn, supplied keyed to differ, keyed alike or as a master-key system for a whole project. Buyers order by overall length and split; the {count} models here are made and pinned in our own factory, and we supply them as the manufacturer to wholesale distributors, locksmiths and project contractors.",
+      es: "Cilindros de perfil europeo en latón macizo, simples, dobles y con mariposa, suministrados con llaves distintas, llave igual o como sistema de amaestramiento para todo un proyecto. Los compradores piden por largo total y reparto; los {count} modelos se fabrican y montan en nuestra planta, y los suministramos como fabricante a distribuidores mayoristas, cerrajeros y contratistas de proyecto.",
+      pt: "Cilindros de perfil europeu em latão maciço, simples, duplos e com borboleta, fornecidos com chaves diferentes, chave igual ou como sistema de chave mestra para um projeto inteiro. Os compradores pedem por comprimento total e divisão; os {count} modelos são feitos e pinados em nossa fábrica, e os fornecemos como fabricante a distribuidores atacadistas, chaveiros e empreiteiros de projeto.",
     },
     items: [
       {

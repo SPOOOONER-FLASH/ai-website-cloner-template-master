@@ -25,7 +25,8 @@ import { cognate, untranslatable } from "./lib/i18n-untranslatable.mjs";
 import { materialConflict } from "./lib/i18n-material.mjs";
 import { hashRecord } from "./lib/i18n-source-hash.mjs";
 import { execFileSync } from "node:child_process";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { safeWrite } from "./lib/safe-write.mjs";
 
 const file = process.argv[2];
 const dry = process.argv.includes("--dry");
@@ -153,7 +154,7 @@ if (dry) {
 const sorted = kind === "glossary"
   ? Object.fromEntries(Object.entries(overlay).map(([sec, table]) => [sec, Object.fromEntries(Object.entries(table).sort(([a], [b]) => a.localeCompare(b, "en")))]))
   : Object.fromEntries(Object.entries(overlay).sort(([a], [b]) => a.localeCompare(b, "en")));
-writeFileSync(path, JSON.stringify(sorted, null, 2) + "\n");
+safeWrite(path, JSON.stringify(sorted, null, 2) + "\n");
 console.log(`✓ merged ${merged} of ${items.length} into ${path}${problems.length ? ` (${problems.length} refused, see above)` : ""}`);
 /* The client subset follows ui.json, or a "use client" component reads stale copy. */
 if (kind === "ui") execFileSync(process.execPath, ["scripts/build-i18n-client-ui.mjs"], { stdio: "inherit" });
