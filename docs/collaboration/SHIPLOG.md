@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 645 次提交
+最近 30 天 · 共 646 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 22:55 | HYDE | Google Discover：82 张 1200×675 分享图（真实头图，不生成）、/feed.xml RSS、全引擎 max-image-preview:large、手机文章页不弹促销 | `0ace1fb2063` |
 | 22:48 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `49bb2c6174c` |
 | 22:47 | 中立 | 手机端：导航条「Buy it now」固定右侧、只当前页加粗；面包屑单行统一 ›、不再折行；删重复返回链接 | `93df22716c5` |
 | 22:38 | HYDE | 联系人：tec@ 为 Spooner、hyde@ 为 Monica Lee；WhatsApp +1 703 967 7493 上联系页（10 语种）、页脚、手机菜单 | `9a2094b4d1b` |
