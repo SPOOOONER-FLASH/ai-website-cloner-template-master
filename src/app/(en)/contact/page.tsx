@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ContactPage() {
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start">
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full lg:col-span-4 xl:col-span-7">

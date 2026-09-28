@@ -17,8 +17,8 @@ import * as content from "@/data/home";
  *
  * Header and footer come from src/app/layout.tsx. This file owns only <main>.
  *
- * The module rhythm below is measured, not invented — 21 modules at fixed offsets,
- * document height 10837px at 1512x900. Check that before committing any change here.
+ * The 21 modules keep their established internal rhythm. The page entrance is
+ * tighter so the hero caption and its buyer path appear in a desktop first view.
  */
 export default function Home() {
   return (
@@ -26,9 +26,10 @@ export default function Home() {
       The rhythm is written as explicit margins rather than `space-y-*`: Tailwind v4's
       space-y emits margin-BOTTOM on earlier siblings, where a literal `mb-96` would
       override it instead of collapsing with it. These are the resolved values:
-      96 / 48 below 1032px, 136 above.
+      96 / 48 below 1032px, 136 above. The first 48px also stays at desktop:
+      192px stacked with the header pushed the first useful caption below 900px.
     */
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start">
       <div className="modules mb-96 lg:mb-136">
         <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} homeAccent />

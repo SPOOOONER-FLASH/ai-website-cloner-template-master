@@ -35,7 +35,7 @@ function categoryNameMap(): Record<string, string> {
 
 export default function ProductFinderPage() {
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start">
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: absoluteUrl("/") },
