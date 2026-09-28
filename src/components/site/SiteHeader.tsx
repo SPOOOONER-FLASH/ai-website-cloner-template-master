@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useOverlayPresence } from "@/hooks/useOverlayPresence";
@@ -223,6 +223,15 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
   const resourceLinks = headerNav.filter((link) => RESOURCE_HREFS.includes(link.href));
   const firstResourceHref = resourceLinks[0]?.href;
+  /*
+    The compact rail is also what 1376–1599px desktops see (HeaderNavigation.module.css), and
+    a 1440px laptop has a mouse: the release session found "Guides / News" there instead of
+    Resources on 09-28. So from xl up the rail shows the Resources button in place of its
+    resource links; below xl (tablet, phone — no hover) the links stay.
+  */
+  const railFirstResourceHref = headerNav
+    .filter((link) => link.href !== "/projects")
+    .find((link) => RESOURCE_HREFS.includes(link.href))?.href;
   const resourcesCurrent = resourceLinks.some((link) => isCurrent(localisedHref(link.href, locale)));
   const companyCurrent = dict(companyShelfLinks, locale).some((link) =>
     isCurrent(localisedHref(link.href, locale)),
@@ -557,15 +566,38 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 );
               }
 
-              return (
+              const railLink = (
                 <Link
                   key={link.href}
                   href={href}
                   aria-current={isCurrent(href) ? "page" : undefined}
-                  className={cn("nav-rail-item", isCurrent(href) && "current-nav")}
+                  className={cn(
+                    "nav-rail-item",
+                    RESOURCE_HREFS.includes(link.href) && "xl:hidden",
+                    isCurrent(href) && "current-nav",
+                  )}
                 >
                   {navLabel(link, locale)}
                 </Link>
+              );
+              if (link.href !== railFirstResourceHref) return railLink;
+              return (
+                <Fragment key={link.href}>
+                  <button
+                    type="button"
+                    aria-controls="resources-shelf"
+                    aria-expanded={openShelf === "resources"}
+                    aria-haspopup="true"
+                    aria-current={resourcesCurrent ? "page" : undefined}
+                    onClick={() => setOpenShelf("resources")}
+                    onFocus={() => setOpenShelf("resources")}
+                    onMouseEnter={() => setOpenShelf("resources")}
+                    className={cn("nav-rail-item hidden bg-transparent xl:inline-block", resourcesCurrent && "current-nav")}
+                  >
+                    {tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
+                  </button>
+                  {railLink}
+                </Fragment>
               );
             })}
           </nav>

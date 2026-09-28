@@ -187,6 +187,9 @@ test("a locale whose link row is wider than its column uses the compact rail, no
   assert.match(header, /const RESOURCE_HREFS = \["\/projects", "\/guides", "\/news"\]/);
   assert.match(header, /aria-controls="resources-shelf"/);
   assert.match(header, /id="resources-shelf"/);
+  /* 09-28: the 1376–1599px compact rail gets the same button; tablets and phones keep links. */
+  assert.match(header, /nav-rail-item hidden bg-transparent xl:inline-block/);
+  assert.match(header, /RESOURCE_HREFS\.includes\(link\.href\) && "xl:hidden"/);
   assert.match(header, /data-long-nav=\{longNav \? "" : undefined\}/);
   assert.match(header, /new ResizeObserver\(check\)/);
   assert.match(styles, /\.header\[data-long-nav\] \.wideNavigation \{ display: none; \}/);

@@ -23,3 +23,9 @@
 
 合并后各语种导航实宽 fr ≈603px（原 859）、ru 554、de 512，都小于 680px 栏宽，所以 `LONG_NAV_LOCALES` 清空，法/德/俄也用完整导航；运行时守卫保留兜底。
 核对：本地 1600px /fr/ 导航到 716px，logo 从 801px 起，无横向滚动；面板法文完整。npm test 407 通过，i18n --check、i18n-lint 通过。
+
+## 追加（09-28）：1376–1599px 也显示 Resources（目标 #88）
+
+发布会话在 r8 线上实测时发现：1440 宽的页头仍显示 Guides / News，没有 Resources。这不是缓存问题。1376–1599px 用的是紧凑导航条，而我当时给导航条保留了独立链接。但这个宽度是带鼠标的笔记本，甲方要的合并下拉在这里就看不到了。
+现在改为：xl（1376px）以上，导航条把 Guides、News 换成 Resources 按钮，打开的是同一个 `#resources-shelf`；xl 以下（平板、手机）仍是独立链接。Applications 在导航条里本来就不显示，可以从 Resources 面板进入。
+本地实测：1440 宽时导航条为 Buy it now · Products · Product Finder · Resources · Company，点击后面板打开，无横向滚动；1000 宽仍是独立链接。
