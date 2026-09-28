@@ -34,6 +34,14 @@ test("the RSS feed exists and every English page declares it", () => {
   assert.match(readFileSync("src/app/robots.ts", "utf8"), /absoluteUrl\("\/feed\.xml"\)/);
 });
 
+test("the Spanish and Portuguese feeds exist and their layouts and robots.txt declare them", () => {
+  for (const l of ["es", "pt"]) {
+    assert.ok(existsSync(`src/app/${l}/feed.xml/route.ts`), `${l} feed route missing`);
+    assert.match(readFileSync(`src/app/${l}/layout.tsx`, "utf8"), new RegExp(`<link rel="alternate" type="application/rss\\+xml"[^>]*href="/${l}/feed\\.xml"`), l);
+    assert.match(readFileSync("src/app/robots.ts", "utf8"), new RegExp(`absoluteUrl\\("/${l}/feed\\.xml"\\)`), l);
+  }
+});
+
 test("no promo card over an article on a phone", () => {
   assert.match(readFileSync("src/components/site/PromoDialog.tsx", "utf8"), /surface === "news" && !forcedOpen\(\) && window\.matchMedia\("\(max-width: 639\.98px\)"\)\.matches/);
 });

@@ -62,6 +62,9 @@ function articleMetadata(locale: Locale, article: NewsArticle, section: "news" |
       title,
       description,
       publishedTime: article.publishedAt,
+      /* article:author and article:section (09-28, Discover): who wrote it and which shelf it sits on. */
+      ...(article.author ? { authors: [article.author.url ?? article.author.name] } : {}),
+      section: section === "guides" ? "Guides" : "News",
       locale: OG_LOCALE[locale],
       images: article.heroImage.src
         ? [{ url: absoluteUrl(articleShareImage(section, slug) ?? article.heroImage.src), ...(articleShareImage(section, slug) ? SHARE_IMAGE_SIZE : {}), alt: t(article.heroImage, "label", locale) }]

@@ -64,6 +64,8 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       title,
       description,
       publishedTime: article.publishedAt,
+      ...(article.author ? { authors: [article.author.url ?? article.author.name] } : {}),
+      section: "News",
       locale: "pt_BR",
       images: article.heroImage.src
         ? [{ url: absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src), ...(articleShareImage("news", slug) ? SHARE_IMAGE_SIZE : {}), alt: article.heroImage.label }]
