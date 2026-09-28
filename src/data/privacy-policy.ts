@@ -13,9 +13,10 @@ import { siteSettings } from "@/data/navigation";
  * Change the data collection → change this file in the same commit. A new tag inside GTM,
  * a new form, a hosted video embed or a consent tool each makes a paragraph below false.
  *
- * Open, and deliberately not invented here: an EU representative (Art. 27 GDPR), fixed
- * retention periods, and which of the two addresses in content/site-settings.json is the
- * registered one. The contact address below is the one the site already prints.
+ * Address (client, 2026-09-28): No. 28 Lehe Road is the company's actual address and the
+ * one the controller line uses; No. 76 Haiwei Road is the factory buyers are taken to for
+ * audits. There is no EU representative (Art. 27 GDPR) yet, so none is named. Fixed
+ * retention periods are still open and deliberately not invented.
  */
 
 export type PrivacyLocale = "en" | "de";

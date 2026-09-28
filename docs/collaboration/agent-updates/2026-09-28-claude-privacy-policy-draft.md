@@ -32,3 +32,4 @@
   (page prints the contact address already on the site), fixed retention periods, Web3Forms DPA.
 - `/privacy` is EXEMPT in `internal-link-placement.test.ts` (footer + forms, not a drawer section).
 - Neutral lane only; nothing RAYEN touched. Release is the johns machine's.
+- Client 2026-09-28: Lehe Road No. 28 = actual address (used on /privacy); Haiwei Road No. 76 = factory for customer audits. No EU representative yet.
