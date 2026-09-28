@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 615 次提交
+最近 30 天 · 共 617 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 18:42 | 中立 | WebSite.inLanguage 列全部 10 语种；llms.txt 删掉无法核实的「over thirty markets」 | `d17538fc2f2` |
+| 18:40 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `6b483258d83` |
 | 18:40 | 中立 | 8/31–9/28 HYDE 指令核查与月度工作总结：459 条网站指令逐条打勾，Word 在 Desktop\hyde | `a42e70bfb87` |
 | 18:02 | 中立 | 月度指令核查的两个生成器：提取甲方消息（本机 Claude/Codex 会话）+ 合并核查行出月报 md | `786d9b694dc` |
 | 17:53 | 中立 | 目标清单 #77：发布会话 r8 发布中（页头、Resources 下拉） | `b9e54566577` |
