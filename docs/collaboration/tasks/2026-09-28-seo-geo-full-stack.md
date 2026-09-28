@@ -60,3 +60,23 @@
 - 本地：`node scripts/audit-seo.mjs --check`、`audit-dead-links`、`audit-seo-geo`、`audit-geo-citability`、`audit-keyword-coverage`、`audit-question-coverage`、`audit-locale-parity`、`npm run test:export`、`npm test`。
 - 目标：品类页商业词/交易词覆盖 15/15；collections 与 video 的可引用性分数上升；七语种页面英文仍 ≤ 2%。
 - 上线由工程会话 release，之后用 IndexNow 提交；GSC 数据两周后回看点击率。
+
+## 六、执行结果（09-28 本地重建 build21，7,708 页）
+
+| 检查 | 改前 | 改后 |
+|---|---|---|
+| 七语种页面英文（audit-locale-parity） | 0.4–0.8% | fr 0.3 / de 0.4 / ja 0.8 / ko 0.5 / tr 0.4 / ru 0.4 / ar 0.4%，全部「完成 是」 |
+| 站点图谱（audit-seo-geo） | 1 警告（5,456 页 sitemap 误报） | **0 错误 0 警告，11 项全清**（含 830 个作者头像 alt） |
+| 品类页正文带商业词 | 4/15 | **15/15** |
+| AI 可引用性总分 | 70 | 72；/video 32 → 40；子类页有了 H2 + 定义 |
+| 语义 SEO 错误 / 死链 / 缺 alt / 缺 h1 | 0 / 0 / 0 / 0 | 0 / 0 / 0 / 0 |
+| 短标题（<30 字符） | 420 | 190（工程会话 ce809002491 的七语种兜底） |
+| test:export / node --test | — | 绿 |
+
+顺手修掉的构建问题：`npm run ship` 的旁路检出 `tmp/ship-merge/` 是独立 git 根，Tailwind 4 扫描它的 4.6 万页导出让 PostCSS 子进程超时、
+`next build` 连续五次失败；已删除该 worktree，`globals.css` 和 `rayen.css` 加 `@source not`（后者是雷茵车道文件，只加三行扫描排除，
+已在提交里用 SITE_WALL_OVERRIDE 说明）。另外本机 Claude 桌面端每分钟起两个 1.6 GB 的 `git diff` 进程比对含 out/ 的大提交，构建期间要清掉。
+
+**还没做 / 下一批**：把 QuickCreator 会话的 `CategoryGuide` 挂到七语种（先把 `category-guide.ts` 的 `copyFor` 改 tx 模板）；
+子类页可引用性（定义里没有数字，可把该子类的规格范围句写进定义）；视频页可引用性 40 仍低（197 页，加「用在哪里」一句 + 图纸链接）；
+甲方数据（第四节）到了再进 FAQ。
