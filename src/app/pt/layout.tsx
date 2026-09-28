@@ -99,7 +99,7 @@ export default function PortugueseRootLayout({
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}
-          <SiteFooter />
+          <SiteFooter locale="pt" />
         </div>
         <LazyPromoDialog />
         <Analytics />
