@@ -53,6 +53,7 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
   const pendingTarget = useRef<number | null>(null);
   const transitionInProgress = useRef(false);
   const activationFrames = useRef<number[]>([]);
+  const activationTimer = useRef<number | null>(null);
   const stageTimer = useRef<number | null>(null);
   const advanceTimer = useRef<number | null>(null);
   const transitionFallbackTimer = useRef<number | null>(null);
@@ -96,6 +97,8 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
       window.cancelAnimationFrame(frame);
     }
     activationFrames.current = [];
+    if (activationTimer.current !== null) window.clearTimeout(activationTimer.current);
+    activationTimer.current = null;
   }, []);
 
   useEffect(() => cancelActivationFrames, [cancelActivationFrames]);
@@ -178,14 +181,25 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
   const activateStagedSlide = useCallback(
     (targetIndex: number) => {
       cancelActivationFrames();
+      /*
+        Two frames so the staged slide has painted before it fades in — but never ONLY
+        frames. Where the browser withholds them (a background tab, some in-app webviews)
+        the carousel sat on its first slide for good; the timer moves it on regardless
+        (09-28, the same failure as the menu drawer's).
+      */
+      let started = false;
+      const start = () => {
+        if (started) return;
+        started = true;
+        cancelActivationFrames();
+        beginTransition(targetIndex);
+      };
       const firstFrame = window.requestAnimationFrame(() => {
-        const secondFrame = window.requestAnimationFrame(() => {
-          activationFrames.current = [];
-          beginTransition(targetIndex);
-        });
+        const secondFrame = window.requestAnimationFrame(start);
         activationFrames.current.push(secondFrame);
       });
       activationFrames.current.push(firstFrame);
+      activationTimer.current = window.setTimeout(start, 120);
     },
     [beginTransition, cancelActivationFrames],
   );
@@ -309,8 +323,6 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
       className="layout"
       onBlur={handleBlur}
       onFocus={() => setFocusWithin(true)}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
     >
       <div
         className="col-content relative aspect-[4/3] touch-pan-y overflow-hidden bg-surface-alt xs:aspect-[1920/754]"
@@ -474,6 +486,17 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
             : "polite"
         }
         className="col-content grid w-full grid-cols gap-x pb-32 pt-16 md:pb-48 md:pt-24"
+        /*
+          Hover pauses the rotation only over the caption, and only for a real mouse.
+          It used to be the whole section: the image fills most of the first screen, so a
+          resting mouse froze the carousel (client 09-28: 「轮播图怎么不轮播了」), and on a
+          phone a tap fires mouseenter with no mouseleave, so one swipe stopped it for good.
+          A reader of the caption still gets it held still; keyboard focus still pauses.
+        */
+        onPointerEnter={(event) => {
+          if (event.pointerType === "mouse") setHovered(true);
+        }}
+        onPointerLeave={() => setHovered(false)}
       >
         {content.slides.map((slide, index) => (
           <div
