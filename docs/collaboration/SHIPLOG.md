@@ -6,12 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 646 次提交
+最近 30 天 · 共 650 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:13 | 中立 | BAU 2027 任务单：版式定 B、预约邮箱；建页时的文案注意三条 | `d9d7f11d7a4` |
+| 23:11 | 中立 | BAU 2027 任务单：甲方选定版式 B；预约邮箱 tec@cantonlock.com | `44ed06b635e` |
+| 22:56 | 中立 | BAU 2027 专栏三个版式预览（A 事实卡优先 / B 产品优先 / C 预约优先），EN + DE 桌面各一张、DE 手机 390px 各一张；文字原样取自 content/bau-2027.json，图片只用五个型号的现成实拍主图 | `1bd4bb6922e` |
+| 22:55 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `671b8020f8d` |
 | 22:55 | HYDE | Google Discover：82 张 1200×675 分享图（真实头图，不生成）、/feed.xml RSS、全引擎 max-image-preview:large、手机文章页不弹促销 | `0ace1fb2063` |
 | 22:48 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `49bb2c6174c` |
 | 22:47 | 中立 | 手机端：导航条「Buy it now」固定右侧、只当前页加粗；面包屑单行统一 ›、不再折行；删重复返回链接 | `93df22716c5` |
