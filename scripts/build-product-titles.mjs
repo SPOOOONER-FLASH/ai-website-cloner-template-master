@@ -110,7 +110,41 @@ function positioning(product) {
   if (product.positioning) return product.positioning;
   const path = product.categoryPath ?? [];
   if (!path.length) return null;
-  return POSITIONING[path.join("/")] ?? POSITIONING[path[0]] ?? null;
+  const base = POSITIONING[path.join("/")] ?? POSITIONING[path[0]] ?? null;
+  return base ? narrowedByApplication(product, base) : null;
+}
+
+/**
+ * 品类场景「Timber & Metal Doors」不能超出产品自己的 Application 行。
+ *
+ * 2026-09-28：LC04 85*60 的记录写着「Application: Wooden doors」，标题和描述却说
+ * 「for Timber & Metal Doors」—— 这一页正是 ChatGPT 把瑞士买家直接送去的那一页。
+ * 同样的错在 HY006/HY007/HY008（铝框窄边门锁体，被说成木门）、5833（铁门）、
+ * LC17（推拉门）、CH01（窗用合页）等 13 条上。场景词是可以「组合」的那一类，
+ * 但组合的前提是这个型号真的装得上（LONGTAIL-REPORT 的规则表）。
+ *
+ * 只收窄、不扩写：Application 只说一种门时换成那一种；说的不是门（窗）时不写场景；
+ * 其余（住宅、安全门、多种门混写）保持品类场景。只作用于写着 Timber / Metal 的品类场景。
+ */
+const APPLICATION_SCENES = [
+  { when: (v) => /narrow/i.test(v) && /alumin/i.test(v), use: "Aluminum Narrow-Stile Doors", useEs: "puertas de aluminio de perfil angosto", usePt: "portas de alumínio de perfil estreito" },
+  { when: (v) => /storefront/i.test(v) && /alumin/i.test(v), use: "Aluminum Storefront Doors", useEs: "puertas de aluminio para locales", usePt: "portas de alumínio para lojas" },
+  { when: (v) => /^sliding doors?$/i.test(v), use: "Sliding Doors", useEs: "puertas corredizas", usePt: "portas de correr" },
+  { when: (v) => /cafe|swing door/i.test(v), use: "Cafe & Swing Doors", useEs: "puertas de vaivén", usePt: "portas vaivém" },
+  { when: (v) => /wood|timber/i.test(v) && !/metal|steel|iron|alumin|security|fire/i.test(v), use: "Timber Doors", useEs: "puertas de madera", usePt: "portas de madeira" },
+  { when: (v) => /iron|metal|steel/i.test(v) && !/wood|timber/i.test(v), use: "Metal Doors", useEs: "puertas metálicas", usePt: "portas metálicas" },
+  { when: (v) => /window/i.test(v) && !/door/i.test(v), use: null, useEs: null, usePt: null },
+];
+
+function narrowedByApplication(product, base) {
+  if (!/timber|metal/i.test(base.use ?? "")) return base;
+  const row = (product.specs ?? []).find((s) => /^application$/i.test(String(s.label).trim()));
+  const value = row ? String(row.value).trim() : "";
+  if (!value) return base;
+  const scene = APPLICATION_SCENES.find((s) => s.when(value));
+  /* fromApplication: the phrase is the record's own door type, so the tautology and short-scene
+     trims (written for the category phrases) do not apply — "Timber Doors" would lose to "Door Hinge". */
+  return scene ? { ...base, use: scene.use, useEs: scene.useEs, usePt: scene.usePt, fromApplication: true } : base;
 }
 
 const DIR = "content/products";
@@ -454,7 +488,7 @@ function composeTitle(product, locale) {
   let useRaw = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : null;
 
   /* 同义反复检测：场景里的实词已经出现在名字里，就不要这个场景。 */
-  if (useRaw) {
+  if (useRaw && !pos?.fromApplication) {
     const STOP = new Set(["for", "and", "&", "the", "of", "para", "y", "e", "de", "la", "las", "los"]);
     const inName = new Set(
       name.toLowerCase().split(/[^a-zÀ-ɏ]+/).filter((w) => w && !STOP.has(w)),
@@ -477,7 +511,7 @@ function composeTitle(product, locale) {
     09-24 加：否则 186 条标题只剩型号和品类名，没有任何长尾成分（方案 7.4 第 3 条）。
   */
   let useShortRaw = null;
-  if (useRaw) {
+  if (useRaw && !pos?.fromApplication) {
     const parts = useRaw.split(/\s*(?:,|&|\by\b|\be\b|\band\b)\s*/).filter(Boolean);
     const door = parts.find((p) => /door|puerta|porta/i.test(p));
     /* 段内含「门」时从门字起取（「seguridad en puertas de entrada」→「puertas de entrada」） */
@@ -583,7 +617,7 @@ function composeDescription(product, locale) {
     和标题一样去掉同义反复：名字里已经说了场景，开头句就不再「for …」一遍。
     09-24 之前描述没有这一步，出现过「barra antipánico para puerta cortafuego para puertas cortafuegos」。
   */
-  if (useRaw) {
+  if (useRaw && !pos?.fromApplication) {
     const STOP = new Set(["for", "and", "&", "the", "of", "para", "y", "e", "de", "la", "las", "los", "do", "da", "das", "dos"]);
     const stem = (w) => w.replace(/e?s$/, "");
     const inName = new Set(name.toLowerCase().split(/[^a-zà-ɏ]+/).filter((w) => w && !STOP.has(w)).map(stem));
