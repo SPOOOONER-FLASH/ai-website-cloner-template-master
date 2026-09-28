@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 655 次提交
+最近 30 天 · 共 656 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:51 | HYDE | 按浏览器语言提示的一行横幅，挂在全部 10 个 locale | `446e925d672` |
 | 04:23 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `94a13e996d1` |
 | 04:22 | 中立 | 德国联络地址改为 Brohl-Lützing，替换 Remagen | `0a090815706` |
 | 04:05 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 c5bf2b10720 | `fc00f7227e4` |
