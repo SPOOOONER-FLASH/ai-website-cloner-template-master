@@ -70,6 +70,7 @@
     "content:enrich": "node scripts/enrich-product-specs.mjs",
     "content:workbook": "node scripts/build-supplier-workbook.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
+    "seo:deadlinks:live": "node scripts/audit-live-links.mjs",
     "seo:indexnow:release": "node scripts/indexnow-submit.mjs --last-release",
     "deploy:prep": "npm run build && node scripts/prune-stale-exports.mjs --write && node scripts/retain-previous-assets.mjs && npm run test:export && node scripts/predeploy-check.mjs",
     "sheets": "npm run content:workbook && node scripts/build-design-brief.mjs",
