@@ -39,6 +39,8 @@ export interface LeadEvent {
   model?: string;
   /** The page the form was on, so a lead can be traced to the page that earned it. */
   page?: string;
+  /** First-touch source of the session — "chatgpt", "google", "direct" (first-touch.ts). */
+  firstTouch?: string;
 }
 
 /**
@@ -56,6 +58,7 @@ export function trackLead(event: LeadEvent, gtag = globalThis.window?.gtag): voi
       // GA4 drops empty strings inconsistently across its interfaces; omit instead.
       ...(event.model ? { model: event.model } : {}),
       ...(event.page ? { page_path: event.page } : {}),
+      ...(event.firstTouch ? { first_touch: event.firstTouch } : {}),
     });
   } catch {
     // An ad blocker, a consent tool, or a stubbed gtag in a test. Never surface it.

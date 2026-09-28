@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { CategoryGuide } from "@/components/site/CategoryGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
 import { notFound } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
@@ -142,10 +143,6 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
             </div>
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
               <p className="text-lead text-ink">{summary}</p>
-              <p className="mt-24 text-c1 text-ink-secondary">
-                Aqui só publicamos fichas verificadas. O resto do catálogo histórico
-                está sendo preparado para publicação estruturada.
-              </p>
               {sourcing ? (
                 <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p>
               ) : null}
@@ -169,6 +166,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
           locale="pt"
           showCompareLink
         />
+        <CategoryGuide category={category} products={products} locale="pt" />
       </main>
     </>
   );
