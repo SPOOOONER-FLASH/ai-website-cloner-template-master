@@ -185,7 +185,8 @@ export function NewsDetail({
             {summary}
           </p>
 
-          <div className="col-span-full">
+          {/* Phones already have the breadcrumb one screen up; the repeat is desktop-only (09-28). */}
+          <div className="col-span-full max-md:hidden">
             <Link
               href={`${base}/${section}/`}
               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"

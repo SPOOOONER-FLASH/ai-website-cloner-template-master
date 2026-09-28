@@ -531,9 +531,16 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
           open. See .nav-rail in globals.css for why this scrolls rather than wraps.
         */}
         <div className={cn("layout border-t border-line bg-surface xl:hidden", navigationStyles.compactNavigation)}>
+          {/*
+            09-28 (client: 「手机端导航栏……很乱没有逻辑」): the destinations scroll in their
+            reading order and "Buy it now" is pinned on the right, always in view, instead of
+            leading the scroll strip. Before, the CTA came first and the fifth label was cut
+            mid-word at the screen edge, so the strip read as neither ordered nor finished.
+          */}
+          <div className="col-content flex min-w-0 items-center gap-16">
           <nav
             aria-label={tx(locale, "Main navigation", { es: "Navegación principal", pt: "Navegação principal" })}
-            className="nav-rail col-content"
+            className="nav-rail min-w-0 flex-1"
           >
             {headerNav
               /*
@@ -552,30 +559,10 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 the item most likely to be wanted belongs where the eye lands first.
               */
               .filter((link) => link.href !== "/projects")
-              .sort((a, b) => Number(b.href === "/downloads") - Number(a.href === "/downloads"))
               .map((link) => {
               const href = localisedHref(link.href, locale);
 
-              /*
-                The catalogue is 435 models across 15 categories, so the finder is the
-                fastest route to a specific one — it carries weight here for the same
-                reason it does nowhere else on the site.
-              */
-              if (link.href === "/product-finder") {
-                return (
-                  <Link
-                    key={link.href}
-                    href={href}
-                    aria-current={isCurrent(href) ? "page" : undefined}
-                    className={cn(
-                      "nav-rail-item nav-rail-item-emphasis",
-                      isCurrent(href) && "current-nav",
-                    )}
-                  >
-                    {navLabel(link, locale)}
-                  </Link>
-                );
-              }
+              /* No permanent bold on Product Finder any more (09-28): in the rail, bold means "you are here", and a second always-bold label read as a second current page. */
 
               /*
                 Opens the sourcing drawer rather than linking out. This reaches
@@ -583,23 +570,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 one more tap — sending it straight to the storefront would drop the buyer
                 who wants a quote by email, and email is what this site is built to produce.
               */
-              if (link.href === "/downloads") {
-                return (
-                  <button
-                    key={link.href}
-                    type="button"
-                    aria-expanded={menuOpen}
-                    onClick={(event) => {
-                      menuOpenerRef.current = event.currentTarget;
-                      setMenuOpen(true);
-                    }}
-                    className="nav-rail-cta"
-                  >
-                    {tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
-                    <span aria-hidden="true">›</span>
-                  </button>
-                );
-              }
+              if (link.href === "/downloads") return null; // pinned outside the scroll strip
 
               const railLink = (
                 <Link
@@ -636,6 +607,19 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               );
             })}
           </nav>
+          <button
+            type="button"
+            aria-expanded={menuOpen}
+            onClick={(event) => {
+              menuOpenerRef.current = event.currentTarget;
+              setMenuOpen(true);
+            }}
+            className="nav-rail-cta flex-none"
+          >
+            {tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
+            <span aria-hidden="true">›</span>
+          </button>
+          </div>
         </div>
       </div>
 

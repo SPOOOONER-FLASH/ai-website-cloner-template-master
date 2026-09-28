@@ -7,6 +7,7 @@ import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
 import { productFaqHeading, productFaqItems } from "@/lib/product-faq";
 import { ArrowLink } from "./ArrowLink";
+import { BreadcrumbSeparator } from "./Breadcrumbs";
 import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
@@ -380,32 +381,32 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
       {/* 1 — Breadcrumb, title and model */}
       <section className="layout" aria-labelledby="product-title">
         <div className="col-content grid w-full grid-cols gap-x gap-y-24">
+          {/*
+            09-28: the category crumb carries the "back to your results" behaviour (it restores
+            the filtered list and scroll position when there is one, and opens the category
+            otherwise), so the separate "← Back to previous results" line below it — the
+            same destination in most visits — is gone. One trail, one line, no repetition.
+          */}
           <nav
             aria-label={t.breadcrumb}
-            className="col-span-full flex flex-wrap items-center gap-x-8 text-c2 text-ink-secondary"
+            className="col-span-full flex min-w-0 items-center gap-x-8 overflow-hidden whitespace-nowrap text-c2 text-ink-secondary"
           >
-            <Link href={`${base}/`} className="short-marker short-marker-compact hover:text-brand-hover">
+            <Link href={`${base}/`} className="short-marker short-marker-compact flex-none hover:text-brand-hover">
               {t.home}
             </Link>
-            <span aria-hidden="true">/</span>
-            <Link href={`${base}/products/`} className="short-marker short-marker-compact hover:text-brand-hover">
+            <BreadcrumbSeparator />
+            <Link href={`${base}/products/`} className="short-marker short-marker-compact flex-none hover:text-brand-hover">
               {t.products}
             </Link>
-            <span aria-hidden="true">/</span>
-            <Link href={categoryHref} className="short-marker short-marker-compact hover:text-brand-hover">
-              {categoryName}
-            </Link>
-          </nav>
-
-          <div className="col-span-full mt-16">
+            <BreadcrumbSeparator />
             <CatalogueReturnLink
               productHref={productHref}
               fallbackHref={categoryHref}
-              className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
+              className="short-marker short-marker-compact min-w-0 truncate hover:text-brand-hover"
             >
-              {t.backToResults}
+              {categoryName}
             </CatalogueReturnLink>
-          </div>
+          </nav>
 
           <div className="col-span-full mt-8 xl:col-span-12">
             <p className="text-c1 text-ink-secondary">{product.series}</p>

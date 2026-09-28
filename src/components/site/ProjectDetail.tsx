@@ -3,6 +3,7 @@ import type { Project } from "@/data/types";
 import { getProductByModel } from "@/data/products";
 import { collectionSpecRanges, specRangeHeading, statedOn } from "@/lib/collection-spec-range";
 import { ArrowLink } from "./ArrowLink";
+import { BreadcrumbSeparator } from "./Breadcrumbs";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
@@ -86,11 +87,11 @@ export function ProjectDetail({
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
-          <nav className="col-span-full flex flex-wrap gap-x-8 text-c2 text-ink-secondary">
+          <nav className="col-span-full flex min-w-0 items-center gap-x-8 overflow-hidden whitespace-nowrap text-c2 text-ink-secondary">
             <Link href={homeHref} className="short-marker short-marker-compact hover:text-brand-hover">
               {text.home}
             </Link>
-            <span aria-hidden="true">/</span>
+            <BreadcrumbSeparator />
             <Link href={projectsHref} className="short-marker short-marker-compact hover:text-brand-hover">
               {text.projects}
             </Link>
