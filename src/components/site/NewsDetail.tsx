@@ -2,9 +2,9 @@ import { articleFaqHeading, articleFaqItems, articleFaqLocale } from "@/lib/arti
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { newsKindLabels, formatNewsDate } from "@/data/news";
+import { CREDENTIAL_TRANSLATIONS, authorHref, authorPath, authorPortrait } from "@/data/authors";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
-import { authorPortrait } from "@/data/author-portraits";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { NewsVisual } from "./NewsVisual";
@@ -210,6 +210,12 @@ export function NewsDetail({
             >
               {formatNewsDate(article.publishedAt, locale)}
             </time>
+            {article.updatedAt && article.updatedAt > article.publishedAt ? (
+              <p className="mt-4 text-c2 text-ink-secondary">
+                {tx(locale, "Updated", { es: "Actualizado", pt: "Atualizado" })}{" "}
+                <time dateTime={article.updatedAt}>{formatNewsDate(article.updatedAt, locale)}</time>
+              </p>
+            ) : null}
 
             {/*
               THE BYLINE.
@@ -239,7 +245,12 @@ export function NewsDetail({
                 ) : null}
                 <p className="text-c2 text-ink-secondary">
                 <span className="text-ink">
-                  {article.author.url ? (
+                  {/* The on-site profile where one exists (09-28); otherwise the author's own page. */}
+                  {authorPath(article.author) ? (
+                    <Link href={authorHref(article.author, locale)!} rel="author" className="short-marker">
+                      {article.author.name}
+                    </Link>
+                  ) : article.author.url ? (
                     <a
                       href={article.author.url}
                       rel="author noopener noreferrer"
@@ -256,7 +267,9 @@ export function NewsDetail({
                   {tx(locale, article.author.role, { es: article.author.roleEs, pt: article.author.rolePt })}
                 </span>
                 {article.author.credential ? (
-                  <span className="block text-ink-secondary">{article.author.credential}</span>
+                  <span className="block text-ink-secondary">
+                    {tx(locale, article.author.credential, CREDENTIAL_TRANSLATIONS[article.author.credential])}
+                  </span>
                 ) : null}
                 </p>
               </div>

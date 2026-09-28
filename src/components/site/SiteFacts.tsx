@@ -1,7 +1,4 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-import { rollFrame } from "@/lib/fact-roll";
+import { FactRoll } from "./FactRoll";
 import type { SiteFact } from "@/lib/site-facts";
 
 /**
@@ -62,18 +59,13 @@ import type { SiteFact } from "@/lib/site-facts";
 /**
  * The figures arrive as a prop, and that is a performance decision rather than a style one.
  *
- * This is a client component — the count-up needs an IntersectionObserver. It used to call
- * siteFacts() itself, and siteFacts() imports publishedProducts, so the WHOLE CATALOGUE
- * was pulled into the browser bundle: a 1,548 KB JavaScript chunk containing all 659
- * product records, their specs and their summaries, shipped to every visitor of the
- * homepage so that the page could display two numbers.
+ * siteFacts() imports publishedProducts; when this was a client component that calling it
+ * directly pulled the WHOLE CATALOGUE (a 1,548 KB chunk) into the homepage bundle. The
+ * parent computes the figures on the server and passes them in.
  *
- * The function is pure and its output is a handful of strings, so it belongs on the
- * server. The parent computes it, this renders and animates it.
- *
- * `facts` is optional so the component still works if somebody drops it onto a page
- * without threading the prop — it falls back to computing them, which is correct but
- * expensive, and the fallback is why this is not a required prop with a broken build.
+ * SERVER COMPONENT since 2026-09-28. The heading, labels and every figure are static HTML;
+ * only a figure that carries `countTo` is wrapped in the small `FactRoll` island, which
+ * animates the number already rendered here.
  */
 export function SiteFacts({
   facts,
@@ -82,67 +74,10 @@ export function SiteFacts({
   facts: SiteFact[];
   heading: string;
 }) {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  /* null means "not rolling" — render the real value. */
-  const [rolled, setRolled] = useState<Record<number, number> | null>(null);
-
-  useEffect(() => {
-    const node = sectionRef.current;
-    if (!node) return;
-
-    let frame = 0;
-    let settled = 0;
-    let observer: IntersectionObserver | undefined;
-    const start = () => {
-      const t0 = performance.now();
-      const step = (now: number) => {
-        const { values, done } = rollFrame(facts, now - t0);
-        setRolled(done ? null : values);
-        if (!done) frame = requestAnimationFrame(step);
-      };
-      frame = requestAnimationFrame(step);
-    };
-
-    /*
-      The opening decision runs on the next frame rather than in the effect body.
-
-      Two reasons, and only one of them is the lint rule. Setting state synchronously here
-      cascades an extra render before paint; deferring by a frame also puts the
-      `getBoundingClientRect` read after the browser's first layout, which is when the
-      strip's real position is actually known.
-    */
-    settled = requestAnimationFrame(() => {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-      /*
-        Already on screen: leave it alone. Rolling from here would replace a
-        correct 361 with 0 one frame after hydration — a visible lie, however brief.
-      */
-      const box = node.getBoundingClientRect();
-      if (box.top < window.innerHeight && box.bottom > 0) return;
-
-      observer = new IntersectionObserver(
-        (entries) => {
-          if (!entries.some((entry) => entry.isIntersecting)) return;
-          observer?.disconnect();
-          start();
-        },
-        { threshold: 0.25 },
-      );
-      observer.observe(node);
-    });
-
-    return () => {
-      observer?.disconnect();
-      if (settled) cancelAnimationFrame(settled);
-      if (frame) cancelAnimationFrame(frame);
-    };
-  }, [facts]);
-
   if (!facts.length) return null;
 
   return (
-    <section ref={sectionRef} className="layout" aria-labelledby="site-facts-heading">
+    <section className="layout" aria-labelledby="site-facts-heading">
       {/*
         `col-content`, NOT `col-span-full`.
 
@@ -172,7 +107,11 @@ export function SiteFacts({
                   value, which is what is in the DOM before and after the roll.
                 */}
                 <span className="block text-h2 tabular-nums text-ink">
-                  {rolled?.[index] !== undefined ? rolled[index] : fact.value}
+                  {fact.countTo === undefined ? (
+                    fact.value
+                  ) : (
+                    <FactRoll value={fact.value} countTo={fact.countTo} index={index} />
+                  )}
                 </span>
                 <span className="mt-8 block max-w-[18ch] text-c2 text-ink-secondary">
                   {fact.label}

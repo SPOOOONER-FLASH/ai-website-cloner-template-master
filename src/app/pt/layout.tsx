@@ -87,8 +87,8 @@ export default function PortugueseRootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
-        {/* This locale's RSS, so Discover and readers find the pt articles, not the English ones. */}
-        <link rel="alternate" type="application/rss+xml" title="HYDE — pt" href="/pt/feed.xml" />
+        {/* RSS of this locale's guides and news (09-28, Google Discover). See (en)/layout.tsx. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE guias e notícias" href="/pt/feed.xml" />
         <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />

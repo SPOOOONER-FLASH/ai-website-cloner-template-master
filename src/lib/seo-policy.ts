@@ -67,9 +67,20 @@ export type RobotsPolicyRule = {
  */
 const ASSISTANT_CRAWLERS = [
   "GPTBot",
+  /*
+    The search-time agents, added 2026-09-28. GPTBot and ClaudeBot collect training data;
+    these three are what fetch a page when an assistant answers a buyer's question right
+    now and cites a source — OAI-SearchBot builds ChatGPT search's index, ChatGPT-User
+    and Perplexity-User fetch on a user's behalf, Claude-SearchBot is Claude's search
+    index. They are the ones a manufacturer wants named if it wants to be cited.
+  */
+  "OAI-SearchBot",
+  "ChatGPT-User",
   "ClaudeBot",
   "Claude-User",
+  "Claude-SearchBot",
   "PerplexityBot",
+  "Perplexity-User",
   "Google-Extended",
   "CCBot",
 ];

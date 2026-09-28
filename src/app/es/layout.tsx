@@ -73,8 +73,8 @@ export default function SpanishRootLayout({
   return (
     <html lang="es" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
-        {/* This locale's RSS, so Discover and readers find the es articles, not the English ones. */}
-        <link rel="alternate" type="application/rss+xml" title="HYDE — es" href="/es/feed.xml" />
+        {/* RSS of this locale's guides and news (09-28, Google Discover). See (en)/layout.tsx. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE guías y noticias" href="/es/feed.xml" />
         <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />

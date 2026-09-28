@@ -1,3 +1,4 @@
+import { AuthorProfile, authorMetadata } from "@/components/site/AuthorProfile";
 import type { Metadata } from "next";
 import { CompanyOverview } from "@/components/site/CompanyOverview";
 import { ProductStudies } from "@/components/site/ProductStudies";
@@ -45,4 +46,13 @@ export function productStudiesMetadata(locale: Locale): Metadata {
 
 export function ProductStudiesPage({ locale }: { locale: Locale }) {
   return <ProductStudies locale={locale} />;
+}
+
+/* The author profile, 2026-09-28. One route per author; the page is AuthorProfile. */
+export function johnsonLiuMetadata(locale: Locale): Metadata {
+  return authorMetadata(locale, "johnson-liu");
+}
+
+export function JohnsonLiuPage({ locale }: { locale: Locale }) {
+  return <AuthorProfile locale={locale} slug="johnson-liu" />;
 }

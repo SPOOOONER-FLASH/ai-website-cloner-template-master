@@ -154,3 +154,16 @@
 - `dcc67ff59a2` 七语种页面英文残留第二轮：服务端字典注册、包装函数与函数值文案可翻、67 个无主图产品、数据文件字段进提取器
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/28 05:50:41 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging src/components/site/NewsDetail.tsx / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `6877c222dfd` shiplog: 更新上线存档
+- `07063d6956a` runbook：等部署后提交 9 条 RSS，写成非开发者照着做的步骤
+- `c8f7a3fc259` 作者照片进署名与 Person 结构化数据
+- `5c104750057` 十个语种各一条 RSS；此前只有英文，es/pt 路由并不存在
+
+下一次 `npm run ship` 成功时这些会一起推上去。

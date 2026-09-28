@@ -1,8 +1,8 @@
-import { localeFeedResponse } from "@/lib/locale-feed-xml";
+import { articleFeedResponse } from "@/lib/article-feed";
 
-/** /pt/feed.xml — this locale's guides and news, for Google Discover and its Search Console property. */
+/** /pt/feed.xml — Portuguese guides and news, linking the /pt/ pages. Built in src/lib/article-feed.ts. */
 export const dynamic = "force-static";
 
 export function GET(): Response {
-  return localeFeedResponse("pt");
+  return articleFeedResponse("pt");
 }

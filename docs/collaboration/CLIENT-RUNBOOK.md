@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-28 · 更新人：Claude（规格会话）：新增一件——等我说部署好之后，提交 9 条 RSS**
+**最后更新：2026-09-28 · 更新人：Claude：两件待办 —— 等我说部署好后提交 9 条 RSS；以及 AI 来源追踪三步**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -126,7 +126,36 @@ Google 通常几天内开始抓。RSS 的作用是让它**更快发现新文章*
 
 
 
-甲方 09-28 确认 runbook 第一屏全部做完。原来的七件（Codex 续做钩子审核；Search Console 建 /de/ 资源、请求收录七语种 14 条、指南 20 条；GA4 自定义维度；Cloudflare 两步验证与 Security Insights；Bing 提交 10 个 sitemap）已移进
+---
+
+## 现在要做的（2026-09-28 新增）：看清询盘是不是从 ChatGPT 来的 —— 三步，约 20 分钟，一次性
+
+**前提**：等 johns 电脑下一次发布之后再做（本条改动已合并进 main）。发布前做也不会坏事，只是没有数据。
+**为什么**：从这次发布起，每封询盘邮件会多一行 `first_touch`，写着这个买家第一次是从哪来的（`chatgpt`、`perplexity`、`google`、`direct` ……）。下面三步让 GA4 和 Cloudflare 也跟得上。详细理由见 `docs/collaboration/2026-09-28-quickcreator-seo-geo-report.md`。
+
+**第一步：GA4 登记 `first_touch`（5 分钟）**
+1. 打开 https://analytics.google.com → 确认媒体资源 **cantonlock**。
+2. 左下角齿轮 **管理** → **数据显示** → **自定义定义** → **创建自定义维度**。
+3. 维度名称填 **首次来源**，范围选 **事件**，事件参数填 `first_touch`，保存。
+- 成功的样子：列表里多一行「首次来源」。24–48 小时后，「询盘」事件（`generate_lead`）的报表里能按它分组。
+- 看不到按钮：账号不是「编辑者」，截图发我。
+
+**第二步：GA4 把 AI 流量单独成一行（10 分钟）**
+1. 同一个 **管理** → **数据显示** → **渠道组** → **创建新渠道组**，名称 **含 AI 助手**。
+2. 点 **添加新渠道**，渠道名 **AI assistants**，条件选「来源」→「与正则表达式匹配」，填：
+   `chatgpt|openai|perplexity|gemini|copilot|claude|deepseek`
+3. 保存后，把这个新渠道 **拖到「Referral」上面**（顺序决定归属，放在下面就会被 Referral 先吃掉），再保存渠道组。
+- 成功的样子：报告 → 流量获取 → 把主维度换成「含 AI 助手」渠道组，能看到 AI assistants 一行（有流量才会出现）。
+
+**第三步：Cloudflare 查 AI 搜索爬虫有没有被拦（5 分钟，只看不改）**
+1. 登录 Cloudflare → 选 **cantonlock.com** → 左栏 **Security** → **Events**（安全事件）。
+2. 右上角时间选「过去 7 天」，加筛选条件 **User agent** 包含，依次填：`OAI-SearchBot`、`Claude-SearchBot`、`PerplexityBot`、`GPTBot`。
+3. 看「操作」一列：
+   - 全是空的，或只有「Skip / Allow」：正常，什么都不用做。
+   - 出现 **Block**、**Managed Challenge** 或 **JS Challenge**：**停在这里，截图发我**，不要自己改防火墙规则。
+- 为什么要查：09-25 实测过 Bot Fight Mode 会拦谷歌自己的检测工具。robots.txt 允许了它们，但 Cloudflare 在 robots.txt 之前，拦下来 robots 写什么都没用。
+
+> 之前第一屏的七件甲方 09-28 已确认做完（Codex 续做钩子审核；Search Console 建 /de/ 资源、请求收录七语种 14 条、指南 20 条；GA4 自定义维度；Cloudflare 两步验证与 Security Insights；Bing 提交 10 个 sitemap）已移进
 `archive/2026-09-28-runbook-client-confirmed.md`，**不要再照着做**。
 
 我能从外面测到的前提都在（2026-09-28 实测）：security.txt 200；robots.txt 列出 10 份 sitemap；/sitemap.xml 1.55 MB；/de/sitemap.xml 200、683 个网址；/de/ /de/products/ /fr/ /ar/products/ 都是 200；页面上 GA4（G-RBTE7KF82P）在。
