@@ -48,7 +48,7 @@ export function BauColumn({ locale }: { locale: BauLocale }) {
                             width="600"
                             height="600"
                             loading="lazy"
-                            className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                            className="size-full object-contain transition-transform duration-[var(--motion-medium)] ease-[var(--motion-ease)] group-hover:scale-[1.02] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                           />
                         </span>
                         <span className="block p-16">
@@ -58,12 +58,30 @@ export function BauColumn({ locale }: { locale: BauLocale }) {
                       </Link>
                     </li>
                   ) : (
+                    /*
+                      The cylinder-system entry has no single model photograph, so its square is a
+                      type plate: the entry's own first clause set large on the alternate surface,
+                      framed exactly like the photographs, and the rest of the sentence below as the
+                      caption. Type and rule only; no pictured metal (AGENTS.md). It was a grey box
+                      with the sentence at the bottom until 2026-09-28 and read as a missing image.
+                    */
                     <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        className="flex h-full min-h-[16rem] flex-col justify-end border border-line bg-surface-alt p-24 text-c1 text-ink hover:text-brand-hover"
-                      >
-                        {item.body}
+                      <Link href={item.href} className="group flex h-full flex-col border border-line bg-surface">
+                        <span className="relative flex aspect-square flex-col justify-end border-b border-line bg-surface-alt p-24 lg:p-32">
+                          <span aria-hidden="true" className="absolute left-24 top-24 h-2 w-40 bg-ink lg:left-32 lg:top-32" />
+                          <span
+                            aria-hidden="true"
+                            className="absolute right-24 top-16 text-h3 text-ink-secondary transition-transform duration-[var(--motion-fast)] ease-[var(--motion-ease)] group-hover:translate-x-4 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0 lg:right-32 lg:top-24"
+                          >
+                            →
+                          </span>
+                          <span className="block max-w-[14ch] text-balance text-h2 font-semibold leading-[1.15] text-ink [hyphens:auto] group-hover:text-brand-hover">
+                            {plateSplit(item.body).head}
+                          </span>
+                        </span>
+                        <span className="block p-16">
+                          <span className="block text-c2 text-ink-secondary">{plateSplit(item.body).tail}</span>
+                        </span>
                       </Link>
                     </li>
                   ),
@@ -115,6 +133,14 @@ export function BauColumn({ locale }: { locale: BauLocale }) {
       </div>
     </main>
   );
+}
+
+/** A text-only featured entry split for its type plate: first clause large, the rest as caption. */
+function plateSplit(body: string): { head: string; tail: string } {
+  const cut = body.indexOf(", ");
+  if (cut < 0) return { head: body, tail: "" };
+  const tail = body.slice(cut + 2);
+  return { head: body.slice(0, cut), tail: tail.charAt(0).toUpperCase() + tail.slice(1) };
 }
 
 /**
