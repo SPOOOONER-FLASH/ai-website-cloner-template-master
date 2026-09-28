@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
   },
   robots: indexable
-    ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }
+    ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }
     : { index: false, follow: false },
 };
 

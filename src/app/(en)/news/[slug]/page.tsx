@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
 import { alternateLanguages, defaultOgImage } from "@/lib/seo";
@@ -43,14 +44,14 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       // An article shared without a card image is a grey box in chat and on LinkedIn,
       // which is exactly where a specification guide gets passed around.
       images: article.heroImage.src
-        ? [{ url: absoluteUrl(article.heroImage.src), alt: article.heroImage.label }]
+        ? [{ url: absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src), ...(articleShareImage("news", slug) ? SHARE_IMAGE_SIZE : {}), alt: article.heroImage.label }]
         : [{ url: absoluteUrl(defaultOgImage), width: 1200, height: 630, alt: "HYDE architectural door hardware" }],
     },
     twitter: {
       card: "summary_large_image",
       title: article.seoTitle,
       description: article.seoDescription,
-      images: [absoluteUrl(article.heroImage.src ?? defaultOgImage)],
+      images: [absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src ?? defaultOgImage)],
     },
   };
 }

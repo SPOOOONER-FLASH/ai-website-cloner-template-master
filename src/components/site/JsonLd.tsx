@@ -1,4 +1,5 @@
 import type { Locale } from "@/data/site";
+import { articleShareImage } from "@/lib/article-share-image";
 import { articleFaqItems } from "@/lib/article-faq";
 import { absoluteUrl, legalName, locales, siteName, siteUrl } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
@@ -387,12 +388,17 @@ export function NewsArticleJsonLd({
 }) {
   const path = locale === "en" ? `/${section}/${article.slug}/` : `/${locale}/${section}/${article.slug}/`;
   const url = absoluteUrl(path);
+  const share = articleShareImage(section, article.slug);
+  const base = newsArticleSchema(article, url, locale);
+  /* Discover and rich results prefer a wide image; list the 16:9 card first (09-28). */
+  const photos = Array.isArray(base.image) ? base.image : base.image ? [base.image] : [];
+  const data: typeof base = share ? { ...base, image: [absoluteUrl(share), ...photos] } : base;
   /* English only: the steps are written from the English body, and markup that disagrees
      with the visible text of a translated page is the failure FAQ markup is guarded against. */
   const howTo = locale === "en" && article.howTo ? howToSchema(article.howTo, url) : null;
   return (
     <>
-      <JsonLd data={newsArticleSchema(article, url, locale)} />
+      <JsonLd data={data} />
       {howTo ? <JsonLd data={howTo} /> : null}
     </>
   );

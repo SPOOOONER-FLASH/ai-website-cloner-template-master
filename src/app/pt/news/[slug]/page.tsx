@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
 import { alternateLanguages, defaultOgImage } from "@/lib/seo";
@@ -65,7 +66,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       publishedTime: article.publishedAt,
       locale: "pt_BR",
       images: article.heroImage.src
-        ? [{ url: absoluteUrl(article.heroImage.src), alt: article.heroImage.label }]
+        ? [{ url: absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src), ...(articleShareImage("news", slug) ? SHARE_IMAGE_SIZE : {}), alt: article.heroImage.label }]
         : [
             {
               url: absoluteUrl(defaultOgImage),
@@ -79,7 +80,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       card: "summary_large_image",
       title,
       description,
-      images: [absoluteUrl(article.heroImage.src ?? defaultOgImage)],
+      images: [absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src ?? defaultOgImage)],
     },
   };
 }

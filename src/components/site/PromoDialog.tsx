@@ -119,6 +119,13 @@ export function PromoDialog() {
   useEffect(() => {
     if (!allowedHere || !promoIsInWindow()) return;
     if (isSuppressed(Date.now())) return;
+    /*
+      Not over an article on a phone (09-28, Google Discover): Discover traffic is almost all
+      mobile and lands on articles, and a card that fills the bottom of a phone screen while
+      someone reads is the "intrusive popup" Discover penalises. Desktop and the other
+      surfaces keep it; ?promo=1 still forces it for a check.
+    */
+    if (surface === "news" && !forcedOpen() && window.matchMedia("(max-width: 639.98px)").matches) return;
 
     const timer = window.setTimeout(() => {
       // Session-scoped dismissals only; a forced preview ignores even those, so the
@@ -142,7 +149,7 @@ export function PromoDialog() {
     }, promoDialog.delaySeconds * 1000);
 
     return () => window.clearTimeout(timer);
-  }, [allowedHere, pathname]);
+  }, [allowedHere, pathname, surface]);
 
   /** Dismissing one card silences it for the rest of this browser session — no further. */
   const dismissCard = useCallback((href: string) => {
