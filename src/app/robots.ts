@@ -24,6 +24,6 @@ export default function robots(): MetadataRoute.Robots {
     rules,
     /* The full map first, then one per non-English locale for their Search Console properties. */
     /* The RSS feed is listed too: Google accepts RSS as a sitemap, and it carries the newest articles first (09-28). */
-    sitemap: [absoluteUrl("/sitemap.xml"), ...locales.filter((l) => l !== "en").map((l) => absoluteUrl(`/${l}/sitemap.xml`)), absoluteUrl("/feed.xml")],
+    sitemap: [absoluteUrl("/sitemap.xml"), ...locales.filter((l) => l !== "en").map((l) => absoluteUrl(`/${l}/sitemap.xml`)), absoluteUrl("/feed.xml"), absoluteUrl("/es/feed.xml"), absoluteUrl("/pt/feed.xml")],
   };
 }

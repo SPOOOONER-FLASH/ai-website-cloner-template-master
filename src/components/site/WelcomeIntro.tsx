@@ -1,12 +1,11 @@
-"use client";
 import type { Locale } from "@/data/site";
 
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
-import { ChevronDownIcon, HydeLockup } from "./icons";
-import { dict } from "@/lib/i18n-client";
+import { HydeLockup } from "./icons";
+import { dict } from "@/lib/i18n";
+import { WelcomeIntroLinksToggle } from "./WelcomeIntroLinksToggle";
 
 const introCopy = {
   en: {
@@ -61,6 +60,10 @@ const introCopy = {
  * forced open by `sm:!block` at >=744px, so the desktop reference state has no
  * interactive affordance here at all.
  *
+ * SERVER COMPONENT (2026-09-28). The only state here is the mobile accordion, so that one
+ * button lives in `WelcomeIntroLinksToggle`; the headline, copy, links and signature are
+ * plain HTML and no longer ship to the browser as JavaScript.
+ *
  * COLOUR: h1, copy and the accordion heading are --color-ink (rule 2). The chevron is a
  * decorative icon, so --color-ink-tertiary. The three ArrowLinks in the panel
  * carry the only interactive accent here, now rendered in monochrome ink.
@@ -72,7 +75,6 @@ export function WelcomeIntro({
   locale?: Locale;
   homeAccent?: boolean;
 }) {
-  const [expanded, setExpanded] = useState(false);
   const text = dict(introCopy, locale);
 
   return (
@@ -112,24 +114,9 @@ export function WelcomeIntro({
         <div className="col-span-full grid grid-cols-subgrid gap [grid-column-end:-1] sm:col-span-4 md:col-span-6 xl:col-span-6 xl:col-start-19 xl:row-span-2 xl:row-start-1">
           <section className="col-span-full">
             <div className="w-full">
-              <button
-                type="button"
-                onClick={() => setExpanded((v) => !v)}
-                aria-expanded={expanded}
-                className="mb-24 flex w-full justify-between gap-x-24 text-start sm:hidden sm:cursor-default"
+              <WelcomeIntroLinksToggle
+                heading={<h2 className="text-h3 text-ink">{text.more}</h2>}
               >
-                <h2 className="text-h3 text-ink">{text.more}</h2>
-                <span
-                  className={cn(
-                    "flex h-[var(--leading-h3)] place-items-center transition-transform duration-[var(--motion-medium)]",
-                    expanded && "rotate-180",
-                  )}
-                >
-                  <ChevronDownIcon className="h-auto w-16 text-ink-tertiary" />
-                </span>
-              </button>
-
-              <div className={cn(expanded ? "block" : "hidden", "sm:!block")}>
                 <ul className="flex flex-col gap-36 pointer-fine:gap-16">
                   {text.links.map((link) => (
                     <li key={link.label}>
@@ -142,7 +129,7 @@ export function WelcomeIntro({
                     </li>
                   ))}
                 </ul>
-              </div>
+              </WelcomeIntroLinksToggle>
             </div>
           </section>
         </div>
