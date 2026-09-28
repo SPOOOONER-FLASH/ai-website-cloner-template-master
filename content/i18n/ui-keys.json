@@ -25,25 +25,25 @@
     "src/components/locale-pages/ComparePage.tsx:27"
   ],
   "{count} {name} from the Canton Hyland {category} range, manufactured in Guangdong, China. Lead time from 30 days.": [
-    "src/components/locale-pages/CollectionPage.tsx:65"
+    "src/components/locale-pages/CollectionPage.tsx:66"
   ],
   "{count} {name} from the Canton Hyland {category} range.": [
-    "src/components/locale-pages/CollectionPage.tsx:118"
+    "src/components/locale-pages/CollectionPage.tsx:119"
   ],
   "{count} files are here to download now. Datasheets, installation guides and CAD or BIM files are sent for a named model on a real project, so we can check them against current production first.": [
     "src/components/locale-pages/DownloadsPage.tsx:54"
   ],
   "{count} models made in Guangdong, China.": [
-    "src/components/locale-pages/CategoryPage.tsx:35"
+    "src/components/locale-pages/CategoryPage.tsx:36"
   ],
   "{count} models made in Guangdong. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:33"
+    "src/components/locale-pages/CategoryPage.tsx:34"
   ],
   "{count} models manufactured in Guangdong, China. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:32"
+    "src/components/locale-pages/CategoryPage.tsx:33"
   ],
   "{count} models. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:34"
+    "src/components/locale-pages/CategoryPage.tsx:35"
   ],
   "{count} models. Narrow them by what is on your schedule.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:85"
@@ -59,6 +59,9 @@
   ],
   "{missing} of {n} models do not state this yet.": [
     "src/components/site/CategoryGuide.tsx:24"
+  ],
+  "{missing} of {total} models do not state this yet; ask the export team before ordering.": [
+    "src/lib/category-guide.ts:153"
   ],
   "{n} dimension drawings, drawn only from published dimensions": [
     "src/data/feature-columns.ts:180"
@@ -87,14 +90,23 @@
   "{n} products moved": [
     "src/components/site/ModelLookup.tsx:92"
   ],
+  "{n} published models, in {count} types: {types}. Every model has its own page with the specifications we have confirmed.": [
+    "src/lib/category-guide.ts:150"
+  ],
+  "{n} published models. Every model has its own page with the specifications we have confirmed.": [
+    "src/lib/category-guide.ts:149"
+  ],
   "{name} catalog": [
-    "src/components/locale-pages/CategoryPage.tsx:102"
+    "src/components/locale-pages/CategoryPage.tsx:100"
   ],
   "{name}, Manufacturer": [
-    "src/components/locale-pages/CategoryPage.tsx:40"
+    "src/components/locale-pages/CategoryPage.tsx:41"
   ],
   "{name}, Manufacturer & Supplier": [
-    "src/components/locale-pages/CategoryPage.tsx:39"
+    "src/components/locale-pages/CategoryPage.tsx:40"
+  ],
+  "{name}: the published figures, model by model": [
+    "src/components/site/CollectionFacts.tsx:61"
   ],
   "{readable} of {total} published models carry a finish in the number itself. The rest state it in the specification instead.": [
     "src/components/locale-pages/FinishesPage.tsx:42"
@@ -252,6 +264,9 @@
   "A hierarchy is a decision about who passes which door, not a hardware specification. Five levels, from grand-grand master down to the change key, and what we need from you to cut the chart.": [
     "src/data/feature-columns.ts:90"
   ],
+  "A hook bolt, because a sliding leaf gives a straight latch nothing to catch.": [
+    "src/data/category-positioning.json"
+  ],
   "A long pull on the outside with a lock behind it, for a main entrance door.": [
     "src/lib/configurator.ts:413"
   ],
@@ -353,6 +368,9 @@
   ],
   "An example three-level system: a grand master, two floor masters and the change keys below them, with the three decisions this article says belong at design time: one cross-keyed door, one door kept off every master, and one group reserved for expansion. Illustrative only; a real hierarchy is designed on the platform it will be cut on.": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:33"
+  ],
+  "and {n} more": [
+    "src/lib/category-guide.ts:147"
   ],
   "Annual output value": [
     "src/data/company.ts:49"
@@ -480,6 +498,9 @@
   "Backset across the range is {backset} and the door thickness range is {thickness}; both figures are on each model's specification table, and a 60mm backset is the most common.": [
     "src/data/category-buying-guides.ts:121"
   ],
+  "Backset and center distance decide whether a replacement drops into the existing preparation.": [
+    "src/data/category-positioning.json"
+  ],
   "Backset and center distance: reading a lock case number": [
     "src/data/feature-columns.ts:169"
   ],
@@ -528,6 +549,9 @@
   ],
   "Book a meeting": [
     "src/data/bau-entry.ts:17"
+  ],
+  "Bored preparation with an adjustable backset. It fits both common door preparations without a new hole.": [
+    "src/data/category-positioning.json"
   ],
   "Both are in the range. Ball-bearing hinges are specified for heavy leaves and doors in constant use, such as corridors and fire doors with closers; plain-bearing hinges suit residential doors. The bearing type is on the model's record, and the same size is usually offered in both.": [
     "src/data/category-buying-guides.ts:322"
@@ -587,6 +611,9 @@
   "Buying": [
     "src/components/site/menu-experience.ts:98"
   ],
+  "By number of published models: {list}.": [
+    "src/lib/category-guide.ts:152"
+  ],
   "Calculated": [
     "src/components/site/CylinderCalculator.tsx:59"
   ],
@@ -628,15 +655,21 @@
     "src/components/site/products-architecture.ts:216"
   ],
   "Canton Product Collection": [
-    "src/components/locale-pages/CategoryPage.tsx:87",
+    "src/components/locale-pages/CategoryPage.tsx:88",
     "src/components/locale-pages/ComparePage.tsx:78",
     "src/components/site/products-architecture.ts:193"
   ],
   "Carries current from frame to leaf, so an electrified lock keeps working as the door swings.": [
     "src/lib/configurator.ts:462"
   ],
+  "Carries the cable from frame to leaf without it showing or getting trapped.": [
+    "src/data/category-positioning.json"
+  ],
   "Carries the door's weight and its whole life of movement. The item most often under-specified, and the one that fails first when it is.": [
     "src/lib/configurator.ts:402"
+  ],
+  "Carries the leaf's weight from the floor, so a heavy glass door swings without a visible closer.": [
+    "src/data/category-positioning.json"
   ],
   "Carrying the door, quietly, for years. Brass, stainless steel and steel hinges.": [
     "src/components/site/products-architecture.ts:70"
@@ -725,8 +758,20 @@
   "Choosing {name}": [
     "src/components/site/CategoryGuide.tsx:20"
   ],
+  "Chosen by backset, door thickness and function, the three rows that decide whether a lever set fits.": [
+    "src/data/category-positioning.json"
+  ],
+  "Chosen by door width and leaf weight. The closer that matches both shuts the door without slamming it.": [
+    "src/data/category-positioning.json"
+  ],
+  "Chosen by material and fixing, the two things that decide how a washroom ages.": [
+    "src/data/category-positioning.json"
+  ],
   "Chrome Plated": [
     "src/data/finish-codes.ts:143"
+  ],
+  "Clamps the head of a frameless leaf and takes the top pivot. The cut-out is decided when the glass is ordered.": [
+    "src/data/category-positioning.json"
   ],
   "Clamps the top of a frameless glass leaf onto the pivot. Chosen to match the floor spring below it.": [
     "src/lib/configurator.ts:442"
@@ -1325,6 +1370,9 @@
   "Euro profile lock cylinders in solid brass, single, double and thumbturn, supplied keyed to differ, keyed alike or as a master-key system for a whole project. Buyers order by overall length and split; the {count} models here are made and pinned in our own factory, and we supply them as the manufacturer to wholesale distributors, locksmiths and project contractors.": [
     "src/data/category-buying-guides.ts:519"
   ],
+  "Euro profile. Tell us the door thickness and we size the two halves instead of guessing.": [
+    "src/data/category-positioning.json"
+  ],
   "Events": [
     "src/components/site/menu-experience.ts:83",
     "src/components/site/menu-experience.ts:273",
@@ -1369,6 +1417,9 @@
   ],
   "Example master key hierarchy": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:31"
+  ],
+  "Exit hardware is chosen by the door, the leaf width and the outside trim. All three belong on the order.": [
+    "src/data/category-positioning.json"
   ],
   "Exit latch": [
     "src/data/finish-codes.ts:450"
@@ -1498,11 +1549,17 @@
   "Fire rating": [
     "src/lib/flagship-tooling.ts:46"
   ],
+  "Fits to the face of the door, so it goes on a leaf that was never prepared for a mortise lock.": [
+    "src/data/category-positioning.json"
+  ],
   "Fitting a standard case into a narrow stile removes material the door was relying on, and the leaf sags within a season. The sag is blamed on the hinges and caused by the lock pocket.": [
     "src/data/hardware-terms.ts:551"
   ],
   "Five records spell it out, as “PB=Polish Brass” and “PB=polished brass”.": [
     "src/data/finish-codes.ts:118"
+  ],
+  "Fixed back to back through the glass, so confirm the hole size and glass thickness before the glass is cut.": [
+    "src/data/category-positioning.json"
   ],
   "fixed grab bar": [
     "src/data/category-sourcing.ts:50"
@@ -1516,6 +1573,9 @@
   "Flush bolts to hold the inactive leaf, and a door coordinator (door selector) where both leaves have closers, so the inactive leaf closes first and the active leaf latches over it. On a fire door pair both are required for the latch to engage.": [
     "src/data/category-buying-guides.ts:474"
   ],
+  "Folds against the wall when the space is needed and locks down when it is not.": [
+    "src/data/category-positioning.json"
+  ],
   "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.": [
     "src/components/site/ProductDetail.tsx:77"
   ],
@@ -1524,6 +1584,15 @@
   ],
   "For distributors": [
     "src/data/home.ts:82"
+  ],
+  "For doors that face weather, daily cleaning or heavy traffic. Ask for the grade, 304 or 316, before ordering.": [
+    "src/data/category-positioning.json"
+  ],
+  "For heavy-traffic doors, where the backset range and the door thickness decide the fit.": [
+    "src/data/category-positioning.json"
+  ],
+  "For openings a standard bar cannot serve: cold rooms, narrow stiles and unusual leaves.": [
+    "src/data/category-positioning.json"
   ],
   "For specifiers": [
     "src/data/home.ts:93"
@@ -1604,6 +1673,9 @@
   "Grand master (GMK)": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:35"
   ],
+  "Grip and lock as one set, so the fixing centers agree before anything is cut.": [
+    "src/data/category-positioning.json"
+  ],
   "grip handle set": [
     "src/data/category-sourcing.ts:42"
   ],
@@ -1680,17 +1752,20 @@
   "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.": [
     "src/lib/configurator.ts:435"
   ],
+  "Holds the inactive leaf so the active one has something to latch into.": [
+    "src/data/category-positioning.json"
+  ],
   "Hole positions only — this is not a product outline. Confirm door thickness and the material you are drilling before cutting.": [
     "src/components/site/ProductDrawing.tsx:68"
   ],
   "Home": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:38",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:47",
-    "src/components/locale-pages/CategoryPage.tsx:69",
-    "src/components/locale-pages/CategoryPage.tsx:80",
+    "src/components/locale-pages/CategoryPage.tsx:70",
+    "src/components/locale-pages/CategoryPage.tsx:81",
     "src/components/locale-pages/CertificationsPage.tsx:33",
-    "src/components/locale-pages/CollectionPage.tsx:91",
-    "src/components/locale-pages/CollectionPage.tsx:103",
+    "src/components/locale-pages/CollectionPage.tsx:92",
+    "src/components/locale-pages/CollectionPage.tsx:104",
     "src/components/locale-pages/ComparePage.tsx:58",
     "src/components/locale-pages/ComparePage.tsx:70",
     "src/components/locale-pages/ConfiguratorPage.tsx:31",
@@ -1733,6 +1808,9 @@
   ],
   "How it works": [
     "src/components/site/ConfiguratorIntro.tsx:37"
+  ],
+  "How many {name} does Canton Hyland publish?": [
+    "src/lib/category-guide.ts:148"
   ],
   "How many cycles are they tested to?": [
     "src/data/category-buying-guides.ts:192"
@@ -1902,6 +1980,9 @@
   "Latch only. Specified for corridors and rooms that must never be lockable.": [
     "src/data/finish-codes.ts:418"
   ],
+  "Latches the leaf at more than one point, for double doors and leaves too tall for a single latch.": [
+    "src/data/category-positioning.json"
+  ],
   "Leaf size is stated per model in inches and millimeters — 4\" × 3\" is the most common — in the materials {materials}. Leaf thickness is stated per model, and several sizes are made to order for a project quantity.": [
     "src/data/category-buying-guides.ts:313"
   ],
@@ -1925,6 +2006,9 @@
   ],
   "Legal basis: our legitimate interest in improving the site for buyers (Art. 6(1)(f) GDPR). You can object at any time (section 8). You can also stop both services with your browser's tracking protection or a content blocker, or install Google's opt-out add-on (tools.google.com/dlpage/gaoptout).": [
     "src/data/privacy-policy.ts:112"
+  ],
+  "Lets a door open far enough to speak through, and no further.": [
+    "src/data/category-positioning.json"
   ],
   "Lets the door open a few centimeters on a restrictor, so a caller can be spoken to before being let in.": [
     "src/lib/configurator.ts:454"
@@ -1987,13 +2071,13 @@
     "src/components/site/SiteHeader.tsx:348"
   ],
   "Manufactured in Zhongshan, Guangdong. Production lead time starts at 30 days from order confirmation, and we produce under our customers' own brands.": [
-    "src/components/locale-pages/CollectionPage.tsx:126"
+    "src/components/locale-pages/CollectionPage.tsx:127"
   ],
   "Manufacturer": [
     "src/data/company.ts:51"
   ],
   "Manufacturer & Supplier": [
-    "src/components/locale-pages/CollectionPage.tsx:60"
+    "src/components/locale-pages/CollectionPage.tsx:61"
   ],
   "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
     "src/components/locale-pages/HomePage.tsx:29"
@@ -2164,6 +2248,9 @@
   ],
   "Most-requested models": [
     "src/data/demand-showcase.ts:99"
+  ],
+  "Mounted above the leaf, where it can be serviced without taking the door down.": [
+    "src/data/category-positioning.json"
   ],
   "Mounted at the head rather than in the floor, for doors where the floor cannot be cut.": [
     "src/lib/configurator.ts:444"
@@ -2340,6 +2427,9 @@
   ],
   "On a lock case, the centers decide where the two holes go in the door face. Get them wrong and the cylinder hole and the handle hole do not line up with the lock — the door is scrap, not the lock.": [
     "src/data/hardware-terms.ts:105"
+  ],
+  "On a rated leaf, every item in the assembly must belong to the tested set. Ask for the evidence.": [
+    "src/data/category-positioning.json"
   ],
   "on no master": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:40"
@@ -2522,6 +2612,9 @@
   "Our web server and our content-delivery and security provider, Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA), process the technical data every browser sends: IP address, date and time, the page requested, the referring page, browser and operating system. This is needed to deliver the pages, protect the site from automated attacks and investigate faults. Cloudflare may set a short-lived security cookie to tell people from bots, and it replaces email addresses in the page with a protected link so spam robots cannot collect them.": [
     "src/data/privacy-policy.ts:70"
   ],
+  "Outdoor house numbers. Choose the finish for the weather they will face.": [
+    "src/data/category-positioning.json"
+  ],
   "Outside": [
     "src/components/site/CylinderCalculator.tsx:57"
   ],
@@ -2559,6 +2652,9 @@
   ],
   "Passage, no locking": [
     "src/data/finish-codes.ts:414"
+  ],
+  "Patch fittings carry the leaf where there is no frame. The cut-out must match before the glass is ordered.": [
+    "src/data/category-positioning.json"
   ],
   "Patch fittings, clamps and locks that grip toughened glass without a frame, holding the leaf at its corners.": [
     "src/lib/configurator.ts:404"
@@ -2643,9 +2739,6 @@
   "Product catalog": [
     "src/components/locale-pages/DownloadsPage.tsx:26"
   ],
-  "Product data shown here is limited to verified client records. Additional references from the legacy catalog are being prepared for structured publication.": [
-    "src/components/locale-pages/CategoryPage.tsx:95"
-  ],
   "Product filters": [
     "src/components/site/CategoryFilter.tsx:49"
   ],
@@ -2678,10 +2771,10 @@
   "Products": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:39",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:48",
-    "src/components/locale-pages/CategoryPage.tsx:70",
-    "src/components/locale-pages/CategoryPage.tsx:81",
-    "src/components/locale-pages/CollectionPage.tsx:92",
-    "src/components/locale-pages/CollectionPage.tsx:104",
+    "src/components/locale-pages/CategoryPage.tsx:71",
+    "src/components/locale-pages/CategoryPage.tsx:82",
+    "src/components/locale-pages/CollectionPage.tsx:93",
+    "src/components/locale-pages/CollectionPage.tsx:105",
     "src/components/locale-pages/ComparePage.tsx:59",
     "src/components/locale-pages/ComparePage.tsx:71",
     "src/components/locale-pages/ConfiguratorPage.tsx:32",
@@ -2964,7 +3057,7 @@
     "src/components/site/products-architecture.ts:118"
   ],
   "See the whole {category} range": [
-    "src/components/locale-pages/CollectionPage.tsx:133"
+    "src/components/locale-pages/CollectionPage.tsx:134"
   ],
   "See what each choice decides": [
     "src/components/site/ConfiguratorIntro.tsx:40"
@@ -3085,6 +3178,9 @@
   "Shows occupied or vacant from outside, for a cubicle or a washroom.": [
     "src/lib/configurator.ts:455"
   ],
+  "Shows occupied or vacant from outside. Confirm the emergency release before ordering.": [
+    "src/data/category-positioning.json"
+  ],
   "Sign-up here": [
     "src/components/site/SiteFooter.tsx:203"
   ],
@@ -3106,6 +3202,9 @@
   "Size charts, standards and selection references": [
     "src/components/site/SiteHeader.tsx:82"
   ],
+  "Sized to the door thickness, so state the leaf before ordering.": [
+    "src/data/category-positioning.json"
+  ],
   "sliding hook lock": [
     "src/data/category-sourcing.ts:47"
   ],
@@ -3114,6 +3213,9 @@
   ],
   "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.": [
     "src/lib/configurator.ts:460"
+  ],
+  "Sounds when the door is used, without ever preventing it from opening.": [
+    "src/data/category-positioning.json"
   ],
   "Source": [
     "src/components/site/menu-experience.ts:257"
@@ -3132,6 +3234,12 @@
   ],
   "Specifications as a spreadsheet": [
     "src/components/site/DocumentInventory.tsx:84"
+  ],
+  "Specified by center distance, so the fixings meet the holes already in the door.": [
+    "src/data/category-positioning.json"
+  ],
+  "Specified by function, such as classroom, storeroom or communication, rather than by appearance.": [
+    "src/data/category-positioning.json"
   ],
   "Specifiers searching for a stainless steel door handle manufacturer usually need three things confirmed: the grade of steel, the door thickness the rose or plate will take, and whether the lever is solid or hollow. The {count} models here are stainless throughout, made for entrance, glass and commercial doors.": [
     "src/data/category-buying-guides.ts:149"
@@ -3202,6 +3310,9 @@
   "Start with the evidence.": [
     "src/components/site/GuideListing.tsx:18"
   ],
+  "State the leaf size, the thickness and the bearing type, and the hinge that arrives matches the door.": [
+    "src/data/category-positioning.json"
+  ],
   "stated on {count} of {total} models": [
     "src/lib/collection-spec-range.ts:186"
   ],
@@ -3214,6 +3325,9 @@
   ],
   "Stop celebration": [
     "src/components/site/InquirySuccess.tsx:10"
+  ],
+  "Stops the handle reaching the wall: the cheapest item on a schedule, and the one most often left off.": [
+    "src/data/category-positioning.json"
   ],
   "Stops the leaf, and the handle on it, before either reaches the wall.": [
     "src/lib/configurator.ts:452"
@@ -3317,6 +3431,9 @@
   "The arithmetic, with a worked table": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
   ],
+  "The bolt that actually holds the door shut. The bevel direction decides which way the leaf closes.": [
+    "src/data/category-positioning.json"
+  ],
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
     "src/components/site/SiteFooter.tsx:196"
   ],
@@ -3328,6 +3445,9 @@
   ],
   "The chassis. Heavy-duty cylindrical locks use a steel chassis and latch case for schools, offices and heavy residential use; light-duty and tubular locks use a lighter mechanism for standard residential doors. Both share the same backset and door-thickness figures, so the door preparation is the same.": [
     "src/data/category-buying-guides.ts:222"
+  ],
+  "The closing damper sits inside the hinge: no arm, no cover plate, nothing on the face of the door.": [
+    "src/data/category-positioning.json"
   ],
   "The count of matching models falls as you answer, so you can see which question actually mattered.": [
     "src/components/site/ConfiguratorIntro.tsx:40"
@@ -3350,6 +3470,9 @@
   "The door decides the hardware: what it is made of, how it opens, who uses it and how often. Send us your door schedule and our engineers will match each opening to a model.": [
     "src/components/site/products-architecture.ts:207"
   ],
+  "The everyday interior lock: a bored preparation and a quick replacement.": [
+    "src/data/category-positioning.json"
+  ],
   "The factory": [
     "src/components/site/CompanyOverview.tsx:27"
   ],
@@ -3370,6 +3493,9 @@
   ],
   "The issuers restrict how their reports may be copied, so we send a complete copy on request, for a named model, rather than publishing extracts.": [
     "src/components/locale-pages/CertificationsPage.tsx:54"
+  ],
+  "The items a door schedule needs and most schedules forget.": [
+    "src/data/category-positioning.json"
   ],
   "The keyed part. Changing the cylinder rekeys the door without touching the lock case.": [
     "src/lib/configurator.ts:406"
@@ -3406,6 +3532,9 @@
   ],
   "The older unqualified form, still on the panic-exit range. Where a record carries SS rather than SSS or PSS, the polish level has not been stated — ask before specifying.": [
     "src/data/finish-codes.ts:108"
+  ],
+  "The outside half of an exit door. It controls entry without ever controlling the way out.": [
+    "src/data/category-positioning.json"
   ],
   "The outside handle for a panic device: the escape bar works from inside regardless, and this decides whether the door can also be opened from outside.": [
     "src/lib/configurator.ts:457"
@@ -3497,6 +3626,12 @@
   "The upper half of a pivot set: it locates the door, the floor spring carries it.": [
     "src/lib/configurator.ts:440"
   ],
+  "The upper half of a pivot set. Order it with the floor spring, not after it.": [
+    "src/data/category-positioning.json"
+  ],
+  "The wall fixing carries the load, so the wall build-up decides the anchor before the bar does.": [
+    "src/data/category-positioning.json"
+  ],
   "The working body of a cylindrical lock — the part that sits inside the cross bore and turns handle movement into latch movement. The trim bolts onto it from both faces.": [
     "src/data/hardware-terms.ts:284"
   ],
@@ -3541,6 +3676,9 @@
   ],
   "Three tabs: a door schedule with catalog dropdowns, a free-format tab if you already keep your own schedule, and a worked example of a three-level building. Fill in what you know and leave the rest.": [
     "content/news/master-key-systems-how-many-levels-you-need.json"
+  ],
+  "Throw length is what resists a forced jamb. It matters more than the number of turns.": [
+    "src/data/category-positioning.json"
   ],
   "Throws several bolts up and down the leaf from one turn, pulling a tall door tight.": [
     "src/lib/configurator.ts:458"
@@ -3866,6 +4004,9 @@
   ],
   "Where you will sell it, and the standard it must meet": [
     "src/components/site/ServicesView.tsx:52"
+  ],
+  "Which {label} options are available for Canton Hyland {name}?": [
+    "src/lib/category-guide.ts:151"
   ],
   "Which closer fits my door width and weight?": [
     "src/data/category-buying-guides.ts:373"

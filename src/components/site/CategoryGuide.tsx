@@ -6,7 +6,7 @@ import { positioningFor } from "@/data/category-positioning";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
 import { JsonLd } from "@/components/site/JsonLd";
-import { dict, fill, t as tr } from "@/lib/i18n";
+import { dict, fill, t as tr, tx } from "@/lib/i18n";
 import { hasPortugueseMirror, hasSpanishMirror } from "@/lib/spanish-mirror";
 import { categoryFaqItems, guideArticles, guideFactors, valueList } from "@/lib/category-guide";
 
@@ -76,7 +76,7 @@ export function CategoryGuide({
   const prefix = locale === "en" ? "" : `/${locale}`;
   const name = tr(category, "name", locale);
   const pitch = positioningFor([category.slug]);
-  const pitchText = pitch ? (locale === "es" ? pitch.pitchEs : locale === "pt" ? pitch.pitchPt : pitch.pitch) : null;
+  const pitchText = pitch ? tx(locale, pitch.pitch, { es: pitch.pitchEs, pt: pitch.pitchPt }) : null;
 
   const types = (category.children ?? [])
     .filter((child) => products.some((p) => p.categoryPath[1] === child.slug))

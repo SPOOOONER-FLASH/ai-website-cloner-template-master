@@ -5,7 +5,8 @@ import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
-import { CategoryBuyingGuide } from "@/components/site/CategoryBuyingGuide";
+import { CategoryBuyingGuide, guideBlocks } from "@/components/site/CategoryBuyingGuide";
+import { CategoryGuide } from "@/components/site/CategoryGuide";
 import { getTopLevelCategories } from "@/data/categories";
 import { categorySourcingLine } from "@/data/category-sourcing";
 import { categoryNote } from "@/data/category-notes";
@@ -91,9 +92,6 @@ export function CategoryPage({ locale, slug }: { locale: Locale; slug: string })
             </div>
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
               <p className="text-lead text-ink">{summary}</p>
-              <p className="mt-24 text-c1 text-ink-secondary">
-                {tx(locale, "Product data shown here is limited to verified client records. Additional references from the legacy catalog are being prepared for structured publication.")}
-              </p>
               {sourcing ? <p className="mt-24 text-c1 text-ink-secondary">{tx(locale, sourcing)}</p> : null}
               <CategoryNote note={categoryNote(category.slug, locale)} />
             </div>
@@ -105,8 +103,9 @@ export function CategoryPage({ locale, slug }: { locale: Locale; slug: string })
             <ProductIndexList products={products} label={`${products.length} ${lower(name, locale)}`} locale={locale} />
           </div>
         </section>
-        <CategoryBuyingGuide categorySlug={category.slug} categoryName={name} products={products} locale={locale} />
+        <CategoryBuyingGuide categorySlug={category.slug} categoryName={name} products={products} locale={locale} withSchema={false} />
         <SpecMatrix products={products} categorySlug={category.slug} locale={locale} showCompareLink />
+        <CategoryGuide category={category} products={products} locale={locale} extraFaq={guideBlocks(category.slug, products, locale)?.items ?? []} />
       </main>
     </>
   );

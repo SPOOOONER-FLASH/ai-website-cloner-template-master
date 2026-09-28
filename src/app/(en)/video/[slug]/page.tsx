@@ -7,6 +7,8 @@ import { findCategoryByPath } from "@/data/categories";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 import { specValueFor } from "@/lib/imperial";
+import { productFaqHeading, productFaqItems } from "@/lib/product-faq";
+import { ProductFaqJsonLd } from "@/components/site/JsonLd";
 import {
   clock,
   getWatchPageProduct,
@@ -69,6 +71,13 @@ export default async function VideoWatchPage({ params }: Props) {
   if (!product.modelTbc) quote.set("model", product.model);
   const pageUrl = absoluteUrl(watchPagePath(product));
   const schema = videoObjectSchema(product, video, pageUrl);
+  /*
+    The same questions and answers the product page prints, composed from this record's
+    spec rows by productFaqItems and mirrored by ProductFaqJsonLd — so the video page states
+    what the part is, what it is made of and where it fits, instead of a title and one line
+    (citability 32 → the audit's lowest page type on 2026-09-28).
+  */
+  const faq = productFaqItems(product, "en");
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
@@ -126,6 +135,20 @@ export default async function VideoWatchPage({ params }: Props) {
               </>
             ) : null}
           </div>
+          {faq.length ? (
+            <div className="col-span-full lg:col-span-7 xl:col-span-14">
+              <ProductFaqJsonLd product={product} locale="en" />
+              <h2 className="text-c1 font-semibold text-ink">{productFaqHeading("en")}</h2>
+              <dl className="mt-12 max-w-[64ch]">
+                {faq.map((item) => (
+                  <div key={item.question} className="border-b border-line py-12">
+                    <dt className="text-c1 text-ink">{item.question}</dt>
+                    <dd className="mt-4 text-c2 text-ink-secondary">{item.answer}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          ) : null}
           <div className="col-span-full flex flex-col gap-16 lg:col-span-3 lg:col-start-9 xl:col-span-6 xl:col-start-17">
             <Link
               href={productHref}

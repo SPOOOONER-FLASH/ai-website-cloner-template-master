@@ -10,6 +10,7 @@ import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 import { CollectionNote } from "@/components/site/CollectionNote";
+import { CollectionFacts } from "@/components/site/CollectionFacts";
 
 /**
  * Static pages for the sub-categories, one URL per real filter.
@@ -191,6 +192,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           locale="en"
           headingId="collection-range-heading"
         />
+        <CollectionFacts products={items} name={collection.child.name} locale="en" />
 
         <section className="layout mt-64 md:mt-144 lg:mt-288" aria-label={collection.child.name}>
           <div className="col-content grid w-full grid-cols gap-x">

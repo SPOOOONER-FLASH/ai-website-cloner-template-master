@@ -173,6 +173,17 @@ for (const folder of ["news", "guides"]) {
   }
 }
 
+/* Category positioning (src/data/category-positioning.json): pitch is rendered through tx() in CategoryGuide. */
+for (const [slug, entry] of Object.entries(JSON.parse(readFileSync("src/data/category-positioning.json", "utf8")))) {
+  if (slug.startsWith("_") || !entry || typeof entry !== "object") continue;
+  const text = entry.pitch;
+  if (!worth(text)) continue;
+  const where = "src/data/category-positioning.json";
+  const list = keys.get(text) ?? [];
+  if (!list.includes(where)) list.push(where);
+  keys.set(text, list);
+}
+
 /* 3D model scope notes: public/downloads/models/index.json scope.en is rendered through dict() in ProductModel. */
 for (const m of JSON.parse(readFileSync("public/downloads/models/index.json", "utf8"))) {
   const en = m?.scope?.en;

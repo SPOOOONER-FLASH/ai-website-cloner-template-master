@@ -80,3 +80,27 @@
 **还没做 / 下一批**：把 QuickCreator 会话的 `CategoryGuide` 挂到七语种（先把 `category-guide.ts` 的 `copyFor` 改 tx 模板）；
 子类页可引用性（定义里没有数字，可把该子类的规格范围句写进定义）；视频页可引用性 40 仍低（197 页，加「用在哪里」一句 + 图纸链接）；
 甲方数据（第四节）到了再进 FAQ。
+
+## 七、第二批（09-28 下午）
+
+**已做**
+- 「怎么选（Choosing …）」板块挂到七语种品类页：`src/lib/category-guide.ts` 的文案从函数改成 `{placeholder}` 模板 + `fill()`、`copyFor` 改 `dict()`（英文输出逐字不变，原测试全过）；品类定位句 `category-positioning.json` 的 pitch 进提取器并走 `tx`；七语种页删掉「数据正在整理」那句（英西葡当天已删）；每页仍只有一个 FAQPage。
+- 子类页 `CollectionFacts.tsx`：逐型号印出记录里带单位的规格行（最多 3 行，无测量值时印材质），加计算型问答 + FAQPage，十语种。
+- 视频页（197 页，英文）：印出产品页同一组问答（`productFaqItems`）+ `ProductFaqJsonLd`。
+- 七语种 52 键（7 个模板、约 40 句品类定位、1 个子类页标题）交七名写手。
+
+**文章层长尾：等文案会话那批过了再动（建议已备好）**
+
+文案会话在 NOW.md 的行仍开着（bodyEs/bodyPt 逐篇改写），文章 `seoTitle*` 归工程会话，所以本会话只备建议、不改文件。依据是 GSC 09-22 查询：
+
+| 查询（展示 / 排名） | 落到哪篇 | 建议 | 归谁 |
+|---|---|---|---|
+| master keying system chart（153 / 7.9） | news/master-key-systems-how-many-levels-you-need | 标题 09-24 已加 Chart，**09-22 的数据还没覆盖新标题**，先等新导出再判断；正文已有层级图 | 看数据 |
+| keying schedule（2 / 14）、terms used in master key systems（2 / 29） | 同上 + guides/master-key-hierarchy-planning-2026 | 两篇正文都没有 "keying schedule" 这个词：在 guide 里加一段「keying schedule 是什么、要哪几列（门号、功能、钥匙级别、数量）」，并加一问一答；news 篇加 GGMK/GMK/MK/CK 术语短表 | 文案 |
+| door selector for double doors（1 / 10） | news/door-coordinator-double-fire-door | 正文和问答里补 "door selector" 这个同义词（英美两种叫法） | 文案 |
+| fire exit door with panic bar double（3 / 39）、fire door with panic hardware（4 / 47） | news/double-fire-exit-door-hardware-set | 标题已对，排名低是新页；等新数据 | 看数据 |
+| anti panic door（6 / 50）、cleanroom anti-panic doors（2 / 100） | 品类页 panic-exit-devices（本批已加 anti-panic door 用语） | 冷库/洁净室：317 冷库推杠已有型号页，可加一篇短文 | 文案 |
+| smith and locke ironmongery catalogue、lane locks catalogue（竞品目录词） | news/cross-referencing-a-lock-you-already-buy | 不写竞品名；问答里补「从英国 ironmongery 目录换型号时核对哪几项」 | 文案 |
+| latch hardware catalog（7 / 30） | collections/hardware-accessories-latches | 本批 CollectionFacts 已把每个 latch 的 backset/面板尺寸印出来 | 已做 |
+
+**要甲方给**：GSC 09-24 之后的「网页 + 查询」导出——没有它，主钥匙文章改标题的效果无法判断，其它几条也只能按 09-22 的旧数据下判断。
