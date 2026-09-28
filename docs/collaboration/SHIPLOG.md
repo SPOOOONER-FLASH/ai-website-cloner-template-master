@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 651 次提交
+最近 30 天 · 共 652 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:42 | 中立 | goal #97：r13 = 121e397e6ef 已推 | `4b131f6a43a` |
 | 23:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `c1adaaf4ce5` |
 | 23:26 | HYDE | BAU 2027 专栏上线源码：/bau-2027/ 与 /de/bau-2027/（版式 B） | `42ebcd6e243` |
 | 23:11 | 中立 | BAU 2027 任务单：甲方选定版式 B；预约邮箱 tec@cantonlock.com | `44ed06b635e` |
