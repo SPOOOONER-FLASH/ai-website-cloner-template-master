@@ -54,3 +54,4 @@ test("the categories that state dimensions keep at least one dimension answer", 
     const kept = CATEGORY_GUIDES[slug].items.filter((i) => (i.needs ?? []).length && (i.needs ?? []).every((n) => n in v));
     assert.ok(kept.length >= 1, `${slug} lost every dimension answer: facts ${JSON.stringify(Object.keys(v))}`);
   }
+});

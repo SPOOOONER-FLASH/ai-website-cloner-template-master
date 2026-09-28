@@ -62,3 +62,4 @@ test("articles are linked only when their curated model list names this range", 
   assert.equal(picked[0].slug, "two");
   assert.ok(!picked.some((a) => a.slug === "unrelated"));
   assert.equal(picked.length, MAX_ARTICLES);
+});
