@@ -70,11 +70,12 @@ const COPY: Record<PrivacyLocale, PrivacyCopy> = {
           "Our web server and our content-delivery and security provider, Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA), process the technical data every browser sends: IP address, date and time, the page requested, the referring page, browser and operating system. This is needed to deliver the pages, protect the site from automated attacks and investigate faults. Cloudflare may set a short-lived security cookie to tell people from bots, and it replaces email addresses in the page with a protected link so spam robots cannot collect them.",
           "Legal basis: our legitimate interest in a secure, working website (Art. 6(1)(f) GDPR). Logs are kept only as long as needed for these purposes.",
           "Our typeface and our product videos are served from our own server. Opening a page does not contact Google Fonts, YouTube or Vimeo.",
-          "The site stores three small items in your browser. None of them identifies you:",
+          "The site stores four small items in your browser. None of them identifies you:",
           {
             list: [
               "in session storage, the catalog page you came from, so the back link returns you to the same place. It is deleted when you close the tab;",
               "in local storage, when the promotions panel was last shown and its version, so it does not reappear too soon;",
+              "in local storage, whether you closed the notice offering the page in your browser's language, so it is not offered again;",
               "in session storage, one word for how you first reached the site in this visit (for example chatgpt, google or direct), taken from the referring site or a utm_source link parameter. It is deleted when you close the tab and sent to us only with a product inquiry (section 3).",
             ],
           },
@@ -174,11 +175,12 @@ const COPY: Record<PrivacyLocale, PrivacyCopy> = {
           "Unser Webserver und unser Dienstleister für Auslieferung und Sicherheit, Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA), verarbeiten die technischen Daten, die jeder Browser übermittelt: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, verweisende Seite, Browser und Betriebssystem. Das ist erforderlich, um die Seiten auszuliefern, die Website vor automatisierten Angriffen zu schützen und Fehler zu untersuchen. Cloudflare kann ein kurzlebiges Sicherheits-Cookie setzen, um Menschen von Bots zu unterscheiden, und ersetzt E-Mail-Adressen im Seitentext durch einen geschützten Link, damit Spam-Roboter sie nicht auslesen können.",
           "Rechtsgrundlage: unser berechtigtes Interesse an einer sicheren, funktionsfähigen Website (Art. 6 Abs. 1 lit. f DSGVO). Protokolle werden nur so lange aufbewahrt, wie es für diese Zwecke erforderlich ist.",
           "Unsere Schrift und unsere Produktvideos werden von unserem eigenen Server ausgeliefert. Beim Aufruf einer Seite werden weder Google Fonts noch YouTube oder Vimeo kontaktiert.",
-          "Die Website legt drei kleine Einträge in Ihrem Browser ab. Keiner davon identifiziert Sie:",
+          "Die Website legt vier kleine Einträge in Ihrem Browser ab. Keiner davon identifiziert Sie:",
           {
             list: [
               "im Session Storage die Katalogseite, von der Sie kamen, damit der Zurück-Link Sie an dieselbe Stelle führt. Der Eintrag wird beim Schließen des Tabs gelöscht;",
               "im Local Storage, wann das Aktionsfenster zuletzt angezeigt wurde und in welcher Version, damit es nicht zu früh erneut erscheint;",
+              "im Local Storage, ob Sie den Hinweis geschlossen haben, der die Seite in der Sprache Ihres Browsers anbietet, damit er nicht erneut erscheint;",
               "im Session Storage ein Wort dafür, wie Sie bei diesem Besuch zuerst auf die Website gekommen sind (zum Beispiel chatgpt, google oder direct), ermittelt aus der verweisenden Website oder einem utm_source-Linkparameter. Der Eintrag wird beim Schließen des Tabs gelöscht und nur mit einer Produktanfrage an uns übertragen (Abschnitt 3).",
             ],
           },
