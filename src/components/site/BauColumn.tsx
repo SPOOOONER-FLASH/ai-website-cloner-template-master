@@ -48,7 +48,7 @@ export function BauColumn({ locale }: { locale: BauLocale }) {
                             width="600"
                             height="600"
                             loading="lazy"
-                            className="size-full object-contain transition-transform duration-[var(--motion-medium)] group-hover:scale-[1.02]"
+                            className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                           />
                         </span>
                         <span className="block p-16">
