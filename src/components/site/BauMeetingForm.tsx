@@ -6,6 +6,7 @@ import type { BauCopy, BauLocale } from "@/data/bau-2027";
 import { submitInquiry } from "@/lib/inquiry-submit";
 import { trackLead } from "@/lib/analytics-events";
 import { Button } from "./Button";
+import { PrivacyNote } from "./PrivacyNote";
 
 const FIELD_CLASS =
   "field min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink placeholder:text-ink-secondary";
@@ -174,6 +175,7 @@ export function BauMeetingForm({
           {status === "submitting" ? system.sending : copy.submit}
         </Button>
         <p className="text-c2 text-ink-secondary">{copy.privacy}</p>
+        <PrivacyNote locale={locale} />
         {status === "error" ? (
           <p role="alert" className="text-c2 text-ink">
             {system.failure}{" "}
