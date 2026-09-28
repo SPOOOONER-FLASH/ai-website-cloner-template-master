@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 660 次提交
+最近 30 天 · 共 661 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 05:09 | 中立 | release: retry next build up to twice on native crash 0xC0000409 | `c763bf6bda7` |
 | 05:04 | 中立 | BAU 专栏：564 卡片说明首字母大写 | `41bc9c2074c` |
 | 05:03 | 中立 | 308-S / 308-D 标题按单扇/双扇定性（positioning 覆盖） | `86367c614e5` |
 | 05:01 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3d62eef4c25` |
