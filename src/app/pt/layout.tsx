@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
+import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -86,11 +87,15 @@ export default function PortugueseRootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
+        {/* RSS of this locale's guides and news (09-28, Google Discover). See (en)/layout.tsx. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE guias e notícias" href="/pt/feed.xml" />
         <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />
       </head>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
+        {/* Above the header and in flow: it offers, it never covers. See the component. */}
+        <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}

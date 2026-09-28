@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { CategoryGuide } from "@/components/site/CategoryGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
 import { categoryNote } from "@/data/category-notes";
 import { CategoryNote } from "@/components/site/CategoryNote";
@@ -162,10 +163,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </div>
           <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
             <p className="text-lead text-ink">{category.summary}</p>
-            <p className="mt-24 text-c1 text-ink-secondary">
-              Product data shown here is limited to verified client records. Additional references
-              from the legacy catalog are being prepared for structured publication.
-            </p>
             {/* Sourcing facts, every clause published elsewhere — see category-sourcing.ts. */}
             {sourcing ? <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p> : null}
             <CategoryNote note={categoryNote(category.slug, "en")} />
@@ -180,6 +177,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
       </section>
       <SpecMatrix products={products} categorySlug={category.slug} showCompareLink />
+      {/* Delete the grid and this still answers "what is in the range, how do I choose" (09-28). */}
+      <CategoryGuide category={category} products={products} />
     </main>
     </>
   );

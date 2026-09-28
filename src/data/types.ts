@@ -475,6 +475,15 @@ export interface NewsArticle {
    * rebuild on the day. Say so to whoever schedules one.
    */
   publishedAt: string;
+  /**
+   * "YYYY-MM-DD" of the last change to what a reader reads (title, summary, body, FAQ, in
+   * English, Spanish or Portuguese). Written ONLY by scripts/stamp-article-revisions.mjs,
+   * which compares a hash of those fields with src/data/article-revisions.json — never by
+   * hand, and never bumped by a formatting pass or an SEO-title tweak. Absent means the
+   * article has not changed since publication. Drives dateModified, og:modified_time, the
+   * sitemap <lastmod> and the "Updated" line (client 2026-09-28, Google Discover).
+   */
+  updatedAt?: string;
   /** Named author. Absent on corporate announcements, which are authored by the company. */
   author?: ArticleAuthor;
   /** Kept out of the build entirely. Use for work in progress. */

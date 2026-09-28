@@ -25,6 +25,7 @@ const STATIC = [
   ["", "HomePage", "HomePage", "homeMetadata"],
   ["certifications", "CertificationsPage", "CertificationsPage", "certificationsMetadata"],
   ["company", "SimplePages", "CompanyPage", "companyMetadata"],
+  ["company/johnson-liu", "SimplePages", "JohnsonLiuPage", "johnsonLiuMetadata"],
   ["configurator", "ConfiguratorPage", "ConfiguratorPage", "configuratorMetadata"],
   ["contact", "ContactPage", "ContactPage", "contactMetadata"],
   ["documents", "DocumentsPage", "DocumentsPage", "documentsMetadata"],
@@ -75,6 +76,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
+import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import { absoluteUrl, defaultDescription, defaultTitle, indexable, siteName, siteUrl } from "@/data/site";
@@ -149,6 +151,8 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
       <body suppressHydrationWarning className="flex min-h-full flex-col">
         {/* This locale's client dictionary — one chunk, this locale only (src/lib/i18n-client.ts). */}
         <I18nClientBundle />
+        {/* Above the header and in flow: it offers, it never covers. See the component. */}
+        <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}
