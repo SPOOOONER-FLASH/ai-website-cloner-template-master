@@ -16,6 +16,7 @@ import {
   ShelfTrigger,
 } from "./HeaderIslands";
 import navigationStyles from "./HeaderNavigation.module.css";
+import { BauInfoBand } from "./BauEntry";
 import { dict, tx } from "@/lib/i18n";
 
 /**
@@ -180,9 +181,8 @@ export function SiteHeader({
   const resourcesLabel = tx(locale, "Resources", { es: "Recursos", pt: "Recursos" });
   const buyLabel = tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" });
 
-  return (
-    // The black promo strip was removed on request. With nothing above it, the nav row
-    // pins at the very top instead of scrolling a banner away first.
+  const header = (
+    // Only the navigation sticks; the BAU information band below scrolls in page flow.
     <HeaderProvider
       locale={locale}
       categories={categories}
@@ -575,5 +575,12 @@ export function SiteHeader({
         </div>
       </ShelfPanel>
     </HeaderProvider>
+  );
+
+  return (
+    <>
+      {header}
+      <BauInfoBand locale={locale} />
+    </>
   );
 }
