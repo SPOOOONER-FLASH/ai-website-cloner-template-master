@@ -9,7 +9,7 @@
   ],
   "summary": "Tubular latch with a cylindrical zinc-plated body; backset confirmed on drawing before the order.",
   "specs": [],
-  "material": "Zinc Alloy",
+  "material": "",
   "finishes": [],
   "doorTypes": [],
   "certifications": [],
@@ -41,5 +41,16 @@
   "specsPt": [],
   "seoTitlePt": "L026 Lingueta para portas internas e de passagem | Canton Hyland",
   "seoDescriptionPt": "L026 lingueta para portas internas e de passagem. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Pestillo tubular de cuerpo cilíndrico zincado; la entrada se confirma sobre plano antes del pedido."
+  "summaryEs": "Pestillo tubular de cuerpo cilíndrico zincado; la entrada se confirma sobre plano antes del pedido.",
+  "specSources": {
+    "material": {
+      "basis": "conflict-unresolved",
+      "fields": [
+        "Material"
+      ],
+      "note": "CONFLICT, left unresolved on purpose (2026-09-27). This record's own summary, written from the factory drawing, says the body is ZINC-PLATED; the material field said \"Zinc Alloy\". Those are different products: zinc plating is a coating over a substrate, zinc alloy is a die casting, and a buyer specifying corrosion resistance or strength is choosing between them. The field is cleared rather than corrected because the summary names the coating, not what is under it — \"zinc-plated\" WHAT is not stated anywhere in the record, and steel is a guess. Ask the factory: is the body zinc-plated steel, or zinc alloy? Until then this page states no material, which content-health counts under noMaterial. Do not refill it from the category.",
+      "raisedAt": "2026-09-27",
+      "wasStated": "Zinc Alloy"
+    }
+  }
 }
