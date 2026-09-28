@@ -461,7 +461,20 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
         */}
       </div>
 
-      <div aria-live="polite" className="col-content grid w-full grid-cols gap-x pb-32 pt-16 md:pb-48 md:pt-24">
+      {/*
+        Off while the carousel rotates on its own, polite once it has stopped (hover, focus,
+        hidden tab, reduced motion). A live region that announces every six seconds talks
+        over whatever a screen-reader user is reading elsewhere on the page; this is the
+        WAI-ARIA carousel pattern. It was polite unconditionally until 2026-09-27.
+      */}
+      <div
+        aria-live={
+          shouldAutoplay({ isHovered: hovered, isFocused: focusWithin, isDocumentHidden: documentHidden, reducedMotion, conserveData }) && slideCount > 1
+            ? "off"
+            : "polite"
+        }
+        className="col-content grid w-full grid-cols gap-x pb-32 pt-16 md:pb-48 md:pt-24"
+      >
         {content.slides.map((slide, index) => (
           <div
             aria-hidden={index !== activeIndex}

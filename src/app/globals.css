@@ -2060,22 +2060,32 @@
 }
 
 /*
-  The location-and-language panel arriving from under the header.
+  The location-and-language panel arriving from under the header, and leaving the same way.
 
-  A slide rather than a fade, because the sheet comes FROM the control that opened it and
-  the short travel is what says so. 180ms and a plain ease-out — see the comment in
+  A slide rather than a fade alone, because the sheet comes FROM the control that opened it
+  and the short travel is what says so. Until 2026-09-27 it was a mount-only keyframe: it
+  slid in, then vanished in a single frame on close. It now runs on useOverlayPresence like
+  search, the image dialog and the menu (in at --motion-medium, out at --motion-fast), with
+  the travel reversed: back up under the header rather than the dialogs' drop. See
   LocalePicker.tsx for why there is no globe here and no staggered rows.
-
-  `motion-safe` is applied at the call site via Tailwind's variant, so a reduced-motion
-  reader gets the panel with no travel at all rather than a shortened version of it.
 */
-@keyframes locale-picker-in {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+.locale-sheet {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity var(--motion-medium) var(--motion-ease),
+    transform var(--motion-medium) var(--motion-ease);
+}
+.locale-sheet[data-state="closed"] {
+  opacity: 0;
+  transform: translateY(-0.8rem);
+  pointer-events: none;
+  transition-duration: var(--motion-fast);
+}
+@media (prefers-reduced-motion: reduce) {
+  .locale-sheet,
+  .locale-sheet[data-state="closed"] {
+    transition: none;
+    transform: none;
   }
 }

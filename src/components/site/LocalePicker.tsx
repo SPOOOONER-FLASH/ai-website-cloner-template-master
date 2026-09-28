@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import type { Locale } from "@/data/site";
 import { EmailLink } from "./EmailLink";
 import { GlobeIcon } from "./icons";
@@ -35,9 +36,9 @@ import { dict } from "@/lib/i18n-client";
  * THE ONE PIECE OF MOTION, AND WHAT IT CARRIES
  *
  * The sheet slides down from under the header rather than fading in place, because it
- * comes FROM the control that opened it and the movement says so. 180ms, no easing
- * theatrics, and `motion-safe:` throughout so a reduced-motion reader gets the panel
- * without the travel.
+ * comes FROM the control that opened it and the movement says so, and goes back up the
+ * same way on close. The site's overlay rhythm (medium in, fast out), no easing
+ * theatrics, and no travel for a reduced-motion reader — see `.locale-sheet` in globals.css.
  *
  * Nothing else moves. The rows do not stagger — this is a menu being read, not a sequence
  * being watched, and a reader hunting for their own language should find it stationary.
@@ -51,6 +52,8 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
   */
   const text = dict(localePickerCopy, locale);
   const [open, setOpen] = useState(false);
+  /* Mounted for the short exit too (globals.css .locale-sheet), then unmounted. */
+  const presence = useOverlayPresence(open);
   const panelRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const panelId = useId();
@@ -169,17 +172,15 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
         contact address and phone number into the DOM of all 1,287 pages, which is a lot of
         repeated markup for a control most readers never touch.
       */}
-      {open ? (
+      {presence.rendered ? (
         <div
           ref={panelRef}
           id={panelId}
           role="dialog"
           aria-modal="false"
           aria-label={text.title}
-          className={[
-            "absolute left-0 right-0 top-full z-40 border-t border-line bg-surface shadow-sm",
-            "motion-safe:animate-[locale-picker-in_var(--motion-fast)_var(--motion-ease-crisp)]",
-          ].join(" ")}
+          data-state={presence.visible ? "open" : "closed"}
+          className="locale-sheet absolute left-0 right-0 top-full z-40 border-t border-line bg-surface shadow-sm"
         >
           <div className="layout py-40">
             <div className="col-content grid grid-cols gap-x gap-y-40">
