@@ -4,6 +4,7 @@ import type { NewsArticle } from "@/data/types";
 import { newsKindLabels, formatNewsDate } from "@/data/news";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
+import { authorPortrait } from "@/data/author-portraits";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { NewsVisual } from "./NewsVisual";
@@ -99,6 +100,7 @@ export function NewsDetail({
   section?: "news" | "guides";
 }) {
   const t = dict(COPY, locale);
+  const portrait = authorPortrait(article.author?.name);
   const sectionLabel = dict(SECTION_LABEL[section], locale) ?? SECTION_LABEL[section].en;
   const base = locale === "en" ? "" : `/${locale}`;
   /*
@@ -219,7 +221,23 @@ export function NewsDetail({
               reviewer line can be added beside this — empty until a real name exists.
             */}
             {article.author ? (
-              <p className="mt-16 text-c2 text-ink-secondary">
+              <div className="mt-16 flex items-start gap-12">
+                {/*
+                  A real photograph of the person named, supplied by the client, or nothing.
+                  `alt` is empty on purpose: the name is right beside it, and a screen reader
+                  announcing "Johnson Liu, Johnson Liu" is worse than announcing it once.
+                */}
+                {portrait ? (
+                  <img
+                    src={portrait.src}
+                    alt=""
+                    width={portrait.width}
+                    height={portrait.height}
+                    loading="lazy"
+                    className="h-48 w-48 flex-none rounded-[2px] object-cover"
+                  />
+                ) : null}
+                <p className="text-c2 text-ink-secondary">
                 <span className="text-ink">
                   {article.author.url ? (
                     <a
@@ -240,7 +258,8 @@ export function NewsDetail({
                 {article.author.credential ? (
                   <span className="block text-ink-secondary">{article.author.credential}</span>
                 ) : null}
-              </p>
+                </p>
+              </div>
             ) : null}
 
             {section === "news" && <div className="mt-32 border-t border-line pt-16">

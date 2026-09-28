@@ -1,4 +1,5 @@
 import type { Locale } from "@/data/site";
+import { authorPortrait } from "@/data/author-portraits";
 import { articleShareImage } from "@/lib/article-share-image";
 import { articleFaqItems } from "@/lib/article-faq";
 import { absoluteUrl, legalName, locales, siteName, siteUrl } from "@/data/site";
@@ -351,6 +352,14 @@ export function newsArticleSchema(
           jobTitle:
             t(article.author, "role", locale),
           worksFor: { "@id": `${siteUrl}/#organization` },
+          /*
+            A real photograph of the person, where the client has supplied one. This is the
+            half of the byline a search engine can see, and the same rule applies as to the
+            name beside it: the photograph is of the person named, or the field is absent.
+          */
+          ...(authorPortrait(article.author.name)
+            ? { image: absoluteUrl(authorPortrait(article.author.name)!.src) }
+            : {}),
           ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
           ...(article.author.credential
             ? {
