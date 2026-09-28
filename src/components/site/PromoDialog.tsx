@@ -5,6 +5,7 @@ import { localeFromPath } from "@/data/locales";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
+import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import type { PromoCard } from "@/data/types";
 import {
@@ -171,7 +172,12 @@ export function PromoDialog() {
   const activeCard = selectActivePromoCard(promoDialog.cards, dismissed, pathname);
   const locale = localeFromPath(pathname);
 
-  if (!open || !activeCard) return null;
+  /* The card rises in when the delay elapses and settles out when the rail is closed, on the
+     site overlay rhythm (globals.css .overlay-presence / .overlay-panel). It appeared and
+     vanished in a single frame until 2026-09-27. */
+  const presence = useOverlayPresence(open && Boolean(activeCard));
+
+  if (!presence.rendered || !activeCard) return null;
 
   return (
     /*
@@ -183,9 +189,12 @@ export function PromoDialog() {
       aria-label={locale === "es" ? "Oferta destacada" : locale === "pt" ? "Oferta em destaque" : "Featured offer"}
       // Passive promotion stays below the sticky header's z-10 stacking context, so
       // user-requested search and menu overlays inside that header always remain usable.
-      className="fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
+      className="overlay-presence fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
+      data-state={presence.visible ? "open" : "closed"}
     >
-      <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
+      <div className="overlay-panel">
+        <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
+      </div>
     </aside>
   );
 }

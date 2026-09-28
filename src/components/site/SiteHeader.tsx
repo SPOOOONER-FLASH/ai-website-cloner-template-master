@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { LocalePicker } from "./LocalePicker";
 import type { MenuCategory } from "@/data/categories";
 import { localeFromPath } from "@/data/locales";
@@ -167,6 +168,10 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const menuTriggerRef = useRef<HTMLButtonElement>(null);
   const menuOpenerRef = useRef<HTMLButtonElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  /* The menu fades and settles in and out on the same rhythm as search and the image
+     dialog (globals.css .overlay-presence / .overlay-panel). It popped in and vanished
+     until 2026-09-27, the one overlay on the site with no motion at all. */
+  const menuPresence = useOverlayPresence(menuOpen);
   const [searchOpen, setSearchOpen] = useState(false);
   /*
     The dialog stays mounted after its first open so its exit animation
@@ -777,8 +782,9 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
         </div>
       </section>
 
-      {menuOpen ? (
+      {menuPresence.rendered ? (
         <SiteMenuDrawer
+          state={menuPresence.visible ? "open" : "closed"}
           locale={locale}
           currentPath={pathname}
           categories={categories}
