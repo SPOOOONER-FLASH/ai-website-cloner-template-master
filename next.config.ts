@@ -1,3 +1,4 @@
+import os from "node:os";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -14,7 +15,16 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   // Multiple documented root layouts give / and /es their correct static html[lang].
   // The global 404 convention is required because there is no longer one shared root.
-  experimental: { globalNotFound: true },
+  experimental: {
+    globalNotFound: true,
+    /*
+      Build worker cap. Next defaults to one worker per core less one — 31 on the johns
+      release machine — and on 2026-09-28 three of four `deploy:prep` runs died in
+      "Collecting page data using 31 workers" with 0xC0000409, no JavaScript error. Twelve
+      is still fast and leaves headroom; NEXT_BUILD_CPUS overrides it on another machine.
+    */
+    cpus: Number(process.env.NEXT_BUILD_CPUS) || Math.min(12, Math.max(1, os.cpus().length - 1)),
+  },
 };
 
 export default nextConfig;
