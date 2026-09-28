@@ -1,4 +1,6 @@
 import { SpecRangeList } from "@/components/site/SpecRangeList";
+import { CollectionNote } from "@/components/site/CollectionNote";
+import { CollectionFacts } from "@/components/site/CollectionFacts";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -178,6 +180,8 @@ export default async function ColeccionPage({ params }: CollectionPageProps) {
           locale="es"
           headingId="collection-range-heading"
         />
+        <CollectionNote slug={collection.child.slug} name={collection.child.name} locale="es" />
+        <CollectionFacts products={items} name={collection.child.name} locale="es" />
 
         <section
           className="layout mt-64 md:mt-144 lg:mt-288"
