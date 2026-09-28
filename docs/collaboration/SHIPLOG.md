@@ -6,12 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 650 次提交
+最近 30 天 · 共 652 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:54 | 中立 | next build: cap workers at 12 (NEXT_BUILD_CPUS overrides) | `69921f1ad2e` |
+| 03:50 | 中立 | 任务单：首页与全站外壳改服务端渲染 + 客户端小岛（交 projects 会话） | `eeb638a48ff` |
+| 03:43 | 中立 | 七语种首页入口与英西葡一致：去掉桌面 lg:mt-192（408951d37ea 只改了 en/es/pt，fr/de/ja 等首页首屏比英文低 144px） | `b5bcb762a72` |
+| 02:57 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `7ee326b4f37` |
 | 02:57 | 中立 | goal #98 #99：r14 = b67a73bbca9 已推，seo:placement 零弱链 | `ab7b62dd587` |
 | 01:52 | HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `d0c2d682cbf` |
 | 01:51 | 中立 | 菜单列全部栏目 + 内链摆位审查（测试 + seo:placement） | `7b93e04c6ca` |
@@ -770,6 +774,4 @@
 | 05:36 | 中立 | 新增建筑层板式顶部导航 | `0b08faab8c4` |
 | 05:13 | 发布 HYDE | 发布证书申请下载区 | `f7cf29ea6a8` |
 | 05:11 | HYDE | 补齐证书申请下载区 | `4dc1c3e9331` |
-| 03:26 | 中立 · 发布 HYDE | 发布产品图片大图查看 | `de7d723cf6f` |
-| 03:24 | 中立 | 新增产品图片大图查看 | `3db2e52fbee` |
 
