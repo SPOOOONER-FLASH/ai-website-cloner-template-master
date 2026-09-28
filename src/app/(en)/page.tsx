@@ -57,29 +57,24 @@ export default function Home() {
           src/data/demand-showcase.ts for why the counts themselves stay off the page.
         */}
         <DemandShowcase />
-        <Spacer heights={content.spacers.s96} />
+        {/*
+          THE FEATURE RUN, REORDERED 2026-09-28 after the client's critique that four
+          sections in a row each asked to be the lead. Each now has one job, in the order a
+          buyer asks them, and all four share one heading shape (HomeSectionHeading):
 
+            most requested  what other buyers order       product grid, the lead
+            307 and 311     what the factory tooled       two photographs and a spec sheet
+            AR-4            a regional collection         a compact index into its own page
+            columns         what the catalog can explain  editorial rail
+
+          AR-4 moved below 307/311 and lost its homepage photograph: directly under the
+          most-requested grid it was a second product grid saying the same thing again.
+        */}
+        <Spacer heights={content.spacers.s96} />
+        <FlagshipTooling />
+        <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase />
         <Spacer heights={content.spacers.s96} />
-        {/*
-          307 and 311 sit directly above the panic-exit hero: the flagship pair first, then
-          the range they belong to. Reversing that order would introduce the family before
-          giving a reason to care about it.
-        */}
-        <FlagshipTooling />
-
-        {/*
-          Directly under the flagship pair, because the two answer different questions and
-          the second only lands once the first has been asked. 307 and 311 say what we
-          tooled; the columns say what we can explain — and a specifier arrives holding a
-          problem ("a pair of fire doors", "forty doors and three grades of key holder")
-          rather than a model number.
-
-          This is also where the demand data points. Explanatory articles are what get
-          cited — the model-number explainer seven times against three for every category
-          page combined — and the master key system was the highest-exposure line on the
-          client's own Alibaba storefront while this site said nothing about it.
-        */}
         <FeatureColumns />
 
         <HeroModule content={content.hero2} homeEditorial />

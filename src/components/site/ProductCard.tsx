@@ -13,6 +13,15 @@ interface ProductCardProps {
   product: FinderProduct;
   className?: string;
   /**
+   * Homepage rails only. A rail puts four cards on one baseline, so a name that wraps to
+   * two lines beside names that fit on one, and a material line of forty words beside one
+   * of two, shift every row below them. The shelf card reserves two lines for the name and
+   * one for the material, and pins the material to the bottom of the card, so name, model
+   * and material line up across the rail. The full material stays in `title` and on the
+   * product page; catalogue grids keep the unclamped card.
+   */
+  shelf?: boolean;
+  /**
    * Pass on the cards in the first visible row so their photographs are fetched eagerly.
    * A 20-card grid is right to lazy-load; its first row is not — see MediaPlaceholder.
    */
@@ -21,7 +30,7 @@ interface ProductCardProps {
 }
 
 /** Shared catalogue card for listings and related products. */
-export function ProductCard({ product, className, priority, locale = "en" }: ProductCardProps) {
+export function ProductCard({ product, className, priority, shelf = false, locale = "en" }: ProductCardProps) {
   const es = locale === "es";
   const pt = locale === "pt";
   /* Locale prefix, not a Spanish test — a card on /pt/ linked into the English tree. */
@@ -68,8 +77,14 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
         ) : null}
       </div>
       <div className="flex flex-1 flex-col border-t border-line p-24">
+        {/* The clamp sits on an inner span: title-marker draws its rule in its own bottom
+            padding, which a clamp on the same box would fill with a third line of text. */}
         <p className="title-marker text-h3 text-ink">
-          {t(product, "name", locale)}
+          {shelf ? (
+            <span className="line-clamp-2 min-h-[2lh]">{t(product, "name", locale)}</span>
+          ) : (
+            t(product, "name", locale)
+          )}
         </p>
         {/*
           SAY THAT A DEMONSTRATION CLIP EXISTS, IN WORDS.
@@ -86,7 +101,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
           reader in the order it matters. Restraint reads as confidence; see the
           "professional, not decorated" rule in AGENTS.md.
         */}
-        <p className="mt-8 text-c1 text-ink-secondary">
+        <p className={cn("mt-8 text-c1 text-ink-secondary", shelf && "mb-24")}>
           {product.modelTbc
             ? tx(locale, "Model code to be confirmed", { es: "Código de modelo por confirmar", pt: "Código do modelo a confirmar" })
             : `${tx(locale, "Model", { es: "Modelo", pt: "Modelo" })} ${product.model}`}
@@ -94,7 +109,13 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
             <span className="text-ink-secondary"> · {tx(locale, "Video", { es: "Vídeo", pt: "Vídeo" })}</span>
           ) : null}
         </p>
-        <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">
+        <p
+          className={cn(
+            "mt-24 border-t border-line pt-16 text-c2 text-ink-secondary",
+            shelf && "mt-auto truncate",
+          )}
+          title={shelf ? material.join(" · ") : undefined}
+        >
           {material.join(" · ")}
         </p>
       </div>

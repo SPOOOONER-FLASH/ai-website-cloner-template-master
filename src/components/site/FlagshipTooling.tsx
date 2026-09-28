@@ -1,5 +1,6 @@
 import type { Locale } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
+import { HomeSectionHeading } from "./HomeSectionHeading";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { flagshipCopy, flagshipTooling } from "@/lib/flagship-tooling";
 import { dict } from "@/lib/i18n";
@@ -37,32 +38,32 @@ export function FlagshipTooling({ locale = "en" }: { locale?: Locale }) {
 
   return (
     <section className="layout" aria-labelledby="flagship-tooling-heading">
-      <div className="col-content">
-        <div className="grid grid-cols gap-x gap-y-48 border-t border-ink pt-32">
-          <div className="col-span-full lg:col-span-4 xl:col-span-8">
-            <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-              {text.eyebrow}
-            </p>
-            <h2 id="flagship-tooling-heading" className="mt-16 text-h2 text-ink">
-              {text.title}
-            </h2>
-            <p className="mt-24 max-w-[46ch] text-c1 text-ink-secondary">{text.intro}</p>
-            <div className="mt-24">
-              <ArrowLink href={text.ctaHref}>{text.cta}</ArrowLink>
-            </div>
-          </div>
+      <div className="col-content grid w-full grid-cols gap-x">
+        <HomeSectionHeading
+          id="flagship-tooling-heading"
+          eyebrow={text.eyebrow}
+          title={text.title}
+          lede={text.intro}
+          action={<ArrowLink href={text.ctaHref}>{text.cta}</ArrowLink>}
+        />
 
-          <div className="col-span-full grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
-            {cards.map((card) => (
-              <article key={card.model}>
-                <a href={card.href} className="block">
-                  <MediaPlaceholder
-                    {...card.image}
-                    label={locale === "es" ? (card.image.labelEs ?? card.image.label) : card.image.label}
-                    sizes="(min-width: 1440px) 420px, (min-width: 744px) 31vw, 96vw"
-                  />
-                </a>
-                <h3 className="mt-16 text-h3 text-ink">
+        {/*
+          Each device reads as one spec sheet: photograph beside its rows. Stacked under
+          the lede column, as they were, the pair left half the section empty and pushed
+          the rows a full photograph below the model number.
+        */}
+        <div className="col-span-full mt-32 grid grid-cols-1 gap-x gap-y-48 lg:grid-cols-2">
+          {cards.map((card) => (
+            <article key={card.model} className="grid grid-cols-1 gap-x-24 sm:grid-cols-2">
+              <a href={card.href} className="block">
+                <MediaPlaceholder
+                  {...card.image}
+                  label={locale === "es" ? (card.image.labelEs ?? card.image.label) : card.image.label}
+                  sizes="(min-width: 1440px) 330px, (min-width: 1032px) 23vw, (min-width: 640px) 48vw, 96vw"
+                />
+              </a>
+              <div>
+                <h3 className="mt-16 text-h3 text-ink sm:mt-0">
                   <a href={card.href} className="short-marker short-marker-compact">
                     {card.model}
                   </a>
@@ -80,9 +81,9 @@ export function FlagshipTooling({ locale = "en" }: { locale?: Locale }) {
                     </div>
                   ))}
                 </dl>
-              </article>
-            ))}
-          </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

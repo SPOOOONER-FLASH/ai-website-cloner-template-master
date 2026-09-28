@@ -47,18 +47,24 @@ export default function PortugueseHomePage() {
       <div className="modules">
         {/* Same position as the English page. See there for why it leads. */}
         <DemandShowcase locale="pt" />
-        <Spacer heights={content.spacers.s96} />
+        {/*
+          THE FEATURE RUN, REORDERED 2026-09-28 after the client's critique that four
+          sections in a row each asked to be the lead. Each now has one job, in the order a
+          buyer asks them, and all four share one heading shape (HomeSectionHeading):
 
+            most requested  what other buyers order       product grid, the lead
+            307 and 311     what the factory tooled       two photographs and a spec sheet
+            AR-4            a regional collection         a compact index into its own page
+            columns         what the catalog can explain  editorial rail
+
+          AR-4 moved below 307/311 and lost its homepage photograph: directly under the
+          most-requested grid it was a second product grid saying the same thing again.
+        */}
+        <Spacer heights={content.spacers.s96} />
+        <FlagshipTooling locale="pt" />
+        <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase locale="pt" />
         <Spacer heights={content.spacers.s96} />
-        {/*
-          307 and 311 sit directly above the panic-exit hero: the flagship pair first, then
-          the range they belong to. Reversing that order would introduce the family before
-          giving a reason to care about it.
-        */}
-        <FlagshipTooling locale="pt" />
-
-        {/* Same rail, Spanish. See the English page for why it sits here. */}
         <FeatureColumns locale="pt" />
 
         <HeroModule content={content.hero2} homeEditorial />
