@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-28 · 更新人：Codex（新增续做钩子的启用说明）**
+**最后更新：2026-09-28 · 更新人：Claude（新增 AI 来源追踪的三步）**
 
 ## 2026-09-28：Codex 续做钩子已配置，运行前需要一次审核
 
@@ -15,6 +15,33 @@ Codex 的官方机制要求用户审核并信任每个新增或改变的钩子�
 3. 读完后选择信任该定义。成功标志是该钩子显示已信任，而不是待审核。如果没有这个菜单或显示错误，停在这里，将错误文字发回；不要修改全局配置或使用跳过信任检查的启动参数。
 
 该钩子只匹配当前目标会话 `01a085d0-c428-7210-b89a-dc7c4cd8cf02`；在另一条聊天里不会强制续做。任务清单位于 `docs/collaboration/tasks/2026-09-27-codex-desktop-search-goal.md`。实际已完成的任务才会勾选，外部缺失资料记为依赖。
+
+## 2026-09-28：看清询盘是不是从 ChatGPT 来的 —— 三步，约 20 分钟，一次性
+
+**前提**：等 johns 电脑把分支 `claude/quickcreator-seo-geo-s6ltdt` 合并并发布之后再做。发布前做也不会坏事，只是没有数据。
+**为什么**：从这次发布起，每封询盘邮件会多一行 `first_touch`，写着这个买家第一次是从哪来的（`chatgpt`、`perplexity`、`google`、`direct` ……）。下面三步让 GA4 和 Cloudflare 也跟得上。详细理由见 `docs/collaboration/2026-09-28-quickcreator-seo-geo-report.md`。
+
+**第一步：GA4 登记 `first_touch`（5 分钟）**
+1. 打开 https://analytics.google.com → 确认媒体资源 **cantonlock**。
+2. 左下角齿轮 **管理** → **数据显示** → **自定义定义** → **创建自定义维度**。
+3. 维度名称填 **首次来源**，范围选 **事件**，事件参数填 `first_touch`，保存。
+- 成功的样子：列表里多一行「首次来源」。24–48 小时后，「询盘」事件（`generate_lead`）的报表里能按它分组。
+- 看不到按钮：账号不是「编辑者」，截图发我。
+
+**第二步：GA4 把 AI 流量单独成一行（10 分钟）**
+1. 同一个 **管理** → **数据显示** → **渠道组** → **创建新渠道组**，名称 **含 AI 助手**。
+2. 点 **添加新渠道**，渠道名 **AI assistants**，条件选「来源」→「与正则表达式匹配」，填：
+   `chatgpt|openai|perplexity|gemini|copilot|claude|deepseek`
+3. 保存后，把这个新渠道 **拖到「Referral」上面**（顺序决定归属，放在下面就会被 Referral 先吃掉），再保存渠道组。
+- 成功的样子：报告 → 流量获取 → 把主维度换成「含 AI 助手」渠道组，能看到 AI assistants 一行（有流量才会出现）。
+
+**第三步：Cloudflare 查 AI 搜索爬虫有没有被拦（5 分钟，只看不改）**
+1. 登录 Cloudflare → 选 **cantonlock.com** → 左栏 **Security** → **Events**（安全事件）。
+2. 右上角时间选「过去 7 天」，加筛选条件 **User agent** 包含，依次填：`OAI-SearchBot`、`Claude-SearchBot`、`PerplexityBot`、`GPTBot`。
+3. 看「操作」一列：
+   - 全是空的，或只有「Skip / Allow」：正常，什么都不用做。
+   - 出现 **Block**、**Managed Challenge** 或 **JS Challenge**：**停在这里，截图发我**，不要自己改防火墙规则。
+- 为什么要查：09-25 实测过 Bot Fight Mode 会拦谷歌自己的检测工具。robots.txt 允许了它们，但 Cloudflare 在 robots.txt 之前，拦下来 robots 写什么都没用。
 
 ---
 
