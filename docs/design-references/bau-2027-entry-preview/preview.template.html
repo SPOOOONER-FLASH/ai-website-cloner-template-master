@@ -1,0 +1,281 @@
+<div id="hyde-bau-options">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+    #hyde-bau-options { font-family: Archivo, Arial, sans-serif; }
+    #hyde-bau-options .preview-controls { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:18px; }
+    #hyde-bau-options .preview-location { margin:0 0 16px; color:var(--muted-foreground); font-size:14px; line-height:1.6; }
+    #hyde-bau-options .preview-stage { min-height:1360px; }
+    #hyde-bau-options .hyde-page { --hyde-white:#fff; --hyde-ink:#11110f; --hyde-soft:#f5f5f7; --hyde-rule:#deddd8; --hyde-secondary:#626266; color:var(--hyde-ink); background:var(--hyde-white); width:100%; margin:0 auto; container-type:inline-size; container-name:hyde; }
+    #hyde-bau-options .hyde-page.is-phone { max-width:390px; }
+    #hyde-bau-options .hyde-page * { box-sizing:border-box; }
+    #hyde-bau-options .hyde-page a { color:inherit; text-decoration:none; }
+    #hyde-bau-options .hyde-page a:hover { text-decoration:underline; text-underline-offset:5px; }
+    #hyde-bau-options .hyde-page a:focus-visible, #hyde-bau-options .hyde-page button:focus-visible { outline:2px solid var(--hyde-ink); outline-offset:4px; }
+    #hyde-bau-options .hyde-page img { display:block; max-width:100%; }
+    #hyde-bau-options .hyde-page h1, #hyde-bau-options .hyde-page h2, #hyde-bau-options .hyde-page h3, #hyde-bau-options .hyde-page p { margin:0; }
+    #hyde-bau-options .hyde-header { display:flex; align-items:center; justify-content:space-between; padding:25px 26px; min-height:90px; border-bottom:1px solid var(--hyde-rule); gap:24px; }
+    #hyde-bau-options .hyde-logo { width:144px; height:auto; }
+    #hyde-bau-options .hyde-header-links { display:flex; gap:22px; align-items:center; font-size:13px; }
+    #hyde-bau-options .hyde-menu-toggle { border:0; padding:10px 0; background:transparent; color:var(--hyde-ink); font:inherit; }
+    #hyde-bau-options .hyde-nav { display:flex; align-items:center; justify-content:space-between; min-height:61px; padding:10px 26px; gap:20px; font-size:14px; }
+    #hyde-bau-options .hyde-nav-links { display:flex; align-items:center; flex-wrap:wrap; gap:25px; }
+    #hyde-bau-options .hyde-buy { padding:11px 15px; background:var(--hyde-ink); color:var(--hyde-white)!important; font-weight:600; white-space:nowrap; }
+    #hyde-bau-options .hyde-menu { padding:24px 26px; background:var(--hyde-soft); border-block:1px solid var(--hyde-rule); }
+    #hyde-bau-options .hyde-menu:not([hidden]) { display:flex; flex-wrap:wrap; gap:20px 30px; }
+    #hyde-bau-options .hyde-main { padding:72px 26px 34px; }
+    #hyde-bau-options .hyde-main--context { padding-top:44px; }
+    #hyde-bau-options .scene-image { width:100%; aspect-ratio:2400 / 943; object-fit:cover; }
+    #hyde-bau-options .scene-image--context { aspect-ratio:5 / 1; }
+    #hyde-bau-options .scene-caption { display:grid; grid-template-columns:minmax(0,430px) 1fr; margin-top:23px; gap:24px; }
+    #hyde-bau-options .scene-caption h2 { font-size:20px; font-weight:600; line-height:1.25; margin-bottom:9px; }
+    #hyde-bau-options .scene-caption p { font-size:16px; line-height:1.6; }
+    #hyde-bau-options .hyde-link { display:inline-flex; align-items:center; gap:9px; font-size:16px; line-height:1.4; padding:12px 0; }
+    #hyde-bau-options .hyde-link i { width:16px; height:16px; }
+    #hyde-bau-options .links-line { display:flex; align-items:center; flex-wrap:wrap; gap:12px 26px; margin-top:20px; }
+    #hyde-bau-options .links-line .hyde-link:first-child { font-weight:600; }
+    #hyde-bau-options .links-line .secondary-link { font-size:14px; color:var(--hyde-secondary); }
+    #hyde-bau-options .event-band { padding:19px 26px; display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:14px 24px; background:var(--hyde-soft); border-block:1px solid var(--hyde-rule); }
+    #hyde-bau-options .event-band strong { font-weight:600; font-size:16px; }
+    #hyde-bau-options .band-information { font-size:14px; color:var(--hyde-secondary); }
+    #hyde-bau-options .event-band .band-links { display:flex; align-items:center; flex-wrap:wrap; gap:20px; font-size:14px; }
+    #hyde-bau-options .event-band .book-link { font-weight:600; }
+    #hyde-bau-options .section-rule { margin:45px 0 0; border:0; border-top:1px solid var(--hyde-rule); }
+    #hyde-bau-options .shelf { display:grid; grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr)); gap:20px; align-items:center; padding:0 0 28px; border-bottom:1px solid var(--hyde-rule); }
+    #hyde-bau-options .shelf h2 { font-size:24px; font-weight:600; line-height:1.25; }
+    #hyde-bau-options .shelf p { margin-top:10px; color:var(--hyde-secondary); font-size:15px; line-height:1.5; }
+    #hyde-bau-options .shelf-item { display:grid; grid-template-columns:90px 1fr; align-items:center; gap:14px; font-size:14px; }
+    #hyde-bau-options .shelf-item img { width:90px; height:90px; object-fit:contain; }
+    #hyde-bau-options .event-feature { display:grid; grid-template-columns:minmax(0,0.95fr) minmax(0,1.35fr); align-items:center; gap:30px; padding:54px 0; border-bottom:1px solid var(--hyde-rule); }
+    #hyde-bau-options .event-feature h1 { font-size:clamp(40px,6cqi,68px); font-weight:600; line-height:1.02; letter-spacing:-0.035em; }
+    #hyde-bau-options .event-city { color:var(--hyde-secondary); font-size:18px; line-height:1.5; margin-top:22px!important; }
+    #hyde-bau-options .event-stand { font-size:23px; font-weight:600; line-height:1.3; margin-top:9px!important; }
+    #hyde-bau-options .event-copy { font-size:16px; line-height:1.6; max-width:33ch; margin-top:24px!important; }
+    #hyde-bau-options .product-composition { display:grid; grid-template-columns:1fr 1fr; gap:8px; align-items:center; background:var(--hyde-white); }
+    #hyde-bau-options .product-composition figure { margin:0; min-width:0; }
+    #hyde-bau-options .product-composition img { width:100%; aspect-ratio:1; object-fit:contain; }
+    #hyde-bau-options .product-composition figcaption { text-align:center; font-size:13px; color:var(--hyde-secondary); padding:8px 0; }
+    #hyde-bau-options .continuation { padding-top:33px; }
+    #hyde-bau-options .continuation h2 { font-size:22px; font-weight:600; }
+    #hyde-bau-options .continuation p { margin-top:12px; font-size:16px; color:var(--hyde-secondary); line-height:1.5; }
+    #hyde-bau-options .campaign-hero { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); min-height:490px; align-items:center; gap:26px; padding:44px 36px; background:var(--hyde-soft); }
+    #hyde-bau-options .campaign-hero h1 { font-size:clamp(45px,7cqi,84px); line-height:.98; font-weight:600; letter-spacing:-0.035em; }
+    #hyde-bau-options .campaign-hero .event-city { font-size:17px; }
+    #hyde-bau-options .campaign-hero .event-stand { font-size:24px; }
+    #hyde-bau-options .campaign-hero .product-composition { background:var(--hyde-white); }
+    #hyde-bau-options .campaign-caption { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:25px; }
+    #hyde-bau-options .campaign-caption h2 { font-size:20px; line-height:1.3; font-weight:600; }
+    #hyde-bau-options .campaign-caption p { margin-top:8px; font-size:16px; line-height:1.6; color:var(--hyde-secondary); }
+    #hyde-bau-options .source-heading { font-size:22px; font-weight:600; margin:45px 0 22px!important; }
+    #hyde-bau-options .source-pair { display:grid; grid-template-columns:1fr 1fr; gap:25px; }
+    #hyde-bau-options .source-card { min-width:0; }
+    #hyde-bau-options .source-card > img { width:100%; aspect-ratio:1; object-fit:contain; }
+    #hyde-bau-options .source-caption { padding:20px 0; }
+    #hyde-bau-options .source-caption h3 { font-size:20px; line-height:1.3; font-weight:600; }
+    #hyde-bau-options .source-caption p { margin-top:8px; color:var(--hyde-secondary); font-size:15px; line-height:1.5; }
+    #hyde-bau-options .event-invitation { aspect-ratio:1; display:flex; flex-direction:column; justify-content:space-between; padding:35px; background:var(--hyde-ink); color:var(--hyde-white); }
+    #hyde-bau-options .event-invitation .invitation-heading { font-size:clamp(38px,6cqi,68px); line-height:1; letter-spacing:-0.035em; font-weight:600; }
+    #hyde-bau-options .invitation-information { margin-top:25px; font-size:17px; line-height:1.6; }
+    #hyde-bau-options .invitation-action { margin-top:28px; font-size:16px; display:flex; align-items:center; gap:10px; padding:10px 0; }
+    #hyde-bau-options .invitation-action i { width:18px; height:18px; }
+    #hyde-bau-options .preview-links { border-top:1px solid var(--hyde-rule); margin-top:42px; padding-top:18px; display:flex; gap:25px; flex-wrap:wrap; color:var(--hyde-secondary); font-size:13px; }
+    @container hyde (max-width:600px) {
+      #hyde-bau-options .hyde-header { padding:22px 18px; min-height:76px; gap:16px; }
+      #hyde-bau-options .hyde-logo { width:126px; }
+      #hyde-bau-options .hyde-header-links { gap:15px; font-size:12px; }
+      #hyde-bau-options .hyde-header-links .desktop-language { display:none; }
+      #hyde-bau-options .hyde-nav { padding:9px 18px; min-height:55px; gap:12px; font-size:12px; }
+      #hyde-bau-options .hyde-nav-links { gap:18px; }
+      #hyde-bau-options .hyde-nav-links .desktop-nav { display:none; }
+      #hyde-bau-options .hyde-buy { padding:10px 12px; }
+      #hyde-bau-options .hyde-main { padding:40px 18px 28px; }
+      #hyde-bau-options .hyde-main--context { padding-top:30px; }
+      #hyde-bau-options .scene-image { aspect-ratio:4 / 3; object-position:66% 50%; }
+      #hyde-bau-options .scene-image--context { aspect-ratio:2.2 / 1; }
+      #hyde-bau-options .scene-caption { grid-template-columns:1fr; margin-top:20px; gap:0; }
+      #hyde-bau-options .scene-caption h2 { font-size:19px; }
+      #hyde-bau-options .scene-caption p { font-size:15px; line-height:1.6; }
+      #hyde-bau-options .hyde-link { font-size:15px; }
+      #hyde-bau-options .event-band { padding:16px 18px; gap:8px; flex-direction:column; align-items:flex-start; }
+      #hyde-bau-options .event-band strong { font-size:16px; }
+      #hyde-bau-options .band-information { font-size:13px; }
+      #hyde-bau-options .event-band .band-links { gap:24px; padding-top:7px; min-height:33px; }
+      #hyde-bau-options .shelf { grid-template-columns:1fr 1fr; gap:12px; padding-bottom:22px; }
+      #hyde-bau-options .shelf > div:first-child { grid-column:1 / -1; }
+      #hyde-bau-options .shelf h2 { font-size:22px; }
+      #hyde-bau-options .shelf p { font-size:14px; }
+      #hyde-bau-options .shelf-item { grid-template-columns:60px 1fr; gap:8px; font-size:12px; }
+      #hyde-bau-options .shelf-item img { width:60px; height:60px; }
+      #hyde-bau-options .event-feature { grid-template-columns:1fr; padding:34px 0; gap:25px; }
+      #hyde-bau-options .event-feature h1 { font-size:47px; }
+      #hyde-bau-options .event-city { font-size:16px; margin-top:18px!important; }
+      #hyde-bau-options .event-stand { font-size:21px; }
+      #hyde-bau-options .event-copy { margin-top:17px!important; font-size:15px; }
+      #hyde-bau-options .links-line { margin-top:13px; }
+      #hyde-bau-options .product-composition { gap:7px; }
+      #hyde-bau-options .product-composition figcaption { font-size:12px; }
+      #hyde-bau-options .campaign-hero { grid-template-columns:1fr; padding:30px 22px; gap:26px; min-height:0; }
+      #hyde-bau-options .campaign-hero h1 { font-size:59px; }
+      #hyde-bau-options .campaign-hero .event-city { font-size:15px; }
+      #hyde-bau-options .campaign-hero .event-stand { font-size:21px; }
+      #hyde-bau-options .campaign-caption { grid-template-columns:1fr; gap:14px; }
+      #hyde-bau-options .campaign-caption p { font-size:15px; }
+      #hyde-bau-options .source-heading { font-size:20px; margin-top:30px!important; }
+      #hyde-bau-options .source-pair { grid-template-columns:1fr; gap:28px; }
+      #hyde-bau-options .source-card--bau { order:-1; }
+      #hyde-bau-options .event-invitation { padding:30px; aspect-ratio:auto; min-height:390px; }
+      #hyde-bau-options .event-invitation .invitation-heading { font-size:58px; }
+      #hyde-bau-options .invitation-information { font-size:16px; margin-top:20px; }
+      #hyde-bau-options .source-caption h3 { font-size:19px; }
+      #hyde-bau-options .preview-links { margin-top:30px; gap:18px; }
+    }
+    #hyde-bau-options[data-device="phone"] .preview-stage { min-height:1740px; }
+    @media(max-width:600px) { #hyde-bau-options .preview-stage { min-height:1740px; } }
+  </style>
+
+  <div class="preview-controls">
+    <span class="text-small text-muted">BAU 2027 · 入口位置示意，页头与上下文已精简</span>
+    <div class="viz-controls" aria-label="预览尺寸">
+      <button type="button" class="btn btn-primary" data-device="desktop" aria-pressed="true">桌面</button>
+      <button type="button" class="btn" data-device="phone" aria-pressed="false">手机</button>
+    </div>
+  </div>
+
+  <div class="viz-carousel" aria-label="HYDE BAU 四个设计方案" data-previous-label="上一个方案" data-next-label="下一个方案">
+    <section data-variant="1 · 替换 AR4" aria-label="方案一 替换 AR4">
+      <p class="preview-location">首页中段 · 热门型号之后，接替 AR4 专题</p>
+      <div class="preview-stage">
+        <div class="hyde-page">
+          <div data-hyde-header></div>
+          <main class="hyde-main hyde-main--context">
+            <div class="shelf">
+              <div><h2>Most-requested models</h2><p>What buyers asked for this quarter.</p></div>
+              <p>Selected from buyer inquiries.</p>
+              <a class="hyde-link" href="https://cantonlock.com/contact/" target="_blank" rel="noopener">Ask about these models <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <section class="event-feature">
+              <div>
+                <h1>Meet HYDE<br>at BAU 2027.</h1>
+                <p class="event-city">Munich · 11–15 January 2027</p>
+                <p class="event-stand">Hall C4 · Stand 523</p>
+                <p class="event-copy">See the hardware. Bring your drawings. Meet the people behind it.</p>
+                <div class="links-line"><a class="hyde-link" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">Book a meeting <i data-lucide="arrow-right" aria-hidden="true"></i></a><a class="secondary-link" href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a></div>
+              </div>
+              <div class="product-composition">
+                <figure><img src="{{product307}}" alt="Complete real 307 push bar"><figcaption>307 · Panic exit device</figcaption></figure>
+                <figure><img src="{{product311}}" alt="Complete real 311 push bar and outside trim"><figcaption>311 · Panic exit device</figcaption></figure>
+              </div>
+            </section>
+            <section class="continuation"><h2>307 and 311</h2><p>Two panic exit devices built on moulds we cut ourselves.</p><a class="hyde-link" href="https://cantonlock.com/products/panic-exit-devices/" target="_blank" rel="noopener">See the full panic exit range <i data-lucide="arrow-right" aria-hidden="true"></i></a></section>
+            <div class="preview-links"><a href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">BAU 2027</a><a href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a><a href="https://cantonlock.com/products/" target="_blank" rel="noopener">Product catalogue</a></div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <section data-variant="2 · 导航下信息带" aria-label="方案二 导航下信息带" hidden>
+      <p class="preview-location">首屏 · 导航下方，保留当前产品主 banner</p>
+      <div class="preview-stage">
+        <div class="hyde-page">
+          <div data-hyde-header></div>
+          <section class="event-band" aria-label="BAU exhibition invitation">
+            <strong>HYDE at BAU 2027</strong>
+            <span class="band-information">11–15 Jan · Munich · Hall C4 / Stand 523</span>
+            <div class="band-links"><a class="book-link" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">Book a meeting →</a><a href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a></div>
+          </section>
+          <main class="hyde-main">
+            <img class="scene-image" src="{{hero}}" alt="Existing HYDE representative fire exit application image">
+            <div class="scene-caption"><div><h2>Panic Exit Devices</h2><p>One push, and the door opens. Push bars, outside trims and lock cases for escape and fire doors.</p><a class="hyde-link" href="https://cantonlock.com/products/panic-exit-devices/" target="_blank" rel="noopener">Explore exit devices <i data-lucide="arrow-right" aria-hidden="true"></i></a></div></div>
+            <hr class="section-rule">
+            <section class="continuation"><h2>Source by range or by project</h2><p>Order from the Canton Hyland export catalogue.</p></section>
+            <div class="preview-links"><a href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">BAU 2027</a><a href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a><a href="https://cantonlock.com/contact/" target="_blank" rel="noopener">Contact the export team</a></div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <section data-variant="3 · BAU 主 banner" aria-label="方案三 BAU 主 banner" hidden>
+      <p class="preview-location">首屏 · 展会期间的第一张主 banner</p>
+      <div class="preview-stage">
+        <div class="hyde-page">
+          <div data-hyde-header></div>
+          <main class="hyde-main">
+            <section class="campaign-hero">
+              <div><h1>HYDE.<br>BAU 2027.</h1><p class="event-city">11–15 January · Messe München</p><p class="event-stand">Hall C4 · Stand 523</p><div class="links-line"><a class="hyde-link" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">Meet us in Munich <i data-lucide="arrow-right" aria-hidden="true"></i></a><a class="secondary-link" href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a></div></div>
+              <div class="product-composition"><figure><img src="{{product307}}" alt="Real 307 panic exit device"><figcaption>307</figcaption></figure><figure><img src="{{product311}}" alt="Real 311 panic exit device and trim"><figcaption>311</figcaption></figure></div>
+            </section>
+            <div class="campaign-caption"><div><h2>The hardware. In your hands.</h2><p>Exit devices, lock cases, night latches and cylinder systems. Bring your drawings or the model numbers you buy today.</p></div><div><a class="hyde-link" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">Book a meeting at the stand <i data-lucide="arrow-right" aria-hidden="true"></i></a></div></div>
+            <hr class="section-rule">
+            <section class="continuation"><h2>Panic Exit Devices</h2><p>Explore the flagship range before your visit.</p><a class="hyde-link" href="https://cantonlock.com/products/panic-exit-devices/" target="_blank" rel="noopener">View the range <i data-lucide="arrow-right" aria-hidden="true"></i></a></section>
+            <div class="preview-links"><a href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">BAU 2027</a><a href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a><a href="https://cantonlock.com/products/" target="_blank" rel="noopener">Product catalogue</a></div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <section data-variant="4 · 首屏双入口卡" aria-label="方案四 首屏双入口卡" hidden>
+      <p class="preview-location">首页上段 · 主 banner 之后，替换一张现有导流卡</p>
+      <div class="preview-stage">
+        <div class="hyde-page">
+          <div data-hyde-header></div>
+          <main class="hyde-main hyde-main--context">
+            <img class="scene-image scene-image--context" src="{{hero}}" alt="Context crop of the existing HYDE architecture banner">
+            <div class="scene-caption"><div><h2>Panic Exit Devices</h2><a class="hyde-link" href="https://cantonlock.com/products/panic-exit-devices/" target="_blank" rel="noopener">Explore exit devices <i data-lucide="arrow-right" aria-hidden="true"></i></a></div></div>
+            <h2 class="source-heading">Source the range. Meet the factory.</h2>
+            <div class="source-pair">
+              <section class="source-card"><img src="{{lever}}" alt="Original real tubular lever set, latch, strike and screws, complete on its existing dark ground"><div class="source-caption"><h3>For distributors</h3><p>Order from the Canton Hyland export catalogue.</p><a class="hyde-link" href="https://cantonlock.com/contact/" target="_blank" rel="noopener">Talk to export <i data-lucide="arrow-right" aria-hidden="true"></i></a></div></section>
+              <section class="source-card source-card--bau"><div class="event-invitation"><div><h1 class="invitation-heading">Meet us<br>in Munich.</h1><p class="invitation-information">BAU 2027<br>11–15 January<br>Hall C4 · Stand 523</p></div><a class="invitation-action" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">Book a meeting <i data-lucide="arrow-right" aria-hidden="true"></i></a></div><div class="source-caption"><h3>BAU 2027</h3><p>Bring your drawings. Meet our team.</p><a class="hyde-link" href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch <i data-lucide="arrow-right" aria-hidden="true"></i></a></div></section>
+            </div>
+            <div class="preview-links"><a href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">BAU 2027</a><a href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">Deutsch</a><a href="https://cantonlock.com/products/" target="_blank" rel="noopener">Product catalogue</a></div>
+          </main>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <template id="hyde-bau-nav-template">
+    <header class="hyde-header"><a href="https://cantonlock.com/" target="_blank" rel="noopener" aria-label="HYDE home"><img class="hyde-logo" src="{{logo}}" alt="HYDE"></a><div class="hyde-header-links"><a href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">EN</a><a class="desktop-language" href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">DE</a><button type="button" class="hyde-menu-toggle cursor-interaction" data-menu-toggle aria-expanded="false">Menu</button></div></header>
+    <nav class="hyde-nav" aria-label="HYDE main navigation"><div class="hyde-nav-links"><a href="https://cantonlock.com/products/" target="_blank" rel="noopener">Products</a><a href="https://cantonlock.com/product-finder/" target="_blank" rel="noopener">Product Finder</a><a class="desktop-nav" href="https://cantonlock.com/guides/" target="_blank" rel="noopener">Resources</a><a class="desktop-nav" href="https://cantonlock.com/company/" target="_blank" rel="noopener">Company</a></div><a class="hyde-buy" href="https://cnhyland.en.alibaba.com/" target="_blank" rel="noopener">Buy it now</a></nav>
+    <nav class="hyde-menu" aria-label="Expanded HYDE navigation" data-menu-panel hidden><a href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener">BAU 2027 · Book a meeting</a><a href="https://cantonlock.com/de/bau-2027/" target="_blank" rel="noopener">BAU 2027 · Deutsch</a><a href="https://cantonlock.com/contact/" target="_blank" rel="noopener">Contact</a></nav>
+  </template>
+
+  <script>
+    (() => {
+      const root = document.getElementById('hyde-bau-options');
+      const navigation = document.getElementById('hyde-bau-nav-template');
+      const pages = Array.from(root.querySelectorAll('.hyde-page'));
+      pages.forEach((page, index) => {
+        page.querySelector('[data-hyde-header]').append(navigation.content.cloneNode(true));
+        const toggle = page.querySelector('[data-menu-toggle]');
+        const panel = page.querySelector('[data-menu-panel]');
+        panel.id = `hyde-bau-menu-${index + 1}`;
+        toggle.setAttribute('aria-controls', panel.id);
+        toggle.addEventListener('click', () => {
+          panel.hidden = !panel.hidden;
+          toggle.setAttribute('aria-expanded', String(!panel.hidden));
+        });
+      });
+      const deviceButtons = Array.from(root.querySelectorAll('button[data-device]'));
+      function applyDevice(device) {
+        const phone = device === 'phone';
+        root.dataset.device = phone ? 'phone' : 'desktop';
+        pages.forEach(page => page.classList.toggle('is-phone', phone));
+        deviceButtons.forEach(button => {
+          const selected = button.dataset.device === root.dataset.device;
+          button.classList.toggle('btn-primary', selected);
+          button.setAttribute('aria-pressed', String(selected));
+        });
+      }
+      function savedDevice(value) {
+        const chosen = value?.modelContent?.device;
+        if (chosen === 'phone' || chosen === 'desktop') applyDevice(chosen);
+      }
+      applyDevice('desktop');
+      savedDevice(window.openai?.widgetState);
+      window.addEventListener('openai:set_globals', event => savedDevice(event.detail?.globals?.widgetState));
+      deviceButtons.forEach(button => button.addEventListener('click', () => {
+        applyDevice(button.dataset.device);
+        window.openai?.setWidgetState?.({ modelContent:{ device:root.dataset.device }, privateContent:null }).catch(() => {});
+      }));
+    })();
+  </script>
+</div>

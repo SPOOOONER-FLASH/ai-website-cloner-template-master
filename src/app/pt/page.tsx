@@ -11,7 +11,7 @@ import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
-import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home-pt";
 import { siteName } from "@/data/site";
 
@@ -49,7 +49,7 @@ export default function PortugueseHomePage() {
         <DemandShowcase locale="pt" />
         <Spacer heights={content.spacers.s96} />
 
-        <ArgentinaAr4Showcase locale="pt" />
+        <BauShowcase locale="pt" />
         <Spacer heights={content.spacers.s96} />
         {/*
           307 and 311 sit directly above the panic-exit hero: the flagship pair first, then

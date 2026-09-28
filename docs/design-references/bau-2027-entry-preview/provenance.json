@@ -1,0 +1,44 @@
+{
+  "scope": "Preview only; no production source, forms, or exports changed.",
+  "visualReference": "FSB-inspired incumbent HYDE monochrome composition",
+  "eventSource": "Live EN/DE BAU pages reviewed on 2026-09-28; organiser allocation not independently checked.",
+  "date": "11–15 January 2027",
+  "stand": "Hall C4, Stand 523",
+  "assets": [
+    {
+      "key": "logo",
+      "source": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
+      "bytes": 1022,
+      "sha256": "bdbb2a26a08d1174fc7b3c74ddec0dea3f623fda8b110b4232542fe17b3f6e56",
+      "treatment": "Original existing rendition embedded unchanged; product images use contain."
+    },
+    {
+      "key": "hero",
+      "source": "public/images/editorial/responsive/home-panic-exit-bars-800w.webp",
+      "bytes": 13062,
+      "sha256": "a801be9ee82d4fc36734419856639113b67fa64bbe30f6ea2272add29eed13b7",
+      "treatment": "Original existing rendition embedded unchanged; product images use contain."
+    },
+    {
+      "key": "lever",
+      "source": "public/images/editorial/responsive/hyde-real-lever-set-dark-800w.webp",
+      "bytes": 25084,
+      "sha256": "4b147b549873b64320301592f59e7e0dfe22dd5e5b9216b692c45f3e648731a3",
+      "treatment": "Original existing rendition embedded unchanged; product images use contain."
+    },
+    {
+      "key": "product307",
+      "source": "public/images/responsive/products/307-panic-exit-device-640w.webp",
+      "bytes": 5774,
+      "sha256": "f400cc6d635e00cdd9c3da252aa8a30e7d08e38056d4e9cb3cc463e6983e493c",
+      "treatment": "Original existing rendition embedded unchanged; product images use contain."
+    },
+    {
+      "key": "product311",
+      "source": "public/images/responsive/products/311-panic-exit-device-640w.webp",
+      "bytes": 5762,
+      "sha256": "c28ea36af5d2b9d16791950261a60c2c2ba1705a7d778f0a22acef09b4005c63",
+      "treatment": "Original existing rendition embedded unchanged; product images use contain."
+    }
+  ]
+}

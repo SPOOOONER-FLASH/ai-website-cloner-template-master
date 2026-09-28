@@ -9,7 +9,7 @@ import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { TextModule } from "@/components/site/TextModule";
 import { Spacer } from "@/components/site/Spacer";
-import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home";
 
 /**
@@ -59,7 +59,7 @@ export default function Home() {
         <DemandShowcase />
         <Spacer heights={content.spacers.s96} />
 
-        <ArgentinaAr4Showcase />
+        <BauShowcase />
         <Spacer heights={content.spacers.s96} />
         {/*
           307 and 311 sit directly above the panic-exit hero: the flagship pair first, then
