@@ -104,3 +104,8 @@
 | latch hardware catalog（7 / 30） | collections/hardware-accessories-latches | 本批 CollectionFacts 已把每个 latch 的 backset/面板尺寸印出来 | 已做 |
 
 **要甲方给**：GSC 09-24 之后的「网页 + 查询」导出——没有它，主钥匙文章改标题的效果无法判断，其它几条也只能按 09-22 的旧数据下判断。
+
+**第二批结果（本地重建 build23）**：可引用性总分 72 → 73；子类页 /collections 41 → **69**、/es/collections 38 → **68**（es/pt 走独立路由，上一批漏挂定义块，本批一并补上）；视频页 40 → **66**；
+七语种品类页有了「怎么选」板块（fr 例：「Parmi les serrures à mortaiser, combien de modèles Canton Hyland publie-t-il ?」），「数据正在整理」一句已删；每页 1 个 FAQPage。
+audit-seo-geo 0/0、七语种页面英文 0.3–0.8%、test:export 绿、npm test 442/442。
+仪器局限：/ja 58、/ru 61 偏低不是内容问题——可引用性脚本的数字正则只认拉丁 mm、句子切分只认 .!?，俄文「мм」和日文「。」都不计。
