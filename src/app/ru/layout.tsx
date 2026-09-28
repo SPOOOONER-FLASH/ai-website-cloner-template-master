@@ -73,6 +73,8 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
       className={`h-full antialiased ${archivo.variable}`}
     >
       <head>
+        {/* This locale's RSS, so Discover and readers find the ru articles, not the English ones. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE — ru" href="/ru/feed.xml" />
         <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />

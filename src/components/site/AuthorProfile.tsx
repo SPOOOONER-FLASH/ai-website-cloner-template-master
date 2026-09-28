@@ -3,7 +3,7 @@ import type { Thing, WithContext } from "schema-dts";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { JsonLd } from "@/components/site/JsonLd";
-import { CREDENTIAL_TRANSLATIONS, authorPath, getAuthorArticles, getAuthorBySlug } from "@/data/authors";
+import { CREDENTIAL_TRANSLATIONS, authorPath, authorPortrait, getAuthorArticles, getAuthorBySlug } from "@/data/authors";
 import { formatNewsDate } from "@/data/news";
 import { absoluteUrl, siteUrl, type Locale } from "@/data/site";
 import type { ArticleAuthor } from "@/data/types";
@@ -89,6 +89,8 @@ export function authorProfileSchema(author: ArticleAuthor, locale: Locale): With
       url,
       jobTitle: authorRole(author, locale),
       worksFor: { "@id": `${siteUrl}/#organization` },
+      /* The square crop: what a search engine shows as the headshot for this Person. */
+      ...(authorPortrait(author.name) ? { image: absoluteUrl(authorPortrait(author.name)!.src) } : {}),
       ...(author.url ? { sameAs: [author.url] } : {}),
       ...(author.credential
         ? {
@@ -108,6 +110,7 @@ export function AuthorProfile({ locale, slug }: { locale: Locale; slug: string }
   if (!author) return null;
   const text = dict(COPY, locale);
   const credential = authorCredential(author, locale);
+  const portrait = authorPortrait(author.name);
   const articles = getAuthorArticles(author.name, locale);
   const groups = (["guides", "news"] as const)
     .map((section) => ({ section, items: articles.filter((a) => a.section === section) }))
@@ -128,6 +131,20 @@ export function AuthorProfile({ locale, slug }: { locale: Locale; slug: string }
             />
           </div>
           <div className="col-span-full lg:col-span-6 xl:col-span-12">
+            {/*
+              The client's own photograph of the person this page is about, supplied
+              2026-09-28. `alt` is empty because the <h1> directly below already gives the
+              name, and a screen reader reading it twice is worse than reading it once.
+            */}
+            {portrait ? (
+              <img
+                src={portrait.portraitSrc}
+                alt=""
+                width={portrait.portraitWidth}
+                height={portrait.portraitHeight}
+                className="mb-32 block h-auto w-[18rem] max-w-full rounded-[2px]"
+              />
+            ) : null}
             <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">{text.eyebrow}</p>
             <h1 className="mt-16 text-h1 text-ink">{author.name}</h1>
             <p className="mt-24 text-c1 text-ink">{authorRole(author, locale)}</p>

@@ -17,6 +17,46 @@ const AUTHOR_SLUGS: Readonly<Record<string, string>> = {
   "Johnson Liu": "johnson-liu",
 };
 
+/**
+ * The photograph that belongs to a byline and to the profile page.
+ *
+ * Here rather than on `ArticleAuthor` for the reason the note above gives about name and
+ * role: the author block is repeated on all 82 article records, so a path stored there
+ * would be 82 copies of one string, and the day the photograph is replaced 81 of them
+ * would still be right and one would not.
+ *
+ * ONLY A REAL PHOTOGRAPH OF THE REAL PERSON. Supplied by the client, of the person named.
+ * No stock portrait and no generated face, ever — a reader who catches an invented author
+ * photo discounts the credential and the article with it, which is the whole signal the
+ * byline exists to carry. Johnson Liu's was supplied on 2026-09-28.
+ */
+export interface AuthorPortrait {
+  /** Square crop, for the byline and for schema.org `Person.image`. */
+  src: string;
+  width: number;
+  height: number;
+  /** The full frame at its native aspect, for the profile page. */
+  portraitSrc: string;
+  portraitWidth: number;
+  portraitHeight: number;
+}
+
+const PORTRAITS: Readonly<Record<string, AuthorPortrait>> = {
+  "Johnson Liu": {
+    src: "/images/people/johnson-liu.webp",
+    width: 384,
+    height: 384,
+    portraitSrc: "/images/people/johnson-liu-portrait.webp",
+    portraitWidth: 388,
+    portraitHeight: 466,
+  },
+};
+
+/** The portrait for a byline, or undefined where none has been supplied. */
+export function authorPortrait(name: string | undefined): AuthorPortrait | undefined {
+  return name ? PORTRAITS[name] : undefined;
+}
+
 /** The English path of an author's profile, or null when the author has none. */
 export function authorPath(author: Pick<ArticleAuthor, "name"> | undefined): string | null {
   const slug = author ? AUTHOR_SLUGS[author.name] : undefined;

@@ -1,10 +1,11 @@
 import { existsSync, statSync } from "node:fs";
 import { join } from "node:path";
-import { absoluteUrl, siteName } from "@/data/site";
+import { absoluteUrl, defaultDescription, siteName } from "@/data/site";
+import { locales, type Locale } from "@/data/locales";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
 import { articleShareImage } from "@/lib/article-share-image";
-import { t } from "@/lib/i18n-core";
+import { LOCALE_TAG, t } from "@/lib/i18n-core";
 
 /**
  * RSS 2.0 of the guides and news, newest first (client 2026-09-28, Google Discover notes:
@@ -14,9 +15,44 @@ import { t } from "@/lib/i18n-core";
  * language as the page it links to — a Spanish feed pointing readers at Spanish pages with
  * English titles would be the markup-disagrees-with-page failure again.
  */
-export type FeedLocale = "en" | "es" | "pt";
+/*
+ * All ten, since 2026-09-28. This was en/es/pt on the morning it was written, because
+ * those are the three whose translations sit on the records themselves. The other seven
+ * are just as complete: 82 of 82 titles and summaries translated in content/i18n/<code>/,
+ * and `t()` reads that overlay exactly as it reads the record fields. A French reader in
+ * Discover should be offered /fr/guides/…, and only a French feed makes that happen.
+ */
+export type FeedLocale = Locale;
+
+/*
+ * The three below carry a description written for the feed itself. The seven added later
+ * take `defaultDescription[locale]`, the site's own reviewed sentence in that language,
+ * rather than seven fresh translations of a marketing line that nobody has read. Copy is
+ * the copy session's lane; a feed is not the place to invent it.
+ */
+const NEWS_AND_GUIDES: Readonly<Record<Locale, string>> = {
+  en: "Guides and News",
+  es: "Guías y noticias",
+  pt: "Guias e notícias",
+  fr: "Guides et actualités",
+  de: "Ratgeber und Neuigkeiten",
+  ja: "ガイドとニュース",
+  ko: "가이드 및 소식",
+  tr: "Kılavuzlar ve haberler",
+  ru: "Руководства и новости",
+  ar: "الأدلة والأخبار",
+};
 
 const CHANNEL: Record<FeedLocale, { title: string; description: string; language: string }> = {
+  /* The seven overlay locales first, so the three hand-written entries below override them. */
+  ...(Object.fromEntries(
+    locales
+      .filter((l) => l !== "en" && l !== "es" && l !== "pt")
+      .map((l) => [
+        l,
+        { title: `${siteName} — ${NEWS_AND_GUIDES[l]}`, description: defaultDescription[l], language: LOCALE_TAG[l] },
+      ]),
+  ) as Record<Locale, { title: string; description: string; language: string }>),
   en: {
     title: `${siteName} — Guides and News`,
     description: "Door hardware specification guides and factory news from Canton Hyland, Guangdong.",

@@ -23,7 +23,7 @@ import type {
   WithContext,
 } from "schema-dts";
 import { t } from "@/lib/i18n";
-import { authorPath } from "@/data/authors";
+import { authorPath, authorPortrait } from "@/data/authors";
 import { localisedHref } from "@/lib/spanish-mirror";
 
 /**
@@ -353,6 +353,14 @@ export function newsArticleSchema(
           jobTitle:
             t(article.author, "role", locale),
           worksFor: { "@id": `${siteUrl}/#organization` },
+          /*
+            A real photograph of the person, where the client has supplied one. This is the
+            half of the byline a search engine can see, and the same rule applies as to the
+            name beside it: the photograph is of the person named, or the field is absent.
+          */
+          ...(authorPortrait(article.author.name)
+            ? { image: absoluteUrl(authorPortrait(article.author.name)!.src) }
+            : {}),
           /* The on-site profile (09-28) is the author's url and @id; LinkedIn stays as sameAs.
              Without a profile, the external URL is the only thing that resolves. */
           ...(authorPath(article.author)
