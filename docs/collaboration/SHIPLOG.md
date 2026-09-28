@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 661 次提交
+最近 30 天 · 共 664 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 06:13 | 中立 | goal #102-#104：r16 = b606a19697b 已推并实测 | `ad10465c3f0` |
+| 05:58 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 731d868c4a2 | `b606a19697b` |
+| 06:02 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `e070ed40520` |
 | 06:02 | HYDE | 合并 origin/main：采用对方的 feed 与作者页实现，我这边扩到十个语种 | `a4ed9bb9a13` |
 | 05:48 | 中立 | runbook：等部署后提交 9 条 RSS，写成非开发者照着做的步骤 | `07063d6956a` |
 | 05:45 | 中立 | 作者照片进署名与 Person 结构化数据 | `c8f7a3fc259` |
