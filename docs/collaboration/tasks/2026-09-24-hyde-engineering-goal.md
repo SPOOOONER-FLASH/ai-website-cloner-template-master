@@ -99,7 +99,7 @@
 | 94 | 甲方 09-28：BAU 2027 专栏，EN 与 DE（C4 馆 523 号展位，2027-01-11 至 15，慕尼黑）；活动页「计划考察」改为已确认参展；/de/events 404 | 已改方向（甲方 09-28 追加：「2. 以后的文字不管了」，BAU 专栏不做） |
 | 95 | 甲方 09-28：英文首页首图不轮播 → r11（70c96990724）上线后英文页专门复测 | 09-28 完成（同 #91，英文页线上复测通过） |
 | 96 | 甲方 09-28：Google Discover（截图）——RSS 供抓取；robots max-image-preview:large；文章大图 ≥1200px 16:9 ≤500KB；作者与品牌清晰（E-E-A-T）；手机体验（#93） | 09-28 源码完成（82 张 1200×675 分享图接 og/JSON-LD；/feed.xml；全引擎 max-image-preview；手机文章页不弹促销）；r12 = e0ffe9af879 已推，源站实测 /feed.xml 82 条、首页 RSS link、max-image-preview；IndexNow 等 purge 后补跑 |
-| 97 | 甲方 09-28 选定版式 B：建 /bau-2027/ 与 /de/bau-2027/（文字读 content/bau-2027.json，预约表单走现有询盘提交、主题 form.subject、收件 tec@；Event 结构化数据、sitemap、en/de hreflang；德语也放表单——甲方确认，隐私页未有，DSGVO 风险已告知）；上线后 events.json 的 relatedHref 改 /bau-2027/ | 09-28 源码完成（PARTIAL_ROUTES 只给 en+de；BauColumn + BauMeetingForm；Event JSON-LD；sitemap；events.json 已指向 /bau-2027/；本地 1440/390 实测版式与顺序、hreflang en/de/x-default）→ r13 |
+| 97 | 甲方 09-28 选定版式 B：建 /bau-2027/ 与 /de/bau-2027/（文字读 content/bau-2027.json，预约表单走现有询盘提交、主题 form.subject、收件 tec@；Event 结构化数据、sitemap、en/de hreflang；德语也放表单——甲方确认，隐私页未有，DSGVO 风险已告知）；上线后 events.json 的 relatedHref 改 /bau-2027/ | 09-28 源码完成（PARTIAL_ROUTES 只给 en+de；BauColumn + BauMeetingForm；Event JSON-LD；sitemap；events.json 已指向 /bau-2027/；本地 1440/390 实测版式与顺序、hreflang en/de/x-default）；r13 = 121e397e6ef 已推，导出含 /bau-2027/、/de/bau-2027/、Event JSON-LD、sitemap 4 条；fr 等无此页 |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
