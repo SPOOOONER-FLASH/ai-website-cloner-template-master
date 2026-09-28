@@ -18,3 +18,17 @@
 - `--check` now reads the bytes in Node, no Python; write mode uses `python3` off Windows.
   Verified: passes on the committed PDFs, fails when one layout token is broken. Rest of `test:export`
   passes locally against the committed `out/`.
+
+## Privacy page built (client 2026-09-28: 「德语表单必须链到隐私政策页……把这个做了上架」)
+
+- `/privacy/` and `/de/privacy/`, English and German only: `PARTIAL_ROUTES` in `src/lib/spanish-mirror.ts`,
+  `HAND_WRITTEN` in `scripts/scaffold-locale-routes.mjs`, sitemap entry. Copy in `src/data/privacy-policy.ts`.
+- **The published text describes the site as it is today**: analytics load without a banner, so section 4 states
+  legitimate interest + right to object + opt-out routes. It does NOT mention a consent tool. When a banner lands,
+  section 4 must switch to consent (Art. 6(1)(a) / §25 TDDDG) in the same commit.
+- Linked from: footer "Privacy Notice" (en → /privacy, de → /de/privacy, es/pt → English /privacy) and
+  `PrivacyNote` under all four forms (inquiry, document request, newsletter, BAU meeting).
+- Still open, not invented in the page: EU representative (Art. 27), which of the two addresses is registered
+  (page prints the contact address already on the site), fixed retention periods, Web3Forms DPA.
+- `/privacy` is EXEMPT in `internal-link-placement.test.ts` (footer + forms, not a drawer section).
+- Neutral lane only; nothing RAYEN touched. Release is the johns machine's.
