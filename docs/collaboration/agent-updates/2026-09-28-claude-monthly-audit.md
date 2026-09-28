@@ -51,3 +51,7 @@ Google 自 2023 年起不再展示 HowTo 富摘要，这次加主要是给 AI �
 包含的改动：页头修复与 Resources 下拉、10 语种声明、型号待确认、HowTo、46 张主图（02f1ea41f72）、浮层动效（66af62aae32）。
 分批推送脚本 `scripts/chunk-push-release.mjs`（afe60824f65）这次没用上，留作备用。
 线上实测和 IndexNow 要等甲方 purge。
+
+**r8 线上实测（c11fb7f4d59，构建号 0nyVXW-ZtBfXs-uLtMd78）**：首页有 `resources-shelf`；/fr/ 为新页头；WebSite.inLanguage 列 10 个语种；fitting-a-euro-cylinder 有 HowTo；型号未确认的产品页显示「Model code to be confirmed」；llms.txt 已无「thirty markets」；ju-072 有案例区块。
+`seo:indexnow:release` 比较 3d9ab7aec9c → c11fb7f4d59，字节有差异 7,692 页，可读内容有变化 250 页，已提交，返回 200。
+第一次实测时首页还是旧的 inLanguage、构建号对不上，因为服务器正在拉取；几分钟后重测就对了。其他页面能不能看到新版，仍要等甲方 purge。

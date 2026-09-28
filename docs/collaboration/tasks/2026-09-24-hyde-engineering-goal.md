@@ -79,7 +79,7 @@
 | 74 | 页头乱（甲方 09-27 截图，法语约 1530px）：左侧导航「Acheter maintenant」压到中间 HYDE logo 上；长语种导航要在撞 logo 前收进菜单 | 09-27 完成（fr/de/ru 固定紧凑导航 + 运行时守卫） |
 | 75 | 死链检查（甲方 09-27）：跑 seo:deadlinks + 线上抽查，修掉发现的 | 09-27 完成（本地 0；线上 1,242 页全 200、外链 595/600 正常，5 条社媒本机连不上未判定；新增 seo:deadlinks:live） |
 | 76 | 甲方 09-27：Applications / Guides / News 合并成一个导航栏目（新名），鼠标移上去向下弹出这三项，10 语种 | 09-27 完成（Resources 下拉；本地实测） |
-| 77 | 甲方 09-27「推送上线」：#74 页头、#76 Resources 下拉等源码已推，需 release:hyde（本机构建崩溃，请发布会话发布），上线后线上实测 + IndexNow | 待甲方（r8 = c11fb7f4d59 已推送；purge 后工程会话线上实测 + seo:indexnow:release） |
+| 77 | 甲方 09-27「推送上线」：#74 页头、#76 Resources 下拉等源码已推，需 release:hyde（本机构建崩溃，请发布会话发布），上线后线上实测 + IndexNow | 09-28 完成（c11fb7f4d59 线上实测：Resources、/fr/ 页头、inLanguage 10 语种、HowTo、Model code to be confirmed、llms.txt；IndexNow 250 条 200） |
 | 78 | 甲方 09-27：9 月 HYDE 全部指令核查（所有会话 + 远端 md），逐条打勾/说明原因，出月度工作总结 docx 供下载 | 09-28 完成（Desktop\hyde\HYDE-月度工作总结-2026-08-31_2026-09-28.docx；459 条网站指令，330 完成） |
 | 79 | 核查遗留（工程线）：目标清单 #14 #54 #56 #59 #67 #23 状态与实际不符 → 改正；runbook ④⑤ 已完成移出第一屏并出 Word | 09-28 完成（6 行更正；runbook ③④⑤ 存档，⑥⑦ 前提已满足；Word 已重出） |
 | 80 | 核查遗留：JSON-LD WebSite.inLanguage 只列 en/es（实为 10 语种）；llms.txt「over thirty markets」与 FAQ 矛盾 | 09-28 完成（inLanguage 列 10 语种；llms.txt 改为甲方给的出口地区） |
