@@ -1,14 +1,11 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { mirrorHref } from "@/lib/spanish-mirror";
-import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
-import { LANGUAGE_LABELS as FOOTER_LANGUAGE_LABELS, dict, tx } from "@/lib/i18n-client";
+import type { Locale } from "@/data/locales";
+import { dict, tx } from "@/lib/i18n";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings, whatsappHref } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
 import { EmailLink } from "./EmailLink";
+import { FooterCurrentLink, FooterLanguageLinks } from "./FooterPathAware";
 
 /**
  * Imprint has no route yet and points at /company until someone writes it. The privacy
@@ -80,9 +77,6 @@ const REFERENCE_LINKS = {
   ],
 } as const;
 
-/** The endonym each language link carries — a reader scans for their own word for it. */
-const LANGUAGE_LABELS: Record<Locale, string> = FOOTER_LANGUAGE_LABELS;
-
 /**
  * Footer — 313px, `py-48`, full-bleed top rule.
  *
@@ -96,10 +90,13 @@ const LANGUAGE_LABELS: Record<Locale, string> = FOOTER_LANGUAGE_LABELS;
  *
  * Hierarchy here comes from whitespace and the single --color-line rule (rule 4).
  * No shadow, no card, no radius.
+ *
+ * SERVER COMPONENT since 2026-09-28. Each locale's layout passes its `locale`, so the
+ * footer no longer reads the URL to find its language. The two things that genuinely
+ * depend on the current path — the current-page span and the other-language links — are
+ * the islands in FooterPathAware.tsx.
  */
-export function SiteFooter() {
-  const pathname = usePathname();
-  const locale = localeFromPath(pathname);
+export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
   /* Copy in the page's own language, in source order en / es / pt. */
   /* Overlay locales answer from ui.json (keyed by the English sentence); es/pt keep their literals. */
   const say = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
@@ -118,25 +115,6 @@ export function SiteFooter() {
     Rendered as plain text instead of a link, with aria-current so assistive technology
     is told the same thing the styling says. Nothing to press, nothing to fail.
   */
-  /*
-    The counterpart of THIS page in every OTHER language, or that language's home when
-    this page has no mirror. Never a 404 out of the footer — `mirrorHref` is the same
-    function the header panel uses and it reads the same mirror lists as the hreflang tags.
-  */
-  const englishPath = englishPathOf(pathname);
-  const languageLinks = locales
-    .filter((code) => code !== locale)
-    .map((code) => ({
-      code,
-      label: LANGUAGE_LABELS[code],
-      href: mirrorHref(englishPath, code).href,
-    }));
-
-  const isCurrent = (href: string) => {
-    const strip = (value: string) => (value.replace(/\/*$/, "") || "/");
-    return strip(href) === strip(pathname);
-  };
-
   return (
     <div className="mt-48 flex-grow-0 sm:mt-96">
       {/* Full-bleed rule: the border spans the viewport, the inner .layout bands the content. */}
@@ -147,18 +125,21 @@ export function SiteFooter() {
               <ul className="col-span-full grid grid-cols-subgrid items-start gap-x gap-y-20 md:flex md:flex-wrap md:gap-x-64">
                 {[...dict(LEGAL_LINKS, locale), ...dict(REFERENCE_LINKS, locale)].map((link) => (
                   <li key={link.label} className="col-span-2 md:col-span-3">
-                    {isCurrent(link.href) ? (
-                      <span aria-current="page" className="text-c1 text-ink-secondary">
-                        {link.label}
-                      </span>
-                    ) : (
+                    <FooterCurrentLink
+                      href={link.href}
+                      current={
+                        <span aria-current="page" className="text-c1 text-ink-secondary">
+                          {link.label}
+                        </span>
+                      }
+                    >
                       <Link
                         href={link.href}
                         className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
                       >
                         {link.label}
                       </Link>
-                    )}
+                    </FooterCurrentLink>
                   </li>
                 ))}
                 {/*
@@ -187,18 +168,7 @@ export function SiteFooter() {
                   anywhere on the site, and the anchor on a /pt/ page offered Español.
                   Derived from `locales` now, so a fourth language cannot repeat it.
                 */}
-                {languageLinks.map((language) => (
-                  <li key={language.code} className="col-span-2 md:col-span-3">
-                    <Link
-                      href={language.href}
-                      hrefLang={language.code}
-                      lang={language.code}
-                      className="short-marker short-marker-compact inline-flex min-h-24 items-center text-c1 text-brand no-underline hover:text-brand-hover"
-                    >
-                      {language.label}
-                    </Link>
-                  </li>
-                ))}
+                <FooterLanguageLinks locale={locale} />
                 <li className="col-span-2 md:col-span-3">
                   <button
                     type="button"
@@ -249,13 +219,16 @@ export function SiteFooter() {
                   const href = localisedHref(link.href, locale);
                   return (
                     <li key={link.href}>
-                      {isCurrent(href) ? (
-                        <span aria-current="page" className="text-c1 text-ink-secondary">
-                          {navLabel(link, locale)}
-                        </span>
-                      ) : (
+                      <FooterCurrentLink
+                        href={href}
+                        current={
+                          <span aria-current="page" className="text-c1 text-ink-secondary">
+                            {navLabel(link, locale)}
+                          </span>
+                        }
+                      >
                         <ArrowLink href={href}>{navLabel(link, locale)}</ArrowLink>
-                      )}
+                      </FooterCurrentLink>
                     </li>
                   );
                 })}

@@ -156,7 +156,7 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}
-          <SiteFooter />
+          <SiteFooter locale={LOCALE} />
         </div>
         <LazyPromoDialog />
         <Analytics />

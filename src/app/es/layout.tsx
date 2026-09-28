@@ -85,7 +85,7 @@ export default function SpanishRootLayout({
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}
-          <SiteFooter />
+          <SiteFooter locale="es" />
         </div>
         <LazyPromoDialog />
         <Analytics />
