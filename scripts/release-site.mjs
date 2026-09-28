@@ -40,6 +40,7 @@ import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { userInfo } from "node:os";
 import { OUTPUT_DIR, laneOf } from "./lib/site-lanes.mjs";
 
 const args = process.argv.slice(2);
@@ -53,6 +54,20 @@ const trailers = args.flatMap((a, i) => (a === "--trailer" && args[i + 1] ? [arg
 
 if (!["hyde", "rayen"].includes(site)) {
   console.error("用法：node scripts/release-site.mjs --site hyde|rayen");
+  process.exit(2);
+}
+/*
+  HYDE releases run on the johns machine only (client, 2026-09-28: 「所有发布部署交还给 john 电脑」).
+  The rule was in AGENTS.md and NOW.md, and on 2026-09-28 at 04:57 a session in the shared
+  E:/cantonlock-hyde checkout released HYDE anyway (02d8236a7d0). Its build lacked three
+  commits that were waiting for release, and it made the johns release conflict on out/.
+  A written rule did not stop it, so the script does. Everyone else pushes source and says
+  「源码已推：<hash>，要发布」. HYDE_RELEASE_OVERRIDE="reason" is for the client's own decision only.
+*/
+if (site === "hyde" && userInfo().username !== "johns" && !process.env.HYDE_RELEASE_OVERRIDE) {
+  console.error(
+    "✗ HYDE 只在 johns 机器上发布（甲方 2026-09-28）。请推源码，然后给「HYDE工程交接配置」会话发一句：源码已推：<hash>，要发布。",
+  );
   process.exit(2);
 }
 const OUT = OUTPUT_DIR[site];
