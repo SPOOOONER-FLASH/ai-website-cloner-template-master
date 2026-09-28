@@ -1,4 +1,12 @@
 @import "tailwindcss";
+/*
+  构建卫生（HYDE 会话 2026-09-28）：Tailwind 4 会扫描仓库里所有未被 .gitignore 的文件找类名，
+  out/ 与 out-rayen/ 是已提交的导出（4.6 万个 HTML），tmp/ 里有 ship 的旁路检出；扫到它们
+  PostCSS 子进程超时，整个 next build 失败。只排除扫描目录，不改任何样式。
+*/
+@source not "../../../out";
+@source not "../../../out-rayen";
+@source not "../../../tmp";
 
 /* ===========================================================================
  * RAYEN 雷茵 — 中文站样式
