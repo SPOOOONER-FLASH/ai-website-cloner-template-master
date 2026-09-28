@@ -158,9 +158,30 @@ export function hasOverlayMirror(enPath: string): boolean {
   );
 }
 
+/**
+ * Pages built for SOME languages only, keyed by their English path.
+ *
+ * /bau-2027/ (client, 2026-09-28): the BAU trade-fair column is written for the Munich
+ * visitor, so it exists in English and German and nowhere else. Checked before the prefix
+ * rules, so hreflang, the sitemap, the language switch and localisedHref() all see the
+ * same two languages. The overlay parity tests allow these routes under exactly the
+ * locales listed here.
+ */
+export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<string, readonly Locale[]>([
+  ["/bau-2027", ["en", "de"]],
+]);
+
+/** The locales a partial route exists in, or null for an ordinary path. */
+export function partialRouteLocales(enPath: string): readonly Locale[] | null {
+  const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
+  return PARTIAL_ROUTES.get(clean) ?? null;
+}
+
 /** True when the given ENGLISH path exists under /<locale>. English always exists. */
 export function hasMirror(locale: Locale, enPath: string): boolean {
   if (locale === "en") return true;
+  const partial = partialRouteLocales(enPath);
+  if (partial) return partial.includes(locale);
   if (locale === "es") return hasSpanishMirror(enPath);
   if (locale === "pt") return hasPortugueseMirror(enPath);
   return isOverlayLocale(locale) ? hasOverlayMirror(enPath) : false;

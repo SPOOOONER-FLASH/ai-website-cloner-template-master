@@ -223,19 +223,22 @@ test("every overlay locale carries exactly the Portuguese route set", async () =
   const { overlayLocales } = await import("./locales.ts");
   /* The Portuguese set, minus its Brazilian-only landing page, plus the AR-4 collection. */
   const reference = [...routesUnder("pt").filter((route) => route !== "/ferragens-porta-corta-fogo"), "/products/argentina-ar4"].sort();
+  const { PARTIAL_ROUTES } = await import("../lib/spanish-mirror.ts");
   for (const code of overlayLocales) {
     assert.ok(fs.existsSync(path.join(APP, code, "page.tsx")), `/${code}/ has no home page`);
     assert.ok(fs.existsSync(path.join(APP, code, "layout.tsx")), `/${code}/ has no root layout`);
-    assert.deepEqual(routesUnder(code), reference, `/${code}/ routes differ from /pt/`);
+    /* Plus the partial routes built for this locale (/bau-2027 in de), and nothing else. */
+    const partial = [...PARTIAL_ROUTES].filter(([, locales]) => locales.includes(code)).map(([route]) => route);
+    assert.deepEqual(routesUnder(code), [...reference, ...partial].sort(), `/${code}/ routes differ from /pt/`);
   }
 });
 
 test("every declared overlay mirror exists on disk, and nothing undeclared does", async () => {
-  const { hasOverlayMirror } = await import("../lib/spanish-mirror.ts");
+  const { hasMirror, hasOverlayMirror, partialRouteLocales } = await import("../lib/spanish-mirror.ts");
   const englishRoutes = topLevel([...routesUnder("(en)"), ...routesUnder("")]);
   const onDisk = new Set(topLevel(routesUnder("de")));
-  const missing = englishRoutes.filter((route) => hasOverlayMirror(route) && !onDisk.has(route));
-  const undeclared = [...onDisk].filter((route) => !hasOverlayMirror(route));
+  const missing = englishRoutes.filter((route) => hasMirror("de", route) && !onDisk.has(route));
+  const undeclared = [...onDisk].filter((route) => (partialRouteLocales(route) ? !hasMirror("de", route) : !hasOverlayMirror(route)));
   assert.deepEqual(missing, [], "declared overlay mirrors with no route in src/app/de");
   assert.deepEqual(undeclared, [], "routes in src/app/de that hasOverlayMirror does not declare");
 });

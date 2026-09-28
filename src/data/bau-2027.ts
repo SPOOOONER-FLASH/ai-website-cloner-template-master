@@ -1,0 +1,55 @@
+import bauFile from "../../content/bau-2027.json";
+import { getProductBySlug } from "./products";
+
+/**
+ * The BAU 2027 column, /bau-2027/ and /de/bau-2027/ (client, 2026-09-28: layout B,
+ * product first). Every string comes from content/bau-2027.json, which the copy session
+ * wrote from confirmed facts only; nothing here adds a claim.
+ */
+export type BauLocale = "en" | "de";
+export type BauCopy = (typeof bauFile)["en"];
+
+export const bauEvent = bauFile.event;
+
+export function bauCopy(locale: BauLocale): BauCopy {
+  return bauFile[locale];
+}
+
+export interface BauFeatured {
+  /** The model code as a buyer writes it: "307", "LC14". */
+  model: string;
+  title: string;
+  body: string;
+  href: string;
+  image?: { src: string; label: string };
+}
+
+/**
+ * The featured cards. A card with a product slug takes its photograph from that product's
+ * own record (a real photograph, never a composite), and its title and body from the copy
+ * split at the first colon. The master-key card has no single product, so it is text only.
+ */
+export function bauFeatured(locale: BauLocale): BauFeatured[] {
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  return bauFile.featured.map((item) => {
+    const text = item[locale];
+    const split = text.indexOf(": ");
+    if ("slug" in item && item.slug) {
+      const product = getProductBySlug(item.category, item.slug);
+      if (!product) throw new Error(`BAU featured product not on the HYDE catalog: ${item.category}/${item.slug}`);
+      return {
+        model: product.model.split(" ")[0],
+        title: split > 0 ? text.slice(0, split) : product.name,
+        body: split > 0 ? text.slice(split + 2) : text,
+        href: `${prefix}/products/${item.category}/${item.slug}/`,
+        image: product.heroImage?.src ? { src: product.heroImage.src, label: product.heroImage.label } : undefined,
+      };
+    }
+    return {
+      model: text.split(",")[0].replace(/\.$/, ""),
+      title: "",
+      body: text,
+      href: `${prefix}${"href" in item && item.href ? item.href : "/products/"}`,
+    };
+  });
+}

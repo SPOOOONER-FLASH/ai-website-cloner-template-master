@@ -16,6 +16,8 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { join } from "node:path";
 
 const LOCALES = ["fr", "de", "ja", "ko", "tr", "ru", "ar"];
+/* Routes written by hand inside an overlay tree; see PARTIAL_ROUTES in src/lib/spanish-mirror.ts. */
+const HAND_WRITTEN = ["/bau-2027"];
 const check = process.argv.includes("--check");
 
 /** Static pages: dir → component module, component, metadata builder. */
@@ -228,7 +230,8 @@ for (const code of LOCALES) {
     for (const item of readdirSync(dir, { withFileTypes: true })) {
       const full = join(dir, item.name);
       if (item.isDirectory()) walk(full);
-      else if (!expected.has(full.replace(/\\/g, "/"))) {
+      /* Hand-written partial routes (PARTIAL_ROUTES in src/lib/spanish-mirror.ts) are not ours to delete. */
+      else if (!expected.has(full.replace(/\\/g, "/")) && !HAND_WRITTEN.some((dir) => full.replace(/\\/g, "/").startsWith(`${root.replace(/\\/g, "/")}${dir}/`))) {
         changed++;
         if (check) stale.push(`${full} (unexpected)`);
         else rmSync(full);

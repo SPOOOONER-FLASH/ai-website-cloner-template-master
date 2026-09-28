@@ -93,12 +93,13 @@
 | 88 | 1376–1599px 紧凑导航条也用 Resources 下拉（发布会话 09-28 发现 1440 宽看不到；平板/手机保持三链接）→ r10 | 09-28 完成（r10 = baa82d3b5a0 线上 1440 宽导航条显示 Resources） |
 | 89 | r9 线上实测（rAF 不触发环境）：抽屉已能打开；但关闭后焦点不回菜单按钮（closeMenu 等 rAF），Esc 在焦点未进抽屉时无效 → 定时兜底 + 文档级 Esc → r11 | 09-28 完成（r10 线上 0 帧环境：两种 Esc 都关闭、焦点回退；语言面板开关正常） |
 | 90 | 甲方 09-28：日韩网址段 /ja/ → /jp/、/ko/ → /kr/（lang/hreflang 仍 ja/ko）；旧网址 301、sitemap/robots/hreflang/IndexNow 跟改 | 09-28 已改方向：甲方「怎么拿 SEO/GEO 就怎么办」→ 保持 /ja/ /ko/ 及其余语言代码不变（Google 靠 hreflang 与 lang 定语言和地区，子目录名不影响；日韩已开始收录，改名要整批 301、换来的只有排名波动）。改名改动未提交即撤回 |
-| 91 | 甲方 09-28：首页轮播图不轮播了 | 09-28 源码完成（根因：整个轮播区悬停即暂停，大图占满首屏；手机点一下永久停。改为只在说明区、只认鼠标；rAF 加定时兜底）→ r11 |
-| 92 | 甲方 09-28：联系人 tec@ = Spooner、hyde@ = Monica Lee；WhatsApp +1 703 967 7493 上站（联系页、页脚、菜单） | 09-28 源码完成（site-settings：mailboxOwners、whatsapp；联系页 4 份实现 + 页脚 + 手机菜单）→ r12 |
-| 93 | 甲方 09-28：手机端导航栏与面包屑「很乱没有逻辑」→ 实测 375px 后重整 | 09-28 源码完成（导航条 CTA 固定右侧、仅当前页加粗；面包屑单行统一 ›；删重复返回链接）→ r12 |
+| 91 | 甲方 09-28：首页轮播图不轮播了 | 09-28 完成（r11 = d733616467f 线上英文首页 Playwright 实测：不动鼠标与鼠标停在大图上都轮播） |
+| 92 | 甲方 09-28：联系人 tec@ = Spooner、hyde@ = Monica Lee；WhatsApp +1 703 967 7493 上站（联系页、页脚、菜单） | 09-28 源码完成（site-settings：mailboxOwners、whatsapp；联系页 4 份实现 + 页脚 + 手机菜单）；r12 = e0ffe9af879 已推，源站实测联系页有 Monica Lee、WhatsApp；边缘缓存待甲方 purge |
+| 93 | 甲方 09-28：手机端导航栏与面包屑「很乱没有逻辑」→ 实测 375px 后重整 | 09-28 源码完成（导航条 CTA 固定右侧、仅当前页加粗；面包屑单行统一 ›；删重复返回链接）；r12 = e0ffe9af879 已推 |
 | 94 | 甲方 09-28：BAU 2027 专栏，EN 与 DE（C4 馆 523 号展位，2027-01-11 至 15，慕尼黑）；活动页「计划考察」改为已确认参展；/de/events 404 | 已改方向（甲方 09-28 追加：「2. 以后的文字不管了」，BAU 专栏不做） |
-| 95 | 甲方 09-28：英文首页首图不轮播 → r11（70c96990724）上线后英文页专门复测 | 待做 |
-| 96 | 甲方 09-28：Google Discover（截图）——RSS 供抓取；robots max-image-preview:large；文章大图 ≥1200px 16:9 ≤500KB；作者与品牌清晰（E-E-A-T）；手机体验（#93） | 09-28 源码完成（82 张 1200×675 分享图接 og/JSON-LD；/feed.xml；全引擎 max-image-preview；手机文章页不弹促销）→ r12 |
+| 95 | 甲方 09-28：英文首页首图不轮播 → r11（70c96990724）上线后英文页专门复测 | 09-28 完成（同 #91，英文页线上复测通过） |
+| 96 | 甲方 09-28：Google Discover（截图）——RSS 供抓取；robots max-image-preview:large；文章大图 ≥1200px 16:9 ≤500KB；作者与品牌清晰（E-E-A-T）；手机体验（#93） | 09-28 源码完成（82 张 1200×675 分享图接 og/JSON-LD；/feed.xml；全引擎 max-image-preview；手机文章页不弹促销）；r12 = e0ffe9af879 已推，源站实测 /feed.xml 82 条、首页 RSS link、max-image-preview；IndexNow 等 purge 后补跑 |
+| 97 | 甲方 09-28 选定版式 B：建 /bau-2027/ 与 /de/bau-2027/（文字读 content/bau-2027.json，预约表单走现有询盘提交、主题 form.subject、收件 tec@；Event 结构化数据、sitemap、en/de hreflang；德语也放表单——甲方确认，隐私页未有，DSGVO 风险已告知）；上线后 events.json 的 relatedHref 改 /bau-2027/ | 09-28 源码完成（PARTIAL_ROUTES 只给 en+de；BauColumn + BauMeetingForm；Event JSON-LD；sitemap；events.json 已指向 /bau-2027/；本地 1440/390 实测版式与顺序、hreflang en/de/x-default）→ r13 |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
