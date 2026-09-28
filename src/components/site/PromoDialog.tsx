@@ -232,7 +232,7 @@ function PromoCardBlock({
         type="button"
         onClick={() => onDismiss(dismissalKey)}
         aria-label={closeLabel}
-        className="absolute end-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
+        className="absolute end-10 top-10 z-10 flex h-44 w-44 items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
       >
         <svg viewBox="0 0 24 24" className="h-16 w-16" aria-hidden="true" focusable="false">
           <path
@@ -242,7 +242,15 @@ function PromoCardBlock({
         </svg>
       </button>
 
-      <div className="grid w-full grid-cols-[96px_1fr] gap-0">
+      {/* A passive, expanded card hid the desktop hero CTA. Native details keeps
+          the invitation compact until the visitor asks to read it; timing,
+          content, session dismissals and the next card remain unchanged. */}
+      <details key={dismissalKey} className="group">
+        <summary className="flex min-h-64 cursor-pointer list-none items-center gap-12 px-16 py-12 pe-64 text-c1 font-bold text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink [&::-webkit-details-marker]:hidden">
+          <svg viewBox="0 0 20 20" className="h-16 w-16 shrink-0 group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m5 12 5-5 5 5" /></svg>
+          <span>{title}{titleLight ? <span className="block text-c2 font-normal text-ink-secondary">{titleLight}</span> : null}</span>
+        </summary>
+        <div className="grid w-full grid-cols-[96px_1fr] gap-0 border-t border-line">
         {visual === "logo" || !image ? (
           <div className="flex items-center justify-center bg-ink p-12 text-surface">
             <HydeLockup variant="white" className="h-20" />
@@ -253,11 +261,7 @@ function PromoCardBlock({
 
         <div className="flex flex-col justify-between">
           <div className="px-16 pb-12 pt-14 pe-40">
-            <p className="text-c1 font-bold text-ink">
-              {title}
-              {titleLight ? <span className="font-normal"> {titleLight}</span> : null}
-            </p>
-            <p className="mt-4 text-c2 text-ink-secondary">{body}</p>
+            <p className="text-c2 text-ink-secondary">{body}</p>
           </div>
 
           <div className="bg-ink px-16 py-10">
@@ -277,6 +281,7 @@ function PromoCardBlock({
           </div>
         </div>
       </div>
+      </details>
     </div>
   );
 }

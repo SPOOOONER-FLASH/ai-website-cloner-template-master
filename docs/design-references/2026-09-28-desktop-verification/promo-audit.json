@@ -1,0 +1,1061 @@
+{
+  "generatedAt": "2026-09-28T15:04:12.240Z",
+  "base": "http://127.0.0.1:8766/",
+  "results": [
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://127.0.0.1:8766/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "devicePixelRatio": 1
+      },
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 390,
+        "height": 123,
+        "bottom": 123
+      },
+      "main": {
+        "x": 0,
+        "y": 171,
+        "documentY": 171,
+        "width": 390,
+        "height": 11026.2,
+        "bottom": 11197.2
+      },
+      "h1": {
+        "x": 16,
+        "y": 1251,
+        "documentY": 1251,
+        "width": 358,
+        "height": 108.8,
+        "bottom": 1359.8
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 171,
+        "documentY": 171,
+        "width": 390,
+        "height": 482.5,
+        "bottom": 653.5,
+        "media": {
+          "x": 16,
+          "y": 171,
+          "documentY": 171,
+          "width": 358,
+          "height": 268.5,
+          "bottom": 439.5
+        },
+        "activeCaption": {
+          "x": 16,
+          "y": 455.5,
+          "documentY": 455.5,
+          "width": 358,
+          "height": 166,
+          "bottom": 621.5
+        },
+        "captionTitle": "Mortise Lock Cases"
+      },
+      "floatingPromos": [
+        {
+          "label": "Featured offer",
+          "x": 16,
+          "y": 759,
+          "documentY": 759,
+          "width": 358,
+          "height": 69,
+          "bottom": 828
+        }
+      ],
+      "aboveFoldCtas": [
+        {
+          "label": "View lock cases",
+          "href": "/products/lock-cases/",
+          "x": 16,
+          "y": 576.5,
+          "documentY": 576.5,
+          "width": 123.8,
+          "height": 45,
+          "bottom": 621.5,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 16,
+          "y": 799.5,
+          "documentY": 799.5,
+          "width": 264.5,
+          "height": 355.5,
+          "bottom": 1155,
+          "aboveFold": false,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "View lock cases",
+          "href": "/products/lock-cases/",
+          "x": 16,
+          "y": 576.5,
+          "documentY": 576.5,
+          "width": 123.8,
+          "height": 45,
+          "bottom": 621.5,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 16,
+          "y": 799.5,
+          "documentY": 799.5,
+          "width": 264.5,
+          "height": 355.5,
+          "bottom": 1155,
+          "aboveFold": false,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 202.4,
+          "y": 3548.5,
+          "documentY": 3548.5,
+          "width": 171.6,
+          "height": 45,
+          "bottom": 3593.5,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 16,
+          "y": 3882.7,
+          "documentY": 3882.7,
+          "width": 204.9,
+          "height": 45,
+          "bottom": 3927.7,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 16,
+          "y": 9044.3,
+          "documentY": 9044.3,
+          "width": 147.2,
+          "height": 45,
+          "bottom": 9089.3,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 16,
+          "y": 10158.3,
+          "documentY": 10158.3,
+          "width": 264.5,
+          "height": 380.5,
+          "bottom": 10538.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 16,
+          "y": 10750.8,
+          "documentY": 10750.8,
+          "width": 88.8,
+          "height": 45,
+          "bottom": 10795.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 16,
+          "y": 11120.2,
+          "documentY": 11120.2,
+          "width": 106.2,
+          "height": 45,
+          "bottom": 11165.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 41,
+        "viewport": 5,
+        "loadedInViewport": 5,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-390x844.png",
+      "hardFailures": [],
+      "promoProof": {
+        "initial": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 16,
+            "y": 759,
+            "width": 358,
+            "height": 69
+          },
+          "close": {
+            "x": 319,
+            "y": 770,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "checks": {
+          "passiveRailPresent": true,
+          "nativeDetailsClosed": true,
+          "passiveHeightAtMost120": true,
+          "closeHitAreaAtLeast44": true,
+          "heroCtaUnoccluded": true,
+          "expandsWithVisibleContentAndCta": true,
+          "collapsesToCompactRail": true,
+          "reopensBeforeDismissal": true,
+          "dismissesOrAdvancesCard": true
+        },
+        "screenshots": [
+          "home-390x844-promo-expanded.png",
+          "home-390x844-promo-collapsed.png"
+        ],
+        "expanded": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 16,
+            "y": 615,
+            "width": 358,
+            "height": 213
+          },
+          "close": {
+            "x": 319,
+            "y": 626,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "collapsed": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 16,
+            "y": 759,
+            "width": 358,
+            "height": 69
+          },
+          "close": {
+            "x": 319,
+            "y": 770,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "reopened": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 16,
+            "y": 615,
+            "width": 358,
+            "height": 213
+          },
+          "close": {
+            "x": 319,
+            "y": 626,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "afterDismiss": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 16,
+            "y": 759,
+            "width": 358,
+            "height": 69
+          },
+          "close": {
+            "x": 319,
+            "y": 770,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Don't know the model? Answer a few questions",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/configurator/",
+          "heroCtaUnoccluded": true
+        }
+      }
+    },
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "http://127.0.0.1:8766/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "devicePixelRatio": 1
+      },
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 1425,
+        "height": 147,
+        "bottom": 147
+      },
+      "main": {
+        "x": 0,
+        "y": 195,
+        "documentY": 195,
+        "width": 1425,
+        "height": 15104.9,
+        "bottom": 15299.9
+      },
+      "h1": {
+        "x": 32,
+        "y": 2048,
+        "documentY": 2048,
+        "width": 557.8,
+        "height": 120,
+        "bottom": 2168
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 195,
+        "documentY": 195,
+        "width": 1425,
+        "height": 736.5,
+        "bottom": 931.5,
+        "media": {
+          "x": 32,
+          "y": 195,
+          "documentY": 195,
+          "width": 1361,
+          "height": 534.5,
+          "bottom": 729.5
+        },
+        "activeCaption": {
+          "x": 32,
+          "y": 753.5,
+          "documentY": 753.5,
+          "width": 1361,
+          "height": 130,
+          "bottom": 883.5
+        },
+        "captionTitle": "Lever Handles"
+      },
+      "floatingPromos": [
+        {
+          "label": "Featured offer",
+          "x": 1041,
+          "y": 807,
+          "documentY": 807,
+          "width": 360,
+          "height": 69,
+          "bottom": 876
+        }
+      ],
+      "aboveFoldCtas": [
+        {
+          "label": "View lever handles",
+          "href": "/products/lever-handles/",
+          "x": 1064.8,
+          "y": 753.5,
+          "documentY": 753.5,
+          "width": 151.7,
+          "height": 25,
+          "bottom": 778.5,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "View lever handles",
+          "href": "/products/lever-handles/",
+          "x": 1064.8,
+          "y": 753.5,
+          "documentY": 753.5,
+          "width": 151.7,
+          "height": 25,
+          "bottom": 778.5,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 32,
+          "y": 1141.5,
+          "documentY": 1141.5,
+          "width": 672.5,
+          "height": 770.5,
+          "bottom": 1912,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 1211.4,
+          "y": 4423.8,
+          "documentY": 4423.8,
+          "width": 181.6,
+          "height": 25,
+          "bottom": 4448.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 950,
+          "y": 4643.8,
+          "documentY": 4643.8,
+          "width": 216.9,
+          "height": 25,
+          "bottom": 4668.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 32,
+          "y": 10660.2,
+          "documentY": 10660.2,
+          "width": 155.6,
+          "height": 25,
+          "bottom": 10685.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 32,
+          "y": 13128.2,
+          "documentY": 13128.2,
+          "width": 672.5,
+          "height": 770.5,
+          "bottom": 13898.7,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 720.5,
+          "y": 14235.7,
+          "documentY": 14235.7,
+          "width": 93.6,
+          "height": 25,
+          "bottom": 14260.7,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 1064.8,
+          "y": 15225.9,
+          "documentY": 15225.9,
+          "width": 112,
+          "height": 25,
+          "bottom": 15250.9,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 41,
+        "viewport": 3,
+        "loadedInViewport": 3,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-1440x900.png",
+      "hardFailures": [],
+      "promoProof": {
+        "initial": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1041,
+            "y": 807,
+            "width": 360,
+            "height": 69
+          },
+          "close": {
+            "x": 1346,
+            "y": 818,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "checks": {
+          "passiveRailPresent": true,
+          "nativeDetailsClosed": true,
+          "passiveHeightAtMost120": true,
+          "closeHitAreaAtLeast44": true,
+          "heroCtaUnoccluded": true,
+          "expandsWithVisibleContentAndCta": true,
+          "collapsesToCompactRail": true,
+          "reopensBeforeDismissal": true,
+          "dismissesOrAdvancesCard": true
+        },
+        "screenshots": [
+          "home-1440x900-promo-expanded.png",
+          "home-1440x900-promo-collapsed.png"
+        ],
+        "expanded": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 1041,
+            "y": 663,
+            "width": 360,
+            "height": 213
+          },
+          "close": {
+            "x": 1346,
+            "y": 674,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": false
+        },
+        "collapsed": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1041,
+            "y": 807,
+            "width": 360,
+            "height": 69
+          },
+          "close": {
+            "x": 1346,
+            "y": 818,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "reopened": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 1041,
+            "y": 663,
+            "width": 360,
+            "height": 213
+          },
+          "close": {
+            "x": 1346,
+            "y": 674,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": false
+        },
+        "afterDismiss": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1041,
+            "y": 807,
+            "width": 360,
+            "height": 69
+          },
+          "close": {
+            "x": 1346,
+            "y": 818,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Don't know the model? Answer a few questions",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/configurator/",
+          "heroCtaUnoccluded": true
+        }
+      }
+    },
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "url": "http://127.0.0.1:8766/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "devicePixelRatio": 1
+      },
+      "clientWidth": 1905,
+      "scrollWidth": 1905,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 1905,
+        "height": 96,
+        "bottom": 96
+      },
+      "main": {
+        "x": 0,
+        "y": 144,
+        "documentY": 144,
+        "width": 1905,
+        "height": 15196.6,
+        "bottom": 15340.6
+      },
+      "h1": {
+        "x": 264.5,
+        "y": 2010.4,
+        "documentY": 2010.4,
+        "width": 564,
+        "height": 120,
+        "bottom": 2130.4
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 144,
+        "documentY": 144,
+        "width": 1905,
+        "height": 742.4,
+        "bottom": 886.4,
+        "media": {
+          "x": 264.5,
+          "y": 144,
+          "documentY": 144,
+          "width": 1376,
+          "height": 540.4,
+          "bottom": 684.4
+        },
+        "activeCaption": {
+          "x": 264.5,
+          "y": 708.4,
+          "documentY": 708.4,
+          "width": 1376,
+          "height": 130,
+          "bottom": 838.4
+        },
+        "captionTitle": "Mortise Lock Cases"
+      },
+      "floatingPromos": [
+        {
+          "label": "Featured offer",
+          "x": 1521,
+          "y": 987,
+          "documentY": 987,
+          "width": 360,
+          "height": 69,
+          "bottom": 1056
+        }
+      ],
+      "aboveFoldCtas": [
+        {
+          "label": "View lock cases",
+          "href": "/products/lock-cases/",
+          "x": 1308.5,
+          "y": 708.4,
+          "documentY": 708.4,
+          "width": 130.8,
+          "height": 25,
+          "bottom": 733.4,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "View lock cases",
+          "href": "/products/lock-cases/",
+          "x": 1308.5,
+          "y": 708.4,
+          "documentY": 708.4,
+          "width": 130.8,
+          "height": 25,
+          "bottom": 733.4,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 264.5,
+          "y": 1096.4,
+          "documentY": 1096.4,
+          "width": 680,
+          "height": 778,
+          "bottom": 1874.4,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 1458.9,
+          "y": 4393.7,
+          "documentY": 4393.7,
+          "width": 181.6,
+          "height": 25,
+          "bottom": 4418.7,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 1192.5,
+          "y": 4613.7,
+          "documentY": 4613.7,
+          "width": 216.9,
+          "height": 25,
+          "bottom": 4638.7,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 264.5,
+          "y": 10669.2,
+          "documentY": 10669.2,
+          "width": 155.6,
+          "height": 25,
+          "bottom": 10694.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 264.5,
+          "y": 13152.2,
+          "documentY": 13152.2,
+          "width": 680,
+          "height": 778,
+          "bottom": 13930.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 960.5,
+          "y": 14267.2,
+          "documentY": 14267.2,
+          "width": 93.6,
+          "height": 25,
+          "bottom": 14292.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 1308.5,
+          "y": 15266.6,
+          "documentY": 15266.6,
+          "width": 112,
+          "height": 25,
+          "bottom": 15291.6,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 41,
+        "viewport": 3,
+        "loadedInViewport": 3,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-1920x1080.png",
+      "hardFailures": [],
+      "promoProof": {
+        "initial": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1521,
+            "y": 987,
+            "width": 360,
+            "height": 69
+          },
+          "close": {
+            "x": 1826,
+            "y": 998,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "checks": {
+          "passiveRailPresent": true,
+          "nativeDetailsClosed": true,
+          "passiveHeightAtMost120": true,
+          "closeHitAreaAtLeast44": true,
+          "heroCtaUnoccluded": true,
+          "expandsWithVisibleContentAndCta": true,
+          "collapsesToCompactRail": true,
+          "reopensBeforeDismissal": true,
+          "dismissesOrAdvancesCard": true
+        },
+        "screenshots": [
+          "home-1920x1080-promo-expanded.png",
+          "home-1920x1080-promo-collapsed.png"
+        ],
+        "expanded": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 1521,
+            "y": 843,
+            "width": 360,
+            "height": 213
+          },
+          "close": {
+            "x": 1826,
+            "y": 854,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "collapsed": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1521,
+            "y": 987,
+            "width": 360,
+            "height": 69
+          },
+          "close": {
+            "x": 1826,
+            "y": 998,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "reopened": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 1521,
+            "y": 843,
+            "width": 360,
+            "height": 213
+          },
+          "close": {
+            "x": 1826,
+            "y": 854,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true
+        },
+        "afterDismiss": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1521,
+            "y": 987,
+            "width": 360,
+            "height": 69
+          },
+          "close": {
+            "x": 1826,
+            "y": 998,
+            "width": 44,
+            "height": 44
+          },
+          "summary": "Don't know the model? Answer a few questions",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/configurator/",
+          "heroCtaUnoccluded": true
+        }
+      }
+    }
+  ]
+}
