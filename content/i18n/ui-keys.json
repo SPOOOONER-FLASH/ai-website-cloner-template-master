@@ -424,7 +424,7 @@
     "src/data/category-sourcing.ts:38"
   ],
   "BAU 2027 Munich": [
-    "src/components/site/SiteFooter.tsx:58",
+    "src/components/site/SiteFooter.tsx:55",
     "src/components/site/menu-experience.ts:84"
   ],
   "Before you specify": [
@@ -493,7 +493,7 @@
     "src/components/site/SiteHeader.tsx:796"
   ],
   "Buy on Alibaba": [
-    "src/components/site/SiteFooter.tsx:270",
+    "src/components/site/SiteFooter.tsx:243",
     "src/components/site/SiteHeader.tsx:828"
   ],
   "Buying": [
@@ -758,7 +758,7 @@
     "src/components/locale-pages/ConfiguratorPage.tsx:33",
     "src/components/locale-pages/ConfiguratorPage.tsx:44",
     "src/components/site/FinderModeSwitch.tsx:44",
-    "src/components/site/SiteFooter.tsx:49",
+    "src/components/site/SiteFooter.tsx:46",
     "src/components/site/menu-experience.ts:69",
     "src/components/site/menu-experience.ts:253"
   ],
@@ -769,7 +769,7 @@
     "src/components/site/ProjectDetail.tsx:23"
   ],
   "Contact": [
-    "src/components/site/SiteFooter.tsx:20",
+    "src/components/site/SiteFooter.tsx:17",
     "src/components/site/SiteHeader.tsx:120",
     "src/components/site/SiteMenuDrawer.tsx:19",
     "src/components/site/menu-experience.ts:102",
@@ -814,7 +814,7 @@
     "src/data/hardware-terms.ts:359"
   ],
   "Cylinder calculator": [
-    "src/components/site/SiteFooter.tsx:54",
+    "src/components/site/SiteFooter.tsx:51",
     "src/components/site/menu-experience.ts:73"
   ],
   "Cylinder, LC04, finish, EN 1125…": [
@@ -824,7 +824,7 @@
     "src/lib/configurator.ts:430"
   ],
   "Data preferences": [
-    "src/components/site/SiteFooter.tsx:207"
+    "src/components/site/SiteFooter.tsx:177"
   ],
   "Datasheets, CAD files and installation instructions are available on request while the verified download library is being prepared.": [
     "src/components/site/ProductDetail.tsx:88"
@@ -978,7 +978,7 @@
   ],
   "Documents": [
     "src/components/locale-pages/DocumentsPage.tsx:24",
-    "src/components/site/SiteFooter.tsx:55",
+    "src/components/site/SiteFooter.tsx:52",
     "src/components/site/menu-experience.ts:92"
   ],
   "Documents already available": [
@@ -1246,7 +1246,7 @@
     "src/components/site/ProductsEditorialOverview.tsx:23"
   ],
   "FAQ": [
-    "src/components/site/SiteFooter.tsx:56",
+    "src/components/site/SiteFooter.tsx:53",
     "src/components/site/SiteHeader.tsx:121",
     "src/components/site/menu-experience.ts:94"
   ],
@@ -1304,7 +1304,7 @@
   ],
   "Finish codes": [
     "src/components/site/OrderCodeTables.tsx:176",
-    "src/components/site/SiteFooter.tsx:51"
+    "src/components/site/SiteFooter.tsx:48"
   ],
   "Finish codes. A model number is three facts, not one name.": [
     "src/components/locale-pages/FinishesPage.tsx:31"
@@ -1393,7 +1393,7 @@
   ],
   "Glossary": [
     "src/components/locale-pages/GlossaryPage.tsx:27",
-    "src/components/site/SiteFooter.tsx:52",
+    "src/components/site/SiteFooter.tsx:49",
     "src/components/site/menu-experience.ts:82",
     "src/components/site/menu-experience.ts:265"
   ],
@@ -1454,7 +1454,7 @@
   ],
   "Hardware in focus": [
     "src/components/site/ProductStudies.tsx:41",
-    "src/components/site/SiteFooter.tsx:50",
+    "src/components/site/SiteFooter.tsx:47",
     "src/components/site/menu-experience.ts:70"
   ],
   "Hardware in focus — explore product photographs and component selections": [
@@ -1532,7 +1532,7 @@
     "src/components/site/FinderModeSwitch.tsx:41"
   ],
   "How to buy": [
-    "src/components/site/SiteFooter.tsx:245"
+    "src/components/site/SiteFooter.tsx:215"
   ],
   "How to read a Canton Hyland model number: the finish codes (SSS, PB, SN, GM), the lock-function codes (ET, BK, PS) and the single/double door letter, with the models each appears on.": [
     "src/components/locale-pages/FinishesPage.tsx:15"
@@ -1583,7 +1583,7 @@
     "src/components/site/DocumentInventory.tsx:85"
   ],
   "Imprint": [
-    "src/components/site/SiteFooter.tsx:19"
+    "src/components/site/SiteFooter.tsx:16"
   ],
   "In the catalog, not on the site": [
     "src/components/site/ModelLookup.tsx:93"
@@ -1798,7 +1798,7 @@
   ],
   "Model lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:28",
-    "src/components/site/SiteFooter.tsx:53",
+    "src/components/site/SiteFooter.tsx:50",
     "src/components/site/menu-experience.ts:71",
     "src/components/site/menu-experience.ts:264"
   ],
@@ -1921,7 +1921,7 @@
     "src/components/site/menu-experience.ts:81"
   ],
   "Newsletter": [
-    "src/components/site/SiteFooter.tsx:222",
+    "src/components/site/SiteFooter.tsx:192",
     "src/components/site/menu-experience.ts:103"
   ],
   "Next step": [
@@ -2282,11 +2282,11 @@
   ],
   "Price list": [
     "src/components/locale-pages/ContactPage.tsx:76",
-    "src/components/site/SiteFooter.tsx:57",
+    "src/components/site/SiteFooter.tsx:54",
     "src/components/site/menu-experience.ts:101"
   ],
   "Privacy Notice": [
-    "src/components/site/SiteFooter.tsx:21"
+    "src/components/site/SiteFooter.tsx:18"
   ],
   "Privacy, bathroom, turn button inside": [
     "src/data/finish-codes.ts:405"
@@ -2703,7 +2703,7 @@
     "src/lib/configurator.ts:455"
   ],
   "Sign-up here": [
-    "src/components/site/SiteFooter.tsx:233"
+    "src/components/site/SiteFooter.tsx:203"
   ],
   "Single door": [
     "src/data/finish-codes.ts:536"
@@ -2715,7 +2715,7 @@
     "src/data/category-sourcing.ts:47"
   ],
   "Social Media": [
-    "src/components/site/SiteFooter.tsx:314"
+    "src/components/site/SiteFooter.tsx:287"
   ],
   "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.": [
     "src/lib/configurator.ts:460"
@@ -2899,7 +2899,7 @@
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
   ],
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
-    "src/components/site/SiteFooter.tsx:226"
+    "src/components/site/SiteFooter.tsx:196"
   ],
   "The center distance on the {m} is {v}.": [
     "src/lib/product-faq.ts:147"
