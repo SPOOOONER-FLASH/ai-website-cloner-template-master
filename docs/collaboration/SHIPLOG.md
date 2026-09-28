@@ -6,12 +6,19 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 652 次提交
+最近 30 天 · 共 651 次提交
+
+## 2026-09-28
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 01:51 | 中立 | 菜单列全部栏目 + 内链摆位审查（测试 + seo:placement） | `7b93e04c6ca` |
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:43 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `b8e204dd9fa` |
 | 23:42 | 中立 | goal #97：r13 = 121e397e6ef 已推 | `4b131f6a43a` |
 | 23:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `c1adaaf4ce5` |
 | 23:26 | HYDE | BAU 2027 专栏上线源码：/bau-2027/ 与 /de/bau-2027/（版式 B） | `42ebcd6e243` |
@@ -766,7 +773,4 @@
 | 02:49 | 中立 · 发布 HYDE | 发布 HYDE 证书核验栏目 | `0427c71461a` |
 | 02:44 | HYDE | 新增 HYDE 证书核验栏目 | `b41483154e9` |
 | 02:32 | 中立 · 发布 HYDE | 发布 TOOL JAPAN 2026 静态站 | `36bc5e85f1d` |
-| 00:22 | HYDE | 发布 TOOL JAPAN 2026 市场访问日程 | `edaad8fe8d3` |
-| 00:17 | 中立 · 发布 HYDE | 发布 AR-4 阿里巴巴数字搜索修正 | `89602b785fc` |
-| 00:15 | 中立 | 校准 AR-4 阿里巴巴数字搜索 | `80ccbe625ed` |
 
