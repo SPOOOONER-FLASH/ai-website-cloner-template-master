@@ -3,7 +3,7 @@ import { pageMetadata } from "@/lib/seo";
 import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { representatives } from "@/data/representatives";
-import { siteSettings } from "@/data/navigation";
+import { siteSettings, mailboxOwner, whatsappHref } from "@/data/navigation";
 import { EmailLink } from "@/components/site/EmailLink";
 
 export const metadata: Metadata = pageMetadata({
@@ -100,9 +100,20 @@ export default function ContactoPage() {
                       <dt className="text-c2 text-ink-secondary">{row.label}</dt>
                       <dd className="mt-4">
                         <EmailLink address={row.email} className="short-marker short-marker-compact text-h3 text-brand hover:text-brand-hover" />
+                        {mailboxOwner(row.email) ? <p className="mt-4 text-c2 text-ink-secondary">{mailboxOwner(row.email)}</p> : null}
                       </dd>
                     </div>
                   ))}
+                {whatsappHref() ? (
+                  <div className="border-b border-line py-16">
+                    <dt className="text-c2 text-ink-secondary">WhatsApp</dt>
+                    <dd className="mt-4">
+                      <a href={whatsappHref()} target="_blank" rel="noopener noreferrer" className="short-marker short-marker-compact text-h3 text-brand hover:text-brand-hover">
+                        {siteSettings.contact.whatsapp}
+                      </a>
+                    </dd>
+                  </div>
+                ) : null}
               </dl>
             </div>
             {/*

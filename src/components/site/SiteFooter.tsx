@@ -6,7 +6,7 @@ import { mirrorHref } from "@/lib/spanish-mirror";
 import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
 import { LANGUAGE_LABELS as FOOTER_LANGUAGE_LABELS, dict, tx } from "@/lib/i18n-client";
 import { socialLinks } from "@/data/site";
-import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
+import { footerNav, localisedHref, navLabel, siteSettings, whatsappHref } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
 import { EmailLink } from "./EmailLink";
 
@@ -275,6 +275,18 @@ export function SiteFooter() {
                       address={siteSettings.contact.technicalEmail}
                       className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     />
+                  </li>
+                ) : null}
+                {whatsappHref() ? (
+                  <li>
+                    <a
+                      href={whatsappHref()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                    >
+                      WhatsApp {siteSettings.contact.whatsapp}
+                    </a>
                   </li>
                 ) : null}
               </ul>
