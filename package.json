@@ -115,6 +115,7 @@
     "audit:modelling": "node scripts/audit-modelling-candidates.mjs",
     "audit:deadcss": "node scripts/audit-dead-css.mjs",
     "audit:imagefit": "node scripts/audit-image-fit.mjs",
+    "audit:productimages": "node scripts/audit-product-image-consistency.mjs",
     "assets:companycrops": "node scripts/build-company-crops.mjs",
     "union:split": "node scripts/split-union-image-packs.mjs",
     "rayen:plates": "node scripts/square-rayen-plates.mjs",
