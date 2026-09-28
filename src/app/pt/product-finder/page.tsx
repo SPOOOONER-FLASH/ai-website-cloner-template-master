@@ -40,7 +40,7 @@ function categoryNameMap(): Record<string, string> {
 
 export default function LocalizadorDeProdutosPage() {
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start">
       <JsonLd
         data={breadcrumbSchema([
           { name: "Início", url: absoluteUrl("/pt/") },
