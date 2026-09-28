@@ -463,7 +463,7 @@ different things, and none of them is a purge.
 | `seoTitle*` / `seoDescription*` and `scripts/build-product-titles.mjs` | The engineering session — see `docs/collaboration/tasks/2026-09-24-division-of-labour.md` |
 | `content/**`, `scripts/**`, `src/data/**`, `src/lib/**` | Claude |
 | `content/promo.json` | Claude: copy and timing. Codex: card visuals. |
-| Building and committing `out/` | **HYDE release: `npm run release:hyde`** — see the wall below |
+| Building and committing `out/` | **HYDE release: `npm run release:hyde`, run by the Claude HYDE engineering session on the johns machine** (client 2026-09-28, below) — see the wall below |
 | Building and committing `out-rayen/` | **RAYEN release: `npm run release:rayen`** — RAYEN's side only |
 | Article copy and localisation (`content/news`, `content/guides`, all three languages) | **Claude.** Client 2026-09-23: Kimi assists only; Claude owns polish and localisation |
 
@@ -493,7 +493,15 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
    nobody's uncommitted work can be baked in or swept up. `release:rayen` does the same for
    `out-rayen/`. **Do not build and commit `out/` or `out-rayen/` by hand any more.**
 
-   **On this machine, put the checkout on E:** (client, 2026-09-24: 「改为 E 盘」). C: is full —
+   **Every HYDE release and deploy runs on the johns machine** (client, 2026-09-28:
+   「以后推送交还给你。发布由你来……所有发布部署交还给 john 电脑（4090、64G 运存），86132 只有
+   16G 运存和 20G C 盘剩余」). That machine built all 8,869 pages of r8 without the old
+   0xC0000409 crash and pushed 46,267 files in one attempt; 86132 had failed the same push five
+   times. Other sessions push source and say so; the engineering session there builds, pushes
+   (`scripts/chunk-push-release.mjs` if a single push times out), verifies live and runs
+   `npm run seo:indexnow:release`. Its release checkout is `tmp/claude-release/release-hyde`.
+
+   **On the 86132 machine, put the checkout on E:** (client, 2026-09-24: 「改为 E 盘」). C: is full —
    on 2026-09-24 it had 2.8 GB left, a clean checkout is ~4 GB before dependencies, and the
    release died inside `git worktree add` with `No space left on device`, which reads like a
    broken repository rather than a full disk. So:
