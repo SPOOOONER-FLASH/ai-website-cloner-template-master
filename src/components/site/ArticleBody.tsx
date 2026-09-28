@@ -1,16 +1,23 @@
+import { Fragment, type ReactNode } from 'react';
 import type { Locale } from '@/data/site';
 import type { ArticleBlock } from '@/lib/article-layout';
 import { DataTable } from './DataTable';
 import { InlineText } from './InlineText';
 import styles from './ArticleReading.module.css';
 import { tx } from "@/lib/i18n";
-export function ArticleBody({ blocks, locale }: { blocks: ArticleBlock[]; locale: Locale }) {
+/** `figure` renders one extra node after the block at `afterIndex` (see NewsDetail). */
+export function ArticleBody({ blocks, locale, figure }: { blocks: ArticleBlock[]; locale: Locale; figure?: { afterIndex: number; node: ReactNode } }) {
   return <div className={styles.body} id="article-overview">{blocks.map((block, index) => {
-    if (block.kind === 'heading') return block.level === 2 ? <h2 key={block.id} id={block.id}>{block.text}</h2> : <h3 key={block.id} id={block.id}>{block.text}</h3>;
-    if (block.kind === 'table') {
-      const numeric = block.headers.map((_, column) => block.rows.every(row => /^-?\d+(?:\.\d+)?$/.test(row[column])));
-      return <DataTable key={index} locale={locale} caption={block.caption || tx(locale, 'Reference table', { es: 'Tabla de consulta', pt: 'Tabela de consulta' })} columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? 'number' : 'text' }))} rows={block.rows.map(row => row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined })))} />;
-    }
-    return <p key={index}><InlineText text={block.text} /></p>;
+    const rendered = renderBlock(block, index, locale);
+    return figure?.afterIndex === index ? <Fragment key={index}>{rendered}{figure.node}</Fragment> : rendered;
   })}</div>;
+}
+
+function renderBlock(block: ArticleBlock, index: number, locale: Locale) {
+  if (block.kind === 'heading') return block.level === 2 ? <h2 key={block.id} id={block.id}>{block.text}</h2> : <h3 key={block.id} id={block.id}>{block.text}</h3>;
+  if (block.kind === 'table') {
+    const numeric = block.headers.map((_, column) => block.rows.every(row => /^-?\d+(?:\.\d+)?$/.test(row[column])));
+    return <DataTable key={index} locale={locale} caption={block.caption || tx(locale, 'Reference table', { es: 'Tabla de consulta', pt: 'Tabela de consulta' })} columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? 'number' : 'text' }))} rows={block.rows.map(row => row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined })))} />;
+  }
+  return <p key={index}><InlineText text={block.text} /></p>;
 }

@@ -10,6 +10,7 @@ import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
 import { articleBlocks } from "@/lib/article-layout";
 import { ArticleBody } from "./ArticleBody";
+import { MasterKeyHierarchyFigure, hasMasterKeyFigure } from "./MasterKeyHierarchyFigure";
 import { DataTable } from "./DataTable";
 import { InlineText } from "./InlineText";
 import { ArticleContents } from "./ArticleContents";
@@ -143,6 +144,12 @@ export function NewsDetail({
   */
   const body = localeBody?.length ? localeBody : article.body;
   const blocks = articleBlocks(body);
+  // The master key guide carries a hierarchy chart after its levels table (en/es/pt only).
+  const levelsTable = blocks.findIndex((block) => block.kind === "table");
+  const figure =
+    article.slug === "master-key-hierarchy-planning-2026" && hasMasterKeyFigure(locale) && levelsTable >= 0
+      ? { afterIndex: levelsTable, node: <MasterKeyHierarchyFigure locale={locale} /> }
+      : undefined;
   const overview = tx(locale, "Overview", { es: "Resumen", pt: "Visão geral" });
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
@@ -299,7 +306,7 @@ export function NewsDetail({
               table rows — reached the live page as literal `##` and `| a | b |`. The block
               parser already ran for news (`blocks` above); its output was just unused.
             */}
-            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : blocks.map((block, index) => {
+            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} figure={figure} /> : blocks.map((block, index) => {
               if (block.kind === "heading") {
                 return block.level === 2 ? (
                   <h2 key={block.id} id={block.id} className="mt-48 text-h3 text-ink">
