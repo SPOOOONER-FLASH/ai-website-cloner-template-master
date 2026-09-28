@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 658 次提交
+最近 30 天 · 共 659 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 05:03 | 中立 | 308-S / 308-D 标题按单扇/双扇定性（positioning 覆盖） | `86367c614e5` |
 | 05:01 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3d62eef4c25` |
 | 05:00 | 中立 | 308-S/308-D 三语摘要按甲方答复（单无锁体、双有锁体）；runbook 第一屏复查归档 | `efd058d976d` |
 | 04:35 | HYDE | Merge pull request #3 from SPOOOONER-FLASH/claude/project-thread-u8a4cy | `ad350d0e6cf` |
