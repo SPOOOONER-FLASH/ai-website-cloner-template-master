@@ -37,10 +37,38 @@ RSC 数据变大是预期内的：开场文字现在作为服务端输出放在�
 
 **验证**：7 个页面（含 /contact/、/fr/contact/、/es/faq/、/pt/、/ar/company/、产品页）的页脚 HTML，静态导出与浏览器激活后逐字相同；en/fr/ar 首页与产品页 1440/390 截图像素差 0；无 hydration 报错；从首页点页脚 Contact 客户端跳转后，当前页标记与语言链接正确更新。
 
+## 批次 3 · SiteHeader（单独发布）
+
+`SiteHeader` 改为服务端组件，`locale` 由各语种 layout 传入（同批次 2 的做法）。Logo、全部导航文字、四个下拉货架里的链接都由服务端输出。交互集中在 `HeaderIslands.tsx`：
+- `HeaderProvider`：根节点与共享状态（当前打开的货架、菜单、搜索），Esc 与点外部关闭、菜单焦点回退（rAF 与 50ms 定时器谁先到用谁，原逻辑照搬）、`navOverflows` 宽度检测（改为按 `data-header-wide-nav` 找列）、菜单抽屉与搜索框的按需加载。
+- `ShelfTrigger`（货架按钮 / Products 链接）、`ShelfPanel`（货架开合；点货架里任何链接即关闭，替代原来每条链接各自的 onClick）、`HeaderLink`（`aria-current` 与 `current-nav`）、`HeaderSearchButton`、`HeaderMenuButton`、`HeaderRailCta`。`LocalePicker` 原样。
+- 四个源码测试（header-shelf、mobile-navigation、menu-experience、home-accent）改为同时读 `SiteHeader.tsx` 与 `HeaderIslands.tsx`；货架的 `aria-controls/aria-expanded` 断言改为断言 `shelf="…"` 与岛里的派生写法。
+
+| 页面 | JS 原始 | JS gzip | 内联 RSC 数据 gzip |
+|---|---|---|---|
+| `/` | 789,588 → 777,027（−12.6 KB） | −2.6 KB | +3.4 KB |
+| `/fr/` | 836,452 → 822,417（−14.0 KB） | −3.0 KB | +3.6 KB |
+| 产品页 | 789,945 → 777,384（−12.6 KB） | −2.6 KB | +3.1 KB |
+
+**传输量每页约多 0.5–1 KB gzip**：四个货架（15 个品类及子类）的 HTML 现在也以 RSC 数据形式随页下发。换来的是每页少解析执行约 13 KB 脚本、页头绝大部分不参与激活。
+
+**验证**：7 个页面的页头 HTML，静态导出与激活后逐字相同（除新增的 `data-header-wide-nav` 属性和 React 自动生成的 id）；en/fr/ar 首页、/fr/company/、/ar/products/、产品页 1440/390 截图像素差 0；无 hydration 报错。1700 宽度下逐项对比改前改后行为完全一致：当前页标记、Company 货架悬停展开与 Esc 关闭、Products 悬停展开与鼠标离开收起、菜单点击打开（body 锁滚动）与 Esc 关闭后焦点回到汉堡按钮、搜索打开与关闭、语言面板打开；390 宽度下 "Buy it now" 打开抽屉、Esc 后焦点回到它；从 Company 货架点链接客户端跳转后货架关闭、当前页标记更新。
+
+## 三批合计与评估
+
+| 页面 | JS 原始 | JS gzip | 内联 RSC gzip | 净传输 gzip |
+|---|---|---|---|---|
+| `/` | 804,038 → 777,027（−27.0 KB） | −7.0 KB | +6.5 KB | ≈ −0.5 KB |
+| 产品页 | 796,630 → 777,384（−19.2 KB） | −4.1 KB | +4.6 KB | ≈ +0.5 KB |
+
+**结论**：下载字节基本不变，收益在于每页少解析、编译、执行 19–27 KB 脚本，大块页头页脚不再参与激活，这正是任务单说的“低端手机体验”。线上 TBT 与 Lighthouse 中位数要等工程会话发布后测。
+
+**HeroCarousel 建议不做**：它的交互就是组件本身，拆出来能省的 JS 很少，而第一张图作为服务端输出同样会进 RSC 数据；按以上三批的经验，净效果接近零甚至为负，风险中等。
+
 ## 下一步
 
-批次 3（SiteHeader，单独发布）一个 PR。HeroCarousel 等前四个评估完再说。
+工程会话：三个 PR 按顺序各发布一次（页头单独发布后重点实测），发布后测首页 Lighthouse 手机 3 次取中位。
 
-**风险 / 给其他会话**：`scripts/scaffold-locale-routes.mjs` 属于多语种会话的认领范围；批次 2、3 会各改它一行（给 `SiteFooter` / `SiteHeader` 传 `locale`），并重新生成七个 locale layout。
+**风险 / 给其他会话**：`scripts/scaffold-locale-routes.mjs` 属于多语种会话的认领范围；批次 2、3 各改了它一行（给 `SiteFooter` / `SiteHeader` 传 `locale`），并重新生成七个 locale layout。
 
 **构建副作用，不是本任务的**：在 Linux 上 `prebuild` 会改写 `public/images/drawings/*.svg`、`public/images/door-prep/*.svg`、`public/search-index*.json`、`src/data/generated/products-zh.json`，未提交。`finish-downloadable-pdfs.mjs` 调用 Windows 的 `py` 启动器，Linux 上要 `pymupdf` 和一个 `py → python3` 垫片才能跑完 `npm run check`。
