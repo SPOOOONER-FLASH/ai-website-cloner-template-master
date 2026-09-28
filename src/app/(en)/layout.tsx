@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
+import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -87,6 +88,8 @@ export default function EnglishRootLayout({
       <body suppressHydrationWarning className="flex min-h-full flex-col">
         {/* Site chrome lives here so every route gets it. Each page supplies its own
             <main>, because the homepage's top margin and rhythm are page-specific. */}
+        {/* Above the header and in flow: it offers, it never covers. See the component. */}
+        <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}
