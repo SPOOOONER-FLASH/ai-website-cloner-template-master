@@ -41,6 +41,20 @@ export interface Rollable {
 }
 
 /**
+ * One figure's displayed number `elapsed` milliseconds into the roll, and whether it has
+ * reached its value. `index` is the figure's position in the strip, which sets its stagger.
+ * Each `FactRoll` island calls this for its own figure; `rollFrame` is the whole strip.
+ */
+export function rollAt(
+  countTo: number,
+  index: number,
+  elapsed: number,
+): { value: number; done: boolean } {
+  const progress = Math.min(1, Math.max(0, (elapsed - index * STAGGER_MS) / ROLL_MS));
+  return { value: Math.round(ease(progress) * countTo), done: progress >= 1 };
+}
+
+/**
  * The displayed numbers `elapsed` milliseconds into the roll, and whether it has ended.
  *
  * Facts without `countTo` are absent from the result rather than present at their final
@@ -56,9 +70,9 @@ export function rollFrame(
 
   facts.forEach((fact, index) => {
     if (fact.countTo === undefined) return;
-    const progress = Math.min(1, Math.max(0, (elapsed - index * STAGGER_MS) / ROLL_MS));
-    if (progress < 1) done = false;
-    values[index] = Math.round(ease(progress) * fact.countTo);
+    const frame = rollAt(fact.countTo, index, elapsed);
+    if (!frame.done) done = false;
+    values[index] = frame.value;
   });
 
   return { values, done };

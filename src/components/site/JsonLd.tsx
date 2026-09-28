@@ -23,6 +23,8 @@ import type {
   WithContext,
 } from "schema-dts";
 import { t } from "@/lib/i18n";
+import { authorPath } from "@/data/authors";
+import { localisedHref } from "@/lib/spanish-mirror";
 
 /**
  * Schema.org structured data.
@@ -336,7 +338,7 @@ export function newsArticleSchema(
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: article.publishedAt,
-    dateModified: article.publishedAt,
+    dateModified: article.updatedAt ?? article.publishedAt,
     ...(images.length ? { image: images } : {}),
     /*
       A Person with a jobTitle, an employer and a URL that resolves — the difference
@@ -351,7 +353,17 @@ export function newsArticleSchema(
           jobTitle:
             t(article.author, "role", locale),
           worksFor: { "@id": `${siteUrl}/#organization` },
-          ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
+          /* The on-site profile (09-28) is the author's url and @id; LinkedIn stays as sameAs.
+             Without a profile, the external URL is the only thing that resolves. */
+          ...(authorPath(article.author)
+            ? {
+                "@id": `${siteUrl}${authorPath(article.author)}/#person`,
+                url: absoluteUrl(localisedHref(`${authorPath(article.author)}/`, locale)),
+                ...(article.author.url ? { sameAs: [article.author.url] } : {}),
+              }
+            : article.author.url
+              ? { url: article.author.url, sameAs: [article.author.url] }
+              : {}),
           ...(article.author.credential
             ? {
                 hasCredential: {

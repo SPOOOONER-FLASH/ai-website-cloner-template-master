@@ -1,5 +1,30 @@
 # Skills — 装了什么、为什么、怎么用
 
+> **2026-09-28 精简（甲方：「opus 5.5 的进化让很多 skills 感觉在拖后腿」）。** 本节是现行结论；
+> 下方「2026-09-03 调研」是历史记录，只说明当时为什么装，不要照它重装。
+
+## 现行清单
+
+**判据**：近一个月的交接笔记里有没有真实使用；是否被仓库自己的确定性脚本或模型本身覆盖；
+是否是面向 SaaS 的通用手册（付费墙、流失、App 商店、短信……与一家五金出口工厂无关）。
+每个装着的 skill 的名字和说明都会在每次会话开头占上下文，并干扰选择。
+
+| 范围 | 保留 | 移除 | 理由 |
+|---|---|---|---|
+| 仓库内 | `.claude/settings.json`（Stop hook）、`.claude/launch.json`、`.codex/`（hooks + config）、`.impeccable/` | `clone-website` 全部 14 份平台副本、`scripts/sync-skills.mjs`、`scripts/sync-agent-rules.sh`、Cline/Continue/Amazon Q/Copilot/Cursor/Windsurf/Aider/Gemini 规则副本、`docs/research/INSPECTION_GUIDE.md` | 克隆阶段早已结束；团队只用 Claude / Codex / Kimi，三者都直接读 `AGENTS.md`。INSPECTION_GUIDE 经 `@` 导入，每个 Claude 会话都白付它的 token |
+| 本机 `.agents/skills`（`skills-lock.json`，71 个） | `impeccable`（UI 收尾 detector，交接笔记 10 次实用）；`imagegen-frontend-web`（Codex 生图，去留由 Codex 定） | 其余 69 个：marketingskills 全套、taste-skill 其余变体、ui-ux-pro-max 全套 | 过去 25 天除 impeccable 外零实际调用；文案/CRO/SEO 由模型 + 本仓库规则 + `npm run seo:*` 脚本完成 |
+| 本机 `~/.claude/skills` | — | geo-seo-claude 7 个（`geo-*`）、Cloudflare 13 个 | GEO 已有 `seo:citability` / `seo:graph` 等确定性脚本；Cloudflare 按纪律代理不碰 |
+
+本机删除只在甲方书面确认后，经 Remote Control 在 johns 电脑上执行：
+`npx skills remove <name>`（会同步改写 `skills-lock.json`，随后提交该文件）。
+
+新增 skill 仍按下方「自动调用纪律」的最后一条：单独提出、说明成本与重叠、取得授权。
+
+---
+
+## 历史：2026-09-03 调研
+
+
 > 2026-09-03 调研。甲方下载了 10 个仓库，要求「先检测有没有可用的，就用上」。
 > 这份文件记录每个仓库到底是什么、值不值得装、怎么更新。
 
@@ -45,8 +70,7 @@ CRO、营销、分析、建站或发布任务前，都先查看**当次会话实
 - 改过网页 UI，结束前除项目测试外，运行一次 Impeccable 确定性 detector。
 - 可用清单会随环境变化，纪律不得依赖写死的“已安装多少个”数字。
 
-这一条已写进 `AGENTS.md` 唯一真源，并由 `scripts/sync-agent-rules.sh` 同步给其他
-不原生读取 `AGENTS.md` 的代理。
+这一条已写进 `AGENTS.md` 唯一真源（2026-09-28 起不再生成各平台副本）。
 
 ---
 
