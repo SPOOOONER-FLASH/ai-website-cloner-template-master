@@ -15,6 +15,7 @@ import {
   selectActivePromoCard,
   writeSessionDismissals,
 } from "@/lib/promo";
+import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { HydeLockup } from "./icons";
 
@@ -112,6 +113,7 @@ export function PromoDialog() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [dismissed, setDismissed] = useState<string[]>([]);
+  const [compact, setCompact] = useState(false);
 
   const surface = promoSurfaceFor(pathname);
   const allowedHere = surface !== null && promoDialog.surfaces.includes(surface);
@@ -136,6 +138,7 @@ export function PromoDialog() {
       // effect that reads storage after `open` flips. A separate effect would set state
       // synchronously on render and cascade; this is already asynchronous.
       setDismissed(carried);
+      setCompact(false);
       setOpen(true);
 
       // A forced preview must not start a real cooldown, or checking the promo would
@@ -164,6 +167,25 @@ export function PromoDialog() {
       promoDialog.cards.map((c) => c.ctaHref),
     );
   }, []);
+
+  /*
+    ONCE THE VISITOR SCROLLS ON, THE CARD FOLDS TO ONE LINE (client critique, 2026-09-28).
+
+    At 360px wide the card covered the right-hand product in every four-up rail and, on the
+    homepage, part of the 311 specification. It has done its job the moment it has been
+    read: a visitor who scrolls past it has chosen to keep reading. So after 240px of
+    scroll it folds to its call to action and a close button, about 44px tall, and stays
+    there. It never unfolds on its own; the full card is only ever the first thing seen.
+  */
+  useEffect(() => {
+    if (!open || compact) return;
+    const startY = window.scrollY;
+    function onScroll() {
+      if (Math.abs(window.scrollY - startY) > 240) setCompact(true);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [open, compact]);
 
   // Escape clears the whole rail. Nothing is trapped, so this is a convenience, not a
   // requirement — but a visitor who hits Escape expects everything floating to go away.
@@ -196,11 +218,14 @@ export function PromoDialog() {
       aria-label={locale === "es" ? "Oferta destacada" : locale === "pt" ? "Oferta em destaque" : "Featured offer"}
       // Passive promotion stays below the sticky header's z-10 stacking context, so
       // user-requested search and menu overlays inside that header always remain usable.
-      className="overlay-presence fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
+      className={cn(
+        "overlay-presence fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]",
+        compact && "start-auto xs:w-auto",
+      )}
       data-state={presence.visible ? "open" : "closed"}
     >
       <div className="overlay-panel">
-        <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
+        <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} compact={compact} />
       </div>
     </aside>
   );
@@ -210,10 +235,12 @@ function PromoCardBlock({
   card,
   locale,
   onDismiss,
+  compact,
 }: {
   card: PromoCard;
   locale: Locale;
   onDismiss: (href: string) => void;
+  compact: boolean;
 }) {
   const { image, visual } = card;
   const dismissalKey = card.ctaHref;
@@ -226,6 +253,46 @@ function PromoCardBlock({
   const ctaClass =
     "short-marker short-marker-compact text-c1 text-surface transition-opacity duration-[var(--motion-fast)] hover:opacity-80";
 
+  const cta =
+    isFile || isExternal ? (
+      <a
+        href={ctaHref}
+        className={ctaClass}
+        {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      >
+        {ctaLabel}
+      </a>
+    ) : (
+      <Link href={ctaHref} className={ctaClass}>
+        {ctaLabel}
+      </Link>
+    );
+
+  const closeIcon = (
+    <svg viewBox="0 0 24 24" className="h-16 w-16" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        d="M24 23 12.7 11.6 23.3 1l-.7-.7L12 10.9 1.4.3.7 1l10.6 10.6L0 23l.7.7L12 12.3l11.3 11.3.7-.6z"
+      />
+    </svg>
+  );
+
+  if (compact) {
+    return (
+      <div className="hard-shadow-panel flex items-center bg-ink">
+        <div className="py-12 ps-16 pe-8">{cta}</div>
+        <button
+          type="button"
+          onClick={() => onDismiss(dismissalKey)}
+          aria-label={closeLabel}
+          className="flex h-44 w-44 items-center justify-center text-surface transition-opacity duration-[var(--motion-fast)] hover:opacity-80"
+        >
+          {closeIcon}
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="hard-shadow-panel relative bg-surface">
       <button
@@ -234,12 +301,7 @@ function PromoCardBlock({
         aria-label={closeLabel}
         className="absolute end-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
       >
-        <svg viewBox="0 0 24 24" className="h-16 w-16" aria-hidden="true" focusable="false">
-          <path
-            fill="currentColor"
-            d="M24 23 12.7 11.6 23.3 1l-.7-.7L12 10.9 1.4.3.7 1l10.6 10.6L0 23l.7.7L12 12.3l11.3 11.3.7-.6z"
-          />
-        </svg>
+        {closeIcon}
       </button>
 
       <div className="grid w-full grid-cols-[96px_1fr] gap-0">
@@ -261,19 +323,7 @@ function PromoCardBlock({
           </div>
 
           <div className="bg-ink px-16 py-10">
-            {isFile || isExternal ? (
-              <a
-                href={ctaHref}
-                className={ctaClass}
-                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              >
-                {ctaLabel}
-              </a>
-            ) : (
-              <Link href={ctaHref} className={ctaClass}>
-                {ctaLabel}
-              </Link>
-            )}
+            {cta}
           </div>
         </div>
       </div>

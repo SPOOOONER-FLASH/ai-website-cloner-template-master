@@ -190,6 +190,10 @@ export function featureColumns(): FeatureColumn[] {
   ];
 }
 
+export function featureColumnsEyebrow(locale: Locale = "en"): string {
+  return tx(locale, "For specifiers", { es: "Para prescriptores", pt: "Para especificadores" });
+}
+
 export function featureColumnsHeading(locale: Locale = "en"): string {
   if (locale === "es") return "Columnas";
   if (locale === "pt") return "Colunas";

@@ -2,6 +2,7 @@ import type { Locale } from "@/data/site";
 import { demandShowcaseProducts, demandShowcaseText } from "@/data/demand-showcase";
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
+import { HomeSectionHeading } from "./HomeSectionHeading";
 import { ProductCard } from "./ProductCard";
 
 /**
@@ -29,17 +30,12 @@ export function DemandShowcase({ locale = "en" }: { locale?: Locale }) {
   return (
     <section className="layout mt-96 lg:mt-136" aria-labelledby="demand-showcase-heading">
       <div className="col-content grid w-full grid-cols gap-x">
-        <div className="col-span-full lg:col-span-4 xl:col-span-7">
-          <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-            {text.eyebrow}
-          </p>
-          <h2 id="demand-showcase-heading" className="mt-8 text-h2 text-ink">
-            {text.title}
-          </h2>
-        </div>
-        <div className="col-span-full mt-16 lg:col-span-7 lg:col-start-6 lg:mt-0 xl:col-span-14 xl:col-start-10">
-          <p className="text-c1 text-ink-secondary">{text.body}</p>
-        </div>
+        <HomeSectionHeading
+          id="demand-showcase-heading"
+          eyebrow={text.eyebrow}
+          title={text.title}
+          lede={text.body}
+        />
 
         <div
           className={cn(
@@ -72,6 +68,7 @@ export function DemandShowcase({ locale = "en" }: { locale?: Locale }) {
                 the same as marking nothing. The hero is the LCP; this rail is not.
               */
               priority={false}
+              shelf
               className="w-[74%] min-w-[74%] flex-none snap-start sm:w-auto sm:min-w-0"
             />
           ))}

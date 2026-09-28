@@ -3,11 +3,13 @@ import type { Locale } from "@/data/site";
 import {
   featureColumns,
   featureColumnsCta,
+  featureColumnsEyebrow,
   featureColumnsHeading,
   featureColumnsLede,
 } from "@/data/feature-columns";
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "./icons";
+import { HomeSectionHeading } from "./HomeSectionHeading";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { dict, fill } from "@/lib/i18n";
 
@@ -37,14 +39,14 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
   if (!columns.length) return null;
 
   return (
-    <section className="layout mt-64 lg:mt-96" aria-labelledby="feature-columns-heading">
+    <section className="layout" aria-labelledby="feature-columns-heading">
       <div className="col-content grid w-full grid-cols gap-x">
-        <div className="col-span-full lg:col-span-4 xl:col-span-7">
-          <h2 id="feature-columns-heading" className="text-h2 text-ink">
-            {featureColumnsHeading(locale)}
-          </h2>
-          <p className="mt-16 text-c1 text-ink-secondary">{featureColumnsLede(locale)}</p>
-        </div>
+        <HomeSectionHeading
+          id="feature-columns-heading"
+          eyebrow={featureColumnsEyebrow(locale)}
+          title={featureColumnsHeading(locale)}
+          lede={featureColumnsLede(locale)}
+        />
 
         <div
           className={cn(

@@ -4,6 +4,7 @@ import type { Product } from "@/data/types";
 import { getProductByModel } from "@/data/products";
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
+import { HomeSectionHeading } from "./HomeSectionHeading";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { dict, t } from "@/lib/i18n";
 
@@ -18,6 +19,7 @@ const copy = {
     cta: "Explore the AR-4 collection",
     model: "Model",
     material: "Nickel-plated iron lock case",
+    shared: "All four have a nickel-plated iron lock case.",
     aria: "HYDE Argentina AR-4 market collection",
   },
   es: {
@@ -27,6 +29,7 @@ const copy = {
     cta: "Explorar la colección AR-4",
     model: "Modelo",
     material: "Caja de hierro niquelado",
+    shared: "Las cuatro tienen caja de hierro niquelado.",
     aria: "Colección HYDE Argentina AR-4",
   },
   pt: {
@@ -36,6 +39,7 @@ const copy = {
     cta: "Ver a coleção AR-4",
     model: "Modelo",
     material: "Caixa de ferro niquelado",
+    shared: "As quatro têm caixa de ferro niquelado.",
     aria: "Coleção HYDE Argentina AR-4",
   },
 } as const;
@@ -79,6 +83,40 @@ function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale 
   );
 }
 
+/**
+ * The homepage form of a collection card: a thumbnail and two lines, no material line.
+ *
+ * On the homepage this collection used to be a full-width architectural photograph and
+ * four catalogue-sized cards — the heaviest block on the page, directly under the
+ * most-requested rail, which is itself four catalogue cards. Two product grids in a row
+ * say the same thing twice. Here the section's job is narrower: tell an Argentine
+ * distributor the collection exists and which four bodies are in it, then hand them to
+ * the collection page, which keeps the photograph and the full cards. The material line
+ * goes because all four share it; the heading's lede says it once.
+ */
+function Ar4IndexRow({ product, locale }: { product: Product; locale: Locale }) {
+  const localized = product as LocalizedProduct;
+  const name = t(localized, "name", locale) ?? product.name;
+  return (
+    <Link
+      href={`${locale === "en" ? "" : `/${locale}`}/products/${product.categoryPath[0]}/${product.slug}/`}
+      className="group flex items-center gap-16 border-t border-line py-16"
+    >
+      <div className="w-80 flex-none bg-surface">
+        <MediaPlaceholder {...product.heroImage} ratio="1 / 1" sizes="80px" />
+      </div>
+      <div className="min-w-0">
+        <p className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+          {dict(copy, locale).model} {product.model}
+        </p>
+        <p className="mt-4 text-c1 text-ink transition-colors duration-[var(--motion-fast)] group-hover:text-ink-secondary">
+          {name}
+        </p>
+      </div>
+    </Link>
+  );
+}
+
 export function ArgentinaAr4Showcase({
   locale = "en",
   pageHeading = false,
@@ -92,6 +130,31 @@ export function ArgentinaAr4Showcase({
      one documented exception in PORTUGUESE_MIRROR_PREFIXES — so Portuguese goes to the
      English page rather than to a /pt/ URL that does not exist. */
   const href = locale === "es" ? "/es/products/argentina-ar4/" : "/products/argentina-ar4/";
+
+  if (!pageHeading) {
+    return (
+      <section
+        className="layout"
+        aria-labelledby="argentina-ar4-heading"
+        data-content-module="argentina-ar4"
+      >
+        <div className="col-content grid w-full grid-cols gap-x">
+          <HomeSectionHeading
+            id="argentina-ar4-heading"
+            eyebrow={text.eyebrow}
+            title={text.title}
+            lede={`${text.body} ${text.shared}`}
+            action={<ArrowLink href={href}>{text.cta}</ArrowLink>}
+          />
+          <div className="col-span-full mt-32 grid grid-cols-1 gap-x-24 sm:grid-cols-2 xl:grid-cols-4">
+            {products.map((product) => (
+              <Ar4IndexRow key={product.model} product={product} locale={locale} />
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
