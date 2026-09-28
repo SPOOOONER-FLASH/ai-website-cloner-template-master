@@ -109,7 +109,7 @@
     "src/components/site/NewsDetail.tsx:42"
   ],
   "← Back to previous results": [
-    "src/components/site/ProductDetail.tsx:74"
+    "src/components/site/ProductDetail.tsx:77"
   ],
   "1 model": [
     "src/components/site/OrderCodeTables.tsx:34"
@@ -272,7 +272,7 @@
     "src/data/home.ts:217"
   ],
   "Additional product views are not yet available. Request drawings or samples from our export team.": [
-    "src/components/site/ProductDetail.tsx:78"
+    "src/components/site/ProductDetail.tsx:81"
   ],
   "Address": [
     "src/components/locale-pages/ContactPage.tsx:93"
@@ -291,7 +291,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "All product families": [
-    "src/components/site/SiteMenuDrawer.tsx:148"
+    "src/components/site/SiteMenuDrawer.tsx:150"
   ],
   "All products": [
     "src/components/site/CategoryFilter.tsx:47"
@@ -359,7 +359,7 @@
     "src/components/locale-pages/FaqPage.tsx:38"
   ],
   "Ask a technical question": [
-    "src/components/site/ProductDetail.tsx:75"
+    "src/components/site/ProductDetail.tsx:78"
   ],
   "Ask about a code": [
     "src/components/locale-pages/FinishesPage.tsx:65"
@@ -453,7 +453,7 @@
     "src/data/category-sourcing.ts:39"
   ],
   "Breadcrumb": [
-    "src/components/site/ProductDetail.tsx:70"
+    "src/components/site/ProductDetail.tsx:73"
   ],
   "Bright Chrome": [
     "src/data/finish-codes.ts:286",
@@ -483,13 +483,13 @@
     "src/data/company.ts:51"
   ],
   "Buy it now": [
-    "src/components/site/SiteHeader.tsx:387",
-    "src/components/site/SiteHeader.tsx:545",
-    "src/components/site/SiteHeader.tsx:736"
+    "src/components/site/SiteHeader.tsx:396",
+    "src/components/site/SiteHeader.tsx:554",
+    "src/components/site/SiteHeader.tsx:745"
   ],
   "Buy on Alibaba": [
     "src/components/site/SiteFooter.tsx:253",
-    "src/components/site/SiteHeader.tsx:768"
+    "src/components/site/SiteHeader.tsx:777"
   ],
   "Calculated": [
     "src/components/site/CylinderCalculator.tsx:59"
@@ -546,7 +546,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:46"
   ],
   "Catalog and verified documents": [
-    "src/components/site/SiteHeader.tsx:121"
+    "src/components/site/SiteHeader.tsx:122"
   ],
   "catalog categories": [
     "src/lib/site-facts.ts:64"
@@ -572,7 +572,7 @@
   "Certificates": [
     "src/components/site/menu-experience.ts:76",
     "src/components/site/menu-experience.ts:202",
-    "src/components/site/SiteHeader.tsx:65"
+    "src/components/site/SiteHeader.tsx:66"
   ],
   "Certificates and test reports. What is tested, and in whose name.": [
     "src/components/locale-pages/CertificationsPage.tsx:41"
@@ -581,7 +581,7 @@
     "src/components/locale-pages/CertificationsPage.tsx:13"
   ],
   "Certification scope must be checked against the named model before specification.": [
-    "src/components/site/ProductDetail.tsx:86"
+    "src/components/site/ProductDetail.tsx:89"
   ],
   "Certifications": [
     "src/components/locale-pages/CertificationsPage.tsx:33"
@@ -675,7 +675,7 @@
     "src/components/site/ProductImageZoom.tsx:58"
   ],
   "Close menu": [
-    "src/components/site/SiteMenuDrawer.tsx:93"
+    "src/components/site/SiteMenuDrawer.tsx:95"
   ],
   "Closer and hinge in one casting — no floor work, no overhead arm.": [
     "src/lib/configurator.ts:445"
@@ -714,14 +714,14 @@
     "src/components/site/InquiryForm.tsx:27",
     "src/components/site/menu-experience.ts:75",
     "src/components/site/menu-experience.ts:209",
-    "src/components/site/SiteHeader.tsx:654",
-    "src/components/site/SiteHeader.tsx:663"
+    "src/components/site/SiteHeader.tsx:663",
+    "src/components/site/SiteHeader.tsx:672"
   ],
   "Company announcements, certification news and technical notes from Canton Hyland.": [
     "src/components/site/NewsListing.tsx:19"
   ],
   "Company overview": [
-    "src/components/site/SiteHeader.tsx:62"
+    "src/components/site/SiteHeader.tsx:63"
   ],
   "Compare": [
     "src/components/locale-pages/ComparePage.tsx:61",
@@ -761,7 +761,7 @@
   "Contact": [
     "src/components/site/menu-experience.ts:214",
     "src/components/site/SiteFooter.tsx:20",
-    "src/components/site/SiteHeader.tsx:119",
+    "src/components/site/SiteHeader.tsx:120",
     "src/components/site/SiteMenuDrawer.tsx:19"
   ],
   "Contact Canton Hyland": [
@@ -815,7 +815,7 @@
     "src/components/site/SiteFooter.tsx:190"
   ],
   "Datasheets, CAD files and installation instructions are available on request while the verified download library is being prepared.": [
-    "src/components/site/ProductDetail.tsx:84"
+    "src/components/site/ProductDetail.tsx:87"
   ],
   "days minimum lead time": [
     "src/data/capability.ts:191"
@@ -1049,7 +1049,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:17"
   ],
   "Download the export catalog (PDF)": [
-    "src/components/site/ProductDetail.tsx:67"
+    "src/components/site/ProductDetail.tsx:70"
   ],
   "Download the plan sheet (XLSX)": [
     "src/data/feature-columns.ts:108"
@@ -1058,7 +1058,7 @@
     "src/components/site/menu-experience.ts:80",
     "src/components/site/menu-experience.ts:201",
     "src/components/site/ProductDetail.tsx:51",
-    "src/components/site/SiteHeader.tsx:121"
+    "src/components/site/SiteHeader.tsx:122"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
     "src/components/site/ServicesView.tsx:86"
@@ -1146,7 +1146,7 @@
   ],
   "Events": [
     "src/components/site/menu-experience.ts:213",
-    "src/components/site/SiteHeader.tsx:64"
+    "src/components/site/SiteHeader.tsx:65"
   ],
   "Every choice the configurator offers, defined. These are the trade's own definitions — what the part is and where it goes — not claims about any particular model.": [
     "src/components/site/HardwareGlossary.tsx:38"
@@ -1235,7 +1235,7 @@
     "src/components/site/ProductsEditorialOverview.tsx:23"
   ],
   "FAQ": [
-    "src/components/site/SiteHeader.tsx:120"
+    "src/components/site/SiteHeader.tsx:121"
   ],
   "Featured door hardware": [
     "src/data/home.ts:42"
@@ -1244,7 +1244,7 @@
     "src/components/site/InquiryForm.tsx:45"
   ],
   "Fifteen product families. The number is how many verified records each one holds.": [
-    "src/components/site/SiteHeader.tsx:580"
+    "src/components/site/SiteHeader.tsx:589"
   ],
   "Fill these in and send them back. Each carries a worked example — copy its pattern rather than inventing a format.": [
     "src/components/locale-pages/DownloadsPage.tsx:32"
@@ -1268,7 +1268,7 @@
     "src/components/site/ProductFinder.tsx:57"
   ],
   "Find {model} on our Alibaba storefront": [
-    "src/components/site/ProductDetail.tsx:93"
+    "src/components/site/ProductDetail.tsx:96"
   ],
   "Find a guide": [
     "src/components/site/GuideListing.tsx:15"
@@ -1327,7 +1327,7 @@
     "src/data/category-sourcing.ts:49"
   ],
   "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.": [
-    "src/components/site/ProductDetail.tsx:66"
+    "src/components/site/ProductDetail.tsx:69"
   ],
   "For a sliding leaf, where a bolt cannot travel straight out. A hook swings from the case into the keep.": [
     "src/lib/configurator.ts:415"
@@ -1484,7 +1484,7 @@
     "src/components/locale-pages/ProductPage.tsx:94",
     "src/components/locale-pages/ProductsIndexPage.tsx:34",
     "src/components/site/NewsDetail.tsx:40",
-    "src/components/site/ProductDetail.tsx:72",
+    "src/components/site/ProductDetail.tsx:75",
     "src/components/site/ProductsEditorialOverview.tsx:20",
     "src/components/site/ProjectDetail.tsx:14"
   ],
@@ -1696,7 +1696,7 @@
     "src/components/site/WelcomeIntro.tsx:17"
   ],
   "Main navigation": [
-    "src/components/site/SiteHeader.tsx:482"
+    "src/components/site/SiteHeader.tsx:491"
   ],
   "Manufactured in Zhongshan, Guangdong. Production lead time starts at 30 days from order confirmation, and we produce under our customers' own brands.": [
     "src/components/locale-pages/CollectionPage.tsx:125"
@@ -1723,7 +1723,7 @@
     "src/lib/site-facts.ts:66"
   ],
   "Manufacturing since 1998": [
-    "src/components/site/SiteHeader.tsx:62"
+    "src/components/site/SiteHeader.tsx:63"
   ],
   "Manufacturing, and where inspection visits are received.": [
     "src/components/locale-pages/ContactPage.tsx:94"
@@ -1762,16 +1762,20 @@
     "src/components/site/ProductsEditorialOverview.tsx:29"
   ],
   "Meet HYDE in global markets": [
-    "src/components/site/SiteHeader.tsx:64"
+    "src/components/site/SiteHeader.tsx:65"
   ],
   "Minimum order quantity, production lead time, sample policy, payment terms and OEM work — answered in full.": [
     "src/components/site/ProductDetail.tsx:58"
   ],
   "Minimum order, lead time, samples, payment, OEM": [
-    "src/components/site/SiteHeader.tsx:120"
+    "src/components/site/SiteHeader.tsx:121"
   ],
   "Model": [
     "src/components/site/ProductCard.tsx:92"
+  ],
+  "Model code to be confirmed": [
+    "src/components/site/ProductCard.tsx:91",
+    "src/components/site/ProductDetail.tsx:66"
   ],
   "Model lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:28",
@@ -1820,10 +1824,10 @@
     "src/components/site/ProductFinder.tsx:58"
   ],
   "More in {category}": [
-    "src/components/site/ProductDetail.tsx:91"
+    "src/components/site/ProductDetail.tsx:94"
   ],
   "More in the {series} series": [
-    "src/components/site/ProductDetail.tsx:90"
+    "src/components/site/ProductDetail.tsx:93"
   ],
   "More links": [
     "src/components/site/WelcomeIntro.tsx:19"
@@ -1937,7 +1941,7 @@
     "src/components/site/ConfiguratorTeaser.tsx:38"
   ],
   "No product-specific certificate is published for this model. Company credentials remain available through the export team.": [
-    "src/components/site/ProductDetail.tsx:82"
+    "src/components/site/ProductDetail.tsx:85"
   ],
   "No releases published yet.": [
     "src/components/site/NewsListing.tsx:20"
@@ -1991,7 +1995,7 @@
     "src/components/locale-pages/SimplePages.tsx:28"
   ],
   "OEM tooling, private label, export": [
-    "src/components/site/SiteHeader.tsx:63"
+    "src/components/site/SiteHeader.tsx:64"
   ],
   "OEM, private label and everything else": [
     "src/components/locale-pages/ContactPage.tsx:24"
@@ -2049,7 +2053,7 @@
     "src/components/site/ProductDrawing.tsx:77"
   ],
   "Open menu": [
-    "src/components/site/SiteHeader.tsx:448"
+    "src/components/site/SiteHeader.tsx:457"
   ],
   "Open original image": [
     "src/components/site/GuideCover.tsx:16"
@@ -2079,13 +2083,13 @@
     "src/components/site/products-architecture.ts:168"
   ],
   "Opens our storefront already searched for this model — trade assurance, tiered pricing and order tracking are handled there.": [
-    "src/components/site/ProductDetail.tsx:96"
+    "src/components/site/ProductDetail.tsx:99"
   ],
   "Opens this model's listing, with current pricing, MOQ and lead time.": [
-    "src/components/site/ProductDetail.tsx:94"
+    "src/components/site/ProductDetail.tsx:97"
   ],
   "Or email us about this model:": [
-    "src/components/site/ProductDetail.tsx:71"
+    "src/components/site/ProductDetail.tsx:74"
   ],
   "Or start from our catalog": [
     "src/components/site/ServicesView.tsx:45"
@@ -2094,7 +2098,7 @@
     "src/components/site/CompanyOverview.tsx:41"
   ],
   "Order {model} on Alibaba": [
-    "src/components/site/ProductDetail.tsx:92"
+    "src/components/site/ProductDetail.tsx:95"
   ],
   "Order codes": [
     "src/components/locale-pages/FinishesPage.tsx:26",
@@ -2280,13 +2284,13 @@
     "src/components/site/menu-experience.ts:192",
     "src/components/site/menu-experience.ts:220",
     "src/components/site/ProductStudies.tsx:47",
-    "src/components/site/SiteHeader.tsx:587"
+    "src/components/site/SiteHeader.tsx:596"
   ],
   "Product Finder — {count} Door Hardware Models": [
     "src/components/locale-pages/ProductFinderPage.tsx:21"
   ],
   "Product images": [
-    "src/components/site/ProductDetail.tsx:68"
+    "src/components/site/ProductDetail.tsx:71"
   ],
   "Product pages": [
     "src/components/site/CategoryFilter.tsx:51",
@@ -2313,10 +2317,10 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:35",
     "src/components/site/menu-experience.ts:67",
     "src/components/site/menu-experience.ts:191",
-    "src/components/site/ProductDetail.tsx:73",
+    "src/components/site/ProductDetail.tsx:76",
     "src/components/site/ProductsEditorialOverview.tsx:21",
-    "src/components/site/SiteHeader.tsx:568",
-    "src/components/site/SiteHeader.tsx:577"
+    "src/components/site/SiteHeader.tsx:577",
+    "src/components/site/SiteHeader.tsx:586"
   ],
   "Products — Door Hardware Catalog": [
     "src/components/locale-pages/ProductsIndexPage.tsx:18"
@@ -2334,7 +2338,7 @@
     "src/data/hardware-terms.ts:154"
   ],
   "Projects + Applications": [
-    "src/components/site/ProductDetail.tsx:88",
+    "src/components/site/ProductDetail.tsx:91",
     "src/components/site/ProjectDetail.tsx:15"
   ],
   "Public-building corridor with glazed partitions and fire-egress doors": [
@@ -2380,7 +2384,7 @@
     "src/components/site/ServicesView.tsx:92"
   ],
   "Quotes, pricing and export specialists": [
-    "src/components/site/SiteHeader.tsx:119"
+    "src/components/site/SiteHeader.tsx:120"
   ],
   "Range": [
     "src/components/site/products-architecture.ts:116"
@@ -2409,10 +2413,6 @@
     "src/components/locale-pages/GlossaryPage.tsx:30",
     "src/components/locale-pages/ModelLookupPage.tsx:31"
   ],
-  "Reference available on request": [
-    "src/components/site/ProductCard.tsx:91",
-    "src/components/site/ProductDetail.tsx:63"
-  ],
   "Reference pages for hardware decisions: euro cylinder charts, EN to ANSI/BHMA cross-references, finish code tables and what each standard covers.": [
     "src/components/locale-pages/ArticlePages.tsx:36"
   ],
@@ -2421,7 +2421,7 @@
     "src/components/site/NewsDetail.tsx:321"
   ],
   "Related products": [
-    "src/components/site/ProductDetail.tsx:87",
+    "src/components/site/ProductDetail.tsx:90",
     "src/components/site/ProjectDetail.tsx:20"
   ],
   "Renamed records": [
@@ -2434,7 +2434,7 @@
     "src/components/site/InquiryForm.tsx:38"
   ],
   "Representative application": [
-    "src/components/site/ProductDetail.tsx:89",
+    "src/components/site/ProductDetail.tsx:92",
     "src/components/site/ProjectDetail.tsx:16"
   ],
   "Representative architectural entrance combining glass, metal and coordinated door hardware": [
@@ -2459,7 +2459,7 @@
     "src/data/home.ts:137"
   ],
   "Request a quote": [
-    "src/components/site/ProductDetail.tsx:64"
+    "src/components/site/ProductDetail.tsx:67"
   ],
   "Request a quote for this configuration": [
     "src/components/site/Configurator.tsx:72"
@@ -2475,9 +2475,9 @@
     "src/components/site/InquiryForm.tsx:35"
   ],
   "Resources": [
-    "src/components/site/SiteHeader.tsx:365",
-    "src/components/site/SiteHeader.tsx:693",
-    "src/components/site/SiteHeader.tsx:702"
+    "src/components/site/SiteHeader.tsx:374",
+    "src/components/site/SiteHeader.tsx:702",
+    "src/components/site/SiteHeader.tsx:711"
   ],
   "Retired catalog paths": [
     "src/components/site/ModelLookup.tsx:89"
@@ -2520,7 +2520,7 @@
   ],
   "Search": [
     "src/components/site/ProductFinder.tsx:55",
-    "src/components/site/SiteHeader.tsx:435"
+    "src/components/site/SiteHeader.tsx:444"
   ],
   "Search and filter all models": [
     "src/components/site/FinderModeSwitch.tsx:43"
@@ -2651,7 +2651,7 @@
     "src/components/site/menu-experience.ts:81",
     "src/components/site/menu-experience.ts:200",
     "src/components/site/ServicesView.tsx:40",
-    "src/components/site/SiteHeader.tsx:63"
+    "src/components/site/SiteHeader.tsx:64"
   ],
   "Set includes": [
     "src/lib/flagship-tooling.ts:54"
@@ -2663,7 +2663,7 @@
     "src/components/site/ProductStudies.tsx:58"
   ],
   "Short answers to what buyers ask": [
-    "src/components/site/SiteHeader.tsx:94"
+    "src/components/site/SiteHeader.tsx:95"
   ],
   "Showing {count} published products. Filters for backset, center distance and door thickness arrive with the full technical catalog; until then, each product page lists the figures it has.": [
     "src/components/locale-pages/ProductFinderPage.tsx:68"
@@ -2681,7 +2681,7 @@
     "src/data/finish-codes.ts:536"
   ],
   "Size charts, standards and selection references": [
-    "src/components/site/SiteHeader.tsx:93"
+    "src/components/site/SiteHeader.tsx:94"
   ],
   "sliding hook lock": [
     "src/data/category-sourcing.ts:47"
@@ -2702,7 +2702,7 @@
     "src/components/site/DataTable.tsx:12"
   ],
   "Specification routes": [
-    "src/components/site/SiteMenuDrawer.tsx:100"
+    "src/components/site/SiteMenuDrawer.tsx:102"
   ],
   "Specifications as a spreadsheet": [
     "src/components/site/DocumentInventory.tsx:84"
@@ -2901,7 +2901,7 @@
     "src/components/site/CompanyOverview.tsx:27"
   ],
   "The factory, markets and technical support behind HYDE.": [
-    "src/components/site/SiteHeader.tsx:666"
+    "src/components/site/SiteHeader.tsx:675"
   ],
   "The first handshake a building gives. Lever sets in stainless steel, brass and matte black.": [
     "src/components/site/products-architecture.ts:34"
@@ -3141,10 +3141,10 @@
     "src/components/site/products-architecture.ts:174"
   ],
   "Verified dimensions are pending the current technical catalog. No values have been inferred from similar products.": [
-    "src/components/site/ProductDetail.tsx:80"
+    "src/components/site/ProductDetail.tsx:83"
   ],
   "Verified model-scoped reports": [
-    "src/components/site/SiteHeader.tsx:65"
+    "src/components/site/SiteHeader.tsx:66"
   ],
   "verified product records": [
     "src/lib/site-facts.ts:63"
@@ -3159,7 +3159,7 @@
     "src/components/site/ProductCard.tsx:94"
   ],
   "View certificate": [
-    "src/components/site/ProductDetail.tsx:76"
+    "src/components/site/ProductDetail.tsx:79"
   ],
   "View lever handles": [
     "src/data/home.ts:32"
@@ -3186,7 +3186,7 @@
     "src/data/home.ts:28"
   ],
   "Watch it work": [
-    "src/components/site/ProductDetail.tsx:69"
+    "src/components/site/ProductDetail.tsx:72"
   ],
   "We are the factory, not a trading office in front of one. Everything below happens on our own floor, from the mould to the carton — which is why a change of finish or a customer's own drawing is a scheduling question here rather than a subcontracting one.": [
     "src/data/capability.ts:211"
@@ -3243,7 +3243,7 @@
     "src/lib/product-faq.ts:126"
   ],
   "What each building type takes": [
-    "src/components/site/SiteHeader.tsx:92"
+    "src/components/site/SiteHeader.tsx:93"
   ],
   "What function does the {m} provide?": [
     "src/lib/product-faq.ts:135"
@@ -3295,7 +3295,7 @@
     "src/data/home.ts:115"
   ],
   "Where the products are used, how to specify them, and what buyers ask.": [
-    "src/components/site/SiteHeader.tsx:705"
+    "src/components/site/SiteHeader.tsx:714"
   ],
   "Where we are": [
     "src/components/site/CompanyOverview.tsx:26"

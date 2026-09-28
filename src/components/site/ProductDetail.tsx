@@ -60,7 +60,10 @@ const COPY = {
     finishes: "Available finishes",
     doorTypes: "Suitable door types",
     onRequest: "Information available on request",
-    referenceOnRequest: "Reference available on request",
+    /* Was "Reference available on request": it promised a reference we do not have. The
+       factory code for these 13 records is unknown, and saying so is the honest version
+       (monthly audit 09-28; Gemini's "placeholder text AI will not cite"). */
+    referenceOnRequest: "Model code to be confirmed",
         quote: "Request a quote",
     quoteNeeds:
       "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.",
@@ -112,7 +115,7 @@ const COPY = {
     finishes: "Acabados disponibles",
     doorTypes: "Tipos de puerta compatibles",
     onRequest: "Información disponible a pedido",
-    referenceOnRequest: "Referencia disponible a pedido",
+    referenceOnRequest: "Código de modelo por confirmar",
         quote: "Solicitar cotización",
     quoteNeeds:
       "Para cotizar, envíenos el modelo y el acabado, la cantidad, el país de destino y un plano o una foto de lo que quiera cambiar.",
@@ -165,7 +168,7 @@ const COPY = {
     finishes: "Acabamentos disponíveis",
     doorTypes: "Tipos de porta compatíveis",
     onRequest: "Informação disponível mediante pedido",
-    referenceOnRequest: "Referência disponível mediante pedido",
+    referenceOnRequest: "Código do modelo a confirmar",
         quote: "Pedir orçamento",
     quoteNeeds:
       "Para cotar, envie o modelo e o acabamento, a quantidade, o país de destino e um desenho ou uma foto do que quiser alterar.",

@@ -29,3 +29,8 @@
 
 - `JsonLd.tsx` `websiteSchema().inLanguage` 原为 `["en","es"]`，改为从 `locales` 生成的 10 个语种（pt 用 pt-BR）。
 - `llms.txt` 的「over thirty markets」在 09-24 已从 FAQ 删掉（无法核实），这里漏改；改为甲方给的出口地区：欧洲、北美、南美、土耳其、东南亚。`generate-product-seo.mjs` 里同句的两条模板一并删掉（内容里已无残留）。
+
+## 追加：#81 型号未确认的 13 条记录
+
+产品页和产品卡片原写「Reference available on request」，等于承诺能给出型号，但工厂型号我们并不知道。改为如实的「Model code to be confirmed」，十个语种（es/pt 在组件里，另外 7 种写进 ui.json，并用 `npm run i18n:keys` 重新生成客户端译文表）。
+「Information available on request」那条兜底实际不会显示：uncoveredFacts 已经过滤掉空值，所以没改。
