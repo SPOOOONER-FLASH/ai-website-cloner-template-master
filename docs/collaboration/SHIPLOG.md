@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 633 次提交
+最近 30 天 · 共 635 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 21:27 | 中立 | 菜单：关闭后焦点回退与 Esc 不再依赖 requestAnimationFrame（0 帧环境实测） | `b5f370fef08` |
+| 21:15 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 c0fa19785c5 | `d07288940d8` |
 | 21:18 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `1ebadeb00e3` |
 | 21:17 | 中立 | 三条记录的材质与自己的图纸说明矛盾：清空而不是猜；工厂待填表加第四节 | `56e92744123` |
 | 21:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `dddfc89a1e8` |
