@@ -40,6 +40,10 @@ export interface SiteSettings {
     technicalEmail?: string;
     /** The brand mailbox, shown on the company page. Optional. */
     brandEmail?: string;
+    /** WhatsApp number in international format (client 2026-09-28). Optional. */
+    whatsapp?: string;
+    /** Who reads each mailbox, keyed by address (client 2026-09-28): a name, not a queue. */
+    mailboxOwners?: Record<string, string>;
     phone: string;
     address: string;
     city: string;
@@ -122,3 +126,14 @@ export function navLabel(link: NavLink, locale: Locale): string {
  * there.
  */
 export { localisedHref };
+
+/** wa.me link for the configured WhatsApp number, or undefined when there is none. */
+export function whatsappHref(number = siteSettings.contact.whatsapp): string | undefined {
+  const digits = number?.replace(/\D/g, "");
+  return digits ? `https://wa.me/${digits}` : undefined;
+}
+
+/** The person who reads a mailbox, when the client has named one. */
+export function mailboxOwner(address: string): string | undefined {
+  return siteSettings.contact.mailboxOwners?.[address];
+}

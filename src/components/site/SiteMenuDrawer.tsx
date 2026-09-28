@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import type { MenuCategory } from "@/data/categories";
 import type { Locale } from "@/data/locales";
-import { siteSettings } from "@/data/navigation";
+import { siteSettings, whatsappHref } from "@/data/navigation";
 import { socialLinks } from "@/data/site";
 import { CloseIcon, Wordmark } from "./icons";
 import { EmailLink } from "./EmailLink";
@@ -84,6 +84,8 @@ export function SiteMenuDrawer({ locale, state = "open", currentPath, categories
     <p className={styles.promise}>{experience.exportPromise}</p>
     {siteSettings.contact.email ? <EmailLink address={siteSettings.contact.email}
       className="short-marker inline-block break-all text-c1 text-ink" /> : null}
+    {whatsappHref() ? <a href={whatsappHref()} target="_blank" rel="noopener noreferrer"
+      className="short-marker mt-8 inline-block text-c1 text-ink">WhatsApp {siteSettings.contact.whatsapp}</a> : null}
   </div>;
 
   return <div className="overlay-presence fixed inset-0 z-50" data-state={state}>
