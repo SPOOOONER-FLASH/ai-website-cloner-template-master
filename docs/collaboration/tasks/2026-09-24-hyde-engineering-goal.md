@@ -19,7 +19,7 @@
 | 11 | 发给 Hyde 文案：finishes / glossary / model-lookup / documents 的 H1 不含搜索词，给出建议写法 | 09-24 完成（建议已发 Hyde 文案，由其改页面文字） |
 | 12 | 同句出现 pestillo/cerrojo（葡语 trinco/lingueta）就报错的规则 + picaporte → pestillo | 09-24 完成（规则启用，13 处自动转换，0 冲突；葡语见 #24） |
 | 13 | 10 个产品名字太长放不下长尾词 | 等待（改名归文案/规格会话） |
-| 14 | 服务器装跳转规则（ANSI 网址 301） | 待甲方（手册 ③） |
+| 14 | 服务器装跳转规则（ANSI 网址 301） | 09-25 完成（cron 自动安装跳转规则，见 #58；09-28 核查更正） |
 | 15 | GA4 登记自定义维度 | 待甲方（手册 ②） |
 | 16 | 隐私政策页内容 | 待甲方 |
 | 17 | 路由收敛为 `[locale]`、构建产物不进 git | 待甲方 |
@@ -27,7 +27,7 @@
 | 20 | 西葡 services 路由（/es/services、/pt/services：hreflang、前缀、locale-route-parity），建好通知 Hyde 文案写西葡文案 | 09-24 完成（/es/services、/pt/services 上线待发布；镜像、菜单、测试已改；西葡标题 OEM / marca propia 领头） |
 | 21 | 8827、8828 是空壳重复页（无规格，主图与 8827 SSET / 8828 SSET 相同）：301 到 SSET 款 | 09-24 完成（并入 SSET，两张装门图随迁，productMerges 301；计数句交文案会话） |
 | 22 | HY006 应用字段写着「KFC 锁体」，他人商标，删掉 | 09-24 完成（三语去商标名，保留用途） |
-| 23 | 559 画集 5 张带 STAHLOCK 水印的图（已撤下）是否可用 | 待甲方 |
+| 23 | 559 画集 5 张带 STAHLOCK 水印的图（已撤下）是否可用 | 已改方向（甲方：STAHLOCK 是子品牌，其图片不用、不动；09-28 核查更正） |
 | 24 | 葡语 trinco / lingueta 用法相反：术语表 Deadbolt=Trinco、Latch=Lingueta，文章里 trinco 指斜舌。要一个像 D1 的决定 | 待甲方 |
 | 25 | HYDE 发布本轮（services 三语、8827/8828 合并、picaporte、alt、锚文本、比较页标题），上线后实测 | 09-24 完成（336102c786c 上线；/es/services、/pt/services 与 hreflang、比较页与联系页新标题实测） |
 | 26 | 新文章 double-fire-exit-door-hardware-set 的三语 SEO 字段（Hyde 文案草稿） | 09-24 完成（标题带「with Panic Bars」买家原话，描述收进 150） |
@@ -58,12 +58,12 @@
 | 51 | Cloudflare Security Insights / AI 抓取报告（甲方 09-25）：security.txt 上线、改名视频 18 条 301、mail CNAME 不代理（网易企业邮箱）、MFA 与 Archive 写进手册 ⑥、AI 抓取数据进看板 | 09-25 完成（源码；随下一次发布上线） |
 | 52 | 七语种产品 seoTitle / seoDescription（#45）：多语言会话 M1–M4 已给出 glossary 与 categories | 09-25 完成（3,647 条：7 语 × 521；只写 seoTitle / seoDescription；--check 覆盖七语种） |
 | 53 | 视频不在观看页面上（97 个，09-24 验证失败）：建 /video/<slug>/ 观看页与 /video/ 目录，VideoObject 和 sitemap 视频条目移到观看页 | 09-25 完成（源码） |
-| 54 | HYDE 发布（#51 #53，排在发布会话的 M1 之后），上线后实测观看页与视频跳转 | 等待（发布会话的七语种 M1 发布进行中；发完由它或我接着发，含 #51 #53 #55–#57） |
+| 54 | HYDE 发布（#51 #53，排在发布会话的 M1 之后），上线后实测观看页与视频跳转 | 09-25 完成（/video/ 线上 200；09-28 核查更正） |
 | 55 | DS011 移门吸子类 | 09-25 完成 |
-| 56 | DSL02、DC01（闭门顺序器）、HY-0SS（锁舌护板）改名、改 slug、301、移类、重跑标题 | 等待（文案会话定三语名） |
+| 56 | DSL02、DC01（闭门顺序器）、HY-0SS（锁舌护板）改名、改 slug、301、移类、重跑标题 | 09-25 完成（3f729ee4850；09-28 核查更正） |
 | 57 | 英文规格值错误（BH01 500m、DS05 ф、DV05/06 多 N、AR4-1121 背距、Electroplatingbhgh、LC9045 疑似写反） | 等待（已转规格会话；LC9045 问工厂） |
 | 58 | cron 自动安装跳转规则实测：09-25 推送 18 条视频跳转后，未经人工，/videos/products/026-panic-exit-device.mp4 已 301 到 -trim | 09-25 完成 |
-| 59 | HY-0SS 七语种译文（多语言会话本地已合入，排在指南第二批之后推送）推上来后，重跑 hy-0ss-latch-guard 的七语种标题 | 等待（多语言会话推送） |
+| 59 | HY-0SS 七语种译文（多语言会话本地已合入，排在指南第二批之后推送）推上来后，重跑 hy-0ss-latch-guard 的七语种标题 | 完成（七语种 seoTitle 已在 content/i18n/*/products.json；09-28 核查更正） |
 | 60 | 首页排版崩（甲方 09-25）：M1 的 compactNavigation display:block 覆盖 .layout 网格，1376–1599px 导航无边距；改 grid | 09-26 完成（线上实测） |
 | 61 | 甲方在 Search Console 视频索引报告点「验证修正」，观看页被抓取后复查已编入索引数 | 待甲方 |
 | 62 | Bing SEO 报告（09-26）：5 篇指南「不在 sitemap」实际在（14 MB sitemap 读不完）→ /sitemap.xml 只放英文，语种 sitemap 各自一份；audit-seo 改读 robots.txt 声明的全部 sitemap；2 个 index.php 缺 description 实为 301；修 M8 留下的 3 个测试 | 09-26 完成（c57f1a6b88f 上线实测：/sitemap.xml 1.55 MB、881 个网址、含那 5 篇指南；9 个语种 sitemap 各 681 个网址、内容各自独立；robots.txt 列出 10 个） |
@@ -81,12 +81,12 @@
 | 76 | 甲方 09-27：Applications / Guides / News 合并成一个导航栏目（新名），鼠标移上去向下弹出这三项，10 语种 | 09-27 完成（Resources 下拉；本地实测） |
 | 77 | 甲方 09-27「推送上线」：#74 页头、#76 Resources 下拉等源码已推，需 release:hyde（本机构建崩溃，请发布会话发布），上线后线上实测 + IndexNow | 等待（发布会话 r8 发布中，从 cc64fd8ad65） |
 | 78 | 甲方 09-27：9 月 HYDE 全部指令核查（所有会话 + 远端 md），逐条打勾/说明原因，出月度工作总结 docx 供下载 | 09-28 完成（Desktop\hyde\HYDE-月度工作总结-2026-08-31_2026-09-28.docx；459 条网站指令，330 完成） |
-| 79 | 核查遗留（工程线）：目标清单 #14 #54 #56 #59 #67 #23 状态与实际不符 → 改正；runbook ④⑤ 已完成移出第一屏并出 Word | 待做 |
+| 79 | 核查遗留（工程线）：目标清单 #14 #54 #56 #59 #67 #23 状态与实际不符 → 改正；runbook ④⑤ 已完成移出第一屏并出 Word | 09-28 完成（6 行更正；runbook ③④⑤ 存档，⑥⑦ 前提已满足；Word 已重出） |
 | 80 | 核查遗留：JSON-LD WebSite.inLanguage 只列 en/es（实为 10 语种）；llms.txt「over thirty markets」与 FAQ 矛盾 | 09-28 完成（inLanguage 列 10 语种；llms.txt 改为甲方给的出口地区） |
 | 81 | 核查遗留：无型号产品仍显示「Reference/Available on request」（如 stainless-steel-lever-handle-lock），改成如实说明缺什么、怎么问 | 待做 |
 | 82 | 核查遗留：HowTo 结构化数据（安装/测量类文章，如 fitting-a-euro-cylinder） | 待做 |
 | 83 | 核查遗留：产品图一致性审计脚本（主体占比、基线），列出不合规图交视觉会话 | 待做 |
 | 84 | 核查遗留：每周复测（Clarity 排名 / GSC 摘要）记录进 agent-updates；10-08 前后复查标题点击率 | 等待（日期：首次 10-03 周五） |
-| 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 等待（视觉会话） |
+| 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
