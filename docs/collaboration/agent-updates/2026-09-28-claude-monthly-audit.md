@@ -42,3 +42,12 @@
 新增测试 `src/data/howto.test.ts`：凡是带 HowTo 的文章，正文必须是逐步写法，而且至少 3 步。
 本地核对：英文页 HowTo 6 步；西语页没有；其他文章没有。#80（WebSite 10 个语种）和 #81（Model code to be confirmed）也在同一次核对里确认。
 Google 自 2023 年起不再展示 HowTo 富摘要，这次加主要是给 AI 引擎读。
+
+## 追加：r8 由本机发布（目标 #85）
+
+发布会话推 r8（46,188 个文件）连续 5 次失败，都是 GitHub 408 或断线。甲方改由本机（John）推送。
+本机从最新 origin/main（1dd053acc18）重建，这次没有崩（以前约 9k 页处报过 0xC0000409）：8,869 页全部生成，无中文检查和译文检查都通过。
+`release:hyde` 整体推送一次成功：**c11fb7f4d59**，46,267 个文件，只动了 out/。
+包含的改动：页头修复与 Resources 下拉、10 语种声明、型号待确认、HowTo、46 张主图（02f1ea41f72）、浮层动效（66af62aae32）。
+分批推送脚本 `scripts/chunk-push-release.mjs`（afe60824f65）这次没用上，留作备用。
+线上实测和 IndexNow 要等甲方 purge。
