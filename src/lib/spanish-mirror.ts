@@ -169,6 +169,8 @@ export function hasOverlayMirror(enPath: string): boolean {
  */
 export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<string, readonly Locale[]>([
   ["/bau-2027", ["en", "de"]],
+  /* The privacy notice (2026-09-28): German because the BAU form collects data from German visitors. */
+  ["/privacy", ["en", "de"]],
 ]);
 
 /** The locales a partial route exists in, or null for an ordinary path. */

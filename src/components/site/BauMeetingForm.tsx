@@ -6,6 +6,7 @@ import type { BauCopy, BauLocale } from "@/data/bau-2027";
 import { submitInquiry } from "@/lib/inquiry-submit";
 import { trackLead } from "@/lib/analytics-events";
 import { Button } from "./Button";
+import { PrivacyNote } from "./PrivacyNote";
 
 const FIELD_CLASS =
   "field min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink placeholder:text-ink-secondary";
@@ -130,9 +131,15 @@ export function BauMeetingForm({
 
       <fieldset className="space-y-8">
         <legend className="mb-8 text-c2 text-ink">{copy.day}</legend>
-        <div className="flex flex-wrap gap-8">
+        {/*
+          Days as a grid of equal cells, not wrapped chips: in the 4-of-12 sidebar the German
+          labels ("Donnerstag, 14. Januar") broke inside their chips and the five days ran to
+          three ragged rows (client, 2026-09-28). Two columns where the column is wide enough,
+          one in the sidebar below 1512px, and never a line break inside a label.
+        */}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-1 2xl:grid-cols-2">
           {copy.days.map((day) => (
-            <label key={day} className={CHOICE_CLASS}>
+            <label key={day} className={`${CHOICE_CLASS} whitespace-nowrap text-center`}>
               <input type="radio" name="day" value={day} className="sr-only" />
               {day}
             </label>
@@ -174,6 +181,7 @@ export function BauMeetingForm({
           {status === "submitting" ? system.sending : copy.submit}
         </Button>
         <p className="text-c2 text-ink-secondary">{copy.privacy}</p>
+        <PrivacyNote locale={locale} />
         {status === "error" ? (
           <p role="alert" className="text-c2 text-ink">
             {system.failure}{" "}

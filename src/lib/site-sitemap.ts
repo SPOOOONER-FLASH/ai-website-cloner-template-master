@@ -151,6 +151,8 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     ...entry("/events", PRIORITY.section, "monthly"),
     /* BAU 2027 column, English and German only (PARTIAL_ROUTES). */
     ...entry("/bau-2027", PRIORITY.section, "weekly"),
+    /* Privacy notice, English and German only (PARTIAL_ROUTES). */
+    ...entry("/privacy", PRIORITY.support),
     // Both of these answer questions buyers actually search, and /faq already emits
     // FAQPage structured data — leaving them out of the sitemap wasted that.
     ...entry("/faq", PRIORITY.support),

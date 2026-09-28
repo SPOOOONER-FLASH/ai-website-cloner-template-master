@@ -11,24 +11,24 @@ import { ArrowLink } from "./ArrowLink";
 import { EmailLink } from "./EmailLink";
 
 /**
- * Imprint and Privacy Notice have no route in the plan yet — they are legal pages,
- * not part of P2's six. They point at /company until someone writes them.
+ * Imprint has no route yet and points at /company until someone writes it. The privacy
+ * notice is /privacy (English and German only), so Spanish and Portuguese link the English page.
  */
 const LEGAL_LINKS = {
   en: [
     { label: "Imprint", href: "/company" },
     { label: "Contact", href: "/contact" },
-    { label: "Privacy Notice", href: "/company" },
+    { label: "Privacy Notice", href: "/privacy" },
   ],
   es: [
     { label: "Aviso legal", href: "/es/company" },
     { label: "Contacto", href: "/es/contact" },
-    { label: "Privacidad", href: "/es/company" },
+    { label: "Privacidad", href: "/privacy" },
   ],
   pt: [
     { label: "Informações legais", href: "/pt/company" },
     { label: "Contato", href: "/pt/contact" },
-    { label: "Privacidade", href: "/pt/company" },
+    { label: "Privacidade", href: "/privacy" },
   ],
 } as const;
 

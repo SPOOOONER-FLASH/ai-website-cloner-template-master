@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "./Button";
+import { PrivacyNote } from "./PrivacyNote";
 
 /**
  * A short form that trades a business contact for a document.
@@ -129,6 +130,7 @@ export function AssetRequestForm({
             {message}
           </p>
         ) : null}
+        <PrivacyNote className="mt-16" />
       </div>
     </form>
   );

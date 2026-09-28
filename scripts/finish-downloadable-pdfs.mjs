@@ -24,7 +24,7 @@
  */
 
 import { execFileSync } from "node:child_process";
-import { existsSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const DIR = "public/downloads";
@@ -41,6 +41,34 @@ if (!targets.length) {
   console.log("public/downloads 里没有需要处理的 PDF。");
   process.exit(0);
 }
+
+/*
+ * --check 不需要 Python。
+ *
+ * 2026-09-28：CI（ubuntu）上根本没有 `py` —— 那是 Windows 的 Python 启动器 —— 也没有装
+ * pymupdf。execFileSync 抛出 ENOENT，表格一行都没打，却报「有 PDF 的阅读器版式未设置」，
+ * 于是 main 上每一次 CI 都红，而三本 PDF 其实都设置好了。一个跑不起来的检查冒充成了一个
+ * 内容问题。
+ *
+ * 检查只需要确认目录字典里有这两项，直接读字节即可：saveIncr 把新的 /Catalog 以明文
+ * 追加在文件末尾，所以这两个记号存在就是已设置；若将来被压进对象流里读不到，检查会失败
+ * —— 宁可误报，不可漏报。写入仍然交给 pymupdf。
+ */
+if (CHECK) {
+  const stale = targets.filter((f) => {
+    const bytes = readFileSync(join(DIR, f)).toString("latin1");
+    return !/\/PageLayout\s*\/TwoPageRight\b/.test(bytes) || !/\/PageMode\s*\/UseOutlines\b/.test(bytes);
+  });
+  for (const f of targets) console.log(f.padEnd(42), stale.includes(f) ? "← 待处理" : "TwoPageRight · UseOutlines");
+  if (stale.length) {
+    console.error("\n有 PDF 的阅读器版式未设置。运行: node scripts/finish-downloadable-pdfs.mjs");
+    process.exit(1);
+  }
+  process.exit(0);
+}
+
+// `py` 是 Windows 的启动器；其他系统用 python3。
+const PYTHON = process.platform === "win32" ? "py" : "python3";
 
 const py = `
 import sys, pymupdf
@@ -69,7 +97,7 @@ sys.exit(1 if stale else 0)
 let out = "";
 let failed = false;
 try {
-  out = execFileSync("py", ["-c", py, ...targets.map((f) => join(DIR, f))], {
+  out = execFileSync(PYTHON, ["-c", py, ...targets.map((f) => join(DIR, f))], {
     encoding: "utf8",
   });
 } catch (error) {

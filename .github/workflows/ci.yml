@@ -58,5 +58,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Same order as `npm run deploy:prep`. The build renders the legacy product URLs
+      # (buildableLegacyProductParams) as redirect stubs carrying Next's error mark; the
+      # release deletes them because nginx 301s those URLs first. Without this step the
+      # --check in test:export fails on pages no release would ever ship.
+      - name: Prune stale exports
+        run: node scripts/prune-stale-exports.mjs --write
+
       - name: Verify the fresh static export
         run: npm run test:export
