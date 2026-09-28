@@ -9,8 +9,6 @@
 的调查，成本是几千 token 加一次停工 —— 2026-08-31 Codex 就为此中断过一次展会任务。
 
 ## 正在进行
-> **HYDE 发布只在 johns 机器上做（甲方 2026-09-28）。** 09-28 04:57 有会话在 E:/cantonlock-hyde 自己跑了 release:hyde（02d8236a7d0），漏掉 3 个待发布提交并让正式发布冲突。现在 `scripts/release-site.mjs --site hyde` 在别的机器上会直接拒绝。推完源码，给「HYDE工程交接配置」会话发一句：源码已推：<hash>，要发布。
-
 > Claude 多语种 2026-09-25（二）：七语种由落地站升为**全栈镜像**（M1 底座，746 页 × 7），源码已推；**发布棒在发布会话**，请其跑 `npm run release:hyde -- --root E:/release`。进度看板 `docs/collaboration/LOCALE-MIRROR-STATUS.md`。
 
 
