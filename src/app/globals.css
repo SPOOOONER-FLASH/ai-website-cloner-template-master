@@ -22,6 +22,9 @@
 */
 @source not "../../out";
 @source not "../../out-rayen";
+/* npm run ship merges in a side checkout under tmp/ (its own git root, so the Tailwind
+   scanner walked its 46k exported pages and the PostCSS loader timed out, 2026-09-28). */
+@source not "../../tmp";
 
 /* ---------------------------------------------------------------------------
  * Foundation for the Canton Hyland prototype
