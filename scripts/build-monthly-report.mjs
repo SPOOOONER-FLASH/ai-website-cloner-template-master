@@ -23,7 +23,7 @@
  *
  * Run: node scripts/build-monthly-report.mjs --from 2026-08-31 --to 2026-09-28
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const arg = (n, d) => {
@@ -35,6 +35,9 @@ const FROM = arg("--from", "2026-08-31");
 const TO = arg("--to", "2026-09-28");
 const NAME = arg("--name", `HYDE-月度工作总结-${FROM}_${TO}`);
 const OUTDIR = "docs/collaboration/reports";
+/* A hand-written conclusion (what to do, who is waiting on whom). Judgment, so it is a file
+   beside the report rather than something this script pretends to compute. */
+const INTRO = join(OUTDIR, `${NAME}-导语.md`);
 
 const load = (f) => (existsSync(join(IN, f)) ? JSON.parse(readFileSync(join(IN, f), "utf8")) : []);
 const SOURCES = [
@@ -69,8 +72,18 @@ const overlap = (a, b) => {
   return n / Math.min(a.size, b.size);
 };
 
+/*
+  audit-final-*.json, when present, are the per-area consolidations of the raw rows (a reader
+  merged instructions that the sources phrase differently — "GTM 装不上" in chat, "#44 GTM"
+  in a goal list, "GTM Preview" in a report). Text overlap alone merged 706 rows only to 654.
+  Consolidated rows carry their own `sources` array and are taken as they are.
+*/
+const finals = existsSync(IN)
+  ? readdirSync(IN).filter((f) => /^audit-final-.*\.json$/.test(f)).flatMap((f) => load(f))
+  : [];
+
 const raw = [];
-for (const [file, label] of SOURCES) {
+for (const [file, label] of finals.length ? [] : SOURCES) {
   for (const r of load(file)) {
     if (!r?.instruction) continue;
     const status = STATUS[r.status] ? r.status : "not_done";
@@ -96,6 +109,17 @@ for (const r of raw) {
     hit.status = r.status;
     hit.note = r.note || hit.note;
     hit.evidence = r.evidence || hit.evidence;
+  }
+}
+if (finals.length) {
+  for (const r of finals) {
+    if (!r?.instruction) continue;
+    merged.push({
+      ...r,
+      status: STATUS[r.status] ? r.status : "not_done",
+      area: AREAS.includes(r.area) ? r.area : "其他",
+      sources: Array.isArray(r.sources) ? r.sources : [String(r.sources ?? r.source ?? "")],
+    });
   }
 }
 for (const m of merged) delete m.g;
@@ -128,7 +152,7 @@ let md = `# HYDE 网站月度工作总结（${FROM} 至 ${TO}）
 
 **状态标记**：✓ 已完成 ◐ 部分完成 ▲ 待甲方操作 … 等待外部（工厂资料 / 其他会话 / 日期） ✗ 未完成 ↺ 已改方向（后来的指令取代了它）
 
-## 一、总览
+${existsSync(INTRO) ? `${readFileSync(INTRO, "utf8").trim()}\n\n` : ""}## 一、总览
 
 ${table(
   [
@@ -201,6 +225,7 @@ for (const a of AREAS.filter((x) => x !== "非网站业务")) {
     ["日期", (r) => r.date],
     ["指令", (r) => r.instruction],
     ["证据 / 说明", (r) => [r.evidence, r.status !== "done" ? r.note : ""].filter(Boolean).join("；")],
+    ["来源", (r) => [...new Set((r.sources ?? []).map((s) => String(s).split("：")[0]))].join("、")],
   ])}`;
 }
 
@@ -225,6 +250,6 @@ if (biz.length) {
 mkdirSync(OUTDIR, { recursive: true });
 writeFileSync(join(OUTDIR, `${NAME}.md`), md);
 writeFileSync(join(OUTDIR, `${NAME}.json`), JSON.stringify(merged, null, 1) + "\n");
-console.log(`${raw.length} rows → ${merged.length} merged (${website.length} website, ${biz.length} other)`);
+console.log(`${finals.length ? `${finals.length} consolidated` : raw.length} rows → ${merged.length} merged (${website.length} website, ${biz.length} other)`);
 for (const s of Object.keys(STATUS)) console.log(`  ${STATUS[s].mark} ${STATUS[s].label}: ${count(website, s)}`);
 console.log(`→ ${join(OUTDIR, NAME)}.md / .json`);
