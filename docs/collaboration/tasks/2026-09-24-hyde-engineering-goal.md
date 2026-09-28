@@ -110,6 +110,7 @@
 | 105 | 04:57 有会话在共享工作区自行发布 HYDE（02d8236a7d0）→ 发布脚本在 johns 以外的机器上拒绝 --site hyde；NOW.md 置顶广播 | 09-28 完成（release-site.mjs：--site hyde 且用户名不是 johns 即退出 2，HYDE_RELEASE_OVERRIDE 仅供甲方；NOW.md 置顶；发布会话确认不是它跑的）|
 | 106 | 甲方 09-28：删掉发布脚本的「非 johns 机器拒绝 --site hyde」拦截（影响云端），由甲方自己把控 | 09-28 完成（release-site.mjs 拦截删除，NOW.md 置顶广播撤下；#105 的拦截作废）|
 | 107 | 甲方 09-28（Search Console 截图）：/ar/feed.xml 无法抓取，其余 7 个 feed 成功 | 待甲方（线上 /ar/feed.xml 实测 200、82 条、XML 完整；源于 d36e2d988ef 才上线 feed，Google 读取时尚未上线或缓存为旧 404 → 甲方 Purge Everything 后在 Search Console 重新提交）|
+| 108 | seo:indexnow:release 在 d36e2d988ef→2aa61283e53 的比较中 4 GB 堆溢出 | 09-28 完成（npm 命令加 --max-old-space-size=16384，实测跑通到构建号检查；等甲方 purge 后提交）|
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
