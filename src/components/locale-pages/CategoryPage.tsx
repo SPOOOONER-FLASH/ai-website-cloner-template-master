@@ -7,6 +7,8 @@ import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
 import { getTopLevelCategories } from "@/data/categories";
 import { categorySourcingLine } from "@/data/category-sourcing";
+import { categoryNote } from "@/data/category-notes";
+import { CategoryNote } from "@/components/site/CategoryNote";
 import type { Locale } from "@/data/locales";
 import { getProductsByCategory } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
@@ -92,6 +94,7 @@ export function CategoryPage({ locale, slug }: { locale: Locale; slug: string })
                 {tx(locale, "Product data shown here is limited to verified client records. Additional references from the legacy catalog are being prepared for structured publication.")}
               </p>
               {sourcing ? <p className="mt-24 text-c1 text-ink-secondary">{tx(locale, sourcing)}</p> : null}
+              <CategoryNote note={categoryNote(category.slug, locale)} />
             </div>
           </div>
         </section>

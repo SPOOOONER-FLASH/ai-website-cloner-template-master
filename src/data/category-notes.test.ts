@@ -28,5 +28,5 @@ test("every other HYDE hinge is stainless steel, iron or zinc alloy, as the note
 
 test("the note never says pure copper", () => {
   const source = readFileSync("src/data/category-notes.ts", "utf8").split("RULES.")[1].split("*/")[1];
-  assert.doesNotMatch(source, /pure copper|cobre puro|纯铜/i);
+  assert.doesNotMatch(source, /pure copper|cobre puro|cuivre pur|reines kupfer|saf bakır|чистая медь|純銅|순수한 구리|순동|纯铜|النحاس النقي/i);
 });

@@ -9,8 +9,8 @@ import type { Locale } from "@/data/site";
   is a role the text names. No platform, pin count or capacity figure appears, because
   the article says plainly that those belong to whoever designs the real system.
 
-  Labels exist for en / es / pt only. Other locales render nothing rather than an English
-  chart on a translated page.
+  Labels exist for all ten locales, using each locale's own terms from its translation of
+  the article's levels table. A locale without labels renders nothing rather than English.
 */
 
 type Labels = {
@@ -66,6 +66,97 @@ const LABELS: Partial<Record<Locale, Labels>> = {
     noMaster: ["Sala de servidores", "fora de qualquer mestra"],
     legend: ["Com mestra", "Chave cruzada", "Reservado ou opcional"],
   },
+  fr: {
+    title: "Exemple d’organigramme de passe",
+    caption:
+      "Un exemple de système à trois niveaux : un passe général, deux passes partiels d’étage et les clés individuelles en dessous, avec les trois décisions que cet article place au moment de la conception : une porte en croisement, une porte hors de tout passe et un groupe réservé pour l’extension. Illustration seulement ; un vrai organigramme se conçoit sur la plateforme sur laquelle il sera taillé.",
+    ggmk: ["Passe grand général (GGMK)", "seulement pour plusieurs systèmes ; souvent non émis"],
+    gmk: ["Passe général (GMK)", "ouvre toutes les portes du système"],
+    mk: (n) => [`Passe partiel (MK) · Étage ${n}`, `ouvre toutes les portes de l’étage ${n}`],
+    reserved: ["Groupe réservé", "non émis, pour l’extension"],
+    door: "clé individuelle",
+    cross: ["Salle de réunion", "en croisement"],
+    noMaster: ["Salle serveurs", "hors de tout passe"],
+    legend: ["Sur passe", "Croisement", "Réservé ou facultatif"],
+  },
+  de: {
+    title: "Beispiel einer Schließanlagen-Hierarchie",
+    caption:
+      "Ein Beispiel mit drei Ebenen: ein Generalschlüssel, zwei Hauptschlüssel je Etage und die Einzelschlüssel darunter, mit den drei Entscheidungen, die dieser Artikel in die Planung legt: eine Tür mit Überschneidung, eine Tür außerhalb jedes Hauptschlüssels und eine für Erweiterungen reservierte Gruppe. Nur zur Veranschaulichung; eine echte Hierarchie wird auf der Plattform geplant, auf der sie geschnitten wird.",
+    ggmk: ["Obergeneralschlüssel (GGMK)", "nur bei mehreren Anlagen; oft nicht ausgegeben"],
+    gmk: ["Generalschlüssel (GMK)", "schließt jede Tür dieser Anlage"],
+    mk: (n) => [`Hauptschlüssel (MK) · Etage ${n}`, `schließt jede Tür auf Etage ${n}`],
+    reserved: ["Reservierte Gruppe", "für Erweiterung nicht ausgegeben"],
+    door: "Einzelschlüssel",
+    cross: ["Besprechungsraum", "Überschneidung"],
+    noMaster: ["Serverraum", "auf keinem Hauptschlüssel"],
+    legend: ["Im Hauptschlüssel", "Überschneidung", "Reserviert oder optional"],
+  },
+  ja: {
+    title: "マスターキー階層の例",
+    caption:
+      "3段階のシステムの例です。グランドマスター1本、各階のマスター2本、その下の個別キーに加えて、この記事が設計段階で決めるべきとする3点を示しています。相互キーの扉1枚、どのマスターにも入れない扉1枚、増設用に残すグループ1つです。図は説明用で、実際の階層は切削するプラットフォーム上で設計します。",
+    ggmk: ["グランドグランドマスター（GGMK）", "複数システム向け・発行しないことも多い"],
+    gmk: ["グランドマスター（GMK）", "このシステムの全扉を開ける"],
+    mk: (n) => [`マスター（MK）・${n}階`, `${n}階の全扉を開ける`],
+    reserved: ["予備グループ", "増設用に未発行"],
+    door: "個別キー",
+    cross: ["会議室", "相互キー"],
+    noMaster: ["サーバー室", "どのマスターにも入れない"],
+    legend: ["マスター系統", "相互キー", "予備・任意"],
+  },
+  ko: {
+    title: "마스터키 계층 예시",
+    caption:
+      "3단계 시스템의 예입니다. 그랜드 마스터 1개, 층별 마스터 2개, 그 아래 개별 키와 함께, 이 글이 설계 단계에서 정해야 한다고 말하는 세 가지를 보여 줍니다. 크로스 키잉 문 1개, 어떤 마스터에도 넣지 않는 문 1개, 확장용으로 남겨 둔 그룹 1개입니다. 설명용 도식이며, 실제 계층은 가공할 플랫폼에서 설계합니다.",
+    ggmk: ["그랜드 그랜드 마스터(GGMK)", "여러 시스템용, 발급하지 않는 경우가 많음"],
+    gmk: ["그랜드 마스터(GMK)", "이 시스템의 모든 문을 엶"],
+    mk: (n) => [`마스터(MK) · ${n}층`, `${n}층의 모든 문을 엶`],
+    reserved: ["예비 그룹", "확장용으로 미발급"],
+    door: "개별 키",
+    cross: ["회의실", "크로스 키잉"],
+    noMaster: ["서버실", "어떤 마스터에도 없음"],
+    legend: ["마스터 계통", "크로스 키잉", "예비 또는 선택"],
+  },
+  tr: {
+    title: "Örnek master anahtar hiyerarşisi",
+    caption:
+      "Üç seviyeli örnek bir sistem: bir grand master, iki kat masterı ve altlarındaki tekil anahtarlar; bu yazının tasarım aşamasında verilmesi gerektiğini söylediği üç kararla birlikte: bir çapraz anahtarlı kapı, hiçbir mastera bağlı olmayan bir kapı ve genişleme için ayrılmış bir grup. Yalnızca örnektir; gerçek hiyerarşi, anahtarların kesileceği platform üzerinde tasarlanır.",
+    ggmk: ["Grand grand master (GGMK)", "yalnızca birden çok sistem için; çoğu zaman verilmez"],
+    gmk: ["Grand master (GMK)", "bu sistemdeki her kapıyı açar"],
+    mk: (n) => [`Master (MK) · Kat ${n}`, `${n}. kattaki her kapıyı açar`],
+    reserved: ["Ayrılmış grup", "genişleme için verilmedi"],
+    door: "tekil anahtar",
+    cross: ["Toplantı odası", "çapraz anahtarlı"],
+    noMaster: ["Sunucu odası", "hiçbir masterda değil"],
+    legend: ["Mastera bağlı", "Çapraz anahtarlı", "Ayrılmış veya isteğe bağlı"],
+  },
+  ru: {
+    title: "Пример иерархии мастер-ключей",
+    caption:
+      "Пример системы из трёх уровней: гранд-мастер, два поэтажных мастера и индивидуальные ключи под ними, а также три решения, которые, по этой статье, принимаются на этапе проектирования: одна дверь с перекрёстным ключом, одна дверь вне любого мастера и одна группа, оставленная под расширение. Схема иллюстративная; настоящая иерархия проектируется на той платформе, на которой будут нарезаться ключи.",
+    ggmk: ["Гранд-гранд-мастер (GGMK)", "только для нескольких систем; часто не выдаётся"],
+    gmk: ["Гранд-мастер (GMK)", "открывает все двери системы"],
+    mk: (n) => [`Мастер (MK) · Этаж ${n}`, `открывает все двери этажа ${n}`],
+    reserved: ["Резервная группа", "не выдана, под расширение"],
+    door: "индивид. ключ",
+    cross: ["Переговорная", "перекрёстный ключ"],
+    noMaster: ["Серверная", "вне любого мастера"],
+    legend: ["Под мастером", "Перекрёстный ключ", "Резерв или по выбору"],
+  },
+  ar: {
+    title: "مثال على هرم المفتاح الرئيسي",
+    caption:
+      "مثال على نظام من ثلاثة مستويات: مفتاح رئيسي عام، ومفتاحان رئيسيان للطوابق، والمفاتيح الفردية تحتهما، مع القرارات الثلاثة التي يرى هذا المقال أنها تُتخذ عند التصميم: باب بمفاتيح متقاطعة، وباب خارج أي مفتاح رئيسي، ومجموعة محجوزة للتوسع. الرسم توضيحي فقط؛ الهرم الحقيقي يُصمَّم على المنصة التي ستُقطع عليها المفاتيح.",
+    ggmk: ["المفتاح الرئيسي الأعلى (GGMK)", "لعدة أنظمة فقط؛ وغالبًا لا يُصدر"],
+    gmk: ["المفتاح الرئيسي العام (GMK)", "يفتح كل أبواب هذا النظام"],
+    mk: (n) => [`المفتاح الرئيسي (MK) · الطابق ${n}`, `يفتح كل أبواب الطابق ${n}`],
+    reserved: ["مجموعة محجوزة", "غير مُصدرة، للتوسع"],
+    door: "مفتاح فردي",
+    cross: ["قاعة الاجتماعات", "مفاتيح متقاطعة"],
+    noMaster: ["غرفة الخوادم", "خارج أي مفتاح رئيسي"],
+    legend: ["ضمن المفتاح الرئيسي", "مفاتيح متقاطعة", "محجوز أو اختياري"],
+  },
 };
 
 export function hasMasterKeyFigure(locale: Locale): boolean {
@@ -73,6 +164,12 @@ export function hasMasterKeyFigure(locale: Locale): boolean {
 }
 
 type Box = { cx: number; y: number; w: number; h: number; lines: [string, string]; dashed?: boolean; strong?: boolean };
+
+/** Shrinks a label that would overrun its box (width estimated per script, not measured). */
+function fit(text: string, size: number, width: number): number {
+  const em = [...text].reduce((sum, ch) => sum + (/[\u3000-\u9fff\uac00-\ud7af\uff00-\uffef]/.test(ch) ? 1 : 0.5), 0);
+  return Math.min(size, Math.floor(((width - 8) / em) * 10) / 10);
+}
 
 function Node({ cx, y, w, h, lines, dashed, strong }: Box) {
   return (
@@ -88,10 +185,10 @@ function Node({ cx, y, w, h, lines, dashed, strong }: Box) {
         strokeWidth={strong ? 1.5 : 1}
         strokeDasharray={dashed ? "5 4" : undefined}
       />
-      <text x={cx} y={y + h / 2 - 4} textAnchor="middle" fontSize={13} fontWeight={600} fill="var(--color-ink)">
+      <text x={cx} y={y + h / 2 - 4} textAnchor="middle" fontSize={fit(lines[0], 13, w)} fontWeight={600} fill="var(--color-ink)">
         {lines[0]}
       </text>
-      <text x={cx} y={y + h / 2 + 13} textAnchor="middle" fontSize={11.5} fill="var(--color-ink-secondary)">
+      <text x={cx} y={y + h / 2 + 13} textAnchor="middle" fontSize={fit(lines[1], 11.5, w)} fill="var(--color-ink-secondary)">
         {lines[1]}
       </text>
     </g>
@@ -135,6 +232,7 @@ export function MasterKeyHierarchyFigure({ locale }: { locale: Locale }) {
         <svg
           viewBox="0 0 800 400"
           role="img"
+          direction="ltr"
           aria-labelledby="mk-figure-title"
           className="block h-auto w-full min-w-[720px]"
         >
