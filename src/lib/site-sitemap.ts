@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { authorSlugs } from "@/data/authors";
 import { absoluteUrl, indexable } from "@/data/site";
 import { mirrorsOf } from "@/lib/spanish-mirror";
 import { isoUploadDate } from "@/lib/upload-date";
@@ -117,6 +118,8 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     ...entry("/configurator", PRIORITY.section, "weekly"),
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
+    /* Author profiles (09-28): the page every Article schema author now points at. */
+    ...authorSlugs().map((slug) => entry(`/company/${slug}`, PRIORITY.support)).flat(),
     ...entry("/certifications", PRIORITY.support),
     // The order-code tables. Reference material rather than catalogue, which is the kind
     // of page an answer engine cites — the model-number article it sits beside is the
@@ -286,14 +289,14 @@ export function siteSitemap(): MetadataRoute.Sitemap {
   }
 
   // Every published release, not just one of them — FSB lists 1 of its 9 and the rest
-  // are invisible to search. lastModified is the publication date, since the content
-  // model tracks no revision timestamp.
+  // are invisible to search. lastModified is the last content revision (updatedAt, stamped
+  // by scripts/stamp-article-revisions.mjs), else the publication date.
   for (const article of getPublishedNews()) {
     urls.push(...entry(
       `/news/${article.slug}`,
       PRIORITY.newsDetail,
       "monthly",
-      new Date(article.publishedAt),
+      new Date(article.updatedAt ?? article.publishedAt),
     ));
   }
 
@@ -309,7 +312,7 @@ export function siteSitemap(): MetadataRoute.Sitemap {
       `/guides/${article.slug}`,
       PRIORITY.newsDetail,
       "monthly",
-      new Date(article.publishedAt),
+      new Date(article.updatedAt ?? article.publishedAt),
     ));
   }
 

@@ -35,3 +35,12 @@
 ## 下一步
 
 HYDE 发布由 johns 机器的工程会话跑 `release:hyde`；上线后在 Search Console 把 `/es/feed.xml`、`/pt/feed.xml` 作为站点地图提交到对应属性。记得 purge。
+
+## 第三轮（同日，甲方点了提议 1 和 3）
+
+- **作者页 `/company/johnson-liu/`，十语种。** `src/data/authors.ts`（名字→slug 映射，资料从文章 `author` 字段读，不另存）、`src/components/site/AuthorProfile.tsx`（ProfilePage + Person JSON-LD，文章列表按语种可用性过滤）。en/es/pt 路由手写，七个 overlay 语种由 `scaffold-locale-routes.mjs` 模板生成。七种 `ui.json` 各加 6 条（Author、简介句、LinkedIn、描述模板、学历、Updated）。
+- **作者链接改指站内。** Article schema 的 author 带 `@id …/company/johnson-liu/#person`、`url` 为本语种作者页，LinkedIn 移到 `sameAs`；文章署名链接、`article:author` 同步。学历在 es/pt/overlay 显示译文。
+- **修改日期。** `scripts/stamp-article-revisions.mjs` 只哈希读者可见文本（title/summary/body/faq ×3 语 + howTo），与 `src/data/article-revisions.json` 比对，变了才写 `updatedAt`=今天。挂在 `npm run content`；`test:export` 跑 `--check`。dateModified、og modified_time、sitemap lastmod、文章页「Updated」行都读它。首次建档 82 篇均未盖章（没有可证实的历史修改日期，不倒推）。
+- 汇总给甲方和协作者：`docs/collaboration/2026-09-28-谷歌探索-完成了什么.md`，Word 版同名 `.docx`（`node scripts/build-client-runbook-docx.mjs --src <md>` 生成）。
+
+**给 Codex / Kimi：** 改 `content/news|guides` 正文后跑 `npm run content`，否则 `npm run check` 红。**给 CMS 编辑：** 同上，CMS 保存不会自动盖章。

@@ -42,6 +42,22 @@ test("the Spanish and Portuguese feeds exist and their layouts and robots.txt de
   }
 });
 
+test("the author profile exists in all ten languages and the Article schema points at it", () => {
+  assert.ok(existsSync("src/app/(en)/company/johnson-liu/page.tsx"));
+  for (const l of ["es", "pt", "fr", "de", "ja", "ko", "tr", "ru", "ar"]) {
+    assert.ok(existsSync(`src/app/${l}/company/johnson-liu/page.tsx`), `${l} author page missing`);
+  }
+  assert.match(readFileSync("src/components/site/JsonLd.tsx", "utf8"), /"@id": `\$\{siteUrl\}\$\{authorPath\(article\.author\)\}\/#person`/);
+  assert.match(readFileSync("src/lib/site-sitemap.ts", "utf8"), /authorSlugs\(\)\.map/);
+});
+
+test("article edits are stamped: dateModified follows updatedAt, and the check runs in test:export", () => {
+  const pkg = JSON.parse(readFileSync("package.json", "utf8")) as { scripts: Record<string, string> };
+  assert.match(pkg.scripts.content, /stamp-article-revisions\.mjs/);
+  assert.match(pkg.scripts["test:export"], /stamp-article-revisions\.mjs --check/);
+  assert.match(readFileSync("src/components/site/JsonLd.tsx", "utf8"), /dateModified: article\.updatedAt \?\? article\.publishedAt/);
+});
+
 test("no promo card over an article on a phone", () => {
   assert.match(readFileSync("src/components/site/PromoDialog.tsx", "utf8"), /surface === "news" && !forcedOpen\(\) && window\.matchMedia\("\(max-width: 639\.98px\)"\)\.matches/);
 });

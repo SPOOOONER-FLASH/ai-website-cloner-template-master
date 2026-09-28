@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
@@ -43,7 +44,8 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
       title,
       description,
       publishedTime: article.publishedAt,
-      ...(article.author ? { authors: [article.author.url ?? article.author.name] } : {}),
+      ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
+      ...(article.author ? { authors: [authorHref(article.author, "en", true) ?? article.author.name] } : {}),
       section: "Guides",
       images: article.heroImage.src
         ? [{ url: absoluteUrl(articleShareImage("guides", slug) ?? article.heroImage.src), ...(articleShareImage("guides", slug) ? SHARE_IMAGE_SIZE : {}), alt: article.heroImage.label }]

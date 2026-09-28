@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
@@ -41,7 +42,8 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       title: article.seoTitle,
       description: article.seoDescription,
       publishedTime: article.publishedAt,
-      ...(article.author ? { authors: [article.author.url ?? article.author.name] } : {}),
+      ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
+      ...(article.author ? { authors: [authorHref(article.author, "en", true) ?? article.author.name] } : {}),
       section: "News",
       // An article shared without a card image is a grey box in chat and on LinkedIn,
       // which is exactly where a specification guide gets passed around.

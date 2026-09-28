@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
@@ -52,7 +53,8 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       title,
       description,
       publishedTime: article.publishedAt,
-      ...(article.author ? { authors: [article.author.url ?? article.author.name] } : {}),
+      ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
+      ...(article.author ? { authors: [authorHref(article.author, "es", true) ?? article.author.name] } : {}),
       section: "News",
       locale: "es_ES",
       images: article.heroImage.src
