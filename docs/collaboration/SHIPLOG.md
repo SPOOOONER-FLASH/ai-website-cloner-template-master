@@ -6,12 +6,18 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 666 次提交
+最近 30 天 · 共 672 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:06 | HYDE | Add BAU 2027 homepage showcase and navigation entry | `a5fe7ac38ab` |
+| 02:04 | 中立 | Add HYDE BAU entry design previews | `77a61616eb0` |
+| 13:47 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d36e2d988e | `2aa61283e53` |
+| 13:34 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 584283422f | `d36e2d988ef` |
+| 06:33 | HYDE | Merge pull request #9 from SPOOOONER-FLASH/claude/content-schema-gaps-8jsl25 | `3c5e5126e14` |
+| 06:23 | HYDE | Merge pull request #15 from SPOOOONER-FLASH/claude/server-render-islands-fms6yh | `584283422fc` |
 | 06:19 | 中立 | release: remove the johns-only guard for --site hyde | `bd3ee3b2a34` |
 | 06:17 | 中立 | release: refuse --site hyde off the johns machine | `46e8d2bd362` |
 | 06:13 | 中立 | goal #102-#104：r16 = b606a19697b 已推并实测 | `ad10465c3f0` |
