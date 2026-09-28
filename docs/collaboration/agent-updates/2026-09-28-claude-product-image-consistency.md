@@ -56,4 +56,4 @@ door-prep / drawings SVG）已丢弃，未提交。
   改完跑 `npm run audit:productimages`，标记数下降即验收。
 - 发布：甲方 09-28 要求构建 out/。本会话是 Linux 云端，按 AGENTS.md 与甲方同日规定，HYDE 发布只在 johns 机器从
   `origin/main` 跑 `npm run release:hyde`；本 PR 合并前 main 上没有这次改动，而且除 BAU 专栏一处悬停时长外不改任何页面，
-  所以**本会话未构建、未提交 out/**。#6 不改任何页面（只有脚本、报告、文档、package.json），发布不依赖它合并；甲方 09-28 要求在 johns 机器发起发布，已通过 Remote Control 发起。发布后记得 Cloudflare purge。
+  所以**本会话未构建、未提交 out/**。#6 不改任何页面（只有脚本、报告、文档、package.json），发布不依赖它合并；甲方 09-28 要求在 johns 机器发起发布；隐私政策线程（PR #3）当时已在该机跑 release:hyde，为免同一检出目录并发，本线程撤回了自己的发布请求。#6 合并后由下一次发布带上，发布后记得 Cloudflare purge。
