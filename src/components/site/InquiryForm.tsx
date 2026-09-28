@@ -9,6 +9,7 @@ import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
 import { EmailLink } from "./EmailLink";
+import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
 import { dict } from "@/lib/i18n-client";
 
@@ -340,6 +341,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
           {statusMessage || text.required}
         </p>
       </div>
+      <PrivacyNote locale={locale} />
 
       {status === "error" && fallback ? (
         <div className="border border-line bg-surface p-24">
