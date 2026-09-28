@@ -62,11 +62,26 @@ const concierge: LocaleDict<ConciergeExperience> = {
     ],
     groups: [
       {
-        title: "Explore",
+        title: "Products",
         links: [
-          { label: "Products", href: "/products/" },
+          { label: "All products", href: "/products/" },
+          { label: "Product Finder", href: "/product-finder/" },
+          { label: "Configurator", href: "/configurator/" },
+          { label: "Hardware in focus", href: "/product-studies/" },
+          { label: "Model lookup", href: "/model-lookup/" },
+          { label: "Order codes", href: "/finishes/" },
+          { label: "Cylinder calculator", href: "/euro-cylinder-calculator/" },
+        ],
+      },
+      {
+        title: "Knowledge",
+        links: [
           { label: "Applications", href: "/projects/" },
+          { label: "Guides", href: "/guides/" },
           { label: "News + Press", href: "/news/" },
+          { label: "Glossary", href: "/glossary/" },
+          { label: "Events", href: "/events/" },
+          { label: "BAU 2027 Munich", href: "/bau-2027/" },
         ],
       },
       {
@@ -74,11 +89,18 @@ const concierge: LocaleDict<ConciergeExperience> = {
         links: [
           { label: "Company", href: "/company/" },
           { label: "Certificates", href: "/certifications/" },
-          { label: "Order codes", href: "/finishes/" },
-          { label: "Model lookup", href: "/model-lookup/" },
-          { label: "Glossary", href: "/glossary/" },
+          { label: "Documents", href: "/documents/" },
           { label: "Downloads", href: "/downloads/" },
-          { label: "Services", href: "/services/" },
+          { label: "FAQ", href: "/faq/" },
+        ],
+      },
+      {
+        title: "Buying",
+        links: [
+          { label: "OEM services", href: "/services/" },
+          { label: "Price list", href: "/request/price-list/" },
+          { label: "Contact", href: "/contact/" },
+          { label: "Newsletter", href: "/newsletter/" },
         ],
       },
     ],
@@ -108,11 +130,25 @@ const concierge: LocaleDict<ConciergeExperience> = {
     ],
     groups: [
       {
-        title: "Explorar",
+        title: "Productos",
         links: [
-          { label: "Productos", href: "/es/products/" },
+          { label: "Todos los productos", href: "/es/products/" },
+          { label: "Buscador de productos", href: "/es/product-finder/" },
+          { label: "Configurador", href: "/es/configurator/" },
+          { label: "Herrajes en detalle", href: "/es/product-studies/" },
+          { label: "Buscador de modelos", href: "/es/model-lookup/" },
+          { label: "Códigos de pedido", href: "/es/finishes/" },
+          { label: "Calculadora de cilindro", href: "/es/euro-cylinder-calculator/" },
+        ],
+      },
+      {
+        title: "Conocimiento",
+        links: [
           { label: "Aplicaciones", href: "/es/projects/" },
+          { label: "Guías", href: "/es/guides/" },
           { label: "Noticias + Prensa", href: "/es/news/" },
+          { label: "Glosario", href: "/es/glossary/" },
+          { label: "Ferias (en inglés)", href: "/events/" },
         ],
       },
       {
@@ -120,11 +156,16 @@ const concierge: LocaleDict<ConciergeExperience> = {
         links: [
           { label: "Empresa", href: "/es/company/" },
           { label: "Certificados", href: "/es/certifications/" },
-          { label: "Códigos de pedido", href: "/es/finishes/" },
-          { label: "Buscador de modelos", href: "/es/model-lookup/" },
-          { label: "Glosario", href: "/es/glossary/" },
+          { label: "Documentos", href: "/es/documents/" },
           { label: "Descargas", href: "/es/downloads/" },
-          { label: "Servicios", href: "/es/services/" },
+          { label: "Preguntas frecuentes", href: "/es/faq/" },
+        ],
+      },
+      {
+        title: "Compra",
+        links: [
+          { label: "Servicios OEM", href: "/es/services/" },
+          { label: "Contacto", href: "/es/contact/" },
         ],
       },
     ],
@@ -154,11 +195,25 @@ const concierge: LocaleDict<ConciergeExperience> = {
     ],
     groups: [
       {
-        title: "Explorar",
+        title: "Produtos",
         links: [
-          { label: "Produtos", href: "/pt/products/" },
+          { label: "Todos os produtos", href: "/pt/products/" },
+          { label: "Localizador de produtos", href: "/pt/product-finder/" },
+          { label: "Configurador", href: "/pt/configurator/" },
+          { label: "Ferragens em detalhe", href: "/pt/product-studies/" },
+          { label: "Procurar modelo", href: "/pt/model-lookup/" },
+          { label: "Códigos de pedido", href: "/pt/finishes/" },
+          { label: "Calculadora de cilindro", href: "/pt/euro-cylinder-calculator/" },
+        ],
+      },
+      {
+        title: "Conhecimento",
+        links: [
           { label: "Aplicações", href: "/pt/projects/" },
+          { label: "Guias", href: "/pt/guides/" },
           { label: "Notícias + Imprensa", href: "/pt/news/" },
+          { label: "Glossário", href: "/pt/glossary/" },
+          { label: "Feiras (em inglês)", href: "/events/" },
         ],
       },
       {
@@ -166,11 +221,16 @@ const concierge: LocaleDict<ConciergeExperience> = {
         links: [
           { label: "Empresa", href: "/pt/company/" },
           { label: "Certificados", href: "/pt/certifications/" },
-          { label: "Códigos de pedido", href: "/pt/finishes/" },
-          { label: "Procurar modelo", href: "/pt/model-lookup/" },
-          { label: "Glossário", href: "/pt/glossary/" },
+          { label: "Documentos", href: "/pt/documents/" },
           { label: "Downloads", href: "/pt/downloads/" },
-          { label: "Serviços", href: "/pt/services/" },
+          { label: "Perguntas frequentes", href: "/pt/faq/" },
+        ],
+      },
+      {
+        title: "Compra",
+        links: [
+          { label: "Serviços OEM", href: "/pt/services/" },
+          { label: "Contato", href: "/pt/contact/" },
         ],
       },
     ],

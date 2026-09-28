@@ -37,28 +37,45 @@ const LEGAL_LINKS = {
   unreachable from the homepage in all three languages — in the sitemap, but no rendered
   link led there, so crawlers and buyers could only arrive by search. The Portuguese fire-door
   landing page was an orphan for the same reason; it has no English or Spanish twin.
+
+  09-28 (client: 「/product-studies/ 别的地方都看不见……每条内链都有显眼可达的位置」): the menu
+  drawer lists every section, but it renders only while open, so no crawler sees it. The
+  footer is the one list in every exported page. The configurator (linked from 2 pages),
+  Hardware in focus (1), the BAU column (1), the FAQ and the price list joined it.
+  src/components/site/internal-link-placement.test.ts fails when a section is in neither.
 */
 const REFERENCE_LINKS = {
   en: [
+    { label: "Configurator", href: "/configurator" },
+    { label: "Hardware in focus", href: "/product-studies" },
     { label: "Finish codes", href: "/finishes" },
     { label: "Glossary", href: "/glossary" },
     { label: "Model lookup", href: "/model-lookup" },
     { label: "Cylinder calculator", href: "/euro-cylinder-calculator" },
     { label: "Documents", href: "/documents" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Price list", href: "/request/price-list" },
+    { label: "BAU 2027 Munich", href: "/bau-2027" },
   ],
   es: [
+    { label: "Configurador", href: "/es/configurator" },
+    { label: "Herrajes en detalle", href: "/es/product-studies" },
     { label: "Códigos de acabado", href: "/es/finishes" },
     { label: "Glosario", href: "/es/glossary" },
     { label: "Buscar por modelo", href: "/es/model-lookup" },
     { label: "Calculadora de cilindro", href: "/es/euro-cylinder-calculator" },
     { label: "Documentos", href: "/es/documents" },
+    { label: "Preguntas frecuentes", href: "/es/faq" },
   ],
   pt: [
+    { label: "Configurador", href: "/pt/configurator" },
+    { label: "Ferragens em detalhe", href: "/pt/product-studies" },
     { label: "Códigos de acabamento", href: "/pt/finishes" },
     { label: "Glossário", href: "/pt/glossary" },
     { label: "Busca por modelo", href: "/pt/model-lookup" },
     { label: "Calculadora de cilindro", href: "/pt/euro-cylinder-calculator" },
     { label: "Documentos", href: "/pt/documents" },
+    { label: "Perguntas frequentes", href: "/pt/faq" },
     { label: "Ferragens para porta corta-fogo", href: "/pt/ferragens-porta-corta-fogo" },
   ],
 } as const;
