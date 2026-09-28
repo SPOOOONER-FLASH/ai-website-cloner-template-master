@@ -18,6 +18,26 @@ Disallow: /*.txt$
 Disallow: /__next.
 Disallow: /*/__next.
 
+User-Agent: OAI-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /cdn-cgi/
+Disallow: /*.txt$
+Disallow: /__next.
+Disallow: /*/__next.
+
+User-Agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /cdn-cgi/
+Disallow: /*.txt$
+Disallow: /__next.
+Disallow: /*/__next.
+
 User-Agent: ClaudeBot
 Allow: /
 Allow: /llms.txt
@@ -38,7 +58,27 @@ Disallow: /*.txt$
 Disallow: /__next.
 Disallow: /*/__next.
 
+User-Agent: Claude-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /cdn-cgi/
+Disallow: /*.txt$
+Disallow: /__next.
+Disallow: /*/__next.
+
 User-Agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /cdn-cgi/
+Disallow: /*.txt$
+Disallow: /__next.
+Disallow: /*/__next.
+
+User-Agent: Perplexity-User
 Allow: /
 Allow: /llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
@@ -78,3 +118,13 @@ Sitemap: https://cantonlock.com/ko/sitemap.xml
 Sitemap: https://cantonlock.com/tr/sitemap.xml
 Sitemap: https://cantonlock.com/ru/sitemap.xml
 Sitemap: https://cantonlock.com/ar/sitemap.xml
+Sitemap: https://cantonlock.com/feed.xml
+Sitemap: https://cantonlock.com/es/feed.xml
+Sitemap: https://cantonlock.com/pt/feed.xml
+Sitemap: https://cantonlock.com/fr/feed.xml
+Sitemap: https://cantonlock.com/de/feed.xml
+Sitemap: https://cantonlock.com/ja/feed.xml
+Sitemap: https://cantonlock.com/ko/feed.xml
+Sitemap: https://cantonlock.com/tr/feed.xml
+Sitemap: https://cantonlock.com/ru/feed.xml
+Sitemap: https://cantonlock.com/ar/feed.xml

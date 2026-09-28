@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { authorHref } from "@/data/authors";
+import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { GuideListing } from "@/components/site/GuideListing";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
@@ -61,16 +63,20 @@ function articleMetadata(locale: Locale, article: NewsArticle, section: "news" |
       title,
       description,
       publishedTime: article.publishedAt,
+      ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
+      /* article:author and article:section (09-28, Discover): who wrote it and which shelf it sits on. */
+      ...(article.author ? { authors: [authorHref(article.author, locale, true) ?? article.author.name] } : {}),
+      section: section === "guides" ? "Guides" : "News",
       locale: OG_LOCALE[locale],
       images: article.heroImage.src
-        ? [{ url: absoluteUrl(article.heroImage.src), alt: t(article.heroImage, "label", locale) }]
+        ? [{ url: absoluteUrl(articleShareImage(section, slug) ?? article.heroImage.src), ...(articleShareImage(section, slug) ? SHARE_IMAGE_SIZE : {}), alt: t(article.heroImage, "label", locale) }]
         : [{ url: absoluteUrl(defaultOgImage), width: 1200, height: 630, alt: "HYDE" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [absoluteUrl(article.heroImage.src ?? defaultOgImage)],
+      images: [absoluteUrl(articleShareImage(section, slug) ?? article.heroImage.src ?? defaultOgImage)],
     },
   };
 }

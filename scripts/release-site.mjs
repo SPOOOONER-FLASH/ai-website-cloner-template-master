@@ -67,6 +67,9 @@ function run(cmd, cmdArgs, cwd, { capture = false, timeout } = {}) {
     encoding: "utf8",
     shell: process.platform === "win32",
     timeout,
+    /* The default 1 MB cut the staged-file list of the 2026-09-27 release (46,188 paths) mid-line;
+       the truncated last entry "o" read as a file outside out/ and aborted the release. */
+    maxBuffer: 256 * 1024 * 1024,
   });
   if (r.error?.code === "ETIMEDOUT") return { status: 124, out: "超时" };
   return { status: r.status ?? 1, out: `${r.stdout ?? ""}${r.stderr ?? ""}` };
@@ -156,7 +159,20 @@ try {
   const prep =
     site === "hyde" ? "deploy:prep" : pkg.scripts?.["deploy:prep:rayen"] ? "deploy:prep:rayen" : "build";
   console.log(`→ 构建并检查：npm run ${prep}`);
-  must(`npm run ${prep}`, run("npm", ["run", prep], WT));
+  /*
+    0xC0000409 (3221226505) is a native crash with no JavaScript error. On 2026-09-28 it killed
+    four of six `next build` runs on the johns machine, at a different stage each time
+    ("Collecting page data", then "Generating static pages 4436/8874"), and no event-log entry
+    named a module. Rerunning the same commit passed every time, so the crash is retried here,
+    up to twice. Any other failure — a real build error, a failed check — stops at once.
+  */
+  const NATIVE_CRASH = 3221226505;
+  let built = run("npm", ["run", prep], WT);
+  for (let retry = 1; retry <= 2 && built.status === NATIVE_CRASH; retry++) {
+    console.log(`  构建进程原生崩溃（0xC0000409），同一提交重跑第 ${retry}/2 次`);
+    built = run("npm", ["run", prep], WT);
+  }
+  must(`npm run ${prep}`, built);
 
   console.log(`→ 只暂存 ${OUT}/`);
   must("git add", run("git", ["add", "-A", "--", `${OUT}/`], WT));

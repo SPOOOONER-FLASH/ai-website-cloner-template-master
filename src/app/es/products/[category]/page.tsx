@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { CategoryGuide } from "@/components/site/CategoryGuide";
+import { CategoryBuyingGuide, guideBlocks } from "@/components/site/CategoryBuyingGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
+import { categoryNote } from "@/data/category-notes";
+import { CategoryNote } from "@/components/site/CategoryNote";
 import { notFound } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -140,13 +144,10 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
             </div>
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
               <p className="text-lead text-ink">{summary}</p>
-              <p className="mt-24 text-c1 text-ink-secondary">
-                Aquí solo se publican fichas verificadas. El resto del catálogo histórico
-                se está preparando para su publicación estructurada.
-              </p>
               {sourcing ? (
                 <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p>
               ) : null}
+              <CategoryNote note={categoryNote(category.slug, "es")} />
             </div>
           </div>
         </section>
@@ -167,6 +168,8 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
           locale="es"
           showCompareLink
         />
+        <CategoryBuyingGuide categorySlug={category.slug} categoryName={name} products={products} locale="es" withSchema={false} />
+        <CategoryGuide category={category} products={products} locale="es" extraFaq={guideBlocks(category.slug, products, "es")?.items ?? []} />
       </main>
     </>
   );

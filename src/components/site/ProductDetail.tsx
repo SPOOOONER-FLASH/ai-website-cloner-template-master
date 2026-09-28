@@ -7,6 +7,7 @@ import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
 import { productFaqHeading, productFaqItems } from "@/lib/product-faq";
 import { ArrowLink } from "./ArrowLink";
+import { BreadcrumbSeparator } from "./Breadcrumbs";
 import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
@@ -21,7 +22,12 @@ import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
 import { productModelFor } from "@/data/product-models";
 import { ProductModel } from "./ProductModel";
+import { ProductSpecSheetLink } from "./ProductSpecSheetLink";
 import { dict, specLabel, t as tr } from "@/lib/i18n";
+import { getPublishedGuides } from "@/data/guides";
+import { getPublishedNews } from "@/data/news";
+import { articlesCitingModel } from "@/lib/citing-articles";
+import { localisedHref } from "@/lib/spanish-mirror";
 
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
@@ -53,6 +59,8 @@ const COPY = {
     compareRange: "Compare every model in this range",
     compareHelp:
       "One table, one row per model, across the specifications that differ between them.",
+    citedGuide: "Guide that compares or cites this model",
+    citedNews: "Article that cites this model",
     faqLink: "Ordering, lead times and samples",
     faqHelp:
       "Minimum order quantity, production lead time, sample policy, payment terms and OEM work — answered in full.",
@@ -60,7 +68,10 @@ const COPY = {
     finishes: "Available finishes",
     doorTypes: "Suitable door types",
     onRequest: "Information available on request",
-    referenceOnRequest: "Reference available on request",
+    /* Was "Reference available on request": it promised a reference we do not have. The
+       factory code for these 13 records is unknown, and saying so is the honest version
+       (monthly audit 09-28; Gemini's "placeholder text AI will not cite"). */
+    referenceOnRequest: "Model code to be confirmed",
         quote: "Request a quote",
     quoteNeeds:
       "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.",
@@ -105,6 +116,8 @@ const COPY = {
     compareRange: "Comparar todos los modelos de esta gama",
     compareHelp:
       "Una tabla, una fila por modelo, con las especificaciones que los distinguen.",
+    citedGuide: "Guía que compara o cita este modelo",
+    citedNews: "Artículo que cita este modelo",
     faqLink: "Pedidos, plazos y muestras",
     faqHelp:
       "Pedido mínimo, plazo de producción, política de muestras, condiciones de pago y trabajo OEM —respondido en detalle.",
@@ -112,7 +125,7 @@ const COPY = {
     finishes: "Acabados disponibles",
     doorTypes: "Tipos de puerta compatibles",
     onRequest: "Información disponible a pedido",
-    referenceOnRequest: "Referencia disponible a pedido",
+    referenceOnRequest: "Código de modelo por confirmar",
         quote: "Solicitar cotización",
     quoteNeeds:
       "Para cotizar, envíenos el modelo y el acabado, la cantidad, el país de destino y un plano o una foto de lo que quiera cambiar.",
@@ -158,6 +171,8 @@ const COPY = {
     compareRange: "Comparar todos os modelos desta gama",
     compareHelp:
       "Uma tabela, uma linha por modelo, com as especificações que os distinguem.",
+    citedGuide: "Guia que compara ou cita este modelo",
+    citedNews: "Artigo que cita este modelo",
     faqLink: "Encomendas, prazos e amostras",
     faqHelp:
       "Quantidade mínima, prazo de produção, política de amostras, condições de pagamento e trabalho OEM — respondido em detalhe.",
@@ -165,7 +180,7 @@ const COPY = {
     finishes: "Acabamentos disponíveis",
     doorTypes: "Tipos de porta compatíveis",
     onRequest: "Informação disponível mediante pedido",
-    referenceOnRequest: "Referência disponível mediante pedido",
+    referenceOnRequest: "Código do modelo a confirmar",
         quote: "Pedir orçamento",
     quoteNeeds:
       "Para cotar, envie o modelo e o acabamento, a quantidade, o país de destino e um desenho ou uma foto do que quiser alterar.",
@@ -363,6 +378,11 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   ).length;
   const compareHref =
     categoryCount >= 3 ? `${base}/compare/${product.categoryPath[0]}/` : null;
+  /*
+    The pages that name this model in their relatedModels — the comparison guides first.
+    Articles link down to the product; this is the link back up (src/lib/citing-articles.ts).
+  */
+  const citing = articlesCitingModel(product.model, getPublishedGuides(), getPublishedNews());
   const alibaba = alibabaLinkFor(product);
   const relatedHeading = related
     ? related.source === "curated"
@@ -377,32 +397,32 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
       {/* 1 — Breadcrumb, title and model */}
       <section className="layout" aria-labelledby="product-title">
         <div className="col-content grid w-full grid-cols gap-x gap-y-24">
+          {/*
+            09-28: the category crumb carries the "back to your results" behaviour (it restores
+            the filtered list and scroll position when there is one, and opens the category
+            otherwise), so the separate "← Back to previous results" line below it — the
+            same destination in most visits — is gone. One trail, one line, no repetition.
+          */}
           <nav
             aria-label={t.breadcrumb}
-            className="col-span-full flex flex-wrap items-center gap-x-8 text-c2 text-ink-secondary"
+            className="col-span-full flex min-w-0 items-center gap-x-8 overflow-hidden whitespace-nowrap text-c2 text-ink-secondary"
           >
-            <Link href={`${base}/`} className="short-marker short-marker-compact hover:text-brand-hover">
+            <Link href={`${base}/`} className="short-marker short-marker-compact flex-none hover:text-brand-hover">
               {t.home}
             </Link>
-            <span aria-hidden="true">/</span>
-            <Link href={`${base}/products/`} className="short-marker short-marker-compact hover:text-brand-hover">
+            <BreadcrumbSeparator />
+            <Link href={`${base}/products/`} className="short-marker short-marker-compact flex-none hover:text-brand-hover">
               {t.products}
             </Link>
-            <span aria-hidden="true">/</span>
-            <Link href={categoryHref} className="short-marker short-marker-compact hover:text-brand-hover">
-              {categoryName}
-            </Link>
-          </nav>
-
-          <div className="col-span-full mt-16">
+            <BreadcrumbSeparator />
             <CatalogueReturnLink
               productHref={productHref}
               fallbackHref={categoryHref}
-              className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
+              className="short-marker short-marker-compact min-w-0 truncate hover:text-brand-hover"
             >
-              {t.backToResults}
+              {categoryName}
             </CatalogueReturnLink>
-          </div>
+          </nav>
 
           <div className="col-span-full mt-8 xl:col-span-12">
             <p className="text-c1 text-ink-secondary">{product.series}</p>
@@ -741,6 +761,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     the answers are on the page — for a reader, for a crawler, and for the
                     audit that checks the two agree.
                   */}
+                  <ProductSpecSheetLink slug={product.slug} locale={locale} />
                   <ProductDrawing slug={product.slug} locale={locale} />
 
                   {/*
@@ -889,6 +910,16 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
               {product.attachmentIds.map((attachmentId) => (
                 <li key={attachmentId} className="border-b border-line py-16">
                   <ArrowLink href={`/downloads/#${attachmentId}`}>{attachmentId}</ArrowLink>
+                </li>
+              ))}
+              {citing.map(({ section, article }) => (
+                <li key={`${section}/${article.slug}`} className="border-b border-line py-16">
+                  <ArrowLink href={localisedHref(`/${section}/${article.slug}/`, locale)}>
+                    {tr(article, "title", locale)}
+                  </ArrowLink>
+                  <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">
+                    {section === "guides" ? t.citedGuide : t.citedNews}
+                  </p>
                 </li>
               ))}
               {compareHref ? (

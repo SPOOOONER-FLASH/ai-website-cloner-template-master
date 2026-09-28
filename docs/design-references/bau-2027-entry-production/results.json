@@ -1,0 +1,797 @@
+[
+  {
+    "locale": "en",
+    "width": 1440,
+    "selector": "[data-bau-info-band]",
+    "height": 74,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "en",
+    "width": 1440,
+    "selector": "[data-bau-showcase]",
+    "height": 549,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-480w.webp",
+        "renderedWidth": 433
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-480w.webp",
+        "renderedWidth": 433
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 1024,
+    "selector": "[data-bau-info-band]",
+    "height": 113,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "en",
+    "width": 1024,
+    "selector": "[data-bau-showcase]",
+    "height": 846,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-640w.webp",
+        "renderedWidth": 476
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-640w.webp",
+        "renderedWidth": 476
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 113,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 538,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 320,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "en",
+    "width": 320,
+    "selector": "[data-bau-showcase]",
+    "height": 555,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 136
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 136
+      }
+    ]
+  },
+  {
+    "locale": "de",
+    "width": 1440,
+    "selector": "[data-bau-info-band]",
+    "height": 74,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      },
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "de",
+    "width": 1440,
+    "selector": "[data-bau-showcase]",
+    "height": 549,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      },
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-480w.webp",
+        "renderedWidth": 433
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-480w.webp",
+        "renderedWidth": 433
+      }
+    ]
+  },
+  {
+    "locale": "de",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      },
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "de",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 595,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      },
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "de",
+    "width": 320,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      },
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "de",
+    "width": 320,
+    "selector": "[data-bau-showcase]",
+    "height": 560,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      },
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 136
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 136
+      }
+    ]
+  },
+  {
+    "locale": "es",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "es",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 595,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "pt",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "pt",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 595,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "fr",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 113,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "fr",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 595,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "ja",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "ja",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 595,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "ko",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "ko",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 595,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "tr",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 113,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "tr",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 538,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "ru",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 136,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "ru",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 616,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  },
+  {
+    "locale": "ar",
+    "width": 390,
+    "selector": "[data-bau-info-band]",
+    "height": 113,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": []
+  },
+  {
+    "locale": "ar",
+    "width": 390,
+    "selector": "[data-bau-showcase]",
+    "height": 569,
+    "overflow": [],
+    "links": [
+      {
+        "href": "/bau-2027/",
+        "language": "en",
+        "height": 44
+      },
+      {
+        "href": "/de/bau-2027/",
+        "language": "de",
+        "height": 44
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/307-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      },
+      {
+        "complete": true,
+        "fit": "contain",
+        "source": "http://127.0.0.1:8769/images/responsive/products/311-panic-exit-device-320w.webp",
+        "renderedWidth": 171
+      }
+    ]
+  }
+]

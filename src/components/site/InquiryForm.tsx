@@ -4,11 +4,13 @@ import type { Locale } from "@/data/site";
 import { useEffect, useRef, useState } from "react";
 import { submitInquiry } from "@/lib/inquiry-submit";
 import { trackLead } from "@/lib/analytics-events";
+import { readFirstTouch } from "@/lib/first-touch";
 import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
 import { EmailLink } from "./EmailLink";
+import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
 import { dict } from "@/lib/i18n-client";
 
@@ -212,12 +214,21 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     payload.set("access_key", accessKey);
     payload.set("subject", `${text.subject}${model ? ` — ${model}` : ""}`);
     payload.set("from_name", "Canton Hyland website");
+    /* One word the export team reads in the email: how this buyer first reached the site.
+       This is how an inquiry gets traced back to ChatGPT or Google (src/lib/first-touch.ts). */
+    let firstTouch = "";
+    try {
+      firstTouch = readFirstTouch(window.sessionStorage);
+    } catch {
+      /* the sessionStorage getter itself throws when storage is blocked */
+    }
+    if (firstTouch) payload.set("first_touch", firstTouch);
 
     try {
       await submitInquiry(payload);
 
       // 询盘已经送达。计数失败绝不能把成功面板带下去 —— trackLead 自身不抛。
-      trackLead({ locale, model, page: globalThis.location?.pathname });
+      trackLead({ locale, model, page: globalThis.location?.pathname, firstTouch });
 
       form.reset();
       setProduct("");
@@ -340,6 +351,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
           {statusMessage || text.required}
         </p>
       </div>
+      <PrivacyNote locale={locale} />
 
       {status === "error" && fallback ? (
         <div className="border border-line bg-surface p-24">

@@ -1,6 +1,7 @@
 import type { Locale } from "@/data/site";
+import { articleShareImage } from "@/lib/article-share-image";
 import { articleFaqItems } from "@/lib/article-faq";
-import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
+import { absoluteUrl, legalName, locales, siteName, siteUrl } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
 import { getAnsweredFaq } from "@/data/faq";
@@ -23,6 +24,8 @@ import type {
   WithContext,
 } from "schema-dts";
 import { t, tx } from "@/lib/i18n";
+import { authorPath, authorPortrait } from "@/data/authors";
+import { localisedHref } from "@/lib/spanish-mirror";
 
 /**
  * Schema.org structured data.
@@ -160,7 +163,9 @@ export function websiteSchema(): WithContext<WebSite> {
     url: siteUrl,
     name: siteName,
     publisher: { "@id": `${siteUrl}/#organization` },
-    inLanguage: ["en", "es"],
+    /* Every locale the site publishes (was ["en", "es"] after pt and the seven overlay
+       locales shipped; found by the 09-28 monthly audit). Same tags the pages use. */
+    inLanguage: locales.map((l) => (l === "pt" ? "pt-BR" : l)),
   };
 }
 
@@ -334,7 +339,7 @@ export function newsArticleSchema(
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: article.publishedAt,
-    dateModified: article.publishedAt,
+    dateModified: article.updatedAt ?? article.publishedAt,
     ...(images.length ? { image: images } : {}),
     /*
       A Person with a jobTitle, an employer and a URL that resolves — the difference
@@ -349,7 +354,25 @@ export function newsArticleSchema(
           jobTitle:
             t(article.author, "role", locale),
           worksFor: { "@id": `${siteUrl}/#organization` },
-          ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
+          /*
+            A real photograph of the person, where the client has supplied one. This is the
+            half of the byline a search engine can see, and the same rule applies as to the
+            name beside it: the photograph is of the person named, or the field is absent.
+          */
+          ...(authorPortrait(article.author.name)
+            ? { image: absoluteUrl(authorPortrait(article.author.name)!.src) }
+            : {}),
+          /* The on-site profile (09-28) is the author's url and @id; LinkedIn stays as sameAs.
+             Without a profile, the external URL is the only thing that resolves. */
+          ...(authorPath(article.author)
+            ? {
+                "@id": `${siteUrl}${authorPath(article.author)}/#person`,
+                url: absoluteUrl(localisedHref(`${authorPath(article.author)}/`, locale)),
+                ...(article.author.url ? { sameAs: [article.author.url] } : {}),
+              }
+            : article.author.url
+              ? { url: article.author.url, sameAs: [article.author.url] }
+              : {}),
           ...(article.author.credential
             ? {
                 hasCredential: {
@@ -385,7 +408,41 @@ export function NewsArticleJsonLd({
   section?: "news" | "guides";
 }) {
   const path = locale === "en" ? `/${section}/${article.slug}/` : `/${locale}/${section}/${article.slug}/`;
-  return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
+  const url = absoluteUrl(path);
+  const share = articleShareImage(section, article.slug);
+  const base = newsArticleSchema(article, url, locale);
+  /* Discover and rich results prefer a wide image; list the 16:9 card first (09-28). */
+  const photos = Array.isArray(base.image) ? base.image : base.image ? [base.image] : [];
+  const data: typeof base = share ? { ...base, image: [absoluteUrl(share), ...photos] } : base;
+  /* English only: the steps are written from the English body, and markup that disagrees
+     with the visible text of a translated page is the failure FAQ markup is guarded against. */
+  const howTo = locale === "en" && article.howTo ? howToSchema(article.howTo, url) : null;
+  return (
+    <>
+      <JsonLd data={data} />
+      {howTo ? <JsonLd data={howTo} /> : null}
+    </>
+  );
+}
+
+/** HowTo for an article whose body is an explicit procedure (see NewsArticle.howTo). */
+export function howToSchema(
+  howTo: NonNullable<NewsArticle["howTo"]>,
+  url: string,
+): WithContext<Thing> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howTo.name,
+    url,
+    step: howTo.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      url: `${url}#step-${i + 1}`,
+    })),
+  } as WithContext<Thing>;
 }
 
 /** Breadcrumb trail. `items` is ordered root → current, each with an absolute URL. */

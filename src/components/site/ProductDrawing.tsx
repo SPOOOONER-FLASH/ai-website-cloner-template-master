@@ -35,6 +35,20 @@ interface DrawingEntry {
 
 const INDEX = drawings as Record<string, DrawingEntry>;
 
+// The catalogue rows behind these five SVGs confuse outside width, connector
+// diameter and vertical connector pitch. The generated outlines therefore put
+// dimensions on the wrong axes. Keep the real source diagrams in the gallery,
+// but do not present these generated SVGs as orderable 1:1 drawings until the
+// catalogue and generator are corrected against factory evidence.
+// Evidence: docs/collaboration/2026-09-27-glass-pull-handle-dimension-evidence.md
+const UNVERIFIED_PULL_HANDLE_DRAWINGS = new Set([
+  "100-glass-door-handle",
+  "102-glass-door-handle",
+  "104-glass-door-handle",
+  "106-glass-door-handle",
+  "107-glass-door-handle",
+]);
+
 interface PrepEntry {
   model: string;
   diameter: number;
@@ -93,6 +107,7 @@ const COPY = {
 } as const;
 
 export function ProductDrawing({ slug, locale = "en" }: { slug: string; locale?: Locale }) {
+  if (UNVERIFIED_PULL_HANDLE_DRAWINGS.has(slug)) return null;
   const entry = INDEX[slug];
   if (!entry) return null;
   const t = dict(COPY, locale);

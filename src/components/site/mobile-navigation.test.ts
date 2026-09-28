@@ -6,7 +6,8 @@ import test from "node:test";
 const root = process.cwd();
 const read = (...parts: string[]) => readFileSync(join(root, ...parts), "utf8");
 
-const header = read("src", "components", "site", "SiteHeader.tsx");
+/* The header is a server component plus its client islands (2026-09-28): read both. */
+const header = [read("src", "components", "site", "SiteHeader.tsx"), read("src", "components", "site", "HeaderIslands.tsx")].join("\n");
 const drawer = read("src", "components", "site", "SiteMenuDrawer.tsx");
 const css = read("src", "app", "globals.css");
 
@@ -23,7 +24,9 @@ const css = read("src", "app", "globals.css");
 test("a nav rail names destinations on every viewport below xl", () => {
   assert.match(header, /"layout border-t border-line bg-surface xl:hidden"/);
   assert.match(header, /navigationStyles\.compactNavigation/);
-  assert.match(header, /className="nav-rail col-content"/);
+  /* 09-28: the destinations scroll; "Buy it now" is pinned beside the strip, not inside it. */
+  assert.match(header, /<div className="col-content flex min-w-0 items-center gap-16">\s*<nav[\s\S]*?className="nav-rail min-w-0 flex-1"/);
+  assert.match(header, /<\/nav>\s*<HeaderRailCta className="nav-rail-cta flex-none">/);
 
   /*
     Not a second copy of the labels: both rows read the same CMS-backed array.
@@ -51,8 +54,9 @@ test("the rail scrolls rather than wraps, and hides its scrollbar", () => {
   assert.match(css, /\.nav-rail\s*\{[\s\S]*mask-image/);
 });
 
-test("Product Finder carries weight in the rail", () => {
-  assert.match(header, /nav-rail-item nav-rail-item-emphasis/);
+test("no rail label is permanently bold: bold means the current page", () => {
+  /* 09-28: bold is reserved for the current page; no label is permanently emphasised. */
+  assert.doesNotMatch(header, /nav-rail-item nav-rail-item-emphasis/);
   assert.match(css, /\.nav-rail-item-emphasis\s*\{\s*font-weight:\s*var\(--font-weight-semibold\);\s*\}/);
 });
 

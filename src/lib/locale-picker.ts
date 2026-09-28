@@ -23,7 +23,7 @@ export { languageChoices, type LanguageChoice } from "./language-choices.ts";
  *
  * What we do have, and FSB's panel does not show, is who a buyer in that market actually
  * talks to. `representatives.ts` carries a real direct line for North America and real
- * addresses in Cologne and Remagen, each labelled with what it honestly is. A panel that
+ * addresses in Cologne and Brohl-Lützing, each labelled with what it honestly is. A panel that
  * says "United States · Los Angeles and Arlington · +1 703 967 7493" answers the question
  * a buyer opens a location menu to ask. A globe does not, and neither does a flag.
  *

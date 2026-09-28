@@ -34,11 +34,14 @@ export function CategoryBuyingGuide({
   categoryName,
   products,
   locale = "en",
+  withSchema = true,
 }: {
   categorySlug: string;
   categoryName: string;
   products: Product[];
   locale?: Locale;
+  /** false when CategoryGuide on the same page carries these items in its FAQPage. */
+  withSchema?: boolean;
 }) {
   const blocks = guideBlocks(categorySlug, products, locale);
   if (!blocks) return null;
@@ -46,7 +49,7 @@ export function CategoryBuyingGuide({
     es: "Cómo se especifica {category}",
     pt: "Como se especifica {category}",
   }).replace("{category}", categoryName.toLowerCase());
-  const faq: WithContext<FAQPage> | null = blocks.items.length
+  const faq: WithContext<FAQPage> | null = withSchema && blocks.items.length
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",

@@ -151,7 +151,10 @@ function body(): string {
     "",
     `> ${legalName} manufactures architectural door hardware in Guangdong, China — panic`,
     "> exit devices, mortise lock cases, lever handles, door closers, hinges and bathroom",
-    "> accessories — and exports to distributors and project buyers in over thirty markets.",
+    // "over thirty markets" left the FAQ on 09-24 as unverifiable (f3e1922c31a); these are
+    // the regions the client named.
+    "> accessories — and exports to distributors and project buyers in Europe, North America,",
+    "> South America, Turkey and Southeast Asia.",
     "",
     "This site is a product and company reference. Orders are not placed here: inquiries",
     "go to the export team by email, or through the company's Alibaba storefront.",

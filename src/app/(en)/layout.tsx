@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
+import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
   },
   // Driven by the single `indexable` flag in src/data/site.ts, not hard-coded here.
   robots: indexable
-    ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }
+    ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }
     : { index: false, follow: false },
 };
 
@@ -75,6 +76,9 @@ export default function EnglishRootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
+        {/* RSS of the guides and news (09-28, Google Discover). In the layout rather than in
+            metadata.alternates, which every article page replaces with its own. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE guides and news" href="/feed.xml" />
         <AnalyticsHead />
         {/* Organisation + WebSite schema, emitted once site-wide. Page-level schema
             (Product, BreadcrumbList, ItemList) is added by the individual pages. */}
@@ -84,6 +88,8 @@ export default function EnglishRootLayout({
       <body suppressHydrationWarning className="flex min-h-full flex-col">
         {/* Site chrome lives here so every route gets it. Each page supplies its own
             <main>, because the homepage's top margin and rhythm are page-specific. */}
+        {/* Above the header and in flow: it offers, it never covers. See the component. */}
+        <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}

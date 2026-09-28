@@ -37,7 +37,7 @@
 
 <h1>工厂填写表 — 挡住网站的三件</h1>
 <p class="sub">
-  生成时间：2026-09-24　·　由 <code>scripts/build-factory-gap-sheet.mjs</code> 现算，不是手写的<br>
+  生成时间：2026-09-28　·　由 <code>scripts/build-factory-gap-sheet.mjs</code> 现算，不是手写的<br>
   填完点最下面的「导出」，把出来的文字整段发回来就行。内容会自动保存在这台设备上，可以分几次填。
 </p>
 
@@ -133,7 +133,7 @@
   <tr><th style="width:150px">系列</th><th style="width:38%">包含型号</th><th style="width:18%">孔径 ⌀</th><th style="width:18%">孔中心距</th></tr>
   <tr>
       <td class="code">Lever Handle</td>
-      <td class="why">62 个型号：3431 SNET、3431 SSET、6491 SNET、6491 SSET、6491ABET、801 PBET、803 PBET、803 SBET 等</td>
+      <td class="why">60 个型号：3431 SNET、3431 SSET、6491 SNET、6491 SSET、6491ABET、801 PBET、803 PBET、803 SBET 等</td>
       <td><input class="ans" data-id="fix-dia:Lever Handle" placeholder="孔径 mm"></td>
       <td><input class="ans" data-id="fix-cc:Lever Handle" placeholder="孔中心距 mm"></td>
     </tr>
@@ -174,16 +174,16 @@
       <td><input class="ans" data-id="fix-cc:Hyland 600" placeholder="孔中心距 mm"></td>
     </tr>
 <tr>
-      <td class="code">Hyland Deadbolt</td>
-      <td class="why">1 个型号：Keyed Deadbolt Lock Set</td>
-      <td><input class="ans" data-id="fix-dia:Hyland Deadbolt" placeholder="孔径 mm"></td>
-      <td><input class="ans" data-id="fix-cc:Hyland Deadbolt" placeholder="孔中心距 mm"></td>
-    </tr>
-<tr>
       <td class="code">Hyland Tubular</td>
       <td class="why">1 个型号：Black Tubular Lever Lock Set</td>
       <td><input class="ans" data-id="fix-dia:Hyland Tubular" placeholder="孔径 mm"></td>
       <td><input class="ans" data-id="fix-cc:Hyland Tubular" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Hyland Deadbolt</td>
+      <td class="why">1 个型号：Keyed Deadbolt Lock Set</td>
+      <td><input class="ans" data-id="fix-dia:Hyland Deadbolt" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Hyland Deadbolt" placeholder="孔中心距 mm"></td>
     </tr>
 <tr>
       <td class="code">Hyland Lever</td>
@@ -192,6 +192,34 @@
       <td><input class="ans" data-id="fix-cc:Hyland Lever" placeholder="孔中心距 mm"></td>
     </tr>
 </table>
+
+
+<h2>四、这几个型号的材质，图纸和数据对不上</h2>
+<p class="lead">
+  这几条记录里，<strong>按图纸写的说明</strong>说机体是<strong>镀锌</strong>的，
+  而材质字段写的是<strong>锌合金</strong>。这是两种不同的东西——镀锌是钢件表面镀一层锌，
+  锌合金是压铸件——买家挑耐腐蚀和强度的时候要看这个，所以材质字段先空着，没有猜。<br>
+  <strong>请只回答一句：是锌合金压铸，还是镀锌的钢？</strong>如果是镀锌，请说明底材是什么。
+</p>
+<table>
+  <tr><th style="width:80px">型号</th><th style="width:52%">对不上的地方</th><th>是哪一种</th></tr>
+  <tr>
+      <td class="code">L016</td>
+      <td class="why">图纸摘要写的是「zinc-plated / 镀锌」，而材质字段原本写的是「Zinc Alloy」。<br>Tubular latch with a rectangular forend and a zinc-plated body; backset confirmed on drawing before the order.</td>
+      <td><input class="ans" data-id="material:L016" placeholder="锌合金压铸，还是镀锌的钢？"></td>
+    </tr>
+<tr>
+      <td class="code">L025</td>
+      <td class="why">图纸摘要写的是「zinc-plated / 镀锌」，而材质字段原本写的是「Zinc Alloy」。<br>Tubular latch with a round-cornered forend and a zinc-plated body; backset confirmed on drawing before the order.</td>
+      <td><input class="ans" data-id="material:L025" placeholder="锌合金压铸，还是镀锌的钢？"></td>
+    </tr>
+<tr>
+      <td class="code">L026</td>
+      <td class="why">图纸摘要写的是「zinc-plated / 镀锌」，而材质字段原本写的是「Zinc Alloy」。<br>Tubular latch with a cylindrical zinc-plated body; backset confirmed on drawing before the order.</td>
+      <td><input class="ans" data-id="material:L026" placeholder="锌合金压铸，还是镀锌的钢？"></td>
+    </tr>
+</table>
+
 
 <textarea id="out" placeholder="点「导出」之后，答案会出现在这里，整段复制发回来即可。" readonly></textarea>
 

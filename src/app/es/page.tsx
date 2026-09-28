@@ -11,7 +11,7 @@ import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
-import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home-es";
 import { siteName } from "@/data/site";
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function SpanishHomePage() {
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start">
       <div className="modules mb-96 lg:mb-136">
         <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} homeAccent />
@@ -49,7 +49,7 @@ export default function SpanishHomePage() {
         <DemandShowcase locale="es" />
         <Spacer heights={content.spacers.s96} />
 
-        <ArgentinaAr4Showcase locale="es" />
+        <BauShowcase locale="es" />
         <Spacer heights={content.spacers.s96} />
         {/*
           307 and 311 sit directly above the panic-exit hero: the flagship pair first, then

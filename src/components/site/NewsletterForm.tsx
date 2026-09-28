@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 import { Button } from "./Button";
+import { PrivacyNote } from "./PrivacyNote";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
@@ -128,6 +129,7 @@ export function NewsletterForm() {
           {message || "Business email and consent are required."}
         </p>
       </div>
+      <PrivacyNote />
     </form>
   );
 }

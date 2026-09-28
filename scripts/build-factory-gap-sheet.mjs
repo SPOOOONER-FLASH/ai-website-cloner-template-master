@@ -118,6 +118,31 @@ const plateHtml = plateRows
   )
   .join("\n");
 
+/*
+  4 — records where the record contradicts itself about its own material.
+
+  Driven off specSources rather than a hand-kept list, so the section shrinks by itself:
+  fill the material in, drop the specSources.material block, and the row stops printing.
+*/
+const materialConflicts = products
+  .filter((p) => !isRayen(p) && p.specSources?.material?.basis === "conflict-unresolved")
+  .map((p) => ({
+    model: p.model,
+    name: p.name,
+    was: p.specSources.material.wasStated ?? "",
+    summary: p.summary ?? "",
+  }));
+
+const conflictHtml = materialConflicts
+  .map(
+    (c) => `<tr>
+      <td class="code">${esc(c.model)}</td>
+      <td class="why">图纸摘要写的是「zinc-plated / 镀锌」，而材质字段原本写的是「${esc(c.was)}」。<br>${esc(c.summary)}</td>
+      <td>${field(`material:${c.model}`, "锌合金压铸，还是镀锌的钢？")}</td>
+    </tr>`,
+  )
+  .join("\n");
+
 const familyHtml = familyRows
   .map(
     (f) => `<tr>
@@ -212,6 +237,20 @@ const html = `<!doctype html>
   ${familyHtml}
 </table>
 
+${materialConflicts.length ? `
+<h2>四、这几个型号的材质，图纸和数据对不上</h2>
+<p class="lead">
+  这几条记录里，<strong>按图纸写的说明</strong>说机体是<strong>镀锌</strong>的，
+  而材质字段写的是<strong>锌合金</strong>。这是两种不同的东西——镀锌是钢件表面镀一层锌，
+  锌合金是压铸件——买家挑耐腐蚀和强度的时候要看这个，所以材质字段先空着，没有猜。<br>
+  <strong>请只回答一句：是锌合金压铸，还是镀锌的钢？</strong>如果是镀锌，请说明底材是什么。
+</p>
+<table>
+  <tr><th style="width:80px">型号</th><th style="width:52%">对不上的地方</th><th>是哪一种</th></tr>
+  ${conflictHtml}
+</table>
+` : ""}
+
 <textarea id="out" placeholder="点「导出」之后，答案会出现在这里，整段复制发回来即可。" readonly></textarea>
 
 </div>
@@ -284,3 +323,8 @@ console.log(
   `  三、固定孔           HYDE 执手/拉手 ${handles.length} 个，缺固定孔 ${missingFixing.length} 个，` +
     `归成 ${familyRows.length} 个系列`,
 );
+if (materialConflicts.length) {
+  console.log(
+    `  四、材质对不上       ${materialConflicts.length} 个型号：${materialConflicts.map((c) => c.model).join(" ")}`,
+  );
+}

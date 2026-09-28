@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { linkIntent, newDepths, pageType, readStyle } from "@/lib/engagement";
+import { AI_SOURCES, rememberFirstTouch } from "@/lib/first-touch";
 
 declare global {
   interface Window {
@@ -55,6 +56,17 @@ function tagClarity(key: string, value: string) {
 
 export function EngagementTracker() {
   const pathname = usePathname();
+
+  /* First touch of the session, carried to the inquiry (src/lib/first-touch.ts). Once per
+     full page load: client-side navigations have our own page as their referrer. */
+  useEffect(() => {
+    try {
+      const source = rememberFirstTouch(window.sessionStorage, document.referrer, window.location.search, window.location.hostname);
+      if (source) tagClarity("first_touch", AI_SOURCES.has(source) ? `ai:${source}` : source);
+    } catch {
+      /* sessionStorage itself can throw on access in a locked-down browser */
+    }
+  }, []);
 
   useEffect(() => {
     const type = pageType(pathname);

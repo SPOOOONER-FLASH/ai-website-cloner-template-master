@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
+import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
   },
   robots: indexable
-    ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }
+    ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }
     : { index: false, follow: false },
 };
 
@@ -72,15 +73,19 @@ export default function SpanishRootLayout({
   return (
     <html lang="es" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
+        {/* RSS of this locale's guides and news (09-28, Google Discover). See (en)/layout.tsx. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE guías y noticias" href="/es/feed.xml" />
         <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />
       </head>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
+        {/* Above the header and in flow: it offers, it never covers. See the component. */}
+        <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
-          <SiteHeader categories={getMenuCategories()} />
+          <SiteHeader categories={getMenuCategories()} locale="es" />
           {children}
-          <SiteFooter />
+          <SiteFooter locale="es" />
         </div>
         <LazyPromoDialog />
         <Analytics />

@@ -1,34 +1,31 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { mirrorHref } from "@/lib/spanish-mirror";
-import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
-import { LANGUAGE_LABELS as FOOTER_LANGUAGE_LABELS, dict, tx } from "@/lib/i18n-client";
+import type { Locale } from "@/data/locales";
+import { dict, tx } from "@/lib/i18n";
 import { socialLinks } from "@/data/site";
-import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
+import { footerNav, localisedHref, navLabel, siteSettings, whatsappHref } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
 import { EmailLink } from "./EmailLink";
+import { FooterCurrentLink, FooterLanguageLinks } from "./FooterPathAware";
 
 /**
- * Imprint and Privacy Notice have no route in the plan yet — they are legal pages,
- * not part of P2's six. They point at /company until someone writes them.
+ * Imprint has no route yet and points at /company until someone writes it. The privacy
+ * notice is /privacy (English and German only), so Spanish and Portuguese link the English page.
  */
 const LEGAL_LINKS = {
   en: [
     { label: "Imprint", href: "/company" },
     { label: "Contact", href: "/contact" },
-    { label: "Privacy Notice", href: "/company" },
+    { label: "Privacy Notice", href: "/privacy" },
   ],
   es: [
     { label: "Aviso legal", href: "/es/company" },
     { label: "Contacto", href: "/es/contact" },
-    { label: "Privacidad", href: "/es/company" },
+    { label: "Privacidad", href: "/privacy" },
   ],
   pt: [
     { label: "Informações legais", href: "/pt/company" },
     { label: "Contato", href: "/pt/contact" },
-    { label: "Privacidade", href: "/pt/company" },
+    { label: "Privacidade", href: "/privacy" },
   ],
 } as const;
 
@@ -37,34 +34,48 @@ const LEGAL_LINKS = {
   unreachable from the homepage in all three languages — in the sitemap, but no rendered
   link led there, so crawlers and buyers could only arrive by search. The Portuguese fire-door
   landing page was an orphan for the same reason; it has no English or Spanish twin.
+
+  09-28 (client: 「/product-studies/ 别的地方都看不见……每条内链都有显眼可达的位置」): the menu
+  drawer lists every section, but it renders only while open, so no crawler sees it. The
+  footer is the one list in every exported page. The configurator (linked from 2 pages),
+  Hardware in focus (1), the BAU column (1), the FAQ and the price list joined it.
+  src/components/site/internal-link-placement.test.ts fails when a section is in neither.
 */
 const REFERENCE_LINKS = {
   en: [
+    { label: "Configurator", href: "/configurator" },
+    { label: "Hardware in focus", href: "/product-studies" },
     { label: "Finish codes", href: "/finishes" },
     { label: "Glossary", href: "/glossary" },
     { label: "Model lookup", href: "/model-lookup" },
     { label: "Cylinder calculator", href: "/euro-cylinder-calculator" },
     { label: "Documents", href: "/documents" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Price list", href: "/request/price-list" },
+    { label: "BAU 2027 Munich", href: "/bau-2027" },
   ],
   es: [
+    { label: "Configurador", href: "/es/configurator" },
+    { label: "Herrajes en detalle", href: "/es/product-studies" },
     { label: "Códigos de acabado", href: "/es/finishes" },
     { label: "Glosario", href: "/es/glossary" },
     { label: "Buscar por modelo", href: "/es/model-lookup" },
     { label: "Calculadora de cilindro", href: "/es/euro-cylinder-calculator" },
     { label: "Documentos", href: "/es/documents" },
+    { label: "Preguntas frecuentes", href: "/es/faq" },
   ],
   pt: [
+    { label: "Configurador", href: "/pt/configurator" },
+    { label: "Ferragens em detalhe", href: "/pt/product-studies" },
     { label: "Códigos de acabamento", href: "/pt/finishes" },
     { label: "Glossário", href: "/pt/glossary" },
     { label: "Busca por modelo", href: "/pt/model-lookup" },
     { label: "Calculadora de cilindro", href: "/pt/euro-cylinder-calculator" },
     { label: "Documentos", href: "/pt/documents" },
+    { label: "Perguntas frequentes", href: "/pt/faq" },
     { label: "Ferragens para porta corta-fogo", href: "/pt/ferragens-porta-corta-fogo" },
   ],
 } as const;
-
-/** The endonym each language link carries — a reader scans for their own word for it. */
-const LANGUAGE_LABELS: Record<Locale, string> = FOOTER_LANGUAGE_LABELS;
 
 /**
  * Footer — 313px, `py-48`, full-bleed top rule.
@@ -79,10 +90,13 @@ const LANGUAGE_LABELS: Record<Locale, string> = FOOTER_LANGUAGE_LABELS;
  *
  * Hierarchy here comes from whitespace and the single --color-line rule (rule 4).
  * No shadow, no card, no radius.
+ *
+ * SERVER COMPONENT since 2026-09-28. Each locale's layout passes its `locale`, so the
+ * footer no longer reads the URL to find its language. The two things that genuinely
+ * depend on the current path — the current-page span and the other-language links — are
+ * the islands in FooterPathAware.tsx.
  */
-export function SiteFooter() {
-  const pathname = usePathname();
-  const locale = localeFromPath(pathname);
+export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
   /* Copy in the page's own language, in source order en / es / pt. */
   /* Overlay locales answer from ui.json (keyed by the English sentence); es/pt keep their literals. */
   const say = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
@@ -101,25 +115,6 @@ export function SiteFooter() {
     Rendered as plain text instead of a link, with aria-current so assistive technology
     is told the same thing the styling says. Nothing to press, nothing to fail.
   */
-  /*
-    The counterpart of THIS page in every OTHER language, or that language's home when
-    this page has no mirror. Never a 404 out of the footer — `mirrorHref` is the same
-    function the header panel uses and it reads the same mirror lists as the hreflang tags.
-  */
-  const englishPath = englishPathOf(pathname);
-  const languageLinks = locales
-    .filter((code) => code !== locale)
-    .map((code) => ({
-      code,
-      label: LANGUAGE_LABELS[code],
-      href: mirrorHref(englishPath, code).href,
-    }));
-
-  const isCurrent = (href: string) => {
-    const strip = (value: string) => (value.replace(/\/*$/, "") || "/");
-    return strip(href) === strip(pathname);
-  };
-
   return (
     <div className="mt-48 flex-grow-0 sm:mt-96">
       {/* Full-bleed rule: the border spans the viewport, the inner .layout bands the content. */}
@@ -130,18 +125,21 @@ export function SiteFooter() {
               <ul className="col-span-full grid grid-cols-subgrid items-start gap-x gap-y-20 md:flex md:flex-wrap md:gap-x-64">
                 {[...dict(LEGAL_LINKS, locale), ...dict(REFERENCE_LINKS, locale)].map((link) => (
                   <li key={link.label} className="col-span-2 md:col-span-3">
-                    {isCurrent(link.href) ? (
-                      <span aria-current="page" className="text-c1 text-ink-secondary">
-                        {link.label}
-                      </span>
-                    ) : (
+                    <FooterCurrentLink
+                      href={link.href}
+                      current={
+                        <span aria-current="page" className="text-c1 text-ink-secondary">
+                          {link.label}
+                        </span>
+                      }
+                    >
                       <Link
                         href={link.href}
                         className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
                       >
                         {link.label}
                       </Link>
-                    )}
+                    </FooterCurrentLink>
                   </li>
                 ))}
                 {/*
@@ -170,18 +168,7 @@ export function SiteFooter() {
                   anywhere on the site, and the anchor on a /pt/ page offered Español.
                   Derived from `locales` now, so a fourth language cannot repeat it.
                 */}
-                {languageLinks.map((language) => (
-                  <li key={language.code} className="col-span-2 md:col-span-3">
-                    <Link
-                      href={language.href}
-                      hrefLang={language.code}
-                      lang={language.code}
-                      className="short-marker short-marker-compact inline-flex min-h-24 items-center text-c1 text-brand no-underline hover:text-brand-hover"
-                    >
-                      {language.label}
-                    </Link>
-                  </li>
-                ))}
+                <FooterLanguageLinks locale={locale} />
                 <li className="col-span-2 md:col-span-3">
                   <button
                     type="button"
@@ -232,13 +219,16 @@ export function SiteFooter() {
                   const href = localisedHref(link.href, locale);
                   return (
                     <li key={link.href}>
-                      {isCurrent(href) ? (
-                        <span aria-current="page" className="text-c1 text-ink-secondary">
-                          {navLabel(link, locale)}
-                        </span>
-                      ) : (
+                      <FooterCurrentLink
+                        href={href}
+                        current={
+                          <span aria-current="page" className="text-c1 text-ink-secondary">
+                            {navLabel(link, locale)}
+                          </span>
+                        }
+                      >
                         <ArrowLink href={href}>{navLabel(link, locale)}</ArrowLink>
-                      )}
+                      </FooterCurrentLink>
                     </li>
                   );
                 })}
@@ -275,6 +265,18 @@ export function SiteFooter() {
                       address={siteSettings.contact.technicalEmail}
                       className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     />
+                  </li>
+                ) : null}
+                {whatsappHref() ? (
+                  <li>
+                    <a
+                      href={whatsappHref()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                    >
+                      WhatsApp {siteSettings.contact.whatsapp}
+                    </a>
                   </li>
                 ) : null}
               </ul>

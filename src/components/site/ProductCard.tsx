@@ -88,7 +88,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
         */}
         <p className="mt-8 text-c1 text-ink-secondary">
           {product.modelTbc
-            ? tx(locale, "Reference available on request", { es: "Referencia disponible a pedido", pt: "Referência disponível sob consulta" })
+            ? tx(locale, "Model code to be confirmed", { es: "Código de modelo por confirmar", pt: "Código do modelo a confirmar" })
             : `${tx(locale, "Model", { es: "Modelo", pt: "Modelo" })} ${product.model}`}
           {product.videos?.length ? (
             <span className="text-ink-secondary"> · {tx(locale, "Video", { es: "Vídeo", pt: "Vídeo" })}</span>

@@ -1,0 +1,15 @@
+{
+  "_note": "chatgpt.com landing pages the client saw in Clarity / GA4. Clarity has no export, so they are recorded here by hand with the date seen. Read by scripts/build-ai-landing-gaps.mjs.",
+  "landings": [
+    {
+      "path": "/products/lock-cases/lc04-85-60-lock-case/",
+      "seen": "2026-09-28",
+      "from": "chatgpt.com, Switzerland, landed directly"
+    },
+    {
+      "path": "/products/brass-steel-hinges/ssh018-brass-and-steel-hinges/",
+      "seen": "2026-09-28",
+      "from": "chatgpt.com, Australia, via /products/ then hinges; downloaded the catalog PDF and sent an inquiry"
+    }
+  ]
+}

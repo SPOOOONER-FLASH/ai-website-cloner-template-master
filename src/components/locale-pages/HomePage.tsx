@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BauShowcase } from "@/components/site/BauEntry";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
@@ -46,7 +46,7 @@ export function homeMetadata(locale: Locale): Metadata {
 export function HomePage({ locale }: { locale: Locale }) {
   const content = homeContent(locale);
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start">
       <div className="modules mb-96 lg:mb-136">
         <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} homeAccent />
@@ -60,7 +60,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       <div className="modules">
         <DemandShowcase locale={locale} />
         <Spacer heights={content.spacers.s96} />
-        <ArgentinaAr4Showcase locale={locale} />
+        <BauShowcase locale={locale} />
         <Spacer heights={content.spacers.s96} />
         <FlagshipTooling locale={locale} />
         <FeatureColumns locale={locale} />

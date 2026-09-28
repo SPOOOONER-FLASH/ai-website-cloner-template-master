@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
+import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import { absoluteUrl, defaultDescription, defaultTitle, indexable, siteName, siteUrl } from "@/data/site";
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
     images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
   },
   robots: indexable
-    ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }
+    ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }
     : { index: false, follow: false },
 };
 
@@ -72,6 +73,8 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
       className={`h-full antialiased ${archivo.variable}`}
     >
       <head>
+        {/* This locale's RSS, so Discover and readers find the fr articles, not the English ones. */}
+        <link rel="alternate" type="application/rss+xml" title="HYDE — fr" href="/fr/feed.xml" />
         <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />
@@ -79,10 +82,12 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
       <body suppressHydrationWarning className="flex min-h-full flex-col">
         {/* This locale's client dictionary — one chunk, this locale only (src/lib/i18n-client.ts). */}
         <I18nClientBundle />
+        {/* Above the header and in flow: it offers, it never covers. See the component. */}
+        <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
-          <SiteHeader categories={getMenuCategories()} />
+          <SiteHeader categories={getMenuCategories()} locale={LOCALE} />
           {children}
-          <SiteFooter />
+          <SiteFooter locale={LOCALE} />
         </div>
         <LazyPromoDialog />
         <Analytics />

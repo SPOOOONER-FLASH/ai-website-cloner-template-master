@@ -2,6 +2,7 @@ import { articleFaqHeading, articleFaqItems, articleFaqLocale } from "@/lib/arti
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { newsKindLabels, formatNewsDate } from "@/data/news";
+import { CREDENTIAL_TRANSLATIONS, authorHref, authorPath, authorPortrait } from "@/data/authors";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -10,6 +11,7 @@ import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
 import { articleBlocks } from "@/lib/article-layout";
 import { ArticleBody } from "./ArticleBody";
+import { MasterKeyHierarchyFigure, hasMasterKeyFigure } from "./MasterKeyHierarchyFigure";
 import { DataTable } from "./DataTable";
 import { InlineText } from "./InlineText";
 import { ArticleContents } from "./ArticleContents";
@@ -99,6 +101,7 @@ export function NewsDetail({
   section?: "news" | "guides";
 }) {
   const t = dict(COPY, locale);
+  const portrait = authorPortrait(article.author?.name);
   const sectionLabel = dict(SECTION_LABEL[section], locale) ?? SECTION_LABEL[section].en;
   const base = locale === "en" ? "" : `/${locale}`;
   /*
@@ -143,6 +146,12 @@ export function NewsDetail({
   */
   const body = localeBody?.length ? localeBody : article.body;
   const blocks = articleBlocks(body);
+  // The master key guide carries a hierarchy chart after its levels table (en/es/pt only).
+  const levelsTable = blocks.findIndex((block) => block.kind === "table");
+  const figure =
+    article.slug === "master-key-hierarchy-planning-2026" && hasMasterKeyFigure(locale) && levelsTable >= 0
+      ? { afterIndex: levelsTable, node: <MasterKeyHierarchyFigure locale={locale} /> }
+      : undefined;
   const overview = tx(locale, "Overview", { es: "Resumen", pt: "Visão geral" });
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
@@ -185,7 +194,8 @@ export function NewsDetail({
             {summary}
           </p>
 
-          <div className="col-span-full">
+          {/* Phones already have the breadcrumb one screen up; the repeat is desktop-only (09-28). */}
+          <div className="col-span-full max-md:hidden">
             <Link
               href={`${base}/${section}/`}
               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
@@ -207,6 +217,12 @@ export function NewsDetail({
             >
               {formatNewsDate(article.publishedAt, locale)}
             </time>
+            {article.updatedAt && article.updatedAt > article.publishedAt ? (
+              <p className="mt-4 text-c2 text-ink-secondary">
+                {tx(locale, "Updated", { es: "Actualizado", pt: "Atualizado" })}{" "}
+                <time dateTime={article.updatedAt}>{formatNewsDate(article.updatedAt, locale)}</time>
+              </p>
+            ) : null}
 
             {/*
               THE BYLINE.
@@ -218,9 +234,30 @@ export function NewsDetail({
               reviewer line can be added beside this — empty until a real name exists.
             */}
             {article.author ? (
-              <p className="mt-16 text-c2 text-ink-secondary">
+              <div className="mt-16 flex items-start gap-12">
+                {/*
+                  A real photograph of the person named, supplied by the client, or nothing.
+                  `alt` is empty on purpose: the name is right beside it, and a screen reader
+                  announcing "Johnson Liu, Johnson Liu" is worse than announcing it once.
+                */}
+                {portrait ? (
+                  <img
+                    src={portrait.src}
+                    alt=""
+                    width={portrait.width}
+                    height={portrait.height}
+                    loading="lazy"
+                    className="h-48 w-48 flex-none rounded-[2px] object-cover"
+                  />
+                ) : null}
+                <p className="text-c2 text-ink-secondary">
                 <span className="text-ink">
-                  {article.author.url ? (
+                  {/* The on-site profile where one exists (09-28); otherwise the author's own page. */}
+                  {authorPath(article.author) ? (
+                    <Link href={authorHref(article.author, locale)!} rel="author" className="short-marker">
+                      {article.author.name}
+                    </Link>
+                  ) : article.author.url ? (
                     <a
                       href={article.author.url}
                       rel="author noopener noreferrer"
@@ -237,9 +274,12 @@ export function NewsDetail({
                   {tx(locale, article.author.role, { es: article.author.roleEs, pt: article.author.rolePt })}
                 </span>
                 {article.author.credential ? (
-                  <span className="block text-ink-secondary">{article.author.credential}</span>
+                  <span className="block text-ink-secondary">
+                    {tx(locale, article.author.credential, CREDENTIAL_TRANSLATIONS[article.author.credential])}
+                  </span>
                 ) : null}
-              </p>
+                </p>
+              </div>
             ) : null}
 
             {section === "news" && <div className="mt-32 border-t border-line pt-16">
@@ -298,7 +338,7 @@ export function NewsDetail({
               table rows — reached the live page as literal `##` and `| a | b |`. The block
               parser already ran for news (`blocks` above); its output was just unused.
             */}
-            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : blocks.map((block, index) => {
+            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} figure={figure} /> : blocks.map((block, index) => {
               if (block.kind === "heading") {
                 return block.level === 2 ? (
                   <h2 key={block.id} id={block.id} className="mt-48 text-h3 text-ink">

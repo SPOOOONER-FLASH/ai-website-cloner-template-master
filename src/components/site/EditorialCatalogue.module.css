@@ -51,7 +51,7 @@
 .primary { margin-top: 48px; border-bottom: 1px solid var(--color-line); }
 .primary a { display: flex; align-items: center; gap: 24px; border-top: 1px solid var(--color-line); padding-block: 22px; }
 .primaryLabel { font-size: 2.4rem; font-weight: 400; line-height: 1.2; }
-.rail { display: flex; flex-direction: column; min-width: 0; }
+.rail { display: flex; flex-direction: column; gap: 48px; min-width: 0; }
 .groups { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 48px; }
 .groupTitle { font-size: 1.2rem; font-weight: 600; margin-bottom: 22px; }
 .menuLink { display: block; padding-block: 7px; font-size: 1.6rem; line-height: 1.4; }
@@ -111,7 +111,7 @@
  .primary { margin-top: 30px; }
  .primaryLabel { font-size: 2rem; }
  .primary a { padding-block: 18px; }
- .contact { margin-top: 36px; }
+ .contact { margin-top: 0; } /* the rail gap already spaces it (09-28) */
  .promise { font-size: 2rem; }
  .groupTitle { margin-bottom: 12px; }
  .menuLink { font-size: 1.4rem; }

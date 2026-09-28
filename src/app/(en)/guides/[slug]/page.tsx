@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { authorHref } from "@/data/authors";
+import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
 import { alternateLanguages, defaultOgImage } from "@/lib/seo";
@@ -42,15 +44,18 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
       title,
       description,
       publishedTime: article.publishedAt,
+      ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
+      ...(article.author ? { authors: [authorHref(article.author, "en", true) ?? article.author.name] } : {}),
+      section: "Guides",
       images: article.heroImage.src
-        ? [{ url: absoluteUrl(article.heroImage.src), alt: article.heroImage.label }]
+        ? [{ url: absoluteUrl(articleShareImage("guides", slug) ?? article.heroImage.src), ...(articleShareImage("guides", slug) ? SHARE_IMAGE_SIZE : {}), alt: article.heroImage.label }]
         : [{ url: absoluteUrl(defaultOgImage), width: 1200, height: 630, alt: "HYDE architectural door hardware" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [absoluteUrl(article.heroImage.src ?? defaultOgImage)],
+      images: [absoluteUrl(articleShareImage("guides", slug) ?? article.heroImage.src ?? defaultOgImage)],
     },
   };
 }

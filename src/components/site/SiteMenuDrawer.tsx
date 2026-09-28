@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import type { MenuCategory } from "@/data/categories";
 import type { Locale } from "@/data/locales";
-import { siteSettings } from "@/data/navigation";
+import { siteSettings, whatsappHref } from "@/data/navigation";
 import { socialLinks } from "@/data/site";
 import { CloseIcon, Wordmark } from "./icons";
 import { EmailLink } from "./EmailLink";
@@ -33,12 +33,14 @@ interface SiteMenuDrawerProps {
     labels and linked out of /pt/ entirely.
   */
   locale: Locale;
+  /** Presence state from useOverlayPresence: "closed" while the exit transition plays. */
+  state?: "open" | "closed";
   currentPath: string;
   categories: MenuCategory[];
   onClose: () => void;
 }
 
-export function SiteMenuDrawer({ locale, currentPath, categories, onClose }: SiteMenuDrawerProps) {
+export function SiteMenuDrawer({ locale, state = "open", currentPath, categories, onClose }: SiteMenuDrawerProps) {
   const prefix = locale === "en" ? "" : `/${locale}`;
   /* Overlay locales answer from ui.json (keyed by the English sentence); es/pt keep their literals. */
   const say = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
@@ -80,13 +82,18 @@ export function SiteMenuDrawer({ locale, currentPath, categories, onClose }: Sit
 
   const contact = <div className={styles.contact}>
     <p className={styles.promise}>{experience.exportPromise}</p>
-    {siteSettings.contact.email ? <EmailLink address={siteSettings.contact.email}
-      className="short-marker inline-block break-all text-c1 text-ink" /> : null}
+    {/* One channel per line (09-28: both were inline-block and ran together as "…comWhatsApp"). */}
+    <ul className="space-y-8">
+      {siteSettings.contact.email ? <li><EmailLink address={siteSettings.contact.email}
+        className="short-marker inline-block break-all text-c1 text-ink" /></li> : null}
+      {whatsappHref() ? <li><a href={whatsappHref()} target="_blank" rel="noopener noreferrer"
+        className="short-marker inline-block text-c1 text-ink">WhatsApp {siteSettings.contact.whatsapp}</a></li> : null}
+    </ul>
   </div>;
 
-  return <div className="fixed inset-0 z-50">
+  return <div className="overlay-presence fixed inset-0 z-50" data-state={state}>
     <div id="site-menu-dialog" ref={panelRef} role="dialog" aria-modal="true"
-      aria-labelledby="site-menu-title" onKeyDown={handleKeyDown} className={styles.menu}>
+      aria-labelledby="site-menu-title" onKeyDown={handleKeyDown} className={`overlay-panel ${styles.menu}`}>
       <div className={styles.menuInner}>
         <div className={styles.menuHeader}>
           <Link href={`${prefix}/`} onClick={onClose} aria-label="HYDE home"><Wordmark /></Link>

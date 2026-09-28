@@ -1,6 +1,6 @@
 {
   " — Canton Hyland manufactures panic exit devices, locks and architectural door hardware for commercial and institutional projects, supplying specifiers and distributors internationally.": [
-    "src/components/site/NewsDetail.tsx:49"
+    "src/components/site/NewsDetail.tsx:51"
   ],
   " — the catalog on this site is a subset of what we manufacture.": [
     "src/components/site/ProductFinder.tsx:69"
@@ -34,16 +34,16 @@
     "src/components/locale-pages/DownloadsPage.tsx:54"
   ],
   "{count} models made in Guangdong, China.": [
-    "src/components/locale-pages/CategoryPage.tsx:33"
+    "src/components/locale-pages/CategoryPage.tsx:35"
   ],
   "{count} models made in Guangdong. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:31"
+    "src/components/locale-pages/CategoryPage.tsx:33"
   ],
   "{count} models manufactured in Guangdong, China. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:30"
+    "src/components/locale-pages/CategoryPage.tsx:32"
   ],
   "{count} models. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:32"
+    "src/components/locale-pages/CategoryPage.tsx:34"
   ],
   "{count} models. Narrow them by what is on your schedule.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:85"
@@ -56,6 +56,9 @@
   ],
   "{materials}, with the tube wall thickness stated on the model where the record carries it. Ask for a load statement by model before specifying for a care facility; we send the test figure we have and say when we have none.": [
     "src/data/category-buying-guides.ts:294"
+  ],
+  "{missing} of {n} models do not state this yet.": [
+    "src/components/site/CategoryGuide.tsx:24"
   ],
   "{n} dimension drawings, drawn only from published dimensions": [
     "src/data/feature-columns.ts:180"
@@ -85,13 +88,13 @@
     "src/components/site/ModelLookup.tsx:92"
   ],
   "{name} catalog": [
-    "src/components/locale-pages/CategoryPage.tsx:99"
+    "src/components/locale-pages/CategoryPage.tsx:102"
   ],
   "{name}, Manufacturer": [
-    "src/components/locale-pages/CategoryPage.tsx:38"
+    "src/components/locale-pages/CategoryPage.tsx:40"
   ],
   "{name}, Manufacturer & Supplier": [
-    "src/components/locale-pages/CategoryPage.tsx:37"
+    "src/components/locale-pages/CategoryPage.tsx:39"
   ],
   "{readable} of {total} published models carry a finish in the number itself. The rest state it in the specification instead.": [
     "src/components/locale-pages/FinishesPage.tsx:42"
@@ -106,13 +109,13 @@
     "src/components/site/CylinderCalculator.tsx:64"
   ],
   "← Back to all guides": [
-    "src/components/site/NewsDetail.tsx:193"
+    "src/components/site/NewsDetail.tsx:203"
   ],
   "← Back to all news": [
-    "src/components/site/NewsDetail.tsx:42"
+    "src/components/site/NewsDetail.tsx:44"
   ],
   "← Back to previous results": [
-    "src/components/site/ProductDetail.tsx:74"
+    "src/components/site/ProductDetail.tsx:85"
   ],
   "1 model": [
     "src/components/site/OrderCodeTables.tsx:34"
@@ -126,11 +129,20 @@
   "1 product moved": [
     "src/components/site/ModelLookup.tsx:91"
   ],
+  "1. Who is responsible": [
+    "src/data/privacy-policy.ts:60"
+  ],
   "101–200 people": [
     "src/data/company.ts:47"
   ],
+  "2. When you visit the site": [
+    "src/data/privacy-policy.ts:68"
+  ],
   "3,000–5,000 m²": [
     "src/data/company.ts:48"
+  ],
+  "3. When you contact us or request something": [
+    "src/data/privacy-policy.ts:86"
   ],
   "307 and 311": [
     "src/lib/flagship-tooling.ts:107"
@@ -141,11 +153,29 @@
   "3D reference models": [
     "src/components/site/ProductModel.tsx:13"
   ],
+  "4. Analytics": [
+    "src/data/privacy-policy.ts:107"
+  ],
+  "5. Links to other sites": [
+    "src/data/privacy-policy.ts:117"
+  ],
+  "6. Who receives your data": [
+    "src/data/privacy-policy.ts:124"
+  ],
+  "7. International transfers": [
+    "src/data/privacy-policy.ts:131"
+  ],
   "79 pages, every published model with its spec table and an index at the back. Searchable text, bookmarks by family, and it opens as a spread. The document is in English.": [
-    "src/components/locale-pages/ContactPage.tsx:145"
+    "src/components/locale-pages/ContactPage.tsx:156"
+  ],
+  "8. Your rights": [
+    "src/data/privacy-policy.ts:138"
   ],
   "8mm and 9mm look alike in a photograph and are not interchangeable — a 8mm spindle in a 9mm follower has play in it, and play becomes a handle that droops and then a mechanism that wears. Check the square before mixing a handle from one supplier with a lock from another.": [
     "src/data/hardware-terms.ts:351"
+  ],
+  "9. Other": [
+    "src/data/privacy-policy.ts:147"
   ],
   "9001 catalog lever handle": [
     "src/components/site/ProductsEditorialOverview.tsx:28"
@@ -272,22 +302,22 @@
     "src/lib/configurator.ts:433"
   ],
   "About Canton Hyland": [
-    "src/components/site/NewsDetail.tsx:47"
+    "src/components/site/NewsDetail.tsx:49"
   ],
   "About the company": [
-    "src/components/site/WelcomeIntro.tsx:25"
+    "src/components/site/WelcomeIntro.tsx:24"
   ],
   "About us": [
-    "src/components/site/menu-experience.ts:211"
+    "src/components/site/menu-experience.ts:271"
   ],
   "Abstract architectural light study with glass and metal surfaces": [
     "src/data/home.ts:217"
   ],
   "Additional product views are not yet available. Request drawings or samples from our export team.": [
-    "src/components/site/ProductDetail.tsx:78"
+    "src/components/site/ProductDetail.tsx:89"
   ],
   "Address": [
-    "src/components/locale-pages/ContactPage.tsx:93"
+    "src/components/locale-pages/ContactPage.tsx:104"
   ],
   "All {count} models": [
     "src/components/locale-pages/ProductFinderPage.tsx:84",
@@ -297,16 +327,17 @@
     "src/components/site/ModelIndex.tsx:27"
   ],
   "All applications": [
-    "src/components/site/ProjectDetail.tsx:24"
+    "src/components/site/ProjectDetail.tsx:25"
   ],
   "All guides": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "All product families": [
-    "src/components/site/SiteMenuDrawer.tsx:148"
+    "src/components/site/SiteMenuDrawer.tsx:155"
   ],
   "All products": [
-    "src/components/site/CategoryFilter.tsx:47"
+    "src/components/site/CategoryFilter.tsx:47",
+    "src/components/site/menu-experience.ts:67"
   ],
   "All three functions are in the range: {functions}. Single-cylinder versions open from inside without a key; double-cylinder versions need a key on both sides; self-locking versions latch as the door closes.": [
     "src/data/category-buying-guides.ts:130"
@@ -319,6 +350,9 @@
   ],
   "An empty cell means we have not published that figure for that model yet rather than that the model lacks it — ask the export team and we will confirm it against the production drawing.": [
     "src/components/locale-pages/ComparePage.tsx:93"
+  ],
+  "An example three-level system: a grand master, two floor masters and the change keys below them, with the three decisions this article says belong at design time: one cross-keyed door, one door kept off every master, and one group reserved for expansion. Illustrative only; a real hierarchy is designed on the platform it will be cut on.": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:33"
   ],
   "Annual output value": [
     "src/data/company.ts:49"
@@ -348,22 +382,21 @@
     "src/data/finish-codes.ts:178"
   ],
   "Application": [
-    "src/components/site/InquiryForm.tsx:31",
+    "src/components/site/InquiryForm.tsx:33",
     "src/components/site/products-architecture.ts:132",
     "src/lib/flagship-tooling.ts:55"
   ],
   "Application + hardware": [
-    "src/components/site/ProjectDetail.tsx:19"
+    "src/components/site/ProjectDetail.tsx:20"
   ],
   "Application brief": [
-    "src/components/site/ProjectDetail.tsx:18"
+    "src/components/site/ProjectDetail.tsx:19"
   ],
   "Applications": [
-    "src/components/site/menu-experience.ts:68",
-    "src/components/site/menu-experience.ts:199",
-    "src/components/site/menu-experience.ts:227",
-    "src/components/site/ProjectListing.tsx:22",
-    "src/components/site/SiteHeader.tsx:63"
+    "src/components/site/menu-experience.ts:79",
+    "src/components/site/menu-experience.ts:259",
+    "src/components/site/menu-experience.ts:287",
+    "src/components/site/ProjectListing.tsx:22"
   ],
   "Applications + Projects": [
     "src/components/locale-pages/ProjectPages.tsx:16"
@@ -371,11 +404,14 @@
   "Arithmetic total": [
     "src/components/site/CylinderCalculator.tsx:62"
   ],
+  "Article that cites this model": [
+    "src/components/site/ProductDetail.tsx:63"
+  ],
   "Ask a question": [
     "src/components/locale-pages/FaqPage.tsx:38"
   ],
   "Ask a technical question": [
-    "src/components/site/ProductDetail.tsx:75"
+    "src/components/site/ProductDetail.tsx:86"
   ],
   "Ask about a code": [
     "src/components/locale-pages/FinishesPage.tsx:65"
@@ -403,7 +439,7 @@
     "src/components/site/DocumentInventory.tsx:148"
   ],
   "Ask for it in the form, or write to the orders address above, and say which families you buy and roughly what volume. You will get current prices for what you actually order rather than a PDF you have to translate into your own schedule.": [
-    "src/components/locale-pages/ContactPage.tsx:70"
+    "src/components/locale-pages/ContactPage.tsx:81"
   ],
   "Ask us": [
     "src/components/locale-pages/GlossaryPage.tsx:68"
@@ -414,11 +450,14 @@
   "At a glance": [
     "src/components/site/CompanyOverview.tsx:25"
   ],
+  "Author": [
+    "src/components/site/AuthorProfile.tsx:24"
+  ],
   "Availability": [
     "src/components/site/DocumentInventory.tsx:184"
   ],
   "Available finishes": [
-    "src/components/site/ProductDetail.tsx:60"
+    "src/components/site/ProductDetail.tsx:68"
   ],
   "Back to the catalog": [
     "src/components/site/ProductStudies.tsx:40"
@@ -459,6 +498,13 @@
   "bathroom accessory": [
     "src/data/category-sourcing.ts:38"
   ],
+  "BAU 2027 meeting request": [
+    "src/data/privacy-policy.ts:95"
+  ],
+  "BAU 2027 Munich": [
+    "src/components/site/menu-experience.ts:84",
+    "src/components/site/SiteFooter.tsx:55"
+  ],
   "Before you specify": [
     "src/components/site/GuideArticleIntro.tsx:18"
   ],
@@ -478,7 +524,10 @@
     "src/data/finish-codes.ts:264"
   ],
   "Bolt detail": [
-    "src/components/site/ProductDrawing.tsx:73"
+    "src/components/site/ProductDrawing.tsx:87"
+  ],
+  "Book a meeting": [
+    "src/data/bau-entry.ts:17"
   ],
   "Both are in the range. Ball-bearing hinges are specified for heavy leaves and doors in constant use, such as corridors and fire doors with closers; plain-bearing hinges suit residential doors. The bearing type is on the model's record, and the same size is usually offered in both.": [
     "src/data/category-buying-guides.ts:322"
@@ -487,13 +536,13 @@
     "src/components/site/CylinderCalculator.tsx:66"
   ],
   "Both work. Some buyers place their first order through Alibaba, with the platform's payment protection, and move to direct orders once they know us. Others order directly from the first container.": [
-    "src/components/locale-pages/ContactPage.tsx:77"
+    "src/components/locale-pages/ContactPage.tsx:88"
   ],
   "brass and steel door hinge": [
     "src/data/category-sourcing.ts:39"
   ],
   "Breadcrumb": [
-    "src/components/site/ProductDetail.tsx:70"
+    "src/components/site/ProductDetail.tsx:81"
   ],
   "Bright Chrome": [
     "src/data/finish-codes.ts:286",
@@ -501,6 +550,9 @@
   ],
   "Bring us a drawing. Leave with a product.": [
     "src/components/site/ServicesView.tsx:41"
+  ],
+  "Bring your drawings. Meet our team.": [
+    "src/data/bau-entry.ts:17"
   ],
   "Browse and filter published models": [
     "src/components/site/menu-experience.ts:49"
@@ -516,23 +568,24 @@
     "src/data/home.ts:94"
   ],
   "Build a hardware set": [
-    "src/components/site/menu-experience.ts:193",
+    "src/components/site/menu-experience.ts:253",
     "src/components/site/products-architecture.ts:215"
   ],
   "Business type": [
     "src/data/company.ts:51"
   ],
   "Buy it now": [
-    "src/components/site/SiteHeader.tsx:291",
-    "src/components/site/SiteHeader.tsx:449",
-    "src/components/site/SiteHeader.tsx:597"
+    "src/components/site/SiteHeader.tsx:182"
   ],
   "Buy on Alibaba": [
-    "src/components/site/SiteFooter.tsx:253",
-    "src/components/site/SiteHeader.tsx:629"
+    "src/components/site/SiteFooter.tsx:243",
+    "src/components/site/SiteHeader.tsx:570"
   ],
   "Buyers come to this range for a panic bar on a fire exit door, an anti-panic device for a double door, or the outside trim that lets a keyed user in while the bar still works from inside. We manufacture the {count} models here in Zhongshan and supply them to distributors, contractors and OEM brands.": [
     "src/data/category-buying-guides.ts:78"
+  ],
+  "Buying": [
+    "src/components/site/menu-experience.ts:98"
   ],
   "Calculated": [
     "src/components/site/CylinderCalculator.tsx:59"
@@ -562,10 +615,10 @@
     "src/data/site.ts:88"
   ],
   "Canton Hyland catalog product families": [
-    "src/components/site/menu-experience.ts:224"
+    "src/components/site/menu-experience.ts:284"
   ],
   "Canton Hyland Hardware\n(Group) Co., Ltd": [
-    "src/components/site/WelcomeIntro.tsx:20"
+    "src/components/site/WelcomeIntro.tsx:19"
   ],
   "Canton Hyland product categories": [
     "src/components/locale-pages/ProductFinderPage.tsx:48",
@@ -575,7 +628,7 @@
     "src/components/site/products-architecture.ts:216"
   ],
   "Canton Product Collection": [
-    "src/components/locale-pages/CategoryPage.tsx:85",
+    "src/components/locale-pages/CategoryPage.tsx:87",
     "src/components/locale-pages/ComparePage.tsx:78",
     "src/components/site/products-architecture.ts:193"
   ],
@@ -592,7 +645,7 @@
     "public/downloads/models/index.json"
   ],
   "Case outline is not published; only the dimensions stated below are drawn.": [
-    "src/components/site/ProductDrawing.tsx:75"
+    "src/components/site/ProductDrawing.tsx:89"
   ],
   "Cases, cylinders, springs, spindles and trim are brought together and function-tested as a set. A lock is not the sum of parts that each pass on their own — a latch and a strike that are both in tolerance can still bind, and that is only found by turning the handle.": [
     "src/data/capability.ts:145"
@@ -607,7 +660,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:46"
   ],
   "Catalog and verified documents": [
-    "src/components/site/SiteHeader.tsx:97"
+    "src/components/site/SiteHeader.tsx:110"
   ],
   "catalog categories": [
     "src/lib/site-facts.ts:64"
@@ -631,9 +684,9 @@
     "src/components/locale-pages/CertificationsPage.tsx:62"
   ],
   "Certificates": [
-    "src/components/site/menu-experience.ts:76",
-    "src/components/site/menu-experience.ts:202",
-    "src/components/site/SiteHeader.tsx:66"
+    "src/components/site/menu-experience.ts:91",
+    "src/components/site/menu-experience.ts:262",
+    "src/components/site/SiteHeader.tsx:54"
   ],
   "Certificates and test reports. What is tested, and in whose name.": [
     "src/components/locale-pages/CertificationsPage.tsx:41"
@@ -642,13 +695,16 @@
     "src/components/locale-pages/CertificationsPage.tsx:13"
   ],
   "Certification scope must be checked against the named model before specification.": [
-    "src/components/site/ProductDetail.tsx:86"
+    "src/components/site/ProductDetail.tsx:97"
   ],
   "Certifications": [
     "src/components/locale-pages/CertificationsPage.tsx:33"
   ],
   "Change": [
     "src/components/site/Configurator.tsx:65"
+  ],
+  "change key": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:38"
   ],
   "Chassis": [
     "src/data/hardware-terms.ts:278"
@@ -665,6 +721,9 @@
   "Choose your location and language": [
     "src/lib/locale-picker.ts:103",
     "src/lib/locale-picker.ts:104"
+  ],
+  "Choosing {name}": [
+    "src/components/site/CategoryGuide.tsx:20"
   ],
   "Chrome Plated": [
     "src/data/finish-codes.ts:143"
@@ -691,7 +750,7 @@
     "src/components/site/DocumentInventory.tsx:32"
   ],
   "Client catalog photograph of a storefront push/pull lock": [
-    "src/components/site/menu-experience.ts:231"
+    "src/components/site/menu-experience.ts:291"
   ],
   "Client catalog photograph of a storefront push/pull lock mechanism": [
     "src/components/site/products-architecture.ts:140"
@@ -736,7 +795,7 @@
     "src/components/site/ProductImageZoom.tsx:58"
   ],
   "Close menu": [
-    "src/components/site/SiteMenuDrawer.tsx:93"
+    "src/components/site/SiteMenuDrawer.tsx:100"
   ],
   "Closer and hinge in one casting — no floor work, no overhead arm.": [
     "src/lib/configurator.ts:445"
@@ -766,7 +825,7 @@
     "src/data/home.ts:129"
   ],
   "Commercial project": [
-    "src/components/site/InquiryForm.tsx:34"
+    "src/components/site/InquiryForm.tsx:36"
   ],
   "Common questions": [
     "src/lib/product-faq.ts:364"
@@ -775,17 +834,18 @@
     "src/data/finish-codes.ts:423"
   ],
   "Company": [
-    "src/components/site/InquiryForm.tsx:27",
-    "src/components/site/menu-experience.ts:75",
-    "src/components/site/menu-experience.ts:209",
-    "src/components/site/SiteHeader.tsx:558",
-    "src/components/site/SiteHeader.tsx:567"
+    "src/components/site/AuthorProfile.tsx:31",
+    "src/components/site/InquiryForm.tsx:29",
+    "src/components/site/menu-experience.ts:90",
+    "src/components/site/menu-experience.ts:269",
+    "src/components/site/SiteHeader.tsx:483",
+    "src/components/site/SiteHeader.tsx:489"
   ],
   "Company announcements, certification news and technical notes from Canton Hyland.": [
     "src/components/site/NewsListing.tsx:19"
   ],
   "Company overview": [
-    "src/components/site/SiteHeader.tsx:62"
+    "src/components/site/SiteHeader.tsx:51"
   ],
   "Compare": [
     "src/components/locale-pages/ComparePage.tsx:61",
@@ -796,7 +856,10 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:72"
   ],
   "Compare every model in this range": [
-    "src/components/site/ProductDetail.tsx:53"
+    "src/components/site/ProductDetail.tsx:59"
+  ],
+  "Compare every model side by side": [
+    "src/components/site/CategoryGuide.tsx:26"
   ],
   "Compare models in this range": [
     "src/components/site/SpecMatrix.tsx:38"
@@ -808,24 +871,27 @@
     "src/lib/configurator.ts:439"
   ],
   "Configuration": [
-    "src/components/site/ProductDetail.tsx:49"
+    "src/components/site/ProductDetail.tsx:55"
   ],
   "Configurator": [
     "src/components/locale-pages/ConfiguratorPage.tsx:33",
     "src/components/locale-pages/ConfiguratorPage.tsx:44",
     "src/components/site/FinderModeSwitch.tsx:44",
-    "src/components/site/menu-experience.ts:193"
+    "src/components/site/menu-experience.ts:69",
+    "src/components/site/menu-experience.ts:253",
+    "src/components/site/SiteFooter.tsx:46"
   ],
   "Configurator — Find the Right Model": [
     "src/components/locale-pages/ConfiguratorPage.tsx:18"
   ],
   "Confirm dimensions, test scope, door preparation and finishes against the current technical documentation before ordering.": [
-    "src/components/site/ProjectDetail.tsx:22"
+    "src/components/site/ProjectDetail.tsx:23"
   ],
   "Contact": [
-    "src/components/site/menu-experience.ts:214",
-    "src/components/site/SiteFooter.tsx:20",
-    "src/components/site/SiteHeader.tsx:95",
+    "src/components/site/menu-experience.ts:102",
+    "src/components/site/menu-experience.ts:274",
+    "src/components/site/SiteFooter.tsx:17",
+    "src/components/site/SiteHeader.tsx:108",
     "src/components/site/SiteMenuDrawer.tsx:19"
   ],
   "Contact Canton Hyland": [
@@ -835,7 +901,7 @@
     "src/components/locale-pages/ContactPage.tsx:39"
   ],
   "Contact us": [
-    "src/components/site/NewsDetail.tsx:44",
+    "src/components/site/NewsDetail.tsx:46",
     "src/components/site/NewsListing.tsx:23",
     "src/data/home.ts:208"
   ],
@@ -845,17 +911,23 @@
   "Coordinated range 55–85kg per leaf": [
     "src/data/feature-columns.ts:141"
   ],
+  "Copper hinges or brass hinges?": [
+    "src/data/category-notes.ts:54"
+  ],
   "Corner castings that clamp toughened glass and carry the pivot, lock or rail.": [
     "src/lib/configurator.ts:450"
   ],
   "Country / region": [
-    "src/components/site/InquiryForm.tsx:28"
+    "src/components/site/InquiryForm.tsx:30"
   ],
   "Cross bore": [
     "src/data/hardware-terms.ts:194"
   ],
+  "Cross-keyed": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:41"
+  ],
   "Current product catalog": [
-    "src/components/locale-pages/ContactPage.tsx:143"
+    "src/components/locale-pages/ContactPage.tsx:154"
   ],
   "Custom tooling": [
     "src/components/site/ServicesView.tsx:96"
@@ -867,7 +939,8 @@
     "src/data/hardware-terms.ts:359"
   ],
   "Cylinder calculator": [
-    "src/components/site/SiteFooter.tsx:46"
+    "src/components/site/menu-experience.ts:73",
+    "src/components/site/SiteFooter.tsx:51"
   ],
   "Cylinder, LC04, finish, EN 1125…": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -879,10 +952,10 @@
     "src/lib/configurator.ts:430"
   ],
   "Data preferences": [
-    "src/components/site/SiteFooter.tsx:190"
+    "src/components/site/SiteFooter.tsx:177"
   ],
   "Datasheets, CAD files and installation instructions are available on request while the verified download library is being prepared.": [
-    "src/components/site/ProductDetail.tsx:84"
+    "src/components/site/ProductDetail.tsx:95"
   ],
   "days minimum lead time": [
     "src/data/capability.ts:191"
@@ -993,7 +1066,7 @@
     "src/data/capability.ts:158"
   ],
   "Dimensioned drawing": [
-    "src/components/site/ProductDrawing.tsx:72"
+    "src/components/site/ProductDrawing.tsx:86"
   ],
   "Dimensioned drawings, specification tables, the catalog and test documents — what is published today, what we send on request, and the two things we do not have.": [
     "src/components/locale-pages/DocumentsPage.tsx:13"
@@ -1005,19 +1078,22 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Direct routes": [
-    "src/components/site/menu-experience.ts:185"
+    "src/components/site/menu-experience.ts:245"
   ],
   "Discuss OEM or private-label production": [
     "src/data/capability.ts:213"
   ],
   "Discuss this hardware package": [
-    "src/components/site/ProjectDetail.tsx:23"
+    "src/components/site/ProjectDetail.tsx:24"
   ],
   "Discuss your requirements": [
     "src/components/site/GuideListing.tsx:20"
   ],
+  "Dismiss": [
+    "src/components/site/LanguageSuggestion.tsx:69"
+  ],
   "Distribution / wholesale": [
-    "src/components/site/InquiryForm.tsx:36"
+    "src/components/site/InquiryForm.tsx:38"
   ],
   "Do they take a euro profile cylinder?": [
     "src/data/category-buying-guides.ts:499"
@@ -1031,6 +1107,9 @@
   "Document availability": [
     "src/components/site/DocumentInventory.tsx:183"
   ],
+  "Document or price-list request": [
+    "src/data/privacy-policy.ts:94"
+  ],
   "Document reference": [
     "src/components/locale-pages/CertificationsPage.tsx:23"
   ],
@@ -1039,7 +1118,8 @@
   ],
   "Documents": [
     "src/components/locale-pages/DocumentsPage.tsx:24",
-    "src/components/site/SiteFooter.tsx:47"
+    "src/components/site/menu-experience.ts:92",
+    "src/components/site/SiteFooter.tsx:52"
   ],
   "Documents already available": [
     "src/components/site/ServicesView.tsx:100"
@@ -1084,21 +1164,27 @@
   "Door hardware glossary. The words on our specification tables, and what each one costs to get wrong.": [
     "src/components/locale-pages/GlossaryPage.tsx:35"
   ],
+  "Door hardware guides and factory news by {name}.": [
+    "src/components/site/AuthorProfile.tsx:27"
+  ],
   "Door Hardware Manufacturer in Xiaolan, China, Since 1998": [
-    "src/components/locale-pages/SimplePages.tsx:14"
+    "src/components/locale-pages/SimplePages.tsx:15"
+  ],
+  "Door hardware specification guides and factory news from Canton Hyland, Guangdong.": [
+    "src/lib/article-feed.ts:58"
   ],
   "Door hinges": [
     "src/components/site/products-architecture.ts:68",
     "src/components/site/products-architecture.ts:173"
   ],
   "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001 certified since 2002, with OEM and private-label production for export.": [
-    "src/components/locale-pages/SimplePages.tsx:15"
+    "src/components/locale-pages/SimplePages.tsx:16"
   ],
   "Door machining": [
     "src/components/site/DocumentInventory.tsx:33"
   ],
   "Door preparation": [
-    "src/components/site/ProductDrawing.tsx:51"
+    "src/components/site/ProductDrawing.tsx:65"
   ],
   "Door thickness": [
     "src/data/hardware-terms.ts:114"
@@ -1107,7 +1193,7 @@
     "src/components/site/CylinderCalculator.tsx:50"
   ],
   "Door type, dimensions, finish, standards, quantity and delivery market": [
-    "src/components/site/InquiryForm.tsx:42"
+    "src/components/site/InquiryForm.tsx:44"
   ],
   "Double door": [
     "src/data/finish-codes.ts:545"
@@ -1119,22 +1205,25 @@
     "src/components/locale-pages/DownloadsPage.tsx:93"
   ],
   "Download catalog (PDF, 6.1 MB)": [
-    "src/components/locale-pages/ContactPage.tsx:152"
+    "src/components/locale-pages/ContactPage.tsx:163"
   ],
   "Download the 46-page Canton Hyland catalog covering locks, handles, panic exit devices, glass hardware and closers, plus model-scoped test reports.": [
     "src/components/locale-pages/DownloadsPage.tsx:17"
   ],
   "Download the export catalog (PDF)": [
-    "src/components/site/ProductDetail.tsx:67"
+    "src/components/site/ProductDetail.tsx:78"
   ],
   "Download the plan sheet (XLSX)": [
     "src/data/feature-columns.ts:108"
   ],
+  "Download the spec sheet (PDF)": [
+    "src/components/site/ProductSpecSheetLink.tsx:12"
+  ],
   "Downloads": [
-    "src/components/site/menu-experience.ts:80",
-    "src/components/site/menu-experience.ts:201",
-    "src/components/site/ProductDetail.tsx:51",
-    "src/components/site/SiteHeader.tsx:97"
+    "src/components/site/menu-experience.ts:93",
+    "src/components/site/menu-experience.ts:261",
+    "src/components/site/ProductDetail.tsx:57",
+    "src/components/site/SiteHeader.tsx:110"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
     "src/components/site/ServicesView.tsx:86"
@@ -1149,7 +1238,7 @@
     "src/components/site/DocumentInventory.tsx:43"
   ],
   "Drawn 1:1 from the published specification": [
-    "src/components/site/ProductDrawing.tsx:76"
+    "src/components/site/ProductDrawing.tsx:90"
   ],
   "Duplicate records merged": [
     "src/components/site/ModelLookup.tsx:47"
@@ -1177,6 +1266,13 @@
   ],
   "Email us directly": [
     "src/components/locale-pages/ContactPage.tsx:48"
+  ],
+  "email*, name, company, country, topic of interest, consent*": [
+    "src/data/privacy-policy.ts:96"
+  ],
+  "en-GB": [
+    "src/components/site/PrivacyPolicy.tsx:3",
+    "src/data/bau-entry.ts:68"
   ],
   "Engineered by Canton Hyland": [
     "src/components/site/products-architecture.ts:201"
@@ -1212,7 +1308,7 @@
     "src/components/site/CylinderCalculator.tsx:51"
   ],
   "Estimated quantity": [
-    "src/components/site/InquiryForm.tsx:40"
+    "src/components/site/InquiryForm.tsx:42"
   ],
   "Euro cylinder calculator": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:32"
@@ -1230,8 +1326,9 @@
     "src/data/category-buying-guides.ts:519"
   ],
   "Events": [
-    "src/components/site/menu-experience.ts:213",
-    "src/components/site/SiteHeader.tsx:65"
+    "src/components/site/menu-experience.ts:83",
+    "src/components/site/menu-experience.ts:273",
+    "src/components/site/SiteHeader.tsx:53"
   ],
   "Every choice the configurator offers, defined. These are the trade's own definitions — what the part is and where it goes — not claims about any particular model.": [
     "src/components/site/HardwareGlossary.tsx:38"
@@ -1261,7 +1358,7 @@
     "src/components/site/products-architecture.ts:196"
   ],
   "Evidence": [
-    "src/components/site/menu-experience.ts:73"
+    "src/components/site/menu-experience.ts:88"
   ],
   "Exact model scope": [
     "src/components/locale-pages/CertificationsPage.tsx:21",
@@ -1270,11 +1367,11 @@
   "Example": [
     "src/components/site/OrderCodeTables.tsx:31"
   ],
+  "Example master key hierarchy": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:31"
+  ],
   "Exit latch": [
     "src/data/finish-codes.ts:450"
-  ],
-  "Explore": [
-    "src/components/site/menu-experience.ts:65"
   ],
   "Explore applications": [
     "src/components/site/products-architecture.ts:208"
@@ -1298,8 +1395,8 @@
     "src/components/site/ProductStudies.tsx:44"
   ],
   "Export desk": [
-    "src/components/site/menu-experience.ts:85",
-    "src/components/site/menu-experience.ts:234"
+    "src/components/site/menu-experience.ts:107",
+    "src/components/site/menu-experience.ts:294"
   ],
   "Export, from Xiaolan to your port": [
     "src/components/site/ServicesView.tsx:91"
@@ -1311,7 +1408,7 @@
     "src/data/company.ts:48"
   ],
   "Factory": [
-    "src/components/locale-pages/ContactPage.tsx:97"
+    "src/components/locale-pages/ContactPage.tsx:108"
   ],
   "Factory photograph": [
     "src/components/site/CompanyOverview.tsx:30"
@@ -1320,31 +1417,36 @@
     "src/components/site/ProductsEditorialOverview.tsx:23"
   ],
   "FAQ": [
-    "src/components/site/SiteHeader.tsx:96"
+    "src/components/site/menu-experience.ts:94",
+    "src/components/site/SiteFooter.tsx:53",
+    "src/components/site/SiteHeader.tsx:109"
   ],
   "Featured door hardware": [
     "src/data/home.ts:42"
   ],
   "Fields marked * are required.": [
-    "src/components/site/InquiryForm.tsx:45"
+    "src/components/site/InquiryForm.tsx:47"
   ],
   "Fifteen product families. The number is how many verified records each one holds.": [
-    "src/components/site/SiteHeader.tsx:484"
+    "src/components/site/SiteHeader.tsx:415"
   ],
   "Fill these in and send them back. Each carries a worked example — copy its pattern rather than inventing a format.": [
     "src/components/locale-pages/DownloadsPage.tsx:32"
   ],
   "Filter and compare": [
-    "src/components/site/menu-experience.ts:192"
+    "src/components/site/menu-experience.ts:252"
   ],
   "Filter by type": [
     "src/components/site/CategoryFilter.tsx:48"
   ],
   "Filter published models by family, finish and door condition.": [
-    "src/components/site/menu-experience.ts:221"
+    "src/components/site/menu-experience.ts:281"
   ],
   "Filter the Canton Hyland catalog by category, series, material, finish, door type and certification to build a hardware schedule.": [
     "src/components/locale-pages/ProductFinderPage.tsx:22"
+  ],
+  "Filter the catalog by material, finish and door type": [
+    "src/components/site/CategoryGuide.tsx:27"
   ],
   "Filter the catalog directly": [
     "src/components/site/ConfiguratorIntro.tsx:44"
@@ -1353,7 +1455,7 @@
     "src/components/site/ProductFinder.tsx:57"
   ],
   "Find {model} on our Alibaba storefront": [
-    "src/components/site/ProductDetail.tsx:93"
+    "src/components/site/ProductDetail.tsx:104"
   ],
   "Find a guide": [
     "src/components/site/GuideListing.tsx:15"
@@ -1376,7 +1478,7 @@
   ],
   "Finish codes": [
     "src/components/site/OrderCodeTables.tsx:176",
-    "src/components/site/SiteFooter.tsx:43"
+    "src/components/site/SiteFooter.tsx:48"
   ],
   "Finish codes. A model number is three facts, not one name.": [
     "src/components/locale-pages/FinishesPage.tsx:31"
@@ -1415,7 +1517,7 @@
     "src/data/category-buying-guides.ts:474"
   ],
   "For a quotation, send the model and finish, the quantity, the destination country, and a drawing or photograph of anything you want changed.": [
-    "src/components/site/ProductDetail.tsx:66"
+    "src/components/site/ProductDetail.tsx:77"
   ],
   "For a sliding leaf, where a bolt cannot travel straight out. A hook swings from the case into the keep.": [
     "src/lib/configurator.ts:415"
@@ -1425,6 +1527,9 @@
   ],
   "For specifiers": [
     "src/data/home.ts:93"
+  ],
+  "Form": [
+    "src/data/privacy-policy.ts:91"
   ],
   "Form reference only. Do not use for machining, door preparation or installation.": [
     "src/components/site/ProductModel.tsx:11"
@@ -1468,9 +1573,12 @@
   ],
   "Glossary": [
     "src/components/locale-pages/GlossaryPage.tsx:30",
-    "src/components/site/menu-experience.ts:79",
-    "src/components/site/menu-experience.ts:205",
-    "src/components/site/SiteFooter.tsx:44"
+    "src/components/site/menu-experience.ts:82",
+    "src/components/site/menu-experience.ts:265",
+    "src/components/site/SiteFooter.tsx:49"
+  ],
+  "Google Analytics 4 and Google Tag Manager, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics sets cookies and records the pages viewed, approximate location, device and browser, how far you scroll, how long you read, and clicks on product and contact links. When you send a product inquiry, the inquiry event carries the same one-word first-touch source. Google Analytics 4 does not store IP addresses. Google Tag Manager loads such tags and does not itself profile you. Data may be processed by Google LLC in the USA. More: policies.google.com/privacy": [
+    "src/data/privacy-policy.ts:110"
   ],
   "grab bar": [
     "src/data/category-sourcing.ts:48"
@@ -1490,6 +1598,12 @@
   "Grade is a property of the chassis, not of the lever you can see. Two locks with identical handles and different chassis are different products, and it is the chassis that the cycle-life number belongs to.": [
     "src/data/hardware-terms.ts:290"
   ],
+  "Grand grand master (GGMK)": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:34"
+  ],
+  "Grand master (GMK)": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:35"
+  ],
   "grip handle set": [
     "src/data/category-sourcing.ts:42"
   ],
@@ -1499,20 +1613,31 @@
   "Guangdong, China": [
     "src/data/company.ts:52"
   ],
+  "Guide that compares or cites this model": [
+    "src/components/site/ProductDetail.tsx:62"
+  ],
   "Guided selection": [
     "src/components/locale-pages/ConfiguratorPage.tsx:58",
     "src/components/locale-pages/ProductsIndexPage.tsx:102"
   ],
   "Guides": [
-    "src/components/locale-pages/ArticlePages.tsx:35",
+    "src/components/locale-pages/ArticlePages.tsx:37",
+    "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
-    "src/components/site/NewsDetail.tsx:89"
+    "src/components/site/menu-experience.ts:80",
+    "src/components/site/NewsDetail.tsx:91"
+  ],
+  "Guides and News": [
+    "src/lib/article-feed.ts:34"
   ],
   "Gun Metal": [
     "src/data/finish-codes.ts:193"
   ],
   "Half": [
     "src/components/site/CylinderCalculator.tsx:56"
+  ],
+  "Hall": [
+    "src/data/bau-entry.ts:18"
   ],
   "Handing": [
     "src/data/hardware-terms.ts:257"
@@ -1533,19 +1658,21 @@
     "src/components/site/GuideListing.tsx:14"
   ],
   "Hardware in focus": [
-    "src/components/site/ProductStudies.tsx:41"
+    "src/components/site/menu-experience.ts:70",
+    "src/components/site/ProductStudies.tsx:41",
+    "src/components/site/SiteFooter.tsx:47"
   ],
   "Hardware in focus — explore product photographs and component selections": [
     "src/components/locale-pages/ProductsIndexPage.tsx:48"
   ],
   "Hardware in Focus — Product Photographs and Selections": [
-    "src/components/locale-pages/SimplePages.tsx:40"
+    "src/components/locale-pages/SimplePages.tsx:41"
   ],
   "Hardware Specification": [
     "src/data/home.ts:219"
   ],
   "Hardware you can stand behind.": [
-    "src/components/site/WelcomeIntro.tsx:21"
+    "src/components/site/WelcomeIntro.tsx:20"
   ],
   "Holding glass without hiding it. Patch fittings and pulls for frameless doors.": [
     "src/components/site/products-architecture.ts:79"
@@ -1554,13 +1681,13 @@
     "src/lib/configurator.ts:435"
   ],
   "Hole positions only — this is not a product outline. Confirm door thickness and the material you are drilling before cutting.": [
-    "src/components/site/ProductDrawing.tsx:54"
+    "src/components/site/ProductDrawing.tsx:68"
   ],
   "Home": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:38",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:47",
-    "src/components/locale-pages/CategoryPage.tsx:67",
-    "src/components/locale-pages/CategoryPage.tsx:78",
+    "src/components/locale-pages/CategoryPage.tsx:69",
+    "src/components/locale-pages/CategoryPage.tsx:80",
     "src/components/locale-pages/CertificationsPage.tsx:33",
     "src/components/locale-pages/CollectionPage.tsx:91",
     "src/components/locale-pages/CollectionPage.tsx:103",
@@ -1577,10 +1704,11 @@
     "src/components/locale-pages/ProductFinderPage.tsx:41",
     "src/components/locale-pages/ProductPage.tsx:94",
     "src/components/locale-pages/ProductsIndexPage.tsx:34",
-    "src/components/site/NewsDetail.tsx:40",
-    "src/components/site/ProductDetail.tsx:72",
+    "src/components/site/AuthorProfile.tsx:30",
+    "src/components/site/NewsDetail.tsx:42",
+    "src/components/site/ProductDetail.tsx:83",
     "src/components/site/ProductsEditorialOverview.tsx:20",
-    "src/components/site/ProjectDetail.tsx:14"
+    "src/components/site/ProjectDetail.tsx:15"
   ],
   "Hook locks for sliding doors, where a straight bolt cannot travel out of the edge: the hook swings from the case into the keep. The {count} models here are zinc alloy, made for pocket doors and sliding partitions, and are supplied to distributors and door manufacturers.": [
     "src/data/category-buying-guides.ts:546"
@@ -1592,7 +1720,7 @@
     "src/data/hardware-terms.ts:455"
   ],
   "How buyers specify {category}": [
-    "src/components/site/CategoryBuyingGuide.tsx:45"
+    "src/components/site/CategoryBuyingGuide.tsx:48"
   ],
   "How far the deadbolt projects from the lock face when fully thrown. Our published figure is 25mm.": [
     "src/data/hardware-terms.ts:140"
@@ -1619,7 +1747,7 @@
     "src/components/site/FinderModeSwitch.tsx:41"
   ],
   "How to buy": [
-    "src/components/site/SiteFooter.tsx:228"
+    "src/components/site/SiteFooter.tsx:215"
   ],
   "How to read a Canton Hyland model number: the finish codes (SSS, PB, SN, GM), the lock-function codes (ET, BK, PS) and the single/double door letter, with the models each appears on.": [
     "src/components/locale-pages/FinishesPage.tsx:15"
@@ -1629,6 +1757,9 @@
   ],
   "How to read our order codes": [
     "src/components/locale-pages/ModelLookupPage.tsx:62"
+  ],
+  "How we handle what you send: ": [
+    "src/components/site/PrivacyNote.tsx:11"
   ],
   "How we tool a part for your market": [
     "src/components/site/ServicesView.tsx:99"
@@ -1647,6 +1778,9 @@
   ],
   "HYDE Argentina AR-4 Mortise Lock Collection": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:17"
+  ],
+  "HYDE at": [
+    "src/data/bau-entry.ts:16"
   ],
   "I know the door": [
     "src/components/site/menu-experience.ts:53"
@@ -1670,7 +1804,19 @@
     "src/components/site/DocumentInventory.tsx:85"
   ],
   "Imprint": [
-    "src/components/site/SiteFooter.tsx:19"
+    "src/components/site/SiteFooter.tsx:16"
+  ],
+  "in local storage, when the promotions panel was last shown and its version, so it does not reappear too soon;": [
+    "src/data/privacy-policy.ts:77"
+  ],
+  "in local storage, whether you closed the notice offering the page in your browser's language, so it is not offered again;": [
+    "src/data/privacy-policy.ts:78"
+  ],
+  "in session storage, one word for how you first reached the site in this visit (for example chatgpt, google or direct), taken from the referring site or a utm_source link parameter. It is deleted when you close the tab and sent to us only with a product inquiry (section 3).": [
+    "src/data/privacy-policy.ts:79"
+  ],
+  "in session storage, the catalog page you came from, so the back link returns you to the same place. It is deleted when you close the tab;": [
+    "src/data/privacy-policy.ts:76"
   ],
   "In the catalog, not on the site": [
     "src/components/site/ModelLookup.tsx:93"
@@ -1682,7 +1828,7 @@
     "src/components/site/ProductStudies.tsx:54"
   ],
   "Information available on request": [
-    "src/components/site/ProductDetail.tsx:62"
+    "src/components/site/ProductDetail.tsx:70"
   ],
   "Inquiry submitted": [
     "src/components/site/InquirySuccess.tsx:10"
@@ -1738,8 +1884,14 @@
   "knob lock": [
     "src/data/category-sourcing.ts:37"
   ],
+  "Knowledge": [
+    "src/components/site/menu-experience.ts:77"
+  ],
   "Language": [
     "src/lib/locale-picker.ts:105"
+  ],
+  "Last updated": [
+    "src/data/privacy-policy.ts:55"
   ],
   "Latch": [
     "src/data/hardware-terms.ts:298"
@@ -1759,6 +1911,21 @@
   "Leave with a model number": [
     "src/components/site/ConfiguratorIntro.tsx:41"
   ],
+  "left unissued for expansion": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:37"
+  ],
+  "Legal": [
+    "src/data/privacy-policy.ts:53"
+  ],
+  "Legal basis: for inquiries, document and meeting requests, steps taken at your request before a possible contract (Art. 6(1)(b) GDPR) and our legitimate interest in answering business inquiries (Art. 6(1)(f) GDPR). For the newsletter, your consent (Art. 6(1)(a) GDPR), which you can withdraw at any time by replying \"unsubscribe\" or writing to the address in section 1.": [
+    "src/data/privacy-policy.ts:101"
+  ],
+  "Legal basis: our legitimate interest in a secure, working website (Art. 6(1)(f) GDPR). Logs are kept only as long as needed for these purposes.": [
+    "src/data/privacy-policy.ts:71"
+  ],
+  "Legal basis: our legitimate interest in improving the site for buyers (Art. 6(1)(f) GDPR). You can object at any time (section 8). You can also stop both services with your browser's tracking protection or a content blocker, or install Google's opt-out add-on (tools.google.com/dlpage/gaoptout).": [
+    "src/data/privacy-policy.ts:112"
+  ],
   "Lets the door open a few centimeters on a restrictor, so a caller can be spoken to before being let in.": [
     "src/lib/configurator.ts:454"
   ],
@@ -1773,6 +1940,9 @@
   ],
   "Lever systems": [
     "src/components/site/products-architecture.ts:167"
+  ],
+  "LinkedIn profile": [
+    "src/components/site/AuthorProfile.tsx:26"
   ],
   "Loading viewer…": [
     "src/components/site/ModelPreview.tsx:49"
@@ -1804,14 +1974,17 @@
   "Longer than the 90mm our catalog publishes. Send the three measurements and we will say what can be supplied.": [
     "src/components/site/CylinderCalculator.tsx:67"
   ],
+  "Looking for a copper hinge?": [
+    "src/data/category-notes.ts:48"
+  ],
   "Made for the day nobody plans for. Push bars for escape and fire doors, single-point to multi-point.": [
     "src/components/site/products-architecture.ts:43"
   ],
   "Made in Xiaolan. Since 1998.": [
-    "src/components/site/WelcomeIntro.tsx:17"
+    "src/components/site/WelcomeIntro.tsx:16"
   ],
   "Main navigation": [
-    "src/components/site/SiteHeader.tsx:386"
+    "src/components/site/SiteHeader.tsx:348"
   ],
   "Manufactured in Zhongshan, Guangdong. Production lead time starts at 30 days from order confirmation, and we produce under our customers' own brands.": [
     "src/components/locale-pages/CollectionPage.tsx:126"
@@ -1832,25 +2005,28 @@
     "src/components/site/CompanyOverview.tsx:218"
   ],
   "Manufacturing is in Zhongshan. These are the people to reach in each market.": [
-    "src/components/locale-pages/ContactPage.tsx:110"
+    "src/components/locale-pages/ContactPage.tsx:121"
   ],
   "manufacturing since": [
     "src/lib/site-facts.ts:66"
   ],
   "Manufacturing since 1998": [
-    "src/components/site/SiteHeader.tsx:62"
+    "src/components/site/SiteHeader.tsx:51"
   ],
   "Manufacturing, and where inspection visits are received.": [
-    "src/components/locale-pages/ContactPage.tsx:94"
+    "src/components/locale-pages/ContactPage.tsx:105"
   ],
   "Master key plan, input sheet": [
     "content/news/master-key-systems-how-many-levels-you-need.json"
+  ],
+  "Mastered": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:41"
   ],
   "Match the backset first: latches here are published at {backset}, with the faceplate size on each record. A 60/70mm adjustable latch covers both common door preparations for tubular lever and knob sets.": [
     "src/data/category-buying-guides.ts:465"
   ],
   "Material": [
-    "src/components/site/ProductDetail.tsx:59"
+    "src/components/site/ProductDetail.tsx:67"
   ],
   "Material & finish": [
     "src/components/site/ProductStudies.tsx:45"
@@ -1888,23 +2064,36 @@
   "Mechanism detail from the catalog.": [
     "src/components/site/ProductsEditorialOverview.tsx:29"
   ],
+  "Meet HYDE at": [
+    "src/data/bau-entry.ts:16"
+  ],
   "Meet HYDE in global markets": [
-    "src/components/site/SiteHeader.tsx:65"
+    "src/components/site/SiteHeader.tsx:53"
+  ],
+  "Meeting room": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:39"
+  ],
+  "Microsoft Clarity, provided by Microsoft Ireland Operations Ltd., One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland. Clarity records how visitors move, scroll and click on a page and produces heatmaps and session replays; text typed into form fields is masked. We label sessions with the type of page, whether the visitor skimmed or read, and the one-word first-touch source. Data may be processed by Microsoft Corporation in the USA. More: privacy.microsoft.com/privacystatement": [
+    "src/data/privacy-policy.ts:111"
   ],
   "Minimum order quantity, production lead time, sample policy, payment terms and OEM work — answered in full.": [
-    "src/components/site/ProductDetail.tsx:58"
+    "src/components/site/ProductDetail.tsx:66"
   ],
   "Minimum order, lead time, samples, payment, OEM": [
-    "src/components/site/SiteHeader.tsx:96"
+    "src/components/site/SiteHeader.tsx:109"
   ],
   "Model": [
     "src/components/site/ProductCard.tsx:92"
   ],
+  "Model code to be confirmed": [
+    "src/components/site/ProductCard.tsx:91",
+    "src/components/site/ProductDetail.tsx:74"
+  ],
   "Model lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:28",
-    "src/components/site/menu-experience.ts:78",
-    "src/components/site/menu-experience.ts:204",
-    "src/components/site/SiteFooter.tsx:45"
+    "src/components/site/menu-experience.ts:71",
+    "src/components/site/menu-experience.ts:264",
+    "src/components/site/SiteFooter.tsx:50"
   ],
   "Model number — 306 PS, LH852, 70720": [
     "src/components/site/ModelIndex.tsx:28"
@@ -1947,13 +2136,13 @@
     "src/components/site/ProductFinder.tsx:58"
   ],
   "More in {category}": [
-    "src/components/site/ProductDetail.tsx:91"
+    "src/components/site/ProductDetail.tsx:102"
   ],
   "More in the {series} series": [
-    "src/components/site/ProductDetail.tsx:90"
+    "src/components/site/ProductDetail.tsx:101"
   ],
   "More links": [
-    "src/components/site/WelcomeIntro.tsx:19"
+    "src/components/site/WelcomeIntro.tsx:18"
   ],
   "More on {term}": [
     "src/components/site/HardwareTerms.tsx:43"
@@ -1989,7 +2178,16 @@
     "src/components/site/ServicesView.tsx:43"
   ],
   "Name *": [
-    "src/components/site/InquiryForm.tsx:25"
+    "src/components/site/InquiryForm.tsx:27"
+  ],
+  "name*, email*, company, country, preferred day and time, products of interest, message": [
+    "src/data/privacy-policy.ts:95"
+  ],
+  "name*, email*, company, country, product, model, application, quantity, message*; added automatically: how you first reached the site (for example chatgpt, google, direct)": [
+    "src/data/privacy-policy.ts:93"
+  ],
+  "name*, email*, company*, country, message": [
+    "src/data/privacy-policy.ts:94"
   ],
   "Named on model 5807 SSCL.": [
     "src/data/finish-codes.ts:427"
@@ -2016,25 +2214,30 @@
     "src/data/home.ts:175"
   ],
   "News": [
-    "src/components/site/menu-experience.ts:212"
+    "src/components/site/AuthorProfile.tsx:29",
+    "src/components/site/menu-experience.ts:272"
   ],
   "News + Insights": [
-    "src/components/locale-pages/ArticlePages.tsx:22"
+    "src/components/locale-pages/ArticlePages.tsx:24"
   ],
   "News + Press": [
-    "src/components/site/menu-experience.ts:69",
-    "src/components/site/NewsDetail.tsx:41",
-    "src/components/site/NewsDetail.tsx:88",
+    "src/components/site/menu-experience.ts:81",
+    "src/components/site/NewsDetail.tsx:43",
+    "src/components/site/NewsDetail.tsx:90",
     "src/components/site/NewsListing.tsx:17"
   ],
   "Newsletter": [
-    "src/components/site/SiteFooter.tsx:205"
+    "src/components/site/menu-experience.ts:103",
+    "src/components/site/SiteFooter.tsx:192"
+  ],
+  "Newsletter request": [
+    "src/data/privacy-policy.ts:96"
   ],
   "Next step": [
     "src/components/site/ProductsEditorialOverview.tsx:24"
   ],
   "Next steps": [
-    "src/components/site/ProductDetail.tsx:52"
+    "src/components/site/ProductDetail.tsx:58"
   ],
   "Nickel Plated": [
     "src/data/finish-codes.ts:173"
@@ -2049,7 +2252,7 @@
     "src/components/site/products-architecture.ts:197"
   ],
   "Nine product families": [
-    "src/components/site/menu-experience.ts:191"
+    "src/components/site/menu-experience.ts:251"
   ],
   "Nine ways into the catalog": [
     "src/components/site/products-architecture.ts:198"
@@ -2067,7 +2270,7 @@
     "src/components/site/ConfiguratorTeaser.tsx:38"
   ],
   "No product-specific certificate is published for this model. Company credentials remain available through the export team.": [
-    "src/components/site/ProductDetail.tsx:82"
+    "src/components/site/ProductDetail.tsx:93"
   ],
   "No releases published yet.": [
     "src/components/site/NewsListing.tsx:20"
@@ -2079,7 +2282,7 @@
     "src/components/site/ConfiguratorIntro.tsx:45"
   ],
   "Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first. We have made that door hardware, architectural ironmongery as the UK trade calls it, since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, ISO 9001 certified since 2002. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany. Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.": [
-    "src/components/site/WelcomeIntro.tsx:18"
+    "src/components/site/WelcomeIntro.tsx:17"
   ],
   "None of these is a discontinued product. Where a model does go out of production we will say so here, in those words, with the date.": [
     "src/components/locale-pages/ModelLookupPage.tsx:46"
@@ -2103,7 +2306,7 @@
     "src/components/site/ProductFinder.tsx:66"
   ],
   "Nothing you typed is lost. Open it as an email — every field is already in the message — or copy the text below and send it to": [
-    "src/components/site/InquiryForm.tsx:49"
+    "src/components/site/InquiryForm.tsx:51"
   ],
   "Now": [
     "src/components/site/ModelLookup.tsx:88"
@@ -2112,16 +2315,19 @@
     "src/lib/configurator.ts:464"
   ],
   "OEM / custom development": [
-    "src/components/site/InquiryForm.tsx:37"
+    "src/components/site/InquiryForm.tsx:39"
   ],
   "OEM & Private-Label Door Hardware Manufacturer in China": [
-    "src/components/locale-pages/SimplePages.tsx:27"
-  ],
-  "OEM and private-label door hardware from Xiaolan, China: new tooling to your drawing, patent-conscious redesign, your brand and packaging.": [
     "src/components/locale-pages/SimplePages.tsx:28"
   ],
+  "OEM and private-label door hardware from Xiaolan, China: new tooling to your drawing, patent-conscious redesign, your brand and packaging.": [
+    "src/components/locale-pages/SimplePages.tsx:29"
+  ],
+  "OEM services": [
+    "src/components/site/menu-experience.ts:100"
+  ],
   "OEM tooling, private label, export": [
-    "src/components/site/SiteHeader.tsx:64"
+    "src/components/site/SiteHeader.tsx:52"
   ],
   "OEM, private label and everything else": [
     "src/components/locale-pages/ContactPage.tsx:24"
@@ -2134,6 +2340,9 @@
   ],
   "On a lock case, the centers decide where the two holes go in the door face. Get them wrong and the cylinder hole and the handle hole do not line up with the lock — the door is scrap, not the lock.": [
     "src/data/hardware-terms.ts:105"
+  ],
+  "on no master": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:40"
   ],
   "On panic exit devices only — 316-D carries “Door Type = Double Door”, and 309-D is named as the double-door device. A double-leaf escape door needs the coordinated pair, not two singles.": [
     "src/data/finish-codes.ts:549"
@@ -2148,8 +2357,8 @@
     "src/data/capability.ts:209"
   ],
   "One contact from sample review to production order.": [
-    "src/components/site/menu-experience.ts:86",
-    "src/components/site/menu-experience.ts:235"
+    "src/components/site/menu-experience.ts:108",
+    "src/components/site/menu-experience.ts:295"
   ],
   "One cylindrical lock. Shares its letters with the finish code BS, which is why the parser reads position rather than letters — see src/lib/order-code.ts.": [
     "src/data/finish-codes.ts:499"
@@ -2167,10 +2376,16 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:57"
   ],
   "One table, one row per model, across the specifications that differ between them.": [
-    "src/components/site/ProductDetail.tsx:55"
+    "src/components/site/ProductDetail.tsx:61"
   ],
   "One tubular lock.": [
     "src/data/finish-codes.ts:490"
+  ],
+  "only for several systems; often not issued": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:34"
+  ],
+  "Only the service providers named above, our web host and our email provider, each processing data for the purposes described here, and our own sales and technical staff. We do not sell personal data or pass it to other companies for their marketing.": [
+    "src/data/privacy-policy.ts:126"
   ],
   "Open 3D preview": [
     "src/components/site/ModelPreview.tsx:50"
@@ -2179,10 +2394,10 @@
     "src/components/site/ServicesView.tsx:103"
   ],
   "Open full size": [
-    "src/components/site/ProductDrawing.tsx:77"
+    "src/components/site/ProductDrawing.tsx:91"
   ],
   "Open menu": [
-    "src/components/site/SiteHeader.tsx:352"
+    "src/components/site/SiteHeader.tsx:317"
   ],
   "Open original image": [
     "src/components/site/GuideCover.tsx:16"
@@ -2206,19 +2421,23 @@
     "src/components/site/Configurator.tsx:71"
   ],
   "Open this as an email": [
-    "src/components/site/InquiryForm.tsx:50"
+    "src/components/site/BauMeetingForm.tsx:21",
+    "src/components/site/InquiryForm.tsx:52"
   ],
   "Opening furniture": [
     "src/components/site/products-architecture.ts:168"
   ],
+  "opens every door in this system": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:35"
+  ],
   "Opens our storefront already searched for this model — trade assurance, tiered pricing and order tracking are handled there.": [
-    "src/components/site/ProductDetail.tsx:96"
+    "src/components/site/ProductDetail.tsx:107"
   ],
   "Opens this model's listing, with current pricing, MOQ and lead time.": [
-    "src/components/site/ProductDetail.tsx:94"
+    "src/components/site/ProductDetail.tsx:105"
   ],
   "Or email us about this model:": [
-    "src/components/site/ProductDetail.tsx:71"
+    "src/components/site/ProductDetail.tsx:82"
   ],
   "Or start from our catalog": [
     "src/components/site/ServicesView.tsx:45"
@@ -2227,12 +2446,12 @@
     "src/components/site/CompanyOverview.tsx:41"
   ],
   "Order {model} on Alibaba": [
-    "src/components/site/ProductDetail.tsx:92"
+    "src/components/site/ProductDetail.tsx:103"
   ],
   "Order codes": [
     "src/components/locale-pages/FinishesPage.tsx:26",
-    "src/components/site/menu-experience.ts:77",
-    "src/components/site/menu-experience.ts:203"
+    "src/components/site/menu-experience.ts:72",
+    "src/components/site/menu-experience.ts:263"
   ],
   "Order Codes + Finishes": [
     "src/components/locale-pages/FinishesPage.tsx:14"
@@ -2247,7 +2466,7 @@
     "src/data/home.ts:83"
   ],
   "Order through Alibaba, or directly": [
-    "src/components/locale-pages/ContactPage.tsx:75"
+    "src/components/locale-pages/ContactPage.tsx:86"
   ],
   "Ordering & delivery": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -2256,7 +2475,7 @@
     "src/components/site/HardwareTerms.tsx:38"
   ],
   "Ordering, lead times and samples": [
-    "src/components/site/ProductDetail.tsx:56"
+    "src/components/site/ProductDetail.tsx:64"
   ],
   "Ordering, samples, lead times, finishes, master key systems, certification and export questions for Canton Hyland door hardware.": [
     "src/components/locale-pages/FaqPage.tsx:14"
@@ -2285,6 +2504,9 @@
   "Our flagship range, and the one we know best: push bars for escape and fire doors, from single-point rim devices to multi-point sets for double doors.": [
     "src/data/home.ts:109"
   ],
+  "Our links to YouTube, Instagram, Facebook, Pinterest, Tumblr and our Alibaba storefront are plain links. Nothing is sent to those platforms until you click one; after that, their own privacy policies apply.": [
+    "src/data/privacy-policy.ts:119"
+  ],
   "Our lock cylinders": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:73"
   ],
@@ -2293,6 +2515,12 @@
   ],
   "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.": [
     "src/components/site/CompanyOverview.tsx:29"
+  ],
+  "Our typeface and our product videos are served from our own server. Opening a page does not contact Google Fonts, YouTube or Vimeo.": [
+    "src/data/privacy-policy.ts:72"
+  ],
+  "Our web server and our content-delivery and security provider, Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA), process the technical data every browser sends: IP address, date and time, the page requested, the referring page, browser and operating system. This is needed to deliver the pages, protect the site from automated attacks and investigate faults. Cloudflare may set a short-lived security cookie to tell people from bots, and it replaces email addresses in the page with a protected link so spam robots cannot collect them.": [
+    "src/data/privacy-policy.ts:70"
   ],
   "Outside": [
     "src/components/site/CylinderCalculator.tsx:57"
@@ -2304,7 +2532,7 @@
     "src/components/site/CylinderCalculator.tsx:73"
   ],
   "Overview": [
-    "src/components/site/NewsDetail.tsx:146",
+    "src/components/site/NewsDetail.tsx:155",
     "src/data/home.ts:117"
   ],
   "Packing + export": [
@@ -2312,6 +2540,9 @@
   ],
   "panic exit device": [
     "src/data/category-sourcing.ts:33"
+  ],
+  "Panic exit device": [
+    "src/data/bau-entry.ts:18"
   ],
   "Panic exit devices": [
     "src/components/site/products-architecture.ts:41"
@@ -2321,7 +2552,7 @@
     "src/data/home.ts:107"
   ],
   "Panic Exit Devices, Locks and Door Hardware": [
-    "src/components/site/WelcomeIntro.tsx:16"
+    "src/components/site/WelcomeIntro.tsx:15"
   ],
   "Partial 3D model": [
     "src/components/site/ProductModel.tsx:10"
@@ -2374,37 +2605,46 @@
     "src/data/capability.ts:105"
   ],
   "Preparing inquiry form…": [
-    "src/components/locale-pages/ContactPage.tsx:159"
+    "src/components/locale-pages/ContactPage.tsx:170"
   ],
   "Press inquiries": [
-    "src/components/site/NewsDetail.tsx:43"
+    "src/components/site/NewsDetail.tsx:45"
   ],
   "Press kit": [
-    "src/components/site/NewsDetail.tsx:46"
+    "src/components/site/NewsDetail.tsx:48"
   ],
   "Press releases, certification updates and technical notes from Canton Hyland, manufacturer of panic exit devices and architectural door hardware.": [
-    "src/components/locale-pages/ArticlePages.tsx:23"
+    "src/components/locale-pages/ArticlePages.tsx:25"
   ],
   "Preview the original catalog": [
     "src/components/site/DocumentPreview.tsx:8"
   ],
   "Price list": [
-    "src/components/locale-pages/ContactPage.tsx:65"
+    "src/components/locale-pages/ContactPage.tsx:76",
+    "src/components/site/menu-experience.ts:101",
+    "src/components/site/SiteFooter.tsx:54"
+  ],
+  "privacy notice": [
+    "src/components/site/PrivacyNote.tsx:11"
+  ],
+  "Privacy notice": [
+    "src/data/privacy-policy.ts:54"
   ],
   "Privacy Notice": [
-    "src/components/site/SiteFooter.tsx:21"
+    "src/components/site/SiteFooter.tsx:18",
+    "src/data/privacy-policy.ts:50"
   ],
   "Privacy, bathroom, turn button inside": [
     "src/data/finish-codes.ts:405"
   ],
   "Product": [
-    "src/components/site/InquiryForm.tsx:29"
+    "src/components/site/InquiryForm.tsx:31"
   ],
   "Product catalog": [
     "src/components/locale-pages/DownloadsPage.tsx:26"
   ],
   "Product data shown here is limited to verified client records. Additional references from the legacy catalog are being prepared for structured publication.": [
-    "src/components/locale-pages/CategoryPage.tsx:93"
+    "src/components/locale-pages/CategoryPage.tsx:95"
   ],
   "Product filters": [
     "src/components/site/CategoryFilter.tsx:49"
@@ -2413,16 +2653,20 @@
     "src/components/locale-pages/ProductFinderPage.tsx:43",
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductFinderPage.tsx:58",
-    "src/components/site/menu-experience.ts:192",
-    "src/components/site/menu-experience.ts:220",
+    "src/components/site/menu-experience.ts:68",
+    "src/components/site/menu-experience.ts:252",
+    "src/components/site/menu-experience.ts:280",
     "src/components/site/ProductStudies.tsx:47",
-    "src/components/site/SiteHeader.tsx:491"
+    "src/components/site/SiteHeader.tsx:421"
   ],
   "Product Finder — {count} Door Hardware Models": [
     "src/components/locale-pages/ProductFinderPage.tsx:21"
   ],
   "Product images": [
-    "src/components/site/ProductDetail.tsx:68"
+    "src/components/site/ProductDetail.tsx:79"
+  ],
+  "Product inquiry": [
+    "src/data/privacy-policy.ts:93"
   ],
   "Product pages": [
     "src/components/site/CategoryFilter.tsx:51",
@@ -2434,8 +2678,8 @@
   "Products": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:39",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:48",
-    "src/components/locale-pages/CategoryPage.tsx:68",
-    "src/components/locale-pages/CategoryPage.tsx:79",
+    "src/components/locale-pages/CategoryPage.tsx:70",
+    "src/components/locale-pages/CategoryPage.tsx:81",
     "src/components/locale-pages/CollectionPage.tsx:92",
     "src/components/locale-pages/CollectionPage.tsx:104",
     "src/components/locale-pages/ComparePage.tsx:59",
@@ -2447,31 +2691,31 @@
     "src/components/locale-pages/ProductPage.tsx:85",
     "src/components/locale-pages/ProductPage.tsx:95",
     "src/components/locale-pages/ProductsIndexPage.tsx:35",
-    "src/components/site/menu-experience.ts:67",
-    "src/components/site/menu-experience.ts:191",
-    "src/components/site/ProductDetail.tsx:73",
+    "src/components/site/menu-experience.ts:65",
+    "src/components/site/menu-experience.ts:251",
+    "src/components/site/ProductDetail.tsx:84",
     "src/components/site/ProductsEditorialOverview.tsx:21",
-    "src/components/site/SiteHeader.tsx:472",
-    "src/components/site/SiteHeader.tsx:481"
+    "src/components/site/SiteHeader.tsx:406",
+    "src/components/site/SiteHeader.tsx:412"
   ],
   "Products — Door Hardware Catalog": [
     "src/components/locale-pages/ProductsIndexPage.tsx:18"
   ],
   "Products mentioned": [
-    "src/components/site/NewsDetail.tsx:45"
+    "src/components/site/NewsDetail.tsx:47"
   ],
   "Project Planner": [
-    "src/components/site/WelcomeIntro.tsx:23"
+    "src/components/site/WelcomeIntro.tsx:22"
   ],
   "Project requirements *": [
-    "src/components/site/InquiryForm.tsx:41"
+    "src/components/site/InquiryForm.tsx:43"
   ],
   "Projection": [
     "src/data/hardware-terms.ts:154"
   ],
   "Projects + Applications": [
-    "src/components/site/ProductDetail.tsx:88",
-    "src/components/site/ProjectDetail.tsx:15"
+    "src/components/site/ProductDetail.tsx:99",
+    "src/components/site/ProjectDetail.tsx:16"
   ],
   "Public-building corridor with glazed partitions and fire-egress doors": [
     "src/data/home.ts:62"
@@ -2497,6 +2741,9 @@
   "Published now": [
     "src/components/site/DocumentInventory.tsx:26"
   ],
+  "Published values (number of models)": [
+    "src/components/site/CategoryGuide.tsx:23"
+  ],
   "Pull and door handles in stainless steel, for entrances and glass doors where the handle is the visible hardware.": [
     "src/lib/configurator.ts:396"
   ],
@@ -2507,7 +2754,8 @@
     "src/lib/configurator.ts:448"
   ],
   "Purpose": [
-    "src/components/site/DocumentInventory.tsx:184"
+    "src/components/site/DocumentInventory.tsx:184",
+    "src/data/privacy-policy.ts:91"
   ],
   "PVD": [
     "src/data/finish-codes.ts:223"
@@ -2521,6 +2769,9 @@
   "Quality system": [
     "src/data/company.ts:50"
   ],
+  "Questions about {name}": [
+    "src/components/site/CategoryGuide.tsx:28"
+  ],
   "questions about the door": [
     "src/components/site/ConfiguratorIntro.tsx:33"
   ],
@@ -2531,10 +2782,13 @@
     "src/components/site/ServicesView.tsx:92"
   ],
   "Quotes, pricing and export specialists": [
-    "src/components/site/SiteHeader.tsx:95"
+    "src/components/site/SiteHeader.tsx:108"
   ],
   "Range": [
     "src/components/site/products-architecture.ts:116"
+  ],
+  "Read before ordering": [
+    "src/components/site/CategoryGuide.tsx:25"
   ],
   "Read guide": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -2560,20 +2814,16 @@
     "src/components/locale-pages/GlossaryPage.tsx:33",
     "src/components/locale-pages/ModelLookupPage.tsx:31"
   ],
-  "Reference available on request": [
-    "src/components/site/ProductCard.tsx:91",
-    "src/components/site/ProductDetail.tsx:63"
-  ],
   "Reference pages for hardware decisions: euro cylinder charts, EN to ANSI/BHMA cross-references, finish code tables and what each standard covers.": [
-    "src/components/locale-pages/ArticlePages.tsx:36"
+    "src/components/locale-pages/ArticlePages.tsx:38"
   ],
   "Reference table": [
-    "src/components/site/ArticleBody.tsx:12",
-    "src/components/site/NewsDetail.tsx:321"
+    "src/components/site/ArticleBody.tsx:20",
+    "src/components/site/NewsDetail.tsx:361"
   ],
   "Related products": [
-    "src/components/site/ProductDetail.tsx:87",
-    "src/components/site/ProjectDetail.tsx:20"
+    "src/components/site/ProductDetail.tsx:98",
+    "src/components/site/ProjectDetail.tsx:21"
   ],
   "Renamed records": [
     "src/components/site/ModelLookup.tsx:84"
@@ -2582,11 +2832,11 @@
     "src/components/site/ModelLookup.tsx:33"
   ],
   "Replacement / maintenance": [
-    "src/components/site/InquiryForm.tsx:38"
+    "src/components/site/InquiryForm.tsx:40"
   ],
   "Representative application": [
-    "src/components/site/ProductDetail.tsx:89",
-    "src/components/site/ProjectDetail.tsx:16"
+    "src/components/site/ProductDetail.tsx:100",
+    "src/components/site/ProjectDetail.tsx:17"
   ],
   "Representative architectural entrance combining glass, metal and coordinated door hardware": [
     "src/components/site/ServicesView.tsx:46"
@@ -2598,7 +2848,7 @@
     "src/data/home.ts:49"
   ],
   "Representative contacts": [
-    "src/components/locale-pages/ContactPage.tsx:108"
+    "src/components/locale-pages/ContactPage.tsx:119"
   ],
   "Representative door hardware packages for international projects: panic exit devices, mortise locks, lever handles and hinges by building type.": [
     "src/components/locale-pages/ProjectPages.tsx:17"
@@ -2610,7 +2860,7 @@
     "src/data/home.ts:137"
   ],
   "Request a quote": [
-    "src/components/site/ProductDetail.tsx:64"
+    "src/components/site/ProductDetail.tsx:75"
   ],
   "Request a quote for this configuration": [
     "src/components/site/Configurator.tsx:72"
@@ -2622,11 +2872,23 @@
   "Request verified copy": [
     "src/components/locale-pages/DownloadsPage.tsx:140"
   ],
+  "Reserved group": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:37"
+  ],
+  "Reserved or optional": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:41"
+  ],
   "Residential project": [
-    "src/components/site/InquiryForm.tsx:35"
+    "src/components/site/InquiryForm.tsx:37"
+  ],
+  "Resources": [
+    "src/components/site/SiteHeader.tsx:181"
   ],
   "Retired catalog paths": [
     "src/components/site/ModelLookup.tsx:89"
+  ],
+  "Right to object (Art. 21 GDPR): where we process your data on the basis of legitimate interest, you may object at any time on grounds relating to your particular situation. You may object to direct marketing at any time without giving reasons.": [
+    "src/data/privacy-policy.ts:141"
   ],
   "Rose": [
     "src/data/hardware-terms.ts:401"
@@ -2666,7 +2928,7 @@
   ],
   "Search": [
     "src/components/site/ProductFinder.tsx:55",
-    "src/components/site/SiteHeader.tsx:339"
+    "src/components/site/SiteHeader.tsx:314"
   ],
   "Search and filter all models": [
     "src/components/site/FinderModeSwitch.tsx:43"
@@ -2684,10 +2946,10 @@
     "src/components/locale-pages/ComparePage.tsx:100"
   ],
   "See Canton Hyland locks, cylinders and lever handles in original photographs and studio compositions. Check dimensions, finishes and specifications.": [
-    "src/components/locale-pages/SimplePages.tsx:41"
+    "src/components/locale-pages/SimplePages.tsx:42"
   ],
   "See how coordinated hardware meets the opening.": [
-    "src/components/site/menu-experience.ts:228"
+    "src/components/site/menu-experience.ts:288"
   ],
   "See the exit devices": [
     "src/data/home.ts:110"
@@ -2711,7 +2973,7 @@
     "src/data/home.ts:176"
   ],
   "Select one": [
-    "src/components/site/InquiryForm.tsx:32"
+    "src/components/site/InquiryForm.tsx:34"
   ],
   "Selected from ninety days of inquiries on our own Alibaba storefront rather than from a shortlist we drew up ourselves — the two do not agree, which is the point of looking.": [
     "src/data/demand-showcase.ts:100"
@@ -2735,7 +2997,7 @@
     "src/components/site/InquirySuccess.tsx:10"
   ],
   "Send inquiry": [
-    "src/components/site/InquiryForm.tsx:44"
+    "src/components/site/InquiryForm.tsx:46"
   ],
   "Send it. If it is a word on one of our own pages that is not here, that is a gap in this page rather than a question about the word, and we would rather fix the page. The two references beside this one answer the questions that come next: how our order codes are built, and what happened to a model number that no longer resolves.": [
     "src/components/locale-pages/GlossaryPage.tsx:62"
@@ -2774,7 +3036,8 @@
     "src/components/site/ServicesView.tsx:75"
   ],
   "Sending…": [
-    "src/components/site/InquiryForm.tsx:43"
+    "src/components/site/BauMeetingForm.tsx:19",
+    "src/components/site/InquiryForm.tsx:45"
   ],
   "Sent on request": [
     "src/components/site/DocumentInventory.tsx:27"
@@ -2785,6 +3048,9 @@
   "Series, material, finish, door type and certification.": [
     "src/components/site/ProductFinder.tsx:59"
   ],
+  "Server room": [
+    "src/components/site/MasterKeyHierarchyFigure.tsx:40"
+  ],
   "Service": [
     "src/components/locale-pages/FaqPage.tsx:28"
   ],
@@ -2794,10 +3060,9 @@
     "src/data/home.ts:173"
   ],
   "Services": [
-    "src/components/site/menu-experience.ts:81",
-    "src/components/site/menu-experience.ts:200",
+    "src/components/site/menu-experience.ts:260",
     "src/components/site/ServicesView.tsx:40",
-    "src/components/site/SiteHeader.tsx:64"
+    "src/components/site/SiteHeader.tsx:52"
   ],
   "Set includes": [
     "src/lib/flagship-tooling.ts:54"
@@ -2807,6 +3072,9 @@
   ],
   "Share the models, door thickness and required finish to confirm the parts for your order.": [
     "src/components/site/ProductStudies.tsx:58"
+  ],
+  "Short answers to what buyers ask": [
+    "src/components/site/SiteHeader.tsx:83"
   ],
   "Showing {count} published products. Filters for backset, center distance and door thickness arrive with the full technical catalog; until then, each product page lists the figures it has.": [
     "src/components/locale-pages/ProductFinderPage.tsx:68"
@@ -2818,7 +3086,7 @@
     "src/lib/configurator.ts:455"
   ],
   "Sign-up here": [
-    "src/components/site/SiteFooter.tsx:216"
+    "src/components/site/SiteFooter.tsx:203"
   ],
   "Single cylinder has a thumbturn inside and is the usual choice for an entrance door, because it opens from inside without a key. Double cylinder needs a key on both sides and is specified where a glazed panel sits within reach of the lock. Check local egress rules before choosing double cylinder on an exit door.": [
     "src/data/category-buying-guides.ts:357"
@@ -2835,17 +3103,20 @@
   "Single- and double-cylinder deadbolts for residential entrance doors, bought by hardware distributors alongside our knob locks and lever sets so the whole door keys alike. The {count} models are made here with a 25mm throw and an adjustable backset.": [
     "src/data/category-buying-guides.ts:340"
   ],
+  "Size charts, standards and selection references": [
+    "src/components/site/SiteHeader.tsx:82"
+  ],
   "sliding hook lock": [
     "src/data/category-sourcing.ts:47"
   ],
   "Social Media": [
-    "src/components/site/SiteFooter.tsx:285"
+    "src/components/site/SiteFooter.tsx:287"
   ],
   "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.": [
     "src/lib/configurator.ts:460"
   ],
   "Source": [
-    "src/components/site/menu-experience.ts:197"
+    "src/components/site/menu-experience.ts:257"
   ],
   "Source by range or by project": [
     "src/data/home.ts:73"
@@ -2853,8 +3124,11 @@
   "Source order": [
     "src/components/site/DataTable.tsx:12"
   ],
+  "Specification": [
+    "src/components/site/CategoryGuide.tsx:22"
+  ],
   "Specification routes": [
-    "src/components/site/SiteMenuDrawer.tsx:100"
+    "src/components/site/SiteMenuDrawer.tsx:107"
   ],
   "Specifications as a spreadsheet": [
     "src/components/site/DocumentInventory.tsx:84"
@@ -2863,7 +3137,7 @@
     "src/data/category-buying-guides.ts:149"
   ],
   "Specify": [
-    "src/components/site/menu-experience.ts:189"
+    "src/components/site/menu-experience.ts:249"
   ],
   "Specify and source": [
     "src/components/site/products-architecture.ts:210"
@@ -2878,7 +3152,7 @@
     "src/components/site/menu-experience.ts:44"
   ],
   "Specify. Source. Know the factory.": [
-    "src/components/site/menu-experience.ts:186"
+    "src/components/site/menu-experience.ts:246"
   ],
   "Spindle": [
     "src/data/hardware-terms.ts:339"
@@ -2898,6 +3172,9 @@
   "Stamping": [
     "src/data/capability.ts:92"
   ],
+  "Stand": [
+    "src/data/bau-entry.ts:18"
+  ],
   "Standard half": [
     "src/components/site/CylinderCalculator.tsx:60"
   ],
@@ -2905,7 +3182,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Standards and certifications": [
-    "src/components/site/ProductDetail.tsx:50"
+    "src/components/site/ProductDetail.tsx:56"
   ],
   "Standoff": [
     "src/data/hardware-terms.ts:174"
@@ -2948,7 +3225,7 @@
     "src/lib/configurator.ts:412"
   ],
   "Suitable door types": [
-    "src/components/site/ProductDetail.tsx:61"
+    "src/components/site/ProductDetail.tsx:69"
   ],
   "Surface and concealed systems": [
     "src/components/site/products-architecture.ts:186"
@@ -2969,7 +3246,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:44"
   ],
   "Technical specifications": [
-    "src/components/site/ProductDetail.tsx:48"
+    "src/components/site/ProductDetail.tsx:54"
   ],
   "Tell us the door type, the finish, the standard, the quantity and the destination market, and our first reply can already be a useful one.": [
     "src/components/locale-pages/ContactPage.tsx:44"
@@ -2996,7 +3273,7 @@
     "src/data/category-buying-guides.ts:392"
   ],
   "Thank you. Your inquiry has been sent to our export team.": [
-    "src/components/site/InquiryForm.tsx:46"
+    "src/components/site/InquiryForm.tsx:48"
   ],
   "Thank you. Your inquiry is on its way.": [
     "src/components/site/InquirySuccess.tsx:10"
@@ -3041,7 +3318,7 @@
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
   ],
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
-    "src/components/site/SiteFooter.tsx:209"
+    "src/components/site/SiteFooter.tsx:196"
   ],
   "The cases with a cylinder hole take a euro profile cylinder, sized to the door thickness; our lock cylinders page lists the published lengths. Cylinder and handles are ordered separately from the case, which is how door factories want it.": [
     "src/data/category-buying-guides.ts:501"
@@ -3077,13 +3354,13 @@
     "src/components/site/CompanyOverview.tsx:27"
   ],
   "The factory, markets and technical support behind HYDE.": [
-    "src/components/site/SiteHeader.tsx:570"
+    "src/components/site/SiteHeader.tsx:492"
   ],
   "The first handshake a building gives. Lever sets in stainless steel, brass and matte black.": [
     "src/components/site/products-architecture.ts:34"
   ],
   "The form reaches the same export desks as the addresses above. If it cannot send, the page keeps everything you typed and offers it as a ready-addressed email — your inquiry is not lost either way.": [
-    "src/components/locale-pages/ContactPage.tsx:166"
+    "src/components/locale-pages/ContactPage.tsx:177"
   ],
   "The furniture on the outside face — lever, knob, pull or plate — supplied separately from the device it operates. On a panic exit device the bar is the inside and the trim is the outside, and they are two order lines.": [
     "src/data/hardware-terms.ts:386"
@@ -3149,7 +3426,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:90"
   ],
   "The product overview": [
-    "src/components/site/WelcomeIntro.tsx:24"
+    "src/components/site/WelcomeIntro.tsx:23"
   ],
   "The published cycle life is {cycle}. It is a laboratory figure, comparable between products tested the same way, and it is stated on the specification table of each model that carries it.": [
     "src/data/category-buying-guides.ts:194"
@@ -3176,10 +3453,16 @@
     "src/data/hardware-terms.ts:412"
   ],
   "The same export team handles both, at the same prices and the same specification.": [
-    "src/components/locale-pages/ContactPage.tsx:80"
+    "src/components/locale-pages/ContactPage.tsx:91"
   ],
   "The same pattern, built for a residential opening rather than a corridor in constant use.": [
     "src/lib/configurator.ts:428"
+  ],
+  "The site has four forms. Each is delivered by Web3Forms (web3forms.com), a form service that forwards what you enter to our mailbox as an email. A hidden field filters out spam robots; no captcha service is used.": [
+    "src/data/privacy-policy.ts:88"
+  ],
+  "The site stores four small items in your browser. None of them identifies you:": [
+    "src/data/privacy-policy.ts:73"
   ],
   "The small parts that finish the job. Viewers, stops, transfer devices, bolts, indicators and latches.": [
     "src/components/site/products-architecture.ts:106"
@@ -3245,7 +3528,7 @@
     "src/lib/locale-picker.ts:108"
   ],
   "This study demonstrates a possible hardware schedule. It is not presented as a named completed client project.": [
-    "src/components/site/ProjectDetail.tsx:17"
+    "src/components/site/ProjectDetail.tsx:18"
   ],
   "Three cylinders (counted 2026-09-22), and all three are the shortest in the range — 45, 45 and 47mm. A 45mm overall is below what a double euro cylinder needs, so the pattern is consistent with a single-sided cylinder. That is a pattern, not a confirmation, and it stays unconfirmed until the factory says so.": [
     "src/data/finish-codes.ts:481"
@@ -3262,8 +3545,23 @@
   "Throws several bolts up and down the leaf from one turn, pulling a tall door tight.": [
     "src/lib/configurator.ts:458"
   ],
+  "to answer your inquiry and prepare a quotation; the source tells us which channels bring buyers": [
+    "src/data/privacy-policy.ts:93"
+  ],
+  "to arrange and follow up a meeting at the fair": [
+    "src/data/privacy-policy.ts:95"
+  ],
   "To quote a new part": [
     "src/components/site/ServicesView.tsx:48"
+  ],
+  "to send occasional product, document and exhibition updates": [
+    "src/data/privacy-policy.ts:96"
+  ],
+  "to send the document you asked for": [
+    "src/data/privacy-policy.ts:94"
+  ],
+  "To understand which pages and products buyers look at, and where the site is hard to use, every page loads the following services.": [
+    "src/data/privacy-policy.ts:109"
   ],
   "Too small and a gloved hand cannot use it, which matters on a cold-store or a workshop entrance. Accessibility guidance in several markets sets a minimum.": [
     "src/data/hardware-terms.ts:186"
@@ -3284,7 +3582,7 @@
     "src/data/hardware-terms.ts:246"
   ],
   "Trade pricing is not published. It moves with specification, finish and quantity, so a list without those three is a number nobody can order against — and a price list on a public URL is out of date the week after it is posted.": [
-    "src/components/locale-pages/ContactPage.tsx:67"
+    "src/components/locale-pages/ContactPage.tsx:78"
   ],
   "Trim": [
     "src/data/hardware-terms.ts:380"
@@ -3305,7 +3603,7 @@
     "src/data/feature-columns.ts:136"
   ],
   "Two holes, Ø{diameter}mm, at {centers}mm centers.": [
-    "src/components/site/ProductDrawing.tsx:52"
+    "src/components/site/ProductDrawing.tsx:66"
   ],
   "Two locks that are visually identical can be a bathroom lock and an entrance lock. Specify a privacy set on a store room and it cannot be keyed; specify an entrance set on a bathroom and there is no way in when someone faints behind the door.": [
     "src/data/hardware-terms.ts:482"
@@ -3322,8 +3620,14 @@
   "Two things to put in the email": [
     "src/components/site/DocumentInventory.tsx:143"
   ],
+  "Under the GDPR you have the right to access your data (Art. 15), to have it corrected (Art. 16) or deleted (Art. 17), to restrict its processing (Art. 18), to receive it in a portable format (Art. 20), and to withdraw any consent at any time with effect for the future (Art. 7(3)).": [
+    "src/data/privacy-policy.ts:140"
+  ],
   "Unqualified black. Where the record does not also say powder-coated or painted, the process has not been stated.": [
     "src/data/finish-codes.ts:218"
+  ],
+  "Updated": [
+    "src/components/site/NewsDetail.tsx:222"
   ],
   "Upper cylindrical housing envelopes only: Ø17 mm, two 30 mm segments with a 10 mm central gap.": [
     "public/downloads/models/index.json"
@@ -3335,10 +3639,10 @@
     "src/components/site/products-architecture.ts:174"
   ],
   "Verified dimensions are pending the current technical catalog. No values have been inferred from similar products.": [
-    "src/components/site/ProductDetail.tsx:80"
+    "src/components/site/ProductDetail.tsx:91"
   ],
   "Verified model-scoped reports": [
-    "src/components/site/SiteHeader.tsx:66"
+    "src/components/site/SiteHeader.tsx:54"
   ],
   "verified product records": [
     "src/lib/site-facts.ts:63"
@@ -3353,7 +3657,7 @@
     "src/components/site/ProductCard.tsx:94"
   ],
   "View certificate": [
-    "src/components/site/ProductDetail.tsx:76"
+    "src/components/site/ProductDetail.tsx:87"
   ],
   "View lever handles": [
     "src/data/home.ts:32"
@@ -3370,8 +3674,11 @@
   "View specifications": [
     "src/components/site/ProductStudies.tsx:50"
   ],
+  "View this page in English": [
+    "src/components/site/LanguageSuggestion.tsx:69"
+  ],
   "Visit our Alibaba storefront": [
-    "src/components/locale-pages/ContactPage.tsx:88"
+    "src/components/locale-pages/ContactPage.tsx:99"
   ],
   "Warm entry and corridor studies for coordinated door packages": [
     "src/data/home.ts:140"
@@ -3380,19 +3687,28 @@
     "src/data/home.ts:28"
   ],
   "Watch it work": [
-    "src/components/site/ProductDetail.tsx:69"
+    "src/components/site/ProductDetail.tsx:80"
+  ],
+  "We are based in China, and your inquiry is read and answered there. Google, Microsoft and Cloudflare may process data in the USA; all three are certified under the EU-U.S. Data Privacy Framework.": [
+    "src/data/privacy-policy.ts:133"
   ],
   "We are the factory, not a trading office in front of one. Everything below happens on our own floor, from the mould to the carton — which is why a change of finish or a customer's own drawing is a scheduling question here rather than a subcontracting one.": [
     "src/data/capability.ts:211"
   ],
   "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.": [
-    "src/components/site/InquiryForm.tsx:235"
+    "src/components/site/InquiryForm.tsx:246"
   ],
   "We could not send this from the website.": [
-    "src/components/site/InquiryForm.tsx:47"
+    "src/components/site/InquiryForm.tsx:49"
+  ],
+  "We could not send this from the website. Nothing you typed is lost: open it as an email, or write to": [
+    "src/components/site/BauMeetingForm.tsx:20"
   ],
   "We do not have this": [
     "src/components/site/DocumentInventory.tsx:28"
+  ],
+  "We keep inquiries as long as needed to answer them and follow up, and business correspondence for as long as commercial and tax law require. Newsletter addresses are kept until you unsubscribe.": [
+    "src/data/privacy-policy.ts:102"
   ],
   "We make the hardware that goes on a door, and much of it leaves our factory under our customers' names. After twenty-eight years of that, we know who gets the call when a part fails: the one whose name is on it. We build for that person.": [
     "src/components/site/CompanyOverview.tsx:24"
@@ -3416,7 +3732,7 @@
     "src/data/home.ts:189"
   ],
   "Website inquiry": [
-    "src/components/site/InquiryForm.tsx:51"
+    "src/components/site/InquiryForm.tsx:53"
   ],
   "What {name} are": [
     "src/components/site/CollectionNote.tsx:22"
@@ -3470,7 +3786,7 @@
     "src/lib/product-faq.ts:126"
   ],
   "What each building type takes": [
-    "src/components/site/SiteHeader.tsx:63"
+    "src/components/site/SiteHeader.tsx:81"
   ],
   "What function does the {m} provide?": [
     "src/lib/product-faq.ts:135"
@@ -3500,11 +3816,17 @@
   "What people reach for first. Grip, pull and concealed handles for entrance and sliding doors.": [
     "src/components/site/products-architecture.ts:88"
   ],
+  "What personal data cantonlock.com collects through its forms, analytics and hosting, why, who receives it, and how to exercise your data-protection rights.": [
+    "src/data/privacy-policy.ts:52"
+  ],
   "What size is the {m}?": [
     "src/lib/product-faq.ts:180"
   ],
   "What sizes are the hook locks?": [
     "src/data/category-buying-guides.ts:552"
+  ],
+  "What the {n} published models in this range state, counted from their own specification tables.": [
+    "src/components/site/CategoryGuide.tsx:21"
   ],
   "What the lock does rather than what it looks like: entrance (keyed outside), privacy (turn button inside, emergency release outside), passage (latch only, no locking), classroom, communication. The function is the last two letters of our order code.": [
     "src/data/hardware-terms.ts:476"
@@ -3521,6 +3843,9 @@
   "What we do for a private-label brand": [
     "src/components/site/ServicesView.tsx:57"
   ],
+  "What we receive (* required)": [
+    "src/data/privacy-policy.ts:91"
+  ],
   "What you can have now, and what we send on request.": [
     "src/components/locale-pages/DownloadsPage.tsx:50"
   ],
@@ -3532,6 +3857,9 @@
   ],
   "Where our hardware is fitted": [
     "src/data/home.ts:115"
+  ],
+  "Where the products are used, how to specify them, and what buyers ask.": [
+    "src/components/site/SiteHeader.tsx:521"
   ],
   "Where we are": [
     "src/components/site/CompanyOverview.tsx:26"
@@ -3590,6 +3918,9 @@
   "Write to the export team about a model, a sample, an OEM part or a project quotation. An engineer reads it, in English or Spanish.": [
     "src/components/locale-pages/ContactPage.tsx:41"
   ],
+  "Writes the door hardware guides and factory news published on this site.": [
+    "src/components/site/AuthorProfile.tsx:25"
+  ],
   "Written out as “Antique Brass (AB)”.": [
     "src/data/finish-codes.ts:128"
   ],
@@ -3622,6 +3953,12 @@
   ],
   "Yes. The cylinder can be keyed alike with our bored locks and deadbolts, or cut into a master-key system. State the keying with the order; cylinders are cut before shipment.": [
     "src/data/category-buying-guides.ts:419"
+  ],
+  "You can also write to us by email or WhatsApp. If you use the WhatsApp link, the conversation is processed by WhatsApp / Meta under their own terms.": [
+    "src/data/privacy-policy.ts:100"
+  ],
+  "You do not have to give us personal data, but without an email address we cannot answer an inquiry. We do not use automated decision-making with legal effect. The site is intended for businesses, not children. We update this notice when our processing changes; the date above shows the current version.": [
+    "src/data/privacy-policy.ts:149"
   ],
   "Your brand, on every layer": [
     "src/components/site/ServicesView.tsx:73"

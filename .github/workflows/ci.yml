@@ -23,23 +23,6 @@ jobs:
           node-version: 24
           cache: npm
 
-      - name: Verify generated files are in sync
-        shell: bash
-        run: |
-          bash scripts/sync-agent-rules.sh
-          node scripts/sync-skills.mjs
-
-          if [[ -n "$(git status --porcelain=v1 --untracked-files=all)" ]]; then
-            echo "::error::Generated files are out of sync with their sources (AGENTS.md / SKILL.md)."
-            echo "Run the sync scripts locally and commit the result:"
-            echo "  bash scripts/sync-agent-rules.sh"
-            echo "  node scripts/sync-skills.mjs"
-            git status --short
-            git diff --stat
-            exit 1
-          fi
-          echo "All generated files are in sync with their sources."
-
       - name: Install dependencies
         run: npm ci
 
@@ -57,6 +40,13 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # Same order as `npm run deploy:prep`. The build renders the legacy product URLs
+      # (buildableLegacyProductParams) as redirect stubs carrying Next's error mark; the
+      # release deletes them because nginx 301s those URLs first. Without this step the
+      # --check in test:export fails on pages no release would ever ship.
+      - name: Prune stale exports
+        run: node scripts/prune-stale-exports.mjs --write
 
       - name: Verify the fresh static export
         run: npm run test:export

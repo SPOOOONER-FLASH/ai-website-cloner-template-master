@@ -8,24 +8,26 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# Website Reverse-Engineer Template
+# cantonlock.com (HYDE) and RAYEN — one Next.js codebase
 
 ## What This Is
-A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. The Next.js + shadcn/ui + Tailwind v4 base is pre-scaffolded — just run `/clone-website <url1> [<url2> ...]`.
+The export sites of a lock and door-hardware factory: HYDE (cantonlock.com, ten locales) and
+RAYEN (Chinese). Both are static exports of one Next.js app; see the RAYEN / HYDE wall below.
+The repository began as a website-cloner template; the cloning workflow and its skills were
+removed on 2026-09-28 because the site no longer emulates anything.
 
 ## Tech Stack
-- **Framework:** Next.js 16 (App Router, React 19, TypeScript strict)
-- **UI:** shadcn/ui (Radix primitives, Tailwind CSS v4, `cn()` utility)
-- **Icons:** Lucide React (default — will be replaced/supplemented by extracted SVGs)
+- **Framework:** Next.js 16 (App Router, React 19, TypeScript strict), static export
+- **UI:** shadcn/ui (Radix primitives, Tailwind CSS v4, `cn()` utility), Lucide icons
 - **Styling:** Tailwind CSS v4 with oklch design tokens
-- **Deployment:** Vercel
+- **Deployment:** `out/` / `out-rayen/` served by nginx behind Cloudflare (see releases below)
 
 ## Commands
 - `npm run dev` — Start dev server
 - `npm run build` — Production build
 - `npm run lint` — ESLint check
 - `npm run typecheck` — TypeScript check
-- `npm run check` — Run lint + typecheck + build
+- `npm run check` — motion check + lint + typecheck + tests + build + export tests (the definition of done)
 
 ## Code Style
 - TypeScript strict mode, no `any`
@@ -35,10 +37,8 @@ A reusable template for reverse-engineering any website into a clean, modern Nex
 - Responsive: mobile-first
 
 ## Design Principles
-- **Pixel-perfect emulation** — match the target's spacing, colors, typography exactly
-- **No personal aesthetic changes during emulation phase** — match 1:1 first, customize later
-- **Real content** — use actual text and assets from the target site, not placeholders
-- **Beauty-first** — every pixel matters
+- **Real content** — real products, real photographs, real dimensions; never placeholders
+- See "Professional, not decorated" and "Never generate an imagined metal product" below
 
 ## Project Structure
 ```
@@ -278,12 +278,12 @@ then follow it through verification. If a selected skill changes the workflow or
 implementation for a design decision, say so immediately.
 
 Use one primary method skill and one verification/review skill when that improves the
-result; do not stack overlapping collections for appearance's sake. Examples:
-`redesign-skill` or `impeccable` before a page redesign, `imagegen-frontend-web` plus
-image QA for editorial visuals, `geo-audit` before inventing another GEO audit,
-`cro` before changing a conversion path, and `copywriting` before bulk product copy.
-`impeccable` includes deterministic anti-slop detectors, so changed web UI runs its
-detector once in the finishing pass in addition to the normal project checks.
+result; do not stack overlapping collections for appearance's sake. `impeccable` includes
+deterministic anti-slop detectors, so changed web UI runs its detector once in the
+finishing pass in addition to the normal project checks. The kept set is short on purpose
+(pruned 2026-09-28, client: 「很多 skills 感觉在拖后腿」): copywriting, CRO, SEO/GEO and
+marketing method is done from the model's own judgment plus this file's rules, and the
+repository's own audit scripts, not from generic SaaS playbooks.
 
 If no installed skill fits, continue with documented expert judgment; do not make the
 client search for one. Installing a new skill, plugin, MCP server, runtime, or anything
@@ -463,7 +463,7 @@ different things, and none of them is a purge.
 | `seoTitle*` / `seoDescription*` and `scripts/build-product-titles.mjs` | The engineering session — see `docs/collaboration/tasks/2026-09-24-division-of-labour.md` |
 | `content/**`, `scripts/**`, `src/data/**`, `src/lib/**` | Claude |
 | `content/promo.json` | Claude: copy and timing. Codex: card visuals. |
-| Building and committing `out/` | **HYDE release: `npm run release:hyde`** — see the wall below |
+| Building and committing `out/` | **HYDE release: `npm run release:hyde`, run by the Claude HYDE engineering session on the johns machine** (client 2026-09-28, below) — see the wall below |
 | Building and committing `out-rayen/` | **RAYEN release: `npm run release:rayen`** — RAYEN's side only |
 | Article copy and localisation (`content/news`, `content/guides`, all three languages) | **Claude.** Client 2026-09-23: Kimi assists only; Claude owns polish and localisation |
 
@@ -493,7 +493,15 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
    nobody's uncommitted work can be baked in or swept up. `release:rayen` does the same for
    `out-rayen/`. **Do not build and commit `out/` or `out-rayen/` by hand any more.**
 
-   **On this machine, put the checkout on E:** (client, 2026-09-24: 「改为 E 盘」). C: is full —
+   **Every HYDE release and deploy runs on the johns machine** (client, 2026-09-28:
+   「以后推送交还给你。发布由你来……所有发布部署交还给 john 电脑（4090、64G 运存），86132 只有
+   16G 运存和 20G C 盘剩余」). That machine built all 8,869 pages of r8 without the old
+   0xC0000409 crash and pushed 46,267 files in one attempt; 86132 had failed the same push five
+   times. Other sessions push source and say so; the engineering session there builds, pushes
+   (`scripts/chunk-push-release.mjs` if a single push times out), verifies live and runs
+   `npm run seo:indexnow:release`. Its release checkout is `tmp/claude-release/release-hyde`.
+
+   **On the 86132 machine, put the checkout on E:** (client, 2026-09-24: 「改为 E 盘」). C: is full —
    on 2026-09-24 it had 2.8 GB left, a clean checkout is ~4 GB before dependencies, and the
    release died inside `git worktree add` with `No space left on device`, which reads like a
    broken repository rather than a full disk. So:
@@ -649,7 +657,4 @@ is deliberate and reviewable. `npm test` runs in CI.
 
 ## MOST IMPORTANT NOTES
 - The primary Claude/Codex sessions use the lightweight shared-tree protocol above. When launching agent teams, give each spawned teammate its own worktree branch and merge at the end; do not let multiple teammates write the shared checkout.
-- After editing `AGENTS.md`, run `bash scripts/sync-agent-rules.sh` to regenerate platform-specific instruction files.
-- After editing `.claude/skills/clone-website/SKILL.md`, run `node scripts/sync-skills.mjs` to regenerate the skill for all platforms.
-
-@docs/research/INSPECTION_GUIDE.md
+- `AGENTS.md` is read natively by Codex and Kimi and through `CLAUDE.md` by Claude. There are no generated per-platform copies any more; edit this file only.

@@ -5,6 +5,7 @@ import { localeFromPath } from "@/data/locales";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
+import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import type { PromoCard } from "@/data/types";
 import {
@@ -118,6 +119,13 @@ export function PromoDialog() {
   useEffect(() => {
     if (!allowedHere || !promoIsInWindow()) return;
     if (isSuppressed(Date.now())) return;
+    /*
+      Not over an article on a phone (09-28, Google Discover): Discover traffic is almost all
+      mobile and lands on articles, and a card that fills the bottom of a phone screen while
+      someone reads is the "intrusive popup" Discover penalises. Desktop and the other
+      surfaces keep it; ?promo=1 still forces it for a check.
+    */
+    if (surface === "news" && !forcedOpen() && window.matchMedia("(max-width: 639.98px)").matches) return;
 
     const timer = window.setTimeout(() => {
       // Session-scoped dismissals only; a forced preview ignores even those, so the
@@ -141,7 +149,7 @@ export function PromoDialog() {
     }, promoDialog.delaySeconds * 1000);
 
     return () => window.clearTimeout(timer);
-  }, [allowedHere, pathname]);
+  }, [allowedHere, pathname, surface]);
 
   /** Dismissing one card silences it for the rest of this browser session — no further. */
   const dismissCard = useCallback((href: string) => {
@@ -171,7 +179,12 @@ export function PromoDialog() {
   const activeCard = selectActivePromoCard(promoDialog.cards, dismissed, pathname);
   const locale = localeFromPath(pathname);
 
-  if (!open || !activeCard) return null;
+  /* The card rises in when the delay elapses and settles out when the rail is closed, on the
+     site overlay rhythm (globals.css .overlay-presence / .overlay-panel). It appeared and
+     vanished in a single frame until 2026-09-27. */
+  const presence = useOverlayPresence(open && Boolean(activeCard));
+
+  if (!presence.rendered || !activeCard) return null;
 
   return (
     /*
@@ -183,9 +196,12 @@ export function PromoDialog() {
       aria-label={locale === "es" ? "Oferta destacada" : locale === "pt" ? "Oferta em destaque" : "Featured offer"}
       // Passive promotion stays below the sticky header's z-10 stacking context, so
       // user-requested search and menu overlays inside that header always remain usable.
-      className="fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
+      className="overlay-presence fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
+      data-state={presence.visible ? "open" : "closed"}
     >
-      <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
+      <div className="overlay-panel">
+        <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
+      </div>
     </aside>
   );
 }

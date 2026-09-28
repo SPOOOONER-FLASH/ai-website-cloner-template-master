@@ -1,0 +1,72 @@
+# 2026-09-28 · Claude（工程）· 8/31–9/28 指令核查与月度总结（目标 #78）
+
+**交付**：`Desktop\hyde\HYDE-月度工作总结-2026-08-31_2026-09-28.docx`，源在 `docs/collaboration/reports/`：
+- `…md`：报告正文，由 `npm run report:monthly` 生成
+- `…json`：474 条合并后的核查行
+- `…-导语.md`：手写结论，由生成器插入报告开头
+
+**方法**
+1. `npm run report:instructions -- --from 2026-08-31 --to 2026-09-28` 提取本机 Claude 与 Codex 会话里甲方亲自发的 512 条消息（雷茵、惠恩除外）。
+2. 五路并行核查，每条都对照 git 和线上实测，不采信会话的自述：Claude 会话 291 行、Codex 会话 183 行、仓库任务文件与 runbook 204 行、agent-updates 279 行、提交记录 40 行。
+3. 按类别分五组语义合并：997 行合并为 474 条，状态以最新证据为准，矛盾写在 note。
+
+**覆盖缺口**：86132 那台电脑的会话原文本机读不到，只能通过它写进仓库的目标清单、任务文件和工作报告覆盖。没落进这些文件的指令查不到。
+
+**结果（网站 459 条）**
+
+| 状态 | 条数 |
+|---|---|
+| ✓ 已完成 | 330 |
+| ◐ 部分完成 | 42 |
+| ▲ 待甲方 | 38 |
+| … 等待外部 | 20 |
+| ✗ 未完成 | 12 |
+| ↺ 已改方向 | 17 |
+
+**核查中发现的文档与现状不符**：目标清单 #14、#54、#56、#59 实际已完成，#67 动效大部分已做，#23 甲方答复不用；runbook ④⑤ 已完成但仍在第一屏。已在本次或下一提交更正。
+
+## 追加：#80 两处核查查出的事实错误
+
+- `JsonLd.tsx` `websiteSchema().inLanguage` 原为 `["en","es"]`，改为从 `locales` 生成的 10 个语种（pt 用 pt-BR）。
+- `llms.txt` 的「over thirty markets」在 09-24 已从 FAQ 删掉（无法核实），这里漏改；改为甲方给的出口地区：欧洲、北美、南美、土耳其、东南亚。`generate-product-seo.mjs` 里同句的两条模板一并删掉（内容里已无残留）。
+
+## 追加：#81 型号未确认的 13 条记录
+
+产品页和产品卡片原写「Reference available on request」，等于承诺能给出型号，但工厂型号我们并不知道。改为如实的「Model code to be confirmed」，十个语种（es/pt 在组件里，另外 7 种写进 ui.json，并用 `npm run i18n:keys` 重新生成客户端译文表）。
+「Information available on request」那条兜底实际不会显示：uncoveredFacts 已经过滤掉空值，所以没改。
+
+## 追加：#82 HowTo 结构化数据
+
+全部 82 篇文章里，只有 fitting-a-euro-cylinder 的正文是明确的逐步操作（Step one…five，外加最后的双面检查）。
+在该文章 JSON 里加 `howTo`：6 步，每一步都是正文的浓缩，没有新增内容。`JsonLd.tsx` 只在英文页输出，因为步骤按英文正文写，放到译文页会和可见文字对不上。
+新增测试 `src/data/howto.test.ts`：凡是带 HowTo 的文章，正文必须是逐步写法，而且至少 3 步。
+本地核对：英文页 HowTo 6 步；西语页没有；其他文章没有。#80（WebSite 10 个语种）和 #81（Model code to be confirmed）也在同一次核对里确认。
+Google 自 2023 年起不再展示 HowTo 富摘要，这次加主要是给 AI 引擎读。
+
+## 追加：r8 由本机发布（目标 #85）
+
+发布会话推 r8（46,188 个文件）连续 5 次失败，都是 GitHub 408 或断线。甲方改由本机（John）推送。
+本机从最新 origin/main（1dd053acc18）重建，这次没有崩（以前约 9k 页处报过 0xC0000409）：8,869 页全部生成，无中文检查和译文检查都通过。
+`release:hyde` 整体推送一次成功：**c11fb7f4d59**，46,267 个文件，只动了 out/。
+包含的改动：页头修复与 Resources 下拉、10 语种声明、型号待确认、HowTo、46 张主图（02f1ea41f72）、浮层动效（66af62aae32）。
+分批推送脚本 `scripts/chunk-push-release.mjs`（afe60824f65）这次没用上，留作备用。
+线上实测和 IndexNow 要等甲方 purge。
+
+**r8 线上实测（c11fb7f4d59，构建号 0nyVXW-ZtBfXs-uLtMd78）**：首页有 `resources-shelf`；/fr/ 为新页头；WebSite.inLanguage 列 10 个语种；fitting-a-euro-cylinder 有 HowTo；型号未确认的产品页显示「Model code to be confirmed」；llms.txt 已无「thirty markets」；ju-072 有案例区块。
+`seo:indexnow:release` 比较 3d9ab7aec9c → c11fb7f4d59，字节有差异 7,692 页，可读内容有变化 250 页，已提交，返回 200。
+第一次实测时首页还是旧的 inLanguage、构建号对不上，因为服务器正在拉取；几分钟后重测就对了。其他页面能不能看到新版，仍要等甲方 purge。
+
+## 追加：r10 发布被标题守卫拦下
+
+`deploy:prep` 报「七语种 21 条标题/描述与生成器不一致」。原因是规格会话把 L016、L025、L026 的 material 清空了（56e92744123：摘要写的是镀锌，材质字段却写锌合金），但七语种标题和描述里还写着「锌合金」（3 × 7 = 21 条）。
+跑 `build-product-titles.mjs --write` 去掉了这三个字；英、西、葡的标题本来就没写材质。守卫拦得对：本来会把一个已确认有疑问的规格写进 21 条搜索结果。
+
+## 追加：r9、r10 已由本机发布
+
+| 发布 | 提交 | 构建源 | 内容 | IndexNow |
+|---|---|---|---|---|
+| r9 | d07288940d8 | c0fa19785c5 | 发布会话的抽屉挂载修复 | 内容无变化，未提交 |
+| r10 | baa82d3b5a0 | 60fecfee1de | 1376–1599px 导航 Resources（#88）；菜单 Esc 和焦点回退（#89）；文案 dddfc89a1e8（57 条材质补回、葡语重复）；规格 56e92744123（L016/L025/L026 材质清空）及七语种标题跟进 | 259 条，200 |
+
+r10 第一次构建被 `product-titles` 守卫拦下（七语种 21 条标题仍写「锌合金」），修好后重发。
+线上实测（构建号 YoHWSABohg0BeRXSrmoGt，1440 宽）：导航条为 Buy it now · Products · Product Finder · Resources · Company；在 0 帧环境下抽屉 30–93ms 打开，两种 Esc 都能关闭，焦点回到菜单按钮；语言面板开关正常；/fr/…/l016-latch/ 标题为「L016 Loqueteau」。
