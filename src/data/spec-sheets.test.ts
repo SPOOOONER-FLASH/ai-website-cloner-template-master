@@ -10,9 +10,14 @@ import test from "node:test";
 const manifest = JSON.parse(readFileSync("src/data/generated/spec-sheets.json", "utf8")) as string[];
 const dir = "public/downloads/spec-sheets";
 
-test("every listed spec sheet exists, and every sheet is listed", () => {
-  const files = readdirSync(dir).filter((f) => f.endsWith(".pdf")).map((f) => f.slice(0, -4)).sort();
-  assert.deepEqual(files, [...manifest].sort());
+const locales = ["en", "es", "pt", "fr", "de", "ja", "ko", "tr", "ru", "ar"];
+
+test("every listed spec sheet exists in all ten languages, and every sheet is listed", () => {
+  for (const locale of locales) {
+    const folder = locale === "en" ? dir : `${dir}/${locale}`;
+    const files = readdirSync(folder).filter((f) => f.endsWith(".pdf")).map((f) => f.slice(0, -4)).sort();
+    assert.deepEqual(files, [...manifest].sort(), `${locale}: sheets and manifest differ`);
+  }
 });
 
 test("sheets exist only for published HYDE products with a confirmed model code", () => {
