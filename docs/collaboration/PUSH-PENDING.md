@@ -52,3 +52,17 @@
 - `c8e012f4309` Replace rejected guide composites with genuine catalogue photos
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 00:47:55 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging src/app/globals.css / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `f12c09e4dce` shiplog: 更新上线存档
+- `542fe41ebd6` Refine HYDE home card hover motion
+- `c61f4be5e74` Document guide image push conflict and release hold
+- `9c9ea120666` shiplog: 更新上线存档
+- `c8e012f4309` Replace rejected guide composites with genuine catalogue photos
+
+下一次 `npm run ship` 成功时这些会一起推上去。
