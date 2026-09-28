@@ -55,3 +55,8 @@ Google 自 2023 年起不再展示 HowTo 富摘要，这次加主要是给 AI �
 **r8 线上实测（c11fb7f4d59，构建号 0nyVXW-ZtBfXs-uLtMd78）**：首页有 `resources-shelf`；/fr/ 为新页头；WebSite.inLanguage 列 10 个语种；fitting-a-euro-cylinder 有 HowTo；型号未确认的产品页显示「Model code to be confirmed」；llms.txt 已无「thirty markets」；ju-072 有案例区块。
 `seo:indexnow:release` 比较 3d9ab7aec9c → c11fb7f4d59，字节有差异 7,692 页，可读内容有变化 250 页，已提交，返回 200。
 第一次实测时首页还是旧的 inLanguage、构建号对不上，因为服务器正在拉取；几分钟后重测就对了。其他页面能不能看到新版，仍要等甲方 purge。
+
+## 追加：r10 发布被标题守卫拦下
+
+`deploy:prep` 报「七语种 21 条标题/描述与生成器不一致」。原因是规格会话把 L016、L025、L026 的 material 清空了（56e92744123：摘要写的是镀锌，材质字段却写锌合金），但七语种标题和描述里还写着「锌合金」（3 × 7 = 21 条）。
+跑 `build-product-titles.mjs --write` 去掉了这三个字；英、西、葡的标题本来就没写材质。守卫拦得对：本来会把一个已确认有疑问的规格写进 21 条搜索结果。
