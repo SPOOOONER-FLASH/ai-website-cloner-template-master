@@ -208,8 +208,7 @@ function buildDescription(p) {
 
   // Published boilerplate, longest that still fits, then progressively shorter.
   const tails = [
-    "Manufactured in Guangdong, China and exported to over thirty markets. Request a quotation.",
-    "Manufactured in Guangdong, China and exported to over thirty markets.",
+    // "over thirty markets" removed 09-28: unverifiable, dropped from the FAQ on 09-24.
     "Manufactured in Guangdong, China. Request a quotation.",
     "Made in Guangdong, China.",
   ];

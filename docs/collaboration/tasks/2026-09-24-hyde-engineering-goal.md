@@ -82,7 +82,7 @@
 | 77 | 甲方 09-27「推送上线」：#74 页头、#76 Resources 下拉等源码已推，需 release:hyde（本机构建崩溃，请发布会话发布），上线后线上实测 + IndexNow | 等待（发布会话 r8 发布中，从 cc64fd8ad65） |
 | 78 | 甲方 09-27：9 月 HYDE 全部指令核查（所有会话 + 远端 md），逐条打勾/说明原因，出月度工作总结 docx 供下载 | 09-28 完成（Desktop\hyde\HYDE-月度工作总结-2026-08-31_2026-09-28.docx；459 条网站指令，330 完成） |
 | 79 | 核查遗留（工程线）：目标清单 #14 #54 #56 #59 #67 #23 状态与实际不符 → 改正；runbook ④⑤ 已完成移出第一屏并出 Word | 待做 |
-| 80 | 核查遗留：JSON-LD WebSite.inLanguage 只列 en/es（实为 10 语种）；llms.txt「over thirty markets」与 FAQ 矛盾 | 待做 |
+| 80 | 核查遗留：JSON-LD WebSite.inLanguage 只列 en/es（实为 10 语种）；llms.txt「over thirty markets」与 FAQ 矛盾 | 09-28 完成（inLanguage 列 10 语种；llms.txt 改为甲方给的出口地区） |
 | 81 | 核查遗留：无型号产品仍显示「Reference/Available on request」（如 stainless-steel-lever-handle-lock），改成如实说明缺什么、怎么问 | 待做 |
 | 82 | 核查遗留：HowTo 结构化数据（安装/测量类文章，如 fitting-a-euro-cylinder） | 待做 |
 | 83 | 核查遗留：产品图一致性审计脚本（主体占比、基线），列出不合规图交视觉会话 | 待做 |

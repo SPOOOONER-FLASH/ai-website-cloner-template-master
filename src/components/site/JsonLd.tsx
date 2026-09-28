@@ -1,6 +1,6 @@
 import type { Locale } from "@/data/site";
 import { articleFaqItems } from "@/lib/article-faq";
-import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
+import { absoluteUrl, legalName, locales, siteName, siteUrl } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
 import { getAnsweredFaq } from "@/data/faq";
@@ -159,7 +159,9 @@ export function websiteSchema(): WithContext<WebSite> {
     url: siteUrl,
     name: siteName,
     publisher: { "@id": `${siteUrl}/#organization` },
-    inLanguage: ["en", "es"],
+    /* Every locale the site publishes (was ["en", "es"] after pt and the seven overlay
+       locales shipped; found by the 09-28 monthly audit). Same tags the pages use. */
+    inLanguage: locales.map((l) => (l === "pt" ? "pt-BR" : l)),
   };
 }
 
