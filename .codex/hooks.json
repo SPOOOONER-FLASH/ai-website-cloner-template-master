@@ -1,0 +1,17 @@
+{
+  "description": "Continue this HYDE desktop and search repair goal while its actionable checklist is open.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .codex/hooks/hyde-goal-stop.mjs",
+            "timeout": 5,
+            "statusMessage": "Checking HYDE goal completion"
+          }
+        ]
+      }
+    ]
+  }
+}
