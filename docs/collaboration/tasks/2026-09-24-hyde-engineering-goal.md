@@ -84,7 +84,7 @@
 | 79 | 核查遗留（工程线）：目标清单 #14 #54 #56 #59 #67 #23 状态与实际不符 → 改正；runbook ④⑤ 已完成移出第一屏并出 Word | 09-28 完成（6 行更正；runbook ③④⑤ 存档，⑥⑦ 前提已满足；Word 已重出） |
 | 80 | 核查遗留：JSON-LD WebSite.inLanguage 只列 en/es（实为 10 语种）；llms.txt「over thirty markets」与 FAQ 矛盾 | 09-28 完成（inLanguage 列 10 语种；llms.txt 改为甲方给的出口地区） |
 | 81 | 核查遗留：无型号产品仍显示「Reference/Available on request」（如 stainless-steel-lever-handle-lock），改成如实说明缺什么、怎么问 | 09-28 完成（13 条型号未确认记录改为「Model code to be confirmed」，10 语种） |
-| 82 | 核查遗留：HowTo 结构化数据（安装/测量类文章，如 fitting-a-euro-cylinder） | 待做 |
+| 82 | 核查遗留：HowTo 结构化数据（安装/测量类文章，如 fitting-a-euro-cylinder） | 09-28 完成（只有 fitting-a-euro-cylinder 正文是逐步操作；6 步取自正文，仅英文页；Google 2023 起不展示 HowTo 富摘要，主要给 AI 引擎） |
 | 83 | 核查遗留：产品图一致性审计脚本（主体占比、基线），列出不合规图交视觉会话 | 待做 |
 | 84 | 核查遗留：每周复测（Clarity 排名 / GSC 摘要）记录进 agent-updates；10-08 前后复查标题点击率 | 等待（日期：首次 10-03 周五） |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |

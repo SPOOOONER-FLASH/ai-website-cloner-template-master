@@ -34,3 +34,11 @@
 
 产品页和产品卡片原写「Reference available on request」，等于承诺能给出型号，但工厂型号我们并不知道。改为如实的「Model code to be confirmed」，十个语种（es/pt 在组件里，另外 7 种写进 ui.json，并用 `npm run i18n:keys` 重新生成客户端译文表）。
 「Information available on request」那条兜底实际不会显示：uncoveredFacts 已经过滤掉空值，所以没改。
+
+## 追加：#82 HowTo 结构化数据
+
+全部 82 篇文章里，只有 fitting-a-euro-cylinder 的正文是明确的逐步操作（Step one…five，外加最后的双面检查）。
+在该文章 JSON 里加 `howTo`：6 步，每一步都是正文的浓缩，没有新增内容。`JsonLd.tsx` 只在英文页输出，因为步骤按英文正文写，放到译文页会和可见文字对不上。
+新增测试 `src/data/howto.test.ts`：凡是带 HowTo 的文章，正文必须是逐步写法，而且至少 3 步。
+本地核对：英文页 HowTo 6 步；西语页没有；其他文章没有。#80（WebSite 10 个语种）和 #81（Model code to be confirmed）也在同一次核对里确认。
+Google 自 2023 年起不再展示 HowTo 富摘要，这次加主要是给 AI 引擎读。

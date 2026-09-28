@@ -186,5 +186,34 @@
     "E se o novo entrar num sistema de chave mestra, guarde-o também até o quadro de chaves estar atualizado: o cilindro retirado é a prova física de que chave abria aquela porta antes."
   ],
   "seoTitlePt": "Como instalar um cilindro europeu, passo a passo",
-  "seoDescriptionPt": "Gire o came, retire o parafuso de fixação, deixe a saliência entre rente e 3 mm, e teste com a porta fechada. Cilindros de latão maciço, nove comprimentos totais."
+  "seoDescriptionPt": "Gire o came, retire o parafuso de fixação, deixe a saliência entre rente e 3 mm, e teste com a porta fechada. Cilindros de latão maciço, nove comprimentos totais.",
+  "howTo": {
+    "name": "How to replace a euro cylinder",
+    "steps": [
+      {
+        "name": "Remove the old cylinder",
+        "text": "Put the key in and turn it about fifteen to twenty degrees so the cam is drawn back inside the profile. While the cam stands proud, the cylinder cannot pass through the lock case."
+      },
+      {
+        "name": "Take out the fixing screw",
+        "text": "Remove the one screw in the lock case faceplate, level with the middle of the cylinder, and draw the cylinder out by the key. If it does not move, turn the key a little further rather than pulling harder."
+      },
+      {
+        "name": "Insert the new cylinder",
+        "text": "Key in, cam turned clear, slide the new cylinder through from the outside face."
+      },
+      {
+        "name": "Fit the fixing screw",
+        "text": "The screw passes through the center of the cylinder and only enters at the exact depth. Tighten it firmly and stop: it is a small screw in brass and shears if treated like a structural fixing."
+      },
+      {
+        "name": "Check the projection",
+        "text": "Flush to about three millimeters proud of the escutcheon or rose is right. More gives a tool something to grip; if the projection is wrong, the cylinder is the wrong length or split."
+      },
+      {
+        "name": "Test from both faces, door open and closed",
+        "text": "Key from outside, key or thumbturn from inside, four times each way with the door open, then again with the door closed. Finally withdraw the key at rest from both faces."
+      }
+    ]
+  }
 }

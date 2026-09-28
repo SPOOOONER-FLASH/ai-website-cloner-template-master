@@ -386,7 +386,36 @@ export function NewsArticleJsonLd({
   section?: "news" | "guides";
 }) {
   const path = locale === "en" ? `/${section}/${article.slug}/` : `/${locale}/${section}/${article.slug}/`;
-  return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
+  const url = absoluteUrl(path);
+  /* English only: the steps are written from the English body, and markup that disagrees
+     with the visible text of a translated page is the failure FAQ markup is guarded against. */
+  const howTo = locale === "en" && article.howTo ? howToSchema(article.howTo, url) : null;
+  return (
+    <>
+      <JsonLd data={newsArticleSchema(article, url, locale)} />
+      {howTo ? <JsonLd data={howTo} /> : null}
+    </>
+  );
+}
+
+/** HowTo for an article whose body is an explicit procedure (see NewsArticle.howTo). */
+export function howToSchema(
+  howTo: NonNullable<NewsArticle["howTo"]>,
+  url: string,
+): WithContext<Thing> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howTo.name,
+    url,
+    step: howTo.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      url: `${url}#step-${i + 1}`,
+    })),
+  } as WithContext<Thing>;
 }
 
 /** Breadcrumb trail. `items` is ordered root → current, each with an absolute URL. */
