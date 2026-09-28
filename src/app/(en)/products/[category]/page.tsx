@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
 import { categorySourcingLine } from "@/data/category-sourcing";
+import { categoryNote } from "@/data/category-notes";
+import { CategoryNote } from "@/components/site/CategoryNote";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -166,6 +168,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </p>
             {/* Sourcing facts, every clause published elsewhere — see category-sourcing.ts. */}
             {sourcing ? <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p> : null}
+            <CategoryNote note={categoryNote(category.slug, "en")} />
           </div>
         </div>
       </section>
