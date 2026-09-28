@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 619 次提交
+最近 30 天 · 共 620 次提交
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 18:48 | HYDE | HowTo 结构化数据：fitting-a-euro-cylinder 6 步（取自正文，仅英文页）+ 守卫测试 | `dcf700eb961` |
 | 18:45 | 中立 | 型号未确认的 13 条记录：「Reference available on request」改为如实的「Model code to be confirmed」（10 语种） | `f0a2ae9f758` |
 | 18:43 | 中立 | runbook：③④⑤ 已完成移入存档，⑥⑦ 改为现在就能做；目标清单 6 行过时状态按核查更正 | `92c8d8275a5` |
 | 18:42 | 中立 | WebSite.inLanguage 列全部 10 语种；llms.txt 删掉无法核实的「over thirty markets」 | `d17538fc2f2` |
