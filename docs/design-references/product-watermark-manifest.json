@@ -210,28 +210,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "778cc7d2b135b9e0415b555bdd784d635f7babd6e1c1eae9443af6dd774cb3ca",
-      "outputSha256": "1e09ad7609a0259e4145f0c00ef49e25f8ddc536b1d59e3b1672b27825095045"
+      "sourceSha256": "6f9b5913248bec10147c9837e217d8da95e3548c4ac8ae5dcbf0127012e68a97",
+      "outputSha256": "5fc27aab287a9c70ab00b138b184083617ad4c4237e8c47879674598af90c0aa"
     },
     {
       "source": "public/images/products/015-panic-exit-device-trim-2.webp",
@@ -2895,29 +2878,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
-        "strategy": "legacy-repair",
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 203,
-          "left": 0,
-          "top": 11,
-          "width": 261
-        },
-        "sample": {
-          "edgeDifference": 4.767316017316017,
-          "height": 203,
-          "left": 269,
-          "name": "inward",
-          "top": 11,
-          "width": 261
-        }
-      },
-      "sourceSha256": "529c43b7d588cda62ee79da2ffb2f92162cdbd17268cf75eeeda854a6e720fc8",
-      "outputSha256": "1c8cfe3b704a39656dc8505492c4fb2df21a4e8efe770f87713c7d6de53ff449"
+      "sourceSha256": "d282b2f8173b2e506a1173a002a50dc8126c8631206b2496e60a0479f8d592fb",
+      "outputSha256": "d1dbec069a7b7393e151711f972cf01b3f7b6983aac384c69a0a71469e3140f8"
     },
     {
       "source": "public/images/products/036-panic-exit-device-2.webp",
@@ -4811,29 +4777,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 169,
-          "left": 764,
-          "top": 23,
-          "width": 236
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 169,
-          "left": 520,
-          "name": "inward",
-          "top": 23,
-          "width": 236
-        }
-      },
-      "sourceSha256": "8403930645c772064c7272c50b4f09920699f5d0fc439908187c4cbc87025973",
-      "outputSha256": "de83dbaffcbadd437a2a28a376e780cffd5d49b2321a9172aa7e662a25969486"
+      "sourceSha256": "9b7aff13df6bbf7d4391630167a26b6af91e5e213e05c1b1cddaf97096de35d2",
+      "outputSha256": "56f6f837ddc642213451efe4af91b6cb4ee756172a9acfa462e9b2bcf3b9fabe"
     },
     {
       "source": "public/images/products/1073s-night-latch-and-rim-lock-2.webp",
@@ -6298,28 +6247,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 3,
-          "name": "below",
-          "top": 171,
-          "width": 212
-        }
-      },
-      "sourceSha256": "42faa303fb77d44dcb3557d06fa626aa53af24223ae7454e988b02498464f10e",
-      "outputSha256": "733c7862173ddef46d7931693de9c473b05f1174ac77af810f25932d6bf7e7fa"
+      "sourceSha256": "d45e31e0b9c52f2dee56d690868cba93c351ab27b39e1279a10ed7c164942894",
+      "outputSha256": "b80f6b737e1f275bde9195c90a8caf2ff3183af75d496a24cde6eea51708cb22"
     },
     {
       "source": "public/images/products/140x55x2-5-1bb-stainless-hinge-2.webp",
@@ -8510,28 +8442,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 8,
-          "top": 11,
-          "width": 205
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 8,
-          "name": "below",
-          "top": 171,
-          "width": 205
-        }
-      },
-      "sourceSha256": "9cbb7068ef4d08ec3839d8fa67d5d50880c681af570c815a315a2c84c761a600",
-      "outputSha256": "d13074238f870ebcfe372f8685c205ede99487463bb26d4592da9259c1f41017"
+      "sourceSha256": "713c0d6a9b95b54349b9210050de7c5af68b3d5ec30c172711fcbacb930e90ed",
+      "outputSha256": "a2713e52ba2bdd7da85696c798b6253692eedf64b7aec1b498ab3bfe2467ecdb"
     },
     {
       "source": "public/images/products/301-panic-exit-device-2.webp",
@@ -10068,12 +9983,12 @@
         "logoHeight": 24
       },
       "placement": {
-        "corner": "top-right",
+        "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "92178df5fa003a2b6c6bc7de48e96c1b27f2d73039d6d0485ace8d8c5d342d23",
-      "outputSha256": "94e93227e40baefb173f92f491d1031ddff995052061eb23f403845fec1ab191"
+      "sourceSha256": "3aa20043d6a8d7a22c4d84bf1ee803dbb38c75ac48e091be73575ca58b46880f",
+      "outputSha256": "8989d1f3a5a2c93c9e1bbb6eed5a8a63ed8f28e98654c68c5436fb229e4282a1"
     },
     {
       "source": "public/images/products/307-panic-exit-device-10.webp",
@@ -11105,28 +11020,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 8,
-          "top": 11,
-          "width": 205
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 8,
-          "name": "below",
-          "top": 171,
-          "width": 205
-        }
-      },
-      "sourceSha256": "79d01b14747ecb79b204a65cc5c1a19865266418b51a7401756761453c378297",
-      "outputSha256": "7f79609915d52688ea3c41649b0580cf8b330c4fdbb523b5c8e622f2c7333c28"
+      "sourceSha256": "0f3cc886d10806862b9317efcef108bca72f8625b5a722784ed491b083480b04",
+      "outputSha256": "1e74ba91c086294b8bffc517e9a976046275c85801157cb2e9d38cf193537dae"
     },
     {
       "source": "public/images/products/309-s-s-panic-exit-device-2.webp",
@@ -11316,28 +11214,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 8,
-          "top": 11,
-          "width": 205
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 221,
-          "name": "inward",
-          "top": 11,
-          "width": 205
-        }
-      },
-      "sourceSha256": "9ae057d9250d9d3a43b9ce9256f20855bf1361fe5fea50f9c3c0223825ef1154",
-      "outputSha256": "0d24dafba3141a188f9e917738eccc108ca6324c1fe718cdbf4de7e9660ac985"
+      "sourceSha256": "44a5939317658a887c12342bd6bbbfa7bf17bc6bd27ec6b9f6c8fd74a507376d",
+      "outputSha256": "91af21a609083dc9a85440dcead26aed4b55ce1fd3ab98d16aac3ae039060df2"
     },
     {
       "source": "public/images/products/310-panic-exit-device-2.webp",
@@ -11649,28 +11530,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 135,
-          "left": 0,
-          "top": 31,
-          "width": 199
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 135,
-          "left": 0,
-          "name": "below",
-          "top": 174,
-          "width": 199
-        }
-      },
-      "sourceSha256": "30dc32a00c4956ee6c7a2463f6b19a26ea71fe8a20b04150ac6254264b6f188b",
-      "outputSha256": "7003b62ea1e35b62189521f7b8879932e7952608d394255a344d551406b5f096"
+      "sourceSha256": "d8212cdfd932d2138ed8e33676e7e0fd249e784214d017beb51155e7e9a42701",
+      "outputSha256": "24d6084579c026da66a7376936451210fd28b5d9a488163eced0ac6c345b000d"
     },
     {
       "source": "public/images/products/311-panic-exit-device-10.webp",
@@ -15313,8 +15177,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "b57ddbc44df7550cd0df4c12c56634ef018ce2ce3c20f5353a6401832e47d2e1",
-      "outputSha256": "9cc5e7adb2beace30b844ddef82ec97d4dd0b1627e52f3da61a31ec8c2d31884"
+      "sourceSha256": "b64876e1eb9e11471a7505277a866c5813c209e99c6c127b6d694b5b658d7d95",
+      "outputSha256": "1b6ed72c0248536f2ef9c17471dab7ffb4353a1a5979842ac1510af9be5bf41f"
     },
     {
       "source": "public/images/products/4x3-5x3-0-2bb-us-standard-stainless-hinge-2.webp",
@@ -27537,28 +27401,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 11,
-          "top": 23,
-          "width": 228
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 247,
-          "name": "inward",
-          "top": 23,
-          "width": 228
-        }
-      },
-      "sourceSha256": "215ee44ff0128eb2c3b6cd388389730aa836fb21691c7427e864e664d31f691a",
-      "outputSha256": "b3a38308561caef904ed92fecb7af01bd7fdc600ed01af7e75671ffe8e877667"
+      "sourceSha256": "f599a09abecdcacb3d2d7de990c54e48c7272ee6d98a1b83fc973a97fbf9624c",
+      "outputSha256": "0cefb4194013d21a248bc78c2b4c45998578a48520babd25abf88074bf3dea98"
     },
     {
       "source": "public/images/products/607-acbk-tubular-lock-2.webp",
@@ -30311,29 +30158,12 @@
         "logoHeight": 24
       },
       "placement": {
-        "corner": "top-left",
-        "strategy": "legacy-repair",
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 136,
-          "left": 5,
-          "top": 18,
-          "width": 200
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 136,
-          "left": 211,
-          "name": "inward",
-          "top": 18,
-          "width": 200
-        }
-      },
-      "sourceSha256": "42e4a72b25229a9cd3e744d9d24eb8a006be3154541d6390a9b5ea51901eadea",
-      "outputSha256": "abb20d897f0e02c7f32d7bbac8348093825dbd8a30fd2d5168c270e599c6aead"
+      "sourceSha256": "f4adad1621dcb05cd4745b7820d803f8382f491e8f7adb8c73e8fa6e1665bbc7",
+      "outputSha256": "3cbb329803c86c6305f46963c17ea1bc98e5b14fa82e61a14f405d63e8278286"
     },
     {
       "source": "public/images/products/6x3-5x3-0-4bb-brass-hinge-2.webp",
@@ -30652,8 +30482,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "512a39c928fb8392c5aded8112a9e7822c88b91f7d8494141ace5f41ff8a79bf",
-      "outputSha256": "dfa4e34f27c10746accc561be2bdf1240da05bab70126c60cd0d85447f1b6acd"
+      "sourceSha256": "e9b42146bde5afd8addea4495624139244fc546e6108799c9d7378b365d09140",
+      "outputSha256": "8cc5eaa4f46dbde3d250e9ab5c051c51e4091a3927a3d8fc42336b40b7d27b13"
     },
     {
       "source": "public/images/products/70-bsdk-lock-cylinder-2.webp",
@@ -31513,8 +31343,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "9098bbe371bc78456606e2d2935e3eb2dfb570ef4e5a672975fef4c9dfe0391e",
-      "outputSha256": "40c5ededfde2f78b16164cf76f8f4d65d1f353354ed43476e43329bc24156e1e"
+      "sourceSha256": "70680f7de58ff3dbf3815613a01cf5c09f23a0552bae774f29351d8e850444d3",
+      "outputSha256": "a817aac317c77046feb77ee90a98ae9192eea66f5a5bcdf1b46763288307f2a2"
     },
     {
       "source": "public/images/products/70-snkt-cp-lock-cylinder-2.webp",
@@ -34016,28 +33846,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 149,
-          "left": 5,
-          "top": 12,
-          "width": 200
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 149,
-          "left": 211,
-          "name": "inward",
-          "top": 12,
-          "width": 200
-        }
-      },
-      "sourceSha256": "41284435a01673935d5ce32b9709776939a289e5fdfecf7db08b27129b727718",
-      "outputSha256": "4f2b3bffd5b2a1706dd380a023d6c763a98d3b5c76789e6de88dc6a3566f08a2"
+      "sourceSha256": "7bd9343997bd9da8917ccceab06434ff7bdc2ecbd822b65e8b282cedd5327923",
+      "outputSha256": "47a8740d4ecf8451431c2e556194a2bf2074df5fc9346ca4850bd2bdf3f2946a"
     },
     {
       "source": "public/images/products/70mb-lock-cylinder-2.webp",
@@ -35902,8 +35715,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "4200da122c03fac3f292bee7c771e087685461626ca39b327cdfa0dd7ae388e2",
-      "outputSha256": "ecd7a26f3326d14910154a421f96d27d28440e49b5087d9e80c62ae81a4f2dfe"
+      "sourceSha256": "a77874d139b69efa4e9cfb98a3199e41c3b6d8c0bbd84725a57d0ed2c4f93245",
+      "outputSha256": "4c89a3e4e8b362efde453f47126c03abcd697818477f75a3617af16ce733a57a"
     },
     {
       "source": "public/images/products/80-pbkt-lock-cylinder-2.webp",
@@ -41120,8 +40933,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "3e6e1935d9d4d892eb4d02eab26c90d7d6fa613076b73c73c95e0eac122eff97",
-      "outputSha256": "6254db835aa02de7b259fd085f7e81366316b54170ad1a654f17710dd14bfa30"
+      "sourceSha256": "d9cec36df068be61ba28dab714759cfb62d0ec7a8967b98a6ab5c9dec027f6c4",
+      "outputSha256": "668973ee6ac76a0fd4707f729b8e626fc0aa6fa4a73f53285d3d44e4e10192f8"
     },
     {
       "source": "public/images/products/90-mbkt-cp-lock-cylinder-2.webp",
@@ -41367,8 +41180,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "ba9bdddaa8640cf590a17959679b0273866fdbe96de6c700d6b676eba7bc39ec",
-      "outputSha256": "315cfcf24f3e0f65112967ed4b7181772be8c574d21a98becf2e7a0236c15667"
+      "sourceSha256": "de30061c22ef1cd5e683868e491477a7bc22c048b961946da705ff7daae5d262",
+      "outputSha256": "c88881f38f2e25adae48ea2d93da556505cc33564f04a064ae75d2b767a54df7"
     },
     {
       "source": "public/images/products/9001-stainless-steel-handle-2.webp",
@@ -44725,28 +44538,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "d486fa4df9593799c0961d2beb585286b19dcff1d7f59dc179904384d1a2c952",
-      "outputSha256": "5b5eea6931852b071cac98abc40fcf85484cb3508ebe8f49cb8b46f0c44c34ed"
+      "sourceSha256": "659501abac6eacb54ab6e2f75e3660cbc6e8038e1109d19bbbd237cd7a784fea",
+      "outputSha256": "eb5ae719324dff1124c77b053e18527d20b772a0e50ce34157f6cf761c3c62b2"
     },
     {
       "source": "public/images/products/9014-ssbk-stainless-steel-handle-2.webp",
@@ -44989,28 +44785,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0.30570902394106814,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "1a012b754050452e7bf462915fbc4f991a48fda9f741f6c05b2e521ba5e84c91",
-      "outputSha256": "f2c0a0d425e18b743a19921672bbd4a3ba341b504cecb82f5fbff2ba968127a4"
+      "sourceSha256": "d65f78c564ba1070da54d1dacb974c1c8fb674cbe6f6ce4e53f8b0d6caa5abc8",
+      "outputSha256": "ca5150e622f4697a7ac1dd1ac566d58e2138516067f2f34230d809bb2f96e42c"
     },
     {
       "source": "public/images/products/9014-sset-stainless-steel-handle-2.webp",
@@ -54159,8 +53938,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "70dcc5d579646e864567fd1176d1ae7d39b5c1a84f4dd779e9a29c2d1d275fc2",
-      "outputSha256": "afffae02eb441356622f8535872cfd4102efcd27f7c2d1bb3d0a8edf476020c5"
+      "sourceSha256": "21916baeea7228b57f905e3e100852905da643122c49ee9da43d66d5abf007e3",
+      "outputSha256": "829dd121dd5ea4a3bba4a77317246f63faef115df1ebba0683f2affecb678d66"
     },
     {
       "source": "public/images/products/bh03-angled-grab-bar-2.webp",
@@ -54965,12 +54744,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "bottom-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "83a2497f335c4da8802bcd4d043b28b12226f723bf7d5a01a77c5691a28592b4",
-      "outputSha256": "bb9b115e87b76b870c7365d2f48c8be96d32d6b8b1c979187aab80a49803eb99"
+      "sourceSha256": "3fdbd821420dd690c65ce36e4a782f6e7f905d7d264d97a52d95374515114817",
+      "outputSha256": "08ae9042783ad814b24ceb864650ee76cca24235b1134e670dd97a06f6fe970b"
     },
     {
       "source": "public/images/products/bh11-robe-hook-2.webp",
@@ -55037,12 +54816,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "bottom-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "d799cf94678c9f5208c6ddecc7b7548bac6d1aa919b3d27242114c28004a8d65",
-      "outputSha256": "0d0035fe7503f0c627af0986491fff801bb2639a9b3d69ebd2a800cd432afd32"
+      "sourceSha256": "0e0614a54d303cd7f5562a1764fbac6dcad853724538a3822d7b0b9b4bc0b92e",
+      "outputSha256": "a020960a4c770a5c629b2164c4d3983c76c1aa8f0288b1ceb9c3c957402be086"
     },
     {
       "source": "public/images/products/bh12-robe-hook-2.webp",
@@ -55383,8 +55162,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "0739d1408565880802699d3a9fe8087709eed6154a0757dbd052d148529c8ebf",
-      "outputSha256": "74db1bbbfcdb33c823bd36554e55ccff398d4628c339ba6ebfc598e71af3fda2"
+      "sourceSha256": "953ed616321b3efe45f89a96bf3b49e9a2f97ae47d73f76266ec16170b2c78b0",
+      "outputSha256": "07bcde921b90f24e48d4ff6a5564d9d478a7ddc6d747e1cdddc942583a200461"
     },
     {
       "source": "public/images/products/bh15-80mm-barrel-bolt-2.webp",
@@ -55545,8 +55324,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "386d4f7c208d8ed1bbd6210013378239b34f23d911ebb494f13b7d6217610478",
-      "outputSha256": "9087dcf794477e8ea39bc27edc7ca0c2f0c481d510b89786fe508f845b102c4a"
+      "sourceSha256": "bf12b978e10f66d03e31d9a2108a1ac8f0dc6a2c9f583ebe8eda9b44f033ebec",
+      "outputSha256": "9da085c443deae2a9389d94d4f41dc3341a7ef2b92d22706006cf9d72afc700e"
     },
     {
       "source": "public/images/products/bh17-spring-latch-2.webp",
@@ -57669,8 +57448,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "d0f4f51882a1d4e4a2721b245f0dcc6354035c5a17b56bfe6018dfa1c9b47db1",
-      "outputSha256": "f8a8d9d6ce1c5e33afd2e65df41203cf51ead11f3cdf4c322817c8550f9da0d4"
+      "sourceSha256": "62055bc076417d072308006ea1373dc5a0cecb9d3c3f2da38802d41456a35107",
+      "outputSha256": "b28f34f6e451a18d25014cf2345fe3076de6496e9332b08dc9a79732a62e94c5"
     },
     {
       "source": "public/images/products/bh42-robe-hook-2.webp",
@@ -57741,8 +57520,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "ac92359669e5a6b42f99777d04414daa908e42595c959bc312de9bab8ac502e4",
-      "outputSha256": "25828bcd54bd783781828c8a41bedfca2c42023ea15e9e2bae1f4fbf8f5144e8"
+      "sourceSha256": "55f185d791bdaebfcbec0a8882beb34d03357c2a48dab1f51b4bdfe520b96c80",
+      "outputSha256": "bfa555664bfaaf0ecfc249d57d160fcc4a18792d78cc5d7024a4401649df9763"
     },
     {
       "source": "public/images/products/bh43-toilet-roll-holder-2.webp",
@@ -58433,28 +58212,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 169,
-          "left": 10,
-          "top": 23,
-          "width": 251
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 169,
-          "left": 269,
-          "name": "inward",
-          "top": 23,
-          "width": 251
-        }
-      },
-      "sourceSha256": "502185b083574d67c2f491c3ea02f4d066cfc66af387d16ea0d4bd453e6e75fc",
-      "outputSha256": "ded9b818a17b876ab432fc7e9b06247827a1616ceb0ae6cbf1ff7737545dc6e8"
+      "sourceSha256": "c3b018c991b5e06c3cbe89f8753dc49a9cc532089a1288aa496b37ce63a3e9bc",
+      "outputSha256": "b3e0659737ef36276f8078f16e30e75906fb9a7c07cdbcbd366392bd91692a22"
     },
     {
       "source": "public/images/products/bh56-flip-up-grab-bar-2.webp",
@@ -60856,24 +60618,6 @@
       "outputSha256": "e54876cfc53f54a1c053795456e2ef22cfd0c0c413d6f016cf66814d219ef83c"
     },
     {
-      "source": "public/images/products/piano-hinge.webp",
-      "output": "public/images/products-hyde/piano-hinge.webp",
-      "width": 1000,
-      "height": 1000,
-      "geometry": {
-        "margin": 25,
-        "logoWidth": 120,
-        "logoHeight": 30
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "7dadfa1fbaa73d5429f5f7deb4aaf39f6462f660a195b54ecaacafc5b0738ae8",
-      "outputSha256": "5181ad6982fa676a141de6f3ecdd0d243a0c4d24c492e36e973a2939be4c2150"
-    },
-    {
       "source": "public/images/products/cat-lever-handle-lock.webp",
       "output": "public/images/products-hyde/cat-lever-handle-lock.webp",
       "width": 1000,
@@ -61081,28 +60825,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 15,
-          "top": 19,
-          "width": 211
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 234,
-          "name": "inward",
-          "top": 19,
-          "width": 211
-        }
-      },
-      "sourceSha256": "f7e02cf9f9a0c8e4ad9a03a7a2f845221f821c04a9ead4784bc34d92146f72c1",
-      "outputSha256": "aed47c1a71f52b104ae703b551e9961b709bc8bcb313913ee2786125240760c7"
+      "sourceSha256": "65d1adca9ae0bec9a55c2024ac762da61334c5e18482a8ef0df3a7eb6d8ee64f",
+      "outputSha256": "330eeb1363dc2ca3dd7c6aa9f23db9361e72322b1eafe7f2392d1b01377b6045"
     },
     {
       "source": "public/images/products/d-1031-floor-spring.webp",
@@ -66834,12 +66561,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "bottom-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "47b3c3a141f0756b6840b16e3cc421b5aa83d5e00129707a539c6d621c7762f4",
-      "outputSha256": "8d995bc0d6be1a5e468d689f55d78af4f5278d4712e965995a27754edffd5692"
+      "sourceSha256": "5b2f6aba09afa1a91c283625f574f016e45e2dcf05adb66e28be31f74036c028",
+      "outputSha256": "bbb9653ebc21c83a4e9c00cb753a9f6e4918194f066b645da42832e5f83fc206"
     },
     {
       "source": "public/images/products/dv10-door-viewer-2.webp",
@@ -67179,8 +66906,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "03ba5bcb4238a8b3e0660b278bfca193d04cb5b12f6940a9293662d54ca392d7",
-      "outputSha256": "1815241f669542a860938bcef496b131e22dda557f538a399107023a445a0308"
+      "sourceSha256": "66346b8ce2f50e4f30448bd5c119a37ac91274aa70666e31b77644d51660dc97",
+      "outputSha256": "f9973e964f5a515832b46b1150b89ca8f5aa8c52e97f456ba0dadeb0cd288d2b"
     },
     {
       "source": "public/images/products/dz-2031-floor-spring.webp",
@@ -68526,28 +68253,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 135,
-          "left": 7,
-          "top": 31,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 135,
-          "left": 7,
-          "name": "below",
-          "top": 174,
-          "width": 212
-        }
-      },
-      "sourceSha256": "4834ffd1415f98ead75a693bf574536792e7b8773345027fdecd8e7fa4993013",
-      "outputSha256": "9a04afd72c410d89823213e0903210db7763fe62ae6ee69860c945e67db9e72e"
+      "sourceSha256": "474b51226ebe9f571a33f7f22849ac8beb4cb435e24997c80ef660ad9c5a8b4c",
+      "outputSha256": "e255e6ec09dd6e1619260dfedfc64f3c743d53017c831a7c8ce921020307896d"
     },
     {
       "source": "public/images/products/eh03-lever-handle-2.webp",
@@ -68788,29 +68498,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
-        "strategy": "legacy-repair",
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 135,
-          "left": 12,
-          "top": 27,
-          "width": 205
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 135,
-          "left": 12,
-          "name": "below",
-          "top": 170,
-          "width": 205
-        }
-      },
-      "sourceSha256": "3e90f6ff46cdf6449df9e8595fe9b8099d0454a08c5569ec6762d998896f6e8c",
-      "outputSha256": "6f18ae2f02ab3a59dfe977e70b314404fe86be61172f95e133d42ea4612262fd"
+      "sourceSha256": "520f7be794d7c377612af1908dda13a3a9c62cf99263e17e4393cd79d7a544fd",
+      "outputSha256": "7480d4567666a62966a6d77348dcce95a72aac41503382e2e17b2c9e2e3bf54a"
     },
     {
       "source": "public/images/products/ek-type-multifunction-hydraulic-hinge-2.webp",
@@ -71220,8 +70913,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "8f7cd36f3812c7b0783cd9e5a13e6b1250cff6e205011f616a580af53e742b3b",
-      "outputSha256": "02e2f7c82656126586100e9a280eb69e21be8c16b3a5da7d32a83a5cea3e0dd9"
+      "sourceSha256": "a7439325f8e3b09d18cb9fe6f102e60d88cf7247492214b0bacf22d233523f33",
+      "outputSha256": "0296da36bea5e8281d49d5a0a08e0d3c129a1446dbc3e01541968b10ada7229e"
     },
     {
       "source": "public/images/products/f111-glass-door-patch-fittings-2.webp",
@@ -71346,8 +71039,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "07402cafd8ddb34070a5fcc8db48bb78812d4cd38c4d211e2bf338811be7b09a",
-      "outputSha256": "aa6bf21d5d89124e86ef74ac2fae665b8397b54fb876732af13802457638252e"
+      "sourceSha256": "47310e0094f80eae88c1418d26bc1b5f2a157686add7ea71c5b81d8dc5722759",
+      "outputSha256": "6f8e5a390cf4f142208b238630848893a40f9ace047d2965f75ba3ceb6abd700"
     },
     {
       "source": "public/images/products/f112-glass-door-patch-fittings-2.webp",
@@ -71472,8 +71165,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "8556fdf5d343c71d4cae392b74864f9f5add3edd92d730418d8d179cc02a5091",
-      "outputSha256": "f0669624ee786c6db3cde12af39dcaf3a59c22bb0fe6b7684741e4f2fc9b3be2"
+      "sourceSha256": "84118edce15cacc971faf6a7ad6db9224e3b40919f3979f671f3d1c912582f5b",
+      "outputSha256": "20a3b6f5a586d9e03d5eb169e0b48a21a3b35ba0db24be583cf82eba8ef3522a"
     },
     {
       "source": "public/images/products/f113-glass-door-patch-fittings-2.webp",
@@ -71598,8 +71291,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "575b23f70277cd115264ea0c8d82deb150d610ad8275f973e4ab8472b8dfc9c7",
-      "outputSha256": "8d3755ff303f4add8193eb3123e6004a38d0d0fe3698ea4266b594e5abb8e4a6"
+      "sourceSha256": "1e7e84fe8bf5d3b2176dd267ba66b66ba5ad3be72d7de37e8fba662fb2f1839f",
+      "outputSha256": "e577b82ccb1873c71bc7446d0eda06382825faa88ffda191ba76bb5d3ab92f03"
     },
     {
       "source": "public/images/products/f114-glass-door-patch-fittings-2.webp",
@@ -71742,8 +71435,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "a764085e19ee2cf4bfcf72fc687bda00db5ddfbd33725edccbf0113909f81ea4",
-      "outputSha256": "15ac8839a8ad0cefdea89aaeb19b520a630cf364772b8d30fa101270d457dc7f"
+      "sourceSha256": "c0fa379cda9ab84c933dba2d5936e78ed77ce99d6f7a75d23d270576e1f79ce0",
+      "outputSha256": "105767cd45001b47bc38fba872cf365cd8f087dbf36710f0c80f41938576fc88"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-2.webp",
@@ -87126,8 +86819,8 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "decfcb6ee2ed8a75327439768b427e5d74b073a0563c794cea8c6972f67f45e1",
-      "outputSha256": "13cebed7687dd7beb85f19a546a5c05f1caf48233c2000aa0e0663e328b286ac"
+      "sourceSha256": "71aa6c39c2625b8a9544eb37a3c7e9ded1a8bf641594b4a67176a21063cae7ba",
+      "outputSha256": "d07028bf1dc76c84c860a24ce26e829235db6fb0070ecf260cb1c5a0802da0dc"
     },
     {
       "source": "public/images/products/ju-093-door-closer.webp",
@@ -89912,12 +89605,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "bottom-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "8b3a3fa5cacfbce4a9539828d064da1de6ae42a747edeebf53b33cde98d45bbe",
-      "outputSha256": "2968f7008ef7a815cef33226a8747d6df360d9354dac2656498ffdbb5579bb2b"
+      "sourceSha256": "b7384e9c5e47665aebacf94ba5b50a0fe55cc4fa68844c3e9b96f33cd97dcc21",
+      "outputSha256": "0b4175a32a9dc39bd0cc3036453e3ffb0f094e286f3ac8d0dd5bdaa690390c17"
     },
     {
       "source": "public/images/products/l003-latch.webp",
@@ -96289,28 +95982,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 3,
-          "name": "below",
-          "top": 171,
-          "width": 212
-        }
-      },
-      "sourceSha256": "ee83c69d77628b03a67a62ffe159d36aefae4419bf6bf582376ebdef591f1e78",
-      "outputSha256": "38957baaa0702cf7819e1bc9ee98cb93218e2af04ccaab934b402f2441605083"
+      "sourceSha256": "57a3649719cca1105c1f2d65f1d0aefbf801788d9c87fb3555c0fd21e7f70388",
+      "outputSha256": "5660adc287afa039387bcf30a4c99cb031490c8e84a75d0c89c8493626bad8a6"
     },
     {
       "source": "public/images/products/lh851-lever-handle-2.webp",
@@ -100929,29 +100605,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
-        "strategy": "legacy-repair",
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "2d335a61382a7af103eebc4d18d41b63c488b552c51cee12c79ded57eaf9e848",
-      "outputSha256": "baad9122f3b99627d74eb4467f20e69802b979548a0cdba820ed4131429ec9ce"
+      "sourceSha256": "83e868b13f87578d8680a16c7e87c9e95da168295ffb8cd7a170000c251c59a5",
+      "outputSha256": "fc15b8a2d589e3ef5c581bd17e4222923a88f948d33e311e8c7a50232de595fc"
     },
     {
       "source": "public/images/products/nc182-stainless-steel-handle-2.webp",
@@ -101336,28 +100995,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "76ee8389397e0786e4049f0f912a82a3fa96921211692f33a8df9aa21ce7e77f",
-      "outputSha256": "c0e1935f7425e26586afbee96dc5876c017193caa7ca6e2151f699e27207cb81"
+      "sourceSha256": "a28dd8369f8171369da42c142fa54fdfd438e7af32b1c8e09f494563149c2818",
+      "outputSha256": "faeb6e98df65c3c3aa22b94e9ba3e3e39d1251c11ddda4aea219fe86d0dd8425"
     },
     {
       "source": "public/images/products/ncd-stainless-steel-handle-2.webp",
@@ -102974,6 +102616,24 @@
       },
       "sourceSha256": "68db52320f9c2964a8ed04825488c923717434133d5ed4f4005ade6fd318a0fc",
       "outputSha256": "ba817bc6383a98cc97a8c90ae22a0a878a466fb8523dae25d42eb7331f54a599"
+    },
+    {
+      "source": "public/images/products/piano-hinge.webp",
+      "output": "public/images/products-hyde/piano-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7dadfa1fbaa73d5429f5f7deb4aaf39f6462f660a195b54ecaacafc5b0738ae8",
+      "outputSha256": "5181ad6982fa676a141de6f3ecdd0d243a0c4d24c492e36e973a2939be4c2150"
     },
     {
       "source": "public/images/products/pre-g100-glass-door-handle-2.webp",
@@ -109593,29 +109253,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
-        "strategy": "legacy-repair",
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 15,
-          "top": 19,
-          "width": 211
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 234,
-          "name": "inward",
-          "top": 19,
-          "width": 211
-        }
-      },
-      "sourceSha256": "9070323737dedc61cae6674e727915e8ec8e617fd3320294173278e40ee32241",
-      "outputSha256": "bdd0d2cb6acc8c11fc1e698882b29fb75982572a33718eef1e62a0e5a8688da4"
+      "sourceSha256": "e4259a5337811df28bafe5f7ec6c222cc5f37d754d72a2d7ed3157216b49b7ae",
+      "outputSha256": "08e04c2cd93de714b5af738ac0f61ff6c478633cde385641c0b512e0bf6fefb4"
     },
     {
       "source": "public/images/products/stainless-steel-lever-handle-lock.webp",
@@ -109629,28 +109272,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 15,
-          "top": 19,
-          "width": 211
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 234,
-          "name": "inward",
-          "top": 19,
-          "width": 211
-        }
-      },
-      "sourceSha256": "78a1cb8a7843e75eca6c6030fb0211b078b607f4389bf5b6d72ad757c4bdad5e",
-      "outputSha256": "87b59ddfc5edf1ee784d618d36829ec54e0778afa753dc9c86746835d478f588"
+      "sourceSha256": "13fabaf282964a8a203f386fd95797ee080b2a65bb8130586949e681eba5b600",
+      "outputSha256": "accff51624f6b903454cc3aff0ff40c4085592c98a1d213aeba2072bb02f5357"
     },
     {
       "source": "public/images/products/stainless-steel-wall-hook.webp",
@@ -119921,28 +119547,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 15,
-          "top": 19,
-          "width": 211
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 234,
-          "name": "inward",
-          "top": 19,
-          "width": 211
-        }
-      },
-      "sourceSha256": "009af6155a7606207a3d36c47860074f4c0e708eaf7bfd1bd2a22d229215f6e9",
-      "outputSha256": "140605424a839c19fd67615fb5de0dccbdd11ab2ee17e77b1c269b99d21166f7"
+      "sourceSha256": "5ff890eec218c47d2ed8887fc0ea536cd0ae3f86d08d56f1a9b80a38119875f5",
+      "outputSha256": "8398c5b6a37b5562fa54db89d0db9b4382bf1e3fbf8e86589a2f1d7bc0488b4d"
     },
     {
       "source": "public/images/products/ul1005-lever-handle-10.webp",
