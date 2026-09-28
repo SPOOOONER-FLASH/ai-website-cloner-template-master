@@ -20,7 +20,7 @@ test("sheets exist only for published HYDE products with a confirmed model code"
     const file = `content/products/${slug}.json`;
     assert.ok(existsSync(file), `${slug}: no product record`);
     const p = JSON.parse(readFileSync(file, "utf8"));
-    assert.ok(!p.sites || p.sites.includes("hyde"), `${slug}: not on the HYDE catalogue`);
+    assert.ok(!p.sites || p.sites.includes("hyde"), `${slug}: not on the HYDE catalog`);
     assert.ok(p.heroImage?.src, `${slug}: no photograph`);
     assert.ok(!p.modelTbc, `${slug}: model code not confirmed`);
   }

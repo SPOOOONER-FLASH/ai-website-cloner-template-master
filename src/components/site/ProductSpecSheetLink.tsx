@@ -23,7 +23,7 @@ export function ProductSpecSheetLink({ slug, locale }: { slug: string; locale: L
       <a
         href={`/downloads/spec-sheets/${slug}.pdf`}
         download
-        className="text-ink underline underline-offset-4"
+        className="short-marker short-marker-compact"
       >
         {label}
       </a>

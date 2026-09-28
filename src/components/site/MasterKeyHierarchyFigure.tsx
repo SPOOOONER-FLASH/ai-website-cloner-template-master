@@ -43,12 +43,12 @@ const LABELS: Partial<Record<Locale, Labels>> = {
   es: {
     title: "Ejemplo de jerarquía de llave maestra",
     caption:
-      "Un sistema de ejemplo con tres niveles: una gran maestra, dos maestras de planta y las llaves de paso debajo, con las tres decisiones que este artículo sitúa en la fase de diseño: una puerta con llave cruzada, una puerta fuera de toda maestra y un grupo reservado para ampliaciones. Solo ilustrativo; la jerarquía real se diseña sobre la plataforma en la que se va a cortar.",
+      "Un sistema de ejemplo con tres niveles: una gran maestra, dos maestras de planta y las llaves diferentes debajo, con las tres decisiones que este artículo sitúa en la fase de diseño: una puerta con llave cruzada, una puerta fuera de toda maestra y un grupo reservado para ampliaciones. Solo ilustrativo; la jerarquía real se diseña sobre la plataforma en la que se va a cortar.",
     ggmk: ["Gran gran maestra (GGMK)", "solo para varios sistemas; a menudo no se emite"],
     gmk: ["Gran maestra (GMK)", "abre todas las puertas del sistema"],
     mk: (n) => [`Maestra (MK) · Planta ${n}`, `abre todas las puertas de la planta ${n}`],
     reserved: ["Grupo reservado", "sin emitir, para ampliaciones"],
-    door: "llave de paso",
+    door: "llave diferente",
     cross: ["Sala de reuniones", "llave cruzada"],
     noMaster: ["Sala de servidores", "fuera de toda maestra"],
     legend: ["Amaestrada", "Llave cruzada", "Reservado u opcional"],
@@ -56,12 +56,12 @@ const LABELS: Partial<Record<Locale, Labels>> = {
   pt: {
     title: "Exemplo de hierarquia de chave mestra",
     caption:
-      "Um sistema de exemplo com três níveis: uma grã-mestra, duas mestras de andar e as chaves individuais abaixo delas, com as três decisões que este artigo coloca na fase de projeto: uma porta com chave cruzada, uma porta fora de qualquer mestra e um grupo reservado para ampliação. Apenas ilustrativo; a hierarquia real é projetada na plataforma em que será cortada.",
-    ggmk: ["Grã-grã-mestra (GGMK)", "só para vários sistemas; muitas vezes não é emitida"],
-    gmk: ["Grã-mestra (GMK)", "abre todas as portas do sistema"],
+      "Um sistema de exemplo com três níveis: uma grande mestra, duas mestras de andar e as chaves diferentes abaixo delas, com as três decisões que este artigo coloca na fase de projeto: uma porta com chave cruzada, uma porta fora de qualquer mestra e um grupo reservado para ampliação. Apenas ilustrativo; a hierarquia real é projetada na plataforma em que será cortada.",
+    ggmk: ["Grande grande mestra (GGMK)", "só para vários sistemas; muitas vezes não é emitida"],
+    gmk: ["Grande mestra (GMK)", "abre todas as portas do sistema"],
     mk: (n) => [`Mestra (MK) · Andar ${n}`, `abre todas as portas do andar ${n}`],
     reserved: ["Grupo reservado", "não emitido, para ampliação"],
-    door: "chave individual",
+    door: "chave diferente",
     cross: ["Sala de reuniões", "chave cruzada"],
     noMaster: ["Sala de servidores", "fora de qualquer mestra"],
     legend: ["Com mestra", "Chave cruzada", "Reservado ou opcional"],
@@ -116,27 +116,27 @@ export function MasterKeyHierarchyFigure({ locale }: { locale: Locale }) {
   const t = LABELS[locale];
   if (!t) return null;
 
-  const ggmk: Box = { cx: 360, y: 16, w: 300, h: 48, lines: t.ggmk, dashed: true };
-  const gmk: Box = { cx: 360, y: 104, w: 300, h: 48, lines: t.gmk, strong: true };
-  const mk1: Box = { cx: 150, y: 196, w: 250, h: 48, lines: t.mk(1) };
-  const mk2: Box = { cx: 440, y: 196, w: 250, h: 48, lines: t.mk(2) };
-  const reserved: Box = { cx: 650, y: 196, w: 132, h: 48, lines: t.reserved, dashed: true };
+  const ggmk: Box = { cx: 400, y: 16, w: 300, h: 48, lines: t.ggmk, dashed: true };
+  const gmk: Box = { cx: 400, y: 104, w: 300, h: 48, lines: t.gmk, strong: true };
+  const mk1: Box = { cx: 150, y: 196, w: 240, h: 48, lines: t.mk(1) };
+  const mk2: Box = { cx: 476, y: 196, w: 240, h: 48, lines: t.mk(2) };
+  const reserved: Box = { cx: 708, y: 196, w: 176, h: 48, lines: t.reserved, dashed: true };
   const doorY = 292;
-  const door = (cx: number, room: string): Box => ({ cx, y: doorY, w: 74, h: 48, lines: [room, t.door] });
-  const floor1 = [door(46, "101"), door(126, "102"), door(206, "103")];
-  const meeting: Box = { cx: 295, y: doorY, w: 92, h: 48, lines: t.cross };
-  const floor2 = [door(386, "201"), door(466, "202")];
-  const server: Box = { cx: 650, y: doorY, w: 132, h: 48, lines: t.noMaster, strong: true };
+  const door = (cx: number, room: string): Box => ({ cx, y: doorY, w: 84, h: 48, lines: [room, t.door] });
+  const floor1 = [door(46, "101"), door(134, "102"), door(222, "103")];
+  const meeting: Box = { cx: 326, y: doorY, w: 116, h: 48, lines: t.cross };
+  const floor2 = [door(432, "201"), door(520, "202")];
+  const server: Box = { cx: 708, y: doorY, w: 176, h: 48, lines: t.noMaster, strong: true };
   const bottom = (b: Box) => b.y + b.h;
 
   return (
     <figure className="my-48 max-w-full min-w-0">
       <div className="overflow-x-auto border border-line bg-surface">
         <svg
-          viewBox="0 0 720 400"
+          viewBox="0 0 800 400"
           role="img"
           aria-labelledby="mk-figure-title"
-          className="block h-auto w-full min-w-[640px]"
+          className="block h-auto w-full min-w-[720px]"
         >
           <title id="mk-figure-title">{t.title}</title>
           <Link x1={ggmk.cx} y1={bottom(ggmk)} x2={gmk.cx} y2={gmk.y} dashed />
