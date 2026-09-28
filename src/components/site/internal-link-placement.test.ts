@@ -30,6 +30,7 @@ const EXEMPT: Record<string, string> = {
   "/collections": "sub-category pages, linked from every category page and the drawer's family list",
   "/compare": "one comparison per category, linked from each category page",
   "/video": "one watch page per product video, linked from that product page",
+  "/privacy": "legal page, linked from every footer and under every form, not a drawer section",
 };
 
 /** The English sections: each top-level folder, or its first nested page when it has no index. */
