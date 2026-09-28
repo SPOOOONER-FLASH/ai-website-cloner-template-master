@@ -22,6 +22,7 @@ import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
 import { productModelFor } from "@/data/product-models";
 import { ProductModel } from "./ProductModel";
+import { ProductSpecSheetLink } from "./ProductSpecSheetLink";
 import { dict, specLabel, t as tr } from "@/lib/i18n";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
@@ -760,6 +761,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     the answers are on the page — for a reader, for a crawler, and for the
                     audit that checks the two agree.
                   */}
+                  <ProductSpecSheetLink slug={product.slug} locale={locale} />
                   <ProductDrawing slug={product.slug} locale={locale} />
 
                   {/*

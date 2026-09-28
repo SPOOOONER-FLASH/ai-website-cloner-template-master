@@ -85,7 +85,7 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
         {/* Above the header and in flow: it offers, it never covers. See the component. */}
         <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
-          <SiteHeader categories={getMenuCategories()} />
+          <SiteHeader categories={getMenuCategories()} locale={LOCALE} />
           {children}
           <SiteFooter locale={LOCALE} />
         </div>
