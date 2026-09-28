@@ -67,10 +67,22 @@ test("public events have organiser sources and do not claim an unverified exhibi
     events: EventFixture[];
   };
 
+  /*
+    A stand is claimed only with evidence written here. 2026-09-28, client: BAU 2027 is
+    confirmed — Messe München placement proposal for Hall C4, Stand 523 (row stand, 29.25 m²)
+    accepted and the admission invoice paid by bank transfer; exhibitor passes being ordered
+    (BAU 2027 Ausstellerservice session). Any other event saying "exhibiting" still fails.
+  */
+  const VERIFIED_STANDS: Record<string, string> = { "bau-munich-2027": "Hall C4, Stand 523" };
+
   for (const event of data.events.filter((item) => item.published)) {
     assert.match(event.sourceUrl ?? "", /^https:\/\//);
     assert.match(event.relatedHref ?? "", /^\//);
     assert.ok(event.relatedLabel?.trim());
-    assert.notEqual(event.status, "exhibiting");
+    if (event.status === "exhibiting") {
+      const stand = VERIFIED_STANDS[event.slug];
+      assert.ok(stand, `${event.slug} claims a stand that is not verified`);
+      assert.ok(event.statusLabel?.includes(stand), `${event.slug} must name its verified stand`);
+    }
   }
 });

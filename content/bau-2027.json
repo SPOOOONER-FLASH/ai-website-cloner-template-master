@@ -1,0 +1,133 @@
+{
+  "_note": "Copy for the /bau-2027/ column (EN) and /de/bau-2027/ (DE). Written by the copy session 2026-09-28 from confirmed facts only: stand C4.523, 11–15 Jan 2027, Messe München (placement proposal and admission, BAU session), the company profile in src/data/company.ts, and each model's own spec rows. featured[] is the demand-data shortlist (docs/research/2026-09-09-demand-analysis-and-fair-shortlist.md, tier 1) and MUST be confirmed by the boss before release. Render every string as given; do not add claims.",
+  "event": {
+    "startDate": "2027-01-11",
+    "endDate": "2027-01-15",
+    "hall": "C4",
+    "stand": "523",
+    "venue": "Messe München",
+    "address": "Am Messesee 2, 81829 München, Germany",
+    "officialUrl": "https://bau-muenchen.com/en/"
+  },
+  "en": {
+    "seoTitle": "BAU 2027 Munich: Canton Hyland at Hall C4, Stand 523",
+    "seoDescription": "Door hardware and architectural ironmongery at BAU 2027, 11–15 January, Messe München, Hall C4, Stand 523. Book a meeting at the stand.",
+    "kicker": "BAU 2027 · Munich",
+    "title": "Meet us at BAU 2027, Hall C4, Stand 523.",
+    "intro": "From 11 to 15 January 2027 we are at Messe München with the exit devices, lock cases, night latches and master key cylinders buyers ask us about most. Book a time at the stand, and bring your drawings or the model numbers you buy today.",
+    "facts": [
+      { "label": "Dates", "value": "11–15 January 2027" },
+      { "label": "Venue", "value": "Messe München, Am Messesee 2, 81829 Munich" },
+      { "label": "Stand", "value": "Hall C4, Stand 523" },
+      { "label": "Exhibitor", "value": "Canton Hyland, HYDE door hardware" }
+    ],
+    "featuredHeading": "What we are bringing",
+    "featuredIntro": "The models below have their own pages with spec tables and photographs. At the stand you can hold them, check the fixing points against your door, and ask for samples in the finish you need.",
+    "about": {
+      "heading": "Who we are",
+      "body": "Canton Hyland has made door hardware in Xiaolan, Zhongshan, since 1998, with a quality system certified to ISO 9001 since 2002. Much of what we make leaves the factory under our customers' brands: bring a drawing or a sample and we tool it. Most models start between 300 and 5,000 pieces, and a sample is charged and credited against the first production order."
+    },
+    "form": {
+      "heading": "Book a meeting at the stand",
+      "intro": "Pick a day and tell us what you want to discuss. We confirm the time by email.",
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "country": "Country",
+      "day": "Preferred day",
+      "days": ["Monday 11 January", "Tuesday 12 January", "Wednesday 13 January", "Thursday 14 January", "Friday 15 January"],
+      "time": "Preferred time",
+      "times": ["Morning", "Afternoon", "Any time"],
+      "products": "Products to discuss",
+      "message": "Anything we should prepare (model numbers, quantities, drawings)",
+      "privacy": "We use these details only to arrange the meeting and follow up on it.",
+      "submit": "Request a meeting",
+      "success": "Thank you. We will confirm the time by email.",
+      "subject": "BAU 2027 meeting request"
+    },
+    "notComing": {
+      "heading": "Not going to Munich?",
+      "body": "Ask for samples or a quotation as usual. Everything we bring to the stand is on this site with its specifications.",
+      "cta": "Contact the export team"
+    }
+  },
+  "de": {
+    "seoTitle": "BAU 2027 München: Canton Hyland in Halle C4, Stand 523",
+    "seoDescription": "Türbeschläge und Baubeschläge auf der BAU 2027, 11.–15. Januar, Messe München, Halle C4, Stand 523. Vereinbaren Sie einen Termin am Stand.",
+    "kicker": "BAU 2027 · München",
+    "title": "Besuchen Sie uns auf der BAU 2027, Halle C4, Stand 523.",
+    "intro": "Vom 11. bis 15. Januar 2027 sind wir auf der Messe München, mit den Panikstangen, Einsteckschlössern, Aufschraubschlössern und Schließanlagen-Zylindern, nach denen Einkäufer uns am häufigsten fragen. Vereinbaren Sie einen Termin am Stand und bringen Sie Ihre Zeichnungen oder die Artikelnummern mit, die Sie heute beziehen.",
+    "facts": [
+      { "label": "Termin", "value": "11.–15. Januar 2027" },
+      { "label": "Ort", "value": "Messe München, Am Messesee 2, 81829 München" },
+      { "label": "Stand", "value": "Halle C4, Stand 523" },
+      { "label": "Aussteller", "value": "Canton Hyland, HYDE Türbeschläge" }
+    ],
+    "featuredHeading": "Was wir mitbringen",
+    "featuredIntro": "Jedes der folgenden Modelle hat eine eigene Seite mit Datenblatt und Fotos. Am Stand können Sie die Teile in die Hand nehmen, die Befestigungspunkte mit Ihrer Tür abgleichen und Muster in der gewünschten Oberfläche anfragen.",
+    "about": {
+      "heading": "Wer wir sind",
+      "body": "Canton Hyland fertigt seit 1998 Türbeschläge in Xiaolan, Zhongshan (China); das Qualitätsmanagementsystem ist seit 2002 nach ISO 9001 zertifiziert. Ein großer Teil unserer Produktion geht unter der Marke unserer Kunden hinaus: Schicken Sie uns eine Zeichnung oder ein Muster, und wir bauen das Werkzeug. Die meisten Modelle beginnen bei 300 bis 5.000 Stück; Muster sind kostenpflichtig und werden mit dem ersten Serienauftrag verrechnet."
+    },
+    "form": {
+      "heading": "Termin am Stand vereinbaren",
+      "intro": "Wählen Sie einen Tag und sagen Sie uns, worüber Sie sprechen möchten. Die Uhrzeit bestätigen wir per E-Mail.",
+      "name": "Name",
+      "company": "Firma",
+      "email": "E-Mail",
+      "country": "Land",
+      "day": "Gewünschter Tag",
+      "days": ["Montag, 11. Januar", "Dienstag, 12. Januar", "Mittwoch, 13. Januar", "Donnerstag, 14. Januar", "Freitag, 15. Januar"],
+      "time": "Gewünschte Zeit",
+      "times": ["Vormittag", "Nachmittag", "Egal"],
+      "products": "Gewünschte Produkte",
+      "message": "Was sollen wir vorbereiten (Artikelnummern, Mengen, Zeichnungen)?",
+      "privacy": "Wir verwenden diese Angaben nur, um den Termin zu vereinbaren und nachzubereiten.",
+      "submit": "Termin anfragen",
+      "success": "Vielen Dank. Wir bestätigen die Uhrzeit per E-Mail.",
+      "subject": "BAU 2027 Terminanfrage"
+    },
+    "notComing": {
+      "heading": "Sie kommen nicht nach München?",
+      "body": "Muster und Angebote können Sie wie gewohnt anfragen. Alles, was wir auf den Stand mitbringen, steht mit Datenblatt auf dieser Website.",
+      "cta": "Exportteam kontaktieren"
+    }
+  },
+  "featured": [
+    {
+      "slug": "307-panic-exit-device",
+      "category": "panic-exit-devices",
+      "en": "307 panic exit device: 1000mm aluminum push bar, reversible for left- or right-hand doors, on our own tooling.",
+      "de": "307 Panikstange: 1000 mm Druckstange aus Aluminium, für DIN-links und DIN-rechts umstellbar, aus eigenem Werkzeug."
+    },
+    {
+      "slug": "311-panic-exit-device",
+      "category": "panic-exit-devices",
+      "en": "311 panic exit device: 900mm bar, lock body with 72mm and 92mm center distances, brass cylinder and stainless handle in the set.",
+      "de": "311 Panikstange: 900 mm Stange, Schlosskasten mit 72 und 92 mm Entfernung, Messingzylinder und Edelstahldrücker im Set."
+    },
+    {
+      "slug": "305-fire-door-panic-exit-device",
+      "category": "panic-exit-devices",
+      "en": "305 panic exit device for fire doors: 1040mm single-point push bar with outside lever trim.",
+      "de": "305 Panikstange für Feuerschutztüren: 1040 mm Einpunkt-Druckstange mit Außendrücker."
+    },
+    {
+      "slug": "lc14-85-50mm-lock-case",
+      "category": "lock-cases",
+      "en": "LC14 security door lock case: 85mm center distance, 50mm backset, euro profile cylinder, four round bolts.",
+      "de": "LC14 Einsteckschloss für Sicherheitstüren: 85 mm Entfernung, 50 mm Dornmaß, Profilzylinder, vier Rundriegel."
+    },
+    {
+      "slug": "564-night-latch-and-rim-lock",
+      "category": "night-latches-rim-locks",
+      "en": "564 night latch and rim lock: zinc alloy, 60mm backset, for 35–55mm doors, reversible left or right hand.",
+      "de": "564 Aufschraubschloss mit Nachtriegel: Zinkdruckguss, 60 mm Dornmaß, für 35–55 mm Türen, links wie rechts einsetzbar."
+    },
+    {
+      "href": "/products/lock-cylinders/",
+      "en": "Master key and construction key cylinder systems, planned from your door schedule.",
+      "de": "Zylinder für Haupt- und Generalhauptschlüsselanlagen sowie Bauschließungen, geplant nach Ihrer Türliste."
+    }
+  ]
+}
