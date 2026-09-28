@@ -6,97 +6,25 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 672 次提交
+最近 30 天 · 共 600 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 10:38 | HYDE | 七语种短标题兜底 + 11 篇英文标题收到 60 字符内 | `ce809002491` |
-| 08:46 | 中立 | seo:indexnow:release: 16 GB heap | `ce614b69129` |
-| 08:29 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 2a6e4fa2c21 | `974fd5bcae6` |
-| 08:11 | HYDE | 合并本地提交（ship 旁路合并） | `6b5225dc66a` |
-| 07:20 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `54dced27522` |
-| 07:20 | 中立 | goal #107：/ar/feed.xml 线上正常，待甲方 purge 后重新提交 | `d30c1542719` |
-| 06:19 | 中立 | release: remove the johns-only guard for --site hyde | `bd3ee3b2a34` |
-| 06:17 | 中立 | release: refuse --site hyde off the johns machine | `46e8d2bd362` |
-| 06:13 | 中立 | goal #102-#104：r16 = b606a19697b 已推并实测 | `ad10465c3f0` |
-| 05:58 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 731d868c4a2 | `b606a19697b` |
-| 06:02 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `e070ed40520` |
-| 06:02 | HYDE | 合并 origin/main：采用对方的 feed 与作者页实现，我这边扩到十个语种 | `a4ed9bb9a13` |
-| 05:48 | 中立 | runbook：等部署后提交 9 条 RSS，写成非开发者照着做的步骤 | `07063d6956a` |
-| 05:45 | 中立 | 作者照片进署名与 Person 结构化数据 | `c8f7a3fc259` |
-| 05:37 | HYDE | 十个语种各一条 RSS；此前只有英文，es/pt 路由并不存在 | `5c104750057` |
-| 04:57 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 ad350d0e6cf | `02d8236a7d0` |
-| 05:09 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `69ddf7aedb7` |
-| 05:09 | 中立 | release: retry next build up to twice on native crash 0xC0000409 | `c763bf6bda7` |
-| 05:04 | 中立 | BAU 专栏：564 卡片说明首字母大写 | `41bc9c2074c` |
-| 05:03 | 中立 | 308-S / 308-D 标题按单扇/双扇定性（positioning 覆盖） | `86367c614e5` |
-| 05:01 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3d62eef4c25` |
-| 05:00 | 中立 | 308-S/308-D 三语摘要按甲方答复（单无锁体、双有锁体）；runbook 第一屏复查归档 | `efd058d976d` |
-| 04:35 | HYDE | Merge pull request #3 from SPOOOONER-FLASH/claude/project-thread-u8a4cy | `ad350d0e6cf` |
-| 04:23 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `94a13e996d1` |
-| 04:22 | 中立 | 德国联络地址改为 Brohl-Lützing，替换 Remagen | `0a090815706` |
-| 04:05 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 c5bf2b10720 | `fc00f7227e4` |
-| 03:54 | 中立 | next build: cap workers at 12 (NEXT_BUILD_CPUS overrides) | `69921f1ad2e` |
-| 03:50 | 中立 | 任务单：首页与全站外壳改服务端渲染 + 客户端小岛（交 projects 会话） | `eeb638a48ff` |
-| 03:43 | 中立 | 七语种首页入口与英西葡一致：去掉桌面 lg:mt-192（408951d37ea 只改了 en/es/pt，fr/de/ja 等首页首屏比英文低 144px） | `b5bcb762a72` |
-| 02:57 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `7ee326b4f37` |
-| 02:57 | 中立 | goal #98 #99：r14 = b67a73bbca9 已推，seo:placement 零弱链 | `ab7b62dd587` |
-| 01:52 | HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `d0c2d682cbf` |
-| 01:51 | 中立 | 菜单列全部栏目 + 内链摆位审查（测试 + seo:placement） | `7b93e04c6ca` |
+| 13:52 | 中立 | SEO/GEO 任务文件：写入本地重建后的执行结果与下一批 | `ff02dfd4b35` |
+| 13:47 | 雷茵 | rayen.css：Tailwind 扫描排除 out/、out-rayen/、tmp/（仅构建卫生，不改样式） | `28b4dd2a8ae` |
+| 13:47 | 中立 | Tailwind 扫描排除 tmp/：ship 的旁路检出是独立 git 根，扫描它的 4.6 万页导出让 PostCSS 子进程超时、next build 失败 | `1d3bc4ad133` |
+| 12:28 | 中立 | 品类页导语六处补「制造商 / 批发」用语（商业词覆盖 9/15 → 15/15）；作者头像 alt 改为人名 | `bed37a326e8` |
+| 11:13 | 中立 | 合并后七语种补译 97 键（隐私政策、主钥匙层级图、BAU 表单、Choosing 板块文案）+ SEO 批次更新文档 | `58287909816` |
+| 11:05 | 中立 | 合并修正：两个测试文件各补回被截掉的最后一行 | `28b36d18a92` |
+| 11:04 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' | `59db7ae6c75` |
+| 10:55 | HYDE | 全栈 SEO/GEO 第一批：品类页「买家怎么指定」板块（FAQPage）、子类页定义、视频页规格表、术语表 DefinedTermSet、范围解析 bug、审计误报 | `721db0c57eb` |
 
 ## 2026-09-27
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 23:43 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `b8e204dd9fa` |
-| 23:42 | 中立 | goal #97：r13 = 121e397e6ef 已推 | `4b131f6a43a` |
-| 23:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `c1adaaf4ce5` |
-| 23:26 | HYDE | BAU 2027 专栏上线源码：/bau-2027/ 与 /de/bau-2027/（版式 B） | `42ebcd6e243` |
-| 23:11 | 中立 | BAU 2027 任务单：甲方选定版式 B；预约邮箱 tec@cantonlock.com | `44ed06b635e` |
-| 22:56 | 中立 | BAU 2027 专栏三个版式预览（A 事实卡优先 / B 产品优先 / C 预约优先），EN + DE 桌面各一张、DE 手机 390px 各一张；文字原样取自 content/bau-2027.json，图片只用五个型号的现成实拍主图 | `1bd4bb6922e` |
-| 22:55 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `671b8020f8d` |
-| 22:55 | HYDE | Google Discover：82 张 1200×675 分享图（真实头图，不生成）、/feed.xml RSS、全引擎 max-image-preview:large、手机文章页不弹促销 | `0ace1fb2063` |
-| 22:48 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `49bb2c6174c` |
-| 22:47 | 中立 | 手机端：导航条「Buy it now」固定右侧、只当前页加粗；面包屑单行统一 ›、不再折行；删重复返回链接 | `93df22716c5` |
-| 22:38 | HYDE | 联系人：tec@ 为 Spooner、hyde@ 为 Monica Lee；WhatsApp +1 703 967 7493 上联系页（10 语种）、页脚、手机菜单 | `9a2094b4d1b` |
-| 22:33 | 中立 | 首页轮播：悬停暂停只在说明区、只认鼠标（大图占满首屏、手机点一下就永久停）；切换加定时兜底 | `70c96990724` |
-| 22:26 | 中立 | 目标清单：#90 日韩网址段不改（SEO/GEO 最优，改动已撤回）；#91 轮播不轮播 | `42478f2b979` |
-| 21:48 | 中立 | r9、r10 已由本机发布并线上实测；IndexNow 259 条 | `9cfcc370c4b` |
-| 21:39 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 60fecfee1de | `baa82d3b5a0` |
-| 21:35 | 中立 | 追记：npm test 只要 35 秒，不该手挑子集 | `765509ef6b9` |
-| 21:29 | 中立 | L016/L025/L026 specSources 备注去长破折号（normalize-product-dashes，测试要求） | `a70ea31fb4c` |
-| 21:28 | 中立 | 七语种标题：L016/L025/L026 材质已清空（待工厂确认），标题与描述不再写「锌合金」（21 条） | `8c155e006f4` |
-| 21:27 | 中立 | 菜单：关闭后焦点回退与 Esc 不再依赖 requestAnimationFrame（0 帧环境实测） | `b5f370fef08` |
-| 21:15 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 c0fa19785c5 | `d07288940d8` |
-| 21:18 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `1ebadeb00e3` |
-| 21:17 | 中立 | 三条记录的材质与自己的图纸说明矛盾：清空而不是猜；工厂待填表加第四节 | `56e92744123` |
-| 21:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `dddfc89a1e8` |
-| 21:05 | 中立 | 更正：摘要按记录 material 字段补回材质（57 条三语；图纸类 14 条存疑不补）；葡语 em inox em aço inoxidável 重复 17 处 | `13482f6ea9a` |
-| 20:59 | 中立 | 规则：所有 HYDE 发布部署交给 johns 机器上的工程会话（甲方 09-28，4090/64G；86132 16G/C 盘 20G） | `4207f5fbf1c` |
-| 20:53 | 中立 | r8 线上实测通过，IndexNow 250 条 | `e687c9e78ed` |
-| 20:51 | 中立 | r8 已由本机发布：c11fb7f4d59（构建 1dd053acc18），待甲方 purge 后实测 | `0793c9053bc` |
-| 20:45 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 1dd053acc18 | `c11fb7f4d59` |
-| 20:36 | 中立 | 分批推送大发布：out/ 按目录分批推临时分支，最后在当前 main 上一个小提交快进，中途不上线半套站点 | `afe60824f65` |
-| 20:35 | 中立 | 目标清单 #85：r8 改由本机分批推送 | `4451c12b336` |
-| 19:11 | 中立 | 主图一致性：发布会话已修 46 张（02f1ea41f72），工程会话复查 54→13，余下均为有意跳过 | `a52db23ce58` |
-| 19:07 | HYDE | 主图一致性：46 张 HYDE 主图按品类中位数重新摆放（主体占比、底边留白、水平居中，垂直偏移 ≤0.10），只裁切缩放真实照片、不改产品、不生成；去掉原图角落旧 Hyland 标志；审计 54→13（余下为 STAHLOCK 559、AR4 灰底、说明图 9007、散放配件等有意跳过） | `02f1ea41f72` |
-| 18:52 | 中立 | 产品主图一致性审计：521 张按品类测主体占比、基线、居中、底色，列出 54 张交视觉会话 | `d2f16de2cdb` |
-| 18:48 | HYDE | HowTo 结构化数据：fitting-a-euro-cylinder 6 步（取自正文，仅英文页）+ 守卫测试 | `dcf700eb961` |
-| 18:45 | 中立 | 型号未确认的 13 条记录：「Reference available on request」改为如实的「Model code to be confirmed」（10 语种） | `f0a2ae9f758` |
-| 18:43 | 中立 | runbook：③④⑤ 已完成移入存档，⑥⑦ 改为现在就能做；目标清单 6 行过时状态按核查更正 | `92c8d8275a5` |
-| 18:42 | 中立 | WebSite.inLanguage 列全部 10 语种；llms.txt 删掉无法核实的「over thirty markets」 | `d17538fc2f2` |
-| 18:40 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `6b483258d83` |
-| 18:40 | 中立 | 8/31–9/28 HYDE 指令核查与月度工作总结：459 条网站指令逐条打勾，Word 在 Desktop\hyde | `a42e70bfb87` |
-| 18:02 | 中立 | 月度指令核查的两个生成器：提取甲方消息（本机 Claude/Codex 会话）+ 合并核查行出月报 md | `786d9b694dc` |
-| 17:53 | 中立 | 目标清单 #77：发布会话 r8 发布中（页头、Resources 下拉） | `b9e54566577` |
-| 17:44 | 中立 | 死链检查：本地 0；新增线上检查 seo:deadlinks:live，1,242 页全 200、外链无死链 | `32f703316cc` |
-| 17:39 | 中立 | 页头：Applications / Guides / News 合并为「Resources」下拉（10 语种），顶栏 7 项 → 5 项 | `e4bfb248d7e` |
-| 17:33 | 中立 | 页头：fr/de/ru 导航比栏宽，桌面改用紧凑导航条，不再压 logo；加运行时守卫 | `a8f9fc0b55e` |
-| 14:15 | 中立 | IndexNow 只比 head + main：页头页脚改动不再把全站算作变化；3d9ab7aec9c 实推 6,329 条 | `57fbe356aec` |
-| 14:03 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 9fbb19322d7 | `3d9ab7aec9c` |
-| 13:41 | 中立 | release-site：子进程输出上限提到 256 MB；46,188 个暂存文件的清单被默认 1 MB 截断成 "o"，误判为 out/ 以外的文件而中止发布 | `9fbb19322d7` |
 | 13:13 | 中立 | 合 origin/main：ansi-grade-1 文章 seoDescription 七语种译文（文案会话）补 sourceHash，看板过期归零 | `3a904394634` |
 | 13:12 | HYDE | Merge remote-tracking branch 'origin/main' | `114e4600821` |
 | 12:56 | 中立 | 规格覆盖报告：重新生成（origin 的规格值 MM→mm 归一后两个字段的不同取值数 30→28、85→84） | `60ba0e16694` |
