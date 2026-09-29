@@ -66,3 +66,15 @@
 - `c8e012f4309` Replace rejected guide composites with genuine catalogue photos
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/28 03:48:58 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `fe7407014b0` shiplog: 更新上线存档
+- `a932342f2b3` 报价规矩：记下 D.P. Serraller 一单老板改稿的三条教训
+- `9cfd82fb1dd` Add HYDE BAU entry design previews
+
+下一次 `npm run ship` 成功时这些会一起推上去。
