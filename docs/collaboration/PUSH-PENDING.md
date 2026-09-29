@@ -168,6 +168,20 @@
 
 下一次 `npm run ship` 成功时这些会一起推上去。
 
+## 2026/9/28 21:45:03 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `3cc92f97f0a`（源码 e36f7876720）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+补充验收：合并后的新增展会栏使 1440px 首页卡片仍遮挡 CTA，浏览器复测拒绝了这个旧工件。不要单独推送 `3cc92f97f0a`；待卡片避让修复通过后，基于新主线重新运行 `release:hyde`。
+
+## 2026/9/29 05:51:11 · 三次推送失败
+
+原因：超时（5 分钟无响应）
+
+未推送的提交：
+
+- `13ccca544f8` shiplog: 更新上线存档
+- `0dba9b4ca5e` fix: keep compact homepage offers clear of hero actions
 ## 2026/9/28 23:08:44 · 三次推送失败
 
 原因：旁路合并也失败：真冲突，需要人看：Auto-merging package.json / Automatic merge failed; fix conflicts and then commit the result.

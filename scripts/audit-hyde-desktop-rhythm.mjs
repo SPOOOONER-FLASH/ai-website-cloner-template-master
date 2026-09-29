@@ -35,13 +35,14 @@ function optionsFromArgs(args) {
     chrome: "C:/Program Files/Google/Chrome/Application/chrome.exe",
     settleMs: 800,
     checkPromo: false,
+    defaultFontSize: null,
     pages: Object.keys(PAGES),
     viewports: Object.values(VIEWPORTS),
   };
   for (let i = 0; i < args.length; i += 1) {
     const flag = args[i];
     if (flag === "--help") {
-      console.log("Usage: node scripts/audit-hyde-desktop-rhythm.mjs [--base URL] [--out DIR] [--page home,product-finder,guides,product-studies,contact] [--width 390,1440,1920 | WIDTHxHEIGHT] [--settle-ms 800] [--check-promo (localhost only)] [--chrome PATH]");
+      console.log("Usage: node scripts/audit-hyde-desktop-rhythm.mjs [--base URL] [--out DIR] [--page home,product-finder,guides,product-studies,contact] [--width 390,1440,1920 | WIDTHxHEIGHT] [--settle-ms 800] [--default-font-size 20] [--check-promo (localhost only)] [--chrome PATH]");
       process.exit(0);
     }
     if (flag === "--check-promo") {
@@ -67,6 +68,9 @@ function optionsFromArgs(args) {
     } else if (flag === "--settle-ms") {
       options.settleMs = Number(value);
       if (!Number.isFinite(options.settleMs) || options.settleMs < 0 || options.settleMs > 30000) throw new Error("Settle wait must be between 0 and 30000 milliseconds");
+    } else if (flag === "--default-font-size") {
+      options.defaultFontSize = Number(value);
+      if (!Number.isInteger(options.defaultFontSize) || options.defaultFontSize < 8 || options.defaultFontSize > 32) throw new Error("Default font size must be an integer between 8 and 32 pixels");
     } else {
       throw new Error(`Unknown option: ${flag}`);
     }
@@ -164,6 +168,7 @@ const metricsExpression = `(() => {
   return {
     url: location.href, title: document.title, readyState: document.readyState,
     viewport: { width: innerWidth, height: innerHeight, devicePixelRatio },
+    rootFontSize: getComputedStyle(document.documentElement).fontSize,
     clientWidth: document.documentElement.clientWidth,
     scrollWidth: Math.max(document.documentElement.scrollWidth, document.body?.scrollWidth || 0),
     header: rect(document.querySelector('body .sticky.top-0') || document.querySelector('header')), main: rect(document.querySelector('main')),
@@ -205,13 +210,62 @@ const promoStateExpression = `(() => {
     const topNode = inside ? document.elementFromPoint(centerX, centerY) : null;
     heroCtaUnoccluded = !!topNode && (heroCta.contains(topNode) || topNode.contains(heroCta));
   }
-  return { present: true, nativeDetails: !!details, open: details?.open ?? null, rail: bounds(aside), close: bounds(close), summary: summary?.innerText.replace(/\\s+/g, ' ').trim() || null, contentVisible: visible(content) && !!content?.innerText.trim(), ctaVisible: visible(cta), ctaHref: cta?.getAttribute('href') || null, heroCtaUnoccluded };
+  const rail = bounds(aside);
+  const heroCtaOverlap = [...document.querySelectorAll('section[aria-roledescription="carousel"] .hero-caption-slide a[href]')].some(link => {
+    const box = bounds(link);
+    return box.width > 0 && box.height > 0 && rail.x < box.x + box.width && rail.x + rail.width > box.x && rail.y < box.y + box.height && rail.y + rail.height > box.y;
+  });
+  return { present: true, nativeDetails: !!details, open: details?.open ?? null, rail, lift: Number(aside.dataset.lift) || 0, scrollY, rootFontSize: getComputedStyle(document.documentElement).fontSize, close: bounds(close), summary: summary?.innerText.replace(/\\s+/g, ' ').trim() || null, contentVisible: visible(content) && !!content?.innerText.trim(), ctaVisible: visible(cta), ctaHref: cta?.getAttribute('href') || null, heroCtaUnoccluded, heroCtaOverlap };
 })()`;
+
+async function inspectPromoStability(client) {
+  const original = await evaluate(client, "({width: innerWidth, height: innerHeight, scrollY})");
+  const samples = [];
+  const resize = height => client.send("Emulation.setDeviceMetricsOverride", { width: original.width, height, deviceScaleFactor: 1, mobile: original.width < 744, screenWidth: original.width, screenHeight: height });
+  try {
+    for (const height of [original.height, original.height + 64]) {
+      await resize(height);
+      await delay(120);
+      // Place the CTA near the bottom rail, then make real one-pixel scrolls.
+      // Comparing settled positions also catches feedback that flips lift tiers.
+      const scrollTop = await evaluate(client, `(() => {
+        const rail = [...document.querySelectorAll('aside[aria-label]')].find(node => getComputedStyle(node).position === 'fixed');
+        const box = rail.getBoundingClientRect();
+        const baseBottom = box.bottom + (Number(rail.dataset.lift) || 0) * parseFloat(getComputedStyle(document.documentElement).fontSize) / 10;
+        const links = [...document.querySelectorAll('.hero-caption-slide a[href]')].map(link => link.getBoundingClientRect()).filter(link => link.width && link.height && box.left < link.right && box.right > link.left);
+        const earliest = Math.min(...links.map(link => link.top));
+        return Math.max(0, earliest + scrollY - (baseBottom + 16 - 118));
+      })()`);
+      for (let sample = 0; sample < 6; sample += 1) {
+        await evaluate(client, `scrollTo({top: ${scrollTop + sample % 2}, behavior: 'instant'})`);
+        await delay(120);
+        samples.push({ height, ...await evaluate(client, promoStateExpression) });
+      }
+    }
+  } finally {
+    await resize(original.height);
+    await evaluate(client, `scrollTo({top: ${original.scrollY}, behavior: 'instant'})`);
+    await delay(120);
+  }
+  return {
+    samples,
+    checks: {
+      heroCtaClearAfterScrollAndResize: samples.every(sample => sample.present && !sample.heroCtaOverlap),
+      promoLiftStableAfterScrollAndResize: [original.height, original.height + 64].every(height => new Set(samples.filter(sample => sample.height === height).map(sample => sample.lift)).size === 1),
+    },
+  };
+}
 
 async function inspectPromo(client, options, filenameStem) {
   // Guard the final browser URL too: a localhost route could redirect to production.
   const hostname = await evaluate(client, "location.hostname");
   if (!["localhost", "127.0.0.1", "[::1]"].includes(hostname)) throw new Error("Promo interaction refused after navigation left localhost");
+  if (options.defaultFontSize) {
+    // A larger user default can put the caption below the initial viewport.
+    // This interaction-only proof brings it into view without editing site CSS.
+    await evaluate(client, "document.querySelector('.hero-caption-slide[data-active=\"true\"] a[href]')?.scrollIntoView({block: 'center', behavior: 'instant'})");
+    await delay(200);
+  }
   const initial = await evaluate(client, promoStateExpression);
   const checks = {
     passiveRailPresent: initial.present,
@@ -245,6 +299,8 @@ async function inspectPromo(client, options, filenameStem) {
   proof.collapsed = await evaluate(client, promoStateExpression);
   checks.collapsesToCompactRail = proof.collapsed.open === false && proof.collapsed.rail?.height <= 120;
   await capture("promo-collapsed");
+  proof.stability = await inspectPromoStability(client);
+  Object.assign(checks, proof.stability.checks);
   // Dismiss an expanded card: React must not carry the native open state into
   // the next offer. A collapsed-only dismissal would miss this regression.
   await click("details > summary");
@@ -296,6 +352,9 @@ async function inspectScenario(port, options, page, viewport) {
     await client.send("Page.enable");
     await client.send("Runtime.enable");
     await client.send("Network.enable");
+    // Official CDP Page.setFontSizes changes the browser default, not page styles:
+    // https://chromedevtools.github.io/devtools-protocol/tot/Page/#method-setFontSizes
+    if (options.defaultFontSize) await client.send("Page.setFontSizes", { fontSizes: { standard: options.defaultFontSize } });
     await client.send("Emulation.setDeviceMetricsOverride", { ...viewport, deviceScaleFactor: 1, mobile: viewport.width < 744, screenWidth: viewport.width, screenHeight: viewport.height });
     await client.send("Emulation.setTouchEmulationEnabled", { enabled: viewport.width < 744 });
     const navigation = await client.send("Page.navigate", { url });
@@ -320,7 +379,7 @@ async function inspectScenario(port, options, page, viewport) {
     const filename = `${page}-${viewport.width}x${viewport.height}.png`;
     const screenshot = await client.send("Page.captureScreenshot", { format: "png", captureBeyondViewport: false, fromSurface: true });
     await writeFile(path.join(options.out, filename), Buffer.from(screenshot.data, "base64"));
-    const result = { page, requestedViewport: viewport, ...metrics, failedResources, pageErrors, pendingCriticalRequests: [...loading].map(id => requests.get(id)), screenshot: filename };
+    const result = { page, requestedViewport: viewport, requestedDefaultFontSize: options.defaultFontSize, ...metrics, failedResources, pageErrors, pendingCriticalRequests: [...loading].map(id => requests.get(id)), screenshot: filename };
     result.hardFailures = [];
     if (metrics.viewport.width !== viewport.width) result.hardFailures.push("Viewport width differs from requested width");
     if (metrics.scrollWidth > viewport.width + 1) result.hardFailures.push(`Horizontal overflow: ${metrics.scrollWidth}px > ${viewport.width}px`);

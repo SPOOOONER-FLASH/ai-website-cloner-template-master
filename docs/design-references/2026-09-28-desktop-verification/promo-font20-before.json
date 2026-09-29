@@ -1,0 +1,712 @@
+{
+  "generatedAt": "2026-09-29T12:19:26.164Z",
+  "base": "http://127.0.0.1:8766/",
+  "results": [
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "requestedDefaultFontSize": 20,
+      "url": "http://127.0.0.1:8766/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "devicePixelRatio": 1
+      },
+      "rootFontSize": "12.5px",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 1425,
+        "height": 183,
+        "bottom": 183
+      },
+      "main": {
+        "x": 0,
+        "y": 317,
+        "documentY": 317,
+        "width": 1425,
+        "height": 15708.4,
+        "bottom": 16025.4
+      },
+      "h1": {
+        "x": 34.5,
+        "y": 2325,
+        "documentY": 2325,
+        "width": 668,
+        "height": 150,
+        "bottom": 2475
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 317,
+        "documentY": 317,
+        "width": 1425,
+        "height": 785,
+        "bottom": 1102,
+        "media": {
+          "x": 34.5,
+          "y": 317,
+          "documentY": 317,
+          "width": 1356,
+          "height": 532.5,
+          "bottom": 849.5
+        },
+        "activeCaption": {
+          "x": 34.5,
+          "y": 879.5,
+          "documentY": 879.5,
+          "width": 1356,
+          "height": 162.5,
+          "bottom": 1042
+        },
+        "captionTitle": "Mortise Lock Cases"
+      },
+      "floatingPromos": [
+        {
+          "label": "Featured offer",
+          "x": 1035,
+          "y": 784.3,
+          "documentY": 784.3,
+          "width": 360,
+          "height": 85.8,
+          "bottom": 870
+        }
+      ],
+      "aboveFoldCtas": [
+        {
+          "label": "View lock cases",
+          "href": "/products/lock-cases/",
+          "x": 1066.5,
+          "y": 879.5,
+          "documentY": 879.5,
+          "width": 163.5,
+          "height": 31.3,
+          "bottom": 910.8,
+          "aboveFold": false,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "View lock cases",
+          "href": "/products/lock-cases/",
+          "x": 1066.5,
+          "y": 879.5,
+          "documentY": 879.5,
+          "width": 163.5,
+          "height": 31.3,
+          "bottom": 910.8,
+          "aboveFold": false,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 34.5,
+          "y": 1364.5,
+          "documentY": 1364.5,
+          "width": 668,
+          "height": 790.5,
+          "bottom": 2155,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 1163.5,
+          "y": 5229.6,
+          "documentY": 5229.6,
+          "width": 227,
+          "height": 31.3,
+          "bottom": 5260.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 34.5,
+          "y": 11180.8,
+          "documentY": 11180.8,
+          "width": 194.6,
+          "height": 31.3,
+          "bottom": 11212.1,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 34.5,
+          "y": 13789.5,
+          "documentY": 13789.5,
+          "width": 668,
+          "height": 790.5,
+          "bottom": 14580,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 722.5,
+          "y": 14912.5,
+          "documentY": 14912.5,
+          "width": 117,
+          "height": 31.3,
+          "bottom": 14943.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 1066.5,
+          "y": 15932.9,
+          "documentY": 15932.9,
+          "width": 140.1,
+          "height": 31.3,
+          "bottom": 15964.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Hardware Specification",
+          "href": "/contact/",
+          "x": 0,
+          "y": 15003.8,
+          "documentY": 15003.8,
+          "width": 1424.9,
+          "height": 1021.7,
+          "bottom": 16025.4,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 37,
+        "viewport": 2,
+        "loadedInViewport": 2,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-1440x900.png",
+      "hardFailures": [
+        "Promo check failed: heroCtaClearAfterScrollAndResize",
+        "Promo check failed: promoLiftStableAfterScrollAndResize"
+      ],
+      "promoProof": {
+        "initial": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1035,
+            "y": 784.25,
+            "width": 360,
+            "height": 85.75
+          },
+          "lift": 0,
+          "scrollY": 445,
+          "rootFontSize": "12.5px",
+          "close": {
+            "x": 1326.5,
+            "y": 797.75,
+            "width": 55,
+            "height": 55
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true,
+          "heroCtaOverlap": false
+        },
+        "checks": {
+          "passiveRailPresent": true,
+          "nativeDetailsClosed": true,
+          "passiveHeightAtMost120": true,
+          "closeHitAreaAtLeast44": true,
+          "heroCtaUnoccluded": true,
+          "expandsWithVisibleContentAndCta": true,
+          "collapsesToCompactRail": true,
+          "heroCtaClearAfterScrollAndResize": false,
+          "promoLiftStableAfterScrollAndResize": false,
+          "reopensBeforeDismissal": true,
+          "dismissesOrAdvancesCard": true
+        },
+        "screenshots": [
+          "home-1440x900-promo-expanded.png",
+          "home-1440x900-promo-collapsed.png"
+        ],
+        "expanded": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 1035,
+            "y": 582,
+            "width": 360,
+            "height": 288
+          },
+          "lift": 0,
+          "scrollY": 445,
+          "rootFontSize": "12.5px",
+          "close": {
+            "x": 1326.5,
+            "y": 595.5,
+            "width": 55,
+            "height": 55
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true,
+          "heroCtaOverlap": false
+        },
+        "collapsed": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1035,
+            "y": 784.25,
+            "width": 360,
+            "height": 85.75
+          },
+          "lift": 0,
+          "scrollY": 445,
+          "rootFontSize": "12.5px",
+          "close": {
+            "x": 1326.5,
+            "y": 797.75,
+            "width": 55,
+            "height": 55
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true,
+          "heroCtaOverlap": false
+        },
+        "stability": {
+          "samples": [
+            {
+              "height": 900,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 584.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 160,
+              "scrollY": 112,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 597.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": false
+            },
+            {
+              "height": 900,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 684.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 80,
+              "scrollY": 113,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 697.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": true
+            },
+            {
+              "height": 900,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 584.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 160,
+              "scrollY": 112,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 597.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": false
+            },
+            {
+              "height": 900,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 684.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 80,
+              "scrollY": 113,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 697.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": true
+            },
+            {
+              "height": 900,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 584.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 160,
+              "scrollY": 112,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 597.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": false
+            },
+            {
+              "height": 900,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 684.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 80,
+              "scrollY": 113,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 697.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": true
+            },
+            {
+              "height": 964,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 648.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 160,
+              "scrollY": 48,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 661.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": false
+            },
+            {
+              "height": 964,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 748.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 80,
+              "scrollY": 49,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 761.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": true
+            },
+            {
+              "height": 964,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 648.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 160,
+              "scrollY": 48,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 661.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": false
+            },
+            {
+              "height": 964,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 748.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 80,
+              "scrollY": 49,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 761.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": true
+            },
+            {
+              "height": 964,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 648.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 160,
+              "scrollY": 48,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 661.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": false
+            },
+            {
+              "height": 964,
+              "present": true,
+              "nativeDetails": true,
+              "open": false,
+              "rail": {
+                "x": 1035,
+                "y": 748.25,
+                "width": 360,
+                "height": 85.75
+              },
+              "lift": 80,
+              "scrollY": 49,
+              "rootFontSize": "12.5px",
+              "close": {
+                "x": 1326.5,
+                "y": 761.75,
+                "width": 55,
+                "height": 55
+              },
+              "summary": "Talk to us About your project",
+              "contentVisible": false,
+              "ctaVisible": true,
+              "ctaHref": "/contact/",
+              "heroCtaUnoccluded": true,
+              "heroCtaOverlap": true
+            }
+          ],
+          "checks": {
+            "heroCtaClearAfterScrollAndResize": false,
+            "promoLiftStableAfterScrollAndResize": false
+          }
+        },
+        "reopened": {
+          "present": true,
+          "nativeDetails": true,
+          "open": true,
+          "rail": {
+            "x": 1035,
+            "y": 582,
+            "width": 360,
+            "height": 288
+          },
+          "lift": 0,
+          "scrollY": 445,
+          "rootFontSize": "12.5px",
+          "close": {
+            "x": 1326.5,
+            "y": 595.5,
+            "width": 55,
+            "height": 55
+          },
+          "summary": "Talk to us About your project",
+          "contentVisible": true,
+          "ctaVisible": true,
+          "ctaHref": "/contact/",
+          "heroCtaUnoccluded": true,
+          "heroCtaOverlap": false
+        },
+        "afterDismiss": {
+          "present": true,
+          "nativeDetails": true,
+          "open": false,
+          "rail": {
+            "x": 1035,
+            "y": 753,
+            "width": 360,
+            "height": 117
+          },
+          "lift": 0,
+          "scrollY": 445,
+          "rootFontSize": "12.5px",
+          "close": {
+            "x": 1326.5,
+            "y": 766.5,
+            "width": 55,
+            "height": 55
+          },
+          "summary": "Don't know the model? Answer a few questions",
+          "contentVisible": false,
+          "ctaVisible": true,
+          "ctaHref": "/configurator/",
+          "heroCtaUnoccluded": true,
+          "heroCtaOverlap": false
+        }
+      }
+    }
+  ]
+}

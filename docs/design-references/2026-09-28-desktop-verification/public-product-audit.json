@@ -1,0 +1,758 @@
+{
+  "startedAt": "2026-09-29T11:40:50.436Z",
+  "finishedAt": "2026-09-29T11:41:18.170Z",
+  "sourceRoot": "C:\\hyde-photo-work\\tmp\\ship-merge",
+  "requests": "Normal public URLs only. No form posts, cache busters or Cloudflare operations. Image resources checked by HEAD without downloading media.",
+  "sourceSelectionCount": 13,
+  "pagesPassed": 21,
+  "pagesTotal": 21,
+  "assetsPassed": 26,
+  "assetsTotal": 26,
+  "results": [
+    {
+      "type": "studies",
+      "prefix": "/es",
+      "pathname": "/es/product-studies/",
+      "url": "https://cantonlock.com/es/product-studies/",
+      "finalUrl": "https://cantonlock.com/es/product-studies/",
+      "checkedAt": "2026-09-29T11:40:52.056Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Herrajes en detalle — Fotografías y selección de productos | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "sourceStudyRefs": [
+        {
+          "id": "01-source-307-components",
+          "src": "/images/product-studies/01-source-307-components-1440.webp",
+          "present": true
+        },
+        {
+          "id": "00-real-source-selection",
+          "src": "/images/product-studies/00-real-source-selection-1440.webp",
+          "present": true
+        },
+        {
+          "id": "07-source-564-night-latch-and-rim-lock",
+          "src": "/images/product-studies/07-source-564-night-latch-and-rim-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "08-source-607-sset-tubular-lock",
+          "src": "/images/product-studies/08-source-607-sset-tubular-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "09-source-587-sset-light-duty-cylindrical-lock",
+          "src": "/images/product-studies/09-source-587-sset-light-duty-cylindrical-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "10-source-70bk-lock-cylinder",
+          "src": "/images/product-studies/10-source-70bk-lock-cylinder-1440.webp",
+          "present": true
+        },
+        {
+          "id": "11-source-lc14-85-50mm-lock-case",
+          "src": "/images/product-studies/11-source-lc14-85-50mm-lock-case-1440.webp",
+          "present": true
+        },
+        {
+          "id": "12-source-316-s-panic-exit-device",
+          "src": "/images/product-studies/12-source-316-s-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "13-source-dc02-door-coordinator",
+          "src": "/images/product-studies/13-source-dc02-door-coordinator-1440.webp",
+          "present": true
+        },
+        {
+          "id": "14-source-hyde-ar4-110-mortise-lock",
+          "src": "/images/product-studies/14-source-hyde-ar4-110-mortise-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "18-source-308-panic-exit-device",
+          "src": "/images/product-studies/18-source-308-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "19-source-310-panic-exit-device",
+          "src": "/images/product-studies/19-source-310-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "20-source-035-panic-exit-device-trim",
+          "src": "/images/product-studies/20-source-035-panic-exit-device-trim-1440.webp",
+          "present": true
+        }
+      ],
+      "sourceStudyCount": 13,
+      "totalStudyImages": 17,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__product-studies__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/es",
+      "slug": "100-glass-door-handle",
+      "pathname": "/es/products/glass-door-accessories/100-glass-door-handle/",
+      "url": "https://cantonlock.com/es/products/glass-door-accessories/100-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/es/products/glass-door-accessories/100-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.180Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "100 Tirador para puerta de vidrio, 600mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__products__glass-door-accessories__100-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/es",
+      "slug": "102-glass-door-handle",
+      "pathname": "/es/products/glass-door-accessories/102-glass-door-handle/",
+      "url": "https://cantonlock.com/es/products/glass-door-accessories/102-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/es/products/glass-door-accessories/102-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.696Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "102 Tirador para puerta de vidrio, 600mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__products__glass-door-accessories__102-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/es",
+      "slug": "104-glass-door-handle",
+      "pathname": "/es/products/glass-door-accessories/104-glass-door-handle/",
+      "url": "https://cantonlock.com/es/products/glass-door-accessories/104-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/es/products/glass-door-accessories/104-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.589Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "104 Tirador para puerta de vidrio, 600mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__products__glass-door-accessories__104-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/es",
+      "slug": "106-glass-door-handle",
+      "pathname": "/es/products/glass-door-accessories/106-glass-door-handle/",
+      "url": "https://cantonlock.com/es/products/glass-door-accessories/106-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/es/products/glass-door-accessories/106-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.508Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "106 Tirador para puerta de vidrio, 600mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__products__glass-door-accessories__106-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/es",
+      "slug": "107-glass-door-handle",
+      "pathname": "/es/products/glass-door-accessories/107-glass-door-handle/",
+      "url": "https://cantonlock.com/es/products/glass-door-accessories/107-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/es/products/glass-door-accessories/107-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.550Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "107 Tirador para puerta de vidrio, 600mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__products__glass-door-accessories__107-glass-door-handle__.html"
+    },
+    {
+      "type": "control",
+      "prefix": "/es",
+      "slug": "001-panic-exit-device-trim",
+      "pathname": "/es/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "url": "https://cantonlock.com/es/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "finalUrl": "https://cantonlock.com/es/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "checkedAt": "2026-09-29T11:40:52.834Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "001 Guarnición exterior para barra antipánico, 300×75mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": true,
+      "drawingImagePresent": true,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\es__products__panic-exit-devices__001-panic-exit-device-trim__.html"
+    },
+    {
+      "type": "studies",
+      "prefix": "",
+      "pathname": "/product-studies/",
+      "url": "https://cantonlock.com/product-studies/",
+      "finalUrl": "https://cantonlock.com/product-studies/",
+      "checkedAt": "2026-09-29T11:40:51.247Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Hardware in Focus — Product Photography &amp; Selection | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "sourceStudyRefs": [
+        {
+          "id": "01-source-307-components",
+          "src": "/images/product-studies/01-source-307-components-1440.webp",
+          "present": true
+        },
+        {
+          "id": "00-real-source-selection",
+          "src": "/images/product-studies/00-real-source-selection-1440.webp",
+          "present": true
+        },
+        {
+          "id": "07-source-564-night-latch-and-rim-lock",
+          "src": "/images/product-studies/07-source-564-night-latch-and-rim-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "08-source-607-sset-tubular-lock",
+          "src": "/images/product-studies/08-source-607-sset-tubular-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "09-source-587-sset-light-duty-cylindrical-lock",
+          "src": "/images/product-studies/09-source-587-sset-light-duty-cylindrical-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "10-source-70bk-lock-cylinder",
+          "src": "/images/product-studies/10-source-70bk-lock-cylinder-1440.webp",
+          "present": true
+        },
+        {
+          "id": "11-source-lc14-85-50mm-lock-case",
+          "src": "/images/product-studies/11-source-lc14-85-50mm-lock-case-1440.webp",
+          "present": true
+        },
+        {
+          "id": "12-source-316-s-panic-exit-device",
+          "src": "/images/product-studies/12-source-316-s-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "13-source-dc02-door-coordinator",
+          "src": "/images/product-studies/13-source-dc02-door-coordinator-1440.webp",
+          "present": true
+        },
+        {
+          "id": "14-source-hyde-ar4-110-mortise-lock",
+          "src": "/images/product-studies/14-source-hyde-ar4-110-mortise-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "18-source-308-panic-exit-device",
+          "src": "/images/product-studies/18-source-308-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "19-source-310-panic-exit-device",
+          "src": "/images/product-studies/19-source-310-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "20-source-035-panic-exit-device-trim",
+          "src": "/images/product-studies/20-source-035-panic-exit-device-trim-1440.webp",
+          "present": true
+        }
+      ],
+      "sourceStudyCount": 13,
+      "totalStudyImages": 17,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\product-studies__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "",
+      "slug": "100-glass-door-handle",
+      "pathname": "/products/glass-door-accessories/100-glass-door-handle/",
+      "url": "https://cantonlock.com/products/glass-door-accessories/100-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/products/glass-door-accessories/100-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:51.322Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "100 Glass Door Handle, 600mm, 304 Stainless Steel | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\products__glass-door-accessories__100-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "",
+      "slug": "102-glass-door-handle",
+      "pathname": "/products/glass-door-accessories/102-glass-door-handle/",
+      "url": "https://cantonlock.com/products/glass-door-accessories/102-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/products/glass-door-accessories/102-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:51.328Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "102 Glass Door Handle, 600mm, 304 Stainless Steel | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\products__glass-door-accessories__102-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "",
+      "slug": "104-glass-door-handle",
+      "pathname": "/products/glass-door-accessories/104-glass-door-handle/",
+      "url": "https://cantonlock.com/products/glass-door-accessories/104-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/products/glass-door-accessories/104-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.237Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "104 Glass Door Handle, 600mm, 304 Stainless Steel | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\products__glass-door-accessories__104-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "",
+      "slug": "106-glass-door-handle",
+      "pathname": "/products/glass-door-accessories/106-glass-door-handle/",
+      "url": "https://cantonlock.com/products/glass-door-accessories/106-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/products/glass-door-accessories/106-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:51.770Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "106 Glass Door Handle, 600mm, 304 Stainless Steel | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\products__glass-door-accessories__106-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "",
+      "slug": "107-glass-door-handle",
+      "pathname": "/products/glass-door-accessories/107-glass-door-handle/",
+      "url": "https://cantonlock.com/products/glass-door-accessories/107-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/products/glass-door-accessories/107-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:51.893Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "107 Glass Door Handle, 600mm, 304 Stainless Steel | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\products__glass-door-accessories__107-glass-door-handle__.html"
+    },
+    {
+      "type": "control",
+      "prefix": "",
+      "slug": "001-panic-exit-device-trim",
+      "pathname": "/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "url": "https://cantonlock.com/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "finalUrl": "https://cantonlock.com/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "checkedAt": "2026-09-29T11:40:51.850Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "001 Panic Exit Device Trim, 300×75mm, 304SS | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": true,
+      "drawingImagePresent": true,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\products__panic-exit-devices__001-panic-exit-device-trim__.html"
+    },
+    {
+      "type": "studies",
+      "prefix": "/pt",
+      "pathname": "/pt/product-studies/",
+      "url": "https://cantonlock.com/pt/product-studies/",
+      "finalUrl": "https://cantonlock.com/pt/product-studies/",
+      "checkedAt": "2026-09-29T11:40:52.851Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Ferragens em detalhe — Fotografias e seleção de produtos | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "sourceStudyRefs": [
+        {
+          "id": "01-source-307-components",
+          "src": "/images/product-studies/01-source-307-components-1440.webp",
+          "present": true
+        },
+        {
+          "id": "00-real-source-selection",
+          "src": "/images/product-studies/00-real-source-selection-1440.webp",
+          "present": true
+        },
+        {
+          "id": "07-source-564-night-latch-and-rim-lock",
+          "src": "/images/product-studies/07-source-564-night-latch-and-rim-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "08-source-607-sset-tubular-lock",
+          "src": "/images/product-studies/08-source-607-sset-tubular-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "09-source-587-sset-light-duty-cylindrical-lock",
+          "src": "/images/product-studies/09-source-587-sset-light-duty-cylindrical-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "10-source-70bk-lock-cylinder",
+          "src": "/images/product-studies/10-source-70bk-lock-cylinder-1440.webp",
+          "present": true
+        },
+        {
+          "id": "11-source-lc14-85-50mm-lock-case",
+          "src": "/images/product-studies/11-source-lc14-85-50mm-lock-case-1440.webp",
+          "present": true
+        },
+        {
+          "id": "12-source-316-s-panic-exit-device",
+          "src": "/images/product-studies/12-source-316-s-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "13-source-dc02-door-coordinator",
+          "src": "/images/product-studies/13-source-dc02-door-coordinator-1440.webp",
+          "present": true
+        },
+        {
+          "id": "14-source-hyde-ar4-110-mortise-lock",
+          "src": "/images/product-studies/14-source-hyde-ar4-110-mortise-lock-1440.webp",
+          "present": true
+        },
+        {
+          "id": "18-source-308-panic-exit-device",
+          "src": "/images/product-studies/18-source-308-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "19-source-310-panic-exit-device",
+          "src": "/images/product-studies/19-source-310-panic-exit-device-1440.webp",
+          "present": true
+        },
+        {
+          "id": "20-source-035-panic-exit-device-trim",
+          "src": "/images/product-studies/20-source-035-panic-exit-device-trim-1440.webp",
+          "present": true
+        }
+      ],
+      "sourceStudyCount": 13,
+      "totalStudyImages": 17,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__product-studies__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/pt",
+      "slug": "100-glass-door-handle",
+      "pathname": "/pt/products/glass-door-accessories/100-glass-door-handle/",
+      "url": "https://cantonlock.com/pt/products/glass-door-accessories/100-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/pt/products/glass-door-accessories/100-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:52.883Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "100 Puxador para porta de vidro, 600mm, aço inoxidável 304 | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__products__glass-door-accessories__100-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/pt",
+      "slug": "102-glass-door-handle",
+      "pathname": "/pt/products/glass-door-accessories/102-glass-door-handle/",
+      "url": "https://cantonlock.com/pt/products/glass-door-accessories/102-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/pt/products/glass-door-accessories/102-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:53.019Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "102 Puxador para porta de vidro, 600mm, aço inoxidável 304 | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__products__glass-door-accessories__102-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/pt",
+      "slug": "104-glass-door-handle",
+      "pathname": "/pt/products/glass-door-accessories/104-glass-door-handle/",
+      "url": "https://cantonlock.com/pt/products/glass-door-accessories/104-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/pt/products/glass-door-accessories/104-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:53.154Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "104 Puxador para porta de vidro, 600mm, aço inoxidável 304 | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__products__glass-door-accessories__104-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/pt",
+      "slug": "106-glass-door-handle",
+      "pathname": "/pt/products/glass-door-accessories/106-glass-door-handle/",
+      "url": "https://cantonlock.com/pt/products/glass-door-accessories/106-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/pt/products/glass-door-accessories/106-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:53.150Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "106 Puxador para porta de vidro, 600mm, aço inoxidável 304 | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__products__glass-door-accessories__106-glass-door-handle__.html"
+    },
+    {
+      "type": "suppressed",
+      "prefix": "/pt",
+      "slug": "107-glass-door-handle",
+      "pathname": "/pt/products/glass-door-accessories/107-glass-door-handle/",
+      "url": "https://cantonlock.com/pt/products/glass-door-accessories/107-glass-door-handle/",
+      "finalUrl": "https://cantonlock.com/pt/products/glass-door-accessories/107-glass-door-handle/",
+      "checkedAt": "2026-09-29T11:40:53.423Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "107 Puxador para porta de vidro, 600mm, aço inoxidável 304 | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": false,
+      "drawingImagePresent": false,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__products__glass-door-accessories__107-glass-door-handle__.html"
+    },
+    {
+      "type": "control",
+      "prefix": "/pt",
+      "slug": "001-panic-exit-device-trim",
+      "pathname": "/pt/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "url": "https://cantonlock.com/pt/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "finalUrl": "https://cantonlock.com/pt/products/panic-exit-devices/001-panic-exit-device-trim/",
+      "checkedAt": "2026-09-29T11:40:53.333Z",
+      "status": 200,
+      "contentType": "text/html",
+      "title": "001 Maçaneta externa para barra antipânico, 300×75mm | Canton Hyland",
+      "mainPresent": true,
+      "drawingHeadingPresent": true,
+      "drawingImagePresent": true,
+      "pass": true,
+      "evidenceHtml": "C:\\hyde-photo-work\\tmp\\codex-public-product-final\\html\\pt__products__panic-exit-devices__001-panic-exit-device-trim__.html"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://cantonlock.com/images/product-studies/01-source-307-components-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 28808,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/01-source-307-components-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 11650,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/00-real-source-selection-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 30614,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/00-real-source-selection-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 12482,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/07-source-564-night-latch-and-rim-lock-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 33922,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/07-source-564-night-latch-and-rim-lock-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 12084,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/08-source-607-sset-tubular-lock-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 29730,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/08-source-607-sset-tubular-lock-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 11692,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/09-source-587-sset-light-duty-cylindrical-lock-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 30858,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/09-source-587-sset-light-duty-cylindrical-lock-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 11900,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/10-source-70bk-lock-cylinder-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 21646,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/10-source-70bk-lock-cylinder-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 8376,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/11-source-lc14-85-50mm-lock-case-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 22372,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/11-source-lc14-85-50mm-lock-case-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 8700,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/12-source-316-s-panic-exit-device-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 24434,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/12-source-316-s-panic-exit-device-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 9258,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/13-source-dc02-door-coordinator-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 25194,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/13-source-dc02-door-coordinator-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 9926,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/14-source-hyde-ar4-110-mortise-lock-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 23956,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/14-source-hyde-ar4-110-mortise-lock-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 8652,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/18-source-308-panic-exit-device-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 17198,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/18-source-308-panic-exit-device-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 6686,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/19-source-310-panic-exit-device-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 18100,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/19-source-310-panic-exit-device-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 6556,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/20-source-035-panic-exit-device-trim-1440.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 22278,
+      "pass": true
+    },
+    {
+      "url": "https://cantonlock.com/images/product-studies/20-source-035-panic-exit-device-trim-720.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "length": 8350,
+      "pass": true
+    }
+  ]
+}
