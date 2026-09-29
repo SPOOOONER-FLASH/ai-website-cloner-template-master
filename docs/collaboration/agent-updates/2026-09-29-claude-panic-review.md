@@ -24,3 +24,12 @@ refresh only. Summaries: the material was inserted into the existing translation
 (cylinders: solid brass; handles / tubular locks / grip sets: stainless steel or zinc alloy), only where
 it was missing; every non-cylinder result read by eye. 105 items × 7 merged, i18n-lint clean.
 Generator: tmp/claude-market/inject.cjs (scratch; the rules are in this note).
+
+## Follow-up 2: 28 floor springs / top pivots / top patches translated (same day)
+
+audit-locale-parity had all seven locales at 76% products vs es 80%: 28 records now on HYDE
+(D-10xx, D-30xx, D-50xx, DZ-20xx floor springs, top pivots, glass-door top patches) had no overlay.
+Translated name (glossary productNames), summary (three English templates → per-locale sentences),
+specs; 12 new spec labels added to each glossary. `scripts/lib/i18n-untranslatable.mjs` now treats
+hyphenated model codes ("D-1031.60 / D-1031.100", "DZ-2031") as untranslatable, like units — the
+merge refused the Variants / Pairs-with rows otherwise. i18n-lint clean, npm test green.
