@@ -82,6 +82,9 @@ const LABELS = {
   "Min door thickness": { es: "Espesor mín. de puerta", pt: "Espessura mín. da porta" },
   "Door leaf thickness": { es: "Espesor de la hoja", pt: "Espessura da folha" },
   "Body size": { es: "Medidas del cuerpo", pt: "Medidas do corpo" },
+  "Pairs with": { es: "Se combina con", pt: "Combina com" },
+  /* The hole cut in the floor for the cement case — "caja" / "caixa" would be the box. */
+  "Cut-out": { es: "Hueco de obra", pt: "Recorte no piso" },
 };
 
 /** Only "Yes" needs translating; everything else in these rows is a measurement. */
@@ -90,6 +93,7 @@ const VALUES = { Yes: { es: "Sí", pt: "Sim" }, No: { es: "No", pt: "Não" } };
 const NAME = {
   "Floor Spring": { es: "Muelle de piso", pt: "Mola de piso" },
   "Top Pivot": { es: "Pivote superior", pt: "Pivô superior" },
+  "Glass Door Top Patch": { es: "Herraje superior para puerta de vidrio", pt: "Ferragem superior para porta de vidro" },
 };
 
 const spec = (record, label) => (record.specs ?? []).find((s) => s.label === label)?.value;
@@ -110,6 +114,31 @@ function summaries(record) {
     };
   }
 
+  if (record.name === "Glass Door Top Patch") {
+    /*
+      The patch's decisive number is the glass it clamps, not a door weight — it carries
+      none. Where the record also names the floor spring it pairs with, that is said,
+      because a patch bought without its matching spring is the commonest way this set is
+      ordered wrong.
+    */
+    const glass = spec(record, "Glass thickness");
+    const pairs = spec(record, "Pairs with");
+    const en = [`${record.material} top patch fitting for frameless glass doors.`];
+    const es = [`Herraje superior de ${mat.es} para puertas de vidrio templado sin marco.`];
+    const pt = [`Ferragem superior em ${mat.pt} para portas de vidro temperado sem caixilho.`];
+    if (glass) {
+      en.push(`Glass thickness ${glass}.`);
+      es.push(`Espesor del vidrio ${glass}.`);
+      pt.push(`Espessura do vidro ${glass}.`);
+    }
+    if (pairs) {
+      en.push(`Pairs with ${pairs}.`);
+      es.push(`Se combina con ${pairs}.`);
+      pt.push(`Combina com ${pairs}.`);
+    }
+    return { en: en.join(" "), es: es.join(" "), pt: pt.join(" ") };
+  }
+
   const dbl = spec(record, "Double action") === "Yes";
   const weight = spec(record, "Max door weight");
   if (!weight) throw new Error(`${record.model}: floor spring with no Max door weight`);
@@ -120,29 +149,68 @@ function summaries(record) {
   };
 }
 
+/*
+ * Two scopes, deliberately different.
+ *
+ * THE PIVOT SET — floor springs, top pivots and the glass top patches — goes on HYDE, so
+ * it gets all three languages. These three belong together: a floor spring carries the
+ * leaf, a top pivot holds its head, and on frameless glass the patch is what the pivot
+ * clamps to. Selling one without the others is how this set gets ordered wrong.
+ *
+ * THE OVERHEAD CLOSERS get their English noun corrected and nothing else. They carried the
+ * same "pull handle" defect, which is live on RAYEN's English pages today and worth fixing
+ * wherever it sits — but they are not published on HYDE, so writing Spanish for them would
+ * be work for a page that does not exist. HYDE already has its own door-closers category;
+ * whether these six belong in it is a taxonomy decision, not a copy fix, and it is not
+ * made here.
+ *
+ * The 16 hydraulic hinges are untouched: their English is already correct.
+ */
+const PIVOT_SET = ["floor-springs", "top-pivots", "pivot-top-patches"];
+const EN_ONLY = ["overhead-door-closers"];
+
+/** Derived from the record's own specs, exactly as the pivot-set sentences are. */
+function closerSummaryEn(record) {
+  const doors = DOORS[(record.doorTypes ?? []).join(",")];
+  if (!doors) throw new Error(`No doorTypes mapping for ${record.model}`);
+  const dbl = spec(record, "Double action") === "Yes";
+  const weight = spec(record, "Max door weight") ?? spec(record, "Maximum door weight");
+  const base = `${record.material} ${dbl ? "double-action " : ""}overhead door closer for ${doors.en}.`;
+  return weight ? `${base} Max door weight ${weight}.` : base;
+}
+
 const stale = [];
 
-for (const file of readdirSync(DIR).filter((f) => /floor-spring|top-pivot/.test(f))) {
+for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   const path = `${DIR}/${file}`;
   const raw = readFileSync(path, "utf8");
   const record = JSON.parse(raw);
+  const [top, sub] = record.categoryPath ?? [];
+  if (top !== "floor-springs-and-pivots") continue;
+
   const next = { ...record };
-  const s = summaries(record);
 
-  next.summary = s.en;
-  next.summaryEs = s.es;
-  next.summaryPt = s.pt;
-  next.nameEs = NAME[record.name].es;
-  next.namePt = NAME[record.name].pt;
+  if (PIVOT_SET.includes(sub)) {
+    const s = summaries(record);
+    next.summary = s.en;
+    next.summaryEs = s.es;
+    next.summaryPt = s.pt;
+    next.nameEs = NAME[record.name].es;
+    next.namePt = NAME[record.name].pt;
 
-  const tr = (locale) =>
-    (record.specs ?? []).map(({ label, value }) => {
-      const l = LABELS[label];
-      if (!l) throw new Error(`No ${locale} translation for spec label "${label}" (${record.model})`);
-      return { label: l[locale], value: VALUES[value]?.[locale] ?? value };
-    });
-  next.specsEs = tr("es");
-  next.specsPt = tr("pt");
+    const tr = (locale) =>
+      (record.specs ?? []).map(({ label, value }) => {
+        const l = LABELS[label];
+        if (!l) throw new Error(`No ${locale} translation for spec label "${label}" (${record.model})`);
+        return { label: l[locale], value: VALUES[value]?.[locale] ?? value };
+      });
+    next.specsEs = tr("es");
+    next.specsPt = tr("pt");
+  } else if (EN_ONLY.includes(sub)) {
+    next.summary = closerSummaryEn(record);
+  } else {
+    continue;
+  }
 
   if (JSON.stringify(next) === JSON.stringify(record)) continue;
   stale.push(record.model);
@@ -153,8 +221,8 @@ for (const file of readdirSync(DIR).filter((f) => /floor-spring|top-pivot/.test(
 }
 
 if (CHECK && stale.length) {
-  console.error(`❌ ${stale.length} floor-spring/top-pivot records have stale copy: ${stale.slice(0, 6).join(", ")}…`);
+  console.error(`❌ ${stale.length} records in floor-springs-and-pivots have stale copy: ${stale.slice(0, 6).join(", ")}…`);
   console.error("   Run: npm run copy:floor-springs");
   process.exit(1);
 }
-console.log(CHECK ? "✅ floor-spring copy is current" : `floor springs & top pivots: ${stale.length} records rewritten`);
+console.log(CHECK ? "✅ floor-springs-and-pivots copy is current" : `floor-springs-and-pivots: ${stale.length} records rewritten`);

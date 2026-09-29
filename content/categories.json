@@ -605,7 +605,7 @@
       "slug": "floor-springs-and-pivots",
       "name": "Floor Springs and Door Pivots",
       "nameZh": "地弹簧与天地轴",
-      "summary": "Floor springs, top pivots, overhead closers and hydraulic hinges for pivot-hung timber, metal and frameless glass doors.",
+      "summary": "Concealed floor springs, adjustable top pivots and glass top patch fittings for pivot-hung timber, metal and frameless glass doors.",
       "image": {
         "src": "/images/products/d-5061-floor-spring.webp",
         "ratio": "1 / 1",
@@ -623,7 +623,9 @@
             "label": "D-5061 floor spring"
           },
           "nameEs": "Pivotes de piso",
-          "namePt": "Molas de piso"
+          "namePt": "Molas de piso",
+          "summaryEs": "Muelles de piso ocultos para puertas pivotantes.",
+          "summaryPt": "Molas de piso embutidas para portas pivotantes."
         },
         {
           "slug": "top-pivots",
@@ -636,7 +638,9 @@
             "label": "D-3010 top pivot"
           },
           "nameEs": "Pivotes superiores",
-          "namePt": "Pivôs superiores"
+          "namePt": "Pivôs superiores",
+          "summaryEs": "Pivotes superiores regulables, la mitad de arriba del juego pivotante.",
+          "summaryPt": "Pivôs superiores reguláveis, a metade de cima do conjunto pivotante."
         },
         {
           "slug": "pivot-top-patches",
@@ -649,7 +653,9 @@
             "label": "D-3017 glass door top patch"
           },
           "nameEs": "Herrajes superiores para vidrio",
-          "namePt": "Ferragens superiores para vidro"
+          "namePt": "Ferragens superiores para vidro",
+          "summaryEs": "Herrajes superiores que sujetan el vidrio sin marco al juego pivotante.",
+          "summaryPt": "Ferragens superiores que prendem o vidro sem caixilho ao conjunto pivotante."
         },
         {
           "slug": "overhead-door-closers",
@@ -679,9 +685,9 @@
         }
       ],
       "nameEs": "Pivotes de piso y ejes de puerta",
-      "summaryEs": "Pivotes de piso, pivotes superiores, cierrapuertas y bisagras hidráulicas para puertas pivotantes de madera, metálicas y de vidrio templado.",
+      "summaryEs": "Muelles de piso ocultos, pivotes superiores regulables y herrajes superiores para puertas pivotantes de madera, metálicas y de vidrio templado sin marco.",
       "namePt": "Molas de piso e pivôs",
-      "summaryPt": "Molas de piso, pivôs superiores, molas aéreas e dobradiças hidráulicas para portas pivotantes de madeira, metálicas e de vidro temperado."
+      "summaryPt": "Molas de piso embutidas, pivôs superiores reguláveis e ferragens superiores para portas pivotantes de madeira, metálicas e de vidro temperado sem caixilho."
     }
   ]
 }
