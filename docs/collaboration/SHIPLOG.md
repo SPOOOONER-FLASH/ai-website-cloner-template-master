@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 607 次提交
+最近 30 天 · 共 610 次提交
 
 ## 2026-09-29
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 05:55 | 中立 | 311 overlays: restore the sourceHash that matches the ABS English | `f77990f9f45` |
+| 05:53 | 中立 | Merge branch 'main' of https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master into eng-work | `0c6314617bb` |
+| 05:53 | HYDE | 311 恢复 ABS 配铝（甲方 09-29：「311 的是 abs 不动」） | `984509e1af0` |
 | 05:43 | 中立 | goal #114 #115：r18 = 659599d1ed6 已上线 | `5dcb67e1452` |
 | 05:31 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 67bf9e3751e | `659599d1ed6` |
 | 05:15 | 中立 | Regenerate client i18n bundles after the push-bar material change | `66006593f47` |
