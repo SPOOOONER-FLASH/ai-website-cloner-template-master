@@ -41,3 +41,5 @@ node scripts/design/check-bau-entry-origin.mjs --expect-ar4 --out tmp/codex-bau-
 ```
 
 This verifier connects directly to the configured origin with the production HTTPS hostname and certificate verification. It checks EN/DE homepages and BAU pages, linked JS/CSS/fonts, the restored AR4 hero/product images, and absence of the repeated flagship. Its `verification.json` can be archived here. It does not operate Cloudflare or submit forms.
+
+The archived `origin-verification.json` was generated on 2026-09-29 at 11:37 UTC, after the successful `bdb5523d715` HYDE release push. All four routes, 18 application assets and five original AR4 image assets passed. The origin was running HEAD `087bcfc3d31` at confirmation. The snapshot verifies the desired live content and links; it does not claim byte identity with the earlier cached export. Deployment details are recorded once in the urgent-release agent update.
