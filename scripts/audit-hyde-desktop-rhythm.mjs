@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Reproduce HYDE entrance spacing, viewport overflow, and critical-resource failures.
- * No dependencies, clicks, form submissions, or changes to the inspected site.
+ * Default audit makes no clicks, form submissions, or changes to the inspected site.
+ * --check-promo performs disclosure/dismissal clicks only on localhost; never clicks a CTA.
  *
  * node scripts/audit-hyde-desktop-rhythm.mjs --base http://127.0.0.1:4173
  * node scripts/audit-hyde-desktop-rhythm.mjs --page home,contact --width 1440
@@ -33,14 +34,19 @@ function optionsFromArgs(args) {
     out: "tmp/codex-desktop-browser",
     chrome: "C:/Program Files/Google/Chrome/Application/chrome.exe",
     settleMs: 800,
+    checkPromo: false,
     pages: Object.keys(PAGES),
     viewports: Object.values(VIEWPORTS),
   };
   for (let i = 0; i < args.length; i += 1) {
     const flag = args[i];
     if (flag === "--help") {
-      console.log("Usage: node scripts/audit-hyde-desktop-rhythm.mjs [--base URL] [--out DIR] [--page home,product-finder,guides,product-studies,contact] [--width 390,1440,1920 | WIDTHxHEIGHT] [--settle-ms 800] [--chrome PATH]");
+      console.log("Usage: node scripts/audit-hyde-desktop-rhythm.mjs [--base URL] [--out DIR] [--page home,product-finder,guides,product-studies,contact] [--width 390,1440,1920 | WIDTHxHEIGHT] [--settle-ms 800] [--check-promo (localhost only)] [--chrome PATH]");
       process.exit(0);
+    }
+    if (flag === "--check-promo") {
+      options.checkPromo = true;
+      continue;
     }
     const value = args[++i];
     if (!value || value.startsWith("--")) throw new Error(`Missing value for ${flag}`);
@@ -67,6 +73,8 @@ function optionsFromArgs(args) {
   }
   const base = new URL(options.base);
   if (!["http:", "https:"].includes(base.protocol)) throw new Error("Base must be an HTTP(S) URL");
+  if (options.checkPromo && !["localhost", "127.0.0.1", "[::1]"].includes(base.hostname)) throw new Error("--check-promo is allowed only on localhost; public sites remain read-only");
+  if (options.checkPromo) options.settleMs = Math.max(options.settleMs, 11000);
   options.base = base.href.endsWith("/") ? base.href : `${base.href}/`;
   options.out = path.resolve(options.out);
   return options;
@@ -169,6 +177,87 @@ const metricsExpression = `(() => {
   };
 })()`;
 
+const promoStateExpression = `(() => {
+  const aside = [...document.querySelectorAll('aside[aria-label]')].find(node => getComputedStyle(node).position === 'fixed');
+  if (!aside) return { present: false };
+  const details = aside.querySelector('details');
+  const summary = details?.querySelector('summary');
+  const close = aside.querySelector('button');
+  const content = details?.querySelector(':scope > div');
+  const cta = content?.querySelector('a[href]');
+  const bounds = node => {
+    if (!node) return null;
+    const box = node.getBoundingClientRect();
+    return { x: box.x, y: box.y, width: box.width, height: box.height };
+  };
+  const visible = node => {
+    if (!node) return false;
+    const box = node.getBoundingClientRect();
+    return box.width > 0 && box.height > 0 && getComputedStyle(node).visibility !== 'hidden';
+  };
+  const heroCta = document.querySelector('section[aria-roledescription="carousel"] .hero-caption-slide[data-active="true"] a[href]');
+  let heroCtaUnoccluded = false;
+  if (heroCta) {
+    const box = heroCta.getBoundingClientRect();
+    const centerX = box.x + box.width / 2;
+    const centerY = box.y + box.height / 2;
+    const inside = centerX >= 0 && centerX <= innerWidth && centerY >= 0 && centerY <= innerHeight;
+    const topNode = inside ? document.elementFromPoint(centerX, centerY) : null;
+    heroCtaUnoccluded = !!topNode && (heroCta.contains(topNode) || topNode.contains(heroCta));
+  }
+  return { present: true, nativeDetails: !!details, open: details?.open ?? null, rail: bounds(aside), close: bounds(close), summary: summary?.innerText.replace(/\\s+/g, ' ').trim() || null, contentVisible: visible(content) && !!content?.innerText.trim(), ctaVisible: visible(cta), ctaHref: cta?.getAttribute('href') || null, heroCtaUnoccluded };
+})()`;
+
+async function inspectPromo(client, options, filenameStem) {
+  // Guard the final browser URL too: a localhost route could redirect to production.
+  const hostname = await evaluate(client, "location.hostname");
+  if (!["localhost", "127.0.0.1", "[::1]"].includes(hostname)) throw new Error("Promo interaction refused after navigation left localhost");
+  const initial = await evaluate(client, promoStateExpression);
+  const checks = {
+    passiveRailPresent: initial.present,
+    nativeDetailsClosed: initial.nativeDetails && initial.open === false,
+    passiveHeightAtMost120: !!initial.rail && initial.rail.height <= 120,
+    closeHitAreaAtLeast44: !!initial.close && initial.close.width >= 44 && initial.close.height >= 44,
+    heroCtaUnoccluded: initial.heroCtaUnoccluded === true,
+  };
+  const proof = { initial, checks, screenshots: [] };
+  if (!initial.nativeDetails) return proof;
+  const click = selector => evaluate(client, `(() => {
+    const aside = [...document.querySelectorAll('aside[aria-label]')].find(node => getComputedStyle(node).position === 'fixed');
+    const node = aside?.querySelector(${JSON.stringify(selector)});
+    if (!node) return false;
+    node.click();
+    return true;
+  })()`);
+  const capture = async suffix => {
+    const filename = `${filenameStem}-${suffix}.png`;
+    const screenshot = await client.send("Page.captureScreenshot", { format: "png", captureBeyondViewport: false, fromSurface: true });
+    await writeFile(path.join(options.out, filename), Buffer.from(screenshot.data, "base64"));
+    proof.screenshots.push(filename);
+  };
+  await click("details > summary");
+  await delay(150);
+  proof.expanded = await evaluate(client, promoStateExpression);
+  checks.expandsWithVisibleContentAndCta = proof.expanded.open === true && proof.expanded.contentVisible && proof.expanded.ctaVisible;
+  await capture("promo-expanded");
+  await click("details > summary");
+  await delay(150);
+  proof.collapsed = await evaluate(client, promoStateExpression);
+  checks.collapsesToCompactRail = proof.collapsed.open === false && proof.collapsed.rail?.height <= 120;
+  await capture("promo-collapsed");
+  // Dismiss an expanded card: React must not carry the native open state into
+  // the next offer. A collapsed-only dismissal would miss this regression.
+  await click("details > summary");
+  await delay(150);
+  proof.reopened = await evaluate(client, promoStateExpression);
+  checks.reopensBeforeDismissal = proof.reopened.open === true;
+  await click("button");
+  await delay(350);
+  proof.afterDismiss = await evaluate(client, promoStateExpression);
+  checks.dismissesOrAdvancesCard = !proof.afterDismiss.present || (proof.afterDismiss.open === false && (proof.afterDismiss.summary !== initial.summary || proof.afterDismiss.ctaHref !== initial.ctaHref));
+  return proof;
+}
+
 async function inspectScenario(port, options, page, viewport) {
   const url = new URL(PAGES[page], options.base).href;
   const origin = new URL(url).origin;
@@ -239,6 +328,12 @@ async function inspectScenario(port, options, page, viewport) {
     if (!metrics.main) result.hardFailures.push("No main page content found");
     if (failedResources.some(resource => !resource.canceled)) result.hardFailures.push("Same-origin critical resource failure");
     if (pageErrors.length) result.hardFailures.push("Uncaught page exception");
+    if (options.checkPromo && page === "home") {
+      result.promoProof = await inspectPromo(client, options, `${page}-${viewport.width}x${viewport.height}`);
+      for (const [check, passed] of Object.entries(result.promoProof.checks)) {
+        if (!passed) result.hardFailures.push(`Promo check failed: ${check}`);
+      }
+    }
     return result;
   } finally {
     client.socket.close();
@@ -273,7 +368,7 @@ async function main() {
           result = { page, requestedViewport: viewport, hardFailures: [error.message] };
         }
         results.push(result);
-        console.log(JSON.stringify({ page, width: viewport.width, headerHeight: result.header?.height, mainY: result.main?.y, h1Y: result.h1?.y, scrollWidth: result.scrollWidth, visibleCtas: result.aboveFoldCtas?.map(cta => ({ label: cta.label, occluded: cta.occluded })), failures: result.hardFailures }));
+        console.log(JSON.stringify({ page, width: viewport.width, headerHeight: result.header?.height, mainY: result.main?.y, h1Y: result.h1?.y, scrollWidth: result.scrollWidth, visibleCtas: result.aboveFoldCtas?.map(cta => ({ label: cta.label, occluded: cta.occluded })), promoChecks: result.promoProof?.checks, failures: result.hardFailures }));
         await writeFile(path.join(options.out, "audit.json"), `${JSON.stringify({ generatedAt: new Date().toISOString(), base: options.base, results }, null, 2)}\n`);
       }
     }
