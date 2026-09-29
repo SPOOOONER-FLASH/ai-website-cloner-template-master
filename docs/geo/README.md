@@ -11,10 +11,10 @@
 
 这两把只看微软系（Copilot / Bing）。**ChatGPT、Perplexity、Gemini 此前没有任何测量**，这份基线补的就是这一块。
 
-## 这一把：37 个固定问题 × 4 个平台 × 3 次采样
+## 这一把：45 个固定问题 × 4 个平台 × 3 次采样
 
-- 问题集：`docs/geo/baseline-queries.json`（英 29 / 西 5 / 葡 3；制造商名单、OEM 采购、规格、对比、品牌五类意图）。
-- 打印空白记录表：`npm run geo:baseline -- --out tmp/geo-baseline-YYYY-MM-DD.csv`（444 行）。
+- 问题集：`docs/geo/baseline-queries.json`（英 37 / 西 5 / 葡 3；制造商名单、OEM 采购、规格、对比、品牌、型号级六类意图。09-28 文案会话在第一次记录前补了 oem-05–07 和 mdl-01–05：型号级问题只写产品特征、不写型号，看 AI 最后一步点谁）。
+- 打印空白记录表：`npm run geo:baseline -- --out tmp/geo-baseline-YYYY-MM-DD.csv`（540 行）。
 - 规则：
   1. **问题一旦记录过基线就不改字**。要加新问题，给新 id。
   2. ChatGPT 用临时聊天、开搜索；其他平台用未登录或无历史的会话。个性化答案不算数。

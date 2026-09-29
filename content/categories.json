@@ -324,7 +324,7 @@
       "name": "Deadbolts",
       "seoTitle": "Deadbolts, 25mm Throw, Single & Double Cylinder",
       "seoTitleEs": "Cerrojos de seguridad con pasador de 25 mm",
-      "seoTitlePt": "Fechaduras auxiliares com lingueta de 25 mm",
+      "seoTitlePt": "Fechaduras auxiliares com trava de 25 mm",
       "nameZh": "深栓锁",
       "summary": "Single- and double-cylinder deadbolts with a 25mm throw, an anti-saw roller insert and a 60/70mm adjustable backset.",
       "image": {
@@ -334,7 +334,7 @@
       },
       "nameEs": "Cerrojos",
       "summaryEs": "Cerrojos de cilindro simple y doble con proyección de 25 mm, inserto antisierra y entrada regulable de 60/70 mm.",
-      "namePt": "Trincos",
+      "namePt": "Travas",
       "summaryPt": "Trancas de cilindro simples e duplo com avanço de 25 mm, inserto antisserra e distância ao eixo ajustável de 60/70 mm."
     },
     {
@@ -527,7 +527,7 @@
             "label": "Door latch"
           },
           "nameEs": "Pestillos",
-          "namePt": "Linguetas"
+          "namePt": "Trincos"
         },
         {
           "slug": "security-door-guards",
@@ -563,7 +563,7 @@
       "nameEs": "Cerraduras de embutir",
       "summaryEs": "Cajas de cerradura de embutir en múltiples combinaciones de entrada, distancia entre ejes y pestillos.",
       "namePt": "Fechaduras de embutir",
-      "summaryPt": "Caixas de fechadura de embutir em várias combinações de backset, distância entre eixos e linguetas."
+      "summaryPt": "Caixas de fechadura de embutir em várias combinações de backset, distância entre eixos e ferrolhos."
     },
     {
       "slug": "lock-cylinders",
@@ -605,7 +605,7 @@
       "slug": "floor-springs-and-pivots",
       "name": "Floor Springs and Door Pivots",
       "nameZh": "地弹簧与天地轴",
-      "summary": "Floor springs, top pivots, overhead closers and hydraulic hinges for pivot-hung timber, metal and frameless glass doors.",
+      "summary": "Concealed floor springs, adjustable top pivots and glass top patch fittings for pivot-hung timber, metal and frameless glass doors.",
       "image": {
         "src": "/images/products/d-5061-floor-spring.webp",
         "ratio": "1 / 1",
@@ -623,7 +623,9 @@
             "label": "D-5061 floor spring"
           },
           "nameEs": "Pivotes de piso",
-          "namePt": "Molas de piso"
+          "namePt": "Molas de piso",
+          "summaryEs": "Muelles de piso ocultos para puertas pivotantes.",
+          "summaryPt": "Molas de piso embutidas para portas pivotantes."
         },
         {
           "slug": "top-pivots",
@@ -636,7 +638,9 @@
             "label": "D-3010 top pivot"
           },
           "nameEs": "Pivotes superiores",
-          "namePt": "Pivôs superiores"
+          "namePt": "Pivôs superiores",
+          "summaryEs": "Pivotes superiores regulables, la mitad de arriba del juego pivotante.",
+          "summaryPt": "Pivôs superiores reguláveis, a metade de cima do conjunto pivotante."
         },
         {
           "slug": "pivot-top-patches",
@@ -649,7 +653,9 @@
             "label": "D-3017 glass door top patch"
           },
           "nameEs": "Herrajes superiores para vidrio",
-          "namePt": "Ferragens superiores para vidro"
+          "namePt": "Ferragens superiores para vidro",
+          "summaryEs": "Herrajes superiores que sujetan el vidrio sin marco al juego pivotante.",
+          "summaryPt": "Ferragens superiores que prendem o vidro sem caixilho ao conjunto pivotante."
         },
         {
           "slug": "overhead-door-closers",
@@ -679,9 +685,9 @@
         }
       ],
       "nameEs": "Pivotes de piso y ejes de puerta",
-      "summaryEs": "Pivotes de piso, pivotes superiores, cierrapuertas y bisagras hidráulicas para puertas pivotantes de madera, metálicas y de vidrio templado.",
+      "summaryEs": "Muelles de piso ocultos, pivotes superiores regulables y herrajes superiores para puertas pivotantes de madera, metálicas y de vidrio templado sin marco.",
       "namePt": "Molas de piso e pivôs",
-      "summaryPt": "Molas de piso, pivôs superiores, molas aéreas e dobradiças hidráulicas para portas pivotantes de madeira, metálicas e de vidro temperado."
+      "summaryPt": "Molas de piso embutidas, pivôs superiores reguláveis e ferragens superiores para portas pivotantes de madeira, metálicas e de vidro temperado sem caixilho."
     }
   ]
 }

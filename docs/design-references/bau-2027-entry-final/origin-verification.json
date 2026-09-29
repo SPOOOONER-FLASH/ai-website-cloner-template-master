@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-09-29T11:37:33.875Z",
+  "hostname": "cantonlock.com",
+  "origin": "43.131.27.225",
+  "expectAr4": true,
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "sha256": "4be805a95346e66c5f40695888ac016ec9458fdb908e298afc7c740b0bd187ea"
+    },
+    {
+      "route": "/de/",
+      "status": 200,
+      "sha256": "202fe07d5e920d6ec11d7970eb06ce8fbe23a39b7f4e526feb0133cf95f91835"
+    },
+    {
+      "route": "/bau-2027/",
+      "status": 200,
+      "sha256": "87d16296b3764d65892d197be0b77d3d69b18923a2a921006f0abb9c25024234"
+    },
+    {
+      "route": "/de/bau-2027/",
+      "status": 200,
+      "sha256": "57b8d9514fdd17382e8069fe7a5050d07ecae287c9418c9f079c9f646d1ed196"
+    }
+  ],
+  "assets": [
+    {
+      "route": "/_next/static/chunks/3gylmvz_v6_4w.css",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/0uw22sweititz.css",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/0ogm0vc-s68p3.css",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/2ey_icn33wsjp.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/1attaky7thwr-.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/0dt1trawwiq2v.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/turbopack-0r7jr9j3wpvhb.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/33t46atd3n2zd.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/322z0y_b9wrag.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/2yo1y05f4ex9f.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/1e_ktfht-cg65.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/0n1hxliipskib.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/16rzg6lp9ofi5.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/36b_fuzc7uyob.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/2gsiize2txv88.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/3l2ktmc707d7a.js",
+      "status": 200
+    },
+    {
+      "route": "/_next/static/chunks/2b2ru1qgwg6nj.js",
+      "status": 200
+    }
+  ],
+  "photographs": [
+    {
+      "route": "/images/editorial/argentina-ar4-entry.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/images/products-hyde/argentina-ar4/hyde-ar4-110.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/images/products-hyde/argentina-ar4/hyde-ar4-140.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/images/products-hyde/argentina-ar4/hyde-ar4-101.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/images/products-hyde/argentina-ar4/hyde-ar4-1121.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    }
+  ]
+}

@@ -314,7 +314,7 @@ def cover(book: Book) -> None:
                      "Export Catalogue\n2026 · Edition 001",
                      fontname=BODY, fontsize=15, color=INK2, lineheight=1.5)
     p.insert_textbox(pymupdf.Rect(INNER, PH - 190, PW - OUTER - 140, PH - 90),
-                     "Canton Hyland Hardware Co., Ltd.\n"
+                     "Canton Hyland Hardware & Building Material Co., Ltd.\n"
                      "Zhongshan, Guangdong, China\n"
                      "cantonlock.com",
                      fontname=BODY, fontsize=9, color=INK2, lineheight=1.6)
@@ -592,7 +592,7 @@ def build(out: Path) -> Path:
 
     book.doc.set_metadata({
         "title": "HYDE Export Catalogue 2026 - Edition 001",
-        "author": "Canton Hyland Hardware Co., Ltd.",
+        "author": "Canton Hyland Hardware & Building Material Co., Ltd.",
         "subject": "Architectural door hardware",
         "keywords": "door hardware, panic exit device, mortise lock, lever handle, hinge",
     })

@@ -103,7 +103,7 @@ const ITEMS = {
   },
   "Where are your products manufactured?": {
     q: "Onde os seus produtos são fabricados?",
-    a: "Em Guangdong, China. A Canton Hyland Hardware (Group) Co., Ltd. fabrica ferragens para portas comerciais e residenciais desde 1998.",
+    a: "Em Guangdong, China. A Canton Hyland Hardware & Building Material Co., Ltd. fabrica ferragens para portas comerciais e residenciais desde 1998.",
   },
   "Do you export worldwide?": {
     q: "Vocês exportam para o mundo todo?",

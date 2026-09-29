@@ -3,6 +3,7 @@
   "title": "What OEM Actually Changes, and What It Does Not",
   "kind": "insight",
   "publishedAt": "2026-09-07",
+  "updatedAt": "2026-09-29",
   "summary": "Putting your brand on a lock is four separate decisions, not one, and only one of them costs real money. Three of them change nothing about the part. The fourth is the one that needs a mould.",
   "author": {
     "name": "Johnson Liu",
@@ -131,7 +132,7 @@
       },
       {
         "question": "Um produto de marca própria mantém a certificação do fabricante?",
-        "answer": "A evidência de ensaio do produto continua ligada ao número de modelo do fabricante, não à sua marca. Um certificado do nosso modelo não vai mencionar o seu modelo EX-200, então o inspetor vê dois números e nada que os ligue. Mantenha uma tabela de equivalência entre os seus números de modelo e os nossos, e cite os dois onde um certificado for mencionado. Mudar o mecanismo, a caixa ou a lingueta torna o produto novo para fins de ensaio; mudar a embalagem ou o acabamento não."
+        "answer": "A evidência de ensaio do produto continua ligada ao número de modelo do fabricante, não à sua marca. Um certificado do nosso modelo não vai mencionar o seu modelo EX-200, então o inspetor vê dois números e nada que os ligue. Mantenha uma tabela de equivalência entre os seus números de modelo e os nossos, e cite os dois onde um certificado for mencionado. Mudar o mecanismo, a caixa ou o trinco torna o produto novo para fins de ensaio; mudar a embalagem ou o acabamento não."
       },
       {
         "question": "O que preciso enviar para uma embalagem de marca própria?",
@@ -186,7 +187,7 @@
     "Um relatório de ensaio ou um certificado identifica o produto ensaiado pelo número de modelo do fabricante. O nosso próprio relatório de ensaio EN 1125, por exemplo, cobre um modelo, o KD070/30-290, conforme a nossa página de certificações. Se esse dispositivo fosse vendido com a sua marca como, digamos, o seu modelo EX-200, um inspetor com a sua documentação numa mão e o nosso relatório na outra veria dois números diferentes sem nada que os ligasse. O certificado seria autêntico e mesmo assim não responderia à pergunta.",
     "A solução é administrativa e barata, e deve ser feita já no primeiro pedido: mantenha uma tabela de equivalência que relacione cada um dos seus números de modelo ao nosso, e coloque os dois em toda documentação técnica onde um certificado for citado. Ela também protege você no sentido contrário: se um componente mudar do nosso lado, a tabela diz quais dos seus produtos são afetados.",
     "## O que não muda com a marca própria",
-    "Vale ter os limites claros, porque são a parte do OEM que mais se supõe e menos se pergunta. Trocar a marca de um produto de catálogo não muda como ele funciona nem com que norma foi ensaiado; a evidência continua ligada ao modelo para o qual foi emitida. Mudar a peça em si é diferente. Um perfil de maçaneta novo sobre um mecanismo existente costuma ser estético no efeito, mas uma caixa, uma lingueta ou um mecanismo alterados são um produto novo para fins de ensaio, e tudo o que um certificado cobria precisa ser revisto. O nosso artigo sobre por que o catálogo é tão amplo descreve essa sequência, e o artigo sobre o ferramental de uma nova barra antipânico mostra a planilha.",
+    "Vale ter os limites claros, porque são a parte do OEM que mais se supõe e menos se pergunta. Trocar a marca de um produto de catálogo não muda como ele funciona nem com que norma foi ensaiado; a evidência continua ligada ao modelo para o qual foi emitida. Mudar a peça em si é diferente. Um perfil de maçaneta novo sobre um mecanismo existente costuma ser estético no efeito, mas uma caixa, um trinco ou um mecanismo alterados são um produto novo para fins de ensaio, e tudo o que um certificado cobria precisa ser revisto. O nosso artigo sobre por que o catálogo é tão amplo descreve essa sequência, e o artigo sobre o ferramental de uma nova barra antipânico mostra a planilha.",
     "O prazo segue a mesma lógica. Uma mudança de embalagem ou de acabamento corre no prazo de catálogo, que começa em 30 dias a partir da confirmação do pedido. Uma matriz modificada soma o tempo da modificação. Um molde novo leva de três a cinco meses antes que a produção possa começar.",
     "## A amostra aprovada contra a qual tudo é julgado",
     "Todo programa de marca própria deveria ter uma referência física guardada pelas duas partes: uma amostra de pré-produção, aprovada por escrito, com o acabamento, a marca e a embalagem exatamente como serão produzidos. O primeiro pedido é conferido contra ela, e também cada reposição depois dele. Sem essa amostra, o segundo pedido é julgado contra a lembrança que alguém tem do primeiro, e pequenas variações de cor ou de marcação viram discussões em vez de medições.",

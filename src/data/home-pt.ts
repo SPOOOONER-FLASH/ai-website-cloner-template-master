@@ -60,7 +60,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Corredor de edifício público com divisórias envidraçadas e portas de evacuação",
       },
       title: "Caixas de fechadura",
-      body: "Caixas de fechadura por distância ao eixo, entre-eixos e tipo de lingueta, com cada medida escrita no milímetro para que a maçaneta, o cilindro e a contra-testa encaixem de primeira.",
+      body: "Caixas de fechadura por distância ao eixo, entre-eixos e tipo de trinco, com cada medida escrita no milímetro para que a maçaneta, o cilindro e a contra-testa encaixem de primeira.",
       linkLabel: "Ver caixas de fechadura",
       href: "/pt/products/lock-cases",
     },
@@ -75,7 +75,7 @@ export const teaser1: PageTeaserContent = {
         ratio: "1 / 1",
         src: "/images/editorial/hyde-real-lever-set-dark.webp",
         label:
-          "Conjunto completo de fechadura tubular com maçaneta sobre fundo escuro: duas maçanetas em roseta com o quadrado e o mecanismo à vista, a lingueta tubular, a contra-testa, a placa e três parafusos de fixação — todas as peças no mesmo acabamento",
+          "Conjunto completo de fechadura tubular com maçaneta sobre fundo escuro: duas maçanetas em roseta com o quadrado e o mecanismo à vista, o trinco tubular, a contra-testa, a placa e três parafusos de fixação — todas as peças no mesmo acabamento",
       },
       title: "Para distribuidores",
       subtitle: "Fornecimento a partir do catálogo de exportação da Canton Hyland",

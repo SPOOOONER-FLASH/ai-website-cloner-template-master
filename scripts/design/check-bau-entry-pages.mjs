@@ -9,6 +9,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.BAU_QA_PLAYWRIGHT || "playwright");
 const base = (process.argv[2] || "http://127.0.0.1:8769").replace(/\/$/, "");
 const output = path.resolve(process.argv[3] || "tmp/codex-bau-entry-qa");
+const expectAr4 = process.argv.includes("--expect-ar4");
 const locales = ["en", "es", "pt", "fr", "de", "ja", "ko", "tr", "ru", "ar"];
 const event = JSON.parse(await readFile("content/bau-2027.json", "utf8")).event;
 const home = (locale) => locale === "en" ? "/" : `/${locale}/`;
@@ -26,6 +27,14 @@ for (const locale of locales) {
     assert.match(block, /<a\b[^>]*href="\/bau-2027\/"/, `${locale}: English entrance`);
     assert.match(block, /<a\b[^>]*href="\/de\/bau-2027\/"/, `${locale}: German entrance`);
     assert.ok(block.includes(event.hall) && block.includes(event.stand), `${locale}: published stand`);
+  }
+  if (expectAr4) {
+    const block = html.match(/<section\b[^>]*data-content-module="argentina-ar4"[^>]*>[\s\S]*?<\/section>/)?.[0];
+    assert.ok(block, `${locale}: original AR4 section restored`);
+    assert.ok(html.indexOf('data-bau-showcase=""') < html.indexOf('data-content-module="argentina-ar4"'), `${locale}: AR4 follows BAU`);
+    for (const model of ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"]) assert.ok(block.includes(model), `${locale}: ${model}`);
+    assert.ok(block.includes("argentina-ar4-entry"), `${locale}: original hero`);
+    assert.doesNotMatch(html, /<h2\b[^>]*id="flagship-tooling-heading"/, `${locale}: repeated flagship removed`);
   }
 }
 for (const route of ["/bau-2027/", "/de/bau-2027/"]) {
@@ -62,6 +71,27 @@ try {
     const response = await page.goto(`${base}${home(locale)}`, { waitUntil: "networkidle" });
     assert.equal(response.status(), 200);
     await page.evaluate(() => document.fonts.ready);
+    if (expectAr4) {
+      const ar4 = page.locator('main [data-content-module="argentina-ar4"]');
+      assert.equal(await ar4.count(), 1, `${locale}: one restored AR4 module`);
+      assert.equal(await page.locator('main #flagship-tooling-heading').count(), 0, `${locale}: repeated flagship absent`);
+      // Load every real product plate, including those reached by the native phone rail.
+      for (const photo of await ar4.locator("img").all()) {
+        await photo.scrollIntoViewIfNeeded();
+        await photo.evaluate((img) => img.complete ? null : new Promise((resolve) => { img.onload = resolve; img.onerror = resolve; }));
+        assert.ok(await photo.evaluate((img) => img.complete && img.naturalWidth > 0), `${locale}/${width}: restored image loads`);
+      }
+      await ar4.evaluate((element) => {
+        for (const rail of element.querySelectorAll(".horizontal-snap")) rail.scrollLeft = 0;
+      });
+      await ar4.scrollIntoViewIfNeeded();
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), `${locale}/${width}: no page overflow`);
+      // A tall section capture must not include the sticky navigation overlay halfway through its hero.
+      if (screenshots.has(`${locale}-${width}`)) await ar4.screenshot({
+        path: path.join(output, `${locale}-${width}-ar4.png`),
+        style: ".sticky.top-0 { visibility: hidden !important; }",
+      });
+    }
     for (const selector of sections) {
       const section = page.locator(selector);
       await section.scrollIntoViewIfNeeded();
@@ -122,4 +152,4 @@ try {
   await browser.close();
   await writeFile(path.join(output, "results.json"), JSON.stringify(results, null, 2) + "\n");
 }
-console.log(`BAU entry QA passed: 10 initial HTML homepages, EN/DE forms, ${cases.length} browser states, real links and preserved sticky navigation.`);
+console.log(`BAU entry QA passed: 10 initial HTML homepages, EN/DE forms, ${cases.length} browser states, real links and preserved sticky navigation${expectAr4 ? ", original AR4 restored and repeated flagship removed" : ""}.`);

@@ -35,6 +35,13 @@ export interface CategoryFacts {
   materials?: string;
   finishes?: string;
   functions?: string;
+  /**
+   * Leaf capacity, as a list rather than a millimetre range.
+   *
+   * `rangeFact` reads millimetres, and a floor spring states its capacity in kilograms
+   * per variant ("60kg / 100kg"), so a range fact would silently return nothing here.
+   */
+  leafWeight?: string;
 }
 
 const RANGE_KEY: Record<string, keyof CategoryFacts> = {
@@ -52,6 +59,7 @@ const LIST_FACTS: Array<{ key: keyof CategoryFacts; labels: string[] }> = [
   { key: "materials", labels: ["Material"] },
   { key: "finishes", labels: ["Finish", "Finishes", "Surface Finish"] },
   { key: "functions", labels: ["Function"] },
+  { key: "leafWeight", labels: ["Max door weight", "Maximum door weight"] },
 ];
 
 const MIN_STATED = 3;

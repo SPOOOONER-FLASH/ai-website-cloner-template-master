@@ -51,7 +51,7 @@ def write_intro(ws, payload, row=1):
     ws.cell(
         row=row,
         column=1,
-        value="Canton Hyland Hardware (Group) Co., Ltd.  ·  cantonlock.com"
+        value="Canton Hyland Hardware & Building Material Co., Ltd.  ·  cantonlock.com"
         + payload["meta"]["article"],
     ).font = Font(size=9, color=MUTED)
     row += 2

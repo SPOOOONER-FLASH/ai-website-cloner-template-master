@@ -362,6 +362,76 @@ export const CATEGORY_GUIDES: Record<string, CategoryGuide> = {
       ORDERING,
     ],
   },
+  /*
+    Added 2026-09-29, when the pivot set was published on HYDE (client: 「地弹簧放到 HYDE
+    网站上」). The three sub-families are one purchase and the guide says so: the spring
+    carries the leaf, the top pivot holds its head, and on frameless glass the patch is
+    what the pivot clamps to. The commonest way this set is ordered wrong is one part at
+    a time, so the first question below is which parts, not which model.
+
+    No fire rating and no standard number is claimed. The closing-force rows say EN3/EN4
+    because that is what the factory printed on the spec; that is a force band, not a
+    certification, and the answer below does not let it read as one.
+  */
+  "floor-springs-and-pivots": {
+    intro: {
+      en: "A floor spring manufacturer in China supplying concealed floor springs, adjustable top pivots and glass top patch fittings for pivot-hung timber, metal and frameless glass doors. Buyers select by leaf weight and door width, then add the matching top pivot and, on glass, the patch. {count} models, made in our own plant, for wholesale and project supply.",
+      es: "Fabricante de muelles de piso en China que suministra muelles de piso ocultos, pivotes superiores regulables y herrajes superiores para puertas pivotantes de madera, metal y vidrio templado sin marco. Los compradores eligen por peso de hoja y ancho de puerta, y añaden el pivote superior correspondiente y, en vidrio, el herraje. {count} modelos, fabricados en nuestra planta, para mayoreo y proyectos.",
+      pt: "Fabricante de molas de piso na China que fornece molas de piso embutidas, pivôs superiores reguláveis e ferragens superiores para portas pivotantes de madeira, metal e vidro temperado sem caixilho. Os compradores escolhem por peso da folha e largura da porta, e acrescentam o pivô superior correspondente e, no vidro, a ferragem. {count} modelos, feitos em nossa fábrica, para atacado e projetos.",
+    },
+    items: [
+      {
+        question: {
+          en: "Which parts do I need for one pivot-hung door?",
+          es: "¿Qué piezas necesito para una puerta pivotante?",
+          pt: "De quais peças preciso para uma porta pivotante?",
+        },
+        answer: {
+          en: "Three, and they are ordered together: the floor spring that carries and closes the leaf, the top pivot that holds its head, and — on frameless glass only — the top patch the pivot clamps to. Each patch record names the spring it pairs with. A spring ordered without its pivot is the commonest way this set arrives incomplete, and the parts are not interchangeable between models.",
+          es: "Tres, y se piden juntas: el muelle de piso que carga y cierra la hoja, el pivote superior que sujeta su cabeza y —sólo en vidrio sin marco— el herraje superior al que el pivote se sujeta. Cada ficha de herraje indica el muelle con el que se combina. Pedir el muelle sin su pivote es la forma más común de que el juego llegue incompleto, y las piezas no son intercambiables entre modelos.",
+          pt: "Três, e são pedidas juntas: a mola de piso que sustenta e fecha a folha, o pivô superior que segura a cabeça dela e — só no vidro sem caixilho — a ferragem superior à qual o pivô se prende. Cada registro de ferragem diz com qual mola ele combina. Pedir a mola sem o pivô é o jeito mais comum de o conjunto chegar incompleto, e as peças não são intercambiáveis entre modelos.",
+        },
+      },
+      {
+        question: {
+          en: "How do I choose by door weight?",
+          es: "¿Cómo elijo según el peso de la puerta?",
+          pt: "Como escolho pelo peso da porta?",
+        },
+        answer: {
+          en: "Every spring publishes its capacity per variant — {leafWeight} — and a model number ending in the figure is that variant. Pick the band above your leaf weight, not the one it just fits: glass is heavier than it looks, and a spring at its limit closes slowly and wears early. Confirm the door width on the record as well, because a wide light leaf can exceed a spring the weight alone would have passed.",
+          es: "Cada muelle publica su capacidad por variante —{leafWeight}— y el número de modelo termina en esa cifra. Elija la banda por encima del peso de su hoja, no la que apenas lo admite: el vidrio pesa más de lo que parece, y un muelle al límite cierra lento y se desgasta antes. Confirme también el ancho de puerta en la ficha, porque una hoja ancha y ligera puede superar un muelle que el peso solo habría aprobado.",
+          pt: "Cada mola publica a capacidade por variante — {leafWeight} — e o número do modelo termina nessa cifra. Escolha a faixa acima do peso da sua folha, não a que ele mal cabe: o vidro pesa mais do que parece, e uma mola no limite fecha devagar e se desgasta antes. Confirme também a largura da porta no registro, porque uma folha larga e leve pode ultrapassar uma mola que o peso sozinho teria aprovado.",
+        },
+        needs: ["leafWeight"],
+      },
+      {
+        question: {
+          en: "Is there hold-open, and can the closing speed be set?",
+          es: "¿Hay retención y se puede regular la velocidad de cierre?",
+          pt: "Há retenção e dá para regular a velocidade de fechamento?",
+        },
+        answer: {
+          en: "Each record states its maximum opening angle and whether 90° hold-open is offered; the two-stage valve sets closing and latching speed separately. Hold-open must not be specified on a fire door, which has to close every time. The closing-force figures are force bands, not a certification — test reports are published per model on the certificates page, and a model without one is not described as rated.",
+          es: "Cada ficha indica el ángulo máximo de apertura y si hay retención a 90°; la válvula de dos tiempos regula por separado la velocidad de cierre y la de golpe final. La retención no debe especificarse en una puerta cortafuego, que tiene que cerrar siempre. Las cifras de fuerza de cierre son bandas de fuerza, no una certificación: los informes de ensayo se publican por modelo en la página de certificados, y un modelo sin informe no se presenta como apto.",
+          pt: "Cada registro diz o ângulo máximo de abertura e se há retenção a 90°; a válvula de dois estágios regula separadamente a velocidade de fechamento e a de encosto. A retenção não deve ser especificada em porta corta-fogo, que precisa fechar sempre. Os números de força de fechamento são faixas de força, não uma certificação: os relatórios de ensaio são publicados por modelo na página de certificados, e um modelo sem relatório não é apresentado como apto.",
+        },
+      },
+      {
+        question: {
+          en: "What has to be right in the floor before the spring arrives?",
+          es: "¿Qué debe estar bien en el piso antes de que llegue el muelle?",
+          pt: "O que precisa estar certo no piso antes de a mola chegar?",
+        },
+        answer: {
+          en: "The cut-out. Each record gives the size of the hole the cement case sits in, and it is set in the slab before the floor finish goes down — a spring is the one item on this list that cannot be adjusted on site afterwards. Take the cut-out from the record for the exact model you ordered, not from a similar one, and check the spindle height against your finished floor level.",
+          es: "El hueco de obra. Cada ficha da la medida del hueco en que se aloja la caja de cemento, y se deja en la losa antes del acabado del piso: el muelle es lo único de esta lista que después no se puede ajustar en obra. Tome el hueco de la ficha del modelo exacto que pidió, no de uno parecido, y compruebe la altura del eje contra su nivel de piso terminado.",
+          pt: "O recorte no piso. Cada registro dá a medida do recorte em que a caixa de cimento se aloja, e ele é deixado na laje antes do acabamento do piso — a mola é o único item desta lista que depois não dá para ajustar na obra. Tire o recorte do registro do modelo exato que você pediu, não de um parecido, e confira a altura do eixo contra o seu nível de piso acabado.",
+        },
+      },
+      ORDERING,
+    ],
+  },
   "door-closers": {
     intro: {
       en: "A door closer manufacturer in China supplying overhead closers with aluminum bodies for commercial, office and fire doors, plus a floor hinge for timber doors. Buyers select by door width and leaf weight, then ask for a double-door coordinator where a pair must close in order. {count} models, made in our own plant.",

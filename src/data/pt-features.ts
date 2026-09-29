@@ -288,9 +288,9 @@ export const FEATURE_LINES_PT: Record<string, string> = {
     "Desenho europeu tradicional, sem mão",
   "Square spindle: 8×8mm or 9×9mm": "Quadrado: 8×8 mm ou 9×9 mm",
   "Single Cylinder: Operated by key and inside knob, with anti-pick slide gate":
-    "Cilindro simples: acionado por chave e pelo pomo interno, com lingueta antiabertura",
+    "Cilindro simples: acionado por chave e pelo pomo interno, com trinco antiabertura",
   "Single Cylinder: Operated by key and inside knob; includes anti-pick slide gate":
-    "Cilindro simples: acionado por chave e pelo pomo interno; inclui lingueta antiabertura",
+    "Cilindro simples: acionado por chave e pelo pomo interno; inclui trinco antiabertura",
   "Double Cylinder: Operated by key from both inside and outside":
     "Cilindro duplo: acionado por chave por dentro e por fora",
   "Durable construction with an attractive finish":
@@ -303,7 +303,7 @@ export const FEATURE_LINES_PT: Record<string, string> = {
   "Suitable for wooden or metal doors (interior/exterior)":
     "Indicada para portas de madeira ou de metal (interna/externa)",
   "Secure deadbolt and bronze slide latch system":
-    "Trava segura e sistema de lingueta deslizante em bronze",
+    "Trava segura e sistema de trinco deslizante em bronze",
   "Includes rectangular steel pin for added strength":
     "Inclui pino retangular de aço para maior resistência",
   "Classic key operation with separate cylinder":
@@ -600,7 +600,7 @@ export const FEATURE_LINES_PT: Record<string, string> = {
   "Angled strike (standard) for inward-opening doors":
     "Contra-testa angular (padrão) para portas de abertura para dentro",
   "Single Cylinder: Key and inside knob operate latch, with anti-pick slide gate":
-    "Cilindro simples: chave e pomo interno acionam o trinco, com lingueta antiabertura",
+    "Cilindro simples: chave e pomo interno acionam o trinco, com trinco antiabertura",
   "Double Cylinder: Key operation from both sides":
     "Cilindro duplo: operação por chave pelos dois lados",
   "Double Cylinder: Operated by key on both sides":
@@ -690,7 +690,7 @@ export const FEATURE_LINES_PT: Record<string, string> = {
   "Supports master keying for family or facility needs":
     "Aceita chave-mestra para necessidades familiares ou prediais",
   "Solid steel chassis and zinc-plated latch case for corrosion resistance":
-    "Chassi de aço maciço e caixa de trinco zincada, para resistência à corrosão",
+    "Chassi de aço maciço e caixa de trinco zincado, para resistência à corrosão",
   "Solid steel chassis and latch case, zinc-plated for corrosion resistance":
     "Chassi e caixa do trinco em aço maciço, zincados para resistência à corrosão",
   "Latch bolt operated by key (outside) or knob (inside)":

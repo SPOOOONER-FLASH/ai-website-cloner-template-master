@@ -182,5 +182,30 @@
 
 - `13ccca544f8` shiplog: 更新上线存档
 - `0dba9b4ca5e` fix: keep compact homepage offers clear of hero actions
+## 2026/9/28 23:08:44 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging package.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `dbb05084861` shiplog: 更新上线存档
+- `44b4c7ab034` feed 的 <language> 去掉没人决定过的地区码；runbook 换成实测命令
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/29 01:48:44 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `8de4215bb6b`（源码 a4207a6949c）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/9/29 05:58:17 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in public/search-index.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `1eb2ac7555c` shiplog: 更新上线存档
+- `f77990f9f45` 311 overlays: restore the sourceHash that matches the ABS English
+- `0c6314617bb` Merge branch 'main' of https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master into eng-work
+- `984509e1af0` 311 恢复 ABS 配铝（甲方 09-29：「311 的是 abs 不动」）
 
 下一次 `npm run ship` 成功时这些会一起推上去。

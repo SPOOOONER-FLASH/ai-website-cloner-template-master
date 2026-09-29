@@ -306,9 +306,10 @@ export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
           {/*
             The copyright line is now content, not a literal — and fixing that surfaced a
             real inconsistency: this line said "Canton Hyland Hardware & Locks Co.,Ltd."
-            while src/data/site.ts said "Canton Hyland Hardware (Group) Co., Ltd." Two
-            company names on one site. The (Group) form matches the client's own English
-            profile, so that is the one kept, and there is now a single place to edit it.
+            while src/data/site.ts said "Canton Hyland Hardware & Building Material Co., Ltd." Two
+            company names on one site, and a third on the BAU 2027 registration. On
+            2026-09-28 the client gave the legal name: "Canton Hyland Hardware & Building
+            Material Co., Ltd." — site-settings.json carries it, the single place to edit it.
           */}
           <p className="mt-48 border-t border-line pt-16 text-c2 text-ink-secondary">
             {siteSettings.copyright}

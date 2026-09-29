@@ -10,7 +10,10 @@ export const BRAND = /^(HYDE|STAHLOCK|Canton Hyland(?: Hardware\s*\(Group\) Co\.
 /* Lookarounds rather than \b: "70mm" has no word boundary between the digit and the unit, so
    the ko/tr writers were refused on figures-only values on 2026-09-27 and had to respace them. */
 export const UNIT_WORDS = /(?<![A-Za-z])(mm|cm|m|kg|g|N·?m|Nm|N|kN|dB|°C|inch|inches|EN|DIN|ANSI|BHMA|UL|CE|ISO|SS|SUS|AISI|PVD|OEM|ODM|MOQ|PC|PCS|CTN|USD|RMB|HRC|IP\d+)(?![A-Za-z])/g;
-export const untranslatable = (en) => BRAND.test(en.trim()) || !/\p{L}/u.test(en.replace(UNIT_WORDS, ""));
+/* Hyphenated model codes and their variants ("D-1031.60 / D-1031.100", "DZ-2031"): the
+   floor springs' Variants and Pairs-with rows are nothing else, and were refused on 2026-09-29. */
+export const MODEL_CODES = /(?<![A-Za-z])[A-Z]{1,3}-\d[\d.]*[A-Z]?(?![A-Za-z])/g;
+export const untranslatable = (en) => BRAND.test(en.trim()) || !/\p{L}/u.test(en.replace(MODEL_CODES, "").replace(UNIT_WORDS, ""));
 
 /*
   Ordinary words that some languages spell exactly as English does — "Aluminium" in French

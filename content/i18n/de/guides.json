@@ -64,7 +64,7 @@
   },
   "brass-alloys-and-dezincification-2026": {
     "title": "Messingbeschläge 2026: Welches Messing, warum Blei darin ist und der eine Schadensmechanismus, der über Küstenprojekte entscheidet",
-    "summary": "„Massivmessing“ bezeichnet eine Familie von Legierungen, die sich unterschiedlich verhalten – und der wichtigste Unterschied ist, ob die Legierung entzinkungsbeständig ist. Diese Seite stellt die Messingsorten für Türbeschläge vor, erklärt, warum die meisten Blei enthalten und was bleiarme Alternativen kosten, beschreibt die Entzinkung und wo DZR-Messing wirklich nötig ist, grenzt Messing von Bronze ab und zählt, was unser eigener Katalog veröffentlicht.",
+    "summary": "Ab etwa 37 % Zink wird Messing anfälliger für Entzinkung. Ein Zylinder in einer Außentür, vor allem in Küstennähe, sollte deshalb aus entzinkungsbeständigem DZR-Messing (CZ132 oder CW602N) sein; eine trockene Innentür braucht das nicht. Diese Seite stellt die Messingsorten für Türbeschläge vor, erklärt, warum die meisten Blei enthalten und was bleiarme Alternativen kosten, beschreibt die Entzinkung und wann DZR-Messing wirklich nötig ist, grenzt Messing von Bronze ab und zählt, was unser eigener Katalog veröffentlicht.",
     "seoTitle": "Messingbeschläge: Legierung, Blei, DZR | Canton Hyland",
     "seoDescription": "Welche Messinglegierungen Türbeschläge nutzen, warum Blei zugesetzt wird, was Entzinkung ist, wann DZR-Messing nötig ist und Messing gegenüber Bronze.",
     "body": [
@@ -151,7 +151,7 @@
     ],
     "sourceHash": {
       "title": "a1a9ad3d23f9",
-      "summary": "27d2eb1c5b9e",
+      "summary": "bfaef2c3e67a",
       "seoTitle": "6b4550ca54ee",
       "seoDescription": "d2c2fe2477c0",
       "body": "00b316df6465",
@@ -245,7 +245,7 @@
     "sourceHash": {
       "title": "44cb79616657",
       "summary": "63892f788aae",
-      "seoTitle": "35c004da3cb5",
+      "seoTitle": "d10d38f8a8f3",
       "seoDescription": "092e11d1aec4",
       "body": "57e62f3e9f1a",
       "faq": "fc86e6f3ef20"
@@ -728,7 +728,7 @@
     "sourceHash": {
       "title": "02121f32bf17",
       "summary": "c052dc39cc77",
-      "seoTitle": "34edf915b52d",
+      "seoTitle": "2829afb6472a",
       "seoDescription": "e5a4424a0d26",
       "body": "758851cc7e22",
       "faq": "b42c916771b4"
@@ -884,7 +884,7 @@
     "sourceHash": {
       "title": "0940f1649707",
       "summary": "123e64582159",
-      "seoTitle": "7a2193d4b314",
+      "seoTitle": "cdc77c60bb8f",
       "seoDescription": "10577d7b7cb0",
       "body": "2ffdc192dfcd",
       "faq": "523500ce46eb"
@@ -1184,7 +1184,7 @@
   },
   "door-thickness-to-cylinder-length-2026": {
     "title": "Von der Türdicke zur Zylinderlänge 2026: Die Rechnung, eine Nachschlagetabelle und warum meist aufgerundet wird",
-    "summary": "Einen Profilzylinder zu bemessen ist eine Subtraktion und eine Rundung – und bei der Rundung geht es schief. Diese Seite zeigt die Rechnung, eine Nachschlagetabelle nach Türdicke, durchgerechnet für die neun Längen, die wir tatsächlich veröffentlichen, erklärt, warum auch eine dünne Tür einen überstehenden Zylinder bekommt, und zeigt, was sich ändert, wenn der Schlosskasten nicht mittig im Türblatt sitzt.",
+    "summary": "Jede Hälfte eines Profilzylinders entspricht der halben Türstärke plus der Rosettenstärke auf dieser Seite, aufgerundet auf das 5-mm-Raster, das bei 27,5 mm beginnt: Eine 40-mm-Tür mit 4-mm-Rosetten ergibt 55 mm und wird als 56 mm bestellt. Diese Seite zeigt die Rechnung und eine Tabelle nach Türstärke, gerechnet mit den neun Längen, die wir tatsächlich veröffentlichen, erklärt, warum auch eine dünne Tür einen überstehenden Zylinder bekommt, und zeigt, was sich ändert, wenn der Schlosskasten nicht mittig im Türblatt sitzt.",
     "seoTitle": "Türdicke und Zylinderlänge: Tabelle | Canton Hyland",
     "seoDescription": "So berechnen Sie die Profilzylinderlänge aus der Türdicke: Tabelle für neun veröffentlichte Längen und warum dünne Türen trotzdem Überstand haben.",
     "body": [
@@ -1264,7 +1264,7 @@
     ],
     "sourceHash": {
       "title": "77e639df99fe",
-      "summary": "13a48570611b",
+      "summary": "407e17d1373d",
       "seoTitle": "4198d0f68dd3",
       "seoDescription": "1f59c1513cd8",
       "body": "32e94f37c71b",
@@ -1504,36 +1504,35 @@
   },
   "exit-device-comparison-2026": {
     "title": "Panikverschlüsse im Vergleich 2026: Jede Panikstange des Sortiments nach Länge, Verriegelung und Tür",
-    "summary": "44 Datensätze gehören zu unserer Familie der Panikverschlüsse, und nur 27 davon sind Panikverschlüsse. Hier stehen sie in drei Tabellen (einflügelige Türen, zweiflügelige Türen, Sonderzwecke), gebaut aus ihren Spezifikationszeilen, mit den fehlenden und den widersprüchlichen Zeilen benannt.",
+    "summary": "44 Datensätze gehören zu unserer Familie der Panikverschlüsse, und nur 27 davon sind Panikverschlüsse. Bis auf den 315 und den 311 aus ABS mit Aluminium haben alle einen Körper aus Aluminiumlegierung und eine Druckstange aus Eisen; die drei Tabellen (einflügelige Türen, zweiflügelige Türen, Sonderzwecke) vergleichen daher, was sich unterscheidet, und benennen die fehlenden Zeilen.",
     "seoTitle": "Panikverschlüsse: Längen und Verriegelung | Canton Hyland",
     "seoDescription": "Alle Panikverschlüsse nebeneinander: Stangenlängen von 650 bis 1110mm, einflügelige Türen, zweiflügelige mit Verriegelung oben und unten, Alarm, Kühlraum.",
     "body": [
       "Eine Suche nach Panikstangen auf der Website eines Lieferanten liefert meist eine Wand nahezu identischer Fotos: eine rote oder silberne Stange, ein graues Gehäuse, eine Modellnummer. Die Unterschiede, die entscheiden, ob ein Gerät zur Tür passt, stehen in den Spezifikationszeilen, und auf den meisten Websites sind sie über Dutzende Seiten verteilt. Dieser Leitfaden stellt jeden Panikverschluss unseres Katalogs mit Stand 23. September 2026 auf eine Seite, damit der Vergleich in wenigen Minuten gelingt statt an einem Nachmittag.",
       "Zunächst, was die Familie tatsächlich enthält. Es gibt 44 veröffentlichte Datensätze in unserer Familie der Panikverschlüsse, und 27 davon sind Panikverschlüsse. Die übrigen 17 sind die zugehörigen Teile: 16 Außenbeschläge (der Drücker oder Griff auf der Zugseite der Tür) und ein Schlosskasten für den 307. Außenbeschläge haben auf dieser Website einen eigenen Leitfaden, und die Schließfolgeregler, die zweiflügelige Türen brauchen, sind beim Beschlagzubehör aufgeführt; diese Seite handelt von den Geräten.",
       "SO LESEN SIE DIE TABELLEN",
-      "Jede Zelle stammt aus einer Spezifikationszeile der Produktseite. Wo ein Gerät eine Zeile veröffentlicht, zeigt die Tabelle sie in den Worten des Datensatzes; wo nicht, steht in der Zelle „nicht veröffentlicht“. Längen sind die veröffentlichten Stangenlängen in Millimetern mit Zoll daneben. Der Werkstoff ist die veröffentlichte Werkstoffzeile, die nicht immer mit dem einzeiligen Werkstofffeld oben auf der Seite übereinstimmt; wo beide sich widersprechen, sagt dieser Leitfaden das, statt eines auszuwählen.",
+      "Jede Zelle stammt aus einer Spezifikationszeile der Produktseite. Wo ein Gerät eine Zeile veröffentlicht, zeigt die Tabelle sie in den Worten des Datensatzes; wo nicht, steht in der Zelle „nicht veröffentlicht“. Längen sind die veröffentlichten Stangenlängen in Millimetern mit Zoll daneben. Eine Werkstoffspalte gibt es nicht: Bis auf den 315, der aus Eisen ist, und den 311 aus ABS mit Aluminium haben alle Geräte hier einen Körper aus Aluminiumlegierung und eine Druckstange aus Eisen.",
       "Von den 27 Geräten veröffentlichen 13 eine Länge. Das ist die wichtigste Zeile bei einer Panikstange, denn die Stange muss zum Flügel passen, an dem sie montiert wird – und es ist die Zeile, die Einkäufer uns am häufigsten nicht mitschicken. Unser Artikel zur Länge von Panikstangen erklärt, wie Sie den Flügel messen, damit die Längenfrage eine Antwort hat.",
       "EINFLÜGELIGE TÜREN: GERÄTE MIT VERÖFFENTLICHTER LÄNGE",
       "Das sind die aufliegenden Panikstangen für einen Flügel, die ihre Länge veröffentlichen. Ein Aufschraubgerät verriegelt in ein Schließblech an der Zarge auf der Schlossseite, an einem Punkt, und ist die übliche Wahl für eine einflügelige Rettungstür.",
-      "| Modell | Stangenlänge | Länge | Werkstoffzeile | Außerdem veröffentlicht |\n| --- | --- | --- | --- | --- |\n| 300 | 900mm (35-7/16\") | verstellbar | Eisen mit ABS | rote Oberfläche; der Datensatz nennt einen Feuerwiderstand von 1,5 Stunden |\n| 302 | 1040mm (40-15/16\") | verstellbar | Edelstahl und Eisen | umkehrbar für DIN links oder rechts |\n| 303 | 900mm (35-7/16\") | fest | Stahl oder Edelstahl, innen Eisen | Nickel matt, Chrom, Messing antik, Messing poliert |\n| 305 | 1040mm (40-15/16\") | fest | Eisen und Aluminium | spritzlackiert; unter Feuerschutztüren gelistet |\n| 307 | 1000mm (39-3/8\") | fest | ABS mit Aluminium-Druckstange | passt zum Schlosskasten 072; der Datensatz nennt 2,5 Stunden; umkehrbar |\n| 308 | 1050mm (41-5/16\") | fest | Edelstahl 304 | Platte 165 × 55mm, Überstand 99mm |\n| 310 | 900mm (35-7/16\") | fest | Eisen | rot oder schwarz; der Datensatz nennt einen Feuerwiderstand von 1,5 Stunden |\n| 311 | 900mm (35-7/16\") | fest | ABS mit Aluminium | als Set mit Schlosskörper, Messingzylinder und Edelstahldrücker verkauft; Zylinderentfernung 72 und 92mm |\n| 330 | nach Maß | auf Bestellung | Eisen mit Eisenrohr | rot oder schwarz |",
-      "Zwei Gruppen verdienen einen Hinweis. Der 307 und der 311 sind keine Aufschraubgeräte im üblichen Sinn: Beide arbeiten mit einem Einsteckschlosskörper in der Tür, der 307 mit unserem Kasten 072 (65mm Dornmaß, 72mm Entfernung, zwei Profilzylinderöffnungen), der 311 als komplettes Set. Wählen Sie eines davon, wenn die Tür ein Einsteckschloss und außen einen Schließzylinder hat oder braucht. Und der 308 ist das einzige Gerät für einflügelige Türen aus Edelstahl, das seinen Überstand veröffentlicht, 99mm – der Wert, den Sie bei einer Tür prüfen sollten, die in einen schmalen Flur aufschlägt.",
+      "| Modell | Stangenlänge | Länge | Außerdem veröffentlicht |\n| --- | --- | --- | --- |\n| 300 | 900mm (35-7/16\") | verstellbar | rote Oberfläche; der Datensatz nennt einen Feuerwiderstand von 1,5 Stunden |\n| 302 | 1040mm (40-15/16\") | verstellbar | umkehrbar für DIN links oder rechts |\n| 303 | 900mm (35-7/16\") | fest | Nickel matt, Chrom, Messing antik, Messing poliert |\n| 305 | 1040mm (40-15/16\") | fest | spritzlackiert; unter Feuerschutztüren gelistet |\n| 307 | 1000mm (39-3/8\") | fest | passt zum Schlosskasten 072; der Datensatz nennt 2,5 Stunden; umkehrbar |\n| 308 | 1050mm (41-5/16\") | fest | Platte 165 × 55mm, Überstand 99mm |\n| 310 | 900mm (35-7/16\") | fest | rot oder schwarz; der Datensatz nennt einen Feuerwiderstand von 1,5 Stunden |\n| 311 | 900mm (35-7/16\") | fest | als Set mit Schlosskörper, Messingzylinder und Edelstahldrücker verkauft; Zylinderentfernung 72 und 92mm |\n| 330 | nach Maß | auf Bestellung | rot oder schwarz |",
+      "Zwei Gruppen verdienen einen Hinweis. Der 307 und der 311 sind keine Aufschraubgeräte im üblichen Sinn: Beide arbeiten mit einem Einsteckschlosskörper in der Tür, der 307 mit unserem Kasten 072 (65mm Dornmaß, 72mm Entfernung, zwei Profilzylinderöffnungen), der 311 als komplettes Set. Wählen Sie eines davon, wenn die Tür ein Einsteckschloss und außen einen Schließzylinder hat oder braucht. Und der 308 ist das einzige Gerät für einflügelige Türen, das seinen Überstand veröffentlicht, 99mm – der Wert, den Sie bei einer Tür prüfen sollten, die in einen schmalen Flur aufschlägt.",
       "Hat ein Projekt viele Türbreiten, sind die verstellbaren 300 und 302 meist die wirtschaftliche Antwort: eine Artikelnummer, für jeden Flügel gekürzt oder eingestellt, statt einer anderen festen Länge je Öffnung. Kürzen sollte man nur Geräte, die als verstellbar veröffentlicht oder, wie der 330, nach Maß gefertigt sind; ein Gerät fester Länge, das auf der Baustelle gekürzt wird, ist nicht mehr das gelieferte Gerät.",
       "ZWEIFLÜGELIGE TÜREN UND MEHRPUNKTVERRIEGELUNG",
       "Bei zweiflügeligen Türen unterscheiden sich Panikverschlüsse am stärksten, und hier ist eine Fehlwahl am teuersten. Ein Aufschraubgerät auf jedem Flügel funktioniert nur, wo ein Mittelpfosten für die Schließbleche vorhanden ist. Ohne ihn muss der Standflügel oben und unten gehalten werden – das leisten Treibstangen- und Mehrpunktgeräte.",
-      "| Modell | Tür | Verriegelung | Länge | Werkstoff und weitere veröffentlichte Zeilen |\n| --- | --- | --- | --- | --- |\n| 309-D | zweiflügelig | Gang- und Standflügel | 1110mm (43-11/16\") | Aluminiumlegierung und Eisen; pulverbeschichtet |\n| 316-D | zweiflügelig | Verriegelung oben und unten | nicht veröffentlicht | Gehäuse aus flammhemmendem ABS, Körper aus Aluminiumlegierung, Druckstange aus Eisen, Falle aus verstärktem Eisen; aufliegend montiert; umkehrbar; Außendrücker optional |\n| 320 | zweiflügelig | Zweipunktverriegelung | nach Maß | Eisen; rot oder schwarz |\n| 306-D | zweiflügelig | nicht veröffentlicht | nicht veröffentlicht | keine weiteren Zeilen |\n| 308-D | zweiflügelig | nicht veröffentlicht | nicht veröffentlicht | noch keine Zeilen |",
+      "| Modell | Tür | Verriegelung | Länge | Weitere veröffentlichte Zeilen |\n| --- | --- | --- | --- | --- |\n| 309-D | zweiflügelig | Gang- und Standflügel | 1110mm (43-11/16\") | pulverbeschichtet |\n| 316-D | zweiflügelig | Verriegelung oben und unten | nicht veröffentlicht | Falle aus verstärktem Eisen; aufliegend montiert; umkehrbar; Außendrücker optional |\n| 320 | zweiflügelig | Zweipunktverriegelung | nach Maß | rot oder schwarz |\n| 306-D | zweiflügelig | nicht veröffentlicht | nicht veröffentlicht | keine weiteren Zeilen |\n| 308-D | zweiflügelig | nicht veröffentlicht | nicht veröffentlicht | noch keine Zeilen |",
       "Der 316-D ist das Set für zweiflügelige Türen mit den meisten Angaben, und er nennt seine Verriegelung in Worten: oben und unten. Der 309-D gibt an, dass er Gang- und Standflügel bedient, und hat die längste Stange des Sortiments. An jeder zweiflügeligen Tür ist das Gerät nur die halbe Antwort: Die Flügel müssen auch in der richtigen Reihenfolge schließen, das ist die Aufgabe des Schließfolgereglers, und unser Artikel zu Schließfolgereglern für zweiflügelige Feuerschutztüren behandelt das. Unsere Schließfolgeregler DC01, DC02 und DSL02 sind beim Beschlagzubehör aufgeführt.",
       "Zwei Datensätze in dieser Tabelle veröffentlichen fast nichts. Wir werden dem 306-D oder dem 308-D nicht die Zeilen ihrer Nachbarn geben: Fragen Sie, und wir bestätigen Verriegelung und Länge anhand der Zeichnung, bevor Sie sie spezifizieren.",
       "SONDERZWECKE",
       "Vier Geräte sind für jeweils eine Situation gebaut, und jedes ist nur dort die richtige Antwort.",
-      "| Modell | Wofür | Veröffentlichte Zeilen |\n| --- | --- | --- |\n| 314 | Notausgangstür mit Alarm | 650, 800 oder 1000mm (25-5/8\", 31-1/2\" oder 39-3/8\"), anpassbar; eingebauter Alarm; Schlüsselzugang von außen; Außendrücker oder Tagesentriegelung optional; aufliegend montiert |\n| 315 | Hebelfalle, Notausgang zum Aufdrücken | 800 oder 1000mm; Eisen, lackiert; Notausgangstüren im Objektbereich |\n| 317 | Kühlraum- und Tiefkühltüren | öffnet von innen ohne Schlüssel; Außengriff optional; Eisen; innen in der Tür montiert |\n| 306 PS | Durchgangs-Panikstange | ohne Fallenriegel; mit separatem Schlosskasten montiert, passend geliefert |",
+      "| Modell | Wofür | Veröffentlichte Zeilen |\n| --- | --- | --- |\n| 314 | Notausgangstür mit Alarm | 650, 800 oder 1000mm (25-5/8\", 31-1/2\" oder 39-3/8\"), anpassbar; eingebauter Alarm; Schlüsselzugang von außen; Außendrücker oder Tagesentriegelung optional; aufliegend montiert |\n| 315 | Hebelfalle, Notausgang zum Aufdrücken | 800 oder 1000mm; Eisen, lackiert; Notausgangstüren im Objektbereich |\n| 317 | Kühlraum- und Tiefkühltüren | öffnet von innen ohne Schlüssel; Außengriff optional; innen in der Tür montiert |\n| 306 PS | Durchgangs-Panikstange | ohne Fallenriegel; mit separatem Schlosskasten montiert, passend geliefert |",
       "Der 314 ist das Gerät für eine Tür, durch die man fliehen können muss, die aber nicht beiläufig benutzt werden soll – etwa ein Notausgang aus einer Verkaufsfläche: Ein Druck auf die Stange öffnet die Tür und löst den Alarm aus. Der 317 beantwortet eine Sicherheitsfrage, die gewöhnliche Beschläge nicht beantworten: Ein Mensch, der in einem Kühlraum eingeschlossen ist, muss von innen, ohne Schlüssel und in der Kälte hinauskommen. Der 315 ist eine Hebelfalle, eine Falle zum Aufdrücken für Notausgänge im Objektbereich; der Katalog führt sie in dieser Familie, prüfen Sie sie aber gegen die Norm, die Ihre Tür erfüllen muss, bevor Sie sie als Panikverschluss behandeln.",
       "DATENSÄTZE, DIE FÜR EINEN VERGLEICH ZU WENIG VERÖFFENTLICHEN",
-      "Neun Geräte haben ein Foto und eine Seite, aber zu wenige Zeilen für eine Tabelle: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S und SH01. Manche nennen einen Werkstoff und sonst nichts; der 312 und der SH01 veröffentlichen gar keine Zeilen. Der 316-S teilt seine Bauzeilen mit dem 316-D (Gehäuse aus flammhemmendem ABS, Körper aus Aluminiumlegierung, Druckstange aus Eisen, aufliegend montiert, umkehrbar), nicht aber seine Länge. Ist eines davon das Gerät, das Sie wollen, nennen Sie uns den Flügel, und wir bestätigen die Zeilen vor dem Angebot.",
-      "Zwei Datensätze widersprechen sich zudem selbst, und es ist besser, das zu sagen, als es einen Einkäufer herausfinden zu lassen. Der 305 nennt im Werkstofffeld Stahl oder Edelstahl und in der Spezifikationszeile Eisen und Aluminium. Beim 309-D ist es ebenso: an einer Stelle Stahl oder Edelstahl, an der anderen Aluminiumlegierung und Eisen. Bis das Werk es bestätigt, gilt die Spezifikationszeile als Arbeitsgrundlage; fragen Sie nach, bevor Sie eines der beiden für einen korrosiven Standort bestellen.",
+      "Neun Geräte haben ein Foto und eine Seite, aber zu wenige Zeilen für eine Tabelle: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S und SH01. Manche nennen einen Werkstoff und sonst nichts; beim 312 und beim SH01 ist der Werkstoff die einzige Zeile. Der 316-S teilt seine Bauzeilen mit dem 316-D (aufliegend montiert, umkehrbar), nicht aber seine Länge. Ist eines davon das Gerät, das Sie wollen, nennen Sie uns den Flügel, und wir bestätigen die Zeilen vor dem Angebot.",
       "FEUERWIDERSTAND AUF DIESEN SEITEN",
       "Drei Datensätze nennen eine Feuerwiderstandsdauer: 1,5 Stunden beim 300 und 310 und 2,5 Stunden beim 307. Lesen Sie das so, wie der Datensatz es angibt, nicht als Nachweis. Eine Feuerwiderstandsdauer bedeutet nur etwas als Klassifizierung einer geprüften Türbaugruppe, benannt in einem Bericht oder einer Listung, und keiner der drei veröffentlicht einen solchen. Wir haben keine UL-Listung; der 307 und der 311 wurden zur Prüfung eingereicht, und solange es keine Zertifikatsnummern gibt, werden wir für sie weder eine Listung noch eine Klassifizierung andeuten. Unser Artikel zu UL 305 erklärt, was eine Listung ist und wie man sie prüft.",
       "AUSWÄHLEN IN VIER FRAGEN",
-      "Ein Flügel oder zwei? Eine zweiflügelige Tür ohne Mittelpfosten braucht Verriegelung oben und unten und einen Schließfolgeregler, was die Wahl auf die zweite Tabelle eingrenzt. Wie breit ist der Flügel? Das entscheidet die Länge und ob ein verstellbares oder ein nach Maß gefertigtes Gerät die wirtschaftliche Antwort ist. Braucht die Außenseite einen Schlüssel oder einen Drücker? Dann wählen Sie ein Gerät, das mit dem nötigen Außenbeschlag arbeitet, oder ein Set wie den 311, das ihn enthält. Und liegt die Tür an etwas anderem als einem gewöhnlichen Flur – ein Kühlraum, ein Notausgang mit Alarm, ein Eingang an der Küste? Dann ist die Tabelle der Sonderzwecke oder der Edelstahl-308 der Ausgangspunkt.",
+      "Ein Flügel oder zwei? Eine zweiflügelige Tür ohne Mittelpfosten braucht Verriegelung oben und unten und einen Schließfolgeregler, was die Wahl auf die zweite Tabelle eingrenzt. Wie breit ist der Flügel? Das entscheidet die Länge und ob ein verstellbares oder ein nach Maß gefertigtes Gerät die wirtschaftliche Antwort ist. Braucht die Außenseite einen Schlüssel oder einen Drücker? Dann wählen Sie ein Gerät, das mit dem nötigen Außenbeschlag arbeitet, oder ein Set wie den 311, das ihn enthält. Und liegt die Tür an etwas anderem als einem gewöhnlichen Flur – ein Kühlraum oder ein Notausgang mit Alarm? Dann ist die Tabelle der Sonderzwecke der Ausgangspunkt.",
       "Schicken Sie diese vier Antworten mit Flügelgröße und Türdicke, und schon die erste Antwort kann ein Gerät und einen Außenbeschlag nennen. Schicken Sie ein Foto einer roten Stange, und die erste Antwort werden diese vier Fragen sein."
     ],
     "faq": [
@@ -1559,16 +1558,16 @@
       },
       {
         "question": "Warum zeigen einige Ihrer Panikverschlüsse fast keine Spezifikationen?",
-        "answer": "Neun Geräte (036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S und SH01) veröffentlichen zu wenige Zeilen für einen Vergleich, und der 312 und der SH01 gar keine. Wir kopieren keine Zeilen von ähnlichen Modellen. Nennen Sie uns Flügelgröße und Türdicke, und wir bestätigen die Zeilen des Geräts anhand der Zeichnung vor dem Angebot."
+        "answer": "Neun Geräte (036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S und SH01) veröffentlichen zu wenige Zeilen für einen Vergleich, und der 312 und der SH01 nur ihren Werkstoff. Wir kopieren keine Zeilen von ähnlichen Modellen. Nennen Sie uns Flügelgröße und Türdicke, und wir bestätigen die Zeilen des Geräts anhand der Zeichnung vor dem Angebot."
       }
     ],
     "sourceHash": {
       "title": "1ba60425dc01",
-      "summary": "9770d1f6fcac",
+      "summary": "ec12a7dec293",
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
-      "body": "e48076644ee0",
-      "faq": "1d5a07474d2c"
+      "body": "1030c23660b9",
+      "faq": "5dd27b52fa34"
     }
   },
   "exit-device-outside-trim-functions-2026": {
@@ -1796,7 +1795,7 @@
     "sourceHash": {
       "title": "ca19e24bc00b",
       "summary": "4a2cbb549db9",
-      "seoTitle": "5274aab3d4bb",
+      "seoTitle": "75373f19512f",
       "seoDescription": "9a66acd4ffdf",
       "body": "b7aeb9daf389",
       "faq": "08c49558371c"
@@ -1804,7 +1803,7 @@
   },
   "glass-door-thickness-and-cutouts-2026": {
     "title": "Glastürbeschläge 2026: Dickenbereiche, Ausschnittmaße und der eine Schritt, der sich nicht rückgängig machen lässt",
-    "summary": "Glastürbeschläge sind die einzige Kategorie, in der eine falsche Reihenfolge die Tür zerstört, statt sie nur zu verzögern. Diese Seite nennt die Glasdicken, die unsere Beschläge tatsächlich aufnehmen, erklärt das Maß des Glasspalts und den Eckradius eines Ausschnitts, zeigt, warum jedes Loch vor dem Vorspannen entstehen muss, und listet, was auf der Glas-Werkstattzeichnung stehen muss, bevor irgendjemand etwas bestellt.",
+    "summary": "Unsere Glasbeschläge nehmen Glas von 8 mm bis 14 mm auf, jedes Modell innerhalb seines eigenen angegebenen Bereichs, und jede Bohrung und jeder Ausschnitt muss vor dem Vorspannen gefertigt werden, denn vorgespanntes Glas lässt sich nicht mehr bohren. Diese Seite nennt die Glasstärken, die unsere Beschläge tatsächlich aufnehmen, erklärt das Fugenmaß und den Eckradius eines Ausschnitts, begründet, warum jede Bohrung vor dem Vorspannen entstehen muss, und listet, was auf der Glas-Werkstattzeichnung stehen muss, bevor irgendjemand bestellt.",
     "seoTitle": "Glastürbeschläge: Glasdicke und Ausschnitte | Canton Hyland",
     "seoDescription": "Glasdicken von 8mm bis 14mm, Maß des Glasspalts, Eckradius von Ausschnitten und warum jedes Loch vor dem Vorspannen entstehen muss.",
     "body": [
@@ -1873,7 +1872,7 @@
     ],
     "sourceHash": {
       "title": "89f10092ae0a",
-      "summary": "3f0df815c2d3",
+      "summary": "affdc8acfbea",
       "seoTitle": "610f7accfef4",
       "seoDescription": "44eca3d24f18",
       "body": "703147a244fd",
@@ -2043,7 +2042,7 @@
     "sourceHash": {
       "title": "8aa751178204",
       "summary": "bad7f4febe06",
-      "seoTitle": "66ef7aef8d33",
+      "seoTitle": "cdc33bc30f28",
       "seoDescription": "338ff45b3007",
       "body": "c4fcf6c1d93b",
       "faq": "796cb2d34c7f"
@@ -2271,7 +2270,7 @@
     "sourceHash": {
       "title": "9cbe2e121fda",
       "summary": "7437caad0423",
-      "seoTitle": "a8e9c7c43f7a",
+      "seoTitle": "424c5093350b",
       "seoDescription": "ad48474bfddb",
       "body": "591c40b047a0",
       "faq": "1295a44ddca5"
@@ -2447,7 +2446,7 @@
     "sourceHash": {
       "title": "d8f88a5a81a1",
       "summary": "35bef0575900",
-      "seoTitle": "d572f0fa7b53",
+      "seoTitle": "b74921e4b0d7",
       "seoDescription": "8c89077ace32",
       "body": "83c080c608e6",
       "faq": "323304228a7e"
@@ -2594,7 +2593,7 @@
   },
   "powder-coating-and-ral-2026": {
     "title": "Pulverbeschichtung und RAL 2026: Warum eine Farbnummer keine Oberfläche spezifiziert, was die Vorbehandlung entscheidet und was in die Bestellung gehört",
-    "summary": "Eine RAL-Nummer benennt einen Farbton und sonst nichts – keinen Glanzgrad, keine Struktur, kein Verfahren, keine Haltbarkeit. Diese Seite erklärt, was RAL festlegt und was offenbleibt, warum die Vorbehandlung entscheidet, ob eine Beschichtung hält, wo die Pulverbeschichtung an der Geometrie von Beschlägen scheitert, welche Prüfungen sich zu zitieren lohnen und die vier Zeilen, die eine Oberfläche bestellbar machen.",
+    "summary": "Eine RAL-Nummer legt nur den Farbton fest: Der Glanzgrad wird gesondert angegeben (ISO 2813), die Pulverschicht im Architekturbereich liegt typischerweise bei 60–80 µm, und Gewinde müssen abgedeckt werden, weil ein beschichtetes M5-Gewinde womöglich keine M5-Schraube mehr aufnimmt. Diese Seite erklärt, was RAL festlegt und was es offenlässt, warum die Vorbehandlung über die Haltbarkeit einer Beschichtung entscheidet, wo die Pulverbeschichtung an der Geometrie von Beschlägen scheitert, welche Prüfungen zitierwürdig sind und welche vier Zeilen eine Oberfläche bestellbar machen.",
     "seoTitle": "Pulverbeschichtung und RAL: Farbe, Glanz | Canton Hyland",
     "seoDescription": "Was eine RAL-Nummer bei Türbeschlägen festlegt und was nicht, warum die Vorbehandlung zählt, wo Pulver an Gewinden versagt, und vier Bestellzeilen.",
     "body": [
@@ -2670,7 +2669,7 @@
     ],
     "sourceHash": {
       "title": "c996ad667af8",
-      "summary": "cfc30de95c69",
+      "summary": "b021e0487733",
       "seoTitle": "ac9904bc8b64",
       "seoDescription": "c20fa316c032",
       "body": "2c29dac14fdd",
@@ -3443,7 +3442,7 @@
   },
   "zinc-alloy-die-cast-hardware-2026": {
     "title": "Beschläge aus Zinklegierung 2026: Was Zamak wirklich ist, wohin es gehört und die vier Arten, wie ein schlechtes Gussteil versagt",
-    "summary": "Zinklegierung ist der zweithäufigste Werkstoff in unserem Katalog und der, dem Einkäufer am meisten misstrauen – meist aus Gründen, die schlechte Gussteile beschreiben und nicht den Werkstoff. Diese Seite erklärt, was Zamak ist, was Druckguss wirklich gut kann, die vier verschiedenen Arten, wie ein schlechtes Zinkteil versagt, wo Zink nie eingesetzt werden sollte und was man ein Werk fragen muss, damit die Antwort etwas bedeutet.",
+    "summary": "Zinklegierung (Zamak, meist Zamak 3 oder Zamak 5, rund 4 % Aluminium) macht 28 % der Materialangaben in unserem Katalog aus, nur übertroffen von Edelstahl mit 46 %, und Einkäufer misstrauen ihr meist aus Gründen, die schlechte Gussteile beschreiben, nicht den Werkstoff. Diese Seite erklärt, was Zamak ist, was Druckguss wirklich gut kann, die vier unterschiedlichen Arten, wie ein schlechtes Zinkteil versagt, wo Zink überhaupt nicht eingesetzt werden sollte und was man ein Werk fragen muss, damit die Antwort etwas bedeutet.",
     "seoTitle": "Zinklegierung (Zamak): wohin sie gehört | Canton Hyland",
     "seoDescription": "Was Zamak ist, was Zinkdruckguss gut kann, vier Arten, wie ein schlechtes Zinkgussteil versagt, wo Zink nie hingehört und was man ein Werk fragt.",
     "body": [
@@ -3521,7 +3520,7 @@
     ],
     "sourceHash": {
       "title": "506c51d91896",
-      "summary": "94b59c7aab60",
+      "summary": "1edee3ddd5c4",
       "seoTitle": "61fa12ef5973",
       "seoDescription": "3291d29baf1a",
       "body": "83d2ba973cd2",

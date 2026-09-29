@@ -6,19 +6,31 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 600 次提交
+最近 30 天 · 共 612 次提交
 
 ## 2026-09-29
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 05:56 | 中立 | docs: record verified clearance and publication timeout | `06a9358ec85` |
-| 05:40 | 中立 | fix: keep compact homepage offers clear of hero actions | `0dba9b4ca5e` |
+| 06:04 | 中立 | i18n：28 条地弹簧/顶轴/玻璃门顶夹七语种补译（名称、摘要、规格 + 12 个规格标签）；untranslatable 认型号代码 | `6dab8fa36e8` |
+| 05:58 | HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `cc71a6a93da` |
+| 05:55 | 中立 | 311 overlays: restore the sourceHash that matches the ABS English | `f77990f9f45` |
+| 05:53 | 中立 | Merge branch 'main' of https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master into eng-work | `0c6314617bb` |
+| 05:53 | HYDE | 311 恢复 ABS 配铝（甲方 09-29：「311 的是 abs 不动」） | `984509e1af0` |
+| 05:43 | 中立 | goal #114 #115：r18 = 659599d1ed6 已上线 | `5dcb67e1452` |
+| 05:31 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 67bf9e3751e | `659599d1ed6` |
+| 05:15 | 中立 | Regenerate client i18n bundles after the push-bar material change | `66006593f47` |
+| 05:00 | HYDE | 逃生推杆材质统一为铝合金锁体 + 铁推杆（29 个产品） | `329a12c80b4` |
+| 04:46 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `6be75194446` |
+| 04:42 | 中立 | Archive BAU and restored AR4 deployment verification | `50dd7a3951a` |
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 22:11 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d443a245335 | `bdb5523d715` |
+| 21:52 | 中立 | Record BAU/AR4 push transport failure and verified SSH fallback | `48ad6ba369e` |
+| 21:41 | HYDE | 合并本地提交（ship 旁路合并） | `e6e4b160dcf` |
 | 21:22 | 中立 | Merge verified HYDE desktop and inquiry feedback changes | `f3d73b76c34` |
 | 20:06 | 中立 | NOW.md：待发布行加上 /sitemap-index.xml | `d4b378ed403` |
 | 20:06 | 中立 | internal-link-placement：/sitemap-index.xml 列入豁免（给搜索引擎的 XML，不是页面） | `81e96cdf656` |

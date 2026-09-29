@@ -64,7 +64,7 @@
   },
   "brass-alloys-and-dezincification-2026": {
     "title": "Pirinç Kapı Donanımı 2026: Hangi Pirinç, İçinde Neden Kurşun Var ve Kıyı Projelerine Karar Veren Tek Arıza Türü",
-    "summary": "“Masif pirinç” farklı davranan bir alaşım ailesinin adıdır; en önemli fark, alaşımın çinko kaybına (dezinsifikasyon) dayanıp dayanmadığıdır. Bu sayfa kapı donanımında kullanılan pirinçleri sıralar, çoğunda neden kurşun bulunduğunu ve düşük kurşunlu alternatiflerin maliyetini açıklar, dezinsifikasyonu ve DZR pirincin gerçekten gerektiği yerleri anlatır, pirinci bronzdan ayırır ve kendi kataloğumuzun ne yayımladığını sayar.",
+    "summary": "Yaklaşık %37'nin üzerinde çinko içeren pirinç, çinkosuzlaşmaya karşı daha savunmasız hale gelir; bu yüzden dış kapıdaki, özellikle kıyıya yakın bir silindir DZR pirinçten (CZ132 veya CW602N) olmalıdır, kuru bir iç kapıda buna gerek yoktur. Bu sayfa kapı donanımında kullanılan pirinçleri tanıtır, çoğunun neden kurşun içerdiğini ve düşük kurşunlu alternatiflerin maliyetini açıklar, çinkosuzlaşmayı ve DZR pirincin gerçekten gerektiği yerleri anlatır, pirinci bronzdan ayırır ve kendi kataloğumuzun yayımladıklarını sayar.",
     "seoTitle": "Pirinç Donanım 2026: Alaşım, Kurşun ve DZR | Canton Hyland",
     "seoDescription": "Kapı donanımında hangi pirinç alaşımları kullanılır, kurşun neden eklenir, dezinsifikasyon nedir, DZR pirinç ne zaman gerekir ve siparişe ne yazılmalı.",
     "body": [
@@ -151,7 +151,7 @@
     ],
     "sourceHash": {
       "title": "a1a9ad3d23f9",
-      "summary": "27d2eb1c5b9e",
+      "summary": "bfaef2c3e67a",
       "seoTitle": "6b4550ca54ee",
       "seoDescription": "d2c2fe2477c0",
       "body": "00b316df6465",
@@ -245,7 +245,7 @@
     "sourceHash": {
       "title": "44cb79616657",
       "summary": "63892f788aae",
-      "seoTitle": "35c004da3cb5",
+      "seoTitle": "d10d38f8a8f3",
       "seoDescription": "092e11d1aec4",
       "body": "57e62f3e9f1a",
       "faq": "fc86e6f3ef20"
@@ -728,7 +728,7 @@
     "sourceHash": {
       "title": "02121f32bf17",
       "summary": "c052dc39cc77",
-      "seoTitle": "34edf915b52d",
+      "seoTitle": "2829afb6472a",
       "seoDescription": "e5a4424a0d26",
       "body": "758851cc7e22",
       "faq": "b42c916771b4"
@@ -884,7 +884,7 @@
     "sourceHash": {
       "title": "0940f1649707",
       "summary": "123e64582159",
-      "seoTitle": "7a2193d4b314",
+      "seoTitle": "cdc77c60bb8f",
       "seoDescription": "10577d7b7cb0",
       "body": "2ffdc192dfcd",
       "faq": "523500ce46eb"
@@ -1184,7 +1184,7 @@
   },
   "door-thickness-to-cylinder-length-2026": {
     "title": "2026'da Kapı Kalınlığından Silindir Boyuna: Hesap, Başvuru Tablosu ve Cevabın Neden Çoğu Zaman Yukarı Yuvarlandığı",
-    "summary": "Bir Avrupa tipi silindiri boyutlandırmak bir çıkarma ve bir yuvarlamadır; işin ters gittiği yer de yuvarlamadır. Bu sayfa hesabı veriyor, gerçekten yayımladığımız dokuz boya göre hesaplanmış bir kapı kalınlığı başvuru tablosu sunuyor, ince bir kapının neden yine de dışarı taşan bir silindir aldığını açıklıyor ve kilit gövdesi kanatta ortalanmadığında neyin değiştiğini gösteriyor.",
+    "summary": "Bir Avrupa silindirinin her yarısı, kapı kalınlığının yarısı artı o taraftaki rozet kalınlığıdır ve 27,5 mm'den başlayan 5 mm'lik basamağa yukarı yuvarlanır: 4 mm rozetli 40 mm'lik bir kapı 55 mm eder ve 56 mm olarak sipariş edilir. Bu sayfa hesaplamayı, gerçekten yayımladığımız dokuz uzunluğa göre hazırlanmış bir kapı kalınlığı tablosunu verir, ince bir kapıda bile silindirin neden dışarı taştığını açıklar ve kilit gövdesi kanatta ortalanmadığında nelerin değiştiğini gösterir.",
     "seoTitle": "Kapı Kalınlığından Silindir Boyuna 2026: Başvuru Tablosu",
     "seoDescription": "Kapı kalınlığından Avrupa tipi silindir boyu nasıl hesaplanır, yayımlanan dokuz boya göre tablo ve ince kapılarda silindirin neden yine de taştığı.",
     "body": [
@@ -1264,7 +1264,7 @@
     ],
     "sourceHash": {
       "title": "77e639df99fe",
-      "summary": "13a48570611b",
+      "summary": "407e17d1373d",
       "seoTitle": "4198d0f68dd3",
       "seoDescription": "1f59c1513cd8",
       "body": "32e94f37c71b",
@@ -1504,36 +1504,35 @@
   },
   "exit-device-comparison-2026": {
     "title": "2026 Panik Çıkış Cihazı Karşılaştırması: Yelpazedeki Her Panik Bar Boy, Kilitleme ve Kapıya Göre",
-    "summary": "Panik çıkış cihazı ailemizde 44 kayıt var ve bunların yalnızca 27'si çıkış cihazı. Burada, özellik satırlarından kurulmuş üç tabloda (tek kanatlı kapılar, çift kanatlar, özel amaçlar) yer alıyorlar; eksik satırlar ve birbiriyle çelişen satırlar da adlarıyla belirtilmiş.",
+    "summary": "Panik çıkış cihazı ailemizde 44 kayıt var ve bunların yalnızca 27'si çıkış cihazı. 315 ve alüminyumlu ABS 311 dışında hepsi alüminyum alaşımı gövdeli ve demir panik barlıdır; bu yüzden üç tablo (tek kanatlı kapılar, çift kanatlar, özel amaçlar) farklı olanı karşılaştırır ve eksik satırları adlarıyla belirtir.",
     "seoTitle": "Panik Çıkış Cihazı ve Panik Bar Karşılaştırması: Boy, Kilit",
     "seoDescription": "Tüm panik çıkış cihazları yan yana: 650–1110 mm bar boyları, tek kanatlı kapılar, üst ve alt kilitlemeli çiftler, alarmlı ve soğuk oda modelleri.",
     "body": [
       "Bir tedarikçinin sitesinde panik bar araması genellikle birbirine neredeyse tıpatıp benzeyen bir fotoğraf duvarı döndürür: kırmızı ya da gümüş bir bar, gri bir muhafaza, bir model numarası. Bir cihazın kapıya uyup uymayacağını belirleyen farklar özellik satırlarındadır ve çoğu sitede düzinelerce sayfaya dağılmıştır. Bu rehber, 23 Eylül 2026 itibarıyla kataloğumuzdaki her panik çıkış cihazını tek bir sayfaya koyuyor; böylece karşılaştırma bir öğleden sonra yerine birkaç dakikada yapılabilir.",
       "Önce ailenin gerçekte ne içerdiği. Panik çıkış cihazı ailemizde 44 yayımlanmış kayıt var ve bunların 27'si çıkış cihazı. Diğer 17'si onlarla birlikte kullanılan parçalardır: 16 dış kol (kapının çekme tarafındaki kol ya da tutamak) ve 307 için bir kilit gövdesi. Dış kolların bu sitede kendi rehberi var; çift kanatların ihtiyaç duyduğu kapanma sıralayıcıları ise yardımcı aksesuarlar arasında listeleniyor. Bu sayfa cihazlarla ilgili.",
       "TABLOLAR NASIL OKUNUR",
-      "Her hücre ürün sayfasındaki bir özellik satırından gelir. Bir cihaz bir satır yayımlıyorsa tablo onu kaydın kullandığı kelimelerle gösterir; yayımlamıyorsa hücre \"yayımlanmadı\" der. Boylar yayımlanmış bar boylarıdır; milimetre olarak, yanında inç. Malzeme, yayımlandığı hâliyle malzeme satırıdır ve bu her zaman sayfanın üstündeki tek satırlık malzeme alanıyla aynı değildir; ikisi uyuşmadığında bu rehber birini seçmek yerine bunu söyler.",
+      "Her hücre ürün sayfasındaki bir özellik satırından gelir. Bir cihaz bir satır yayımlıyorsa tablo onu kaydın kullandığı kelimelerle gösterir; yayımlamıyorsa hücre \"yayımlanmadı\" der. Boylar yayımlanmış bar boylarıdır; milimetre olarak, yanında inç. Malzeme sütunu yoktur: demirden olan 315 ve alüminyumlu ABS olan 311 dışında buradaki her cihazın gövdesi alüminyum alaşımı, panik barı demirdir.",
       "27 cihazın 13'ü bir boy yayımlar. Bir panik bar için en önemli tek satır budur; çünkü bar takıldığı kanada uymalıdır ve alıcıların bize en sık onsuz gönderdiği satır da budur. Panik bar boyu üzerine yazımız, boy sorusunun bir cevabı olsun diye kanadın nasıl ölçüleceğini anlatıyor.",
       "TEK KANATLI KAPILAR: BOYU YAYIMLANMIŞ CİHAZLAR",
       "Bunlar tek kanat için, boyunu yayımlayan sıva üstü tip panik barlardır. Sıva üstü bir cihaz kilit kenarında kasadaki bir karşılığa, tek noktadan kilitlenir ve tek kanatlı bir kaçış kapısı için olağan seçimdir.",
-      "| Model | Bar boyu | Boyun belirlenmesi | Malzeme satırı | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| 300 | 900 mm (35-7/16\") | ayarlanabilir | ABS'li demir | kırmızı kaplama; kayıt 1,5 saatlik yangın dayanımı belirtir |\n| 302 | 1040 mm (40-15/16\") | ayarlanabilir | paslanmaz çelik ve demir | sağ ya da sol kapıya çevrilebilir |\n| 303 | 900 mm (35-7/16\") | sabit | çelik ya da paslanmaz çelik, demir iç | saten nikel, krom, antik pirinç, parlak pirinç |\n| 305 | 1040 mm (40-15/16\") | sabit | demir ve alüminyum | püskürtme boyalı; yangın kapıları altında listelenir |\n| 307 | 1000 mm (39-3/8\") | sabit | alüminyum panik barlı ABS | 072 kilit gövdesiyle eşleşir; kayıt 2,5 saat belirtir; çevrilebilir |\n| 308 | 1050 mm (41-5/16\") | sabit | 304 paslanmaz çelik | plaka 165 × 55 mm, çıkıntı 99 mm |\n| 310 | 900 mm (35-7/16\") | sabit | demir | kırmızı ya da siyah; kayıt 1,5 saatlik yangın dayanımı belirtir |\n| 311 | 900 mm (35-7/16\") | sabit | alüminyumlu ABS | kilit gövdesi, pirinç silindir ve paslanmaz kolla set olarak satılır; silindir aks mesafeleri 72 ve 92 mm |\n| 330 | boya göre yapılır | siparişe göre | demir boru ile demir | kırmızı ya da siyah |",
-      "İki gruplamaya dikkat çekmeye değer. 307 ve 311 olağan anlamda sıva üstü cihazlar değildir: her biri kapıdaki bir gömme kilit gövdesiyle çalışır; 307 bizim 072 gövdemizle (65 mm backset, 72 mm aks mesafesi, iki Avrupa tipi silindir yuvası), 311 ise eksiksiz bir set olarak. Kapıda zaten bir gömme kilit ve dışarıda anahtarlı bir silindir varsa ya da gerekiyorsa bunlardan birini seçin. 308 ise çıkıntısını, 99 mm, yayımlayan paslanmaz çelik tek kanatlı cihazdır; dar bir koridora açılan bir kapıya karşı kontrol edilecek değer budur.",
+      "| Model | Bar boyu | Boyun belirlenmesi | Ayrıca yayımlanan |\n| --- | --- | --- | --- |\n| 300 | 900 mm (35-7/16\") | ayarlanabilir | kırmızı kaplama; kayıt 1,5 saatlik yangın dayanımı belirtir |\n| 302 | 1040 mm (40-15/16\") | ayarlanabilir | sağ ya da sol kapıya çevrilebilir |\n| 303 | 900 mm (35-7/16\") | sabit | saten nikel, krom, antik pirinç, parlak pirinç |\n| 305 | 1040 mm (40-15/16\") | sabit | püskürtme boyalı; yangın kapıları altında listelenir |\n| 307 | 1000 mm (39-3/8\") | sabit | 072 kilit gövdesiyle eşleşir; kayıt 2,5 saat belirtir; çevrilebilir |\n| 308 | 1050 mm (41-5/16\") | sabit | plaka 165 × 55 mm, çıkıntı 99 mm |\n| 310 | 900 mm (35-7/16\") | sabit | kırmızı ya da siyah; kayıt 1,5 saatlik yangın dayanımı belirtir |\n| 311 | 900 mm (35-7/16\") | sabit | kilit gövdesi, pirinç silindir ve paslanmaz kolla set olarak satılır; silindir aks mesafeleri 72 ve 92 mm |\n| 330 | boya göre yapılır | siparişe göre | kırmızı ya da siyah |",
+      "İki gruplamaya dikkat çekmeye değer. 307 ve 311 olağan anlamda sıva üstü cihazlar değildir: her biri kapıdaki bir gömme kilit gövdesiyle çalışır; 307 bizim 072 gövdemizle (65 mm backset, 72 mm aks mesafesi, iki Avrupa tipi silindir yuvası), 311 ise eksiksiz bir set olarak. Kapıda zaten bir gömme kilit ve dışarıda anahtarlı bir silindir varsa ya da gerekiyorsa bunlardan birini seçin. 308 ise çıkıntısını, 99 mm, yayımlayan tek kanatlı cihazdır; dar bir koridora açılan bir kapıya karşı kontrol edilecek değer budur.",
       "Bir projede birçok kapı genişliği varsa ekonomik cevap genellikle ayarlanabilir 300 ve 302'dir: her açıklık için farklı sabit bir boy yerine, her kanada göre kesilen ya da ayarlanan tek bir parça numarası. Yalnızca ayarlanabilir olarak yayımlanan ya da 330 gibi boya göre yapılan cihazlar kısaltılmalıdır; şantiyede kesilmiş sabit boylu bir cihaz artık tedarik edilen cihaz değildir.",
       "ÇİFT KANATLI KAPILAR VE ÇOK NOKTALI KİLİTLEME",
       "Panik çıkış cihazlarının en çok ayrıştığı ve yanlış seçimin en pahalıya mal olduğu yer çift kanatlı kapılardır. Her kanatta sıva üstü bir cihaz, ancak karşılıklar için bir orta kayıt varsa çalışır. Yoksa pasif kanadın üstten ve alttan tutulması gerekir; dikey çubuklu ve çok noktalı cihazların yaptığı budur.",
-      "| Model | Kapı | Kilitleme | Boy | Malzeme ve yayımlanan diğer satırlar |\n| --- | --- | --- | --- | --- |\n| 309-D | çift | aktif ve pasif kanat | 1110 mm (43-11/16\") | alüminyum alaşımı ve demir; toz boyalı |\n| 316-D | çift | üstten ve alttan kilitleme | yayımlanmadı | alev geciktirici ABS muhafaza, alüminyum alaşımı gövde, demir panik bar, kalınlaştırılmış demir dil; yüzeye monte; çevrilebilir; dış kol isteğe bağlı |\n| 320 | çift | iki noktadan kilitleme | boya göre yapılır | demir; kırmızı ya da siyah |\n| 306-D | çift | yayımlanmadı | yayımlanmadı | başka satır yok |\n| 308-D | çift | yayımlanmadı | yayımlanmadı | henüz satır yok |",
+      "| Model | Kapı | Kilitleme | Boy | Yayımlanan diğer satırlar |\n| --- | --- | --- | --- | --- |\n| 309-D | çift | aktif ve pasif kanat | 1110 mm (43-11/16\") | toz boyalı |\n| 316-D | çift | üstten ve alttan kilitleme | yayımlanmadı | kalınlaştırılmış demir dil; yüzeye monte; çevrilebilir; dış kol isteğe bağlı |\n| 320 | çift | iki noktadan kilitleme | boya göre yapılır | kırmızı ya da siyah |\n| 306-D | çift | yayımlanmadı | yayımlanmadı | başka satır yok |\n| 308-D | çift | yayımlanmadı | yayımlanmadı | henüz satır yok |",
       "316-D en fazla bilgi yayımlayan çift setidir ve kilitlemesini kelimelerle belirtir: üstten ve alttan. 309-D aktif ve pasif kanadı çalıştırdığını belirtir ve yelpazedeki en uzun barı yayımlar. Her çiftte cihaz cevabın yalnızca yarısıdır: kanatların doğru sırayla da kapanması gerekir; bu sıralayıcının işidir ve çift kanatlı yangın kapıları için kapanma sıralayıcıları yazımız bunu ele alıyor. Sıralayıcılarımız DC01, DC02 ve DSL02, yardımcı aksesuarlar arasında listeleniyor.",
       "Bu tablodaki iki kayıt neredeyse hiçbir şey yayımlamaz. 306-D'ye ya da 308-D'ye komşularının satırlarını vermeyeceğiz: sorun, şartnameye yazmadan önce kilitlemelerini ve boylarını çizime göre teyit edelim.",
       "ÖZEL AMAÇLAR",
       "Dört cihaz her biri tek bir durum için yapılmıştır ve her biri yalnızca orada doğru cevaptır.",
-      "| Model | Ne için | Yayımlanan satırlar |\n| --- | --- | --- |\n| 314 | alarmlı çıkış kapısı | 650, 800 ya da 1000 mm (25-5/8\", 31-1/2\" ya da 39-3/8\"), özel üretimle; dahili alarm; dışarıdan anahtarla erişim; seçenek olarak dış kol ya da açık tutma; yüzeye monte |\n| 315 | kanırtmaya dayanıklı dil, iterek açılan acil çıkış | 800 ya da 1000 mm; demir, boyalı; ticari acil çıkış kapıları |\n| 317 | soğuk oda ve dondurucu kapıları | içeriden anahtarsız açılır; dış kol isteğe bağlı; demir; kapının içine monte edilir |\n| 306 PS | geçiş tipi panik bar | dil yok; ayrı bir kilit gövdesiyle takılır, uygun şekilde tedarik edilir |",
+      "| Model | Ne için | Yayımlanan satırlar |\n| --- | --- | --- |\n| 314 | alarmlı çıkış kapısı | 650, 800 ya da 1000 mm (25-5/8\", 31-1/2\" ya da 39-3/8\"), özel üretimle; dahili alarm; dışarıdan anahtarla erişim; seçenek olarak dış kol ya da açık tutma; yüzeye monte |\n| 315 | kanırtmaya dayanıklı dil, iterek açılan acil çıkış | 800 ya da 1000 mm; demir, boyalı; ticari acil çıkış kapıları |\n| 317 | soğuk oda ve dondurucu kapıları | içeriden anahtarsız açılır; dış kol isteğe bağlı; kapının içine monte edilir |\n| 306 PS | geçiş tipi panik bar | dil yok; ayrı bir kilit gövdesiyle takılır, uygun şekilde tedarik edilir |",
       "314, kaçılabilir olması gereken ama gelişigüzel kullanılmaması gereken bir kapının cihazıdır; örneğin bir mağaza katından yangın çıkışı: bara basmak kapıyı açar ve alarmı çaldırır. 317, sıradan donanımın cevaplamadığı bir güvenlik sorusunu cevaplar: bir soğuk depoda içeride kalmış bir kişi soğukta, içeriden, anahtarsız çıkabilmelidir. 315 bir kanırtmaya dayanıklı dildir, ticari çıkışlar için iterek açılan bir dil; katalog onu bu ailede listeler, ama onu bir panik cihazı olarak ele almadan önce kapınızın karşılaması gereken standarda göre kontrol edin.",
       "KARŞILAŞTIRMAYA YETECEK KADAR YAYIMLAMAYAN KAYITLAR",
-      "Dokuz cihazın bir fotoğrafı ve bir sayfası var ama bir tabloya yerleştirmek için çok az satırı var: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01. Bazıları bir malzeme yayımlar ve başka bir şey yayımlamaz; 312 ve SH01 hiç satır yayımlamaz. 316-S yapı satırlarını 316-D ile paylaşır (alev geciktirici ABS muhafaza, alüminyum alaşımı gövde, demir panik bar, yüzeye monte, çevrilebilir) ama boyunu paylaşmaz. İstediğiniz cihaz bunlardan biriyse bize kanadı söyleyin, teklif vermeden önce satırları teyit edelim.",
-      "İki kayıt ayrıca kendi içinde çelişir ve bunu bir alıcının keşfetmesine bırakmaktansa söylemek daha iyidir. 305, malzeme alanında çelik ya da paslanmaz çelik, özellik satırında ise demir ve alüminyum listeler. 309-D de aynısını yapar: bir yerde çelik ya da paslanmaz çelik, diğerinde alüminyum alaşımı ve demir. Fabrika teyit edene kadar özellik satırını çalışma cevabı olarak kabul edin ve ikisinden birini korozif bir yer için sipariş etmeden önce sorun.",
+      "Dokuz cihazın bir fotoğrafı ve bir sayfası var ama bir tabloya yerleştirmek için çok az satırı var: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01. Bazıları bir malzeme yayımlar ve başka bir şey yayımlamaz; 312 ve SH01'de tek satır malzemedir. 316-S yapı satırlarını 316-D ile paylaşır (yüzeye monte, çevrilebilir) ama boyunu paylaşmaz. İstediğiniz cihaz bunlardan biriyse bize kanadı söyleyin, teklif vermeden önce satırları teyit edelim.",
       "BU SAYFALARDAKİ YANGIN DAYANIMLARI",
       "Üç kayıt bir yangın süresi taşır: 300 ve 310'da 1,5 saat, 307'de 2,5 saat. Bunları kanıt olarak değil, kaydın belirttiği gibi okuyun. Bir yangın süresi ancak bir raporda ya da listelemede tanımlanmış, test edilmiş bir kapı montajının dayanımı olarak anlam taşır ve bu üçünden hiçbiri böyle bir şey yayımlamaz. UL listelememiz yok; 307 ve 311 teste gönderildi ve sertifika numaraları oluşana kadar onlar için bir listeleme ya da dayanım ima etmeyeceğiz. UL 305 üzerine yazımız bir listelemenin ne olduğunu ve nasıl kontrol edileceğini anlatıyor.",
       "DÖRT SORUDA SEÇİM",
-      "Tek kanat mı, çift mi? Orta kaydı olmayan bir çift, üstten ve alttan kilitleme ve bir sıralayıcı ister; bu da seçimi ikinci tabloya daraltır. Kanat ne kadar geniş? Bu boyu ve ayarlanabilir mi yoksa boya göre yapılan bir cihazın mı ekonomik cevap olduğunu belirler. Dış tarafın anahtara ya da kola ihtiyacı var mı? O zaman ihtiyacınız olan dış kolla çalışan bir cihaz ya da onu içeren 311 gibi bir set seçin. Kapı sıradan bir koridordan başka bir şeye mi bakıyor: bir soğuk depo, alarmlı bir çıkış, bir kıyı girişi? O zaman başlanacak yer özel amaç tablosu ya da paslanmaz 308'dir.",
+      "Tek kanat mı, çift mi? Orta kaydı olmayan bir çift, üstten ve alttan kilitleme ve bir sıralayıcı ister; bu da seçimi ikinci tabloya daraltır. Kanat ne kadar geniş? Bu boyu ve ayarlanabilir mi yoksa boya göre yapılan bir cihazın mı ekonomik cevap olduğunu belirler. Dış tarafın anahtara ya da kola ihtiyacı var mı? O zaman ihtiyacınız olan dış kolla çalışan bir cihaz ya da onu içeren 311 gibi bir set seçin. Kapı sıradan bir koridordan başka bir şeye mi bakıyor: bir soğuk depo ya da alarmlı bir çıkış? O zaman başlanacak yer özel amaç tablosudur.",
       "Bu dört cevabı kanat ölçüsü ve kapı kalınlığıyla gönderin; ilk yanıt bir cihaz ve bir dış kol adlandırabilir. Kırmızı bir barın fotoğrafını gönderin; ilk yanıt bu dört soru olur."
     ],
     "faq": [
@@ -1559,16 +1558,16 @@
       },
       {
         "question": "Bazı panik çıkış cihazlarınız neden neredeyse hiç teknik özellik göstermiyor?",
-        "answer": "Dokuz cihaz (036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01) karşılaştırmaya yetecek kadar satır yayımlamaz; 312 ve SH01 hiç yayımlamaz. Benzer modellerden satır kopyalamayız. Bize kanat ölçüsünü ve kapı kalınlığını söyleyin, teklif vermeden önce cihazın satırlarını çizime göre teyit edelim."
+        "answer": "Dokuz cihaz (036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01) karşılaştırmaya yetecek kadar satır yayımlamaz; 312 ve SH01 yalnızca malzemesini yayımlar. Benzer modellerden satır kopyalamayız. Bize kanat ölçüsünü ve kapı kalınlığını söyleyin, teklif vermeden önce cihazın satırlarını çizime göre teyit edelim."
       }
     ],
     "sourceHash": {
       "title": "1ba60425dc01",
-      "summary": "9770d1f6fcac",
+      "summary": "ec12a7dec293",
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
-      "body": "e48076644ee0",
-      "faq": "1d5a07474d2c"
+      "body": "1030c23660b9",
+      "faq": "5dd27b52fa34"
     }
   },
   "exit-device-outside-trim-functions-2026": {
@@ -1796,7 +1795,7 @@
     "sourceHash": {
       "title": "ca19e24bc00b",
       "summary": "4a2cbb549db9",
-      "seoTitle": "5274aab3d4bb",
+      "seoTitle": "75373f19512f",
       "seoDescription": "9a66acd4ffdf",
       "body": "b7aeb9daf389",
       "faq": "08c49558371c"
@@ -1804,7 +1803,7 @@
   },
   "glass-door-thickness-and-cutouts-2026": {
     "title": "Cam Kapı Donanımı 2026: Kalınlık Aralıkları, Oyuk Ölçüleri ve Geri Alınamayan Tek Adım",
-    "summary": "Cam kapı donanımı, sırayı yanlış kurmanın kapıyı geciktirmek yerine yok ettiği tek kategoridir. Bu sayfa bağlantı parçalarımızın gerçekte kabul ettiği cam kalınlığı aralıklarını veriyor, cam boşluğu ölçüsünü ve oyuk köşe radyusunu açıklıyor, her deliğin neden temperlemeden önce açılması gerektiğini ortaya koyuyor ve kimse bir şey sipariş etmeden önce cam imalat çiziminde neyin bulunması gerektiğini listeliyor.",
+    "summary": "Cam donanımlarımız 8 mm ile 14 mm arasındaki camları, her model kendi belirtilen aralığında olmak üzere kabul eder ve her delik ile kesim temperleme öncesinde yapılmalıdır, çünkü temperlenmiş cam delinemez. Bu sayfa donanımlarımızın gerçekte kabul ettiği cam kalınlığı aralıklarını verir, cam boşluğu ölçüsünü ve kesimdeki köşe yarıçapını açıklar, her deliğin neden temperlemeden önce açılması gerektiğini anlatır ve herhangi bir sipariş verilmeden önce cam imalat çiziminde neler bulunması gerektiğini listeler.",
     "seoTitle": "Cam Kapı Donanımı 2026: Kalınlık, Oyuklar ve İş Sırası",
     "seoDescription": "Cam kapı donanımında 8 mm ile 14 mm arası kalınlıklar, cam boşluğu ölçüsü, oyuk köşe radyusu ve her deliğin neden temperlemeden önce açılması gerektiği.",
     "body": [
@@ -1873,7 +1872,7 @@
     ],
     "sourceHash": {
       "title": "89f10092ae0a",
-      "summary": "3f0df815c2d3",
+      "summary": "affdc8acfbea",
       "seoTitle": "610f7accfef4",
       "seoDescription": "44eca3d24f18",
       "body": "703147a244fd",
@@ -2043,7 +2042,7 @@
     "sourceHash": {
       "title": "8aa751178204",
       "summary": "bad7f4febe06",
-      "seoTitle": "66ef7aef8d33",
+      "seoTitle": "cdc33bc30f28",
       "seoDescription": "338ff45b3007",
       "body": "c4fcf6c1d93b",
       "faq": "796cb2d34c7f"
@@ -2271,7 +2270,7 @@
     "sourceHash": {
       "title": "9cbe2e121fda",
       "summary": "7437caad0423",
-      "seoTitle": "a8e9c7c43f7a",
+      "seoTitle": "424c5093350b",
       "seoDescription": "ad48474bfddb",
       "body": "591c40b047a0",
       "faq": "1295a44ddca5"
@@ -2447,7 +2446,7 @@
     "sourceHash": {
       "title": "d8f88a5a81a1",
       "summary": "35bef0575900",
-      "seoTitle": "d572f0fa7b53",
+      "seoTitle": "b74921e4b0d7",
       "seoDescription": "8c89077ace32",
       "body": "83c080c608e6",
       "faq": "323304228a7e"
@@ -2594,7 +2593,7 @@
   },
   "powder-coating-and-ral-2026": {
     "title": "Toz Boya ve RAL 2026: Bir Renk Numarası Neden Bir Kaplamayı Tanımlamaz, Ön İşlem Neyi Belirler ve Siparişe Ne Yazılmalı",
-    "summary": "Bir RAL numarası bir rengi adlandırır, başka hiçbir şeyi değil: ne parlaklığı, ne dokuyu, ne prosesi, ne dayanıklılığı. Bu sayfa RAL'in neyi tanımlayıp neyi açık bıraktığını, bir boyanın dayanıp dayanmayacağına neden ön işlemin karar verdiğini, toz boyanın donanım geometrisinde nerede başarısız olduğunu, hangi testlerin alıntılanmaya değer olduğunu ve bir kaplamayı sipariş edilebilir kılan dört satırı açıklıyor.",
+    "summary": "Bir RAL numarası yalnızca renk tonunu belirler: parlaklık ayrıca belirtilir (ISO 2813), mimari toz boya filmi genellikle 60–80 µm'dir ve dişler maskelenmelidir, çünkü boyanmış bir M5 diş M5 vidayı kabul etmeyebilir. Bu sayfa RAL'in neyi belirleyip neyi açık bıraktığını, ön işlemin kaplamanın dayanıp dayanmayacağını neden belirlediğini, toz boyanın donanım geometrisinde nerede başarısız olduğunu, hangi testlerin anmaya değer olduğunu ve bir yüzeyi sipariş edilebilir kılan dört satırı açıklar.",
     "seoTitle": "Toz Boya ve RAL 2026: Renk, Parlaklık ve Ön İşlem",
     "seoDescription": "Kapı donanımında RAL neyi tanımlar, neyi tanımlamaz; ön işlem boya ömrünü nasıl belirler, toz boya dişlerde ve kenarlarda neden kalır, siparişe ne yazılır.",
     "body": [
@@ -2670,7 +2669,7 @@
     ],
     "sourceHash": {
       "title": "c996ad667af8",
-      "summary": "cfc30de95c69",
+      "summary": "b021e0487733",
       "seoTitle": "ac9904bc8b64",
       "seoDescription": "c20fa316c032",
       "body": "2c29dac14fdd",
@@ -3443,7 +3442,7 @@
   },
   "zinc-alloy-die-cast-hardware-2026": {
     "title": "Zamak (Çinko Alaşımı) Donanım 2026: Zamak Gerçekte Nedir, Nereye Aittir ve Kötü Bir Dökümün Başarısız Olduğu Dört Yol",
-    "summary": "Zamak (çinko alaşımı), kataloğumuzdaki en yaygın ikinci malzemedir ve alıcıların en çok şüphelendiği malzemedir; genellikle malzemeyi değil kötü dökümleri anlatan nedenlerle. Bu sayfa zamakın ne olduğunu, basınçlı dökümün gerçekten neyde iyi olduğunu, kötü bir zamak parçanın başarısız olduğu dört ayrı yolu, çinkonun hiç kullanılmaması gereken yerleri ve cevabın bir anlam taşıması için bir fabrikaya neyin sorulacağını açıklıyor.",
+    "summary": "Çinko alaşımı (zamak, çoğunlukla Zamak 3 veya Zamak 5, yaklaşık %4 alüminyum) kataloğumuzdaki malzeme satırlarının %28'ini oluşturur ve %46 ile paslanmaz çeliğin ardından ikinci sıradadır; alıcılar ona çoğunlukla malzemeyi değil kötü dökümleri anlatan nedenlerle güvenmez. Bu sayfa zamakın ne olduğunu, basınçlı dökümün gerçekten neyi iyi yaptığını, kötü bir çinko parçanın bozulduğu dört ayrı yolu, çinkonun hiç kullanılmaması gereken yerleri ve cevabın bir anlam taşıması için bir fabrikaya ne sorulması gerektiğini açıklar.",
     "seoTitle": "Zamak (Çinko Alaşımı) Donanım 2026: Nereye Aittir",
     "seoDescription": "Zamak çinko alaşımı nedir, basınçlı döküm neyi iyi yapar, kötü bir zamak döküm nasıl bozulur, çinko nerede kullanılmamalı ve fabrikaya ne sorulmalı.",
     "body": [
@@ -3521,7 +3520,7 @@
     ],
     "sourceHash": {
       "title": "506c51d91896",
-      "summary": "94b59c7aab60",
+      "summary": "1edee3ddd5c4",
       "seoTitle": "61fa12ef5973",
       "seoDescription": "3291d29baf1a",
       "body": "83d2ba973cd2",

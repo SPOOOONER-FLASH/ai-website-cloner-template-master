@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BauShowcase } from "@/components/site/BauEntry";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
-import { FlagshipTooling } from "@/components/site/FlagshipTooling";
+import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -62,7 +62,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         <Spacer heights={content.spacers.s96} />
         <BauShowcase locale={locale} />
         <Spacer heights={content.spacers.s96} />
-        <FlagshipTooling locale={locale} />
+        <ArgentinaAr4Showcase locale={locale} />
         <FeatureColumns locale={locale} />
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

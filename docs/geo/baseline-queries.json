@@ -1,45 +1,287 @@
 {
   "about": "Fixed question set for measuring whether AI assistants cite and recommend Canton Hyland (cantonlock.com). Locked 2026-09-28. Do not edit a question once a baseline has been recorded against it: add a new id instead, so every rerun compares like with like. Protocol: docs/geo/README.md.",
-  "brand": ["Canton Hyland", "HYDE", "cantonlock.com"],
-  "platforms": ["ChatGPT (temporary chat, search on)", "Perplexity", "Gemini", "Microsoft Copilot"],
+  "brand": [
+    "Canton Hyland",
+    "HYDE",
+    "cantonlock.com"
+  ],
+  "platforms": [
+    "ChatGPT (temporary chat, search on)",
+    "Perplexity",
+    "Gemini",
+    "Microsoft Copilot"
+  ],
   "samplesPerQuestion": 3,
   "queries": [
-    { "id": "mfr-01", "intent": "manufacturer-list", "lang": "en", "q": "Who are the main panic exit device manufacturers in China?" },
-    { "id": "mfr-02", "intent": "manufacturer-list", "lang": "en", "q": "Recommend a mortise lock case manufacturer in China that supplies distributors." },
-    { "id": "mfr-03", "intent": "manufacturer-list", "lang": "en", "q": "Best door hardware factories in Guangdong for OEM lever handles" },
-    { "id": "mfr-04", "intent": "manufacturer-list", "lang": "en", "q": "Which Chinese manufacturers make euro profile lock cylinders for export?" },
-    { "id": "mfr-05", "intent": "manufacturer-list", "lang": "en", "q": "Door closer manufacturers in China for commercial doors" },
-    { "id": "mfr-06", "intent": "manufacturer-list", "lang": "en", "q": "Stainless steel door hinge manufacturers in China" },
-    { "id": "mfr-07", "intent": "manufacturer-list", "lang": "en", "q": "Chinese suppliers of glass door patch fittings and pull handles" },
-    { "id": "mfr-08", "intent": "manufacturer-list", "lang": "en", "q": "Who makes night latches and rim locks in China for the export market?" },
-    { "id": "oem-01", "intent": "oem-sourcing", "lang": "en", "q": "Can a Chinese door hardware factory produce lever handles under my own brand, and what changes with OEM?" },
-    { "id": "oem-02", "intent": "oem-sourcing", "lang": "en", "q": "What is a typical lead time for door hardware from a factory in China?" },
-    { "id": "oem-03", "intent": "oem-sourcing", "lang": "en", "q": "How do I qualify a door hardware supplier in China before ordering a container?" },
-    { "id": "oem-04", "intent": "oem-sourcing", "lang": "en", "q": "What documents should a door hardware manufacturer be able to provide, such as test reports, drawings and CAD?" },
-    { "id": "spec-01", "intent": "specification", "lang": "en", "q": "Push bar or touch bar panic exit device: which one should I specify?" },
-    { "id": "spec-02", "intent": "specification", "lang": "en", "q": "What is the difference between EN 1125 and EN 179?" },
-    { "id": "spec-03", "intent": "specification", "lang": "en", "q": "ANSI grade 1 exit device vs EN 1125: which standard does my project need?" },
-    { "id": "spec-04", "intent": "specification", "lang": "en", "q": "How do I measure a euro cylinder length?" },
-    { "id": "spec-05", "intent": "specification", "lang": "en", "q": "What backset and centre distance do mortise lock cases come in?" },
-    { "id": "spec-06", "intent": "specification", "lang": "en", "q": "How many levels does a master key system need?" },
-    { "id": "spec-07", "intent": "specification", "lang": "en", "q": "What do finish codes US26D, 626 and 630 mean?" },
-    { "id": "spec-08", "intent": "specification", "lang": "en", "q": "Which push bar length fits my door width?" },
-    { "id": "spec-09", "intent": "specification", "lang": "en", "q": "304 or 316 stainless steel for door handles near the coast?" },
-    { "id": "spec-10", "intent": "specification", "lang": "en", "q": "Cylindrical vs tubular lock: what is the difference?" },
-    { "id": "spec-11", "intent": "specification", "lang": "en", "q": "What hardware does a double fire exit door need?" },
-    { "id": "spec-12", "intent": "specification", "lang": "en", "q": "Is UL 305 a grade or a listing?" },
-    { "id": "cmp-01", "intent": "comparison", "lang": "en", "q": "Compare zinc alloy and stainless steel lever handles for commercial doors" },
-    { "id": "cmp-02", "intent": "comparison", "lang": "en", "q": "Brass vs stainless steel door hinges: which should a distributor stock?" },
-    { "id": "es-01", "intent": "manufacturer-list", "lang": "es", "q": "¿Qué fabricantes chinos de barras antipánico exportan a Latinoamérica?" },
-    { "id": "es-02", "intent": "manufacturer-list", "lang": "es", "q": "Fabricante de cajas de cerradura de embutir para distribuidores en Argentina" },
-    { "id": "es-03", "intent": "specification", "lang": "es", "q": "¿Cómo saber si una puerta es de mano izquierda o derecha?" },
-    { "id": "es-04", "intent": "specification", "lang": "es", "q": "¿Qué medida de cilindro europeo necesito para mi puerta?" },
-    { "id": "es-05", "intent": "oem-sourcing", "lang": "es", "q": "¿Qué plazo de entrega tiene un pedido de herrajes para puertas desde China?" },
-    { "id": "pt-01", "intent": "manufacturer-list", "lang": "pt", "q": "Fabricantes chineses de barras antipânico para distribuidores no Brasil" },
-    { "id": "pt-02", "intent": "specification", "lang": "pt", "q": "Quais normas NBR se aplicam às ferragens de porta corta-fogo?" },
-    { "id": "pt-03", "intent": "specification", "lang": "pt", "q": "Como escolher a distância ao eixo de uma fechadura de embutir?" },
-    { "id": "brand-01", "intent": "brand", "lang": "en", "q": "What does Canton Hyland make?" },
-    { "id": "brand-02", "intent": "brand", "lang": "en", "q": "Is Canton Hyland Hardware a manufacturer or a trading company?" },
-    { "id": "brand-03", "intent": "brand", "lang": "en", "q": "Canton Hyland vs other Chinese door hardware suppliers" }
+    {
+      "id": "mfr-01",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Who are the main panic exit device manufacturers in China?"
+    },
+    {
+      "id": "mfr-02",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Recommend a mortise lock case manufacturer in China that supplies distributors."
+    },
+    {
+      "id": "mfr-03",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Best door hardware factories in Guangdong for OEM lever handles"
+    },
+    {
+      "id": "mfr-04",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Which Chinese manufacturers make euro profile lock cylinders for export?"
+    },
+    {
+      "id": "mfr-05",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Door closer manufacturers in China for commercial doors"
+    },
+    {
+      "id": "mfr-06",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Stainless steel door hinge manufacturers in China"
+    },
+    {
+      "id": "mfr-07",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Chinese suppliers of glass door patch fittings and pull handles"
+    },
+    {
+      "id": "mfr-08",
+      "intent": "manufacturer-list",
+      "lang": "en",
+      "q": "Who makes night latches and rim locks in China for the export market?"
+    },
+    {
+      "id": "oem-01",
+      "intent": "oem-sourcing",
+      "lang": "en",
+      "q": "Can a Chinese door hardware factory produce lever handles under my own brand, and what changes with OEM?"
+    },
+    {
+      "id": "oem-02",
+      "intent": "oem-sourcing",
+      "lang": "en",
+      "q": "What is a typical lead time for door hardware from a factory in China?"
+    },
+    {
+      "id": "oem-03",
+      "intent": "oem-sourcing",
+      "lang": "en",
+      "q": "How do I qualify a door hardware supplier in China before ordering a container?"
+    },
+    {
+      "id": "oem-04",
+      "intent": "oem-sourcing",
+      "lang": "en",
+      "q": "What documents should a door hardware manufacturer be able to provide, such as test reports, drawings and CAD?"
+    },
+    {
+      "id": "spec-01",
+      "intent": "specification",
+      "lang": "en",
+      "q": "Push bar or touch bar panic exit device: which one should I specify?"
+    },
+    {
+      "id": "spec-02",
+      "intent": "specification",
+      "lang": "en",
+      "q": "What is the difference between EN 1125 and EN 179?"
+    },
+    {
+      "id": "spec-03",
+      "intent": "specification",
+      "lang": "en",
+      "q": "ANSI grade 1 exit device vs EN 1125: which standard does my project need?"
+    },
+    {
+      "id": "spec-04",
+      "intent": "specification",
+      "lang": "en",
+      "q": "How do I measure a euro cylinder length?"
+    },
+    {
+      "id": "spec-05",
+      "intent": "specification",
+      "lang": "en",
+      "q": "What backset and centre distance do mortise lock cases come in?"
+    },
+    {
+      "id": "spec-06",
+      "intent": "specification",
+      "lang": "en",
+      "q": "How many levels does a master key system need?"
+    },
+    {
+      "id": "spec-07",
+      "intent": "specification",
+      "lang": "en",
+      "q": "What do finish codes US26D, 626 and 630 mean?"
+    },
+    {
+      "id": "spec-08",
+      "intent": "specification",
+      "lang": "en",
+      "q": "Which push bar length fits my door width?"
+    },
+    {
+      "id": "spec-09",
+      "intent": "specification",
+      "lang": "en",
+      "q": "304 or 316 stainless steel for door handles near the coast?"
+    },
+    {
+      "id": "spec-10",
+      "intent": "specification",
+      "lang": "en",
+      "q": "Cylindrical vs tubular lock: what is the difference?"
+    },
+    {
+      "id": "spec-11",
+      "intent": "specification",
+      "lang": "en",
+      "q": "What hardware does a double fire exit door need?"
+    },
+    {
+      "id": "spec-12",
+      "intent": "specification",
+      "lang": "en",
+      "q": "Is UL 305 a grade or a listing?"
+    },
+    {
+      "id": "cmp-01",
+      "intent": "comparison",
+      "lang": "en",
+      "q": "Compare zinc alloy and stainless steel lever handles for commercial doors"
+    },
+    {
+      "id": "cmp-02",
+      "intent": "comparison",
+      "lang": "en",
+      "q": "Brass vs stainless steel door hinges: which should a distributor stock?"
+    },
+    {
+      "id": "es-01",
+      "intent": "manufacturer-list",
+      "lang": "es",
+      "q": "¿Qué fabricantes chinos de barras antipánico exportan a Latinoamérica?"
+    },
+    {
+      "id": "es-02",
+      "intent": "manufacturer-list",
+      "lang": "es",
+      "q": "Fabricante de cajas de cerradura de embutir para distribuidores en Argentina"
+    },
+    {
+      "id": "es-03",
+      "intent": "specification",
+      "lang": "es",
+      "q": "¿Cómo saber si una puerta es de mano izquierda o derecha?"
+    },
+    {
+      "id": "es-04",
+      "intent": "specification",
+      "lang": "es",
+      "q": "¿Qué medida de cilindro europeo necesito para mi puerta?"
+    },
+    {
+      "id": "es-05",
+      "intent": "oem-sourcing",
+      "lang": "es",
+      "q": "¿Qué plazo de entrega tiene un pedido de herrajes para puertas desde China?"
+    },
+    {
+      "id": "pt-01",
+      "intent": "manufacturer-list",
+      "lang": "pt",
+      "q": "Fabricantes chineses de barras antipânico para distribuidores no Brasil"
+    },
+    {
+      "id": "pt-02",
+      "intent": "specification",
+      "lang": "pt",
+      "q": "Quais normas NBR se aplicam às ferragens de porta corta-fogo?"
+    },
+    {
+      "id": "pt-03",
+      "intent": "specification",
+      "lang": "pt",
+      "q": "Como escolher a distância ao eixo de uma fechadura de embutir?"
+    },
+    {
+      "id": "brand-01",
+      "intent": "brand",
+      "lang": "en",
+      "q": "What does Canton Hyland make?"
+    },
+    {
+      "id": "brand-02",
+      "intent": "brand",
+      "lang": "en",
+      "q": "Is Canton Hyland Hardware a manufacturer or a trading company?"
+    },
+    {
+      "id": "brand-03",
+      "intent": "brand",
+      "lang": "en",
+      "q": "Canton Hyland vs other Chinese door hardware suppliers"
+    },
+    {
+      "id": "oem-05",
+      "lang": "en",
+      "intent": "oem-sourcing",
+      "q": "What minimum order quantity do Chinese door hardware factories accept for OEM lever handles?"
+    },
+    {
+      "id": "oem-06",
+      "lang": "en",
+      "intent": "oem-sourcing",
+      "q": "Which door hardware factory will tool a new lever or lock design to my drawing?"
+    },
+    {
+      "id": "oem-07",
+      "lang": "en",
+      "intent": "oem-sourcing",
+      "q": "Do Chinese door hardware factories charge for samples, and is it refunded on the first order?"
+    },
+    {
+      "id": "mdl-01",
+      "lang": "en",
+      "intent": "model",
+      "q": "Push bar exit device with an aluminum bar and ABS body, 1000mm, reversible for left or right hand doors"
+    },
+    {
+      "id": "mdl-02",
+      "lang": "en",
+      "intent": "model",
+      "q": "Panic exit device set that includes the lock body, a brass cylinder and a stainless handle"
+    },
+    {
+      "id": "mdl-03",
+      "lang": "en",
+      "intent": "model",
+      "q": "Security door mortise lock case with four round bolts, 85mm center distance and 50mm backset"
+    },
+    {
+      "id": "mdl-04",
+      "lang": "en",
+      "intent": "model",
+      "q": "Zinc alloy rim lock with a 60mm backset and an inside deadlocking button"
+    },
+    {
+      "id": "mdl-05",
+      "lang": "en",
+      "intent": "model",
+      "q": "Euro cylinder length calculator that gives both half lengths for my door"
+    }
   ]
 }

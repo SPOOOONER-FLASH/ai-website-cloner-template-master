@@ -761,7 +761,10 @@ export function auditBuild({ outDir }) {
             // TechArticle as well as NewsArticle: an evergreen guide carries its own
             // datePublished and is typed TechArticle so it is not treated as news.
             .filter((node) => (node["@type"] === "NewsArticle" || node["@type"] === "TechArticle") && isNonEmptyString(node.datePublished))
-            .map((node) => node.datePublished)
+            // lastmod is the last content revision (site-sitemap.ts uses updatedAt), which the
+            // page states as dateModified. Until 2026-09-29 only datePublished counted, so the
+            // first revised guides (updatedAt stamped by stamp-article-revisions) failed here.
+            .flatMap((node) => [node.datePublished, ...(isNonEmptyString(node.dateModified) ? [node.dateModified] : [])])
           : []
       ));
       if (trackedDates.length === 0) {

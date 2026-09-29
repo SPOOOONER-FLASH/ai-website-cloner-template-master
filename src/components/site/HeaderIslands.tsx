@@ -29,14 +29,71 @@ import type { Locale } from "@/data/locales";
   search-matching library. `ssr: false` is safe here because a closed overlay renders
   nothing, so there is no server HTML to lose; the chunk arrives on first open instead.
 */
-const SearchDialog = dynamic(() =>
-  import("./SearchDialog").then((module) => module.SearchDialog),
-  { ssr: false },
-);
-const SiteMenuDrawer = dynamic(() =>
-  import("./SiteMenuDrawer").then((module) => module.SiteMenuDrawer),
-  { ssr: false },
-);
+const loadSearchDialog = () => import("./SearchDialog").then((module) => module.SearchDialog);
+const loadMenuDrawer = () => import("./SiteMenuDrawer").then((module) => module.SiteMenuDrawer);
+
+const SearchDialog = dynamic(loadSearchDialog, { ssr: false });
+const SiteMenuDrawer = dynamic(loadMenuDrawer, { ssr: false });
+
+/**
+ * Fetch an overlay's chunk BEFORE it is asked for. Client 2026-09-29:「首次点击侧边栏会卡顿」.
+ *
+ * Splitting the overlays out was right — the header is in the root layout, so a static
+ * import would hydrate the whole search-matching library on every article page. But
+ * "the chunk arrives on first open" meant the user paid for the download at the worst
+ * possible moment: the hamburger is tapped, and nothing happens until the network
+ * answers. On a phone on 4G that is the whole of the delay, and it happens once per
+ * visit, which is exactly when the buyer is deciding whether this site is well built.
+ *
+ * Warming the chunk instead keeps both: it is still out of the initial bundle, so first
+ * paint and hydration are unchanged, but by the time anyone reaches for the menu the
+ * module is already parsed and the open is synchronous.
+ *
+ * Idempotent because `import()` caches its module promise, so the hover, the focus and
+ * the idle callback below all resolve to the same fetch; the rejection is swallowed
+ * because a failed prefetch must not surface — the real click retries and can report.
+ */
+function warmOverlays() {
+  void loadSearchDialog().catch(() => {});
+  void loadMenuDrawer().catch(() => {});
+}
+
+/**
+ * The prefetch, on the browser's own idle time.
+ *
+ * `requestIdleCallback` rather than an effect that runs immediately: the chunk must not
+ * compete with the hero image or the fonts for the bandwidth of the first second, and it
+ * is not needed until a human moves. Safari still has no `requestIdleCallback`, so it
+ * falls back to a timeout — the point is "after the page has settled", not a precise
+ * moment. The hover and focus handlers on the buttons cover anyone who arrives sooner.
+ */
+function useWarmOverlays() {
+  useEffect(() => {
+    const idle = (window as unknown as { requestIdleCallback?: (cb: () => void) => number })
+      .requestIdleCallback;
+    if (idle) {
+      const handle = idle(warmOverlays);
+      const cancel = (window as unknown as { cancelIdleCallback?: (h: number) => void }).cancelIdleCallback;
+      return () => cancel?.(handle);
+    }
+    const timer = window.setTimeout(warmOverlays, 1500);
+    return () => window.clearTimeout(timer);
+  }, []);
+}
+
+/**
+ * The same warm-up, for anyone who reaches a button before the idle callback has run.
+ *
+ * `onPointerEnter` covers a mouse, which arrives milliseconds before the click and is
+ * the whole window on desktop. `onTouchStart` is what matters on a phone, where there is
+ * no hover at all: it fires on finger-down, ahead of the click that follows it, and that
+ * head start is usually enough on its own. `onFocus` covers the keyboard.
+ */
+const OVERLAY_WARMUP = {
+  onPointerEnter: warmOverlays,
+  onTouchStart: warmOverlays,
+  onFocus: warmOverlays,
+} as const;
 
 export type ShelfName = "products" | "company" | "buy" | "resources";
 
@@ -84,6 +141,7 @@ export function HeaderProvider({
   children: ReactNode;
 }) {
   const pathname = usePathname();
+  useWarmOverlays();
   const headerRef = useRef<HTMLDivElement>(null);
   const [navOverflows, setNavOverflows] = useState(false);
   const menuTriggerRef = useRef<HTMLButtonElement>(null);
@@ -383,6 +441,7 @@ export function HeaderSearchButton({ label, children }: { label: string; childre
       aria-label={label}
       aria-expanded={searchOpen}
       onClick={openSearch}
+      {...OVERLAY_WARMUP}
       className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
     >
       {children}
@@ -405,6 +464,7 @@ export function HeaderMenuButton({ label, children }: { label: string; children:
         setOpenShelf(null);
         openMenu(event.currentTarget);
       }}
+      {...OVERLAY_WARMUP}
       className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
     >
       {children}
