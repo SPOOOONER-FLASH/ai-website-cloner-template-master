@@ -2,15 +2,60 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
-import type { FamilyMember, VariantFamily } from "@/lib/product-variants";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
+/*
+  Declared here rather than imported from src/lib/product-variants: this file is a client
+  module, and scripts/build-i18n-client-ui.mjs treats every module it imports — type-only
+  or not — as client-reachable. Importing the lib pulled src/data/finish-codes.ts, and with
+  it 77 order-code notes, into all seven browser bundles (+108 KB) on 2026-09-29.
+*/
+export interface StudioImage {
+  src: string;
+  ratio: string;
+  label: string;
+}
+
+export interface StudioMember {
+  slug: string;
+  model: string;
+  /** Finish code(s), `+`-joined for two-tone; empty when the code carries no finish. */
+  finish: string;
+  /** Function code; empty when the code carries none. */
+  fn: string;
+  heroImage: StudioImage;
+}
+
+export interface StudioFamily {
+  key: string;
+  base: string;
+  categoryPath: string[];
+  name: string;
+  subName: string | null;
+  members: StudioMember[];
+}
+
 export interface StudioData {
   ranges: { slug: string; name: string }[];
-  families: (VariantFamily & { subName: string | null })[];
+  families: StudioFamily[];
   finishNames: Record<string, string>;
   functionNames: Record<string, string>;
+}
+
+/** Every sentence this component prints, resolved on the server for the page's locale. */
+export interface StudioLabels {
+  range: string;
+  model: string;
+  finish: string;
+  fn: string;
+  orderCode: string;
+  configuration: string;
+  reset: string;
+  /** Carries `{model}`. */
+  quote: string;
+  productPage: string;
+  note: string;
 }
 
 type StepKey = "range" | "model" | "finish" | "fn";
@@ -37,10 +82,10 @@ const noSubscribe = () => () => {};
  * lets the page render on the server with a default part — the static export has no
  * server to answer a query string, and a Suspense fallback here would be the page.
  */
-export function ConfiguratorStudio({ data }: { data: StudioData }) {
+export function ConfiguratorStudio({ data, labels, base = "" }: { data: StudioData; labels: StudioLabels; base?: string }) {
   const { families, ranges, finishNames, functionNames } = data;
   const bySlug = useMemo(() => {
-    const map = new Map<string, { family: StudioData["families"][number]; member: FamilyMember }>();
+    const map = new Map<string, { family: StudioFamily; member: StudioMember }>();
     for (const family of families) for (const member of family.members) map.set(member.slug, { family, member });
     return map;
   }, [families]);
@@ -115,10 +160,10 @@ export function ConfiguratorStudio({ data }: { data: StudioData }) {
   };
 
   const steps: { key: StepKey; title: string }[] = [
-    { key: "range", title: "Range" },
-    { key: "model", title: "Model" },
-    ...(finishes.length > 1 ? [{ key: "finish" as const, title: "Finish" }] : []),
-    ...(fns.length > 1 ? [{ key: "fn" as const, title: "Function" }] : []),
+    { key: "range", title: labels.range },
+    { key: "model", title: labels.model },
+    ...(finishes.length > 1 ? [{ key: "finish" as const, title: labels.finish }] : []),
+    ...(fns.length > 1 ? [{ key: "fn" as const, title: labels.fn }] : []),
   ];
   const done = steps.filter((s) => touched.has(s.key)).length;
   const complete = done === steps.length;
@@ -137,8 +182,8 @@ export function ConfiguratorStudio({ data }: { data: StudioData }) {
   ];
 
   const rangeFamilies = families.filter((f) => f.categoryPath[0] === family.categoryPath[0]);
-  const productHref = `/products/${family.categoryPath[0]}/${member.slug}/`;
-  const quoteHref = `/contact/?${new URLSearchParams({ model: member.model }).toString()}`;
+  const productHref = `${base}/products/${family.categoryPath[0]}/${member.slug}/`;
+  const quoteHref = `${base}/contact/?${new URLSearchParams({ model: member.model }).toString()}`;
 
   const incoming = member;
   const outgoing = previous && previous !== slug ? bySlug.get(previous)?.member : undefined;
@@ -171,8 +216,8 @@ export function ConfiguratorStudio({ data }: { data: StudioData }) {
         <div className="studio-card">
           <div className="flex flex-wrap items-start justify-between gap-24">
             <div>
-              <p className="text-c2 font-semibold text-ink">Order code</p>
-              <p className="studio-code mt-8" aria-label={`Order code ${member.model}`}>
+              <p className="text-c2 font-semibold text-ink">{labels.orderCode}</p>
+              <p className="studio-code mt-8" aria-label={`${labels.orderCode} ${member.model}`}>
                 {segments.map((s) => (
                   <span key={`${s.key}-${s.text}`} className={cn("studio-code-seg", !s.set && "studio-code-pending")}>
                     {s.text}
@@ -182,10 +227,10 @@ export function ConfiguratorStudio({ data }: { data: StudioData }) {
             </div>
             <div className="min-w-[16rem] flex-1">
               <div className="flex items-baseline justify-between">
-                <p className="text-c2 font-semibold text-ink">Configuration</p>
+                <p className="text-c2 font-semibold text-ink">{labels.configuration}</p>
                 {touched.size ? (
                   <button type="button" className="config-reset" onClick={() => setTouched(new Set())}>
-                    Reset
+                    {labels.reset}
                   </button>
                 ) : null}
               </div>
@@ -201,10 +246,10 @@ export function ConfiguratorStudio({ data }: { data: StudioData }) {
           </div>
           <div className="mt-24 flex flex-wrap gap-12">
             <Link href={quoteHref} className={cn("studio-action studio-action-primary", !complete && "studio-action-muted")}>
-              Request a quote for {member.model}
+              {labels.quote.replace("{model}", member.model)}
             </Link>
             <Link href={productHref} className="studio-action">
-              Product page ›
+              {labels.productPage} ›
             </Link>
           </div>
         </div>
@@ -285,11 +330,7 @@ export function ConfiguratorStudio({ data }: { data: StudioData }) {
           </section>
         ))}
 
-        <p className="mt-48 max-w-[52ch] text-c2 text-ink-secondary">
-          Every image here is a photograph of the model named under it. A finish or function
-          missing from a range is one the factory does not list for that model; ask us if you
-          need it.
-        </p>
+        <p className="mt-48 max-w-[52ch] text-c2 text-ink-secondary">{labels.note}</p>
       </div>
     </div>
   );
@@ -304,7 +345,7 @@ function Tile({
 }: {
   title: string;
   meta?: string;
-  image: FamilyMember["heroImage"];
+  image: StudioImage;
   selected: boolean;
   onSelect: () => void;
 }) {

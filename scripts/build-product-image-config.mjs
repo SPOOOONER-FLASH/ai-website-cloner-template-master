@@ -24,6 +24,8 @@
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import sharp from "sharp";
+import { studioShowcase } from "../src/lib/studio-showcase.ts";
 
 const CONFIG = "src/components/site/product-images.config.json";
 const PRODUCT_DIR = "content/products";
@@ -69,6 +71,18 @@ function homepageModels() {
   for (const row of demand.products) {
     if (row.model) models.add(row.model);
   }
+
+  /*
+    StudioShowcase — one model in every finish, chosen from the order-code families by
+    src/lib/studio-showcase.ts. That module is plain TypeScript with relative imports, so
+    node's type stripping loads it here and the component cannot pick a family this list
+    does not know about. Filtered to HYDE the way src/data/products.ts does (a record with
+    no `sites` field, or one naming "hyde"; a photograph is required to publish).
+  */
+  const hyde = products.filter(
+    (product) => (!product.sites || product.sites.includes("hyde")) && product.heroImage?.src,
+  );
+  for (const member of studioShowcase(hyde)?.members ?? []) models.add(member.model);
 
   return models;
 }
@@ -116,20 +130,27 @@ function hardCodedHomepageImages() {
   return found;
 }
 
+/*
+  The source width is measured, not assumed. Most plates are 1000px square and the AR-4
+  plates 1100px, but the D101 deadbolt in antique brass — which the studio showcase put on
+  the homepage on 2026-09-29 — is an 800px photograph, and the srcset generator refuses a
+  candidate as wide as its source. Measuring costs one header read per image and means a
+  smaller photograph simply gets fewer candidates instead of failing the build.
+*/
+async function sourceEntry(src) {
+  const { width } = await sharp(join("public", ...src.split("/").filter(Boolean))).metadata();
+  return { sourceWidth: width, variants: VARIANTS.filter((w) => w < width) };
+}
+
 const config = {};
 for (const model of homepageModels()) {
   const product = byModel.get(String(model).toUpperCase());
   const src = branded(product?.heroImage?.src);
   if (!src?.startsWith(BRANDED_PREFIX)) continue;
-  config[src] = { sourceWidth: 1000, variants: VARIANTS };
+  config[src] = await sourceEntry(src);
 }
 for (const src of hardCodedHomepageImages()) {
-  config[src] = { sourceWidth: 1000, variants: VARIANTS };
-}
-
-/* Sources are 1000px square for panic devices and 1100px for the AR-4 plates. */
-for (const [src, entry] of Object.entries(config)) {
-  if (src.includes("/argentina-ar4/")) entry.sourceWidth = 1100;
+  config[src] = await sourceEntry(src);
 }
 
 const sorted = Object.fromEntries(Object.entries(config).sort(([a], [b]) => a.localeCompare(b)));

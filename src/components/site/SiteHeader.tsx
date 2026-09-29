@@ -420,6 +420,14 @@ export function SiteHeader({
                 >
                   {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
                 </Link>
+                {/* The studio (09-29): finish and function switched on real photographs. Beside
+                    the Finder rather than a sixth rail item — fr/de rows already overflow. */}
+                <Link
+                  href={localisedHref("/configurator/studio", locale)}
+                  className="short-marker mt-12 inline-block text-c1 text-ink no-underline"
+                >
+                  {tx(locale, "Configurator Studio", { es: "Estudio de configuración", pt: "Estúdio de configuração" })}
+                </Link>
               </div>
               {/* Four columns of fifteen: the whole catalogue reachable in one hover
                   from any page, which is what the drawer already gives on a phone. */}
