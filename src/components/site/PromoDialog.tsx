@@ -4,7 +4,7 @@ import { localeFromPath } from "@/data/locales";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import type { PromoCard } from "@/data/types";
@@ -48,6 +48,12 @@ import { HydeLockup } from "./icons";
  * forced preview still carried the permanent dismissals).
  */
 const STORAGE_KEY = "canton-promo";
+const RAIL_LIFT_CLASSES = {
+  0: "bottom-16 xs:bottom-24",
+  80: "bottom-96 xs:bottom-104",
+  160: "bottom-176 xs:bottom-184",
+  240: "bottom-256 xs:bottom-264",
+} as const;
 
 interface StoredState {
   lastSeen: number;
@@ -110,6 +116,8 @@ function isSuppressed(now: number): boolean {
 
 export function PromoDialog() {
   const pathname = usePathname();
+  const railRef = useRef<HTMLElement>(null);
+  const [railLift, setRailLift] = useState<keyof typeof RAIL_LIFT_CLASSES>(0);
   const [open, setOpen] = useState(false);
   const [dismissed, setDismissed] = useState<string[]>([]);
 
@@ -184,7 +192,55 @@ export function PromoDialog() {
      vanished in a single frame until 2026-09-27. */
   const presence = useOverlayPresence(open && Boolean(activeCard));
 
+  useEffect(() => {
+    const rail = railRef.current;
+    const hero = document.querySelector('section[aria-roledescription="carousel"]');
+    if (!presence.rendered || surface !== "home" || !rail || !hero) return;
+
+    // Header notices and translated captions change the hero's position. Measure
+    // the real links instead of assuming that a short bottom rail clears them.
+    let frame = 0;
+    const measure = () => {
+      frame = 0;
+      if (rail.querySelector("details")?.open) return;
+      const previousLift = Number(rail.dataset.lift) || 0;
+      // --spacing is 0.1rem: browser font preferences change its pixel size.
+      const spacingPx = parseFloat(getComputedStyle(document.documentElement).fontSize) / 10;
+      const previous = previousLift * spacingPx;
+      const box = rail.getBoundingClientRect();
+      const baseTop = box.top + previous;
+      const baseBottom = box.bottom + previous;
+      let clearance = 0;
+      for (const link of hero.querySelectorAll<HTMLAnchorElement>(".hero-caption-slide a[href]")) {
+        const cta = link.getBoundingClientRect();
+        if (cta.width && cta.height && cta.bottom > 0 && cta.top < window.innerHeight &&
+            box.left < cta.right && box.right > cta.left && baseTop < cta.bottom && baseBottom > cta.top) {
+          clearance = Math.max(clearance, baseBottom - cta.top + 16);
+        }
+      }
+      const next = clearance > 160 * spacingPx ? 240 : clearance > 80 * spacingPx ? 160 : clearance > 0 ? 80 : 0;
+      if (next !== previousLift) setRailLift(next);
+    };
+    const schedule = () => { if (!frame) frame = window.requestAnimationFrame(measure); };
+    const observer = new ResizeObserver(schedule);
+    observer.observe(hero);
+    observer.observe(rail);
+    const details = rail.querySelector("details");
+    details?.addEventListener("toggle", schedule);
+    window.addEventListener("resize", schedule);
+    window.addEventListener("scroll", schedule, { passive: true });
+    schedule();
+    return () => {
+      window.cancelAnimationFrame(frame);
+      observer.disconnect();
+      details?.removeEventListener("toggle", schedule);
+      window.removeEventListener("resize", schedule);
+      window.removeEventListener("scroll", schedule);
+    };
+  }, [presence.rendered, surface, pathname, activeCard?.ctaHref]);
+
   if (!presence.rendered || !activeCard) return null;
+  const appliedLift = surface === "home" ? railLift : 0;
 
   return (
     /*
@@ -193,11 +249,13 @@ export function PromoDialog() {
       sits at bottom-right on desktop and stays inset from both mobile edges.
     */
     <aside
+      ref={railRef}
       aria-label={locale === "es" ? "Oferta destacada" : locale === "pt" ? "Oferta em destaque" : "Featured offer"}
       // Passive promotion stays below the sticky header's z-10 stacking context, so
       // user-requested search and menu overlays inside that header always remain usable.
-      className="overlay-presence fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
+      className={`overlay-presence fixed start-16 end-16 z-[5] xs:start-auto xs:end-24 xs:w-[360px] ${RAIL_LIFT_CLASSES[appliedLift]}`}
       data-state={presence.visible ? "open" : "closed"}
+      data-lift={appliedLift}
     >
       <div className="overlay-panel">
         <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
