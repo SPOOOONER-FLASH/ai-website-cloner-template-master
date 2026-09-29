@@ -86,7 +86,7 @@
 | 20 | LinkedIn 起步稿（《出海做 GEO 为什么要运营领英》）：公司主页 About 三语无关，只写英文；3 篇首发帖，事实全部取自已发布指南；发布动作归甲方 | 09-28 完成：`docs/copy/linkedin-starter.md`（主页简介 + 3 帖，事实全取自官网；公司名暂用品牌名）；建主页、发帖归甲方（runbook ②） |
 | 21 | 公司英文名三个版本（官网 Hardware (Group) / 展位 lock Co.,Ltd / 付款 Hardware & Locks）→ 实体一致性，写进 runbook 请甲方定 | 待问 |
 | 22 | 桌面总结文档（学到什么 / 做了什么 / 完成什么）+ runbook 新增甲方要做的事 + agent-update | 09-28 完成：`docs/collaboration/reports/2026-09-28-geo-learnings.md` → 桌面 `hydeGEO-学习与进展-2026-09-28.docx`（`node scripts/build-geo-report.mjs`）；runbook 第一屏加四件并重出 Word；18 行的题库改为并入已有基线 `docs/geo/`（37→45 题），删掉重复文件 |
-| 23 | 34 篇指南 `relatedModels` 为空（QuickCreator SEO/GEO 会话交接：补上后分类页的选型区块会自动挂文章链接），按正文里真正讨论的型号补，不硬塞 | 待做 |
+| 23 | 34 篇指南 `relatedModels` 为空（QuickCreator SEO/GEO 会话交接：补上后分类页的选型区块会自动挂文章链接），按正文里真正讨论的型号补，不硬塞 | 09-28 完成：7 篇补上（307+311 五篇出口装置与认证类、311+AR4 四款锁体的开模指南、B024/B025 黄铜合页），全是正文里点名讨论的型号；其余 27 篇正文不讨论具体型号，保持为空，不硬塞（201/300/564 等是钢种、起订量、行数，不是型号） |
 
 
 ## 待甲方确认（文案）
