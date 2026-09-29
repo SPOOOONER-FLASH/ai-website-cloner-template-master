@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 606 次提交
+最近 30 天 · 共 609 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:09 | 中立 | GEO 学习报告（桌面 Word 生成器）、LinkedIn 起步稿、基线题库补 8 题、runbook 新增四件 | `140a6bde026` |
+| 23:04 | HYDE | GEO：零品牌词题库与季度记录表；文章开头审计生成器；5 篇指南摘要首句改为直接答案（三语） | `1dc45d20707` |
+| 22:11 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d443a245335 | `bdb5523d715` |
 | 21:52 | 中立 | Record BAU/AR4 push transport failure and verified SSH fallback | `48ad6ba369e` |
 | 21:41 | HYDE | 合并本地提交（ship 旁路合并） | `e6e4b160dcf` |
 | 21:22 | 中立 | Merge verified HYDE desktop and inquiry feedback changes | `f3d73b76c34` |
