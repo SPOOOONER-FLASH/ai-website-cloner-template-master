@@ -600,7 +600,7 @@ export const FEATURE_LINES_PT: Record<string, string> = {
   "Angled strike (standard) for inward-opening doors":
     "Contra-testa angular (padrão) para portas de abertura para dentro",
   "Single Cylinder: Key and inside knob operate latch, with anti-pick slide gate":
-    "Cilindro simples: chave e pomo interno acionam o trinco, com lingueta antiabertura",
+    "Cilindro simples: chave e pomo interno acionam o trinco, com trinco antiabertura",
   "Double Cylinder: Key operation from both sides":
     "Cilindro duplo: operação por chave pelos dois lados",
   "Double Cylinder: Operated by key on both sides":
