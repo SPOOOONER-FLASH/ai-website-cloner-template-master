@@ -71,3 +71,29 @@ HYDE lane only；未碰 RAYEN，未碰 `out/`。
 - **本次未发布。** 六条 feed 的 `<language>` 要等下一次 `release:hyde` 才会更新。
   发布后跑一次 `npm run seo:feeds`，应当 10/10 通过。
 - `src/lib/article-feed.ts` 我动了 `CHANNEL` 的推导那几行，标题与描述未动。
+
+---
+
+## 追加（同日）：领英移到人头与履历旁边
+
+甲方：「领英加在人头那边吧 履历那儿」。`AuthorProfile.tsx` 原来把领英链接排在介绍段之后，
+现在移到学位那一行的紧下面，和照片、姓名、职位、学位同一块。
+
+理由写进了代码注释：这四样回答的是同一个问题 —— 这人是不是这家工厂的真人 —— 而问这个
+问题的买家是在核对，不是在读。唯一可核验的那条链接排在一段散文之后，等于把它挪出了被核对
+的那一块。十个语种共用这个组件，`ui.json` 里七种 overlay 的「LinkedIn profile」译文早已齐全。
+
+**未做浏览器验证**：本机 `npm run dev` 的 postcss loader 在 `globals.css` 上超时崩溃
+（application-code 136ms，崩的是 CSS 管线），与本次改动无关。已验证的是 lint 0 errors、
+typecheck clean、`npm test` 443 passed；改动本身是同级 JSX 节点的顺序调整。
+**下次发布后请看一眼 `/company/johnson-liu/`**，和那六条 feed 的 `<language>` 一起确认。
+
+## runbook 合并说明
+
+合并 origin/main 时 `CLIENT-RUNBOOK.md` 冲突：文案会话同日在第一屏加了 Bing 重新检查，
+以及公司名、LinkedIn 公司主页、AI 可见度摸底、GSC 导出四件。两边都保留，我那节改成
+「不用做了：十条 RSS 已上线并验证」并移到三节「现在要做的」之后 —— 第一屏只放要动手的事。
+
+**「还欠我的东西」里我原本写的「LinkedIn 公司主页网址」和文案会话的第 ② 件是同一件事**，
+已改成指向 ②，只留归属那一句（个人主页已在作者页生效，不能拿去当 Organization 的 sameAs）。
+一件事一个地方。`SHIPLOG.md` 的冲突取远端，由 `ship` 重新生成。
