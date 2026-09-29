@@ -12,6 +12,7 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 21:22 | 中立 | Merge verified HYDE desktop and inquiry feedback changes | `f3d73b76c34` |
 | 20:06 | 中立 | NOW.md：待发布行加上 /sitemap-index.xml | `d4b378ed403` |
 | 20:06 | 中立 | internal-link-placement：/sitemap-index.xml 列入豁免（给搜索引擎的 XML，不是页面） | `81e96cdf656` |
 | 19:44 | HYDE | Bing 两条 High 报错：新增 /sitemap-index.xml（一次提交覆盖十个 sitemap）；runbook 第一屏写重新提交与重新检查步骤 | `ecd3643a82c` |
@@ -728,5 +729,4 @@
 | 21:52 | 发布 HYDE | 发布首页与新闻独立编辑影像 | `2460ad96840` |
 | 21:50 | HYDE | 更新首页与新闻独立编辑影像 | `706e95be26b` |
 | 21:25 | 发布 HYDE | 发布产品图片平滑跟随放大 | `1149011afc8` |
-| 21:22 | 中立 | 上线产品图片平滑跟随放大 | `974807be132` |
 
