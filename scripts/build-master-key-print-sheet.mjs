@@ -125,7 +125,7 @@ const html = `<!doctype html>
 <body>
 
 <h1>${esc(payload.meta.title)}</h1>
-<p class="sub">Canton Hyland Hardware (Group) Co., Ltd. · cantonlock.com${esc(payload.meta.article)}</p>
+<p class="sub">Canton Hyland Hardware &amp; Building Material Co., Ltd. · cantonlock.com${esc(payload.meta.article)}</p>
 
 <ul class="intro">
   ${payload.intro.map((line) => `<li>${esc(line)}</li>`).join("\n  ")}
