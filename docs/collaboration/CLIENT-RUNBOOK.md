@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-28 · 更新人：Claude：三件待办 —— Bing 两条报错重新检查（已修好）；等我说部署好后提交 9 条 RSS；AI 来源追踪三步**
+**最后更新：2026-09-28 · 更新人：Claude（Hyde 文案）：新增公司名、LinkedIn、AI 可见度摸底、GSC 未收录导出四件**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -206,6 +206,55 @@ Google 通常几天内开始抓。RSS 的作用是让它**更快发现新文章*
 
 我能从外面测到的前提都在（2026-09-28 实测）：security.txt 200；robots.txt 列出 10 份 sitemap；/sitemap.xml 1.55 MB；/de/sitemap.xml 200、683 个网址；/de/ /de/products/ /fr/ /ar/products/ 都是 200；页面上 GA4（G-RBTE7KF82P）在。
 后台里的动作（Search Console、GA4、Cloudflare、Bing）只有你看得到，我测不了；哪一项后台报错了，截图发我。
+
+---
+
+## 现在要做的（2026-09-28，文案会话）：四件，都不碰服务器
+
+### ① 定公司英文全称 —— 回我一句话就行
+
+现在外面流通着三个英文名，AI 和买家会以为是三家公司：
+
+| 在哪里 | 写的是 |
+|---|---|
+| 官网（公司页、FAQ、产品描述、结构化数据） | Canton Hyland Hardware (Group) Co., Ltd. |
+| BAU 2027 展位登记 | Canton Hyland lock Co.,Ltd |
+| 付给展会的银行汇款 | Canton Hyland Hardware & Locks Co., Ltd. |
+
+**你要做的**：看一下营业执照上的英文名，回我“官网用 ×××”。我把官网全部改成这一个；展会那边的更正邮件 BAU 会话 09-25 已起草，用同一个名字发。
+**不确定就别猜**：执照上没有英文名的话，告诉我中文全称，我们再定。
+
+### ② 建 LinkedIn 公司主页，发 3 篇帖 —— 约 30 分钟
+
+文章结论：B2B 买家和 AI 搜索都大量读 LinkedIn，而且看重“真人 + 公司”。我们现在没有公司主页，官网的结构化数据里也就没有这条身份证明。
+
+1. 用你自己的 LinkedIn 账号登录 https://www.linkedin.com → 右上角 **For Business（业务）** → **Create a Company Page（创建公司主页）** → 选 **Company**。
+2. 名称、网址、行业、规模、简介：全部照抄 `docs/copy/linkedin-starter.md` 的「公司主页」一节（桌面 `hyde\GEO-学习与进展-2026-09-28.docx` 里也有）。Logo 用官网那张。
+3. **成功的样子**：主页地址像 `https://www.linkedin.com/company/xxxx/`。**把这个地址发给我**，工程会话会把它加进官网的结构化数据。
+4. 发帖：先发第 1、2 篇（锁芯计算器、EN 1125 vs EN 179），用公司主页发，也可以用你个人账号转发。**第 3 篇（BAU）等老板确认带哪几款产品之后再发**。
+5. 看不到「创建公司主页」：LinkedIn 要求账号用了一段时间、有真实姓名和一个联系人，截图发我。
+
+### ③ AI 可见度第一次摸底 —— 约 2 小时，可以分几天
+
+题库和规则在 `docs/geo/README.md`（桌面文档附录二）。45 道题，除最后 3 道品牌题外都不含我们的名字。空白记录表用 `npm run geo:baseline` 打印，工程会话可以替你打。
+
+1. 在 ChatGPT、Gemini、Perplexity 各问一遍，Google 搜同样的句子看顶部的 AI 概览。**一字不改地复制粘贴**。
+2. 每题每个平台问 3 次，按记录表填：有没有提到我们、排第几、怎么描述我们、有没有引用 cantonlock.com 的网址。ChatGPT 用临时聊天；其他平台用未登录或没有历史的会话。
+3. 做不完没关系，先做 mfr-01 到 mfr-08（找制造商那组）也有用。填好的表发我，放进 `docs/geo/results/`。
+4. **这是基线**：以后每季度同一套题再问一次，看数字变化。第一次多半是 0，这本身就是结论，不是失败。
+
+### ④ Search Console 导出两张“没收录”清单 —— 5 分钟
+
+1. 打开 https://search.google.com/search-console → 左上角选 **cantonlock.com** → 左侧 **网页**（Pages）。
+2. 往下拉到「为什么网页未编入索引」，点 **已抓取 - 尚未编入索引**（Crawled – currently not indexed）→ 右上角 **导出** → **下载 CSV**。
+3. 回到上一页，再点 **已发现 - 尚未编入索引**（Discovered – currently not indexed）→ 同样导出。
+4. 两个文件发我。前一张说明 Google 看过但觉得不值得收，要改内容；后一张是还没来抓，要加内链。**不要**对着这些网址一条条点“请求编入索引”，没用。
+5. 列表里没有这两项：说明目前没有这类问题，截个图告诉我就行。
+
+### 还在等你的（BAU 专栏，不急但上线前要有）
+
+- 老板确认 BAU 带哪几款：现在页面上是 307、311、305、LC14、564 和主匙系统。
+- 预约邮件发到 tec@cantonlock.com，谁负责回复客户确认时间。
 
 ---
 
