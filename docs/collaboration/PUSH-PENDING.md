@@ -167,3 +167,14 @@
 - `5c104750057` 十个语种各一条 RSS；此前只有英文，es/pt 路由并不存在
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/28 23:08:44 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging package.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `dbb05084861` shiplog: 更新上线存档
+- `44b4c7ab034` feed 的 <language> 去掉没人决定过的地区码；runbook 换成实测命令
+
+下一次 `npm run ship` 成功时这些会一起推上去。
