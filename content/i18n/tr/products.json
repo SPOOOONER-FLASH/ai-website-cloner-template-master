@@ -2238,7 +2238,7 @@
   },
   "311-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar.",
+    "summary": "ABS plastik ve alüminyum panik çıkış cihazı.",
     "features": [
       "Çok fonksiyonlu kilitleme seçenekleri:",
       "• İki taraftan anahtarla kilitleme; dışarıdan kol ve anahtarla, içeriden panik barla açma",
@@ -2248,7 +2248,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Alüminyum alaşım gövde, demir bar"
+        "value": "Alüminyumlu ABS plastik malzeme"
       },
       {
         "label": "Set Includes",
