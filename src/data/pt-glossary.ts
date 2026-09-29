@@ -262,11 +262,11 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   Feature: "Característica",
   Features: "Características",
   Chassis: "Chassi",
-  Latch: "Lingueta",
+  Latch: "Trinco",
   "Latch options": "Opções de trinco",
   "Latch Components": "Componentes do trinco",
   "Latch & Puller": "Trinco e puxador",
-  Deadbolt: "Trinco",
+  Deadbolt: "Trava",
   Body: "Corpo",
   "Main body": "Corpo principal",
   "Inner body": "Corpo interno",
@@ -551,10 +551,10 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Grab Bar": "Barra de apoio",
   "Flip-Up Grab Bar": "Barra de apoio rebatível",
   Indicator: "Indicador",
-  Latch: "Lingueta",
+  Latch: "Trinco",
   /* Added when the guard stopped the first run: 11 deadbolt records and 3 knobs. */
-  Deadbolts: "Trincos",
-  Deadbolt: "Trinco",
+  Deadbolts: "Travas",
+  Deadbolt: "Trava",
   "Door Knob": "Pomo de porta",
 };
 
@@ -720,7 +720,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Wall-mount": "Fixação na parede",
   "1–8 hooks available": "De 1 a 8 ganchos",
   "Panic exit devices": "Barras antipânico",
-  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch. */
+  /* 306 PS / 306-S, added 2026-09-24. `trinco` is this file's latch — see the header. */
   "Passage, no latch bolt": "Passagem livre, sem trinco",
   "A separate lock case, supplied to suit":
     "Caixa de fechadura separada, fornecida conforme a aplicação",
@@ -1675,8 +1675,8 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "51mm, replaces most existing locksets":
     "51 mm, substitui a maioria das fechaduras existentes",
   "Brass rolling latch": "Trinco rolante de latão",
-  "Square latch": "Trinco quadrada",
-  "Beveled latch structure": "Trinco chanfrada",
+  "Square latch": "Trinco quadrado",
+  "Beveled latch structure": "Trinco chanfrado",
   "Euro profile": "Perfil europeu",
   "Euro Profile Mortise Lock": "Fechadura de embutir de perfil europeu",
   "Trim handle · outside lever for panic exit devices":
@@ -1777,7 +1777,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Satin nickel, chrome, antique brass, polished brass,all available":
     "Níquel acetinado, cromado, latão antigo, latão polido, todos disponíveis",
   "60mm / 70mm adjustable, latch and deadbolt both":
-    "60 mm / 70 mm ajustável, lingueta e trinco",
+    "60 mm / 70 mm ajustável, trinco e trava",
   "Solid brass/Zinc & brass cylinder": "Latão maciço / cilindro de zamak e latão",
   "60/70mm adjustable tubular latch": "Trinco tubular ajustável 60/70 mm",
   "zinc alloy / Solid brass/Zinc & brass cylinder":

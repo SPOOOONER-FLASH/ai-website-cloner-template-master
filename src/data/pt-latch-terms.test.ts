@@ -17,12 +17,35 @@ import test from "node:test";
 const isLatch = (en: string) => /\blatch(es)?\b/i.test(en) && !/\bdead\s?bolt/i.test(en);
 const isDead = (en: string) => /\bdead\s?bolt(s)?\b/i.test(en) && !/\blatch(es)?\b/i.test(en);
 
-/** Every `"English": "Portuguese"` pair in a translation table, value allowed to wrap. */
+/**
+ * Every English → Portuguese pair in a translation table.
+ *
+ * BOTH key spellings, and that is the whole point of this function.
+ *
+ * The first version matched only `"English": "Portuguese"`. TypeScript lets a key that is
+ * a valid identifier go unquoted, so the single-word rows are written `Latch: "Lingueta"`
+ * — and the regex walked straight past all five of them. The table pass that used the
+ * same pattern left them behind, and this test then reported the file clean: `Latch`
+ * still said `Lingueta` and `Deadbolt` still said `Trinco`, which is exactly the swap
+ * everything else had just been corrected out of.
+ *
+ * It is the second time in this work that unquoted single-word keys have hidden rows from
+ * a matcher — the glossary audit earlier reported 86 missing keys instead of 12 for the
+ * same reason. A matcher over source text has to accept every spelling the language does.
+ */
 function pairs(file: string): Array<[string, string]> {
-  const src = readFileSync(file, "utf8");
-  return [...src.matchAll(/"((?:[^"\\\n]|\\.){3,300})":\s*\n?\s*"((?:[^"\\\n]|\\.){2,600})"/g)].map(
-    ([, en, pt]) => [en, pt] as [string, string],
-  );
+  const lines = readFileSync(file, "utf8").split("\n");
+  const out: Array<[string, string]> = [];
+  for (let i = 0; i < lines.length; i++) {
+    /* `"English": "Portuguese"` or `English: "Portuguese"`, on one line or wrapped to two. */
+    const key = /^\s*(?:"((?:[^"\\]|\\.)+)"|([A-Za-z_$][\w$]*))\s*:\s*(.*)$/.exec(lines[i]);
+    if (!key) continue;
+    const en = key[1] ?? key[2];
+    const rest = key[3].trim() || (lines[i + 1] ?? "").trim();
+    const value = /^"((?:[^"\\]|\\.)*)"/.exec(rest);
+    if (value) out.push([en, value[1]]);
+  }
+  return out;
 }
 
 for (const file of ["src/data/pt-glossary.ts", "src/data/pt-features.ts"]) {
