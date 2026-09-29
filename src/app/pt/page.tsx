@@ -11,6 +11,7 @@ import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
+import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home-pt";
 import { siteName } from "@/data/site";
@@ -47,6 +48,7 @@ export default function PortugueseHomePage() {
       <div className="modules">
         {/* Same position as the English page. See there for why it leads. */}
         <DemandShowcase locale="pt" />
+        <StudioShowcase locale="pt" />
         <Spacer heights={content.spacers.s96} />
 
         <BauShowcase locale="pt" />

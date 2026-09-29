@@ -2092,3 +2092,278 @@
     transform: none;
   }
 }
+
+/* -- Configurator studio -------------------------------------------------- */
+/*
+  FSB's product-finder layout: stage on the left, choices in a column on the right.
+  The stage is sticky so the part stays in view while the tiles scroll under the reader's
+  hand, which is what makes a finish change visible at the moment it is made. On a phone
+  the stage sticks to the top at a reduced height for the same reason.
+*/
+@layer components {
+  .studio {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    background: var(--color-surface-alt);
+  }
+
+  @media (min-width: 64rem) {
+    .studio {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      align-items: start;
+    }
+  }
+
+  .studio-stage {
+    position: sticky;
+    top: var(--studio-top, 0px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 36vh;
+    padding: 1.6rem;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  @media (min-width: 64rem) {
+    .studio-stage {
+      height: calc(100vh - var(--studio-top, 0px));
+      padding: 4.8rem;
+      border-bottom: 0;
+      border-right: 1px solid var(--color-line);
+    }
+  }
+
+  .studio-stage-frame {
+    position: relative;
+    width: min(100%, 72vh);
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+  }
+
+  @media (max-width: 63.99rem) {
+    .studio-stage-frame {
+      width: auto;
+      height: calc(100% - 2.8rem);
+    }
+  }
+
+  .studio-stage-layer {
+    position: absolute;
+    inset: 0;
+  }
+
+  .studio-stage-caption {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+  }
+
+  .studio-panel {
+    padding: 3.2rem 1.6rem 9.6rem;
+  }
+
+  @media (min-width: 64rem) {
+    .studio-panel {
+      padding: 4.8rem 4.8rem 14.4rem;
+    }
+  }
+
+  .studio-card {
+    padding: 2.4rem;
+    background: var(--color-surface);
+  }
+
+  .studio-code {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: var(--text-h3);
+    line-height: 1.1;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-ink);
+  }
+
+  .studio-code-seg {
+    transition: color var(--motion-medium) var(--motion-ease-crisp);
+  }
+
+  .studio-code-pending {
+    color: var(--color-ink-tertiary);
+  }
+
+  .studio-progress {
+    position: relative;
+    flex: 1;
+    height: 0.3rem;
+    overflow: hidden;
+    background: var(--color-line);
+  }
+
+  .studio-progress-bar {
+    position: absolute;
+    inset: 0;
+    background: var(--color-ink);
+    transform-origin: left center;
+    transition: transform var(--motion-slow) var(--motion-ease);
+  }
+
+  .studio-action {
+    display: inline-flex;
+    align-items: center;
+    min-height: 4.4rem;
+    padding: 1rem 1.6rem;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink);
+    background: var(--color-surface-alt);
+    text-decoration: none;
+    transition: background-color var(--motion-fast) var(--motion-ease-crisp),
+      color var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .studio-action:hover,
+  .studio-action:focus-visible {
+    background: var(--color-line);
+  }
+
+  .studio-action-primary {
+    color: var(--color-surface);
+    background: var(--color-ink);
+  }
+
+  .studio-action-primary:hover,
+  .studio-action-primary:focus-visible {
+    background: var(--color-ink-secondary);
+  }
+
+  /* Still a working link: a buyer may know the code and want to ask before choosing. */
+  .studio-action-muted {
+    color: var(--color-ink-secondary);
+    background: var(--color-surface-alt);
+  }
+
+  .studio-dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid var(--color-ink-secondary);
+    border-radius: 50%;
+    transition: background-color var(--motion-medium) var(--motion-ease-crisp);
+  }
+
+  .studio-dot-set {
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+  }
+
+  .studio-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+
+  @media (min-width: 40rem) {
+    .studio-tiles {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .studio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 1.6rem;
+    text-align: start;
+    background: var(--color-surface);
+    border: 1px solid transparent;
+    transition: border-color var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .studio-tile:hover,
+  .studio-tile:focus-visible {
+    border-color: var(--color-ink-secondary);
+  }
+
+  .studio-tile-selected,
+  .studio-tile-selected:hover {
+    border-color: var(--color-ink);
+  }
+
+  .studio-tile-title {
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+
+  .studio-tile-meta {
+    margin-top: 0.2rem;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .studio-tile-media {
+    display: block;
+    width: 72%;
+    margin: 1.2rem auto 0;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .studio-stage-in {
+      animation: studio-stage-in var(--motion-slow) var(--motion-ease) both;
+    }
+
+    .studio-stage-out {
+      animation: studio-stage-out var(--motion-slow) var(--motion-ease) both;
+    }
+
+    .studio-code-seg {
+      animation: spec-slot-in var(--motion-enter) var(--motion-ease-crisp) both;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .studio-stage-out {
+      display: none;
+    }
+
+    .studio-progress-bar,
+    .studio-code-seg,
+    .studio-dot,
+    .studio-tile,
+    .studio-action {
+      transition: none;
+    }
+  }
+
+  @keyframes studio-stage-in {
+    from {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes studio-stage-out {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+  }
+}
