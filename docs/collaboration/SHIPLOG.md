@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 604 次提交
+最近 30 天 · 共 607 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 20:06 | 中立 | NOW.md：待发布行加上 /sitemap-index.xml | `d4b378ed403` |
+| 20:06 | 中立 | internal-link-placement：/sitemap-index.xml 列入豁免（给搜索引擎的 XML，不是页面） | `81e96cdf656` |
+| 19:44 | HYDE | Bing 两条 High 报错：新增 /sitemap-index.xml（一次提交覆盖十个 sitemap）；runbook 第一屏写重新提交与重新检查步骤 | `ecd3643a82c` |
 | 16:27 | 中立 | SEO/GEO 第二批结果写入任务文件；NOW.md 待发布行更新 | `d0d2929d481` |
 | 16:03 | HYDE | 西葡子类页补挂 CollectionNote + CollectionFacts（es/pt 走独立路由，上一批漏了定义块） | `b5049e3f638` |
 | 15:45 | HYDE | SEO/GEO 第二批：「怎么选」板块挂七语种（文案改模板）、子类页逐型号规格 + 问答、视频页问答 | `5e7b223c5bf` |
