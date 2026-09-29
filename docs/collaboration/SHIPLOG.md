@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 612 次提交
+最近 30 天 · 共 613 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:36 | 中立 | goal #110：r17 等多语言会话重译 5 篇指南摘要 | `a0da1cb187e` |
 | 23:26 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `3aa4903fbda` |
 | 23:26 | HYDE | Stamp revisions for the five guides edited in 149bd21e187 | `934f0b77af6` |
 | 23:11 | HYDE | 7 篇指南补 relatedModels（只写正文点名讨论的型号），分类页选型区块可自动挂文章 | `ac2ef3d8a3f` |
