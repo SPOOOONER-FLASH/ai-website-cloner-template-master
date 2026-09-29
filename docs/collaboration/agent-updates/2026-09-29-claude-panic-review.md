@@ -33,3 +33,4 @@ Translated name (glossary productNames), summary (three English templates → pe
 specs; 12 new spec labels added to each glossary. `scripts/lib/i18n-untranslatable.mjs` now treats
 hyphenated model codes ("D-1031.60 / D-1031.100", "DZ-2031") as untranslatable, like units — the
 merge refused the Variants / Pairs-with rows otherwise. i18n-lint clean, npm test green.
+- build-product-titles --write (generator unchanged) added seoTitle/seoDescription for the 28 in all seven overlays; nothing else moved.
