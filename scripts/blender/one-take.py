@@ -29,9 +29,10 @@ mm = 0.001
 FPS, SEC = 24, 12
 
 # ---------------------------------------------------------------- materials
-def _principled(name, color, metallic, rough):
+def _principled(name, color, metallic, rough, spec=0.5):
     m = bpy.data.materials.new(name); m.use_nodes = True
     b = m.node_tree.nodes["Principled BSDF"]
+    b.inputs["Specular IOR Level"].default_value = spec
     b.inputs["Base Color"].default_value = (*color, 1)
     b.inputs["Metallic"].default_value = metallic
     b.inputs["Roughness"].default_value = rough
@@ -55,8 +56,8 @@ def MAT(kind, axis="x"):
     if kind == "pss":      return _grain(_principled("polished stainless", (0.70, 0.70, 0.72), 1, 0.06), (1500,) * 3, 0.005)
     if kind == "pb":       return _grain(_principled("polished brass", (0.93, 0.72, 0.36), 1, 0.10), (1500,) * 3, 0.01)
     if kind == "ab":       return _grain(_principled("antique brass", (0.42, 0.30, 0.15), 1, 0.38), (900,) * 3, 0.05)
-    if kind == "black":    return _grain(_principled("matt black powder", (0.02, 0.02, 0.02), 0, 0.48), (2500,) * 3, 0.12, 0.0001)
-    if kind == "abs":      return _grain(_principled("black ABS", (0.015, 0.015, 0.016), 0, 0.40), (3000,) * 3, 0.06, 0.00005)
+    if kind == "black":    return _grain(_principled("matt black powder", (0.02, 0.02, 0.02), 0, 0.45, 0.3), (2500,) * 3, 0.12, 0.0001)
+    if kind == "abs":      return _grain(_principled("black ABS", (0.012, 0.012, 0.013), 0, 0.32, 0.3), (3000,) * 3, 0.06, 0.00005)
     if kind == "alu":      return _grain(_principled("anodised aluminium", (0.66, 0.66, 0.67), 1, 0.34), brush, 0.05)
     if kind == "silver":   return _grain(_principled("silver paint", (0.42, 0.42, 0.43), 0.85, 0.36), (2500,) * 3, 0.08, 0.0001)
     if kind == "rubber":   return _principled("white rubber", (0.85, 0.85, 0.83), 0, 0.7)
@@ -168,7 +169,7 @@ def build_311():
     for i, x in enumerate((-pitch / 2, pitch / 2)):
         # housing: box with a semicircular top as drawn
         box(f"housing{i}", (W, D, H - W / 2), (x, D / 2, (H - W / 2) / 2), MAT("abs"), 3 * mm)
-        cyl(f"housing_top{i}", W / 2, (x, 0, H - W / 2), (x, D, H - W / 2), MAT("abs"), 1 * mm)
+        cyl(f"housing_top{i}", W / 2 - 0.3 * mm, (x, 0.3 * mm, H - W / 2), (x, D - 0.3 * mm, H - W / 2), MAT("abs"), 1 * mm)
         # arm: from the housing front, curving down and out to the bar
         s = 1 if i == 0 else -1
         pts = [(x, D - 5 * mm, z_pivot), (x, D + 12 * mm, z_pivot - 4 * mm), (x, PROJ - 22 * mm, z_bar + 30 * mm),
@@ -185,7 +186,7 @@ def build_311():
         (11.0, (0.30, 0.85, 0.42), (0.0, 0.04, H * 0.42), 1.20, 14.0),                          # whole device
         (12.0, (0.32, 0.84, 0.43), (0.0, 0.04, H * 0.42), 1.23, 14.0),
     ]
-P["311"] = dict(build=build_311, lockup=("311", "900 mm bar · 229 × 34.5 × 48 housing · 72 / 92 centres", "MB", "black ABS · anodised aluminium bar"))
+P["311"] = dict(build=build_311, lockup=("311", "900 bar · 229 × 34.5 × 48 · 72 / 92 mm", "MB", "black ABS · aluminium bar"))
 
 def build_19_130():
     """19-130MM glass door pull. Record: plate 200 × 65 × 1.2; grip centres 148; projection 60; Ø19."""

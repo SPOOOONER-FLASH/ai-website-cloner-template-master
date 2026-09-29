@@ -12,17 +12,20 @@ W, H = 1280, 720
 lock = json.load(open(os.path.join(D, "lockup.json")))["lockup"]
 model, dims, code, finish = lock
 t = np.linspace(0, 1, H)[:, None]
-top, bot = np.array([124, 124, 126]), np.array([228, 228, 228])
+top, bot = np.array([138, 138, 140]), np.array([234, 234, 234])
 g = (top + (bot - top) * t ** 0.8)[:, None, :].repeat(W, 1).reshape(H, W, 3)
 BG = Image.fromarray(g.astype(np.uint8)).convert("RGBA")
 rng = np.random.default_rng(7)
 yy, xx = np.mgrid[0:H, 0:W]
-vig = 1 - 0.22 * (((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2) ** 1.2
+vig = 1 - 0.14 * (((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2) ** 1.2
 def font(sz, w):
     f = ImageFont.truetype(FONT, sz); f.set_variation_by_axes([w, 100]); return f
 logo = Image.open(LOGO).convert("RGBA")
 lockup = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(lockup); ink = (38, 38, 40, 255)
-x, y0 = 640, 612
+y0 = 612
+w1 = int(max(d.textlength(model, font=font(22, 650)), d.textlength(dims, font=font(20, 380))))
+w2 = int(max(d.textlength(code, font=font(22, 650)) if code else 0, d.textlength(finish, font=font(20, 380))))
+x = min(640, W - 64 - (logo.width + 36 + w1 + 40 + w2))   # right-align when the lockup is long
 lockup.alpha_composite(logo, (x, y0 + 2)); x += logo.width + 36
 d.text((x, y0), model, font=font(22, 650), fill=ink)
 d.text((x, y0 + 27), dims, font=font(20, 380), fill=ink)
