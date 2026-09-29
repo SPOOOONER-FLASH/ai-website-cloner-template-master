@@ -549,12 +549,12 @@
   },
   "036-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Nikel kaplı demir panik çıkış cihazı.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Nikel kaplı demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Application",
@@ -577,8 +577,8 @@
         "value": "20 mm"
       }
     ],
-    "seoTitle": "036 Panik Çıkış Cihazı, nikel kaplı demir | Canton Hyland",
-    "seoDescription": "036 Panik Çıkış Cihazı: nikel kaplı demir. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "seoTitle": "036 Panik Çıkış Cihazı, fabrikadan doğrudan | Canton Hyland",
+    "seoDescription": "036 Panik Çıkış Cihazı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "3c149a7d4a7e",
@@ -1642,7 +1642,7 @@
   },
   "300-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Demir ve ABS malzemeden panik çıkış cihazı.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar.",
     "features": [
       "Başlıca özellikler:",
       "Gömme kilit tasarımı",
@@ -1653,7 +1653,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Demir ve ABS malzeme."
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Finish",
@@ -1688,7 +1688,7 @@
   },
   "301-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Demir ve paslanmaz çelik panik çıkış cihazı.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar.",
     "features": [
       "Başlıca özellikler:",
       "Tek noktadan kilitleme sistemi",
@@ -1701,7 +1701,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Demir ve paslanmaz çelik"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Color",
@@ -1732,12 +1732,12 @@
   },
   "301-s-s-panic-exit-device": {
     "name": "S Serisi Panik Çıkış Cihazı",
-    "summary": "Paslanmaz çelik S serisi panik çıkış cihazı.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı S tipi panik bar.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "paslanmaz çelik"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Color",
@@ -1755,12 +1755,12 @@
       "features": "97d170e1550e",
       "specs": "0416bc003a21"
     },
-    "seoTitle": "301-S S Serisi Panik Çıkış Cihazı, paslanmaz çelik | Canton Hyland",
-    "seoDescription": "301-S S Serisi Panik Çıkış Cihazı: paslanmaz çelik. Fabrikadan doğrudan; numune ve teklif talep üzerine."
+    "seoTitle": "301-S S Serisi Panik Çıkış Cihazı | Canton Hyland",
+    "seoDescription": "301-S S Serisi Panik Çıkış Cihazı. Fabrikadan doğrudan; numune ve teklif talep üzerine."
   },
   "302-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Paslanmaz çelik ve demir panik çıkış cihazı, 1040 mm (uzunluk ayarlanabilir).",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar, 1040 mm (boyu ayarlanabilir).",
     "features": [
       "Başlıca özellikler:",
       "İki noktadan kilitleme sistemi",
@@ -1771,7 +1771,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Paslanmaz çelik + demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Length",
@@ -1802,12 +1802,12 @@
   },
   "302-s-s-panic-exit-device": {
     "name": "S Serisi Panik Çıkış Cihazı",
-    "summary": "Paslanmaz çelik S serisi panik çıkış cihazı, 1040 mm (uzunluk ayarlanabilir).",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı S tipi panik bar, 1040 mm (boyu ayarlanabilir).",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Paslanmaz çelik"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Length",
@@ -1825,15 +1825,15 @@
       "features": "97d170e1550e",
       "specs": "c423b76d7892"
     },
-    "seoTitle": "302-S S Serisi Panik Çıkış Cihazı, 1040mm, paslanmaz çelik | Canton Hyland",
-    "seoDescription": "302-S S Serisi Panik Çıkış Cihazı: paslanmaz çelik, 1040mm. Fabrikadan doğrudan; numune ve teklif talep üzerine."
+    "seoTitle": "302-S S Serisi Panik Çıkış Cihazı, 1040mm | Canton Hyland",
+    "seoDescription": "302-S S Serisi Panik Çıkış Cihazı: 1040mm. Fabrikadan doğrudan; numune ve teklif talep üzerine."
   },
   "303-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
     "specs": [
       {
         "label": "Material",
-        "value": "Çelik veya paslanmaz çelik"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Inner Material",
@@ -1852,7 +1852,7 @@
         "value": "İnşaat sektörü makineleri"
       }
     ],
-    "summary": "900 mm itme barlı, çelik veya paslanmaz çelik panik çıkış cihazı; saten nikel, krom, antik pirinç veya parlak pirinç kaplama.",
+    "summary": "Alüminyum alaşım gövdeli, 900 mm demir itme barlı panik bar; saten nikel, krom, antik pirinç veya parlak pirinç.",
     "features": [
       "Tek noktadan kilitleme sistemi",
       "Emniyet kilit mekanizması",
@@ -1888,7 +1888,7 @@
       },
       {
         "label": "Material",
-        "value": "Demir ve alüminyum"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Finish",
@@ -1915,6 +1915,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      },
+      {
         "label": "Door leaves",
         "value": "Çift kanatlı kapı"
       }
@@ -1934,6 +1938,10 @@
     "summary": "Kendi dili olmayan geçiş tipi panik bar; dili taşıyan ayrı bir kilit gövdesiyle birlikte monte edilir. Kendinden dilli bir çıkış cihazı değildir.",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      },
       {
         "label": "Function",
         "value": "Geçiş, dilsiz"
@@ -1959,6 +1967,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      },
+      {
         "label": "Door leaves",
         "value": "Tek kanatlı kapı"
       }
@@ -1975,7 +1987,7 @@
   },
   "307-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "ABS gövdeli, alüminyum panik barlı çıkış cihazı, 1000 mm.",
+    "summary": "Alüminyum alaşım gövdeli, 1000 mm demir itme barlı panik bar.",
     "features": [
       "Panik bar özellikleri:",
       "1. Çevirmeli kolla kilitleme/açma",
@@ -1989,7 +2001,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Alüminyum panik barlı ABS malzeme"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Size",
@@ -2030,7 +2042,12 @@
     "name": "D Serisi Panik Çıkış Cihazı",
     "summary": "D serisi panik çıkış cihazı.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      }
+    ],
     "description": "308-D model panik çıkış cihazı, Canton Hyland Hardware & Building Material Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "seoTitle": "308-D D Serisi Panik Çıkış Cihazı | Canton Hyland",
     "seoDescription": "308-D D Serisi Panik Çıkış Cihazı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -2044,10 +2061,14 @@
   },
   "308-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Panik çıkış cihazı; özellikler sipariş öncesinde fabrikayla teyit edilir.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar; teknik özellikler sipariş öncesinde fabrikayla teyit edilir.",
     "description": "308 model panik çıkış cihazı, Canton Hyland Hardware & Building Material Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      },
       {
         "label": "Length",
         "value": "1050 mm"
@@ -2075,7 +2096,12 @@
     "name": "S Serisi Panik Çıkış Cihazı",
     "summary": "S serisi panik çıkış cihazı.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      }
+    ],
     "description": "308-S model panik çıkış cihazı, Canton Hyland Hardware & Building Material Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "seoTitle": "308-S S Serisi Panik Çıkış Cihazı | Canton Hyland",
     "seoDescription": "308-S S Serisi Panik Çıkış Cihazı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -2108,7 +2134,7 @@
       },
       {
         "label": "Material",
-        "value": "Alüminyum alaşımı ve demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Finish",
@@ -2131,7 +2157,7 @@
   },
   "309-s-s-panic-exit-device": {
     "name": "S Serisi Panik Çıkış Cihazı",
-    "summary": "Alüminyum alaşımı ve demir S serisi panik çıkış cihazı.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı S tipi panik bar.",
     "features": [
       "Başlıca özellikler:",
       "Çelik, alüminyum veya ahşap kapılarla uyumlu",
@@ -2143,7 +2169,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Alüminyum alaşımı ve demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Finish",
@@ -2162,7 +2188,7 @@
   },
   "310-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Demir panik çıkış cihazı, 900 mm.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar, 900 mm.",
     "features": [
       "Başlıca özellikler:",
       "Uzunluk kapı genişliğine göre ayarlanabilir",
@@ -2173,7 +2199,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Finish",
@@ -2200,8 +2226,8 @@
         "value": "1,5 saat"
       }
     ],
-    "seoTitle": "310 Panik Çıkış Cihazı, 900mm, demir | Canton Hyland",
-    "seoDescription": "310 Panik Çıkış Cihazı: demir, 900mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "seoTitle": "310 Panik Çıkış Cihazı, 900mm, fabrikadan doğrudan | Canton Hyland",
+    "seoDescription": "310 Panik Çıkış Cihazı: 900mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "42a5c5cba01b",
@@ -2212,7 +2238,7 @@
   },
   "311-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "ABS plastik ve alüminyum panik çıkış cihazı.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar.",
     "features": [
       "Çok fonksiyonlu kilitleme seçenekleri:",
       "• İki taraftan anahtarla kilitleme; dışarıdan kol ve anahtarla, içeriden panik barla açma",
@@ -2222,7 +2248,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Alüminyumlu ABS plastik malzeme"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Set Includes",
@@ -2253,10 +2279,15 @@
   },
   "312-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Panik çıkış cihazı; özellikler sipariş öncesinde fabrikayla teyit edilir.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar; teknik özellikler sipariş öncesinde fabrikayla teyit edilir.",
     "description": "312 model panik çıkış cihazı, Canton Hyland Hardware & Building Material Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      }
+    ],
     "seoTitle": "312 Panik Çıkış Cihazı, fabrikadan doğrudan | Canton Hyland",
     "seoDescription": "312 Panik Çıkış Cihazı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -2272,7 +2303,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Demir + ABS gövde"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Application",
@@ -2284,14 +2315,14 @@
       },
       {
         "label": "Push Bar Material",
-        "value": "Alüminyum"
+        "value": "Demir"
       },
       {
         "label": "Color Options",
         "value": "Farklı renkler mevcut (özelleştirilebilir)"
       }
     ],
-    "summary": "Demir ve ABS gövdeli, alüminyum itme barlı panik bar; tek kanatlı kapılar ve üst-alt sürgülerle çift kanatlı kapılar için.",
+    "summary": "Alüminyum alaşım gövdeli, demir itme barlı çıkış bar; tek kanatlı kapılar için, alt ve üst sürgülerle çift kanatlı kapılar için.",
     "features": [
       "Aks mesafesi opsiyonel: 72 mm / 92 mm",
       "Kare mil ölçüsü: 9 mm.",
@@ -2328,6 +2359,10 @@
       "Oteller, hastaneler, okullar, ofisler, alışveriş merkezleri, fabrikalar, depolar ve diğer kamu binalarında yaygın olarak kullanılır."
     ],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      },
       {
         "label": "Color",
         "value": "Gümüş veya özel"
@@ -2435,10 +2470,6 @@
         "value": "Üst ve alt kilitleme"
       },
       {
-        "label": "Housing Material",
-        "value": "Alev geciktirici ABS"
-      },
-      {
         "label": "Main Body Material",
         "value": "Alüminyum Alaşımı"
       },
@@ -2495,10 +2526,6 @@
       {
         "label": "Operation",
         "value": "İterek açılır"
-      },
-      {
-        "label": "Housing Material",
-        "value": "Alev geciktirici ABS"
       },
       {
         "label": "Main Body Material",
@@ -2580,7 +2607,7 @@
       },
       {
         "label": "Material",
-        "value": "Demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       }
     ],
     "seoTitle": "317 Soğuk Oda Panik Bar Çıkış Cihazı | Canton Hyland",
@@ -2618,7 +2645,7 @@
       },
       {
         "label": "Material",
-        "value": "Demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Color Options",
@@ -2637,7 +2664,7 @@
   },
   "330-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Demir ve demir borulu panik çıkış cihazı; uzunluk müşteri talebine göre.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar, müşterinin istediği boyda üretilir.",
     "features": [
       "Başlıca özellikler:",
       "3 noktadan kilitleme sistemi",
@@ -2647,7 +2674,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Demir + demir boru"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Application",
@@ -17011,12 +17038,12 @@
   },
   "ddh001-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Demir panik çıkış cihazı, 175x53x73mm.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar, 175×53×73 mm.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Demir"
+        "value": "Alüminyum alaşım gövde, demir bar"
       },
       {
         "label": "Application",
@@ -17034,8 +17061,8 @@
       "features": "97d170e1550e",
       "specs": "27a55b6a00f7"
     },
-    "seoTitle": "DDH001 Panik Çıkış Cihazı, 175×53×73mm, demir | Canton Hyland",
-    "seoDescription": "DDH001 Panik Çıkış Cihazı: demir, 175×53×73mm. Fabrikadan doğrudan; numune ve teklif talep üzerine."
+    "seoTitle": "DDH001 Panik Çıkış Cihazı, 175×53×73mm | Canton Hyland",
+    "seoDescription": "DDH001 Panik Çıkış Cihazı: 175×53×73mm. Fabrikadan doğrudan; numune ve teklif talep üzerine."
   },
   "dh02-ab-grip-handle-set": {
     "name": "Çekme Kol Takımı",
@@ -24115,10 +24142,15 @@
   },
   "sh01-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Panik çıkış cihazı; özellikler sipariş öncesinde fabrikayla teyit edilir.",
+    "summary": "Alüminyum alaşım gövdeli, demir barlı panik bar; teknik özellikler sipariş öncesinde fabrikayla teyit edilir.",
     "description": "SH01 model panik çıkış cihazı, Canton Hyland Hardware & Building Material Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Alüminyum alaşım gövde, demir bar"
+      }
+    ],
     "seoTitle": "SH01 Panik Çıkış Cihazı, fabrikadan doğrudan | Canton Hyland",
     "seoDescription": "SH01 Panik Çıkış Cihazı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {

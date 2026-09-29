@@ -13,6 +13,10 @@
   "summary": "A push bar for a double escape door. The factory distinguishes this from the 306-S by door leaf count; dimensions are not yet published.",
   "specs": [
     {
+      "label": "Material",
+      "value": "Aluminum alloy body, iron bar"
+    },
+    {
       "label": "Door leaves",
       "value": "Double door"
     }
@@ -27,7 +31,7 @@
       "receivedAt": "2026-09-21"
     }
   },
-  "material": null,
+  "material": "Aluminum alloy body, iron bar",
   "finishes": [],
   "doorTypes": [],
   "certifications": [],
@@ -101,9 +105,13 @@
   "seoTitleEs": "306-D Barra antipánico para puerta de dos hojas | Canton Hyland",
   "seoDescriptionEs": "306-D barra antipánico para puerta de dos hojas en puertas de evacuación y salida. Directo de fábrica, muestras y cotización a pedido.",
   "seoTitlePt": "306-D Barra antipânico para porta de duas folhas | Canton Hyland",
-  "seoDescriptionPt": "306-D barra antipânico para porta de duas folhas em portas de evacuação e saída. Direto da fábrica, amostras e orçamento sob consulta.",
+  "seoDescriptionPt": "306-D barra antipânico para porta de duas folhas em portas de evacuação e saída. Corpo em liga de alumínio.",
   "nameEs": "Barra antipánico para puerta de dos hojas",
   "specsEs": [
+    {
+      "label": "Material",
+      "value": "Cuerpo de aleación de aluminio, barra de hierro"
+    },
     {
       "label": "Hojas de puerta",
       "value": "Puerta de dos hojas"
@@ -113,6 +121,10 @@
   "namePt": "Barra antipânico para porta de duas folhas",
   "summaryPt": "Barra antipânico para porta de evacuação de duas folhas. A fábrica a distingue da 306-S pelo número de folhas; as dimensões ainda não foram publicadas.",
   "specsPt": [
+    {
+      "label": "Material",
+      "value": "Corpo em liga de alumínio, barra de ferro"
+    },
     {
       "label": "Folhas de porta",
       "value": "Porta de duas folhas"

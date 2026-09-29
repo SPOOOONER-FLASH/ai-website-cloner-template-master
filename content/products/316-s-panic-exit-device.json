@@ -25,10 +25,6 @@
       "value": "Push to Open"
     },
     {
-      "label": "Housing Material",
-      "value": "Flame-Retardant ABS"
-    },
-    {
       "label": "Main Body Material",
       "value": "Aluminum Alloy"
     },
@@ -57,7 +53,7 @@
       "value": "Available"
     }
   ],
-  "material": "",
+  "material": "Aluminum alloy body, iron bar",
   "finishes": [],
   "doorTypes": [
     "Single Door",
@@ -130,10 +126,6 @@
       "value": "Apertura por empuje"
     },
     {
-      "label": "Material de la carcasa",
-      "value": "ABS retardante de llama"
-    },
-    {
       "label": "Material del cuerpo principal",
       "value": "Aleación de aluminio"
     },
@@ -189,7 +181,7 @@
   },
   "description": "",
   "namePt": "Barra antipânico",
-  "summaryPt": "Barra antipânico para porta de uma folha, de sobrepor e reversível: caixa de ABS retardante de chama, corpo de liga de alumínio, barra de ferro e trinco de ferro reforçado.",
+  "summaryPt": "Barra antipânico para porta de uma folha, de sobrepor e reversível: corpo em liga de alumínio, barra de ferro e trinco de ferro reforçado.",
   "specsPt": [
     {
       "label": "Tipo de porta",
@@ -206,10 +198,6 @@
     {
       "label": "Acionamento",
       "value": "Empurre para abrir"
-    },
-    {
-      "label": "Material do corpo",
-      "value": "ABS retardante de chama"
     },
     {
       "label": "Material do corpo principal",

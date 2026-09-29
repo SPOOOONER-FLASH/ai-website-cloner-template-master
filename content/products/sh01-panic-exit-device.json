@@ -6,9 +6,14 @@
   "categoryPath": [
     "panic-exit-devices"
   ],
-  "summary": "304 stainless steel panic exit device; specifications confirmed with the factory before the order.",
-  "specs": [],
-  "material": "304SS",
+  "summary": "Panic exit device with an aluminum alloy body and iron bar; specifications confirmed with the factory before the order.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Aluminum alloy body, iron bar"
+    }
+  ],
+  "material": "Aluminum alloy body, iron bar",
   "finishes": [],
   "doorTypes": [
     "Fire Door"
@@ -90,9 +95,14 @@
     "label": "Hyland SH01 Panic Exit Device"
   },
   "namePt": "Barra antipânico",
-  "summaryPt": "Barra antipânico em inox 304; especificações confirmadas com a fábrica antes do pedido.",
-  "specsPt": [],
+  "summaryPt": "Barra antipânico com corpo em liga de alumínio e barra de ferro; especificações confirmadas com a fábrica antes do pedido.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Corpo em liga de alumínio, barra de ferro"
+    }
+  ],
   "seoTitlePt": "SH01 Barra antipânico para portas de evacuação e saída | Canton Hyland",
-  "seoDescriptionPt": "SH01 barra antipânico para portas de evacuação e saída. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Barra antipánico de acero inoxidable 304; especificaciones confirmadas con la fábrica antes del pedido."
+  "seoDescriptionPt": "SH01 barra antipânico para portas de evacuação e saída. Corpo em liga de alumínio. Direto da fábrica, amostras e orçamento sob consulta.",
+  "summaryEs": "Barra antipánico con cuerpo de aleación de aluminio y barra de hierro; especificaciones confirmadas con la fábrica antes del pedido."
 }

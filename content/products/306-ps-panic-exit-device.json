@@ -13,6 +13,10 @@
   "summary": "A passage push bar with no latch bolt of its own, it is fitted with a separate lock case, which carries the latching. Not a self-latching exit device.",
   "specs": [
     {
+      "label": "Material",
+      "value": "Aluminum alloy body, iron bar"
+    },
+    {
       "label": "Function",
       "value": "Passage, no latch bolt"
     },
@@ -32,7 +36,7 @@
       "receivedAt": "2026-09-21"
     }
   },
-  "material": null,
+  "material": "Aluminum alloy body, iron bar",
   "finishes": [],
   "doorTypes": [],
   "certifications": [],
@@ -106,9 +110,13 @@
   "seoTitleEs": "306 PS Barra de empuje de paso libre | Canton Hyland",
   "seoDescriptionEs": "306 PS barra de empuje de paso libre para puertas con cerradura de embutir. Directo de fábrica, muestras y cotización a pedido.",
   "seoTitlePt": "306 PS Barra de empurrar de passagem livre | Canton Hyland",
-  "seoDescriptionPt": "306 PS barra de empurrar de passagem livre para portas com fechadura de embutir. Direto da fábrica, amostras e orçamento sob consulta.",
+  "seoDescriptionPt": "306 PS barra de empurrar de passagem livre para portas com fechadura de embutir. Corpo em liga de alumínio.",
   "nameEs": "Barra de empuje de paso libre",
   "specsEs": [
+    {
+      "label": "Material",
+      "value": "Cuerpo de aleación de aluminio, barra de hierro"
+    },
     {
       "label": "Función",
       "value": "Paso libre, sin pestillo"
@@ -122,6 +130,10 @@
   "namePt": "Barra de empurrar de passagem livre",
   "summaryPt": "Barra de empurrar de passagem livre, sem trinco próprio: é instalada com uma caixa de fechadura separada, que faz o travamento. Não é um dispositivo antipânico de travamento automático.",
   "specsPt": [
+    {
+      "label": "Material",
+      "value": "Corpo em liga de alumínio, barra de ferro"
+    },
     {
       "label": "Função",
       "value": "Passagem livre, sem trinco"

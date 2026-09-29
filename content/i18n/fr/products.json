@@ -549,12 +549,12 @@
   },
   "036-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer nickelé.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Fer nickelé"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Application",
@@ -577,8 +577,8 @@
         "value": "20 mm"
       }
     ],
-    "seoTitle": "036 Fermeture anti-panique, fer nickelé | Canton Hyland",
-    "seoDescription": "036 Fermeture anti-panique : fer nickelé. Direct usine, échantillons et devis sur demande.",
+    "seoTitle": "036 Fermeture anti-panique, direct usine | Canton Hyland",
+    "seoDescription": "036 Fermeture anti-panique. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "3c149a7d4a7e",
@@ -1642,7 +1642,7 @@
   },
   "300-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer et ABS.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer.",
     "features": [
       "Points clés :",
       "Conception à serrure à mortaiser",
@@ -1653,7 +1653,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Fer avec éléments en ABS."
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Finish",
@@ -1688,7 +1688,7 @@
   },
   "301-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer et acier inoxydable.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer.",
     "features": [
       "Points clés :",
       "Verrouillage en un point",
@@ -1701,7 +1701,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Fer et acier inoxydable"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Color",
@@ -1732,12 +1732,12 @@
   },
   "301-s-s-panic-exit-device": {
     "name": "Fermeture anti-panique type S",
-    "summary": "Fermeture anti-panique type S en acier inoxydable.",
+    "summary": "Dispositif antipanique S à corps en alliage d'aluminium et barre en fer.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Acier inoxydable"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Color",
@@ -1755,12 +1755,12 @@
       "features": "97d170e1550e",
       "specs": "0416bc003a21"
     },
-    "seoTitle": "301-S Fermeture anti-panique type S, acier inoxydable | Canton Hyland",
-    "seoDescription": "301-S Fermeture anti-panique type S : acier inoxydable. Direct usine, échantillons et devis sur demande."
+    "seoTitle": "301-S Fermeture anti-panique type S | Canton Hyland",
+    "seoDescription": "301-S Fermeture anti-panique type S. Direct usine, échantillons et devis sur demande."
   },
   "302-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en acier inoxydable et fer, 1040 mm (longueur réglable).",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer, 1040 mm (longueur réglable).",
     "features": [
       "Points clés :",
       "Verrouillage en deux points",
@@ -1771,7 +1771,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Acier inoxydable + fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Length",
@@ -1802,12 +1802,12 @@
   },
   "302-s-s-panic-exit-device": {
     "name": "Fermeture anti-panique type S",
-    "summary": "Fermeture anti-panique type S en acier inoxydable, 1040 mm (longueur réglable).",
+    "summary": "Dispositif antipanique S à corps en alliage d'aluminium et barre en fer, 1040 mm (longueur réglable).",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Acier inoxydable"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Length",
@@ -1826,14 +1826,14 @@
       "specs": "c423b76d7892"
     },
     "seoTitle": "302-S Fermeture anti-panique type S, 1040mm | Canton Hyland",
-    "seoDescription": "302-S Fermeture anti-panique type S : acier inoxydable, 1040mm. Direct usine, échantillons et devis sur demande."
+    "seoDescription": "302-S Fermeture anti-panique type S : 1040mm. Direct usine, échantillons et devis sur demande."
   },
   "303-panic-exit-device": {
     "name": "Fermeture anti-panique",
     "specs": [
       {
         "label": "Material",
-        "value": "Acier ou acier inoxydable"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Inner Material",
@@ -1852,7 +1852,7 @@
         "value": "Engins pour le bâtiment"
       }
     ],
-    "summary": "Fermeture anti-panique en acier ou en acier inoxydable avec barre de poussée de 900 mm, en nickel satiné, chromé, laiton vieilli ou laiton poli.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre de poussée en fer de 900 mm, en nickel satiné, chrome, laiton antique ou laiton poli.",
     "features": [
       "Système de verrouillage en un point",
       "Mécanisme de verrouillage de sécurité",
@@ -1888,7 +1888,7 @@
       },
       {
         "label": "Material",
-        "value": "Fer et aluminium"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Finish",
@@ -1915,6 +1915,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      },
+      {
         "label": "Door leaves",
         "value": "Porte à deux vantaux"
       }
@@ -1934,6 +1938,10 @@
     "summary": "Barre de poussée de passage sans pêne propre : elle s'associe à un coffre de serrure séparé, qui assure le verrouillage. Ce n'est pas un dispositif de sortie à fermeture automatique.",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      },
       {
         "label": "Function",
         "value": "Passage, sans pêne demi-tour"
@@ -1959,6 +1967,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      },
+      {
         "label": "Door leaves",
         "value": "Porte à un vantail"
       }
@@ -1975,7 +1987,7 @@
   },
   "307-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en ABS avec barre de poussée en aluminium, 1000 mm.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre de poussée en fer de 1000 mm.",
     "features": [
       "Caractéristiques de la barre de poussée :",
       "1. Verrouillage et déverrouillage par bouton tournant",
@@ -1989,7 +2001,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "ABS avec barre de poussée en aluminium"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Size",
@@ -2030,7 +2042,12 @@
     "name": "Fermeture anti-panique type D",
     "summary": "Fermeture anti-panique type D.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      }
+    ],
     "description": "Le modèle 308-D (fermeture anti-panique) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "seoTitle": "308-D Fermeture anti-panique type D | Canton Hyland",
     "seoDescription": "308-D Fermeture anti-panique type D. Direct usine, échantillons et devis sur demande.",
@@ -2044,10 +2061,14 @@
   },
   "308-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en inox 304 ; caractéristiques confirmées avec l'usine avant la commande.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer ; spécifications confirmées avec l'usine avant la commande.",
     "description": "Le modèle 308 (fermeture anti-panique) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      },
       {
         "label": "Length",
         "value": "1050 mm"
@@ -2075,7 +2096,12 @@
     "name": "Fermeture anti-panique type S",
     "summary": "Fermeture anti-panique type S.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      }
+    ],
     "description": "Le modèle 308-S (fermeture anti-panique) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "seoTitle": "308-S Fermeture anti-panique type S | Canton Hyland",
     "seoDescription": "308-S Fermeture anti-panique type S. Direct usine, échantillons et devis sur demande.",
@@ -2108,7 +2134,7 @@
       },
       {
         "label": "Material",
-        "value": "Alliage d'aluminium et fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Finish",
@@ -2131,7 +2157,7 @@
   },
   "309-s-s-panic-exit-device": {
     "name": "Fermeture anti-panique type S",
-    "summary": "Fermeture anti-panique type S en alliage d'aluminium et fer.",
+    "summary": "Dispositif antipanique S à corps en alliage d'aluminium et barre en fer.",
     "features": [
       "Points clés :",
       "Compatible avec les portes en acier, aluminium ou bois",
@@ -2143,7 +2169,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Alliage d'aluminium et fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Finish",
@@ -2162,7 +2188,7 @@
   },
   "310-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer, 900 mm.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer, 900 mm.",
     "features": [
       "Points clés :",
       "Longueur adaptable à la largeur de la porte",
@@ -2173,7 +2199,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Finish",
@@ -2212,7 +2238,7 @@
   },
   "311-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en plastique ABS et aluminium.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer.",
     "features": [
       "Plusieurs fonctions de verrouillage :",
       "• Verrouillage à clé des deux côtés ; accès par poignée et clé à l'extérieur, barre anti-panique à l'intérieur",
@@ -2222,7 +2248,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Plastique ABS avec aluminium"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Set Includes",
@@ -2253,10 +2279,15 @@
   },
   "312-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en inox 304 ; caractéristiques confirmées avec l'usine avant la commande.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer ; spécifications confirmées avec l'usine avant la commande.",
     "description": "Le modèle 312 (fermeture anti-panique) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      }
+    ],
     "seoTitle": "312 Fermeture anti-panique, direct usine | Canton Hyland",
     "seoDescription": "312 Fermeture anti-panique. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
@@ -2272,7 +2303,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Fer + corps en ABS"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Application",
@@ -2284,14 +2315,14 @@
       },
       {
         "label": "Push Bar Material",
-        "value": "Aluminium"
+        "value": "Fer"
       },
       {
         "label": "Color Options",
         "value": "Plusieurs couleurs disponibles (personnalisables)"
       }
     ],
-    "summary": "Fermeture anti-panique à barre de poussée, corps en fer et ABS et barre en aluminium, pour portes simples et, avec verrous haut et bas, pour portes à deux vantaux.",
+    "summary": "Dispositif de sortie à barre de poussée, à corps en alliage d'aluminium et barre en fer, pour portes à un vantail et, avec verrous haut et bas, portes à deux vantaux.",
     "features": [
       "Entraxe au choix : 72 mm / 92 mm",
       "Carré de 9 mm.",
@@ -2328,6 +2359,10 @@
       "Elle équipe couramment hôtels, hôpitaux, écoles, bureaux, centres commerciaux, usines, entrepôts et autres bâtiments publics."
     ],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      },
       {
         "label": "Color",
         "value": "Argent ou personnalisé"
@@ -2435,10 +2470,6 @@
         "value": "Verrouillage haut et bas"
       },
       {
-        "label": "Housing Material",
-        "value": "ABS ignifugé"
-      },
-      {
         "label": "Main Body Material",
         "value": "Alliage d'aluminium"
       },
@@ -2495,10 +2526,6 @@
       {
         "label": "Operation",
         "value": "Pousser pour ouvrir"
-      },
-      {
-        "label": "Housing Material",
-        "value": "ABS ignifugé"
       },
       {
         "label": "Main Body Material",
@@ -2580,7 +2607,7 @@
       },
       {
         "label": "Material",
-        "value": "Fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       }
     ],
     "seoTitle": "317 Barre de poussée pour chambre froide | Canton Hyland",
@@ -2618,7 +2645,7 @@
       },
       {
         "label": "Material",
-        "value": "Fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Color Options",
@@ -2637,7 +2664,7 @@
   },
   "330-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer avec tube en fer ; longueur selon la demande du client.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer, fabriqué à la longueur demandée par le client.",
     "features": [
       "Points clés :",
       "Verrouillage en trois points",
@@ -2647,7 +2674,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Fer + tube en fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Application",
@@ -17011,12 +17038,12 @@
   },
   "ddh001-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer, 175 × 53 × 73 mm.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer, 175×53×73 mm.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Fer"
+        "value": "Corps en alliage d'aluminium, barre en fer"
       },
       {
         "label": "Application",
@@ -24115,10 +24142,15 @@
   },
   "sh01-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en inox 304 ; caractéristiques confirmées avec l'usine avant la commande.",
+    "summary": "Dispositif antipanique à corps en alliage d'aluminium et barre en fer ; spécifications confirmées avec l'usine avant la commande.",
     "description": "Le modèle SH01 (fermeture anti-panique) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Corps en alliage d'aluminium, barre en fer"
+      }
+    ],
     "seoTitle": "SH01 Fermeture anti-panique, direct usine | Canton Hyland",
     "seoDescription": "SH01 Fermeture anti-panique. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {

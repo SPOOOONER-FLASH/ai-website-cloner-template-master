@@ -29,10 +29,6 @@
       "value": "Top & Bottom Latching"
     },
     {
-      "label": "Housing Material",
-      "value": "Flame-Retardant ABS"
-    },
-    {
       "label": "Main Body Material",
       "value": "Aluminum Alloy"
     },
@@ -57,7 +53,7 @@
       "value": "Available"
     }
   ],
-  "material": "",
+  "material": "Aluminum alloy body, iron bar",
   "finishes": [],
   "doorTypes": [
     "Double Door",
@@ -134,10 +130,6 @@
       "value": "Enganche superior e inferior"
     },
     {
-      "label": "Material de la carcasa",
-      "value": "ABS retardante de llama"
-    },
-    {
       "label": "Material del cuerpo principal",
       "value": "Aleación de aluminio"
     },
@@ -180,7 +172,7 @@
   ],
   "description": "",
   "namePt": "Barra antipânico",
-  "summaryPt": "Barra antipânico para porta de duas folhas, de sobrepor, com travamento superior e inferior: caixa de ABS retardante de chama, corpo de liga de alumínio e barra de ferro.",
+  "summaryPt": "Barra antipânico para porta de duas folhas, de sobrepor, com travamento superior e inferior: corpo em liga de alumínio e barra de ferro.",
   "specsPt": [
     {
       "label": "Tipo de porta",
@@ -201,10 +193,6 @@
     {
       "label": "Sistema de travamento",
       "value": "Travamento superior e inferior"
-    },
-    {
-      "label": "Material do corpo",
-      "value": "ABS retardante de chama"
     },
     {
       "label": "Material do corpo principal",

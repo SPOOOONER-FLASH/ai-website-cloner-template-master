@@ -549,12 +549,12 @@
   },
   "036-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus vernickeltem Eisen.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Vernickeltes Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Application",
@@ -577,8 +577,8 @@
         "value": "20 mm"
       }
     ],
-    "seoTitle": "036 Panikverschluss, Vernickeltes Eisen | Canton Hyland",
-    "seoDescription": "036 Panikverschluss: Vernickeltes Eisen. Direkt ab Werk, Muster und Angebot auf Anfrage.",
+    "seoTitle": "036 Panikverschluss, direkt ab Werk | Canton Hyland",
+    "seoDescription": "036 Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "3c149a7d4a7e",
@@ -1642,7 +1642,7 @@
   },
   "300-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Eisen mit ABS.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen.",
     "features": [
       "Hauptmerkmale:",
       "Einsteckschloss-Bauweise",
@@ -1653,7 +1653,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Eisen mit ABS."
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Finish",
@@ -1688,7 +1688,7 @@
   },
   "301-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Eisen und Edelstahl.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen.",
     "features": [
       "Hauptmerkmale:",
       "Einpunktverriegelung",
@@ -1701,7 +1701,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Eisen und Edelstahl"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Color",
@@ -1732,12 +1732,12 @@
   },
   "301-s-s-panic-exit-device": {
     "name": "S-Panikverschluss",
-    "summary": "S-Panikverschluss aus Edelstahl.",
+    "summary": "S-Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Edelstahl"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Color",
@@ -1755,12 +1755,12 @@
       "features": "97d170e1550e",
       "specs": "0416bc003a21"
     },
-    "seoTitle": "301-S S-Panikverschluss, Edelstahl | Canton Hyland",
-    "seoDescription": "301-S S-Panikverschluss: Edelstahl. Direkt ab Werk, Muster und Angebot auf Anfrage."
+    "seoTitle": "301-S S-Panikverschluss, Sonderanwendungen, direkt ab Werk | Canton Hyland",
+    "seoDescription": "301-S S-Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
   "302-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Edelstahl und Eisen, 1040 mm (Länge anpassbar).",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen, 1040 mm (Länge anpassbar).",
     "features": [
       "Hauptmerkmale:",
       "Zweipunktverriegelung",
@@ -1771,7 +1771,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Edelstahl + Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Length",
@@ -1802,12 +1802,12 @@
   },
   "302-s-s-panic-exit-device": {
     "name": "S-Panikverschluss",
-    "summary": "S-Panikverschluss aus Edelstahl, 1040 mm (Länge anpassbar).",
+    "summary": "S-Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen, 1040 mm (Länge anpassbar).",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Edelstahl"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Length",
@@ -1825,15 +1825,15 @@
       "features": "97d170e1550e",
       "specs": "c423b76d7892"
     },
-    "seoTitle": "302-S S-Panikverschluss, 1040mm, Edelstahl | Canton Hyland",
-    "seoDescription": "302-S S-Panikverschluss: Edelstahl, 1040mm. Direkt ab Werk, Muster und Angebot auf Anfrage."
+    "seoTitle": "302-S S-Panikverschluss, 1040mm | Canton Hyland",
+    "seoDescription": "302-S S-Panikverschluss: 1040mm. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
   "303-panic-exit-device": {
     "name": "Panikverschluss",
     "specs": [
       {
         "label": "Material",
-        "value": "Stahl oder Edelstahl"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Inner Material",
@@ -1852,7 +1852,7 @@
         "value": "Baumaschinen"
       }
     ],
-    "summary": "Panikverschluss aus Stahl oder Edelstahl mit 900 mm langer Druckstange, in Nickel matt, verchromt, Messing antik oder Messing poliert.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und 900 mm Druckstange aus Eisen, in Nickel satiniert, Chrom, Messing antik oder Messing poliert.",
     "features": [
       "Einpunktverriegelung",
       "Sicherheits-Schließmechanismus",
@@ -1888,7 +1888,7 @@
       },
       {
         "label": "Material",
-        "value": "Eisen und Aluminium"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Finish",
@@ -1915,6 +1915,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      },
+      {
         "label": "Door leaves",
         "value": "Zweiflügelige Tür"
       }
@@ -1934,6 +1938,10 @@
     "summary": "Durchgangs-Panikstange ohne eigene Falle: Sie wird mit einem separaten Schlosskasten montiert, der die Verriegelung übernimmt. Kein selbstverriegelnder Panikverschluss.",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      },
       {
         "label": "Function",
         "value": "Durchgangsfunktion, ohne Falle"
@@ -1959,6 +1967,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      },
+      {
         "label": "Door leaves",
         "value": "Einflügelige Tür"
       }
@@ -1975,7 +1987,7 @@
   },
   "307-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus ABS mit Panikstange aus Aluminium, 1000 mm.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und 1000 mm Druckstange aus Eisen.",
     "features": [
       "Merkmale der Panikstange:",
       "1. Verriegeln und Entriegeln per Drehgriff",
@@ -1989,7 +2001,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "ABS mit Panikstange aus Aluminium"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Size",
@@ -2030,7 +2042,12 @@
     "name": "D-Panikverschluss",
     "summary": "D-Panikverschluss.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      }
+    ],
     "description": "Das Modell 308-D ist ein Panikverschluss von Canton Hyland Hardware & Building Material Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "seoTitle": "308-D D-Panikverschluss, Sonderanwendungen, direkt ab Werk | Canton Hyland",
     "seoDescription": "308-D D-Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
@@ -2044,10 +2061,14 @@
   },
   "308-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss; die technischen Daten werden vor der Bestellung mit dem Werk bestätigt.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen; Spezifikationen werden vor der Bestellung mit dem Werk bestätigt.",
     "description": "Das Modell 308 ist ein Panikverschluss von Canton Hyland Hardware & Building Material Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      },
       {
         "label": "Length",
         "value": "1050 mm"
@@ -2075,7 +2096,12 @@
     "name": "S-Panikverschluss",
     "summary": "S-Panikverschluss.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      }
+    ],
     "description": "Das Modell 308-S ist ein Panikverschluss von Canton Hyland Hardware & Building Material Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "seoTitle": "308-S S-Panikverschluss, Sonderanwendungen, direkt ab Werk | Canton Hyland",
     "seoDescription": "308-S S-Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
@@ -2108,7 +2134,7 @@
       },
       {
         "label": "Material",
-        "value": "Aluminiumlegierung und Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Finish",
@@ -2131,7 +2157,7 @@
   },
   "309-s-s-panic-exit-device": {
     "name": "S-Panikverschluss",
-    "summary": "S-Panikverschluss aus Aluminiumlegierung und Eisen.",
+    "summary": "S-Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen.",
     "features": [
       "Hauptmerkmale:",
       "Kompatibel mit Türen aus Stahl, Aluminium oder Holz",
@@ -2143,7 +2169,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Aluminiumlegierung und Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Finish",
@@ -2162,7 +2188,7 @@
   },
   "310-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Eisen, 900 mm.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen, 900 mm.",
     "features": [
       "Hauptmerkmale:",
       "Länge nach Türbreite einstellbar",
@@ -2173,7 +2199,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Finish",
@@ -2200,8 +2226,8 @@
         "value": "1,5 Stunden"
       }
     ],
-    "seoTitle": "310 Panikverschluss, 900mm, Eisen | Canton Hyland",
-    "seoDescription": "310 Panikverschluss: Eisen, 900mm. Direkt ab Werk, Muster und Angebot auf Anfrage.",
+    "seoTitle": "310 Panikverschluss, 900mm, direkt ab Werk | Canton Hyland",
+    "seoDescription": "310 Panikverschluss: 900mm. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "42a5c5cba01b",
@@ -2212,7 +2238,7 @@
   },
   "311-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus ABS-Kunststoff mit Aluminium.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen.",
     "features": [
       "Vielseitige Verriegelungsoptionen:",
       "• Verriegeln per Schlüssel von beiden Seiten; von außen Zugang per Drücker und Schlüssel, von innen per Panikstange",
@@ -2222,7 +2248,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "ABS-Kunststoff mit Aluminium"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Set Includes",
@@ -2253,10 +2279,15 @@
   },
   "312-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss; die technischen Daten werden vor der Bestellung mit dem Werk bestätigt.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen; Spezifikationen werden vor der Bestellung mit dem Werk bestätigt.",
     "description": "Das Modell 312 ist ein Panikverschluss von Canton Hyland Hardware & Building Material Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      }
+    ],
     "seoTitle": "312 Panikverschluss, direkt ab Werk | Canton Hyland",
     "seoDescription": "312 Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
@@ -2272,7 +2303,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Eisen + ABS-Gehäuse"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Application",
@@ -2284,14 +2315,14 @@
       },
       {
         "label": "Push Bar Material",
-        "value": "Aluminium"
+        "value": "Eisen"
       },
       {
         "label": "Color Options",
         "value": "Verschiedene Farben lieferbar (anpassbar)"
       }
     ],
-    "summary": "Panikverschluss mit Druckstange, Gehäuse aus Eisen und ABS und Druckstange aus Aluminium, für einflügelige Türen und – mit Treibriegeln oben und unten – für zweiflügelige Türen.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Druckstange aus Eisen, für einflügelige Türen und, mit oberer und unterer Verriegelung, zweiflügelige Türen.",
     "features": [
       "Entfernung wahlweise 72 mm / 92 mm",
       "Vierkant 9 mm.",
@@ -2328,6 +2359,10 @@
       "Weit verbreitet in Hotels, Krankenhäusern, Schulen, Büros, Einkaufszentren, Fabriken, Lagern und anderen öffentlichen Gebäuden."
     ],
     "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      },
       {
         "label": "Color",
         "value": "Silber oder nach Kundenwunsch"
@@ -2435,10 +2470,6 @@
         "value": "Verriegelung oben und unten"
       },
       {
-        "label": "Housing Material",
-        "value": "Flammhemmendes ABS"
-      },
-      {
         "label": "Main Body Material",
         "value": "Aluminiumlegierung"
       },
@@ -2495,10 +2526,6 @@
       {
         "label": "Operation",
         "value": "Push-to-Open (Öffnen durch Drücken)"
-      },
-      {
-        "label": "Housing Material",
-        "value": "Flammhemmendes ABS"
       },
       {
         "label": "Main Body Material",
@@ -2580,7 +2607,7 @@
       },
       {
         "label": "Material",
-        "value": "Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       }
     ],
     "seoTitle": "317 Panikstange für Kühlraumtüren | Canton Hyland",
@@ -2618,7 +2645,7 @@
       },
       {
         "label": "Material",
-        "value": "Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Color Options",
@@ -2637,7 +2664,7 @@
   },
   "330-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Eisen mit Eisenrohr, Länge nach Kundenwunsch.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen, in der vom Kunden gewünschten Länge gefertigt.",
     "features": [
       "Hauptmerkmale:",
       "Dreipunktverriegelung",
@@ -2647,7 +2674,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "Eisen + Eisenrohr"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Application",
@@ -17011,12 +17038,12 @@
   },
   "ddh001-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Eisen, 175 × 53 × 73 mm.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen, 175×53×73 mm.",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "Eisen"
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
       },
       {
         "label": "Application",
@@ -17034,8 +17061,8 @@
       "features": "97d170e1550e",
       "specs": "27a55b6a00f7"
     },
-    "seoTitle": "DDH001 Panikverschluss, 175×53×73mm, Eisen | Canton Hyland",
-    "seoDescription": "DDH001 Panikverschluss: Eisen, 175×53×73mm. Direkt ab Werk, Muster und Angebot auf Anfrage."
+    "seoTitle": "DDH001 Panikverschluss, 175×53×73mm | Canton Hyland",
+    "seoDescription": "DDH001 Panikverschluss: 175×53×73mm. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
   "dh02-ab-grip-handle-set": {
     "name": "Stoßgriffgarnitur",
@@ -24115,10 +24142,15 @@
   },
   "sh01-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss; die technischen Daten werden vor der Bestellung mit dem Werk bestätigt.",
+    "summary": "Panikstange mit Gehäuse aus Aluminiumlegierung und Stange aus Eisen; Spezifikationen werden vor der Bestellung mit dem Werk bestätigt.",
     "description": "Das Modell SH01 ist ein Panikverschluss von Canton Hyland Hardware & Building Material Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Gehäuse aus Aluminiumlegierung, Stange aus Eisen"
+      }
+    ],
     "seoTitle": "SH01 Panikverschluss, direkt ab Werk | Canton Hyland",
     "seoDescription": "SH01 Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {

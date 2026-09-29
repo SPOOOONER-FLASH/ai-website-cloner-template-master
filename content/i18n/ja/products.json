@@ -549,12 +549,12 @@
   },
   "036-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "ニッケルめっき鉄製のパニックデバイスです。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "ニッケルめっき鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Application",
@@ -577,8 +577,8 @@
         "value": "20 mm"
       }
     ],
-    "seoTitle": "036 パニックデバイス、ニッケルめっき鉄 | Canton Hyland",
-    "seoDescription": "036 パニックデバイス（ニッケルめっき鉄）。工場直販。サンプルとお見積りはご相談ください。",
+    "seoTitle": "036 パニックデバイス、工場直販 | Canton Hyland",
+    "seoDescription": "036 パニックデバイス。工場直販。サンプルとお見積りはご相談ください。",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "3c149a7d4a7e",
@@ -1642,7 +1642,7 @@
   },
   "300-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "鉄とABS樹脂を組み合わせたパニックデバイスです。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。",
     "features": [
       "主な特長：",
       "箱錠（彫込み錠）方式",
@@ -1653,7 +1653,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "鉄とABS樹脂"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Finish",
@@ -1688,7 +1688,7 @@
   },
   "301-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "鉄とステンレスを組み合わせたパニックデバイスです。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。",
     "features": [
       "主な特長：",
       "1点ロック方式",
@@ -1701,7 +1701,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "鉄とステンレス"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Color",
@@ -1732,12 +1732,12 @@
   },
   "301-s-s-panic-exit-device": {
     "name": "S型パニックデバイス",
-    "summary": "ステンレス製のS型パニックデバイスです。",
+    "summary": "アルミ合金ボディと鉄製バーのSタイプ・パニックバー。",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "ステンレス"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Color",
@@ -1755,12 +1755,12 @@
       "features": "97d170e1550e",
       "specs": "0416bc003a21"
     },
-    "seoTitle": "301-S S型パニックデバイス、ステンレス | Canton Hyland",
-    "seoDescription": "301-S S型パニックデバイス（ステンレス）。工場直販。サンプルとお見積りはご相談ください。"
+    "seoTitle": "301-S S型パニックデバイス | Canton Hyland",
+    "seoDescription": "301-S S型パニックデバイス。工場直販。サンプルとお見積りはご相談ください。"
   },
   "302-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "ステンレスと鉄を組み合わせたパニックデバイスです。長さは1040 mmで、調整できます。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー、1040mm（長さ調整可）。",
     "features": [
       "主な特長：",
       "2点ロック方式",
@@ -1771,7 +1771,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "ステンレス+鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Length",
@@ -1802,12 +1802,12 @@
   },
   "302-s-s-panic-exit-device": {
     "name": "S型パニックデバイス",
-    "summary": "ステンレス製のS型パニックデバイス。長さ1040 mm（調整可能）です。",
+    "summary": "アルミ合金ボディと鉄製バーのSタイプ・パニックバー、1040mm（長さ調整可）。",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "ステンレス"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Length",
@@ -1825,15 +1825,15 @@
       "features": "97d170e1550e",
       "specs": "c423b76d7892"
     },
-    "seoTitle": "302-S S型パニックデバイス、1040mm、ステンレス | Canton Hyland",
-    "seoDescription": "302-S S型パニックデバイス（ステンレス、1040mm）。工場直販。サンプルとお見積りはご相談ください。"
+    "seoTitle": "302-S S型パニックデバイス、1040mm | Canton Hyland",
+    "seoDescription": "302-S S型パニックデバイス（1040mm）。工場直販。サンプルとお見積りはご相談ください。"
   },
   "303-panic-exit-device": {
     "name": "パニックデバイス",
     "specs": [
       {
         "label": "Material",
-        "value": "スチールまたはステンレス"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Inner Material",
@@ -1852,7 +1852,7 @@
         "value": "建設業向けの機械"
       }
     ],
-    "summary": "長さ900 mmのプッシュバーを備えた、スチールまたはステンレス製のパニックデバイスです。仕上げはサテンニッケル、クローム、アンティークブラス、真鍮鏡面から選べます。",
+    "summary": "アルミ合金ボディと900mmの鉄製プッシュバーのパニックバー、サテンニッケル・クローム・アンティークブラス・ポリッシュブラス。",
     "features": [
       "シングルポイントのロック方式です",
       "安全ロック機構を備えています",
@@ -1888,7 +1888,7 @@
       },
       {
         "label": "Material",
-        "value": "鉄とアルミ"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Finish",
@@ -1915,6 +1915,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      },
+      {
         "label": "Door leaves",
         "value": "両開きドア"
       }
@@ -1934,6 +1938,10 @@
     "summary": "空錠タイプのプッシュバーで、自身ではラッチボルトを持ちません。別途取り付ける箱錠がラッチを受け持ちます。自己ラッチ式のパニックデバイスではありません。",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      },
       {
         "label": "Function",
         "value": "空錠、ラッチボルトなし"
@@ -1959,6 +1967,10 @@
     "features": [],
     "specs": [
       {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      },
+      {
         "label": "Door leaves",
         "value": "片開きドア"
       }
@@ -1975,7 +1987,7 @@
   },
   "307-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "ABS樹脂とアルミ製プッシュバーによるパニックデバイスです。長さは1000 mmです。",
+    "summary": "アルミ合金ボディと1000mmの鉄製プッシュバーのパニックバー。",
     "features": [
       "プッシュバーの特長：",
       "1. ハンドルを回して施錠・解錠",
@@ -1989,7 +2001,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "ABS樹脂、アルミ製プッシュバー"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Size",
@@ -2030,7 +2042,12 @@
     "name": "D型パニックデバイス",
     "summary": "D型パニックデバイスです。",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      }
+    ],
     "description": "308-Dは、中国広東省のCanton Hyland Hardware & Building Material Co., Ltd.が製造するパニックデバイスです。上の写真は実際の製品です。このモデルの詳細仕様は現在工場と確認中です。当社の輸出チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
     "seoTitle": "308-D D型パニックデバイス | Canton Hyland",
     "seoDescription": "308-D D型パニックデバイス。工場直販。サンプルとお見積りはご相談ください。",
@@ -2044,10 +2061,14 @@
   },
   "308-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "パニックデバイスです。仕様はご注文前に工場で確認します。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。仕様はご注文前に工場と確認します。",
     "description": "308は、Canton Hyland Hardware & Building Material Co., Ltd.が中国・広東省で製造するパニックデバイスです。上の写真は実際の製品です。このモデルの詳しい仕様は工場で確認中です。輸出担当チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
     "features": [],
     "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      },
       {
         "label": "Length",
         "value": "1050 mm"
@@ -2075,7 +2096,12 @@
     "name": "S型パニックデバイス",
     "summary": "S型パニックデバイスです。",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      }
+    ],
     "description": "308-Sは、中国広東省のCanton Hyland Hardware & Building Material Co., Ltd.が製造するパニックデバイスです。上の写真は実際の製品です。このモデルの詳細仕様は現在工場と確認中です。当社の輸出チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
     "seoTitle": "308-S S型パニックデバイス | Canton Hyland",
     "seoDescription": "308-S S型パニックデバイス。工場直販。サンプルとお見積りはご相談ください。",
@@ -2108,7 +2134,7 @@
       },
       {
         "label": "Material",
-        "value": "アルミ合金と鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Finish",
@@ -2131,7 +2157,7 @@
   },
   "309-s-s-panic-exit-device": {
     "name": "S型パニックデバイス",
-    "summary": "アルミ合金と鉄を組み合わせたS型パニックデバイスです。",
+    "summary": "アルミ合金ボディと鉄製バーのSタイプ・パニックバー。",
     "features": [
       "主な特長：",
       "スチール、アルミ、木製の扉に対応",
@@ -2143,7 +2169,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "アルミ合金と鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Finish",
@@ -2162,7 +2188,7 @@
   },
   "310-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "鉄製のパニックデバイスです。長さは900 mmです。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー、900mm。",
     "features": [
       "主な特長：",
       "扉幅に合わせて長さを調整可能",
@@ -2173,7 +2199,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Finish",
@@ -2200,8 +2226,8 @@
         "value": "1.5時間"
       }
     ],
-    "seoTitle": "310 パニックデバイス、900mm、鉄 | Canton Hyland",
-    "seoDescription": "310 パニックデバイス（鉄、900mm）。工場直販。サンプルとお見積りはご相談ください。",
+    "seoTitle": "310 パニックデバイス、900mm | Canton Hyland",
+    "seoDescription": "310 パニックデバイス（900mm）。工場直販。サンプルとお見積りはご相談ください。",
     "sourceHash": {
       "name": "0de8a5dcc6a5",
       "summary": "42a5c5cba01b",
@@ -2212,7 +2238,7 @@
   },
   "311-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "ABS樹脂とアルミを組み合わせたパニックデバイスです。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。",
     "features": [
       "多機能な施錠方式：",
       "• 両側とも鍵で施錠。外側はハンドルと鍵、内側はパニックプッシュバーで開放",
@@ -2222,7 +2248,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "ABS樹脂とアルミ"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Set Includes",
@@ -2253,10 +2279,15 @@
   },
   "312-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "パニックデバイスです。仕様はご注文前に工場で確認します。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。仕様はご注文前に工場と確認します。",
     "description": "312は、Canton Hyland Hardware & Building Material Co., Ltd.が中国・広東省で製造するパニックデバイスです。上の写真は実際の製品です。このモデルの詳しい仕様は工場で確認中です。輸出担当チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      }
+    ],
     "seoTitle": "312 パニックデバイス、工場直販 | Canton Hyland",
     "seoDescription": "312 パニックデバイス。工場直販。サンプルとお見積りはご相談ください。",
     "sourceHash": {
@@ -2272,7 +2303,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "鉄 + ABS樹脂の本体"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Application",
@@ -2284,14 +2315,14 @@
       },
       {
         "label": "Push Bar Material",
-        "value": "アルミ"
+        "value": "鉄"
       },
       {
         "label": "Color Options",
         "value": "各色に対応（カスタマイズ可）"
       }
     ],
-    "summary": "鉄とABS樹脂の本体にアルミ製プッシュバーを組み合わせたパニックデバイスです。片開きドアに使え、上下ボルトと組み合わせれば両開きドアにも対応します。",
+    "summary": "アルミ合金ボディと鉄製プッシュバーの非常口用プッシュバー。片開き扉用、上下ボルトを付ければ両開き扉にも対応。",
     "features": [
       "芯々距離は72 mm / 92 mmから選べます",
       "角芯サイズは9 mmです",
@@ -2328,6 +2359,10 @@
       "ホテル、病院、学校、オフィス、ショッピングモール、工場、倉庫などの公共施設で広く使われています。"
     ],
     "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      },
       {
         "label": "Color",
         "value": "シルバーまたは特注色"
@@ -2435,10 +2470,6 @@
         "value": "上下ラッチ"
       },
       {
-        "label": "Housing Material",
-        "value": "難燃ABS樹脂"
-      },
-      {
         "label": "Main Body Material",
         "value": "アルミ合金"
       },
@@ -2495,10 +2526,6 @@
       {
         "label": "Operation",
         "value": "プッシュオープン"
-      },
-      {
-        "label": "Housing Material",
-        "value": "難燃ABS樹脂"
       },
       {
         "label": "Main Body Material",
@@ -2580,7 +2607,7 @@
       },
       {
         "label": "Material",
-        "value": "鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       }
     ],
     "seoTitle": "317 冷蔵室用プッシュバー、特殊用途向け、工場直販 | Canton Hyland",
@@ -2618,7 +2645,7 @@
       },
       {
         "label": "Material",
-        "value": "鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Color Options",
@@ -2637,7 +2664,7 @@
   },
   "330-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "鉄製本体と鉄パイプによるパニックデバイスです。長さはご要望に応じて製作します。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー、ご指定の長さで製作。",
     "features": [
       "主な特長：",
       "3点ロック方式",
@@ -2647,7 +2674,7 @@
     "specs": [
       {
         "label": "Material",
-        "value": "鉄+鉄パイプ"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Application",
@@ -17011,12 +17038,12 @@
   },
   "ddh001-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "鉄製のパニックデバイス。寸法は175×53×73 mmです。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー、175×53×73mm。",
     "features": [],
     "specs": [
       {
         "label": "Material",
-        "value": "鉄"
+        "value": "アルミ合金ボディ、鉄製バー"
       },
       {
         "label": "Application",
@@ -17034,8 +17061,8 @@
       "features": "97d170e1550e",
       "specs": "27a55b6a00f7"
     },
-    "seoTitle": "DDH001 パニックデバイス、175×53×73mm、鉄 | Canton Hyland",
-    "seoDescription": "DDH001 パニックデバイス（鉄、175×53×73mm）。工場直販。サンプルとお見積りはご相談ください。"
+    "seoTitle": "DDH001 パニックデバイス、175×53×73mm | Canton Hyland",
+    "seoDescription": "DDH001 パニックデバイス（175×53×73mm）。工場直販。サンプルとお見積りはご相談ください。"
   },
   "dh02-ab-grip-handle-set": {
     "name": "グリップハンドルセット",
@@ -24115,10 +24142,15 @@
   },
   "sh01-panic-exit-device": {
     "name": "パニックデバイス",
-    "summary": "パニックデバイスです。仕様はご注文前に工場で確認します。",
+    "summary": "アルミ合金ボディと鉄製バーのパニックバー。仕様はご注文前に工場と確認します。",
     "description": "SH01は、Canton Hyland Hardware & Building Material Co., Ltd.が中国・広東省で製造するパニックデバイスです。上の写真は実際の製品です。このモデルの詳しい仕様は工場で確認中です。輸出担当チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
     "features": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "アルミ合金ボディ、鉄製バー"
+      }
+    ],
     "seoTitle": "SH01 パニックデバイス、工場直販 | Canton Hyland",
     "seoDescription": "SH01 パニックデバイス。工場直販。サンプルとお見積りはご相談ください。",
     "sourceHash": {
