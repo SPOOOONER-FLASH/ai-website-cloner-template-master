@@ -72,6 +72,7 @@
     "content:workbook": "node scripts/build-supplier-workbook.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
     "seo:deadlinks:live": "node scripts/audit-live-links.mjs",
+    "seo:feeds": "node scripts/verify-live-feeds.mjs",
     "share-images": "node scripts/build-article-share-images.mjs",
     "report:instructions": "node scripts/extract-client-instructions.mjs",
     "report:monthly": "node scripts/build-monthly-report.mjs",

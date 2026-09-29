@@ -5,7 +5,7 @@ import { locales, type Locale } from "@/data/locales";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
 import { articleShareImage } from "@/lib/article-share-image";
-import { LOCALE_TAG, t } from "@/lib/i18n-core";
+import { t } from "@/lib/i18n-core";
 
 /**
  * RSS 2.0 of the guides and news, newest first (client 2026-09-28, Google Discover notes:
@@ -43,15 +43,30 @@ const NEWS_AND_GUIDES: Readonly<Record<Locale, string>> = {
   ar: "الأدلة والأخبار",
 };
 
+/*
+ * `<language>` carries the BARE language code, not `LOCALE_TAG`.
+ *
+ * `LOCALE_TAG` exists for `<html lang>` and for `toLocaleDateString`, where a region is
+ * what you want: `en-GB` is the difference between 29/09/2026 and 09/29/2026. A feed's
+ * `<language>` is a claim about the audience, and there the region is a claim we cannot
+ * support. `fr-FR` says this feed is for France, and excludes Belgium, Switzerland,
+ * Canada and West Africa — between them a larger door-hardware market than France. The
+ * same applies to `de-DE` against Austria and Switzerland, and to `es-ES` against Latin
+ * America, which is most of the Spanish mirror's readership.
+ *
+ * `pt-BR` below is the one deliberate exception, for the same reason it is deliberate in
+ * the Article schema: that tree was written for Brazil.
+ *
+ * Caught on 2026-09-28 by `npm run seo:feeds` against the live site, on the day the seven
+ * feeds went out — the seven had inherited `LOCALE_TAG` from the map nearest to hand,
+ * which is how a value meant for date formatting ends up making a marketing claim.
+ */
 const CHANNEL: Record<FeedLocale, { title: string; description: string; language: string }> = {
   /* The seven overlay locales first, so the three hand-written entries below override them. */
   ...(Object.fromEntries(
     locales
       .filter((l) => l !== "en" && l !== "es" && l !== "pt")
-      .map((l) => [
-        l,
-        { title: `${siteName} — ${NEWS_AND_GUIDES[l]}`, description: defaultDescription[l], language: LOCALE_TAG[l] },
-      ]),
+      .map((l) => [l, { title: `${siteName} — ${NEWS_AND_GUIDES[l]}`, description: defaultDescription[l], language: l }]),
   ) as Record<Locale, { title: string; description: string; language: string }>),
   en: {
     title: `${siteName} — Guides and News`,
