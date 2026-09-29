@@ -3,6 +3,7 @@
   "title": "Door Thickness to Cylinder Length 2026: The Arithmetic, a Lookup Table, and Why the Answer Is Often Rounded Up",
   "kind": "insight",
   "publishedAt": "2026-09-21",
+  "updatedAt": "2026-09-29",
   "summary": "Each half of a euro cylinder is half the door thickness plus the escutcheon depth on that side, rounded up to the 5mm ladder that starts at 27.5mm: a 40mm door with 4mm escutcheons comes to 55mm and is ordered as 56mm. This page gives the calculation, a door-thickness lookup table worked against the nine lengths we actually publish, explains why a thin door still gets a protruding cylinder, and shows what changes when the lock case is not centered in the leaf.",
   "author": {
     "name": "Johnson Liu",
