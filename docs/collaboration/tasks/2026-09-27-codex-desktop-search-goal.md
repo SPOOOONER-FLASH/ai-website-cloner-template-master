@@ -18,13 +18,14 @@ The search acronyms are work lenses, not five batches of speculative markup: SEO
 
 - [?] Claude currently owns `HeroCarousel`, `SiteHeader`, `LocalePicker`, `SearchDialog`, motion/speed tokens and the SEO/title/content pipelines; avoid overlapping edits, provide exact reproduction and evidence instead.
 - [?] Factory drawings are required for complete Blender meshes and to settle ambiguous 104/106 connector pitch and all unshown fixings. Their absence does not license a plausible drawing.
+- [?] At fetched mainline `c91ec808624`, the 028 title still says only 55mm for a published 35–55mm fit, and DV05 bridges 35–55mm / 60–100mm into 55–100mm. These two concrete title corrections remain with the claimed content/title owner; a zero semantic-SEO score does not verify their factual accuracy.
 - [?] Publication is distinct from source push and from public edge verification. Do not mark the release line complete until all three are observed.
 
 The project Stop hook is scoped to this Codex Goal session and reads only unchecked `- [ ]` items above. It allows at most one immediate continuation on an already continued turn, fails open for other sessions, and does not control Claude or RAYEN work. The persistent Goal remains the authority for later autonomous continuation.
 
 ## 2026-09-28 checkpoint
 
-Goal status tool currently reports `usageLimited`, which only the user/system can resume. This work continues in the user-requested turn. The project hook is configured and synthetic-tested (3/3), but runtime trust/activation has not been observed and it cannot bypass account limits. Review instructions are in the current client runbook.
+Goal status tool currently reports `usageLimited`, which only the user/system can resume. This work continues in the user-requested turn. The project hook is configured and synthetic-tested (3/3), but runtime trust/activation has not been observed and it cannot bypass account limits. The current owner has reorganized the client runbook; no CLI restart or trust step is required for this publication, and it must not be implied that this hook is already active.
 
 Desktop/mobile generator: `node scripts/audit-hyde-desktop-rhythm.mjs --base http://127.0.0.1:8766`; final 15/15 scenarios passed. `--page home --width 390,1440,1920 --settle-ms 11000 --check-promo` passed all three widths, including dismissal while expanded and the next offer starting collapsed. The browser interaction option is localhost-only. Tracked evidence: `docs/design-references/2026-09-28-desktop-verification/`.
 
