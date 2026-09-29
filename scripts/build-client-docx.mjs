@@ -42,6 +42,10 @@ const PAGE_W = 9026;
 
 const DOCUMENTS = [
   {
+    md: "docs/collaboration/2026-09-29-configurator-assessment.md",
+    docx: "docs/collaboration/2026-09-29-配置器评估.docx",
+  },
+  {
     md: "docs/collaboration/2026-09-18-移交-johns-电脑.md",
     docx: "docs/collaboration/2026-09-18-雷茵全量移交.docx",
   },

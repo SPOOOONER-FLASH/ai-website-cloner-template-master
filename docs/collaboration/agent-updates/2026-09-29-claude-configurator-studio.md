@@ -1,0 +1,10 @@
+# Claude — configurator studio + finish/function switch (2026-09-29)
+
+- **Scope**: client asked whether HYDE should get an FSB-style configurator and an FSB-style CAD video, then asked for a dedicated animated page in FSB's layout. Assessment: `docs/collaboration/2026-09-29-configurator-assessment.md` (+ `2026-09-29-配置器评估.docx`, registered in `scripts/build-client-docx.mjs`).
+- **New**: `src/lib/product-variants.ts` (+ test, in `npm test`) groups records by category + parsed order-code base (`parseOrderCode`), so `587 MBET / PBET / SSBK…` are one family. 35 families / 117 pages. Records with unresolved suffix tokens are excluded, never guessed.
+- **New page** `/configurator/studio/` (EN only, `noindex`, not in nav or sitemap): sticky stage with cross-fade between real SKU photographs, order-code card whose segments stay grey until confirmed, progress bar, Range → Model → Finish → Function tiles. CSS block `.studio-*` at the end of `globals.css`, motion tokens only.
+- **Product pages**: `ProductVariants` under the model number in `ProductDetail.tsx` — server-rendered links with each sibling's photo and code (117 pages, all locales; finish/function names via `tx`).
+- **Neutral change**: `ProductDetail.tsx` is shared, but products are HYDE-filtered already; RAYEN does not render this component.
+- **Not done / next**: if the client approves the studio, scaffold 9 locales, drop `robots`, add to `site-sitemap`, link from `/configurator`. Widening coverage needs per-finish photographs from the factory and a normalised finish field (91 distinct strings today). FSB-grade render or video needs factory STEP files; nothing in 3D should be built from published dims beyond the existing shell studies.
+- **Risk**: stage sticky offset is measured from the header's `.sticky.top-0.z-10` class (SiteHeader renders a div, not `<header>`); if that class changes, the stage falls back to `top: 0` and sits under the nav.
+- **Build**: source only on branch `claude/configurator-assessment-2fg9u9` (draft PR). No `out/` release.
