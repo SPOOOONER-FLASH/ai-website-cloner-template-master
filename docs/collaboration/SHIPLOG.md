@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 607 次提交
+最近 30 天 · 共 606 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 21:31 | HYDE | Restore original AR4 showcase below the BAU homepage entries | `e2784711682` |
 | 20:06 | 中立 | NOW.md：待发布行加上 /sitemap-index.xml | `d4b378ed403` |
 | 20:06 | 中立 | internal-link-placement：/sitemap-index.xml 列入豁免（给搜索引擎的 XML，不是页面） | `81e96cdf656` |
 | 19:44 | HYDE | Bing 两条 High 报错：新增 /sitemap-index.xml（一次提交覆盖十个 sitemap）；runbook 第一屏写重新提交与重新检查步骤 | `ecd3643a82c` |
@@ -727,6 +728,4 @@
 |---|---|---|---|
 | 21:52 | 发布 HYDE | 发布首页与新闻独立编辑影像 | `2460ad96840` |
 | 21:50 | HYDE | 更新首页与新闻独立编辑影像 | `706e95be26b` |
-| 21:25 | 发布 HYDE | 发布产品图片平滑跟随放大 | `1149011afc8` |
-| 21:22 | 中立 | 上线产品图片平滑跟随放大 | `974807be132` |
 
