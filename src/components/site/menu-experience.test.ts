@@ -61,7 +61,9 @@ test("menu variants keep the real bilingual discovery and evidence routes", () =
 
 test("the drawer renders one selected variant inside a focus-safe dialog", () => {
   const drawer = readFileSync(join(root, "src", "components", "site", "SiteMenuDrawer.tsx"), "utf8");
-  const header = readFileSync(join(root, "src", "components", "site", "SiteHeader.tsx"), "utf8");
+  const header = ["SiteHeader.tsx", "HeaderIslands.tsx"]
+    .map((file) => readFileSync(join(root, "src", "components", "site", file), "utf8"))
+    .join("\n");
 
   assert.match(drawer, /getMenuExperience\(locale, MENU_VARIANT\)/);
   assert.match(drawer, /experience\.kind === "rfq-concierge"/);

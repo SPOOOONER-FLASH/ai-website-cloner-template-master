@@ -4,7 +4,10 @@ import { join } from "node:path";
 import test from "node:test";
 
 const componentRoot = join(process.cwd(), "src", "components", "site");
-const header = readFileSync(join(componentRoot, "SiteHeader.tsx"), "utf8");
+/* The header is a server component plus its client islands (2026-09-28): read both. */
+const header = ["SiteHeader.tsx", "HeaderIslands.tsx"]
+  .map((file) => readFileSync(join(componentRoot, file), "utf8"))
+  .join("\n");
 const drawer = readFileSync(join(componentRoot, "SiteMenuDrawer.tsx"), "utf8");
 const menuConfig = readFileSync(join(componentRoot, "menu-experience.ts"), "utf8");
 const footer = readFileSync(join(componentRoot, "SiteFooter.tsx"), "utf8");
@@ -16,10 +19,14 @@ const navigation = JSON.parse(
 };
 
 test("desktop navigation exposes the two architectural shelves accessibly", () => {
-  assert.match(header, /aria-controls="company-shelf"/);
-  assert.match(header, /aria-controls="buy-shelf"/);
-  assert.match(header, /aria-expanded={openShelf === "company"}/);
-  assert.match(header, /aria-expanded={openShelf === "buy"}/);
+  /* Each trigger names its shelf; the island derives aria-controls and aria-expanded from it. */
+  assert.match(header, /<ShelfTrigger[^>]*shelf="company"/);
+  assert.match(header, /<ShelfTrigger[^>]*shelf="buy"/);
+  assert.match(header, /<ShelfPanel shelf="company"/);
+  assert.match(header, /<ShelfPanel shelf="buy"/);
+  assert.match(header, /aria-controls=\{`\$\{shelf\}-shelf`\}/);
+  assert.match(header, /aria-expanded=\{openShelf === shelf\}/);
+  assert.match(header, /id=\{`\$\{shelf\}-shelf`\}/);
   assert.match(header, /Company overview/);
   assert.match(header, /Services/);
   assert.match(header, /Events/);
@@ -185,8 +192,8 @@ test("a locale whose link row is wider than its column uses the compact rail, no
   assert.match(header, /const LONG_NAV_LOCALES = new Set/);
   /* Resources (2026-09-27) collapses Applications, Guides and News into one desktop item. */
   assert.match(header, /const RESOURCE_HREFS = \["\/projects", "\/guides", "\/news"\]/);
-  assert.match(header, /aria-controls="resources-shelf"/);
-  assert.match(header, /id="resources-shelf"/);
+  assert.match(header, /<ShelfTrigger[^>]*shelf="resources"/);
+  assert.match(header, /<ShelfPanel shelf="resources"/);
   /* 09-28: the 1376–1599px compact rail gets the same button; tablets and phones keep links. */
   assert.match(header, /nav-rail-item hidden bg-transparent xl:inline-block/);
   /* 09-28 live test with no animation frames: focus return and Escape must not wait on rAF. */

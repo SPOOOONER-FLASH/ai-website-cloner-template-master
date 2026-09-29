@@ -9,7 +9,8 @@
  *   node scripts/i18n-prune-untranslatable.mjs            # all seven locales
  *   node scripts/i18n-prune-untranslatable.mjs --locale tr
  */
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync  } from "node:fs";
+import { safeWrite } from "./lib/safe-write.mjs";
 
 import { untranslatable } from "./lib/i18n-untranslatable.mjs";
 import { execFileSync } from "node:child_process";
@@ -34,7 +35,7 @@ for (const locale of locales) {
         changed = true;
       }
     }
-    if (changed) writeFileSync(path, JSON.stringify(data, null, 2) + "\n");
+    if (changed) safeWrite(path, JSON.stringify(data, null, 2) + "\n");
   }
 }
 console.log(`${removed} untranslatable entr${removed === 1 ? "y" : "ies"} removed`);

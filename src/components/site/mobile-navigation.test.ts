@@ -6,7 +6,8 @@ import test from "node:test";
 const root = process.cwd();
 const read = (...parts: string[]) => readFileSync(join(root, ...parts), "utf8");
 
-const header = read("src", "components", "site", "SiteHeader.tsx");
+/* The header is a server component plus its client islands (2026-09-28): read both. */
+const header = [read("src", "components", "site", "SiteHeader.tsx"), read("src", "components", "site", "HeaderIslands.tsx")].join("\n");
 const drawer = read("src", "components", "site", "SiteMenuDrawer.tsx");
 const css = read("src", "app", "globals.css");
 
@@ -25,7 +26,7 @@ test("a nav rail names destinations on every viewport below xl", () => {
   assert.match(header, /navigationStyles\.compactNavigation/);
   /* 09-28: the destinations scroll; "Buy it now" is pinned beside the strip, not inside it. */
   assert.match(header, /<div className="col-content flex min-w-0 items-center gap-16">\s*<nav[\s\S]*?className="nav-rail min-w-0 flex-1"/);
-  assert.match(header, /<\/nav>\s*<button[\s\S]*?className="nav-rail-cta flex-none"/);
+  assert.match(header, /<\/nav>\s*<HeaderRailCta className="nav-rail-cta flex-none">/);
 
   /*
     Not a second copy of the labels: both rows read the same CMS-backed array.

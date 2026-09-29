@@ -3,7 +3,7 @@
   "title": "Powder Coating and RAL 2026: Why a Color Number Does Not Specify a Finish, What Pretreatment Decides, and What to Write on the Order",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "A RAL number names a color and nothing else, not gloss, not texture, not process, not durability. This page explains what RAL specifies and what it leaves open, why pretreatment decides whether a coating survives, where powder coating fails on hardware geometry, which tests are worth citing, and the four lines that make a finish orderable.",
+  "summary": "A RAL number sets the hue only: gloss is specified separately (ISO 2813), architectural powder film typically runs 60–80 µm, and threads must be masked because a coated M5 thread may not take an M5 screw. This page explains what RAL specifies and what it leaves open, why pretreatment decides whether a coating survives, where powder coating fails on hardware geometry, which tests are worth citing, and the four lines that make a finish orderable.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -148,7 +148,7 @@
     ]
   },
   "titleEs": "Recubrimiento en polvo y RAL 2026: por qué un número de color no especifica un acabado, qué decide el pretratamiento, y qué escribir en el pedido",
-  "summaryEs": "Un número RAL nombra un color y nada más: ni brillo, ni textura, ni proceso, ni durabilidad. Esta página explica qué especifica el RAL y qué deja abierto, por qué el pretratamiento decide si un recubrimiento sobrevive, dónde falla el polvo en la geometría del herraje, qué ensayos merece citar, y las cuatro líneas que hacen pedible un acabado.",
+  "summaryEs": "Un número RAL fija solo el tono: el brillo se especifica aparte (ISO 2813), la película de polvo arquitectónico suele estar entre 60 y 80 µm, y las roscas se enmascaran porque una rosca M5 recubierta puede no admitir un tornillo M5. Esta página explica qué especifica el RAL y qué deja abierto, por qué el pretratamiento decide si un recubrimiento sobrevive, dónde falla el polvo en la geometría del herraje, qué ensayos merece citar, y las cuatro líneas que hacen pedible un acabado.",
   "seoTitleEs": "Recubrimiento en polvo y RAL 2026: color, brillo, pretratamiento | Canton Hyland",
   "seoDescriptionEs": "Qué especifica y qué no un número RAL en herraje de puerta, por qué el pretratamiento decide la vida del recubrimiento, dónde falla el polvo en roscas y cantos, y las cuatro líneas del pedido.",
   "bodyEs": [
@@ -197,7 +197,7 @@
     "Ese es el hueco, expresado en recuentos y no en adjetivos, y se está cerrando igual que los grados de inoxidable y de zamak: desde registros de producción y no desde lo que las filas deberían decir. Mientras tanto, si un acabado importa en su pedido, pídalo con las cuatro líneas de arriba y pídanos que confirmemos cada una contra la pieza y no contra el catálogo."
   ],
   "titlePt": "Revestimento a pó e RAL 2026: por que um número de cor não especifica um acabamento, o que o pré-tratamento decide, e o que escrever no pedido",
-  "summaryPt": "Um número RAL nomeia uma cor e mais nada: nem brilho, nem textura, nem processo, nem durabilidade. Esta página explica o que o RAL especifica e o que deixa em aberto, por que o pré-tratamento decide se um revestimento sobrevive, onde o pó falha na geometria da ferragem, que ensaios vale a pena citar, e as quatro linhas que tornam um acabamento encomendável.",
+  "summaryPt": "Um número RAL define apenas a tonalidade: o brilho é especificado à parte (ISO 2813), a película de pó arquitetônico costuma ficar entre 60 e 80 µm, e as roscas são mascaradas porque uma rosca M5 revestida pode não aceitar um parafuso M5. Esta página explica o que o RAL especifica e o que deixa em aberto, por que o pré-tratamento decide se um revestimento sobrevive, onde o pó falha na geometria da ferragem, que ensaios vale a pena citar, e as quatro linhas que tornam um acabamento encomendável.",
   "seoTitlePt": "Revestimento a pó e RAL 2026: cor, brilho, pré-tratamento | Canton Hyland",
   "seoDescriptionPt": "O que um número RAL especifica e não especifica em ferragem de porta, por que o pré-tratamento decide a vida do revestimento, onde o pó falha em roscas e arestas, e as quatro linhas do pedido.",
   "bodyPt": [

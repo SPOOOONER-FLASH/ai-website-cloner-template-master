@@ -96,7 +96,12 @@ const MAX_VALUES = 4;
  * derives from them. Distribute a trailing unit back across the run it closes.
  */
 function millimetres(value: string): number[] {
-  const expanded = value.replace(
+  /*
+    "8-12mm" and "35–55mm" state two figures and carry the unit once; without this the low
+    end was dropped and a collection of 35–45mm doors printed "45mm" (found 2026-09-28).
+  */
+  const dashed = value.replace(/(\d+(?:[.,]\d+)?)\s*[-–]\s*(?=\d+(?:[.,]\d+)?\s*mm\b)/gi, "$1mm–");
+  const expanded = dashed.replace(
     /(\d+(?:[.,]\d+)?)(\s*\/\s*)(?=(?:\d+(?:[.,]\d+)?\s*\/\s*)*\d+(?:[.,]\d+)?\s*mm\b)/gi,
     "$1mm$2",
   );
@@ -178,7 +183,7 @@ export function specRangeHeading(locale: Locale = "en"): string {
 
 /** "stated on 12 of 19 models" — so a reader knows how much of the family the line speaks for. */
 export function statedOn(count: number, total: number, locale: Locale = "en"): string {
-  if (locale === "es") return `indicado en ${count} de ${total} modelos`;
-  if (locale === "pt") return `indicado em ${count} de ${total} modelos`;
-  return `stated on ${count} of ${total} models`;
+  return tx(locale, "stated on {count} of {total} models", { es: "indicado en {count} de {total} modelos", pt: "indicado em {count} de {total} modelos" })
+    .replace("{count}", String(count))
+    .replace("{total}", String(total));
 }

@@ -83,7 +83,7 @@ export default function SpanishRootLayout({
         {/* Above the header and in flow: it offers, it never covers. See the component. */}
         <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">
-          <SiteHeader categories={getMenuCategories()} />
+          <SiteHeader categories={getMenuCategories()} locale="es" />
           {children}
           <SiteFooter locale="es" />
         </div>

@@ -76,7 +76,7 @@ test("all catalog category tiles ship with a real cover image", () => {
 });
 
 test("current navigation is bold at rest without a persistent underline", () => {
-  const header = read("src", "components", "site", "SiteHeader.tsx");
+  const header = [read("src", "components", "site", "SiteHeader.tsx"), read("src", "components", "site", "HeaderIslands.tsx")].join("\n");
   const drawer = read("src", "components", "site", "SiteMenuDrawer.tsx");
 
   assert.match(header, /current && "current-nav"/);

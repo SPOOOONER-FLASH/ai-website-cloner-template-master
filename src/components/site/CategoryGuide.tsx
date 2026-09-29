@@ -6,7 +6,7 @@ import { positioningFor } from "@/data/category-positioning";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
 import { JsonLd } from "@/components/site/JsonLd";
-import { dict, fill, t as tr } from "@/lib/i18n";
+import { dict, fill, t as tr, tx } from "@/lib/i18n";
 import { hasPortugueseMirror, hasSpanishMirror } from "@/lib/spanish-mirror";
 import { categoryFaqItems, guideArticles, guideFactors, valueList } from "@/lib/category-guide";
 
@@ -61,10 +61,13 @@ export function CategoryGuide({
   category,
   products,
   locale = "en",
+  extraFaq = [],
 }: {
   category: Category;
   products: Product[];
   locale?: Locale;
+  /** Questions another block on the same page renders (CategoryBuyingGuide); one FAQPage per page. */
+  extraFaq?: { question: string; answer: string }[];
 }) {
   const factors = guideFactors(products, locale);
   if (!factors.length) return null;
@@ -73,7 +76,7 @@ export function CategoryGuide({
   const prefix = locale === "en" ? "" : `/${locale}`;
   const name = tr(category, "name", locale);
   const pitch = positioningFor([category.slug]);
-  const pitchText = pitch ? (locale === "es" ? pitch.pitchEs : locale === "pt" ? pitch.pitchPt : pitch.pitch) : null;
+  const pitchText = pitch ? tx(locale, pitch.pitch, { es: pitch.pitchEs, pt: pitch.pitchPt }) : null;
 
   const types = (category.children ?? [])
     .filter((child) => products.some((p) => p.categoryPath[1] === child.slug))
@@ -93,7 +96,7 @@ export function CategoryGuide({
   const faqSchema: WithContext<FAQPage> = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faq.map((item) => ({
+    mainEntity: [...faq, ...extraFaq].map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: { "@type": "Answer", text: item.answer },
@@ -102,7 +105,7 @@ export function CategoryGuide({
 
   return (
     <section className="layout mt-96 lg:mt-136" aria-labelledby="category-guide-heading">
-      {faq.length ? <JsonLd data={faqSchema} /> : null}
+      {faq.length || extraFaq.length ? <JsonLd data={faqSchema} /> : null}
       <div className="col-content grid w-full grid-cols gap-x gap-y-32">
         <div className="col-span-full xl:col-span-10">
           <h2 id="category-guide-heading" className="text-h2 text-ink">

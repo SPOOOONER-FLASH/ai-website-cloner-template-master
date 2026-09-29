@@ -11,6 +11,7 @@ import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
 import { articleBlocks } from "@/lib/article-layout";
 import { ArticleBody } from "./ArticleBody";
+import { MasterKeyHierarchyFigure, hasMasterKeyFigure } from "./MasterKeyHierarchyFigure";
 import { DataTable } from "./DataTable";
 import { InlineText } from "./InlineText";
 import { ArticleContents } from "./ArticleContents";
@@ -145,6 +146,12 @@ export function NewsDetail({
   */
   const body = localeBody?.length ? localeBody : article.body;
   const blocks = articleBlocks(body);
+  // The master key guide carries a hierarchy chart after its levels table (en/es/pt only).
+  const levelsTable = blocks.findIndex((block) => block.kind === "table");
+  const figure =
+    article.slug === "master-key-hierarchy-planning-2026" && hasMasterKeyFigure(locale) && levelsTable >= 0
+      ? { afterIndex: levelsTable, node: <MasterKeyHierarchyFigure locale={locale} /> }
+      : undefined;
   const overview = tx(locale, "Overview", { es: "Resumen", pt: "Visão geral" });
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
@@ -230,13 +237,13 @@ export function NewsDetail({
               <div className="mt-16 flex items-start gap-12">
                 {/*
                   A real photograph of the person named, supplied by the client, or nothing.
-                  `alt` is empty on purpose: the name is right beside it, and a screen reader
-                  announcing "Johnson Liu, Johnson Liu" is worse than announcing it once.
+                  The alt names the author: image search indexes the portrait and the
+                  SEO/GEO graph audit counts an unnamed one as a missing alt (2026-09-28).
                 */}
                 {portrait ? (
                   <img
                     src={portrait.src}
-                    alt=""
+                    alt={article.author?.name ?? ""}
                     width={portrait.width}
                     height={portrait.height}
                     loading="lazy"
@@ -331,7 +338,7 @@ export function NewsDetail({
               table rows — reached the live page as literal `##` and `| a | b |`. The block
               parser already ran for news (`blocks` above); its output was just unused.
             */}
-            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : blocks.map((block, index) => {
+            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} figure={figure} /> : blocks.map((block, index) => {
               if (block.kind === "heading") {
                 return block.level === 2 ? (
                   <h2 key={block.id} id={block.id} className="mt-48 text-h3 text-ink">

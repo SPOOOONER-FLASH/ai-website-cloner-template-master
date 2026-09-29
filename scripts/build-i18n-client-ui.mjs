@@ -13,7 +13,8 @@
  * Runs after every merge (scripts/i18n-merge.mjs) and prune, and `--check` in test:export
  * so a stale subset fails the build rather than the reader.
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync } from "node:fs";
+import { safeWrite } from "./lib/safe-write.mjs";
 import { dirname, join } from "node:path";
 import { execSync } from "node:child_process";
 
@@ -117,6 +118,6 @@ if (process.argv.includes("--check")) {
   console.log(`client ui subset current — ${summary}`);
 } else {
   mkdirSync(OUT_DIR, { recursive: true });
-  for (const [path, text] of Object.entries(outFiles)) writeFileSync(path, text);
+  for (const [path, text] of Object.entries(outFiles)) safeWrite(path, text);
   console.log(`${OUT_DIR}/: ${summary}`);
 }

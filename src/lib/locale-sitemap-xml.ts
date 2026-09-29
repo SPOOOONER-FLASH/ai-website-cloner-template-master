@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import type { Locale } from "../data/locales.ts";
+import { locales, type Locale } from "../data/locales.ts";
 import { siteUrl } from "../data/site.ts";
 import { siteSitemap } from "./site-sitemap.ts";
 
@@ -52,4 +52,37 @@ export function localeSitemapXml(locale: Locale): string {
 /** The route handler body every /<locale>/sitemap.xml/route.ts uses. */
 export function localeSitemapResponse(locale: Locale): Response {
   return new Response(localeSitemapXml(locale), { headers: { "Content-Type": "application/xml; charset=utf-8" } });
+}
+
+/**
+ * /sitemap-index.xml — one URL that names all ten sitemaps (2026-09-28).
+ *
+ * Bing Webmaster reported "important pages missing in sitemaps" for five guides that are in
+ * /sitemap.xml and /es/sitemap.xml. Since the 09-26 split each locale has its own file, and a
+ * property that was submitted only /sitemap.xml never sees the other nine. A sitemap index is
+ * the standard way to hand a search engine all of them in one submission, and it keeps
+ * working when a locale is added. It is deliberately NOT listed in robots.txt: robots already
+ * names each sitemap, and scripts/lib/seo-audit.mjs parses every robots sitemap as a urlset.
+ *
+ * <lastmod> is the newest tracked content date inside that sitemap — the same dates the
+ * sitemaps themselves carry — so it cannot claim a change that did not happen.
+ */
+export function sitemapIndexXml(): string {
+  const entries = siteSitemap();
+  const others = locales.filter((l) => l !== "en");
+  const newest = (list: Entry[]) => {
+    const t = Math.max(0, ...list.map((e) => (e.lastModified ? new Date(e.lastModified).getTime() : 0)));
+    return t ? new Date(t).toISOString() : undefined;
+  };
+  const rows = locales.map((locale) => {
+    const list = locale === "en" ? entries.filter((e) => !others.some((l) => belongs(e.url, l))) : entries.filter((e) => belongs(e.url, locale));
+    const loc = locale === "en" ? `${siteUrl}/sitemap.xml` : `${siteUrl}/${locale}/sitemap.xml`;
+    const last = newest(list);
+    return ["<sitemap>", `<loc>${esc(loc)}</loc>`, last ? `<lastmod>${last}</lastmod>` : "", "</sitemap>"].filter(Boolean).join("\n");
+  });
+  return ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', ...rows, "</sitemapindex>", ""].join("\n");
+}
+
+export function sitemapIndexResponse(): Response {
+  return new Response(sitemapIndexXml(), { headers: { "Content-Type": "application/xml; charset=utf-8" } });
 }

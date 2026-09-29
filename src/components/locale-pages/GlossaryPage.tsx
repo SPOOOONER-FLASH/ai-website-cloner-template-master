@@ -3,6 +3,8 @@ import { ArrowLink } from "@/components/site/ArrowLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { HardwareTerms } from "@/components/site/HardwareTerms";
 import { HARDWARE_TERMS } from "@/data/hardware-terms";
+import { JsonLd, definedTermSetSchema } from "@/components/site/JsonLd";
+import { absoluteUrl } from "@/data/site";
 import type { Locale } from "@/data/locales";
 import { modelsWithGlossaryTerm } from "@/lib/hardware-term-usage";
 import { tx } from "@/lib/i18n";
@@ -21,6 +23,7 @@ export function GlossaryPage({ locale }: { locale: Locale }) {
   const p = prefixer(locale);
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+      <JsonLd data={definedTermSetSchema(HARDWARE_TERMS, absoluteUrl(p("/glossary")), tx(locale, "Door hardware glossary"), locale)} />
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid grid-cols gap-x gap-y-48">
           <div className="col-span-full">

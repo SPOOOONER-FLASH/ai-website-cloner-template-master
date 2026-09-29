@@ -5,6 +5,8 @@ import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/Json
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { SpecRangeList } from "@/components/site/SpecRangeList";
+import { CollectionNote } from "@/components/site/CollectionNote";
+import { CollectionFacts } from "@/components/site/CollectionFacts";
 import { getTopLevelCategories } from "@/data/categories";
 import type { Locale } from "@/data/locales";
 import { publishedProducts } from "@/data/products";
@@ -134,7 +136,9 @@ export function CollectionPage({ locale, slug }: { locale: Locale; slug: string 
             </div>
           </div>
         </section>
+        <CollectionNote slug={collection.child.slug} name={t(collection.child, "name", locale)} locale={locale} />
         <SpecRangeList products={items} locale={locale} headingId="collection-range-heading" />
+        <CollectionFacts products={items} name={t(collection.child, "name", locale)} locale={locale} />
         <section className="layout mt-64 md:mt-144 lg:mt-288" aria-label={collection.child.name}>
           <div className="col-content grid w-full grid-cols gap-x">
             <ProductIndexList

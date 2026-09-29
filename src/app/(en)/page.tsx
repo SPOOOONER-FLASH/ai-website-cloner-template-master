@@ -1,7 +1,7 @@
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
-import { FlagshipTooling } from "@/components/site/FlagshipTooling";
+import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
@@ -9,7 +9,7 @@ import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { TextModule } from "@/components/site/TextModule";
 import { Spacer } from "@/components/site/Spacer";
-import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home";
 
 /**
@@ -59,19 +59,13 @@ export default function Home() {
         <DemandShowcase />
         <Spacer heights={content.spacers.s96} />
 
-        <ArgentinaAr4Showcase />
+        <BauShowcase />
         <Spacer heights={content.spacers.s96} />
-        {/*
-          307 and 311 sit directly above the panic-exit hero: the flagship pair first, then
-          the range they belong to. Reversing that order would introduce the family before
-          giving a reason to care about it.
-        */}
-        <FlagshipTooling />
+        {/* Restore the original AR4 photography below the BAU invitation. */}
+        <ArgentinaAr4Showcase />
 
         {/*
-          Directly under the flagship pair, because the two answer different questions and
-          the second only lands once the first has been asked. 307 and 311 say what we
-          tooled; the columns say what we can explain — and a specifier arrives holding a
+          Buyer resources follow the market collection: a specifier arrives holding a
           problem ("a pair of fire doors", "forty doors and three grades of key holder")
           rather than a model number.
 

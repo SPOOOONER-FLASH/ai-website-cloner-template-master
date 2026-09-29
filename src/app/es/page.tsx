@@ -8,10 +8,10 @@ import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
-import { FlagshipTooling } from "@/components/site/FlagshipTooling";
+import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
-import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home-es";
 import { siteName } from "@/data/site";
 
@@ -49,16 +49,12 @@ export default function SpanishHomePage() {
         <DemandShowcase locale="es" />
         <Spacer heights={content.spacers.s96} />
 
-        <ArgentinaAr4Showcase locale="es" />
+        <BauShowcase locale="es" />
         <Spacer heights={content.spacers.s96} />
-        {/*
-          307 and 311 sit directly above the panic-exit hero: the flagship pair first, then
-          the range they belong to. Reversing that order would introduce the family before
-          giving a reason to care about it.
-        */}
-        <FlagshipTooling locale="es" />
+        {/* Restore the original AR4 photography below the BAU invitation. */}
+        <ArgentinaAr4Showcase locale="es" />
 
-        {/* Same rail, Spanish. See the English page for why it sits here. */}
+        {/* Buyer resources follow the market collection. */}
         <FeatureColumns locale="es" />
 
         <HeroModule content={content.hero2} homeEditorial />

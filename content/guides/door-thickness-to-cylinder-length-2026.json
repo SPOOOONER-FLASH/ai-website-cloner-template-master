@@ -3,7 +3,7 @@
   "title": "Door Thickness to Cylinder Length 2026: The Arithmetic, a Lookup Table, and Why the Answer Is Often Rounded Up",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "Sizing a euro cylinder is one subtraction and one rounding, and the rounding is where it goes wrong. This page gives the calculation, a door-thickness lookup table worked against the nine lengths we actually publish, explains why a thin door still gets a protruding cylinder, and shows what changes when the lock case is not centered in the leaf.",
+  "summary": "Each half of a euro cylinder is half the door thickness plus the escutcheon depth on that side, rounded up to the 5mm ladder that starts at 27.5mm: a 40mm door with 4mm escutcheons comes to 55mm and is ordered as 56mm. This page gives the calculation, a door-thickness lookup table worked against the nine lengths we actually publish, explains why a thin door still gets a protruding cylinder, and shows what changes when the lock case is not centered in the leaf.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -158,7 +158,7 @@
     ]
   },
   "titleEs": "De espesor de puerta a longitud de cilindro 2026: la aritmética, una tabla de consulta, y por qué la respuesta se redondea hacia arriba",
-  "summaryEs": "Dimensionar un cilindro europeo es una resta y un redondeo, y el redondeo es donde se tuerce. Esta página da el cálculo, una tabla de consulta por espesor de puerta trabajada contra las nueve longitudes que publicamos realmente, explica por qué una puerta fina lleva igualmente un cilindro que sobresale, y muestra qué cambia cuando la caja de cerradura no está centrada en la hoja.",
+  "summaryEs": "Cada mitad de un cilindro europeo es la mitad del espesor de la puerta más la profundidad del escudo de ese lado, redondeada hacia arriba en la escala de 5 en 5 mm que empieza en 27,5 mm: una puerta de 40 mm con escudos de 4 mm da 55 mm y se pide como 56 mm. Esta página da el cálculo, una tabla de consulta por espesor de puerta trabajada contra las nueve longitudes que publicamos realmente, explica por qué una puerta fina lleva igualmente un cilindro que sobresale, y muestra qué cambia cuando la caja de cerradura no está centrada en la hoja.",
   "seoTitleEs": "Espesor de puerta a longitud de cilindro 2026: tabla | Canton Hyland",
   "seoDescriptionEs": "Cómo calcular la longitud de cilindro europeo desde el espesor de puerta, una tabla trabajada contra nueve longitudes publicadas, y por qué las puertas finas llevan cilindro saliente.",
   "bodyEs": [
@@ -207,7 +207,7 @@
     "Con esas tres, una longitud y un reparto vuelven como recomendación y no como pregunta. Sin ellas, cualquier longitud de cilindro cotizada es una conjetura con forma plausible."
   ],
   "titlePt": "De espessura de porta a comprimento de cilindro 2026: a aritmética, uma tabela de consulta, e por que a resposta é arredondada para cima",
-  "summaryPt": "Dimensionar um cilindro europeu é uma subtração e um arredondamento, e o arredondamento é onde corre mal. Esta página dá o cálculo, uma tabela de consulta por espessura de porta trabalhada contra os nove comprimentos que realmente publicamos, explica por que uma porta fina leva na mesma um cilindro saliente, e mostra o que muda quando a caixa de fechadura não está centrada na folha.",
+  "summaryPt": "Cada metade de um cilindro europeu é metade da espessura da porta mais a profundidade do espelho daquele lado, arredondada para cima na escala de 5 em 5 mm que começa em 27,5 mm: uma porta de 40 mm com espelhos de 4 mm dá 55 mm e é pedida como 56 mm. Esta página dá o cálculo, uma tabela de consulta por espessura de porta trabalhada contra os nove comprimentos que realmente publicamos, explica por que uma porta fina leva na mesma um cilindro saliente, e mostra o que muda quando a caixa de fechadura não está centrada na folha.",
   "seoTitlePt": "Espessura de porta a comprimento de cilindro 2026: tabela | Canton Hyland",
   "seoDescriptionPt": "Como calcular o comprimento de cilindro europeu a partir da espessura de porta, uma tabela trabalhada contra nove comprimentos publicados, e por que portas finas levam cilindro saliente.",
   "bodyPt": [

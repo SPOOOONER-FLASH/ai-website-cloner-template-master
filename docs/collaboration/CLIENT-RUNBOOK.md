@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-28 · 更新人：Claude：RSS 已上线验证完毕（无需动作）；剩一件待办 —— AI 来源追踪三步**
+**最后更新：2026-09-28 · 更新人：Claude · 待办：Bing 重新检查；公司名、LinkedIn 公司主页、AI 可见度摸底、GSC 未收录导出四件；AI 来源追踪三步。RSS 十条已上线验证完毕，无需动作**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -17,36 +17,49 @@
 
 ---
 
-## 现在要做的：没有了 —— 十条 RSS 已上线并验证（2026-09-28）
+## 现在要做的：Bing 那两条「High」报错 —— 已修好，只差让 Bing 重新检查（2026-09-28）
 
-你说 Search Console 已经填完了。我从站外实测过，**十条 RSS 全部在线**，所以你提交的那几条会正常通过。
+你截图里的两条，我今天对着线上逐条实测过，**网站这边都已经是对的**，Bing 显示的是它上一次扫描时的旧结果：
 
-| 我测了什么 | 结果 |
-|---|---|
-| 十条 feed 是否正常（HTTP 200） | 十条全部 200 |
-| 每条里有多少篇文章 | 各 82 篇 |
-| 每篇有没有带大图（Discover 的大卡靠它） | 82/82 都有 |
-| 每条是否声明自己而不是英文那条 | 十条全部正确 |
-| 每条第一篇文章的链接是不是本语种 | 十条全部正确 |
+| Bing 报的 | 我实测线上（2026-09-28） | 结论 |
+|---|---|---|
+| 5 篇指南「不在 sitemap 里」（strike-plates、spindle-sizes、door-preparation，西语 chrome-finish、hinge-grades） | 5 个网址都返回 **200**；英文 3 篇在 `/sitemap.xml` 里，西语 2 篇在 `/es/sitemap.xml` 里 | 09-26 以前所有语种挤在一个 14 MB 的 sitemap 里，Bing 读到一半就停了——正是这 5 篇的成因。09-26 已拆成每个语种一个文件，已上线 |
+| 2 个页面「head 里没有 description」（`index.php?...tid=23&lang=cn`、`index.php?...aid=397`） | 两个都是旧 PHP 站网址，现在返回 **301 跳转**：tid=23 → `/products/`，aid=397 → X2 逃生装置外把手产品页（该页有 description） | 跳走的网址本身不需要 description；Bing 抓的是跳转生效以前的旧页面 |
 
-这张表不是我手打的，是 `npm run seo:feeds` 跑出来的，随时可以重跑。所以你读到的是当天的数字，
-不是上个月的 —— 上一版这里写着「/es/feed.xml 是 404，先别提交」，那句话在上线之后就变成了
-**一句叫你别做已经能做的事的废话**，这次换成命令就不会再发生。
+### 第 1 步 · 在 Bing 里把十个 sitemap 都交上去（2 分钟）
 
-### 只有一种情况要你动手
+1. 打开 https://www.bing.com/webmasters ，选 cantonlock.com。
+2. 左侧点 **Sitemaps（站点地图）**。
+3. 看列表里有没有下面这些。**没有的，逐条点右上角「Submit sitemap / 提交站点地图」，粘贴，确定**：
 
-Search Console 的「已提交的站点地图」表里，某一行状态是 **「无法获取」** 或 **「有错误」**：
+   ```
+   https://cantonlock.com/sitemap.xml
+   https://cantonlock.com/es/sitemap.xml
+   https://cantonlock.com/pt/sitemap.xml
+   https://cantonlock.com/fr/sitemap.xml
+   https://cantonlock.com/de/sitemap.xml
+   https://cantonlock.com/ja/sitemap.xml
+   https://cantonlock.com/ko/sitemap.xml
+   https://cantonlock.com/tr/sitemap.xml
+   https://cantonlock.com/ru/sitemap.xml
+   https://cantonlock.com/ar/sitemap.xml
+   ```
 
-- **先等一天再看一次。** Google 常常隔一晚才去抓；你提交得比上线早的那几条更是如此。
-- 一天后还是错的 → **截图整张表发我**，先不要自己删了重填。
+   **成功的样子**：每一条的状态变成「Success / 成功」，「URLs discovered」有数字（英文约 880，其余每个约 680）。
+   **状态是「Couldn't fetch / 无法获取」**：截图发我，先不要删。
+   已经在列表里的，点它右边的 **Resubmit（重新提交）**。
 
-两件不用管的事：
+> 下一次发布上线后，还会多一个 `https://cantonlock.com/sitemap-index.xml`，一个网址就包含上面十个。
+> 我说「已部署」后，你可以只交这一个（交了它，上面十个留着也没关系，不会重复计算）。
 
-- **「已发现的网址数」是 0 或空白** → 正常，这一栏要等几天才有数字。
-- **状态全是「成功」** → 这件事就结束了，不用再看。
+### 第 2 步 · 让 Bing 重新扫描（1 分钟）
 
-（提交时那个坑 ——「输入框里只填 `es/feed.xml` 这一截，不要填完整网址」—— 和当时的实测记录都在
-`archive/2026-09-28-runbook-rss-search-console.md`，只当记录。）
+1. 左侧点 **Recommendations（建议）**，打开「Important pages missing in sitemaps」那条。
+2. 如果页面上有 **Recheck / Validate / 重新检查** 按钮，点它；没有按钮也不用管，Bing 下次扫描（通常几天内）会自己更新。
+3. 对「The description is missing in the head section」那条做同样的事。
+
+**成功的样子**：几天后这两条从列表里消失，或「Pages with error」变成 0。
+**一周后还在**：把那一条的截图（带网址列表）发我，我再逐个实测。
 
 ---
 
@@ -82,6 +95,88 @@ Search Console 的「已提交的站点地图」表里，某一行状态是 **�
 
 我能从外面测到的前提都在（2026-09-28 实测）：security.txt 200；robots.txt 列出 10 份 sitemap；/sitemap.xml 1.55 MB；/de/sitemap.xml 200、683 个网址；/de/ /de/products/ /fr/ /ar/products/ 都是 200；页面上 GA4（G-RBTE7KF82P）在。
 后台里的动作（Search Console、GA4、Cloudflare、Bing）只有你看得到，我测不了；哪一项后台报错了，截图发我。
+
+---
+
+## 现在要做的（2026-09-28，文案会话）：四件，都不碰服务器
+
+### ① 定公司英文全称 —— 回我一句话就行
+
+现在外面流通着三个英文名，AI 和买家会以为是三家公司：
+
+| 在哪里 | 写的是 |
+|---|---|
+| 官网（公司页、FAQ、产品描述、结构化数据） | Canton Hyland Hardware (Group) Co., Ltd. |
+| BAU 2027 展位登记 | Canton Hyland lock Co.,Ltd |
+| 付给展会的银行汇款 | Canton Hyland Hardware & Locks Co., Ltd. |
+
+**你要做的**：看一下营业执照上的英文名，回我“官网用 ×××”。我把官网全部改成这一个；展会那边的更正邮件 BAU 会话 09-25 已起草，用同一个名字发。
+**不确定就别猜**：执照上没有英文名的话，告诉我中文全称，我们再定。
+
+### ② 建 LinkedIn 公司主页，发 3 篇帖 —— 约 30 分钟
+
+文章结论：B2B 买家和 AI 搜索都大量读 LinkedIn，而且看重“真人 + 公司”。我们现在没有公司主页，官网的结构化数据里也就没有这条身份证明。
+
+1. 用你自己的 LinkedIn 账号登录 https://www.linkedin.com → 右上角 **For Business（业务）** → **Create a Company Page（创建公司主页）** → 选 **Company**。
+2. 名称、网址、行业、规模、简介：全部照抄 `docs/copy/linkedin-starter.md` 的「公司主页」一节（桌面 `hyde\GEO-学习与进展-2026-09-28.docx` 里也有）。Logo 用官网那张。
+3. **成功的样子**：主页地址像 `https://www.linkedin.com/company/xxxx/`。**把这个地址发给我**，工程会话会把它加进官网的结构化数据。
+4. 发帖：先发第 1、2 篇（锁芯计算器、EN 1125 vs EN 179），用公司主页发，也可以用你个人账号转发。**第 3 篇（BAU）等老板确认带哪几款产品之后再发**。
+5. 看不到「创建公司主页」：LinkedIn 要求账号用了一段时间、有真实姓名和一个联系人，截图发我。
+
+### ③ AI 可见度第一次摸底 —— 约 2 小时，可以分几天
+
+题库和规则在 `docs/geo/README.md`（桌面文档附录二）。45 道题，除最后 3 道品牌题外都不含我们的名字。空白记录表用 `npm run geo:baseline` 打印，工程会话可以替你打。
+
+1. 在 ChatGPT、Gemini、Perplexity 各问一遍，Google 搜同样的句子看顶部的 AI 概览。**一字不改地复制粘贴**。
+2. 每题每个平台问 3 次，按记录表填：有没有提到我们、排第几、怎么描述我们、有没有引用 cantonlock.com 的网址。ChatGPT 用临时聊天；其他平台用未登录或没有历史的会话。
+3. 做不完没关系，先做 mfr-01 到 mfr-08（找制造商那组）也有用。填好的表发我，放进 `docs/geo/results/`。
+4. **这是基线**：以后每季度同一套题再问一次，看数字变化。第一次多半是 0，这本身就是结论，不是失败。
+
+### ④ Search Console 导出两张“没收录”清单 —— 5 分钟
+
+1. 打开 https://search.google.com/search-console → 左上角选 **cantonlock.com** → 左侧 **网页**（Pages）。
+2. 往下拉到「为什么网页未编入索引」，点 **已抓取 - 尚未编入索引**（Crawled – currently not indexed）→ 右上角 **导出** → **下载 CSV**。
+3. 回到上一页，再点 **已发现 - 尚未编入索引**（Discovered – currently not indexed）→ 同样导出。
+4. 两个文件发我。前一张说明 Google 看过但觉得不值得收，要改内容；后一张是还没来抓，要加内链。**不要**对着这些网址一条条点“请求编入索引”，没用。
+5. 列表里没有这两项：说明目前没有这类问题，截个图告诉我就行。
+
+### 还在等你的（BAU 专栏，不急但上线前要有）
+
+- 老板确认 BAU 带哪几款：现在页面上是 307、311、305、LC14、564 和主匙系统。
+- 预约邮件发到 tec@cantonlock.com，谁负责回复客户确认时间。
+
+---
+
+## 不用做了：十条 RSS 已上线并验证（2026-09-28）
+
+你说 Search Console 已经填完了。我从站外实测过，**十条 RSS 全部在线**，所以你提交的那几条会正常通过。
+
+| 我测了什么 | 结果 |
+|---|---|
+| 十条 feed 是否正常（HTTP 200） | 十条全部 200 |
+| 每条里有多少篇文章 | 各 82 篇 |
+| 每篇有没有带大图（Discover 的大卡靠它） | 82/82 都有 |
+| 每条是否声明自己而不是英文那条 | 十条全部正确 |
+| 每条第一篇文章的链接是不是本语种 | 十条全部正确 |
+
+这张表不是我手打的，是 `npm run seo:feeds` 跑出来的，随时可以重跑。所以你读到的是当天的数字，
+不是上个月的 —— 上一版这里写着「/es/feed.xml 是 404，先别提交」，那句话在上线之后就变成了
+**一句叫你别做已经能做的事的废话**，这次换成命令就不会再发生。
+
+### 只有一种情况要你动手
+
+Search Console 的「已提交的站点地图」表里，某一行状态是 **「无法获取」** 或 **「有错误」**：
+
+- **先等一天再看一次。** Google 常常隔一晚才去抓；你提交得比上线早的那几条更是如此。
+- 一天后还是错的 → **截图整张表发我**，先不要自己删了重填。
+
+两件不用管的事：
+
+- **「已发现的网址数」是 0 或空白** → 正常，这一栏要等几天才有数字。
+- **状态全是「成功」** → 这件事就结束了，不用再看。
+
+（提交时那个坑 ——「输入框里只填 `es/feed.xml` 这一截，不要填完整网址」—— 和当时的实测记录都在
+`archive/2026-09-28-runbook-rss-search-console.md`，只当记录。）
 
 ---
 
@@ -163,8 +258,7 @@ nginx -t
 4. **审稿人的真实姓名和职位** —— 技术指南如果有工厂工程师真正审过，作者行下面可以加一行
    「审稿：某某，某职位」，结构化数据里同时写上 `reviewedBy`。这对「专业性」加分很大。
    **名字和职位必须是真的，我们不编**，所以这一行到现在是空的；你给我一个名字，当天就能上。
-5. **LinkedIn 公司主页的网址** —— 你给我的 `linkedin.com/in/leiboliu` 是**个人**主页，
-   已经挂在作者页上、也写进了作者的结构化数据（2026-09-28 实测在线）。页脚那一排社媒
-   （YouTube、Instagram、Facebook、Pinterest、Tumblr）和公司的结构化数据里现在没有 LinkedIn ——
-   那个位置该放**公司主页**（`linkedin.com/company/…`）。拿个人主页去当公司身份是假声明，所以我没放。
-   公司主页如果有，给我网址；如果没有，这一条就一直空着，不影响别的。
+5. **LinkedIn 公司主页的网址** —— 就是上面第 ② 件，做完把地址发我即可，这里不重复写步骤。
+   补一句归属：你给的 `linkedin.com/in/leiboliu` 是**个人**主页，已经挂在作者页的人头和履历
+   旁边、也写进了作者的结构化数据（2026-09-28 实测在线），那一处不用再动。页脚社媒和**公司**
+   的结构化数据要的是 `linkedin.com/company/…`；拿个人主页去当公司身份是假声明，所以那边先空着。

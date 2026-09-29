@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
 import { CategoryGuide } from "@/components/site/CategoryGuide";
+import { CategoryBuyingGuide, guideBlocks } from "@/components/site/CategoryBuyingGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
+import { categoryNote } from "@/data/category-notes";
+import { CategoryNote } from "@/components/site/CategoryNote";
 import { notFound } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -144,6 +147,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
               {sourcing ? (
                 <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p>
               ) : null}
+              <CategoryNote note={categoryNote(category.slug, "es")} />
             </div>
           </div>
         </section>
@@ -164,7 +168,8 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
           locale="es"
           showCompareLink
         />
-        <CategoryGuide category={category} products={products} locale="es" />
+        <CategoryBuyingGuide categorySlug={category.slug} categoryName={name} products={products} locale="es" withSchema={false} />
+        <CategoryGuide category={category} products={products} locale="es" extraFaq={guideBlocks(category.slug, products, "es")?.items ?? []} />
       </main>
     </>
   );

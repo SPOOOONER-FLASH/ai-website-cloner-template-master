@@ -31,6 +31,7 @@ const EXEMPT: Record<string, string> = {
   "/compare": "one comparison per category, linked from each category page",
   "/video": "one watch page per product video, linked from that product page",
   "/privacy": "legal page, linked from every footer and under every form, not a drawer section",
+  "/sitemap-index.xml": "XML for search engines (lists the ten sitemaps), not a page a reader visits",
 };
 
 /** The English sections: each top-level folder, or its first nested page when it has no index. */

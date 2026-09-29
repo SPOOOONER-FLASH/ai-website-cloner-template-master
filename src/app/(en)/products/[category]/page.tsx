@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { CategoryBuyingGuide, guideBlocks } from "@/components/site/CategoryBuyingGuide";
 import { CategoryGuide } from "@/components/site/CategoryGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
+import { categoryNote } from "@/data/category-notes";
+import { CategoryNote } from "@/components/site/CategoryNote";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -163,6 +166,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <p className="text-lead text-ink">{category.summary}</p>
             {/* Sourcing facts, every clause published elsewhere — see category-sourcing.ts. */}
             {sourcing ? <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p> : null}
+            <CategoryNote note={categoryNote(category.slug, "en")} />
           </div>
         </div>
       </section>
@@ -173,9 +177,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <ProductIndexList products={products} label={`${products.length} ${category.name.toLowerCase()}`} />
         </div>
       </section>
+      {/*
+        Two blocks, one FAQPage. The buying guide (buyer vocabulary, ordering) renders its own
+        questions but hands them to CategoryGuide's schema, so a page never carries two FAQPage
+        nodes — Google reads one per page and would pick either.
+      */}
+      <CategoryBuyingGuide categorySlug={category.slug} categoryName={category.name} products={products} withSchema={false} />
       <SpecMatrix products={products} categorySlug={category.slug} showCompareLink />
       {/* Delete the grid and this still answers "what is in the range, how do I choose" (09-28). */}
-      <CategoryGuide category={category} products={products} />
+      <CategoryGuide category={category} products={products} extraFaq={guideBlocks(category.slug, products, "en")?.items ?? []} />
     </main>
     </>
   );

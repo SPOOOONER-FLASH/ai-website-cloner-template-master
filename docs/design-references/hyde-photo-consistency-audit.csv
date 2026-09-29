@@ -1,5 +1,5 @@
 model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTransparentPct,bboxWidthPct,bboxHeightPct,bboxAreaPct,foregroundAreaPct,visualBaselinePct,horizontalCenterOffsetPct,significantComponents,reviewFlags
-001,001-panic-exit-device-trim,panic-exit-devices,hero,/images/products/001-panic-exit-device-trim.webp,measured,,white,edge-matched-clone,100.0,0.0,16.8,66.0,11.1,10.2,84.4,0.6,1,small bounding box
+001,001-panic-exit-device-trim,panic-exit-devices,hero,/images/products/001-panic-exit-device-trim.webp,measured,,white,none,100.0,0.0,21.9,87.5,19.1,17.9,91.4,0.0,1,small bounding box
 001,001-panic-exit-device-trim,panic-exit-devices,gallery 1,/images/products/001-panic-exit-device-trim-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.6,0.0,,,,,,,,
 001,001-panic-exit-device-trim,panic-exit-devices,gallery 2,/images/products/001-panic-exit-device-trim-3.webp,measured,,white,edge-matched-clone,99.6,0.0,94.9,56.6,53.8,10.5,79.3,1.0,6,
 001,001-panic-exit-device-trim,panic-exit-devices,gallery 3,/images/products/001-panic-exit-device-trim-4.webp,measured,,white,edge-matched-clone,100.0,0.0,38.7,75.4,29.2,14.9,89.8,2.9,2,small bounding box
@@ -71,7 +71,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 033,033-panic-exit-device-trim,panic-exit-devices,gallery 3,/images/products/033-panic-exit-device-trim-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
 033,033-panic-exit-device-trim,panic-exit-devices,gallery 4,/images/products/033-panic-exit-device-trim-5.webp,measured,,white,boundary-fill,99.0,0.0,79.7,80.9,64.4,7.6,99.6,1.2,5,touches canvas edge
 033,033-panic-exit-device-trim,panic-exit-devices,gallery 5,/images/products/033-panic-exit-device-trim-6.webp,measured,,white,edge-matched-clone,100.0,0.0,87.1,87.1,75.9,17.9,94.1,2.5,1,
-035,035-panic-exit-device-trim,panic-exit-devices,hero,/images/products/035-panic-exit-device-trim.webp,measured,,white,boundary-fill,99.1,0.0,59.8,87.1,52.1,22.4,100.0,-3.3,1,touches canvas edge
+035,035-panic-exit-device-trim,panic-exit-devices,hero,/images/products/035-panic-exit-device-trim.webp,measured,,white,none,100.0,0.0,60.2,87.1,52.4,22.6,91.0,0.0,1,
 035,035-panic-exit-device-trim,panic-exit-devices,gallery 1,/images/products/035-panic-exit-device-trim-2.webp,measured,,white,boundary-fill,100.0,0.0,75.4,69.5,52.4,21.7,85.2,-2.1,5,
 035,035-panic-exit-device-trim,panic-exit-devices,gallery 2,/images/products/035-panic-exit-device-trim-3.webp,measured,,white,edge-matched-clone,100.0,0.0,61.3,79.7,48.9,17.0,90.2,9.6,3,
 035,035-panic-exit-device-trim,panic-exit-devices,gallery 3,/images/products/035-panic-exit-device-trim-4.webp,measured,,white,boundary-fill,98.3,0.0,82.4,86.3,71.2,8.0,98.8,4.9,6,
@@ -134,7 +134,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 1073D MB,1073d-mb-night-latch-and-rim-lock,night-latches-rim-locks,gallery 3,/images/products/1073d-mb-night-latch-and-rim-lock-4.webp,measured,,white,edge-matched-clone,100.0,0.0,85.9,43.4,37.3,33.1,73.4,2.0,2,high visual baseline
 1073D MB,1073d-mb-night-latch-and-rim-lock,night-latches-rim-locks,gallery 4,/images/products/1073d-mb-night-latch-and-rim-lock-5.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,4.3,0.0,,,,,,,,
 1073D MB,1073d-mb-night-latch-and-rim-lock,night-latches-rim-locks,gallery 5,/images/products/1073d-mb-night-latch-and-rim-lock-6.webp,measured,,white,none,100.0,0.0,87.1,87.9,76.6,7.9,91.0,-0.2,13,
-1073D,1073d-night-latch-and-rim-lock,night-latches-rim-locks,hero,/images/products/1073d-night-latch-and-rim-lock.webp,measured,,white,edge-matched-clone,100.0,0.0,87.9,59.0,51.8,22.6,91.4,2.5,2,
+1073D,1073d-night-latch-and-rim-lock,night-latches-rim-locks,hero,/images/products/1073d-night-latch-and-rim-lock.webp,measured,,white,none,100.0,0.0,86.7,58.2,50.5,22.0,71.9,0.0,2,high visual baseline
 1073D,1073d-night-latch-and-rim-lock,night-latches-rim-locks,gallery 1,/images/products/1073d-night-latch-and-rim-lock-2.webp,measured,,white,edge-matched-clone,99.9,0.0,93.0,64.5,59.9,31.2,84.0,1.2,2,
 1073D,1073d-night-latch-and-rim-lock,night-latches-rim-locks,gallery 2,/images/products/1073d-night-latch-and-rim-lock-3.webp,measured,,white,edge-matched-clone,100.0,0.0,91.8,73.0,67.1,30.3,90.6,1.0,8,
 1073D,1073d-night-latch-and-rim-lock,night-latches-rim-locks,gallery 3,/images/products/1073d-night-latch-and-rim-lock-4.webp,measured,,white,edge-matched-clone,99.9,0.0,92.6,93.8,86.8,9.2,97.3,-0.2,13,
@@ -176,7 +176,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 1121,1121-lock-case,lock-cases,gallery 5,/images/products/1121-lock-case-6.webp,measured,,white,edge-matched-clone,98.1,0.0,98.4,44.9,44.2,6.3,75.8,0.0,6,high visual baseline
 1121,1121-lock-case,lock-cases,gallery 6,/images/products/1121-lock-case-7.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,5.9,0.0,,,,,,,,
 1121,1121-lock-case,lock-cases,gallery 7,/images/products/1121-lock-case-8.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,97.1,0.0,,,,,,,,
-140,140-lock-case,lock-cases,hero,/images/products/140-lock-case.webp,measured,,white,edge-matched-clone,98.9,0.0,33.6,97.3,32.7,12.8,98.8,7.4,1,
+140,140-lock-case,lock-cases,hero,/images/products/140-lock-case.webp,measured,,white,none,100.0,0.0,31.3,90.2,28.2,11.2,95.3,0.0,1,small bounding box
 140,140-lock-case,lock-cases,gallery 1,/images/products/140-lock-case-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,edge-matched-clone,95.7,0.0,,,,,,,,
 140,140-lock-case,lock-cases,gallery 2,/images/products/140-lock-case-3.webp,measured,,white,edge-matched-clone,100.0,0.0,26.2,88.7,23.2,15.0,94.5,0.2,1,small bounding box
 140,140-lock-case,lock-cases,gallery 3,/images/products/140-lock-case-4.webp,measured,,white,edge-matched-clone,99.0,0.0,96.9,66.8,64.7,22.1,88.3,0.0,8,
@@ -198,7 +198,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 260,260-night-latch-and-rim-lock,night-latches-rim-locks,hero,/images/products/260-night-latch-and-rim-lock.webp,measured,,white,edge-matched-clone,100.0,0.0,85.9,43.4,37.3,29.3,71.1,0.0,2,high visual baseline
 260,260-night-latch-and-rim-lock,night-latches-rim-locks,gallery 1,/images/products/260-night-latch-and-rim-lock-2.webp,measured,,white,edge-matched-clone,100.0,0.0,85.9,70.7,60.8,34.8,91.0,0.8,4,
 260,260-night-latch-and-rim-lock,night-latches-rim-locks,gallery 2,/images/products/260-night-latch-and-rim-lock-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,1.8,0.0,,,,,,,,
-300,300-panic-exit-device,panic-exit-devices,hero,/images/products/300-panic-exit-device.webp,measured,,white,edge-matched-clone,100.0,0.0,80.1,25.4,20.3,5.8,63.7,0.2,1,small bounding box; high visual baseline
+300,300-panic-exit-device,panic-exit-devices,hero,/images/products/300-panic-exit-device.webp,measured,,white,none,100.0,0.0,87.5,27.7,24.3,7.0,73.8,0.0,1,small bounding box; high visual baseline
 300,300-panic-exit-device,panic-exit-devices,gallery 1,/images/products/300-panic-exit-device-2.webp,measured,,white,edge-matched-clone,100.0,0.0,82.4,36.7,30.3,8.8,70.7,-1.8,1,high visual baseline
 300,300-panic-exit-device,panic-exit-devices,gallery 2,/images/products/300-panic-exit-device-3.webp,measured,,white,edge-matched-clone,100.0,0.0,77.0,60.9,46.9,9.5,77.7,-2.5,3,high visual baseline
 300,300-panic-exit-device,panic-exit-devices,gallery 3,/images/products/300-panic-exit-device-4.webp,measured,,white,edge-matched-clone,100.0,0.0,74.2,61.3,45.5,20.6,85.5,0.0,2,
@@ -252,7 +252,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 306 PS,306-ps-panic-exit-device,panic-exit-devices,gallery 6,/images/products/306-ps-panic-exit-device-7.webp,manual,possible separate corner logo or label,white,none,100.0,0.0,,,,,,,,
 306 PS,306-ps-panic-exit-device,panic-exit-devices,gallery 7,/images/products/306-ps-panic-exit-device-8.webp,manual,possible separate corner logo or label,white,none,99.6,0.0,,,,,,,,
 306 PS,306-ps-panic-exit-device,panic-exit-devices,gallery 8,/images/products/306-ps-panic-exit-device-9.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,10.7,0.0,,,,,,,,
-306-S,306-s-panic-exit-device,panic-exit-devices,hero,/images/products/306-s-panic-exit-device.webp,manual,possible separate corner logo or label,white,none,100.0,0.0,,,,,,,,
+306-S,306-s-panic-exit-device,panic-exit-devices,hero,/images/products/306-s-panic-exit-device.webp,measured,,white,none,100.0,0.0,87.5,34.4,30.1,8.4,77.0,0.0,1,high visual baseline
 306-S,306-s-panic-exit-device,panic-exit-devices,gallery 1,/images/products/306-s-panic-exit-device-2.webp,manual,possible separate corner logo or label,white,none,100.0,0.0,,,,,,,,
 306-S,306-s-panic-exit-device,panic-exit-devices,gallery 2,/images/products/306-s-panic-exit-device-3.webp,manual,possible separate corner logo or label,white,none,98.5,0.0,,,,,,,,
 306-S,306-s-panic-exit-device,panic-exit-devices,gallery 3,/images/products/306-s-panic-exit-device-4.webp,manual,possible separate corner logo or label,white,none,100.0,0.0,,,,,,,,
@@ -284,20 +284,20 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 308-S,308-s-s-panic-exit-device,panic-exit-devices,gallery 1,/images/products/308-s-s-panic-exit-device-2.webp,measured,,white,edge-matched-clone,99.9,0.0,91.0,35.2,32.0,6.5,68.4,1.8,1,high visual baseline
 308-S,308-s-s-panic-exit-device,panic-exit-devices,gallery 2,/images/products/308-s-s-panic-exit-device-3.webp,measured,,white,edge-matched-clone,100.0,0.0,81.3,34.4,27.9,10.2,68.0,-0.4,1,small bounding box; high visual baseline
 308-S,308-s-s-panic-exit-device,panic-exit-devices,gallery 3,/images/products/308-s-s-panic-exit-device-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
-309-D,309-d-double-door-panic-exit-device,panic-exit-devices,hero,/images/products/309-d-double-door-panic-exit-device.webp,measured,,white,edge-matched-clone,99.9,0.0,46.9,94.5,44.3,2.9,97.3,12.1,1,off-center
+309-D,309-d-double-door-panic-exit-device,panic-exit-devices,hero,/images/products/309-d-double-door-panic-exit-device.webp,measured,,white,none,100.0,0.0,43.8,87.5,38.3,2.4,91.4,0.0,1,
 309-D,309-d-double-door-panic-exit-device,panic-exit-devices,gallery 1,/images/products/309-d-double-door-panic-exit-device-2.webp,measured,,white,edge-matched-clone,100.0,0.0,28.9,91.8,26.5,2.7,95.3,8.2,1,small bounding box
 309-D,309-d-double-door-panic-exit-device,panic-exit-devices,gallery 2,/images/products/309-d-double-door-panic-exit-device-3.webp,measured,,white,edge-matched-clone,99.4,0.0,97.3,51.6,50.2,10.6,78.5,-0.6,10,
 309-D,309-d-double-door-panic-exit-device,panic-exit-devices,gallery 3,/images/products/309-d-double-door-panic-exit-device-4.webp,measured,,white,boundary-fill,100.0,0.0,75.4,75.4,56.8,24.6,86.3,1.0,2,
 309-D,309-d-double-door-panic-exit-device,panic-exit-devices,gallery 4,/images/products/309-d-double-door-panic-exit-device-5.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,96.7,0.0,,,,,,,,
 309-D,309-d-double-door-panic-exit-device,panic-exit-devices,gallery 5,/images/products/309-d-double-door-panic-exit-device-6.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.6,0.0,,,,,,,,
 309-D,309-d-double-door-panic-exit-device,panic-exit-devices,gallery 6,/images/products/309-d-double-door-panic-exit-device-7.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
-309-S,309-s-s-panic-exit-device,panic-exit-devices,hero,/images/products/309-s-s-panic-exit-device.webp,measured,,white,edge-matched-clone,100.0,0.0,92.6,37.1,34.4,12.1,66.0,-0.2,1,high visual baseline
+309-S,309-s-s-panic-exit-device,panic-exit-devices,hero,/images/products/309-s-s-panic-exit-device.webp,measured,,white,none,100.0,0.0,87.5,34.8,30.4,10.7,77.3,0.0,1,high visual baseline
 309-S,309-s-s-panic-exit-device,panic-exit-devices,gallery 1,/images/products/309-s-s-panic-exit-device-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,95.4,0.0,,,,,,,,
 309-S,309-s-s-panic-exit-device,panic-exit-devices,gallery 2,/images/products/309-s-s-panic-exit-device-3.webp,measured,,white,edge-matched-clone,100.0,0.0,90.6,68.4,62.0,12.8,82.4,1.6,1,
 309-S,309-s-s-panic-exit-device,panic-exit-devices,gallery 3,/images/products/309-s-s-panic-exit-device-4.webp,measured,,white,edge-matched-clone,99.7,0.0,93.8,56.3,52.7,5.7,80.9,0.8,1,
 309-S,309-s-s-panic-exit-device,panic-exit-devices,gallery 4,/images/products/309-s-s-panic-exit-device-5.webp,measured,,white,edge-matched-clone,99.6,0.0,67.2,92.2,61.9,17.8,98.0,-4.3,10,
 309-S,309-s-s-panic-exit-device,panic-exit-devices,gallery 5,/images/products/309-s-s-panic-exit-device-6.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.6,0.0,,,,,,,,
-310,310-panic-exit-device,panic-exit-devices,hero,/images/products/310-panic-exit-device.webp,measured,,white,edge-matched-clone,100.0,0.0,82.0,25.0,20.5,6.1,62.5,1.2,1,small bounding box; high visual baseline
+310,310-panic-exit-device,panic-exit-devices,hero,/images/products/310-panic-exit-device.webp,measured,,white,none,100.0,0.0,87.5,27.0,23.6,7.0,73.4,0.0,1,small bounding box; high visual baseline
 310,310-panic-exit-device,panic-exit-devices,gallery 1,/images/products/310-panic-exit-device-2.webp,measured,,white,edge-matched-clone,100.0,0.0,76.6,62.9,48.2,10.2,78.1,-0.8,3,
 310,310-panic-exit-device,panic-exit-devices,gallery 2,/images/products/310-panic-exit-device-3.webp,measured,,white,edge-matched-clone,100.0,0.0,46.9,67.2,31.5,19.7,83.6,0.0,2,
 310,310-panic-exit-device,panic-exit-devices,gallery 3,/images/products/310-panic-exit-device-4.webp,measured,,white,edge-matched-clone,100.0,0.0,90.2,39.8,36.0,7.8,69.9,-0.2,2,high visual baseline
@@ -406,7 +406,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 45BN,45bn-lock-cylinder,lock-cylinders,gallery 3,/images/products/45bn-lock-cylinder-4.webp,manual,possible separate corner logo or label,white,none,100.0,0.0,,,,,,,,
 45BN,45bn-lock-cylinder,lock-cylinders,gallery 4,/images/products/45bn-lock-cylinder-5.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,82.9,0.0,,,,,,,,
 45BN,45bn-lock-cylinder,lock-cylinders,gallery 5,/images/products/45bn-lock-cylinder-6.webp,manual,edge is not uniformly white or transparent,other / uncertain,edge-matched-clone,97.4,0.0,,,,,,,,
-47BSIK,47bsik-lock-cylinder,lock-cylinders,hero,/images/products/47bsik-lock-cylinder.webp,measured,,white,none,100.0,0.0,47.3,55.5,26.2,15.0,77.7,-1.0,1,small bounding box; high visual baseline
+47BSIK,47bsik-lock-cylinder,lock-cylinders,hero,/images/products/47bsik-lock-cylinder.webp,measured,,white,none,100.0,0.0,68.8,80.5,55.3,31.8,84.4,0.0,1,
 47BSIK,47bsik-lock-cylinder,lock-cylinders,gallery 1,/images/products/47bsik-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,82.4,51.6,42.5,24.1,80.1,2.1,2,
 500,500-indicator,hardware-accessories,hero,/images/products/500-indicator.webp,measured,,white,none,100.0,0.0,73.0,68.8,50.2,38.0,84.4,-1.4,1,
 500,500-indicator,hardware-accessories,gallery 1,/images/products/500-indicator-2.webp,measured,,white,none,100.0,0.0,77.7,71.5,55.6,40.5,84.4,0.2,1,
@@ -708,7 +708,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 600,600-concealed-sliding-door-handle,stainless-steel-handles,gallery 4,/images/products/600-concealed-sliding-door-handle-5.webp,measured,,white,edge-matched-clone,100.0,0.0,69.5,76.6,53.2,4.6,91.4,2.0,12,
 600,600-concealed-sliding-door-handle,stainless-steel-handles,gallery 5,/images/products/600-concealed-sliding-door-handle-6.webp,measured,,white,edge-matched-clone,100.0,0.0,74.6,44.5,33.2,26.7,74.6,1.8,4,high visual baseline
 600,600-concealed-sliding-door-handle,stainless-steel-handles,gallery 6,/images/products/600-concealed-sliding-door-handle-7.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
-6068,6068-mortise-lever-handle-lock,lock-cases,hero,/images/products/6068-mortise-lever-handle-lock.webp,measured,,white,edge-matched-clone,99.7,0.0,93.4,40.6,37.9,19.3,76.6,1.0,1,high visual baseline
+6068,6068-mortise-lever-handle-lock,lock-cases,hero,/images/products/6068-mortise-lever-handle-lock.webp,measured,,white,none,100.0,0.0,90.6,39.1,35.4,18.0,79.7,0.0,1,
 6068,6068-mortise-lever-handle-lock,lock-cases,gallery 1,/images/products/6068-mortise-lever-handle-lock-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 607 ACBK,607-acbk-tubular-lock,knob-locks,hero,/images/products/607-acbk-tubular-lock.webp,measured,,white,edge-matched-clone,100.0,0.0,84.0,56.6,47.6,30.7,80.9,-0.2,1,
 607 ACBK,607-acbk-tubular-lock,knob-locks,gallery 1,/images/products/607-acbk-tubular-lock-2.webp,measured,,white,edge-matched-clone,100.0,0.0,80.5,58.6,47.1,30.3,81.3,1.2,1,
@@ -778,7 +778,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 65 SNKT,65-snkt-lock-cylinder,lock-cylinders,gallery 1,/images/products/65-snkt-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,71.1,64.1,45.5,18.6,81.3,1.2,1,
 65 SNKT,65-snkt-lock-cylinder,lock-cylinders,gallery 2,/images/products/65-snkt-lock-cylinder-3.webp,measured,,white,edge-matched-clone,100.0,0.0,86.3,68.4,59.0,21.7,87.9,-2.9,3,
 65 SNKT,65-snkt-lock-cylinder,lock-cylinders,gallery 3,/images/products/65-snkt-lock-cylinder-4.webp,measured,,white,edge-matched-clone,100.0,0.0,75.8,72.7,55.1,17.1,89.1,1.6,7,
-65SN,65sn-lock-cylinder,lock-cylinders,hero,/images/products/65sn-lock-cylinder.webp,measured,,white,edge-matched-clone,100.0,0.0,90.2,80.9,73.0,26.5,94.9,-0.2,3,
+65SN,65sn-lock-cylinder,lock-cylinders,hero,/images/products/65sn-lock-cylinder.webp,measured,,white,none,100.0,0.0,80.5,71.9,57.8,21.1,78.9,0.0,3,
 65SN,65sn-lock-cylinder,lock-cylinders,gallery 1,/images/products/65sn-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,86.7,79.7,69.1,19.7,95.7,2.7,6,
 65SN,65sn-lock-cylinder,lock-cylinders,gallery 2,/images/products/65sn-lock-cylinder-3.webp,measured,,white,edge-matched-clone,100.0,0.0,88.3,75.8,66.9,37.9,96.1,-1.2,1,
 65SN,65sn-lock-cylinder,lock-cylinders,gallery 3,/images/products/65sn-lock-cylinder-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,7.3,0.0,,,,,,,,
@@ -790,7 +790,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 70 ABKT CP,70-abkt-cp-lock-cylinder,lock-cylinders,gallery 1,/images/products/70-abkt-cp-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,69.9,55.5,38.8,19.3,78.1,4.5,1,
 70 ABKT CP,70-abkt-cp-lock-cylinder,lock-cylinders,gallery 2,/images/products/70-abkt-cp-lock-cylinder-3.webp,measured,,white,edge-matched-clone,100.0,0.0,70.3,59.4,41.7,18.5,80.1,-2.3,1,
 70 ABKT CP,70-abkt-cp-lock-cylinder,lock-cylinders,gallery 3,/images/products/70-abkt-cp-lock-cylinder-4.webp,measured,,white,edge-matched-clone,100.0,0.0,71.1,60.9,43.3,14.3,81.3,-0.4,5,
-70 ACKT BK,70-ackt-bk-lock-cylinder,lock-cylinders,hero,/images/products/70-ackt-bk-lock-cylinder.webp,measured,,white,none,100.0,0.0,49.2,59.0,29.0,12.9,79.7,-2.3,2,small bounding box
+70 ACKT BK,70-ackt-bk-lock-cylinder,lock-cylinders,hero,/images/products/70-ackt-bk-lock-cylinder.webp,measured,,white,none,100.0,0.0,67.2,80.5,54.1,24.0,84.4,0.0,2,
 70 ACKT BK,70-ackt-bk-lock-cylinder,lock-cylinders,gallery 1,/images/products/70-ackt-bk-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,71.9,71.5,51.4,16.3,87.9,0.4,5,
 70 BSDK,70-bsdk-lock-cylinder,lock-cylinders,hero,/images/products/70-bsdk-lock-cylinder.webp,measured,,white,none,100.0,0.0,71.5,57.0,40.8,20.8,78.9,2.5,3,
 70 BSDK,70-bsdk-lock-cylinder,lock-cylinders,gallery 1,/images/products/70-bsdk-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,68.4,71.1,48.6,19.2,86.7,1.0,8,
@@ -817,7 +817,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 70 SNKT-2,70-snkt-2-lock-cylinder,lock-cylinders,gallery 1,/images/products/70-snkt-2-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,75.0,55.9,41.9,19.6,80.5,5.5,1,
 70 SNKT-2,70-snkt-2-lock-cylinder,lock-cylinders,gallery 2,/images/products/70-snkt-2-lock-cylinder-3.webp,measured,,white,edge-matched-clone,100.0,0.0,78.9,71.5,56.4,24.1,88.3,-0.4,2,
 70 SNKT-2,70-snkt-2-lock-cylinder,lock-cylinders,gallery 3,/images/products/70-snkt-2-lock-cylinder-4.webp,measured,,white,edge-matched-clone,100.0,0.0,77.0,62.1,47.8,14.0,83.2,0.6,6,
-70 SNKT BK,70-snkt-bk-lock-cylinder,lock-cylinders,hero,/images/products/70-snkt-bk-lock-cylinder.webp,measured,,white,none,100.0,0.0,46.5,56.6,26.3,13.7,78.1,-1.4,2,small bounding box
+70 SNKT BK,70-snkt-bk-lock-cylinder,lock-cylinders,hero,/images/products/70-snkt-bk-lock-cylinder.webp,measured,,white,none,100.0,0.0,65.6,80.5,52.8,27.3,84.4,0.0,2,
 70 SNKT BK,70-snkt-bk-lock-cylinder,lock-cylinders,gallery 1,/images/products/70-snkt-bk-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,63.3,52.0,32.9,15.8,75.8,2.0,1,high visual baseline
 70 SNKT BK,70-snkt-bk-lock-cylinder,lock-cylinders,gallery 2,/images/products/70-snkt-bk-lock-cylinder-3.webp,measured,,white,boundary-fill,100.0,0.0,75.0,73.0,54.8,18.5,88.7,2.7,5,
 70 SNKT CP,70-snkt-cp-lock-cylinder,lock-cylinders,hero,/images/products/70-snkt-cp-lock-cylinder.webp,measured,,white,none,100.0,0.0,83.6,56.6,47.3,27.4,78.5,0.0,2,
@@ -896,7 +896,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 70ANTI-THEFT,70anti-theft-lock-cylinder,lock-cylinders,gallery 7,/images/products/70anti-theft-lock-cylinder-8.webp,manual,edge is not uniformly white or transparent,other / uncertain,edge-matched-clone,97.4,0.0,,,,,,,,
 70ANTI-THEFT,70anti-theft-lock-cylinder,lock-cylinders,gallery 8,/images/products/70anti-theft-lock-cylinder-9.webp,measured,,white,edge-matched-clone,100.0,0.0,77.7,77.3,60.1,21.6,90.6,1.8,7,
 70ANTI-THEFT,70anti-theft-lock-cylinder,lock-cylinders,gallery 9,/images/products/70anti-theft-lock-cylinder-10.webp,measured,,white,edge-matched-clone,100.0,0.0,84.4,82.4,69.5,26.9,93.8,0.4,2,
-70BK,70bk-lock-cylinder,lock-cylinders,hero,/images/products/70bk-lock-cylinder.webp,measured,,white,edge-matched-clone,100.0,0.0,43.8,61.7,27.0,13.2,81.3,-1.6,1,small bounding box
+70BK,70bk-lock-cylinder,lock-cylinders,hero,/images/products/70bk-lock-cylinder.webp,measured,,white,none,100.0,0.0,57.0,80.5,45.9,22.2,84.4,0.0,1,
 70BK,70bk-lock-cylinder,lock-cylinders,gallery 1,/images/products/70bk-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,76.6,76.2,58.3,19.5,89.1,0.0,6,
 70BK,70bk-lock-cylinder,lock-cylinders,gallery 2,/images/products/70bk-lock-cylinder-3.webp,measured,,white,edge-matched-clone,100.0,0.0,63.7,39.5,25.1,16.4,68.0,2.1,1,small bounding box; high visual baseline
 70BK,70bk-lock-cylinder,lock-cylinders,gallery 3,/images/products/70bk-lock-cylinder-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,7.3,0.0,,,,,,,,
@@ -952,7 +952,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 70SNKT CP-ANTI-THEFT,70snkt-cp-anti-theft-lock-cylinder,lock-cylinders,gallery 3,/images/products/70snkt-cp-anti-theft-lock-cylinder-4.webp,measured,,white,edge-matched-clone,100.0,0.0,74.6,49.2,36.7,16.9,77.3,0.6,1,high visual baseline
 80 BSDK,80-bsdk-lock-cylinder,lock-cylinders,hero,/images/products/80-bsdk-lock-cylinder.webp,measured,,white,none,100.0,0.0,66.8,56.6,37.8,19.0,78.5,0.2,3,
 80 BSDK,80-bsdk-lock-cylinder,lock-cylinders,gallery 1,/images/products/80-bsdk-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,78.9,77.3,61.0,23.4,91.4,2.0,7,
-80 BSKT,80-bskt-lock-cylinder,lock-cylinders,hero,/images/products/80-bskt-lock-cylinder.webp,measured,,white,none,100.0,0.0,60.2,57.8,34.8,16.8,78.9,0.0,3,
+80 BSKT,80-bskt-lock-cylinder,lock-cylinders,hero,/images/products/80-bskt-lock-cylinder.webp,measured,,white,none,100.0,0.0,80.5,77.0,61.9,29.8,80.9,0.0,3,
 80 BSKT,80-bskt-lock-cylinder,lock-cylinders,gallery 1,/images/products/80-bskt-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,75.0,83.2,62.4,20.9,91.4,0.0,10,
 80 PBKT,80-pbkt-lock-cylinder,lock-cylinders,hero,/images/products/80-pbkt-lock-cylinder.webp,measured,,white,none,100.0,0.0,77.0,58.6,45.1,24.2,79.3,0.2,3,
 80 PBKT,80-pbkt-lock-cylinder,lock-cylinders,gallery 1,/images/products/80-pbkt-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,77.7,65.6,51.0,28.2,82.8,0.2,1,
@@ -1105,7 +1105,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 8828 SSET,8828-sset-lever-handle,lever-handles,gallery 1,/images/products/8828-sset-lever-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,71.1,62.9,44.7,4.0,82.0,6.3,4,
 8828 SSET,8828-sset-lever-handle,lever-handles,gallery 2,/images/products/8828-lever-handle-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,8.5,0.0,,,,,,,,
 8828 SSET,8828-sset-lever-handle,lever-handles,gallery 3,/images/products/8828-lever-handle-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.6,0.0,,,,,,,,
-90 BSKT,90-bskt-lock-cylinder,lock-cylinders,hero,/images/products/90-bskt-lock-cylinder.webp,measured,,white,none,100.0,0.0,54.7,59.4,32.5,13.7,79.7,0.0,3,
+90 BSKT,90-bskt-lock-cylinder,lock-cylinders,hero,/images/products/90-bskt-lock-cylinder.webp,measured,,white,none,100.0,0.0,73.4,80.5,59.1,24.9,84.4,0.0,3,
 90 BSKT,90-bskt-lock-cylinder,lock-cylinders,gallery 1,/images/products/90-bskt-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,71.5,83.2,59.5,17.9,90.6,-1.0,6,
 90 BSKT,90-bskt-lock-cylinder,lock-cylinders,gallery 2,/images/products/90-bskt-lock-cylinder-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,3.8,0.0,,,,,,,,
 90 MBKT CP,90-mbkt-cp-lock-cylinder,lock-cylinders,hero,/images/products/90-mbkt-cp-lock-cylinder.webp,measured,,white,none,100.0,0.0,72.3,59.0,42.6,21.6,79.7,0.2,3,
@@ -1115,7 +1115,7 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 90 SNDK,90-sndk-lock-cylinder,lock-cylinders,hero,/images/products/90-sndk-lock-cylinder.webp,measured,,white,none,100.0,0.0,62.5,59.0,36.9,18.2,79.7,1.2,3,
 90 SNDK,90-sndk-lock-cylinder,lock-cylinders,gallery 1,/images/products/90-sndk-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,73.8,78.1,57.7,21.4,90.2,-1.0,7,
 90 SNDK,90-sndk-lock-cylinder,lock-cylinders,gallery 2,/images/products/90-sndk-lock-cylinder-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,97.8,0.0,,,,,,,,
-90 SNKT,90-snkt-lock-cylinder,lock-cylinders,hero,/images/products/90-snkt-lock-cylinder.webp,measured,,white,none,100.0,0.0,52.7,59.8,31.5,12.7,79.7,0.2,3,
+90 SNKT,90-snkt-lock-cylinder,lock-cylinders,hero,/images/products/90-snkt-lock-cylinder.webp,measured,,white,none,100.0,0.0,71.1,80.1,56.9,22.2,84.0,0.0,3,
 90 SNKT,90-snkt-lock-cylinder,lock-cylinders,gallery 1,/images/products/90-snkt-lock-cylinder-2.webp,measured,,white,edge-matched-clone,100.0,0.0,68.4,81.6,55.8,17.6,89.8,-0.6,9,
 9001,9001-stainless-steel-handle,stainless-steel-handles,hero,/images/products/9001-stainless-steel-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,78.5,59.0,46.3,17.3,83.6,4.1,2,
 9001,9001-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/9001-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,66.4,53.1,35.3,12.2,78.5,1.2,1,
@@ -1187,14 +1187,14 @@ model,slug,category,role,src,status,reason,background,repair,edgeWhitePct,edgeTr
 9011E,9011e-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/9011e-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,80.1,55.1,44.1,14.3,78.9,-1.4,1,
 9011E,9011e-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/9011e-stainless-steel-handle-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.1,0.0,,,,,,,,
 9011E,9011e-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/9011e-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,78.5,62.9,49.4,13.7,80.9,4.5,3,
-9012E,9012e-stainless-steel-handle,stainless-steel-handles,hero,/images/products/9012e-stainless-steel-handle.webp,measured,,white,edge-matched-clone,99.9,0.0,91.8,35.9,33.0,15.7,67.6,1.4,1,high visual baseline
+9012E,9012e-stainless-steel-handle,stainless-steel-handles,hero,/images/products/9012e-stainless-steel-handle.webp,measured,,white,none,100.0,0.0,77.3,30.1,23.3,11.1,75.0,0.0,1,small bounding box; high visual baseline
 9012E,9012e-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/9012e-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,78.5,59.0,46.3,18.9,80.9,-3.7,8,
 9012E,9012e-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/9012e-stainless-steel-handle-3.webp,measured,,white,edge-matched-clone,100.0,0.0,77.3,68.8,53.2,19.6,92.2,5.1,2,
 9012E,9012e-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/9012e-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,83.2,52.3,43.6,14.4,82.4,4.1,2,
 9012E,9012e-stainless-steel-handle,stainless-steel-handles,gallery 4,/images/products/9012e-stainless-steel-handle-5.webp,measured,,white,edge-matched-clone,99.8,0.0,94.1,73.4,69.1,27.7,87.9,1.0,12,
 9012E,9012e-stainless-steel-handle,stainless-steel-handles,gallery 5,/images/products/9012e-stainless-steel-handle-6.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,2.1,0.0,,,,,,,,
 9012E,9012e-stainless-steel-handle,stainless-steel-handles,gallery 6,/images/products/9012e-stainless-steel-handle-7.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.8,0.0,,,,,,,,
-9014 SSBK,9014-ssbk-stainless-steel-handle,stainless-steel-handles,hero,/images/products/9014-ssbk-stainless-steel-handle.webp,measured,,white,edge-matched-clone,99.5,0.0,94.9,34.0,32.3,12.6,65.2,0.2,1,high visual baseline
+9014 SSBK,9014-ssbk-stainless-steel-handle,stainless-steel-handles,hero,/images/products/9014-ssbk-stainless-steel-handle.webp,measured,,white,none,100.0,0.0,77.3,27.0,20.8,8.3,73.4,0.0,1,small bounding box; high visual baseline
 9014 SSBK,9014-ssbk-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/9014-ssbk-stainless-steel-handle-2.webp,measured,,white,boundary-fill,98.5,0.0,94.1,93.0,87.5,38.5,98.0,-1.0,7,
 9014 SSBK,9014-ssbk-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/9014-ssbk-stainless-steel-handle-3.webp,measured,,white,edge-matched-clone,100.0,0.0,69.5,82.0,57.0,20.2,94.5,-4.3,1,
 9014 SSBK,9014-ssbk-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/9014-ssbk-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,48.4,89.8,43.5,18.0,95.7,8.2,1,
@@ -1291,7 +1291,7 @@ BH01,bh01-grab-bar,care-grab-bars,gallery 1,/images/products/bh01-grab-bar.webp,
 BH01,bh01-grab-bar,care-grab-bars,gallery 2,/images/products/bh01-grab-bar-4.webp,measured,,white,none,100.0,0.0,90.6,60.2,54.5,19.4,82.8,0.0,4,
 BH01,bh01-grab-bar,care-grab-bars,gallery 3,/images/products/bh01-grab-bar-5.webp,measured,,white,none,100.0,0.0,88.3,87.5,77.2,22.8,94.9,-0.8,5,
 BH01,bh01-grab-bar,care-grab-bars,gallery 4,/images/products/bh01-grab-bar-6.webp,measured,,white,none,100.0,0.0,81.6,68.8,56.1,8.2,85.9,0.2,14,
-BH02,bh02-knurled-grab-bar,care-grab-bars,hero,/images/products/bh02-knurled-grab-bar.webp,measured,,white,none,100.0,0.0,17.6,81.6,14.4,7.1,91.4,-2.5,1,small bounding box
+BH02,bh02-knurled-grab-bar,care-grab-bars,hero,/images/products/bh02-knurled-grab-bar.webp,measured,,white,none,100.0,0.0,20.3,93.0,18.9,9.1,96.9,0.0,1,small bounding box
 BH02,bh02-knurled-grab-bar,care-grab-bars,gallery 1,/images/products/bh02-knurled-grab-bar-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH02,bh02-knurled-grab-bar,care-grab-bars,gallery 2,/images/products/bh02-knurled-grab-bar-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,17.3,0.0,,,,,,,,
 BH02,bh02-knurled-grab-bar,care-grab-bars,gallery 3,/images/products/bh02-knurled-grab-bar-4.webp,measured,,white,none,100.0,0.0,87.5,68.0,59.5,9.2,84.8,0.4,14,
@@ -1337,11 +1337,11 @@ BH09,bh09-hook-rail,bathroom-accessories,hero,/images/products/bh09-hook-rail.we
 BH09,bh09-hook-rail,bathroom-accessories,gallery 1,/images/products/bh09-hook-rail-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,4.4,0.0,,,,,,,,
 BH09,bh09-hook-rail,bathroom-accessories,gallery 2,/images/products/bh09-hook-rail-3.webp,measured,,white,none,100.0,0.0,81.6,60.2,49.1,7.3,82.0,-0.2,14,
 BH09,bh09-hook-rail,bathroom-accessories,gallery 3,/images/products/bh09-hook-rail-4.webp,measured,,white,none,100.0,0.0,87.9,67.2,59.1,22.7,85.5,0.2,1,
-BH10,bh10-robe-hook,bathroom-accessories,hero,/images/products/bh10-robe-hook.webp,measured,,white,none,100.0,0.0,47.3,51.6,24.4,19.0,76.2,1.8,1,small bounding box; high visual baseline
+BH10,bh10-robe-hook,bathroom-accessories,hero,/images/products/bh10-robe-hook.webp,measured,,white,none,100.0,0.0,70.7,77.0,54.4,42.7,80.9,0.2,1,
 BH10,bh10-robe-hook,bathroom-accessories,gallery 1,/images/products/bh10-robe-hook-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.7,0.0,,,,,,,,
 BH10,bh10-robe-hook,bathroom-accessories,gallery 2,/images/products/bh10-robe-hook-3.webp,measured,,white,none,100.0,0.0,89.5,36.3,32.5,2.8,70.7,0.2,6,high visual baseline
 BH10,bh10-robe-hook,bathroom-accessories,gallery 3,/images/products/bh10-robe-hook-4.webp,measured,,white,none,100.0,0.0,73.8,73.8,54.5,42.6,86.7,0.2,1,
-BH11,bh11-robe-hook,bathroom-accessories,hero,/images/products/bh11-robe-hook.webp,measured,,white,none,100.0,0.0,49.2,49.6,24.4,23.2,75.8,0.4,1,small bounding box; high visual baseline
+BH11,bh11-robe-hook,bathroom-accessories,hero,/images/products/bh11-robe-hook.webp,measured,,white,none,100.0,0.0,73.0,74.2,54.2,51.8,78.9,0.2,1,
 BH11,bh11-robe-hook,bathroom-accessories,gallery 1,/images/products/bh11-robe-hook-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.4,0.0,,,,,,,,
 BH11,bh11-robe-hook,bathroom-accessories,gallery 2,/images/products/bh11-robe-hook-3.webp,measured,,white,none,99.8,0.0,90.2,34.0,30.7,2.9,68.8,-2.9,5,high visual baseline
 BH11,bh11-robe-hook,bathroom-accessories,gallery 3,/images/products/bh11-robe-hook-4.webp,measured,,white,none,100.0,0.0,66.4,59.0,39.2,38.3,80.5,0.0,1,
@@ -1360,7 +1360,7 @@ BH14,bh14-robe-hook,bathroom-accessories,gallery 2,/images/products/bh14-robe-ho
 BH14,bh14-robe-hook,bathroom-accessories,gallery 3,/images/products/bh14-robe-hook-4.webp,measured,,white,none,100.0,0.0,78.9,52.7,41.6,25.4,77.7,3.5,1,high visual baseline
 BH14,bh14-robe-hook,bathroom-accessories,gallery 4,/images/products/bh14-robe-hook-5.webp,measured,,white,none,99.5,0.0,94.5,43.4,41.0,4.1,68.0,0.8,9,high visual baseline
 BH14,bh14-robe-hook,bathroom-accessories,gallery 5,/images/products/bh14-robe-hook-6.webp,measured,,white,none,100.0,0.0,62.9,74.6,46.9,30.4,87.5,2.5,1,
-BH15-100mm,bh15-100mm-barrel-bolt,hardware-accessories,hero,/images/products/bh15-100mm-barrel-bolt.webp,measured,,white,none,100.0,0.0,85.9,32.4,27.9,18.5,63.7,0.4,3,small bounding box; high visual baseline
+BH15-100mm,bh15-100mm-barrel-bolt,hardware-accessories,hero,/images/products/bh15-100mm-barrel-bolt.webp,measured,,white,none,100.0,0.0,80.5,30.9,24.8,16.9,75.4,0.0,3,small bounding box; high visual baseline
 BH15-100mm,bh15-100mm-barrel-bolt,hardware-accessories,gallery 1,/images/products/bh15-100mm-barrel-bolt-2.webp,measured,,white,none,100.0,0.0,85.9,51.6,44.3,23.0,82.0,0.4,2,
 BH15-100mm,bh15-100mm-barrel-bolt,hardware-accessories,gallery 2,/images/products/bh15-100mm-barrel-bolt-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH15-100mm,bh15-100mm-barrel-bolt,hardware-accessories,gallery 3,/images/products/bh15-100mm-barrel-bolt-4.webp,measured,,white,none,100.0,0.0,80.5,62.5,50.3,21.1,85.5,0.0,3,
@@ -1368,7 +1368,7 @@ BH15-80mm,bh15-80mm-barrel-bolt,hardware-accessories,hero,/images/products/bh15-
 BH15-80mm,bh15-80mm-barrel-bolt,hardware-accessories,gallery 1,/images/products/bh15-80mm-barrel-bolt-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH15-80mm,bh15-80mm-barrel-bolt,hardware-accessories,gallery 2,/images/products/bh15-80mm-barrel-bolt-3.webp,measured,,white,none,100.0,0.0,85.9,59.0,50.7,6.6,80.5,0.8,11,
 BH15-80mm,bh15-80mm-barrel-bolt,hardware-accessories,gallery 3,/images/products/bh15-80mm-barrel-bolt-4.webp,measured,,white,none,100.0,0.0,80.1,82.4,66.0,31.2,93.4,0.2,2,
-BH16,bh16-flat-slide-bolt,hardware-accessories,hero,/images/products/bh16-flat-slide-bolt.webp,measured,,white,none,100.0,0.0,79.3,28.1,22.3,17.0,66.0,1.4,2,small bounding box; high visual baseline
+BH16,bh16-flat-slide-bolt,hardware-accessories,hero,/images/products/bh16-flat-slide-bolt.webp,measured,,white,none,100.0,0.0,80.5,28.1,22.6,17.5,75.0,0.0,2,small bounding box; high visual baseline
 BH16,bh16-flat-slide-bolt,hardware-accessories,gallery 1,/images/products/bh16-flat-slide-bolt-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH16,bh16-flat-slide-bolt,hardware-accessories,gallery 2,/images/products/bh16-flat-slide-bolt-3.webp,measured,,white,none,100.0,0.0,74.6,36.7,27.4,24.8,69.1,-0.2,1,small bounding box; high visual baseline
 BH16,bh16-flat-slide-bolt,hardware-accessories,gallery 3,/images/products/bh16-flat-slide-bolt-4.webp,measured,,white,none,100.0,0.0,82.8,41.4,34.3,29.6,70.3,-0.4,2,high visual baseline
@@ -1486,11 +1486,11 @@ BH40,bh40-robe-hook,bathroom-accessories,hero,/images/products/bh40-robe-hook.we
 BH40,bh40-robe-hook,bathroom-accessories,gallery 1,/images/products/bh40-robe-hook-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH40,bh40-robe-hook,bathroom-accessories,gallery 2,/images/products/bh40-robe-hook-3.webp,measured,,white,none,100.0,0.0,52.0,78.9,41.0,3.8,87.1,1.0,7,
 BH40,bh40-robe-hook,bathroom-accessories,gallery 3,/images/products/bh40-robe-hook-4.webp,measured,,white,none,100.0,0.0,57.8,67.2,38.8,13.6,80.1,2.0,1,
-BH41,bh41-robe-hook,bathroom-accessories,hero,/images/products/bh41-robe-hook.webp,measured,,white,none,100.0,0.0,44.5,53.1,23.7,16.9,76.6,0.0,1,small bounding box; high visual baseline
+BH41,bh41-robe-hook,bathroom-accessories,hero,/images/products/bh41-robe-hook.webp,measured,,white,none,100.0,0.0,65.6,78.1,51.3,36.7,82.0,0.0,1,
 BH41,bh41-robe-hook,bathroom-accessories,gallery 1,/images/products/bh41-robe-hook-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH41,bh41-robe-hook,bathroom-accessories,gallery 2,/images/products/bh41-robe-hook-3.webp,measured,,white,none,100.0,0.0,59.8,75.0,44.8,4.9,89.8,2.1,6,
 BH41,bh41-robe-hook,bathroom-accessories,gallery 3,/images/products/bh41-robe-hook-4.webp,measured,,white,none,100.0,0.0,52.7,41.8,22.0,12.1,72.3,-0.6,1,small bounding box; high visual baseline
-BH42,bh42-robe-hook,bathroom-accessories,hero,/images/products/bh42-robe-hook.webp,measured,,white,none,100.0,0.0,52.7,57.8,30.5,17.5,78.9,0.2,1,
+BH42,bh42-robe-hook,bathroom-accessories,hero,/images/products/bh42-robe-hook.webp,measured,,white,none,100.0,0.0,70.7,78.1,55.2,31.7,82.0,0.2,1,
 BH42,bh42-robe-hook,bathroom-accessories,gallery 1,/images/products/bh42-robe-hook-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,1.6,0.0,,,,,,,,
 BH42,bh42-robe-hook,bathroom-accessories,gallery 2,/images/products/bh42-robe-hook-3.webp,measured,,white,none,100.0,0.0,52.0,66.0,34.3,4.1,82.8,1.0,8,
 BH42,bh42-robe-hook,bathroom-accessories,gallery 3,/images/products/bh42-robe-hook-4.webp,measured,,white,none,100.0,0.0,47.3,60.2,28.4,14.0,81.6,2.9,1,small bounding box
@@ -1517,7 +1517,7 @@ BH54,bh54-double-robe-hook,bathroom-accessories,hero,/images/products/bh54-doubl
 BH54,bh54-double-robe-hook,bathroom-accessories,gallery 1,/images/products/bh54-double-robe-hook-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 BH54,bh54-double-robe-hook,bathroom-accessories,gallery 2,/images/products/bh54-double-robe-hook-3.webp,measured,,white,none,100.0,0.0,91.0,59.4,54.0,4.6,79.7,0.6,6,
 BH54,bh54-double-robe-hook,bathroom-accessories,gallery 3,/images/products/bh54-double-robe-hook-4.webp,measured,,white,none,100.0,0.0,75.4,52.7,39.8,19.2,77.0,-3.3,1,high visual baseline
-BH55,bh55-fold-down-shower-seat,care-grab-bars,hero,/images/products/bh55-fold-down-shower-seat.webp,measured,,white,edge-matched-clone,99.9,0.0,92.6,41.0,38.0,8.5,87.5,1.0,1,
+BH55,bh55-fold-down-shower-seat,care-grab-bars,hero,/images/products/bh55-fold-down-shower-seat.webp,measured,,white,none,100.0,0.0,93.0,41.4,38.5,8.3,75.0,0.0,1,high visual baseline
 BH55,bh55-fold-down-shower-seat,care-grab-bars,gallery 1,/images/products/bh55-fold-down-shower-seat-2.webp,measured,,white,edge-matched-clone,100.0,0.0,89.5,54.7,48.9,14.3,90.6,-1.4,1,
 BH55,bh55-fold-down-shower-seat,care-grab-bars,gallery 2,/images/products/bh55-fold-down-shower-seat-3.webp,measured,,white,edge-matched-clone,100.0,0.0,86.7,63.3,54.9,9.0,83.2,-0.4,3,
 BH55,bh55-fold-down-shower-seat,care-grab-bars,gallery 3,/images/products/bh55-fold-down-shower-seat-4.webp,measured,,white,edge-matched-clone,100.0,0.0,85.2,70.3,59.9,24.2,91.0,2.0,9,
@@ -1582,7 +1582,7 @@ CH01,ch01-brass-and-steel-hinges,brass-steel-hinges,hero,/images/products/ch01-b
 CH01,ch01-brass-and-steel-hinges,brass-steel-hinges,gallery 1,/images/products/ch01-brass-and-steel-hinges-2.webp,measured,,white,none,100.0,0.0,68.8,63.7,43.8,22.8,82.0,0.0,1,
 CH01,ch01-brass-and-steel-hinges,brass-steel-hinges,gallery 2,/images/products/ch01-brass-and-steel-hinges-3.webp,measured,,white,none,100.0,0.0,72.3,62.5,45.2,24.6,79.7,0.6,1,
 CH01,ch01-brass-and-steel-hinges,brass-steel-hinges,gallery 3,/images/products/ch01-brass-and-steel-hinges-4.webp,measured,,white,none,100.0,0.0,79.3,69.9,55.4,29.7,85.2,-0.2,1,
-Cylindrical Knob Lock,cylindrical-knob-lock,knob-locks,hero,/images/products/cylindrical-knob-lock.webp,measured,,white,edge-matched-clone,100.0,0.0,63.3,48.4,30.7,21.7,78.1,0.4,1,
+Cylindrical Knob Lock,cylindrical-knob-lock,knob-locks,hero,/images/products/cylindrical-knob-lock.webp,measured,,white,none,100.0,0.0,83.6,62.1,51.9,37.5,79.3,0.0,1,
 D01 AB,d01-ab-deadbolts,deadbolts,hero,/images/products/d01-ab-deadbolts.webp,measured,,white,none,100.0,0.0,78.5,61.3,48.2,24.9,82.8,3.3,1,
 D01 AB,d01-ab-deadbolts,deadbolts,gallery 1,/images/products/d01-ab-deadbolts-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 D101 AB,d101-ab-deadbolts,deadbolts,hero,/images/products/d101-ab-deadbolts.webp,measured,,white,none,100.0,0.0,78.1,61.3,47.9,24.9,79.7,2.0,1,
@@ -1730,7 +1730,7 @@ DV08 SN,dv08-sn-door-viewer,hardware-accessories,gallery 4,/images/products/dv08
 DV08 SN,dv08-sn-door-viewer,hardware-accessories,gallery 5,/images/products/dv08-sn-door-viewer-6.webp,measured,,white,none,100.0,0.0,83.2,74.2,61.8,30.3,87.5,0.2,4,
 DV08 SN,dv08-sn-door-viewer,hardware-accessories,gallery 6,/images/products/dv08-sn-door-viewer-7.webp,measured,,white,none,100.0,0.0,90.2,74.6,67.3,35.8,88.7,0.2,5,
 DV08 SN,dv08-sn-door-viewer,hardware-accessories,gallery 7,/images/products/dv08-sn-door-viewer-8.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.1,0.0,,,,,,,,
-DV09,dv09-door-viewer,hardware-accessories,hero,/images/products/dv09-door-viewer.webp,measured,,white,none,100.0,0.0,57.8,57.4,33.2,17.2,78.5,-2.0,1,
+DV09,dv09-door-viewer,hardware-accessories,hero,/images/products/dv09-door-viewer.webp,measured,,white,none,100.0,0.0,80.5,80.5,64.8,33.8,84.4,0.0,1,
 DV09,dv09-door-viewer,hardware-accessories,gallery 1,/images/products/dv09-door-viewer-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.3,0.0,,,,,,,,
 DV10,dv10-door-viewer,hardware-accessories,hero,/images/products/dv10-door-viewer.webp,measured,,white,none,100.0,0.0,77.7,48.8,38.0,19.6,76.2,0.2,1,high visual baseline
 DV10,dv10-door-viewer,hardware-accessories,gallery 1,/images/products/dv10-door-viewer-2.webp,measured,,white,none,100.0,0.0,91.4,41.4,37.8,18.2,69.9,-0.8,3,high visual baseline
@@ -1746,7 +1746,7 @@ DV12-B,dv12-b-door-viewer,hardware-accessories,hero,/images/products/dv12-b-door
 DV12-B,dv12-b-door-viewer,hardware-accessories,gallery 1,/images/products/dv12-b-door-viewer-2.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.1,0.0,,,,,,,,
 DV12-B,dv12-b-door-viewer,hardware-accessories,gallery 2,/images/products/dv12-b-door-viewer-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,97.4,0.0,,,,,,,,
 DV12-B,dv12-b-door-viewer,hardware-accessories,gallery 3,/images/products/dv12-b-door-viewer-4.webp,measured,,white,none,100.0,0.0,79.3,56.6,44.9,28.9,81.3,0.6,2,
-DV12-S,dv12-s-door-viewer,hardware-accessories,hero,/images/products/dv12-s-door-viewer.webp,measured,,white,none,100.0,0.0,50.0,35.9,18.0,13.5,69.1,-0.4,1,small bounding box; high visual baseline
+DV12-S,dv12-s-door-viewer,hardware-accessories,hero,/images/products/dv12-s-door-viewer.webp,measured,,white,none,100.0,0.0,75.0,54.3,40.7,30.3,82.0,0.0,1,
 DV12-S,dv12-s-door-viewer,hardware-accessories,gallery 1,/images/products/dv12-s-door-viewer-2.webp,measured,,white,none,100.0,0.0,84.8,85.9,72.8,28.4,95.7,0.6,6,
 DV12-S,dv12-s-door-viewer,hardware-accessories,gallery 2,/images/products/dv12-s-door-viewer-3.webp,measured,,white,none,100.0,0.0,76.2,57.8,44.0,26.4,81.6,1.0,2,
 DV12-S,dv12-s-door-viewer,hardware-accessories,gallery 3,/images/products/dv12-s-door-viewer-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
@@ -1761,7 +1761,7 @@ EH01,eh01-lever-handle,lever-handles,gallery 7,/images/products/eh01-lever-handl
 EH01,eh01-lever-handle,lever-handles,gallery 8,/images/products/eh01-lever-handle-9.webp,measured,,white,boundary-fill,99.3,0.0,91.8,90.2,82.8,23.4,96.9,3.3,7,
 EH01,eh01-lever-handle,lever-handles,gallery 9,/images/products/eh01-lever-handle-10.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,12.8,0.0,,,,,,,,
 EH01,eh01-lever-handle,lever-handles,gallery 10,/images/products/eh01-lever-handle-11.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,2.4,0.0,,,,,,,,
-EH02,eh02-lever-handle,lever-handles,hero,/images/products/eh02-lever-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,37.5,90.6,34.0,19.7,95.3,1.6,2,
+EH02,eh02-lever-handle,lever-handles,hero,/images/products/eh02-lever-handle.webp,measured,,white,none,100.0,0.0,35.9,87.5,31.4,18.7,91.4,0.0,2,
 EH02,eh02-lever-handle,lever-handles,gallery 1,/images/products/eh02-lever-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,21.1,87.9,18.5,8.9,94.1,-3.5,1,small bounding box
 EH02,eh02-lever-handle,lever-handles,gallery 2,/images/products/eh02-lever-handle-3.webp,measured,,white,edge-matched-clone,100.0,0.0,59.8,82.4,49.3,11.7,96.1,3.3,1,
 EH02,eh02-lever-handle,lever-handles,gallery 3,/images/products/eh02-lever-handle-4.webp,measured,,white,edge-matched-clone,99.4,0.0,87.9,87.9,77.2,19.2,96.9,4.1,2,
@@ -1769,7 +1769,7 @@ EH02,eh02-lever-handle,lever-handles,gallery 4,/images/products/eh02-lever-handl
 EH02,eh02-lever-handle,lever-handles,gallery 5,/images/products/eh02-lever-handle-6.webp,measured,,white,edge-matched-clone,100.0,0.0,84.8,65.6,55.6,19.7,86.7,2.5,4,
 EH02,eh02-lever-handle,lever-handles,gallery 6,/images/products/eh02-lever-handle-7.webp,measured,,white,edge-matched-clone,100.0,0.0,85.2,65.2,55.6,19.0,85.9,2.3,4,
 EH02,eh02-lever-handle,lever-handles,gallery 7,/images/products/eh02-lever-handle-8.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.2,0.0,,,,,,,,
-EH03,eh03-lever-handle,lever-handles,hero,/images/products/eh03-lever-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,89.8,90.6,81.4,22.2,96.9,-0.4,2,
+EH03,eh03-lever-handle,lever-handles,hero,/images/products/eh03-lever-handle.webp,measured,,white,none,100.0,0.0,87.5,87.5,76.6,21.1,91.4,0.0,2,
 EH03,eh03-lever-handle,lever-handles,gallery 1,/images/products/eh03-lever-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,28.9,87.9,25.4,9.7,95.3,2.7,1,small bounding box
 EH03,eh03-lever-handle,lever-handles,gallery 2,/images/products/eh03-lever-handle-3.webp,measured,,white,edge-matched-clone,100.0,0.0,83.6,72.3,60.4,13.8,90.6,-0.4,1,
 EH03,eh03-lever-handle,lever-handles,gallery 3,/images/products/eh03-lever-handle-4.webp,measured,,white,edge-matched-clone,99.5,0.0,94.5,87.9,83.1,21.9,95.7,-0.8,2,
@@ -1820,7 +1820,7 @@ F102,f102-night-latch-and-rim-lock,night-latches-rim-locks,gallery 3,/images/pro
 F102,f102-night-latch-and-rim-lock,night-latches-rim-locks,gallery 4,/images/products/f102-night-latch-and-rim-lock-5.webp,measured,,white,edge-matched-clone,100.0,0.0,89.8,55.9,50.2,32.2,84.0,1.6,1,
 F102,f102-night-latch-and-rim-lock,night-latches-rim-locks,gallery 5,/images/products/f102-night-latch-and-rim-lock-6.webp,measured,,white,edge-matched-clone,100.0,0.0,93.8,50.0,46.9,22.5,77.7,-0.4,11,high visual baseline
 F102,f102-night-latch-and-rim-lock,night-latches-rim-locks,gallery 6,/images/products/f102-night-latch-and-rim-lock-7.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.4,0.0,,,,,,,,
-F110,f110-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f110-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,84.8,49.6,42.1,21.3,75.0,-0.2,1,high visual baseline
+F110,f110-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f110-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.2,49.6,42.2,21.4,84.8,0.0,1,
 F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 1,/images/products/f110-glass-door-patch-fittings-2.webp,measured,,white,none,100.0,0.0,85.2,25.4,21.6,16.5,62.9,0.0,1,small bounding box; high visual baseline
 F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 2,/images/products/f110-glass-door-patch-fittings-3.webp,measured,,white,none,100.0,0.0,92.2,32.8,30.2,21.1,64.8,0.4,1,high visual baseline
 F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 3,/images/products/f110-glass-door-patch-fittings-4.webp,measured,,white,none,100.0,0.0,93.0,73.4,68.3,8.6,86.3,0.0,7,
@@ -1828,25 +1828,25 @@ F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 4,/images/pro
 F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 5,/images/products/f110-glass-door-patch-fittings-6.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 6,/images/products/f110-glass-door-patch-fittings-7.webp,measured,,white,none,100.0,0.0,55.5,85.9,47.7,45.4,93.8,0.4,1,
 F110,f110-glass-door-patch-fittings,glass-door-accessories,gallery 7,/images/products/f110-glass-door-patch-fittings-8.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,6.0,0.0,,,,,,,,
-F111,f111-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f111-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.2,46.1,39.3,22.2,74.6,-0.4,1,high visual baseline
+F111,f111-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f111-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.2,46.1,39.3,22.3,83.2,0.0,1,
 F111,f111-glass-door-patch-fittings,glass-door-accessories,gallery 1,/images/products/f111-glass-door-patch-fittings-2.webp,measured,,white,none,100.0,0.0,93.4,41.0,38.3,22.5,70.7,-0.2,1,high visual baseline
 F111,f111-glass-door-patch-fittings,glass-door-accessories,gallery 2,/images/products/f111-glass-door-patch-fittings-3.webp,measured,,white,none,100.0,0.0,93.4,68.4,63.8,7.1,85.9,-0.2,10,
 F111,f111-glass-door-patch-fittings,glass-door-accessories,gallery 3,/images/products/f111-glass-door-patch-fittings-4.webp,measured,,white,none,100.0,0.0,93.8,48.4,45.4,31.6,69.5,0.0,3,high visual baseline
 F111,f111-glass-door-patch-fittings,glass-door-accessories,gallery 4,/images/products/f111-glass-door-patch-fittings-5.webp,measured,,white,none,100.0,0.0,89.5,32.0,28.7,23.4,71.1,0.6,1,small bounding box; high visual baseline
 F111,f111-glass-door-patch-fittings,glass-door-accessories,gallery 5,/images/products/f111-glass-door-patch-fittings-6.webp,measured,,white,none,100.0,0.0,55.5,85.9,47.7,45.5,93.4,0.4,1,
-F112,f112-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f112-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.5,42.2,36.1,19.1,70.7,-0.2,1,high visual baseline
+F112,f112-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f112-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.2,42.6,36.3,19.1,81.3,0.0,1,
 F112,f112-glass-door-patch-fittings,glass-door-accessories,gallery 1,/images/products/f112-glass-door-patch-fittings-2.webp,measured,,white,none,99.9,0.0,93.4,28.9,27.0,22.3,66.0,0.2,1,small bounding box; high visual baseline
 F112,f112-glass-door-patch-fittings,glass-door-accessories,gallery 2,/images/products/f112-glass-door-patch-fittings-3.webp,measured,,white,none,100.0,0.0,91.0,30.5,27.7,19.4,63.3,-0.6,1,small bounding box; high visual baseline
 F112,f112-glass-door-patch-fittings,glass-door-accessories,gallery 3,/images/products/f112-glass-door-patch-fittings-4.webp,measured,,white,none,100.0,0.0,93.0,73.4,68.3,7.0,88.3,0.4,8,
 F112,f112-glass-door-patch-fittings,glass-door-accessories,gallery 4,/images/products/f112-glass-door-patch-fittings-5.webp,measured,,white,none,100.0,0.0,93.0,68.8,63.9,46.5,90.6,0.0,2,
 F112,f112-glass-door-patch-fittings,glass-door-accessories,gallery 5,/images/products/f112-glass-door-patch-fittings-6.webp,measured,,white,none,100.0,0.0,55.5,85.9,47.7,45.5,93.4,0.4,1,
-F113,f113-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f113-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,60.9,51.6,31.4,20.6,77.3,0.0,1,high visual baseline
+F113,f113-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f113-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.2,71.9,61.2,40.3,90.6,0.0,1,
 F113,f113-glass-door-patch-fittings,glass-door-accessories,gallery 1,/images/products/f113-glass-door-patch-fittings-2.webp,measured,,white,none,100.0,0.0,66.8,51.2,34.2,27.3,78.9,-2.1,1,
 F113,f113-glass-door-patch-fittings,glass-door-accessories,gallery 2,/images/products/f113-glass-door-patch-fittings-3.webp,measured,,white,none,100.0,0.0,59.0,70.7,41.7,31.0,85.9,0.6,1,
 F113,f113-glass-door-patch-fittings,glass-door-accessories,gallery 3,/images/products/f113-glass-door-patch-fittings-4.webp,measured,,white,none,100.0,0.0,93.8,57.8,54.2,32.7,80.1,0.0,2,
 F113,f113-glass-door-patch-fittings,glass-door-accessories,gallery 4,/images/products/f113-glass-door-patch-fittings-5.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,0.0,0.0,,,,,,,,
 F113,f113-glass-door-patch-fittings,glass-door-accessories,gallery 5,/images/products/f113-glass-door-patch-fittings-6.webp,measured,,white,none,100.0,0.0,55.5,85.9,47.7,45.4,93.4,0.4,1,
-F114,f114-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f114-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,84.4,44.9,37.9,19.0,74.6,0.4,1,high visual baseline
+F114,f114-glass-door-patch-fittings,glass-door-accessories,hero,/images/products/f114-glass-door-patch-fittings.webp,measured,,white,none,100.0,0.0,85.2,45.3,38.6,19.5,82.8,0.0,1,
 F114,f114-glass-door-patch-fittings,glass-door-accessories,gallery 1,/images/products/f114-glass-door-patch-fittings-2.webp,measured,,white,none,100.0,0.0,84.4,32.4,27.4,19.3,66.8,-0.4,1,small bounding box; high visual baseline
 F114,f114-glass-door-patch-fittings,glass-door-accessories,gallery 2,/images/products/f114-glass-door-patch-fittings-3.webp,measured,,white,none,100.0,0.0,92.2,37.1,34.2,17.4,71.9,0.4,1,high visual baseline
 F114,f114-glass-door-patch-fittings,glass-door-accessories,gallery 3,/images/products/f114-glass-door-patch-fittings-4.webp,measured,,white,none,100.0,0.0,89.5,80.5,72.0,8.6,91.8,0.2,8,
@@ -2007,7 +2007,7 @@ JU-072,ju-072-door-closer,door-closers,gallery 2,/images/products/ju-072-door-cl
 JU-072,ju-072-door-closer,door-closers,gallery 3,/images/products/ju-072-door-closer-4.webp,measured,,white,none,100.0,0.0,81.6,74.2,60.6,33.9,92.2,0.2,2,
 JU-072,ju-072-door-closer,door-closers,gallery 4,/images/products/ju-072-door-closer-5.webp,measured,,white,none,100.0,0.0,85.5,44.9,38.4,28.5,74.2,0.2,1,high visual baseline
 JU-073,ju-073-door-closer,door-closers,hero,/images/products/ju-073-door-closer.webp,measured,,white,none,100.0,0.0,73.8,81.6,60.3,15.7,91.0,0.2,1,
-JU-088,ju-088-door-closer,door-closers,hero,/images/products/ju-088-door-closer.webp,measured,,white,none,100.0,0.0,85.5,37.9,32.4,11.6,69.1,0.2,1,high visual baseline
+JU-088,ju-088-door-closer,door-closers,hero,/images/products/ju-088-door-closer.webp,measured,,white,none,100.0,0.0,80.5,35.5,28.6,10.3,77.7,0.0,1,small bounding box; high visual baseline
 JU-088,ju-088-door-closer,door-closers,gallery 1,/images/products/ju-088-door-closer-2.webp,measured,,white,none,99.0,0.0,95.7,66.4,63.6,4.6,85.2,0.6,14,
 JU-088,ju-088-door-closer,door-closers,gallery 2,/images/products/ju-088-door-closer-3.webp,measured,,white,none,100.0,0.0,84.4,39.1,33.0,18.7,72.7,2.0,1,high visual baseline
 JU-088,ju-088-door-closer,door-closers,gallery 3,/images/products/ju-088-door-closer-4.webp,measured,,white,none,100.0,0.0,90.2,62.9,56.7,24.9,87.9,0.2,5,
@@ -2015,7 +2015,7 @@ JU-093,ju-093-door-closer,door-closers,hero,/images/products/ju-093-door-closer.
 Keyed Deadbolt Lock Set,keyed-deadbolt-lock-set,grip-handle-sets,hero,/images/products/ansi-grade-3-keyed-deadbolt.webp,measured,,white,edge-matched-clone,100.0,0.0,38.3,73.8,28.3,8.9,91.4,-0.8,4,small bounding box
 Keyed Deadbolt Lock Set,keyed-deadbolt-lock-set,grip-handle-sets,gallery 1,/images/concepts/deadbolt-application.webp,manual,not a catalogue-source product image,,,,,,,,,,,,
 L001,l001-latch,hardware-accessories,hero,/images/products/l001-latch.webp,measured,,white,none,100.0,0.0,74.6,55.5,41.4,13.6,78.9,1.8,1,
-L002,l002-latch,hardware-accessories,hero,/images/products/l002-latch.webp,measured,,white,none,100.0,0.0,60.9,56.3,34.3,13.1,78.5,-0.4,1,
+L002,l002-latch,hardware-accessories,hero,/images/products/l002-latch.webp,measured,,white,none,100.0,0.0,80.5,74.6,60.0,23.0,82.0,0.0,1,
 L003,l003-latch,hardware-accessories,hero,/images/products/l003-latch.webp,measured,,white,none,100.0,0.0,84.0,62.9,52.8,16.1,79.3,1.0,1,
 L004,l004-latch,hardware-accessories,hero,/images/products/l004-latch.webp,measured,,white,none,100.0,0.0,75.0,69.1,51.9,17.5,84.8,0.0,1,
 L004,l004-latch,hardware-accessories,gallery 1,/images/products/l004-latch-2.webp,measured,,white,none,100.0,0.0,59.0,66.0,38.9,14.2,83.6,-0.2,4,
@@ -2197,7 +2197,7 @@ LH1083,lh1083-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/p
 LH1083,lh1083-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/lh1083-stainless-steel-handle-3.webp,measured,,white,edge-matched-clone,100.0,0.0,59.0,73.8,43.5,9.4,90.2,11.5,1,off-center
 LH1083,lh1083-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/lh1083-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,52.7,80.1,42.2,9.7,90.2,-19.7,1,off-center
 LH1083,lh1083-stainless-steel-handle,stainless-steel-handles,gallery 4,/images/products/lh1083-stainless-steel-handle-5.webp,manual,edge is not uniformly white or transparent,other / uncertain,none,5.6,0.0,,,,,,,,
-LH1085 SS,lh1085-ss-stainless-steel-handle,stainless-steel-handles,hero,/images/products/lh1085-ss-stainless-steel-handle.webp,manual,edge is not uniformly white or transparent,other / uncertain,edge-matched-clone,97.0,0.0,,,,,,,,
+LH1085 SS,lh1085-ss-stainless-steel-handle,stainless-steel-handles,hero,/images/products/lh1085-ss-stainless-steel-handle.webp,measured,,white,none,100.0,0.0,46.1,77.0,35.5,16.4,83.2,0.0,2,
 LH1085 SS,lh1085-ss-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/lh1085-ss-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,52.7,90.6,47.8,21.5,96.9,-13.1,1,off-center
 LH1085 SS,lh1085-ss-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/lh1085-ss-stainless-steel-handle-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
 LH851,lh851-lever-handle,lever-handles,hero,/images/products/lh851-lever-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,87.5,43.8,38.3,13.6,73.0,2.0,1,high visual baseline
@@ -2311,7 +2311,7 @@ NC068,nc068-stainless-steel-handle,stainless-steel-handles,hero,/images/products
 NC068,nc068-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/nc068-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,68.0,68.4,46.5,19.5,90.6,2.7,1,
 NC068,nc068-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/nc068-stainless-steel-handle-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
 NC068,nc068-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/nc068-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,67.2,64.5,43.3,16.0,86.3,3.9,3,
-NC181,nc181-stainless-steel-handle,stainless-steel-handles,hero,/images/products/nc181-stainless-steel-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,57.0,57.0,32.5,14.0,81.6,3.1,2,
+NC181,nc181-stainless-steel-handle,stainless-steel-handles,hero,/images/products/nc181-stainless-steel-handle.webp,measured,,white,none,100.0,0.0,76.6,77.0,58.9,25.4,83.2,0.0,2,
 NC181,nc181-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/nc181-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,77.3,60.2,46.5,24.0,80.5,2.0,1,
 NC181,nc181-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/nc181-stainless-steel-handle-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
 NC181,nc181-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/nc181-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,57.0,62.9,35.9,14.5,84.0,5.5,3,
@@ -2319,7 +2319,7 @@ NC182,nc182-stainless-steel-handle,stainless-steel-handles,hero,/images/products
 NC182,nc182-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/nc182-stainless-steel-handle-2.webp,measured,,white,boundary-fill,100.0,0.0,80.5,84.4,67.9,5.6,96.5,2.7,8,
 NC182,nc182-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/nc182-stainless-steel-handle-3.webp,measured,,white,edge-matched-clone,100.0,0.0,76.6,50.0,38.3,18.8,75.0,0.0,1,high visual baseline
 NC182,nc182-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/nc182-stainless-steel-handle-4.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.9,0.0,,,,,,,,
-NCB,ncb-stainless-steel-handle,stainless-steel-handles,hero,/images/products/ncb-stainless-steel-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,41.8,57.4,24.0,12.4,82.0,4.1,2,small bounding box
+NCB,ncb-stainless-steel-handle,stainless-steel-handles,hero,/images/products/ncb-stainless-steel-handle.webp,measured,,white,none,100.0,0.0,56.3,77.0,43.3,22.3,83.2,0.0,2,
 NCB,ncb-stainless-steel-handle,stainless-steel-handles,gallery 1,/images/products/ncb-stainless-steel-handle-2.webp,measured,,white,edge-matched-clone,100.0,0.0,36.3,67.6,24.5,18.1,88.3,1.0,1,small bounding box
 NCB,ncb-stainless-steel-handle,stainless-steel-handles,gallery 2,/images/products/ncb-stainless-steel-handle-3.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
 NCB,ncb-stainless-steel-handle,stainless-steel-handles,gallery 3,/images/products/ncb-stainless-steel-handle-4.webp,measured,,white,edge-matched-clone,100.0,0.0,41.8,66.4,27.8,12.9,86.7,5.7,3,small bounding box
@@ -2417,11 +2417,11 @@ SSH031,ssh031-brass-and-steel-hinges,brass-steel-hinges,gallery 4,/images/produc
 SSH031,ssh031-brass-and-steel-hinges,brass-steel-hinges,gallery 5,/images/products/ssh031-brass-and-steel-hinges-6.webp,manual,edge is not uniformly white or transparent,other / uncertain,boundary-fill,0.0,0.0,,,,,,,,
 Stainless Steel Door Hinge,stainless-steel-door-hinge,brass-steel-hinges,hero,/images/products/stainless-steel-door-hinge.webp,measured,,white,edge-matched-clone,98.1,0.0,97.3,68.4,66.5,49.3,87.5,0.2,1,
 Stainless Steel Flush Bolt,stainless-steel-flush-bolt,hardware-accessories,hero,/images/products/stainless-steel-flush-bolt.webp,measured,,white,edge-matched-clone,100.0,0.0,86.3,76.6,66.1,18.9,85.9,-2.5,6,
-Stainless Steel Glass Door Pull Handle,stainless-steel-glass-door-pull-handle,glass-door-accessories,hero,/images/products/stainless-steel-glass-door-pull-handle.webp,measured,,white,edge-matched-clone,100.0,0.0,60.9,65.6,40.0,14.4,84.8,0.0,2,
-Stainless Steel Lever Handle Lock,stainless-steel-lever-handle-lock,lever-handles,hero,/images/products/stainless-steel-lever-handle-lock.webp,measured,,white,edge-matched-clone,100.0,0.0,55.5,65.6,36.4,12.9,89.5,-3.9,1,
+Stainless Steel Glass Door Pull Handle,stainless-steel-glass-door-pull-handle,glass-door-accessories,hero,/images/products/stainless-steel-glass-door-pull-handle.webp,measured,,white,none,100.0,0.0,78.9,85.2,67.2,24.6,90.6,0.0,2,
+Stainless Steel Lever Handle Lock,stainless-steel-lever-handle-lock,lever-handles,hero,/images/products/stainless-steel-lever-handle-lock.webp,measured,,white,none,100.0,0.0,74.2,87.5,64.9,22.8,91.4,0.0,1,
 Stainless Steel Lever Handle Lock,stainless-steel-lever-handle-lock,lever-handles,gallery 1,/images/concepts/lever-handle-application.webp,manual,not a catalogue-source product image,,,,,,,,,,,,
 Stainless Steel Wall Hook,stainless-steel-wall-hook,bathroom-accessories,hero,/images/products/stainless-steel-wall-hook.webp,measured,,white,edge-matched-clone,100.0,0.0,85.2,27.7,23.6,7.8,66.8,0.8,1,small bounding box; high visual baseline
-Tubular Knob Lock,tubular-knob-lock,knob-locks,hero,/images/products/tubular-knob-lock.webp,measured,,white,edge-matched-clone,100.0,0.0,62.5,43.4,27.1,19.7,75.4,-1.2,1,small bounding box; high visual baseline
+Tubular Knob Lock,tubular-knob-lock,knob-locks,hero,/images/products/tubular-knob-lock.webp,measured,,white,none,100.0,0.0,83.6,57.8,48.3,35.5,79.3,0.0,1,
 Tubular Knob Lock,tubular-knob-lock,knob-locks,gallery 1,/images/concepts/smart-lock-residential-application.webp,manual,not a catalogue-source product image,,,,,,,,,,,,
 Wooden Door Floor Hinge,wooden-door-floor-hinge,door-closers,hero,/images/products/wooden-door-floor-hinge.webp,measured,,white,edge-matched-clone,100.0,0.0,75.0,63.3,47.5,23.4,82.8,1.6,4,
 X2,x2-panic-exit-device-trim,panic-exit-devices,hero,/images/products/x2-panic-exit-device-trim.webp,measured,,white,edge-matched-clone,100.0,0.0,85.5,39.8,34.1,11.7,69.5,-1.0,2,high visual baseline

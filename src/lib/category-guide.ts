@@ -1,6 +1,6 @@
 import type { Locale } from "../data/site.ts";
 import type { NewsArticle, Product } from "../data/types.ts";
-import { specLabel, t as tr } from "./i18n.ts";
+import { dict, fill, specLabel, t as tr } from "./i18n.ts";
 
 /**
  * The "how to choose" block on a category page, computed from the catalogue.
@@ -136,49 +136,50 @@ export function guideArticles(products: Product[], articles: NewsArticle[]): New
     .map((entry) => entry.article);
 }
 
+/*
+  Templates, not functions (2026-09-28). The seven overlay locales read the English entry
+  through ui.json — scripts/i18n-extract-ui.mjs extracts every `en:` leaf — and fill() puts
+  the counts in, so the same sentences reach /fr/ … /ar/ without a code path per language.
+  Function-valued copy cannot be translated at all; see the 09-27 agent-update, item 3.
+*/
 const COPY = {
   en: {
-    list: (values: GuideValue[], others: number) =>
-      values.map((v) => `${v.value} (${v.count})`).join(", ") + (others ? `, and ${others} more` : ""),
-    countQ: (name: string) => `How many ${name.toLowerCase()} does Canton Hyland publish?`,
-    countA: (n: number, types: string[]) =>
-      `${n} published models${types.length ? `, in ${types.length} types: ${types.join(", ")}` : ""}. Every model has its own page with the specifications we have confirmed.`,
-    factorQ: (label: string, name: string) =>
-      `Which ${label.toLowerCase()} options are available for Canton Hyland ${name.toLowerCase()}?`,
-    factorA: (list: string, stated: number, total: number) =>
-      `By number of published models: ${list}.${stated < total ? ` ${total - stated} of ${total} models do not state this yet; ask the export team before ordering.` : ""}`,
+    more: "and {n} more",
+    countQ: "How many {name} does Canton Hyland publish?",
+    countA: "{n} published models. Every model has its own page with the specifications we have confirmed.",
+    countATypes: "{n} published models, in {count} types: {types}. Every model has its own page with the specifications we have confirmed.",
+    factorQ: "Which {label} options are available for Canton Hyland {name}?",
+    factorA: "By number of published models: {list}.",
+    factorMissing: "{missing} of {total} models do not state this yet; ask the export team before ordering.",
   },
   es: {
-    list: (values: GuideValue[], others: number) =>
-      values.map((v) => `${v.value} (${v.count})`).join(", ") + (others ? ` y ${others} más` : ""),
-    countQ: (name: string) => `¿Cuántos modelos de ${name.toLowerCase()} publica Canton Hyland?`,
-    countA: (n: number, types: string[]) =>
-      `${n} modelos publicados${types.length ? `, en ${types.length} tipos: ${types.join(", ")}` : ""}. Cada modelo tiene su propia página con las especificaciones confirmadas.`,
-    factorQ: (label: string, name: string) =>
-      `¿Qué opciones de ${label.toLowerCase()} hay en ${name.toLowerCase()} de Canton Hyland?`,
-    factorA: (list: string, stated: number, total: number) =>
-      `Por número de modelos publicados: ${list}.${stated < total ? ` ${total - stated} de ${total} modelos aún no indican este dato; consulte al equipo de exportación antes de pedir.` : ""}`,
+    more: "y {n} más",
+    countQ: "¿Cuántos modelos de {name} publica Canton Hyland?",
+    countA: "{n} modelos publicados. Cada modelo tiene su propia página con las especificaciones confirmadas.",
+    countATypes: "{n} modelos publicados, en {count} tipos: {types}. Cada modelo tiene su propia página con las especificaciones confirmadas.",
+    factorQ: "¿Qué opciones de {label} hay en {name} de Canton Hyland?",
+    factorA: "Por número de modelos publicados: {list}.",
+    factorMissing: "{missing} de {total} modelos aún no indican este dato; consulte al equipo de exportación antes de pedir.",
   },
   pt: {
-    list: (values: GuideValue[], others: number) =>
-      values.map((v) => `${v.value} (${v.count})`).join(", ") + (others ? ` e mais ${others}` : ""),
-    countQ: (name: string) => `Quantos modelos de ${name.toLowerCase()} a Canton Hyland publica?`,
-    countA: (n: number, types: string[]) =>
-      `${n} modelos publicados${types.length ? `, em ${types.length} tipos: ${types.join(", ")}` : ""}. Cada modelo tem a sua própria página com as especificações confirmadas.`,
-    factorQ: (label: string, name: string) =>
-      `Que opções de ${label.toLowerCase()} existem em ${name.toLowerCase()} da Canton Hyland?`,
-    factorA: (list: string, stated: number, total: number) =>
-      `Por número de modelos publicados: ${list}.${stated < total ? ` ${total - stated} de ${total} modelos ainda não indicam este dado; consulte a equipe de exportação antes de encomendar.` : ""}`,
+    more: "e mais {n}",
+    countQ: "Quantos modelos de {name} a Canton Hyland publica?",
+    countA: "{n} modelos publicados. Cada modelo tem a sua própria página com as especificações confirmadas.",
+    countATypes: "{n} modelos publicados, em {count} tipos: {types}. Cada modelo tem a sua própria página com as especificações confirmadas.",
+    factorQ: "Que opções de {label} existem em {name} da Canton Hyland?",
+    factorA: "Por número de modelos publicados: {list}.",
+    factorMissing: "{missing} de {total} modelos ainda não indicam este dado; consulte a equipe de exportação antes de encomendar.",
   },
 } as const;
 
 function copyFor(locale: Locale) {
-  return locale === "es" ? COPY.es : locale === "pt" ? COPY.pt : COPY.en;
+  return dict(COPY, locale);
 }
 
 /** "60/70mm (40), 60mm (3)" — the value list used in both the table and the FAQ. */
 export function valueList(factor: GuideFactor, locale: Locale = "en"): string {
-  return copyFor(locale).list(factor.values, factor.otherValues);
+  const list = factor.values.map((v) => `${v.value} (${v.count})`).join(", ");
+  return factor.otherValues ? `${list}, ${fill(copyFor(locale).more, { n: factor.otherValues })}` : list;
 }
 
 /**
@@ -197,11 +198,21 @@ export function categoryFaqItems(
   const factors = guideFactors(products, locale);
   if (!factors.length) return [];
   const c = copyFor(locale);
+  const lower = name.toLowerCase();
   return [
-    { question: c.countQ(name), answer: c.countA(products.length, types) },
+    {
+      question: fill(c.countQ, { name: lower }),
+      answer: types.length
+        ? fill(c.countATypes, { n: products.length, count: types.length, types: types.join(", ") })
+        : fill(c.countA, { n: products.length }),
+    },
     ...factors.map((factor) => ({
-      question: c.factorQ(factor.display, name),
-      answer: c.factorA(valueList(factor, locale), factor.stated, products.length),
+      question: fill(c.factorQ, { label: factor.display.toLowerCase(), name: lower }),
+      answer:
+        fill(c.factorA, { list: valueList(factor, locale) }) +
+        (factor.stated < products.length
+          ? ` ${fill(c.factorMissing, { missing: products.length - factor.stated, total: products.length })}`
+          : ""),
     })),
   ];
 }

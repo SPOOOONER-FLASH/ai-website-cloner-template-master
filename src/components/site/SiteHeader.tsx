@@ -1,33 +1,23 @@
-"use client";
-
 import Link from "next/link";
-import dynamic from "next/dynamic";
-import { Fragment, useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
+import { Fragment } from "react";
 import { cn } from "@/lib/utils";
-import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { LocalePicker } from "./LocalePicker";
 import type { MenuCategory } from "@/data/categories";
-import { localeFromPath } from "@/data/locales";
+import type { Locale } from "@/data/locales";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { MenuIcon, SearchIcon, Wordmark } from "./icons";
-/*
-  Both overlays load on demand. The header sits in the root layout, so anything it
-  imports statically is hydrated on every page of the site — including plain articles
-  that never open a menu or a search box. The dialog alone drags in the whole
-  search-matching library. `ssr: false` is safe here because a closed overlay renders
-  nothing, so there is no server HTML to lose; the chunk arrives on first open instead.
-*/
-const SearchDialog = dynamic(() =>
-  import("./SearchDialog").then((module) => module.SearchDialog),
-  { ssr: false },
-);
-const SiteMenuDrawer = dynamic(() =>
-  import("./SiteMenuDrawer").then((module) => module.SiteMenuDrawer),
-  { ssr: false },
-);
+import {
+  HeaderLink,
+  HeaderMenuButton,
+  HeaderProvider,
+  HeaderRailCta,
+  HeaderSearchButton,
+  ShelfPanel,
+  ShelfTrigger,
+} from "./HeaderIslands";
 import navigationStyles from "./HeaderNavigation.module.css";
-import { dict, tx } from "@/lib/i18n-client";
+import { BauInfoBand } from "./BauEntry";
+import { dict, tx } from "@/lib/i18n";
 
 /**
  * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
@@ -55,8 +45,6 @@ import { dict, tx } from "@/lib/i18n-client";
   disagree. The new module adds one thing this file could not — it tells the reader which
   of those two is about to happen, before they lose their place.
 */
-
-type ShelfName = "products" | "company" | "buy" | "resources";
 
 const companyShelfLinks = {
   en: [
@@ -160,67 +148,21 @@ const buyShelfLinks = {
 */
 const LONG_NAV_LOCALES = new Set<string>([]);
 
-export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
-  const pathname = usePathname();
-  const headerRef = useRef<HTMLDivElement>(null);
-  const wideNavRef = useRef<HTMLDivElement>(null);
-  const [navOverflows, setNavOverflows] = useState(false);
-  const menuTriggerRef = useRef<HTMLButtonElement>(null);
-  const menuOpenerRef = useRef<HTMLButtonElement | null>(null);
-  const [menuOpen, setMenuOpen] = useState(false);
-  /* The menu fades and settles in and out on the same rhythm as search and the image
-     dialog (globals.css .overlay-presence / .overlay-panel). It popped in and vanished
-     until 2026-09-27, the one overlay on the site with no motion at all. */
-  const menuPresence = useOverlayPresence(menuOpen);
-  const [searchOpen, setSearchOpen] = useState(false);
-  /*
-    The dialog stays mounted after its first open so its exit animation
-    (useOverlayPresence) still runs; before that first open it is not mounted at all,
-    which is what keeps its chunk out of the initial page load.
-  */
-  const [searchEverOpened, setSearchEverOpened] = useState(false);
-  const [openShelf, setOpenShelf] = useState<ShelfName | null>(null);
-  /*
-    Read off the path, for all three locales. This was `pathname.startsWith("/es/")` until
-    2026-09-17, which made every /pt/ page compute `locale = "en"` — English labels on the
-    Portuguese site, and nav links pointing back out of it. See localeFromPath's note.
-  */
-  const locale = localeFromPath(pathname);
-  const homeHref = locale === "en" ? "/" : `/${locale}`;
-  const longNav = LONG_NAV_LOCALES.has(locale) || navOverflows;
 
-  /*
-    Runtime guard for the list above: a translation edit or a fallback font can make any
-    locale's row too wide. The row's natural width is read once while it is visible; after
-    that it is compared with half the grid (the column it gets from 100rem up), so the
-    header can switch back when the window widens even though the row is hidden by then.
-  */
-  useEffect(() => {
-    const column = wideNavRef.current;
-    const row = column?.parentElement;
-    if (!column || !row || LONG_NAV_LOCALES.has(locale)) return;
-    let natural = 0;
-    const check = () => {
-      /* The links' own extent: the flex row is as wide as its column, so its scrollWidth
-         only reports the overflow case and would read "fits" as "exactly full". */
-      const links = column.querySelector("nav")?.children;
-      if (links?.length && column.offsetParent !== null) {
-        natural = links[links.length - 1].getBoundingClientRect().right - links[0].getBoundingClientRect().left;
-      }
-      if (!natural) return;
-      const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
-      setNavOverflows(natural > (row.clientWidth - gap) / 2);
-    };
-    check();
-    const observer = new ResizeObserver(check);
-    observer.observe(row);
-    /* The row stops growing at the layout's max width, so a label that grows (a web font
-       arriving late) is only seen through the links themselves. */
-    for (const link of Array.from(column.querySelector("nav")?.children ?? [])) observer.observe(link);
-    return () => observer.disconnect();
-  }, [locale]);
-  /* Copy in the page's own language, in source order en / es / pt. */
-  const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+/*
+  SERVER COMPONENT since 2026-09-28. The wordmark, every nav label and every shelf link are
+  HTML from the server; HeaderIslands.tsx holds the parts that need state or the current
+  path (shelf triggers and panels, current-page marking, search, menu, the rail CTA).
+  Each locale's layout passes `locale`; the header no longer reads it off the URL.
+*/
+export function SiteHeader({
+  categories,
+  locale = "en",
+}: {
+  categories: MenuCategory[];
+  locale?: Locale;
+}) {
+  const homeHref = locale === "en" ? "/" : `/${locale}`;
   const resourceLinks = headerNav.filter((link) => RESOURCE_HREFS.includes(link.href));
   const firstResourceHref = resourceLinks[0]?.href;
   /*
@@ -232,101 +174,26 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const railFirstResourceHref = headerNav
     .filter((link) => link.href !== "/projects")
     .find((link) => RESOURCE_HREFS.includes(link.href))?.href;
-  const resourcesCurrent = resourceLinks.some((link) => isCurrent(localisedHref(link.href, locale)));
-  const companyCurrent = dict(companyShelfLinks, locale).some((link) =>
-    isCurrent(localisedHref(link.href, locale)),
-  );
-  const buyCurrent = dict(buyShelfLinks, locale).some((link) =>
-    isCurrent(localisedHref(link.href, locale)),
-  );
+  /* The pages that make each shelf's trigger "current". */
+  const resourceHrefs = resourceLinks.map((link) => localisedHref(link.href, locale));
+  const companyHrefs = dict(companyShelfLinks, locale).map((link) => localisedHref(link.href, locale));
+  const buyHrefs = dict(buyShelfLinks, locale).map((link) => localisedHref(link.href, locale));
+  const resourcesLabel = tx(locale, "Resources", { es: "Recursos", pt: "Recursos" });
+  const buyLabel = tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" });
 
-  useEffect(() => {
-    if (!menuOpen) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = previousOverflow;
-    };
-  }, [menuOpen]);
-
-  const restoreMenuFocus = () => {
-    if (menuOpenerRef.current?.isConnected) menuOpenerRef.current.focus();
-    else menuTriggerRef.current?.focus();
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false);
-    /*
-      Focus goes back to the button that opened the menu. It used to wait on
-      requestAnimationFrame alone, and where frames never come (a background tab, some
-      embedded webviews — 0 frames in 500 ms on the 09-28 live test) focus was left nowhere.
-      Whichever arrives first, the frame or the timer.
-    */
-    let restored = false;
-    const restore = () => {
-      if (restored) return;
-      restored = true;
-      restoreMenuFocus();
-    };
-    requestAnimationFrame(restore);
-    window.setTimeout(restore, 50);
-  };
-
-  /*
-    Escape closes the menu wherever focus is. The drawer's own handler only hears keys
-    pressed inside it, and focus reaches the drawer one effect after it appears; a reader
-    who presses Escape at once got nothing (09-28 live test). The drawer's handler calls
-    stopPropagation, so a key pressed inside it is not handled twice.
-  */
-  useEffect(() => {
-    if (!menuOpen) return;
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key !== "Escape" || event.defaultPrevented) return;
-      setMenuOpen(false);
-      window.setTimeout(() => {
-        if (menuOpenerRef.current?.isConnected) menuOpenerRef.current.focus();
-        else menuTriggerRef.current?.focus();
-      }, 0);
-    };
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, [menuOpen]);
-
-  useEffect(() => {
-    if (!openShelf) return;
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpenShelf(null);
-    };
-    const onPointerDown = (event: PointerEvent) => {
-      if (!headerRef.current?.contains(event.target as Node)) setOpenShelf(null);
-    };
-
-    document.addEventListener("keydown", onKeyDown);
-    document.addEventListener("pointerdown", onPointerDown);
-    return () => {
-      document.removeEventListener("keydown", onKeyDown);
-      document.removeEventListener("pointerdown", onPointerDown);
-    };
-  }, [openShelf]);
-
-  return (
-    // The black promo strip was removed on request. With nothing above it, the nav row
-    // pins at the very top instead of scrolling a banner away first.
-    <div
-      ref={headerRef}
-      data-long-nav={longNav ? "" : undefined}
+  const header = (
+    // Only the navigation sticks; the BAU information band below scrolls in page flow.
+    <HeaderProvider
+      locale={locale}
+      categories={categories}
+      longNavLocale={LONG_NAV_LOCALES.has(locale)}
       className={cn("relative sticky top-0 z-10 flex-grow-0 bg-surface", navigationStyles.header)}
-      onMouseLeave={() => setOpenShelf(null)}
-      onBlurCapture={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpenShelf(null);
-      }}
     >
       <div>
         {/* Nav row */}
         <div className="layout z-30 bg-surface">
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
-            <div ref={wideNavRef} className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12", navigationStyles.wideNavigation)}>
+            <div data-header-wide-nav="" className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12", navigationStyles.wideNavigation)}>
               {/*
                 `whitespace-nowrap` is load-bearing. Unwrapped, the five labels need
                 523px and the gaps at xl were 4 × 48px, for 715px inside a 680px column,
@@ -345,7 +212,6 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               <nav className="flex gap-16 whitespace-nowrap">
                 {headerNav.map((link) => {
                   const href = localisedHref(link.href, locale);
-                  const current = isCurrent(href);
 
                   if (link.href === "/products") {
                     /*
@@ -356,106 +222,68 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                       entry point. Hover and focus open the shelf; the click goes through.
                     */
                     return (
-                      <Link
+                      <ShelfTrigger
                         key={link.href}
+                        shelf="products"
                         href={href}
-                        aria-current={current ? "page" : undefined}
-                        aria-expanded={openShelf === "products"}
-                        aria-controls="products-shelf"
-                        onFocus={() => setOpenShelf("products")}
-                        onMouseEnter={() => setOpenShelf("products")}
-                        onClick={() => setOpenShelf(null)}
-                        className={cn(
-                          "nav-marker text-c1 text-ink no-underline",
-                          current && "current-nav",
-                        )}
+                        currentHrefs={[href]}
+                        className="nav-marker text-c1 text-ink no-underline"
                       >
                         {navLabel(link, locale)}
-                      </Link>
+                      </ShelfTrigger>
                     );
                   }
 
                   if (link.href === "/company") {
                     return (
-                      <button
+                      <ShelfTrigger
                         key={link.href}
-                        type="button"
-                        aria-controls="company-shelf"
-                        aria-expanded={openShelf === "company"}
-                        aria-haspopup="true"
-                        aria-current={companyCurrent ? "page" : undefined}
-                        onClick={() => setOpenShelf("company")}
-                        onFocus={() => setOpenShelf("company")}
-                        onMouseEnter={() => setOpenShelf("company")}
-                        className={cn(
-                          "nav-marker bg-transparent text-c1 text-ink",
-                          companyCurrent && "current-nav",
-                        )}
+                        shelf="company"
+                        currentHrefs={companyHrefs}
+                        className="nav-marker bg-transparent text-c1 text-ink"
                       >
                         {navLabel(link, locale)}
-                      </button>
+                      </ShelfTrigger>
                     );
                   }
 
                   if (RESOURCE_HREFS.includes(link.href)) {
                     if (link.href !== firstResourceHref) return null;
                     return (
-                      <button
+                      <ShelfTrigger
                         key="resources"
-                        type="button"
-                        aria-controls="resources-shelf"
-                        aria-expanded={openShelf === "resources"}
-                        aria-haspopup="true"
-                        aria-current={resourcesCurrent ? "page" : undefined}
-                        onClick={() => setOpenShelf("resources")}
-                        onFocus={() => setOpenShelf("resources")}
-                        onMouseEnter={() => setOpenShelf("resources")}
-                        className={cn(
-                          "nav-marker bg-transparent text-c1 text-ink",
-                          resourcesCurrent && "current-nav",
-                        )}
+                        shelf="resources"
+                        currentHrefs={resourceHrefs}
+                        className="nav-marker bg-transparent text-c1 text-ink"
                       >
-                        {tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
-                      </button>
+                        {resourcesLabel}
+                      </ShelfTrigger>
                     );
                   }
 
                   if (link.href === "/downloads") {
                     return (
-                      <button
+                      <ShelfTrigger
                         key={link.href}
-                        type="button"
-                        aria-controls="buy-shelf"
-                        aria-expanded={openShelf === "buy"}
-                        aria-haspopup="true"
-                        aria-current={buyCurrent ? "page" : undefined}
-                        onClick={() => setOpenShelf("buy")}
-                        onFocus={() => setOpenShelf("buy")}
-                        onMouseEnter={() => setOpenShelf("buy")}
-                        className={cn(
-                          "nav-marker bg-transparent text-c1 text-ink",
-                          buyCurrent && "current-nav",
-                        )}
+                        shelf="buy"
+                        currentHrefs={buyHrefs}
+                        className="nav-marker bg-transparent text-c1 text-ink"
                       >
-                        {tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
-                      </button>
+                        {buyLabel}
+                      </ShelfTrigger>
                     );
                   }
 
                   return (
-                    <Link
+                    <HeaderLink
                       key={link.href}
                       href={href}
-                      aria-current={current ? "page" : undefined}
-                      onFocus={() => setOpenShelf(null)}
-                      onMouseEnter={() => setOpenShelf(null)}
-                      className={cn(
-                        "nav-marker text-c1 text-ink no-underline",
-                        current && "current-nav",
-                      )}
+                      markCurrent
+                      closesShelf
+                      className="nav-marker text-c1 text-ink no-underline"
                     >
                       {navLabel(link, locale)}
-                    </Link>
+                    </HeaderLink>
                   );
                 })}
               </nav>
@@ -483,34 +311,12 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                   of the space than the globe animation the client asked about.
                 */}
                 <LocalePicker locale={locale} />
-                <button
-                  type="button"
-                  aria-label={tx(locale, "Search", { es: "Buscar", pt: "Pesquisar" })}
-                  aria-expanded={searchOpen}
-                  onClick={() => {
-                    setOpenShelf(null);
-                    setSearchEverOpened(true);
-                    setSearchOpen(true);
-                  }}
-                  className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
-                >
+                <HeaderSearchButton label={tx(locale, "Search", { es: "Buscar", pt: "Pesquisar" })}>
                   <SearchIcon className="h-20 w-20" />
-                </button>
-                <button
-                  type="button"
-                  aria-label={tx(locale, "Open menu", { es: "Abrir menú", pt: "Abrir menu" })}
-                  ref={menuTriggerRef}
-                  aria-controls="site-menu-dialog"
-                  aria-expanded={menuOpen}
-                  onClick={(event) => {
-                    menuOpenerRef.current = event.currentTarget;
-                    setOpenShelf(null);
-                    setMenuOpen(true);
-                  }}
-                  className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
-                >
+                </HeaderSearchButton>
+                <HeaderMenuButton label={tx(locale, "Open menu", { es: "Abrir menú", pt: "Abrir menu" })}>
                   <MenuIcon className="h-20 w-20" />
-                </button>
+                </HeaderMenuButton>
               </nav>
             </div>
 
@@ -544,19 +350,11 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
           >
             {headerNav
               /*
-                Two changes to what the phone rail shows, both about the same 375px.
-
-                Projects comes out. The rail scrolls horizontally and anything past the
-                fold is a link most visitors never see; Projects is the least
-                load-bearing of the six — three reference pages the client does not treat
-                as a selling surface — so it goes, and stays in the desktop row and the
-                drawer.
-
-                "Buy it now" moves to the front. Even with five items it ended at 464px
-                on a 375px screen: present, but off the edge, which for the one control
-                that leads to an order is the same as absent. Reading order is not
-                sacred here — the rail is a shelf of destinations, not a sentence — and
-                the item most likely to be wanted belongs where the eye lands first.
+                Projects comes out of the phone rail. The rail scrolls horizontally and
+                anything past the fold is a link most visitors never see; Projects is the
+                least load-bearing of the six — three reference pages the client does not
+                treat as a selling surface — so it goes, and stays in the desktop row and
+                the drawer.
               */
               .filter((link) => link.href !== "/projects")
               .map((link) => {
@@ -565,70 +363,47 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               /* No permanent bold on Product Finder any more (09-28): in the rail, bold means "you are here", and a second always-bold label read as a second current page. */
 
               /*
-                Opens the sourcing drawer rather than linking out. This reaches
-                Alibaba, the price list, Contact and the mailbox in
-                one more tap — sending it straight to the storefront would drop the buyer
-                who wants a quote by email, and email is what this site is built to produce.
+                "Buy it now" opens the sourcing drawer rather than linking out. This reaches
+                Alibaba, the price list, Contact and the mailbox in one more tap — sending
+                it straight to the storefront would drop the buyer who wants a quote by
+                email, and email is what this site is built to produce.
               */
               if (link.href === "/downloads") return null; // pinned outside the scroll strip
 
               const railLink = (
-                <Link
+                <HeaderLink
                   key={link.href}
                   href={href}
-                  aria-current={isCurrent(href) ? "page" : undefined}
-                  className={cn(
-                    "nav-rail-item",
-                    RESOURCE_HREFS.includes(link.href) && "xl:hidden",
-                    isCurrent(href) && "current-nav",
-                  )}
+                  markCurrent
+                  className={cn("nav-rail-item", RESOURCE_HREFS.includes(link.href) && "xl:hidden")}
                 >
                   {navLabel(link, locale)}
-                </Link>
+                </HeaderLink>
               );
               if (link.href !== railFirstResourceHref) return railLink;
               return (
                 <Fragment key={link.href}>
-                  <button
-                    type="button"
-                    aria-controls="resources-shelf"
-                    aria-expanded={openShelf === "resources"}
-                    aria-haspopup="true"
-                    aria-current={resourcesCurrent ? "page" : undefined}
-                    onClick={() => setOpenShelf("resources")}
-                    onFocus={() => setOpenShelf("resources")}
-                    onMouseEnter={() => setOpenShelf("resources")}
-                    className={cn("nav-rail-item hidden bg-transparent xl:inline-block", resourcesCurrent && "current-nav")}
+                  <ShelfTrigger
+                    shelf="resources"
+                    currentHrefs={resourceHrefs}
+                    className="nav-rail-item hidden bg-transparent xl:inline-block"
                   >
-                    {tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
-                  </button>
+                    {resourcesLabel}
+                  </ShelfTrigger>
                   {railLink}
                 </Fragment>
               );
             })}
           </nav>
-          <button
-            type="button"
-            aria-expanded={menuOpen}
-            onClick={(event) => {
-              menuOpenerRef.current = event.currentTarget;
-              setMenuOpen(true);
-            }}
-            className="nav-rail-cta flex-none"
-          >
-            {tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
+          <HeaderRailCta className="nav-rail-cta flex-none">
+            {buyLabel}
             <span aria-hidden="true">›</span>
-          </button>
+          </HeaderRailCta>
           </div>
         </div>
       </div>
 
-      <section
-        id="products-shelf"
-        aria-label={tx(locale, "Products", { es: "Productos", pt: "Produtos" })}
-        aria-hidden={openShelf !== "products"}
-        className={cn("header-shelf", openShelf === "products" && "header-shelf-open")}
-      >
+      <ShelfPanel shelf="products" label={tx(locale, "Products", { es: "Productos", pt: "Produtos" })}>
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
@@ -641,7 +416,6 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
-                  onClick={() => setOpenShelf(null)}
                   className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
@@ -654,10 +428,8 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                   const href = localisedHref(`/products/${category.slug}`, locale);
                   return (
                     <div key={category.slug}>
-                      <Link
+                      <HeaderLink
                         href={href}
-                        onClick={() => setOpenShelf(null)}
-                        aria-current={isCurrent(href) ? "page" : undefined}
                         className="header-shelf-link block border-t border-line pt-12 text-ink no-underline"
                       >
                         <span className="short-marker text-c1">
@@ -666,7 +438,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                         <span className="ms-8 text-c2 tabular-nums text-ink-secondary">
                           {category.count}
                         </span>
-                      </Link>
+                      </HeaderLink>
                       {category.children.length > 0 ? (
                         <ul className="mt-6">
                           {category.children.map((child) => (
@@ -691,7 +463,6 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                                     ? `/collections/${category.slug}-${child.slug}/`
                                     : `/${locale}/collections/${category.slug}-${child.slug}/`
                                 }
-                                onClick={() => setOpenShelf(null)}
                                 className="block py-2 text-c2 text-ink-secondary no-underline hover:text-ink"
                               >
                                 {child.labels[locale]}
@@ -707,14 +478,9 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             </div>
           </div>
         </div>
-      </section>
+      </ShelfPanel>
 
-      <section
-        id="company-shelf"
-        aria-label={tx(locale, "Company", { es: "Empresa", pt: "Empresa" })}
-        aria-hidden={openShelf !== "company"}
-        className={cn("header-shelf", openShelf === "company" && "header-shelf-open")}
-      >
+      <ShelfPanel shelf="company" label={tx(locale, "Company", { es: "Empresa", pt: "Empresa" })}>
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
@@ -727,39 +493,29 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 </p>
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-4">
-                {dict(companyShelfLinks, locale).map((link) => {
-                  const href = localisedHref(link.href, locale);
-                  return (
-                    <Link
-                      key={link.href}
-                      href={href}
-                      onClick={() => setOpenShelf(null)}
-                      aria-current={isCurrent(href) ? "page" : undefined}
-                      className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
-                    >
-                      <span className="short-marker text-c1">{link.label}</span>
-                      <span className="mt-8 block text-c2 text-ink-secondary">{link.detail}</span>
-                    </Link>
-                  );
-                })}
+                {dict(companyShelfLinks, locale).map((link) => (
+                  <HeaderLink
+                    key={link.href}
+                    href={localisedHref(link.href, locale)}
+                    className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
+                  >
+                    <span className="short-marker text-c1">{link.label}</span>
+                    <span className="mt-8 block text-c2 text-ink-secondary">{link.detail}</span>
+                  </HeaderLink>
+                ))}
               </nav>
             </div>
           </div>
         </div>
-      </section>
+      </ShelfPanel>
 
-      <section
-        id="resources-shelf"
-        aria-label={tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
-        aria-hidden={openShelf !== "resources"}
-        className={cn("header-shelf", openShelf === "resources" && "header-shelf-open")}
-      >
+      <ShelfPanel shelf="resources" label={resourcesLabel}>
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
               <div>
                 <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {tx(locale, "Resources", { es: "Recursos", pt: "Recursos" })}
+                  {resourcesLabel}
                 </p>
                 <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
                   {tx(locale, "Where the products are used, how to specify them, and what buyers ask.", {
@@ -770,59 +526,45 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-3">
                 {resourceLinks.map((link) => {
-                  const href = localisedHref(link.href, locale);
                   const detail = dict(resourceDetails, locale)[link.href as keyof typeof resourceDetails.en];
                   return (
-                    <Link
+                    <HeaderLink
                       key={link.href}
-                      href={href}
-                      onClick={() => setOpenShelf(null)}
-                      aria-current={isCurrent(href) ? "page" : undefined}
+                      href={localisedHref(link.href, locale)}
                       className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
                     >
                       <span className="short-marker text-c1">{navLabel(link, locale)}</span>
                       <span className="mt-8 block text-c2 text-ink-secondary">{detail}</span>
-                    </Link>
+                    </HeaderLink>
                   );
                 })}
               </nav>
             </div>
           </div>
         </div>
-      </section>
+      </ShelfPanel>
 
-      <section
-        id="buy-shelf"
-        aria-label={tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" })}
-        aria-hidden={openShelf !== "buy"}
-        className={cn("header-shelf", openShelf === "buy" && "header-shelf-open")}
-      >
+      <ShelfPanel shelf="buy" label={buyLabel}>
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-24 xl:grid-cols-4">
-              {dict(buyShelfLinks, locale).map((link) => {
-                const href = localisedHref(link.href, locale);
-                return (
-                  <Link
-                    key={link.href}
-                    href={href}
-                    onClick={() => setOpenShelf(null)}
-                    aria-current={isCurrent(href) ? "page" : undefined}
-                    className="header-shelf-link flex min-h-96 flex-col justify-between border-t border-line py-16 text-ink no-underline"
-                  >
-                    <span className="flex items-center justify-between gap-16 text-h3">
-                      <span className="short-marker">{link.label}</span>
-                      <span aria-hidden="true">›</span>
-                    </span>
-                    <span className="mt-16 text-c2 text-ink-secondary">{link.detail}</span>
-                  </Link>
-                );
-              })}
+              {dict(buyShelfLinks, locale).map((link) => (
+                <HeaderLink
+                  key={link.href}
+                  href={localisedHref(link.href, locale)}
+                  className="header-shelf-link flex min-h-96 flex-col justify-between border-t border-line py-16 text-ink no-underline"
+                >
+                  <span className="flex items-center justify-between gap-16 text-h3">
+                    <span className="short-marker">{link.label}</span>
+                    <span aria-hidden="true">›</span>
+                  </span>
+                  <span className="mt-16 text-c2 text-ink-secondary">{link.detail}</span>
+                </HeaderLink>
+              ))}
               <a
                 href={siteSettings.alibaba.storefront}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setOpenShelf(null)}
                 className="alibaba-hard-cta"
               >
                 <span>{tx(locale, "Buy on Alibaba", { es: "Comprar en Alibaba", pt: "Comprar no Alibaba" })}</span>
@@ -831,20 +573,14 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             </div>
           </div>
         </div>
-      </section>
+      </ShelfPanel>
+    </HeaderProvider>
+  );
 
-      {menuPresence.rendered ? (
-        <SiteMenuDrawer
-          state={menuPresence.visible ? "open" : "closed"}
-          locale={locale}
-          currentPath={pathname}
-          categories={categories}
-          onClose={closeMenu}
-        />
-      ) : null}
-      {searchEverOpened ? (
-        <SearchDialog open={searchOpen} onClose={() => setSearchOpen(false)} locale={locale} />
-      ) : null}
-    </div>
+  return (
+    <>
+      {header}
+      <BauInfoBand locale={locale} />
+    </>
   );
 }

@@ -19,7 +19,8 @@
  * skipped; `dict()` passes those through untouched anyway.
  */
 import ts from "typescript";
-import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
+import { safeWrite } from "./lib/safe-write.mjs";
 import { join, relative } from "node:path";
 
 const ROOT = "src";
@@ -172,6 +173,17 @@ for (const folder of ["news", "guides"]) {
   }
 }
 
+/* Category positioning (src/data/category-positioning.json): pitch is rendered through tx() in CategoryGuide. */
+for (const [slug, entry] of Object.entries(JSON.parse(readFileSync("src/data/category-positioning.json", "utf8")))) {
+  if (slug.startsWith("_") || !entry || typeof entry !== "object") continue;
+  const text = entry.pitch;
+  if (!worth(text)) continue;
+  const where = "src/data/category-positioning.json";
+  const list = keys.get(text) ?? [];
+  if (!list.includes(where)) list.push(where);
+  keys.set(text, list);
+}
+
 /* 3D model scope notes: public/downloads/models/index.json scope.en is rendered through dict() in ProductModel. */
 for (const m of JSON.parse(readFileSync("public/downloads/models/index.json", "utf8"))) {
   const en = m?.scope?.en;
@@ -184,5 +196,5 @@ for (const m of JSON.parse(readFileSync("public/downloads/models/index.json", "u
 }
 
 const sorted = Object.fromEntries([...keys.entries()].sort(([a], [b]) => a.localeCompare(b, "en")));
-writeFileSync(OUT, JSON.stringify(sorted, null, 2) + "\n");
+safeWrite(OUT, JSON.stringify(sorted, null, 2) + "\n");
 console.log(`${OUT}: ${keys.size} interface sentences from src/`);
