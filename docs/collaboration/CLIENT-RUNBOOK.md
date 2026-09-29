@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-28 · 更新人：Claude：两件待办 —— 等我说部署好后提交 9 条 RSS；以及 AI 来源追踪三步**
+**最后更新：2026-09-28 · 更新人：Claude：三件待办 —— Bing 两条报错重新检查（已修好）；等我说部署好后提交 9 条 RSS；AI 来源追踪三步**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -14,6 +14,52 @@
 >
 > 从今天起的规矩：**你要动手的事，永远只在这份文件的第一屏，带日期**。
 > 做完一条我就把它移走。你在这里读到一条已经做完的事，是我的错，告诉我。
+
+---
+
+## 现在要做的：Bing 那两条「High」报错 —— 已修好，只差让 Bing 重新检查（2026-09-28）
+
+你截图里的两条，我今天对着线上逐条实测过，**网站这边都已经是对的**，Bing 显示的是它上一次扫描时的旧结果：
+
+| Bing 报的 | 我实测线上（2026-09-28） | 结论 |
+|---|---|---|
+| 5 篇指南「不在 sitemap 里」（strike-plates、spindle-sizes、door-preparation，西语 chrome-finish、hinge-grades） | 5 个网址都返回 **200**；英文 3 篇在 `/sitemap.xml` 里，西语 2 篇在 `/es/sitemap.xml` 里 | 09-26 以前所有语种挤在一个 14 MB 的 sitemap 里，Bing 读到一半就停了——正是这 5 篇的成因。09-26 已拆成每个语种一个文件，已上线 |
+| 2 个页面「head 里没有 description」（`index.php?...tid=23&lang=cn`、`index.php?...aid=397`） | 两个都是旧 PHP 站网址，现在返回 **301 跳转**：tid=23 → `/products/`，aid=397 → X2 逃生装置外把手产品页（该页有 description） | 跳走的网址本身不需要 description；Bing 抓的是跳转生效以前的旧页面 |
+
+### 第 1 步 · 在 Bing 里把十个 sitemap 都交上去（2 分钟）
+
+1. 打开 https://www.bing.com/webmasters ，选 cantonlock.com。
+2. 左侧点 **Sitemaps（站点地图）**。
+3. 看列表里有没有下面这些。**没有的，逐条点右上角「Submit sitemap / 提交站点地图」，粘贴，确定**：
+
+   ```
+   https://cantonlock.com/sitemap.xml
+   https://cantonlock.com/es/sitemap.xml
+   https://cantonlock.com/pt/sitemap.xml
+   https://cantonlock.com/fr/sitemap.xml
+   https://cantonlock.com/de/sitemap.xml
+   https://cantonlock.com/ja/sitemap.xml
+   https://cantonlock.com/ko/sitemap.xml
+   https://cantonlock.com/tr/sitemap.xml
+   https://cantonlock.com/ru/sitemap.xml
+   https://cantonlock.com/ar/sitemap.xml
+   ```
+
+   **成功的样子**：每一条的状态变成「Success / 成功」，「URLs discovered」有数字（英文约 880，其余每个约 680）。
+   **状态是「Couldn't fetch / 无法获取」**：截图发我，先不要删。
+   已经在列表里的，点它右边的 **Resubmit（重新提交）**。
+
+> 下一次发布上线后，还会多一个 `https://cantonlock.com/sitemap-index.xml`，一个网址就包含上面十个。
+> 我说「已部署」后，你可以只交这一个（交了它，上面十个留着也没关系，不会重复计算）。
+
+### 第 2 步 · 让 Bing 重新扫描（1 分钟）
+
+1. 左侧点 **Recommendations（建议）**，打开「Important pages missing in sitemaps」那条。
+2. 如果页面上有 **Recheck / Validate / 重新检查** 按钮，点它；没有按钮也不用管，Bing 下次扫描（通常几天内）会自己更新。
+3. 对「The description is missing in the head section」那条做同样的事。
+
+**成功的样子**：几天后这两条从列表里消失，或「Pages with error」变成 0。
+**一周后还在**：把那一条的截图（带网址列表）发我，我再逐个实测。
 
 ---
 
