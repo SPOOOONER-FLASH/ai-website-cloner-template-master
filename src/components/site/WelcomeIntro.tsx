@@ -16,7 +16,7 @@ const introCopy = {
     title: "Made in Xiaolan. Since 1998.",
     body: "Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first. We have made that door hardware, architectural ironmongery as the UK trade calls it, since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, ISO 9001 certified since 2002. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany. Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.",
     more: "More links",
-    company: "Canton Hyland Hardware\n(Group) Co., Ltd",
+    company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     tagline: "Hardware you can stand behind.",
     links: [
       { label: "Project Planner", href: "/products" },
@@ -29,7 +29,7 @@ const introCopy = {
     title: "Hecho en Xiaolan. Desde 1998.",
     body: "Nadie elogia un herraje en un día normal, y justamente ese es su trabajo. Una manija tiene que sentirse igual en su último giro que en el primero. Una cerradura tiene que aguantar años sin ceder. Y el día que un pasillo se llena de humo, una barra antipánico tiene que abrir la puerta al primer toque, para quien llegue primero. Fabricamos esos herrajes desde 1998 en Xiaolan, la localidad de Zhongshan de donde sale casi un tercio de las cerraduras que exporta China, con certificación ISO 9001 desde 2002. Están en puertas de Europa, Rusia, Norteamérica y Sudamérica, Turquía y el Sudeste Asiático. Durante años recibimos a nuestros compradores en la feria de ferretería de Colonia; nuestro equipo, que habla español, ha expuesto en Lima y en Buenos Aires; hoy tenemos oficina propia en Alemania. Buena parte de lo que fabricamos sale con la marca de nuestros clientes, y es el trabajo que mejor hacemos. Tráiganos un plano o una muestra y hacemos el molde. Si un diseño choca con la patente de otro fabricante, nuestros ingenieros modifican las piezas o el aspecto hasta que deja de chocar. Cuando su nombre va en ellos, queremos que duerma tranquilo.",
     more: "Más enlaces",
-    company: "Canton Hyland Hardware\n(Group) Co., Ltd",
+    company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     tagline: "Herrajes que dan la cara.",
     links: [
       { label: "Planificador de proyectos", href: "/es/products" },
@@ -42,7 +42,7 @@ const introCopy = {
     title: "Feito em Xiaolan. Desde 1998.",
     body: "Ninguém elogia uma ferragem num dia comum, e esse é justamente o trabalho dela. Uma maçaneta precisa ter no último giro a mesma sensação do primeiro. Uma fechadura precisa aguentar anos sem ceder. E no dia em que um corredor se enche de fumaça, uma barra antipânico precisa abrir a porta no primeiro toque, para quem chegar primeiro. Fabricamos essas ferragens desde 1998 em Xiaolan, a cidade de Zhongshan de onde sai quase um terço das fechaduras que a China exporta, com certificação ISO 9001 desde 2002. Elas estão em portas da Europa, da Rússia, das Américas do Norte e do Sul, da Turquia e do Sudeste Asiático. Durante anos recebemos nossos compradores na feira de ferragens de Colônia; nossa equipe, que fala espanhol, já expôs em Lima e em Buenos Aires; hoje temos escritório próprio na Alemanha. Boa parte do que fabricamos sai com a marca dos nossos clientes, e é o trabalho que fazemos melhor. Traga um desenho ou uma amostra e nós fazemos o molde. Se um projeto esbarrar na patente de outro fabricante, nossos engenheiros alteram as peças ou a aparência até que deixe de esbarrar. Quando o seu nome vai nelas, queremos que você durma tranquilo.",
     more: "Mais links",
-    company: "Canton Hyland Hardware\n(Group) Co., Ltd",
+    company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     tagline: "Ferragem que você assina embaixo.",
     links: [
       { label: "Planejamento de obra", href: "/pt/products" },

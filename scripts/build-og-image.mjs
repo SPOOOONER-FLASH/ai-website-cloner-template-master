@@ -38,7 +38,7 @@ const text = Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.o
   <text x="80" y="452" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
         font-size="28" fill="#6e6e73">Panic exit devices · Mortise locks · Lever handles · Hinges</text>
   <text x="80" y="524" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
-        font-size="24" fill="#8e8e93">Canton Hyland Hardware (Group) Co., Ltd. · Guangdong, China</text>
+        font-size="24" fill="#8e8e93">Canton Hyland Hardware &amp; Building Material Co., Ltd. · Guangdong, China</text>
 </svg>`);
 
 await sharp(text)

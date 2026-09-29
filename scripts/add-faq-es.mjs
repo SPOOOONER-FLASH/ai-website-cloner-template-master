@@ -98,7 +98,7 @@ const ITEMS = {
   },
   "Where are your products manufactured?": {
     q: "¿Dónde se fabrican sus productos?",
-    a: "En Guangdong, China. Canton Hyland Hardware (Group) Co., Ltd. fabrica herrajes de puerta comerciales y residenciales desde 1998.",
+    a: "En Guangdong, China. Canton Hyland Hardware & Building Material Co., Ltd. fabrica herrajes de puerta comerciales y residenciales desde 1998.",
   },
   "Do you export worldwide?": {
     q: "¿Exportan a todo el mundo?",
