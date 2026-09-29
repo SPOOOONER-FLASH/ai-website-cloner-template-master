@@ -178,3 +178,7 @@
 - `44b4c7ab034` feed 的 <language> 去掉没人决定过的地区码；runbook 换成实测命令
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/29 01:48:44 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `8de4215bb6b`（源码 a4207a6949c）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。

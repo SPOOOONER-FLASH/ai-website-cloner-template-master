@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 670 次提交
+最近 30 天 · 共 671 次提交
 
 ## 2026-09-29
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 02:13 | 中立 | 纪律：exit 75 不等于没推上去，先用 git ls-remote 问远端 | `b495ed60916` |
+| 01:30 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 a4207a6949c | `8de4215bb6b` |
 | 01:15 | HYDE | 盖上 21 篇文章的修订日期；发布第二次失败的原因 | `d127564ba26` |
 | 01:03 | HYDE | 散文里的 lingueta 逐句理完；侧边栏首次点击预热；标题白名单补 muelle | `2223f1dca8d` |
 | 00:50 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `7e9f12f98ab` |
@@ -791,5 +793,4 @@
 | 03:22 | HYDE | 上线西班牙语产品目录 | `c99d766e9bf` |
 | 02:27 | 发布 HYDE | 发布 HYDE 产品图与目录代码校正 | `ca8f976c4ba` |
 | 02:22 | HYDE · 发布 HYDE | 按纸质目录第 40-42 页校正代码表 | `cfa9e30f975` |
-| 02:12 | HYDE | 统一产品图片 HYDE 品牌标识 | `14df6b92aeb` |
 
