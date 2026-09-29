@@ -15,3 +15,12 @@ fittings, lock cases…) are a separate English edit and still pending retransla
 
 Note for the English side: 18 panic records not in the 29 still list other materials (304SS, zinc,
 ABS, steel); if the client rule covers them too, the English needs changing first.
+
+## Follow-up: the other 105 stale product items (same day)
+
+The English side added the material to 57 summaries (13482f6ea9a) and changed the company name in
+descriptions (43822915118). Descriptions already carried the new name in all seven overlays → hash
+refresh only. Summaries: the material was inserted into the existing translation per locale
+(cylinders: solid brass; handles / tubular locks / grip sets: stainless steel or zinc alloy), only where
+it was missing; every non-cylinder result read by eye. 105 items × 7 merged, i18n-lint clean.
+Generator: tmp/claude-market/inject.cjs (scratch; the rules are in this note).
