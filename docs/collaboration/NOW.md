@@ -9,7 +9,7 @@
 的调查，成本是几千 token 加一次停工 —— 2026-08-31 Codex 就为此中断过一次展会任务。
 
 ## 正在进行
-> Claude 多语种 2026-09-28：**待发布：源码见 SHIPLOG 最新一条（含 65c72b5c053 与第二批），要发布**（SEO/GEO 两批：品类页买家指南 + 七语种「怎么选」、子类页逐型号规格 + 问答、视频页问答、术语表 DefinedTermSet；本地 audit-seo-geo 0/0、七语种页面英文 ≤ 0.8%、test:export 绿）。工程会话在线时按 AGENTS.md 09-28 规则发布；本会话不跑 release。
+> Claude 多语种 2026-09-28：**待发布：源码见 SHIPLOG 最新一条（含 65c72b5c053、第二批、/sitemap-index.xml），要发布**（SEO/GEO 两批 + Bing 修复：品类页买家指南 + 七语种「怎么选」、子类页逐型号规格 + 问答、视频页问答、术语表 DefinedTermSet；本地 audit-seo-geo 0/0、七语种页面英文 ≤ 0.8%、test:export 绿）。工程会话在线时按 AGENTS.md 09-28 规则发布；本会话不跑 release。
 > Claude 多语种 2026-09-25（二）：七语种由落地站升为**全栈镜像**（M1 底座，746 页 × 7），源码已推；**发布棒在发布会话**，请其跑 `npm run release:hyde -- --root E:/release`。进度看板 `docs/collaboration/LOCALE-MIRROR-STATUS.md`。
 
 
