@@ -88,8 +88,8 @@
 | 22 | 桌面总结文档（学到什么 / 做了什么 / 完成什么）+ runbook 新增甲方要做的事 + agent-update | 09-28 完成：`docs/collaboration/reports/2026-09-28-geo-learnings.md` → 桌面 `hydeGEO-学习与进展-2026-09-28.docx`（`node scripts/build-geo-report.mjs`）；runbook 第一屏加四件并重出 Word；18 行的题库改为并入已有基线 `docs/geo/`（37→45 题），删掉重复文件 |
 | 23 | 34 篇指南 `relatedModels` 为空（QuickCreator SEO/GEO 会话交接：补上后分类页的选型区块会自动挂文章链接），按正文里真正讨论的型号补，不硬塞 | 09-28 完成：7 篇补上（307+311 五篇出口装置与认证类、311+AR4 四款锁体的开模指南、B024/B025 黄铜合页），全是正文里点名讨论的型号；其余 27 篇正文不讨论具体型号，保持为空，不硬塞（201/300/564 等是钢种、起订量、行数，不是型号） |
 | 24 | 公司英文全称改为甲方 09-28 给的 Canton Hyland Hardware & Building Material Co., Ltd.：HYDE 全站（公司页、FAQ、产品描述、三语及七语覆盖层里的专有名词）一次改完；JSON-LD legalName 交工程 #112 | 09-28 完成：143 个文件 931 处（110 条 HYDE 产品描述、公司页、FAQ、页脚版权、七语覆盖层、5 个生成脚本；SVG/HTML 里写 &amp;），重出 og-default.png；雷茵证书名和查询语料原样保留；legalName 交工程 #112 |
-| 25 | 读甲方发来的四份 AI 摸底结果（kimi / grok / gemini / gpt），整理成第一次基线记录和发现，放 docs/geo/results/ | 09-28 完成：runbook ④ 写明在「编入索引 → 网页」报告里，不是站点地图；① 已答，移出 |
-| 26 | runbook ④ 写清楚：GSC 未收录清单在“网页（网页编入索引）”报告里，不是站点地图 | 待做 |
+| 25 | 读甲方发来的四份 AI 摸底结果（kimi / grok / gemini / gpt），整理成第一次基线记录和发现，放 docs/geo/results/ | 09-28 完成：`docs/geo/results/2026-09-28-first-pass-not-baseline.md`。四份是把整份题库交给 AI 写问答稿，AI 事先知道我们，不能当基线；有用的是 AI 对我们的说法逐条核对（读过官网的 GPT/Kimi 几乎全对；“满足 ANSI 和 CE”、推杠 660–1200 mm、“广州集团”都不是官网来源）和竞品名单。runbook ③ 改为一题一问重做 |
+| 26 | runbook ④ 写清楚：GSC 未收录清单在“网页（网页编入索引）”报告里，不是站点地图 | 09-28 完成：runbook ④ 写明在「编入索引 → 网页」报告里，不是站点地图；① 已答，移出 |
 
 
 ## 待甲方确认（文案）
