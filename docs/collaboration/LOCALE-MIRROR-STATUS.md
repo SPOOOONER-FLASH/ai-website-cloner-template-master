@@ -1,6 +1,6 @@
 # 七语种全栈镜像：进度看板
 
-> 由 `scripts/track-locale-mirror.mjs` 生成于 2026-09-29 20:30 UTC。**不要手改**；每个会话结束时的 Stop 钩子和 `npm run status` 会重写它。
+> 由 `scripts/track-locale-mirror.mjs` 生成于 2026-09-29 22:15 UTC。**不要手改**；每个会话结束时的 Stop 钩子和 `npm run status` 会重写它。
 > 任务与架构：`docs/collaboration/tasks/2026-09-25-seven-locale-full-mirror.md`。任何一格低于 100% 都是未完成的工作。
 
 基准：549 个在售 HYDE 产品，17 个品类 + 29 个子类，37 篇新闻，45 篇指南，5 个案例，16 条问答，1302 句界面文案，1069 条术语。
