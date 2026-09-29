@@ -6,15 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 669 次提交
+最近 30 天 · 共 668 次提交
 
 ## 2026-09-29
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 00:43 | 中立 | goal #110 #113：r17 = e9a8b081015 已上线 | `6798d334954` |
-| 00:27 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 3addc6b5aa7 | `e9a8b081015` |
-| 00:13 | 中立 | seo-audit: sitemap lastmod may match dateModified | `a8d292bab8d` |
+| 00:50 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `7e9f12f98ab` |
+| 00:48 | HYDE | 地弹簧上架 HYDE：28 条枢轴组合，目录数 588 → 616 | `1e4eed657a7` |
 | 00:11 | 中立 | 地弹簧 24 条：英文 summary 写的是另一种产品；补齐西语 | `6212ffc4b27` |
 | 00:01 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `de6add902d3` |
 | 00:00 | 中立 | 巴西葡语：trinco 是斜舌不是方舌，改 351 行 / 207 条记录 | `77a2f393327` |
