@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 614 次提交
+最近 30 天 · 共 617 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:58 | 中立 | GEO 第一轮四份 AI 回答整理（非基线：对我们的说法逐条核对、竞品名单）；runbook ③ 改为一题一问 | `a09b623311a` |
+| 23:56 | 中立 | 公司英文全称统一为 Canton Hyland Hardware & Building Material Co., Ltd.（931 处，含七语覆盖层与 OG 图）；runbook ④ 写清在网页索引报告 | `43822915118` |
+| 23:47 | 中立 | NOW.md：待发布行加上 00e1f6afb46（五篇指南摘要七语种重译） | `28602b99a20` |
 | 23:46 | 中立 | i18n：五篇指南摘要首句七语种重译（解 r17 i18n-lint 28 条），七篇 seoTitle 刷新 sourceHash | `00e1f6afb46` |
 | 23:36 | 中立 | goal #110：r17 等多语言会话重译 5 篇指南摘要 | `a0da1cb187e` |
 | 23:26 | 中立 | Merge remote-tracking branch 'origin/main' into eng-work | `3aa4903fbda` |
