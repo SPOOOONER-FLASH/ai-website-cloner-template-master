@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 611 次提交
+最近 30 天 · 共 612 次提交
 
 ## 2026-09-29
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 06:04 | 中立 | i18n：28 条地弹簧/顶轴/玻璃门顶夹七语种补译（名称、摘要、规格 + 12 个规格标签）；untranslatable 认型号代码 | `6dab8fa36e8` |
 | 05:58 | HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `cc71a6a93da` |
 | 05:55 | 中立 | 311 overlays: restore the sourceHash that matches the ABS English | `f77990f9f45` |
 | 05:53 | 中立 | Merge branch 'main' of https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master into eng-work | `0c6314617bb` |
