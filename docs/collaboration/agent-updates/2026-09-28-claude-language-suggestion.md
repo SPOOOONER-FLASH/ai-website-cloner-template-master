@@ -72,3 +72,25 @@ BWT 那个是**国家**选择：它把访客送到不同法人实体的独立站
 ## 测试
 
 `npm test` 418 项通过、`typecheck` 通过、`lint` 0 error、impeccable 检测器 0 findings。
+
+---
+
+## 2026-09-29 补：已在线上真实路由验完，上面那条待办可以划掉
+
+上线之后在 `cantonlock.com` 上用真实浏览器（`navigator.language = en-US`）逐条验：
+
+| 行为 | 实测 |
+|---|---|
+| 德语页上出现 | `/de/` → 「View this page in English」 |
+| **深层页给同一页，不是首页兜底** | `/de/products/floor-springs-and-pivots/` → `/products/floor-springs-and-pivots/` |
+| 标签语义 | `<aside lang="en-GB" dir="ltr">`，链接带 `hreflang="en-GB"` |
+| 关掉之后消失并记住 | `localStorage["hyde.language-suggestion.dismissed"] = "1"`，刷新不再出现 |
+| **语言一致时不出现** | 清掉标记后，英文浏览器打开 `/products/`，横幅不渲染 |
+
+第二条是这个组件真正的价值所在：一个把德语读者从产品页扔回英文首页的"提示"
+比不提示更糟，因为他丢了自己正在看的那一页。
+
+`lang`/`dir` 挂在横幅上而不是继承页面，是给读屏软件的：它要用英语发音念这句英语，
+而整页是德语。
+
+截图与逐条 JS 断言见 2026-09-29 会话。**这一节的待办到此结束。**
