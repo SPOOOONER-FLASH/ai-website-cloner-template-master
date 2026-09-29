@@ -112,10 +112,10 @@
 | 107 | 甲方 09-28（Search Console 截图）：/ar/feed.xml 无法抓取，其余 7 个 feed 成功 | 待甲方（线上 /ar/feed.xml 实测 200、82 条、XML 完整；源于 d36e2d988ef 才上线 feed，Google 读取时尚未上线或缓存为旧 404 → 甲方 Purge Everything 后在 Search Console 重新提交）|
 | 108 | seo:indexnow:release 在 d36e2d988ef→2aa61283e53 的比较中 4 GB 堆溢出 | 09-28 完成（npm 命令加 --max-old-space-size=16384，实测跑通到构建号检查；等甲方 purge 后提交）|
 | 109 | 多语言 SEO 会话 09-28：七语种产品标题 420 条 <30 字符（只剩「型号 + 品类名」）→ 生成器兜底补材质与供应商词到 ≥40；英文 5 篇 guides 标题 61–62 收到 60 内 | 09-28 源码完成（七语种短标题兜底：补译好的品类名（名字已含则用父类）+「工厂直供」，上限内才补；<30（日韩 <16）从 420 条降到 24 条，剩下的是品类名已在名字里的日语箱錠等；只改 seoTitle，843 行；英文实际 11 篇 >60，全部收到 ≤60）|
-| 110 | 文案会话 09-28：源码 149bd21e187（5 篇指南首句直接给答案、7 篇 relatedModels、GEO 基准 45 题、runbook 第一屏）要发布 | 等待（r17 两次被拦：① 5 篇指南缺修订戳，已补并推送；② i18n-lint 28 条，七语种摘要仍是旧版，缺 CZ132/CW602N/ISO 2813/M5 → 已请多语言会话用 i18n-batch --stale 重译 5 篇摘要，随它那批一起推，推完即发布）|
+| 110 | 文案会话 09-28：源码 149bd21e187（5 篇指南首句直接给答案、7 篇 relatedModels、GEO 基准 45 题、runbook 第一屏）要发布 | 09-29 完成（r17 = e9a8b081015；前三次被拦：修订戳缺、七语种摘要过期（多语言会话 00e1f6afb46 重译）、seo-audit 的 sitemap lastmod 只比 datePublished（已改为也认 dateModified）；源站实测 legalName 为新全称） |
 | 111 | 文案会话转交：甲方给出 LinkedIn 公司主页网址后，加进 siteSettings.social（进 sameAs） | 待甲方（网址未给） |
 | 112 | 文案会话转交：公司英文法定名统一后 JSON-LD legalName 同步 | 09-29 完成（甲方定为 Canton Hyland Hardware & Building Material Co., Ltd.；legalName 读 content/site-settings.json，文案会话 43822915118 已改，JSON-LD 自动跟随）|
-| 113 | 文案会话 09-29：源码 bbaacbc0372（公司英文全称统一、GEO 第一轮整理、runbook）要发布 | 待做 |
+| 113 | 文案会话 09-29：源码 bbaacbc0372（公司英文全称统一、GEO 第一轮整理、runbook）要发布 | 09-29 完成（r17 = e9a8b081015；前三次被拦：修订戳缺、七语种摘要过期（多语言会话 00e1f6afb46 重译）、seo-audit 的 sitemap lastmod 只比 datePublished（已改为也认 dateModified）；源站实测 legalName 为新全称） |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
