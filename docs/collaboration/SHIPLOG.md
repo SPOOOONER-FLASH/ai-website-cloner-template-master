@@ -6,12 +6,19 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 606 次提交
+最近 30 天 · 共 602 次提交
+
+## 2026-09-29
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 04:42 | 中立 | Archive BAU and restored AR4 deployment verification | `50dd7a3951a` |
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 22:11 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d443a245335 | `bdb5523d715` |
 | 21:52 | 中立 | Record BAU/AR4 push transport failure and verified SSH fallback | `48ad6ba369e` |
 | 21:41 | HYDE | 合并本地提交（ship 旁路合并） | `e6e4b160dcf` |
 | 21:22 | 中立 | Merge verified HYDE desktop and inquiry feedback changes | `f3d73b76c34` |
@@ -717,10 +724,4 @@
 | 07:33 | HYDE | 同步最新产品与西语站内搜索索引 | `a6e538d016e` |
 | 07:20 | HYDE · 发布 HYDE | 补足全站短 meta description：类目页增加紧凑尾缀回退，14 个手工页按站内事实扩写 | `e8aa6b0174f` |
 | 06:47 | HYDE · 发布 HYDE | 西语 SEO 元数据生成 + es 类目页标题预算修复 | `da1dc77a68d` |
-| 03:55 | 中立 · 发布 HYDE | 修复弹窗永久消失：dismiss 改为会话级记忆 | `5bbf3e28943` |
-| 03:31 | 发布 HYDE | 发布西班牙语产品目录静态站 | `00a6e23d233` |
-| 03:22 | HYDE | 上线西班牙语产品目录 | `c99d766e9bf` |
-| 02:27 | 发布 HYDE | 发布 HYDE 产品图与目录代码校正 | `ca8f976c4ba` |
-| 02:22 | HYDE · 发布 HYDE | 按纸质目录第 40-42 页校正代码表 | `cfa9e30f975` |
-| 02:12 | HYDE | 统一产品图片 HYDE 品牌标识 | `14df6b92aeb` |
 
