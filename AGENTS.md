@@ -583,6 +583,22 @@ Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在�
   the unpushed commits to `docs/collaboration/PUSH-PENDING.md`. Tell the client in one line, then
   continue with the next item. The next `npm run ship` carries the backlog up. Never sit in a
   retry loop; never `sleep` waiting for the network.
+- **Exit 75 does not reliably mean "not pushed". Confirm with `git ls-remote` before you retry
+  or re-run anything.** On 2026-09-29 `release:hyde` reported 「超时 推送失败（网络）」 on all
+  three attempts and exited 75 — and the release commit was **already on `origin/main`**. One
+  attempt had succeeded server-side and the client never saw the acknowledgement. The retry
+  push then came back `! [remote rejected] … cannot lock ref 'refs/heads/main': is at
+  8de4215bb6b but expected a4207a6949c`, which is git saying *your commit is already the tip*.
+
+  A push is a network write, so a timeout is genuinely ambiguous: it says the answer did not
+  arrive, not that the write did not happen. Only the remote can settle it, and
+  `git ls-remote origin refs/heads/main` asks the remote directly — unlike
+  `git rev-list origin/main..HEAD`, which reads a local ref that is only as fresh as the last
+  fetch (the stale-`origin/main` false green above).
+
+  This matters beyond tidiness: believing "not pushed" invites a `--force` or a rebuild of
+  work that already shipped, and `out/` lands on the branch the server deploys every five
+  minutes. One `ls-remote` costs a second and removes the ambiguity entirely.
 - `release:hyde` / `release:rayen` follow the same rule, and reuse `<root>/release-<site>/`
   between runs (`--root E:/release` where C: is full; `--clean` deletes it afterwards): dependencies are reinstalled only when `package-lock.json` changes (`--fresh`
   rebuilds the checkout from scratch). The wall is a rule, not a lock: nothing waits on anything.

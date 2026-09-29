@@ -67,3 +67,29 @@ exit code 0。**真实情况是 `deploy:prep` 退出 1，发布中止。** 这�
 
 `npm test` 446/447（唯一失败项是 `every category that does have products is built`，
 它比对 `out/`，只能由发布产生）；lint 0 errors；typecheck clean；`titles:check` 通过。
+
+---
+
+## 追加：exit 75 不等于没推上去
+
+第三次 `release:hyde` 三次推送都打印「超时 推送失败（网络）」，退出 75。**而发布提交
+那时已经在 `origin/main` 上了。** 其中一次推送在服务端成功了，只是客户端没收到回执。
+
+我的重试推送的报错反而是证据：
+
+```
+! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main':
+  is at 8de4215bb6b but expected a4207a6949c)
+```
+
+git 在说：你要推的那个提交已经是分支顶端了。`git ls-remote` 直接问远端，也确认
+`refs/heads/main` = `8de4215bb6b`。
+
+推送是一次网络写入，超时说的是**回执没回来**，不是写入没发生。只有远端能判定，而
+`git rev-list origin/main..HEAD` 读的是本地 ref，只和上一次 fetch 一样新——就是
+AGENTS.md 里记的那个「168 个提交落后却报 0」的假绿。
+
+已写进 AGENTS.md 的 ship 一节。**这条的代价不是洁癖**：以为没推上去就会想 `--force`
+或者重跑构建，而 `out/` 落在服务器每五分钟部署的那个分支上。
+
+今天这条线上一共五次信号失真，四次报成功实则失败，一次报失败实则成功。
