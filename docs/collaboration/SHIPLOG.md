@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 641 次提交
+最近 30 天 · 共 642 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 21:06 | 中立 | Withdraw BAU token patch superseded by mainline | `c6d40e4af6e` |
 | 08:10 | 中立 | Keep delayed contact prompts clear of desktop hero actions | `090cc5612ef` |
 | 01:43 | HYDE | 合并本地提交（ship 旁路合并） | `aa9754b2a24` |
 
