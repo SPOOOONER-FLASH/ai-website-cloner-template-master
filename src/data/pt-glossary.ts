@@ -21,9 +21,32 @@
  * The market is Brazil, so where the two Portuguese trades differ the Brazilian word wins:
  * `maçaneta` not `puxador` for a lever, `fechadura` not `fechadura de embutir` as the
  * default noun, `parafuso` not `parafuso de fixação` where the English says "screw".
- * `trinco` is the deadbolt and `picaporte`/`lingueta` the sprung latch — Brazilian usage
- * varies, and `lingueta` is used here because it is the word on ABNT NBR 11742's own
- * vocabulary for the sprung element.
+ * `trinco` is the SPRUNG LATCH — the one the handle retracts — and `trava` the dead bolt
+ * the key throws. Corrected 2026-09-29; this header previously said the opposite, and
+ * cited "ABNT NBR 11742's own vocabulary", which is the fire-door standard and has no
+ * lock vocabulary in it (the terminology standard is NBR 12927, Fechaduras —
+ * Terminologia). Three independent sources settle it, and they agree:
+ *
+ *   - AROUCA FECHADURAS' installation manual, supplied by the client 2026-09-29:
+ *     "Insira o TRINCO na furação inferior com o lado CHANFRADO voltado pra o batente";
+ *     "Ajuste do TRINCO … 60mm (2-3/8") … 70mm (2 3/4")"; and in the finishing step the
+ *     knob spindle passes through "o cubo central do TRINCO" while the cylinder blade
+ *     passes through "o cubo central da LINGUETA". A bevelled face and an adjustable
+ *     backset are a sprung latch; a cylinder and a vertical blade are a dead bolt.
+ *   - pro-reforma.com: "Trinco: acionada por meio da maçaneta… Lingueta: também
+ *     conhecida como tranca, acionada pela chave."
+ *   - Leroy Merlin Brasil's lock guide, same split.
+ *
+ * The bad header cost 351 spec rows across 207 records, and it did its worst damage
+ * through people trying to be careful: two rows below were "fixed" INTO the error in
+ * September by sessions that trusted it. On model 1073D a buyer read "Saída da lingueta
+ * = 13 mm" beside "Curso do trinco = 25 mm" and got both numbers backwards.
+ *
+ * `trava` rather than `lingueta` for the dead bolt: this file already used it 18 times,
+ * it cannot be confused with the latch by any reader, and it is the word the same sources
+ * gloss `lingueta` with ("também conhecida como tranca"). `ferrolho` is left alone — it is
+ * the throw bolt of a mortise or aluminium body and was never part of the confusion.
+ * Guarded by `npm run copy:pt-latch --check` and src/data/pt-latch-terms.test.ts.
  *
  * Backset is `Distância ao eixo (broca)` (2026-09-24): the articles already said "distância ao
  * eixo" 141 times while this table said "Distância à testa", and `broca` is the word a Brazilian
@@ -158,9 +181,9 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Door Thickness Range": "Faixa de espessura da porta",
   "Applicable Door Thickness": "Espessura de porta aplicável",
   "Glass door thickness": "Espessura do vidro",
-  "Deadbolt throw": "Curso do trinco",
-  "Latch throw": "Curso da lingueta",
-  "Latch extension": "Saída da lingueta",
+  "Deadbolt throw": "Curso da trava",
+  "Latch throw": "Curso do trinco",
+  "Latch extension": "Saída do trinco",
   "Bolt projection": "Saída do trinco",
   /* Seções do cilindro europeu, escritas 30 / 10 / 30. */
   "Cylinder split": "Divisão do cilindro",
@@ -239,11 +262,11 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   Feature: "Característica",
   Features: "Características",
   Chassis: "Chassi",
-  Latch: "Lingueta",
-  "Latch options": "Opções de lingueta",
-  "Latch Components": "Componentes da lingueta",
-  "Latch & Puller": "Lingueta e puxador",
-  Deadbolt: "Trinco",
+  Latch: "Trinco",
+  "Latch options": "Opções de trinco",
+  "Latch Components": "Componentes do trinco",
+  "Latch & Puller": "Trinco e puxador",
+  Deadbolt: "Trava",
   Body: "Corpo",
   "Main body": "Corpo principal",
   "Inner body": "Corpo interno",
@@ -286,9 +309,9 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Inner Material": "Material interno",
   "Cover material": "Material da tampa",
   "Backplate Material": "Material da placa traseira",
-  "Deadbolt Material": "Material do trinco",
-  "Latch Material": "Material da lingueta",
-  "Latch Bolt Material": "Material da lingueta",
+  "Deadbolt Material": "Material da trava",
+  "Latch Material": "Material do trinco",
+  "Latch Bolt Material": "Material do trinco",
   "Push Bar Material": "Material da barra",
   "Handle Material": "Material da maçaneta",
   "Trim Material": "Material da guarnição",
@@ -446,7 +469,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Light Duty Cylindrical Lock": "Fechadura cilíndrica de uso leve",
   "Cylindrical Knob Lock": "Fechadura cilíndrica de pomo",
   "Commercial Lock": "Fechadura comercial",
-  "Keyed Deadbolt Lock Set": "Conjunto de trinco com chave",
+  "Keyed Deadbolt Lock Set": "Conjunto de trava com chave",
   "Night Latch And Rim Lock": "Fechadura de sobrepor",
   "Night Latch & Rim Lock": "Fechadura de sobrepor",
   "Lock Cylinder": "Cilindro",
@@ -484,7 +507,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Door Closer": "Mola aérea",
   "Door Coordinator": "Coordenador de fechamento",
   "Latch Guard": "Protetor antialavanca para fechadura",
-  "Pry Latch": "Lingueta antialavanca",
+  "Pry Latch": "Trinco antialavanca",
   "Door Flush Bolt": "Ferrolho embutido",
   "Stainless Steel Flush Bolt": "Ferrolho embutido em inox",
   "Door Stopper": "Batedor de porta",
@@ -528,10 +551,10 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Grab Bar": "Barra de apoio",
   "Flip-Up Grab Bar": "Barra de apoio rebatível",
   Indicator: "Indicador",
-  Latch: "Lingueta",
+  Latch: "Trinco",
   /* Added when the guard stopped the first run: 11 deadbolt records and 3 knobs. */
-  Deadbolts: "Trincos",
-  Deadbolt: "Trinco",
+  Deadbolts: "Travas",
+  Deadbolt: "Trava",
   "Door Knob": "Pomo de porta",
 };
 
@@ -663,12 +686,17 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or outwards, with stops at 0, 88 and 116 in both directions.":
     "Inclui regulagem da velocidade de abertura e de fechamento, tensão de mola totalmente ajustável, a porta gira 116° para dentro ou para fora, com paradas em 0°, 88° e 116° nos dois sentidos.",
   /*
-    Was "Trinco e lingueta quadrada", which swapped the two parts: by this file's own
-    header (and ABNT NBR 11742) the sprung latch is the lingueta and the deadbolt the
-    trinco, so that row told a Brazilian reader the opposite of the English. Gender
-    follows the noun: trinco quadrado, not quadrada.
+    This row has been wrong twice, in opposite directions, which is worth recording.
+
+    It started as "Trinco e lingueta quadrada" — correct on the noun for the latch. On
+    2026-09-24 it was changed to "Lingueta e trinco quadrado" to agree with the header's
+    ABNT claim, and that claim was false (see the header). So a careful session reasoning
+    from a bad authority walked a right row into a wrong one.
+
+    Now: trinco for the latch, trava for the dead bolt. Gender follows the noun —
+    trava quadrada, not quadrado.
   */
-  "Latch and square deadbolt": "Lingueta e trinco quadrado",
+  "Latch and square deadbolt": "Trinco e trava quadrada",
   "Mortise lock body, iron": "Caixa de embutir, ferro",
   "Pair of lever plates, mortise lock body, euro cylinder with keys, spindle, strike plate, fixing screws and fittings":
     "Par de placas com maçaneta, caixa de embutir, cilindro europeu com chaves, quadrado, contra-testa, parafusos e acessórios de fixação",
@@ -692,8 +720,8 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Wall-mount": "Fixação na parede",
   "1–8 hooks available": "De 1 a 8 ganchos",
   "Panic exit devices": "Barras antipânico",
-  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch. */
-  "Passage, no latch bolt": "Passagem livre, sem lingueta",
+  /* 306 PS / 306-S, added 2026-09-24. `trinco` is this file's latch — see the header. */
+  "Passage, no latch bolt": "Passagem livre, sem trinco",
   "A separate lock case, supplied to suit":
     "Caixa de fechadura separada, fornecida conforme a aplicação",
   "Single door": "Porta de uma folha",
@@ -1214,9 +1242,12 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "3M adhesive or screw fixed":
     "Fixação com fita 3M ou parafusos",
   "Three square deadbolts, plus latch":
-    // "mais o trinco" said "plus the deadbolt" where the English says latch. ferrolho is
-    // left alone: the header does not claim that word, and the Bolts label uses it.
-    "Três ferrolhos quadrados, mais a lingueta",
+    /*
+      The original "mais o trinco" was right, and was changed to "mais a lingueta" on the
+      strength of the old header. Restored. ferrolho still stands for the three square
+      throw bolts: that word was never in dispute and the Bolts label uses it.
+    */
+    "Três ferrolhos quadrados, mais o trinco",
   "6068 Mortise Lock Series":
     "Série de fechadura de embutir 6068",
   "100 pieces":
@@ -1591,7 +1622,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Entrance and communication": "Entrada e comunicação",
   "COMMUNICATION LOCK": "FECHADURA DE COMUNICAÇÃO",
   "CLASSROOM LOCK": "FECHADURA DE SALA DE AULA",
-  "EXIT LATCH": "LINGUETA DE SAÍDA",
+  "EXIT LATCH": "Trinco DE SAÍDA",
   "Key Operated": "Acionada por chave",
   "Push to Open": "Empurre para abrir",
   "Double-sided": "Dos dois lados",
@@ -1612,13 +1643,13 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "12mm throw, deadlocking for keyed functions":
     "Curso de 12 mm, com travamento nas funções com chave",
   "13mm, with inside deadlocking button": "13 mm, com botão de travamento interno",
-  "25mm on rim deadbolt versions": "25 mm nas versões com trinco de sobrepor",
+  "25mm on rim deadbolt versions": "25 mm nas versões com trava de sobrepor",
   "25mm, with hardened steel insert to resist sawing":
     "25 mm, com inserto de aço temperado que resiste ao serramento",
   "25mm, zinc die-cast with hardened steel roller insert":
     "25 mm, zamak injetado com pino rolante de aço temperado",
   "Solid steel chassis and latch case, zinc plated":
-    "Chassi e caixa da lingueta em aço maciço, zincados",
+    "Chassi e caixa do trinco em aço maciço, zincados",
   "Solid steel, zinc plated for corrosion resistance":
     "Aço maciço, zincado para resistência à corrosão",
   "Solid steel internal construction, corrosion protected":
@@ -1643,9 +1674,9 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Lábio curvo de 57 mm de série; 70 mm sob pedido",
   "51mm, replaces most existing locksets":
     "51 mm, substitui a maioria das fechaduras existentes",
-  "Brass rolling latch": "Lingueta rolante de latão",
-  "Square latch": "Lingueta quadrada",
-  "Beveled latch structure": "Lingueta chanfrada",
+  "Brass rolling latch": "Trinco rolante de latão",
+  "Square latch": "Trinco quadrado",
+  "Beveled latch structure": "Trinco chanfrado",
   "Euro profile": "Perfil europeu",
   "Euro Profile Mortise Lock": "Fechadura de embutir de perfil europeu",
   "Trim handle · outside lever for panic exit devices":
@@ -1655,10 +1686,10 @@ export const SPEC_VALUES_PT: Record<string, string> = {
 
   /* keying */
   "Can be keyed alike with deadbolts, or master keyed":
-    "Pode ser igualada com os trincos ou integrada num sistema de chave-mestra",
-  "Can be keyed alike to deadbolts": "Pode ser igualada com os trincos",
+    "Pode ser igualada com as travas ou integrada num sistema de chave-mestra",
+  "Can be keyed alike to deadbolts": "Pode ser igualada com as travas",
   "Can be keyed alike to the deadbolt series, or master keyed":
-    "Pode ser igualada com a série de trincos ou integrada num sistema de chave-mestra",
+    "Pode ser igualada com a série de travas ou integrada num sistema de chave-mestra",
   "Can be keyed to pair with an entrance bored lock":
     "Pode ser combinada com uma fechadura de entrada de furo",
   "5-pin tumbler, brass plug, two nickel-plated brass keys":
@@ -1746,9 +1777,9 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Satin nickel, chrome, antique brass, polished brass,all available":
     "Níquel acetinado, cromado, latão antigo, latão polido, todos disponíveis",
   "60mm / 70mm adjustable, latch and deadbolt both":
-    "60 mm / 70 mm ajustável, lingueta e trinco",
+    "60 mm / 70 mm ajustável, trinco e trava",
   "Solid brass/Zinc & brass cylinder": "Latão maciço / cilindro de zamak e latão",
-  "60/70mm adjustable tubular latch": "Lingueta tubular ajustável 60/70 mm",
+  "60/70mm adjustable tubular latch": "Trinco tubular ajustável 60/70 mm",
   "zinc alloy / Solid brass/Zinc & brass cylinder":
     "zamak / latão maciço / cilindro de zamak e latão",
   "Iron, nickel-plated brass, solid brass, brushed nickel":

@@ -1,7 +1,7 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
   "site": "hyde",
-  "totalProducts": 588,
+  "totalProducts": 616,
   "fields": {
     "backset": {
       "title": "Backset",
@@ -51,9 +51,9 @@
         "Applicable Door Thickness",
         "Glass door thickness"
       ],
-      "products": 201,
-      "rows": 201,
-      "distinctValues": 20
+      "products": 215,
+      "rows": 215,
+      "distinctValues": 24
     },
     "handing": {
       "title": "Handing",

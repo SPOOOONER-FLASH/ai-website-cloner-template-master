@@ -151,14 +151,25 @@ export function AuthorProfile({ locale, slug }: { locale: Locale; slug: string }
             <h1 className="mt-16 text-h1 text-ink">{author.name}</h1>
             <p className="mt-24 text-c1 text-ink">{authorRole(author, locale)}</p>
             {credential ? <p className="mt-8 text-c1 text-ink-secondary">{credential}</p> : null}
-            <p className="mt-24 text-c1 text-ink">{text.intro}</p>
+            {/*
+              LinkedIn sits with the photograph, the name, the role and the credential
+              (client 2026-09-28: 「领英加在人头那边吧 履历那儿」) rather than after the
+              paragraph below, which is where it was.
+
+              That grouping is also what it is for. The photograph, the job title, the
+              degree and the LinkedIn profile answer one question — is this a real person
+              at this factory — and the buyer asking it is checking, not reading. Leaving
+              the one verifiable link until after a paragraph of prose put it outside the
+              block being checked.
+            */}
             {author.url ? (
-              <p className="mt-24 text-c2">
+              <p className="mt-8 text-c2">
                 <a href={author.url} rel="me noopener noreferrer" target="_blank" className="short-marker">
                   {text.linkedin}
                 </a>
               </p>
             ) : null}
+            <p className="mt-24 text-c1 text-ink">{text.intro}</p>
           </div>
         </section>
 

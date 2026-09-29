@@ -146,7 +146,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       bodyEs:
         "Cajas, cilindros, muelles, cuadradillos y guarniciones se montan y se prueban funcionando como conjunto. Una cerradura no es la suma de piezas que aprueban por separado: un pestillo y un cerradero ambos dentro de tolerancia pueden agarrotarse, y eso sólo se descubre girando la manija.",
       bodyPt:
-        "Caixas, cilindros, molas, eixos quadrados e guarnições são montados e testados funcionando como conjunto. Uma fechadura não é a soma de peças que passam separadamente: uma lingueta e uma contratesta ambas dentro da tolerância ainda podem emperrar, e isso só se descobre girando a maçaneta.",
+        "Caixas, cilindros, molas, eixos quadrados e guarnições são montados e testados funcionando como conjunto. Uma fechadura não é a soma de peças que passam separadamente: um trinco e uma contratesta ambos dentro da tolerância ainda podem emperrar, e isso só se descobre girando a maçaneta.",
       figure: null,
     },
     {

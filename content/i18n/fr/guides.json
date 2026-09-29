@@ -64,7 +64,7 @@
   },
   "brass-alloys-and-dezincification-2026": {
     "title": "Quincaillerie en laiton 2026 : quel laiton, pourquoi il contient du plomb, et la défaillance qui décide des projets côtiers",
-    "summary": "« Laiton massif » désigne une famille d'alliages aux comportements différents, et la différence qui compte le plus est la résistance de l'alliage à la dézincification. Cette page présente les laitons utilisés en quincaillerie de porte, explique pourquoi la plupart contiennent du plomb et ce que coûtent les alternatives à faible teneur, décrit la dézincification et les cas où le laiton DZR est réellement indispensable, distingue laiton et bronze, et compte ce que publie notre propre catalogue.",
+    "summary": "Au-delà d'environ 37 % de zinc, le laiton devient plus sensible à la dézincification : un cylindre posé sur une porte extérieure, surtout en bord de mer, doit donc être en laiton DZR (CZ132 ou CW602N) ; une porte intérieure sèche n'en a pas besoin. Cette page présente les laitons utilisés en quincaillerie de porte, explique pourquoi la plupart contiennent du plomb et ce que coûtent les alternatives à faible teneur en plomb, décrit la dézincification et les cas où le laiton DZR est réellement nécessaire, distingue le laiton du bronze et fait le compte de ce que publie notre propre catalogue.",
     "seoTitle": "Laiton 2026 : alliages, plomb et dézincification",
     "seoDescription": "Les laitons de la quincaillerie de porte, pourquoi on y ajoute du plomb, la dézincification et le laiton DZR, laiton ou bronze, et quoi prescrire.",
     "body": [
@@ -151,7 +151,7 @@
     ],
     "sourceHash": {
       "title": "a1a9ad3d23f9",
-      "summary": "27d2eb1c5b9e",
+      "summary": "bfaef2c3e67a",
       "seoTitle": "6b4550ca54ee",
       "seoDescription": "d2c2fe2477c0",
       "body": "00b316df6465",
@@ -245,7 +245,7 @@
     "sourceHash": {
       "title": "44cb79616657",
       "summary": "63892f788aae",
-      "seoTitle": "35c004da3cb5",
+      "seoTitle": "d10d38f8a8f3",
       "seoDescription": "092e11d1aec4",
       "body": "57e62f3e9f1a",
       "faq": "fc86e6f3ef20"
@@ -728,7 +728,7 @@
     "sourceHash": {
       "title": "02121f32bf17",
       "summary": "c052dc39cc77",
-      "seoTitle": "34edf915b52d",
+      "seoTitle": "2829afb6472a",
       "seoDescription": "e5a4424a0d26",
       "body": "758851cc7e22",
       "faq": "b42c916771b4"
@@ -884,7 +884,7 @@
     "sourceHash": {
       "title": "0940f1649707",
       "summary": "123e64582159",
-      "seoTitle": "7a2193d4b314",
+      "seoTitle": "cdc77c60bb8f",
       "seoDescription": "10577d7b7cb0",
       "body": "2ffdc192dfcd",
       "faq": "523500ce46eb"
@@ -1184,7 +1184,7 @@
   },
   "door-thickness-to-cylinder-length-2026": {
     "title": "De l'épaisseur de porte à la longueur de cylindre 2026 : le calcul, un tableau de correspondance, et pourquoi on arrondit souvent au-dessus",
-    "summary": "Dimensionner un cylindre européen, c'est une soustraction et un arrondi, et c'est l'arrondi qui pose problème. Cette page donne le calcul, un tableau de correspondance établi sur les neuf longueurs que nous publions réellement, explique pourquoi une porte mince reçoit tout de même un cylindre qui dépasse, et ce qui change quand le coffre de serrure n'est pas centré dans le vantail.",
+    "summary": "Chaque moitié d'un cylindre européen vaut la moitié de l'épaisseur de la porte plus l'épaisseur de la rosace de ce côté, arrondie à l'échelon de 5 mm qui commence à 27,5 mm : une porte de 40 mm avec des rosaces de 4 mm donne 55 mm et se commande en 56 mm. Cette page donne le calcul, un tableau d'épaisseurs de porte établi sur les neuf longueurs que nous publions réellement, explique pourquoi une porte mince reçoit tout de même un cylindre qui dépasse, et montre ce qui change quand le boîtier de serrure n'est pas centré dans le vantail.",
     "seoTitle": "Épaisseur de porte et longueur de cylindre 2026",
     "seoDescription": "Calculer la longueur d'un cylindre européen selon l'épaisseur de porte, tableau sur neuf longueurs publiées, et pourquoi une porte mince le fait dépasser.",
     "body": [
@@ -1264,7 +1264,7 @@
     ],
     "sourceHash": {
       "title": "77e639df99fe",
-      "summary": "13a48570611b",
+      "summary": "407e17d1373d",
       "seoTitle": "4198d0f68dd3",
       "seoDescription": "1f59c1513cd8",
       "body": "32e94f37c71b",
@@ -1796,7 +1796,7 @@
     "sourceHash": {
       "title": "ca19e24bc00b",
       "summary": "4a2cbb549db9",
-      "seoTitle": "5274aab3d4bb",
+      "seoTitle": "75373f19512f",
       "seoDescription": "9a66acd4ffdf",
       "body": "b7aeb9daf389",
       "faq": "08c49558371c"
@@ -1804,7 +1804,7 @@
   },
   "glass-door-thickness-and-cutouts-2026": {
     "title": "Quincaillerie pour portes en verre 2026 : plages d'épaisseur, cotes de découpe, et la seule étape irréversible",
-    "summary": "La quincaillerie pour portes en verre est la seule catégorie où une erreur d'ordre des opérations détruit la porte au lieu de la retarder. Cette page donne les plages d'épaisseur de verre qu'acceptent réellement nos ferrures, explique la cote d'ouverture de serrage et le rayon d'angle d'une découpe, montre pourquoi chaque trou doit être fait avant la trempe, et liste ce qui doit figurer sur le plan d'atelier du verre avant toute commande.",
+    "summary": "Nos ferrures pour verre acceptent un verre de 8 à 14 mm, chaque modèle dans sa propre plage déclarée, et chaque trou et chaque découpe doivent être réalisés avant la trempe, car un verre trempé ne peut plus être percé. Cette page donne les plages d'épaisseur que nos ferrures acceptent réellement, explique la cote de jeu entre verres et le rayon d'angle d'une découpe, montre pourquoi tout perçage doit précéder la trempe et énumère ce qui doit figurer sur le plan d'atelier du verre avant la moindre commande.",
     "seoTitle": "Portes en verre 2026 : épaisseurs, découpes, ordre",
     "seoDescription": "Quincaillerie pour verre : épaisseurs de 8 à 14 mm, ouverture de serrage, rayon d'angle des découpes, et pourquoi tout trou se perce avant la trempe.",
     "body": [
@@ -1873,7 +1873,7 @@
     ],
     "sourceHash": {
       "title": "89f10092ae0a",
-      "summary": "3f0df815c2d3",
+      "summary": "affdc8acfbea",
       "seoTitle": "610f7accfef4",
       "seoDescription": "44eca3d24f18",
       "body": "703147a244fd",
@@ -2043,7 +2043,7 @@
     "sourceHash": {
       "title": "8aa751178204",
       "summary": "bad7f4febe06",
-      "seoTitle": "66ef7aef8d33",
+      "seoTitle": "cdc33bc30f28",
       "seoDescription": "338ff45b3007",
       "body": "c4fcf6c1d93b",
       "faq": "796cb2d34c7f"
@@ -2271,7 +2271,7 @@
     "sourceHash": {
       "title": "9cbe2e121fda",
       "summary": "7437caad0423",
-      "seoTitle": "a8e9c7c43f7a",
+      "seoTitle": "424c5093350b",
       "seoDescription": "ad48474bfddb",
       "body": "591c40b047a0",
       "faq": "1295a44ddca5"
@@ -2447,7 +2447,7 @@
     "sourceHash": {
       "title": "d8f88a5a81a1",
       "summary": "35bef0575900",
-      "seoTitle": "d572f0fa7b53",
+      "seoTitle": "b74921e4b0d7",
       "seoDescription": "8c89077ace32",
       "body": "83c080c608e6",
       "faq": "323304228a7e"
@@ -2594,7 +2594,7 @@
   },
   "powder-coating-and-ral-2026": {
     "title": "Thermolaquage et RAL 2026 : pourquoi un numéro de teinte ne spécifie pas une finition, ce que décide le prétraitement, et quoi écrire sur la commande",
-    "summary": "Un numéro RAL désigne une teinte et rien d'autre : ni brillance, ni texture, ni procédé, ni durabilité. Cette page explique ce que RAL spécifie et ce qu'il laisse ouvert, pourquoi le prétraitement décide de la tenue d'un revêtement, où le thermolaquage échoue sur la géométrie de la quincaillerie, quels essais valent d'être cités, et les quatre lignes qui rendent une finition commandable.",
+    "summary": "Un numéro RAL ne fixe que la teinte : la brillance se spécifie à part (ISO 2813), le film de poudre architectural fait généralement 60 à 80 µm, et les filetages doivent être masqués, car un filetage M5 revêtu peut ne plus accepter une vis M5. Cette page explique ce que le RAL spécifie et ce qu'il laisse ouvert, pourquoi le prétraitement décide de la tenue du revêtement, où le thermolaquage échoue sur la géométrie de la quincaillerie, quels essais valent d'être cités et les quatre lignes qui rendent une finition commandable.",
     "seoTitle": "Thermolaquage et RAL 2026 : teinte, brillance",
     "seoDescription": "Ce que spécifie ou non un numéro RAL en quincaillerie, pourquoi le prétraitement décide de la tenue, où la poudre échoue, et quoi écrire à la commande.",
     "body": [
@@ -2670,7 +2670,7 @@
     ],
     "sourceHash": {
       "title": "c996ad667af8",
-      "summary": "cfc30de95c69",
+      "summary": "b021e0487733",
       "seoTitle": "ac9904bc8b64",
       "seoDescription": "c20fa316c032",
       "body": "2c29dac14fdd",
@@ -3443,7 +3443,7 @@
   },
   "zinc-alloy-die-cast-hardware-2026": {
     "title": "Quincaillerie en alliage de zinc 2026 : ce qu'est vraiment le zamak, où il a sa place, et les quatre façons dont une mauvaise pièce moulée cède",
-    "summary": "L'alliage de zinc est le deuxième matériau le plus courant de notre catalogue, et celui dont les acheteurs se méfient le plus, généralement pour des raisons qui décrivent de mauvaises pièces moulées plutôt que le matériau. Cette page explique ce qu'est le zamak, ce que le moulage sous pression fait vraiment bien, les quatre façons distinctes dont une mauvaise pièce en zinc cède, où le zinc ne doit jamais être employé, et quoi demander à une usine pour que la réponse ait un sens.",
+    "summary": "L'alliage de zinc (zamak, surtout Zamak 3 ou Zamak 5, environ 4 % d'aluminium) représente 28 % des lignes matière de notre catalogue, juste derrière l'inox à 46 %, et les acheteurs s'en méfient surtout pour des raisons qui décrivent de mauvaises pièces moulées plutôt que le matériau. Cette page explique ce qu'est le zamak, ce que le moulage sous pression fait vraiment bien, les quatre façons distinctes dont une pièce en zinc de mauvaise qualité casse, où le zinc ne doit jamais être employé, et quoi demander à une usine pour que la réponse ait un sens.",
     "seoTitle": "Quincaillerie en zamak 2026 : où il a sa place",
     "seoDescription": "Ce qu'est le zamak, ce que fait bien le moulage sous pression, les quatre défaillances d'une mauvaise pièce, où éviter le zinc, et quoi demander.",
     "body": [
@@ -3521,7 +3521,7 @@
     ],
     "sourceHash": {
       "title": "506c51d91896",
-      "summary": "94b59c7aab60",
+      "summary": "1edee3ddd5c4",
       "seoTitle": "61fa12ef5973",
       "seoDescription": "3291d29baf1a",
       "body": "83d2ba973cd2",

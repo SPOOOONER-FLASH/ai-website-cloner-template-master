@@ -85,7 +85,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     consequenceEs:
       "Es el número equivocado más habitual en un pedido de herrajes. Una puerta ya taladrada a 60 mm no admite una cerradura de 70: la manija queda fuera de sitio y el pestillo no llega al cerradero. El metal no se ajusta en obra, así que un backset equivocado es un contenedor que se almacena en vez de instalarse.",
     consequencePt:
-      "É o número errado mais comum num pedido de ferragens. Uma porta já furada para 60 mm não aceita uma fechadura de 70: a maçaneta fica fora de lugar e a lingueta não alcança a contratesta. O metal não se ajusta em obra, então um backset errado é um contêiner que acaba estocado em vez de instalado.",
+      "É o número errado mais comum num pedido de ferragens. Uma porta já furada para 60 mm não aceita uma fechadura de 70: a maçaneta fica fora de lugar e o trinco não alcança a contratesta. O metal não se ajusta em obra, então um backset errado é um contêiner que acaba estocado em vez de instalado.",
     article: "mortise-lock-backset-and-centre-distance-guide",
   },
   {
@@ -285,7 +285,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionEs:
       "El cuerpo mecánico de una cerradura cilíndrica: la parte que va dentro del taladro pasante y convierte el giro de la manija en movimiento del pestillo. La guarnición se atornilla a él por ambas caras.",
     definitionPt:
-      "O corpo mecânico de uma fechadura cilíndrica — a parte que fica dentro do furo passante e transforma o giro da maçaneta em movimento da lingueta. As guarnições são parafusadas nele pelas duas faces.",
+      "O corpo mecânico de uma fechadura cilíndrica — a parte que fica dentro do furo passante e transforma o giro da maçaneta em movimento do trinco. As guarnições são parafusadas nele pelas duas faces.",
     consequence:
       "Grade is a property of the chassis, not of the lever you can see. Two locks with identical handles and different chassis are different products, and it is the chassis that the cycle-life number belongs to.",
     consequenceEs:
@@ -297,7 +297,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     id: "latch",
     term: "Latch",
     termEs: "Pestillo",
-    termPt: "Lingueta",
+    termPt: "Trinco",
     group: "mechanism",
     specLabels: ["Latch", "Latch extension"],
     definition:
@@ -305,13 +305,13 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionEs:
       "La pieza con resorte y una cara inclinada que mantiene cerrada la puerta y se recoge al girar la manija. No es un cerrojo: el pestillo se puede empujar hacia dentro, el cerrojo no.",
     definitionPt:
-      "A lingueta com mola e uma face chanfrada que mantém fechada uma porta encostada e recolhe quando a maçaneta gira. Não é uma trava: uma lingueta pode ser empurrada para dentro, uma trava não.",
+      "O trinco, com mola e uma face chanfrada, mantém fechada uma porta encostada e recolhe quando a maçaneta gira. Não é uma trava: um trinco pode ser empurrado para dentro, uma trava não.",
     consequence:
       "A fire door has to latch, not merely close. If the latch does not engage the strike the leaf is held by nothing, and a door held by nothing is not a fire door however it is rated.",
     consequenceEs:
       "Una puerta cortafuegos tiene que enclavar, no sólo cerrar. Si el pestillo no entra en el cerradero la hoja no está sujeta por nada, y una hoja sujeta por nada no es una puerta cortafuegos por mucha clasificación que tenga.",
     consequencePt:
-      "Uma porta corta-fogo precisa travar, não apenas encostar. Se a lingueta não entra na contratesta, a folha não está presa por nada, e uma folha presa por nada não é uma porta corta-fogo por mais classificada que seja.",
+      "Uma porta corta-fogo precisa travar, não apenas encostar. Se o trinco não entra na contratesta, a folha não está presa por nada, e uma folha presa por nada não é uma porta corta-fogo por mais classificada que seja.",
     article: "door-coordinator-double-fire-door",
   },
   {
@@ -326,7 +326,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionEs:
       "La placa embutida en el marco en la que entra el pestillo o el cerrojo. Su labio guía al pestillo mientras la puerta se cierra.",
     definitionPt:
-      "A chapa embutida no batente em que a lingueta ou a trava entra. O lábio dela guia a lingueta enquanto a porta fecha.",
+      "A chapa embutida no batente em que o trinco ou a trava entra. O lábio dela guia o trinco enquanto a porta fecha.",
     consequence:
       "A strike fitted a few millimeters out is the usual reason a new door does not latch, and it is the cheapest thing on the opening to correct. The material matters on an entrance: a thin strike is what gives way first under force, not the lock.",
     consequenceEs:
@@ -477,7 +477,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionEs:
       "Lo que hace la cerradura, no su aspecto: entrada (con llave por fuera), privacidad (botón interior y desbloqueo de emergencia exterior), paso (solo pestillo, sin bloqueo), aula, comunicación. La función son las dos últimas letras de nuestro código de pedido.",
     definitionPt:
-      "O que a fechadura faz, e não com o que ela se parece: entrada (com chave por fora), banheiro (botão de giro por dentro, destrave de emergência por fora), passagem (só lingueta, sem travamento), sala de aula, comunicação. A função são as duas últimas letras do nosso código de pedido.",
+      "O que a fechadura faz, e não com o que ela se parece: entrada (com chave por fora), banheiro (botão de giro por dentro, destrave de emergência por fora), passagem (só trinco, sem travamento), sala de aula, comunicação. A função são as duas últimas letras do nosso código de pedido.",
     consequence:
       "Two locks that are visually identical can be a bathroom lock and an entrance lock. Specify a privacy set on a store room and it cannot be keyed; specify an entrance set on a bathroom and there is no way in when someone faints behind the door.",
     consequenceEs:

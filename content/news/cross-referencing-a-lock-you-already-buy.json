@@ -3,6 +3,7 @@
   "title": "Cross-Referencing a Lock You Already Buy",
   "kind": "insight",
   "publishedAt": "2026-09-08",
+  "updatedAt": "2026-09-29",
   "summary": "A lot of the searches that reach us are somebody else's model number, another factory's rim lock, another brand's hinge, a part code off an old invoice. They are all the same question: what do I order to get this again. Six dimensions decide the answer, and the model number is not one of them.",
   "author": {
     "name": "Johnson Liu",
@@ -140,7 +141,7 @@
       },
       {
         "question": "Como medir uma fechadura de embutir para substituição?",
-        "answer": "Com a fechadura retirada, meça a distância ao eixo da face externa da testa até o centro do quadrado, a distância entre centros do centro do quadrado ao centro do cilindro, o comprimento e a largura da testa (e se as pontas são retas ou arredondadas), a altura e a profundidade da caixa, o quadrado entre faces e a espessura da porta na altura da fechadura. Anote para que lado fica o chanfro da lingueta e se há ferrolho. A nossa LC07 85×45mm mostra um conjunto completo: distância entre centros de 85 mm, distância ao eixo de 45 mm, testa de 240 × 23 mm e caixa de 173 × 72 mm."
+        "answer": "Com a fechadura retirada, meça a distância ao eixo da face externa da testa até o centro do quadrado, a distância entre centros do centro do quadrado ao centro do cilindro, o comprimento e a largura da testa (e se as pontas são retas ou arredondadas), a altura e a profundidade da caixa, o quadrado entre faces e a espessura da porta na altura da fechadura. Anote para que lado fica o chanfro do trinco e se há ferrolho. A nossa LC07 85×45mm mostra um conjunto completo: distância entre centros de 85 mm, distância ao eixo de 45 mm, testa de 240 × 23 mm e caixa de 173 × 72 mm."
       },
       {
         "question": "Quais diferenças tornam uma fechadura de substituição inutilizável?",
@@ -186,12 +187,12 @@
     "O caminho prático é curto. Meça a peça que você tem, ou fotografe-a ao lado de uma régua com a testa visível. Envie esses números, a espessura da porta, e se a porta é mão esquerda ou direita. A nossa engenharia volta com o modelo que corresponde, ou, e esta é a parte que vale dizer, com uma resposta direta de que não fabricamos um. Uma quase-correspondência recomendada como equivalente é como acontece um contêiner de metal inutilizável, e preferimos perder a linha a enviá-lo.",
     "Mais uma coisa, para quem está substituindo uma peça num prédio existente em vez de especificando obra nova: confira o contra-testa e o receptor antes de pedir a fechadura. Numa reforma o marco é a restrição, não a porta, e o item que mais frequentemente faz uma substituição falhar não é o corpo da fechadura, é o recorte do contra-testa, que foi feito para a peça antiga e não será refeito.",
     "## Como é um conjunto completo de números",
-    "Ajuda ver os seis números de uma fechadura de embutir escritos para uma peça real, porque mostra quão pouco é necessário e quão exato precisa ser. A nossa LC07 85×45mm os publica assim: distância entre centros 85 mm (3-3/8\"), distância ao eixo 45 mm (1-3/4\"), testa de 240 × 23 mm (9-7/16\" × 7/8\"), altura da caixa 173 mm (6-13/16\"), profundidade da caixa 72 mm (2-13/16\"), com curso da lingueta de 26 mm (1\") e projeção do ferrolho de 18,5 mm (3/4\"). Meça a sua fechadura atual nesse nível de detalhe e uma correspondência (ou um claro \"não fabricamos\") está a uma única resposta.",
+    "Ajuda ver os seis números de uma fechadura de embutir escritos para uma peça real, porque mostra quão pouco é necessário e quão exato precisa ser. A nossa LC07 85×45mm os publica assim: distância entre centros 85 mm (3-3/8\"), distância ao eixo 45 mm (1-3/4\"), testa de 240 × 23 mm (9-7/16\" × 7/8\"), altura da caixa 173 mm (6-13/16\"), profundidade da caixa 72 mm (2-13/16\"), com curso do trinco de 26 mm (1\") e projeção do ferrolho de 18,5 mm (3/4\"). Meça a sua fechadura atual nesse nível de detalhe e uma correspondência (ou um claro \"não fabricamos\") está a uma única resposta.",
     "Repare que o nome do modelo traz dois desses números (85 e 45) e que isso é comum em todo o setor. É uma conveniência, não uma garantia: uma caixa chamada 85 × 45 por uma fábrica ainda pode diferir da de outra no comprimento da testa ou na profundidade da caixa, e é exatamente por isso que os outros quatro números importam.",
     "## Medindo uma fechadura de embutir já retirada",
     "Se a fechadura está fora da porta, as medidas são rápidas e uma régua de aço basta.",
     "Distância ao eixo: da face externa da testa até o centro do furo do quadrado. Meça até a face da testa, não até a caixa atrás dela: a diferença é a espessura da testa, e ela basta para deixar uma maçaneta descentralizada na porta. Distância entre centros: do centro do furo do quadrado ao centro do furo do cilindro ou do buraco da chave. Testa: comprimento e largura totais, e se as pontas são retas ou arredondadas, porque uma testa arredondada vai num rebaixo fresado que uma reta não vai preencher. Caixa: altura e profundidade, medidas no corpo da caixa. Quadrado: entre as faces do furo quadrado. Espessura da porta: na porta, na altura da fechadura.",
-    "Depois anote as duas coisas que não são dimensões mas ainda decidem a correspondência: o sentido da lingueta (para que lado fica o chanfro) e se a fechadura tem ferrolho além da lingueta, e quanto ele avança.",
+    "Depois anote as duas coisas que não são dimensões mas ainda decidem a correspondência: o sentido do trinco (para que lado fica o chanfro) e se a fechadura tem ferrolho além do trinco, e quanto ele avança.",
     "## Medindo uma fechadura que ainda está na porta",
     "Muitas vezes a fechadura não pode sair até a substituta chegar. Nesse caso, o comprimento e a largura da testa, a distância ao eixo (da borda da porta ao centro do quadrado) e a distância entre centros (do quadrado ao cilindro, medida na face da porta) podem ser tiradas com a fechadura no lugar, e são as quatro que mais importam. A altura e a profundidade da caixa em geral podem ser deduzidas pela testa e pela porta, mas diga que foram deduzidas e não medidas, para que o engenheiro que responde saiba quais números são certos.",
     "## Fotos que realmente ajudam",
