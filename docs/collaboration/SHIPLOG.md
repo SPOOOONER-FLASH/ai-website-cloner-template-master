@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 607 次提交
+最近 30 天 · 共 606 次提交
 
 ## 2026-09-28
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 21:52 | 中立 | Record BAU/AR4 push transport failure and verified SSH fallback | `48ad6ba369e` |
 | 21:41 | HYDE | 合并本地提交（ship 旁路合并） | `e6e4b160dcf` |
 | 21:22 | 中立 | Merge verified HYDE desktop and inquiry feedback changes | `f3d73b76c34` |
 | 20:06 | 中立 | NOW.md：待发布行加上 /sitemap-index.xml | `d4b378ed403` |
@@ -722,11 +723,4 @@
 | 02:27 | 发布 HYDE | 发布 HYDE 产品图与目录代码校正 | `ca8f976c4ba` |
 | 02:22 | HYDE · 发布 HYDE | 按纸质目录第 40-42 页校正代码表 | `cfa9e30f975` |
 | 02:12 | HYDE | 统一产品图片 HYDE 品牌标识 | `14df6b92aeb` |
-
-## 2026-08-29
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 21:52 | 发布 HYDE | 发布首页与新闻独立编辑影像 | `2460ad96840` |
-| 21:50 | HYDE | 更新首页与新闻独立编辑影像 | `706e95be26b` |
 
