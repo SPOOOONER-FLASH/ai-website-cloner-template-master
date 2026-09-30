@@ -220,3 +220,11 @@
 - `7bc7c396229` docs: verify HYDE desktop release and hand off title range bug
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/30 02:36:21 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `704a5dae934`（源码 bb1cb20c73b）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/9/30 03:08:34 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `6e8af2fe42e`（源码 6ed3b7a0684）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。

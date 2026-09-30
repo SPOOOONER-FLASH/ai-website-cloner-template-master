@@ -6,12 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 591 次提交
+最近 30 天 · 共 594 次提交
 
 ## 2026-09-30
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:30 | 中立 | goal #120 #121：r20 = 33d91e7090d 已上线 | `8413d905c51` |
+| 03:27 | 中立 | 发布（HYDE（cantonlock.com））：构建 6ed3b7a0684 | `33d91e7090d` |
+| 02:50 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 6ed3b7a0684 | `6e8af2fe42e` |
+| 02:33 | HYDE | Merge pull request #18 from SPOOOONER-FLASH/claude/lighthouse-performance-jji382 | `6ed3b7a0684` |
 | 02:04 | 中立 | Header: centre the wordmark between nav and controls at xl | `1544e9c2975` |
 | 02:04 | 中立 | Product titles keep whole fit ranges (task 2026-09-30-title-range-facts) | `e1d9ae797a1` |
 | 01:13 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `d2231e2fa01` |
@@ -712,5 +716,4 @@
 | 05:55 | 中立 | 搜索面板加默认建议：6 个类目 + 5 个型号，英西双语 | `f0dfedb6bc7` |
 | 05:47 | HYDE | 移动端有导航了：顶部 rail + 抽屉按购买优先级重排 | `a6ea93b86c2` |
 | 05:41 | 中立 | 设计图片语义、逐图品牌与 Footer 收尾 | `ec883a428d1` |
-| 02:34 | 中立 | 记住产品列表返回位置 | `148148129b6` |
 
