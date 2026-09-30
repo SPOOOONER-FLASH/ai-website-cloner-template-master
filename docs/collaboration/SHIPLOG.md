@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 595 次提交
+最近 30 天 · 共 591 次提交
 
 ## 2026-09-30
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 02:04 | 中立 | Header: centre the wordmark between nav and controls at xl | `1544e9c2975` |
+| 02:04 | 中立 | Product titles keep whole fit ranges (task 2026-09-30-title-range-facts) | `e1d9ae797a1` |
 | 01:13 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `d2231e2fa01` |
 | 01:06 | 中立 | docs: verify HYDE desktop release and hand off title range bug | `7bc7c396229` |
 
@@ -711,10 +713,4 @@
 | 05:47 | HYDE | 移动端有导航了：顶部 rail + 抽屉按购买优先级重排 | `a6ea93b86c2` |
 | 05:41 | 中立 | 设计图片语义、逐图品牌与 Footer 收尾 | `ec883a428d1` |
 | 02:34 | 中立 | 记住产品列表返回位置 | `148148129b6` |
-| 01:43 | 中立 | 共享工作树纪律：脏树不是阻塞信号；写下来才算数 | `f9da2c3df15` |
-| 01:42 | 中立 | 后缀码统一口径：MB 确认为 A 级；发现 28 个 Finish 行自相矛盾 | `cece2b0842b` |
-| 01:40 | 中立 | 交接 Codex 停工点与未完成任务 | `843918e0915` |
-| 01:37 | 中立 | 图纸筛选判据解决：speckle；再读 8 张图纸写入 8 个产品 | `4504b0d6860` |
-| 01:26 | 中立 | 西语规格表英文残留清零：274 行 → 0 | `34664b516fb` |
-| 01:21 | 中立 | 修：图纸任务书指向了 gitignore 的 tmp/，别的 agent 永远收不到 | `fd87680c219` |
 
