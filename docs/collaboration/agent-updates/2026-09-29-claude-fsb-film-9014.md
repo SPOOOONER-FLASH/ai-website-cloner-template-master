@@ -56,3 +56,22 @@
 - 甲方：十支里只有拉手能用（其余缺细节）。结论写进 ONE TAKE README：只给尺寸图能定义每个可见面的产品做特写。
 - FSB 1138 复刻页 / 产品页拆解 + 9014 专题页建议：`docs/design-references/2026-09-30-fsb-page-study/README.md`。fsbna.com 及其图床被云端网络策略拦截，正文经抓取工具取回，图片未取到。
 - 待甲方：是否做 9014 专题页；工厂补每支主推执手 3 张微距实拍。
+
+## 追加（09-30 上午）：9014 专题页草稿 `/stories/9014/`
+
+甲方在决策卡上选了「做草稿」。按 FSB 1138 页的区块顺序做了英文草稿，**noindex、不进 sitemap、不进菜单**
+（`canton-withheld: draft-awaiting-owner-review`；`internal-link-placement.test.ts` 的 EXEMPT 里写明原因），
+上线前要删这两处并放进抽屉和页脚。
+
+- 文件：`src/app/(en)/stories/9014/page.tsx`、`src/components/site/HandleStory.tsx`、
+  `src/components/site/StoryFilm.tsx`（全页唯一会动的元素：静音循环、可暂停、减少动态/省流量时不自动播放）、
+  `public/videos/stories/9014-one-take.mp4`（ONE TAKE 9014 压成 1 MB）、`public/images/stories/9014/`
+  （海报 + 两张 2560 渲染细节帧，由新脚本 `scripts/blender/one-take-still.py` 生成）。
+- 只用英文、放在任何镜像前缀之外，所以不需要另外九个语种的路由，hreflang 也不会指向 404。
+- 数字全部来自 `content/products/9014-*.json`：135 / 60 / Ø19 / Ø53×9 / 8 / 35–50。「方轴」没写，记录里只有 8mm。
+- 细节区：渲染帧的特写抽象到看不出是什么（09-30 试过 bar 那一帧），只保留斜接拐角和颈部接面座两张，并在页面上注明是按图纸渲染。
+  「看不见的部分」用了一张真实工厂照（SSBK -3，面座内部可见）。
+- **给 Codex**：「Available sets」两张主图不统一（SSBK 主图偏小、偏右）。按「清理真实照片」规则重新出一版同光同比例的两张，页面不用改代码。
+- **给甲方/工厂**：每支主推执手 3 张真样品微距照（斜接拐角、面座边、拉丝方向）到了就替换两张渲染帧。
+- 注意：playwright 自带的 Chromium 不含 H.264，截图时视频显示为海报，这不是页面问题；真实浏览器正常播放。
+- `npm run check` 全绿（本地云端构建）。构建改动的 `out/`、`public/images/door-prep/*.svg` 等不是本次提交内容，已还原。

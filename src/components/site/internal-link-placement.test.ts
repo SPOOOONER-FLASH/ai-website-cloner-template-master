@@ -32,6 +32,7 @@ const EXEMPT: Record<string, string> = {
   "/video": "one watch page per product video, linked from that product page",
   "/privacy": "legal page, linked from every footer and under every form, not a drawer section",
   "/sitemap-index.xml": "XML for search engines (lists the ten sitemaps), not a page a reader visits",
+  "/stories/9014": "draft, noindex and out of the sitemap until the owner approves it (2026-09-30); placed in the drawer and footer on release",
 };
 
 /** The English sections: each top-level folder, or its first nested page when it has no index. */
