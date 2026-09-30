@@ -37,9 +37,11 @@ const DETAILS = [
   },
 ] as const;
 
+/* The set plates are the factory's own photographs of each set, cut out onto white at one
+   scale and horizon (provenance in the .json beside each file); nothing in them is redrawn. */
 const VARIANTS = [
-  { slug: "9014-sset-stainless-steel-handle", name: "Entrance set, keyed outside", finish: "Satin stainless steel, US32D" },
-  { slug: "9014-ssbk-stainless-steel-handle", name: "Privacy set, turn button inside", finish: "Satin stainless steel, US32D" },
+  { slug: "9014-sset-stainless-steel-handle", name: "Entrance set, keyed outside", finish: "Satin stainless steel, US32D", image: "/images/stories/9014/set-sset.webp" },
+  { slug: "9014-ssbk-stainless-steel-handle", name: "Privacy set, turn button inside", finish: "Satin stainless steel, US32D", image: "/images/stories/9014/set-ssbk.webp" },
 ] as const;
 
 const FIGURES = [
@@ -119,8 +121,8 @@ export function HandleStory() {
             <figure className="mt-32 max-w-[32rem]">
               {/* eslint-disable-next-line @next/next/no-img-element -- static export, pre-sized webp */}
               <img
-                src="/images/products-hyde/9014-ssbk-stainless-steel-handle-3.webp"
-                alt="A 9014 privacy set photographed at the factory, with the inside of the rose showing"
+                src="/images/products-hyde/9014-ssbk-stainless-steel-handle-2.webp"
+                alt="A 9014 set as it ships, photographed at the factory: the lever with the inside of its rose showing, the knob, cylinder escutcheons and fixing screws"
                 width={1000}
                 height={1000}
                 loading="lazy"
@@ -128,7 +130,7 @@ export function HandleStory() {
                 className="block h-auto w-full bg-surface-alt"
               />
               <figcaption className="mt-12 text-c2 text-ink-secondary">
-                A 9014 set photographed at the factory, with the inside of the rose showing.
+                A 9014 set as it ships, photographed at the factory, with the inside of the rose showing.
               </figcaption>
             </figure>
           </div>
@@ -164,7 +166,7 @@ export function HandleStory() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element -- static export, pre-sized webp */}
                 <img
-                  src={product.heroImage.src}
+                  src={variant.image}
                   alt={`${product.model} — ${variant.name.toLowerCase()}`}
                   width={1000}
                   height={1000}
