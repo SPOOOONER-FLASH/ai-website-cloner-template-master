@@ -126,8 +126,16 @@ export function Analytics() {
         </>
       ) : null}
 
+      {/*
+        Clarity moved from `afterInteractive` to `lazyOnload` on 2026-09-30. PageSpeed's
+        desktop run measured 1,340 ms Total Blocking Time and 18 long tasks on a homepage
+        whose own JavaScript blocks for 0–10 ms in the same test without third parties: the
+        blocking is the tag managers and the session recorder, and Clarity's DOM walk was
+        the one still scheduled inside the measured window. After `load` it records the same
+        sessions a few hundred milliseconds later. Not removed — the client reads it.
+      */}
       {clarityId ? (
-        <Script id="clarity-init" strategy="afterInteractive">
+        <Script id="clarity-init" strategy="lazyOnload">
           {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${clarityId}");`}
         </Script>
       ) : null}

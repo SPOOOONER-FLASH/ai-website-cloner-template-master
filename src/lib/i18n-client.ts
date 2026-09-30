@@ -1,6 +1,5 @@
 import type { Locale, OverlayLocale } from "../data/locales.ts";
 import { makeDict, makeSpecLabels, makeTx } from "./i18n-core.ts";
-import { localiseValuesWith } from "./localise-values.ts";
 
 /**
  * The i18n surface a "use client" component may import.
@@ -24,6 +23,14 @@ import { localiseValuesWith } from "./localise-values.ts";
  * on the server at import, in the browser when the page's client chunks load — so SSR and
  * hydration see the same dictionary. A sentence missing from the subset renders in English
  * on both sides; scripts/audit-locale-pages.mjs reports it as an English leftover.
+ *
+ * THIS MODULE IMPORTS NO GLOSSARY. Until 2026-09-30 it pulled src/lib/localise-values.ts and,
+ * through i18n-core.ts, SPEC_LABELS_ES / _PT — and with them SPEC_VALUES_ES / _PT, FINISH_
+ * and MATERIAL_NAMES — into the shared client chunk of every page: 117 KB (33 KB gzipped) of
+ * Spanish and Portuguese tables on an English homepage that reads none of them. Product
+ * values on a card now come from src/lib/i18n-client-values.ts, and the Spanish and
+ * Portuguese tables are registered by their own layouts (src/data/i18n-client-values-es.tsx,
+ * -pt.tsx) exactly as the overlay bundles are, so each language downloads only its own.
  */
 export interface ClientBundle {
   ui: Record<string, string>;
@@ -38,16 +45,24 @@ export function registerClientBundle(locale: OverlayLocale, data: ClientBundle):
   bundles[locale] = data;
 }
 
+/** Spec-label tables for the two record-level locales, registered by their layouts. */
+const recordLocaleSpecLabels: Partial<Record<"es" | "pt", Record<string, string>>> = {};
+
+/** Called once by src/data/i18n-client-values-es.tsx / -pt.tsx. Idempotent. */
+export function registerRecordLocaleSpecLabels(locale: "es" | "pt", labels: Record<string, string>): void {
+  recordLocaleSpecLabels[locale] = labels;
+}
+
 const uiOf = (locale: OverlayLocale) => bundles[locale]?.ui ?? {};
 
 export const tx = makeTx(uiOf);
 export const dict = makeDict(uiOf);
-export const specLabels = makeSpecLabels((locale: OverlayLocale) => bundles[locale]?.specLabels ?? {});
+export const specLabels = makeSpecLabels((locale) =>
+  locale === "es" || locale === "pt" ? (recordLocaleSpecLabels[locale] ?? {}) : (bundles[locale]?.specLabels ?? {}),
+);
+/** The overlay locale's material / finish values, for src/lib/i18n-client-values.ts. */
+export const clientBundleValues = (locale: OverlayLocale): Record<string, string> => bundles[locale]?.values ?? {};
 /** A spec label in the reader's language, or the English label. */
 export const specLabel = (label: string, locale: Locale): string => specLabels(locale)[label] ?? label;
 export { t, fill, isEnglishFallback, type Overlayed } from "./i18n-core.ts";
 export { LOCALE_TAG, OG_LOCALE, LANGUAGE_LABELS, LOCALE_DIR, type LocaleDict } from "./i18n-core.ts";
-
-/** Material / finish values on a card, from the subset (materials, finishes, the spec values products use as `material`). */
-export const localiseProductValues = (values: string[], locale: Locale): string[] =>
-  localiseValuesWith(values, locale, (code) => [bundles[code]?.values ?? {}]);

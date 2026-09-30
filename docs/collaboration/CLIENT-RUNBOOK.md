@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-28 · 更新人：Claude · 待办：Bing 重新检查；公司名、LinkedIn 公司主页、AI 可见度摸底、GSC 未收录导出四件；AI 来源追踪三步。RSS 十条已上线验证完毕，无需动作**
+**最后更新：2026-09-30 · 更新人：Claude · 待办：静态资源缓存头（一条命令，见第一节）；Bing 重新检查；公司名、LinkedIn 公司主页、AI 可见度摸底、GSC 未收录导出四件；AI 来源追踪三步。RSS 十条已上线验证完毕，无需动作**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -14,6 +14,46 @@
 >
 > 从今天起的规矩：**你要动手的事，永远只在这份文件的第一屏，带日期**。
 > 做完一条我就把它移走。你在这里读到一条已经做完的事，是我的错，告诉我。
+
+---
+
+## 现在要做的（2026-09-30）：给静态资源加缓存头 —— 服务器上一条命令，2 分钟
+
+你 09-29 发我的 PageSpeed 报告里，「Use efficient cache lifetimes」记了 171 KB（桌面）/ 130 KB
+（手机）。原因不在网页代码：宝塔的 nginx 没给 JS、图片、字体发 `Cache-Control`，
+Cloudflare 就补了个 4 小时。JS 文件名都带哈希，可以让浏览器存一年。
+
+**我这边的云端机器连不上 cantonlock.com（被代理拦了），所以线上现状我没能亲自 curl。第 1 步先看一眼再动手。**
+
+### 第 1 步 · 看现状（不改任何东西）
+
+服务器终端里粘贴：
+
+```bash
+curl -sI https://cantonlock.com/_next/static/chunks/turbopack-0r7jr9j3wpvhb.js | grep -i cache-control
+```
+
+- 看到 `max-age=31536000, immutable` → **已经装好了，这一节不用做**，告诉我一声。
+- 看到 `max-age=14400` 或什么都没打出来 → 做第 2 步。
+- 文件名 404 了也没关系（发布后哈希会变），换首页任何一个 `/_next/static/chunks/….js` 都行。
+
+### 第 2 步 · 装（一条命令）
+
+```bash
+cd /www/wwwroot/cantonlock.com && git pull && \
+cp deploy/nginx/static-cache.conf /www/server/panel/vhost/nginx/extension/cantonlock.com/20-static-cache.conf && \
+nginx -t && nginx -s reload && echo OK
+```
+
+- 最后一行打出 `OK` 就成了。
+- 打出 `nginx: [emerg] …` 而没有 `OK`：**站没坏**（`nginx -t` 失败时不会 reload），把整段输出截图发我，
+  然后 `rm /www/server/panel/vhost/nginx/extension/cantonlock.com/20-static-cache.conf` 把文件删掉即可。
+- `git pull` 那里如果目录不对，站点根目录以宝塔「网站 → 根目录」为准。
+
+### 第 3 步 · 验证
+
+再跑一次第 1 步的 curl，应看到 `cache-control: public, max-age=31536000, immutable`。
+然后 **purge** 一次 Cloudflare（旧的 4 小时头还在边缘缓存里）。
 
 ---
 

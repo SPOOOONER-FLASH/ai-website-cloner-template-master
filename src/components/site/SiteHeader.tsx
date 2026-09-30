@@ -290,7 +290,8 @@ export function SiteHeader({
             </div>
 
             <div className={cn("col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12", navigationStyles.controls)}>
-              <Link href={homeHref} className="flex min-w-0 flex-shrink-0 items-center text-ink">
+              {/* prefetch={false} on every header link: see HeaderLink in HeaderIslands.tsx (2026-09-30). */}
+              <Link href={homeHref} prefetch={false} className="flex min-w-0 flex-shrink-0 items-center text-ink">
                 <Wordmark className="pe-8" />
               </Link>
 
@@ -416,6 +417,7 @@ export function SiteHeader({
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
+                  prefetch={false}
                   className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
@@ -424,6 +426,7 @@ export function SiteHeader({
                     the Finder rather than a sixth rail item — fr/de rows already overflow. */}
                 <Link
                   href={localisedHref("/configurator/studio", locale)}
+                  prefetch={false}
                   className="short-marker mt-12 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Configurator Studio", { es: "Estudio de configuración", pt: "Estúdio de configuração" })}
@@ -466,6 +469,7 @@ export function SiteHeader({
                                   shipped. Until then it kept the filter, because a link
                                   to a page that does not exist is worse than a weak one.
                                 */
+                                prefetch={false}
                                 href={
                                   locale === "en"
                                     ? `/collections/${category.slug}-${child.slug}/`
