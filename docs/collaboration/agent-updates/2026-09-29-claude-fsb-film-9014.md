@@ -99,3 +99,19 @@
 Codex 交回 33 张灰场图，用的是已作废的 /products 任务单（那份文件被 revert 删掉了，但没有留下「作废」标记）。
 现在在原路径放了一个作废说明，Codex 再拉取时会看到。这批图不提交、不上线；只做 9014 两张套装图。
 **教训**：撤回任务单时，要在原路径留一个作废说明，不能只删文件。
+
+## 追加（09-30 夜）：/products「Nine ways」改为全部 17 个类目
+
+甲方：「这个nine ways 是不是要优化下」，选了「全部改」。原来九条入口只覆盖 549 个型号里的 330 个，
+类目页有 8 个在这里没有入口，说明文字还是口号（"The first handshake a building gives"）。
+
+- `products-architecture.ts`：`PRODUCT_FAMILIES` 改成 `PRODUCT_GROUPS`，5 组（拉手 / 锁与锁芯 / 逃生与门控 / 合页与玻璃门 / 浴室与配件），
+  共 17 个顶级类目，每个挂一个真实产品做缩略图（没有生成图）。说明文字直接用 `content/categories.json` 的类目 summary，
+  各语种已有翻译，所以不再维护第二套口号。数量为 0 的类目不显示。
+- `ProductsEditorialOverview.tsx` + `EditorialCatalogue.module.css`：每条左侧 80px 缩略图（浅灰底，multiply 去白底），组标题小号大写。
+- 文案：intro 里 "Nine families, one standard" 改为 "One standard throughout"；标题 "Every category in the catalog"；抽屉 "Every product category"。
+  en/es/pt 在代码里，七个覆盖语种写进 `content/i18n/*/ui.json`，`ui-keys.json` 已重新生成。
+- 测试：`products-architecture.test.ts` 新增断言：每个顶级类目恰好在一组里，缩略图必须是该类目的 HYDE 已发布产品。**新增类目时这个测试会失败，提醒把它放进一组。**
+- 未发布，和 PR #16 其余内容一起等甲方「上线」。
+- 照片缺口：地弹簧与天地轴类（28 个型号）的产品图**全部是深色背景**，缩略图里只有它一格是黑底。这里没法换成别的型号，需要工厂补白底实拍，或者由 Codex 把现有实拍清理成白底（只允许清理，不能生成）。
+- 构建检查里的 `src/data/generated/i18n-client/*.json` 是 `node scripts/build-i18n-client-ui.mjs` 生成的；改了覆盖语种的 ui.json 之后要先跑这一步，否则 check 最后一步会报 stale。

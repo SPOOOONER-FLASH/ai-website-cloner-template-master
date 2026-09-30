@@ -6,7 +6,9 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 import { EditorialAtlas } from "./EditorialAtlas";
 import { getProductsArchitecture, type ProductsLocale } from "./products-architecture";
 import styles from "./EditorialCatalogue.module.css";
-import { dict } from "@/lib/i18n";
+import { dict, t as field } from "@/lib/i18n";
+import { getTopLevelCategories } from "@/data/categories";
+import { getProductBySlug } from "@/data/products";
 
 interface ProductsEditorialOverviewProps {
   locale: ProductsLocale;
@@ -59,6 +61,7 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
   const [rangeChapter, applicationChapter, technicalChapter] = architecture.story;
   const t = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
+  const categoryBySlug = new Map(getTopLevelCategories().map((category) => [category.slug, category]));
 
   return <div className={styles.page}>
     <section aria-labelledby="products-overview-title">
@@ -85,13 +88,29 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
         <h2 id="product-family-map-title" className={styles.heading}>{architecture.familiesHeading}</h2>
         <p className={styles.body}>{architecture.familiesBody}</p>
       </div>
-      <ol className={styles.index}>
-        {architecture.families.map((family) => <li key={family.slug}><Link href={family.href}>
-          <span className={styles.indexLabel}>{family.label}</span>
-          <span className={styles.count}>{categoryCounts[family.slug] ?? 0} {t.models}</span>
-          <span className={styles.indexDetail}>{family.description}</span>
-        </Link></li>)}
-      </ol>
+      {architecture.groups.map((group) => {
+        const entries = group.families.flatMap((family) => {
+          const category = categoryBySlug.get(family.slug);
+          const count = categoryCounts[family.slug] ?? 0;
+          if (!category || count === 0) return [];
+          const photo = getProductBySlug(family.slug, family.thumbnail)?.heroImage ?? category.image;
+          return [{ ...family, count, photo, name: field(category, "name", locale), summary: field(category, "summary", locale) }];
+        });
+        if (entries.length === 0) return null;
+        return <div key={group.title} className={styles.group}>
+          <h3 className={styles.groupTitle}>{group.title}</h3>
+          <ol className={styles.index}>
+            {entries.map((family) => <li key={family.slug}><Link href={family.href}>
+              <span className={styles.thumb}>
+                {family.photo?.src ? <MediaPlaceholder src={family.photo.src} ratio="1 / 1" label={family.name} sizes="80px" className="object-contain" /> : null}
+              </span>
+              <span className={styles.indexLabel}>{family.name}</span>
+              <span className={styles.count}>{family.count} {t.models}</span>
+              <span className={styles.indexDetail}>{family.summary}</span>
+            </Link></li>)}
+          </ol>
+        </div>;
+      })}
     </section>
 
     <section className={styles.chapter} aria-labelledby="engineering-system-title">
