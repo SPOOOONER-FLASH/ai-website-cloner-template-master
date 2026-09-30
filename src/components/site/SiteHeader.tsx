@@ -298,7 +298,8 @@ export function SiteHeader({
                 the nav and to the language list are equal. Centring on the page instead collided
                 with the ten-language list below ~1700px. Below xl it stays in the grid as before.
               */}
-              <Link href={homeHref} className={cn("flex min-w-0 flex-shrink-0 items-center text-ink xl:min-w-max xl:flex-1 xl:justify-center", navigationStyles.home)}>
+              {/* prefetch={false} on every header link: see HeaderLink in HeaderIslands.tsx (2026-09-30). */}
+              <Link href={homeHref} prefetch={false} className={cn("flex min-w-0 flex-shrink-0 items-center text-ink xl:min-w-max xl:flex-1 xl:justify-center", navigationStyles.home)}>
                 <Wordmark className="pe-8 xl:pe-0" />
               </Link>
 
@@ -424,6 +425,7 @@ export function SiteHeader({
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
+                  prefetch={false}
                   className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
@@ -432,6 +434,7 @@ export function SiteHeader({
                     the Finder rather than a sixth rail item — fr/de rows already overflow. */}
                 <Link
                   href={localisedHref("/configurator/studio", locale)}
+                  prefetch={false}
                   className="short-marker mt-12 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Configurator Studio", { es: "Estudio de configuración", pt: "Estúdio de configuração" })}
@@ -474,6 +477,7 @@ export function SiteHeader({
                                   shipped. Until then it kept the filter, because a link
                                   to a page that does not exist is worse than a weak one.
                                 */
+                                prefetch={false}
                                 href={
                                   locale === "en"
                                     ? `/collections/${category.slug}-${child.slug}/`

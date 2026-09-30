@@ -1,7 +1,5 @@
 import { isOverlayLocale, type Locale, type OverlayLocale } from "../data/locales.ts";
 import { localisedHref } from "./spanish-mirror.ts";
-import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
-import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 
 /**
  * The reading rule without the data. src/lib/i18n.ts binds these to the full overlays for
@@ -173,10 +171,15 @@ export function isEnglishFallback<R extends object>(record: R, field: keyof R & 
 }
 
 /** Spec-table row labels for a locale: the es/pt tables, or the overlay's specLabels. */
-export function makeSpecLabels(labelsOf: (locale: OverlayLocale) => Record<string, string>) {
+/**
+ * `labelsOf` answers for EVERY non-English locale, Spanish and Portuguese included. Until
+ * 2026-09-30 this file imported SPEC_LABELS_ES / SPEC_LABELS_PT itself, which put both
+ * glossaries into src/lib/i18n-client.ts and so into the shared client chunk of every page:
+ * 117 KB (33 KB gzipped) of Spanish and Portuguese tables on an English homepage that
+ * reads none of them. The server binding (src/lib/i18n.ts) still hands over the glossaries.
+ */
+export function makeSpecLabels(labelsOf: (locale: Exclude<Locale, "en">) => Record<string, string>) {
   return function specLabels(locale: Locale): Record<string, string> {
-    if (locale === "es") return SPEC_LABELS_ES;
-    if (locale === "pt") return SPEC_LABELS_PT;
     if (locale === "en") return {};
     return labelsOf(locale);
   };

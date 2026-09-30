@@ -1,6 +1,22 @@
 import type { Locale } from "../data/site.ts";
 import { overlays } from "../data/i18n-overlays.ts";
-import { localiseValuesWith } from "./localise-values.ts";
+import { localiseValuesWith, type Table } from "./localise-values.ts";
+import { FINISH_NAMES_ES, MATERIAL_NAMES_ES, SPEC_VALUES_ES } from "../data/es-glossary.ts";
+import { FINISH_NAMES_PT, MATERIAL_NAMES_PT, SPEC_VALUES_PT } from "../data/pt-glossary.ts";
+
+/**
+ * The tables Spanish and Portuguese consult, in order. Server side only; the client copy
+ * of the same three tables is registered per locale by src/data/i18n-client-values-es.tsx
+ * and -pt.tsx so an English page never downloads them.
+ *
+ * Spanish has one because its spec values were composed by a generator rather than
+ * collected into named tables; when `MATERIAL_NAMES_ES` and `FINISH_NAMES_ES` exist they
+ * belong here beside it and nothing else changes.
+ */
+export const VALUE_TABLES: Record<"es" | "pt", Table[]> = {
+  es: [SPEC_VALUES_ES, MATERIAL_NAMES_ES, FINISH_NAMES_ES],
+  pt: [SPEC_VALUES_PT, MATERIAL_NAMES_PT, FINISH_NAMES_PT],
+};
 
 /**
  * Localise structured catalogue facts without translating or inferring them.
@@ -53,9 +69,9 @@ import { localiseValuesWith } from "./localise-values.ts";
  */
 export function localiseProductValues(values: string[], locale: Locale): string[] {
   /* The seven overlay locales: the same three tables, from content/i18n/<code>/glossary.json. */
-  return localiseValuesWith(values, locale, (code) => [
-    overlays[code].glossary.specValues,
-    overlays[code].glossary.materialNames,
-    overlays[code].glossary.finishNames,
-  ]);
+  return localiseValuesWith(values, locale, (code) =>
+    code === "es" || code === "pt"
+      ? VALUE_TABLES[code]
+      : [overlays[code].glossary.specValues, overlays[code].glossary.materialNames, overlays[code].glossary.finishNames],
+  );
 }
