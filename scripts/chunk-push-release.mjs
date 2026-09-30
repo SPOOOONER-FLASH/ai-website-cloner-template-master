@@ -35,18 +35,26 @@ const DRY = process.argv.includes("--dry");
 const git = (...a) => execFileSync("git", ["-C", REPO, ...a], { encoding: "utf8", maxBuffer: 512 * 1024 * 1024 }).trim();
 const gitIn = (input, ...a) => execFileSync("git", ["-C", REPO, ...a], { input, encoding: "utf8", maxBuffer: 512 * 1024 * 1024 }).trim();
 
-function push(refspec, label) {
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    console.log(`  push ${label} (attempt ${attempt}/3)`);
-    if (DRY) return true;
-    const r = spawnSync("git", ["-C", REPO, "-c", "http.postBuffer=524288000", "push", "--force", "origin", refspec], {
+/*
+  --force is for the side branch only (every run rewrites it). main is NEVER force-pushed
+  (2026-09-30): the final commit is built on the main of a few minutes earlier, and a forced push
+  after another session's release landed would have silently replaced that release, and every
+  source commit pushed in between, with this one. A plain push is rejected instead.
+*/
+function push(refspec, label, { force = false, attempts = 3 } = {}) {
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    console.log(`  push ${label} (attempt ${attempt}/${attempts})`);
+    if (DRY) return { ok: true };
+    const r = spawnSync("git", ["-C", REPO, "-c", "http.postBuffer=524288000", "push", ...(force ? ["--force"] : []), "origin", refspec], {
       encoding: "utf8",
       timeout: 15 * 60 * 1000,
     });
-    if (r.status === 0) return true;
-    console.log(`    failed: ${(r.stderr || r.error?.message || "").split("\n").filter(Boolean).slice(-2).join(" | ")}`);
+    if (r.status === 0) return { ok: true };
+    const why = (r.stderr || r.error?.message || "").split("\n").filter(Boolean).slice(-2).join(" | ");
+    console.log(`    failed: ${why}`);
+    if (/non-fast-forward|fetch first|rejected/i.test(why)) return { ok: false, raced: true };
   }
-  return false;
+  return { ok: false };
 }
 
 /** Entries of a tree as mktree lines, keyed by name. */
@@ -97,21 +105,37 @@ for (const [i, b] of batches.entries()) {
   const tree = withOut(`${base}^{tree}`, mktree(outMap));
   const commit = gitIn(`upload batch ${i + 1}/${batches.length}: ${b.names.slice(0, 4).join(", ")}${b.names.length > 4 ? " …" : ""}\n`, "commit-tree", tree, "-p", parent);
   console.log(`batch ${i + 1}/${batches.length}: ${b.n} files (${b.names.slice(0, 6).join(", ")}${b.names.length > 6 ? ", …" : ""})`);
-  if (!push(`${commit}:refs/heads/${BRANCH}`, `batch ${i + 1}`)) {
+  if (!push(`${commit}:refs/heads/${BRANCH}`, `batch ${i + 1}`, { force: true }).ok) {
     console.error(`✗ batch ${i + 1} failed three times. Nothing reached main. Re-run to continue: pushed objects stay on GitHub.`);
     process.exit(75);
   }
   parent = commit;
 }
 
-// 2. One small commit on the current main.
-if (!DRY) git("fetch", "origin", "main");
-const main = git("rev-parse", "origin/main");
-const finalTree = withOut(`${main}^{tree}`, releaseOut);
-const final = gitIn(`${subject}\n\nPushed in ${batches.length} batches via ${BRANCH} (scripts/chunk-push-release.mjs); out/ from ${release.slice(0, 11)}, everything else from ${main.slice(0, 11)}.\n`, "commit-tree", finalTree, "-p", main);
-console.log(`final ${final.slice(0, 11)} on main ${main.slice(0, 11)}`);
-if (!push(`${final}:refs/heads/main`, "main")) {
-  console.error("✗ the final main push failed three times; the upload branch is complete, re-run to retry.");
+// 2. One small commit on the current main. If main moves meanwhile, rebuild on the new main —
+//    unless the new commits touched out/: that is another release, possibly newer than this one,
+//    and replacing its out/ would roll the site back. Stop and say so instead.
+let main = null;
+let final = null;
+let pushed = false;
+for (let round = 1; round <= 3 && !pushed; round++) {
+  if (!DRY) git("fetch", "origin", "main");
+  const now = git("rev-parse", "origin/main");
+  const outMoved = (from) => git("diff", "--name-only", from, now, "--", "out").length > 0;
+  if (outMoved(main ?? base)) {
+    console.error(`✗ out/ on main changed after ${(main ?? base).slice(0, 11)} (now ${now.slice(0, 11)}): another release is live. Not replacing it. If it lacks this release's source, rebuild from the current main.`);
+    process.exit(75);
+  }
+  main = now;
+  const finalTree = withOut(`${main}^{tree}`, releaseOut);
+  final = gitIn(`${subject}\n\nPushed in ${batches.length} batches via ${BRANCH} (scripts/chunk-push-release.mjs); out/ from ${release.slice(0, 11)}, everything else from ${main.slice(0, 11)}.\n`, "commit-tree", finalTree, "-p", main);
+  console.log(`final ${final.slice(0, 11)} on main ${main.slice(0, 11)}`);
+  const r = push(`${final}:refs/heads/main`, "main", { attempts: round === 1 ? 3 : 1 });
+  pushed = r.ok;
+  if (!r.ok && !r.raced) break;
+}
+if (!pushed) {
+  console.error("✗ the final main push did not land; the upload branch is complete, re-run to retry. Check git ls-remote first: a timeout does not prove it failed.");
   process.exit(75);
 }
 // 3. Tidy up.
