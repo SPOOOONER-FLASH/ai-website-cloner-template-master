@@ -9,7 +9,7 @@ Branch `claude/lighthouse-performance-jji382`, draft PR. Source only; no release
 | Desktop TBT 1,340 ms, 18 long tasks, JS execution 2.3 s | Third parties. The same homepage without GTM / GA4 / Clarity blocks for **0–10 ms** in a local Lighthouse desktop run (three runs, both before and after). The site's own JS is not the desktop problem | Clarity `afterInteractive` → `lazyOnload` (Analytics.tsx). GTM stays verbatim in `<head>` (client 09-25), GA4 was already `lazyOnload`. Nothing removed |
 | "Reduce unused JavaScript" 316–428 KiB | Two first-party parts: (1) `src/lib/i18n-core.ts` + `localise-values.ts` imported the Spanish and Portuguese glossaries, and every "use client" component imports `i18n-client.ts`, so **117 KB (33 KB gz) of es/pt spec tables shipped in the shared chunk of every page in every language**; (2) the rest is GTM/gtag/Clarity | Glossaries out of the client core. `i18n-client-values.ts` + `data/i18n-client-values-{es,pt}.tsx` register the three value tables per locale exactly like the overlay bundles (both in the layout and in the client module — same lesson as de/layout.tsx 09-27). English homepage no longer contains a single Spanish string; /es/ gets its own 115 KB chunk |
 | "Network dependency tree", LCP render delay | `<Link>` viewport prefetch: five header routes (home, products, product-finder 43 KB payload, guides, contact) plus their chunks, ~70 KB, fetched right after hydration on a phone still loading the hero | `prefetch={false}` on HeaderLink (HeaderIslands), the logo/finder/studio/shelf Links in SiteHeader, footer and footer language links |
-| "Use efficient cache lifetimes" 130–171 KiB | Server, not code: nginx sends no `Cache-Control`; Cloudflare fills in 4 h. Could not verify live from the cloud (proxy refuses cantonlock.com) | `deploy/nginx/static-cache.conf` (1 year immutable for `/_next/static/`, 30 d images/fonts/pdf) + CLIENT-RUNBOOK first screen: curl to check, one command to install, purge after |
+| "Use efficient cache lifetimes" 130–171 KiB | **Nothing to fix on the origin.** Measured from the johns machine 09-30 07:07 UTC: `/_next/static/*` already `max-age=31536000, immutable`, images `max-age=86400`, HTML `max-age=300`, all Cloudflare HIT. What PSI flags is the 1-day images and third-party tags | none — the nginx snippet and runbook step first proposed here were withdrawn (premise was wrong) |
 | Render-blocking CSS 380 ms | Three stylesheets, 19 KB compressed | Tried `experimental.inlineCss`: FCP −0.3 s on slow 4G, but Next also copies the 124 KB stylesheet into every page's RSC payload → out/index.html 282 → 534 KB, **+2 GB across 8,135 HTML files** committed per release. Reverted; reasoning kept in next.config.ts |
 | Legacy JS 26 KiB, forced reflow, non-composited animation | Legacy JS and reflow are empty in the local run → third-party. The animation is `.hero-caption-slide` transitioning `visibility` (globals.css); lane belongs to the 视觉/动效 session, left alone | — |
 | Image delivery 138–149 KiB | Below-fold lazy cards (hyde-real-* 800w for a 279 px slot at DPR 1.75; a 600w candidate would fix it); does not touch LCP | not done |
@@ -58,7 +58,7 @@ es/pt layout, where the client registry is empty. /es/ and /pt/ lock-case pages:
 `src/data/{i18n-client-values-es,i18n-client-values-pt}.tsx`, `src/data/i18n-record-locale-tables.ts`,
 `src/app/{es,pt}/layout.tsx`, `src/components/site/{ProductCard,HeaderIslands,SiteHeader,SiteFooter,FooterPathAware,Analytics,EngagementTracker}.tsx`,
 `src/lib/{card-figure,engagement}.ts` + tests,
-`next.config.ts` (comment only), `deploy/nginx/static-cache.conf`, `docs/collaboration/CLIENT-RUNBOOK.md`.
+`next.config.ts` (comment only).
 
 Not touched: `src/data/generated/products-zh.json`, `public/images/door-prep/*.svg`,
 `docs/collaboration/LOCALE-MIRROR-STATUS.md` — dirty from the build, not mine.
@@ -79,3 +79,9 @@ Not touched: `src/data/generated/products-zh.json`, `public/images/door-prep/*.s
 - 给客户的指南：`/mnt/project-files/seo-geo-monitoring-2026-09-30/SEO-GEO-监控与GTM.md`（项目文件，不在仓库）。
   要点：监控体系已在 DATA-DASHBOARDS（每周导出）；GTM 已有 6 个 dataLayer 事件可直接做触发器；唯一推荐加的是
   LinkedIn Insight（GTM 自带类型），但**建议先做 cookie 同意横幅**（欧盟访客，Insight 写广告 cookie），缺口已在记忆里。
+
+## 09-30 追加：手机 70 分（LCP 7.4 s，TBT 50 ms，同一时刻桌面 100）
+
+本地同一份 out/ 手机 LCP 2.4 s、首屏图 21 KB 高优先级预载，所以差距不在代码。先猜的「边缘缓存冷、回源」
+在中国节点实测不成立（全部 HIT，见上表）；美国节点是否冷未知。决定性数据是 PSI 报告里「LCP breakdown」的
+四段（TTFB / 加载延迟 / 加载时长 / 渲染延迟），已请甲方截图。拿到前不改代码。
