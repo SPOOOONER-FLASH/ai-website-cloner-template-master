@@ -87,3 +87,9 @@
 - `StoryFilm` 改为进入视口才播放（preload="none"，首页不滚到就不下载），访客按了暂停后回滚也不自动播放。
 - 未发布。上线等甲方一句话，然后合并 PR #16、`npm run release:hyde`。
 - `npm run check` 全绿。
+
+## 追加（09-30 傍晚）：首页 9014 改成 FSB 1138 式横屏大卡
+
+甲方发来 FSB「Relaunch of FSB 1138」卡片截图：「我想做成这样横屏的一块替换原来的那个 D101 那一行」。
+`HandleStoryShowcase.tsx` 改为一块细边框横屏卡：影片满宽，下面左侧粗体标题 + 一行说明，右侧链接。
+链接文字用「See the 9014」而不是 FSB 的「Learn more」（`home-accent.test.ts` 的规矩：CTA 要说去哪）。`npm run check` 全绿，未发布。
