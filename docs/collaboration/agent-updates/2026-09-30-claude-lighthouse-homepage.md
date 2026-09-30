@@ -91,3 +91,9 @@ Cloudflare 注入的阻塞脚本（只有 Bot Fight Mode 的懒加载 challenge 
 手机 7.4 s 是单次测量波动，不是稳定缺陷。屏蔽 GTM/GA/Clarity 让 TBT 降 60–75%，所以 #18 的 Clarity 延后是
 唯一可靠的杠杆。本地试过把三份 CSS 内联进首页：FCP −0.3 s，但 LCP 不变、TBT 80 → 240–600 ms（React 水合时重插
 <link> 再下载一次），不采用。**以后看 Search Console「核心网页指标」（真实用户 CrUX），不追单次 PageSpeed 分。**
+
+## 09-30 追加：首页两张深色卡片加 600w
+
+`hyde-real-cylinder-dark`、`hyde-real-lever-set-dark` 在手机（279 CSS px × DPR 1.75 ≈ 490 px）只能选 800w。
+editorial-images.config.json 加 600 档，`npm run assets:editorial` 生成（普通 + HYDE 标记两套）：锁芯 50→28 KB，
+执手 26→15 KB。npm run check 绿。
