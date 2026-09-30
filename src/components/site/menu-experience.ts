@@ -45,6 +45,11 @@ const concierge: LocaleDict<ConciergeExperience> = {
     title: "What are you trying to specify?",
     primary: [
       {
+        label: "I want to see it",
+        detail: "Switch finish and function on the real part and read off the order code",
+        href: "/configurator/studio/",
+      },
+      {
         label: "I know the model",
         detail: "Browse and filter published models",
         href: "/product-finder/",
@@ -67,6 +72,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "All products", href: "/products/" },
           { label: "Product Finder", href: "/product-finder/" },
           { label: "Configurator", href: "/configurator/" },
+          { label: "Configurator Studio", href: "/configurator/studio/" },
           { label: "Hardware in focus", href: "/product-studies/" },
           { label: "Model lookup", href: "/model-lookup/" },
           { label: "Order codes", href: "/finishes/" },
@@ -113,6 +119,11 @@ const concierge: LocaleDict<ConciergeExperience> = {
     title: "¿Qué necesita especificar?",
     primary: [
       {
+        label: "Quiero verlo",
+        detail: "Cambie acabado y función sobre la pieza real y lea el código de pedido",
+        href: "/es/configurator/studio/",
+      },
+      {
         label: "Conozco el modelo",
         detail: "Explore y filtre los modelos publicados",
         href: "/es/product-finder/",
@@ -135,6 +146,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Todos los productos", href: "/es/products/" },
           { label: "Buscador de productos", href: "/es/product-finder/" },
           { label: "Configurador", href: "/es/configurator/" },
+          { label: "Estudio de configuración", href: "/es/configurator/studio/" },
           { label: "Herrajes en detalle", href: "/es/product-studies/" },
           { label: "Buscador de modelos", href: "/es/model-lookup/" },
           { label: "Códigos de pedido", href: "/es/finishes/" },
@@ -178,6 +190,11 @@ const concierge: LocaleDict<ConciergeExperience> = {
     title: "O que precisa de especificar?",
     primary: [
       {
+        label: "Quero ver a peça",
+        detail: "Troque acabamento e função na peça real e leia o código de pedido",
+        href: "/pt/configurator/studio/",
+      },
+      {
         label: "Sei o modelo",
         detail: "Percorra e filtre os modelos publicados",
         href: "/pt/product-finder/",
@@ -200,6 +217,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Todos os produtos", href: "/pt/products/" },
           { label: "Localizador de produtos", href: "/pt/product-finder/" },
           { label: "Configurador", href: "/pt/configurator/" },
+          { label: "Estúdio de configuração", href: "/pt/configurator/studio/" },
           { label: "Ferragens em detalhe", href: "/pt/product-studies/" },
           { label: "Procurar modelo", href: "/pt/model-lookup/" },
           { label: "Códigos de pedido", href: "/pt/finishes/" },
@@ -251,6 +269,7 @@ const specify: LocaleDict<SpecifyExperience> = {
           { label: "Products", detail: "Nine product families", href: "/products/" },
           { label: "Product Finder", detail: "Filter and compare", href: "/product-finder/" },
           { label: "Configurator", detail: "Build a hardware set", href: "/configurator/" },
+          { label: "Configurator Studio", detail: "Switch finish and function", href: "/configurator/studio/" },
         ],
       },
       {
