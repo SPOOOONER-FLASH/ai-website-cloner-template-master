@@ -38,7 +38,10 @@ python3 -c "import sys; sys.argv=['x','--','311','frames/311/f_','all','1.0','10
 python3 scripts/blender/one-take-composite.py frames/311 hyde-one-take-311.mp4 Archivo.ttf logo.png
 ```
 
-云端 4 核 CPU：每帧约 5 秒，一支 288 帧约 25 分钟。johns 机器 4090 上把 `RES=3.0`（3840×2160）、
+新 builder 先只渲收尾一帧看取景：`'288'` 代替 `'all'`，采样 `3`，十几秒一张。竖长的产品（面板、板式拉手）
+在 16:9 里要把最后两个 key 的取景系数放到 2 以上，否则上下被裁。
+
+云端 4 核 CPU：每帧约 11 秒（10 采样），一支 288 帧约 25 分钟。johns 机器 4090 上把 `RES=3.0`（3840×2160）、
 `SAMPLES=128` 即为成片级，脚本不用改。
 
 ## 和 FSB 还差什么
