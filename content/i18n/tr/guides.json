@@ -300,6 +300,7 @@
       "| Yazılış biçimi | Satır |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| \"chrome\", kodsuz | 17 |\n| Satin Nickel (SN) | 41 |\n| \"Satin nickel\", kodsuz | 38 |",
       "Bunlar farklı kaplamalar değil. Tutarsız yazılmış tek bir kaplamadır ve kodu olmayan satırlar bir alıcının yeniden sipariş veremeyeceği satırlardır; bu sayfanın bütün argümanı, kendimize çevrilmiş hâliyle.",
       "Kendi kendine düzelmeye bırakılmak yerine kaplama kodları sayfamızdaki kod tablosuna göre normalleştiriliyor. Bu tamamlanana kadar, bir satırda kod varsa onu alın, yoksa sorun.",
+      "Satırlarımızda kod varsa, yazıldığı gibi belirtin: 70722 DC kulp takımı saten nikel (US15) olarak yayımlanmıştır, 65SN Avrupa silindiri ise kaplamaları arasında krom kaplama (CP) ve saten krom (SC) sayar.",
       "## Kromu aynı şeyi iki kez alacak şekilde nasıl belirtirsiniz",
       "Adı değil kodu verin. \"Saten krom\" değil, US26D ya da 626.",
       "Proje malzemeleri karıştırıyorsa alt malzemeyi belirtin; pirinç üzerindeki krom ile zamak üzerindeki krom komşu kapılarda uyuşmaz.",
@@ -338,7 +339,7 @@
       "summary": "6619ce04a91d",
       "seoTitle": "b665add1ab44",
       "seoDescription": "b95446a4e3c4",
-      "body": "66900bbdb6bc",
+      "body": "013c8ffc451a",
       "faq": "1fdc19bda3a8"
     }
   },
@@ -2163,6 +2164,7 @@
       "Her kapı için silindir boyu ve bölünmesi, çünkü bir master anahtar sistemi bir silindir setidir ve her birinin kapısına fiziksel olarak uyması gerekir. Bunun nasıl ölçüleceğini Avrupa tipi silindir sayfalarımız anlatıyor.",
       "SİPARİŞ BAZINDA NEYİ TEYİT EDİYORUZ",
       "Anahtar yolu bulunabilirliği bir katalog özelliği değil, sipariş bazında bir sorudur, çünkü silindir serisine, miktara ve pazara bağlıdır. Profili, durumunu ve anahtar kontrolü konusunda taahhüt edileni sipariş verilmeden önce yazılı olarak teyit ediyoruz.",
+      "Avrupa silindirlerimiz, örneğin 65SN ve 70BK, boy, malzeme ve kaplamaya göre listelenir; hangi anahtar profiline kesilecekleri, yukarıda söylendiği gibi her siparişte teyit edilen konulardan biridir.",
       "Ürün sayfalarında anahtar kontrolüyle ilgili genel bir iddia yayımlamıyoruz, çünkü böyle bir iddia ancak belirli bir profile, belirli bir süreye ve belirli bir dağıtım düzenlemesine bağlandığında anlam taşır. Bu üçü olmadan anahtar kontrolünün reklamını yapan bir tedarikçi, bir kelimenin reklamını yapmıştır."
     ],
     "faq": [
@@ -2196,7 +2198,7 @@
       "summary": "a2cf40fea24b",
       "seoTitle": "98660cb7cd4d",
       "seoDescription": "4dd4ca2743a6",
-      "body": "2411fc80cc41",
+      "body": "7190ece6cbaa",
       "faq": "d1adb3f6c8ab"
     }
   },
@@ -2330,6 +2332,7 @@
       "Ve profil ile durumu: açık, kısıtlı ya da patentli; çünkü bu karar yukarıdaki her şeyi sınırlar ve sonradan değiştirilmesi en zor olanıdır.",
       "## Neyi teyit ediyoruz, neyi etmiyoruz",
       "Silindir serisini, boyları ve bölünmeleri, kaplamaları ve miktarları teyit ediyoruz; profili ve anahtar kontrolü konusunda taahhüt edileni de sipariş bazında ve yazılı olarak teyit ediyoruz.",
+      "Katalog tarafında, sayfalar hangi ürünlerin bir sisteme girebileceğini söyler: 578 silindirik kilit ve 3431 kol takımı, sürgülerimizle aynı anahtara alınabilir ya da master anahtarlı yapılabilir olarak yayımlanmıştır.",
       "Hiyerarşi tasarımının kendisi normalde sistemin sahibi tarafından (bir çilingir, bir güvenlik danışmanı ya da patentli bir platformun üreticisi) yapılır, çünkü platformun kendi masterlama kurallarına ve bizim taraf olmadığımız bir organizasyon şemasına bağlıdır. Doğru görünen ama kesileceği platformla çakışan bir hiyerarşi çizmektense bunu açıkça söylemeyi tercih ederiz."
     ],
     "faq": [
@@ -2363,7 +2366,7 @@
       "summary": "888492d769fe",
       "seoTitle": "a7b6bfdeee17",
       "seoDescription": "2e5d713090d8",
-      "body": "7e67d4358eaf",
+      "body": "eb7628a2bfc8",
       "faq": "6b04b0dd5eee"
     }
   },
@@ -3120,6 +3123,7 @@
       "Çok kısa bir dudak dilin kasa kenarına takılmasına izin verir; montajdan bir ay sonra ortaya çıkan sürtünme sesi budur. Çok uzun bir dudak açıklığa taşar, giysilere takılır ve bükülür; çift kanatlı bir kapıda diğer kanada da çarpabilir.",
       "Çalışma yöntemi, kapı yüzünün eksen çizgisinden (dilin geçeceği noktadan) kasanın lamba yuvasının arka kenarına kadar ölçmek ve dudağın dışarı taşmadan kenarı aşması için küçük bir pay eklemektir. Sayı kasa profiline bağlıdır; bir katalogdan okunamamasının nedeni budur.",
       "Bir donanım listesi için pratik sonuç: kasa profilini belirtin ya da dudak boyunu verin. İkisi de olmadan sipariş edilen bir karşılık, üreticinin standart dudağıyla sevk edilir; bu da üreticinin aklındaki kasa için doğrudur, sizinki için olmayabilir.",
+      "Kendi sayfalarımız karşılığı aynı terimlerle yayımlar. 575 tüp kilit standart olarak 57 mm kavisli dudaklı karşılıkla gelir, 70 mm dudak isteğe bağlıdır; 564 yüzey kilidi içe açılan kapılar için açılı karşılıkla gelir, düz karşılık da mevcuttur.",
       "DÜZ VE RADYUSLU KÖŞELER",
       "Bir karşılık plakasının köşeleri ya düz ya da radyusludur ve seçimi tercih değil, kasanın nasıl kesildiği belirler.",
       "Freze ucuyla frezelenmiş bir kasanın köşeleri radyusludur, çünkü dönen bir uç keskin bir iç köşe kesemez. Zımba ya da keskiyle kesilmiş bir kasanın köşeleri düzdür. Radyus ölçüleri genellikle 1/4\" (yaklaşık 6 mm) ya da 5/8\"tir (yaklaşık 16 mm) ve ikisi takıldıktan sonra gözle görülür biçimde farklıdır.",
@@ -3171,7 +3175,7 @@
       "summary": "52c02def8414",
       "seoTitle": "dfdd64d19878",
       "seoDescription": "d5914b5d0894",
-      "body": "b5b3004f3357",
+      "body": "0152052c86da",
       "faq": "a65be9fd475a"
     }
   },
@@ -3402,6 +3406,7 @@
       "Ve çift kanatlılarda bunu kanat başına belirtin. Çift kanat, iki yönlü kapıdır ve bir çift için tek bir yön veren bir liste satırı açıklığın yarısını tarif etmiştir.",
       "## Ne yayımlıyoruz ve dürüst eksik",
       "Bir model yönlüyse ürün sayfası bunu söyler ve sipariş kodu bunu taşır. Bir model ters çevrilebilirse sayfa üniversal değil ters çevrilebilir der, çünkü bunlar farklı vaatlerdir ve biz daha dar olanı yazmayı tercih ederiz.",
+      "Kendi satırlarımızdan farkın iki örneği: 575 tüp kilit tamamen çevrilebilir, sol ya da sağ el olarak yayımlanmıştır, yani birinin onu çevirmesi gerekir; 70722 DC kulp takımı ise yönsüz olarak yayımlanmıştır.",
       "Sayfalarımızın henüz tutarlı biçimde belirtmediği şey, ters çevrilebilir bir ürünün varsayılan olarak hangi yönde sevk edildiğidir. Yukarıdaki \"ters çevrilebilir, ters çevrilmiş değildir\" noktasının arkasındaki bilgi budur ve satırlar bunu taşıyana kadar cevap katalogdan değil sipariş bazında gelir.",
       "Birbirinin yerine geçebilirlik sayfamızdaki ölçü eksiklerinde olduğu gibi, bu akla yatkın bir varsayılanla doldurulacak bir şey değil, bir mutabakat işidir: bir satıra yazılmış ve yüz kapıda yanlış çıkan bir varsayılan yön, sorgulanan boş bir satırdan daha pahalı bir hatadır. Kapı başına üç gözlem kaydeden bir keşif bir öğleden sonraya mal olur ve bir konteynerin yanlış yönde gelmesinin en yaygın tek nedenini ortadan kaldırır."
     ],
@@ -3436,7 +3441,7 @@
       "summary": "1e9f4449bd0a",
       "seoTitle": "bc9b64cd0513",
       "seoDescription": "b8375842134b",
-      "body": "d3778dfd6a3e",
+      "body": "549da18577e0",
       "faq": "51442ec2f905"
     }
   },
