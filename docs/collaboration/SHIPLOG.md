@@ -6,14 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 585 次提交
+最近 30 天 · 共 586 次提交
 
 ## 2026-09-30
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 07:26 | HYDE | 送审包、防火门两篇指南摘要改成答案在前（W39 两个 0% 话题，第一步） | `e7b8a9f55b1` |
-| 07:18 | HYDE | 被 AI 引用最多的指南补上型号链接（W39 P1）：前 10 篇 8 篇可一跳到产品 | `4e234be89da` |
+| 07:26 | HYDE | 重建搜索索引（合并 origin/main 后） | `7982c21ce51` |
+| 07:24 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `7fb12973b69` |
+| 07:20 | HYDE | 玻璃门指南：JU 系列不是地弹簧；三段"我们不公布"已被 09-29 发布推翻 | `79f5207bc69` |
 | 07:02 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `a9d8f51da5e` |
 | 07:02 | 中立 | r21 上线核对完成，goal #122–#124 完成，#125 等 purge 后提交 IndexNow | `f2d3aa1f819` |
 | 05:47 | 中立 | 第 39 周周报：计分卡、环比同比、九条洞察、实验看板、四周 OKR、看板缺口；报数口径改为真人会话 | `5dc7a2d3739` |
