@@ -44,8 +44,8 @@ Clarity geolocating a VPN egress elsewhere; Clarity bot filter). Code added:
   src/lib/engagement.ts, tested) — GA4 User explorer Client ID → Clarity custom-tag filter.
 - `tagClarity` installs Clarity's own queue stub when the tag is not loaded yet. Without it the
   `lazyOnload` move would have silently dropped `page_type` and `first_touch`.
-- Decision card posted: keep Clarity `lazyOnload` (recommended, working on it) or restore
-  `afterInteractive`. If the client picks restore, it is the one word in Analytics.tsx.
+- **Client decided 2026-09-30: keep Clarity `lazyOnload`.** Do not move it back to
+  `afterInteractive` for "missing recordings"; those are visitor-side (see above).
 
 `src/lib/card-figure.ts` now carries its own 12 es/pt figure captions (`FIGURE_LABELS_LOCALISED`,
 test asserts equality with the glossaries): the Product Finder builds es/pt figures outside the
