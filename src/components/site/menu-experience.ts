@@ -73,6 +73,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Product Finder", href: "/product-finder/" },
           { label: "Configurator", href: "/configurator/" },
           { label: "Configurator Studio", href: "/configurator/studio/" },
+          { label: "The 9014 lever", href: "/stories/9014/" },
           { label: "Hardware in focus", href: "/product-studies/" },
           { label: "Model lookup", href: "/model-lookup/" },
           { label: "Order codes", href: "/finishes/" },
@@ -266,7 +267,7 @@ const specify: LocaleDict<SpecifyExperience> = {
       {
         title: "Specify",
         links: [
-          { label: "Products", detail: "Nine product families", href: "/products/" },
+          { label: "Products", detail: "Every product category", href: "/products/" },
           { label: "Product Finder", detail: "Filter and compare", href: "/product-finder/" },
           { label: "Configurator", detail: "Build a hardware set", href: "/configurator/" },
           { label: "Configurator Studio", detail: "Switch finish and function", href: "/configurator/studio/" },
@@ -321,7 +322,7 @@ const specify: LocaleDict<SpecifyExperience> = {
       {
         title: "Especificar",
         links: [
-          { label: "Productos", detail: "Nueve familias", href: "/es/products/" },
+          { label: "Productos", detail: "Todas las categorías", href: "/es/products/" },
           {
             label: "Buscador de productos",
             detail: "Filtrar y comparar",
@@ -383,7 +384,7 @@ const specify: LocaleDict<SpecifyExperience> = {
       {
         title: "Especificar",
         links: [
-          { label: "Produtos", detail: "Nove famílias", href: "/pt/products/" },
+          { label: "Produtos", detail: "Todas as categorias", href: "/pt/products/" },
           {
             label: "Procurar produto",
             detail: "Filtrar e comparar",

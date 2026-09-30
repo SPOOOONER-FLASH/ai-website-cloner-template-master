@@ -45,6 +45,7 @@ const REFERENCE_LINKS = {
   en: [
     { label: "Configurator", href: "/configurator" },
     { label: "Hardware in focus", href: "/product-studies" },
+    { label: "The 9014 lever", href: "/stories/9014" },
     { label: "Finish codes", href: "/finishes" },
     { label: "Glossary", href: "/glossary" },
     { label: "Model lookup", href: "/model-lookup" },

@@ -4,7 +4,7 @@ import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
-import { StudioShowcase } from "@/components/site/StudioShowcase";
+import { HandleStoryShowcase } from "@/components/site/HandleStoryShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -58,7 +58,8 @@ export default function Home() {
           src/data/demand-showcase.ts for why the counts themselves stay off the page.
         */}
         <DemandShowcase />
-        <StudioShowcase />
+        {/* The studio row moved to /products (client, 2026-09-30); see HandleStoryShowcase. */}
+        <HandleStoryShowcase />
         <Spacer heights={content.spacers.s96} />
 
         <BauShowcase />

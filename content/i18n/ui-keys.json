@@ -46,7 +46,7 @@
     "src/components/locale-pages/CategoryPage.tsx:35"
   ],
   "{count} models. Narrow them by what is on your schedule.": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:85"
+    "src/components/locale-pages/ProductsIndexPage.tsx:88"
   ],
   "{count} published models state at least one of them. Each entry gives the definition first and the consequence second, because the consequence is the half that tells you whether this is the field you are about to get wrong.": [
     "src/components/locale-pages/GlossaryPage.tsx:48"
@@ -67,7 +67,8 @@
     "src/data/feature-columns.ts:180"
   ],
   "{n} models": [
-    "src/components/site/OrderCodeTables.tsx:35"
+    "src/components/site/OrderCodeTables.tsx:35",
+    "src/components/site/ProductsEditorialOverview.tsx:30"
   ],
   "{n} models are in the catalog and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.": [
     "src/components/site/ModelLookup.tsx:95"
@@ -130,7 +131,8 @@
     "src/components/site/ProductDetail.tsx:87"
   ],
   "1 model": [
-    "src/components/site/OrderCodeTables.tsx:34"
+    "src/components/site/OrderCodeTables.tsx:34",
+    "src/components/site/ProductsEditorialOverview.tsx:31"
   ],
   "1 model matches": [
     "src/components/site/Configurator.tsx:66"
@@ -190,7 +192,7 @@
     "src/data/privacy-policy.ts:147"
   ],
   "9001 catalog lever handle": [
-    "src/components/site/ProductsEditorialOverview.tsx:28"
+    "src/components/site/ProductsEditorialOverview.tsx:33"
   ],
   "A bar across the inside face of the door that unlatches under pressure, so a person leaving in a crowd needs no handle, no key and no instruction.": [
     "src/lib/configurator.ts:388"
@@ -229,7 +231,7 @@
     "src/components/site/CompanyOverview.tsx:23"
   ],
   "A door is a set of parts that have to agree with each other: lever, lock case, cylinder, strike. We supply them together, each specified against the others, so the opening works the day it is fitted.": [
-    "src/components/site/products-architecture.ts:203"
+    "src/components/site/products-architecture.ts:190"
   ],
   "A drawing, sample or reference photograph": [
     "src/components/site/ServicesView.tsx:51"
@@ -326,7 +328,7 @@
     "src/components/site/WelcomeIntro.tsx:24"
   ],
   "About us": [
-    "src/components/site/menu-experience.ts:290"
+    "src/components/site/menu-experience.ts:291"
   ],
   "Abstract architectural light study with glass and metal surfaces": [
     "src/data/home.ts:217"
@@ -339,7 +341,7 @@
   ],
   "All {count} models": [
     "src/components/locale-pages/ProductFinderPage.tsx:84",
-    "src/components/locale-pages/ProductsIndexPage.tsx:111"
+    "src/components/locale-pages/ProductsIndexPage.tsx:114"
   ],
   "All {n} published model numbers, as they are printed on a drawing or a purchase order. Type any part of one to narrow the list.": [
     "src/components/site/ModelIndex.tsx:27"
@@ -404,7 +406,7 @@
   ],
   "Application": [
     "src/components/site/InquiryForm.tsx:33",
-    "src/components/site/products-architecture.ts:132",
+    "src/components/site/products-architecture.ts:119",
     "src/lib/flagship-tooling.ts:55"
   ],
   "Application + hardware": [
@@ -414,10 +416,10 @@
     "src/components/site/ProjectDetail.tsx:19"
   ],
   "Applications": [
-    "src/components/site/menu-experience.ts:85",
-    "src/components/site/menu-experience.ts:278",
-    "src/components/site/menu-experience.ts:306",
-    "src/components/site/ProjectListing.tsx:22"
+    "src/components/site/ProjectListing.tsx:22",
+    "src/components/site/menu-experience.ts:86",
+    "src/components/site/menu-experience.ts:279",
+    "src/components/site/menu-experience.ts:307"
   ],
   "Applications + Projects": [
     "src/components/locale-pages/ProjectPages.tsx:16"
@@ -448,7 +450,7 @@
     "src/components/site/ProductFinder.tsx:68"
   ],
   "Ask an export engineer": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:105"
+    "src/components/locale-pages/ProductsIndexPage.tsx:108"
   ],
   "Ask by model number and tell us what the document is for.": [
     "src/components/site/ServicesView.tsx:87"
@@ -522,12 +524,15 @@
   "bathroom accessory": [
     "src/data/category-sourcing.ts:38"
   ],
+  "Bathroom and accessories": [
+    "src/components/site/products-architecture.ts:88"
+  ],
   "BAU 2027 meeting request": [
     "src/data/privacy-policy.ts:95"
   ],
   "BAU 2027 Munich": [
-    "src/components/site/menu-experience.ts:90",
-    "src/components/site/SiteFooter.tsx:55"
+    "src/components/site/SiteFooter.tsx:56",
+    "src/components/site/menu-experience.ts:91"
   ],
   "Before you specify": [
     "src/components/site/GuideArticleIntro.tsx:18"
@@ -595,8 +600,8 @@
     "src/data/home.ts:94"
   ],
   "Build a hardware set": [
-    "src/components/site/menu-experience.ts:271",
-    "src/components/site/products-architecture.ts:215"
+    "src/components/site/menu-experience.ts:272",
+    "src/components/site/products-architecture.ts:202"
   ],
   "Business type": [
     "src/data/company.ts:51"
@@ -605,14 +610,14 @@
     "src/components/site/SiteHeader.tsx:182"
   ],
   "Buy on Alibaba": [
-    "src/components/site/SiteFooter.tsx:245",
+    "src/components/site/SiteFooter.tsx:246",
     "src/components/site/SiteHeader.tsx:590"
   ],
   "Buyers come to this range for a panic bar on a fire exit door, an anti-panic device for a double door, or the outside trim that lets a keyed user in while the bar still works from inside. As a panic exit device manufacturer we make the {count} models here in Zhongshan and supply them wholesale to distributors, contractors and OEM brands.": [
     "src/data/category-buying-guides.ts:78"
   ],
   "Buying": [
-    "src/components/site/menu-experience.ts:104"
+    "src/components/site/menu-experience.ts:105"
   ],
   "By number of published models: {list}.": [
     "src/lib/category-guide.ts:152"
@@ -645,22 +650,22 @@
     "src/data/site.ts:88"
   ],
   "Canton Hyland catalog product families": [
-    "src/components/site/menu-experience.ts:303"
+    "src/components/site/menu-experience.ts:304"
   ],
   "Canton Hyland Hardware &\nBuilding Material Co., Ltd.": [
     "src/components/site/WelcomeIntro.tsx:19"
   ],
   "Canton Hyland product categories": [
     "src/components/locale-pages/ProductFinderPage.tsx:48",
-    "src/components/locale-pages/ProductsIndexPage.tsx:40"
+    "src/components/locale-pages/ProductsIndexPage.tsx:41"
   ],
   "Canton Hyland product photography": [
-    "src/components/site/products-architecture.ts:216"
+    "src/components/site/products-architecture.ts:203"
   ],
   "Canton Product Collection": [
     "src/components/locale-pages/CategoryPage.tsx:88",
     "src/components/locale-pages/ComparePage.tsx:78",
-    "src/components/site/products-architecture.ts:193"
+    "src/components/site/products-architecture.ts:180"
   ],
   "Carries current from frame to leaf, so an electrified lock keeps working as the door swings.": [
     "src/lib/configurator.ts:462"
@@ -673,9 +678,6 @@
   ],
   "Carries the leaf's weight from the floor, so a heavy glass door swings without a visible closer.": [
     "src/data/category-positioning.json"
-  ],
-  "Carrying the door, quietly, for years. Brass, stainless steel and steel hinges.": [
-    "src/components/site/products-architecture.ts:70"
   ],
   "Case envelope: 93 mm depth and 173 mm height. The 15 mm thickness is an assumed closure value, not a published product dimension.": [
     "public/downloads/models/index.json"
@@ -720,9 +722,9 @@
     "src/components/locale-pages/CertificationsPage.tsx:62"
   ],
   "Certificates": [
-    "src/components/site/menu-experience.ts:97",
-    "src/components/site/menu-experience.ts:281",
-    "src/components/site/SiteHeader.tsx:54"
+    "src/components/site/SiteHeader.tsx:54",
+    "src/components/site/menu-experience.ts:98",
+    "src/components/site/menu-experience.ts:282"
   ],
   "Certificates and test reports. What is tested, and in whose name.": [
     "src/components/locale-pages/CertificationsPage.tsx:41"
@@ -746,7 +748,7 @@
     "src/data/hardware-terms.ts:278"
   ],
   "Check the backset, centers and fixing details before choosing a lock case.": [
-    "src/components/site/products-architecture.ts:150"
+    "src/components/site/products-architecture.ts:137"
   ],
   "Check the report before you specify the part.": [
     "src/components/locale-pages/CertificationsPage.tsx:97"
@@ -801,10 +803,10 @@
     "src/components/site/DocumentInventory.tsx:32"
   ],
   "Client catalog photograph of a storefront push/pull lock": [
-    "src/components/site/menu-experience.ts:310"
+    "src/components/site/menu-experience.ts:311"
   ],
   "Client catalog photograph of a storefront push/pull lock mechanism": [
-    "src/components/site/products-architecture.ts:140"
+    "src/components/site/products-architecture.ts:127"
   ],
   "Client confirmation, 2026-09-15: ⚠ BC was confirmed as the same finish in the same message. An earlier note here reasoned that CB and BC must differ because one record lists both; that record is now best read as listing one finish twice. Confirm against a sample before a first order.": [
     "src/data/finish-codes.ts:292"
@@ -887,10 +889,10 @@
   "Company": [
     "src/components/site/AuthorProfile.tsx:31",
     "src/components/site/InquiryForm.tsx:29",
-    "src/components/site/menu-experience.ts:96",
-    "src/components/site/menu-experience.ts:288",
     "src/components/site/SiteHeader.tsx:503",
-    "src/components/site/SiteHeader.tsx:509"
+    "src/components/site/SiteHeader.tsx:509",
+    "src/components/site/menu-experience.ts:97",
+    "src/components/site/menu-experience.ts:289"
   ],
   "Company announcements, certification news and technical notes from Canton Hyland.": [
     "src/components/site/NewsListing.tsx:19"
@@ -904,7 +906,7 @@
   ],
   "Compare {name}": [
     "src/components/locale-pages/ComparePage.tsx:80",
-    "src/components/locale-pages/ProductsIndexPage.tsx:72"
+    "src/components/locale-pages/ProductsIndexPage.tsx:75"
   ],
   "Compare every model in this range": [
     "src/components/site/ProductDetail.tsx:61"
@@ -916,7 +918,7 @@
     "src/components/site/SpecMatrix.tsx:38"
   ],
   "Compare models side by side": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:55"
+    "src/components/locale-pages/ProductsIndexPage.tsx:58"
   ],
   "Concealed in the floor, carrying the door's whole weight and closing it — the door swings on the spindle, not on hinges.": [
     "src/lib/configurator.ts:439"
@@ -931,18 +933,18 @@
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:133",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:145",
     "src/components/site/FinderModeSwitch.tsx:44",
+    "src/components/site/SiteFooter.tsx:46",
     "src/components/site/menu-experience.ts:74",
-    "src/components/site/menu-experience.ts:271",
-    "src/components/site/SiteFooter.tsx:46"
+    "src/components/site/menu-experience.ts:272"
   ],
   "Configurator — Find the Right Model": [
     "src/components/locale-pages/ConfiguratorPage.tsx:18"
   ],
   "Configurator Studio": [
-    "src/components/site/menu-experience.ts:75",
-    "src/components/site/menu-experience.ts:272",
     "src/components/site/SiteHeader.tsx:440",
-    "src/components/site/StudioShowcase.tsx:40"
+    "src/components/site/StudioShowcase.tsx:40",
+    "src/components/site/menu-experience.ts:75",
+    "src/components/site/menu-experience.ts:273"
   ],
   "Configurator Studio — Finish and Function": [
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:49"
@@ -951,11 +953,11 @@
     "src/components/site/ProjectDetail.tsx:23"
   ],
   "Contact": [
-    "src/components/site/menu-experience.ts:108",
-    "src/components/site/menu-experience.ts:293",
     "src/components/site/SiteFooter.tsx:17",
     "src/components/site/SiteHeader.tsx:108",
-    "src/components/site/SiteMenuDrawer.tsx:19"
+    "src/components/site/SiteMenuDrawer.tsx:19",
+    "src/components/site/menu-experience.ts:109",
+    "src/components/site/menu-experience.ts:294"
   ],
   "Contact Canton Hyland": [
     "src/components/site/ProductStudies.tsx:59"
@@ -970,6 +972,9 @@
   ],
   "Controls the door's swing and closes it every time. Needed wherever a door must not be left standing open.": [
     "src/lib/configurator.ts:400"
+  ],
+  "Coordinated families · one catalog": [
+    "src/components/site/products-architecture.ts:184"
   ],
   "Coordinated range 55–85kg per leaf": [
     "src/data/feature-columns.ts:141"
@@ -1002,8 +1007,8 @@
     "src/data/hardware-terms.ts:359"
   ],
   "Cylinder calculator": [
-    "src/components/site/menu-experience.ts:79",
-    "src/components/site/SiteFooter.tsx:51"
+    "src/components/site/SiteFooter.tsx:52",
+    "src/components/site/menu-experience.ts:80"
   ],
   "Cylinder, LC04, finish, EN 1125…": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -1015,7 +1020,7 @@
     "src/lib/configurator.ts:430"
   ],
   "Data preferences": [
-    "src/components/site/SiteFooter.tsx:179"
+    "src/components/site/SiteFooter.tsx:180"
   ],
   "Datasheets, CAD files and installation instructions are available on request while the verified download library is being prepared.": [
     "src/components/site/ProductDetail.tsx:97"
@@ -1141,7 +1146,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Direct routes": [
-    "src/components/site/menu-experience.ts:263"
+    "src/components/site/menu-experience.ts:264"
   ],
   "Discuss OEM or private-label production": [
     "src/data/capability.ts:213"
@@ -1181,8 +1186,8 @@
   ],
   "Documents": [
     "src/components/locale-pages/DocumentsPage.tsx:24",
-    "src/components/site/menu-experience.ts:98",
-    "src/components/site/SiteFooter.tsx:52"
+    "src/components/site/SiteFooter.tsx:53",
+    "src/components/site/menu-experience.ts:99"
   ],
   "Documents already available": [
     "src/components/site/ServicesView.tsx:100"
@@ -1191,10 +1196,10 @@
     "src/components/locale-pages/DocumentsPage.tsx:12"
   ],
   "Don’t know the model? Find by door type and material": [
-    "src/components/site/products-architecture.ts:214"
+    "src/components/site/products-architecture.ts:201"
   ],
   "Door & Window Hardware": [
-    "src/components/site/products-architecture.ts:194"
+    "src/components/site/products-architecture.ts:181"
   ],
   "door closer": [
     "src/data/category-sourcing.ts:41"
@@ -1203,8 +1208,7 @@
     "src/components/site/OrderCodeTables.tsx:178"
   ],
   "Door control": [
-    "src/components/site/products-architecture.ts:59",
-    "src/components/site/products-architecture.ts:185"
+    "src/components/site/products-architecture.ts:172"
   ],
   "door hardware accessory": [
     "src/data/category-sourcing.ts:44"
@@ -1240,8 +1244,7 @@
     "src/lib/article-feed.ts:73"
   ],
   "Door hinges": [
-    "src/components/site/products-architecture.ts:68",
-    "src/components/site/products-architecture.ts:173"
+    "src/components/site/products-architecture.ts:160"
   ],
   "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001 certified since 2002, with OEM and private-label production for export.": [
     "src/components/locale-pages/SimplePages.tsx:16"
@@ -1286,10 +1289,10 @@
     "src/components/site/ProductSpecSheetLink.tsx:12"
   ],
   "Downloads": [
-    "src/components/site/menu-experience.ts:99",
-    "src/components/site/menu-experience.ts:280",
     "src/components/site/ProductDetail.tsx:59",
-    "src/components/site/SiteHeader.tsx:110"
+    "src/components/site/SiteHeader.tsx:110",
+    "src/components/site/menu-experience.ts:100",
+    "src/components/site/menu-experience.ts:281"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
     "src/components/site/ServicesView.tsx:86"
@@ -1315,9 +1318,6 @@
   "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers. Much of what we make is tested in our customers' names, at their cost; testing in our own name is being prepared.": [
     "src/components/site/CompanyOverview.tsx:34"
   ],
-  "Each family opens onto its models and the figures that decide whether they fit. The complete catalog below compares them side by side.": [
-    "src/components/site/products-architecture.ts:200"
-  ],
   "Each half is measured from the center of the fixing screw to the outer face of the escutcheon or rose on its side. Half-lengths come in 5mm steps from a minimum of 27.5mm, so the calculated figure is always rounded up: a half that is a little long can be covered with a rose, a half that is short cannot be fixed at the door.": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:45"
   ],
@@ -1325,7 +1325,7 @@
     "src/data/category-buying-guides.ts:415"
   ],
   "Editorial atlas of nine architectural door-hardware families on a neutral field": [
-    "src/components/site/products-architecture.ts:124"
+    "src/components/site/products-architecture.ts:111"
   ],
   "Eight cylinders and one lock case carry it (counted 2026-09-22). Confirmed by the client in writing, 2026-09-21: DK is the cylinder that opens with a key from both sides. He added the caveat himself, and it belongs here: different customers use this code differently and there is no industry-wide standard for it. So treat DK on an incoming inquiry as a question rather than an instruction — confirm which function the buyer means before quoting, because the code alone does not settle it.": [
     "src/data/finish-codes.ts:463"
@@ -1344,7 +1344,7 @@
     "src/data/bau-entry.ts:68"
   ],
   "Engineered by Canton Hyland": [
-    "src/components/site/products-architecture.ts:201"
+    "src/components/site/products-architecture.ts:188"
   ],
   "Engineering for Export": [
     "src/data/home.ts:206"
@@ -1398,15 +1398,15 @@
     "src/data/category-positioning.json"
   ],
   "Events": [
-    "src/components/site/menu-experience.ts:89",
-    "src/components/site/menu-experience.ts:292",
-    "src/components/site/SiteHeader.tsx:53"
+    "src/components/site/SiteHeader.tsx:53",
+    "src/components/site/menu-experience.ts:90",
+    "src/components/site/menu-experience.ts:293"
+  ],
+  "Every category in the catalog": [
+    "src/components/site/products-architecture.ts:185"
   ],
   "Every choice the configurator offers, defined. These are the trade's own definitions — what the part is and where it goes — not claims about any particular model.": [
     "src/components/site/HardwareGlossary.tsx:38"
-  ],
-  "Every door, closed at the right speed. Surface closers sized by leaf weight and width.": [
-    "src/components/site/products-architecture.ts:61"
   ],
   "Every figure should lead back to a published source. Where a value is not published, we say so rather than estimate it.": [
     "src/components/site/GuideListing.tsx:19"
@@ -1415,7 +1415,7 @@
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:119"
   ],
   "Every model in a range on one row each, across the specifications that differ between them — backset, center distance, door thickness, finish.": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:61"
+    "src/components/locale-pages/ProductsIndexPage.tsx:64"
   ],
   "Every model in the catalog": [
     "src/components/site/Configurator.tsx:76"
@@ -1424,7 +1424,10 @@
     "src/components/site/ModelIndex.tsx:26"
   ],
   "Every part, in context.": [
-    "src/components/site/ProductsEditorialOverview.tsx:27"
+    "src/components/site/ProductsEditorialOverview.tsx:32"
+  ],
+  "Every product category": [
+    "src/components/site/menu-experience.ts:270"
   ],
   "Every spring publishes its capacity per variant — {leafWeight} — and a model number ending in the figure is that variant. Pick the band above your leaf weight, not the one it just fits: glass is heavier than it looks, and a spring at its limit closes slowly and wears early. Confirm the door width on the record as well, because a wide light leaf can exceed a spring the weight alone would have passed.": [
     "src/data/category-buying-guides.ts:402"
@@ -1432,11 +1435,11 @@
   "Every visible face is polished before it is plated, because plating does not hide what is underneath it — it magnifies it. This is the slowest step in the chain and the one that separates hardware that photographs well from hardware that still looks right after it is installed under a downlight.": [
     "src/data/capability.ts:109"
   ],
-  "Everything a door needs, from the lever in the hand to the lock case inside the leaf: door hardware in American terms, architectural ironmongery in British ones. Nine families, one standard: every dimension written down, every part made to work with the ones around it.": [
-    "src/components/site/products-architecture.ts:196"
+  "Everything a door needs, from the lever in the hand to the lock case inside the leaf: door hardware in American terms, architectural ironmongery in British ones. One standard throughout: every dimension written down, every part made to work with the ones around it.": [
+    "src/components/site/products-architecture.ts:183"
   ],
   "Evidence": [
-    "src/components/site/menu-experience.ts:94"
+    "src/components/site/menu-experience.ts:95"
   ],
   "Exact model scope": [
     "src/components/locale-pages/CertificationsPage.tsx:21",
@@ -1448,6 +1451,9 @@
   "Example master key hierarchy": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:31"
   ],
+  "Exit devices and door control": [
+    "src/components/site/products-architecture.ts:73"
+  ],
   "Exit hardware is chosen by the door, the leaf width and the outside trim. All three belong on the order.": [
     "src/data/category-positioning.json"
   ],
@@ -1455,7 +1461,7 @@
     "src/data/finish-codes.ts:450"
   ],
   "Explore applications": [
-    "src/components/site/products-architecture.ts:208"
+    "src/components/site/products-architecture.ts:195"
   ],
   "Explore available documents": [
     "src/components/site/GuideListing.tsx:20"
@@ -1464,7 +1470,7 @@
     "src/data/home.ts:53"
   ],
   "Explore lock cases": [
-    "src/components/site/products-architecture.ts:209"
+    "src/components/site/products-architecture.ts:196"
   ],
   "Explore the AR-4 collection": [
     "src/components/site/ArgentinaAr4Showcase.tsx:18"
@@ -1476,8 +1482,8 @@
     "src/components/site/ProductStudies.tsx:44"
   ],
   "Export desk": [
-    "src/components/site/menu-experience.ts:113",
-    "src/components/site/menu-experience.ts:313"
+    "src/components/site/menu-experience.ts:114",
+    "src/components/site/menu-experience.ts:314"
   ],
   "Export, from Xiaolan to your port": [
     "src/components/site/ServicesView.tsx:91"
@@ -1495,12 +1501,12 @@
     "src/components/site/CompanyOverview.tsx:30"
   ],
   "Families": [
-    "src/components/site/ProductsEditorialOverview.tsx:23"
+    "src/components/site/ProductsEditorialOverview.tsx:25"
   ],
   "FAQ": [
-    "src/components/site/menu-experience.ts:100",
-    "src/components/site/SiteFooter.tsx:53",
-    "src/components/site/SiteHeader.tsx:109"
+    "src/components/site/SiteFooter.tsx:54",
+    "src/components/site/SiteHeader.tsx:109",
+    "src/components/site/menu-experience.ts:101"
   ],
   "Featured door hardware": [
     "src/data/home.ts:42"
@@ -1515,13 +1521,13 @@
     "src/components/locale-pages/DownloadsPage.tsx:32"
   ],
   "Filter and compare": [
-    "src/components/site/menu-experience.ts:270"
+    "src/components/site/menu-experience.ts:271"
   ],
   "Filter by type": [
     "src/components/site/CategoryFilter.tsx:48"
   ],
   "Filter published models by family, finish and door condition.": [
-    "src/components/site/menu-experience.ts:300"
+    "src/components/site/menu-experience.ts:301"
   ],
   "Filter the Canton Hyland catalog by category, series, material, finish, door type and certification to build a hardware schedule.": [
     "src/components/locale-pages/ProductFinderPage.tsx:22"
@@ -1549,7 +1555,7 @@
   ],
   "Find the right model": [
     "src/components/locale-pages/ConfiguratorPage.tsx:50",
-    "src/components/locale-pages/ProductsIndexPage.tsx:83"
+    "src/components/locale-pages/ProductsIndexPage.tsx:86"
   ],
   "Find your next answer.": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -1561,7 +1567,7 @@
   ],
   "Finish codes": [
     "src/components/site/OrderCodeTables.tsx:176",
-    "src/components/site/SiteFooter.tsx:48"
+    "src/components/site/SiteFooter.tsx:49"
   ],
   "Finish codes. A model number is three facts, not one name.": [
     "src/components/locale-pages/FinishesPage.tsx:31"
@@ -1570,7 +1576,7 @@
     "src/data/home.ts:207"
   ],
   "Finish with evidence, then talk to the factory.": [
-    "src/components/site/products-architecture.ts:211"
+    "src/components/site/products-architecture.ts:198"
   ],
   "Finishes matched across a whole door schedule, master-key systems planned before the first cylinder is cut, and export documents ready when the container is.": [
     "src/data/home.ts:167"
@@ -1652,7 +1658,7 @@
     "src/components/locale-pages/FaqPage.tsx:30"
   ],
   "From range to installed opening.": [
-    "src/components/site/products-architecture.ts:205"
+    "src/components/site/products-architecture.ts:192"
   ],
   "Function": [
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:111",
@@ -1665,20 +1671,17 @@
   "glass door fitting": [
     "src/data/category-sourcing.ts:43"
   ],
-  "Glass door hardware": [
-    "src/components/site/products-architecture.ts:77"
-  ],
   "Glass gap": [
     "src/data/hardware-terms.ts:234"
   ],
   "Glass hardware": [
-    "src/components/site/products-architecture.ts:179"
+    "src/components/site/products-architecture.ts:166"
   ],
   "Glossary": [
     "src/components/locale-pages/GlossaryPage.tsx:30",
-    "src/components/site/menu-experience.ts:88",
-    "src/components/site/menu-experience.ts:284",
-    "src/components/site/SiteFooter.tsx:49"
+    "src/components/site/SiteFooter.tsx:50",
+    "src/components/site/menu-experience.ts:89",
+    "src/components/site/menu-experience.ts:285"
   ],
   "Google Analytics 4 and Google Tag Manager, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics sets cookies and records the pages viewed, approximate location, device and browser, how far you scroll, how long you read, and clicks on product and contact links. When you send a product inquiry, the inquiry event carries the same one-word first-touch source. Google Analytics 4 does not store IP addresses. Google Tag Manager loads such tags and does not itself profile you. Data may be processed by Google LLC in the USA. More: policies.google.com/privacy": [
     "src/data/privacy-policy.ts:110"
@@ -1716,6 +1719,9 @@
   "Grip handle sets for entrance doors: a long pull outside, a lever inside, latch and deadbolt in one box. Distributors order them for residential and apartment entrances in the finish of the rest of the door; the {count} models are made here by the manufacturer, with an adjustable backset, for wholesale and project supply.": [
     "src/data/category-buying-guides.ts:472"
   ],
+  "Grouped by the job each part does on a door. Each category opens onto its models and the figures that decide whether they fit.": [
+    "src/components/site/products-architecture.ts:187"
+  ],
   "Guangdong, China": [
     "src/data/company.ts:52"
   ],
@@ -1724,13 +1730,13 @@
   ],
   "Guided selection": [
     "src/components/locale-pages/ConfiguratorPage.tsx:58",
-    "src/components/locale-pages/ProductsIndexPage.tsx:102"
+    "src/components/locale-pages/ProductsIndexPage.tsx:105"
   ],
   "Guides": [
     "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
-    "src/components/site/menu-experience.ts:86",
-    "src/components/site/NewsDetail.tsx:91"
+    "src/components/site/NewsDetail.tsx:91",
+    "src/components/site/menu-experience.ts:87"
   ],
   "Guides and News": [
     "src/lib/article-feed.ts:34"
@@ -1753,22 +1759,22 @@
   "Handing is the field most often filled in from memory, and the two conventions in common use disagree with each other. Where a model is reversible the question disappears, which is why it is worth checking before deciding rather than after.": [
     "src/data/hardware-terms.ts:269"
   ],
+  "Handles": [
+    "src/components/site/products-architecture.ts:54"
+  ],
   "Handles on roses or backplates, fitted to a lock case bought separately. A lever can be opened with an elbow or a closed fist, which a knob cannot.": [
     "src/lib/configurator.ts:394"
-  ],
-  "Hardware accessories": [
-    "src/components/site/products-architecture.ts:104"
   ],
   "Hardware guides for the decisions before a purchase order. Dimensions, materials, standards and the questions worth asking.": [
     "src/components/site/GuideListing.tsx:14"
   ],
   "Hardware in focus": [
-    "src/components/site/menu-experience.ts:76",
     "src/components/site/ProductStudies.tsx:41",
-    "src/components/site/SiteFooter.tsx:47"
+    "src/components/site/SiteFooter.tsx:47",
+    "src/components/site/menu-experience.ts:77"
   ],
   "Hardware in focus — explore product photographs and component selections": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:48"
+    "src/components/locale-pages/ProductsIndexPage.tsx:51"
   ],
   "Hardware in Focus — Product Photographs and Selections": [
     "src/components/locale-pages/SimplePages.tsx:41"
@@ -1779,8 +1785,8 @@
   "Hardware you can stand behind.": [
     "src/components/site/WelcomeIntro.tsx:20"
   ],
-  "Holding glass without hiding it. Patch fittings and pulls for frameless doors.": [
-    "src/components/site/products-architecture.ts:79"
+  "Hinges and glass doors": [
+    "src/components/site/products-architecture.ts:81"
   ],
   "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.": [
     "src/lib/configurator.ts:435"
@@ -1813,11 +1819,11 @@
     "src/components/locale-pages/ModelLookupPage.tsx:28",
     "src/components/locale-pages/ProductFinderPage.tsx:41",
     "src/components/locale-pages/ProductPage.tsx:94",
-    "src/components/locale-pages/ProductsIndexPage.tsx:34",
+    "src/components/locale-pages/ProductsIndexPage.tsx:35",
     "src/components/site/AuthorProfile.tsx:30",
     "src/components/site/NewsDetail.tsx:42",
     "src/components/site/ProductDetail.tsx:85",
-    "src/components/site/ProductsEditorialOverview.tsx:20",
+    "src/components/site/ProductsEditorialOverview.tsx:22",
     "src/components/site/ProjectDetail.tsx:15"
   ],
   "Hook locks for sliding doors, where a straight bolt cannot travel out of the edge: the hook swings from the case into the keep. The {count} models here are zinc alloy, made for pocket doors and sliding partitions, and are supplied to distributors and door manufacturers.": [
@@ -1863,7 +1869,7 @@
     "src/components/site/FinderModeSwitch.tsx:41"
   ],
   "How to buy": [
-    "src/components/site/SiteFooter.tsx:217"
+    "src/components/site/SiteFooter.tsx:218"
   ],
   "How to read a Canton Hyland model number: the finish codes (SSS, PB, SN, GM), the lock-function codes (ET, BK, PS) and the single/double door letter, with the models each appears on.": [
     "src/components/locale-pages/FinishesPage.tsx:15"
@@ -2007,7 +2013,7 @@
     "src/data/category-sourcing.ts:37"
   ],
   "Knowledge": [
-    "src/components/site/menu-experience.ts:83"
+    "src/components/site/menu-experience.ts:84"
   ],
   "Language": [
     "src/lib/locale-picker.ts:105"
@@ -2060,14 +2066,11 @@
   "lever handle": [
     "src/data/category-sourcing.ts:36"
   ],
-  "Lever handles": [
-    "src/components/site/products-architecture.ts:32"
-  ],
   "Lever Handles": [
     "src/data/home.ts:30"
   ],
   "Lever systems": [
-    "src/components/site/products-architecture.ts:167"
+    "src/components/site/products-architecture.ts:154"
   ],
   "LinkedIn profile": [
     "src/components/site/AuthorProfile.tsx:26"
@@ -2081,20 +2084,17 @@
   "Lock and handle in one assembly, bored straight through the door face. The commonest lock on an interior door because it needs two holes and no chiselling.": [
     "src/lib/configurator.ts:392"
   ],
-  "Lock cases": [
-    "src/components/site/products-architecture.ts:50"
-  ],
   "Lock cases by backset, center distance and bolt, written down to the millimeter so the lever, cylinder and strike you order around them fit the first time.": [
     "src/data/home.ts:65"
   ],
   "lock cylinder": [
     "src/data/category-sourcing.ts:46"
   ],
-  "Lock cylinders": [
-    "src/components/site/products-architecture.ts:95"
-  ],
   "Locks and architectural door hardware": [
     "src/components/locale-pages/HomePage.tsx:22"
+  ],
+  "Locks and cylinders": [
+    "src/components/site/products-architecture.ts:62"
   ],
   "Locks, cylinders and handles from our catalog, presented in studio compositions. Open each model to explore its original photographs, dimensions and finish options.": [
     "src/components/site/ProductStudies.tsx:43"
@@ -2104,9 +2104,6 @@
   ],
   "Looking for a copper hinge?": [
     "src/data/category-notes.ts:48"
-  ],
-  "Made for the day nobody plans for. Push bars for escape and fire doors, single-point to multi-point.": [
-    "src/components/site/products-architecture.ts:43"
   ],
   "Made in Xiaolan. Since 1998.": [
     "src/components/site/WelcomeIntro.tsx:16"
@@ -2190,7 +2187,7 @@
     "src/components/site/HardwareTerms.tsx:37"
   ],
   "Mechanism detail from the catalog.": [
-    "src/components/site/ProductsEditorialOverview.tsx:29"
+    "src/components/site/ProductsEditorialOverview.tsx:34"
   ],
   "Meet HYDE at": [
     "src/data/bau-entry.ts:16"
@@ -2220,9 +2217,9 @@
   ],
   "Model lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:28",
-    "src/components/site/menu-experience.ts:77",
-    "src/components/site/menu-experience.ts:283",
-    "src/components/site/SiteFooter.tsx:50"
+    "src/components/site/SiteFooter.tsx:51",
+    "src/components/site/menu-experience.ts:78",
+    "src/components/site/menu-experience.ts:284"
   ],
   "Model number — 306 PS, LH852, 70720": [
     "src/components/site/ModelIndex.tsx:28"
@@ -2289,7 +2286,7 @@
     "src/data/category-buying-guides.ts:554"
   ],
   "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalog.": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:19"
+    "src/components/locale-pages/ProductsIndexPage.tsx:20"
   ],
   "Most-requested models": [
     "src/data/demand-showcase.ts:99"
@@ -2347,26 +2344,26 @@
   ],
   "News": [
     "src/components/site/AuthorProfile.tsx:29",
-    "src/components/site/menu-experience.ts:291"
+    "src/components/site/menu-experience.ts:292"
   ],
   "News + Insights": [
     "src/components/locale-pages/ArticlePages.tsx:24"
   ],
   "News + Press": [
-    "src/components/site/menu-experience.ts:87",
     "src/components/site/NewsDetail.tsx:43",
     "src/components/site/NewsDetail.tsx:90",
-    "src/components/site/NewsListing.tsx:17"
+    "src/components/site/NewsListing.tsx:17",
+    "src/components/site/menu-experience.ts:88"
   ],
   "Newsletter": [
-    "src/components/site/menu-experience.ts:109",
-    "src/components/site/SiteFooter.tsx:194"
+    "src/components/site/SiteFooter.tsx:195",
+    "src/components/site/menu-experience.ts:110"
   ],
   "Newsletter request": [
     "src/data/privacy-policy.ts:96"
   ],
   "Next step": [
-    "src/components/site/ProductsEditorialOverview.tsx:24"
+    "src/components/site/ProductsEditorialOverview.tsx:26"
   ],
   "Next steps": [
     "src/components/site/ProductDetail.tsx:60"
@@ -2379,15 +2376,6 @@
   ],
   "night latch and rim lock": [
     "src/data/category-sourcing.ts:34"
-  ],
-  "Nine coordinated families · one catalog": [
-    "src/components/site/products-architecture.ts:197"
-  ],
-  "Nine product families": [
-    "src/components/site/menu-experience.ts:269"
-  ],
-  "Nine ways into the catalog": [
-    "src/components/site/products-architecture.ts:198"
   ],
   "No guides match these filters.": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -2432,7 +2420,7 @@
     "src/data/finish-codes.ts:409"
   ],
   "Not sure which attributes to filter on? The guided configurator asks one question at a time and never offers a choice that leads nowhere.": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:94"
+    "src/components/locale-pages/ProductsIndexPage.tsx:97"
   ],
   "Nothing matches this combination.": [
     "src/components/site/ProductFinder.tsx:66"
@@ -2456,7 +2444,7 @@
     "src/components/locale-pages/SimplePages.tsx:29"
   ],
   "OEM services": [
-    "src/components/site/menu-experience.ts:106"
+    "src/components/site/menu-experience.ts:107"
   ],
   "OEM tooling, private label, export": [
     "src/components/site/SiteHeader.tsx:52"
@@ -2492,14 +2480,11 @@
     "src/data/capability.ts:209"
   ],
   "One contact from sample review to production order.": [
-    "src/components/site/menu-experience.ts:114",
-    "src/components/site/menu-experience.ts:314"
+    "src/components/site/menu-experience.ts:115",
+    "src/components/site/menu-experience.ts:315"
   ],
   "One cylindrical lock. Shares its letters with the finish code BS, which is why the parser reads position rather than letters — see src/lib/order-code.ts.": [
     "src/data/finish-codes.ts:499"
-  ],
-  "One key, the right doors. Profile and keyed cylinders, master-key systems included.": [
-    "src/components/site/products-architecture.ts:97"
   ],
   "One model, every finish the factory makes.": [
     "src/components/site/StudioShowcase.tsx:43"
@@ -2511,7 +2496,7 @@
     "src/data/finish-codes.ts:188"
   ],
   "One table per category": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:57"
+    "src/components/locale-pages/ProductsIndexPage.tsx:60"
   ],
   "One table, one row per model, across the specifications that differ between them.": [
     "src/components/site/ProductDetail.tsx:63"
@@ -2544,16 +2529,16 @@
     "src/components/site/DocumentPreview.tsx:8"
   ],
   "Open technical downloads": [
-    "src/components/site/products-architecture.ts:212"
+    "src/components/site/products-architecture.ts:199"
   ],
   "Open the full comparison page": [
     "src/components/site/SpecMatrix.tsx:43"
   ],
   "Open the guided configurator": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:96"
+    "src/components/locale-pages/ProductsIndexPage.tsx:99"
   ],
   "Open the Product Finder": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:100"
+    "src/components/locale-pages/ProductsIndexPage.tsx:103"
   ],
   "Open the product page": [
     "src/components/site/Configurator.tsx:71"
@@ -2566,7 +2551,7 @@
     "src/components/site/InquiryForm.tsx:52"
   ],
   "Opening furniture": [
-    "src/components/site/products-architecture.ts:168"
+    "src/components/site/products-architecture.ts:155"
   ],
   "opens every door in this system": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:35"
@@ -2594,8 +2579,8 @@
   ],
   "Order codes": [
     "src/components/locale-pages/FinishesPage.tsx:26",
-    "src/components/site/menu-experience.ts:78",
-    "src/components/site/menu-experience.ts:282"
+    "src/components/site/menu-experience.ts:79",
+    "src/components/site/menu-experience.ts:283"
   ],
   "Order Codes + Finishes": [
     "src/components/locale-pages/FinishesPage.tsx:14"
@@ -2631,10 +2616,10 @@
     "src/data/home.ts:186"
   ],
   "Original catalog photograph of the LC14 lock case with its faceplate and bolts": [
-    "src/components/site/products-architecture.ts:156"
+    "src/components/site/products-architecture.ts:143"
   ],
   "Original photographs from our catalog.": [
-    "src/components/site/ProductsEditorialOverview.tsx:22"
+    "src/components/site/ProductsEditorialOverview.tsx:24"
   ],
   "original-photo composition": [
     "src/components/site/ProductStudies.tsx:49"
@@ -2691,9 +2676,6 @@
   "Panic exit device": [
     "src/data/bau-entry.ts:18"
   ],
-  "Panic exit devices": [
-    "src/components/site/products-architecture.ts:41"
-  ],
   "Panic Exit Devices": [
     "src/data/home.ts:51",
     "src/data/home.ts:107"
@@ -2717,7 +2699,7 @@
     "src/data/category-buying-guides.ts:499"
   ],
   "Patch, lock and pull families": [
-    "src/components/site/products-architecture.ts:180"
+    "src/components/site/products-architecture.ts:167"
   ],
   "People arrive here looking for a file rather than a product: a cutsheet for a lock, a DWG, a BIM object, a ficha técnica. This page is the honest inventory, in the order of how much of it exists.": [
     "src/components/locale-pages/DocumentsPage.tsx:35"
@@ -2774,8 +2756,8 @@
   ],
   "Price list": [
     "src/components/locale-pages/ContactPage.tsx:76",
-    "src/components/site/menu-experience.ts:107",
-    "src/components/site/SiteFooter.tsx:54"
+    "src/components/site/SiteFooter.tsx:55",
+    "src/components/site/menu-experience.ts:108"
   ],
   "privacy notice": [
     "src/components/site/PrivacyNote.tsx:11"
@@ -2803,11 +2785,11 @@
     "src/components/locale-pages/ProductFinderPage.tsx:43",
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductFinderPage.tsx:58",
-    "src/components/site/menu-experience.ts:73",
-    "src/components/site/menu-experience.ts:270",
-    "src/components/site/menu-experience.ts:299",
     "src/components/site/ProductStudies.tsx:47",
-    "src/components/site/SiteHeader.tsx:431"
+    "src/components/site/SiteHeader.tsx:431",
+    "src/components/site/menu-experience.ts:73",
+    "src/components/site/menu-experience.ts:271",
+    "src/components/site/menu-experience.ts:300"
   ],
   "Product Finder — {count} Door Hardware Models": [
     "src/components/locale-pages/ProductFinderPage.tsx:21"
@@ -2845,16 +2827,16 @@
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductPage.tsx:85",
     "src/components/locale-pages/ProductPage.tsx:95",
-    "src/components/locale-pages/ProductsIndexPage.tsx:35",
-    "src/components/site/menu-experience.ts:70",
-    "src/components/site/menu-experience.ts:269",
+    "src/components/locale-pages/ProductsIndexPage.tsx:36",
     "src/components/site/ProductDetail.tsx:86",
-    "src/components/site/ProductsEditorialOverview.tsx:21",
+    "src/components/site/ProductsEditorialOverview.tsx:23",
     "src/components/site/SiteHeader.tsx:415",
-    "src/components/site/SiteHeader.tsx:421"
+    "src/components/site/SiteHeader.tsx:421",
+    "src/components/site/menu-experience.ts:70",
+    "src/components/site/menu-experience.ts:270"
   ],
   "Products — Door Hardware Catalog": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:18"
+    "src/components/locale-pages/ProductsIndexPage.tsx:19"
   ],
   "Products mentioned": [
     "src/components/site/NewsDetail.tsx:47"
@@ -2891,7 +2873,7 @@
     "src/data/category-buying-guides.ts:597"
   ],
   "published models. Select a product to explore.": [
-    "src/components/site/ProductsEditorialOverview.tsx:25"
+    "src/components/site/ProductsEditorialOverview.tsx:27"
   ],
   "Published now": [
     "src/components/site/DocumentInventory.tsx:26"
@@ -2901,9 +2883,6 @@
   ],
   "Pull and door handles in stainless steel, for entrances and glass doors where the handle is the visible hardware.": [
     "src/lib/configurator.ts:396"
-  ],
-  "Pull handles": [
-    "src/components/site/products-architecture.ts:86"
   ],
   "Pulls fixed through drilled toughened glass, with no frame to fix to.": [
     "src/lib/configurator.ts:448"
@@ -2941,7 +2920,7 @@
   ],
   "Range": [
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:108",
-    "src/components/site/products-architecture.ts:116"
+    "src/components/site/products-architecture.ts:103"
   ],
   "Read before ordering": [
     "src/components/site/CategoryGuide.tsx:25"
@@ -3111,7 +3090,7 @@
     "src/components/locale-pages/SimplePages.tsx:42"
   ],
   "See how coordinated hardware meets the opening.": [
-    "src/components/site/menu-experience.ts:307"
+    "src/components/site/menu-experience.ts:308"
   ],
   "See the exit devices": [
     "src/data/home.ts:110"
@@ -3123,7 +3102,7 @@
     "src/components/site/HardwareGlossary.tsx:39"
   ],
   "See the product families first, with complete silhouettes from our catalog.": [
-    "src/components/site/products-architecture.ts:118"
+    "src/components/site/products-architecture.ts:105"
   ],
   "See the whole {category} range": [
     "src/components/locale-pages/CollectionPage.tsx:134"
@@ -3144,13 +3123,13 @@
     "src/data/home.ts:154"
   ],
   "Selection and specification": [
-    "src/components/site/products-architecture.ts:204"
+    "src/components/site/products-architecture.ts:191"
   ],
   "Send a drawing, a sample or a reference model. Our engineers work out the part, we cut the tooling, and you approve samples before a single production piece is made. Tooling cost and the minimum run are quoted per part; on our standard models, most minimums fall between 300 and 5,000 pieces.": [
     "src/components/site/ServicesView.tsx:62"
   ],
   "Send a project inquiry": [
-    "src/components/site/products-architecture.ts:213"
+    "src/components/site/products-architecture.ts:200"
   ],
   "Send a service brief to Canton Hyland": [
     "src/components/site/ServicesView.tsx:47"
@@ -3222,9 +3201,9 @@
     "src/data/home.ts:173"
   ],
   "Services": [
-    "src/components/site/menu-experience.ts:279",
     "src/components/site/ServicesView.tsx:40",
-    "src/components/site/SiteHeader.tsx:52"
+    "src/components/site/SiteHeader.tsx:52",
+    "src/components/site/menu-experience.ts:280"
   ],
   "Set includes": [
     "src/lib/flagship-tooling.ts:54"
@@ -3251,7 +3230,7 @@
     "src/data/category-positioning.json"
   ],
   "Sign-up here": [
-    "src/components/site/SiteFooter.tsx:205"
+    "src/components/site/SiteFooter.tsx:206"
   ],
   "Single cylinder has a thumbturn inside and is the usual choice for an entrance door, because it opens from inside without a key. Double cylinder needs a key on both sides and is specified where a glazed panel sits within reach of the lock. Check local egress rules before choosing double cylinder on an exit door.": [
     "src/data/category-buying-guides.ts:357"
@@ -3278,7 +3257,7 @@
     "src/data/category-sourcing.ts:47"
   ],
   "Social Media": [
-    "src/components/site/SiteFooter.tsx:289"
+    "src/components/site/SiteFooter.tsx:290"
   ],
   "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.": [
     "src/lib/configurator.ts:460"
@@ -3287,7 +3266,7 @@
     "src/data/category-positioning.json"
   ],
   "Source": [
-    "src/components/site/menu-experience.ts:276"
+    "src/components/site/menu-experience.ts:277"
   ],
   "Source by range or by project": [
     "src/data/home.ts:73"
@@ -3314,10 +3293,10 @@
     "src/data/category-buying-guides.ts:149"
   ],
   "Specify": [
-    "src/components/site/menu-experience.ts:267"
+    "src/components/site/menu-experience.ts:268"
   ],
   "Specify and source": [
-    "src/components/site/products-architecture.ts:210"
+    "src/components/site/products-architecture.ts:197"
   ],
   "Specify with confidence": [
     "src/data/home.ts:198"
@@ -3329,7 +3308,7 @@
     "src/components/site/menu-experience.ts:44"
   ],
   "Specify. Source. Know the factory.": [
-    "src/components/site/menu-experience.ts:264"
+    "src/components/site/menu-experience.ts:265"
   ],
   "Spindle": [
     "src/data/hardware-terms.ts:339"
@@ -3374,7 +3353,7 @@
     "src/components/site/GuideArticleIntro.tsx:17"
   ],
   "Start with the door, its opening action and the way it will be used.": [
-    "src/components/site/products-architecture.ts:134"
+    "src/components/site/products-architecture.ts:121"
   ],
   "Start with the evidence.": [
     "src/components/site/GuideListing.tsx:18"
@@ -3414,10 +3393,10 @@
     "src/components/site/ProductDetail.tsx:71"
   ],
   "Surface and concealed systems": [
-    "src/components/site/products-architecture.ts:186"
+    "src/components/site/products-architecture.ts:173"
   ],
   "Switch finish and function": [
-    "src/components/site/menu-experience.ts:272"
+    "src/components/site/menu-experience.ts:273"
   ],
   "Switch finish and function on the real part": [
     "src/components/site/FinderModeSwitch.tsx:47"
@@ -3435,7 +3414,7 @@
     "src/components/site/CompanyOverview.tsx:40"
   ],
   "Technical": [
-    "src/components/site/products-architecture.ts:148"
+    "src/components/site/products-architecture.ts:135"
   ],
   "Technical library": [
     "src/components/locale-pages/DownloadsPage.tsx:44"
@@ -3509,6 +3488,10 @@
   "The {side} half stands {mm}mm proud, more than the {max}mm we treat as the limit. Use a raised escutcheon or security rose on that side to take up the difference; do not order a shorter half, because there is none that still reaches.": [
     "src/components/site/CylinderCalculator.tsx:69"
   ],
+  "The 9014 lever": [
+    "src/components/site/SiteFooter.tsx:48",
+    "src/components/site/menu-experience.ts:76"
+  ],
   "The arithmetic, with a worked table": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
   ],
@@ -3516,7 +3499,7 @@
     "src/data/category-positioning.json"
   ],
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
-    "src/components/site/SiteFooter.tsx:198"
+    "src/components/site/SiteFooter.tsx:199"
   ],
   "The cases with a cylinder hole take a euro profile cylinder, sized to the door thickness; our lock cylinders page lists the published lengths. Cylinder and handles are ordered separately from the case, which is how door factories want it.": [
     "src/data/category-buying-guides.ts:571"
@@ -3552,7 +3535,7 @@
     "src/data/hardware-terms.ts:78"
   ],
   "The door decides the hardware: what it is made of, how it opens, who uses it and how often. Send us your door schedule and our engineers will match each opening to a model.": [
-    "src/components/site/products-architecture.ts:207"
+    "src/components/site/products-architecture.ts:194"
   ],
   "The everyday interior lock: a bored preparation and a quick replacement.": [
     "src/data/category-positioning.json"
@@ -3562,9 +3545,6 @@
   ],
   "The factory, markets and technical support behind HYDE.": [
     "src/components/site/SiteHeader.tsx:512"
-  ],
-  "The first handshake a building gives. Lever sets in stainless steel, brass and matte black.": [
-    "src/components/site/products-architecture.ts:34"
   ],
   "The form reaches the same export desks as the addresses above. If it cannot send, the page keeps everything you typed and offers it as a ready-addressed email — your inquiry is not lost either way.": [
     "src/components/locale-pages/ContactPage.tsx:177"
@@ -3626,9 +3606,6 @@
   "The part did not change. Its name did, so that the name and the specification agree. Every old address below still resolves — it returns a permanent redirect to the page named beside it, so a link in an old email keeps working.": [
     "src/components/site/ModelLookup.tsx:86"
   ],
-  "The part inside the door that keeps its word. Mortise cases by backset and bolt.": [
-    "src/components/site/products-architecture.ts:52"
-  ],
   "The parts that finish a door schedule: latches for tubular levers, flush bolts and door coordinators for double doors, door viewers, door stops, security door guards, occupied indicators for cubicles and power-transfer devices for electrified locks. A latch hardware catalog in one place: {count} models, made or finished here by the manufacturer for wholesale supply.": [
     "src/data/category-buying-guides.ts:527"
   ],
@@ -3636,7 +3613,7 @@
     "src/data/hardware-terms.ts:325"
   ],
   "The Product Finder filters the full catalog by category, type, series, material, finish, door type and certification. Filters combine, counts update as you go, and the address bar keeps your selection — so a narrowed view can be pasted straight into an email to a colleague.": [
-    "src/components/locale-pages/ProductsIndexPage.tsx:90"
+    "src/components/locale-pages/ProductsIndexPage.tsx:93"
   ],
   "The product overview": [
     "src/components/site/WelcomeIntro.tsx:23"
@@ -3676,9 +3653,6 @@
   ],
   "The site stores four small items in your browser. None of them identifies you:": [
     "src/data/privacy-policy.ts:73"
-  ],
-  "The small parts that finish the job. Viewers, stops, transfer devices, bolts, indicators and latches.": [
-    "src/components/site/products-architecture.ts:106"
   ],
   "The specifications that differ between models, side by side. An empty cell means we have not published that figure for that model yet.": [
     "src/components/site/SpecMatrix.tsx:40"
@@ -3861,7 +3835,7 @@
     "src/data/company.ts:49"
   ],
   "Varied constructions": [
-    "src/components/site/products-architecture.ts:174"
+    "src/components/site/products-architecture.ts:161"
   ],
   "Verified dimensions are pending the current technical catalog. No values have been inferred from similar products.": [
     "src/components/site/ProductDetail.tsx:93"
@@ -4040,9 +4014,6 @@
   ],
   "What material and wall thickness are the pieces made from?": [
     "src/data/category-buying-guides.ts:255"
-  ],
-  "What people reach for first. Grip, pull and concealed handles for entrance and sliding doors.": [
-    "src/components/site/products-architecture.ts:88"
   ],
   "What personal data cantonlock.com collects through its forms, analytics and hosting, why, who receives it, and how to exercise your data-protection rights.": [
     "src/data/privacy-policy.ts:52"

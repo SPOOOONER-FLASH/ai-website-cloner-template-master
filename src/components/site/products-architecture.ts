@@ -11,10 +11,20 @@ interface LocalizedText {
   pt?: string;
 }
 
+/**
+ * One category entry on /products. Its name and one-line summary are the category's own
+ * (content/categories.json, read with `t()` so all ten locales translate), so they cannot
+ * drift from the category page they open. `thumbnail` is the product whose real photograph
+ * stands for the category: a white-field catalog shot of one part in one finish.
+ */
 export interface ProductFamilyDefinition {
   slug: string;
-  label: LocalizedText;
-  description: LocalizedText;
+  thumbnail: string;
+}
+
+export interface ProductGroupDefinition {
+  title: LocalizedText;
+  families: readonly ProductFamilyDefinition[];
 }
 
 export interface ProductStoryDefinition {
@@ -26,89 +36,66 @@ export interface ProductStoryDefinition {
   href: string;
 }
 
-export const PRODUCT_FAMILIES: readonly ProductFamilyDefinition[] = [
+/*
+  EVERY CATEGORY, IN FIVE GROUPS (client, 2026-09-30: 「这个nine ways 是不是要优化下」).
+
+  The block used to list nine hand-picked families. Those nine held 330 of the 549 models
+  on the site; knob locks, the stainless steel levers (the 9014's own category), bathroom
+  accessories, floor springs, night latches, deadbolts, grab bars and sliding hook locks
+  had no door from this page at all. It also spoke in taglines ("The first handshake a
+  building gives") where a buyer wanted a fact.
+
+  Now every top-level category is here, grouped by the job it does on a door. A category
+  with no published model is skipped at render time, and products-architecture.test.ts
+  fails if a category in content/categories.json is missing from every group.
+*/
+export const PRODUCT_GROUPS: readonly ProductGroupDefinition[] = [
   {
-    slug: "lever-handles",
-    label: { en: "Lever handles", es: "Manijas de palanca", pt: "Maçanetas" },
-    description: {
-      en: "The first handshake a building gives. Lever sets in stainless steel, brass and matte black.",
-      es: "El primer apretón de manos de un edificio. Manijas en acero inoxidable, latón y negro mate.",
-      pt: "O primeiro aperto de mão de um prédio. Maçanetas em aço inoxidável, latão e preto fosco.",
-    },
+    title: { en: "Handles", es: "Manijas y tiradores", pt: "Maçanetas e puxadores" },
+    families: [
+      { slug: "stainless-steel-handles", thumbnail: "9001-stainless-steel-handle" },
+      { slug: "lever-handles", thumbnail: "3431-sset-lever-handle" },
+      { slug: "grip-handle-sets", thumbnail: "70710-sn-grip-handle-set" },
+    ],
   },
   {
-    slug: "panic-exit-devices",
-    label: { en: "Panic exit devices", es: "Barras antipánico", pt: "Barras antipânico" },
-    description: {
-      en: "Made for the day nobody plans for. Push bars for escape and fire doors, single-point to multi-point.",
-      es: "Hechas para el día que nadie planea. Barras de empuje para puertas de evacuación y cortafuego, de un punto a multipunto.",
-      pt: "Feitas para o dia que ninguém planeja. Barras de empurrar para portas de saída de emergência e corta-fogo, de um ponto a multiponto.",
-    },
+    title: { en: "Locks and cylinders", es: "Cerraduras y cilindros", pt: "Fechaduras e cilindros" },
+    families: [
+      { slug: "lock-cases", thumbnail: "1121-lock-case" },
+      { slug: "lock-cylinders", thumbnail: "54-dk-lock-cylinder" },
+      { slug: "knob-locks", thumbnail: "575-sset-tubular-lock" },
+      { slug: "deadbolts", thumbnail: "d101-ss-deadbolts" },
+      { slug: "night-latches-rim-locks", thumbnail: "260-night-latch-and-rim-lock" },
+      { slug: "sliding-hook-locks", thumbnail: "s02-cp-sliding-hook-lock" },
+    ],
   },
   {
-    slug: "lock-cases",
-    label: { en: "Lock cases", es: "Cerraduras de embutir", pt: "Fechaduras de embutir" },
-    description: {
-      en: "The part inside the door that keeps its word. Mortise cases by backset and bolt.",
-      es: "La pieza de dentro que cumple su palabra. Cajas de embutir por entrada y pestillo.",
-      pt: "A peça lá dentro que cumpre a palavra. Caixas de embutir por distância ao eixo e lingueta.",
-    },
+    title: { en: "Exit devices and door control", es: "Barras antipánico y control de puertas", pt: "Barras antipânico e controle de porta" },
+    families: [
+      { slug: "panic-exit-devices", thumbnail: "305-fire-door-panic-exit-device" },
+      { slug: "door-closers", thumbnail: "ju-051-door-closer" },
+      { slug: "floor-springs-and-pivots", thumbnail: "d-3001-floor-spring" },
+    ],
   },
   {
-    slug: "door-closers",
-    label: { en: "Door control", es: "Control de puertas", pt: "Controle de porta" },
-    description: {
-      en: "Every door, closed at the right speed. Surface closers sized by leaf weight and width.",
-      es: "Cada puerta, cerrada a la velocidad justa. Cierrapuertas de superficie según el peso y el ancho de la hoja.",
-      pt: "Cada porta fechada na velocidade certa. Molas aéreas de sobrepor pelo peso e pela largura da folha.",
-    },
+    title: { en: "Hinges and glass doors", es: "Bisagras y puertas de vidrio", pt: "Dobradiças e portas de vidro" },
+    families: [
+      { slug: "brass-steel-hinges", thumbnail: "ssh012-brass-and-steel-hinges" },
+      { slug: "glass-door-accessories", thumbnail: "100-glass-door-handle" },
+    ],
   },
   {
-    slug: "brass-steel-hinges",
-    label: { en: "Door hinges", es: "Bisagras para puertas", pt: "Dobradiças" },
-    description: {
-      en: "Carrying the door, quietly, for years. Brass, stainless steel and steel hinges.",
-      es: "Sostienen la puerta en silencio, año tras año. Bisagras de latón, acero inoxidable y acero.",
-      pt: "Sustentam a porta em silêncio, ano após ano. Dobradiças de latão, aço inoxidável e aço.",
-    },
-  },
-  {
-    slug: "glass-door-accessories",
-    label: { en: "Glass door hardware", es: "Herrajes para puertas de vidrio", pt: "Ferragens para porta de vidro" },
-    description: {
-      en: "Holding glass without hiding it. Patch fittings and pulls for frameless doors.",
-      es: "Sujetan el vidrio sin taparlo. Herrajes de fijación y tiradores para puertas de vidrio sin marco.",
-      pt: "Seguram o vidro sem escondê-lo. Ferragens de fixação e puxadores para portas de vidro sem moldura.",
-    },
-  },
-  {
-    slug: "grip-handle-sets",
-    label: { en: "Pull handles", es: "Tiradores", pt: "Puxadores" },
-    description: {
-      en: "What people reach for first. Grip, pull and concealed handles for entrance and sliding doors.",
-      es: "Lo primero que busca la mano. Tiradores y manijas ocultas para accesos y puertas corredizas.",
-      pt: "A primeira coisa que a mão procura. Puxadores de pegar, de tubo e embutidos para entradas e portas de correr.",
-    },
-  },
-  {
-    slug: "lock-cylinders",
-    label: { en: "Lock cylinders", es: "Cilindros", pt: "Cilindros" },
-    description: {
-      en: "One key, the right doors. Profile and keyed cylinders, master-key systems included.",
-      es: "Una llave, las puertas correctas. Cilindros de perfil y con llave, también para sistemas amaestrados.",
-      pt: "Uma chave, as portas certas. Cilindros de perfil e com chave, também para sistemas de chave-mestra.",
-    },
-  },
-  {
-    slug: "hardware-accessories",
-    label: { en: "Hardware accessories", es: "Accesorios de herrajes", pt: "Acessórios de ferragem" },
-    description: {
-      en: "The small parts that finish the job. Viewers, stops, transfer devices, bolts, indicators and latches.",
-      es: "Las piezas pequeñas que rematan el trabajo. Mirillas, topes, pasacables, pasadores, indicadores y pestillos.",
-      pt: "As peças pequenas que completam o serviço. Olhos mágicos, batentes, passa-fios, ferrolhos, indicadores e trincos.",
-    },
+    title: { en: "Bathroom and accessories", es: "Baño y accesorios", pt: "Banheiro e acessórios" },
+    families: [
+      { slug: "bathroom-accessories", thumbnail: "bh05-hook-rail" },
+      { slug: "care-grab-bars", thumbnail: "bh01-grab-bar" },
+      { slug: "hardware-accessories", thumbnail: "500-indicator" },
+    ],
   },
 ] as const;
+
+/** Every category in the groups, in page order. */
+export const PRODUCT_FAMILIES: readonly ProductFamilyDefinition[] = PRODUCT_GROUPS.flatMap((group) => group.families);
 
 export const PRODUCT_STORY: readonly ProductStoryDefinition[] = [
   {
@@ -193,11 +180,11 @@ const COPY = {
     collection: "Canton Product Collection",
     title: "Door & Window Hardware",
     intro:
-      "Everything a door needs, from the lever in the hand to the lock case inside the leaf: door hardware in American terms, architectural ironmongery in British ones. Nine families, one standard: every dimension written down, every part made to work with the ones around it.",
-    rangeMeta: "Nine coordinated families · one catalog",
-    familiesHeading: "Nine ways into the catalog",
+      "Everything a door needs, from the lever in the hand to the lock case inside the leaf: door hardware in American terms, architectural ironmongery in British ones. One standard throughout: every dimension written down, every part made to work with the ones around it.",
+    rangeMeta: "Coordinated families · one catalog",
+    familiesHeading: "Every category in the catalog",
     familiesBody:
-      "Each family opens onto its models and the figures that decide whether they fit. The complete catalog below compares them side by side.",
+      "Grouped by the job each part does on a door. Each category opens onto its models and the figures that decide whether they fit.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
       "A door is a set of parts that have to agree with each other: lever, lock case, cylinder, strike. We supply them together, each specified against the others, so the opening works the day it is fitted.",
@@ -219,11 +206,11 @@ const COPY = {
     collection: "Colección Canton",
     title: "Herrajes para puertas y ventanas",
     intro:
-      "Todo lo que necesita una puerta, desde la manija en la mano hasta la caja de cerradura dentro de la hoja. Nueve familias y un mismo criterio: cada medida por escrito y cada pieza hecha para trabajar con las que la rodean.",
-    rangeMeta: "Nueve familias coordinadas · un catálogo",
-    familiesHeading: "Nueve entradas al catálogo",
+      "Todo lo que necesita una puerta, desde la manija en la mano hasta la caja de cerradura dentro de la hoja. Un mismo criterio en todo el catálogo: cada medida por escrito y cada pieza hecha para trabajar con las que la rodean.",
+    rangeMeta: "Familias coordinadas · un catálogo",
+    familiesHeading: "Todas las categorías del catálogo",
     familiesBody:
-      "Cada familia lleva a sus modelos y a las cifras que deciden si encajan. El catálogo completo, más abajo, los compara uno al lado del otro.",
+      "Agrupadas según lo que hace cada pieza en la puerta. Cada categoría lleva a sus modelos y a las cifras que deciden si encajan.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
       "Una puerta es un conjunto de piezas que tienen que entenderse entre sí: manija, caja de cerradura, cilindro y cerradero. Las suministramos juntas, cada una especificada en función de las demás, para que la puerta funcione el día que se monta.",
@@ -245,11 +232,11 @@ const COPY = {
     collection: "Coleção Canton",
     title: "Ferragens para portas e janelas",
     intro:
-      "Tudo o que uma porta precisa, da maçaneta na mão à caixa de fechadura dentro da folha. Nove famílias e um mesmo critério: cada medida registrada e cada peça feita para trabalhar com as que estão ao redor.",
-    rangeMeta: "Nove famílias coordenadas · um catálogo",
-    familiesHeading: "Nove entradas no catálogo",
+      "Tudo o que uma porta precisa, da maçaneta na mão à caixa de fechadura dentro da folha. Um mesmo critério em todo o catálogo: cada medida registrada e cada peça feita para trabalhar com as que estão ao redor.",
+    rangeMeta: "Famílias coordenadas · um catálogo",
+    familiesHeading: "Todas as categorias do catálogo",
     familiesBody:
-      "Cada família leva aos seus modelos e aos números que decidem se eles servem. O catálogo completo, logo abaixo, compara todos lado a lado.",
+      "Agrupadas pelo que cada peça faz na porta. Cada categoria leva aos seus modelos e aos números que decidem se eles servem.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
       "Uma porta é um conjunto de peças que precisam conversar entre si: maçaneta, caixa de fechadura, cilindro e contra-testa. Fornecemos tudo junto, cada peça especificada em função das outras, para que a porta funcione no dia da instalação.",
@@ -283,11 +270,12 @@ export function getProductsArchitecture(locale: Locale) {
 
   return {
     ...copy,
-    families: PRODUCT_FAMILIES.map((family) => ({
-      slug: family.slug,
-      label: dict(family.label, locale),
-      description: dict(family.description, locale),
-      href: localizedHref(`/products/${family.slug}/`, locale),
+    groups: PRODUCT_GROUPS.map((group) => ({
+      title: dict(group.title, locale),
+      families: group.families.map((family) => ({
+        ...family,
+        href: localizedHref(`/products/${family.slug}/`, locale),
+      })),
     })),
     story: PRODUCT_STORY.map((chapter) => ({
       ...chapter,
