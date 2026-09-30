@@ -242,3 +242,30 @@
 - `79f5207bc69` 玻璃门指南：JU 系列不是地弹簧；三段"我们不公布"已被 09-29 发布推翻
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/30 09:32:50 · 三次推送失败
+
+原因：旁路合并也失败：
+
+未推送的提交：
+
+- `5154fdd6503` Merge remote-tracking branch 'origin/main' into HEAD
+- `1b1a9485778` shiplog: 更新上线存档
+- `87a997a89f6` chunk-push-release 推 main 不再用 --force；main 上已有别的发布就停下；goal #126、#127 完成
+- `d8592eb39d3` 合并本地提交（ship 旁路合并；SHIPLOG/PUSH-PENDING 冲突按生成文件处理：取远端版本后重新生成）
+- `d7727d9890d` shiplog: 更新上线存档
+- `2a950de5f63` Aribell 报价单：加样品条款（收费，货款中抵扣）
+- `b867d887361` DV06 门镜补 160°：视角 160/180/200，门厚增 30–50mm（160°）
+- `b6c226bab7b` Aribell 报价单定稿：按老板最终内容（型号、价格、30/70、FOB 规则）重出
+- `7497a90e25a` Aribell 门镜报价单；报价规矩补一条：图片不得藏在打印区外
+- `57c7abd7fd6` 报价规矩：记下 Serraller 第二版 —— 300 端盖为铝，换型号须整行替换
+- `d735f412e49` Record KANEE asset push conflict without claiming deployment
+- `6f70114b962` shiplog: 更新上线存档
+- `387c311f261` Add traceable HYDE native-photo studies and motion trial
+- `fe7407014b0` shiplog: 更新上线存档
+- `a932342f2b3` 报价规矩：记下 D.P. Serraller 一单老板改稿的三条教训
+- `9cfd82fb1dd` Add HYDE BAU entry design previews
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+→ 已推送（09-30，工程会话）：上面 16 个提交全部在远端，main = `5154fdd6503`。git push 报超时，`git ls-remote` 确认已到。
