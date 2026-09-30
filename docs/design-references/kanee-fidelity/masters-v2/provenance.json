@@ -1,0 +1,609 @@
+[
+  {
+    "id": "01-45-bnik-pale-stone",
+    "model": "45 BNIK",
+    "source": "docs/design-references/kanee-fidelity/sources/45-bnik.png",
+    "sourceSha256": "35333ff0e607829f7d3467bd68aa5b25392eb1f5331ae5fd50e4acc50e97daf1",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "01-45-bnik-pale-stone.png",
+    "masterSha256": "81e450e473a6614a0d4344751c8be75e07cc645fc5537819594e9d72b06d1a0f",
+    "web": "01-45-bnik-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4",
+      "width": 374,
+      "height": 290
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 490,
+      "top": 330,
+      "width": 560,
+      "height": 434
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "02-45-snik-pale-stone",
+    "model": "45 SNIK",
+    "source": "docs/design-references/kanee-fidelity/sources/45-snik.png",
+    "sourceSha256": "64d0d588b2985b1a6f01131f1405549cfcfc4656e8c658fb83d66420155ffd95",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "02-45-snik-pale-stone.png",
+    "masterSha256": "7c116e6d2b2d42bb55f29c3d0820ca555ec745f4b1b01f916aa3c4df5449634d",
+    "web": "02-45-snik-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 6",
+      "width": 469,
+      "height": 386
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 430,
+      "top": 310,
+      "width": 640,
+      "height": 527
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "03-70-sndk-pale-stone",
+    "model": "70 SNDK",
+    "source": "docs/design-references/kanee-fidelity/sources/70-sndk.png",
+    "sourceSha256": "0f0ad1f1aa5a38ead455d2e7f594bff6590bbbf89257ee90239d78c5b17d084e",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "03-70-sndk-pale-stone.png",
+    "masterSha256": "e2365d98afdd7ea731b5bfaff4571ec26f2a9c60e1c0ad0076fd676b7670200a",
+    "web": "03-70-sndk-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 5",
+      "width": 576,
+      "height": 373
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 310,
+      "top": 270,
+      "width": 780,
+      "height": 505
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "04-60-cpdk-pale-stone",
+    "model": "60 CPDK",
+    "source": "docs/design-references/kanee-fidelity/sources/60-cpdk.png",
+    "sourceSha256": "3f2ddcb55fc5cb192ac45d7342ade2ced2ff67584e1665f45b5a7fdfbf6565fe",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "04-60-cpdk-pale-stone.png",
+    "masterSha256": "84da77ba7d845df62578ab2b175f28819694f23e771febb8fddd80198932242b",
+    "web": "04-60-cpdk-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 6",
+      "width": 648,
+      "height": 591
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 360,
+      "top": 175,
+      "width": 710,
+      "height": 648
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "05-110-pale-stone",
+    "model": "110",
+    "source": "docs/design-references/kanee-fidelity/sources/110.png",
+    "sourceSha256": "8dde081075094decc3fe257f904a48b70c2e381f3b518d8e6f012311075dae3d",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "05-110-pale-stone.png",
+    "masterSha256": "39382687366d5c287468388423ba5ddb25d4d690fde5274c61068908e31a77ab",
+    "web": "05-110-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 3",
+      "width": 728,
+      "height": 294
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 160,
+      "top": 420,
+      "width": 900,
+      "height": 363
+    },
+    "verifiedPaperSeeds": [
+      [
+        0.0631868132,
+        0.3231292517
+      ],
+      [
+        0.9148351648,
+        0.8027210884
+      ]
+    ],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "06-140-pale-stone",
+    "model": "140",
+    "source": "docs/design-references/kanee-fidelity/sources/140.png",
+    "sourceSha256": "dc9deb6ce7ecddba7c1e8d08720cecd73dba1c4ad692a85d6f17efc5d9d778b9",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "06-140-pale-stone.png",
+    "masterSha256": "1a39388148a8a3a0fafe913b70f7a6a5605e825657d84b34bc955619705da948",
+    "web": "06-140-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4 拷贝",
+      "width": 713,
+      "height": 555
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 370,
+      "top": 220,
+      "width": 760,
+      "height": 592
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "07-1121-pale-stone",
+    "model": "1121",
+    "source": "docs/design-references/kanee-fidelity/sources/1121.png",
+    "sourceSha256": "d7a60b546ad41e750ab9c07a8ec4f1d66c968e107a9e785be5b38d498123135b",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "07-1121-pale-stone.png",
+    "masterSha256": "cb62e443603082d0bf93725f740bd69291fb6eb57803aa38841cf67d6f98142b",
+    "web": "07-1121-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 9",
+      "width": 712,
+      "height": 435
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 210,
+      "top": 270,
+      "width": 900,
+      "height": 550
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "08-564-mb-pale-stone",
+    "model": "564 MB",
+    "source": "docs/design-references/kanee-fidelity/sources/564-mb.png",
+    "sourceSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "08-564-mb-pale-stone.png",
+    "masterSha256": "08d72cc2c83ae0444728b22edd84b29002ebb23672e8e15c2546c9c08862fb7c",
+    "web": "08-564-mb-pale-stone.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 11,
+      "name": "图层 7",
+      "width": 738,
+      "height": 523
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 245,
+      "top": 215,
+      "width": 870,
+      "height": 617
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "09-45-bnik-charcoal",
+    "model": "45 BNIK",
+    "source": "docs/design-references/kanee-fidelity/sources/45-bnik.png",
+    "sourceSha256": "35333ff0e607829f7d3467bd68aa5b25392eb1f5331ae5fd50e4acc50e97daf1",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "09-45-bnik-charcoal.png",
+    "masterSha256": "55ab4f7d20aa85801ae2b31c17975cef0830560f7caf38a18889e190d5907eb4",
+    "web": "09-45-bnik-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4",
+      "width": 374,
+      "height": 290
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 490,
+      "top": 330,
+      "width": 560,
+      "height": 434
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "10-45-snik-charcoal",
+    "model": "45 SNIK",
+    "source": "docs/design-references/kanee-fidelity/sources/45-snik.png",
+    "sourceSha256": "64d0d588b2985b1a6f01131f1405549cfcfc4656e8c658fb83d66420155ffd95",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "10-45-snik-charcoal.png",
+    "masterSha256": "3509e07e00d282fc9541239a6690cb8ad2859cdb8e165028c148fde608aa17ef",
+    "web": "10-45-snik-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 6",
+      "width": 469,
+      "height": 386
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 430,
+      "top": 310,
+      "width": 640,
+      "height": 527
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "11-70-sndk-charcoal",
+    "model": "70 SNDK",
+    "source": "docs/design-references/kanee-fidelity/sources/70-sndk.png",
+    "sourceSha256": "0f0ad1f1aa5a38ead455d2e7f594bff6590bbbf89257ee90239d78c5b17d084e",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "11-70-sndk-charcoal.png",
+    "masterSha256": "1ffaa58fb4fbefc131a1920c3bdf10182b106d94ca32f828ec60beeca0de1343",
+    "web": "11-70-sndk-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 5",
+      "width": 576,
+      "height": 373
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 310,
+      "top": 270,
+      "width": 780,
+      "height": 505
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "12-60-cpdk-charcoal",
+    "model": "60 CPDK",
+    "source": "docs/design-references/kanee-fidelity/sources/60-cpdk.png",
+    "sourceSha256": "3f2ddcb55fc5cb192ac45d7342ade2ced2ff67584e1665f45b5a7fdfbf6565fe",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "12-60-cpdk-charcoal.png",
+    "masterSha256": "2d809eafce16ab190a4d4ef313e8017e38c9071915b4ee099feb162929f98326",
+    "web": "12-60-cpdk-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 6",
+      "width": 648,
+      "height": 591
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 360,
+      "top": 175,
+      "width": 710,
+      "height": 648
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "13-110-charcoal",
+    "model": "110",
+    "source": "docs/design-references/kanee-fidelity/sources/110.png",
+    "sourceSha256": "8dde081075094decc3fe257f904a48b70c2e381f3b518d8e6f012311075dae3d",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "13-110-charcoal.png",
+    "masterSha256": "2d36f9d4a4e46d89224749e8dafcfeb8fca6f61638a66f677c42d1e0ca2f3733",
+    "web": "13-110-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 3",
+      "width": 728,
+      "height": 294
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 160,
+      "top": 420,
+      "width": 900,
+      "height": 363
+    },
+    "verifiedPaperSeeds": [
+      [
+        0.0631868132,
+        0.3231292517
+      ],
+      [
+        0.9148351648,
+        0.8027210884
+      ]
+    ],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "14-140-charcoal",
+    "model": "140",
+    "source": "docs/design-references/kanee-fidelity/sources/140.png",
+    "sourceSha256": "dc9deb6ce7ecddba7c1e8d08720cecd73dba1c4ad692a85d6f17efc5d9d778b9",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "14-140-charcoal.png",
+    "masterSha256": "e46f2a2f875e1497111dfd440d94cc7cc4783dcb3ac35b8f5394f92482c1e87b",
+    "web": "14-140-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4 拷贝",
+      "width": 713,
+      "height": 555
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 370,
+      "top": 220,
+      "width": 760,
+      "height": 592
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "15-1121-charcoal",
+    "model": "1121",
+    "source": "docs/design-references/kanee-fidelity/sources/1121.png",
+    "sourceSha256": "d7a60b546ad41e750ab9c07a8ec4f1d66c968e107a9e785be5b38d498123135b",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "15-1121-charcoal.png",
+    "masterSha256": "225c7c653414b48a14252ecbe56b60ebd0152241c6eab1c91b32093023f37bea",
+    "web": "15-1121-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 9",
+      "width": 712,
+      "height": 435
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 210,
+      "top": 270,
+      "width": 900,
+      "height": 550
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "16-564-mb-charcoal",
+    "model": "564 MB",
+    "source": "docs/design-references/kanee-fidelity/sources/564-mb.png",
+    "sourceSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "16-564-mb-charcoal.png",
+    "masterSha256": "4a8387a47b988ee1f3f6ba6025e75855f7c91f101fefb905f1f297f87b516154",
+    "web": "16-564-mb-charcoal.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 11,
+      "name": "图层 7",
+      "width": 738,
+      "height": 523
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 245,
+      "top": 215,
+      "width": 870,
+      "height": 617
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "17-45-bnik-portrait",
+    "model": "45 BNIK",
+    "source": "docs/design-references/kanee-fidelity/sources/45-bnik.png",
+    "sourceSha256": "35333ff0e607829f7d3467bd68aa5b25392eb1f5331ae5fd50e4acc50e97daf1",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "17-45-bnik-portrait.png",
+    "masterSha256": "e7ad2e9e552cebc3dc6eb65fcede23826ee3b0fc247529a3f61b39e2de0c4324",
+    "web": "17-45-bnik-portrait.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4",
+      "width": 374,
+      "height": 290
+    },
+    "role": "full-product portrait",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 170,
+      "top": 470,
+      "width": 560,
+      "height": 434
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "18-110-portrait",
+    "model": "110",
+    "source": "docs/design-references/kanee-fidelity/sources/110.png",
+    "sourceSha256": "8dde081075094decc3fe257f904a48b70c2e381f3b518d8e6f012311075dae3d",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "18-110-portrait.png",
+    "masterSha256": "c01cb767c969b7797ce8ce46d99fc32ce1918ea0723e416e0746eb76826abe40",
+    "web": "18-110-portrait.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 3",
+      "width": 728,
+      "height": 294
+    },
+    "role": "full-product portrait",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 80,
+      "top": 470,
+      "width": 740,
+      "height": 299
+    },
+    "verifiedPaperSeeds": [
+      [
+        0.0631868132,
+        0.3231292517
+      ],
+      [
+        0.9148351648,
+        0.8027210884
+      ]
+    ],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "19-140-portrait",
+    "model": "140",
+    "source": "docs/design-references/kanee-fidelity/sources/140.png",
+    "sourceSha256": "dc9deb6ce7ecddba7c1e8d08720cecd73dba1c4ad692a85d6f17efc5d9d778b9",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "19-140-portrait.png",
+    "masterSha256": "623c118f53ba42e3596902fb2a47182af39959067a9ab0fae5f6fc7fec48b936",
+    "web": "19-140-portrait.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4 拷贝",
+      "width": 713,
+      "height": 555
+    },
+    "role": "full-product portrait",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 80,
+      "top": 470,
+      "width": 740,
+      "height": 576
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "20-564-mb-portrait",
+    "model": "564 MB",
+    "source": "docs/design-references/kanee-fidelity/sources/564-mb.png",
+    "sourceSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "20-564-mb-portrait.png",
+    "masterSha256": "bd7c1efd3fede8936322e1dfc902cec99a666ad0c7953c06c049a0c1eeb74286",
+    "web": "20-564-mb-portrait.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 11,
+      "name": "图层 7",
+      "width": 738,
+      "height": 523
+    },
+    "role": "full-product portrait",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 80,
+      "top": 470,
+      "width": 740,
+      "height": 524
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  }
+]

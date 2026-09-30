@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 580 次提交
+最近 30 天 · 共 581 次提交
 
 ## 2026-09-30
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:41 | HYDE | Merge PR #16: 9014 story on the home page, all categories on /products, studio row on /products | `21841481ec9` |
 | 08:21 | 中立 | 纪律：npm test 不是发布闸门；文章正文有十个家不是三个 | `676b63f2b62` |
 | 08:16 | 中立 | 玻璃门文章七语种补译第 1、21、29 段（跟上 79f5207bc69 的英文更正），解除 r23 发布阻塞 | `93e5bc92ff5` |
 | 08:03 | HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `9191bbeae44` |

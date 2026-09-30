@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "Stop": [{"hooks":[{
+      "type":"command",
+      "command":"\"C:/Program Files/nodejs/node.exe\" \"C:/Users/johns/Downloads/ai-website-cloner-template-master/scripts/hooks/codex-kanee-stop.mjs\"",
+      "timeout":10,
+      "statusMessage":"Checking real-product visual task evidence"
+    }]}]
+  }
+}
