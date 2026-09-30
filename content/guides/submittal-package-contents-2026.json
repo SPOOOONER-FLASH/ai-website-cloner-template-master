@@ -3,7 +3,8 @@
   "title": "Door Hardware Submittal Package 2026: Every Document the Reviewer Needs, and the Four That Get It Rejected",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "A hardware submittal is rejected for the same handful of reasons on almost every project, and none of them is the hardware. This page lists what a complete package contains, names the four omissions that send it back, explains the difference between a product datasheet and evidence, sets out who signs what, and states plainly which of these documents we publish, which we supply on request, and which we do not have at all.",
+  "updatedAt": "2026-09-30",
+  "summary": "A door hardware submittal package has five parts: the hardware schedule by opening, a datasheet per catalog number, dimensioned shop drawings, test evidence from an accredited laboratory, and the keying schedule where the project has one. It comes back for four omissions: finish names without codes, handing without its convention, a marketing claim where a certificate should be, and no preparation data. From us, drawings, specifications and the catalog are published; a spec export and test documents are sent on request; BIM families and editable CAD are not available.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -153,7 +154,7 @@
     ]
   },
   "titleEs": "Paquete de submittal de herrajes 2026: todos los documentos que el revisor necesita, y los cuatro que lo hacen rechazar",
-  "summaryEs": "Un submittal de herrajes se rechaza casi siempre por el mismo puñado de razones, y ninguna es el herraje. Esta página enumera qué lleva un paquete completo, nombra las cuatro omisiones que lo devuelven, explica la diferencia entre una ficha técnica y una evidencia, fija quién firma qué, e indica con claridad cuáles de estos documentos publicamos, cuáles enviamos a petición y cuáles directamente no tenemos.",
+  "summaryEs": "Un paquete de submittal de herrajes tiene cinco partes: la planilla de herrajes por hueco, una ficha técnica por número de catálogo, planos de taller acotados, la evidencia de ensayo de un laboratorio acreditado y, si el proyecto lo lleva, el plan de amaestramiento. Se devuelve por cuatro omisiones: nombres de acabado sin código, mano sin su convención, una afirmación comercial donde debería haber un certificado y ninguna información de preparación. De nuestra parte, los planos, las especificaciones y el catálogo están publicados; la exportación de especificaciones y los documentos de ensayo se envían a petición; no tenemos familias BIM ni CAD editable.",
   "seoTitleEs": "Submittal de herrajes 2026: contenido completo del paquete | Canton Hyland",
   "seoDescriptionEs": "Qué debe contener un paquete de submittal de herrajes, las cuatro omisiones que lo hacen rechazar, ficha técnica frente a evidencia de ensayo, y qué documentos puede dar una fábrica.",
   "bodyEs": [
@@ -207,7 +208,7 @@
     "Eso pierde menos consultas de las que parece, y es la única posición compatible con el resto de esta página. Un proveedor dispuesto a escribir un «cortafuego» sin respaldo en un submittal también escribirá una cota sin respaldo en un plano, y el revisor lo sabe."
   ],
   "titlePt": "Pacote de submittal de ferragens 2026: todos os documentos que o revisor precisa, e os quatro que o fazem ser rejeitado",
-  "summaryPt": "Um submittal de ferragens é rejeitado quase sempre pelo mesmo punhado de razões, e nenhuma delas é a ferragem. Esta página enumera o que um pacote completo contém, nomeia as quatro omissões que o devolvem, explica a diferença entre uma ficha técnica e uma evidência, estabelece quem assina o quê, e indica com clareza quais destes documentos publicamos, quais enviamos mediante pedido e quais simplesmente não temos.",
+  "summaryPt": "Um pacote de submittal de ferragens tem cinco partes: a planilha de ferragens por vão, uma ficha técnica por número de catálogo, desenhos de oficina cotados, a evidência de ensaio de um laboratório acreditado e, se o projeto tiver, o plano de chaveamento. Ele volta por quatro omissões: nomes de acabamento sem código, mão sem a sua convenção, uma alegação comercial onde deveria haver um certificado e nenhuma informação de preparação. Da nossa parte, desenhos, especificações e catálogo estão publicados; a exportação de especificações e os documentos de ensaio são enviados mediante pedido; não temos famílias BIM nem CAD editável.",
   "seoTitlePt": "Submittal de ferragens 2026: conteúdo completo do pacote | Canton Hyland",
   "seoDescriptionPt": "O que um pacote de submittal de ferragens deve conter, as quatro omissões que o fazem ser rejeitado, ficha técnica contra evidência de ensaio, e que documentos uma fábrica pode fornecer.",
   "bodyPt": [
