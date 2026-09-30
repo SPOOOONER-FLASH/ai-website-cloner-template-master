@@ -12,7 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 01:00 | 中立 | goal #119：f4adac6fd60 已随 a53308b4b11 上线，IndexNow 已补交 | `10ed58c14a7` |
+| 01:13 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `d2231e2fa01` |
+| 01:06 | 中立 | docs: verify HYDE desktop release and hand off title range bug | `7bc7c396229` |
 
 ## 2026-09-29
 
@@ -716,5 +717,4 @@
 | 01:37 | 中立 | 图纸筛选判据解决：speckle；再读 8 张图纸写入 8 个产品 | `4504b0d6860` |
 | 01:26 | 中立 | 西语规格表英文残留清零：274 行 → 0 | `34664b516fb` |
 | 01:21 | 中立 | 修：图纸任务书指向了 gitignore 的 tmp/，别的 agent 永远收不到 | `fd87680c219` |
-| 01:03 | HYDE | 新增墨西哥和阿根廷展会计划 | `1215dd7c2cb` |
 
