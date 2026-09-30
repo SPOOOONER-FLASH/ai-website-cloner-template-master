@@ -263,6 +263,18 @@ function condense(value) {
     backset 是这个写法，压成 "70mm" 会丢掉「可调」这个卖点，也会让要 60 的人
     以为不合适。
   */
+  /*
+    适用区间（2026-09-30，docs/collaboration/tasks/2026-09-30-title-range-facts.md）：
+    门厚 "35–55mm" 原来走下面的通用 mm 提取，只抓到 55，标题写成「55mm」；DV05 的
+    "35–55mm / 60–100mm" 被抓成 55 和 100，拼成连续的「55–100mm」，把 56–59mm 这段
+    不适用的门厚也说成适用。整值是区间（或斜杠隔开的几个区间）时，原样保留每段两端。
+  */
+  const RANGE = /^(\d+(?:\.\d+)?)\s*[-–—~]\s*(\d+(?:\.\d+)?)\s*(mm|cm|in)$/i;
+  const ranges = v.split(/\s*\/\s*/).map((s) => s.trim().match(RANGE));
+  if (ranges.every(Boolean)) {
+    return ranges.map((m) => `${m[1]}–${m[2]}${m[3].toLowerCase()}`).join(" / ");
+  }
+
   const adjustable = v.match(/^(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*(mm|cm|in)\b/i);
   if (adjustable) return adjustable[1] + "/" + adjustable[2] + adjustable[3].toLowerCase();
 
