@@ -209,3 +209,36 @@
 - `984509e1af0` 311 恢复 ABS 配铝（甲方 09-29：「311 的是 abs 不动」）
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/30 01:07:48 · 三次推送失败
+
+原因：fatal: unable to access 'https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git/': Failed to connect to github.com:443 after 21068 ms: Could not connect to server
+
+未推送的提交：
+
+- `8bf9a3c8757` shiplog: 更新上线存档
+- `7bc7c396229` docs: verify HYDE desktop release and hand off title range bug
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/30 02:36:21 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `704a5dae934`（源码 bb1cb20c73b）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/9/30 03:08:34 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `6e8af2fe42e`（源码 6ed3b7a0684）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/9/30 08:02:02 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `b4f2ffe5afc`（源码 ac946c3ae69）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+## 2026/9/30 07:23:37 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging src/data/article-revisions.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `904ceb6c7b0` shiplog: 更新上线存档
+- `79f5207bc69` 玻璃门指南：JU 系列不是地弹簧；三段"我们不公布"已被 09-29 发布推翻
+
+下一次 `npm run ship` 成功时这些会一起推上去。

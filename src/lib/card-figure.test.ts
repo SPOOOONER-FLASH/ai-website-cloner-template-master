@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { readFileSync, readdirSync } from "node:fs";
-import { cardFigure } from "./card-figure.ts";
+import { cardFigure, FIGURE_LABELS_LOCALISED } from "./card-figure.ts";
+import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
+import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Product } from "../data/types.ts";
 
 const product = (
@@ -85,4 +87,9 @@ describe("cardFigure", () => {
 
     assert.ok(checked > 300, `expected the catalog to yield figures, got ${checked}`);
   });
+});
+
+it("the card's Spanish and Portuguese captions match the glossaries they were copied from", () => {
+  for (const [label, es] of Object.entries(FIGURE_LABELS_LOCALISED.es)) assert.equal(es, SPEC_LABELS_ES[label], label);
+  for (const [label, pt] of Object.entries(FIGURE_LABELS_LOCALISED.pt)) assert.equal(pt, SPEC_LABELS_PT[label], label);
 });

@@ -1,0 +1,564 @@
+# ----------------------------------------
+# 发掘潜在客户概览
+# 账号：hyde数据看板
+# 媒体资源：cantonlock
+# ----------------------------------------
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+第 N 天,新用户数
+0000,157
+0001,92
+0002,90
+0003,91
+0004,108
+0005,159
+0006,193
+0007,234
+0008,144
+0009,62
+
+# 开始日期：20260921
+# 结束日期：20260930
+第 N 天,回访用户数
+0000,4
+0001,5
+0002,6
+0003,12
+0004,2
+0005,7
+0006,5
+0007,22
+0008,4
+0009,3
+
+# 开始日期：20260921
+# 结束日期：20260930
+第 N 天,符合条件的潜在客户
+0000,0
+0001,0
+0002,0
+0003,0
+0004,0
+0005,0
+0006,0
+0007,0
+0008,0
+0009,0
+
+# 开始日期：20260921
+# 结束日期：20260930
+第 N 天,完成转化的潜在客户
+0000,0
+0001,0
+0002,0
+0003,0
+0004,0
+0005,0
+0006,0
+0007,0
+0008,0
+0009,0
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+平台,关键事件数
+web,14
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+带来用户首次互动的主渠道组（默认渠道组）,新用户数
+Direct,1206
+Organic Search,64
+AI Assistant,24
+Cross-network,21
+Referral,12
+Organic Social,2
+Unassigned,1
+
+# 您在留住用户方面取得的成效如何？
+# 开始日期：20260816
+# 结束日期：20260926
+日期,第 0 周,第 1 周,第 2 周,第 3 周,第 4 周,第 5 周
+8月16日 - 8月22日,0,0,0,0,0,0
+8月23日 - 8月29日,171,11,6,2,4,-1
+8月30日 - 9月5日,1152,1,1,3,-1,-1
+9月6日 - 9月12日,1414,2,1,-1,-1,-1
+9月13日 - 9月19日,648,2,-1,-1,-1,-1
+9月20日 - 9月26日,825,-1,-1,-1,-1,-1
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+受众群体名称,活跃用户
+All Users,1386
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+城市,活跃用户
+Singapore,490
+Shenzhen,224
+Guangzhou,159
+Zhuhai,50
+Los Angeles,49
+Zhongshan,40
+Shanghai,20
+Zhangjiajie,18
+Chengdu,12
+Florence-Graham,12
+Hangzhou,12
+Shenyang,12
+Dongguan,11
+Yantai,11
+Beijing,9
+Tianjin,9
+Kunming,8
+Xiamen,8
+Harbin,7
+Suzhou,7
+Dalian,6
+Glenview,6
+The Dalles,6
+Hong Kong,5
+Yanbian Korean Autonomous Prefecture,5
+Yangzhou,5
+Council Bluffs,4
+Guilin,4
+Jinan,4
+Lagos,4
+Luoyang,4
+San Jose,4
+Suginami City,4
+Buenos Aires,3
+Changsha,3
+Chicago,3
+Delhi,3
+Guiyang,3
+Melbourne,3
+Moscow,3
+Nanjing,3
+Qingdao,3
+Santa Clara,3
+Wuhan,3
+Amsterdam,2
+Bogota,2
+Dallas,2
+Dublin,2
+Foshan,2
+Frankfurt am Main,2
+Groningen,2
+Hanoi,2
+Hefei,2
+Jeddah,2
+Lanzhou,2
+Malaga,2
+Nairobi,2
+New York,2
+Norwich,2
+Oklahoma City,2
+Sanya,2
+Seoul,2
+Sinzig,2
+Toronto,2
+Zhengzhou,2
+Acambaro,1
+Amman,1
+Antalya,1
+Arlington,1
+Ashburn,1
+Atlantic City,1
+Auckland,1
+Bath,1
+Bengaluru,1
+Bucharest,1
+Casablanca,1
+Castelldefels,1
+Chestertown,1
+Chongqing,1
+College Station,1
+Cooper City,1
+Cuiaba,1
+Dalton,1
+Deer Park,1
+Denver,1
+Dhaka,1
+Dubai,1
+Easton,1
+Eastwood,1
+Emigrant,1
+Farmers Branch,1
+Fresno,1
+Fuzhou,1
+Gallatin,1
+Goyang-si,1
+Grenoble,1
+Guilford,1
+Guwahati,1
+Haiphong,1
+Honolulu,1
+Houston,1
+Hulunbuir,1
+IJmuiden,1
+Jingzhou,1
+Jinhua,1
+Khulna,1
+Konya,1
+Koto City,1
+Lagoa Santa,1
+Lakeway,1
+Lanus,1
+Las Vegas Valley,1
+Leipzig,1
+Lekki,1
+Lhasa,1
+Lisbon,1
+Loveland,1
+Lucknow,1
+Manavgat,1
+Manila,1
+Mexico City,1
+Milton Keynes,1
+Montreal,1
+Mumbai,1
+Murfreesboro,1
+Nanchang,1
+Newcastle,1
+Oadby,1
+Ongole,1
+Ottawa,1
+Palmas,1
+Pinecrest,1
+Pinhais,1
+Playa del Carmen,1
+Port Harcourt,1
+Port of Spain,1
+Pozorrubio,1
+Pretoria,1
+Prineville,1
+Punto Fijo,1
+Qinhuangdao,1
+Quito,1
+Rancho Cucamonga,1
+Rosenberg,1
+San Diego,1
+San Francisco,1
+Santiago,1
+Schertz,1
+Serrinha,1
+Shawnee,1
+Shelter Island,1
+Solesino,1
+St. Cloud,1
+Strasbourg,1
+Sulaymaniyah,1
+Surabaya,1
+Surat,1
+Suva,1
+Syracuse,1
+Taraz,1
+Tbilisi,1
+Telford,1
+Toluca,1
+Truro,1
+Vadodara,1
+Vale de Cambra,1
+Vancouver,1
+Warsaw,1
+Waverly,1
+Weihai,1
+Wellington,1
+Wollongong,1
+Wuxi,1
+Xilingol League,1
+Yakima,1
+Yongin-si,1
+Zaragoza,1
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+着陆页 + 查询字符串,Google 搜索自然展示次数
+/guides/door-hardware-hs-codes-2026/,593
+/news/master-key-systems-how-many-levels-you-need/,238
+/guides/door-preparation-161-and-86-2026/,145
+/guides/strike-plates-and-keeps-2026/,144
+/guides/euro-cylinder-size-chart-2026/,114
+/guides/spindle-sizes-and-length-2026/,106
+/guides/corrosion-resistance-en-1670-2026/,74
+/guides/door-closer-mounting-positions-2026/,69
+/guides/key-blanks-and-restricted-profiles-2026/,69
+/guides/finish-code-reference-2026/,63
+/products/brass-steel-hinges/,56
+/news/mortise-lock-backset-and-centre-distance-guide/,55
+/guides/hinge-grades-and-count-2026/,53
+/products/knob-locks/tubular-knob-lock/,51
+/guides/door-closer-power-size-2026/,50
+/guides/glass-door-thickness-and-cutouts-2026/,48
+/guides/en-1125-vs-en-179-2026/,41
+/contact/,35
+/guides/copper-or-brass-hinges-2026/,34
+/news/push-bar-or-touch-bar-panic-exit-devices/,32
+/news/finish-codes-us26d-626-630/,28
+/,26
+/products/knob-locks/,26
+/guides/universal-vs-handed-hardware-2026/,25
+/products/brass-steel-hinges/stainless-steel-door-hinge/,25
+/products/night-latches-rim-locks/,23
+/products/sliding-hook-locks/,22
+/collections/knob-locks-tubular-locks/,20
+/guides/door-thickness-to-cylinder-length-2026/,19
+/guides/fire-door-hardware-what-must-be-rated-2026/,19
+/products/,19
+/guides/cycle-testing-durability-grades-2026/,17
+/guides/zinc-alloy-die-cast-hardware-2026/,17
+/guides/backset-door-thickness-chart-2026/,16
+/guides/lever-return-and-en-1906-2026/,16
+/guides/cylindrical-and-tubular-lock-comparison-2026/,15
+/products/lock-cases/,15
+/compare/night-latches-rim-locks/,14
+/guides/hardware-warranty-what-it-covers-2026/,14
+/products/grip-handle-sets/,14
+/es/,12
+/es/products/,12
+/es/products/grip-handle-sets/70780-ab-grip-handle-set/,12
+/guides/specification-section-08-71-00-2026/,11
+/events/,10
+/guides/en-ansi-bhma-cross-reference-2026/,10
+/guides/mortise-lock-case-comparison-2026/,10
+/guides/stainless-grade-selection-201-304-316-2026/,10
+/pt/,10
+/compare/grip-handle-sets/,9
+/ar/products/night-latches-rim-locks/564-mb-night-latch-and-rim-lock/,8
+/index.php?m=home&c=Lists&a=index&tid=89,8
+/products/door-closers/,8
+/Index.php?m=home&c=View&a=index&aid=1605,7
+/guides/powder-coating-and-ral-2026/,7
+/products/panic-exit-devices/,7
+/company/,6
+/compare/knob-locks/,6
+/es/products/deadbolts/d102-ss-deadbolts/,6
+/guides/brass-alloys-and-dezincification-2026/,6
+/guides/exit-device-comparison-2026/,6
+/guides/material-traceability-mill-certs-2026/,6
+/products/knob-locks/587-abet-light-duty-cylindrical-lock/,6
+/guides/commercial-lock-function-decision-2026/,5
+/guides/exit-device-outside-trim-functions-2026/,5
+/news/choosing-a-cylindrical-lock-entrance-privacy-passage/,5
+/news/fitting-a-euro-cylinder/,5
+/news/occupied-vacant-washroom-indicator-bolt/,5
+/product-finder/,5
+/products/stainless-steel-handles/600-concealed-sliding-door-handle/,5
+/services/,5
+/collections/glass-door-accessories-glass-door-handles/,4
+/collections/hardware-accessories-door-stoppers/,4
+/compare/lock-cases/,4
+/compare/lock-cylinders/,4
+/es/company/,4
+/es/products/glass-door-accessories/glass-door-patch-fitting-set/,4
+/es/products/knob-locks/575-abet-tubular-lock/,4
+/guides/master-key-hierarchy-planning-2026/,4
+/guides/submittal-package-contents-2026/,4
+/news/brass-piano-hinge-is-a-finish-not-a-metal/,4
+/news/deadbolt-d101-d102-and-the-rim-alternative/,4
+/news/exit-device-push-bar-length/,4
+/news/trim-handle-or-panic-bar/,4
+/products/glass-door-accessories/glass-door-patch-fitting-set/,4
+/products/lever-handles/,4
+/products/lever-handles/807-abet-lever-handle/,4
+/collections/knob-locks-heavy-duty-cylindrical-locks/,3
+/compare/deadbolts/,3
+/compare/lever-handles/,3
+/es/compare/deadbolts/,3
+/es/products/glass-door-accessories/104-glass-door-handle/,3
+/es/products/knob-locks/,3
+/es/products/knob-locks/587-ssbk-light-duty-cylindrical-lock/,3
+/es/products/lock-cases/,3
+/es/products/panic-exit-devices/,3
+/es/products/panic-exit-devices/033-panic-exit-device/,3
+/es/products/panic-exit-devices/311-panic-exit-device/,3
+/guides/container-loading-door-hardware-2026/,3
+/news/what-an-old-padlock-tells-a-lock-factory/,3
+/newsletter/,3
+/products/bathroom-accessories/,3
+/products/bathroom-accessories/bh12-bathroom-accessories/,3
+/products/glass-door-accessories/,3
+/products/glass-door-accessories/stainless-steel-glass-door-pull-handle/,3
+/products/hardware-accessories/ds011-door-stopper/,3
+/products/hardware-accessories/dv05-bl-door-viewer/,3
+/products/hardware-accessories/fb012-door-flush-bolt/,3
+/products/hardware-accessories/stainless-steel-flush-bolt/,3
+/products/lock-cylinders/54-dk-lock-cylinder/,3
+/Index.php?m=home&c=View&a=index&aid=948&lang=cn,2
+/de/products/panic-exit-devices/305-fire-door-panic-exit-device/,2
+/es/compare/lock-cases/,2
+/es/products/brass-steel-hinges/,2
+/es/products/hardware-accessories/200-indicator/,2
+/es/products/night-latches-rim-locks/5836-night-latch-and-rim-lock/,2
+/es/products/panic-exit-devices/300-panic-exit-device/,2
+/es/products/panic-exit-devices/310-panic-exit-device/,2
+/es/projects/,2
+/guides/dimensional-interchangeability-2026/,2
+/guides/moq-tooling-and-lead-time-2026/,2
+/guides/qualifying-a-hardware-supplier-2026/,2
+/index.php?m=home&c=View&a=index&aid=615&lang=cn,2
+/ja/,2
+/news/,2
+/news/rim-night-latch-564-and-1073/,2
+/products/glass-door-accessories/f123-glass-door-patch-fittings/,2
+/products/knob-locks/5870-abet-heavy-duty-cylindrical-lock/,2
+/products/lever-handles/823-pbet-lever-handle/,2
+/products/lock-cases/lc08-85-55mm-lock-case/,2
+/products/night-latches-rim-locks/559-night-latch-and-rim-lock/,2
+/products/night-latches-rim-locks/5833-night-latch-and-rim-lock/,2
+/products/night-latches-rim-locks/5835-night-latch-and-rim-lock/,2
+/products/night-latches-rim-locks/h102-night-latch-and-rim-lock/,2
+/products/panic-exit-devices/016-exterior-trim/,2
+/products/panic-exit-devices/306-ps-panic-exit-device/,2
+/products/panic-exit-devices/9080e-panic-exit-device/,2
+/products/stainless-steel-handles/lh1033-ss-stainless-steel-handle/,2
+/pt/products/brass-steel-hinges/,2
+/pt/products/knob-locks/,2
+/ru/products/knob-locks/592-pbbk-tubular-lock/,2
+/Index.php?m=home&c=Lists&a=index&tid=103,1
+/Index.php?m=home&c=View&a=index&aid=1080,1
+/Index.php?m=home&c=View&a=index&aid=140&lang=en,1
+/Index.php?m=home&c=View&a=index&aid=152,1
+/Index.php?m=home&c=View&a=index&aid=1541&lang=en,1
+/Index.php?m=home&c=View&a=index&aid=1602,1
+/Index.php?m=home&c=View&a=index&aid=1607,1
+/Index.php?m=home&c=View&a=index&aid=343,1
+/Index.php?m=home&c=View&a=index&aid=632&lang=cn,1
+/Index.php?m=home&c=View&a=index&aid=760&lang=cn,1
+/ar/news/finish-codes-us26d-626-630/,1
+/ar/products/door-closers/wooden-door-floor-hinge/,1
+/ar/products/night-latches-rim-locks/5681-night-latch-and-rim-lock/,1
+/collections/hardware-accessories-door-viewers/,1
+/collections/hardware-accessories-latches/,1
+/collections/knob-locks-commercial-locks/,1
+/collections/knob-locks-light-duty-cylindrical-locks/,1
+/collections/panic-exit-devices-alarmed/,1
+/collections/panic-exit-devices-multi-point/,1
+/compare/glass-door-accessories/,1
+/de/,1
+/de/products/panic-exit-devices/313-panic-exit-device/,1
+/es/collections/hardware-accessories-door-viewers/,1
+/es/collections/knob-locks-light-duty-cylindrical-locks/,1
+/es/compare/lever-handles/,1
+/es/compare/panic-exit-devices/,1
+/es/news/mortise-lock-backset-and-centre-distance-guide/,1
+/es/products/argentina-ar4/,1
+/es/products/door-closers/ju-051-door-closer/,1
+/es/products/glass-door-accessories/f111-glass-door-patch-fittings/,1
+/es/products/glass-door-accessories/f123-glass-door-patch-fittings/,1
+/es/products/grip-handle-sets/70610-sc-grip-handle-set/,1
+/es/products/grip-handle-sets/70720-sm-grip-handle-set/,1
+/es/products/hardware-accessories/,1
+/es/products/hardware-accessories/315-pry-latch/,1
+/es/products/hardware-accessories/fb001-ss-door-flush-bolt/,1
+/es/products/hardware-accessories/fb005-door-flush-bolt/,1
+/es/products/hardware-accessories/fb014-door-flush-bolt/,1
+/es/products/hardware-accessories/l015-latch/,1
+/es/products/hardware-accessories/stainless-steel-flush-bolt/,1
+/es/products/knob-locks/201-pbet-heavy-duty-cylindrical-lock/,1
+/es/products/knob-locks/5870-acet-heavy-duty-cylindrical-lock/,1
+/es/products/knob-locks/5870-sset-heavy-duty-cylindrical-lock/,1
+/es/products/knob-locks/607-pbet-tubular-lock/,1
+/es/products/lever-handles/803-sbet-lever-handle/,1
+/es/products/lever-handles/lh852-bnbk-lever-handle/,1
+/es/products/lever-handles/lh853-ps-lever-handle/,1
+/es/products/lever-handles/lh855-snet-lever-handle/,1
+/es/products/lock-cylinders/65sn-lock-cylinder/,1
+/es/products/night-latches-rim-locks/,1
+/es/products/panic-exit-devices/016-exterior-trim/,1
+/es/products/panic-exit-devices/023-etan-anti-pick-panic-exit-device/,1
+/es/products/panic-exit-devices/301-panic-exit-device/,1
+/es/products/panic-exit-devices/317-cold-room-push-bar-exit-device/,1
+/es/products/panic-exit-devices/sh01-panic-exit-device/,1
+/es/products/panic-exit-devices/x2-panic-exit-device/,1
+/es/products/sliding-hook-locks/s02-cp-sliding-hook-lock/,1
+/es/products/stainless-steel-handles/lh1016-stainless-steel-handle/,1
+/es/projects/commercial-fire-egress-hardware/,1
+/fr/,1
+/guides/hardware-refurbishment-survey-2026/,1
+/guides/samples-and-incoming-inspection-2026/,1
+/index.php?m=home&c=Lists&a=index&tid=101,1
+/index.php?m=home&c=Lists&a=index&tid=123&page=4,1
+/index.php?m=home&c=View&a=index&aid=1595,1
+/index.php?m=home&c=View&a=index&aid=168&lang=en,1
+/index.php?m=home&c=View&a=index&aid=191,1
+/index.php?m=home&c=View&a=index&aid=423,1
+/ko/products/bathroom-accessories/bh10-robe-hook/,1
+/ko/products/brass-steel-hinges/bl031-brass-and-steel-hinges/,1
+/ko/products/night-latches-rim-locks/5688-night-latch-and-rim-lock/,1
+/ko/products/panic-exit-devices/306-d-panic-exit-device/,1
+/news/brazil-nbr-11742-nbr-11785-fire-door-hardware/,1
+/news/door-stop-holder-or-flush-bolt/,1
+/news/double-fire-exit-door-hardware-set/,1
+/products/bathroom-accessories/bh21-bathroom-accessories/,1
+/products/bathroom-accessories/bh26-bathroom-accessories/,1
+/products/bathroom-accessories/bh50-bathroom-accessories/,1
+/products/brass-steel-hinges/ss026-brass-and-steel-hinges/,1
+/products/glass-door-accessories/f110-glass-door-patch-fittings/,1
+/products/glass-door-accessories/f111-glass-door-patch-fittings/,1
+/products/glass-door-accessories/f114-glass-door-patch-fittings/,1
+/products/grip-handle-sets/70780-ab-grip-handle-set/,1
+/products/grip-handle-sets/70900-mbet-grip-handle-set/,1
+/products/hardware-accessories/,1
+/products/hardware-accessories/200-indicator/,1
+/products/hardware-accessories/ds011-door-flush-bolt/,1
+/products/hardware-accessories/fb014-door-flush-bolt/,1
+/products/hardware-accessories/fb015-door-flush-bolt/,1
+/products/knob-locks/5831-sset-heavy-duty-cylindrical-lock/,1
+/products/knob-locks/5870-sset-heavy-duty-cylindrical-lock/,1
+/products/lever-handles/black-tubular-lever-lock-set/,1
+/products/lever-handles/stainless-steel-lever-handle-lock/,1
+/products/lock-cylinders/,1
+/products/night-latches-rim-locks/5681-night-latch-and-rim-lock/,1
+/products/night-latches-rim-locks/f102-night-latch-and-rim-lock/,1
+/products/panic-exit-devices/023-et-panic-exit-device-trim/,1
+/products/panic-exit-devices/023-etan-anti-pick-panic-exit-device/,1
+/products/panic-exit-devices/9080e-panic-exit-device-trim/,1
+/products/stainless-steel-handles/,1
+/products/stainless-steel-handles/9006s-stainless-steel-handle/,1
+/products/stainless-steel-handles/lh1016-stainless-steel-handle/,1
+/projects/,1
+/pt/certifications/,1
+/pt/products/glass-door-accessories/f123-glass-door-patch-fittings/,1
+/pt/products/grip-handle-sets/70720-sm-grip-handle-set/,1
+/pt/products/grip-handle-sets/70780-ab-grip-handle-set/,1
+/pt/products/lever-handles/eh02-lever-handle/,1
+/pt/products/lock-cases/,1
+/tr/products/grip-handle-sets/70750-pb-grip-handle-set/,1
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+Google 搜索自然查询,Google 搜索自然点击次数
+what is a split spindle door handle,1
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+带来会话的手动创建的来源,会话数
+google,51
+chatgpt.com,37
+bing,28
+weixin110.qq.com,23
+tagassistant.google.com,16
+exhibitors.bau-muenchen.com,7
+au.search.yahoo.com,1
+cn.bing.com,1
+duckduckgo,1
+facebook.com,1
+gemini,1
+hydeland.cn,1
+m.facebook.com,1
+scriblihelp.com,1
+
+#  
+# 开始日期：20260921
+# 结束日期：20260930
+第 N 天

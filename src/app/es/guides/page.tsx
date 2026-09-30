@@ -10,7 +10,7 @@ import { GuideListing } from "@/components/site/GuideListing";
 export const metadata: Metadata = pageMetadata({
   enPath: "/guides",
   locale: "es",
-  title: "Guías",
+  title: "Guías de herrajes para puertas: tablas, normas y acabados",
   description: "Páginas de referencia para decisiones de herrajes: tablas de cilindros europeos, referencias cruzadas EN a ANSI/BHMA, tablas de códigos de acabado y qué cubre cada norma.",
 });
 

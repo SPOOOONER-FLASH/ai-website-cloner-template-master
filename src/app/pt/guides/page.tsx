@@ -10,7 +10,7 @@ import { GuideListing } from "@/components/site/GuideListing";
 export const metadata: Metadata = pageMetadata({
   enPath: "/guides",
   locale: "pt",
-  title: "Guias",
+  title: "Guias de ferragens para portas: tabelas, normas, acabamentos",
   description: "Páginas de referência para decisões de ferragens: tabelas de cilindros europeus, referências cruzadas EN para ANSI/BHMA, tabelas de códigos de acabamento e o que cada norma cobre.",
 });
 

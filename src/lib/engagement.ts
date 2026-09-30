@@ -83,3 +83,17 @@ export function linkIntent(href: string, from: string): LinkEvent | null {
   if (target === "configurator") return { name: "configurator_open", params: { page_type: source } };
   return null;
 }
+
+/**
+ * The GA4 client ID from the `_ga` cookie ("GA1.1.1234567890.1727654321" → "1234567890.1727654321"),
+ * or null before gtag has set it.
+ *
+ * Why it exists (2026-09-30): the client saw a Toronto buyer in GA4 and could not find the same
+ * visit in Clarity. The two tools geolocate and count sessions separately, so "same city, same
+ * day" is not a reliable join. Tagging every Clarity session with this ID makes it one: copy the
+ * Client ID from GA4's User explorer, filter Clarity by the custom tag `ga_client_id`.
+ */
+export function gaClientId(cookie: string): string | null {
+  const match = /(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)(?:;|$)/.exec(cookie);
+  return match ? match[1] : null;
+}

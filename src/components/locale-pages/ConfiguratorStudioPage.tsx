@@ -10,7 +10,8 @@ import { absoluteUrl } from "@/data/site";
 import { t as tr, tx } from "@/lib/i18n";
 import { finishCode, functionCode } from "@/lib/order-code";
 import { variantFamilies } from "@/lib/product-variants";
-import { localeMetadata, prefixer } from "./shared";
+import { pageMetadata } from "@/lib/seo";
+import { prefixer } from "./shared";
 
 /**
  * The configurator studio — FSB's product-finder layout, applied to what we actually have.
@@ -37,12 +38,27 @@ const DESCRIPTION =
   "Choose a range and a model, then switch finish and function. Every picture is a photograph of the exact model, and the order code assembles as you choose.";
 
 export function configuratorStudioMetadata(locale: Locale): Metadata {
-  return localeMetadata(
+  /*
+    es and pt carry their own title and description. localeMetadata() only translates through
+    the seven overlay dictionaries, so until 2026-09-30 /es/ and /pt/ shipped the English title:
+    three pages with one title, which the SEO audit reported as duplicates.
+  */
+  return pageMetadata({
+    enPath: "/configurator/studio",
     locale,
-    "/configurator/studio",
-    "Configurator Studio — Finish and Function",
-    "Choose a lock or handle range, then switch finish and function and watch the order code assemble. Every image is a photograph of the exact model.",
-  );
+    title: tx(locale, "Configurator Studio — Finish and Function", {
+      es: "Estudio del configurador: acabado y función",
+      pt: "Estúdio do configurador: acabamento e função",
+    }),
+    description: tx(
+      locale,
+      "Choose a lock or handle range, then switch finish and function and watch the order code assemble. Every image is a photograph of the exact model.",
+      {
+        es: "Elija una gama de cerraduras o manijas, cambie el acabado y la función y vea cómo se forma el código de pedido. Cada imagen es una fotografía del modelo exacto.",
+        pt: "Escolha uma linha de fechaduras ou maçanetas, troque o acabamento e a função e veja o código de pedido se formar. Cada imagem é uma fotografia do modelo exato.",
+      },
+    ),
+  });
 }
 
 export function ConfiguratorStudioPage({ locale }: { locale: Locale }) {

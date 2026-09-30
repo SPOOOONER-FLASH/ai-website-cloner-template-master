@@ -192,8 +192,8 @@ export function SiteHeader({
       <div>
         {/* Nav row */}
         <div className="layout z-30 bg-surface">
-          <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
-            <div data-header-wide-nav="" className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12", navigationStyles.wideNavigation)}>
+          <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32 xl:flex xl:gap-x-32">
+            <div data-header-wide-nav="" className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12 xl:flex-none", navigationStyles.wideNavigation)}>
               {/*
                 `whitespace-nowrap` is load-bearing. Unwrapped, the five labels need
                 523px and the gaps at xl were 4 × 48px, for 715px inside a 680px column,
@@ -289,9 +289,18 @@ export function SiteHeader({
               </nav>
             </div>
 
-            <div className={cn("col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12", navigationStyles.controls)}>
-              <Link href={homeHref} className="flex min-w-0 flex-shrink-0 items-center text-ink">
-                <Wordmark className="pe-8" />
+            <div className={cn("col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:contents", navigationStyles.controls)}>
+              {/*
+                09-30 (client: 「hyde 标注偏右」): at xl the wordmark sat in the first cell of
+                the right-hand 12 columns, so its LEFT edge was on the centre line and the space
+                either side of it was unequal. At xl the row is now one flex line (nav, wordmark,
+                controls) and the wordmark takes the space between them, centred, so its gaps to
+                the nav and to the language list are equal. Centring on the page instead collided
+                with the ten-language list below ~1700px. Below xl it stays in the grid as before.
+              */}
+              {/* prefetch={false} on every header link: see HeaderLink in HeaderIslands.tsx (2026-09-30). */}
+              <Link href={homeHref} prefetch={false} className={cn("flex min-w-0 flex-shrink-0 items-center text-ink xl:min-w-max xl:flex-1 xl:justify-center", navigationStyles.home)}>
+                <Wordmark className="pe-8 xl:pe-0" />
               </Link>
 
               {/*
@@ -299,7 +308,7 @@ export function SiteHeader({
                 pseudo-element extends each hit target to 44px without crowding the
                 wordmark and language links on a 375px screen.
               */}
-              <nav className="flex flex-grow items-center justify-end gap-24 sm:gap-32">
+              <nav className="flex flex-grow items-center justify-end gap-24 sm:gap-32 xl:flex-none">
                 {/*
                   The bare EN | ES link became a panel on 2026-09-08, at the client's
                   request and modelled on FSB's "Choose your location and language".
@@ -321,7 +330,7 @@ export function SiteHeader({
             </div>
 
             {/* Breadcrumb rail — empty on the home route, hidden below 393px */}
-            <div className="col-span-full max-[24.5625em]:hidden">
+            <div className="col-span-full max-[24.5625em]:hidden xl:hidden">
               <nav className="flex items-center gap-4 text-c2 text-ink-secondary" />
             </div>
           </div>
@@ -416,6 +425,7 @@ export function SiteHeader({
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
+                  prefetch={false}
                   className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
@@ -424,6 +434,7 @@ export function SiteHeader({
                     the Finder rather than a sixth rail item — fr/de rows already overflow. */}
                 <Link
                   href={localisedHref("/configurator/studio", locale)}
+                  prefetch={false}
                   className="short-marker mt-12 inline-block text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Configurator Studio", { es: "Estudio de configuración", pt: "Estúdio de configuração" })}
@@ -466,6 +477,7 @@ export function SiteHeader({
                                   shipped. Until then it kept the filter, because a link
                                   to a page that does not exist is worse than a weak one.
                                 */
+                                prefetch={false}
                                 href={
                                   locale === "en"
                                     ? `/collections/${category.slug}-${child.slug}/`

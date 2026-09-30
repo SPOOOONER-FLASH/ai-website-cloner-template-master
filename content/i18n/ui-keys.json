@@ -610,8 +610,8 @@
     "src/components/site/SiteHeader.tsx:182"
   ],
   "Buy on Alibaba": [
-    "src/components/site/SiteFooter.tsx:244",
-    "src/components/site/SiteHeader.tsx:578"
+    "src/components/site/SiteFooter.tsx:246",
+    "src/components/site/SiteHeader.tsx:590"
   ],
   "Buyers come to this range for a panic bar on a fire exit door, an anti-panic device for a double door, or the outside trim that lets a keyed user in while the bar still works from inside. As a panic exit device manufacturer we make the {count} models here in Zhongshan and supply them wholesale to distributors, contractors and OEM brands.": [
     "src/data/category-buying-guides.ts:78"
@@ -754,7 +754,7 @@
     "src/components/locale-pages/CertificationsPage.tsx:97"
   ],
   "Choose a lock or handle range, then switch finish and function and watch the order code assemble. Every image is a photograph of the exact model.": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:44"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:55"
   ],
   "Choose an opening and build the hardware set": [
     "src/components/site/menu-experience.ts:59"
@@ -889,8 +889,8 @@
   "Company": [
     "src/components/site/AuthorProfile.tsx:31",
     "src/components/site/InquiryForm.tsx:29",
-    "src/components/site/SiteHeader.tsx:491",
-    "src/components/site/SiteHeader.tsx:497",
+    "src/components/site/SiteHeader.tsx:503",
+    "src/components/site/SiteHeader.tsx:509",
     "src/components/site/menu-experience.ts:97",
     "src/components/site/menu-experience.ts:289"
   ],
@@ -924,14 +924,14 @@
     "src/lib/configurator.ts:439"
   ],
   "Configuration": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:97",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:113",
     "src/components/site/ProductDetail.tsx:57"
   ],
   "Configurator": [
     "src/components/locale-pages/ConfiguratorPage.tsx:33",
     "src/components/locale-pages/ConfiguratorPage.tsx:44",
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:117",
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:129",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:133",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:145",
     "src/components/site/FinderModeSwitch.tsx:44",
     "src/components/site/SiteFooter.tsx:46",
     "src/components/site/menu-experience.ts:74",
@@ -941,13 +941,13 @@
     "src/components/locale-pages/ConfiguratorPage.tsx:18"
   ],
   "Configurator Studio": [
-    "src/components/site/SiteHeader.tsx:429",
+    "src/components/site/SiteHeader.tsx:440",
     "src/components/site/StudioShowcase.tsx:40",
     "src/components/site/menu-experience.ts:75",
     "src/components/site/menu-experience.ts:273"
   ],
   "Configurator Studio — Finish and Function": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:43"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:49"
   ],
   "Confirm dimensions, test scope, door preparation and finishes against the current technical documentation before ordering.": [
     "src/components/site/ProjectDetail.tsx:23"
@@ -1020,7 +1020,7 @@
     "src/lib/configurator.ts:430"
   ],
   "Data preferences": [
-    "src/components/site/SiteFooter.tsx:178"
+    "src/components/site/SiteFooter.tsx:180"
   ],
   "Datasheets, CAD files and installation instructions are available on request while the verified download library is being prepared.": [
     "src/components/site/ProductDetail.tsx:97"
@@ -1234,6 +1234,9 @@
   "Door hardware guides and factory news by {name}.": [
     "src/components/site/AuthorProfile.tsx:27"
   ],
+  "Door Hardware Guides: Size Charts, Standards, Finish Codes": [
+    "src/components/locale-pages/ArticlePages.tsx:37"
+  ],
   "Door Hardware Manufacturer in Xiaolan, China, Since 1998": [
     "src/components/locale-pages/SimplePages.tsx:15"
   ],
@@ -1409,7 +1412,7 @@
     "src/components/site/GuideListing.tsx:19"
   ],
   "Every image here is a photograph of the model named under it. A finish or function missing from a range is one the factory does not list for that model; ask us if you need it.": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:103"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:119"
   ],
   "Every model in a range on one row each, across the specifications that differ between them — backset, center distance, door thickness, finish.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:64"
@@ -1512,7 +1515,7 @@
     "src/components/site/InquiryForm.tsx:47"
   ],
   "Fifteen product families. The number is how many verified records each one holds.": [
-    "src/components/site/SiteHeader.tsx:415"
+    "src/components/site/SiteHeader.tsx:424"
   ],
   "Fill these in and send them back. Each carries a worked example — copy its pattern rather than inventing a format.": [
     "src/components/locale-pages/DownloadsPage.tsx:32"
@@ -1558,7 +1561,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Finish": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:94",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:110",
     "src/components/site/ProductVariants.tsx:37",
     "src/data/hardware-terms.ts:512"
   ],
@@ -1658,7 +1661,7 @@
     "src/components/site/products-architecture.ts:192"
   ],
   "Function": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:95",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:111",
     "src/components/site/ProductVariants.tsx:38",
     "src/data/hardware-terms.ts:470"
   ],
@@ -1730,7 +1733,6 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:105"
   ],
   "Guides": [
-    "src/components/locale-pages/ArticlePages.tsx:37",
     "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
     "src/components/site/NewsDetail.tsx:91",
@@ -1807,8 +1809,8 @@
     "src/components/locale-pages/ComparePage.tsx:70",
     "src/components/locale-pages/ConfiguratorPage.tsx:31",
     "src/components/locale-pages/ConfiguratorPage.tsx:42",
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:115",
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:127",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:131",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:143",
     "src/components/locale-pages/CylinderCalculatorPage.tsx:32",
     "src/components/locale-pages/DocumentsPage.tsx:24",
     "src/components/locale-pages/DownloadsPage.tsx:41",
@@ -1867,7 +1869,7 @@
     "src/components/site/FinderModeSwitch.tsx:41"
   ],
   "How to buy": [
-    "src/components/site/SiteFooter.tsx:216"
+    "src/components/site/SiteFooter.tsx:218"
   ],
   "How to read a Canton Hyland model number: the finish codes (SSS, PB, SN, GM), the lock-function codes (ET, BK, PS) and the single/double door letter, with the models each appears on.": [
     "src/components/locale-pages/FinishesPage.tsx:15"
@@ -2107,7 +2109,7 @@
     "src/components/site/WelcomeIntro.tsx:16"
   ],
   "Main navigation": [
-    "src/components/site/SiteHeader.tsx:348"
+    "src/components/site/SiteHeader.tsx:357"
   ],
   "Manufactured in Zhongshan, Guangdong. Production lead time starts at 30 days from order confirmation, and we produce under our customers' own brands.": [
     "src/components/locale-pages/CollectionPage.tsx:127"
@@ -2206,11 +2208,11 @@
     "src/components/site/SiteHeader.tsx:109"
   ],
   "Model": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:93",
-    "src/components/site/ProductCard.tsx:92"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:109",
+    "src/components/site/ProductCard.tsx:93"
   ],
   "Model code to be confirmed": [
-    "src/components/site/ProductCard.tsx:91",
+    "src/components/site/ProductCard.tsx:92",
     "src/components/site/ProductDetail.tsx:76"
   ],
   "Model lookup": [
@@ -2354,7 +2356,7 @@
     "src/components/site/menu-experience.ts:88"
   ],
   "Newsletter": [
-    "src/components/site/SiteFooter.tsx:193",
+    "src/components/site/SiteFooter.tsx:195",
     "src/components/site/menu-experience.ts:110"
   ],
   "Newsletter request": [
@@ -2518,7 +2520,7 @@
     "src/components/site/ProductDrawing.tsx:91"
   ],
   "Open menu": [
-    "src/components/site/SiteHeader.tsx:317"
+    "src/components/site/SiteHeader.tsx:326"
   ],
   "Open original image": [
     "src/components/site/GuideCover.tsx:16"
@@ -2573,7 +2575,7 @@
     "src/components/site/ProductDetail.tsx:105"
   ],
   "Order code": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:96"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:112"
   ],
   "Order codes": [
     "src/components/locale-pages/FinishesPage.tsx:26",
@@ -2784,7 +2786,7 @@
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductFinderPage.tsx:58",
     "src/components/site/ProductStudies.tsx:47",
-    "src/components/site/SiteHeader.tsx:421",
+    "src/components/site/SiteHeader.tsx:431",
     "src/components/site/menu-experience.ts:73",
     "src/components/site/menu-experience.ts:271",
     "src/components/site/menu-experience.ts:300"
@@ -2799,7 +2801,7 @@
     "src/data/privacy-policy.ts:93"
   ],
   "Product page": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:100"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:116"
   ],
   "Product pages": [
     "src/components/site/CategoryFilter.tsx:51",
@@ -2819,8 +2821,8 @@
     "src/components/locale-pages/ComparePage.tsx:71",
     "src/components/locale-pages/ConfiguratorPage.tsx:32",
     "src/components/locale-pages/ConfiguratorPage.tsx:43",
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:116",
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:128",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:132",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:144",
     "src/components/locale-pages/ProductFinderPage.tsx:42",
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductPage.tsx:85",
@@ -2828,8 +2830,8 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:36",
     "src/components/site/ProductDetail.tsx:86",
     "src/components/site/ProductsEditorialOverview.tsx:23",
-    "src/components/site/SiteHeader.tsx:406",
-    "src/components/site/SiteHeader.tsx:412",
+    "src/components/site/SiteHeader.tsx:415",
+    "src/components/site/SiteHeader.tsx:421",
     "src/components/site/menu-experience.ts:70",
     "src/components/site/menu-experience.ts:270"
   ],
@@ -2917,7 +2919,7 @@
     "src/components/site/SiteHeader.tsx:108"
   ],
   "Range": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:92",
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:108",
     "src/components/site/products-architecture.ts:103"
   ],
   "Read before ordering": [
@@ -2996,7 +2998,7 @@
     "src/components/site/ProductDetail.tsx:77"
   ],
   "Request a quote for {model}": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:99"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:115"
   ],
   "Request a quote for this configuration": [
     "src/components/site/Configurator.tsx:72"
@@ -3015,7 +3017,7 @@
     "src/components/site/MasterKeyHierarchyFigure.tsx:41"
   ],
   "Reset": [
-    "src/components/locale-pages/ConfiguratorStudioPage.tsx:98"
+    "src/components/locale-pages/ConfiguratorStudioPage.tsx:114"
   ],
   "Residential project": [
     "src/components/site/InquiryForm.tsx:37"
@@ -3067,7 +3069,7 @@
   ],
   "Search": [
     "src/components/site/ProductFinder.tsx:55",
-    "src/components/site/SiteHeader.tsx:314"
+    "src/components/site/SiteHeader.tsx:323"
   ],
   "Search and filter all models": [
     "src/components/site/FinderModeSwitch.tsx:43"
@@ -3228,7 +3230,7 @@
     "src/data/category-positioning.json"
   ],
   "Sign-up here": [
-    "src/components/site/SiteFooter.tsx:204"
+    "src/components/site/SiteFooter.tsx:206"
   ],
   "Single cylinder has a thumbturn inside and is the usual choice for an entrance door, because it opens from inside without a key. Double cylinder needs a key on both sides and is specified where a glazed panel sits within reach of the lock. Check local egress rules before choosing double cylinder on an exit door.": [
     "src/data/category-buying-guides.ts:357"
@@ -3255,7 +3257,7 @@
     "src/data/category-sourcing.ts:47"
   ],
   "Social Media": [
-    "src/components/site/SiteFooter.tsx:288"
+    "src/components/site/SiteFooter.tsx:290"
   ],
   "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.": [
     "src/lib/configurator.ts:460"
@@ -3497,7 +3499,7 @@
     "src/data/category-positioning.json"
   ],
   "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.": [
-    "src/components/site/SiteFooter.tsx:197"
+    "src/components/site/SiteFooter.tsx:199"
   ],
   "The cases with a cylinder hole take a euro profile cylinder, sized to the door thickness; our lock cylinders page lists the published lengths. Cylinder and handles are ordered separately from the case, which is how door factories want it.": [
     "src/data/category-buying-guides.ts:571"
@@ -3542,7 +3544,7 @@
     "src/components/site/CompanyOverview.tsx:27"
   ],
   "The factory, markets and technical support behind HYDE.": [
-    "src/components/site/SiteHeader.tsx:500"
+    "src/components/site/SiteHeader.tsx:512"
   ],
   "The form reaches the same export desks as the addresses above. If it cannot send, the page keeps everything you typed and offers it as a ready-addressed email — your inquiry is not lost either way.": [
     "src/components/locale-pages/ContactPage.tsx:177"
@@ -3851,7 +3853,7 @@
     "src/components/locale-pages/CertificationsPage.tsx:72"
   ],
   "Video": [
-    "src/components/site/ProductCard.tsx:94"
+    "src/components/site/ProductCard.tsx:95"
   ],
   "View certificate": [
     "src/components/site/ProductDetail.tsx:89"
@@ -4056,7 +4058,7 @@
     "src/data/home.ts:115"
   ],
   "Where the products are used, how to specify them, and what buyers ask.": [
-    "src/components/site/SiteHeader.tsx:529"
+    "src/components/site/SiteHeader.tsx:541"
   ],
   "Where we are": [
     "src/components/site/CompanyOverview.tsx:26"
