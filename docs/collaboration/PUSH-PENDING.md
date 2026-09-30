@@ -228,3 +228,7 @@
 ## 2026/9/30 03:08:34 · HYDE（cantonlock.com）发布三次推送失败
 
 构建好的发布提交 `6e8af2fe42e`（源码 6ed3b7a0684）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/9/30 08:02:02 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `b4f2ffe5afc`（源码 ac946c3ae69）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
