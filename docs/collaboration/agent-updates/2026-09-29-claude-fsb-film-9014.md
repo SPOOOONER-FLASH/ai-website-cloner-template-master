@@ -116,3 +116,11 @@ Codex 交回 33 张灰场图，用的是已作废的 /products 任务单（那�
 - 照片缺口：地弹簧与天地轴类（28 个型号）的产品图**全部是深色背景**，缩略图里只有它一格是黑底。这里没法换成别的型号，需要工厂补白底实拍，或者由 Codex 把现有实拍清理成白底（只允许清理，不能生成）。
 - 构建检查里的 `src/data/generated/i18n-client/*.json` 是 `node scripts/build-i18n-client-ui.mjs` 生成的；改了覆盖语种的 ui.json 之后要先跑这一步，否则 check 最后一步会报 stale。
 - 覆盖语种里的「43 models」一直显示英文：单个小写英文词会被提取脚本当成 slug 跳过。现在改用已有翻译的 "{n} models" / "1 model" 句式。
+
+## 追加（09-30 深夜）：9014 套装图接入；合并 main；上线
+
+- Codex 的 `set-sset.webp` / `set-ssbk.webp` 已审（工厂实拍，纯白底，无生成），接进 `HandleStory.tsx` 的 Available sets。
+  `set-ssbk` 的原片和「What the drawing fixes」那张是同一张照片，所以那一格改用 `9014-ssbk-…-2.webp`（出厂包装实拍），页面上不再重复出现同一张图。
+- 合并 origin/main：七个覆盖语种的 `ui.json` 冲突是两边都在文件末尾追加 key，按并集解决（保留 main 的值，本分支补上 10 个 key）；`ui-keys.json` 和 client 包都已重新生成。
+- **main 本身是红的**：79f5207bc6 改写了玻璃门文章英文的 body[1]、[21]、[29]，覆盖语种没跟上，`i18n-lint` 报了 63 处缺失型号。
+  这里补译了七种语言的这三段，并只更新了 body 的 sourceHash（faq 的英文早先就改过、译文未更新，所以保留原 hash，看板仍会把它记为过期）。**写英文文章的会话：改了英文段落就要同步七个覆盖语种，否则 check 最后一步会红，谁都发布不了。**
