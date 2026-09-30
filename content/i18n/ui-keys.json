@@ -67,7 +67,8 @@
     "src/data/feature-columns.ts:180"
   ],
   "{n} models": [
-    "src/components/site/OrderCodeTables.tsx:35"
+    "src/components/site/OrderCodeTables.tsx:35",
+    "src/components/site/ProductsEditorialOverview.tsx:30"
   ],
   "{n} models are in the catalog and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.": [
     "src/components/site/ModelLookup.tsx:95"
@@ -130,7 +131,8 @@
     "src/components/site/ProductDetail.tsx:87"
   ],
   "1 model": [
-    "src/components/site/OrderCodeTables.tsx:34"
+    "src/components/site/OrderCodeTables.tsx:34",
+    "src/components/site/ProductsEditorialOverview.tsx:31"
   ],
   "1 model matches": [
     "src/components/site/Configurator.tsx:66"
@@ -190,7 +192,7 @@
     "src/data/privacy-policy.ts:147"
   ],
   "9001 catalog lever handle": [
-    "src/components/site/ProductsEditorialOverview.tsx:30"
+    "src/components/site/ProductsEditorialOverview.tsx:33"
   ],
   "A bar across the inside face of the door that unlatches under pressure, so a person leaving in a crowd needs no handle, no key and no instruction.": [
     "src/lib/configurator.ts:388"
@@ -1419,7 +1421,7 @@
     "src/components/site/ModelIndex.tsx:26"
   ],
   "Every part, in context.": [
-    "src/components/site/ProductsEditorialOverview.tsx:29"
+    "src/components/site/ProductsEditorialOverview.tsx:32"
   ],
   "Every product category": [
     "src/components/site/menu-experience.ts:270"
@@ -2183,7 +2185,7 @@
     "src/components/site/HardwareTerms.tsx:37"
   ],
   "Mechanism detail from the catalog.": [
-    "src/components/site/ProductsEditorialOverview.tsx:31"
+    "src/components/site/ProductsEditorialOverview.tsx:34"
   ],
   "Meet HYDE at": [
     "src/data/bau-entry.ts:16"

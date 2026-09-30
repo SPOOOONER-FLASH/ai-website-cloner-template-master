@@ -25,7 +25,10 @@ const COPY = {
     families: "Families",
     nextStep: "Next step",
     publishedModels: "published models. Select a product to explore.",
-    models: "models",
+    /* "{n} models", not a bare "models": the overlay extractor skips single lowercase words
+       as slugs, so the word stayed English on the seven overlay locales. */
+    models: "{n} models",
+    oneModel: "1 model",
     everyPart: "Every part, in context.",
     leverLabel: "9001 catalog lever handle",
     mechanismDetail: "Mechanism detail from the catalog.",
@@ -37,7 +40,8 @@ const COPY = {
     families: "Familias",
     nextStep: "El siguiente paso",
     publishedModels: "modelos publicados. Seleccione un producto para verlo.",
-    models: "modelos",
+    models: "{n} modelos",
+    oneModel: "1 modelo",
     everyPart: "Cada pieza, en contexto.",
     leverLabel: "Manija 9001 del cat\u00e1logo",
     mechanismDetail: "Detalle de mecanismo del cat\u00e1logo.",
@@ -49,7 +53,8 @@ const COPY = {
     families: "Fam\u00edlias",
     nextStep: "O pr\u00f3ximo passo",
     publishedModels: "modelos publicados. Selecione um produto para ver.",
-    models: "modelos",
+    models: "{n} modelos",
+    oneModel: "1 modelo",
     everyPart: "Cada pe\u00e7a, em contexto.",
     leverLabel: "Ma\u00e7aneta 9001 do cat\u00e1logo",
     mechanismDetail: "Detalhe de mecanismo do cat\u00e1logo.",
@@ -105,7 +110,7 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
                 {family.photo?.src ? <MediaPlaceholder src={family.photo.src} ratio="1 / 1" label={family.name} sizes="80px" className="object-contain" /> : null}
               </span>
               <span className={styles.indexLabel}>{family.name}</span>
-              <span className={styles.count}>{family.count} {t.models}</span>
+              <span className={styles.count}>{family.count === 1 ? t.oneModel : t.models.replace("{n}", String(family.count))}</span>
               <span className={styles.indexDetail}>{family.summary}</span>
             </Link></li>)}
           </ol>
