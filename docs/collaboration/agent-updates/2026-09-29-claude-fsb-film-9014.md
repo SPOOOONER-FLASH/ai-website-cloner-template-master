@@ -75,3 +75,15 @@
 - **给甲方/工厂**：每支主推执手 3 张真样品微距照（斜接拐角、面座边、拉丝方向）到了就替换两张渲染帧。
 - 注意：playwright 自带的 Chromium 不含 H.264，截图时视频显示为海报，这不是页面问题；真实浏览器正常播放。
 - `npm run check` 全绿（本地云端构建）。构建改动的 `out/`、`public/images/door-prep/*.svg` 等不是本次提交内容，已还原。
+
+## 追加（09-30 下午）：/products 改版撤回；9014 上首页；studio 挪到 /products
+
+甲方比较后说线上 /products 更好（「老实说我觉得现在线上这个更好」），改版提交已 revert（c15915b194），33 张灰场图任务单作废，
+只保留 9014 两张套装图：`docs/collaboration/tasks/2026-09-30-codex-9014-set-plates.md`。
+
+- 英文首页：原 Configurator Studio 那一行换成 `HandleStoryShowcase.tsx`（9014 影片 + 一段尺寸 + 链接 `/stories/9014/`）。es/pt 和七个覆盖语种首页不变（专题页只有英文）。
+- /products：en、es、pt 和覆盖语种（`ProductsIndexPage.tsx`）都在总览后面加了 `StudioShowcase`，引导去 studio。
+- `/stories/9014/` 转为公开：去掉 noindex/withheld，进 sitemap，进抽屉 Products 组和页脚 REFERENCE_LINKS，删掉 placement 测试里的豁免。
+- `StoryFilm` 改为进入视口才播放（preload="none"，首页不滚到就不下载），访客按了暂停后回滚也不自动播放。
+- 未发布。上线等甲方一句话，然后合并 PR #16、`npm run release:hyde`。
+- `npm run check` 全绿。

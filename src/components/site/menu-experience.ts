@@ -73,6 +73,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Product Finder", href: "/product-finder/" },
           { label: "Configurator", href: "/configurator/" },
           { label: "Configurator Studio", href: "/configurator/studio/" },
+          { label: "The 9014 lever", href: "/stories/9014/" },
           { label: "Hardware in focus", href: "/product-studies/" },
           { label: "Model lookup", href: "/model-lookup/" },
           { label: "Order codes", href: "/finishes/" },

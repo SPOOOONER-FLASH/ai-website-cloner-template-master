@@ -13,13 +13,10 @@ export const metadata: Metadata = {
     imageAlt: "HYDE 9014 stainless steel lever handle",
   }),
   /*
-    Draft. English only, outside every mirror prefix (src/lib/spanish-mirror.ts), so no
-    hreflang points at a locale that does not have it; out of the sitemap; noindex with the
-    reason stated, which is what scripts/lib/seo-audit.mjs accepts as deliberate.
-    Remove both when the owner approves the page and the macro photographs replace the renders.
+    English only, outside every mirror prefix (src/lib/spanish-mirror.ts), so no hreflang
+    points at a locale that does not have it. Public since 2026-09-30, when the client put it
+    on the home page in place of the studio row.
   */
-  robots: { index: false, follow: true },
-  other: { "canton-withheld": "draft-awaiting-owner-review" },
 };
 
 export default function Story9014Page() {

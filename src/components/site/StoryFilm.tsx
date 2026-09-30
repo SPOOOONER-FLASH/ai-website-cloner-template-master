@@ -31,23 +31,40 @@ export function StoryFilm({
   label,
 }: StoryFilmProps) {
   const ref = useRef<HTMLVideoElement>(null);
+  const stoppedByVisitor = useRef(false);
   const [playing, setPlaying] = useState(false);
 
+  /*
+    Plays only while on screen. On the home page the film sits below the fold, and with
+    preload="none" nothing is downloaded until the visitor scrolls to it. A visitor who
+    pressed pause is not overruled by scrolling back.
+  */
   useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const connection = (
       navigator as Navigator & {
         connection?: { saveData?: boolean; effectiveType?: string };
       }
     ).connection;
+    if (motion.matches || shouldConserveBandwidth(connection)) return;
     // Playing is reported back through onPlay/onPause, so no state is set here.
-    if (!motion.matches && !shouldConserveBandwidth(connection))
-      ref.current?.play().catch(() => undefined);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !stoppedByVisitor.current) video.play().catch(() => undefined);
+        else if (!entry.isIntersecting) video.pause();
+      },
+      { threshold: 0.4 },
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
   }, []);
 
   const toggle = () => {
     const video = ref.current;
     if (!video) return;
+    stoppedByVisitor.current = !video.paused;
     if (video.paused) video.play().catch(() => undefined);
     else video.pause();
   };

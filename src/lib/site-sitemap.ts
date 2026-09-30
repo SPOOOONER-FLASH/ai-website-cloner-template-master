@@ -109,6 +109,8 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     ...entry("/", PRIORITY.home, "weekly"),
     ...entry("/products", PRIORITY.section, "weekly"),
     ...entry("/product-studies", PRIORITY.section, "monthly"),
+    /* One product told in one film (2026-09-30), English only: outside every mirror prefix. */
+    ...entry("/stories/9014", PRIORITY.support, "monthly"),
     ...entry("/products/argentina-ar4", PRIORITY.category, "weekly"),
     // The finder is a real landing page, not a widget: it is the page that ranks for
     // attribute queries ("panic bar 1000mm stainless") rather than model numbers.
