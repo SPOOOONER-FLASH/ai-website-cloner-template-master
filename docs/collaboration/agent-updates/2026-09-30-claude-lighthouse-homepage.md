@@ -85,3 +85,9 @@ Not touched: `src/data/generated/products-zh.json`, `public/images/door-prep/*.s
 本地同一份 out/ 手机 LCP 2.4 s、首屏图 21 KB 高优先级预载，所以差距不在代码。先猜的「边缘缓存冷、回源」
 在中国节点实测不成立（全部 HIT，见上表）；美国节点是否冷未知。决定性数据是 PSI 报告里「LCP breakdown」的
 四段（TTFB / 加载延迟 / 加载时长 / 渲染延迟），已请甲方截图。拿到前不改代码。
+
+**结论（同日 07:20）**：johns 电脑对线上首页连跑：同一份代码 64/62 → 93/82 → 屏蔽第三方 97/98。线上没有
+Cloudflare 注入的阻塞脚本（只有 Bot Fight Mode 的懒加载 challenge 片段，无 Rocket Loader / Zaraz）。
+手机 7.4 s 是单次测量波动，不是稳定缺陷。屏蔽 GTM/GA/Clarity 让 TBT 降 60–75%，所以 #18 的 Clarity 延后是
+唯一可靠的杠杆。本地试过把三份 CSS 内联进首页：FCP −0.3 s，但 LCP 不变、TBT 80 → 240–600 ms（React 水合时重插
+<link> 再下载一次），不采用。**以后看 Search Console「核心网页指标」（真实用户 CrUX），不追单次 PageSpeed 分。**
