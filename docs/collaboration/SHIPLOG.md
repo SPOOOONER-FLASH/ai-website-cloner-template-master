@@ -12,7 +12,9 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 07:18 | HYDE | 被 AI 引用最多的指南补上型号链接（W39 P1）：前 10 篇 8 篇可一跳到产品 | `4e234be89da` |
+| 07:26 | HYDE | 重建搜索索引（合并 origin/main 后） | `7982c21ce51` |
+| 07:24 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `7fb12973b69` |
+| 07:20 | HYDE | 玻璃门指南：JU 系列不是地弹簧；三段"我们不公布"已被 09-29 发布推翻 | `79f5207bc69` |
 | 07:02 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `a9d8f51da5e` |
 | 07:02 | 中立 | r21 上线核对完成，goal #122–#124 完成，#125 等 purge 后提交 IndexNow | `f2d3aa1f819` |
 | 05:47 | 中立 | 第 39 周周报：计分卡、环比同比、九条洞察、实验看板、四周 OKR、看板缺口；报数口径改为真人会话 | `5dc7a2d3739` |
@@ -706,6 +708,4 @@
 | 07:49 | HYDE · 发布 HYDE | 发布构建：941 页，product-finder 1.29MB -> 494KB | `6b66bfdd8f5` |
 | 07:37 | HYDE | 三篇 news：按买家问题覆盖审计的最大缺口写，不编造 | `859abf9f261` |
 | 07:28 | 中立 | 图纸提取：读 4 张写 16 行；确认 9 个 0 规格产品无图纸可读 | `e9cd1b91ab8` |
-| 07:21 | 中立 | 纪律：绿了就推，不要把工作停在本地 | `1393339e813` |
-| 07:20 | HYDE | 修 Bing「Html size is too long」：/product-finder/ 1.29MB，94% 是 RSC 载荷 | `6213012ad58` |
 
