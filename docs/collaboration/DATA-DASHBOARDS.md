@@ -17,6 +17,8 @@
 
 **第五个来源：Cloudflare AI Crawl Control**（2026-09-25 起）。Cloudflare → AI Crawl Control 导出两份：AI answer volume（各家 AI 的请求数）、AEO demand signals（AI 爬虫请求了哪些路径）。放进同一个文件夹，原始 CSV 存在 `docs/research/analytics/<日期>/cloudflare/`。
 
+**GA4 ↔ Clarity 一对一（2026-09-30 起，PR #18 发布后）**：每个 Clarity 会话带自定义标签 `ga_client_id`（GA4 的 Client ID）、`first_touch`、`page_type`。某位访客在 GA4「用户浏览器」里的 Client ID → Clarity 按 `ga_client_id` 筛选即可看录像；按 `first_touch` = `ai:chatgpt` 筛选即 AI 来的人。Clarity `lazyOnload`（甲方 09-30 确认保持）后标签先排队、Clarity 加载后补发，已用无头 Chrome 实测三页全部收到。
+
 GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站代码直接加载，GTM 里不要再加这两个。
 
 **09-24 实测：G-RBTE7KF82P 每次访问只收 1 次 page_view，没有重复计数。** GTM 容器是空的（版本 1）。

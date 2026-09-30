@@ -70,3 +70,12 @@ Not touched: `src/data/generated/products-zh.json`, `public/images/door-prep/*.s
 - Behaviour change worth a glance on /es/ and /pt/: product-card materials/finishes now come
   from the registered tables; a card showing an English material there means the layout's
   `registerRecordLocaleTables` call was lost.
+
+## 09-30 追加：客户问「延后会不会像 GTM 一样检测不到」+ 要 GTM 代码和监控办法
+
+- 实测（puppeteer，拦截 clarity.ms / gtag / gtm 并回放）：/、/es/products/lock-cases/、/guides/ 三页都在 load 后 5–20 ms 请求
+  Clarity，排队的 `first_touch`、`page_type`、`ga_client_id` 全部送达。Clarity 的写法前后都是 next/script（HTML 源码里
+  本来就不是 `<script>` 标签），检测靠真人浏览器回传数据，不受 Cloudflare 拦检测器的影响。
+- 给客户的指南：`/mnt/project-files/seo-geo-monitoring-2026-09-30/SEO-GEO-监控与GTM.md`（项目文件，不在仓库）。
+  要点：监控体系已在 DATA-DASHBOARDS（每周导出）；GTM 已有 6 个 dataLayer 事件可直接做触发器；唯一推荐加的是
+  LinkedIn Insight（GTM 自带类型），但**建议先做 cookie 同意横幅**（欧盟访客，Insight 写广告 cookie），缺口已在记忆里。
