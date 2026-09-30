@@ -89,7 +89,14 @@ test("both Products routes render one shared editorial system without losing dis
   assert.match(component, /\/contact\//);
   assert.doesNotMatch(component, /Designed by/i);
 
-  assert.match(english, /<ProductsEditorialOverview[\s\S]*locale="en"/);
+  /* English moved to the FSB-grammar showroom (draft, 2026-09-30); es/pt keep the overview. */
+  const showroom = readFileSync(join(root, "src", "components", "site", "ProductsShowroom.tsx"), "utf8");
+  assert.match(english, /<ProductsShowroom\b/);
+  assert.equal((showroom.match(/<h1\b/g) ?? []).length, 1);
+  assert.match(showroom, /architecture\.families\.map/);
+  assert.match(showroom, /\/downloads\//);
+  assert.match(showroom, /\/contact\//);
+  assert.doesNotMatch(showroom, /Designed by/i);
   assert.match(spanish, /<ProductsEditorialOverview[\s\S]*locale="es"/);
   assert.doesNotMatch(english, /<CategoryCard/);
   assert.doesNotMatch(spanish, /<CategoryCard/);

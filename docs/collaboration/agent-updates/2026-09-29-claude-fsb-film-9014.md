@@ -75,3 +75,18 @@
 - **给甲方/工厂**：每支主推执手 3 张真样品微距照（斜接拐角、面座边、拉丝方向）到了就替换两张渲染帧。
 - 注意：playwright 自带的 Chromium 不含 H.264，截图时视频显示为海报，这不是页面问题；真实浏览器正常播放。
 - `npm run check` 全绿（本地云端构建）。构建改动的 `out/`、`public/images/door-prep/*.svg` 等不是本次提交内容，已还原。
+
+## 追加（09-30 下午）：/products 按 FSB 产品页改版（英文草稿）
+
+甲方在决策卡上选了「改草稿」。只改英文 `/products`；`/es/`、`/pt/` 和七个覆盖语种仍用 `ProductsEditorialOverview`，等甲方看过再跟进。
+
+- 新组件 `src/components/site/ProductsShowroom.tsx`，顺序：小标题 + 快捷链接 → 9014 单品大图 → 材料三张（同为合页：SSH012 / B024 / BL030）
+  → 专题位（9014 专题页、Configurator Studio、BAU 2027）→ 不锈钢执手一致性墙 18 支 → 九个品类图卡（带型号数）→ 下载/询盘。
+  原有的 Product Finder 区、对比表链接、全部型号索引不动，接在后面。
+- **灰场是 CSS 做的**：白底实拍图放在 `bg-surface-alt` 上加 `mix-blend-multiply`，像素一个不改。Codex 的统一图到了只换路径。
+- 门控品类卡原来是地弹簧图，和「Surface closers」对不上，改用 JU-051。
+- 专题位链接 `/stories/9014/`（仍是 noindex 草稿），两页一起等甲方说「上线」。
+- `products-architecture.test.ts`：英文改为断言 `ProductsShowroom`，西语仍断言旧组件。
+- **给 Codex**：`docs/collaboration/tasks/2026-09-30-codex-products-grey-field-plates.md`（33 张，含上一单 9014 两张套装图）。只交图，`src/` 由 Claude 换路径。
+- **给工厂**：三种材料装在真门上的实景照各一张，替换材料三张。
+- `npm run check` 全绿。
