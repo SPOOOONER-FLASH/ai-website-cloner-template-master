@@ -147,6 +147,6 @@ for (const src of ["Search Console", "Bing Webmaster", "Clarity", "GA4"]) {
 writeFileSync(join(OUT, "REPORT.md"), out.join("\n"));
 writeFileSync(
   "docs/research/analytics/LATEST.md",
-  `# 最新一期数据\n\n→ [${DATE}](${DATE}/REPORT.md)\n\n看板说明、谁看什么、本期结论：\`docs/collaboration/DATA-DASHBOARDS.md\`。\n`,
+  `# 最新一期数据\n\n→ [${DATE}](${DATE}/REPORT.md)（数据）· 周环比：\`node scripts/build-weekly-kpis.mjs --write\` 生成 \`${DATE}/KPI-WOW.md\`\n\n看板说明、谁看什么、本期结论：\`docs/collaboration/DATA-DASHBOARDS.md\`。周报范本：\`2026-09-30/HYDE-周报-2026-W39.md\`。\n`,
 );
 console.log(`✓ ${files.length} 个 CSV → ${OUT}/REPORT.md（${Object.entries(bySource).map(([k, v]) => `${k} ${v.length}`).join("，")}）`);
