@@ -3,6 +3,7 @@
   "title": "Universal or Handed 2026: Which Hardware Is Reversible, Which Is Not, and the Four Products That Catch Projects Out",
   "kind": "insight",
   "publishedAt": "2026-09-21",
+  "updatedAt": "2026-09-30",
   "summary": "\"Universal\" means three different things in a hardware catalog and only one of them means you can stop thinking about handing. This page separates non-handed from field-reversible from factory-handed, names the four products that are handed when people assume they are not, explains what reversing actually does inside a lock, and gives the line to put on an order so the question never arrives.",
   "author": {
     "name": "Johnson Liu",
@@ -71,6 +72,7 @@
     "And on pairs, state it per leaf. A pair is two handed doors, and a schedule line that gives one hand for a pair has described half the opening.",
     "## What we publish, and the honest gap",
     "Where a model is handed, the product page says so and the order code carries it. Where a model is reversible, the page says reversible rather than universal, because those are different promises and we would rather write the narrower one.",
+    "Two examples of the difference from our own rows: the 575 tubular lock is published as fully reversible, left or right hand, which means somebody has to reverse it; the 70722 DC grip handle set is published as non-handed.",
     "What our pages do not yet consistently state is which hand a reversible product ships in by default. That is the information behind the \"reversible is not reversed\" point above, and until the rows carry it the answer comes per order rather than from the catalog.",
     "As with the dimension gaps on our interchangeability page, that is a reconciliation job rather than something to fill in with a plausible default, a default hand written into a row and wrong on a hundred doors is a more expensive error than an absent row that gets queried. A survey that records three observations per door costs an afternoon and removes the single most common cause of a container arriving in the wrong hand."
   ],
@@ -207,6 +209,7 @@
     "Y en puertas de dos hojas, indíquelo por hoja. Un par son dos puertas con mano, y una línea de planilla que da una sola mano para un par ha descrito medio hueco.",
     "## Qué publicamos, y el hueco honesto",
     "Donde un modelo tiene mano, la ficha lo dice y el código de pedido la lleva. Donde un modelo es reversible, la ficha dice reversible y no universal, porque son promesas distintas y preferimos escribir la más estrecha.",
+    "Dos ejemplos de la diferencia en nuestras propias filas: la cerradura tubular 575 se publica como totalmente reversible, mano izquierda o derecha, lo que significa que alguien tiene que invertirla; el juego de manillón 70722 DC se publica como sin mano.",
     "Lo que nuestras fichas todavía no indican de forma consistente es de qué mano sale por defecto un producto reversible. Esa es la información que hay detrás del punto «reversible no es invertido» de arriba, y hasta que las filas la lleven la respuesta viene pedido a pedido y no del catálogo.",
     "Como con los huecos dimensionales de nuestra página de intercambiabilidad, eso es un trabajo de reconciliación y no algo que rellenar con un valor por defecto plausible: una mano por defecto escrita en una fila y equivocada en cien puertas es un error más caro que una fila ausente que se pregunta."
   ],
@@ -263,7 +266,12 @@
     "E em portas de duas folhas, indique-o por folha. Um par são duas portas com mão, e uma linha de planilha que dá uma só mão para um par descreveu metade do vão.",
     "## O que publicamos, e a lacuna honesta",
     "Onde um modelo tem mão, a página di-lo e o código de pedido leva-a. Onde um modelo é reversível, a página diz reversível e não universal, porque são promessas diferentes e preferimos escrever a mais estreita.",
+    "Dois exemplos da diferença nas nossas próprias linhas: a fechadura tubular 575 é publicada como totalmente reversível, mão esquerda ou direita, o que quer dizer que alguém tem de invertê-la; o conjunto de puxador 70722 DC é publicado como sem mão.",
     "O que as nossas páginas ainda não indicam de forma consistente é de que mão sai por defeito um produto reversível. Essa é a informação por trás do ponto \"reversível não é invertido\" acima, e até as linhas a levarem a resposta vem pedido a pedido e não do catálogo.",
     "Como com as lacunas dimensionais da nossa página de intercambiabilidade, isso é um trabalho de reconciliação e não algo a preencher com um valor padrão plausível: uma mão padrão escrita numa linha e errada em cem portas é um erro mais caro do que uma linha ausente que é questionada."
+  ],
+  "relatedModels": [
+    "575 ABET",
+    "70722 DC"
   ]
 }
