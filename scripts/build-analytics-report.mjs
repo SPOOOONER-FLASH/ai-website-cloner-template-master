@@ -79,8 +79,9 @@ function walk(d) {
 function sourceOf(p) {
   const rel = relative(DIR, p);
   if (/^Clarity_/i.test(basename(p))) return "Clarity";
-  if (/Performance-on-Search/i.test(rel)) return "Search Console";
-  if (/_(AIPageStats|AISearchQueries|Keyword|PageTraffic|SearchPerformance)/i.test(basename(p))) return "Bing Webmaster";
+  /* Discover 导出（09-30 起有数据）也归 Search Console，否则会被当成 GA4 的表 */
+  if (/Performance-on-(Search|Discover)/i.test(rel)) return "Search Console";
+  if (/_(AIPageStats|AISearchQueries|AIPerformanceOverview|Keyword|PageTraffic|SearchPerformance)/i.test(basename(p))) return "Bing Webmaster";
   return "GA4";
 }
 const files = walk(DIR);
@@ -108,7 +109,7 @@ say(`结论见 \`docs/collaboration/DATA-DASHBOARDS.md\`「本期结论」。原
 say();
 
 /* 机会清单：放最前面，这是所有会话最常用的一张表 */
-const gscPages = (bySource["Search Console"] ?? []).find((f) => /网页\.csv$/.test(f) && !/Generative/.test(f));
+const gscPages = (bySource["Search Console"] ?? []).find((f) => /网页\.csv$/.test(f) && !/Generative|Discover/.test(f));
 if (gscPages) {
   const [, ...rows] = parse(gscPages).blocks[0];
   const opp = rows

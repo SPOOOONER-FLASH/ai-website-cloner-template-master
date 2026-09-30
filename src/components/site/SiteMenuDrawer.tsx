@@ -82,8 +82,8 @@ export function SiteMenuDrawer({ locale, state = "open", currentPath, categories
 
   const contact = <div className={styles.contact}>
     <p className={styles.promise}>{experience.exportPromise}</p>
-    {/* One channel per line (09-28: both were inline-block and ran together as "…comWhatsApp"). */}
-    <ul className="space-y-8">
+    {/* Separate items with a gap (09-28: both were inline-block and ran together as "…comWhatsApp"); side by side where there is room, to save height (09-30). */}
+    <ul className={styles.contactLinks}>
       {siteSettings.contact.email ? <li><EmailLink address={siteSettings.contact.email}
         className="short-marker inline-block break-all text-c1 text-ink" /></li> : null}
       {whatsappHref() ? <li><a href={whatsappHref()} target="_blank" rel="noopener noreferrer"
