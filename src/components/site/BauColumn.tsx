@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Event, WithContext } from "schema-dts";
-import { bauCopy, bauEvent, bauFeatured, type BauLocale } from "@/data/bau-2027";
+import { bauCopy, bauEvent, bauFeatured, bauOfficialBanner, type BauLocale } from "@/data/bau-2027";
 import { absoluteUrl, legalName, siteUrl } from "@/data/site";
 import { JsonLd } from "./JsonLd";
 import { BauMeetingForm } from "./BauMeetingForm";
@@ -16,6 +16,7 @@ import { BauMeetingForm } from "./BauMeetingForm";
 export function BauColumn({ locale }: { locale: BauLocale }) {
   const copy = bauCopy(locale);
   const featured = bauFeatured(locale);
+  const banner = bauOfficialBanner[locale];
   const base = locale === "en" ? "" : `/${locale}`;
   const path = `${base}/bau-2027/`;
 
@@ -110,10 +111,20 @@ export function BauColumn({ locale }: { locale: BauLocale }) {
             </dl>
 
             <section aria-labelledby="bau-about" className="border-t border-line pt-32 lg:col-span-8 lg:row-start-3">
-              <h2 id="bau-about" className="text-h3 text-ink">
-                {copy.about.heading}
-              </h2>
-              <p className="mt-16 max-w-[64rem] text-c1 text-ink">{copy.about.body}</p>
+              <div className="flex flex-col gap-32 md:flex-row md:items-start md:justify-between">
+                <div className="min-w-0">
+                  <h2 id="bau-about" className="text-h3 text-ink">
+                    {copy.about.heading}
+                  </h2>
+                  <p className="mt-16 max-w-[64rem] text-c1 text-ink">{copy.about.body}</p>
+                </div>
+                <figure className="w-full max-w-[30rem] flex-none">
+                  <a href={banner.href} target="_blank" rel="noopener" className="block">
+                    <img src={banner.src} alt={banner.alt} width="300" height="250" loading="lazy" className="block h-auto w-full" />
+                  </a>
+                  <figcaption className="mt-8 text-c2 text-ink-secondary">{banner.caption}</figcaption>
+                </figure>
+              </div>
             </section>
           </div>
 

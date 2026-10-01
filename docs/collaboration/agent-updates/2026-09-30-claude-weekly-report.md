@@ -62,3 +62,10 @@
 - **险情**：`scripts/chunk-push-release.mjs` 推 main 用的是 `--force`。main 在上传期间前进了，第二次尝试若成功，会用较旧的 out/ 覆盖另一会话的发布和其间所有源码提交。
   已手动中止（main 未被改动，`ls-remote` 确认）。**已修**：只有临时分支用 force；main 普通推送；推之前若发现 main 上 out/ 已被别的发布改过，直接停下（exit 75）不覆盖。
   对当时状态 `--dry` 实测：脚本正确拒绝。
+
+## BAU 2027 官方展商横幅（10-01）
+
+- 甲方给了 Messe München 展商服务生成的英、德各 5 种尺寸横幅（Halle C4 / Stand 523，链到官方展商目录 1535812）。
+- 原图十张存 `docs/design-references/bau-2027-official-banners/`（服务器给的是 PNG，原链接扩展名写 .jpg）；站上只用 300×250，转 webp 自托管在 `public/images/bau-2027/`，页面不从横幅服务器加载任何东西。
+- 位置：/bau-2027/ 与 /de/bau-2027/「关于我们的展位」一段右侧，各用本语种版本，新窗口打开官方展商页。没放进粘性表单栏：那一栏在 1440×900 已有 1,158px 高，放底部只有滚到页尾才看得见。其余尺寸（728×90、160×600、468×60、1080×1080）留给邮件签名和社媒用。
+- 顺带：Codex 的 `scripts/build-kanee-fidelity-sources.mjs` 一处 colours 让美式拼写测试失败，已改 colors。

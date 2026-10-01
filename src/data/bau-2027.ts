@@ -53,3 +53,27 @@ export function bauFeatured(locale: BauLocale): BauFeatured[] {
     };
   });
 }
+
+/**
+ * Messe München's own exhibitor banner (client, 2026-10-01), generated in the BAU exhibitor
+ * service for Hall C4, Stand 523 and linking to our entry in the official exhibitor directory —
+ * a third party confirming the stand, which is worth more to a cautious buyer than our own
+ * claim. Self-hosted (originals in docs/design-references/bau-2027-official-banners/, all five
+ * sizes per language) so the page loads nothing from the banner server. One placement only:
+ * the 300×250 beside the “about our stand” paragraph (the sticky form column is already
+ * taller than a laptop screen, so a banner there would only show at the end of the page).
+ */
+export const bauOfficialBanner: Record<BauLocale, { href: string; src: string; alt: string; caption: string }> = {
+  en: {
+    href: "https://exhibitors.bau-muenchen.com/company/1535812",
+    src: "/images/bau-2027/bau-2027-banner-en-300x250.webp",
+    alt: "BAU 2027, January 11–15, 2027, Messe München. Visit us in Hall C4, Stand 523",
+    caption: "Our entry in the official BAU 2027 exhibitor directory",
+  },
+  de: {
+    href: "https://exhibitors.bau-muenchen.com/firma/1535812",
+    src: "/images/bau-2027/bau-2027-banner-de-300x250.webp",
+    alt: "BAU 2027, 11.–15. Januar 2027, Messe München. Besuchen Sie uns in Halle C4, Stand 523",
+    caption: "Unser Eintrag im offiziellen Ausstellerverzeichnis der BAU 2027",
+  },
+};

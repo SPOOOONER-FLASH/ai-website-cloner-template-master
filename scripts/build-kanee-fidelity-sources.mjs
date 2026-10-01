@@ -22,7 +22,7 @@ for(const item of entries){
   receipts.push({id:item.id,model:item.model,source,sourceSha256:sha(buffer),layerIndex:l.index,
     layerName:l.name,originalLayerWidth:l.width,originalLayerHeight:l.height,pixelSha256:sha(l.rgba),
     nativePng:`sources/${item.id}.png`,nativePngSha256:sha(image),
-    scope:'Real photographic portrait, not a claim of a supplied kit. Original manufacturing colours retained. No invented finish, quantity, compatibility, dimensions or certification.'});
+    scope:'Real photographic portrait, not a claim of a supplied kit. Original manufacturing colors retained. No invented finish, quantity, compatibility, dimensions or certification.'});
 }
 await fs.writeFile(path.join(out,'provenance.json'),JSON.stringify(receipts,null,2)+'\n');
 console.log(`${receipts.length} native photographic layers extracted; visual acceptance remains separate.`);
