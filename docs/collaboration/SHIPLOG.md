@@ -6,12 +6,22 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 563 次提交
+最近 30 天 · 共 553 次提交
+
+## 2026-10-02
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 04:50 | 中立 | 甲方手动操作：Clarity 九个新话题提问 + LinkedIn 公司主页，出 docx 到桌面 hyde；纪律：凡要甲方手动做的都出 docx | `b2842ebbcf1` |
 
 ## 2026-10-01
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 09:14 | 中立 | goal #125 完成：purge 后 IndexNow 已提交（316 URL，200 OK） | `572ce6fb1a4` |
+| 09:11 | 发布 HYDE | Merge branch 'main' of https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master into HEAD | `16dfea05897` |
+| 09:11 | 中立 | goal #128 完成：BAU 官方横幅已上线（f1852e3082a） | `a0577f2ef2e` |
+| 08:11 | 中立 | SPEC_COVERAGE 重新生成：DV06 门厚新增 30–50mm 一档，门厚不同取值 24→25（解除发布阻塞） | `44080de40e5` |
 | 08:00 | 中立 | BAU 2027 官方展商横幅上架（英、德各一张 300×250，在展位介绍旁，链到官方展商目录） | `4d178d4fd6e` |
 
 ## 2026-09-30
@@ -665,24 +675,4 @@
 | 06:59 | 中立 · 发布 HYDE | 发布构建：搜索改为不确定就给系列 | `fca77383173` |
 | 06:57 | 中立 | 搜索：不确定就不跳到单个 SKU，改为给出系列 | `bfe362663c9` |
 | 06:53 | 中立 | 报价单链接修复：产品页路由只取 categoryPath 首段 | `0541058e71d` |
-| 04:00 | 中立 | docs(release): record origin and edge verification | `ebabbb505be` |
-| 03:40 | 中立 · 发布 HYDE | release: rebuild static export after FSB preview batch | `476854e01aa` |
-| 03:35 | 中立 | docs(design): add FSB teardown and grounded image preview set | `0de1ac70e9f` |
-| 01:41 | 中立 | 与 Codex 的供应商工作表对齐；npm run sheets 修回可用 | `bdb2177fb69` |
-| 01:36 | 中立 | 美工表区分「要拍」与「只差选封面」；HANDOFF 更新发布点 | `95be6d7d0f5` |
-| 01:35 | 中立 | 两份待补清单合并成一份可填写的工作表 | `a13ca576039` |
-| 01:28 | 中立 | 报价单：抬头集中到 _company.json，新增巴西玻璃门五金报价 | `2e48cf87a43` |
-| 01:26 | 中立 | sync-agent-rules: .clinerules 补上遗漏的自动压缩一节 | `8fa393b8f21` |
-| 01:24 | 中立 · 发布 HYDE | 发布构建：搜索回车、AR4 手机横轨、/products/ 对比页入口 | `255588361e5` |
-| 01:20 | 中立 | 新增美工填写表与手动提交清单两个生成脚本；AGENTS.md 写入自动压缩纪律 | `9e1d5faa6d0` |
-| 01:05 | HYDE | 搜索回车可用；AR4 手机端改横向滑轨；对比页给出入口 | `fd01d9382ab` |
-
-## 2026-09-01
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 08:37 | 发布 HYDE | 发布构建：15 个对比页 + 19 个子类页；搜索近似建议；地址拆分 | `03493ab3993` |
-| 08:37 | HYDE | 新增 /collections/ 19 个子类静态页；顶栏 shelf 与抽屉改指它们 | `bb60c7e00a8` |
-| 08:29 | HYDE | 新增 /compare/ 15 个静态对比页；分类页链接过去 | `62e212a0ca3` |
-| 08:18 | HYDE | 搜索空结果给近似型号；工厂/办公室两个地址分开；不再展示制造主体名 | `ccb700b4399` |
 
