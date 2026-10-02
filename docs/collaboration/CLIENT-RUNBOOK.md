@@ -17,6 +17,13 @@
 
 ---
 
+## 现在要做的（2026-10-02）：Clarity 九个新话题 + LinkedIn 公司主页
+
+完整步骤和要粘贴的全部文字在桌面 `hyde6-10-02-手动操作-Clarity九个话题与LinkedIn.docx`
+（源文件 `docs/collaboration/2026-10-02-手动操作-Clarity九个话题与LinkedIn.md`）。做完 LinkedIn 把主页网址发我。
+
+---
+
 ## 现在要做的（2026-09-30，周报）：五件，都在后台点，不碰服务器
 
 为什么要做：周报 `docs/research/analytics/2026-09-30/HYDE-周报-2026-W39.md`（桌面 `hyde\HYDE-周报-2026-W39.docx`）
@@ -59,7 +66,11 @@ GA4 里 58% 的「用户」是同一个机器人（屏幕 1280×1200）。建一
 2. 「Glass door hardware and frameless entrances」那一行显示 Draft：点进去 → **Run**。
 3. 「Documentation, test evidence and submittals」「Fire safety compliance」两行（都是 0%）：各点进去，把里面列出的提问截图或导出发我。
 
-### ⑤ 回我一句：Meta 的爬虫要不要限流
+### ⑤ Meta 爬虫：已定先不限流（10-02），以后选做
+
+下面保留原说明作背景。
+
+#### 原说明
 
 10 天里 Meta 的爬虫请求了 67,364 次，占全站 31%，带来的访问是 0。它是给 Meta 的 AI 训练抓数据，不是搜索。
 回「限」或「不限」即可；「限」的话我把具体做法写在这里，你在 Cloudflare 里点一次。

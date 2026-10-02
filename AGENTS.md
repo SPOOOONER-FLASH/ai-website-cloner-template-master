@@ -359,6 +359,14 @@ So, every time you hand him something to do:
    This is the generator rule from further up, applied to a deliverable that leaves the
    repository: write the generator, then run it; never hand-build the output.
 
+6. **Every hand-off he has to act on gets its own Word file in `Desktop\hyde\`.** Client
+   instruction, 2026-10-02: 「这种让我手动操作的都写桌面 hyde docx」. Not only the runbook:
+   any task you give him to do by hand — text to paste into Clarity, LinkedIn, Search Console,
+   a form, a supplier — goes into a markdown file under `docs/collaboration/` (dated, named for
+   what he does) and is exported with
+   `node scripts/build-client-runbook-docx.mjs --src <that file>`, in the same commit. Put a
+   one-line pointer to it at the top of `CLIENT-RUNBOOK.md`. A chat reply is not a hand-off.
+
 ### Professional, not decorated. The buyer is purchasing confidence.
 
 Client's principal, 2026-09-05:
