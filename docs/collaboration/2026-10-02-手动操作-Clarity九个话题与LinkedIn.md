@@ -4,8 +4,8 @@
 
 | 件 | 在哪做 | 大约多久 | 做完发我什么 |
 |---|---|---|---|
-| ① Clarity 建九个话题 | Clarity → AI Visibility → Topic insights | 每个 3 分钟，共约 30 分钟 | 不用发；一周后我从导出里读 |
-| ② LinkedIn 公司主页 | linkedin.com → For Business → Create a Company Page | 约 20 分钟 | 主页网址 `linkedin.com/company/…` |
+| ① Clarity 建九个话题 | Clarity → AI Visibility → Topic insights | 每个 4 分钟，共约 30 分钟 | 不用发；一周后我从导出里读 |
+| ② LinkedIn 公司主页 | 已建：linkedin.com/company/hyde-cantonlock | 填 About 与 Specialties 约 10 分钟 | 不用发 |
 | 备忘 | Meta 爬虫限流：**先不做**，以后选做 | — | — |
 
 ---
@@ -23,7 +23,7 @@
 1. 打开 https://clarity.microsoft.com ，项目 **hyde** → 顶部 **AI Visibility** → **Topic insights**。
 2. 右上角点 **+ Add topic**，弹出「Create new topic」。
 3. **Title** 粘贴话题标题（下面每节的第一行，粗体那句）。
-4. 点 **+ Add prompt**，粘贴第 1 条提问；再点 **+ Add prompt**，粘第 2 条……每个话题 12 条，粘完右上角显示 **12/15**。
+4. 点 **+ Add prompt**，粘贴第 1 条提问；再点 **+ Add prompt**，粘第 2 条……每个话题 15 条（上限），粘完显示 **15/15**。
 5. 点 **Generate report**。
 
 **成功的样子**：弹窗关闭，Topic insights 列表里多一行，「Last run」显示今天的日期。左下角「weekly reports used」的数字加 1。
@@ -50,6 +50,9 @@
 10. How do samples work when sourcing door hardware from a factory?
 11. What does a door hardware factory audit cover?
 12. How do I compare quotes from two door hardware manufacturers?
+13. Do Chinese door hardware factories offer OEM private label?
+14. What certifications should a door hardware factory in China have?
+15. How do I protect my design when a Chinese factory tools it?
 
 ### 话题 2
 
@@ -67,6 +70,9 @@
 10. What prep does a mortise lock need in a hollow metal door?
 11. Can I fit a cylindrical lock into a door prepared for a tubular latch?
 12. What is the edge bore size for a door latch?
+13. What is ANSI A115 door preparation?
+14. What is a full lip strike used for?
+15. What diameter is the cross bore for a door lock?
 
 ### 话题 3
 
@@ -84,6 +90,9 @@
 10. What does a golden sample mean in incoming inspection?
 11. What happens if imported door hardware is classified under the wrong HS code?
 12. What is the national tariff code after the six-digit HS code?
+13. What is the HS code for a panic bar?
+14. What HS code applies to padlocks?
+15. How are mixed door hardware shipments declared at customs?
 
 ### 话题 4
 
@@ -101,6 +110,9 @@
 10. How can I tell which stainless grade a supplier actually quoted?
 11. What is an EN 10204 3.1 material certificate?
 12. Is aluminum alloy suitable for a panic bar?
+13. What is the best material for door hardware in hospitals?
+14. Does 304 stainless steel rust on door handles?
+15. What is PVD finish on door hardware?
 
 ### 话题 5
 
@@ -118,6 +130,9 @@
 10. Do mortise lock cases come in a reversible version?
 11. What faceplate width do mortise locks use?
 12. What is the standard mortise lock size in Europe?
+13. What is a 72mm center distance lock case used for?
+14. What is the difference between a mortise lock and a rim lock?
+15. Can a mortise lock case be used on a fire door?
 
 ### 话题 6
 
@@ -135,6 +150,9 @@
 10. Are copper hinges and brass hinges the same thing?
 11. How much weight can a 4 inch hinge hold?
 12. What hinge finishes are available for commercial doors?
+13. What is a rising butt hinge?
+14. What hinge do I need for a heavy steel door?
+15. How do I measure a door hinge?
 
 ### 话题 7
 
@@ -152,6 +170,9 @@
 10. How do I adjust the closing speed of a door closer?
 11. Which door closers are suitable for fire doors?
 12. What is the difference between a floor spring and a top pivot?
+13. What is a delayed action door closer?
+14. How long does a door closer last?
+15. What floor spring is used for double action doors?
 
 ### 话题 8
 
@@ -169,6 +190,9 @@
 10. What lever handle shape is required for accessible doors?
 11. What backset do lever handle sets come in?
 12. How do I choose lever handles for a hotel project?
+13. What is a sprung lever handle?
+14. What is the standard height for a door handle?
+15. What is the difference between a passage and a privacy lever set?
 
 ### 话题 9
 
@@ -186,6 +210,9 @@
 10. What is a fold-down shower seat used for?
 11. What finish is most durable for commercial washroom hardware?
 12. How do I specify washroom accessories for a project schedule?
+13. What is a coat hook for a toilet cubicle?
+14. What is a paper towel dispenser made of?
+15. What grab bar diameter is required for accessibility?
 
 ---
 
@@ -198,7 +225,7 @@
 3. 下面每个字段照抄（英文原样粘贴）。Logo 用官网那张横版黑色标志。
 4. 点 **Create page**。
 
-**成功的样子**：浏览器地址像 `https://www.linkedin.com/company/xxxx/`。**把这个地址发给我**，我加进官网结构化数据，让 AI 和搜索引擎知道这是同一家公司。
+**已完成（10-02）**：主页是 `https://www.linkedin.com/company/hyde-cantonlock/`，已加进官网页脚社交链接和结构化数据（随下一次发布上线）。
 
 **出问题时**：
 

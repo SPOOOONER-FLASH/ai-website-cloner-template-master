@@ -20,7 +20,7 @@
 ## 现在要做的（2026-10-02）：Clarity 九个新话题 + LinkedIn 公司主页
 
 完整步骤和要粘贴的全部文字在桌面 `hyde6-10-02-手动操作-Clarity九个话题与LinkedIn.docx`
-（源文件 `docs/collaboration/2026-10-02-手动操作-Clarity九个话题与LinkedIn.md`）。做完 LinkedIn 把主页网址发我。
+（源文件 `docs/collaboration/2026-10-02-手动操作-Clarity九个话题与LinkedIn.md`）。LinkedIn 主页已建（linkedin.com/company/hyde-cantonlock，10-02 已加进官网），Clarity 每个话题已扩到 15 条提问。
 
 ---
 
