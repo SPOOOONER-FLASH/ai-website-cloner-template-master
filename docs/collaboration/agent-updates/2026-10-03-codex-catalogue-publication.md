@@ -15,3 +15,16 @@ Agent: Codex. The client explicitly asked to try publishing the completed contac
 Use a new isolated `E:/release/codex-catalogue-20261003/` checkout, excluding root archives and unrelated old exports. Include all runtime assets, required manifests and previous `out/_next/static` assets. Run the complete `deploy:prep` validation chain with `NEXT_BUILD_CPUS=2`; do not publish a partial HTML/JS patch because the shared promo/contact changes affect the entire site.
 
 The existing dirty `E:/release/release-hyde`, Claude checkout, paused search work and C: migration copy are untouched. Only HYDE `out/` will be staged if the full release passes. Cloudflare purge remains client-only. A source push is not a deployment; verify remote source, generated release and origin deployment separately.
+
+## Verified source push and complete release
+
+- `npm run ship` succeeded on its first push attempt. `ls-remote` matched local `d2561423707acfaccca8fe1baf76c5fc97280184`; the original source commit is an ancestor. Post-sync typecheck passed after including its required JSON manifests in the source sparse checkout.
+- The isolated release checkout used its own copied node_modules directory; source and release dependency lockfiles matched. No runtime, plugin, global configuration or login was installed.
+- `NEXT_BUILD_CPUS=2`, `NODE_OPTIONS=--max-old-space-size=3072`: `deploy:prep` completed with exit 0. Next generated 9,235 pages, then the existing pipeline separated the frozen RAYEN output and pruned obsolete exports. HYDE link audit: 8,050 pages, 922,492 links and 197,643 asset references, all resolved; semantic blocking issues 0.
+- Full post-export tests: 456 passed, 0 failed, 0 skipped. The earlier sparse-checkout test failures were missing model references/IMAGE_CREDITS and absent pre-build pages; references were restored and all tests passed after export.
+- Read-only output review: 20 Downloads/Contact HTML files across ten locales passed order/email checks; 23 referenced scripts existed. The newly generated promo JS includes the download attribute, unchanged raw PDF path, ten labels, minimum 44px target and collapsed details behavior.
+- Normal staging tried to retrieve old text blobs during line-ending detection. `git add --renormalize --sparse -- out/`, then explicit `git add --sparse -A -- out/`, completed without fetching old HTML. Only HYDE out was staged; index and disk each contain 71,453 files, with 0 missing and 0 unstaged export files.
+- Local release commit: `3dbc0349fda551d79864568200fbdbdd1b8d1289`, parent `d2561423707a`. Git returned 128 while printing its summary because that summary needed an unavailable previous blob; the commit itself exists, its parent/subject are correct, and index equals HEAD. Future partial-clone release commits should use `git commit -q -F <message file>` to avoid summary fetches.
+- Upload is using the existing atomic chunk uploader and a task-specific side branch `codex/catalogue-release-20261003`. Source push and local build do not yet establish successful final main upload or production deployment; record the resulting main SHA below when verified.
+
+The standard build regenerated public drawing/search files and the frozen RAYEN mirror inside this isolated checkout. Those incidental source/RAYEN changes are not staged or committed; the published change is HYDE out only.
