@@ -33,9 +33,8 @@ export interface Representative {
    *
    * Client decision, 2026-09-03. North America goes to a person, not a shared mailbox —
    * the account manager reads it directly, which for two contact points in one time zone
-   * is faster than a queue. China and Germany route to the company addresses, which are
-   * split by function rather than by region: hyde@ for general enquiries, lock@ for
-   * orders and pricing, tec@ for drawings and specification.
+   * is faster than a queue. Germany uses tec@cantonlock.com, the public company
+   * mailbox retained by the client's 2026-10-03 contact update.
    */
   email: string;
   /** Why this address exists, in the buyer's terms. Kept honest and short. */
@@ -77,7 +76,7 @@ export const representatives: Representative[] = [
     regionPt: "Alemanha",
     city: "Cologne",
     address: "Koelnmesse, Messeplatz 1, 50679 Cologne",
-    email: "hyde@cantonlock.com",
+    email: "tec@cantonlock.com",
     note: "Where we exhibit in Germany. Meetings can be arranged around the Cologne fair calendar.",
     noteEs:
       "Donde exponemos en Alemania. Se pueden concertar reuniones en torno al calendario ferial de Colonia.",
@@ -90,7 +89,7 @@ export const representatives: Representative[] = [
     regionPt: "Alemanha",
     city: "Brohl-Lützing",
     address: "Koblenzerstr. 29, 56656 Brohl-Lützing",
-    email: "hyde@cantonlock.com",
+    email: "tec@cantonlock.com",
     note: "Contact point for the Rhineland region.",
     noteEs: "Punto de contacto para la región de Renania.",
     notePt: "Ponto de contato para a região da Renânia.",

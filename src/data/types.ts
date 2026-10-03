@@ -390,6 +390,8 @@ export interface PromoCard {
   /** Optional locale-specific destination for campaigns whose target has a Spanish route. */
   ctaHrefEs?: string;
   ctaHrefPt?: string;
+  /** Show the current HYDE catalog as a direct PDF download below this card's CTA. */
+  downloadCatalogue?: boolean;
   /**
    * What fills the left panel.
    *

@@ -58,7 +58,6 @@ export default function ServiceDownloadsPage() {
 
       <div className="layout mt-144 lg:mt-192">
         <div className="col-content space-y-144">
-          <ModelLibrary locale="en" />
           {visibleGroups.map((group) => {
             const files = getDownloadsByKind(group.kind);
             return (
@@ -97,6 +96,8 @@ export default function ServiceDownloadsPage() {
               </section>
             );
           })}
+
+          <ModelLibrary locale="en" />
 
           <section aria-labelledby="certificate-title">
             <div className="grid grid-cols gap-x gap-y-24">

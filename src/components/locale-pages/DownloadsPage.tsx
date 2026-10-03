@@ -59,7 +59,6 @@ export function DownloadsPage({ locale }: { locale: Locale }) {
       </section>
       <div className="layout mt-144 lg:mt-192">
         <div className="col-content space-y-144">
-          <ModelLibrary locale={locale} />
           {visibleGroups.map((group) => {
             const files = getDownloadsByKind(group.kind);
             return (
@@ -100,6 +99,7 @@ export function DownloadsPage({ locale }: { locale: Locale }) {
               </section>
             );
           })}
+          <ModelLibrary locale={locale} />
           <section aria-labelledby="certificate-title">
             <div className="grid grid-cols gap-x gap-y-24">
               <div className="col-span-full xl:col-span-7">

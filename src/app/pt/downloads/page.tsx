@@ -71,7 +71,6 @@ export default function ServicoDownloadsPage() {
 
       <div className="layout mt-144 lg:mt-192">
         <div className="col-content space-y-144">
-          <ModelLibrary locale="pt" />
           {visibleGroups.map((group) => {
             const files = getDownloadsByKind(group.kind);
             return (
@@ -112,6 +111,8 @@ export default function ServicoDownloadsPage() {
               </section>
             );
           })}
+
+          <ModelLibrary locale="pt" />
 
           <section aria-labelledby="certificate-title">
             <div className="grid grid-cols gap-x gap-y-24">

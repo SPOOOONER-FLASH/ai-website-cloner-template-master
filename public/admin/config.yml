@@ -436,6 +436,7 @@ collections:
               - { name: "ctaLabelEs", label: "按钮文字（西班牙语）", widget: "string", required: false }
               - { name: "ctaHref", label: "按钮链接", widget: "string", hint: "站内路径如 /contact/，或下载文件如 /downloads/xxx.pdf。" }
               - { name: "ctaHrefEs", label: "按钮链接（西班牙语）", widget: "string", required: false, hint: "西语站有独立页面时填写，例如 /es/contact/；留空则沿用英文链接。" }
+              - { name: "downloadCatalogue", label: "显示产品目录下载", widget: "boolean", default: false, required: false, hint: "在这张卡片展开后显示现有 HYDE 英文产品目录 PDF 的直接下载入口。" }
               - name: "visual"
                 label: "左侧画面"
                 widget: "select"

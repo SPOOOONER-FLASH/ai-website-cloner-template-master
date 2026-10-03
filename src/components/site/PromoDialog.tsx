@@ -8,6 +8,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import type { PromoCard } from "@/data/types";
+import { formatDownloadSize, getDownloadsByIds } from "@/data/downloads";
+import catalogueDownloadLabels from "@/data/promo-catalog-download-labels.json";
 import {
   addSessionDismissal,
   localisePromoCardCopy,
@@ -48,6 +50,7 @@ import { HydeLockup } from "./icons";
  * forced preview still carried the permanent dismissals).
  */
 const STORAGE_KEY = "canton-promo";
+
 const RAIL_LIFT_CLASSES = {
   0: "bottom-16 xs:bottom-24",
   80: "bottom-96 xs:bottom-104",
@@ -280,6 +283,9 @@ function PromoCardBlock({
   // A catalogue PDF is a file, not a route — Link would try to client-navigate to it.
   const isFile = /^https?:|\.(pdf|zip|dwg|rfa)$/i.test(ctaHref);
   const isExternal = /^https?:/i.test(ctaHref);
+  const catalogue = card.downloadCatalogue
+    ? getDownloadsByIds(["export-catalogue-2026"])[0]
+    : undefined;
 
   const ctaClass =
     "short-marker short-marker-compact text-c1 text-surface transition-opacity duration-[var(--motion-fast)] hover:opacity-80";
@@ -339,6 +345,20 @@ function PromoCardBlock({
           </div>
         </div>
       </div>
+      {catalogue ? (
+        <a
+          href={catalogue.url}
+          download
+          className="group short-marker-surface flex min-h-44 flex-wrap items-center justify-between gap-x-12 gap-y-4 border-t border-line px-16 py-12 text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        >
+          <span className="short-marker short-marker-group text-c2 font-semibold">
+            {catalogueDownloadLabels[locale]}
+          </span>
+          <span className="text-c2 text-ink-secondary" dir="ltr">
+            PDF · EN · {formatDownloadSize(catalogue.sizeBytes)}
+          </span>
+        </a>
+      ) : null}
       </details>
     </div>
   );
