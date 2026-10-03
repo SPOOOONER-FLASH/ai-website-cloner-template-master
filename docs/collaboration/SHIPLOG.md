@@ -6,60 +6,21 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 554 次提交
+最近 30 天 · 共 500 次提交
 
-## 2026-10-02
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 05:13 | 中立 | LinkedIn 公司主页 hyde-cantonlock 加入页脚社交与结构化数据 sameAs；Clarity 九个话题各扩到 15 条提问 | `be204adf4a5` |
-| 04:50 | 中立 | 甲方手动操作：Clarity 九个新话题提问 + LinkedIn 公司主页，出 docx 到桌面 hyde；纪律：凡要甲方手动做的都出 docx | `b2842ebbcf1` |
-
-## 2026-10-01
+## 2026-10-03
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 09:14 | 中立 | goal #125 完成：purge 后 IndexNow 已提交（316 URL，200 OK） | `572ce6fb1a4` |
-| 09:11 | 发布 HYDE | Merge branch 'main' of https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master into HEAD | `16dfea05897` |
-| 09:11 | 中立 | goal #128 完成：BAU 官方横幅已上线（f1852e3082a） | `a0577f2ef2e` |
-| 08:11 | 中立 | SPEC_COVERAGE 重新生成：DV06 门厚新增 30–50mm 一档，门厚不同取值 24→25（解除发布阻塞） | `44080de40e5` |
-| 08:00 | 中立 | BAU 2027 官方展商横幅上架（英、德各一张 300×250，在展位介绍旁，链到官方展商目录） | `4d178d4fd6e` |
-
-## 2026-09-30
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 09:49 | 中立 | PUSH-PENDING：09-30 那批 16 个提交已在远端（ls-remote 确认 main = 5154fdd6503） | `3b7c6f842cc` |
-| 09:24 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5154fdd6503` |
-| 09:23 | 中立 | chunk-push-release 推 main 不再用 --force；main 上已有别的发布就停下；goal #126、#127 完成 | `87a997a89f6` |
-| 08:49 | 中立 | 合并本地提交（ship 旁路合并；SHIPLOG/PUSH-PENDING 冲突按生成文件处理：取远端版本后重新生成） | `d8592eb39d3` |
-| 08:41 | HYDE | Merge PR #16: 9014 story on the home page, all categories on /products, studio row on /products | `21841481ec9` |
-| 08:21 | 中立 | 纪律：npm test 不是发布闸门；文章正文有十个家不是三个 | `676b63f2b62` |
-| 08:16 | 中立 | 玻璃门文章七语种补译第 1、21、29 段（跟上 79f5207bc69 的英文更正），解除 r23 发布阻塞 | `93e5bc92ff5` |
-| 08:03 | HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `9191bbeae44` |
-| 08:02 | 中立 | 周报措辞：型号链接在文章内（头部左栏）而非文末；goal #126、#127 记下文案会话两次待发布源码 | `b615ec940dd` |
-| 07:02 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into eng-work | `a9d8f51da5e` |
-| 07:02 | 中立 | r21 上线核对完成，goal #122–#124 完成，#125 等 purge 后提交 IndexNow | `f2d3aa1f819` |
-| 05:47 | 中立 | 第 39 周周报：计分卡、环比同比、九条洞察、实验看板、四周 OKR、看板缺口；报数口径改为真人会话 | `5dc7a2d3739` |
-| 05:36 | HYDE | 三篇指南按本周搜索数据换英文标题（HS 编码、161/86 开孔、玻璃门），goal #122–#125 重开 | `be90da18c14` |
-| 05:27 | 中立 | goal #122-#124：甲方暂停压缩，标为等待并记录进度 | `9f670ea4e25` |
-| 05:27 | 中立 | goal #122-#124：甲方暂停压缩，标为等待并记录进度 | `61a93c25cfe` |
-| 05:26 | HYDE | 周检查点：抽屉一屏看全、BAU 横条手机 CLS、重复/过短标题、09-30 看板数据入库 | `d3ceb3755f1` |
-| 03:30 | 中立 | goal #120 #121：r20 = 33d91e7090d 已上线 | `8413d905c51` |
-| 03:27 | 中立 | 发布（HYDE（cantonlock.com））：构建 6ed3b7a0684 | `33d91e7090d` |
-| 02:50 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 6ed3b7a0684 | `6e8af2fe42e` |
-| 02:33 | HYDE | Merge pull request #18 from SPOOOONER-FLASH/claude/lighthouse-performance-jji382 | `6ed3b7a0684` |
-| 02:04 | 中立 | Header: centre the wordmark between nav and controls at xl | `1544e9c2975` |
-| 02:04 | 中立 | Product titles keep whole fit ranges (task 2026-09-30-title-range-facts) | `e1d9ae797a1` |
-| 01:13 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `d2231e2fa01` |
-| 01:06 | 中立 | docs: verify HYDE desktop release and hand off title range bug | `7bc7c396229` |
+| 09:54 | 中立 | Record authorized catalog publication recovery and isolated release scope | `cb0dc151b9c` |
+| 09:52 | HYDE · 发布 HYDE | Merge current main for contact and catalog publication | `e4527a63463` |
+| 09:12 | 中立 | Record contact and catalog handoff after failed remote sync | `5dca42235bf` |
+| 08:50 | HYDE | Remove HYDE mailbox and prioritize catalog downloads | `7f3394e06df` |
 
 ## 2026-09-29
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 17:10 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 af62b978d6 | `a53308b4b11` |
-| 09:59 | HYDE | 合并 PR #17：配置器工作室上架（十语言、导航/侧边栏/首页展示）+ 产品页表面处理/功能切换 | `af62b978d63` |
 | 07:38 | 中立 · 发布 HYDE | Merge origin/main（r19 发布后）：SHIPLOG 取远端，由 ship 重新生成 | `298eabf1c43` |
 | 06:22 | 中立 | i18n-client：重建七语种客户端包（12 个地弹簧规格标签） | `9bda8c6e784` |
 | 06:20 | 中立 | i18n：28 条地弹簧等七语种 seoTitle/seoDescription 由 build-product-titles --write 生成 | `58f1348ea7c` |
@@ -646,34 +607,4 @@
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
 | 22:17 | 中立 | 协作：归档编辑图发布与下轮视觉基线 | `e592cea2f12` |
-| 06:10 | 发布 HYDE | 发布构建：参数化配置器上线（中英西三处入链齐备） | `cb67d60cd8f` |
-| 06:10 | HYDE | 参数化配置器：一次一个问题，选项永远不会走进死路 | `1e3658bdb5b` |
-| 05:42 | 发布 HYDE | 发布构建：西语对比页与子类页上线 | `9c60c4e0a75` |
-| 05:41 | HYDE | 西语补齐：15 个对比页 + 19 个子类页 + 21 个子类西语名 | `ae99c95f8a3` |
-| 05:29 | 中立 | 调研十个 skill 仓库；纪律加一条：开工前先看有没有现成 skill | `8fe231e20a6` |
-| 05:25 | 中立 | nginx 重定向改用一条安装命令；手册更正「光 reload 不够」 | `f6a96185b50` |
-| 05:05 | 中立 | 新增客户操作手册；纪律加一条：手动步骤必须写进手册 | `cb6e5c3c368` |
-| 05:02 | 中立 · 发布 HYDE | 修 dead clicks：页脚不再链接到当前页 | `4e856d9a48f` |
-| 04:13 | HYDE · 发布 HYDE | 发布构建：产品页清空占位、75 个无图产品下架、字体自托管、联系页地址 | `3eadddd536a` |
-| 04:13 | HYDE | 字体改为自托管，去掉对 fonts.googleapis.com 的依赖 | `b175be6014d` |
-| 04:07 | HYDE | 产品页去掉两个空占位；75 个无图产品下架；联系页地址去中文、西语补齐 | `7fb684a70ce` |
-
-## 2026-09-02
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 09:35 | 中立 · 发布 HYDE | 保留上一版哈希资源，避免缓存 HTML 拿不到样式表而整页无样式 | `1046e5de66d` |
-| 09:26 | 发布 HYDE | 发布构建：Codex 的汉堡与 News 五张编辑图上线 | `1e38d6e296c` |
-| 09:08 | HYDE | 补提交上一批内容改动的两个生成产物 | `ce3249ec2a2` |
-| 09:01 | HYDE | 视觉：替换汉堡与 News 五张编辑图 | `49f7d1e8e99` |
-| 07:52 | 中立 · 发布 HYDE | 发布构建：美工复核修正 + SEO/GEO 复核结果 | `34f0945dc12` |
-| 07:51 | 中立 | SEO/GEO 全量复核：补图谱层审计；CCBot 具名；llms.txt 补全 435 个型号 | `add84accf3a` |
-| 07:42 | HYDE | 美工复核：三个产品换类目、BH01 不再声称门型、去掉四张重复图 | `e157b06c831` |
-| 07:37 | 发布 HYDE | release: rebuild static output after visual research | `af6d9ec43d1` |
-| 07:30 | 中立 | 搜索：两字母词不再匹配词中间；lv 给出空结果与最接近的系列 | `63ffe0977c1` |
-| 07:24 | 中立 | docs(visual): add grounded exhibition-display concepts | `0d4358ae20f` |
-| 07:00 | 中立 | HANDOFF：记回车三层修复，并把 lv 噪音结果列为已知未修 | `72cc0bc59e4` |
-| 06:59 | 中立 · 发布 HYDE | 发布构建：搜索改为不确定就给系列 | `fca77383173` |
-| 06:57 | 中立 | 搜索：不确定就不跳到单个 SKU，改为给出系列 | `bfe362663c9` |
-| 06:53 | 中立 | 报价单链接修复：产品页路由只取 categoryPath 首段 | `0541058e71d` |
 
