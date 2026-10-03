@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 504 次提交
+最近 30 天 · 共 505 次提交
 
 ## 2026-10-03
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 16:42 | 中立 | Record public display observation separately from verified export push | `9f2d26969aa` |
 | 16:39 | 中立 | Record verified full catalog release publication on main | `3066ae97552` |
 | 16:31 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d2561423707 | `2b93f729ab8` |
 | 16:23 | 中立 | Document three HYDE navigation discoverability options and upload recovery | `fc9926b25e2` |
