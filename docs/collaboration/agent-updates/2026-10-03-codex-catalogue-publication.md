@@ -52,3 +52,7 @@ Untouched: other agents' checkouts and claims, production navigation source, RAY
 - Source worktree fast-forwarded quietly to the verified release; the proposal file was explicitly included in its own sparse patterns so it remains available after sync.
 
 This confirms remote publication of the full export. It does not independently establish that the server's next scheduled pull has finished or that every public response displays it. Do not infer deployment from edge-cache state. Cloudflare purge remains the client's action; the release itself needs no new manual server procedure.
+
+Final public-content observation: one read of `https://cantonlock.com/contact/` still included the old HYDE/Monica and German contact mailboxes; one read of `https://cantonlock.com/downloads/` still placed 3D models before Product catalog. These responses do not establish the server pull state or explain their cause. No cache headers were used as deployment evidence, no purge was performed, and no cache investigation was started. Report the export as pushed, with public display not yet verified.
+
+The verified release record and generated shiplog were subsequently pushed as `3066ae97552d` / `9d3fd32f7c3f`; their out tree remains exactly `9e670e9d91c678ebd4680b4db73aada16717074b`.
