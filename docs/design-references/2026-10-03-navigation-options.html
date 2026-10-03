@@ -1,0 +1,161 @@
+<div id="hyde-navigation-options" class="viz-carousel" aria-label="HYDE 导航方案" data-previous-label="上一方案" data-next-label="下一方案">
+  <style>
+    #hyde-navigation-options .hyde-stage { min-height: 520px; }
+    #hyde-navigation-options .hyde-product { --hyde-paper: light-dark(#fff,#191919); --hyde-ink: light-dark(#111,#f4f4f4); --hyde-muted: light-dark(#68727c,#b9bfc5); --hyde-rule: light-dark(#deded9,#454541); --hyde-soft: light-dark(#f4f4f0,#272724); background:var(--hyde-paper); color:var(--hyde-ink); font:14px/1.5 Arial,sans-serif; min-height:480px; position:relative; }
+    #hyde-navigation-options .hyde-product * { box-sizing:border-box; }
+    #hyde-navigation-options .hyde-product [hidden] { display:none !important; }
+    #hyde-navigation-options .hyde-header { display:flex; align-items:center; gap:18px; padding:20px 24px; min-height:80px; border-bottom:1px solid var(--hyde-rule); }
+    #hyde-navigation-options .hyde-brand { font-size:20px; font-weight:600; letter-spacing:6px; flex:none; }
+    #hyde-navigation-options .hyde-nav { display:flex; align-items:center; gap:14px; flex:1; }
+    #hyde-navigation-options .hyde-utilities { display:flex; align-items:center; gap:8px; }
+    #hyde-navigation-options .hyde-product button, #hyde-navigation-options .hyde-product a { font:inherit; color:inherit; background:transparent; text-decoration:none; border:0; padding:10px 0; display:inline-flex; align-items:center; gap:5px; min-height:44px; }
+    #hyde-navigation-options .hyde-product button[aria-expanded="true"] { box-shadow:inset 0 -2px var(--hyde-ink); }
+    #hyde-navigation-options .hyde-product .hyde-quote { padding:10px 13px; background:var(--hyde-ink); color:var(--hyde-paper); white-space:nowrap; font-weight:600; }
+    #hyde-navigation-options .hyde-product .hyde-icon { width:36px; justify-content:center; }
+    #hyde-navigation-options .hyde-icon svg { width:18px; height:18px; }
+    #hyde-navigation-options .hyde-product .hyde-catalog { font-weight:600; white-space:nowrap; }
+    #hyde-navigation-options .hyde-product .hyde-nav a { white-space:nowrap; }
+    #hyde-navigation-options .hyde-simple .hyde-brand { order:2; margin:auto; }
+    #hyde-navigation-options .hyde-simple .hyde-nav { order:1; flex:0 1 auto; }
+    #hyde-navigation-options .hyde-simple .hyde-utilities { order:3; }
+    #hyde-navigation-options .hyde-shortcuts { display:flex; flex-wrap:wrap; gap:22px; padding:5px 24px; border-bottom:1px solid var(--hyde-rule); background:var(--hyde-soft); }
+    #hyde-navigation-options .hyde-mobile-quick { display:none; }
+    #hyde-navigation-options .hyde-panel { position:absolute; top:80px; left:0; right:0; z-index:3; padding:24px; background:var(--hyde-paper); border-bottom:1px solid var(--hyde-rule); box-shadow:0 10px 0 light-dark(#1111110a,#ffffff08); }
+    #hyde-navigation-options .hyde-two-tier .hyde-panel { top:135px; }
+    #hyde-navigation-options .hyde-panel[hidden] { display:none; }
+    #hyde-navigation-options .hyde-menu-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:26px; }
+    #hyde-navigation-options .hyde-menu-group { border-top:1px solid var(--hyde-rule); padding-top:12px; }
+    #hyde-navigation-options .hyde-menu-group h3 { font-size:16px; line-height:1.4; font-weight:600; margin:0 0 8px; }
+    #hyde-navigation-options .hyde-menu-group a { display:flex; justify-content:space-between; width:100%; }
+    #hyde-navigation-options .hyde-menu-group p { color:var(--hyde-muted); font-size:12px; margin:0 0 6px; }
+    #hyde-navigation-options .hyde-menu-bottom { display:flex; gap:20px; flex-wrap:wrap; border-top:1px solid var(--hyde-rule); margin-top:20px; padding-top:8px; color:var(--hyde-muted); }
+    #hyde-navigation-options .hyde-languages { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px 16px; }
+    #hyde-navigation-options .hyde-languages button { justify-content:flex-start; padding-inline:8px; }
+    #hyde-navigation-options .hyde-page { padding:32px 24px; }
+    #hyde-navigation-options .hyde-product:has(.hyde-panel:not([hidden])) .hyde-page { visibility:hidden; }
+    #hyde-navigation-options .hyde-breadcrumb { color:var(--hyde-muted); font-size:12px; margin:0 0 22px; }
+    #hyde-navigation-options .hyde-page h2 { font-size:25px; line-height:1.3; font-weight:600; margin:0 0 24px; }
+    #hyde-navigation-options .hyde-catalog-row { display:flex; justify-content:space-between; gap:24px; border-top:1px solid var(--hyde-rule); padding-top:18px; }
+    #hyde-navigation-options .hyde-catalog-row small { color:var(--hyde-muted); white-space:nowrap; }
+    #hyde-navigation-options .hyde-status { font-size:12px; color:var(--hyde-muted); margin-top:24px; min-height:20px; }
+    @media (max-width:850px) {
+      #hyde-navigation-options .hyde-stage { min-height:680px; }
+      #hyde-navigation-options .hyde-product { min-height:630px; }
+      #hyde-navigation-options .hyde-header { padding:12px 16px; min-height:68px; gap:12px; }
+      #hyde-navigation-options .hyde-brand { font-size:18px; letter-spacing:5px; margin-right:auto; }
+      #hyde-navigation-options .hyde-nav { display:none; }
+      #hyde-navigation-options .hyde-simple .hyde-brand { order:1; margin:0 auto 0 0; }
+      #hyde-navigation-options .hyde-utilities { margin-left:auto; }
+      #hyde-navigation-options .hyde-utilities .hyde-quote, #hyde-navigation-options .hyde-utilities .hyde-catalog { display:none; }
+      #hyde-navigation-options .hyde-mobile-quick { display:flex; justify-content:space-between; gap:14px; padding:0 16px; border-bottom:1px solid var(--hyde-rule); }
+      #hyde-navigation-options .hyde-mobile-quick a { font-weight:600; }
+      #hyde-navigation-options .hyde-panel, #hyde-navigation-options .hyde-two-tier .hyde-panel { top:113px; padding:18px 16px; }
+      #hyde-navigation-options .hyde-shortcuts { display:none; }
+      #hyde-navigation-options .hyde-menu-grid { grid-template-columns:1fr; gap:14px; }
+      #hyde-navigation-options .hyde-menu-group h3 { margin-bottom:0; }
+      #hyde-navigation-options .hyde-menu-group p { display:none; }
+      #hyde-navigation-options .hyde-menu-group a { padding:5px 0; min-height:44px; }
+      #hyde-navigation-options .hyde-menu-bottom { margin-top:12px; gap:14px; }
+      #hyde-navigation-options .hyde-languages { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      #hyde-navigation-options .hyde-page { padding:28px 16px; }
+      #hyde-navigation-options .hyde-catalog-row { flex-direction:column; gap:8px; }
+    }
+    @media (pointer:coarse) { #hyde-navigation-options .hyde-menu-group a { min-height:44px; } }
+  </style>
+  <section class="hyde-stage" data-variant="采购任务导航" aria-label="采购任务导航">
+    <div class="hyde-product" data-initial-menu="technical" aria-label="采购任务导航">
+      <header class="hyde-header">
+        <span class="hyde-brand">HYDE</span>
+        <nav class="hyde-nav" aria-label="Main navigation">
+          <button class="cursor-interaction" data-menu="products" aria-expanded="false">Products <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <a class="cursor-interaction" href="#finder" data-destination="Product Finder">Product Finder</a>
+          <a class="cursor-interaction hyde-catalog" href="#downloads" data-destination="Downloads">Downloads</a>
+          <button class="cursor-interaction" data-menu="technical" aria-expanded="true">Guides &amp; Support <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <button class="cursor-interaction" data-menu="company" aria-expanded="false">About HYDE <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+        </nav>
+        <div class="hyde-utilities">
+          <a class="cursor-interaction hyde-quote" href="#contact" data-destination="Request a quote">Request a quote</a>
+          <button class="cursor-interaction" data-menu="language" aria-expanded="false"><span class="hyde-language-code">EN</span> <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <button class="cursor-interaction hyde-icon" data-menu="search" aria-label="Search" aria-expanded="false"><i data-lucide="search" aria-hidden="true"></i></button>
+          <button class="cursor-interaction hyde-mobile-menu" data-menu="all" aria-expanded="false">Menu</button>
+        </div>
+      </header>
+      <nav class="hyde-mobile-quick" aria-label="Quick access"><a href="#products" data-destination="Products">Products</a><a href="#downloads" data-destination="Downloads">Downloads</a><a href="#contact" data-destination="Request a quote">Quote</a></nav>
+      <div class="hyde-panel"></div>
+      <main class="hyde-page"><p class="hyde-breadcrumb">HYDE / Downloads</p><h2>Product catalog</h2><div class="hyde-catalog-row"><strong>HYDE Product Catalog 2026</strong><small>PDF · EN · 6.4 MB</small></div><p class="hyde-status" aria-live="polite"></p></main>
+    </div>
+  </section>
+  <section class="hyde-stage" data-variant="轻量入口优化" aria-label="轻量入口优化" hidden>
+    <div class="hyde-product hyde-simple" data-initial-menu="resources" aria-label="轻量入口优化">
+      <header class="hyde-header">
+        <span class="hyde-brand">HYDE</span>
+        <nav class="hyde-nav" aria-label="Main navigation">
+          <button class="cursor-interaction" data-menu="products" aria-expanded="false">Products <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <a href="#finder" data-destination="Product Finder">Product Finder</a>
+          <button class="cursor-interaction" data-menu="resources" aria-expanded="true">Resources <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <button class="cursor-interaction" data-menu="company" aria-expanded="false">Company <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+        </nav>
+        <div class="hyde-utilities"><a class="hyde-catalog" href="#catalog" data-destination="Product catalog">Catalog PDF</a><a class="hyde-quote" href="#contact" data-destination="Request a quote">Request a quote</a><button class="cursor-interaction" data-menu="language" aria-expanded="false"><span class="hyde-language-code">EN</span> <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="cursor-interaction hyde-icon" data-menu="search" aria-label="Search" aria-expanded="false"><i data-lucide="search" aria-hidden="true"></i></button><button class="cursor-interaction" data-menu="all" aria-expanded="false">Menu</button></div>
+      </header>
+      <nav class="hyde-mobile-quick" aria-label="Quick access"><a href="#products" data-destination="Products">Products</a><a href="#downloads" data-destination="Downloads">Downloads</a><a href="#contact" data-destination="Request a quote">Quote</a></nav>
+      <div class="hyde-panel"></div>
+      <main class="hyde-page"><p class="hyde-breadcrumb">HYDE / Downloads</p><h2>Product catalog</h2><div class="hyde-catalog-row"><strong>HYDE Product Catalog 2026</strong><small>PDF · EN · 6.4 MB</small></div><p class="hyde-status" aria-live="polite"></p></main>
+    </div>
+  </section>
+  <section class="hyde-stage" data-variant="双层资料导航" aria-label="双层资料导航" hidden>
+    <div class="hyde-product hyde-two-tier" data-initial-menu="technical" aria-label="双层资料导航">
+      <header class="hyde-header"><span class="hyde-brand">HYDE</span><nav class="hyde-nav" aria-label="Main navigation"><button class="cursor-interaction" data-menu="products" aria-expanded="false">Products <i data-lucide="chevron-down" aria-hidden="true"></i></button><a href="#finder" data-destination="Product Finder">Product Finder</a><button class="cursor-interaction" data-menu="company" aria-expanded="false">About HYDE <i data-lucide="chevron-down" aria-hidden="true"></i></button></nav><div class="hyde-utilities"><a class="hyde-quote" href="#contact" data-destination="Request a quote">Request a quote</a><button class="cursor-interaction" data-menu="language" aria-expanded="false"><span class="hyde-language-code">EN</span> <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="cursor-interaction hyde-icon" data-menu="search" aria-label="Search" aria-expanded="false"><i data-lucide="search" aria-hidden="true"></i></button><button class="cursor-interaction hyde-mobile-menu" data-menu="all" aria-expanded="false">Menu</button></div></header>
+      <nav class="hyde-shortcuts" aria-label="Documents and services"><a class="hyde-catalog" href="#catalog" data-destination="Product catalog">Catalog PDF</a><button class="cursor-interaction" data-menu="technical" aria-expanded="true">Technical documents <i data-lucide="chevron-down" aria-hidden="true"></i></button><a href="#guides" data-destination="Guides & Standards">Guides &amp; Standards</a><a href="#oem" data-destination="OEM services">OEM services</a><a href="#faq" data-destination="FAQ">FAQ</a></nav>
+      <nav class="hyde-mobile-quick" aria-label="Quick access"><a href="#products" data-destination="Products">Products</a><a href="#downloads" data-destination="Downloads">Downloads</a><a href="#contact" data-destination="Request a quote">Quote</a></nav>
+      <div class="hyde-panel"></div>
+      <main class="hyde-page"><p class="hyde-breadcrumb">HYDE / Downloads</p><h2>Product catalog</h2><div class="hyde-catalog-row"><strong>HYDE Product Catalog 2026</strong><small>PDF · EN · 6.4 MB</small></div><p class="hyde-status" aria-live="polite"></p></main>
+    </div>
+  </section>
+  <template data-template="technical"><div class="hyde-menu-grid"><div class="hyde-menu-group"><h3>Dimensions &amp; fit</h3><p>Choose and specify the right hardware</p><a href="#documents" data-destination="Technical documents">Technical documents <span>→</span></a><a href="#calculator" data-destination="Cylinder calculator">Cylinder calculator <span>→</span></a></div><div class="hyde-menu-group"><h3>Standards &amp; testing</h3><p>Guidance and published evidence</p><a href="#guides" data-destination="Guides & Standards">Guides &amp; Standards <span>→</span></a><a href="#certificates" data-destination="Certificates">Certificates <span>→</span></a></div><div class="hyde-menu-group"><h3>Finishes &amp; ordering</h3><p>Prepare your inquiry</p><a href="#finishes" data-destination="Finish codes">Finish codes <span>→</span></a><a href="#faq" data-destination="FAQ">FAQ <span>→</span></a></div></div><div class="hyde-menu-bottom"><a href="#applications" data-destination="Applications">Applications →</a><a href="#news" data-destination="News">News →</a></div></template>
+  <template data-template="resources"><div class="hyde-menu-grid"><div class="hyde-menu-group"><h3>Applications</h3><p>Hardware in context</p><a href="#applications" data-destination="Applications">Explore applications →</a></div><div class="hyde-menu-group"><h3>Guides</h3><p>Selection and specification</p><a href="#guides" data-destination="Guides">Read guides →</a></div><div class="hyde-menu-group"><h3>News</h3><p>Company and product updates</p><a href="#news" data-destination="News">Latest news →</a></div></div></template>
+  <template data-template="company"><div class="hyde-menu-grid"><div class="hyde-menu-group"><h3>Factory</h3><a href="#company" data-destination="Company">About HYDE →</a><a href="#certificates" data-destination="Certificates">Certificates →</a></div><div class="hyde-menu-group"><h3>OEM services</h3><a href="#oem" data-destination="OEM services">Private label &amp; OEM →</a></div><div class="hyde-menu-group"><h3>Contact</h3><a href="#contact" data-destination="Request a quote">Request a quote →</a><a href="#alibaba" data-destination="Buy on Alibaba">Buy on Alibaba ↗</a></div></div></template>
+  <template data-template="products"><div class="hyde-menu-grid"><div class="hyde-menu-group"><h3>Browse products</h3><a href="#products" data-destination="Products">All products →</a><a href="#finder" data-destination="Product Finder">Product Finder →</a></div><div class="hyde-menu-group"><h3>Configure</h3><a href="#configurator" data-destination="Configurator">Configurator →</a><a href="#studio" data-destination="Configurator Studio">Configurator Studio →</a></div><div class="hyde-menu-group"><h3>Catalog</h3><a href="#catalog" data-destination="Product catalog">Download catalog PDF →</a></div></div></template>
+  <template data-template="all"><div class="hyde-menu-grid"><div class="hyde-menu-group"><h3>Products &amp; downloads</h3><a href="#products" data-destination="Products">Products →</a><a href="#finder" data-destination="Product Finder">Product Finder →</a><a href="#downloads" data-destination="Downloads">Downloads →</a></div><div class="hyde-menu-group"><h3>Technical support</h3><a href="#documents" data-destination="Technical documents">Documents →</a><a href="#guides" data-destination="Guides & Standards">Guides &amp; Standards →</a><a href="#faq" data-destination="FAQ">FAQ →</a></div><div class="hyde-menu-group"><h3>Factory &amp; contact</h3><a href="#company" data-destination="Company">About HYDE →</a><a href="#oem" data-destination="OEM services">OEM →</a><a href="#contact" data-destination="Request a quote">Request a quote →</a></div></div></template>
+  <template data-template="language"><div class="hyde-languages"><button class="cursor-interaction" data-language="EN">English</button><button class="cursor-interaction" data-language="ES">Español</button><button class="cursor-interaction" data-language="PT">Português</button><button class="cursor-interaction" data-language="FR">Français</button><button class="cursor-interaction" data-language="DE">Deutsch</button><button class="cursor-interaction" data-language="JA">日本語</button><button class="cursor-interaction" data-language="KO">한국어</button><button class="cursor-interaction" data-language="TR">Türkçe</button><button class="cursor-interaction" data-language="RU">Русский</button><button class="cursor-interaction" data-language="AR">العربية</button></div></template>
+  <template data-template="search"><div class="hyde-menu-grid"><div class="hyde-menu-group"><h3>Quick access</h3><a href="#catalog" data-destination="Product catalog">Catalog PDF →</a><a href="#documents" data-destination="Technical documents">Technical documents →</a><a href="#faq" data-destination="FAQ">FAQ →</a></div><div class="hyde-menu-group"><h3>Find products</h3><a href="#finder" data-destination="Product Finder">Open Product Finder →</a></div></div></template>
+  <script>
+    (() => {
+      const root = document.getElementById('hyde-navigation-options');
+      root.querySelectorAll('.hyde-product').forEach(product => {
+        const panel = product.querySelector('.hyde-panel');
+        const controls = [...product.querySelectorAll('[data-menu]')];
+        let current = product.dataset.initialMenu;
+        const design = { showQuote: true, quoteLabel:'Request a quote' };
+        function render() {
+          controls.forEach(button => button.setAttribute('aria-expanded', String(button.dataset.menu === current)));
+          panel.hidden = !current;
+          if (current) panel.innerHTML = root.querySelector('template[data-template="' + current + '"]').innerHTML;
+          if (globalThis.lucide) lucide.createIcons({ attrs: { width: 14, height: 14 } });
+        }
+        product.addEventListener('click', event => {
+          const trigger = event.target.closest('[data-menu]');
+          if (trigger) { current = current === trigger.dataset.menu ? null : trigger.dataset.menu; render(); return; }
+          const language = event.target.closest('[data-language]');
+          if (language) { product.querySelector('.hyde-language-code').textContent = language.dataset.language; current = null; render(); return; }
+          const destination = event.target.closest('[data-destination]');
+          if (destination) {
+            event.preventDefault(); current = null; render();
+            product.querySelector('.hyde-breadcrumb').textContent = 'HYDE / ' + destination.dataset.destination;
+            product.querySelector('h2').textContent = destination.dataset.destination;
+            product.querySelector('.hyde-catalog-row').hidden = !['Downloads','Product catalog'].includes(destination.dataset.destination);
+            product.querySelector('.hyde-status').textContent = destination.dataset.destination + ' →';
+          } else if (!panel.contains(event.target)) { current = null; render(); }
+        });
+        product.addEventListener('keydown', event => { if (event.key === 'Escape') { const previous = controls.find(button => button.dataset.menu === current); current = null; render(); previous?.focus(); } });
+        render();
+        if (globalThis.Tweak) {
+          const tweak = new Tweak({ container:product, onChange:() => {
+            product.querySelectorAll('.hyde-quote').forEach(button => { button.hidden = !design.showQuote; button.textContent = design.quoteLabel; });
+          }});
+          tweak.addToggle(design, 'showQuote', { label:'独立询价按钮' });
+          tweak.addSelect(design, 'quoteLabel', { label:'询价入口文案', options:['Request a quote','Contact us'] });
+        }
+      });
+    })();
+  </script>
+</div>

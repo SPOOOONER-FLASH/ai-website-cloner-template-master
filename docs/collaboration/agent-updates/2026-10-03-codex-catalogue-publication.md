@@ -28,3 +28,15 @@ The existing dirty `E:/release/release-hyde`, Claude checkout, paused search wor
 - Upload is using the existing atomic chunk uploader and a task-specific side branch `codex/catalogue-release-20261003`. Source push and local build do not yet establish successful final main upload or production deployment; record the resulting main SHA below when verified.
 
 The standard build regenerated public drawing/search files and the frozen RAYEN mirror inside this isolated checkout. Those incidental source/RAYEN changes are not staged or committed; the published change is HYDE out only.
+
+## Upload diagnosis and navigation proposal
+
+- GitHub connector and a successful read-only `ls-remote` both verified source main `8fe52a86a2d8091e0a3a2da1fd09ebbf7ef6f67c`. The first upload batch remains on the task-specific side branch; no partial batch is published to main.
+- Full stderr exposed two separate causes: intermittent local DNS/TCP connectivity, and Git's thin-pack attempt to read old German RSC blobs absent from the partial clone. Offline reachability of the new release was complete; that alone did not prove pack construction would avoid old delta bases.
+- Current DNS was verified independently through system DNS and Google DNS, then HTTPS with normal TLS verification and Git read-only access. A process-local `http.curloptResolve` override is used for this attempt only; no shared/global Git or Windows network configuration changed.
+- `push --no-thin` did not reach the HTTPS helper: Trace2 shows its child `send-pack --thin`. The exact old RSC blob `8b0bbea21c70a820f3a80d6c2a0c6070a496532a` was restored through the connector with SHA verification, then another old delta base was requested. Rather than retrieve the entire old export, a process-local `pack.window=0` / `pack.depth=0` disables delta-base reads. The exact candidate/parent offline pack completed with exit 0, empty stderr, 48,773,208 bytes.
+- A task-owned scratch copy of the uploader resumes from the verified side-branch parent, skips unchanged batches, captures full errors, and preserves normal fast-forward pushes. It leaves the maintained uploader untouched. Batch 2 succeeded with the verified no-delta configuration; later batches and final main publication are still pending at this checkpoint.
+- Client also asked for navigation options. Read-only research and the retained HTML proposal cover three directions: procurement tasks (recommended), light entry improvements, and two-tier document navigation. The study does not claim measured CTR and does not modify production navigation.
+- Proposal verification: script parses, fragment is 21 KB, three named variants switch correctly; desktop 1024px and mobile 320px have no horizontal overflow. Language selection, menu opening, Escape and direct Downloads selection were checked in the browser. The proposal source and reasoning are retained with this update.
+
+Untouched: other agents' checkouts and claims, production navigation source, RAYEN export, and Cloudflare. Next useful review: select a navigation direction; next release action: verify all uploaded batches, final main out tree and production content separately.
