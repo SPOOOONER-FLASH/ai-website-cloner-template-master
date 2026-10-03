@@ -209,3 +209,14 @@
 - `984509e1af0` 311 恢复 ABS 配铝（甲方 09-29：「311 的是 abs 不动」）
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/3 09:08:35 · 三次推送失败
+
+原因：旁路合并也失败：建旁路检出失败：fatal: could not fetch 124066bbe6dcc1e884fb5c039b95f883378f5734 from promisor remote
+
+未推送的提交：
+
+- `5b53b8007f45` shiplog: 更新上线存档
+- `7f3394e06df8` Remove HYDE mailbox and prioritize catalog downloads
+
+下一次 `npm run ship` 成功时这些会一起推上去。

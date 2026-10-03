@@ -25,4 +25,10 @@ Agent: Codex. User requested removal of the HYDE email, the product catalog firs
 
 Source only. `out/` and `out-rayen/` were not rebuilt or committed. The existing johns engineering session owns HYDE release per AGENTS.md; incorporate this source in its next `release:hyde`, then verify the public contact page, catalog-first order and the expanded promo download. Live deployment remains unverified until that release.
 
+Source commit: `7f3394e06df8`. `npm run ship` exited 75: pushes were rejected because main had advanced; merging and the fallback checkout could not retrieve a required Git object from the remote. Fetched `origin/main` is `4e83433aa510` and does not contain this source commit. A final `ls-remote` could not connect, so no successful push or deployment is claimed. The generated failure record is in `PUSH-PENDING.md`; do not keep retrying the same failed ship loop.
+
+Portable handoff exported with `git format-patch --binary -1 7f3394e06df --output-directory E:/cantonlock-deliverables`: `E:/cantonlock-deliverables/0001-Remove-HYDE-mailbox-and-prioritize-catalog-downloads.patch` (112,915 bytes). It includes the verified source, this task's original handoff and the two preview screenshots. The release engineer can transfer it to their clean checkout and apply it with `git am --3way`, review any conflicts, then use the normal ship and HYDE release workflow. This avoids needing to reproduce the UI work while this machine cannot sync the missing remote object.
+
+Finishing check: `node scripts/build-i18n-client-ui.mjs --check` passed; generated locale client subsets are current without regeneration.
+
 The older C: workspace, paused search changes, other agents' work and RAYEN are untouched. Remote sync had an interrupted pack transfer and a bounded fetch timeout during this task; record actual ship status rather than treating a local commit as a push.
