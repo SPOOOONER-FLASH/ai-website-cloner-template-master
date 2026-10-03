@@ -23,6 +23,8 @@ Agent: Codex. User requested removal of the HYDE email, the product catalog firs
 
 ## Release handoff
 
+The client subsequently asked to try publishing. The current attempt and verified result are recorded in `2026-10-03-codex-catalogue-publication.md`; the paragraphs below preserve the earlier failed attempt.
+
 Source only. `out/` and `out-rayen/` were not rebuilt or committed. The existing johns engineering session owns HYDE release per AGENTS.md; incorporate this source in its next `release:hyde`, then verify the public contact page, catalog-first order and the expanded promo download. Live deployment remains unverified until that release.
 
 Source commit: `7f3394e06df8`. `npm run ship` exited 75: pushes were rejected because main had advanced; merging and the fallback checkout could not retrieve a required Git object from the remote. Fetched `origin/main` is `4e83433aa510` and does not contain this source commit. A final `ls-remote` could not connect, so no successful push or deployment is claimed. The generated failure record is in `PUSH-PENDING.md`; do not keep retrying the same failed ship loop.
