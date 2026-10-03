@@ -2,7 +2,7 @@
 
 2026-09-28，文案会话。依据：QuickCreator《出海做 GEO，为什么你需要运营领英》——LinkedIn 是 B2B 买家和 AI 引擎都读的来源，内容和“人 + 公司”绑在一起。
 
-**规则**：每一句都来自官网已发布的内容，不写没有证据的话；不写“certified to EN 1125”（我们名下的报告还在准备，见认证页）；公司名暂用品牌名 **Canton Hyland**，法定英文名等甲方定（runbook ②）。发布由甲方操作；主页建好后把网址发给工程会话，加进官网结构化数据的 `sameAs`。
+**规则**：每一句都来自官网已发布的内容，不写没有证据的话；不写“certified to EN 1125”（我们名下的报告还在准备，见认证页）；主页名用品牌名 **Canton Hyland**；法定英文名甲方 09-29 已定为 Canton Hyland Hardware & Building Material Co., Ltd.，写在 About 第一句。发布由甲方操作；主页建好后把网址发给工程会话，加进官网结构化数据的 `sameAs`。
 
 ---
 
@@ -10,7 +10,7 @@
 
 **Name**：Canton Hyland（HYDE door hardware）
 **Website**：https://cantonlock.com/
-**Industry**：Manufacturing / Building Materials
+**Industry**：Building Materials
 **Company size**：101–200 employees（官网事实卡同一口径）
 **Headquarters**：Zhongshan, Guangdong, China
 **Founded**：1998
@@ -18,7 +18,7 @@
 
 **About（≤2,000 字符）**
 
-Canton Hyland has made door hardware in Xiaolan, Zhongshan, since 1998, with a quality system certified to ISO 9001 since 2002. We stamp, polish, assemble and inspect our own parts.
+Canton Hyland Hardware & Building Material Co., Ltd. has made door hardware in Xiaolan, Zhongshan, since 1998, with a quality system certified to ISO 9001 since 2002. We stamp, polish, assemble and inspect our own parts.
 
 The HYDE range covers most of what a door needs: panic exit devices, cylindrical and tubular locks, deadbolts, mortise lock cases, euro profile cylinders, lever handles, glass door fittings, hinges, closers and the small parts that finish the job. Master key and construction key systems are a specialty.
 

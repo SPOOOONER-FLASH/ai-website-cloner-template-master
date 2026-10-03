@@ -22,7 +22,7 @@ test("RFQ Concierge is live while Specify Source Company remains switchable", ()
   );
 });
 
-test("RFQ Concierge routes three buyer states to truthful existing tools", () => {
+test("RFQ Concierge routes four buyer states to truthful existing tools", () => {
   const english = getMenuExperience("en", "rfq-concierge");
   const spanish = getMenuExperience("es", "rfq-concierge");
 
@@ -30,14 +30,14 @@ test("RFQ Concierge routes three buyer states to truthful existing tools", () =>
   assert.equal(spanish.kind, "rfq-concierge");
   assert.deepEqual(
     english.primary.map((item) => item.href),
-    ["/product-finder/", "/configurator/", "/contact/"],
+    ["/configurator/studio/", "/product-finder/", "/configurator/", "/contact/"],
   );
   assert.deepEqual(
     spanish.primary.map((item) => item.href),
-    ["/es/product-finder/", "/es/configurator/", "/es/contact/"],
+    ["/es/configurator/studio/", "/es/product-finder/", "/es/configurator/", "/es/contact/"],
   );
   assert.doesNotMatch(JSON.stringify([english, spanish]), /search by number/i);
-  assert.match(english.primary[0].detail, /browse and filter published models/i);
+  assert.match(english.primary[1].detail, /browse and filter published models/i);
 });
 
 test("menu variants keep the real bilingual discovery and evidence routes", () => {

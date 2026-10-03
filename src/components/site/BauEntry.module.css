@@ -41,6 +41,19 @@
   display: inline;
 }
 
+/*
+  Below 1032px the stand line always takes its own row (2026-09-30). It used to wrap only
+  once Archivo replaced the fallback font — wider glyphs pushed "Hall C4 · Stand 523" to a
+  second line, the band grew 113px → 136px and everything under it jumped 23px. Measured
+  CLS 0.206 per page view on a 390px phone, on every page that carries the band. A fixed
+  two-line layout is the same height before and after the font swap.
+*/
+@media (max-width: 1031px) {
+  .bandFacts .standFacts {
+    flex-basis: 100%;
+  }
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

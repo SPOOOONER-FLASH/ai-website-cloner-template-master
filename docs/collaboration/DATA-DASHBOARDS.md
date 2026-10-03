@@ -10,12 +10,14 @@
 
 | 看板 | 账号 / ID | 回答什么问题 | 导出什么 |
 |---|---|---|---|
-| Google Search Console | cantonlock.com | Google 上谁看见了我们、点没点、搜的什么词；AI 概览里出现几次 | 效果 → 近 3 个月 → 导出（查询、网页、国家、设备）；「生成式 AI 功能」同样导出 |
-| Bing Webmaster | cantonlock.com | Bing 搜索词和页面；**ChatGPT / Copilot 引用了我们哪一页**（ChatGPT 用 Bing 的索引） | 关键字报告、页面流量、AI 表现（AIPageStats、AISearchQueries） |
+| Google Search Console | cantonlock.com | Google 上谁看见了我们、点没点、搜的什么词；AI 概览里出现几次 | 效果 → 过去 7 天 → 导出（网页、图片、Discover 各一份）；「生成式 AI 功能」同样导出；每周加导「索引编制 → 网页」「设置 → 抓取统计信息」 |
+| Bing Webmaster | cantonlock.com | Bing 搜索词和页面；**ChatGPT / Copilot 引用了我们哪一页**（ChatGPT 用 Bing 的索引） | 搜索效果（按日）、关键字报告、页面流量、AI 表现（选 28 天：概览、AIPageStats、AISearchQueries） |
 | Microsoft Clarity | 项目 hyde（`y8utyrgvv0`） | 真人怎么看页面：滚动深度、死点击、怒点、JS 错误、录像；AI 爬虫与机器人流量 | 仪表板 → 导出；Bot / AI 可见性两页各导出一次 |
-| GA4 | 账号「hyde数据看板」/ 媒体资源 cantonlock（`G-RBTE7KF82P`） | 来源、国家、语言、着陆页、事件（询盘 `generate_lead`、阅读深度等） | 报告 → 各页右上角分享 → 下载 CSV |
+| GA4 | 账号「hyde数据看板」/ 媒体资源 cantonlock（`G-RBTE7KF82P`） | 来源、国家、语言、着陆页、事件（询盘 `generate_lead`、阅读深度等） | 报告 → 各页右上角分享 → 下载 CSV；日期勾「比较上一期」；**每周必带「事件名称」表** |
 
 **第五个来源：Cloudflare AI Crawl Control**（2026-09-25 起）。Cloudflare → AI Crawl Control 导出两份：AI answer volume（各家 AI 的请求数）、AEO demand signals（AI 爬虫请求了哪些路径）。放进同一个文件夹，原始 CSV 存在 `docs/research/analytics/<日期>/cloudflare/`。
+
+**GA4 ↔ Clarity 一对一（2026-09-30 起，PR #18 发布后）**：每个 Clarity 会话带自定义标签 `ga_client_id`（GA4 的 Client ID）、`first_touch`、`page_type`。某位访客在 GA4「用户浏览器」里的 Client ID → Clarity 按 `ga_client_id` 筛选即可看录像；按 `first_touch` = `ai:chatgpt` 筛选即 AI 来的人。Clarity `lazyOnload`（甲方 09-30 确认保持）后标签先排队、Clarity 加载后补发，已用无头 Chrome 实测三页全部收到。
 
 GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站代码直接加载，GTM 里不要再加这两个。
 
@@ -34,9 +36,13 @@ GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站�
    ```bash
    node scripts/build-analytics-report.mjs "C:/Users/johns/Downloads/SEOGEO 1001" --date 2026-10-01
    node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001"
+   node scripts/build-weekly-kpis.mjs --write
    ```
-   前一条把原始 CSV 复制进 `docs/research/analytics/<日期>/raw/`，生成 `REPORT.md`（第一张表就是
-   「被看见没被点击」的机会清单），并更新 `LATEST.md`；后一条更新买家查询语料。
+   第一条把原始 CSV 复制进 `docs/research/analytics/<日期>/raw/`，生成 `REPORT.md`（第一张表就是
+   「被看见没被点击」的机会清单），并更新 `LATEST.md`；第二条更新买家查询语料；第三条把各期 raw/
+   合并，算出本周、上周、周环比（按日均）和同比，写到该期 `KPI-WOW.md`。
+   周报正文照 `docs/research/analytics/2026-09-30/HYDE-周报-2026-W39.md` 的结构写，Word 版：
+   `node scripts/build-client-runbook-docx.mjs --src <周报.md>`（输出到桌面 `hyde` 文件夹）。
 3. 同一会话：在下面「本期结论」写三到六条结论（带日期、带数字出处），提交，`npm run ship`，
    然后**通知所有会话**（Claude Desktop 里用 SendMessage 发给每个活跃会话，一句话 + 本文件路径）。
 
@@ -51,7 +57,51 @@ node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001-de" --
 以后如果甲方愿意，可以换成 API 自动拉取（Clarity 数据导出令牌、GSC / GA4 服务账号）。那需要甲方自己在
 各后台生成凭据、放在本机 `.env` 里，**永远不进 git**。在此之前，CSV 这条路已经够用。
 
-## 本期结论（数据 2026-06-24 → 09-22，写于 2026-09-24）
+## 报数口径（2026-09-30 起，所有会话）
+
+流量只报两个数：**Clarity 真人会话**、**GA4 感兴趣的会话**（去掉 `tagassistant.google.com`，那是我们自己调 GTM）。
+GA4 的「用户 / 新用户」本期约 58% 是分辨率 1280×1200 的机器人（GA4 新加坡 490 用户，Clarity 只有 17 会话），
+只能看方向，不能当增长汇报。北极星是**合格询盘数**，来源是甲方每周的询盘台账，不是 GA4 关键事件。
+
+## 本期结论（数据 2026-09-21 → 09-30，写于 2026-09-30）
+
+周报全文 `docs/research/analytics/2026-09-30/HYDE-周报-2026-W39.md`，环比表 `KPI-WOW.md`。
+
+1. **被看见了，没被点开。** Google 网页搜索 9/21–9/27：展示 2,884（上周 723，日均 +242%），平均排名 10.7 → 8.3；
+   点击 25（上周 21，+2%），点击率 2.90% → 0.87%。展示最高的 9/23–9/25 点击率只有 0.4–0.7%。
+   HS 编码指南一页 593 展示 0.34%。同一批页在 Bing 点击率高得多（161/86 开孔 4.92% 对 Google 0.69%）：
+   Google 在结果页上自己回答了。**09-30 已按搜索原话改三篇英文标题作实验（E1），10-14 读数。**
+2. **「怎么选」排第一页，「找谁买」排第三到五页。** master keying system chart 排 7.4；
+   knob & tubular lock manufacturer 44、brass door hinge factory 21、grip handle lock exporter 27。
+   下一步是品类页对准「制造商」意图，并从被引用最多的指南链过去。
+3. **真人市场：美国第一，手机占三成多。** Clarity 真人会话 459（10 天）：美国 31.6%、中国 22.0%、德国 8.1%；
+   iOS + Android 36.6%（GA4 说 11%，差的就是那台桌面机器人）。GSC 展示美国 36%，Discover 首次出现 90 次全在美国。
+4. **AI 只引用指南，不引用产品页；引用在涨，份额在降。** Bing 引用前四：HS 编码 74、161/86 69、锁扣板 49、
+   EN 1125 vs 179 31，产品页 0。Clarity 引用日均 6.1 → 22.6，SoA 32.1% → 22.3%。
+   「文件、测试证据与送审」「消防合规」两个话题 0%——**不能用没有的认证去换份额**，只能把现有指南写成直接回答。
+   Bing AI 引用 9/23 180 → 9/27 47，原因待下期 28 天导出判断。
+5. **ChatGPT 是质量最高的来源**（37 会话、用户关键事件率 4.2%，全站最高），但 OpenAI 抓 68 次才带来 1 次访问；
+   **Meta 爬虫 10 天 67,364 次请求、占全站 31%、带来 0 次访问**，是否限流待甲方决定。
+6. **同比暂无**：GA4 2026-08 才收数；GSC 可比去年同期（旧 PHP 站），导出方法在 CLIENT-RUNBOOK 第一屏。
+
+### 看板缺口（2026-09-30 列）
+
+本期已有 64 份导出。还缺、且会改变结论的：
+
+| 缺的 | 为什么 | 去哪拿 |
+|---|---|---|
+| **询盘台账**（日期、国家、来源、产品、是否合格） | 北极星只能从这里来 | 甲方邮箱、表单通知、WhatsApp、展会 |
+| GSC 同比 | 同比列；新站 vs 旧站 | 效果 → 日期 →「过去 16 个月」→ 导出（脚本自动取去年同一周） |
+| GSC 索引编制、抓取统计 | 收录页数、发布后抓取量 | 索引编制 → 网页；设置 → 抓取统计信息 |
+| GSC 生成式 AI 功能（上期有） | AI 概览出现次数 | 效果 → 搜索外观「AI 功能」 |
+| Bing 搜索效果按日（上期有） | Bing 环比 | Search Performance → 下载 |
+| Bing AI 表现 28 天（本期只有 5 天） | 引用下跌是波动还是趋势 | AI Performance → 28 天 |
+| GA4 事件名称（上期有） | 分清 14 次关键事件里的询盘 | 报告 → 互动度 → 事件 |
+| GA4「比较上一期」 | 渠道环比 | 日期 → 勾选比较 |
+| Cloudflare AI Crawl Control（09-25 有） | 各家 AI 抓了什么、带来多少 | AI Crawl Control → 两份导出 |
+| Clarity 话题提问原文；上周同口径导出 | 0% 话题怎么补；Clarity 环比 | AI Visibility → Topic insights；仪表板选上周 7 天 |
+
+## 上期结论（数据 2026-06-24 → 09-22，写于 2026-09-24）
 
 1. **GA4 的「用户数」大部分不是买家。** 中国 1,884、新加坡 1,396 个活跃用户（广州、深圳、珠海、新加坡），
    英语会话的互动率只有 6.9%。真正有意义的来源很少：Google 自然搜索 49 次会话、ChatGPT 31 次、
@@ -81,3 +131,4 @@ node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001-de" --
 | 期 | 报告 | 结论写于 |
 |---|---|---|
 | 2026-09-22 | [REPORT](../research/analytics/2026-09-22/REPORT.md) | 2026-09-24 |
+| 2026-09-30 | [REPORT](../research/analytics/2026-09-30/REPORT.md) · [周报](../research/analytics/2026-09-30/HYDE-周报-2026-W39.md) · [环比](../research/analytics/2026-09-30/KPI-WOW.md) | 2026-09-30 |

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { ProductsEditorialOverview } from "@/components/site/ProductsEditorialOverview";
+import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, publishedProducts } from "@/data/products";
@@ -51,6 +52,8 @@ export default function ProdutosPagePt() {
           totalProducts={publishedProducts.length}
           categoryCounts={categoryCounts}
         />
+        {/* The studio, recommended from the catalog page (client, 2026-09-30: 「products内页 推荐引导去 studio」). */}
+        <StudioShowcase locale="pt" />
         <div className="layout mt-48">
           <Link href="/pt/product-studies/" className="col-content short-marker short-marker-compact text-c1 text-ink">
             Ferragens em detalhe — fotografias e seleção de componentes

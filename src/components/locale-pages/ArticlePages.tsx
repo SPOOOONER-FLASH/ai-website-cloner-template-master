@@ -34,7 +34,7 @@ export function guidesIndexMetadata(locale: Locale): Metadata {
   return localeMetadata(
     locale,
     "/guides",
-    "Guides",
+    "Door Hardware Guides: Size Charts, Standards, Finish Codes",
     "Reference pages for hardware decisions: euro cylinder charts, EN to ANSI/BHMA cross-references, finish code tables and what each standard covers.",
   );
 }

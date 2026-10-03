@@ -1,0 +1,51 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Paper-only upper-left legacy mark removed; complete photographed product isolated, uniformly resized and centered on pure white with matched silhouette-derived soft shadows. No recoloring, component changes or redrawn metal.",
+  "sources": [
+    {
+      "source": "public/images/products/9014-sset-stainless-steel-handle.webp",
+      "sha256": "d873233d4bc04725a328ab62b2ecd6bbf4a492d00612c3f9967499b79ae2f6e4"
+    }
+  ],
+  "productGeometry": "Original product pixels retained; complete-object crop and uniform resize only. No rotation, perspective warp, reposing or sharpening.",
+  "scope": "9014 story Available sets presentation using each specified real photograph; not an invented assembled kit or dimension drawing.",
+  "components": "Original single lever and round rose, plus separate round keyhole escutcheon.",
+  "output": {
+    "width": 1000,
+    "height": 1000,
+    "format": "webp",
+    "quality": 84,
+    "colorSpace": "sRGB",
+    "background": "#FFFFFF"
+  },
+  "composition": {
+    "productHeightPx": 650,
+    "bounds": {
+      "left": 104,
+      "top": 170,
+      "right": 895,
+      "bottom": 819
+    },
+    "bottomGapPx": 180,
+    "centerX": 500,
+    "shadow": {
+      "diffuse": {
+        "sigma": 10,
+        "opacity": 0.045,
+        "x": 2,
+        "y": 7
+      },
+      "contact": {
+        "sigma": 1.8,
+        "opacity": 0.035,
+        "x": 1,
+        "y": 3
+      }
+    }
+  },
+  "pixelVerification": {
+    "stage": "lossless master before WebP compression",
+    "opaqueChannelComparisons": 476403,
+    "changedOpaqueChannels": 0
+  }
+}

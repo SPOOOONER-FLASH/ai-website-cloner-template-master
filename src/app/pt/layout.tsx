@@ -6,6 +6,8 @@ import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
 import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
+import { I18nClientValues } from "@/data/i18n-client-values-pt";
+import { registerRecordLocaleTables } from "@/data/i18n-record-locale-tables";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -38,6 +40,14 @@ import { alternateLanguages } from "@/lib/seo";
  * is Portuguese. A blanket three-way alternate at the layout would advertise Portuguese
  * pages that are not built yet, which is the one hreflang mistake Search Console punishes.
  */
+/*
+  This locale's client tables for product cards — one chunk, this locale only. <I18nClientValues />
+  registers them in the client/SSR layer; this call registers them in the server-component
+  graph, which Next evaluates as a separate instance (the overlay layouts learnt this on
+  2026-09-27; see src/app/de/layout.tsx). Both are needed.
+*/
+registerRecordLocaleTables("pt");
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -94,6 +104,7 @@ export default function PortugueseRootLayout({
         <JsonLd data={websiteSchema()} />
       </head>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
+        <I18nClientValues />
         {/* Above the header and in flow: it offers, it never covers. See the component. */}
         <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">

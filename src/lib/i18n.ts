@@ -1,6 +1,8 @@
 import { isOverlayLocale, type Locale, type OverlayLocale } from "../data/locales.ts";
 import { overlays, type OverlayBundle } from "../data/i18n-overlays.ts";
 import { makeDict, makeSpecLabels, makeTx, type Overlayed } from "./i18n-core.ts";
+import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
+import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 
 /**
  * How every page reads text in the reader's language.
@@ -79,7 +81,11 @@ export function withOverlays<R extends object>(
  * and Portuguese keep their hand-written glossaries; the seven overlay locales read
  * `glossary.specLabels` from content/i18n/<code>/glossary.json. English has no table.
  */
-export const specLabels = makeSpecLabels((locale: OverlayLocale) => overlays[locale].glossary.specLabels ?? {});
+export const specLabels = makeSpecLabels((locale) => {
+  if (locale === "es") return SPEC_LABELS_ES;
+  if (locale === "pt") return SPEC_LABELS_PT;
+  return overlays[locale].glossary.specLabels ?? {};
+});
 
 /** A spec label in the reader's language, or the English label. */
 export function specLabel(label: string, locale: Locale): string {

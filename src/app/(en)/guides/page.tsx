@@ -10,7 +10,8 @@ import { GuideListing } from "@/components/site/GuideListing";
 export const metadata: Metadata = pageMetadata({
   enPath: "/guides",
   locale: "en",
-  title: "Guides",
+  /* 09-30: was "Guides" — 22 characters with the site name, and 24 Bing impressions with no click. */
+  title: "Door Hardware Guides: Size Charts, Standards, Finish Codes",
   description: "Reference pages for door hardware decisions: euro cylinder size charts, EN to ANSI/BHMA cross-references, finish code tables and what each standard actually covers.",
 });
 

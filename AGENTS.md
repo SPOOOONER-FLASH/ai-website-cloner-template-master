@@ -359,6 +359,14 @@ So, every time you hand him something to do:
    This is the generator rule from further up, applied to a deliverable that leaves the
    repository: write the generator, then run it; never hand-build the output.
 
+6. **Every hand-off he has to act on gets its own Word file in `Desktop\hyde\`.** Client
+   instruction, 2026-10-02: 「这种让我手动操作的都写桌面 hyde docx」. Not only the runbook:
+   any task you give him to do by hand — text to paste into Clarity, LinkedIn, Search Console,
+   a form, a supplier — goes into a markdown file under `docs/collaboration/` (dated, named for
+   what he does) and is exported with
+   `node scripts/build-client-runbook-docx.mjs --src <that file>`, in the same commit. Put a
+   one-line pointer to it at the top of `CLIENT-RUNBOOK.md`. A chat reply is not a hand-off.
+
 ### Professional, not decorated. The buyer is purchasing confidence.
 
 Client's principal, 2026-09-05:
@@ -670,6 +678,36 @@ break.
 `src/lib/promo-settings.test.ts` asserts the promo timing the client asked for. If you
 believe a locked value should change, change the test in the same commit so the override
 is deliberate and reviewable. `npm test` runs in CI.
+
+### `npm test` is not the release gate. Two guards live only in `test:export`.
+
+A green `npm test` is not permission to push a content change. On 2026-09-30 it said
+**456 passed** twice, and both times a guard that runs only in `npm run test:export`
+stopped the release afterwards:
+
+| Guard | What it caught | Release it blocked |
+|---|---|---|
+| `npm run titles:check` | 19 Spanish titles: the buyer-noun whitelist had no word for a floor spring (`muelle`), because HYDE had never sold one | r21 |
+| `node scripts/i18n-lint.mjs` | An article's paragraphs 1, 21 and 29 rewritten in en/es/pt while the seven overlay locales still carried the old wording — including a model-class correction that mattered | r23 |
+
+Both are seconds to run and neither needs a build, so after **any** `content/**` edit:
+
+```bash
+node scripts/i18n-lint.mjs && npm run titles:check
+```
+
+The second one is the one that keeps getting missed, and it has a specific shape worth
+naming: **an article body has ten homes, not three.** `body` / `bodyEs` / `bodyPt` sit on
+the record; the other seven locales live in `content/i18n/<code>/news.json`. Editing the
+English and its two record-level siblings leaves seven translations asserting the old
+thing — and when the edit was a correction, those seven now assert the error the
+correction removed. In the 09-30 case the English had just stopped calling a 15–30 kg
+overhead closer a floor spring, and seven languages went on calling it one.
+
+So: an English edit that changes a FACT — a model number, a dimension, a product class,
+a count, "we do not publish X" — is not finished until the seven overlays follow, in the
+same commit or by handing it to the localisation session in the same breath. An edit that
+only changes phrasing can wait for the next translation pass.
 
 ## MOST IMPORTANT NOTES
 - The primary Claude/Codex sessions use the lightweight shared-tree protocol above. When launching agent teams, give each spawned teammate its own worktree branch and merge at the end; do not let multiple teammates write the shared checkout.

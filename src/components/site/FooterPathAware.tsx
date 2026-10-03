@@ -49,6 +49,7 @@ export function FooterLanguageLinks({ locale }: { locale: Locale }) {
           <li key={code} className="col-span-2 md:col-span-3">
             <Link
               href={mirrorHref(englishPath, code).href}
+              prefetch={false}
               hrefLang={code}
               lang={code}
               className="short-marker short-marker-compact inline-flex min-h-24 items-center text-c1 text-brand no-underline hover:text-brand-hover"

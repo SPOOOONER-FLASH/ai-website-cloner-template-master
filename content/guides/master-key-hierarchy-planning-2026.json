@@ -3,6 +3,7 @@
   "title": "Master Key Hierarchy Planning 2026: The Levels, What Cross-Keying Really Costs, and How to Leave Room for the Building You Will Have",
   "kind": "insight",
   "publishedAt": "2026-09-21",
+  "updatedAt": "2026-09-30",
   "summary": "A master key system is designed once and lived with for twenty years, and almost every system that runs out of room ran out for the same two reasons: too many levels for the building, and cross-keying granted door by door as favors. This page sets out the hierarchy, explains why every master level and every cross-key consumes capacity from a finite pool, and gives the questions to answer before a single cylinder is cut.",
   "author": {
     "name": "Johnson Liu",
@@ -71,6 +72,7 @@
     "And the profile and its status, open, restricted or patented, because that decision constrains everything above it and is the hardest of all of them to change later.",
     "## What we confirm, and what we do not",
     "We confirm the cylinder range, the lengths and splits, the finishes and the quantities, and we confirm the profile and what is committed on key control, per order and in writing.",
+    "On the catalog side, the product pages say which items can join a system: the 578 cylindrical lock and the 3431 lever set are both published as able to be keyed alike to our deadbolts or master keyed.",
     "The hierarchy design itself is normally done by whoever holds the system (a locksmith, a security consultant, or the manufacturer of a patented platform) because it depends on the platform's own mastering rules and on an organization chart we are not party to. We would rather say that plainly than draw a hierarchy that looks right and conflicts with the platform it has to be cut on."
   ],
   "faq": {
@@ -206,6 +208,7 @@
     "Y el perfil y su estado, abierto, restringido o patentado, porque esa decisión restringe todo lo anterior y es la más difícil de cambiar después.",
     "## Qué confirmamos y qué no",
     "Confirmamos la gama de cilindro, las longitudes y los repartos, los acabados y las cantidades, y confirmamos el perfil y lo que se compromete en control de llave, pedido a pedido y por escrito.",
+    "Del lado del catálogo, las fichas dicen qué productos pueden entrar en un sistema: la cerradura cilíndrica 578 y la manija 3431 se publican como aptas para ir con la misma llave que nuestros cerrojos o para amaestrarse.",
     "El diseño de la jerarquía lo hace normalmente quien posee el sistema (un cerrajero, un consultor de seguridad, o el fabricante de una plataforma patentada) porque depende de las reglas de amaestramiento de esa plataforma y de un organigrama del que no somos parte. Preferimos decirlo sin rodeos antes que dibujar una jerarquía que parezca correcta y entre en conflicto con la plataforma sobre la que hay que cortarla."
   ],
   "titlePt": "Planejamento de hierarquia de chave mestra 2026: os níveis, o que o cruzamento realmente custa, e como deixar espaço para o edifício que vai ter",
@@ -261,6 +264,11 @@
     "E o perfil e o seu estado, aberto, restrito ou patenteado, porque essa decisão restringe tudo o anterior e é a mais difícil de mudar depois.",
     "## O que confirmamos e o que não",
     "Confirmamos a linha de cilindro, os comprimentos e as repartições, os acabamentos e as quantidades, e confirmamos o perfil e o que é comprometido em controle de chave, pedido a pedido e por escrito.",
+    "Do lado do catálogo, as páginas dizem quais produtos podem entrar num sistema: a fechadura cilíndrica 578 e a maçaneta 3431 são publicadas como podendo usar a mesma chave dos nossos ferrolhos ou ser mestradas.",
     "O projeto da hierarquia é normalmente feito por quem detém o sistema (um serralheiro, um consultor de segurança, ou o fabricante de uma plataforma patenteada) porque depende das regras de mestragem dessa plataforma e de um organograma de que não fazemos parte. Preferimos dizê-lo sem rodeios a desenhar uma hierarquia que pareça correta e entre em conflito com a plataforma sobre a qual tem que ser cortada."
+  ],
+  "relatedModels": [
+    "578 SSET",
+    "3431 SSET"
   ]
 }

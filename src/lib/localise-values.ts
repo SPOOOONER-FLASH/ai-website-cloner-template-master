@@ -1,12 +1,16 @@
 import type { Locale } from "../data/site.ts";
-import type { OverlayLocale } from "../data/locales.ts";
-import { FINISH_NAMES_ES, MATERIAL_NAMES_ES, SPEC_VALUES_ES } from "../data/es-glossary.ts";
-import { FINISH_NAMES_PT, MATERIAL_NAMES_PT, SPEC_VALUES_PT } from "../data/pt-glossary.ts";
 
 /**
- * The value localiser without the overlay data, so a client bundle can use it with the
- * generated subset (src/lib/i18n-client.ts) while server code uses the full glossaries
- * (src/lib/spanish-product.ts). The rules and their history are documented there.
+ * The value localiser without ANY data — not the overlay subset and, since 2026-09-30, not
+ * the Spanish and Portuguese glossaries either. The caller hands over the tables for the
+ * locale it is rendering: src/lib/spanish-product.ts (server) imports the glossaries,
+ * src/lib/i18n-client-values.ts (client) reads whatever the locale's layout registered.
+ * The rules and their history are documented in spanish-product.ts.
+ *
+ * WHY THE GLOSSARIES LEFT. This module was imported by src/lib/i18n-client.ts, which every
+ * "use client" component imports, so SPEC_VALUES_ES / _PT rode in the shared client chunk of
+ * every page in every language — 117 KB, 33 KB gzipped, on an English homepage. The same
+ * lesson as the 1,267 KB overlay incident recorded in i18n-core.ts, one file down.
  */
 const SEPARATORS = /(\s*[/+,]\s*)/;
 
@@ -18,19 +22,8 @@ function lookupIn(tables: Table[], value: string): string | undefined {
   return undefined;
 }
 
-/**
- * The tables each locale consults, in order.
- *
- * Spanish has one because its spec values were composed by a generator rather than
- * collected into named tables; when `MATERIAL_NAMES_ES` and `FINISH_NAMES_ES` exist they
- * belong here beside it and nothing else changes.
- */
+/** One lookup table; a locale consults several in order (spec values, materials, finishes). */
 export type Table = Record<string, string>;
-
-const TABLES: Record<"es" | "pt", Table[]> = {
-  es: [SPEC_VALUES_ES, MATERIAL_NAMES_ES, FINISH_NAMES_ES],
-  pt: [SPEC_VALUES_PT, MATERIAL_NAMES_PT, FINISH_NAMES_PT],
-};
 
 function localiseValue(value: string, tables: Table[]): string {
   const whole = lookupIn(tables, value);
@@ -84,8 +77,12 @@ function localiseValue(value: string, tables: Table[]): string {
 }
 
 
-export function localiseValuesWith(values: string[], locale: Locale, overlayTables: (locale: OverlayLocale) => Table[]): string[] {
+export function localiseValuesWith(
+  values: string[],
+  locale: Locale,
+  tablesOf: (locale: Exclude<Locale, "en">) => Table[],
+): string[] {
   if (locale === "en") return values;
-  const tables = locale === "es" || locale === "pt" ? TABLES[locale] : overlayTables(locale);
+  const tables = tablesOf(locale);
   return values.map((value) => localiseValue(value, tables));
 }

@@ -109,6 +109,8 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     ...entry("/", PRIORITY.home, "weekly"),
     ...entry("/products", PRIORITY.section, "weekly"),
     ...entry("/product-studies", PRIORITY.section, "monthly"),
+    /* One product told in one film (2026-09-30), English only: outside every mirror prefix. */
+    ...entry("/stories/9014", PRIORITY.support, "monthly"),
     ...entry("/products/argentina-ar4", PRIORITY.category, "weekly"),
     // The finder is a real landing page, not a widget: it is the page that ranks for
     // attribute queries ("panic bar 1000mm stainless") rather than model numbers.
@@ -116,6 +118,9 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     // Guided selection, bilingual. Same tier as the Finder: both are catalogue entry
     // points rather than content, and both are how a buyer reaches a model.
     ...entry("/configurator", PRIORITY.section, "weekly"),
+    // The studio (2026-09-29): finish and function switched on real photographs, the
+    // order code assembling as you choose. A catalogue entry point like the two above.
+    ...entry("/configurator/studio", PRIORITY.section, "weekly"),
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
     /* Author profiles (09-28): the page every Article schema author now points at. */

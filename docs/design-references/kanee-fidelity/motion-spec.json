@@ -1,0 +1,8 @@
+{
+  "width":1280,"height":720,
+  "plates":[
+    {"id":"45-bnik-motion","model":"45 BNIK","source":"docs/design-references/kanee-fidelity/sources/45-bnik.png","nativePng":true,"sourceLayerIndex":2,"sourceLayerName":"图层 4","background":"docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png","maxWidth":560,"maxHeight":400,"left":490,"top":190,"backgroundBlur":1.5},
+    {"id":"110-motion","model":"110","source":"docs/design-references/kanee-fidelity/sources/110.png","nativePng":true,"sourceLayerIndex":1,"sourceLayerName":"图层 3","background":"docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png","maxWidth":900,"maxHeight":370,"left":150,"top":270,"backgroundBlur":1.5,"paperSeeds":[[0.0631868132,0.3231292517],[0.9148351648,0.8027210884]]},
+    {"id":"564-mb-motion","model":"564 MB","source":"docs/design-references/kanee-fidelity/sources/564-mb.png","nativePng":true,"sourceLayerIndex":11,"sourceLayerName":"图层 7","background":"docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png","maxWidth":800,"maxHeight":450,"left":280,"top":190,"backgroundBlur":1.5}
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "45-bnik-motion",
+    "model": "45 BNIK",
+    "source": "docs/design-references/kanee-fidelity/sources/45-bnik.png",
+    "sourceSha256": "35333ff0e607829f7d3467bd68aa5b25392eb1f5331ae5fd50e4acc50e97daf1",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "45-bnik-motion.png",
+    "masterSha256": "402ad33defb19b592bba7bdec71144db278a6b0a7150f2327205b603961988c0",
+    "web": "45-bnik-motion.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 2,
+      "name": "图层 4",
+      "width": 374,
+      "height": 290
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 490,
+      "top": 190,
+      "width": 516,
+      "height": 400
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "110-motion",
+    "model": "110",
+    "source": "docs/design-references/kanee-fidelity/sources/110.png",
+    "sourceSha256": "8dde081075094decc3fe257f904a48b70c2e381f3b518d8e6f012311075dae3d",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/pale-stone-leather.png",
+    "backgroundSha256": "29c3fb9da1163e59c6e9151b2828b67dfff2da15d9f4e506d67ec020bafd3e31",
+    "master": "110-motion.png",
+    "masterSha256": "c687da3fcc03fdbab6b99ce2a498d4f32bfb8aca487f9ef9eb5a597a7d23a27e",
+    "web": "110-motion.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 1,
+      "name": "图层 3",
+      "width": 728,
+      "height": 294
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 150,
+      "top": 270,
+      "width": 900,
+      "height": 363
+    },
+    "verifiedPaperSeeds": [
+      [
+        0.0631868132,
+        0.3231292517
+      ],
+      [
+        0.9148351648,
+        0.8027210884
+      ]
+    ],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  },
+  {
+    "id": "564-mb-motion",
+    "model": "564 MB",
+    "source": "docs/design-references/kanee-fidelity/sources/564-mb.png",
+    "sourceSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+    "background": "docs/design-references/kanee-fidelity/backgrounds/charcoal-leather.png",
+    "backgroundSha256": "f2f4f884042853d61f0000eeb89a4303007e5fa38861bc09cbbb1f2c2cac06dd",
+    "master": "564-mb-motion.png",
+    "masterSha256": "b23a24638673ea274302cb203b60f532078dba6a9c2a9c85171d3cfd44ccd018",
+    "web": "564-mb-motion.webp",
+    "method": "original PSD RGB/alpha layer; uniform resize; background-only field; separate shadow",
+    "nativeLayer": {
+      "index": 11,
+      "name": "图层 7",
+      "width": 738,
+      "height": 523
+    },
+    "role": "full-product",
+    "sourceProductRegenerated": false,
+    "sourceProductRepainted": false,
+    "placement": {
+      "left": 280,
+      "top": 190,
+      "width": 635,
+      "height": 450
+    },
+    "verifiedPaperSeeds": [],
+    "qa": "pending visual review; generator success does not imply acceptance"
+  }
+]

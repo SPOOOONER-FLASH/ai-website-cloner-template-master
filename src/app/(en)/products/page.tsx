@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/site/Button";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { ProductsEditorialOverview } from "@/components/site/ProductsEditorialOverview";
+import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, publishedProducts } from "@/data/products";
 
@@ -65,6 +66,8 @@ export default function ProductsPage() {
         totalProducts={publishedProducts.length}
         categoryCounts={categoryCounts}
       />
+      {/* The studio, recommended from the catalog page (client, 2026-09-30: 「products内页 推荐引导去 studio」). */}
+      <StudioShowcase />
       <div className="layout mt-48">
         <Link href="/product-studies/" className="col-content short-marker short-marker-compact text-c1 text-ink">
           Hardware in focus — explore product photographs and component selections

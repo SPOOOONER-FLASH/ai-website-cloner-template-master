@@ -2,12 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { linkIntent, newDepths, pageType, readStyle } from "@/lib/engagement";
+import { gaClientId, linkIntent, newDepths, pageType, readStyle } from "@/lib/engagement";
 import { AI_SOURCES, rememberFirstTouch } from "@/lib/first-touch";
 
 declare global {
   interface Window {
-    clarity?: (...args: unknown[]) => void;
+    clarity?: ((...args: unknown[]) => void) & { q?: unknown[][] };
   }
 }
 
@@ -46,9 +46,21 @@ function send(name: string, params: Params) {
   }
 }
 
+/*
+  Queue, don't drop. Clarity loads `lazyOnload` since 2026-09-30 (Analytics.tsx), so on the
+  first render `window.clarity` does not exist yet and `window.clarity?.(…)` silently lost
+  page_type and first_touch. This installs Clarity's own stub — the same line its snippet
+  opens with, which keeps an existing function — and the tag replays the queue when it loads.
+*/
 function tagClarity(key: string, value: string) {
   try {
-    window.clarity?.("set", key, value);
+    if (!window.clarity) {
+      const stub: NonNullable<Window["clarity"]> = (...args: unknown[]) => {
+        (stub.q = stub.q ?? []).push(args);
+      };
+      window.clarity = stub;
+    }
+    window.clarity("set", key, value);
   } catch {
     /* same as above */
   }
@@ -95,8 +107,18 @@ export function EngagementTracker() {
       if (!frame) frame = requestAnimationFrame(() => ((frame = 0), measure()));
     };
 
+    // The GA4 ↔ Clarity join key (src/lib/engagement.ts), once gtag has written its cookie.
+    let gaTagged = false;
+
     // Visible seconds only: a tab left open in the background is not reading.
     const clock = window.setInterval(() => {
+      if (!gaTagged) {
+        const id = gaClientId(document.cookie);
+        if (id) {
+          gaTagged = true;
+          tagClarity("ga_client_id", id);
+        }
+      }
       if (document.visibilityState !== "visible") return;
       seconds++;
       if (type === "article" && seconds === 60 && depth >= 50) tagClarity("read_style", "read");

@@ -380,7 +380,10 @@ def build(job: dict, out_path: Path) -> Path:
         title = item.get("title") or f"{product['model']} {product['name']}"
         c = cell(ws, f"C{row}", align="center", wrap=True, border=box, fill=fill)
         c.value = CellRichText(
-            TextBlock(InlineFont(rFont=FONT, sz=13, b=True, color=INK), title),
+            # Customer part codes such as 2614HYG-55 are ten characters; at 13pt they wrap at the
+            # hyphen inside the 13-character column, so long titles step down to fit one line.
+            TextBlock(InlineFont(rFont=FONT, sz=13 if len(title) <= 7 else 9.5,
+                                 b=True, color=INK), title),
             TextBlock(InlineFont(rFont=FONT, sz=7, color=MUTED, u="single"),
                       "\nView online ›"),
         )

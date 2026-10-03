@@ -1,0 +1,51 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Paper-only upper-left legacy mark removed; complete photographed product isolated, uniformly resized and centered on pure white with matched silhouette-derived soft shadows. No recoloring, component changes or redrawn metal.",
+  "sources": [
+    {
+      "source": "public/images/products/9014-ssbk-stainless-steel-handle-3.webp",
+      "sha256": "9abe04c94df2696de4fb2a5556f474e5d08fe6436f34bce2d854f330629a052c"
+    }
+  ],
+  "productGeometry": "Original product pixels retained; complete-object crop and uniform resize only. No rotation, perspective warp, reposing or sharpening.",
+  "scope": "9014 story Available sets presentation using each specified real photograph; not an invented assembled kit or dimension drawing.",
+  "components": "Original complete connected lever/rose assembly and exposed gold-toned mounting components, as photographed.",
+  "output": {
+    "width": 1000,
+    "height": 1000,
+    "format": "webp",
+    "quality": 84,
+    "colorSpace": "sRGB",
+    "background": "#FFFFFF"
+  },
+  "composition": {
+    "productHeightPx": 650,
+    "bounds": {
+      "left": 224,
+      "top": 170,
+      "right": 775,
+      "bottom": 819
+    },
+    "bottomGapPx": 180,
+    "centerX": 500,
+    "shadow": {
+      "diffuse": {
+        "sigma": 10,
+        "opacity": 0.045,
+        "x": 2,
+        "y": 7
+      },
+      "contact": {
+        "sigma": 1.8,
+        "opacity": 0.035,
+        "x": 1,
+        "y": 3
+      }
+    }
+  },
+  "pixelVerification": {
+    "stage": "lossless master before WebP compression",
+    "opaqueChannelComparisons": 389160,
+    "changedOpaqueChannels": 0
+  }
+}

@@ -333,6 +333,15 @@ export function HeaderLink({
   return (
     <Link
       href={href}
+      /*
+        No viewport prefetch (2026-09-30). Every header link is in the first viewport of every
+        page, so Next fetched the RSC payload and route chunks of five routes — about 70 KB,
+        the Product Finder's 43 KB payload among them — the moment the page hydrated, on a
+        phone still downloading the hero's second slide and the first product photographs.
+        Lighthouse listed those fetches in the LCP's network dependency tree. A click still
+        navigates client-side; it fetches the payload then, one round trip from the edge.
+      */
+      prefetch={false}
       aria-current={current ? "page" : undefined}
       onFocus={close}
       onMouseEnter={close}

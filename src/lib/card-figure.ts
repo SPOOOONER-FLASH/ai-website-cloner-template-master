@@ -62,6 +62,47 @@ const FIGURE_LABELS = [
   "Door Width",
 ] as const;
 
+/**
+ * The Spanish and Portuguese caption for each figure label — copied from SPEC_LABELS_ES / _PT,
+ * and card-figure.test.ts fails the moment either copy drifts from its glossary.
+ *
+ * Why a copy (2026-09-30): this module is imported by ProductCard, a client component, and by
+ * src/lib/product-finder.ts at build time for every locale. Reading the labels through
+ * i18n-client's registry needs the es/pt layout to have registered them first, which a
+ * Product Finder built from another route never did; importing the glossaries would put
+ * their 117 KB back into every page's JavaScript. Twelve labels are cheaper than either.
+ */
+export const FIGURE_LABELS_LOCALISED: Record<"es" | "pt", Record<(typeof FIGURE_LABELS)[number], string>> = {
+  es: {
+    Backset: "Entrada",
+    "Center distance": "Distancia entre ejes",
+    "Center Distance": "Distancia entre ejes",
+    "Grip center distance": "Distancia entre centros del asa",
+    "Plate length": "Longitud de placa",
+    "Bar Length": "Longitud de la barra",
+    Length: "Longitud",
+    Size: "Medidas",
+    "Deadbolt throw": "Salida del cerrojo",
+    "Door thickness": "Espesor de puerta",
+    Capacity: "Capacidad",
+    "Door Width": "Ancho de puerta",
+  },
+  pt: {
+    Backset: "Distância ao eixo (broca)",
+    "Center distance": "Distância entre eixos",
+    "Center Distance": "Distância entre eixos",
+    "Grip center distance": "Distância entre eixos do puxador",
+    "Plate length": "Comprimento do espelho",
+    "Bar Length": "Comprimento da barra",
+    Length: "Comprimento",
+    Size: "Dimensões",
+    "Deadbolt throw": "Curso da trava",
+    "Door thickness": "Espessura da porta",
+    Capacity: "Capacidade",
+    "Door Width": "Largura da porta",
+  },
+};
+
 export interface CardFigure {
   label: string;
   value: string;
@@ -94,7 +135,7 @@ export function cardFigure(
         to its size: "Door thickness" was English on 78 Portuguese pages because this
         function knew about Spanish and not about a third locale.
       */
-      const localeLabel = specLabel(label, locale);
+      const localeLabel = FIGURE_LABELS_LOCALISED[pt ? "pt" : "es"][label];
       const localeRows = pt ? product.specsPt : product.specsEs;
       const localeRow = localeRows?.find(
         (spec) => spec.label === localeLabel && hasDigit(spec.value),

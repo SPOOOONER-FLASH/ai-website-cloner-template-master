@@ -3,7 +3,7 @@
   "title": "Strike Plates and Keeps 2026: ANSI Strike vs T-Strike, Lip Length, and the Dimension Nobody Measures",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-09-29",
+  "updatedAt": "2026-09-30",
   "summary": "The strike is the cheapest component in a door opening and the one that decides whether the lock ever latches properly. This page sets out the two standard North American strike sizes, the European keep conventions, how to work out lip length instead of guessing it, the difference between square and radius corners, and why a security upgrade that stops at the lock has upgraded nothing.",
   "author": {
     "name": "Johnson Liu",
@@ -38,6 +38,7 @@
     "A lip that is too short lets the latch snag on the frame edge, which is the scratching sound that appears a month after installation. A lip that is too long projects into the opening, catches clothing and gets bent, and on a pair of doors it can foul the other leaf.",
     "The working method is to measure from the centreline of the door's face (the point where the latch will pass) to the back edge of the frame's rabbet, and add a small allowance so the lip clears the edge without standing proud. The number depends on the frame profile, which is why it cannot be read off a catalog.",
     "The practical consequence for a schedule: state the frame profile, or supply the lip length. A strike ordered without either will be shipped with the manufacturer's standard lip, which is correct for the frame the manufacturer had in mind and not necessarily for yours.",
+    "Our own pages publish the strike in the same terms. The 575 tubular lock ships with a 57mm curved-lip strike as standard and a 70mm lip on request; the 564 rim lock comes with an angle strike for inward-opening doors, and a flat strike is available.",
     "SQUARE VERSUS RADIUS CORNERS",
     "A strike plate's corners are either square or radiused, and the choice is determined by how the frame was cut rather than by preference.",
     "A frame routed with a router bit has radiused corners, because a rotating bit cannot cut a sharp internal corner. A frame cut with a punch or a mortise chisel has square corners. Radius sizes are commonly 1/4\" (about 6mm) or 5/8\" (about 16mm), and the two are visibly different once installed.",
@@ -157,6 +158,7 @@
     "Un labio corto deja que el pestillo roce el canto del marco, que es el sonido de rayado que aparece un mes después del montaje. Un labio largo invade el hueco, engancha la ropa, se dobla, y en una puerta de dos hojas puede tropezar con la otra.",
     "El método de trabajo es medir desde el eje de la cara de la puerta (el punto por donde pasará el pestillo) hasta el borde trasero del rebaje del marco, y añadir una pequeña holgura para que el labio salve el canto sin sobresalir. La cifra depende del perfil del marco, y por eso no se lee en un catálogo.",
     "La consecuencia práctica para una planilla: indique el perfil del marco, o dé la longitud de labio. Un cerradero pedido sin ninguna de las dos se enviará con el labio estándar del fabricante, que es el correcto para el marco que el fabricante tenía en mente y no necesariamente para el suyo.",
+    "Nuestras fichas publican el cerradero en los mismos términos. La cerradura tubular 575 se entrega con un cerradero de labio curvo de 57 mm de serie y un labio de 70 mm bajo pedido; la cerradura de sobreponer 564 lleva un cerradero angular para puertas de apertura interior, y hay cerradero plano disponible.",
     "ESQUINAS RECTAS FRENTE A REDONDEADAS",
     "Las esquinas de una placa de cerradero son rectas o redondeadas, y la elección la determina cómo se cortó el marco, no la preferencia.",
     "Un marco fresado con una fresa tiene esquinas redondeadas, porque una herramienta que gira no puede cortar una esquina interior viva. Un marco cortado con punzón o formón tiene esquinas rectas. Los radios habituales son 1/4\" (unos 6 mm) o 5/8\" (unos 16 mm), y se distinguen a simple vista una vez montado.",
@@ -196,6 +198,7 @@
     "Um lábio curto deixa o trinco raspar na aresta do marco, que é o som de arranhado que aparece um mês depois da montagem. Um lábio longo invade o vão, engata a roupa, dobra, e numa porta de duas folhas pode tropeçar na outra.",
     "O método de trabalho é medir desde o eixo da face da porta (o ponto por onde o trinco vai passar) até a borda traseira do rebaixo do marco, e acrescentar uma pequena folga para que o lábio ultrapasse a aresta sem sobressair. A cifra depende do perfil do marco, e por isso não se lê num catálogo.",
     "A consequência prática para uma planilha: indique o perfil do marco, ou dê o comprimento de lábio. Uma contra-testa pedida sem nenhum dos dois será enviada com o lábio padrão do fabricante, que é o correto para o marco que o fabricante tinha em mente e não necessariamente para o seu.",
+    "Nossas páginas publicam a contra-testa nos mesmos termos. A fechadura tubular 575 vem com contra-testa de lábio curvo de 57 mm de série e lábio de 70 mm sob pedido; a fechadura de sobrepor 564 vem com contra-testa angular para portas que abrem para dentro, e há contra-testa plana disponível.",
     "CANTOS RETOS CONTRA ARREDONDADOS",
     "Os cantos de uma chapa de contra-testa são retos ou arredondados, e a escolha é determinada pela forma como o marco foi cortado, não pela preferência.",
     "Um marco fresado com uma tupia tem cantos arredondados, porque uma ferramenta que gira não pode cortar um canto interno vivo. Um marco cortado com punção ou formão tem cantos retos. Os raios habituais são 1/4\" (cerca de 6 mm) ou 5/8\" (cerca de 16 mm), e distinguem-se a olho depois de montados.",
@@ -215,5 +218,9 @@
     "O QUE VAI Numa planilha",
     "Tipo e tamanho de contra-testa. Comprimento de lábio, ou o perfil de marco a que tem que se ajustar. Tratamento de canto, reto ou arredondado, com o raio se for arredondado. Acabamento, combinando com o resto do vão. Caixa ou porta-pó, e comprimento de parafuso se a segurança for um requisito.",
     "Seis linhas. A contra-testa costuma ser a linha mais barata da planilha e a que mais retrabalho gera."
+  ],
+  "relatedModels": [
+    "575 ABET",
+    "564"
   ]
 }

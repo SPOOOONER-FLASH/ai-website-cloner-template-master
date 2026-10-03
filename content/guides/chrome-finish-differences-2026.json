@@ -3,6 +3,7 @@
   "title": "Chrome, Satin Chrome and Satin Nickel 2026: Why Two Suppliers' \"Polished Chrome\" Do Not Match, and How to Specify One That Does",
   "kind": "insight",
   "publishedAt": "2026-09-21",
+  "updatedAt": "2026-09-30",
   "summary": "Chrome is a thin top layer over nickel, which is why nickel decides how it looks and how long it lasts. This page explains the plating stack, separates polished chrome from satin chrome from satin nickel by the property that actually distinguishes them, gives the codes, and shows from our own 336 finish rows why a finish written as a name rather than a code cannot be reordered.",
   "author": {
     "name": "Johnson Liu",
@@ -66,6 +67,7 @@
     "| Written as | Rows |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| \"chrome\", no code | 17 |\n| Satin Nickel (SN) | 41 |\n| \"Satin nickel\", no code | 38 |",
     "Those are not different finishes. They are one finish written inconsistently, and the rows without a code are the ones a buyer cannot reorder from, which is the argument this whole page is making, turned on ourselves.",
     "It is being normalized against the code table on our finish code page rather than left to tidy itself. Until it is, take the code where a row has one and ask where it does not.",
+    "Where our rows do carry the code, quote it as written: the 70722 DC grip handle set is published in Satin nickel (US15), and the 65SN euro cylinder lists Chrome Plated (CP) and Satin Chrome (SC) among its finishes.",
     "## How to specify chrome so you get the same thing twice",
     "Give the code, not the name. US26D or 626, not \"satin chrome\".",
     "Name the substrate if the project mixes materials, chrome on brass and chrome on zinc alloy will not match on adjacent doors.",
@@ -201,6 +203,7 @@
     "| Escrito como | Filas |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| «chrome», sin código | 17 |\n| Satin Nickel (SN) | 41 |\n| «Satin nickel», sin código | 38 |",
     "Esos no son acabados distintos. Son un acabado escrito de forma inconsistente, y las filas sin código son justamente de las que un comprador no puede volver a pedir, que es el argumento de toda esta página, vuelto contra nosotros mismos.",
     "Se está normalizando contra la tabla de códigos de nuestra página de acabados en vez de dejarlo que se ordene solo. Hasta entonces, tome el código donde la fila lo tenga y pregunte donde no.",
+    "Donde nuestras filas sí llevan el código, cítelo tal como está escrito: el juego de manillón 70722 DC se publica en níquel satinado (US15), y el cilindro europeo 65SN incluye cromado (CP) y cromo satinado (SC) entre sus acabados.",
     "## Cómo especificar cromo para recibir lo mismo dos veces",
     "Dé el código, no el nombre. US26D o 626, no «cromo satinado».",
     "Nombre el sustrato si el proyecto mezcla materiales: cromo sobre latón y cromo sobre zamak no coincidirán en puertas contiguas.",
@@ -256,11 +259,16 @@
     "| Escrito como | Linhas |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| \"chrome\", sem código | 17 |\n| Satin Nickel (SN) | 41 |\n| \"Satin nickel\", sem código | 38 |",
     "Esses não são acabamentos diferentes. São um acabamento escrito de forma inconsistente, e as linhas sem código são justamente aquelas de que um comprador não pode voltar a pedir, que é o argumento de toda esta página, virado contra nós mesmos.",
     "Está sendo normalizado contra a tabela de códigos da nossa página de acabamentos em vez de o deixar arrumar-se sozinho. Até lá, tome o código onde a linha o tiver e pergunte onde não tiver.",
+    "Onde as nossas linhas trazem o código, cite-o como está escrito: o conjunto de puxador 70722 DC é publicado em níquel acetinado (US15), e o cilindro europeu 65SN inclui cromado (CP) e cromo acetinado (SC) entre os acabamentos.",
     "## Como especificar cromo para receber o mesmo duas vezes",
     "Dê o código, não o nome. US26D ou 626, não \"cromo acetinado\".",
     "Nomeie o substrato se o projeto mistura materiais: cromo sobre latão e cromo sobre zamak não vão coincidir em portas contíguas.",
     "Diga se aceita PVD, porque um equivalente PVD é uma substituição legítima que muda ligeiramente a cor.",
     "Para tudo o que se veja junto, aprove uma amostra física e guarde-a. Um código mais uma amostra assinada é uma especificação. Um código sozinho é uma família.",
     "E especifique todos os itens do vão ao mesmo código, incluindo as dobradiças, a contra-testa e os parafusos. O desencontro que todo mundo nota não são duas maçanetas: é uma maçaneta de cromo acetinado sobre uma contra-testa de cromo polido."
+  ],
+  "relatedModels": [
+    "70722 DC",
+    "65SN"
   ]
 }

@@ -40,3 +40,12 @@ test("links are classified by what they mean commercially", () => {
   assert.equal(linkIntent("/guides/", from), null);
   assert.equal(linkIntent("https://example.com/products/a/b/", from), null);
 });
+
+test("GA4 client ID is read from the _ga cookie only", async () => {
+  const { gaClientId } = await import("./engagement.ts");
+  assert.equal(gaClientId("_ga=GA1.1.1234567890.1727654321"), "1234567890.1727654321");
+  assert.equal(gaClientId("x=1; _ga=GA1.2.55.66; _ga_RBTE7KF82P=GS1.1.1727.1"), "55.66");
+  // The per-property cookie is not the client ID.
+  assert.equal(gaClientId("_ga_RBTE7KF82P=GS1.1.1727654321.1.0.1727654321.0.0.0"), null);
+  assert.equal(gaClientId(""), null);
+});

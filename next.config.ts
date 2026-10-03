@@ -18,6 +18,15 @@ const nextConfig: NextConfig = {
   experimental: {
     globalNotFound: true,
     /*
+      NOT `inlineCss: true` (tried 2026-09-30). It removes the export's only render-blocking
+      requests — three stylesheets, 19 KB compressed — and Lighthouse's slow-4G run gained
+      0.3 s of first paint. But Next also copies the whole 124 KB stylesheet into every
+      page's RSC payload: out/index.html went from 282 KB to 534 KB, and across 8,135 HTML
+      files that is +2 GB in out/, which this repository commits on every release through a
+      proxy that already needs chunked pushes. Not worth 0.3 s. Revisit if out/ ever stops
+      being tracked.
+    */
+    /*
       Build worker cap. Next defaults to one worker per core less one — 31 on the johns
       release machine — and on 2026-09-28 three of four `deploy:prep` runs died in
       "Collecting page data using 31 workers" with 0xC0000409, no JavaScript error. Twelve

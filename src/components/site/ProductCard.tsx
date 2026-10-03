@@ -5,7 +5,8 @@ import { cn } from "@/lib/utils";
 import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { cardFigure } from "@/lib/card-figure";
-import { localiseProductValues, t, tx } from "@/lib/i18n-client";
+import { t, tx } from "@/lib/i18n-client";
+import { localiseProductValues } from "@/lib/i18n-client-values";
 
 interface ProductCardProps {
   /* The narrow shape, not the full record: this card reads a dozen fields and a full

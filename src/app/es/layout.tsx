@@ -6,6 +6,8 @@ import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
 import { LanguageSuggestion } from "@/components/site/LanguageSuggestion";
+import { I18nClientValues } from "@/data/i18n-client-values-es";
+import { registerRecordLocaleTables } from "@/data/i18n-record-locale-tables";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -17,6 +19,14 @@ import {
   siteUrl,
 } from "@/data/site";
 import { alternateLanguages } from "@/lib/seo";
+
+/*
+  This locale's client tables for product cards — one chunk, this locale only. <I18nClientValues />
+  registers them in the client/SSR layer; this call registers them in the server-component
+  graph, which Next evaluates as a separate instance (the overlay layouts learnt this on
+  2026-09-27; see src/app/de/layout.tsx). Both are needed.
+*/
+registerRecordLocaleTables("es");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -80,6 +90,7 @@ export default function SpanishRootLayout({
         <JsonLd data={websiteSchema()} />
       </head>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
+        <I18nClientValues />
         {/* Above the header and in flow: it offers, it never covers. See the component. */}
         <LanguageSuggestion />
         <div className="flex min-h-screen flex-col justify-between">

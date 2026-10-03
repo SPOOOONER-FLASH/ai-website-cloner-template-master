@@ -3,6 +3,8 @@
 @media (min-width: 86rem) and (max-width: 99.999rem) {
   .wideNavigation { display: none; }
   .controls { grid-column: 1 / -1; }
+  /* The wordmark centres between the nav and the controls only when the nav is on this row (09-30). */
+  .controls > .home { justify-content: flex-start; }
   /* grid, not block: this element is also .layout, and the page gutters ARE that grid.
      display:block dropped them — the rail ran from x=0 on every 1376–1599px screen (09-25). */
   .compactNavigation { display: grid; }
@@ -13,5 +15,6 @@
 @media (min-width: 86rem) {
   .header[data-long-nav] .wideNavigation { display: none; }
   .header[data-long-nav] .controls { grid-column: 1 / -1; }
+  .header[data-long-nav] .controls > .home { justify-content: flex-start; }
   .header[data-long-nav] .compactNavigation { display: grid; }
 }

@@ -27,6 +27,7 @@ const STATIC = [
   ["company", "SimplePages", "CompanyPage", "companyMetadata"],
   ["company/johnson-liu", "SimplePages", "JohnsonLiuPage", "johnsonLiuMetadata"],
   ["configurator", "ConfiguratorPage", "ConfiguratorPage", "configuratorMetadata"],
+  ["configurator/studio", "ConfiguratorStudioPage", "ConfiguratorStudioPage", "configuratorStudioMetadata"],
   ["contact", "ContactPage", "ContactPage", "contactMetadata"],
   ["documents", "DocumentsPage", "DocumentsPage", "documentsMetadata"],
   ["downloads", "DownloadsPage", "DownloadsPage", "downloadsMetadata"],

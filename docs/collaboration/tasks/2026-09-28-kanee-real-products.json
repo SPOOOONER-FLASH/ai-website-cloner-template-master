@@ -1,0 +1,32 @@
+{
+  "sessionId": "01a0570e-5f9e-7ea1-9127-cf4f6d0adb76",
+  "status": "active",
+  "revision": 4,
+  "targetImageCount": 20,
+  "imagesAccepted": 20,
+  "acceptanceDefinition": "Internal traceability and visual QA; not client approval or production release",
+  "clientApprovedImages": 0,
+  "tasks": [
+    { "id": "reference", "label": "Inspect KANEE catalogue and FSB video; record measured visual grammar", "status": "done" },
+    { "id": "pilot", "label": "Render full-field real-product pilot; reject mismatched light, contact or perspective", "status": "done" },
+    { "id": "batch", "label": "Complete twenty traceable real-product images with per-image visual QA", "status": "done" },
+    { "id": "video", "label": "Create playable original HYDE motion trial and measured production brief", "status": "done", "limitation":"18-second 2D photo-motion trial; not a complete continuous 3D FSB-style film" },
+    { "id": "share", "label": "Package internally reviewed images, provenance and usage guidance for Claude", "status": "done" },
+    { "id": "hook-trust", "label": "Verify actual Codex Stop hook dispatch after review/trust", "status": "blocked", "reason": "Local configuration and script can be tested, but trust and runtime dispatch have not been observed." },
+    { "id": "push", "label": "Share committed pack on remote after ship integration conflict is resolved", "status": "blocked", "reason": "npm run ship exited 1 after side-checkout content conflict in SHIPLOG.md; local pack available, remote push not completed. Do not repeatedly retry unchanged conflict or overwrite others." }
+  ],
+  "evidence": [
+    "KANEE original located in xwechat msg/file/2026-09: 108 landscape PDF pages",
+    "FSB supplied MP4 fully decoded: 40.033 seconds, 1280x720, 30 fps, no audio",
+    "Previous twenty scene composites and side-white-card pilots remain rejected; never ship them",
+    "Original upload drive is now G:/新网站资料; 85 original photos inspected across lock/cylinder/panic folders",
+    "Original 8-bit RGB PSD layers recovered losslessly without installing a dependency; native transparent 45 BNIK and 110 pilots remove the prior white fringe",
+    "Two new empty photographic backgrounds generated; no metal product pixels supplied to image generation",
+    "FSB entire video checked for cuts above scene-difference threshold 0.2: none detected; manual inspection supports continuous relative-angle motion, not a cut-based montage",
+    "20 v2 images across 8 real models; each inspected, 110 fixing-hole paper corrected; source/master hashes and web sizes verified",
+    "18-second 1280x720 H.264 trial, 30fps, 540 frames, no sound, 2058917 bytes; complete decode succeeded and nine keyframes inspected",
+    "20 focused tests passed, including native PSD pixels, aperture-only cleanup and CLI hook isolation; no full npm run check or site release",
+    "Playwright CLI absent; existing browser rejected local file protocol. No proxy or policy workaround attempted; browser playback not verified",
+    "Shared local pack: docs/design-references/kanee-fidelity/README.md; use masters-v2, never rejected masters-v1"
+  ]
+}

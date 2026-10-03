@@ -1,0 +1,106 @@
+{
+  "_comment": [
+    "Quotation job for Aribell Products Limited (Concord, Ontario, Canada) - door viewers.",
+    "FINAL version, confirmed by the boss 2026-09-30 ('确定了').",
+    "",
+    "The boss edited his own old draft rather than the first build of this file, so his",
+    "letterhead / blank TO / single photo came back. The substance is carried over here:",
+    "  1814 SN  180 deg, dia 14 mm, 10,000 pcs, USD 1.72",
+    "  1612 SN  160 deg, dia 12 mm,  1,000 pcs, USD 1.22",
+    "  payment 30% advance / 70% against copy of shipment documents",
+    "  lead time 30 days from receipt of down payment",
+    "  EXW Zhongshan; FOB when the order amount is above USD 10,000 (total here is 18,420)",
+    "The catalogue alternatives (DV05/08/09/10) of the first build were dropped: the boss",
+    "finalised two lines only.",
+    "",
+    "Codes 1814 SN / 1612 SN are not in the catalogue (only DV04-DV12, no 160 deg viewer);",
+    "the DV06 photo is the closest real photograph and is shown for both lines.",
+    "The ex-factory RMB cost screenshot the boss's draft carried in cell I8 is NOT carried over.",
+    "Packing is still open: his draft says 'box packing' in the spec and 'bags packing' below it.",
+    "Samples: paid, and the cost is credited against the order (boss, 2026-09-30).",
+    "",
+    "Build:  py scripts/build-quotation.py docs/quotations/aribell-20260930.json"
+  ],
+  "outFile": "~/Desktop/hyde/报价/20260930 Quotation - Aribell Products - Door Viewers.xlsx",
+  "sheetName": "Quotation",
+  "company": "docs/quotations/_company.json",
+  "meta": {
+    "number": "HY20260930",
+    "date": "September 30, 2026"
+  },
+  "buyer": {
+    "name": "Aribell Products Limited",
+    "lines": [
+      "Attn: Mr. Brian Belzberg, President",
+      "380 Four Valley Drive",
+      "Concord, Ontario L4K 5Z1, Canada",
+      "brian@aribell.ca",
+      "T +1 905 669 5001"
+    ]
+  },
+  "terms": [
+    {
+      "label": "Prices",
+      "value": "USD per piece, as quoted per model"
+    },
+    {
+      "label": "Incoterm",
+      "value": "EXW Zhongshan, China; FOB when order amount is above USD 10,000"
+    },
+    {
+      "label": "Payment",
+      "value": "30% in advance, 70% balance against copy of shipment documents"
+    },
+    {
+      "label": "Lead time",
+      "value": "30 days from receipt of down payment"
+    },
+    {
+      "label": "Packing",
+      "value": "To be confirmed"
+    },
+    {
+      "label": "Validity",
+      "value": "Until October 30, 2026"
+    }
+  ],
+  "items": [
+    {
+      "slug": "dv06-door-viewer",
+      "title": "1814 SN",
+      "qty": 10000,
+      "unit": "PCS",
+      "unitPrice": 1.72,
+      "image": "/images/products-hyde/dv06-door-viewer.webp",
+      "specs": [
+        "Door viewer, 180 degrees",
+        "Material: brass, glass lens with cover",
+        "Diameter: 14 mm",
+        "Fits door thickness 35-55 mm",
+        "Finish: SN (satin nickel)",
+        "Photo shows a brass finish; SN is supplied"
+      ]
+    },
+    {
+      "slug": "dv06-door-viewer",
+      "title": "1612 SN",
+      "qty": 1000,
+      "unit": "PCS",
+      "unitPrice": 1.22,
+      "image": "/images/products-hyde/dv06-door-viewer.webp",
+      "specs": [
+        "Door viewer, 160 degrees",
+        "Material: brass, glass lens with cover",
+        "Diameter: 12 mm",
+        "Fits door thickness 30-50 mm",
+        "Finish: SN (satin nickel)",
+        "Photo shows a brass finish; SN is supplied"
+      ]
+    }
+  ],
+  "notes": [
+    "Quantities shown are those stated in your enquiry: 10,000 pcs at 180 degrees and 1,000 pcs at 160 degrees.",
+    "Samples are available for a fee; the sample cost will be credited against the order amount."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm the quantity and we will issue the pro forma invoice."
+}

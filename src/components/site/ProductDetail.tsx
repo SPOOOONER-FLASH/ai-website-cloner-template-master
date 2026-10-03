@@ -22,6 +22,8 @@ import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
 import { productModelFor } from "@/data/product-models";
 import { ProductModel } from "./ProductModel";
+import { ProductVariants } from "./ProductVariants";
+import { productVariants } from "@/lib/product-variants";
 import { ProductSpecSheetLink } from "./ProductSpecSheetLink";
 import { dict, specLabel, t as tr } from "@/lib/i18n";
 import { getPublishedGuides } from "@/data/guides";
@@ -253,6 +255,7 @@ function ProductFact({
  */
 export function ProductDetail({ product, categoryName, locale = "en" }: ProductDetailProps) {
   const t = dict(COPY, locale);
+  const variants = productVariants(product, publishedProducts);
   const es = locale === "es";
   const referenceModel = productModelFor(product.slug);
   /*
@@ -443,6 +446,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
             <p className="mt-8 text-lead tabular-nums text-ink">
               {product.modelTbc ? t.referenceOnRequest : product.model}
             </p>
+            {variants ? <ProductVariants variants={variants} locale={locale} /> : null}
           </div>
         </div>
       </section>

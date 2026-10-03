@@ -43,6 +43,8 @@ const COPY = {
     catalogueHint: "Search and filter all models",
     configurator: "Configurator",
     configuratorHint: "Answer a few questions",
+    studio: "Studio",
+    studioHint: "Switch finish and function on the real part",
   },
   es: {
     label: "Cómo recorrer el catálogo",
@@ -50,6 +52,8 @@ const COPY = {
     catalogueHint: "Buscar y filtrar todos los modelos",
     configurator: "Configurador",
     configuratorHint: "Responda unas preguntas",
+    studio: "Estudio",
+    studioHint: "Cambie acabado y función sobre la pieza real",
   },
   pt: {
     label: "Como percorrer o catálogo",
@@ -57,6 +61,8 @@ const COPY = {
     catalogueHint: "Procurar e filtrar todos os modelos",
     configurator: "Configurador",
     configuratorHint: "Responda a algumas perguntas",
+    studio: "Estúdio",
+    studioHint: "Troque acabamento e função na peça real",
   },
 } as const;
 
@@ -65,7 +71,7 @@ export function FinderModeSwitch({
   locale = "en",
   className,
 }: {
-  active: "catalogue" | "configurator";
+  active: "catalogue" | "configurator" | "studio";
   locale?: Locale;
   className?: string;
 }) {
@@ -75,6 +81,7 @@ export function FinderModeSwitch({
   const items = [
     { key: "catalogue" as const, href: `${base}/product-finder/`, label: t.catalogue, hint: t.catalogueHint },
     { key: "configurator" as const, href: `${base}/configurator/`, label: t.configurator, hint: t.configuratorHint },
+    { key: "studio" as const, href: `${base}/configurator/studio/`, label: t.studio, hint: t.studioHint },
   ];
 
   return (

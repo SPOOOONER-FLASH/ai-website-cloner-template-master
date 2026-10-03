@@ -4,6 +4,7 @@ import { join } from "node:path";
 import test from "node:test";
 import {
   PRODUCT_FAMILIES,
+  PRODUCT_GROUPS,
   PRODUCT_STORY,
   getProductsArchitecture,
 } from "./products-architecture.ts";
@@ -12,7 +13,6 @@ const root = process.cwd();
 const categoryFile = JSON.parse(
   readFileSync(join(root, "content", "categories.json"), "utf8"),
 ) as { categories: Array<{ slug: string }> };
-const categorySlugs = new Set(categoryFile.categories.map((category) => category.slug));
 const editorialConfig = JSON.parse(
   readFileSync(
     join(root, "src", "components", "site", "editorial-images.config.json"),
@@ -20,16 +20,28 @@ const editorialConfig = JSON.parse(
   ),
 ) as Record<string, { sourceWidth: number; variants: number[] }>;
 
-test("the editorial map exposes exactly nine real product families", () => {
-  assert.equal(PRODUCT_FAMILIES.length, 9);
-  assert.equal(new Set(PRODUCT_FAMILIES.map((family) => family.slug)).size, 9);
+test("every top-level category is in exactly one group, with a real HYDE thumbnail", () => {
+  /* 2026-09-30: the old nine families left 219 of 549 models with no entry from /products. */
+  const topLevel = new Set(categoryFile.categories.map((category) => category.slug));
+  const listed = PRODUCT_FAMILIES.map((family) => family.slug);
+  assert.equal(new Set(listed).size, listed.length, "a category is listed twice");
+  assert.deepEqual([...listed].sort(), [...topLevel].sort());
 
   for (const family of PRODUCT_FAMILIES) {
-    assert.ok(categorySlugs.has(family.slug), `${family.slug} is not a canonical category`);
-    assert.match(family.label.en, /\S/);
-    assert.match(family.label.es, /\S/);
-    assert.match(family.description.en, /\S/);
-    assert.match(family.description.es, /\S/);
+    const file = join(root, "content", "products", `${family.thumbnail}.json`);
+    assert.ok(existsSync(file), `${family.thumbnail} is not a product record`);
+    const product = JSON.parse(readFileSync(file, "utf8")) as {
+      categoryPath: string[];
+      sites?: string[];
+      heroImage?: { src?: string };
+    };
+    assert.equal(product.categoryPath[0], family.slug, `${family.thumbnail} is not in ${family.slug}`);
+    assert.ok(!product.sites || product.sites.includes("hyde"), `${family.thumbnail} is not on the HYDE catalog`);
+    assert.ok(product.heroImage?.src, `${family.thumbnail} has no photograph`);
+  }
+  for (const group of PRODUCT_GROUPS) {
+    assert.match(group.title.en, /\S/);
+    assert.match(group.title.es, /\S/);
   }
 });
 
@@ -38,11 +50,11 @@ test("English and Spanish maps preserve canonical category routes", () => {
   const spanish = getProductsArchitecture("es");
 
   assert.deepEqual(
-    english.families.map((family) => family.href),
+    english.groups.flatMap((group) => group.families.map((family) => family.href)),
     PRODUCT_FAMILIES.map((family) => `/products/${family.slug}/`),
   );
   assert.deepEqual(
-    spanish.families.map((family) => family.href),
+    spanish.groups.flatMap((group) => group.families.map((family) => family.href)),
     PRODUCT_FAMILIES.map((family) => `/es/products/${family.slug}/`),
   );
   assert.equal(english.brandLine, "Engineered by Canton Hyland");
@@ -67,7 +79,7 @@ test("the Products story gives range, application, and technical imagery one job
 });
 
 test("the editorial architecture makes no designer or certification claim", () => {
-  const serialized = JSON.stringify({ PRODUCT_FAMILIES, PRODUCT_STORY });
+  const serialized = JSON.stringify({ PRODUCT_GROUPS, PRODUCT_STORY });
   assert.doesNotMatch(serialized, /designed by/i);
   assert.doesNotMatch(serialized, /ANSI|EN 1125|certified|grade \d/i);
 });
@@ -81,7 +93,7 @@ test("both Products routes render one shared editorial system without losing dis
   const spanish = readFileSync(join(root, "src", "app", "es", "products", "page.tsx"), "utf8");
 
   assert.equal((component.match(/<h1\b/g) ?? []).length, 1);
-  assert.match(component, /architecture\.families\.map/);
+  assert.match(component, /architecture\.groups\.map/);
   assert.match(component, /architecture\.photographySeries\.map/);
   assert.match(component, /applicationChapter/);
   assert.match(component, /technicalChapter/);

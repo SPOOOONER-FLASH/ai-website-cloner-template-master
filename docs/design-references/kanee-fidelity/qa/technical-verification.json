@@ -1,0 +1,18 @@
+{
+  "imageFiles": 20,
+  "uniqueModels": 8,
+  "sourceHashesVerified": true,
+  "masterHashesVerified": true,
+  "webDimensionsVerified": true,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frames": "540",
+    "duration": "18.000000",
+    "bytes": "2058917",
+    "fullDecodePassed": true,
+    "audio": false
+  },
+  "visualAcceptance": "Separate visual-qa.json; this check cannot judge photographic realism."
+}
