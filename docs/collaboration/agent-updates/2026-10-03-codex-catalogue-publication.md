@@ -40,3 +40,15 @@ The standard build regenerated public drawing/search files and the frozen RAYEN 
 - Proposal verification: script parses, fragment is 21 KB, three named variants switch correctly; desktop 1024px and mobile 320px have no horizontal overflow. Language selection, menu opening, Escape and direct Downloads selection were checked in the browser. The proposal source and reasoning are retained with this update.
 
 Untouched: other agents' checkouts and claims, production navigation source, RAYEN export, and Cloudflare. Next useful review: select a navigation direction; next release action: verify all uploaded batches, final main out tree and production content separately.
+
+## Final publication verified — 2026-10-03
+
+- Navigation study commit `fc9926b25e2c` and its shiplog `873e46a71591` were pushed; the connector independently verified that source main before final release.
+- All thirteen upload batches completed. A GitHub-side unpack error on batch 7 was initially classified as a ref race by the uploader's broad `rejected` match. Only the task-owned scratch copy was narrowed to actual non-fast-forward/fetch-first rejections; retry succeeded. Intermittent TCP resets were handled within the bounded retry loop.
+- Final release main: `2b93f729ab8674a2ea87202cb39e176e5dab2cd1`, parent `873e46a7159115f831bd1fe42d0aef3a01a6215e`. The uploader completed with actual exit 0. Its complete out replaces main atomically; the source from current main is preserved.
+- The GitHub connector independently verified that main ref and its root tree `917eed12a48a1d9eb3e3305d97e690e94f8eab46`. Remote out tree is `9e670e9d91c678ebd4680b4db73aada16717074b`, exactly the verified local release tree. Diff outside out is empty. Original contact/catalog source commit `7f3394e06df8` is an ancestor of main.
+- While the final Git push was waiting, a connector tree-write fallback returned HTTP 403, Resource not accessible by integration. It wrote nothing; the original Git push completed normally. No additional permissions, tokens or integrations were requested.
+- Verification remains: complete deploy:prep exit 0, 456 tests passed/0 failed/0 skipped, complete 71,453-file staged export, and the link/semantic/browser checks above. The subsequent navigation study changes only retained proposal documents, not compiled navigation behavior.
+- Source worktree fast-forwarded quietly to the verified release; the proposal file was explicitly included in its own sparse patterns so it remains available after sync.
+
+This confirms remote publication of the full export. It does not independently establish that the server's next scheduled pull has finished or that every public response displays it. Do not infer deployment from edge-cache state. Cloudflare purge remains the client's action; the release itself needs no new manual server procedure.
