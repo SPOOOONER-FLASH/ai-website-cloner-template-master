@@ -1,0 +1,370 @@
+<div id="hyde-homepage-motion" class="viz-carousel" aria-label="HYDE 全首页动态设计" data-previous-label="上一方案" data-next-label="下一方案" data-motion="on">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+#hyde-homepage-motion .hp-stage { min-height:var(--stage-height,3050px);display:flex; }
+#hyde-homepage-motion .hp-stage[hidden] { display:none; }
+#hyde-homepage-motion .hp-stage>.hp-page { flex:1;min-width:0;display:flex;flex-direction:column; }
+#hyde-homepage-motion .hp-stage>.hp-page>* { min-width:0; }
+#hyde-homepage-motion .hp-stage>.hp-page>.hp-footer { margin-top:auto; }
+#hyde-homepage-motion .hp-measure { position:absolute;top:0;left:0;visibility:hidden;pointer-events:none;z-index:-10; }
+#hyde-homepage-motion .hp-measure * { animation:none!important;transition:none!important; }
+#hyde-homepage-motion .hp-motion-top { display:flex;justify-content:flex-end;padding:0 34px;background:var(--paper);color:var(--muted);font-size:11px; }
+#hyde-homepage-motion .hp-tabs>span { flex-basis:100%; }
+#hyde-homepage-motion .hp-page { --ink:light-dark(#122120,#e8ece6);--paper:light-dark(#f3f2ed,#19211e);--muted:light-dark(#52605a,#acb8b0);--line:light-dark(#ced5ca,#46544b);--accent:light-dark(#245749,#b0d4b0);--energy:1; position:relative; overflow:clip; background:var(--paper);color:var(--ink);font:400 14px/1.6 'DM Sans',sans-serif;text-align:left; isolation:isolate; }
+#hyde-homepage-motion .hp-page * { box-sizing:border-box; }
+#hyde-homepage-motion .hp-page h1,#hyde-homepage-motion .hp-page h2,#hyde-homepage-motion .hp-page h3,#hyde-homepage-motion .hp-page p,#hyde-homepage-motion .hp-page figure { margin:0; }
+#hyde-homepage-motion .hp-page button,#hyde-homepage-motion .hp-page a { font:inherit;color:inherit; }
+#hyde-homepage-motion .hp-page button { border:0;background:none;padding:0; }
+#hyde-homepage-motion .hp-page a { text-decoration:none; }
+#hyde-homepage-motion .hp-page img { display:block;width:100%;height:100%;object-fit:contain; }
+#hyde-homepage-motion .hp-header { position:relative;z-index:5;display:flex;align-items:center;gap:25px;min-height:82px;padding:18px 34px;border-bottom:1px solid var(--line); }
+#hyde-homepage-motion .hp-brand { font:700 23px/1 'Manrope',sans-serif;letter-spacing:8px;white-space:nowrap; }
+#hyde-homepage-motion .hp-nav { display:flex;align-items:center;gap:22px;flex:1;justify-content:center; }
+#hyde-homepage-motion .hp-nav button { min-height:44px;font-size:12px;white-space:nowrap; }
+#hyde-homepage-motion .hp-header .hp-quote { display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 15px;background:var(--ink);color:var(--paper);font-size:12px;font-weight:600;min-height:44px;white-space:nowrap;transition:transform .25s,background .25s; }
+#hyde-homepage-motion .hp-quote:hover { transform:translateY(-2px); }
+#hyde-homepage-motion .hp-icon-button { display:flex;align-items:center;justify-content:center;gap:5px;min-width:44px;min-height:44px;font-size:12px; }
+#hyde-homepage-motion .hp-mobile { display:none; }
+#hyde-homepage-motion .hp-menu { position:absolute;top:100%;left:20px;right:20px;padding:26px;background:var(--paper);border:1px solid var(--line);color:var(--ink);box-shadow:0 15px 30px #0002;z-index:10; }
+#hyde-homepage-motion .hp-menu h3 { font-size:24px;font-weight:500;line-height:1.2;margin-bottom:12px; }
+#hyde-homepage-motion .hp-menu-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px; }
+#hyde-homepage-motion .hp-menu-grid p { color:var(--muted);font-size:12px; }
+#hyde-homepage-motion .hp-menu-grid button { display:flex;align-items:center;gap:12px;min-height:44px;border-bottom:1px solid var(--line);width:100%;text-align:left; }
+#hyde-homepage-motion .hp-menu-close { position:absolute;top:10px;right:10px; }
+#hyde-homepage-motion .hp-eyebrow { text-transform:uppercase;font-size:11px;line-height:1.5;letter-spacing:2px;font-weight:600; }
+#hyde-homepage-motion .hp-link { display:inline-flex;align-items:center;gap:13px;min-height:44px;font-weight:500;border-bottom:1px solid currentColor;transition:gap .25s; }
+#hyde-homepage-motion .hp-link:hover { gap:21px; }
+#hyde-homepage-motion .hp-primary { display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:48px;padding:12px 22px!important;border-radius:2px;background:var(--ink)!important;color:var(--paper)!important;font-weight:600!important;transition:transform .25s; }
+#hyde-homepage-motion .hp-primary:hover { transform:translateY(-3px); }
+#hyde-homepage-motion .hp-section { padding:70px 40px; }
+#hyde-homepage-motion .hp-section-head { display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px; }
+#hyde-homepage-motion .hp-section-head h2 { font:500 46px/1.12 'Manrope',sans-serif;letter-spacing:-2px; }
+#hyde-homepage-motion .hp-small { font-size:12px;color:var(--muted); }
+#hyde-homepage-motion .hp-tabs { display:flex;flex-wrap:wrap;gap:8px; }
+#hyde-homepage-motion .hp-tabs button { min-height:44px;border:1px solid var(--line);border-radius:30px;padding:9px 18px;transition:background .3s,color .3s; }
+#hyde-homepage-motion .hp-tabs button[aria-pressed="true"] { background:var(--ink);color:var(--paper);border-color:var(--ink); }
+#hyde-homepage-motion .hp-strip { display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:24px 40px;border-block:1px solid var(--line); }
+#hyde-homepage-motion .hp-strip span { font-size:11px;letter-spacing:1px;text-transform:uppercase; }
+#hyde-homepage-motion .hp-product { position:relative;min-width:0; }
+#hyde-homepage-motion .hp-product-image { aspect-ratio:1.25;background:#fff;overflow:hidden; }
+#hyde-homepage-motion .hp-product-image img { transition:transform .7s cubic-bezier(.2,.75,.3,1); }
+#hyde-homepage-motion .hp-product:hover img { transform:scale(1.025); }
+#hyde-homepage-motion .hp-product-label { display:flex;justify-content:space-between;align-items:start;gap:15px;padding-top:18px; }
+#hyde-homepage-motion .hp-product-label h3 { font-size:20px;font-weight:500;line-height:1.25; }
+#hyde-homepage-motion .hp-product-label button { display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:50%;transition:transform .35s,background .3s; }
+#hyde-homepage-motion .hp-product-label button:hover { background:var(--ink);color:var(--paper);transform:rotate(45deg); }
+#hyde-homepage-motion .hp-feature { display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:48px; }
+#hyde-homepage-motion .hp-feature-photo { overflow:hidden;aspect-ratio:1.5; }
+#hyde-homepage-motion .hp-feature-photo img { object-fit:cover;transition:transform 1.2s; }
+#hyde-homepage-motion .hp-feature-photo:hover img { transform:scale(1.03); }
+#hyde-homepage-motion .hp-feature h2 { font:500 44px/1.14 'Manrope',sans-serif;letter-spacing:-1.8px;margin:15px 0 20px; }
+#hyde-homepage-motion .hp-feature p { margin-bottom:20px;color:var(--muted);max-width:32em; }
+#hyde-homepage-motion .hp-resource-row { display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;border-bottom:1px solid var(--line); }
+#hyde-homepage-motion .hp-resource-row button { display:flex;align-items:center;gap:12px;text-align:left;font-size:20px;min-height:44px; }
+#hyde-homepage-motion .hp-footer { padding:52px 40px 24px;background:var(--ink);color:var(--paper); }
+#hyde-homepage-motion .hp-footer h2 { font:500 66px/1.08 'Manrope',sans-serif;letter-spacing:-3px;max-width:10em;margin:15px 0 28px; }
+#hyde-homepage-motion .hp-footer-bottom { display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;padding-top:40px;margin-top:32px;border-top:1px solid currentColor;font-size:11px; }
+#hyde-homepage-motion .hp-motion { min-height:44px;display:flex;align-items:center;gap:8px; }
+#hyde-homepage-motion .hp-reveal.is-visible { animation:hp-reveal .8s cubic-bezier(.2,.75,.3,1) both; }
+#hyde-homepage-motion .hp-replacing { animation:hp-change .55s cubic-bezier(.2,.75,.3,1) both; }
+#hyde-homepage-motion .hp-silver { --paper:light-dark(#11171a,#0c1214);--ink:light-dark(#f1f1e9,#f1f1e9);--muted:light-dark(#aeb9b8,#aeb9b8);--line:light-dark(#3c4547,#344145);--accent:light-dark(#b9cfca,#b9cfca); }
+#hyde-homepage-motion .hp-silver .hp-header { background:var(--paper); }
+#hyde-homepage-motion .hp-silver .hp-header .hp-quote { border-radius:30px; }
+#hyde-homepage-motion .hp-cinematic { position:relative;display:grid;grid-template-columns:.95fr 1.05fr;align-items:center;gap:20px;min-height:595px;padding:65px 40px 60px; }
+#hyde-homepage-motion .hp-lightfield { position:absolute;inset:-25% -20%;z-index:-1;background:conic-gradient(from 130deg at 65% 55%,#101619 0deg,#1d3334 60deg,#4d635d 105deg,#172326 180deg,#0c1317 280deg,#192d2e 360deg);opacity:.65;animation:hp-light 16s ease-in-out infinite alternate; }
+#hyde-homepage-motion .hp-cinematic::after { content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at var(--pointer-x,70%) var(--pointer-y,40%),#c9dfd11a,transparent 50%); }
+#hyde-homepage-motion .hp-cinema-copy { position:relative;z-index:1; }
+#hyde-homepage-motion .hp-cinema-copy h1 { font:500 76px/1.06 'Manrope',sans-serif;letter-spacing:-4px;margin:23px 0; }
+#hyde-homepage-motion .hp-cinema-copy h1 em { font-style:normal;background:linear-gradient(110deg,#e0e4d9,#809d99,#f1efe1);background-size:200%;background-clip:text;color:transparent;animation:hp-metal 8s ease-in-out infinite alternate; }
+#hyde-homepage-motion .hp-cinema-copy p { max-width:28em;color:var(--muted);margin-bottom:27px; }
+#hyde-homepage-motion .hp-cinema-object { position:relative;transform:translate(calc(var(--shift-x,0px) * var(--energy)),calc(var(--shift-y,0px) * var(--energy)));transition:transform .5s ease-out; }
+#hyde-homepage-motion .hp-cinema-object figure { position:relative;overflow:hidden;border-radius:110px 16px 16px 16px;box-shadow:0 35px 60px #0005;aspect-ratio:1; }
+#hyde-homepage-motion .hp-cinema-object img { object-fit:contain; }
+#hyde-homepage-motion .hp-cinema-object figcaption { position:absolute;bottom:18px;left:22px;color:#fff;font-size:11px;letter-spacing:2px; }
+#hyde-homepage-motion .hp-orbit-line { position:absolute;inset:-22px;border:1px solid #c5d8d13b;border-radius:145px 30px 30px 30px;transform:rotate(-4deg);z-index:-1; }
+#hyde-homepage-motion .hp-silver .hp-collection { --paper:light-dark(#eceee9,#eceee9);--ink:light-dark(#132526,#132526);--muted:light-dark(#59675e,#59675e);--line:light-dark(#c9d0c8,#c9d0c8);background:var(--paper);color:var(--ink); }
+#hyde-homepage-motion .hp-collection-grid { display:grid;grid-template-columns:1.15fr .85fr;gap:28px; }
+#hyde-homepage-motion .hp-collection-grid .hp-product:last-child { padding-top:60px; }
+#hyde-homepage-motion .hp-silver .hp-feature { gap:35px; }
+#hyde-homepage-motion .hp-silver .hp-feature-photo { aspect-ratio:1.15; }
+#hyde-homepage-motion .hp-silver .hp-footer { background:linear-gradient(115deg,#d6dfd7,#a6bfba,#f0eee0);color:#173235; }
+#hyde-homepage-motion .hp-editorial { --paper:light-dark(#f6f2e9,#232621);--ink:light-dark(#273831,#ebece2);--muted:light-dark(#637064,#b3bcae);--line:light-dark(#d7d9ca,#4a5548); }
+#hyde-homepage-motion .hp-editorial .hp-header { padding-inline:40px; }
+#hyde-homepage-motion .hp-editorial-hero { position:relative;padding:52px 40px 0; }
+#hyde-homepage-motion .hp-editorial-intro { display:flex;justify-content:space-between;align-items:center;gap:20px; }
+#hyde-homepage-motion .hp-editorial-hero h1 { font:400 100px/.97 'Playfair Display',Georgia,serif;letter-spacing:-5px;margin:34px 0 0;position:relative;z-index:1; }
+#hyde-homepage-motion .hp-editorial-hero h1 em { font-weight:400;color:var(--accent); }
+#hyde-homepage-motion .hp-editorial-layout { display:grid;grid-template-columns:.7fr 1.3fr;align-items:end;gap:50px;margin-top:-26px; }
+#hyde-homepage-motion .hp-editorial-copy { padding:65px 0 35px; }
+#hyde-homepage-motion .hp-editorial-copy p { margin-bottom:22px;color:var(--muted); }
+#hyde-homepage-motion .hp-editorial-product { position:relative;background:#fff;aspect-ratio:1.45;border-radius:50% 50% 0 0;overflow:hidden; }
+#hyde-homepage-motion .hp-editorial-product img { padding:45px 18px 15px; }
+#hyde-homepage-motion .hp-editorial-product::before { content:"";position:absolute;inset:0;border:1px solid #d0d7c9;border-radius:inherit;pointer-events:none; }
+#hyde-homepage-motion .hp-editorial-ribbon { margin:30px 40px 0;position:relative;overflow:hidden;height:175px;border-radius:2px; }
+#hyde-homepage-motion .hp-editorial-ribbon img { object-fit:cover;object-position:center 53%; }
+#hyde-homepage-motion .hp-editorial-ribbon figcaption { position:absolute;bottom:16px;left:20px;background:#f6f2e9ed;color:#273831;font-size:11px;padding:7px 12px; }
+#hyde-homepage-motion .hp-editorial .hp-section-head h2 { font:400 53px/1.08 'Playfair Display',Georgia,serif;letter-spacing:-1.5px; }
+#hyde-homepage-motion .hp-editorial-grid { display:grid;grid-template-columns:1.25fr .75fr;gap:35px; }
+#hyde-homepage-motion .hp-editorial-grid .hp-product:first-child { border-bottom:1px solid var(--line);padding-bottom:25px; }
+#hyde-homepage-motion .hp-editorial-stack { display:grid;gap:28px; }
+#hyde-homepage-motion .hp-editorial-stack .hp-product-image { aspect-ratio:1.8; }
+#hyde-homepage-motion .hp-editorial .hp-product-image { border-radius:3px; }
+#hyde-homepage-motion .hp-editorial .hp-feature { border-block:1px solid var(--line);gap:55px; }
+#hyde-homepage-motion .hp-editorial .hp-feature h2 { font:400 47px/1.1 'Playfair Display',Georgia,serif;letter-spacing:-1px; }
+#hyde-homepage-motion .hp-process { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px; }
+#hyde-homepage-motion .hp-process article { border-top:1px solid var(--line);padding-top:20px; }
+#hyde-homepage-motion .hp-process span { font:400 32px/1 'Playfair Display',Georgia,serif;color:var(--accent); }
+#hyde-homepage-motion .hp-process h3 { font-size:20px;font-weight:500;margin:18px 0 10px; }
+#hyde-homepage-motion .hp-editorial .hp-footer { background:linear-gradient(140deg,#dfe4d3,#cbd8c8,#eee9dc);color:#273831; }
+#hyde-homepage-motion .hp-editorial .hp-footer h2 { font:400 65px/1.07 'Playfair Display',Georgia,serif;letter-spacing:-2px; }
+#hyde-homepage-motion .hp-lab { --paper:light-dark(#eef3e9,#18231d);--ink:light-dark(#172cce,#c8d4ff);--muted:light-dark(#485366,#adbcc1);--line:light-dark(#b5c2b5,#546c60);--accent:light-dark(#dfef69,#cce461); }
+#hyde-homepage-motion .hp-lab .hp-header { min-height:86px;border-bottom:2px solid var(--ink); }
+#hyde-homepage-motion .hp-lab .hp-header .hp-quote { border-radius:30px;background:var(--accent);color:#173026; }
+#hyde-homepage-motion .hp-lab-hero { position:relative;min-height:640px;padding:44px 40px 35px;overflow:hidden;background:linear-gradient(125deg,#e7f2d9,#f2e7d2 50%,#e3eced);background-size:170% 170%;animation:hp-color 12s ease-in-out infinite alternate;color:#172cce; }
+#hyde-homepage-motion .hp-lab-hero h1 { position:relative;font:800 125px/.86 'Manrope',sans-serif;letter-spacing:-8px;z-index:2;margin-top:32px;max-width:7em; }
+#hyde-homepage-motion .hp-lab-hero h1 span { display:block;font-weight:500;font-style:italic;transform:translateX(70px); }
+#hyde-homepage-motion .hp-lab-object { width:44%;aspect-ratio:1.18;position:absolute;right:36px;bottom:42px;background:#fff;border:2px solid #172cce;border-radius:100%;overflow:hidden;transform:rotate(-7deg);box-shadow:12px 14px 0 #d5e972; }
+#hyde-homepage-motion .hp-lab-object img { padding:28px;transform:rotate(7deg); }
+#hyde-homepage-motion .hp-lab-caption { margin-top:40px;max-width:34%;position:relative;z-index:2; }
+#hyde-homepage-motion .hp-lab-caption p { margin-bottom:18px;color:#485366; }
+#hyde-homepage-motion .hp-sticker { position:absolute;right:22px;top:56px;width:118px;height:118px;border-radius:50%;background:#ddeb67;color:#173026;display:flex;align-items:center;justify-content:center;text-align:center;font-size:14px;line-height:1.4;font-weight:600;transform:rotate(10deg);z-index:3;box-shadow:0 4px 0 #b5c74d; }
+#hyde-homepage-motion .hp-marquee { background:#172cce;color:#eef3e9;overflow:hidden;padding:20px 0; }
+#hyde-homepage-motion .hp-marquee-track { display:flex;width:max-content;gap:60px;animation:hp-ticker 24s linear infinite;font:500 25px/1.2 'Manrope',sans-serif;letter-spacing:-1px; }
+#hyde-homepage-motion .hp-lab-grid { display:grid;grid-template-columns:1fr 1fr;gap:26px; }
+#hyde-homepage-motion .hp-lab-grid .hp-product-image { border-radius:28px; }
+#hyde-homepage-motion .hp-lab-grid .hp-product { padding:20px;border:1px solid var(--line);border-radius:34px;transition:transform .35s,background .35s; }
+#hyde-homepage-motion .hp-lab-grid .hp-product:hover { transform:translateY(-7px);background:var(--accent); }
+#hyde-homepage-motion .hp-lab .hp-feature { background:#172cce;color:#eff3ec;padding:50px 40px;gap:35px; }
+#hyde-homepage-motion .hp-lab .hp-feature p { color:#cad5ff; }
+#hyde-homepage-motion .hp-lab .hp-feature h2 { font-size:54px; }
+#hyde-homepage-motion .hp-lab .hp-feature-photo { border-radius:100px 12px 12px 12px;aspect-ratio:1.2; }
+#hyde-homepage-motion .hp-lab .hp-footer { background:linear-gradient(120deg,#e0ed7c,#eff3ae,#9cceba);background-size:160%;animation:hp-color 10s ease-in-out infinite alternate;color:#183126; }
+#hyde-homepage-motion .hp-lab .hp-footer h2 { font-size:84px;letter-spacing:-5px;max-width:9em; }
+#hyde-homepage-motion .hp-page [hidden] { display:none!important; }
+#hyde-homepage-motion [data-variant][hidden] * { animation-play-state:paused!important; }
+#hyde-homepage-motion[data-motion="off"] .hp-page *,#hyde-homepage-motion[data-suspended="true"] .hp-page * { animation:none!important;transition:none!important; }
+#hyde-homepage-motion[data-motion="off"] .hp-reveal,#hyde-homepage-motion[data-motion="off"] .hp-cinema-object { transform:none!important;opacity:1!important; }
+@keyframes hp-light { from{transform:translate(-2%,-3%) rotate(-8deg)} to{transform:translate(5%,4%) rotate(12deg)} }
+@keyframes hp-metal { from{background-position:0%} to{background-position:100%} }
+@keyframes hp-color { from{background-position:0% 10%} to{background-position:100% 90%} }
+@keyframes hp-ticker { to{transform:translateX(-50%)} }
+@keyframes hp-reveal { from{opacity:.5;transform:translateY(20px)} to{opacity:1;transform:none} }
+@keyframes hp-change { from{opacity:.3;transform:translateY(16px) scale(.97)} to{opacity:1;transform:none} }
+@media(max-width:850px){
+ #hyde-homepage-motion .hp-header{padding:15px 22px;gap:12px;flex-wrap:wrap;min-height:112px;}
+ #hyde-homepage-motion .hp-nav{display:none;}#hyde-homepage-motion .hp-brand{margin-right:auto;font-size:20px;}
+ #hyde-homepage-motion .hp-header .hp-quote{font-size:11px;padding:9px 12px;}
+ #hyde-homepage-motion .hp-mobile{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;font-size:12px;}
+ #hyde-homepage-motion .hp-mobile button{min-height:44px;display:flex;align-items:center;gap:6px;}
+ #hyde-homepage-motion .hp-header .hp-language,#hyde-homepage-motion .hp-header .hp-menu-trigger{display:none;}#hyde-homepage-motion .hp-menu{left:12px;right:12px;}
+ #hyde-homepage-motion .hp-menu-grid{grid-template-columns:1fr;gap:16px;}
+ #hyde-homepage-motion .hp-cinematic{grid-template-columns:1fr 1fr;padding:44px 26px;min-height:500px;}
+ #hyde-homepage-motion .hp-cinema-copy h1{font-size:59px;letter-spacing:-3px;}
+ #hyde-homepage-motion .hp-section{padding:50px 26px;}#hyde-homepage-motion .hp-section-head h2{font-size:36px;}
+ #hyde-homepage-motion .hp-editorial .hp-header{padding-inline:22px;}#hyde-homepage-motion .hp-editorial-hero{padding:36px 26px 0;}
+ #hyde-homepage-motion .hp-editorial-hero h1{font-size:83px;}#hyde-homepage-motion .hp-editorial-layout{gap:25px;}
+ #hyde-homepage-motion .hp-editorial-ribbon{margin-inline:26px;}
+ #hyde-homepage-motion .hp-feature{gap:25px;}#hyde-homepage-motion .hp-feature h2{font-size:35px;}
+ #hyde-homepage-motion .hp-lab-hero h1{font-size:clamp(76px,12vw,105px);}#hyde-homepage-motion .hp-lab-hero h1 span{transform:translateX(35px);}#hyde-homepage-motion .hp-lab-hero{padding:40px 26px;min-height:600px;}
+ #hyde-homepage-motion .hp-lab-object{right:26px;width:47%;}#hyde-homepage-motion .hp-sticker{width:92px;height:92px;top:45px;font-size:12px;}
+ #hyde-homepage-motion .hp-lab-caption{max-width:40%;}#hyde-homepage-motion .hp-lab .hp-feature{padding:40px 26px;}
+ #hyde-homepage-motion .hp-footer{padding:42px 26px 22px;}
+}
+@media(max-width:600px){
+ #hyde-homepage-motion .hp-page{font-size:13px;}
+ #hyde-homepage-motion .hp-header{padding:12px 18px;gap:4px;}#hyde-homepage-motion .hp-header .hp-quote{padding:8px 10px;font-size:11px;}
+ #hyde-homepage-motion .hp-motion-top{padding-inline:18px;}
+ #hyde-homepage-motion .hp-brand{letter-spacing:5px;font-size:18px;}#hyde-homepage-motion .hp-header .hp-menu-trigger{display:none;}
+ #hyde-homepage-motion .hp-mobile{font-size:11px;gap:9px;}#hyde-homepage-motion .hp-mobile button{flex-shrink:0;}
+ #hyde-homepage-motion .hp-cinematic{grid-template-columns:1fr;padding:34px 22px 42px;gap:35px;}
+ #hyde-homepage-motion .hp-cinema-copy h1{font-size:62px;letter-spacing:-3px;}#hyde-homepage-motion .hp-cinema-object{max-width:400px;width:100%;margin:auto;}
+ #hyde-homepage-motion .hp-orbit-line{inset:-12px;}#hyde-homepage-motion .hp-strip{padding:20px 22px;gap:14px;}
+ #hyde-homepage-motion .hp-strip span{font-size:11px;}#hyde-homepage-motion .hp-section{padding:43px 22px;}
+ #hyde-homepage-motion .hp-section-head{align-items:start;flex-direction:column;gap:15px;}#hyde-homepage-motion .hp-section-head h2{font-size:37px;letter-spacing:-1.8px;}
+ #hyde-homepage-motion .hp-tabs button{padding:8px 13px;font-size:12px;}
+ #hyde-homepage-motion .hp-collection-grid,#hyde-homepage-motion .hp-editorial-grid,#hyde-homepage-motion .hp-lab-grid{grid-template-columns:1fr;gap:29px;}
+ #hyde-homepage-motion .hp-collection-grid .hp-product:last-child{padding-top:0;}
+ #hyde-homepage-motion .hp-feature{grid-template-columns:1fr;gap:30px;}#hyde-homepage-motion .hp-feature h2{font-size:37px;}
+ #hyde-homepage-motion .hp-silver .hp-feature-photo{aspect-ratio:1.35;}
+ #hyde-homepage-motion .hp-resource-row{align-items:start;gap:14px;}#hyde-homepage-motion .hp-resource-row button{font-size:18px;}
+ #hyde-homepage-motion .hp-resource-row .hp-small{font-size:11px;text-align:right;max-width:85px;}
+ #hyde-homepage-motion .hp-footer h2{font-size:clamp(34px,10vw,48px);letter-spacing:-1.5px;}
+ #hyde-homepage-motion .hp-editorial-hero{padding:32px 22px 0;}#hyde-homepage-motion .hp-editorial-intro{align-items:start;}
+ #hyde-homepage-motion .hp-editorial-intro .hp-small{font-size:11px;text-align:right;max-width:95px;}
+ #hyde-homepage-motion .hp-editorial-hero h1{font-size:clamp(42px,16vw,64px);letter-spacing:-2px;line-height:1.02;margin-top:22px;}
+ #hyde-homepage-motion .hp-editorial-layout{grid-template-columns:1fr;gap:10px;margin-top:28px;}
+ #hyde-homepage-motion .hp-editorial-copy{padding:0 0 14px;order:2;}#hyde-homepage-motion .hp-editorial-product{aspect-ratio:1.15;}
+ #hyde-homepage-motion .hp-editorial-product img{padding:35px 10px 15px;}#hyde-homepage-motion .hp-editorial-ribbon{margin:25px 22px 0;height:160px;}
+ #hyde-homepage-motion .hp-editorial .hp-section-head h2{font-size:40px;}#hyde-homepage-motion .hp-editorial-stack .hp-product-image{aspect-ratio:1.5;}
+ #hyde-homepage-motion .hp-editorial .hp-feature h2{font-size:38px;}#hyde-homepage-motion .hp-process{grid-template-columns:1fr;gap:24px;}
+ #hyde-homepage-motion .hp-process article{display:grid;grid-template-columns:40px 1fr;column-gap:18px;}#hyde-homepage-motion .hp-process h3{margin:0 0 8px;}
+ #hyde-homepage-motion .hp-process p{grid-column:2;}#hyde-homepage-motion .hp-editorial .hp-footer h2{font-size:48px;}
+ #hyde-homepage-motion .hp-lab-hero{padding:32px 22px 35px;min-height:780px;}
+ #hyde-homepage-motion .hp-lab-hero h1{font-size:clamp(36px,15vw,70px);letter-spacing:-2px;margin-top:64px;}#hyde-homepage-motion .hp-lab-hero h1 span{transform:none;}
+ #hyde-homepage-motion .hp-sticker{right:16px;top:24px;width:82px;height:82px;font-size:11px;}
+ #hyde-homepage-motion .hp-lab-object{width:78%;right:10%;bottom:44px;aspect-ratio:1.1;}
+ #hyde-homepage-motion .hp-lab-caption{max-width:100%;margin-top:24px;max-width:280px;}#hyde-homepage-motion .hp-lab-caption .hp-link{font-size:12px;}
+ #hyde-homepage-motion .hp-marquee-track{font-size:22px;}#hyde-homepage-motion .hp-lab-grid .hp-product{padding:16px;border-radius:26px;}
+ #hyde-homepage-motion .hp-lab .hp-feature{padding:40px 22px;}#hyde-homepage-motion .hp-lab .hp-feature h2{font-size:40px;}
+ #hyde-homepage-motion .hp-lab .hp-footer h2{font-size:60px;letter-spacing:-3px;}
+}
+@media(prefers-reduced-motion:reduce){#hyde-homepage-motion .hp-page *{animation:none!important;transition:none!important;}#hyde-homepage-motion .hp-cinema-object{transform:none!important;}}
+</style>
+<section data-variant="金属光场" aria-label="金属光场首页" class="hp-stage">
+ <div class="hp-page hp-silver" data-style="silver">
+  <header class="hp-header"><a class="hp-brand" href="#top">HYDE</a><nav class="hp-nav" aria-label="Main navigation"><button class="cursor-interaction" data-scroll="collections">Products</button><button class="cursor-interaction" data-panel="guides">Guides & Support</button><button class="cursor-interaction" data-panel="downloads">Downloads</button><button class="cursor-interaction" data-scroll="factory">Our factory</button></nav><button class="hp-quote cursor-interaction" data-panel="quote">Request a quote <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="hp-icon-button hp-language cursor-interaction" data-panel="language">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="hp-icon-button hp-menu-trigger cursor-interaction" data-panel="menu" aria-label="Open menu"><i data-lucide="menu" aria-hidden="true"></i></button><div class="hp-mobile"><button class="cursor-interaction" data-scroll="collections">Products</button><button class="cursor-interaction" data-panel="downloads">Downloads</button><button class="cursor-interaction" data-panel="menu">Menu <i data-lucide="menu" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="language">EN</button></div><div class="hp-menu" role="region" aria-label="Navigation detail" hidden></div></header>
+  <div class="hp-cinematic" data-pointer-field><div class="hp-lightfield" aria-hidden="true"></div><div class="hp-cinema-copy"><p class="hp-eyebrow">Canton Hyland · Architectural hardware</p><h1>Small details.<br><em>Lasting<br>impact.</em></h1><p>Door hardware for the way spaces feel, work and open.</p><button class="hp-primary cursor-interaction" data-scroll="collections">Explore the collection <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><div class="hp-cinema-object"><div class="hp-orbit-line" aria-hidden="true"></div><figure><img data-image="darkSet" alt="Real HYDE silver lever lock set with latch, strike and screws" width="1254" height="1254"><figcaption>LEVER LOCK SETS</figcaption></figure></div></div>
+  <div class="hp-strip"><span>Products with purpose</span><span>OEM & private label</span><button class="hp-link cursor-interaction" data-panel="downloads">Get the catalog <i data-lucide="arrow-down-right" aria-hidden="true"></i></button></div>
+  <section class="hp-section hp-collection" data-area="collections"><div class="hp-section-head hp-reveal"><h2>Consider every<br>touchpoint.</h2><div class="hp-tabs" role="group" aria-label="Collection selection"><button class="cursor-interaction" aria-pressed="true" data-range="silver">Stainless steel</button><button class="cursor-interaction" aria-pressed="false" data-range="black">Matte black</button></div></div><div class="hp-collection-grid"><article class="hp-product hp-reveal"><figure class="hp-product-image"><img data-image="lever" data-range-image alt="9001 stainless-steel lever handle and escutcheon" width="1200" height="800"></figure><div class="hp-product-label"><div><h3 data-range-title>The 9001 lever</h3><p class="hp-small" data-range-description>Stainless steel · Lever handles</p></div><button class="cursor-interaction" data-product="lever" aria-label="View lever handle details"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></article><article class="hp-product hp-reveal"><figure class="hp-product-image"><img data-image="darkSet" alt="Complete real lever lock set" width="1254" height="1254"></figure><div class="hp-product-label"><div><h3>A coordinated set.</h3><p class="hp-small">Lever, latch and strike</p></div><button class="cursor-interaction" data-product="set" aria-label="View lever lock set details"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></article></div></section>
+  <section class="hp-section hp-feature" data-area="factory"><figure class="hp-feature-photo hp-reveal"><img data-image="factory" alt="Worker and CNC machine in the confirmed HYDE factory" width="1776" height="1184"></figure><div class="hp-reveal"><p class="hp-eyebrow">Behind every detail</p><h2>Made with<br>intention.</h2><p>From your drawing to the hardware on the door. Meet the people and processes behind HYDE.</p><button class="hp-link cursor-interaction" data-panel="factory">Inside our factory <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></section>
+  <section class="hp-section hp-reveal"><div class="hp-section-head"><h2>Everything you need<br>to specify.</h2><p class="hp-small">A clear next step.</p></div><div class="hp-resource-row"><button class="cursor-interaction" data-panel="downloads">Product catalog <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><span class="hp-small">HYDE · 2026</span></div><div class="hp-resource-row"><button class="cursor-interaction" data-panel="guides">Guides & technical documents <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><span class="hp-small">Selection & specification</span></div></section>
+  <footer class="hp-footer"><p class="hp-eyebrow">Your next project</p><h2>Let's open<br>possibilities.</h2><button class="hp-link cursor-interaction" data-panel="quote">Talk to our export team <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><div class="hp-footer-bottom"><span class="hp-brand">HYDE</span><span>Canton Hyland Hardware</span><button class="hp-motion cursor-interaction" data-motion-toggle><i data-lucide="pause" aria-hidden="true"></i><span>Pause motion</span></button></div></footer>
+ </div>
+</section>
+<section data-variant="建筑杂志" aria-label="建筑杂志首页" class="hp-stage" hidden>
+ <div class="hp-page hp-editorial" data-style="editorial">
+  <header class="hp-header"><a class="hp-brand" href="#top">HYDE</a><nav class="hp-nav" aria-label="Main navigation"><button class="cursor-interaction" data-scroll="collections">Collections</button><button class="cursor-interaction" data-scroll="factory">Our story</button><button class="cursor-interaction" data-panel="guides">Resources</button><button class="cursor-interaction" data-panel="downloads">Downloads</button></nav><button class="hp-quote cursor-interaction" data-panel="quote">Let's talk <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="hp-icon-button hp-language cursor-interaction" data-panel="language">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="hp-icon-button hp-menu-trigger cursor-interaction" data-panel="menu" aria-label="Open menu"><i data-lucide="menu" aria-hidden="true"></i></button><div class="hp-mobile"><button class="cursor-interaction" data-scroll="collections">Collections</button><button class="cursor-interaction" data-panel="downloads">Downloads</button><button class="cursor-interaction" data-panel="menu">Menu <i data-lucide="menu" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="language">EN</button></div><div class="hp-menu" role="region" aria-label="Navigation detail" hidden></div></header>
+  <section class="hp-editorial-hero"><div class="hp-editorial-intro"><p class="hp-eyebrow">Hardware for considered spaces.</p><span class="hp-small">Canton Hyland<br>Products · People · Process</span></div><h1 class="hp-reveal">Good hardware.<br><em>Great spaces.</em></h1><div class="hp-editorial-layout"><div class="hp-editorial-copy"><p>The smallest detail can shape the whole experience. Explore hardware for homes, hospitality and commercial spaces.</p><button class="hp-link cursor-interaction" data-scroll="collections">Discover the collection <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><figure class="hp-editorial-product hp-reveal"><img data-image="lever" alt="The actual 9001 stainless steel lever handle and escutcheon" width="1200" height="800"></figure></div></section>
+  <figure class="hp-editorial-ribbon hp-reveal"><img data-image="factory" alt="Real HYDE CNC manufacturing workshop" width="1776" height="1184"><figcaption>Inside the workshop · CNC machining</figcaption></figure>
+  <section class="hp-section" data-area="collections"><div class="hp-section-head hp-reveal"><h2>A collection of<br>small essentials.</h2><div class="hp-tabs" role="group" aria-label="Collection selection"><button class="cursor-interaction" aria-pressed="true" data-range="silver">Silver</button><button class="cursor-interaction" aria-pressed="false" data-range="black">Black</button></div></div><div class="hp-editorial-grid"><article class="hp-product hp-reveal"><figure class="hp-product-image"><img data-image="lever" data-range-image alt="9001 stainless steel lever handle and escutcheon" width="1200" height="800"></figure><div class="hp-product-label"><div><h3 data-range-title>The 9001 lever</h3><p class="hp-small" data-range-description>Stainless steel · Lever handles</p></div><button class="cursor-interaction" data-product="lever" aria-label="View lever handle details"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></article><div class="hp-editorial-stack"><article class="hp-product hp-reveal"><figure class="hp-product-image"><img data-image="blackSet" alt="Actual black tubular lever lock set from the client's photo" width="1000" height="1000"></figure><div class="hp-product-label"><div><h3>Another shade.</h3><p class="hp-small">Black tubular lever set</p></div><button class="cursor-interaction" data-product="black" aria-label="View black lever set details"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></article><div><p class="hp-eyebrow">Specifications, made clear.</p><div class="hp-resource-row"><button class="cursor-interaction" data-panel="downloads">The catalog <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><div class="hp-resource-row"><button class="cursor-interaction" data-panel="guides">Technical guides <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></div></div></div></section>
+  <section class="hp-section hp-feature" data-area="factory"><div class="hp-reveal"><p class="hp-eyebrow">From the workshop</p><h2>A human touch.<br>A precise process.</h2><p>Your drawing, your finish, your name. Talk to our team about OEM tooling and private-label hardware.</p><button class="hp-link cursor-interaction" data-panel="factory">Meet HYDE <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><figure class="hp-feature-photo hp-reveal"><img data-image="factory" alt="HYDE worker at the CNC machine" width="1776" height="1184"></figure></section>
+  <section class="hp-section hp-reveal"><div class="hp-section-head"><h2>Let's find<br>your way in.</h2></div><div class="hp-process"><article><span>01</span><h3>Explore the range.</h3><p class="hp-small">Start with a collection or the product catalog.</p></article><article><span>02</span><h3>Share the detail.</h3><p class="hp-small">Bring a drawing, sample or product reference.</p></article><article><span>03</span><h3>Talk to export.</h3><p class="hp-small">Discuss your market and project with our team.</p></article></div></section>
+  <footer class="hp-footer"><p class="hp-eyebrow">Made for your next chapter.</p><h2>Good things<br>start with a detail.</h2><button class="hp-link cursor-interaction" data-panel="quote">Start a conversation <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><div class="hp-footer-bottom"><span class="hp-brand">HYDE</span><button class="cursor-interaction" data-panel="downloads">Download catalog</button><button class="hp-motion cursor-interaction" data-motion-toggle><i data-lucide="pause" aria-hidden="true"></i><span>Pause motion</span></button></div></footer>
+ </div>
+</section>
+<section data-variant="色彩实验室" aria-label="色彩实验室首页" class="hp-stage" hidden>
+ <div class="hp-page hp-lab" data-style="lab">
+  <header class="hp-header"><a class="hp-brand" href="#top">HYDE</a><nav class="hp-nav" aria-label="Main navigation"><button class="cursor-interaction" data-scroll="collections">Explore</button><button class="cursor-interaction" data-scroll="factory">Made by HYDE</button><button class="cursor-interaction" data-panel="downloads">Downloads</button><button class="cursor-interaction" data-panel="guides">Support</button></nav><button class="hp-quote cursor-interaction" data-panel="quote">Let's make it happen <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="hp-icon-button hp-language cursor-interaction" data-panel="language">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="hp-icon-button hp-menu-trigger cursor-interaction" data-panel="menu" aria-label="Open menu"><i data-lucide="menu" aria-hidden="true"></i></button><div class="hp-mobile"><button class="cursor-interaction" data-scroll="collections">Products</button><button class="cursor-interaction" data-panel="downloads">Downloads</button><button class="cursor-interaction" data-panel="menu">Menu <i data-lucide="menu" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="language">EN</button></div><div class="hp-menu" role="region" aria-label="Navigation detail" hidden></div></header>
+  <section class="hp-lab-hero"><p class="hp-eyebrow">Door hardware. New perspectives.</p><div class="hp-sticker" aria-hidden="true">Small detail.<br>Big energy.</div><h1>MAKE AN<br><span>ENTRANCE.</span></h1><div class="hp-lab-caption"><p>A new way to look at everyday essentials. Discover HYDE door hardware.</p><button class="hp-link cursor-interaction" data-scroll="collections">Explore the possibilities <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><figure class="hp-lab-object"><img data-image="lever" alt="Real 9001 stainless-steel lever and escutcheon" width="1200" height="800"></figure></section>
+  <div class="hp-marquee" aria-label="Door hardware, OEM, private label and export"><div class="hp-marquee-track" aria-hidden="true"><span>DOOR HARDWARE / OEM / PRIVATE LABEL / EXPORT /</span><span>DOOR HARDWARE / OEM / PRIVATE LABEL / EXPORT /</span></div></div>
+  <section class="hp-section" data-area="collections"><div class="hp-section-head hp-reveal"><h2>Your next<br>opening.</h2><div class="hp-tabs" role="group" aria-label="Collection selection"><button class="cursor-interaction" aria-pressed="true" data-range="silver">Silver</button><button class="cursor-interaction" aria-pressed="false" data-range="black">Black</button></div></div><div class="hp-lab-grid"><article class="hp-product hp-reveal"><figure class="hp-product-image"><img data-image="lever" data-range-image alt="9001 stainless steel lever and escutcheon" width="1200" height="800"></figure><div class="hp-product-label"><div><h3 data-range-title>The 9001 lever</h3><p class="hp-small" data-range-description>Stainless steel · Lever handles</p></div><button class="cursor-interaction" data-product="lever" aria-label="View lever handle details"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></article><article class="hp-product hp-reveal"><figure class="hp-product-image"><img data-image="blackSet" alt="Actual black tubular lever lock set" width="1000" height="1000"></figure><div class="hp-product-label"><div><h3>A bold alternative.</h3><p class="hp-small">Black tubular lever set</p></div><button class="cursor-interaction" data-product="black" aria-label="View black lever set details"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></article></div></section>
+  <section class="hp-feature" data-area="factory"><figure class="hp-feature-photo hp-reveal"><img data-image="factory" alt="Real CNC machine and operator at HYDE" width="1776" height="1184"></figure><div class="hp-reveal"><p class="hp-eyebrow">Real people. Real making.</p><h2>From a good idea<br>to your door.</h2><p>Bring the drawing. Start the conversation. Explore manufacturing and private-label hardware with HYDE.</p><button class="hp-link cursor-interaction" data-panel="factory">Meet the makers <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></section>
+  <section class="hp-section hp-reveal"><div class="hp-section-head"><h2>The details.<br>All in one place.</h2></div><div class="hp-resource-row"><button class="cursor-interaction" data-panel="downloads">Grab the catalog <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><span class="hp-small">HYDE 2026</span></div><div class="hp-resource-row"><button class="cursor-interaction" data-panel="guides">Find your technical guide <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><span class="hp-small">Dimensions · Finishes · Fit</span></div></section>
+  <footer class="hp-footer"><p class="hp-eyebrow">The next move is yours.</p><h2>LET'S<br>OPEN IT UP.</h2><button class="hp-link cursor-interaction" data-panel="quote">Talk to HYDE <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><div class="hp-footer-bottom"><span class="hp-brand">HYDE</span><button class="cursor-interaction" data-panel="downloads">Download catalog</button><button class="hp-motion cursor-interaction" data-motion-toggle><i data-lucide="pause" aria-hidden="true"></i><span>Pause motion</span></button></div></footer>
+ </div>
+</section>
+<template data-asset="lever">__ASSET_LEVER__</template>
+<template data-asset="darkSet">__ASSET_DARK_SET__</template>
+<template data-asset="blackSet">__ASSET_BLACK_SET__</template>
+<template data-asset="factory">__ASSET_FACTORY__</template>
+<template data-panel-template="downloads"><h3>The HYDE catalog.</h3><p>Explore the 2026 product catalog and the documents behind each range.</p><div class="hp-menu-grid"><button class="cursor-interaction" data-panel="catalog">Product catalog 2026 <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="guides">Technical documents <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="quote">Ask for a product file <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></template>
+<template data-panel-template="catalog"><h3>HYDE Product Catalog 2026</h3><p>Product families, model references and published specifications.</p><div class="hp-menu-grid"><button class="cursor-interaction" data-scroll="collections">Explore the collection <i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="guides">Find technical support <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="quote">Request the catalog from export <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></template>
+<template data-panel-template="guides"><h3>Specify with confidence.</h3><div class="hp-menu-grid"><div><button class="cursor-interaction" data-panel="fit">Dimensions & fit</button><p>Technical drawings and cylinder selection.</p></div><div><button class="cursor-interaction" data-panel="standards">Standards & reports</button><p>Read the documented scope for each model.</p></div><div><button class="cursor-interaction" data-panel="finishes">Finishes & ordering</button><p>Finish codes, samples and export questions.</p></div></div></template>
+<template data-panel-template="fit"><h3>Start with the dimensions.</h3><p>Backset, center distance and door thickness guide product selection. Share a drawing or model reference with the export team.</p><button class="hp-link cursor-interaction" data-panel="quote">Talk to an export engineer <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></template>
+<template data-panel-template="standards"><h3>Check the model. Read the scope.</h3><p>Use the published report for the exact product you are specifying.</p><button class="hp-link cursor-interaction" data-panel="quote">Request a model document <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></template>
+<template data-panel-template="finishes"><h3>Make the finish part of the brief.</h3><p>Share your product reference and finish requirements before ordering.</p><button class="hp-link cursor-interaction" data-panel="quote">Discuss your requirements <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></template>
+<template data-panel-template="factory"><h3>People behind the hardware.</h3><p>Explore HYDE manufacturing, CNC machining, OEM tooling and private-label hardware.</p><button class="hp-link cursor-interaction" data-panel="quote">Start your OEM conversation <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></template>
+<template data-panel-template="quote"><h3>Let's work on your next project.</h3><p>Share a product reference, drawing or sample with our export team.</p><div class="hp-menu-grid"><div><p>Export & technical support</p><strong>tec@cantonlock.com</strong></div><button class="cursor-interaction" data-panel="downloads">Find the catalog <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="guides">Prepare your specification <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></template>
+<template data-panel-template="menu"><h3>Find your way through HYDE.</h3><div class="hp-menu-grid"><button class="cursor-interaction" data-scroll="collections">Products <i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="downloads">Downloads <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="guides">Guides & Support <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-scroll="factory">Our factory <i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="quote">Request a quote <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-panel="language">Language <i data-lucide="globe" aria-hidden="true"></i></button></div></template>
+<template data-panel-template="language">
+ <h3>Website languages.</h3><p>This design preview is in English.</p>
+ <div class="hp-tabs" role="group" aria-label="Language menu preview"><button class="cursor-interaction" data-language="EN" aria-pressed="true">English</button><button disabled>Español</button><button disabled>Português</button><button disabled>Deutsch</button><button disabled>Français</button><button disabled>日本語</button><button disabled>한국어</button><button disabled>Türkçe</button><button disabled>Русский</button><button disabled>العربية</button></div>
+</template>
+<template data-product-template="lever"><h3>The 9001 lever.</h3><p>Stainless steel lever and escutcheon, shown in the actual product photograph.</p><div class="hp-menu-grid"><button class="cursor-interaction" data-panel="downloads">Find catalog information</button><button class="cursor-interaction" data-panel="fit">Check the fit</button><button class="cursor-interaction" data-panel="quote">Ask about this product</button></div></template>
+<template data-product-template="black"><h3>Black tubular lever set.</h3><p>Explore the real black lever set shown in our product library.</p><div class="hp-menu-grid"><button class="cursor-interaction" data-panel="downloads">Find catalog information</button><button class="cursor-interaction" data-panel="finishes">Discuss the finish</button><button class="cursor-interaction" data-panel="quote">Ask about this product</button></div></template>
+<template data-product-template="set"><h3>Lever lock sets.</h3><p>Lever, latch, strike and fixings shown together in the client's original product photograph.</p><div class="hp-menu-grid"><button class="cursor-interaction" data-panel="downloads">Explore the catalog</button><button class="cursor-interaction" data-panel="fit">Check your door requirements</button><button class="cursor-interaction" data-panel="quote">Ask about this set</button></div></template>
+<script>
+(() => {
+ const root = document.getElementById('hyde-homepage-motion');
+ if (!root) return;
+ const images = Object.fromEntries(Array.from(root.querySelectorAll('template[data-asset]')).map(template => [template.dataset.asset, template.content.textContent.trim()]));
+ root.querySelectorAll('img[data-image]').forEach(img => { img.src = images[img.dataset.image]; });
+ root.querySelectorAll('.hp-page').forEach(page => {
+  const toolbar = document.createElement('div'); toolbar.className = 'hp-motion-top';
+  toolbar.append(page.querySelector('[data-motion-toggle]').cloneNode(true));
+  page.querySelector('.hp-header').after(toolbar);
+  const group = page.querySelector('[data-range]').parentElement;
+  group.setAttribute('aria-label','Featured product selection');
+  const label = document.createElement('span'); label.className = 'hp-small'; label.textContent = 'Featured product'; group.prepend(label);
+  page.querySelectorAll('[data-range]').forEach(button => { button.textContent = button.dataset.range === 'black' ? 'Black lever set' : '9001 lever'; });
+  page.querySelector('[data-range-title]').parentElement.setAttribute('aria-live','polite');
+ });
+ const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+ const motion = { enabled: !reduced.matches, intensity: 1 };
+ let lastTrigger = null;
+ const updateMotion = () => {
+  root.dataset.motion = motion.enabled && !reduced.matches ? 'on' : 'off';
+  root.querySelectorAll('.hp-page').forEach(page => page.style.setProperty('--energy', String(motion.intensity)));
+  root.querySelectorAll('[data-motion-toggle] span').forEach(label => { label.textContent = reduced.matches ? 'Reduced motion' : root.dataset.motion === 'on' ? 'Pause motion' : 'Resume motion'; });
+  root.querySelectorAll('[data-motion-toggle]').forEach(button => { button.setAttribute('aria-pressed', String(root.dataset.motion === 'off')); button.disabled = reduced.matches; });
+ };
+ updateMotion();
+ reduced.addEventListener('change', updateMotion);
+ const syncVisibility = () => { root.dataset.suspended = String(document.hidden); };
+ document.addEventListener('visibilitychange', syncVisibility);
+ syncVisibility();
+ const closeMenu = page => {
+  const menu = page.querySelector('.hp-menu');
+  menu.hidden = true;
+  page.querySelectorAll('[data-panel][aria-expanded]').forEach(button => button.setAttribute('aria-expanded','false'));
+ };
+ const openMenu = (page, template, trigger) => {
+  if (!template) return;
+  const menu = page.querySelector('.hp-menu');
+  page.querySelectorAll('[data-panel][aria-expanded]').forEach(button => button.setAttribute('aria-expanded','false'));
+  if (!menu.contains(trigger)) lastTrigger = trigger;
+  menu.replaceChildren(template.content.cloneNode(true));
+  const close = document.createElement('button');
+  close.type = 'button'; close.className = 'hp-icon-button hp-menu-close cursor-interaction'; close.dataset.closeMenu = 'true'; close.setAttribute('aria-label','Close menu');
+  const icon = document.createElement('i'); icon.dataset.lucide = 'x'; icon.setAttribute('aria-hidden','true'); close.append(icon); menu.prepend(close);
+  menu.hidden = false;
+  if (trigger.dataset.panel) trigger.setAttribute('aria-expanded','true');
+  if (globalThis.lucide) lucide.createIcons({attrs:{width:16,height:16}});
+  page.querySelector('.hp-header').scrollIntoView({behavior:root.dataset.motion === 'on' ? 'smooth' : 'instant',block:'start'});
+  close.focus({preventScroll:true});
+ };
+ root.querySelectorAll('.hp-header [data-panel]').forEach(button => button.setAttribute('aria-expanded','false'));
+ root.addEventListener('click', event => {
+  const trigger = event.target.closest('button,a');
+  if (!trigger || !root.contains(trigger)) return;
+  const page = trigger.closest('.hp-page');
+  if (!page) return;
+  if (trigger.tagName === 'A') { event.preventDefault(); page.scrollIntoView({behavior:root.dataset.motion==='on'?'smooth':'instant',block:'start'}); return; }
+  if (trigger.hasAttribute('data-motion-toggle')) { motion.enabled = !motion.enabled; updateMotion(); return; }
+  if (trigger.hasAttribute('data-close-menu')) { closeMenu(page); if(lastTrigger && page.contains(lastTrigger)) lastTrigger.focus({preventScroll:true}); lastTrigger=null; return; }
+  if (trigger.dataset.panel) { openMenu(page,root.querySelector('template[data-panel-template="'+trigger.dataset.panel+'"]'),trigger); return; }
+  if (trigger.dataset.product) { const range = page.querySelector('[data-range="black"][aria-pressed="true"]'); const product = trigger.dataset.product === 'lever' && range ? 'black' : trigger.dataset.product; openMenu(page,root.querySelector('template[data-product-template="'+product+'"]'),trigger); return; }
+  if (trigger.dataset.scroll) { closeMenu(page); const destination = page.querySelector('[data-area="'+trigger.dataset.scroll+'"]'); if(destination) destination.scrollIntoView({behavior:root.dataset.motion==='on'?'smooth':'instant',block:'start'}); return; }
+  if (trigger.dataset.language) { page.querySelectorAll('.hp-language').forEach(button => button.childNodes[0].textContent = trigger.dataset.language+' '); const mobileLanguage = page.querySelector('.hp-mobile [data-panel="language"]'); if(mobileLanguage) mobileLanguage.textContent=trigger.dataset.language; closeMenu(page); if(lastTrigger && page.contains(lastTrigger)) lastTrigger.focus({preventScroll:true}); return; }
+  if (trigger.dataset.range) {
+   const black = trigger.dataset.range === 'black';
+   page.querySelectorAll('[data-range]').forEach(button=>button.setAttribute('aria-pressed',String(button===trigger)));
+   const image = page.querySelector('[data-range-image]');
+   if(image){image.src=images[black?'blackSet':'lever'];image.alt=black?'Actual black tubular lever lock set':'9001 stainless steel lever and escutcheon';image.classList.remove('hp-replacing');void image.offsetWidth;image.classList.add('hp-replacing');}
+   page.querySelector('[data-range-title]').textContent=black?'Black tubular lever set':'The 9001 lever';
+   page.querySelector('[data-range-description]').textContent=black?'Tubular lever sets · Black finish':'Stainless steel · Lever handles';
+   const productButton = page.querySelector('[data-range-title]').closest('.hp-product').querySelector('[data-product]');
+   productButton.dataset.product = black ? 'black' : 'lever';
+   productButton.setAttribute('aria-label',black?'View featured black lever set details':'View lever handle details');
+  }
+ });
+ root.addEventListener('keydown', event => { if(event.key==='Escape'){const page=event.target.closest('.hp-page');if(page&&!page.querySelector('.hp-menu').hidden){event.preventDefault();closeMenu(page);if(lastTrigger&&page.contains(lastTrigger))lastTrigger.focus({preventScroll:true});lastTrigger=null;}} });
+ root.querySelectorAll('[data-pointer-field]').forEach(field => {
+  let frame = 0;
+  field.addEventListener('pointermove', event => {
+   if(root.dataset.motion!=='on'||event.pointerType==='touch')return;
+   const bounds=field.getBoundingClientRect(),x=(event.clientX-bounds.left)/bounds.width,y=(event.clientY-bounds.top)/bounds.height;
+   if(frame)cancelAnimationFrame(frame);
+   frame=requestAnimationFrame(()=>{field.style.setProperty('--pointer-x',`${x*100}%`);field.style.setProperty('--pointer-y',`${y*100}%`);field.style.setProperty('--shift-x',`${(x-.5)*12}px`);field.style.setProperty('--shift-y',`${(y-.5)*10}px`);frame=0;});
+  });
+  field.addEventListener('pointerleave',()=>{if(frame)cancelAnimationFrame(frame);frame=0;field.style.setProperty('--shift-x','0px');field.style.setProperty('--shift-y','0px');});
+ });
+ if(globalThis.IntersectionObserver){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}}),{threshold:.12});root.querySelectorAll('.hp-reveal').forEach(element=>observer.observe(element));}
+ const fitStage = () => {
+  const width = root.querySelector('.hp-stage:not([hidden])').getBoundingClientRect().width;
+  if (!width) return;
+  const measure = document.createElement('div'); measure.className='hp-measure';measure.inert=true;measure.setAttribute('aria-hidden','true');measure.style.width=`${width}px`;
+  root.querySelectorAll(':scope > .hp-stage > .hp-page').forEach(page=>{const copy=page.cloneNode(true);copy.querySelector('.hp-menu').hidden=true;measure.append(copy);});
+  root.append(measure);
+  const height = Math.ceil(Math.max(...Array.from(measure.children).map(page=>page.getBoundingClientRect().height)));
+  measure.remove();
+  root.style.setProperty('--stage-height',`${height}px`);
+ };
+ fitStage();
+ if(document.fonts) document.fonts.ready.then(fitStage);
+ root.querySelectorAll('img').forEach(img=>{if(!img.complete)img.addEventListener('load',fitStage,{once:true});});
+ if(globalThis.ResizeObserver){let lastWidth=0;new ResizeObserver(entries=>{const width=entries[0].contentRect.width;if(Math.abs(width-lastWidth)>1){lastWidth=width;fitStage();}}).observe(root);}
+ if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:updateMotion});tweak.addToggle(motion,'enabled',{label:'播放动效'});tweak.addSlider(motion,'intensity',{label:'光影跟随强度',min:0,max:1.5,step:.1});}
+})();
+</script>
+</div>
