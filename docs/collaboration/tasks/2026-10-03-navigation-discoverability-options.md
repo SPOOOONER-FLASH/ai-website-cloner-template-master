@@ -34,3 +34,15 @@ Primary references verified on 2026-10-03:
 - https://www.w3.org/WAI/tutorials/menus/flyout/ — visible submenu states, keyboard activation and delayed close on pointer exit.
 
 Next useful review: choose a navigation direction, then test desktop/mobile layouts with actual localized labels and use recorded event data to validate which support destinations need the strongest exposure.
+
+## Inline read repair — 2026-10-03
+
+The first two inline references failed with `Invalid visualization read request`. The fragment itself renders and its three variants switch correctly. Do not repeat HTML redesign or assume that a successful local preview verifies the conversation's file reader.
+
+Read-only inspection of Codex 26.930.2377's installed `app.asar` found that `qKe.read` in `.vite/build/main-Dn18kdv3.js` checks the regular file and every parent directory up to the selected authorized boundary with symlink following disabled. Any symbolic link or non-directory parent triggers this exact error. Its normalization guard accepts both Windows slash styles; changing slashes is not a supported fix.
+
+`C:\Users\86132\.codex\visualizations` is a Junction targeting `E:\cantonlock-c-migration\codex-visualizations`. Copying to the apparent C visualization root still traverses that Junction. Reproducing the installed guards with `.codex` as boundary rejects that chain. The actual failed request's selected boundary was not inspected.
+
+Keep the canonical proposal on E in `docs/design-references/2026-10-03-navigation-options.html`. For this conversation, use the identical 21,279-byte display copy at `C:\Users\86132\Downloads\cantonlock\tmp\codex-inline-nav\hyde-navigation-options.html`: this is under the explicitly authorized workspace, and all parents to that boundary are ordinary directories. The path, filename and no-symlink guards pass. SHA-256 of both copies is `298ef6c372ead7577e10f0f5066545fa97a59f431d7ad15a5006a7585ee1224f`; the bundled renderer accepts the copy. Do not change the global Junction or migrate the project back to C. Only this small display copy is needed.
+
+These checks establish that the replacement satisfies the inspected reader rules; successful conversation rendering can only be confirmed when the final response is displayed. No production navigation or release export changed.
