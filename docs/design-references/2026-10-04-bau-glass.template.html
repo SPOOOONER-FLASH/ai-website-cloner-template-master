@@ -1,0 +1,75 @@
+<div class="viz-dotted-background">
+  <div id="hyde-bau-glass" aria-label="HYDE 展会通知栏" data-glass="on">
+    <div class="previewSpace">
+      <section class="layout band" lang="en" aria-label="HYDE at BAU 2027" data-bau-info-band>
+        <div class="col-content bandInner">
+          <p class="bandName">HYDE at <bdi dir="ltr">BAU 2027</bdi></p>
+          <div class="bandFacts">
+            <bdi>11–15 Jan 2027</bdi>
+            <bdi>Messe München</bdi>
+            <span class="standFacts">Hall <bdi dir="ltr">C4</bdi> · Stand <bdi dir="ltr">523</bdi></span>
+          </div>
+          <div class="actions">
+            <a class="primaryLink cursor-interaction" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener noreferrer">Book a meeting <i class="arrow" data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a class="secondaryLink cursor-interaction" href="https://cantonlock.com/de/bau-2027/" lang="de" target="_blank" rel="noopener noreferrer">Deutsch</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<style>
+#hyde-bau-glass {
+  --color-surface: light-dark(#fff, #171715);
+  --color-surface-alt: light-dark(#f5f5f7, #252523);
+  --color-ink: light-dark(#11110f, #f5f5f3);
+  --color-ink-secondary: light-dark(#6e6e73, #b5b5bc);
+  --color-line: light-dark(#deddd8, #4d4d48);
+  --font-sans: Archivo, Arial, sans-serif;
+  color: var(--color-ink);
+  background: var(--color-surface);
+}
+#hyde-bau-glass *,
+#hyde-bau-glass *::before,
+#hyde-bau-glass *::after { box-sizing: border-box; }
+#hyde-bau-glass .previewSpace { padding-block: 54px 38px; }
+#hyde-bau-glass .layout { padding-inline: clamp(20px, 4vw, 64px); }
+#hyde-bau-glass .col-content { max-inline-size: 1328px; margin-inline: auto; }
+__BAND_CSS__
+#hyde-bau-glass[data-glass="off"] .band {
+  background: var(--color-surface-alt);
+  border-color: var(--color-line);
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+#hyde-bau-glass[data-glass="off"] .bandFacts,
+#hyde-bau-glass[data-glass="off"] .secondaryLink { color: var(--color-ink-secondary); }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('hyde-bau-glass');
+  const state = { glass: true };
+  function restore(snapshot) {
+    const value = snapshot?.privateContent?.glass;
+    if (typeof value === 'boolean') state.glass = value;
+  }
+  function render() { root.dataset.glass = state.glass ? 'on' : 'off'; }
+  restore(window.openai?.widgetState);
+  render();
+  window.addEventListener('openai:set_globals', (event) => {
+    restore(event.detail?.globals?.widgetState);
+    render();
+  });
+  if (globalThis.Tweak) {
+    const tweak = new Tweak({ container: root, onChange: () => {
+      render();
+      window.openai?.setWidgetState({
+        modelContent: { exhibitionBand: state.glass ? 'frosted glass' : 'original solid' },
+        privateContent: { glass: state.glass }
+      })?.catch(() => {});
+    } });
+    tweak.addToggle(state, 'glass', { label: '磨砂玻璃', reference: 'exhibitionBand.glass' });
+  }
+})();
+</script>

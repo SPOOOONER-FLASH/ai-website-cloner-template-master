@@ -1,0 +1,316 @@
+<div class="viz-dotted-background">
+  <div id="hyde-bau-glass" aria-label="HYDE 展会通知栏" data-glass="on">
+    <div class="previewSpace">
+      <section class="layout band" lang="en" aria-label="HYDE at BAU 2027" data-bau-info-band>
+        <div class="col-content bandInner">
+          <p class="bandName">HYDE at <bdi dir="ltr">BAU 2027</bdi></p>
+          <div class="bandFacts">
+            <bdi>11–15 Jan 2027</bdi>
+            <bdi>Messe München</bdi>
+            <span class="standFacts">Hall <bdi dir="ltr">C4</bdi> · Stand <bdi dir="ltr">523</bdi></span>
+          </div>
+          <div class="actions">
+            <a class="primaryLink cursor-interaction" href="https://cantonlock.com/bau-2027/" target="_blank" rel="noopener noreferrer">Book a meeting <i class="arrow" data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a class="secondaryLink cursor-interaction" href="https://cantonlock.com/de/bau-2027/" lang="de" target="_blank" rel="noopener noreferrer">Deutsch</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<style>
+#hyde-bau-glass {
+  --color-surface: light-dark(#fff, #171715);
+  --color-surface-alt: light-dark(#f5f5f7, #252523);
+  --color-ink: light-dark(#11110f, #f5f5f3);
+  --color-ink-secondary: light-dark(#6e6e73, #b5b5bc);
+  --color-line: light-dark(#deddd8, #4d4d48);
+  --font-sans: Archivo, Arial, sans-serif;
+  color: var(--color-ink);
+  background: var(--color-surface);
+}
+#hyde-bau-glass *,
+#hyde-bau-glass *::before,
+#hyde-bau-glass *::after { box-sizing: border-box; }
+#hyde-bau-glass .previewSpace { padding-block: 54px 38px; }
+#hyde-bau-glass .layout { padding-inline: clamp(20px, 4vw, 64px); }
+#hyde-bau-glass .col-content { max-inline-size: 1328px; margin-inline: auto; }
+#hyde-bau-glass .band,
+#hyde-bau-glass .showcase {
+  color: var(--color-ink, #11110f);
+  font-family: var(--font-sans);
+  min-inline-size: 0;
+}
+
+#hyde-bau-glass .band {
+  background: var(--color-surface-alt, #f5f5f7);
+  border-block: 1px solid var(--color-line, #deddd8);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--color-surface, #fff) 85%, transparent),
+    0 5px 18px color-mix(in srgb, var(--color-ink, #11110f) 4%, transparent);
+}
+
+/* Keep the normal-flow dimensions; only the exhibition band's material changes. */
+@supports ((backdrop-filter: blur(16px)) or (-webkit-backdrop-filter: blur(16px))) {
+  #hyde-bau-glass .band {
+    background: linear-gradient(
+      115deg,
+      color-mix(in srgb, var(--color-surface, #fff) 84%, transparent),
+      color-mix(in srgb, var(--color-surface-alt, #f5f5f7) 84%, transparent)
+    );
+    border-color: color-mix(in srgb, var(--color-line, #deddd8) 55%, transparent);
+    -webkit-backdrop-filter: blur(16px) saturate(115%);
+    backdrop-filter: blur(16px) saturate(115%);
+  }
+}
+
+#hyde-bau-glass .band .bandFacts,
+#hyde-bau-glass .band .secondaryLink {
+  color: color-mix(in srgb, var(--color-ink-secondary, #6e6e73) 70%, var(--color-ink, #11110f));
+}
+
+#hyde-bau-glass .bandInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 2px;
+  min-block-size: 72px;
+  padding-block: 10px;
+}
+
+#hyde-bau-glass .bandName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+#hyde-bau-glass .bandFacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+  color: var(--color-ink-secondary, #6e6e73);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#hyde-bau-glass .standFacts {
+  display: inline;
+}
+
+/*
+  Below 1032px the stand line always takes its own row (2026-09-30). It used to wrap only
+  once Archivo replaced the fallback font — wider glyphs pushed "Hall C4 · Stand 523" to a
+  second line, the band grew 113px → 136px and everything under it jumped 23px. Measured
+  CLS 0.206 per page view on a 390px phone, on every page that carries the band. A fixed
+  two-line layout is the same height before and after the font swap.
+*/
+@media (max-width: 1031px) {
+  #hyde-bau-glass .bandFacts .standFacts {
+    flex-basis: 100%;
+  }
+}
+
+#hyde-bau-glass .actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 24px;
+  min-inline-size: 0;
+}
+
+#hyde-bau-glass .primaryLink,
+#hyde-bau-glass .secondaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding-block: 8px;
+  color: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  text-decoration: none;
+  text-underline-offset: 5px;
+}
+
+#hyde-bau-glass .primaryLink {
+  font-weight: 600;
+}
+
+#hyde-bau-glass .secondaryLink {
+  color: var(--color-ink-secondary, #6e6e73);
+  font-size: 14px;
+}
+
+#hyde-bau-glass .primaryLink:hover,
+#hyde-bau-glass .secondaryLink:hover {
+  text-decoration: underline;
+}
+
+#hyde-bau-glass .primaryLink:focus-visible,
+#hyde-bau-glass .secondaryLink:focus-visible {
+  outline: 2px solid var(--color-ink, #11110f);
+  outline-offset: 4px;
+}
+
+#hyde-bau-glass .arrow {
+  flex: none;
+}
+
+#hyde-bau-glass .band:dir(rtl) .arrow,
+#hyde-bau-glass .showcase:dir(rtl) .arrow {
+  transform: scaleX(-1);
+}
+
+#hyde-bau-glass .showcase {
+  background: var(--color-surface, #fff);
+}
+
+#hyde-bau-glass .showcaseInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  min-inline-size: 0;
+  padding-block: 36px;
+  border-block: 1px solid var(--color-line, #deddd8);
+}
+
+#hyde-bau-glass .introduction {
+  min-inline-size: 0;
+}
+
+#hyde-bau-glass .title {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+#hyde-bau-glass .showcaseFacts {
+  margin-block-start: 22px;
+  color: var(--color-ink-secondary, #6e6e73);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#hyde-bau-glass .showcaseFacts p {
+  margin: 0;
+}
+
+#hyde-bau-glass .showcaseFacts p + p {
+  margin-block-start: 3px;
+}
+
+#hyde-bau-glass .body {
+  max-inline-size: 34ch;
+  margin-block: 20px 8px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#hyde-bau-glass .photographs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  min-inline-size: 0;
+}
+
+#hyde-bau-glass .figure {
+  min-inline-size: 0;
+  margin: 0;
+}
+
+#hyde-bau-glass .productImage {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+#hyde-bau-glass .caption {
+  padding-block-start: 10px;
+  color: var(--color-ink-secondary, #6e6e73);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: start;
+}
+
+@media (min-width: 744px) {
+  #hyde-bau-glass .photographs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1032px) {
+  #hyde-bau-glass .bandInner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    column-gap: 28px;
+    padding-block: 8px;
+  }
+
+  #hyde-bau-glass .bandFacts {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  #hyde-bau-glass .showcaseInner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 48px;
+    min-block-size: 440px;
+    padding-block: 48px;
+  }
+
+  #hyde-bau-glass .showcaseFacts {
+    font-size: 16px;
+  }
+
+  #hyde-bau-glass .productImage {
+    max-block-size: 420px;
+  }
+}
+
+#hyde-bau-glass[data-glass="off"] .band {
+  background: var(--color-surface-alt);
+  border-color: var(--color-line);
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+#hyde-bau-glass[data-glass="off"] .bandFacts,
+#hyde-bau-glass[data-glass="off"] .secondaryLink { color: var(--color-ink-secondary); }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('hyde-bau-glass');
+  const state = { glass: true };
+  function restore(snapshot) {
+    const value = snapshot?.privateContent?.glass;
+    if (typeof value === 'boolean') state.glass = value;
+  }
+  function render() { root.dataset.glass = state.glass ? 'on' : 'off'; }
+  restore(window.openai?.widgetState);
+  render();
+  window.addEventListener('openai:set_globals', (event) => {
+    restore(event.detail?.globals?.widgetState);
+    render();
+  });
+  if (globalThis.Tweak) {
+    const tweak = new Tweak({ container: root, onChange: () => {
+      render();
+      window.openai?.setWidgetState({
+        modelContent: { exhibitionBand: state.glass ? 'frosted glass' : 'original solid' },
+        privateContent: { glass: state.glass }
+      })?.catch(() => {});
+    } });
+    tweak.addToggle(state, 'glass', { label: '磨砂玻璃', reference: 'exhibitionBand.glass' });
+  }
+})();
+</script>

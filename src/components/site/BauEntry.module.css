@@ -8,6 +8,28 @@
 .band {
   background: var(--color-surface-alt, #f5f5f7);
   border-block: 1px solid var(--color-line, #deddd8);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--color-surface, #fff) 85%, transparent),
+    0 5px 18px color-mix(in srgb, var(--color-ink, #11110f) 4%, transparent);
+}
+
+/* Keep the normal-flow dimensions; only the exhibition band's material changes. */
+@supports ((backdrop-filter: blur(16px)) or (-webkit-backdrop-filter: blur(16px))) {
+  .band {
+    background: linear-gradient(
+      115deg,
+      color-mix(in srgb, var(--color-surface, #fff) 84%, transparent),
+      color-mix(in srgb, var(--color-surface-alt, #f5f5f7) 84%, transparent)
+    );
+    border-color: color-mix(in srgb, var(--color-line, #deddd8) 55%, transparent);
+    -webkit-backdrop-filter: blur(16px) saturate(115%);
+    backdrop-filter: blur(16px) saturate(115%);
+  }
+}
+
+.band .bandFacts,
+.band .secondaryLink {
+  color: color-mix(in srgb, var(--color-ink-secondary, #6e6e73) 70%, var(--color-ink, #11110f));
 }
 
 .bandInner {
