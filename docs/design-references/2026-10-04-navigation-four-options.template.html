@@ -1,0 +1,253 @@
+<div id="hyde-nav-four" class="viz-carousel" aria-label="HYDE 四种导航方案" data-previous-label="上一方案" data-next-label="下一方案">
+<style>
+#hyde-nav-four{--nav-gap:18px;}
+#hyde-nav-four .nf-stage{min-height:860px;}
+#hyde-nav-four .nf-product{--paper:light-dark(#fff,#141716);--ink:light-dark(#151817,#f1f3ef);--muted:light-dark(#646c67,#b3bcb5);--line:light-dark(#dce1da,#3c4540);--soft:light-dark(#f3f5f0,#232b25);--accent:light-dark(#324d40,#bfdbcb);min-height:860px;position:relative;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);font:400 14px/1.5 Arial,Helvetica,sans-serif;text-align:left;isolation:isolate;}
+#hyde-nav-four .nf-product *{box-sizing:border-box;min-width:0;}
+#hyde-nav-four .nf-product [hidden]{display:none!important;}
+#hyde-nav-four .nf-product h1,#hyde-nav-four .nf-product h2,#hyde-nav-four .nf-product h3,#hyde-nav-four .nf-product p,#hyde-nav-four .nf-product figure{margin:0;}
+#hyde-nav-four .nf-product button,#hyde-nav-four .nf-product a,#hyde-nav-four .nf-product input{font:inherit;color:inherit;}
+#hyde-nav-four .nf-product button{border:0;background:none;}
+#hyde-nav-four .nf-product a{text-decoration:none;}
+#hyde-nav-four .nf-logo{display:flex;align-items:center;min-width:100px;min-height:44px;}
+#hyde-nav-four .nf-logo img{display:block;width:112px;height:29px;object-fit:contain;}
+#hyde-nav-four .nf-product button:disabled{color:var(--muted);opacity:.65;}
+#hyde-nav-four .nf-brand-row,#hyde-nav-four .nf-flat-row,#hyde-nav-four .nf-search-header,#hyde-nav-four .nf-rail-header{display:flex;align-items:center;gap:var(--nav-gap);padding:20px 28px;position:relative;z-index:3;border-bottom:1px solid var(--line);background:var(--paper);}
+#hyde-nav-four .nf-utilities{display:flex;align-items:center;gap:12px;margin-left:auto;}
+#hyde-nav-four .nf-mobile-search{display:none!important;}
+#hyde-nav-four .nf-finder{display:flex;align-items:center;gap:8px;min-height:44px;}
+#hyde-nav-four .nf-icon{display:flex;justify-content:center;align-items:center;min-width:44px;min-height:44px;padding:8px;gap:6px;}
+#hyde-nav-four .nf-contact{display:flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 16px!important;background:var(--ink)!important;color:var(--paper)!important;white-space:nowrap;transition:background .2s,transform .2s;}
+#hyde-nav-four .nf-contact:hover{background:var(--accent)!important;transform:translateY(-1px);}
+#hyde-nav-four .nf-primary-nav{display:flex;flex:1;align-items:center;justify-content:center;gap:var(--nav-gap);}
+#hyde-nav-four .nf-primary-nav button{min-height:44px;padding:8px 0;white-space:nowrap;position:relative;font-size:14px;text-align:left;}
+#hyde-nav-four .nf-primary-nav button small{display:block;color:var(--muted);font-size:11px;line-height:1.3;}
+#hyde-nav-four button[data-go].is-current{color:var(--accent);}
+#hyde-nav-four .nf-primary-nav button[data-go]::after{content:"";position:absolute;bottom:1px;left:0;right:0;height:2px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .18s;}
+#hyde-nav-four .nf-primary-nav button[data-go]:hover::after,#hyde-nav-four .nf-primary-nav button.is-current::after{transform:scaleX(1);}
+#hyde-nav-four .nf-secondary{display:flex;align-items:center;justify-content:flex-end;gap:24px;padding:4px 28px;background:var(--soft);border-bottom:1px solid var(--line);}
+#hyde-nav-four .nf-secondary button{min-height:38px;font-size:12px;display:flex;align-items:center;gap:6px;}
+#hyde-nav-four .nf-content{flex:1;padding:42px 36px;background:var(--paper);}
+#hyde-nav-four .nf-home{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:26px;min-height:380px;}
+#hyde-nav-four .nf-eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:20px!important;}
+#hyde-nav-four .nf-home h1{font-size:43px;line-height:1.08;letter-spacing:-1.6px;font-weight:400;max-width:9em;}
+#hyde-nav-four .nf-home p{color:var(--muted);max-width:26em;margin:22px 0;}
+#hyde-nav-four .nf-home figure{background:#fff;aspect-ratio:1.32;overflow:hidden;}
+#hyde-nav-four .nf-home img{width:100%;height:100%;object-fit:contain;display:block;}
+#hyde-nav-four .nf-text-link{display:inline-flex;align-items:center;gap:16px;min-height:44px;padding:0;border-bottom:1px solid var(--ink)!important;}
+#hyde-nav-four .nf-footer{padding:17px 28px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+#hyde-nav-four .nf-panel{position:absolute;top:100%;left:20px;right:20px;z-index:8;background:var(--paper);color:var(--ink);border:1px solid var(--line);box-shadow:0 15px 28px #0002;padding:28px;animation:nf-open .18s ease-out;}
+#hyde-nav-four .nf-panel h2{font-size:26px;font-weight:400;margin-bottom:14px;}
+#hyde-nav-four .nf-panel-close{position:absolute;top:8px;right:8px;}
+#hyde-nav-four .nf-panel p{color:var(--muted);margin-bottom:14px;}
+#hyde-nav-four .nf-panel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+#hyde-nav-four .nf-panel-grid button{width:100%;min-height:44px;padding:10px 0;text-align:left;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;}
+#hyde-nav-four .nf-section-title{font-size:13px;color:var(--muted);margin-bottom:12px!important;}
+#hyde-nav-four .nf-language-grid{display:flex;gap:14px;flex-wrap:wrap;}
+#hyde-nav-four .nf-language-grid button{min-height:44px;padding:8px 12px;border:1px solid var(--line);}
+#hyde-nav-four .nf-detail{max-width:760px;animation:nf-open .18s ease-out;}
+#hyde-nav-four .nf-detail h1{font-size:39px;line-height:1.1;letter-spacing:-1px;font-weight:400;margin-bottom:20px;}
+#hyde-nav-four .nf-detail>p{color:var(--muted);max-width:44em;margin-bottom:26px;}
+#hyde-nav-four .nf-file{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-block:1px solid var(--line);}
+#hyde-nav-four .nf-file h2{font-size:19px;font-weight:500;}
+#hyde-nav-four .nf-file p{font-size:12px;color:var(--muted);margin-top:5px;}
+#hyde-nav-four .nf-file button{display:flex;gap:8px;align-items:center;min-height:44px;white-space:nowrap;}
+#hyde-nav-four .nf-detail-links{display:grid;grid-template-columns:1fr 1fr;gap:15px 24px;margin-top:25px;}
+#hyde-nav-four .nf-detail-links button{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:44px;text-align:left;padding:10px 0;border-bottom:1px solid var(--line);}
+#hyde-nav-four .nf-back{min-height:44px;margin-top:28px;padding:0;display:inline-flex;align-items:center;gap:8px;color:var(--muted)!important;}
+#hyde-nav-four .nf-desk .nf-brand-row{padding-block:16px;}
+#hyde-nav-four .nf-desk-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:24px 28px 26px;gap:28px;border-bottom:1px solid var(--line);background:var(--soft);}
+#hyde-nav-four .nf-desk-grid article{border-top:2px solid var(--ink);padding-top:12px;}
+#hyde-nav-four .nf-desk-grid h2{font-size:21px;line-height:1.2;font-weight:500;margin-bottom:9px;}
+#hyde-nav-four .nf-desk-grid p{font-size:12px;color:var(--muted);margin-bottom:9px;}
+#hyde-nav-four .nf-desk-grid button{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:6px;text-align:left;width:100%;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;}
+#hyde-nav-four .nf-desk-grid .nf-contact{min-height:44px;border-bottom:0;margin-top:3px;font-size:12px;}
+#hyde-nav-four .nf-search-header{align-items:flex-start;padding-block:22px;gap:24px;}
+#hyde-nav-four .nf-search-centre{flex:1;}
+#hyde-nav-four .nf-search-form{position:relative;display:flex;align-items:center;background:var(--soft);border:1px solid var(--line);}
+#hyde-nav-four .nf-search-form input{border:0;background:none;width:100%;padding:13px 14px;font-size:16px;min-height:48px;}
+#hyde-nav-four .nf-search-form button{min-width:46px;min-height:46px;display:flex;align-items:center;justify-content:center;}
+#hyde-nav-four .nf-search-shortcuts{display:flex;flex-wrap:wrap;gap:3px 18px;margin-top:7px;}
+#hyde-nav-four .nf-search-shortcuts button{font-size:12px;min-height:36px;padding:4px 0;display:flex;align-items:center;gap:5px;}
+#hyde-nav-four .nf-search-centre label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+#hyde-nav-four .nf-search-tools{display:flex;align-items:center;gap:6px;}
+#hyde-nav-four .nf-search-nav{padding:0 28px 5px;display:flex;gap:28px;border-bottom:1px solid var(--line);}
+#hyde-nav-four .nf-search-nav button{min-height:38px;font-size:13px;display:flex;align-items:center;gap:6px;}
+#hyde-nav-four .nf-results{margin-top:14px;}
+#hyde-nav-four .nf-results button{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:20px;width:100%;text-align:left;border-bottom:1px solid var(--line);padding:12px 0;}
+#hyde-nav-four .nf-results small{display:block;color:var(--muted);font-size:12px;}
+#hyde-nav-four .nf-rail-header .nf-primary-nav{justify-content:flex-start;}
+#hyde-nav-four .nf-rail-layout{display:grid;grid-template-columns:minmax(0,1fr) 205px;gap:25px;flex:1;padding:36px 28px;}
+#hyde-nav-four .nf-rail-layout .nf-content{padding:0;}
+#hyde-nav-four .nf-rail-layout .nf-home{grid-template-columns:1fr;gap:20px;}
+#hyde-nav-four .nf-rail-layout .nf-home h1{max-width:14em;font-size:37px;}
+#hyde-nav-four .nf-rail-layout .nf-home figure{aspect-ratio:2.25;order:-1;}
+#hyde-nav-four .nf-rail-layout .nf-home p{margin:14px 0;}
+#hyde-nav-four .nf-rail{align-self:start;position:sticky;top:20px;padding-left:22px;border-left:1px solid var(--line);}
+#hyde-nav-four .nf-rail>p{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:8px;}
+#hyde-nav-four .nf-rail>button{display:flex;align-items:start;justify-content:space-between;gap:14px;width:100%;min-height:92px;padding:20px 0;border-bottom:1px solid var(--line);text-align:left;font-size:17px;line-height:1.2;}
+#hyde-nav-four .nf-rail button small{display:block;font-size:12px;color:var(--muted);margin-top:8px;line-height:1.4;}
+#hyde-nav-four .nf-rail .nf-contact{margin-top:18px;min-height:68px;white-space:normal;font-size:14px;border-bottom:0;padding:16px!important;}
+#hyde-nav-four[data-descriptions="off"] .nf-desc{display:none;}
+@keyframes nf-open{from{transform:translateY(-5px);opacity:.6}to{transform:none;opacity:1}}
+@media(max-width:900px){
+ #hyde-nav-four .nf-flat-row{flex-wrap:wrap;gap:14px;}
+ #hyde-nav-four .nf-flat-row .nf-primary-nav{order:3;width:100%;flex-basis:100%;justify-content:space-between;}
+ #hyde-nav-four .nf-flat-row .nf-utilities{margin-left:auto;}
+ #hyde-nav-four .nf-primary-nav button{font-size:13px;}
+ #hyde-nav-four .nf-search-header{flex-wrap:wrap;gap:16px;}
+ #hyde-nav-four .nf-search-centre{order:3;flex-basis:100%;}
+ #hyde-nav-four .nf-search-tools{margin-left:auto;}
+ #hyde-nav-four .nf-rail-header{flex-wrap:wrap;gap:12px;}
+ #hyde-nav-four .nf-rail-header .nf-primary-nav{order:3;flex-basis:100%;justify-content:space-between;}
+ #hyde-nav-four .nf-desk-grid{gap:18px;padding-inline:24px;}
+ #hyde-nav-four .nf-desk-grid h2{font-size:18px;}
+ #hyde-nav-four .nf-home h1{font-size:36px;}
+ #hyde-nav-four .nf-rail-layout{grid-template-columns:minmax(0,1fr) 170px;gap:20px;}
+ #hyde-nav-four .nf-rail{padding-left:17px;}
+ #hyde-nav-four .nf-rail>button{font-size:16px;}
+}
+@media(max-width:600px){
+ #hyde-nav-four .nf-stage,#hyde-nav-four .nf-product{min-height:1280px;}
+ #hyde-nav-four .nf-brand-row,#hyde-nav-four .nf-flat-row,#hyde-nav-four .nf-search-header,#hyde-nav-four .nf-rail-header{padding:16px;gap:10px;}
+ #hyde-nav-four .nf-logo{min-width:84px;}#hyde-nav-four .nf-logo img{width:86px;height:25px;}
+ #hyde-nav-four .nf-contact{padding:9px 12px!important;font-size:12px;}
+ #hyde-nav-four .nf-utilities{gap:2px;}
+ #hyde-nav-four .nf-flat-row .nf-utilities .nf-search-trigger{display:none;}
+ #hyde-nav-four .nf-flat-row .nf-primary-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 12px;align-items:start;}
+ #hyde-nav-four .nf-flat-row .nf-primary-nav button{white-space:normal;min-height:48px;}
+ #hyde-nav-four .nf-flat-row .nf-primary-nav .nf-mobile-search{display:flex!important;align-items:center;gap:6px;}
+ #hyde-nav-four .nf-secondary{padding:4px 16px;justify-content:flex-start;gap:10px;flex-wrap:wrap;}
+ #hyde-nav-four .nf-secondary button{font-size:11px;min-height:44px;}
+ #hyde-nav-four .nf-content{padding:28px 20px;}
+ #hyde-nav-four .nf-home{grid-template-columns:1fr;gap:18px;min-height:0;}
+ #hyde-nav-four .nf-home figure{order:-1;aspect-ratio:1.32;}
+ #hyde-nav-four .nf-home h1{font-size:33px;line-height:1.1;}
+ #hyde-nav-four .nf-home p{font-size:13px;margin:17px 0;}
+ #hyde-nav-four .nf-eyebrow{font-size:11px;margin-bottom:13px!important;}
+ #hyde-nav-four .nf-footer{padding:14px 16px;}
+ #hyde-nav-four .nf-brand-row .nf-finder{font-size:12px;padding:6px;min-height:44px;}
+ #hyde-nav-four .nf-desk-grid{grid-template-columns:1fr 1fr;padding:20px 16px;gap:20px 16px;}
+ #hyde-nav-four .nf-desk-grid h2{font-size:18px;}
+ #hyde-nav-four .nf-desk-grid button{font-size:12px;min-height:44px;}
+ #hyde-nav-four .nf-desk-grid p{font-size:11px;}
+ #hyde-nav-four .nf-desk-grid .nf-contact{white-space:normal;font-size:12px;}
+ #hyde-nav-four .nf-search-nav{padding:0 16px 5px;justify-content:space-between;gap:10px;}
+ #hyde-nav-four .nf-search-nav button{font-size:12px;min-height:44px;}
+ #hyde-nav-four .nf-search-shortcuts{gap:4px 13px;}
+ #hyde-nav-four .nf-search-shortcuts button{font-size:11px;min-height:44px;}
+ #hyde-nav-four .nf-panel{left:8px;right:8px;padding:28px 18px 18px;}
+ #hyde-nav-four .nf-panel-grid,#hyde-nav-four .nf-detail-links{grid-template-columns:1fr;gap:8px;}
+ #hyde-nav-four .nf-panel-grid p{margin-bottom:5px;}
+ #hyde-nav-four .nf-panel h2{font-size:23px;}
+ #hyde-nav-four .nf-detail h1{font-size:31px;}
+ #hyde-nav-four .nf-file{align-items:start;flex-direction:column;gap:10px;}
+ #hyde-nav-four .nf-rail-header .nf-primary-nav{gap:10px;}
+ #hyde-nav-four .nf-rail-header .nf-primary-nav button{font-size:12px;white-space:normal;}
+ #hyde-nav-four .nf-rail-layout{grid-template-columns:1fr;padding:0;gap:0;}
+ #hyde-nav-four .nf-rail{order:-1;position:relative;top:auto;padding:16px;border-left:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;background:var(--soft);}
+ #hyde-nav-four .nf-rail>p{grid-column:1/-1;margin-bottom:0;}
+ #hyde-nav-four .nf-rail>button{font-size:13px;padding:10px 0;min-height:72px;gap:5px;}
+ #hyde-nav-four .nf-rail button small{font-size:11px;margin-top:5px;}
+ #hyde-nav-four .nf-rail .nf-contact{font-size:12px;padding:10px 7px!important;min-height:72px;margin-top:0;}
+ #hyde-nav-four .nf-rail>button svg{display:none;}
+ #hyde-nav-four .nf-rail-layout .nf-content{padding:28px 20px;}
+ #hyde-nav-four .nf-rail-layout .nf-home figure{aspect-ratio:1.32;}
+ #hyde-nav-four .nf-rail-layout .nf-home h1{font-size:33px;}
+}
+@media(prefers-reduced-motion:reduce){#hyde-nav-four .nf-product *{animation:none!important;transition:none!important;}}
+</style>
+<section data-variant="直接列出" aria-label="直接列出重要导航" class="nf-stage">
+ <div class="nf-product nf-flat" data-design="direct">
+  <header class="nf-flat-row">
+   <a class="nf-logo" href="#home" data-go="home" aria-label="HYDE homepage"><img data-image="logo" alt="HYDE" width="112" height="29"></a>
+   <nav class="nf-primary-nav" aria-label="Main navigation">
+    <button class="cursor-interaction" data-go="downloads">Downloads<small class="nf-desc">Catalog PDF</small></button>
+    <button class="cursor-interaction" data-go="products">Products</button><button class="cursor-interaction" data-go="documents">Documents</button><button class="cursor-interaction" data-go="guides">Guides</button><button class="cursor-interaction" data-go="certificates">Certificates</button>
+    <button class="nf-mobile-search cursor-interaction" data-menu="search" aria-expanded="false">Search <i data-lucide="search" aria-hidden="true"></i></button>
+   </nav>
+   <div class="nf-utilities"><button class="nf-contact cursor-interaction" data-go="contact">Contact sales <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="nf-icon cursor-interaction" data-menu="language" aria-expanded="false">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="nf-icon nf-search-trigger cursor-interaction" data-menu="search" aria-label="Search" aria-expanded="false"><i data-lucide="search" aria-hidden="true"></i></button></div>
+   <div class="nf-panel" role="region" aria-label="Navigation panel" hidden></div>
+  </header>
+  <nav class="nf-secondary" aria-label="More HYDE links"><button class="cursor-interaction" data-go="finder">Product Finder <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="factory">Factory & OEM</button><button class="cursor-interaction" data-go="faq">Ordering FAQ</button><button class="cursor-interaction" data-menu="all">All sections <i data-lucide="plus" aria-hidden="true"></i></button></nav>
+  <main class="nf-content" data-content aria-live="polite"></main><footer class="nf-footer"><span>HYDE · Canton Hyland</span><span>Architectural door hardware</span></footer>
+ </div>
+</section>
+<section data-variant="四栏常显" aria-label="四栏常显采购导航" class="nf-stage" hidden>
+ <div class="nf-product nf-desk" data-design="desk">
+  <header class="nf-brand-row"><a class="nf-logo" href="#home" data-go="home" aria-label="HYDE homepage"><img data-image="logo" alt="HYDE" width="112" height="29"></a><div class="nf-utilities"><button class="nf-finder cursor-interaction" data-go="finder">Product Finder <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="nf-icon cursor-interaction" data-menu="language" aria-expanded="false">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="nf-icon cursor-interaction" data-menu="search" aria-label="Search" aria-expanded="false"><i data-lucide="search" aria-hidden="true"></i></button></div><div class="nf-panel" role="region" aria-label="Navigation panel" hidden></div></header>
+  <nav class="nf-desk-grid" aria-label="Buyer navigation">
+   <article><h2>Downloads</h2><p class="nf-desc">The files you need.</p><button class="cursor-interaction" data-go="downloads">Catalog PDF <i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="models">3D reference models <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="documents">Technical files <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></article>
+   <article><h2>Products</h2><p class="nf-desc">Find the right hardware.</p><button class="cursor-interaction" data-go="products">Browse the range <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="finder">Find a model <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="finishes">Finish codes <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></article>
+   <article><h2>Technical</h2><p class="nf-desc">Specify with confidence.</p><button class="cursor-interaction" data-go="documents">Drawings & documents <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="certificates">Certificates <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="guides">Selection guides <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></article>
+   <article><h2>Contact</h2><p class="nf-desc">People behind the product.</p><button class="nf-contact cursor-interaction" data-go="contact">Ask an engineer <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="factory">Factory & OEM <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="faq">Ordering FAQ <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></article>
+  </nav>
+  <main class="nf-content" data-content aria-live="polite"></main><footer class="nf-footer"><span>HYDE · Canton Hyland</span><span>Architectural door hardware</span></footer>
+ </div>
+</section>
+<section data-variant="搜索直达" aria-label="可见搜索与资料快捷入口" class="nf-stage" hidden>
+ <div class="nf-product nf-search" data-design="search">
+  <header class="nf-search-header"><a class="nf-logo" href="#home" data-go="home" aria-label="HYDE homepage"><img data-image="logo" alt="HYDE" width="112" height="29"></a><div class="nf-search-centre"><form class="nf-search-form" data-search><label for="nf-model-search">Search a model or document</label><input type="search" id="nf-model-search" placeholder="Search a model or document…" autocomplete="off"><button class="cursor-interaction" type="button" data-search-submit aria-label="Find results"><i data-lucide="search" aria-hidden="true"></i></button></form><nav class="nf-search-shortcuts" aria-label="Document shortcuts"><button class="cursor-interaction" data-go="downloads">Catalog PDF <i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="documents">Drawings</button><button class="cursor-interaction" data-go="certificates">Test reports</button></nav></div><div class="nf-search-tools"><button class="nf-contact cursor-interaction" data-go="contact">Ask an engineer</button><button class="nf-icon cursor-interaction" data-menu="language" aria-expanded="false">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button></div><div class="nf-panel" role="region" aria-label="Navigation panel" hidden></div></header>
+  <nav class="nf-search-nav" aria-label="Browse HYDE"><button class="cursor-interaction" data-go="products">Products</button><button class="cursor-interaction" data-go="guides">Guides</button><button class="cursor-interaction" data-go="factory">Factory & OEM</button><button class="cursor-interaction" data-menu="all">All sections <i data-lucide="plus" aria-hidden="true"></i></button></nav>
+  <main class="nf-content" data-content aria-live="polite"></main><footer class="nf-footer"><span>HYDE · Canton Hyland</span><span>Architectural door hardware</span></footer>
+ </div>
+</section>
+<section data-variant="资料侧栏" aria-label="页面侧边资料与咨询导航" class="nf-stage" hidden>
+ <div class="nf-product nf-side" data-design="rail">
+  <header class="nf-rail-header"><a class="nf-logo" href="#home" data-go="home" aria-label="HYDE homepage"><img data-image="logo" alt="HYDE" width="112" height="29"></a><nav class="nf-primary-nav" aria-label="Main navigation"><button class="cursor-interaction" data-go="products">Products</button><button class="cursor-interaction" data-go="applications">Applications</button><button class="cursor-interaction" data-go="factory">Factory & OEM</button></nav><div class="nf-utilities"><button class="nf-icon cursor-interaction" data-menu="language" aria-expanded="false">EN <i data-lucide="chevron-down" aria-hidden="true"></i></button><button class="nf-icon cursor-interaction" data-menu="search" aria-label="Search" aria-expanded="false"><i data-lucide="search" aria-hidden="true"></i></button></div><div class="nf-panel" role="region" aria-label="Navigation panel" hidden></div></header>
+  <div class="nf-rail-layout"><main class="nf-content" data-content aria-live="polite"></main><nav class="nf-rail" aria-label="Files and support"><p>Files & support</p><button class="cursor-interaction" data-go="downloads"><span>Catalog PDF<small class="nf-desc">HYDE 2026 · English</small></span><i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="documents"><span>Documents<small class="nf-desc">Drawings & test reports</small></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="nf-contact cursor-interaction" data-go="contact">Ask an engineer <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></nav></div>
+  <footer class="nf-footer"><span>HYDE · Canton Hyland</span><span>Architectural door hardware</span></footer>
+ </div>
+</section>
+<template data-asset="logoLight">__LOGO_LIGHT__</template><template data-asset="logoDark">__LOGO_DARK__</template><template data-asset="lever">__LEVER_PHOTO__</template>
+<template data-view="home"><div class="nf-home"><div><p class="nf-eyebrow">HYDE · Stainless steel handles</p><h1>A considered detail.<br>The 9001 lever.</h1><p>Explore the product range, read the technical detail and talk to the people who make it.</p><button class="nf-text-link cursor-interaction" data-go="products">Explore products <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><figure><img data-image="lever" alt="Actual 9001 stainless steel lever and escutcheon" width="1200" height="800"></figure></div></template>
+<template data-view="downloads"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Downloads</p><h1>The product catalog.</h1><p>Product families and published specifications, with technical files a click away.</p><div class="nf-file"><div><h2>HYDE Product Catalog 2026</h2><p>PDF · English</p></div><button class="cursor-interaction" data-go="catalog">Catalog overview <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><div class="nf-detail-links"><button class="cursor-interaction" data-go="models">3D reference models <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="documents">Technical documents <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="catalog"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Product catalog</p><h1>HYDE Catalog 2026</h1><p>Explore the product families or ask the export team for your model's documentation.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="products">Browse product families <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="contact">Request a model document <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="downloads"><i data-lucide="arrow-left" aria-hidden="true"></i> All downloads</button></div></template>
+<template data-view="documents"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Technical documents</p><h1>Start with the detail.</h1><p>Find the drawing, finish reference and report for the exact product you are specifying.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="finder">Find your model <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="certificates">Certificates & reports <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="finishes">Finish codes <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="guides">Selection guides <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="guides"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Guides</p><h1>Choose with confidence.</h1><p>Dimensions, selection and standards: a clearer path to the right hardware.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="documents">Dimensions & drawings <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="calculator">Cylinder calculator <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="certificates">Standards & reports <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="faq">Ordering FAQ <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="certificates"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Certificates</p><h1>Check the model.<br>Read the scope.</h1><p>Use the published report for the exact product you are specifying. Ask the export team if you need a specific model document.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="documents">Technical documents <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="contact">Request a model report <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="contact"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Contact</p><h1>Talk to our export team.</h1><p>Bring a model reference, drawing or sample. Discuss product fit, your market and private-label requirements.</p><div class="nf-file"><div><h2>tec@cantonlock.com</h2><p>Export & technical support</p></div></div><div class="nf-detail-links"><button class="cursor-interaction" data-go="downloads">Find the catalog <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="faq">Ordering questions <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="products"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Products</p><h1>Find your hardware.</h1><p>Start with a product family or use the model finder.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="finder">Panic exit devices <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="home">Stainless steel handles <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="finder">Lock cases & cylinders <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="finder">Product Finder <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="downloads"><i data-lucide="arrow-left" aria-hidden="true"></i> Download catalog</button></div></template>
+<template data-view="finder"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Product Finder</p><h1>Find a model or file.</h1><p>Search the design preview by model or document name.</p><form class="nf-search-form" data-search><input type="search" aria-label="Search models and documents" placeholder="9001, catalog, drawings…" autocomplete="off"><button class="cursor-interaction" type="button" data-search-submit aria-label="Find results"><i data-lucide="search" aria-hidden="true"></i></button></form><div class="nf-results" data-results aria-live="polite"></div><button class="nf-back cursor-interaction" data-go="products"><i data-lucide="arrow-left" aria-hidden="true"></i> All products</button></div></template>
+<template data-view="factory"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Factory & OEM</p><h1>People behind the hardware.</h1><p>Explore manufacturing, OEM tooling and private-label hardware with Canton Hyland.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="contact">Discuss your OEM brief <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="certificates">View certificates <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="faq"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Ordering FAQ</p><h1>Before you place an order.</h1><p>Minimum order, samples, lead times, payment and OEM requirements depend on the model and the brief.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="contact">Ask about your order <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="downloads">Check the catalog <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-view="models"><div class="nf-detail"><p class="nf-eyebrow">HYDE / 3D reference models</p><h1>Understand the form.</h1><p>Partial exterior reference models. Read each file's scope before downloading; these are not manufacturing or installation models.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="documents">Published dimensions <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="contact">Request a product file <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="downloads"><i data-lucide="arrow-left" aria-hidden="true"></i> All downloads</button></div></template>
+<template data-view="finishes"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Finish codes</p><h1>Make the finish part of the brief.</h1><p>Specify a product reference and finish code when discussing your order.</p><button class="nf-text-link cursor-interaction" data-go="contact">Discuss a finish <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><br><button class="nf-back cursor-interaction" data-go="documents"><i data-lucide="arrow-left" aria-hidden="true"></i> Technical documents</button></div></template>
+<template data-view="calculator"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Cylinder calculator</p><h1>Start with your door dimensions.</h1><p>Door thickness and hardware buildup guide cylinder length selection. Check the exact model and installation requirements.</p><button class="nf-text-link cursor-interaction" data-go="contact">Ask an export engineer <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><br><button class="nf-back cursor-interaction" data-go="guides"><i data-lucide="arrow-left" aria-hidden="true"></i> Selection guides</button></div></template>
+<template data-view="applications"><div class="nf-detail"><p class="nf-eyebrow">HYDE / Applications</p><h1>Hardware in context.</h1><p>Browse hardware for residential, hospitality and commercial doors, then check the exact product specification.</p><div class="nf-detail-links"><button class="cursor-interaction" data-go="products">Browse products <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="guides">Read selection guides <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><button class="nf-back cursor-interaction" data-go="home"><i data-lucide="arrow-left" aria-hidden="true"></i> Back to HYDE</button></div></template>
+<template data-menu-template="language"><h2>Website languages.</h2><p>This navigation preview is in English.</p><div class="nf-language-grid"><button class="cursor-interaction" data-close-menu>English</button><button disabled>Español</button><button disabled>Português</button><button disabled>Deutsch</button><button disabled>Français</button></div></template>
+<template data-menu-template="all"><h2>Explore HYDE.</h2><div class="nf-panel-grid"><div><p class="nf-section-title">Products & files</p><button class="cursor-interaction" data-go="products">Products <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="downloads">Downloads <i data-lucide="arrow-down-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="models">3D models <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><div><p class="nf-section-title">Technical support</p><button class="cursor-interaction" data-go="documents">Documents <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="guides">Guides <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="certificates">Certificates <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><div><p class="nf-section-title">Company</p><button class="cursor-interaction" data-go="factory">Factory & OEM <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="faq">Ordering FAQ <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><button class="cursor-interaction" data-go="applications">Applications <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></div></template>
+<template data-menu-template="search"><h2>Find a model or document.</h2><form class="nf-search-form" data-search><input type="search" aria-label="Search models and documents" placeholder="9001, catalog, drawings…" autocomplete="off"><button class="cursor-interaction" type="button" data-search-submit aria-label="Find results"><i data-lucide="search" aria-hidden="true"></i></button></form><div class="nf-results" data-results aria-live="polite"></div></template>
+<script>
+(() => {
+ const root=document.getElementById('hyde-nav-four');if(!root)return;
+ const assets=Object.fromEntries(Array.from(root.querySelectorAll('template[data-asset]')).map(t=>[t.dataset.asset,t.content.textContent.trim()]));
+ const dark=window.matchMedia('(prefers-color-scheme:dark)');
+ const settings={gap:18,descriptions:true};
+ const pages=Array.from(root.querySelectorAll('.nf-product'));
+ const names={home:'HYDE homepage',downloads:'Downloads',catalog:'Product catalog',documents:'Technical documents',guides:'Guides',certificates:'Certificates',contact:'Contact sales',products:'Products',finder:'Product Finder',factory:'Factory & OEM',faq:'Ordering FAQ',models:'3D reference models',finishes:'Finish codes',calculator:'Cylinder calculator',applications:'Applications'};
+ let savedPages={};
+ const lastTrigger=new WeakMap();
+ const icons=()=>{if(globalThis.lucide)lucide.createIcons({attrs:{width:16,height:16}});};
+ const paintImages=scope=>scope.querySelectorAll('img[data-image]').forEach(img=>{img.src=img.dataset.image==='logo'?assets[dark.matches?'logoDark':'logoLight']:assets[img.dataset.image];});
+ const closePanel=(page,restore=false)=>{const panel=page.querySelector('.nf-panel');const trigger=lastTrigger.get(page);panel.hidden=true;page.querySelectorAll('[data-menu]').forEach(button=>button.setAttribute('aria-expanded','false'));lastTrigger.delete(page);if(restore&&trigger&&page.contains(trigger))trigger.focus({preventScroll:true});};
+ const renderView=(page,key)=>{const template=root.querySelector('template[data-view="'+key+'"]');if(!template)return;closePanel(page);page.querySelector('[data-content]').replaceChildren(template.content.cloneNode(true));page.dataset.view=key;page.querySelectorAll('[data-go]').forEach(button=>{button.classList.toggle('is-current',button.dataset.go===key);if(button.dataset.go===key)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');});paintImages(page);icons();};
+ const storeChoice=(page,key)=>{savedPages[page.dataset.design]=key;if(window.openai?.setWidgetState)Promise.resolve(window.openai.setWidgetState({modelContent:{navigationConcept:page.closest('[data-variant]').dataset.variant,destination:names[key]},privateContent:{pages:savedPages}})).catch(()=>{});};
+ const applySaved=state=>{const data=state?.privateContent?.pages;if(!data||typeof data!=='object')return;savedPages={};pages.forEach(page=>{const key=data[page.dataset.design];if(Object.hasOwn(names,key)){savedPages[page.dataset.design]=key;if(page.dataset.view!==key)renderView(page,key);}});};
+ pages.forEach(page=>{renderView(page,'home');page.querySelectorAll('[data-menu]').forEach(button=>button.setAttribute('aria-expanded','false'));});
+ applySaved(window.openai?.widgetState);
+ window.addEventListener('openai:set_globals',event=>applySaved(event.detail?.globals?.widgetState));
+ dark.addEventListener('change',()=>paintImages(root));
+ const openPanel=(page,template,trigger)=>{const panel=page.querySelector('.nf-panel');if(!panel.contains(trigger))lastTrigger.set(page,trigger);page.querySelectorAll('[data-menu]').forEach(button=>button.setAttribute('aria-expanded','false'));panel.replaceChildren(template.content.cloneNode(true));const close=document.createElement('button');close.type='button';close.className='nf-icon nf-panel-close cursor-interaction';close.dataset.closeMenu='true';close.setAttribute('aria-label','Close panel');const icon=document.createElement('i');icon.dataset.lucide='x';icon.setAttribute('aria-hidden','true');close.append(icon);panel.prepend(close);panel.hidden=false;if(trigger.dataset.menu)trigger.setAttribute('aria-expanded','true');icons();const input=panel.querySelector('input');(input||close).focus({preventScroll:true});};
+ const destinations=[{key:'home',label:'9001 stainless steel lever',detail:'Product',terms:'9001 lever handle stainless steel'},{key:'downloads',label:'HYDE Product Catalog 2026',detail:'Catalog PDF',terms:'catalog catalogue pdf download 2026'},{key:'documents',label:'Technical documents & drawings',detail:'Product specifications',terms:'documents drawing drawings dimension backset technical'},{key:'certificates',label:'Certificates & test reports',detail:'Model-scoped evidence',terms:'certificate certificates report reports test standard en'},{key:'guides',label:'Selection guides',detail:'Dimensions and standards',terms:'guide guides selection fit standards'},{key:'models',label:'3D reference models',detail:'Partial exterior studies',terms:'3d model models reference blender glb'},{key:'contact',label:'Export & technical support',detail:'Contact sales',terms:'contact quote pricing export oem engineer'}];
+ const showResults=form=>{const page=form.closest('.nf-product');let target=form.closest('.nf-panel')?.querySelector('[data-results]')||form.parentElement.querySelector('[data-results]');if(!target){const trigger=form.querySelector('button');openPanel(page,root.querySelector('template[data-menu-template="search"]'),trigger);target=page.querySelector('.nf-panel [data-results]');page.querySelector('.nf-panel input').value=form.querySelector('input').value;}
+  const query=form.querySelector('input').value.trim().toLowerCase();const hits=query?destinations.filter(item=>(item.label+' '+item.terms).toLowerCase().includes(query)):destinations.slice(0,4);target.replaceChildren();if(!hits.length){const p=document.createElement('p');p.textContent='No matching item in this design preview. Try 9001, catalog or drawings.';target.append(p);return;}hits.forEach(item=>{const button=document.createElement('button');button.type='button';button.className='cursor-interaction';button.dataset.go=item.key;const text=document.createElement('span');text.textContent=item.label;const small=document.createElement('small');small.textContent=item.detail;text.append(small);const icon=document.createElement('i');icon.dataset.lucide='arrow-up-right';icon.setAttribute('aria-hidden','true');button.append(text,icon);target.append(button);});icons();};
+ root.addEventListener('click',event=>{const trigger=event.target.closest('button,a');if(!trigger||!root.contains(trigger))return;const page=trigger.closest('.nf-product');if(!page)return;if(trigger.tagName==='A')event.preventDefault();if(trigger.hasAttribute('data-search-submit')){event.preventDefault();showResults(trigger.closest('form[data-search]'));return;}if(trigger.hasAttribute('data-close-menu')){closePanel(page,true);return;}if(trigger.dataset.go){const key=trigger.dataset.go;const moved=Boolean(trigger.closest('[data-content],.nf-panel'));renderView(page,key);if(moved)page.querySelector('[data-content] button')?.focus({preventScroll:true});storeChoice(page,key);return;}if(trigger.dataset.menu){const panel=page.querySelector('.nf-panel');if(!panel.hidden&&trigger.getAttribute('aria-expanded')==='true'){closePanel(page,true);return;}const template=root.querySelector('template[data-menu-template="'+trigger.dataset.menu+'"]');if(template)openPanel(page,template,trigger);}});
+ root.addEventListener('submit',event=>{const form=event.target.closest('form[data-search]');if(!form||!root.contains(form))return;event.preventDefault();showResults(form);});
+ root.addEventListener('input',event=>{const form=event.target.closest('form[data-search]');if(form&&form.closest('.nf-panel'))showResults(form);});
+ root.addEventListener('keydown',event=>{const form=event.target.closest('form[data-search]');if(event.key==='Enter'&&event.target.tagName==='INPUT'&&form){event.preventDefault();showResults(form);return;}if(event.key!=='Escape')return;const page=event.target.closest('.nf-product');if(page&&!page.querySelector('.nf-panel').hidden){event.preventDefault();closePanel(page,true);}});
+ const updateDesign=()=>{root.style.setProperty('--nav-gap',`${settings.gap}px`);root.dataset.descriptions=settings.descriptions?'on':'off';};updateDesign();
+ if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:updateDesign});tweak.addSlider(settings,'gap',{label:'导航间距',min:12,max:22,step:1,unit:'px'});tweak.addToggle(settings,'descriptions',{label:'显示入口说明'});}
+})();
+</script>
+</div>
