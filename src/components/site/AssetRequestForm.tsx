@@ -26,9 +26,14 @@ export function AssetRequestForm({
   asset,
   /** Shown after a successful send — say what happens next, not just "thanks". */
   successMessage,
+  /** Button and message labels; the defaults suit a document request. */
+  submitLabel = "Request the document",
+  messageLabel = "What are you working on? (optional)",
 }: {
   asset: string;
   successMessage: string;
+  submitLabel?: string;
+  messageLabel?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
@@ -117,13 +122,13 @@ export function AssetRequestForm({
       </label>
 
       <label className="block sm:col-span-2">
-        <span className="text-c2 text-ink-secondary">What are you working on? (optional)</span>
+        <span className="text-c2 text-ink-secondary">{messageLabel}</span>
         <textarea className={cn(FIELD, "resize-y")} name="message" rows={3} />
       </label>
 
       <div className="sm:col-span-2">
         <Button type="submit" disabled={status === "sending"}>
-          {status === "sending" ? "Sending…" : "Request the document"}
+          {status === "sending" ? "Sending…" : submitLabel}
         </Button>
         {status === "error" ? (
           <p className="mt-16 text-c2 text-brand" role="alert">

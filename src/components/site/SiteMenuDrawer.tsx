@@ -13,6 +13,8 @@ import { ArrowUpRight } from "lucide-react";
 import { EditorialAtlas } from "./EditorialAtlas";
 import styles from "./EditorialCatalogue.module.css";
 import { dict, tx } from "@/lib/i18n-client";
+import { CATALOG_PDF, NAV_VARIANT, buyerLabels } from "./nav-variant";
+import { localisedHref } from "@/lib/spanish-mirror";
 
 const buyingLinks = {
   en: [
@@ -45,6 +47,20 @@ export function SiteMenuDrawer({ locale, state = "open", currentPath, categories
   /* Overlay locales answer from ui.json (keyed by the English sentence); es/pt keep their literals. */
   const say = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
   const experience = getMenuExperience(locale, MENU_VARIANT);
+  /*
+    Navigation preview (nav-variant.ts): the drawer opens on the importer's three questions
+    before the specifier's four routes. "I need an engineer" goes, because "Request a quote"
+    now leads to the same contact page one row above it.
+  */
+  const buyer = buyerLabels(locale);
+  const buyerRoutes = NAV_VARIANT === "current" ? [] : [
+    { label: buyer.pricesMoq, detail: `${buyer.moqDetail} ${buyer.pricesDetail}`, href: `${localisedHref("/wholesale", locale)}/` },
+    { label: buyer.requestQuote, detail: buyer.requestQuoteDetail, href: `${prefix}/contact/` },
+  ];
+  const dropEngineerRoute = (href: string) => buyerRoutes.length > 0 && href.endsWith("/contact/");
+  const menuTitle = NAV_VARIANT === "current"
+    ? experience.title
+    : say("What do you need first?", "¿Qué necesita primero?", "Do que você precisa primeiro?");
   const [openCategory, setOpenCategory] = useState<string | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -80,6 +96,14 @@ export function SiteMenuDrawer({ locale, state = "open", currentPath, categories
       className={`${styles.menuLink}${current ? " current-nav" : ""}`}>{label}{typeof count === "number" ? ` · ${count}` : ""}</Link></li>;
   };
 
+  const renderPrimary = (link: { label: string; detail: string; href: string }) => <Link key={link.href} href={link.href} onClick={onClose} className="group">
+    <span className="flex-1">
+      <span className={styles.primaryLabel}>{link.label}</span>
+      <span className={styles.detail}>{link.detail}</span>
+    </span>
+    <ArrowUpRight size={20} strokeWidth={1.25} aria-hidden="true" />
+  </Link>;
+
   const contact = <div className={styles.contact}>
     <p className={styles.promise}>{experience.exportPromise}</p>
     {/* Separate items with a gap (09-28: both were inline-block and ran together as "…comWhatsApp"); side by side where there is room, to save height (09-30). */}
@@ -103,15 +127,17 @@ export function SiteMenuDrawer({ locale, state = "open", currentPath, categories
         {experience.kind === "rfq-concierge" ? (
           <section className={styles.concierge}>
             <div>
-              <h2 id="site-menu-title" className={styles.menuTitle}>{experience.title}</h2>
+              <h2 id="site-menu-title" className={styles.menuTitle}>{menuTitle}</h2>
               <nav aria-label={say("Specification routes", "Ayuda para especificar", "Rotas de especificação")} className={styles.primary}>
-                {experience.primary.map((link) => <Link key={link.href} href={link.href} onClick={onClose} className="group">
+                {buyerRoutes.length ? <a href={CATALOG_PDF} download onClick={onClose} className="group">
                   <span className="flex-1">
-                    <span className={styles.primaryLabel}>{link.label}</span>
-                    <span className={styles.detail}>{link.detail}</span>
+                    <span className={`${styles.primaryLabel} font-semibold`}>{buyer.catalogPdf}</span>
+                    <span className={styles.detail}>{buyer.catalogDetail}</span>
                   </span>
-                  <ArrowUpRight size={20} strokeWidth={1.25} aria-hidden="true" />
-                </Link>)}
+                  <span aria-hidden="true" className="text-h3">↓</span>
+                </a> : null}
+                {buyerRoutes.map(renderPrimary)}
+                {experience.primary.map((link) => dropEngineerRoute(link.href) ? null : renderPrimary(link))}
               </nav>
             </div>
             <div className={styles.rail}>

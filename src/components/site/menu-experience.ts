@@ -105,6 +105,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         title: "Buying",
         links: [
           { label: "OEM services", href: "/services/" },
+          { label: "Catalog & prices", href: "/wholesale/" },
           { label: "Price list", href: "/request/price-list/" },
           { label: "Contact", href: "/contact/" },
           { label: "Newsletter", href: "/newsletter/" },
