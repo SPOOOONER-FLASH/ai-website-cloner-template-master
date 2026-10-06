@@ -42,6 +42,10 @@ const PAGE_W = 9026;
 
 const DOCUMENTS = [
   {
+    md: "docs/collaboration/2026-10-05-手动操作-Bing-GSC-Clarity.md",
+    docx: "docs/collaboration/2026-10-05-手动操作-Bing-GSC-Clarity.docx",
+  },
+  {
     md: "docs/collaboration/2026-09-29-configurator-assessment.md",
     docx: "docs/collaboration/2026-09-29-配置器评估.docx",
   },
