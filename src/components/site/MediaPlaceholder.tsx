@@ -12,6 +12,12 @@ interface MediaPlaceholderProps {
   sizes?: string;
   className?: string;
   /**
+   * The image repeats text its link or button already shows (finish swatches, studio tiles).
+   * It keeps a real `alt` for image search and crawlers (Bing flagged 94 pages for empty alts,
+   * 2026-10-05) and is hidden from assistive tech so the name is not read twice.
+   */
+  hiddenFromAssistiveTech?: boolean;
+  /**
    * Set on images that are above the fold.
    *
    *  is right for a 20-card grid and wrong for its first row: the
@@ -49,6 +55,7 @@ export function MediaPlaceholder({
   sizes,
   className,
   priority,
+  hiddenFromAssistiveTech,
 }: MediaPlaceholderProps) {
   if (src) {
     const responsive = getResponsiveEditorialImageProps(src, sizes);
@@ -57,6 +64,7 @@ export function MediaPlaceholder({
       <img
         {...responsive}
         alt={label}
+        aria-hidden={hiddenFromAssistiveTech || undefined}
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding={priority ? "sync" : "async"}

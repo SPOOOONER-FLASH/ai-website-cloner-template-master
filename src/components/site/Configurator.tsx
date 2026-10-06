@@ -458,8 +458,9 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
                         <MediaPlaceholder
                           src={option.image}
                           ratio="1 / 1"
-                          label=""
+                          label={humanise(option.value)}
                           sizes="120px"
+                          hiddenFromAssistiveTech
                         />
                       </span>
                     ) : null}

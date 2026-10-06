@@ -360,7 +360,7 @@ function Tile({
         <span className="studio-tile-title">{title}</span>
         {meta ? <span className="studio-tile-meta">{meta}</span> : null}
         <span className="studio-tile-media">
-          <MediaPlaceholder src={image.src} ratio="1 / 1" label="" sizes="120px" />
+          <MediaPlaceholder src={image.src} ratio="1 / 1" label={meta ? `${title} ${meta}` : title} sizes="120px" hiddenFromAssistiveTech />
         </span>
       </button>
     </li>

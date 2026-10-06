@@ -60,7 +60,13 @@ export function ProductVariants({ variants, locale }: ProductVariantsProps) {
                   )}
                 >
                   <span className="block w-40 shrink-0">
-                    <MediaPlaceholder ratio="1 / 1" src={option.heroImage.src} label="" sizes="40px" />
+                    <MediaPlaceholder
+                      ratio="1 / 1"
+                      src={option.heroImage.src}
+                      label={`${option.model} ${nameFor(option.value, row.axis, locale)}`}
+                      sizes="40px"
+                      hiddenFromAssistiveTech
+                    />
                   </span>
                   <span className="min-w-0">
                     <span className="block truncate text-c2 text-ink">{nameFor(option.value, row.axis, locale)}</span>
