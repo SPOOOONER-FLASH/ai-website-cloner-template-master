@@ -1,0 +1,43 @@
+{
+  "_comment": [
+    "Quotation job: KENYA enquiry (first drafted as South Africa by mistake; boss corrected 2026-10-06).",
+    "Buyer: door 41 mm, 12 sets, pull handle 450 mm long x 25 mm dia, brushed gold, lock case per his",
+    "photo, cylinder key one side.",
+    "Boss 2026-10-06: cylinder (solid brass) 25 + lock case 35 + pull handle 55 = RMB 115 per set,",
+    "already raised because the quantity is small; quote the three together, / 6.7 = USD 17.16 per set.",
+    "Build:  py scripts/build-quotation.py docs/quotations/south-africa-20261006.json"
+  ],
+  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - Kenya - Lock Set.xlsx",
+  "sheetName": "Quotation",
+  "company": "docs/quotations/_company.json",
+  "meta": { "number": "HY20261006-KE", "date": "October 6, 2026" },
+  "buyer": { "name": "TBC", "lines": ["Kenya"] },
+  "terms": [
+    { "label": "Prices", "value": "USD per set; RMB shown. Rate RMB 6.7 = USD 1" },
+    { "label": "Incoterm", "value": "TBC" },
+    { "label": "Payment", "value": "TBC" },
+    { "label": "Lead time", "value": "TBC" },
+    { "label": "Packing", "value": "Neutral packing" },
+    { "label": "Validity", "value": "TBC" }
+  ],
+  "items": [
+    {
+      "title": "Lock Set",
+      "qty": 12,
+      "unit": "SET",
+      "unitPrice": 17.16,
+      "specs": [
+        "Set = lock case + pull handle + cylinder, for 41 mm door",
+        "Lock case as your photo: lining and strike plate 201 stainless, deadbolt 304 stainless",
+        "Pull handle: 450 mm long, 25 mm diameter, brushed gold",
+        "Cylinder: solid brass, key one side",
+        "Packing: neutral",
+        "Unit price: RMB 115.00 / USD 17.16 per set"
+      ]
+    }
+  ],
+  "notes": [
+    "Prices exclude VAT and freight. RMB and USD both shown; USD at RMB 6.7 = USD 1."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm and we will issue the pro forma invoice."
+}
