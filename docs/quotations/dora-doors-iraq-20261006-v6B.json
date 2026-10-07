@@ -1,0 +1,169 @@
+{
+  "_comment": [
+    "Quotation job for DORA Doors (Iraq) - door hardware. DRAFT v2 2026-10-06, for the boss to check.",
+    "Customer sent his 'Hardware Order' list (an order already in production elsewhere): quote on it,",
+    "without the knob. Boss 2026-10-06: 30/70, 30 days, EXW, quantities per the list.",
+    "",
+    "Pricing rule (boss): the dearer quote x1.15, the cheaper x1.2, take the lower; single source x1.2.",
+    "RMB -> USD at 6.71.",
+    "  lock case  10.30 vs 11.50 (8545, Karl): 10.30x1.2 = 12.36 -> USD 1.84",
+    "  dbl cyl     6.80 (60mm, Karl) vs 8.70:   6.80x1.2 =  8.16 -> USD 1.22",
+    "  thumbturn   7.30 (one source):           7.30x1.2 =  8.76 -> USD 1.31",
+    "  door stop   8.00 (Limingyang, satin, one source): 8.00x1.2 = 9.60 -> USD 1.43",
+    "  hinge       NO VALID PRICE: customer confirmed SS201; both costs (2.50, 5.30) are iron/carbon steel.",
+    "",
+    "Spec mismatches for the boss (customer's chat vs the cost quote we hold):",
+    "  lock case: customer wants zinc latch AND deadbolt, 201 SS strike, matt black, rounded front plate,",
+    "             85x45; the 10.30 cost is zinc latch, iron deadbolt/faceplate, chrome.",
+    "  door stop: customer list says chrome finish; the 8.00 cost is satin.",
+    "Not quoted: item 5 lever handle (no cost yet), item 6 knob (customer asked to leave it out).",
+    "Trademark: lock case no extra charge; cylinder needs MOQ 2,000 pcs (chat).",
+    "Open with customer: cylinders keyed alike / master keyed, keys per cylinder; he asked for 'with shipping'",
+    "but the boss set EXW.",
+    "",
+    "Build:  py scripts/build-quotation.py docs/quotations/dora-doors-iraq-20261006.json",
+    "v3 2026-10-06: boss chose the 2.50 hinge (x1.2 = RMB 3.00 / USD 0.45 per pair; cost quote was iron, customer asked SS201 - boss decision); lever row added with qty, price to be filled by the boss.",
+    "v4: lever from Gadlord: black powder coat 19.50 x1.2 = 23.40 (USD 3.49); MSN plated 21.00 x1.2 = 25.20 (USD 3.76) shown as option. Customer list said chrome - neither offered.",
+    "v5 2026-10-06 boss: every cost x1.2 then /6.7 (no 1.15). Cheapest of Laomao sheet / Karl / Jiadegu / Limingyang / Gadlord: lock 10.30, dbl cyl 6.80 (Karl), thumbturn 7.30, hinge 201 3.00/pair (Jiadegu), door stop polished chrome 9.30 (Limingyang), lever black 19.50 (Gadlord).",
+    "v6B: cost x1.168 /6.7; door stopper back to satin 8.00 (boss: 9.30 too dear, quote the low price)."
+  ],
+  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - DORA Doors - Iraq v6B x1.168.xlsx",
+  "sheetName": "Quotation",
+  "company": "docs/quotations/_company.json",
+  "meta": {
+    "number": "HY20261006-B",
+    "date": "October 6, 2026"
+  },
+  "buyer": {
+    "name": "DORA Doors",
+    "lines": [
+      "Iraq"
+    ]
+  },
+  "terms": [
+    {
+      "label": "Prices",
+      "value": "USD per piece (hinges per pair); RMB shown in each line. Rate RMB 6.7 = USD 1"
+    },
+    {
+      "label": "Incoterm",
+      "value": "EXW Zhongshan, China"
+    },
+    {
+      "label": "Payment",
+      "value": "30% deposit, 70% balance"
+    },
+    {
+      "label": "Lead time",
+      "value": "30 days from receipt of deposit"
+    },
+    {
+      "label": "Packing",
+      "value": "White box"
+    },
+    {
+      "label": "Validity",
+      "value": "TBC"
+    }
+  ],
+  "items": [
+    {
+      "title": "Lock Case",
+      "qty": 1050,
+      "unit": "PCS",
+      "unitPrice": 1.8,
+      "image": "/images/quotation-assets/dora-iraq/lock-case.png",
+      "specs": [
+        "Mortise lock case, 85 x 45 mm",
+        "Latch bolt and deadbolt: zinc alloy",
+        "Strike plate: 201 stainless steel",
+        "Front plate: rounded, matt black",
+        "Your trademark on the lock case: no extra charge",
+        "Packing: white box",
+        "Unit price: RMB 12.03 / USD 1.80"
+      ]
+    },
+    {
+      "title": "Double Cylinder",
+      "qty": 820,
+      "unit": "PCS",
+      "unitPrice": 1.19,
+      "image": "/images/quotation-assets/dora-iraq/double-cylinder.png",
+      "specs": [
+        "Euro profile cylinder, key / key, 60 mm",
+        "Body and core: zinc alloy",
+        "3 iron keys",
+        "Finish: chrome",
+        "Packing: white box",
+        "Unit price: RMB 7.94 / USD 1.19"
+      ]
+    },
+    {
+      "title": "Thumbturn Cylinder",
+      "qty": 250,
+      "unit": "PCS",
+      "unitPrice": 1.27,
+      "image": "/images/quotation-assets/dora-iraq/single-cylinder.png",
+      "specs": [
+        "Euro profile cylinder, key / thumbturn, 60 mm",
+        "Body: zinc alloy",
+        "3 iron keys",
+        "Finish: chrome",
+        "Packing: white box",
+        "Unit price: RMB 8.53 / USD 1.27"
+      ]
+    },
+    {
+      "title": "Flush Hinge",
+      "qty": 2100,
+      "unit": "PAIR",
+      "image": "/images/quotation-assets/dora-iraq/flush-hinge.png",
+      "specs": [
+        "Flush (butterfly) hinge, 4\" x 3\" x 2.5 mm (100 x 75 x 2.5), per pair",
+        "Material: 201 stainless steel",
+        "Finish: chrome",
+        "2,100 pairs = 4,200 pcs",
+        "Packing: white box",
+        "Unit price: RMB 3.50 / USD 0.52 per pair"
+      ],
+      "unitPrice": 0.52
+    },
+    {
+      "title": "Lever Handle",
+      "qty": 1040,
+      "unit": "SET",
+      "image": "/images/quotation-assets/dora-iraq/lever-gadlord.png",
+      "specs": [
+        "Lever handle on 40 x 40 mm square rosette",
+        "Lever: aluminium alloy; rose ring: zinc alloy",
+        "Finish: black (powder coated)",
+        "Packing: white box",
+        "Option: MSN matt satin nickel (plated) RMB 24.53 / USD 3.66",
+        "Unit price: RMB 22.78 / USD 3.40"
+      ],
+      "unitPrice": 3.4
+    },
+    {
+      "title": "Door Stopper",
+      "qty": 2100,
+      "unit": "PCS",
+      "unitPrice": 1.39,
+      "image": "/images/quotation-assets/dora-iraq/door-stopper.png",
+      "specs": [
+        "Floor-mounted door stopper with black rubber ring",
+        "Material: stainless steel",
+        "Fixing screw and wall plug included",
+        "Finish: satin",
+        "Packing: white box",
+        "Unit price: RMB 9.34 / USD 1.39"
+      ]
+    }
+  ],
+  "notes": [
+    "Quantities as in your Hardware Order list; knob (item 6) not quoted as requested.",
+    "Prices exclude VAT and freight. RMB and USD both shown; USD at RMB 6.7 = USD 1.",
+    "Trademark: printed on the lock case at no extra charge; on the cylinder, MOQ 2,000 pcs.",
+    "Please confirm whether the cylinders are keyed alike or master keyed, and how many keys per cylinder."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm the items and quantities and we will issue the pro forma invoice."
+}
