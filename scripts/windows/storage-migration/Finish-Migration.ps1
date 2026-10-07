@@ -1,7 +1,14 @@
 $ErrorActionPreference = 'Stop'
 try {
   $activeApps = @(Get-Process | Where-Object {
-    $_.ProcessName -match '^(ChatGPT|Claude|claude|codex|codex-code-mode-host|codex-computer-use-swift|node_repl)$'
+    $_.Id -ne $PID -and (
+      $_.ProcessName -match '^(ChatGPT|Claude|claude|codex|codex-code-mode-host|codex-computer-use-swift|node_repl)$' -or
+      ($_.Path -and (
+        $_.Path -like 'C:\Users\86132\.cache\codex-runtimes\*' -or
+        $_.Path -like 'C:\Users\86132\AppData\Local\OpenAI\Codex\*' -or
+        $_.Path -like 'C:\Users\86132\AppData\Local\Packages\Claude_*\LocalCache\*'
+      ))
+    )
   })
   if ($activeApps.Count) {
     $names = ($activeApps.ProcessName | Sort-Object -Unique) -join ', '
@@ -42,7 +49,6 @@ try {
   # Install future developer-cache and temporary-directory locations only after cutover.
   $settings = @{
     CODEX_HOME='E:\WorkResources\home\codex'
-    CLAUDE_CONFIG_DIR='E:\WorkResources\home\claude'
     TEMP='E:\WorkResources\Temp'
     TMP='E:\WorkResources\Temp'
     npm_config_cache='E:\WorkResources\caches\npm'
@@ -60,6 +66,7 @@ try {
   }
   $summary = @{time=(Get-Date).ToString('o');state='all-planned-directories-migrated';CFreeBytes=(Get-PSDrive C).Free;EFreeBytes=(Get-PSDrive E).Free;settings=$settings}
   $summary | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath "$PSScriptRoot\finish-success.json" -Encoding utf8
+  if (Test-Path -LiteralPath "$PSScriptRoot\Report-Migration.ps1") { & "$PSScriptRoot\Report-Migration.ps1" }
   Write-Host 'SUCCESS: Work resources are on E. Original paths are compatibility links. Restart Windows before reopening Codex/Claude so all applications inherit the new TEMP/cache settings.' -ForegroundColor Green
   Stop-Transcript | Out-Null
   exit 0

@@ -3,7 +3,7 @@
 $ErrorActionPreference = 'Stop'
 $migrationRoot = 'E:\WorkResources\migration'
 New-Item -ItemType Directory -Path $migrationRoot -Force | Out-Null
-foreach ($name in @('Move-VerifiedDirectory.ps1','verify-tree.py','Finish-Migration.ps1','Finish-Migration.cmd')) {
+foreach ($name in @('Move-VerifiedDirectory.ps1','verify-tree.py','Finish-Migration.ps1','Finish-Migration.cmd','Report-Migration.ps1')) {
   Copy-Item -LiteralPath "$PSScriptRoot\$name" -Destination "$migrationRoot\$name" -Force
 }
 $live = @()
