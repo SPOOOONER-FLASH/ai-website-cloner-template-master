@@ -21,9 +21,10 @@
     "Open with customer: cylinders keyed alike / master keyed, keys per cylinder; he asked for 'with shipping'",
     "but the boss set EXW.",
     "",
-    "Build:  py scripts/build-quotation.py docs/quotations/dora-doors-iraq-20261006.json"
+    "Build:  py scripts/build-quotation.py docs/quotations/dora-doors-iraq-20261006.json",
+    "v3 2026-10-06: boss chose the 2.50 hinge (x1.2 = RMB 3.00 / USD 0.45 per pair; cost quote was iron, customer asked SS201 - boss decision); lever row added with qty, price to be filled by the boss."
   ],
-  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - DORA Doors - Iraq v2.xlsx",
+  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - DORA Doors - Iraq v3.xlsx",
   "sheetName": "Quotation",
   "company": "docs/quotations/_company.json",
   "meta": {
@@ -37,12 +38,30 @@
     ]
   },
   "terms": [
-    { "label": "Prices", "value": "USD per piece; RMB shown in each line. Rate RMB 6.71 = USD 1" },
-    { "label": "Incoterm", "value": "EXW Zhongshan, China" },
-    { "label": "Payment", "value": "30% deposit, 70% balance" },
-    { "label": "Lead time", "value": "30 days from receipt of deposit" },
-    { "label": "Packing", "value": "White box" },
-    { "label": "Validity", "value": "TBC" }
+    {
+      "label": "Prices",
+      "value": "USD per piece; RMB shown in each line. Rate RMB 6.71 = USD 1"
+    },
+    {
+      "label": "Incoterm",
+      "value": "EXW Zhongshan, China"
+    },
+    {
+      "label": "Payment",
+      "value": "30% deposit, 70% balance"
+    },
+    {
+      "label": "Lead time",
+      "value": "30 days from receipt of deposit"
+    },
+    {
+      "label": "Packing",
+      "value": "White box"
+    },
+    {
+      "label": "Validity",
+      "value": "TBC"
+    }
   ],
   "items": [
     {
@@ -93,15 +112,29 @@
     },
     {
       "title": "Flush Hinge",
-      "qty": 4200,
-      "unit": "PCS",
+      "qty": 2100,
+      "unit": "PAIR",
       "image": "/images/quotation-assets/dora-iraq/flush-hinge.png",
       "specs": [
-        "Flush (butterfly) hinge, 100 x 75 x 2.5 mm",
+        "Flush (butterfly) hinge, 100 x 75 x 2.5 mm, price per pair",
         "Material: 201 stainless steel",
         "Finish: chrome",
+        "2,100 pairs = 4,200 pcs",
         "Packing: white box",
-        "Unit price: TBC"
+        "Unit price: RMB 3.00 / USD 0.45 per pair"
+      ],
+      "unitPrice": 0.45
+    },
+    {
+      "title": "Lever Handle",
+      "qty": 1040,
+      "unit": "SET",
+      "image": "/images/quotation-assets/dora-iraq/lever.png",
+      "specs": [
+        "Lever handle on 40 x 40 mm square rosette",
+        "Lever: aluminium; rose ring: zinc alloy",
+        "Finish: chrome",
+        "Packing: white box"
       ]
     },
     {
@@ -121,7 +154,7 @@
     }
   ],
   "notes": [
-    "Quantities as in your Hardware Order list. Lever handles (item 5) to follow; knob (item 6) not quoted as requested.",
+    "Quantities as in your Hardware Order list; knob (item 6) not quoted as requested.",
     "Prices exclude VAT and freight. RMB and USD both shown; USD at RMB 6.71 = USD 1.",
     "Trademark: printed on the lock case at no extra charge; on the cylinder, MOQ 2,000 pcs.",
     "Please confirm whether the cylinders are keyed alike or master keyed, and how many keys per cylinder."
