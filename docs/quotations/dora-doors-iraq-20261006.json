@@ -22,9 +22,10 @@
     "but the boss set EXW.",
     "",
     "Build:  py scripts/build-quotation.py docs/quotations/dora-doors-iraq-20261006.json",
-    "v3 2026-10-06: boss chose the 2.50 hinge (x1.2 = RMB 3.00 / USD 0.45 per pair; cost quote was iron, customer asked SS201 - boss decision); lever row added with qty, price to be filled by the boss."
+    "v3 2026-10-06: boss chose the 2.50 hinge (x1.2 = RMB 3.00 / USD 0.45 per pair; cost quote was iron, customer asked SS201 - boss decision); lever row added with qty, price to be filled by the boss.",
+    "v4: lever from Gadlord: black powder coat 19.50 x1.2 = 23.40 (USD 3.49); MSN plated 21.00 x1.2 = 25.20 (USD 3.76) shown as option. Customer list said chrome - neither offered."
   ],
-  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - DORA Doors - Iraq v3.xlsx",
+  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - DORA Doors - Iraq v4.xlsx",
   "sheetName": "Quotation",
   "company": "docs/quotations/_company.json",
   "meta": {
@@ -129,13 +130,16 @@
       "title": "Lever Handle",
       "qty": 1040,
       "unit": "SET",
-      "image": "/images/quotation-assets/dora-iraq/lever.png",
+      "image": "/images/quotation-assets/dora-iraq/lever-gadlord.png",
       "specs": [
         "Lever handle on 40 x 40 mm square rosette",
-        "Lever: aluminium; rose ring: zinc alloy",
-        "Finish: chrome",
-        "Packing: white box"
-      ]
+        "Lever: aluminium alloy; rose ring: zinc alloy",
+        "Finish: black (powder coated)",
+        "Option: MSN matt satin nickel (plated) RMB 25.20 / USD 3.76",
+        "Packing: white box",
+        "Unit price: RMB 23.40 / USD 3.49"
+      ],
+      "unitPrice": 3.49
     },
     {
       "title": "Door Stopper",
