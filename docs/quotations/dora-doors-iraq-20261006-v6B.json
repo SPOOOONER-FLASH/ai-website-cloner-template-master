@@ -43,11 +43,11 @@
   "terms": [
     {
       "label": "Prices",
-      "value": "USD per piece (hinges per pair); RMB shown in each line. Rate RMB 6.7 = USD 1"
+      "value": "USD per piece (hinges per pair); RMB shown in each line. Rate RMB 6.69 = USD 1"
     },
     {
       "label": "Incoterm",
-      "value": "EXW Zhongshan; delivery to your door factory in Quzhou charged separately"
+      "value": "EXW Zhongshan, plus delivery to Quzhou (line 7)"
     },
     {
       "label": "Payment",
@@ -102,7 +102,7 @@
       "title": "Thumbturn Cylinder",
       "qty": 250,
       "unit": "PCS",
-      "unitPrice": 1.27,
+      "unitPrice": 1.28,
       "image": "/images/quotation-assets/dora-iraq/single-cylinder.png",
       "specs": [
         "Euro profile cylinder, key / thumbturn, 60 mm",
@@ -110,7 +110,7 @@
         "3 iron keys",
         "Finish: chrome",
         "Packing: white box",
-        "Unit price: RMB 8.53 / USD 1.27"
+        "Unit price: RMB 8.53 / USD 1.28"
       ]
     },
     {
@@ -138,16 +138,16 @@
         "Lever: aluminium alloy; rose ring: zinc alloy",
         "Finish: black (powder coated)",
         "Packing: white box",
-        "Option: MSN matt satin nickel (plated) RMB 24.53 / USD 3.66",
-        "Unit price: RMB 22.78 / USD 3.40"
+        "Option: MSN matt satin nickel (plated) RMB 24.53 / USD 3.67",
+        "Unit price: RMB 22.78 / USD 3.41"
       ],
-      "unitPrice": 3.4
+      "unitPrice": 3.41
     },
     {
       "title": "Door Stopper",
       "qty": 2100,
       "unit": "PCS",
-      "unitPrice": 1.39,
+      "unitPrice": 1.4,
       "image": "/images/quotation-assets/dora-iraq/door-stopper.png",
       "specs": [
         "Floor-mounted door stopper with black rubber ring",
@@ -155,14 +155,24 @@
         "Fixing screw and wall plug included",
         "Finish: satin",
         "Packing: white box",
-        "Unit price: RMB 9.34 / USD 1.39"
+        "Unit price: RMB 9.34 / USD 1.40"
+      ]
+    },
+    {
+      "title": "Freight",
+      "qty": 1,
+      "unit": "LOT",
+      "unitPrice": 448.43,
+      "specs": [
+        "Delivery from Zhongshan to your door factory in Quzhou, China",
+        "RMB 3,000.00 / USD 448.43"
       ]
     }
   ],
   "notes": [
     "Quantities as in your Hardware Order list; knob (item 6) not quoted as requested.",
-    "Prices exclude VAT/taxes and freight. RMB and USD both shown; USD at RMB 6.7 = USD 1.",
-    "Freight charged separately: EXW plus our delivery from Zhongshan to your door factory in Quzhou, China.",
+    "Prices exclude VAT/taxes and freight. RMB and USD both shown; USD at RMB 6.69 = USD 1.",
+    "Delivery from Zhongshan to your door factory in Quzhou: RMB 3,000 (line 7). Freight beyond Quzhou is not included.",
     "Export customs clearance is not included; it is handled by your agent.",
     "Trademark: printed on the lock case at no extra charge; on the cylinder, MOQ 2,000 pcs.",
     "Please confirm whether the cylinders are keyed alike or master keyed, and how many keys per cylinder."
