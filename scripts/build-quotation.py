@@ -415,10 +415,10 @@ def build(job: dict, out_path: Path) -> Path:
              fill=fill)
         price = cell(ws, f"H{row}", item.get("unitPrice"), size=10, align="center",
                      border=box, fill=fill)
-        price.number_format = '#,##0.00;;""'
+        price.number_format = '#,##0.00;-#,##0.00;""'
         amount = cell(ws, f"I{row}", f'=IF(H{row}="","",F{row}*H{row})', size=10,
                       align="center", border=box, fill=fill)
-        amount.number_format = '#,##0.00;;""'
+        amount.number_format = '#,##0.00;-#,##0.00;""'
 
     # -- total -----------------------------------------------------------------
     first_item, last_item = table_head + 1, row
@@ -434,7 +434,7 @@ def build(job: dict, out_path: Path) -> Path:
                  f'=IF(SUM(H{first_item}:H{last_item})=0,"",'
                  f'SUM(I{first_item}:I{last_item}))',
                  size=11, bold=True, align="center", border=top, fill="F2F2F2")
-    total.number_format = '#,##0.00;;""'
+    total.number_format = '#,##0.00;-#,##0.00;""'
 
     # -- notes -----------------------------------------------------------------
     row += 2
