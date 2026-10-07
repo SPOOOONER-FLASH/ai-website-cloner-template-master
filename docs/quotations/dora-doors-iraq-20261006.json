@@ -1,0 +1,124 @@
+{
+  "_comment": [
+    "Quotation job for DORA Doors (Iraq) - door hardware. DRAFT 2026-10-06, for the boss to check.",
+    "",
+    "Pricing rule (boss, 2026-10-06): quote the cheaper source; the dearer quote x1.15, the",
+    "cheaper quote x1.2, take the lower result. Single-source items x1.2. RMB -> USD at 6.71.",
+    "  knob        6.10 (one source)                 x1.2 = RMB  7.32 -> USD 1.09",
+    "  lock case  10.30 vs 11.50 (8545, Karl)        10.30x1.2 = 12.36 < 11.50x1.15 = 13.23 -> USD 1.84",
+    "  dbl cyl     6.80 (60mm, Karl) vs 8.70         6.80x1.2 = 8.16 < 8.70x1.15 = 10.01 -> USD 1.22",
+    "  single cyl  7.30 (one source)                 x1.2 = RMB  8.76 -> USD 1.31",
+    "  flush hinge 2.50/pair (Jiadegu, 4x3x2.5 iron) vs 5.30/pair (MOQ 3000)",
+    "                                                2.50x1.2 = 3.00 < 5.30x1.15 = 6.10 -> USD 0.45",
+    "Supplier costs are ex-factory, excl. tax and freight. Not shown on the sheet.",
+    "",
+    "Lever handle sets and the door stop in the customer's photos have no price yet:",
+    "left out on the boss's instruction (2026-10-06).",
+    "Rows without a slug are sourced items not in the HYDE catalogue; photos are cropped from",
+    "the supplier's own price sheet (public/images/quotation-assets/dora-iraq/).",
+    "",
+    "Build:  py scripts/build-quotation.py docs/quotations/dora-doors-iraq-20261006.json"
+  ],
+  "outFile": "~/Desktop/hyde/报价/20261006 Quotation - DORA Doors - Iraq.xlsx",
+  "sheetName": "Quotation",
+  "company": "docs/quotations/_company.json",
+  "meta": {
+    "number": "HY20261006",
+    "date": "October 6, 2026"
+  },
+  "buyer": {
+    "name": "DORA Doors",
+    "lines": [
+      "Iraq"
+    ]
+  },
+  "terms": [
+    { "label": "Prices", "value": "USD per piece (hinges per pair); RMB shown in each line. Rate RMB 6.71 = USD 1" },
+    { "label": "Incoterm", "value": "TBC" },
+    { "label": "Payment", "value": "TBC" },
+    { "label": "Lead time", "value": "TBC" },
+    { "label": "Packing", "value": "White box" },
+    { "label": "Validity", "value": "TBC" }
+  ],
+  "items": [
+    {
+      "title": "Ball Knob",
+      "unit": "PCS",
+      "unitPrice": 1.09,
+      "image": "/images/quotation-assets/dora-iraq/knob.png",
+      "specs": [
+        "Ball knob",
+        "Material: aluminium alloy",
+        "Finish: electroplated polished chrome",
+        "Packing: white box",
+        "Unit price: RMB 7.32 / USD 1.09"
+      ]
+    },
+    {
+      "title": "Lock Case",
+      "unit": "PCS",
+      "unitPrice": 1.84,
+      "image": "/images/quotation-assets/dora-iraq/lock-case.png",
+      "specs": [
+        "Mortise lock case",
+        "Latch: zinc alloy; deadbolt: iron",
+        "Faceplate and strike plate: iron",
+        "Finish: chrome plated (latch, bolt, faceplate, strike)",
+        "Centre distance / backset: TBC",
+        "Packing: white box",
+        "Unit price: RMB 12.36 / USD 1.84"
+      ]
+    },
+    {
+      "title": "Double Cylinder",
+      "unit": "PCS",
+      "unitPrice": 1.22,
+      "image": "/images/quotation-assets/dora-iraq/double-cylinder.png",
+      "specs": [
+        "Euro profile cylinder, key / key",
+        "Length: 60 mm",
+        "Body: zinc alloy",
+        "3 iron keys",
+        "Finish: TBC",
+        "Packing: white box",
+        "Unit price: RMB 8.16 / USD 1.22"
+      ]
+    },
+    {
+      "title": "Thumbturn Cylinder",
+      "unit": "PCS",
+      "unitPrice": 1.31,
+      "image": "/images/quotation-assets/dora-iraq/single-cylinder.png",
+      "specs": [
+        "Euro profile cylinder, key / thumbturn",
+        "Body: zinc alloy, chrome plated",
+        "3 iron keys, nickel plated",
+        "Thumbturn: chrome plated",
+        "Length: TBC",
+        "Packing: white box",
+        "Unit price: RMB 8.76 / USD 1.31"
+      ]
+    },
+    {
+      "title": "Flush Hinge",
+      "qty": 2100,
+      "unit": "PAIR",
+      "unitPrice": 0.45,
+      "image": "/images/quotation-assets/dora-iraq/flush-hinge.png",
+      "specs": [
+        "Flush (butterfly) hinge, price per pair",
+        "Size: 4\" x 3\" x 2.5 mm",
+        "Material: iron",
+        "Finish: TBC",
+        "Packing: white box",
+        "Unit price: RMB 3.00 / USD 0.45 per pair"
+      ]
+    }
+  ],
+  "notes": [
+    "Prices exclude VAT and freight.",
+    "RMB and USD prices are both shown; USD converted at RMB 6.71 = USD 1.",
+    "Quantity shown for the flush hinge is the 2,100 pairs in your enquiry; please confirm quantities for the other items."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm the items and quantities and we will issue the pro forma invoice."
+}

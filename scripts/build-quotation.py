@@ -190,7 +190,15 @@ def resolve_company(job: dict) -> dict:
     return company
 
 
-def load_product(slug: str) -> dict:
+def load_product(slug: str | None) -> dict:
+    """The catalogue entry, or {} for a line with no `slug`.
+
+    Sourced items that are not in the HYDE catalogue (the 2026-10-06 Iraq job: flush hinge,
+    aluminium knob) carry their own `title`, `specs` and `image` and no product link. Pointing
+    them at a "closest" catalogue page would show the buyer a different product.
+    """
+    if not slug:
+        return {}
     path = ROOT / "content" / "products" / f"{slug}.json"
     if not path.exists():
         sys.exit(f"no catalogue entry for {slug} ({path})")
@@ -353,13 +361,13 @@ def build(job: dict, out_path: Path) -> Path:
         cell(ws, f"{col}{table_head}", label, size=8, bold=True, color="FFFFFF",
              fill=HEAD_BG, align="center", wrap=True)
 
-    verify_product_links([load_product(item["slug"]) for item in job["items"]])
+    verify_product_links([load_product(item.get("slug")) for item in job["items"] if item.get("slug")])
 
     box = Border(left=thin(), right=thin(), top=thin(), bottom=thin())
     row = table_head
     for idx, item in enumerate(job["items"], start=1):
         row += 1
-        product = load_product(item["slug"])
+        product = load_product(item.get("slug"))
         specs = spec_lines(product, item)
         row_px = item.get("rowHeightPx") or spec_row_height(specs)
         ws.row_dimensions[row].height = px_to_pt(row_px)
@@ -376,18 +384,21 @@ def build(job: dict, out_path: Path) -> Path:
         # The model cell doubles as the link. Spelling the URL out inside the
         # specification cell cost two or three wrapped lines on every row and read as
         # clutter; "View online" under the model number does the same job in one.
-        url = product_url(job, product)
         title = item.get("title") or f"{product['model']} {product['name']}"
         c = cell(ws, f"C{row}", align="center", wrap=True, border=box, fill=fill)
-        c.value = CellRichText(
-            # Customer part codes such as 2614HYG-55 are ten characters; at 13pt they wrap at the
-            # hyphen inside the 13-character column, so long titles step down to fit one line.
-            TextBlock(InlineFont(rFont=FONT, sz=13 if len(title) <= 7 else 9.5,
-                                 b=True, color=INK), title),
-            TextBlock(InlineFont(rFont=FONT, sz=7, color=MUTED, u="single"),
-                      "\nView online ›"),
-        )
-        c.hyperlink = url
+        # Customer part codes such as 2614HYG-55 are ten characters; at 13pt they wrap at the
+        # hyphen inside the 13-character column, so long titles step down to fit one line.
+        heading = TextBlock(InlineFont(rFont=FONT, sz=13 if len(title) <= 7 else 9.5,
+                                       b=True, color=INK), title)
+        if product:
+            c.value = CellRichText(
+                heading,
+                TextBlock(InlineFont(rFont=FONT, sz=7, color=MUTED, u="single"),
+                          "\nView online ›"),
+            )
+            c.hyperlink = product_url(job, product)
+        else:
+            c.value = CellRichText(heading)
 
         image = resolve_image(product, item)
         if image:
