@@ -194,3 +194,41 @@ test("the homepage bundle does not contain the product catalog", () => {
     `homepage JavaScript is ${Math.round(totalKb)} KB; it was 669 KB on 2026-09-11 after removing the catalog`,
   );
 });
+
+/*
+  HTML WEIGHT, PER PAGE (2026-10-08, Bing site scan of 2026-10-05).
+
+  Bing listed 100 pages over 500 KB: every language's category grids, product finder and
+  configurator. The weight was React's payload, not the markup — each page carried full
+  product records (ten languages of copy, SEO fields, translation hashes) as a client
+  prop: /products/knob-locks/ 1,147 KB, /product-finder/ 1,082 KB, /configurator/ 868 KB.
+  After moving the finder and configurator data to /data/<locale>/finder.json and giving
+  the category grid card-only records they measured 314 KB, 392 KB and 178 KB (heaviest language: ru finder, 427 KB).
+
+  Two ceilings. The tight one is on exactly the pages that regressed, so a full Product
+  handed to a client component again fails here. The loose one is site-wide: /model-lookup/
+  (~530 KB) and /products/ (~480–525 KB) are long by design — they ARE the full model
+  index, in markup, and React's copy of it doubles the bytes — so they set the ceiling
+  rather than being cut to meet one.
+*/
+test("no exported HYDE page carries the catalog in its HTML", () => {
+  const out = join(repositoryRoot, "out");
+  const tooHeavy = [];
+  const tooHeavyTight = [];
+  const tight = /^(?:[a-z]{2}\/)?(?:products\/[^/]+|product-finder|configurator)$/;
+  const walk = (dir, rel) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        if (rel === "" && /^(?:_next|images|videos|downloads|zh|zh-en)$/.test(entry.name)) continue;
+        walk(join(dir, entry.name), rel ? `${rel}/${entry.name}` : entry.name);
+      } else if (entry.name === "index.html") {
+        const kb = readFileSync(join(dir, entry.name)).length / 1024;
+        if (kb > 640) tooHeavy.push(`${rel || "/"} ${Math.round(kb)} KB`);
+        if (tight.test(rel) && kb > 460) tooHeavyTight.push(`${rel} ${Math.round(kb)} KB`);
+      }
+    }
+  };
+  walk(out, "");
+  assert.deepEqual(tooHeavyTight, [], "a category grid, the finder or the configurator is carrying product data in its HTML again — pass toFinderProduct records, or fetch /data/<locale>/finder.json");
+  assert.deepEqual(tooHeavy, [], "a page's HTML is over 640 KB");
+});
