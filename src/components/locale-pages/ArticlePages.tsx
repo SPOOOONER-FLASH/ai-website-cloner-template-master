@@ -47,11 +47,11 @@ export function GuidesIndexPage({ locale }: { locale: Locale }) {
 
 function articleMetadata(locale: Locale, article: NewsArticle, section: "news" | "guides", slug: string): Metadata {
   const p = prefixer(locale);
-  const title = t(article, "seoTitle", locale);
+  const title = fitTitle(t(article, "seoTitle", locale));
   const description = t(article, "seoDescription", locale);
   const path = p(`/${section}/${slug}`);
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: path,

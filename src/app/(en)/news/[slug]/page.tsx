@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     openGraph: {
       type: "article",
       url: absoluteUrl(`/news/${slug}/`),
-      title: article.seoTitle,
+      title: fitTitle(article.seoTitle),
       description: article.seoDescription,
       publishedTime: article.publishedAt,
       ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     },
     twitter: {
       card: "summary_large_image",
-      title: article.seoTitle,
+      title: fitTitle(article.seoTitle),
       description: article.seoDescription,
       images: [absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src ?? defaultOgImage)],
     },

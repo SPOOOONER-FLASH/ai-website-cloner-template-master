@@ -36,11 +36,11 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     nothing. An empty description makes Google write its own from the page, which on a
     technical article is reliably worse than a human sentence in the wrong language.
   */
-  const title = article.seoTitleEs ?? article.seoTitle;
+  const title = fitTitle(article.seoTitleEs ?? article.seoTitle);
   const description = article.seoDescriptionEs ?? article.seoDescription;
 
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/es/news/${slug}/`,

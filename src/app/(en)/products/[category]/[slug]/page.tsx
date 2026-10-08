@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       type: "website",
       url,
-      title: product.seoTitle,
+      title: fitTitle(product.seoTitle),
       description: product.seoDescription,
       // 112 products still have no photography. Falling back to the shared card keeps
       // their links from pasting into chat as a grey box.
@@ -104,7 +104,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     },
     twitter: {
       card: "summary_large_image",
-      title: product.seoTitle,
+      title: fitTitle(product.seoTitle),
       description: product.seoDescription,
       images: [absoluteUrl(product.heroImage.src ?? defaultOgImage)],
     },

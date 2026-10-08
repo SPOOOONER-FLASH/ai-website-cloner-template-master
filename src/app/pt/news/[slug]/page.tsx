@@ -48,11 +48,11 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     Spanish description is being told this page is not for them, which is worse than
     English — see the fallback rule in src/lib/localised.ts.
   */
-  const title = article.seoTitlePt ?? article.seoTitle;
+  const title = fitTitle(article.seoTitlePt ?? article.seoTitle);
   const description = article.seoDescriptionPt ?? article.seoDescription;
 
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/pt/news/${slug}/`,

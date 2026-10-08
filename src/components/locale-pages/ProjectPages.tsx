@@ -31,13 +31,13 @@ export function projectMetadata(locale: Locale, slug: string): Metadata {
   const project = getProjectBySlug(slug);
   if (!project) return {};
   const seoTitle = t(project, "seoTitle", locale);
-  const title = seoTitle !== project.seoTitle ? seoTitle : `${t(project, "name", locale)} | ${siteName}`;
+  const title = fitTitle(seoTitle !== project.seoTitle ? seoTitle : `${t(project, "name", locale)} | ${siteName}`);
   const seoDescription = t(project, "seoDescription", locale);
   const description = seoDescription !== project.seoDescription ? seoDescription : t(project, "summary", locale);
   const url = absoluteUrl(p(`/projects/${slug}`));
   const image = absoluteUrl(project.heroImage?.src ?? defaultOgImage);
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: p(`/projects/${slug}`),

@@ -17,14 +17,14 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return {};
-  const title = `${project.nameEs ?? project.name} | Canton Hyland`;
+  const title = fitTitle(`${project.nameEs ?? project.name} | Canton Hyland`);
   // seoDescriptionEs is metadata-only; summaryEs stays as the visible page intro.
   const description = project.seoDescriptionEs ?? project.summaryEs ?? project.summary;
   const enUrl = absoluteUrl(`/projects/${slug}/`);
   const esUrl = absoluteUrl(`/es/projects/${slug}/`);
   const image = absoluteUrl(project.heroImage?.src ?? defaultOgImage);
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/es/projects/${slug}/`,

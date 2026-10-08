@@ -61,7 +61,7 @@ export function productMetadata(locale: Locale, category: string, slug: string):
     openGraph: {
       type: "website",
       url,
-      title: metaTitle,
+      title: fitTitle(metaTitle),
       description: metaDescription,
       locale: OG_LOCALE[locale],
       images: product.heroImage.src
@@ -70,7 +70,7 @@ export function productMetadata(locale: Locale, category: string, slug: string):
     },
     twitter: {
       card: "summary_large_image",
-      title: metaTitle,
+      title: fitTitle(metaTitle),
       description: metaDescription,
       images: [absoluteUrl(product.heroImage.src ?? defaultOgImage)],
     },

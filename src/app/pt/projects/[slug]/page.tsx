@@ -27,13 +27,13 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return {};
-  const title = `${project.namePt ?? project.name} | Canton Hyland`;
+  const title = fitTitle(`${project.namePt ?? project.name} | Canton Hyland`);
   /* seoDescriptionPt is metadata-only; summaryPt stays as the visible page intro. */
   const description = project.seoDescriptionPt ?? project.summaryPt ?? project.summary;
   const url = absoluteUrl(`/pt/projects/${slug}/`);
   const image = absoluteUrl(project.heroImage?.src ?? defaultOgImage);
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/pt/projects/${slug}/`,

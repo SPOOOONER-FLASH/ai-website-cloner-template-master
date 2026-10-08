@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const { slug } = await params;
   const article = getGuideBySlug(slug);
   if (!article) return {};
-  const title = article.seoTitleEs ?? article.seoTitle;
+  const title = fitTitle(article.seoTitleEs ?? article.seoTitle);
   const description = article.seoDescriptionEs ?? article.seoDescription;
   return {
-    title: { absolute: fitTitle(title) },
+    title: { absolute: title },
     description,
     /*
       hreflang。缺一半的话两个语种是重复页而不是互译，导出审计会报

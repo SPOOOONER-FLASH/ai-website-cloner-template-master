@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     openGraph: {
       type: "article",
       url: absoluteUrl(`/projects/${slug}/`),
-      title: project.seoTitle,
+      title: fitTitle(project.seoTitle),
       description: project.seoDescription,
       // These three pages were the last ones shipping without a card image.
       images: project.heroImage?.src
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     },
     twitter: {
       card: "summary_large_image",
-      title: project.seoTitle,
+      title: fitTitle(project.seoTitle),
       description: project.seoDescription,
       images: [absoluteUrl(project.heroImage?.src ?? defaultOgImage)],
     },
