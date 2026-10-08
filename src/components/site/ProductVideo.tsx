@@ -61,6 +61,14 @@ export function ProductVideo({ video, className }: { video: VideoRef; className?
     these". That is no longer true and has not been for a while: every one of the 192
     products with a clip has exactly one.
 
+    CORRECTION 2026-10-08 (Search Console export read by the copy session): the paragraph
+    below misdiagnosed the report. 「视频不在观看页面上」 is Google's "Video isn't on a
+    watch page" — the video is not the page's MAIN content. A product page is a product
+    page, so it can never pass that check; preload, the source type and moving the
+    VideoObject to the top level cannot change it. 384 pages now, and accepted as-is:
+    building separate watch pages just to earn video rich results is not worth it here.
+    `metadata` stays because it is the right preload anyway. Original reasoning kept:
+
     What is true is that Search Console reports all 30 video pages it has looked at so far
     under 「视频不在观看页面上」— Google could not find a video on the page it was told
     the video was on. With `preload="none"` the element exists but has no media at all:
