@@ -12,6 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 05:48 | 中立 | 纪律：要甲方看的文件一律导出到桌面 hyde（甲方 10-08） | `441ff0d2ecb` |
+| 04:41 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `1fcf0bbeff2` |
 | 04:41 | 中立 | goal #136 完成：标题去后缀上线 d5a4354e997，源站核对 | `6edcd161faf` |
 | 04:14 | HYDE | #136 分享标题（og:title / twitter:title）同样经过 fitTitle，与页面标题一致 | `7544e75de1f` |
 | 04:01 | 中立 | goal #136：本地构建核对，标题 > 70 字符只剩 1 页 | `6add676d2e6` |
@@ -580,6 +582,4 @@
 | 23:44 | HYDE · 发布 HYDE+雷茵 | DS011 改名门吸；12 个单图型号补图；位置语言面板取代裸 EN\|ES | `115d7333205` |
 | 23:01 | HYDE | 玻璃门/插销/斜舌四个类目上线；产品命名加测试锁 | `c592cfe4c3f` |
 | 05:56 | HYDE · 发布 HYDE+雷茵 | 全目录摄影上线：目录 520 → 554，有照片 426 → 467，视频 99 → 160 | `172ee4f5099` |
-| 04:59 | 中立 · 发布 HYDE+雷茵 | 配置器的「返回上一步结果」修好：以前退到类目，现在退回那次配置 | `d515aab4473` |
-| 04:41 | 中立 | Replace two homepage images with client-selected light product views | `fc0e563dce9` |
 
