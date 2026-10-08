@@ -1,4 +1,6 @@
 @echo off
+cd /d "E:\WorkResources\migration"
+if errorlevel 1 exit /b 1
 "E:\WorkResources\tools\powershell\pwsh.exe" -NoLogo -NoProfile -ExecutionPolicy Bypass -File "E:\WorkResources\migration\Finish-Migration.ps1"
 set "MIGRATION_EXIT=%ERRORLEVEL%"
 pause

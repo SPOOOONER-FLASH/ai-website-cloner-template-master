@@ -1,13 +1,6 @@
 param([string]$TrackedReport)
 $ErrorActionPreference = 'Stop'
 $migrationRoot = 'E:\WorkResources\migration'
-$proofBySource = @{}
-foreach ($file in Get-ChildItem -LiteralPath $migrationRoot -Filter 'verify-*.json' | Where-Object Name -NotLike '*.inventory.json') {
-  $proof = Get-Content -LiteralPath $file.FullName -Raw | ConvertFrom-Json
-  if ($proof.sha256_verified -and $proof.source -like 'C:\Users\86132\*') {
-    $proofBySource[$proof.source] = @{proof=$proof;filename=$file.Name}
-  }
-}
 $rows = @()
 $movedBytes = [long]0
 $movedFiles = [long]0
@@ -22,11 +15,28 @@ foreach ($planFile in @('plan-live.json','plan-offline.json')) {
     }
     $bytes = [long]0
     $files = [long]0
-    $saved = $proofBySource[$entry.source]
-    if ($saved -and $saved.proof.target -eq $entry.destination) {
-      $bytes = [long]$saved.proof.bytes
-      $files = [long]$saved.proof.files
+    # Count the exact complete-verification receipt used to authorize cleanup.
+    $proof = $null
+    $ownerFile = "$($entry.destination).codex-migration-owner.json"
+    if (Test-Path -LiteralPath $ownerFile) {
+      $owner = Get-Content -LiteralPath $ownerFile -Raw | ConvertFrom-Json
+      if ($owner.cleanupAuthorized -and $owner.source -eq $entry.source -and
+          $owner.destination -eq $entry.destination -and
+          $owner.verification -match '^verify-[a-f0-9]{32}\.json$') {
+        $proofFile = Join-Path $migrationRoot $owner.verification
+        if (Test-Path -LiteralPath $proofFile) {
+          $candidate = Get-Content -LiteralPath $proofFile -Raw | ConvertFrom-Json
+          if ($candidate.sha256_verified -and $candidate.source -eq $entry.source -and
+              $candidate.target -eq $entry.destination) { $proof = $candidate }
+        }
+      }
+    }
+    if ($proof) {
+      $bytes = [long]$proof.bytes
+      $files = [long]$proof.files
       if ($state -eq 'moved') { $movedBytes += $bytes; $movedFiles += $files }
+    } elseif ($state -eq 'moved') {
+      $state = 'pending-proof'
     }
     $rows += @{source=$entry.source;destination=$entry.destination;state=$state;verifiedBytes=$bytes;verifiedFiles=$files}
   }

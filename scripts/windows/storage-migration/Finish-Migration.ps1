@@ -1,5 +1,8 @@
 $ErrorActionPreference = 'Stop'
 try {
+  # Release an inherited C project working directory before any rename.
+  Set-Location -LiteralPath $PSScriptRoot
+  [Environment]::CurrentDirectory = $PSScriptRoot
   $activeApps = @(Get-Process | Where-Object {
     $_.Id -ne $PID -and (
       $_.ProcessName -match '^(ChatGPT|Claude|claude|codex|codex-code-mode-host|codex-computer-use-swift|node_repl)$' -or
