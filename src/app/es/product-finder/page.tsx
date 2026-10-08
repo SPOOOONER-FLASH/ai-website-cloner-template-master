@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { toFinderProduct } from "@/lib/product-finder";
 
 import { ProductFinderClient } from "@/components/site/ProductFinderClient";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -103,7 +102,6 @@ export default function BuscadorDeProductosPage() {
 
       <div className="layout mt-48">
         <ProductFinderClient
-          products={publishedProducts.map(toFinderProduct)}
           categoryNames={categoryNameMap()}
           locale="es"
         />

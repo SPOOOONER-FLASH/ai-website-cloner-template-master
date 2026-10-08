@@ -2,7 +2,8 @@
 import type { Locale } from "@/data/site";
 
 import dynamic from "next/dynamic";
-import type { FinderProduct } from "@/lib/product-finder";
+import { tx } from "@/lib/i18n-client";
+import { useFinderProducts } from "./use-finder-products";
 
 /**
  * Browser-only wrapper for the configurator.
@@ -55,12 +56,19 @@ const Configurator = dynamic(() => import("./Configurator").then((m) => m.Config
   ),
 });
 
-export function ConfiguratorClient({
-  products,
-  locale = "en",
-}: {
-  products: FinderProduct[];
-  locale?: Locale;
-}) {
-  return <Configurator products={products} locale={locale} />;
+export function ConfiguratorClient({ locale = "en" }: { locale?: Locale }) {
+  const data = useFinderProducts(locale);
+  if (data.status !== "ready") {
+    return (
+      <p className="text-c1 text-ink-secondary" role="status">
+        {data.status === "error"
+          ? tx(locale, "The catalog could not be loaded. Please reload the page.", {
+              es: "No se pudo cargar el catálogo. Vuelva a cargar la página.",
+              pt: "Não foi possível carregar o catálogo. Recarregue a página.",
+            })
+          : tx(locale, "Loading the catalog…", { es: "Cargando el catálogo…", pt: "Carregando o catálogo…" })}
+      </p>
+    );
+  }
+  return <Configurator products={data.products} locale={locale} />;
 }

@@ -10,7 +10,6 @@ import type { Locale } from "@/data/locales";
 import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { t, tx } from "@/lib/i18n";
-import { toFinderProduct } from "@/lib/product-finder";
 import { pageMetadata } from "@/lib/seo";
 import { prefixer } from "./shared";
 
@@ -75,7 +74,7 @@ export function ProductFinderPage({ locale }: { locale: Locale }) {
         </div>
       </div>
       <div className="layout mt-48">
-        <ProductFinderClient products={publishedProducts.map(toFinderProduct)} categoryNames={categoryNameMap(locale)} locale={locale} />
+        <ProductFinderClient categoryNames={categoryNameMap(locale)} locale={locale} />
       </div>
       <div className="layout mt-48">
         <div className="col-content grid w-full grid-cols gap-x">

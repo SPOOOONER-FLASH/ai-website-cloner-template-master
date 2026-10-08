@@ -164,6 +164,9 @@
   "307 with lock case 072 and handle 015. The 307 specification also lists handle 9080E. Cylinder length is selected for the door thickness.": [
     "src/components/site/ProductStudies.tsx:52"
   ],
+  "309-D double-leaf exit application: a rim exit device on the left leaf and a vertical-rod device with visible upper and lower latches on the right leaf": [
+    "src/data/home.ts:49"
+  ],
   "3D reference models": [
     "src/components/site/ProductModel.tsx:13"
   ],
@@ -416,10 +419,10 @@
     "src/components/site/ProjectDetail.tsx:19"
   ],
   "Applications": [
-    "src/components/site/ProjectListing.tsx:22",
     "src/components/site/menu-experience.ts:86",
     "src/components/site/menu-experience.ts:279",
-    "src/components/site/menu-experience.ts:307"
+    "src/components/site/menu-experience.ts:307",
+    "src/components/site/ProjectListing.tsx:22"
   ],
   "Applications + Projects": [
     "src/components/locale-pages/ProjectPages.tsx:16"
@@ -531,8 +534,11 @@
     "src/data/privacy-policy.ts:95"
   ],
   "BAU 2027 Munich": [
-    "src/components/site/SiteFooter.tsx:56",
-    "src/components/site/menu-experience.ts:91"
+    "src/components/site/menu-experience.ts:91",
+    "src/components/site/SiteFooter.tsx:56"
+  ],
+  "BAU 2027, January 11–15, 2027, Messe München. Visit us in Hall C4, Stand 523": [
+    "src/data/bau-2027.ts:70"
   ],
   "Before you specify": [
     "src/components/site/GuideArticleIntro.tsx:18"
@@ -722,9 +728,9 @@
     "src/components/locale-pages/CertificationsPage.tsx:62"
   ],
   "Certificates": [
-    "src/components/site/SiteHeader.tsx:54",
     "src/components/site/menu-experience.ts:98",
-    "src/components/site/menu-experience.ts:282"
+    "src/components/site/menu-experience.ts:282",
+    "src/components/site/SiteHeader.tsx:54"
   ],
   "Certificates and test reports. What is tested, and in whose name.": [
     "src/components/locale-pages/CertificationsPage.tsx:41"
@@ -889,10 +895,10 @@
   "Company": [
     "src/components/site/AuthorProfile.tsx:31",
     "src/components/site/InquiryForm.tsx:29",
-    "src/components/site/SiteHeader.tsx:503",
-    "src/components/site/SiteHeader.tsx:509",
     "src/components/site/menu-experience.ts:97",
-    "src/components/site/menu-experience.ts:289"
+    "src/components/site/menu-experience.ts:289",
+    "src/components/site/SiteHeader.tsx:503",
+    "src/components/site/SiteHeader.tsx:509"
   ],
   "Company announcements, certification news and technical notes from Canton Hyland.": [
     "src/components/site/NewsListing.tsx:19"
@@ -933,18 +939,18 @@
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:133",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:145",
     "src/components/site/FinderModeSwitch.tsx:44",
-    "src/components/site/SiteFooter.tsx:46",
     "src/components/site/menu-experience.ts:74",
-    "src/components/site/menu-experience.ts:272"
+    "src/components/site/menu-experience.ts:272",
+    "src/components/site/SiteFooter.tsx:46"
   ],
   "Configurator — Find the Right Model": [
     "src/components/locale-pages/ConfiguratorPage.tsx:18"
   ],
   "Configurator Studio": [
-    "src/components/site/SiteHeader.tsx:440",
-    "src/components/site/StudioShowcase.tsx:40",
     "src/components/site/menu-experience.ts:75",
-    "src/components/site/menu-experience.ts:273"
+    "src/components/site/menu-experience.ts:273",
+    "src/components/site/SiteHeader.tsx:440",
+    "src/components/site/StudioShowcase.tsx:40"
   ],
   "Configurator Studio — Finish and Function": [
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:49"
@@ -953,11 +959,11 @@
     "src/components/site/ProjectDetail.tsx:23"
   ],
   "Contact": [
+    "src/components/site/menu-experience.ts:109",
+    "src/components/site/menu-experience.ts:294",
     "src/components/site/SiteFooter.tsx:17",
     "src/components/site/SiteHeader.tsx:108",
-    "src/components/site/SiteMenuDrawer.tsx:19",
-    "src/components/site/menu-experience.ts:109",
-    "src/components/site/menu-experience.ts:294"
+    "src/components/site/SiteMenuDrawer.tsx:19"
   ],
   "Contact Canton Hyland": [
     "src/components/site/ProductStudies.tsx:59"
@@ -1007,8 +1013,8 @@
     "src/data/hardware-terms.ts:359"
   ],
   "Cylinder calculator": [
-    "src/components/site/SiteFooter.tsx:52",
-    "src/components/site/menu-experience.ts:80"
+    "src/components/site/menu-experience.ts:80",
+    "src/components/site/SiteFooter.tsx:52"
   ],
   "Cylinder, LC04, finish, EN 1125…": [
     "src/components/site/GuideLibrary.tsx:13"
@@ -1182,12 +1188,12 @@
     "src/components/locale-pages/CertificationsPage.tsx:23"
   ],
   "Documented model": [
-    "src/components/locale-pages/DownloadsPage.tsx:88"
+    "src/components/locale-pages/DownloadsPage.tsx:87"
   ],
   "Documents": [
     "src/components/locale-pages/DocumentsPage.tsx:24",
-    "src/components/site/SiteFooter.tsx:53",
-    "src/components/site/menu-experience.ts:99"
+    "src/components/site/menu-experience.ts:99",
+    "src/components/site/SiteFooter.tsx:53"
   ],
   "Documents already available": [
     "src/components/site/ServicesView.tsx:100"
@@ -1271,7 +1277,7 @@
     "src/data/finish-codes.ts:459"
   ],
   "Download": [
-    "src/components/locale-pages/DownloadsPage.tsx:93"
+    "src/components/locale-pages/DownloadsPage.tsx:92"
   ],
   "Download catalog (PDF, 6.1 MB)": [
     "src/components/locale-pages/ContactPage.tsx:163"
@@ -1289,10 +1295,10 @@
     "src/components/site/ProductSpecSheetLink.tsx:12"
   ],
   "Downloads": [
-    "src/components/site/ProductDetail.tsx:59",
-    "src/components/site/SiteHeader.tsx:110",
     "src/components/site/menu-experience.ts:100",
-    "src/components/site/menu-experience.ts:281"
+    "src/components/site/menu-experience.ts:281",
+    "src/components/site/ProductDetail.tsx:59",
+    "src/components/site/SiteHeader.tsx:110"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
     "src/components/site/ServicesView.tsx:86"
@@ -1398,9 +1404,9 @@
     "src/data/category-positioning.json"
   ],
   "Events": [
-    "src/components/site/SiteHeader.tsx:53",
     "src/components/site/menu-experience.ts:90",
-    "src/components/site/menu-experience.ts:293"
+    "src/components/site/menu-experience.ts:293",
+    "src/components/site/SiteHeader.tsx:53"
   ],
   "Every category in the catalog": [
     "src/components/site/products-architecture.ts:185"
@@ -1504,9 +1510,9 @@
     "src/components/site/ProductsEditorialOverview.tsx:25"
   ],
   "FAQ": [
+    "src/components/site/menu-experience.ts:101",
     "src/components/site/SiteFooter.tsx:54",
-    "src/components/site/SiteHeader.tsx:109",
-    "src/components/site/menu-experience.ts:101"
+    "src/components/site/SiteHeader.tsx:109"
   ],
   "Featured door hardware": [
     "src/data/home.ts:42"
@@ -1679,9 +1685,9 @@
   ],
   "Glossary": [
     "src/components/locale-pages/GlossaryPage.tsx:30",
-    "src/components/site/SiteFooter.tsx:50",
     "src/components/site/menu-experience.ts:89",
-    "src/components/site/menu-experience.ts:285"
+    "src/components/site/menu-experience.ts:285",
+    "src/components/site/SiteFooter.tsx:50"
   ],
   "Google Analytics 4 and Google Tag Manager, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics sets cookies and records the pages viewed, approximate location, device and browser, how far you scroll, how long you read, and clicks on product and contact links. When you send a product inquiry, the inquiry event carries the same one-word first-touch source. Google Analytics 4 does not store IP addresses. Google Tag Manager loads such tags and does not itself profile you. Data may be processed by Google LLC in the USA. More: policies.google.com/privacy": [
     "src/data/privacy-policy.ts:110"
@@ -1735,8 +1741,8 @@
   "Guides": [
     "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
-    "src/components/site/NewsDetail.tsx:91",
-    "src/components/site/menu-experience.ts:87"
+    "src/components/site/menu-experience.ts:87",
+    "src/components/site/NewsDetail.tsx:91"
   ],
   "Guides and News": [
     "src/lib/article-feed.ts:34"
@@ -1769,9 +1775,9 @@
     "src/components/site/GuideListing.tsx:14"
   ],
   "Hardware in focus": [
+    "src/components/site/menu-experience.ts:77",
     "src/components/site/ProductStudies.tsx:41",
-    "src/components/site/SiteFooter.tsx:47",
-    "src/components/site/menu-experience.ts:77"
+    "src/components/site/SiteFooter.tsx:47"
   ],
   "Hardware in focus — explore product photographs and component selections": [
     "src/components/locale-pages/ProductsIndexPage.tsx:51"
@@ -2075,6 +2081,10 @@
   "LinkedIn profile": [
     "src/components/site/AuthorProfile.tsx:26"
   ],
+  "Loading the catalog…": [
+    "src/components/site/ConfiguratorClient.tsx:69",
+    "src/components/site/ProductFinderClient.tsx:48"
+  ],
   "Loading viewer…": [
     "src/components/site/ModelPreview.tsx:49"
   ],
@@ -2217,9 +2227,9 @@
   ],
   "Model lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:28",
-    "src/components/site/SiteFooter.tsx:51",
     "src/components/site/menu-experience.ts:78",
-    "src/components/site/menu-experience.ts:284"
+    "src/components/site/menu-experience.ts:284",
+    "src/components/site/SiteFooter.tsx:51"
   ],
   "Model number — 306 PS, LH852, 70720": [
     "src/components/site/ModelIndex.tsx:28"
@@ -2350,14 +2360,14 @@
     "src/components/locale-pages/ArticlePages.tsx:24"
   ],
   "News + Press": [
+    "src/components/site/menu-experience.ts:88",
     "src/components/site/NewsDetail.tsx:43",
     "src/components/site/NewsDetail.tsx:90",
-    "src/components/site/NewsListing.tsx:17",
-    "src/components/site/menu-experience.ts:88"
+    "src/components/site/NewsListing.tsx:17"
   ],
   "Newsletter": [
-    "src/components/site/SiteFooter.tsx:195",
-    "src/components/site/menu-experience.ts:110"
+    "src/components/site/menu-experience.ts:110",
+    "src/components/site/SiteFooter.tsx:195"
   ],
   "Newsletter request": [
     "src/data/privacy-policy.ts:96"
@@ -2630,6 +2640,9 @@
   "Our catalog uses this label for two different measurements, and it is worth knowing which one you are reading. On a mortise lock case it is the distance from the cylinder center to the spindle center — we publish 45, 65, 68, 72, 85 and 92mm, of which 72 and 85 are the common European figures. On a pull handle or a glass-door fitting it is the distance between the two fixing points, and our range runs from 125 to 179mm.": [
     "src/data/hardware-terms.ts:99"
   ],
+  "Our entry in the official BAU 2027 exhibitor directory": [
+    "src/data/bau-2027.ts:71"
+  ],
   "Our flagship range, and the one we know best: push bars for escape and fire doors, from single-point rim devices to multi-point sets for double doors.": [
     "src/data/home.ts:109"
   ],
@@ -2756,8 +2769,8 @@
   ],
   "Price list": [
     "src/components/locale-pages/ContactPage.tsx:76",
-    "src/components/site/SiteFooter.tsx:55",
-    "src/components/site/menu-experience.ts:108"
+    "src/components/site/menu-experience.ts:108",
+    "src/components/site/SiteFooter.tsx:55"
   ],
   "privacy notice": [
     "src/components/site/PrivacyNote.tsx:11"
@@ -2785,11 +2798,11 @@
     "src/components/locale-pages/ProductFinderPage.tsx:43",
     "src/components/locale-pages/ProductFinderPage.tsx:55",
     "src/components/locale-pages/ProductFinderPage.tsx:58",
-    "src/components/site/ProductStudies.tsx:47",
-    "src/components/site/SiteHeader.tsx:431",
     "src/components/site/menu-experience.ts:73",
     "src/components/site/menu-experience.ts:271",
-    "src/components/site/menu-experience.ts:300"
+    "src/components/site/menu-experience.ts:300",
+    "src/components/site/ProductStudies.tsx:47",
+    "src/components/site/SiteHeader.tsx:431"
   ],
   "Product Finder — {count} Door Hardware Models": [
     "src/components/locale-pages/ProductFinderPage.tsx:21"
@@ -2828,12 +2841,12 @@
     "src/components/locale-pages/ProductPage.tsx:85",
     "src/components/locale-pages/ProductPage.tsx:95",
     "src/components/locale-pages/ProductsIndexPage.tsx:36",
+    "src/components/site/menu-experience.ts:70",
+    "src/components/site/menu-experience.ts:270",
     "src/components/site/ProductDetail.tsx:86",
     "src/components/site/ProductsEditorialOverview.tsx:23",
     "src/components/site/SiteHeader.tsx:415",
-    "src/components/site/SiteHeader.tsx:421",
-    "src/components/site/menu-experience.ts:70",
-    "src/components/site/menu-experience.ts:270"
+    "src/components/site/SiteHeader.tsx:421"
   ],
   "Products — Door Hardware Catalog": [
     "src/components/locale-pages/ProductsIndexPage.tsx:19"
@@ -2978,9 +2991,6 @@
   ],
   "Representative commercial egress application study with paired fire-exit doors": [
     "src/data/home.ts:127"
-  ],
-  "Representative commercial fire-exit doors with clearly visible panic push bars": [
-    "src/data/home.ts:49"
   ],
   "Representative contacts": [
     "src/components/locale-pages/ContactPage.tsx:119"
@@ -3201,9 +3211,9 @@
     "src/data/home.ts:173"
   ],
   "Services": [
+    "src/components/site/menu-experience.ts:280",
     "src/components/site/ServicesView.tsx:40",
-    "src/components/site/SiteHeader.tsx:52",
-    "src/components/site/menu-experience.ts:280"
+    "src/components/site/SiteHeader.tsx:52"
   ],
   "Set includes": [
     "src/lib/flagship-tooling.ts:54"
@@ -3489,8 +3499,8 @@
     "src/components/site/CylinderCalculator.tsx:69"
   ],
   "The 9014 lever": [
-    "src/components/site/SiteFooter.tsx:48",
-    "src/components/site/menu-experience.ts:76"
+    "src/components/site/menu-experience.ts:76",
+    "src/components/site/SiteFooter.tsx:48"
   ],
   "The arithmetic, with a worked table": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
@@ -3503,6 +3513,10 @@
   ],
   "The cases with a cylinder hole take a euro profile cylinder, sized to the door thickness; our lock cylinders page lists the published lengths. Cylinder and handles are ordered separately from the case, which is how door factories want it.": [
     "src/data/category-buying-guides.ts:571"
+  ],
+  "The catalog could not be loaded. Please reload the page.": [
+    "src/components/site/ConfiguratorClient.tsx:65",
+    "src/components/site/ProductFinderClient.tsx:44"
   ],
   "The center distance on the {m} is {v}.": [
     "src/lib/product-faq.ts:147"

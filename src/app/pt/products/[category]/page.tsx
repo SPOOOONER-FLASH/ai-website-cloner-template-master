@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { toFinderProduct } from "@/lib/product-finder";
 import { CategoryGuide } from "@/components/site/CategoryGuide";
 import { CategoryBuyingGuide, guideBlocks } from "@/components/site/CategoryBuyingGuide";
 import { categorySourcingLine } from "@/data/category-sourcing";
@@ -156,7 +157,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
 
         <section className="layout mt-64 md:mt-144 lg:mt-288" aria-label={`Catálogo — ${name}`}>
           <div className="col-content grid w-full grid-cols gap-x">
-            <CategoryFilter products={products} options={options} locale="pt" />
+            <CategoryFilter products={products.map((product) => toFinderProduct(product, { locale: "pt", summary: false }))} options={options} locale="pt" />
             <ProductIndexList
               products={products}
               label={`${products.length} ${name.toLowerCase()}`}

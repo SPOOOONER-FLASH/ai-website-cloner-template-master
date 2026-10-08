@@ -4,9 +4,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { ConfiguratorClient } from "@/components/site/ConfiguratorClient";
 import { HardwareGlossary } from "@/components/site/HardwareGlossary";
 import { JsonLd, breadcrumbSchema } from "@/components/site/JsonLd";
-import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
-import { toFinderProduct } from "@/lib/product-finder";
 import { pageMetadata } from "@/lib/seo";
 
 /** The Spanish mirror of /configurator/. See the English route for the reasoning. */
@@ -20,7 +18,6 @@ export const metadata: Metadata = pageMetadata({
 });
 
 export default function ConfiguradorPage() {
-  const products = publishedProducts.map(toFinderProduct);
 
   return (
     <>
@@ -64,7 +61,7 @@ export default function ConfiguradorPage() {
               from, so "Cargando el catálogo…" was the whole page in production for as
               long as the route existed. See ConfiguratorClient for the full account.
             */}
-            <ConfiguratorClient products={products} locale="es" />
+            <ConfiguratorClient locale="es" />
           </div>
         </section>
 

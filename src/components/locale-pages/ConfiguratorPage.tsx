@@ -5,10 +5,8 @@ import { ConfiguratorClient } from "@/components/site/ConfiguratorClient";
 import { HardwareGlossary } from "@/components/site/HardwareGlossary";
 import { JsonLd, breadcrumbSchema } from "@/components/site/JsonLd";
 import type { Locale } from "@/data/locales";
-import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { tx } from "@/lib/i18n";
-import { toFinderProduct } from "@/lib/product-finder";
 import { localeMetadata, prefixer } from "./shared";
 
 export function configuratorMetadata(locale: Locale): Metadata {
@@ -22,7 +20,6 @@ export function configuratorMetadata(locale: Locale): Metadata {
 
 export function ConfiguratorPage({ locale }: { locale: Locale }) {
   const p = prefixer(locale);
-  const products = publishedProducts.map(toFinderProduct);
 
   return (
     <>
@@ -58,7 +55,7 @@ export function ConfiguratorPage({ locale }: { locale: Locale }) {
         <section className="layout mt-64 lg:mt-96" aria-label={tx(locale, "Guided selection")}>
           <div className="col-content">
             {/* ssr: false and NOT inside Suspense — see ConfiguratorClient for why. */}
-            <ConfiguratorClient products={products} locale={locale} />
+            <ConfiguratorClient locale={locale} />
           </div>
         </section>
         <HardwareGlossary locale={locale} />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { toFinderProduct } from "@/lib/product-finder";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
@@ -99,7 +100,7 @@ export function CategoryPage({ locale, slug }: { locale: Locale; slug: string })
         </section>
         <section className="layout mt-64 md:mt-144 lg:mt-288" aria-label={tx(locale, "{name} catalog").replace("{name}", name)}>
           <div className="col-content grid w-full grid-cols gap-x">
-            <CategoryFilter products={products} options={options} locale={locale} />
+            <CategoryFilter products={products.map((product) => toFinderProduct(product, { locale, summary: false }))} options={options} locale={locale} />
             <ProductIndexList products={products} label={`${products.length} ${lower(name, locale)}`} locale={locale} />
           </div>
         </section>

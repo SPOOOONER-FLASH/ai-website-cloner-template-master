@@ -170,7 +170,6 @@ export type FinderProduct = Pick<
   | "doorTypes"
   | "certifications"
   | "heroImage"
-  | "summary"
   /*
     Carried so the configurator can END ON A MOVING PICTURE. 35 products have a
     demonstration clip, and a guided tool that finishes on a hand actually working the
@@ -191,9 +190,27 @@ export type FinderProduct = Pick<
     bytes each; the arrays they stand in for cost kilobytes.
   */
   figure?: Partial<Record<Locale, CardFigure>>;
+  /* Optional since 2026-10-08: a category grid does not search, so it does not carry it. */
+  summary?: Product["summary"];
 };
 
-export function toFinderProduct(product: Product): FinderProduct {
+/**
+ * How much of the record to carry. Bing's 2026-10-05 site scan flagged 100 pages over
+ * 500 KB of HTML — category grids, the finder, the configurator — and the weight was the
+ * React payload, not the markup: /products/knob-locks/ was 1,147 KB of which 1,038 KB was
+ * product data the browser re-reads to hydrate. A page in one language needs the card
+ * figure for that language only (`figure` for all ten was 162 KB of the 529 KB slim
+ * array), and a grid that never searches needs no summary.
+ */
+export interface FinderShape {
+  /** Only this locale's card figure. Omit for all locales. */
+  locale?: Locale;
+  /** Carry the summary (free-text search reads it). Default true. */
+  summary?: boolean;
+}
+
+export function toFinderProduct(product: Product, shape: FinderShape = {}): FinderProduct {
+  const { locale, summary = true } = shape;
   return {
     slug: product.slug,
     model: product.model,
@@ -201,7 +218,7 @@ export function toFinderProduct(product: Product): FinderProduct {
     name: product.name,
     nameEs: product.nameEs,
     namePt: product.namePt,
-    nameZh: product.nameZh,
+    /* Never in a HYDE page's payload: cantonlock.com shows no Chinese (client rule). */
     series: product.series,
     categoryPath: product.categoryPath,
     material: product.material,
@@ -209,7 +226,7 @@ export function toFinderProduct(product: Product): FinderProduct {
     doorTypes: product.doorTypes,
     certifications: product.certifications,
     heroImage: product.heroImage,
-    summary: product.summary,
+    ...(summary ? { summary: product.summary } : {}),
     /* Only the first clip. A configurator result is one product, not a playlist. */
     videos: product.videos?.length ? [product.videos[0]] : undefined,
     /*
@@ -219,7 +236,7 @@ export function toFinderProduct(product: Product): FinderProduct {
       first pass: the card fell back to English while everything around it was translated.
     */
     figure: Object.fromEntries(
-      locales.map((locale) => [locale, cardFigure(product, locale)]),
+      (locale ? [locale] : locales).map((l) => [l, cardFigure(product, l)]),
     ) as Partial<Record<Locale, CardFigure>>,
   };
 }

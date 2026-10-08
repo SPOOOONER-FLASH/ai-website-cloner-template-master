@@ -1,11 +1,10 @@
 "use client";
 
 import { useMemo, useRef, useSyncExternalStore } from "react";
-import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { categoryViewFromParams, categoryViewToParams } from "@/lib/catalogue-return";
-import { paginate, sortForDisplay } from "@/lib/product-finder";
+import { paginate, sortForDisplay, type FinderProduct } from "@/lib/product-finder";
 import { CatalogueReturnRestorer } from "./CatalogueNavigation";
 import { ProductCard } from "./ProductCard";
 import { Pagination } from "./Pagination";
@@ -17,7 +16,9 @@ interface FilterOption {
 }
 
 interface CategoryFilterProps {
-  products: Product[];
+  /* Slim card records (toFinderProduct with the page's locale), never full Products:
+     this prop is serialised into the page HTML — see src/lib/product-finder.ts. */
+  products: FinderProduct[];
   options: FilterOption[];
   locale?: Locale;
 }

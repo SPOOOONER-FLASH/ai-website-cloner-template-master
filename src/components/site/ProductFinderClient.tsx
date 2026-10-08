@@ -2,7 +2,8 @@
 import type { Locale } from "@/data/site";
 
 import dynamic from "next/dynamic";
-import type { FinderProduct } from "@/lib/product-finder";
+import { tx } from "@/lib/i18n-client";
+import { useFinderProducts } from "./use-finder-products";
 
 /**
  * Browser-only wrapper for the finder.
@@ -28,10 +29,25 @@ const ProductFinder = dynamic(
   },
 );
 
-export function ProductFinderClient(props: {
-  products: FinderProduct[];
+export function ProductFinderClient({
+  categoryNames,
+  locale = "en",
+}: {
   categoryNames: Record<string, string>;
   locale?: Locale;
 }) {
-  return <ProductFinder {...props} />;
+  const data = useFinderProducts(locale);
+  if (data.status !== "ready") {
+    return (
+      <p className="col-content text-c1 text-ink-secondary" role="status">
+        {data.status === "error"
+          ? tx(locale, "The catalog could not be loaded. Please reload the page.", {
+              es: "No se pudo cargar el catálogo. Vuelva a cargar la página.",
+              pt: "Não foi possível carregar o catálogo. Recarregue a página.",
+            })
+          : tx(locale, "Loading the catalog…", { es: "Cargando el catálogo…", pt: "Carregando o catálogo…" })}
+      </p>
+    );
+  }
+  return <ProductFinder products={data.products} categoryNames={categoryNames} locale={locale} />;
 }
