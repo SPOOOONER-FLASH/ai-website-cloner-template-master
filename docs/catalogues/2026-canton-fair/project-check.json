@@ -1,0 +1,66 @@
+{
+  "baselineHead": "d7727d9890d8a69d00e37f0d7fb2e9fc36bd77ee",
+  "command": "npm run check",
+  "actualExit": 0,
+  "result": "green",
+  "unitTests": {
+    "skipped": 10,
+    "fail": 0,
+    "pass": 357
+  },
+  "exportTests": {
+    "pass": 26,
+    "fail": 0
+  },
+  "staticPages": 3043,
+  "deadLinks": {
+    "internalLinks": 176281,
+    "pages": 2220,
+    "failed": 0,
+    "assets": 48815
+  },
+  "noChinesePages": 2219,
+  "seoSemanticIssues": 0,
+  "reportOnlyWarnings": {
+    "editorialQuality": 968,
+    "eslint": 13
+  },
+  "metadataSha256": "CB148ED5C98B1E50FF87D4EB6E134292B06D27D510429EB7853EF558C23E801F",
+  "scripts": [
+    {
+      "script": "prepare-cantonfair-catalogue.mjs",
+      "rootSha256": "4D6A918C6D5EB8F7517016B5C5787912FF280ADAF42E987EDB493C9D9F0F8E91",
+      "checkedSha256": "4D6A918C6D5EB8F7517016B5C5787912FF280ADAF42E987EDB493C9D9F0F8E91",
+      "same": true
+    },
+    {
+      "script": "build-cantonfair-catalogue.py",
+      "rootSha256": "AA9909D3E00A29E51F173AABE4CC0BC15A5132B7F0656C874FA374BE5D1C0B58",
+      "checkedSha256": "AA9909D3E00A29E51F173AABE4CC0BC15A5132B7F0656C874FA374BE5D1C0B58",
+      "same": true
+    },
+    {
+      "script": "verify-cantonfair-catalogue.py",
+      "rootSha256": "2BF8625316BEA0E2DFC94C959146B535D634D71378C8794269ECF7FDB5838916",
+      "checkedSha256": "2BF8625316BEA0E2DFC94C959146B535D634D71378C8794269ECF7FDB5838916",
+      "same": true
+    }
+  ],
+  "mainPathsTouched": [],
+  "isolation": "Shared-object clone with real local dependency copy; no network/install; main exports untouched",
+  "log": "npm-check.log",
+  "exitFile": "npm-check.exit",
+  "earlierBaselineFailurePreserved": "npm-check-baseline.log and npm-check-baseline.exit",
+  "pythonSyntaxExit": 0,
+  "pythonBuilderRecheckedAfterFullCheck": true,
+  "finalArtifactVerification": {
+    "command": "scripts/verify-cantonfair-catalogue.py",
+    "exit": 0,
+    "afterNpmCheck": true,
+    "note": "Final Python layout wording and derived preview verified by running the final generator and final PDF verifier; Python is outside npm check.",
+    "sha256": {
+      "build-cantonfair-catalogue.py": "aa9909d3e00a29e51f173aabe4cc0bc15a5132b7f0656c874fa374be5d1c0b58",
+      "verify-cantonfair-catalogue.py": "443f626142cc32cd72ae429302edf7f3026144ac8142cb0cc0ae9343647bce9b"
+    }
+  }
+}

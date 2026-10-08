@@ -1,0 +1,30 @@
+{
+  "print": {
+    "pages": 124,
+    "models": 523,
+    "productLinks": 523,
+    "allUriLinks": 543,
+    "internalLinks": 540,
+    "bookmarks": 22,
+    "missingLocalProductRoutes": [],
+    "embeddedFonts": [
+      "/AAAAAA+Arial-BoldMT",
+      "/AAAAAA+ArialMT"
+    ],
+    "status": "passed"
+  },
+  "digital": {
+    "pages": 124,
+    "models": 523,
+    "productLinks": 523,
+    "allUriLinks": 543,
+    "internalLinks": 540,
+    "bookmarks": 22,
+    "missingLocalProductRoutes": [],
+    "embeddedFonts": [
+      "/AAAAAA+Arial-BoldMT",
+      "/AAAAAA+ArialMT"
+    ],
+    "status": "passed"
+  }
+}
