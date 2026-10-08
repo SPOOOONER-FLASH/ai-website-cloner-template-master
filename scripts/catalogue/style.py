@@ -34,7 +34,8 @@ FONT_FILES: dict[str, Path] = {
     "text-bold": FONT_DIR / "Archivo-Bold.ttf",
     "display": FONT_DIR / "ArchivoExpanded-Medium.ttf",
     "display-semibold": FONT_DIR / "ArchivoExpanded-SemiBold.ttf",
-    # Archivo has no ≤ ≥, and spec values use them ("≤750mm"). Arial does.
+    # A safety net, not a known gap: checked 2026-10-08, Archivo covers every character
+    # spec values use (— – × ° Ø ± ½ ¼ ≤ ≥). A character found missing later is drawn here.
     "fallback": Path("C:/Windows/Fonts/arial.ttf"),
 }
 FONTS: dict[str, pymupdf.Font] = {k: pymupdf.Font(fontfile=str(p)) for k, p in FONT_FILES.items()}

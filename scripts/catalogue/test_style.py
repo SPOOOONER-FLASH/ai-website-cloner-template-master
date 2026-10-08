@@ -14,10 +14,10 @@ class StyleTest(unittest.TestCase):
             self.assertIn("Archivo", style.FONTS[key].name, key)
 
     def test_archivo_covers_the_characters_specs_use(self):
-        for ch in "—–×°Ø±½¼":
+        for ch in "—–×°Ø±½¼≤≥":
             self.assertTrue(style.has_glyph("text", ch), repr(ch))
 
-    def test_fallback_covers_what_archivo_does_not(self):
+    def test_fallback_font_loads(self):
         for ch in "≤≥":
             self.assertTrue(style.has_glyph("fallback", ch), repr(ch))
 
