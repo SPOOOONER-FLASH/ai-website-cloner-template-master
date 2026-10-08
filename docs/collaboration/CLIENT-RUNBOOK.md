@@ -1,10 +1,10 @@
 # Spooner 操作手册
 
-**最后更新：2026-10-07 · 更新人：Codex**
+**最后更新：2026-10-08 · 更新人：Codex**
 
-## 本次要做：把剩余工作资源搬到 E 盘（2026-10-07）
+## 本次要做：把剩余工作资源搬到 E 盘（2026-10-08）
 
-已核实：主项目 `C:\Users\86132\Downloads\cantonlock` 仍是实际目录，约 9.8 GiB；Codex 的会话数据库和运行时仍在 C 盘，当前应用正在使用。旧工作树、素材副本与可安全移动的缓存正在按文件内容校验后搬走。最新完成量和待处理路径由 `scripts/windows/storage-migration/Report-Migration.ps1` 生成，见 `E:\WorkResources\migration\STATUS.md`，不要把“E 上有副本”当成“C 已释放空间”。
+2026-10-08 已核实：25 个目录、373,539 个文件（约 20.7 GiB）已搬到 E 并清除 C 盘原件；C 盘当前可用约 48.4 GiB，空间会随应用运行变化。主项目 `C:\Users\86132\Downloads\cantonlock` 仍是实际目录，Codex/Claude 的部分会话数据、运行时和应用缓存仍在 C 盘，合计 10 个目录待搬，当前应用正在使用。最新完成量和待处理路径由 `scripts/windows/storage-migration/Report-Migration.ps1` 生成，见 `E:\WorkResources\migration\STATUS.md`，不要把“E 上有副本”当成“C 已释放空间”。
 
 **现在只需要完成这一次收尾：**
 

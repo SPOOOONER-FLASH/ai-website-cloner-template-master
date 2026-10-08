@@ -1,9 +1,9 @@
 # C to E work-resource migration
 
-Measured: 2026-10-07T10:28:17.8660620-07:00
+Measured: 2026-10-08T06:58:54.7766642-07:00
 
 Verified resources physically moved and C originals removed: 20.685 GiB, 373539 files.
-C free: 45.04 GiB. E free: 447.18 GiB.
+C free: 48.38 GiB. E free: 452.96 GiB.
 Moved directories: 25. Pending directories: 10.
 
 This is a measured snapshot. Running Codex/Claude prevents the remaining app-state and main-checkout cutover.
