@@ -6,12 +6,58 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 505 次提交
+最近 30 天 · 共 472 次提交
+
+## 2026-10-08
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 01:08 | 中立 | #131 收尾：HTML 体积回归测试（三类页 ≤ 460 KB、全站 ≤ 640 KB），工程目标标完成 | `ba1c3444efa` |
+| 00:59 | HYDE | #131 HTML 过大：查找器、配置器的产品数据改为 /data/<语言>/finder.json，品类网格只带卡片字段 | `7927966cacb` |
+| 00:50 | 中立 | DORA 报价：锁体首图换成实物照片（黑色圆头面板） | `959444e41df` |
+
+## 2026-10-06
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 20:22 | 中立 | 报价 DORA：首购立减 200 美元版本；报价表允许负数行显示 | `7a4da8cc680` |
+| 20:18 | 中立 | 报价 DORA v6：去掉人民币，只留美元（6.69） | `40423254168` |
+| 20:17 | 中立 | 报价 DORA v6：汇率 6.69，加衢州运费 3000 元 | `843d359eeed` |
+| 20:11 | 中立 | 报价 DORA v6：备注运费另算、不含税、不报关、EXW 加送衢州门厂运费 | `40421d3c7f4` |
+| 19:59 | 中立 | 报价 DORA v6 两方案：×1.188 / ×1.168 ÷6.7，门吸回 8 元砂光 | `ebbe4138dfd` |
+| 19:56 | 中立 | 报价 DORA v5：统一 ×1.2÷6.7，合页 201 3 元、门吸抛亮光 9.3 | `abf6cf0bb63` |
+| 19:35 | 中立 | 报价 肯尼亚：加锁体实拍图与图纸尺寸 | `d8d953b0cc6` |
+| 19:32 | 中立 | 报价：南非更正为肯尼亚；三件合一套 115 元 /6.7 = USD 17.16 | `a6ea0164f5e` |
+| 19:31 | 中立 | 报价：DORA v4 执手（家德乐黑色 19.5，亚镍备选）；南非锁体询盘草稿 | `913eb5f750d` |
+| 19:22 | 中立 | 报价 DORA v3：合页按 2.5 进价，加执手行（单价待老板填） | `fcf6aa3ad88` |
+| 19:18 | 中立 | 报价 DORA v2 输出文件名 | `fd4b1ad3478` |
+| 19:17 | 中立 | 报价 DORA Doors v2：按客户 Hardware Order 数量、30/70、30 天、EXW；去球拉手，加门吸；合页 SS201 无有效进价暂 TBC | `194a975e516` |
+| 18:59 | 中立 | 报价：DORA Doors（伊拉克）草稿 HY20261006；build-quotation 支持无目录型号的外采行（无 slug 不挂链接）；报价抬头同步网站：新法定名、tec@ 邮箱 | `c3dbd008460` |
+
+## 2026-10-05
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 21:42 | 中立 | 10-05 读数：Bing 站点扫描 / GSC 单页 / Clarity 十话题核实与分派（HTML 过大 100 页、标题 >70 全站 1,039 页、HS 编码为 E1 基线、alt 已修）；同步 LATEST、DATA-DASHBOARDS、工程目标 #131–135、TODO-MASTER 第 14 项、agent-update、甲方手动操作 docx | `c919844bd3a` |
+| 21:34 | 中立 | 图片 alt：饰面切换小图、配置器缩略图补描述性 alt（型号+饰面 / 卡片标题），并 aria-hidden 避免读屏重复（Bing 2026-10-05 扫描 94 页报 alt 缺失） | `9101603709a` |
+| 01:58 | 中立 | Replace legacy logo on 309-D home hero with HYDE mark | `eddbd995b51` |
+| 00:10 | 中立 | Refine BAU notification band with frosted glass material | `de35375459e` |
+
+## 2026-10-04
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 23:03 | 中立 | Add compact Language navigation with rightward reveal | `fb8d3bbe498` |
+| 21:59 | 中立 | Add four distinct HYDE navigation proposals | `cd5fea87e5e` |
+| 09:42 | 中立 | Replace inaccurate home exit hero with 309-D double-door image | `3a85cb22c21` |
+| 09:23 | 中立 | Add three interactive HYDE homepage motion proposals | `e3db1356df6` |
 
 ## 2026-10-03
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 20:04 | 中立 | Retain reproducible navigation proposal export and verified preview | `5ddbedb5e4d` |
+| 19:06 | 中立 | Document navigation preview junction read failure and safe display path | `f86e7bc77ed` |
 | 16:42 | 中立 | Record public display observation separately from verified export push | `9f2d26969aa` |
 | 16:39 | 中立 | Record verified full catalog release publication on main | `3066ae97552` |
 | 16:31 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d2561423707 | `2b93f729ab8` |
@@ -528,88 +574,4 @@
 | 04:59 | 中立 · 发布 HYDE+雷茵 | 配置器的「返回上一步结果」修好：以前退到类目，现在退回那次配置 | `d515aab4473` |
 | 04:41 | 中立 | Replace two homepage images with client-selected light product views | `fc0e563dce9` |
 | 04:36 | HYDE · 发布 HYDE+雷茵 | 锁体/锁芯/合页/闭门器四个类目上线：目录 471 → 520 | `a7bd6ebccf2` |
-| 01:07 | HYDE · 发布 HYDE+雷茵 | 11 个新产品上线；44 个视频导入；307/311 自有模具专栏 | `432562f45cb` |
-
-## 2026-09-07
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 23:50 | HYDE · 发布 HYDE+雷茵 | 导入甲方四个类目的新摄影；F100 SS 从无图上线 | `186a9e4e085` |
-| 22:53 | HYDE · 发布 HYDE+雷茵 | 按真实搜索词写三篇文章；合并两组重复产品页；修好 12 条静默断链 | `4ce4c0776a2` |
-| 19:08 | 中立 · 发布 HYDE+雷茵 | Source by range or by project 换成甲方的两张深底实拍 | `c208f9a932f` |
-| 07:58 | 中立 · 发布 HYDE+雷茵 | 首页数字条加滚动动画；入场淡入做了又撤掉，因为它会把数字藏起来 | `03b9bc88f63` |
-| 07:31 | 中立 · 发布 HYDE+雷茵 | 全项目未完成事项审计；三份过期文档更正；FAQ 的 435 实为 361 | `7361db3a8b2` |
-| 07:24 | 中立 · 发布 HYDE+雷茵 | 发布构建 1,095 页：产能链段与三篇文章上线 | `fb7711c551f` |
-| 07:12 | HYDE | 三篇新技术文章：锁芯分体尺寸、检测报告覆盖范围、OEM 四个层次 | `b4c08f21676` |
-| 07:02 | 中立 | 产能链滚动段上线；Tailwind 不再把构建产物当源码扫描 | `b9cdbcacb78` |
-| 07:00 | 中立 | Record rejected homepage film trial and uninterrupted delivery discipline | `d2e8b96c152` |
-| 05:22 | 中立 · 发布 HYDE | cn() 一直在静默删掉自定义字号类；移动端触摸目标与首页 h1 修复 | `5f0b3e62198` |
-| 04:27 | HYDE · 发布 HYDE | 27 个新型号建页；尺寸线图 44 → 79 张 | `ad317798191` |
-| 03:31 | HYDE | 搜索索引与中文生成数据跟上新内容 | `99de037ff30` |
-| 03:26 | HYDE | 导入 4 个家族的新图；194 个产品页补上甲方自己核验过的 feature 要点 | `d88c01b64b4` |
-| 03:25 | 中立 · 发布 HYDE+雷茵 | Finish editorial menu navigation and publish verified catalogue build | `68fd2fa8cc3` |
-| 02:09 | 中立 · 发布 HYDE | 发布构建：三个线上缺陷已修（1,035 页） | `0ba3ddca7c4` |
-| 01:46 | 中立 | 修三个线上缺陷：数据带出血、语言切换回首页、抠图残留水印 | `9603e4ebfe2` |
-
-## 2026-09-06
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 07:54 | HYDE · 发布 HYDE+雷茵 | 三篇新稿件：外装执手与推杠、开向、订货六要素 | `2de06b53874` |
-| 07:44 | 雷茵 · 发布 HYDE+雷茵 | 42 张尺寸线图上线；并入 Codex 的 Products 与 RFQ Concierge 抽屉 | `6b56d48c536` |
-| 04:01 | 中立 | Blender 无头渲染管线：几何全部来自目录已发布的尺寸 | `9705b6bacd7` |
-| 03:38 | HYDE | Trim Handle 术语、六张深场主图、CTA 三入口、锚文本审计 | `9793db53be2` |
-| 03:04 | 中立 | 修正雷茵交接里两处与事实不符的说法 | `662feed79a2` |
-| 03:03 | 雷茵 · 发布 雷茵 | 雷茵 RAYEN 中文站一期：产品中心 456 页，导出到 out-rayen/ | `ce17f941aac` |
-| 03:02 | 中立 | 抠图：吃掉被困的白纸；深场做成可自动降级 | `fbd9d711706` |
-| 00:54 | 中立 | Record completed Products and menu release handoff | `b4fa6f65abf` |
-
-## 2026-09-05
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 06:33 | HYDE · 发布 HYDE | 首页数字、集合页规格幅面、八篇署名、display 字号层、atlas 补场 | `46b86a60c1f` |
-| 05:50 | HYDE · 发布 HYDE | 372 个产品页的 FAQPage：问题由该型号自己的规格行生成，且页面可见 | `cf41054b1b8` |
-| 05:13 | 中立 | 修 retain-previous-assets 每删一个文件就抢一次 index.lock | `f073beaeb04` |
-| 05:12 | HYDE | 搜索索引随构建重新生成 | `dbe6aa0654c` |
-| 05:10 | 中立 · 发布 HYDE | 纪律：专业不是审美，是买家的风险；以及新目录并存上架 | `50e742b526c` |
-| 04:56 | 中立 · 发布 HYDE | 发布构建：Codex 的 Products 四段结构与 RFQ Concierge 菜单上线（1,029 页） | `014f3855827` |
-| 04:44 | 中立 | 无尺寸图版目录：62 页，从 content/products 生成，带真正的文字层 | `2645c011dff` |
-| 04:40 | HYDE | Ship approved bilingual Products architecture and RFQ Concierge menu | `2cc2c226ec6` |
-| 04:17 | 中立 | 11 张编辑图的生产单，以及从 FSB 554 页目录里拆出来的 HYDE 目录骨架 | `64c0284e06c` |
-| 03:57 | 中立 | 去掉未使用的 import | `9323ebb02b0` |
-| 03:57 | 中立 | 渲染这条路的前置条件：目录里只有 7% 的产品尺寸够建模 | `51cfc6d38f5` |
-| 03:32 | 中立 | 场景合成的可行边界；以及给译者的西语复核表 | `917d940dea1` |
-| 02:56 | 中立 | 把 FSB 的场量成数字：白底丢掉的是摄影，不是真实性 | `f248f87826f` |
-
-## 2026-09-04
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 23:20 | 中立 | 纪律：永远不生成想象出来的金属件；以及只把真实照片放进 FSB 的场 | `e5ebff1cf0c` |
-| 09:52 | 中立 | 交接：Bing 的 /cdn-cgi/ 404、配置器规格行，以及我误提交了 Codex 的 100 张图 | `e512c3c5cc6` |
-| 09:50 | 发布 HYDE | 发布构建：邮箱明文化、配置器规格行、产品页右栏规格表上线 | `ba21e261a42` |
-| 09:50 | HYDE | 修 Bing 报的 /cdn-cgi/ 404；配置器步骤条与规格行合并为一 | `61a1165f8fe` |
-| 09:24 | HYDE | 撤销 1c 的 TLS 处方；修正 1b 验证命令；产品页规格表移入右栏 | `d55f7d05708` |
-| 08:41 | 发布 HYDE | 发布构建：配置器收敛预览与产品页媒体重排上线 | `820a5aed73b` |
-| 08:39 | 中立 | 配置器预览改为候选集收敛；产品页图片视频重排 | `c37bdeda51f` |
-| 08:11 | HYDE · 发布 HYDE | 发布构建：配置器、双栏目、西语长文、视频与装箱数据上线 | `7b52e1100c0` |
-| 08:09 | 中立 | 从 Search Console 与装箱表读出四件事；产品命名不一致 18 处 | `254b0c40d56` |
-| 06:15 | HYDE | 八篇技术长文译成西语并上线；新增 /es/news 路由 | `283dab60ccf` |
-| 05:59 | HYDE | 修复配置器从未渲染的缺陷；双栏目上线；meta 样板文 47%→33% | `9338e941e54` |
-| 05:24 | HYDE | 产品视频上线 35 段；第二批照片 10 组；三个社媒接入 sameAs | `bdca912fb91` |
-| 03:36 | 中立 | GEO 审计：全量可引用性度量与报告 | `811375cc45d` |
-| 03:29 | HYDE · 发布 HYDE | 发布构建：逃生锁照片与 stahlock 描述上线 | `c090a9da759` |
-| 03:29 | HYDE | 导入甲方逃生锁照片 38 组；从 stahlock 搬运 37 条人工核对的产品描述 | `bd4660498b2` |
-| 02:29 | 中立 | 交接：西语补齐、死链与 Bing 复核、skills 安装 | `7afb4ef839c` |
-| 02:21 | 中立 | 忽略 skills 安装器生成的软链接；保留 skills-lock.json | `9472bfcef98` |
-| 01:48 | 发布 HYDE | 发布构建：西语 FAQ/下载/认证、办公室地址下架、邮箱分配 | `5aae04512a1` |
-| 01:43 | 中立 | 新增死链审计与 Bing 逐条复核；skills 用官方 CLI 重装 | `e273abc9861` |
-| 00:47 | HYDE | 西语：FAQ、下载、认证三页上线；办公室地址下架；邮箱按区域分配 | `a485f096466` |
-
-## 2026-09-03
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 22:17 | 中立 | 协作：归档编辑图发布与下轮视觉基线 | `e592cea2f12` |
 
