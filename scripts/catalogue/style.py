@@ -65,6 +65,24 @@ def fit(text: str, width: float, size: float, key: str = "text") -> str:
     return text.rstrip(" ,;") + "…"
 
 
+IMAGE_CACHE = ROOT / "tmp" / "catalogue-images"
+
+
+def readable(path: Path) -> Path:
+    """A file MuPDF can embed. The site's photographs are WebP, which MuPDF cannot read,
+    so they are converted once to JPEG at quality 95 (no resizing) and cached in tmp/."""
+    path = Path(path)
+    if path.suffix.lower() not in (".webp",):
+        return path
+    from PIL import Image
+    IMAGE_CACHE.mkdir(parents=True, exist_ok=True)
+    out = IMAGE_CACHE / (path.stem + ".jpg")
+    if not out.exists() or out.stat().st_mtime < path.stat().st_mtime:
+        with Image.open(path) as im:
+            im.convert("RGB").save(out, "JPEG", quality=95, subsampling=0)
+    return out
+
+
 def max_print_width(px: int, min_dpi: int = 200) -> float:
     """The widest an image of `px` pixels may print, in points, at `min_dpi`."""
     return px / min_dpi * 72.0
@@ -78,12 +96,13 @@ def place_image(page: pymupdf.Page, rect: pymupdf.Rect, path: Path, min_dpi: int
     the median product prints near 65 dpi — the difference between a premium book and a
     blurred one. This guard makes that impossible to send to the printer by accident.
     """
+    path = readable(path)
     pix = pymupdf.Pixmap(str(path))
     w, h = pix.width, pix.height
     scale = min(rect.width / w, rect.height / h)
     dw, dh = w * scale, h * scale
     dpi = w / (dw / 72.0)
-    if dpi < min_dpi:
+    if dpi < min_dpi - 0.01:  # a box computed exactly at the limit lands at 199.9999…
         raise LowResolution(f"{path.name}: {w}px printed {dw:.0f}pt wide = {dpi:.0f} dpi < {min_dpi}")
     x0 = rect.x0 + (rect.width - dw) / 2
     y0 = rect.y0 + (rect.height - dh) / 2
