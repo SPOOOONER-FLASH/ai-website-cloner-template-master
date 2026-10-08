@@ -50,3 +50,5 @@ node scripts/prepare-cantonfair-catalogue.mjs
 使用 Poppler 将最终 PDF 全页渲染后，检查封面、目录、每个系列、普通产品页、9014/9007、长型号索引、询价页和联络页。对英文源文字做自动换行，不截断型号或规格；超出预设卡片高度或页面安全区会使生成器报错，需先修布局再交付。
 
 资产缓存位于自己所属的 `tmp/codex-cantonfair-catalogue/assets/`。任何源图或产品资料变更后重新执行两个生成步骤；不使用旧目录的按过期 slug 命名的 plate 缓存。新增目录与旧官网下载 PDF 独立，审阅方向确定后再决定官网下载替换。
+
+`output/pdf/.gitattributes` 将 PDF 与 JPEG 作为二进制保存，禁止 Windows CRLF 换行转换；PDF 内的字节偏移必须与经过验证的原文件一致。

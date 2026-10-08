@@ -1,0 +1,3 @@
+# PDF byte offsets and image data must survive Windows checkout unchanged.
+*.pdf binary
+*.jpg binary
