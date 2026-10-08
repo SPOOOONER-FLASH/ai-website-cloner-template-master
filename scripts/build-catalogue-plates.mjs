@@ -20,7 +20,7 @@
  * Usage:  node scripts/build-catalogue-plates.mjs [--out tmp/catalogue-plates] [--size 460]
  */
 
-import { readdirSync, mkdirSync, writeFileSync } from "node:fs";
+import { readdirSync, mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import { join, basename } from "node:path";
 import sharp from "sharp";
 import { cutOut } from "./lib/product-cutout.mjs";
@@ -36,7 +36,26 @@ const outDir = flag("out", "tmp/catalogue-plates");
 const size = Number(flag("size", 460));
 mkdirSync(outDir, { recursive: true });
 
-const files = readdirSync(SOURCE).filter((f) => f.endsWith(".webp") && !/-\d+\.webp$/.test(f));
+/*
+  Every product's own heroImage, plus the top-level photographs.
+
+  The directory scan alone missed five products' main photographs on 2026-10-08, so the
+  catalogue printed them with no picture: BH01's hero is bh01-grab-bar-3.webp, which the
+  "-N.webp is a gallery variant" rule skipped, and the four Argentina AR4 records keep
+  theirs in the argentina-ar4/ subfolder, which readdirSync never entered. A product's
+  heroImage is the one photograph the book must have, so it is listed by name.
+*/
+const heroSources = readdirSync("content/products")
+  .filter((f) => f.endsWith(".json"))
+  .map((f) => JSON.parse(readFileSync(join("content/products", f), "utf8")).heroImage?.src)
+  .filter((src) => typeof src === "string" && src.startsWith("/images/products/") && src.endsWith(".webp"))
+  .map((src) => src.slice("/images/products/".length));
+const files = [
+  ...new Set([
+    ...readdirSync(SOURCE).filter((f) => f.endsWith(".webp") && !/-\d+\.webp$/.test(f)),
+    ...heroSources.filter((rel) => existsSync(join(SOURCE, rel))),
+  ]),
+];
 let done = 0;
 let fallback = 0;
 const report = {};
