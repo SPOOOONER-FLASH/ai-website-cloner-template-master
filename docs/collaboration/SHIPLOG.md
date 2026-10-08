@@ -6,12 +6,18 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 474 次提交
+最近 30 天 · 共 480 次提交
 
 ## 2026-10-08
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 02:31 | 中立 | catalogue: four sample pages (cover, factory, opener, product grid), print + screen | `0ebc55470b1` |
+| 02:25 | 中立 | catalogue: vector QR codes to each family's page | `e67d1dc8f40` |
+| 02:24 | 中立 | catalogue: family heroes (cut-outs only), and five products the plate builder missed | `05b8b0cb593` |
+| 02:09 | 中立 | catalogue: correct the fallback-font comment — Archivo does cover ≤ ≥ | `a549762a01b` |
+| 02:09 | 中立 | catalogue: design system, Archivo fonts, 200-dpi placement guard | `7f19b2d65bc` |
+| 02:07 | 中立 | 广交会目录：样张阶段实施计划 | `25a16b2d593` |
 | 01:56 | 中立 | 广交会目录重做：设计文档（甲方 10-08 在对话中确认） | `155af7222de` |
 | 01:21 | 中立 | DORA 报价定稿：按老板改价；删除首购减 200 | `d1dcbce8506` |
 | 01:08 | 中立 | #131 收尾：HTML 体积回归测试（三类页 ≤ 460 KB、全站 ≤ 640 KB），工程目标标完成 | `ba1c3444efa` |
