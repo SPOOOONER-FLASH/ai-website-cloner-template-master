@@ -367,6 +367,12 @@ So, every time you hand him something to do:
    `node scripts/build-client-runbook-docx.mjs --src <that file>`, in the same commit. Put a
    one-line pointer to it at the top of `CLIENT-RUNBOOK.md`. A chat reply is not a hand-off.
 
+   **The same goes for anything he is only meant to read** (client, 2026-10-08:
+   「docs/copy/linkedin-starter.md 这个放桌面 所有要我看的都放桌面」): drafts, audits, data
+   reports, analysis. He does not open repository paths, so a reply that says "see
+   `docs/...`" has shown him nothing. Export it with the same generator in the same turn and
+   name the Desktop file in the reply.
+
 ### Professional, not decorated. The buyer is purchasing confidence.
 
 Client's principal, 2026-09-05:
