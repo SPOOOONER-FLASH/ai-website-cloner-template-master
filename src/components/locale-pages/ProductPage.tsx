@@ -7,7 +7,7 @@ import type { Locale } from "@/data/locales";
 import { getAllProductParams, getProductBySlug, isPublished } from "@/data/products";
 import { absoluteUrl, siteName } from "@/data/site";
 import { OG_LOCALE, t, tx } from "@/lib/i18n";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { prefixer } from "./shared";
 
 export function productParams(): { category: string; slug: string }[] {
@@ -46,7 +46,7 @@ export function productMetadata(locale: Locale, category: string, slug: string):
         : `${summary.slice(0, 160).trimEnd()}…`;
 
   return {
-    title: { absolute: metaTitle },
+    title: { absolute: fitTitle(metaTitle) },
     description: metaDescription,
     ...(isPublished(product)
       ? {}

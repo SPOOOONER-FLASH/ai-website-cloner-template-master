@@ -6,7 +6,7 @@ import type { Locale } from "@/data/locales";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
 import { absoluteUrl, siteName } from "@/data/site";
 import { OG_LOCALE, t } from "@/lib/i18n";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { localeMetadata, prefixer } from "./shared";
 
 export function projectsIndexMetadata(locale: Locale): Metadata {
@@ -37,7 +37,7 @@ export function projectMetadata(locale: Locale, slug: string): Metadata {
   const url = absoluteUrl(p(`/projects/${slug}`));
   const image = absoluteUrl(project.heroImage?.src ?? defaultOgImage);
   return {
-    title: { absolute: title },
+    title: { absolute: fitTitle(title) },
     description,
     alternates: {
       canonical: p(`/projects/${slug}`),

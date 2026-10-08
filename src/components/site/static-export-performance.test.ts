@@ -232,3 +232,29 @@ test("no exported HYDE page carries the catalog in its HTML", () => {
   assert.deepEqual(tooHeavyTight, [], "a category grid, the finder or the configurator is carrying product data in its HTML again — pass toFinderProduct records, or fetch /data/<locale>/finder.json");
   assert.deepEqual(tooHeavy, [], "a page's HTML is over 640 KB");
 });
+
+/*
+  TITLE LENGTH (client 2026-10-08: drop the brand suffix on long titles). Bing flagged 1,039
+  titles over 70 characters, nearly all pushed over by " | Canton Hyland". fitTitle() and
+  templatedTitle() in src/lib/seo.ts drop the suffix when it would overflow; this fails if
+  any page still carries the suffix past the limit (a page that built its title by hand).
+*/
+test("no exported page carries the brand suffix past 70 characters", () => {
+  const out = join(repositoryRoot, "out");
+  const offenders = [];
+  const decode = (s) => s.replace(/&amp;/g, "&").replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+  const walk = (dir, rel) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        if (rel === "" && /^(?:_next|images|videos|downloads|zh|zh-en)$/.test(entry.name)) continue;
+        walk(join(dir, entry.name), rel ? `${rel}/${entry.name}` : entry.name);
+      } else if (entry.name === "index.html") {
+        const html = readFileSync(join(dir, entry.name), "utf8");
+        const title = decode(html.match(/<title>([^<]*)<\/title>/)?.[1] ?? "");
+        if (title.length > 70 && title.endsWith(" | Canton Hyland")) offenders.push(`${rel || "/"}: ${title}`);
+      }
+    }
+  };
+  walk(out, "");
+  assert.deepEqual(offenders.slice(0, 20), [], `${offenders.length} page title(s) keep " | Canton Hyland" past 70 characters — use fitTitle()/templatedTitle() from src/lib/seo.ts`);
+});

@@ -12,7 +12,7 @@ import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
 import { absoluteUrl } from "@/data/site";
 import type { NewsArticle } from "@/data/types";
 import { OG_LOCALE, t } from "@/lib/i18n";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { localeMetadata, prefixer } from "./shared";
 
 /* ---- Listings ---------------------------------------------------------------- */
@@ -51,7 +51,7 @@ function articleMetadata(locale: Locale, article: NewsArticle, section: "news" |
   const description = t(article, "seoDescription", locale);
   const path = p(`/${section}/${slug}`);
   return {
-    title: { absolute: title },
+    title: { absolute: fitTitle(title) },
     description,
     alternates: {
       canonical: path,

@@ -3,7 +3,7 @@ import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllGuideParams, getGuideBySlug } from "@/data/guides";
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const title = article.seoTitlePt ?? article.seoTitle;
   const description = article.seoDescriptionPt ?? article.seoDescription;
   return {
-    title: { absolute: title },
+    title: { absolute: fitTitle(title) },
     description,
     /*
       hreflang。缺一半的话两个语种是重复页而不是互译，导出审计会报

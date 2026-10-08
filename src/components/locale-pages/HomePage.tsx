@@ -15,7 +15,7 @@ import { homeContent } from "@/data/home-locale";
 import type { Locale } from "@/data/locales";
 import { siteName } from "@/data/site";
 import { tx } from "@/lib/i18n";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, fitTitle } from "@/lib/seo";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 
 export function homeMetadata(locale: Locale): Metadata {
@@ -31,7 +31,7 @@ export function homeMetadata(locale: Locale): Metadata {
       ),
     }),
     /* The segment root shares its layout's title template, which does not run here. */
-    title: { absolute: `${title} | ${siteName}` },
+    title: { absolute: fitTitle(`${title} | ${siteName}`) },
   };
 }
 

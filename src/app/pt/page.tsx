@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, fitTitle } from "@/lib/seo";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   }),
   // This page shares the /pt segment with its root layout, so the layout title template
   // does not run here. Keep the brand suffix explicit in the shipped home-page title.
-  title: { absolute: `${title} | ${siteName}` },
+  title: { absolute: fitTitle(`${title} | ${siteName}`) },
 };
 
 export default function PortugueseHomePage() {

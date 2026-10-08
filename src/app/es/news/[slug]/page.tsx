@@ -3,7 +3,7 @@ import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
   const description = article.seoDescriptionEs ?? article.seoDescription;
 
   return {
-    title: { absolute: title },
+    title: { absolute: fitTitle(title) },
     description,
     alternates: {
       canonical: `/es/news/${slug}/`,
