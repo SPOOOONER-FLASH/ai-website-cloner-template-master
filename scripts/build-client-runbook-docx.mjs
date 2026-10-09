@@ -10,7 +10,8 @@
  * 输出文件名跟着源文件名走。
  *
  * 用法:
- *   npm run runbook:docx                  操作手册 → %USERPROFILE%\Desktop\hyde\
+ *   npm run runbook:docx                  操作手册 → %USERPROFILE%\Desktop\hyde\00-先看这里-人工待办\
+ *                                         （其他文档按 scripts/lib/desktop-hyde.mjs 分文件夹）
  *   node scripts/build-client-runbook-docx.mjs --src docs/research/某份.md
  *   node scripts/build-client-runbook-docx.mjs --out "D:\\某处"
  *
@@ -18,7 +19,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, basename } from "node:path";
-import { homedir } from "node:os";
+import { DESKTOP_HYDE, folderFor } from "./lib/desktop-hyde.mjs";
 import {
   Document,
   Packer,
@@ -35,7 +36,9 @@ import {
 const argSrc = process.argv.indexOf("--src");
 const SOURCE = argSrc !== -1 ? process.argv[argSrc + 1] : "docs/collaboration/CLIENT-RUNBOOK.md";
 const argOut = process.argv.indexOf("--out");
-const OUT_DIR = argOut !== -1 ? process.argv[argOut + 1] : join(homedir(), "Desktop", "hyde");
+// Without --out, each document goes to its folder in Desktop\hyde (scripts/lib/desktop-hyde.mjs).
+const OUT_DIR =
+  argOut !== -1 ? process.argv[argOut + 1] : join(DESKTOP_HYDE, folderFor(`${basename(SOURCE, ".md")}.docx`));
 const OUT_FILE = join(OUT_DIR, `${basename(SOURCE, ".md")}.docx`);
 
 const HEADINGS = [

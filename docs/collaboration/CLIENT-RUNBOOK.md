@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-10-09 · 更新人：Claude · 新增：10-09 反链改到产品页（69 条对照表）+ 五个页面搜索词导出；10-09 数据结论（/video/ 已按 A 改好；三样数据只剩 Ahrefs）。之前的：Cloudflare 安全建议；Search Console 10-08 导出；Clarity 九个话题、LinkedIn；周报五件**
+**最后更新：2026-10-09 · 更新人：Claude · 新增：桌面 hyde 按文件夹整理（先看「00-先看这里-人工待办」里的「HYDE-人工代做清单」）；反链改到产品页（69 条对照表）+ 五个页面搜索词导出；/video/ 已按 A 改好；三样数据只剩 Ahrefs**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -19,21 +19,21 @@
 
 ## 现在要做的（2026-10-09）：反链改到产品页 + 五个页面的搜索词导出
 
-两件事的步骤在桌面 `hyde\2026-10-09-手动操作-反链深链与长尾词.docx`；要改的 69 条帖子对照表在桌面 `hyde\BACKLINK-DEEPLINKS.docx`。先做 worldbid 的 51 条。
+两件事的步骤在桌面 `hyde\00-先看这里-人工待办\2026-10-09-手动操作-反链深链与长尾词.docx`；要改的 69 条帖子对照表在桌面 `hyde\02-周报与数据结论\BACKLINK-DEEPLINKS.docx`。先做 worldbid 的 51 条。
 
 ---
 
 ## 现在要做的（2026-10-09）：Ahrefs Webmaster Tools
 
-10-09 数据结论在桌面 `hyde\2026-10-09-曝光继续爬升-数据结论与行动.docx`。/video/ 页你选了 A（拿掉），已改，不用再做什么。
+开通 Ahrefs Webmaster Tools 免费版，步骤在桌面 `hyde\00-先看这里-人工待办\2026-10-08-手动操作-曝光继续爬升要的数据.docx` 第 ③ 节。10-08 要的三样里，GSC 全站效果和两张收录表你 10-09 已经给了，只剩这一样。
 
-10-08 要的三样里，GSC 全站效果和两张收录表你 10-09 已经给了；**只剩 Ahrefs Webmaster Tools 免费版**，步骤仍在桌面 `hyde6-10-08-手动操作-曝光继续爬升要的数据.docx` 第 ③ 节。
+10-09 数据结论在桌面 `hyde\02-周报与数据结论\2026-10-09-曝光继续爬升-数据结论与行动.docx`。/video/ 页你选了 A，已改，不用再做什么。
 
 ---
 
 ## 现在要做的（2026-10-08）：Cloudflare 安全页四条建议
 
-两条别开（Bot Fight Mode、AI Labyrinth），security.txt 归档，Unproxied CNAME 先截图发我。AI 搜索爬虫没被拦（你 10-08 查过）。步骤在桌面 `hyde6-10-08-手动操作-Cloudflare安全建议.docx`。
+两条别开（Bot Fight Mode、AI Labyrinth），security.txt 归档，Unproxied CNAME 先截图发我。AI 搜索爬虫没被拦（你 10-08 查过）。步骤在桌面 `hyde\00-先看这里-人工待办\2026-10-08-手动操作-Cloudflare安全建议.docx`。
 
 ---
 
@@ -69,14 +69,14 @@
 
 ## 现在要做的（2026-10-02）：Clarity 九个新话题 + LinkedIn 公司主页
 
-完整步骤和要粘贴的全部文字在桌面 `hyde6-10-02-手动操作-Clarity九个话题与LinkedIn.docx`
+完整步骤和要粘贴的全部文字在桌面 `hyde\00-先看这里-人工待办\2026-10-02-手动操作-Clarity九个话题与LinkedIn.docx`
 （源文件 `docs/collaboration/2026-10-02-手动操作-Clarity九个话题与LinkedIn.md`）。LinkedIn 主页已建（linkedin.com/company/hyde-cantonlock，10-02 已加进官网），Clarity 每个话题已扩到 15 条提问。
 
 ---
 
 ## 现在要做的（2026-09-30，周报）：五件，都在后台点，不碰服务器
 
-为什么要做：周报 `docs/research/analytics/2026-09-30/HYDE-周报-2026-W39.md`（桌面 `hyde\HYDE-周报-2026-W39.docx`）
+为什么要做：周报 `docs/research/analytics/2026-09-30/HYDE-周报-2026-W39.md`（桌面 `hyde\02-周报与数据结论\HYDE-周报-2026-W39.docx`）
 第七节。前两件决定以后的周报能不能回答「带来生意了没有」和「比去年好多少」。
 
 ### ① 询盘台账（每周五，5 分钟）
@@ -219,7 +219,7 @@ GA4 里 58% 的「用户」是同一个机器人（屏幕 1280×1200）。建一
 文章结论：B2B 买家和 AI 搜索都大量读 LinkedIn，而且看重“真人 + 公司”。我们现在没有公司主页，官网的结构化数据里也就没有这条身份证明。
 
 1. 用你自己的 LinkedIn 账号登录 https://www.linkedin.com → 右上角 **For Business（业务）** → **Create a Company Page（创建公司主页）** → 选 **Company**。
-2. 名称、网址、行业、规模、简介：全部照抄 `docs/copy/linkedin-starter.md` 的「公司主页」一节（桌面 `hyde\GEO-学习与进展-2026-09-28.docx` 里也有）。Logo 用官网那张。
+2. 名称、网址、行业、规模、简介：全部照抄 `docs/copy/linkedin-starter.md` 的「公司主页」一节（桌面 `hyde\03-研究与方案\GEO-学习与进展-2026-09-28.docx` 里也有）。Logo 用官网那张。
 3. **成功的样子**：主页地址像 `https://www.linkedin.com/company/xxxx/`。**把这个地址发给我**，工程会话会把它加进官网的结构化数据。
 4. 发帖：先发第 1、2 篇（锁芯计算器、EN 1125 vs EN 179），用公司主页发，也可以用你个人账号转发。**第 3 篇（BAU）等老板确认带哪几款产品之后再发**。
 5. 看不到「创建公司主页」：LinkedIn 要求账号用了一段时间、有真实姓名和一个联系人，截图发我。
