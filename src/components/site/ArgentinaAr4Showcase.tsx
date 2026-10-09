@@ -2,7 +2,6 @@ import type { Locale } from "@/data/site";
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import { getProductByModel } from "@/data/products";
-import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { dict, t } from "@/lib/i18n";
@@ -17,7 +16,6 @@ const copy = {
     body: "Four compact mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries.",
     cta: "Explore the AR-4 collection",
     model: "Model",
-    material: "Nickel-plated iron lock case",
     aria: "HYDE Argentina AR-4 market collection",
   },
   es: {
@@ -26,7 +24,6 @@ const copy = {
     body: "Cuatro cerraduras de embutir compactas para distribuidores del mercado argentino, marcas privadas y consultas OEM.",
     cta: "Explorar la colección AR-4",
     model: "Modelo",
-    material: "Caja de hierro niquelado",
     aria: "Colección HYDE Argentina AR-4",
   },
   pt: {
@@ -35,7 +32,6 @@ const copy = {
     body: "Quatro caixas de fechadura de embutir compactas para distribuidores do mercado argentino, marca própria e consultas OEM.",
     cta: "Ver a coleção AR-4",
     model: "Modelo",
-    material: "Caixa de ferro niquelado",
     aria: "Coleção HYDE Argentina AR-4",
   },
 } as const;
@@ -46,35 +42,38 @@ function ar4Products(): Product[] {
     .filter((product): product is Product => product !== undefined);
 }
 
-function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale }) {
-  const localized = product as LocalizedProduct;
+/*
+  One tile per family, after Elabora's Piccolo page (client 2026-10-09: 「去别人网站看看怎么
+  设计交互展示的……把这换掉」): the photograph washed pale with the family's name over it, and
+  the wash lifting on hover or keyboard focus so the real part shows through. Interaction only —
+  every image is our own; Elabora's photographs are theirs and are never used.
+
+  The wash stops at 20%, not 0: Elabora clears it completely and its titles become hard to
+  read over the bare photograph.
+*/
+function Ar4Tile({ product, locale }: { product: Product; locale: Locale }) {
   /* English, never Spanish, for a locale with no name of its own yet. */
-  const name =
-    (t(localized, "name", locale)) ??
-    product.name;
+  const name = t(product as LocalizedProduct, "name", locale) ?? product.name;
 
   return (
     <Link
       href={`${locale === "en" ? "" : `/${locale}`}/products/${product.categoryPath[0]}/${product.slug}/`}
-      className={cn(
-        "hard-shadow-card group flex flex-col bg-surface",
-        // Rail card on a phone, grid cell from `sm` up. See the track below.
-        "w-[74%] min-w-[74%] flex-none snap-start sm:w-auto sm:min-w-0",
-      )}
+      aria-label={`${name}, ${dict(copy, locale).model} ${product.model}`}
+      className="group relative block overflow-hidden border border-ink bg-surface"
     >
       <MediaPlaceholder
         {...product.heroImage}
-        sizes="(min-width: 1440px) 320px, (min-width: 744px) 48vw, 100vw"
+        ratio="1 / 1"
+        sizes="(min-width: 1440px) 330px, (min-width: 1280px) 24vw, 48vw"
       />
-      <div className="flex flex-1 flex-col border-t border-line p-24">
-        <p className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
-          {dict(copy, locale).model} {product.model}
-        </p>
-        <h3 className="title-marker mt-8 text-h3 text-ink">{name}</h3>
-        <p className="mt-auto border-t border-line pt-16 text-c2 text-ink-secondary">
-          {dict(copy, locale).material}
-        </p>
-      </div>
+      <span
+        aria-hidden="true"
+        className="absolute inset-0 bg-surface/60 transition-opacity duration-[var(--motion-medium)] ease-[var(--motion-ease)] group-hover:opacity-20 group-focus-visible:opacity-20"
+      />
+      <span aria-hidden="true" className="absolute inset-0 flex flex-col items-center justify-center gap-8 p-16 text-center">
+        <span className="text-balance text-c1 font-semibold leading-tight text-ink xl:text-h3">{name}</span>
+        <span className="text-c2 font-semibold uppercase tracking-[0.12em] text-ink">{product.model}</span>
+      </span>
     </Link>
   );
 }
@@ -134,30 +133,10 @@ export function ArgentinaAr4Showcase({
           </div>
         </div>
 
-        {/*
-          A SCROLL RAIL ON A PHONE, A GRID EVERYWHERE ELSE.
-
-          `grid-cols-1` stacked four cards with a square image each: about three and a
-          half screens of scrolling on a 375px phone for one seasonal module, and the
-          homepage sections after it were effectively unreachable. Four models side by
-          side is also the honest shape of the message — this is one collection, not four
-          separate announcements.
-
-          Same idiom as PageTeaserModule: a native scroll-snap track, no JS and no arrows.
-          Cards sit at 74% so the next one is always visibly cut off at the right edge,
-          which is what tells a thumb there is more. From `sm` the track becomes the grid
-          it always was and nothing scrolls.
-        */}
-        <div
-          className={cn(
-            "horizontal-snap col-span-full mt-16 flex snap-x snap-mandatory gap-16",
-            "overflow-x-auto overscroll-x-contain",
-            "sm:grid sm:grid-cols-2 sm:gap-24 sm:overflow-visible xl:grid-cols-4",
-            products.length < ar4Models.length && "border border-line p-24",
-          )}
-        >
+        {/* Two by two on a phone — a square tile needs no scroll rail — four across from xl. */}
+        <div className="col-span-full mt-16 grid grid-cols-2 gap-16 xl:grid-cols-4 xl:gap-24">
           {products.map((product) => (
-            <Ar4ProductCard key={product.model} product={product} locale={locale} />
+            <Ar4Tile key={product.model} product={product} locale={locale} />
           ))}
         </div>
 
