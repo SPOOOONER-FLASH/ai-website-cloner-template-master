@@ -237,33 +237,91 @@ def opener(c: Canvas, number: int) -> None:
     folio(c, 7, fam.name)
 
 
-def product_page(c: Canvas, number: int) -> list[dict]:
-    fam = next(f for f in heroes.families() if f.slug == "panic-exit-devices")
-    items = ordered(fam)[:9]
-    gutter_x, gutter_y = 22, 18
-    top, bottom = 64, H - 58
-    cw = (R - L - 2 * gutter_x) / 3
-    ch = (bottom - top - 2 * gutter_y) / 3
-    box_h = ch * 0.56
-    for i, p in enumerate(items):
-        col, row = i % 3, i // 3
+def draw_grid(c: Canvas, family_slug: str, items: list[dict], top: float, bottom: float,
+              cols: int, rows: int) -> None:
+    """Product cards in a cols x rows grid between `top` and `bottom`.
+
+    Type scales with the cell: a 4-column card is ~110 pt wide against ~150 pt at 3
+    columns, so the model and spec sizes step down rather than overflow.
+    """
+    dense = cols >= 4
+    gutter_x, gutter_y = (16, 14) if dense else (22, 18)
+    model_pt, name_pt, spec_pt = (10.5, 6.8, 5.9) if dense else (12, 7.5, 6.4)
+    label_w = 38 if dense else 44
+    cw = (R - L - (cols - 1) * gutter_x) / cols
+    ch = (bottom - top - (rows - 1) * gutter_y) / rows
+    box_h = ch * (0.52 if dense else 0.56)
+    for i, p in enumerate(items[: cols * rows]):
+        col, row = i % cols, i // cols
         x0 = L + col * (cw + gutter_x)
         y0 = top + row * (ch + gutter_y)
         path = grid_plate(p)
         if path:
             c.image(x0, y0, x0 + cw, y0 + box_h, path)
-        y = y0 + box_h + 18
-        c.text(x0, y, str(p.get("model", "")), 12, "text-semibold", style.INK)
-        c.text(x0, y + 12, style.fit(p.get("name", ""), cw, 7.5, "text"), 7.5, "text", style.INK2)
-        y += 22
-        for label, value in card_specs(fam.slug, p):
-            c.rule(x0, y - 7, x0 + cw, style.RULE, 0.35)
-            c.text(x0, y + 2, label, 6.4, "text", style.INK3)
-            v = style.fit(value, cw - 44, 6.4, "text-medium")
-            c.text_right(x0 + cw, y + 2, v, 6.4, "text-medium", style.INK)
-            y += 12
+        y = y0 + box_h + (15 if dense else 18)
+        c.text(x0, y, str(p.get("model", "")), model_pt, "text-semibold", style.INK)
+        c.text(x0, y + name_pt + 4, style.fit(p.get("name", ""), cw, name_pt, "text"), name_pt, "text", style.INK2)
+        y += name_pt + 14
+        for label, value in card_specs(family_slug, p):
+            c.rule(x0, y - spec_pt - 1, x0 + cw, style.RULE, 0.35)
+            c.text(x0, y + 2, label, spec_pt, "text", style.INK3)
+            v = style.fit(value, cw - label_w, spec_pt, "text-medium")
+            c.text_right(x0 + cw, y + 2, v, spec_pt, "text-medium", style.INK)
+            y += spec_pt + 5.6
+
+
+def _panic() -> heroes.Family:
+    return next(f for f in heroes.families() if f.slug == "panic-exit-devices")
+
+
+def product_page(c: Canvas, number: int) -> list[dict]:
+    """Option A grid: 3 x 3."""
+    fam = _panic()
+    items = ordered(fam)[:9]
+    draw_grid(c, fam.slug, items, 64, H - 58, 3, 3)
     folio(c, number, fam.name)
     return items
+
+
+def band_page(c: Canvas, number: int, section: int) -> list[dict]:
+    """Option B: the family's opener as a band at the top of its first product page."""
+    fam = _panic()
+    c.text(L, 78, f"{section:02d}", 9, "text-semibold", style.BRASS)
+    c.rule(L + 22, 75, L + 70, style.BRASS, 0.8)
+    c.text(L, 118, fam.name, 28, "display-semibold", style.INK)
+    c.paragraph(L, 132, L + 300, 180, fam.summary, 9.5, "text", style.INK2, leading=1.4)
+    c.text(L, 196, f"{len(fam.products)} MODELS", 7, "text-medium", style.INK3, track=140)
+    qs = 50
+    c.qr(R - qs, 120, qs, qr.family_url(fam.slug))
+    c.text_right(R - qs - 10, 150, "Full specifications online", 7.5, "text-semibold", style.INK)
+    c.text_right(R - qs - 10, 161, qr.family_url(fam.slug).replace("https://", ""), 6.5, "text", style.INK2)
+    c.rule(L, 216, R, style.RULE, 0.5)
+    items = ordered(fam)[:8]
+    draw_grid(c, fam.slug, items, 236, H - 58, 4, 2)
+    folio(c, number, fam.name)
+    return items
+
+
+def grid12_page(c: Canvas, number: int) -> list[dict]:
+    """Option B grid: 4 x 3."""
+    fam = _panic()
+    items = ordered(fam)[8:20]
+    draw_grid(c, fam.slug, items, 64, H - 58, 4, 3)
+    folio(c, number, fam.name)
+    return items
+
+
+def render_options(out: Path) -> Path:
+    """The two ways to fit the print edition in 70 pages, on the same family."""
+    out.parent.mkdir(parents=True, exist_ok=True)
+    doc = pymupdf.open()
+    opener(Canvas(doc, False), 1)
+    product_page(Canvas(doc, False), 8)
+    band_page(Canvas(doc, False), 7, 1)
+    grid12_page(Canvas(doc, False), 8)
+    doc.set_metadata({"title": "HYDE print edition — option A vs option B", "author": COMPANY})
+    doc.save(out, garbage=4, deflate=True)
+    return out
 
 
 def render(out: Path, print_mode: bool) -> Path:
@@ -282,8 +340,9 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--print", dest="print_mode", action="store_true")
+    ap.add_argument("--options", action="store_true", help="option A vs B pages for the 70-page print edition")
     a = ap.parse_args()
-    print(render(a.out, a.print_mode))
+    print(render_options(a.out) if a.options else render(a.out, a.print_mode))
 
 
 if __name__ == "__main__":
