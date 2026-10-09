@@ -62,8 +62,9 @@ const visible = (html) =>
     .trim();
 
 /** A figure with a unit, a standard, or a model number — the things worth quoting. */
+// Cyrillic units added 10-09: /ru scored 2.9 concrete against /ja 11 only because «мм» never matched.
 const CONCRETE =
-  /\b\d[\d.,]*\s?(?:mm|cm|m|kg|g|pieces?|pcs|days?|weeks?|months?|years?|hours?|%|°|×|x)\b|\bEN\s?1\d{3,4}\b|\bISO\s?\d{4}\b|\b\d{3,4}\s?(?:SS|ET|PS|MB)\b/i;
+  /\b\d[\d.,]*\s?(?:mm|cm|m|kg|g|pieces?|pcs|days?|weeks?|months?|years?|hours?|%|°|×|x)\b|\bEN\s?1\d{3,4}\b|\bISO\s?\d{4}\b|\b\d{3,4}\s?(?:SS|ET|PS|MB)\b|\d[\d.,]*\s?(?:мм|см|кг|шт)(?![А-Яа-яЁё])/i;
 /*
   "can be" was in this list and it was the wrong call.
 

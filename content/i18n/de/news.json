@@ -246,7 +246,7 @@
   },
   "cross-referencing-a-lock-you-already-buy": {
     "title": "Ein Schloss, das Sie bereits kaufen, mit einem Gegenstück abgleichen",
-    "summary": "Viele Suchanfragen, die uns erreichen, sind Modellnummern anderer Anbieter: das Aufschraubschloss eines anderen Werks, das Band einer anderen Marke, eine Teilenummer von einer alten Rechnung. Hinter allen steht dieselbe Frage: Was muss ich bestellen, um genau das wieder zu bekommen? Sechs Maße entscheiden die Antwort, und die Modellnummer gehört nicht dazu.",
+    "summary": "Um das Schloss eines anderen Herstellers nachzubestellen, gleichen Sie 6 Maße ab, nicht die Modellnummer. Bei einem Einsteckschloss sind das Dornmaß, Entfernung, Länge und Breite des Stulps, Höhe und Tiefe des Kastens, die Nuss (fast immer 8 mm Vierkant) und der Türdickenbereich. Unser LC07 85×45mm etwa hat 85 mm Entfernung und 45 mm Dornmaß. Oberflächennamen und Klassenangaben übertragen sich nicht von Werk zu Werk; die Maße schon.",
     "seoTitle": "Türschloss abgleichen: das passende Gegenstück finden",
     "seoDescription": "Sechs Maße entscheiden, ob ein Einsteckschloss ein anderes ersetzt: Dornmaß, Entfernung, Stulp, Kasten, Vierkant und Türblattdicke.",
     "body": [
@@ -309,7 +309,7 @@
     ],
     "sourceHash": {
       "title": "73af6ab6619f",
-      "summary": "477e46ccc7b1",
+      "summary": "0e5c32a3e3af",
       "seoTitle": "1c5b7fc8a4c7",
       "seoDescription": "2045974f85ac",
       "body": "e8132fc5b50e",
@@ -385,7 +385,7 @@
   },
   "door-coordinator-double-fire-door": {
     "title": "Warum eine zweiflügelige Feuerschutztür einen Schließfolgeregler braucht und wie man ihn dimensioniert",
-    "summary": "Eine zweiflügelige Feuerschutztür mit zwei Türschließern schließt in der Reihenfolge, die die Federn gerade vorgeben. Kommt der Gangflügel zuerst an, hält ihn die Schlagleiste offen, die Tür rastet nicht ein, und das Element ist keine Feuerschutztür mehr. Ein Schließfolgeregler erzwingt die Reihenfolge. Hier steht, worauf er abgestimmt sein muss, damit er funktioniert.",
+    "summary": "Eine zweiflügelige Feuerschutztür mit zwei Türschließern schließt in der Reihenfolge, die die Federn bestimmen; kommt der Gangflügel zuerst, hält ihn die Schlagleiste offen, und die Tür verriegelt nicht. Ein Schließfolgeregler zwingt den Standflügel, zuerst zu schließen, und funktioniert nur, wenn Flügelgewichte, der Schließer jedes Flügels und der Bereich des Reglers zusammenpassen. Unser DC02 reicht bis 100 kg, unser stärkster Schließer aber nur bis 85 kg; über 85 kg bieten wir derzeit keinen Schließer an.",
     "seoTitle": "Schließfolgeregler für zweiflügelige Feuerschutztüren",
     "seoDescription": "Warum eine zweiflügelige Feuerschutztür einen Schließfolgeregler braucht und wie man ihn aufs Flügelgewicht abstimmt. DC02, 397 × 120mm, 55–100kg.",
     "body": [
@@ -439,7 +439,7 @@
     ],
     "sourceHash": {
       "title": "24fba1d169f0",
-      "summary": "eecbddb1cd3c",
+      "summary": "3c4d3f67cbbd",
       "seoTitle": "c37a1717ce6b",
       "seoDescription": "2c8a7fde1682",
       "body": "3481b4414633",
@@ -448,7 +448,7 @@
   },
   "door-hardware-schedule-guide": {
     "title": "Die Türliste: wie Beschläge tatsächlich ausgeschrieben werden",
-    "summary": "Projekte kaufen keine Schlösser. Sie kaufen Türtypen, und jeder Türtyp ist ein Beschlagsatz, der in sich stimmig sein muss. Das Dokument, das darüber entscheidet, ist die Türliste, und es lohnt sich, sie zu verstehen, bevor man darauf ein Angebot abgibt.",
+    "summary": "Projekte kaufen Türtypen, keine Schlösser: Eine Türliste nennt 30 Stück Garnitur HW-01 und 90 Stück HW-02, und jede Position einer Garnitur muss zu den anderen passen. Ein Schlosskasten mit 85 mm Entfernung braucht Drücker mit 85-mm-Bohrung und einen Zylinder passend zum Flügel. Dieser Beitrag liest eine Türliste so, wie es ein Projekteinkäufer tut, mit einer durchgerechneten Garnitur (HW-02: ein Profilzylinder-Schlosskasten 85 × 60 mm, die Angaben unseres LC04), bevor Sie danach anbieten.",
     "seoTitle": "Eine Türliste für Beschläge richtig lesen | Canton Hyland",
     "seoDescription": "Was eine Türliste für Beschläge ist, wie Beschlagsätze in Einzelpositionen zerfallen und welche drei Fragen Sie vor dem Angebot stellen sollten.",
     "body": [
@@ -510,7 +510,7 @@
     ],
     "sourceHash": {
       "title": "95f22257047a",
-      "summary": "4561dd7d84fd",
+      "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
       "body": "f6a944bda5ea",
@@ -585,7 +585,7 @@
   },
   "double-fire-exit-door-hardware-set": {
     "title": "Eine Öffnung, eine Bestellung: der Beschlagsatz für eine zweiflügelige Feuerschutz-Fluchttür",
-    "summary": "Eine zweiflügelige Feuerschutz-Fluchttür braucht sechs Beschlagpositionen, und jede wird aus denselben vier Angaben zu den Flügeln dimensioniert. Hier ist der Satz in der Reihenfolge, in der er entschieden werden muss, mit den Stellen, an denen sich zwei richtige Positionen widersprechen, und mit dem, was wir brauchen, um ihn als eine Öffnung anzubieten.",
+    "summary": "Eine zweiflügelige Feuerschutz-Fluchttür braucht 6 Beschlagpositionen: ein Gerät an jedem Flügel, einen Außenbeschlag am Gangflügel, einen Türschließer an jedem Flügel und einen Schließfolgeregler, damit der Standflügel zuerst schließt. Alle 6 werden aus 4 Angaben zu den Flügeln bemessen: Breite und Gewicht jedes Flügels, Türdicke und welcher Flügel der Gangflügel ist. Dieser Beitrag geht sie in dieser Reihenfolge durch, zeigt, wo sich 2 richtige Positionen widersprechen, und nennt, was wir brauchen, um sie als eine Öffnung anzubieten.",
     "seoTitle": "Zweiflügelige Fluchttür mit Panikstangen: kompletter Satz",
     "seoDescription": "Die sechs Beschlagpositionen einer zweiflügeligen Feuerschutz-Fluchttür, von Panikstangen und Außenbeschlag bis zu Schließern und Schließfolgeregler.",
     "body": [
@@ -634,7 +634,7 @@
     ],
     "sourceHash": {
       "title": "f40f047520c8",
-      "summary": "e704a337f501",
+      "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
       "body": "7ac89beb63e2",
@@ -1184,7 +1184,7 @@
   },
   "master-key-systems-how-many-levels-you-need": {
     "title": "Wie viele Ebenen Ihre Hauptschlüsselanlage tatsächlich braucht",
-    "summary": "Eine Hauptschlüsselanlage ist eine Hierarchie, und die Zahl ihrer Ebenen ist eine Entscheidung darüber, wer durch welche Tür darf – keine Beschlagspezifikation. Wir bauen bis zu fünf Ebenen, vom GGMK bis zum Einzelschlüssel, mit vier Verwaltungsebenen über dem einzelnen Schloss. Die meisten Gebäude brauchen drei.",
+    "summary": "Wir bauen Schließanlagen mit bis zu 5 Ebenen, vom Generalhauptschlüssel bis zum Einzelschlüssel, und die meisten Gebäude brauchen 3: Jede zusätzliche Ebene verbraucht Schlüsselkombinationen, die das Gebäude später brauchen könnte. Dieser Beitrag enthält den Ebenenplan, ein durchgerechnetes Beispiel für ein Bürogebäude mit 4 Geschossen und 36 Zylindern (der Generalhauptschlüssel schließt alle 36, der Hauptschlüssel des Facility-Managers 8, der Gruppenschlüssel der Reinigung 3) und einen leeren Schließplan zum Ausdrucken und Ausfüllen.",
     "seoTitle": "Hauptschlüsselanlage: Wie viele Ebenen brauchen Sie?",
     "seoDescription": "Aufbau einer Hauptschlüsselanlage vom GGMK bis zum Einzelschlüssel, ein Rechenbeispiel und warum jede Ebene weniger Einzelschlüssel übrig lässt.",
     "body": [
@@ -1240,7 +1240,7 @@
     ],
     "sourceHash": {
       "title": "c50f993d93f6",
-      "summary": "bf477e808275",
+      "summary": "b34deed10d95",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
@@ -1249,7 +1249,7 @@
   },
   "mortise-lock-backset-and-centre-distance-guide": {
     "title": "Dornmaß und Entfernung: wie man die Nummer eines Einsteckschlosses liest",
-    "summary": "Zwei Zahlen entscheiden, ob ein Schlosskasten in die Tür vor Ihnen passt. Sie stehen in der Modellnummer, und sie falsch zu lesen, ist der häufigste Grund, warum sich ein Container voller Beschläge nicht einbauen lässt.",
+    "summary": "Zwei Maße entscheiden, ob ein Schlosskasten in die Tür passt, und sie stehen in der Modellnummer: LC08 85×55 bedeutet 85 mm Entfernung bei 55 mm Dornmaß. 85 mm ist die Standardentfernung für Profilzylinderschlösser; die Unterschiede liegen beim Dornmaß, ab 16 mm für schmale Aluminiumprofile aufwärts. Ein Fehler bei einem der beiden ist der häufigste Grund, warum ein Container Beschläge nicht eingebaut werden kann.",
     "seoTitle": "So lesen Sie die Nummer eines Einsteckschlosses | Canton Hyland",
     "seoDescription": "Wie man Dornmaß und Entfernung aus der Modellnummer eines Einsteckschlosses liest, warum es 85mm und 72mm gibt und welches Dornmaß zu welcher Tür passt.",
     "body": [
@@ -1303,7 +1303,7 @@
     ],
     "sourceHash": {
       "title": "cee383f01b14",
-      "summary": "99b0df8efb42",
+      "summary": "9bb3890ad5ef",
       "seoTitle": "f2b93ea803b6",
       "seoDescription": "67f0856c8850",
       "body": "fd6247dfe271",
@@ -1312,7 +1312,7 @@
   },
   "narrow-stile-aluminium-door-lock-sag": {
     "title": "Warum Aluminiumtüren absacken und was der Schlosskasten damit zu tun hat",
-    "summary": "Eine Aluminiumtür mit schmalen Rahmen, die nicht mehr einrastet, hat fast nie ein defektes Schloss. Sie ist an der freien Kante um einige Millimeter abgesackt, und das Schloss ist nur die Stelle, an der es zuerst jemand bemerkt. Hier steht, was sich tatsächlich bewegt und was davon eine Beschlagentscheidung ist.",
+    "summary": "Eine Aluminium-Schmalrahmentür, die nicht mehr einrastet, hat fast nie ein defektes Schloss: Der Flügel ist an der freien Kante ein paar Millimeter abgesackt. Bei einem Profil von nur 30 bis 50 mm Breite verschleißt zuerst die Band- oder Drehlagerseite, dann öffnen sich die Eckverbindungen des Rahmens, und erst an dritter Stelle zeigt es die Falle, weil sie in ein Schließblech mit vielleicht 2 mm Spiel greift. Nur der Schlosskasten ist eine Beschlagentscheidung: Unsere Schmalrahmen-Schlosskästen gibt es mit 30, 40 und 45 mm Dornmaß.",
     "seoTitle": "Aluminiumtür mit schmalem Rahmen sackt ab: Ursachen",
     "seoDescription": "Warum Aluminiumtüren mit schmalen Rahmen absacken und nicht mehr einrasten, wie Dornmaß und 30mm-Rahmen zusammenspielen und wer die Last trägt.",
     "body": [
@@ -1368,7 +1368,7 @@
     ],
     "sourceHash": {
       "title": "0b49c4e6dc00",
-      "summary": "c2f1674ba923",
+      "summary": "570332d194f5",
       "seoTitle": "97f56e151143",
       "seoDescription": "73d3a4026004",
       "body": "cff04bbbb027",
@@ -1377,7 +1377,7 @@
   },
   "occupied-vacant-washroom-indicator-bolt": {
     "title": "Frei oder besetzt: was ein WC-Anzeiger tatsächlich leisten muss",
-    "summary": "Ein WC-Riegel mit Anzeige ist Schloss und Schild in einem Teil, und das Schild ist die Hälfte, die schlecht ausgeschrieben wird. Es muss aus Stehabstand lesbar sein, sich im Notfall von außen entriegeln lassen und in einem öffentlichen Sanitärraum mehrere hundert Betätigungen am Tag von Menschen überstehen, die nicht sorgfältig damit umgehen.",
+    "summary": "Ein Besetztanzeiger ist Schloss und Anzeige in einem Teil: Er muss im Stehen ablesbar sein, sich im Notfall von außen öffnen lassen und mehrere hundert Betätigungen am Tag überstehen. Unsere 200 und 400 sind aus Zinklegierung, unser 500 aus Edelstahl, die Wahl für aggressive Reinigung oder Gebäude an der Küste; alle werden aufgeschraubt, die Tür braucht also keine Ausfräsung. Wir veröffentlichen weder einen Dauerprüfwert noch die Fenstergröße; fragen Sie also, bevor Sie gegen eine Ausschreibung anbieten, die eines davon verlangt.",
     "seoTitle": "WC-Riegel mit Anzeige: Frei/Besetzt richtig ausschreiben",
     "seoDescription": "Was ein WC-Riegel mit Frei/Besetzt-Anzeige leisten muss, warum die Notentriegelung vor dem Fenster zählt und wie sich 200, 400 und 500 unterscheiden.",
     "body": [
@@ -1435,7 +1435,7 @@
     ],
     "sourceHash": {
       "title": "7a6c9a00d438",
-      "summary": "3a4dafaa4090",
+      "summary": "5490d89dde81",
       "seoTitle": "89347cc1780a",
       "seoDescription": "a671ec187536",
       "body": "e529925518ff",
@@ -2158,7 +2158,7 @@
   },
   "what-documents-you-can-actually-get": {
     "title": "Datenblätter, CAD und BIM: was wir haben und was nicht",
-    "summary": "Besucher kommen hierher auf der Suche nach einem Datenblatt, einer DWG, einem BIM-Objekt oder einer ficha técnica. Manches davon veröffentlichen wir heute, manches schicken wir auf Anfrage, und eines gibt es noch nicht. Zu sagen, was was ist, nützt mehr als eine Download-Seite, die alles verspricht.",
+    "summary": "Was es heute von uns gibt: Spezifikationen als Tabelle auf jeder Produktseite, bemaßte Zeichnungen für einige Modelle und einen aktuellen Katalog als PDF. Prüfdokumente kommen auf Anfrage, für genau das abgedeckte Modell. Eine BIM-Bibliothek (keine Revit-Familien oder IFC-Objekte) und veröffentlichte Zeichnungen für die Türvorbereitung gibt es nicht; für eine Frässchablone fordern Sie eine freigegebene Zeichnung des genauen Modells an. Fragen Sie nach Modellnummer in der Ausführung, die Sie kaufen: Eine Zeichnung der Version mit 60 mm Dornmaß ist keine Zeichnung der mit 45 mm.",
     "seoTitle": "Datenblätter, CAD und BIM für Türbeschläge: was es gibt",
     "seoDescription": "HYDE hat 84 bemaßte SVG-Zeichnungen, 72 in sichtbaren Einträgen, und ein durchsuchbares Katalog-PDF. Keine BIM-Bibliothek, keine Türvorbereitungs-SVGs.",
     "body": [
@@ -2220,7 +2220,7 @@
     ],
     "sourceHash": {
       "title": "c9ec3ebc0156",
-      "summary": "1d9875e4bc66",
+      "summary": "34f71cb953ce",
       "seoTitle": "e9cada889687",
       "seoDescription": "07af29b09753",
       "body": "c29f639c79d1",
@@ -2299,7 +2299,7 @@
   },
   "what-oem-actually-changes": {
     "title": "Was OEM tatsächlich ändert und was nicht",
-    "summary": "Ihre Marke auf ein Schloss zu bringen, sind vier getrennte Entscheidungen, nicht eine, und nur eine davon kostet echtes Geld. Drei ändern am Teil nichts. Die vierte ist die, die ein Werkzeug braucht.",
+    "summary": "Ihre Marke auf ein Schloss zu bringen, sind 4 getrennte Entscheidungen: Verpackung und Kennzeichnung, Marke auf dem Teil, Oberfläche und das Teil selbst. Nur die vierte braucht eine Form. Änderungen an Verpackung und Oberfläche laufen mit Katalog-Lieferzeit, ab 30 Tagen nach Auftragsbestätigung; ein geändertes Werkzeug kommt mit der Änderung hinzu; eine neue Form braucht 3 bis 5 Monate, bevor die Produktion beginnen kann. Dieser Beitrag listet, was Sie für jede der 4 schicken sollten, damit die erste Antwort eine echte Antwort ist.",
     "seoTitle": "OEM und Eigenmarke bei Türbeschlägen | Canton Hyland",
     "seoDescription": "Verpackung, Marke am Teil, Oberfläche und Werkzeug sind vier OEM-Entscheidungen mit vier verschiedenen Kosten. Was jede erfordert und was Sie schicken.",
     "body": [
@@ -2358,7 +2358,7 @@
     ],
     "sourceHash": {
       "title": "fc19bac775d4",
-      "summary": "db100a30a27e",
+      "summary": "022466a8bc3f",
       "seoTitle": "67b353783478",
       "seoDescription": "dab66e40fd66",
       "body": "1474dfdb6922",

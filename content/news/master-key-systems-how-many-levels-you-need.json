@@ -4,7 +4,7 @@
   "kind": "insight",
   "publishedAt": "2026-09-09",
   "updatedAt": "2026-10-09",
-  "summary": "A master key system is a hierarchy, and the number of levels in it is a decision about who is allowed through which door, not a hardware specification. We build to five levels, GGMK down to the change key, with four tiers of management keying above the individual lock. Most buildings need three.",
+  "summary": "We build master key systems up to 5 levels, GGMK down to the change key, and most buildings need 3: every extra level spends key combinations the building may need later. This article gives the level chart, a worked example for a 4-floor office with 36 cylinders (the grand master opens all 36, the facilities master 8, the cleaners' sub-master 3) and a blank chart to print and fill in.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -62,7 +62,7 @@
   "seoTitle": "Master Key System Chart: How Many Levels You Need | Canton Hyland",
   "seoDescription": "The master key system chart from GGMK down to change keys, a worked building example, and why every extra level leaves fewer change keys to issue.",
   "titleEs": "Cuántos niveles necesita realmente su amaestramiento",
-  "summaryEs": "Un sistema de amaestramiento es una jerarquía, y el número de niveles es una decisión sobre quién puede pasar por qué puerta, no una especificación de herraje. Fabricamos hasta cinco niveles, de la llave maestra general a la llave individual, con cuatro escalones de gestión sobre la cerradura individual. La mayoría de los edificios necesita tres.",
+  "summaryEs": "Fabricamos amaestramientos de hasta 5 niveles, de la llave maestra general a la llave individual, y la mayoría de los edificios necesita 3: cada nivel de más gasta combinaciones de llave que el edificio puede necesitar después. Este artículo da la tabla de niveles, un ejemplo resuelto para una oficina de 4 plantas con 36 cilindros (la gran maestra abre los 36, la maestra de mantenimiento 8, la submaestra de limpieza 3) y una planilla en blanco para imprimir y completar.",
   "bodyEs": [
     "Casi todas las consultas sobre amaestramiento empiezan igual: «¿pueden hacer llave maestra?». La respuesta es sí, y no sirve de nada, porque el amaestramiento no es una prestación que un cilindro tenga o no tenga. Es un plan (un mapa de quién puede abrir qué) y los cilindros se espigan después para ajustarse a ese plan. La pregunta que hace avanzar un pedido es cuántos niveles tiene ese plan.",
     "Conviene fijar el vocabulario, porque las abreviaturas se usan con soltura y no son intercambiables. Una llave individual (CK) abre una cerradura y nada más, la que lleva un inquilino o un ocupante de oficina. Una llave maestra (MK) abre todas las cerraduras de un grupo definido: una planta, un ala, un departamento. Una gran maestra (GMK) abre varios grupos. Una gran maestra general (GGMK) se sitúa por encima. Entre medias están los niveles de gestión que un equipo de mantenimiento usa a diario, la persona de limpieza que necesita todas las habitaciones de dos plantas pero ningún cuarto técnico, el contratista de mantenimiento que necesita los cuartos técnicos de todo el recinto y ninguna oficina.",
@@ -166,7 +166,7 @@
     ]
   },
   "titlePt": "Quantos níveis o seu sistema de chave-mestra realmente precisa",
-  "summaryPt": "Chave-mestra não é um recurso que um cilindro tem ou não tem. É um plano (uma planilha de quem pode abrir o quê) e os cilindros são pinados depois para atender ao plano.",
+  "summaryPt": "Fabricamos sistemas de chave mestra de até 5 níveis, da chave mestra geral à chave individual, e a maioria dos prédios precisa de 3: cada nível a mais gasta combinações de chave de que o prédio pode precisar depois. Este artigo traz o quadro de níveis, um exemplo resolvido para um escritório de 4 andares com 36 cilindros (a grã-mestra abre os 36, a mestra da manutenção 8, a submestra da limpeza 3) e um quadro em branco para imprimir e preencher.",
   "bodyPt": [
     "Quase toda consulta que recebemos sobre chave-mestra começa do mesmo jeito: \"vocês fazem chave-mestra?\" A resposta é sim, e ela não é útil, porque chave-mestra não é um recurso que um cilindro tem ou não tem. É um plano (uma planilha de quem pode abrir o quê) e os cilindros são pinados depois para atender ao plano. A pergunta que de fato faz um pedido andar é quantos níveis esse plano tem.",
     "Vale acertar o vocabulário, porque as siglas são usadas de forma solta e não são intercambiáveis. Uma chave de uso (CK) abre uma fechadura e mais nada, a chave que um inquilino ou um ocupante de sala carrega. Uma chave-mestra (MK) abre todas as fechaduras de um grupo definido: um andar, uma ala, um departamento. Uma chave-mestra geral (GMK) abre vários grupos. Uma chave-mestra geral superior (GGMK) fica acima dessas. Entre elas ficam os níveis de gestão que uma equipe de facilities usa no dia a dia, o zelador que precisa de todas as salas de dois andares mas de nenhuma casa de máquinas, o manutentor terceirizado que precisa das casas de máquinas do prédio inteiro e de nenhum escritório.",
