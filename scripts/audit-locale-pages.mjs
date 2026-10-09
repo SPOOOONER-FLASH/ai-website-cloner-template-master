@@ -181,7 +181,7 @@ if (JSON_OUT) {
   process.exit(0);
 }
 
-console.log("Portuguese pages, against the English and Spanish twins of each route\n");
+console.log(`${LOCALE} pages, against the English and Spanish twins of each route\n`);
 console.log(`  pages compared        ${routes.length}`);
 console.log(`  pages with English    ${withEnglish.length}`);
 console.log(`  distinct phrases      ${ranked.length}`);
