@@ -153,7 +153,15 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
   const fmt = (n: number) => (locale === "en" ? String(n) : String(n).replace(".", ","));
 
   return (
-    <section className="col-content grid grid-cols gap-x gap-y-48" aria-live="polite">
+    <section className="col-content grid grid-cols gap-x gap-y-48">
+      {/* One sentence is announced, not the whole table on every keystroke. */}
+      <p className="sr-only" aria-live="polite">
+        {r
+          ? r.publishedMm !== null
+            ? fill(t.orderAs, { total: fmt(r.publishedMm), outside: fmt(r.outside.halfMm), inside: fmt(r.inside.halfMm) })
+            : t.noModel
+          : t.invalid}
+      </p>
       <form
         className="col-span-full space-y-24 lg:col-span-5 xl:col-span-9"
         onSubmit={(e) => e.preventDefault()}
@@ -171,7 +179,19 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
           <input className={FIELD_CLASS} inputMode="decimal" value={inTrim} onChange={(e) => setInTrim(e.target.value)} />
         </label>
         <label className="flex items-start gap-12 text-c1 text-ink">
-          <input type="checkbox" className="mt-6" checked={offCentre} onChange={(e) => setOffCentre(e.target.checked)} />
+          <input
+            type="checkbox"
+            className="mt-6"
+            checked={offCentre}
+            onChange={(e) => {
+              // Start from the centered position for the door entered, so ticking the box
+              // changes nothing until the reader moves the center (a fixed 30 made the
+              // result jump on any door that is not 60mm).
+              const d = num(door);
+              if (e.target.checked && d > 0) setCentre(fmt(d / 2));
+              setOffCentre(e.target.checked);
+            }}
+          />
           <span>{t.offCentre}</span>
         </label>
         {offCentre ? (
@@ -217,6 +237,12 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
                 </tbody>
               </table>
             </div>
+            {/* The working, with the reader's own numbers, so the result can be checked by hand. */}
+            <p className="mt-16 text-c2 tabular-nums text-ink-secondary">
+              {t.outside}: {fmt(r.centerMm)} + {fmt(num(outTrim))} = {fmt(r.outside.calculatedMm)} mm → {fmt(r.outside.halfMm)} mm
+              <br />
+              {t.inside}: {fmt(num(door))} − {fmt(r.centerMm)} + {fmt(num(inTrim))} = {fmt(r.inside.calculatedMm)} mm → {fmt(r.inside.halfMm)} mm
+            </p>
             <p className="mt-32 text-c2 uppercase tracking-[0.08em] text-ink-secondary">{t.order}</p>
             <p className="mt-8 text-h3 text-ink">
               {r.publishedMm !== null

@@ -52,7 +52,9 @@ function push(refspec, label, { force = false, attempts = 3 } = {}) {
     if (r.status === 0) return { ok: true };
     const why = (r.stderr || r.error?.message || "").split("\n").filter(Boolean).slice(-2).join(" | ");
     console.log(`    failed: ${why}`);
-    if (/non-fast-forward|fetch first|rejected/i.test(why)) return { ok: false, raced: true };
+    // Classify on the whole stderr: git ends a rejection with two "hint:" lines, so the
+    // two-line summary above never contains "rejected" (r32 gave up instead of rebuilding).
+    if (/non-fast-forward|fetch first|rejected/i.test(r.stderr ?? "")) return { ok: false, raced: true };
   }
   return { ok: false };
 }

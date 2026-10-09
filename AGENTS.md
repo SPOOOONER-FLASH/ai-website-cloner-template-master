@@ -373,6 +373,15 @@ So, every time you hand him something to do:
    `docs/...`" has shown him nothing. Export it with the same generator in the same turn and
    name the Desktop file in the reply.
 
+   **Desktop\hyde is filed by folder** (client, 2026-10-09: 「文件太多 帮我归纳整理 建文件夹」).
+   The generator picks the folder from the file name (`scripts/lib/desktop-hyde.mjs`:
+   00 人工待办, 01 待做计划, 02 周报与数据结论, 03 研究与方案, 04 数据库-原始导出 by date,
+   05 目录与报价, 09 旧资料归档), so never pass `--out` to the Desktop root. After a hand-off
+   is finished or a goal row changes, run `node scripts/organize-desktop-hyde.mjs`: it files
+   loose files, archives hand-offs the runbook no longer points to, copies each
+   `docs/research/analytics/<date>/raw` into 04, and regenerates the 人工代做清单 and 待做计划.
+   Name the folder as well as the file in the reply.
+
 ### Professional, not decorated. The buyer is purchasing confidence.
 
 Client's principal, 2026-09-05:
