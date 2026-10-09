@@ -7,3 +7,6 @@
 - **未动**：E1 三页（10-14 读数）；/video/ 站点地图去留等甲方 A/B；万能钥匙分级表、饰面两页主次归文案会话。
 - **插件**：ponytail、i-have-adhd（常开）、context-mode 本会话已生效；hyperframes 已装未试渲染。
 - **发布**：西语规格会话的目录发布 4517489780b（源 eaab4162e0c）分块推送中；本提交的标题改动随下一次发布上线。
+- **追加（甲方选 A）**：`src/lib/site-sitemap.ts` 去掉 /video/ 观看页与目录条目（页面保留）。
+- **追加（饰面主次）**：指南 finish-code-reference-2026 英文 seoTitle/Description 让位给新闻 finish-codes-us26d-626-630（数据：1,050 vs 179 曝光）；正文与互链归文案会话，已发消息。
+- **追加（反链深链 #141）**：`scripts/build-backlink-deeplinks.mjs`（自检两条手核帖子）把 Bing 引用页面 139 条按型号对到产品页，69 条可改 → `docs/research/analytics/2026-10-09/BACKLINK-DEEPLINKS.md`；10-09 原始导出存 `docs/research/analytics/2026-10-09/raw/`。甲方手动改帖。

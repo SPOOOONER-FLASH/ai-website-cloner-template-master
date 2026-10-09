@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-10-09 · 更新人：Claude · 新增：10-09 数据结论（/video/ 已按你选的 A 改好；三样数据只剩 Ahrefs）。之前的：Cloudflare 安全建议；Search Console 10-08 导出；Clarity 九个话题、LinkedIn；周报五件**
+**最后更新：2026-10-09 · 更新人：Claude · 新增：10-09 反链改到产品页（69 条对照表）+ 五个页面搜索词导出；10-09 数据结论（/video/ 已按 A 改好；三样数据只剩 Ahrefs）。之前的：Cloudflare 安全建议；Search Console 10-08 导出；Clarity 九个话题、LinkedIn；周报五件**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -17,7 +17,13 @@
 
 ---
 
-## 现在要做的（2026-10-09）：只剩 Ahrefs Webmaster Tools
+## 现在要做的（2026-10-09）：反链改到产品页 + 五个页面的搜索词导出
+
+两件事的步骤在桌面 `hyde\2026-10-09-手动操作-反链深链与长尾词.docx`；要改的 69 条帖子对照表在桌面 `hyde\BACKLINK-DEEPLINKS.docx`。先做 worldbid 的 51 条。
+
+---
+
+## 现在要做的（2026-10-09）：Ahrefs Webmaster Tools
 
 10-09 数据结论在桌面 `hyde\2026-10-09-曝光继续爬升-数据结论与行动.docx`。/video/ 页你选了 A（拿掉），已改，不用再做什么。
 
