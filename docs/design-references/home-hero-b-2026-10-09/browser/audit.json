@@ -1,0 +1,854 @@
+{
+  "generatedAt": "2026-10-09T11:18:29.740Z",
+  "base": "http://127.0.0.1:4177/",
+  "results": [
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "requestedDefaultFontSize": null,
+      "url": "http://127.0.0.1:4177/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "devicePixelRatio": 1
+      },
+      "rootFontSize": "10px",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 390,
+        "height": 123,
+        "bottom": 123
+      },
+      "main": {
+        "x": 0,
+        "y": 307.4,
+        "documentY": 307.4,
+        "width": 390,
+        "height": 10426.8,
+        "bottom": 10734.2
+      },
+      "h1": {
+        "x": 16,
+        "y": 1387.4,
+        "documentY": 1387.4,
+        "width": 358,
+        "height": 108.8,
+        "bottom": 1496.1
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 307.4,
+        "documentY": 307.4,
+        "width": 390,
+        "height": 482.5,
+        "bottom": 789.9,
+        "media": {
+          "x": 16,
+          "y": 307.4,
+          "documentY": 307.4,
+          "width": 358,
+          "height": 268.5,
+          "bottom": 575.9
+        },
+        "activeCaption": {
+          "x": 16,
+          "y": 591.9,
+          "documentY": 591.9,
+          "width": 358,
+          "height": 166,
+          "bottom": 757.9
+        },
+        "captionTitle": "Panic Exit Devices"
+      },
+      "floatingPromos": [],
+      "aboveFoldCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 16,
+          "y": 712.9,
+          "documentY": 712.9,
+          "width": 153.5,
+          "height": 45,
+          "bottom": 757.9,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 16,
+          "y": 712.9,
+          "documentY": 712.9,
+          "width": 153.5,
+          "height": 45,
+          "bottom": 757.9,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 16,
+          "y": 935.9,
+          "documentY": 935.9,
+          "width": 264.5,
+          "height": 355.5,
+          "bottom": 1291.4,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 202.4,
+          "y": 3709.9,
+          "documentY": 3709.9,
+          "width": 171.6,
+          "height": 45,
+          "bottom": 3754.9,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 16,
+          "y": 5155.9,
+          "documentY": 5155.9,
+          "width": 204.9,
+          "height": 45,
+          "bottom": 5200.9,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 16,
+          "y": 8581.3,
+          "documentY": 8581.3,
+          "width": 147.2,
+          "height": 45,
+          "bottom": 8626.3,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 16,
+          "y": 9695.3,
+          "documentY": 9695.3,
+          "width": 264.5,
+          "height": 380.5,
+          "bottom": 10075.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 16,
+          "y": 10287.8,
+          "documentY": 10287.8,
+          "width": 88.8,
+          "height": 45,
+          "bottom": 10332.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 16,
+          "y": 10657.2,
+          "documentY": 10657.2,
+          "width": 106.2,
+          "height": 45,
+          "bottom": 10702.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 39,
+        "viewport": 2,
+        "loadedInViewport": 2,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-390x844.png",
+      "hardFailures": []
+    },
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 640,
+        "height": 900
+      },
+      "requestedDefaultFontSize": null,
+      "url": "http://127.0.0.1:4177/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 640,
+        "height": 900,
+        "devicePixelRatio": 1
+      },
+      "rootFontSize": "10px",
+      "clientWidth": 640,
+      "scrollWidth": 640,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 640,
+        "height": 147,
+        "bottom": 147
+      },
+      "main": {
+        "x": 0,
+        "y": 331.4,
+        "documentY": 331.4,
+        "width": 640,
+        "height": 11798.7,
+        "bottom": 12130
+      },
+      "h1": {
+        "x": 19.8,
+        "y": 1560.5,
+        "documentY": 1560.5,
+        "width": 600.4,
+        "height": 120,
+        "bottom": 1680.5
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 331.4,
+        "documentY": 331.4,
+        "width": 640,
+        "height": 474.8,
+        "bottom": 806.2,
+        "media": {
+          "x": 19.8,
+          "y": 331.4,
+          "documentY": 331.4,
+          "width": 600.4,
+          "height": 235.8,
+          "bottom": 567.2
+        },
+        "activeCaption": {
+          "x": 19.8,
+          "y": 583.2,
+          "documentY": 583.2,
+          "width": 600.4,
+          "height": 191,
+          "bottom": 774.2
+        },
+        "captionTitle": "Panic Exit Devices"
+      },
+      "floatingPromos": [],
+      "aboveFoldCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 19.8,
+          "y": 716.7,
+          "documentY": 716.7,
+          "width": 157.6,
+          "height": 45,
+          "bottom": 761.7,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 19.8,
+          "y": 716.7,
+          "documentY": 716.7,
+          "width": 157.6,
+          "height": 45,
+          "bottom": 761.7,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 19.8,
+          "y": 952.2,
+          "documentY": 952.2,
+          "width": 446.3,
+          "height": 512.3,
+          "bottom": 1464.5,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 443.9,
+          "y": 3741.9,
+          "documentY": 3741.9,
+          "width": 176.3,
+          "height": 45,
+          "bottom": 3786.9,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 19.8,
+          "y": 5363.2,
+          "documentY": 5363.2,
+          "width": 210.5,
+          "height": 45,
+          "bottom": 5408.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 19.8,
+          "y": 9580.1,
+          "documentY": 9580.1,
+          "width": 151.2,
+          "height": 45,
+          "bottom": 9625.1,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 19.8,
+          "y": 10836.5,
+          "documentY": 10836.5,
+          "width": 446.3,
+          "height": 512.3,
+          "bottom": 11348.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 19.8,
+          "y": 11535.8,
+          "documentY": 11535.8,
+          "width": 91.1,
+          "height": 45,
+          "bottom": 11580.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 19.8,
+          "y": 12053,
+          "documentY": 12053,
+          "width": 108.9,
+          "height": 45,
+          "bottom": 12098,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 39,
+        "viewport": 2,
+        "loadedInViewport": 2,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-640x900.png",
+      "hardFailures": []
+    },
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "requestedDefaultFontSize": null,
+      "url": "http://127.0.0.1:4177/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "devicePixelRatio": 1
+      },
+      "rootFontSize": "10px",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 1425,
+        "height": 123,
+        "bottom": 123
+      },
+      "main": {
+        "x": 0,
+        "y": 245,
+        "documentY": 245,
+        "width": 1425,
+        "height": 15889,
+        "bottom": 16134
+      },
+      "h1": {
+        "x": 32,
+        "y": 2098,
+        "documentY": 2098,
+        "width": 557.8,
+        "height": 120,
+        "bottom": 2218
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 245,
+        "documentY": 245,
+        "width": 1425,
+        "height": 736.5,
+        "bottom": 981.5,
+        "media": {
+          "x": 32,
+          "y": 245,
+          "documentY": 245,
+          "width": 1361,
+          "height": 534.5,
+          "bottom": 779.5
+        },
+        "activeCaption": {
+          "x": 32,
+          "y": 803.5,
+          "documentY": 803.5,
+          "width": 1361,
+          "height": 130,
+          "bottom": 933.5
+        },
+        "captionTitle": "Panic Exit Devices"
+      },
+      "floatingPromos": [],
+      "aboveFoldCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 1064.8,
+          "y": 803.5,
+          "documentY": 803.5,
+          "width": 162.3,
+          "height": 25,
+          "bottom": 828.5,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 1064.8,
+          "y": 803.5,
+          "documentY": 803.5,
+          "width": 162.3,
+          "height": 25,
+          "bottom": 828.5,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 32,
+          "y": 1191.5,
+          "documentY": 1191.5,
+          "width": 672.5,
+          "height": 770.5,
+          "bottom": 1962,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 1211.4,
+          "y": 4473.8,
+          "documentY": 4473.8,
+          "width": 181.6,
+          "height": 25,
+          "bottom": 4498.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 950,
+          "y": 6392.2,
+          "documentY": 6392.2,
+          "width": 216.9,
+          "height": 25,
+          "bottom": 6417.2,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 32,
+          "y": 11494.3,
+          "documentY": 11494.3,
+          "width": 155.6,
+          "height": 25,
+          "bottom": 11519.3,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 32,
+          "y": 13962.3,
+          "documentY": 13962.3,
+          "width": 672.5,
+          "height": 770.5,
+          "bottom": 14732.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 720.5,
+          "y": 15069.8,
+          "documentY": 15069.8,
+          "width": 93.6,
+          "height": 25,
+          "bottom": 15094.8,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 1064.8,
+          "y": 16060,
+          "documentY": 16060,
+          "width": 112,
+          "height": 25,
+          "bottom": 16085,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 39,
+        "viewport": 2,
+        "loadedInViewport": 2,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-1440x900.png",
+      "hardFailures": []
+    },
+    {
+      "page": "home",
+      "requestedViewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "requestedDefaultFontSize": null,
+      "url": "http://127.0.0.1:4177/",
+      "title": "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
+      "readyState": "complete",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "devicePixelRatio": 1
+      },
+      "rootFontSize": "10px",
+      "clientWidth": 1905,
+      "scrollWidth": 1905,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "documentY": 0,
+        "width": 1905,
+        "height": 72,
+        "bottom": 72
+      },
+      "main": {
+        "x": 0,
+        "y": 194,
+        "documentY": 194,
+        "width": 1905,
+        "height": 15984.5,
+        "bottom": 16178.5
+      },
+      "h1": {
+        "x": 264.5,
+        "y": 2060.4,
+        "documentY": 2060.4,
+        "width": 564,
+        "height": 120,
+        "bottom": 2180.4
+      },
+      "h1Text": "Panic Exit Devices, Locks and Door Hardware Made in Xiaolan. Since 1998.",
+      "h1Count": 1,
+      "hero": {
+        "x": 0,
+        "y": 194,
+        "documentY": 194,
+        "width": 1905,
+        "height": 742.4,
+        "bottom": 936.4,
+        "media": {
+          "x": 264.5,
+          "y": 194,
+          "documentY": 194,
+          "width": 1376,
+          "height": 540.4,
+          "bottom": 734.4
+        },
+        "activeCaption": {
+          "x": 264.5,
+          "y": 758.4,
+          "documentY": 758.4,
+          "width": 1376,
+          "height": 130,
+          "bottom": 888.4
+        },
+        "captionTitle": "Panic Exit Devices"
+      },
+      "floatingPromos": [],
+      "aboveFoldCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 1308.5,
+          "y": 758.4,
+          "documentY": 758.4,
+          "width": 162.3,
+          "height": 25,
+          "bottom": 783.4,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "firstMainCtas": [
+        {
+          "label": "Explore exit devices",
+          "href": "/products/panic-exit-devices/",
+          "x": 1308.5,
+          "y": 758.4,
+          "documentY": 758.4,
+          "width": 162.3,
+          "height": 25,
+          "bottom": 783.4,
+          "aboveFold": true,
+          "intersectsViewport": true,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "For distributors Order from the Canton Hyland export catalog",
+          "href": "/contact/",
+          "x": 264.5,
+          "y": 1146.4,
+          "documentY": 1146.4,
+          "width": 680,
+          "height": 778,
+          "bottom": 1924.4,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Ask about any of these",
+          "href": "/contact/",
+          "x": 1458.9,
+          "y": 4443.7,
+          "documentY": 4443.7,
+          "width": 181.6,
+          "height": 25,
+          "bottom": 4468.7,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Explore the AR-4 collection",
+          "href": "/products/argentina-ar4/",
+          "x": 1192.5,
+          "y": 6370.5,
+          "documentY": 6370.5,
+          "width": 216.9,
+          "height": 25,
+          "bottom": 6395.5,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Browse the catalog",
+          "href": "/products/",
+          "x": 264.5,
+          "y": 11507.1,
+          "documentY": 11507.1,
+          "width": 155.6,
+          "height": 25,
+          "bottom": 11532.1,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Send us your hardware requirements We'll match your project with the right export engineer",
+          "href": "/contact/",
+          "x": 264.5,
+          "y": 13990.1,
+          "documentY": 13990.1,
+          "width": 680,
+          "height": 778,
+          "bottom": 14768.1,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Contact us",
+          "href": "/contact/",
+          "x": 960.5,
+          "y": 15105.1,
+          "documentY": 15105.1,
+          "width": 93.6,
+          "height": 25,
+          "bottom": 15130.1,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        },
+        {
+          "label": "Talk to export",
+          "href": "/contact/",
+          "x": 1308.5,
+          "y": 16104.5,
+          "documentY": 16104.5,
+          "width": 112,
+          "height": 25,
+          "bottom": 16129.5,
+          "aboveFold": false,
+          "intersectsViewport": false,
+          "occluded": false,
+          "occludedBy": null
+        }
+      ],
+      "images": {
+        "total": 39,
+        "viewport": 2,
+        "loadedInViewport": 2,
+        "unresolvedInViewport": []
+      },
+      "failedResources": [],
+      "pageErrors": [],
+      "pendingCriticalRequests": [],
+      "screenshot": "home-1920x1080.png",
+      "hardFailures": []
+    }
+  ]
+}

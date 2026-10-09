@@ -72,9 +72,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
-        alt: "Estudo representativo de portas corta-fogo comerciais com barras antipânico à vista",
+        width: 1800,
+        height: 900,
+        alt: "Ferragens antipânico 306-D em porta de duas folhas em um ambiente arquitetônico claro",
       },
     ],
   },

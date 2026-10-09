@@ -130,8 +130,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
+        width: 1800,
+        height: 900,
         alt: "HYDE",
       },
     ],

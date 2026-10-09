@@ -190,7 +190,7 @@ function parsePage(outDir, file) {
     file,
     route,
     html,
-    public: !NON_PUBLIC_ROUTES.has(route),
+    public: !NON_PUBLIC_ROUTES.has(route) && !route.startsWith("/admin/"),
     /*
       Deliberately withheld — see the `withheldPages` note. Only counts alongside an
       actual noindex, so the marker on its own cannot exempt an indexable page from
