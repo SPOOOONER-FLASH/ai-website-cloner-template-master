@@ -585,7 +585,7 @@
   },
   "double-fire-exit-door-hardware-set": {
     "title": "Eine Öffnung, eine Bestellung: der Beschlagsatz für eine zweiflügelige Feuerschutz-Fluchttür",
-    "summary": "Eine zweiflügelige Feuerschutz-Fluchttür braucht sechs Beschlagpositionen, und jede wird aus denselben vier Angaben zu den Flügeln dimensioniert. Hier ist der Satz in der Reihenfolge, in der er entschieden werden muss, mit den Stellen, an denen sich zwei richtige Positionen widersprechen, und mit dem, was wir brauchen, um ihn als eine Öffnung anzubieten.",
+    "summary": "Eine zweiflügelige Feuerschutz-Fluchttür braucht 6 Beschlagpositionen: ein Gerät an jedem Flügel, einen Außenbeschlag am Gangflügel, einen Türschließer an jedem Flügel und einen Schließfolgeregler, damit der Standflügel zuerst schließt. Alle 6 werden aus 4 Angaben zu den Flügeln bemessen: Breite und Gewicht jedes Flügels, Türdicke und welcher Flügel der Gangflügel ist. Dieser Beitrag geht sie in dieser Reihenfolge durch, zeigt, wo sich 2 richtige Positionen widersprechen, und nennt, was wir brauchen, um sie als eine Öffnung anzubieten.",
     "seoTitle": "Zweiflügelige Fluchttür mit Panikstangen: kompletter Satz",
     "seoDescription": "Die sechs Beschlagpositionen einer zweiflügeligen Feuerschutz-Fluchttür, von Panikstangen und Außenbeschlag bis zu Schließern und Schließfolgeregler.",
     "body": [
@@ -634,7 +634,7 @@
     ],
     "sourceHash": {
       "title": "f40f047520c8",
-      "summary": "e704a337f501",
+      "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
       "body": "7ac89beb63e2",
@@ -1184,7 +1184,7 @@
   },
   "master-key-systems-how-many-levels-you-need": {
     "title": "Wie viele Ebenen Ihre Hauptschlüsselanlage tatsächlich braucht",
-    "summary": "Eine Hauptschlüsselanlage ist eine Hierarchie, und die Zahl ihrer Ebenen ist eine Entscheidung darüber, wer durch welche Tür darf – keine Beschlagspezifikation. Wir bauen bis zu fünf Ebenen, vom GGMK bis zum Einzelschlüssel, mit vier Verwaltungsebenen über dem einzelnen Schloss. Die meisten Gebäude brauchen drei.",
+    "summary": "Wir bauen Schließanlagen mit bis zu 5 Ebenen, vom Generalhauptschlüssel bis zum Einzelschlüssel, und die meisten Gebäude brauchen 3: Jede zusätzliche Ebene verbraucht Schlüsselkombinationen, die das Gebäude später brauchen könnte. Dieser Beitrag enthält den Ebenenplan, ein durchgerechnetes Beispiel für ein Bürogebäude mit 4 Geschossen und 36 Zylindern (der Generalhauptschlüssel schließt alle 36, der Hauptschlüssel des Facility-Managers 8, der Gruppenschlüssel der Reinigung 3) und einen leeren Schließplan zum Ausdrucken und Ausfüllen.",
     "seoTitle": "Hauptschlüsselanlage: Wie viele Ebenen brauchen Sie?",
     "seoDescription": "Aufbau einer Hauptschlüsselanlage vom GGMK bis zum Einzelschlüssel, ein Rechenbeispiel und warum jede Ebene weniger Einzelschlüssel übrig lässt.",
     "body": [
@@ -1240,7 +1240,7 @@
     ],
     "sourceHash": {
       "title": "c50f993d93f6",
-      "summary": "bf477e808275",
+      "summary": "b34deed10d95",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
@@ -1249,7 +1249,7 @@
   },
   "mortise-lock-backset-and-centre-distance-guide": {
     "title": "Dornmaß und Entfernung: wie man die Nummer eines Einsteckschlosses liest",
-    "summary": "Zwei Zahlen entscheiden, ob ein Schlosskasten in die Tür vor Ihnen passt. Sie stehen in der Modellnummer, und sie falsch zu lesen, ist der häufigste Grund, warum sich ein Container voller Beschläge nicht einbauen lässt.",
+    "summary": "Zwei Maße entscheiden, ob ein Schlosskasten in die Tür passt, und sie stehen in der Modellnummer: LC08 85×55 bedeutet 85 mm Entfernung bei 55 mm Dornmaß. 85 mm ist die Standardentfernung für Profilzylinderschlösser; die Unterschiede liegen beim Dornmaß, ab 16 mm für schmale Aluminiumprofile aufwärts. Ein Fehler bei einem der beiden ist der häufigste Grund, warum ein Container Beschläge nicht eingebaut werden kann.",
     "seoTitle": "So lesen Sie die Nummer eines Einsteckschlosses | Canton Hyland",
     "seoDescription": "Wie man Dornmaß und Entfernung aus der Modellnummer eines Einsteckschlosses liest, warum es 85mm und 72mm gibt und welches Dornmaß zu welcher Tür passt.",
     "body": [
@@ -1303,7 +1303,7 @@
     ],
     "sourceHash": {
       "title": "cee383f01b14",
-      "summary": "99b0df8efb42",
+      "summary": "9bb3890ad5ef",
       "seoTitle": "f2b93ea803b6",
       "seoDescription": "67f0856c8850",
       "body": "fd6247dfe271",

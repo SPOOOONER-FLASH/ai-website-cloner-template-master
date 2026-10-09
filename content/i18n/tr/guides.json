@@ -893,7 +893,7 @@
   },
   "door-closer-mounting-positions-2026": {
     "title": "2026'da Kapı Kapatıcı Montajı: Standart Kol, Kasa Üstü, Paralel Kol ve Kızaklı Kol Karşılaştırması",
-    "summary": "Aynı kapı kapatıcı nereye monte edildiğine göre farklı performans gösterir ve montaj şekli genellikle şantiyede, matkabı tutan kişi tarafından seçilir. Bu sayfa dört standart düzeni önemli olan üç şey (mekanik verim, açıklığa çıkıntı ve hasara açıklık) üzerinden karşılaştırıyor, paralel kolun neden size bir güç sınıfına mal olabileceğini açıklıyor ve her birinin kapının hangi tarafında durduğunu belirtiyor.",
+    "summary": "Bir kapı kapatıcı 4 standart şekilde takılır: normal kol (çekme tarafı, en verimlisi, kol açıklıkta), kasa üstü montaj (kasada, itme tarafı, camlı ya da dar profilli kapılar için), paralel kol (itme tarafı, kol kapıya yaslanır, kamu binalarının tercihi) ve kayar ray (en düzü). Paralel kol daha az kaldıraç verir; normal kola göre seçilmiş bir kapatıcı paralel takıldığında kapıyı kilitlemeyebilir: paralel kol olasıysa güç sınıfı seçilirken bunu belirtin. Bu sayfa ayrıca takviyeyi, yönü ve açılma frenini ele alır.",
     "seoTitle": "Kapı Kapatıcı Montajı 2026: Standart, Kasa Üstü, Paralel Kol",
     "seoDescription": "Kapı kapatıcı montaj şekilleri: standart kol, kasa üstü, paralel kol ve kızaklı kol; verim, çıkıntı, hasara açıklık ve güç sınıfına etkisi.",
     "body": [
@@ -958,7 +958,7 @@
     ],
     "sourceHash": {
       "title": "118927252950",
-      "summary": "ec9809e4aff7",
+      "summary": "4164f1f34596",
       "seoTitle": "6e75c1b4ac89",
       "seoDescription": "df5ffd713ec9",
       "body": "e163b15aa61b",
@@ -1573,7 +1573,7 @@
   },
   "exit-device-outside-trim-functions-2026": {
     "title": "Panik Çıkış Cihazı Dış Kolu 2026: Tüm Dış Kol Fonksiyonları, Dogging Kuralları ve Kararın Neden Asla Bar Olmadığı",
-    "summary": "Bir panik çıkış cihazının iki yarısı vardır ve bunlardan yalnızca biri karar gerektirir. İçerideki bar insanları her zaman dışarı çıkarır; dışarıdaki kol ise kimin gireceğine, kapının mesai saatlerinde kilitsiz tutulup tutulamayacağına ve kapının yangında hâlâ mevzuata uyup uymadığına karar verir. Bu sayfa tüm dış kol fonksiyonlarını karşılaştırıyor, yangın kapılarında mutlak olan kural dahil dogging kurallarını ortaya koyuyor ve kendi on beş dış kolumuzdan kaçının fonksiyonunu yayımladığını sayıyor.",
+    "summary": "İçerideki bar her zaman insanları dışarı çıkarır; dış kol kimin gireceğine, kapının mesai saatlerinde kilitsiz tutulup tutulamayacağına ve yangında hâlâ uygun olup olmadığına karar verir. Dili geri çekili tutan dogging, yangın kapısına yönelik her panik çıkış cihazında yasaktır, çünkü bir yangın kapısı kilitli kalarak işlev görür. Bu sayfa tüm dış kol işlevlerini, 4 cihaz tipini ve her birinin aldığı kolları, mekanik ve silindirli dogging farkını ve 15 dış kolumuzdan kaçının işlevini yayımladığını karşılaştırır.",
     "seoTitle": "Panik Çıkış Cihazı Dış Kolu 2026: Fonksiyonlar ve Dogging",
     "seoDescription": "Panik çıkış cihazı dış kol fonksiyonları: yalnız çıkış, gece kilidi, giriş, depo ve elektrikli; ayrıca dogging ve yangın kapısı kuralı.",
     "body": [
@@ -1651,7 +1651,7 @@
     ],
     "sourceHash": {
       "title": "356dec39cbb4",
-      "summary": "4d9cfe83be5c",
+      "summary": "60fee76e98a5",
       "seoTitle": "436da21c0bc4",
       "seoDescription": "a6d9f0d49bd2",
       "body": "84b30a6ab3e4",

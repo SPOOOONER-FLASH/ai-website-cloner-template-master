@@ -585,7 +585,7 @@
   },
   "double-fire-exit-door-hardware-set": {
     "title": "Une baie, une commande : l'ensemble de quincaillerie d'une porte coupe-feu d'évacuation à deux vantaux",
-    "summary": "Une porte coupe-feu d'évacuation à deux vantaux compte six lignes de quincaillerie, toutes dimensionnées à partir des quatre mêmes données sur les vantaux. Voici l'ensemble dans l'ordre où il faut le décider, les points où deux lignes justes se contredisent, et ce qu'il nous faut pour le chiffrer comme une seule baie.",
+    "summary": "Une double porte coupe-feu d'issue de secours demande 6 lignes de quincaillerie : un dispositif sur chaque vantail, une garniture extérieure sur le vantail de service, un ferme-porte sur chaque vantail, et un sélecteur de fermeture pour que le vantail semi-fixe se ferme en premier. Les 6 se dimensionnent à partir de 4 données sur les vantaux : la largeur et le poids de chacun, l'épaisseur de la porte et le vantail de service. Cet article les reprend dans cet ordre, montre où 2 lignes correctes se contredisent, et liste ce dont nous avons besoin pour la chiffrer comme une seule baie.",
     "seoTitle": "Porte coupe-feu double anti-panique : l'ensemble complet",
     "seoDescription": "Les six lignes de quincaillerie d'une porte coupe-feu double : anti-paniques, garniture, ferme-portes et sélecteur, calculés sur les mêmes vantaux.",
     "body": [
@@ -634,7 +634,7 @@
     ],
     "sourceHash": {
       "title": "f40f047520c8",
-      "summary": "e704a337f501",
+      "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
       "body": "7ac89beb63e2",
@@ -1184,7 +1184,7 @@
   },
   "master-key-systems-how-many-levels-you-need": {
     "title": "Combien de niveaux votre organigramme exige réellement",
-    "summary": "Un organigramme est une hiérarchie, et son nombre de niveaux est une décision sur qui peut franchir quelle porte, pas une caractéristique de quincaillerie. Nous réalisons jusqu'à cinq niveaux, du GGMK à la clé individuelle, avec quatre échelons de passes au-dessus de la serrure individuelle. La plupart des bâtiments en demandent trois.",
+    "summary": "Nous réalisons des organigrammes jusqu'à 5 niveaux, du passe général à la clé individuelle, et la plupart des bâtiments en ont besoin de 3 : chaque niveau en trop consomme des combinaisons dont le bâtiment pourrait avoir besoin plus tard. Cet article donne le tableau des niveaux, un exemple concret pour un immeuble de bureaux de 4 niveaux avec 36 cylindres (le grand passe ouvre les 36, le passe des services généraux 8, le sous-passe du ménage 3) et un organigramme vierge à imprimer et remplir.",
     "seoTitle": "Organigramme de clés : combien de niveaux ?",
     "seoDescription": "La hiérarchie d'organigramme du GGMK à la clé individuelle, un exemple de bâtiment, et pourquoi chaque niveau ajouté réduit le nombre de variures.",
     "body": [
@@ -1240,7 +1240,7 @@
     ],
     "sourceHash": {
       "title": "c50f993d93f6",
-      "summary": "bf477e808275",
+      "summary": "b34deed10d95",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
@@ -1249,7 +1249,7 @@
   },
   "mortise-lock-backset-and-centre-distance-guide": {
     "title": "Axe et entraxe : lire la référence d'un coffre de serrure à mortaiser",
-    "summary": "Deux nombres décident si un coffre de serrure convient à la porte qui est devant vous. Ils figurent dans la référence, et se tromper sur eux est la raison la plus fréquente pour laquelle un conteneur de quincaillerie ne peut pas être posé.",
+    "summary": "Deux cotes décident si un coffre de serrure convient à la porte, et elles sont inscrites dans la référence : LC08 85×55, c'est 85 mm d'entraxe et 55 mm d'axe. 85 mm est l'entraxe standard des serrures à cylindre européen ; la variation se trouve dans l'axe, à partir de coffres de 16 mm pour les montants étroits en aluminium. Se tromper sur l'une ou l'autre est la raison la plus courante pour laquelle un conteneur de quincaillerie ne peut pas être posé.",
     "seoTitle": "Lire la référence d’un coffre de serrure à mortaiser | Canton Hyland",
     "seoDescription": "Lire l'axe et l'entraxe dans la référence d'un coffre de serrure à mortaiser, pourquoi 85 et 72mm coexistent, et quel axe pour quelle porte.",
     "body": [
@@ -1303,7 +1303,7 @@
     ],
     "sourceHash": {
       "title": "cee383f01b14",
-      "summary": "99b0df8efb42",
+      "summary": "9bb3890ad5ef",
       "seoTitle": "f2b93ea803b6",
       "seoDescription": "67f0856c8850",
       "body": "fd6247dfe271",

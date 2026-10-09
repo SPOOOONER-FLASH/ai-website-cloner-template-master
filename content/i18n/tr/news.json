@@ -585,7 +585,7 @@
   },
   "double-fire-exit-door-hardware-set": {
     "title": "Tek Açıklık, Tek Sipariş: Çift Kanatlı Yangın Çıkış Kapısının Donanım Seti",
-    "summary": "Çift kanatlı bir yangın çıkış kapısı altı kalem donanım ister ve her biri kanatlarla ilgili aynı dört bilgiden boyutlandırılır. Aşağıda setin karar verilmesi gereken sırayla, iki doğru kalemin birbiriyle çeliştiği noktaları ve onu tek bir açıklık olarak fiyatlandırmak için neye ihtiyacımız olduğunu bulacaksınız.",
+    "summary": "Çift kanatlı bir yangın çıkış kapısı 6 kalem donanım ister: her kanatta bir cihaz, aktif kanatta bir dış kol, her kanatta bir kapı kapatıcı ve pasif kanadın önce kapanması için bir sıralayıcı. 6'sının hepsi kanatlarla ilgili 4 bilgiyle boyutlandırılır: her kanadın genişliği ve ağırlığı, kapı kalınlığı ve hangi kanadın aktif olduğu. Bu yazı onları bu sırayla ele alır, 2 doğru kalemin birbiriyle çeliştiği yerleri gösterir ve tek bir açıklık olarak teklif vermek için neye ihtiyacımız olduğunu listeler.",
     "seoTitle": "Panik Barlı Çift Kanatlı Yangın Kapısı: Tam Donanım Seti",
     "seoDescription": "Çift kanatlı yangın çıkış kapısındaki altı donanım kalemi: panik barlar, dış kol, kapatıcılar ve sıralayıcı; hepsi aynı kanat verisinden boyutlandırılır.",
     "body": [
@@ -634,7 +634,7 @@
     ],
     "sourceHash": {
       "title": "f40f047520c8",
-      "summary": "e704a337f501",
+      "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
       "body": "7ac89beb63e2",
@@ -1184,7 +1184,7 @@
   },
   "master-key-systems-how-many-levels-you-need": {
     "title": "Master Anahtar Sisteminiz Gerçekte Kaç Seviyeye İhtiyaç Duyar",
-    "summary": "Master anahtar sistemi bir hiyerarşidir ve içindeki seviye sayısı bir donanım özelliği değil, kimin hangi kapıdan geçebileceğine dair bir karardır. GGMK'den değişim anahtarına kadar beş seviyeye kadar kuruyoruz; tekil kilidin üstünde dört yönetim anahtarı katmanı var. Binaların çoğu üç seviyeye ihtiyaç duyar.",
+    "summary": "Master anahtar sistemlerini en fazla 5 seviyeye kadar (GGMK'den tekil anahtara) kuruyoruz ve çoğu binanın 3 seviyeye ihtiyacı var: her fazla seviye, binanın ileride ihtiyaç duyabileceği anahtar kombinasyonlarını harcar. Bu yazı seviye şemasını, 36 silindirli 4 katlı bir ofis için örnek bir uygulamayı (büyük master 36'sını, tesis yöneticisinin master'ı 8'ini, temizlik alt master'ı 3'ünü açar) ve yazdırıp doldurulacak boş bir şemayı verir.",
     "seoTitle": "Master Anahtar Şeması: Kaç Seviye Gerekir | Canton Hyland",
     "seoDescription": "GGMK'den değişim anahtarına master anahtar şeması, örnek bir bina ve her ek seviyenin dağıtılabilecek değişim anahtarı sayısını neden azalttığı.",
     "body": [
@@ -1240,7 +1240,7 @@
     ],
     "sourceHash": {
       "title": "c50f993d93f6",
-      "summary": "bf477e808275",
+      "summary": "b34deed10d95",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
@@ -1249,7 +1249,7 @@
   },
   "mortise-lock-backset-and-centre-distance-guide": {
     "title": "Backset ve Aks Mesafesi: Gömme Kilit Gövdesi Numarası Nasıl Okunur",
-    "summary": "Bir kilit gövdesinin önünüzdeki kapıya uyup uymayacağını iki sayı belirler. Model numarasında yazılıdırlar ve bunları yanlış okumak, bir konteyner dolusu donanımın monte edilememesinin en yaygın nedenidir.",
+    "summary": "Bir kilit gövdesinin kapıya uyup uymadığını iki sayı belirler ve bunlar model numarasında yazılıdır: LC08 85×55, 85 mm eksenler arası mesafe ve 55 mm mesafe (backset) demektir. 85 mm, Avrupa profil silindirli kilitlerin standart eksenler arası mesafesidir; fark mesafededir ve dar alüminyum profiller için 16 mm'den başlar. İkisinden birini yanlış almak, bir konteyner donanımın takılamamasının en yaygın nedenidir.",
     "seoTitle": "Gömme Kilit Gövdesi Numarası Nasıl Okunur | Canton Hyland",
     "seoDescription": "Gömme kilit gövdesi model numarasından backset ve aks mesafesi nasıl okunur, neden hem 85 mm hem 72 mm var ve hangi backset hangi kapıya uyar.",
     "body": [
@@ -1303,7 +1303,7 @@
     ],
     "sourceHash": {
       "title": "cee383f01b14",
-      "summary": "99b0df8efb42",
+      "summary": "9bb3890ad5ef",
       "seoTitle": "f2b93ea803b6",
       "seoDescription": "67f0856c8850",
       "body": "fd6247dfe271",

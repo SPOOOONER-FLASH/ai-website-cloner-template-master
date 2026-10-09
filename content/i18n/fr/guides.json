@@ -893,7 +893,7 @@
   },
   "door-closer-mounting-positions-2026": {
     "title": "Pose des ferme-portes 2026 : bras standard, pose sur dormant, bras parallèle et bras à coulisse comparés",
-    "summary": "Un même ferme-porte ne se comporte pas de la même façon selon sa position de pose, et la pose est généralement décidée sur chantier par celui qui tient la perceuse. Cette page compare les quatre configurations standard sur les trois critères qui comptent (rendement mécanique, saillie dans la baie et vulnérabilité), explique pourquoi un bras parallèle peut vous coûter une force, et indique de quel côté de la porte se place chacune.",
+    "summary": "Un ferme-porte se pose de 4 façons standard : bras compas côté tirage (le plus efficace, bras dans le passage), pose sur dormant côté poussée (pour les portes vitrées ou à montants étroits), bras parallèle côté poussée (bras plaqué contre la porte, le choix des bâtiments publics) et bras à glissière (le plus plat). Le bras parallèle donne moins de levier, si bien qu'un ferme-porte dimensionné pour un bras compas peut ne plus enclencher la porte une fois posé en parallèle : si le bras parallèle est probable, dites-le au moment de choisir la force. Cette page traite aussi du renfort, de la main et du freinage à l'ouverture.",
     "seoTitle": "Pose des ferme-portes : standard, dormant, parallèle",
     "seoDescription": "Poses de ferme-porte comparées : bras standard, sur dormant, parallèle et à coulisse ; rendement, saillie, vulnérabilité et effet sur la force.",
     "body": [
@@ -958,7 +958,7 @@
     ],
     "sourceHash": {
       "title": "118927252950",
-      "summary": "ec9809e4aff7",
+      "summary": "4164f1f34596",
       "seoTitle": "6e75c1b4ac89",
       "seoDescription": "df5ffd713ec9",
       "body": "e163b15aa61b",
@@ -1573,7 +1573,7 @@
   },
   "exit-device-outside-trim-functions-2026": {
     "title": "Garnitures extérieures de fermetures anti-panique 2026 : toutes les fonctions comparées, les règles du maintien en position ouverte, et pourquoi la barre n'est jamais le choix",
-    "summary": "Une fermeture anti-panique a deux moitiés, et une seule relève d'un choix. La barre intérieure laisse toujours sortir ; la garniture extérieure décide qui entre, si la porte peut rester déverrouillée pendant les heures d'ouverture et si la baie reste conforme en cas d'incendie. Cette page compare toutes les fonctions de garniture extérieure, expose les règles du maintien en position ouverte, dont celle qui est absolue sur les portes coupe-feu, et compte combien de nos quinze garnitures publient leur fonction.",
+    "summary": "La barre intérieure laisse toujours sortir ; la garniture extérieure décide qui entre, si la porte peut rester déverrouillée pendant les heures d'ouverture et si elle reste conforme en cas d'incendie. Le maintien en position ouverte, qui garde le pêne rentré, est interdit sur toute fermeture anti-panique coupe-feu, car une porte coupe-feu fonctionne en restant verrouillée. Cette page compare toutes les fonctions de garniture extérieure, les 4 types de dispositif et les garnitures que chacun accepte, le maintien mécanique ou à cylindre, et combien de nos 15 garnitures extérieures publient leur fonction.",
     "seoTitle": "Garnitures anti-panique 2026 : fonctions et règles",
     "seoDescription": "Fonctions de garniture extérieure comparées : sortie seule, nuit, entrée, réserve, électrifiée, plus le maintien ouvert et la règle coupe-feu.",
     "body": [
@@ -1651,7 +1651,7 @@
     ],
     "sourceHash": {
       "title": "356dec39cbb4",
-      "summary": "4d9cfe83be5c",
+      "summary": "60fee76e98a5",
       "seoTitle": "436da21c0bc4",
       "seoDescription": "a6d9f0d49bd2",
       "body": "84b30a6ab3e4",
