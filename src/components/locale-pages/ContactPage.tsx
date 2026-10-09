@@ -153,14 +153,14 @@ export function ContactPage({ locale }: { locale: Locale }) {
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">{tx(locale, "Current product catalog")}</h2>
               <p className="mt-8 text-c1 text-ink-secondary">
-                {tx(locale, "79 pages, every published model with its spec table and an index at the back. Searchable text, bookmarks by family, and it opens as a spread. The document is in English.")}
+                {tx(locale, "92 pages, every published model with its key specifications and an index at the back. Searchable text, bookmarks by family, and it opens as a spread. The document is in English.")}
               </p>
               <a
                 className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"
                 href="/downloads/hyde-export-catalogue-2026.pdf"
                 download
               >
-                {tx(locale, "Download catalog (PDF, 6.1 MB)")}
+                {tx(locale, "Download catalog (PDF, 9.4 MB)")}
               </a>
             </div>
           </div>

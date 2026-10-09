@@ -523,6 +523,11 @@ export interface NewsArticle {
    * at render. Bodies carry no markup, so this is how an article links to its tool.
    */
   tool?: { href: string; title: string; titleEs?: string; titlePt?: string };
+  /**
+   * One companion article, as "guides/<slug>" or "news/<slug>" (2026-10-09: two pages
+   * shared the 626/US26D/630 queries). Titled from that article, so every locale has it.
+   */
+  seeAlso?: string;
   /** One or two sentences for the listing card and the meta description fallback. */
   summary: string;
   summaryEs?: string;
