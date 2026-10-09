@@ -134,8 +134,9 @@ export function collectionSpecRanges(products: Product[], locale: Locale = "en")
     }
     if (values.length < MIN_STATED) continue;
 
-    const label =
-      es || pt ? (labels[field.labels[0]] ?? field.labels[0]) : field.labels[0];
+    // Every non-English locale, not only es/pt: the seven overlay glossaries carry these
+    // labels too, and leaving them out printed "Door thickness" on /de/ pages (2026-10-09).
+    const label = locale === "en" ? field.labels[0] : (labels[field.labels[0]] ?? field.labels[0]);
 
     if (field.numeric) {
       const figures = values.flatMap(millimetres);

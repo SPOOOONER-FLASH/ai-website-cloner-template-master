@@ -94,6 +94,13 @@ describe("collectionSpecRanges", () => {
     assert.ok(finishes?.value.split(", ").includes("Satin Stainless"));
   });
 
+  it("names the row in an overlay locale, not only es/pt", () => {
+    // /de/ collection pages printed "Door thickness" beside German values (audit, 2026-10-09).
+    const rows = [35, 40, 45].map((mm) => product([{ label: "Door thickness", value: `${mm}mm` }]));
+    const de = collectionSpecRanges(rows, "de").find((r) => r.value === "35–45mm");
+    assert.equal(de?.label, "Türstärke");
+  });
+
   it("says nothing when fewer than three products state the field", () => {
     /*
       The glass entrance package depends on this: three products, no recorded specs, and

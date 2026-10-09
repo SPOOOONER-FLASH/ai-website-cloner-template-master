@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { termsByGroup } from "@/lib/hardware-term-usage";
-import { dict, fill, t, tx } from "@/lib/i18n";
+import { dict, fill, specLabel, t, tx } from "@/lib/i18n";
 
 /** "Backset" → "backset" inside a sentence; "UL listing" and "BHMA code" keep their capitals. */
 const soft = (t: string) => (/^\p{Lu}\p{Ll}/u.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
@@ -76,6 +76,18 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
     precise about words.
   */
   const pick = (en: string, es: string, pt: string) => tx(locale, en, { es, pt });
+  /*
+    The seven overlay locales translate most term names as spec labels (de "Türstärke") or
+    UI strings, not on the term record, so the headword falls back through both before
+    English. Without this, /de/glossary/ printed "Door thickness" (audit, 2026-10-09).
+  */
+  type Term = (typeof termsByGroup)[number]["terms"][number]["term"];
+  const termName = (term: Term) => {
+    const name = t(term, "term", locale);
+    if (locale === "en" || name !== term.term) return name;
+    const label = specLabel(term.term, locale);
+    return label !== term.term ? label : tx(locale, term.term);
+  };
 
   return (
     <>
@@ -97,7 +109,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
               >
                 <dt className="col-span-full lg:col-span-3 xl:col-span-6">
                   <span className="text-h3 text-ink">
-                    {t(term, "term", locale)}
+                    {termName(term)}
                   </span>
                   <span className="mt-8 block text-c2 text-ink-secondary">
                     {models > 0 ? (models === 1 ? copy.oneModel : fill(copy.models, { n: models })) : copy.notPublished}
@@ -124,7 +136,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
                         href={`${prefix}/news/${term.article}/`}
                         className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
                       >
-                        {fill(copy.read, { term: soft(t(term, "term", locale)) })}
+                        {fill(copy.read, { term: soft(termName(term)) })}
                       </Link>
                     </p>
                   ) : null}

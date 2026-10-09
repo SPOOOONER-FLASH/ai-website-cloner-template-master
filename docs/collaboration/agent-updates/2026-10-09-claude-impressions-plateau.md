@@ -12,3 +12,4 @@
 - **追加（反链深链 #141）**：`scripts/build-backlink-deeplinks.mjs`（自检两条手核帖子）把 Bing 引用页面 139 条按型号对到产品页，69 条可改 → `docs/research/analytics/2026-10-09/BACKLINK-DEEPLINKS.md`；10-09 原始导出存 `docs/research/analytics/2026-10-09/raw/`。甲方手动改帖。
 - **追加（r31 被拦）**：seo-audit 规定站点地图外的公开页必须 noindex 并声明 `canton-withheld`，否则 sitemap-missing-page 拦发布。/video/ 与观看页加 `WATCH_PAGE_ROBOTS`（src/lib/video-pages.ts）。npm test 457/457。
 - **追加（桌面整理 #142）**：`scripts/lib/desktop-hyde.mjs` + `scripts/organize-desktop-hyde.mjs`；生成器默认按文件名进子文件夹；AGENTS.md runbook 第 6 条补一段。手册三处 `hyde\2026` 被旧 sed 写成 U+0082 控制字符，已修。
+- **追加（#144 漏英文）**：collection-spec-range 标题对所有非英语言走 specLabels（加 de 测试）；HardwareTerms 词条名回退 specLabels → UI；七语 glossary 补 OEM & ODM，重生成 i18n-client。顺手：desktop-hyde.mjs 的 catalogue 改 catalog(?:ue)? 过美式拼写测试。npm test 458。

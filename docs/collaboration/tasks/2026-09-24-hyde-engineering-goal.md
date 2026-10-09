@@ -144,7 +144,7 @@
 | 141 | 甲方 10-09：长尾词继续优化 + 反链 / 深链现在怎么做（Bing 反链：5 域名 140 条全指首页、锚文本全是裸网址） | 待甲方（10-09：scripts/build-backlink-deeplinks.mjs 按型号把 139 条目录帖对到产品页，69 条能改（worldbid 51、traderscity 15、etradeasia 3）→ 桌面 BACKLINK-DEEPLINKS.docx；手动操作 docx 含改链步骤与五页按页搜索词导出；长尾改动见 #138 #140） |
 | 142 | 甲方 10-09：桌面 hyde 与「9.30 新研究方向」文件太多 → 建文件夹，搭本地数据库存档、待做计划、人工代做目标；并答「查询数没用吗」 | 10-09 完成（scripts/lib/desktop-hyde.mjs 定文件夹 00–05、09；生成器按文件名自动归位；scripts/organize-desktop-hyde.mjs 移动 48 项只移不删、记 09\移动记录.md，仓库 raw 按日期复制进 04，生成 人工代做清单 / 待做计划 / 目录说明；手册 3 处被旧 sed 弄坏的桌面路径修复并改指新文件夹；查询数表即 gsc-queries.csv，已用，缺「词→页」所以要五页按页导出） |
 | 143 | 甲方 10-09：远高（D:\clones yunagao 网站\_design-kit 等）的设计经验能否优化搬到 HYDE（动效、视觉、精致大气）→ 评估 + 建议 | 等待（10-09：评估工作流 wf_2fc63ac7-8e7 运行中——远高简报 + d1–d4 四套方向 + HYDE 现状，三视角逐条评判；结果写 桌面 03-研究与方案 docx） |
-| 144 | 文案会话 10-09 全量审查：规格名（Door thickness、Cycle life、Deadbolt throw、Center distance、OEM & ODM）每语种 2–17 页漏英文；约 20 个品类名、BAU 2027、版权行约 2 页漏英文（node scripts/audit-locale-pages.mjs --locale de --full） | 待做 |
+| 144 | 文案会话 10-09 全量审查：规格名（Door thickness、Cycle life、Deadbolt throw、Center distance、OEM & ODM）每语种 2–17 页漏英文；约 20 个品类名、BAU 2027、版权行约 2 页漏英文（node scripts/audit-locale-pages.mjs --locale de --full） | 10-09 完成，待发布（三处根因：collection-spec-range 标题只给 es/pt 翻译 → 所有非英语言走 specLabels，加 de 测试；HardwareTerms 词条名对七语种先查 specLabels 再查 UI 词条；七语种 glossary specLabels 补「OEM & ODM」并重生成客户端包。BAU 2027 Munich / Messe München / 版权行判为专有名词误报，不改） |
 | 145 | 文案会话 10-09 全量审查：桌面 LCP 3.6 秒（周报 P1） | 待做 |
 | 146 | 文案会话 10-09 全量审查：147 个指南/文章描述 > 160 字符（最长 262）；59 个视频页描述约 45 字符 | 待做 |
 | 147 | 文案会话 10-09 全量审查：1,188 个产品页标题 > 60 字符（最长 75），建议型号 + 品类在前、厂名在后 | 待做 |
