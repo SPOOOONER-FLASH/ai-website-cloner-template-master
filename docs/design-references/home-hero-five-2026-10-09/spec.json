@@ -1,0 +1,18 @@
+{
+  "model": "306-D",
+  "view": "customer catalogue application view 7",
+  "source": "source/306-d-view7.webp",
+  "sourceSha256": "58a383a200c90fb3a2dc53c68b2587a5dd9185f9702f64ea429280964194ac9e",
+  "sourceRetainedPath": "C:/hyde-photo-work/tmp/ship-merge/public/images/products-hyde/306-d-panic-exit-device-7.webp",
+  "sourceScope": "Retained customer catalogue application image. Original G drive unavailable; actual installation identity not independently verified. Complete paired door frame and all hardware copied unchanged. No dimensional or certification claim.",
+  "width": 1800,
+  "height": 900,
+  "crop": {"left": 102, "top": 90, "width": 596, "height": 660},
+  "views": [
+    {"id": "a-warm-limestone", "name": "暖石材", "left": 1070, "top": 135, "backgroundReframe": {"width": 1800, "height": 936, "left": 0, "top": 6}},
+    {"id": "b-pale-civic", "name": "浅灰公共空间", "left": 545, "top": 125, "backgroundReframe": {"width": 1800, "height": 977, "left": 0, "top": 11}},
+    {"id": "c-timber-corridor", "name": "木饰面走廊", "left": 1005, "top": 125, "backgroundReframe": {"width": 1800, "height": 934, "left": 0, "top": 5}},
+    {"id": "d-charcoal-gallery", "name": "深灰展廊", "left": 935, "top": 120, "backgroundReframe": {"width": 1923, "height": 918, "left": 94, "top": 6}},
+    {"id": "e-soft-evening", "name": "柔和夕照", "left": 300, "top": 135, "backgroundReframe": {"width": 1800, "height": 900, "left": 0, "top": 0}}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "previewGenerator": {"command": "node scripts/build-home-hero-previews.mjs compose", "exitCode": 0, "samples": 5, "preservedRgbPixelsEach": 393360, "changedSourcePixels": 0},
+  "projectCheck": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "workspace": "C:/hyde-photo-work/tmp/ship-merge",
+    "baseCommit": "e27f70bcc461968a5c0d1af745b7481bf2140579",
+    "scope": "Same preview generator and assets copied into retained isolated validation checkout; no app source changes in this preview pack. This is not a production release or verification of every newer remote change.",
+    "unitTests": 456,
+    "exportTests": 27,
+    "staticPages": 9245,
+    "logSha256": "f6e6f6efaeb7496fe752c893ce1958edcf074da5da7bcae2d6132241e8dbc8c8"
+  },
+  "websiteAssetsReplaced": false,
+  "published": false,
+  "reviewBranch": "codex/home-hero-five-review"
+}

@@ -1,0 +1,8 @@
+# Codex — homepage five direction previews, 2026-10-09
+
+- Client rejected the ordinary grey-door/charcoal-sidebar image. **Hold the previously pending homepage image publication**; do not retry the old prepared export while this new direction is being selected.
+- Added `docs/design-references/home-hero-five-2026-10-09/` and `scripts/build-home-hero-previews.mjs`: five separate architectural environment previews using one complete 306-D customer catalogue application frame. ImageGen inputs contain no hardware; native source frame remains unscaled and pixel-identical.
+- Generator asserts pinned SHA and all 393,360 source RGB pixels. Independent visual review caught aperture/floor misalignment; corrected generated backgrounds only, then rechecked A–D. Recommend A warm limestone or C timber.
+- G original library unavailable. Retained catalogue application image is not independently confirmed installed-project photography. No dimensional, material-rating or certification claims. E deliberately warmer and weaker source-light match.
+- No `src`, `content`, `public`, Guides heads, frozen Products plates, shared RAYEN files, live export or video changed/released. Text overlay/mobile crop/final compression await the client's direction choice.
+- `npm run check` exit 0 in retained isolated validation checkout with the same compositor/pack: 456 unit + 27 export tests; 9,245 static pages. Base/log hash and limits are in `validation.json`; this does not verify newer unrelated source changes. Own check outputs stay in that checkout, unpublished. Pack is saved on `codex/home-hero-five-review`, review only.

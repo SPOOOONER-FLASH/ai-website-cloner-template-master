@@ -1,0 +1,16 @@
+{
+  "status": "ready-for-client-direction-selection-only",
+  "clientApproved": false,
+  "source": "306-D retained customer application view 7",
+  "independentlyVerifiedInstallation": false,
+  "primaryRecommendation": "a-warm-limestone",
+  "secondaryRecommendation": "c-timber-corridor",
+  "samples": [
+    {"id": "a-warm-limestone", "hardware": "complete; unchanged", "floor": "background rectified; no projecting base", "visual": "closest existing stone mood; first recommendation"},
+    {"id": "b-pale-civic", "hardware": "complete; unchanged", "floor": "55px discrepancy corrected on background", "visual": "restrained civic alternative; centered composition"},
+    {"id": "c-timber-corridor", "hardware": "complete; unchanged", "floor": "background rectified; natural landing", "visual": "continuity with timber; second recommendation"},
+    {"id": "d-charcoal-gallery", "hardware": "complete; unchanged", "floor": "background rectified; lateral aperture aligned", "visual": "darker alternative; lower current-sequence continuity"},
+    {"id": "e-soft-evening", "hardware": "complete; unchanged", "floor": "aligned", "visual": "warm alternative; source neutral daylight remains cooler"}
+  ],
+  "notChecked": ["homepage text overlay", "mobile crop", "final compression", "actual site identity"]
+}

@@ -1,0 +1,82 @@
+{
+  "sourceSha256": "58a383a200c90fb3a2dc53c68b2587a5dd9185f9702f64ea429280964194ac9e",
+  "sourceCrop": {
+    "left": 102,
+    "top": 90,
+    "width": 596,
+    "height": 660
+  },
+  "resizedSource": false,
+  "results": [
+    {
+      "id": "a-warm-limestone",
+      "output": "previews/a-warm-limestone.png",
+      "outputSha256": "43f41307df5fdf299fbd5e8e946c852c6471be7257d226ddd762a3a67808baa5",
+      "backgroundSha256": "5e6d709d826a7ccb06bbda1a231e43d3a317795ac5eeb092bb8a5c0d48ada9c1",
+      "backgroundReframe": {
+        "width": 1800,
+        "height": 936,
+        "left": 0,
+        "top": 6
+      },
+      "preservedPixels": 393360,
+      "changedSourcePixels": 0
+    },
+    {
+      "id": "b-pale-civic",
+      "output": "previews/b-pale-civic.png",
+      "outputSha256": "d222efbf4456b0f221f40834939d45f33223ff502333cc27abedc0b21f9cea2d",
+      "backgroundSha256": "8039eb8f117e7e7f5723f888ca4aafe9543b03b7620516b46e839da04d8aaa58",
+      "backgroundReframe": {
+        "width": 1800,
+        "height": 977,
+        "left": 0,
+        "top": 11
+      },
+      "preservedPixels": 393360,
+      "changedSourcePixels": 0
+    },
+    {
+      "id": "c-timber-corridor",
+      "output": "previews/c-timber-corridor.png",
+      "outputSha256": "5626039127811a66456ed578b8e344e37994b9e24db050eb01f9999d579590ca",
+      "backgroundSha256": "fe782ef36d372e219f8f955a3ad7617067bdb89afabc3cb14b870d0668920cd4",
+      "backgroundReframe": {
+        "width": 1800,
+        "height": 934,
+        "left": 0,
+        "top": 5
+      },
+      "preservedPixels": 393360,
+      "changedSourcePixels": 0
+    },
+    {
+      "id": "d-charcoal-gallery",
+      "output": "previews/d-charcoal-gallery.png",
+      "outputSha256": "95cbb83625b0b00f17d95cc0b15c859441664e38a0785110a1a77cd4d2f639b7",
+      "backgroundSha256": "5c4de0c7529493ce23221413fc8bf9ca0b353a78eaedd1eaf06eed6d1f26b42d",
+      "backgroundReframe": {
+        "width": 1923,
+        "height": 918,
+        "left": 94,
+        "top": 6
+      },
+      "preservedPixels": 393360,
+      "changedSourcePixels": 0
+    },
+    {
+      "id": "e-soft-evening",
+      "output": "previews/e-soft-evening.png",
+      "outputSha256": "97bb869a37d60749c44f75d9cafdc94fa0a6f8094982be7975382cbbaff4f4a3",
+      "backgroundSha256": "6d1f7d74519c3aa2137f2002669ca6d151ef8cd402da5123e6b74e1cfbef5762",
+      "backgroundReframe": {
+        "width": 1800,
+        "height": 900,
+        "left": 0,
+        "top": 0
+      },
+      "preservedPixels": 393360,
+      "changedSourcePixels": 0
+    }
+  ]
+}
