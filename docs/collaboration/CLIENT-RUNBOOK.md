@@ -17,6 +17,12 @@
 
 ---
 
+## 现在要做的（2026-10-08）：曝光继续爬升要的三样数据
+
+GSC 全站效果（不加页面筛选、比较上一时段）、两张收录表、Ahrefs Webmaster Tools 免费版。步骤在桌面 `hyde6-10-08-手动操作-曝光继续爬升要的数据.docx`。
+
+---
+
 ## 现在要做的（2026-10-08）：Cloudflare 安全页四条建议
 
 两条别开（Bot Fight Mode、AI Labyrinth），security.txt 归档，Unproxied CNAME 先截图发我。AI 搜索爬虫没被拦（你 10-08 查过）。步骤在桌面 `hyde6-10-08-手动操作-Cloudflare安全建议.docx`。
