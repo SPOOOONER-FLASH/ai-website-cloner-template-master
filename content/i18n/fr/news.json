@@ -1204,6 +1204,13 @@
       "Prenons un immeuble de bureaux de quatre niveaux, avec un accueil au rez-de-chaussée, trois étages locatifs, un local technique et un local ménage à chaque étage. L'organigramme qui lui convient compte quatre niveaux, pas cinq :",
       "| Qui | Niveau | Ouvre |\n| --- | --- | --- |\n| Propriétaire | GMK | Tout |\n| Responsable des services généraux | MK-A | Local technique, gaines techniques, tous les locaux ménage |\n| Prestataire de nettoyage | SMK-1 | Les trois locaux ménage uniquement |\n| Locataire du 2e étage | CK ×9 | Ses neuf portes, variures différentes |\n| Entrée principale | clé commune | Accepte toutes les CK des locataires, plus le GMK |",
       "Personne dans ce bâtiment n'a besoin d'un GGMK, puisqu'il n'y a qu'un bâtiment. Ajouter une sixième ligne (un GGMK au-dessus du GMK du propriétaire) consomme de l'espace de goupilles sur chaque cylindre de l'organigramme et n'apporte rien tant qu'il n'existe pas de second bâtiment. C'est tout l'argument en faveur d'une conception du haut vers le bas plutôt que l'inverse.",
+      "## Combien de portes ouvre chaque clé",
+      "Le même immeuble, compté. Mettons que chacun des trois étages de locataires a neuf portes, que chacun des quatre niveaux a une gaine technique, et qu'il y a un local technique et une entrée principale : 36 cylindres en tout. Voici comment les quatre clés se les partagent.",
+      "| Clé | Détenue par | Ouvre | Portes |\n| --- | --- | --- | --- |\n| GMK | Propriétaire de l'immeuble | Tout | 36 |\n| MK-A | Responsable des services généraux | Local technique, quatre gaines, trois locaux de ménage | 8 |\n| SMK-1 | Société de nettoyage | Les trois locaux de ménage | 3 |\n| CK ×27 | Une par local de locataire | Sa propre porte, plus l'entrée principale en passe commun | 1 chacune, plus l'entrée |",
+      "Compter les portes par clé est le contrôle qui repère un mauvais organigramme avant qu'un seul cylindre soit taillé. Un sous-passe qui ouvre presque autant de portes que le passe au-dessus est un niveau dont l'immeuble n'a pas besoin.",
+      "## Un organigramme vierge à imprimer et remplir",
+      "Imprimez cette page, ou copiez le tableau dans le tableur qui contient votre liste de portes. Remplissez une ligne par clé : qui la détient, quelles portes elle ouvre, combien cela fait de portes et combien d'exemplaires tailler. Supprimez les niveaux inutiles. Renvoyé rempli, il suffit pour dessiner le plan des cylindres.",
+      "| Niveau | Nom de la clé | Détenue par | Portes ouvertes | Nombre de portes | Clés à tailler | Doubles gardés par le propriétaire |\n| --- | --- | --- | --- | --- | --- | --- |\n| GGMK | | | | | | |\n| GMK | | | | | | |\n| MK | | | | | | |\n| MK | | | | | | |\n| SMK | | | | | | |\n| SMK | | | | | | |\n| CK | | | | | | |\n| Ensemble à clé identique | | | | | | |\n| Porte en passe commun | | | | | | |",
       "## Ce que chaque niveau vous coûte en espace de goupilles",
       "L'arithmétique de la section précédente n'a rien d'abstrait, et elle mérite d'être énoncée comme une règle pratique plutôt que comme une formule. Chaque niveau au-dessus de la clé individuelle exige au moins une coupure supplémentaire dans la pile de goupilles de chaque cylindre que ce niveau doit ouvrir. Ces coupures rendent un cylindre plus facile à crocheter et le font s'user de façon irrégulière : leur nombre compte pour la sécurité et la durée de vie, pas seulement pour la possibilité de dessiner l'organigramme.",
       "Conséquence pratique : un organigramme à cinq niveaux sur un cylindre à six goupilles laisse très peu de place aux portes futures. Si le bâtiment doit s'agrandir, la démarche honnête consiste à utiliser moins de niveaux maintenant et à garder de la profondeur en réserve, plutôt qu'à concevoir l'organigramme maximal pour découvrir la troisième année qu'aucune clé ne peut plus y être taillée.",
@@ -1236,7 +1243,7 @@
       "summary": "bf477e808275",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
-      "body": "ae14b6d40c4d",
+      "body": "b024b9e67596",
       "faq": "2efa1a7ca90e"
     }
   },
