@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 481 次提交
+最近 30 天 · 共 480 次提交
 
 ## 2026-10-08
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 21:52 | HYDE | 目录两个版本：电子版 92 页上官网下载，印刷版 64 页给广交会 | `222ad4b3803` |
+| 21:23 | 中立 | catalogue: both editions from one renderer — electronic 94 pages, print 68 | `7e5affab41b` |
+| 21:14 | 中立 | catalogue: merge finish variants into one card; full-book plan; option A/B samples | `84fe49c2e61` |
 | 02:32 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `911d55e84bc` |
 | 02:31 | 中立 | catalogue: four sample pages (cover, factory, opener, product grid), print + screen | `0ebc55470b1` |
 | 02:25 | 中立 | catalogue: vector QR codes to each family's page | `e67d1dc8f40` |
@@ -579,8 +582,4 @@
 | 23:54 | 中立 | 供应商图包按型号拆分并去日文 | `0b7373a701a` |
 | 23:44 | HYDE · 发布 HYDE+雷茵 | DS011 改名门吸；12 个单图型号补图；位置语言面板取代裸 EN\|ES | `115d7333205` |
 | 23:01 | HYDE | 玻璃门/插销/斜舌四个类目上线；产品命名加测试锁 | `c592cfe4c3f` |
-| 05:56 | HYDE · 发布 HYDE+雷茵 | 全目录摄影上线：目录 520 → 554，有照片 426 → 467，视频 99 → 160 | `172ee4f5099` |
-| 04:59 | 中立 · 发布 HYDE+雷茵 | 配置器的「返回上一步结果」修好：以前退到类目，现在退回那次配置 | `d515aab4473` |
-| 04:41 | 中立 | Replace two homepage images with client-selected light product views | `fc0e563dce9` |
-| 04:36 | HYDE · 发布 HYDE+雷茵 | 锁体/锁芯/合页/闭门器四个类目上线：目录 471 → 520 | `a7bd6ebccf2` |
 
