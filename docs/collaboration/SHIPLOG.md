@@ -12,18 +12,18 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 21:22 | 中立 | 任务 #32：首页按分辨率不同是设计差异，甲方决定维持现状 | `43d006f0e1b` |
-| 20:59 | 中立 | 曝光继续爬升：要甲方导出的三样数据与 Ahrefs 免费版设置，出 docx；不建议每天十篇，建议每周 2–3 篇按查询选题 | `6a6fb8df628` |
-| 05:48 | 中立 | 纪律：要甲方看的文件一律导出到桌面 hyde（甲方 10-08） | `441ff0d2ecb` |
-| 04:41 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `1fcf0bbeff2` |
-| 04:41 | 中立 | goal #136 完成：标题去后缀上线 d5a4354e997，源站核对 | `6edcd161faf` |
-| 04:14 | HYDE | #136 分享标题（og:title / twitter:title）同样经过 fitTitle，与页面标题一致 | `7544e75de1f` |
-| 04:01 | 中立 | goal #136：本地构建核对，标题 > 70 字符只剩 1 页 | `6add676d2e6` |
-| 03:56 | HYDE | #136 标题超过 70 字符时省掉「 \| Canton Hyland」（甲方 10-08 同意） | `43f2b698bf1` |
-| 03:51 | 中立 | Cloudflare 安全建议处理（两条别开、两条归档/截图）出 docx；runbook 第三步记已完成；Clarity 话题列表口径补进 10-05 读数 | `f6e490dc77c` |
-| 03:00 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `04a87666efc` |
-| 02:58 | 中立 | #131 上线核对：6227cf39148 源站实测三类页 182–397 KB，finder.json 200，两个工具加载正常 | `4ce39597268` |
-| 02:44 | 中立 | 更正视频诊断：「视频不在观看页面上」= 视频不是页面主要内容，产品页本就不算，接受现状、不做观看页 | `07a3cf93662` |
+| 21:54 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `7d39588bd33` |
+| 21:52 | HYDE | 目录两个版本：电子版 92 页上官网下载，印刷版 64 页给广交会 | `222ad4b3803` |
+| 21:23 | 中立 | catalogue: both editions from one renderer — electronic 94 pages, print 68 | `7e5affab41b` |
+| 21:14 | 中立 | catalogue: merge finish variants into one card; full-book plan; option A/B samples | `84fe49c2e61` |
+| 02:32 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `911d55e84bc` |
+| 02:31 | 中立 | catalogue: four sample pages (cover, factory, opener, product grid), print + screen | `0ebc55470b1` |
+| 02:25 | 中立 | catalogue: vector QR codes to each family's page | `e67d1dc8f40` |
+| 02:24 | 中立 | catalogue: family heroes (cut-outs only), and five products the plate builder missed | `05b8b0cb593` |
+| 02:09 | 中立 | catalogue: correct the fallback-font comment — Archivo does cover ≤ ≥ | `a549762a01b` |
+| 02:09 | 中立 | catalogue: design system, Archivo fonts, 200-dpi placement guard | `7f19b2d65bc` |
+| 02:07 | 中立 | 广交会目录：样张阶段实施计划 | `25a16b2d593` |
+| 01:56 | 中立 | 广交会目录重做：设计文档（甲方 10-08 在对话中确认） | `155af7222de` |
 | 01:21 | 中立 | DORA 报价定稿：按老板改价；删除首购减 200 | `d1dcbce8506` |
 | 01:08 | 中立 | #131 收尾：HTML 体积回归测试（三类页 ≤ 460 KB、全站 ≤ 640 KB），工程目标标完成 | `ba1c3444efa` |
 | 00:59 | HYDE | #131 HTML 过大：查找器、配置器的产品数据改为 /data/<语言>/finder.json，品类网格只带卡片字段 | `7927966cacb` |
