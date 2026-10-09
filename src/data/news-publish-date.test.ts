@@ -51,3 +51,18 @@ test("every news article's publishedAt is a bare date the publish filter can com
       "a timestamp can never be <= it, so these articles would never publish",
   );
 });
+
+/* `seeAlso` (NewsDetail) renders nothing when its target is missing — the same silent shape. */
+test("every seeAlso names an existing article as guides/<slug> or news/<slug>", () => {
+  const offenders: string[] = [];
+  for (const section of ["news", "guides"]) {
+    const dir = path.join(process.cwd(), "content", section);
+    for (const file of fs.readdirSync(dir).filter((name) => name.endsWith(".json"))) {
+      const { slug, seeAlso } = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8")) as { slug: string; seeAlso?: string };
+      if (seeAlso && !(/^(guides|news)\/[a-z0-9-]+$/.test(seeAlso) && fs.existsSync(path.join(process.cwd(), "content", `${seeAlso}.json`)))) {
+        offenders.push(`${section}/${slug}: ${seeAlso}`);
+      }
+    }
+  }
+  assert.deepEqual(offenders, [], "seeAlso must point at content/<section>/<slug>.json");
+});

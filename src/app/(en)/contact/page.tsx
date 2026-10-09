@@ -257,7 +257,7 @@ export default function ContactPage() {
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Current product catalog</h2>
               <p className="mt-8 text-c1 text-ink-secondary">
-                79 pages, every published model with its spec table and an index at the back.
+                92 pages, every published model with its key specifications and an index at the back.
                 Searchable text, bookmarks by family, and it opens as a spread.
               </p>
               <a
@@ -265,7 +265,7 @@ export default function ContactPage() {
                 href="/downloads/hyde-export-catalogue-2026.pdf"
                 download
               >
-                Download catalog (PDF, 6.1 MB)
+                Download catalog (PDF, 9.4 MB)
               </a>
             </div>
           </div>

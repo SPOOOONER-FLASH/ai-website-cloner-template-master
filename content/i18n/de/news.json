@@ -1204,6 +1204,13 @@
       "Nehmen Sie ein vierstöckiges Bürogebäude mit Empfang im Erdgeschoss, drei Mieteretagen, einem Technikraum und einem Putzmittelraum auf jeder Etage. Die passende Anlage hat vier Ebenen, nicht fünf:",
       "| Wer | Ebene | Öffnet |\n| --- | --- | --- |\n| Gebäudeeigentümer | GMK | Alles |\n| Facility-Manager | MK-A | Technikraum, Steigschächte, alle Putzmittelräume |\n| Reinigungsdienstleister | SMK-1 | Nur die drei Putzmittelräume |\n| Mieter 2. OG | CK ×9 | Seine eigenen neun Türen, verschiedenschließend |\n| Haupteingang | Zentralschloss | Nimmt jeden Mieter-CK plus GMK an |",
       "Niemand in diesem Gebäude braucht einen GGMK, denn es gibt nur ein Gebäude. Eine sechste Zeile (ein GGMK über dem GMK des Eigentümers) kostet Stiftraum in jedem Zylinder der Anlage und bringt nichts, solange es kein zweites Gebäude gibt. Das ist das ganze Argument dafür, von unten nach oben zu planen statt von oben nach unten.",
+      "## Wie viele Türen jeder Schlüssel schließt",
+      "Dasselbe Gebäude, durchgezählt. Angenommen, jede der drei Mieteretagen hat neun Türen, jedes der vier Geschosse einen Steigschacht, dazu ein Technikraum und ein Haupteingang: zusammen 36 Zylinder. So teilen die vier Schlüssel sie auf.",
+      "| Schlüssel | Inhaber | Schließt | Türen |\n| --- | --- | --- | --- |\n| GMK | Gebäudeeigentümer | Alles | 36 |\n| MK-A | Facility-Manager | Technikraum, vier Steigschächte, drei Putzmittelräume | 8 |\n| SMK-1 | Reinigungsdienstleister | Die drei Putzmittelräume | 3 |\n| CK ×27 | Einer je Mieterraum | Die eigene Tür, dazu der Haupteingang als Zentralschloss | je 1, plus Eingang |",
+      "Türen je Schlüssel zu zählen ist die Prüfung, die einen schlechten Schließplan findet, bevor ein Zylinder geschnitten wird. Ein Gruppenschlüssel, der fast so viele Türen schließt wie der Hauptschlüssel darüber, ist eine Ebene, die das Gebäude nicht braucht.",
+      "## Ein leerer Schließplan zum Ausdrucken und Ausfüllen",
+      "Drucken Sie diese Seite aus oder kopieren Sie die Tabelle in die Tabellenkalkulation mit Ihrer Türliste. Eine Zeile je Schlüssel: wer ihn hat, welche Türen er schließt, wie viele das sind und wie viele Exemplare geschnitten werden. Streichen Sie die Ebenen, die Sie nicht brauchen. Ausgefüllt zurückgeschickt, reicht er, um den Zylinderplan zu zeichnen.",
+      "| Ebene | Schlüsselname | Inhaber | Schließt diese Türen | Anzahl Türen | Zu schneidende Schlüssel | Reserve beim Eigentümer |\n| --- | --- | --- | --- | --- | --- | --- |\n| GGMK | | | | | | |\n| GMK | | | | | | |\n| MK | | | | | | |\n| MK | | | | | | |\n| SMK | | | | | | |\n| SMK | | | | | | |\n| CK | | | | | | |\n| Gleichschließende Gruppe | | | | | | |\n| Zentralschloss-Tür | | | | | | |",
       "## Was jede Ebene an Stiftraum kostet",
       "Die Rechnung im vorigen Abschnitt ist nicht abstrakt, und sie lässt sich eher als Faustregel denn als Formel ausdrücken. Jede Ebene über dem Einzelschlüssel braucht mindestens eine zusätzliche Trennung im Stiftsatz jedes Zylinders, den diese Ebene öffnen muss. Trennungen machen einen Zylinder leichter manipulierbar und lassen ihn ungleichmäßig verschleißen; ihre Zahl zählt also für Sicherheit und Lebensdauer, nicht nur dafür, ob sich die Anlage überhaupt zeichnen lässt.",
       "Die praktische Folge: Eine fünfstufige Anlage auf einem 6-Stift-Zylinder lässt sehr wenig Raum für künftige Türen. Wird das Gebäude wachsen, ist es ehrlich, jetzt weniger Ebenen zu verwenden und Tiefe ungenutzt zu lassen, statt die größtmögliche Anlage zu planen und im dritten Jahr festzustellen, dass sich keine weiteren Schlüssel mehr darin schneiden lassen.",
@@ -1236,7 +1243,7 @@
       "summary": "bf477e808275",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
-      "body": "ae14b6d40c4d",
+      "body": "b024b9e67596",
       "faq": "2efa1a7ca90e"
     }
   },

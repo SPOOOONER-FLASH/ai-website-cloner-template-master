@@ -1204,6 +1204,13 @@
       "Zemin katında resepsiyon, üç kiracı katı, bir teknik oda ve her katta bir temizlik deposu bulunan dört katlı bir ofis binası düşünün. Ona uyan sistem beş değil dört seviyelidir:",
       "| Kim | Seviye | Açtığı |\n| --- | --- | --- |\n| Bina sahibi | GMK | Her şey |\n| Tesis müdürü | MK-A | Teknik oda, şaftlar, tüm temizlik depoları |\n| Temizlik yüklenicisi | SMK-1 | Yalnızca üç temizlik deposu |\n| 2. kat kiracısı | CK ×9 | Kendi dokuz kapısı, farklı anahtarlı |\n| Ana giriş | maison | Her kiracı CK'sini ve GMK'yi kabul eder |",
       "O binada kimsenin GGMK'ye ihtiyacı yoktur, çünkü tek bir bina vardır. Altıncı satırı (bina sahibinin GMK'sinin üstüne bir GGMK) eklemek sistemdeki her silindirde pim alanına mal olur ve ikinci bir bina olana kadar hiçbir şey kazandırmaz. Yukarıdan aşağı değil aşağıdan yukarı tasarlamanın bütün gerekçesi budur.",
+      "## Her anahtar kaç kapı açar",
+      "Aynı bina, sayılmış hâliyle. Üç kiracı katının her birinde dokuz kapı, dört katın her birinde bir şaft dolabı, bir makine dairesi ve bir ana giriş olduğunu varsayalım: toplam 36 silindir. Dört anahtar bunları şöyle paylaşır.",
+      "| Anahtar | Kimde | Açar | Kapı |\n| --- | --- | --- | --- |\n| GMK | Bina sahibi | Her şey | 36 |\n| MK-A | Tesis yöneticisi | Makine dairesi, dört şaft, üç temizlik odası | 8 |\n| SMK-1 | Temizlik firması | Üç temizlik odası | 3 |\n| CK ×27 | Her kiracı odasına bir | Kendi kapısı, artı ortak anahtarla ana giriş | Her biri 1, artı giriş |",
+      "Anahtar başına kapı saymak, kötü bir şemayı daha hiçbir silindir kesilmeden yakalayan kontroldür. Üstündeki master kadar kapı açan bir alt master, binanın ihtiyaç duymadığı bir seviyedir.",
+      "## Yazdırıp doldurulacak boş şema",
+      "Bu sayfayı yazdırın ya da tabloyu kapı listenizin bulunduğu elektronik tabloya kopyalayın. Her anahtar için bir satır doldurun: kimde olduğu, hangi kapıları açtığı, kaç kapı ettiği ve kaç kopya kesileceği. İhtiyacınız olmayan seviyeleri silin. Doldurulmuş olarak bize geri gönderildiğinde silindir planını çizmek için yeterlidir.",
+      "| Seviye | Anahtar adı | Kimde | Açtığı kapılar | Kapı sayısı | Kesilecek anahtar | Sahipte duran yedek |\n| --- | --- | --- | --- | --- | --- | --- |\n| GGMK | | | | | | |\n| GMK | | | | | | |\n| MK | | | | | | |\n| MK | | | | | | |\n| SMK | | | | | | |\n| SMK | | | | | | |\n| CK | | | | | | |\n| Aynı anahtarlı grup | | | | | | |\n| Ortak anahtar kapısı | | | | | | |",
       "## Her seviyenin pim alanında size maliyeti",
       "Önceki bölümdeki aritmetik soyut değildir ve bir formülden çok pratik bir kural olarak ifade edilmeye değer. Değişim anahtarının üstündeki her seviye, o seviyenin açması gereken her silindirin pim yığınında en az bir ek bölünme ister. Bölünmeler bir silindiri maymuncukla açılabilir kılan ve düzensiz aşınmasına yol açan şeydir; dolayısıyla sayıları yalnızca sistemin çizilip çizilemeyeceği için değil, güvenlik ve hizmet ömrü için de önemlidir.",
       "Pratik sonuç: altı pimli bir silindirdeki beş seviyeli bir sistem, gelecekteki kapılar için çok az yer bırakır. Bina büyüyecekse dürüst hamle, şimdi daha az seviye kullanıp derinliği harcanmamış bırakmaktır; maksimum sistemi tasarlayıp üçüncü yılda artık hiç anahtar kesilemediğini keşfetmek değil.",
@@ -1236,7 +1243,7 @@
       "summary": "bf477e808275",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
-      "body": "ae14b6d40c4d",
+      "body": "b024b9e67596",
       "faq": "2efa1a7ca90e"
     }
   },
