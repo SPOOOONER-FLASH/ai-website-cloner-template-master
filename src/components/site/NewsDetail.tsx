@@ -1,7 +1,8 @@
 import { articleFaqHeading, articleFaqItems, articleFaqLocale } from "@/lib/article-faq";
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
-import { newsKindLabels, formatNewsDate } from "@/data/news";
+import { newsKindLabels, formatNewsDate, getNewsBySlug } from "@/data/news";
+import { getGuideBySlug } from "@/data/guides";
 import { CREDENTIAL_TRANSLATIONS, authorHref, authorPath, authorPortrait } from "@/data/authors";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
@@ -167,6 +168,8 @@ export function NewsDetail({
      articleFaqLocale. A translated heading over untranslated pairs reads as a bug. */
   const faqLocale = articleFaqLocale(article, locale);
   const contents = [{ id: "article-overview", text: overview, level: 2 }, ...blocks.filter(block => block.kind === "heading").map(block => ({ id: block.id, text: block.text, level: block.level })), ...(faq.length ? [{ id: "article-faq", text: articleFaqHeading(faqLocale), level: 2 }] : [])];
+  const [seeSection, seeSlug] = article.seeAlso?.split("/") ?? [];
+  const seeAlso = seeSection === "guides" ? getGuideBySlug(seeSlug) : seeSection === "news" ? getNewsBySlug(seeSlug) : undefined;
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined)
@@ -465,6 +468,20 @@ export function NewsDetail({
                 </span>
                 <span className="short-marker short-marker-arrow relative mt-8 block ps-12 text-c1 text-brand">
                   {pickText(article.tool.title, article.tool.titleEs, article.tool.titlePt)}
+                </span>
+              </Link>
+            ) : null}
+
+            {seeAlso ? (
+              <Link
+                href={`${base}/${seeSection}/${seeAlso.slug}/`}
+                className="mt-48 block border-t border-ink pt-16 hover:text-brand-hover"
+              >
+                <span className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+                  {tx(locale, "Read next", { es: "Siga leyendo", pt: "Continue lendo" })}
+                </span>
+                <span className="short-marker short-marker-arrow relative mt-8 block ps-12 text-c1 text-brand">
+                  {tr(seeAlso, "title", locale) || seeAlso.title}
                 </span>
               </Link>
             ) : null}

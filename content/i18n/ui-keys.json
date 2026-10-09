@@ -1,12 +1,12 @@
 {
   " — Canton Hyland manufactures panic exit devices, locks and architectural door hardware for commercial and institutional projects, supplying specifiers and distributors internationally.": [
-    "src/components/site/NewsDetail.tsx:51"
+    "src/components/site/NewsDetail.tsx:52"
   ],
   " — the catalog on this site is a subset of what we manufacture.": [
     "src/components/site/ProductFinder.tsx:69"
   ],
   " · showing {from}–{to}": [
-    "src/components/site/CategoryFilter.tsx:52",
+    "src/components/site/CategoryFilter.tsx:53",
     "src/components/site/ProductFinder.tsx:65"
   ],
   " in the catalog": [
@@ -34,16 +34,16 @@
     "src/components/locale-pages/DownloadsPage.tsx:54"
   ],
   "{count} models made in Guangdong, China.": [
-    "src/components/locale-pages/CategoryPage.tsx:36"
+    "src/components/locale-pages/CategoryPage.tsx:37"
   ],
   "{count} models made in Guangdong. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:34"
+    "src/components/locale-pages/CategoryPage.tsx:35"
   ],
   "{count} models manufactured in Guangdong, China. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:33"
+    "src/components/locale-pages/CategoryPage.tsx:34"
   ],
   "{count} models. Lead time from 30 days.": [
-    "src/components/locale-pages/CategoryPage.tsx:35"
+    "src/components/locale-pages/CategoryPage.tsx:36"
   ],
   "{count} models. Narrow them by what is on your schedule.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:88"
@@ -83,10 +83,10 @@
     "src/components/site/HardwareTerms.tsx:41"
   ],
   "{n} product": [
-    "src/components/site/CategoryFilter.tsx:53"
+    "src/components/site/CategoryFilter.tsx:54"
   ],
   "{n} products": [
-    "src/components/site/CategoryFilter.tsx:54"
+    "src/components/site/CategoryFilter.tsx:55"
   ],
   "{n} products moved": [
     "src/components/site/ModelLookup.tsx:92"
@@ -98,13 +98,13 @@
     "src/lib/category-guide.ts:149"
   ],
   "{name} catalog": [
-    "src/components/locale-pages/CategoryPage.tsx:100"
+    "src/components/locale-pages/CategoryPage.tsx:101"
   ],
   "{name}, Manufacturer": [
-    "src/components/locale-pages/CategoryPage.tsx:41"
+    "src/components/locale-pages/CategoryPage.tsx:42"
   ],
   "{name}, Manufacturer & Supplier": [
-    "src/components/locale-pages/CategoryPage.tsx:40"
+    "src/components/locale-pages/CategoryPage.tsx:41"
   ],
   "{name}: the published figures, model by model": [
     "src/components/site/CollectionFacts.tsx:61"
@@ -122,10 +122,10 @@
     "src/components/site/CylinderCalculator.tsx:64"
   ],
   "← Back to all guides": [
-    "src/components/site/NewsDetail.tsx:203"
+    "src/components/site/NewsDetail.tsx:206"
   ],
   "← Back to all news": [
-    "src/components/site/NewsDetail.tsx:44"
+    "src/components/site/NewsDetail.tsx:45"
   ],
   "← Back to previous results": [
     "src/components/site/ProductDetail.tsx:87"
@@ -182,9 +182,6 @@
   "7. International transfers": [
     "src/data/privacy-policy.ts:131"
   ],
-  "92 pages, every published model with its key specifications and an index at the back. Searchable text, bookmarks by family, and it opens as a spread. The document is in English.": [
-    "src/components/locale-pages/ContactPage.tsx:156"
-  ],
   "8. Your rights": [
     "src/data/privacy-policy.ts:138"
   ],
@@ -196,6 +193,9 @@
   ],
   "9001 catalog lever handle": [
     "src/components/site/ProductsEditorialOverview.tsx:33"
+  ],
+  "92 pages, every published model with its key specifications and an index at the back. Searchable text, bookmarks by family, and it opens as a spread. The document is in English.": [
+    "src/components/locale-pages/ContactPage.tsx:156"
   ],
   "A bar across the inside face of the door that unlatches under pressure, so a person leaving in a crowd needs no handle, no key and no instruction.": [
     "src/lib/configurator.ts:388"
@@ -325,7 +325,7 @@
     "src/lib/configurator.ts:433"
   ],
   "About Canton Hyland": [
-    "src/components/site/NewsDetail.tsx:49"
+    "src/components/site/NewsDetail.tsx:50"
   ],
   "About the company": [
     "src/components/site/WelcomeIntro.tsx:24"
@@ -343,7 +343,7 @@
     "src/components/locale-pages/ContactPage.tsx:104"
   ],
   "All {count} models": [
-    "src/components/locale-pages/ProductFinderPage.tsx:84",
+    "src/components/locale-pages/ProductFinderPage.tsx:83",
     "src/components/locale-pages/ProductsIndexPage.tsx:114"
   ],
   "All {n} published model numbers, as they are printed on a drawing or a purchase order. Type any part of one to narrow the list.": [
@@ -359,7 +359,7 @@
     "src/components/site/SiteMenuDrawer.tsx:155"
   ],
   "All products": [
-    "src/components/site/CategoryFilter.tsx:47",
+    "src/components/site/CategoryFilter.tsx:48",
     "src/components/site/menu-experience.ts:72"
   ],
   "All three functions are in the range: {functions}. Single-cylinder versions open from inside without a key; double-cylinder versions need a key on both sides; self-locking versions latch as the door closes.": [
@@ -387,7 +387,7 @@
     "src/components/site/FinderModeSwitch.tsx:45"
   ],
   "Answer a few questions about the door and we narrow the catalog to the models that fit. Material, door type and finish, ending at a model number you can quote.": [
-    "src/components/locale-pages/ConfiguratorPage.tsx:19"
+    "src/components/locale-pages/ConfiguratorPage.tsx:17"
   ],
   "Answer what you know": [
     "src/components/site/ConfiguratorIntro.tsx:39"
@@ -662,14 +662,14 @@
     "src/components/site/WelcomeIntro.tsx:19"
   ],
   "Canton Hyland product categories": [
-    "src/components/locale-pages/ProductFinderPage.tsx:48",
+    "src/components/locale-pages/ProductFinderPage.tsx:47",
     "src/components/locale-pages/ProductsIndexPage.tsx:41"
   ],
   "Canton Hyland product photography": [
     "src/components/site/products-architecture.ts:203"
   ],
   "Canton Product Collection": [
-    "src/components/locale-pages/CategoryPage.tsx:88",
+    "src/components/locale-pages/CategoryPage.tsx:89",
     "src/components/locale-pages/ComparePage.tsx:78",
     "src/components/site/products-architecture.ts:180"
   ],
@@ -710,7 +710,7 @@
     "src/lib/site-facts.ts:64"
   ],
   "Catalog order": [
-    "src/components/site/CategoryFilter.tsx:50"
+    "src/components/site/CategoryFilter.tsx:51"
   ],
   "Catalog product photograph in a studio composition.": [
     "src/components/site/ProductStudies.tsx:55"
@@ -934,8 +934,8 @@
     "src/components/site/ProductDetail.tsx:57"
   ],
   "Configurator": [
-    "src/components/locale-pages/ConfiguratorPage.tsx:33",
-    "src/components/locale-pages/ConfiguratorPage.tsx:44",
+    "src/components/locale-pages/ConfiguratorPage.tsx:30",
+    "src/components/locale-pages/ConfiguratorPage.tsx:41",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:133",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:145",
     "src/components/site/FinderModeSwitch.tsx:44",
@@ -944,7 +944,7 @@
     "src/components/site/SiteFooter.tsx:46"
   ],
   "Configurator — Find the Right Model": [
-    "src/components/locale-pages/ConfiguratorPage.tsx:18"
+    "src/components/locale-pages/ConfiguratorPage.tsx:16"
   ],
   "Configurator Studio": [
     "src/components/site/menu-experience.ts:75",
@@ -972,7 +972,7 @@
     "src/components/locale-pages/ContactPage.tsx:39"
   ],
   "Contact us": [
-    "src/components/site/NewsDetail.tsx:46",
+    "src/components/site/NewsDetail.tsx:47",
     "src/components/site/NewsListing.tsx:23",
     "src/data/home.ts:208"
   ],
@@ -1530,13 +1530,13 @@
     "src/components/site/menu-experience.ts:271"
   ],
   "Filter by type": [
-    "src/components/site/CategoryFilter.tsx:48"
+    "src/components/site/CategoryFilter.tsx:49"
   ],
   "Filter published models by family, finish and door condition.": [
     "src/components/site/menu-experience.ts:301"
   ],
   "Filter the Canton Hyland catalog by category, series, material, finish, door type and certification to build a hardware schedule.": [
-    "src/components/locale-pages/ProductFinderPage.tsx:22"
+    "src/components/locale-pages/ProductFinderPage.tsx:21"
   ],
   "Filter the catalog by material, finish and door type": [
     "src/components/site/CategoryGuide.tsx:27"
@@ -1560,7 +1560,7 @@
     "src/components/site/DocumentInventory.tsx:184"
   ],
   "Find the right model": [
-    "src/components/locale-pages/ConfiguratorPage.tsx:50",
+    "src/components/locale-pages/ConfiguratorPage.tsx:47",
     "src/components/locale-pages/ProductsIndexPage.tsx:86"
   ],
   "Find your next answer.": [
@@ -1735,14 +1735,14 @@
     "src/components/site/ProductDetail.tsx:64"
   ],
   "Guided selection": [
-    "src/components/locale-pages/ConfiguratorPage.tsx:58",
+    "src/components/locale-pages/ConfiguratorPage.tsx:55",
     "src/components/locale-pages/ProductsIndexPage.tsx:105"
   ],
   "Guides": [
     "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
     "src/components/site/menu-experience.ts:87",
-    "src/components/site/NewsDetail.tsx:91"
+    "src/components/site/NewsDetail.tsx:92"
   ],
   "Guides and News": [
     "src/lib/article-feed.ts:34"
@@ -1806,15 +1806,15 @@
   "Home": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:38",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:47",
-    "src/components/locale-pages/CategoryPage.tsx:70",
-    "src/components/locale-pages/CategoryPage.tsx:81",
+    "src/components/locale-pages/CategoryPage.tsx:71",
+    "src/components/locale-pages/CategoryPage.tsx:82",
     "src/components/locale-pages/CertificationsPage.tsx:33",
     "src/components/locale-pages/CollectionPage.tsx:92",
     "src/components/locale-pages/CollectionPage.tsx:104",
     "src/components/locale-pages/ComparePage.tsx:58",
     "src/components/locale-pages/ComparePage.tsx:70",
-    "src/components/locale-pages/ConfiguratorPage.tsx:31",
-    "src/components/locale-pages/ConfiguratorPage.tsx:42",
+    "src/components/locale-pages/ConfiguratorPage.tsx:28",
+    "src/components/locale-pages/ConfiguratorPage.tsx:39",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:131",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:143",
     "src/components/locale-pages/CylinderCalculatorPage.tsx:32",
@@ -1823,11 +1823,11 @@
     "src/components/locale-pages/FinishesPage.tsx:26",
     "src/components/locale-pages/GlossaryPage.tsx:30",
     "src/components/locale-pages/ModelLookupPage.tsx:28",
-    "src/components/locale-pages/ProductFinderPage.tsx:41",
+    "src/components/locale-pages/ProductFinderPage.tsx:40",
     "src/components/locale-pages/ProductPage.tsx:94",
     "src/components/locale-pages/ProductsIndexPage.tsx:35",
     "src/components/site/AuthorProfile.tsx:30",
-    "src/components/site/NewsDetail.tsx:42",
+    "src/components/site/NewsDetail.tsx:43",
     "src/components/site/ProductDetail.tsx:85",
     "src/components/site/ProductsEditorialOverview.tsx:22",
     "src/components/site/ProjectDetail.tsx:15"
@@ -2361,8 +2361,8 @@
   ],
   "News + Press": [
     "src/components/site/menu-experience.ts:88",
-    "src/components/site/NewsDetail.tsx:43",
-    "src/components/site/NewsDetail.tsx:90",
+    "src/components/site/NewsDetail.tsx:44",
+    "src/components/site/NewsDetail.tsx:91",
     "src/components/site/NewsListing.tsx:17"
   ],
   "Newsletter": [
@@ -2677,7 +2677,7 @@
     "src/components/site/CylinderCalculator.tsx:73"
   ],
   "Overview": [
-    "src/components/site/NewsDetail.tsx:155",
+    "src/components/site/NewsDetail.tsx:156",
     "src/data/home.ts:117"
   ],
   "Packing + export": [
@@ -2756,10 +2756,10 @@
     "src/components/locale-pages/ContactPage.tsx:170"
   ],
   "Press inquiries": [
-    "src/components/site/NewsDetail.tsx:45"
+    "src/components/site/NewsDetail.tsx:46"
   ],
   "Press kit": [
-    "src/components/site/NewsDetail.tsx:48"
+    "src/components/site/NewsDetail.tsx:49"
   ],
   "Press releases, certification updates and technical notes from Canton Hyland, manufacturer of panic exit devices and architectural door hardware.": [
     "src/components/locale-pages/ArticlePages.tsx:25"
@@ -2792,12 +2792,12 @@
     "src/components/locale-pages/DownloadsPage.tsx:26"
   ],
   "Product filters": [
-    "src/components/site/CategoryFilter.tsx:49"
+    "src/components/site/CategoryFilter.tsx:50"
   ],
   "Product Finder": [
-    "src/components/locale-pages/ProductFinderPage.tsx:43",
-    "src/components/locale-pages/ProductFinderPage.tsx:55",
-    "src/components/locale-pages/ProductFinderPage.tsx:58",
+    "src/components/locale-pages/ProductFinderPage.tsx:42",
+    "src/components/locale-pages/ProductFinderPage.tsx:54",
+    "src/components/locale-pages/ProductFinderPage.tsx:57",
     "src/components/site/menu-experience.ts:73",
     "src/components/site/menu-experience.ts:271",
     "src/components/site/menu-experience.ts:300",
@@ -2805,7 +2805,7 @@
     "src/components/site/SiteHeader.tsx:431"
   ],
   "Product Finder — {count} Door Hardware Models": [
-    "src/components/locale-pages/ProductFinderPage.tsx:21"
+    "src/components/locale-pages/ProductFinderPage.tsx:20"
   ],
   "Product images": [
     "src/components/site/ProductDetail.tsx:81"
@@ -2817,7 +2817,7 @@
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:116"
   ],
   "Product pages": [
-    "src/components/site/CategoryFilter.tsx:51",
+    "src/components/site/CategoryFilter.tsx:52",
     "src/components/site/ProductFinder.tsx:71"
   ],
   "Product type corrected by the factory": [
@@ -2826,18 +2826,18 @@
   "Products": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:39",
     "src/components/locale-pages/ArgentinaAr4Page.tsx:48",
-    "src/components/locale-pages/CategoryPage.tsx:71",
-    "src/components/locale-pages/CategoryPage.tsx:82",
+    "src/components/locale-pages/CategoryPage.tsx:72",
+    "src/components/locale-pages/CategoryPage.tsx:83",
     "src/components/locale-pages/CollectionPage.tsx:93",
     "src/components/locale-pages/CollectionPage.tsx:105",
     "src/components/locale-pages/ComparePage.tsx:59",
     "src/components/locale-pages/ComparePage.tsx:71",
-    "src/components/locale-pages/ConfiguratorPage.tsx:32",
-    "src/components/locale-pages/ConfiguratorPage.tsx:43",
+    "src/components/locale-pages/ConfiguratorPage.tsx:29",
+    "src/components/locale-pages/ConfiguratorPage.tsx:40",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:132",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:144",
-    "src/components/locale-pages/ProductFinderPage.tsx:42",
-    "src/components/locale-pages/ProductFinderPage.tsx:55",
+    "src/components/locale-pages/ProductFinderPage.tsx:41",
+    "src/components/locale-pages/ProductFinderPage.tsx:54",
     "src/components/locale-pages/ProductPage.tsx:85",
     "src/components/locale-pages/ProductPage.tsx:95",
     "src/components/locale-pages/ProductsIndexPage.tsx:36",
@@ -2852,7 +2852,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:19"
   ],
   "Products mentioned": [
-    "src/components/site/NewsDetail.tsx:47"
+    "src/components/site/NewsDetail.tsx:48"
   ],
   "Project Planner": [
     "src/components/site/WelcomeIntro.tsx:22"
@@ -2941,6 +2941,9 @@
   "Read guide": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
+  "Read next": [
+    "src/components/site/NewsDetail.tsx:481"
+  ],
   "Read the column": [
     "src/data/feature-columns.ts:206"
   ],
@@ -2967,7 +2970,7 @@
   ],
   "Reference table": [
     "src/components/site/ArticleBody.tsx:20",
-    "src/components/site/NewsDetail.tsx:361"
+    "src/components/site/NewsDetail.tsx:364"
   ],
   "Related products": [
     "src/components/site/ProductDetail.tsx:100",
@@ -3088,7 +3091,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Search the way you already write a door schedule: by category, material, finish and door type. Your selection stays in the link, so a colleague opens exactly the list you see.": [
-    "src/components/locale-pages/ProductFinderPage.tsx:63"
+    "src/components/locale-pages/ProductFinderPage.tsx:62"
   ],
   "Seasonal market focus · Argentina": [
     "src/components/site/ArgentinaAr4Showcase.tsx:15"
@@ -3228,7 +3231,7 @@
     "src/components/site/SiteHeader.tsx:83"
   ],
   "Showing {count} published products. Filters for backset, center distance and door thickness arrive with the full technical catalog; until then, each product page lists the figures it has.": [
-    "src/components/locale-pages/ProductFinderPage.tsx:68"
+    "src/components/locale-pages/ProductFinderPage.tsx:67"
   ],
   "Showing the first {max} of {n} models — open a product for its full table.": [
     "src/components/site/SpecMatrix.tsx:42"
@@ -3840,7 +3843,7 @@
     "src/data/finish-codes.ts:218"
   ],
   "Updated": [
-    "src/components/site/NewsDetail.tsx:222"
+    "src/components/site/NewsDetail.tsx:225"
   ],
   "Upper cylindrical housing envelopes only: Ø17 mm, two 30 mm segments with a 10 mm central gap.": [
     "public/downloads/models/index.json"
@@ -3861,7 +3864,7 @@
     "src/lib/site-facts.ts:63"
   ],
   "Verified product records for this filter are still being prepared. Contact the export team for the current catalog.": [
-    "src/components/site/CategoryFilter.tsx:56"
+    "src/components/site/CategoryFilter.tsx:57"
   ],
   "Verified record": [
     "src/components/locale-pages/CertificationsPage.tsx:72"
