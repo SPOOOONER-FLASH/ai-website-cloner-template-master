@@ -1,0 +1,22 @@
+# 锁体 110 / 140 / 1121 并入 AR4，搜索旧号仍命中
+
+- Agent：Claude（云端线程，分支 `claude/project-thread-464rgp`）
+- Commit：与本 update 相同的提交
+- 目标：客户（spooner）要求把「先上架、无规格」的 AR4-110 / AR4-140 / AR4-1121 与后上架、有规格的 110 / 140 / 1121 锁体合并为一条，搜索「140」仍能找到。
+- 修改范围：
+  - `content/products/hyde-ar4-{110,140}-mortise-lock.json`、`hyde-ar4-1121-hook-bolt-lock.json`：规格取自我方 Hyland 图纸（工厂编号 6840 = 中心距 68 / 进深 40，7225 = 72 / 25），旧 AR4 的面板 210、190 是照 Piccolo 目录抄的，已用图纸值替换；并入旧记录的图库和视频；新增 `modelAliases`。
+  - 删除 `content/products/{110,140,1121}-lock-case.json`；`content/taxonomy-moves.json` 加 3 条 `productMerges`，`deploy/nginx/taxonomy-redirects.conf` 重新生成（旧网址 301 到 AR4）。
+  - 搜索：`Product.modelAliases`（`src/data/types.ts`）→ `scripts/build-search-index.mjs` 写入 `aliases` → `src/lib/search-matching.ts` 别名与型号同分；`search-matching.test.ts` 锁定「110 / 140 / 1121 时 AR4 排第一」。
+  - 七语种 `content/i18n/*/products.json`：去掉旧 slug，重建 AR4 规格行。
+  - 计数随目录变化（HYDE 616→613 等）：锁体对照指南重新生成（33/54），`dimensional-interchangeability-2026` 三语和七语种全改；`why-the-catalogue-is-this-wide`、`mortise-lock-backset…`、`hardware-refurbishment-survey-2026` 等英西葡改；`content/faq.json` 549→546。
+  - `src/data/generated/spec-sheets.json` 去掉 140-lock-case，删除其 10 个 PDF。
+- 验证：`npm test` 457/0；i18n-lint、titles:check、spec-coverage --check、lock-case tables --check 均通过；`npm run check` 见提交说明。
+- 明确未修改：`docs/collaboration/LOCALE-MIRROR-STATUS.md`（他人未提交改动）；`out/`（发布棒在 johns）。
+- 已知风险 / 外部阻塞：
+  - **图片来源**：AR4-110/140/101 的主图与阿根廷 Piccolo 目录照片高度相似（推断，未核实）；旧 110-7、140-6、1121-8 是 Piccolo「Terminaciones」图，合并时已排除，但 AR4 页上仍可能有 Piccolo 来源图，建议工厂补拍后替换。110-6/140-5 的「装在门里」图疑似生成图。
+  - AR4-101 规格（18×183、深 63）看起来抄自 Piccolo，没有我方图纸可核对。
+  - 其他计数文章的七语种 overlay 本来就停在 588，这次未动，留给本地化轮次。
+  - AR4 三款还没有规格书 PDF：需在 johns 上跑 `npm run spec-sheets`；`spec-sheet-gaps.md` 已过期。
+  - 与本次无关但构建时发现：在 origin/main 上 `npm run build` 会改写约 190 个 `public/images/{drawings,door-prep}/*.svg`（centre→center、millimetres→millimeters），并把 `src/data/generated/products-zh.json` 的中文规格值改回英文（RAYEN 车道），说明已提交的这些生成文件与生成器不一致。本提交没有带上这些改动；RAYEN 侧和图纸生成器的负责人需要看一下。
+  - 新 301 需随下一次发布 + nginx reload 生效（`deploy/install-nginx-redirects.sh`）。
+- 下一步：发布者合并后 `npm run release:hyde`；Claude 继续做 AR-4 四类（安全锁 / 铝门窄锁 / 普通锁 / 插销门栓）方案预览。

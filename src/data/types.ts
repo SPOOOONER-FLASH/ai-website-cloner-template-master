@@ -121,6 +121,12 @@ export interface Product {
   /** Model number — the primary business key. e.g. "305". */
   model: string;
   /**
+   * Other numbers buyers type for this same part. AR4-110 was listed as plain "110" until
+   * the two records were merged on 2026-10-09, and Argentine buyers know these cases by the
+   * bare number, so site search must still put AR4-110 first for "110".
+   */
+  modelAliases?: string[];
+  /**
    * True when `model` is a working label rather than the client's real SKU.
    * Several products arrived as descriptive names only. Render a "model on request"
    * note instead of the code, and never quote it back to a customer as an order code.

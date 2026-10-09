@@ -1333,22 +1333,6 @@
       "specs": "97d170e1550e"
     }
   },
-  "110-lock-case": {
-    "name": "箱錠",
-    "summary": "ラッチとデッドボルトを備えた箱錠です。ストライクプレートと鍵が付属します。寸法はご注文前に図面で確認します。",
-    "description": "110は、Canton Hyland Hardware & Building Material Co., Ltd.が中国・広東省で製造する箱錠です。上の写真は実際の製品です。このモデルの詳しい仕様は工場で確認中です。輸出担当チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
-    "features": [],
-    "specs": [],
-    "seoTitle": "110 箱錠、工場直販 | Canton Hyland",
-    "seoDescription": "110 箱錠。工場直販。サンプルとお見積りはご相談ください。",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "ed601adf96e7",
-      "description": "324ead4540e4",
-      "features": "97d170e1550e",
-      "specs": "97d170e1550e"
-    }
-  },
   "112-glass-door-handle": {
     "name": "ガラスドアハンドル",
     "summary": "ステンレス製のガラスドアハンドルです。仕様はご注文前に工場で確認します。",
@@ -1363,55 +1347,6 @@
       "description": "daf000d32806",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
-    }
-  },
-  "1121-lock-case": {
-    "name": "箱錠",
-    "summary": "丸形デッドボルトとラッチを備えた箱錠です。ストライクプレート、ビス、鍵が付属します。寸法はご注文前に図面で確認します。",
-    "description": "1121は、Canton Hyland Hardware & Building Material Co., Ltd.が中国・広東省で製造する箱錠です。上の写真は実際の製品です。このモデルの詳しい仕様は工場で確認中です。輸出担当チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
-    "features": [],
-    "specs": [],
-    "seoTitle": "1121 箱錠、工場直販 | Canton Hyland",
-    "seoDescription": "1121 箱錠。工場直販。サンプルとお見積りはご相談ください。",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "8518370ad36b",
-      "description": "78a64e3d2514",
-      "features": "97d170e1550e",
-      "specs": "97d170e1550e"
-    }
-  },
-  "140-lock-case": {
-    "name": "箱錠",
-    "summary": "芯々距離72 mm、バックセット25 mmの箱錠です。フロント183.5 × 20 mm、ケース125.7 mmで、ラッチとデッドボルトを備えます。",
-    "description": "140は、Canton Hyland Hardware & Building Material Co., Ltd.が中国・広東省で製造する箱錠です。上の写真は実際の製品です。このモデルの詳しい仕様は工場で確認中です。輸出担当チームにお問い合わせいただければ、推定値ではなく実測値をお伝えします。",
-    "features": [],
-    "specs": [
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "25 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "183.5 × 20 mm"
-      },
-      {
-        "label": "Case size",
-        "value": "125.7 × 41.7 mm"
-      }
-    ],
-    "seoTitle": "140 箱錠、芯々距離72mm、バックセット25mm | Canton Hyland",
-    "seoDescription": "140 箱錠（芯々距離72mm、バックセット25mm）。工場直販。サンプルとお見積りはご相談ください。",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "2271730d7fe1",
-      "description": "0bfed21d6dd7",
-      "features": "97d170e1550e",
-      "specs": "673a8c1c5a86"
     }
   },
   "19-130mm-glass-door-handle": {
@@ -20962,12 +20897,20 @@
         "value": "6840"
       },
       {
-        "label": "Nominal lock body",
-        "value": "68 × 40"
+        "label": "Center distance",
+        "value": "68 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
       },
       {
         "label": "Faceplate",
-        "value": "25 × 210"
+        "value": "212 × 25 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "127.3 × 60.8 mm"
       },
       {
         "label": "Latch options",
@@ -20978,8 +20921,8 @@
         "value": "亜鉛合金または真鍮、キー2本"
       }
     ],
-    "seoTitle": "AR4-110 防犯箱錠、工場直販 | Canton Hyland",
-    "seoDescription": "AR4-110 防犯箱錠。工場直販。サンプルとお見積りはご相談ください。",
+    "seoTitle": "AR4-110 防犯箱錠、芯々距離68mm、バックセット40mm | Canton Hyland",
+    "seoDescription": "AR4-110 防犯箱錠（芯々距離68mm、バックセット40mm）。工場直販。サンプルとお見積りはご相談ください。",
     "sourceHash": {
       "name": "9cad0957c775",
       "summary": "cb44b10fdeb9",
@@ -20997,12 +20940,16 @@
         "value": "40鎌デッド錠ケース"
       },
       {
-        "label": "Faceplate",
-        "value": "25 × 140 mm"
-      },
-      {
         "label": "Backset",
         "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "140 × 25 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "82.4 × 66.7 mm"
       },
       {
         "label": "Hook bolt",
@@ -21034,12 +20981,20 @@
         "value": "7225"
       },
       {
-        "label": "Faceplate",
-        "value": "20 × 190"
+        "label": "Center distance",
+        "value": "72 mm"
       },
       {
-        "label": "Lock case",
-        "value": "40 × 125"
+        "label": "Backset",
+        "value": "25 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "183.5 × 20 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "125.7 × 41.7 mm"
       },
       {
         "label": "Latch options",
@@ -21051,7 +21006,7 @@
       }
     ],
     "seoTitle": "AR4-140 スリム箱錠、工場直販 | Canton Hyland",
-    "seoDescription": "AR4-140 スリム箱錠。工場直販。サンプルとお見積りはご相談ください。",
+    "seoDescription": "AR4-140 スリム箱錠（芯々距離72mm、バックセット25mm）。工場直販。サンプルとお見積りはご相談ください。",
     "sourceHash": {
       "name": "d34887493f3d",
       "summary": "8b27ed02f6dd",

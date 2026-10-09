@@ -52,7 +52,7 @@ const readCollection = (dir) => {
  * browser never has to. Keeping it separate from the display fields means a match on a
  * spec value can still render a clean title and subtitle.
  */
-const entry = (type, title, subtitle, href, terms, model) => ({
+const entry = (type, title, subtitle, href, terms, model, aliases) => ({
   type,
   title,
   subtitle,
@@ -62,6 +62,8 @@ const entry = (type, title, subtitle, href, terms, model) => ({
   // subtitle: the subtitle also carries the series and category name, so scoring against
   // it made an ordinary word like "panic" score as if it were a model number.
   ...(model ? { model: String(model).toLowerCase() } : {}),
+  // Numbers a merged record used to be listed under ("140" for AR4-140): scored as a model.
+  ...(aliases?.length ? { aliases: aliases.map((a) => String(a).toLowerCase()) } : {}),
 });
 
 const entries = [];
@@ -107,6 +109,7 @@ for (const p of allProducts) {
       `/products/${p.categoryPath[0]}/${p.slug}/`,
       [
         p.model,
+        ...(p.modelAliases ?? []),
         p.name,
         p.nameZh,
         p.series,
@@ -122,6 +125,7 @@ for (const p of allProducts) {
         materialTermsFor(p.material),
       ],
       p.modelTbc ? null : p.model,
+      p.modelAliases,
     ),
   );
 }

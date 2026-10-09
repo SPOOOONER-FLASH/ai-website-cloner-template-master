@@ -1,15 +1,15 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
   "site": "hyde",
-  "totalProducts": 616,
+  "totalProducts": 613,
   "fields": {
     "backset": {
       "title": "Backset",
       "labels": [
         "Backset"
       ],
-      "products": 180,
-      "rows": 180,
+      "products": 181,
+      "rows": 181,
       "distinctValues": 28
     },
     "centreDistance": {
@@ -21,8 +21,8 @@
         "Center distance, horizontal",
         "Center distance, vertical"
       ],
-      "products": 42,
-      "rows": 83,
+      "products": 43,
+      "rows": 85,
       "distinctValues": 14
     },
     "pullHandlePitch": {
@@ -71,9 +71,9 @@
         "Faceplate",
         "Face plate"
       ],
-      "products": 8,
-      "rows": 8,
-      "distinctValues": 8
+      "products": 7,
+      "rows": 7,
+      "distinctValues": 7
     },
     "finish": {
       "title": "Finish",

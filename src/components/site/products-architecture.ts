@@ -61,7 +61,7 @@ export const PRODUCT_GROUPS: readonly ProductGroupDefinition[] = [
   {
     title: { en: "Locks and cylinders", es: "Cerraduras y cilindros", pt: "Fechaduras e cilindros" },
     families: [
-      { slug: "lock-cases", thumbnail: "1121-lock-case" },
+      { slug: "lock-cases", thumbnail: "hyde-ar4-1121-hook-bolt-lock" },
       { slug: "lock-cylinders", thumbnail: "54-dk-lock-cylinder" },
       { slug: "knob-locks", thumbnail: "575-sset-tubular-lock" },
       { slug: "deadbolts", thumbnail: "d101-ss-deadbolts" },

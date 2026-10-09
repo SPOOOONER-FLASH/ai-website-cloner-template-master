@@ -16,14 +16,20 @@
       "value": "7225"
     },
     {
-      "label": "Faceplate",
-      "value": "20 × 190",
-      "unit": "mm"
+      "label": "Center distance",
+      "value": "72mm"
     },
     {
-      "label": "Lock case",
-      "value": "40 × 125",
-      "unit": "mm"
+      "label": "Backset",
+      "value": "25mm"
+    },
+    {
+      "label": "Faceplate",
+      "value": "183.5 × 20mm"
+    },
+    {
+      "label": "Case size",
+      "value": "125.7 × 41.7mm"
     },
     {
       "label": "Latch options",
@@ -40,12 +46,20 @@
       "value": "7225"
     },
     {
-      "label": "Frente",
-      "value": "20 × 190"
+      "label": "Distancia entre ejes",
+      "value": "72 mm"
     },
     {
-      "label": "Caja de cerradura",
-      "value": "40 × 125"
+      "label": "Entrada",
+      "value": "25 mm"
+    },
+    {
+      "label": "Frente",
+      "value": "183,5 × 20 mm"
+    },
+    {
+      "label": "Medidas del cuerpo",
+      "value": "125,7 × 41,7 mm"
     },
     {
       "label": "Opciones de pestillo",
@@ -68,17 +82,43 @@
     "label": "HYDE AR4-140 slim mortise lock body",
     "labelEs": "Cerradura de embutir angosta HYDE AR4-140"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/140-lock-case.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-140 slim mortise lock body, view 2"
+    },
+    {
+      "src": "/images/products/140-lock-case-2.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-140 slim mortise lock body, view 3"
+    },
+    {
+      "src": "/images/products/140-lock-case-3.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-140 slim mortise lock body, view 4"
+    },
+    {
+      "src": "/images/products/140-lock-case-4.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-140 slim mortise lock body, view 5"
+    },
+    {
+      "src": "/images/products/140-lock-case-5.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-140 slim mortise lock body, view 6"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [
     "AR4-110",
     "AR4-101",
     "AR4-1121"
   ],
-  "seoTitle": "AR4-140 Slim Mortise Lock Body for Timber & Metal Doors | Canton Hyland",
-  "seoDescription": "AR4-140 slim mortise lock body for timber & metal doors. Factory direct, samples and quotation on request.",
+  "seoTitle": "AR4-140 Slim Mortise Lock Body, 72mm center, 25mm backset | Canton Hyland",
+  "seoDescription": "AR4-140 slim mortise lock body for timber & metal doors. 72mm center distance, 25mm backset. Factory direct, samples and quotation on request.",
   "seoTitleEs": "AR4-140 Cuerpo de cerradura de embutir de perfil estrecho | Canton Hyland",
-  "seoDescriptionEs": "AR4-140 cuerpo de cerradura de embutir de perfil estrecho para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
+  "seoDescriptionEs": "AR4-140 cuerpo de cerradura de embutir de perfil estrecho para puertas de madera y metal. Distancia entre ejes de 72 mm, entrada de 25 mm.",
   "description": "",
   "namePt": "Corpo de fechadura de embutir estreito",
   "summaryPt": "Corpo de fechadura de embutir estreito.",
@@ -88,12 +128,20 @@
       "value": "7225"
     },
     {
-      "label": "Testa",
-      "value": "20 × 190"
+      "label": "Distância entre eixos",
+      "value": "72 mm"
     },
     {
-      "label": "Caixa da fechadura",
-      "value": "40 × 125"
+      "label": "Distância ao eixo (broca)",
+      "value": "25 mm"
+    },
+    {
+      "label": "Testa",
+      "value": "183,5 × 20 mm"
+    },
+    {
+      "label": "Dimensões do corpo",
+      "value": "125,7 × 41,7 mm"
     },
     {
       "label": "Opções de trinco",
@@ -105,5 +153,21 @@
     }
   ],
   "seoTitlePt": "AR4-140 Corpo de fechadura de embutir estreito | Canton Hyland",
-  "seoDescriptionPt": "AR4-140 corpo de fechadura de embutir estreito para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta."
+  "seoDescriptionPt": "AR4-140 corpo de fechadura de embutir estreito para portas de madeira e metal. Distância entre centros de 72 mm, distância ao eixo de 25 mm.",
+  "modelAliases": [
+    "140"
+  ],
+  "videos": [
+    {
+      "src": "/videos/products/140-lock-case.mp4",
+      "poster": {
+        "src": "/images/products/140-lock-case-video.webp",
+        "ratio": "16 / 9",
+        "label": "AR4-140 slim mortise lock body, demonstration still"
+      },
+      "label": "AR4-140 Slim Mortise Lock Body, product demonstration",
+      "durationSeconds": 20,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }
