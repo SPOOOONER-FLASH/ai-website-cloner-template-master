@@ -160,7 +160,7 @@
   },
   "certification-and-test-validation-2026": {
     "title": "2026'da Donanım Sertifikası Doğrulama: Yedi Bölüm, DoP ve CE İşareti, Altı Uyarı İşareti",
-    "summary": "Bir sertifika ya kontrolden sağ çıkar ya çıkmaz; neye bakacağınızı biliyorsanız kontrol yaklaşık beş dakika sürer. Bu sayfa gerçek her test sertifikasının taşıdığı yedi bölümü sıralıyor, akreditasyon ile belgelendirme arasındaki farkı açıklıyor, kapı donanımı için Performans Beyanı ve CE işaretini ele alıyor, \"dur\" demeniz gereken altı uyarı işaretini listeliyor ve neye sahip olup neye sahip olmadığımızı açıkça söylüyor.",
+    "summary": "Gerçek bir test sertifikası 7 bölüm taşır: düzenleyen laboratuvar ve adresi, akreditasyon referansı, yılıyla birlikte standart, rapor ya da sertifika numarası, düzenlenme tarihi ve geçerlilik, uygulama kapsamı ve test edilen yapılandırma. En sık eksik olan kapsamdır ve 7'sini birden kontrol etmek yaklaşık 5 dakika sürer. Bu sayfa ayrıca akreditasyon ile sertifikasyon farkını, CE işaretini ve Performans Beyanını açıklar, 6 tehlike işaretini listeler ve elimizde ne olduğunu söyler: 307 ve 311 panik çıkış cihazlarımız testtedir; sertifika numaraları çıkana kadar onlar için bir sınıf iddia etmiyoruz.",
     "seoTitle": "Donanım Sertifikası Doğrulama 2026: DoP, CE ve Uyarılar",
     "seoDescription": "Kapı donanımı test sertifikası nasıl kontrol edilir: yedi zorunlu bölüm, akreditasyon ve belgelendirme farkı, DoP, CE işareti ve altı uyarı işareti.",
     "body": [
@@ -244,7 +244,7 @@
     ],
     "sourceHash": {
       "title": "44cb79616657",
-      "summary": "63892f788aae",
+      "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "092e11d1aec4",
       "body": "57e62f3e9f1a",
@@ -345,7 +345,7 @@
   },
   "commercial-lock-function-decision-2026": {
     "title": "2026'da Kilit Fonksiyonu Seçimi: Oda Tipine Göre Karar Tablosu ve Her Açıklığı Çözen İki Soru",
-    "summary": "Kilit fonksiyonu seçmek bir katalog sorunu değil, iki soruluk bir sorundur: kim geçebilir ve içerideki kişiye ne olur? Bu sayfa bunu, ticari bir binanın gerçekte içerdiği oda tiplerini kapsayan bir karar tablosuna dönüştürüyor, rahatsızlık değil can güvenliği sorunu yaratan üç fonksiyon hatasını adlandırıyor ve kendi kataloğumuzun her fonksiyondan kaç model taşıdığını belirtiyor.",
+    "summary": "Kilit işlevini 2 soruyla seçin: dışarıdan kim girebilir ve içerideki kişi nasıl çıkar; çıkış anahtarsız ve tek hareketle olmalıdır. Koridorlara geçiş, ana girişlere giriş (dışarıdan anahtarlı), WC'lere mahremiyet, depolara depo işlevi, sınıflara sınıf işlevi, kaçış merdivenlerine panik çıkış cihazı. Bu sayfa oda bazında tam karar tablosunu, kaçış yolunda çift silindirli sürgü gibi can güvenliği sorununa dönüşen 3 işlev hatasını ve kataloğumuzda her işlevden kaç model olduğunu verir.",
     "seoTitle": "Kilit Fonksiyonu Seçimi 2026: Oda Tipine Göre Karar Tablosu",
     "seoDescription": "Ticari bir kilit fonksiyonu oda tipine göre nasıl seçilir, her açıklığı çözen iki soru ve can güvenliği sorununa dönüşen üç fonksiyon hatası.",
     "body": [
@@ -422,7 +422,7 @@
     ],
     "sourceHash": {
       "title": "dd606844d309",
-      "summary": "80eb5664bd3f",
+      "summary": "3e4ccb83c3b5",
       "seoTitle": "6dda3d33e6ef",
       "seoDescription": "1a7bacec2dca",
       "body": "a4d66906967c",
@@ -1965,7 +1965,7 @@
   },
   "hardware-warranty-what-it-covers-2026": {
     "title": "Kapı Donanımı Garantisi 2026: \"On Yıl\" Gerçekte Neyi Kapsar, İşi Gören Beş İstisna ve Bir Talep Nasıl Kabul Görür",
-    "summary": "Garanti yıl sayısı olarak okunur, istisnalarıyla karara bağlanır. Bu sayfa garantiyi, güvenceyi ve yasal hakları birbirinden ayırıyor, taleplerin çoğunu düşüren beş istisnayı listeliyor, sorumluluğun neden gerçekte montaj ve temizlikte düğümlendiğini açıklıyor, bir talebin kabul görmesi için neye ihtiyaç olduğunu ortaya koyuyor ve bir fabrikanın bir daha asla görmeyeceği bir parça hakkında dürüstçe neyi vaat edebileceğini söylüyor.",
+    "summary": "Bir garantiyi yıl sayısı değil istisnaları belirler ve taleplerin çoğu 5 istisnaya takılır: hatalı montaj (açık ara en büyüğü), kıyıdaki bir kapıda 201 paslanmaz kol gibi uygunsuz bir ortam, kaplamalı yüzeyde yanlış temizleyici, değişiklik ve olağan aşınma. Bu sayfa garantiyi taahhütten ve yasal haklardan ayırır, başarılı bir talebin neleri içerdiğini ortaya koyar ve bir fabrikanın bir daha görmeyeceği bir parça için dürüstçe neyi vaat edebileceğini söyler.",
     "seoTitle": "Kapı Donanımı Garantisi 2026: Neyi Kapsar, Ne Geçersiz Kılar",
     "seoDescription": "Kapı donanımı garantisi neyi kapsar, talepleri düşüren beş istisna, montaj ve temizliğin sorumluluğu nasıl belirlediği ve başarılı bir talebin içeriği.",
     "body": [
@@ -2042,7 +2042,7 @@
     ],
     "sourceHash": {
       "title": "8aa751178204",
-      "summary": "bad7f4febe06",
+      "summary": "a732d1ff86ce",
       "seoTitle": "cdc33bc30f28",
       "seoDescription": "338ff45b3007",
       "body": "c4fcf6c1d93b",
@@ -3262,7 +3262,7 @@
     ],
     "sourceHash": {
       "title": "846af929d085",
-      "summary": "8a9579fbf4a2",
+      "summary": "5ca1d67af7fc",
       "seoTitle": "0a676aa65028",
       "seoDescription": "250b45fed100",
       "body": "4167d2695ee3",

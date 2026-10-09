@@ -160,7 +160,7 @@
   },
   "certification-and-test-validation-2026": {
     "title": "Valider un certificat de quincaillerie en 2026 : les sept éléments, DoP et marquage CE, et les six signaux d'alerte",
-    "summary": "Un certificat résiste à la vérification, ou non, et le vérifier prend environ cinq minutes quand on sait quoi regarder. Cette page présente les sept éléments que porte tout certificat d'essai authentique, explique la différence entre accréditation et certification, traite des déclarations des performances et du marquage CE pour la quincaillerie de porte, énumère les six signaux d'alerte qui imposent de s'arrêter, et dit clairement ce que nous détenons et ce que nous ne détenons pas.",
+    "summary": "Un certificat d'essai authentique comporte 7 éléments : le laboratoire émetteur avec son adresse, sa référence d'accréditation, la norme avec son année, un numéro de rapport ou de certificat, la date d'émission et de validité, le domaine d'application et la configuration essayée. Le domaine d'application est l'élément qui manque le plus souvent, et vérifier les 7 prend environ 5 minutes. Cette page explique aussi la différence entre accréditation et certification et le marquage CE avec sa déclaration des performances, liste 6 signaux d'alerte, et dit ce que nous détenons : nos fermetures anti-panique 307 et 311 sont en cours d'essai, et tant qu'il n'existe pas de numéros de certificat, nous ne leur attribuons aucune classification.",
     "seoTitle": "Valider un certificat : DoP, CE et signaux d'alerte",
     "seoDescription": "Vérifier un certificat d'essai de quincaillerie : ses sept éléments, accréditation ou certification, DoP et marquage CE, et six signaux d'alerte.",
     "body": [
@@ -244,7 +244,7 @@
     ],
     "sourceHash": {
       "title": "44cb79616657",
-      "summary": "63892f788aae",
+      "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "092e11d1aec4",
       "body": "57e62f3e9f1a",
@@ -345,7 +345,7 @@
   },
   "commercial-lock-function-decision-2026": {
     "title": "Choisir une fonction de serrure en 2026 : tableau de décision par type de pièce, et les deux questions qui tranchent chaque baie",
-    "summary": "Choisir une fonction de serrure n'est pas un problème de catalogue, c'est un problème à deux questions : qui a le droit de passer, et qu'advient-il de la personne déjà à l'intérieur. Cette page en fait un tableau de décision couvrant les types de pièces que contient réellement un bâtiment tertiaire, nomme les trois erreurs de fonction qui créent des problèmes de sécurité des personnes plutôt que de simples désagréments, et indique combien de modèles de chaque fonction compte notre propre catalogue.",
+    "summary": "Choisissez la fonction d'une serrure avec 2 questions : qui peut entrer depuis l'extérieur, et comment sort la personne qui est à l'intérieur, ce qui doit se faire sans clé et en un seul geste. Les couloirs prennent un bec-de-cane, les entrées principales une fonction entrée (clé à l'extérieur), les sanitaires une condamnation, les réserves une fonction réserve, les salles de classe une fonction classe et les escaliers d'évacuation une fermeture anti-panique. Cette page donne le tableau complet par pièce, les 3 erreurs de fonction qui deviennent des problèmes de sécurité des personnes, comme un verrou à double cylindre sur un chemin d'évacuation, et combien de modèles de chaque fonction compte notre catalogue.",
     "seoTitle": "Choisir une fonction de serrure : tableau par pièce",
     "seoDescription": "Fonction de serrure tertiaire par type de pièce : les deux questions qui tranchent chaque baie, et les trois erreurs qui mettent des vies en jeu.",
     "body": [
@@ -422,7 +422,7 @@
     ],
     "sourceHash": {
       "title": "dd606844d309",
-      "summary": "80eb5664bd3f",
+      "summary": "3e4ccb83c3b5",
       "seoTitle": "6dda3d33e6ef",
       "seoDescription": "1a7bacec2dca",
       "body": "a4d66906967c",
@@ -1965,7 +1965,7 @@
   },
   "hardware-warranty-what-it-covers-2026": {
     "title": "Garantie de la quincaillerie de porte 2026 : ce que couvre vraiment « dix ans », les cinq exclusions qui font le travail, et comment faire aboutir une réclamation",
-    "summary": "Une garantie se lit en nombre d'années et se décide par ses exclusions. Cette page distingue garantie contractuelle, garantie au sens courant et droits légaux, liste les cinq exclusions qui font échouer la plupart des réclamations, explique pourquoi la pose et le nettoyage sont là où la responsabilité se joue réellement, précise ce qu'il faut à une réclamation pour aboutir, et dit ce qu'une usine peut honnêtement promettre sur une pièce qu'elle ne reverra jamais.",
+    "summary": "Une garantie se décide par ses exclusions, pas par son nombre d'années, et 5 exclusions font échouer la plupart des réclamations : la mauvaise pose (de loin la plus fréquente), un environnement inadapté comme une béquille en inox 201 sur une porte en bord de mer, le mauvais produit de nettoyage sur une finition galvanique, la modification et l'usure normale. Cette page distingue la garantie commerciale de la garantie légale et des droits du consommateur, indique ce que contient une réclamation qui aboutit, et dit ce qu'une usine peut honnêtement promettre sur une pièce qu'elle ne reverra jamais.",
     "seoTitle": "Garantie quincaillerie 2026 : couverture et exclusions",
     "seoDescription": "Ce que couvre une garantie de quincaillerie, les cinq exclusions qui font échouer les réclamations, le rôle de la pose et du nettoyage, et le bon dossier.",
     "body": [
@@ -2042,7 +2042,7 @@
     ],
     "sourceHash": {
       "title": "8aa751178204",
-      "summary": "bad7f4febe06",
+      "summary": "a732d1ff86ce",
       "seoTitle": "cdc33bc30f28",
       "seoDescription": "338ff45b3007",
       "body": "c4fcf6c1d93b",
@@ -3262,7 +3262,7 @@
     ],
     "sourceHash": {
       "title": "846af929d085",
-      "summary": "8a9579fbf4a2",
+      "summary": "5ca1d67af7fc",
       "seoTitle": "0a676aa65028",
       "seoDescription": "250b45fed100",
       "body": "4167d2695ee3",

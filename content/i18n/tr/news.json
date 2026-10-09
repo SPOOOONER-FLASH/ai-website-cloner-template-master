@@ -246,7 +246,7 @@
   },
   "cross-referencing-a-lock-you-already-buy": {
     "title": "Zaten Satın Aldığınız Bir Kilidin Muadilini Bulmak",
-    "summary": "Bize ulaşan aramaların büyük kısmı başka birinin model numarasıdır: başka bir fabrikanın sıva üstü kilidi, başka bir markanın menteşesi, eski bir faturadaki parça kodu. Hepsi aynı soruyu sorar: bunu yeniden almak için ne sipariş etmeliyim? Cevabı altı ölçü belirler ve model numarası bunlardan biri değildir.",
+    "summary": "Başka bir üreticinin kilidini yeniden sipariş etmek için model numarasını değil 6 ölçüyü eşleştirin. Gömme kilitte bunlar mesafe (backset), eksenler arası mesafe, alın sacının boyu ve eni, gövdenin yüksekliği ve derinliği, kare mil ölçüsü (neredeyse her zaman 8 mm) ve kapı kalınlığı aralığıdır. Örneğin LC07 85×45mm modelimizde eksenler arası 85 mm, mesafe 45 mm'dir. Kaplama adları ve sınıf etiketleri fabrikadan fabrikaya taşınmaz; ölçüler taşınır.",
     "seoTitle": "Kapı Kilidi Muadili Nasıl Bulunur | Canton Hyland",
     "seoDescription": "Bir gömme kilidin yerine başkasının geçip geçmeyeceğini altı ölçü belirler: backset, aks mesafesi, ön plaka, gövde, mil ve kapı kalınlığı. Neye bakılmalı?",
     "body": [
@@ -309,7 +309,7 @@
     ],
     "sourceHash": {
       "title": "73af6ab6619f",
-      "summary": "477e46ccc7b1",
+      "summary": "0e5c32a3e3af",
       "seoTitle": "1c5b7fc8a4c7",
       "seoDescription": "2045974f85ac",
       "body": "e8132fc5b50e",
