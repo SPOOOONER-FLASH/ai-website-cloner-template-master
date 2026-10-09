@@ -20853,7 +20853,7 @@
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "표준 모티스 락 바디",
-    "summary": "아르헨티나 AR-4 시장용 컬렉션의 소형 키 작동식 모티스 락 바디입니다.",
+    "summary": "표준 모티스 락 바디(공장 품번 7240)입니다. 백셋 40mm, 중심 거리 72mm, 프론트 플레이트 220 × 25mm이며 키 2개와 함께 공급합니다.",
     "features": [],
     "specs": [
       {
@@ -20861,12 +20861,20 @@
         "value": "7240"
       },
       {
-        "label": "Faceplate",
-        "value": "18 × 183"
+        "label": "Center distance",
+        "value": "72mm"
       },
       {
-        "label": "Case depth",
-        "value": "63"
+        "label": "Backset",
+        "value": "40mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140mm"
       },
       {
         "label": "Latch options",
@@ -20878,18 +20886,18 @@
       }
     ],
     "seoTitle": "AR4-101 표준 모티스 락 바디 | Canton Hyland",
-    "seoDescription": "AR4-101 표준 모티스 락 바디. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
+    "seoDescription": "AR4-101 표준 모티스 락 바디: 센터 거리 72mm, 백셋 40mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
     "sourceHash": {
       "name": "bd525227f00b",
-      "summary": "de60fa62c0fb",
+      "summary": "dd38258359c0",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "6303006a4cb4"
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-110-mortise-lock": {
-    "name": "방범형 모티스 락 바디",
-    "summary": "아르헨티나 AR-4 시장용 컬렉션에 맞춰 구성한 슬림 모티스 락 바디로, 래치와 사각 데드볼트를 갖추고 있습니다.",
+    "name": "보안 모티스 락 바디",
+    "summary": "보안용 모티스 락 바디입니다. 백셋 40mm, 중심 거리 68mm, 프론트 플레이트 212 × 25mm이며 키 2개와 함께 공급합니다.",
     "features": [],
     "specs": [
       {
@@ -20921,18 +20929,18 @@
         "value": "아연 합금 또는 황동, 키 2개"
       }
     ],
-    "seoTitle": "AR4-110 방범형 모티스 락 바디 | Canton Hyland",
-    "seoDescription": "AR4-110 방범형 모티스 락 바디: 센터 거리 68mm, 백셋 40mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
+    "seoTitle": "AR4-110 보안 모티스 락 바디 | Canton Hyland",
+    "seoDescription": "AR4-110 보안 모티스 락 바디: 센터 거리 68mm, 백셋 40mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
     "sourceHash": {
       "name": "9cad0957c775",
-      "summary": "cb44b10fdeb9",
+      "summary": "616204155736",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "b37327043c52"
+      "specs": "629d1c51b20f"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
-    "name": "훅 볼트 모티스 락",
+    "name": "훅 볼트 데드락",
     "features": [],
     "specs": [
       {
@@ -20960,20 +20968,20 @@
         "value": "아연 합금 또는 황동, 키 2개"
       }
     ],
-    "summary": "백셋 40mm, 25 × 140mm 프론트 플레이트를 갖춘 훅 볼트 모티스 락 케이스로, 키 2개와 함께 공급합니다.",
-    "seoTitle": "AR4-1121 훅 볼트 모티스 락 | Canton Hyland",
-    "seoDescription": "AR4-1121 훅 볼트 모티스 락. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
+    "summary": "키로 작동하는 훅 볼트 데드락입니다. 백셋 40mm, 프론트 플레이트 140 × 25mm이며 키 2개와 함께 공급합니다.",
+    "seoTitle": "AR4-1121 훅 볼트 데드락 | Canton Hyland",
+    "seoDescription": "AR4-1121 훅 볼트 데드락. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
     "sourceHash": {
-      "name": "3cb4d69abbad",
-      "summary": "847cdbd677f0",
+      "name": "a766cbc5b5ab",
+      "summary": "42d552f83f82",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "327a7b601a54"
+      "specs": "93f9975d519e"
     }
   },
   "hyde-ar4-140-mortise-lock": {
-    "name": "슬림 모티스 락 바디",
-    "summary": "아르헨티나 AR-4 시장용 컬렉션의 좁은 프로파일용 소형 모티스 락 바디입니다.",
+    "name": "알루미늄 도어용 모티스 락 바디",
+    "summary": "알루미늄 프로파일 도어용 모티스 락 바디입니다. 백셋 25mm, 중심 거리 72mm, 프론트 플레이트 183.5 × 20mm이며 키 2개와 함께 공급합니다.",
     "features": [],
     "specs": [
       {
@@ -20997,6 +21005,10 @@
         "value": "125.7 × 41.7mm"
       },
       {
+        "label": "Application",
+        "value": "알루미늄 좁은 프레임 문용 락 바디"
+      },
+      {
         "label": "Latch options",
         "value": "동도금 아연 합금 또는 황동"
       },
@@ -21005,14 +21017,14 @@
         "value": "아연 합금 또는 황동, 키 2개"
       }
     ],
-    "seoTitle": "AR4-140 슬림 모티스 락 바디 | Canton Hyland",
-    "seoDescription": "AR4-140 슬림 모티스 락 바디: 센터 거리 72mm, 백셋 25mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
+    "seoTitle": "AR4-140 알루미늄 도어용 모티스 락 바디 | Canton Hyland",
+    "seoDescription": "AR4-140 알루미늄 도어용 모티스 락 바디: 센터 거리 72mm, 백셋 25mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
     "sourceHash": {
-      "name": "d34887493f3d",
-      "summary": "8b27ed02f6dd",
+      "name": "9ce4ea9ec105",
+      "summary": "1608d47db669",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "456103113545"
+      "specs": "1d1a063aeaec"
     }
   },
   "ih01-brass-and-steel-hinges": {

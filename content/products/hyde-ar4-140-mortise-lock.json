@@ -2,14 +2,14 @@
   "model": "AR4-140",
   "alibabaSearchTerm": "140",
   "slug": "hyde-ar4-140-mortise-lock",
-  "name": "Slim Mortise Lock Body",
-  "nameEs": "Cuerpo de cerradura de embutir de perfil estrecho",
+  "name": "Aluminum-Door Mortise Lock Body",
+  "nameEs": "Cerradura para aberturas de aluminio",
   "series": "HYDE Argentina AR-4",
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "A compact mortise lock body for narrow profiles in the Argentina AR-4 market collection.",
-  "summaryEs": "Una caja de cerradura de embutir.",
+  "summary": "Mortise lock body for aluminum door profiles: 25mm backset, 72mm center distance and a 183.5 × 20mm faceplate, supplied with two keys.",
+  "summaryEs": "Cerradura de embutir para aberturas de aluminio: entrada de 25 mm, distancia entre ejes de 72 mm y frente de 183,5 × 20 mm; se entrega con dos llaves.",
   "specs": [
     {
       "label": "Factory reference",
@@ -30,6 +30,10 @@
     {
       "label": "Case size",
       "value": "125.7 × 41.7mm"
+    },
+    {
+      "label": "Application",
+      "value": "Aluminum narrow-stile doors"
     },
     {
       "label": "Latch options",
@@ -60,6 +64,10 @@
     {
       "label": "Medidas del cuerpo",
       "value": "125,7 × 41,7 mm"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Puertas de aluminio de perfil estrecho"
     },
     {
       "label": "Opciones de pestillo",
@@ -115,13 +123,13 @@
     "AR4-101",
     "AR4-1121"
   ],
-  "seoTitle": "AR4-140 Slim Mortise Lock Body, 72mm center, 25mm backset | Canton Hyland",
-  "seoDescription": "AR4-140 slim mortise lock body for timber & metal doors. 72mm center distance, 25mm backset. Factory direct, samples and quotation on request.",
-  "seoTitleEs": "AR4-140 Cuerpo de cerradura de embutir de perfil estrecho | Canton Hyland",
-  "seoDescriptionEs": "AR4-140 cuerpo de cerradura de embutir de perfil estrecho para puertas de madera y metal. Distancia entre ejes de 72 mm, entrada de 25 mm.",
+  "seoTitle": "AR4-140 Aluminum-Door Mortise Lock Body | Canton Hyland",
+  "seoDescription": "AR4-140 aluminum-door mortise lock body for aluminum narrow-stile doors. 72mm center distance, 25mm backset.",
+  "seoTitleEs": "AR4-140 Cerradura para aberturas de aluminio | Canton Hyland",
+  "seoDescriptionEs": "AR4-140 cerradura para aberturas de aluminio en puertas de aluminio de perfil angosto. Distancia entre ejes de 72 mm, entrada de 25 mm.",
   "description": "",
-  "namePt": "Corpo de fechadura de embutir estreito",
-  "summaryPt": "Corpo de fechadura de embutir estreito.",
+  "namePt": "Fechadura para esquadrias de alumínio",
+  "summaryPt": "Fechadura de embutir para esquadrias de alumínio: distância ao eixo de 25 mm, distância entre eixos de 72 mm e testa de 183,5 × 20 mm; fornecida com duas chaves.",
   "specsPt": [
     {
       "label": "Referência de fábrica",
@@ -144,6 +152,10 @@
       "value": "125,7 × 41,7 mm"
     },
     {
+      "label": "Aplicação",
+      "value": "Portas estreitas de alumínio"
+    },
+    {
       "label": "Opções de trinco",
       "value": "Zamak cobreado ou latão"
     },
@@ -152,8 +164,8 @@
       "value": "Zamak ou latão; duas chaves"
     }
   ],
-  "seoTitlePt": "AR4-140 Corpo de fechadura de embutir estreito | Canton Hyland",
-  "seoDescriptionPt": "AR4-140 corpo de fechadura de embutir estreito para portas de madeira e metal. Distância entre centros de 72 mm, distância ao eixo de 25 mm.",
+  "seoTitlePt": "AR4-140 Fechadura para esquadrias de alumínio | Canton Hyland",
+  "seoDescriptionPt": "AR4-140 fechadura para esquadrias de alumínio em portas de alumínio de perfil estreito. Distância entre centros de 72 mm, distância ao eixo de 25 mm.",
   "modelAliases": [
     "140"
   ],

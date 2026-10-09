@@ -20,3 +20,13 @@
   - 与本次无关但构建时发现：在 origin/main 上 `npm run build` 会改写约 190 个 `public/images/{drawings,door-prep}/*.svg`（centre→center、millimetres→millimeters），并把 `src/data/generated/products-zh.json` 的中文规格值改回英文（RAYEN 车道），说明已提交的这些生成文件与生成器不一致。本提交没有带上这些改动；RAYEN 侧和图纸生成器的负责人需要看一下。
   - 新 301 需随下一次发布 + nginx reload 生效（`deploy/install-nginx-redirects.sh`）。
 - 下一步：发布者合并后 `npm run release:hyde`；Claude 继续做 AR-4 四类（安全锁 / 铝门窄锁 / 普通锁 / 插销门栓）方案预览。
+
+## 追加（同日）：AR-4 按 Elabora / Piccolo 四类改名，AR4-101 按 7240 图纸
+
+- 客户确认：Elabora（品牌 Piccolo）的这几款是我们代工、模具是我们的。四款按他们的四类改名：AR4-110 安全锁（Cerradura de seguridad）、AR4-140 铝门锁（Aluminum-Door Mortise Lock Body / Cerradura para aberturas de aluminio）、AR4-101 普通锁（Cerradura común）、AR4-1121 插销门栓（Hook-Bolt Deadlock / Cerrojo de gancho）。三语简介按图纸尺寸重写，七语种名称、简介和 sourceHash 同步。
+- AR4-101 规格按工厂目录 7240 页（客户 2026-10-09 发的截图）：面板 220 × 25、锁体高 140、进深 40、中心距 72。旧值 18×183、深 63（抄自 Piccolo）已删。锁体宽度图上没标，没写。
+- AR4-140 加 Application 行「Aluminum narrow-stile doors」，否则标题生成器会套品类场景「for Metal Doors」。
+- `content/i18n/zh-terms.json` 加两个新品名（中性车道，RAYEN 渲染会用到）。
+- 锁体对照指南 34/54、标准 22、缺口 20；七语种 overlay 已跟。互换性文章 backset 113、中心距 37 (15%)；backset 指南 182 / 36；翻新调查 182 / 44。
+- 线索：JM-LOCK 询的 Candex 117（面板 220、锁体 140×65、中心距 72）很可能就是 7240 / AR4-101，待工厂确认锁体宽 65。
+- Elabora 目录图仍不得使用（版权与客户关系），AR4-101 主图来源存疑，需工厂原图或补拍。

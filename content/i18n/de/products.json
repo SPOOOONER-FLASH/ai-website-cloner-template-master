@@ -20853,7 +20853,7 @@
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "Standard-Einsteckschloss",
-    "summary": "Kompakter Einsteckschlosskasten mit Schlüsselbetätigung aus der Argentinien-Kollektion AR-4.",
+    "summary": "Standard-Einsteckschloss, Werksreferenz 7240, mit 40 mm Dornmaß, 72 mm Entfernung und Stulp 220 × 25 mm, mit zwei Schlüsseln geliefert.",
     "features": [],
     "specs": [
       {
@@ -20861,12 +20861,20 @@
         "value": "7240"
       },
       {
-        "label": "Faceplate",
-        "value": "18 × 183"
+        "label": "Center distance",
+        "value": "72 mm"
       },
       {
-        "label": "Case depth",
-        "value": "63"
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
       },
       {
         "label": "Latch options",
@@ -20878,18 +20886,18 @@
       }
     ],
     "seoTitle": "AR4-101 Standard-Einsteckschloss | Canton Hyland",
-    "seoDescription": "AR4-101 Standard-Einsteckschloss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
+    "seoDescription": "AR4-101 Standard-Einsteckschloss: Entfernung 72mm, Dornmaß 40mm. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
       "name": "bd525227f00b",
-      "summary": "de60fa62c0fb",
+      "summary": "dd38258359c0",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "6303006a4cb4"
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-110-mortise-lock": {
     "name": "Sicherheits-Einsteckschloss",
-    "summary": "Schmaler Einsteckschlosskasten für die Argentinien-Kollektion AR-4, mit Falle und Vierkantriegel.",
+    "summary": "Sicherheits-Einsteckschloss mit 40 mm Dornmaß, 68 mm Entfernung und Stulp 212 × 25 mm, mit zwei Schlüsseln geliefert.",
     "features": [],
     "specs": [
       {
@@ -20925,14 +20933,14 @@
     "seoDescription": "AR4-110 Sicherheits-Einsteckschloss: Entfernung 68mm, Dornmaß 40mm. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
       "name": "9cad0957c775",
-      "summary": "cb44b10fdeb9",
+      "summary": "616204155736",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "b37327043c52"
+      "specs": "629d1c51b20f"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
-    "name": "Hakenriegel-Einsteckschloss",
+    "name": "Hakenriegelschloss",
     "features": [],
     "specs": [
       {
@@ -20960,20 +20968,20 @@
         "value": "Zinklegierung oder Messing; zwei Schlüssel"
       }
     ],
-    "summary": "Hakenriegel-Einsteckschlosskasten mit 40 mm Dornmaß und Stulp 25 × 140 mm, mit zwei Schlüsseln geliefert.",
-    "seoTitle": "AR4-1121 Hakenriegel-Einsteckschloss | Canton Hyland",
-    "seoDescription": "AR4-1121 Hakenriegel-Einsteckschloss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
+    "summary": "Schlüsselbetätigtes Hakenriegelschloss zum Einstecken mit 40 mm Dornmaß und Stulp 140 × 25 mm, mit zwei Schlüsseln geliefert.",
+    "seoTitle": "AR4-1121 Hakenriegelschloss, Einsteckschlösser | Canton Hyland",
+    "seoDescription": "AR4-1121 Hakenriegelschloss. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
-      "name": "3cb4d69abbad",
-      "summary": "847cdbd677f0",
+      "name": "a766cbc5b5ab",
+      "summary": "42d552f83f82",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "327a7b601a54"
+      "specs": "93f9975d519e"
     }
   },
   "hyde-ar4-140-mortise-lock": {
-    "name": "Schmales Einsteckschloss",
-    "summary": "Kompakter Einsteckschlosskasten für schmale Profile aus der Argentinien-Kollektion AR-4.",
+    "name": "Einsteckschloss für Aluminiumtüren",
+    "summary": "Einsteckschloss für Aluminiumprofile mit 25 mm Dornmaß, 72 mm Entfernung und Stulp 183,5 × 20 mm, mit zwei Schlüsseln geliefert.",
     "features": [],
     "specs": [
       {
@@ -20997,6 +21005,10 @@
         "value": "125,7 × 41,7 mm"
       },
       {
+        "label": "Application",
+        "value": "Schlosskästen für schmale Aluminium-Rahmentüren"
+      },
+      {
         "label": "Latch options",
         "value": "Verkupferte Zinklegierung oder Messing"
       },
@@ -21005,14 +21017,14 @@
         "value": "Zinklegierung oder Messing; zwei Schlüssel"
       }
     ],
-    "seoTitle": "AR4-140 Schmales Einsteckschloss | Canton Hyland",
-    "seoDescription": "AR4-140 Schmales Einsteckschloss: Entfernung 72mm, Dornmaß 25mm. Direkt ab Werk, Muster und Angebot auf Anfrage.",
+    "seoTitle": "AR4-140 Einsteckschloss für Aluminiumtüren | Canton Hyland",
+    "seoDescription": "AR4-140 Einsteckschloss für Aluminiumtüren: Entfernung 72mm, Dornmaß 25mm. Direkt ab Werk, Muster und Angebot auf Anfrage.",
     "sourceHash": {
-      "name": "d34887493f3d",
-      "summary": "8b27ed02f6dd",
+      "name": "9ce4ea9ec105",
+      "summary": "1608d47db669",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "456103113545"
+      "specs": "1d1a063aeaec"
     }
   },
   "ih01-brass-and-steel-hinges": {

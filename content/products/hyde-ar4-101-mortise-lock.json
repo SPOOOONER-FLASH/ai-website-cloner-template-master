@@ -3,27 +3,33 @@
   "alibabaSearchTerm": "110",
   "slug": "hyde-ar4-101-mortise-lock",
   "name": "Standard Mortise Lock Body",
-  "nameEs": "Cuerpo de cerradura de embutir estándar",
+  "nameEs": "Cerradura común",
   "series": "HYDE Argentina AR-4",
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "A compact key-operated mortise lock body in the Argentina AR-4 market collection.",
-  "summaryEs": "Una caja de cerradura de embutir.",
+  "summary": "Standard mortise lock body, factory reference 7240: 40mm backset, 72mm center distance and a 220 × 25mm faceplate, supplied with two keys.",
+  "summaryEs": "Cerradura común de embutir, referencia de fábrica 7240: entrada de 40 mm, distancia entre ejes de 72 mm y frente de 220 × 25 mm; se entrega con dos llaves.",
   "specs": [
     {
       "label": "Factory reference",
       "value": "7240"
     },
     {
-      "label": "Faceplate",
-      "value": "18 × 183",
-      "unit": "mm"
+      "label": "Center distance",
+      "value": "72mm"
     },
     {
-      "label": "Case depth",
-      "value": "63",
-      "unit": "mm"
+      "label": "Backset",
+      "value": "40mm"
+    },
+    {
+      "label": "Faceplate",
+      "value": "220 × 25mm"
+    },
+    {
+      "label": "Case height",
+      "value": "140mm"
     },
     {
       "label": "Latch options",
@@ -40,12 +46,20 @@
       "value": "7240"
     },
     {
-      "label": "Frente",
-      "value": "18 × 183"
+      "label": "Distancia entre ejes",
+      "value": "72 mm"
     },
     {
-      "label": "Fondo del cuerpo",
-      "value": "63"
+      "label": "Entrada",
+      "value": "40 mm"
+    },
+    {
+      "label": "Frente",
+      "value": "220 × 25 mm"
+    },
+    {
+      "label": "Alto del cuerpo",
+      "value": "140 mm"
     },
     {
       "label": "Opciones de pestillo",
@@ -76,24 +90,32 @@
     "AR4-1121"
   ],
   "seoTitle": "AR4-101 Standard Mortise Lock Body for Timber & Metal Doors | Canton Hyland",
-  "seoDescription": "AR4-101 standard mortise lock body for timber & metal doors. Factory direct, samples and quotation on request.",
-  "seoTitleEs": "AR4-101 Cuerpo de cerradura de embutir estándar | Canton Hyland",
-  "seoDescriptionEs": "AR4-101 cuerpo de cerradura de embutir estándar para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
+  "seoDescription": "AR4-101 standard mortise lock body for timber & metal doors. 72mm center distance, 40mm backset. Factory direct, samples and quotation on request.",
+  "seoTitleEs": "AR4-101 Cerradura común, ejes 72 mm, entrada 40 mm | Canton Hyland",
+  "seoDescriptionEs": "AR4-101 cerradura común para puertas de madera y metal. Distancia entre ejes de 72 mm, entrada de 40 mm.",
   "description": "",
-  "namePt": "Corpo de fechadura de embutir padrão",
-  "summaryPt": "Corpo de fechadura de embutir padrão.",
+  "namePt": "Fechadura comum",
+  "summaryPt": "Fechadura comum de embutir, referência de fábrica 7240: distância ao eixo de 40 mm, distância entre eixos de 72 mm e testa de 220 × 25 mm; fornecida com duas chaves.",
   "specsPt": [
     {
       "label": "Referência de fábrica",
       "value": "7240"
     },
     {
-      "label": "Testa",
-      "value": "18 × 183"
+      "label": "Distância entre eixos",
+      "value": "72 mm"
     },
     {
-      "label": "Profundidade da caixa",
-      "value": "63"
+      "label": "Distância ao eixo (broca)",
+      "value": "40 mm"
+    },
+    {
+      "label": "Testa",
+      "value": "220 × 25 mm"
+    },
+    {
+      "label": "Altura da caixa",
+      "value": "140 mm"
     },
     {
       "label": "Opções de trinco",
@@ -104,6 +126,6 @@
       "value": "Zamak ou latão; duas chaves"
     }
   ],
-  "seoTitlePt": "AR4-101 Corpo de fechadura de embutir padrão | Canton Hyland",
-  "seoDescriptionPt": "AR4-101 corpo de fechadura de embutir padrão para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta."
+  "seoTitlePt": "AR4-101 Fechadura comum, centros 72 mm, eixo 40 mm | Canton Hyland",
+  "seoDescriptionPt": "AR4-101 fechadura comum para portas de madeira e metal. Distância entre centros de 72 mm, distância ao eixo de 40 mm."
 }
