@@ -193,7 +193,7 @@ def cover(c: Canvas) -> None:
     c.text_right(R, H - 62, "cantonlock.com", 8, "text-medium", style.INK2)
 
 
-def factory(c: Canvas) -> None:
+def factory(c: Canvas, number: int = 4) -> None:
     c.text(L, 96, "THE FACTORY", 7, "text-medium", style.BRASS, track=160)
     c.text(L, 128, "A factory, not a trading office.", 24, "display", style.INK)
     # One photograph as large as its pixels allow: 1308 px prints 166 mm at 200 dpi,
@@ -217,7 +217,7 @@ def factory(c: Canvas) -> None:
         c.text(L, y_txt + 22, title, 10, "text-semibold", style.INK)
         used = c.paragraph(L + 150, y_txt + 12, R, y_txt + 120, body, 9.2, "text", style.INK2)
         y_txt += max(used, 34) + 30
-    folio(c, 4, "Canton Hyland")
+    folio(c, number, "Canton Hyland")
 
 
 def opener(c: Canvas, number: int) -> None:
