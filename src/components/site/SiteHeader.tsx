@@ -18,6 +18,7 @@ import {
 import navigationStyles from "./HeaderNavigation.module.css";
 import { BauInfoBand } from "./BauEntry";
 import { dict, tx } from "@/lib/i18n";
+import { CATALOG_PDF, NAV_VARIANT, buyerFirst, buyerLabels } from "./nav-variant";
 
 /**
  * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
@@ -179,7 +180,16 @@ export function SiteHeader({
   const companyHrefs = dict(companyShelfLinks, locale).map((link) => localisedHref(link.href, locale));
   const buyHrefs = dict(buyShelfLinks, locale).map((link) => localisedHref(link.href, locale));
   const resourcesLabel = tx(locale, "Resources", { es: "Recursos", pt: "Recursos" });
-  const buyLabel = tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" });
+  const buyer = buyerLabels(locale);
+  /* Navigation preview, 2026-10-05: see nav-variant.ts. "current" keeps the live label. */
+  const buyLabel =
+    NAV_VARIANT === "light"
+      ? buyer.catalogQuote
+      : buyerFirst
+        ? buyer.catalogPrices
+        : tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" });
+  const wholesaleHref = localisedHref("/wholesale", locale);
+  if (buyerFirst) buyHrefs.push(wholesaleHref);
 
   const header = (
     // Only the navigation sticks; the BAU information band below scrolls in page flow.
@@ -209,7 +219,7 @@ export function SiteHeader({
                 was added — rather than silently re-wrapping one item back into the same
                 misalignment.
               */}
-              <nav className="flex gap-16 whitespace-nowrap">
+              <nav className={cn("flex gap-16 whitespace-nowrap", buyerFirst && "items-center")}>
                 {headerNav.map((link) => {
                   const href = localisedHref(link.href, locale);
 
@@ -266,8 +276,9 @@ export function SiteHeader({
                       <ShelfTrigger
                         key={link.href}
                         shelf="buy"
+                        href={buyerFirst ? wholesaleHref : undefined}
                         currentHrefs={buyHrefs}
-                        className="nav-marker bg-transparent text-c1 text-ink"
+                        className={buyerFirst ? "nav-quote-cta" : "nav-marker bg-transparent text-c1 text-ink"}
                       >
                         {buyLabel}
                       </ShelfTrigger>
@@ -404,10 +415,18 @@ export function SiteHeader({
               );
             })}
           </nav>
-          <HeaderRailCta className="nav-rail-cta flex-none">
-            {buyLabel}
-            <span aria-hidden="true">›</span>
-          </HeaderRailCta>
+          {buyerFirst ? (
+            /* A page, not the drawer: the drawer opens on an architect's question. */
+            <HeaderLink href={wholesaleHref} className="nav-rail-cta flex-none">
+              {buyLabel}
+              <span aria-hidden="true">›</span>
+            </HeaderLink>
+          ) : (
+            <HeaderRailCta className="nav-rail-cta flex-none">
+              {buyLabel}
+              <span aria-hidden="true">›</span>
+            </HeaderRailCta>
+          )}
           </div>
         </div>
       </div>
@@ -565,6 +584,7 @@ export function SiteHeader({
       </ShelfPanel>
 
       <ShelfPanel shelf="buy" label={buyLabel}>
+        {NAV_VARIANT === "current" ? (
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-24 xl:grid-cols-4">
@@ -593,14 +613,92 @@ export function SiteHeader({
             </div>
           </div>
         </div>
+        ) : (
+          <BuyerShelf locale={locale} variant={NAV_VARIANT} />
+        )}
       </ShelfPanel>
     </HeaderProvider>
   );
 
   return (
     <>
+      {NAV_VARIANT === "strip" ? <BuyerStrip locale={locale} /> : null}
       {header}
       <BauInfoBand locale={locale} />
     </>
+  );
+}
+
+/*
+  The buying shelf for the preview variants (nav-variant.ts). The catalog comes first and
+  downloads directly: it is the first thing the buyer asked for and there is nothing to
+  gain by putting a page between them and the PDF. Prices and MOQ say what they are in
+  the label, so nobody has to guess that "FAQ" holds the minimum order.
+*/
+function BuyerShelf({ locale, variant }: { locale: Locale; variant: string }) {
+  const buyer = buyerLabels(locale);
+  const wholesaleHref = localisedHref("/wholesale", locale);
+  const rows = [
+    { label: buyer.prices, detail: buyer.pricesDetail, href: `${wholesaleHref}/#request` },
+    { label: buyer.moq, detail: buyer.moqDetail, href: `${localisedHref("/faq", locale)}/#faq-ordering-and-samples` },
+    variant === "light"
+      ? { label: tx(locale, "Contact", { es: "Contacto", pt: "Contato" }), detail: tx(locale, "Quotes, pricing and export specialists", { es: "Cotizaciones, precios y especialistas de exportación", pt: "Cotações, preços e especialistas em exportação" }), href: localisedHref("/contact", locale) }
+      : { label: buyer.howToOrder, detail: buyer.howToOrderDetail, href: `${wholesaleHref}/` },
+  ];
+  return (
+    <div className="header-shelf-clip">
+      <div className="layout py-32">
+        <div className="col-content grid gap-24 xl:grid-cols-4">
+          <a href={CATALOG_PDF} download className="alibaba-hard-cta catalog-hard-cta">
+            <span className="flex w-full items-center justify-between gap-16">
+              <span>{buyer.catalogPdf}</span>
+              <span aria-hidden="true">↓</span>
+            </span>
+            <span className="text-c2 font-normal opacity-80">{buyer.catalogDetail}</span>
+          </a>
+          {rows.map((row) => (
+            <HeaderLink
+              key={row.href}
+              href={row.href}
+              className="header-shelf-link flex min-h-96 flex-col justify-between border-t border-line py-16 text-ink no-underline"
+            >
+              <span className="flex items-center justify-between gap-16 text-h3">
+                <span className="short-marker">{row.label}</span>
+                <span aria-hidden="true">›</span>
+              </span>
+              <span className="mt-16 text-c2 text-ink-secondary">{row.detail}</span>
+            </HeaderLink>
+          ))}
+          <p className="col-span-full text-c2 text-ink-secondary">
+            <a href={siteSettings.alibaba.storefront} target="_blank" rel="noopener noreferrer" className="short-marker inline-block text-ink-secondary">
+              {buyer.alibaba} ↗
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/*
+  Variant "strip": one quiet line above the header with the three answers a first email
+  asks for. It scrolls away with the page; only the nav row stays pinned, as before.
+*/
+function BuyerStrip({ locale }: { locale: Locale }) {
+  const buyer = buyerLabels(locale);
+  return (
+    <div className="layout border-b border-line bg-surface-alt">
+      <div className="col-content flex min-w-0 items-center gap-24 overflow-x-auto whitespace-nowrap py-8 text-c2 text-ink-secondary">
+        <a href={CATALOG_PDF} download className="short-marker short-marker-compact font-semibold text-ink">
+          {buyer.catalogPdf} ↓
+        </a>
+        <span>{buyer.stripMoq}</span>
+        <span className="max-sm:hidden">{buyer.stripLead}</span>
+        <span className="max-md:hidden">{buyer.stripTerms}</span>
+        <Link href={localisedHref("/wholesale", locale)} prefetch={false} className="short-marker short-marker-compact ms-auto text-ink">
+          {buyer.catalogPrices} ›
+        </Link>
+      </div>
+    </div>
   );
 }

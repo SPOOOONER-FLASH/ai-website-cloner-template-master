@@ -26,7 +26,9 @@ test("a nav rail names destinations on every viewport below xl", () => {
   assert.match(header, /navigationStyles\.compactNavigation/);
   /* 09-28: the destinations scroll; "Buy it now" is pinned beside the strip, not inside it. */
   assert.match(header, /<div className="col-content flex min-w-0 items-center gap-16">\s*<nav[\s\S]*?className="nav-rail min-w-0 flex-1"/);
-  assert.match(header, /<\/nav>\s*<HeaderRailCta className="nav-rail-cta flex-none">/);
+  /* 2026-10-05 navigation preview (nav-variant.ts): the buyer-first variants pin a link to
+     /wholesale/ in the same place; the live variant still pins the drawer button. */
+  assert.match(header, /<\/nav>\s*(?:\{buyerFirst \? \([\s\S]*?\) : \(\s*)?<HeaderRailCta className="nav-rail-cta flex-none">/);
 
   /*
     Not a second copy of the labels: both rows read the same CMS-backed array.

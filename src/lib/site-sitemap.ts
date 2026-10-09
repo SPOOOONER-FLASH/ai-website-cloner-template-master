@@ -162,6 +162,7 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     // FAQPage structured data — leaving them out of the sitemap wasted that.
     ...entry("/faq", PRIORITY.support),
     ...entry("/request/price-list", PRIORITY.support),
+    ...entry("/wholesale", PRIORITY.support),
     ...entry("/contact", PRIORITY.support),
     ...entry("/newsletter", PRIORITY.support, "monthly"),
   ];

@@ -689,6 +689,26 @@
     outline-offset: 0.3rem;
   }
 
+  /* Navigation preview 2026-10-05 (nav-variant.ts): "Catalog & prices" at the end of the
+     desktop row, outlined so the buying entry reads as an action without a second black
+     slab beside the wordmark. */
+  .nav-quote-cta {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--color-ink);
+    padding: 0.4rem 1.2rem;
+    color: var(--color-ink);
+    font-size: var(--text-c1);
+    line-height: 2rem;
+    text-decoration: none;
+  }
+
+  .nav-quote-cta:hover,
+  .nav-quote-cta:focus-visible {
+    background-color: var(--color-ink);
+    color: var(--color-surface);
+  }
+
   /* -- Drawer ------------------------------------------------------------ */
   /* Section label. Chanel's mobile menu is legible at a glance because the group
      headings are small and quiet and the ITEMS carry the size; ours had it backwards —
@@ -867,6 +887,14 @@
   .alibaba-hard-cta:active {
     box-shadow: 0.2rem 0.2rem 0 var(--color-shadow-hard);
     transform: translate(0.5rem, 0.5rem);
+  }
+
+  /* The catalog download takes the slab in the preview shelves; it carries a detail line. */
+  .catalog-hard-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.8rem;
   }
 
   /* -- D: hard offset plane ---------------------------------------------- */
