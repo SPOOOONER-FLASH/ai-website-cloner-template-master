@@ -1,0 +1,19 @@
+{
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+  "sourceFullPhoto": "source-full-photo.png",
+  "sourceFullPhotoSha256": "c3d92f905c3df78fe20554a05493c85e002574d9c46133a31b34f31d47b99cb3",
+  "sourceOffset": {"left":41,"top":188},
+  "background": "empty-gray-field.png",
+  "backgroundBlur": 0.85,
+  "backgroundGain": 0.86,
+  "restoreSourceRegions": [
+    {
+      "seed": {"x":650,"y":495},
+      "reason": "Keeper aperture inner face omitted by old native alpha; restore this enclosed region directly from full photographic layer RGB, never paint or infer metal."
+    }
+  ],
+  "calibration": {"paperLevel":254,"strength":1},
+  "originalLibrary": "G:/新网站资料/7-防盗锁/564 MB/1-564 MB.psd",
+  "originalPsdSha256": "65cd6d0f69afaf8b8f37e15547e64b72fc21239ba8a8eaa8b0db68deffcf5401"
+}

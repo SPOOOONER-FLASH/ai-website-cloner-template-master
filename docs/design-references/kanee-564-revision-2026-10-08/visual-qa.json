@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-08",
+  "sample": "preview/564-mb-source-shadow.png",
+  "clientAccepted": false,
+  "reviewType": "Manual source and output comparison plus pixel integrity tests",
+  "reviewed": [
+    "Complete lock body, knob, brass button, latch and separate keeper preserved at native scale and source view",
+    "Supplied full-photo body, latch and keeper shadows retained at original coordinates without shifted silhouettes or ellipses",
+    "Keeper aperture alpha omission independently detected; inner-face photographic RGB restored and re-inspected in 3x diagnostic crop",
+    "No penumbra clipping at the old 738x523 extraction bounds; larger 835x835 original photographic layer used",
+    "Background-only texture and brightness adjustment; no adjacent white cards, added props, brand labels or watermarks"
+  ],
+  "limitations": [
+    "G drive absent this session; source provenance relies on retained G-source extractions and earlier PSD hash receipt",
+    "Original native photograph resolution is unchanged; output is not a 3D render or new-angle reconstruction",
+    "Source PSD shadows may already be retouched; not represented as untouched camera capture",
+    "Pixel integrity does not prove aesthetic acceptance or independently measured factory geometry"
+  ],
+  "integration": "Preview only; no site or public image reference changed"
+}
