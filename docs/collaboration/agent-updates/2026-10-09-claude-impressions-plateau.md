@@ -10,3 +10,4 @@
 - **追加（甲方选 A）**：`src/lib/site-sitemap.ts` 去掉 /video/ 观看页与目录条目（页面保留）。
 - **追加（饰面主次）**：指南 finish-code-reference-2026 英文 seoTitle/Description 让位给新闻 finish-codes-us26d-626-630（数据：1,050 vs 179 曝光）；正文与互链归文案会话，已发消息。
 - **追加（反链深链 #141）**：`scripts/build-backlink-deeplinks.mjs`（自检两条手核帖子）把 Bing 引用页面 139 条按型号对到产品页，69 条可改 → `docs/research/analytics/2026-10-09/BACKLINK-DEEPLINKS.md`；10-09 原始导出存 `docs/research/analytics/2026-10-09/raw/`。甲方手动改帖。
+- **追加（r31 被拦）**：seo-audit 规定站点地图外的公开页必须 noindex 并声明 `canton-withheld`，否则 sitemap-missing-page 拦发布。/video/ 与观看页加 `WATCH_PAGE_ROBOTS`（src/lib/video-pages.ts）。npm test 457/457。

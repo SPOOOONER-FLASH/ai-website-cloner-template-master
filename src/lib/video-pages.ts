@@ -35,6 +35,17 @@ export function isIndexableVideo(video: VideoRef): boolean {
   );
 }
 
+/**
+ * Watch pages are out of the sitemap and noindex since 2026-10-09 (client chose option A):
+ * Google had discovered 177 and crawled none, and the crawl is wanted on product pages.
+ * The pages stay live and linked from each product. The marker tells seo-audit the
+ * noindex is deliberate, so an accidental one elsewhere still fails the release gate.
+ */
+export const WATCH_PAGE_ROBOTS = {
+  robots: { index: false, follow: true },
+  other: { "canton-withheld": "off-sitemap-video" },
+};
+
 export function watchPagePath(product: Product): string {
   return `/video/${product.slug}/`;
 }
