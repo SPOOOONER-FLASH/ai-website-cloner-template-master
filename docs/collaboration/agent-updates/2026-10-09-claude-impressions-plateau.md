@@ -13,3 +13,4 @@
 - **追加（r31 被拦）**：seo-audit 规定站点地图外的公开页必须 noindex 并声明 `canton-withheld`，否则 sitemap-missing-page 拦发布。/video/ 与观看页加 `WATCH_PAGE_ROBOTS`（src/lib/video-pages.ts）。npm test 457/457。
 - **追加（桌面整理 #142）**：`scripts/lib/desktop-hyde.mjs` + `scripts/organize-desktop-hyde.mjs`；生成器默认按文件名进子文件夹；AGENTS.md runbook 第 6 条补一段。手册三处 `hyde\2026` 被旧 sed 写成 U+0082 控制字符，已修。
 - **追加（#144 漏英文）**：collection-spec-range 标题对所有非英语言走 specLabels（加 de 测试）；HardwareTerms 词条名回退 specLabels → UI；七语 glossary 补 OEM & ODM，重生成 i18n-client。顺手：desktop-hyde.mjs 的 catalogue 改 catalog(?:ue)? 过美式拼写测试。npm test 458。
+- **追加（#145 LCP）**：线上实测（Slow 4G + CPU 4×，1440 宽）/products/ 2.25 s、/product-finder/ 1.0 s（CLS 0.05）、/company/ 0.49 s；周报 3.6 s 是 #131 之前的 Clarity 数据。等下一期 Clarity 确认。
