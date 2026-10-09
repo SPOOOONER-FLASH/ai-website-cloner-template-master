@@ -237,6 +237,12 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
                 </tbody>
               </table>
             </div>
+            {/* The working, with the reader's own numbers, so the result can be checked by hand. */}
+            <p className="mt-16 text-c2 tabular-nums text-ink-secondary">
+              {t.outside}: {fmt(r.centerMm)} + {fmt(num(outTrim))} = {fmt(r.outside.calculatedMm)} mm → {fmt(r.outside.halfMm)} mm
+              <br />
+              {t.inside}: {fmt(num(door))} − {fmt(r.centerMm)} + {fmt(num(inTrim))} = {fmt(r.inside.calculatedMm)} mm → {fmt(r.inside.halfMm)} mm
+            </p>
             <p className="mt-32 text-c2 uppercase tracking-[0.08em] text-ink-secondary">{t.order}</p>
             <p className="mt-8 text-h3 text-ink">
               {r.publishedMm !== null

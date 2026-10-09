@@ -55,6 +55,8 @@ export interface CylinderResult {
   publishedMm: number | null;
   /** True when the two halves differ, so the split has a direction that must be stated. */
   asymmetric: boolean;
+  /** Outside face to the fixing-screw center, as used: the working is printed from this. */
+  centerMm: number;
 }
 
 /** Round a required half up the 27.5 / 30 / 35 … ladder. */
@@ -77,7 +79,7 @@ export function sizeCylinder(input: CylinderInput): CylinderResult {
   const inside = half(doorMm - center + insideTrimMm);
   const totalMm = outside.halfMm + inside.halfMm;
   const publishedMm = PUBLISHED_LENGTHS_MM.find((l) => l >= totalMm) ?? null;
-  return { outside, inside, totalMm, publishedMm, asymmetric: outside.halfMm !== inside.halfMm };
+  return { outside, inside, totalMm, publishedMm, asymmetric: outside.halfMm !== inside.halfMm, centerMm: round1(center) };
 }
 
 /** Whether an input is physically usable: a leaf, non-negative trims, a center inside the leaf. */

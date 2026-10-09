@@ -35,6 +35,14 @@ test("an off-center case gives an asymmetric split, outside first", () => {
   assert.equal(r.publishedMm, 70);
 });
 
+test("the printed working adds up to the calculated halves", () => {
+  // The calculator prints center + trim and door − center + trim; they must be these numbers.
+  const r = sizeCylinder({ doorMm: 54, outsideTrimMm: 4, insideTrimMm: 6, centerFromOutsideMm: 22 });
+  assert.equal(r.centerMm, 22);
+  assert.equal(r.outside.calculatedMm, r.centerMm + 4);
+  assert.equal(r.inside.calculatedMm, 54 - r.centerMm + 6);
+});
+
 test("above the longest published length there is no model to name", () => {
   assert.equal(sizeCylinder({ doorMm: 100, outsideTrimMm: 4, insideTrimMm: 4 }).publishedMm, null);
 });
