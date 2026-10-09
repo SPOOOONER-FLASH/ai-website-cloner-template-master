@@ -17,6 +17,12 @@
 
 ---
 
+## 现在要做的（2026-10-09）：产品大脑 —— 给同事开 GitHub 权限
+
+使用说明和开权限步骤在桌面 `hyde\05-目录与报价\2026-10-09-产品大脑-目录与报价资料库.docx`（第一节怎么打开，第三节开权限，每人约 2 分钟）。不想自己点：把同事的 GitHub 用户名微信发我。后台地址 https://cantonlock.com/admin/brain/ 在下一次 HYDE 发布后可用；之前可直接开 https://github.com/SPOOOONER-FLASH/hyde-brain 。
+
+---
+
 ## 现在要做的（2026-10-09）：反链改到产品页 + 五个页面的搜索词导出
 
 两件事的步骤在桌面 `hyde\2026-10-09-手动操作-反链深链与长尾词.docx`；要改的 69 条帖子对照表在桌面 `hyde\BACKLINK-DEEPLINKS.docx`。先做 worldbid 的 51 条。
