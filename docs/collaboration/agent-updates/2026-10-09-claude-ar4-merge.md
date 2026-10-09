@@ -60,4 +60,14 @@
 里），新写的类根本不生成 —— 页面看起来"差不多对"，因为旧类在主仓库源码里出现过。必须在
 worktree 目录里启动 dev server。正式发布不受影响（release 在自己的检出目录里构建）。
 
-**还没做**：A 项（110/140/1121 旧锁体图上的红色 Hyland 标志）—— 下一步。AR4-101 主图来源仍未确认。
+**A 项（红色 Hyland 标志）查完：网站上已经没有，不用改。**
+
+- 红色 Hyland 只在原图 `public/images/products/{110,140,1121}-lock-case*.webp`（24 张全有）。
+- HYDE 站点不显示原图：`src/data/product-image-branding.ts` 把 `/images/products/` 换成
+  `/images/products-hyde/`，那 24 张左上角已是 HYDE 标（现有 legacy-badge 修复做的），逐张裁角看过。
+- 其他引用：spec-sheets、分享图、文章都不引用这三组原图。广交会目录第 71 页是抠图，无标志。
+- 所以没重跑 `assets:watermark`，没改原图 —— 改原图要重生成 24 张，结果和现在一样。
+- 顺带：`110-lock-case-7`、`140-lock-case-6`、`1121-lock-case-8` 是西语「Modelo …/Terminaciones」
+  参数页，来源不明（可能是客户目录），**目前没有任何记录引用它们**，保持不用。
+
+**还没做**：AR4-101 主图来源仍未确认（交接要求向老板要 7240 原图）。
