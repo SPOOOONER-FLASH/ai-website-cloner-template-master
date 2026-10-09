@@ -71,3 +71,11 @@ worktree 目录里启动 dev server。正式发布不受影响（release 在自�
   参数页，来源不明（可能是客户目录），**目前没有任何记录引用它们**，保持不用。
 
 **还没做**：AR4-101 主图来源仍未确认（交接要求向老板要 7240 原图）。
+
+**合并进 main（客户 10-09：「合并」）**：PR #20 分支先合入最新 main 三次（main 期间一直在动）。
+冲突只在 5 篇文章的 `summary`（AR4 分支没改过，取 main 的新版）和两个生成文件（重跑 `npm run content`）。
+检查：lint、typecheck、`npm test` 458/0、i18n-lint、titles:check、stamp --check 全过；webpack 构建 +
+`test:export` 只剩 71 条 `%5B` chunk 路径误报（worktree 里只能用 webpack 构建，Turbopack 找不到
+借用的 node_modules；正式发布用 Turbopack，不受影响）。AR4 的 616→613 计数改动已核对保留。
+**需要再发布一次**：AR-4 方块和 110/140/1121 并入 AR4 都在这次合并里，`release:hyde` 之后才上线；
+301 需 nginx reload（`deploy/install-nginx-redirects.sh`）。
