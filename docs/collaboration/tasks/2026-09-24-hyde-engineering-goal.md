@@ -137,6 +137,9 @@
 | 134 | 甲方 10-05：#133 发布后在 Bing Webmaster 点「重新扫描」，核对 alt 与 index.php 两项清零 | 待甲方（发布后） |
 | 135 | Clarity 10 话题机会栏（中国厂家资质流程、执手耐久与无障碍、合页承重与等级、无障碍扶手规格等）→ 下一批指南选题 | 待文案会话 / 甲方定优先级（REPORT 第六节） |
 | 136 | 甲方 10-08：标题超过 70 字符时省掉「 | Canton Hyland」后缀（Bing 报 1,039 页标题过长；品牌仍在结构化数据） | 10-08 完成（43f2b698bf1：src/lib/seo.ts fitTitle/templatedTitle，pageMetadata 与 21 处 absolute 标题统一；本地构建 8,133 页中超过 70 字符的只剩 1 页（俄语，去掉后缀仍超），6,249 页长度够、保留后缀；static-export-performance 加检查；分享标题同样处理（7544e75de1f）；上线 d5a4354e997，源站实测 Bing 点名的 /contact/ /company/ 310、BH35、607 SSET、exit-device 指南标题均 ≤ 70、og:title 一致） |
+| 137 | 西语规格会话 10-09：甲方批准新目录上官网（eaab4162e0c，92 页 PDF + 联系页十语种）→ 发布 HYDE | 待做 |
+| 138 | 甲方 10-09：曝光从工作日 ~1,000 继续往上；附 Bing 10-09 导出（关键词 / 页面 / AI 引用 / 反链）与 GSC 10-09 两个效果 zip、两个覆盖验证 zip → 分析并按词改已有页 | 部分完成（10-09：结论 docs/collaboration/2026-10-09-曝光继续爬升-数据结论与行动.md + 桌面 docx；工作日曝光 1,135 与上周持平，67% 来自文章、19% 产品页，AI 功能占 31%；约 1,000 网址已发现未抓取（569 译文、226 产品、177 video）；knob-locks、grip-handle-sets 标题加 China Manufacturer；待甲方回 /video/ 站点地图 A/B，万能钥匙表与饰面两页主次归文案会话） |
+| 139 | 甲方 10-09：检查插件是否生效（ponytail、context-mode、i-have-adhd 常开、hyperframes） | 10-09 完成：ponytail（SessionStart 注入 full）、i-have-adhd（标志文件 ~/.claude/.i-have-adhd-always，压缩后钩子已注入）、context-mode（ctx_stats 可用，v1.0.169）均生效；hyperframes 0.8.143 已装、技能可调用，未试渲染 |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
