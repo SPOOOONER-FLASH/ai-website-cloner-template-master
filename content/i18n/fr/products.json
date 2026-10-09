@@ -1333,22 +1333,6 @@
       "specs": "97d170e1550e"
     }
   },
-  "110-lock-case": {
-    "name": "Coffre de serrure",
-    "summary": "Coffre de serrure à mortaiser avec pêne demi-tour et pêne dormant, livré avec gâches et clés ; cotes confirmées sur plan avant la commande.",
-    "description": "Le modèle 110 (coffre de serrure) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
-    "features": [],
-    "specs": [],
-    "seoTitle": "110 Coffre de serrure, direct usine | Canton Hyland",
-    "seoDescription": "110 Coffre de serrure. Direct usine, échantillons et devis sur demande.",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "ed601adf96e7",
-      "description": "324ead4540e4",
-      "features": "97d170e1550e",
-      "specs": "97d170e1550e"
-    }
-  },
   "112-glass-door-handle": {
     "name": "Poignée pour porte en verre",
     "summary": "Poignée pour porte en verre, en acier inoxydable ; caractéristiques confirmées avec l'usine avant la commande.",
@@ -1363,55 +1347,6 @@
       "description": "daf000d32806",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
-    }
-  },
-  "1121-lock-case": {
-    "name": "Coffre de serrure",
-    "summary": "Coffre de serrure à mortaiser avec pêne dormant rond et pêne demi-tour, livré avec gâches, vis et clés ; cotes confirmées sur plan avant la commande.",
-    "description": "Le modèle 1121 (coffre de serrure) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
-    "features": [],
-    "specs": [],
-    "seoTitle": "1121 Coffre de serrure, direct usine | Canton Hyland",
-    "seoDescription": "1121 Coffre de serrure. Direct usine, échantillons et devis sur demande.",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "8518370ad36b",
-      "description": "78a64e3d2514",
-      "features": "97d170e1550e",
-      "specs": "97d170e1550e"
-    }
-  },
-  "140-lock-case": {
-    "name": "Coffre de serrure",
-    "summary": "Coffre de serrure à mortaiser, entraxe 72 mm, axe 25 mm ; têtière 183,5 × 20 mm et coffre de 125,7 mm, avec pêne demi-tour et pêne dormant.",
-    "description": "Le modèle 140 (coffre de serrure) est fabriqué par Canton Hyland Hardware & Building Material Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "25 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "183,5 × 20 mm"
-      },
-      {
-        "label": "Case size",
-        "value": "125,7 × 41,7 mm"
-      }
-    ],
-    "seoTitle": "140 Coffre de serrure, entraxe 72mm, axe 25mm | Canton Hyland",
-    "seoDescription": "140 Coffre de serrure : entraxe 72mm, axe 25mm. Direct usine, échantillons et devis sur demande.",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "2271730d7fe1",
-      "description": "0bfed21d6dd7",
-      "features": "97d170e1550e",
-      "specs": "673a8c1c5a86"
     }
   },
   "19-130mm-glass-door-handle": {
@@ -20918,7 +20853,7 @@
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "Coffre de serrure à mortaiser standard",
-    "summary": "Coffre de serrure à mortaiser compact à clé, de la collection destinée au marché argentin AR-4.",
+    "summary": "Coffre de serrure à mortaiser standard, référence usine 7240 : axe de 40 mm, entraxe de 72 mm et têtière de 220 × 25 mm ; livré avec deux clés.",
     "features": [],
     "specs": [
       {
@@ -20926,12 +20861,20 @@
         "value": "7240"
       },
       {
-        "label": "Faceplate",
-        "value": "18 × 183"
+        "label": "Center distance",
+        "value": "72 mm"
       },
       {
-        "label": "Case depth",
-        "value": "63"
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
       },
       {
         "label": "Latch options",
@@ -20943,18 +20886,18 @@
       }
     ],
     "seoTitle": "AR4-101 Coffre de serrure à mortaiser standard | Canton Hyland",
-    "seoDescription": "AR4-101 Coffre de serrure à mortaiser standard. Direct usine, échantillons et devis sur demande.",
+    "seoDescription": "AR4-101 Coffre de serrure à mortaiser standard : entraxe 72mm, axe 40mm. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
       "name": "bd525227f00b",
-      "summary": "de60fa62c0fb",
+      "summary": "dd38258359c0",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "6303006a4cb4"
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-110-mortise-lock": {
-    "name": "Coffre de serrure à mortaiser de sécurité",
-    "summary": "Coffre de serrure à mortaiser étroit, configuré pour la collection du marché argentin AR-4, avec pêne demi-tour et pêne dormant carré.",
+    "name": "Serrure de sécurité à mortaiser",
+    "summary": "Serrure de sécurité à mortaiser : axe de 40 mm, entraxe de 68 mm et têtière de 212 × 25 mm ; livrée avec deux clés.",
     "features": [],
     "specs": [
       {
@@ -20962,12 +20905,20 @@
         "value": "6840"
       },
       {
-        "label": "Nominal lock body",
-        "value": "68 × 40"
+        "label": "Center distance",
+        "value": "68 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
       },
       {
         "label": "Faceplate",
-        "value": "25 × 210"
+        "value": "212 × 25 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "127,3 × 60,8 mm"
       },
       {
         "label": "Latch options",
@@ -20978,18 +20929,18 @@
         "value": "Alliage de zinc ou laiton ; deux clés"
       }
     ],
-    "seoTitle": "AR4-110 Coffre de serrure à mortaiser de sécurité | Canton Hyland",
-    "seoDescription": "AR4-110 Coffre de serrure à mortaiser de sécurité. Direct usine, échantillons et devis sur demande.",
+    "seoTitle": "AR4-110 Serrure de sécurité à mortaiser | Canton Hyland",
+    "seoDescription": "AR4-110 Serrure de sécurité à mortaiser : entraxe 68mm, axe 40mm. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
       "name": "9cad0957c775",
-      "summary": "cb44b10fdeb9",
+      "summary": "616204155736",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "b37327043c52"
+      "specs": "629d1c51b20f"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
-    "name": "Serrure à mortaiser à pêne crochet",
+    "name": "Verrou à mortaiser à pêne crochet",
     "features": [],
     "specs": [
       {
@@ -20997,12 +20948,16 @@
         "value": "Coffre de serrure à pêne crochet 40"
       },
       {
-        "label": "Faceplate",
-        "value": "25 × 140 mm"
-      },
-      {
         "label": "Backset",
         "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "140 × 25 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "82,4 × 66,7 mm"
       },
       {
         "label": "Hook bolt",
@@ -21013,20 +20968,20 @@
         "value": "Alliage de zinc ou laiton ; deux clés"
       }
     ],
-    "summary": "Coffre de serrure à mortaiser à pêne crochet, avec axe de 40 mm et têtière de 25 × 140 mm, livré avec deux clés.",
-    "seoTitle": "AR4-1121 Serrure à mortaiser à pêne crochet | Canton Hyland",
-    "seoDescription": "AR4-1121 Serrure à mortaiser à pêne crochet. Direct usine, échantillons et devis sur demande.",
+    "summary": "Verrou à mortaiser à pêne crochet, manœuvré à la clé : axe de 40 mm et têtière de 140 × 25 mm ; livré avec deux clés.",
+    "seoTitle": "AR4-1121 Verrou à mortaiser à pêne crochet | Canton Hyland",
+    "seoDescription": "AR4-1121 Verrou à mortaiser à pêne crochet. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
-      "name": "3cb4d69abbad",
-      "summary": "847cdbd677f0",
+      "name": "a766cbc5b5ab",
+      "summary": "42d552f83f82",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "327a7b601a54"
+      "specs": "93f9975d519e"
     }
   },
   "hyde-ar4-140-mortise-lock": {
-    "name": "Coffre de serrure à mortaiser étroit",
-    "summary": "Coffre de serrure à mortaiser compact pour profilés étroits, collection du marché argentin AR-4.",
+    "name": "Serrure à mortaiser pour menuiseries aluminium",
+    "summary": "Serrure à mortaiser pour profilés aluminium : axe de 25 mm, entraxe de 72 mm et têtière de 183,5 × 20 mm ; livrée avec deux clés.",
     "features": [],
     "specs": [
       {
@@ -21034,12 +20989,24 @@
         "value": "7225"
       },
       {
-        "label": "Faceplate",
-        "value": "20 × 190"
+        "label": "Center distance",
+        "value": "72 mm"
       },
       {
-        "label": "Lock case",
-        "value": "40 × 125"
+        "label": "Backset",
+        "value": "25 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "183,5 × 20 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "125,7 × 41,7 mm"
+      },
+      {
+        "label": "Application",
+        "value": "Coffres de serrure pour portes en aluminium à montants étroits"
       },
       {
         "label": "Latch options",
@@ -21050,14 +21017,14 @@
         "value": "Alliage de zinc ou laiton ; deux clés"
       }
     ],
-    "seoTitle": "AR4-140 Coffre de serrure à mortaiser étroit | Canton Hyland",
-    "seoDescription": "AR4-140 Coffre de serrure à mortaiser étroit. Direct usine, échantillons et devis sur demande.",
+    "seoTitle": "AR4-140 Serrure à mortaiser pour menuiseries aluminium | Canton Hyland",
+    "seoDescription": "AR4-140 Serrure à mortaiser pour menuiseries aluminium : entraxe 72mm, axe 25mm. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
-      "name": "d34887493f3d",
-      "summary": "8b27ed02f6dd",
+      "name": "9ce4ea9ec105",
+      "summary": "1608d47db669",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "456103113545"
+      "specs": "1d1a063aeaec"
     }
   },
   "ih01-brass-and-steel-hinges": {

@@ -576,6 +576,27 @@
       "category": "lock-cases",
       "toCategory": "hardware-accessories",
       "why": "2026-09-25 renamed from its wrong catalogue name (文案会话): Lock Case → Latch Guard; an anti-pry plate for outswing doors, not a lock case"
+    },
+    {
+      "from": "110-lock-case",
+      "to": "hyde-ar4-110-mortise-lock",
+      "category": "lock-cases",
+      "why": "同一把锁两条记录：110 与 AR4-110。AR4-110 的工厂参考号 6840 就是 110 图纸上的中心距 68 / 中心到面板 40；照片与外形一致。2026-10-09 甲方「把有规格的合并到 AR 里」：规格按 110 自家工厂图纸（212 × 25 面板，127.3 × 60.8 锁体）并入 AR4-110，图库与视频一并转入。",
+      "reason": "duplicate-merged"
+    },
+    {
+      "from": "140-lock-case",
+      "to": "hyde-ar4-140-mortise-lock",
+      "category": "lock-cases",
+      "why": "同一把锁两条记录：140 与 AR4-140。AR4-140 的工厂参考号 7225 就是 140 图纸上的中心距 72 / 中心到面板 25。2026-10-09 甲方要求合并：规格按 140 自家工厂图纸（183.5 × 20 面板，125.7 × 41.7 锁体）并入 AR4-140，图库与视频一并转入。",
+      "reason": "duplicate-merged"
+    },
+    {
+      "from": "1121-lock-case",
+      "to": "hyde-ar4-1121-hook-bolt-lock",
+      "category": "lock-cases",
+      "why": "同一把钩舌锁两条记录：1121 与 AR4-1121（同一照片，同为 40 中心到面板、140 × 25 面板）。2026-10-09 甲方要求合并：锁体 82.4 × 66.7 按 1121 自家工厂图纸并入，图库与视频一并转入。",
+      "reason": "duplicate-merged"
     }
   ]
 }

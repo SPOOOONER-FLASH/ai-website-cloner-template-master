@@ -3,8 +3,8 @@
   "title": "Qualifying a Hardware Supplier 2026: Factory, Trader or Broker, the Five Questions That Separate Them, and What to Verify",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-09-29",
-  "summary": "Three kinds of company answer a hardware inquiry and all three will say yes. This page explains what a factory, a trading company and a broker each actually control, gives five questions whose answers separate them without anybody having to be confronted, lists what can be verified independently, and applies the whole test to us.",
+  "updatedAt": "2026-10-09",
+  "summary": "5 questions separate a factory from a trading company or a broker: which models do you make yourselves; can you change the backset on this model, and what would the tooling cost; who does your plating; what is the minimum in one finish, and why; and can we have the dimensioned drawing. A factory answers each at once or with a reason. This page also lists what can be verified independently, what a first order should be, and applies the whole test to us.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -74,7 +74,7 @@
     "It would be incoherent to publish this page and not answer it.",
     "We are a factory, and like every real factory we buy some components in rather than making everything. Ask which, per model, and the answer comes back specifically.",
     "We do not hold test certificates for everything in the catalog. Our 307 and 311 exit devices are in testing, and until certificate numbers exist nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing. Our certificate page explains how you should check that claim, including against us.",
-    "We do not publish a drawing for most models. The 616 HYDE records have 84 dimensioned SVG assets, 72 of them on the 549 visible product listings, and 0 HYDE door-preparation SVGs. Our drawings page gives those separate counts because question five above is the one we would otherwise answer too loosely.",
+    "We do not publish a drawing for most models. The 613 HYDE records have 84 dimensioned SVG assets, 72 of them on the 546 visible product listings, and 0 HYDE door-preparation SVGs. Our drawings page gives those separate counts because question five above is the one we would otherwise answer too loosely.",
     "Several specification gaps are open and published: the stainless grade on 224 rows, the zamak grade on 156, the brass alloy and DZR status on 57, the cylinder split on 45. Each of those is on its own page, with the count.",
     "That is a worse-looking answer than most suppliers give, and it is the one that survives the five questions. A supplier whose catalog has no gaps has either measured everything or has written what the gaps should say, and the second is far more common than the first."
   ],
@@ -102,7 +102,7 @@
       },
       {
         "question": "How does Canton Hyland answer its own five questions?",
-        "answer": "We are a factory and, like every real factory, buy some components in. We do not hold test certificates for everything; 307 and 311 are in testing. Across 616 HYDE records there are 84 dimensioned SVG assets, 72 on visible product listings, and 0 HYDE door-preparation SVGs. Several specification gaps are counted on their own pages."
+        "answer": "We are a factory and, like every real factory, buy some components in. We do not hold test certificates for everything; 307 and 311 are in testing. Across 613 HYDE records there are 84 dimensioned SVG assets, 72 on visible product listings, and 0 HYDE door-preparation SVGs. Several specification gaps are counted on their own pages."
       }
     ],
     "es": [
@@ -128,7 +128,7 @@
       },
       {
         "question": "¿Cómo responde Canton Hyland a sus propias cinco preguntas?",
-        "answer": "Somos fábrica y, como toda fábrica real, compramos algunos componentes fuera. No tenemos certificados de ensayo para todo: las 307 y 311 están en ensayo. En 616 registros HYDE hay 84 archivos SVG acotados, 72 en fichas visibles, y 0 SVG de preparación de puerta HYDE. Varios huecos de especificación están contados en sus propias páginas."
+        "answer": "Somos fábrica y, como toda fábrica real, compramos algunos componentes fuera. No tenemos certificados de ensayo para todo: las 307 y 311 están en ensayo. En 613 registros HYDE hay 84 archivos SVG acotados, 72 en fichas visibles, y 0 SVG de preparación de puerta HYDE. Varios huecos de especificación están contados en sus propias páginas."
       }
     ],
     "pt": [
@@ -154,12 +154,12 @@
       },
       {
         "question": "Como a Canton Hyland responde às suas próprias cinco perguntas?",
-        "answer": "Somos fábrica e, como toda fábrica real, compramos alguns componentes fora. Não temos certificados de ensaio para tudo: as 307 e 311 estão em ensaio. Em 616 registros HYDE há 84 arquivos SVG cotados, 72 em fichas visíveis, e 0 SVG de preparação de porta HYDE. Várias lacunas de especificação estão contadas nas suas próprias páginas."
+        "answer": "Somos fábrica e, como toda fábrica real, compramos alguns componentes fora. Não temos certificados de ensaio para tudo: as 307 e 311 estão em ensaio. Em 613 registros HYDE há 84 arquivos SVG cotados, 72 em fichas visíveis, e 0 SVG de preparação de porta HYDE. Várias lacunas de especificação estão contadas nas suas próprias páginas."
       }
     ]
   },
   "titleEs": "Cualificar a un proveedor de herrajes 2026: fábrica, trading o broker, las cinco preguntas que los separan, y qué verificar",
-  "summaryEs": "Tres tipos de empresa responden a una consulta de herrajes y las tres dicen que sí. Esta página explica qué controla realmente una fábrica, una trading y un broker, da cinco preguntas cuyas respuestas los separan sin que nadie tenga que ser confrontado, enumera qué se puede verificar de forma independiente, y aplica toda la prueba a nosotros mismos.",
+  "summaryEs": "5 preguntas separan una fábrica de una trading o un broker: qué modelos fabrican ustedes mismos; si pueden cambiar la entrada de este modelo y cuánto costaría el utillaje; quién hace su galvanizado; cuál es el mínimo en un acabado y por qué; y si nos pueden dar el plano acotado. Una fábrica responde cada una al momento o con una razón. Esta página enumera también lo que se puede verificar de forma independiente, cómo debe ser un primer pedido, y aplica toda la prueba a nosotros.",
   "seoTitleEs": "Cualificar a un proveedor de herrajes 2026: fábrica o trading | Canton Hyland",
   "seoDescriptionEs": "Cómo distinguir una fábrica de herrajes de una trading o un broker, cinco preguntas que los separan, qué se puede verificar de forma independiente, y cómo debe ser un primer pedido.",
   "bodyEs": [
@@ -209,12 +209,12 @@
     "Sería incoherente publicar esta página y no responderla.",
     "Somos fábrica, y como toda fábrica real compramos algunos componentes fuera en vez de hacerlo todo. Pregunte cuáles, modelo a modelo, y la respuesta vuelve concreta.",
     "No tenemos certificados de ensayo para todo el catálogo: nuestras barras 307 y 311 están en ensayo, y hasta que existan números de certificado nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL. Nuestra página de certificados explica cómo debería comprobar esa afirmación, también contra nosotros.",
-    "No publicamos plano para la mayoría de los modelos. Los 616 registros HYDE tienen 84 archivos SVG acotados, 72 de ellos en las 549 fichas de producto visibles, y 0 SVG de preparación de puerta HYDE. Nuestra página de planos distingue esas cifras porque, de otro modo, responderíamos con demasiada vaguedad a la quinta pregunta.",
+    "No publicamos plano para la mayoría de los modelos. Los 613 registros HYDE tienen 84 archivos SVG acotados, 72 de ellos en las 546 fichas de producto visibles, y 0 SVG de preparación de puerta HYDE. Nuestra página de planos distingue esas cifras porque, de otro modo, responderíamos con demasiada vaguedad a la quinta pregunta.",
     "Varios huecos de especificación están abiertos y publicados: el grado de inoxidable en 224 filas, el de zamak en 156, la aleación de latón y el estado DZR en 57, el reparto de cilindro en 45. Cada uno está en su propia página, con el recuento.",
     "Esa es una respuesta que se ve peor que la que da la mayoría de los proveedores, y es la que sobrevive a las cinco preguntas. Un proveedor cuyo catálogo no tiene huecos o lo ha medido todo o ha escrito lo que los huecos deberían decir, y lo segundo es mucho más común que lo primero."
   ],
   "titlePt": "Qualificar um fornecedor de ferragens 2026: fábrica, trading ou broker, as cinco perguntas que os separam, e o que verificar",
-  "summaryPt": "Três tipos de empresa respondem a uma consulta de ferragens e as três dizem que sim. Esta página explica o que uma fábrica, uma trading e um broker realmente controlam, dá cinco perguntas cujas respostas os separam sem que ninguém tenha que ser confrontado, enumera o que se pode verificar de forma independente, e aplica todo o teste a nós mesmos.",
+  "summaryPt": "5 perguntas separam uma fábrica de uma trading ou de um broker: quais modelos vocês fabricam; se podem mudar a distância ao eixo deste modelo e quanto custaria o ferramental; quem faz a galvanização; qual é o mínimo num acabamento e por quê; e se podem mandar o desenho cotado. Uma fábrica responde cada uma na hora ou com um motivo. Esta página enumera também o que pode ser verificado de forma independente, como deve ser um primeiro pedido, e aplica todo o teste a nós.",
   "seoTitlePt": "Qualificar um fornecedor de ferragens 2026: fábrica ou trading | Canton Hyland",
   "seoDescriptionPt": "Como distinguir uma fábrica de ferragens de uma trading ou de um broker, cinco perguntas que os separam, o que se pode verificar de forma independente, e como deve ser um primeiro pedido.",
   "bodyPt": [
@@ -264,7 +264,7 @@
     "Seria incoerente publicar esta página e não a responder.",
     "Somos fábrica, e como toda fábrica real compramos alguns componentes fora em vez de fazer tudo. Pergunte quais, modelo a modelo, e a resposta volta concreta.",
     "Não temos certificados de ensaio para todo o catálogo: as nossas barras 307 e 311 estão em ensaio, e até existirem números de certificado nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL. A nossa página de certificados explica como deveria verificar essa afirmação, também contra nós.",
-    "Não publicamos desenho para a maioria dos modelos. Os 616 registros HYDE têm 84 arquivos SVG cotados, 72 deles nas 549 fichas de produto visíveis, e 0 SVG de preparação de porta HYDE. A nossa página de desenhos separa essas contagens porque, de outro modo, responderíamos à quinta pergunta de forma demasiado vaga.",
+    "Não publicamos desenho para a maioria dos modelos. Os 613 registros HYDE têm 84 arquivos SVG cotados, 72 deles nas 546 fichas de produto visíveis, e 0 SVG de preparação de porta HYDE. A nossa página de desenhos separa essas contagens porque, de outro modo, responderíamos à quinta pergunta de forma demasiado vaga.",
     "Várias lacunas de especificação estão abertas e publicadas: o grau de inox em 224 linhas, o de zamak em 156, a liga de latão e o estado DZR em 57, a repartição de cilindro em 45. Cada uma está na sua própria página, com a contagem.",
     "Essa é uma resposta que parece pior do que a que a maioria dos fornecedores dá, e é a que sobrevive às cinco perguntas. Um fornecedor cujo catálogo não tem lacunas ou mediu tudo ou escreveu o que as lacunas deveriam dizer, e o segundo é muito mais comum do que o primeiro."
   ]

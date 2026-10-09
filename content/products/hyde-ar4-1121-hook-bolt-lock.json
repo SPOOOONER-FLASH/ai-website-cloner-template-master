@@ -2,27 +2,29 @@
   "model": "AR4-1121",
   "alibabaSearchTerm": "1121",
   "slug": "hyde-ar4-1121-hook-bolt-lock",
-  "name": "Hook-Bolt Mortise Lock",
-  "nameEs": "Cerradura de embutir de gancho",
+  "name": "Hook-Bolt Deadlock",
+  "nameEs": "Cerrojo de gancho",
   "series": "HYDE Argentina AR-4",
   "categoryPath": [
     "lock-cases"
   ],
-  "summaryEs": "Una caja de cerradura de embutir, entrada de 40.",
+  "summaryEs": "Cerrojo de gancho de embutir, accionado con llave: entrada de 40 mm y frente de 140 × 25 mm; se entrega con dos llaves.",
   "specs": [
     {
       "label": "Factory reference",
       "value": "40 hook-bolt lock body"
     },
     {
-      "label": "Faceplate",
-      "value": "25 × 140mm",
-      "unit": "mm"
+      "label": "Backset",
+      "value": "40mm"
     },
     {
-      "label": "Backset",
-      "value": "40mm",
-      "unit": "mm"
+      "label": "Faceplate",
+      "value": "140 × 25mm"
+    },
+    {
+      "label": "Case size",
+      "value": "82.4 × 66.7mm"
     },
     {
       "label": "Hook bolt",
@@ -39,12 +41,16 @@
       "value": "Cuerpo de cerradura con cerrojo de gancho 40"
     },
     {
-      "label": "Frente",
-      "value": "25 × 140 mm"
-    },
-    {
       "label": "Entrada",
       "value": "40 mm"
+    },
+    {
+      "label": "Frente",
+      "value": "140 × 25 mm"
+    },
+    {
+      "label": "Medidas del cuerpo",
+      "value": "82,4 × 66,7 mm"
     },
     {
       "label": "Cerrojo de gancho",
@@ -73,6 +79,41 @@
       "ratio": "1 / 1",
       "label": "HYDE AR4-1121 hook-bolt mortise lock, alternate view",
       "labelEs": "Cerradura HYDE AR4-1121, vista alternativa"
+    },
+    {
+      "src": "/images/products/1121-lock-case.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 3"
+    },
+    {
+      "src": "/images/products/1121-lock-case-2.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 4"
+    },
+    {
+      "src": "/images/products/1121-lock-case-3.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 5"
+    },
+    {
+      "src": "/images/products/1121-lock-case-4.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 6"
+    },
+    {
+      "src": "/images/products/1121-lock-case-5.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 7"
+    },
+    {
+      "src": "/images/products/1121-lock-case-6.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 8"
+    },
+    {
+      "src": "/images/products/1121-lock-case-7.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-1121 hook-bolt mortise lock, view 9"
     }
   ],
   "attachmentIds": [],
@@ -81,26 +122,30 @@
     "AR4-140",
     "AR4-101"
   ],
-  "seoTitle": "AR4-1121 Hook-Bolt Mortise Lock, 40mm backset | Canton Hyland",
-  "seoDescription": "AR4-1121 hook-bolt mortise lock for timber & metal doors. 40mm backset. Factory direct, samples and quotation on request.",
-  "summary": "Hook-bolt mortise lock case with a 40mm backset and a 25 × 140mm faceplate, supplied with two keys.",
-  "seoTitleEs": "AR4-1121 Cerradura de embutir de gancho, entrada 40mm | Canton Hyland",
-  "seoDescriptionEs": "AR4-1121 cerradura de embutir de gancho para puertas de madera y metal. Entrada 40mm. Directo de fábrica, muestras y cotización a pedido.",
+  "seoTitle": "AR4-1121 Hook-Bolt Deadlock, 40mm backset | Canton Hyland",
+  "seoDescription": "AR4-1121 hook-bolt deadlock for timber & metal doors. 40mm backset. Factory direct, samples and quotation on request.",
+  "summary": "Key-operated hook-bolt deadlock with a 40mm backset and a 140 × 25mm faceplate, supplied with two keys.",
+  "seoTitleEs": "AR4-1121 Cerrojo de gancho, entrada 40mm | Canton Hyland",
+  "seoDescriptionEs": "AR4-1121 cerrojo de gancho para puertas de madera y metal. Entrada 40mm. Directo de fábrica, muestras y cotización a pedido.",
   "description": "",
-  "namePt": "Fechadura de embutir com trinco de gancho",
-  "summaryPt": "Fechadura de embutir com trinco de gancho.",
+  "namePt": "Fechadura de gancho",
+  "summaryPt": "Fechadura de gancho de embutir, acionada por chave: distância ao eixo de 40 mm e testa de 140 × 25 mm; fornecida com duas chaves.",
   "specsPt": [
     {
       "label": "Referência de fábrica",
       "value": "Corpo de fechadura com ferrolho tipo gancho 40"
     },
     {
-      "label": "Testa",
-      "value": "25 × 140 mm"
-    },
-    {
       "label": "Distância ao eixo (broca)",
       "value": "40 mm"
+    },
+    {
+      "label": "Testa",
+      "value": "140 × 25 mm"
+    },
+    {
+      "label": "Dimensões do corpo",
+      "value": "82,4 × 66,7 mm"
     },
     {
       "label": "Trinco de gancho",
@@ -111,6 +156,22 @@
       "value": "Zamak ou latão; duas chaves"
     }
   ],
-  "seoTitlePt": "AR4-1121 Fechadura de embutir com trinco de gancho | Canton Hyland",
-  "seoDescriptionPt": "AR4-1121 fechadura de embutir com trinco de gancho para portas de madeira e metal. Distância 40mm."
+  "seoTitlePt": "AR4-1121 Fechadura de gancho, distância 40mm | Canton Hyland",
+  "seoDescriptionPt": "AR4-1121 fechadura de gancho para portas de madeira e metal. Distância 40mm. Direto da fábrica, amostras e orçamento sob consulta.",
+  "modelAliases": [
+    "1121"
+  ],
+  "videos": [
+    {
+      "src": "/videos/products/1121-lock-case.mp4",
+      "poster": {
+        "src": "/images/products/1121-lock-case-video.webp",
+        "ratio": "16 / 9",
+        "label": "AR4-1121 hook-bolt mortise lock, demonstration still"
+      },
+      "label": "AR4-1121 Hook-Bolt Mortise Lock, product demonstration",
+      "durationSeconds": 35,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

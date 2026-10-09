@@ -18,6 +18,8 @@ export interface SearchIndexEntry {
   text: string;
   /** Products only, pre-lowercased. Absent when the model is still provisional. */
   model?: string;
+  /** Other model numbers the same product is known by, pre-lowercased ("140" for AR4-140). */
+  aliases?: string[];
 }
 
 /**
@@ -101,7 +103,7 @@ export function score(entry: SearchIndexEntry, terms: string[]): number {
       "panic" as model hits and pushed every product above the category page that should
       have led the results.
     */
-    if (entry.model === term) total += 80;
+    if (entry.model === term || entry.aliases?.includes(term)) total += 80;
     else if (entry.model?.startsWith(term)) total += 40;
 
     if (title === term) total += 50;

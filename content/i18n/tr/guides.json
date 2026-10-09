@@ -160,7 +160,7 @@
   },
   "certification-and-test-validation-2026": {
     "title": "2026'da Donanım Sertifikası Doğrulama: Yedi Bölüm, DoP ve CE İşareti, Altı Uyarı İşareti",
-    "summary": "Bir sertifika ya kontrolden sağ çıkar ya çıkmaz; neye bakacağınızı biliyorsanız kontrol yaklaşık beş dakika sürer. Bu sayfa gerçek her test sertifikasının taşıdığı yedi bölümü sıralıyor, akreditasyon ile belgelendirme arasındaki farkı açıklıyor, kapı donanımı için Performans Beyanı ve CE işaretini ele alıyor, \"dur\" demeniz gereken altı uyarı işaretini listeliyor ve neye sahip olup neye sahip olmadığımızı açıkça söylüyor.",
+    "summary": "Gerçek bir test sertifikası 7 bölüm taşır: düzenleyen laboratuvar ve adresi, akreditasyon referansı, yılıyla birlikte standart, rapor ya da sertifika numarası, düzenlenme tarihi ve geçerlilik, uygulama kapsamı ve test edilen yapılandırma. En sık eksik olan kapsamdır ve 7'sini birden kontrol etmek yaklaşık 5 dakika sürer. Bu sayfa ayrıca akreditasyon ile sertifikasyon farkını, CE işaretini ve Performans Beyanını açıklar, 6 tehlike işaretini listeler ve elimizde ne olduğunu söyler: 307 ve 311 panik çıkış cihazlarımız testtedir; sertifika numaraları çıkana kadar onlar için bir sınıf iddia etmiyoruz.",
     "seoTitle": "Donanım Sertifikası Doğrulama 2026: DoP, CE ve Uyarılar",
     "seoDescription": "Kapı donanımı test sertifikası nasıl kontrol edilir: yedi zorunlu bölüm, akreditasyon ve belgelendirme farkı, DoP, CE işareti ve altı uyarı işareti.",
     "body": [
@@ -244,7 +244,7 @@
     ],
     "sourceHash": {
       "title": "44cb79616657",
-      "summary": "63892f788aae",
+      "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "092e11d1aec4",
       "body": "57e62f3e9f1a",
@@ -345,7 +345,7 @@
   },
   "commercial-lock-function-decision-2026": {
     "title": "2026'da Kilit Fonksiyonu Seçimi: Oda Tipine Göre Karar Tablosu ve Her Açıklığı Çözen İki Soru",
-    "summary": "Kilit fonksiyonu seçmek bir katalog sorunu değil, iki soruluk bir sorundur: kim geçebilir ve içerideki kişiye ne olur? Bu sayfa bunu, ticari bir binanın gerçekte içerdiği oda tiplerini kapsayan bir karar tablosuna dönüştürüyor, rahatsızlık değil can güvenliği sorunu yaratan üç fonksiyon hatasını adlandırıyor ve kendi kataloğumuzun her fonksiyondan kaç model taşıdığını belirtiyor.",
+    "summary": "Kilit işlevini 2 soruyla seçin: dışarıdan kim girebilir ve içerideki kişi nasıl çıkar; çıkış anahtarsız ve tek hareketle olmalıdır. Koridorlara geçiş, ana girişlere giriş (dışarıdan anahtarlı), WC'lere mahremiyet, depolara depo işlevi, sınıflara sınıf işlevi, kaçış merdivenlerine panik çıkış cihazı. Bu sayfa oda bazında tam karar tablosunu, kaçış yolunda çift silindirli sürgü gibi can güvenliği sorununa dönüşen 3 işlev hatasını ve kataloğumuzda her işlevden kaç model olduğunu verir.",
     "seoTitle": "Kilit Fonksiyonu Seçimi 2026: Oda Tipine Göre Karar Tablosu",
     "seoDescription": "Ticari bir kilit fonksiyonu oda tipine göre nasıl seçilir, her açıklığı çözen iki soru ve can güvenliği sorununa dönüşen üç fonksiyon hatası.",
     "body": [
@@ -422,7 +422,7 @@
     ],
     "sourceHash": {
       "title": "dd606844d309",
-      "summary": "80eb5664bd3f",
+      "summary": "3e4ccb83c3b5",
       "seoTitle": "6dda3d33e6ef",
       "seoDescription": "1a7bacec2dca",
       "body": "a4d66906967c",
@@ -500,7 +500,7 @@
   },
   "copper-or-brass-hinges-2026": {
     "title": "Bakır Menteşe mi, Pirinç Menteşe mi? Kapı Menteşesi Sipariş Ederken \"Bakır Menteşe\" Ne Demektir",
-    "summary": "Alıcılar bakır menteşe ister; kapıyı taşıyan ise pirinçtir, yani çinkoyla alaşımlanmış bakır. İfadenin ne anlama gelebileceği, antik bakırın neden yalnızca bir kaplama olduğu, menteşelerimizden hangilerinin pirinç olduğu ve siparişe ne yazılacağı.",
+    "summary": "Bir kapıyı taşıyan \"bakır menteşe\" aslında pirinçtir, yani çinkoyla alaşımlanmış bakır; antik bakır bir kaplamadır, metal değil. Menteşelerimizden ikisi malzeme olarak pirinç yayımlar: 2,0 ile 3,5 mm kalınlıkta sunulan B024 ve B025. Bu sayfa ifadenin ne anlama gelebileceğini ve kastettiğiniz menteşenin gelmesi için siparişe ne yazılacağını açıklar.",
     "seoTitle": "Bakır ve Pirinç Menteşe: Alıcılar Gerçekte Ne Sipariş Ediyor",
     "seoDescription": "Bakır kapı menteşesi genellikle pirinçtir: çinkoyla alaşımlanmış bakır. Antik bakır bir kaplamadır. Hangi menteşelerimiz pirinç, nasıl sipariş edilir?",
     "body": [
@@ -534,7 +534,7 @@
     ],
     "sourceHash": {
       "title": "53f403ec9baf",
-      "summary": "7bde88911274",
+      "summary": "fbcde658c3c0",
       "seoTitle": "c6133c9d0be4",
       "seoDescription": "9ed3436e203f",
       "body": "f05ccf837790",
@@ -805,7 +805,7 @@
   },
   "dimensional-interchangeability-2026": {
     "title": "2026'da Ölçüsel Değiştirilebilirlik: Bir Kilidin Yerine Oturup Oturmayacağını Belirleyen Yedi Ölçü ve Kaçını Yayımladığımız",
-    "summary": "\"Birbirinin yerine geçer mi?\" sorusunu yedi ölçü cevaplar ve bunların ikisi neredeyse kimsenin yayımlamadığı ölçülerdir. Bu sayfa onları arızaya yol açtıkları sırayla listeliyor, backset'i eşleştirmenin neden yetmediğini açıklıyor, üretimi durmuş bir kilidin birebir muadilini istediğinizde bir fabrikaya ne göndermeniz gerektiğini anlatıyor ve kendi 258 kilit ürünümüzden kaçının her ölçüyü yayımladığını, yüzde ikide kalan dahil, sayıyor.",
+    "summary": "\"Birbirinin yerine geçer mi?\" sorusunu yedi ölçü cevaplar ve bunların ikisi neredeyse kimsenin yayımlamadığı ölçülerdir. Bu sayfa onları arızaya yol açtıkları sırayla listeliyor, backset'i eşleştirmenin neden yetmediğini açıklıyor, üretimi durmuş bir kilidin birebir muadilini istediğinizde bir fabrikaya ne göndermeniz gerektiğini anlatıyor ve kendi 255 kilit ürünümüzden kaçının her ölçüyü yayımladığını, yüzde üçte kalan dahil, sayıyor.",
     "seoTitle": "Kilit Değiştirilebilirliği 2026: Belirleyici Yedi Ölçü",
     "seoDescription": "Bir kilidin birebir yedek olması için hangi ölçüler tutmalı, backset neden tek başına yetmez ve gerçek bir muadil için fabrikaya ne gönderilmeli?",
     "body": [
@@ -825,9 +825,9 @@
       "Köşe yarıçapı, bir karşılık plakasında önemli olduğu nedenle önemlidir: frezeyle açılmış bir cebin köşeleri yuvarlaktır, keskiyle açılmış olanınki köşelidir ve uyumsuzluk dört hilal ya da dört kare olarak görünür.",
       "En sık ilk kapı takıldıktan sonra keşfedilen ölçü budur; bu da devam etme kararının zaten verilmiş olduğu andır.",
       "## Bunun ne kadarını gerçekten yayımlıyoruz",
-      "Değiştirilebilirlik yayımlanmış ölçülerle ilgili bir sorudur; dolayısıyla dürüst olan, kaçını yayımladığımızı söylemektir. Kataloğumuzda kategorisi ya da adı onları kilit, dil, silindir ya da sürgü kilit olarak tanımlayan 258 ürünün özellik satırlarından sayılmıştır.",
-      "| Ölçü | Yayımlayan kilit ürünü | Oran |\n| --- | --- | --- |\n| Backset | 111 | %43 |\n| Kapı kalınlığı aralığı | 77 | %30 |\n| Aks mesafesi | 35 | %14 |\n| Ön plaka | 8 | %3 |\n| Gövde ölçüsü | 6 | %2 |",
-      "Bu sayfanın amacı son üç satırdır. En pahalı arızalara yol açan iki ölçü (aks mesafesi ve ön plaka) en az yayımladığımız iki ölçüdür; gövde ölçüsü ise yalnızca dördünde görünür.",
+      "Değiştirilebilirlik yayımlanmış ölçülerle ilgili bir sorudur; dolayısıyla dürüst olan, kaçını yayımladığımızı söylemektir. Kataloğumuzda kategorisi ya da adı onları kilit, dil, silindir ya da sürgü kilit olarak tanımlayan 255 ürünün özellik satırlarından sayılmıştır.",
+      "| Ölçü | Yayımlayan kilit ürünü | Oran |\n| --- | --- | --- |\n| Backset | 113 | %44 |\n| Kapı kalınlığı aralığı | 77 | %30 |\n| Aks mesafesi | 37 | %15 |\n| Ön plaka | 7 | %3 |\n| Gövde ölçüsü | 8 | %3 |",
+      "Bu sayfanın amacı son üç satırdır. En pahalı arızalara yol açan iki ölçü (aks mesafesi ve ön plaka) en az yayımladığımız iki ölçüdür; gövde ölçüsü ise yalnızca sekizinde görünür.",
       "Verimizi kapsamlı diye tarif etmektense bu tabloyu basmayı tercih ederiz. Boşluğu bilen bir alıcı ölçüyü isteyebilir; kataloğun eksiksiz olduğunu varsayan bir alıcı bunu kestikten sonra öğrenir.",
       "Bir ölçü eksikse bunun nedeni saklanması değil, o modeli henüz kimsenin bir çizime göre ölçmemiş olmasıdır. İhtiyacınız olan modeli sorun, ölçülebilir; bu kısa bir konuşmadır ve bir konteyner dolusu kapıdan sonraki konuşmadan çok daha kısadır.",
       "## Zaten satın aldığınız bir kilidin birebir muadilini istediğinizde ne göndermelisiniz",
@@ -871,7 +871,7 @@
       },
       {
         "question": "Kilitlerinizin kaçı bu ölçüleri yayımlıyor?",
-        "answer": "258 kilit ürününden: backset 111 (%43), kapı kalınlığı 77 (%30), aks mesafesi 35 (%14), ön plaka 8 (%3), gövde ölçüsü 6 (%2). En pahalı arızalara yol açan iki ölçü en az yayımladığımız ikisidir. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
+        "answer": "255 kilit ürününden: backset 113 (%44), kapı kalınlığı 77 (%30), aks mesafesi 37 (%15), ön plaka 7 (%3), gövde ölçüsü 8 (%3). En pahalı arızalara yol açan iki ölçü en az yayımladığımız ikisidir. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
       },
       {
         "question": "Birebir yedek almak için ne göndermeliyim?",
@@ -893,7 +893,7 @@
   },
   "door-closer-mounting-positions-2026": {
     "title": "2026'da Kapı Kapatıcı Montajı: Standart Kol, Kasa Üstü, Paralel Kol ve Kızaklı Kol Karşılaştırması",
-    "summary": "Aynı kapı kapatıcı nereye monte edildiğine göre farklı performans gösterir ve montaj şekli genellikle şantiyede, matkabı tutan kişi tarafından seçilir. Bu sayfa dört standart düzeni önemli olan üç şey (mekanik verim, açıklığa çıkıntı ve hasara açıklık) üzerinden karşılaştırıyor, paralel kolun neden size bir güç sınıfına mal olabileceğini açıklıyor ve her birinin kapının hangi tarafında durduğunu belirtiyor.",
+    "summary": "Bir kapı kapatıcı 4 standart şekilde takılır: normal kol (çekme tarafı, en verimlisi, kol açıklıkta), kasa üstü montaj (kasada, itme tarafı, camlı ya da dar profilli kapılar için), paralel kol (itme tarafı, kol kapıya yaslanır, kamu binalarının tercihi) ve kayar ray (en düzü). Paralel kol daha az kaldıraç verir; normal kola göre seçilmiş bir kapatıcı paralel takıldığında kapıyı kilitlemeyebilir: paralel kol olasıysa güç sınıfı seçilirken bunu belirtin. Bu sayfa ayrıca takviyeyi, yönü ve açılma frenini ele alır.",
     "seoTitle": "Kapı Kapatıcı Montajı 2026: Standart, Kasa Üstü, Paralel Kol",
     "seoDescription": "Kapı kapatıcı montaj şekilleri: standart kol, kasa üstü, paralel kol ve kızaklı kol; verim, çıkıntı, hasara açıklık ve güç sınıfına etkisi.",
     "body": [
@@ -958,7 +958,7 @@
     ],
     "sourceHash": {
       "title": "118927252950",
-      "summary": "ec9809e4aff7",
+      "summary": "4164f1f34596",
       "seoTitle": "6e75c1b4ac89",
       "seoDescription": "df5ffd713ec9",
       "body": "e163b15aa61b",
@@ -1573,7 +1573,7 @@
   },
   "exit-device-outside-trim-functions-2026": {
     "title": "Panik Çıkış Cihazı Dış Kolu 2026: Tüm Dış Kol Fonksiyonları, Dogging Kuralları ve Kararın Neden Asla Bar Olmadığı",
-    "summary": "Bir panik çıkış cihazının iki yarısı vardır ve bunlardan yalnızca biri karar gerektirir. İçerideki bar insanları her zaman dışarı çıkarır; dışarıdaki kol ise kimin gireceğine, kapının mesai saatlerinde kilitsiz tutulup tutulamayacağına ve kapının yangında hâlâ mevzuata uyup uymadığına karar verir. Bu sayfa tüm dış kol fonksiyonlarını karşılaştırıyor, yangın kapılarında mutlak olan kural dahil dogging kurallarını ortaya koyuyor ve kendi on beş dış kolumuzdan kaçının fonksiyonunu yayımladığını sayıyor.",
+    "summary": "İçerideki bar her zaman insanları dışarı çıkarır; dış kol kimin gireceğine, kapının mesai saatlerinde kilitsiz tutulup tutulamayacağına ve yangında hâlâ uygun olup olmadığına karar verir. Dili geri çekili tutan dogging, yangın kapısına yönelik her panik çıkış cihazında yasaktır, çünkü bir yangın kapısı kilitli kalarak işlev görür. Bu sayfa tüm dış kol işlevlerini, 4 cihaz tipini ve her birinin aldığı kolları, mekanik ve silindirli dogging farkını ve 15 dış kolumuzdan kaçının işlevini yayımladığını karşılaştırır.",
     "seoTitle": "Panik Çıkış Cihazı Dış Kolu 2026: Fonksiyonlar ve Dogging",
     "seoDescription": "Panik çıkış cihazı dış kol fonksiyonları: yalnız çıkış, gece kilidi, giriş, depo ve elektrikli; ayrıca dogging ve yangın kapısı kuralı.",
     "body": [
@@ -1651,7 +1651,7 @@
     ],
     "sourceHash": {
       "title": "356dec39cbb4",
-      "summary": "4d9cfe83be5c",
+      "summary": "60fee76e98a5",
       "seoTitle": "436da21c0bc4",
       "seoDescription": "a6d9f0d49bd2",
       "body": "84b30a6ab3e4",
@@ -1882,7 +1882,7 @@
   },
   "hardware-refurbishment-survey-2026": {
     "title": "Kapı Donanımı Yenileme Keşfi 2026: On Dört Alan, Tornavida Gerektirenler ve Tamamen Açamadığınız Bir Binadan Nasıl Örnek Alınır",
-    "summary": "Bir yenileme işinde çizimler, kapılarda olanın değil, amaçlananın kaydıdır. Bu sayfa kanat başına kaydedilmeye değer on dört alanı veriyor, koridordan alınabilenleri tornavida gerektirenlerden ayırıyor, kapı tipine göre bir örnekleme kuralı koyuyor ve keşfin nasıl siparişe dönüştüğünü gösteriyor.",
+    "summary": "Çizimleri değil kapıları inceleyin ve her kanat için 14 alan kaydedin. 1 ile 7 ve 12 ile 14 arasındaki alanlar koridordan bir kumpas ve bir telefonla alınır; 8, 9 ve 11. alanlar kilidin ya da silindirin sökülmesini gerektirir, numune almanın nedeni budur. Bu sayfa 14 alanı ve her birinin bir siparişi neden belirlediğini listeler, kapı tipine göre bir numune alma kuralı verir ve keşfin nasıl siparişe dönüştüğünü gösterir.",
     "seoTitle": "Kapı Donanımı Yenileme Keşfi 2026: On Dört Alan",
     "seoDescription": "Donanım yenileme keşfinde kapı başına neler kaydedilir, hangi alanlar kilidin sökülmesini ister, tipe göre örnekleme ve keşfin siparişe dönüşmesi.",
     "body": [
@@ -1956,7 +1956,7 @@
     ],
     "sourceHash": {
       "title": "ea574ebd067b",
-      "summary": "07af596e0840",
+      "summary": "af8752842c02",
       "seoTitle": "674b9de85346",
       "seoDescription": "ca9076f8d3c2",
       "body": "2d1c021fffe5",
@@ -1965,7 +1965,7 @@
   },
   "hardware-warranty-what-it-covers-2026": {
     "title": "Kapı Donanımı Garantisi 2026: \"On Yıl\" Gerçekte Neyi Kapsar, İşi Gören Beş İstisna ve Bir Talep Nasıl Kabul Görür",
-    "summary": "Garanti yıl sayısı olarak okunur, istisnalarıyla karara bağlanır. Bu sayfa garantiyi, güvenceyi ve yasal hakları birbirinden ayırıyor, taleplerin çoğunu düşüren beş istisnayı listeliyor, sorumluluğun neden gerçekte montaj ve temizlikte düğümlendiğini açıklıyor, bir talebin kabul görmesi için neye ihtiyaç olduğunu ortaya koyuyor ve bir fabrikanın bir daha asla görmeyeceği bir parça hakkında dürüstçe neyi vaat edebileceğini söylüyor.",
+    "summary": "Bir garantiyi yıl sayısı değil istisnaları belirler ve taleplerin çoğu 5 istisnaya takılır: hatalı montaj (açık ara en büyüğü), kıyıdaki bir kapıda 201 paslanmaz kol gibi uygunsuz bir ortam, kaplamalı yüzeyde yanlış temizleyici, değişiklik ve olağan aşınma. Bu sayfa garantiyi taahhütten ve yasal haklardan ayırır, başarılı bir talebin neleri içerdiğini ortaya koyar ve bir fabrikanın bir daha görmeyeceği bir parça için dürüstçe neyi vaat edebileceğini söyler.",
     "seoTitle": "Kapı Donanımı Garantisi 2026: Neyi Kapsar, Ne Geçersiz Kılar",
     "seoDescription": "Kapı donanımı garantisi neyi kapsar, talepleri düşüren beş istisna, montaj ve temizliğin sorumluluğu nasıl belirlediği ve başarılı bir talebin içeriği.",
     "body": [
@@ -2042,7 +2042,7 @@
     ],
     "sourceHash": {
       "title": "8aa751178204",
-      "summary": "bad7f4febe06",
+      "summary": "a732d1ff86ce",
       "seoTitle": "cdc33bc30f28",
       "seoDescription": "338ff45b3007",
       "body": "c4fcf6c1d93b",
@@ -2122,7 +2122,7 @@
   },
   "key-blanks-and-restricted-profiles-2026": {
     "title": "Anahtar Taslakları ve Kısıtlı Profiller 2026: Açık, Kısıtlı ve Patentli Anahtar Yolları ve Anahtar Kontrolünün Gerçekte Ne Sağladığı",
-    "summary": "Kilide giren bir anahtar ile kilidi çeviren bir anahtar iki ayrı başarıdır ve aradaki fark anahtar yoludur. Bu sayfa taslağın ve profilin ne olduğunu açıklıyor, açık, kısıtlı ve patentli anahtar yollarını birbirinden ayırıyor, her birinin neyi durdurup neyi durdurmadığını net biçimde ortaya koyuyor, bir patentin sona ermesinin yıllar önce şartnamesi yazılmış bir binanın güvenliğini neden değiştirdiğini açıklıyor ve bir master anahtar sistemi kesilmeden önce alıcının neye karar vermesi gerektiğini listeliyor.",
+    "summary": "Bir anahtar yolu açık, kısıtlı ya da patentlidir. Açık taslaklar her yerde satılır ve bir kopya 2 dakika sürer; kısıtlı taslaklar yalnızca yetkili bayilere ulaşır, bu sözleşmeye dayalı bir denetimdir; patentli taslaklar patentin süresi dolunca biten yasal bir tekeldir, bu yüzden yıllar önce belirlenmiş bir sistem artık korunmuyor olabilir. Üçünden hiçbiri silindiri maymuncukla açmayı ya da delmeyi zorlaştırmaz. Bu sayfa ayrıca bir master anahtar sistemi kesilmeden önce karar verilmesi gerekenleri listeler.",
     "seoTitle": "Anahtar Taslakları ve Kısıtlı Profiller 2026",
     "seoDescription": "Anahtar taslakları, profiller; açık, kısıtlı ve patentli anahtar yolları, anahtar kontrolünün durdurdukları, patent süresi ve master anahtar kararları.",
     "body": [
@@ -2195,7 +2195,7 @@
     ],
     "sourceHash": {
       "title": "c110f8c181d2",
-      "summary": "a2cf40fea24b",
+      "summary": "a5f1437eea8d",
       "seoTitle": "98660cb7cd4d",
       "seoDescription": "4dd4ca2743a6",
       "body": "7190ece6cbaa",
@@ -2280,7 +2280,7 @@
   },
   "master-key-hierarchy-planning-2026": {
     "title": "Master Anahtar Hiyerarşisi Planlama 2026: Seviyeler, Çapraz Anahtarlamanın Gerçek Maliyeti ve Yarınki Binanız İçin Nasıl Pay Bırakılır",
-    "summary": "Bir master anahtar sistemi bir kez tasarlanır ve yirmi yıl boyunca onunla yaşanır; yeri tükenen neredeyse her sistem aynı iki nedenle tükenir: bina için fazla seviye ve kapı kapı iyilik olarak verilen çapraz anahtarlama. Bu sayfa hiyerarşiyi ortaya koyuyor, her master seviyesinin ve her çapraz anahtarın neden sınırlı bir havuzdan kapasite tükettiğini açıklıyor ve tek bir silindir kesilmeden önce cevaplanması gereken soruları veriyor.",
+    "summary": "Bir master anahtar sistemi en fazla 5 seviyeden oluşur (GGMK, GMK, MK, SMK ve tekil anahtar) ve çoğu binanın en fazla 3 seviyeye ihtiyacı vardır. Her fazla seviye ve her çapraz anahtarlı kapı sınırlı bir kombinasyon havuzundan harcar; sistemlerin yerinin tükenmesinin nedeni budur. Bu sayfa hiyerarşiyi, bir silindir kesilmeden önce yanıtlanması gereken 5 soruyu, dikey ve yatay tasarımları ve binanın büyümesi için nasıl yer ayrılacağını ele alır.",
     "seoTitle": "Master Anahtar Hiyerarşisi 2026: Seviyeler ve Kapasite",
     "seoDescription": "Master anahtar hiyerarşisi planlama: seviyeler, çapraz anahtarlamanın kapasiteyi tüketmesi, genişleme payı, şantiye anahtarı ve kesim öncesi kararlar.",
     "body": [
@@ -2363,7 +2363,7 @@
     ],
     "sourceHash": {
       "title": "d3ae9dfc3161",
-      "summary": "888492d769fe",
+      "summary": "8ff891659310",
       "seoTitle": "a7b6bfdeee17",
       "seoDescription": "2e5d713090d8",
       "body": "eb7628a2bfc8",
@@ -2527,22 +2527,22 @@
   },
   "mortise-lock-case-comparison-2026": {
     "title": "Gömme Kilit Gövdesi Karşılaştırması 2026: Yayımlanan Tüm Backset ve Aks Mesafesi Değerleri Yan Yana",
-    "summary": "Gömme kilit gövdelerimizden 32'si hem backset hem aks mesafesi yayımlıyor. İşte hepsi, dar profil ve standart olmak üzere iki tabloda; adlandırma tuzakları ve eksikler açıkça belirtilerek.",
+    "summary": "Gömme kilit gövdelerimizden 34'si hem backset hem aks mesafesi yayımlıyor. İşte hepsi, dar profil ve standart olmak üzere iki tabloda; adlandırma tuzakları ve eksikler açıkça belirtilerek.",
     "seoTitle": "Gömme Kilit Gövdeleri: Backset ve Aks Mesafesi Tablosu",
     "seoDescription": "Backset ve aks mesafesi yayımlanan tüm gömme kilit gövdelerimiz iki tabloda: 20–35 mm dar profil ve 40–90 mm standart backset.",
     "body": [
       "Her gömme kilit gövdesi her şeyden önce iki sayıyla tanımlanır: kapı kenarının yüzünden mil merkezine kadar olan backset ve milden silindir merkezine kadar olan aks mesafesi. Bu ikisini doğru alırsanız kol ve anahtar kapıdaki deliklerle hizalanır. Birini yanlış alırsanız kilitle ilgili başka hiçbir şeyin önemi kalmaz, çünkü delikler zaten açılmıştır.",
-      "Bu rehber, kataloğumuzda iki sayıyı da yayımlayan tüm kilit gövdelerini (Eylül 2026 itibarıyla 57 kilit gövdesi kaydından 32'si) yan yana koyuyor; böylece bir alıcı 57 ürün sayfasını okumak yerine kapıya uyan gövdeyi bulabilir. Tablolar o sayfalardaki şartname satırlarından üretilmiştir; içlerinde tahmini hiçbir şey yoktur.",
+      "Bu rehber, kataloğumuzda iki sayıyı da yayımlayan tüm kilit gövdelerini (Eylül 2026 itibarıyla 54 kilit gövdesi kaydından 34'si) yan yana koyuyor; böylece bir alıcı 54 ürün sayfasını okumak yerine kapıya uyan gövdeyi bulabilir. Tablolar o sayfalardaki şartname satırlarından üretilmiştir; içlerinde tahmini hiçbir şey yoktur.",
       "TABLOLAR NASIL OKUNUR",
       "İki ölçü de milimetre olarak, yanında inç karşılığıyla yayımlanır. Backset, arkasındaki gövdeden değil, alın plakasının dış yüzünden ölçülür. Aradaki fark alın plakası kalınlığıdır ve bir kolu rozeti üzerinde eksenden kaydırmaya yeter. Aks mesafesi, kare mil deliğinin merkezi ile silindir deliğinin merkezi arasında ölçülür. Bir kayıt ayrıca bir silindir tipi, bir sürgü düzeni ya da bir alın plakası ölçüsü yayımlıyorsa son sütunda görünür; \"yayımlanmadı\", özelliğin olmadığı değil, kaydın bunu belirtmediği anlamına gelir.",
       "İKİ AİLE: DAR PROFİL VE STANDART",
-      "Sayıların gösterdiği ilk şey, kilit gövdelerimizin örtüşmeyen iki aileye ayrıldığıdır. 20 ila 35 mm backset'ler dar profil gövdelerdir; dikey kaydı geleneksel bir kilidi alamayacak kadar dar olan alüminyum doğramalı kapılar için üretilmiştir ve 32'nin 12'si bu gruptadır. 40 mm ve üzeri backset'ler ahşap ve çelik kapılar için standart gövdelerdir ve 20'si bu gruptadır. Alüminyum kapıların neden sarktığını anlatan yazımız, dar profil bir kapının neden kendine özgü bir kilit gövdesine ihtiyaç duyduğunu ve standart bir gövdenin kısa backset'li bir versiyonunu neden öylece alamayacağını açıklıyor.",
+      "Sayıların gösterdiği ilk şey, kilit gövdelerimizin örtüşmeyen iki aileye ayrıldığıdır. 20 ila 35 mm backset'ler dar profil gövdelerdir; dikey kaydı geleneksel bir kilidi alamayacak kadar dar olan alüminyum doğramalı kapılar için üretilmiştir ve 34'nin 12'si bu gruptadır. 40 mm ve üzeri backset'ler ahşap ve çelik kapılar için standart gövdelerdir ve 22'si bu gruptadır. Alüminyum kapıların neden sarktığını anlatan yazımız, dar profil bir kapının neden kendine özgü bir kilit gövdesine ihtiyaç duyduğunu ve standart bir gövdenin kısa backset'li bir versiyonunu neden öylece alamayacağını açıklıyor.",
       "Dar profil gövdeler, backset'e göre:",
-      "| Model | Backset | Aks mesafesi | Silindir | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| LC8520 | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8520B | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8520PS | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| 140 | 25 mm (1\") | 72 mm (2-13/16\") | yayımlanmadı | alın plakası 183,5 × 20 mm |\n| LC8525 | 25 mm (1\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8525B | 25 mm (1\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| AI8530 | 30 mm (1-3/16\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC8530BK | 30 mm (1-3/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8530PS | 30 mm (1-3/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC9230 | 30 mm (1-3/16\") | 92 mm (3-5/8\") | yayımlanmadı | yayımlanmadı |\n| LC8535 | 35 mm (1-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8535B | 35 mm (1-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |",
+      "| Model | Backset | Aks mesafesi | Silindir | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| LC8520 | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8520B | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8520PS | 20 mm (13/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| AR4-140 | 25 mm (1\") | 72 mm (2-13/16\") | yayımlanmadı | alın plakası 183,5 × 20 mm |\n| LC8525 | 25 mm (1\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8525B | 25 mm (1\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| AI8530 | 30 mm (1-3/16\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC8530BK | 30 mm (1-3/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8530PS | 30 mm (1-3/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC9230 | 30 mm (1-3/16\") | 92 mm (3-5/8\") | yayımlanmadı | yayımlanmadı |\n| LC8535 | 35 mm (1-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC8535B | 35 mm (1-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |",
       "Standart gövdeler, backset'e göre:",
-      "| Model | Backset | Aks mesafesi | Silindir | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| LC02 85×40mm | 40 mm (1-9/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC03 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC07 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | alın plakası 240 × 23 mm |\n| LC22 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC34 50×72mm | 50 mm (1-15/16\") | 72 mm (2-13/16\") | Avrupa profil | yayımlanmadı |\n| LC06 85_50PS | 50 mm (1-15/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC14 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | Avrupa profil | Dört yuvarlak sürgü |\n| LC21 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC33-5572 | 55 mm (2-3/16\") | 72 mm (2-13/16\") | Avrupa profil | yayımlanmadı |\n| LC08 85×55mm | 55 mm (2-3/16\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC6860 | 60 mm (2-3/8\") | 68 mm (2-11/16\") | yayımlanmadı | yayımlanmadı |\n| LC04 85*60 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Avrupa profil | Dört yuvarlak sürgü |\n| LC05 8560 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC09 85×60mm | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC32 65×72mm | 65 mm (2-9/16\") | 72 mm (2-13/16\") | yayımlanmadı | yayımlanmadı |\n| LC7065 | 70 mm (2-3/4\") | 65 mm (2-9/16\") | yayımlanmadı | yayımlanmadı |\n| LC7065PS | 70 mm (2-3/4\") | 65 mm (2-9/16\") | Avrupa profil | yayımlanmadı |\n| LC7065S | 70 mm (2-3/4\") | 65 mm (2-9/16\") | yayımlanmadı | yayımlanmadı |\n| LC04 85*70 | 70 mm (2-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC9045 | 90 mm (3-9/16\") | 45 mm (1-3/4\") | yayımlanmadı | yayımlanmadı |",
+      "| Model | Backset | Aks mesafesi | Silindir | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| AR4-110 | 40 mm (1-9/16\") | 68 mm (2-11/16\") | yayımlanmadı | alın plakası 212 × 25 mm |\n| AR4-101 | 40 mm (1-9/16\") | 72 mm (2-13/16\") | yayımlanmadı | alın plakası 220 × 25 mm |\n| LC02 85×40mm | 40 mm (1-9/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC03 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC07 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | alın plakası 240 × 23 mm |\n| LC22 85×45mm | 45 mm (1-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC34 50×72mm | 50 mm (1-15/16\") | 72 mm (2-13/16\") | Avrupa profil | yayımlanmadı |\n| LC06 85_50PS | 50 mm (1-15/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC14 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | Avrupa profil | Dört yuvarlak sürgü |\n| LC21 85×50mm | 50 mm (1-15/16\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC33-5572 | 55 mm (2-3/16\") | 72 mm (2-13/16\") | Avrupa profil | yayımlanmadı |\n| LC08 85×55mm | 55 mm (2-3/16\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC6860 | 60 mm (2-3/8\") | 68 mm (2-11/16\") | yayımlanmadı | yayımlanmadı |\n| LC04 85*60 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Avrupa profil | Dört yuvarlak sürgü |\n| LC05 8560 | 60 mm (2-3/8\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC09 85×60mm | 60 mm (2-3/8\") | 85 mm (3-3/8\") | Avrupa profil | yayımlanmadı |\n| LC32 65×72mm | 65 mm (2-9/16\") | 72 mm (2-13/16\") | yayımlanmadı | yayımlanmadı |\n| LC7065 | 70 mm (2-3/4\") | 65 mm (2-9/16\") | yayımlanmadı | yayımlanmadı |\n| LC7065PS | 70 mm (2-3/4\") | 65 mm (2-9/16\") | Avrupa profil | yayımlanmadı |\n| LC7065S | 70 mm (2-3/4\") | 65 mm (2-9/16\") | yayımlanmadı | yayımlanmadı |\n| LC04 85*70 | 70 mm (2-3/4\") | 85 mm (3-3/8\") | yayımlanmadı | yayımlanmadı |\n| LC9045 | 90 mm (3-9/16\") | 45 mm (1-3/4\") | yayımlanmadı | yayımlanmadı |",
       "KOLU AKS MESAFESİ BELİRLER",
-      "Yayımlanan gövdeler arasında 85 mm (3-3/8\") açık ara en yaygın aks mesafesidir: 32'nin 22'si, on iki dar profil gövdenin onu dahil. Diğerleri 92 mm (LC9230), 72 mm (dört gövde: 140, LC34 50×72mm, LC33-5572 ve LC32 65×72mm), 68 mm (LC6860), 65 mm (üç gövde: LC7065, LC7065PS ve LC7065S) ve 45 mm'dir (LC9045).",
+      "Yayımlanan gövdeler arasında 85 mm (3-3/8\") açık ara en yaygın aks mesafesidir: 34'nin 22'si, on iki dar profil gövdenin onu dahil. Diğerleri 92 mm (LC9230), 72 mm (beş gövde: AR4-140, AR4-101, LC34 50×72mm, LC33-5572 ve LC32 65×72mm), 68 mm (iki gövde: AR4-110 ve LC6860), 65 mm (üç gövde: LC7065, LC7065PS ve LC7065S) ve 45 mm'dir (LC9045).",
       "Bu önemlidir, çünkü aks mesafesi kolla ortaktır. Uzun plakalı bir kol ve silindir deliğini aynı plaka üzerinde taşıyan her aksesuar tek bir aks mesafesine göre delinir ve yalnızca aynı mesafedeki bir kilit gövdesiyle çalışır. Yeni bir kapıda önce aks mesafesini, sonra kolu seçin. Yedek parçada mevcut delikler bunu sizin için zaten seçmiştir: onları ölçün ve her şeyden önce o sayıyı tablolarda arayın. Paslanmaz 9000 kolları ve LH kol serisi hakkındaki yazılarımız, bir plakanın delik aralığının gövdeyle nasıl eşleştirildiğini açıklıyor.",
       "Farklı pazarlar farklı aks mesafelerinde standartlaşır ve birkaç pazara hizmet veren bir tedarikçi birkaçını stokta tutar. Böyle bir serinin 72 mm ve 92 mm'nin yanında 85 mm taşımasının nedeni budur: her biri birilerinin kapıları için doğru cevaptır.",
       "KISA BACKSET'İN BEDELİ",
@@ -2553,7 +2553,7 @@
       "Bu model adlarının çoğu iki sayıyı içerir ve kilidi doğrudan addan okumak cazip gelir. Okumayın. Adlandırma seri genelinde tutarlı değildir. LC8530 ve LC6860 aks mesafesini önce, backset'i sonra koyar; LC32 65×72mm ve LC34 50×72mm ise backset'i önce koyar. LC7065 varyantları ve LC9045 yalnızca backset-önce sırasıyla doğru okunur: kayıtları 65 mm aksla 70 mm backset ve 45 mm aksla 90 mm backset diyor. Bu ikisi tablolardaki aykırı değerlerdir ve istediğiniz gövde bunlardan biriyse sipariş vermeden önce iki sayıyı da bizimle teyit edin.",
       "Bundan çıkan kural kısadır: adı değil, her zaman şartname satırlarını okuyun. Yukarıdaki tablolar tam da bu nedenle satırlardan oluşturulmuştur.",
       "TABLOLARIN DIŞARIDA BIRAKTIKLARI",
-      "Bilinmeye değer iki tür eksik vardır. Birincisi, 25 kilit gövdesi kaydı iki sayıyı da yayımlamıyor ve tablolarda yer almıyor. Bazıları yalnızca bir backset (16 mm ile LC17, 45 mm ile LC5845), bazıları yalnızca bir alın plakası ölçüsü yayımlıyor, bazıları ise henüz hiçbir şey yayımlamıyor. İkincisi, tablolarda yer alan gövdelerin çoğu geometrinin geri kalanını değil yalnızca iki sayıyı yayımlıyor. Tam setini yayımlayan yalnızca LC07'dir: 240 × 23 mm alın plakası, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı.",
+      "Bilinmeye değer iki tür eksik vardır. Birincisi, 20 kilit gövdesi kaydı iki sayıyı da yayımlamıyor ve tablolarda yer almıyor. Bazıları yalnızca bir backset (16 mm ile LC17, 45 mm ile LC5845), bazıları yalnızca bir alın plakası ölçüsü yayımlıyor, bazıları ise henüz hiçbir şey yayımlamıyor. İkincisi, tablolarda yer alan gövdelerin çoğu geometrinin geri kalanını değil yalnızca iki sayıyı yayımlıyor. Tam setini yayımlayan yalnızca LC07'dir: 240 × 23 mm alın plakası, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı.",
       "Mevcut bir kapıda kilit değiştirirken bu ikinci eksik önemlidir, çünkü yeni gövdenin eski yuvaya oturup oturmayacağına alın plakası boyu ve gövde derinliği karar verir. Zaten satın aldığınız bir kilidin karşılığını bulmayla ilgili yazımız, birbirinin yerine geçebilirliği belirleyen altı sayıyı ortaya koyuyor; istediğiniz gövde bunlardan yalnızca ikisini yayımlıyorsa sipariş vermeden önce diğer dördünü isteyin; biz de onları tahmin etmek yerine ölçeriz.",
       "ÜÇ ADIMDA SEÇİM",
       "Birincisi, aileyi kapı belirler: alüminyum dar profil bir kapı birinci tablodan, ahşap ya da çelik bir kapı ikinci tablodan bir gövde alır. İkincisi, backset'i kapı hazırlığı ya da kolun kanatta nerede durması gerektiği, yedek parçada ise eski kilit belirler. Üçüncüsü, aks mesafesini kullanmayı planladığınız kol ya da aksesuar veya kapıda zaten bulunan delikler belirler. Ancak bu üçünden sonra fonksiyon (yalnız dil, dil ve sürgü, geçiş) seçimi tek bir modele indirir ve ancak ondan sonra kaplama konuşmaya girer.",
@@ -2562,11 +2562,11 @@
     "faq": [
       {
         "question": "Gömme kilit gövdelerinizde en yaygın aks mesafesi hangisi?",
-        "answer": "85 mm. İki sayıyı da yayımlayan 32 kilit gövdesinden 22'si 85 mm aks mesafesi kullanıyor; on iki dar profil gövdenin onu dahil. Diğerleri 92 mm (LC9230), 72 mm (dört gövde: 140, LC34 50×72mm, LC33-5572 ve LC32 65×72mm), 68 mm (LC6860), 65 mm (üç gövde: LC7065, LC7065PS ve LC7065S) ve 45 mm'dir (LC9045). Aks mesafesi kola ya da plakaya uymalıdır; bu yüzden yedek parçada önce mevcut delikleri ölçün."
+        "answer": "85 mm. İki sayıyı da yayımlayan 34 kilit gövdesinden 22'si 85 mm aks mesafesi kullanıyor; on iki dar profil gövdenin onu dahil. Diğerleri 92 mm (LC9230), 72 mm (beş gövde: AR4-140, AR4-101, LC34 50×72mm, LC33-5572 ve LC32 65×72mm), 68 mm (iki gövde: AR4-110 ve LC6860), 65 mm (üç gövde: LC7065, LC7065PS ve LC7065S) ve 45 mm'dir (LC9045). Aks mesafesi kola ya da plakaya uymalıdır; bu yüzden yedek parçada önce mevcut delikleri ölçün."
       },
       {
         "question": "Dar profil alüminyum kapı kilit gövdesinin backset'i nedir?",
-        "answer": "Serimizde 20 mm ile 35 mm arası. Yayımlanan on iki gövde bu aralıkta: LC8520, LC8520B, LC8520PS, 140, LC8525, LC8525B, AI8530, LC8530BK, LC8530PS, LC9230, LC8535 ve LC8535B. Ahşap ve çelik kapılar için standart gövdeler 40 mm'den başlar ve 70 mm'ye kadar gider; bir de 90 mm'lik aykırı bir değer vardır."
+        "answer": "Serimizde 20 mm ile 35 mm arası. Yayımlanan on iki gövde bu aralıkta: LC8520, LC8520B, LC8520PS, AR4-140, LC8525, LC8525B, AI8530, LC8530BK, LC8530PS, LC9230, LC8535 ve LC8535B. Ahşap ve çelik kapılar için standart gövdeler 40 mm'den başlar ve 70 mm'ye kadar gider; bir de 90 mm'lik aykırı bir değer vardır."
       },
       {
         "question": "Backset ve aks mesafesini kilit gövdesi model adından okuyabilir miyim?",
@@ -2574,7 +2574,7 @@
       },
       {
         "question": "Kilit gövdeleriniz alın plakası ve gövde ölçülerini yayımlıyor mu?",
-        "answer": "Çoğu henüz yayımlamıyor. Hem backset hem aks mesafesi olan 32 gövdeden yalnızca LC07 tam geometrisini yayımlıyor: 240 × 23 mm alın plakası, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı. Yedek parça için sipariş vermeden önce alın plakası ve gövde ölçülerini isteyin; biz de tahmin etmek yerine ölçeriz."
+        "answer": "Çoğu henüz yayımlamıyor. Hem backset hem aks mesafesi olan 34 gövdeden yalnızca LC07 tam geometrisini yayımlıyor: 240 × 23 mm alın plakası, 173 mm gövde yüksekliği, 72 mm gövde derinliği, 26 mm dil çıkışı ve 18,5 mm sürgü çıkıntısı. Yedek parça için sipariş vermeden önce alın plakası ve gövde ölçülerini isteyin; biz de tahmin etmek yerine ölçeriz."
       },
       {
         "question": "Dar profil kapılar neden farklı kollar ister?",
@@ -2681,7 +2681,7 @@
   },
   "qualifying-a-hardware-supplier-2026": {
     "title": "Donanım Tedarikçisini Değerlendirmek 2026: Fabrika, Tüccar ya da Aracı, Onları Ayıran Beş Soru ve Neyin Doğrulanması Gerektiği",
-    "summary": "Bir donanım talebine üç tür şirket cevap verir ve üçü de evet der. Bu sayfa bir fabrikanın, bir ticaret şirketinin ve bir aracının gerçekte neyi kontrol ettiğini açıklıyor, kimseyle yüzleşmeye gerek kalmadan onları ayıran beş soru veriyor, bağımsız olarak doğrulanabilecekleri listeliyor ve testin tamamını bize uyguluyor.",
+    "summary": "Bir fabrikayı bir ticaret şirketinden ya da aracıdan 5 soru ayırır: hangi modelleri kendiniz üretiyorsunuz; bu modelin mesafesini (backset) değiştirebilir misiniz ve kalıp maliyeti ne olur; kaplamanızı kim yapıyor; tek bir kaplamada minimum nedir ve neden; ölçülü çizimi alabilir miyiz. Bir fabrika her birine hemen ya da bir gerekçeyle yanıt verir. Bu sayfa ayrıca bağımsız olarak doğrulanabilecekleri ve ilk siparişin nasıl olması gerektiğini listeler ve testin tamamını bize uygular.",
     "seoTitle": "Donanım Tedarikçisi Değerlendirme 2026: Fabrika mı Tüccar mı",
     "seoDescription": "Donanım fabrikasını ticaret şirketinden ya da aracıdan ayırmak: beş soru, bağımsız olarak doğrulanabilecekler ve ilk siparişin ne olması gerektiği.",
     "body": [
@@ -2763,7 +2763,7 @@
     ],
     "sourceHash": {
       "title": "035bcbc4baf9",
-      "summary": "de5e9959ca06",
+      "summary": "6c313098793c",
       "seoTitle": "92d83c3b55dd",
       "seoDescription": "680a58a09c39",
       "body": "2698673ab28e",
@@ -2772,7 +2772,7 @@
   },
   "samples-and-incoming-inspection-2026": {
     "title": "Numuneler ve Giriş Kontrolü 2026: Altın Numune, Neyin Ölçüleceği ve Bir Numunenin Size Söyleyemeyecekleri",
-    "summary": "Numune, bir tedarikçinin bir şeyi sizin kastettiğinizden farklı anladığını keşfetmenin en ucuz yeridir. Bu sayfa üç numune türünü ve hangisinin isteneceğini, bir numuneyi süs olmaktan çıkarıp bağlayıcı kılan altın numune prosedürünü, bir numune geldiğinde tam olarak neyin ölçüleceğini, bir numunenin gerçekten gösteremeyeceği üç özelliği ve bağımsız bir kontrolörün sizi aramadan uygulayabileceği bir kontrol standardının nasıl yazılacağını ortaya koyuyor.",
+    "summary": "Katalogdan herhangi bir farkı olan her şey için üretim öncesi numune isteyin ve onu altın numuneye dönüştürün: iki tarafça imzalanıp tarihlenen iki özdeş parça, her tarafta biri mühürlü, satın alma siparişinde bir referans numarasıyla. Bir numune parti tutarlılığını, korozyon direncini ya da 200.000 çevrimlik ömrü gösteremez; bunlar için bir numune alma planı ve test raporları gerekir. Bu sayfa ayrıca kilit, kol, menteşe, kapı kapatıcı ve cam donanımında neyin ölçüleceğini ve üçüncü taraf bir denetçinin uygulayabileceği bir muayene standardının nasıl yazılacağını listeler.",
     "seoTitle": "Numuneler ve Giriş Kontrolü 2026: Altın Numune",
     "seoDescription": "Donanım numuneleri doğru nasıl kullanılır: üç numune türü, altın numune prosedürü, varışta neyin ölçüleceği ve bir numunenin gösteremeyeceği üç şey.",
     "body": [
@@ -2844,7 +2844,7 @@
     ],
     "sourceHash": {
       "title": "d1274e4d83a8",
-      "summary": "23dcdf73ca48",
+      "summary": "3caddd1d93da",
       "seoTitle": "cdcd2908faf9",
       "seoDescription": "1a9528daded8",
       "body": "a95e9ccc502a",
@@ -3105,7 +3105,7 @@
   },
   "strike-plates-and-keeps-2026": {
     "title": "Karşılıklar 2026: ANSI Karşılık ile T Karşılık, Dudak Boyu ve Kimsenin Ölçmediği Ölçü",
-    "summary": "Karşılık, bir kapı açıklığının en ucuz bileşenidir ve kilidin hiç düzgün kilitlenip kilitlenmeyeceğine karar veren bileşendir. Bu sayfa iki standart Kuzey Amerika karşılık ölçüsünü, Avrupa karşılık geleneklerini, dudak boyunun tahmin etmek yerine nasıl hesaplanacağını, düz ve radyuslu köşeler arasındaki farkı ve kilitte duran bir güvenlik yükseltmesinin neden hiçbir şeyi yükseltmediğini ortaya koyuyor.",
+    "summary": "Kuzey Amerika'da iki standart karşılık ölçüsü vardır: ticari çelik kasalar için ANSI karşılığı, 4-7/8 × 1-1/4 inç (yaklaşık 124 × 32 mm), ve ahşap kasalar için T karşılığı, 2-3/4 × 1-1/8 inç (yaklaşık 70 × 29 mm); kasa yeniden işlenmeden biri diğerinin yerine geçmez. Bu sayfa ayrıca Avrupa karşılıklarını, dudak boyunun nasıl hesaplanacağını, keskin ve yuvarlak köşelerin farkını ve kilitte duran bir güvenlik iyileştirmesinin neden hiçbir şeyi iyileştirmediğini ele alır.",
     "seoTitle": "Karşılıklar 2026: ANSI Karşılık, T Karşılık, Dudak Boyu",
     "seoDescription": "4-7/8 inç ANSI ve 2-3/4 inç T karşılık dahil standart karşılık ölçüleri, dudak boyu hesabı, düz ve radyuslu köşeler, kutulu karşılık ve toz kutusu.",
     "body": [
@@ -3172,7 +3172,7 @@
     ],
     "sourceHash": {
       "title": "7b937423e46b",
-      "summary": "52c02def8414",
+      "summary": "0187198c22fe",
       "seoTitle": "dfdd64d19878",
       "seoDescription": "d5914b5d0894",
       "body": "0152052c86da",
@@ -3262,7 +3262,7 @@
     ],
     "sourceHash": {
       "title": "846af929d085",
-      "summary": "8a9579fbf4a2",
+      "summary": "5ca1d67af7fc",
       "seoTitle": "0a676aa65028",
       "seoDescription": "250b45fed100",
       "body": "4167d2695ee3",
@@ -3354,7 +3354,7 @@
   },
   "universal-vs-handed-hardware-2026": {
     "title": "Yönsüz mü Yönlü mü 2026: Hangi Donanım Ters Çevrilebilir, Hangisi Çevrilemez ve Projeleri Zora Sokan Dört Ürün",
-    "summary": "\"Üniversal\" bir donanım kataloğunda üç farklı anlama gelir ve bunlardan yalnızca biri yön konusunu düşünmeyi bırakabileceğiniz anlamına gelir. Bu sayfa yönsüzü, şantiyede ters çevrilebilirden ve fabrikada yönlendirilmişten ayırıyor, insanların yönsüz sandığı hâlde yönlü olan dört ürünü adlandırıyor, ters çevirmenin bir kilidin içinde gerçekte ne yaptığını açıklıyor ve sorunun hiç gelmemesi için siparişe yazılacak satırı veriyor.",
+    "summary": "\"Üniversal\" üç farklı şeyi kapsar: yönsüz (hiç yönü yoktur; çoğu menteşe, düz kol ve silindir gibi), şantiyede çevrilebilir (tek yönde gönderilir ve yerinde çevrilir; çoğu silindirik, tüp ve gömme kilit dili gibi) ve fabrikada yönlü (tek yön). Büyük bir siparişte ürünün yöne çevrilmiş olarak gönderilmesini isteyin ve dağılımı belirtin, örneğin \"24 LH, 16 RH\". Bu sayfa ayrıca insanların yönsüz sandığı ama yönlü olan dört ürünü adlandırır.",
     "seoTitle": "Yönsüz ve Yönlü Donanım 2026: Ne Ters Çevrilebilir",
     "seoDescription": "Hangi kapı donanımı yönsüz, hangisi şantiyede ters çevrilebilir, hangisi fabrikada yönlü; projeleri zora sokan dört ürün ve siparişe ne yazılmalı.",
     "body": [
@@ -3438,7 +3438,7 @@
     ],
     "sourceHash": {
       "title": "5d09c0e0357e",
-      "summary": "1e9f4449bd0a",
+      "summary": "e5bc5547d4db",
       "seoTitle": "bc9b64cd0513",
       "seoDescription": "b8375842134b",
       "body": "549da18577e0",

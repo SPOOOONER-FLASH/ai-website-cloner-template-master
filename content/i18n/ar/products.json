@@ -1333,22 +1333,6 @@
       "specs": "97d170e1550e"
     }
   },
-  "110-lock-case": {
-    "name": "جسم القفل",
-    "summary": "جسم قفل غاطس بسقاطة وترباس، يُورَّد مع صفائح الإغلاق والمفاتيح، وتُؤكَّد الأبعاد على الرسم قبل الطلب.",
-    "description": "الطراز 110 جسم قفل من تصنيع شركة Canton Hyland Hardware & Building Material Co., Ltd. في قوانغدونغ، الصين. الصور المعروضة أعلاه للمنتج الفعلي. ما زلنا نؤكد المواصفات الكاملة لهذا الطراز مع المصنع؛ تواصل مع فريق التصدير لدينا لتحصل على القياسات الفعلية لا على أرقام تقديرية.",
-    "features": [],
-    "specs": [],
-    "seoTitle": "110 جسم القفل، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
-    "seoDescription": "110 جسم القفل. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "ed601adf96e7",
-      "description": "324ead4540e4",
-      "features": "97d170e1550e",
-      "specs": "97d170e1550e"
-    }
-  },
   "112-glass-door-handle": {
     "name": "مقبض باب زجاجي",
     "summary": "مقبض باب زجاجي من الفولاذ المقاوم للصدأ، وتُؤكَّد المواصفات مع المصنع قبل الطلب.",
@@ -1363,55 +1347,6 @@
       "description": "daf000d32806",
       "features": "97d170e1550e",
       "specs": "97d170e1550e"
-    }
-  },
-  "1121-lock-case": {
-    "name": "جسم القفل",
-    "summary": "جسم قفل غاطس بترباس دائري وسقاطة، يُورَّد مع صفائح الإغلاق والبراغي والمفاتيح، وتُؤكَّد الأبعاد على الرسم قبل الطلب.",
-    "description": "الطراز 1121 جسم قفل من تصنيع شركة Canton Hyland Hardware & Building Material Co., Ltd. في قوانغدونغ، الصين. الصور المعروضة أعلاه للمنتج الفعلي. ما زلنا نؤكد المواصفات الكاملة لهذا الطراز مع المصنع؛ تواصل مع فريق التصدير لدينا لتحصل على القياسات الفعلية لا على أرقام تقديرية.",
-    "features": [],
-    "specs": [],
-    "seoTitle": "1121 جسم القفل، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
-    "seoDescription": "1121 جسم القفل. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "8518370ad36b",
-      "description": "78a64e3d2514",
-      "features": "97d170e1550e",
-      "specs": "97d170e1550e"
-    }
-  },
-  "140-lock-case": {
-    "name": "جسم القفل",
-    "summary": "جسم قفل غاطس بمسافة 72mm بين المحورين ومسافة ظهر 25mm؛ صفيحة أمامية 183.5 × 20mm وجسم بطول 125.7mm، مع سقاطة وترباس.",
-    "description": "الطراز 140 جسم قفل من تصنيع شركة Canton Hyland Hardware & Building Material Co., Ltd. في قوانغدونغ، الصين. الصور المعروضة أعلاه للمنتج الفعلي. ما زلنا نؤكد المواصفات الكاملة لهذا الطراز مع المصنع؛ تواصل مع فريق التصدير لدينا لتحصل على القياسات الفعلية لا على أرقام تقديرية.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "25 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "183.5 × 20 mm"
-      },
-      {
-        "label": "Case size",
-        "value": "125.7 × 41.7 mm"
-      }
-    ],
-    "seoTitle": "140 جسم القفل، المسافة بين المحورين 72mm، مسافة الظهر 25mm | Canton Hyland",
-    "seoDescription": "140 جسم القفل: المسافة بين المحورين 72mm، مسافة الظهر 25mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
-    "sourceHash": {
-      "name": "c12be339ca52",
-      "summary": "2271730d7fe1",
-      "description": "0bfed21d6dd7",
-      "features": "97d170e1550e",
-      "specs": "673a8c1c5a86"
     }
   },
   "19-130mm-glass-door-handle": {
@@ -20918,7 +20853,7 @@
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "جسم قفل غاطس قياسي",
-    "summary": "جسم قفل غاطس مدمج يعمل بالمفتاح، من مجموعة AR-4 لسوق الأرجنتين.",
+    "summary": "جسم قفل غاطس قياسي، المرجع المصنعي 7240، بمسافة ظهر 40 mm ومسافة بين المحورين 72 mm وصفيحة واجهة 220 × 25 mm، يُورَّد مع مفتاحين.",
     "features": [],
     "specs": [
       {
@@ -20926,12 +20861,20 @@
         "value": "7240"
       },
       {
-        "label": "Faceplate",
-        "value": "18 × 183"
+        "label": "Center distance",
+        "value": "72 mm"
       },
       {
-        "label": "Case depth",
-        "value": "63"
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
       },
       {
         "label": "Latch options",
@@ -20943,18 +20886,18 @@
       }
     ],
     "seoTitle": "AR4-101 جسم قفل غاطس قياسي، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
-    "seoDescription": "AR4-101 جسم قفل غاطس قياسي. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
+    "seoDescription": "AR4-101 جسم قفل غاطس قياسي: المسافة بين المحورين 72mm، مسافة الظهر 40mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
     "sourceHash": {
       "name": "bd525227f00b",
-      "summary": "de60fa62c0fb",
+      "summary": "dd38258359c0",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "6303006a4cb4"
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-110-mortise-lock": {
     "name": "جسم قفل غاطس أمني",
-    "summary": "جسم قفل غاطس نحيف مهيأ لمجموعة AR-4 لسوق الأرجنتين، بسقاطة وترباس مربع.",
+    "summary": "جسم قفل غاطس أمني بمسافة ظهر 40 mm ومسافة بين المحورين 68 mm وصفيحة واجهة 212 × 25 mm، يُورَّد مع مفتاحين.",
     "features": [],
     "specs": [
       {
@@ -20962,12 +20905,20 @@
         "value": "6840"
       },
       {
-        "label": "Nominal lock body",
-        "value": "68 × 40"
+        "label": "Center distance",
+        "value": "68 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
       },
       {
         "label": "Faceplate",
-        "value": "25 × 210"
+        "value": "212 × 25 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "127.3 × 60.8 mm"
       },
       {
         "label": "Latch options",
@@ -20979,13 +20930,13 @@
       }
     ],
     "seoTitle": "AR4-110 جسم قفل غاطس أمني، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
-    "seoDescription": "AR4-110 جسم قفل غاطس أمني. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
+    "seoDescription": "AR4-110 جسم قفل غاطس أمني: المسافة بين المحورين 68mm، مسافة الظهر 40mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
     "sourceHash": {
       "name": "9cad0957c775",
-      "summary": "cb44b10fdeb9",
+      "summary": "616204155736",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "b37327043c52"
+      "specs": "629d1c51b20f"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -20997,12 +20948,16 @@
         "value": "جسم قفل بلسان خطافي 40"
       },
       {
-        "label": "Faceplate",
-        "value": "25 × 140 mm"
-      },
-      {
         "label": "Backset",
         "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "140 × 25 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "82.4 × 66.7 mm"
       },
       {
         "label": "Hook bolt",
@@ -21013,20 +20968,20 @@
         "value": "سبيكة الزنك أو نحاس؛ مفتاحان"
       }
     ],
-    "summary": "جسم قفل غاطس بلسان خطافي، بمسافة ظهر 40 mm وصفيحة واجهة 25 × 140 mm، يُورَّد مع مفتاحين.",
+    "summary": "قفل غاطس بلسان خطافي يعمل بالمفتاح، بمسافة ظهر 40 mm وصفيحة واجهة 140 × 25 mm، يُورَّد مع مفتاحين.",
     "seoTitle": "AR4-1121 قفل غاطس بلسان خطافي، أجسام الأقفال | Canton Hyland",
     "seoDescription": "AR4-1121 قفل غاطس بلسان خطافي. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
     "sourceHash": {
-      "name": "3cb4d69abbad",
-      "summary": "847cdbd677f0",
+      "name": "a766cbc5b5ab",
+      "summary": "42d552f83f82",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "327a7b601a54"
+      "specs": "93f9975d519e"
     }
   },
   "hyde-ar4-140-mortise-lock": {
-    "name": "جسم قفل غاطس نحيف",
-    "summary": "جسم قفل غاطس مدمج للبروفيلات النحيفة، من مجموعة AR-4 لسوق الأرجنتين.",
+    "name": "جسم قفل غاطس لأبواب الألمنيوم",
+    "summary": "جسم قفل غاطس لمقاطع أبواب الألمنيوم بمسافة ظهر 25 mm ومسافة بين المحورين 72 mm وصفيحة واجهة 183.5 × 20 mm، يُورَّد مع مفتاحين.",
     "features": [],
     "specs": [
       {
@@ -21034,12 +20989,24 @@
         "value": "7225"
       },
       {
-        "label": "Faceplate",
-        "value": "20 × 190"
+        "label": "Center distance",
+        "value": "72 mm"
       },
       {
-        "label": "Lock case",
-        "value": "40 × 125"
+        "label": "Backset",
+        "value": "25 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "183.5 × 20 mm"
+      },
+      {
+        "label": "Case size",
+        "value": "125.7 × 41.7 mm"
+      },
+      {
+        "label": "Application",
+        "value": "أجسام أقفال لأبواب الألومنيوم ذات القوائم الضيقة"
       },
       {
         "label": "Latch options",
@@ -21050,14 +21017,14 @@
         "value": "سبيكة الزنك أو نحاس؛ مفتاحان"
       }
     ],
-    "seoTitle": "AR4-140 جسم قفل غاطس نحيف، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
-    "seoDescription": "AR4-140 جسم قفل غاطس نحيف. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
+    "seoTitle": "AR4-140 جسم قفل غاطس لأبواب الألمنيوم | Canton Hyland",
+    "seoDescription": "AR4-140 جسم قفل غاطس لأبواب الألمنيوم: المسافة بين المحورين 72mm، مسافة الظهر 25mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
     "sourceHash": {
-      "name": "d34887493f3d",
-      "summary": "8b27ed02f6dd",
+      "name": "9ce4ea9ec105",
+      "summary": "1608d47db669",
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
-      "specs": "456103113545"
+      "specs": "1d1a063aeaec"
     }
   },
   "ih01-brass-and-steel-hinges": {

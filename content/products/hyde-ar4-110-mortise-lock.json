@@ -3,27 +3,33 @@
   "alibabaSearchTerm": "110",
   "slug": "hyde-ar4-110-mortise-lock",
   "name": "Security Mortise Lock Body",
-  "nameEs": "Cuerpo de cerradura de embutir de seguridad",
+  "nameEs": "Cerradura de seguridad",
   "series": "HYDE Argentina AR-4",
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "A narrow mortise lock body configured for the Argentina AR-4 market collection, with latch and square deadbolt.",
-  "summaryEs": "Una caja de cerradura de embutir.",
+  "summary": "Security mortise lock body: 40mm backset, 68mm center distance and a 212 × 25mm faceplate, supplied with two keys.",
+  "summaryEs": "Cerradura de seguridad de embutir: entrada de 40 mm, distancia entre ejes de 68 mm y frente de 212 × 25 mm; se entrega con dos llaves.",
   "specs": [
     {
       "label": "Factory reference",
       "value": "6840"
     },
     {
-      "label": "Nominal lock body",
-      "value": "68 × 40",
-      "unit": "mm"
+      "label": "Center distance",
+      "value": "68mm"
+    },
+    {
+      "label": "Backset",
+      "value": "40mm"
     },
     {
       "label": "Faceplate",
-      "value": "25 × 210",
-      "unit": "mm"
+      "value": "212 × 25mm"
+    },
+    {
+      "label": "Case size",
+      "value": "127.3 × 60.8mm"
     },
     {
       "label": "Latch options",
@@ -40,12 +46,20 @@
       "value": "6840"
     },
     {
-      "label": "Cuerpo nominal",
-      "value": "68 × 40"
+      "label": "Distancia entre ejes",
+      "value": "68 mm"
+    },
+    {
+      "label": "Entrada",
+      "value": "40 mm"
     },
     {
       "label": "Frente",
-      "value": "25 × 210"
+      "value": "212 × 25 mm"
+    },
+    {
+      "label": "Medidas del cuerpo",
+      "value": "127,3 × 60,8 mm"
     },
     {
       "label": "Opciones de pestillo",
@@ -80,6 +94,36 @@
       "ratio": "1 / 1",
       "label": "HYDE AR4-110 mortise lock body with key",
       "labelEs": "Cerradura HYDE AR4-110 con llave"
+    },
+    {
+      "src": "/images/products/110-lock-case.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 security mortise lock body, view 4"
+    },
+    {
+      "src": "/images/products/110-lock-case-2.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 security mortise lock body, view 5"
+    },
+    {
+      "src": "/images/products/110-lock-case-3.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 security mortise lock body, view 6"
+    },
+    {
+      "src": "/images/products/110-lock-case-4.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 security mortise lock body, view 7"
+    },
+    {
+      "src": "/images/products/110-lock-case-5.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 security mortise lock body, view 8"
+    },
+    {
+      "src": "/images/products/110-lock-case-6.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 security mortise lock body, view 9"
     }
   ],
   "attachmentIds": [],
@@ -89,24 +133,32 @@
     "AR4-1121"
   ],
   "seoTitle": "AR4-110 Security Mortise Lock Body for Timber & Metal Doors | Canton Hyland",
-  "seoDescription": "AR4-110 security mortise lock body for timber & metal doors. Factory direct, samples and quotation on request.",
-  "seoTitleEs": "AR4-110 Cuerpo de cerradura de embutir de seguridad | Canton Hyland",
-  "seoDescriptionEs": "AR4-110 cuerpo de cerradura de embutir de seguridad para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
+  "seoDescription": "AR4-110 security mortise lock body for timber & metal doors. 68mm center distance, 40mm backset. Factory direct, samples and quotation on request.",
+  "seoTitleEs": "AR4-110 Cerradura de seguridad, ejes 68 mm, entrada 40 mm | Canton Hyland",
+  "seoDescriptionEs": "AR4-110 cerradura de seguridad para puertas de madera y metal. Distancia entre ejes de 68 mm, entrada de 40 mm.",
   "description": "",
-  "namePt": "Corpo de fechadura de embutir de segurança",
-  "summaryPt": "Corpo de fechadura de embutir de segurança.",
+  "namePt": "Fechadura de segurança",
+  "summaryPt": "Fechadura de segurança de embutir: distância ao eixo de 40 mm, distância entre eixos de 68 mm e testa de 212 × 25 mm; fornecida com duas chaves.",
   "specsPt": [
     {
       "label": "Referência de fábrica",
       "value": "6840"
     },
     {
-      "label": "Corpo de fechadura nominal",
-      "value": "68 × 40"
+      "label": "Distância entre eixos",
+      "value": "68 mm"
+    },
+    {
+      "label": "Distância ao eixo (broca)",
+      "value": "40 mm"
     },
     {
       "label": "Testa",
-      "value": "25 × 210"
+      "value": "212 × 25 mm"
+    },
+    {
+      "label": "Dimensões do corpo",
+      "value": "127,3 × 60,8 mm"
     },
     {
       "label": "Opções de trinco",
@@ -117,6 +169,22 @@
       "value": "Zamak ou latão; duas chaves"
     }
   ],
-  "seoTitlePt": "AR4-110 Corpo de fechadura de embutir de segurança | Canton Hyland",
-  "seoDescriptionPt": "AR4-110 corpo de fechadura de embutir de segurança para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta."
+  "seoTitlePt": "AR4-110 Fechadura de segurança, centros 68 mm, eixo 40 mm | Canton Hyland",
+  "seoDescriptionPt": "AR4-110 fechadura de segurança para portas de madeira e metal. Distância entre centros de 68 mm, distância ao eixo de 40 mm.",
+  "modelAliases": [
+    "110"
+  ],
+  "videos": [
+    {
+      "src": "/videos/products/110-lock-case.mp4",
+      "poster": {
+        "src": "/images/products/110-lock-case-video.webp",
+        "ratio": "16 / 9",
+        "label": "AR4-110 security mortise lock body, demonstration still"
+      },
+      "label": "AR4-110 Security Mortise Lock Body, product demonstration",
+      "durationSeconds": 39,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

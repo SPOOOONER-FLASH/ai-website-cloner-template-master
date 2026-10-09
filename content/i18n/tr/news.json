@@ -246,7 +246,7 @@
   },
   "cross-referencing-a-lock-you-already-buy": {
     "title": "Zaten Satın Aldığınız Bir Kilidin Muadilini Bulmak",
-    "summary": "Bize ulaşan aramaların büyük kısmı başka birinin model numarasıdır: başka bir fabrikanın sıva üstü kilidi, başka bir markanın menteşesi, eski bir faturadaki parça kodu. Hepsi aynı soruyu sorar: bunu yeniden almak için ne sipariş etmeliyim? Cevabı altı ölçü belirler ve model numarası bunlardan biri değildir.",
+    "summary": "Başka bir üreticinin kilidini yeniden sipariş etmek için model numarasını değil 6 ölçüyü eşleştirin. Gömme kilitte bunlar mesafe (backset), eksenler arası mesafe, alın sacının boyu ve eni, gövdenin yüksekliği ve derinliği, kare mil ölçüsü (neredeyse her zaman 8 mm) ve kapı kalınlığı aralığıdır. Örneğin LC07 85×45mm modelimizde eksenler arası 85 mm, mesafe 45 mm'dir. Kaplama adları ve sınıf etiketleri fabrikadan fabrikaya taşınmaz; ölçüler taşınır.",
     "seoTitle": "Kapı Kilidi Muadili Nasıl Bulunur | Canton Hyland",
     "seoDescription": "Bir gömme kilidin yerine başkasının geçip geçmeyeceğini altı ölçü belirler: backset, aks mesafesi, ön plaka, gövde, mil ve kapı kalınlığı. Neye bakılmalı?",
     "body": [
@@ -309,7 +309,7 @@
     ],
     "sourceHash": {
       "title": "73af6ab6619f",
-      "summary": "477e46ccc7b1",
+      "summary": "0e5c32a3e3af",
       "seoTitle": "1c5b7fc8a4c7",
       "seoDescription": "2045974f85ac",
       "body": "e8132fc5b50e",
@@ -385,7 +385,7 @@
   },
   "door-coordinator-double-fire-door": {
     "title": "Çift Kanatlı Yangın Kapısı Neden Kapanma Sıralayıcısı İster ve Nasıl Boyutlandırılır",
-    "summary": "İki kapı kapatıcılı bir çift kanatlı yangın kapısı, yaylar hangi sırayı belirlerse o sırayla kapanır. Aktif kanat önce gelirse kapı çıtası onu açık tutar, kapı dile oturmaz ve kapı sistemi artık bir yangın kapısı değildir. Kapanma sıralayıcısı bu sırayı zorunlu kılar. Çalışması için neyle eşleşmesi gerektiği aşağıda.",
+    "summary": "İki kapı kapatıcılı çift kanatlı bir yangın kapısı, yayların belirlediği sırayla kapanır; aktif kanat önce gelirse kapı pervazı onu açık tutar ve kapı kilitlenmez. Bir sıralayıcı pasif kanadı önce kapanmaya zorlar ve yalnızca kanat ağırlıkları, her kanadın kapatıcısı ve sıralayıcının kendi aralığı uyuştuğunda çalışır. DC02'miz 100 kg'a kadar dayanır, ama en güçlü kapatıcımız 85 kg'da durur; bu yüzden 85 kg'ın üzerinde şu an kapatıcı sunmuyoruz.",
     "seoTitle": "Çift Kanatlı Yangın Kapısı İçin Kapanma Sıralayıcı Seçimi",
     "seoDescription": "İki kapatıcılı yangın kapısı neden sıralayıcı ister, yanlış sıra dili nasıl boşa çıkarır, ağırlığa göre seçim. Canton Hyland DC02, 397 × 120mm, 55–100kg.",
     "body": [
@@ -439,7 +439,7 @@
     ],
     "sourceHash": {
       "title": "24fba1d169f0",
-      "summary": "eecbddb1cd3c",
+      "summary": "3c4d3f67cbbd",
       "seoTitle": "c37a1717ce6b",
       "seoDescription": "2c8a7fde1682",
       "body": "3481b4414633",
@@ -448,7 +448,7 @@
   },
   "door-hardware-schedule-guide": {
     "title": "Kapı Donanım Listesi: Donanım Gerçekte Nasıl Şartnameye Yazılır",
-    "summary": "Projeler kilit satın almaz. Kapı tipleri satın alır ve her kapı tipi, kendi içinde tutarlı olması gereken bir donanım setidir. Bunu belirleyen belge kapı donanım listesidir; ona karşı teklif vermeden önce onu anlamaya değer.",
+    "summary": "Projeler kilit değil kapı tipi satın alır: bir donanım listesi HW-01 setinden 30, HW-02'den 90 der ve bir setteki her kalem diğerleriyle uyuşmalıdır. Eksenler arası 85 mm olan bir kilit gövdesi, 85 mm'ye göre delinmiş kollar ve kanada uygun bir silindir ister. Bu yazı, teklif vermeden önce bir listeyi proje alıcısının okuduğu gibi, çözümlü bir setle (HW-02: 85 × 60 mm Avrupa profil kilit gövdesi, LC04'ümüzün yayımladığı ölçüler) okur.",
     "seoTitle": "Kapı Donanım Listesi Nasıl Okunur | Canton Hyland",
     "seoDescription": "Kapı donanım listesi nedir, donanım setleri kalemlere nasıl açılır ve bir listeye karşı teklif vermeden önce sorulması gereken üç soru.",
     "body": [
@@ -510,7 +510,7 @@
     ],
     "sourceHash": {
       "title": "95f22257047a",
-      "summary": "4561dd7d84fd",
+      "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
       "body": "f6a944bda5ea",
@@ -585,7 +585,7 @@
   },
   "double-fire-exit-door-hardware-set": {
     "title": "Tek Açıklık, Tek Sipariş: Çift Kanatlı Yangın Çıkış Kapısının Donanım Seti",
-    "summary": "Çift kanatlı bir yangın çıkış kapısı altı kalem donanım ister ve her biri kanatlarla ilgili aynı dört bilgiden boyutlandırılır. Aşağıda setin karar verilmesi gereken sırayla, iki doğru kalemin birbiriyle çeliştiği noktaları ve onu tek bir açıklık olarak fiyatlandırmak için neye ihtiyacımız olduğunu bulacaksınız.",
+    "summary": "Çift kanatlı bir yangın çıkış kapısı 6 kalem donanım ister: her kanatta bir cihaz, aktif kanatta bir dış kol, her kanatta bir kapı kapatıcı ve pasif kanadın önce kapanması için bir sıralayıcı. 6'sının hepsi kanatlarla ilgili 4 bilgiyle boyutlandırılır: her kanadın genişliği ve ağırlığı, kapı kalınlığı ve hangi kanadın aktif olduğu. Bu yazı onları bu sırayla ele alır, 2 doğru kalemin birbiriyle çeliştiği yerleri gösterir ve tek bir açıklık olarak teklif vermek için neye ihtiyacımız olduğunu listeler.",
     "seoTitle": "Panik Barlı Çift Kanatlı Yangın Kapısı: Tam Donanım Seti",
     "seoDescription": "Çift kanatlı yangın çıkış kapısındaki altı donanım kalemi: panik barlar, dış kol, kapatıcılar ve sıralayıcı; hepsi aynı kanat verisinden boyutlandırılır.",
     "body": [
@@ -634,7 +634,7 @@
     ],
     "sourceHash": {
       "title": "f40f047520c8",
-      "summary": "e704a337f501",
+      "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
       "body": "7ac89beb63e2",
@@ -1184,7 +1184,7 @@
   },
   "master-key-systems-how-many-levels-you-need": {
     "title": "Master Anahtar Sisteminiz Gerçekte Kaç Seviyeye İhtiyaç Duyar",
-    "summary": "Master anahtar sistemi bir hiyerarşidir ve içindeki seviye sayısı bir donanım özelliği değil, kimin hangi kapıdan geçebileceğine dair bir karardır. GGMK'den değişim anahtarına kadar beş seviyeye kadar kuruyoruz; tekil kilidin üstünde dört yönetim anahtarı katmanı var. Binaların çoğu üç seviyeye ihtiyaç duyar.",
+    "summary": "Master anahtar sistemlerini en fazla 5 seviyeye kadar (GGMK'den tekil anahtara) kuruyoruz ve çoğu binanın 3 seviyeye ihtiyacı var: her fazla seviye, binanın ileride ihtiyaç duyabileceği anahtar kombinasyonlarını harcar. Bu yazı seviye şemasını, 36 silindirli 4 katlı bir ofis için örnek bir uygulamayı (büyük master 36'sını, tesis yöneticisinin master'ı 8'ini, temizlik alt master'ı 3'ünü açar) ve yazdırıp doldurulacak boş bir şemayı verir.",
     "seoTitle": "Master Anahtar Şeması: Kaç Seviye Gerekir | Canton Hyland",
     "seoDescription": "GGMK'den değişim anahtarına master anahtar şeması, örnek bir bina ve her ek seviyenin dağıtılabilecek değişim anahtarı sayısını neden azalttığı.",
     "body": [
@@ -1240,7 +1240,7 @@
     ],
     "sourceHash": {
       "title": "c50f993d93f6",
-      "summary": "bf477e808275",
+      "summary": "b34deed10d95",
       "seoTitle": "e6f3d79c8463",
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
@@ -1249,7 +1249,7 @@
   },
   "mortise-lock-backset-and-centre-distance-guide": {
     "title": "Backset ve Aks Mesafesi: Gömme Kilit Gövdesi Numarası Nasıl Okunur",
-    "summary": "Bir kilit gövdesinin önünüzdeki kapıya uyup uymayacağını iki sayı belirler. Model numarasında yazılıdırlar ve bunları yanlış okumak, bir konteyner dolusu donanımın monte edilememesinin en yaygın nedenidir.",
+    "summary": "Bir kilit gövdesinin kapıya uyup uymadığını iki sayı belirler ve bunlar model numarasında yazılıdır: LC08 85×55, 85 mm eksenler arası mesafe ve 55 mm mesafe (backset) demektir. 85 mm, Avrupa profil silindirli kilitlerin standart eksenler arası mesafesidir; fark mesafededir ve dar alüminyum profiller için 16 mm'den başlar. İkisinden birini yanlış almak, bir konteyner donanımın takılamamasının en yaygın nedenidir.",
     "seoTitle": "Gömme Kilit Gövdesi Numarası Nasıl Okunur | Canton Hyland",
     "seoDescription": "Gömme kilit gövdesi model numarasından backset ve aks mesafesi nasıl okunur, neden hem 85 mm hem 72 mm var ve hangi backset hangi kapıya uyar.",
     "body": [
@@ -1303,7 +1303,7 @@
     ],
     "sourceHash": {
       "title": "cee383f01b14",
-      "summary": "99b0df8efb42",
+      "summary": "9bb3890ad5ef",
       "seoTitle": "f2b93ea803b6",
       "seoDescription": "67f0856c8850",
       "body": "fd6247dfe271",
@@ -1312,7 +1312,7 @@
   },
   "narrow-stile-aluminium-door-lock-sag": {
     "title": "Alüminyum kapılar neden sarkar, kilit gövdesinin bunda payı ne?",
-    "summary": "Artık kilitlenmeyen dar profil bir alüminyum kapının kilidi neredeyse hiçbir zaman bozuk değildir. Kanat, serbest ucunda birkaç milimetre aşağı inmiştir ve kilit, bunun ilk fark edildiği yerdir. Aşağıda gerçekte neyin hareket ettiğini ve bunun hangi kısmının bir donanım kararı olduğunu anlatıyoruz.",
+    "summary": "Artık kilitlenmeyen dar profilli bir alüminyum kapının kilidi neredeyse hiçbir zaman kırık değildir: kanat uç kenarda birkaç milimetre düşmüştür. Yalnızca 30 ile 50 mm genişliğindeki bir profilde önce menteşe ya da pivot tarafı aşınır, sonra kasanın köşe birleşimleri açılır, üçüncü olarak da dil bunu gösterir, çünkü belki 2 mm toleranslı bir karşılığa girer. Yalnızca kilit gövdesi bir donanım kararıdır: dar profil kilit gövdelerimiz 30, 40 ve 45 mm mesafelidir.",
     "seoTitle": "Dar Profil Alüminyum Kapı Sarkması: Nedenleri ve Onarımı",
     "seoDescription": "Dar profil alüminyum kapılar neden sarkar ve kilitlenmez? Backset ve kilit gövdesi derinliği 30mm dikmeyle nasıl ilişkili, yükü hangi parçalar taşır?",
     "body": [
@@ -1368,7 +1368,7 @@
     ],
     "sourceHash": {
       "title": "0b49c4e6dc00",
-      "summary": "c2f1674ba923",
+      "summary": "570332d194f5",
       "seoTitle": "97f56e151143",
       "seoDescription": "73d3a4026004",
       "body": "cff04bbbb027",
@@ -1377,7 +1377,7 @@
   },
   "occupied-vacant-washroom-indicator-bolt": {
     "title": "Boş mu dolu mu: tuvalet göstergesinin gerçekte yapması gereken iş",
-    "summary": "Göstergeli sürgü, tek parçada hem kilit hem tabeladır ve kötü tanımlanan yarısı tabeladır. Ayakta durulan mesafeden okunabilmeli, acil durumda dışarıdan açılabilmeli ve umumi bir tuvalette, özen göstermeyen insanlar tarafından günde birkaç yüz kez kullanılmaya dayanabilmelidir.",
+    "summary": "Göstergeli sürgü, kilit ve işaretin tek parçada birleşimidir: ayakta durulan mesafeden okunmalı, acil durumda dışarıdan açılabilmeli ve günde birkaç yüz kullanıma dayanmalıdır. 200 ve 400 modellerimiz çinko alaşımı, 500 modelimiz paslanmaz çeliktir; sert temizlik ya da kıyı binaları için olan budur. Hepsi yüzeye monte edilir, bu yüzden kapıda gömme yuva gerekmez. Çevrim testi değerini ve pencere boyutunu yayımlamıyoruz; bunlardan birini isteyen bir şartnameye teklif vermeden önce sorun.",
     "seoTitle": "Tuvalet Boş/Dolu Göstergeli Sürgü: Seçim Rehberi",
     "seoDescription": "Boş/dolu göstergeli sürgü ne yapmalı, acil açma neden pencereden önemli ve 200, 400 ile 500 modelleri birbirinden nasıl ayrılır.",
     "body": [
@@ -1435,7 +1435,7 @@
     ],
     "sourceHash": {
       "title": "7a6c9a00d438",
-      "summary": "3a4dafaa4090",
+      "summary": "5490d89dde81",
       "seoTitle": "89347cc1780a",
       "seoDescription": "a671ec187536",
       "body": "e529925518ff",
@@ -2158,7 +2158,7 @@
   },
   "what-documents-you-can-actually-get": {
     "title": "Teknik Föy, CAD ve BIM: Neyimiz Var, Neyimiz Yok",
-    "summary": "Bu siteye teknik föy (cutsheet), DWG, BIM nesnesi ya da ficha técnica arayarak gelenler var. Bunların bir kısmını bugün yayımlıyoruz, bir kısmını talep üzerine gönderebiliyoruz, biri ise henüz yok. Hangisinin hangisi olduğunu söylemek, her şeyi vaat eden bir indirme sayfasından daha faydalıdır.",
+    "summary": "Bugün bizden alabilecekleriniz: her ürün sayfasında tablo hâlinde teknik özellikler, bazı modeller için ölçülü çizimler ve güncel bir katalog PDF'i. Test belgeleri istek üzerine, kapsadıkları tam model için gönderilir. BIM kütüphanesi (Revit aileleri ya da IFC nesneleri) ve yayımlanmış kapı hazırlık çizimi yoktur; bir işleme şablonu için tam modelin onaylı çizimini isteyin. Satın aldığınız yapılandırmada model numarasıyla isteyin: 60 mm mesafeli sürümün çizimi 45 mm'liğin çizimi değildir.",
     "seoTitle": "Teknik Föy, CAD ve BIM: Neler Var | Canton Hyland",
     "seoDescription": "HYDE'nin 84 ölçülü SVG çizimi var, 72'si görünür ürün sayfalarında; bir de aranabilir katalog PDF'i. BIM kütüphanesi ve kapı hazırlık SVG'si yok.",
     "body": [
@@ -2220,7 +2220,7 @@
     ],
     "sourceHash": {
       "title": "c9ec3ebc0156",
-      "summary": "1d9875e4bc66",
+      "summary": "34f71cb953ce",
       "seoTitle": "e9cada889687",
       "seoDescription": "07af29b09753",
       "body": "c29f639c79d1",
@@ -2299,7 +2299,7 @@
   },
   "what-oem-actually-changes": {
     "title": "OEM Gerçekte Neyi Değiştirir, Neyi Değiştirmez",
-    "summary": "Markanızı bir kilidin üzerine koymak tek değil dört ayrı karardır ve yalnızca biri gerçek paraya mal olur. Üçü parçayla ilgili hiçbir şeyi değiştirmez. Dördüncüsü kalıp gerektirendir.",
+    "summary": "Markanızı bir kilide koymak 4 ayrı karardır: ambalaj ve işaretleme, parçanın üzerindeki marka, kaplama ve parçanın kendisi. Yalnızca dördüncüsü kalıp gerektirir. Ambalaj ve kaplama değişiklikleri katalog termininde, sipariş onayından itibaren 30 günden başlar; değiştirilmiş bir kalıp değişikliği ekler; yeni bir kalıp üretim başlamadan önce 3 ila 5 ay sürer. Bu yazı, ilk yanıt gerçek bir yanıt olsun diye 4'ünün her biri için ne gönderileceğini listeler.",
     "seoTitle": "OEM ve Özel Etiketli Kapı Donanımı: Neler Değişir",
     "seoDescription": "Ambalaj, parça üzerinde marka, kaplama ve kalıp: dört ayrı OEM kararı, dört farklı maliyet. Her biri ne gerektirir ve başlamak için ne göndermelisiniz?",
     "body": [
@@ -2358,7 +2358,7 @@
     ],
     "sourceHash": {
       "title": "fc19bac775d4",
-      "summary": "db100a30a27e",
+      "summary": "022466a8bc3f",
       "seoTitle": "67b353783478",
       "seoDescription": "dab66e40fd66",
       "body": "1474dfdb6922",

@@ -120,3 +120,22 @@ test("word and subsequence helpers behave at the edges", () => {
   assert.equal(isSubsequence("lv", "lockcylinders"), false);
   assert.equal(isSubsequence("", "anything"), true);
 });
+
+test("a merged record still comes first for the bare number it used to be listed under", () => {
+  /*
+    110, 140 and 1121 were duplicate records of AR4-110, AR4-140 and AR4-1121 until
+    2026-10-09. Argentine buyers ask for these cases by the bare number, and "140" also
+    starts a hinge model (140x55x2.5), which would otherwise outrank the lock case.
+  */
+  for (const [query, href] of [
+    ["140", "/products/lock-cases/hyde-ar4-140-mortise-lock/"],
+    ["110", "/products/lock-cases/hyde-ar4-110-mortise-lock/"],
+    ["1121", "/products/lock-cases/hyde-ar4-1121-hook-bolt-lock/"],
+  ]) {
+    const ranked = index
+      .map((e) => ({ e, s: score(e, terms(query)) }))
+      .filter(({ s }) => s > 0)
+      .sort((a, b) => b.s - a.s);
+    assert.equal(ranked[0]?.e.href, href, `"${query}" should lead with ${href}`);
+  }
+});
