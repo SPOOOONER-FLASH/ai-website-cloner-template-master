@@ -163,7 +163,7 @@ export default function ContactoPage() {
                 href="/downloads/hyde-export-catalogue-2026.pdf"
                 download
               >
-                Descargar catálogo (PDF, 6,1 MB)
+                Descargar catálogo (PDF, 9,4 MB)
               </a>
             </div>
 

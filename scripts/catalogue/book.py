@@ -58,7 +58,7 @@ class Edition:
     links: bool
 
 
-ELECTRONIC = Edition("electronic", False, "full", 3, 3, 0, None, True)
+ELECTRONIC = Edition("electronic", False, "full", 3, 3, 2, None, True)
 PRINT = Edition("print", True, "band", 4, 3, 2, 70, False)
 
 
@@ -82,6 +82,31 @@ class Job:
 
 # --------------------------------------------------------------------------- layout
 
+# Labels that describe the order rather than the part, or run to a sentence.
+SPEC_SKIP = {"Customization", "Minimum order", "Installation", "Installation method", "Application",
+             "Applications", "Packing", "Package", "Feature", "Features", "Main feature",
+             "Function options", "Color Options", "Lead time", "MOQ", "Note", "Notes",
+             "Variants", "Pairs with", "Suitable for", "Suitable door types", "Service life"}
+
+
+def _key_specs_from_data(family: heroes.Family) -> list[str]:
+    """The labels this family's own products state most often, best first.
+
+    A fixed default (Material, Finish, Size) left every floor-spring card blank, because
+    those products state max door weight and opening angle instead. Ranking by the
+    family's own data gives each family the rows it actually has.
+    """
+    from collections import Counter
+    counts = Counter(s["label"] for p in family.products for s in p.get("specs", [])
+                     if s["label"] not in SPEC_SKIP and s.get("value"))
+    return [label for label, _ in counts.most_common(6)]
+
+
+def _install_key_specs(fams: list["FamilyLayout"]) -> None:
+    from catalogue import samples
+    for fl in fams:
+        samples.KEY_SPECS.setdefault(fl.family.slug, _key_specs_from_data(fl.family))
+
 
 def _family_layouts() -> list[FamilyLayout]:
     out = []
@@ -90,15 +115,11 @@ def _family_layouts() -> list[FamilyLayout]:
         shown_ids = {id(p) for p in shown}
         rest = [p for p in fam.products if id(p) not in shown_ids]
         out.append(FamilyLayout(fam, i, variants.cards(shown), variants.cards(rest)))
+    _install_key_specs(out)
     return out
 
 
-LIST_ROW = 11.5  # one "Also available" line
-LIST_HEAD = 34.0
-
-
-def _list_height(n: int) -> float:
-    return LIST_HEAD + n * LIST_ROW if n else 0.0
+LIST_ROW = 11.5  # one line in the "Also available" register
 
 
 def _chunks(cards: list, first: int, per: int) -> list[list]:
@@ -122,7 +143,9 @@ def plan(edition: Edition) -> tuple[list[Job], list[FamilyLayout]]:
     per = edition.cols * edition.rows
     for fl in fams:
         fl.first_page = len(jobs) + 1
-        if edition.opener == "full":
+        # A family with no clean cut-out has nothing to put on a full-page opener; an
+        # empty page reads as a missing picture, so it opens with the band instead.
+        if edition.opener == "full" and fl.family.slug not in heroes.PENDING_HERO:
             jobs.append(Job(_bind(opener_full, fl, edition), fl.family.name, fl.family.slug))
             groups = _chunks(fl.cards, 0, per)
             first_band = False
@@ -136,18 +159,26 @@ def plan(edition: Edition) -> tuple[list[Job], list[FamilyLayout]]:
             first_band = True
         for k, group in enumerate(groups):
             band = first_band and k == 0
-            last = k == len(groups) - 1
-            rows_used = math.ceil(len(group) / edition.cols) if group else 0
-            area_rows = fl.band_rows if band else edition.rows
-            free = (area_rows - rows_used) / area_rows * _grid_height(band)
-            listed_here = last and fl.listed and _list_height(len(fl.listed)) <= free
-            jobs.append(Job(_bind(grid_page, fl, edition, group, band, fl.listed if listed_here else []),
+            jobs.append(Job(_bind(grid_page, fl, edition, group, band, []),
                             fl.family.name if band else "", fl.family.slug,
-                            [m.get("model") for card in group for m in card.members]
-                            + ([m.get("model") for card in fl.listed for m in card.members] if listed_here else [])))
-            if last and fl.listed and not listed_here:
-                jobs.append(Job(_bind(list_page, fl), "", fl.family.slug,
-                                [m.get("model") for card in fl.listed for m in card.members]))
+                            [m.get("model") for card in group for m in card.members]))
+
+    # Every family's products without a usable photograph, in one register at the back.
+    # Scattered, they made eight pages that each held two to thirty lines and read as
+    # unfinished; together they are one and a half pages a buyer can scan.
+    lines = [(fl, None) if j < 0 else (fl, card)
+             for fl in fams if fl.listed for j, card in enumerate([None] + fl.listed, -1)]
+    first = True
+    while lines:
+        cap_y, y, chunk = BOTTOM - 4, (176 if first else TOP + 14), []
+        while lines:
+            h = 24 if lines[0][1] is None else LIST_ROW
+            if y + h > cap_y or (lines[0][1] is None and y + 24 + LIST_ROW > cap_y):
+                break
+            chunk.append(lines.pop(0)); y += h
+        jobs.append(Job(_bind(register_page, chunk, first), "Also available" if first else "", "",
+                        [m.get("model") for _, card in chunk if card for m in card.members]))
+        first = False
 
     index_entries = _index_entries(jobs)
     per_index_page = 4 * 84
@@ -216,6 +247,13 @@ def contents(c: Canvas, n: int, fams: list[FamilyLayout], jobs: list[Job]) -> No
         c.text_right(R, y, str(fl.first_page), 10.5, "text-semibold", style.INK)
         _link(c, L, y - 12, R, y + 4, fl.first_page)
         y += 25
+    register = next((i for i, j in enumerate(jobs, 1) if j.title == "Also available"), None)
+    if register:
+        c.rule(L, y - 12, R, style.RULE, 0.4)
+        c.text(L, y + 2, "Models without a photograph", 9.5, "text-medium", style.INK)
+        c.text_right(R, y + 2, str(register), 9.5, "text-medium", style.INK2)
+        _link(c, L, y - 12, R, y + 4, register)
+        y += 22
     index_page = next(i for i, j in enumerate(jobs, 1) if j.title == "Index")
     c.rule(L, y - 12, R, style.RULE, 0.4)
     c.text(L, y + 2, "Model index", 9.5, "text-medium", style.INK)
@@ -316,6 +354,8 @@ def band(c: Canvas, fl: FamilyLayout, edition: Edition) -> None:
     c.qr(R - qs, 118, qs, url)
     c.text_right(R - qs - 10, 148, "Full specifications online", 7.5, "text-semibold", style.INK)
     c.text_right(R - qs - 10, 159, url.replace("https://", ""), 6.5, "text", style.INK2)
+    if edition.links:
+        c.page.insert_link({"kind": pymupdf.LINK_URI, "from": c.r(R - 200, 118, R, 118 + qs), "uri": url})
     c.rule(L, 216, R, style.RULE, 0.5)
 
 
@@ -325,15 +365,35 @@ def grid_page(c: Canvas, n: int, fl: FamilyLayout, edition: Edition, group: list
         band(c, fl, edition)
     top = 236 if is_band else TOP
     rows = fl.band_rows if is_band else edition.rows
-    used = draw_cards(c, fl.family.slug, group, top, BOTTOM, edition.cols, rows)
-    if listed:
-        also_available(c, fl, listed, used + 10)
+    draw_cards(c, fl.family.slug, group, top, BOTTOM, edition.cols, rows)
     folio(c, n, fl.family.name)
 
 
-def list_page(c: Canvas, n: int, fl: FamilyLayout) -> None:
-    also_available(c, fl, fl.listed, TOP)
-    folio(c, n, fl.family.name)
+def register_page(c: Canvas, n: int, chunk: list, first: bool) -> None:
+    """Products without a usable photograph, grouped by family, with their stated specs."""
+    if first:
+        section_title(c, "Also available", "Models without a photograph")
+        c.text(L, 152, "Photograph and drawing on request.", 9, "text", style.INK2)
+    y = 176 if first else TOP + 14
+    for fl, card in chunk:
+        if card is None:
+            y += 8
+            c.text(L, y + 6, f"{fl.number:02d}", 7, "text-semibold", style.BRASS)
+            c.text(L + 22, y + 6, fl.family.name.upper(), 7, "text-semibold", style.INK, track=120)
+            c.rule(L, y + 11, R, style.INK, 0.5)
+            y += 16
+            continue
+        specs = card_specs(fl.family.slug, card.product, 3)
+        detail = "  ·  ".join(v for _, v in specs) or "—"
+        y += LIST_ROW
+        model_lines = _wrap(card.model, 74, 7.5, "text-semibold")
+        c.text(L, y, model_lines[0] if len(model_lines) == 1 else style.fit(card.model, 150, 7.0, "text-semibold"),
+               7.5 if len(model_lines) == 1 else 7.0, "text-semibold", style.INK)
+        if len(model_lines) == 1 and card.name != card.model:
+            c.text(L + 82, y, style.fit(card.name, 146, 7.2, "text"), 7.2, "text", style.INK2)
+        c.text(L + 236, y, style.fit(detail, R - L - 236, 7.2, "text"), 7.2, "text", style.INK2)
+        c.rule(L, y + 4, R, style.RULE, 0.3)
+    folio(c, n, "Also available")
 
 
 def draw_cards(c: Canvas, slug: str, cards: list[variants.Card], top: float, bottom: float,
@@ -372,8 +432,13 @@ def draw_cards(c: Canvas, slug: str, cards: list[variants.Card], top: float, bot
         rows_out += card_specs(slug, card.product, 3 - len(rows_out))
         for label, value in rows_out:
             c.rule(x0, y - spec_pt - 1, x0 + cw, style.RULE, 0.35)
-            c.text(x0, y + 2, label, spec_pt, "text", style.INK3)
-            v = style.fit(value, cw - label_w, spec_pt, "text-medium")
+            # The value takes what the label actually leaves. A fixed label column let
+            # "Max door width (spindle to edge)" run straight into "≤750mm / ≤1000mm".
+            label_text = style.fit(label, max(label_w, cw * 0.5), spec_pt, "text")
+            gap = 6
+            room = cw - style.FONTS["text"].text_length(label_text, spec_pt) - gap
+            c.text(x0, y + 2, label_text, spec_pt, "text", style.INK3)
+            v = style.fit(value, max(room, 12), spec_pt, "text-medium")
             c.text_right(x0 + cw, y + 2, v, spec_pt, "text-medium",
                          style.BRASS if label in ("Finishes", "Also in") else style.INK)
             y += spec_pt + 5.6
@@ -390,21 +455,6 @@ def _wrap(text: str, width: float, size: float, key: str) -> list[str]:
         else:
             lines.append(line); line = w
     return lines + ([line] if line else [])
-
-
-def also_available(c: Canvas, fl: FamilyLayout, cards: list[variants.Card], y: float) -> None:
-    c.rule(L, y + 6, R, style.INK, 0.6)
-    c.text(L, y + 22, "ALSO AVAILABLE", 7, "text-semibold", style.BRASS, track=140)
-    c.text_right(R, y + 22, "Photograph on request", 7, "text", style.INK3)
-    y += LIST_HEAD + 4
-    for card in cards:
-        specs = card_specs(fl.family.slug, card.product, 3)
-        detail = "  ·  ".join(v for _, v in specs) or "—"
-        c.text(L, y, style.fit(card.model, 70, 7.5, "text-semibold"), 7.5, "text-semibold", style.INK)
-        c.text(L + 78, y, style.fit(card.name, 150, 7.2, "text"), 7.2, "text", style.INK2)
-        c.text(L + 236, y, style.fit(detail, R - L - 236, 7.2, "text"), 7.2, "text", style.INK2)
-        c.rule(L, y + 4, R, style.RULE, 0.3)
-        y += LIST_ROW
 
 
 def index_page(c: Canvas, n: int, entries: list[tuple[str, int]], first: bool) -> None:
@@ -477,6 +527,10 @@ def render(edition: Edition, out: Path) -> Path:
     if not edition.print_mode:
         doc.set_pagelayout("TwoPageRight")
         doc.set_pagemode("UseOutlines")
+        # A screen needs no 200 dpi. Measured 2026-10-08: 18.3 MB as laid out, 9.4 MB at
+        # 150 dpi / q82, 8.9 at 130, 8.1 at 120 — little gained below 150, so 150. The
+        # print edition keeps every pixel: that file goes to a printer, not a phone.
+        doc.rewrite_images(dpi_threshold=170, dpi_target=150, quality=82)
     doc.save(out, garbage=4, deflate=True)
     return out
 

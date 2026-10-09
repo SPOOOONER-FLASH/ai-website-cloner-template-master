@@ -19,8 +19,10 @@ class BookTest(unittest.TestCase):
         self.assertLessEqual(self.pr.page_count, 70)
         self.assertEqual(self.pr.page_count % 4, 0)
 
-    def test_electronic_has_an_even_page_count(self):
-        self.assertEqual(self.el.page_count % 2, 0, self.el.page_count)
+    def test_electronic_is_a_whole_book(self):
+        # Not bound, so no page-count rule; it must still open on its cover and end on contact.
+        self.assertIn("HYDE", self.text["el"][0])
+        self.assertIn("tec@cantonlock.com", self.text["el"][-1])
 
     def test_no_published_product_is_dropped(self):
         models = {str(p["model"]) for f in heroes.families() for p in f.products}
@@ -44,6 +46,21 @@ class BookTest(unittest.TestCase):
             for word in ("ISO 9001", "certified", "TÜV", "UL listed"):
                 self.assertNotIn(word, body, k)
             self.assertIsNone(CJK.search(body), k)
+
+    def test_no_two_texts_overlap_on_any_page(self):
+        # Found by eye on 2026-10-08: "Max door width (spindle to edge)" ran into its value.
+        # Spans on the same baseline must not overlap horizontally, anywhere in either book.
+        for k, doc in (("el", self.el), ("pr", self.pr)):
+            for n, page in enumerate(doc, 1):
+                spans = [s for b in page.get_text("dict")["blocks"] for l in b.get("lines", [])
+                         for s in l["spans"] if s["text"].strip()]
+                rows: dict[int, list] = {}
+                for s in spans:
+                    rows.setdefault(round(s["origin"][1]), []).append(pymupdf.Rect(s["bbox"]))
+                for y, rects in rows.items():
+                    rects.sort(key=lambda r: r.x0)
+                    for a, b in zip(rects, rects[1:]):
+                        self.assertLessEqual(a.x1 - b.x0, 0.6, f"{k} p{n} y={y}: overlap {a} / {b}")
 
     def test_print_geometry(self):
         for page in self.pr:
