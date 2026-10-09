@@ -16,6 +16,7 @@ import {
   productsWithWatchPage,
   watchPagePath,
   watchVideo,
+  WATCH_PAGE_ROBOTS,
 } from "@/lib/video-pages";
 
 /**
@@ -49,14 +50,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return {};
   const video = watchVideo(product)!;
   const title = productTitle(product);
-  return pageMetadata({
-    enPath: watchPagePath(product),
-    locale: "en",
-    title: `${title}: Product Video`,
-    description: describe(title, video.durationSeconds!, product.summary ?? ""),
-    image: video.poster?.src,
-    imageAlt: video.label,
-  });
+  return {
+    ...pageMetadata({
+      enPath: watchPagePath(product),
+      locale: "en",
+      title: `${title}: Product Video`,
+      description: describe(title, video.durationSeconds!, product.summary ?? ""),
+      image: video.poster?.src,
+      imageAlt: video.label,
+    }),
+    ...WATCH_PAGE_ROBOTS,
+  };
 }
 
 export default async function VideoWatchPage({ params }: Props) {

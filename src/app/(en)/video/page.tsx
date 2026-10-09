@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getTopLevelCategories } from "@/data/categories";
 import { pageMetadata } from "@/lib/seo";
-import { clock, productTitle, productsWithWatchPage, watchPagePath, watchVideo } from "@/lib/video-pages";
+import { WATCH_PAGE_ROBOTS, clock, productTitle, productsWithWatchPage, watchPagePath, watchVideo } from "@/lib/video-pages";
 
 /**
  * Every product clip, by category — the index that links each watch page (see
@@ -10,13 +10,16 @@ import { clock, productTitle, productsWithWatchPage, watchPagePath, watchVideo }
  * reach every clip, and a model number read in a column is how this trade scans a list.
  */
 
-export const metadata: Metadata = pageMetadata({
-  enPath: "/video",
-  locale: "en",
-  title: "Product Videos: Door Hardware Filmed Model by Model",
-  description:
-    "Short clips of our door hardware, one per model: panic exit devices, locks, levers, handles, hinges and fittings. Each links to its specifications.",
-});
+export const metadata: Metadata = {
+  ...pageMetadata({
+    enPath: "/video",
+    locale: "en",
+    title: "Product Videos: Door Hardware Filmed Model by Model",
+    description:
+      "Short clips of our door hardware, one per model: panic exit devices, locks, levers, handles, hinges and fittings. Each links to its specifications.",
+  }),
+  ...WATCH_PAGE_ROBOTS,
+};
 
 export default function VideoIndexPage() {
   const withVideo = productsWithWatchPage();

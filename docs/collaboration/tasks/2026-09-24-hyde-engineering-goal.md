@@ -140,7 +140,7 @@
 | 137 | 西语规格会话 10-09：甲方批准新目录上官网（eaab4162e0c，92 页 PDF + 联系页十语种）→ 发布 HYDE | 等待（10-09：4517489780b 分块推送第 14/15 批被拒、main 未动；文案会话又推 56649ca5600 → 源码 ship 后从新 tip 重新发布，一次带上目录 + 文案 ①② + 工程改动） |
 | 138 | 甲方 10-09：曝光从工作日 ~1,000 继续往上；附 Bing 10-09 导出（关键词 / 页面 / AI 引用 / 反链）与 GSC 10-09 两个效果 zip、两个覆盖验证 zip → 分析并按词改已有页 | 部分完成（10-09：结论 docs/collaboration/2026-10-09-曝光继续爬升-数据结论与行动.md + 桌面 docx；工作日曝光 1,135 与上周持平，67% 来自文章、19% 产品页，AI 功能占 31%；约 1,000 网址已发现未抓取（569 译文、226 产品、177 video）；knob-locks、grip-handle-sets 标题加 China Manufacturer；待甲方回 /video/ 站点地图 A/B，万能钥匙表与饰面两页主次归文案会话） |
 | 139 | 甲方 10-09：检查插件是否生效（ponytail、context-mode、i-have-adhd 常开、hyperframes） | 10-09 完成：ponytail（SessionStart 注入 full）、i-have-adhd（标志文件 ~/.claude/.i-have-adhd-always，压缩后钩子已注入）、context-mode（ctx_stats 可用，v1.0.169）均生效；hyperframes 0.8.143 已装、技能可调用，未试渲染 |
-| 140 | 甲方 10-09 选 A：/video/ 观看页从站点地图拿掉（177 页已发现未抓取，抓取额度留给 226 个产品页；页面保留） | 10-09 完成（src/lib/site-sitemap.ts 去掉观看页与 /video 目录条目；npm test 456/456；随下一次发布上线） |
+| 140 | 甲方 10-09 选 A：/video/ 观看页从站点地图拿掉（177 页已发现未抓取，抓取额度留给 226 个产品页；页面保留） | 10-09 完成（src/lib/site-sitemap.ts 去掉观看页与 /video 目录条目；观看页与目录页加 noindex + canton-withheld=off-sitemap-video（seo-audit 要求站点地图外的页必须声明不收录，r31 被它拦下）；npm test 456/456；随下一次发布上线） |
 | 141 | 甲方 10-09：长尾词继续优化 + 反链 / 深链现在怎么做（Bing 反链：5 域名 140 条全指首页、锚文本全是裸网址） | 待甲方（10-09：scripts/build-backlink-deeplinks.mjs 按型号把 139 条目录帖对到产品页，69 条能改（worldbid 51、traderscity 15、etradeasia 3）→ 桌面 BACKLINK-DEEPLINKS.docx；手动操作 docx 含改链步骤与五页按页搜索词导出；长尾改动见 #138 #140） |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
