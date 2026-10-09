@@ -1,0 +1,44 @@
+{
+  "id": "70-sndk",
+  "model": "70 SNDK",
+  "view": "Source photograph 2",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/10-锁芯/70/70 SNDK/2-70 SNDK.psd",
+  "originalPsdSha256": null,
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "61f66b65a65201a011c7182eef92494cee36feeac684cd8a29d891edaf8cc671",
+  "sourceFullPhoto": "source-full-photo.png",
+  "sourceFullPhotoSha256": "2f772311073b6be90f5e75fa0513307d222fe52f963b1a64a372bd2f0a0b40ca",
+  "productRgbReference": "full-photo",
+  "productMaskExtraction": "Supplied native alpha, unchanged",
+  "sourceOffset": {
+    "left": 75,
+    "top": 29
+  },
+  "background": "empty-field.png",
+  "backgroundSha256": "b007fa4421f536be98f471d32607b9e21ea64366caf845587ae74cc37df0e869",
+  "width": 908,
+  "height": 561,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 71487,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [],
+  "restoredSourcePixelsCompared": 0,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 0.85,
+    "gain": 1
+  },
+  "shadow": "Original full photographic layer luminance outside opaque native product alpha, including support beneath partial-alpha contact edges; neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1,
+    "partialEdgeSupport": true
+  },
+  "masterSha256": "fc4da74a7024c872aa5329367ed24654ba6bfde21372d52f23ef623e0c2261d7",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}

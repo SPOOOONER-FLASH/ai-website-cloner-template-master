@@ -1,0 +1,23 @@
+{
+  "id": "305",
+  "model": "305",
+  "view": "Source photograph 1; complete assembly",
+  "sourceProductSha256": "95d5424158f4ad832d4ed1b1b6eb1e1737ac220e8833f1ab48f83407653b4957",
+  "sourceFullPhotoSha256": "95d5424158f4ad832d4ed1b1b6eb1e1737ac220e8833f1ab48f83407653b4957",
+  "sourceOffset": {
+    "left": 0,
+    "top": 0
+  },
+  "exteriorPaperExtraction": true,
+  "backgroundBlur": 0.8,
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1,
+    "partialEdgeSupport": true
+  },
+  "originalLibrary": "G:/新网站资料/1-逃生锁/305/1-305.psd",
+  "originalPsdSha256": null,
+  "sourceProduct": "source-product.png",
+  "sourceFullPhoto": "source-full-photo.png",
+  "background": "empty-field.png"
+}

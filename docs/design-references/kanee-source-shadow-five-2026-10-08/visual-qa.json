@@ -1,0 +1,86 @@
+{
+  "scope": "Four new previews beside the separately approved 564 direction benchmark; no live replacement",
+  "clientFeedback": {
+    "sample": "564 MB revised source-shadow photo",
+    "quote": "很好啊 继续制作啊",
+    "meaning": "Positive direction feedback; not acceptance of the four new files or permission to revive video/frozen plates"
+  },
+  "samples": [
+    {
+      "id": "70-sndk",
+      "review": "Conditional direction review",
+      "verified": [
+        "Original full-photo RGB under verified native alpha",
+        "Keys, ring apertures, teeth, pin details and cam unchanged",
+        "Original shadows retained, partial-edge support enabled"
+      ],
+      "limits": [
+        "Fine inherited pale rim around several key and ring edges remains",
+        "Source keys are softer than cylinder",
+        "Original PSD hash not available while G absent"
+      ]
+    },
+    {
+      "id": "70-abkt-cp",
+      "review": "Direction review",
+      "verified": [
+        "Original full-photo RGB under verified native alpha",
+        "Thumbturn, cam, fixing thread and keyway unchanged",
+        "Source lower contact/falloff retained"
+      ],
+      "limits": [
+        "Approximately one-pixel inherited light perimeter at enlargement",
+        "Original PSD hash unavailable while G absent"
+      ]
+    },
+    {
+      "id": "45-snik",
+      "review": "Strong direction-review candidate",
+      "verified": [
+        "147183 opaque original product pixels unchanged",
+        "Full-photo and native cutout match at original placement",
+        "Pale dashed seam fixed through partial-alpha source support",
+        "Continuous contact line, no displaced shadow or rectangular cutoff"
+      ],
+      "limits": [
+        "Original-size master only; no invented resolution or view",
+        "Aesthetic acceptance remains client-specific"
+      ]
+    },
+    {
+      "id": "305",
+      "review": "Technical trial only, not still-life acceptance",
+      "verified": [
+        "Complete assembly, bar, ends, pivots and fixing hardware preserved",
+        "Only exterior-connected neutral paper removed",
+        "No added cast/contact shadow"
+      ],
+      "limits": [
+        "Original contains no meaningful ground shadow",
+        "Floating assembly does not achieve 564/KANEE grounded photography",
+        "Original PSD hash unavailable while G absent"
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "models": [
+        "140",
+        "110",
+        "1121",
+        "304"
+      ],
+      "reason": "Retained caches lack intact genuine ground-shadow frames; avoid alpha-smear interpretation or guessed grounding"
+    }
+  ],
+  "checks": {
+    "imageTests": 10,
+    "projectCheckExit": 0,
+    "unitTests": 367,
+    "exportTests": 26,
+    "existingNonblockingLintWarnings": 13,
+    "existingReportOnlySeoWarnings": 968,
+    "isolatedWorkspace": "C:/Users/johns/.codex/worktrees/kanee-564-shadow-check/ai-website-cloner-template-master",
+    "sharedExportsTouched": false
+  }
+}

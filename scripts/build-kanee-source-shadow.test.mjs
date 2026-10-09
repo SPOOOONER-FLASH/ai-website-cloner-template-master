@@ -26,6 +26,64 @@ test('recovers supplied shadow transmission, not alpha silhouettes or white pape
   assert.deepEqual([...raw], [255,255,255, 128,128,128, 255,255,255, 240,240,240]);
 });
 
+// Catches using an adjusted cutout's metal colour instead of the aligned original photo.
+test('full-photo RGB mode uses native alpha only and compares the genuine photo colours', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(),'codex-shadow-rgb-test-'));
+  try {
+    const product = await png([220,30,40,255],1,1);
+    const full = await png([20,30,40,255,255,255,255,0],2,1);
+    const hash = b => crypto.createHash('sha256').update(b).digest('hex');
+    await fs.writeFile(path.join(dir,'product.png'),product);
+    await fs.writeFile(path.join(dir,'full.png'),full);
+    const spec = {sourceProduct:'product.png',sourceFullPhoto:'full.png',background:'full.png',
+      sourceProductSha256:hash(product),sourceFullPhotoSha256:hash(full),sourceOffset:{left:0,top:0},
+      productRgbSource:'full-photo'};
+    await fs.writeFile(path.join(dir,'spec.json'),JSON.stringify(spec));
+    const receipt = await renderer.buildShadowPilot(path.join(dir,'spec.json'),path.join(dir,'out'));
+    const raw = await sharp(path.join(dir,'out/564-mb-source-shadow.png')).ensureAlpha().raw().toBuffer();
+    assert.deepEqual([...raw.subarray(0,4)],[20,30,40,255]);
+    assert.equal(receipt.productRgbReference,'full-photo');
+    assert.equal(receipt.opaqueRgbDifferences,0);
+    assert.deepEqual(await fs.readFile(path.join(dir,'product.png')),product);
+  } finally {
+    await fs.rm(dir,{recursive:true,force:true});
+  }
+});
+
+// Catches blanket white removal that erases an enclosed photographed metallic highlight.
+test('paper extraction removes only exterior-connected neutral nearwhite pixels', async () => {
+  assert.equal(typeof renderer.extractExteriorPaper,'function');
+  const pixels = [];
+  for (let y=0;y<5;y++) for (let x=0;x<5;x++) {
+    const border = x===0 || y===0 || x===4 || y===4;
+    const value = border || (x===2 && y===2) ? 255 : 40;
+    pixels.push(value,value,value,255);
+  }
+  pixels.splice(0,4,250,230,250,255); // non-neutral colour must never be treated as paper
+  const source = await png(pixels,5,5);
+  const cut = await renderer.extractExteriorPaper(source);
+  const raw = await sharp(cut).ensureAlpha().raw().toBuffer();
+  assert.equal(raw[(2*5+2)*4+3],255);
+  assert.equal(raw[(0*5+1)*4+3],0);
+  assert.deepEqual([...raw.subarray(0,4)],[250,230,250,255]);
+  assert.deepEqual([...raw.subarray((1*5+1)*4,(1*5+1)*4+4)],[40,40,40,255]);
+});
+
+// Catches pale dashed seams when partial native alpha discards a dark photographed contact line.
+test('partial-alpha contact edges retain the original dark photo support beneath the cutout', async () => {
+  const source = await png([11,11,10,255,20,30,40,255],2,1);
+  const product = await png([11,11,10,19,20,30,40,255],2,1);
+  const background = await png([200,200,200,255,200,200,200,255],2,1);
+  const transmission = await renderer.recoverSourceShadow(source,product,{partialEdgeSupport:true});
+  const out = await renderer.composeSourceShadow(background,product,transmission);
+  const raw = await sharp(out).ensureAlpha().raw().toBuffer();
+  assert.deepEqual([...raw.subarray(0,4)],[9,9,9,255]);
+  assert.deepEqual([...raw.subarray(4,8)],[20,30,40,255]);
+  const legacyTransmission = await renderer.recoverSourceShadow(source,product);
+  const legacy = await renderer.composeSourceShadow(background,product,legacyTransmission);
+  assert.deepEqual([...(await sharp(legacy).ensureAlpha().raw().toBuffer()).subarray(0,4)],[185,185,185,255]);
+});
+
 // Catches shading real opaque metal, moving a shadow, or painting outside its source frame.
 test('multiplication follows original source coordinates and product RGB wins unchanged', async () => {
   const bg = await sharp({create:{width:6,height:2,channels:3,background:'#c8b496'}}).png().toBuffer();
@@ -97,6 +155,33 @@ test('pilot adjusts only empty field and pins both genuine source hashes', async
     spec.sourceProductSha256 = 'wrong';
     await fs.writeFile(path.join(dir,'spec.json'),JSON.stringify(spec));
     await assert.rejects(renderer.buildShadowPilot(path.join(dir,'spec.json'),path.join(dir,'refuse')),/hash changed/);
+  } finally {
+    await fs.rm(dir,{recursive:true,force:true});
+  }
+});
+
+// Catches mislabeled 564 receipts or accidental overwrites when producing a different model.
+test('a named pilot writes its own filenames and model without overwriting a 564 sample', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(),'codex-shadow-named-test-'));
+  try {
+    const product = await png([20,30,40,255],1,1);
+    const full = await png([20,30,40,255,255,255,255,0],2,1);
+    const hash = b => crypto.createHash('sha256').update(b).digest('hex');
+    await fs.writeFile(path.join(dir,'product.png'),product);
+    await fs.writeFile(path.join(dir,'full.png'),full);
+    const spec = {id:'70-abkt-cp',model:'70 ABKT CP',view:'Original angle 1',
+      sourceProduct:'product.png',sourceFullPhoto:'full.png',background:'full.png',
+      sourceProductSha256:hash(product),sourceFullPhotoSha256:hash(full),sourceOffset:{left:0,top:0}};
+    await fs.writeFile(path.join(dir,'spec.json'),JSON.stringify(spec));
+    const receipt = await renderer.buildShadowPilot(path.join(dir,'spec.json'),path.join(dir,'out'));
+    assert.equal(receipt.model,'70 ABKT CP');
+    assert.equal(receipt.view,'Original angle 1');
+    assert.equal(receipt.id,'70-abkt-cp');
+    assert.equal((await sharp(path.join(dir,'out/70-abkt-cp-source-shadow.png')).metadata()).width,2);
+    await assert.rejects(fs.access(path.join(dir,'out/564-mb-source-shadow.png')));
+    spec.id = '../escape';
+    await fs.writeFile(path.join(dir,'spec.json'),JSON.stringify(spec));
+    await assert.rejects(renderer.buildShadowPilot(path.join(dir,'spec.json'),path.join(dir,'refuse')),/sample id/);
   } finally {
     await fs.rm(dir,{recursive:true,force:true});
   }

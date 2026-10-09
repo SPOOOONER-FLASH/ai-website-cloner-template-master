@@ -1,0 +1,44 @@
+{
+  "id": "305",
+  "model": "305",
+  "view": "Source photograph 1; complete assembly",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/1-逃生锁/305/1-305.psd",
+  "originalPsdSha256": null,
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "95d5424158f4ad832d4ed1b1b6eb1e1737ac220e8833f1ab48f83407653b4957",
+  "sourceFullPhoto": "source-full-photo.png",
+  "sourceFullPhotoSha256": "95d5424158f4ad832d4ed1b1b6eb1e1737ac220e8833f1ab48f83407653b4957",
+  "productRgbReference": "native-cutout",
+  "productMaskExtraction": "Perimeter-connected neutral paper only: min RGB >=250, channel range <=8",
+  "sourceOffset": {
+    "left": 0,
+    "top": 0
+  },
+  "background": "empty-field.png",
+  "backgroundSha256": "ae30be7118b792f34326ccbc4588e35985673afe45c8cbc1439deca3d4f93ac4",
+  "width": 1015,
+  "height": 1016,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 156665,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [],
+  "restoredSourcePixelsCompared": 0,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 0.8,
+    "gain": 1
+  },
+  "shadow": "Original full photographic layer luminance outside opaque native product alpha, including support beneath partial-alpha contact edges; neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1,
+    "partialEdgeSupport": true
+  },
+  "masterSha256": "b3a9cdedff2755506e77fb37fadd66635dc3bfed4038c81d036d1decf679f860",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}

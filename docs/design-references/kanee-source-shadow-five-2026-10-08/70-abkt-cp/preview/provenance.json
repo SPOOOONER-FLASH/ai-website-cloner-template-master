@@ -1,0 +1,44 @@
+{
+  "id": "70-abkt-cp",
+  "model": "70 ABKT CP",
+  "view": "Source photograph 1",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/10-锁芯/70/70 ABKT CP/1-70 ABKT CP.psd",
+  "originalPsdSha256": null,
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "8c2d856498cee1e800e96e261e01aa2a0634120c3df78bcc2f9c03bbc89a8fa9",
+  "sourceFullPhoto": "source-full-photo.png",
+  "sourceFullPhotoSha256": "7cf26ea8b818a3c3b5dd5a5fc4f7525a94f1ef6c6a4a31e31b0e9325c31ff391",
+  "productRgbReference": "full-photo",
+  "productMaskExtraction": "Supplied native alpha, unchanged",
+  "sourceOffset": {
+    "left": 124,
+    "top": 148
+  },
+  "background": "empty-field.png",
+  "backgroundSha256": "f96040d874cb1ec0ed75959034a8d47b3066552624a35f7ac97f9e2de55289ef",
+  "width": 734,
+  "height": 734,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 104839,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [],
+  "restoredSourcePixelsCompared": 0,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "shadow": "Original full photographic layer luminance outside opaque native product alpha, including support beneath partial-alpha contact edges; neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1,
+    "partialEdgeSupport": true
+  },
+  "masterSha256": "15a4c101caf344a89953d473b36960d4dff5fa8cbfcdfbe16bd00fb794fb5239",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}

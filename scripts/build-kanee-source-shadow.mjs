@@ -4,6 +4,31 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
+/** Remove only neutral near-white paper connected to the frame perimeter.
+ * Enclosed highlights/holes and every retained RGB value remain source pixels. */
+export async function extractExteriorPaper(photo) {
+  const {data,info:{width,height}} = await sharp(photo).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+  const seen = new Uint8Array(width*height), queue = [];
+  const add = p => {
+    if (seen[p]) return;
+    seen[p] = 1;
+    const rgb = [data[p*4],data[p*4+1],data[p*4+2]];
+    if (Math.min(...rgb)<250 || Math.max(...rgb)-Math.min(...rgb)>8) return;
+    queue.push(p);
+  };
+  for (let x=0;x<width;x++) { add(x);add((height-1)*width+x); }
+  for (let y=0;y<height;y++) { add(y*width);add(y*width+width-1); }
+  for (let n=0;n<queue.length;n++) {
+    const p=queue[n], x=p%width, y=Math.floor(p/width);
+    data[p*4+3]=0;
+    if (x>0) add(p-1);
+    if (x<width-1) add(p+1);
+    if (y>0) add(p-width);
+    if (y<height-1) add(p+width);
+  }
+  return sharp(data,{raw:{width,height,channels:4}}).png().toBuffer();
+}
+
 /** Restore only a reviewer-identified enclosed alpha omission, from aligned real
  * source RGB. An exterior field or opaque product seed is never flood-filled. */
 export async function restoreEnclosedSourceRegion(source, product, {x,y}) {
@@ -32,7 +57,7 @@ export async function restoreEnclosedSourceRegion(source, product, {x,y}) {
 
 /** Recover the white-field photo's supplied ground shading, including RGB hidden
  * beneath zero alpha in a PSD extraction. No translated silhouette or new shadow. */
-export async function recoverSourceShadow(source, product, {paperLevel = 255, strength = 1} = {}) {
+export async function recoverSourceShadow(source, product, {paperLevel = 255, strength = 1, partialEdgeSupport = false} = {}) {
   if (!Number.isFinite(paperLevel) || paperLevel < 220 || paperLevel > 255 ||
       !Number.isFinite(strength) || strength <= 0 || strength > 1) {
     throw new Error('Invalid source paper calibration');
@@ -45,8 +70,9 @@ export async function recoverSourceShadow(source, product, {paperLevel = 255, st
   const transmission = Buffer.alloc(photo.info.width * photo.info.height * 3, 255);
   for (let p = 0; p < photo.info.width * photo.info.height; p++) {
     const i = p * 4;
-    // All photographed hardware pixels, including its antialias edge, are protected.
-    if (mask.data[i + 3] > 0) continue;
+    // Opaque hardware is protected. Partial-alpha edges still require their
+    // supplied photographic support; dropping it produces a pale dashed seam.
+    if (mask.data[i + 3] === 255 || (!partialEdgeSupport && mask.data[i + 3] > 0)) continue;
     const luminance = .2126 * photo.data[i] + .7152 * photo.data[i+1] + .0722 * photo.data[i+2];
     const value = Math.round(255 * (1 - strength * (1 - Math.min(1, luminance / paperLevel))));
     transmission.fill(value, p*3, p*3+3);
@@ -78,6 +104,8 @@ export async function composeSourceShadow(background, product, transmission, {le
 
 export async function buildShadowPilot(specPath, outputDirectory) {
   const spec = JSON.parse(await fs.readFile(specPath,'utf8'));
+  const id = spec.id ?? '564-mb';
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) throw new Error('Invalid sample id');
   const base = path.dirname(path.resolve(specPath));
   const source = await fs.readFile(path.resolve(base,spec.sourceProduct));
   const shadowPhoto = await fs.readFile(path.resolve(base,spec.sourceFullPhoto));
@@ -87,8 +115,17 @@ export async function buildShadowPilot(specPath, outputDirectory) {
     throw new Error('Cached genuine source hash changed');
   }
   const full = await sharp(shadowPhoto).metadata();
+  const fullRaw = await sharp(shadowPhoto).ensureAlpha().raw().toBuffer();
+  const sourceMask = spec.exteriorPaperExtraction ? await extractExteriorPaper(source) : source;
   let product = await sharp({create:{width:full.width,height:full.height,channels:4,background:'#00000000'}})
-    .composite([{input:source,left:spec.sourceOffset.left,top:spec.sourceOffset.top}]).png().toBuffer();
+    .composite([{input:sourceMask,left:spec.sourceOffset.left,top:spec.sourceOffset.top}]).png().toBuffer();
+  if (spec.productRgbSource === 'full-photo') {
+    const maskRaw = await sharp(product).ensureAlpha().raw().toBuffer();
+    for (let p=0;p<full.width*full.height;p++) fullRaw.copy(maskRaw,p*4,p*4,p*4+3);
+    product = await sharp(maskRaw,{raw:{width:full.width,height:full.height,channels:4}}).png().toBuffer();
+  } else if (spec.productRgbSource !== undefined && spec.productRgbSource !== 'native-cutout') {
+    throw new Error('Invalid product RGB reference');
+  }
   const recoveredRegions = [];
   const restoredIndices = [];
   for (const region of spec.restoreSourceRegions ?? []) {
@@ -113,7 +150,7 @@ export async function buildShadowPilot(specPath, outputDirectory) {
   }
   const field = await fieldPipe.png().toBuffer();
   const output = await composeSourceShadow(field,product,transmission);
-  const sourceRaw = await sharp(source).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+  const sourceRaw = await sharp(sourceMask).ensureAlpha().raw().toBuffer({resolveWithObject:true});
   const outRaw = await sharp(output).ensureAlpha().raw().toBuffer();
   let compared = 0, differences = 0;
   for (let y = 0; y < sourceRaw.info.height; y++) for (let x = 0; x < sourceRaw.info.width; x++) {
@@ -121,29 +158,33 @@ export async function buildShadowPilot(specPath, outputDirectory) {
     const q = ((y+spec.sourceOffset.top)*full.width+x+spec.sourceOffset.left)*4;
     if (sourceRaw.data[p+3] !== 255) continue;
     compared++;
-    if ([0,1,2].some(c => sourceRaw.data[p+c] !== outRaw[q+c])) differences++;
+    if ([0,1,2].some(c => (spec.productRgbSource==='full-photo' ? fullRaw[q+c] : sourceRaw.data[p+c]) !== outRaw[q+c])) differences++;
   }
   if (differences) throw new Error('Opaque real product RGB changed');
-  const fullRaw = await sharp(shadowPhoto).ensureAlpha().raw().toBuffer();
   let restoredDifferences = 0;
   for (const p of restoredIndices) if ([0,1,2].some(c => outRaw[p*4+c] !== fullRaw[p*4+c])) restoredDifferences++;
   if (restoredDifferences) throw new Error('Restored original photo RGB changed');
   await fs.mkdir(outputDirectory,{recursive:true});
-  await fs.writeFile(path.join(outputDirectory,'564-mb-source-shadow.png'),output);
-  await sharp(output).webp({quality:94}).toFile(path.join(outputDirectory,'564-mb-source-shadow.webp'));
+  await fs.writeFile(path.join(outputDirectory,`${id}-source-shadow.png`),output);
+  await sharp(output).webp({quality:94}).toFile(path.join(outputDirectory,`${id}-source-shadow.webp`));
   await fs.writeFile(path.join(outputDirectory,'shadow-transmission.png'),transmission);
   const receipt = {
-    model:'564 MB',status:'Review sample only; not client-approved or deployed',
+    id,model:spec.model ?? '564 MB',view:spec.view ?? 'Original photographed view',
+    status:'Review sample only; not deployed; client direction feedback is recorded separately',
     originalLibrary:spec.originalLibrary,originalPsdSha256:spec.originalPsdSha256,
     cacheStatus:'G drive absent this session; using previously extracted and hash-checked G-source layers',
     sourceProduct:spec.sourceProduct,sourceProductSha256:hash(source),
     sourceFullPhoto:spec.sourceFullPhoto,sourceFullPhotoSha256:hash(shadowPhoto),
+    productRgbReference:spec.productRgbSource ?? 'native-cutout',
+    productMaskExtraction:spec.exteriorPaperExtraction ? 'Perimeter-connected neutral paper only: min RGB >=250, channel range <=8' : 'Supplied native alpha, unchanged',
     sourceOffset:spec.sourceOffset,background:spec.background,backgroundSha256:hash(background),
     width:full.width,height:full.height,productResize:false,productRotation:false,
     productRegenerated:false,productRepainted:false,opaqueRgbPixelsCompared:compared,opaqueRgbDifferences:differences,
     recoveredRegions,restoredSourcePixelsCompared:restoredIndices.length,restoredSourceRgbDifferences:restoredDifferences,
     backgroundOnlyAdjustment:{blur:spec.backgroundBlur ?? 0,gain:spec.backgroundGain ?? 1},
-    shadow:'Original full photographic layer luminance outside native product alpha, neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation',
+    shadow:spec.calibration?.partialEdgeSupport
+      ? 'Original full photographic layer luminance outside opaque native product alpha, including support beneath partial-alpha contact edges; neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation'
+      : 'Original full photographic layer luminance outside native product alpha; neutral multiply transmission; legacy reproduction without partial edge support',
     calibration:spec.calibration,masterSha256:hash(output),
     limitation:'Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance.',
   };

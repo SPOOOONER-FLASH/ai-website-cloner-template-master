@@ -1,0 +1,44 @@
+{
+  "id": "45-snik",
+  "model": "45 SNIK",
+  "view": "Source photograph 4",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/10-锁芯/45/45SNIK/4-45SNIK.psd",
+  "originalPsdSha256": "0fc88c9b4a324f22e8b2209f24500568146927e1f91cdc085e3e6d146bdfa5c5",
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "64d0d588b2985b1a6f01131f1405549cfcfc4656e8c658fb83d66420155ffd95",
+  "sourceFullPhoto": "source-full-photo.png",
+  "sourceFullPhotoSha256": "963c95c2a6a9384e895c10dd588615e322b3b61e5a3e13022673ead138040f0d",
+  "productRgbReference": "native-cutout",
+  "productMaskExtraction": "Supplied native alpha, unchanged",
+  "sourceOffset": {
+    "left": 140,
+    "top": 162
+  },
+  "background": "empty-field.png",
+  "backgroundSha256": "356e1ed4669cce5893ba6ecdc97b28ca24e8a8ca50d7fd11eefcd5ec891ef683",
+  "width": 769,
+  "height": 765,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 147183,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [],
+  "restoredSourcePixelsCompared": 0,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 0.8,
+    "gain": 0.91
+  },
+  "shadow": "Original full photographic layer luminance outside opaque native product alpha, including support beneath partial-alpha contact edges; neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1,
+    "partialEdgeSupport": true
+  },
+  "masterSha256": "c06e798bfe2b66521ed8293ff8a220306b7c99ad13aa431dfe3478c9299a3558",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}
