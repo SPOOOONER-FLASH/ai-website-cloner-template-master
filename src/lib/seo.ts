@@ -1,6 +1,28 @@
 import type { Metadata } from "next";
-import { absoluteUrl, defaultDescription, type Locale } from "@/data/site";
+import { absoluteUrl, defaultDescription, siteName, type Locale } from "@/data/site";
 import { mirrorsOf } from "./spanish-mirror.ts";
+
+/*
+  TITLE LENGTH (client 2026-10-08: 「可以省掉品牌后缀」).
+
+  Bing's site scan flagged 1,039 pages whose <title> runs past 70 characters, and in 1,038
+  of them it is the " | Canton Hyland" suffix (16 characters) that pushes it over. The
+  brand already lives in og:site_name and the Organization structured data, so a long title
+  drops the suffix instead of being truncated mid-word in the results page. Titles that fit
+  keep it.
+*/
+const TITLE_SUFFIX = ` | ${siteName}`;
+export const TITLE_LIMIT = 70;
+
+/** A full title string (already carrying the suffix): drop the suffix when it overflows. */
+export function fitTitle(full: string): string {
+  return full.length > TITLE_LIMIT && full.endsWith(TITLE_SUFFIX) ? full.slice(0, -TITLE_SUFFIX.length) : full;
+}
+
+/** A bare page title that the layout template would suffix: opt out of the template when it would overflow. */
+export function templatedTitle(title: string): string | { absolute: string } {
+  return title.length + TITLE_SUFFIX.length > TITLE_LIMIT ? { absolute: title } : title;
+}
 
 /**
  * Builds canonical + hreflang + Open Graph for a page, from its ENGLISH path.
@@ -81,7 +103,7 @@ export function pageMetadata(opts: {
   const imageAlt = opts.image ? (opts.imageAlt ?? opts.title) : "HYDE architectural door hardware";
 
   return {
-    title: opts.title,
+    title: templatedTitle(opts.title),
     description,
     alternates: {
       // Self-referencing canonical. Prevents a mirror from being folded into /en.

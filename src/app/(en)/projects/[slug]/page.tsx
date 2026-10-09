@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/site/ProjectDetail";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
-    title: { absolute: project.seoTitle },
+    title: { absolute: fitTitle(project.seoTitle) },
     description: project.seoDescription,
     alternates: {
       canonical: `/projects/${slug}/`,
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     openGraph: {
       type: "article",
       url: absoluteUrl(`/projects/${slug}/`),
-      title: project.seoTitle,
+      title: fitTitle(project.seoTitle),
       description: project.seoDescription,
       // These three pages were the last ones shipping without a card image.
       images: project.heroImage?.src
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     },
     twitter: {
       card: "summary_large_image",
-      title: project.seoTitle,
+      title: fitTitle(project.seoTitle),
       description: project.seoDescription,
       images: [absoluteUrl(project.heroImage?.src ?? defaultOgImage)],
     },

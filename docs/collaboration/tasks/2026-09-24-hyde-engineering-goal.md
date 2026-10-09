@@ -131,11 +131,12 @@
 | 128 | 甲方 10-01：BAU 2027 官方展商横幅（英语 5 种、德语 5 种尺寸，链到 exhibitors.bau-muenchen.com 展商页）上架，位置由我定；并确认 HYDE 没有需要手动提交的页面 | 10-01 完成（发布 f1852e3082a，分批推送 14 批、每批 ≤1500 文件；/bau-2027/ 与 /de/bau-2027/ 展位介绍旁各一张 300×250 官方横幅；核验由甲方做。无需手动提交页面：十个语种 sitemap 已提交通过，Bing 走 IndexNow（purge 后提交）） |
 | 129 | 甲方 10-02：Clarity 剩余九个配额生成九个话题；LinkedIn 起步稿一起出 docx 到桌面 hyde；纪律：凡要甲方手动操作的都写桌面 hyde docx；Meta 爬虫先不限流、备忘以后选做 | 10-02 完成（docs/collaboration/2026-10-02-手动操作-Clarity九个话题与LinkedIn.md → 桌面 hyde 同名 docx；AGENTS.md runbook 节第 6 条；runbook 第一屏指向；Meta 限流记为以后选做） |
 | 130 | Meta 训练爬虫限流（67,364 次 / 10 天、零访问） | 等待（甲方 10-02：先不限流，以后选做） |
-| 131 | 甲方 10-05（Bing 站点扫描）：品类列表页 / 产品查找器 / 配置器 HTML 过大（100 页 > 500 KB，knob-locks 线上 1.3 MB）→ 筛选数据外置为静态 JSON、首屏只出前 24 张卡，static-export-performance 加 HTML ≤ 300 KB 上限 | 10-08 完成（7927966cacb 起：查找器、配置器数据改 /data/<语言>/finder.json，品类网格只传卡片字段；本地构建实测 knob-locks 1,147→314 KB、查找器 1,082→392 KB、配置器 868→178 KB，十语种同；static-export-performance 加上限：这三类 ≤ 460 KB、全站 ≤ 640 KB。仍 > 500 KB：/model-lookup/ 十语种约 530 KB、/ru/ /ar/ 的 /products/ 约 510 KB，是完整型号索引本身，未删内容） |
+| 131 | 甲方 10-05（Bing 站点扫描）：品类列表页 / 产品查找器 / 配置器 HTML 过大（100 页 > 500 KB，knob-locks 线上 1.3 MB）→ 筛选数据外置为静态 JSON、首屏只出前 24 张卡，static-export-performance 加 HTML ≤ 300 KB 上限 | 10-08 完成（7927966cacb 起：查找器、配置器数据改 /data/<语言>/finder.json，品类网格只传卡片字段；本地构建实测 knob-locks 1,147→314 KB、查找器 1,082→392 KB、配置器 868→178 KB，十语种同；static-export-performance 加上限：这三类 ≤ 460 KB、全站 ≤ 640 KB。已上线 6227cf39148，源站实测 knob-locks 318 KB、查找器 397 KB、配置器 182 KB、/data/<语言>/finder.json 200，查找器与德语配置器浏览器实测加载正常。仍 > 500 KB：/model-lookup/ 十语种约 530 KB、/ru/ /ar/ 的 /products/ 约 510 KB，是完整型号索引本身，未删内容） |
 | 132 | 甲方 10-05（Bing）：标题 > 70 字符全站 1,039 页 → 生成器规则「整条 > 70 时省略 ` \| Canton Hyland`」；E1 三页（HS 编码、161/86、玻璃门）10-14 前跳过 | 待甲方确认长标题可省品牌名，再做 |
 | 133 | 视觉会话 10-05：源码 9101603709a（饰面小图、配置器缩略图补 alt + aria-hidden，Bing 94 页 alt 缺失）要发布 | 待发布 |
 | 134 | 甲方 10-05：#133 发布后在 Bing Webmaster 点「重新扫描」，核对 alt 与 index.php 两项清零 | 待甲方（发布后） |
 | 135 | Clarity 10 话题机会栏（中国厂家资质流程、执手耐久与无障碍、合页承重与等级、无障碍扶手规格等）→ 下一批指南选题 | 待文案会话 / 甲方定优先级（REPORT 第六节） |
+| 136 | 甲方 10-08：标题超过 70 字符时省掉「 | Canton Hyland」后缀（Bing 报 1,039 页标题过长；品牌仍在结构化数据） | 10-08 完成（43f2b698bf1：src/lib/seo.ts fitTitle/templatedTitle，pageMetadata 与 21 处 absolute 标题统一；本地构建 8,133 页中超过 70 字符的只剩 1 页（俄语，去掉后缀仍超），6,249 页长度够、保留后缀；static-export-performance 加检查；分享标题同样处理（7544e75de1f）；上线 d5a4354e997，源站实测 Bing 点名的 /contact/ /company/ 310、BH35、607 SSET、exit-device 指南标题均 ≤ 70、og:title 一致） |
 | 67 | 视觉优化表（轮播字体/断点、图文衔接、浮层进退场、动效节奏、放大跟手、点击区）属视觉会话；已做的只有卡片悬停（542fe41） | 大部分完成（216880a2c94 轮播与浮层动效 09-23 已上线；其余归视觉会话；09-28 核查更正） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

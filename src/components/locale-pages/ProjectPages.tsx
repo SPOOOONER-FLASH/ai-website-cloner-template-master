@@ -6,7 +6,7 @@ import type { Locale } from "@/data/locales";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
 import { absoluteUrl, siteName } from "@/data/site";
 import { OG_LOCALE, t } from "@/lib/i18n";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { localeMetadata, prefixer } from "./shared";
 
 export function projectsIndexMetadata(locale: Locale): Metadata {
@@ -31,7 +31,7 @@ export function projectMetadata(locale: Locale, slug: string): Metadata {
   const project = getProjectBySlug(slug);
   if (!project) return {};
   const seoTitle = t(project, "seoTitle", locale);
-  const title = seoTitle !== project.seoTitle ? seoTitle : `${t(project, "name", locale)} | ${siteName}`;
+  const title = fitTitle(seoTitle !== project.seoTitle ? seoTitle : `${t(project, "name", locale)} | ${siteName}`);
   const seoDescription = t(project, "seoDescription", locale);
   const description = seoDescription !== project.seoDescription ? seoDescription : t(project, "summary", locale);
   const url = absoluteUrl(p(`/projects/${slug}`));

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { BauColumn } from "@/components/site/BauColumn";
 import { bauCopy } from "@/data/bau-2027";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, fitTitle } from "@/lib/seo";
 
 /** Hand-written, English and German only (PARTIAL_ROUTES in src/lib/spanish-mirror.ts). */
 const copy = bauCopy("de");
@@ -9,7 +9,7 @@ const copy = bauCopy("de");
 export const metadata: Metadata = {
   ...pageMetadata({ enPath: "/bau-2027", locale: "de", title: copy.seoTitle, description: copy.seoDescription }),
   /* The SEO title already names the company; the layout's "| HYDE" suffix would repeat it. */
-  title: { absolute: copy.seoTitle },
+  title: { absolute: fitTitle(copy.seoTitle) },
 };
 
 export default function Page() {

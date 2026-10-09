@@ -5,7 +5,7 @@ import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug, isPublished, products } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 
 type ProductPageProps = {
   params: Promise<{ category: string; slug: string }>;
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     (summary.length <= 165 ? summary : `${summary.slice(0, 160).trimEnd()}…`);
 
   return {
-    title: { absolute: metaTitle },
+    title: { absolute: fitTitle(metaTitle) },
     description: metaDescription,
     /*
       Mirrors the English route: a product with no photograph is unpublished, so this
@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       type: "website",
       url,
-      title: metaTitle,
+      title: fitTitle(metaTitle),
       description: metaDescription,
       locale: "pt",
       images: product.heroImage.src
@@ -102,7 +102,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     },
     twitter: {
       card: "summary_large_image",
-      title: metaTitle,
+      title: fitTitle(metaTitle),
       description: metaDescription,
       images: [absoluteUrl(product.heroImage.src ?? defaultOgImage)],
     },

@@ -3,7 +3,7 @@ import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllGuideParams, getGuideBySlug } from "@/data/guides";
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const { slug } = await params;
   const article = getGuideBySlug(slug);
   if (!article) return {};
-  const title = article.seoTitleEs ?? article.seoTitle;
+  const title = fitTitle(article.seoTitleEs ?? article.seoTitle);
   const description = article.seoDescriptionEs ?? article.seoDescription;
   return {
     title: { absolute: title },

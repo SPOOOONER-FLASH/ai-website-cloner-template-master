@@ -3,7 +3,7 @@ import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     Spanish description is being told this page is not for them, which is worse than
     English — see the fallback rule in src/lib/localised.ts.
   */
-  const title = article.seoTitlePt ?? article.seoTitle;
+  const title = fitTitle(article.seoTitlePt ?? article.seoTitle);
   const description = article.seoDescriptionPt ?? article.seoDescription;
 
   return {

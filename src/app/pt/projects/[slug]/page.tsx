@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/site/ProjectDetail";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return {};
-  const title = `${project.namePt ?? project.name} | Canton Hyland`;
+  const title = fitTitle(`${project.namePt ?? project.name} | Canton Hyland`);
   /* seoDescriptionPt is metadata-only; summaryPt stays as the visible page intro. */
   const description = project.seoDescriptionPt ?? project.summaryPt ?? project.summary;
   const url = absoluteUrl(`/pt/projects/${slug}/`);

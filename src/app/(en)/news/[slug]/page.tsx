@@ -3,7 +3,7 @@ import { authorHref } from "@/data/authors";
 import { articleShareImage, SHARE_IMAGE_SIZE } from "@/lib/article-share-image";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { alternateLanguages, defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage, fitTitle } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
   const article = getNewsBySlug(slug);
   if (!article) return {};
   return {
-    title: { absolute: article.seoTitle },
+    title: { absolute: fitTitle(article.seoTitle) },
     description: article.seoDescription,
     /*
       hreflang, without which the two locales are duplicates rather than translations.
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     openGraph: {
       type: "article",
       url: absoluteUrl(`/news/${slug}/`),
-      title: article.seoTitle,
+      title: fitTitle(article.seoTitle),
       description: article.seoDescription,
       publishedTime: article.publishedAt,
       ...(article.updatedAt ? { modifiedTime: article.updatedAt } : {}),
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     },
     twitter: {
       card: "summary_large_image",
-      title: article.seoTitle,
+      title: fitTitle(article.seoTitle),
       description: article.seoDescription,
       images: [absoluteUrl(articleShareImage("news", slug) ?? article.heroImage.src ?? defaultOgImage)],
     },

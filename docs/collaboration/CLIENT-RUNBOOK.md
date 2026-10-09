@@ -17,6 +17,18 @@
 
 ---
 
+## 现在要做的（2026-10-08）：曝光继续爬升要的三样数据
+
+GSC 全站效果（不加页面筛选、比较上一时段）、两张收录表、Ahrefs Webmaster Tools 免费版。步骤在桌面 `hyde6-10-08-手动操作-曝光继续爬升要的数据.docx`。
+
+---
+
+## 现在要做的（2026-10-08）：Cloudflare 安全页四条建议
+
+两条别开（Bot Fight Mode、AI Labyrinth），security.txt 归档，Unproxied CNAME 先截图发我。AI 搜索爬虫没被拦（你 10-08 查过）。步骤在桌面 `hyde6-10-08-手动操作-Cloudflare安全建议.docx`。
+
+---
+
 ## 现在要做的（2026-10-08）：Search Console —— 停点「验证修复」，再导出三张表（约 10 分钟）
 
 你 10-08 发来的 12 个导出包我全部读完了，结论和逐条数据在 `docs/research/analytics/2026-10-08/gsc-coverage.md`（`node scripts/audit-gsc-coverage.mjs` 可重跑）。**一句话：那五类都不是网站坏了，“验证失败”也不代表没修好。**
@@ -174,7 +186,7 @@ GA4 里 58% 的「用户」是同一个机器人（屏幕 1280×1200）。建一
 3. 保存后，把这个新渠道 **拖到「Referral」上面**（顺序决定归属，放在下面就会被 Referral 先吃掉），再保存渠道组。
 - 成功的样子：报告 → 流量获取 → 把主维度换成「含 AI 助手」渠道组，能看到 AI assistants 一行（有流量才会出现）。
 
-**第三步：Cloudflare 查 AI 搜索爬虫有没有被拦（5 分钟，只看不改）**
+**第三步：Cloudflare 查 AI 搜索爬虫有没有被拦 —— 10-08 已做完：没有被拦，下面步骤不用再做**
 1. 登录 Cloudflare → 选 **cantonlock.com** → 左栏 **Security** → **Events**（安全事件）。
 2. 右上角时间选「过去 7 天」，加筛选条件 **User agent** 包含，依次填：`OAI-SearchBot`、`Claude-SearchBot`、`PerplexityBot`、`GPTBot`。
 3. 看「操作」一列：
