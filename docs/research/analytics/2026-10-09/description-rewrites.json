@@ -1,0 +1,1290 @@
+[
+ {
+  "file": "content/guides/backset-door-thickness-chart-2026.json",
+  "field": "seoDescription",
+  "old": "Backset and door thickness ranges across 589 published door hardware models, counted from the catalog: 60/70mm adjustable, 60mm, 50mm, 45mm, 30mm, with imperial equivalents and the measuring method.",
+  "new": "Backset and door thickness chart, 589 published models: 100 adjustable 60/70mm (2-3/8\"/2-3/4\"), fixed 30, 45, 50, 60, 70mm; 106 take 35 to 45mm doors.",
+  "length": 150,
+  "facts_used": "CORRECTED: the proposal's 'fixed 30 to 70mm' read as a continuous range, but the catalog lists only five discrete fixed values, and 'on 100' / 'on 106' was unclear. 589: 'The figures below come from the 589 published records in our own catalog'. 100 adjustable 60/70mm, 2-3/8\" / 2-3/4\": backset table row 'Adjustable 60/70mm | 2-3/8\" / 2-3/4\" | 100'. Fixed 30, 45, 50, 60, 70mm: backset table rows Fixed 60mm/70mm/50mm/45mm/30mm. 106 take 35 to 45mm doors: thickness table row '35 to 45mm adjustable | 1-3/8\" to 1-3/4\" | 106'; 'take' follows the title's 'What 589 Published Models Actually Take'."
+ },
+ {
+  "file": "content/guides/backset-door-thickness-chart-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Entradas y rangos de espesor en 589 modelos publicados, contados del catálogo: 60/70 mm ajustable, 60, 50, 45 y 30 mm, con equivalentes en pulgadas y el método de medida.",
+  "new": "Tabla de entrada y espesor de puerta, 589 modelos: 100 ajustables 60/70 mm, fijas de 30, 45, 50, 60 y 70 mm; 106 para puertas de 35 a 45 mm. Cómo medir.",
+  "length": 152,
+  "facts_used": "CORRECTED for the same reasons as EN: 'fijas de 30 a 70 mm' implied a continuous range, and 'en 106' was unclear. 589: bodyEs 'Las cifras salen de los 589 registros publicados'; titleEs '589 modelos publicados'. 100 ajustables 60/70 mm: bodyEs table 'Ajustable 60/70 mm | 100'. Fijas de 30, 45, 50, 60 y 70 mm: bodyEs rows Fija 60/70/50/45/30 mm. 106 para puertas de 35 a 45 mm: bodyEs 'De 35 a 45 mm ajustable | 106'. Cómo medir: bodyEs section 'MEDIR UNA PUERTA YA COLGADA'. The terms 'entrada' and 'espesor de puerta' come from titleEs and bodyEs. The ES table has no inch figures, so none are used."
+ },
+ {
+  "file": "content/guides/backset-door-thickness-chart-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Distâncias ao eixo e faixas de espessura em 589 modelos publicados, contados do catálogo: 60/70 mm ajustável, 60, 50, 45 e 30 mm, com equivalentes em polegadas e o método de medição.",
+  "new": "Tabela de distância ao eixo e espessura de porta, 589 modelos: 100 ajustáveis 60/70 mm, fixas de 30, 45, 50, 60 e 70 mm; 106 para portas de 35 a 45 mm.",
+  "length": 151,
+  "facts_used": "CORRECTED for the same reasons as EN: 'fixas de 30 a 70 mm' implied a continuous range, and 'em 106' was unclear. 589: bodyPt 'Os números saem dos 589 registros publicados'; titlePt '589 modelos publicados'. 100 ajustáveis 60/70 mm: bodyPt table 'Ajustável 60/70 mm | 100'. Fixas de 30, 45, 50, 60 e 70 mm: bodyPt rows Fixa 60/70/50/45/30 mm. 106 para portas de 35 a 45 mm: bodyPt 'De 35 a 45 mm ajustável | 106'. The terms 'distância ao eixo' and 'espessura de porta' come from titlePt and bodyPt. The PT table has no inch figures, so none are used."
+ },
+ {
+  "file": "content/guides/certification-and-test-validation-2026.json",
+  "field": "seoDescription",
+  "old": "How to check a door hardware test certificate: the seven parts it must carry, accreditation versus certification, Declarations of Performance and CE marking, and six red flags.",
+  "new": "Validate a door hardware certificate: the seven parts it must carry, DoP and CE marking, six red flags, and a five-minute check on the issuer's register.",
+  "length": 153,
+  "facts_used": "CORRECTED: the proposal put the whole validation (seven parts, DoP/CE, red flags) under 'in five minutes'. In the body, the five-minute section covers only the register, number, scope, date and report steps. Seven parts: '## The seven parts of a genuine test certificate'. DoP and CE marking: '## CE marking and the Declaration of Performance'. Six red flags: '## The six red flags'. Five-minute check on the issuer's register: '## How to check a certificate independently, in five minutes' plus 'Find the issuing body's own register'."
+ },
+ {
+  "file": "content/guides/certification-and-test-validation-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo comprobar un certificado de ensayo de herraje: las siete partes que debe llevar, acreditación frente a certificación, Declaraciones de Prestaciones y marcado CE, y seis señales de alarma.",
+  "new": "Valide un certificado de herraje: las siete partes, DoP y marcado CE, las seis señales de alarma y la comprobación de cinco minutos en el registro.",
+  "length": 147,
+  "facts_used": "CORRECTED: removed the same five-minute overreach as EN and replaced the vague standalone 'acreditación' item. Siete partes: bodyEs '## Las siete partes de un certificado de ensayo auténtico'. DoP y marcado CE: '## El marcado CE y la Declaración de Prestaciones', 'La DoP es la prestación que declara el fabricante'. Seis señales de alarma: '## Las seis señales de alarma'. Comprobación de cinco minutos: bodyEs 'La comprobación de cinco minutos de arriba'. Registro: 'Busque el registro del propio organismo emisor'. Uses the usted form, as the body does (Busque, Pida), and 'herraje' as in titleEs."
+ },
+ {
+  "file": "content/guides/certification-and-test-validation-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como verificar um certificado de ensaio de ferragem: as sete partes que deve levar, acreditação contra certificação, Declarações de Desempenho e marcação CE, e seis sinais de alarme.",
+  "new": "Valide um certificado de ferragem: as sete partes que ele deve ter, DoP e marcação CE, seis sinais de alarme e a verificação de cinco minutos no registro.",
+  "length": 154,
+  "facts_used": "CORRECTED: removed the same five-minute overreach as EN and replaced the vague standalone 'acreditação' item. Sete partes: bodyPt '## As sete partes de um certificado de ensaio autêntico'. DoP e marcação CE: '## A marcação CE e a Declaração de Desempenho', 'A DoP é o desempenho que o fabricante declara'. Seis sinais de alarme: '## Os seis sinais de alarme'. Verificação de cinco minutos: bodyPt 'A verificação de cinco minutos acima'. Registro: 'Procure o registro do próprio organismo emissor' (Brazilian 'registro'). 'Ferragem' as in titlePt."
+ },
+ {
+  "file": "content/news/ansi-grade-1-vs-en-1125-exit-devices.json",
+  "field": "seoDescriptionEs",
+  "old": "ANSI/BHMA A156.3 clasifica los dispositivos antipánico en grados 1 a 3 por durabilidad; EN 1125 codifica ciclos, masa de puerta y uso en puertas cortafuego. Cómo leer cada clasificación.",
+  "new": "Antipánico ANSI Grade 1 o EN 1125: no se comparan. A156.3 gradúa durabilidad de 1 a 3; EN 1125 codifica ciclos y masa de puerta. Decide el país de la obra.",
+  "length": 155,
+  "facts_used": "PASS unchanged. Grades 1-3: 'ANSI/BHMA A156.3 ... los clasifica en grados 1, 2 o 3 por durabilidad.' Not comparable: 'No son comparables en absoluto.' EN 1125 code: 'Lleva un código de clasificación de diez dígitos', 'Durabilidad: ... número de ciclos por grado', 'Masa de la puerta: también por grados'. Country: 'Nada del mecanismo cambia la respuesta; la cambia el país.' ('graduar' = dividir en grados, RAE; acceptable.)"
+ },
+ {
+  "file": "content/news/ansi-grade-1-vs-en-1125-exit-devices.json",
+  "field": "seoDescriptionPt",
+  "old": "A ANSI/BHMA A156.3 classifica os dispositivos antipânico em graus 1 a 3 por durabilidade; a EN 1125 codifica ciclos, massa da porta e uso em portas corta-fogo. Como ler cada classificação.",
+  "new": "Barra antipânico ANSI Grade 1 ou EN 1125: não se comparam. A156.3 gradua durabilidade de 1 a 3; EN 1125 codifica ciclos e massa da porta. Decide o país.",
+  "length": 152,
+  "facts_used": "PASS unchanged. 'A ANSI/BHMA A156.3 ... os classifica em 1, 2 ou 3 por durabilidade.' 'Não são comparáveis de forma alguma.' 'código de classificação de dez dígitos', 'Durabilidade: ... número de ciclos por grau', 'Massa da porta: também por graus'. 'Nada no mecanismo muda a resposta; o país muda.' 'Barra antipânico' from titlePt."
+ },
+ {
+  "file": "content/news/door-hardware-schedule-guide.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué es una planilla de herrajes de puerta, cómo los conjuntos se despliegan en líneas de pedido, y las tres preguntas que hay que hacer antes de cotizar contra una.",
+  "new": "Planilla de herrajes de puerta: se lee por conjunto, no por catálogo. Qué controla cada columna, cómo se indica la mano y tres preguntas antes de cotizar.",
+  "length": 154,
+  "facts_used": "PASS unchanged. 'lea hacia abajo por el conjunto, no a lo ancho por el catálogo.' Section 'Las columnas, y qué controla cada una'. Section 'La mano en una planilla'. 'Hay tres preguntas que conviene hacer antes siquiera de cotizar contra una relación.'"
+ },
+ {
+  "file": "content/news/master-key-systems-how-many-levels-you-need.json",
+  "field": "seoDescriptionEs",
+  "old": "CK, MK, GMK y GGMK explicados, por qué cada nivel de maestra reduce las llaves de cambio disponibles por debajo, y qué necesita una planilla de amaestramiento de su planilla de puertas. Fabricamos hasta cinco niveles con cuatro escalones de gestión.",
+  "new": "Cuántos niveles necesita su amaestramiento: la mayoría de los edificios, tres. Fabricamos hasta cinco, de GGMK a CK. Tabla, ejemplo y planilla en blanco.",
+  "length": 153,
+  "facts_used": "CORRECTED: proposed version answered 'how many levels needed' with 'hasta cinco', but the body says five is the factory ceiling, 'Ese es el techo, no la recomendación'. Now leads with the actual answer. 'La mayoría de los edificios que cotizamos necesitan tres' (summary: 'La mayoría de los edificios necesita tres'). 'Fabricamos hasta cinco niveles, de la GGMK a la llave individual'; table row 'CK, llave individual'. Sections 'La tabla en sí', 'Un ejemplo resuelto...', 'Una planilla en blanco para imprimir y completar'. Title term 'Cuántos niveles necesita ... su amaestramiento' kept."
+ },
+ {
+  "file": "content/news/occupied-vacant-washroom-indicator-bolt.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué tiene que hacer un indicador de ocupado/libre, por qué la apertura de emergencia importa más que la ventana, y en qué se diferencian el 200, el 400 y el 500.",
+  "new": "Indicador ocupado/libre de baño: apertura de emergencia exterior, ventana legible de lejos, metal según la limpieza. 200 y 400 en zamak, 500 en inoxidable.",
+  "length": 155,
+  "facts_used": "PASS unchanged. 'La característica que más importa ... la apertura de emergencia' (ranura en la cara exterior). 'compruebe que la ventana se lee desde el otro extremo del baño'. 'acierte el metal para el régimen de limpieza'. 'Nuestro 200 es de zamak', 'El 400 es de zamak. El 500 es de acero inoxidable'."
+ },
+ {
+  "file": "content/news/exit-device-push-bar-length.json",
+  "field": "seoDescriptionPt",
+  "old": "Por que a barra é dimensionada pela largura da folha, quais dos nossos comprimentos são ajustáveis, e as três medidas a enviar numa consulta de barra antipânico.",
+  "new": "Barra antipânico de 650 a 1110 mm: o comprimento segue a folha, não o vão. Quais modelos são ajustáveis e as três medidas a enviar numa consulta.",
+  "length": 145,
+  "facts_used": "CORRECTED wording only: 'segue a largura da folha, não do vão' was an ungrammatical ellipsis (needs 'não a do vão', which overruns 155); now mirrors the body phrase. 'Os comprimentos publicados na nossa linha são 650, 800, 900, 1000, 1040, 1050 e 1110 mm'. 'a barra é dimensionada pela folha e não pelo vão'. 'Três são publicadas como ajustáveis: a 300 ..., e a 302 e a 302-S'. 'Três medidas tornam uma consulta de antipânico respondível ... largura da folha, espessura da folha, e se o vão é simples ou um par.'"
+ },
+ {
+  "file": "content/news/mortise-lock-backset-and-centre-distance-guide.json",
+  "field": "seoDescriptionPt",
+  "old": "Como ler distância ao eixo e distância entre centros no código de modelo de uma caixa de fechadura, por que existem 85 mm e 72 mm, e qual eixo serve a qual porta.",
+  "new": "Número da caixa de fechadura: LC08 85×55 = 85 mm entre centros, 55 mm de distância ao eixo. Por que existem 85 e 72 mm e qual eixo serve a cada porta.",
+  "length": 150,
+  "facts_used": "PASS unchanged. 'LC08 85×55 é 85 mm de distância entre centros com 55 mm de distância ao eixo.' 'Oitenta e cinco milímetros ... a distância entre centros padrão para fechaduras de cilindro europeu', 'Setenta e dois milímetros ... comum nos mercados latino-americanos'. 'A distância ao eixo ... segue a porta e não a norma' (16/17/20 mm alumínio, 45-60 mm madeira, 70 mm)."
+ },
+ {
+  "file": "content/news/stainless-steel-grades-304-201-316.json",
+  "field": "seoDescriptionPt",
+  "old": "O que separa o 201, o 304 e o 316 em ferragem de porta, por que o 201 enferruja perto do litoral, como testar uma amostra com ímã, e o que perguntar ao fornecedor.",
+  "new": "Inox 304, 201 ou 316 em ferragem de porta: o 201 baixa o níquel a ~4% e enferruja no litoral; o 316 tem 2–3% de molibdênio. Teste do ímã e o que perguntar.",
+  "length": 155,
+  "facts_used": "PASS unchanged. 'baixa o níquel para cerca de 4%'. 'A poucos quilômetros do mar ... o 201 desenvolve pontos de ferrugem numa única estação'. 'acrescentando 2 a 3% de molibdênio'. 'Encoste um ímã. O 304 devidamente recozido é praticamente não magnético'. 'Pergunte três coisas numa linha: qual grau, maciço ou banhado, e se você declara isso na fatura.'"
+ },
+ {
+  "file": "content/news/ul-305-is-a-listing-not-a-grade.json",
+  "field": "seoDescriptionPt",
+  "old": "Uma listagem UL não é um relatório de ensaio nem um grau. O que cada uma das três normas de ferragem antipânico realmente certifica, e o que a Canton Hyland tem.",
+  "new": "UL 305 é uma listagem, não um grau: EN 1125 é norma de desempenho e ANSI A156.3 classifica em Grade 1 a 3. Como conferir cada alegação em cinco minutos.",
+  "length": 152,
+  "facts_used": "CORRECTED: proposed 'a EN 1125 se ensaia' says the standard itself is tested; the body says devices are tested against it. Now: 'Uma é uma norma de desempenho, uma é uma norma de classificação, e uma é a base de uma listagem.' 'ANSI/BHMA A156.3 ... separa produtos em Grade 1, Grade 2 e Grade 3'. Section 'Como conferir a afirmação de qualquer fornecedor em cinco minutos'. Opening clause is titlePt verbatim; 'ANSI A156.3' as in seoTitlePt."
+ },
+ {
+  "file": "content/news/what-a-frameless-glass-door-needs.json",
+  "field": "seoDescriptionPt",
+  "old": "Cada peça que uma porta de vidro temperado precisa: ferragens superior, inferior e de bandeira, mola de piso, fechadura, contra-testa, puxador e a espessura do vidro.",
+  "new": "Porta de vidro temperado: mola de piso de 60 a 200 kg, ferragens inferior, superior e de bandeira, fechadura, contra-testa e puxador. Vidro de 10 a 12 mm.",
+  "length": 154,
+  "facts_used": "PASS unchanged. 'os modelos para vidro sem caixilho vão de 60 kg a 200 kg'. Checklist: 'mola de piso, ferragem inferior, ferragem superior, ferragem de bandeira se houver vidro acima, corpo da fechadura, soquete de piso ou contra-testa, puxador'. 'A nossa linha de ferragens é feita para vidro temperado de 10 a 12 mm'."
+ },
+ {
+  "file": "content/news/handing-left-right-and-universal.json",
+  "field": "seoDescription",
+  "old": "Handing is one letter on an order and the commonest reason a quotation goes back. The European and ANSI conventions disagree, here is how to state it so it cannot be misread.",
+  "new": "Left, right, reverse or universal: DIN and ANSI/BHMA A156.115 name the same door differently. How to write door handing on an order so it is not misread.",
+  "length": 153,
+  "facts_used": "PASS unchanged. left/right/reverse/universal: seoTitle + table 'LH/LHR/RH/RHR' and 'non-handed (universal, marked U)'; ANSI/BHMA A156.115: 'The American method (ANSI/BHMA A156.115) stands the observer OUTSIDE'; same door named differently: 'The same physical door is DIN-left under one and right-hand-reverse under the other.'; not misread: 'Twenty words that cannot be misread beat one letter that can.'"
+ },
+ {
+  "file": "content/news/handing-left-right-and-universal.json",
+  "field": "seoDescriptionEs",
+  "old": "La mano es una letra en el pedido y el motivo más común de que una cotización vuelva. Las convenciones europea y ANSI se contradicen: cómo indicarla sin ambigüedad.",
+  "new": "Mano de la puerta: izquierda, derecha, inversa o universal. DIN y ANSI/BHMA A156.115 nombran distinto la misma puerta; cómo indicarla sin ambigüedad.",
+  "length": 149,
+  "facts_used": "PASS unchanged. inversa: tabla 'LHR: mano izquierda inversa'; universal: 'no tienen mano (universal, marcada U)'; ANSI/BHMA A156.115: 'El método americano (ANSI/BHMA A156.115) sitúa al observador FUERA'; misma puerta: 'La misma puerta física es DIN-izquierda con uno y right-hand-reverse con el otro.'; sin ambigüedad: 'La forma inequívoca de decirlo es describir la puerta'."
+ },
+ {
+  "file": "content/news/push-bar-or-touch-bar-panic-exit-devices.json",
+  "field": "seoDescription",
+  "old": "Push bar or touch bar (box-style) panic exit device: the mechanical advantage of each, what rim, mortise and vertical rod mean, and which suits fire doors and busy corridors.",
+  "new": "Push bar or touch bar panic exit device: a push bar pivots on two arms and survives trolley impacts; a touch bar sinks flush and suits public corridors.",
+  "length": 152,
+  "facts_used": "PASS unchanged. two arms: 'A push bar carries its load on two pivoting arms bolted through the door.'; trolleys: summary 'only one of them survives a corridor that gets hit by trolleys' + 'a push bar shrugs off ... a trolley'; sinks flush: summary 'a touch bar depresses flush into its own housing'; public corridors: table 'Suits | ... | Public corridors, high traffic, cleaner lines'."
+ },
+ {
+  "file": "content/news/push-bar-or-touch-bar-panic-exit-devices.json",
+  "field": "seoDescriptionEs",
+  "old": "Barra de empuje o barra de toque (box-style): la ventaja mecánica de cada una, qué significan sobreponer, embutir y varillas verticales, y cuál conviene a puertas cortafuego y pasillos de mucho tránsito.",
+  "new": "Antipánico de barra de empuje o de presión: la de empuje pivota sobre dos brazos y aguanta carros; la de presión se hunde a ras, para pasillos públicos.",
+  "length": 152,
+  "facts_used": "PASS unchanged. pivota: resumen 'Una barra de empuje pivota y recorre'; dos brazos: 'La barra de empuje transmite la carga a dos brazos basculantes'; carros: 'la barra de empuje aguanta lo que destroza los herrajes ... un carro'; se hunde a ras: resumen 'una barra de presión se hunde a ras de su propio alojamiento'; pasillos públicos: tabla 'Adecuada para | ... | Pasillos públicos, mucho tránsito'. Uses the body's 'barra de presión' instead of the old 'barra de toque' and drops the English 'box-style'."
+ },
+ {
+  "file": "content/news/rim-night-latch-564-and-1073.json",
+  "field": "seoDescription",
+  "old": "Backset 60mm, door thickness 35 to 55mm, latch extension 13mm, deadbolt throw 25mm. What a rim night latch measures and why the numbers differ from a mortise lock.",
+  "new": "Rim night latch 564 and 1073: 60mm backset, 35–55mm doors (30–60mm on request), 13mm latch, 25mm deadbolt throw. Zinc or iron case, single or double side.",
+  "length": 154,
+  "facts_used": "PASS unchanged. 60mm: 'on both our 564 and the 1073 it is 60mm'; 35–55 / 30–60 on request: 'Door thickness ... 35mm to 55mm as standard on both models, and 30mm to 60mm on request'; 13mm: 'The latch extension is 13mm'; 25mm: 'The deadbolt throw is 25mm on the rim deadbolt versions'; zinc/iron: 'The 564 is a zinc die-cast case ... The 1073 is an iron case'; single/double side: 'The choice buyers actually have to make is 1073S against 1073D: single-side opening against double-side.'"
+ },
+ {
+  "file": "content/news/six-values-an-order-needs.json",
+  "field": "seoDescription",
+  "old": "Model, finish, backset, center distance, handing and door thickness. Six values decide whether a lock can be installed, and which one is missing decides whether you lose a day or a container.",
+  "new": "Model, finish, backset, center distance, handing, door thickness: six values a door hardware order needs. An inquiry with all six can be quoted same day.",
+  "length": 153,
+  "facts_used": "CORRECTED. The proposal said 'With all six, it can be quoted the same day', where 'it' points back to the order; the summary says an inquiry is what gets quoted, so the subject is now 'An inquiry'. six values: 'Six values close the gap: model, finish, backset, center distance, handing, door thickness.'; same day: summary 'an inquiry carrying all six can be quoted the same day.'"
+ },
+ {
+  "file": "content/news/six-values-an-order-needs.json",
+  "field": "seoDescriptionEs",
+  "old": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor. Seis datos deciden si una cerradura se instala, y cuál falta decide si pierde un día o un contenedor.",
+  "new": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor de puerta: los seis datos de un pedido de herrajes. Con los seis, se cotiza el mismo día.",
+  "length": 152,
+  "facts_used": "PASS unchanged. seis datos: 'Seis datos cierran esa distancia: modelo, acabado, entrada, distancia entre ejes, mano y espesor de puerta.'; mismo día: resumen 'una consulta que los lleva todos se cotiza el mismo día.'"
+ },
+ {
+  "file": "content/news/six-values-an-order-needs.json",
+  "field": "seoDescriptionPt",
+  "old": "Modelo, acabamento, distância ao eixo, entre centros, mão e espessura. Seis valores decidem se uma fechadura instala, e qual deles falta decide o tamanho do atraso.",
+  "new": "Modelo, acabamento, distância ao eixo, entre centros, mão e espessura: seis valores de um pedido de ferragem. Sem a distância ao eixo, o embarque atrasa.",
+  "length": 153,
+  "facts_used": "PASS unchanged. seis valores: 'Seis valores fecham essa distância: modelo, acabamento, distância ao eixo, distância entre centros, mão e espessura da porta.'; embarque: 'Uma distância ao eixo faltando atrasa o embarque'. The pt body and summary have no same-day claim, so none is used."
+ },
+ {
+  "file": "content/news/trim-handle-or-panic-bar.json",
+  "field": "seoDescription",
+  "old": "A panic bar opens a door from inside only. The outside trim handle is a separate order line with its own function, cylinder cutout and fixing centers. How to specify both.",
+  "new": "A panic bar opens a fire exit door from inside only. The outside trim handle is a separate order line: passage, keyed or anti-pick, for doors up to 90mm.",
+  "length": 153,
+  "facts_used": "PASS unchanged. inside only: summary 'A panic bar opens the door from inside. It does nothing for the person outside.'; separate line: 'The part that lets them in is a separate order line'; passage/keyed/anti-pick: 'The trims we publish, by what they do' (023 PS passage; 016/028/039/X2/015 keyed; 023 ETAN anti-pick); 90mm: 'up to 90mm on the X2'. 'Up to 90mm' is the top of the published range, so it does not claim every trim fits a 90mm door."
+ },
+ {
+  "file": "content/news/trim-handle-or-panic-bar.json",
+  "field": "seoDescriptionEs",
+  "old": "La barra antipánico abre desde dentro. La guarnición exterior es otra línea del pedido, con su función, recorte de cilindro y centros de fijación. Cómo especificar las dos.",
+  "new": "La barra antipánico solo abre desde dentro. La guarnición exterior es otra línea del pedido: de paso, con llave o antiganzúa, para puertas de hasta 90mm.",
+  "length": 153,
+  "facts_used": "CORRECTED wording only. 'para puertas hasta 90mm' becomes 'para puertas de hasta 90mm' to match the body ('sirve para puertas de hasta 90mm'). 'va en otra línea' becomes 'es otra línea del pedido', which is the body's wording and saves the characters. desde dentro: resumen 'La barra antipánico abre la puerta desde dentro.'; de paso/con llave/antiganzúa: 'De paso, siempre libre desde fuera', 'Con llave, cerrada desde fuera', 'Con llave antiganzúa: la 023 ETAN'."
+ },
+ {
+  "file": "content/news/trim-handle-or-panic-bar.json",
+  "field": "seoDescriptionPt",
+  "old": "Uma barra antipânico abre a porta só por dentro. A maçaneta externa é uma linha de pedido separada, com função, furo de cilindro e distância entre furos próprios.",
+  "new": "A barra antipânico só abre por dentro. A maçaneta externa é outra linha do pedido: de passagem, com chave ou antimicha, para portas de até 90 mm.",
+  "length": 145,
+  "facts_used": "PASS unchanged. só por dentro: old field + 'Nada nesse mecanismo ajuda quem está do outro lado.'; linha separada: 'são pedidos em linhas separadas'; passagem/com chave/antimicha: 'Passagem, sempre livre pelo lado de fora', 'Com chave, trancada por fora', 'Com chave antimicha: a 023 ETAN'; 90 mm: 'A X2 ... serve para portas de até 90 mm'."
+ },
+ {
+  "file": "content/news/what-a-test-report-actually-covers.json",
+  "field": "seoDescription",
+  "old": "EN 1125, CE and durability reports certify one model in one configuration, not a product family. How to read the scope line, why report dates matter, and the difference between a test report, a certificate of conformity and ISO 9001.",
+  "new": "Our EN 1125 report covers one exit device, KD070/30-290; our durability report, one lock, 607 SS ET. How to read the scope of a door hardware test report.",
+  "length": 154,
+  "facts_used": "PASS unchanged. summary 'Our EN 1125 report covers one exit device: KD070/30-290. Our durability report covers one lock: 607 SS ET.'; scope: 'read the scope line before the headline'."
+ },
+ {
+  "file": "content/news/what-a-test-report-actually-covers.json",
+  "field": "seoDescriptionEs",
+  "old": "Los informes EN 1125, CE y de durabilidad certifican un modelo en una configuración, no una familia de producto. Cómo leer la línea de alcance, por qué importan las fechas, y la diferencia entre informe de ensayo, certificado de conformidad e ISO 9001.",
+  "new": "Nuestro informe EN 1125 cubre un modelo, el KD070/30-290; el de durabilidad, la 607 SS ET. Qué cubre un informe de ensayo y cómo leer su alcance.",
+  "length": 145,
+  "facts_used": "PASS unchanged. resumen 'Nuestro informe EN 1125 cubre un dispositivo: KD070/30-290. Nuestro informe de durabilidad cubre una cerradura: 607 SS ET.'; 'cubre un modelo' matches titleEs 'cubre un modelo, no una gama'; alcance: 'lea la línea de alcance antes que el titular'. 'la 607' follows 'una cerradura' in the summary."
+ },
+ {
+  "file": "content/news/what-an-old-padlock-tells-a-lock-factory.json",
+  "field": "seoDescription",
+  "old": "A rusted riveted padlock found chained to a statue in Germany, read by people who make door hardware: what the rivets and the pin in its keyhole still say, and what rust took for good.",
+  "new": "An old padlock chained to a knight in Germany: riveted plates, a pin in the keyhole for a hollow key, a warded lock. What a lock factory reads in it.",
+  "length": 149,
+  "facts_used": "PASS unchanged. knight in Germany: 'a cast knight in armour ... Chained around the knight's ankles is a padlock'; riveted plates: 'a case assembled from plates ... riveted cold'; pin/hollow key/warded: 'A pin means the key is hollow ... means a warded lock'; title terms from seoTitle 'What an Old Padlock Tells a Lock Factory'."
+ },
+ {
+  "file": "content/news/what-an-old-padlock-tells-a-lock-factory.json",
+  "field": "seoDescriptionEs",
+  "old": "Un candado remachado y oxidado encontrado encadenado a una estatua en Alemania, leído por gente que fabrica herrajes: qué siguen diciendo los remaches y el pivote del bocallave.",
+  "new": "Un candado viejo encadenado a un caballero en Alemania, leído por una fábrica de cerraduras: ocho remaches, pivote para llave hueca, cerradura de guardas.",
+  "length": 154,
+  "facts_used": "CORRECTED. 'leído por fabricantes' could be read as padlock makers, and the body says 'nosotros no fabricamos candados'. It also dropped the seoTitleEs term 'fábrica de cerraduras', which is now restored. caballero en Alemania: 'Encadenado a los tobillos del caballero hay un candado'; ocho remaches: 'Ocho remaches de cabeza abombada rodean el cuerpo'; pivote/llave hueca/guardas: 'Un pivote significa que la llave es hueca ... significa cerradura de guardas'."
+ },
+ {
+  "file": "content/news/what-it-takes-to-tool-a-new-exit-device.json",
+  "field": "seoDescription",
+  "old": "Three moulds, three toolmakers, a pause of over a year, three months to cut and five months of trial-and-correction. A factory account of what tooling a custom panic exit device actually involves, and why a tooled lead time differs from a catalog one.",
+  "new": "Tooling the 311 exit device: three molds (ABS, steel, zinc alloy), three months to cut, five months of trial and correction. Why tooled lead times differ.",
+  "length": 154,
+  "facts_used": "CORRECTED (clarity). 'Why lead times differ' did not say what they differ from, so it now reads 'tooled lead times'. 'stamped steel' becomes 'steel' to make room, and because the steel tool is a stamping die. three molds: 'an ABS mould for the push bar body, a steel stamping die ... and a zinc-alloy die-casting mould'; three months: 'the complete set of three moulds was finished in three months'; five months: 'From first trial to a tool that could be trusted to run took five months in total.'; lead times: 'a tooled product and a catalog product are two different purchases with two different clocks'. American spelling 'molds'."
+ },
+ {
+  "file": "content/news/what-it-takes-to-tool-a-new-exit-device.json",
+  "field": "seoDescriptionEs",
+  "old": "Tres moldes, tres matriceros, una pausa de más de un año, tres meses de corte y cinco meses de prueba y corrección. Relato de fábrica sobre lo que implica el utillaje de un antipánico a medida y por qué su plazo difiere del de catálogo.",
+  "new": "Utillaje del antipánico 311: tres moldes (ABS, acero y zamak), tres meses de corte y cinco de prueba y corrección. Por qué su plazo no es el de catálogo.",
+  "length": 153,
+  "facts_used": "CORRECTED (clarity). 'Por qué su plazo difiere' did not say from what, so the catalog comparison is restored. tres moldes: 'un molde de ABS ..., una matriz de estampación de acero ... y un molde de inyección de zamak'; tres meses: 'el juego completo de tres moldes se terminó en tres meses'; cinco: 'Desde la primera prueba hasta un utillaje listo para producir pasaron cinco meses en total'; catálogo: 'un producto con utillaje propio y uno de catálogo son dos compras distintas con dos relojes distintos'."
+ },
+ {
+  "file": "content/news/what-it-takes-to-tool-a-new-exit-device.json",
+  "field": "seoDescriptionPt",
+  "old": "Três moldes, três ferramenteiros, três meses de corte e cinco meses de tentativa e correção. O relato de fábrica de como uma barra antipânico customizada é feita.",
+  "new": "Ferramental da barra antipânico 311: três moldes (ABS, aço e zamac), três meses de corte e cinco de teste e correção. Por que o prazo não é o de catálogo.",
+  "length": 154,
+  "facts_used": "CORRECTED (clarity). As in es, the comparison with catalog lead time is restored. três moldes: 'um molde de ABS ..., uma matriz de estampagem em aço ... e um molde de injeção de zamac'; três meses: 'o conjunto completo dos três moldes ficou pronto em três meses'; cinco: 'cinco meses de teste e correção' / 'foram cinco meses no total'; catálogo: 'um produto com ferramental próprio e um produto de catálogo são duas compras diferentes com dois relógios diferentes'."
+ },
+ {
+  "file": "content/news/what-oem-actually-changes.json",
+  "field": "seoDescription",
+  "old": "Packaging, branding on the part, finish and tooling are four separate OEM decisions with four different costs. What each one requires, why our own tooling matters, and what to send to start.",
+  "new": "OEM and private label door hardware: packaging and finish run from 30 days, a logo on the part modifies a die, a new mold takes three to five months.",
+  "length": 149,
+  "facts_used": "PASS unchanged. 30 days: 'A packaging or finish change runs on catalog lead time, which starts at 30 days from order confirmation.'; logo/die: 'a logo on a stamped part comes from the die ... it modifies an existing die rather than cutting a new one'; new mold: 'A new mould takes three to five months before production can begin.'"
+ },
+ {
+  "file": "content/news/what-oem-actually-changes.json",
+  "field": "seoDescriptionEs",
+  "old": "Embalaje, marca en la pieza, acabado y utillaje son cuatro decisiones OEM distintas con cuatro costos distintos. Qué requiere cada una, por qué importa que el utillaje sea propio, y qué enviar para empezar.",
+  "new": "Herrajes OEM y marca propia: embalaje y acabado desde 30 días, un logotipo en la pieza modifica una matriz, un molde nuevo lleva de tres a cinco meses.",
+  "length": 151,
+  "facts_used": "PASS unchanged. 30 días: 'Un cambio de embalaje o de acabado va con el plazo de catálogo, que empieza en 30 días'; logotipo/matriz: 'un logotipo en una pieza estampada sale de la matriz ... modifica una matriz existente'; molde nuevo: 'Un molde nuevo lleva de tres a cinco meses antes de que pueda empezar la producción.'"
+ },
+ {
+  "file": "content/news/why-the-catalogue-is-this-wide.json",
+  "field": "seoDescription",
+  "old": "How a door hardware catalog gets wide: buyers bring a sample their market needs, we cut the mould. Three to five months per mould, run-in testing, batch testing, then market certification. Canton Hyland, Guangdong, since 1998.",
+  "new": "A 616-entry door hardware range in 17 families, most made because a buyer brought a sample. Custom mold making since 1998: three to five months per mold.",
+  "length": 153,
+  "facts_used": "CORRECTED (title term). The seoTitle's 'Hardware Range' was missing and is now restored as 'door hardware range'. 616/17: '616 entries in seventeen product families'; buyer's sample: summary 'brought us a drawing or a sample, and we cut the mould. Do that since 1998' + 'we did not plan most of them'; 3–5 months: 'A new metal mould takes three to five months.' American spelling 'mold'."
+ },
+ {
+  "file": "content/news/why-the-catalogue-is-this-wide.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo se hace amplio un catálogo de herrajes: el comprador trae la muestra que su mercado necesita y nosotros cortamos el molde. De tres a cinco meses por molde, rodaje, ensayos de serie y certificación de mercado. Canton Hyland, Guangdong, desde 1998.",
+  "new": "Gama de herrajes de 616 entradas en 17 familias, casi todas nacidas de la muestra de un comprador. Moldes a medida desde 1998, de 3 a 5 meses por molde.",
+  "length": 152,
+  "facts_used": "CORRECTED (grammar). 'casi todas porque un comprador trajo una muestra' was elliptical and now reads 'casi todas nacidas de la muestra de un comprador', at the same length. 616/17: '616 entradas en diecisiete familias de producto'; muestra/1998: resumen 'nos trajo un plano o una muestra, y cortamos el molde. Haga eso desde 1998'; 3 a 5 meses: 'Un molde metálico nuevo lleva de tres a cinco meses.'; title terms 'gama de herrajes', 'moldes a medida'."
+ },
+ {
+  "file": "content/guides/brass-alloys-and-dezincification-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué aleaciones de latón usa el herraje de puerta, por qué se añade plomo, qué es la descincificación y cuándo se exige DZR, latón frente a bronce, y qué especificar.",
+  "new": "Herraje de latón: sobre aprox. 37% de zinc, el latón es más vulnerable a la descincificación; en puerta costera, DZR (CZ132, CW602N). Aleaciones y plomo.",
+  "length": 153,
+  "facts_used": "CORRECTED (fact precision). The proposal dropped 'aproximadamente' and stated 37% as an exact threshold. The body and summary both say 'aproximadamente un 37%', so 'aprox.' is restored and 'el latón' is now the explicit subject. 37%/DZR/CZ132/CW602N: resumen 'Por encima de aproximadamente un 37 % de zinc, el latón es más vulnerable a la descincificación ... debe ser de latón DZR (CZ132 o CW602N)'; puerta costera: body 'si sobrevive veinte años en una puerta costera'; aleaciones y plomo: seoTitleEs."
+ },
+ {
+  "file": "content/guides/brass-alloys-and-dezincification-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Que ligas de latão a ferragem de porta usa, por que se acrescenta chumbo, o que é a deszincificação e quando se exige DZR, latão contra bronze, e o que especificar.",
+  "new": "Ferragem de latão: acima de aprox. 37% de zinco, o latão fica mais vulnerável à deszincificação; em porta costeira, DZR (CZ132, CW602N). Ligas e chumbo.",
+  "length": 152,
+  "facts_used": "CORRECTED (fact precision). As in es, 'aprox.' is restored because the body says 'acima de aproximadamente 37% de zinco'. 37%/DZR/CZ132/CW602N: resumo 'Acima de aproximadamente 37 % de zinco, o latão fica mais vulnerável à deszincificação ... deve ser de latão DZR (CZ132 ou CW602N)'; porta costeira: body 'se sobrevive vinte anos numa porta costeira'; ligas e chumbo: seoTitlePt."
+ },
+ {
+  "file": "content/news/brass-piano-hinge-is-a-finish-not-a-metal.json",
+  "field": "seoDescription",
+  "old": "A brass piano hinge is usually an iron continuous hinge with a brass finish. Why the distinction matters on exterior doors, and the four widths Canton Hyland supplies.",
+  "new": "A brass piano hinge is usually iron with a brass finish. Ours is iron, in four widths from 1\" to 3\". How a magnet tells plated iron from solid brass.",
+  "length": 149,
+  "facts_used": "PASS unchanged. 'almost everything you find will be an iron hinge with a brass finish on it'; 'the leaf is iron. The widths are 1 inch, 1-1/4 inch, 2 inch and 3 inch'; 'That one test separates a brass-finished iron hinge from a solid brass one'; 'A plated iron hinge shows gray under the color.'"
+ },
+ {
+  "file": "content/news/brass-piano-hinge-is-a-finish-not-a-metal.json",
+  "field": "seoDescriptionEs",
+  "old": "Una bisagra de piano de latón suele ser una bisagra continua de hierro con acabado de latón. Por qué importa en puertas exteriores, y los cuatro anchos que suministra Canton Hyland.",
+  "new": "Una bisagra de piano de latón suele ser de hierro con acabado de latón. La nuestra es de hierro, en cuatro anchos de 1\" a 3\". Cómo saberlo con un imán.",
+  "length": 151,
+  "facts_used": "PASS unchanged. 'casi todo lo que encuentre será una bisagra de hierro con un acabado de latón encima'; 'la pletina es de hierro. Los anchos son 1 pulgada, 1-1/4, 2 y 3 pulgadas'; 'Un imán: el hierro y el acero común son muy magnéticos; el latón y el cobre no lo son'"
+ },
+ {
+  "file": "content/news/choosing-a-cylindrical-lock-entrance-privacy-passage.json",
+  "field": "seoDescription",
+  "old": "Entrance, privacy and passage functions across twelve Canton Hyland cylindrical locks, with the 60/70mm adjustable backset, the 35–45mm door range, and the one model that reaches 90mm.",
+  "new": "Function first: entrance, privacy or passage. Twelve cylindrical locks, the common 60/70mm backset and 35–45mm door, and the 5831 for a 90mm backset.",
+  "length": 149,
+  "facts_used": "PASS unchanged. 'So the real first decision is function, and there are three that cover most doors'; summary 'Nearly all of them take a 60/70mm adjustable backset and a 35–45mm door'; 5831 'backset is published as 60, 70, 80 or 90mm adjustable'"
+ },
+ {
+  "file": "content/news/choosing-a-cylindrical-lock-entrance-privacy-passage.json",
+  "field": "seoDescriptionEs",
+  "old": "Funciones de entrada, condena y paso en doce cerraduras cilíndricas de Canton Hyland, con eje regulable 60/70mm, puerta de 35–45mm, y el único modelo que llega a 90mm.",
+  "new": "Primero la función: entrada, privacidad o paso. Doce cerraduras cilíndricas, el eje común de 60/70mm, puertas de 35–45mm y el 5831 para un eje de 90mm.",
+  "length": 151,
+  "facts_used": "PASS unchanged. 'la primera decisión real es la función'; seoTitleEs 'Entrada, privacidad o paso'; summary 'Casi todas admiten eje regulable 60/70mm y puerta de 35–45mm'; 5831 'Su eje se publica como 60, 70, 80 o 90mm regulable'. 'eje' matches existing summaryEs/seoDescriptionEs."
+ },
+ {
+  "file": "content/news/choosing-a-cylindrical-lock-entrance-privacy-passage.json",
+  "field": "seoDescriptionPt",
+  "old": "Funções entrada, banheiro e passagem em doze fechaduras cilíndricas, com distância ao eixo 60/70 mm ajustável, porta de 35–45 mm e o único modelo que chega a 90 mm.",
+  "new": "Primeiro a função: entrada, privacidade ou passagem. Doze fechaduras cilíndricas, distância ao eixo de 60/70 mm, portas de 35–45 mm e o 5831, até 90 mm.",
+  "length": 152,
+  "facts_used": "PASS unchanged. 'A primeira decisão de verdade, então, é a função'; seoTitlePt 'entrada, privacidade ou passagem'; 'distância ao eixo está declarada como 60 mm ou 70 mm ajustável e a espessura de porta como 35 mm a 45 mm'; 5831 'publicada como 60, 70, 80 ou 90 mm ajustável'"
+ },
+ {
+  "file": "content/news/cross-referencing-a-lock-you-already-buy.json",
+  "field": "seoDescription",
+  "old": "Six dimensions decide whether one mortise lock substitutes for another: backset, center distance, faceplate, case size, spindle and door thickness. Why model numbers, finish names and grade designations do not carry across, and what to check first in a retrofit.",
+  "new": "Cross-reference a door lock by six dimensions, not the model number. Mortise lock: backset, center distance, faceplate, case, spindle, door thickness.",
+  "length": 150,
+  "facts_used": "CORRECTED: proposal applied the mortise-lock list to any 'door lock'; the body gives a different list for rim locks, so the list is now labelled mortise. 'Two locks with the same six numbers are interchangeable'; 'For a mortise lock, those six are: backset ... center distance ... faceplate length and width; case height and depth; spindle size ... and door thickness range'; 'What does not carry across ... the model number itself'"
+ },
+ {
+  "file": "content/news/cross-referencing-a-lock-you-already-buy.json",
+  "field": "seoDescriptionEs",
+  "old": "Seis cotas deciden si una cerradura de embutir sustituye a otra: entrada, distancia entre centros, frente, caja, cuadradillo y espesor de puerta. Por qué el modelo, el acabado y el grado no se trasladan, y qué comprobar primero en una reforma.",
+  "new": "Para encontrar el equivalente de una cerradura de embutir, compare entrada, distancia entre centros, frente, caja, cuadradillo y espesor de puerta.",
+  "length": 147,
+  "facts_used": "CORRECTED: same issue, the six-item list belongs to the mortise lock (sobreponer has another list). 'Para una cerradura de embutir esas seis son: la entrada ... la distancia entre centros ... largo y ancho del frente; alto y fondo de la caja; la medida del cuadradillo ... y el rango de espesor de puerta'; title term 'encontrar el equivalente de una cerradura'"
+ },
+ {
+  "file": "content/news/deadbolt-d101-d102-and-the-rim-alternative.json",
+  "field": "seoDescription",
+  "old": "What to check on a deadbolt: throw length, anti-saw roller pin, cylinder pinning, free-turning collar and whether it can be keyed with the entrance lock above it.",
+  "new": "D101 and D102 deadbolts: 25mm (1\") throw, hardened steel anti-saw roller pin, free-turning collar, 60/70mm backset, and keying to match the entrance lock.",
+  "length": 154,
+  "facts_used": "PASS unchanged. 'ours is 25mm (1\") on both the D101 and the D102'; 'zinc die-cast with a hardened steel roller pin. The roller pin is the anti-saw feature'; 'The collar around the cylinder spins freely ... Both the D101 and the D102 publish it'; 'a backset adjustable between 60mm and 70mm'; 'both are published as keyable to pair with an entrance bored lock'"
+ },
+ {
+  "file": "content/news/door-coordinator-double-fire-door.json",
+  "field": "seoDescription",
+  "old": "Why a pair of fire doors with two closers needs a coordinator, how closing sequence defeats the latch, and how to match a coordinator to leaf weight. Canton Hyland DC02, 397 × 120mm, 55–100kg.",
+  "new": "If the active leaf of a double fire door closes first, it does not latch. Sizing a door coordinator: the DC02 for 55–100kg leaves, closers up to 85kg.",
+  "length": 150,
+  "facts_used": "CORRECTED for title terms: proposal lacked 'door coordinator' and 'double fire door' from the SEO title. 'If the active leaf gets there first ... The latch never engages the strike'; 'The DC02 is rated for leaves of 55–100kg'; 'our heaviest closer stops at 85' (JU-093 at 45–85kg)"
+ },
+ {
+  "file": "content/news/door-coordinator-double-fire-door.json",
+  "field": "seoDescriptionEs",
+  "old": "Por qué un par de puertas cortafuego con dos cierrapuertas necesita un selector, cómo la secuencia de cierre impide el acuñado, y cómo ajustarlo al peso de hoja. Canton Hyland DC02, 397 × 120 mm, 55–100 kg.",
+  "new": "Si en una puerta cortafuego de dos hojas la activa cierra primero, no traba. Cómo dimensionar el selector de cierre DC02 (55–100 kg) y los cierrapuertas.",
+  "length": 153,
+  "facts_used": "CORRECTED for title term: 'selector de cierre' (title) instead of the bare 'selector'; 'sus cierrapuertas' changed to 'los cierrapuertas'. 'Si la activa llega primero ... El pestillo no llega a entrar en el cerradero. Queda una puerta que parece cerrada pero no está trabada'; 'El DC02 está indicado para hojas de 55–100 kg'; title 'cómo dimensionarlo'"
+ },
+ {
+  "file": "content/news/door-stop-holder-or-flush-bolt.json",
+  "field": "seoDescription",
+  "old": "DS013 is a door stopper; DS011 is a flush bolt. How to tell stops, holders and flush bolts apart, why projection is the number that decides a stop, and why a stop is selected against the handle rather than the door.",
+  "new": "DS013 is a door stop; DS011 is a flush bolt. How to tell stops, holders and flush bolts apart, and why a stop is chosen by handle projection.",
+  "length": 141,
+  "facts_used": "PASS unchanged. 'DS013 is a door stopper. DS011 is a flush bolt.'; door holder paragraph; 'a door stop is selected against the handle, not against the door'; 'a stop for each leaf chosen against the handle projection'"
+ },
+ {
+  "file": "content/news/door-stop-holder-or-flush-bolt.json",
+  "field": "seoDescriptionEs",
+  "old": "El DS013 es un tope de puerta; el DS011 es un pestillo embutido. Cómo distinguir topes, retenedores y pestillos, por qué el saliente es el número que decide un tope, y por qué un tope se elige contra la manija y no contra la puerta.",
+  "new": "El DS013 es un tope; el DS011, un pasador embutido. Cómo distinguir topes, retenedores y pasadores, y por qué el tope se elige según la manija.",
+  "length": 143,
+  "facts_used": "PASS unchanged. Body and summaryEs consistently use 'pasador embutido' for flush bolt (seoTitleEs's 'pestillo embutido' is the outlier). 'El DS013 es un tope de puerta. El DS011 es un pasador embutido.'; retenedor paragraph; 'un tope se elige contra la manija, no contra la puerta'"
+ },
+ {
+  "file": "content/news/en-1125-or-ansi-which-standard-your-project-needs.json",
+  "field": "seoDescription",
+  "old": "EN 1125, EN 179 and ANSI/BHMA A156.3 are separate systems, not grades of one scale. What each measures, why fire rating is a third axis, and the five answers that select the standard before hardware is chosen.",
+  "new": "EN 1125 and ANSI/BHMA A156.3 are separate systems, not grades of one scale. The standard is set by where the door is and what the local authority enforces.",
+  "length": 155,
+  "facts_used": "CORRECTED for title term: proposal dropped 'standard' (title: 'Which Standard Your Project Needs'). 'They are two separate regulatory systems'; 'as though the two were points on one scale ... They are not'; 'which one applies is settled ... by where the door is and what the authority having jurisdiction there enforces'; summary 'The standard is decided by where the door is'"
+ },
+ {
+  "file": "content/news/en-1125-or-ansi-which-standard-your-project-needs.json",
+  "field": "seoDescriptionEs",
+  "old": "EN 1125, EN 179 y ANSI/BHMA A156.3 son sistemas independientes, no grados de una misma escala. Qué mide cada uno, por qué la resistencia al fuego es un tercer eje, y las cinco respuestas que seleccionan la norma.",
+  "new": "EN 1125 y ANSI/BHMA A156.3 son sistemas independientes, no grados de una escala. La norma la deciden dónde está la puerta y qué exige la autoridad local.",
+  "length": 153,
+  "facts_used": "PASS unchanged. 'Son dos sistemas normativos independientes'; 'como si fueran puntos de una misma escala ... No lo son'; 'qué exige la autoridad local'; summaryEs 'La norma la decide dónde está la puerta'"
+ },
+ {
+  "file": "content/news/euro-cylinder-length-and-split.json",
+  "field": "seoDescription",
+  "old": "A 70mm euro cylinder can be 35/35, 30/40 or 40/30. How to measure from the cam for the split your door needs, why projection over 3mm is a security problem, and what our catalog does and does not publish.",
+  "new": "A 70mm euro cylinder can be split 35/35, 30/40 or 40/30. Measure from the cam to each face, round up to the next 5mm, keep outer projection to 3mm or less.",
+  "length": 155,
+  "facts_used": "CORRECTED for title term: proposal lacked 'split' (title 'Euro Cylinder Length vs Split'). 'the two halves are quoted as a split: 35/35, 30/40, 40/30. All three are 70mm cylinders'; 'Measure from the fixing-screw hole ... (that is the cam center) outward to the finished face on each side'; 'Round each up to the next 5mm'; 'keep projection to about 3mm (1/8\") or less on the outside face'"
+ },
+ {
+  "file": "content/news/euro-cylinder-length-and-split.json",
+  "field": "seoDescriptionEs",
+  "old": "Un cilindro europeo de 70 mm puede ser 35/35, 30/40 o 40/30. Cómo medir desde la leva el reparto que necesita su puerta, por qué un saliente de más de 3 mm es un problema de seguridad, y qué publica y qué no nuestro catálogo.",
+  "new": "Reparto de un cilindro europeo de 70 mm: 35/35, 30/40 o 40/30. Mida de la leva a cada cara, redondee al alza de 5 en 5 mm y deje 3 mm de saliente o menos.",
+  "length": 154,
+  "facts_used": "CORRECTED for title term: proposal lacked 'reparto' (seoTitleEs 'longitud total y reparto 30/40'). 'las dos mitades se indican como un reparto: 35/35, 30/40, 40/30. Los tres son cilindros de 70 mm'; 'Mida desde la perforación del tornillo de fijación ... (ése es el centro de la leva) hacia afuera hasta la cara acabada de cada lado'; 'Redondee cada una al alza al siguiente múltiplo de 5 mm'; 'mantenga el saliente en unos 3 mm o menos en la cara exterior'"
+ },
+ {
+  "file": "content/news/euro-cylinder-length-and-split.json",
+  "field": "seoDescriptionPt",
+  "old": "Um cilindro de 70 mm pode ser 35/35, 30/40 ou 40/30. Como medir a partir do came para achar a divisão certa, e por que saliência acima de 3 mm é risco de segurança.",
+  "new": "Divisão de um cilindro europeu de 70 mm: 35/35, 30/40 ou 40/30. Meça do came a cada face, arredonde para cima de 5 em 5 mm e deixe até 3 mm de saliência.",
+  "length": 153,
+  "facts_used": "CORRECTED for title term: proposal lacked 'divisão' (seoTitlePt 'comprimento total e divisão 30/40'). 'as duas metades são cotadas como uma divisão: 35/35, 30/40, 40/30. As três são cilindros de 70 mm'; 'Meça a partir do furo do parafuso de fixação ... (esse é o centro do came) para fora até a face acabada de cada lado'; 'Arredonde cada uma para cima até os próximos 5 mm'; 'mantenha a saliência em cerca de 3 mm ou menos na face externa'"
+ },
+ {
+  "file": "content/news/euro-cylinder-range-45-to-90.json",
+  "field": "seoDescription",
+  "old": "The model number is the total length, not the split. Which lengths Canton Hyland publishes, what the finish letters mean, and which function letters are not yet documented.",
+  "new": "Euro cylinder range 45–90mm: the model number is the overall length, not the split. 19 variants at 70mm, solid brass where published, DK/KT/IK unconfirmed.",
+  "length": 155,
+  "facts_used": "CORRECTED: a blanket 'Solid brass' overstates the body, which says the 60 and 90 have no material row and 'we will ask rather than that it is brass like its neighbors'; now 'where published'. 'the number is the total length of the cylinder in millimeters. The selected range runs 45, 54, 60, 70, 80 and 90'; 'That total is not the split'; 'nineteen published variants' (70); 'DK, KT or IK ... whose meanings the factory has not yet confirmed to us in writing'"
+ },
+ {
+  "file": "content/news/euro-cylinder-range-45-to-90.json",
+  "field": "seoDescriptionEs",
+  "old": "El número de modelo es la longitud total, no la partición. Qué longitudes publica Canton Hyland, qué significan las letras de acabado, y qué letras de función aún no están documentadas.",
+  "new": "Gama de cilindros europeos 45–90mm: el número de modelo es la longitud total, no la partición. Latón macizo donde consta; DK, KT e IK sin confirmar.",
+  "length": 148,
+  "facts_used": "CORRECTED: same blanket-brass issue ('la respuesta honesta a «¿de qué es el 60?» es que lo preguntaremos'); 'donde consta' added; 19-variant clause dropped for length; 'Gama' restored from seoTitleEs. 'el número es la longitud total del cilindro en milímetros. La selección va de 45 ... 90'; 'Ese total no es la partición'; 'DK, KT o IK ... cuyo significado la fábrica todavía no nos ha confirmado por escrito'"
+ },
+ {
+  "file": "content/news/finish-codes-us26d-626-630.json",
+  "field": "seoDescription",
+  "old": "626 is satin chrome on brass, 652 is satin chrome on steel, 630 is solid satin stainless. Why a finish cross-reference chart with two columns is the one that costs money.",
+  "new": "US26D is 626, satin chrome on brass or bronze. 652 is the same look on steel; 630 is solid satin stainless. Why BHMA finish codes name the base metal.",
+  "length": 150,
+  "facts_used": "PASS unchanged. 'US26D maps to 626, satin chromium plated on brass or bronze'; '652 is satin chromium plated on a steel base. They are the same color'; '630 is satin stainless steel, solid'; 'A BHMA number encodes the base metal as well as the appearance'"
+ },
+ {
+  "file": "content/news/finish-codes-us26d-626-630.json",
+  "field": "seoDescriptionEs",
+  "old": "626 es cromo satinado sobre latón, 652 sobre acero, 630 es inoxidable satinado macizo. Por qué una tabla de equivalencias de dos columnas es la que cuesta dinero.",
+  "new": "US26D es 626: cromado satinado sobre latón o bronce; 652, sobre acero; 630, inoxidable satinado macizo. El código de acabado BHMA incluye el metal base.",
+  "length": 152,
+  "facts_used": "CORRECTED for title term: proposal lacked 'códigos de acabado' (seoTitleEs 'cómo funcionan los códigos de acabado BHMA'). 'US26D corresponde a 626, cromado satinado sobre latón o bronce'; '652 es cromado satinado sobre base de acero'; '630 es acero inoxidable satinado, macizo'; 'Un número BHMA codifica el metal base además del aspecto'"
+ },
+ {
+  "file": "content/news/fitting-a-euro-cylinder.json",
+  "field": "seoDescription",
+  "old": "Fitting a euro-profile cylinder: turn the cam, remove the fixing screw, set the projection flush to 3mm, and test with the door closed. Canton Hyland solid brass cylinders, nine overall lengths.",
+  "new": "Fit a euro cylinder in five steps: turn the key 15–20° to clear the cam, remove the fixing screw, set projection flush to 3mm, test with the door closed.",
+  "length": 153,
+  "facts_used": "PASS unchanged. Title 'Five Steps'; 'turn it about fifteen to twenty degrees, far enough that the cam ... is drawn back inside the profile'; 'Step two, take out the fixing screw'; 'Flush to about three millimeters proud is right'; 'test it again with the door CLOSED'"
+ },
+ {
+  "file": "content/news/fitting-a-euro-cylinder.json",
+  "field": "seoDescriptionEs",
+  "old": "Montaje de un cilindro de perfil europeo: gire la leva, retire el tornillo de fijación, ajuste la proyección de enrasado a 3 mm y pruebe con la puerta cerrada. Cilindros de latón macizo de Canton Hyland, nueve longitudes.",
+  "new": "Cómo montar un cilindro europeo: gire la llave 15–20° para recoger la leva, quite el tornillo, deje hasta 3 mm de saliente y pruebe con la puerta cerrada.",
+  "length": 154,
+  "facts_used": "PASS unchanged. 'gírela unos quince o veinte grados, lo justo para que la leva ... quede recogida dentro del perfil'; 'Paso dos, quitar el tornillo de fijación'; 'De enrasado a unos tres milímetros es lo correcto'; 'pruébelo otra vez con la puerta CERRADA'. 'saliente' is the term the sibling euro-cylinder article's Spanish copy uses."
+ },
+ {
+  "file": "content/news/fitting-a-euro-cylinder.json",
+  "field": "seoDescriptionPt",
+  "old": "Gire o came, retire o parafuso de fixação, deixe a saliência entre rente e 3 mm, e teste com a porta fechada. Cilindros de latão maciço, nove comprimentos totais.",
+  "new": "Como instalar um cilindro europeu: gire a chave 15–20° para recolher o came, tire o parafuso, deixe até 3 mm de saliência e teste com a porta fechada.",
+  "length": 150,
+  "facts_used": "PASS unchanged. 'gire uns quinze a vinte graus, o bastante para que o came ... recolha para dentro do perfil'; 'Passo dois, tire o parafuso de fixação'; 'De rente até cerca de três milímetros para fora está certo'; 'teste de novo com a porta FECHADA'"
+ },
+ {
+  "file": "content/guides/chrome-finish-differences-2026.json",
+  "field": "seoDescription",
+  "old": "Why chrome plating is really a nickel stack, how polished chrome, satin chrome and satin nickel differ, the US and BHMA codes, and why the same code varies between suppliers.",
+  "new": "Polished chrome is US26 (BHMA 625), satin chrome US26D (626), satin nickel US15 (619). Chrome reads cool, nickel warm. Why two suppliers' chrome differs.",
+  "length": 153,
+  "facts_used": "PASS unchanged. US26/BHMA 625, US26D/BHMA 626, US15/BHMA 619: finish table and FAQ 'Polished chrome is US26 or BHMA 625...'. Cool vs warm: 'chrome is cool and reads slightly blue; nickel is warm'. Supplier difference: section 'Why two suppliers' polished chrome do not match'."
+ },
+ {
+  "file": "content/guides/chrome-finish-differences-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Por qué el cromado es en realidad una pila de níquel, en qué se diferencian cromo pulido, cromo satinado y níquel satinado, los códigos US y BHMA, y por qué el mismo código varía entre proveedores.",
+  "new": "Cromo pulido US26 (BHMA 625), cromo satinado US26D (626), níquel satinado US15 (619): el cromo es frío, el níquel cálido. Por qué varían entre proveedores.",
+  "length": 155,
+  "facts_used": "PASS unchanged. Codes: ES table 'Cromo pulido | US26, BHMA 625' etc. Frío/cálido: ES body 'El cromo es frío y tira a azul; el níquel es cálido'. Variation: ES heading 'Por qué el cromo pulido de dos proveedores no coincide'."
+ },
+ {
+  "file": "content/guides/chrome-finish-differences-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Por que a cromagem é na verdade uma pilha de níquel, em que diferem cromo polido, cromo acetinado e níquel acetinado, os códigos US e BHMA, e por que o mesmo código varia entre fornecedores.",
+  "new": "Cromo polido US26 (BHMA 625), cromo acetinado US26D (626), níquel acetinado US15 (619): o cromo é frio, o níquel quente. Por que variam entre fornecedores.",
+  "length": 155,
+  "facts_used": "PASS unchanged. Codes: PT table 'Cromo polido | US26, BHMA 625' etc. Frio/quente: PT body 'o cromo é frio e puxa ao azul; o níquel é quente'. Variation: PT heading 'Por que o cromo polido de dois fornecedores não coincide'."
+ },
+ {
+  "file": "content/guides/commercial-lock-function-decision-2026.json",
+  "field": "seoDescription",
+  "old": "How to choose a commercial lock function by room type, the two questions that settle every opening, and the three function errors that become life-safety problems.",
+  "new": "Lock function decision table by room type: passage, privacy, entrance, storeroom, classroom. Two questions: who gets in, and how anyone inside gets out.",
+  "length": 152,
+  "facts_used": "PASS unchanged. Functions: decision table rows (Passage, Privacy, Entrance, Storeroom, Classroom function). Two questions: 'Who is allowed through from outside?' / 'What happens to the person already inside?... get out without a key'."
+ },
+ {
+  "file": "content/guides/commercial-lock-function-decision-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo elegir la función de una cerradura comercial por tipo de sala, las dos preguntas que resuelven cualquier hueco, y los tres errores de función que son problemas de seguridad.",
+  "new": "Tabla de decisión de función de cerradura por sala: paso, privacidad, entrada, almacén, aula. Dos preguntas: quién entra y cómo sale quien está dentro.",
+  "length": 151,
+  "facts_used": "PASS unchanged. ES decision table functions: Paso, Privacidad, Entrada, Almacén, Función de aula. ES body '¿Quién puede pasar desde fuera?... ¿Qué le pasa a quien ya está dentro?... debe poder salir sin llave'."
+ },
+ {
+  "file": "content/guides/commercial-lock-function-decision-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como escolher a função de uma fechadura comercial por tipo de sala, as duas perguntas que resolvem qualquer vão, e os três erros de função que são problemas de segurança.",
+  "new": "Tabela de decisão de função de fechadura por sala: privacidade, entrada, armazém, sala de aula. Duas perguntas: quem entra e como sai quem está dentro.",
+  "length": 151,
+  "facts_used": "PASS unchanged (omits passagem, which is allowed; adding it would exceed 155). PT decision table functions: Privacidade, Entrada, Armazém, Função de sala de aula. PT body 'Quem pode passar de fora?... O que acontece a quem já está dentro?... deve poder sair sem chave'."
+ },
+ {
+  "file": "content/guides/container-loading-door-hardware-2026.json",
+  "field": "seoDescription",
+  "old": "How much door hardware fits a 20GP, 40GP or 40HQ container: carton densities from a real shipping worksheet, the payload limit that binds first, and why the high cube does not help.",
+  "new": "Container loading for door hardware: at a median 614 kg/m³ a 40GP weighs out first. In a worked example a 40HQ held 44,160 pieces, the 40GP 44,310.",
+  "length": 147,
+  "facts_used": "CORRECTED: the proposal stated 44,160 vs 44,310 as a general result ('A 40HQ ... loaded 44,160 pieces'), but the body gives it only for one worked example (one cylindrical lockset, 30 per carton). The fix puts the 'worked example' qualifier back in. 'with a median of 614' (kg per cubic meter); 'the typical door hardware order weighs out in a forty-foot container'; FAQ 'In a worked example the 40HQ carried 44,160 pieces against the 40GP's 44,310'."
+ },
+ {
+  "file": "content/guides/container-loading-door-hardware-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cuántos herrajes caben en un 20GP, 40GP o 40HQ: densidades de caja de una hoja de embarque real, el límite de carga útil que manda primero y por qué el high cube no ayuda.",
+  "new": "Carga de contenedor para herrajes: con 614 kg/m³ de mediana, un 40GP agota la carga útil antes que el espacio. Un 40HQ da 13 % más volumen, no más piezas.",
+  "length": 154,
+  "facts_used": "PASS unchanged. ES body 'con una mediana de 614'; ES summary 'un contenedor de 40 pies agota la carga útil antes que el espacio. El high cube da un 13 % más de volumen y, para esta carga, ni un herraje más'."
+ },
+ {
+  "file": "content/guides/container-loading-door-hardware-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Quantas ferragens cabem num 20GP, 40GP ou 40HQ: densidades de caixa de uma planilha de embarque real, o limite de carga útil que manda primeiro e por que o high cube não ajuda.",
+  "new": "Carga de contêiner para ferragens: com 614 kg/m³ de mediana, um 40GP esgota a carga útil antes do espaço. Um 40HQ dá 13 % mais volume, não mais peças.",
+  "length": 150,
+  "facts_used": "PASS unchanged. PT body 'com mediana de 614'; PT summary 'esgota a carga útil antes do espaço. O high cube dá 13 % mais volume e, para esta carga, nenhuma ferragem a mais'."
+ },
+ {
+  "file": "content/guides/corrosion-resistance-en-1670-2026.json",
+  "field": "seoDescription",
+  "old": "EN 1670 corrosion grades 0 to 5 with their neutral salt spray hours, how ASTM B117 and ANSI/BHMA A156.18 compare, and which environments defeat a grade chosen by habit.",
+  "new": "EN 1670 corrosion grades 1 to 5 mean 24, 48, 96, 240 and 480 hours of neutral salt spray. How ASTM B117 and A156.18 compare, and why hours are not years.",
+  "length": 153,
+  "facts_used": "PASS unchanged. EN 1670 grade table (1=24h, 2=48h, 3=96h, 4=240h, 5=480h neutral salt spray; grade 0 has no hours, so '1 to 5' is accurate); section 'The North American side' on ASTM B117 and A156.18; '480 hours in a cabinet does not correspond to any particular number of years'."
+ },
+ {
+  "file": "content/guides/corrosion-resistance-en-1670-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Grados de corrosión EN 1670 del 0 al 5 con sus horas de niebla salina neutra, comparación con ASTM B117 y ANSI/BHMA A156.18, y qué ambientes derrotan a un grado elegido por costumbre.",
+  "new": "Grados de corrosión EN 1670 del 1 al 5: 24, 48, 96, 240 y 480 horas de niebla salina neutra. Cómo se comparan ASTM B117 y A156.18, y por qué no son años.",
+  "length": 153,
+  "facts_used": "PASS unchanged. ES grade table (24/48/96/240/480 horas, niebla salina neutra); ES section 'El lado norteamericano' on ASTM B117 and A156.18; ES FAQ '¿480 horas... equivalen a cierto número de años? No'."
+ },
+ {
+  "file": "content/guides/corrosion-resistance-en-1670-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Graus de corrosão EN 1670 de 0 a 5 com as suas horas de névoa salina neutra, comparação com ASTM B117 e ANSI/BHMA A156.18, e que ambientes derrotam um grau escolhido por hábito.",
+  "new": "Graus de corrosão EN 1670 de 1 a 5: 24, 48, 96, 240 e 480 horas de névoa salina neutra. Como se comparam ASTM B117 e A156.18, e por que não são anos.",
+  "length": 149,
+  "facts_used": "PASS unchanged. PT grade table (24/48/96/240/480 horas, névoa salina neutra); PT section 'O lado norte-americano' on ASTM B117 and A156.18; PT FAQ '480 horas... equivalem a certo número de anos? Não'."
+ },
+ {
+  "file": "content/guides/cycle-testing-durability-grades-2026.json",
+  "field": "seoDescription",
+  "old": "What 200,000 cycles means: EN 1906 durability categories against ANSI/BHMA A156.2 and A156.13 grades, what a cycle test measures, and where our published figure sits on each scale.",
+  "new": "200,000 cycles is EN 1906 category 7, the top durability class, but only Grade 3 under ANSI/BHMA A156.2, where Grade 1 needs 1,000,000 cycles.",
+  "length": 142,
+  "facts_used": "PASS unchanged. 'category 7 at 200,000 cycles'; 'Category 7 is the top of the durability position'; 'cycle requirements are 1,000,000 for Grade 1, 400,000 for Grade 2 and 200,000 for Grade 3' (A156.2)."
+ },
+ {
+  "file": "content/guides/cycle-testing-durability-grades-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué significan 200.000 ciclos: categorías de durabilidad EN 1906 frente a los grados ANSI/BHMA A156.2 y A156.13, qué mide un ensayo de ciclos y dónde queda nuestra cifra publicada en cada escala.",
+  "new": "200.000 ciclos es la categoría 7 de EN 1906, la más alta en durabilidad, pero solo el Grado 3 en ANSI/BHMA A156.2, donde el Grado 1 pide 1.000.000.",
+  "length": 147,
+  "facts_used": "PASS unchanged. ES FAQ 'En EN 1906 es la categoría 7, la clase de durabilidad más alta... En ANSI/BHMA A156.2 es el requisito de Grado 3, con... el Grado 1 en 1.000.000'."
+ },
+ {
+  "file": "content/guides/cycle-testing-durability-grades-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que significam 200.000 ciclos: categorias de durabilidade EN 1906 contra os graus ANSI/BHMA A156.2 e A156.13, o que um ensaio de ciclos mede e onde a nossa cifra publicada fica em cada escala.",
+  "new": "200.000 ciclos é a categoria 7 da EN 1906, a mais alta em durabilidade, mas só o Grau 3 na ANSI/BHMA A156.2, onde o Grau 1 pede 1.000.000 de ciclos.",
+  "length": 148,
+  "facts_used": "PASS unchanged. PT FAQ 'Na EN 1906 é a categoria 7, a classe de durabilidade mais alta... Na ANSI/BHMA A156.2 é o requisito de Grau 3... Grau 1 em 1.000.000'; PT body '1.000.000 de ciclos para Grau 1'."
+ },
+ {
+  "file": "content/guides/dimensional-interchangeability-2026.json",
+  "field": "seoDescription",
+  "old": "Which dimensions must match for a lock to be a drop-in replacement, why backset alone is not enough, and what to send a factory to get a true interchangeable part.",
+  "new": "Lock interchangeability rests on seven dimensions, not just backset: center distance, case size, forend, spindle, fixing centers and door thickness.",
+  "length": 148,
+  "facts_used": "CORRECTED: the proposal dropped the title's main search term ('Interchangeability'; SEO title 'Lock Interchangeability'). Seven-dimension table (backset, center distance, case size, forend, spindle square, fixing centers, door thickness range); heading 'Why matching the backset is not enough'."
+ },
+ {
+  "file": "content/guides/dimensional-interchangeability-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué cotas deben coincidir para que una cerradura sea recambio directo, por qué la entrada no basta, y qué mandar a una fábrica para obtener una pieza realmente intercambiable.",
+  "new": "Siete cotas, no solo la entrada, deciden si una cerradura es intercambiable: entre centros, caja, frente, cuadradillo, fijaciones y espesor de puerta.",
+  "length": 150,
+  "facts_used": "CORRECTED: the proposal dropped the title term 'intercambiabilidad/intercambiable'. ES table of seven cotas (Entrada, Distancia entre centros, Tamaño de caja, Frente, Cuadradillo, Entrejes de fijación, Rango de espesor de puerta); 'entre centros' as a noun comes from the ES body 'Nuestra página de entrada y entre centros'; ES heading 'Por qué coincidir en la entrada no basta'."
+ },
+ {
+  "file": "content/guides/dimensional-interchangeability-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Que cotas devem coincidir para uma fechadura ser substituição direta, por que a distância ao eixo não basta, e o que enviar a uma fábrica para obter uma peça realmente intercambiável.",
+  "new": "Sete cotas, não só a distância ao eixo, decidem se uma fechadura é intercambiável: entre centros, caixa, testa, quadrado, fixações e espessura da porta.",
+  "length": 152,
+  "facts_used": "CORRECTED: the proposal dropped the title term 'intercambiabilidade/intercambiável'. PT table of seven cotas (Distância ao eixo, Distância entre centros, Tamanho de caixa, Testa, Quadrado, Entre-eixos de fixação, Faixa de espessura de porta); 'entre centros' as a noun comes from the PT body 'A nossa página de distância ao eixo e entre centros'; PT heading 'Por que coincidir na distância ao eixo não basta'."
+ },
+ {
+  "file": "content/guides/door-closer-mounting-positions-2026.json",
+  "field": "seoDescription",
+  "old": "Door closer mounting positions compared: regular arm, top jamb, parallel arm and slide track, with efficiency, projection, vulnerability and the effect on power size.",
+  "new": "Door closer mounting compared: regular arm, top jamb, parallel arm and slide track. Parallel arm resists damage but can cost you a power size.",
+  "length": 142,
+  "facts_used": "PASS unchanged. Four sections Regular arm / Top jamb / Parallel arm / Slide track; parallel arm 'much harder to damage'; summary 'why a parallel arm can cost you a power size'; body 'manufacturer recommends going up a power size'."
+ },
+ {
+  "file": "content/guides/door-closer-mounting-positions-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Posiciones de montaje de cierrapuertas comparadas: brazo normal, dintel, brazo paralelo y guía, con eficiencia, invasión del hueco, vulnerabilidad y efecto sobre la potencia.",
+  "new": "Montaje de cierrapuertas comparado: brazo normal, dintel, brazo paralelo y guía. El brazo paralelo se daña menos, pero puede costarle una potencia.",
+  "length": 147,
+  "facts_used": "PASS unchanged. ES title arrangements (brazo normal, dintel, brazo paralelo, guía); ES body 'es mucho más difícil de dañar'; ES summary 'un brazo paralelo puede costarle una potencia'."
+ },
+ {
+  "file": "content/guides/door-closer-mounting-positions-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Posições de montagem de mola de porta comparadas: braço normal, verga, braço paralelo e calha, com eficiência, invasão do vão, vulnerabilidade e efeito sobre a potência.",
+  "new": "Montagem de mola de porta comparada: braço normal, verga, braço paralelo e calha. O braço paralelo sofre menos danos, mas pode custar uma potência.",
+  "length": 147,
+  "facts_used": "PASS unchanged. PT title arrangements (braço normal, verga, braço paralelo, calha); PT body 'é muito mais difícil de danificar'; PT summary 'um braço paralelo lhe pode custar uma potência'."
+ },
+ {
+  "file": "content/guides/door-closer-power-size-2026.json",
+  "field": "seoDescription",
+  "old": "EN 1154 door closer power sizes 1 to 7 with the leaf widths and masses each covers, how ANSI/BHMA A156.4 differs, adjustable versus fixed size, and the accessibility opening-force limit.",
+  "new": "EN 1154 door closer power sizes 1 to 7: size 1 up to 750mm and 20 kg, size 7 up to 1600mm and 160 kg. Pick by leaf width and mass, whichever is higher.",
+  "length": 151,
+  "facts_used": "PASS unchanged. EN 1154 table (size 1: 750mm, 20 kg; size 7: 1600mm, 160 kg); FAQ 'Take the door's width and its mass... use whichever of the two is higher'."
+ },
+ {
+  "file": "content/guides/door-closer-power-size-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Potencias EN 1154 de 1 a 7 con los anchos y masas que cubre cada una, en qué difiere ANSI/BHMA A156.4, regulable frente a fija, y el límite de fuerza de apertura accesible.",
+  "new": "Potencias EN 1154 de cierrapuertas del 1 al 7: la 1 hasta 750 mm y 20 kg, la 7 hasta 1600 mm y 160 kg. Se elige por ancho y masa de hoja, no por la sala.",
+  "length": 153,
+  "facts_used": "PASS unchanged. ES table (1: 750 mm, 20 kg; 7: 1600 mm, 160 kg); ES FAQ 'Por la hoja, no por la sala. Tome el ancho y la masa de la puerta'."
+ },
+ {
+  "file": "content/guides/door-closer-power-size-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Potências EN 1154 de 1 a 7 com as larguras e massas que cada uma cobre, em que a ANSI/BHMA A156.4 difere, regulável contra fixa, e o limite de força de abertura acessível.",
+  "new": "Potências EN 1154 de mola de porta de 1 a 7: a 1 até 750 mm e 20 kg, a 7 até 1600 mm e 160 kg. Escolha pela largura e massa da folha, não pela sala.",
+  "length": 148,
+  "facts_used": "PASS unchanged. PT table (1: 750 mm, 20 kg; 7: 1600 mm, 160 kg); PT FAQ 'Pela folha, não pela sala. Tome a largura e a massa da porta'."
+ },
+ {
+  "file": "content/guides/door-thickness-to-cylinder-length-2026.json",
+  "field": "seoDescription",
+  "old": "How to calculate euro cylinder length from door thickness, a worked lookup table against nine published lengths, and why thin doors still get a protruding cylinder.",
+  "new": "Euro cylinder length from door thickness: each half is thickness ÷ 2 plus escutcheon, rounded up from 27.5mm. A 40mm door with 4mm escutcheons takes 56mm.",
+  "length": 154,
+  "facts_used": "CORRECTED: the proposal said 'A 40mm door gets a 56mm cylinder' without a condition, but the 56mm result assumes 4mm escutcheons ('Change the escutcheon figure and the middle column moves'). Summary 'each half... is half the door thickness plus the escutcheon depth... rounded up to the 5mm ladder that starts at 27.5mm: a 40mm door with 4mm escutcheons comes to 55mm and is ordered as 56mm'."
+ },
+ {
+  "file": "content/guides/door-thickness-to-cylinder-length-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo calcular la longitud de cilindro europeo desde el espesor de puerta, una tabla trabajada contra nueve longitudes publicadas, y por qué las puertas finas llevan cilindro saliente.",
+  "new": "Longitud de cilindro europeo: mitad = espesor de puerta ÷ 2 + escudo, redondeada hacia arriba desde 27,5 mm. Puerta de 40 mm, escudos de 4 mm: 56 mm.",
+  "length": 149,
+  "facts_used": "CORRECTED: the proposal had the same missing 4 mm escutcheon condition. ES body formula 'mitad = (espesor de puerta ÷ 2) + profundidad de escudo'; ES summary 'redondeada hacia arriba en la escala de 5 en 5 mm que empieza en 27,5 mm: una puerta de 40 mm con escudos de 4 mm da 55 mm y se pide como 56 mm'."
+ },
+ {
+  "file": "content/guides/door-thickness-to-cylinder-length-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como calcular o comprimento de cilindro europeu a partir da espessura de porta, uma tabela trabalhada contra nove comprimentos publicados, e por que portas finas levam cilindro saliente.",
+  "new": "Comprimento do cilindro europeu: metade = espessura da porta ÷ 2 + espelho, arredondada para cima (mín. 27,5 mm). Porta de 40 mm, espelhos de 4 mm: 56 mm.",
+  "length": 154,
+  "facts_used": "CORRECTED: the proposal had the same missing 4 mm escutcheon condition. PT body formula 'metade = (espessura de porta ÷ 2) + profundidade de espelho'; PT summary 'arredondada para cima na escala de 5 em 5 mm que começa em 27,5 mm: uma porta de 40 mm com espelhos de 4 mm dá 55 mm e é pedida como 56 mm'."
+ },
+ {
+  "file": "content/guides/en-1125-vs-en-179-2026.json",
+  "field": "seoDescription",
+  "old": "How to choose between EN 1125 panic exit devices and EN 179 emergency exit devices, the occupancy test that decides it, the classification digits, and three compliance mistakes.",
+  "new": "EN 1125 panic bar or EN 179 emergency lever: the bar serves people who may not know the building, the lever those who do. When borderline, take the bar.",
+  "length": 152,
+  "facts_used": "PASS unchanged. Comparison table (EN 1125 users 'unfamiliar with the building'; EN 179 users 'familiar with the building'); title 'Panic Bar or Emergency Lever'; 'when it is genuinely borderline... Where the two are close, the bar is the safe answer'."
+ },
+ {
+  "file": "content/guides/en-1125-vs-en-179-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo elegir entre dispositivos antipánico EN 1125 y de emergencia EN 179, la prueba de ocupación que lo decide, los dígitos de clasificación, y tres errores de cumplimiento.",
+  "new": "EN 1125 o EN 179: barra antipánico para quien puede no conocer el edificio, manija de emergencia para quien sí lo conoce. En caso de duda, la barra.",
+  "length": 148,
+  "facts_used": "PASS unchanged. ES table 'Personas que pueden no conocer el edificio' / 'Personas que sí conocen el edificio'; ES title 'barra antipánico o manija de emergencia'; ES FAQ 'Cuando los dos están cerca, la barra es la respuesta segura'."
+ },
+ {
+  "file": "content/guides/en-1125-vs-en-179-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como escolher entre dispositivos antipânico EN 1125 e de emergência EN 179, o teste de ocupação que decide, os dígitos de classificação, e três erros de conformidade.",
+  "new": "EN 1125 ou EN 179: barra antipânico para quem pode não conhecer o edifício, maçaneta de emergência para quem o conhece. Na dúvida, fique com a barra.",
+  "length": 149,
+  "facts_used": "PASS unchanged. PT table 'Pessoas que podem não conhecer o edifício' / 'Pessoas que conhecem o edifício'; PT title 'barra antipânico ou maçaneta de emergência'; PT FAQ 'Quando as duas estão próximas, a barra é a resposta segura'."
+ },
+ {
+  "file": "content/guides/en-ansi-bhma-cross-reference-2026.json",
+  "field": "seoDescription",
+  "old": "Scope map between EN and ANSI/BHMA door hardware standards: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 against A156.1 to A156.18, and the four places the mapping breaks.",
+  "new": "EN to ANSI/BHMA cross-reference: no conversion table exists, only a scope map. EN 1125/179 to A156.3, EN 12209 to A156.13/A156.2, EN 1154 to A156.4.",
+  "length": 148,
+  "facts_used": "CORRECTED: the proposal dropped the title's main search term 'cross-reference'. FAQ 'Is there a conversion table... No'; 'What can be supplied... is a scope map'; scope map: EN 1125/EN 179 vs A156.3, EN 12209 vs A156.13 and A156.2, EN 1154 vs A156.4. 'and where it breaks' was dropped to stay within 155."
+ },
+ {
+  "file": "content/guides/en-ansi-bhma-cross-reference-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Mapa de alcance entre normas EN y ANSI/BHMA: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 frente a A156.1 a A156.18, y los cuatro puntos donde la correspondencia se rompe.",
+  "new": "Referencia cruzada EN a ANSI/BHMA: no hay tabla de conversión, solo un mapa de alcance. EN 1125/179 y A156.3, EN 12209 y A156.13/A156.2, EN 1154 y A156.4.",
+  "length": 154,
+  "facts_used": "CORRECTED: the proposal dropped the title term 'Referencia cruzada'. ES FAQ '¿Existe una tabla de conversión...? No... Sí es posible un mapa de alcance'; ES body: A156.3 vs EN 1125/EN 179, EN 12209 vs A156.13/A156.2, EN 1154 vs A156.4."
+ },
+ {
+  "file": "content/guides/en-ansi-bhma-cross-reference-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Planilha de escopo entre normas EN e ANSI/BHMA: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 contra A156.1 a A156.18, e os quatro pontos onde a correspondência quebra.",
+  "new": "Referência cruzada EN para ANSI/BHMA: não há tabela de conversão, só um mapa de escopo. EN 1125/179 e A156.3, EN 12209 e A156.13/A156.2, EN 1154 e A156.4.",
+  "length": 154,
+  "facts_used": "CORRECTED: the proposal dropped the title term 'Referência cruzada'. PT FAQ 'Existe uma tabela de conversão...? Não'; PT body: A156.3 vs EN 1125/EN 179, EN 12209 vs A156.13/A156.2, EN 1154 vs A156.4. Kept the proposer's 'mapa de escopo': the PT body's 'planilha de escopo' (including the half-uppercase heading 'A planilha DE ESCOPO') looks like a find-and-replace mistake; the body itself needs fixing separately."
+ },
+ {
+  "file": "content/guides/powder-coating-and-ral-2026.json",
+  "field": "seoDescription",
+  "old": "What a RAL number does and does not specify on door hardware, why pretreatment decides coating life, where powder fails on threads and edges, and the four lines to put on an order.",
+  "new": "RAL sets hue only. Powder coating also needs gloss to ISO 2813, a film of typically 60–80 µm and masked threads: a coated M5 may not take an M5 screw.",
+  "length": 150,
+  "facts_used": "CORRECTED: the proposal said coating 'needs a 60–80 µm film', but the body calls this typical and 'a range rather than a target'. Sources: table row 'Hue | Yes | The RAL number itself'; 'A separate gloss specification, measured to ISO 2813'; 'Typical film thickness for architectural powder sits in the region of 60–80 µm'; 'a coated M5 thread may not accept an M5 screw. Threads are therefore masked'."
+ },
+ {
+  "file": "content/guides/powder-coating-and-ral-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué especifica y qué no un número RAL en herraje de puerta, por qué el pretratamiento decide la vida del recubrimiento, dónde falla el polvo en roscas y cantos, y las cuatro líneas del pedido.",
+  "new": "Recubrimiento en polvo: RAL fija solo el tono. Brillo ISO 2813, película de 60–80 µm y roscas enmascaradas: una M5 recubierta puede no admitir tornillo M5.",
+  "length": 155,
+  "facts_used": "PASS, unchanged. bodyEs 'Tono | Sí | El propio número RAL'; 'Nivel de brillo | No | ... medida según ISO 2813'; 'El espesor típico de película para polvo arquitectónico se sitúa en la región de 60–80 µm'; 'una rosca M5 recubierta puede no admitir un tornillo M5. Por eso las roscas se enmascaran'."
+ },
+ {
+  "file": "content/guides/powder-coating-and-ral-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que um número RAL especifica e não especifica em ferragem de porta, por que o pré-tratamento decide a vida do revestimento, onde o pó falha em roscas e arestas, e as quatro linhas do pedido.",
+  "new": "Revestimento a pó: o RAL define só o tom. Brilho pela ISO 2813, película de 60–80 µm e roscas mascaradas: uma M5 revestida pode não aceitar parafuso M5.",
+  "length": 152,
+  "facts_used": "PASS, unchanged. bodyPt 'Tom | Sim | O próprio número RAL'; 'Nível de brilho | Não | ... medida segundo ISO 2813'; 'A espessura típica de película para pó arquitetônico situa-se na região dos 60–80 µm'; 'uma rosca M5 revestida pode não aceitar um parafuso M5. Por isso as roscas mascaram-se'."
+ },
+ {
+  "file": "content/guides/qualifying-a-hardware-supplier-2026.json",
+  "field": "seoDescription",
+  "old": "How to tell a hardware factory from a trading company or broker, five questions that separate them, what can be verified independently, and what a first order should be.",
+  "new": "Qualifying a hardware supplier: five questions separating a factory from a trader or broker, what to verify yourself, and why a small order beats a sample.",
+  "length": 155,
+  "facts_used": "CORRECTED: the proposal's 'four desk checks' adds a count the body never states (it lists the checks without numbering them), so it became 'what to verify yourself'. Sources: '## The five questions ... The answers separate the three categories by themselves'; '## What can be verified independently'; 'the small order matters more than the sample'; 'A trader has whatever the factory sent them'."
+ },
+ {
+  "file": "content/guides/qualifying-a-hardware-supplier-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo distinguir una fábrica de herrajes de una trading o un broker, cinco preguntas que los separan, qué se puede verificar de forma independiente, y cómo debe ser un primer pedido.",
+  "new": "Proveedor de herrajes: cinco preguntas que separan fábrica de trading, qué verificar por su cuenta y por qué un pedido pequeño importa más que la muestra.",
+  "length": 154,
+  "facts_used": "PASS, unchanged. bodyEs '## Las cinco preguntas ... Las respuestas separan las tres categorías por sí solas'; '## Qué se puede verificar de forma independiente'; 'el pedido pequeño importa más que la muestra'. 'trading' is the term seoTitleEs uses ('fábrica o trading'), so it stays."
+ },
+ {
+  "file": "content/guides/qualifying-a-hardware-supplier-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como distinguir uma fábrica de ferragens de uma trading ou de um broker, cinco perguntas que os separam, o que se pode verificar de forma independente, e como deve ser um primeiro pedido.",
+  "new": "Fornecedor de ferragens: cinco perguntas que separam fábrica de trading, o que verificar sozinho e por que um pedido pequeno importa mais que a amostra.",
+  "length": 152,
+  "facts_used": "PASS, unchanged. bodyPt '## As cinco perguntas'; '## O que se pode verificar de forma independente'; 'o pedido pequeno importa mais do que a amostra'. 'trading' is the term seoTitlePt uses, so it stays."
+ },
+ {
+  "file": "content/guides/samples-and-incoming-inspection-2026.json",
+  "field": "seoDescription",
+  "old": "How to use hardware samples properly: the three sample types, the golden sample procedure, what to measure on arrival, and the three things a sample cannot demonstrate.",
+  "new": "Golden sample: two identical samples signed by both parties, one sealed per side. What to measure at incoming inspection, and three things no sample shows.",
+  "length": 155,
+  "facts_used": "PASS, unchanged. 'Two identical samples are prepared. Both are signed and dated by both parties. One is sealed and retained by the buyer; the other is sealed and retained by the factory.'; 'WHAT TO MEASURE WHEN A SAMPLE ARRIVES'; 'THE THREE THINGS A SAMPLE CANNOT SHOW YOU'."
+ },
+ {
+  "file": "content/guides/samples-and-incoming-inspection-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo usar bien las muestras de herraje: los tres tipos, el procedimiento de muestra patrón, qué medir a la llegada, y las tres cosas que una muestra no puede demostrar.",
+  "new": "Muestra patrón sellada: dos idénticas firmadas por ambas partes, una para cada parte. Qué medir en la inspección de entrada y qué no demuestra una muestra.",
+  "length": 155,
+  "facts_used": "CORRECTED: in the proposal, 'y qué no demuestra' had no subject, so it read as if the inspection itself was what proves nothing. The fix names 'una muestra' and adds 'sellada' from seoTitleEs. Sources: bodyEs 'Se preparan dos muestras idénticas. Las dos las firman y fechan ambas partes. Una se precinta y la guarda el comprador; la otra ... la fábrica'; 'QUÉ MEDIR CUANDO LLEGA UNA MUESTRA'; 'TRES COSAS QUE UNA MUESTRA NO PUEDE ENSEÑARLE'."
+ },
+ {
+  "file": "content/guides/samples-and-incoming-inspection-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como usar bem as amostras de ferragem: os três tipos, o procedimento de amostra padrão, o que medir à chegada, e as três coisas que uma amostra não pode demonstrar.",
+  "new": "Amostra padrão selada: duas idênticas assinadas pelas duas partes, uma para cada. O que medir na inspeção de entrada e o que uma amostra não demonstra.",
+  "length": 151,
+  "facts_used": "CORRECTED: in the proposal, the 'ela' in 'o que ela não demonstra' most naturally referred back to 'inspeção'. The fix names 'uma amostra' and adds 'selada' from seoTitlePt. Sources: bodyPt 'Preparam-se duas amostras idênticas. As duas são assinadas e datadas por ambas as partes. Uma é lacrada e guardada pelo comprador; a outra ... pela fábrica'; 'O QUE MEDIR QUANDO UMA AMOSTRA CHEGA'; 'TRÊS COISAS QUE UMA AMOSTRA NÃO LHE PODE MOSTRAR'."
+ },
+ {
+  "file": "content/guides/specification-section-08-71-00-2026.json",
+  "field": "seoDescription",
+  "old": "How a door hardware specification section is structured, what belongs in Parts 1, 2 and 3, how to write a hardware set a factory can quote, and the four clauses that decide price.",
+  "new": "Door hardware specification 08 71 00: Part 1 obligations, 2 products, 3 execution. Price turns on substitution, keying, test evidence and warranty.",
+  "length": 147,
+  "facts_used": "CORRECTED: the proposal left out 'specification', the main search term in seoTitle ('Door Hardware Specification 08 71 00'). Sources: 'Part 1 is obligations, Part 2 is things, Part 3 is what happens on site'; table '2: Products', '3, Execution'; '## Part 1: the four clauses that decide the price': Substitution procedure, Keying, Test evidence, Warranty."
+ },
+ {
+  "file": "content/guides/specification-section-08-71-00-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo se estructura una sección de especificación de herrajes, qué va en las partes 1, 2 y 3, cómo escribir un juego que una fábrica pueda cotizar, y las cuatro cláusulas que deciden el precio.",
+  "new": "Especificación de herrajes 08 71 00: parte 1, obligaciones; 2, productos; 3, ejecución. Deciden el precio: sustitución, amaestramiento, ensayos y garantía.",
+  "length": 155,
+  "facts_used": "CORRECTED: the proposal used 'Sección' and left out 'Especificación de herrajes', the seoTitleEs search term. Sources: bodyEs 'la parte 1 son obligaciones'; table '2: Productos', '3, Ejecución'; '## Parte 1: las cuatro cláusulas que deciden el precio': Procedimiento de sustitución, Amaestramiento, Evidencia de ensayo, Garantía."
+ },
+ {
+  "file": "content/guides/specification-section-08-71-00-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como se estrutura uma seção de especificação de ferragens, o que vai nas partes 1, 2 e 3, como escrever um jogo que uma fábrica possa cotar, e as quatro cláusulas que decidem o preço.",
+  "new": "Especificação de ferragens 08 71 00: parte 1, obrigações; 2, produtos; 3, execução. Decidem o preço: substituição, chaveamento, ensaios e garantia.",
+  "length": 147,
+  "facts_used": "CORRECTED: the proposal used 'Seção' and left out 'Especificação de ferragens', the seoTitlePt search term. Sources: bodyPt 'a parte 1 são obrigações'; table '2: Produtos', '3, Execução'; '## Parte 1: as quatro cláusulas que decidem o preço': Procedimento de substituição, Chaveamento, Evidência de ensaio, Garantia."
+ },
+ {
+  "file": "content/guides/spindle-sizes-and-length-2026.json",
+  "field": "seoDescription",
+  "old": "Door handle spindle square sizes 8mm and 9mm, solid versus split spindles, the length calculation from door thickness and rose depth, and the spindle center dimension.",
+  "new": "Spindle sizes: 8mm or 9mm square, not interchangeable; solid or split. Length is door thickness + roses + hub engagement, about 60mm on a 40mm door.",
+  "length": 148,
+  "facts_used": "PASS, unchanged. 'The two sizes that matter ... are 8mm and 9mm'; 'It is not interchangeable with 8mm in either direction'; 'SOLID VERSUS SPLIT'; 'the door thickness, plus the depth of the two roses or plates, plus the engagement each handle needs inside its hub'; 'a 40mm (1-9/16\") door with shallow roses ... lands near the 60mm'."
+ },
+ {
+  "file": "content/guides/spindle-sizes-and-length-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Tamaños de cuadradillo de manija de 8 y 9 mm, macizo frente a partido, el cálculo de longitud a partir del espesor de puerta y la profundidad de roseta, y la cota de centro de cuadradillo.",
+  "new": "Cuadradillo de 8 o 9 mm, no intercambiables, macizo o partido. Longitud: espesor de puerta + rosetas + encaje en el cubo; unos 60 mm en puerta de 40 mm.",
+  "length": 152,
+  "facts_used": "PASS, unchanged. bodyEs 'Los dos tamaños que importan ... son 8 mm y 9 mm'; 'No es intercambiable en ningún sentido'; 'MACIZO FRENTE A PARTIDO'; 'más el encaje que necesita cada manija dentro de su cubo'; 'una puerta de 40 mm con rosetas planas ... queda cerca de los 60 mm'."
+ },
+ {
+  "file": "content/guides/spindle-sizes-and-length-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Tamanhos de quadrado de maçaneta de 8 e 9 mm, maciço contra dividido, o cálculo de comprimento a partir da espessura de porta e profundidade de roseta, e a cota de centro de quadrado.",
+  "new": "Quadrado de 8 ou 9 mm, não intercambiáveis, maciço ou dividido. Comprimento: espessura da porta + rosetas + encaixe; cerca de 60 mm em porta de 40 mm.",
+  "length": 150,
+  "facts_used": "PASS, unchanged. bodyPt 'Os dois tamanhos que importam ... são 8 mm e 9 mm'; 'Não é intercambiável em nenhum sentido'; 'MACIÇO OU DIVIDIDO'; 'mais o encaixe que cada maçaneta precisa dentro do seu cubo'; 'uma porta de 40 mm com rosetas rasas isso fica perto dos 60 mm'."
+ },
+ {
+  "file": "content/guides/stainless-grade-selection-201-304-316-2026.json",
+  "field": "seoDescription",
+  "old": "How stainless 201, 304 and 316 differ chemically and in service, where each belongs, what the cost gap is, and why a spec sheet saying 304/201 has not answered the question.",
+  "new": "Stainless 201 vs 304 vs 316: 304 is ~18% chromium, ~8% nickel; 316 adds ~2% molybdenum against chloride; 201 has less nickel. Cost, and what 304/201 hides.",
+  "length": 155,
+  "facts_used": "CORRECTED: the proposal wrote '8% nickel' where the body says '~8%', and left out 'cost', a seoTitle term. Sources: table '304 | Chromium ~18%, nickel ~8%'; '316 | 304 plus molybdenum ~2% | Molybdenum specifically resists chloride pitting'; '201 | Chromium, low nickel, manganese and nitrogen substituted for nickel'; '## The cost question, answered honestly'; '304/201 ... the factory will supply one of those two, and the buyer will not be told which'."
+ },
+ {
+  "file": "content/guides/stainless-grade-selection-201-304-316-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "En qué se diferencian químicamente y en servicio el inoxidable 201, 304 y 316, dónde va cada uno, cuál es la diferencia de costo, y por qué una ficha que dice 304/201 no ha respondido la pregunta.",
+  "new": "Inoxidable 201, 304 o 316: 304 con ~18 % de cromo y ~8 % de níquel; 316 con ~2 % de molibdeno contra cloruros; 201 con menos níquel. Qué oculta «304/201».",
+  "length": 154,
+  "facts_used": "CORRECTED: the proposal wrote '8 %' where the body says '~8%'. Sources: bodyEs '304 | Cromo ~18%, níquel ~8%'; '316 | 304 más molibdeno ~2% | El molibdeno resiste específicamente la picadura por cloruros'; '201 | Cromo, poco níquel, manganeso y nitrógeno en sustitución del níquel'; '## Por qué «304/201» en una especificación es el verdadero problema'."
+ },
+ {
+  "file": "content/guides/stainless-grade-selection-201-304-316-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Em que diferem quimicamente e em serviço o inox 201, 304 e 316, onde cada um pertence, qual é a diferença de custo, e por que uma ficha que diz 304/201 não respondeu à pergunta.",
+  "new": "Inox 201, 304 ou 316: 304 com ~18% de cromo e ~8% de níquel; 316 com ~2% de molibdênio contra cloretos; 201 com menos níquel. O que esconde \"304/201\".",
+  "length": 150,
+  "facts_used": "CORRECTED: the proposal wrote '8%' where the body says '~8%'. Sources: bodyPt '304 | Cromo ~18%, níquel ~8%'; '316 | 304 mais molibdênio ~2% | O molibdênio resiste especificamente à corrosão por pites de cloreto'; '201 | Cromo, pouco níquel, manganês e nitrogênio em substituição do níquel'; '## Por que \"304/201\" numa especificação é o verdadeiro problema'."
+ },
+ {
+  "file": "content/guides/strike-plates-and-keeps-2026.json",
+  "field": "seoDescription",
+  "old": "Standard strike plate sizes including the 4-7/8 inch ANSI strike and the 2-3/4 inch T-strike, how to calculate lip length, square versus radius corners, and box strikes versus dust boxes.",
+  "new": "Strike plates: ANSI strike 4-7/8\" × 1-1/4\" (124 × 32mm), T-strike 2-3/4\" × 1-1/8\" (70 × 29mm). How to work out lip length, corner type and box strikes.",
+  "length": 151,
+  "facts_used": "PASS, unchanged. 'The ANSI strike ... measures 4-7/8\" × 1-1/4\" (about 124mm × 32mm)'; 'The T-strike measures 2-3/4\" × 1-1/8\" (about 70mm × 29mm)'; 'LIP LENGTH, AND HOW TO STOP GUESSING IT'; 'SQUARE VERSUS RADIUS CORNERS'; 'BOX STRIKES AND DUST BOXES'."
+ },
+ {
+  "file": "content/guides/strike-plates-and-keeps-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Tamaños estándar de cerradero incluidos el ANSI de 4-7/8\" y el T-strike de 2-3/4\", cómo calcular la longitud del labio, esquinas rectas frente a redondeadas, y cerraderos de caja.",
+  "new": "Cerraderos: ANSI de 4-7/8\" × 1-1/4\" (124 × 32 mm) y T-strike de 2-3/4\" × 1-1/8\" (70 × 29 mm). Longitud de labio, tipo de esquina y cerraderos de caja.",
+  "length": 150,
+  "facts_used": "CORRECTED: the proposal dropped 'longitud de labio', a seoTitleEs term, and 'calcular ... cerraderos de caja' was not parallel. Sources: bodyEs 'El cerradero ANSI ... mide 4-7/8\" × 1-1/4\" (unos 124 × 32 mm)'; 'El T-strike mide 2-3/4\" × 1-1/8\" (unos 70 × 29 mm)'; 'LA LONGITUD DEL LABIO'; 'ESQUINAS RECTAS FRENTE A REDONDEADAS'; 'CERRADEROS DE CAJA Y GUARDAPOLVOS'. 'T-strike' is the term titleEs and bodyEs already use, so it stays."
+ },
+ {
+  "file": "content/guides/strike-plates-and-keeps-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Tamanhos padrão de contra-testa incluindo a ANSI de 4-7/8\" e a T-strike de 2-3/4\", como calcular o comprimento do lábio, cantos retos contra arredondados, e contra-testas tipo caixa.",
+  "new": "Contra-testas: ANSI de 4-7/8\" × 1-1/4\" (124 × 32 mm) e T-strike de 2-3/4\" × 1-1/8\" (70 × 29 mm). Comprimento do lábio, cantos e contra-testa tipo caixa.",
+  "length": 152,
+  "facts_used": "PASS, unchanged. bodyPt 'A contra-testa ANSI ... mede 4-7/8\" × 1-1/4\" (cerca de 124 × 32 mm)'; 'A T-strike mede 2-3/4\" × 1-1/8\" (cerca de 70 × 29 mm)'; 'O COMPRIMENTO DO LÁBIO'; 'CANTOS RETOS CONTRA ARREDONDADOS'; the box-strike section ('tipo caixa'). 'T-strike' is the term titlePt and bodyPt already use."
+ },
+ {
+  "file": "content/guides/submittal-package-contents-2026.json",
+  "field": "seoDescription",
+  "old": "What a door hardware submittal package must contain, the four omissions that get it rejected, product data versus test evidence, and which documents a factory can actually supply.",
+  "new": "Door hardware submittal package: schedule, datasheets, shop drawings, test evidence and keying schedule, plus the four omissions that get it rejected.",
+  "length": 150,
+  "facts_used": "PASS, unchanged. Five-part table: Hardware schedule; Product data ('A datasheet per catalog number'); Shop drawings; Test evidence; Keying schedule. summary: 'It comes back for four omissions'."
+ },
+ {
+  "file": "content/guides/submittal-package-contents-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué debe contener un paquete de submittal de herrajes, las cuatro omisiones que lo hacen rechazar, ficha técnica frente a evidencia de ensayo, y qué documentos puede dar una fábrica.",
+  "new": "Submittal de herrajes: planilla, fichas técnicas, planos de taller, evidencia de ensayo y amaestramiento. Las cuatro omisiones que hacen que lo rechacen.",
+  "length": 153,
+  "facts_used": "PASS, unchanged. bodyEs table: 'Planilla de herrajes', 'Ficha técnica', 'Planos de taller', 'Evidencia de ensayo', 'Plan de amaestramiento'; summaryEs 'Se devuelve por cuatro omisiones'. 'submittal' is the term titleEs, seoTitleEs and bodyEs already use."
+ },
+ {
+  "file": "content/guides/submittal-package-contents-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que um pacote de submittal de ferragens deve conter, as quatro omissões que o fazem ser rejeitado, ficha técnica contra evidência de ensaio, e que documentos uma fábrica pode fornecer.",
+  "new": "Submittal de ferragens: planilha, fichas técnicas, desenhos de oficina, evidência de ensaio e chaveamento. As quatro omissões que o fazem ser rejeitado.",
+  "length": 152,
+  "facts_used": "PASS, unchanged. bodyPt table: 'Planilha de ferragens', 'Ficha técnica', 'Desenhos de oficina', 'Evidência de ensaio', 'Plano de chaveamento'; summaryPt 'Ele volta por quatro omissões'. 'submittal' is the term titlePt and bodyPt already use."
+ },
+ {
+  "file": "content/guides/technical-drawings-what-to-expect-2026.json",
+  "field": "seoDescription",
+  "old": "The three kinds of hardware drawing, what PDF, DWG, DXF, STEP and BIM are each good for, why a 3D solid often does not exist, and how to ask a factory for the right file.",
+  "new": "PDF, DWG, STEP or BIM: which hardware drawing answers which question, why a 3D solid often does not exist, and our real count: 72 drawings on 549 listings.",
+  "length": 155,
+  "facts_used": "PASS, unchanged. Formats table (PDF, DWG, STEP / IGES, Revit / IFC as BIM); '## Three drawings that answer three different questions'; '## Why a 3D solid often does not exist'; 'only 72 appear on the 549 visible product listings'."
+ },
+ {
+  "file": "content/guides/technical-drawings-what-to-expect-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Los tres tipos de plano de herraje, para qué sirve cada formato PDF, DWG, DXF, STEP y BIM, por qué a menudo no existe un sólido 3D, y cómo pedirle a una fábrica el archivo correcto.",
+  "new": "PDF, DWG, STEP o BIM: qué plano de herraje sirve para qué, por qué a menudo no existe un sólido 3D y nuestra cifra real: 72 planos en 549 fichas visibles.",
+  "length": 154,
+  "facts_used": "PASS, unchanged. bodyEs formats table; summaryEs 'por qué a menudo no existe un sólido 3D'; 'solo 72 aparecen en las 549 fichas de producto visibles'."
+ },
+ {
+  "file": "content/guides/technical-drawings-what-to-expect-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Os três tipos de desenho de ferragem, para que serve cada formato PDF, DWG, DXF, STEP e BIM, por que muitas vezes não existe um sólido 3D, e como pedir à fábrica o arquivo certo.",
+  "new": "PDF, DWG, STEP ou BIM: que desenho de ferragem serve para quê, por que muitas vezes não há sólido 3D e nosso número real: 72 desenhos em 549 fichas.",
+  "length": 148,
+  "facts_used": "PASS, unchanged. bodyPt formats table; summaryPt 'por que muitas vezes não existe um sólido 3D'; 'apenas 72 aparecem nas 549 fichas de produto visíveis'."
+ },
+ {
+  "file": "content/guides/universal-vs-handed-hardware-2026.json",
+  "field": "seoDescription",
+  "old": "Which door hardware is non-handed, which is field-reversible and which is factory-handed, the four products that catch projects out, and what to write on an order.",
+  "new": "Universal hardware: non-handed, field-reversible or factory-handed, and only the first is truly universal. Four handed products that catch projects out.",
+  "length": 152,
+  "facts_used": "CORRECTED: the proposal left out 'hardware', the seoTitle search term ('Universal vs Handed Hardware'). Sources: table '## The three meanings of universal': Non-handed, Field-reversible, Factory-handed; 'Only the first is genuinely universal'; '## The four products that catch projects out'; summary 'the four products that are handed when people assume they are not'."
+ },
+ {
+  "file": "content/guides/universal-vs-handed-hardware-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué herraje de puerta es sin mano, cuál es reversible en obra y cuál tiene mano de fábrica, los cuatro productos que pillan a los proyectos, y qué escribir en un pedido.",
+  "new": "Herraje «universal»: sin mano, reversible en obra o con mano de fábrica; solo el primero lo es. Cuatro productos que sorprenden y qué poner en el pedido.",
+  "length": 153,
+  "facts_used": "CORRECTED: the proposal left out 'herraje', the seoTitleEs term ('qué herraje es reversible'). 'solo el primero lo es' now matches the body wording. Sources: bodyEs 'Sin mano', 'Reversible en obra', 'Con mano de fábrica'; 'Solo el primero es genuinamente universal'; '## Los cuatro productos que pillan a los proyectos'; summaryEs 'la línea que hay que poner en un pedido'. 'pillan' (Spain only) stays out, as the proposal intended."
+ },
+ {
+  "file": "content/guides/zinc-alloy-die-cast-hardware-2026.json",
+  "field": "seoDescription",
+  "old": "What zamak zinc alloy is, what die casting does well, the four ways a bad zinc casting fails, where zinc should never be used, and what to ask a hardware factory.",
+  "new": "Zinc alloy (zamak) is 28% of our catalog's material rows. What die casting does well, the four ways a bad casting fails, and where zinc never belongs.",
+  "length": 150,
+  "facts_used": "CORRECTED: the proposal's '(Zamak 3 or 5, about 4% aluminum) is 28% of our material rows' attaches a grade to our own rows, but the body says 'none of them names Zamak 3 or Zamak 5' and the grade is not confirmed. Sources: table 'Zinc alloy | 156 | 28%'; '## What die casting is genuinely good at'; '## The four ways a bad zinc casting fails'; '## Where zinc should not be used at all'."
+ },
+ {
+  "file": "content/guides/zinc-alloy-die-cast-hardware-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué es la aleación de zinc zamak, en qué es bueno el moldeo a presión, las cuatro formas en que falla una fundición mala, dónde no usar zinc, y qué preguntar a la fábrica.",
+  "new": "Herraje de zamak: el 28 % de las filas de material de nuestro catálogo. Qué hace bien el moldeo a presión, cómo falla una fundición mala y dónde no va.",
+  "length": 151,
+  "facts_used": "CORRECTED: the proposal had the same unconfirmed grade claim (bodyEs: 'ninguna nombra Zamak 3 ni Zamak 5'), and in 'cómo falla' the thing that fails was unclear. Sources: bodyEs table 'Zamak | 156 | 28%'; summaryEs 'el 28 % de las filas de material de nuestro catálogo'; '## En qué es genuinamente bueno el moldeo a presión'; '## Las cuatro formas en que falla una fundición de zamak mala'; seoTitleEs 'dónde va y dónde no'."
+ },
+ {
+  "file": "content/guides/euro-cylinder-size-chart-2026.json",
+  "field": "seoDescription",
+  "old": "Full euro cylinder size chart: nine overall lengths from 45mm to 90mm, the split combinations that sum to each, EN 1303 and DIN 18252 measuring geometry, and the protrusion rule.",
+  "new": "Euro cylinder size chart: nine lengths from 45 to 90mm across 45 models, the splits that sum to each, why 30/40 is not 40/30, and how to measure yours.",
+  "length": 151,
+  "facts_used": "CHECKED, PASS unchanged. 'Our catalog carries 45 cylinder models across nine overall lengths' + table 45mm...90mm; 'the split combinations that add up to each one'; 'A 30/40 and a 40/30 are the same overall length (70mm) and they are not interchangeable'; 'MEASURING A DOOR YOU ALREADY HAVE... Measure each half from the center of the fixing screw hole'"
+ },
+ {
+  "file": "content/guides/euro-cylinder-size-chart-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Tabla completa de cilindros europeos: nueve longitudes de 45 a 90 mm, las combinaciones que suman cada una, la geometría de medición EN 1303 y DIN 18252, y la regla de sobresaliente.",
+  "new": "Tabla de medidas de cilindro europeo: nueve longitudes de 45 a 90 mm en 45 modelos, las combinaciones de cada una, por qué 30/40 no es 40/30 y cómo medir.",
+  "length": 154,
+  "facts_used": "CHECKED, PASS unchanged. bodyEs: 'Nuestro catálogo lleva 45 modelos de cilindro en nueve longitudes totales' + tabla 45 mm...90 mm; 'Un 30/40 y un 40/30 tienen la misma longitud total (70 mm) y no son intercambiables'; 'Mida cada mitad desde el centro de la perforación del tornillo'"
+ },
+ {
+  "file": "content/guides/euro-cylinder-size-chart-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Tabela completa de cilindros europeus: nove comprimentos de 45 a 90 mm, as combinações que somam cada um, a geometria de medição EN 1303 e DIN 18252, e a regra de saliência.",
+  "new": "Tabela de medidas de cilindro europeu: nove comprimentos de 45 a 90 mm em 45 modelos, as combinações de cada um, por que 30/40 não é 40/30 e como medir.",
+  "length": 152,
+  "facts_used": "CHECKED, PASS unchanged. bodyPt: 'O nosso catálogo tem 45 modelos de cilindro em nove comprimentos totais' + tabela 45 mm...90 mm; 'Um 30/40 e um 40/30 têm o mesmo comprimento total (70 mm) e não são intercambiáveis'; 'Meça cada metade a partir do centro do furo do parafuso'"
+ },
+ {
+  "file": "content/guides/finish-code-reference-2026.json",
+  "field": "seoDescription",
+  "old": "All 23 finish codes in our catalog in one table, the four pairs that get transposed on orders (NB/BN, PB/BP, CB/BC), and why a finish code says nothing about corrosion.",
+  "new": "Finish code reference: all 23 codes in our catalog, BHMA 600 and US26x equivalents (626 is US26D), and the pairs that reverse: NB/BN, PB/BP, CB/BC.",
+  "length": 147,
+  "facts_used": "CHECKED, PASS unchanged. Summary 'the 23 codes our catalog uses'; body 'THE TWENTY-THREE CODES WE USE'; 'The BHMA 600-series and the older US26x numbers'; 'US26D and BHMA 626 are the same satin chrome under two numbering systems'; 'NB and BN are both black nickel. PB and BP are both polished brass. CB and BC are both polished chrome.' It also corrects the old copy, which said 'four pairs' but listed only three."
+ },
+ {
+  "file": "content/guides/finish-code-reference-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Códigos de acabado de herrajes: los 23 códigos del catálogo, equivalentes BHMA 600 y US26x, los cuatro pares que se invierten (NB/BN, PB/BP, CB/BC) y por qué un código no dice nada de la corrosión.",
+  "new": "Referencia de códigos de acabado: los 23 códigos, equivalentes BHMA 600 y US26x (626 es US26D) y los pares que se invierten: NB/BN, PB/BP, CB/BC.",
+  "length": 145,
+  "facts_used": "CHECKED, PASS unchanged. bodyEs: 'LOS VEINTITRÉS CÓDIGOS QUE USAMOS'; 'La serie 600 de BHMA y los antiguos números US26x'; 'US26D y BHMA 626 son el mismo cromo satinado bajo dos numeraciones'; 'NB y BN son ambos níquel negro. PB y BP son ambos latón pulido. CB y BC son ambos cromo pulido'"
+ },
+ {
+  "file": "content/guides/finish-code-reference-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Códigos de acabamento de ferragens: os 23 códigos do catálogo, equivalentes BHMA 600 e US26x, os quatro pares que se invertem (NB/BN, PB/BP, CB/BC) e por que um código não diz nada sobre corrosão.",
+  "new": "Referência de códigos de acabamento: os 23 códigos, equivalentes BHMA 600 e US26x (626 é US26D) e os pares que se invertem: NB/BN, PB/BP, CB/BC.",
+  "length": 144,
+  "facts_used": "CHECKED, PASS unchanged. bodyPt: 'OS VINTE E TRÊS CÓDIGOS QUE USAMOS'; 'A série 600 da BHMA e os antigos números US26x'; 'US26D e BHMA 626 são o mesmo cromo acetinado sob duas numerações'; 'NB e BN são ambos níquel preto. PB e BP são ambos latão polido. CB e BC são ambos cromo polido'"
+ },
+ {
+  "file": "content/guides/fire-door-hardware-what-must-be-rated-2026.json",
+  "field": "seoDescription",
+  "old": "Which door hardware components must be fire rated, how EN 1634-1 differs from UL 10C and NFPA 252 including the hose stream test, and what a fire certificate actually covers.",
+  "new": "Fire door hardware that must be rated: hinges, lock, closer, seals, exit devices and fixings, all in the tested assembly. EN 1634-1 vs UL 10C, EI vs E.",
+  "length": 151,
+  "facts_used": "CORRECTED. The proposal left out 'rated', a main term of the title ('Which Components Must Be Rated') and of the slug. Heading 'WHICH COMPONENTS HAVE TO BE RATED' lists hinges, the lock or latch, the closer, intumescent and smoke seals, exit devices and the fixings. Summary: 'has to be part of the tested assembly'. 'EN 1634-1 AND THE NORTH AMERICAN STANDARDS' / 'UL 10C and NFPA 252 are the corresponding North American tests'. 'EI 30 and E 30 are different results for the same duration'."
+ },
+ {
+  "file": "content/guides/fire-door-hardware-what-must-be-rated-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué componentes de herraje deben tener clasificación al fuego, en qué se diferencia EN 1634-1 de UL 10C y NFPA 252 incluido el chorro de manguera, y qué cubre un certificado.",
+  "new": "Herraje cortafuego: bisagras, cerradura, cierrapuertas, juntas, barras antipánico y fijaciones, clasificados en el conjunto ensayado. EN 1634-1 y UL 10C.",
+  "length": 153,
+  "facts_used": "CORRECTED. The proposal left out 'clasificado', a main term of the title and seoTitleEs ('qué componentes deben estar clasificados'). Heading 'QUÉ COMPONENTES DEBEN ESTAR CLASIFICADOS'. summaryEs: 'tiene que formar parte del conjunto ensayado: las bisagras, la cerradura o el pestillo, el cierrapuertas, las juntas intumescentes y de humos, las barras antipánico... y las fijaciones'. 'UL 10C y NFPA 252 son los ensayos norteamericanos correspondientes'. 'frente a' became 'y' to stay within 155 characters."
+ },
+ {
+  "file": "content/guides/fire-door-hardware-what-must-be-rated-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Que componentes de ferragem devem ter classificação ao fogo, em que a EN 1634-1 difere da UL 10C e NFPA 252 incluindo o jato de mangueira, e o que um certificado cobre.",
+  "new": "Ferragem corta-fogo: dobradiças, fechadura, mola, vedações, barras antipânico e fixações, classificadas no conjunto ensaiado. EN 1634-1 contra UL 10C.",
+  "length": 150,
+  "facts_used": "CORRECTED. The proposal left out 'classificado', a main term of the title and seoTitlePt ('que componentes devem ser classificados'). Heading 'QUE COMPONENTES DEVEM SER CLASSIFICADOS'. summaryPt: 'tem que fazer parte do conjunto ensaiado: as dobradiças, a fechadura ou o trinco, a mola, as vedações intumescentes e de fumaça, as barras antipânico... e as fixações'. 'A UL 10C e a NFPA 252 são os ensaios norte-americanos correspondentes'. Every noun in the list is feminine, so 'classificadas' agrees."
+ },
+ {
+  "file": "content/guides/hardware-refurbishment-survey-2026.json",
+  "field": "seoDescription",
+  "old": "What to record per door on a hardware refurbishment survey, which fields need the lock removed, how to sample by door type, and how the survey turns into an order.",
+  "new": "Door hardware refurbishment survey: 14 fields per leaf, the 3 that need the lock out, sampling by door type, not floor, and turning it into an order.",
+  "length": 149,
+  "facts_used": "CHECKED, PASS unchanged. 'The fourteen fields' table + 'The unit is the leaf'; 'Fields 8, 9 and 11 need the lock or cylinder out'; FAQ 'Three of fourteen'; 'The sampling rule: by type, not by floor'; 'Turning the survey into an order'"
+ },
+ {
+  "file": "content/guides/hardware-refurbishment-survey-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué registrar por puerta en una toma de datos de herraje para reforma, qué campos exigen sacar la cerradura, cómo muestrear por tipo de puerta, y cómo se convierte en pedido.",
+  "new": "Toma de datos de herraje en reforma: 14 campos por hoja, los 3 que exigen sacar la cerradura, muestreo por tipo de puerta, no por planta, y paso a pedido.",
+  "length": 154,
+  "facts_used": "CHECKED, PASS unchanged. summaryEs 'los catorce campos que merece registrar por hoja'; bodyEs 'Los campos 8, 9 y 11 exigen sacar la cerradura o el cilindro'; 'La regla de muestreo: por tipo, no por planta'; summaryEs 'cómo la toma de datos se convierte en un pedido'"
+ },
+ {
+  "file": "content/guides/hardware-refurbishment-survey-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que registrar por porta num levantamento de ferragem para reforma, que campos exigem tirar a fechadura, como amostrar por tipo de porta, e como se transforma em pedido.",
+  "new": "Levantamento de ferragem em reforma: 14 campos por folha, os 3 que exigem tirar a fechadura, amostragem por tipo de porta e como transformá-lo em pedido.",
+  "length": 153,
+  "facts_used": "CHECKED, PASS unchanged. summaryPt 'os catorze campos que vale a pena registrar por folha'; bodyPt 'Os campos 8, 9 e 11 exigem tirar a fechadura ou o cilindro'; sampling by type; summaryPt 'como o levantamento se transforma num pedido'"
+ },
+ {
+  "file": "content/guides/hardware-warranty-what-it-covers-2026.json",
+  "field": "seoDescription",
+  "old": "What a door hardware warranty actually covers, the five exclusions that defeat most claims, why installation and cleaning decide liability, and what a successful claim contains.",
+  "new": "Door hardware warranty: the five exclusions behind most rejected claims, why a 5-year warranty you understand beats a 10-year one, and what a claim needs.",
+  "length": 154,
+  "facts_used": "CHECKED, PASS unchanged. 'almost every rejected claim is rejected under one of these five'; 'a five-year warranty whose scope you understand is worth more than a ten-year one whose exclusions you have not read'; 'What a successful claim contains'. This is the article's general advice and does not say what term the factory offers."
+ },
+ {
+  "file": "content/guides/hardware-warranty-what-it-covers-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué cubre realmente una garantía de herraje de puerta, las cinco exclusiones que tumban la mayoría de las reclamaciones, por qué la instalación y la limpieza deciden la responsabilidad.",
+  "new": "Garantía de herraje: las cinco exclusiones que tumban la mayoría de las reclamaciones, por qué 5 años con alcance claro valen más que 10, y cómo reclamar.",
+  "length": 154,
+  "facts_used": "CHECKED, PASS unchanged. summaryEs 'las cinco exclusiones que tumban la mayoría de las reclamaciones'; bodyEs 'una garantía de cinco años cuyo alcance entiende vale más que una de diez cuyas exclusiones no ha leído'; heading 'Qué contiene una reclamación que prospera'"
+ },
+ {
+  "file": "content/guides/hardware-warranty-what-it-covers-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que uma garantia de ferragem de porta realmente cobre, as cinco exclusões que derrubam a maioria das reclamações, por que a instalação e a limpeza decidem a responsabilidade.",
+  "new": "Garantia de ferragem: as cinco exclusões que derrubam a maioria das reclamações, por que 5 anos com alcance claro valem mais que 10, e como reclamar.",
+  "length": 149,
+  "facts_used": "CHECKED, PASS unchanged. summaryPt 'as cinco exclusões que derrubam a maioria das reclamações'; bodyPt 'uma garantia de cinco anos cujo alcance entende vale mais do que uma de dez cujas exclusões não leu'; heading 'O que contém uma reclamação que avança'"
+ },
+ {
+  "file": "content/guides/hinge-grades-and-count-2026.json",
+  "field": "seoDescription",
+  "old": "EN 1935 hinge grades 1 to 14 with tested door masses, ANSI/BHMA A156.1 weight classes, how many hinges a door needs by height, and why the count does not substitute for the grade.",
+  "new": "Hinge count by leaf height: 2 up to 1524mm, 3 up to 2286mm, 4 up to 3048mm. EN 1935 grades 1 to 14, A156.1, and why an extra hinge is not a higher grade.",
+  "length": 153,
+  "facts_used": "CHECKED, PASS unchanged. Count table: 1524mm 2, 2286mm 3, 3048mm 4; 'the grade: 1 to 14'; 'THE ANSI/BHMA A156.1 APPROACH'; heading 'WHY AN EXTRA HINGE IS NOT A HIGHER GRADE'. Dropping the old 'tested door masses' was correct, because the body gives no mass figure for any grade."
+ },
+ {
+  "file": "content/guides/hinge-grades-and-count-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Grados EN 1935 del 1 al 14 con las masas ensayadas, clases de peso ANSI/BHMA A156.1, cuántas bisagras por altura de puerta, y por qué el número no sustituye al grado.",
+  "new": "Número de bisagras: 2 hasta 1524 mm de altura, 3 hasta 2286 mm, 4 hasta 3048 mm. Grados EN 1935 del 1 al 14, A156.1 y por qué una más no sube el grado.",
+  "length": 151,
+  "facts_used": "CHECKED, PASS unchanged. bodyEs table 'Altura de hoja hasta': 1524 mm 2, 2286 mm 3, 3048 mm 4; 'el grado: de 1 a 14'; 'ANSI/BHMA A156.1'; heading 'POR QUÉ UNA BISAGRA MÁS NO ES UN GRADO MÁS'"
+ },
+ {
+  "file": "content/guides/hinge-grades-and-count-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Graus EN 1935 de 1 a 14 com as massas ensaiadas, classes de peso ANSI/BHMA A156.1, quantas dobradiças por altura de porta, e por que o número não substitui o grau.",
+  "new": "Número de dobradiças: 2 até 1524 mm de altura, 3 até 2286 mm, 4 até 3048 mm. Graus EN 1935 de 1 a 14, A156.1 e por que mais uma não sobe o grau.",
+  "length": 144,
+  "facts_used": "CHECKED, PASS unchanged. bodyPt table: 1524 mm 2, 2286 mm 3, 3048 mm 4; 'o grau: de 1 a 14'; 'ANSI/BHMA A156.1'; heading 'POR QUE MAIS UMA DOBRADIÇA NÃO É MAIS UM GRAU'; the FAQ's 'suba o grau' already uses 'subir' with an object, so 'sobe o grau' matches it"
+ },
+ {
+  "file": "content/guides/key-blanks-and-restricted-profiles-2026.json",
+  "field": "seoDescription",
+  "old": "Key blanks, keyway profiles, and the difference between open, restricted and patented keyways, what key control stops, patent expiry, and what a master key system needs decided first.",
+  "new": "Key blanks and keyway profiles: open, restricted and patented keyways compared, what key control does not stop, and what happens when the patent expires.",
+  "length": 153,
+  "facts_used": "CHECKED, PASS unchanged. Headings 'OPEN KEYWAYS' / 'RESTRICTED KEYWAYS' / 'PATENTED KEYWAYS'; 'WHAT KEY CONTROL DOES NOT STOP'; 'When it expires, the blank may lawfully be manufactured by anyone'"
+ },
+ {
+  "file": "content/guides/key-blanks-and-restricted-profiles-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Llaves en bruto, perfiles de bocallave, y la diferencia entre bocallaves abiertas, restringidas y patentadas, qué detiene el control de llave, caducidad de patente y qué decidir antes.",
+  "new": "Llaves en bruto y perfiles: bocallaves abiertas, restringidas y patentadas, qué no detiene el control de llave y qué pasa cuando caduca la patente.",
+  "length": 147,
+  "facts_used": "CHECKED, PASS unchanged. summaryEs 'separa las bocallaves abiertas de las restringidas y de las patentadas, es precisa sobre qué detiene cada una y qué no'; bodyEs 'Cuando caduca, el bruto puede ser fabricado legalmente por cualquiera'"
+ },
+ {
+  "file": "content/guides/key-blanks-and-restricted-profiles-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Chaves em bruto, perfis de palhetão, e a diferença entre palhetões abertos, restritos e patenteados, o que o controle de chave detém, caducidade de patente e o que decidir antes.",
+  "new": "Chaves em bruto e perfis: palhetões abertos, restritos e patenteados, o que o controle de chave não detém e o que acontece quando a patente expira.",
+  "length": 147,
+  "facts_used": "CHECKED, PASS unchanged. summaryPt 'separa os palhetões abertos dos restritos e dos patenteados, é precisa sobre o que cada um detém e o que não'; bodyPt 'Quando expira, o bruto pode ser fabricado legalmente por qualquer um'"
+ },
+ {
+  "file": "content/guides/lever-return-and-en-1906-2026.json",
+  "field": "seoDescription",
+  "old": "What lever return means and why commercial specifications require it, why knobs fail accessibility requirements, and how to read the eight fields of an EN 1906 handle classification.",
+  "new": "Lever return: why a lever must curve back toward the door, often to within about 13mm (1/2\"), why knobs fail accessibility, and the 8 fields of EN 1906.",
+  "length": 152,
+  "facts_used": "CHECKED, PASS unchanged. 'returning to within a short distance of the door face, commonly quoted as about 13mm (1/2\")'; 'often... about' keeps the body's hedge that the figure varies by jurisdiction. 'WHY A KNOB FAILS WHERE A LEVER PASSES'; 'THE EIGHT FIELDS OF AN EN 1906 CLASSIFICATION'"
+ },
+ {
+  "file": "content/guides/lever-return-and-en-1906-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué significa el retorno de manija y por qué lo exigen las especificaciones comerciales, por qué las perillas suspenden en accesibilidad, y cómo leer los ocho campos de una clasificación EN 1906.",
+  "new": "Retorno de manija: por qué debe curvarse hacia la puerta (se citan unos 13 mm), por qué las perillas suspenden en accesibilidad y los 8 campos de EN 1906.",
+  "length": 154,
+  "facts_used": "CORRECTED a grammar error. In the proposal's '(se cita unos 13 mm)', 'unos 13 mm' is the plural subject of the pasiva refleja, so the verb must be 'se citan'. bodyEs: 'se cita habitualmente en torno a 13 mm'; summaryEs 'por qué una perilla suspende en accesibilidad'; 'LOS OCHO CAMPOS DE UNA CLASIFICACIÓN EN 1906'"
+ },
+ {
+  "file": "content/guides/lever-return-and-en-1906-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que significa o retorno de maçaneta e por que as especificações comerciais o exigem, por que os puxadores redondos reprovam em acessibilidade, e como ler os oito campos de uma classificação EN 1906.",
+  "new": "Retorno de maçaneta: a curva de volta à porta (cita-se cerca de 13 mm), por que o puxador redondo reprova em acessibilidade e os 8 campos da EN 1906.",
+  "length": 149,
+  "facts_used": "CHECKED, PASS unchanged. bodyPt: 'retornar até ficar a pouca distância da face da porta, cita-se habitualmente cerca de 13 mm'; 'POR QUE UM PUXADOR REDONDO REPROVA ONDE UMA MAÇANETA PASSA'; 'OS OITO CAMPOS DE UMA CLASSIFICAÇÃO EN 1906'"
+ },
+ {
+  "file": "content/guides/master-key-hierarchy-planning-2026.json",
+  "field": "seoDescription",
+  "old": "How to plan a master key hierarchy: the levels explained, why cross-keying consumes capacity, expansion allowance, construction keying, and what to decide before cutting.",
+  "new": "Master key hierarchy planning: up to five levels from GGMK to change key, why most buildings need three at most, and why cross-keying consumes capacity.",
+  "length": 152,
+  "facts_used": "CHECKED, PASS unchanged. Levels table runs from GGMK through GMK, MK and SMK to change key / differ; 'A system does not need all five. Most buildings need three at most'; 'each cross-keyed cylinder adds shear points and consumes disproportionately from the pool'"
+ },
+ {
+  "file": "content/guides/master-key-hierarchy-planning-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Cómo planificar una jerarquía de amaestramiento: los niveles explicados, por qué el cruce consume capacidad, margen de ampliación, amaestramiento de obra, y qué decidir antes de cortar.",
+  "new": "Jerarquía de amaestramiento: hasta cinco niveles, por qué la mayoría de los edificios necesita tres como mucho y por qué el cruce consume capacidad.",
+  "length": 148,
+  "facts_used": "CHECKED, PASS unchanged. bodyEs: 'Un sistema no necesita los cinco. La mayoría de los edificios necesita tres como mucho'; 'cada cilindro cruzado añade puntos de corte y consume de forma desproporcionada del conjunto'"
+ },
+ {
+  "file": "content/guides/master-key-hierarchy-planning-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Como planear uma hierarquia de chave mestra: os níveis explicados, por que o cruzamento consome capacidade, margem de ampliação, chaveamento de obra, e o que decidir antes de cortar.",
+  "new": "Hierarquia de chave mestra: até cinco níveis, por que a maioria dos edifícios precisa de três no máximo e por que o cruzamento consome capacidade.",
+  "length": 146,
+  "facts_used": "CHECKED, PASS unchanged. bodyPt: 'Um sistema não precisa dos cinco. A maioria dos edifícios precisa de três no máximo'; 'cada cilindro cruzado acrescenta pontos de corte e consome de forma desproporcionada do conjunto'"
+ },
+ {
+  "file": "content/guides/material-traceability-mill-certs-2026.json",
+  "field": "seoDescription",
+  "old": "EN 10204 inspection document types 2.1, 2.2, 3.1 and 3.2 compared, what a heat number traces, and what a door hardware factory can honestly certify about its material.",
+  "new": "Material traceability: EN 10204 types 2.1, 2.2, 3.1 and 3.2, who signs, whether your batch was tested, what a heat number traces, and why RoHS is separate.",
+  "length": 155,
+  "facts_used": "CHECKED, PASS unchanged. EN 10204 table has types 2.1/2.2/3.1/3.2 with columns 'Tested on your material?' and 'Signed by'; 'A 3.1 on a specific batch has to be planned' supports 'batch'; 'What a heat number actually traces'; 'Material traceability is not RoHS, and not REACH'"
+ },
+ {
+  "file": "content/guides/material-traceability-mill-certs-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Tipos de documento de inspección EN 10204 2.1, 2.2, 3.1 y 3.2 comparados, qué traza un número de colada, y qué puede certificar honestamente una fábrica de herrajes sobre su material.",
+  "new": "Trazabilidad de material EN 10204: tipos 2.1, 2.2, 3.1 y 3.2, quién firma, si se ensayó su lote, qué traza un número de colada y por qué RoHS no la cubre.",
+  "length": 154,
+  "facts_used": "CHECKED, PASS unchanged. summaryEs 'lo que los separa es quién lo firmó y si el ensayo se hizo sobre su metal'; bodyEs 'Un 3.1 sobre un lote concreto hay que planificarlo'; 'explica los números de colada'; 'La trazabilidad de material no es RoHS'"
+ },
+ {
+  "file": "content/guides/material-traceability-mill-certs-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "Tipos de documento de inspeção EN 10204 2.1, 2.2, 3.1 e 3.2 comparados, o que um número de corrida rastreia, e o que uma fábrica de ferragens pode honestamente certificar sobre o seu material.",
+  "new": "Rastreabilidade de material EN 10204: tipos 2.1, 2.2, 3.1 e 3.2, quem assina, se o lote foi ensaiado, o que rastreia a corrida e por que RoHS não a cobre.",
+  "length": 154,
+  "facts_used": "CHECKED, PASS unchanged. summaryPt 'o que os separa é quem o assinou e se o ensaio foi feito sobre o seu metal'; bodyPt 'Um 3.1 sobre um lote concreto tem que ser planejado'; 'explica os números de corrida'; 'A rastreabilidade de material não é RoHS'"
+ },
+ {
+  "file": "content/guides/moq-tooling-and-lead-time-2026.json",
+  "field": "seoDescription",
+  "old": "What determines a door hardware MOQ (finish batch size, tooling, packaging and production run) why the range is 300 to 5,000 pieces, and what a 30-day lead time counts.",
+  "new": "MOQ for most models: 300 to 5,000 pieces. What sets it, why splitting finishes raises it, how tooling is quoted, and what the 30-day lead time counts.",
+  "length": 150,
+  "facts_used": "CHECKED, PASS unchanged. 'Our published range is 300 to 5,000 pieces for most models'; 'THE FOUR THINGS THAT SET AN MOQ'; 'splitting an order across finishes raises the total minimum rather than lowering it'; FAQ 'How is tooling quoted? As a separate cost'; 'WHAT A 30-DAY LEAD TIME IS COUNTING'"
+ },
+ {
+  "file": "content/guides/moq-tooling-and-lead-time-2026.json",
+  "field": "seoDescriptionEs",
+  "old": "Qué determina un pedido mínimo de herrajes (lote de acabado, utillaje, embalaje y serie de producción), por qué el rango es de 300 a 5.000 piezas, y qué cuenta un plazo de 30 días.",
+  "new": "Pedido mínimo: de 300 a 5.000 piezas en la mayoría de los modelos. Qué lo fija, por qué repartir acabados lo sube, el utillaje y el plazo de 30 días.",
+  "length": 149,
+  "facts_used": "CHECKED, PASS unchanged. bodyEs 'Nuestro rango publicado es de 300 a 5.000 piezas para la mayoría de los modelos'; 'repartir un pedido entre acabados sube el mínimo total'; 'QUÉ CUESTA EL UTILLAJE'; 'Nuestro plazo de producción parte de 30 días'"
+ },
+ {
+  "file": "content/guides/moq-tooling-and-lead-time-2026.json",
+  "field": "seoDescriptionPt",
+  "old": "O que determina um pedido mínimo de ferragens, lote de acabamento, ferramentaria, embalagem e série de produção, por que a faixa é de 300 a 5.000 peças, e o que um prazo de 30 dias conta.",
+  "new": "Pedido mínimo: de 300 a 5.000 peças na maioria dos modelos. O que o fixa, por que dividir acabamentos o aumenta, a ferramentaria e o prazo de 30 dias.",
+  "length": 150,
+  "facts_used": "CHECKED, PASS unchanged. bodyPt 'A nossa faixa publicada é de 300 a 5.000 peças para a maioria dos modelos'; 'dividir um pedido entre acabamentos aumenta o mínimo total'; 'O QUE CUSTA A FERRAMENTARIA'; 'O nosso prazo de produção parte de 30 dias'"
+ }
+]
