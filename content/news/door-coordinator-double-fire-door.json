@@ -3,7 +3,8 @@
   "title": "Why a Double Fire Door Needs a Coordinator, and How to Size One",
   "kind": "insight",
   "publishedAt": "2026-09-11",
-  "summary": "A pair of fire doors with two closers will close in whichever order the springs decide. If the active leaf arrives first, the astragal holds it open and the door does not latch, so the assembly is no longer a fire door. A coordinator forces the order. This is what it has to match to work.",
+  "updatedAt": "2026-10-09",
+  "summary": "A pair of fire doors with two closers closes in whichever order the springs decide; if the active leaf arrives first, the astragal holds it open and the door does not latch. A coordinator forces the inactive leaf to close first, and it only works when the leaf weights, the closer on each leaf and the coordinator's own rating agree. Our DC02 is rated to 100kg, but our heaviest closer stops at 85kg, so above 85kg we do not currently offer a closer.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -62,7 +63,7 @@
     "That is also the cheapest fix available on a double door: one row added to a schedule, before anything is ordered, rather than a return visit with a ladder after handover."
   ],
   "titleEs": "Por qué una puerta cortafuego de dos hojas necesita un selector de cierre, y cómo dimensionarlo",
-  "summaryEs": "Un par de puertas cortafuego con dos cierrapuertas se cerrará en el orden que decidan los muelles. Si la hoja activa llega primero, el batiente la deja abierta y la puerta no acuña, y entonces el conjunto ya no es una puerta cortafuego. El selector impone el orden. Esto es lo que tiene que coincidir para que funcione.",
+  "summaryEs": "Un par de puertas cortafuego con dos cierrapuertas se cierra en el orden que decidan los muelles; si la hoja activa llega primero, el batiente la deja abierta y la puerta no acuña. Un coordinador obliga a la hoja pasiva a cerrar primero, y solo funciona cuando coinciden el peso de las hojas, el cierrapuertas de cada hoja y el rango del propio coordinador. Nuestro DC02 llega a 100 kg, pero nuestro cierrapuertas más fuerte se queda en 85 kg, así que por encima de 85 kg hoy no ofrecemos cierrapuertas.",
   "bodyEs": [
     "Una puerta de una hoja cierra de una sola manera; una de dos hojas, no. Si se monta un cierrapuertas en cada hoja, cada una responde a su propio resorte, a su propia regulación hidráulica y a la corriente de aire que haya en el pasillo en ese momento, así que las hojas llegan en el orden que les toque. En una puerta corriente eso es un detalle de acabado. En una puerta cortafuego (cortafuegos, en España) marca la diferencia entre un conjunto certificado y un hueco en la pared.",
     "El motivo es el solape. En una puerta cortafuego de dos hojas, las hojas se encuentran en un astrágalo (batiente) o en un rebaje, y ese solape pertenece a la hoja pasiva: la activa tiene que cerrar por encima. Si la activa llega primero, tropieza con el canto de la pasiva, que sigue abierta, y se queda ahí. El pestillo no llega a entrar en el cerradero. Queda una puerta que parece cerrada pero no está trabada, y la sobrepresión de un incendio la abrirá mucho antes de que ceda la propia hoja. Todo certificado de ensayo de resistencia al fuego parte de que la puerta estaba trabada.",
@@ -153,7 +154,7 @@
     ]
   },
   "titlePt": "Por que uma porta corta-fogo de duas folhas precisa de coordenador, e como dimensioná-lo",
-  "summaryPt": "Um par de portas corta-fogo com duas molas fecha na ordem que as molas decidirem. Se a folha ativa chegar primeiro, o batente sobreposto a segura aberta e a porta não trava, e o conjunto deixa de ser uma porta corta-fogo. O coordenador impõe a ordem. Isto é o que ele tem que acompanhar para funcionar.",
+  "summaryPt": "Um par de portas corta-fogo com duas molas fecha na ordem que as molas decidirem; se a folha ativa chegar primeiro, o batente sobreposto a segura aberta e a porta não trava. Um coordenador obriga a folha passiva a fechar primeiro, e só funciona quando o peso das folhas, a mola de cada folha e a faixa do próprio coordenador concordam. O nosso DC02 vai até 100 kg, mas a nossa mola mais forte para em 85 kg, então acima de 85 kg hoje não oferecemos mola.",
   "bodyPt": [
     "Uma porta de uma folha fecha de um jeito só; uma de duas folhas, não. Instale uma mola aérea em cada folha de uma porta dupla e cada uma vai obedecer à própria mola, ao próprio ajuste hidráulico e à corrente de ar do corredor naquele momento, então as folhas chegam na ordem que for. Numa porta comum, isso é só um defeito de acabamento. Numa porta corta-fogo, é a diferença entre um conjunto certificado e um buraco na parede.",
     "O motivo é a sobreposição. Numa porta corta-fogo de duas folhas, as folhas se encontram numa mata-junta ou num rebaixo, e essa sobreposição pertence à folha passiva: a ativa tem que fechar por cima dela. Se a ativa chegar primeiro, bate na borda da passiva, que ainda está aberta, e para ali. O trinco não entra na contra-testa. Sobra uma porta que parece fechada mas não está travada, e a diferença de pressão de um incêndio vai abri-la muito antes de a folha em si ceder. Todo certificado de ensaio de resistência ao fogo parte do princípio de que a porta estava travada.",

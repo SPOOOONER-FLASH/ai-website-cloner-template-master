@@ -385,7 +385,7 @@
   },
   "door-coordinator-double-fire-door": {
     "title": "Pourquoi une porte coupe-feu à deux vantaux a besoin d'un sélecteur de fermeture, et comment le dimensionner",
-    "summary": "Une paire de portes coupe-feu équipée de deux ferme-portes se ferme dans l'ordre que décident les ressorts. Si le vantail de service arrive le premier, le battement le maintient ouvert, la porte ne se verrouille pas et l'ensemble n'est plus une porte coupe-feu. Un sélecteur de fermeture impose l'ordre. Voici ce qu'il doit respecter pour fonctionner.",
+    "summary": "Une double porte coupe-feu équipée de deux ferme-portes se ferme dans l'ordre que décident les ressorts ; si le vantail de service arrive le premier, la battue le retient ouvert et la porte ne s'enclenche pas. Un sélecteur de fermeture oblige le vantail semi-fixe à se fermer d'abord, et il ne fonctionne que si le poids des vantaux, le ferme-porte de chaque vantail et la plage du sélecteur concordent. Notre DC02 va jusqu'à 100 kg, mais notre ferme-porte le plus puissant s'arrête à 85 kg : au-delà de 85 kg, nous ne proposons pas encore de ferme-porte.",
     "seoTitle": "Sélecteur de fermeture pour porte coupe-feu double",
     "seoDescription": "Pourquoi deux vantaux coupe-feu exigent un sélecteur, et comment l'accorder au poids du vantail. Canton Hyland DC02, 397 × 120 mm, 55–100 kg.",
     "body": [
@@ -439,7 +439,7 @@
     ],
     "sourceHash": {
       "title": "24fba1d169f0",
-      "summary": "eecbddb1cd3c",
+      "summary": "3c4d3f67cbbd",
       "seoTitle": "c37a1717ce6b",
       "seoDescription": "2c8a7fde1682",
       "body": "3481b4414633",
@@ -448,7 +448,7 @@
   },
   "door-hardware-schedule-guide": {
     "title": "Le tableau de quincaillerie : comment la quincaillerie se prescrit vraiment",
-    "summary": "Un projet n'achète pas des serrures. Il achète des types de portes, et chaque type de porte est un ensemble de quincaillerie qui doit être cohérent. Le document qui en décide est le tableau de quincaillerie ; mieux vaut le comprendre avant de chiffrer à partir de lui.",
+    "summary": "Les chantiers achètent des types de porte, pas des serrures : un tableau de quincaillerie indique 30 de l'ensemble HW-01 et 90 de HW-02, et chaque ligne d'un ensemble doit concorder avec les autres. Un coffre à entraxe de 85 mm demande des béquilles percées à 85 mm et un cylindre adapté au vantail. Cet article lit un tableau comme le fait un acheteur de projet, avec un ensemble détaillé (HW-02 : un coffre à profil européen 85 × 60 mm, les cotes que publie notre LC04), avant que vous ne chiffriez.",
     "seoTitle": "Lire un tableau de quincaillerie | Canton Hyland",
     "seoDescription": "Ce qu'est un tableau de quincaillerie, comment les ensembles se décomposent en lignes, et les trois questions à poser avant de chiffrer.",
     "body": [
@@ -510,7 +510,7 @@
     ],
     "sourceHash": {
       "title": "95f22257047a",
-      "summary": "4561dd7d84fd",
+      "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
       "body": "f6a944bda5ea",
@@ -1312,7 +1312,7 @@
   },
   "narrow-stile-aluminium-door-lock-sag": {
     "title": "Pourquoi les portes en aluminium s'affaissent, et ce que le coffre de serrure y peut",
-    "summary": "Une porte aluminium à montants étroits qui ne se verrouille plus n'a presque jamais une serrure cassée. Elle s'est affaissée de quelques millimètres côté libre, et la serrure est simplement le premier endroit où l'on s'en aperçoit. Voici ce qui bouge réellement, et ce qui relève d'une décision de quincaillerie.",
+    "summary": "Une porte aluminium à montants étroits qui ne s'enclenche plus a presque jamais une serrure cassée : le vantail est descendu de quelques millimètres côté opposé. Sur un montant de seulement 30 à 50 mm, le côté paumelles ou pivot s'use en premier, les assemblages d'angle du cadre s'ouvrent ensuite, et le pêne le montre en troisième, car il entre dans une gâche avec peut-être 2 mm de jeu. Seul le coffre de serrure relève d'un choix de quincaillerie : nos coffres pour montants étroits existent en axes de 30, 40 et 45 mm.",
     "seoTitle": "Porte alu à montants étroits qui s'affaisse",
     "seoDescription": "Pourquoi une porte alu à montants étroits s'affaisse et ne se verrouille plus, le rôle de l'axe sur un montant de 30mm, et ce qui porte vraiment la charge.",
     "body": [
@@ -1368,7 +1368,7 @@
     ],
     "sourceHash": {
       "title": "0b49c4e6dc00",
-      "summary": "c2f1674ba923",
+      "summary": "570332d194f5",
       "seoTitle": "97f56e151143",
       "seoDescription": "73d3a4026004",
       "body": "cff04bbbb027",
@@ -1377,7 +1377,7 @@
   },
   "occupied-vacant-washroom-indicator-bolt": {
     "title": "Libre ou occupé : ce que doit réellement faire un verrou à voyant de sanitaires",
-    "summary": "Un verrou à voyant est à la fois une serrure et un signal, et c'est le signal qu'on prescrit mal. Il doit se lire à distance, pouvoir être débloqué de l'extérieur en cas d'urgence et, dans des sanitaires publics, résister à plusieurs centaines de manœuvres par jour par des utilisateurs peu soigneux.",
+    "summary": "Un verrou à voyant est une serrure et un signal en une seule pièce : il doit se lire à distance, se débloquer de l'extérieur en cas d'urgence et supporter plusieurs centaines de manœuvres par jour. Nos 200 et 400 sont en alliage de zinc et notre 500 en inox, celui à choisir pour un nettoyage agressif ou un bâtiment en bord de mer ; tous se posent en applique, la porte n'a donc pas besoin d'entaille. Nous ne publions ni chiffre d'essai d'endurance ni taille de voyant : demandez avant de chiffrer contre une spécification qui exige l'un ou l'autre.",
     "seoTitle": "Verrou à voyant libre / occupé : bien le prescrire",
     "seoDescription": "Ce que doit faire un verrou à voyant libre / occupé, pourquoi le déblocage d'urgence prime sur la fenêtre, et ce qui distingue les 200, 400 et 500.",
     "body": [
@@ -1435,7 +1435,7 @@
     ],
     "sourceHash": {
       "title": "7a6c9a00d438",
-      "summary": "3a4dafaa4090",
+      "summary": "5490d89dde81",
       "seoTitle": "89347cc1780a",
       "seoDescription": "a671ec187536",
       "body": "e529925518ff",
@@ -2158,7 +2158,7 @@
   },
   "what-documents-you-can-actually-get": {
     "title": "Fiches techniques, CAO et BIM : ce que nous avons, et ce que nous n'avons pas",
-    "summary": "On arrive ici en cherchant une fiche technique, un DWG, un objet BIM ou une ficha técnica. Une partie de tout cela est publiée aujourd'hui, une autre peut être envoyée sur demande, et une n'existe pas encore. Dire ce qui relève de quoi est plus utile qu'une page de téléchargement qui promet tout.",
+    "summary": "Ce que nous avons aujourd'hui : des spécifications en tableau sur chaque fiche produit, des plans cotés pour certains modèles et un catalogue PDF à jour. Les documents d'essai sont envoyés sur demande, pour le modèle exact qu'ils couvrent. Il n'y a pas de bibliothèque BIM (ni familles Revit ni objets IFC) ni de plan publié de préparation de porte ; pour un gabarit d'usinage, demandez un plan approuvé du modèle exact. Demandez par référence, dans la configuration que vous achetez : un plan de la version à axe de 60 mm n'est pas un plan de celle à 45 mm.",
     "seoTitle": "Fiches techniques, CAO et BIM : ce qui existe",
     "seoDescription": "HYDE compte 84 SVG cotés, dont 72 sur des fiches visibles, et un catalogue PDF consultable. Pas de bibliothèque BIM ni de SVG de préparation de porte.",
     "body": [
@@ -2220,7 +2220,7 @@
     ],
     "sourceHash": {
       "title": "c9ec3ebc0156",
-      "summary": "1d9875e4bc66",
+      "summary": "34f71cb953ce",
       "seoTitle": "e9cada889687",
       "seoDescription": "07af29b09753",
       "body": "c29f639c79d1",
@@ -2299,7 +2299,7 @@
   },
   "what-oem-actually-changes": {
     "title": "Ce que l'OEM change réellement, et ce qu'il ne change pas",
-    "summary": "Mettre votre marque sur une serrure, ce n'est pas une décision mais quatre, et une seule coûte vraiment de l'argent. Trois d'entre elles ne changent rien à la pièce. La quatrième est celle qui demande un moule.",
+    "summary": "Mettre votre marque sur une serrure, ce sont 4 décisions distinctes : l'emballage et le marquage, la marque sur la pièce, la finition, et la pièce elle-même. Seule la quatrième demande un moule. Les changements d'emballage et de finition suivent le délai catalogue, à partir de 30 jours après confirmation de commande ; une matrice modifiée ajoute la modification ; un moule neuf demande 3 à 5 mois avant que la production puisse commencer. Cet article liste ce qu'il faut envoyer pour chacune des 4, pour que la première réponse soit une vraie réponse.",
     "seoTitle": "Quincaillerie OEM et marque propre : ce qui change",
     "seoDescription": "Emballage, marquage de la pièce, finition et outillage : quatre décisions OEM aux coûts distincts. Ce que chacune exige, et quoi envoyer pour démarrer.",
     "body": [
@@ -2358,7 +2358,7 @@
     ],
     "sourceHash": {
       "title": "fc19bac775d4",
-      "summary": "db100a30a27e",
+      "summary": "022466a8bc3f",
       "seoTitle": "67b353783478",
       "seoDescription": "dab66e40fd66",
       "body": "1474dfdb6922",

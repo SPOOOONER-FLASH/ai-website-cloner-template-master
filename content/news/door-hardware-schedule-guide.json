@@ -3,8 +3,8 @@
   "title": "The Door Schedule: How Hardware Is Actually Specified",
   "kind": "insight",
   "publishedAt": "2026-08-27",
-  "updatedAt": "2026-09-29",
-  "summary": "Projects do not buy locks. They buy door types, and each door type is a set of hardware that has to agree with itself. The document that decides this is the door schedule, and it is worth understanding before you quote against one.",
+  "updatedAt": "2026-10-09",
+  "summary": "Projects buy door types, not locks: a schedule says 30 of set HW-01 and 90 of HW-02, and every line in a set has to agree with the others. A lock case with an 85mm center distance needs levers drilled for 85mm and a cylinder sized to the leaf. This article reads a schedule the way a project buyer does, with a worked set (HW-02: an 85mm × 60mm euro lock case, the rows our LC04 publishes), before you quote against one.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -59,7 +59,7 @@
   "seoTitle": "Reading a Door Hardware Schedule | Canton Hyland",
   "seoDescription": "What a door hardware schedule is, how hardware sets expand into line items, and the three questions to ask before quoting against one.",
   "titleEs": "La planilla de puertas: cómo se especifican realmente los herrajes",
-  "summaryEs": "Las obras no compran cerraduras. Compran tipos de puerta, y cada tipo de puerta es un conjunto de herrajes que tiene que ser coherente consigo mismo. El documento que lo decide es la planilla de puertas, y conviene entenderlo antes de cotizar contra él.",
+  "summaryEs": "Las obras compran tipos de puerta, no cerraduras: una planilla dice 30 del juego HW-01 y 90 del HW-02, y cada línea de un juego tiene que coincidir con las demás. Una caja con 85 mm de distancia entre ejes necesita manijas taladradas a 85 mm y un cilindro a la medida de la hoja. Este artículo lee una planilla como lo hace un comprador de obra, con un juego resuelto (HW-02: una caja de perfil europeo de 85 × 60 mm, las cotas que publica nuestra LC04), antes de cotizar contra ella.",
   "bodyEs": [
     "El catálogo de un fabricante está organizado por producto: las cajas de cerradura aquí, las manijas allá, los cierrapuertas en otra parte. Un edificio no está organizado así. Un edificio es una lista de puertas, y cada puerta necesita un conjunto de herrajes cuyas piezas tienen que concordar entre sí, la misma entrada, la misma mano, la misma resistencia al fuego, el mismo acabado. El documento que recoge esto es la planilla de herrajes de puerta, y en una obra comercial es de donde se escribe realmente el pedido.",
     "Si vende a obra y nunca ha visto una, una fila es aproximadamente esto. Un tipo de puerta, digamos una hoja cortafuego de paso de pasillo. Sus dimensiones y su mano. Después un conjunto de herrajes: una caja de cerradura con su entrada y su distancia entre ejes declaradas, un juego de manijas sobre la placa que corresponde a esa distancia entre ejes, un cilindro europeo amaestrado dentro del sistema del edificio, un par de bisagras dimensionadas para el peso de la hoja, un cierrapuertas de la potencia adecuada y (por estar en una vía de evacuación) un dispositivo antipánico en lugar de una cerradura del lado de salida. Una fila. Siete líneas de pedido. Cada una tiene que ser compatible con las otras seis.",
@@ -174,7 +174,7 @@
     ]
   },
   "titlePt": "A planilha de portas: como a ferragem é realmente especificada",
-  "summaryPt": "O catálogo de um fabricante é organizado por produto. Um prédio não é. Um prédio é uma lista de portas, e cada porta precisa de um conjunto de ferragens cujas peças têm que concordar entre si.",
+  "summaryPt": "Obras compram tipos de porta, não fechaduras: uma planilha diz 30 do conjunto HW-01 e 90 do HW-02, e cada linha de um conjunto tem que concordar com as outras. Uma caixa com 85 mm de distância entre centros precisa de maçanetas furadas a 85 mm e de um cilindro na medida da folha. Este artigo lê uma planilha como um comprador de obra lê, com um conjunto resolvido (HW-02: uma caixa de perfil europeu de 85 × 60 mm, as medidas que a nossa LC04 publica), antes de você cotar contra ela.",
   "bodyPt": [
     "O catálogo de um fabricante é organizado por produto: caixas de fechadura aqui, maçanetas ali, molas em outro lugar. Um prédio não é organizado assim. Um prédio é uma lista de portas, e cada porta precisa de um conjunto de ferragens cujas peças têm que concordar entre si, a mesma distância ao eixo, a mesma mão, a mesma resistência ao fogo, o mesmo acabamento. O documento que registra isso é a planilha de ferragens de porta, e numa obra comercial é dela que o pedido é de fato escrito.",
     "Se você vende para obras e nunca viu uma, é mais ou menos assim que uma linha se parece. Um tipo de porta, digamos uma folha corta-fogo de corredor. As suas dimensões e a mão. Depois um conjunto de ferragens: uma caixa de fechadura com distância ao eixo e entre centros declaradas, um conjunto de maçaneta no espelho que combina com essa distância entre centros, um cilindro europeu chaveado no sistema mestre do prédio, um par de dobradiças dimensionado para o peso da folha, uma mola com a potência certa e (por estar numa rota de fuga) uma barra antipânico em vez de fechadura do lado da saída. Uma linha. Sete itens de pedido. Cada um deles tem que ser compatível com os outros seis.",

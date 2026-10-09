@@ -3,8 +3,8 @@
   "title": "Cutsheets, CAD and BIM: What We Have and What We Do Not",
   "kind": "insight",
   "publishedAt": "2026-09-08",
-  "updatedAt": "2026-09-29",
-  "summary": "People arrive here searching for a cutsheet, a DWG, a BIM object or a ficha técnica. Some of that we publish today, some of it we can send on request, and one of it does not exist yet. Saying which is which is more useful than a download page that promises everything.",
+  "updatedAt": "2026-10-09",
+  "summary": "From us today: specifications on every product page as a table, dimensioned drawings for some models, and one current catalog PDF. Test documents come on request, for the exact model covered. There is no BIM library (no Revit families or IFC objects) and no published door-preparation drawing; for a cutting template, ask for an approved drawing of the exact model. Ask by model number in the configuration you buy: a drawing of the 60mm backset version is not a drawing of the 45mm one.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -58,7 +58,7 @@
   "seoTitle": "Door Hardware Cutsheets, CAD and BIM: What Exists | Canton Hyland",
   "seoDescription": "HYDE has 84 dimensioned SVG assets, 72 on visible listings, and one searchable catalog PDF. No BIM library or door-preparation SVGs.",
   "titleEs": "Fichas, CAD y BIM: qué tenemos y qué no",
-  "summaryEs": "Hay quien llega aquí buscando una ficha técnica, un DWG, un objeto BIM o una ficha para un modelo. Parte de eso lo publicamos hoy, parte lo enviamos a petición, y una parte todavía no existe. Decir cuál es cuál es más útil que una página de descargas que lo promete todo.",
+  "summaryEs": "Lo que tenemos hoy: especificaciones en tabla en cada ficha de producto, planos acotados de algunos modelos y un catálogo PDF vigente. Los documentos de ensayo se envían a petición, para el modelo exacto que cubren. No hay biblioteca BIM (ni familias de Revit ni objetos IFC) ni planos publicados de preparación de puertas; para una plantilla de mecanizado, pida un plano aprobado del modelo exacto. Pida por número de modelo en la configuración que compra: un plano de la versión de 60 mm de entrada no es un plano de la de 45 mm.",
   "bodyEs": [
     "En las consultas que llegan a este sitio se repite una forma: no buscan un producto, buscan un archivo. Una ficha técnica de una cerradura. Un modelo de DraftSight o un DWG. Un objeto BIM con su ficha técnica. Un PDF de muestra. En un caso alguien pegó una línea entera de lista de materiales (número de plano, posición, material, aplicación) directamente en el buscador, que es lo que hace un ingeniero de compras cuando intenta encontrar la pieza que satisface un plano. Todas son la misma petición por debajo: deme algo que pueda meter en mi propio documento.",
     "Así que aquí está el inventario honesto, ordenado por cuánto existe de cada cosa.",
@@ -173,7 +173,7 @@
     ]
   },
   "titlePt": "Fichas técnicas, CAD e BIM: o que temos e o que não temos",
-  "summaryPt": "Uma forma recorrente nas buscas que chegam a este site: as pessoas não procuram um produto, procuram um arquivo. Aqui está o inventário honesto, na ordem de quanto de cada coisa existe.",
+  "summaryPt": "O que temos hoje: especificações em tabela em cada página de produto, desenhos cotados de alguns modelos e um catálogo PDF atual. Os documentos de ensaio vêm mediante pedido, para o modelo exato que cobrem. Não há biblioteca BIM (nem famílias Revit nem objetos IFC) nem desenhos publicados de preparação de portas; para um gabarito de usinagem, peça um desenho aprovado do modelo exato. Peça pelo número do modelo na configuração que compra: um desenho da versão de 60 mm de distância ao eixo não é um desenho da de 45 mm.",
   "bodyPt": [
     "Uma forma recorrente aparece nas buscas que chegam a este site: as pessoas não estão procurando um produto, estão procurando um arquivo. Uma ficha técnica de uma fechadura. Um modelo DraftSight ou DWG. Um objeto BIM com ficha técnica. Um PDF de amostra. Num caso alguém colou uma linha inteira de lista de materiais (número de desenho, posição, material, aplicação) direto numa caixa de busca, que é o que um engenheiro de compras faz quando tenta achar a peça que satisfaz um desenho. No fundo são todos o mesmo pedido: me dê algo que eu possa colocar dentro do meu próprio documento.",
     "Então aqui está o inventário honesto, na ordem de quanto de cada coisa existe.",
