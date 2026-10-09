@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-09",
+  "authority": "Client: continue making review samples under source/model and photographic fidelity gates; report uncertainties for feedback.",
+  "library": {"path":"G:/新网站资料","mounted":false,"mode":"retained traceable native extracts; no fresh library scan"},
+  "selected": {
+    "model": "564 MB",
+    "catalogueRecord": "content/products/564-mb-night-latch-and-rim-lock.json",
+    "originalLibrary": "G:/新网站资料/7-防盗锁/564 MB/1-564 MB.psd",
+    "originalPsdSha256": "65cd6d0f69afaf8b8f37e15547e64b72fc21239ba8a8eaa8b0db68deffcf5401",
+    "originalPsdHashStatus": "previously recorded, not freshly measured",
+    "sourceProduct": "source-product.png",
+    "sourceProductSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+    "sourceFullPhoto": "source-full-photo.png",
+    "sourceFullPhotoSha256": "c3d92f905c3df78fe20554a05493c85e002574d9c46133a31b34f31d47b99cb3",
+    "visibleParts": ["original photographed lock body","original photographed keeper"],
+    "finishEvidence": "Catalogue record says Matt black; photographed black case retained without recolouring. Do not rename the bright latch as brass; only the button has that material recorded.",
+    "factoryGate": "Existing source/model/visible-parts consistency only; current factory version and full sold-kit contents are not independently re-certified. Review-only; not a complete-kit or internal-structure claim.",
+    "clientFeedback": "Original 564 photographic direction liked; these two new framing/field variations are not yet individually approved.",
+    "closeSourceCrop": {"left":0,"top":130,"width":835,"height":705,"productResize":false,"productRotation":false,"productOffsetAfterCrop":{"left":41,"top":58},"removedPixelsBelowLuma245":0,"meaningfulGroundShadowRetained":true}
+  },
+  "held": [
+    {
+      "model":"45 BNIK",
+      "source":"G:/新网站资料/10-锁芯/45/45BNIK/1-45BNIK.psd",
+      "cache":"tmp/codex-kanee-fidelity/psd-45/",
+      "baseFullPhotoSha256":"18ac3d2cca7fdea90e32181df129505613463412032f874b83425e8dddacd8ed",
+      "nativeProductSha256":"35333ff0e607829f7d3467bd68aa5b25392eb1f5331ae5fd50e4acc50e97daf1",
+      "visibleExteriorPositions":5,
+      "internalPinsConfirmed":false,
+      "decision":"No finished product image produced from this base pair",
+      "reason":"Base photograph/native alpha omit the fixing-hole and altered front-disc/keyway details present as separate visible PSD patches and in some catalogue views. The intended original/version cannot be established from the cache. Do not add patches, invent a hole, silently publish the base pair, or equate five visible plugs with verified internal pins.",
+      "next":"Factory/source owner identifies the correct genuine version and complete original photo. Keep the photography direction; change the source if needed."
+    },
+    {
+      "models":["140","110","1121","305"],
+      "decision":"No new grounded-still-life batch",
+      "reason":"Case caches lack complete usable photographic ground-shadow frames; 305 retains assembly but has no meaningful original grounding. Do not fabricate support or repeat a floating trial to meet a quota."
+    }
+  ]
+}

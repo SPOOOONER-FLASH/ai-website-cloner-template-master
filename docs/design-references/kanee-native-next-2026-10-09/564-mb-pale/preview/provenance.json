@@ -1,0 +1,52 @@
+{
+  "id": "564-mb-pale",
+  "model": "564 MB",
+  "view": "Source view1, pale continuous field comparison",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/7-防盗锁/564 MB/1-564 MB.psd",
+  "originalPsdSha256": "65cd6d0f69afaf8b8f37e15547e64b72fc21239ba8a8eaa8b0db68deffcf5401",
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "../sources/source-product.png",
+  "sourceProductSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+  "sourceFullPhoto": "../sources/source-full-photo.png",
+  "sourceFullPhotoSha256": "c3d92f905c3df78fe20554a05493c85e002574d9c46133a31b34f31d47b99cb3",
+  "productRgbReference": "native-cutout",
+  "productMaskExtraction": "Supplied native alpha, unchanged",
+  "sourceOffset": {
+    "left": 41,
+    "top": 188
+  },
+  "background": "../empty-fields/pale.png",
+  "backgroundSha256": "a234179384ec9e0a85bb8a1aa60feb3157eaf1a47836aadec9e22d30ef0d23fc",
+  "width": 835,
+  "height": 835,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 157692,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [
+    {
+      "seed": {
+        "x": 650,
+        "y": 495
+      },
+      "reason": "Reviewed native-alpha omission: restore supplied keeper inner-face photo pixels, same region as the approved 564 benchmark.",
+      "restoredPixels": 1045
+    }
+  ],
+  "restoredSourcePixelsCompared": 1045,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 0.85,
+    "gain": 0.94
+  },
+  "shadow": "Original full photographic layer luminance outside native product alpha; neutral multiply transmission; legacy reproduction without partial edge support",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1
+  },
+  "masterSha256": "7f8b645e471764050d118e263f052dfe378f6a2445e0b5199a57c8864635a8df",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}

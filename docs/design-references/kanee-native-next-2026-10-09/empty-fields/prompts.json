@@ -1,0 +1,12 @@
+{
+  "method": "Built-in image generation, empty fields only; no genuine metal image supplied",
+  "charcoal.png": {
+    "prompt": "Use case: photorealistic-natural. Asset type: empty photographic background for later compositing a genuine small factory product photograph, not a product render. Primary request: ONE entirely EMPTY medium cool-charcoal gray studio field, horizontal near-square ratio around 1.1:1. View: close oblique camera angled down toward a continuous matte paperboard plane, no horizon, no tabletop edge. Very fine close-grained graphite board microtexture, subtle and uniform without obvious pores or rocky mottling. Soft wide studio light upper left and slight natural falloff lower right. Medium dark gray, NOT black, enough separation for a black object which will be composited later. Understated expensive industrial catalogue photography like a quiet professional tabletop shoot. No objects anywhere. No product, metal, lock, keys, screws, fabricated shadows, props, plants, cloth, decorative panels, text, labels, logos or watermarks. No white border, no vignette, no dramatic spotlight. Empty textured field only.",
+    "originalPath": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/exec-4fd2358c-97eb-4b34-b8d4-15fcd0007fff.png",
+    "selection": "Originally requested for a 45 BNIK study; source preflight held that study. Reused this product-free field for the genuine approved 564 source."
+  },
+  "pale.png": {
+    "prompt": "Use case: photorealistic-natural. Asset type: empty photographic background for later faithful compositing. Primary request: ONE entirely EMPTY square studio photographic field in very pale neutral mineral gray, gently warm but no beige cast. Continuous fine-grained matte photographic paperboard ground, oblique top-down close studio camera, no horizon, seams, tabletop edge or props. Broad softbox illumination from upper left with extremely restrained falloff to lower right, no cast shadow. Understated architecture/hardware catalogue field, smooth enough that real metal is the visual subject. No products, locks, metal objects, screws, keys, slabs, blocks, texture pattern, decorative shadows, text, logos, watermark, borders or white cards. Photorealistic EMPTY pale gray board only.",
+    "originalPath": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/exec-dae4b0f1-e208-4046-b73f-3fadd34adf49.png"
+  }
+}

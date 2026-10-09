@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-09",
+  "scope": "Two photographic treatments of the same genuine 564 MB source view; review only",
+  "sourceGate": {
+    "model": "564 MB",
+    "result": "Retained source and recorded model/black case are consistent; current factory version and full sold-kit contents are not certified",
+    "partsInPhoto": ["rim-lock body", "keeper"],
+    "finishCaution": "Keep source colours. Gold-looking latch is not evidence that its material is brass.",
+    "originalDriveMounted": false,
+    "originalPsdHashStatus": "Previously recorded; retained input PNG hashes checked this session",
+    "commercialApproval": false
+  },
+  "fidelityGate": {
+    "result": "Passed native-pixel comparisons and independent enlarged visual review",
+    "perImageOpaquePixels": 157692,
+    "perImageOpaqueRgbDifferences": 0,
+    "perImageRestoredKeeperPixels": 1045,
+    "perImageRestoredKeeperRgbDifferences": 0,
+    "productResized": false,
+    "productRotated": false,
+    "productRegenerated": false,
+    "productRepainted": false,
+    "caveat": "Pixel fidelity does not certify the original factory variant or client aesthetic acceptance"
+  },
+  "images": [
+    {
+      "id": "564-mb-pale",
+      "master": "564-mb-pale/preview/564-mb-pale-source-shadow.png",
+      "sha256": "7f8b645e471764050d118e263f052dfe378f6a2445e0b5199a57c8864635a8df",
+      "size": [835, 835],
+      "visualResult": "Complete outlines and keeper inner face; clear grounding; quiet continuous field; no conspicuous halo, white-card seam or rectangular shadow cutoff",
+      "recommendedRole": "Catalogue comparison and black-edge/component inspection"
+    },
+    {
+      "id": "564-mb-close",
+      "master": "564-mb-close/preview/564-mb-close-source-shadow.png",
+      "sha256": "4bdc9b6ce8238c3632b5eb848f49274c629d573fc6efd9b2076284b86eddeb19",
+      "size": [835, 705],
+      "visualResult": "Complete body, knob, latch and keeper with supplied shadow falloff; no product or meaningful shadow clipping; more prominent framing",
+      "tradeoff": "Charcoal has less black-edge contrast and more visible field texture than pale",
+      "cropVerification": {
+        "topPixelsRemoved": 130,
+        "derivedRgbaPixelsCompared": 588675,
+        "changedChannels": 0,
+        "meaningfulDarkPixelsInRemovedArea": 0
+      },
+      "recommendedRole": "Editorial close comparison, not a new camera view"
+    }
+  ],
+  "heldSources": {
+    "45 BNIK": "Base photo and separate visible PSD detail patches/catalogue views disagree on fixing-hole/front-disc details. No finished product image, no feature transplant.",
+    "140, 110, 1121, 305": "Cached source evidence insufficient for a trustworthy grounded photographic treatment; not expanded"
+  },
+  "verification": {
+    "sourceShadowUnitTests": {"passed": 10, "failed": 0, "exitCode": 0},
+    "cropAssert": {"passed": true, "exitCode": 0},
+    "npmRunCheck": {"exitCode": 0, "log": "tmp/codex-564-validation/check-next-samples.log"},
+    "staticSemanticIssues": 0,
+    "deadLinksAndMissingAssets": 0,
+    "existingReportOnlyEditorialWarnings": 968,
+    "independentVisualReviewer": "case_exit_source_qa",
+    "independentSourceReviewer": "cylinder_source_qa"
+  },
+  "delivery": {
+    "reviewBranch": "codex/kanee-564-photo-review",
+    "clientAcceptance": "Pending feedback on these two new treatments",
+    "liveImagesReplaced": false,
+    "rendererChanged": false,
+    "video": "Cancelled",
+    "frozen33ProductsBatch": "Untouched"
+  }
+}

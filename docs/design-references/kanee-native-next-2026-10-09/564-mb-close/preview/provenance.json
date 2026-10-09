@@ -1,0 +1,52 @@
+{
+  "id": "564-mb-close",
+  "model": "564 MB",
+  "view": "Source view1, closer charcoal framing; crop empty top margin only",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/7-防盗锁/564 MB/1-564 MB.psd",
+  "originalPsdSha256": "65cd6d0f69afaf8b8f37e15547e64b72fc21239ba8a8eaa8b0db68deffcf5401",
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "../sources/source-product.png",
+  "sourceProductSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+  "sourceFullPhoto": "../sources/source-full-photo-topcrop.png",
+  "sourceFullPhotoSha256": "040c37b8e08ac0327897a0921a3625da1d6d3d4d8d59d2a56944412256154147",
+  "productRgbReference": "native-cutout",
+  "productMaskExtraction": "Supplied native alpha, unchanged",
+  "sourceOffset": {
+    "left": 41,
+    "top": 58
+  },
+  "background": "../empty-fields/charcoal.png",
+  "backgroundSha256": "461afa8c6948b4cbd8cd7c5fb418c3b3b14d456cc90ca2eba834b9cc3d19f03d",
+  "width": 835,
+  "height": 705,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 157692,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [
+    {
+      "seed": {
+        "x": 650,
+        "y": 365
+      },
+      "reason": "Same supplied keeper inner-face region as approved 564 benchmark, translated by the 130px empty-margin crop; no guessed fill.",
+      "restoredPixels": 1045
+    }
+  ],
+  "restoredSourcePixelsCompared": 1045,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 0.85,
+    "gain": 0.95
+  },
+  "shadow": "Original full photographic layer luminance outside native product alpha; neutral multiply transmission; legacy reproduction without partial edge support",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1
+  },
+  "masterSha256": "4bdc9b6ce8238c3632b5eb848f49274c629d573fc6efd9b2076284b86eddeb19",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}

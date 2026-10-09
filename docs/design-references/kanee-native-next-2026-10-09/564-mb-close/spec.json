@@ -1,0 +1,23 @@
+{
+  "id": "564-mb-close",
+  "model": "564 MB",
+  "view": "Source view1, closer charcoal framing; crop empty top margin only",
+  "sourceProduct": "../sources/source-product.png",
+  "sourceProductSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+  "sourceFullPhoto": "../sources/source-full-photo-topcrop.png",
+  "sourceFullPhotoSha256": "040c37b8e08ac0327897a0921a3625da1d6d3d4d8d59d2a56944412256154147",
+  "sourceOffset": {"left":41,"top":58},
+  "sourceFieldCrop": {"left":0,"top":130,"width":835,"height":705,"original":"../sources/source-full-photo.png"},
+  "background": "../empty-fields/charcoal.png",
+  "backgroundBlur": 0.85,
+  "backgroundGain": 0.95,
+  "restoreSourceRegions": [
+    {
+      "seed": {"x":650,"y":365},
+      "reason": "Same supplied keeper inner-face region as approved 564 benchmark, translated by the 130px empty-margin crop; no guessed fill."
+    }
+  ],
+  "calibration": {"paperLevel":254,"strength":1},
+  "originalLibrary": "G:/新网站资料/7-防盗锁/564 MB/1-564 MB.psd",
+  "originalPsdSha256": "65cd6d0f69afaf8b8f37e15547e64b72fc21239ba8a8eaa8b0db68deffcf5401"
+}
