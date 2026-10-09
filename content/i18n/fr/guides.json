@@ -2122,7 +2122,7 @@
   },
   "key-blanks-and-restricted-profiles-2026": {
     "title": "Ébauches de clés et profils protégés 2026 : profils libres, protégés et brevetés, et ce que la maîtrise des clés apporte vraiment",
-    "summary": "Une clé qui entre dans une serrure et une clé qui la fait tourner sont deux choses différentes, et la différence tient au profil. Cette page explique ce que sont une ébauche et un profil, distingue les profils libres, protégés et brevetés, précise ce que chacun empêche ou non, explique pourquoi l'expiration d'un brevet change la sécurité d'un bâtiment prescrit des années plus tôt, et liste ce qu'un acheteur doit décider avant de pouvoir tailler un organigramme de passe.",
+    "summary": "Un profil est ouvert, protégé ou breveté. Les ébauches ouvertes se vendent partout et une copie prend 2 minutes ; les protégées ne parviennent qu'aux revendeurs agréés, un contrôle contractuel ; les brevetées sont un monopole légal qui prend fin à l'expiration du brevet, si bien qu'un système spécifié il y a des années peut ne plus être protégé. Aucun des trois ne rend un cylindre plus difficile à crocheter ou à percer. Cette page liste aussi ce qu'il faut décider avant de tailler un organigramme.",
     "seoTitle": "Ébauches de clés et profils protégés 2026",
     "seoDescription": "Ébauches de clés, profils libres, protégés ou brevetés : ce qu'empêche la maîtrise des clés, l'expiration des brevets, et ce qu'exige un organigramme.",
     "body": [
@@ -2195,7 +2195,7 @@
     ],
     "sourceHash": {
       "title": "c110f8c181d2",
-      "summary": "a2cf40fea24b",
+      "summary": "a5f1437eea8d",
       "seoTitle": "98660cb7cd4d",
       "seoDescription": "4dd4ca2743a6",
       "body": "7190ece6cbaa",
@@ -2280,7 +2280,7 @@
   },
   "master-key-hierarchy-planning-2026": {
     "title": "Concevoir un organigramme de passe 2026 : les niveaux, le vrai coût des croisements, et comment laisser de la place pour le bâtiment que vous aurez",
-    "summary": "Un organigramme de passe se conçoit une fois et se vit pendant vingt ans, et presque tous les systèmes qui manquent de place en manquent pour les deux mêmes raisons : trop de niveaux pour le bâtiment, et des croisements accordés porte par porte, comme des faveurs. Cette page présente la hiérarchie, explique pourquoi chaque niveau de passe et chaque croisement consomment une réserve limitée, et donne les questions auxquelles répondre avant de tailler le moindre cylindre.",
+    "summary": "Un organigramme de passe compte jusqu'à 5 niveaux (GGMK, GMK, MK, SMK et la clé individuelle), et la plupart des bâtiments en ont besoin de 3 au plus. Chaque niveau en trop et chaque porte en passe croisé consomment des combinaisons dans un réservoir fini, et c'est pourquoi les systèmes manquent de place. Cette page présente la hiérarchie, les 5 questions à régler avant de tailler un cylindre, les organisations verticale et horizontale, et comment réserver de la place pour que le bâtiment grandisse.",
     "seoTitle": "Organigramme de passe 2026 : niveaux et capacité",
     "seoDescription": "Concevoir un organigramme de passe : les niveaux, pourquoi les croisements consomment la capacité, la réserve d'extension et les clés de chantier.",
     "body": [
@@ -2363,7 +2363,7 @@
     ],
     "sourceHash": {
       "title": "d3ae9dfc3161",
-      "summary": "888492d769fe",
+      "summary": "8ff891659310",
       "seoTitle": "a7b6bfdeee17",
       "seoDescription": "2e5d713090d8",
       "body": "eb7628a2bfc8",
@@ -2772,7 +2772,7 @@
   },
   "samples-and-incoming-inspection-2026": {
     "title": "Échantillons et contrôle à réception 2026 : l'échantillon de référence, ce qu'il faut mesurer, et ce qu'un échantillon ne peut pas vous dire",
-    "summary": "Un échantillon est l'endroit le moins coûteux pour découvrir qu'un fournisseur a compris quelque chose autrement que vous ne l'entendiez. Cette page présente les trois types d'échantillons et celui qu'il faut demander, la procédure de l'échantillon de référence qui rend un échantillon opposable au lieu de décoratif, ce qu'il faut mesurer précisément à son arrivée, les trois propriétés qu'un échantillon ne peut réellement pas démontrer, et comment rédiger un référentiel de contrôle qu'un inspecteur tiers peut appliquer sans vous appeler.",
+    "summary": "Demandez un échantillon de présérie dès que quelque chose diffère du catalogue, et faites-en un échantillon de référence : deux pièces identiques signées et datées par les deux parties, une scellée chez chacune, avec un numéro de référence sur le bon de commande. Un échantillon ne peut montrer ni la régularité du lot, ni la résistance à la corrosion, ni la tenue à 200 000 cycles ; il faut pour cela un plan d'échantillonnage et des rapports d'essai. Cette page liste aussi ce qu'il faut mesurer sur une serrure, une béquille, une paumelle, un ferme-porte et une ferrure de verre, et comment rédiger une norme d'inspection qu'un inspecteur tiers peut appliquer.",
     "seoTitle": "Échantillons et contrôle à réception 2026",
     "seoDescription": "Bien utiliser les échantillons de quincaillerie : les trois types, l'échantillon de référence, quoi mesurer, et les trois choses qu'il ne prouve pas.",
     "body": [
@@ -2844,7 +2844,7 @@
     ],
     "sourceHash": {
       "title": "d1274e4d83a8",
-      "summary": "23dcdf73ca48",
+      "summary": "3caddd1d93da",
       "seoTitle": "cdcd2908faf9",
       "seoDescription": "1a9528daded8",
       "body": "a95e9ccc502a",
@@ -3105,7 +3105,7 @@
   },
   "strike-plates-and-keeps-2026": {
     "title": "Gâches 2026 : gâche ANSI ou gâche en T, longueur de bec, et la cote que personne ne mesure",
-    "summary": "La gâche est le composant le moins cher d'une baie, et celui qui décide si la serrure se verrouillera jamais correctement. Cette page présente les deux dimensions standard nord-américaines, les conventions européennes, comment déterminer la longueur de bec au lieu de la deviner, la différence entre angles vifs et angles arrondis, et pourquoi un renforcement de sécurité qui s'arrête à la serrure n'a rien renforcé.",
+    "summary": "L'Amérique du Nord a deux dimensions standard de gâche : la gâche ANSI, 4-7/8 × 1-1/4 po (environ 124 × 32 mm), pour les huisseries métalliques commerciales, et la gâche en T, 2-3/4 × 1-1/8 po (environ 70 × 29 mm), pour les huisseries bois, et l'une ne remplace pas l'autre sans reprendre l'huisserie. Cette page traite aussi des gâches européennes, du calcul de la longueur de lèvre, des angles vifs ou arrondis, et de la raison pour laquelle un renforcement de sécurité qui s'arrête à la serrure n'a rien renforcé.",
     "seoTitle": "Gâches 2026 : gâche ANSI, gâche en T, bec",
     "seoDescription": "Dimensions standard de gâche, dont la gâche ANSI de 4-7/8 pouces et la gâche en T de 2-3/4 pouces, calcul du bec, angles vifs ou arrondis, gâche à boîtier.",
     "body": [
@@ -3172,7 +3172,7 @@
     ],
     "sourceHash": {
       "title": "7b937423e46b",
-      "summary": "52c02def8414",
+      "summary": "0187198c22fe",
       "seoTitle": "dfdd64d19878",
       "seoDescription": "d5914b5d0894",
       "body": "0152052c86da",
@@ -3354,7 +3354,7 @@
   },
   "universal-vs-handed-hardware-2026": {
     "title": "Universel ou à main 2026 : quelle quincaillerie est réversible, laquelle ne l'est pas, et les quatre produits qui piègent les projets",
-    "summary": "« Universel » veut dire trois choses différentes dans un catalogue de quincaillerie, et une seule signifie que vous pouvez cesser de penser à la main. Cette page distingue le sans main, le réversible sur chantier et le à main d'usine, nomme les quatre produits qui ont une main quand on suppose le contraire, explique ce que fait réellement l'inversion dans une serrure, et donne la ligne à mettre sur une commande pour que la question ne se pose jamais.",
+    "summary": "« Universel » recouvre trois choses différentes : sans main (aucune main, comme la plupart des paumelles, des béquilles simples et des cylindres), réversible sur chantier (livré dans une main et retourné sur place, comme la plupart des pênes cylindriques, tubulaires et à mortaiser) et à main d'usine (une seule main). Sur une grosse commande, demandez le produit livré déjà retourné à la bonne main et indiquez la répartition, par exemple « 24 LH, 16 RH ». Cette page nomme aussi les quatre produits qui ont une main alors qu'on suppose le contraire.",
     "seoTitle": "Quincaillerie universelle ou à main 2026",
     "seoDescription": "Quelle quincaillerie est sans main, réversible sur chantier ou à main d'usine, les quatre produits qui piègent les projets, et quoi écrire sur la commande.",
     "body": [
@@ -3438,7 +3438,7 @@
     ],
     "sourceHash": {
       "title": "5d09c0e0357e",
-      "summary": "1e9f4449bd0a",
+      "summary": "e5bc5547d4db",
       "seoTitle": "bc9b64cd0513",
       "seoDescription": "b8375842134b",
       "body": "549da18577e0",

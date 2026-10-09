@@ -36,7 +36,9 @@ const lines = [
   "生成：`node scripts/audit-article-openings.mjs --write`（不要手改）。",
   `口径：${rows.length} 篇 HYDE guides + news（英文）；看摘要和正文前两段（跳过小标题）里有没有数字、尺寸、标准号或型号。`,
   "",
-  `前两段没有任何具体锚点：**${weak.length} 篇**；其中摘要也没有：${weak.filter((r) => !r.summaryHas).length} 篇。`,
+  // The summary renders as the first paragraph under the H1 (NewsDetail.tsx), so a page whose
+  // summary carries an anchor already opens with an answer; the "摘要也没有" rows are the real gap.
+  `页面开头（摘要 = H1 下第一段，加正文前两段）都没有具体锚点：**${weak.filter((r) => !r.summaryHas).length} 篇**，要改的是这些。正文前两段没有、但摘要有：${weak.filter((r) => r.summaryHas).length} 篇，页面已经先给了答案。`,
   "",
   "| 页面 | 摘要有锚点 | 第一段开头 |",
   "|---|---|---|",

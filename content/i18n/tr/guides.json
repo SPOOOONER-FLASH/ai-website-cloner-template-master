@@ -2122,7 +2122,7 @@
   },
   "key-blanks-and-restricted-profiles-2026": {
     "title": "Anahtar Taslakları ve Kısıtlı Profiller 2026: Açık, Kısıtlı ve Patentli Anahtar Yolları ve Anahtar Kontrolünün Gerçekte Ne Sağladığı",
-    "summary": "Kilide giren bir anahtar ile kilidi çeviren bir anahtar iki ayrı başarıdır ve aradaki fark anahtar yoludur. Bu sayfa taslağın ve profilin ne olduğunu açıklıyor, açık, kısıtlı ve patentli anahtar yollarını birbirinden ayırıyor, her birinin neyi durdurup neyi durdurmadığını net biçimde ortaya koyuyor, bir patentin sona ermesinin yıllar önce şartnamesi yazılmış bir binanın güvenliğini neden değiştirdiğini açıklıyor ve bir master anahtar sistemi kesilmeden önce alıcının neye karar vermesi gerektiğini listeliyor.",
+    "summary": "Bir anahtar yolu açık, kısıtlı ya da patentlidir. Açık taslaklar her yerde satılır ve bir kopya 2 dakika sürer; kısıtlı taslaklar yalnızca yetkili bayilere ulaşır, bu sözleşmeye dayalı bir denetimdir; patentli taslaklar patentin süresi dolunca biten yasal bir tekeldir, bu yüzden yıllar önce belirlenmiş bir sistem artık korunmuyor olabilir. Üçünden hiçbiri silindiri maymuncukla açmayı ya da delmeyi zorlaştırmaz. Bu sayfa ayrıca bir master anahtar sistemi kesilmeden önce karar verilmesi gerekenleri listeler.",
     "seoTitle": "Anahtar Taslakları ve Kısıtlı Profiller 2026",
     "seoDescription": "Anahtar taslakları, profiller; açık, kısıtlı ve patentli anahtar yolları, anahtar kontrolünün durdurdukları, patent süresi ve master anahtar kararları.",
     "body": [
@@ -2195,7 +2195,7 @@
     ],
     "sourceHash": {
       "title": "c110f8c181d2",
-      "summary": "a2cf40fea24b",
+      "summary": "a5f1437eea8d",
       "seoTitle": "98660cb7cd4d",
       "seoDescription": "4dd4ca2743a6",
       "body": "7190ece6cbaa",
@@ -2280,7 +2280,7 @@
   },
   "master-key-hierarchy-planning-2026": {
     "title": "Master Anahtar Hiyerarşisi Planlama 2026: Seviyeler, Çapraz Anahtarlamanın Gerçek Maliyeti ve Yarınki Binanız İçin Nasıl Pay Bırakılır",
-    "summary": "Bir master anahtar sistemi bir kez tasarlanır ve yirmi yıl boyunca onunla yaşanır; yeri tükenen neredeyse her sistem aynı iki nedenle tükenir: bina için fazla seviye ve kapı kapı iyilik olarak verilen çapraz anahtarlama. Bu sayfa hiyerarşiyi ortaya koyuyor, her master seviyesinin ve her çapraz anahtarın neden sınırlı bir havuzdan kapasite tükettiğini açıklıyor ve tek bir silindir kesilmeden önce cevaplanması gereken soruları veriyor.",
+    "summary": "Bir master anahtar sistemi en fazla 5 seviyeden oluşur (GGMK, GMK, MK, SMK ve tekil anahtar) ve çoğu binanın en fazla 3 seviyeye ihtiyacı vardır. Her fazla seviye ve her çapraz anahtarlı kapı sınırlı bir kombinasyon havuzundan harcar; sistemlerin yerinin tükenmesinin nedeni budur. Bu sayfa hiyerarşiyi, bir silindir kesilmeden önce yanıtlanması gereken 5 soruyu, dikey ve yatay tasarımları ve binanın büyümesi için nasıl yer ayrılacağını ele alır.",
     "seoTitle": "Master Anahtar Hiyerarşisi 2026: Seviyeler ve Kapasite",
     "seoDescription": "Master anahtar hiyerarşisi planlama: seviyeler, çapraz anahtarlamanın kapasiteyi tüketmesi, genişleme payı, şantiye anahtarı ve kesim öncesi kararlar.",
     "body": [
@@ -2363,7 +2363,7 @@
     ],
     "sourceHash": {
       "title": "d3ae9dfc3161",
-      "summary": "888492d769fe",
+      "summary": "8ff891659310",
       "seoTitle": "a7b6bfdeee17",
       "seoDescription": "2e5d713090d8",
       "body": "eb7628a2bfc8",
@@ -2772,7 +2772,7 @@
   },
   "samples-and-incoming-inspection-2026": {
     "title": "Numuneler ve Giriş Kontrolü 2026: Altın Numune, Neyin Ölçüleceği ve Bir Numunenin Size Söyleyemeyecekleri",
-    "summary": "Numune, bir tedarikçinin bir şeyi sizin kastettiğinizden farklı anladığını keşfetmenin en ucuz yeridir. Bu sayfa üç numune türünü ve hangisinin isteneceğini, bir numuneyi süs olmaktan çıkarıp bağlayıcı kılan altın numune prosedürünü, bir numune geldiğinde tam olarak neyin ölçüleceğini, bir numunenin gerçekten gösteremeyeceği üç özelliği ve bağımsız bir kontrolörün sizi aramadan uygulayabileceği bir kontrol standardının nasıl yazılacağını ortaya koyuyor.",
+    "summary": "Katalogdan herhangi bir farkı olan her şey için üretim öncesi numune isteyin ve onu altın numuneye dönüştürün: iki tarafça imzalanıp tarihlenen iki özdeş parça, her tarafta biri mühürlü, satın alma siparişinde bir referans numarasıyla. Bir numune parti tutarlılığını, korozyon direncini ya da 200.000 çevrimlik ömrü gösteremez; bunlar için bir numune alma planı ve test raporları gerekir. Bu sayfa ayrıca kilit, kol, menteşe, kapı kapatıcı ve cam donanımında neyin ölçüleceğini ve üçüncü taraf bir denetçinin uygulayabileceği bir muayene standardının nasıl yazılacağını listeler.",
     "seoTitle": "Numuneler ve Giriş Kontrolü 2026: Altın Numune",
     "seoDescription": "Donanım numuneleri doğru nasıl kullanılır: üç numune türü, altın numune prosedürü, varışta neyin ölçüleceği ve bir numunenin gösteremeyeceği üç şey.",
     "body": [
@@ -2844,7 +2844,7 @@
     ],
     "sourceHash": {
       "title": "d1274e4d83a8",
-      "summary": "23dcdf73ca48",
+      "summary": "3caddd1d93da",
       "seoTitle": "cdcd2908faf9",
       "seoDescription": "1a9528daded8",
       "body": "a95e9ccc502a",
@@ -3105,7 +3105,7 @@
   },
   "strike-plates-and-keeps-2026": {
     "title": "Karşılıklar 2026: ANSI Karşılık ile T Karşılık, Dudak Boyu ve Kimsenin Ölçmediği Ölçü",
-    "summary": "Karşılık, bir kapı açıklığının en ucuz bileşenidir ve kilidin hiç düzgün kilitlenip kilitlenmeyeceğine karar veren bileşendir. Bu sayfa iki standart Kuzey Amerika karşılık ölçüsünü, Avrupa karşılık geleneklerini, dudak boyunun tahmin etmek yerine nasıl hesaplanacağını, düz ve radyuslu köşeler arasındaki farkı ve kilitte duran bir güvenlik yükseltmesinin neden hiçbir şeyi yükseltmediğini ortaya koyuyor.",
+    "summary": "Kuzey Amerika'da iki standart karşılık ölçüsü vardır: ticari çelik kasalar için ANSI karşılığı, 4-7/8 × 1-1/4 inç (yaklaşık 124 × 32 mm), ve ahşap kasalar için T karşılığı, 2-3/4 × 1-1/8 inç (yaklaşık 70 × 29 mm); kasa yeniden işlenmeden biri diğerinin yerine geçmez. Bu sayfa ayrıca Avrupa karşılıklarını, dudak boyunun nasıl hesaplanacağını, keskin ve yuvarlak köşelerin farkını ve kilitte duran bir güvenlik iyileştirmesinin neden hiçbir şeyi iyileştirmediğini ele alır.",
     "seoTitle": "Karşılıklar 2026: ANSI Karşılık, T Karşılık, Dudak Boyu",
     "seoDescription": "4-7/8 inç ANSI ve 2-3/4 inç T karşılık dahil standart karşılık ölçüleri, dudak boyu hesabı, düz ve radyuslu köşeler, kutulu karşılık ve toz kutusu.",
     "body": [
@@ -3172,7 +3172,7 @@
     ],
     "sourceHash": {
       "title": "7b937423e46b",
-      "summary": "52c02def8414",
+      "summary": "0187198c22fe",
       "seoTitle": "dfdd64d19878",
       "seoDescription": "d5914b5d0894",
       "body": "0152052c86da",
@@ -3354,7 +3354,7 @@
   },
   "universal-vs-handed-hardware-2026": {
     "title": "Yönsüz mü Yönlü mü 2026: Hangi Donanım Ters Çevrilebilir, Hangisi Çevrilemez ve Projeleri Zora Sokan Dört Ürün",
-    "summary": "\"Üniversal\" bir donanım kataloğunda üç farklı anlama gelir ve bunlardan yalnızca biri yön konusunu düşünmeyi bırakabileceğiniz anlamına gelir. Bu sayfa yönsüzü, şantiyede ters çevrilebilirden ve fabrikada yönlendirilmişten ayırıyor, insanların yönsüz sandığı hâlde yönlü olan dört ürünü adlandırıyor, ters çevirmenin bir kilidin içinde gerçekte ne yaptığını açıklıyor ve sorunun hiç gelmemesi için siparişe yazılacak satırı veriyor.",
+    "summary": "\"Üniversal\" üç farklı şeyi kapsar: yönsüz (hiç yönü yoktur; çoğu menteşe, düz kol ve silindir gibi), şantiyede çevrilebilir (tek yönde gönderilir ve yerinde çevrilir; çoğu silindirik, tüp ve gömme kilit dili gibi) ve fabrikada yönlü (tek yön). Büyük bir siparişte ürünün yöne çevrilmiş olarak gönderilmesini isteyin ve dağılımı belirtin, örneğin \"24 LH, 16 RH\". Bu sayfa ayrıca insanların yönsüz sandığı ama yönlü olan dört ürünü adlandırır.",
     "seoTitle": "Yönsüz ve Yönlü Donanım 2026: Ne Ters Çevrilebilir",
     "seoDescription": "Hangi kapı donanımı yönsüz, hangisi şantiyede ters çevrilebilir, hangisi fabrikada yönlü; projeleri zora sokan dört ürün ve siparişe ne yazılmalı.",
     "body": [
@@ -3438,7 +3438,7 @@
     ],
     "sourceHash": {
       "title": "5d09c0e0357e",
-      "summary": "1e9f4449bd0a",
+      "summary": "e5bc5547d4db",
       "seoTitle": "bc9b64cd0513",
       "seoDescription": "b8375842134b",
       "body": "549da18577e0",
