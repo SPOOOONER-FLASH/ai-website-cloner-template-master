@@ -1,6 +1,6 @@
 # HYDE 桌面文件夹目录说明
 
-生成：`node scripts/organize-desktop-hyde.mjs`，2026-10-09 更新。以后新出的 Word 会自动放进对应文件夹。
+生成：`node scripts/organize-desktop-hyde.mjs`，2026-10-10 更新。以后新出的 Word 会自动放进对应文件夹。
 
 | 文件夹 | 放什么 | 你什么时候看 |
 |---|---|---|

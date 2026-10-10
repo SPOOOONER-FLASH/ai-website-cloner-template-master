@@ -98,6 +98,13 @@ for (const [source] of rows) {
 }
 out.sort((a, b) => a.host.localeCompare(b.host) || (a.target ? 0 : 1) - (b.target ? 0 : 1));
 
+/** "…/mortise-lock-body-…-lc8525-ps-i383219.html" → "mortise lock body … lc8525 ps". */
+function postTitle(url) {
+  const u = new URL(url);
+  const last = u.pathname.split("/").filter(Boolean).pop() ?? u.hostname;
+  return decodeURIComponent(last).replace(/\.html$/, "").replace(/-i\d+$/, "").replace(/-\d{5,}$/, "").replace(/-/g, " ");
+}
+
 const md = [
   "# 目录网站帖子 → 改链到产品页（深链）对照表",
   "",
@@ -109,9 +116,23 @@ const md = [
   "|---|---|---|",
   ...Object.entries(bySite).map(([h, s]) => `| ${h} | ${s.total} | ${s.matched} |`),
   "",
-  "| 网站 | 型号 | 帖子 | 把网址改成 |",
-  "|---|---|---|---|",
-  ...out.map((r) => `| ${r.host} | ${r.model || "—"} | ${r.source} | ${r.target || "（对不上，保持首页）"} |`),
+  // One numbered checklist per site, for a colleague who is not technical (client, 2026-10-10):
+  // a readable post title to find it by, the address to paste, and a column to tick.
+  ...Object.keys(bySite).sort((a, b) => bySite[b].matched - bySite[a].matched).flatMap((host) => {
+    const todo = out.filter((r) => r.host === host && r.target);
+    if (!todo.length) return [];
+    return [
+      `## ${host}：${todo.length} 条要改`,
+      "",
+      "| 序号 | 型号 | 帖子标题（在网站后台按这个找） | 把链接改成这个网址 | 做完打 ✓ |",
+      "|---|---|---|---|---|",
+      ...todo.map((r, i) => `| ${i + 1} | ${r.model} | ${postTitle(r.source)} | ${r.target.split(" 或 ")[0]} |  |`),
+      "",
+    ];
+  }),
+  "## 对不上型号的帖子（不用改，保持链接首页）",
+  "",
+  ...out.filter((r) => !r.target).map((r) => `- ${r.host}：${postTitle(r.source)}`),
   "",
 ].join("\n");
 fs.mkdirSync(path.dirname(outPath), { recursive: true });

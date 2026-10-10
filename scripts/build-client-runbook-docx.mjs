@@ -40,6 +40,9 @@ const argOut = process.argv.indexOf("--out");
 const OUT_DIR =
   argOut !== -1 ? process.argv[argOut + 1] : join(DESKTOP_HYDE, folderFor(`${basename(SOURCE, ".md")}.docx`));
 const OUT_FILE = join(OUT_DIR, `${basename(SOURCE, ".md")}.docx`);
+// --large: 14 pt body for hand-offs read by colleagues who are not developers (client, 2026-10-10).
+const LARGE = process.argv.includes("--large");
+const CODE_SIZE = LARGE ? 24 : 18;
 
 const HEADINGS = [
   HeadingLevel.HEADING_1,
@@ -50,7 +53,7 @@ const HEADINGS = [
 
 /** 行内 **粗体** 和 `代码`。故意只支持这两种 —— runbook 里就用了这些。 */
 function inline(text, { code = false } = {}) {
-  if (code) return [new TextRun({ text, font: "Consolas", size: 18 })];
+  if (code) return [new TextRun({ text, font: "Consolas", size: CODE_SIZE })];
   const runs = [];
   const re = /(\*\*[^*]+\*\*|`[^`]+`)/g;
   let last = 0;
@@ -58,7 +61,7 @@ function inline(text, { code = false } = {}) {
     if (m.index > last) runs.push(new TextRun(text.slice(last, m.index)));
     const token = m[0];
     if (token.startsWith("**")) runs.push(new TextRun({ text: token.slice(2, -2), bold: true }));
-    else runs.push(new TextRun({ text: token.slice(1, -1), font: "Consolas", size: 18 }));
+    else runs.push(new TextRun({ text: token.slice(1, -1), font: "Consolas", size: CODE_SIZE }));
     last = m.index + token.length;
   }
   if (last < text.length) runs.push(new TextRun(text.slice(last)));
@@ -187,6 +190,7 @@ if (!existsSync(SOURCE)) {
 
 const markdown = readFileSync(SOURCE, "utf8");
 const doc = new Document({
+  ...(LARGE ? { styles: { default: { document: { run: { size: 28 } } } } } : {}),
   numbering: {
     config: [
       {
