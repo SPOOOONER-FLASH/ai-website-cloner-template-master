@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
-        alt: "Estudio representativo de puertas cortafuego comerciales con barras antipánico visibles",
+        width: 1800,
+        height: 900,
+        alt: "Herrajes antipánico 306-D para puerta de dos hojas en un espacio arquitectónico claro",
       },
     ],
   },

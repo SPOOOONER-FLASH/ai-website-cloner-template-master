@@ -158,6 +158,7 @@ function writeValidStagingFixture(root, mutate = () => {}) {
     robots: "User-Agent: *\nDisallow: /\n",
     sitemap: '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',
     redirects: [],
+    adminBrainNoindex: true,
   };
 
   mutate(state);
@@ -166,6 +167,7 @@ function writeValidStagingFixture(root, mutate = () => {}) {
   writeFile(root, "products/lock/index.html", publicDocument(state.product));
   writeFile(root, "news/door-hardware-guide/index.html", publicDocument(state.news));
   writeFile(root, "admin/index.html", '<!doctype html><html lang="zh-CN"><head><meta name="robots" content="noindex,nofollow"></head><body>CMS</body></html>');
+  writeFile(root, "admin/brain/index.html", `<!doctype html><html lang="en"><head>${state.adminBrainNoindex ? '<meta name="robots" content="noindex,nofollow">' : ""}</head><body>Internal sign-in</body></html>`);
   writeFile(root, "status/index.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"></head><body><h1>Status</h1></body></html>');
   writeFile(root, "404.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"></head><body><h1>404</h1></body></html>');
   for (const redirect of state.redirects) {
@@ -436,6 +438,23 @@ test("accepts an indexable export only when robots, public pages, and sitemap ag
   withIndexableFixture(() => {}, (result) => {
     assert.deepEqual(result.semanticIssues, []);
     assert.equal(result.summary.releaseState, "indexable");
+  });
+});
+
+test("treats a noindex admin child page as non-public", () => {
+  withIndexableFixture(() => {}, (result) => {
+    assert.equal(result.pages.find((page) => page.route === "/admin/brain/")?.public, false);
+    assert.deepEqual(result.semanticIssues, []);
+  });
+});
+
+test("reports an admin child page whose noindex is missing", () => {
+  withIndexableFixture((state) => {
+    state.adminBrainNoindex = false;
+  }, (result) => {
+    assert.ok(result.semanticIssues.some((issue) => (
+      issue.route === "/admin/brain/" && issue.code === "nonpublic-page-indexable"
+    )));
   });
 });
 

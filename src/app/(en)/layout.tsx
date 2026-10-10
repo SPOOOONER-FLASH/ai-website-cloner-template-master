@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
-        alt: "Representative commercial fire-exit doors with visible panic push bars",
+        width: 1800,
+        height: 900,
+        alt: "306-D double-door exit hardware in a pale architectural setting",
       },
     ],
   },

@@ -42,9 +42,9 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "2400 / 943",
+        ratio: "1800 / 900",
         src: "/images/editorial/home-panic-exit-bars.webp",
-        label: "Aplicação 309-D em porta de duas folhas: barra antipânico com trinco lateral à esquerda e dispositivo de varões verticais com travas superior e inferior visíveis à direita",
+        label: "Ferragens antipânico 306-D em porta de duas folhas, com barras e hastes verticais superiores e inferiores visíveis, em um ambiente arquitetônico claro",
       },
       title: "Barras antipânico",
       body: "Um empurrão e a porta abre. Barras antipânico, guarnições externas e caixas de fechadura para portas de saída de emergência e corta-fogo, pensadas como um conjunto.",
