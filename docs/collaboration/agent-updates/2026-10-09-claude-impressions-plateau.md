@@ -15,3 +15,4 @@
 - **追加（#144 漏英文）**：collection-spec-range 标题对所有非英语言走 specLabels（加 de 测试）；HardwareTerms 词条名回退 specLabels → UI；七语 glossary 补 OEM & ODM，重生成 i18n-client。顺手：desktop-hyde.mjs 的 catalogue 改 catalog(?:ue)? 过美式拼写测试。npm test 458。
 - **追加（#145 LCP）**：线上实测（Slow 4G + CPU 4×，1440 宽）/products/ 2.25 s、/product-finder/ 1.0 s（CLS 0.05）、/company/ 0.49 s；周报 3.6 s 是 #131 之前的 Clarity 数据。等下一期 Clarity 确认。
 - **追加（#146 描述）**：161 条改写（工作流写 + 核对，核对改正 59 条），新测试 src/data/article-description-length.test.ts（≤ 160，E1 豁免到 10-14）。npm test 461。
+- **追加（r33 上线核对）**：r33 由别的会话发布（bd1e79eb46c，构建自 cd9affff11c），已含本会话全部提交；我从 0e07bfcd372 的重建停掉（未推送）。10-10 ?nc= 实测 #144 #146 #149 AR-4 均生效；AR-4 旧网址 301 已生效，手动操作文档移入 archive。seo-audit /admin/ 前缀豁免与别的会话撞车，取对方版本。
