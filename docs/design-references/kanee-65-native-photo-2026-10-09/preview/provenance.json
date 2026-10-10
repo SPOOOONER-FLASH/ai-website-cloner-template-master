@@ -1,0 +1,40 @@
+{
+  "model": "65 SNKT",
+  "view": 3,
+  "status": "HELD internal mask experiment; do not deliver as usable client preview",
+  "holdReason": "Independent QA after correction: added stippled thumb fringe and pale cam-foot bevel absent from source",
+  "sourceSha256": "aa8f55ccb15dd7d4179d7572e25cf667feae51dc00777aefd529f1245c6f0b0a",
+  "crop": {
+    "left": 0,
+    "top": 160,
+    "width": 1000,
+    "height": 740
+  },
+  "outline": "M155 310 C150 299 153 283 161 270 C182 244 226 219 267 205 C287 200 317 191 336 197 C369 207 394 231 411 254 C419 264 423 273 424 282 L439 290 L848 578 C860 587 867 602 870 621 L872 633 C883 636 894 640 899 648 C904 659 900 675 898 685 C893 707 881 730 864 741 C849 753 827 757 806 749 L623 610 L606 624 L588 642 L581 639 L537 603 C534 598 532 593 532 589 C532 579 541 566 555 557 L559 557 L402 430 C398 424 393 418 390 414 C381 423 371 424 354 419 C316 415 287 406 262 394 C242 384 214 370 200 355 L163 322 Z",
+  "derivedAlphaNotNative": true,
+  "opticalEdgeDecontamination": {
+    "pixels": 251,
+    "method": "Reviewed thumb/cam white-paper optical perimeter only, local original interior RGB reference and white-matte inversion; not unchanged boundary RGB",
+    "independentQa": "FAIL contour; opaque interior fidelity is insufficient"
+  },
+  "supplementaryInsetExclusion": {
+    "circle": [
+      226,
+      534,
+      192
+    ],
+    "pixels": 115781,
+    "productOverlap": 0
+  },
+  "backgroundSha256": "70bfa5c5beab456f2598672e71f7bbc442c921c5f5c3300fddec7104b1114037",
+  "opaqueRgbPixelsCompared": 133305,
+  "opaqueRgbDifferences": 0,
+  "productResize": false,
+  "productRotation": false,
+  "productRegeneration": false,
+  "shadow": "Original ground luminance transmission, no fabricated cast",
+  "masterSha256": "bbc525290877bf9957882896b44cd45033c74f1bf5c74f1b68e8321bc67164e6",
+  "pinCountConfirmed": false,
+  "factoryFinishApproval": "pending",
+  "clientApproval": "not requested; held"
+}

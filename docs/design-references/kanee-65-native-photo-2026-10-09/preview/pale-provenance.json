@@ -1,0 +1,36 @@
+{
+  "model": "65 SNKT",
+  "view": 3,
+  "source": "public/images/products/65-snkt-lock-cylinder-3.webp",
+  "sourceSha256": "aa8f55ccb15dd7d4179d7572e25cf667feae51dc00777aefd529f1245c6f0b0a",
+  "crop": {
+    "left": 0,
+    "top": 160,
+    "width": 1000,
+    "height": 740
+  },
+  "uniformRgbGain": 0.94,
+  "supplementaryInsetExclusion": {
+    "circle": [
+      226,
+      534,
+      192
+    ],
+    "pixels": 115781,
+    "mainProductOverlap": 0,
+    "reason": "Separate blue-bordered supplementary view, not a photographed component of the main still-life"
+  },
+  "nativeMainPhotoPixelsRetained": 624219,
+  "coordinateMapping": "source(x,y+160), original main-photo RGB*0.94 rounded, alpha unchanged; supplementary inset only replaced with native white field before uniform grade",
+  "productMaskUsed": false,
+  "productResize": false,
+  "productRotation": false,
+  "productRegeneration": false,
+  "replacementShadow": false,
+  "pngRoundTripExact": true,
+  "masterSha256": "bf6abe923d46120c12a0e21da1c68e80e69ba8c3b7d797950405a5fcc064bdd0",
+  "factoryApproval": "pending",
+  "pinCountConfirmed": false,
+  "clientApproval": "pending",
+  "aestheticLimit": "Conservative native-photo catalogue treatment, not KANEE-level photographic refinement"
+}

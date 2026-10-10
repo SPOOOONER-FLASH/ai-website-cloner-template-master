@@ -1,0 +1,24 @@
+{
+  "reviewer": "Independent case_exit_source_qa plus root source/output inspection",
+  "sourceModelGate": "Repository gallery identity and cross-view outline agree; current factory version, exact finish and internal pin count unconfirmed",
+  "pale": {
+    "file": "preview/65-snkt-pale-native-photo.png",
+    "sourceFidelityGate": "PASS stated native crop/gain recipe",
+    "independentNonInsetPixelsCompared": 624219,
+    "differencesFromStatedRecipe": 0,
+    "completeComponents": true,
+    "newOutlineArtifact": false,
+    "newInsetRemovalSeam": false,
+    "sourceGroundingRetained": true,
+    "aesthetic": "Usable modest catalogue preview; inherited softness and flat lighting, below KANEE-level photographic refinement",
+    "clientApproval": "pending"
+  },
+  "charcoal": {
+    "file": "preview/65-snkt-charcoal-trial.png",
+    "status": "HELD INTERNAL ONLY",
+    "rejectedAfterOpticalEdgeCorrection": true,
+    "reason": "Added bright stippled thumb perimeter and pale cam-foot bevel absent from real source",
+    "opaqueInteriorEqualityDoesNotValidateContour": true,
+    "notCountedAsAccepted": true
+  }
+}

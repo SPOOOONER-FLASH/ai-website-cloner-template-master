@@ -1,0 +1,47 @@
+{
+  "model": "LC17",
+  "view": 3,
+  "clientApproval": "pending",
+  "factoryVersionApproval": "pending",
+  "source": {
+    "path": "docs/design-references/kanee-lc17-native-photo-2026-10-09/sources/lc17-view-3.webp",
+    "repositoryOriginal": "public/images/products/lc17-lock-case-3.webp",
+    "sha256": "2dbb3cee9f1b486bf7cc280e4f6da5348deb2a8723e2bbfc9d76fe5c587a9af3",
+    "width": 1000,
+    "height": 1000
+  },
+  "recipe": {
+    "crop": {
+      "left": 0,
+      "top": 150,
+      "width": 1000,
+      "height": 850
+    },
+    "uniformRgbGain": 0.94,
+    "originalComponentPositions": true,
+    "resize": false,
+    "geometryEdits": false,
+    "generatedPixels": false,
+    "replacementBackground": false,
+    "replacementShadow": false,
+    "colourSpace": "sRGB",
+    "webpQuality": 94
+  },
+  "qa": {
+    "verifiedRgbaChannels": 3400000,
+    "retainedPixels": 850000,
+    "coordinateMapping": "output(x,y) = source(x,y+150), RGB round(source*0.94), alpha unchanged",
+    "pngRoundTripExact": true,
+    "webpIsLossyNotPixelProof": true
+  },
+  "outputs": {
+    "lc17-pale-native-photo.png": "0df20f151285df44f8de88a3949952fdb668c56e7afcbd8ab6f17e101f45fb6d",
+    "lc17-pale-native-photo.webp": "2e3008e47f35c284b7b7e2e1bd4ff67a29393c85e3aba223baa2fcd5aad06ce9"
+  },
+  "limitations": [
+    "Photo finishing, not a new viewpoint or 3D render",
+    "Photographed finish code unconfirmed",
+    "Cylinder model, internal pin count and sold-kit composition unconfirmed; keep the photographed accessories without asserting a sold set",
+    "Repository model mapping is not current factory approval"
+  ]
+}
