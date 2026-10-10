@@ -373,7 +373,7 @@ export function ProductFinder({
               className="catalogue-page-enter mt-24 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 xl:grid-cols-3"
             >
               {current.items.map((product, i) => (
-                <ProductCard key={product.slug} product={product} priority={i < 3} />
+                <ProductCard key={product.slug} product={product} priority={i < 3} locale={locale} />
               ))}
             </div>
 
