@@ -1038,8 +1038,8 @@
   "door-hardware-hs-codes-2026": {
     "title": "Codes SH de la quincaillerie de porte 2026 : positions 8301 et 8302 décodées, et où s'arrêtent les six chiffres",
     "summary": "Presque tous les produits d'un catalogue de quincaillerie de porte se classent sous l'une de deux positions du SH : 8301 pour les serrures et les clés, 8302 pour les garnitures et ferrures. Cette page présente les sous-positions de chacune, nomme les quatre le plus souvent mal appliquées (ferme-portes, clés expédiées seules, parties, et ameublement contre bâtiment), et explique précisément où s'arrête le code convenu à l'échelle internationale et où commence celui de votre pays.",
-    "seoTitle": "Codes SH quincaillerie 2026 : 8301 et 8302",
-    "seoDescription": "Positions SH 8301 et 8302 pour serrures, clés, paumelles, ferme-portes et ferrures, une à une, et où le code national prend le relais.",
+    "seoTitle": "Code SH des serrures, poignées et charnières de porte : 8301 ou 8302",
+    "seoDescription": "Serrures de porte 8301.40, clés 8301.70, paumelles 8302.10, poignées 8302.41, ferme-portes 8302.60 : le code SH de chacun, et où commence le code national.",
     "body": [
       "Un importateur qui se trompe de classement ne le découvre généralement pas à la frontière. Il le découvre lors d'un contrôle, des années plus tard, avec une demande de rappel des droits sur tout ce qui a été expédié depuis. C'est pourquoi le sujet mérite dix minutes.",
       "La quincaillerie de porte relève presque entièrement de deux positions du Système harmonisé, et la frontière entre elles ne se déduit pas des produits eux-mêmes.",
@@ -1099,8 +1099,8 @@
     "sourceHash": {
       "title": "cf74dc5ec077",
       "summary": "d1308e879027",
-      "seoTitle": "610568188876",
-      "seoDescription": "a5a9713b5432",
+      "seoTitle": "f7e3ff065e8d",
+      "seoDescription": "0a824bb567ae",
       "body": "c7e7ebb45db2",
       "faq": "da176340d2f9"
     }
@@ -1108,8 +1108,8 @@
   "door-preparation-161-and-86-2026": {
     "title": "Préparation de porte 2026 : le perçage 161, la mortaise 86, et ce que garantit réellement « préparée pour »",
     "summary": "Une porte arrive sur chantier « préparée », et la compatibilité de la serrure se décide par des trous percés des semaines plus tôt dans une autre usine. Cette page présente les préparations standard pour serrures à perçage et serrures à mortaiser avec leurs cotes, explique la série ANSI/BHMA A115 qui les régit, et énumère les cinq informations qu'un bon de commande doit porter avant qu'un fabricant de portes puisse découper quoi que ce soit.",
-    "seoTitle": "Préparation de porte : perçage 161, mortaise 86, A115",
-    "seoDescription": "Préparations standard pour serrures à perçage et à mortaiser : perçage de face 2-1/8\", de chant 1\", mortaise 1-1/8\" × 8\", et ce que dit la commande.",
+    "seoTitle": "Perçage 161, mortaise 86 : dimensions de préparation de porte (A115)",
+    "seoDescription": "Préparation 161 : perçage de face 2-1/8\" (54mm), de chant 1\", axe 2-3/8\" ou 2-3/4\". Mortaise 86 : 1-1/8\" × 8\", et ce que doit préciser le bon de commande.",
     "body": [
       "Une porte est découpée avant l'arrivée de la quincaillerie. Ce seul fait gouverne tout ce qui suit, car il signifie que la prescription doit être complète au moment de la commande de la porte, et non au moment de celle de la serrure.",
       "Une porte mal découpée ne se rattrape pas. Un perçage décalé de 6mm ne peut pas être déplacé : la porte est bonne à jeter ou reçoit une plaque de recouvrement, et une plaque de recouvrement sur un bâtiment prescrit est une discussion que personne ne veut avoir.",
@@ -1177,8 +1177,8 @@
     "sourceHash": {
       "title": "59a3b6979e70",
       "summary": "5eafcc64706f",
-      "seoTitle": "be526a84b6d6",
-      "seoDescription": "7c491fc49985",
+      "seoTitle": "4884e6d6d520",
+      "seoDescription": "22e62e332881",
       "body": "4a7536befe8e",
       "faq": "9871377be00e"
     }
@@ -1805,7 +1805,7 @@
   "glass-door-thickness-and-cutouts-2026": {
     "title": "Quincaillerie pour portes en verre 2026 : plages d'épaisseur, cotes de découpe, et la seule étape irréversible",
     "summary": "Nos ferrures pour verre acceptent un verre de 8 à 14 mm, chaque modèle dans sa propre plage déclarée, et chaque trou et chaque découpe doivent être réalisés avant la trempe, car un verre trempé ne peut plus être percé. Cette page donne les plages d'épaisseur que nos ferrures acceptent réellement, explique la cote de jeu entre verres et le rayon d'angle d'une découpe, montre pourquoi tout perçage doit précéder la trempe et énumère ce qui doit figurer sur le plan d'atelier du verre avant la moindre commande.",
-    "seoTitle": "Portes en verre 2026 : épaisseurs, découpes, ordre",
+    "seoTitle": "Ferrures pour portes en verre 8–14 mm : découpes, ouverture de serrage",
     "seoDescription": "Quincaillerie pour verre : épaisseurs de 8 à 14 mm, ouverture de serrage, rayon d'angle des découpes, et pourquoi tout trou se perce avant la trempe.",
     "body": [
       "Il existe dans ce métier une phrase qui coûte plus cher que toute autre, prononcée par quelqu'un debout devant une porte en verre terminée, une ferrure à la main : « on ne peut pas simplement percer ? »",
@@ -1874,7 +1874,7 @@
     "sourceHash": {
       "title": "89f10092ae0a",
       "summary": "affdc8acfbea",
-      "seoTitle": "610f7accfef4",
+      "seoTitle": "55b40d5099f3",
       "seoDescription": "44eca3d24f18",
       "body": "703147a244fd",
       "faq": "9bf876e0f006"
