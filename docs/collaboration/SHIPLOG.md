@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 484 次提交
+最近 30 天 · 共 486 次提交
 
 ## 2026-10-09
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:43 | 中立 | r33 上线核对：#144 #146 #149 AR-4 线上生效；AR-4 旧网址 301 已生效，手动操作文档归档 | `56fde0b5c12` |
+| 23:41 | 中立 | AR-4 方块：悬停蒙版停在 40%（文字对比度达标），删掉未生效的 xl:text-h3 | `ca1764f62a6` |
 | 23:31 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `0324fffc1f7` |
 | 23:18 | 中立 | seo-audit：/admin/ 之下的页面都不算公开页 | `092933e4808` |
 | 03:06 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `d970454f5f3` |
