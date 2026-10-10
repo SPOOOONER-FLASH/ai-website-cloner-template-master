@@ -190,8 +190,6 @@ function parsePage(outDir, file) {
     file,
     route,
     html,
-    // Everything under /admin/ is robots-disallowed (checked below), not only /admin/ itself:
-    // /admin/brain/ (2026-10-09) failed r33 on canonical-count as if it were a public page.
     public: !NON_PUBLIC_ROUTES.has(route) && !route.startsWith("/admin/"),
     /*
       Deliberately withheld — see the `withheldPages` note. Only counts alongside an

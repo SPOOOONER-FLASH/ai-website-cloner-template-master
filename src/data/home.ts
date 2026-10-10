@@ -13,8 +13,9 @@ import type {
  *   - banner headlines from 大图文案.docx, verbatim
  *   - company copy from 公司英文简介.docx
  *   - product names from the client's asset pack
- *   - product and manufacturing imagery is first-party; the first carousel image is
- *     reframed from the 309-D product gallery (see IMAGE_CREDITS.md)
+ *   - product and manufacturing imagery comes from the client; the first carousel
+ *     combines the complete 306-D gallery frame with selected B architecture
+ *     (see IMAGE_CREDITS.md)
  *
  * Line counts are still tuned to the measured module heights, so the page geometry
  * that was verified at 1512px is preserved.
@@ -44,9 +45,9 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "2400 / 943",
+        ratio: "1800 / 900",
         src: "/images/editorial/home-panic-exit-bars.webp",
-        label: "309-D double-leaf exit application: a rim exit device on the left leaf and a vertical-rod device with visible upper and lower latches on the right leaf",
+        label: "306-D double-door exit hardware with push bars and visible upper and lower rods in a pale architectural setting",
       },
       title: "Panic Exit Devices",
       body: "One push, and the door opens. Push bars, outside trims and lock cases for escape and fire doors, specified as a set.",

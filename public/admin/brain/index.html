@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sign in</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f6f6f4; color: #1d1d1b;
+         font: 15px/1.5 -apple-system, "Segoe UI", sans-serif; }
+  main { text-align: center; max-width: 360px; padding: 16px; }
+  h1 { font-size: 20px; margin: 0 0 8px; }
+  p { color: #6b6b66; }
+  button { padding: 10px 20px; border: 0; border-radius: 6px; background: #1d1d1b; color: #fff; font: inherit; cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Internal</h1>
+  <p>Members only. Sign in with your GitHub account.</p>
+  <button id="go">Sign in with GitHub</button>
+  <p id="msg" role="status"></p>
+</main>
+<script>
+// A sign-in shell that holds no data. It reuses the /admin/ OAuth worker, then loads the real page
+// from a private repository with the visitor's own token, so GitHub decides who can read anything.
+// Wrapped in a block: the loaded page declares its own top-level names in this same window.
+{
+  const AUTH = "https://auth.cantonlock.com";
+  const REPO = "SPOOOONER-FLASH/hyde-brain";
+  const KEY = "hyde-brain-token";
+  const msg = (t) => { document.getElementById("msg").textContent = t; };
+  const store = { get: () => { try { return localStorage.getItem(KEY); } catch { return null; } },
+                  set: (v) => { try { v ? localStorage.setItem(KEY, v) : localStorage.removeItem(KEY); } catch {} } };
+
+  const boot = async (token) => {
+    msg("Loading…");
+    const r = await fetch(`https://api.github.com/repos/${REPO}/contents/app/index.html`,
+      { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" } }).catch(() => null);
+    if (!r) return msg("Cannot reach GitHub. Check the network and reload.");
+    if (r.status === 401) { store.set(null); return msg("Session expired. Sign in again."); }
+    if (r.status === 404) return msg("This GitHub account has no access yet. Ask the owner to add you, accept the email invitation, then sign in again.");
+    if (!r.ok) return msg(`GitHub error ${r.status}.`);
+    const html = await r.text();
+    document.open();
+    document.write(html);
+    document.close();
+  };
+
+  let popup = null;
+  window.addEventListener("message", (e) => {
+    if (e.origin !== AUTH || typeof e.data !== "string") return;
+    if (e.data === "authorizing:github") { popup?.postMessage(e.data, e.origin); return; }
+    const ok = "authorization:github:success:";
+    if (e.data.startsWith(ok)) {
+      const { token } = JSON.parse(e.data.slice(ok.length));
+      store.set(token);
+      popup?.close();
+      boot(token);
+    } else if (e.data.startsWith("authorization:github:error:")) {
+      msg("Sign-in failed. Try again.");
+    }
+  });
+
+  document.getElementById("go").addEventListener("click", () => {
+    popup = window.open(`${AUTH}/auth?provider=github&site_id=${location.hostname}&scope=repo`, "github-auth", "width=600,height=720");
+  });
+
+  const saved = store.get();
+  if (saved) boot(saved);
+}
+</script>
+</body>
+</html>
