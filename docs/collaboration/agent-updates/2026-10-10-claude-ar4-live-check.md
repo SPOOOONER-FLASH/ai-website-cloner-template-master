@@ -33,3 +33,9 @@
 | AR4-140 图片 label 写 slim | 记录里 8 处 label 改 aluminum-door，labelEs 改 para aberturas de aluminio（中立记录，雷茵渲染中文，不受影响） |
 
 本地 webpack 预览实测：fr 产品页材质为 Coffre de serrure en fer nickelé，es 合集页 alt 为西语。检查：i18n-lint、titles:check、build-i18n-client-ui --check、typecheck、eslint、`npm test` 461/0。
+
+**产品查找器多语言跳英文（客户 10-10 Clarity 录屏：/ko/product-finder/ → 英文 001 页）**
+
+- 原因：`ProductFinder.tsx` 渲染结果卡片时没传 `locale`，`ProductCard` 默认 `en`。服务器输出的链接带语言前缀，浏览器端筛选/翻页后重新渲染的 20 张卡片全部变成英文链接。九个非英语语种都受影响。
+- 修正：补 `locale={locale}`；新测试 `product-card-locale.test.ts` 扫描全部 `<ProductCard>`，漏传语言就报错（已验证：修复前失败，修复后通过）。
+- 实测：线上 /ko/ 结果 20/20 链英文；本地修复后 20/20 链 /ko/。`npm test` 462/0。
