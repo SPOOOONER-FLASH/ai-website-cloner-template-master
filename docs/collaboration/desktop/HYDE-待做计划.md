@@ -2,7 +2,7 @@
 
 生成：`node scripts/organize-desktop-hyde.mjs`，来源是工程目标清单（docs/collaboration/tasks/2026-09-24-hyde-engineering-goal.md），2026-10-10 更新。只列没完成的。
 
-## 等你（甲方）（14）
+## 等你（甲方）（15）
 
 | # | 事项 | 现状 |
 |---|---|---|
@@ -19,6 +19,7 @@
 | 134 | 甲方 10-05：#133 发布后在 Bing Webmaster 点「重新扫描」，核对 alt 与 index.php 两项清零 | 待甲方（发布后） |
 | 141 | 甲方 10-09：长尾词继续优化 + 反链 / 深链现在怎么做（Bing 反链：5 域名 140 条全指首页、锚文本全是裸网址） | 待甲方（10-09：scripts/build-backlink-deeplinks.mjs 按型号把 139 条目录帖对到产品页，69 条能改（worldbid 51、traderscity 15、etradeasia 3）→ 桌面 BACKLINK-DEEPLINKS.docx；手动操作 docx 含改链步骤与五页 |
 | 150 | 远高评估阶段 2/3（报价信息块、文档化编号、规格数字排版、统一章节开头、可复制规格行、开篇标题遮罩升起）：先给甲方看提案再做 | 待甲方 |
+| 156 | 「hyde前端管理」10-10：发布 ddc4d19868d 已在 main（7e134760a8c），40 分钟线上仍旧版 → 查拉取 | 待甲方（仓库侧核对：新 chunk 2hkxcu4e-uguo.js 在发布提交和 main 里，提交完整；服务器 cron 拉取需甲方在宝塔终端看 /var/log/cantonlock-deploy.log 并手动补拉，手册顶部 + 桌面 docx） |
 | 68 | LC04 面板/锁体尺寸、SSH018 照片、7 个采购问题的数字（产能、公差、备件年限等） | 待甲方（工厂数据） |
 
 ## 等别的会话或日期（10）
