@@ -564,6 +564,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
  * and passes through untouched — that is the whole point of a code.
  */
 export const FINISH_NAMES_PT: Record<string, string> = {
+  "Nickel-plated": "Niquelado",
   "Polished Brass": "Latão polido",
   "Polished brass": "Latão polido",
   "Satin Brass": "Latão acetinado",
@@ -612,6 +613,8 @@ export const FINISH_NAMES_PT: Record<string, string> = {
 
 /** Materials, as they appear in a `Material` row. */
 export const MATERIAL_NAMES_PT: Record<string, string> = {
+  /* The four AR-4 records (2026-10-10); same terms as "Lock case" and "Nickel Plated Iron". */
+  "Nickel-plated iron lock case": "Caixa da fechadura de ferro niquelado",
   "Stainless steel": "Aço inoxidável",
   "Stainless Steel": "Aço inoxidável",
   "stainless steel": "aço inoxidável",
