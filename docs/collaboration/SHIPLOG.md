@@ -12,11 +12,11 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:44 | 中立 | 合并本地提交（ship 旁路合并） | `cc4fb0e4e51` |
-| 04:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85c58de7563` |
-| 04:28 | 中立 | Elabora/Piccolo 公开尺寸与 AR4 工厂图纸对照（只核对，不上网站） | `06dbe5d0287` |
-| 00:44 | 中立 | 产品查找器结果卡片补传 locale：韩/西等语种点卡片不再跳到英文页 | `94331c4b51b` |
-| 00:21 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 501ff278c8b | `98fd1ab5720` |
+| 04:50 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `019003ab091` |
+| 04:50 | 中立 | 手册：服务器没拉到新版的排查与手动补拉（#156） | `f71d6cd3155` |
+| 04:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `974b57ad427` |
+| 04:18 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5619229b127` |
+| 04:16 | 中立 | 改深链交给同事：大字分步说明 + 每站编号打勾清单 + LinkedIn（#155） | `a1e386d5d6d` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
 | 00:06 | 中立 | 纪律：回复甲方一律用简体中文（甲方 10-10） | `831bea39928` |
 
