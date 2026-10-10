@@ -37,9 +37,7 @@ try {
   }
   if ($failures.Count) { throw "$($failures.Count) directories remain. Original files were preserved. Send finish-transcript.log to Codex." }
   foreach ($required in @(
-    @{source='C:\Users\86132\Downloads\cantonlock';destination='E:\WorkResources\projects\cantonlock'},
     @{source='C:\Users\86132\.codex';destination='E:\WorkResources\home\codex'},
-    @{source='C:\Users\86132\.claude';destination='E:\WorkResources\home\claude'},
     @{source='C:\Users\86132\.cache';destination='E:\WorkResources\home\cache'}
   )) {
     $mapped = Get-Item -LiteralPath $required.source -Force
@@ -49,14 +47,11 @@ try {
       throw "Required mapping is incomplete: $($required.source). Environment settings were not changed."
     }
   }
-  # Install future developer-cache and temporary-directory locations only after cutover.
+  # Keep global TEMP/TMP unchanged so Claude retains its original temporary paths.
   $settings = @{
     CODEX_HOME='E:\WorkResources\home\codex'
-    TEMP='E:\WorkResources\Temp'
-    TMP='E:\WorkResources\Temp'
     npm_config_cache='E:\WorkResources\caches\npm'
     PIP_CACHE_DIR='E:\WorkResources\caches\pip'
-    CLAUDE_CODE_TMPDIR='E:\WorkResources\Temp\claude'
   }
   if (-not (Test-Path -LiteralPath "$PSScriptRoot\environment-before.json")) {
     $original = @{}
@@ -70,7 +65,7 @@ try {
   $summary = @{time=(Get-Date).ToString('o');state='all-planned-directories-migrated';CFreeBytes=(Get-PSDrive C).Free;EFreeBytes=(Get-PSDrive E).Free;settings=$settings}
   $summary | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath "$PSScriptRoot\finish-success.json" -Encoding utf8
   if (Test-Path -LiteralPath "$PSScriptRoot\Report-Migration.ps1") { & "$PSScriptRoot\Report-Migration.ps1" }
-  Write-Host 'SUCCESS: Work resources are on E. Original paths are compatibility links. Restart Windows before reopening Codex/Claude so all applications inherit the new TEMP/cache settings.' -ForegroundColor Green
+  Write-Host 'SUCCESS: Planned Codex data directories are on E. Claude data and the shared cantonlock project remain on C. Restart Windows so Codex inherits its new home and cache settings.' -ForegroundColor Green
   Stop-Transcript | Out-Null
   exit 0
 } catch {

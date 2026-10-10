@@ -66,6 +66,14 @@ function Move-VerifiedDirectory {
         [switch]$CopyOnly)
   $sourcePath = [IO.Path]::GetFullPath($Source)
   $destinationPath = [IO.Path]::GetFullPath($Destination)
+  # Client reversed the Claude migration on 2026-10-09. Refuse stale plans too.
+  if ($sourcePath -eq 'C:\Users\86132\Downloads\cantonlock' -or
+      $sourcePath -eq 'C:\Users\86132\.claude' -or
+      $sourcePath.StartsWith('C:\Users\86132\.claude\', [StringComparison]::OrdinalIgnoreCase) -or
+      $sourcePath -match '^C:\\Users\\86132\\AppData\\(?:Local|Roaming)\\Claude(?:-Data|-3p)?(?:\\|$)' -or
+      $sourcePath -match '^C:\\Users\\86132\\AppData\\Local\\Packages\\Claude_[^\\]+\\') {
+    throw 'Claude data and the shared cantonlock project must remain on C as requested on 2026-10-09. This migration entry is disabled.'
+  }
   if (-not $sourcePath.StartsWith('C:\Users\86132\', [StringComparison]::OrdinalIgnoreCase) -or
       -not $destinationPath.StartsWith('E:\WorkResources\', [StringComparison]::OrdinalIgnoreCase)) {
     throw 'Only explicit C user resources to E:\WorkResources are supported.'
