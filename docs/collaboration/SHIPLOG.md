@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 491 次提交
+最近 30 天 · 共 484 次提交
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:39 | 中立 | Add calibrated outdoor egress hero preview and Blender scene | `920c44f2459` |
+| 00:55 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `e01d2e8d1d7` |
 | 00:51 | 中立 | Record outdoor hero source and origin publication | `211b2aa53d3` |
 | 00:21 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 501ff278c8b | `98fd1ab5720` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
@@ -584,13 +586,4 @@
 | 07:03 | HYDE+雷茵 · 发布 雷茵 | 第四批 21 个大拉手上架；首页换成黄铜拉手实拍；长度变体合并进同一型号 | `31fe5a18c7a` |
 | 07:03 | 中立 | Compose actual 564 and 310 photos in editable stone scenes | `0c16fd976cc` |
 | 06:47 | 中立 | Preserve real hardware photos in thirteen Blender layouts | `36aa5fa73c3` |
-| 03:30 | HYDE+雷茵 · 发布 雷茵 | 老板验收反馈三处：缩略图不可点、上抬扶手改关怀扶手、玻璃门夹具显示成拉手 | `55a533ade35` |
-| 03:13 | HYDE · 发布 HYDE+雷茵 | 空类目不再出页面；重出 1,367 页构建并部署 | `e780b527888` |
-| 03:05 | 中立 | 补记 bc7af2e4c6 为什么没有消息 | `284e2d037af` |
-| 03:02 | 中立 | （提交说明为空） | `bc7af2e4c62` |
-| 02:50 | 中立 | 视频 uploadDate 补时区；nginx 301 规则从 16 条补到 48 条；北美 GTM 与竞品对比 | `8233b9a08fb` |
-| 02:38 | HYDE+雷茵 · 发布 雷茵 | 雷茵站只留自己的货：40 个新型号上架，HYDE 目录下架，新开上抬扶手类目 | `987cc98d611` |
-| 02:15 | 中立 | 竞品认证对照与北美规格策略；小红书三条逐个回答 | `994f0cb1585` |
-| 01:53 | HYDE | 逃生器械类目 15 个型号一直叫错名字；补上 BHMA/US 表面码 | `7dad3d8556c` |
-| 01:03 | 中立 | docs: record professional hardware image goal and acceptance criteria | `2af3c88a2a3` |
 
