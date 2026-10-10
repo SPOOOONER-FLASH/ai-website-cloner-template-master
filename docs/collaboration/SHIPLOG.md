@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 482 次提交
+最近 30 天 · 共 484 次提交
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:50 | 中立 | 手册：服务器没拉到新版的排查与手动补拉（#156） | `f71d6cd3155` |
+| 04:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `974b57ad427` |
 | 04:18 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5619229b127` |
 | 04:16 | 中立 | 改深链交给同事：大字分步说明 + 每站编号打勾清单 + LinkedIn（#155） | `a1e386d5d6d` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
