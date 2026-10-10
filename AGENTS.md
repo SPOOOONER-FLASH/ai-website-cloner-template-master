@@ -177,6 +177,14 @@ whether "75 products have no photograph" is still true. A sheet with a generator
 `content/products` in one second. Write the generator, then run it; do not write the
 output.
 
+### Reply to the client in Chinese
+
+Client instruction, 2026-10-10: 「中文回复 写进纪律」. Every reply to Spooner — chat
+answers, status reports, hand-offs, questions — is written in Simplified Chinese, whatever
+language the surrounding work is in. Code, commit messages, file paths, model numbers,
+standards and quoted site copy stay as they are. Messages to other agent sessions may use
+either language. The website itself still never shows Chinese on HYDE pages.
+
 ### Finish and communicate quickly
 
 Client instruction, 2026-09-07: "不打断，你继续工作，做完一条推送一条，写进纪律。"
