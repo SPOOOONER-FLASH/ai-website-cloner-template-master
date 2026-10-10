@@ -6,15 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 484 次提交
+最近 30 天 · 共 485 次提交
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:39 | 中立 | Add calibrated outdoor egress hero preview and Blender scene | `920c44f2459` |
-| 00:55 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `e01d2e8d1d7` |
-| 00:51 | 中立 | Record outdoor hero source and origin publication | `211b2aa53d3` |
+| 04:44 | 中立 | 合并本地提交（ship 旁路合并） | `cc4fb0e4e51` |
+| 04:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85c58de7563` |
+| 04:28 | 中立 | Elabora/Piccolo 公开尺寸与 AR4 工厂图纸对照（只核对，不上网站） | `06dbe5d0287` |
+| 00:44 | 中立 | 产品查找器结果卡片补传 locale：韩/西等语种点卡片不再跳到英文页 | `94331c4b51b` |
 | 00:21 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 501ff278c8b | `98fd1ab5720` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
 | 00:06 | 中立 | 纪律：回复甲方一律用简体中文（甲方 10-10） | `831bea39928` |
