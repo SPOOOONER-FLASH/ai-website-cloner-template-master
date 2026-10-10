@@ -6,34 +6,40 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 478 次提交
+最近 30 天 · 共 484 次提交
 
 ## 2026-10-09
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 21:27 | 中立 | Keep the approved hero provenance sidecar LF on Windows | `76038948d6d` |
-| 21:06 | HYDE | 合并本地提交（ship 旁路合并） | `086b3c901ad` |
-| 20:07 | 中立 | i18n：七语种跟上 09-28 后的指南/新闻改动（#146 描述、计数 588→613 等段落、2 个标题） | `c11497fc26c` |
-| 19:21 | 中立 | i18n：DV06 门镜七语种规格补 30–50mm (160°) 门厚与 160° 视角（跟英文） | `d0bf09413df` |
-| 19:21 | 中立 | i18n：E1 三篇指南七语种 seoTitle/seoDescription 按 r21 新英文重译（西葡对照组不动） | `85bbad79836` |
-| 03:13 | HYDE | 合并本地提交（ship 旁路合并） | `358ceeb7068` |
-| 03:07 | 中立 | 产品大脑登录页 /admin/brain/：GitHub 登录，数据只在私有仓库 | `8cd99f5c9f6` |
-| 02:49 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 3e5cefdf291 | `2488d9d2a9d` |
-| 02:29 | 中立 | AR4 交接记录：PR #20 合并进 main 的过程与检查结果 | `174bd024823` |
-| 02:29 | HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `331a56882b1` |
-| 01:52 | HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `627261aab54` |
-| 01:33 | HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85d9e1bfb84` |
-| 01:26 | 中立 | AR4 交接 A 项：查证网站上已无红色 Hyland 标志，记录结论 | `17b4a209247` |
-| 01:19 | 中立 | AR-4 module: Elabora-style category tiles replace the four product cards | `5516c47cfd9` |
-| 07:30 | HYDE | Name the four AR-4 models after their market families; AR4-101 from drawing 7240 | `591b088a656` |
-| 04:56 | HYDE | Merge lock cases 110 / 140 / 1121 into AR4-110 / AR4-140 / AR4-1121 | `4f729612ab5` |
+| 23:31 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `0324fffc1f7` |
+| 23:18 | 中立 | seo-audit：/admin/ 之下的页面都不算公开页 | `092933e4808` |
+| 03:06 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `d970454f5f3` |
+| 03:06 | 中立 | 目标表：#137 新目录上线 2488d9d2a9d 实测通过；#140 /video/ 上线实测 | `88f0589e39c` |
+| 02:45 | 中立 | 规格书重新生成：AR-4 四款上线 + 全部换新公司法定名称 | `29498aea80d` |
+| 02:44 | 中立 | chunk-push-release：按完整 stderr 判断被抢先推送 | `93001854864` |
+| 02:35 | HYDE | 66 篇指南与文章的搜索描述改写：≤ 155、答案在前、事实核对（#146） | `67774c4672d` |
+| 02:32 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `1b24d356c26` |
+| 02:19 | 中立 | 锁芯计算器印出算式：外侧 中心 + 饰板 = 计算值 → 标准半长（#149） | `4c7248c60ab` |
+| 02:18 | 中立 | 锁芯计算器：偏心起点取门厚一半；读屏只播一句结果（#149 前半） | `5b73e7a0ce2` |
+| 02:16 | 中立 | 目标表：#143 评估交付、#145 实测 LCP、#147 核对结论（不改）、#146 改写中、#149/#150 远高阶段 | `ab1bca38c26` |
+| 02:05 | 中立 | 七语种漏英文：品类规格区间标题、术语表词条名、OEM & ODM（#144） | `f6f385df7f7` |
+| 01:56 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `2999025e5a1` |
+| 01:56 | 中立 | 目标表 #143 等待评估工作流；#144–#148 文案会话全量审查转交 | `a272da81730` |
+| 01:40 | 中立 | 桌面 hyde 按文件夹整理：本地数据库存档、待做计划、人工代做清单 | `6858833f6f6` |
+| 01:32 | HYDE | /video/ 观看页 noindex + canton-withheld（站点地图外须声明不收录） | `180ff9dcf9b` |
+| 01:15 | 中立 | 目标表 #137：改为从 71bbb9a6565 重新发布 | `3ccbd14fa0e` |
+| 01:14 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `71bbb9a6565` |
+| 01:04 | 中立 | 反链深链：目录帖按型号对到产品页（69/139）+ 甲方手动步骤 | `7a509d73204` |
+| 00:57 | HYDE | 饰面代码指南 seoTitle/Description 让位给主页 news/finish-codes-us26d-626-630 | `6ad07ffda67` |
+| 00:54 | 中立 | 站点地图拿掉 /video/ 观看页（甲方 10-09 选 A） | `c4df59fb81e` |
+| 00:41 | 中立 | 目标表 #137：目录发布推送中，状态改为等待 | `c6dff3a7739` |
+| 00:40 | 中立 | 曝光平台期分析（10-09 数据）+ 两个品类标题加 China Manufacturer | `cd22f16e32c` |
 
 ## 2026-10-08
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 21:22 | 中立 | 任务 #32：首页按分辨率不同是设计差异，甲方决定维持现状 | `43d006f0e1b` |
 | 20:59 | 中立 | 曝光继续爬升：要甲方导出的三样数据与 Ahrefs 免费版设置，出 docx；不建议每天十篇，建议每周 2–3 篇按查询选题 | `6a6fb8df628` |
 | 05:48 | 中立 | 纪律：要甲方看的文件一律导出到桌面 hyde（甲方 10-08） | `441ff0d2ecb` |
 | 04:41 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `1fcf0bbeff2` |

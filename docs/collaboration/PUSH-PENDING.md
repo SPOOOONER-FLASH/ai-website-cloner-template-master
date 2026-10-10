@@ -279,3 +279,14 @@
 下一次 `npm run ship` 成功时这些会一起推上去。
 
 → 已推送（09-30，工程会话）：上面 16 个提交全部在远端，main = `5154fdd6503`。git push 报超时，`git ls-remote` 确认已到。
+
+## 2026/10/9 23:28:26 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in scripts/lib/seo-audit.mjs / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `76228a2eb95` shiplog: 更新上线存档
+- `092933e4808` seo-audit：/admin/ 之下的页面都不算公开页
+
+下一次 `npm run ship` 成功时这些会一起推上去。
