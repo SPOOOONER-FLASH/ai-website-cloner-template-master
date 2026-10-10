@@ -19,9 +19,17 @@
 
 | 问题 | 归属 / 备注 |
 |---|---|
-| AR4 产品页 Material、Finishes 两行在 9 个非英语语种仍是英文（「Nickel-plated iron lock case」） | Claude：各语种 glossary 缺词条 |
-| 方块图片 alt 全是英文；AR4-140 alt 写「slim」，与名称「Aluminum-Door」不符 | Claude：`heroImage.alt` |
 | 合集页 og:image 声明 1200×630，实际 1672×941 | 页面 metadata |
 | 搜别名 110/140 后按 Enter 无动作，1121 打开分类页（排序本身正确） | `SearchDialog` 的 enterTarget 只比 model |
 | 四张照片水印位置不一，AR4-1121 构图不同、钥匙被裁 | 需要工厂原图，不能生成；AR4-101 也仍缺 7240 原图 |
 | 两篇指南写「589 published models」，现行 546 | 写稿快照，非本次引入 |
+
+**第二次修正（客户 10-10：「修材质 / 表面处理的翻译和图片替代文字」）**
+
+| 问题 | 修正 |
+|---|---|
+| Material / Finishes 在 9 个非英语语种是英文 | 补词条 `Nickel-plated iron lock case`、`Nickel-plated`：es/pt 在 `*-glossary.ts`，七语在 `content/i18n/<code>/glossary.json`（译法取各语 ui.json 已有译文和 `Nickel Plated`），重生成 `i18n-client/*.json`。**没改产品记录**：四条记录两站共用，雷茵靠 zh-terms 的同一英文键译中文 |
+| 方块 alt 全英文 | 方块 alt 改用已本地化的名称 `HYDE <型号> <名称>` |
+| AR4-140 图片 label 写 slim | 记录里 8 处 label 改 aluminum-door，labelEs 改 para aberturas de aluminio（中立记录，雷茵渲染中文，不受影响） |
+
+本地 webpack 预览实测：fr 产品页材质为 Coffre de serrure en fer nickelé，es 合集页 alt 为西语。检查：i18n-lint、titles:check、build-i18n-client-ui --check、typecheck、eslint、`npm test` 461/0。

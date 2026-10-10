@@ -64,6 +64,7 @@ function Ar4Tile({ product, locale }: { product: Product; locale: Locale }) {
     >
       <MediaPlaceholder
         {...product.heroImage}
+        label={`HYDE ${product.model} ${name}`}
         ratio="1 / 1"
         sizes="(min-width: 1440px) 330px, (min-width: 1280px) 24vw, 48vw"
       />
