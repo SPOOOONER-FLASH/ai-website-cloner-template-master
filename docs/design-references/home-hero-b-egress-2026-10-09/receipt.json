@@ -1,0 +1,72 @@
+{
+  "model": "306-D",
+  "masterSha256": "3b5cc4775cb8767154a67459a3fc2525e80080d3c64e2518595d9a4d8d492c36",
+  "source": "public/images/products-hyde/306-d-panic-exit-device-7.webp",
+  "sourceSha256": "58a383a200c90fb3a2dc53c68b2587a5dd9185f9702f64ea429280964194ac9e",
+  "sourceCrop": {
+    "left": 102,
+    "top": 90,
+    "width": 596,
+    "height": 660
+  },
+  "masterPhotoBounds": {
+    "left": 545,
+    "top": 125,
+    "width": 596,
+    "height": 660
+  },
+  "width": 1800,
+  "height": 900,
+  "origin": "B selected by client, then explicitly corrected from office destination to outdoor escape space on 2026-10-09. Built-in image_gen generated an empty courtyard only.",
+  "scope": "Replace only non-product pixels inside the open aperture. Preserve both photographed door leaves, horizontal bars, right upper/lower rods/latches, mounts and frame at original position, scale and RGB outside the environment mask. No generated hardware. Environment composite is not an independently verified installation, rating, compatibility or real project.",
+  "baseMaster": "docs/design-references/home-hero-b-2026-10-09/master.png",
+  "baseMasterSha256": "d222efbf4456b0f221f40834939d45f33223ff502333cc27abedc0b21f9cea2d",
+  "courtyardSha256": "5d5e124cdf5e858ac2b9219972ad1a3836603b8443c5003f9ff2e106b7e2d01f",
+  "environmentPolygon": [
+    [
+      158,
+      124
+    ],
+    [
+      401,
+      124
+    ],
+    [
+      401,
+      747
+    ],
+    [
+      147,
+      747
+    ],
+    [
+      201,
+      691
+    ],
+    [
+      205,
+      478
+    ],
+    [
+      223,
+      474
+    ],
+    [
+      224,
+      453
+    ],
+    [
+      214,
+      438
+    ],
+    [
+      205,
+      433
+    ],
+    [
+      205,
+      187
+    ]
+  ],
+  "protectedSourceRgbPixels": 268019
+}

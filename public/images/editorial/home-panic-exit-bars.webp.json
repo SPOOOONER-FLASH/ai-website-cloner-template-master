@@ -1,8 +1,8 @@
 {
   "kind": "client-approved-photograph-in-generated-architecture",
-  "approvedDirection": "B — pale civic space; selected by client 2026-10-09",
+  "approvedDirection": "B — pale civic space, corrected to an outdoor escape destination by client 2026-10-09",
   "model": "306-D",
-  "masterSha256": "d222efbf4456b0f221f40834939d45f33223ff502333cc27abedc0b21f9cea2d",
+  "masterSha256": "3b5cc4775cb8767154a67459a3fc2525e80080d3c64e2518595d9a4d8d492c36",
   "source": "public/images/products-hyde/306-d-panic-exit-device-7.webp",
   "sourceSha256": "58a383a200c90fb3a2dc53c68b2587a5dd9185f9702f64ea429280964194ac9e",
   "sourceCrop": {
@@ -19,42 +19,92 @@
   },
   "width": 1800,
   "height": 900,
-  "origin": "Client-selected B preview from review branch codex/home-hero-five-review; preview-generation assets and prompts retained at commit 80c4aa7f28b.",
-  "scope": "Complete retained customer catalogue application frame on generated empty architecture. No hardware generated or reassembled. G original library unavailable; actual installation/project identity not independently verified. No new dimensions, compatibility, material-rating or certification claims.",
-  "preservedMasterRgbPixels": 393360,
-  "changedMasterSourcePixels": 0,
+  "origin": "B selected by client, then explicitly corrected from office destination to outdoor escape space on 2026-10-09. Built-in image_gen generated an empty courtyard only.",
+  "scope": "Replace only non-product pixels inside the open aperture. Preserve both photographed door leaves, horizontal bars, right upper/lower rods/latches, mounts and frame at original position, scale and RGB outside the environment mask. No generated hardware. Environment composite is not an independently verified installation, rating, compatibility or real project.",
+  "baseMaster": "docs/design-references/home-hero-b-2026-10-09/master.png",
+  "baseMasterSha256": "d222efbf4456b0f221f40834939d45f33223ff502333cc27abedc0b21f9cea2d",
+  "courtyardSha256": "5d5e124cdf5e858ac2b9219972ad1a3836603b8443c5003f9ff2e106b7e2d01f",
+  "environmentPolygon": [
+    [
+      158,
+      124
+    ],
+    [
+      401,
+      124
+    ],
+    [
+      401,
+      747
+    ],
+    [
+      147,
+      747
+    ],
+    [
+      201,
+      691
+    ],
+    [
+      205,
+      478
+    ],
+    [
+      223,
+      474
+    ],
+    [
+      224,
+      453
+    ],
+    [
+      214,
+      438
+    ],
+    [
+      205,
+      433
+    ],
+    [
+      205,
+      187
+    ]
+  ],
+  "protectedSourceRgbPixels": 268019,
+  "preservedMasterRgbPixels": 268019,
+  "changedProtectedSourcePixels": 0,
   "delivery": "Lossy WebP encoding and responsive resizing; pixel equality applies to the PNG master only.",
   "independentlyVerifiedInstallation": false,
   "outputs": [
     {
       "path": "public/images/editorial/home-panic-exit-bars.webp",
-      "sha256": "118e7404d73bd419411211f0cafe159f1c87ca228c31508541f6ebcc8f72c652",
-      "bytes": 125594
+      "sha256": "c6dbfffb964233b9d26607766de10f5f1bf159d68c329cc0fc4b921091b04a2d",
+      "bytes": 140816
     },
     {
       "path": "public/images/editorial/responsive/home-panic-exit-bars-480w.webp",
-      "sha256": "c74c53eda87deeab3d5715af6b11bed272b45afec60a65da8d160b3f539fca92",
-      "bytes": 6250
+      "sha256": "42640cef5ef181ff4096ee65660c4479af6e625479b0b6cd83b6553eb6cc5c82",
+      "bytes": 6808
     },
     {
       "path": "public/images/editorial/responsive/home-panic-exit-bars-800w.webp",
-      "sha256": "e9d971a6caafe862e76d0e02c953255d514582d0da5ea617534cfa65bcf775b6",
-      "bytes": 15296
+      "sha256": "f33be7dcac14c002f3941300897b5b556253157257e4214154ec9cfd632ed6d7",
+      "bytes": 17356
     },
     {
       "path": "public/images/editorial/responsive/home-panic-exit-bars-1600w.webp",
-      "sha256": "c3b443662459bec99753e703472a9f3294594c040cc3266f8a29ebf72da412bb",
-      "bytes": 50686
+      "sha256": "9a8042b541e40c7de9b1d7ed874d70e0f71479b62523bda53f3753c43632cc29",
+      "bytes": 60796
     },
     {
       "path": "public/images/editorial/mobile-hero/home-panic-exit-bars-400w-4x3.webp",
-      "sha256": "e8faf7c16162561985cf1d7bf51d54b369dd2e6be7d9f2f68b48526e21001c56",
-      "bytes": 5186
+      "sha256": "47ac403096f5ebd05d187217d4f617655c6a230bfdc03a55748cc880f6e60e1a",
+      "bytes": 6306
     },
     {
       "path": "public/images/editorial/mobile-hero/home-panic-exit-bars-800w-4x3.webp",
-      "sha256": "13fac91627a266ca5f0b2248ed375e7f05eeca109de7bcab91fdcb0d7add21e0",
-      "bytes": 19734
+      "sha256": "692dbf0509f4b7c8e3572ae1b03fe973f74929d728a9f43826bf152242bbd1a2",
+      "bytes": 24590
     }
   ]
 }
