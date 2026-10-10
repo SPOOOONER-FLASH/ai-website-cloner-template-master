@@ -48,8 +48,9 @@ function ar4Products(): Product[] {
   the wash lifting on hover or keyboard focus so the real part shows through. Interaction only —
   every image is our own; Elabora's photographs are theirs and are never used.
 
-  The wash stops at 20%, not 0: Elabora clears it completely and its titles become hard to
-  read over the bare photograph.
+  The wash stops at 40%, not 0: Elabora clears it completely and its titles become hard to
+  read over the bare photograph. 40% is the lowest that keeps the dark text at 4.5:1 over
+  AR4-101's lock body (20% measured 3.57:1 at the 5th percentile, 2026-10-10).
 */
 function Ar4Tile({ product, locale }: { product: Product; locale: Locale }) {
   /* English, never Spanish, for a locale with no name of its own yet. */
@@ -68,10 +69,10 @@ function Ar4Tile({ product, locale }: { product: Product; locale: Locale }) {
       />
       <span
         aria-hidden="true"
-        className="absolute inset-0 bg-surface/60 transition-opacity duration-[var(--motion-medium)] ease-[var(--motion-ease)] group-hover:opacity-20 group-focus-visible:opacity-20"
+        className="absolute inset-0 bg-surface/60 transition-opacity duration-[var(--motion-medium)] ease-[var(--motion-ease)] group-hover:opacity-40 group-focus-visible:opacity-40"
       />
       <span aria-hidden="true" className="absolute inset-0 flex flex-col items-center justify-center gap-8 p-16 text-center">
-        <span className="text-balance text-c1 font-semibold leading-tight text-ink xl:text-h3">{name}</span>
+        <span className="text-balance text-c1 font-semibold leading-tight text-ink">{name}</span>
         <span className="text-c2 font-semibold uppercase tracking-[0.12em] text-ink">{product.model}</span>
       </span>
     </Link>
