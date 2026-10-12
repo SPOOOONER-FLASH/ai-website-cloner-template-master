@@ -114,6 +114,9 @@
 | 48 | 甲方 10-12 看了演示：「出口地图 + 品类数量条、品类索引（跟手图）、工厂故事 这三部分特别好，甚至可以直接加入现在的首页 你看看怎么放」 | 10-12 完成：FamilyIndex（推荐货架后）、ExportMap（AR4 后）、FactoryStory（FeatureColumns 后），十语首页都加；CSS+小组件不装 motion；等工程会话发布 |
 | 49 | 甲方 10-12：「激光切割加进去，这都不要了 但是图片帮我留着我喜欢 图片放到hyde桌面文件夹」——工厂故事加回激光切割；首页 FactoryStory 之后的旧模块（Panic Exit Devices 大图、Where our hardware is fitted、Designed for、Materials + Engineering、Service + Downloads、Engineering for Export、Hardware Specification）全部撤下，图片复制到桌面 | 10-12 完成：FactoryStory 4 步（加回激光切割，七语）；十语首页撤下 hero2–hero5/text1–3/teaser2–3；8 张图在桌面 03-研究与方案/首页撤下的图片-2026-10-12；home-accent 测试同步；等发布 |
 | 50 | 甲方 10-12「继续」：清理首页撤下模块留下的数据（hero2–hero5、text1–3、teaser2–3 及其测试、i18n 键），图片文件不删 | 10-12 完成：home/home-es/home-pt 删 9 个导出，home-editorial-assets 测试同步，462/462 |
+| 51 | 甲方 10-12（r42 上线后）：工厂故事「和样机不一样，而且很卡，图片变得不对应不灵敏」+「图片帮我优化下分辨率」 | 10-12 完成：换图改 transform（合成层，长帧 0）、按文字块中线切换；四张工厂图 Real-ESRGAN 2×（2000/2616px）+ 角标 + srcset 1440/1920 |
+| 52 | 甲方 10-12：地图按国家细分——西欧全部（德法英西意荷等）、美国加拿大、秘鲁智利阿根廷哥伦比亚厄瓜多尔巴西委内瑞拉、日韩、澳大利亚（保留俄罗斯、土耳其、东南亚） | 10-12 完成：26 国 + 东南亚高亮与航线，Intl.DisplayNames 十语国名，左栏三组 |
+| 53 | 甲方 10-12：首页移除 BAU 板块；出口地图挪到「The factory, in figures」数据条后面 | 10-12 完成：十语首页去掉 BauShowcase，ExportMap 移到 SiteFacts 之后 |
 
 
 ## 待甲方确认（文案）

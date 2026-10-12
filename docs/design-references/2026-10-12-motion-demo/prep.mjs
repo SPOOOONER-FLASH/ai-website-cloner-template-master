@@ -8,6 +8,7 @@ import path from "node:path";
 import { geoContains, geoEqualEarth } from "d3-geo";
 import { feature } from "topojson-client";
 import land110 from "world-atlas/land-110m.json" with { type: "json" };
+import countries110 from "world-atlas/countries-110m.json" with { type: "json" };
 
 // The repository root: this demo lives in docs/design-references/<date>-motion-demo/.
 const SITE = path.resolve(import.meta.dirname, "../../..");
@@ -78,27 +79,64 @@ const dots = [];
 for (let lat = 78; lat >= -56; lat -= 2.4) for (let lon = -170; lon <= 180; lon += 2.4)
   if (geoContains(land, [lon, lat])) dots.push([+lon.toFixed(1), +lat.toFixed(1)]);
 
-// The same map for the live homepage (src/components/site/ExportMap.tsx): dots and market
-// points projected once here, so the site needs neither d3-geo nor the world atlas.
+// The same map for the live homepage (src/components/site/ExportMap.tsx): dots, market
+// countries and their points projected once here, so the site needs neither d3-geo nor the
+// world atlas. Countries are the client's own list (2026-10-12): every Western European
+// country, the US and Canada, seven South American countries, Japan, Korea, Australia, plus
+// the markets the company page already named (Russia, Turkey, Southeast Asia). Names are not
+// stored: the site renders ISO codes through Intl.DisplayNames in each of its ten languages.
 const W = 1000, H = 500;
 const proj = geoEqualEarth().rotate([-15, 0]).fitExtent([[0, 0], [W, H]], { type: "Sphere" }).scale(205).translate([W / 2 + 10, H / 2 + 40]);
 const xy = (lonlat) => proj(lonlat).map((v) => +v.toFixed(1));
+// [iso2, ISO numeric, group, route target (capital), label: false | [dx, dy, anchor]]
 const MARKETS = [
-  { key: "germany", at: [7.32, 50.49], dx: -10, dy: -14, anchor: "end" },
-  { key: "europe", at: [-3.7, 40.4], dx: -10, dy: 18, anchor: "end" },
-  { key: "russia", at: [37.6, 55.75], dx: 10, dy: -12, anchor: "start" },
-  { key: "turkey", at: [32.85, 39.9], dx: 10, dy: 18, anchor: "start" },
-  { key: "southeastAsia", at: [106.8, -6.2], dx: 12, dy: 16, anchor: "start" },
-  { key: "northAmerica", at: [-95, 39], dx: 0, dy: -16, anchor: "middle" },
-  { key: "southAmerica", at: [-58.4, -34.6], dx: 12, dy: 6, anchor: "start" },
+  ["DE", "276", "europe", [13.4, 52.5], [6, -8, "start"]],
+  ["FR", "250", "europe", [2.35, 48.86], false],
+  ["GB", "826", "europe", [-0.13, 51.5], [-8, 4, "end"]],
+  ["ES", "724", "europe", [-3.7, 40.4], [-8, 14, "end"]],
+  ["IT", "380", "europe", [12.5, 41.9], [6, 16, "start"]],
+  ["NL", "528", "europe", [4.9, 52.37], false],
+  ["BE", "056", "europe", [4.35, 50.85], false],
+  ["LU", "442", "europe", [6.13, 49.6], false],
+  ["AT", "040", "europe", [16.37, 48.2], false],
+  ["CH", "756", "europe", [7.45, 46.95], false],
+  ["PT", "620", "europe", [-9.14, 38.72], false],
+  ["IE", "372", "europe", [-6.26, 53.35], false],
+  ["RU", "643", "europe", [37.6, 55.75], [4, -20, "start"]],
+  ["TR", "792", "europe", [32.85, 39.9], [8, 16, "start"]],
+  ["US", "840", "americas", [-77.0, 38.9], [-8, 14, "end"]],
+  ["CA", "124", "americas", [-75.7, 45.4], [-8, -8, "end"]],
+  ["VE", "862", "americas", [-66.9, 10.5], [8, -4, "start"]],
+  ["CO", "170", "americas", [-74.1, 4.7], [-8, 2, "end"]],
+  ["EC", "218", "americas", [-78.5, -0.2], [-8, 12, "end"]],
+  ["PE", "604", "americas", [-77.0, -12.0], [-8, 4, "end"]],
+  ["BR", "076", "americas", [-47.9, -15.8], [8, 4, "start"]],
+  ["CL", "152", "americas", [-70.7, -33.4], [-8, 4, "end"]],
+  ["AR", "032", "americas", [-58.4, -34.6], [8, 10, "start"]],
+  ["KR", "410", "asiaPacific", [127.0, 37.55], [-6, -10, "end"]],
+  ["JP", "392", "asiaPacific", [139.7, 35.7], [8, 4, "start"]],
+  ["AU", "036", "asiaPacific", [149.1, -35.3], [8, 4, "start"]],
 ];
+// Southeast Asia is a region on the company page, so it is one route and one label.
+const SEA = { ids: ["704", "764", "458", "360", "608", "116", "104", "418"], at: [101.7, 3.1], label: [8, 14, "start"] };
+const countries = feature(countries110, countries110.objects.countries).features;
+const marketIds = new Set([...MARKETS.map((m) => m[1]), ...SEA.ids]);
+const marketShapes = countries.filter((c) => marketIds.has(c.id));
+if (marketShapes.length !== marketIds.size) throw new Error(`market country missing from the atlas: ${[...marketIds].filter((id) => !countries.some((c) => c.id === id))}`);
+const toPath = (list) => list.map(([lon, lat]) => { const [x, y] = proj([lon, lat]).map(Math.round); return `M${x} ${y}h0`; }).join("");
+const inMarket = dots.filter((d) => marketShapes.some((c) => geoContains(c, d)));
+const marketSet = new Set(inMarket);
 const siteMap = {
   generatedBy: "docs/design-references/2026-10-12-motion-demo/prep.mjs",
   viewBox: [W, H],
   // Whole pixels: a 3px dot does not need a decimal, and the path ships in the homepage HTML.
-  dots: dots.map(([lon, lat]) => { const [x, y] = proj([lon, lat]).map(Math.round); return `M${x} ${y}h0`; }).join(""),
+  dots: toPath(dots.filter((d) => !marketSet.has(d))),
+  marketDots: toPath(inMarket),
   origin: { key: "zhongshan", ...Object.fromEntries(xy([113.39, 22.52]).map((v, i) => [i ? "y" : "x", v])) },
-  markets: MARKETS.map(({ key, at, dx, dy, anchor }) => { const [x, y] = xy(at); return { key, x, y, dx, dy, anchor }; }),
+  targets: [
+    ...MARKETS.map(([iso, , group, at, label]) => { const [x, y] = xy(at); return { iso, group, x, y, label: label && { dx: label[0], dy: label[1], anchor: label[2] } }; }),
+    (() => { const [x, y] = xy(SEA.at); return { iso: "SEA", group: "asiaPacific", x, y, label: { dx: SEA.label[0], dy: SEA.label[1], anchor: SEA.label[2] } }; })(),
+  ],
 };
 fs.writeFileSync(path.join(SITE, "src/data/generated/export-map.json"), `${JSON.stringify(siteMap, null, 1)}\n`);
 

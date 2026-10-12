@@ -12,7 +12,6 @@ import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
-import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home-es";
 import { siteName } from "@/data/site";
 
@@ -46,17 +45,16 @@ export default function SpanishHomePage() {
         <SiteFacts facts={siteFacts("es")} heading={siteFactsHeading("es")} />
       </div>
       <div className="modules">
+        {/* Client 2026-10-12: the export map follows the facts strip directly (「地图挪到数据后面」),
+           which moves the recommended shelf of 2026-09-14 to second place. */}
+        <ExportMap locale="es" />
         {/* Same position as the English page. See there for why it leads. */}
         <DemandShowcase locale="es" />
         <StudioShowcase locale="es" />
         <FamilyIndex locale="es" />
         <Spacer heights={content.spacers.s96} />
 
-        <BauShowcase locale="es" />
-        <Spacer heights={content.spacers.s96} />
-        {/* Restore the original AR4 photography below the BAU invitation. */}
         <ArgentinaAr4Showcase locale="es" />
-        <ExportMap locale="es" />
 
         {/* Buyer resources follow the market collection. */}
         <FactoryStory locale="es" />

@@ -223,11 +223,20 @@ contents of `public/images/products/`. These listed files are 1000×1000, croppe
 
 ## Company — `public/images/company/`
 
+**Super-resolution, 2026-10-12.** `press-shop`, `polishing-line`, `assembly-line` and
+`factory-laser-cutter` were enlarged 2× for the homepage factory story, where they fill half
+a wide screen (client: 「图片帮我优化下分辨率」). Method: Real-ESRGAN `realesrgan-x4plus`
+(ncnn-vulkan release v0.2.5.0) at 4×, then Lanczos down to 2× — sharpening of the existing
+pixels only. Nothing was added, removed or redrawn; before/after crops were compared by eye.
+The client's higher-resolution originals (G: library) were not mounted on the machine that
+did this; if they surface, replace these files with them and rerun
+`scripts/watermark-product-images.mjs` (company list) and `scripts/generate-editorial-srcsets.mjs`.
+
 | File | Source | Output | Size |
 |---|---|---|---|
-| `press-shop.webp` | 公司图 1.jpg | 1308×872 | 75.9 KB |
-| `polishing-line.webp` | 公司图 2.jpg | 1308×872 | 91.6 KB |
-| `assembly-line.webp` | 公司图 3.jpg | 1308×872 | 113.8 KB |
+| `press-shop.webp` | 公司图 1.jpg, 2× super-resolution (see note) | 2616×1744 | — |
+| `polishing-line.webp` | 公司图 2.jpg, 2× super-resolution (see note) | 2616×1744 | — |
+| `assembly-line.webp` | 公司图 3.jpg, 2× super-resolution (see note) | 2616×1744 | — |
 | `facility-yard.webp` | 公司图 大图.jpg | 1024×683 | 74.5 KB |
 | `hero-panic-exit-banner.webp` | 大图一.jpg | 822×397 | 31.8 KB |
 | `hero-grip-handle-banner.webp` | 大图二.jpg | 772×397 | 28.8 KB |

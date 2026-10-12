@@ -440,6 +440,9 @@
   "Article that cites this model": [
     "src/components/site/ProductDetail.tsx:65"
   ],
+  "Asia-Pacific": [
+    "src/components/site/ExportMap.tsx:38"
+  ],
   "Ask a question": [
     "src/components/locale-pages/FaqPage.tsx:38"
   ],
@@ -1416,10 +1419,7 @@
     "src/data/category-positioning.json"
   ],
   "Europe": [
-    "src/components/site/ExportMap.tsx:38"
-  ],
-  "Europe, Russia, the Americas, Turkey and Southeast Asia. An office in Germany, and a Spanish-speaking team.": [
-    "src/components/site/ExportMap.tsx:28"
+    "src/components/site/ExportMap.tsx:36"
   ],
   "Events": [
     "src/components/site/menu-experience.ts:91",
@@ -1515,7 +1515,7 @@
     "src/components/site/menu-experience.ts:317"
   ],
   "Export markets": [
-    "src/components/site/ExportMap.tsx:26"
+    "src/components/site/ExportMap.tsx:28"
   ],
   "Export, from Xiaolan to your port": [
     "src/components/site/ServicesView.tsx:91"
@@ -1531,13 +1531,13 @@
   ],
   "Factory": [
     "src/components/locale-pages/ContactPage.tsx:108",
-    "src/components/site/ExportMap.tsx:31"
+    "src/components/site/ExportMap.tsx:34"
   ],
   "Factory photograph": [
     "src/components/site/CompanyOverview.tsx:30"
   ],
   "Factory time, GMT+8": [
-    "src/components/site/ExportMap.tsx:29"
+    "src/components/site/ExportMap.tsx:31"
   ],
   "Families": [
     "src/components/site/ProductsEditorialOverview.tsx:25"
@@ -1697,9 +1697,6 @@
   ],
   "Function codes": [
     "src/components/site/OrderCodeTables.tsx:177"
-  ],
-  "Germany": [
-    "src/components/site/ExportMap.tsx:37"
   ],
   "Glass door & bathroom": [
     "src/lib/home-families.ts:42"
@@ -2143,7 +2140,7 @@
     "src/data/category-sourcing.ts:46"
   ],
   "Locks and architectural door hardware": [
-    "src/components/locale-pages/HomePage.tsx:22"
+    "src/components/locale-pages/HomePage.tsx:21"
   ],
   "Locks and cylinders": [
     "src/components/site/products-architecture.ts:62"
@@ -2173,7 +2170,7 @@
     "src/components/locale-pages/CollectionPage.tsx:61"
   ],
   "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
-    "src/components/locale-pages/HomePage.tsx:30"
+    "src/components/locale-pages/HomePage.tsx:29"
   ],
   "Manufacturing": [
     "src/data/capability.ts:208"
@@ -2193,11 +2190,8 @@
   "Manufacturing, and where inspection visits are received.": [
     "src/components/locale-pages/ContactPage.tsx:105"
   ],
-  "Map: routes from the factory in Zhongshan, Guangdong, to the markets listed beside it": [
-    "src/components/site/ExportMap.tsx:30"
-  ],
-  "Market": [
-    "src/components/site/ExportMap.tsx:33"
+  "Map: routes from the factory in Zhongshan, Guangdong, to the countries listed beside it": [
+    "src/components/site/ExportMap.tsx:32"
   ],
   "Master key plan, input sheet": [
     "content/news/master-key-systems-how-many-levels-you-need.json"
@@ -2307,7 +2301,7 @@
     "src/data/capability.ts:85"
   ],
   "Models on this site, by family": [
-    "src/components/site/ExportMap.tsx:34"
+    "src/components/site/ExportMap.tsx:40"
   ],
   "models we choose from": [
     "src/components/site/ConfiguratorIntro.tsx:34",
@@ -2477,9 +2471,6 @@
   "none published": [
     "src/components/site/OrderCodeTables.tsx:36"
   ],
-  "North America": [
-    "src/components/site/ExportMap.tsx:42"
-  ],
   "North American specifications are written in ANSI/BHMA numbers, and those encode the base metal as well as the appearance — 626 is satin chrome on brass, 652 is the same color on steel, and substituting one for the other is a rejected submittal. So our finish code alone cannot be converted. Each product page carries the BHMA number where the material is stated and a dash where it is not.": [
     "src/components/locale-pages/FinishesPage.tsx:60"
   ],
@@ -2521,9 +2512,6 @@
   ],
   "OEM, private label and everything else": [
     "src/components/locale-pages/ContactPage.tsx:24"
-  ],
-  "Office, Brohl-Lützing": [
-    "src/components/site/ExportMap.tsx:32"
   ],
   "Often, when backset, center distance and faceplate size match. Send the faceplate drawing or the existing model number; we compare it against the drawings we publish and say which case is a drop-in and which needs a new cut-out.": [
     "src/data/category-buying-guides.ts:579"
@@ -2708,6 +2696,9 @@
   ],
   "Our lock cylinders": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:73"
+  ],
+  "Our office in Germany: Brohl-Lützing": [
+    "src/components/site/ExportMap.tsx:35"
   ],
   "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.": [
     "src/components/site/CompanyOverview.tsx:29"
@@ -3094,9 +3085,6 @@
   "Rose": [
     "src/data/hardware-terms.ts:401"
   ],
-  "Russia": [
-    "src/components/site/ExportMap.tsx:39"
-  ],
   "Same 42 records. Mirror polish on the same base metal as SSS.": [
     "src/data/finish-codes.ts:98"
   ],
@@ -3278,7 +3266,7 @@
     "src/components/site/ProductStudies.tsx:58"
   ],
   "Shipped from Zhongshan": [
-    "src/components/site/ExportMap.tsx:27"
+    "src/components/site/ExportMap.tsx:29"
   ],
   "Short answers to what buyers ask": [
     "src/components/site/SiteHeader.tsx:83"
@@ -3346,11 +3334,8 @@
   "Source order": [
     "src/components/site/DataTable.tsx:12"
   ],
-  "South America": [
-    "src/components/site/ExportMap.tsx:43"
-  ],
   "Southeast Asia": [
-    "src/components/site/ExportMap.tsx:41"
+    "src/components/site/ExportMap.tsx:39"
   ],
   "Specification": [
     "src/components/site/CategoryGuide.tsx:22"
@@ -3571,6 +3556,9 @@
   "The 9014 lever": [
     "src/components/site/menu-experience.ts:77",
     "src/components/site/SiteFooter.tsx:48"
+  ],
+  "The Americas": [
+    "src/components/site/ExportMap.tsx:37"
   ],
   "The AR-4 selection": [
     "src/components/site/ArgentinaCollection.tsx:22"
@@ -3892,9 +3880,6 @@
   "Tubular and mortise lever sets in stainless steel, brass and matte black, for homes and light commercial doors.": [
     "src/data/home.ts:31"
   ],
-  "Turkey": [
-    "src/components/site/ExportMap.tsx:40"
-  ],
   "Twelve cylinders, on the 60, 65, 70, 80 and 90mm lengths (counted 2026-09-22). Key-and-Turn — key one side, thumbturn the other — fits the pattern beside DK, and is not confirmed.": [
     "src/data/finish-codes.ts:472"
   ],
@@ -4023,6 +4008,9 @@
   ],
   "Website inquiry": [
     "src/components/site/InquiryForm.tsx:53"
+  ],
+  "Western Europe, Russia and Turkey, North and South America, Japan, Korea, Southeast Asia and Australia. An office in Germany, and a Spanish-speaking team.": [
+    "src/components/site/ExportMap.tsx:30"
   ],
   "What {name} are": [
     "src/components/site/CollectionNote.tsx:22"
@@ -4278,6 +4266,6 @@
     "src/components/site/Configurator.tsx:80"
   ],
   "Zhongshan": [
-    "src/components/site/ExportMap.tsx:36"
+    "src/components/site/ExportMap.tsx:33"
   ]
 }

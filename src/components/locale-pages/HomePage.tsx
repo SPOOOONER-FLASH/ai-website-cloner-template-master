@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { BauShowcase } from "@/components/site/BauEntry";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { ExportMap } from "@/components/site/ExportMap";
@@ -59,14 +58,14 @@ export function HomePage({ locale }: { locale: Locale }) {
         <SiteFacts facts={siteFacts(locale)} heading={siteFactsHeading(locale)} />
       </div>
       <div className="modules">
+        {/* Client 2026-10-12: the export map follows the facts strip directly (「地图挪到数据后面」),
+           which moves the recommended shelf of 2026-09-14 to second place. */}
+        <ExportMap locale={locale} />
         <DemandShowcase locale={locale} />
         <StudioShowcase locale={locale} />
         <FamilyIndex locale={locale} />
         <Spacer heights={content.spacers.s96} />
-        <BauShowcase locale={locale} />
-        <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase locale={locale} />
-        <ExportMap locale={locale} />
         <FactoryStory locale={locale} />
       </div>
     </main>
