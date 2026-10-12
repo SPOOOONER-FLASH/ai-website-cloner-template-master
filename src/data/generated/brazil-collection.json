@@ -332,6 +332,36 @@
   "image": "/images/brazil-collection/br3-st.webp"
  },
  {
+  "id": "br5-s",
+  "model": "BR5-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [
+   "black"
+  ],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br5-s.webp"
+ },
+ {
+  "id": "br5-tk",
+  "model": "BR5-TK",
+  "family": "trim",
+  "outside": "lever-key",
+  "colours": [
+   "grey",
+   "white",
+   "black"
+  ],
+  "nameEn": "Outside lever for panic bars with key",
+  "namePt": "Maçaneta externa para barra antipânico com chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br5-tk.webp"
+ },
+ {
   "id": "br6-d",
   "model": "BR6-D",
   "family": "double",
