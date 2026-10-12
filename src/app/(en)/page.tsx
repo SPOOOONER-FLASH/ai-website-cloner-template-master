@@ -3,6 +3,9 @@ import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { ExportMap } from "@/components/site/ExportMap";
+import { FamilyIndex } from "@/components/site/FamilyIndex";
+import { FactoryStory } from "@/components/site/FactoryStory";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { HandleStoryShowcase } from "@/components/site/HandleStoryShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
@@ -60,12 +63,14 @@ export default function Home() {
         <DemandShowcase />
         {/* The studio row moved to /products (client, 2026-09-30); see HandleStoryShowcase. */}
         <HandleStoryShowcase />
+        <FamilyIndex />
         <Spacer heights={content.spacers.s96} />
 
         <BauShowcase />
         <Spacer heights={content.spacers.s96} />
         {/* Restore the original AR4 photography below the BAU invitation. */}
         <ArgentinaAr4Showcase />
+        <ExportMap />
 
         {/*
           Buyer resources follow the market collection: a specifier arrives holding a
@@ -78,6 +83,7 @@ export default function Home() {
           client's own Alibaba storefront while this site said nothing about it.
         */}
         <FeatureColumns />
+        <FactoryStory />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

@@ -10,6 +10,9 @@ import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { ExportMap } from "@/components/site/ExportMap";
+import { FamilyIndex } from "@/components/site/FamilyIndex";
+import { FactoryStory } from "@/components/site/FactoryStory";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { BauShowcase } from "@/components/site/BauEntry";
@@ -49,15 +52,18 @@ export default function PortugueseHomePage() {
         {/* Same position as the English page. See there for why it leads. */}
         <DemandShowcase locale="pt" />
         <StudioShowcase locale="pt" />
+        <FamilyIndex locale="pt" />
         <Spacer heights={content.spacers.s96} />
 
         <BauShowcase locale="pt" />
         <Spacer heights={content.spacers.s96} />
         {/* Restore the original AR4 photography below the BAU invitation. */}
         <ArgentinaAr4Showcase locale="pt" />
+        <ExportMap locale="pt" />
 
         {/* Buyer resources follow the market collection. */}
         <FeatureColumns locale="pt" />
+        <FactoryStory locale="pt" />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

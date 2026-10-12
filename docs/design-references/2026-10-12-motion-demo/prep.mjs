@@ -5,7 +5,7 @@
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import { geoContains } from "d3-geo";
+import { geoContains, geoEqualEarth } from "d3-geo";
 import { feature } from "topojson-client";
 import land110 from "world-atlas/land-110m.json" with { type: "json" };
 
@@ -77,6 +77,30 @@ const land = feature(land110, land110.objects.land);
 const dots = [];
 for (let lat = 78; lat >= -56; lat -= 2.4) for (let lon = -170; lon <= 180; lon += 2.4)
   if (geoContains(land, [lon, lat])) dots.push([+lon.toFixed(1), +lat.toFixed(1)]);
+
+// The same map for the live homepage (src/components/site/ExportMap.tsx): dots and market
+// points projected once here, so the site needs neither d3-geo nor the world atlas.
+const W = 1000, H = 500;
+const proj = geoEqualEarth().rotate([-15, 0]).fitExtent([[0, 0], [W, H]], { type: "Sphere" }).scale(205).translate([W / 2 + 10, H / 2 + 40]);
+const xy = (lonlat) => proj(lonlat).map((v) => +v.toFixed(1));
+const MARKETS = [
+  { key: "germany", at: [7.32, 50.49], dx: -10, dy: -14, anchor: "end" },
+  { key: "europe", at: [-3.7, 40.4], dx: -10, dy: 18, anchor: "end" },
+  { key: "russia", at: [37.6, 55.75], dx: 10, dy: -12, anchor: "start" },
+  { key: "turkey", at: [32.85, 39.9], dx: 10, dy: 18, anchor: "start" },
+  { key: "southeastAsia", at: [106.8, -6.2], dx: 12, dy: 16, anchor: "start" },
+  { key: "northAmerica", at: [-95, 39], dx: 0, dy: -16, anchor: "middle" },
+  { key: "southAmerica", at: [-58.4, -34.6], dx: 12, dy: 6, anchor: "start" },
+];
+const siteMap = {
+  generatedBy: "docs/design-references/2026-10-12-motion-demo/prep.mjs",
+  viewBox: [W, H],
+  // Whole pixels: a 3px dot does not need a decimal, and the path ships in the homepage HTML.
+  dots: dots.map(([lon, lat]) => { const [x, y] = proj([lon, lat]).map(Math.round); return `M${x} ${y}h0`; }).join(""),
+  origin: { key: "zhongshan", ...Object.fromEntries(xy([113.39, 22.52]).map((v, i) => [i ? "y" : "x", v])) },
+  markets: MARKETS.map(({ key, at, dx, dy, anchor }) => { const [x, y] = xy(at); return { key, x, y, dx, dy, anchor }; }),
+};
+fs.writeFileSync(path.join(SITE, "src/data/generated/export-map.json"), `${JSON.stringify(siteMap, null, 1)}\n`);
 
 for (const c of ["ink", "white"]) for (const k of ["horizontal", "stacked", "icon"])
   fs.copyFileSync(path.join(SITE, `docs/brand/hyde-2026/marks/hyde-${k}-${c}.svg`), path.join(OUT, `hyde-${k}-${c}.svg`));

@@ -3,6 +3,9 @@ import { BauShowcase } from "@/components/site/BauEntry";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { ExportMap } from "@/components/site/ExportMap";
+import { FamilyIndex } from "@/components/site/FamilyIndex";
+import { FactoryStory } from "@/components/site/FactoryStory";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
@@ -61,11 +64,14 @@ export function HomePage({ locale }: { locale: Locale }) {
       <div className="modules">
         <DemandShowcase locale={locale} />
         <StudioShowcase locale={locale} />
+        <FamilyIndex locale={locale} />
         <Spacer heights={content.spacers.s96} />
         <BauShowcase locale={locale} />
         <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase locale={locale} />
+        <ExportMap locale={locale} />
         <FeatureColumns locale={locale} />
+        <FactoryStory locale={locale} />
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />
         <TextModule content={content.text1} />
