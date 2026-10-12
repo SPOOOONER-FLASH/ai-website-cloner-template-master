@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 473 次提交
+最近 30 天 · 共 474 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:15 | 中立 | 手册待办表更新（删 6 条）；新增 Ahrefs/Semrush 只看这几样；桌面整理跳过正在打开的文件和 Word 锁文件 | `566c55408bd` |
 | 03:03 | 中立 | 合并本地提交（ship 旁路合并） | `bcd2ec419d0` |
 | 02:58 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `8fb1b9d4803` |
 | 02:57 | HYDE | 阿根廷集合上线：去掉 OFFLINE/noindex，加入 sitemap，AR-4 页加入口 | `d740408d9b2` |
