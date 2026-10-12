@@ -14,6 +14,7 @@
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import sharp from "sharp";
+import { whitenBackground } from "./whiten.mjs";
 
 const TMP = existsSync(join("tmp", "claude-brazil")) ? join("tmp", "claude-brazil") : join("..", "claude-brazil");
 const OUT_JSON = join("src", "data", "generated", "brazil-collection.json");
@@ -119,6 +120,8 @@ async function square(src, out, cropBottom = 0) {
     const { width, height } = await sharp(src).metadata();
     img = sharp(await img.extract({ left: 0, top: 0, width, height: Math.round(height * (1 - cropBottom)) }).png().toBuffer());
   }
+  const { data, info } = await img.removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  img = sharp(whitenBackground(data, info.width, info.height, info.channels), { raw: { width: info.width, height: info.height, channels: info.channels } });
   await img.trim({ threshold: 12 }).resize(640, 640, { fit: "contain", background: "#ffffff" })
     .extend({ top: 40, bottom: 40, left: 40, right: 40, background: "#ffffff" }).webp({ quality: 82 }).toFile(out);
 }
@@ -152,7 +155,9 @@ async function main() {
       locking: isD ? "vertical" : slug.startsWith("306-ps") ? undefined : "lateral", outside: "none", colours: ["grey"],
       nameEn: p.name, namePt: p.namePt,
       specs: (p.specs ?? []).map((s, i) => ({ labelEn: s.label, labelPt: p.specsPt?.[i]?.label ?? s.label, valueEn: s.value, valuePt: p.specsPt?.[i]?.value ?? s.value })).filter((s) => s.labelEn === "Material"),
-      image: p.heroImage.src, href: `/products/${p.categoryPath[0]}/${p.slug}/`,
+      /* The HYDE-branded plate the catalogue serves, where one exists (it is the one with responsive variants). */
+      image: existsSync(join("public", "images", "products-hyde", basename(p.heroImage.src))) ? `/images/products-hyde/${basename(p.heroImage.src)}` : p.heroImage.src,
+      href: `/products/${p.categoryPath[0]}/${p.slug}/`,
     });
   }
   const ordered = [...models.values()].sort((a, b) => modelOf(a).localeCompare(modelOf(b), "en", { numeric: true }));
@@ -163,6 +168,11 @@ async function main() {
     seen.set(model, n);
     if (n > 1) model += n;
     const id = model.toLowerCase();
+    /* image-picks.json `skipModels`: a model whose photograph could not be cleaned without touching the part. */
+    if (PICKS.skipModels?.includes(model)) {
+      console.log(`${model.padEnd(8)} skipped: listed in skipModels`);
+      continue;
+    }
     const candidates = [...new Set(m.images)].filter((p) => existsSync(p) && !PICKS.exclude.includes(basename(p)));
     if (!candidates.length) {
       console.log(`${model.padEnd(8)} skipped: no usable photograph`);

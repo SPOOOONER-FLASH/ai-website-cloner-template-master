@@ -15,7 +15,7 @@ type Pick = "double" | "single" | "touch" | "trim";
 const picks: { key: Pick; id: string }[] = [
   { key: "double", id: "306-d-panic-exit-device" },
   { key: "single", id: "br5-s" },
-  { key: "touch", id: "br3-st" },
+  { key: "touch", id: "br7-st" },
   { key: "trim", id: "br5-tk" },
 ];
 
