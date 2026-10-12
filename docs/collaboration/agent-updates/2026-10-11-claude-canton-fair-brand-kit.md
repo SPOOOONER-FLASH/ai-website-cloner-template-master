@@ -88,3 +88,10 @@
 - `RETIRED` 按型号前缀排除，所以 LC7065S 和 LC7065PS 也一起排除了；手选过的型号自动排除在其他面之外，不会重复出现。
 - 为了腾出两面：执手和不锈钢拉手合成一面（各 5 款）；球形管状锁和明锁合成一面；组合把手和钩锁这次不上。
 - 共 76 款。印刷版、电子版和折叠效果图都已替换到桌面。
+
+## 2026-10-12, flyer round 3: no bathroom, floor springs or closers; Alibaba models in
+
+- Client: 「卫浴的也下掉 地弹簧 闭门器也不要 换我们的新产品 拳头产品 阿里巴巴重要的产品」.
+- `scripts/catalogue/flyer.py`: the bathroom family is gone, and so are F101 (floor spring) and DSL02/DC02 (closer arm/coordinator). `EXCLUDED` keeps closer, coordinator and floor-spring names out of every auto-pick. Replacements are taken from `docs/research/2026-09-11-alibaba-product-performance.json` (listings with inquiries) plus the AR4 locks: 316-S/D and 309-S/D, 6068, AR4-110/140/1121, 587 SSET, 607 SSET, 5836, 1073D and SSH016. Stainless handles get their own panel of ten Alibaba-listed models. Glass door handles now share a panel with levers. 79 products.
+- `_base` strips finish suffixes ("6491ABET" → "6491"), and auto-picks skip any base already chosen by hand.
+- Tests: the flyer builds and the previews were checked by eye. No site code was touched, so no release is needed.

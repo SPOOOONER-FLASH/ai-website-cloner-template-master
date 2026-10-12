@@ -52,10 +52,12 @@ CONTACT = [
     ("Phone", "+1 703 967 7493"),
     ("Web", "cantonlock.com"),
 ]
-FEATURED = {"307", "311", "305", "316-D", "309-D", "302", "LC14", "564", "9014", "575", "578", "70722"}
+FEATURED = {"307", "311", "305", "316-D", "309-D", "302", "LC14", "564", "9014", "575", "578", "70722",
+            # Alibaba models with inquiries (docs/research/2026-09-11-alibaba-product-performance.json)
+            "587", "607", "5836", "1073D", "SSH016", "70BK"}
 
-# The eight product panels, ten cards each: (title, [(family slug, count)]). The first four
-# run on after the range panel on side B; the other four sit on side A between the covers.
+# The eight product panels, ten cards each: (title, [(family slug, count or explicit slugs)]). The
+# first four run on after the range panel on side B; the other four sit on side A between the covers.
 PRODUCT_PANELS = [
     # Client 2026-10-12: the panic-exit pages of the client's own catalogue go in whole, in
     # their order — devices, then outside trims, then fire-door hardware. Explicit slugs, not
@@ -69,20 +71,47 @@ PRODUCT_PANELS = [
         "026-panic-exit-device-trim", "027-panic-exit-device-trim", "028-panic-exit-device-trim",
         "030-panic-exit-device-trim", "033-panic-exit-device-trim", "035-panic-exit-device-trim",
         "037-panic-exit-device-trim"])]),
+    # Client 2026-10-12, second pass: 「卫浴的也下掉 地弹簧 闭门器也不要 换我们的新产品 拳头产品
+    # 阿里巴巴重要的产品」. DSL02 (closer-type arm) gives way to the 309 and 316 devices, both
+    # listed on the client's Alibaba storefront.
     ("Fire-door hardware", [("panic-exit-devices", [
         "023-etan-anti-pick-panic-exit-device", "023-et-panic-exit-device-trim", "023-ps-panic-exit-device-trim",
-        "036-panic-exit-device", "sh01-panic-exit-device"]), ("hardware-accessories", ["dsl02-door-coordinator"])]),
-    ("Lock cases & cylinders", [("lock-cases", 6), ("lock-cylinders", 4)]),
-    ("Levers & stainless handles", [("lever-handles", 5), ("stainless-steel-handles", 5)]),
-    ("Knob, tubular & rim locks", [("knob-locks", 6), ("night-latches-rim-locks", 4)]),
-    ("Hinges & accessories", [("brass-steel-hinges", 6), ("hardware-accessories", 4)]),
-    ("Glass door & bathroom", [("glass-door-accessories", 6), ("bathroom-accessories", 4)]),
+        "036-panic-exit-device", "sh01-panic-exit-device", "316-s-panic-exit-device", "316-d-panic-exit-device",
+        "309-s-s-panic-exit-device", "309-d-double-door-panic-exit-device"])]),
+    # 6068 has the most Alibaba exposure of any lock case; the AR4 mortise locks are the newest range.
+    ("Lock cases & cylinders", [("lock-cases", ["6068-mortise-lever-handle-lock", "hyde-ar4-110-mortise-lock",
+                                                "hyde-ar4-140-mortise-lock", "hyde-ar4-1121-hook-bolt-lock"]),
+                                ("lock-cases", 2), ("lock-cylinders", 4)]),
+    ("Lever & glass door handles", [("lever-handles", 6), ("glass-door-accessories", [
+        "102-glass-door-handle", "100-glass-door-handle", "104-glass-door-handle", "106-glass-door-handle"])]),
+    ("Knob, tubular & rim locks", [("knob-locks", ["587-sset-light-duty-cylindrical-lock", "607-sset-tubular-lock"]),
+                                   ("knob-locks", 4),
+                                   ("night-latches-rim-locks", ["564-mb-night-latch-and-rim-lock",
+                                                                "5836-night-latch-and-rim-lock",
+                                                                "1073d-night-latch-and-rim-lock"]),
+                                   ("night-latches-rim-locks", 1)]),
+    ("Hinges & accessories", [("brass-steel-hinges", ["ssh016-brass-and-steel-hinges"]),
+                              ("brass-steel-hinges", 5), ("hardware-accessories", 4)]),
+    # Nine of the client's Alibaba listings are stainless handles: they get a panel of their own.
+    ("Stainless steel handles", [("stainless-steel-handles", [
+        "9014-ssbk-stainless-steel-handle", "lh1016-stainless-steel-handle", "lh1033-ss-stainless-steel-handle",
+        "9010e-stainless-steel-handle", "nc013-stainless-steel-handle", "9008s-stainless-steel-handle",
+        "9021-stainless-steel-handle", "9007e-stainless-steel-handle", "nc046-stainless-steel-handle",
+        "lh1056-ss-stainless-steel-handle"])]),
 ]
 # Lock cases the client's principal called too old to show (2026-10-12, 「这些太老旧了」),
 # with their finish variants (LC7065S, LC7065PS).
 RETIRED = ("LC33-5572", "AI8530", "LC7065")
+# Not on the flyer at all (client 2026-10-12): door closers and coordinators, floor springs.
+EXCLUDED = re.compile(r"closer|coordinator|floor.?spring", re.I)
 # Models chosen by hand above are never picked again by a counted group.
 CHOSEN = {s for _, groups in PRODUCT_PANELS for _, spec in groups if isinstance(spec, list) for s in spec}
+
+
+def _chosen_bases() -> set[str]:
+    import json
+    return {_base(json.loads((style.ROOT / "content/products" / f"{s}.json").read_text(encoding="utf8"))["model"])
+            for s in CHOSEN}
 
 
 # The range panel: one row and one code per product panel; the code opens its first family.
@@ -90,8 +119,9 @@ RANGE = [(title, groups) for title, groups in PRODUCT_PANELS]
 
 
 def _base(model: str) -> str:
-    """'575 ABET' -> '575'; '9014 SSBK' -> '9014': one finish per design on a flyer."""
-    return re.split(r"[\s*]", str(model).strip())[0]
+    """'575 ABET' -> '575'; '6491ABET' -> '6491': one finish per design on a flyer."""
+    head = re.split(r"[\s*]", str(model).strip())[0]
+    return re.sub(r"(?<=\d)(AB|AC|BK|ET|MB|PB|SN|SP|SS)[A-Z]*$", "", head)
 
 
 def pick(slug: str, n) -> list[variants.Card]:
@@ -104,10 +134,13 @@ def pick(slug: str, n) -> list[variants.Card]:
         if missing:
             raise ValueError(f"{slug}: not published or no plate: {missing}")
         return [variants.Card(model=by_slug[s]["model"], name=by_slug[s]["name"], product=by_slug[s]) for s in n]
+    chosen = _chosen_bases()
     good = [c for c in variants.cards(samples.ordered(fam))
             if heroes.hero_plate(c.product) and len(samples.card_specs(slug, c.product, 2)) >= 1
             and not re.match(r"^\d+\*\d", str(c.model))  # "6*3*3mm" is a size, not a model
             and c.product.get("slug") not in CHOSEN
+            and _base(c.model) not in chosen
+            and not EXCLUDED.search(f"{c.name} {c.product.get('slug')}")
             and not str(c.model).upper().startswith(RETIRED)]
     good.sort(key=lambda c: (_base(c.model) not in FEATURED and c.model not in FEATURED,
                              -len(samples.card_specs(slug, c.product, 3))))
@@ -212,7 +245,7 @@ def cover(s: Sheet, i: int) -> None:
     s.image(x0 + (x1 - x0 - bw) / 2, bottom - bh, x0 + (x1 - x0 + bw) / 2, bottom, hero)
     s.rule(x0, 160 * MM, x0 + 14 * MM, style.INK, 1.0)
     s.para(x0, 164 * MM, x1, 190 * MM, "Door hardware, made in our own factory since 1998.", 13, "display", style.INK, 1.25)
-    s.text(x0, 196 * MM, "PANIC EXIT · LOCKS · HANDLES · HINGES · GLASS · BATHROOM", 4.9, "text-medium", style.INK3, track=90)
+    s.text(x0, 196 * MM, "PANIC EXIT · LOCKS · HANDLES · HINGES · GLASS DOOR", 4.9, "text-medium", style.INK3, track=90)
 
 
 def factory_panel(s: Sheet, i: int) -> None:
