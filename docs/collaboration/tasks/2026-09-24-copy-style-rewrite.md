@@ -110,6 +110,13 @@
 | 44 | 甲方 10-12：「不是单侧 3 页是 单侧 6页 传单」——传单改单侧 6 面（正反共 12 面），带折叠效果图 | 10-12 完成：flyer.py 改 600×210 风琴折，单侧 6 面；封面 A6、封底 A1，内侧工厂 + 产品线 + 4 类，外侧 4 类；8 类 80 款；电子版 12 页；折叠效果图随生成器出 |
 | 45 | 甲方 10-12：「所有指示 广告 中文和英文大小调换 中文小英文大」——欢迎横幅、路线总图、区域门牌、方向牌全部英文大、中文小 | 10-12 完成：build_signage.py 四种牌子英文做主文字，中文一行灰色小字 |
 | 46 | 甲方 10-12：远高四个方案（D:\clones yunagao 网站\_dist\yuangao-designs-with-node.zip）更正：最喜欢 4，其次 1，3 和 2 也有长处，「你都借鉴 争取 四合一」——怎么给 HYDE 做动画效果，先出四合一方案 | 待问：10-12 方案已出（docs/research/2026-10-12-HYDE动效四合一方案.md + 桌面 docx），以 4 号为主线、1/3/2 各取一段；等甲方答 5 问（Ken Burns、开场幕布、工厂四步照片、时间线年份、页头隐藏）并确认先做演示页 |
+| 47 | 甲方 10-12：「先做演示页，可以用 motion」，要炫酷精美华丽专业——按四合一方案做可滚动演示页（真实图片，独立于正式站） | 10-12 完成：docs/design-references/2026-10-12-motion-demo（Vite + React + motion，npm run build 出单文件），桌面 03-研究与方案/HYDE动效演示页-2026-10-12 双击即看 |
+| 48 | 甲方 10-12 看了演示：「出口地图 + 品类数量条、品类索引（跟手图）、工厂故事 这三部分特别好，甚至可以直接加入现在的首页 你看看怎么放」 | 10-12 完成：FamilyIndex（推荐货架后）、ExportMap（AR4 后）、FactoryStory（FeatureColumns 后），十语首页都加；CSS+小组件不装 motion；等工程会话发布 |
+| 49 | 甲方 10-12：「激光切割加进去，这都不要了 但是图片帮我留着我喜欢 图片放到hyde桌面文件夹」——工厂故事加回激光切割；首页 FactoryStory 之后的旧模块（Panic Exit Devices 大图、Where our hardware is fitted、Designed for、Materials + Engineering、Service + Downloads、Engineering for Export、Hardware Specification）全部撤下，图片复制到桌面 | 10-12 完成：FactoryStory 4 步（加回激光切割，七语）；十语首页撤下 hero2–hero5/text1–3/teaser2–3；8 张图在桌面 03-研究与方案/首页撤下的图片-2026-10-12；home-accent 测试同步；等发布 |
+| 50 | 甲方 10-12「继续」：清理首页撤下模块留下的数据（hero2–hero5、text1–3、teaser2–3 及其测试、i18n 键），图片文件不删 | 10-12 完成：home/home-es/home-pt 删 9 个导出，home-editorial-assets 测试同步，462/462 |
+| 51 | 甲方 10-12（r42 上线后）：工厂故事「和样机不一样，而且很卡，图片变得不对应不灵敏」+「图片帮我优化下分辨率」 | 10-12 完成：换图改 transform（合成层，长帧 0）、按文字块中线切换；四张工厂图 Real-ESRGAN 2×（2000/2616px）+ 角标 + srcset 1440/1920 |
+| 52 | 甲方 10-12：地图按国家细分——西欧全部（德法英西意荷等）、美国加拿大、秘鲁智利阿根廷哥伦比亚厄瓜多尔巴西委内瑞拉、日韩、澳大利亚（保留俄罗斯、土耳其、东南亚） | 10-12 完成：26 国 + 东南亚高亮与航线，Intl.DisplayNames 十语国名，左栏三组 |
+| 53 | 甲方 10-12：首页移除 BAU 板块；出口地图挪到「The factory, in figures」数据条后面 | 10-12 完成：十语首页去掉 BauShowcase，ExportMap 移到 SiteFacts 之后 |
 
 
 ## 待甲方确认（文案）

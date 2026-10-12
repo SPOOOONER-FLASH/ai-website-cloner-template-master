@@ -22,6 +22,8 @@ const eslintConfig = defineConfig([
     // Agent scratch space — gitignored, throwaway, and not worth a lint gate.
     // See the tmp/<agent>-<purpose>/ convention in AGENTS.md.
     "tmp/**",
+    // Stand-alone Vite demos for the client (own package.json and node_modules), not site code.
+    "docs/design-references/*-motion-demo/**",
     /*
       Installed skills are vendored third-party code. Fifteen of their `.cjs` scripts use
       require(), which this config forbids for our own TypeScript — so `npm run check`

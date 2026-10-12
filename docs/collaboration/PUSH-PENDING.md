@@ -290,3 +290,26 @@
 - `092933e4808` seo-audit：/admin/ 之下的页面都不算公开页
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/12 04:48:35 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `bcafa1b8baaf` shiplog: 更新上线存档
+- `ad526cc50581` 首页加入三段：品类索引、出口地图、工厂故事（十语）（#48）
+- `d48b4732a48e` HYDE 动效四合一演示页（独立 Vite 项目，不进正式站）（#47）
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/12 07:43:16 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging src/components/site/editorial-images.config.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `6953d70a4779` shiplog: 更新上线存档
+- `b5223aa5e5a8` 首页：工厂故事换图改合成层并按文字切换、工厂图 2× 清晰化；地图按国家细分；移除 BAU、地图挪到数据条后（#51–#53）
+
+下一次 `npm run ship` 成功时这些会一起推上去。

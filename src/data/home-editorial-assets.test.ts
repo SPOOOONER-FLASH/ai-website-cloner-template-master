@@ -32,13 +32,15 @@ const editorialConfig = JSON.parse(
   field added. `hyde-hero-lever` and `hyde-hero-cylinder` are still in the menu drawer via
   menu-experience.ts and were deliberately left alone; only the homepage cards changed.
 */
+/*
+  Updated 2026-10-12: the client retired every module below the new factory story
+  (「这都不要了」), so the four product plates that lived in hero3, hero4 and teaser3 are no
+  longer homepage assets. The files stay in public/ and on the client's desktop; only the
+  two "Source by range or by project" photographs remain in the home data.
+*/
 const expectedAssets = [
   "/images/editorial/hyde-real-lever-set-dark.webp",
   "/images/editorial/hyde-real-cylinder-dark.webp",
-  "/images/editorial/hyde-real-product-atlas.webp",
-  "/images/editorial/hyde-client-lc04-selection.webp",
-  "/images/editorial/hyde-hero-lockcase.webp",
-  "/images/editorial/hyde-client-black-hinge.webp",
 ] as const;
 
 const approvedEditorialLibrary = ["product-range", "exhibition-wall"].flatMap((kind) =>
@@ -49,8 +51,8 @@ const approvedEditorialLibrary = ["product-range", "exhibition-wall"].flatMap((k
   ),
 );
 
-test("English and Spanish home data use six unique sales-semantic editorial assets", () => {
-  assert.equal(new Set(expectedAssets).size, 6);
+test("English and Spanish home data use two unique sales-semantic editorial assets", () => {
+  assert.equal(new Set(expectedAssets).size, 2);
   for (const asset of expectedAssets) {
     assert.match(homeEn, new RegExp(`src: "${asset.replaceAll("/", "\\/")}"`));
     assert.match(homeEs, new RegExp(`src: "${asset.replaceAll("/", "\\/")}"`));
@@ -65,7 +67,7 @@ test("new homepage asset labels describe visible door-hardware sales context", (
       .filter((line) => expectedAssets.some((asset) => line.includes(asset)))
       .map((line) => source.split(/\r?\n/).indexOf(line));
 
-    assert.equal(relevantLines.length, 6);
+    assert.equal(relevantLines.length, 2);
   }
   assert.match(homeEn, /label: ".*(hardware|lock|hinge|sample|schedule).*"/i);
   assert.match(homeEs, /label: ".*(herrajes|cerradura|bisagra|muestra|cuadro).*"/i);
@@ -117,7 +119,8 @@ test("every new homepage source has responsive candidates and provenance", () =>
  * trees. This test stays as the record of why the value flipped.
  */
 test("the Spanish FAQ card points at the Spanish FAQ page", () => {
-  assert.match(homeEs, /href: "\/es\/faq"/);
+  /* The FAQ card lived in teaser3, retired 2026-10-12; what still holds is that no Spanish
+     home link drops the reader into the English FAQ. */
   assert.doesNotMatch(homeEs, /href: "\/faq"/);
 });
 

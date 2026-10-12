@@ -1,0 +1,26 @@
+{
+  "name": "hyde-motion-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prep": "node prep.mjs",
+    "dev": "vite",
+    "build": "node prep.mjs && vite build"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "d3-geo": "^3.1.1",
+    "lenis": "1.3",
+    "motion": "^14.1.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "playwright-core": "^1.64.0",
+    "vite": "^6.4.4",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}

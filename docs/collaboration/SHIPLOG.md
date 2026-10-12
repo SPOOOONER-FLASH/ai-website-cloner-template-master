@@ -6,51 +6,55 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 481 次提交
+最近 30 天 · 共 485 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:11 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f3cbab91941` |
-| 04:10 | HYDE | 首页轮播：逃生锁说明写回 306-D（客户：实拍合成）；葡语首页加巴西防火门一页 | `f42d7b3bb93` |
-| 04:03 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `58430bd631c` |
-| 04:03 | HYDE | 首页轮播：换逃生锁大图（客户 10-12），加 AR-4、阿根廷集合两页 | `979d66ccb85` |
-| 03:47 | 中立 | 合并本地提交（ship 旁路合并） | `fd4e64dcdf3` |
-| 03:34 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 416dd88cec8c | `8d863f50248` |
-| 03:11 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 3ead954fa4f6 | `416dd88cec8` |
-| 03:15 | 中立 | 手册待办表更新（删 6 条）；新增 Ahrefs/Semrush 只看这几样；桌面整理跳过正在打开的文件和 Word 锁文件 | `566c55408bd` |
-| 03:03 | 中立 | 合并本地提交（ship 旁路合并） | `bcd2ec419d0` |
-| 02:58 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `8fb1b9d4803` |
-| 02:57 | HYDE | 阿根廷集合上线：去掉 OFFLINE/noindex，加入 sitemap，AR-4 页加入口 | `d740408d9b2` |
-| 02:52 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `ef012d967b0` |
-| 02:51 | 中立 | 阿根廷集合：51 张图去冲压品牌字（Candex/INDUSTRIA ARGENTINA/PICCOLO），重打 HYDE 水印 | `25422cf0dc4` |
-| 02:18 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `1e1e8f6d420` |
-| 02:18 | 中立 | 旧地址 hyde-ar4-101 补上 301；跳转生成器遇到过时导出时报错，不再静默跳过 | `ab203bd0b09` |
-| 00:45 | 中立 | 手册：服务器改从 GitLab 拉取，令牌步骤移入 archive；顶部改为硬盘清理第 1 步 | `32238835a5f` |
-| 00:35 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 4c1c1d5ad709 | `f752570b14a` |
-| 00:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d928256ef6c3 | `4c1c1d5ad70` |
-| 00:17 | 中立 | 规格书重生成：AR4-111 改名后补齐 | `ad17be238d8` |
-| 00:10 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `0d126b5c9be` |
-| 00:10 | HYDE | 7240 改名 AR4-101 → AR4-111（安全锁），旧地址 301，七语种同步 | `0071ea58c9b` |
-| 00:03 | HYDE | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `1c486a85811` |
-| 00:03 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `6e002d2c7d6` |
+| 07:51 | HYDE | 指南：finish-code-reference 补 BHMA 652（十语）；欧标锁芯尺寸表十语 SEO 标题/描述（#163 #164） | `705cefd58ce` |
+| 07:46 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `17bcae78fc0` |
+| 07:45 | 中立 | 目标 165–167：Ahrefs 自查、指南推产品与资质 | `f906666289f` |
+| 07:36 | 中立 | Bing 10-12 四张表 + Ahrefs 体检：数据结论与行动；目标 162–165 | `bf9d927f887` |
+| 07:34 | 中立 | 首页 AR-5 四格补 srcset（r43 被 static-export-performance 拦下） | `f8cc37a1666` |
+| 07:28 | HYDE | 首页移除 Columns 栏目（客户：移除 colums） | `5745b4b8924` |
+| 07:20 | 中立 | 合并本地提交（ship 旁路合并） | `9c155f8d7d6` |
+| 07:19 | HYDE · 发布 HYDE | Merge origin/main；首页阿根廷模块复核修正 | `0e2013d12ee` |
+| 05:25 | 中立 | 首页阿根廷模块：照片位换成 AR-5 一排，标题改为阿根廷集合（客户：四个框上面加多一栏给 ar-5） | `889e74cc042` |
+| 04:49 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 087349bb14ed | `9c580cd6606` |
+| 04:53 | HYDE · 发布 HYDE | Merge origin/main：七语 ui.json 两边新增键取并集（无冲突值），SHIPLOG 取远端 | `11d2cb2c848` |
+| 04:41 | HYDE | 首页加入三段：品类索引、出口地图、工厂故事（十语）（#48） | `ad526cc5058` |
+| 04:23 | 中立 | HYDE 动效四合一演示页（独立 Vite 项目，不进正式站）（#47） | `d48b4732a48` |
+| 03:59 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `ec927ec03cb` |
+| 03:57 | 中立 | HYDE 动效四合一方案：4 号主线，1/3/2 各取一段（#46 待问） | `3858c5b37be` |
+| 02:22 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d77574111ba` |
+| 02:19 | 中立 | 传单改单侧 6 面（12 面、80 款）；所有指示牌英文大中文小（#44、#45） | `7060d2978b8` |
+| 00:01 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `9ff0a147958` |
+| 00:00 | 中立 | 目录改墨白、招牌英文为主、传单改三折带折叠预览（#41–#43） | `0214de4a20e` |
 
 ## 2026-10-11
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 23:59 | HYDE | 阿根廷集合：美式拼写；只登记英文+西语（PARTIAL_ROUTES）；站点地图；修图源优先；任务与授权记录 | `0173ebed5b9` |
+| 22:29 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `1493c32a898` |
+| 22:29 | 中立 | 更正：删去的铜色标志文件是 4 个，不是 3 个 | `413d57aa722` |
+| 22:29 | 中立 | 广交会物料改墨白两色；中文全称已确认（#39①、#40） | `6bb1c0c04af` |
+| 22:12 | 中立 | 广交会物料：HYDE 标志精修与规范、风琴折传单、厂内标识（#38） | `ca5d4d51a79` |
+| 21:36 | 中立 | 手册：服务器磁盘 89.86%，四条只读命令查占用（产品大脑不在服务器上） | `e9e216b464c` |
+| 21:33 | 中立 | 文章修订戳补齐（r34 被 stamp --check 拦下） | `80a362d5a80` |
+| 21:20 | 中立 | 手册顶部：GitHub 账号被隐藏 → 服务器配只读 deploy key（指向前端管理会话写的步骤） | `5770a198065` |
+| 21:19 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `9bc55279cda` |
+| 21:19 | HYDE | HYDE 新品三款：SH02 弹簧合页芯、D104 SS 呆锁钥匙芯与旋钮、8829 BL 磁吸插芯执手锁（#157） | `8d872a44ccf` |
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:55 | HYDE | 阿根廷产品集合（预览，未上线）：Candex 45 + Elabora 10，HYDE 水印，规格表 | `638f1ffa46b` |
-| 04:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85c58de7563` |
-| 04:28 | 中立 | Elabora/Piccolo 公开尺寸与 AR4 工厂图纸对照（只核对，不上网站） | `06dbe5d0287` |
-| 00:44 | 中立 | 产品查找器结果卡片补传 locale：韩/西等语种点卡片不再跳到英文页 | `94331c4b51b` |
-| 00:21 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 501ff278c8b | `98fd1ab5720` |
+| 04:50 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `019003ab091` |
+| 04:50 | 中立 | 手册：服务器没拉到新版的排查与手动补拉（#156） | `f71d6cd3155` |
+| 04:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `974b57ad427` |
+| 04:18 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5619229b127` |
+| 04:16 | 中立 | 改深链交给同事：大字分步说明 + 每站编号打勾清单 + LinkedIn（#155） | `a1e386d5d6d` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
 | 00:06 | 中立 | 纪律：回复甲方一律用简体中文（甲方 10-10） | `831bea39928` |
 

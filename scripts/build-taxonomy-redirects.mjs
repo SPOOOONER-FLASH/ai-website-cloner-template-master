@@ -189,6 +189,38 @@ for (const merge of moves.productMerges ?? []) {
 }
 if (videoRules.length) lines.push("# Renamed product videos", ...videoRules);
 
+/*
+  The /video/<slug>/ watch pages, 2026-10-12: the client's Ahrefs 404 list had
+  /video/dc01-panic-exit-device/ and /video/hy-0ss-lock-case/, both merged slugs whose new
+  watch page is live. Root only (no locale mirrors), and only when that page is in the export.
+*/
+const watchRules = [];
+for (const merge of moves.productMerges ?? []) {
+  if (!hasExport || !existsInExport(`/video/${merge.to}/`) || existsInExport(`/video/${merge.from}/`)) continue;
+  for (const from of [`/video/${merge.from}`, `/video/${merge.from}/`]) {
+    watchRules.push(`location = ${from} {`, `    return 301 /video/${merge.to}/;`, "}", "");
+  }
+}
+if (watchRules.length) lines.push("# Renamed video watch pages", ...watchRules);
+
+/*
+  Old-site sitemap names still requested (Ahrefs, first seen 2026-09-08). They are not
+  taxonomy, but this is the one generated conf the server installs on every pull.
+*/
+const RETIRED_FILES = [
+  ["/sitemap_cn.xml", "/sitemap-index.xml"],
+  ["/sitemap_es.xml", "/es/sitemap.xml"],
+];
+const fileRules = [];
+for (const [from, to] of RETIRED_FILES) {
+  if (hasExport && !existsSync(`${EXPORT}${to}`)) {
+    skipped.push(`${from} -> ${to} (not in the export)`);
+    continue;
+  }
+  fileRules.push(`location = ${from} {`, `    return 301 ${to};`, "}", "");
+}
+if (fileRules.length) lines.push("# Retired sitemap file names", ...fileRules);
+
 const conf = lines.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
 
 if (process.argv.includes("--check")) {

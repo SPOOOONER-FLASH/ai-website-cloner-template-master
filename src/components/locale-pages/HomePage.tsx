@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { BauShowcase } from "@/components/site/BauEntry";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
-import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { ExportMap } from "@/components/site/ExportMap";
+import { FamilyIndex } from "@/components/site/FamilyIndex";
+import { FactoryStory } from "@/components/site/FactoryStory";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
-import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { Spacer } from "@/components/site/Spacer";
-import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { homeContent } from "@/data/home-locale";
 import type { Locale } from "@/data/locales";
@@ -59,30 +58,15 @@ export function HomePage({ locale }: { locale: Locale }) {
         <SiteFacts facts={siteFacts(locale)} heading={siteFactsHeading(locale)} />
       </div>
       <div className="modules">
+        {/* Client 2026-10-12: the export map follows the facts strip directly (「地图挪到数据后面」),
+           which moves the recommended shelf of 2026-09-14 to second place. */}
+        <ExportMap locale={locale} />
         <DemandShowcase locale={locale} />
         <StudioShowcase locale={locale} />
-        <Spacer heights={content.spacers.s96} />
-        <BauShowcase locale={locale} />
+        <FamilyIndex locale={locale} />
         <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase locale={locale} />
-        <FeatureColumns locale={locale} />
-        <HeroModule content={content.hero2} homeEditorial />
-        <Spacer heights={content.spacers.s384} />
-        <TextModule content={content.text1} />
-        <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser2} homeAccent />
-        <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero3} homeEditorial />
-        <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero4} homeEditorial />
-        <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text2} />
-        <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser3} homeAccent />
-        <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text3} />
-        <Spacer heights={content.spacers.s48} />
-        <HeroModule content={content.hero5} homeEditorial />
+        <FactoryStory locale={locale} />
       </div>
     </main>
   );
