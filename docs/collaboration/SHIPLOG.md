@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 483 次提交
+最近 30 天 · 共 484 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:01 | 中立 | 传单：逃生推杆按甲方目录页选型、撤三款老锁体（#55）；ISO 问题记录（#56） | `637e3e6297e` |
 | 07:54 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `7a4a3863ce8` |
 | 07:51 | 中立 | 地图加波兰、捷克、北欧四国；中山标「Zhongshan (Canton)」（#54） | `d2574600dfc` |
 | 07:45 | HYDE | Merge origin/main：首页同时去掉 FeatureColumns（另一会话）与旧位置的 ExportMap（本会话已挪到数据条后） | `186e1793cab` |
