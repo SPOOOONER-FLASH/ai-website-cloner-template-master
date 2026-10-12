@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 483 次提交
+最近 30 天 · 共 484 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:42 | 中立 | 硬盘清理：记录结果，加卸载自建 GitLab（可选） | `11c1a763893` |
 | 04:25 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `193634cbdb1` |
 | 04:25 | 中立 | 301：改名产品的 /video/ 观看页、旧 sitemap 文件名；页头 logo 链接加 aria-label | `6223f9f45f4` |
 | 04:11 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f3cbab91941` |
