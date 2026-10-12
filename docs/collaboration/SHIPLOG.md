@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 463 次提交
+最近 30 天 · 共 466 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 00:45 | 中立 | 手册：服务器改从 GitLab 拉取，令牌步骤移入 archive；顶部改为硬盘清理第 1 步 | `32238835a5f` |
+| 00:35 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 4c1c1d5ad709 | `f752570b14a` |
+| 00:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d928256ef6c3 | `4c1c1d5ad70` |
 | 00:17 | 中立 | 规格书重生成：AR4-111 改名后补齐 | `ad17be238d8` |
 | 00:10 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `0d126b5c9be` |
 | 00:10 | HYDE | 7240 改名 AR4-101 → AR4-111（安全锁），旧地址 301，七语种同步 | `0071ea58c9b` |
