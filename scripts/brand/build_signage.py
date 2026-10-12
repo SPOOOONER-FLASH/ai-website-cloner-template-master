@@ -49,6 +49,8 @@ def cjk(page, x, y, txt, size, bold=True, color=INK, align="left"):
 
 
 def gate_sign(p, r, k):
+    # English leads, Chinese is a small line under it: the visitors are foreign buyers
+    # (client 2026-10-11: 「中文字小很小。英文大。主要是给外国人看」).
     p.draw_rect(r, color=None, fill=WHITE, width=0)
     h = r.height
     mark_r = pymupdf.Rect(r.x0 + 0.06 * r.width, r.y0 + 0.24 * h, r.x0 + 0.47 * r.width, r.y1 - 0.24 * h)
@@ -56,11 +58,11 @@ def gate_sign(p, r, k):
     x = r.x0 + 0.53 * r.width
     p.draw_line((x - 0.025 * r.width, r.y0 + 0.24 * h), (x - 0.025 * r.width, r.y1 - 0.24 * h), color=INK, width=max(0.6, 6 * k))
     room = r.x1 - 0.05 * r.width - x
-    cn_size = min(0.2 * h, room / kit.font("cjk-bold").text_length(CN_NAME, 1))
-    cjk(p, x, r.y0 + 0.47 * h, CN_NAME, cn_size, color=INK)
-    t = hm.LEGAL
-    size = min(0.07 * h, (r.x1 - 0.05 * r.width - x) / kit.font("medium").text_length(t, 1))
-    text(p, x, r.y0 + 0.7 * h, t, size, "medium", INK)
+    lines = ("CANTON HYLAND HARDWARE &", "BUILDING MATERIAL CO., LTD.")
+    en = min(0.12 * h, min(room / kit.font("semibold").text_length(t, 1) for t in lines))
+    text(p, x, r.y0 + 0.42 * h, lines[0], en, "semibold", INK)
+    text(p, x, r.y0 + 0.42 * h + 1.2 * en, lines[1], en, "semibold", INK)
+    cjk(p, x, r.y0 + 0.42 * h + 1.2 * en + 0.95 * en, CN_NAME, 0.42 * en, bold=False, color=GREY)
 
 
 def reception_wall(p, r, k):
@@ -68,10 +70,10 @@ def reception_wall(p, r, k):
     m = hm.stacked()
     mr = pymupdf.Rect(r.x0, r.y0 + 0.14 * r.height, r.x1, r.y0 + 0.66 * r.height)
     place_mark(p, mr, m, hm.INK)
-    cjk(p, (r.x0 + r.x1) / 2, r.y0 + 0.8 * r.height, CN_NAME, 0.055 * r.height, color=INK, align="center")
-    size = 0.024 * r.height
-    tr = kit.fit_track(hm.LEGAL, size, "medium", min(kit.text_width(hm.LEGAL, size, "medium", 120), 0.8 * r.width))
-    text(p, (r.x0 + r.x1) / 2, r.y0 + 0.88 * r.height, hm.LEGAL, size, "medium", INK, track=tr, align="center")
+    cx = (r.x0 + r.x1) / 2
+    size = min(0.042 * r.height, 0.8 * r.width / kit.font("semibold").text_length(hm.LEGAL, 1))
+    text(p, cx, r.y0 + 0.79 * r.height, hm.LEGAL, size, "semibold", INK, align="center")
+    cjk(p, cx, r.y0 + 0.79 * r.height + 1.5 * size, CN_NAME, 0.45 * size, bold=False, color=GREY, align="center")
 
 
 def welcome_banner(p, r, k):
@@ -152,10 +154,10 @@ class Sign:
 
 SIGNS = [
     Sign("gate", "门头招牌", (6000, 1200), gate_sign, "1",
-         "白色铝塑板或白色烤漆铝板底板；标志用黑色烤漆不锈钢立体字（厚 50 mm），中文黑色烤漆立体字或黑色亚克力字；英文全称黑色平面字（UV 直印或刻字膜）",
+         "白色铝塑板或白色烤漆铝板底板；标志用黑色烤漆不锈钢立体字（厚 50 mm）；英文全称黑色烤漆立体字（厚 30 mm），是主要文字；中文全称只做一行小字，黑色平面字（UV 直印或刻字膜）",
          "厂区大门上方或主楼正面，下沿离地 ≥ 3 m；尺寸按门头实际宽度等比缩放"),
     Sign("reception", "前台背景墙", (3600, 1600), reception_wall, "1",
-         "白色墙面或白色烤漆铝板背板；标志黑色烤漆立体字（不锈钢或亚克力），厚 30 mm，离墙 20 mm 暗装；中文与英文全称 10 mm 黑色亚克力字或黑色平面字",
+         "白色墙面或白色烤漆铝板背板；标志黑色烤漆立体字（不锈钢或亚克力），厚 30 mm，离墙 20 mm 暗装；英文全称 10 mm 黑色亚克力字；中文全称一行小字，黑色平面字",
          "接待前台正后方墙面，标志中心离地约 1.8 m；前台台面不要高过标志下沿"),
     Sign("welcome", "欢迎横幅", (6000, 900), welcome_banner, "1–2",
          "白底黑字。户外喷绘布（加厚，四边打扣眼）或室内 KT 板；广交会标志必须用主办方官方矢量文件（本稿为截图占位，分辨率不够印刷）",

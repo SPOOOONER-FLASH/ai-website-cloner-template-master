@@ -25,7 +25,9 @@ INK = (0.08, 0.075, 0.06)
 INK2 = (0.34, 0.32, 0.29)
 INK3 = (0.55, 0.53, 0.49)
 RULE = (0.84, 0.82, 0.78)
-BRASS = (0.541, 0.416, 0.122)  # the one accent: rules, folios, section marks
+# The one accent (rules, folios, section marks) is ink: the website's two colours, ink on
+# white (client 2026-10-11: 「目录也改成墨白两色」). It was brass until then.
+ACCENT = INK
 
 FONT_FILES: dict[str, Path] = {
     "text": FONT_DIR / "Archivo-Regular.ttf",
