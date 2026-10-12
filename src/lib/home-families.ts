@@ -11,6 +11,11 @@ import { dict } from "@/lib/i18n";
  * HYDE catalogue and with a photograph) whose first category is in the group. `lead` is the
  * model shown for the group; it must be published, or the build fails rather than showing a
  * family with no picture.
+ *
+ * CHANGING A `lead`: scripts/build-product-image-config.mjs reads these slugs to give their
+ * photographs responsive variants. Run it and `node scripts/generate-editorial-srcsets.mjs`,
+ * or static-export-performance fails the release on a homepage <img> without a srcset — which
+ * is what stopped r41 on 2026-10-12.
  */
 const GROUPS = [
   { key: "panic", slugs: ["panic-exit-devices"], lead: "307-panic-exit-device" },
