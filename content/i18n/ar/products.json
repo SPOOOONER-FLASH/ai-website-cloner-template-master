@@ -12339,6 +12339,50 @@
       "specs": "bfe45686fd6d"
     }
   },
+  "8829-bl-lever-handle": {
+    "name": "قفل غاطس بسقاطة مغناطيسية مع ذراع",
+    "summary": "مقبض ذراع بلون أسود مطفأ على قفل غاطس بسقاطة مغناطيسية: ذراع بطول 160mm، وزر منزلق للقفل، وفتحة مفتاح للطوارئ مخفية تحت صفيحة غطاء قابلة للفك.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Lever length",
+        "value": "160mm"
+      },
+      {
+        "label": "Projection",
+        "value": "51mm"
+      },
+      {
+        "label": "Lock case",
+        "value": "86 × 48mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "85 × 22mm"
+      },
+      {
+        "label": "Latch",
+        "value": "مغناطيسية"
+      },
+      {
+        "label": "Function",
+        "value": "القفل والفتح بزر منزلق؛ فتحة مفتاح للطوارئ تحت صفيحة الغطاء"
+      },
+      {
+        "label": "Finish",
+        "value": "أسود مطفأ"
+      }
+    ],
+    "sourceHash": {
+      "name": "9d13ccbae36c",
+      "summary": "ce9f5d444cad",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "7e8ed0553919"
+    },
+    "seoTitle": "8829 BL قفل غاطس بسقاطة مغناطيسية مع ذراع، 160mm | Canton Hyland",
+    "seoDescription": "8829 BL قفل غاطس بسقاطة مغناطيسية مع ذراع: 160mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب."
+  },
   "90-bskt-lock-cylinder": {
     "name": "أسطوانة القفل",
     "summary": "أسطوانة من النحاس المصمت بمقطع أوروبي بطول 90mm، بتشطيب ساتان (BS).",
@@ -17807,6 +17851,42 @@
       "specs": "97d170e1550e"
     }
   },
+  "d104-ss-deadbolts": {
+    "name": "الترابيس",
+    "summary": "طقم أسطوانة بمفتاح ومقبض دوّار لقفل غاطس، من الفولاذ المقاوم للصدأ SUS304 مع مفاتيح نحاسية ولب أسطوانة قابل للاستبدال.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "فولاذ مقاوم للصدأ SUS304، مفاتيح نحاسية"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "44mm"
+      },
+      {
+        "label": "Height",
+        "value": "31.5mm (جهة المقبض الدوّار)"
+      },
+      {
+        "label": "Cylinder",
+        "value": "لب قابل للاستبدال"
+      },
+      {
+        "label": "Finish",
+        "value": "فولاذ مقاوم للصدأ مصقول بخطوط (ST)"
+      }
+    ],
+    "sourceHash": {
+      "name": "58fac8af82ef",
+      "summary": "1e98632bfee3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "74e69d11844b"
+    },
+    "seoTitle": "D104 SS الترابيس، مباشرة من المصنع | Canton Hyland",
+    "seoDescription": "D104 SS الترابيس. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب."
+  },
   "dc01-door-coordinator": {
     "name": "منظّم تسلسل الإغلاق",
     "features": [
@@ -20851,50 +20931,6 @@
       "specs": "de9e27b1d752"
     }
   },
-  "hyde-ar4-111-mortise-lock": {
-    "name": "جسم قفل غاطس أمني",
-    "summary": "جسم قفل غاطس أمني، المرجع المصنعي 7240، بمسافة ظهر 40 mm ومسافة بين المحورين 72 mm وصفيحة واجهة 220 × 25 mm، يُورَّد مع مفتاحين.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Factory reference",
-        "value": "7240"
-      },
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "40 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "220 × 25 mm"
-      },
-      {
-        "label": "Case height",
-        "value": "140 mm"
-      },
-      {
-        "label": "Latch options",
-        "value": "سبيكة زنك مطلية بالنحاس، أو نحاس"
-      },
-      {
-        "label": "Key options",
-        "value": "سبيكة الزنك أو نحاس؛ مفتاحان"
-      }
-    ],
-    "seoTitle": "AR4-111 جسم قفل غاطس أمني، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
-    "seoDescription": "AR4-111 جسم قفل غاطس أمني: المسافة بين المحورين 72mm، مسافة الظهر 40mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
-    "sourceHash": {
-      "name": "9cad0957c775",
-      "summary": "e927d31a192b",
-      "description": "dd29ecf524b0",
-      "features": "97d170e1550e",
-      "specs": "59b40588960d"
-    }
-  },
   "hyde-ar4-110-mortise-lock": {
     "name": "جسم قفل غاطس أمني",
     "summary": "جسم قفل غاطس أمني بمسافة ظهر 40 mm ومسافة بين المحورين 68 mm وصفيحة واجهة 212 × 25 mm، يُورَّد مع مفتاحين.",
@@ -20937,6 +20973,50 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "629d1c51b20f"
+    }
+  },
+  "hyde-ar4-111-mortise-lock": {
+    "name": "جسم قفل غاطس أمني",
+    "summary": "جسم قفل غاطس أمني، المرجع المصنعي 7240، بمسافة ظهر 40 mm ومسافة بين المحورين 72 mm وصفيحة واجهة 220 × 25 mm، يُورَّد مع مفتاحين.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Factory reference",
+        "value": "7240"
+      },
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
+      },
+      {
+        "label": "Latch options",
+        "value": "سبيكة زنك مطلية بالنحاس، أو نحاس"
+      },
+      {
+        "label": "Key options",
+        "value": "سبيكة الزنك أو نحاس؛ مفتاحان"
+      }
+    ],
+    "seoTitle": "AR4-111 جسم قفل غاطس أمني، أجسام الأقفال، مباشرة من المصنع | Canton Hyland",
+    "seoDescription": "AR4-111 جسم قفل غاطس أمني: المسافة بين المحورين 72mm، مسافة الظهر 40mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب.",
+    "sourceHash": {
+      "name": "9cad0957c775",
+      "summary": "e927d31a192b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -25275,6 +25355,46 @@
       "features": "97d170e1550e",
       "specs": "f0c30d46851d"
     }
+  },
+  "sh02-spring-hinge-pin": {
+    "name": "مسمار مفصلة بنابض",
+    "summary": "مسمار بنابض يجعل الباب المفصلي ذاتي الإغلاق: قطر 19mm، وطول كلي 160mm، مطلي بالزنك، مع شد نابض قابل للضبط.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Diameter",
+        "value": "19mm"
+      },
+      {
+        "label": "Overall length",
+        "value": "160mm"
+      },
+      {
+        "label": "Function",
+        "value": "إغلاق ذاتي، شد نابض قابل للضبط"
+      },
+      {
+        "label": "Finish",
+        "value": "مطلي بالزنك"
+      },
+      {
+        "label": "Accessories",
+        "value": "مسمار شد Ø5 × 100mm، مسمار تثبيت"
+      },
+      {
+        "label": "Application",
+        "value": "الأبواب المعدنية"
+      }
+    ],
+    "sourceHash": {
+      "name": "6d37e29c6bcf",
+      "summary": "75d35629bdbb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "afa37475c50c"
+    },
+    "seoTitle": "SH02 مسمار مفصلة بنابض، 160mm، مباشرة من المصنع | Canton Hyland",
+    "seoDescription": "SH02 مسمار مفصلة بنابض: 160mm. مباشرة من المصنع، والعينات وعروض الأسعار عند الطلب."
   },
   "single-oval-cylinder-lock-cylinder": {
     "name": "أسطوانة القفل",

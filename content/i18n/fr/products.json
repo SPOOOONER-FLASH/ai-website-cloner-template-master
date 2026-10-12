@@ -12339,6 +12339,50 @@
       "specs": "bfe45686fd6d"
     }
   },
+  "8829-bl-lever-handle": {
+    "name": "Serrure à béquille à pêne magnétique",
+    "summary": "Serrure à larder à béquille noir mat avec pêne magnétique : béquille de 160mm, bouton coulissant de condamnation et trou de clé de secours caché sous une plaque amovible.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Lever length",
+        "value": "160mm"
+      },
+      {
+        "label": "Projection",
+        "value": "51mm"
+      },
+      {
+        "label": "Lock case",
+        "value": "86 × 48mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "85 × 22mm"
+      },
+      {
+        "label": "Latch",
+        "value": "Magnétique"
+      },
+      {
+        "label": "Function",
+        "value": "Condamnation et ouverture par bouton coulissant ; trou de clé de secours sous la plaque"
+      },
+      {
+        "label": "Finish",
+        "value": "Noir mat"
+      }
+    ],
+    "sourceHash": {
+      "name": "9d13ccbae36c",
+      "summary": "ce9f5d444cad",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "7e8ed0553919"
+    },
+    "seoTitle": "8829 BL Serrure à béquille à pêne magnétique, 160mm | Canton Hyland",
+    "seoDescription": "8829 BL Serrure à béquille à pêne magnétique : 160mm. Direct usine, échantillons et devis sur demande."
+  },
   "90-bskt-lock-cylinder": {
     "name": "Cylindre de serrure",
     "summary": "Cylindre européen en laiton massif de 90 mm, finition satiné (BS).",
@@ -17807,6 +17851,42 @@
       "specs": "97d170e1550e"
     }
   },
+  "d104-ss-deadbolts": {
+    "name": "Verrous à pêne dormant",
+    "summary": "Ensemble cylindre à clé et bouton tournant pour serrure à larder, en inox SUS304, avec clés en laiton et noyau de cylindre remplaçable.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Inox SUS304, clés en laiton"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "44mm"
+      },
+      {
+        "label": "Height",
+        "value": "31.5mm (côté bouton tournant)"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Noyau remplaçable"
+      },
+      {
+        "label": "Finish",
+        "value": "Inox brossé (ST)"
+      }
+    ],
+    "sourceHash": {
+      "name": "58fac8af82ef",
+      "summary": "1e98632bfee3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "74e69d11844b"
+    },
+    "seoTitle": "D104 SS Verrous à pêne dormant | Canton Hyland",
+    "seoDescription": "D104 SS Verrous à pêne dormant. Direct usine, échantillons et devis sur demande."
+  },
   "dc01-door-coordinator": {
     "name": "Sélecteur de fermeture",
     "features": [
@@ -20851,50 +20931,6 @@
       "specs": "de9e27b1d752"
     }
   },
-  "hyde-ar4-111-mortise-lock": {
-    "name": "Serrure de sécurité à mortaiser",
-    "summary": "Serrure de sécurité à mortaiser, référence usine 7240 : axe de 40 mm, entraxe de 72 mm et têtière de 220 × 25 mm ; livré avec deux clés.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Factory reference",
-        "value": "7240"
-      },
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "40 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "220 × 25 mm"
-      },
-      {
-        "label": "Case height",
-        "value": "140 mm"
-      },
-      {
-        "label": "Latch options",
-        "value": "Alliage de zinc cuivré ou laiton"
-      },
-      {
-        "label": "Key options",
-        "value": "Alliage de zinc ou laiton ; deux clés"
-      }
-    ],
-    "seoTitle": "AR4-111 Serrure de sécurité à mortaiser | Canton Hyland",
-    "seoDescription": "AR4-111 Serrure de sécurité à mortaiser : entraxe 72mm, axe 40mm. Direct usine, échantillons et devis sur demande.",
-    "sourceHash": {
-      "name": "9cad0957c775",
-      "summary": "e927d31a192b",
-      "description": "dd29ecf524b0",
-      "features": "97d170e1550e",
-      "specs": "59b40588960d"
-    }
-  },
   "hyde-ar4-110-mortise-lock": {
     "name": "Serrure de sécurité à mortaiser",
     "summary": "Serrure de sécurité à mortaiser : axe de 40 mm, entraxe de 68 mm et têtière de 212 × 25 mm ; livrée avec deux clés.",
@@ -20937,6 +20973,50 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "629d1c51b20f"
+    }
+  },
+  "hyde-ar4-111-mortise-lock": {
+    "name": "Serrure de sécurité à mortaiser",
+    "summary": "Serrure de sécurité à mortaiser, référence usine 7240 : axe de 40 mm, entraxe de 72 mm et têtière de 220 × 25 mm ; livré avec deux clés.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Factory reference",
+        "value": "7240"
+      },
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
+      },
+      {
+        "label": "Latch options",
+        "value": "Alliage de zinc cuivré ou laiton"
+      },
+      {
+        "label": "Key options",
+        "value": "Alliage de zinc ou laiton ; deux clés"
+      }
+    ],
+    "seoTitle": "AR4-111 Serrure de sécurité à mortaiser | Canton Hyland",
+    "seoDescription": "AR4-111 Serrure de sécurité à mortaiser : entraxe 72mm, axe 40mm. Direct usine, échantillons et devis sur demande.",
+    "sourceHash": {
+      "name": "9cad0957c775",
+      "summary": "e927d31a192b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -25275,6 +25355,46 @@
       "features": "97d170e1550e",
       "specs": "f0c30d46851d"
     }
+  },
+  "sh02-spring-hinge-pin": {
+    "name": "Axe de paumelle à ressort",
+    "summary": "Axe à ressort qui rend une porte battante autofermante : diamètre 19mm, longueur hors tout 160mm, zingué, tension du ressort réglable.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Diameter",
+        "value": "19mm"
+      },
+      {
+        "label": "Overall length",
+        "value": "160mm"
+      },
+      {
+        "label": "Function",
+        "value": "Autofermeture, tension du ressort réglable"
+      },
+      {
+        "label": "Finish",
+        "value": "Zingué"
+      },
+      {
+        "label": "Accessories",
+        "value": "Goupille de tension Ø5 × 100mm, goupille de blocage"
+      },
+      {
+        "label": "Application",
+        "value": "Portes métalliques"
+      }
+    ],
+    "sourceHash": {
+      "name": "6d37e29c6bcf",
+      "summary": "75d35629bdbb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "afa37475c50c"
+    },
+    "seoTitle": "SH02 Axe de paumelle à ressort, 160mm | Canton Hyland",
+    "seoDescription": "SH02 Axe de paumelle à ressort : 160mm. Direct usine, échantillons et devis sur demande."
   },
   "single-oval-cylinder-lock-cylinder": {
     "name": "Cylindre de serrure",

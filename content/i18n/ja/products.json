@@ -12339,6 +12339,50 @@
       "specs": "bfe45686fd6d"
     }
   },
+  "8829-bl-lever-handle": {
+    "name": "マグネット箱錠レバーハンドル",
+    "summary": "マットブラックのレバーハンドルとマグネットラッチ箱錠のセット。160mmレバー、スライド式施錠ボタン、取り外せるカバープレートの下に非常解錠用の鍵穴を備えます。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Lever length",
+        "value": "160mm"
+      },
+      {
+        "label": "Projection",
+        "value": "51mm"
+      },
+      {
+        "label": "Lock case",
+        "value": "86 × 48mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "85 × 22mm"
+      },
+      {
+        "label": "Latch",
+        "value": "マグネット"
+      },
+      {
+        "label": "Function",
+        "value": "スライドで施錠・解錠、カバープレートの下に非常用の鍵穴"
+      },
+      {
+        "label": "Finish",
+        "value": "マットブラック"
+      }
+    ],
+    "sourceHash": {
+      "name": "9d13ccbae36c",
+      "summary": "ce9f5d444cad",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "7e8ed0553919"
+    },
+    "seoTitle": "8829 BL マグネット箱錠レバーハンドル、160mm | Canton Hyland",
+    "seoDescription": "8829 BL マグネット箱錠レバーハンドル（160mm）。工場直販。サンプルとお見積りはご相談ください。"
+  },
   "90-bskt-lock-cylinder": {
     "name": "シリンダー",
     "summary": "サテン仕上げ（BS）の90 mm真鍮無垢のユーロプロファイルシリンダーです。",
@@ -17807,6 +17851,42 @@
       "specs": "97d170e1550e"
     }
   },
+  "d104-ss-deadbolts": {
+    "name": "本締錠",
+    "summary": "箱錠用のシリンダーとサムターンのセット。SUS304ステンレス製、真鍮キー付き、シリンダーのコアは交換できます。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "SUS304ステンレス、真鍮キー"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "44mm"
+      },
+      {
+        "label": "Height",
+        "value": "31.5mm（サムターン側）"
+      },
+      {
+        "label": "Cylinder",
+        "value": "交換式コア"
+      },
+      {
+        "label": "Finish",
+        "value": "ヘアラインステンレス（ST）"
+      }
+    ],
+    "sourceHash": {
+      "name": "58fac8af82ef",
+      "summary": "1e98632bfee3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "74e69d11844b"
+    },
+    "seoTitle": "D104 SS 本締錠、工場直販 | Canton Hyland",
+    "seoDescription": "D104 SS 本締錠。工場直販。サンプルとお見積りはご相談ください。"
+  },
   "dc01-door-coordinator": {
     "name": "ドアコーディネーター（順位調整器）",
     "features": [
@@ -20851,50 +20931,6 @@
       "specs": "de9e27b1d752"
     }
   },
-  "hyde-ar4-111-mortise-lock": {
-    "name": "防犯箱錠",
-    "summary": "防犯箱錠（工場品番7240）です。バックセット40 mm、センター間距離72 mm、フロント220 × 25 mm。鍵2本が付属します。",
-    "features": [],
-    "specs": [
-      {
-        "label": "Factory reference",
-        "value": "7240"
-      },
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "40 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "220 × 25 mm"
-      },
-      {
-        "label": "Case height",
-        "value": "140 mm"
-      },
-      {
-        "label": "Latch options",
-        "value": "銅めっき亜鉛合金または真鍮"
-      },
-      {
-        "label": "Key options",
-        "value": "亜鉛合金または真鍮、キー2本"
-      }
-    ],
-    "seoTitle": "AR4-111 防犯箱錠、芯々距離72mm、バックセット40mm | Canton Hyland",
-    "seoDescription": "AR4-111 防犯箱錠（芯々距離72mm、バックセット40mm）。工場直販。サンプルとお見積りはご相談ください。",
-    "sourceHash": {
-      "name": "9cad0957c775",
-      "summary": "e927d31a192b",
-      "description": "dd29ecf524b0",
-      "features": "97d170e1550e",
-      "specs": "59b40588960d"
-    }
-  },
   "hyde-ar4-110-mortise-lock": {
     "name": "防犯箱錠",
     "summary": "防犯用の箱錠です。バックセット40 mm、センター間距離68 mm、フロント212 × 25 mm。鍵2本が付属します。",
@@ -20937,6 +20973,50 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "629d1c51b20f"
+    }
+  },
+  "hyde-ar4-111-mortise-lock": {
+    "name": "防犯箱錠",
+    "summary": "防犯箱錠（工場品番7240）です。バックセット40 mm、センター間距離72 mm、フロント220 × 25 mm。鍵2本が付属します。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Factory reference",
+        "value": "7240"
+      },
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
+      },
+      {
+        "label": "Latch options",
+        "value": "銅めっき亜鉛合金または真鍮"
+      },
+      {
+        "label": "Key options",
+        "value": "亜鉛合金または真鍮、キー2本"
+      }
+    ],
+    "seoTitle": "AR4-111 防犯箱錠、芯々距離72mm、バックセット40mm | Canton Hyland",
+    "seoDescription": "AR4-111 防犯箱錠（芯々距離72mm、バックセット40mm）。工場直販。サンプルとお見積りはご相談ください。",
+    "sourceHash": {
+      "name": "9cad0957c775",
+      "summary": "e927d31a192b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -25275,6 +25355,46 @@
       "features": "97d170e1550e",
       "specs": "f0c30d46851d"
     }
+  },
+  "sh02-spring-hinge-pin": {
+    "name": "スプリング丁番ピン",
+    "summary": "開き戸を自動で閉まるようにするスプリングピン。直径19mm、全長160mm、亜鉛めっき、ばねの強さを調整できます。",
+    "features": [],
+    "specs": [
+      {
+        "label": "Diameter",
+        "value": "19mm"
+      },
+      {
+        "label": "Overall length",
+        "value": "160mm"
+      },
+      {
+        "label": "Function",
+        "value": "自動閉鎖、ばね強さ調整可"
+      },
+      {
+        "label": "Finish",
+        "value": "亜鉛めっき"
+      },
+      {
+        "label": "Accessories",
+        "value": "テンションピン Ø5 × 100mm、ロックピン"
+      },
+      {
+        "label": "Application",
+        "value": "金属製ドア"
+      }
+    ],
+    "sourceHash": {
+      "name": "6d37e29c6bcf",
+      "summary": "75d35629bdbb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "afa37475c50c"
+    },
+    "seoTitle": "SH02 スプリング丁番ピン、160mm | Canton Hyland",
+    "seoDescription": "SH02 スプリング丁番ピン（160mm）。工場直販。サンプルとお見積りはご相談ください。"
   },
   "single-oval-cylinder-lock-cylinder": {
     "name": "シリンダー",
