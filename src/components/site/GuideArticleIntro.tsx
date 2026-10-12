@@ -11,7 +11,7 @@ export function GuideArticleIntro({ article, locale, contents }: {
   locale: Locale;
   contents: { id: string; text: string; level: number }[];
 }) {
-  const headings = contents.filter(item => item.id !== 'article-overview' && item.id !== 'article-faq').slice(0, 3);
+  const headings = contents.filter(item => item.id !== 'article-overview' && item.id !== 'article-faq' && item.id !== 'article-products').slice(0, 3);
   return <div className={styles.articleIntro} data-photo={isGuideProductPhoto(article.heroImage.src)}>
     <GuideCover article={article} locale={locale} />
     {headings.length > 0 && <nav className={styles.readingPanel} aria-label={tx(locale, 'Start reading', { es: 'Empezar a leer', pt: 'Começar a ler' })}>

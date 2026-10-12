@@ -362,7 +362,8 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
 
   if (!product.modelTbc) quoteParams.set("model", product.model);
 
-  const quoteHref = `${base}/contact/?${quoteParams.toString()}`;
+  /* Fragment, not query: one crawlable URL for every product's quote link, so no nofollow (src/lib/inquiry-prefill.ts). */
+  const quoteHref = `${base}/contact/#${quoteParams.toString()}`;
   const productHref = `${base}/products/${product.categoryPath[0]}/${product.slug}/`;
   const categoryHref = `${base}/products/${product.categoryPath[0]}/`;
 
@@ -622,7 +623,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     the useful addition here because it is the only one that costs the
                     buyer nothing and still moves them forward.
                   */}
-                  <Button href={quoteHref} rel="nofollow">{t.quote}</Button>
+                  <Button href={quoteHref}>{t.quote}</Button>
                   <Button href={`${base}/contact/`} variant="secondary">
                     {t.ask}
                   </Button>

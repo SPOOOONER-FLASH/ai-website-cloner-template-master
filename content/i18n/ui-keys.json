@@ -297,6 +297,9 @@
   "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalog's vocabulary.": [
     "src/data/finish-codes.ts:357"
   ],
+  "A single-door panic bar from the latch housing along the bar, then the housing and vertical rod of a double-door bar.": [
+    "src/components/site/brazil/BrazilCollection.tsx:46"
+  ],
   "A steel plate over the latch on the outside of the door, so the gap cannot be worked open with a pry bar.": [
     "src/lib/configurator.ts:432"
   ],
@@ -328,7 +331,10 @@
     "src/components/site/WelcomeIntro.tsx:24"
   ],
   "About us": [
-    "src/components/site/menu-experience.ts:294"
+    "src/components/site/menu-experience.ts:297"
+  ],
+  "Accessory": [
+    "src/components/site/brazil/brazil-data.ts:56"
   ],
   "Additional product views are not yet available. Request drawings or samples from our export team.": [
     "src/components/site/ProductDetail.tsx:91"
@@ -361,6 +367,9 @@
   ],
   "Already know what you need?": [
     "src/components/site/ConfiguratorIntro.tsx:43"
+  ],
+  "Aluminum": [
+    "src/components/site/brazil/brazil-data.ts:60"
   ],
   "Aluminum doors and narrow stiles": [
     "src/components/site/ArgentinaCollection.tsx:28"
@@ -399,6 +408,9 @@
   "Antique Copper": [
     "src/data/finish-codes.ts:133"
   ],
+  "Any": [
+    "src/components/site/brazil/BrazilCollection.tsx:40"
+  ],
   "Appears both as the code and spelled out as a finish value on the same families.": [
     "src/data/finish-codes.ts:138"
   ],
@@ -417,9 +429,9 @@
     "src/components/site/ProjectDetail.tsx:19"
   ],
   "Applications": [
-    "src/components/site/menu-experience.ts:87",
-    "src/components/site/menu-experience.ts:282",
-    "src/components/site/menu-experience.ts:310",
+    "src/components/site/menu-experience.ts:88",
+    "src/components/site/menu-experience.ts:285",
+    "src/components/site/menu-experience.ts:313",
     "src/components/site/ProjectListing.tsx:22"
   ],
   "Applications + Projects": [
@@ -479,6 +491,9 @@
   ],
   "Ask for it in the form, or write to the orders address above, and say which families you buy and roughly what volume. You will get current prices for what you actually order rather than a PDF you have to translate into your own schedule.": [
     "src/components/locale-pages/ContactPage.tsx:81"
+  ],
+  "Ask for samples and prices": [
+    "src/components/site/brazil/brazil-data.ts:61"
   ],
   "Ask us": [
     "src/components/locale-pages/GlossaryPage.tsx:68"
@@ -547,7 +562,7 @@
     "src/data/privacy-policy.ts:95"
   ],
   "BAU 2027 Munich": [
-    "src/components/site/menu-experience.ts:92",
+    "src/components/site/menu-experience.ts:93",
     "src/components/site/SiteFooter.tsx:56"
   ],
   "BAU 2027, January 11–15, 2027, Messe München. Visit us in Hall C4, Stand 523": [
@@ -560,6 +575,7 @@
     "src/data/hardware-terms.ts:126"
   ],
   "Black": [
+    "src/components/site/brazil/brazil-data.ts:60",
     "src/data/finish-codes.ts:213",
     "src/data/finish-codes.ts:308",
     "src/data/finish-codes.ts:341"
@@ -614,11 +630,14 @@
   "Browse the catalog": [
     "src/components/locale-pages/FaqPage.tsx:39"
   ],
+  "Brushed stainless": [
+    "src/components/site/brazil/brazil-data.ts:60"
+  ],
   "Build a hardware schedule with our export engineers": [
     "src/data/home.ts:119"
   ],
   "Build a hardware set": [
-    "src/components/site/menu-experience.ts:275",
+    "src/components/site/menu-experience.ts:278",
     "src/components/site/products-architecture.ts:202"
   ],
   "Business type": [
@@ -635,7 +654,7 @@
     "src/data/category-buying-guides.ts:78"
   ],
   "Buying": [
-    "src/components/site/menu-experience.ts:106"
+    "src/components/site/menu-experience.ts:107"
   ],
   "By number of published models: {list}.": [
     "src/lib/category-guide.ts:152"
@@ -668,7 +687,7 @@
     "src/data/site.ts:88"
   ],
   "Canton Hyland catalog product families": [
-    "src/components/site/menu-experience.ts:307"
+    "src/components/site/menu-experience.ts:310"
   ],
   "Canton Hyland Hardware &\nBuilding Material Co., Ltd.": [
     "src/components/site/WelcomeIntro.tsx:19"
@@ -747,8 +766,8 @@
     "src/components/locale-pages/CertificationsPage.tsx:62"
   ],
   "Certificates": [
-    "src/components/site/menu-experience.ts:99",
-    "src/components/site/menu-experience.ts:285",
+    "src/components/site/menu-experience.ts:100",
+    "src/components/site/menu-experience.ts:288",
     "src/components/site/SiteHeader.tsx:54"
   ],
   "Certificates and test reports. What is tested, and in whose name.": [
@@ -783,6 +802,9 @@
   ],
   "Choose an opening and build the hardware set": [
     "src/components/site/menu-experience.ts:59"
+  ],
+  "Choose by door": [
+    "src/components/site/brazil/BrazilCollection.tsx:31"
   ],
   "Choose your location and language": [
     "src/lib/locale-picker.ts:103",
@@ -828,7 +850,7 @@
     "src/components/site/DocumentInventory.tsx:32"
   ],
   "Client catalog photograph of a storefront push/pull lock": [
-    "src/components/site/menu-experience.ts:314"
+    "src/components/site/menu-experience.ts:317"
   ],
   "Client catalog photograph of a storefront push/pull lock mechanism": [
     "src/components/site/products-architecture.ts:127"
@@ -884,6 +906,12 @@
   "Code": [
     "src/components/site/OrderCodeTables.tsx:28"
   ],
+  "Color": [
+    "src/components/site/brazil/BrazilCollection.tsx:39"
+  ],
+  "Colors": [
+    "src/components/site/brazil/BrazilCollection.tsx:51"
+  ],
   "Come and see the factory, or send us a drawing": [
     "src/components/site/CompanyOverview.tsx:39"
   ],
@@ -902,8 +930,8 @@
   "Company": [
     "src/components/site/AuthorProfile.tsx:31",
     "src/components/site/InquiryForm.tsx:29",
-    "src/components/site/menu-experience.ts:98",
-    "src/components/site/menu-experience.ts:292",
+    "src/components/site/menu-experience.ts:99",
+    "src/components/site/menu-experience.ts:295",
     "src/components/site/SiteHeader.tsx:503",
     "src/components/site/SiteHeader.tsx:509"
   ],
@@ -946,16 +974,16 @@
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:133",
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:145",
     "src/components/site/FinderModeSwitch.tsx:44",
-    "src/components/site/menu-experience.ts:75",
-    "src/components/site/menu-experience.ts:275",
+    "src/components/site/menu-experience.ts:76",
+    "src/components/site/menu-experience.ts:278",
     "src/components/site/SiteFooter.tsx:46"
   ],
   "Configurator — Find the Right Model": [
     "src/components/locale-pages/ConfiguratorPage.tsx:16"
   ],
   "Configurator Studio": [
-    "src/components/site/menu-experience.ts:76",
-    "src/components/site/menu-experience.ts:276",
+    "src/components/site/menu-experience.ts:77",
+    "src/components/site/menu-experience.ts:279",
     "src/components/site/SiteHeader.tsx:440",
     "src/components/site/StudioShowcase.tsx:40"
   ],
@@ -966,8 +994,8 @@
     "src/components/site/ProjectDetail.tsx:23"
   ],
   "Contact": [
-    "src/components/site/menu-experience.ts:110",
-    "src/components/site/menu-experience.ts:297",
+    "src/components/site/menu-experience.ts:111",
+    "src/components/site/menu-experience.ts:300",
     "src/components/site/SiteFooter.tsx:17",
     "src/components/site/SiteHeader.tsx:108",
     "src/components/site/SiteMenuDrawer.tsx:19"
@@ -1022,7 +1050,7 @@
     "src/data/hardware-terms.ts:359"
   ],
   "Cylinder calculator": [
-    "src/components/site/menu-experience.ts:81",
+    "src/components/site/menu-experience.ts:82",
     "src/components/site/SiteFooter.tsx:52"
   ],
   "Cylinder, LC04, finish, EN 1125…": [
@@ -1170,7 +1198,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Direct routes": [
-    "src/components/site/menu-experience.ts:267"
+    "src/components/site/menu-experience.ts:270"
   ],
   "Discuss OEM or private-label production": [
     "src/data/capability.ts:213"
@@ -1210,7 +1238,7 @@
   ],
   "Documents": [
     "src/components/locale-pages/DocumentsPage.tsx:24",
-    "src/components/site/menu-experience.ts:100",
+    "src/components/site/menu-experience.ts:101",
     "src/components/site/SiteFooter.tsx:53"
   ],
   "Documents already available": [
@@ -1224,6 +1252,9 @@
   ],
   "Door & Window Hardware": [
     "src/components/site/products-architecture.ts:181"
+  ],
+  "Door and locking": [
+    "src/components/site/brazil/BrazilCollection.tsx:51"
   ],
   "door closer": [
     "src/data/category-sourcing.ts:41"
@@ -1289,10 +1320,18 @@
     "src/components/site/InquiryForm.tsx:44"
   ],
   "Double door": [
+    "src/components/site/brazil/brazil-data.ts:54",
+    "src/components/site/brazil/BrazilCollection.tsx:35",
     "src/data/finish-codes.ts:545"
+  ],
+  "Double doors": [
+    "src/components/site/brazil/brazil-data.ts:48"
   ],
   "Double key": [
     "src/data/finish-codes.ts:459"
+  ],
+  "Double-door panic bar": [
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:30"
   ],
   "Download": [
     "src/components/locale-pages/DownloadsPage.tsx:92"
@@ -1310,8 +1349,8 @@
     "src/components/site/ProductSpecSheetLink.tsx:12"
   ],
   "Downloads": [
-    "src/components/site/menu-experience.ts:101",
-    "src/components/site/menu-experience.ts:284",
+    "src/components/site/menu-experience.ts:102",
+    "src/components/site/menu-experience.ts:287",
     "src/components/site/ProductDetail.tsx:59",
     "src/components/site/SiteHeader.tsx:110"
   ],
@@ -1425,8 +1464,8 @@
     "src/components/site/ExportMap.tsx:30"
   ],
   "Events": [
-    "src/components/site/menu-experience.ts:91",
-    "src/components/site/menu-experience.ts:296",
+    "src/components/site/menu-experience.ts:92",
+    "src/components/site/menu-experience.ts:299",
     "src/components/site/SiteHeader.tsx:53"
   ],
   "Every category in the catalog": [
@@ -1454,7 +1493,7 @@
     "src/components/site/ProductsEditorialOverview.tsx:32"
   ],
   "Every product category": [
-    "src/components/site/menu-experience.ts:273"
+    "src/components/site/menu-experience.ts:276"
   ],
   "Every spring publishes its capacity per variant — {leafWeight} — and a model number ending in the figure is that variant. Pick the band above your leaf weight, not the one it just fits: glass is heavier than it looks, and a spring at its limit closes slowly and wears early. Confirm the door width on the record as well, because a wide light leaf can exceed a spring the weight alone would have passed.": [
     "src/data/category-buying-guides.ts:402"
@@ -1466,7 +1505,7 @@
     "src/components/site/products-architecture.ts:183"
   ],
   "Evidence": [
-    "src/components/site/menu-experience.ts:96"
+    "src/components/site/menu-experience.ts:97"
   ],
   "Exact model scope": [
     "src/components/locale-pages/CertificationsPage.tsx:21",
@@ -1514,8 +1553,8 @@
     "src/components/site/ProductStudies.tsx:44"
   ],
   "Export desk": [
-    "src/components/site/menu-experience.ts:115",
-    "src/components/site/menu-experience.ts:317"
+    "src/components/site/menu-experience.ts:116",
+    "src/components/site/menu-experience.ts:320"
   ],
   "Export markets": [
     "src/components/site/ExportMap.tsx:28"
@@ -1536,6 +1575,9 @@
     "src/components/locale-pages/ContactPage.tsx:108",
     "src/components/site/ExportMap.tsx:34"
   ],
+  "Factory footage. Not a render.": [
+    "src/components/site/brazil/BrazilCollection.tsx:45"
+  ],
   "Factory photograph": [
     "src/components/site/CompanyOverview.tsx:30"
   ],
@@ -1546,7 +1588,7 @@
     "src/components/site/ProductsEditorialOverview.tsx:25"
   ],
   "FAQ": [
-    "src/components/site/menu-experience.ts:102",
+    "src/components/site/menu-experience.ts:103",
     "src/components/site/SiteFooter.tsx:54",
     "src/components/site/SiteHeader.tsx:109"
   ],
@@ -1563,13 +1605,13 @@
     "src/components/locale-pages/DownloadsPage.tsx:32"
   ],
   "Filter and compare": [
-    "src/components/site/menu-experience.ts:274"
+    "src/components/site/menu-experience.ts:277"
   ],
   "Filter by type": [
     "src/components/site/CategoryFilter.tsx:49"
   ],
   "Filter published models by family, finish and door condition.": [
-    "src/components/site/menu-experience.ts:304"
+    "src/components/site/menu-experience.ts:307"
   ],
   "Filter the Canton Hyland catalog by category, series, material, finish, door type and certification to build a hardware schedule.": [
     "src/components/locale-pages/ProductFinderPage.tsx:21"
@@ -1715,8 +1757,8 @@
   ],
   "Glossary": [
     "src/components/locale-pages/GlossaryPage.tsx:30",
-    "src/components/site/menu-experience.ts:90",
-    "src/components/site/menu-experience.ts:288",
+    "src/components/site/menu-experience.ts:91",
+    "src/components/site/menu-experience.ts:291",
     "src/components/site/SiteFooter.tsx:50"
   ],
   "Google Analytics 4 and Google Tag Manager, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics sets cookies and records the pages viewed, approximate location, device and browser, how far you scroll, how long you read, and clicks on product and contact links. When you send a product inquiry, the inquiry event carries the same one-word first-touch source. Google Analytics 4 does not store IP addresses. Google Tag Manager loads such tags and does not itself profile you. Data may be processed by Google LLC in the USA. More: policies.google.com/privacy": [
@@ -1746,6 +1788,9 @@
   "Grand master (GMK)": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:35"
   ],
+  "Gray": [
+    "src/components/site/brazil/brazil-data.ts:60"
+  ],
   "Grip and lock as one set, so the fixing centers agree before anything is cut.": [
     "src/data/category-positioning.json"
   ],
@@ -1771,7 +1816,7 @@
   "Guides": [
     "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
-    "src/components/site/menu-experience.ts:88",
+    "src/components/site/menu-experience.ts:89",
     "src/components/site/NewsDetail.tsx:92"
   ],
   "Guides and News": [
@@ -1805,7 +1850,7 @@
     "src/components/site/GuideListing.tsx:14"
   ],
   "Hardware in focus": [
-    "src/components/site/menu-experience.ts:78",
+    "src/components/site/menu-experience.ts:79",
     "src/components/site/ProductStudies.tsx:41",
     "src/components/site/SiteFooter.tsx:47"
   ],
@@ -2052,7 +2097,7 @@
     "src/data/category-sourcing.ts:37"
   ],
   "Knowledge": [
-    "src/components/site/menu-experience.ts:85"
+    "src/components/site/menu-experience.ts:86"
   ],
   "Language": [
     "src/lib/locale-picker.ts:105"
@@ -2071,6 +2116,9 @@
   ],
   "Latches the leaf at more than one point, for double doors and leaves too tall for a single latch.": [
     "src/data/category-positioning.json"
+  ],
+  "Leading Brazilian fire-door makers buy their panic bars from us: single and double doors, side latch or top-and-bottom rods, with or without an outside lever.": [
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:26"
   ],
   "Leaf size is stated per model in inches and millimeters — 4\" × 3\" is the most common — in the materials {materials}. Leaf thickness is stated per model, and several sizes are made to order for a project quantity.": [
     "src/data/category-buying-guides.ts:313"
@@ -2143,7 +2191,7 @@
     "src/data/category-sourcing.ts:46"
   ],
   "Locks and architectural door hardware": [
-    "src/components/locale-pages/HomePage.tsx:21"
+    "src/components/locale-pages/HomePage.tsx:22"
   ],
   "Locks and cylinders": [
     "src/components/site/products-architecture.ts:62"
@@ -2156,6 +2204,9 @@
   ],
   "Looking for a copper hinge?": [
     "src/data/category-notes.ts:48"
+  ],
+  "Made in our own molds": [
+    "src/components/site/brazil/BrazilCollection.tsx:44"
   ],
   "Made in Xiaolan. Since 1998.": [
     "src/components/site/WelcomeIntro.tsx:16"
@@ -2173,7 +2224,7 @@
     "src/components/locale-pages/CollectionPage.tsx:61"
   ],
   "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
-    "src/components/locale-pages/HomePage.tsx:29"
+    "src/components/locale-pages/HomePage.tsx:30"
   ],
   "Manufacturing": [
     "src/data/capability.ts:208"
@@ -2193,8 +2244,14 @@
   "Manufacturing, and where inspection visits are received.": [
     "src/components/locale-pages/ContactPage.tsx:105"
   ],
+  "Many of the panic bars sold in Brazil leave our factory under another name. Yours can carry your brand the same way, on the housing and on the bar.": [
+    "src/components/site/brazil/BrazilCollection.tsx:49"
+  ],
   "Map: routes from the factory in Zhongshan, Guangdong, to the countries listed beside it": [
     "src/components/site/ExportMap.tsx:32"
+  ],
+  "Market focus · Brazil": [
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:24"
   ],
   "Master key plan, input sheet": [
     "content/news/master-key-systems-how-many-levels-you-need.json"
@@ -2269,8 +2326,8 @@
   ],
   "Model lookup": [
     "src/components/locale-pages/ModelLookupPage.tsx:28",
-    "src/components/site/menu-experience.ts:79",
-    "src/components/site/menu-experience.ts:287",
+    "src/components/site/menu-experience.ts:80",
+    "src/components/site/menu-experience.ts:290",
     "src/components/site/SiteFooter.tsx:51"
   ],
   "Model number — 306 PS, LH852, 70720": [
@@ -2411,19 +2468,19 @@
   ],
   "News": [
     "src/components/site/AuthorProfile.tsx:29",
-    "src/components/site/menu-experience.ts:295"
+    "src/components/site/menu-experience.ts:298"
   ],
   "News + Insights": [
     "src/components/locale-pages/ArticlePages.tsx:24"
   ],
   "News + Press": [
-    "src/components/site/menu-experience.ts:89",
+    "src/components/site/menu-experience.ts:90",
     "src/components/site/NewsDetail.tsx:44",
     "src/components/site/NewsDetail.tsx:91",
     "src/components/site/NewsListing.tsx:17"
   ],
   "Newsletter": [
-    "src/components/site/menu-experience.ts:111",
+    "src/components/site/menu-experience.ts:112",
     "src/components/site/SiteFooter.tsx:195"
   ],
   "Newsletter request": [
@@ -2441,6 +2498,9 @@
   "night latch and rim lock": [
     "src/data/category-sourcing.ts:34"
   ],
+  "No catalog model fits this door yet. We cut new molds to a customer's sample or drawing: send us yours.": [
+    "src/components/site/brazil/BrazilCollection.tsx:50"
+  ],
   "No guides match these filters.": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
@@ -2452,6 +2512,9 @@
   ],
   "No model number yet?": [
     "src/components/site/ConfiguratorTeaser.tsx:38"
+  ],
+  "No outside access": [
+    "src/components/site/brazil/brazil-data.ts:59"
   ],
   "No product-specific certificate is published for this model. Company credentials remain available through the export team.": [
     "src/components/site/ProductDetail.tsx:95"
@@ -2508,7 +2571,7 @@
     "src/components/locale-pages/SimplePages.tsx:29"
   ],
   "OEM services": [
-    "src/components/site/menu-experience.ts:108"
+    "src/components/site/menu-experience.ts:109"
   ],
   "OEM tooling, private label, export": [
     "src/components/site/SiteHeader.tsx:52"
@@ -2544,8 +2607,8 @@
     "src/data/capability.ts:209"
   ],
   "One contact from sample review to production order.": [
-    "src/components/site/menu-experience.ts:116",
-    "src/components/site/menu-experience.ts:318"
+    "src/components/site/menu-experience.ts:117",
+    "src/components/site/menu-experience.ts:321"
   ],
   "One cylindrical lock. Shares its letters with the finish code BS, which is why the parser reads position rather than letters — see src/lib/order-code.ts.": [
     "src/data/finish-codes.ts:499"
@@ -2614,6 +2677,9 @@
     "src/components/site/BauMeetingForm.tsx:21",
     "src/components/site/InquiryForm.tsx:52"
   ],
+  "Opening from outside": [
+    "src/components/site/brazil/BrazilCollection.tsx:36"
+  ],
   "Opening furniture": [
     "src/components/site/products-architecture.ts:155"
   ],
@@ -2643,8 +2709,8 @@
   ],
   "Order codes": [
     "src/components/locale-pages/FinishesPage.tsx:26",
-    "src/components/site/menu-experience.ts:80",
-    "src/components/site/menu-experience.ts:286"
+    "src/components/site/menu-experience.ts:81",
+    "src/components/site/menu-experience.ts:289"
   ],
   "Order Codes + Finishes": [
     "src/components/locale-pages/FinishesPage.tsx:14"
@@ -2719,10 +2785,25 @@
     "src/data/category-positioning.json"
   ],
   "Outside": [
+    "src/components/site/brazil/BrazilCollection.tsx:51",
     "src/components/site/CylinderCalculator.tsx:57"
+  ],
+  "Outside access": [
+    "src/components/site/brazil/brazil-data.ts:55",
+    "src/components/site/brazil/BrazilCollection.tsx:38"
   ],
   "Outside face of the door to the fixing-screw center (mm)": [
     "src/components/site/CylinderCalculator.tsx:54"
+  ],
+  "Outside lever": [
+    "src/components/site/brazil/brazil-data.ts:59"
+  ],
+  "Outside lever with key": [
+    "src/components/site/brazil/brazil-data.ts:59",
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:33"
+  ],
+  "Outside levers and locks": [
+    "src/components/site/brazil/brazil-data.ts:49"
   ],
   "Overall lengths we publish": [
     "src/components/site/CylinderCalculator.tsx:73"
@@ -2732,6 +2813,11 @@
   ],
   "Packing + export": [
     "src/data/capability.ts:180"
+  ],
+  "Panic bars for Brazil": [
+    "src/components/site/brazil/brazil-data.ts:45",
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:25",
+    "src/components/site/menu-experience.ts:74"
   ],
   "panic exit device": [
     "src/data/category-sourcing.ts:33"
@@ -2751,6 +2837,9 @@
   "Partial 3D model": [
     "src/components/site/ProductModel.tsx:10"
   ],
+  "Parts and accessories": [
+    "src/components/site/brazil/brazil-data.ts:50"
+  ],
   "Passage, no locking": [
     "src/data/finish-codes.ts:414"
   ],
@@ -2766,6 +2855,9 @@
   "Patch, lock and pull families": [
     "src/components/site/products-architecture.ts:167"
   ],
+  "Pause film": [
+    "src/components/site/brazil/BrazilCollection.tsx:47"
+  ],
   "People arrive here looking for a file rather than a product: a cutsheet for a lock, a DWG, a BIM object, a ficha técnica. This page is the honest inventory, in the order of how much of it exists.": [
     "src/components/locale-pages/DocumentsPage.tsx:35"
   ],
@@ -2774,6 +2866,9 @@
   ],
   "Photography for this model is being prepared.": [
     "src/components/site/Configurator.tsx:79"
+  ],
+  "Photos": [
+    "src/components/site/brazil/BrazilCollection.tsx:42"
   ],
   "Pick a range, switch finish and function, and the photograph on the stage changes to the exact part with its order code. Nothing is rendered: every image is the real model.": [
     "src/components/site/StudioShowcase.tsx:53"
@@ -2786,6 +2881,9 @@
   ],
   "Plate, rose and lever blanks are pressed in house from brass, stainless steel and zinc alloy. Working from our own tooling is what keeps the hole positions on the hundredth plate identical to the first — which matters more than it sounds, because a fixing center that has drifted two millimeters cannot be corrected on site.": [
     "src/data/capability.ts:96"
+  ],
+  "Play film": [
+    "src/components/site/brazil/BrazilCollection.tsx:47"
   ],
   "Polished Brass": [
     "src/data/finish-codes.ts:113",
@@ -2822,7 +2920,7 @@
   ],
   "Price list": [
     "src/components/locale-pages/ContactPage.tsx:76",
-    "src/components/site/menu-experience.ts:109",
+    "src/components/site/menu-experience.ts:110",
     "src/components/site/SiteFooter.tsx:55"
   ],
   "privacy notice": [
@@ -2851,9 +2949,9 @@
     "src/components/locale-pages/ProductFinderPage.tsx:42",
     "src/components/locale-pages/ProductFinderPage.tsx:54",
     "src/components/locale-pages/ProductFinderPage.tsx:57",
-    "src/components/site/menu-experience.ts:74",
-    "src/components/site/menu-experience.ts:274",
-    "src/components/site/menu-experience.ts:303",
+    "src/components/site/menu-experience.ts:75",
+    "src/components/site/menu-experience.ts:277",
+    "src/components/site/menu-experience.ts:306",
     "src/components/site/ProductStudies.tsx:47",
     "src/components/site/SiteHeader.tsx:431"
   ],
@@ -2895,7 +2993,7 @@
     "src/components/locale-pages/ProductPage.tsx:95",
     "src/components/locale-pages/ProductsIndexPage.tsx:36",
     "src/components/site/menu-experience.ts:70",
-    "src/components/site/menu-experience.ts:273",
+    "src/components/site/menu-experience.ts:276",
     "src/components/site/ProductDetail.tsx:86",
     "src/components/site/ProductsEditorialOverview.tsx:23",
     "src/components/site/SiteHeader.tsx:415",
@@ -3005,6 +3103,9 @@
   ],
   "Records carrying the code also carry “Matte Black” and “Matt Black” as the written value.": [
     "src/data/finish-codes.ts:208"
+  ],
+  "Red": [
+    "src/components/site/brazil/brazil-data.ts:60"
   ],
   "Reference": [
     "src/components/locale-pages/DownloadsPage.tsx:137",
@@ -3154,7 +3255,10 @@
     "src/components/locale-pages/SimplePages.tsx:42"
   ],
   "See how coordinated hardware meets the opening.": [
-    "src/components/site/menu-experience.ts:311"
+    "src/components/site/menu-experience.ts:314"
+  ],
+  "See the Brazil collection": [
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:27"
   ],
   "See the full panic exit range": [
     "src/lib/flagship-tooling.ts:110"
@@ -3219,6 +3323,9 @@
   "Send the three measurements": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:74"
   ],
+  "Send us the door, the quantity and the color. We answer with the model and a quotation.": [
+    "src/components/site/brazil/BrazilCollection.tsx:52"
+  ],
   "Send your brief": [
     "src/components/site/ServicesView.tsx:56"
   ],
@@ -3252,7 +3359,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:41"
   ],
   "Services": [
-    "src/components/site/menu-experience.ts:283",
+    "src/components/site/menu-experience.ts:286",
     "src/components/site/ServicesView.tsx:40",
     "src/components/site/SiteHeader.tsx:52"
   ],
@@ -3274,6 +3381,9 @@
   "Short answers to what buyers ask": [
     "src/components/site/SiteHeader.tsx:83"
   ],
+  "Show all": [
+    "src/components/site/brazil/BrazilCollection.tsx:41"
+  ],
   "Showing {count} published products. Filters for backset, center distance and door thickness arrive with the full technical catalog; until then, each product page lists the figures it has.": [
     "src/components/locale-pages/ProductFinderPage.tsx:67"
   ],
@@ -3286,6 +3396,9 @@
   "Shows occupied or vacant from outside. Confirm the emergency release before ordering.": [
     "src/data/category-positioning.json"
   ],
+  "Side latch": [
+    "src/components/site/brazil/brazil-data.ts:58"
+  ],
   "Sign-up here": [
     "src/components/site/SiteFooter.tsx:206"
   ],
@@ -3296,13 +3409,26 @@
     "src/data/category-buying-guides.ts:128"
   ],
   "Single door": [
+    "src/components/site/brazil/brazil-data.ts:53",
     "src/data/finish-codes.ts:536"
+  ],
+  "Single door, side latch": [
+    "src/components/site/brazil/BrazilCollection.tsx:33"
+  ],
+  "Single door, top and bottom rods": [
+    "src/components/site/brazil/BrazilCollection.tsx:34"
+  ],
+  "Single doors": [
+    "src/components/site/brazil/brazil-data.ts:47"
   ],
   "Single or double cylinder — which one?": [
     "src/data/category-buying-guides.ts:355"
   ],
   "Single- and double-cylinder deadbolts for residential entrance doors, bought by hardware distributors alongside our knob locks and lever sets so the whole door keys alike. The {count} models are made here, by the manufacturer, with a 25mm throw and an adjustable backset, for wholesale supply.": [
     "src/data/category-buying-guides.ts:340"
+  ],
+  "Single-door panic bar": [
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:31"
   ],
   "Size charts, standards and selection references": [
     "src/components/site/SiteHeader.tsx:82"
@@ -3329,7 +3455,7 @@
     "src/data/category-positioning.json"
   ],
   "Source": [
-    "src/components/site/menu-experience.ts:280"
+    "src/components/site/menu-experience.ts:283"
   ],
   "Source by range or by project": [
     "src/data/home.ts:98"
@@ -3359,7 +3485,7 @@
     "src/data/category-buying-guides.ts:149"
   ],
   "Specify": [
-    "src/components/site/menu-experience.ts:271"
+    "src/components/site/menu-experience.ts:274"
   ],
   "Specify and source": [
     "src/components/site/products-architecture.ts:197"
@@ -3371,7 +3497,7 @@
     "src/components/site/menu-experience.ts:44"
   ],
   "Specify. Source. Know the factory.": [
-    "src/components/site/menu-experience.ts:268"
+    "src/components/site/menu-experience.ts:271"
   ],
   "Spindle": [
     "src/data/hardware-terms.ts:339"
@@ -3467,13 +3593,16 @@
     "src/components/site/products-architecture.ts:173"
   ],
   "Switch finish and function": [
-    "src/components/site/menu-experience.ts:276"
+    "src/components/site/menu-experience.ts:279"
   ],
   "Switch finish and function on the real part": [
     "src/components/site/FinderModeSwitch.tsx:47"
   ],
   "Switch finish and function on the real part and read off the order code": [
     "src/components/site/menu-experience.ts:49"
+  ],
+  "Table": [
+    "src/components/site/brazil/BrazilCollection.tsx:42"
   ],
   "Talk to an export engineer about a specification, a sample or a quotation. Include door type, finish, applicable standard, quantity and destination market.": [
     "src/components/locale-pages/ContactPage.tsx:16"
@@ -3557,7 +3686,7 @@
     "src/components/site/CylinderCalculator.tsx:69"
   ],
   "The 9014 lever": [
-    "src/components/site/menu-experience.ts:77",
+    "src/components/site/menu-experience.ts:78",
     "src/components/site/SiteFooter.tsx:48"
   ],
   "The Americas": [
@@ -3621,6 +3750,9 @@
   "The factory": [
     "src/components/site/CompanyOverview.tsx:27",
     "src/components/site/FactoryStory.tsx:30"
+  ],
+  "The factory behind the bar": [
+    "src/components/site/brazil/BrazilCollection.tsx:48"
   ],
   "The factory, markets and technical support behind HYDE.": [
     "src/components/site/SiteHeader.tsx:512"
@@ -3864,6 +3996,12 @@
   ],
   "Tooling cost and the minimum run for a new part are quoted per project, and who owns the mould is written into the same document as the price.": [
     "src/components/site/ServicesView.tsx:98"
+  ],
+  "Top and bottom rods": [
+    "src/components/site/brazil/brazil-data.ts:58"
+  ],
+  "Touch bar": [
+    "src/components/site/brazil/BrazilHomeShowcase.tsx:32"
   ],
   "Toughened glass cannot be cut or drilled after tempering. A fitting that does not match the glass is a fitting that waits for a new glass panel, which is the longest lead time on the whole opening.": [
     "src/data/hardware-terms.ts:246"
@@ -4182,6 +4320,7 @@
     "src/data/category-buying-guides.ts:164"
   ],
   "White": [
+    "src/components/site/brazil/brazil-data.ts:60",
     "src/data/finish-codes.ts:362"
   ],
   "Will your case fit another brand's faceplate cut-out?": [

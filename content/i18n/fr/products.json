@@ -389,8 +389,7 @@
       "Béquille extérieure pour dispositif anti-panique",
       "Verrouillage et déverrouillage à clé",
       "Longueur du carré adaptée à l'épaisseur de la porte",
-      "Plusieurs coloris au choix",
-      "Norme : ANSI Grade 2"
+      "Plusieurs coloris au choix"
     ],
     "specs": [
       {
@@ -420,7 +419,7 @@
       "name": "cf2c2ed4be14",
       "summary": "b3fe83104b03",
       "description": "dd29ecf524b0",
-      "features": "8c860a677839",
+      "features": "64fd779cc4d6",
       "specs": "6069b420d3d0"
     }
   },
@@ -1605,10 +1604,6 @@
       {
         "label": "Bar Length",
         "value": "900 mm (réglable)"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1,5 heure"
       }
     ],
     "seoTitle": "300 Fermeture anti-panique, direct usine | Canton Hyland",
@@ -1618,7 +1613,7 @@
       "summary": "461ace35ab6c",
       "description": "dd29ecf524b0",
       "features": "c95c192bd0e3",
-      "specs": "76c94a2fac22"
+      "specs": "840268dcf90e"
     }
   },
   "301-panic-exit-device": {
@@ -1951,10 +1946,6 @@
         "value": "Longueur du cylindre selon l'épaisseur de la porte"
       },
       {
-        "label": "Fire Rating",
-        "value": "Résistance au feu 2,5 heures"
-      },
-      {
         "label": "Application",
         "value": "Entièrement réversible pour portes gauches ou droites"
       },
@@ -1970,7 +1961,7 @@
       "summary": "bda0021bf2ca",
       "description": "dd29ecf524b0",
       "features": "15621d6f6091",
-      "specs": "22f1dd94ab65"
+      "specs": "5757abd2db4e"
     }
   },
   "308-d-d-panic-exit-device": {
@@ -2155,10 +2146,6 @@
       {
         "label": "Color Options",
         "value": "Rouge, noir"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1,5 heure"
       }
     ],
     "seoTitle": "310 Fermeture anti-panique, 900mm | Canton Hyland",
@@ -2168,7 +2155,7 @@
       "summary": "db4367da4616",
       "description": "dd29ecf524b0",
       "features": "d82d2a56acbf",
-      "specs": "f756fe07caff"
+      "specs": "bcaf52ce6801"
     }
   },
   "311-panic-exit-device": {
@@ -4827,7 +4814,6 @@
     "features": [
       "Sens : réversible pour portes gauches ou droites",
       "Sécurité : cylindre en laiton à 5 goupilles, deux clés en laiton nickelé",
-      "Norme : ANSI Grade 3, testée à plus de 200 000 cycles",
       "Usage : portes d'entrée de maisons, d'appartements ou de petits locaux commerciaux",
       "Serrure cylindrique robuste et économique pour l'usage résidentiel standard. Idéale pour les portes d'entrée qui demandent fiabilité et sécurité renforcée."
     ],
@@ -4895,7 +4881,7 @@
       "name": "523311dcb6b3",
       "summary": "39f4b538511a",
       "description": "dd29ecf524b0",
-      "features": "e4e886e78a7a",
+      "features": "68266e5de330",
       "specs": "1eb3d9d5516b"
     }
   },
@@ -16049,9 +16035,7 @@
   "black-tubular-lever-lock-set": {
     "name": "Ensemble de béquilles à serrure tubulaire, noir",
     "summary": "Ensemble de béquilles tubulaires à profil carré, noir mat, béquille extérieure à clé et pêne réglable.",
-    "features": [
-      "Norme : ANSI Grade 3"
-    ],
+    "features": [],
     "specs": [
       {
         "label": "Backset",
@@ -16092,7 +16076,7 @@
       "name": "da618d9454e6",
       "summary": "ae7da2bc16d2",
       "description": "dd29ecf524b0",
-      "features": "a98952d7a21d",
+      "features": "97d170e1550e",
       "specs": "c02e3a3ab2fb"
     }
   },

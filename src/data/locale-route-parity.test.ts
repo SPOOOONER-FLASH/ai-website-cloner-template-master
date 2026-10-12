@@ -230,7 +230,9 @@ test("every overlay locale carries exactly the Portuguese route set", async () =
     assert.ok(fs.existsSync(path.join(APP, code, "layout.tsx")), `/${code}/ has no root layout`);
     /* Plus the partial routes built for this locale (/bau-2027 in de), and nothing else. */
     const partial = [...PARTIAL_ROUTES].filter(([, locales]) => locales.includes(code)).map(([route]) => route);
-    assert.deepEqual(routesUnder(code), [...reference, ...partial].sort(), `/${code}/ routes differ from /pt/`);
+    /* ...minus Portuguese pages that are partial routes not built for this locale (/products/brazil is en/pt). */
+    const shared = reference.filter((route) => PARTIAL_ROUTES.get(route)?.includes(code) ?? true);
+    assert.deepEqual(routesUnder(code), [...new Set([...shared, ...partial])].sort(), `/${code}/ routes differ from /pt/`);
   }
 });
 

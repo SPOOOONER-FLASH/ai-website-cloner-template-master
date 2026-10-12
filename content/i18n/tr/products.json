@@ -389,8 +389,7 @@
       "Panik cihazı için dış kol",
       "Anahtarla kilitleme ve açma",
       "Kare mil uzunluğu kapı kalınlığına göre ayarlanabilir",
-      "Birden fazla renk seçeneği",
-      "Standart: ANSI Grade 2"
+      "Birden fazla renk seçeneği"
     ],
     "specs": [
       {
@@ -420,7 +419,7 @@
       "name": "cf2c2ed4be14",
       "summary": "b3fe83104b03",
       "description": "dd29ecf524b0",
-      "features": "8c860a677839",
+      "features": "64fd779cc4d6",
       "specs": "6069b420d3d0"
     }
   },
@@ -1605,10 +1604,6 @@
       {
         "label": "Bar Length",
         "value": "900 mm (ayarlanabilir)"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1,5 saat"
       }
     ],
     "seoTitle": "300 Panik Çıkış Cihazı, fabrikadan doğrudan | Canton Hyland",
@@ -1618,7 +1613,7 @@
       "summary": "461ace35ab6c",
       "description": "dd29ecf524b0",
       "features": "c95c192bd0e3",
-      "specs": "76c94a2fac22"
+      "specs": "840268dcf90e"
     }
   },
   "301-panic-exit-device": {
@@ -1951,10 +1946,6 @@
         "value": "Kapı kalınlığına göre silindir uzunluğu"
       },
       {
-        "label": "Fire Rating",
-        "value": "2,5 saat yangın dayanımı"
-      },
-      {
         "label": "Application",
         "value": "Sol veya sağ yönlü kapılar için tamamen çevrilebilir"
       },
@@ -1970,7 +1961,7 @@
       "summary": "bda0021bf2ca",
       "description": "dd29ecf524b0",
       "features": "15621d6f6091",
-      "specs": "22f1dd94ab65"
+      "specs": "5757abd2db4e"
     }
   },
   "308-d-d-panic-exit-device": {
@@ -2155,10 +2146,6 @@
       {
         "label": "Color Options",
         "value": "Kırmızı, Siyah"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1,5 saat"
       }
     ],
     "seoTitle": "310 Panik Çıkış Cihazı, 900mm, fabrikadan doğrudan | Canton Hyland",
@@ -2168,7 +2155,7 @@
       "summary": "db4367da4616",
       "description": "dd29ecf524b0",
       "features": "d82d2a56acbf",
-      "specs": "f756fe07caff"
+      "specs": "bcaf52ce6801"
     }
   },
   "311-panic-exit-device": {
@@ -4827,7 +4814,6 @@
     "features": [
       "Yön: sağ veya sol kapılar için çevrilebilir",
       "Güvenlik: 5 pimli pirinç silindir, iki adet nikel kaplı pirinç anahtar",
-      "Standart: ANSI Grade 3, 200.000 çevrimin üzerinde test edilmiştir",
       "Uygulama: konut, apartman veya hafif ticari kullanımda giriş kapıları",
       "Standart konut kullanımı için tasarlanmış dayanıklı ve ekonomik silindirik kilit takımı. Güvenilir performans ve daha yüksek güvenlik gereken giriş kapıları için ideal."
     ],
@@ -4895,7 +4881,7 @@
       "name": "523311dcb6b3",
       "summary": "39f4b538511a",
       "description": "dd29ecf524b0",
-      "features": "e4e886e78a7a",
+      "features": "68266e5de330",
       "specs": "1eb3d9d5516b"
     }
   },
@@ -16049,9 +16035,7 @@
   "black-tubular-lever-lock-set": {
     "name": "Siyah Tübüler Kollu Kilit Takımı",
     "summary": "Mat siyah, kare profilli tübüler kollu kilit takımı; dış kolu anahtarlı, dili ayarlanabilir.",
-    "features": [
-      "Standart: ANSI Grade 3"
-    ],
+    "features": [],
     "specs": [
       {
         "label": "Backset",
@@ -16092,7 +16076,7 @@
       "name": "da618d9454e6",
       "summary": "ae7da2bc16d2",
       "description": "dd29ecf524b0",
-      "features": "a98952d7a21d",
+      "features": "97d170e1550e",
       "specs": "c02e3a3ab2fb"
     }
   },

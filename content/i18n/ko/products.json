@@ -389,8 +389,7 @@
       "패닉 디바이스용 외측 레버 핸들",
       "키로 잠금·해제",
       "문 두께에 맞춰 스핀들 길이 조정 가능",
-      "다양한 색상 선택 가능",
-      "적용 규격: ANSI Grade 2"
+      "다양한 색상 선택 가능"
     ],
     "specs": [
       {
@@ -420,7 +419,7 @@
       "name": "cf2c2ed4be14",
       "summary": "b3fe83104b03",
       "description": "dd29ecf524b0",
-      "features": "8c860a677839",
+      "features": "64fd779cc4d6",
       "specs": "6069b420d3d0"
     }
   },
@@ -1605,10 +1604,6 @@
       {
         "label": "Bar Length",
         "value": "900mm(조정 가능)"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1.5시간"
       }
     ],
     "seoTitle": "300 패닉 엑시트 디바이스, 공장 직거래 | Canton Hyland",
@@ -1618,7 +1613,7 @@
       "summary": "461ace35ab6c",
       "description": "dd29ecf524b0",
       "features": "c95c192bd0e3",
-      "specs": "76c94a2fac22"
+      "specs": "840268dcf90e"
     }
   },
   "301-panic-exit-device": {
@@ -1951,10 +1946,6 @@
         "value": "문 두께에 맞춘 실린더 길이"
       },
       {
-        "label": "Fire Rating",
-        "value": "내화 2.5시간"
-      },
-      {
         "label": "Application",
         "value": "좌수문·우수문 모두 전환 가능"
       },
@@ -1970,7 +1961,7 @@
       "summary": "bda0021bf2ca",
       "description": "dd29ecf524b0",
       "features": "15621d6f6091",
-      "specs": "22f1dd94ab65"
+      "specs": "5757abd2db4e"
     }
   },
   "308-d-d-panic-exit-device": {
@@ -2155,10 +2146,6 @@
       {
         "label": "Color Options",
         "value": "레드, 블랙"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1.5시간"
       }
     ],
     "seoTitle": "310 패닉 엑시트 디바이스, 900mm | Canton Hyland",
@@ -2168,7 +2155,7 @@
       "summary": "db4367da4616",
       "description": "dd29ecf524b0",
       "features": "d82d2a56acbf",
-      "specs": "f756fe07caff"
+      "specs": "bcaf52ce6801"
     }
   },
   "311-panic-exit-device": {
@@ -4827,7 +4814,6 @@
     "features": [
       "좌우: 좌수·우수 문 겸용",
       "보안: 5핀 텀블러 황동 실린더, 니켈 도금 황동 키 2개",
-      "규격: ANSI Grade 3, 200,000회 이상 시험",
       "용도: 주택, 아파트, 경상업 시설의 현관문",
       "일반 주거용으로 설계한 튼튼하고 경제적인 실린드리컬 락 세트입니다. 안정적인 성능과 높은 보안이 필요한 현관문에 적합합니다."
     ],
@@ -4895,7 +4881,7 @@
       "name": "523311dcb6b3",
       "summary": "39f4b538511a",
       "description": "dd29ecf524b0",
-      "features": "e4e886e78a7a",
+      "features": "68266e5de330",
       "specs": "1eb3d9d5516b"
     }
   },
@@ -16049,9 +16035,7 @@
   "black-tubular-lever-lock-set": {
     "name": "블랙 튜블러 레버 락 세트",
     "summary": "무광 블랙 마감의 사각형 튜블러 레버 세트로, 키로 작동하는 외측 레버와 조절식 래치를 갖추고 있습니다.",
-    "features": [
-      "규격: ANSI Grade 3"
-    ],
+    "features": [],
     "specs": [
       {
         "label": "Backset",
@@ -16092,7 +16076,7 @@
       "name": "da618d9454e6",
       "summary": "ae7da2bc16d2",
       "description": "dd29ecf524b0",
-      "features": "a98952d7a21d",
+      "features": "97d170e1550e",
       "specs": "c02e3a3ab2fb"
     }
   },
