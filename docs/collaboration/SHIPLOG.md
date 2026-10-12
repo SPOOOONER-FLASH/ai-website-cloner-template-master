@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 478 次提交
+最近 30 天 · 共 479 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 05:17 | 中立 | home-families：注明改 lead 后要跑的两个图片生成器（r41 教训） | `dcdcaf45438` |
 | 05:16 | 中立 | 首页品类索引的 8 张产品图补 srcset（r41 被 static-export-performance 拦下） | `5faad45dc2a` |
 | 05:05 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `245d0d03680` |
 | 05:04 | HYDE | 工厂故事加回激光切割；首页撤下工厂故事之后的旧模块（#49） | `6171e12708d` |
