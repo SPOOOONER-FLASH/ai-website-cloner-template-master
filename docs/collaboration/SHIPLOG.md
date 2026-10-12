@@ -6,12 +6,29 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 482 次提交
+最近 30 天 · 共 466 次提交
+
+## 2026-10-11
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 23:48 | 中立 | 手动操作：服务器硬盘清理第 1 步（只查看） | `7a4e65ec7ae` |
+| 22:46 | 中立 | Argentina 预览页只在 en/es：列入 PARTIAL_ROUTES（解 r34 hreflang 拦截） | `41108d53c90` |
+| 22:36 | 中立 | 纪律：每次发布后跑 mirror-to-gitlab（服务器改从 GitLab 拉） | `36d61201a69` |
+| 22:36 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cd8771c2374` |
+| 22:35 | HYDE | GitLab 镜像脚本；Argentina 预览页 noindex（解 r34 拦截） | `4978b5c9b90` |
+| 21:33 | 中立 | 文章修订戳补齐（r34 被 stamp --check 拦下） | `80a362d5a80` |
+| 21:20 | 中立 | 手册顶部：GitHub 账号被隐藏 → 服务器配只读 deploy key（指向前端管理会话写的步骤） | `5770a198065` |
+| 21:19 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `9bc55279cda` |
+| 21:19 | HYDE | HYDE 新品三款：SH02 弹簧合页芯、D104 SS 呆锁钥匙芯与旋钮、8829 BL 磁吸插芯执手锁（#157） | `8d872a44ccf` |
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:50 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `019003ab091` |
+| 04:50 | 中立 | 手册：服务器没拉到新版的排查与手动补拉（#156） | `f71d6cd3155` |
+| 04:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `974b57ad427` |
 | 04:18 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5619229b127` |
 | 04:16 | 中立 | 改深链交给同事：大字分步说明 + 每站编号打勾清单 + LinkedIn（#155） | `a1e386d5d6d` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
@@ -546,42 +563,4 @@
 | 23:42 | HYDE | 联系页三语：三个信箱提到最前，并拔掉两处给访客看的部署备忘 | `f17bde9b0b6` |
 | 23:35 | HYDE+雷茵 · 发布 HYDE+雷茵 | Merge remote-tracking branch 'origin/main' | `43b7c094449` |
 | 23:25 | 中立 | Clarity AI Visibility 读数：33 条引用全是文章，产品页 0 条 | `33086a26740` |
-
-## 2026-09-11
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 01:04 | 中立 | 《9.11 周末出差 HYDE 工程交接》：停在哪、卡在哪、接着做什么 | `d99c0d17427` |
-| 01:02 | 中立 | 交接文档定稿：本次工作全部已推送，补第七节第二件事 | `4b519cb90ff` |
-| 01:02 | HYDE | 首页 JS 从 2,241 KB 降到 669 KB：整本产品目录本来在浏览器里 | `8b69d29e735` |
-| 00:58 | 雷茵 · 发布 HYDE+雷茵 | 产品图打上雷茵的标：518 张在售图，固定右下角，深浅两种墨按底色自动选 | `5d49426ca94` |
-| 00:57 | 中立 | 交接文档：9.11 周末出差 雷茵 工程交接（十节） | `cec4dd7f693` |
-
-## 2026-09-10
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 21:31 | HYDE | 英西对照检查：207 对段落，数字零漂移（并抓到我自己造成的一处） | `2901d8ee084` |
-| 21:29 | HYDE | 接管 Codex 的西语区域：src/app/es 与 src/components 的 raya 排版 | `a385e0bea71` |
-| 21:21 | HYDE+雷茵 · 发布 HYDE+雷茵 | 中文文案重写：走进雷茵读起来像机翻，问题是英文句式套中文词 | `bd3fe79bd04` |
-| 21:17 | HYDE | 西语排版按 RAE 改：107 处英文间距的破折号；文案 register 审计脚本 | `e8079f69068` |
-| 21:15 | 雷茵 · 发布 HYDE+雷茵 | 产品图两件事：竖长图被方框裁成一截钢管；图纸上的日文与他厂编号 | `0fc54720169` |
-| 20:52 | 中立 · 发布 HYDE+雷茵 | 英文产品简介三个文案缺陷：句首小写、材质说两遍、整段话当形容词用 | `3616fe38850` |
-| 20:48 | 雷茵 · 发布 HYDE+雷茵 | 中文文案：产品表述与实际规格表对齐；修掉英文站「1 models」和中文站误用英文词 | `055c91f08c2` |
-| 20:46 | 中立 | NOW：第 20 篇文章上线核实完毕，接力棒交回 | `31a544de918` |
-| 20:44 | HYDE+雷茵 · 发布 HYDE+雷茵 | artunion 规格抓取：34 个型号补上重量与安装孔，按品番匹配、用中心距双向印证 | `8974a2b26f6` |
-| 20:24 | 中立 | NOW：雷茵英文版已构建部署，接力棒交回 | `afc9055074a` |
-| 20:24 | HYDE | 第 20 篇文章：311 开模的五个月（甲方老板口述） | `05c2e56b624` |
-| 20:23 | 雷茵 · 发布 HYDE+雷茵 | 发布：雷茵英文版上线 /en/，并修掉英文页声明中文 lang 的错 | `af0310525f5` |
-| 20:01 | HYDE | Publish reviewed hardware photography in the bilingual catalogue | `7e73b0075b4` |
-| 19:56 | 中立 | NOW：雷茵英文版源码已推送，构建带出 out-rayen/en/ 的交接说明 | `94c96b76b00` |
-| 19:55 | 雷茵 | 雷茵英文版：同域名 /en/ 子路径，八个页面两种语言共用一套组件 | `dd1bbbb324d` |
-| 19:50 | 中立 | runbook 补第 3d 节：爬虫要不要封，以及为什么不按国家封新加坡 | `87ca9581649` |
-| 07:39 | 中立 | runbook：git clean 必须排除宝塔生成的 .user.ini 与 .htaccess | `fc79a32a81b` |
-| 07:36 | 中立 | stahlock 全站爬取；50 个北美长尾词；客户文档改 Word 放进 docs/hyde/ | `165bf70fca6` |
-| 07:17 | 雷茵 · 发布 雷茵 | 英文版地基：镜像同时产出中英两套，页头页脚改成一套组件两种语言 | `7a3baa3a259` |
-| 07:06 | 发布 HYDE | 修复线上故障：1,871 个新构建文件从来没进过提交 | `90f5b666104` |
-| 07:03 | HYDE+雷茵 · 发布 雷茵 | 第四批 21 个大拉手上架；首页换成黄铜拉手实拍；长度变体合并进同一型号 | `31fe5a18c7a` |
-| 07:03 | 中立 | Compose actual 564 and 310 photos in editable stone scenes | `0c16fd976cc` |
-| 06:47 | 中立 | Preserve real hardware photos in thirteen Blender layouts | `36aa5fa73c3` |
 

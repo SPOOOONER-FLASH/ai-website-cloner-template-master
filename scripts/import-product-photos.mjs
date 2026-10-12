@@ -46,6 +46,13 @@ const [slug, directory] = process.argv.slice(2).filter((argument) => !argument.s
   there would demote a photograph somebody already approved.
 */
 const append = process.argv.includes("--append");
+/*
+  `--branded`: the client photographs already carry the HYDE mark (10-10 new models), so they go
+  straight to /images/products-hyde/, which brandProductImageRef leaves alone; the watermark pass
+  only reads /images/products/ and would otherwise stamp a second logo.
+*/
+const branded = process.argv.includes("--branded");
+const IMAGE_DIR = branded ? "/images/products-hyde/" : "/images/products/";
 
 if (!slug || !directory) {
   console.error("Usage: node scripts/import-product-photos.mjs <slug> <source-directory>");
@@ -109,7 +116,7 @@ for (const [index, file] of sources.entries()) {
   const input = join(directory, file);
   const position = startAt + index;
   const suffix = position === 0 ? "" : `-${position + 1}`;
-  const publicPath = `/images/products/${slug}${suffix}.webp`;
+  const publicPath = `${IMAGE_DIR}${slug}${suffix}.webp`;
   const target = `public${publicPath}`;
 
   const meta = await sharp(input).metadata();
@@ -151,6 +158,7 @@ if (append) {
 writeFileSync(recordPath, `${JSON.stringify(record, null, 2)}\n`);
 
 console.log(`\n${slug}: ${written.length} photographs, record now has heroImage.src — it will publish.`);
+if (branded) process.exit(0); // already marked: no watermark pass
 console.log("Next, and required before committing:");
 console.log("  npm run assets:watermark      # adds the HYDE mark, removes the old Hyland oval");
 console.log("  npm run assets:productconfig  # if this model needs responsive candidates");

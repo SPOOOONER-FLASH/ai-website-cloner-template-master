@@ -614,6 +614,9 @@ Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在�
   the unpushed commits to `docs/collaboration/PUSH-PENDING.md`. Tell the client in one line, then
   continue with the next item. The next `npm run ship` carries the backlog up. Never sit in a
   retry loop; never `sleep` waiting for the network.
+- **The server pulls from GitLab, not GitHub (since 2026-10-12).** GitHub hid the account, so
+  after every `release:hyde` (or any push the site must see), run `node scripts/mirror-to-gitlab.mjs`.
+  It pushes one snapshot commit of `origin/main`'s tree; without it the server stays on the old version.
 - **Exit 75 does not reliably mean "not pushed". Confirm with `git ls-remote` before you retry
   or re-run anything.** On 2026-09-29 `release:hyde` reported 「超时 推送失败（网络）」 on all
   three attempts and exited 75 — and the release commit was **already on `origin/main`**. One
