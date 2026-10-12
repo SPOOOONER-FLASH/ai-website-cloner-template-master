@@ -6,23 +6,25 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 467 次提交
+最近 30 天 · 共 469 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 02:19 | 中立 | 传单改单侧 6 面（12 面、80 款）；所有指示牌英文大中文小（#44、#45） | `7060d2978b8` |
+| 00:01 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `9ff0a147958` |
 | 00:00 | 中立 | 目录改墨白、招牌英文为主、传单改三折带折叠预览（#41–#43） | `0214de4a20e` |
 
 ## 2026-10-11
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 23:48 | 中立 | 手动操作：服务器硬盘清理第 1 步（只查看） | `7a4e65ec7ae` |
-| 22:46 | 中立 | Argentina 预览页只在 en/es：列入 PARTIAL_ROUTES（解 r34 hreflang 拦截） | `41108d53c90` |
-| 22:36 | 中立 | 纪律：每次发布后跑 mirror-to-gitlab（服务器改从 GitLab 拉） | `36d61201a69` |
-| 22:36 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cd8771c2374` |
-| 22:35 | HYDE | GitLab 镜像脚本；Argentina 预览页 noindex（解 r34 拦截） | `4978b5c9b90` |
+| 22:29 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `1493c32a898` |
+| 22:29 | 中立 | 更正：删去的铜色标志文件是 4 个，不是 3 个 | `413d57aa722` |
+| 22:29 | 中立 | 广交会物料改墨白两色；中文全称已确认（#39①、#40） | `6bb1c0c04af` |
+| 22:12 | 中立 | 广交会物料：HYDE 标志精修与规范、风琴折传单、厂内标识（#38） | `ca5d4d51a79` |
+| 21:36 | 中立 | 手册：服务器磁盘 89.86%，四条只读命令查占用（产品大脑不在服务器上） | `e9e216b464c` |
 | 21:33 | 中立 | 文章修订戳补齐（r34 被 stamp --check 拦下） | `80a362d5a80` |
 | 21:20 | 中立 | 手册顶部：GitHub 账号被隐藏 → 服务器配只读 deploy key（指向前端管理会话写的步骤） | `5770a198065` |
 | 21:19 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `9bc55279cda` |
