@@ -223,7 +223,7 @@ def _grid_height(band: bool) -> float:
 
 
 def section_title(c: Canvas, kicker: str, title: str) -> None:
-    c.text(L, 96, kicker.upper(), 7, "text-medium", style.BRASS, track=160)
+    c.text(L, 96, kicker.upper(), 7, "text-medium", style.ACCENT, track=160)
     c.text(L, 128, title, 24, "display", style.INK)
 
 
@@ -240,7 +240,7 @@ def contents(c: Canvas, n: int, fams: list[FamilyLayout], jobs: list[Job]) -> No
     y += 14
     for fl in fams:
         c.rule(L, y - 12, R, style.RULE, 0.4)
-        c.text(L, y, f"{fl.number:02d}", 8, "text-semibold", style.BRASS)
+        c.text(L, y, f"{fl.number:02d}", 8, "text-semibold", style.ACCENT)
         c.text(L + 30, y, fl.family.name, 10.5, "text-semibold", style.INK)
         total = sum(len(card.members) for card in fl.cards + fl.listed)
         c.text(L + 290, y, f"{total} models", 8.5, "text", style.INK3)
@@ -269,7 +269,7 @@ def how_to_order(c: Canvas, n: int) -> None:
                 "form one reference that needs no follow-up email.", 10, "text", style.INK2)
     y = 214
     c.page.draw_rect(c.r(L, y, R, y + 58), color=None, fill=(0.965, 0.958, 0.945))
-    c.text(L + 22, y + 37, "9001 — SSS — 60 — 72 — L — 45", 19, "display-semibold", style.BRASS)
+    c.text(L + 22, y + 37, "9001 — SSS — 60 — 72 — L — 45", 19, "display-semibold", style.ACCENT)
     y += 96
     for code, label, note in [
         ("9001", "Model", "As printed on the product card and in the index."),
@@ -279,7 +279,7 @@ def how_to_order(c: Canvas, n: int) -> None:
         ("L", "Handing", "L left, R right, U universal."),
         ("45", "Door thickness", "Millimetres."),
     ]:
-        c.text(L, y, code, 10, "text-semibold", style.BRASS)
+        c.text(L, y, code, 10, "text-semibold", style.ACCENT)
         c.text(L + 70, y, label, 10, "text-semibold", style.INK)
         c.text(L + 200, y, note, 9, "text", style.INK2)
         y += 14
@@ -299,7 +299,7 @@ def finishes(c: Canvas, n: int) -> None:
                 "question for the factory, not a blank to be guessed at.", 9.5, "text", style.INK2)
     y = 214
     for series, rows in legacy.FINISHES:
-        c.text(L, y, series.upper(), 7, "text-semibold", style.BRASS, track=140)
+        c.text(L, y, series.upper(), 7, "text-semibold", style.ACCENT, track=140)
         y += 9
         c.rule(L, y, R, style.INK, 0.6)
         y += 17
@@ -317,8 +317,8 @@ def finishes(c: Canvas, n: int) -> None:
 
 def opener_full(c: Canvas, n: int, fl: FamilyLayout, edition: Edition) -> None:
     fam = fl.family
-    c.text(L, 96, f"{fl.number:02d}", 9, "text-semibold", style.BRASS)
-    c.rule(L + 22, 93, L + 70, style.BRASS, 0.8)
+    c.text(L, 96, f"{fl.number:02d}", 9, "text-semibold", style.ACCENT)
+    c.rule(L + 22, 93, L + 70, style.ACCENT, 0.8)
     c.text(L, 150, fam.name, 34 if len(fam.name) < 24 else 28, "display-semibold", style.INK)
     c.paragraph(L, 168, L + 330, 236, fam.summary, 11, "text", style.INK2, leading=1.4)
     total = sum(len(card.members) for card in fl.cards + fl.listed)
@@ -343,8 +343,8 @@ def _qr_block(c: Canvas, slug: str, edition: Edition, y: float) -> None:
 
 def band(c: Canvas, fl: FamilyLayout, edition: Edition) -> None:
     fam = fl.family
-    c.text(L, 78, f"{fl.number:02d}", 9, "text-semibold", style.BRASS)
-    c.rule(L + 22, 75, L + 70, style.BRASS, 0.8)
+    c.text(L, 78, f"{fl.number:02d}", 9, "text-semibold", style.ACCENT)
+    c.rule(L + 22, 75, L + 70, style.ACCENT, 0.8)
     c.text(L, 118, fam.name, 28 if len(fam.name) < 26 else 23, "display-semibold", style.INK)
     c.paragraph(L, 132, L + 300, 184, fam.summary, 9.5, "text", style.INK2, leading=1.4)
     total = sum(len(card.members) for card in fl.cards + fl.listed)
@@ -378,7 +378,7 @@ def register_page(c: Canvas, n: int, chunk: list, first: bool) -> None:
     for fl, card in chunk:
         if card is None:
             y += 8
-            c.text(L, y + 6, f"{fl.number:02d}", 7, "text-semibold", style.BRASS)
+            c.text(L, y + 6, f"{fl.number:02d}", 7, "text-semibold", style.ACCENT)
             c.text(L + 22, y + 6, fl.family.name.upper(), 7, "text-semibold", style.INK, track=120)
             c.rule(L, y + 11, R, style.INK, 0.5)
             y += 16
@@ -440,7 +440,7 @@ def draw_cards(c: Canvas, slug: str, cards: list[variants.Card], top: float, bot
             c.text(x0, y + 2, label_text, spec_pt, "text", style.INK3)
             v = style.fit(value, max(room, 12), spec_pt, "text-medium")
             c.text_right(x0 + cw, y + 2, v, spec_pt, "text-medium",
-                         style.BRASS if label in ("Finishes", "Also in") else style.INK)
+                         style.ACCENT if label in ("Finishes", "Also in") else style.INK)
             y += spec_pt + 5.6
     used_rows = math.ceil(min(len(cards), cols * rows) / cols) if cards else 0
     return top + used_rows * ch + max(0, used_rows - 1) * gy
@@ -475,7 +475,7 @@ def index_page(c: Canvas, n: int, entries: list[tuple[str, int]], first: bool) -
 
 
 def notes_page(c: Canvas, n: int) -> None:
-    c.text(L, 96, "NOTES", 7, "text-medium", style.BRASS, track=160)
+    c.text(L, 96, "NOTES", 7, "text-medium", style.ACCENT, track=160)
     y = 130
     while y < BOTTOM - 10:
         c.rule(L, y, R, style.RULE, 0.35)
@@ -485,7 +485,7 @@ def notes_page(c: Canvas, n: int) -> None:
 
 def back_cover(c: Canvas, n: int) -> None:
     c.text(L, 118, "HYDE", 44, "display-semibold", style.INK, track=40)
-    c.rule(L, 136, L + 48, style.BRASS, 1.0)
+    c.rule(L, 136, L + 48, style.ACCENT, 1.0)
     c.text(L, 160, COMPANY, 10, "text-semibold", style.INK)
     y = 214
     for label, value in CONTACT:
