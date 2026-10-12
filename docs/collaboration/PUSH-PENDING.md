@@ -290,3 +290,15 @@
 - `092933e4808` seo-audit：/admin/ 之下的页面都不算公开页
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/12 04:48:35 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `bcafa1b8baaf` shiplog: 更新上线存档
+- `ad526cc50581` 首页加入三段：品类索引、出口地图、工厂故事（十语）（#48）
+- `d48b4732a48e` HYDE 动效四合一演示页（独立 Vite 项目，不进正式站）（#47）
+
+下一次 `npm run ship` 成功时这些会一起推上去。

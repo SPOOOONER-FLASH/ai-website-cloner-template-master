@@ -22,10 +22,10 @@ test("the flagship homepage and three news stories use four purpose-built images
     readJson("content/news/reading-door-hardware-model-numbers.json").heroImage.src,
   ];
 
-  assert.match(home, /\/images\/editorial\/home-panic-exit-bars\.webp/);
-  assert.match(homeEs, /\/images\/editorial\/home-panic-exit-bars\.webp/);
-  assert.match(layoutEn, /\/images\/editorial\/home-panic-exit-bars\.webp/);
-  assert.match(layoutEs, /\/images\/editorial\/home-panic-exit-bars\.webp/);
+  assert.match(home, /\/images\/editorial\/home-panic-exit-double-door\.webp/);
+  assert.match(homeEs, /\/images\/editorial\/home-panic-exit-double-door\.webp/);
+  assert.match(layoutEn, /\/images\/editorial\/home-panic-exit-double-door\.webp/);
+  assert.match(layoutEs, /\/images\/editorial\/home-panic-exit-double-door\.webp/);
   // 2026-09-14: client rejected the new compositions and requested the original images.
   assert.deepEqual(newsSources, [
     "/images/editorial/news-door-schedule-doors.webp",
@@ -33,10 +33,10 @@ test("the flagship homepage and three news stories use four purpose-built images
     "/images/products-hyde/607-pbbk-tubular-lock.webp",
   ]);
   assert.equal(new Set(newsSources).size, 3);
-  assert.ok(!newsSources.includes("/images/editorial/home-panic-exit-bars.webp"));
+  assert.ok(!newsSources.includes("/images/editorial/home-panic-exit-double-door.webp"));
 
   for (const source of [
-    "/images/editorial/home-panic-exit-bars.webp",
+    "/images/editorial/home-panic-exit-double-door.webp",
     ...newsSources,
   ]) {
     assert.ok(
