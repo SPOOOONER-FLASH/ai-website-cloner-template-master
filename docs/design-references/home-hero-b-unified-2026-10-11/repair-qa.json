@@ -1,0 +1,16 @@
+{
+  "status": "Review image; not a verified installed project or product dimension drawing",
+  "method": "Whole-image photographic retouch, followed by an outdoor-only correction. No original-photo pixel-identity claim applies to the retouch.",
+  "geometryReview": "Independent visual comparison found no identifiable changed components or door pose; tiny fastener texture is not certified.",
+  "repairBounds": {
+    "left": 636,
+    "top": 503,
+    "width": 201,
+    "height": 120
+  },
+  "frozenPixels": 1549418,
+  "changedFrozenPixels": 0,
+  "retouchSha256": "2956021ba2b9f5640ae173b79ab985f7158957532cc5572b23741d76dcacf6eb",
+  "repairSourceSha256": "e1079d42eb7870aa20b6b2534d3285aad9a770c1bda2fb511984cf2ac2562480",
+  "previewSha256": "30da8c27f60c7b4b2f8a066c238b01620f50e23e1a045fe769f0f8e144451d9e"
+}

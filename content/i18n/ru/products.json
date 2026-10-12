@@ -12339,6 +12339,50 @@
       "specs": "bfe45686fd6d"
     }
   },
+  "8829-bl-lever-handle": {
+    "name": "Врезной замок с магнитной защёлкой и ручкой",
+    "summary": "Ручка матового чёрного цвета на врезном замке с магнитной защёлкой: ручка 160mm, сдвижная кнопка блокировки и аварийное отверстие под ключ под съёмной накладкой.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Lever length",
+        "value": "160mm"
+      },
+      {
+        "label": "Projection",
+        "value": "51mm"
+      },
+      {
+        "label": "Lock case",
+        "value": "86 × 48mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "85 × 22mm"
+      },
+      {
+        "label": "Latch",
+        "value": "Магнитная"
+      },
+      {
+        "label": "Function",
+        "value": "Блокировка и разблокировка сдвижной кнопкой; аварийное отверстие под ключ под накладкой"
+      },
+      {
+        "label": "Finish",
+        "value": "Матовый чёрный"
+      }
+    ],
+    "sourceHash": {
+      "name": "9d13ccbae36c",
+      "summary": "ce9f5d444cad",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "7e8ed0553919"
+    },
+    "seoTitle": "8829 BL Врезной замок с магнитной защёлкой и ручкой, 160mm | Canton Hyland",
+    "seoDescription": "8829 BL Врезной замок с магнитной защёлкой и ручкой: 160mm. Напрямую с завода, образцы и цена по запросу."
+  },
   "90-bskt-lock-cylinder": {
     "name": "Цилиндровый механизм",
     "summary": "Цилиндровый механизм европрофиля из цельной латуни 90 мм, сатинированное покрытие (BS).",
@@ -17807,6 +17851,42 @@
       "specs": "97d170e1550e"
     }
   },
+  "d104-ss-deadbolts": {
+    "name": "Засовы",
+    "summary": "Комплект из ключевого цилиндра и поворотной ручки для врезного замка: нержавеющая сталь SUS304, латунные ключи, сменная сердцевина цилиндра.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Нержавеющая сталь SUS304, латунные ключи"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "44mm"
+      },
+      {
+        "label": "Height",
+        "value": "31.5mm (со стороны поворотной ручки)"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Сменная сердцевина"
+      },
+      {
+        "label": "Finish",
+        "value": "Шлифованная нержавеющая сталь (ST)"
+      }
+    ],
+    "sourceHash": {
+      "name": "58fac8af82ef",
+      "summary": "1e98632bfee3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "74e69d11844b"
+    },
+    "seoTitle": "D104 SS Засовы, напрямую с завода | Canton Hyland",
+    "seoDescription": "D104 SS Засовы. Напрямую с завода, образцы и цена по запросу."
+  },
   "dc01-door-coordinator": {
     "name": "Координатор закрывания",
     "features": [
@@ -20851,50 +20931,6 @@
       "specs": "de9e27b1d752"
     }
   },
-  "hyde-ar4-111-mortise-lock": {
-    "name": "Корпус защитного врезного замка",
-    "summary": "Корпус защитного врезного замка, заводской номер 7240: бэксет 40 мм, межосевое расстояние 72 мм, лицевая планка 220 × 25 мм, в комплекте два ключа.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Factory reference",
-        "value": "7240"
-      },
-      {
-        "label": "Center distance",
-        "value": "72 мм"
-      },
-      {
-        "label": "Backset",
-        "value": "40 мм"
-      },
-      {
-        "label": "Faceplate",
-        "value": "220 × 25 мм"
-      },
-      {
-        "label": "Case height",
-        "value": "140 мм"
-      },
-      {
-        "label": "Latch options",
-        "value": "Омеднённый цинковый сплав или латунь"
-      },
-      {
-        "label": "Key options",
-        "value": "Цинковый сплав или латунь; два ключа"
-      }
-    ],
-    "seoTitle": "AR4-111 Корпус защитного врезного замка | Canton Hyland",
-    "seoDescription": "AR4-111 Корпус защитного врезного замка: межосевое расстояние 72mm, бэксет 40mm. Напрямую с завода, образцы и цена по запросу.",
-    "sourceHash": {
-      "name": "9cad0957c775",
-      "summary": "e927d31a192b",
-      "description": "dd29ecf524b0",
-      "features": "97d170e1550e",
-      "specs": "59b40588960d"
-    }
-  },
   "hyde-ar4-110-mortise-lock": {
     "name": "Корпус защитного врезного замка",
     "summary": "Корпус защитного врезного замка: бэксет 40 мм, межосевое расстояние 68 мм, лицевая планка 212 × 25 мм, в комплекте два ключа.",
@@ -20937,6 +20973,50 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "629d1c51b20f"
+    }
+  },
+  "hyde-ar4-111-mortise-lock": {
+    "name": "Корпус защитного врезного замка",
+    "summary": "Корпус защитного врезного замка, заводской номер 7240: бэксет 40 мм, межосевое расстояние 72 мм, лицевая планка 220 × 25 мм, в комплекте два ключа.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Factory reference",
+        "value": "7240"
+      },
+      {
+        "label": "Center distance",
+        "value": "72 мм"
+      },
+      {
+        "label": "Backset",
+        "value": "40 мм"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 мм"
+      },
+      {
+        "label": "Case height",
+        "value": "140 мм"
+      },
+      {
+        "label": "Latch options",
+        "value": "Омеднённый цинковый сплав или латунь"
+      },
+      {
+        "label": "Key options",
+        "value": "Цинковый сплав или латунь; два ключа"
+      }
+    ],
+    "seoTitle": "AR4-111 Корпус защитного врезного замка | Canton Hyland",
+    "seoDescription": "AR4-111 Корпус защитного врезного замка: межосевое расстояние 72mm, бэксет 40mm. Напрямую с завода, образцы и цена по запросу.",
+    "sourceHash": {
+      "name": "9cad0957c775",
+      "summary": "e927d31a192b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -25275,6 +25355,46 @@
       "features": "97d170e1550e",
       "specs": "f0c30d46851d"
     }
+  },
+  "sh02-spring-hinge-pin": {
+    "name": "Пружинный штифт для петли",
+    "summary": "Пружинный штифт делает распашную дверь самозакрывающейся: диаметр 19mm, общая длина 160mm, оцинковка, регулируемое натяжение пружины.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Diameter",
+        "value": "19mm"
+      },
+      {
+        "label": "Overall length",
+        "value": "160mm"
+      },
+      {
+        "label": "Function",
+        "value": "Самозакрывание, регулируемое натяжение пружины"
+      },
+      {
+        "label": "Finish",
+        "value": "Оцинковка"
+      },
+      {
+        "label": "Accessories",
+        "value": "Натяжной штифт Ø5 × 100mm, стопорный штифт"
+      },
+      {
+        "label": "Application",
+        "value": "Металлические двери"
+      }
+    ],
+    "sourceHash": {
+      "name": "6d37e29c6bcf",
+      "summary": "75d35629bdbb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "afa37475c50c"
+    },
+    "seoTitle": "SH02 Пружинный штифт для петли, 160mm | Canton Hyland",
+    "seoDescription": "SH02 Пружинный штифт для петли: 160mm. Напрямую с завода, образцы и цена по запросу."
   },
   "single-oval-cylinder-lock-cylinder": {
     "name": "Цилиндровый механизм",

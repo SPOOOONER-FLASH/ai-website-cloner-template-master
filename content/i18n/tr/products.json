@@ -12339,6 +12339,50 @@
       "specs": "bfe45686fd6d"
     }
   },
+  "8829-bl-lever-handle": {
+    "name": "Manyetik Gömme Kilitli Kapı Kolu",
+    "summary": "Manyetik dilli gömme kilit üzerinde mat siyah kapı kolu: 160mm kol, sürgülü kilitleme düğmesi ve sökülebilir kapak plakasının altında acil durum anahtar deliği.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Lever length",
+        "value": "160mm"
+      },
+      {
+        "label": "Projection",
+        "value": "51mm"
+      },
+      {
+        "label": "Lock case",
+        "value": "86 × 48mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "85 × 22mm"
+      },
+      {
+        "label": "Latch",
+        "value": "Manyetik"
+      },
+      {
+        "label": "Function",
+        "value": "Sürgüyle kilitleme ve açma; kapak plakası altında acil durum anahtar deliği"
+      },
+      {
+        "label": "Finish",
+        "value": "Mat siyah"
+      }
+    ],
+    "sourceHash": {
+      "name": "9d13ccbae36c",
+      "summary": "ce9f5d444cad",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "7e8ed0553919"
+    },
+    "seoTitle": "8829 BL Manyetik Gömme Kilitli Kapı Kolu, 160mm | Canton Hyland",
+    "seoDescription": "8829 BL Manyetik Gömme Kilitli Kapı Kolu: 160mm. Fabrikadan doğrudan; numune ve teklif talep üzerine."
+  },
   "90-bskt-lock-cylinder": {
     "name": "Kilit Silindiri",
     "summary": "Saten kaplamalı (BS) 90 mm som pirinç Avrupa profil silindir.",
@@ -17807,6 +17851,42 @@
       "specs": "97d170e1550e"
     }
   },
+  "d104-ss-deadbolts": {
+    "name": "Sürgü Kilitler",
+    "summary": "Gömme sürgü kilit için anahtarlı silindir ve çevirmeli topuz takımı; SUS304 paslanmaz çelik, pirinç anahtarlar ve değiştirilebilir silindir göbeği.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "SUS304 paslanmaz çelik, pirinç anahtarlar"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "44mm"
+      },
+      {
+        "label": "Height",
+        "value": "31.5mm (çevirmeli topuz tarafı)"
+      },
+      {
+        "label": "Cylinder",
+        "value": "Değiştirilebilir göbek"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten paslanmaz (ST)"
+      }
+    ],
+    "sourceHash": {
+      "name": "58fac8af82ef",
+      "summary": "1e98632bfee3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "74e69d11844b"
+    },
+    "seoTitle": "D104 SS Sürgü Kilitler, fabrikadan doğrudan | Canton Hyland",
+    "seoDescription": "D104 SS Sürgü Kilitler. Fabrikadan doğrudan; numune ve teklif talep üzerine."
+  },
   "dc01-door-coordinator": {
     "name": "Kapı Kapanma Sıralayıcısı",
     "features": [
@@ -20851,50 +20931,6 @@
       "specs": "de9e27b1d752"
     }
   },
-  "hyde-ar4-111-mortise-lock": {
-    "name": "Güvenlik Gömme Kilit Gövdesi",
-    "summary": "Güvenlik gömme kilit gövdesi, fabrika referansı 7240: 40 mm backset, 72 mm eksen mesafesi ve 220 × 25 mm alın plakası; iki anahtarla birlikte verilir.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Factory reference",
-        "value": "7240"
-      },
-      {
-        "label": "Center distance",
-        "value": "72 mm"
-      },
-      {
-        "label": "Backset",
-        "value": "40 mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "220 × 25 mm"
-      },
-      {
-        "label": "Case height",
-        "value": "140 mm"
-      },
-      {
-        "label": "Latch options",
-        "value": "Bakır kaplı zamak veya pirinç"
-      },
-      {
-        "label": "Key options",
-        "value": "Zamak veya pirinç; iki anahtar"
-      }
-    ],
-    "seoTitle": "AR4-111 Güvenlik Gömme Kilit Gövdesi | Canton Hyland",
-    "seoDescription": "AR4-111 Güvenlik Gömme Kilit Gövdesi: aks mesafesi 72mm, backset ölçüsü 40mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
-    "sourceHash": {
-      "name": "9cad0957c775",
-      "summary": "e927d31a192b",
-      "description": "dd29ecf524b0",
-      "features": "97d170e1550e",
-      "specs": "59b40588960d"
-    }
-  },
   "hyde-ar4-110-mortise-lock": {
     "name": "Güvenlik Gömme Kilit Gövdesi",
     "summary": "Güvenlik tipi gömme kilit gövdesi: 40 mm backset, 68 mm eksen mesafesi ve 212 × 25 mm alın plakası; iki anahtarla birlikte verilir.",
@@ -20937,6 +20973,50 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "629d1c51b20f"
+    }
+  },
+  "hyde-ar4-111-mortise-lock": {
+    "name": "Güvenlik Gömme Kilit Gövdesi",
+    "summary": "Güvenlik gömme kilit gövdesi, fabrika referansı 7240: 40 mm backset, 72 mm eksen mesafesi ve 220 × 25 mm alın plakası; iki anahtarla birlikte verilir.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Factory reference",
+        "value": "7240"
+      },
+      {
+        "label": "Center distance",
+        "value": "72 mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40 mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25 mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140 mm"
+      },
+      {
+        "label": "Latch options",
+        "value": "Bakır kaplı zamak veya pirinç"
+      },
+      {
+        "label": "Key options",
+        "value": "Zamak veya pirinç; iki anahtar"
+      }
+    ],
+    "seoTitle": "AR4-111 Güvenlik Gömme Kilit Gövdesi | Canton Hyland",
+    "seoDescription": "AR4-111 Güvenlik Gömme Kilit Gövdesi: aks mesafesi 72mm, backset ölçüsü 40mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "sourceHash": {
+      "name": "9cad0957c775",
+      "summary": "e927d31a192b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -25275,6 +25355,46 @@
       "features": "97d170e1550e",
       "specs": "f0c30d46851d"
     }
+  },
+  "sh02-spring-hinge-pin": {
+    "name": "Yaylı Menteşe Pimi",
+    "summary": "Kanatlı kapıyı kendiliğinden kapanır hale getiren yaylı pim: 19mm çap, 160mm toplam uzunluk, çinko kaplama, ayarlanabilir yay gerginliği.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Diameter",
+        "value": "19mm"
+      },
+      {
+        "label": "Overall length",
+        "value": "160mm"
+      },
+      {
+        "label": "Function",
+        "value": "Kendiliğinden kapanma, ayarlanabilir yay gerginliği"
+      },
+      {
+        "label": "Finish",
+        "value": "Çinko kaplama"
+      },
+      {
+        "label": "Accessories",
+        "value": "Gerdirme pimi Ø5 × 100mm, kilitleme pimi"
+      },
+      {
+        "label": "Application",
+        "value": "Metal kapılar"
+      }
+    ],
+    "sourceHash": {
+      "name": "6d37e29c6bcf",
+      "summary": "75d35629bdbb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "afa37475c50c"
+    },
+    "seoTitle": "SH02 Yaylı Menteşe Pimi, 160mm | Canton Hyland",
+    "seoDescription": "SH02 Yaylı Menteşe Pimi: 160mm. Fabrikadan doğrudan; numune ve teklif talep üzerine."
   },
   "single-oval-cylinder-lock-cylinder": {
     "name": "Kilit Silindiri",

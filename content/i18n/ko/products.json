@@ -12339,6 +12339,50 @@
       "specs": "bfe45686fd6d"
     }
   },
+  "8829-bl-lever-handle": {
+    "name": "마그네틱 모티스 레버 도어록",
+    "summary": "무광 블랙 레버 핸들과 마그네틱 래치 모티스 락의 조합입니다. 160mm 레버, 슬라이드 잠금 버튼, 분리형 커버 플레이트 아래 비상 열쇠 구멍을 갖췄습니다.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Lever length",
+        "value": "160mm"
+      },
+      {
+        "label": "Projection",
+        "value": "51mm"
+      },
+      {
+        "label": "Lock case",
+        "value": "86 × 48mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "85 × 22mm"
+      },
+      {
+        "label": "Latch",
+        "value": "마그네틱"
+      },
+      {
+        "label": "Function",
+        "value": "슬라이드로 잠금·해제, 커버 플레이트 아래 비상 열쇠 구멍"
+      },
+      {
+        "label": "Finish",
+        "value": "무광 블랙"
+      }
+    ],
+    "sourceHash": {
+      "name": "9d13ccbae36c",
+      "summary": "ce9f5d444cad",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "7e8ed0553919"
+    },
+    "seoTitle": "8829 BL 마그네틱 모티스 레버 도어록, 160mm | Canton Hyland",
+    "seoDescription": "8829 BL 마그네틱 모티스 레버 도어록: 160mm. 공장 직거래. 샘플과 견적은 문의해 주십시오."
+  },
   "90-bskt-lock-cylinder": {
     "name": "락 실린더",
     "summary": "90mm 통황동 유로 프로파일 실린더로, 새틴 마감(BS)입니다.",
@@ -17807,6 +17851,42 @@
       "specs": "97d170e1550e"
     }
   },
+  "d104-ss-deadbolts": {
+    "name": "데드볼트",
+    "summary": "모티스 데드락용 키 실린더와 썸턴 세트입니다. SUS304 스테인리스 스틸, 황동 키, 교체 가능한 실린더 코어.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "SUS304 스테인리스 스틸, 황동 키"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "44mm"
+      },
+      {
+        "label": "Height",
+        "value": "31.5mm (썸턴 쪽)"
+      },
+      {
+        "label": "Cylinder",
+        "value": "교체형 코어"
+      },
+      {
+        "label": "Finish",
+        "value": "헤어라인 스테인리스 (ST)"
+      }
+    ],
+    "sourceHash": {
+      "name": "58fac8af82ef",
+      "summary": "1e98632bfee3",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "74e69d11844b"
+    },
+    "seoTitle": "D104 SS 데드볼트, 공장 직거래 | Canton Hyland",
+    "seoDescription": "D104 SS 데드볼트. 공장 직거래. 샘플과 견적은 문의해 주십시오."
+  },
   "dc01-door-coordinator": {
     "name": "도어 코디네이터",
     "features": [
@@ -20851,50 +20931,6 @@
       "specs": "de9e27b1d752"
     }
   },
-  "hyde-ar4-111-mortise-lock": {
-    "name": "보안 모티스 락 바디",
-    "summary": "보안 모티스 락 바디(공장 품번 7240)입니다. 백셋 40mm, 중심 거리 72mm, 프론트 플레이트 220 × 25mm이며 키 2개와 함께 공급합니다.",
-    "features": [],
-    "specs": [
-      {
-        "label": "Factory reference",
-        "value": "7240"
-      },
-      {
-        "label": "Center distance",
-        "value": "72mm"
-      },
-      {
-        "label": "Backset",
-        "value": "40mm"
-      },
-      {
-        "label": "Faceplate",
-        "value": "220 × 25mm"
-      },
-      {
-        "label": "Case height",
-        "value": "140mm"
-      },
-      {
-        "label": "Latch options",
-        "value": "동도금 아연 합금 또는 황동"
-      },
-      {
-        "label": "Key options",
-        "value": "아연 합금 또는 황동, 키 2개"
-      }
-    ],
-    "seoTitle": "AR4-111 보안 모티스 락 바디 | Canton Hyland",
-    "seoDescription": "AR4-111 보안 모티스 락 바디: 센터 거리 72mm, 백셋 40mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
-    "sourceHash": {
-      "name": "9cad0957c775",
-      "summary": "e927d31a192b",
-      "description": "dd29ecf524b0",
-      "features": "97d170e1550e",
-      "specs": "59b40588960d"
-    }
-  },
   "hyde-ar4-110-mortise-lock": {
     "name": "보안 모티스 락 바디",
     "summary": "보안용 모티스 락 바디입니다. 백셋 40mm, 중심 거리 68mm, 프론트 플레이트 212 × 25mm이며 키 2개와 함께 공급합니다.",
@@ -20937,6 +20973,50 @@
       "description": "dd29ecf524b0",
       "features": "97d170e1550e",
       "specs": "629d1c51b20f"
+    }
+  },
+  "hyde-ar4-111-mortise-lock": {
+    "name": "보안 모티스 락 바디",
+    "summary": "보안 모티스 락 바디(공장 품번 7240)입니다. 백셋 40mm, 중심 거리 72mm, 프론트 플레이트 220 × 25mm이며 키 2개와 함께 공급합니다.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Factory reference",
+        "value": "7240"
+      },
+      {
+        "label": "Center distance",
+        "value": "72mm"
+      },
+      {
+        "label": "Backset",
+        "value": "40mm"
+      },
+      {
+        "label": "Faceplate",
+        "value": "220 × 25mm"
+      },
+      {
+        "label": "Case height",
+        "value": "140mm"
+      },
+      {
+        "label": "Latch options",
+        "value": "동도금 아연 합금 또는 황동"
+      },
+      {
+        "label": "Key options",
+        "value": "아연 합금 또는 황동, 키 2개"
+      }
+    ],
+    "seoTitle": "AR4-111 보안 모티스 락 바디 | Canton Hyland",
+    "seoDescription": "AR4-111 보안 모티스 락 바디: 센터 거리 72mm, 백셋 40mm. 공장 직거래. 샘플과 견적은 문의해 주십시오.",
+    "sourceHash": {
+      "name": "9cad0957c775",
+      "summary": "e927d31a192b",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "59b40588960d"
     }
   },
   "hyde-ar4-1121-hook-bolt-lock": {
@@ -25275,6 +25355,46 @@
       "features": "97d170e1550e",
       "specs": "f0c30d46851d"
     }
+  },
+  "sh02-spring-hinge-pin": {
+    "name": "스프링 경첩 핀",
+    "summary": "여닫이문을 자동으로 닫히게 하는 스프링 핀입니다. 직경 19mm, 전체 길이 160mm, 아연 도금, 스프링 장력 조절 가능.",
+    "features": [],
+    "specs": [
+      {
+        "label": "Diameter",
+        "value": "19mm"
+      },
+      {
+        "label": "Overall length",
+        "value": "160mm"
+      },
+      {
+        "label": "Function",
+        "value": "자동 닫힘, 스프링 장력 조절 가능"
+      },
+      {
+        "label": "Finish",
+        "value": "아연 도금"
+      },
+      {
+        "label": "Accessories",
+        "value": "텐션 핀 Ø5 × 100mm, 고정 핀"
+      },
+      {
+        "label": "Application",
+        "value": "금속 도어"
+      }
+    ],
+    "sourceHash": {
+      "name": "6d37e29c6bcf",
+      "summary": "75d35629bdbb",
+      "description": "dd29ecf524b0",
+      "features": "97d170e1550e",
+      "specs": "afa37475c50c"
+    },
+    "seoTitle": "SH02 스프링 경첩 핀, 160mm | Canton Hyland",
+    "seoDescription": "SH02 스프링 경첩 핀: 160mm. 공장 직거래. 샘플과 견적은 문의해 주십시오."
   },
   "single-oval-cylinder-lock-cylinder": {
     "name": "락 실린더",

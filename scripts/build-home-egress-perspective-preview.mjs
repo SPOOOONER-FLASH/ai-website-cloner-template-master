@@ -2,12 +2,12 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
-import { dirname, join } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const pack = join(root, "docs/design-references/home-hero-b-perspective-2026-10-10");
+const pack = resolve(root, process.argv[2] ?? "docs/design-references/home-hero-b-perspective-2026-10-10");
 const previous = JSON.parse(await readFile(join(root, "docs/design-references/home-hero-b-egress-2026-10-09/receipt.json"), "utf8"));
 const calibration = JSON.parse(await readFile(join(pack, "calibration.json"), "utf8"));
 const photo = await readFile(join(root, previous.source));

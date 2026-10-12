@@ -171,7 +171,7 @@ export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<st
   ["/bau-2027", ["en", "de"]],
   /* The privacy notice (2026-09-28): German because the BAU form collects data from German visitors. */
   ["/privacy", ["en", "de"]],
-  /* Candex + Elabora preview (2026-10-10), withheld from the sitemap: built in en and es only. */
+  /* The Argentina collection (launched 2026-10-12): written for Argentine distributors, en and es only. */
   ["/products/argentina", ["en", "es"]],
 ]);
 

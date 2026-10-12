@@ -10,12 +10,13 @@ from bpy_extras.object_utils import world_to_camera_view
 
 
 parser = argparse.ArgumentParser()
-pack = Path(__file__).resolve().parents[1] / 'docs/design-references/home-hero-b-perspective-2026-10-10'
+pack = Path(__file__).resolve().parents[1] / 'docs/design-references/home-hero-b-light-2026-10-10'
+assets = pack.parent / 'home-hero-b-perspective-2026-10-10'
 parser.add_argument('--out', default=str(pack))
-parser.add_argument('--texture', default=str(pack / 'stone-texture.png'))
-parser.add_argument('--background', default=str(pack / 'distant-landscape.png'))
+parser.add_argument('--texture', default=str(assets / 'stone-texture.png'))
+parser.add_argument('--background', default=str(assets / 'distant-landscape.png'))
 args = parser.parse_args(__import__('sys').argv[__import__('sys').argv.index('--') + 1:])
-out = Path(args.out)
+out = Path(args.out).resolve()
 out.mkdir(parents=True, exist_ok=True)
 assert Path(args.texture).is_file(), args.texture
 assert Path(args.background).is_file(), args.background
@@ -67,20 +68,20 @@ def stone(name, shade, contrast, roughness):
     gray = n.new('ShaderNodeRGBToBW')
     l.new(tex.outputs['Color'], gray.inputs[0])
     ramp = n.new('ShaderNodeValToRGB')
-    ramp.color_ramp.elements[0].color = (shade - contrast, shade - contrast, shade - contrast, 1)
-    ramp.color_ramp.elements[1].color = (shade + contrast, shade + contrast, shade + contrast, 1)
+    for element, value in zip(ramp.color_ramp.elements, [shade - contrast, shade + contrast]):
+        element.color = (value * 1.035, value * 1.015, value * 0.975, 1)
     l.new(gray.outputs[0], ramp.inputs[0])
     l.new(ramp.outputs['Color'], shader.inputs['Base Color'])
     bump = n.new('ShaderNodeBump')
-    bump.inputs['Strength'].default_value = 0.11
-    bump.inputs['Distance'].default_value = 0.003
+    bump.inputs['Strength'].default_value = 0.065
+    bump.inputs['Distance'].default_value = 0.0015
     l.new(gray.outputs[0], bump.inputs['Height'])
     l.new(bump.outputs[0], shader.inputs['Normal'])
     return mat
 
 
-wall_mat = stone('Cool pale limestone, quiet continuous field', 0.53, 0.20, 0.83)
-floor_mat = stone('Honed pale gray ground, same continuous level', 0.26, 0.11, 0.72)
+wall_mat = stone('Neutral warm-gray limestone, restrained natural variation', 0.48, 0.08, 0.80)
+floor_mat = stone('Honed neutral-gray ground, same continuous level', 0.32, 0.055, 0.57)
 seam_mat = bpy.data.materials.new('Fine gray paving joints')
 seam_mat.diffuse_color = (0.36, 0.37, 0.38, 1)
 seam_mat.use_nodes = True
@@ -88,11 +89,11 @@ seam_mat.node_tree.nodes.clear()
 seam_shader = seam_mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled')
 seam_output = seam_mat.node_tree.nodes.new('ShaderNodeOutputMaterial')
 seam_mat.node_tree.links.new(seam_shader.outputs[0], seam_output.inputs['Surface'])
-seam_shader.inputs['Base Color'].default_value = (0.10, 0.105, 0.11, 1)
+seam_shader.inputs['Base Color'].default_value = (0.24, 0.245, 0.24, 1)
 seam_shader.inputs['Roughness'].default_value = 0.9
 
 
-def box(name, bounds, material):
+def box(name, bounds, material, bevel=0):
     x0, x1, y0, y1, z0, z1 = bounds
     bpy.ops.mesh.primitive_cube_add(size=1, location=((x0+x1)/2, (y0+y1)/2, (z0+z1)/2))
     ob = bpy.context.object
@@ -100,6 +101,10 @@ def box(name, bounds, material):
     ob.dimensions = (x1-x0, y1-y0, z1-z0)
     bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
     ob.data.materials.append(material)
+    if bevel:
+        modifier = ob.modifiers.new('Small natural stone edge', 'BEVEL')
+        modifier.width = bevel
+        modifier.segments = 3
     return ob
 
 
@@ -114,6 +119,19 @@ box('Interior left return', (-3.15, -3.0, -8, 0, 0, 4.2), wall_mat)
 box('Interior right return', (3.1, 3.25, -8, 0, 0, 4.2), wall_mat)
 box('Courtyard left boundary', (-4.3, -4.1, 0.32, 5.5, 0, 0.9), wall_mat)
 box('Courtyard right boundary', (4.1, 4.3, 0.32, 5.5, 0, 0.9), wall_mat)
+
+# Thin stone cladding leaves real recessed joints; no lines are painted over the photo.
+for side, edges in [('left', [-5, -3.45, -1.95, -half_width]), ('right', [half_width, 2.45, 3.95, 5])]:
+    for x0, x1 in zip(edges, edges[1:]):
+        for z0, z1 in zip([0, 1.15, 2.6], [1.15, 2.6, 4.2]):
+            box('Limestone slab ' + side, (x0+0.002, x1-0.002, -0.34, -0.319, z0+0.002, z1-0.002), wall_mat, 0.0015)
+for z0, z1 in [(opening_height, 2.6), (2.6, 4.2)]:
+    box('Limestone lintel slab', (-half_width, half_width, -0.34, -0.319, z0+0.002, z1-0.002), wall_mat, 0.0015)
+
+planting = stone('Muted distant landscape transition', 0.10, 0.025, 0.95)
+for element, value in zip(next(n for n in planting.node_tree.nodes if n.type == 'VALTORGB').color_ramp.elements, [0.08, 0.13]):
+    element.color = (value * 0.9, value, value * 0.72, 1)
+box('Distant landscape transition beyond clear terrace', (-16,16,22,30,0.002,0.025), planting)
 
 # A distant background carries only overcast sky/trees; ground and all perspective are 3D.
 back_image = bpy.data.images.load(args.background, check_existing=True)
@@ -136,7 +154,7 @@ back_mat.node_tree.nodes.clear()
 back_tex = back_mat.node_tree.nodes.new('ShaderNodeTexImage')
 back_tex.image = back_image
 back_shader = back_mat.node_tree.nodes.new('ShaderNodeEmission')
-back_shader.inputs['Strength'].default_value = 0.8
+back_shader.inputs['Strength'].default_value = 1.0
 back_output = back_mat.node_tree.nodes.new('ShaderNodeOutputMaterial')
 back_mat.node_tree.links.new(back_tex.outputs['Color'], back_shader.inputs['Color'])
 back_mat.node_tree.links.new(back_shader.outputs[0], back_output.inputs['Surface'])
@@ -145,10 +163,10 @@ back.data.materials.append(back_mat)
 # Fine real-world paving joints are projective depth cues, not a wall-grid graphic.
 for ix in range(-5, 6):
     x = ix * 1.05 + 0.45
-    box('Longitudinal ground joint %s' % ix, (x-0.003, x+0.003, -8, 30, 0.0001, 0.0003), seam_mat)
-for iy in range(-6, 20):
+    box('Longitudinal ground joint %s' % ix, (x-0.001, x+0.001, -8, 22, 0.0001, 0.0003), seam_mat)
+for iy in range(-6, 17):
     y = iy * 1.35
-    box('Transverse ground joint %s' % iy, (-16, 16, y-0.003, y+0.003, 0.0001, 0.0003), seam_mat)
+    box('Transverse ground joint %s' % iy, (-16, 16, y-0.001, y+0.001, 0.0001, 0.0003), seam_mat)
 
 cam_data = bpy.data.cameras.new('Perspective photo calibration')
 cam = bpy.data.objects.new('Perspective photo calibration', cam_data)
@@ -195,7 +213,7 @@ background = world.node_tree.nodes.new('ShaderNodeBackground')
 world_output = world.node_tree.nodes.new('ShaderNodeOutputWorld')
 world.node_tree.links.new(background.outputs[0], world_output.inputs['Surface'])
 background.inputs['Color'].default_value = (0.83, 0.86, 0.91, 1)
-background.inputs['Strength'].default_value = 0.28
+background.inputs['Strength'].default_value = 0.45
 
 
 def area(name, location, target, power, size):
@@ -210,8 +228,8 @@ def area(name, location, target, power, size):
     obj.rotation_euler = (Vector(target) - obj.location).to_track_quat('-Z', 'Y').to_euler()
 
 
-area('Large cool interior bounce', (-1.8,-3.5,5.0), (0,0,1.2), 500, 5)
-area('Broad overhead courtyard daylight', (0.5,3.0,6.0), (0,3,0), 700, 6)
+area('Large neutral interior bounce', (-1.8,-3.5,5.0), (0,0,1.2), 450, 6)
+area('Broad overhead courtyard daylight', (0.5,5.0,6.0), (0,5,0), 1200, 12)
 
 vp = px((cam.location.x, 100000, cam.location.z))
 assert max(abs(vp[0]-871), abs(vp[1]-486)) <= 0.05, vp
@@ -232,6 +250,7 @@ receipt = {
     'distant_background_pixel_size':list(back_image.size),
     'courtyard_low_wall_height':0.9,
     'render_engine':'Cycles CPU','samples':64,'denoised':True,
+    'light_material_revision':'Soft neutral daylight; subtle warm-gray stone; recessed slab edges; 2mm scene paving seams; distant muted planting. All units describe environment composition, never hardware dimensions.',
 }
 (out/'calibration.json').write_text(json.dumps(receipt, indent=2), encoding='utf-8')
 scene.render.filepath = str(out/'empty-architecture.png')
