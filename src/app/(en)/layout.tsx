@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
         width: 1774,
         height: 887,
-        alt: "Double-door exit hardware with push bars and vertical rods, opening onto an outdoor courtyard",
+        alt: "306-D double-door exit hardware with push bars and vertical rods, opening onto an outdoor courtyard",
       },
     ],
   },

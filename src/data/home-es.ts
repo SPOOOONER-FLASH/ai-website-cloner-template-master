@@ -33,7 +33,7 @@ export const heroCarousel: HeroCarouselContent = {
       media: {
         ratio: "1800 / 900",
         src: "/images/editorial/home-panic-exit-double-door.webp",
-        label: "Herrajes antipánico para puerta de dos hojas: barras en ambas hojas y varillas verticales vistas en la hoja cerrada, abierta a un patio exterior",
+        label: "Herrajes antipánico 306-D para puerta de dos hojas: barras en ambas hojas y varillas verticales vistas en la hoja cerrada, abierta a un patio exterior",
       },
       title: "Dispositivos antipánico",
       body: "Un empujón y la puerta se abre. Barras antipánico, guarniciones exteriores y cajas de cerradura para puertas de evacuación y cortafuego, pensadas como un conjunto.",

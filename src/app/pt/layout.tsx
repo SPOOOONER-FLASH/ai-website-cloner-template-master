@@ -74,7 +74,7 @@ export const metadata: Metadata = {
         url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
         width: 1774,
         height: 887,
-        alt: "Ferragens antipânico em porta de duas folhas, com barras e hastes verticais, abrindo para um pátio externo",
+        alt: "Ferragens antipânico 306-D em porta de duas folhas, com barras e hastes verticais, abrindo para um pátio externo",
       },
     ],
   },

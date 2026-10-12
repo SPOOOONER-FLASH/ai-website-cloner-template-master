@@ -44,12 +44,25 @@ export const heroCarousel: HeroCarouselContent = {
       media: {
         ratio: "1800 / 900",
         src: "/images/editorial/home-panic-exit-double-door.webp",
-        label: "Ferragens antipânico em porta de duas folhas: barras nas duas folhas e hastes verticais aparentes na folha fechada, abrindo para um pátio externo",
+        label: "Ferragens antipânico 306-D em porta de duas folhas: barras nas duas folhas e hastes verticais aparentes na folha fechada, abrindo para um pátio externo",
       },
       title: "Barras antipânico",
       body: "Um empurrão e a porta abre. Barras antipânico, guarnições externas e caixas de fechadura para portas de saída de emergência e corta-fogo, pensadas como um conjunto.",
       linkLabel: "Explorar barras antipânico",
       href: "/pt/products/panic-exit-devices",
+    },
+    /* Brazil only (client, 2026-10-12): the fire-door landing page exists in Portuguese alone. */
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1800 / 900",
+        src: "/images/editorial/home-brazil-fire-door.webp",
+        label: "Barra antipânico 305 para porta corta-fogo, fotografada sobre fundo branco",
+      },
+      title: "Ferragens para porta corta-fogo",
+      body: "Barras antipânico de 650 a 1110 mm, maçanetas externas com chave, fechaduras e cilindros, com os documentos de cada modelo.",
+      linkLabel: "Ver ferragens corta-fogo",
+      href: "/pt/ferragens-porta-corta-fogo",
     },
     {
       variant: "stacked",

@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
         width: 1774,
         height: 887,
-        alt: "Herrajes antipánico para puerta de dos hojas, con barras y varillas verticales, abierta a un patio exterior",
+        alt: "Herrajes antipánico 306-D para puerta de dos hojas, con barras y varillas verticales, abierta a un patio exterior",
       },
     ],
   },

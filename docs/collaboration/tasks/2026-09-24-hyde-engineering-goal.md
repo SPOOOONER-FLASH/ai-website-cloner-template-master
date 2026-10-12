@@ -71,8 +71,8 @@
 | 66 | Zuperior Hardware（Dan，info@zuperiorhardware.com）询 magnetic door latch：官网没有这个品类；起草英文回信给甲方（价格留空由老板定，不编参数） | 09-27 完成（草稿在对话里交甲方） |
 | 69 | 磁性门锁舌（magnetic door latch）上官网：工厂确认能做后，给实拍照片 + 尺寸（锁舌中心距/面板/锁体长度、通道/隐私功能、表面）即可建品类页；现在不建，不编图不编参数 | 待甲方（工厂能否做 + 实物资料） |
 | 158 | 首页轮播：换逃生锁图（客户 10-12 给的图），加 AR-4、阿根廷集合两页（en/es/pt + 七语） | 进行中（10-12，等发布核对） |
-| 159 | 首页轮播两张阿根廷大图 | 待 Codex（docs/collaboration/tasks/2026-10-12-codex-home-carousel-argentina-images.md） |
-| 160 | 巴西逃生锁、阿根廷「单独开」：是单独的落地页还是单独的轮播页，待客户确认 | 待甲方 |
+| 159 | 首页轮播三张大图（阿根廷 ×2、巴西 ×1） | 待 Codex（docs/collaboration/tasks/2026-10-12-codex-home-carousel-argentina-images.md） |
+| 160 | 巴西逃生锁、阿根廷「单独开」：客户 10-12 答 A+B 都要。阿根廷落地页已有；巴西页 /pt/ferragens-porta-corta-fogo 已有，葡语首页轮播加一页 | 进行中（10-12） |
 | 70 | 文案会话 09-27（docs/copy/guide-keyword-split.md）：5 对文章 seoTitle 同词分流 → 6 篇 × 10 语种改主词（功能开头 / 认报价钢种 / 总长 vs 分段 / 读锁体型号 / 按项目国家 vs 等级对比） | 09-27 完成 |
 | 71 | /euro-cylinder-calculator（文案会话新建，10 语种）title/description 目前写在页面 metadata；接手时按 seoTitle 规则审一遍，避免和 euro-cylinder-size-chart、length-and-split 抢词 | 09-27 完成（主词只占 calculator；7 语种 title/description 已译，正文待文案/多语言会话） |
 | 72 | 文案会话 09-27：ansi-grade-1-vs-en-1125 的 seoDescription 只讲等级对比，「按国家/项目市场选标准」留给 en-1125-or-ansi（10 语种） | 09-27 完成 |

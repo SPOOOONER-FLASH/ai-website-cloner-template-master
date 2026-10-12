@@ -48,7 +48,7 @@ export const heroCarousel: HeroCarouselContent = {
       media: {
         ratio: "1800 / 900",
         src: "/images/editorial/home-panic-exit-double-door.webp",
-        label: "Double-door exit hardware: push bars on both leaves and surface vertical rods on the closed leaf, opening onto an outdoor courtyard",
+        label: "306-D double-door exit hardware: push bars on both leaves and surface vertical rods on the closed leaf, opening onto an outdoor courtyard",
       },
       title: "Panic Exit Devices",
       body: "One push, and the door opens. Push bars, outside trims and lock cases for escape and fire doors, specified as a set.",
