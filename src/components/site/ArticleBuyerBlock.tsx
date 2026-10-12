@@ -6,6 +6,7 @@ import { getProductsByCategory } from "@/data/products";
 import type { ArticleRoute, ArticleNext } from "@/data/article-routes";
 import { lower } from "@/components/locale-pages/shared";
 import { contactHref } from "@/lib/inquiry-prefill";
+import { localisedHref } from "@/lib/spanish-mirror";
 import { t as tr, tx } from "@/lib/i18n";
 import { ProductCard } from "./ProductCard";
 
@@ -25,25 +26,27 @@ import { ProductCard } from "./ProductCard";
  */
 const MAX_CARDS = 3;
 
-function nextLink(next: ArticleNext, locale: Locale, base: string): { href: string; label: string; detail?: string } {
+/* localisedHref, not a bare prefix: /request/price-list/ exists in English only, and a /fr/ link to it 404s. */
+function nextLink(next: ArticleNext, locale: Locale): { href: string; label: string; detail?: string } {
+  const to = (path: string) => localisedHref(path, locale);
   if (next.kind === "compare" || next.kind === "category") {
     const category = getTopLevelCategories().find((c) => c.slug === next.category);
     if (!category) throw new Error(`Article route points at unknown category "${next.category}"`);
     const name = lower(tr(category, "name", locale) || category.name, locale);
     if (next.kind === "compare") {
-      return { href: `${base}/compare/${next.category}/`, label: tx(locale, "Compare {name}", { es: "Comparar {name}", pt: "Comparar {name}" }).replace("{name}", name) };
+      return { href: to(`/compare/${next.category}/`), label: tx(locale, "Compare {name}", { es: "Comparar {name}", pt: "Comparar {name}" }).replace("{name}", name) };
     }
     const count = String(getProductsByCategory(next.category).length);
     return {
-      href: `${base}/products/${next.category}/`,
+      href: to(`/products/${next.category}/`),
       label: tx(locale, "See all {count} {name}", { es: "Ver los {count} {name}", pt: "Ver os {count} {name}" }).replace("{count}", count).replace("{name}", name),
     };
   }
-  if (next.kind === "finishes") return { href: `${base}/finishes/`, label: tx(locale, "Finish codes", { es: "Códigos de acabado", pt: "Códigos de acabamento" }) };
-  if (next.kind === "price-list") return { href: `${base}/request/price-list/`, label: tx(locale, "Price list", { es: "Lista de precios", pt: "Lista de preços" }) };
-  if (next.kind === "documents") return { href: `${base}/documents/`, label: tx(locale, "Documents", { es: "Documentos", pt: "Documentos" }) };
+  if (next.kind === "finishes") return { href: to("/finishes/"), label: tx(locale, "Finish codes", { es: "Códigos de acabado", pt: "Códigos de acabamento" }) };
+  if (next.kind === "price-list") return { href: to("/request/price-list/"), label: tx(locale, "Price list", { es: "Lista de precios", pt: "Lista de preços" }) };
+  if (next.kind === "documents") return { href: to("/documents/"), label: tx(locale, "Documents", { es: "Documentos", pt: "Documentos" }) };
   return {
-    href: `${base}/certifications/`,
+    href: to("/certifications/"),
     label: tx(locale, "Certificates", { es: "Certificados", pt: "Certificados" }),
     detail: tx(locale, "Verified model-scoped reports", { es: "Informes verificados por modelo", pt: "Relatórios verificados por modelo" }),
   };
@@ -73,7 +76,7 @@ export function ArticleBuyerBlock({
         from,
       })
     : contactHref(base, { from });
-  const next = route?.next ? nextLink(route.next, locale, base) : undefined;
+  const next = route?.next ? nextLink(route.next, locale) : undefined;
   const heading = tx(locale, "Related products", { es: "Productos relacionados", pt: "Produtos relacionados" });
 
   return (
