@@ -6,43 +6,23 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 473 次提交
+最近 30 天 · 共 458 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 02:55 | 中立 | 手册全量清理：旧条目合成 9 行表（做完回编号即删），已完成的移进 archive；桌面整理脚本也归档 00 文件夹里已完成的人工操作 | `171a8df24fb` |
-| 02:53 | 中立 | Merge origin/main | `84ccd64a112` |
-| 02:53 | 中立 | 七语种：10-11 新上的 8829 BL、D104 SS、SH02 补译名、摘要、规格与标题描述（消除 3×7 重复标题）；引用能力审查按 。！？ 断句 | `ce57bbe153a` |
-| 02:22 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d77574111ba` |
-| 02:19 | 中立 | 传单改单侧 6 面（12 面、80 款）；所有指示牌英文大中文小（#44、#45） | `7060d2978b8` |
-| 00:01 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `9ff0a147958` |
-| 00:00 | 中立 | 目录改墨白、招牌英文为主、传单改三折带折叠预览（#41–#43） | `0214de4a20e` |
-
-## 2026-10-11
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
-| 22:29 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `1493c32a898` |
-| 22:29 | 中立 | 更正：删去的铜色标志文件是 4 个，不是 3 个 | `413d57aa722` |
-| 22:29 | 中立 | 广交会物料改墨白两色；中文全称已确认（#39①、#40） | `6bb1c0c04af` |
-| 22:12 | 中立 | 广交会物料：HYDE 标志精修与规范、风琴折传单、厂内标识（#38） | `ca5d4d51a79` |
-| 21:36 | 中立 | 手册：服务器磁盘 89.86%，四条只读命令查占用（产品大脑不在服务器上） | `e9e216b464c` |
-| 21:33 | 中立 | 文章修订戳补齐（r34 被 stamp --check 拦下） | `80a362d5a80` |
-| 21:20 | 中立 | 手册顶部：GitHub 账号被隐藏 → 服务器配只读 deploy key（指向前端管理会话写的步骤） | `5770a198065` |
-| 21:19 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `9bc55279cda` |
-| 21:19 | HYDE | HYDE 新品三款：SH02 弹簧合页芯、D104 SS 呆锁钥匙芯与旋钮、8829 BL 磁吸插芯执手锁（#157） | `8d872a44ccf` |
+| 02:56 | 中立 | Add unified-light egress hero review and source artifacts | `a45b5f0d43e` |
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:50 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `019003ab091` |
-| 04:50 | 中立 | 手册：服务器没拉到新版的排查与手动补拉（#156） | `f71d6cd3155` |
-| 04:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `974b57ad427` |
-| 04:18 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5619229b127` |
-| 04:16 | 中立 | 改深链交给同事：大字分步说明 + 每站编号打勾清单 + LinkedIn（#155） | `a1e386d5d6d` |
+| 04:44 | 中立 | 合并本地提交（ship 旁路合并） | `cc4fb0e4e51` |
+| 04:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85c58de7563` |
+| 04:28 | 中立 | Elabora/Piccolo 公开尺寸与 AR4 工厂图纸对照（只核对，不上网站） | `06dbe5d0287` |
+| 00:44 | 中立 | 产品查找器结果卡片补传 locale：韩/西等语种点卡片不再跳到英文页 | `94331c4b51b` |
+| 00:21 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 501ff278c8b | `98fd1ab5720` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
 | 00:06 | 中立 | 纪律：回复甲方一律用简体中文（甲方 10-10） | `831bea39928` |
 

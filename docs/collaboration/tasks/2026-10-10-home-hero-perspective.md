@@ -11,3 +11,11 @@ Client, 2026-10-10: the published courtyard composite looks false, has no cohere
 - New work is a review artifact until accepted. No live/public image, Guides head, original SKU image, RAYEN output or frozen image batch is changed by its generator.
 
 Artifacts: `docs/design-references/home-hero-b-perspective-2026-10-10/`. The Blender scene contains environment only; the photographed metal remains a 2D source. Do not present it as an actual installed project or certified assembly.
+
+## October 11–12 continuation: unified photographic light
+
+The client explicitly rejected the cutout appearance and requested coherent light/shadow across the whole image. Camera calibration and source-pixel identity alone do not complete this task. The additional Blender light study remains an intermediate, not a finished hero.
+
+The continuation applies photographic exposure/color/contact-shadow treatment to the whole existing composition while keeping catalogue geometry as the visual authority. Do not interpret permission for photographic retouch as permission to invent hardware. Review bar profiles, end housings, rods, guides, locks, hinges and door pose against the source. Original-pixel equality is no longer claimed after exposure treatment.
+
+The first retouch passed that enlarged visual comparison but introduced an outdoor low wall; it is not the deliverable. The final local correction removes the wall and freezes all pixels outside a small outdoor-only rectangle. Final review image: `docs/design-references/home-hero-b-unified-2026-10-11/preview.png`. Environment project: `docs/design-references/home-hero-b-light-2026-10-10/scene.blend`. The final finish is a raster photographic treatment, not a hardware CAD render. This stage does not replace live imagery or claim manufacturing/installation validation.
