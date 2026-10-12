@@ -112,6 +112,7 @@
 | 46 | 甲方 10-12：远高四个方案（D:\clones yunagao 网站\_dist\yuangao-designs-with-node.zip）更正：最喜欢 4，其次 1，3 和 2 也有长处，「你都借鉴 争取 四合一」——怎么给 HYDE 做动画效果，先出四合一方案 | 待问：10-12 方案已出（docs/research/2026-10-12-HYDE动效四合一方案.md + 桌面 docx），以 4 号为主线、1/3/2 各取一段；等甲方答 5 问（Ken Burns、开场幕布、工厂四步照片、时间线年份、页头隐藏）并确认先做演示页 |
 | 47 | 甲方 10-12：「先做演示页，可以用 motion」，要炫酷精美华丽专业——按四合一方案做可滚动演示页（真实图片，独立于正式站） | 10-12 完成：docs/design-references/2026-10-12-motion-demo（Vite + React + motion，npm run build 出单文件），桌面 03-研究与方案/HYDE动效演示页-2026-10-12 双击即看 |
 | 48 | 甲方 10-12 看了演示：「出口地图 + 品类数量条、品类索引（跟手图）、工厂故事 这三部分特别好，甚至可以直接加入现在的首页 你看看怎么放」 | 10-12 完成：FamilyIndex（推荐货架后）、ExportMap（AR4 后）、FactoryStory（FeatureColumns 后），十语首页都加；CSS+小组件不装 motion；等工程会话发布 |
+| 49 | 甲方 10-12：「激光切割加进去，这都不要了 但是图片帮我留着我喜欢 图片放到hyde桌面文件夹」——工厂故事加回激光切割；首页 FactoryStory 之后的旧模块（Panic Exit Devices 大图、Where our hardware is fitted、Designed for、Materials + Engineering、Service + Downloads、Engineering for Export、Hardware Specification）全部撤下，图片复制到桌面 | 10-12 完成：FactoryStory 4 步（加回激光切割，七语）；十语首页撤下 hero2–hero5/text1–3/teaser2–3；8 张图在桌面 03-研究与方案/首页撤下的图片-2026-10-12；home-accent 测试同步；等发布 |
 
 
 ## 待甲方确认（文案）

@@ -36,3 +36,14 @@
 - 没跑 `npm run build` 和 `test:export`（全站 8,869 页），由发布会话在 release:hyde 时跑。首页 HTML 预计增加约 60 KB，离 640 KB 上限还很远。
 - 工作树的 node_modules 是符号链接，Turbopack 开发服务器起不来，这次用 `--webpack` 看的。
 - 网站要等工程会话发布才会上线。
+
+## 10-12 第二轮：加回激光切割；撤下首页下半段旧模块
+
+甲方：「激光切割加进去，这都不要了 但是图片帮我留着我喜欢 图片放到hyde桌面文件夹」。
+
+- 工厂故事改回 4 步：切割（激光切割机）→ 冲压 → 抛光 → 装配与检验。机身上的设备厂商商标由甲方当场同意保留；`content/rayen/assets.json` 本来也已放行公司页使用这张图。正文改成“We cut, stamp, polish…”，七语一起更新，旧的正文键已删掉。
+- 首页 FactoryStory 之后的旧模块全部撤下，10 种语言一样：hero2 Panic Exit Devices、text1 加 teaser2 “Where our hardware is fitted”、hero3 Designed for、hero4 Materials + Engineering、text2 加 teaser3 Service + Downloads、text3 Engineering for Export 加 hero5 Hardware Specification。现在首页在工厂故事之后直接到页脚。
+- 8 张图片按原尺寸复制到桌面 `03-研究与方案/首页撤下的图片-2026-10-12/`，有 HYDE 角标版本的用角标版。`public/images` 里的文件没删，别的页面可能还在用。
+- `src/data/home*.ts` 里 hero2–hero5、text1–text3、teaser2–3 的数据对象还留着，没有引用了。要彻底清理，另开一项做，因为 i18n 提取和测试还会扫到它们。
+- `home-accent.test.ts`：按甲方决定把锁定值改成 homeAccent 1 个、homeEditorial 0 个，在同一个提交里。
+- 检查：npm test 462/462 通过，typecheck、i18n-lint、motion:check 都通过；开发服务器截图看过工厂故事第 1 步和页面底部。
