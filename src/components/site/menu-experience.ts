@@ -218,6 +218,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         title: "Produtos",
         links: [
           { label: "Todos os produtos", href: "/pt/products/" },
+          { label: "Coleção Argentina", href: "/products/argentina/" },
           { label: "Localizador de produtos", href: "/pt/product-finder/" },
           { label: "Configurador", href: "/pt/configurator/" },
           { label: "Estúdio de configuração", href: "/pt/configurator/studio/" },
