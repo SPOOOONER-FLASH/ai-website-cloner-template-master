@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 470 次提交
+最近 30 天 · 共 471 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:57 | 中立 | HYDE 动效四合一方案：4 号主线，1/3/2 各取一段（#46 待问） | `3858c5b37be` |
 | 02:22 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d77574111ba` |
 | 02:19 | 中立 | 传单改单侧 6 面（12 面、80 款）；所有指示牌英文大中文小（#44、#45） | `7060d2978b8` |
 | 00:01 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `9ff0a147958` |
