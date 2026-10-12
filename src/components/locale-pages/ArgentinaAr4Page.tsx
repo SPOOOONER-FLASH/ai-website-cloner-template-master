@@ -8,14 +8,14 @@ import { absoluteUrl } from "@/data/site";
 import { tx } from "@/lib/i18n";
 import { localeMetadata, prefixer } from "./shared";
 
-const models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"];
+const models = ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"];
 
 export function argentinaAr4Metadata(locale: Locale): Metadata {
   return localeMetadata(
     locale,
     "/products/argentina-ar4",
     "HYDE Argentina AR-4 Mortise Lock Collection",
-    "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries. Models AR4-110, AR4-140, AR4-101 and AR4-1121.",
+    "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries. Models AR4-110, AR4-140, AR4-111 and AR4-1121.",
     { image: "/images/editorial/argentina-ar4-entry.webp", imageAlt: tx(locale, "HYDE Argentina AR-4 mortise lock collection") },
   );
 }

@@ -25,21 +25,21 @@ const IMG_OUT = join("public", "images", "argentina-collection");
 mkdirSync(IMG_OUT, { recursive: true });
 
 const ELABORA = [
-  { model: "110", group: "mortise", faceplate: "210 × 25", centres: "67", case: "125 × 65" },
-  { model: "110-frente-chico", label: "110 FC", group: "mortise", faceplate: "190 × 20", centres: "67", case: "125 × 63" },
-  { model: "111", group: "mortise", faceplate: "220 × 25", centres: "72", case: "140 × 64" },
-  { model: "111-doble-perno", label: "111 DP", group: "mortise", faceplate: "220 × 25", centres: "72", case: "140 × 64" },
-  { model: "101", group: "mortise", faceplate: "183 × 18", centres: "72", case: "— × 63" },
-  { model: "102", group: "mortise", faceplate: "210 × 25", centres: "68", case: "— × 63" },
-  { model: "140", group: "aluminium", faceplate: "190 × 20", centres: "71", case: "125 × 40" },
-  { model: "1140", group: "aluminium", faceplate: "240 × 24", centres: "91", case: "175 × 40" },
+  { model: "110", group: "mortise", faceplate: "210 × 25", centers: "67", case: "125 × 65" },
+  { model: "110-frente-chico", label: "110 FC", group: "mortise", faceplate: "190 × 20", centers: "67", case: "125 × 63" },
+  { model: "111", group: "mortise", faceplate: "220 × 25", centers: "72", case: "140 × 64" },
+  { model: "111-doble-perno", label: "111 DP", group: "mortise", faceplate: "220 × 25", centers: "72", case: "140 × 64" },
+  { model: "101", group: "mortise", faceplate: "183 × 18", centers: "72", case: "— × 63" },
+  { model: "102", group: "mortise", faceplate: "210 × 25", centers: "68", case: "— × 63" },
+  { model: "140", group: "aluminum", faceplate: "190 × 20", centers: "71", case: "125 × 40" },
+  { model: "1140", group: "aluminum", faceplate: "240 × 24", centers: "91", case: "175 × 40" },
   { model: "1121", group: "deadlock", faceplate: "140 × 25", case: "81 × 65" },
   { model: "1122", group: "deadlock", faceplate: "140 × 25", case: "81 × 65" },
 ];
 
 function candexGroup(p) {
   if (/corrediza|cortina/i.test(p.category) || /123|cortina/i.test(p.slug)) return "sliding";
-  if (/batientes angost/i.test(p.description)) return "aluminium";
+  if (/batientes angost/i.test(p.description)) return "aluminum";
   if (/cerrojo/i.test(p.category)) return "deadlock";
   return "mortise";
 }
@@ -66,7 +66,7 @@ for (const e of ELABORA) {
     id, source: "elabora", group: e.group, model: `AR4-${e.label ?? e.model}`, drawing: true,
     specs: [
       { key: "faceplate", value: `${e.faceplate} mm` },
-      ...(e.centres ? [{ key: "centres", value: `${e.centres} mm` }] : []),
+      ...(e.centers ? [{ key: "centers", value: `${e.centers} mm` }] : []),
       { key: "case", value: `${e.case} mm` },
     ],
     image: await image(`elabora-${e.model}.webp`, id),

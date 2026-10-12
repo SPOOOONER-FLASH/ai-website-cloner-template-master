@@ -6,7 +6,7 @@ import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { dict, t } from "@/lib/i18n";
 
-const ar4Models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"] as const;
+const ar4Models = ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"] as const;
 type LocalizedProduct = Product & { nameEs?: string; namePt?: string };
 
 const copy = {
@@ -50,7 +50,7 @@ function ar4Products(): Product[] {
 
   The wash stops at 40%, not 0: Elabora clears it completely and its titles become hard to
   read over the bare photograph. 40% is the lowest that keeps the dark text at 4.5:1 over
-  AR4-101's lock body (20% measured 3.57:1 at the 5th percentile, 2026-10-10).
+  AR4-111's lock body (20% measured 3.57:1 at the 5th percentile, 2026-10-10).
 */
 function Ar4Tile({ product, locale }: { product: Product; locale: Locale }) {
   /* English, never Spanish, for a locale with no name of its own yet. */

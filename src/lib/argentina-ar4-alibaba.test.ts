@@ -9,7 +9,7 @@ type ProductFixture = {
 const fixtures = [
   ["hyde-ar4-110-mortise-lock.json", "110"],
   ["hyde-ar4-140-mortise-lock.json", "140"],
-  ["hyde-ar4-101-mortise-lock.json", "110"],
+  ["hyde-ar4-111-mortise-lock.json", "110"],
   ["hyde-ar4-1121-hook-bolt-lock.json", "1121"],
 ] as const;
 

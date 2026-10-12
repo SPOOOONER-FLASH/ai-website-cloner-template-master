@@ -6,14 +6,14 @@ import { getProductByModel } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 
-const models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"];
+const models = ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"];
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/products/argentina-ar4",
   locale: "en",
   title: "HYDE Argentina AR-4 Mortise Lock Collection",
   description:
-    "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries. Models AR4-110, AR4-140, AR4-101 and AR4-1121.",
+    "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries. Models AR4-110, AR4-140, AR4-111 and AR4-1121.",
   image: "/images/editorial/argentina-ar4-entry.webp",
   imageAlt: "HYDE Argentina AR-4 mortise lock collection",
 });

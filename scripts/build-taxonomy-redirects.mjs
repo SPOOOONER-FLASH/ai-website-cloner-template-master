@@ -74,6 +74,22 @@ function existsInExport(path) {
 const hasExport = existsSync(EXPORT);
 const skipped = [];
 
+/*
+  A destination that IS a published HYDE product but is missing from the English export
+  means the export is stale, not that the page is meant to be absent. 2026-10-12: the
+  AR4-101 -> AR4-111 rename was generated against an export built before the rename, the
+  rule was skipped with only a printed warning, and the old URL shipped as a 404 instead of
+  a 301. A mirror may legitimately lack a page; the English catalogue may not. So stop.
+*/
+const staleExport = [];
+function expectInExport(slug, path) {
+  const file = `content/products/${slug}.json`;
+  if (!hasExport || !existsSync(file)) return;
+  const product = JSON.parse(readFileSync(file, "utf8"));
+  if (product.published === false || (product.sites && !product.sites.includes("hyde"))) return;
+  if (!existsInExport(path)) staleExport.push(path);
+}
+
 const lines = [
   "# Cantonlock catalog taxonomy redirects.",
   "#",
@@ -126,6 +142,7 @@ for (const [alias, { canonical, productSlugs }] of Object.entries(moves.category
 }
 
 for (const move of moves.productMoves) {
+  expectInExport(move.slug, `/products/${move.to}/${move.slug}/`);
   lines.push(`# ${move.slug}: ${move.from} -> ${move.to}`);
   lines.push(
     ...rule(`/products/${move.from}/${move.slug}`, `/products/${move.to}/${move.slug}/`),
@@ -139,6 +156,7 @@ for (const move of moves.productMoves) {
 */
 for (const merge of moves.productMerges ?? []) {
   const dest = merge.toCategory ?? merge.category; // renamed AND moved: still one hop
+  expectInExport(merge.to, `/products/${dest}/${merge.to}/`);
   lines.push(`# merged duplicate: ${merge.from} -> ${merge.to}`);
   lines.push(
     ...rule(`/products/${merge.category}/${merge.from}`, `/products/${dest}/${merge.to}/`),
@@ -183,6 +201,13 @@ if (process.argv.includes("--check")) {
   }
   console.log(`${OUT} matches ${SOURCE}.`);
   process.exit(0);
+}
+
+if (staleExport.length) {
+  console.error(`✗ out/ is older than ${SOURCE}: ${staleExport.length} published product(s) missing from the export:`);
+  for (const path of staleExport) console.error(`    ${path}`);
+  console.error("  Build (or pull the latest release's out/) and run this again. Nothing was written.");
+  process.exit(1);
 }
 
 mkdirSync("deploy/nginx", { recursive: true });

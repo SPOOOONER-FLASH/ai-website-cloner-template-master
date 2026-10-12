@@ -11,7 +11,7 @@
 
     node scripts/argentina/prepare-collection-images.mjs
 */
-import { mkdirSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
 
@@ -19,6 +19,9 @@ const RAW = join("tmp", "claude-argentina", "raw");
 const OUT = join("tmp", "claude-argentina", "webp");
 mkdirSync(OUT, { recursive: true });
 const SIZE = 1100;
+/* The brand-stamp retouch (scripts/argentina/retouch-stamps.mjs) wins when it exists. */
+const RETOUCHED = join("tmp", "claude-argentina", "retouched");
+const source = (raw, name) => (existsSync(join(RETOUCHED, `${name}.png`)) ? join(RETOUCHED, `${name}.png`) : raw);
 const white = { r: 255, g: 255, b: 255, alpha: 1 };
 
 async function square(input, file, margin = 0.08) {
@@ -34,7 +37,8 @@ async function square(input, file, margin = 0.08) {
 const candex = JSON.parse(readFileSync(join(RAW, "candex.json"), "utf8"));
 for (const product of candex) {
   if (!product.images[0]) continue;
-  await square(join(RAW, "candex-img", product.images[0]), `candex-${product.slug}.webp`);
+  const file = product.images[0];
+  await square(source(join(RAW, "candex-img", file), file.replace(/\.[^.]+$/, "")), `candex-${product.slug}.webp`);
 }
 
 /*
@@ -50,7 +54,7 @@ if (sheets.length !== Object.keys(ELABORA_BY_FILE).length) throw new Error(`expe
 for (const sheet of sheets) {
   const model = ELABORA_BY_FILE[sheet.slice(0, 2)];
   if (!model) throw new Error(`unmapped Elabora sheet ${sheet}`);
-  const { data, info } = await sharp(join(RAW, "elabora-img", sheet))
+  const { data, info } = await sharp(source(join(RAW, "elabora-img", sheet), `elabora-${sheet.slice(0, 2)}`))
     .flatten({ background: white })
     .extract({ left: 560, top: 100, width: 503, height: 491 })
     .raw()
