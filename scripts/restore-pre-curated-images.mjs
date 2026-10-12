@@ -9,8 +9,6 @@ for(const slug of Object.keys(news)){
   fs.writeFileSync(file,JSON.stringify(current,null,2)+'\n');
 }
 for(const file of ['src/data/home.ts','src/data/home-es.ts','src/data/home-editorial-assets.test.ts'])fs.writeFileSync(file,fs.readFileSync(file,'utf8').replaceAll('curated-home-catalogue.webp','hyde-real-product-atlas.webp'));
-const columns='src/data/feature-columns.ts';
-fs.writeFileSync(columns,fs.readFileSync(columns,'utf8').replace('curated-lc04-dimensions.webp','news-mortise-lock-inspection.webp').replace('LC04 85/60 original product photograph and factory dimension drawing','A Canton Hyland mortise lock case being measured').replace('Fotografía original y plano de cotas de fábrica del LC04 85/60','Medición de una cerradura de embutir de Canton Hyland'));
 // These two files only acquired the rejected gallery selection in this image task.
 for(const file of ['src/data/generated/product-studies.json','scripts/publish-hardware-studies.mjs'])fs.writeFileSync(file,old(file));
 const test='src/lib/editorial-image-uniqueness.test.ts';let t=fs.readFileSync(test,'utf8');

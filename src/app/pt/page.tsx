@@ -7,7 +7,6 @@ import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
-import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { ExportMap } from "@/components/site/ExportMap";
 import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
@@ -60,7 +59,6 @@ export default function PortugueseHomePage() {
         <ExportMap locale="pt" />
 
         {/* Buyer resources follow the market collection. */}
-        <FeatureColumns locale="pt" />
         <FactoryStory locale="pt" />
       </div>
     </main>
