@@ -6,7 +6,7 @@ The visible recess and continuous paving now establish wall thickness, a common 
 
 Inputs are the existing repository `306-d-panic-exit-device-7.webp`, generated stone texture, generated distant sky/trees, and an environment-only Blender scene. No door, frame or hardware was generated. The revised matte also replaces non-product border/floor pixels rather than protecting a pasted rectangle. The PNG retains 263,262 protected source RGB pixels exactly; `pixel-qa.json` records hashes and scope. This assertion is only a geometry gate.
 
-Reproduce from the repository root, using the installed Blender:
+This is the retained first calibration snapshot. Reproduce it from commit `920c44f2459c`; the current renderer defaults to the later lighting-study pack so it cannot overwrite this snapshot. At the snapshot commit, use:
 
 ```powershell
 & 'C:/Program Files/Blender Foundation/Blender 5.2/blender.exe' -b --python scripts/render-home-egress-architecture.py --
