@@ -130,7 +130,8 @@ function localeHrefLeaks(locale: "es" | "pt", source: string, file: string): str
     if (!/^[a-z0-9-]+$/.test(segment)) continue;
     if (segment === locale) continue;
     const route = `/${segment}`;
-    if (!hasMirror(route)) continue;
+    // The target, not just its first segment: /products/argentina is en/es only, so a pt link to it is not a leak.
+    if (!hasMirror(route) || !hasMirror(href.split(/[?#]/)[0])) continue;
     leaks.push(`${file}: ${href} should start /${locale}${route}/`);
   }
   return leaks;
