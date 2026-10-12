@@ -1,21 +1,21 @@
-"""HYDE Canton Fair flyer: a six-panel Z-fold (three per side), the catalogue's look in your pocket.
+"""HYDE Canton Fair flyer: a 12-face accordion (six panels a side), the catalogue's look in your pocket.
 
     py scripts/catalogue/flyer.py --out-dir DIR
 
-Client, 2026-10-11: a short "best of" flyer for the 140th Canton Fair, with QR codes. The
-first draft was a 10-panel accordion; the client found it 「不够流畅」 and asked for six
-panels, front and back, with a folded preview. Flat 300 x 210 mm, folds to 100 x 210.
+Client, 2026-10-11/12: a short "best of" flyer for the 140th Canton Fair, with QR codes and
+a folded preview. Drafts: 10 panels (「不够流畅」), then 3 a side; the client settled it as
+「单侧 6页」. Flat 600 x 210 mm, folds to 100 x 210.
 
 Writes to <out-dir>:
   HYDE-flyer-2026-print.pdf    2 pages = side A and side B, 3 mm bleed, crop and fold marks
-  HYDE-flyer-2026-screen.pdf   6 single panels in reading order, for email
+  HYDE-flyer-2026-screen.pdf   12 single panels in reading order, for email
   传单预览/*.png                both sides flat, plus folded previews (closed, and each side
                                half-open in a zigzag) drawn from the same pages
 
-Folding (Z): side A is A1 A2 A3 left to right, side B is B1 B2 B3 left to right as printed;
-B3 backs A1. Folded, A3 is the cover and B3 the back cover. Opening the cover shows B1 | B2
-(the factory, then the range with a code per family); opened flat, side A shows the twenty
-selected models next to the cover.
+Folding (zigzag, an even number of panels): side A is A1..A6 left to right, side B is
+B1..B6 left to right as printed; B1 backs A6. Folded, A6 is the cover and A1 the back
+cover, both on side A. Opening the cover shows B1 | B2 (the factory, then the range with a
+code per family), and side B carries on into four product panels; side A holds four more.
 
 Same rules as the catalogue (docs/superpowers/specs/2026-10-08-canton-fair-catalogue-design.md):
 real cut-out photographs only (no as-shot plates, which carry the old supplier watermark),
@@ -40,7 +40,7 @@ import hyde_mark as hm  # noqa: E402
 import kit  # noqa: E402
 
 MM = 72 / 25.4
-PANEL_W, PANEL_H, PANELS = 100 * MM, 210 * MM, 3
+PANEL_W, PANEL_H, PANELS = 100 * MM, 210 * MM, 6
 BLEED, SLUG = 3 * MM, 12 * MM
 PAD = 6.5 * MM
 COMPANY = samples.COMPANY
@@ -54,22 +54,22 @@ CONTACT = [
 ]
 FEATURED = {"307", "311", "305", "316-D", "309-D", "302", "LC14", "564", "9014", "575", "578", "70722"}
 
-# The range panel: one row and one code per family group; the code opens the first family.
-RANGE = [
-    ("Panic exit devices", ["panic-exit-devices"]),
-    ("Lock cases & cylinders", ["lock-cases", "lock-cylinders"]),
-    ("Levers & stainless handles", ["lever-handles", "stainless-steel-handles"]),
-    ("Knob & tubular locks", ["knob-locks"]),
-    ("Grip sets, rim & hook locks", ["grip-handle-sets", "night-latches-rim-locks", "sliding-hook-locks"]),
-    ("Hinges & accessories", ["brass-steel-hinges", "hardware-accessories"]),
-    ("Glass door & bathroom", ["glass-door-accessories", "bathroom-accessories"]),
-]
-# The two selected-models panels, ten cards each: (title, [(family slug, count)]).
+# The eight product panels, ten cards each: (title, [(family slug, count)]). The first four
+# run on after the range panel on side B; the other four sit on side A between the covers.
 PRODUCT_PANELS = [
-    ("Panic exit & locks", [("panic-exit-devices", 6), ("lock-cases", 2), ("lock-cylinders", 2)]),
-    ("Handles, hinges & glass", [("lever-handles", 3), ("stainless-steel-handles", 1), ("knob-locks", 2),
-                                 ("brass-steel-hinges", 2), ("glass-door-accessories", 2)]),
+    ("Panic exit devices", [("panic-exit-devices", 10)]),
+    ("Lock cases & cylinders", [("lock-cases", 6), ("lock-cylinders", 4)]),
+    ("Lever handles", [("lever-handles", 10)]),
+    ("Stainless steel handles", [("stainless-steel-handles", 10)]),
+    ("Knob & tubular locks", [("knob-locks", 10)]),
+    ("Rim, grip & hook locks", [("night-latches-rim-locks", 6), ("grip-handle-sets", 2), ("sliding-hook-locks", 2)]),
+    ("Hinges & accessories", [("brass-steel-hinges", 6), ("hardware-accessories", 4)]),
+    ("Glass door & bathroom", [("glass-door-accessories", 6), ("bathroom-accessories", 4)]),
 ]
+
+
+# The range panel: one row and one code per product panel; the code opens its first family.
+RANGE = [(title, [slug for slug, _ in groups]) for title, groups in PRODUCT_PANELS]
 
 
 def _base(model: str) -> str:
@@ -227,7 +227,7 @@ def product_panel(s: Sheet, i: int, title: str, groups: list[tuple[str, int]]) -
     s.text(x0, 16 * MM, title.upper(), 7.2, "display-semibold", style.INK, track=40)
     s.rule(x0, 19.5 * MM, x0 + 10 * MM, style.INK, 1.0)
     q = 13 * MM
-    s.qr(x1 - q, 7 * MM, q, SITE + "products/")
+    s.qr(x1 - q, 7 * MM, q, qr.family_url(groups[0][0]))
     s.text(x0, 24.5 * MM, "Every model and its full specifications: scan the code", 5.2, "text", style.INK3)
     cards = [(slug, c) for slug, n in groups for c in pick(slug, n)]
     cols, rows = 2, 5
@@ -258,8 +258,9 @@ def range_panel(s: Sheet, i: int) -> None:
     x0, x1 = i * PANEL_W + PAD, (i + 1) * PANEL_W - PAD
     s.text(x0, 18 * MM, "THE RANGE", 6, "text-medium", style.INK, track=160)
     s.para(x0, 21 * MM, x1, 36 * MM, "Scan a family for every model.", 14, "display", style.INK, 1.2)
-    top, row = 40 * MM, 23.6 * MM
-    q, img_w = 15 * MM, 22 * MM
+    top = 40 * MM
+    row = (PANEL_H - 8 * MM - top) / len(RANGE)
+    q, img_w = 14 * MM, 20 * MM
     for k, (title, slugs) in enumerate(RANGE):
         y = top + k * row
         s.rule(x0, y, x1, style.RULE, 0.4)
@@ -267,18 +268,18 @@ def range_panel(s: Sheet, i: int) -> None:
         s.image(x0, y + 2 * MM, x0 + img_w, y + row - 2 * MM, samples.grid_plate(lead.product))
         tx = x0 + img_w + 4 * MM
         tw = x1 - q - 3 * MM - tx
-        s.text(tx, y + 8 * MM, style.fit(title, tw, 7.4, "text-semibold"), 7.4, "text-semibold", style.INK)
+        s.text(tx, y + 7 * MM, style.fit(title, tw, 7.4, "text-semibold"), 7.4, "text-semibold", style.INK)
         models = [_base(c.model) for slug in slugs for c in pick(slug, -(-4 // len(slugs)))][:4]
-        s.text(tx, y + 12.5 * MM, style.fit("  ·  ".join(models), tw, 5.6), 5.6, "text", style.INK2)
-        s.text(tx, y + 16.5 * MM, "Scan for all models", 4.9, "text", style.INK3)
+        s.text(tx, y + 11.5 * MM, style.fit("  ·  ".join(models), tw, 5.6), 5.6, "text", style.INK2)
+        s.text(tx, y + 15.5 * MM, "Scan for all models", 4.9, "text", style.INK3)
         s.qr(x1 - q, y + (row - q) / 2, q, qr.family_url(slugs[0]))
     s.rule(x0, top + len(RANGE) * row, x1, style.RULE, 0.4)
 
 
 # Panels per side, left to right as printed (key, product-panel index), and reading order.
-SIDE_A = [("products-1", 0), ("products-2", 1), ("cover", None)]
-SIDE_B = [("factory", None), ("range", None), ("back", None)]
-READING = ["cover", "factory", "range", "products-1", "products-2", "back"]
+SIDE_B = [("factory", None), ("range", None)] + [(f"products-{k + 1}", k) for k in range(4)]
+SIDE_A = [("back", None)] + [(f"products-{k + 1}", k) for k in range(4, 8)] + [("cover", None)]
+READING = ["cover"] + [key for key, _ in SIDE_B] + [key for key, _ in SIDE_A[1:-1]] + ["back"]
 
 
 def draw_panel(s: Sheet, i: int, key: str, idx) -> int:
@@ -355,15 +356,16 @@ def _shadow(canvas, polys, blur):
 
 
 def _zigzag(panels, path):
-    """The three panels of one side half-open in a Z, fold edges alternately near and far."""
+    """The panels of one side half-open in a Z, fold edges alternately near and far."""
     w, h = panels[0].size
     pw, far = int(w * 0.82), 0.88
-    W, H = int(3 * pw + 0.5 * w), int(h * 1.3)
+    n = len(panels)
+    W, H = int(n * pw + 0.5 * w), int(h * 1.3)
     canvas = Image.new("RGB", (W, H), BG)
-    x0, cy = (W - 3 * pw) // 2, H // 2 - int(0.02 * h)
-    edges = [(x0 + k * pw, far if k % 2 == 0 else 1.0) for k in range(4)]
+    x0, cy = (W - n * pw) // 2, H // 2 - int(0.02 * h)
+    edges = [(x0 + k * pw, far if k % 2 == 0 else 1.0) for k in range(n + 1)]
     quads = []
-    for k in range(3):
+    for k in range(n):
         (xl, sl), (xr, sr) = edges[k], edges[k + 1]
         quads.append([(xl, cy - h * sl / 2), (xr, cy - h * sr / 2), (xr, cy + h * sr / 2), (xl, cy + h * sl / 2)])
     floor = [[(q[3][0] + 18, q[3][1] - 10), (q[2][0] + 18, q[2][1] - 10), (q[2][0] + 40, q[2][1] + 22),
@@ -399,9 +401,9 @@ def previews(doc: pymupdf.Document, out_dir: Path) -> list[Path]:
         pw = img.width // PANELS
         sides.append([img.crop((k * pw, 0, (k + 1) * pw, img.height)) for k in range(PANELS)])
     a, b = sides
-    folds = [out_dir / "折叠效果-1-合起-封面与封底.png", out_dir / "折叠效果-2-内侧-工厂-产品线-封底.png",
-             out_dir / "折叠效果-3-外侧-精选产品-封面.png"]
-    _closed(a[2], b[2], folds[0])
+    folds = [out_dir / "折叠效果-1-合起-封面与封底.png", out_dir / "折叠效果-2-内侧-工厂-产品线-四类产品.png",
+             out_dir / "折叠效果-3-外侧-封底-四类产品-封面.png"]
+    _closed(a[-1], a[0], folds[0])   # cover A6, back cover A1
     _zigzag(b, folds[1])
     _zigzag(a, folds[2])
     return paths + folds
@@ -413,7 +415,7 @@ def main() -> None:
     d = Path(ap.parse_args().out_dir)
     _, n = render_sides(d / "HYDE-flyer-2026-print.pdf", True)
     print(f"print: {d / 'HYDE-flyer-2026-print.pdf'} ({n} products)")
-    print(f"screen: {render_screen(d / 'HYDE-flyer-2026-screen.pdf')} (6 panels in reading order)")
+    print(f"screen: {render_screen(d / 'HYDE-flyer-2026-screen.pdf')} (12 panels in reading order)")
     flat, _ = render_sides(None, False)
     for p in previews(flat, d / "传单预览"):
         print(f"preview: {p}")
