@@ -59,10 +59,6 @@
 3. 在 finish-code-reference 指南里补 **652**：目前只有文章里写了 652，AI 查询量最大的就是它。
 4. 拿到 Ahrefs 明细后，修结构化数据和 sitemap 格式。
 
-## 要你做（2 分钟）
+## 更新（10-12 晚）
 
-在 Ahrefs Site Audit → **View all issues**，分别点开这三项，右上角 **Export** 成 CSV，放到「下载」文件夹告诉我：
-
-1. Structured data has Google rich results validation error
-2. Sitemap in the wrong format
-3. Slow page
+不用导出了（Ahrefs 导出要付费）。我直接查了网站文件：nofollow 内链已修（询价链接改写法）；产品描述过短已补；结构化数据报错是产品页没有价格/评价，我们不编，要不要公开参考价见「需确认-资质与产品说法」第 9 条；sitemap 格式另行处理。
