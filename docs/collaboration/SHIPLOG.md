@@ -6,12 +6,19 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 474 次提交
+最近 30 天 · 共 481 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:11 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f3cbab91941` |
+| 04:10 | HYDE | 首页轮播：逃生锁说明写回 306-D（客户：实拍合成）；葡语首页加巴西防火门一页 | `f42d7b3bb93` |
+| 04:03 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `58430bd631c` |
+| 04:03 | HYDE | 首页轮播：换逃生锁大图（客户 10-12），加 AR-4、阿根廷集合两页 | `979d66ccb85` |
+| 03:47 | 中立 | 合并本地提交（ship 旁路合并） | `fd4e64dcdf3` |
+| 03:34 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 416dd88cec8c | `8d863f50248` |
+| 03:11 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 3ead954fa4f6 | `416dd88cec8` |
 | 03:15 | 中立 | 手册待办表更新（删 6 条）；新增 Ahrefs/Semrush 只看这几样；桌面整理跳过正在打开的文件和 Word 锁文件 | `566c55408bd` |
 | 03:03 | 中立 | 合并本地提交（ship 旁路合并） | `bcd2ec419d0` |
 | 02:58 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `8fb1b9d4803` |

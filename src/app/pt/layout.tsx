@@ -71,10 +71,10 @@ export const metadata: Metadata = {
     description: defaultDescription.pt,
     images: [
       {
-        url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 1800,
-        height: 900,
-        alt: "Ferragens antipânico 306-D em porta de duas folhas em um ambiente arquitetônico claro",
+        url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
+        width: 1774,
+        height: 887,
+        alt: "Ferragens antipânico 306-D em porta de duas folhas, com barras e hastes verticais, abrindo para um pátio externo",
       },
     ],
   },
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle.pt,
     description: defaultDescription.pt,
-    images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
+    images: [absoluteUrl("/images/editorial/home-panic-exit-double-door.webp")],
   },
   robots: indexable
     ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }

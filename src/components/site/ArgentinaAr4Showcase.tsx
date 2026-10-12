@@ -16,6 +16,7 @@ const copy = {
     title: "HYDE Argentina AR-4",
     body: "Four compact mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries.",
     cta: "Explore the AR-4 collection",
+    all: "The full Argentina collection",
     model: "Model",
     aria: "HYDE Argentina AR-4 market collection",
   },
@@ -24,6 +25,7 @@ const copy = {
     title: "HYDE Argentina AR-4",
     body: "Cuatro cerraduras de embutir compactas para distribuidores del mercado argentino, marcas privadas y consultas OEM.",
     cta: "Explorar la colección AR-4",
+    all: "La colección Argentina completa",
     model: "Modelo",
     aria: "Colección HYDE Argentina AR-4",
   },
@@ -32,6 +34,7 @@ const copy = {
     title: "HYDE Argentina AR-4",
     body: "Quatro caixas de fechadura de embutir compactas para distribuidores do mercado argentino, marca própria e consultas OEM.",
     cta: "Ver a coleção AR-4",
+    all: "A coleção Argentina completa",
     model: "Modelo",
     aria: "Coleção HYDE Argentina AR-4",
   },
@@ -114,9 +117,11 @@ export function ArgentinaAr4Showcase({
         <div className="col-span-full xl:col-span-8 xl:col-start-17">
           <p className="text-c1 text-ink">{text.body}</p>
           {!pageHeading ? (
-            <ArrowLink href={href} className="mt-24">
-              {text.cta}
-            </ArrowLink>
+            /* Client 2026-10-12: 「阿根廷我只能通过这个链接访问 首页根本看不到」 — the full collection is linked from the home page too. */
+            <div className="mt-24 flex flex-wrap gap-x-32 gap-y-12">
+              <ArrowLink href={href}>{text.cta}</ArrowLink>
+              <ArrowLink href={locale === "es" ? "/es/products/argentina/" : "/products/argentina/"}>{text.all}</ArrowLink>
+            </div>
           ) : null}
         </div>
 

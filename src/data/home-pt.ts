@@ -43,13 +43,50 @@ export const heroCarousel: HeroCarouselContent = {
       variant: "stacked",
       media: {
         ratio: "1800 / 900",
-        src: "/images/editorial/home-panic-exit-bars.webp",
-        label: "Ferragens antipânico 306-D em porta de duas folhas, com barras e hastes verticais superiores e inferiores visíveis, em um ambiente arquitetônico claro",
+        src: "/images/editorial/home-panic-exit-double-door.webp",
+        label: "Ferragens antipânico 306-D em porta de duas folhas: barras nas duas folhas e hastes verticais aparentes na folha fechada, abrindo para um pátio externo",
       },
       title: "Barras antipânico",
       body: "Um empurrão e a porta abre. Barras antipânico, guarnições externas e caixas de fechadura para portas de saída de emergência e corta-fogo, pensadas como um conjunto.",
       linkLabel: "Explorar barras antipânico",
       href: "/pt/products/panic-exit-devices",
+    },
+    /* Brazil only (client, 2026-10-12): the fire-door landing page exists in Portuguese alone. */
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1800 / 900",
+        src: "/images/editorial/home-brazil-fire-door.webp",
+        label: "Barra antipânico 305 para porta corta-fogo, fotografada sobre fundo branco",
+      },
+      title: "Ferragens para porta corta-fogo",
+      body: "Barras antipânico de 650 a 1110 mm, maçanetas externas com chave, fechaduras e cilindros, com os documentos de cada modelo.",
+      linkLabel: "Ver ferragens corta-fogo",
+      href: "/pt/ferragens-porta-corta-fogo",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1672 / 941",
+        src: "/images/editorial/argentina-ar4-entry.webp",
+        label: "Entrada arquitetônica contemporânea em Buenos Aires",
+      },
+      title: "HYDE Argentina AR-4",
+      body: "Caixas de fechadura de embutir compactas selecionadas para distribuidores argentinos, marca própria e pedidos OEM.",
+      linkLabel: "Ver a coleção AR-4",
+      href: "/products/argentina-ar4",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1800 / 900",
+        src: "/images/editorial/home-argentina-collection.webp",
+        label: "Fechadura de embutir AR5-115 com a testa longa separada, niquelada, sobre fundo branco",
+      },
+      title: "Coleção HYDE Argentina",
+      body: "Fechaduras de embutir, ferrolhos e fechaduras para perfis estreitos feitas em moldes HYDE para distribuidores argentinos, com medidas de testa e caixa de cada modelo.",
+      linkLabel: "Ver a coleção Argentina",
+      href: "/products/argentina",
     },
     hero1,
     {

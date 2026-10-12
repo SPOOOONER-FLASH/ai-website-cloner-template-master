@@ -54,7 +54,9 @@ test("every homepage product destination is a category that exists", () => {
     for (const href of heroHrefs(heroSection(file))) {
       const match = /^(?:\/es)?\/products\/([^/]+)\/?$/.exec(href);
       if (!match) continue;
-      assert.ok(slugs.has(match[1]), `${file}: /products/${match[1]} is not a category slug`);
+      // Market collections (/products/argentina, /products/argentina-ar4) are routes of their own, not categories.
+      const collection = fs.existsSync(path.join(root, "src/app/(en)/products", match[1], "page.tsx"));
+      assert.ok(slugs.has(match[1]) || collection, `${file}: /products/${match[1]} is not a category slug`);
     }
   }
 });
