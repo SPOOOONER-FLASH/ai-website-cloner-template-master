@@ -82,7 +82,7 @@ for (let lat = 78; lat >= -56; lat -= 2.4) for (let lon = -170; lon <= 180; lon 
 // The same map for the live homepage (src/components/site/ExportMap.tsx): dots, market
 // countries and their points projected once here, so the site needs neither d3-geo nor the
 // world atlas. Countries are the client's own list (2026-10-12): every Western European
-// country, the US and Canada, seven South American countries, Japan, Korea, Australia, plus
+// country, Poland, Czechia, the Nordics except Iceland, the US and Canada, seven South American countries, Japan, Korea, Australia, plus
 // the markets the company page already named (Russia, Turkey, Southeast Asia). Names are not
 // stored: the site renders ISO codes through Intl.DisplayNames in each of its ten languages.
 const W = 1000, H = 500;
@@ -90,7 +90,7 @@ const proj = geoEqualEarth().rotate([-15, 0]).fitExtent([[0, 0], [W, H]], { type
 const xy = (lonlat) => proj(lonlat).map((v) => +v.toFixed(1));
 // [iso2, ISO numeric, group, route target (capital), label: false | [dx, dy, anchor]]
 const MARKETS = [
-  ["DE", "276", "europe", [13.4, 52.5], [6, -8, "start"]],
+  ["DE", "276", "europe", [13.4, 52.5], [6, 12, "start"]],
   ["FR", "250", "europe", [2.35, 48.86], false],
   ["GB", "826", "europe", [-0.13, 51.5], [-8, 4, "end"]],
   ["ES", "724", "europe", [-3.7, 40.4], [-8, 14, "end"]],
@@ -102,6 +102,13 @@ const MARKETS = [
   ["CH", "756", "europe", [7.45, 46.95], false],
   ["PT", "620", "europe", [-9.14, 38.72], false],
   ["IE", "372", "europe", [-6.26, 53.35], false],
+  // Client 2026-10-12, second list: Poland, Czechia and the Nordic countries except Iceland.
+  ["PL", "616", "europe", [21.0, 52.23], false],
+  ["CZ", "203", "europe", [14.42, 50.08], false],
+  ["DK", "208", "europe", [12.57, 55.68], false],
+  ["NO", "578", "europe", [10.75, 59.91], false],
+  ["SE", "752", "europe", [18.07, 59.33], [-6, -8, "end"]],
+  ["FI", "246", "europe", [24.94, 60.17], false],
   ["RU", "643", "europe", [37.6, 55.75], [4, -20, "start"]],
   ["TR", "792", "europe", [32.85, 39.9], [8, 16, "start"]],
   ["US", "840", "americas", [-77.0, 38.9], [-8, 14, "end"]],

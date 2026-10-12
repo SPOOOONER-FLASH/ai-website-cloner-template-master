@@ -70,3 +70,11 @@
   - 新句子已补七语翻译；没人再用的旧键已从七语 ui.json 删掉，删之前核对过 ui-keys 里确实没有引用。
 - **首页顺序**：十语首页都移除了 BauShowcase（`BauEntry` 组件和 /bau-2027 页面没动，只是首页不再放）。出口地图挪到“The factory, in figures”之后、推荐货架之前。09-14“数字条后面先放推荐货架”的规定已被甲方这次的指示取代，页面注释已改。
 - **检查**：npm test 462/462 通过；typecheck、i18n-lint、motion:check 都通过；开发服务器截图看过地图和工厂故事。
+
+## 10-12 第五轮：地图再加 6 国，中山加注 Canton（#54）
+
+- 新加波兰、捷克，以及北欧的丹麦、挪威、瑞典、芬兰，不含冰岛。地图上现在是 32 个国家加东南亚。
+- 新加的国家只在 Sweden 上标了名字，其余列在左栏；Germany 的标签挪到点的下方，避免和 Sweden、Russia 挤在一起。
+- 原点标签改成「Zhongshan (Canton)」：日语、韩语括号里保留拉丁字母 Canton，德语、土耳其语写 Kanton，俄语写 Кантон，阿语写 كانتون。
+- 正文“Western Europe…”已经装不下北欧和中欧，改成“Europe from Portugal to Finland, Russia and Turkey, …”，十语一起更新。
+- npm test 462/462 通过，i18n-lint 通过，截图看过欧洲那一块的标签。
