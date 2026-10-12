@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 485 次提交
+最近 30 天 · 共 486 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 16:54 | 中立 | Flyer: drop bathroom, floor springs, closers; add Alibaba flagship models | `c402d73955b` |
 | 08:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fae6618822c` |
 | 08:01 | 中立 | 传单：逃生推杆按甲方目录页选型、撤三款老锁体（#55）；ISO 问题记录（#56） | `637e3e6297e` |
 | 07:54 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `7a4a3863ce8` |
