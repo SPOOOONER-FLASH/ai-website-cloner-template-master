@@ -152,6 +152,16 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     setProduct(prefill.product);
     setModel(prefill.model);
     setSourceArticle(prefill.from);
+    /* A fragment like #model=… names no element, so the browser keeps the previous page's scroll
+       position and the buyer lands near the footer. Take them to the form they came for. */
+    /* Deferred: the router's own scroll handling for the hash runs after this effect. */
+    if (!window.location.hash.includes("=")) return;
+    const timer = window.setTimeout(() => {
+      const form = formRef.current;
+      /* 96px clears the sticky header. */
+      if (form) window.scrollTo({ top: Math.max(0, form.getBoundingClientRect().top + window.scrollY - 96) });
+    }, 120);
+    return () => window.clearTimeout(timer);
   }, [searchParams]);
 
   /**
