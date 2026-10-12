@@ -1,0 +1,96 @@
+{
+  "source": "G:/新网站资料/9-锁体/新/1121/5-1121.psd",
+  "width": 800,
+  "height": 800,
+  "layers": [
+    {
+      "index": 0,
+      "name": "背景",
+      "top": 0,
+      "left": 0,
+      "width": 800,
+      "height": 800,
+      "channels": [
+        {
+          "id": 0,
+          "length": 12802
+        },
+        {
+          "id": 1,
+          "length": 12802
+        },
+        {
+          "id": 2,
+          "length": 12802
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-00.png"
+    },
+    {
+      "index": 1,
+      "name": "图层 9",
+      "top": 229,
+      "left": 58,
+      "width": 712,
+      "height": 435,
+      "channels": [
+        {
+          "id": -1,
+          "length": 15801
+        },
+        {
+          "id": 0,
+          "length": 185828
+        },
+        {
+          "id": 1,
+          "length": 186980
+        },
+        {
+          "id": 2,
+          "length": 189204
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-01.png"
+    },
+    {
+      "index": 2,
+      "name": "图层 2",
+      "top": 23,
+      "left": 31,
+      "width": 113,
+      "height": 77,
+      "channels": [
+        {
+          "id": -1,
+          "length": 1645
+        },
+        {
+          "id": 0,
+          "length": 6710
+        },
+        {
+          "id": 1,
+          "length": 6756
+        },
+        {
+          "id": 2,
+          "length": 6754
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-02.png"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "glass100-terracotta",
+  "model": "100",
+  "category": "glass-door-accessories",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\100-glass-door-handle.webp",
+  "sourceSha256": "14a6864407609f2893da07eb11a527708673b63785111e404950914142aeb8fd",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\terracotta.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "outputSha256": "621f9309d9a1c7b25ca56b2c521dfb46573c52ee03f9b981747d1bba7fa7a583",
+  "recipe": {
+    "id": "glass100-terracotta",
+    "model": "100",
+    "category": "glass-door-accessories",
+    "source": "100-glass-door-handle.webp",
+    "field": "terracotta",
+    "threshold": 250,
+    "holes": [
+      [
+        499,
+        496
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        402,
+        58,
+        72,
+        135
+      ],
+      [
+        531,
+        42,
+        75,
+        115
+      ],
+      [
+        416,
+        247,
+        146,
+        70
+      ],
+      [
+        404,
+        853,
+        202,
+        115
+      ]
+    ],
+    "caveat": "Original complete pull-handle pair and both photographed connector collars retained; no altered tube length, no added ground."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 77762,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 11324,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original complete pull-handle pair and both photographed connector collars retained; no altered tube length, no added ground.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

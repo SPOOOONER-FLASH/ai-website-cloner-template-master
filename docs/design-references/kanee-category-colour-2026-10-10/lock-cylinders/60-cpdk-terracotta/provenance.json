@@ -1,0 +1,40 @@
+{
+  "id": "60-cpdk-terracotta",
+  "model": "60 CPDK",
+  "view": "Cached PSD 1, product layer 1",
+  "status": "Review only; enlarged contour review recorded separately",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "3f2ddcb55fc5cb192ac45d7342ade2ced2ff67584e1665f45b5a7fdfbf6565fe",
+  "sourceDimensions": [
+    648,
+    591
+  ],
+  "originalLibrary": "G:/新网站资料/10-锁芯/60/60 CPDK/1-60 CPDK.psd",
+  "originalPsdSha256": "cffea06f24a57cb8c0992919bb673f3da1a7cb9677eb733ac6c63a08554aa157",
+  "originalHashStatus": "Previously recorded; no external disk accessed this session",
+  "sourceOffset": {
+    "left": 89,
+    "top": 153
+  },
+  "width": 800,
+  "height": 800,
+  "background": "empty-field.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "backgroundOnlyAdjustment": {
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productRgbReference": "Unchanged native photographic cutout RGB",
+  "productMaskExtraction": "Supplied native alpha unchanged",
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "shadow": "None added; photographic contact ground unavailable",
+  "hiddenZeroAlphaRgbUsedAsGround": false,
+  "separateScrewLayerAdded": false,
+  "opaqueRgbPixelsCompared": 162579,
+  "opaqueRgbDifferences": 0,
+  "masterSha256": "88899d3d4bd282343af080f69c21bb4d99ef1519da7f4af26809c14d55800e30",
+  "limitation": "Native colour catalogue portrait; no source contact ground available or added. Hidden zero-alpha RGB is stretched edge smear and never used as photographic shadow. Separate screw layer is not included; source cutout already contains its photographed cylinder and keys."
+}

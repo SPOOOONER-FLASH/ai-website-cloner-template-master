@@ -1,0 +1,68 @@
+{
+  "id": "ju061-burgundy",
+  "model": "JU-061",
+  "category": "door-closers",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\ju-061-door-closer.webp",
+  "sourceSha256": "021c6eaf0e7e0753bd6b7d650a08c42ae0946456a3005d282999314d4fb4f598",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "outputSha256": "c81e54ffe1e748f291d196f1e91730864ac4d22d6210be83494cbfb53a2a2195",
+  "recipe": {
+    "id": "ju061-burgundy",
+    "model": "JU-061",
+    "category": "door-closers",
+    "source": "ju-061-door-closer.webp",
+    "field": "burgundy",
+    "threshold": 250,
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        407,
+        96,
+        106,
+        140
+      ],
+      [
+        303,
+        472,
+        95,
+        160
+      ],
+      [
+        146,
+        749,
+        175,
+        150
+      ],
+      [
+        379,
+        770,
+        170,
+        145
+      ]
+    ],
+    "caveat": "Original aluminum closer with complete triangular arm, threaded adjuster and mounting foot. Finish unspecified in product record; photographed gray preserved. No added ground."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 140494,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 7723,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original aluminum closer with complete triangular arm, threaded adjuster and mounting foot. Finish unspecified in product record; photographed gray preserved. No added ground.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "bh56-terracotta",
+  "model": "BH56",
+  "category": "care-grab-bars",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\bh56-bathroom-accessories-2.webp",
+  "sourceSha256": "bde5729b8224d98b6209c900a71a023c68513f36a94d7e74c42c9a0426167fc0",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\terracotta.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "outputSha256": "3e8653ebb6400d57f23417c861d1594c385dc4d5dd02b830826a3124ea57e6ae",
+  "recipe": {
+    "id": "bh56-terracotta",
+    "model": "BH56",
+    "category": "care-grab-bars",
+    "source": "bh56-bathroom-accessories-2.webp",
+    "field": "terracotta",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        214,
+        151
+      ]
+    ],
+    "holes": [
+      [
+        512,
+        516
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        27,
+        335,
+        239,
+        142
+      ],
+      [
+        778,
+        408,
+        194,
+        220
+      ],
+      [
+        778,
+        756,
+        157,
+        128
+      ]
+    ],
+    "caveat": "Original black and white folding bar assembly. White coating must remain; current catalogue groups it under bathroom accessories. No load or installation claim inferred."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 132128,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 6900,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original black and white folding bar assembly. White coating must remain; current catalogue groups it under bathroom accessories. No load or installation claim inferred.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png"
+  ]
+}

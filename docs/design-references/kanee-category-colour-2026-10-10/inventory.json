@@ -1,0 +1,353 @@
+{
+  "target": 34,
+  "produced": 33,
+  "counts": {
+    "PREVIEW": 21,
+    "HELD": 12,
+    "SOURCE_PENDING": 1
+  },
+  "sheets": [
+    "overview/contact-1.jpg",
+    "overview/contact-2.jpg",
+    "overview/contact-3.jpg",
+    "overview/contact-4.jpg"
+  ],
+  "entries": [
+    {
+      "model": "9014 SSET",
+      "category": "Stainless Steel Handles",
+      "file": "handles/9014-sset-sage/9014-sset-sage.png",
+      "width": 800,
+      "height": 800,
+      "sha256": "52240c2833f951071c4516dc4cf9fabd93f967703e4825316030ed5b05500286",
+      "status": "PREVIEW",
+      "reason": "可评颜色与构图：圆底座、执手、独立钥匙孔盖保留原片关系；薄的原片高光边保留。"
+    },
+    {
+      "model": "9004S",
+      "category": "Stainless Steel Handles",
+      "file": "handles/9004s-petrol-blue/9004s-petrol-blue.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "08ff6a85a5d6979122a1fa42b176c1db11f4c46f58e1c992f281cac9c8ebc2fd",
+      "status": "HELD",
+      "reason": "方底座上沿和外轮廓仍有细碎浅色边，待更精确的摄影蒙版。"
+    },
+    {
+      "model": "LH855 BNBK",
+      "category": "Lever Handles",
+      "file": "handles/lh855-bnbk-terracotta/lh855-bnbk-terracotta.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "22136959f6f3a192c78616ebea4cb34c3c6f513b7ac2cc9aeff66280626ad74c",
+      "status": "PREVIEW",
+      "reason": "可评构图：黑色双执手、底座、锁舌与原有内部镀色保持原片；未补配件。"
+    },
+    {
+      "model": "8806 SSET",
+      "category": "Lever Handles",
+      "file": "handles/8806-sset-petrol-blue/8806-sset-petrol-blue.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "04490f9eda13b8ef71017dfab285f933ebc99b2842928043ac5bbf26ede6b4ce",
+      "status": "PREVIEW",
+      "reason": "可评构图：完整原片装配角度，钥匙孔与锁舌面板保留；目录肖像，无新增落地阴影。"
+    },
+    {
+      "model": "DH02 AB",
+      "category": "Grip Handle Sets",
+      "file": "handles/dh02-ab-petrol-blue/dh02-ab-petrol-blue.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "9253a8f3af0cfc07d093e33f9dce7b8e944c54a993e48707b803e3cf82ab510a",
+      "status": "PREVIEW",
+      "reason": "两块原有长面板、八个固定孔与钥匙孔保留，古铜外观未重绘。只评摄影排版，待核实际供货套装。"
+    },
+    {
+      "model": "70610 AB",
+      "category": "Grip Handle Sets",
+      "file": "handles/70610-ab-terracotta/70610-ab-terracotta.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "ec368a4d7e81a573867ffc95b4b0811eddce21835dfda630b2972ca174541d3f",
+      "status": "PREVIEW",
+      "reason": "长拉手、球钮及原片上两块锁面保持原位置和大小；照片组合不等于重新确认供货清单。"
+    },
+    {
+      "model": "140",
+      "category": "Lock Cases",
+      "file": "lock-cases/140/preview/140-sage.png",
+      "width": 800,
+      "height": 800,
+      "sha256": "3d75649d676a4283281e6999bf9c9819c826c3d8fdc7e338eccd140152e2dcd9",
+      "status": "PREVIEW",
+      "reason": "原生透明层与125525个不透明产品像素保持，完整锁舌、孔位和壳体；无新增接触阴影。"
+    },
+    {
+      "model": "1121",
+      "category": "Lock Cases",
+      "file": "lock-cases/1121/preview/1121-petrol-blue.png",
+      "width": 800,
+      "height": 800,
+      "sha256": "df79f4ac5a055fceef7d9dddb0d25ef129a0a4653725b91e69cc71ddf99c4360",
+      "status": "HELD",
+      "reason": "最右钥匙圈内仍有一条浅底残留，原生透明层没能完整分离该开口。"
+    },
+    {
+      "model": "70 ABKT CP",
+      "category": "Lock Cylinders",
+      "file": "lock-cylinders/70-abkt-cp-petrol-blue/70-abkt-cp-petrol-blue-source-shadow.png",
+      "width": 734,
+      "height": 734,
+      "sha256": "82f00d59a4f41a3d889ba203cb4f572b1cf27653562bc5aaefea5162bb19aab1",
+      "status": "HELD",
+      "reason": "原照片阴影已保留；上沿浅亮线是高光还是原抠图边仍未确定，保持待修。不能据外露圆点断定珠数。"
+    },
+    {
+      "model": "Single oval cylinder",
+      "category": "Lock Cylinders",
+      "file": "handles/single-oval-cylinder-burgundy/single-oval-cylinder-burgundy-ground-repair.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "7d944ad62746d683c30df3a4f2a9aa5220d1ac3ed6abe85e5209f4b65f45b791",
+      "status": "PREVIEW",
+      "reason": "已修去底下白底块，以原照片轮廓蒙版和原地面明暗重合成；真实椭圆外形，与葫芦型分开。人工描边仍须最终原片复核，非尺寸或珠数证明。"
+    },
+    {
+      "model": "607 SSET",
+      "category": "Knob Locks",
+      "file": "handles/607-sset-burgundy/607-sset-burgundy.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "7197847876c363301614b72825f7597e2bb6990efcf675725493601aaef9f5da",
+      "status": "PREVIEW",
+      "reason": "两个球锁背面、方轴、固定管和原有机构完整；此角度不表示完整销售套装。"
+    },
+    {
+      "model": "5870 SSET",
+      "category": "Knob Locks",
+      "file": "handles/5870-sset-sage/5870-sset-sage.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "312f17ab36644417bdb211209db35593df357face17565be6c04fde4c3e72065",
+      "status": "HELD",
+      "reason": "球锁与钥匙下方留有明显白色地面，不能作为成品使用；原蓝色保护膜须保留。"
+    },
+    {
+      "model": "D101 SS",
+      "category": "Deadbolts",
+      "file": "handles/d101-ss-burgundy/d101-ss-burgundy.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "f11630a74d0f5b4f2a48a3d04c1b7bbdaada47ef6dcc90713bd3f1f233d51430",
+      "status": "PREVIEW",
+      "reason": "锁面、钥匙孔、后板、锁舌与原有内部镀色保留；边缘为原照片清晰度，未制造螺纹。"
+    },
+    {
+      "model": "D103 AC",
+      "category": "Deadbolts",
+      "file": "handles/d103-ac-sage/d103-ac-sage.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "6a1ce4bc8889b881ccb43fecb89347c701cc9e1fb20b41e76cd9269b2c4d2cdd",
+      "status": "PREVIEW",
+      "reason": "两根螺纹固定杆、中央传动杆和两面锁面关系保留；杆间隙仍需供货前逐像素复核。"
+    },
+    {
+      "model": "564 MB",
+      "category": "Night Latches and Rim Locks",
+      "file": "night-latches/564-mb-terracotta/preview/564-mb-terracotta-source-shadow.png",
+      "width": 835,
+      "height": 835,
+      "sha256": "fb2432e155dd720109ea9c331a677df8d8190f75c9c838674fa6491e165fd7ca",
+      "status": "PREVIEW",
+      "reason": "完整黑色锁体、扣座、金色锁舌保留；阴影来自对应原照片。扣座内亮银面是实际金属，不能当白底删掉。"
+    },
+    {
+      "model": "5836",
+      "category": "Night Latches and Rim Locks",
+      "file": "night-latches/5836/preview/5836-petrol-blue.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "1a14ae96b826d3533388931ca2b6919fe733ea7d0317e8e088e9abced87c45de",
+      "status": "HELD",
+      "reason": "锁体、扣座、锁胆、尾片齐全，但外沿浅色毛边未达到成品标准；资料中钥匙数和厚度矛盾待核。"
+    },
+    {
+      "model": "881 SS",
+      "category": "Sliding Hook Locks",
+      "file": "control/881ss-burgundy/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "447ab6f2adfa154a838ebc8bc218583e2f2dae2590e8806ab23d66decfbab087",
+      "status": "PREVIEW",
+      "reason": "选择两块面板的真实背面机构照，保留固定柱及连杆；技术细节视角，不当作完整套装图。"
+    },
+    {
+      "model": "S03",
+      "category": "Sliding Hook Locks",
+      "file": "control/s03-sage/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "051a31bd0f2c7301d6e5c8c4a5866bc43e0e46f3ce2157e2728f9a424782100b",
+      "status": "HELD",
+      "reason": "圆形暗拉手下方仍有白色原地面；锁体及真实螺钉保留，待分离原接触阴影。"
+    },
+    {
+      "model": "300",
+      "category": "Panic Exit Devices",
+      "file": "control/panic300-petrol-blue/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "eac3bdf2a7c493de4abff8368eab5d9ac960d7d82064ae083f31ffee36c6bb63",
+      "status": "PREVIEW",
+      "reason": "红色横杆和两端黑色机构为原照片；正面完整，无新增配件或认证主张。"
+    },
+    {
+      "model": "301",
+      "category": "Panic Exit Devices",
+      "file": "control/panic301-burgundy/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "4f13fd200b20fd91c6805e3cc27810b54efddd5e82841764d4b9acae91eb3921",
+      "status": "PREVIEW",
+      "reason": "保留实际银色长条逃生锁及两端结构；原记录文字与照片表面处理不一致，不把银色推定为供货版本。"
+    },
+    {
+      "model": "JU-061",
+      "category": "Door Closers",
+      "file": "control/ju061-burgundy/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "c81e54ffe1e748f291d196f1e91730864ac4d22d6210be83494cbfb53a2a2195",
+      "status": "PREVIEW",
+      "reason": "完整闭门器壳体、连杆、螺纹调节段和安装脚可见；本图不增加地面阴影。"
+    },
+    {
+      "model": "JU-093",
+      "category": "Door Closers",
+      "file": "control/ju093-sage/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "22a765a9e65d1d948c2cdd5456052adc99765f8b5ca6a25ede9c92432f47a222",
+      "status": "PREVIEW",
+      "reason": "滑轨、长臂、壳体、原有安装支架保留，孔沿保留真实金属高光；目录肖像。"
+    },
+    {
+      "model": "F100 SS",
+      "category": "Floor Springs and Door Pivots",
+      "file": "control/f100-sage/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "939d8579941dba851a083784e40e20bd2024a84338f2123b3b0f36b3c26b439f",
+      "status": "HELD",
+      "reason": "本体与弹簧保留，但底座周边地面仍有白底残留；需可靠分离真实落地阴影。"
+    },
+    {
+      "model": "Second distinct HYDE model",
+      "category": "Floor Springs and Door Pivots",
+      "status": "SOURCE_PENDING",
+      "reason": "Retained D-series records are RAYEN-only. Do not count another F100 view as a second model or relabel a RAYEN asset."
+    },
+    {
+      "model": "SSH016",
+      "category": "Brass and Steel Door Hinges",
+      "file": "control/ssh016-petrol-blue/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "45634125bc4cb6ae87dba2d1a99e6baa8eb90e9ca3804459a48075c039ac574f",
+      "status": "HELD",
+      "reason": "已撤销圆形删孔，改用受限原片白底连通识别；亮银倒角与白底在几个孔口相接，需要进一步孔沿复核。"
+    },
+    {
+      "model": "B024",
+      "category": "Brass and Steel Door Hinges",
+      "file": "control/b024-sage/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "d136c79c720b026c01ce971b6f2bd0c529eb2f87d9892cd92f07fcd2521e825e",
+      "status": "PREVIEW",
+      "reason": "右第二孔偏位已修正：只处理原片白底连通区；固定孔真实倒角保留。回归检查保护旧误删位置的金属像素。"
+    },
+    {
+      "model": "100",
+      "category": "Glass Door Accessories",
+      "file": "control/glass100-terracotta/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "621f9309d9a1c7b25ca56b2c521dfb46573c52ee03f9b981747d1bba7fa7a583",
+      "status": "HELD",
+      "reason": "镜面管材的真实白色反光条与白底相连，现有抠图不足以确保完整轮廓；不准再按白色直接擦除。"
+    },
+    {
+      "model": "112",
+      "category": "Glass Door Accessories",
+      "file": "control/glass112-burgundy/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "8ba09c2497de96705e225e0a41fdb74ef7ecad35166cd85e37f824e265b70155",
+      "status": "PREVIEW",
+      "reason": "双拉手、两处连接环和宽幅镜面高光保留；顶端存在源片级细边，适合构图反馈，尚非高分辨率印刷终稿。"
+    },
+    {
+      "model": "BH08",
+      "category": "Bathroom Accessories",
+      "file": "control/bh08-terracotta/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "52e576dc599d261408b25e214df9455156333105ef58034544ec37bcf188e931",
+      "status": "HELD",
+      "reason": "四个直挂钩完整，但板边宽白色轮廓需要人工细修，不能用整体收缩蒙版损伤金属。"
+    },
+    {
+      "model": "BH05",
+      "category": "Bathroom Accessories",
+      "file": "control/bh05-petrol-blue/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "ed1aba238edffeeb92c53721730e5dcf23f8cac3ff25464422f695d7ee1502a7",
+      "status": "HELD",
+      "reason": "三个弯钩齐全；钩尖与小孔有浅边和碎点，暂不作为完成图。"
+    },
+    {
+      "model": "BH56",
+      "category": "Care Grab Bars",
+      "file": "control/bh56-terracotta/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "3e8653ebb6400d57f23417c861d1594c385dc4d5dd02b830826a3124ea57e6ae",
+      "status": "HELD",
+      "reason": "白色涂层保留，但安装板下边有白底残留；需要源片轮廓描边而非直接删白。"
+    },
+    {
+      "model": "BH57",
+      "category": "Care Grab Bars",
+      "file": "control/bh57-sage/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "95b205e3ac052d16289019f6598b0b7bd2e9d33ff333871a4e4fd695ceb86cca",
+      "status": "PREVIEW",
+      "reason": "双横杆、两块连接片、原有转轴与墙板完整，原近水平视角保持；不推断承重和安装规格。"
+    },
+    {
+      "model": "DS01",
+      "category": "Hardware Accessories",
+      "file": "control/ds01-petrol-blue/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "a466addb4153fba9a0c63da8477bcea5a44540d865b2e51841d8f73868b1d039",
+      "status": "PREVIEW",
+      "reason": "金色原外观、浅色缓冲头和底部三个安装孔保留；不把颜色当作黄铜材质依据。"
+    },
+    {
+      "model": "FB001",
+      "category": "Hardware Accessories",
+      "file": "control/fb001-sage/composition.png",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "6c923b6047dedfd46af0286230e72ff674ec91408027696f7a1ca39c5b6350aa",
+      "status": "PREVIEW",
+      "reason": "一款插销的原正反两视图，原推杆、法兰和安装孔保留；不计为两个产品、不声称成对销售。"
+    }
+  ]
+}

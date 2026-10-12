@@ -1,0 +1,14 @@
+{
+  "status": "HELD",
+  "outputSha256": "52e576dc599d261408b25e214df9455156333105ef58034544ec37bcf188e931",
+  "checks": [
+    "Full source and four 3x comparison panels inspected; all four peg ends retained."
+  ],
+  "reason": "Broad near-white source edge cannot be separated safely by this matte. At 3x the upper/right plate edge looks perforated and fixing-hole paper is not clean. Rejected as a coloured finished image; do not count it.",
+  "clientApproved": false,
+  "reviewer": "Codex control source/composition agent",
+  "reviewDate": "2026-10-10",
+  "noAiProduct": true,
+  "noAddedShadow": true,
+  "opaqueRgbAssertionScope": "Opaque retained photographic pixels only; NOT mask completeness proof"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "lh855-bnbk-terracotta",
+  "model": "LH855 BNBK",
+  "category": "lever-handles",
+  "view": "Repository original hero photograph, complete original assembly",
+  "origin": "public/images/products/lh855-bnbk-lever-handle.webp",
+  "source": "source.webp",
+  "sourceSha256": "7870418f88ff5bbbb6f60f25b04c20279d8d537b68efbc8fc548d1bc851a9439",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "324cfef7e6bdaa88af3497ac9ad63cdf3813367a4221853599ef875e9dc05630",
+  "sourceProductDimensions": [
+    839,
+    460
+  ],
+  "sourceOffset": [
+    100,
+    280
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 182997,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 181023,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        193,
+        482
+      ],
+      "removedPaperPixels": 78
+    },
+    {
+      "source": [
+        179,
+        664
+      ],
+      "removedPaperPixels": 134
+    }
+  ],
+  "alphaEdgePixelsChanged": 1974,
+  "partialAlphaMatteCleanupPixels": 1974,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/terracotta.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine black curved levers, round roses and photographed mechanical/latch assembly. Source metal colours remain mixed as photographed internal hardware, not a claimed externally matched-finish set.",
+  "uncertainty": "BNBK model label from repository; exact current coating and complete sale-kit contents unconfirmed. Source arrangement is not proof of installation or kit compatibility.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "lh855-bnbk-terracotta.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "22136959f6f3a192c78616ebea4cb34c3c6f513b7ac2cc9aeff66280626ad74c"
+}

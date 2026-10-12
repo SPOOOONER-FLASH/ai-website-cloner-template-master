@@ -1,0 +1,68 @@
+{
+  "id": "140-sage",
+  "model": "140",
+  "reviewStatus": "Ready for coloured catalogue layout review; client and factory approval pending",
+  "view": "Original PSD photograph 4",
+  "source": "140/source-product.png",
+  "sourceSha256": "dc9deb6ce7ecddba7c1e8d08720cecd73dba1c4ad692a85d6f17efc5d9d778b9",
+  "sourceCache": "docs/design-references/kanee-fidelity/sources/140.png",
+  "originalPsdPath": "G:/新网站资料/9-锁体/新/140/4-140.psd",
+  "originalPsdSha256": "d7d68741aaadc2f49d4f560c7921c476c93cd42d60934e690d43f934bd7be135",
+  "nativeLayer": {
+    "index": 2,
+    "name": "图层 4 拷贝",
+    "width": 713,
+    "height": 555
+  },
+  "background": "../empty-fields/sage.png",
+  "reviewRegions": [
+    {
+      "id": "upper-fixing-hole-and-latch",
+      "left": 465,
+      "top": 115,
+      "width": 300,
+      "height": 270
+    },
+    {
+      "id": "lower-hole-keyway-and-bolt",
+      "left": 35,
+      "top": 320,
+      "width": 390,
+      "height": 370
+    }
+  ],
+  "canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "placement": {
+    "left": 43,
+    "top": 122,
+    "width": 713,
+    "height": 555
+  },
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "masterSha256": "3d75649d676a4283281e6999bf9c9819c826c3d8fdc7e338eccd140152e2dcd9",
+  "opaquePixelsCompared": 125525,
+  "opaqueRgbDifferences": 0,
+  "alphaPixelCounts": {
+    "opaque": 125525,
+    "partial": 2935,
+    "transparent": 267255
+  },
+  "nativeRgbAlphaSourceUnchanged": true,
+  "transparentRgbDifferences": 0,
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadowAdded": false,
+  "hiddenZeroAlphaRgbUsed": false,
+  "status": "Ready for coloured catalogue layout review; client and factory approval pending",
+  "sourceVerification": "Cached native PNG hash verified; original PSD hash previously recorded, no fresh external-disk read",
+  "limitations": [
+    "No complete native ground photograph is available, so no photographic ground shadow is asserted or added",
+    "Original partial-alpha optical matte is inherited and requires visual contour review",
+    "Photographed parts do not establish current finish, compatibility or a sold kit"
+  ]
+}

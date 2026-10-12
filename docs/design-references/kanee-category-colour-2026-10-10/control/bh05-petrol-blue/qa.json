@@ -1,0 +1,14 @@
+{
+  "status": "HELD",
+  "outputSha256": "ed1aba238edffeeb92c53721730e5dcf23f8cac3ff25464422f695d7ee1502a7",
+  "checks": [
+    "Full source and four 3x comparison panels inspected; three hooks and two fixing apertures retained."
+  ],
+  "reason": "White-matte edge correction creates a soft gray perimeter at the right plate end; small background/pixel artifacts remain around two hook tips. Not included in ready quantity.",
+  "clientApproved": false,
+  "reviewer": "Codex control source/composition agent",
+  "reviewDate": "2026-10-10",
+  "noAiProduct": true,
+  "noAddedShadow": true,
+  "opaqueRgbAssertionScope": "Opaque retained photographic pixels only; NOT mask completeness proof"
+}

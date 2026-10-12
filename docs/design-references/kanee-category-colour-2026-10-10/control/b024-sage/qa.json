@@ -1,0 +1,18 @@
+{
+  "status": "READY_FOR_CLIENT_PREVIEW",
+  "outputSha256": "d136c79c720b026c01ce971b6f2bd0c529eb2f87d9892cd92f07fcd2521e825e",
+  "checks": [
+    "Full-size output inspected; both leaves, full hinge pin and narrow side strip retained.",
+    "3x source/output comparisons inspected at top pin, leaf edge, upper opening and narrow vertical gap.",
+    "Seeded connected source-paper removal replaces old circle erasure; metal at (612,423) stays opaque, paper at (640,423) is transparent, enforced by assertions.",
+    "Narrow gap paper removed only within a reviewed source window; dark side strip and end boundaries retained."
+  ],
+  "holes": "Source-paper connected regions inside conservative bounds; no unconditional circular erasure. Root inspected corrected full-size result.",
+  "limitation": "Catalogue portrait: no real-ground claim and no added shadow. Original gold appearance retained. Thin high-key edge highlights are preserved rather than erased to force a dark contour.",
+  "clientApproved": false,
+  "reviewer": "Codex root, updated photographic-mask review",
+  "reviewDate": "2026-10-12",
+  "noAiProduct": true,
+  "noAddedShadow": true,
+  "opaqueRgbAssertionScope": "Opaque retained photographic pixels only; NOT mask completeness proof"
+}

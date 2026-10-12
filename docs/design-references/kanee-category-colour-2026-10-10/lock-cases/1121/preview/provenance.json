@@ -1,0 +1,77 @@
+{
+  "id": "1121-petrol-blue",
+  "model": "1121",
+  "reviewStatus": "HELD for final contour acceptance: inherited pale slit inside rightmost keyring coil needs source-alpha aperture review; colour composition retained for inspection",
+  "view": "Original PSD photograph 5; corresponding repository gallery view 4",
+  "source": "1121/source-product.png",
+  "sourceSha256": "d7a60b546ad41e750ab9c07a8ec4f1d66c968e107a9e785be5b38d498123135b",
+  "sourceCache": "docs/design-references/kanee-fidelity/sources/1121.png",
+  "referencePhoto": "1121/repository-full-photo.webp",
+  "referencePhotoSha256": "741b815eb073f1972bcda06ee684e12fed6b7371122606250fadc39efce9ca2b",
+  "referenceReviewRegion": {
+    "left": 812,
+    "top": 330,
+    "width": 150,
+    "height": 140
+  },
+  "apertureInvestigation": "Repository gallery view4 confirms background visible inside the rightmost keyring coil. Native matte retains the pale opening. Much of it is not >=247 white; a threshold cleanup would not establish a safe complete metal boundary, so native alpha/RGB is retained and final contour remains HELD.",
+  "originalPsdPath": "G:/新网站资料/9-锁体/新/1121/5-1121.psd",
+  "originalPsdSha256": "e7134aed4ed95e5520f0c64c98e666fa0fc8182685a30b32e5e21ceb38875c2f",
+  "nativeLayer": {
+    "index": 1,
+    "name": "图层 9",
+    "width": 712,
+    "height": 435
+  },
+  "background": "../empty-fields/petrol-blue.png",
+  "reviewRegions": [
+    {
+      "id": "keys-ring-and-apertures",
+      "left": 530,
+      "top": 225,
+      "width": 235,
+      "height": 330
+    },
+    {
+      "id": "lock-outline-keyway-and-bolts",
+      "left": 35,
+      "top": 170,
+      "width": 480,
+      "height": 460
+    }
+  ],
+  "canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "placement": {
+    "left": 44,
+    "top": 182,
+    "width": 712,
+    "height": 435
+  },
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "masterSha256": "df79f4ac5a055fceef7d9dddb0d25ef129a0a4653725b91e69cc71ddf99c4360",
+  "opaquePixelsCompared": 119600,
+  "opaqueRgbDifferences": 0,
+  "alphaPixelCounts": {
+    "opaque": 119600,
+    "partial": 3774,
+    "transparent": 186346
+  },
+  "nativeRgbAlphaSourceUnchanged": true,
+  "transparentRgbDifferences": 0,
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadowAdded": false,
+  "hiddenZeroAlphaRgbUsed": false,
+  "status": "HELD for final contour acceptance: inherited pale slit inside rightmost keyring coil needs source-alpha aperture review; colour composition retained for inspection",
+  "sourceVerification": "Cached native PNG hash verified; original PSD hash previously recorded, no fresh external-disk read",
+  "limitations": [
+    "No complete native ground photograph is available, so no photographic ground shadow is asserted or added",
+    "Original partial-alpha optical matte is inherited and requires visual contour review",
+    "Photographed parts do not establish current finish, compatibility or a sold kit"
+  ]
+}

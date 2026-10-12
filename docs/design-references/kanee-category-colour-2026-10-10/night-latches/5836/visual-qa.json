@@ -1,0 +1,22 @@
+{
+  "model": "5836",
+  "status": "held-for-final-photographic-contour-acceptance",
+  "master": "preview/5836-petrol-blue.png",
+  "method": "Individually compare complete genuine1000px repository photograph and output, then inspect matching keeper/body/cylinder/tail diagnostic crops at3x native pixels",
+  "fullPhotographedBodyKeeperBoltsCylinderAndTailRetained": true,
+  "productResizedRotatedRepaintedOrRegenerated": false,
+  "photographicRgbPixelsCompared": 317088,
+  "photographicRgbDifferences": 0,
+  "opaqueProductPixelsCompared": 244813,
+  "opaqueProductRgbDifferences": 0,
+  "clearedVerifiedPaperAlphaPixels": 2673,
+  "verifiedPaperCleanup": "Only the genuine keeper apertures and existing >=247 one-pixel boundary paper cleanup, through unchanged existing helper; all RGB retained",
+  "apertureResult": "The two long genuine keeper openings now reveal the coloured background. No real inner metal edge is reconstructed or painted.",
+  "holdReason": "Source is a compressed photograph without native alpha. Even after the conservative existing paper cleanup,3x review shows a jagged pale matte fringe around the body top, keeper perimeter and bolt/tail. Some is optical white-field contamination adjacent to actual cream-metal highlight; trimming more would require unverified metal-boundary judgment. Not accepted as a polished final coloured image.",
+  "nativeGroundOrAddedShadow": false,
+  "aestheticLimit": "Suspended catalogue portrait only, not source-grounded still-life photography",
+  "commercialFacts": "Current finish, sold-kit status, key count, thickness and compatibility are not asserted; record summary/material and specs contradict on keys/thickness",
+  "clientApproval": "pending",
+  "commercialApproval": false,
+  "nextSafeOption": "Keep the original real white-field photograph or locate a better existing native-alpha source for the same genuine model; no global erosion or AI geometry cleanup"
+}

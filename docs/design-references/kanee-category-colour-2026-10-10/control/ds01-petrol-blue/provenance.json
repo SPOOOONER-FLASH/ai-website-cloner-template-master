@@ -1,0 +1,82 @@
+{
+  "id": "ds01-petrol-blue",
+  "model": "DS01",
+  "category": "hardware-accessories",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\ds01-door-stopper.webp",
+  "sourceSha256": "24990589da218aec48c213a04a1dbcd0f34b0964956f4dd89d12732fb7a0529e",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "outputSha256": "a466addb4153fba9a0c63da8477bcea5a44540d865b2e51841d8f73868b1d039",
+  "recipe": {
+    "id": "ds01-petrol-blue",
+    "model": "DS01",
+    "category": "hardware-accessories",
+    "source": "ds01-door-stopper.webp",
+    "field": "petrol-blue",
+    "threshold": 250,
+    "holes": [
+      [
+        391,
+        769
+      ],
+      [
+        600,
+        748
+      ],
+      [
+        517,
+        857
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        396,
+        102,
+        209,
+        203
+      ],
+      [
+        336,
+        715,
+        95,
+        98
+      ],
+      [
+        559,
+        704,
+        89,
+        104
+      ],
+      [
+        452,
+        807,
+        125,
+        93
+      ]
+    ],
+    "caveat": "Original photographed gold-coloured stopper with pale buffer retained, not re-coloured. Record material is stainless steel; gold appearance is not evidence of brass. No ground added."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 108480,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 6840,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original photographed gold-coloured stopper with pale buffer retained, not re-coloured. Record material is stainless steel; gold appearance is not evidence of brass. No ground added.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

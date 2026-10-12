@@ -1,0 +1,21 @@
+{
+  "id": "60-cpdk-terracotta",
+  "model": "60 CPDK",
+  "view": "Cached PSD 1, product layer 1",
+  "status": "NATIVE_COLOUR_PORTRAIT_REVIEW_PENDING",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "3f2ddcb55fc5cb192ac45d7342ade2ced2ff67584e1665f45b5a7fdfbf6565fe",
+  "sourceFullPhoto": null,
+  "sourceFullPhotoSha256": null,
+  "sourceOffset": {"left":89,"top":153},
+  "productRgbSource": "native-cutout",
+  "width": 800,
+  "height": 800,
+  "backgroundBlur": 0.9,
+  "backgroundGain": 0.95,
+  "background": "empty-field.png",
+  "originalLibrary": "G:/新网站资料/10-锁芯/60/60 CPDK/1-60 CPDK.psd",
+  "originalPsdSha256": "cffea06f24a57cb8c0992919bb673f3da1a7cb9677eb733ac6c63a08554aa157",
+  "originalHashStatus": "Previously recorded; no external disk accessed this session",
+  "limitation": "Native colour catalogue portrait; no source contact ground available or added. Hidden zero-alpha RGB is stretched edge smear and never used as photographic shadow. Separate screw layer is not included; source cutout already contains its photographed cylinder and keys."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "s03-sage",
+  "model": "S03",
+  "category": "sliding-hook-locks",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\s03-sliding-hook-lock.webp",
+  "sourceSha256": "3c612c4c534e521faafb1bb0b515f7e2820e38d90da7834030c6d3695e1d08d0",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "outputSha256": "051a31bd0f2c7301d6e5c8c4a5866bc43e0e46f3ce2157e2728f9a424782100b",
+  "recipe": {
+    "id": "s03-sage",
+    "model": "S03",
+    "category": "sliding-hook-locks",
+    "source": "s03-sliding-hook-lock.webp",
+    "field": "sage",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        192,
+        132
+      ]
+    ],
+    "holes": [
+      [
+        325,
+        151
+      ],
+      [
+        325,
+        854
+      ],
+      [
+        495,
+        337
+      ],
+      [
+        495,
+        450
+      ],
+      [
+        496,
+        581
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        296,
+        112,
+        80,
+        99
+      ],
+      [
+        602,
+        481,
+        302,
+        216
+      ],
+      [
+        643,
+        713,
+        133,
+        142
+      ]
+    ],
+    "caveat": "Full original photographed arrangement including screws. Source ground around the round pulls needs individual separation; hold if retained paper is visible."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 297841,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 10422,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Full original photographed arrangement including screws. Source ground around the round pulls needs individual separation; hold if retained paper is visible.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png"
+  ]
+}

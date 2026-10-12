@@ -1,0 +1,66 @@
+{
+  "id": "d101-ss-burgundy",
+  "model": "D101 SS",
+  "category": "deadbolts",
+  "view": "Repository original hero photograph, full deadbolt assembly",
+  "origin": "public/images/products/d101-ss-deadbolts.webp",
+  "source": "source.webp",
+  "sourceSha256": "f693fc2aab90b959cb76804b140de66b0b420ebfb4f020a8c0e8d03647c22c92",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "ea937f842f93c7ba0022b6584287386bde8617d7f0b75fd3a60897c4b13ecc37",
+  "sourceProductDimensions": [
+    786,
+    566
+  ],
+  "sourceOffset": [
+    135,
+    238
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 231517,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 229278,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        752,
+        528
+      ],
+      "removedPaperPixels": 0
+    }
+  ],
+  "alphaEdgePixelsChanged": 2239,
+  "partialAlphaMatteCleanupPixels": 2239,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine original silver deadbolt face/keyway with native rear plate, plated bolt body, full faceplate and projected bolt. Original photographed geometry and internally mixed metal colours retained.",
+  "uncertainty": "SS suffix is repository model identity, not independently revalidated alloy/finish. Current version, internal pins, backset and kit compatibility not inferred.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "d101-ss-burgundy.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "f11630a74d0f5b4f2a48a3d04c1b7bbdaada47ef6dcc90713bd3f1f233d51430"
+}

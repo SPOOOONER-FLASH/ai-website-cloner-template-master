@@ -1,0 +1,102 @@
+{
+  "id": "ju093-sage",
+  "model": "JU-093",
+  "category": "door-closers",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\ju-093-door-closer.webp",
+  "sourceSha256": "cef411d28c340caae47ebe6ee03e49bcd9d422634d133bae79571babe4d860a3",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "outputSha256": "22a765a9e65d1d948c2cdd5456052adc99765f8b5ca6a25ede9c92432f47a222",
+  "recipe": {
+    "id": "ju093-sage",
+    "model": "JU-093",
+    "category": "door-closers",
+    "source": "ju-093-door-closer.webp",
+    "field": "sage",
+    "threshold": 250,
+    "paperRegions": [
+      [
+        326,
+        772,
+        9,
+        9
+      ]
+    ],
+    "holes": [
+      [
+        399,
+        286
+      ],
+      [
+        639,
+        252
+      ],
+      [
+        879,
+        216
+      ],
+      [
+        331,
+        736
+      ],
+      [
+        331,
+        776
+      ],
+      [
+        778,
+        648
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        70,
+        272,
+        130,
+        110
+      ],
+      [
+        371,
+        224,
+        110,
+        100
+      ],
+      [
+        816,
+        177,
+        125,
+        140
+      ],
+      [
+        304,
+        710,
+        158,
+        115
+      ]
+    ],
+    "caveat": "Original rail, arm, full closer body and fixing brackets retained. Finish unspecified in product record; photographed silver preserved. No added ground."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 125228,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 9620,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original rail, arm, full closer body and fixing brackets retained. Finish unspecified in product record; photographed silver preserved. No added ground.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

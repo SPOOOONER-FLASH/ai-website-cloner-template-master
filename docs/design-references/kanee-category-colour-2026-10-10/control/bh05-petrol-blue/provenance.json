@@ -1,0 +1,87 @@
+{
+  "id": "bh05-petrol-blue",
+  "model": "BH05",
+  "category": "bathroom-accessories",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\bh05-bathroom-accessories.webp",
+  "sourceSha256": "fe69afea7b57a7a862efa4ea083a87b73df6d08b226c4125c75e38a4e3a707aa",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "outputSha256": "ed1aba238edffeeb92c53721730e5dcf23f8cac3ff25464422f695d7ee1502a7",
+  "recipe": {
+    "id": "bh05-petrol-blue",
+    "model": "BH05",
+    "category": "bathroom-accessories",
+    "source": "bh05-bathroom-accessories.webp",
+    "field": "petrol-blue",
+    "threshold": 250,
+    "exclusions": [
+      [
+        387,
+        503,
+        4,
+        4
+      ]
+    ],
+    "edgeBand": 8,
+    "holes": [
+      [
+        319,
+        408
+      ],
+      [
+        630,
+        471
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        83,
+        332,
+        155,
+        215
+      ],
+      [
+        315,
+        381,
+        165,
+        250
+      ],
+      [
+        646,
+        445,
+        170,
+        270
+      ],
+      [
+        787,
+        425,
+        125,
+        160
+      ]
+    ],
+    "caveat": "Original three curved hooks retained. No source ground shadow claimed or added."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 106552,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 8491,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original three curved hooks retained. No source ground shadow claimed or added.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

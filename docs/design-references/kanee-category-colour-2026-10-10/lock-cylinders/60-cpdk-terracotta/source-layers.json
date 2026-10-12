@@ -1,0 +1,127 @@
+{
+  "source": "G:/新网站资料/10-锁芯/60/60 CPDK/1-60 CPDK.psd",
+  "width": 800,
+  "height": 800,
+  "layers": [
+    {
+      "index": 0,
+      "name": "背景",
+      "top": 0,
+      "left": 0,
+      "width": 800,
+      "height": 800,
+      "channels": [
+        {
+          "id": 0,
+          "length": 12802
+        },
+        {
+          "id": 1,
+          "length": 12802
+        },
+        {
+          "id": 2,
+          "length": 12802
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-00.png"
+    },
+    {
+      "index": 1,
+      "name": "图层 6",
+      "top": 153,
+      "left": 89,
+      "width": 648,
+      "height": 591,
+      "channels": [
+        {
+          "id": -1,
+          "length": 18480
+        },
+        {
+          "id": 0,
+          "length": 258898
+        },
+        {
+          "id": 1,
+          "length": 257843
+        },
+        {
+          "id": 2,
+          "length": 257371
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-01.png"
+    },
+    {
+      "index": 2,
+      "name": "图层 2",
+      "top": 22,
+      "left": 33,
+      "width": 117,
+      "height": 80,
+      "channels": [
+        {
+          "id": -1,
+          "length": 1792
+        },
+        {
+          "id": 0,
+          "length": 7066
+        },
+        {
+          "id": 1,
+          "length": 7112
+        },
+        {
+          "id": 2,
+          "length": 7126
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-02.png"
+    },
+    {
+      "index": 3,
+      "name": "图层 7",
+      "top": 387,
+      "left": 197,
+      "width": 310,
+      "height": 182,
+      "channels": [
+        {
+          "id": -1,
+          "length": 4960
+        },
+        {
+          "id": 0,
+          "length": 39886
+        },
+        {
+          "id": 1,
+          "length": 40094
+        },
+        {
+          "id": 2,
+          "length": 40266
+        }
+      ],
+      "blend": "norm",
+      "opacity": 255,
+      "visible": true,
+      "maskLength": 0,
+      "file": "layer-03.png"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "564-mb-terracotta",
+  "model": "564 MB",
+  "view": "Original body and keeper photograph",
+  "status": "Review sample only; not deployed; client direction feedback is recorded separately",
+  "originalLibrary": "G:/新网站资料/7-防盗锁/564 MB/1-564 MB.psd (cached repository source; no external drive accessed)",
+  "originalPsdSha256": "65cd6d0f69afaf8b8f37e15547e64b72fc21239ba8a8eaa8b0db68deffcf5401",
+  "cacheStatus": "G drive absent this session; using previously extracted and hash-checked G-source layers",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "2c4739e807dbfd0e69849590ba24d201f8a3d6e38d4a430a0b1467fcdb5a6dc3",
+  "sourceFullPhoto": "source-full-photo.png",
+  "sourceFullPhotoSha256": "c3d92f905c3df78fe20554a05493c85e002574d9c46133a31b34f31d47b99cb3",
+  "productRgbReference": "native-cutout",
+  "productMaskExtraction": "Supplied native alpha, unchanged",
+  "sourceOffset": {
+    "left": 41,
+    "top": 188
+  },
+  "background": "../../empty-fields/terracotta.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "width": 835,
+  "height": 835,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "productRepainted": false,
+  "opaqueRgbPixelsCompared": 157692,
+  "opaqueRgbDifferences": 0,
+  "recoveredRegions": [
+    {
+      "seed": {
+        "x": 650,
+        "y": 495
+      },
+      "reason": "Preserve actual keeper aperture inner face directly from original photographic RGB, as in the reviewed 564 revision.",
+      "restoredPixels": 1045
+    }
+  ],
+  "restoredSourcePixelsCompared": 1045,
+  "restoredSourceRgbDifferences": 0,
+  "backgroundOnlyAdjustment": {
+    "blur": 1.1,
+    "gain": 0.98
+  },
+  "shadow": "Original full photographic layer luminance outside opaque native product alpha, including support beneath partial-alpha contact edges; neutral multiply transmission; no offset silhouette, ellipse, added blur or extrapolation",
+  "calibration": {
+    "paperLevel": 254,
+    "strength": 1,
+    "partialEdgeSupport": true
+  },
+  "masterSha256": "fb2432e155dd720109ea9c331a677df8d8190f75c9c838674fa6491e165fd7ca",
+  "limitation": "Preserves supplied photographic lighting and view. No claim that PSD shadows are untouched camera capture. Pixel fidelity is not aesthetic acceptance."
+}

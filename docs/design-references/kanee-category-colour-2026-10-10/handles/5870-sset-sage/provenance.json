@@ -1,0 +1,80 @@
+{
+  "id": "5870-sset-sage",
+  "model": "5870 SSET",
+  "category": "knob-locks",
+  "view": "Repository gallery photograph 4, knob assembly and native keys",
+  "origin": "public/images/products/5870-sset-heavy-duty-cylindrical-lock-4.webp",
+  "source": "source.webp",
+  "sourceSha256": "ac91cb1b9a4d1a36c8edd7a0fabd62ce41d5a04c6ca97317c1724761a957c0ac",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "4dafec86f743eeb141606228fbdd6d2d4fb28404343e5324c63274d0fdcc9528",
+  "sourceProductDimensions": [
+    698,
+    692
+  ],
+  "sourceOffset": [
+    124,
+    210
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 286907,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 284058,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        172,
+        690
+      ],
+      "removedPaperPixels": 3107
+    },
+    {
+      "source": [
+        153,
+        600
+      ],
+      "removedPaperPixels": 514
+    },
+    {
+      "source": [
+        723,
+        628
+      ],
+      "removedPaperPixels": 161
+    }
+  ],
+  "alphaEdgePixelsChanged": 2849,
+  "partialAlphaMatteCleanupPixels": 2849,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine original silver knob assembly with keys/rings, plated mechanism and faceplate's blue protective film. The blue film is retained, not described as product finish. No reassembly, extra keys or screws.",
+  "uncertainty": "Extraction from opaque grounded catalogue photo may retain pale ground as a halo; hold until visual contour/ground check passes. Current factory finish, key quantity supplied and kit compatibility unconfirmed.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "5870-sset-sage.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "312f17ab36644417bdb211209db35593df357face17565be6c04fde4c3e72065"
+}

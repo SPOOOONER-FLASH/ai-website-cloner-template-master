@@ -1,0 +1,72 @@
+{
+  "id": "881ss-burgundy",
+  "model": "881 SS",
+  "category": "sliding-hook-locks",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\881-ss-sliding-hook-lock-2.webp",
+  "sourceSha256": "b55afedf3b4c02393e96b5d7c2798c78045c94828e59d04f4c40b47f2ff3f08f",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "outputSha256": "447ab6f2adfa154a838ebc8bc218583e2f2dae2590e8806ab23d66decfbab087",
+  "recipe": {
+    "id": "881ss-burgundy",
+    "model": "881 SS",
+    "category": "sliding-hook-locks",
+    "source": "881-ss-sliding-hook-lock-2.webp",
+    "field": "burgundy",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        192,
+        132
+      ]
+    ],
+    "holes": [
+      [
+        673,
+        202
+      ],
+      [
+        676,
+        810
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        260,
+        140,
+        190,
+        190
+      ],
+      [
+        625,
+        158,
+        113,
+        114
+      ]
+    ],
+    "caveat": "Original mechanical back view of the two plates. This is a detail view, not the full supplied kit. No parts added or removed."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 283268,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 9533,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original mechanical back view of the two plates. This is a detail view, not the full supplied kit. No parts added or removed.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png"
+  ]
+}

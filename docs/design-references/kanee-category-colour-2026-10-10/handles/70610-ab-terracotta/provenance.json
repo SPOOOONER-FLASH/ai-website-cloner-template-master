@@ -1,0 +1,58 @@
+{
+  "id": "70610-ab-terracotta",
+  "model": "70610 AB",
+  "category": "grip-handle-sets",
+  "view": "Repository original hero photograph, original grouped components",
+  "origin": "public/images/products/70610-ab-grip-handle-set.webp",
+  "source": "source.webp",
+  "sourceSha256": "c7970951314acfd1237fca13c1a2574c8528de5ce3db50d0bb358698883d3c6b",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "fa5c62e6ef5036fc676ba23edb8cf04e6ce7958c7a7b88dbb07fafdbfc20e406",
+  "sourceProductDimensions": [
+    436,
+    942
+  ],
+  "sourceOffset": [
+    301,
+    33
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 129019,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 126895,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [],
+  "alphaEdgePixelsChanged": 2124,
+  "partialAlphaMatteCleanupPixels": 2124,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/terracotta.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine photographed long outside pull with thumbpiece, separate inside knob and two original round/oval deadbolt pieces. Antique brass-toned arrangement and relative sizes preserved as one original frame; no parts from another model added.",
+  "uncertainty": "AB is recorded model suffix; green/gold cast retained rather than finish-repainted. Actual sale-kit quantity/compatibility and current factory version unconfirmed.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "70610-ab-terracotta.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "ec368a4d7e81a573867ffc95b4b0811eddce21835dfda630b2972ca174541d3f"
+}

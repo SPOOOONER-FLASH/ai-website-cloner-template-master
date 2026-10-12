@@ -1,0 +1,78 @@
+{
+  "id": "fb001-sage",
+  "model": "FB001",
+  "category": "hardware-accessories",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\fb001-door-flush-bolt.webp",
+  "sourceSha256": "4394d3b79708745d77a3fbc4bd985ed8f33d208c534a6e46093413d094fb80de",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "outputSha256": "6c923b6047dedfd46af0286230e72ff674ec91408027696f7a1ca39c5b6350aa",
+  "recipe": {
+    "id": "fb001-sage",
+    "model": "FB001",
+    "category": "hardware-accessories",
+    "source": "fb001-door-flush-bolt.webp",
+    "field": "sage",
+    "threshold": 250,
+    "holes": [
+      [
+        767,
+        100
+      ],
+      [
+        828,
+        354
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        114,
+        537,
+        168,
+        170
+      ],
+      [
+        147,
+        755,
+        179,
+        180
+      ],
+      [
+        568,
+        139,
+        176,
+        149
+      ],
+      [
+        716,
+        319,
+        161,
+        166
+      ]
+    ],
+    "caveat": "Original front/back views of one flush bolt model. Two photographed views are not two models; both stems, flanges and mounting apertures retained. Specifications absent."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 141191,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 8313,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original front/back views of one flush bolt model. Two photographed views are not two models; both stems, flanges and mounting apertures retained. Specifications absent.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

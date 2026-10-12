@@ -1,0 +1,22 @@
+{
+  "id": "5836-petrol-blue",
+  "model": "5836",
+  "view": "Genuine repository gallery photograph 1: front body, keeper and tailpiece",
+  "source": "sources/repository-view-1.webp",
+  "repositorySource": "public/images/products/5836-night-latch-and-rim-lock.webp",
+  "sourceSha256": "075d796b155ee0e659236972f5c29c41477cee2cac98c995f729969e841bc09f",
+  "originalDimensions": {"width": 1000, "height": 1000},
+  "crop": {"left": 95, "top": 345, "width": 864, "height": 367},
+  "canvas": {"width": 1000, "height": 1000},
+  "background": "../../empty-fields/petrol-blue.png",
+  "backgroundApertureSeedsPixels": [[150, 130], [160, 270]],
+  "apertureEvidence": "The two elongated keeper openings are visible in the genuine original photograph; the nominated cutout pixels are white paper, not metal. Only the existing >=247 paper flood and single existing boundary cleanup are used; RGB is never changed.",
+  "retainedPartAnchors": [[60, 200], [500, 200], [810, 312], [150, 285]],
+  "reviewRegions": [
+    {"id": "keeper-slots-and-outline", "left": 60, "top": 310, "width": 235, "height": 390},
+    {"id": "body-cylinder-tail-and-outline", "left": 275, "top": 308, "width": 665, "height": 390}
+  ],
+  "status": "HELD for final photographic contour acceptance; actual colour composition retained for inspection",
+  "grounding": "No native alpha or continuous native ground photograph was found in the repository/cache for this view. No shadow is added or inferred.",
+  "commercialFacts": "Photographed finish and body/keeper arrangement only; no current finish, kit, key count, thickness or compatibility claim. Existing record summary/material and specs disagree on keys/thickness; content was not changed."
+}

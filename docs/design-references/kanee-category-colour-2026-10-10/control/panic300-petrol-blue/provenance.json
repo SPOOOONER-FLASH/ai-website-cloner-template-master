@@ -1,0 +1,62 @@
+{
+  "id": "panic300-petrol-blue",
+  "model": "300",
+  "category": "panic-exit-devices",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\300-panic-exit-device.webp",
+  "sourceSha256": "9cbb7068ef4d08ec3839d8fa67d5d50880c681af570c815a315a2c84c761a600",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "outputSha256": "eac3bdf2a7c493de4abff8368eab5d9ac960d7d82064ae083f31ffee36c6bb63",
+  "recipe": {
+    "id": "panic300-petrol-blue",
+    "model": "300",
+    "category": "panic-exit-devices",
+    "source": "300-panic-exit-device.webp",
+    "field": "petrol-blue",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        192,
+        132
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        94,
+        377,
+        149,
+        278
+      ],
+      [
+        766,
+        373,
+        146,
+        276
+      ]
+    ],
+    "caveat": "Complete frontal real red crossbar and black mechanism housings; original colour retained. Image makes no certification or fire-door compliance claim."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 51073,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 7135,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Complete frontal real red crossbar and black mechanism housings; original colour retained. Image makes no certification or fire-door compliance claim.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "607-sset-burgundy",
+  "model": "607 SSET",
+  "category": "knob-locks",
+  "view": "Repository gallery photograph 4, original rear mechanism pair",
+  "origin": "public/images/products/607-sset-tubular-lock-4.webp",
+  "source": "source.webp",
+  "sourceSha256": "9c8c6ba68426155bcf4b5d252c53e8fa81d9d126064ed525cf63503c52a518fb",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "d96c31fba6b4b52e788105d42e398342b2d7160a9a793d76cc76387502feb450",
+  "sourceProductDimensions": [
+    763,
+    672
+  ],
+  "sourceOffset": [
+    112,
+    279
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 260689,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 257944,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        797,
+        558
+      ],
+      "removedPaperPixels": 9
+    },
+    {
+      "source": [
+        778,
+        538
+      ],
+      "removedPaperPixels": 11
+    }
+  ],
+  "alphaEdgePixelsChanged": 2745,
+  "partialAlphaMatteCleanupPixels": 2745,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine pair of photographed silver knobs shown from their mechanical backs; original shafts, fixing tubes, receiver apertures and plated internal mechanisms preserved. No latch or absent screws added to this view.",
+  "uncertainty": "This photograph is a component/mechanism view, not a complete sale-kit claim. SSET/current factory finish, dimensions and kit compatibility unconfirmed.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "607-sset-burgundy.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "7197847876c363301614b72825f7597e2bb6990efcf675725493601aaef9f5da"
+}

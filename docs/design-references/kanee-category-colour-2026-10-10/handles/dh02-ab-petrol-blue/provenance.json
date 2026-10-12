@@ -1,0 +1,129 @@
+{
+  "id": "dh02-ab-petrol-blue",
+  "model": "DH02 AB",
+  "category": "grip-handle-sets",
+  "view": "Repository gallery photograph 2",
+  "origin": "public/images/products/dh02-ab-grip-handle-set-2.webp",
+  "source": "source.webp",
+  "sourceSha256": "2cd6fcd1bc33e1943ec3cd43fa30311ce36881277411e3b5288a7dd30e172cff",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "5bf447e44f6699a8e90eea424725c0a24cb407e96240fe6fc214cc65db700f87",
+  "sourceProductDimensions": [
+    672,
+    857
+  ],
+  "sourceOffset": [
+    80,
+    76
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 219152,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 215823,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        402,
+        228
+      ],
+      "removedPaperPixels": 91
+    },
+    {
+      "source": [
+        446,
+        226
+      ],
+      "removedPaperPixels": 92
+    },
+    {
+      "source": [
+        638,
+        190
+      ],
+      "removedPaperPixels": 119
+    },
+    {
+      "source": [
+        685,
+        186
+      ],
+      "removedPaperPixels": 130
+    },
+    {
+      "source": [
+        426,
+        680
+      ],
+      "removedPaperPixels": 2335
+    },
+    {
+      "source": [
+        659,
+        705
+      ],
+      "removedPaperPixels": 3203
+    },
+    {
+      "source": [
+        403,
+        797
+      ],
+      "removedPaperPixels": 85
+    },
+    {
+      "source": [
+        446,
+        806
+      ],
+      "removedPaperPixels": 87
+    },
+    {
+      "source": [
+        636,
+        826
+      ],
+      "removedPaperPixels": 105
+    },
+    {
+      "source": [
+        687,
+        834
+      ],
+      "removedPaperPixels": 125
+    }
+  ],
+  "alphaEdgePixelsChanged": 3329,
+  "partialAlphaMatteCleanupPixels": 3329,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine matched photographed ornate long backplates: original lever side and pull side. Antique brass-toned appearance, both keyhole profiles and eight visible fixing apertures retained at original relative size and arrangement.",
+  "uncertainty": "No assertion of current finish code, installation compatibility, dimensions or complete sale-kit composition.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "dh02-ab-petrol-blue.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "9253a8f3af0cfc07d093e33f9dce7b8e944c54a993e48707b803e3cf82ab510a"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "panic301-burgundy",
+  "model": "301",
+  "category": "panic-exit-devices",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\301-panic-exit-device.webp",
+  "sourceSha256": "5447e4a03d2b72ab2ebded82ce6e9b349e10d55df87c8b5806cce2bcc3dc6616",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "outputSha256": "4f13fd200b20fd91c6805e3cc27810b54efddd5e82841764d4b9acae91eb3921",
+  "recipe": {
+    "id": "panic301-burgundy",
+    "model": "301",
+    "category": "panic-exit-devices",
+    "source": "301-panic-exit-device.webp",
+    "field": "burgundy",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        192,
+        132
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        12,
+        541,
+        234,
+        218
+      ],
+      [
+        891,
+        207,
+        95,
+        94
+      ],
+      [
+        124,
+        515,
+        167,
+        108
+      ],
+      [
+        394,
+        330,
+        225,
+        160
+      ]
+    ],
+    "caveat": "Complete original long exit device with latch head and opposite end cap. Photographed silver is preserved; current record color/finish fields conflict. No certification, compliance or finish code inferred."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 98612,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 4184,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Complete original long exit device with latch head and opposite end cap. Photographed silver is preserved; current record color/finish fields conflict. No certification, compliance or finish code inferred.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

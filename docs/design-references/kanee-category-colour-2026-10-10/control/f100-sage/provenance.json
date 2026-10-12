@@ -1,0 +1,94 @@
+{
+  "id": "f100-sage",
+  "model": "F100 SS",
+  "category": "floor-springs-and-pivots",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\f100-ss-door-hinge-4.webp",
+  "sourceSha256": "6e44f5f0ed58ffaac07ec7fc59efb9fdf9d7614953b51e05c6203f9716197692",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "outputSha256": "939d8579941dba851a083784e40e20bd2024a84338f2123b3b0f36b3c26b439f",
+  "recipe": {
+    "id": "f100-sage",
+    "model": "F100 SS",
+    "category": "floor-springs-and-pivots",
+    "source": "f100-ss-door-hinge-4.webp",
+    "field": "sage",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        192,
+        132
+      ]
+    ],
+    "holes": [
+      [
+        269,
+        637
+      ],
+      [
+        197,
+        628
+      ],
+      [
+        476,
+        574
+      ],
+      [
+        747,
+        575
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        119,
+        220,
+        101,
+        326
+      ],
+      [
+        204,
+        571,
+        249,
+        125
+      ],
+      [
+        478,
+        575,
+        325,
+        131
+      ],
+      [
+        119,
+        757,
+        357,
+        83
+      ]
+    ],
+    "caveat": "Real wooden-door floor hinge, spring and plates in original assembly. Existing record filed under hinges; current independent HYDE second floor/pivot model remains unconfirmed. Source ground requires separate QA."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 201224,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 5224,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Real wooden-door floor hinge, spring and plates in original assembly. Existing record filed under hinges; current independent HYDE second floor/pivot model remains unconfirmed. Source ground requires separate QA.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

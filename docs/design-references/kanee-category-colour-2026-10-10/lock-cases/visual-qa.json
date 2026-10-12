@@ -1,0 +1,35 @@
+{
+  "scope": "Two coloured catalogue compositions only, not grounded still-life or client/factory approval",
+  "method": "Compare complete genuine native source PNG and final lossless master, then inspect fixing holes, bolts, keys, ring and source optical contours in3x diagnostic crops",
+  "samples": [
+    {
+      "id": "140-sage",
+      "status": "ready-for-colour-layout-review",
+      "sourceGeometryAndAlphaUnchanged": true,
+      "opaquePixelsCompared": 125525,
+      "opaqueRgbDifferences": 0,
+      "fullProductInsideFrame": true,
+      "addedShadow": false,
+      "newBackgroundRectangleOrStrip": false,
+      "newGeometryOrApertureDefectObserved": false,
+      "limitation": "No genuine native ground shadow. Source metal bevel/highlight fringe remains; this is an honest suspended catalogue cutout, not physically relit photography."
+    },
+    {
+      "id": "1121-petrol-blue",
+      "status": "held-for-final-contour-acceptance",
+      "sourceGeometryAndAlphaUnchanged": true,
+      "opaquePixelsCompared": 119600,
+      "opaqueRgbDifferences": 0,
+      "fullProductAndSourceKeysInsideFrame": true,
+      "addedShadow": false,
+      "newBackgroundRectangleOrStrip": false,
+      "newGeometryOrApertureDefectObserved": false,
+      "limitation": "No genuine native ground shadow. Genuine repository gallery view4 confirms background inside the rightmost keyring-coil opening. Its complete safe alpha boundary remains unresolved: much of the pale retained patch is below the existing >=247 paper threshold, and increasing it could erase reflective wire. Native source alpha/RGB is retained. No retouch or sold-kit claim was added.",
+      "genuineRepositoryReference": "1121/repository-full-photo.webp",
+      "referenceDiagnostic": "1121/preview/qa-repository-ring-4x.png",
+      "alphaChangeAttempted": false
+    }
+  ],
+  "commercialApproval": false,
+  "clientApproval": "pending"
+}

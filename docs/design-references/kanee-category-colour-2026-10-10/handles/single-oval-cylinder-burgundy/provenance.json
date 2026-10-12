@@ -1,0 +1,58 @@
+{
+  "id": "single-oval-cylinder-burgundy",
+  "model": "Single oval cylinder",
+  "category": "lock-cylinders",
+  "view": "Repository gallery photograph 5",
+  "origin": "public/images/products/single-oval-cylinder-lock-cylinder-5.webp",
+  "source": "source.webp",
+  "sourceSha256": "655190310c8171397ced07c43fe278adb9a6fc83e1b5f52eeec0af5661fab2ba",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "2881e4d4df92201c70abc059107f9eefcac4c369bdfec4cee2b19d81d083e685",
+  "sourceProductDimensions": [
+    495,
+    475
+  ],
+  "sourceOffset": [
+    242,
+    329
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 195488,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 193891,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [],
+  "alphaEdgePixelsChanged": 1597,
+  "partialAlphaMatteCleanupPixels": 1597,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "One complete genuine photographed oval-bodied cylinder with native keyway and rear projection; silver/brass-toned appearance retained. Distinct shape from the 60/70 Euro-profile specimens. No keys or components added.",
+  "uncertainty": "Repository product label only. Conflicting Euro-profile boilerplate is not evidence: no dimensions, profile-standard, pins, material, finish or kit compatibility asserted. Opaque white-ground source can retain grey/white ground in a derived mask; hold if that occurs.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "single-oval-cylinder-burgundy.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "b0a60b2754efc0601b435ba475f2c56757255b6fb124562413e8584837786187"
+}

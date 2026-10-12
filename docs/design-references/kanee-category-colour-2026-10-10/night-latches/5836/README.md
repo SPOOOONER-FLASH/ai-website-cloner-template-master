@@ -1,0 +1,13 @@
+# 5836 genuine coloured catalogue portrait — 2026-10-10
+
+`preview/5836-petrol-blue.png` is a real repository photograph over the parent pack's petrol-blue field. The full photographed body, keeper, bolts, cylinder and tailpiece remain at native pixel size. It is **HELD for final contour acceptance**, not a live image or an accepted photographic direction. The lossless PNG is the QA master; WebP94 is a lossy review copy.
+
+Source: `public/images/products/5836-night-latch-and-rim-lock.webp`, copied intact to `sources/repository-view-1.webp` (1000×1000). SHA-256: `075d796b155ee0e659236972f5c29c41477cee2cac98c995f729969e841bc09f`. Only repository files were used; no external library was accessed. No useful native-alpha cache was found for this view, and the source does not provide continuous ground shading suitable for a grounded-photo claim. No invented shadow was added.
+
+The existing `cutOut` helper supplies a 864×367 crop from source left95/top345. Its first candidate exposed a pale outer contour and white paper inside the two long keeper apertures on the coloured field. Those aperture openings are confirmed in the genuine photograph. The unchanged `cleanPhotographicMatte` helper clears only their verified near-white paper using seeds (150,130) and (160,270) in cutout coordinates, plus its existing one-pixel near-white boundary cleanup. It never paints RGB. This is a single individually reviewed specimen, not authorization for a 34-image mask batch.
+
+Run `node docs/design-references/kanee-category-colour-2026-10-10/night-latches/5836/build-review.mjs` to reproduce. The fixed recipe asserts source hash, crop, original RGB for the entire derived crop, retention of body/keeper/tail anchors, opaque output RGB and transparent-field equality. It writes the two masks, original-mask candidate, colour PNG/WebP, source/output 3× diagnostic crops and a receipt. No shared helper is modified and no metal is regenerated, resized, rotated, painted or independently rearranged.
+
+The first untouched-mask colour candidate remains as `5836-petrol-blue-candidate.png` for diagnostic history, not another product/model. This is a catalogue portrait without native ground; a physically grounded still-life is not claimed. No current finish or sold-kit claim is inferred. The existing product record's summary/material says four keys/1.2mm while its specs says three keys/1.5mm; this task does not choose either or modify content.
+
+Visual review and exact acceptance status are in `visual-qa.json`. Do not count this as an accepted final image while its outer-contour hold remains. Public/application/content/exports, shared scripts and root's 564 recipe are untouched. No full check, stage, commit or release was run.

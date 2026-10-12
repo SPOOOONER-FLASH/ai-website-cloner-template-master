@@ -1,0 +1,185 @@
+{
+  "id": "ssh016-petrol-blue",
+  "model": "SSH016",
+  "category": "brass-steel-hinges",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\ssh016-brass-and-steel-hinges.webp",
+  "sourceSha256": "0f48704e0b7e252c654a4f9901b5f69a7bbf08239f93ed2c357af111f320dfd0",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "outputSha256": "45634125bc4cb6ae87dba2d1a99e6baa8eb90e9ca3804459a48075c039ac574f",
+  "recipe": {
+    "id": "ssh016-petrol-blue",
+    "model": "SSH016",
+    "category": "brass-steel-hinges",
+    "source": "ssh016-brass-and-steel-hinges.webp",
+    "field": "petrol-blue",
+    "threshold": 250,
+    "holes": [
+      [
+        277,
+        237
+      ],
+      [
+        201,
+        436
+      ],
+      [
+        275,
+        629
+      ],
+      [
+        201,
+        810
+      ],
+      [
+        837,
+        237
+      ],
+      [
+        760,
+        437
+      ],
+      [
+        836,
+        629
+      ],
+      [
+        760,
+        811
+      ]
+    ],
+    "exclusions": [
+      [
+        0,
+        0,
+        192,
+        132
+      ]
+    ],
+    "retainUnion": [
+      [
+        124,
+        140,
+        793,
+        777
+      ],
+      [
+        467,
+        113,
+        100,
+        820
+      ]
+    ],
+    "holeEllipses": [
+      [
+        277,
+        237,
+        24,
+        24
+      ],
+      [
+        201,
+        436,
+        25,
+        25
+      ],
+      [
+        275,
+        629,
+        25,
+        25
+      ],
+      [
+        201,
+        810,
+        25,
+        25
+      ],
+      [
+        837,
+        237,
+        24,
+        24
+      ],
+      [
+        760,
+        437,
+        24,
+        24
+      ],
+      [
+        836,
+        629,
+        24,
+        24
+      ],
+      [
+        760,
+        811,
+        25,
+        25
+      ]
+    ],
+    "ground": [
+      85,
+      904,
+      884,
+      76
+    ],
+    "mode": "source-shadow",
+    "crops": [
+      [
+        115,
+        128,
+        140,
+        120
+      ],
+      [
+        450,
+        102,
+        140,
+        150
+      ],
+      [
+        180,
+        182,
+        180,
+        140
+      ],
+      [
+        440,
+        850,
+        150,
+        130
+      ]
+    ],
+    "caveat": "Neutral source record is HYDE-eligible. Brushed silver appearance is preserved; no new finish claim."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 600878,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 5420,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": [
+    85,
+    904,
+    884,
+    76
+  ],
+  "mode": "source-shadow",
+  "caveat": "Neutral source record is HYDE-eligible. Brushed silver appearance is preserved; no new finish claim.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

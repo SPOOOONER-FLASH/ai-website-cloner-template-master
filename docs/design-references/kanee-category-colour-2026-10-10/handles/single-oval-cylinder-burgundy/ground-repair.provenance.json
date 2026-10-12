@@ -1,0 +1,17 @@
+{
+  "model": "Single oval cylinder",
+  "source": "source.webp",
+  "sourceSha256": "655190310c8171397ced07c43fe278adb9a6fc83e1b5f52eeec0af5661fab2ba",
+  "fieldSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "master": "single-oval-cylinder-burgundy-ground-repair.png",
+  "masterSha256": "7d944ad62746d683c30df3a4f2a9aa5220d1ac3ed6abe85e5209f4b65f45b791",
+  "method": "Source-coordinate manually traced photographic matte and original photo ground luminance; no generated product, ground blur or translated shadow",
+  "opaqueRgbPixelsCompared": 151030,
+  "opaqueRgbDifferences": 0,
+  "productResize": false,
+  "productRotation": false,
+  "productRegenerated": false,
+  "status": "TECHNICAL_RECEIPT; current visual disposition is ../../review.json; original white-island draft remains HELD",
+  "clientApproved": false,
+  "contour": "M356 330 L637 331 C659 331 674 341 690 365 C714 370 724 391 726 422 L734 423 L735 440 L728 442 C728 468 718 488 708 498 L706 590 C706 629 689 670 659 686 C648 690 640 691 630 692 L444 705 L428 707 L361 713 C327 714 307 691 297 655 C288 620 289 590 289 555 L286 440 C284 390 308 332 356 330 Z"
+}

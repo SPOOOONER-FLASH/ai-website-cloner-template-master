@@ -1,0 +1,73 @@
+{
+  "id": "d103-ac-sage",
+  "model": "D103 AC",
+  "category": "deadbolts",
+  "view": "Repository gallery photograph 2, exposed connection view",
+  "origin": "public/images/products/d103-ac-deadbolts-2.webp",
+  "source": "source.webp",
+  "sourceSha256": "53720df2a0547d3bd867b415809db9bc1b4b89f512e070acaaa49f5221ff27eb",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "b941bb9f408dc79515bdcd169e9294067c69399faf2ef919add6a71d6cc93620",
+  "sourceProductDimensions": [
+    714,
+    515
+  ],
+  "sourceOffset": [
+    141,
+    246
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 205575,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 202813,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        485,
+        465
+      ],
+      "removedPaperPixels": 7109
+    },
+    {
+      "source": [
+        485,
+        550
+      ],
+      "removedPaperPixels": 8349
+    }
+  ],
+  "alphaEdgePixelsChanged": 2762,
+  "partialAlphaMatteCleanupPixels": 2762,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine copper-toned rectangular outside/inside pieces, native thumbturn, two exposed threaded fixing rods and central spindle. Original connection arrangement remains unchanged.",
+  "uncertainty": "Copper-toned is photographic appearance, not reverified factory finish. Threads, spacing and kit compatibility cannot be measured from this image.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "d103-ac-sage.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "6a1ce4bc8889b881ccb43fecb89347c701cc9e1fb20b41e76cd9269b2c4d2cdd"
+}

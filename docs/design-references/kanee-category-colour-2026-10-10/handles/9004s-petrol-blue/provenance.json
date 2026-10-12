@@ -1,0 +1,58 @@
+{
+  "id": "9004s-petrol-blue",
+  "model": "9004S",
+  "category": "stainless-steel-handles",
+  "view": "Repository original hero photograph, lever and square keyhole cover",
+  "origin": "public/images/products/9004s-stainless-steel-handle.webp",
+  "source": "source.webp",
+  "sourceSha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "previous-reviewed-derived",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "2bb0558d1f7a9954016a3bb5c1a47fc778a98eb190bb68786edcb485ddddfda9",
+  "sourceProductDimensions": [
+    838,
+    648
+  ],
+  "sourceOffset": [
+    137,
+    227
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 206052,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 202969,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [],
+  "alphaEdgePixelsChanged": 0,
+  "partialAlphaMatteCleanupPixels": 3083,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine flat rectangular lever and square rose plus native separate square keyhole cover; visible fixing feature retained; satin silver appearance. Existing curated mask is derived, not native PSD alpha.",
+  "uncertainty": "Current factory version, finish and complete kit not revalidated. Photo perspective is not dimensional evidence.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "9004s-petrol-blue.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "08ff6a85a5d6979122a1fa42b176c1db11f4c46f58e1c992f281cac9c8ebc2fd"
+}

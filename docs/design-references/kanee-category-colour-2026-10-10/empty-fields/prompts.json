@@ -1,0 +1,41 @@
+{
+  "scope": "Empty support surfaces only; never generative metal editing",
+  "fields": [
+    {
+      "id": "terracotta",
+      "file": "terracotta.png",
+      "sha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+      "generator": "built-in image_gen, empty field only",
+      "productGenerated": false,
+      "prompt": "Use case: product-mockup. Asset: EMPTY photographic field for a genuine hardware photograph to be composited later. Generate one square photorealistic seamless studio field in rich muted terracotta burnt-orange, a continuous fine matte painted-paper surface, restrained natural fine grain, softly lit from upper left with smooth falloff towards lower right. The camera looks diagonally down at a plain uninterrupted horizontal support surface with NO horizon seam. Premium architectural hardware catalogue art direction, prominent colour yet quiet. Absolutely empty: no products, metal, handles, cylinders, blocks, pedestals, props, plants, logos, text, white borders or cards. No cast/object shadows. All four edges filled with the same continuous terracotta field. This is only a background plate, never generate any hardware.",
+      "original": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/exec-a5be6ea4-9d8b-43cf-9e50-e4e3a08fe43b.png"
+    },
+    {
+      "id": "petrol-blue",
+      "file": "petrol-blue.png",
+      "sha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+      "generator": "built-in image_gen, empty field only",
+      "productGenerated": false,
+      "prompt": "Use case: product-mockup. Asset: EMPTY photographic field for compositing a genuine hardware photograph later. Generate one square photorealistic seamless studio field in sophisticated dusty petrol-blue/teal, cool medium muted blue-green, continuous ultra-fine matte painted-paper texture. Soft large studio light from upper left with smooth natural brightness falloff to lower right. Camera looks diagonally downward at one uninterrupted horizontal support surface, no horizon or seam. Premium architectural hardware catalogue art direction, colourful yet controlled. Entire frame is empty: absolutely no hardware, metal, objects, pedestals, blocks, plants, props, cast shadows, logos, text or white cards/borders. All four edges filled. This is ONLY an empty background, never draw a product.",
+      "original": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/exec-61817cdb-7b0e-405b-98fb-2b8fb63e4518.png"
+    },
+    {
+      "id": "sage",
+      "file": "sage.png",
+      "sha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+      "generator": "built-in image_gen, empty field only",
+      "productGenerated": false,
+      "prompt": "Use case: product-mockup. Asset: EMPTY background plate only for genuine hardware photographic compositing. One square photorealistic continuous studio support surface in muted sage green, medium-light desaturated olive green. Fine matte mineral-painted paper, very fine grain, calm architectural catalogue art direction. Soft upper-left studio illumination and a subtle lower-right falloff, a top-down/diagonally downward camera with no visible horizon or seams. No white central spot. Entire frame empty: no hardware, products, metal, blocks, pedestals, props, cast shadows, text, logos or borders. Same quiet green field reaches all four edges. Do not draw a product.",
+      "original": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/exec-6877178b-45cc-4fa8-ba00-640187253eea.png"
+    },
+    {
+      "id": "burgundy",
+      "file": "burgundy.png",
+      "sha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+      "generator": "built-in image_gen, empty field only",
+      "productGenerated": false,
+      "prompt": "Use case: product-mockup. Asset: EMPTY studio background plate for later native photographic hardware compositing. One square photorealistic uninterrupted warm burgundy-plum paper field, rich muted dark wine-red, medium darkness, very fine matte mineral-painted paper grain. Camera looks diagonally downward onto a plain continuous support surface; no horizon, no seam. Soft broad upper-left illumination with smooth subtle lower-right falloff, no central spotlight or harsh gradients. Architectural hardware catalogue restraint. Absolutely empty with no products, hardware, metal, handles, cylinders, blocks, pedestals, props, leaves, cast shadows, borders, logos or text. Continuous burgundy field to all edges. Never draw any hardware.",
+      "original": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/exec-95d10084-063f-4a50-8d07-b719c29f9e94.png"
+    }
+  ]
+}

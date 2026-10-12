@@ -1,0 +1,18 @@
+{
+  "status": "HELD",
+  "outputSha256": "45634125bc4cb6ae87dba2d1a99e6baa8eb90e9ca3804459a48075c039ac574f",
+  "checks": [
+    "Full-size output inspected; complete leaves, five knuckles and both pin ends retained.",
+    "3x source/output comparisons inspected at leaf corner, top pin, countersunk aperture and bottom contact.",
+    "All eight source fixing openings checked against full source; manually bounded opening mattes preserve the white countersink flare instead of erasing it.",
+    "Only native supplied bottom photographic shading is multiplied onto the field; no silhouette/ellipse/drop shadow."
+  ],
+  "holes": "Current revision uses source-paper connected regions, not circular erasure. Bright countersink versus paper remains uncertain; earlier checks do not establish readiness of this revision.",
+  "limitation": "Original 1000x1000 catalog photograph, not recovered PSD alpha. Partial white-matte contour is photographically cleaned. A narrow high-key rim remains source reflection. Pixel assertion does not prove no clipping; visual comparison is separate.",
+  "clientApproved": false,
+  "reviewer": "Codex root, downgraded after current revision review",
+  "reviewDate": "2026-10-12",
+  "noAiProduct": true,
+  "noAddedShadow": true,
+  "opaqueRgbAssertionScope": "Opaque retained photographic pixels only; NOT mask completeness proof"
+}

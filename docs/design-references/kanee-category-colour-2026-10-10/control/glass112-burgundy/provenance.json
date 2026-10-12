@@ -1,0 +1,60 @@
+{
+  "id": "glass112-burgundy",
+  "model": "112",
+  "category": "glass-door-accessories",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\112-glass-door-handle.webp",
+  "sourceSha256": "62b129c9f857f0495873bed109182280f4df996f04d416d0be5a86c01cd09c8b",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\burgundy.png",
+  "backgroundSha256": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3",
+  "outputSha256": "8ba09c2497de96705e225e0a41fdb74ef7ecad35166cd85e37f824e265b70155",
+  "recipe": {
+    "id": "glass112-burgundy",
+    "model": "112",
+    "category": "glass-door-accessories",
+    "source": "112-glass-door-handle.webp",
+    "field": "burgundy",
+    "threshold": 250,
+    "holes": [
+      [
+        505,
+        501
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        410,
+        62,
+        226,
+        158
+      ],
+      [
+        390,
+        777,
+        237,
+        168
+      ]
+    ],
+    "caveat": "Complete original polished pull pair with original couplings. Broad chrome reflections are metal, not removable paper."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 112204,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 8920,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Complete original polished pull pair with original couplings. Broad chrome reflections are metal, not removable paper.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png"
+  ]
+}

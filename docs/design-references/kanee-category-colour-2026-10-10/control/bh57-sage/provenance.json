@@ -1,0 +1,79 @@
+{
+  "id": "bh57-sage",
+  "model": "BH57",
+  "category": "care-grab-bars",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\bh57-bathroom-accessories.webp",
+  "sourceSha256": "2e32ba4a14759e91803d5772035330cd7299e14d4f5900017ea9c4b246035748",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "outputSha256": "95b205e3ac052d16289019f6598b0b7bd2e9d33ff333871a4e4fd695ceb86cca",
+  "recipe": {
+    "id": "bh57-sage",
+    "model": "BH57",
+    "category": "care-grab-bars",
+    "source": "bh57-bathroom-accessories.webp",
+    "field": "sage",
+    "threshold": 250,
+    "exclusions": [
+      [
+        0,
+        0,
+        214,
+        151
+      ]
+    ],
+    "holes": [
+      [
+        569,
+        523
+      ],
+      [
+        852,
+        487
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        23,
+        470,
+        188,
+        205
+      ],
+      [
+        883,
+        345,
+        95,
+        292
+      ],
+      [
+        315,
+        482,
+        115,
+        137
+      ]
+    ],
+    "caveat": "Original two rails, two struts and hinged wall plate; source view and proportion preserved. Existing neutral record used, no site or taxonomy changes."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 91210,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 6855,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original two rails, two struts and hinged wall plate; source view and proportion preserved. Existing neutral record used, no site or taxonomy changes.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "b024-sage",
+  "model": "B024",
+  "category": "brass-steel-hinges",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\b024-brass-and-steel-hinges.webp",
+  "sourceSha256": "0e42bee65f4a612d2f20c95ddd25f57d05eecc27d2c04c638985a33c3017a2b1",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "outputSha256": "d136c79c720b026c01ce971b6f2bd0c529eb2f87d9892cd92f07fcd2521e825e",
+  "recipe": {
+    "id": "b024-sage",
+    "model": "B024",
+    "category": "brass-steel-hinges",
+    "source": "b024-brass-and-steel-hinges.webp",
+    "field": "sage",
+    "threshold": 250,
+    "holes": [
+      [
+        538,
+        345
+      ],
+      [
+        365,
+        256
+      ],
+      [
+        315,
+        426
+      ],
+      [
+        365,
+        598
+      ],
+      [
+        315,
+        770
+      ],
+      [
+        691,
+        250
+      ],
+      [
+        640,
+        423
+      ],
+      [
+        691,
+        596
+      ],
+      [
+        640,
+        769
+      ]
+    ],
+    "holeEllipses": [
+      [
+        365,
+        256,
+        28,
+        28
+      ],
+      [
+        315,
+        426,
+        28,
+        28
+      ],
+      [
+        365,
+        598,
+        28,
+        28
+      ],
+      [
+        315,
+        770,
+        28,
+        28
+      ],
+      [
+        691,
+        250,
+        28,
+        28
+      ],
+      [
+        640,
+        423,
+        28,
+        28
+      ],
+      [
+        691,
+        596,
+        28,
+        28
+      ],
+      [
+        640,
+        769,
+        28,
+        28
+      ]
+    ],
+    "paperRegions": [
+      [
+        535,
+        282,
+        8,
+        174
+      ]
+    ],
+    "retainUnion": [
+      [
+        238,
+        158,
+        528,
+        701
+      ],
+      [
+        458,
+        121,
+        83,
+        760
+      ],
+      [
+        535,
+        271,
+        21,
+        184
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        225,
+        145,
+        180,
+        130
+      ],
+      [
+        440,
+        110,
+        140,
+        200
+      ],
+      [
+        310,
+        210,
+        120,
+        110
+      ],
+      [
+        490,
+        255,
+        100,
+        205
+      ]
+    ],
+    "caveat": "Gold-coloured original, not re-coloured. No source ground shadow claimed or added."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 354283,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 7463,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Gold-coloured original, not re-coloured. No source ground shadow claimed or added.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}

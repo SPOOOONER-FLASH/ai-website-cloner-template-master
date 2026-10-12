@@ -1,0 +1,66 @@
+{
+  "id": "9014-sset-sage",
+  "model": "9014 SSET",
+  "category": "stainless-steel-handles",
+  "view": "Original catalogue photograph 3, single lever and keyhole cover",
+  "origin": "C:/Users/johns/Downloads/ai-website-cloner-template-master/docs/design-references/products-page-plates/sources/9014-sset.jpg",
+  "source": "source.jpg",
+  "sourceSha256": "1d752c96687cce4c46569cb9f302761dc6e7a3a469562f68b317059504e1d123",
+  "sourceDimensions": [
+    800,
+    800
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "0f46c9d912458eb29421c0447f740b8158552a6edb28fd02df9f80fa8e762376",
+  "sourceProductDimensions": [
+    673,
+    552
+  ],
+  "sourceOffset": [
+    95,
+    144
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 112268,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 110728,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        219,
+        565
+      ],
+      "removedPaperPixels": 5368
+    }
+  ],
+  "alphaEdgePixelsChanged": 1540,
+  "partialAlphaMatteCleanupPixels": 1540,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/sage.png",
+  "backgroundSha256": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      800,
+      800
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine single angular tubular lever on round rose plus original separate round keyhole cover; satin silver appearance; fixing feature, holes and profile retained. Historical G path: G:/新网站资料/5-不锈钢插芯锁/9014/9014 SSET/3-9014 SSET.jpg, not read this session.",
+  "uncertainty": "Repository identity is 9014 SSET; no factory revalidation of current version, exact finish or kit contents. Not a promise that the pictured components are the whole sale kit.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "9014-sset-sage.png",
+  "masterDimensions": [
+    800,
+    800
+  ],
+  "masterSha256": "52240c2833f951071c4516dc4cf9fabd93f967703e4825316030ed5b05500286"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "8806-sset-petrol-blue",
+  "model": "8806 SSET",
+  "category": "lever-handles",
+  "view": "Repository original hero photograph, complete original assembly",
+  "origin": "public/images/products/8806-sset-lever-handle.webp",
+  "source": "source.webp",
+  "sourceSha256": "db7d3750ae26cf75c5f69b729fca3614ad019d0c8c491048dd0febbf03229b98",
+  "sourceDimensions": [
+    1000,
+    1000
+  ],
+  "mask": "derived-cutOut",
+  "sourceProduct": "source-product.png",
+  "sourceProductSha256": "5dab62ba8f446c5356fca84d61c25f81481e6cd968d1013d5e830080042ef654",
+  "sourceProductDimensions": [
+    821,
+    439
+  ],
+  "sourceOffset": [
+    101,
+    285
+  ],
+  "preCleanupRetainedSourceRgbPixelsCompared": 169473,
+  "preCleanupRetainedSourceRgbDifferences": 0,
+  "opaqueRgbPixelsCompared": 167030,
+  "opaqueRgbDifferences": 0,
+  "paperCleanup": [
+    {
+      "source": [
+        183,
+        505
+      ],
+      "removedPaperPixels": 212
+    },
+    {
+      "source": [
+        174,
+        665
+      ],
+      "removedPaperPixels": 138
+    }
+  ],
+  "alphaEdgePixelsChanged": 2443,
+  "partialAlphaMatteCleanupPixels": 2443,
+  "opticalCleanup": "White contribution removed only from already partial-alpha edge pixels; opaque metal RGB and alpha unchanged",
+  "background": "../empty-fields/petrol-blue.png",
+  "backgroundSha256": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+  "backgroundOnlyAdjustment": {
+    "resize": [
+      1000,
+      1000
+    ],
+    "blur": 0.9,
+    "gain": 0.95
+  },
+  "productResize": false,
+  "productRotation": false,
+  "productRepainted": false,
+  "productRegenerated": false,
+  "shadow": "No added shadow; colour catalogue portrait, not a grounded source-shadow still-life",
+  "arrangement": "All retained parts preserve their original source coordinates; no independent component resizing or rearrangement",
+  "facts": "Genuine photographed flat silver levers on round roses, native keyway, fixing apertures, back mechanism and latch. Internal plated parts remain their actual photographic colours.",
+  "uncertainty": "SSET model label is repository identity, not current factory recertification. Exact finish, dimensions and kit compatibility unconfirmed.",
+  "contourStatus": "Pending individual enlarged visual QA; numeric interior equality is not acceptance",
+  "clientApproved": false,
+  "master": "8806-sset-petrol-blue.png",
+  "masterDimensions": [
+    1000,
+    1000
+  ],
+  "masterSha256": "04490f9eda13b8ef71017dfab285f933ebc99b2842928043ac5bbf26ede6b4ce"
+}

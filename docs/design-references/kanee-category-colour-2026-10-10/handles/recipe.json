@@ -1,0 +1,66 @@
+{
+  "scope": "Isolated colourful real-photograph review only; all product scale, orientation and photographed component arrangements preserved",
+  "backgroundHashes": {
+    "petrol-blue": "ceb42924e35325b0fd732e3a59a6378748be06251917449d39a662186d128883",
+    "terracotta": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+    "sage": "89dbec4eb7737324d85726bc63e51423e4631b5ad350e2acf7665b8cf20061b3",
+    "burgundy": "015f206c0a7e026d71a21739d4ba5ae207375a263be52117755a2ca2152381b3"
+  },
+  "items": [
+    {
+      "id": "9014-sset-sage", "model": "9014 SSET", "category": "stainless-steel-handles", "view": "Original catalogue photograph 3, single lever and keyhole cover", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "C:/Users/johns/Downloads/ai-website-cloner-template-master/docs/design-references/products-page-plates/sources/9014-sset.jpg", "source": "source.jpg", "sourceSha256": "1d752c96687cce4c46569cb9f302761dc6e7a3a469562f68b317059504e1d123", "dimensions": [800,800], "field": "sage", "mask": "derived-cutOut", "holeSeeds": [[219,565]], "edgeAlphaCleanup": true,
+      "facts": "Genuine single angular tubular lever on round rose plus original separate round keyhole cover; satin silver appearance; fixing feature, holes and profile retained. Historical G path: G:/新网站资料/5-不锈钢插芯锁/9014/9014 SSET/3-9014 SSET.jpg, not read this session.", "uncertainty": "Repository identity is 9014 SSET; no factory revalidation of current version, exact finish or kit contents. Not a promise that the pictured components are the whole sale kit.", "contourCrops": [{"name":"rose-and-lever","left":75,"top":130,"width":320,"height":290},{"name":"keyhole-cover","left":89,"top":454,"width":235,"height":260}]
+    },
+    {
+      "id": "9004s-petrol-blue", "model": "9004S", "category": "stainless-steel-handles", "view": "Repository original hero photograph, lever and square keyhole cover", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/9004s-stainless-steel-handle.webp", "source": "source.webp", "sourceSha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4", "dimensions": [1000,1000], "field": "petrol-blue", "mask": "previous-reviewed-derived", "maskFile": "retained-mask.png", "maskSha256": "d35c3c9afc2973ea86c0e78d22715b47e26bc38c2b348699d05fb5f393692946", "sourceOffset": [137,227], "holeSeeds": [], "edgeAlphaCleanup": false,
+      "facts": "Genuine flat rectangular lever and square rose plus native separate square keyhole cover; visible fixing feature retained; satin silver appearance. Existing curated mask is derived, not native PSD alpha.", "uncertainty": "Current factory version, finish and complete kit not revalidated. Photo perspective is not dimensional evidence.", "contourCrops": [{"name":"rose-and-lever-root","left":125,"top":218,"width":295,"height":330},{"name":"keyhole-cover","left":128,"top":585,"width":295,"height":305}]
+    },
+    {
+      "id": "dh02-ab-petrol-blue", "model": "DH02 AB", "category": "grip-handle-sets", "view": "Repository gallery photograph 2", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/dh02-ab-grip-handle-set-2.webp", "source": "source.webp", "sourceSha256": "2cd6fcd1bc33e1943ec3cd43fa30311ce36881277411e3b5288a7dd30e172cff", "dimensions": [1000,1000], "field": "petrol-blue", "mask": "derived-cutOut", "holeSeeds": [[402,228],[446,226],[638,190],[685,186],[426,680],[659,705],[403,797],[446,806],[636,826],[687,834]], "edgeAlphaCleanup": true,
+      "facts": "Genuine matched photographed ornate long backplates: original lever side and pull side. Antique brass-toned appearance, both keyhole profiles and eight visible fixing apertures retained at original relative size and arrangement.", "uncertainty": "No assertion of current finish code, installation compatibility, dimensions or complete sale-kit composition.", "contourCrops": [{"name":"upper-fixing-holes","left":375,"top":115,"width":145,"height":190},{"name":"keyhole-and-lower-holes","left":382,"top":619,"width":135,"height":255}]
+    },
+    {
+      "id": "d103-ac-sage", "model": "D103 AC", "category": "deadbolts", "view": "Repository gallery photograph 2, exposed connection view", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/d103-ac-deadbolts-2.webp", "source": "source.webp", "sourceSha256": "53720df2a0547d3bd867b415809db9bc1b4b89f512e070acaaa49f5221ff27eb", "dimensions": [1000,1000], "field": "sage", "mask": "derived-cutOut", "holeSeeds": [[485,465],[485,550]], "edgeAlphaCleanup": true,
+      "facts": "Genuine copper-toned rectangular outside/inside pieces, native thumbturn, two exposed threaded fixing rods and central spindle. Original connection arrangement remains unchanged.", "uncertainty": "Copper-toned is photographic appearance, not reverified factory finish. Threads, spacing and kit compatibility cannot be measured from this image.", "contourCrops": [{"name":"threads-and-open-gaps","left":310,"top":380,"width":375,"height":255},{"name":"rectangular-plate-rim","left":570,"top":255,"width":280,"height":285}]
+    },
+    {
+      "id": "lh855-bnbk-terracotta", "model": "LH855 BNBK", "category": "lever-handles", "view": "Repository original hero photograph, complete original assembly", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/lh855-bnbk-lever-handle.webp", "source": "source.webp", "sourceSha256": "7870418f88ff5bbbb6f60f25b04c20279d8d537b68efbc8fc548d1bc851a9439", "dimensions": [1000,1000], "field": "terracotta", "mask": "derived-cutOut", "holeSeeds": [[193,482],[179,664]], "edgeAlphaCleanup": true,
+      "facts": "Genuine black curved levers, round roses and photographed mechanical/latch assembly. Source metal colours remain mixed as photographed internal hardware, not a claimed externally matched-finish set.", "uncertainty": "BNBK model label from repository; exact current coating and complete sale-kit contents unconfirmed. Source arrangement is not proof of installation or kit compatibility.", "contourCrops": [{"name":"latch-and-fixing-apertures","left":89,"top":415,"width":175,"height":340},{"name":"lever-profile-and-turn","left":468,"top":458,"width":488,"height":290}]
+    },
+    {
+      "id": "8806-sset-petrol-blue", "model": "8806 SSET", "category": "lever-handles", "view": "Repository original hero photograph, complete original assembly", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/8806-sset-lever-handle.webp", "source": "source.webp", "sourceSha256": "db7d3750ae26cf75c5f69b729fca3614ad019d0c8c491048dd0febbf03229b98", "dimensions": [1000,1000], "field": "petrol-blue", "mask": "derived-cutOut", "holeSeeds": [[183,505],[174,665]], "edgeAlphaCleanup": true,
+      "facts": "Genuine photographed flat silver levers on round roses, native keyway, fixing apertures, back mechanism and latch. Internal plated parts remain their actual photographic colours.", "uncertainty": "SSET model label is repository identity, not current factory recertification. Exact finish, dimensions and kit compatibility unconfirmed.", "contourCrops": [{"name":"latch-and-mounting-holes","left":92,"top":430,"width":170,"height":310},{"name":"keyway-lever-and-rose","left":286,"top":400,"width":420,"height":330}]
+    },
+    {
+      "id": "70610-ab-terracotta", "model": "70610 AB", "category": "grip-handle-sets", "view": "Repository original hero photograph, original grouped components", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/70610-ab-grip-handle-set.webp", "source": "source.webp", "sourceSha256": "c7970951314acfd1237fca13c1a2574c8528de5ce3db50d0bb358698883d3c6b", "dimensions": [1000,1000], "field": "terracotta", "mask": "derived-cutOut", "holeSeeds": [], "edgeAlphaCleanup": true,
+      "facts": "Genuine photographed long outside pull with thumbpiece, separate inside knob and two original round/oval deadbolt pieces. Antique brass-toned arrangement and relative sizes preserved as one original frame; no parts from another model added.", "uncertainty": "AB is recorded model suffix; green/gold cast retained rather than finish-repainted. Actual sale-kit quantity/compatibility and current factory version unconfirmed.", "contourCrops": [{"name":"deadbolt-original-pair","left":283,"top":20,"width":440,"height":235},{"name":"knob-and-upper-pull","left":285,"top":277,"width":455,"height":310},{"name":"lower-pull-foot","left":584,"top":790,"width":148,"height":200}]
+    },
+    {
+      "id": "607-sset-burgundy", "model": "607 SSET", "category": "knob-locks", "view": "Repository gallery photograph 4, original rear mechanism pair", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/607-sset-tubular-lock-4.webp", "source": "source.webp", "sourceSha256": "9c8c6ba68426155bcf4b5d252c53e8fa81d9d126064ed525cf63503c52a518fb", "dimensions": [1000,1000], "field": "burgundy", "mask": "derived-cutOut", "holeSeeds": [[797,558],[778,538]], "edgeAlphaCleanup": true,
+      "facts": "Genuine pair of photographed silver knobs shown from their mechanical backs; original shafts, fixing tubes, receiver apertures and plated internal mechanisms preserved. No latch or absent screws added to this view.", "uncertainty": "This photograph is a component/mechanism view, not a complete sale-kit claim. SSET/current factory finish, dimensions and kit compatibility unconfirmed.", "contourCrops": [{"name":"rear-mechanism-and-apertures","left":488,"top":387,"width":395,"height":335},{"name":"source-shafts-and-tubes","left":118,"top":548,"width":300,"height":410}]
+    },
+    {
+      "id": "5870-sset-sage", "model": "5870 SSET", "category": "knob-locks", "view": "Repository gallery photograph 4, knob assembly and native keys", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/5870-sset-heavy-duty-cylindrical-lock-4.webp", "source": "source.webp", "sourceSha256": "ac91cb1b9a4d1a36c8edd7a0fabd62ce41d5a04c6ca97317c1724761a957c0ac", "dimensions": [1000,1000], "field": "sage", "mask": "derived-cutOut", "holeSeeds": [[172,690],[153,600],[723,628]], "edgeAlphaCleanup": true,
+      "facts": "Genuine original silver knob assembly with keys/rings, plated mechanism and faceplate's blue protective film. The blue film is retained, not described as product finish. No reassembly, extra keys or screws.", "uncertainty": "Extraction from opaque grounded catalogue photo may retain pale ground as a halo; hold until visual contour/ground check passes. Current factory finish, key quantity supplied and kit compatibility unconfirmed.", "contourCrops": [{"name":"native-keyring-and-keys","left":107,"top":525,"width":230,"height":395},{"name":"blue-film-faceplate","left":674,"top":366,"width":140,"height":335},{"name":"lower-knob-ground","left":205,"top":609,"width":420,"height":140}]
+    },
+    {
+      "id": "d101-ss-burgundy", "model": "D101 SS", "category": "deadbolts", "view": "Repository original hero photograph, full deadbolt assembly", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/d101-ss-deadbolts.webp", "source": "source.webp", "sourceSha256": "f693fc2aab90b959cb76804b140de66b0b420ebfb4f020a8c0e8d03647c22c92", "dimensions": [1000,1000], "field": "burgundy", "mask": "derived-cutOut", "holeSeeds": [[752,528]], "edgeAlphaCleanup": true,
+      "facts": "Genuine original silver deadbolt face/keyway with native rear plate, plated bolt body, full faceplate and projected bolt. Original photographed geometry and internally mixed metal colours retained.", "uncertainty": "SS suffix is repository model identity, not independently revalidated alloy/finish. Current version, internal pins, backset and kit compatibility not inferred.", "contourCrops": [{"name":"keyway-and-face-rim","left":122,"top":488,"width":310,"height":264},{"name":"bolt-faceplate-and-holes","left":665,"top":431,"width":270,"height":390}]
+    },
+    {
+      "id": "single-oval-cylinder-burgundy", "model": "Single oval cylinder", "category": "lock-cylinders", "view": "Repository gallery photograph 5", "partialAlphaWhiteMatteCleanup": true,
+      "origin": "public/images/products/single-oval-cylinder-lock-cylinder-5.webp", "source": "source.webp", "sourceSha256": "655190310c8171397ced07c43fe278adb9a6fc83e1b5f52eeec0af5661fab2ba", "dimensions": [1000,1000], "field": "burgundy", "mask": "derived-cutOut", "holeSeeds": [], "edgeAlphaCleanup": true,
+      "facts": "One complete genuine photographed oval-bodied cylinder with native keyway and rear projection; silver/brass-toned appearance retained. Distinct shape from the 60/70 Euro-profile specimens. No keys or components added.", "uncertainty": "Repository product label only. Conflicting Euro-profile boilerplate is not evidence: no dimensions, profile-standard, pins, material, finish or kit compatibility asserted. Opaque white-ground source can retain grey/white ground in a derived mask; hold if that occurs.", "contourCrops": [{"name":"oval-keyway-and-upper-rim","left":273,"top":316,"width":465,"height":245},{"name":"oval-lower-ground","left":250,"top":626,"width":515,"height":205}]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "target": "Two different genuine products for each of 17 categories; colour review only",
+  "categories": [
+    {"name":"Stainless Steel Handles","items":[["9014 SSET","handles/9014-sset-sage/9014-sset-sage.png"],["9004S","handles/9004s-petrol-blue/9004s-petrol-blue.png"]]},
+    {"name":"Lever Handles","items":[["LH855 BNBK","handles/lh855-bnbk-terracotta/lh855-bnbk-terracotta.png"],["8806 SSET","handles/8806-sset-petrol-blue/8806-sset-petrol-blue.png"]]},
+    {"name":"Grip Handle Sets","items":[["DH02 AB","handles/dh02-ab-petrol-blue/dh02-ab-petrol-blue.png"],["70610 AB","handles/70610-ab-terracotta/70610-ab-terracotta.png"]]},
+    {"name":"Lock Cases","items":[["140","lock-cases/140/preview/140-sage.png"],["1121","lock-cases/1121/preview/1121-petrol-blue.png"]]},
+    {"name":"Lock Cylinders","items":[["70 ABKT CP","lock-cylinders/70-abkt-cp-petrol-blue/70-abkt-cp-petrol-blue-source-shadow.png"],["Single oval cylinder","handles/single-oval-cylinder-burgundy/single-oval-cylinder-burgundy-ground-repair.png"]]},
+    {"name":"Knob Locks","items":[["607 SSET","handles/607-sset-burgundy/607-sset-burgundy.png"],["5870 SSET","handles/5870-sset-sage/5870-sset-sage.png"]]},
+    {"name":"Deadbolts","items":[["D101 SS","handles/d101-ss-burgundy/d101-ss-burgundy.png"],["D103 AC","handles/d103-ac-sage/d103-ac-sage.png"]]},
+    {"name":"Night Latches and Rim Locks","items":[["564 MB","night-latches/564-mb-terracotta/preview/564-mb-terracotta-source-shadow.png"],["5836","night-latches/5836/preview/5836-petrol-blue.png"]]},
+    {"name":"Sliding Hook Locks","items":[["881 SS","control/881ss-burgundy/composition.png"],["S03","control/s03-sage/composition.png"]]},
+    {"name":"Panic Exit Devices","items":[["300","control/panic300-petrol-blue/composition.png"],["301","control/panic301-burgundy/composition.png"]]},
+    {"name":"Door Closers","items":[["JU-061","control/ju061-burgundy/composition.png"],["JU-093","control/ju093-sage/composition.png"]]},
+    {"name":"Floor Springs and Door Pivots","items":[["F100 SS","control/f100-sage/composition.png"],["Second distinct HYDE model",null]],"gap":"Retained D-series records are RAYEN-only. Do not count another F100 view as a second model or relabel a RAYEN asset."},
+    {"name":"Brass and Steel Door Hinges","items":[["SSH016","control/ssh016-petrol-blue/composition.png"],["B024","control/b024-sage/composition.png"]]},
+    {"name":"Glass Door Accessories","items":[["100","control/glass100-terracotta/composition.png"],["112","control/glass112-burgundy/composition.png"]]},
+    {"name":"Bathroom Accessories","items":[["BH08","control/bh08-terracotta/composition.png"],["BH05","control/bh05-petrol-blue/composition.png"]]},
+    {"name":"Care Grab Bars","items":[["BH56","control/bh56-terracotta/composition.png"],["BH57","control/bh57-sage/composition.png"]]},
+    {"name":"Hardware Accessories","items":[["DS01","control/ds01-petrol-blue/composition.png"],["FB001","control/fb001-sage/composition.png"]]}
+  ],
+  "nonCountingTrials": ["60 CPDK is an extra Euro-profile cylinder trial, not the requested oval model.","Original oval white-ground-island draft is rejected; use ground-repair only for review.","140 terracotta is a colour variant, not a second lock case."]
+}

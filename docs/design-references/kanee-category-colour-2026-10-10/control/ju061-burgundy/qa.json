@@ -1,0 +1,18 @@
+{
+  "status": "READY_FOR_CLIENT_PREVIEW",
+  "outputSha256": "c81e54ffe1e748f291d196f1e91730864ac4d22d6210be83494cbfb53a2a2195",
+  "checks": [
+    "Full-size output inspected; body, cap, entire long arm, short adjustable arm, nut, exposed thread and mounting foot all remain.",
+    "3x source/output comparisons inspected at top pivot, thread/nut, lower foot and closer endplate.",
+    "No paper removal inside dark fixing cavities; original bore walls and recesses remain unchanged.",
+    "No detached white field artifacts apparent at full size."
+  ],
+  "holes": "Photographed dark pivot bores, fixing bores and endplate recesses retained as source RGB; no assumed punch-through areas.",
+  "limitation": "Catalogue portrait without source ground. Original gray finish appearance preserved; record does not document a finish code. Edge cleanup changes only partial-alpha photographic boundary.",
+  "clientApproved": false,
+  "reviewer": "Codex control source/composition agent",
+  "reviewDate": "2026-10-10",
+  "noAiProduct": true,
+  "noAddedShadow": true,
+  "opaqueRgbAssertionScope": "Opaque retained photographic pixels only; NOT mask completeness proof"
+}

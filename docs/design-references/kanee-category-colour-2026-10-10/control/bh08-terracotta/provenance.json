@@ -1,0 +1,87 @@
+{
+  "id": "bh08-terracotta",
+  "model": "BH08",
+  "category": "bathroom-accessories",
+  "sourcePath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\public\\images\\products\\bh08-bathroom-accessories.webp",
+  "sourceSha256": "38a29a3637bda2bea72a2a78b1e5a97011bd65aa5c0a2ceb6f0411331514e0ad",
+  "sourceDimensions": {
+    "width": 1000,
+    "height": 1000
+  },
+  "backgroundPath": "C:\\Users\\johns\\.codex\\worktrees\\kanee-564-shadow-check\\ai-website-cloner-template-master\\docs\\design-references\\kanee-category-colour-2026-10-10\\empty-fields\\terracotta.png",
+  "backgroundSha256": "6939ac97d26f11278d50758fd45d04119f8154a7fa79cdbcf15a3cee94a07e9c",
+  "outputSha256": "52e576dc599d261408b25e214df9455156333105ef58034544ec37bcf188e931",
+  "recipe": {
+    "id": "bh08-terracotta",
+    "model": "BH08",
+    "category": "bathroom-accessories",
+    "source": "bh08-bathroom-accessories.webp",
+    "field": "terracotta",
+    "threshold": 250,
+    "exclusions": [
+      [
+        176,
+        473,
+        17,
+        11
+      ]
+    ],
+    "edgeBand": 8,
+    "holes": [
+      [
+        279,
+        432
+      ],
+      [
+        664,
+        545
+      ]
+    ],
+    "mode": "catalogue-portrait",
+    "crops": [
+      [
+        65,
+        395,
+        180,
+        145
+      ],
+      [
+        104,
+        302,
+        170,
+        135
+      ],
+      [
+        634,
+        512,
+        170,
+        150
+      ],
+      [
+        839,
+        515,
+        110,
+        195
+      ]
+    ],
+    "caveat": "Original four straight pegs retained. No source ground shadow claimed or added."
+  },
+  "productRegenerated": false,
+  "productRepainted": false,
+  "productResized": false,
+  "productRotated": false,
+  "opaqueRgbPixelsCompared": 133500,
+  "opaqueRgbChannelDifferences": 0,
+  "edgeWhiteMattePixelsAdjusted": 6549,
+  "matte": "Source-specific paper flood seeds plus explicit reviewed exclusions. Only partial-alpha edge RGB is white-paper unpremultiplied using local native photographic colour; protected opaque RGB unchanged. No AI product or new shadow.",
+  "sourceShadow": null,
+  "mode": "catalogue-portrait",
+  "caveat": "Original four straight pegs retained. No source ground shadow claimed or added.",
+  "status": "DRAFT — requires individual visual QA, not client approval",
+  "comparisonPanels": [
+    "source-vs-output-1-3x.png",
+    "source-vs-output-2-3x.png",
+    "source-vs-output-3-3x.png",
+    "source-vs-output-4-3x.png"
+  ]
+}
