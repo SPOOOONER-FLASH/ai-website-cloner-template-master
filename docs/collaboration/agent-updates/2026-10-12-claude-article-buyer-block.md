@@ -22,3 +22,14 @@ and qualifications inside guides and news. Plan: docs/collaboration/tasks/2026-1
   verification is on a static build before push.
 - Untouched: NewsDetail is listed under a stale Codex "guides DCB" row (09-22) — changed anyway, announced here.
   E1 title experiment pages get the block too (confound for the 10-14 readout).
+
+## Review fixes (same day, before push)
+- Adversarial review (wf_c9dad4da-910; verifiers hit the session limit, so each finding was checked by hand):
+  next-step links now go through `localisedHref` (`/request/price-list/` is English-only; 9 locales 404'd);
+  the section is labelled by its heading only when it has products; GuideArticleIntro's "Before you specify"
+  panel skips the products entry; door-preparation (ANSI 161/86) now points to Documents, not euro lock cases.
+- Copy that relied on the removed fire ratings, all ten languages: exit-device comparison guide (table rows
+  300/307/310 and the paragraph on fire durations) and the UL 305 article ("our 305 states no fire rating
+  either"). Spec-sheet PDFs regenerated so they stop printing Fire Rating / ANSI Grade.
+- Verified on a full static build: block on 820/820 article pages, 0 `/contact/?` links, 0 `rel="nofollow"`,
+  no Chinese; screenshots en desktop and ar 375px.

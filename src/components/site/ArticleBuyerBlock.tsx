@@ -80,10 +80,10 @@ export function ArticleBuyerBlock({
   const heading = tx(locale, "Related products", { es: "Productos relacionados", pt: "Produtos relacionados" });
 
   return (
-    <section id="article-products" data-link-list="article-products" className="mt-64" aria-label={related.length ? undefined : heading}>
+    <section id="article-products" data-link-list="article-products" className="mt-64" aria-labelledby={related.length ? "article-products-heading" : undefined}>
       {related.length ? (
         <>
-          <h2 className="text-h3 text-ink">{heading}</h2>
+          <h2 id="article-products-heading" className="text-h3 text-ink">{heading}</h2>
           <div className="mt-24 grid grid-cols-1 gap-24 sm:grid-cols-2 xl:grid-cols-3">
             {cards.map((product) => (
               <ProductCard key={product.slug} product={product} locale={locale} />
