@@ -33,10 +33,17 @@ function move(from, toDir, newName) {
     const ext = path.extname(name);
     to = path.join(ROOT, toDir, `${path.basename(name, ext)} (${today})${ext}`);
   }
-  log.push(`| ${path.relative(ROOT, from)} | ${path.relative(ROOT, to)} |`);
-  if (DRY) return;
+  if (DRY) return void log.push(`| ${path.relative(ROOT, from)} | ${path.relative(ROOT, to)} |`);
   fs.mkdirSync(path.dirname(to), { recursive: true });
-  fs.renameSync(from, to);
+  try {
+    fs.renameSync(from, to);
+  } catch (e) {
+    // A file open in Word is locked on Windows; leave it for the next run instead of aborting the whole tidy-up.
+    if (e.code !== "EBUSY" && e.code !== "EPERM") throw e;
+    console.warn(`skipped (open in another program): ${path.relative(ROOT, from)}`);
+    return;
+  }
+  log.push(`| ${path.relative(ROOT, from)} | ${path.relative(ROOT, to)} |`);
 }
 
 const runbook = fs.readFileSync("docs/collaboration/CLIENT-RUNBOOK.md", "utf8");
@@ -78,7 +85,7 @@ for (const file of loose) {
 // 1b. Hand-offs already filed in 00: once the runbook stops naming one, it is finished (client 10-12: 「很多东西我看了修了 但是还在里头」).
 const todoDir = path.join(ROOT, FOLDERS.todo);
 for (const name of fs.existsSync(todoDir) ? fs.readdirSync(todoDir) : []) {
-  if (/(手动操作|同事操作).*\.docx$/.test(name) && !stillAsked(name.replace(/\.docx$/, ""))) {
+  if (!name.startsWith("~$") && /(手动操作|同事操作).*\.docx$/.test(name) && !stillAsked(name.replace(/\.docx$/, ""))) {
     move(path.join(todoDir, name), path.join(FOLDERS.archive, "已完成的人工操作"));
   }
 }

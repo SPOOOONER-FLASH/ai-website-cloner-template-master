@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-10-12 · 更新人：Claude · 全量审查后清理：旧条目合成一张 9 行表，做完回编号即删**
+**最后更新：2026-10-12 · 更新人：Claude · 待办表更新：删 6 条，新增 Ahrefs/Semrush 导出、补规格清单**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -25,21 +25,17 @@
 
 ---
 
-## 以前布置的、我在站外测不到做没做的（2026-10-12 整理成一张表）
+## 现在要做的（2026-10-12 更新）：一张表，做完回我编号
 
-10-12 全量审查后，已确认做完或已作废的条目都移进了 `archive/2026-10-12-runbook-cleanup.md`（10-08 Search Console 导出、Bing 两条 High、RSS、LinkedIn 公司主页、GA4「首次来源」、Cloudflare 查 AI 爬虫）。下面这些只有你在后台看得到。**做完的回我编号就行（例如「1、3、6 做完了」），我当天删掉。** 不想做的也回我编号，我改成「不做」。
+10-12 你回复后已删掉：产品大脑给同事开权限（大脑留在本地，不开）、Ahrefs 开通（已开）、Cloudflare 那条 CNAME（`mail.cantonlock.com` 是网易企业邮箱，**必须保持 DNS only**，那条建议忽略即可）、Clarity 九个话题、Clarity 两个 AI 话题、GA4「AI助手」渠道组（已建，AI assistants 排在 Referral 上面，正确）。
 
 | # | 布置日期 | 做什么 | 步骤在哪 |
 |---|---|---|---|
-| 1 | 10-09 | 产品大脑：把同事的 GitHub 用户名微信发我（或按说明自己开权限） | 桌面 `hyde\05-目录与报价\2026-10-09-产品大脑-目录与报价资料库.docx` 第三节 |
-| 2 | 10-09 | 外贸网站上的旧帖子，链接改到产品页（先做 worldbid 51 条；可交给同事） | `00-先看这里-人工待办\2026-10-09-手动操作-反链深链与长尾词.docx`、`2026-10-10-同事操作-网站链接改到产品页.docx`；清单 `BACKLINK-DEEPLINKS.docx` |
-| 3 | 10-09 | 开通 Ahrefs Webmaster Tools 免费版 | `00-先看这里-人工待办\2026-10-08-手动操作-曝光继续爬升要的数据.docx` 第 ③ 节 |
-| 4 | 10-08 | Cloudflare 安全页：Bot Fight Mode、AI Labyrinth 两条别开；「Unproxied CNAME」那条截图发我 | 不用文件：Cloudflare → cantonlock.com → Security → Settings |
-| 5 | 10-02 | Clarity 九个新话题（要粘贴的文字都在文件里） | `00-先看这里-人工待办\2026-10-02-手动操作-Clarity九个话题与LinkedIn.docx` 第一部分（LinkedIn 部分已做完） |
-| 6 | 09-30 | GA4 建「真人」比较：流量获取 → 添加比较 → 屏幕分辨率 完全不匹配 `1280x1200` | 不用文件 |
-| 7 | 09-30 | Clarity → AI Visibility → Topic insights：「Glass door hardware and frameless entrances」点 Run；「Documentation, test evidence and submittals」「Fire safety compliance」两行里的提问截图发我 | 不用文件 |
-| 8 | 09-28 | GA4 渠道组「含 AI 助手」：管理 → 数据显示 → 渠道组 → 新建，渠道 AI assistants，来源正则 `chatgpt\|openai\|perplexity\|gemini\|copilot\|claude\|deepseek`，拖到 Referral 上面 | 不用文件 |
-| 9 | 09-28 | AI 可见度摸底：一题开一个新对话，只粘题目，截图发我（先做 mfr-01 到 mfr-08、es-01、es-02、pt-01） | 桌面 `hyde\03-研究与方案\GEO-学习与进展-2026-09-28.docx` 附录二 |
+| 1 | 10-12 | Search Console 看一眼「人工处置」，再从 Ahrefs、Semrush 各导出几样发我 | 桌面 `hyde\00-先看这里-人工待办\2026-10-12-手动操作-Ahrefs与Semrush要看的.docx` |
+| 2 | 10-12 | 补产品规格：521 个产品规格里的数字少于 6 个，AI 和搜索引擎没东西可引用。先填有「大脑同款」提示的 62 个，只填确认过的 | 桌面 `hyde\05-目录与报价\2026-10-12-官网产品补规格清单.csv`（Excel 打开） |
+| 3 | 10-09 | 外贸网站上的旧帖子，链接改到产品页（先做 worldbid 51 条；可交给同事） | `00-先看这里-人工待办\2026-10-09-手动操作-反链深链与长尾词.docx`、`2026-10-10-同事操作-网站链接改到产品页.docx`；清单 `BACKLINK-DEEPLINKS.docx` |
+| 4 | 09-30 | GA4 建「真人」比较：流量获取 → 添加比较 → 屏幕分辨率、匹配类型选 **不完全匹配**、值 `1280x1200` → 应用 | 不用文件 |
+| 5 | 09-28 | AI 可见度摸底：一题开一个新对话，只粘题目，截图发我（先做 mfr-01 到 mfr-08、es-01、es-02、pt-01） | 桌面 `hyde\03-研究与方案\GEO-学习与进展-2026-09-28.docx` 附录二 |
 
 ---
 
