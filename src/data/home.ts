@@ -3,7 +3,6 @@ import type {
   HeroModuleContent,
   PageTeaserContent,
   SpacerHeights,
-  TextModuleContent,
 } from "@/types/fsb-modules";
 
 /**
@@ -123,131 +122,6 @@ export const teaser1: PageTeaserContent = {
   ],
 };
 
-export const hero2: HeroModuleContent = {
-  variant: "stacked",
-  media: {
-    ratio: "2400 / 1159",
-    src: "/images/editorial/home-commercial-egress.webp",
-    label: "Commercial escape-route architecture with paired doors and a quiet corridor",
-  },
-  title: "Panic Exit Devices",
-  // 4 lines at the 332px caption column, matching the measured module height
-  body: "Our flagship range, and the one we know best: push bars for escape and fire doors, from single-point rim devices to multi-point sets for double doors.",
-  linkLabel: "See the exit devices",
-  href: "/products/panic-exit-devices",
-};
-
-export const text1: TextModuleContent = {
-  heading: "Where our hardware is fitted",
-  body: "Our panic devices, lock cases and lever sets are fitted in commercial, institutional and residential buildings in the markets we export to, often under our customers' own names, with master-key and construction-key systems planned for each building.",
-  linkLabel: "Overview",
-  href: "/projects",
-};
-
-export const teaser2: PageTeaserContent = {
-  cards: [
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/project-commercial-egress.webp",
-        label: "Representative commercial egress application study with paired fire-exit doors",
-      },
-      title: "Commercial Fire Egress",
-      subtitle: "Representative hardware application study for code-conscious circulation",
-      href: "/projects/commercial-fire-egress-hardware",
-    },
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/project-hospitality-residential.webp",
-        label: "Representative hospitality and residential door-hardware application study",
-      },
-      title: "Hospitality + Residential",
-      subtitle: "Warm entry and corridor studies for coordinated door packages",
-      href: "/projects/hospitality-residential-door-package",
-    },
-  ],
-};
-
-export const hero3: HeroModuleContent = {
-  variant: "side",
-  media: {
-    ratio: "3 / 2",
-    src: "/images/editorial/hyde-real-product-atlas.webp",
-    label: "Real catalog photographs presenting selected door hardware",
-  },
-  title: "Designed for",
-  body: "Selected hardware, one coordinated schedule",
-  linkLabel: "Browse the catalog",
-  href: "/products",
-};
-
-export const hero4: HeroModuleContent = {
-  variant: "stacked",
-  media: {
-    ratio: "1 / 1",
-    src: "/images/editorial/hyde-client-lc04-selection.webp",
-    label: "Four-bolt mortise lock case with strike plate and strike box",
-  },
-  title: "Materials + Engineering",
-  body: "Finishes matched across a whole door schedule, master-key systems planned before the first cylinder is cut, and export documents ready when the container is.",
-  linkLabel: "How we work",
-  href: "/company",
-};
-
-export const text2: TextModuleContent = {
-  heading: "Service + Downloads",
-  // 2 lines at the 680px copy column, matching the measured module height
-  body: "New tooling to your drawing or sample, and your name on the part. If a design you bring us is covered by someone else's patent, our engineers rework the parts or the appearance until it no longer conflicts with that patent.",
-  linkLabel: "See what we develop",
-  href: "/downloads",
-};
-
-export const teaser3: PageTeaserContent = {
-  cards: [
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-lockcase.webp",
-        label: "Original catalog photograph of door-control hardware",
-      },
-      title: "Send us your hardware requirements",
-      subtitle: "We'll match your project with the right export engineer",
-      href: "/contact",
-    },
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/hyde-client-black-hinge.webp",
-        label: "Black door hinge with staggered fixing holes on a light background",
-      },
-      title: "Specify with confidence",
-      subtitle: "Answers on installation, finishes, standards and lead times",
-      href: "/faq",
-    },
-  ],
-};
-
-export const text3: TextModuleContent = {
-  heading: "Engineering for Export",
-  body: "Finish selection, master-key systems and specification detail for each market.",
-  linkLabel: "Contact us",
-  href: "/contact",
-};
-
-export const hero5: HeroModuleContent = {
-  variant: "stacked",
-  media: {
-    ratio: "2400 / 1464",
-    src: "/images/editorial/home-editorial-insight.webp",
-    label: "Abstract architectural light study with glass and metal surfaces",
-  },
-  title: "Hardware Specification",
-  linkLabel: "Talk to export",
-  href: "/contact",
-};
-
-/** Spacer heights in px, matched to the measured values at each breakpoint. */
 export const spacers: Record<string, SpacerHeights> = {
   s96: { default: 96 },
   s48: { default: 48 },
