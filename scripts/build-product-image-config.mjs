@@ -55,9 +55,6 @@ function homepageModels() {
   /* ArgentinaAr4Showcase — the seasonal market collection. */
   for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) models.add(model);
 
-  /* FeatureColumns — the door coordinator card carries a product plate. */
-  models.add("DC02");
-
   // Native home catalogue atlas: two direct product photographs alongside editorial plates.
   for (const model of ["Stainless Steel Flush Bolt", "600"]) models.add(model);
 

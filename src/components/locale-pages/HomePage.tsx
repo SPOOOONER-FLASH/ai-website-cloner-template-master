@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
-import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { ExportMap } from "@/components/site/ExportMap";
 import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
@@ -67,7 +66,6 @@ export function HomePage({ locale }: { locale: Locale }) {
         <FamilyIndex locale={locale} />
         <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase locale={locale} />
-        <FeatureColumns locale={locale} />
         <FactoryStory locale={locale} />
       </div>
     </main>

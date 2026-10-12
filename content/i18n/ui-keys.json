@@ -63,18 +63,12 @@
   "{missing} of {total} models do not state this yet; ask the export team before ordering.": [
     "src/lib/category-guide.ts:153"
   ],
-  "{n} dimension drawings, drawn only from published dimensions": [
-    "src/data/feature-columns.ts:180"
-  ],
   "{n} models": [
     "src/components/site/OrderCodeTables.tsx:35",
     "src/components/site/ProductsEditorialOverview.tsx:30"
   ],
   "{n} models are in the catalog and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.": [
     "src/components/site/ModelLookup.tsx:95"
-  ],
-  "{n} models can be keyed alike or master keyed": [
-    "src/data/feature-columns.ts:96"
   ],
   "{n} models match": [
     "src/components/site/Configurator.tsx:67"
@@ -274,9 +268,6 @@
   ],
   "A grade is not a property of a factory or of a catalog. If a supplier says the range is Grade 2, ask which model number the report names — that is the only form of the claim that survives a submittal.": [
     "src/data/hardware-terms.ts:503"
-  ],
-  "A hierarchy is a decision about who passes which door, not a hardware specification. Five levels, from grand-grand master down to the change key, and what we need from you to cut the chart.": [
-    "src/data/feature-columns.ts:90"
   ],
   "A hook bolt, because a sliding leaf gives a straight latch nothing to catch.": [
     "src/data/category-positioning.json"
@@ -533,9 +524,6 @@
   ],
   "Backset and center distance decide whether a replacement drops into the existing preparation.": [
     "src/data/category-positioning.json"
-  ],
-  "Backset and center distance: reading a lock case number": [
-    "src/data/feature-columns.ts:169"
   ],
   "Backset is {backset} and door thickness {thickness} across the range; most latches are adjustable between 60 and 70mm, so one set covers both common door preparations.": [
     "src/data/category-buying-guides.ts:185"
@@ -896,15 +884,6 @@
   "Code": [
     "src/components/site/OrderCodeTables.tsx:28"
   ],
-  "Column · Drawings": [
-    "src/data/feature-columns.ts:167"
-  ],
-  "Column · Fire doors": [
-    "src/data/feature-columns.ts:126"
-  ],
-  "Column · Keying": [
-    "src/data/feature-columns.ts:83"
-  ],
   "Come and see the factory, or send us a drawing": [
     "src/components/site/CompanyOverview.tsx:39"
   ],
@@ -1011,9 +990,6 @@
   ],
   "Coordinated families · one catalog": [
     "src/components/site/products-architecture.ts:184"
-  ],
-  "Coordinated range 55–85kg per leaf": [
-    "src/data/feature-columns.ts:141"
   ],
   "Copper hinges or brass hinges?": [
     "src/data/category-notes.ts:54"
@@ -1329,9 +1305,6 @@
   ],
   "Download the export catalog (PDF)": [
     "src/components/site/ProductDetail.tsx:80"
-  ],
-  "Download the plan sheet (XLSX)": [
-    "src/data/feature-columns.ts:108"
   ],
   "Download the spec sheet (PDF)": [
     "src/components/site/ProductSpecSheetLink.tsx:12"
@@ -1922,9 +1895,6 @@
   "How many cycles is the {m} tested to?": [
     "src/lib/product-faq.ts:153"
   ],
-  "How many levels your master key system needs": [
-    "src/data/feature-columns.ts:85"
-  ],
   "How to browse the catalog": [
     "src/components/site/FinderModeSwitch.tsx:41"
   ],
@@ -2170,7 +2140,7 @@
     "src/data/category-sourcing.ts:46"
   ],
   "Locks and architectural door hardware": [
-    "src/components/locale-pages/HomePage.tsx:22"
+    "src/components/locale-pages/HomePage.tsx:21"
   ],
   "Locks and cylinders": [
     "src/components/site/products-architecture.ts:62"
@@ -2200,7 +2170,7 @@
     "src/components/locale-pages/CollectionPage.tsx:61"
   ],
   "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
-    "src/components/locale-pages/HomePage.tsx:30"
+    "src/components/locale-pages/HomePage.tsx:29"
   ],
   "Manufacturing": [
     "src/data/capability.ts:208"
@@ -3023,9 +2993,6 @@
   ],
   "Read next": [
     "src/components/site/NewsDetail.tsx:481"
-  ],
-  "Read the column": [
-    "src/data/feature-columns.ts:206"
   ],
   "Read the guide": [
     "src/components/site/GuideListing.tsx:15"
@@ -3916,17 +3883,11 @@
   "Twelve cylinders, on the 60, 65, 70, 80 and 90mm lengths (counted 2026-09-22). Key-and-Turn — key one side, thumbturn the other — fits the pattern beside DK, and is not confirmed.": [
     "src/data/finish-codes.ts:472"
   ],
-  "Two closers and no coordinator means the leaves close in whichever order the springs decide. If the active leaf lands first the door never latches — and an unlatched fire door is not a fire door.": [
-    "src/data/feature-columns.ts:136"
-  ],
   "Two holes, Ø{diameter}mm, at {centers}mm centers.": [
     "src/components/site/ProductDrawing.tsx:66"
   ],
   "Two locks that are visually identical can be a bathroom lock and an entrance lock. Specify a privacy set on a store room and it cannot be keyed; specify an entrance set on a bathroom and there is no way in when someone faints behind the door.": [
     "src/data/hardware-terms.ts:482"
-  ],
-  "Two numbers decide whether a case fits the door in front of you, and both are already in the model number. Our drawings show them to scale — and stop wherever the dimension stops, rather than completing an outline we cannot state.": [
-    "src/data/feature-columns.ts:174"
   ],
   "Two panic exit devices built on moulds we cut ourselves. That is the difference a specifier feels rather than reads: the bar length, the centers and the fire rating are ours to hold to, and a change to any of them is a production decision made by people who can walk to the press.": [
     "src/lib/flagship-tooling.ts:109"
@@ -4222,9 +4183,6 @@
   ],
   "White": [
     "src/data/finish-codes.ts:362"
-  ],
-  "Why a double fire door needs a coordinator": [
-    "src/data/feature-columns.ts:131"
   ],
   "Will your case fit another brand's faceplate cut-out?": [
     "src/data/category-buying-guides.ts:577"

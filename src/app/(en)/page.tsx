@@ -2,7 +2,6 @@ import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
-import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { ExportMap } from "@/components/site/ExportMap";
 import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
@@ -78,7 +77,6 @@ export default function Home() {
           page combined — and the master key system was the highest-exposure line on the
           client's own Alibaba storefront while this site said nothing about it.
         */}
-        <FeatureColumns />
         <FactoryStory />
       </div>
     </main>
