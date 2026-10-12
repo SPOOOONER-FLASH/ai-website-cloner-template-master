@@ -529,7 +529,7 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
             </ul>
 
             <Link
-              href={`${base}/contact/?${new URLSearchParams({
+              href={`${base}/contact/#${new URLSearchParams({
                 product: left[0]?.name ?? "",
                 configuration: Object.entries(answers)
                   .map(([k, v]) => `${k}: ${v}`)

@@ -18,6 +18,8 @@ import { InlineText } from "./InlineText";
 import { ArticleContents } from "./ArticleContents";
 import reading from "./ArticleReading.module.css";
 import { GuideArticleIntro } from "./GuideArticleIntro";
+import { ArticleBuyerBlock } from "./ArticleBuyerBlock";
+import { articleRoute } from "@/data/article-routes";
 import editorial from "./GuideEditorial.module.css";
 import { dict, t as tr, tx } from "@/lib/i18n";
 
@@ -174,6 +176,9 @@ export function NewsDetail({
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined)
     .filter(isPublished);
+  const route = articleRoute(section, article.slug);
+  const buyerHeading = tx(locale, "Related products", { es: "Productos relacionados", pt: "Produtos relacionados" });
+  if (related.length) contents.push({ id: "article-products", text: buyerHeading, level: 2 });
 
   return (
     <main className={section === "guides" ? "isolate mt-48 flex-grow justify-self-start lg:mt-64" : "isolate mt-48 flex-grow justify-self-start lg:mt-192"}>
@@ -418,6 +423,8 @@ export function NewsDetail({
               </section>
             ) : null}
 
+            <ArticleBuyerBlock section={section} slug={article.slug} related={related} route={route} locale={locale} />
+
             {/*
               The take-away file, immediately after the argument for taking it away.
               Styled as a specification row rather than a button: this is a working
@@ -496,13 +503,14 @@ export function NewsDetail({
 
             {attachments.length > 0 ? (
               <div className="mt-48 border-t border-line pt-24">
-                <h2 className="text-h3 text-ink">{t.pressKit}</h2>
+                <h2 className="text-h3 text-ink">{section === "guides" ? tx(locale, "Downloads", { es: "Descargas", pt: "Downloads" }) : t.pressKit}</h2>
                 <ul className="mt-16 divide-y divide-line border-y border-line">
                   {attachments.map((file) => (
                     <li key={file.id}>
                       <a
                         href={file.url}
-                        download
+                        /* An HTML sheet (the printable master-key plan) opens to print; files download. */
+                        download={file.format === "html" ? undefined : true}
                         className="group short-marker-surface flex items-baseline justify-between gap-16 py-16 text-c1 text-brand hover:text-brand-hover"
                       >
                         <span className="short-marker short-marker-group">{file.title}</span>

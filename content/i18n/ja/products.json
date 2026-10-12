@@ -389,8 +389,7 @@
       "パニックデバイス用の外側レバーハンドル",
       "鍵で施錠・解錠",
       "扉厚に合わせて角芯の長さを調整可能",
-      "複数のカラーを用意",
-      "規格：ANSI Grade 2"
+      "複数のカラーを用意"
     ],
     "specs": [
       {
@@ -420,7 +419,7 @@
       "name": "cf2c2ed4be14",
       "summary": "b3fe83104b03",
       "description": "dd29ecf524b0",
-      "features": "8c860a677839",
+      "features": "64fd779cc4d6",
       "specs": "6069b420d3d0"
     }
   },
@@ -1605,10 +1604,6 @@
       {
         "label": "Bar Length",
         "value": "900 mm（調整可能）"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1.5時間"
       }
     ],
     "seoTitle": "300 パニックデバイス、工場直販 | Canton Hyland",
@@ -1618,7 +1613,7 @@
       "summary": "461ace35ab6c",
       "description": "dd29ecf524b0",
       "features": "c95c192bd0e3",
-      "specs": "76c94a2fac22"
+      "specs": "840268dcf90e"
     }
   },
   "301-panic-exit-device": {
@@ -1951,10 +1946,6 @@
         "value": "扉厚に合わせたシリンダー長さ"
       },
       {
-        "label": "Fire Rating",
-        "value": "2.5時間耐火"
-      },
-      {
         "label": "Application",
         "value": "左右勝手に完全対応（反転可能）"
       },
@@ -1970,7 +1961,7 @@
       "summary": "bda0021bf2ca",
       "description": "dd29ecf524b0",
       "features": "15621d6f6091",
-      "specs": "22f1dd94ab65"
+      "specs": "5757abd2db4e"
     }
   },
   "308-d-d-panic-exit-device": {
@@ -2155,10 +2146,6 @@
       {
         "label": "Color Options",
         "value": "レッド、ブラック"
-      },
-      {
-        "label": "Fire Rating",
-        "value": "1.5時間"
       }
     ],
     "seoTitle": "310 パニックデバイス、900mm | Canton Hyland",
@@ -2168,7 +2155,7 @@
       "summary": "db4367da4616",
       "description": "dd29ecf524b0",
       "features": "d82d2a56acbf",
-      "specs": "f756fe07caff"
+      "specs": "bcaf52ce6801"
     }
   },
   "311-panic-exit-device": {
@@ -4827,7 +4814,6 @@
     "features": [
       "勝手：左右勝手の扉に入れ替えて使用可能",
       "セキュリティ：5ピンタンブラーの真鍮シリンダー、ニッケルめっき真鍮キー2本付き",
-      "規格：ANSI Grade 3、200,000回を超える耐久試験済み",
       "用途：住宅、集合住宅、軽商業施設の玄関扉",
       "一般住宅向けに設計された、丈夫でコストパフォーマンスに優れた円筒錠セットです。確かな性能と高い防犯性が求められる玄関扉に最適です。"
     ],
@@ -4895,7 +4881,7 @@
       "name": "523311dcb6b3",
       "summary": "39f4b538511a",
       "description": "dd29ecf524b0",
-      "features": "e4e886e78a7a",
+      "features": "68266e5de330",
       "specs": "1eb3d9d5516b"
     }
   },
@@ -16049,9 +16035,7 @@
   "black-tubular-lever-lock-set": {
     "name": "ブラックのチューブラーレバー錠セット",
     "summary": "マットブラック仕上げの角形チューブラーレバーセットです。外側レバーは鍵付きで、ラッチは調整式です。",
-    "features": [
-      "規格：ANSI Grade 3"
-    ],
+    "features": [],
     "specs": [
       {
         "label": "Backset",
@@ -16092,7 +16076,7 @@
       "name": "da618d9454e6",
       "summary": "ae7da2bc16d2",
       "description": "dd29ecf524b0",
-      "features": "a98952d7a21d",
+      "features": "97d170e1550e",
       "specs": "c02e3a3ab2fb"
     }
   },

@@ -13,6 +13,7 @@ import { EmailLink } from "./EmailLink";
 import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
 import { dict } from "@/lib/i18n-client";
+import { inquiryPrefill } from "@/lib/inquiry-prefill";
 
 /** Where a failed enquiry goes instead. The orders desk, not the technical one. */
 const INQUIRY_ADDRESS = siteSettings.contact.email;
@@ -129,6 +130,8 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const searchParams = useSearchParams();
   const [product, setProduct] = useState(() => queryValue(searchParams, "product"));
   const [model, setModel] = useState(() => queryValue(searchParams, "model"));
+  /* The article a quote link came from (`#from=guides/…`), sent with the lead so the export team sees which guide sold it. */
+  const [sourceArticle, setSourceArticle] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [statusMessage, setStatusMessage] = useState("");
   /** The typed enquiry, kept so a failed send can still be posted as an email. */
@@ -144,8 +147,11 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   }, [returnToForm, status]);
 
   useEffect(() => {
-    setProduct(queryValue(searchParams, "product"));
-    setModel(queryValue(searchParams, "model"));
+    /* Quote links carry their values in the fragment since 2026-10-12 (src/lib/inquiry-prefill.ts); the query still wins. */
+    const prefill = inquiryPrefill(window.location.search, window.location.hash);
+    setProduct(prefill.product);
+    setModel(prefill.model);
+    setSourceArticle(prefill.from);
   }, [searchParams]);
 
   /**
@@ -223,6 +229,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       /* the sessionStorage getter itself throws when storage is blocked */
     }
     if (firstTouch) payload.set("first_touch", firstTouch);
+    if (sourceArticle) payload.set("source_article", sourceArticle);
 
     try {
       await submitInquiry(payload);

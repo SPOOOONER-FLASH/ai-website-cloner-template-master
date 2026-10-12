@@ -161,7 +161,7 @@ export default async function VideoWatchPage({ params }: Props) {
               Specifications and finishes
             </Link>
             <Link
-              href={`/contact/?${quote.toString()}`}
+              href={`/contact/#${quote.toString()}`}
               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
             >
               Request a quote

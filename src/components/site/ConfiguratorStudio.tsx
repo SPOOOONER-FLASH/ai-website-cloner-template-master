@@ -183,7 +183,7 @@ export function ConfiguratorStudio({ data, labels, base = "" }: { data: StudioDa
 
   const rangeFamilies = families.filter((f) => f.categoryPath[0] === family.categoryPath[0]);
   const productHref = `${base}/products/${family.categoryPath[0]}/${member.slug}/`;
-  const quoteHref = `${base}/contact/?${new URLSearchParams({ model: member.model }).toString()}`;
+  const quoteHref = `${base}/contact/#${new URLSearchParams({ model: member.model }).toString()}`;
 
   const incoming = member;
   const outgoing = previous && previous !== slug ? bySlug.get(previous)?.member : undefined;
