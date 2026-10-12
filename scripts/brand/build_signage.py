@@ -76,6 +76,15 @@ def reception_wall(p, r, k):
     cjk(p, cx, r.y0 + 0.79 * r.height + 1.5 * size, CN_NAME, 0.45 * size, bold=False, color=GREY, align="center")
 
 
+def fit(t, size, room, key="display-semibold", track=0):
+    """`size`, or smaller if `t` would not fit in `room` (tracking in 1/1000 em)."""
+    return min(size, room / (kit.font(key).text_length(t, 1) + track / 1000 * (len(t) - 1)))
+
+
+# Every sign below: English is the large line, Chinese a small grey line under it. The
+# visitors are foreign buyers (client 2026-10-12: 「所有指示 广告 中文和英文大小调换 中文小英文大」).
+
+
 def welcome_banner(p, r, k):
     p.draw_rect(r, color=None, fill=WHITE, width=0)
     h = r.height
@@ -85,12 +94,10 @@ def welcome_banner(p, r, k):
         p.draw_rect(logo, color=(0.95, 0.6, 0.1), width=max(0.5, 3 * k), dashes="[4 3] 0")
     left, right = logo.x1 + 0.03 * r.width, r.x1 - 0.22 * r.width   # between the fair logo and HYDE
     cx = (left + right) / 2
-    head = "热烈欢迎第140届广交会客商莅临参观"
-    size = min(0.25 * h, (right - left) / kit.font("cjk-bold").text_length(head, 1))
-    cjk(p, cx, r.y0 + 0.5 * h, head, size, color=INK, align="center")
-    sub = "WELCOME, 140TH CANTON FAIR BUYERS"
-    sub_size = min(0.1 * h, (right - left) / (kit.font("display-semibold").text_length(sub, 1) + 0.12 * (len(sub) - 1)))
-    text(p, cx, r.y0 + 0.76 * h, sub, sub_size, "display-semibold", GREY, align="center", track=120)
+    head = "WELCOME, 140TH CANTON FAIR BUYERS"
+    size = fit(head, 0.2 * h, right - left, track=40)
+    text(p, cx, r.y0 + 0.52 * h, head, size, "display-semibold", INK, align="center", track=40)
+    cjk(p, cx, r.y0 + 0.52 * h + 0.22 * h, "热烈欢迎第140届广交会客商莅临参观", 0.09 * h, bold=False, color=GREY, align="center")
     mr = pymupdf.Rect(r.x1 - 0.19 * r.width, r.y0 + 0.3 * h, r.x1 - 0.03 * r.width, r.y1 - 0.3 * h)
     place_mark(p, mr, hm.horizontal(), hm.INK)
     p.draw_line((r.x0, r.y1 - 0.06 * h), (r.x1, r.y1 - 0.06 * h), color=INK, width=max(0.6, 8 * k))
@@ -100,20 +107,21 @@ def route_board(p, r, k):
     p.draw_rect(r, color=None, fill=WHITE, width=0)
     w, h = r.width, r.height
     place_mark(p, pymupdf.Rect(r.x0 + 0.08 * w, r.y0 + 0.05 * h, r.x0 + 0.6 * w, r.y0 + 0.11 * h), hm.horizontal(), hm.INK)
-    cjk(p, r.x0 + 0.08 * w, r.y0 + 0.2 * h, "参观路线", 0.055 * h, color=INK)
-    text(p, r.x0 + 0.08 * w, r.y0 + 0.235 * h, "FACTORY TOUR", 0.022 * h, "display-semibold", GREY, track=160)
+    text(p, r.x0 + 0.08 * w, r.y0 + 0.2 * h, "FACTORY TOUR", 0.05 * h, "display-semibold", INK)
+    cjk(p, r.x0 + 0.08 * w, r.y0 + 0.235 * h, "参观路线", 0.02 * h, bold=False, color=GREY)
     top, bottom = r.y0 + 0.3 * h, r.y1 - 0.08 * h
     step = (bottom - top) / (len(ZONES) - 1)
     lx = r.x0 + 0.13 * w
     p.draw_line((lx, top), (lx, bottom), color=INK, width=max(0.6, 6 * k))
+    room = r.x1 - 0.08 * w - (lx + 0.07 * w)
     for i, (cn, en) in enumerate(ZONES):
         y = top + i * step
         p.draw_circle((lx, y), 0.028 * h, color=None, fill=INK)
         text(p, lx, y + 0.012 * h, str(i + 1), 0.032 * h, "bold", WHITE, align="center")
-        cjk(p, lx + 0.07 * w, y + 0.006 * h, cn, 0.034 * h, color=INK)
-        text(p, lx + 0.07 * w, y + 0.035 * h, en.upper(), 0.016 * h, "medium", GREY, track=120)
-    cjk(p, r.x1 - 0.08 * w, top + 0.01 * h, "您在这里", 0.022 * h, color=INK, align="right")
-    text(p, r.x1 - 0.08 * w, top + 0.035 * h, "YOU ARE HERE", 0.013 * h, "medium", INK, align="right", track=120)
+        text(p, lx + 0.07 * w, y + 0.01 * h, en.upper(), fit(en.upper(), 0.03 * h, room, "semibold"), "semibold", INK)
+        cjk(p, lx + 0.07 * w, y + 0.036 * h, cn, 0.016 * h, bold=False, color=GREY)
+    text(p, r.x1 - 0.08 * w, top + 0.01 * h, "YOU ARE HERE", 0.02 * h, "semibold", INK, align="right")
+    cjk(p, r.x1 - 0.08 * w, top + 0.033 * h, "您在这里", 0.013 * h, bold=False, color=GREY, align="right")
 
 
 def zone_plate(i: int) -> Callable:
@@ -123,8 +131,9 @@ def zone_plate(i: int) -> Callable:
         p.draw_rect(r, color=None, fill=WHITE, width=0)
         w, h = r.width, r.height
         text(p, r.x0 + 0.08 * w, r.y0 + 0.5 * h, f"{i + 1:02d}", 0.4 * h, "display-semibold", INK)
-        cjk(p, r.x0 + 0.08 * w, r.y0 + 0.73 * h, cn, 0.13 * h, color=INK)
-        text(p, r.x0 + 0.08 * w, r.y0 + 0.86 * h, en.upper(), 0.06 * h, "medium", GREY, track=140)
+        t = en.upper()
+        text(p, r.x0 + 0.08 * w, r.y0 + 0.72 * h, t, fit(t, 0.12 * h, 0.84 * w), "display-semibold", INK)
+        cjk(p, r.x0 + 0.08 * w, r.y0 + 0.86 * h, cn, 0.065 * h, bold=False, color=GREY)
         place_mark(p, pymupdf.Rect(r.x1 - 0.2 * w, r.y0 + 0.1 * h, r.x1 - 0.08 * w, r.y0 + 0.28 * h), hm.icon(), hm.INK)
     return draw
 
@@ -132,8 +141,9 @@ def zone_plate(i: int) -> Callable:
 def arrow_plate(p, r, k):
     p.draw_rect(r, color=None, fill=WHITE, width=0)
     w, h = r.width, r.height
-    cjk(p, r.x0 + 0.06 * w, r.y0 + 0.5 * h, "下一站  02  冲压车间", 0.24 * h, color=INK)
-    text(p, r.x0 + 0.06 * w, r.y0 + 0.78 * h, "NEXT  02  STAMPING", 0.13 * h, "medium", INK, track=140)
+    t = "NEXT  02  STAMPING"
+    text(p, r.x0 + 0.06 * w, r.y0 + 0.52 * h, t, fit(t, 0.26 * h, 0.66 * w), "display-semibold", INK)
+    cjk(p, r.x0 + 0.06 * w, r.y0 + 0.8 * h, "下一站  02  冲压车间", 0.12 * h, bold=False, color=GREY)
     ax, ay = r.x1 - 0.16 * w, r.y0 + 0.5 * h
     s = 0.22 * h
     pts = [(ax - s, ay - s * 0.18), (ax + s * 0.2, ay - s * 0.18), (ax + s * 0.2, ay - s * 0.6),
