@@ -21,7 +21,7 @@
 
 ```bash
 node scripts/argentina/crawl-candex.mjs                  # 抓取 → tmp/claude-argentina/raw/
-node scripts/argentina/retouch-stamps.mjs                # 按 tmp/claude-argentina/stamps/*.json 去品牌字
+node scripts/argentina/retouch-stamps.mjs                # 按 scripts/argentina/stamps/*.json 去品牌字（51 份，逐张复核通过）
 node scripts/argentina/prepare-collection-images.mjs     # 方形白底 / Elabora 取图纸
 node scripts/watermark-product-images.mjs --all --input-root=../claude-argentina/webp \
   --output-root=../claude-argentina/branded --manifest=../claude-argentina/branded/manifest.json
@@ -30,6 +30,10 @@ node scripts/argentina/build-collection.mjs              # → src/data/generate
 
 ## 未决
 
-- **AR4-101 是否等于 Elabora 111（7240）？** 7240 的面板 220×25、中心距 72、锁体高 140，和 Elabora **111** 一致；Elabora 的 101 是 183×18 的窄面板。在客户确认之前，集合里的 AR4-101（183×18）与现有产品页 AR4-101（220×25）互相矛盾。
+- ~~AR4-101 是否等于 Elabora 111（7240）？~~ **已定（10-12）**：7240 改名 AR4-111（安全锁），见 `agent-updates/2026-10-12-claude-ar4-111-rename.md`。集合里的 AR4-101 专指 Elabora 101（183 × 18）。
 - AR4-140 面板：工厂图 183.5，Elabora 公布 190。
 - 7240 锁体宽度：Elabora 111 标 64 mm，JM-LOCK 询价 65 mm，待工厂实测。
+
+## 进度
+
+- 10-12：51 张图去品牌字完成，每张经独立复核通过（只改方框内像素；面板上的模具号数字保留，非品牌）。重新打 HYDE 水印、重建集合数据。页面仍 `OFFLINE`，等甲方看过对比图后放开。
