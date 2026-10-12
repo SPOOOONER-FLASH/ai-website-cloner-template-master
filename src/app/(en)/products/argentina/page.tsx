@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "HYDE Argentina Collection — Mortise Locks and Deadlocks",
   description:
-    "Mortise locks, deadlocks and narrow-stile locks made on HYDE moulds for Argentine distributors, with faceplate and case dimensions for every model.",
+    "Mortise locks, deadlocks and narrow-stile locks made on HYDE molds for Argentine distributors, with faceplate and case dimensions for every model.",
 });
 
 export default function ArgentinaCollectionPage() {

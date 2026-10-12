@@ -4,32 +4,32 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 
 /*
   The Argentina collection (client 2026-10-10: 「阿根廷产品大集合」): every model HYDE makes on
-  its own moulds for its Argentine OEM customers, built by scripts/argentina/build-collection.mjs.
+  its own molds for its Argentine OEM customers, built by scripts/argentina/build-collection.mjs.
   Specification rows only — a stated dimension beats a paragraph, and a value the source does
   not state is left out rather than filled in.
 */
 type Item = (typeof collection)[number];
 type Lang = "en" | "es";
 
-const GROUPS = ["mortise", "aluminium", "deadlock", "sliding"] as const;
+const GROUPS = ["mortise", "aluminum", "deadlock", "sliding"] as const;
 
 const copy = {
   en: {
     eyebrow: "Argentina market",
     title: "HYDE Argentina Collection",
     body: (n: number) =>
-      `${n} mortise locks, deadlocks and narrow-stile locks made on HYDE moulds for Argentine distributors. Dimensions as published; drawings and samples on request.`,
+      `${n} mortise locks, deadlocks and narrow-stile locks made on HYDE molds for Argentine distributors. Dimensions as published; drawings and samples on request.`,
     ar4: "The AR-4 selection",
     contact: "Ask for drawings and samples",
     contactHref: "/contact/",
     ar4Href: "/products/argentina-ar4/",
     groups: {
       mortise: "Mortise locks",
-      aluminium: "Aluminium doors and narrow stiles",
+      aluminum: "Aluminum doors and narrow stiles",
       deadlock: "Deadlocks and bolts",
       sliding: "Sliding doors and roller shutters",
     },
-    specs: { faceplate: "Faceplate", case: "Case", levers: "Levers", sheet: "Case sheet", bolt: "Bolt", centres: "Centre distance" },
+    specs: { faceplate: "Faceplate", case: "Case", levers: "Levers", sheet: "Case sheet", bolt: "Bolt", centers: "Center distance" },
     material: { hierro: "iron", bronce: "brass" } as Record<string, string>,
     shape: { rectangular: "rectangular", redondo: "round", largo: "long", corto: "short" } as Record<string, string>,
     drawing: "Dimension drawing",
@@ -45,11 +45,11 @@ const copy = {
     ar4Href: "/es/products/argentina-ar4/",
     groups: {
       mortise: "Cerraduras de embutir",
-      aluminium: "Aberturas de aluminio y batientes angostos",
+      aluminum: "Aberturas de aluminio y batientes angostos",
       deadlock: "Cerrojos y pasadores",
       sliding: "Corredizas y cortinas metálicas",
     },
-    specs: { faceplate: "Frente", case: "Caja", levers: "Placas", sheet: "Chapa", bolt: "Pasador", centres: "Distancia entre ejes" },
+    specs: { faceplate: "Frente", case: "Caja", levers: "Placas", sheet: "Chapa", bolt: "Pasador", centers: "Distancia entre ejes" },
     material: { hierro: "hierro", bronce: "bronce" } as Record<string, string>,
     shape: { rectangular: "rectangular", redondo: "redondo", largo: "largo", corto: "corto" } as Record<string, string>,
     drawing: "Plano con medidas",
@@ -64,8 +64,8 @@ const ELABORA_NAMES: Record<string, { en: string; es: string }> = {
   "111-doble-perno": { en: "Security mortise lock, double bolt", es: "Cerradura de seguridad, doble perno" },
   "101": { en: "Standard mortise lock", es: "Cerradura común" },
   "102": { en: "Standard mortise lock", es: "Cerradura común" },
-  "140": { en: "Aluminium-door mortise lock", es: "Cerradura para aberturas de aluminio" },
-  "1140": { en: "Aluminium-door mortise lock", es: "Cerradura para aberturas de aluminio" },
+  "140": { en: "Aluminum-door mortise lock", es: "Cerradura para aberturas de aluminio" },
+  "1140": { en: "Aluminum-door mortise lock", es: "Cerradura para aberturas de aluminio" },
   "1121": { en: "Hook deadlock", es: "Cerrojo de gancho" },
   "1122": { en: "Deadlock, round bolts", es: "Cerrojo de pernos redondos" },
 };

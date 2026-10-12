@@ -171,6 +171,8 @@ export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<st
   ["/bau-2027", ["en", "de"]],
   /* The privacy notice (2026-09-28): German because the BAU form collects data from German visitors. */
   ["/privacy", ["en", "de"]],
+  /* The Argentina collection (2026-10-11): written for Argentine distributors, so English and Spanish. */
+  ["/products/argentina", ["en", "es"]],
 ]);
 
 /** The locales a partial route exists in, or null for an ordinary path. */
