@@ -339,9 +339,6 @@
   "About us": [
     "src/components/site/menu-experience.ts:294"
   ],
-  "Abstract architectural light study with glass and metal surfaces": [
-    "src/data/home.ts:243"
-  ],
   "Additional product views are not yet available. Request drawings or samples from our export team.": [
     "src/components/site/ProductDetail.tsx:91"
   ],
@@ -404,9 +401,6 @@
   ],
   "Answer what you know": [
     "src/components/site/ConfiguratorIntro.tsx:39"
-  ],
-  "Answers on installation, finishes, standards and lead times": [
-    "src/data/home.ts:225"
   ],
   "Antique Brass": [
     "src/data/finish-codes.ts:123"
@@ -579,9 +573,6 @@
     "src/data/finish-codes.ts:308",
     "src/data/finish-codes.ts:341"
   ],
-  "Black door hinge with staggered fixing holes on a light background": [
-    "src/data/home.ts:222"
-  ],
   "Black Nickel": [
     "src/data/finish-codes.ts:183",
     "src/data/finish-codes.ts:264"
@@ -630,8 +621,7 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Browse the catalog": [
-    "src/components/locale-pages/FaqPage.tsx:39",
-    "src/data/home.ts:181"
+    "src/components/locale-pages/FaqPage.tsx:39"
   ],
   "Build a hardware schedule with our export engineers": [
     "src/data/home.ts:120"
@@ -915,12 +905,6 @@
   "Come and see the factory, or send us a drawing": [
     "src/components/site/CompanyOverview.tsx:39"
   ],
-  "Commercial escape-route architecture with paired doors and a quiet corridor": [
-    "src/data/home.ts:131"
-  ],
-  "Commercial Fire Egress": [
-    "src/data/home.ts:155"
-  ],
   "Commercial project": [
     "src/components/site/InquiryForm.tsx:36"
   ],
@@ -1014,8 +998,7 @@
   ],
   "Contact us": [
     "src/components/site/NewsDetail.tsx:47",
-    "src/components/site/NewsListing.tsx:23",
-    "src/data/home.ts:234"
+    "src/components/site/NewsListing.tsx:23"
   ],
   "Contemporary architectural threshold in Buenos Aires": [
     "src/data/home.ts:63"
@@ -1098,9 +1081,6 @@
   ],
   "Describe the door. {n} questions find the part.": [
     "src/components/site/ConfiguratorTeaser.tsx:39"
-  ],
-  "Designed for": [
-    "src/data/home.ts:179"
   ],
   "Devices for openings that must hold a fire back and still let people out.": [
     "src/lib/configurator.ts:459"
@@ -1414,9 +1394,6 @@
   "Engineered by Canton Hyland": [
     "src/components/site/products-architecture.ts:188"
   ],
-  "Engineering for Export": [
-    "src/data/home.ts:232"
-  ],
   "Enlarge image of": [
     "src/components/site/ProductStudies.tsx:48"
   ],
@@ -1661,14 +1638,8 @@
   "Finish codes. A model number is three facts, not one name.": [
     "src/components/locale-pages/FinishesPage.tsx:31"
   ],
-  "Finish selection, master-key systems and specification detail for each market.": [
-    "src/data/home.ts:233"
-  ],
   "Finish with evidence, then talk to the factory.": [
     "src/components/site/products-architecture.ts:198"
-  ],
-  "Finishes matched across a whole door schedule, master-key systems planned before the first cylinder is cut, and export documents ready when the container is.": [
-    "src/data/home.ts:193"
   ],
   "Finishing": [
     "src/data/capability.ts:118"
@@ -1738,9 +1709,6 @@
   ],
   "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries. Models AR4-110, AR4-140, AR4-111 and AR4-1121.": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:18"
-  ],
-  "Four-bolt mortise lock case with strike plate and strike box": [
-    "src/data/home.ts:190"
   ],
   "Frequently asked questions": [
     "src/components/locale-pages/FaqPage.tsx:13",
@@ -1874,9 +1842,6 @@
   "Hardware in Focus — Product Photographs and Selections": [
     "src/components/locale-pages/SimplePages.tsx:41"
   ],
-  "Hardware Specification": [
-    "src/data/home.ts:245"
-  ],
   "Hardware you can stand behind.": [
     "src/components/site/WelcomeIntro.tsx:20"
   ],
@@ -1929,9 +1894,6 @@
   ],
   "Hook locks for sliding doors, where a straight bolt cannot travel out of the edge: the hook swings from the case into the keep. The {count} models here are zinc alloy, made for pocket doors and sliding partitions, and are supplied to distributors and door manufacturers.": [
     "src/data/category-buying-guides.ts:616"
-  ],
-  "Hospitality + Residential": [
-    "src/data/home.ts:165"
   ],
   "How a set of locks relates to a set of keys. Keyed different: every lock its own key. Keyed alike: one key opens a group. Master keyed: each lock has its own key and one key above opens them all.": [
     "src/data/hardware-terms.ts:455"
@@ -1986,9 +1948,6 @@
   ],
   "How we tool a part for your market": [
     "src/components/site/ServicesView.tsx:99"
-  ],
-  "How we work": [
-    "src/data/home.ts:194"
   ],
   "HYDE Argentina AR-4": [
     "src/components/site/ArgentinaAr4Showcase.tsx:27",
@@ -2291,9 +2250,6 @@
   "Materials & finishes": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
-  "Materials + Engineering": [
-    "src/data/home.ts:192"
-  ],
   "Materials on the records are {materials}; sheet thickness is stated per model where it matters for load, such as shelves and grab rails. Every visible face is polished before finishing.": [
     "src/data/category-buying-guides.ts:257"
   ],
@@ -2485,9 +2441,6 @@
   ],
   "New tooling to your design": [
     "src/components/site/ServicesView.tsx:61"
-  ],
-  "New tooling to your drawing or sample, and your name on the part. If a design you bring us is covered by someone else's patent, our engineers rework the parts or the appearance until it no longer conflicts with that patent.": [
-    "src/data/home.ts:201"
   ],
   "News": [
     "src/components/site/AuthorProfile.tsx:29",
@@ -2762,9 +2715,6 @@
   "Orders, pricing and samples": [
     "src/components/locale-pages/ContactPage.tsx:23"
   ],
-  "Original catalog photograph of door-control hardware": [
-    "src/data/home.ts:212"
-  ],
   "Original catalog photograph of the LC14 lock case with its faceplate and bolts": [
     "src/components/site/products-architecture.ts:143"
   ],
@@ -2783,17 +2733,11 @@
   "Our entry in the official BAU 2027 exhibitor directory": [
     "src/data/bau-2027.ts:71"
   ],
-  "Our flagship range, and the one we know best: push bars for escape and fire doors, from single-point rim devices to multi-point sets for double doors.": [
-    "src/data/home.ts:135"
-  ],
   "Our links to YouTube, Instagram, Facebook, Pinterest, Tumblr and our Alibaba storefront are plain links. Nothing is sent to those platforms until you click one; after that, their own privacy policies apply.": [
     "src/data/privacy-policy.ts:119"
   ],
   "Our lock cylinders": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:73"
-  ],
-  "Our panic devices, lock cases and lever sets are fitted in commercial, institutional and residential buildings in the markets we export to, often under our customers' own names, with master-key and construction-key systems planned for each building.": [
-    "src/data/home.ts:142"
   ],
   "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.": [
     "src/components/site/CompanyOverview.tsx:29"
@@ -2820,8 +2764,7 @@
     "src/components/site/CylinderCalculator.tsx:73"
   ],
   "Overview": [
-    "src/components/site/NewsDetail.tsx:156",
-    "src/data/home.ts:143"
+    "src/components/site/NewsDetail.tsx:156"
   ],
   "Packing + export": [
     "src/data/capability.ts:180"
@@ -2836,8 +2779,7 @@
     "src/lib/home-families.ts:35"
   ],
   "Panic Exit Devices": [
-    "src/data/home.ts:53",
-    "src/data/home.ts:133"
+    "src/data/home.ts:53"
   ],
   "Panic Exit Devices, Locks and Door Hardware": [
     "src/components/site/WelcomeIntro.tsx:15"
@@ -3100,9 +3042,6 @@
   "ready to quote, with backset, center distance, finish and handing.": [
     "src/components/site/ConfiguratorTeaser.tsx:44"
   ],
-  "Real catalog photographs presenting selected door hardware": [
-    "src/data/home.ts:177"
-  ],
   "Records carrying the code also carry “Matte Black” and “Matt Black” as the written value.": [
     "src/data/finish-codes.ts:208"
   ],
@@ -3139,20 +3078,11 @@
   "Representative architectural entrance combining glass, metal and coordinated door hardware": [
     "src/components/site/ServicesView.tsx:46"
   ],
-  "Representative commercial egress application study with paired fire-exit doors": [
-    "src/data/home.ts:153"
-  ],
   "Representative contacts": [
     "src/components/locale-pages/ContactPage.tsx:119"
   ],
   "Representative door hardware packages for international projects: panic exit devices, mortise locks, lever handles and hinges by building type.": [
     "src/components/locale-pages/ProjectPages.tsx:17"
-  ],
-  "Representative hardware application study for code-conscious circulation": [
-    "src/data/home.ts:156"
-  ],
-  "Representative hospitality and residential door-hardware application study": [
-    "src/data/home.ts:163"
   ],
   "Request a quote": [
     "src/components/site/ProductDetail.tsx:77"
@@ -3268,9 +3198,6 @@
   "See how coordinated hardware meets the opening.": [
     "src/components/site/menu-experience.ts:311"
   ],
-  "See the exit devices": [
-    "src/data/home.ts:136"
-  ],
   "See the full panic exit range": [
     "src/lib/flagship-tooling.ts:110"
   ],
@@ -3286,17 +3213,11 @@
   "See what each choice decides": [
     "src/components/site/ConfiguratorIntro.tsx:40"
   ],
-  "See what we develop": [
-    "src/data/home.ts:202"
-  ],
   "Select one": [
     "src/components/site/InquiryForm.tsx:34"
   ],
   "Selected from ninety days of inquiries on our own Alibaba storefront rather than from a shortlist we drew up ourselves — the two do not agree, which is the point of looking.": [
     "src/data/demand-showcase.ts:100"
-  ],
-  "Selected hardware, one coordinated schedule": [
-    "src/data/home.ts:180"
   ],
   "Selection and specification": [
     "src/components/site/products-architecture.ts:191"
@@ -3340,9 +3261,6 @@
   "Send the three measurements": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:74"
   ],
-  "Send us your hardware requirements": [
-    "src/data/home.ts:214"
-  ],
   "Send your brief": [
     "src/components/site/ServicesView.tsx:56"
   ],
@@ -3373,8 +3291,7 @@
   ],
   "Service + Downloads": [
     "src/components/locale-pages/DownloadsPage.tsx:16",
-    "src/components/locale-pages/DownloadsPage.tsx:41",
-    "src/data/home.ts:199"
+    "src/components/locale-pages/DownloadsPage.tsx:41"
   ],
   "Services": [
     "src/components/site/menu-experience.ts:283",
@@ -3492,9 +3409,6 @@
   "Specify and source": [
     "src/components/site/products-architecture.ts:197"
   ],
-  "Specify with confidence": [
-    "src/data/home.ts:224"
-  ],
   "Specify your door configuration": [
     "src/components/site/ProductStudies.tsx:56"
   ],
@@ -3608,9 +3522,6 @@
   ],
   "Talk to an export engineer about a specification, a sample or a quotation. Include door type, finish, applicable standard, quantity and destination market.": [
     "src/components/locale-pages/ContactPage.tsx:16"
-  ],
-  "Talk to export": [
-    "src/data/home.ts:246"
   ],
   "Talk to the people who make it": [
     "src/components/site/CompanyOverview.tsx:40"
@@ -4101,9 +4012,6 @@
   "Visit our Alibaba storefront": [
     "src/components/locale-pages/ContactPage.tsx:99"
   ],
-  "Warm entry and corridor studies for coordinated door packages": [
-    "src/data/home.ts:166"
-  ],
   "Warm timber and limestone residential threshold opening to a planted courtyard": [
     "src/data/home.ts:29"
   ],
@@ -4151,9 +4059,6 @@
   ],
   "We publish the facts of each one — laboratory, reference number, issue date and the specific model covered — and send the document itself through the proper route when a specification needs it. The scope line matters more than the headline, and we would rather you read it before you rely on it.": [
     "src/components/site/DocumentInventory.tsx:99"
-  ],
-  "We'll match your project with the right export engineer": [
-    "src/data/home.ts:215"
   ],
   "Website inquiry": [
     "src/components/site/InquiryForm.tsx:53"
@@ -4278,9 +4183,6 @@
   ],
   "Where is the {m} used?": [
     "src/lib/product-faq.ts:162"
-  ],
-  "Where our hardware is fitted": [
-    "src/data/home.ts:141"
   ],
   "Where the products are used, how to specify them, and what buyers ask.": [
     "src/components/site/SiteHeader.tsx:541"

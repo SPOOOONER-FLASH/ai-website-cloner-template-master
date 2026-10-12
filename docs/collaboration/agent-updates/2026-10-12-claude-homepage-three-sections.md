@@ -47,3 +47,10 @@
 - `src/data/home*.ts` 里 hero2–hero5、text1–text3、teaser2–3 的数据对象还留着，没有引用了。要彻底清理，另开一项做，因为 i18n 提取和测试还会扫到它们。
 - `home-accent.test.ts`：按甲方决定把锁定值改成 homeAccent 1 个、homeEditorial 0 个，在同一个提交里。
 - 检查：npm test 462/462 通过，typecheck、i18n-lint、motion:check 都通过；开发服务器截图看过工厂故事第 1 步和页面底部。
+
+## 10-12 第三轮：清理撤下模块的数据（#50）
+
+- `src/data/home.ts`、`home-es.ts`、`home-pt.ts` 删掉了 hero2–hero5、text1–3、teaser2–3 这几个导出，七语首页通过 `home-locale` 读的是同一份英文数据；`ui-keys.json` 跟着重新生成。七语 `ui.json` 里这些旧句子的译文还留着，不影响页面，i18n-lint 照样通过。
+- `home-editorial-assets.test.ts`：首页资产锁定改成剩下的两张（teaser1 的拉手套装和锁芯）；西语 FAQ 卡片随 teaser3 一起撤了，测试改成只断言西语首页没有指向英文 /faq 的链接。
+- 图片文件一张没删。
+- 检查：npm test 462/462 通过，typecheck、i18n-lint 都通过，eslint 对这三个文件零警告。
