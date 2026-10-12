@@ -100,7 +100,7 @@ export function FactoryStory({ locale = "en" }: { locale?: Locale }) {
             <p className="mt-16 text-c1 text-surface/70">{text.body}</p>
           </div>
           {text.steps.map((step, k) => (
-            <article key={step.title} className={styles.step} data-step={k}>
+            <article key={step.title} className={styles.step}>
               {/* eslint-disable-next-line @next/next/no-img-element -- responsive editorial props, as MediaPlaceholder renders them */}
               <img
                 {...getResponsiveEditorialImageProps(STEP_IMAGES[k], "100vw")}
@@ -109,11 +109,15 @@ export function FactoryStory({ locale = "en" }: { locale?: Locale }) {
                 decoding="async"
                 className={`${styles.stepShot} mb-24 aspect-[3/2] w-full object-cover`}
               />
-              <p className="text-c2 font-semibold tabular-nums text-surface/60">
-                {pad(k + 1)} / {pad(text.steps.length)}
-              </p>
-              <h3 className="mt-12 text-h2">{step.title}</h3>
-              <p className="mt-12 max-w-[34em] text-c1 text-surface/70">{step.text}</p>
+              {/* The photograph switches when THIS block reaches mid-screen (StoryStage), not when the
+                  tall article does — that made the picture change while its text was still low. */}
+              <div data-step={k}>
+                <p className="text-c2 font-semibold tabular-nums text-surface/60">
+                  {pad(k + 1)} / {pad(text.steps.length)}
+                </p>
+                <h3 className="mt-12 text-h2">{step.title}</h3>
+                <p className="mt-12 max-w-[34em] text-c1 text-surface/70">{step.text}</p>
+              </div>
             </article>
           ))}
         </div>

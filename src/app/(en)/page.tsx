@@ -11,7 +11,6 @@ import { HandleStoryShowcase } from "@/components/site/HandleStoryShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { Spacer } from "@/components/site/Spacer";
-import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home";
 
 /**
@@ -46,8 +45,11 @@ export default function Home() {
       </div>
 
       <div className="modules">
+        {/* Client 2026-10-12: the export map follows the facts strip directly (「地图挪到数据后面」),
+           which moves the recommended shelf of 2026-09-14 to second place. */}
+        <ExportMap />
         {/*
-          FIRST MODULE AFTER THE FACTS STRIP, by the client's instruction of 2026-09-14:
+          FIRST MODULE AFTER THE FACTS STRIP from 2026-09-14 to 2026-10-12, now right after the map:
           a visitor should meet the recommended shelf before anything else.
 
           It reads well there for a reason beyond placement. The strip above states what
@@ -64,11 +66,7 @@ export default function Home() {
         <FamilyIndex />
         <Spacer heights={content.spacers.s96} />
 
-        <BauShowcase />
-        <Spacer heights={content.spacers.s96} />
-        {/* Restore the original AR4 photography below the BAU invitation. */}
         <ArgentinaAr4Showcase />
-        <ExportMap />
 
         {/*
           Buyer resources follow the market collection: a specifier arrives holding a

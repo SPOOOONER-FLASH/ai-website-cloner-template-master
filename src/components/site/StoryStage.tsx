@@ -18,7 +18,7 @@ export function StoryStage() {
       (entries) => {
         for (const e of entries) if (e.isIntersecting) stage.dataset.active = (e.target as HTMLElement).dataset.step;
       },
-      { rootMargin: "-50% 0px -50% 0px" },
+      { rootMargin: "-45% 0px -45% 0px" },
     );
     steps.forEach((s) => io.observe(s));
     return () => io.disconnect();
