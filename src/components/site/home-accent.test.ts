@@ -34,11 +34,11 @@ test("homepage accent surfaces are visually neutral until hover or keyboard focu
 
 test("homepage interaction hierarchy separates cards from editorial modules", () => {
   for (const page of [read("src", "app", "(en)", "page.tsx"), read("src", "app", "es", "page.tsx")]) {
-    assert.equal(page.match(/homeAccent/g)?.length, 3);
-    assert.equal(page.match(/homeEditorial/g)?.length, 4);
+    /* Client 2026-10-12 (「这都不要了」): teaser2, teaser3 and the four editorial heroes below
+       the factory story were retired; only the first teaser keeps the accent surface. */
+    assert.equal(page.match(/homeAccent/g)?.length, 1);
+    assert.equal(page.match(/homeEditorial/g)?.length ?? 0, 0);
     assert.match(page, /<PageTeaserModule content=\{content\.teaser1\} homeAccent \/>/);
-    assert.match(page, /<PageTeaserModule content=\{content\.teaser2\} homeAccent \/>/);
-    assert.match(page, /<PageTeaserModule content=\{content\.teaser3\} homeAccent \/>/);
     assert.doesNotMatch(page, /<WelcomeIntro[^>]*homeAccent/);
     assert.doesNotMatch(page, /<TextModule[^>]*homeAccent/);
     assert.doesNotMatch(page, /<HeroModule[^>]*homeAccent/);

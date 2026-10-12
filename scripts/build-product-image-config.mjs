@@ -84,6 +84,17 @@ function homepageModels() {
   );
   for (const member of studioShowcase(hyde)?.members ?? []) models.add(member.model);
 
+  /*
+    FamilyIndex (2026-10-12) — one lead product per family, by slug in src/lib/home-families.ts.
+    That module imports path aliases, so its `lead:` slugs are read as text.
+  */
+  const families = readFileSync("src/lib/home-families.ts", "utf8");
+  for (const [, slug] of families.matchAll(/lead:\s*"([^"]+)"/g)) {
+    const product = products.find((p) => p.slug === slug);
+    if (!product) throw new Error(`home-families lead ${slug} has no product record`);
+    models.add(String(product.model));
+  }
+
   return models;
 }
 

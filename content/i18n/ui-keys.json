@@ -246,7 +246,10 @@
     "src/data/home.ts:117"
   ],
   "A factory, not a trading office.": [
-    "src/components/site/FactoryStory.tsx:30"
+    "src/components/site/FactoryStory.tsx:31"
+  ],
+  "A fiber laser cutter on our shop floor cuts the steel plate that becomes lock cases and backplates.": [
+    "src/components/site/FactoryStory.tsx:34"
   ],
   "A finish code is more than a color. Explore the published codes and the differences that matter when specifying hardware.": [
     "src/components/site/GuideListing.tsx:17"
@@ -496,7 +499,7 @@
     "src/data/capability.ts:141"
   ],
   "Assembly and inspection": [
-    "src/components/site/FactoryStory.tsx:35"
+    "src/components/site/FactoryStory.tsx:37"
   ],
   "At a glance": [
     "src/components/site/CompanyOverview.tsx:25"
@@ -1046,6 +1049,9 @@
   ],
   "Custom tooling": [
     "src/components/site/ServicesView.tsx:96"
+  ],
+  "Cutting": [
+    "src/components/site/FactoryStory.tsx:34"
   ],
   "Cycle life": [
     "src/data/hardware-terms.ts:428"
@@ -1755,7 +1761,7 @@
     "src/components/site/ExportMap.tsx:37"
   ],
   "Glass door & bathroom": [
-    "src/lib/home-families.ts:37"
+    "src/lib/home-families.ts:42"
   ],
   "glass door fitting": [
     "src/data/category-sourcing.ts:43"
@@ -1875,7 +1881,7 @@
     "src/components/site/WelcomeIntro.tsx:20"
   ],
   "Hinges & accessories": [
-    "src/lib/home-families.ts:36"
+    "src/lib/home-families.ts:41"
   ],
   "Hinges and glass doors": [
     "src/components/site/products-architecture.ts:81"
@@ -2111,7 +2117,7 @@
     "src/data/hardware-terms.ts:449"
   ],
   "Knob & tubular locks": [
-    "src/lib/home-families.ts:34"
+    "src/lib/home-families.ts:39"
   ],
   "knob lock": [
     "src/data/category-sourcing.ts:37"
@@ -2171,7 +2177,7 @@
     "src/data/category-sourcing.ts:36"
   ],
   "Lever handles": [
-    "src/lib/home-families.ts:32"
+    "src/lib/home-families.ts:37"
   ],
   "Lever Handles": [
     "src/data/home.ts:31"
@@ -2199,7 +2205,7 @@
     "src/lib/configurator.ts:392"
   ],
   "Lock cases & cylinders": [
-    "src/lib/home-families.ts:31"
+    "src/lib/home-families.ts:36"
   ],
   "Lock cases by backset, center distance and bolt, written down to the millimeter so the lever, cylinder and strike you order around them fit the first time.": [
     "src/data/home.ts:91"
@@ -2208,7 +2214,7 @@
     "src/data/category-sourcing.ts:46"
   ],
   "Locks and architectural door hardware": [
-    "src/components/locale-pages/HomePage.tsx:25"
+    "src/components/locale-pages/HomePage.tsx:23"
   ],
   "Locks and cylinders": [
     "src/components/site/products-architecture.ts:62"
@@ -2238,7 +2244,7 @@
     "src/components/locale-pages/CollectionPage.tsx:61"
   ],
   "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
-    "src/components/locale-pages/HomePage.tsx:33"
+    "src/components/locale-pages/HomePage.tsx:31"
   ],
   "Manufacturing": [
     "src/data/capability.ts:208"
@@ -2793,7 +2799,7 @@
     "src/components/site/CompanyOverview.tsx:29"
   ],
   "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped.": [
-    "src/components/site/FactoryStory.tsx:33"
+    "src/components/site/FactoryStory.tsx:35"
   ],
   "Our typeface and our product videos are served from our own server. Opening a page does not contact Google Fonts, YouTube or Vimeo.": [
     "src/data/privacy-policy.ts:72"
@@ -2827,7 +2833,7 @@
     "src/data/bau-entry.ts:18"
   ],
   "Panic exit devices": [
-    "src/lib/home-families.ts:30"
+    "src/lib/home-families.ts:35"
   ],
   "Panic Exit Devices": [
     "src/data/home.ts:53",
@@ -2890,7 +2896,7 @@
     "src/data/finish-codes.ts:319"
   ],
   "Polishing": [
-    "src/components/site/FactoryStory.tsx:34",
+    "src/components/site/FactoryStory.tsx:36",
     "src/data/capability.ts:105"
   ],
   "Preparing inquiry form…": [
@@ -3186,7 +3192,7 @@
     "src/data/privacy-policy.ts:141"
   ],
   "Rim, grip & hook locks": [
-    "src/lib/home-families.ts:35"
+    "src/lib/home-families.ts:40"
   ],
   "Rose": [
     "src/data/hardware-terms.ts:401"
@@ -3379,7 +3385,7 @@
     "src/lib/flagship-tooling.ts:54"
   ],
   "Sets are built, checked and bagged at the benches, with finished goods palletized behind them.": [
-    "src/components/site/FactoryStory.tsx:35"
+    "src/components/site/FactoryStory.tsx:37"
   ],
   "Share the Incoterm and destination port when you know them.": [
     "src/components/site/ServicesView.tsx:93"
@@ -3514,10 +3520,10 @@
     "src/data/category-sourcing.ts:35"
   ],
   "Stainless steel handles": [
-    "src/lib/home-families.ts:33"
+    "src/lib/home-families.ts:38"
   ],
   "Stamping": [
-    "src/components/site/FactoryStory.tsx:33",
+    "src/components/site/FactoryStory.tsx:35",
     "src/data/capability.ts:92"
   ],
   "Stand": [
@@ -3745,7 +3751,7 @@
   ],
   "The factory": [
     "src/components/site/CompanyOverview.tsx:27",
-    "src/components/site/FactoryStory.tsx:29"
+    "src/components/site/FactoryStory.tsx:30"
   ],
   "The factory, markets and technical support behind HYDE.": [
     "src/components/site/SiteHeader.tsx:512"
@@ -3817,7 +3823,7 @@
     "src/data/hardware-terms.ts:325"
   ],
   "The polishing line decides whether a satin finish is even across a whole production run.": [
-    "src/components/site/FactoryStory.tsx:34"
+    "src/components/site/FactoryStory.tsx:36"
   ],
   "The Product Finder filters the full catalog by category, type, series, material, finish, door type and certification. Filters combine, counts update as you go, and the address bar keeps your selection — so a narrowed view can be pasted straight into an email to a colleague.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:93"
@@ -4119,6 +4125,9 @@
   "We could not send this from the website. Nothing you typed is lost: open it as an email, or write to": [
     "src/components/site/BauMeetingForm.tsx:20"
   ],
+  "We cut, stamp, polish, assemble and inspect our own parts. Bring a drawing or a sample and we tool it.": [
+    "src/components/site/FactoryStory.tsx:32"
+  ],
   "We do not have this": [
     "src/components/site/DocumentInventory.tsx:28"
   ],
@@ -4142,9 +4151,6 @@
   ],
   "We publish the facts of each one — laboratory, reference number, issue date and the specific model covered — and send the document itself through the proper route when a specification needs it. The scope line matters more than the headline, and we would rather you read it before you rely on it.": [
     "src/components/site/DocumentInventory.tsx:99"
-  ],
-  "We stamp, polish, assemble and inspect our own parts. Bring a drawing or a sample and we tool it.": [
-    "src/components/site/FactoryStory.tsx:31"
   ],
   "We'll match your project with the right export engineer": [
     "src/data/home.ts:215"

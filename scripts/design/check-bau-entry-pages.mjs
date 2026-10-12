@@ -33,7 +33,9 @@ for (const locale of locales) {
     assert.ok(block, `${locale}: original AR4 section restored`);
     assert.ok(html.indexOf('data-bau-showcase=""') < html.indexOf('data-content-module="argentina-ar4"'), `${locale}: AR4 follows BAU`);
     for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) assert.ok(block.includes(model), `${locale}: ${model}`);
-    assert.ok(block.includes("argentina-ar4-entry"), `${locale}: original hero`);
+    /* Since 2026-10-12 the home module is the Argentina collection: an AR-5 row where the photograph was. */
+    for (const model of ["AR5-2000", "AR5-120", "AR5-113", "AR5-123"]) assert.ok(block.includes(model), `${locale}: ${model}`);
+    assert.match(block, /href="(?:\/es)?\/products\/argentina\/#ar5-/, `${locale}: AR-5 tiles open the collection`);
     assert.doesNotMatch(html, /<h2\b[^>]*id="flagship-tooling-heading"/, `${locale}: repeated flagship removed`);
   }
 }

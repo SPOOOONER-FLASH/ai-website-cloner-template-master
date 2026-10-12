@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { pageMetadata, fitTitle } from "@/lib/seo";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
-import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { Spacer } from "@/components/site/Spacer";
-import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
@@ -64,24 +62,6 @@ export default function SpanishHomePage() {
         {/* Buyer resources follow the market collection. */}
         <FeatureColumns locale="es" />
         <FactoryStory locale="es" />
-
-        <HeroModule content={content.hero2} homeEditorial />
-        <Spacer heights={content.spacers.s384} />
-        <TextModule content={content.text1} />
-        <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser2} homeAccent />
-        <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero3} homeEditorial />
-        <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero4} homeEditorial />
-        <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text2} />
-        <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser3} homeAccent />
-        <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text3} />
-        <Spacer heights={content.spacers.s48} />
-        <HeroModule content={content.hero5} homeEditorial />
       </div>
     </main>
   );

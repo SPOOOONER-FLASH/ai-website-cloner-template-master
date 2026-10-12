@@ -11,14 +11,15 @@ import styles from "./HomeMotion.module.css";
  * 2026-10-12 motion demo (design 4's sticky narrative), which the client picked for the
  * live homepage.
  *
- * The three photographs are the client's own (companyEditorialStudies, src/data/company.ts,
- * where their provenance and captions are recorded), in process order. The fourth photo in
- * that record, the laser cutter, is left out: its housing carries the machine maker's brand,
- * and another firm's logo is what the RAYEN homepage note (src/components/rayen/pages.tsx)
- * keeps off a home page. Each step's sentence restates what the record's caption says;
- * nothing here is a new claim about the plant.
+ * The four photographs are the client's own (companyEditorialStudies, src/data/company.ts,
+ * where their provenance and captions are recorded), in process order. The laser cutter
+ * carries its maker's brand on the housing; it was left out on first build and put back at
+ * the client's request (2026-10-12: 「激光切割加进去」) — equipment branding, not another
+ * hardware brand, as content/rayen/assets.json already cleared for the company page. Each
+ * step's sentence restates what the record's caption says; nothing here is a new claim.
  */
 const STEP_IMAGES = [
+  "/images/company/factory-laser-cutter.webp",
   "/images/company/press-shop.webp",
   "/images/company/polishing-line.webp",
   "/images/company/assembly-line.webp",
@@ -28,8 +29,9 @@ const copy = {
   en: {
     eyebrow: "The factory",
     title: "A factory, not a trading office.",
-    body: "We stamp, polish, assemble and inspect our own parts. Bring a drawing or a sample and we tool it.",
+    body: "We cut, stamp, polish, assemble and inspect our own parts. Bring a drawing or a sample and we tool it.",
     steps: [
+      { title: "Cutting", text: "A fiber laser cutter on our shop floor cuts the steel plate that becomes lock cases and backplates." },
       { title: "Stamping", text: "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped." },
       { title: "Polishing", text: "The polishing line decides whether a satin finish is even across a whole production run." },
       { title: "Assembly and inspection", text: "Sets are built, checked and bagged at the benches, with finished goods palletized behind them." },
@@ -38,8 +40,9 @@ const copy = {
   es: {
     eyebrow: "La fábrica",
     title: "Una fábrica, no una oficina comercial.",
-    body: "Estampamos, pulimos, montamos e inspeccionamos nuestras propias piezas. Tráiganos un plano o una muestra y hacemos el utillaje.",
+    body: "Cortamos, estampamos, pulimos, montamos e inspeccionamos nuestras propias piezas. Tráiganos un plano o una muestra y hacemos el utillaje.",
     steps: [
+      { title: "Corte", text: "Una cortadora láser de fibra en nuestra planta corta la chapa de acero de la que salen cajas de cerradura y placas." },
       { title: "Estampado", text: "Una fila de prensas mecánicas con su utillaje, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas." },
       { title: "Pulido", text: "La línea de pulido decide si un acabado satinado sale uniforme en toda una serie de producción." },
       { title: "Montaje e inspección", text: "Los juegos se montan, revisan y embolsan en los puestos, con el producto terminado paletizado detrás." },
@@ -48,8 +51,9 @@ const copy = {
   pt: {
     eyebrow: "A fábrica",
     title: "Uma fábrica, não um escritório comercial.",
-    body: "Estampamos, polimos, montamos e inspecionamos as nossas próprias peças. Traga um desenho ou uma amostra e fazemos o ferramental.",
+    body: "Cortamos, estampamos, polimos, montamos e inspecionamos as nossas próprias peças. Traga um desenho ou uma amostra e fazemos o ferramental.",
     steps: [
+      { title: "Corte", text: "Uma cortadora laser de fibra na nossa fábrica corta a chapa de aço de que saem caixas de fechadura e espelhos." },
       { title: "Estampagem", text: "Uma fila de prensas mecânicas com a ferramenta montada, onde são estampadas caixas de fechadura, espelhos e peças brutas de maçanetas." },
       { title: "Polimento", text: "A linha de polimento decide se um acabamento acetinado sai uniforme em todo um lote de produção." },
       { title: "Montagem e inspeção", text: "Os conjuntos são montados, conferidos e ensacados nas bancadas, com o produto acabado paletizado atrás." },

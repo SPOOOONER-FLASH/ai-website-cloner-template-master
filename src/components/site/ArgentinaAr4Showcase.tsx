@@ -119,6 +119,12 @@ function Ar4Tile({ product, locale }: { product: Product; locale: Locale }) {
   );
 }
 
+/*
+  Same plate as the AR-4 tile, but the wash only lifts to 85% on hover and focus, not 40%:
+  AR5-113's photograph is a dark box under the label, and a 24% white wash over near-black
+  leaves the ink label under 4.5:1 (review 2026-10-12). 51% white keeps it above 4.5:1 even
+  over black.
+*/
 function Ar5Tile({ item, locale }: { item: CollectionItem; locale: Locale }) {
   const text = dict(copy, locale);
   const name = text.ar5[item.id as Ar5Pick];
@@ -138,7 +144,7 @@ function Ar5Tile({ item, locale }: { item: CollectionItem; locale: Locale }) {
       />
       <span
         aria-hidden="true"
-        className="absolute inset-0 bg-surface/60 transition-opacity duration-[var(--motion-medium)] ease-[var(--motion-ease)] group-hover:opacity-40 group-focus-visible:opacity-40"
+        className="absolute inset-0 bg-surface/60 transition-opacity duration-[var(--motion-medium)] ease-[var(--motion-ease)] group-hover:opacity-85 group-focus-visible:opacity-85"
       />
       <span aria-hidden="true" className="absolute inset-0 flex flex-col items-center justify-center gap-8 p-16 text-center">
         <span className="text-balance text-c1 font-semibold leading-tight text-ink">{name}</span>
@@ -175,8 +181,10 @@ export function ArgentinaAr4Showcase({
     .map((id) => argentinaCollection.find((item) => item.id === id))
     .filter((item): item is CollectionItem => item !== undefined);
   const ar4Tiles = (
-    /* Two by two on a phone — a square tile needs no scroll rail — four across from xl. */
-    <div className="col-span-full mt-16 grid grid-cols-2 gap-16 xl:grid-cols-4 xl:gap-24">
+    /* Two by two on a phone — a square tile needs no scroll rail — four across from xl. On the
+       AR-4 page the grid follows the photograph (mt-16); on the home page it follows a row label,
+       and the label-to-tiles gap matches the AR-5 row's. */
+    <div className={`col-span-full grid grid-cols-2 gap-16 xl:grid-cols-4 xl:gap-24${pageHeading ? " mt-16" : ""}`}>
       {products.map((product) => (
         <Ar4Tile key={product.model} product={product} locale={locale} />
       ))}
