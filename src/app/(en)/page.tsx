@@ -2,6 +2,7 @@ import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BrazilHomeShowcase } from "@/components/site/brazil/BrazilHomeShowcase";
 import { ExportMap } from "@/components/site/ExportMap";
 import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
@@ -66,6 +67,7 @@ export default function Home() {
         <Spacer heights={content.spacers.s96} />
 
         <ArgentinaAr4Showcase />
+        <BrazilHomeShowcase />
 
         {/*
           Buyer resources follow the market collection: a specifier arrives holding a

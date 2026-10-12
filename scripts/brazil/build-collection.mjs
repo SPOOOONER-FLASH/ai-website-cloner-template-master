@@ -11,14 +11,24 @@
 
     node scripts/brazil/build-collection.mjs        (run from the repository root)
 */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import sharp from "sharp";
 
 const TMP = existsSync(join("tmp", "claude-brazil")) ? join("tmp", "claude-brazil") : join("..", "claude-brazil");
 const OUT_JSON = join("src", "data", "generated", "brazil-collection.json");
+/*
+  Images go through three local folders before the site sees them, like the Argentina collection:
+    raw/<brand>/…      the crawl
+    retouched/<id>.png the customer's stamped and printed brand removed (scripts/argentina/retouch-stamps.mjs
+                       --root=../claude-brazil --specs=../claude-brazil/stamps), only inside declared boxes
+    webp/<id>.webp     square, white field (this script) → branded/<id>.webp (watermark-product-images.mjs)
+  and `--publish` copies branded/ into public/. No customer photograph reaches the repository before that.
+*/
 const OUT_IMG = join("public", "images", "brazil-collection");
-mkdirSync(OUT_IMG, { recursive: true });
+const STAGE = join(TMP, "webp");
+const PUBLISH = process.argv.includes("--publish");
+mkdirSync(STAGE, { recursive: true });
 
 /*
   One anonymous family per customer design, e.g. { "<brand>": "BR1" }. The map and every source
@@ -132,6 +142,7 @@ async function main() {
 
   const out = [];
   const sources = {};
+  const worklist = [];
   /* HYDE's own Brazil-market bars: their factory film has Portuguese captions. */
   for (const slug of ["306-s-panic-exit-device", "306-d-panic-exit-device", "306-ps-panic-exit-device"]) {
     const p = JSON.parse(readFileSync(join("content", "products", `${slug}.json`), "utf8"));
@@ -158,8 +169,11 @@ async function main() {
       continue;
     }
     const scored = await Promise.all(candidates.map(async (p) => [await whiteBorder(p), p]));
-    const src = scored.sort((a, b) => b[0] - a[0])[0][1];
-    await square(src, join(OUT_IMG, `${id}.webp`), PICKS.cropBottom?.[m.brand] ?? 0);
+    const picked = scored.sort((a, b) => b[0] - a[0])[0][1];
+    const retouched = join(TMP, "retouched", `${id}.png`);
+    const cropBottom = PICKS.cropBottom?.[m.brand] ?? 0;
+    await square(existsSync(retouched) ? retouched : picked, join(STAGE, `${id}.webp`), cropBottom);
+    worklist.push({ id, model, brand: m.brand, file: picked.slice(join(TMP, "raw").length + 1).replace(/\\/g, "/"), cropBottom, retouched: existsSync(retouched) });
     const image = `/images/brazil-collection/${id}.webp`;
     out.push({
       id, model, family: m.family, door: m.family === "trim" ? undefined : m.family, locking: m.locking, outside: m.outside,
@@ -172,6 +186,18 @@ async function main() {
   if (Object.keys(FAMILY).some((b) => json.toLowerCase().includes(b.toLowerCase()))) throw new Error("a customer name reached the public JSON");
   writeFileSync(OUT_JSON, json);
   writeFileSync(join(TMP, "collection-sources.json"), `${JSON.stringify(sources, null, 1)}\n`);
+  /* What the retouch pass works through: the photograph each model shows, relative to raw/. */
+  writeFileSync(join(TMP, "retouch-worklist.json"), `${JSON.stringify(worklist, null, 1)}\n`);
+  if (PUBLISH) {
+    mkdirSync(OUT_IMG, { recursive: true });
+    for (const { id, retouched } of worklist) {
+      if (!retouched) throw new Error(`${id}: not retouched — run the retouch pass before --publish`);
+      const branded = join(TMP, "branded", `${id}.webp`);
+      if (!existsSync(branded)) throw new Error(`${id}: no watermarked image in ${branded}`);
+      copyFileSync(branded, join(OUT_IMG, `${id}.webp`));
+    }
+    console.log(`published ${worklist.length} watermarked images → ${OUT_IMG}`);
+  }
   console.log(`${out.length} models from ${listings.length} listings → ${OUT_JSON}`);
   for (const m of out) console.log(`${m.model.padEnd(8)} ${m.colours.join(",").padEnd(18)} ${m.image ? "img" : "—  "} ${m.nameEn}`);
 }

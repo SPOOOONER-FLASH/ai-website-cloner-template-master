@@ -26,9 +26,12 @@ import { mkdirSync, readdirSync, readFileSync } from "node:fs";
 import { join, basename } from "node:path";
 import sharp from "sharp";
 
-const ROOT = join("..", "claude-argentina");
+/* --root / --specs point the same retouch at another collection (Brazil, 2026-10-12: its specs stay
+   local because their file paths name the customers). Defaults are the Argentina collection. */
+const flag = (name, fallback) => process.argv.find((a) => a.startsWith(`--${name}=`))?.slice(name.length + 3) ?? fallback;
+const ROOT = flag("root", join("..", "claude-argentina"));
 /* The specs are the record of every retouch (51 files, reviewed one by one 2026-10-12): kept in the repo. */
-const SPECS = join("scripts", "argentina", "stamps");
+const SPECS = flag("specs", join("scripts", "argentina", "stamps"));
 const OUT = join(ROOT, "retouched");
 const PREVIEW = join(ROOT, "retouch-preview");
 mkdirSync(OUT, { recursive: true });
@@ -128,6 +131,6 @@ async function run(name) {
   console.log(`${name}: ${spec.boxes.length} box(es) → retouched/${name}.png`);
 }
 
-const only = process.argv[2];
+const only = process.argv.slice(2).find((a) => !a.startsWith("--"));
 const names = only ? [only] : readdirSync(SPECS).filter((f) => f.endsWith(".json")).map((f) => basename(f, ".json"));
 for (const name of names) await run(name);

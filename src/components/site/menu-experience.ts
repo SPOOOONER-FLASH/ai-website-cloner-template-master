@@ -71,6 +71,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         links: [
           { label: "All products", href: "/products/" },
           { label: "Argentina collection", href: "/products/argentina/" },
+          { label: "Panic bars for Brazil", href: "/products/brazil/" },
           { label: "Product Finder", href: "/product-finder/" },
           { label: "Configurator", href: "/configurator/" },
           { label: "Configurator Studio", href: "/configurator/studio/" },
@@ -147,6 +148,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         links: [
           { label: "Todos los productos", href: "/es/products/" },
           { label: "Colección Argentina", href: "/es/products/argentina/" },
+          { label: "Barras antipánico para Brasil", href: "/products/brazil/" },
           { label: "Buscador de productos", href: "/es/product-finder/" },
           { label: "Configurador", href: "/es/configurator/" },
           { label: "Estudio de configuración", href: "/es/configurator/studio/" },
@@ -219,6 +221,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         links: [
           { label: "Todos os produtos", href: "/pt/products/" },
           { label: "Coleção Argentina", href: "/products/argentina/" },
+          { label: "Barras antipânico para o Brasil", href: "/pt/products/brazil/" },
           { label: "Localizador de produtos", href: "/pt/product-finder/" },
           { label: "Configurador", href: "/pt/configurator/" },
           { label: "Estúdio de configuração", href: "/pt/configurator/studio/" },

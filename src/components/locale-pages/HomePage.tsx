@@ -5,6 +5,7 @@ import { ExportMap } from "@/components/site/ExportMap";
 import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
+import { BrazilHomeShowcase } from "@/components/site/brazil/BrazilHomeShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { SiteFacts } from "@/components/site/SiteFacts";
@@ -66,6 +67,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         <FamilyIndex locale={locale} />
         <Spacer heights={content.spacers.s96} />
         <ArgentinaAr4Showcase locale={locale} />
+        <BrazilHomeShowcase locale={locale} />
         <FactoryStory locale={locale} />
       </div>
     </main>

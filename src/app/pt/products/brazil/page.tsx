@@ -3,17 +3,14 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { BrazilCollection } from "@/components/site/brazil/BrazilCollection";
 import { pageMetadata } from "@/lib/seo";
 
-// English and Portuguese only: see PARTIAL_ROUTES. OFFLINE until the client approves (see the English page).
-export const metadata: Metadata = {
-  ...pageMetadata({
-    enPath: "/products/brazil",
-    locale: "pt",
-    title: "Barras antipânico para o Brasil — portas de uma e duas folhas",
-    description:
-      "Barras antipânico feitas em moldes próprios da HYDE para o mercado brasileiro: uma ou duas folhas, trava lateral ou travamento vertical, com ou sem maçaneta externa.",
-  }),
-  robots: { index: false, follow: false },
-};
+// Launched 2026-10-12 with the English page. English and Portuguese only: see PARTIAL_ROUTES.
+export const metadata: Metadata = pageMetadata({
+  enPath: "/products/brazil",
+  locale: "pt",
+  title: "Barras antipânico para o Brasil — portas de uma e duas folhas",
+  description:
+    "Barras antipânico feitas em moldes próprios da HYDE para o mercado brasileiro: uma ou duas folhas, trava lateral ou travamento vertical, com ou sem maçaneta externa.",
+});
 
 export default function BrazilCollectionPortuguesePage() {
   return (
