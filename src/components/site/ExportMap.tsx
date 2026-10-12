@@ -11,7 +11,7 @@ import styles from "./HomeMotion.module.css";
  * "Shipped from Zhongshan": routes from the factory to every country the client names as a
  * market, those countries lit in the dot map, and the model count per family underneath.
  * From the 2026-10-12 motion demo (design 3's map); country list from the client the same
- * day — every Western European country, the US and Canada, seven South American countries,
+ * day — every Western European country, Poland, Czechia, the Nordics except Iceland, the US and Canada, seven South American countries,
  * Japan, Korea and Australia, plus Russia, Turkey and Southeast Asia from the company page.
  *
  * Countries only, never customers: no buyer, project or volume appears (confidential).
@@ -27,10 +27,10 @@ const copy = {
   en: {
     eyebrow: "Export markets",
     title: "Shipped from Zhongshan",
-    body: "Western Europe, Russia and Turkey, North and South America, Japan, Korea, Southeast Asia and Australia. An office in Germany, and a Spanish-speaking team.",
+    body: "Europe from Portugal to Finland, Russia and Turkey, North and South America, Japan, Korea, Southeast Asia and Australia. An office in Germany, and a Spanish-speaking team.",
     clock: "Factory time, GMT+8",
     mapLabel: "Map: routes from the factory in Zhongshan, Guangdong, to the countries listed beside it",
-    zhongshan: "Zhongshan",
+    zhongshan: "Zhongshan (Canton)",
     factory: "Factory",
     office: "Our office in Germany: Brohl-Lützing",
     europe: "Europe",
@@ -42,10 +42,10 @@ const copy = {
   es: {
     eyebrow: "Mercados de exportación",
     title: "Despachado desde Zhongshan",
-    body: "Europa Occidental, Rusia y Turquía, Norteamérica y Sudamérica, Japón, Corea, el Sudeste Asiático y Australia. Una oficina en Alemania y un equipo que habla español.",
+    body: "Europa de Portugal a Finlandia, Rusia y Turquía, Norteamérica y Sudamérica, Japón, Corea, el Sudeste Asiático y Australia. Una oficina en Alemania y un equipo que habla español.",
     clock: "Hora de la fábrica, GMT+8",
     mapLabel: "Mapa: rutas desde la fábrica de Zhongshan, Guangdong, hasta los países indicados al lado",
-    zhongshan: "Zhongshan",
+    zhongshan: "Zhongshan (Canton)",
     factory: "Fábrica",
     office: "Nuestra oficina en Alemania: Brohl-Lützing",
     europe: "Europa",
@@ -57,10 +57,10 @@ const copy = {
   pt: {
     eyebrow: "Mercados de exportação",
     title: "Embarcado de Zhongshan",
-    body: "Europa Ocidental, Rússia e Turquia, Américas do Norte e do Sul, Japão, Coreia, Sudeste Asiático e Austrália. Um escritório na Alemanha e uma equipe que fala espanhol.",
+    body: "Europa de Portugal à Finlândia, Rússia e Turquia, Américas do Norte e do Sul, Japão, Coreia, Sudeste Asiático e Austrália. Um escritório na Alemanha e uma equipe que fala espanhol.",
     clock: "Hora da fábrica, GMT+8",
     mapLabel: "Mapa: rotas da fábrica em Zhongshan, Guangdong, até os países listados ao lado",
-    zhongshan: "Zhongshan",
+    zhongshan: "Zhongshan (Canton)",
     factory: "Fábrica",
     office: "Nosso escritório na Alemanha: Brohl-Lützing",
     europe: "Europa",
