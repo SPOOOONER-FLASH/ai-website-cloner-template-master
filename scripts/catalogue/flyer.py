@@ -57,19 +57,36 @@ FEATURED = {"307", "311", "305", "316-D", "309-D", "302", "LC14", "564", "9014",
 # The eight product panels, ten cards each: (title, [(family slug, count)]). The first four
 # run on after the range panel on side B; the other four sit on side A between the covers.
 PRODUCT_PANELS = [
-    ("Panic exit devices", [("panic-exit-devices", 10)]),
+    # Client 2026-10-12: the panic-exit pages of the client's own catalogue go in whole, in
+    # their order — devices, then outside trims, then fire-door hardware. Explicit slugs, not
+    # a pick: the client chose these models.
+    ("Panic exit devices", [("panic-exit-devices", [
+        "305-fire-door-panic-exit-device", "307-panic-exit-device", "311-panic-exit-device",
+        "301-panic-exit-device", "302-panic-exit-device", "300-panic-exit-device", "310-panic-exit-device",
+        "330-panic-exit-device", "320-two-point-locking-exit-device", "306-ps-panic-exit-device"])]),
+    ("Exit devices & outside trims", [("panic-exit-devices", [
+        "308-s-s-panic-exit-device", "308-d-d-panic-exit-device", "015-panic-exit-device-trim",
+        "026-panic-exit-device-trim", "027-panic-exit-device-trim", "028-panic-exit-device-trim",
+        "030-panic-exit-device-trim", "033-panic-exit-device-trim", "035-panic-exit-device-trim",
+        "037-panic-exit-device-trim"])]),
+    ("Fire-door hardware", [("panic-exit-devices", [
+        "023-etan-anti-pick-panic-exit-device", "023-et-panic-exit-device-trim", "023-ps-panic-exit-device-trim",
+        "036-panic-exit-device", "sh01-panic-exit-device"]), ("hardware-accessories", ["dsl02-door-coordinator"])]),
     ("Lock cases & cylinders", [("lock-cases", 6), ("lock-cylinders", 4)]),
-    ("Lever handles", [("lever-handles", 10)]),
-    ("Stainless steel handles", [("stainless-steel-handles", 10)]),
-    ("Knob & tubular locks", [("knob-locks", 10)]),
-    ("Rim, grip & hook locks", [("night-latches-rim-locks", 6), ("grip-handle-sets", 2), ("sliding-hook-locks", 2)]),
+    ("Levers & stainless handles", [("lever-handles", 5), ("stainless-steel-handles", 5)]),
+    ("Knob, tubular & rim locks", [("knob-locks", 6), ("night-latches-rim-locks", 4)]),
     ("Hinges & accessories", [("brass-steel-hinges", 6), ("hardware-accessories", 4)]),
     ("Glass door & bathroom", [("glass-door-accessories", 6), ("bathroom-accessories", 4)]),
 ]
+# Lock cases the client's principal called too old to show (2026-10-12, 「这些太老旧了」),
+# with their finish variants (LC7065S, LC7065PS).
+RETIRED = ("LC33-5572", "AI8530", "LC7065")
+# Models chosen by hand above are never picked again by a counted group.
+CHOSEN = {s for _, groups in PRODUCT_PANELS for _, spec in groups if isinstance(spec, list) for s in spec}
 
 
 # The range panel: one row and one code per product panel; the code opens its first family.
-RANGE = [(title, [slug for slug, _ in groups]) for title, groups in PRODUCT_PANELS]
+RANGE = [(title, groups) for title, groups in PRODUCT_PANELS]
 
 
 def _base(model: str) -> str:
@@ -77,11 +94,21 @@ def _base(model: str) -> str:
     return re.split(r"[\s*]", str(model).strip())[0]
 
 
-def pick(slug: str, n: int) -> list[variants.Card]:
+def pick(slug: str, n) -> list[variants.Card]:
+    """`n` cards from a family: a count picks (featured first, most stated specs), a list of
+    product slugs takes exactly those, in that order."""
     fam = next(f for f in heroes.families() if f.slug == slug)
+    if isinstance(n, list):
+        by_slug = {p["slug"]: p for p in samples.ordered(fam)}
+        missing = [s for s in n if s not in by_slug or not samples.grid_plate(by_slug[s])]
+        if missing:
+            raise ValueError(f"{slug}: not published or no plate: {missing}")
+        return [variants.Card(model=by_slug[s]["model"], name=by_slug[s]["name"], product=by_slug[s]) for s in n]
     good = [c for c in variants.cards(samples.ordered(fam))
             if heroes.hero_plate(c.product) and len(samples.card_specs(slug, c.product, 2)) >= 1
-            and not re.match(r"^\d+\*\d", str(c.model))]  # "6*3*3mm" is a size, not a model
+            and not re.match(r"^\d+\*\d", str(c.model))  # "6*3*3mm" is a size, not a model
+            and c.product.get("slug") not in CHOSEN
+            and not str(c.model).upper().startswith(RETIRED)]
     good.sort(key=lambda c: (_base(c.model) not in FEATURED and c.model not in FEATURED,
                              -len(samples.card_specs(slug, c.product, 3))))
     out, seen = [], set()
@@ -93,6 +120,10 @@ def pick(slug: str, n: int) -> list[variants.Card]:
         if len(out) == n:
             break
     return out
+
+
+def panel_cards(groups) -> list[tuple[str, variants.Card]]:
+    return [(slug, c) for slug, n in groups for c in pick(slug, n)]
 
 
 class Sheet:
@@ -229,8 +260,9 @@ def product_panel(s: Sheet, i: int, title: str, groups: list[tuple[str, int]]) -
     q = 13 * MM
     s.qr(x1 - q, 7 * MM, q, qr.family_url(groups[0][0]))
     s.text(x0, 24.5 * MM, "Every model and its full specifications: scan the code", 5.2, "text", style.INK3)
-    cards = [(slug, c) for slug, n in groups for c in pick(slug, n)]
-    cols, rows = 2, 5
+    cards = panel_cards(groups)
+    cols = 2
+    rows = min(5, max(3, -(-len(cards) // cols)))  # six chosen cards get three taller rows
     gx, gy = 4 * MM, 3.2 * MM
     top, bottom = 29 * MM, PANEL_H - 8 * MM
     cw = (x1 - x0 - gx) / cols
@@ -261,18 +293,18 @@ def range_panel(s: Sheet, i: int) -> None:
     top = 40 * MM
     row = (PANEL_H - 8 * MM - top) / len(RANGE)
     q, img_w = 14 * MM, 20 * MM
-    for k, (title, slugs) in enumerate(RANGE):
+    for k, (title, groups) in enumerate(RANGE):
         y = top + k * row
         s.rule(x0, y, x1, style.RULE, 0.4)
-        lead = next(c for slug in slugs for c in pick(slug, 1))
+        lead = panel_cards(groups)[0][1]
         s.image(x0, y + 2 * MM, x0 + img_w, y + row - 2 * MM, samples.grid_plate(lead.product))
         tx = x0 + img_w + 4 * MM
         tw = x1 - q - 3 * MM - tx
         s.text(tx, y + 7 * MM, style.fit(title, tw, 7.4, "text-semibold"), 7.4, "text-semibold", style.INK)
-        models = [_base(c.model) for slug in slugs for c in pick(slug, -(-4 // len(slugs)))][:4]
+        models = [c.model for _, c in panel_cards(groups)][:4]
         s.text(tx, y + 11.5 * MM, style.fit("  ·  ".join(models), tw, 5.6), 5.6, "text", style.INK2)
         s.text(tx, y + 15.5 * MM, "Scan for all models", 4.9, "text", style.INK3)
-        s.qr(x1 - q, y + (row - q) / 2, q, qr.family_url(slugs[0]))
+        s.qr(x1 - q, y + (row - q) / 2, q, qr.family_url(groups[0][0]))
     s.rule(x0, top + len(RANGE) * row, x1, style.RULE, 0.4)
 
 

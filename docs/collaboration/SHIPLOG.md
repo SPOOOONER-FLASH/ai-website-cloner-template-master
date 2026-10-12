@@ -12,12 +12,12 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 07:51 | HYDE | 指南：finish-code-reference 补 BHMA 652（十语）；欧标锁芯尺寸表十语 SEO 标题/描述（#163 #164） | `705cefd58ce` |
-| 07:46 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `17bcae78fc0` |
-| 07:45 | 中立 | 目标 165–167：Ahrefs 自查、指南推产品与资质 | `f906666289f` |
-| 07:36 | 中立 | Bing 10-12 四张表 + Ahrefs 体检：数据结论与行动；目标 162–165 | `bf9d927f887` |
-| 07:34 | 中立 | 首页 AR-5 四格补 srcset（r43 被 static-export-performance 拦下） | `f8cc37a1666` |
-| 07:28 | HYDE | 首页移除 Columns 栏目（客户：移除 colums） | `5745b4b8924` |
+| 08:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fae6618822c` |
+| 08:01 | 中立 | 传单：逃生推杆按甲方目录页选型、撤三款老锁体（#55）；ISO 问题记录（#56） | `637e3e6297e` |
+| 07:54 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `7a4a3863ce8` |
+| 07:51 | 中立 | 地图加波兰、捷克、北欧四国；中山标「Zhongshan (Canton)」（#54） | `d2574600dfc` |
+| 07:45 | HYDE | Merge origin/main：首页同时去掉 FeatureColumns（另一会话）与旧位置的 ExportMap（本会话已挪到数据条后） | `186e1793cab` |
+| 07:42 | HYDE | 首页：工厂故事换图改合成层并按文字切换、工厂图 2× 清晰化；地图按国家细分；移除 BAU、地图挪到数据条后（#51–#53） | `b5223aa5e5a` |
 | 07:20 | 中立 | 合并本地提交（ship 旁路合并） | `9c155f8d7d6` |
 | 07:19 | HYDE · 发布 HYDE | Merge origin/main；首页阿根廷模块复核修正 | `0e2013d12ee` |
 | 05:25 | 中立 | 首页阿根廷模块：照片位换成 AR-5 一排，标题改为阿根廷集合（客户：四个框上面加多一栏给 ar-5） | `889e74cc042` |

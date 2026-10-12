@@ -1460,6 +1460,9 @@
   "Europe": [
     "src/components/site/ExportMap.tsx:36"
   ],
+  "Europe from Portugal to Finland, Russia and Turkey, North and South America, Japan, Korea, Southeast Asia and Australia. An office in Germany, and a Spanish-speaking team.": [
+    "src/components/site/ExportMap.tsx:30"
+  ],
   "Events": [
     "src/components/site/menu-experience.ts:92",
     "src/components/site/menu-experience.ts:299",
@@ -4147,9 +4150,6 @@
   "Website inquiry": [
     "src/components/site/InquiryForm.tsx:53"
   ],
-  "Western Europe, Russia and Turkey, North and South America, Japan, Korea, Southeast Asia and Australia. An office in Germany, and a Spanish-speaking team.": [
-    "src/components/site/ExportMap.tsx:30"
-  ],
   "What {name} are": [
     "src/components/site/CollectionNote.tsx:22"
   ],
@@ -4404,7 +4404,7 @@
   "Your specification so far": [
     "src/components/site/Configurator.tsx:80"
   ],
-  "Zhongshan": [
+  "Zhongshan (Canton)": [
     "src/components/site/ExportMap.tsx:33"
   ]
 }
