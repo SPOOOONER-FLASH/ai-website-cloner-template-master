@@ -6,39 +6,33 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 469 次提交
+最近 30 天 · 共 463 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 00:07 | 中立 | 合并本地提交（ship 旁路合并） | `af830af2d21` |
-| 00:01 | HYDE | 阿根廷集合页先下线（甲方 10-12：照片仍有冲压字样），notFound | `8e2e4d7a3d1` |
+| 00:17 | 中立 | 规格书重生成：AR4-111 改名后补齐 | `ad17be238d8` |
+| 00:10 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `0d126b5c9be` |
+| 00:10 | HYDE | 7240 改名 AR4-101 → AR4-111（安全锁），旧地址 301，七语种同步 | `0071ea58c9b` |
+| 00:03 | HYDE | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `1c486a85811` |
+| 00:03 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `6e002d2c7d6` |
 
 ## 2026-10-11
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 23:48 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `149d405ea5c` |
-| 23:48 | 中立 | 手动操作：服务器硬盘清理第 1 步（只查看） | `7a4e65ec7ae` |
-| 22:46 | 中立 | Argentina 预览页只在 en/es：列入 PARTIAL_ROUTES（解 r34 hreflang 拦截） | `41108d53c90` |
-| 22:36 | 中立 | 纪律：每次发布后跑 mirror-to-gitlab（服务器改从 GitLab 拉） | `36d61201a69` |
-| 22:36 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cd8771c2374` |
-| 22:35 | HYDE | GitLab 镜像脚本；Argentina 预览页 noindex（解 r34 拦截） | `4978b5c9b90` |
-| 21:33 | 中立 | 文章修订戳补齐（r34 被 stamp --check 拦下） | `80a362d5a80` |
-| 21:20 | 中立 | 手册顶部：GitHub 账号被隐藏 → 服务器配只读 deploy key（指向前端管理会话写的步骤） | `5770a198065` |
-| 21:19 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `9bc55279cda` |
-| 21:19 | HYDE | HYDE 新品三款：SH02 弹簧合页芯、D104 SS 呆锁钥匙芯与旋钮、8829 BL 磁吸插芯执手锁（#157） | `8d872a44ccf` |
+| 23:59 | HYDE | 阿根廷集合：美式拼写；只登记英文+西语（PARTIAL_ROUTES）；站点地图；修图源优先；任务与授权记录 | `0173ebed5b9` |
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:50 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `019003ab091` |
-| 04:50 | 中立 | 手册：服务器没拉到新版的排查与手动补拉（#156） | `f71d6cd3155` |
-| 04:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `974b57ad427` |
-| 04:18 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5619229b127` |
-| 04:16 | 中立 | 改深链交给同事：大字分步说明 + 每站编号打勾清单 + LinkedIn（#155） | `a1e386d5d6d` |
+| 04:55 | HYDE | 阿根廷产品集合（预览，未上线）：Candex 45 + Elabora 10，HYDE 水印，规格表 | `638f1ffa46b` |
+| 04:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85c58de7563` |
+| 04:28 | 中立 | Elabora/Piccolo 公开尺寸与 AR4 工厂图纸对照（只核对，不上网站） | `06dbe5d0287` |
+| 00:44 | 中立 | 产品查找器结果卡片补传 locale：韩/西等语种点卡片不再跳到英文页 | `94331c4b51b` |
+| 00:21 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 501ff278c8b | `98fd1ab5720` |
 | 00:06 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9ce8a13e604` |
 | 00:06 | 中立 | 纪律：回复甲方一律用简体中文（甲方 10-10） | `831bea39928` |
 
