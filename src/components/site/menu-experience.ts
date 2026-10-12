@@ -70,6 +70,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         title: "Products",
         links: [
           { label: "All products", href: "/products/" },
+          { label: "Argentina collection", href: "/products/argentina/" },
           { label: "Product Finder", href: "/product-finder/" },
           { label: "Configurator", href: "/configurator/" },
           { label: "Configurator Studio", href: "/configurator/studio/" },
@@ -145,6 +146,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         title: "Productos",
         links: [
           { label: "Todos los productos", href: "/es/products/" },
+          { label: "Colección Argentina", href: "/es/products/argentina/" },
           { label: "Buscador de productos", href: "/es/product-finder/" },
           { label: "Configurador", href: "/es/configurator/" },
           { label: "Estudio de configuración", href: "/es/configurator/studio/" },
@@ -216,6 +218,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
         title: "Produtos",
         links: [
           { label: "Todos os produtos", href: "/pt/products/" },
+          { label: "Coleção Argentina", href: "/products/argentina/" },
           { label: "Localizador de produtos", href: "/pt/product-finder/" },
           { label: "Configurador", href: "/pt/configurator/" },
           { label: "Estúdio de configuração", href: "/pt/configurator/studio/" },
