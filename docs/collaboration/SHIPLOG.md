@@ -12,7 +12,7 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:25 | 中立 | 301：改名产品的 /video/ 观看页、旧 sitemap 文件名；页头 logo 链接加 aria-label | `6223f9f45f4` |
+| 04:22 | 中立 | 手册：Ahrefs/Semrush 只剩查「人工处置」一项；记录 404 与结构化数据的判断 | `e9b20f1f2c9` |
 | 04:11 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f3cbab91941` |
 | 04:10 | HYDE | 首页轮播：逃生锁说明写回 306-D（客户：实拍合成）；葡语首页加巴西防火门一页 | `f42d7b3bb93` |
 | 04:03 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `58430bd631c` |
