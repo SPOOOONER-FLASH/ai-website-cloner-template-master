@@ -113,6 +113,8 @@ function untranslatedGuide(clean: string, lacking: readonly string[]): boolean {
 export function hasSpanishMirror(enPath: string): boolean {
   const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
   if (clean === "/") return true;
+  const partial = PARTIAL_ROUTES.get(clean);
+  if (partial) return partial.includes("es");
   if (untranslatedGuide(clean, GUIDES_WITHOUT_ES)) return false;
   if (SPANISH_MIRROR_PATHS.has(clean)) return true;
   return SPANISH_MIRROR_PREFIXES.some(
@@ -173,6 +175,8 @@ export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<st
   ["/privacy", ["en", "de"]],
   /* The Argentina collection (launched 2026-10-12): written for Argentine distributors, en and es only. */
   ["/products/argentina", ["en", "es"]],
+  /* The Brazil panic-bar collection (2026-10-12): written for Brazilian buyers, en and pt only. */
+  ["/products/brazil", ["en", "pt"]],
 ]);
 
 /** The locales a partial route exists in, or null for an ordinary path. */
@@ -282,6 +286,8 @@ const PORTUGUESE_MIRROR_EXCEPTIONS = new Set(["/products/argentina-ar4", "/produ
 export function hasPortugueseMirror(enPath: string): boolean {
   const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
   if (clean === "/") return true;
+  const partial = PARTIAL_ROUTES.get(clean);
+  if (partial) return partial.includes("pt");
   if (PORTUGUESE_MIRROR_EXCEPTIONS.has(clean)) return false;
   if (untranslatedGuide(clean, GUIDES_WITHOUT_PT)) return false;
   return PORTUGUESE_MIRROR_PREFIXES.some(

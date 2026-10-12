@@ -55,6 +55,9 @@ function homepageModels() {
   /* ArgentinaAr4Showcase — the seasonal market collection. */
   for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) models.add(model);
 
+  /* BrazilHomeShowcase — HYDE's own Brazil-market bar; the other three tiles are collection images (editorial config). */
+  models.add("306-D");
+
   // Native home catalogue atlas: two direct product photographs alongside editorial plates.
   for (const model of ["Stainless Steel Flush Bolt", "600"]) models.add(model);
 

@@ -10,6 +10,10 @@ interface StoryFilmProps {
   height: number;
   /** What the film shows, for a screen reader — the film has no sound and no words of its own. */
   label: string;
+  /** Cover the parent's box instead of keeping the film's own height (a grid tile spanning two rows). */
+  fill?: boolean;
+  /** The pause/play button, for pages that are not in English. */
+  buttonLabels?: { play: string; pause: string };
 }
 
 /**
@@ -29,6 +33,8 @@ export function StoryFilm({
   width,
   height,
   label,
+  fill = false,
+  buttonLabels = { play: "Play film", pause: "Pause film" },
 }: StoryFilmProps) {
   const ref = useRef<HTMLVideoElement>(null);
   const stoppedByVisitor = useRef(false);
@@ -70,7 +76,7 @@ export function StoryFilm({
   };
 
   return (
-    <div className="relative bg-surface-alt">
+    <div className={fill ? "relative h-full bg-surface-alt" : "relative bg-surface-alt"}>
       <video
         ref={ref}
         src={src}
@@ -84,14 +90,14 @@ export function StoryFilm({
         aria-label={label}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
-        className="block h-auto w-full"
+        className={fill ? "block h-full w-full object-cover" : "block h-auto w-full"}
       />
       <button
         type="button"
         onClick={toggle}
         className="absolute bottom-16 left-16 bg-surface/85 px-12 py-8 text-c2 text-ink backdrop-blur-[2px] hover:bg-surface"
       >
-        {playing ? "Pause film" : "Play film"}
+        {playing ? buttonLabels.pause : buttonLabels.play}
       </button>
     </div>
   );
