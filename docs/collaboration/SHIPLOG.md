@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 481 次提交
+最近 30 天 · 共 482 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:25 | 中立 | 301：改名产品的 /video/ 观看页、旧 sitemap 文件名；页头 logo 链接加 aria-label | `6223f9f45f4` |
 | 04:11 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f3cbab91941` |
 | 04:10 | HYDE | 首页轮播：逃生锁说明写回 306-D（客户：实拍合成）；葡语首页加巴西防火门一页 | `f42d7b3bb93` |
 | 04:03 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `58430bd631c` |
