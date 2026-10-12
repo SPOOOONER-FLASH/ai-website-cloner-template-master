@@ -75,6 +75,14 @@ for (const file of loose) {
   move(file, folder === FOLDERS.data ? path.join(folder, exportDate(name) ?? "未标日期") : folder);
 }
 
+// 1b. Hand-offs already filed in 00: once the runbook stops naming one, it is finished (client 10-12: 「很多东西我看了修了 但是还在里头」).
+const todoDir = path.join(ROOT, FOLDERS.todo);
+for (const name of fs.existsSync(todoDir) ? fs.readdirSync(todoDir) : []) {
+  if (/(手动操作|同事操作).*\.docx$/.test(name) && !stillAsked(name.replace(/\.docx$/, ""))) {
+    move(path.join(todoDir, name), path.join(FOLDERS.archive, "已完成的人工操作"));
+  }
+}
+
 // 2. Old sub-folders.
 const sub = (n) => path.join(ROOT, n);
 const relocate = { "9月资料": FOLDERS.archive, "clarity-topics": FOLDERS.research, "fsb-reference": FOLDERS.research, 报价: FOLDERS.sales };
