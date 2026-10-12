@@ -3,7 +3,7 @@
     py scripts/brand/build_brand_kit.py [--out-dir DIR]
 
 Writes:
-  docs/brand/hyde-2026/marks/*.svg      icon / horizontal / stacked / horizontal-legal x ink / white / brass
+  docs/brand/hyde-2026/marks/*.svg      icon / horizontal / stacked / horizontal-legal x ink / white
   <out-dir>/HYDE-标志规范-2026.pdf       the guide (default tmp/claude-brand/out)
 """
 from __future__ import annotations
@@ -15,12 +15,13 @@ import pymupdf
 
 import hyde_mark as hm
 import kit
-from kit import BRASS, GREY, INK, LIGHT, MM, RULE, WHITE, place_mark, text
+from kit import GREY, INK, RULE, WHITE, place_mark, text
 
 MARKS = kit.ROOT / "docs" / "brand" / "hyde-2026" / "marks"
 OLD = kit.ROOT / "public" / "images" / "brand" / "hyde" / "hyde-logo-horizontal-black.svg"
 A4L = pymupdf.Rect(0, 0, 841.89, 595.28)
-COLOURS = {"ink": hm.INK, "white": hm.WHITE, "brass": hm.BRASS}
+# The website's two colours only (client 2026-10-11: 「黑白色 和官网匹配 白底墨色不要黑金」).
+COLOURS = {"ink": hm.INK, "white": hm.WHITE}
 
 
 def write_marks() -> list[Path]:
@@ -45,7 +46,7 @@ def write_marks() -> list[Path]:
 
 
 def header(page, title: str, kicker: str, n: int) -> None:
-    text(page, 48, 54, kicker, 7.5, "medium", BRASS, track=160)
+    text(page, 48, 54, kicker, 7.5, "medium", GREY, track=160)
     text(page, 48, 82, title, 20, "cjk-bold", INK)
     text(page, A4L.width - 48, A4L.height - 30, f"HYDE 标志规范 2026 · {n}/4", 7.5, "cjk", GREY, align="right")
     page.draw_line((48, 96), (A4L.width - 48, 96), color=RULE, width=0.5)
@@ -55,7 +56,7 @@ def page_cover(doc) -> None:
     p = doc.new_page(width=A4L.width, height=A4L.height)
     place_mark(p, pymupdf.Rect(150, 180, A4L.width - 150, 340), hm.horizontal())
     text(p, A4L.width / 2, 420, "HYDE 标志精修 · 2026", 15, "cjk-bold", INK, align="center")
-    text(p, A4L.width / 2, 444, "THE HYDE MARK, REFINED", 8, "medium", BRASS, align="center", track=220)
+    text(p, A4L.width / 2, 444, "THE HYDE MARK, REFINED", 8, "medium", GREY, align="center", track=220)
     text(p, A4L.width / 2, A4L.height - 40, hm.LEGAL, 7, "medium", GREY, align="center", track=120)
 
 
@@ -66,13 +67,13 @@ def page_changes(doc) -> None:
     old_pdf = pymupdf.open("pdf", old.convert_to_pdf())
     text(p, 60, 138, "原版", 9, "cjk-bold", GREY)
     p.show_pdf_page(pymupdf.Rect(60, 150, 400, 235), old_pdf, 0)
-    text(p, 450, 138, "精修版", 9, "cjk-bold", BRASS)
+    text(p, 450, 138, "精修版", 9, "cjk-bold", INK)
     place_mark(p, pymupdf.Rect(450, 150, 790, 235), hm.horizontal())
     notes = [
         ("1  字距", "原版 H–Y 54、Y–D 50、D–E 64，D 与 E 之间明显偏松。精修版按光学字距：H–Y 46、Y–D 47、D–E 50，四个字母看起来等距。"),
         ("2  图标横杠", "横杠和竖杠同为 34 时，横的看起来更粗。横杠改为 32，并上移 2，落在视觉中心。字母本身原来就做了这个修正。"),
         ("3  字母外角", "字母的外角加 3% 的小圆角，和图标的圆头呼应；内角（Y 的分叉、E 的内角）保持锐利，字不会变软。"),
-        ("4  使用规范", "补齐四种组合、三种颜色、安全留白、最小尺寸和禁用示例，招牌、目录、网站从此用同一个标志。"),
+        ("4  使用规范", "补齐四种组合、墨白两色、安全留白、最小尺寸和禁用示例，招牌、目录、网站从此用同一个标志。"),
     ]
     y = 290
     for title, body in notes:
@@ -86,11 +87,11 @@ def page_changes(doc) -> None:
 
 def page_lockups(doc) -> None:
     p = doc.new_page(width=A4L.width, height=A4L.height)
-    header(p, "四种组合 × 三种颜色", "LOCKUPS", 3)
+    header(p, "四种组合 × 两种颜色", "LOCKUPS", 3)
     rows = [("图标", hm.icon(), False), ("横版", hm.horizontal(), False),
             ("竖版", hm.stacked(), False), ("横版 + 公司全称", hm.horizontal_legal(), True)]
-    cols = [("白底 · 墨色", WHITE, hm.INK), ("墨底 · 白色", INK, hm.WHITE), ("浅底 · 铜色", LIGHT, hm.BRASS)]
-    x0, y0, cw, rh = 150, 112, 210, 108
+    cols = [("白底 · 墨色（首选）", WHITE, hm.INK), ("墨底 · 白色", INK, hm.WHITE)]
+    x0, y0, cw, rh = 140, 112, 318, 100
     for j, (label, bg, _) in enumerate(cols):
         text(p, x0 + j * (cw + 12) + cw / 2, y0 + 4, label, 8, "cjk", GREY, align="center")
     for i, (label, mark, legal) in enumerate(rows):
@@ -112,16 +113,15 @@ def page_rules(doc) -> None:
     r = place_mark(p, pymupdf.Rect(90, 150, 400, 230), m)
     s = r.width / m.width
     pad = hm.CLEAR * s
-    p.draw_rect(r + (-pad, -pad, pad, pad), color=BRASS, width=0.6, dashes="[3 2] 0")
-    p.draw_rect(pymupdf.Rect(r.x0 - pad, r.y0 - pad, r.x0, r.y0), color=None, fill=BRASS, fill_opacity=0.25)
+    p.draw_rect(r + (-pad, -pad, pad, pad), color=GREY, width=0.6, dashes="[3 2] 0")
+    p.draw_rect(pymupdf.Rect(r.x0 - pad, r.y0 - pad, r.x0, r.y0), color=None, fill=GREY, fill_opacity=0.25)
     p.insert_textbox(pymupdf.Rect(60, r.y1 + pad + 10, 420, r.y1 + pad + 50),
-                     "安全留白：四周至少 1.5 个竖杠宽度（铜色虚线，左上角色块为 1 个单位），线内不放任何文字或图形。",
+                     "安全留白：四周至少 1.5 个竖杠宽度（灰色虚线，左上角色块为 1 个单位），线内不放任何文字或图形。",
                      fontname="f-cjk", fontfile=str(kit.FONTS["cjk"]), fontsize=8.5, color=INK, lineheight=1.5)
     rows = [
         ("最小尺寸", "横版印刷宽 ≥ 30 mm，屏幕宽 ≥ 120 px；图标印刷高 ≥ 8 mm，屏幕 ≥ 24 px。更小时只用图标。"),
         ("墨色", f"{hm.INK}  ·  CMYK 0/5/25/92（建议，以印刷打样为准）  ·  大面积可用 K100"),
-        ("铜色", f"{hm.BRASS}  ·  CMYK 0/23/77/46（建议）  ·  实物招牌用钛金或拉丝黄铜，不用金色油漆"),
-        ("白色", "墨底或铜底上反白；照片上只放在大面积纯色、干净的区域。"),
+        ("白色", "首选白底墨色，和官网一致；墨底上可反白。不用金色、铜色、钛金。照片上只放在大面积纯色、干净的区域。"),
         ("字体", "Archivo（与网站、目录同一字体，SIL OFL 开源授权）；中文用思源黑体或微软雅黑。"),
     ]
     y = 345
@@ -134,7 +134,7 @@ def page_rules(doc) -> None:
         y += 38
     # don'ts
     text(p, 480, 140, "禁用", 10.5, "cjk-bold", INK)
-    donts = ["拉伸或压扁", "加描边、阴影、渐变、立体效果", "改颜色（只用墨、白、铜）",
+    donts = ["拉伸或压扁", "加描边、阴影、渐变、立体效果", "改颜色（只用墨、白两色）",
              "重新排字母或改字距", "和旧的红色椭圆 Hyland 标志并用", "放在杂乱的照片上"]
     y = 166
     for d in donts:

@@ -163,14 +163,14 @@ def cover(s: Sheet, i: int) -> None:
     k = min((x1 - x0) / mw, (bottom - top) / mh, 1.0)
     bw, bh = mw * k, mh * k
     s.image(x0 + (x1 - x0 - bw) / 2, bottom - bh, x0 + (x1 - x0 + bw) / 2, bottom, hero)
-    s.rule(x0, 160 * MM, x0 + 14 * MM, style.BRASS, 1.0)
+    s.rule(x0, 160 * MM, x0 + 14 * MM, style.INK, 1.0)
     s.para(x0, 164 * MM, x1, 190 * MM, "Door hardware, made in our own factory since 1998.", 13, "display", style.INK, 1.25)
     s.text(x0, 196 * MM, "PANIC EXIT · LOCKS · HANDLES · HINGES · GLASS · BATHROOM", 4.9, "text-medium", style.INK3, track=90)
 
 
 def factory_panel(s: Sheet, i: int) -> None:
     x0, x1 = i * PANEL_W + PAD, (i + 1) * PANEL_W - PAD
-    s.text(x0, 18 * MM, "THE FACTORY", 6, "text-medium", style.BRASS, track=160)
+    s.text(x0, 18 * MM, "THE FACTORY", 6, "text-medium", style.INK, track=160)
     s.para(x0, 21 * MM, x1, 42 * MM, "A factory, not a trading office.", 14, "display", style.INK, 1.2)
     photo = samples.COMPANY_PHOTOS / "press-shop.webp"
     s.image(x0, 46 * MM, x1, 98 * MM, photo)
@@ -191,27 +191,25 @@ def factory_panel(s: Sheet, i: int) -> None:
 
 def back_cover(s: Sheet, i: int) -> None:
     x0, x1 = i * PANEL_W + PAD, (i + 1) * PANEL_W - PAD
-    s.fill(i * PANEL_W - (BLEED if i == 0 else 0), -BLEED, (i + 1) * PANEL_W, PANEL_H + BLEED, kit.INK)
-    s.mark(x0, 20 * MM, x1, 40 * MM, hm.horizontal(), hm.WHITE)
+    s.mark(x0, 20 * MM, x1, 40 * MM, hm.horizontal(), hm.INK)   # white field, ink mark: the website's colours
     q = 46 * MM
     qx = x0 + (x1 - x0 - q) / 2
-    s.fill(qx - 3 * MM, 56 * MM - 3 * MM, qx + q + 3 * MM, 56 * MM + q + 3 * MM, (1, 1, 1))
     s.qr(qx, 56 * MM, q, "https://cantonlock.com/")
-    s.text((x0 + x1) / 2, 113 * MM, "SCAN FOR EVERY PRODUCT AND ITS FULL SPECIFICATIONS", 5.2, "text-medium", style.BRASS,
+    s.text((x0 + x1) / 2, 113 * MM, "SCAN FOR EVERY PRODUCT AND ITS FULL SPECIFICATIONS", 5.2, "text-medium", style.INK,
            track=80, align="center")
     y = 128 * MM
     for label, value in CONTACT:
-        s.text(x0, y, label.upper(), 5.4, "text-medium", (0.7, 0.68, 0.64), track=140)
-        s.para(x0 + 17 * MM, y - 2.4 * MM, x1, y + 8 * MM, value, 7, "text", (1, 1, 1), 1.3)
+        s.text(x0, y, label.upper(), 5.4, "text-medium", style.INK3, track=140)
+        s.para(x0 + 17 * MM, y - 2.4 * MM, x1, y + 8 * MM, value, 7, "text", style.INK, 1.3)
         y += 11 * MM
-    s.para(x0, 186 * MM, x1, 202 * MM, COMPANY, 6.2, "text-semibold", (1, 1, 1), 1.3)
+    s.para(x0, 186 * MM, x1, 202 * MM, COMPANY, 6.2, "text-semibold", style.INK, 1.3)
 
 
 def product_panel(s: Sheet, i: int, title: str, groups: list[tuple[str, int]]) -> int:
     x0, x1 = i * PANEL_W + PAD, (i + 1) * PANEL_W - PAD
     first = groups[0][0]
     s.text(x0, 15 * MM, title.upper(), 7.2, "display-semibold", style.INK, track=40)
-    s.rule(x0, 18.5 * MM, x0 + 10 * MM, style.BRASS, 1.0)
+    s.rule(x0, 18.5 * MM, x0 + 10 * MM, style.INK, 1.0)
     q = 13 * MM
     s.qr(x1 - q, 7 * MM, q, qr.family_url(first))
     s.text(x0, 23.5 * MM, "Full specifications: scan the code", 5.2, "text", style.INK3)

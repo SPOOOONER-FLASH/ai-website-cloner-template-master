@@ -10,7 +10,8 @@ sign, designed so an ad company can make them, and a plan for where they hang. W
 
 Rules carried over from the site: no certification claims, no invented facts. The zones are
 the processes the company states it runs (stamp, polish, assemble, inspect) plus showroom,
-packing and meeting room; the client adjusts them to the real floor. The Canton Fair logo is
+packing and meeting room; the client adjusts them to the real floor. Colours are the
+website's two: ink on white (client 2026-10-11: 「白底墨色不要黑金」), no brass or titanium. The Canton Fair logo is
 a low-resolution placeholder taken from the client's screenshot; the ad company must use the
 organiser's official vector file.
 """
@@ -25,10 +26,9 @@ import pymupdf
 
 import hyde_mark as hm
 import kit
-from kit import BRASS, GREY, INK, LIGHT, RULE, WHITE, place_mark, text
+from kit import GREY, INK, RULE, WHITE, place_mark, text
 
-CN_NAME = "广州海狄五金建材有限公司"   # unconfirmed: from a search query, see CN_WARNING
-CN_WARNING = "中文全称待甲方确认（按营业执照）后再制作"
+CN_NAME = "广州海狄五金建材有限公司"   # confirmed by the client 2026-10-11
 CF_LOGO = kit.ROOT / "tmp" / "claude-brand" / "canton-fair-140-red.png"
 A3L = pymupdf.Rect(0, 0, 1190.55, 841.89)
 MM = kit.MM
@@ -49,33 +49,33 @@ def cjk(page, x, y, txt, size, bold=True, color=INK, align="left"):
 
 
 def gate_sign(p, r, k):
-    p.draw_rect(r, color=None, fill=INK, width=0)
+    p.draw_rect(r, color=None, fill=WHITE, width=0)
     h = r.height
     mark_r = pymupdf.Rect(r.x0 + 0.06 * r.width, r.y0 + 0.24 * h, r.x0 + 0.47 * r.width, r.y1 - 0.24 * h)
-    place_mark(p, mark_r, hm.horizontal(), hm.BRASS)
+    place_mark(p, mark_r, hm.horizontal(), hm.INK)
     x = r.x0 + 0.53 * r.width
-    p.draw_line((x - 0.025 * r.width, r.y0 + 0.24 * h), (x - 0.025 * r.width, r.y1 - 0.24 * h), color=BRASS, width=max(0.6, 6 * k))
+    p.draw_line((x - 0.025 * r.width, r.y0 + 0.24 * h), (x - 0.025 * r.width, r.y1 - 0.24 * h), color=INK, width=max(0.6, 6 * k))
     room = r.x1 - 0.05 * r.width - x
     cn_size = min(0.2 * h, room / kit.font("cjk-bold").text_length(CN_NAME, 1))
-    cjk(p, x, r.y0 + 0.47 * h, CN_NAME, cn_size, color=WHITE)
+    cjk(p, x, r.y0 + 0.47 * h, CN_NAME, cn_size, color=INK)
     t = hm.LEGAL
     size = min(0.07 * h, (r.x1 - 0.05 * r.width - x) / kit.font("medium").text_length(t, 1))
-    text(p, x, r.y0 + 0.7 * h, t, size, "medium", BRASS)
+    text(p, x, r.y0 + 0.7 * h, t, size, "medium", INK)
 
 
 def reception_wall(p, r, k):
-    p.draw_rect(r, color=None, fill=INK, width=0)
+    p.draw_rect(r, color=None, fill=WHITE, width=0)
     m = hm.stacked()
     mr = pymupdf.Rect(r.x0, r.y0 + 0.14 * r.height, r.x1, r.y0 + 0.66 * r.height)
-    place_mark(p, mr, m, hm.BRASS)
-    cjk(p, (r.x0 + r.x1) / 2, r.y0 + 0.8 * r.height, CN_NAME, 0.055 * r.height, color=WHITE, align="center")
+    place_mark(p, mr, m, hm.INK)
+    cjk(p, (r.x0 + r.x1) / 2, r.y0 + 0.8 * r.height, CN_NAME, 0.055 * r.height, color=INK, align="center")
     size = 0.024 * r.height
     tr = kit.fit_track(hm.LEGAL, size, "medium", min(kit.text_width(hm.LEGAL, size, "medium", 120), 0.8 * r.width))
-    text(p, (r.x0 + r.x1) / 2, r.y0 + 0.88 * r.height, hm.LEGAL, size, "medium", BRASS, track=tr, align="center")
+    text(p, (r.x0 + r.x1) / 2, r.y0 + 0.88 * r.height, hm.LEGAL, size, "medium", INK, track=tr, align="center")
 
 
 def welcome_banner(p, r, k):
-    p.draw_rect(r, color=None, fill=INK, width=0)
+    p.draw_rect(r, color=None, fill=WHITE, width=0)
     h = r.height
     logo = pymupdf.Rect(r.x0 + 0.03 * r.width, r.y0 + 0.12 * h, r.x0 + 0.03 * r.width + 0.76 * h, r.y1 - 0.12 * h)
     if CF_LOGO.exists():
@@ -85,58 +85,58 @@ def welcome_banner(p, r, k):
     cx = (left + right) / 2
     head = "热烈欢迎第140届广交会客商莅临参观"
     size = min(0.25 * h, (right - left) / kit.font("cjk-bold").text_length(head, 1))
-    cjk(p, cx, r.y0 + 0.5 * h, head, size, color=WHITE, align="center")
+    cjk(p, cx, r.y0 + 0.5 * h, head, size, color=INK, align="center")
     sub = "WELCOME, 140TH CANTON FAIR BUYERS"
     sub_size = min(0.1 * h, (right - left) / (kit.font("display-semibold").text_length(sub, 1) + 0.12 * (len(sub) - 1)))
-    text(p, cx, r.y0 + 0.76 * h, sub, sub_size, "display-semibold", BRASS, align="center", track=120)
+    text(p, cx, r.y0 + 0.76 * h, sub, sub_size, "display-semibold", GREY, align="center", track=120)
     mr = pymupdf.Rect(r.x1 - 0.19 * r.width, r.y0 + 0.3 * h, r.x1 - 0.03 * r.width, r.y1 - 0.3 * h)
-    place_mark(p, mr, hm.horizontal(), hm.WHITE)
-    p.draw_line((r.x0, r.y1 - 0.06 * h), (r.x1, r.y1 - 0.06 * h), color=BRASS, width=max(0.6, 8 * k))
+    place_mark(p, mr, hm.horizontal(), hm.INK)
+    p.draw_line((r.x0, r.y1 - 0.06 * h), (r.x1, r.y1 - 0.06 * h), color=INK, width=max(0.6, 8 * k))
 
 
 def route_board(p, r, k):
-    p.draw_rect(r, color=None, fill=INK, width=0)
+    p.draw_rect(r, color=None, fill=WHITE, width=0)
     w, h = r.width, r.height
-    place_mark(p, pymupdf.Rect(r.x0 + 0.08 * w, r.y0 + 0.05 * h, r.x0 + 0.6 * w, r.y0 + 0.11 * h), hm.horizontal(), hm.WHITE)
-    cjk(p, r.x0 + 0.08 * w, r.y0 + 0.2 * h, "参观路线", 0.055 * h, color=WHITE)
-    text(p, r.x0 + 0.08 * w, r.y0 + 0.235 * h, "FACTORY TOUR", 0.022 * h, "display-semibold", BRASS, track=160)
+    place_mark(p, pymupdf.Rect(r.x0 + 0.08 * w, r.y0 + 0.05 * h, r.x0 + 0.6 * w, r.y0 + 0.11 * h), hm.horizontal(), hm.INK)
+    cjk(p, r.x0 + 0.08 * w, r.y0 + 0.2 * h, "参观路线", 0.055 * h, color=INK)
+    text(p, r.x0 + 0.08 * w, r.y0 + 0.235 * h, "FACTORY TOUR", 0.022 * h, "display-semibold", GREY, track=160)
     top, bottom = r.y0 + 0.3 * h, r.y1 - 0.08 * h
     step = (bottom - top) / (len(ZONES) - 1)
     lx = r.x0 + 0.13 * w
-    p.draw_line((lx, top), (lx, bottom), color=BRASS, width=max(0.6, 6 * k))
+    p.draw_line((lx, top), (lx, bottom), color=INK, width=max(0.6, 6 * k))
     for i, (cn, en) in enumerate(ZONES):
         y = top + i * step
-        p.draw_circle((lx, y), 0.028 * h, color=None, fill=BRASS)
-        text(p, lx, y + 0.012 * h, str(i + 1), 0.032 * h, "bold", INK, align="center")
-        cjk(p, lx + 0.07 * w, y + 0.006 * h, cn, 0.034 * h, color=WHITE)
-        text(p, lx + 0.07 * w, y + 0.035 * h, en.upper(), 0.016 * h, "medium", (0.75, 0.73, 0.69), track=120)
-    cjk(p, r.x1 - 0.08 * w, top + 0.01 * h, "您在这里", 0.022 * h, color=BRASS, align="right")
-    text(p, r.x1 - 0.08 * w, top + 0.035 * h, "YOU ARE HERE", 0.013 * h, "medium", BRASS, align="right", track=120)
+        p.draw_circle((lx, y), 0.028 * h, color=None, fill=INK)
+        text(p, lx, y + 0.012 * h, str(i + 1), 0.032 * h, "bold", WHITE, align="center")
+        cjk(p, lx + 0.07 * w, y + 0.006 * h, cn, 0.034 * h, color=INK)
+        text(p, lx + 0.07 * w, y + 0.035 * h, en.upper(), 0.016 * h, "medium", GREY, track=120)
+    cjk(p, r.x1 - 0.08 * w, top + 0.01 * h, "您在这里", 0.022 * h, color=INK, align="right")
+    text(p, r.x1 - 0.08 * w, top + 0.035 * h, "YOU ARE HERE", 0.013 * h, "medium", INK, align="right", track=120)
 
 
 def zone_plate(i: int) -> Callable:
     cn, en = ZONES[i]
 
     def draw(p, r, k):
-        p.draw_rect(r, color=None, fill=INK, width=0)
+        p.draw_rect(r, color=None, fill=WHITE, width=0)
         w, h = r.width, r.height
-        text(p, r.x0 + 0.08 * w, r.y0 + 0.5 * h, f"{i + 1:02d}", 0.4 * h, "display-semibold", BRASS)
-        cjk(p, r.x0 + 0.08 * w, r.y0 + 0.73 * h, cn, 0.13 * h, color=WHITE)
-        text(p, r.x0 + 0.08 * w, r.y0 + 0.86 * h, en.upper(), 0.06 * h, "medium", (0.75, 0.73, 0.69), track=140)
-        place_mark(p, pymupdf.Rect(r.x1 - 0.2 * w, r.y0 + 0.1 * h, r.x1 - 0.08 * w, r.y0 + 0.28 * h), hm.icon(), hm.WHITE)
+        text(p, r.x0 + 0.08 * w, r.y0 + 0.5 * h, f"{i + 1:02d}", 0.4 * h, "display-semibold", INK)
+        cjk(p, r.x0 + 0.08 * w, r.y0 + 0.73 * h, cn, 0.13 * h, color=INK)
+        text(p, r.x0 + 0.08 * w, r.y0 + 0.86 * h, en.upper(), 0.06 * h, "medium", GREY, track=140)
+        place_mark(p, pymupdf.Rect(r.x1 - 0.2 * w, r.y0 + 0.1 * h, r.x1 - 0.08 * w, r.y0 + 0.28 * h), hm.icon(), hm.INK)
     return draw
 
 
 def arrow_plate(p, r, k):
-    p.draw_rect(r, color=None, fill=INK, width=0)
+    p.draw_rect(r, color=None, fill=WHITE, width=0)
     w, h = r.width, r.height
-    cjk(p, r.x0 + 0.06 * w, r.y0 + 0.5 * h, "下一站  02  冲压车间", 0.24 * h, color=WHITE)
-    text(p, r.x0 + 0.06 * w, r.y0 + 0.78 * h, "NEXT  02  STAMPING", 0.13 * h, "medium", BRASS, track=140)
+    cjk(p, r.x0 + 0.06 * w, r.y0 + 0.5 * h, "下一站  02  冲压车间", 0.24 * h, color=INK)
+    text(p, r.x0 + 0.06 * w, r.y0 + 0.78 * h, "NEXT  02  STAMPING", 0.13 * h, "medium", INK, track=140)
     ax, ay = r.x1 - 0.16 * w, r.y0 + 0.5 * h
     s = 0.22 * h
     pts = [(ax - s, ay - s * 0.18), (ax + s * 0.2, ay - s * 0.18), (ax + s * 0.2, ay - s * 0.6),
            (ax + s * 1.05, ay), (ax + s * 0.2, ay + s * 0.6), (ax + s * 0.2, ay + s * 0.18), (ax - s, ay + s * 0.18)]
-    p.draw_polyline(pts + [pts[0]], color=None, fill=BRASS, closePath=True)
+    p.draw_polyline(pts + [pts[0]], color=None, fill=INK, closePath=True)
 
 
 @dataclass
@@ -152,23 +152,23 @@ class Sign:
 
 SIGNS = [
     Sign("gate", "门头招牌", (6000, 1200), gate_sign, "1",
-         "黑色铝塑板或拉丝黑钛不锈钢底板；标志用钛金不锈钢立体字（厚 50 mm），中文白色亚克力发光字或烤漆立体字；英文全称钛金平面字",
+         "白色铝塑板或白色烤漆铝板底板；标志用黑色烤漆不锈钢立体字（厚 50 mm），中文黑色烤漆立体字或黑色亚克力字；英文全称黑色平面字（UV 直印或刻字膜）",
          "厂区大门上方或主楼正面，下沿离地 ≥ 3 m；尺寸按门头实际宽度等比缩放"),
     Sign("reception", "前台背景墙", (3600, 1600), reception_wall, "1",
-         "墙面刷墨色（#14130F）或做黑色拉丝不锈钢背板；标志钛金或拉丝黄铜立体字，厚 30 mm，离墙 20 mm 暗装；中文与英文全称钛金平面字",
+         "白色墙面或白色烤漆铝板背板；标志黑色烤漆立体字（不锈钢或亚克力），厚 30 mm，离墙 20 mm 暗装；中文与英文全称 10 mm 黑色亚克力字或黑色平面字",
          "接待前台正后方墙面，标志中心离地约 1.8 m；前台台面不要高过标志下沿"),
     Sign("welcome", "欢迎横幅", (6000, 900), welcome_banner, "1–2",
-         "户外喷绘布（加厚，四边打扣眼）或室内 KT 板；广交会标志必须用主办方官方矢量文件（本稿为截图占位，分辨率不够印刷）",
+         "白底黑字。户外喷绘布（加厚，四边打扣眼）或室内 KT 板；广交会标志必须用主办方官方矢量文件（本稿为截图占位，分辨率不够印刷）",
          "大门内侧或接待楼入口上方，参观期间悬挂；第二块可挂在展厅入口"),
     Sign("route", "参观路线总图", (600, 900), route_board, "1",
-         "5 mm 黑色亚克力或铝板 UV 直印，配不锈钢落地展架（总高约 1.6 m）",
+         "5 mm 白色亚克力或白色铝板，墨色 UV 直印，配黑色烤漆落地展架（总高约 1.6 m）",
          "接待区或展厅入口，客户进门第一眼能看到的位置"),
 ]
 SIGNS += [Sign(f"zone-{i + 1:02d}", f"区域门牌 {i + 1:02d} {cn}", (400, 300), zone_plate(i), "1",
-               "3 mm 黑色铝板 UV 直印或亚克力丝印，背面双面胶 + 螺丝固定",
+               "3 mm 白色铝板墨色 UV 直印或白色亚克力丝印，背面双面胶 + 螺丝固定",
                f"{cn}入口旁墙面或门框右侧，牌中心离地 1.5 m") for i, (cn, _) in enumerate(ZONES)]
 SIGNS.append(Sign("arrow", "方向指示牌（模板）", (600, 200), arrow_plate, "按需",
-                  "3 mm 黑色铝板 UV 直印；同一模板按下一站编号和方向改文字、镜像箭头",
+                  "3 mm 白色铝板墨色 UV 直印；同一模板按下一站编号和方向改文字、镜像箭头",
                   "每个拐角和岔路口，离地 1.5 m 墙面，或落地牌"))
 
 
@@ -187,7 +187,7 @@ def dim_line(p, x0, y0, x1, y1, label, color=GREY):
 
 def design_page(doc, s: Sign, n: int, total: int) -> None:
     p = doc.new_page(width=A3L.width, height=A3L.height)
-    text(p, 48, 52, f"{n:02d} / {total:02d}", 8, "medium", BRASS, track=160)
+    text(p, 48, 52, f"{n:02d} / {total:02d}", 8, "medium", GREY, track=160)
     cjk(p, 48, 84, s.title, 22)
     text(p, A3L.width - 48, 84, f"{s.size[0]:g} × {s.size[1]:g} mm", 14, "semibold", INK, align="right")
     p.draw_line((48, 100), (A3L.width - 48, 100), color=RULE, width=0.5)
@@ -197,6 +197,7 @@ def design_page(doc, s: Sign, n: int, total: int) -> None:
     r = pymupdf.Rect(area.x0 + (area.width - w) / 2, area.y0 + (area.height - h) / 2, 0, 0)
     r.x1, r.y1 = r.x0 + w, r.y0 + h
     s.draw(p, r, k)
+    p.draw_rect(r, color=RULE, width=0.6)   # edge of a white sign; not in the production file
     dim_line(p, r.x0, r.y0 - 14, r.x1, r.y0 - 14, f"{s.size[0]:g} mm")
     dim_line(p, r.x1 + 14, r.y0, r.x1 + 14, r.y1, f"{s.size[1]:g} mm")
     y = 610
@@ -207,26 +208,24 @@ def design_page(doc, s: Sign, n: int, total: int) -> None:
         if rc < 0:
             raise ValueError(f"{s.key}: note overflows")
         y += 52
-    if CN_NAME and s.key in ("gate", "reception"):
-        cjk(p, 48, A3L.height - 36, "注意：" + CN_WARNING, 10, color=(0.75, 0.2, 0.15))
     if s.key == "welcome":
         cjk(p, 48, A3L.height - 36, "注意：橙色虚线框内的广交会标志是截图占位，请向主办方索取官方矢量文件后替换", 10, color=(0.75, 0.2, 0.15))
 
 
 def plan_page(doc, total: int) -> None:
     p = doc.new_page(width=A3L.width, height=A3L.height)
-    text(p, 48, 52, "PLAN", 8, "medium", BRASS, track=160)
+    text(p, 48, 52, "PLAN", 8, "medium", GREY, track=160)
     cjk(p, 48, 84, "怎么挂：参观动线与摆放位置（示意，按厂区实际调整）", 22)
     p.draw_line((48, 100), (A3L.width - 48, 100), color=RULE, width=0.5)
     stops = [("大门", "门头招牌 + 欢迎横幅"), ("接待区", "前台背景墙 + 参观路线总图")] + \
             [(cn, f"区域门牌 {i + 1:02d}") for i, (cn, _) in enumerate(ZONES)]
     x0, x1, y = 90, A3L.width - 90, 230
     step = (x1 - x0) / (len(stops) - 1)
-    p.draw_line((x0, y), (x1, y), color=BRASS, width=2)
+    p.draw_line((x0, y), (x1, y), color=INK, width=2)
     for i, (name, what) in enumerate(stops):
         x = x0 + i * step
-        p.draw_circle((x, y), 15, color=None, fill=INK if i < 2 else BRASS)
-        text(p, x, y + 5, "★" if i < 2 else str(i - 1), 12, "cjk-bold" if i < 2 else "bold", WHITE if i < 2 else INK, align="center")
+        p.draw_circle((x, y), 15, color=None, fill=INK)
+        text(p, x, y + 5, "★" if i < 2 else str(i - 1), 12, "cjk-bold" if i < 2 else "bold", WHITE, align="center")
         cjk(p, x, y - 30, name, 11, align="center")
         p.insert_textbox(pymupdf.Rect(x - step / 2 + 4, y + 26, x + step / 2 - 4, y + 70), what, fontname="f-cjk",
                          fontfile=str(kit.FONTS["cjk"]), fontsize=8.5, color=GREY, align=1, lineheight=1.4)
@@ -248,7 +247,7 @@ def plan_page(doc, total: int) -> None:
 
 def job_list_page(doc) -> None:
     p = doc.new_page(width=A3L.width, height=A3L.height)
-    text(p, 48, 52, "JOB LIST", 8, "medium", BRASS, track=160)
+    text(p, 48, 52, "JOB LIST", 8, "medium", GREY, track=160)
     cjk(p, 48, 84, "制作清单（给广告公司）", 22)
     p.draw_line((48, 100), (A3L.width - 48, 100), color=RULE, width=0.5)
     cols = [(48, "项目"), (250, "尺寸 mm"), (360, "数量"), (430, "材料与工艺")]
@@ -271,7 +270,7 @@ def job_list_page(doc) -> None:
             raise ValueError(f"{s.key}: material overflows")
         y += 66
     notes = [
-        "颜色：墨色 #14130F（CMYK 0/5/25/92，大面积可用 K100）；铜色用钛金不锈钢或拉丝黄铜实物，不用金色油漆；白色。",
+        "颜色只用两种，和官网一致：墨色 #14130F（CMYK 0/5/25/92；立体字和大面积用黑色烤漆或 K100）和白色。不用金色、铜色、钛金。",
         "字体：英文 Archivo（开源，随文件附）；中文请换成思源黑体 Bold（免费可商用），本稿中文为微软雅黑排版示意，微软雅黑商用需另购授权。",
         "文件：本 PDF 为矢量，“制作文件-1比10矢量”文件夹内每块牌一个 PDF，按 10 倍放大即实际尺寸；标志源文件见 HYDE 标志规范。",
         "开工前请先出一块门牌打样，确认颜色和字号后再批量做。",
