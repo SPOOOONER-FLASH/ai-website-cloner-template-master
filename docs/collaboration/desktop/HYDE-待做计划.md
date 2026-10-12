@@ -1,6 +1,6 @@
 # HYDE 待做计划
 
-生成：`node scripts/organize-desktop-hyde.mjs`，来源是工程目标清单（docs/collaboration/tasks/2026-09-24-hyde-engineering-goal.md），2026-10-10 更新。只列没完成的。
+生成：`node scripts/organize-desktop-hyde.mjs`，来源是工程目标清单（docs/collaboration/tasks/2026-09-24-hyde-engineering-goal.md），2026-10-12 更新。只列没完成的。
 
 ## 等你（甲方）（15）
 
