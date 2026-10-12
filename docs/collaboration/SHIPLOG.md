@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 465 次提交
+最近 30 天 · 共 466 次提交
 
 ## 2026-10-11
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:48 | 中立 | 手动操作：服务器硬盘清理第 1 步（只查看） | `7a4e65ec7ae` |
 | 22:46 | 中立 | Argentina 预览页只在 en/es：列入 PARTIAL_ROUTES（解 r34 hreflang 拦截） | `41108d53c90` |
 | 22:36 | 中立 | 纪律：每次发布后跑 mirror-to-gitlab（服务器改从 GitLab 拉） | `36d61201a69` |
 | 22:36 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cd8771c2374` |
