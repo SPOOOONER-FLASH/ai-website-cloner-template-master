@@ -299,7 +299,7 @@ export function SiteHeader({
                 with the ten-language list below ~1700px. Below xl it stays in the grid as before.
               */}
               {/* prefetch={false} on every header link: see HeaderLink in HeaderIslands.tsx (2026-09-30). */}
-              <Link href={homeHref} prefetch={false} className={cn("flex min-w-0 flex-shrink-0 items-center text-ink xl:min-w-max xl:flex-1 xl:justify-center", navigationStyles.home)}>
+              <Link href={homeHref} prefetch={false} aria-label="HYDE" className={cn("flex min-w-0 flex-shrink-0 items-center text-ink xl:min-w-max xl:flex-1 xl:justify-center", navigationStyles.home)}>
                 <Wordmark className="pe-8 xl:pe-0" />
               </Link>
 
