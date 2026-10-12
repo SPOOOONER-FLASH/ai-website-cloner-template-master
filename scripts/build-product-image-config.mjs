@@ -53,7 +53,7 @@ function homepageModels() {
   for (const model of ["307", "311"]) models.add(model);
 
   /* ArgentinaAr4Showcase — the seasonal market collection. */
-  for (const model of ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"]) models.add(model);
+  for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) models.add(model);
 
   /* FeatureColumns — the door coordinator card carries a product plate. */
   models.add("DC02");

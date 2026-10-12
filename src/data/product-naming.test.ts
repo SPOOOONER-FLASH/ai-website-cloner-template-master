@@ -172,7 +172,7 @@ test("a slug spells out the model it belongs to", () => {
     */
     if ((product as { modelTbc?: boolean }).modelTbc) continue;
     /*
-      Contains, not starts-with. The AR4 range is slugged `hyde-ar4-101-mortise-lock` — a
+      Contains, not starts-with. The AR4 range is slugged `hyde-ar4-111-mortise-lock` — a
       brand prefix the catalogue puts there on purpose (see ArgentinaAr4Showcase.tsx), and
       requiring the model first would fail every one of them for being correct.
 

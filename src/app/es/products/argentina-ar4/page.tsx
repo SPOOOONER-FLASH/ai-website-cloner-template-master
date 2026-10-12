@@ -6,14 +6,14 @@ import { getProductByModel } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 
-const models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"];
+const models = ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"];
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/products/argentina-ar4",
   locale: "es",
   title: "Colección de cerraduras HYDE Argentina AR-4",
   description:
-    "Cuatro cerraduras de embutir HYDE para distribuidores del mercado argentino, marcas privadas y consultas OEM. Modelos AR4-110, AR4-140, AR4-101 y AR4-1121.",
+    "Cuatro cerraduras de embutir HYDE para distribuidores del mercado argentino, marcas privadas y consultas OEM. Modelos AR4-110, AR4-140, AR4-111 y AR4-1121.",
   image: "/images/editorial/argentina-ar4-entry.webp",
   imageAlt: "Colección de cerraduras HYDE Argentina AR-4",
 });

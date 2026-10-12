@@ -32,7 +32,7 @@ for (const locale of locales) {
     const block = html.match(/<section\b[^>]*data-content-module="argentina-ar4"[^>]*>[\s\S]*?<\/section>/)?.[0];
     assert.ok(block, `${locale}: original AR4 section restored`);
     assert.ok(html.indexOf('data-bau-showcase=""') < html.indexOf('data-content-module="argentina-ar4"'), `${locale}: AR4 follows BAU`);
-    for (const model of ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"]) assert.ok(block.includes(model), `${locale}: ${model}`);
+    for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) assert.ok(block.includes(model), `${locale}: ${model}`);
     assert.ok(block.includes("argentina-ar4-entry"), `${locale}: original hero`);
     assert.doesNotMatch(html, /<h2\b[^>]*id="flagship-tooling-heading"/, `${locale}: repeated flagship removed`);
   }
