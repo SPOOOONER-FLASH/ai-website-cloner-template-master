@@ -6,14 +6,23 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 468 次提交
+最近 30 天 · 共 477 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 03:45 | 中立 | 硬盘清理第 2 步：换安全检查（服务器是 grafted 浅仓库），加入侵检测日志清理 | `e479312b90b` |
-| 02:15 | 中立 | 手动操作：硬盘清理第 2 步（回收站、旧 GitHub 历史 gc）+ GitHub 工单回复稿 | `6cd931ee308` |
+| 03:47 | 中立 | 合并本地提交（ship 旁路合并） | `fd4e64dcdf3` |
+| 03:34 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 416dd88cec8c | `8d863f50248` |
+| 03:11 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 3ead954fa4f6 | `416dd88cec8` |
+| 03:15 | 中立 | 手册待办表更新（删 6 条）；新增 Ahrefs/Semrush 只看这几样；桌面整理跳过正在打开的文件和 Word 锁文件 | `566c55408bd` |
+| 03:03 | 中立 | 合并本地提交（ship 旁路合并） | `bcd2ec419d0` |
+| 02:58 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `8fb1b9d4803` |
+| 02:57 | HYDE | 阿根廷集合上线：去掉 OFFLINE/noindex，加入 sitemap，AR-4 页加入口 | `d740408d9b2` |
+| 02:52 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `ef012d967b0` |
+| 02:51 | 中立 | 阿根廷集合：51 张图去冲压品牌字（Candex/INDUSTRIA ARGENTINA/PICCOLO），重打 HYDE 水印 | `25422cf0dc4` |
+| 02:18 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `1e1e8f6d420` |
+| 02:18 | 中立 | 旧地址 hyde-ar4-101 补上 301；跳转生成器遇到过时导出时报错，不再静默跳过 | `ab203bd0b09` |
 | 00:45 | 中立 | 手册：服务器改从 GitLab 拉取，令牌步骤移入 archive；顶部改为硬盘清理第 1 步 | `32238835a5f` |
 | 00:35 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 4c1c1d5ad709 | `f752570b14a` |
 | 00:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d928256ef6c3 | `4c1c1d5ad70` |
