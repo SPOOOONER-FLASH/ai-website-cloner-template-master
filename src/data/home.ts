@@ -37,7 +37,8 @@ export const hero1: HeroModuleContent = {
 /**
  * Slide order is a commercial decision, not a design one: panic exit devices are the
  * flagship line, so they hold the first frame — the one every visitor sees and the one
- * that renders in link previews. The other two rotate behind it.
+ * that renders in link previews. The two Argentina market collections follow it (client,
+ * 2026-10-12); their wide images are placeholders until the editorial pair arrives.
  */
 export const heroCarousel: HeroCarouselContent = {
   ariaLabel: "Featured door hardware",
@@ -46,13 +47,37 @@ export const heroCarousel: HeroCarouselContent = {
       variant: "stacked",
       media: {
         ratio: "1800 / 900",
-        src: "/images/editorial/home-panic-exit-bars.webp",
-        label: "306-D double-door exit hardware with push bars and visible upper and lower rods in a pale architectural setting",
+        src: "/images/editorial/home-panic-exit-double-door.webp",
+        label: "Double-door exit hardware: push bars on both leaves and surface vertical rods on the closed leaf, opening onto an outdoor courtyard",
       },
       title: "Panic Exit Devices",
       body: "One push, and the door opens. Push bars, outside trims and lock cases for escape and fire doors, specified as a set.",
       linkLabel: "Explore exit devices",
       href: "/products/panic-exit-devices",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1672 / 941",
+        src: "/images/editorial/argentina-ar4-entry.webp",
+        label: "Contemporary architectural threshold in Buenos Aires",
+      },
+      title: "HYDE Argentina AR-4",
+      body: "Compact mortise lock bodies selected for Argentine distributors, private-label programs and OEM orders.",
+      linkLabel: "Explore the AR-4 collection",
+      href: "/products/argentina-ar4",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1800 / 900",
+        src: "/images/editorial/home-argentina-collection.webp",
+        label: "AR5-115 mortise lock with its separate long faceplate, nickel-plated, on a white field",
+      },
+      title: "HYDE Argentina Collection",
+      body: "Mortise locks, deadlocks and narrow-stile locks made on HYDE molds for Argentine distributors, with faceplate and case dimensions for every model.",
+      linkLabel: "Explore the Argentina collection",
+      href: "/products/argentina",
     },
     hero1,
     {
