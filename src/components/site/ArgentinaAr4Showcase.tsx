@@ -5,6 +5,7 @@ import { getProductByModel } from "@/data/products";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { dict, t } from "@/lib/i18n";
+import argentinaCollection from "@/data/generated/argentina-collection.json";
 
 const ar4Models = ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"] as const;
 type LocalizedProduct = Product & { nameEs?: string; namePt?: string };
@@ -143,7 +144,13 @@ export function ArgentinaAr4Showcase({
         </div>
 
         {pageHeading ? (
-          <div className="col-span-full mt-8 flex justify-end">
+          <div className="col-span-full mt-8 flex flex-wrap justify-end gap-x-32 gap-y-12">
+            {/* The full Argentina collection exists in English and Spanish only (PARTIAL_ROUTES). */}
+            <ArrowLink href={locale === "es" ? "/es/products/argentina/" : "/products/argentina/"}>
+              {locale === "es"
+                ? `Los ${argentinaCollection.length} modelos para Argentina`
+                : `All ${argentinaCollection.length} Argentina models`}
+            </ArrowLink>
             <ArrowLink href={`${locale === "en" ? "" : `/${locale}`}/contact/`}>
               {locale === "es" ? "Consultar la colección" : "Discuss the collection"}
             </ArrowLink>

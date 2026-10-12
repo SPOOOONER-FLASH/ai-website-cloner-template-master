@@ -37,3 +37,4 @@ node scripts/argentina/build-collection.mjs              # → src/data/generate
 ## 进度
 
 - 10-12：51 张图去品牌字完成，每张经独立复核通过（只改方框内像素；面板上的模具号数字保留，非品牌）。重新打 HYDE 水印、重建集合数据。页面仍 `OFFLINE`，等甲方看过对比图后放开。
+- 10-12：甲方「上线」。去掉 OFFLINE 与 noindex，加入 sitemap（仅 en/es，PARTIAL_ROUTES），AR-4 页加入口链接（es → /es/products/argentina/，其余语种 → 英文页）。本地预览：55 卡片、hreflang 仅 en/es/x-default、页面无 Candex/Elabora 字样。
