@@ -1,7 +1,7 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
   "site": "hyde",
-  "totalProducts": 613,
+  "totalProducts": 616,
   "fields": {
     "backset": {
       "title": "Backset",
@@ -71,9 +71,9 @@
         "Faceplate",
         "Face plate"
       ],
-      "products": 7,
-      "rows": 7,
-      "distinctValues": 7
+      "products": 8,
+      "rows": 8,
+      "distinctValues": 8
     },
     "finish": {
       "title": "Finish",
@@ -86,9 +86,9 @@
         "Surface Finish",
         "Surface Finish Options"
       ],
-      "products": 326,
-      "rows": 335,
-      "distinctValues": 84
+      "products": 329,
+      "rows": 338,
+      "distinctValues": 87
     }
   },
   "unregisteredLabels": {}
