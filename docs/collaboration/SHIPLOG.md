@@ -6,19 +6,39 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 458 次提交
+最近 30 天 · 共 473 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 02:56 | 中立 | Add unified-light egress hero review and source artifacts | `a45b5f0d43e` |
+| 03:03 | 中立 | 合并本地提交（ship 旁路合并） | `bcd2ec419d0` |
+| 02:58 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `8fb1b9d4803` |
+| 02:57 | HYDE | 阿根廷集合上线：去掉 OFFLINE/noindex，加入 sitemap，AR-4 页加入口 | `d740408d9b2` |
+| 02:52 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `ef012d967b0` |
+| 02:51 | 中立 | 阿根廷集合：51 张图去冲压品牌字（Candex/INDUSTRIA ARGENTINA/PICCOLO），重打 HYDE 水印 | `25422cf0dc4` |
+| 02:18 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `1e1e8f6d420` |
+| 02:18 | 中立 | 旧地址 hyde-ar4-101 补上 301；跳转生成器遇到过时导出时报错，不再静默跳过 | `ab203bd0b09` |
+| 00:45 | 中立 | 手册：服务器改从 GitLab 拉取，令牌步骤移入 archive；顶部改为硬盘清理第 1 步 | `32238835a5f` |
+| 00:35 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 4c1c1d5ad709 | `f752570b14a` |
+| 00:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 d928256ef6c3 | `4c1c1d5ad70` |
+| 00:17 | 中立 | 规格书重生成：AR4-111 改名后补齐 | `ad17be238d8` |
+| 00:10 | 中立 | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `0d126b5c9be` |
+| 00:10 | HYDE | 7240 改名 AR4-101 → AR4-111（安全锁），旧地址 301，七语种同步 | `0071ea58c9b` |
+| 00:03 | HYDE | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `1c486a85811` |
+| 00:03 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/argentina-collection | `6e002d2c7d6` |
+
+## 2026-10-11
+
+| 时间 | 哪一边 | 做了什么 | 提交 |
+|---|---|---|---|
+| 23:59 | HYDE | 阿根廷集合：美式拼写；只登记英文+西语（PARTIAL_ROUTES）；站点地图；修图源优先；任务与授权记录 | `0173ebed5b9` |
 
 ## 2026-10-10
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 04:44 | 中立 | 合并本地提交（ship 旁路合并） | `cc4fb0e4e51` |
+| 04:55 | HYDE | 阿根廷产品集合（预览，未上线）：Candex 45 + Elabora 10，HYDE 水印，规格表 | `638f1ffa46b` |
 | 04:28 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/project-thread-464rgp | `85c58de7563` |
 | 04:28 | 中立 | Elabora/Piccolo 公开尺寸与 AR4 工厂图纸对照（只核对，不上网站） | `06dbe5d0287` |
 | 00:44 | 中立 | 产品查找器结果卡片补传 locale：韩/西等语种点卡片不再跳到英文页 | `94331c4b51b` |
