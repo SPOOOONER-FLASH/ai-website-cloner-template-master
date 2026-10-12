@@ -6,20 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 493 次提交
+最近 30 天 · 共 487 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 14:34 | 中立 | 询价表单：从 #model=… 片段进来时滚到表单（否则停在上一页的滚动位置，落在页脚附近） | `988ea856abd` |
-| 14:20 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 fe9b27090e19 | `18d929ecfb1` |
-| 14:07 | 中立 | 客户待确认：资质与产品说法 9 问（docx）；手册顶部换成这件事，撤掉 Ahrefs 导出请求 | `6d3e339ccea` |
-| 14:06 | HYDE · 发布 HYDE | Merge origin/main（package.json 测试列表取并集） | `04dabe5fbc9` |
-| 13:58 | HYDE | 文章买家区块复核修正：下一步链接本地化、无障碍标签、门开孔路由；出口装置对比与 UL 305 两篇十语去掉已删的防火时长；规格书重出 | `df38faab13b` |
-| 08:41 | 中立 | 文章买家区块：下一步链接走 localisedHref（价格单只有英文版，/fr/request/price-list/ 会 404） | `586041d7b46` |
-| 08:31 | HYDE | 指南/新闻推产品：ArticleBuyerBlock、报价链接改片段并去 nofollow、29 条文章路由；删除无证书支撑的产品认证说法（#166 #167） | `7bd89795ed2` |
-| 07:51 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 6550cdf25db5 | `07a7136601d` |
+| 16:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `4667081845e` |
+| 16:54 | 中立 | Flyer: drop bathroom, floor springs, closers; add Alibaba flagship models | `c402d73955b` |
 | 08:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fae6618822c` |
 | 08:01 | 中立 | 传单：逃生推杆按甲方目录页选型、撤三款老锁体（#55）；ISO 问题记录（#56） | `637e3e6297e` |
 | 07:54 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `7a4a3863ce8` |
