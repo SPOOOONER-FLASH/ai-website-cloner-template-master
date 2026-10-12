@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 485 次提交
+最近 30 天 · 共 486 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 07:56 | 中立 | 产品 meta description 过短：生成器补产品自己的 summary 首句（十语，#162） | `9cb095fa7bc` |
 | 07:51 | HYDE | 指南：finish-code-reference 补 BHMA 652（十语）；欧标锁芯尺寸表十语 SEO 标题/描述（#163 #164） | `705cefd58ce` |
 | 07:46 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `17bcae78fc0` |
 | 07:45 | 中立 | 目标 165–167：Ahrefs 自查、指南推产品与资质 | `f906666289f` |
