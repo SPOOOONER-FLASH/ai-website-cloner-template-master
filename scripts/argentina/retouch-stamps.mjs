@@ -15,10 +15,10 @@
   plus a little grain measured from those same strips, so the patch is not glassier than the
   metal around it. The noise is seeded per box: the same spec always gives the same pixels.
 
-    node scripts/argentina/retouch-stamps.mjs                 every spec in tmp/claude-argentina/stamps/
+    node scripts/argentina/retouch-stamps.mjs                 every spec in scripts/argentina/stamps/
     node scripts/argentina/retouch-stamps.mjs 117_Candex_niq  one spec
 
-  Spec: tmp/claude-argentina/stamps/<name>.json = { "file": "candex-img/117_Candex_niq.jpg",
+  Spec: scripts/argentina/stamps/<name>.json = { "file": "candex-img/117_Candex_niq.jpg",
         "boxes": [{ "x": 0, "y": 0, "w": 0, "h": 0, "mode": "v" }] }   (source pixels)
   Out:  tmp/claude-argentina/retouched/<name>.png and retouch-preview/<name>.png (before | after)
 */
@@ -27,7 +27,8 @@ import { join, basename } from "node:path";
 import sharp from "sharp";
 
 const ROOT = join("..", "claude-argentina");
-const SPECS = join(ROOT, "stamps");
+/* The specs are the record of every retouch (51 files, reviewed one by one 2026-10-12): kept in the repo. */
+const SPECS = join("scripts", "argentina", "stamps");
 const OUT = join(ROOT, "retouched");
 const PREVIEW = join(ROOT, "retouch-preview");
 mkdirSync(OUT, { recursive: true });
