@@ -171,6 +171,8 @@ export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<st
   ["/bau-2027", ["en", "de"]],
   /* The privacy notice (2026-09-28): German because the BAU form collects data from German visitors. */
   ["/privacy", ["en", "de"]],
+  /* Candex + Elabora preview (2026-10-10), withheld from the sitemap: built in en and es only. */
+  ["/products/argentina", ["en", "es"]],
 ]);
 
 /** The locales a partial route exists in, or null for an ordinary path. */
@@ -273,7 +275,8 @@ const PORTUGUESE_MIRROR_PREFIXES = [
  * at a URL that does not exist. `audit-seo` caught it as `hreflang-target-missing`, which
  * is exactly the error hreflang is punished for.
  */
-const PORTUGUESE_MIRROR_EXCEPTIONS = new Set(["/products/argentina-ar4"]);
+// /products/argentina (Candex + Elabora collection, 2026-10-10) is the same kind: en and es only.
+const PORTUGUESE_MIRROR_EXCEPTIONS = new Set(["/products/argentina-ar4", "/products/argentina"]);
 
 /** True when the given ENGLISH path also exists under /pt. */
 export function hasPortugueseMirror(enPath: string): boolean {
