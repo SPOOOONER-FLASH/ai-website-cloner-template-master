@@ -1078,6 +1078,9 @@
   "Deadbolt throw": [
     "src/data/hardware-terms.ts:134"
   ],
+  "Deadlock": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:38"
+  ],
   "Deadlock, round bolts": [
     "src/components/site/ArgentinaCollection.tsx:70"
   ],
@@ -1538,10 +1541,11 @@
     "src/components/site/products-architecture.ts:196"
   ],
   "Explore the AR-4 collection": [
-    "src/components/site/ArgentinaAr4Showcase.tsx:18",
+    "src/components/site/ArgentinaAr4Showcase.tsx:29",
     "src/data/home.ts:67"
   ],
   "Explore the Argentina collection": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:34",
     "src/data/home.ts:79"
   ],
   "Explore the catalog": [
@@ -1724,7 +1728,7 @@
     "src/data/company.ts:46"
   ],
   "Four compact mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries.": [
-    "src/components/site/ArgentinaAr4Showcase.tsx:17"
+    "src/components/site/ArgentinaAr4Showcase.tsx:28"
   ],
   "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries. Models AR4-110, AR4-140, AR4-111 and AR4-1121.": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:18"
@@ -1981,11 +1985,11 @@
     "src/data/home.ts:194"
   ],
   "HYDE Argentina AR-4": [
-    "src/components/site/ArgentinaAr4Showcase.tsx:16",
+    "src/components/site/ArgentinaAr4Showcase.tsx:27",
     "src/data/home.ts:65"
   ],
   "HYDE Argentina AR-4 market collection": [
-    "src/components/site/ArgentinaAr4Showcase.tsx:21"
+    "src/components/site/ArgentinaAr4Showcase.tsx:31"
   ],
   "HYDE Argentina AR-4 mortise lock collection": [
     "src/components/locale-pages/ArgentinaAr4Page.tsx:19"
@@ -1994,6 +1998,7 @@
     "src/components/locale-pages/ArgentinaAr4Page.tsx:17"
   ],
   "HYDE Argentina Collection": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:32",
     "src/components/site/ArgentinaCollection.tsx:19",
     "src/data/home.ts:77"
   ],
@@ -2397,6 +2402,9 @@
   "More topics": [
     "src/components/site/GuideLibrary.tsx:13"
   ],
+  "Mortise lock": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:36"
+  ],
   "mortise lock case": [
     "src/data/category-sourcing.ts:45"
   ],
@@ -2411,6 +2419,9 @@
   ],
   "Mortise locks, deadlocks and narrow-stile locks made on HYDE molds for Argentine distributors, with faceplate and case dimensions for every model.": [
     "src/data/home.ts:78"
+  ],
+  "Mortise locks, deadlocks and sliding-door locks made on HYDE molds for Argentine distributors: the AR-5 range and the AR-4 selection.": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:33"
   ],
   "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalog.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:20"
@@ -2459,6 +2470,9 @@
   ],
   "Narrow stile": [
     "src/data/hardware-terms.ts:533"
+  ],
+  "Narrow-stile lock": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:37"
   ],
   "Need another file?": [
     "src/components/locale-pages/DownloadsPage.tsx:152"
@@ -3227,7 +3241,7 @@
     "src/components/locale-pages/ProductFinderPage.tsx:62"
   ],
   "Seasonal market focus · Argentina": [
-    "src/components/site/ArgentinaAr4Showcase.tsx:15"
+    "src/components/site/ArgentinaAr4Showcase.tsx:26"
   ],
   "Security mortise lock": [
     "src/components/site/ArgentinaCollection.tsx:61",
@@ -3420,6 +3434,9 @@
   ],
   "sliding hook lock": [
     "src/data/category-sourcing.ts:47"
+  ],
+  "Sliding-door lock": [
+    "src/components/site/ArgentinaAr4Showcase.tsx:39"
   ],
   "Social Media": [
     "src/components/site/SiteFooter.tsx:290"
@@ -3735,9 +3752,6 @@
   ],
   "The form reaches the same export desks as the addresses above. If it cannot send, the page keeps everything you typed and offers it as a ready-addressed email — your inquiry is not lost either way.": [
     "src/components/locale-pages/ContactPage.tsx:177"
-  ],
-  "The full Argentina collection": [
-    "src/components/site/ArgentinaAr4Showcase.tsx:19"
   ],
   "The furniture on the outside face — lever, knob, pull or plate — supplied separately from the device it operates. On a panic exit device the bar is the inside and the trim is the outside, and they are two order lines.": [
     "src/data/hardware-terms.ts:386"

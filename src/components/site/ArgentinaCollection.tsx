@@ -98,7 +98,7 @@ function Card({ item, lang }: { item: Item; lang: Lang }) {
   const t = copy[lang];
   const itemName = name(item, lang);
   return (
-    <article className="flex flex-col border border-line bg-surface">
+    <article id={item.id} className="flex scroll-mt-[160px] flex-col border border-line bg-surface">
       <MediaPlaceholder
         src={item.image}
         ratio="1 / 1"
