@@ -173,6 +173,8 @@ export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<st
   ["/privacy", ["en", "de"]],
   /* The Argentina collection (launched 2026-10-12): written for Argentine distributors, en and es only. */
   ["/products/argentina", ["en", "es"]],
+  /* The Brazil panic-bar collection (2026-10-12): written for Brazilian buyers, en and pt only. */
+  ["/products/brazil", ["en", "pt"]],
 ]);
 
 /** The locales a partial route exists in, or null for an ordinary path. */

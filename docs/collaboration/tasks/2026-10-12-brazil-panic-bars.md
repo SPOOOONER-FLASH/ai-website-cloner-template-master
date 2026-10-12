@@ -34,4 +34,6 @@ Claude 先提出过顾虑：2026-02-13 的采购表（`sample buying list2026021
 
 ## 进度
 
-- 10-12：抓取进行中；授权与范围记录（本文件）。
+- 10-12：授权与范围记录（本文件）。
+- 10-12：抓取完成：6 个品牌 103 条（Saga、MRA、Tivui 被 Mercado Livre 拦截或无官网，未取到）。三套预览 → 甲方选「A 多图 + 选型器」，并要求不写品牌数与厂商（下游客户，保密）。合成页 `/products/brazil/` + `/pt/products/brazil/` 已建，noindex，见 `agent-updates/2026-10-12-claude-brazil-proposals.md`。
+- 待办：照片去品牌字 + HYDE 水印 → 甲方「上线」→ 去 noindex、sitemap、首页与菜单入口（甲方：「都加……对所有人展示」）。

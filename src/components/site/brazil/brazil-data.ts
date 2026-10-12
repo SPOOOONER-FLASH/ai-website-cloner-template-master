@@ -8,7 +8,7 @@ import type { DoorConfig } from "./DoorDiagram";
 */
 export type Lang = "en" | "pt";
 export type Family = "single" | "double" | "trim" | "accessory";
-export type Colour = "black" | "grey" | "white" | "red" | "silver";
+export type Colour = "black" | "grey" | "white" | "red" | "silver" | "stainless";
 export type Outside = "none" | "lever" | "lever-key";
 
 export interface BrazilItem {
@@ -37,6 +37,7 @@ export const COLOUR_HEX: Record<Colour, string> = {
   white: "#f4f4f1",
   red: "#b22a22",
   silver: "#c9cbcc",
+  stainless: "#a9acad",
 };
 
 export const t = {
@@ -56,7 +57,7 @@ export const t = {
     } satisfies Record<Family, string>,
     locking: { lateral: "Side latch", vertical: "Top and bottom rods" },
     outside: { none: "No outside access", lever: "Outside lever", "lever-key": "Outside lever with key" } satisfies Record<Outside, string>,
-    colours: { black: "Black", grey: "Grey", white: "White", red: "Red", silver: "Aluminium" } satisfies Record<Colour, string>,
+    colours: { black: "Black", grey: "Gray", white: "White", red: "Red", silver: "Aluminum", stainless: "Brushed stainless" } satisfies Record<Colour, string>,
     contact: "Ask for samples and prices",
     contactHref: "/contact/",
   },
@@ -76,7 +77,7 @@ export const t = {
     } satisfies Record<Family, string>,
     locking: { lateral: "Trava lateral", vertical: "Travamento vertical" },
     outside: { none: "Sem acesso externo", lever: "Maçaneta externa", "lever-key": "Maçaneta externa com chave" } satisfies Record<Outside, string>,
-    colours: { black: "Preto", grey: "Cinza", white: "Branco", red: "Vermelho", silver: "Alumínio" } satisfies Record<Colour, string>,
+    colours: { black: "Preto", grey: "Cinza", white: "Branco", red: "Vermelho", silver: "Alumínio", stainless: "Inox escovado" } satisfies Record<Colour, string>,
     contact: "Pedir amostras e preços",
     contactHref: "/pt/contact/",
   },

@@ -12,7 +12,7 @@
     node scripts/brazil/build-collection.mjs        (run from the repository root)
 */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { basename, join } from "node:path";
 import sharp from "sharp";
 
 const TMP = existsSync(join("tmp", "claude-brazil")) ? join("tmp", "claude-brazil") : join("..", "claude-brazil");
@@ -31,17 +31,20 @@ const BRAND_WORDS = new RegExp(`\\b(${Object.keys(FAMILY).join("|")})\\b`, "i");
 
 export function classify(name) {
   const n = name.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-  const isTrim = /^(fechadura|macaneta)\b/.test(n) && /barra/.test(n);
+  const isTrim = /^(fechadura|macaneta)\b/.test(n) && /barra|anti ?panico/.test(n);
   const family = isTrim ? "trim" : /dupla|duas folhas|0?2 folhas/.test(n) ? "double" : "single";
-  const style = /touch/.test(n) ? "touch" : "crossbar";
-  const locking = family === "double" || /vertical/.test(n) ? "vertical" : "lateral";
+  /* glass-door bars clamp or tape to the glass: a different part, not a finish */
+  const style = /vidro/.test(n) ? "glass" : /touch/.test(n) ? "touch" : "crossbar";
+  const microswitch = /micro ?switch/.test(n);
+  /* "2 pontos" / "3 pontos" = latch plus top and bottom rods; "1 ponto" = the side latch alone */
+  const locking = family === "double" || /vertical|[23] pontos/.test(n) ? "vertical" : "lateral";
   const lever = /macaneta/.test(n) && !/sem macaneta/.test(n);
   const key = /chave/.test(n) && !/sem chave/.test(n);
   const outside = isTrim ? (key ? "lever-key" : "lever") : lever ? (key ? "lever-key" : "lever") : key ? "lever-key" : "none";
   const colours = [
-    [/pret[ao]/, "black"], [/cinza/, "grey"], [/branc[ao]/, "white"], [/vermelh[ao]/, "red"], [/cromad[ao]|prata/, "silver"],
+    [/pret[ao]/, "black"], [/cinza/, "grey"], [/branc[ao]/, "white"], [/vermelh[ao]/, "red"], [/cromad[ao]|prata/, "silver"], [/inox/, "stainless"],
   ].filter(([re]) => re.test(n)).map(([, c]) => c);
-  return { family, style, locking: family === "trim" ? undefined : locking, outside, colours };
+  return { family, style, microswitch, locking: family === "trim" ? undefined : locking, outside, colours };
 }
 
 const NAMES = {
@@ -50,6 +53,8 @@ const NAMES = {
     double: "Barra antipânico para porta de duas folhas",
     trim: "Maçaneta externa para barra antipânico",
     touch: " tipo touch",
+    glass: " para porta de vidro",
+    microswitch: ", com microswitch",
     vertical: ", travamento vertical",
     lever: ", com maçaneta externa",
     "lever-key": ", com maçaneta externa e chave",
@@ -60,6 +65,8 @@ const NAMES = {
     double: "Double-door panic bar",
     trim: "Outside lever for panic bars",
     touch: ", touch bar",
+    glass: " for glass doors",
+    microswitch: ", with microswitch",
     vertical: ", top and bottom rods",
     lever: ", with outside lever",
     "lever-key": ", with outside lever and key",
@@ -69,18 +76,40 @@ const NAMES = {
 function nameOf(m, lang) {
   const w = NAMES[lang];
   if (m.family === "trim") return w.trim + (m.outside === "lever-key" ? w.trimKey : "");
-  return w[m.family] + (m.style === "touch" ? w.touch : "") + (m.family === "single" && m.locking === "vertical" ? w.vertical : "") + (m.outside !== "none" ? w[m.outside] : "");
+  return w[m.family] + (m.style === "touch" ? w.touch : m.style === "glass" ? w.glass : "") + (m.microswitch ? w.microswitch : "") + (m.family === "single" && m.locking === "vertical" ? w.vertical : "") + (m.outside !== "none" ? w[m.outside] : "");
 }
 
 const LETTER = { single: "S", double: "D", trim: "T" };
-/* BR1-SVK = family BR1, Single door, Vertical rods, outside lever with Key. T after the door letter = touch bar. */
+/* BR1-SVK = family BR1, Single door, Vertical rods, outside lever with Key. After the door letter:
+   T touch bar, G glass door, M microswitch. */
 const modelOf = (m) =>
-  `${FAMILY[m.brand]}-${LETTER[m.family]}${m.style === "touch" ? "T" : ""}${m.family === "single" && m.locking === "vertical" ? "V" : ""}${
+  `${FAMILY[m.brand]}-${LETTER[m.family]}${m.style === "touch" ? "T" : m.style === "glass" ? "G" : ""}${m.microswitch ? "M" : ""}${m.family === "single" && m.locking === "vertical" ? "V" : ""}${
     m.outside === "lever-key" ? "K" : m.outside === "lever" && m.family !== "trim" ? "L" : ""
   }`;
 
-async function square(src, out) {
-  await sharp(src).flatten({ background: "#ffffff" }).trim({ threshold: 12 }).resize(640, 640, { fit: "contain", background: "#ffffff" })
+/*
+  Which photograph stands for a model. tmp/claude-brazil/image-picks.json (local, like the family map):
+    { "exclude": ["<file name>", …],          logos and opening-direction diagrams the crawler took for products
+      "cropBottom": { "<brand>": 0.16 } }     a brand band printed under every photo, cut off (geometry untouched)
+  Of what is left, the photo whose border is most nearly white wins: a cut-out reads as one plate in the
+  grid, a room scene does not. A model with no usable photo is left out rather than shown as a grey block.
+*/
+const PICKS = existsSync(join(TMP, "image-picks.json")) ? JSON.parse(readFileSync(join(TMP, "image-picks.json"), "utf8")) : { exclude: [], cropBottom: {} };
+
+async function whiteBorder(file) {
+  const { data } = await sharp(file).flatten({ background: "#ffffff" }).resize(64, 64, { fit: "fill" }).greyscale().raw().toBuffer({ resolveWithObject: true });
+  let n = 0, white = 0;
+  for (let y = 0; y < 64; y++) for (let x = 0; x < 64; x++) if (x < 3 || y < 3 || x > 60 || y > 60) { n++; if (data[y * 64 + x] > 232) white++; }
+  return white / n;
+}
+
+async function square(src, out, cropBottom = 0) {
+  let img = sharp(src).flatten({ background: "#ffffff" });
+  if (cropBottom) {
+    const { width, height } = await sharp(src).metadata();
+    img = sharp(await img.extract({ left: 0, top: 0, width, height: Math.round(height * (1 - cropBottom)) }).png().toBuffer());
+  }
+  await img.trim({ threshold: 12 }).resize(640, 640, { fit: "contain", background: "#ffffff" })
     .extend({ top: 40, bottom: 40, left: 40, right: 40, background: "#ffffff" }).webp({ quality: 82 }).toFile(out);
 }
 
@@ -89,8 +118,11 @@ async function main() {
   const models = new Map();
   for (const l of listings) {
     if (!FAMILY[l.brand]) continue;
+    /* A reseller's listing of another maker's part (named in its title) belongs to that maker, or to nobody we were told about. */
+    const others = [...Object.keys(FAMILY).filter((b) => FAMILY[b] !== FAMILY[l.brand]), "Durati"];
+    if (others.some((b) => new RegExp("\\b" + b + "\\b", "i").test(l.name))) continue;
     const c = classify(l.name);
-    const key = [l.brand, c.family, c.style, c.locking, c.outside].join("|");
+    const key = [l.brand, c.family, c.style, c.microswitch, c.locking, c.outside].join("|");
     const m = models.get(key) ?? { brand: l.brand, ...c, colours: [], sources: [], images: [] };
     for (const col of c.colours) if (!m.colours.includes(col)) m.colours.push(col);
     m.sources.push({ url: l.url, name: l.name, priceBRL: l.priceBRL ?? null });
@@ -120,12 +152,15 @@ async function main() {
     seen.set(model, n);
     if (n > 1) model += n;
     const id = model.toLowerCase();
-    let image = "";
-    const src = m.images.find((p) => existsSync(p));
-    if (src) {
-      await square(src, join(OUT_IMG, `${id}.webp`));
-      image = `/images/brazil-collection/${id}.webp`;
+    const candidates = [...new Set(m.images)].filter((p) => existsSync(p) && !PICKS.exclude.includes(basename(p)));
+    if (!candidates.length) {
+      console.log(`${model.padEnd(8)} skipped: no usable photograph`);
+      continue;
     }
+    const scored = await Promise.all(candidates.map(async (p) => [await whiteBorder(p), p]));
+    const src = scored.sort((a, b) => b[0] - a[0])[0][1];
+    await square(src, join(OUT_IMG, `${id}.webp`), PICKS.cropBottom?.[m.brand] ?? 0);
+    const image = `/images/brazil-collection/${id}.webp`;
     out.push({
       id, model, family: m.family, door: m.family === "trim" ? undefined : m.family, locking: m.locking, outside: m.outside,
       colours: m.colours, nameEn: nameOf(m, "en"), namePt: nameOf(m, "pt"), specs: [], image,
@@ -141,4 +176,4 @@ async function main() {
   for (const m of out) console.log(`${m.model.padEnd(8)} ${m.colours.join(",").padEnd(18)} ${m.image ? "img" : "—  "} ${m.nameEn}`);
 }
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) await main();
+if (process.argv[1] && import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) await main();
