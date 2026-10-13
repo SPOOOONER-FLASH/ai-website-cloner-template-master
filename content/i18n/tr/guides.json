@@ -207,6 +207,21 @@
       "\"Kapsam bu boyutu ve konfigürasyonu karşılıyor mu?\": kanat ölçünüzü, kasa tipinizi, donanım setinizi belirtin.",
       "\"Sertifikanın yanı sıra test raporunu da alabilir miyiz?\": sahibi ile ileteni ayıran talep.",
       "İlk sorunun cevabı ürünün belgelendirilmemiş olduğuysa, bu kullanılabilir bir cevaptır ve uygulama için çoğu zaman doğru olandır. Başarısızlık belgelendirilmemiş bir ürün değil; belgelendirilmiş gibi tarif edilen belgelendirilmemiş bir üründür. Yukarıdaki altı uyarı işaretinin hepsinin yakaladığı şey budur.",
+      "## Kapı donanımı sertifikası nasıl doğrulanır",
+      "Yukarıdaki beş dakikalık kontrol her sertifika için geçerlidir. Kapı donanımında özellikle dört tür belgeyle karşılaşılır ve her birinin kendine ait, herkese açık bir sorgulama yeri vardır.",
+      "| Belge | Düzenleyen | Nerede kontrol edilir | Neyin eşleşmesi gerekir |\n| --- | --- | --- | --- |\n| Onaylanmış kuruluş numaralı CE işareti | Üretici; numara onaylanmış kuruluşu tanımlar | NANDO, Avrupa Komisyonu'nun onaylanmış kuruluşlar veri tabanı | Kuruluş, Yapı Malzemeleri Yönetmeliği kapsamında onaylanmıştır |\n| Performans Beyanı (DoP) | Üretici | Vermekle yükümlü olan üreticinin kendisi | Ürün tipi, uyumlaştırılmış standart, beyan edilen sınıf, onaylanmış kuruluş numarası |\n| ISO 9001 sertifikası | Akredite bir belgelendirme kuruluşu | IAF CertSearch ya da belgelendirme kuruluşunun kendi sicili | Ticari unvan, adres, kapsam ve geçerlilik tarihi |\n| UL listelemesi | UL | UL Product iQ, dosya numarasıyla arama | Şirket, ürün kategorisi ve model |",
+      "CE işareti: CE işaretinin yanındaki ya da sertifikadaki dört haneli numara onaylanmış kuruluşu tanımlar. Bu numarayı NANDO'da arayın ve kaydı okuyun: kuruluşun adı ve hangi mevzuat kapsamında onaylandığı. Kapı donanımı için bu mevzuat Yapı Malzemeleri Yönetmeliği'dir. NANDO'da bulunmayan bir numara ya da yalnızca ilgisiz bir mevzuat için onaylanmış bir kuruluş, panik veya acil çıkış donanımındaki bir CE işaretinin arkasında duramaz.",
+      "Test raporu, sertifika ve DoP üç ayrı belgedir. Test raporu, bir laboratuvarın bir numune üzerinde ölçtüklerinin kaydıdır. Performansın değişmezliği belgesi, onaylanmış kuruluşun ürün tipini değerlendirdiğini ve fabrika üretim kontrolünü gözetim altında tuttuğunu bildiren beyanıdır. DoP ise üreticinin Yapı Malzemeleri Yönetmeliği kapsamındaki kendi beyanıdır: beyan edilen performansı belirtir ve onaylanmış kuruluşu adlandırır. EN 1125'e göre panik çıkış donanımları, EN 179'a göre acil çıkış donanımları ve yangın dayanımı EN 1634-1'e göre test edilen EN 16034 yangına dayanıklı kapı setleri uyumlaştırılmış standartların kapsamındadır; bu yüzden Avrupa pazarına bir DoP ile sunulur. DoP istenen yerde sunulan bir test raporu, bir testin yapıldığını kanıtlar; kimsenin sorumluluğunu üstlendiği bir beyan değildir.",
+      "ISO 9001: bir ürünü değil bir yönetim sistemini belgelendirir; bu nedenle bir kilidin EN 12209'u ya da bir kapı kapatıcının EN 1154'ü karşılayıp karşılamadığı hakkında hiçbir şey söylemez. Yine de üç adımda kontrol etmeye değer. Önce düzenleyen: sertifikada, IAF çok taraflı tanınma anlaşmasını imzalamış bir ulusal akreditasyon kurumunun akreditasyon işareti bulunmalıdır; örneğin Birleşik Krallık'ta UKAS, Almanya'da DAkkS, ABD'de ANAB, Türkiye'de TÜRKAK ya da Çin'de CNAS. Sonra sertifikanın kendisi: numarasını IAF CertSearch'te ya da belgelendirme kuruluşunun kendi sicilinde arayın. Çin'de düzenlenmiş bir sertifika için ulusal belgelendirme düzenleyicisi CNCA da herkese açık bir sorgulama sunar. Son olarak içerik: ticari unvan ve adres, faaliyet kapsamı ve geçerlilik tarihi, tedarikçiye ve satın aldığınız ürüne uymalıdır.",
+      "Bir ISO 9001 sertifikası, arada gözetim denetimleriyle üç yıllık bir döngüde işler ve iki denetim arasında askıya alınabilir ya da geri çekilebilir. Bu olduğunda PDF değişmez; sicil değişir.",
+      "UL: Bir listeleme UL Product iQ'da dosya numarasıyla kontrol edilir; listelenmiş bir üretici bu numarayı hemen verebilir. Kayıt şirketi, ürün kategorisini ve listelenen ürünleri gösterir. Dosya numarası olmadan \"UL tested\", \"UL 10C'ye göre test edildi\" ya da \"UL standartlarını karşılar\" demek bir listeleme değildir. Listeleme ayrıca takip içerir: UL, üretimin listelenen ürünle hâlâ eşleştiğini doğrulamak için üretimi düzenli olarak denetler; listelenmiş olmakla bir kez test edilmiş olmak arasındaki fark budur. UL Recognized Component işareti daha da dardır: tek başına monte edilecek bitmiş bir ürünü değil, listelenmiş bir ürünün içine girecek bir parçayı kapsar.",
+      "Test edilmiş, belgelendirilmiş ve listelenmiş üç ayrı iddiadır. Test edilmiş, bir laboratuvarın bir numuneyi test edip rapor yazdığı anlamına gelir. Belgelendirilmiş, bir kuruluşun ürünü bir standarda göre değerlendirdiği ve bu iddiayı gözetim altında tuttuğu anlamına gelir. Listelenmiş, ürünün belgelendiricinin herkese açık dizininde yer aldığı ve takip denetimine tabi olduğu anlamına gelir. Her durumda kanıt yalnızca değerlendirilen modeli ve konfigürasyonu kapsar. Bir kol takımı için hazırlanmış rapor, aynı katalog sayfasında yer alıyor diye başka bir kola, başka bir kilit gövdesine ya da başka bir yüzey kaplamasına uzanmaz.",
+      "Sorgulama aşamasında şu dört sonuç durmanız gerektiği anlamına gelir:",
+      "Ad eşleşmiyor: sertifika tedarikçinin ticari unvanından farklı bir ad taşıyor ve aradaki ilişkiyi kimse açıklamıyor.",
+      "Tarihler geçmiş: geçerlilik tarihi geride kalmış ya da sicil, PDF'te görünmeyen bir durum gösteriyor.",
+      "Kapsam başka bir şeyi kapsıyor: üretim yerine ticaret için bir ISO 9001 kapsamı, şartnamenizde adı geçenden farklı bir standart ya da modelinizi içermeyen bir ürün ailesi.",
+      "Sorgulanacak bir şey yok: aranacak numara yok, onu içeren bir sicil yok ya da tedarikçi size sicil kaydını gösteremiyor. Kontrol edilemeyen bir sertifikaya güvenilemez.",
+      "Aynı kontrol bizim için de geçerlidir. Pres tesisimiz ISO 9001:2015 sertifikalıdır; sertifika 69125Q0026****, 29 Ekim 2028'e kadar geçerli. Tam sertifikayı bizden isteyin ve bu bölümde anlatıldığı gibi kontrol edin: düzenleyen, akreditasyon, ticari unvan, kapsam ve geçerlilik tarihi.",
       "## Neye sahip olduğumuz, açıkça",
       "Ürünlerimizden birinin test edildiği ve bir sertifikanın bulunduğu yerde ürün sayfası standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine verilir. Belgeler sayfamız test belgelerini yayımlanmış değil talep üzerine verilen belgeler olarak listeler ve bu kelimenin tam anlamıyla böyledir: sorduğunuz tam modeller için var olanı göndeririz.",
       "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir: sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; ne bir açıklamada, ne bir karşılaştırmada, ne de bir standardın numarasını ona göre test edilmemiş bir ürünün yanına koyarak.",
@@ -238,6 +253,14 @@
         "answer": "Sertifika numarası olmayan bir logo (açık ara en yaygını). Tedarikçinin adına olmayıp onun kendisininmiş gibi sunulan bir sertifika. \"Belgelendirilmiş\" yerine \"göre test edilmiş\". Boyutunuzu ya da konfigürasyonunuzu anmayan bir kapsam. Belirsiz bir \"seri\" için sertifika. Ve alttaki raporu vermeyi reddetmek."
       },
       {
+        "question": "Bir CE, ISO 9001 ya da UL sertifikası nasıl sorgulanır?",
+        "answer": "CE: onaylanmış kuruluşun dört haneli numarasını Avrupa Komisyonu'nun veri tabanı NANDO'da arayın ve üreticiden Performans Beyanı'nı isteyin. ISO 9001: belgelendirme kuruluşunun akredite olduğunu kontrol edin, ardından sertifika numarasını IAF CertSearch'te ya da düzenleyenin sicilinde arayıp ticari unvanı, kapsamı ve geçerlilik tarihini karşılaştırın. UL: dosya numarasını UL Product iQ'da arayın. Dosya numarası olmayan \"UL tested\" bir listeleme değildir."
+      },
+      {
+        "question": "Test edilmiş, belgelendirilmiş ve listelenmiş arasındaki fark nedir?",
+        "answer": "Test edilmiş, bir laboratuvarın bir numuneyi test edip rapor yazdığı anlamına gelir. Belgelendirilmiş, bir kuruluşun ürünü bir standarda göre değerlendirdiği ve iddiayı gözetim altında tuttuğu anlamına gelir. Listelenmiş, ürünün belgelendiricinin herkese açık dizininde yer aldığı ve üretimin takip denetimine tabi olduğu anlamına gelir. Her biri yalnızca değerlendirilen modeli ve konfigürasyonu kapsar."
+      },
+      {
         "question": "Panik çıkış cihazlarınızın yangın belgesi var mı?",
         "answer": "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bir ürünün test edildiği yerde sayfa standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine verilir."
       }
@@ -247,8 +270,8 @@
       "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
-      "body": "654a65314771",
-      "faq": "187ef3bcdcb2"
+      "body": "fb2446f018d3",
+      "faq": "9ae909fed245"
     }
   },
   "chrome-finish-differences-2026": {
