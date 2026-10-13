@@ -17,7 +17,8 @@ export type PageType = "home" | "article" | "guide-index" | "product" | "categor
 
 /** Page type from a pathname, ignoring the /es or /pt prefix. */
 export function pageType(pathname: string): PageType {
-  const p = (pathname.replace(/^\/(?:es|pt)(?=\/|$)/, "") || "/").replace(/\/+$/, "") || "/";
+  /* Every locale prefix, not only es|pt: /fr/guides/x counted as "other" until 2026-10-12. */
+  const p = (pathname.replace(/^\/(?:es|pt|fr|de|ja|ko|tr|ru|ar)(?=\/|$)/, "") || "/").replace(/\/+$/, "") || "/";
   if (p === "/") return "home";
   if (/^\/(news|guides)\/[^/]+$/.test(p)) return "article";
   if (/^\/(news|guides)$/.test(p)) return "guide-index";
@@ -60,7 +61,8 @@ export interface LinkEvent {
  * for choosing a product from a list, so it appears in GA4 ready to use (same reasoning as
  * `generate_lead` in analytics-events.ts).
  */
-export function linkIntent(href: string, from: string): LinkEvent | null {
+/** `list` is the `data-link-list` of the block the link sits in (e.g. "article-products"); it beats the page type. */
+export function linkIntent(href: string, from: string, list?: string | null): LinkEvent | null {
   const source = pageType(from);
   if (/^mailto:/i.test(href)) return { name: "contact_click", params: { method: "email", page_type: source } };
   if (/^tel:/i.test(href)) return { name: "contact_click", params: { method: "phone", page_type: source } };
@@ -77,9 +79,9 @@ export function linkIntent(href: string, from: string): LinkEvent | null {
   const target = pageType(path);
   if (target === "product") {
     const slug = path.replace(/\/+$/, "").split("/").pop() ?? "";
-    return { name: "select_item", params: { item_id: slug, item_list_name: source } };
+    return { name: "select_item", params: { item_id: slug, item_list_name: list || source } };
   }
-  if (target === "contact") return { name: "contact_click", params: { method: "form", page_type: source } };
+  if (target === "contact") return { name: "contact_click", params: { method: "form", page_type: source, ...(list ? { placement: list } : {}) } };
   if (target === "configurator") return { name: "configurator_open", params: { page_type: source } };
   return null;
 }

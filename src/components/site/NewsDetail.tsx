@@ -309,7 +309,7 @@ export function NewsDetail({
             </div>}
 
             {related.length > 0 ? (
-              <div className="mt-32 border-t border-line pt-16">
+              <div className="mt-32 border-t border-line pt-16" data-link-list="article-rail">
                 <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
                   {t.mentioned}
                 </p>
