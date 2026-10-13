@@ -106,6 +106,11 @@ const COPY = {
   },
 } as const;
 
+/** Whether either drawing below renders for this product — the product page shows its Drawings chapter only then. */
+export function hasProductDrawings(slug: string): boolean {
+  return (!UNVERIFIED_PULL_HANDLE_DRAWINGS.has(slug) && Boolean(INDEX[slug])) || Boolean(PREP_INDEX[slug]);
+}
+
 export function ProductDrawing({ slug, locale = "en" }: { slug: string; locale?: Locale }) {
   if (UNVERIFIED_PULL_HANDLE_DRAWINGS.has(slug)) return null;
   const entry = INDEX[slug];
