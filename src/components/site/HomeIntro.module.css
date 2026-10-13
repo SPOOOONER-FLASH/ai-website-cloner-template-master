@@ -1,0 +1,90 @@
+/* Homepage opening curtain (HomeIntro.tsx). Timings follow the motion demo's curtain, written
+   from the --motion-* tokens: mark in by ~0.4 s, wordmark and rule by ~0.8 s, curtain open by
+   ~1.4 s, gone at ~1.46 s. */
+
+.intro {
+  --curtain-ease: cubic-bezier(0.76, 0, 0.24, 1);
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+  animation: gone var(--motion-fast) linear calc(var(--motion-slow) * 2.6) forwards;
+}
+:global(html[data-intro="skip"]) .intro {
+  display: none;
+}
+
+.half {
+  position: absolute;
+  inset-inline: 0;
+  height: 50.5%;
+  background: var(--color-surface);
+}
+/* Keyframe names are written out per rule: CSS Modules renames them only there, not in a variable. */
+.top {
+  top: 0;
+  animation: partUp calc(var(--motion-slow) * 1.1) var(--curtain-ease) calc(var(--motion-slow) * 1.4) both;
+}
+.bottom {
+  bottom: 0;
+  animation: partDown calc(var(--motion-slow) * 1.1) var(--curtain-ease) calc(var(--motion-slow) * 1.4) both;
+}
+
+.center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 18px;
+  animation: fadeOut var(--motion-fast) linear calc(var(--motion-slow) * 1.3) both;
+}
+.icon {
+  height: 64px;
+  width: auto;
+  animation: turnIn var(--motion-enter) var(--motion-ease) both;
+}
+.word {
+  height: 30px;
+  width: auto;
+  animation: wipeOn calc(var(--motion-enter) * 1.3) var(--motion-ease) var(--motion-medium) both;
+}
+.rule {
+  display: block;
+  width: 180px;
+  height: 1px;
+  background: var(--color-ink);
+  transform-origin: left;
+  animation: draw calc(var(--motion-enter) * 1.3) var(--motion-ease) calc(var(--motion-medium) * 1.15) both;
+}
+
+@keyframes turnIn {
+  from { opacity: 0; transform: scale(0.7) rotate(-90deg); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes wipeOn {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes fadeOut {
+  to { opacity: 0; }
+}
+@keyframes partUp {
+  to { transform: translateY(-101%); }
+}
+@keyframes partDown {
+  to { transform: translateY(101%); }
+}
+@keyframes gone {
+  to { visibility: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    display: none;
+  }
+}

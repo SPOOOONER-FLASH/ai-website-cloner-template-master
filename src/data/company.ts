@@ -244,3 +244,18 @@ export const companyEditorialStudies: ImageRef[] = [
       "A cortadora laser de fibra na nossa fábrica, que corta a chapa de aço de que saem caixas de fechadura e espelhos",
   },
 ];
+
+/*
+  The CNC photograph, kept out of companyEditorialStudies so the company page's grid is
+  unchanged. Cleared individually: the client answered 2026-09-17 「是我们厂」 (see
+  IMAGE_CREDITS.md and scripts/build-branded-editorial-list.mjs), and it carries the HYDE
+  mark. The machine's maker's name on its housing is equipment branding, as with the laser
+  cutter. Used by the homepage factory story (client, 2026-10-12).
+*/
+export const factoryCncMachining: ImageRef = {
+  src: "/images/company/factory-cnc-machining.webp",
+  ratio: "3 / 2",
+  label: "An operator at a CNC machine on our shop floor",
+  labelEs: "Un operario en una máquina CNC de nuestra planta",
+  labelPt: "Um operador numa máquina CNC da nossa fábrica",
+};
