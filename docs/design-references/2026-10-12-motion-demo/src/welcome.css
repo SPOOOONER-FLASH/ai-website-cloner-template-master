@@ -1,0 +1,292 @@
+/* Welcome-band proposal (2026-10-13). Live-site tokens from src/app/globals.css, converted from
+   its 10px rem to px because this page cannot set the root font size. Every selector is scoped
+   under .pv-welcome so nothing here touches styles.css or inner.css. */
+
+.pv-welcome {
+  --ink: #11110f;
+  --ink-2: #6e6e73; /* 5.0:1, text */
+  --ink-3: #8e8e93; /* 3.3:1, decorative only */
+  --line: #deddd8;
+  --frame: #11110f;
+  --shadow-hard: #d4d4ce;
+  /* Site tokens under their site names, so the site version drops these two lines and uses globals.css. */
+  --motion-fast: 180ms;
+  --motion-ease-crisp: cubic-bezier(0.33, 0, 0.2, 1);
+
+  --h1: clamp(28px, 1.529vw + 22.29px, 32px);
+  --h1-lh: clamp(36px, 1.529vw + 30.29px, 40px);
+  --h2: clamp(24px, 1.529vw + 18.29px, 28px);
+  --h3: clamp(19px, 0.382vw + 17.57px, 20px);
+  --c1: clamp(16px, 0.191vw + 15.25px, 17px);
+
+  --cols: 4;
+  --gap: 16px;
+  --outset: clamp(16px, 1.5282vw + 9.994px, 32px);
+  --content: min(calc(100% - var(--outset) * 2), calc(1440px - 2 * var(--outset)));
+  --popout: minmax(0, calc((1600px - var(--content)) * 0.5 - var(--outset)));
+
+  background: #fff;
+  color: var(--ink);
+  font-family: "Archivo Variable", Archivo, system-ui, sans-serif;
+  font-size: var(--c1);
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 744px) { .pv-welcome { --cols: 8; } }
+@media (min-width: 820px) { .pv-welcome { --cols: 12; } }
+@media (min-width: 1376px) { .pv-welcome { --cols: 24; } }
+
+.pv-welcome,
+.pv-welcome *,
+.pv-welcome *::before,
+.pv-welcome *::after { box-sizing: border-box; }
+.pv-welcome :where(h1, h2, p, ul, dl, dd, figure) { margin: 0; padding: 0; }
+.pv-welcome :where(h1, h2) { font-size: inherit; }
+.pv-welcome img { display: block; max-width: 100%; height: auto; }
+.pv-welcome a { color: inherit; text-decoration: none; }
+.pv-welcome button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.pv-welcome :focus-visible { outline: 2px solid var(--frame); outline-offset: 3px; }
+.pv-welcome .pv-sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+.pv-welcome .pv-note { margin-top: 12px; font-size: 13px; line-height: 18px; color: var(--ink-2); }
+
+/* Named-line layout grid, as .layout on the site. */
+.pv-welcome .pv-layout {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr [popout-start] var(--popout) [outset-start] var(--outset)
+    [content-start] var(--content) [content-end]
+    var(--outset) [outset-end] var(--popout) [popout-end] 1fr [full-end];
+}
+.pv-welcome .pv-layout > * { grid-column: content; min-width: 0; }
+.pv-welcome .pv-layout > .pv-outset { grid-column: outset; }
+
+/* ---------------------------------------------------------------- header (stand-in) */
+.pv-welcome .pv-header { position: sticky; top: 0; z-index: 40; background: #fff; }
+.pv-welcome .pv-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  height: 72px; padding-inline: var(--outset); border-bottom: 1px solid var(--line);
+}
+.pv-welcome .pv-logo { height: 40px; width: auto; margin-left: -7px; }
+.pv-welcome .pv-tools { display: flex; align-items: center; gap: 24px; color: var(--ink-2); }
+.pv-welcome .pv-langs { display: flex; align-items: center; gap: 14px; font-size: 13px; }
+.pv-welcome .pv-langs b { color: var(--ink); font-weight: 600; }
+.pv-welcome .pv-lang-more { display: none; }
+@media (min-width: 1032px) { .pv-welcome .pv-lang-more { display: inline; } }
+.pv-welcome .pv-menu {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  height: 50px; padding-inline: var(--outset);
+}
+.pv-welcome .pv-nav {
+  display: flex; gap: 20px; min-width: 0; overflow-x: auto; scrollbar-width: none;
+  font-size: 14px; white-space: nowrap;
+}
+.pv-welcome .pv-buy {
+  flex: none; height: 34px; padding-inline: 14px; background: var(--ink); color: #fff;
+  font-size: 14px; font-weight: 700; letter-spacing: -0.02em;
+}
+.pv-welcome .pv-buy span { margin-left: 4px; }
+
+/* ---------------------------------------------------------------- page rhythm */
+.pv-welcome .pv-main { margin-top: 48px; }
+.pv-welcome .pv-modules > * + * { margin-top: 96px; }
+.pv-welcome .pv-modules,
+.pv-welcome .pv-intro,
+.pv-welcome .pv-facts { margin-bottom: 48px; }
+@media (min-width: 1032px) {
+  .pv-welcome .pv-modules { margin-bottom: 96px; } /* teaser to the chapter hairline (was 136) */
+  .pv-welcome .pv-modules > * + * { margin-top: 136px; }
+  .pv-welcome .pv-intro { margin-bottom: 96px; }
+  .pv-welcome .pv-facts { margin-bottom: 136px; }
+}
+.pv-welcome .pv-standin img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
+
+/* ---------------------------------------------------------------- 1 teaser (unchanged design) */
+.pv-welcome .pv-teaser-h { margin-bottom: 24px; font-size: var(--h3); line-height: 26px; font-weight: 600; }
+@media (min-width: 820px) { .pv-welcome .pv-teaser-h { margin-bottom: 48px; } }
+.pv-welcome .pv-snap {
+  display: flex; gap: var(--gap); overflow: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; padding-inline: var(--outset); scroll-padding-inline: var(--outset);
+  scrollbar-width: none;
+}
+.pv-welcome .pv-snap::-webkit-scrollbar { display: none; }
+.pv-welcome .pv-card {
+  flex: none; width: calc(100% * 3 / 4 - var(--gap) / 4); scroll-snap-align: start;
+  border: 1px solid transparent; outline-offset: -1px;
+  transition: box-shadow var(--motion-fast) var(--motion-ease-crisp), border-color var(--motion-fast) var(--motion-ease-crisp);
+}
+.pv-welcome .pv-card img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.pv-welcome .pv-card-cap { padding-top: 16px; }
+.pv-welcome .pv-card-sub {
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; color: var(--ink-2);
+}
+.pv-welcome .pv-marker { position: relative; display: inline-block; color: var(--ink); font-weight: 700; }
+.pv-welcome .pv-marker::after {
+  content: ""; position: absolute; left: 0; bottom: -4px; width: min(64px, 100%); height: 2px;
+  background: currentColor; opacity: 0; transform: scaleX(0); transform-origin: left center;
+  transition: opacity var(--motion-fast) var(--motion-ease-crisp), transform var(--motion-fast) var(--motion-ease-crisp);
+}
+/* The caption inset keeps the text off the 1px hover frame (plan: stays). */
+@media (hover: hover) { .pv-welcome .pv-card-cap { padding: 16px; } }
+@media (min-width: 820px) { .pv-welcome .pv-card-cap { padding-top: 24px; } }
+@media (min-width: 820px) and (hover: hover) { .pv-welcome .pv-card-cap { padding: 24px; } }
+@media (pointer: fine) {
+  .pv-welcome .pv-snap { flex-wrap: wrap; }
+  .pv-welcome .pv-card { width: calc(50% - var(--gap) / 2); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .pv-welcome .pv-card:hover { border-color: var(--frame); box-shadow: 9px 9px 0 var(--shadow-hard); }
+  .pv-welcome .pv-card:hover .pv-marker::after { opacity: 1; transform: scaleX(1); }
+}
+.pv-welcome .pv-card:focus-visible {
+  border-color: var(--frame); box-shadow: 9px 9px 0 var(--shadow-hard); outline: 2px solid var(--frame); outline-offset: 5px;
+}
+.pv-welcome .pv-card:focus-visible .pv-marker::after { opacity: 1; transform: scaleX(1); }
+
+/* ---------------------------------------------------------------- 2 chapter */
+.pv-welcome .pv-chapter {
+  display: grid; grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); column-gap: var(--gap); row-gap: 24px;
+  border-top: 1px solid var(--line); padding-top: 48px; /* the chapter's top hairline, as on the product page */
+}
+@media (min-width: 1032px) { .pv-welcome .pv-chapter { padding-top: 72px; } }
+.pv-welcome .pv-chapter > * { grid-column: 1 / -1; min-width: 0; }
+.pv-welcome .pv-h1 {
+  font-size: var(--h1); line-height: var(--h1-lh); letter-spacing: -0.2px; font-weight: 700; text-wrap: balance;
+}
+.pv-welcome .pv-h1-light { display: block; font-weight: 400; }
+.pv-welcome .pv-content { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 24px; align-content: start; }
+.pv-welcome .pv-statement {
+  /* clamp(2.4rem, 1.6rem + 2vw, 4.4rem) on the site's 10px rem */
+  font-size: clamp(24px, 16px + 2vw, 44px); font-weight: 500; line-height: 1.15; letter-spacing: -0.015em;
+  max-width: 21em; text-wrap: pretty; hyphens: auto;
+  color: var(--ink); /* base = final state; only the keyframe is grey */
+}
+.pv-welcome .pv-credentials,
+.pv-welcome .pv-offer { max-width: 68ch; }
+.pv-welcome .pv-letterhead { margin-top: 24px; max-width: 68ch; } /* below 1376 the rail keeps the text's measure */
+.pv-welcome .pv-company { white-space: pre-line; }
+.pv-welcome .pv-headcount {
+  margin-top: 4px; font-size: 13px; line-height: 18px; letter-spacing: 0.24px; color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.pv-welcome .pv-iso { width: 56px; aspect-ratio: 41 / 46; margin-top: 16px; }
+.pv-welcome .pv-rail { margin-top: 48px; list-style: none; border-top: 1px solid var(--ink); }
+.pv-welcome .pv-rail li { border-bottom: 1px solid var(--line); }
+/* One hover grammar in the band: an ink underline appears; the colour never changes. */
+.pv-welcome .pv-rail a {
+  display: block; padding-block: 16px;
+  text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px;
+  transition: text-decoration-color var(--motion-fast) var(--motion-ease-crisp);
+}
+.pv-welcome .pv-rail a:hover,
+.pv-welcome .pv-rail a:focus-visible { text-decoration-color: var(--ink); }
+
+@media (min-width: 1376px) {
+  .pv-welcome .pv-chapter { row-gap: 48px; }
+  .pv-welcome .pv-h1 { grid-column: 1 / span 8; grid-row: 1; } /* span 7 sets it on three lines below 1440 */
+  .pv-welcome .pv-content {
+    grid-column: 9 / span 16; grid-row: 1 / span 2; grid-template-columns: subgrid; row-gap: 48px;
+  }
+  .pv-welcome .pv-content > * { grid-column: 1 / -1; }
+  .pv-welcome .pv-credentials { grid-column: 1 / span 8; grid-row: 2; max-width: none; }
+  .pv-welcome .pv-offer { grid-column: 10 / span 7; grid-row: 2; max-width: none; }
+  .pv-welcome .pv-letterhead { grid-column: 1 / span 7; grid-row: 2; align-self: end; margin-top: 0; }
+}
+
+/* ---------------------------------------------------------------- 3 figures */
+/* One column below 744 (a 108px cell cannot hold "Katalogkategorien" at 13px), three from 744. */
+.pv-welcome .pv-figures {
+  display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 16px;
+  list-style: none; border-top: 1px solid var(--ink);
+}
+@media (min-width: 744px) { .pv-welcome .pv-figures { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1032px) { .pv-welcome .pv-figures { column-gap: 32px; } }
+.pv-welcome .pv-figures li { border-bottom: 1px solid var(--line); }
+.pv-welcome .pv-fact { display: block; padding: 24px 0 32px; }
+/* Focus thickens the cell's top rule instead of ringing the cell: a ring doubled the strip's rule
+   (offset 3px) or ran over the flush-left figure (offset -2px). The transparent outline is what
+   forced-colors mode paints, since it drops box-shadow. */
+.pv-welcome .pv-fact:focus-visible { outline-color: transparent; outline-offset: -2px; box-shadow: inset 0 3px 0 var(--ink); }
+.pv-welcome .pv-figure-mask { display: block; }
+/* Copied from ProductPage.module.css .bandNumber (not imported: that would load the product page's CSS). */
+.pv-welcome .pv-figure {
+  display: block;
+  font-size: clamp(60px, 30px + 6vw, 132px); font-weight: 600; line-height: 1; letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+/* Underline visible at rest (ink-3, 3.3:1) so touch users can tell it is a link; ink on hover and focus. */
+.pv-welcome .pv-fact-label {
+  display: block; max-width: 18ch; margin-top: 12px;
+  font-size: 13px; line-height: 18px; letter-spacing: 0.24px; color: var(--ink-2);
+  text-decoration: underline; text-decoration-color: var(--ink-3); text-underline-offset: 4px;
+  transition: color var(--motion-fast) var(--motion-ease-crisp), text-decoration-color var(--motion-fast) var(--motion-ease-crisp);
+}
+.pv-welcome .pv-fact:hover .pv-fact-label,
+.pv-welcome .pv-fact:focus-visible .pv-fact-label { color: var(--ink); text-decoration-color: var(--ink); }
+
+/* ---------------------------------------------------------------- export map (stand-in) */
+.pv-welcome .pv-map { min-height: 80vh; padding-block: 96px; background: var(--ink); color: #fff; }
+@media (min-width: 1032px) { .pv-welcome .pv-map { padding-block: 136px; } }
+.pv-welcome .pv-map-h { font-size: var(--h2); line-height: 1.25; font-weight: 600; }
+.pv-welcome .pv-map .pv-note { color: rgb(255 255 255 / 0.64); }
+
+/* ---------------------------------------------------------------- preview switch (not part of the site)
+   In flow above the header, so it never covers copy. Switching reloads at the top anyway. */
+.pv-welcome .pv-panel {
+  display: flex; justify-content: flex-end; padding: 8px var(--outset); border-bottom: 1px solid var(--line);
+  font-size: 13px; font-weight: 600; line-height: 18px;
+}
+.pv-welcome .pv-panel a { padding: 4px 10px; border: 1px solid var(--ink); }
+.pv-welcome .pv-panel a + a { border-left: 0; }
+.pv-welcome .pv-panel a.on { background: var(--ink); color: #fff; }
+
+/* ---------------------------------------------------------------- the three effects
+   Scroll-linked, no durations: progress = scroll position. Every keyframe is from-only, so the
+   base style above is the final state, which is what reduced motion, ?still, Firefox and old
+   Safari render. */
+@supports (animation-timeline: view()) {
+  /* screen: a printed page never carries grey words or masked figures. */
+  @media screen and (prefers-reduced-motion: no-preference) {
+    /* 1 Parallax. A named timeline on the module wrapper: a plain view() would bind to the
+       overflow:auto track and never move. On a mouse device the cards wrap and nothing scrolls,
+       so the track can be overflow:visible and the translated card is not clipped. */
+    @media (pointer: fine) {
+      .pv-welcome:not(.pv-still) .pv-teaser { view-timeline: --pv-teaser block; }
+      .pv-welcome:not(.pv-still) .pv-teaser .pv-snap { overflow: visible; }
+      .pv-welcome:not(.pv-still) .pv-teaser .pv-snap > :nth-child(2) {
+        animation: pv-settle linear both;
+        animation-timeline: --pv-teaser;
+        /* entry, not cover: at 2560x1440 the module is already 16% covered on load, and a cover
+           range would leave card 2 ~38px low in the first view. */
+        animation-range: entry 0% entry 40%;
+      }
+    }
+
+    /* 2 Word brighten, statement only. Starts at ink-secondary (5.0:1), never below. */
+    .pv-welcome:not(.pv-still) .pv-statement { view-timeline: --pv-statement block; }
+    .pv-welcome:not(.pv-still) .pv-statement > span {
+      animation: pv-brighten linear both;
+      animation-timeline: --pv-statement;
+      animation-range:
+        cover calc(15% + var(--k) / var(--n) * 35%)
+        cover calc(15% + (var(--k) + 1) / var(--n) * 35%);
+    }
+
+    /* 3 Rise out of a mask (ProductPage.module.css .bandMask). clip, not hidden: hidden would
+       make the mask the scroller and view() would track it instead of the page. */
+    .pv-welcome:not(.pv-still) .pv-figure-mask { overflow: clip; }
+    .pv-welcome:not(.pv-still) .pv-figure {
+      animation: pv-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 80%;
+    }
+  }
+}
+@keyframes pv-settle { from { translate: 0 64px; } }
+@keyframes pv-brighten { from { color: #6e6e73; } }
+@keyframes pv-rise { from { translate: 0 105%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .pv-welcome *, .pv-welcome *::after { transition: none !important; }
+}
