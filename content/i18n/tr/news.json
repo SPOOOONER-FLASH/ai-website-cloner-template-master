@@ -476,8 +476,13 @@
       "Kaplama bir kez yazılır ve her yerde varsayılır: kaplama çoğu zaman en üstteki genel bir notta yazılır ve satırlarda atlanır. Yalnızca satırları okuyan tedarikçi varsayılan kaplamayla teklif verir; notu okuyan doğru teklif verir. Satırlardan önce notları okuyun.",
       "Anahtarlama açıklamalarda: anahtar grupları genellikle donanım setinde değil, bir açıklamalar sütununda ya da ayrı bir anahtarlama listesinde yer alır. Anahtarlama bilgisi olmayan bir silindir satırı, silindir ne kadar dikkatle tanımlanmış olursa olsun eksiktir.",
       "Revizyonlar: listeler proje boyunca yeniden yayımlanır ve her revizyon setleri sessizce değiştirebilir. Belirtilmiş bir revizyona karşı teklif verin, o revizyonu teklifin üzerine yazın ve yenisi geldiğinde belgenin tamamını yeniden okumak yerine değişiklik listesini isteyin.",
+      "## Bir kilidi değiştirmeden önce neler ölçülmeli",
+      "Yeni bir bina için hazırlanan liste, henüz var olmayan kapıları tarif eder. Değişim bunun tersidir: kapı zaten işlenmiştir ve yeni kilit başkasının açtığı deliklere uymak zorundadır. Bu yüzden kataloğu değil, eski donanımı ve kapıyı ölçün; ölçüleri, eski kilidin yanına bir cetvel konarak çekilmiş fotoğrafıyla birlikte gönderin. Ön plakada damgalı bir model numarası varsa onu da fotoğraflayın.",
+      "| Ölçü | Nasıl alınır | Neden önemli |\n| --- | --- | --- |\n| Backset | Ön plakanın yüzünden kare mil deliğinin merkezine, tüp veya silindirik kilitte silindirin merkezine kadar | Yeni kilit, kolu ve silindiri eski deliklerin olduğu yere getirmelidir |\n| Kapı kalınlığı | Kilit hizasında kanadın bir yüzünden diğerine, kaplama veya plaka dahil | Silindir ve mil boyunu, hangi kilitlerin uyacağını belirler |\n| Kilit gövdesi | Gövdenin yüksekliği, kapı içindeki derinliği ve kalınlığı; Avrupa profilli gövdede milden silindire aks mesafesi | Gövde mevcut yuvaya sığmalı, aks mesafesi kol aynalarıyla eşleşmelidir |\n| Ön plaka | Boy, en, kalınlık, köşelerin düz mü yuvarlak mı olduğu ve vida aralığı | Daha büyük bir plaka kanat kenarının yeniden işlenmesini gerektirir; daha küçüğü boşluk bırakır |\n| Karşılık | Karşılık sacının boyu ve eni, dil ve sürgü açıklıklarının yeri ve vida aralığı | Mevcut karşılığa denk gelmeyen bir dil, kasanın yeniden oyulması demektir |\n| Silindir boyu | Her taraf ayrı ayrı, sabitleme vidasının merkezinden dış yüze kadar; örneğin 30/30 diye yazılır | Çok kısa olursa anahtar kavramaz; çok uzun olursa aynanın dışına taşar |\n| Açılış yönü | Menteşelerin hangi tarafta olduğu ve kapının hangi yöne açıldığı, belirtilen bir taraftan bakıldığında | Eğimli dilli kilit gövdeleri ile birçok kapı kapatıcı ve panik bar tek yön için üretilir |\n| Kare mil | Kare milin karşılıklı düz yüzleri arası ve boyu | Pazara göre 8 mm ve 7 mm ikisi de yaygındır ve biri diğerine uymaz |\n| Sabitleme aralıkları | Kol rozetleri veya aynalarındaki geçme cıvata ya da vidaların merkezden merkeze mesafesi, ayrıca yüzey kilidi veya panik bar bağlantıları | Yeni donanım mevcut deliklere oturmalıdır; yoksa eski delikler görünür kalır |",
+      "Mümkünse milimetre ile ölçün; inç ile ölçtüyseniz bunu belirtin. Bu listedeki boş bir hücre bir soruya mal olur; neredeyse doğru bir sayı ise gelen ama uymayan bir kilide.",
       "## Listeyi göndermek",
       "Okuyabildiğimiz her format, listenin bir özetinden iyidir; ama bazıları diğerlerinden daha iyidir. En iyisi elektronik tablo çıktısıdır, çünkü setler yeniden yazılmadan açılıp sayılabilir. PDF de olur. Basılı bir sayfanın fotoğrafı başlamak için yeter. Format ne olursa olsun genel notları ve anahtarlama listesini satırlarla birlikte gönderin (kaplama ve yangın stratejisi genellikle notlarda yer alır) ve revizyon harfini ekleyin ki yanıtımız ile bir sonraki revizyonunuz aynı belgeye atıf yapsın. Notları olmayan bir liste, kapıların listesidir; notlarıyla birlikte ise yanıtlayabileceğimiz bir şartnamedir.",
+      "Projenin henüz bir listesi yoksa, aşağıda ekli şablon boş bir listedir: her kapı için bir satır; kapı numarası, konum, kanat ve kasa malzemesi, kapı ölçüsü, kalınlık, yangın sınıfı, açılış yönü, fonksiyon, kilit modeli, silindir, kapı kapatıcı, menteşeler, panik bar, stoper ve notlar sütunları ile proje, revizyon, yüzey kaplaması ve anahtarlama için bir başlık bölümü. Makro içermeyen sade bir elektronik tablodur. Bildiklerinizi doldurun, gerisini boş bırakın.",
       "Kataloğumuz ürüne göre düzenlenmiştir, çünkü bir katalog böyle düzenlenmek zorundadır. Ama siparişe dönüşen talepler neredeyse hiçbir zaman ürün ürün gelmez. Bir liste olarak ya da bir listenin fotoğrafı olarak gelir ve kazanan yanıt, satırı değil seti okuyan yanıttır. Elinizde bir liste varsa gönderin. İşe yarayan yanıt, hangi setleri tamamlayabildiğimiz, hangilerini tek bir kalem dışında tamamlayabildiğimiz ve hangilerini tamamlayamadığımızdır; bu yanıt satır satır bir tekliften daha hızlı gelir."
     ],
     "faq": [
@@ -504,6 +509,14 @@
       {
         "question": "Kapı listesinden teklif verirken en yaygın hatalar nelerdir?",
         "answer": "Dördü ürünlerden değil tablodan kaynaklanır: bazı parçalar kanat başına, bazıları açıklık başınayken çift kanatlı bir kapıyı tek kapı saymak; genel notlarda bir kez yazılmış bir kaplamayı kaçırmak; açıklamalar sütununda ya da ayrı bir anahtarlama listesinde kayıtlı anahtarlamayı görmezden gelmek; ve eski bir revizyona karşı teklif vermek. Satırlardan önce notları okuyun, çiftleri kanat ve açıklık başına ayrı ayrı sayın ve liste revizyonunu teklifin üzerine yazın."
+      },
+      {
+        "question": "Bir kilidi değiştirmeden önce neler ölçülmeli?",
+        "answer": "Backset; kilit hizasında kapı kalınlığı; kilit gövdesi (yükseklik, derinlik, kalınlık ve Avrupa profilli gövdede aks mesafesi); ön plaka ve vida aralığı; karşılık; sabitleme vidasından itibaren silindirin her iki tarafı; açılış yönü; kare mil; ve donanımın sabitleme aralıkları. Ölçüleri, eski kilidin yanına bir cetvel konarak çekilmiş fotoğrafıyla birlikte gönderin."
+      },
+      {
+        "question": "Bir kapı listesi şablonu var mı?",
+        "answer": "Evet. Bu yazıya ekli elektronik tabloda her kapı için bir satır; kapı numarası, konum, kanat ve kasa malzemesi, kapı ölçüsü, kalınlık, yangın sınıfı, açılış yönü, fonksiyon, kilit modeli, silindir, kapı kapatıcı, menteşeler, panik bar, stoper ve notlar sütunları ile proje, revizyon, yüzey kaplaması ve anahtarlama için bir başlık bölümü vardır. Bildiklerinizi doldurun, gerisini boş bırakın."
       }
     ],
     "sourceHash": {
@@ -511,8 +524,8 @@
       "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
-      "body": "b72f32a8a4bc",
-      "faq": "61aa3c65cd39"
+      "body": "1de6eb40acab",
+      "faq": "d8d9a1c7d8c7"
     }
   },
   "door-stop-holder-or-flush-bolt": {

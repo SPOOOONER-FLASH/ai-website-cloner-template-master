@@ -476,8 +476,13 @@
       "Oberfläche einmal angegeben und überall vorausgesetzt: Die Oberfläche steht oft in einer allgemeinen Vorbemerkung oben und fehlt dann in den Zeilen. Ein Lieferant, der nur die Zeilen liest, bietet die Standardoberfläche an; einer, der die Vorbemerkung liest, bietet richtig an. Lesen Sie die Vorbemerkungen vor den Zeilen.",
       "Schließung in den Bemerkungen: Schließgruppen stehen meist in einer Bemerkungsspalte oder in einem eigenen Schließplan, nicht im Beschlagsatz. Eine Zylinderposition ohne Schließangaben ist unvollständig, wie sorgfältig der Zylinder auch beschrieben sein mag.",
       "Revisionen: Türlisten werden während eines Projekts neu herausgegeben, und jede Revision kann Sätze stillschweigend ändern. Bieten Sie auf einen genannten Revisionsstand an, schreiben Sie diesen Stand ins Angebot und fordern Sie bei einer neuen Revision die Änderungsliste an, statt das ganze Dokument neu zu lesen.",
+      "## Was man vor dem Austausch eines Schlosses messen sollte",
+      "Eine Türliste für einen Neubau beschreibt Türen, die es noch nicht gibt. Ein Austausch ist das Gegenteil: Die Tür ist bereits ausgefräst, und das neue Schloss muss in Löcher passen, die jemand anderes gebohrt hat. Messen Sie also den alten Beschlag und die Tür, nicht den Katalog, und schicken Sie die Maße mit einem Foto des alten Schlosses neben einem Lineal. Trägt der Stulp eine eingeprägte Modellnummer, fotografieren Sie diese ebenfalls.",
+      "| Maß | Wie messen | Warum es zählt |\n| --- | --- | --- |\n| Dornmaß | Von der Stulpvorderseite bis zur Mitte der Drückernuss, bei einem Rohr- oder Knaufschloss bis zur Zylindermitte | Das neue Schloss muss Drücker und Zylinder dorthin setzen, wo die alten Löcher sind |\n| Türblattdicke | Durch das Türblatt auf Höhe des Schlosses, einschließlich Beplankung oder Schild | Sie bestimmt Zylinder- und Drückerstiftlänge und welche Schlösser überhaupt passen |\n| Schlosskasten | Höhe, Tiefe in der Tür und Dicke des Kastens; bei Profilzylinderschlössern die Entfernung von Drückernuss zu Zylinder | Der Kasten muss in die vorhandene Schlosstasche passen, und die Entfernung muss zu den Drückerschildern passen |\n| Stulp | Länge, Breite, Dicke, eckige oder runde Enden und der Abstand seiner Befestigungsschrauben | Ein größerer Stulp verlangt Nacharbeit an der Türkante; ein kleinerer hinterlässt einen Spalt |\n| Schließblech | Länge und Breite, Lage der Öffnungen für Falle und Riegel und Abstand der Schrauben | Eine Falle, die das vorhandene Schließblech verfehlt, bedeutet Nacharbeit an der Zarge |\n| Zylinderlänge | Jede Seite einzeln, von der Mitte der Stulpschraube bis zur Außenfläche, notiert zum Beispiel als 30/30 | Zu kurz, und der Schlüssel greift nicht; zu lang, und er steht über den Beschlag hinaus |\n| Anschlag (DIN links/rechts) | Auf welcher Seite die Bänder sitzen und wohin die Tür öffnet, von einer angegebenen Seite gesehen | Schlösser mit abgeschrägter Falle sowie viele Türschließer und Paniktürverschlüsse werden nur für eine Richtung gefertigt |\n| Drückerstift | Über die Flächen des Vierkants und seine Länge | 8mm und 7mm sind beide verbreitet, je nach Markt, und das eine passt nicht in das andere |\n| Befestigungsabstände | Mitte zu Mitte der Durchgangsschrauben an Rosetten oder Schildern und der Befestigung eines Kastenschlosses oder Panikverschlusses | Der neue Beschlag muss auf den vorhandenen Löchern sitzen, sonst bleiben die alten sichtbar |",
+      "Messen Sie möglichst in Millimetern, und sagen Sie es, wenn Sie in Zoll gemessen haben. Ein leeres Feld in dieser Liste kostet eine Rückfrage; eine fast richtige Zahl kostet ein Schloss, das ankommt und nicht passt.",
       "## Die Türliste schicken",
       "Jedes Format, das wir lesen können, ist besser als eine Zusammenfassung davon, aber manche sind besser als andere. Ein Tabellenexport ist am besten, weil sich die Sätze ohne Abtippen auflösen und zählen lassen. Ein PDF ist gut. Ein Foto einer ausgedruckten Seite reicht für den Anfang. Gleich in welchem Format: Schicken Sie die allgemeinen Vorbemerkungen und den Schließplan zusammen mit den Zeilen (in den Vorbemerkungen stehen meist Oberfläche und Brandschutzkonzept) und geben Sie den Revisionsbuchstaben an, damit sich unsere Antwort und Ihre nächste Revision auf dasselbe Dokument beziehen. Eine Türliste ohne Vorbemerkungen ist eine Liste von Türen; mit ihnen ist sie eine Ausschreibung, die wir beantworten können.",
+      "Hat das Projekt noch keine Türliste, ist die unten angehängte Vorlage eine leere: eine Zeile je Tür, mit Spalten für Türnummer, Lage, Material von Flügel und Zarge, Türmaß, Dicke, Feuerwiderstand, Anschlag, Funktion, Schlossmodell, Zylinder, Türschließer, Bänder, Panikbeschlag, Türstopper und Bemerkungen, dazu ein Kopfbereich für Projekt, Revisionsstand, Oberfläche und Schließanlage. Es ist eine einfache Tabelle ohne Makros. Füllen Sie aus, was Sie wissen, und lassen Sie den Rest leer.",
       "Unser Katalog ist nach Produkten geordnet, weil ein Katalog so geordnet sein muss. Aber die Anfragen, aus denen Aufträge werden, kommen fast nie Produkt für Produkt. Sie kommen als Türliste oder als Foto einer Türliste, und die Antwort, die gewinnt, ist die, die den Satz liest statt die Zeile. Wenn Sie eine Türliste haben, schicken Sie sie: Die nützliche Antwort lautet, welche Sätze wir vollständig liefern können, welche bis auf eine Position und welche nicht – und diese Antwort kommt schneller als ein Angebot Zeile für Zeile."
     ],
     "faq": [
@@ -504,6 +509,14 @@
       {
         "question": "Welche Fehler passieren beim Anbieten nach einer Türliste am häufigsten?",
         "answer": "Vier entstehen aus der Tabelle, nicht aus den Produkten: ein Türpaar als eine Tür zählen, obwohl manche Teile je Flügel und andere je Öffnung gelten; eine Oberfläche übersehen, die einmal in den allgemeinen Vorbemerkungen steht; die Schließung ignorieren, die in einer Bemerkungsspalte oder einem eigenen Schließplan steht; und auf eine alte Revision anbieten. Lesen Sie die Vorbemerkungen vor den Zeilen, zählen Sie Türpaare je Flügel und je Öffnung und schreiben Sie den Revisionsstand der Türliste ins Angebot."
+      },
+      {
+        "question": "Was sollte man vor dem Austausch eines Schlosses messen?",
+        "answer": "Das Dornmaß; die Türblattdicke auf Höhe des Schlosses; den Schlosskasten (Höhe, Tiefe, Dicke und bei Profilzylinderschlössern die Entfernung); den Stulp und den Abstand seiner Schrauben; das Schließblech; jede Zylinderseite ab der Stulpschraube; den Anschlag; den Drückerstift; und die Befestigungsabstände des Beschlags. Schicken Sie die Maße mit einem Foto des alten Schlosses neben einem Lineal."
+      },
+      {
+        "question": "Gibt es eine Vorlage für eine Türliste?",
+        "answer": "Ja. Die an diesen Artikel angehängte Tabelle hat eine Zeile je Tür, mit Spalten für Türnummer, Lage, Material von Flügel und Zarge, Türmaß, Dicke, Feuerwiderstand, Anschlag, Funktion, Schlossmodell, Zylinder, Türschließer, Bänder, Panikbeschlag, Türstopper und Bemerkungen, dazu ein Kopfbereich für Projekt, Revisionsstand, Oberfläche und Schließanlage. Füllen Sie aus, was Sie wissen, und lassen Sie den Rest leer."
       }
     ],
     "sourceHash": {
@@ -511,8 +524,8 @@
       "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
-      "body": "b72f32a8a4bc",
-      "faq": "61aa3c65cd39"
+      "body": "1de6eb40acab",
+      "faq": "d8d9a1c7d8c7"
     }
   },
   "door-stop-holder-or-flush-bolt": {

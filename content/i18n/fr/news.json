@@ -476,8 +476,13 @@
       "La finition prescrite une fois et supposée partout : la finition figure souvent dans une note générale en tête, puis disparaît des lignes. Un fournisseur qui ne lit que les lignes chiffrera la finition par défaut ; celui qui lit la note chiffrera juste. Lisez les notes avant les lignes.",
       "La combinaison des clés dans les remarques : les groupes de clés figurent généralement dans une colonne de remarques ou dans un tableau de combinaison séparé, pas dans l'ensemble de quincaillerie. Une ligne de cylindre sans information de combinaison est incomplète, aussi soigneusement que le cylindre soit décrit.",
       "Les révisions : les tableaux sont réédités en cours de projet, et chaque révision peut modifier des ensembles sans le signaler. Chiffrez sur une révision précise, indiquez-la sur le devis et, à chaque nouvelle édition, demandez la liste des modifications plutôt que de relire tout le document.",
+      "## Ce qu'il faut mesurer avant de remplacer une serrure",
+      "Un tableau pour un bâtiment neuf décrit des portes qui n'existent pas encore. Un remplacement, c'est l'inverse : la porte est déjà usinée, et la nouvelle serrure doit s'adapter à des perçages faits par quelqu'un d'autre. Mesurez donc l'ancienne quincaillerie et la porte, pas le catalogue, et envoyez les cotes avec une photo de l'ancienne serrure posée à côté d'une règle. Si la têtière porte un numéro de modèle gravé, photographiez-le aussi.",
+      "| Mesure | Comment la prendre | Pourquoi elle compte |\n| --- | --- | --- |\n| Axe (backset) | De la face de la têtière au centre du trou du carré, ou du cylindre sur une serrure tubulaire ou cylindrique | La nouvelle serrure doit placer la béquille et le cylindre là où sont les anciens perçages |\n| Épaisseur de porte | À travers le vantail au niveau de la serrure, revêtement ou plaque compris | Elle fixe la longueur du cylindre et du carré, et quelles serrures conviennent |\n| Coffre de serrure | Hauteur, profondeur dans la porte et épaisseur du coffre ; sur un coffre à profil européen, l'entraxe du carré au cylindre | Le coffre doit entrer dans la mortaise existante, et l'entraxe doit correspondre aux plaques des béquilles |\n| Têtière | Longueur, largeur, épaisseur, angles droits ou arrondis, et entraxe de ses vis | Une têtière plus grande oblige à reprendre le chant ; une plus petite laisse un jour |\n| Gâche | Longueur et largeur de la gâche, position des ouvertures du pêne demi-tour et du pêne dormant, et entraxe de ses vis | Un pêne qui manque la gâche existante oblige à reprendre le dormant |\n| Longueur du cylindre | Chaque côté séparément, du centre de la vis de fixation à la face extérieure, noté par exemple 30/30 | Trop court, la clé n'entre pas en prise ; trop long, il dépasse de la garniture |\n| Main | De quel côté sont les paumelles et dans quel sens la porte s'ouvre, vu d'un côté indiqué | Les coffres à pêne biseauté, et beaucoup de ferme-portes et de fermetures anti-panique, sont fabriqués pour une seule main |\n| Carré | Entre les faces plates du carré, et sa longueur | 8mm et 7mm sont tous deux courants, selon le marché, et l'un ne va pas dans l'autre |\n| Entraxes de fixation | De centre à centre des vis traversantes des rosaces ou des plaques, et des fixations d'une serrure en applique ou d'une fermeture anti-panique | La nouvelle garniture doit tomber sur les perçages existants, sinon les anciens restent visibles |",
+      "Mesurez en millimètres si possible, et précisez-le si vous avez mesuré en pouces. Une case vide dans cette liste coûte une question ; un chiffre presque juste coûte une serrure qui arrive et ne s'adapte pas.",
       "## Envoyer le tableau",
       "Tout format que nous pouvons lire vaut mieux qu'un résumé, mais certains sont meilleurs que d'autres. Un export tableur est l'idéal, car les ensembles peuvent être décomposés et comptés sans ressaisie. Un PDF convient. La photo d'une page imprimée suffit pour commencer. Quel que soit le format, joignez aux lignes les notes générales et le tableau de combinaison des clés (c'est dans les notes que se trouvent généralement la finition et la stratégie incendie), et indiquez la lettre de révision, pour que notre réponse et votre prochaine révision se rapportent au même document. Sans ses notes, un tableau est une liste de portes ; avec elles, c'est un cahier des charges auquel nous pouvons répondre.",
+      "Si le projet n'a pas encore de tableau, le modèle joint ci-dessous en est un vierge : une ligne par porte, avec des colonnes pour le numéro de porte, l'emplacement, le matériau du vantail et du dormant, les dimensions de la porte, l'épaisseur, le degré coupe-feu, la main, la fonction, le modèle de serrure, le cylindre, le ferme-porte, les paumelles, la fermeture anti-panique, le butoir et les remarques, plus un en-tête pour le projet, l'indice de révision, la finition et l'organigramme. C'est un simple tableur, sans macros. Remplissez ce que vous savez et laissez le reste vide.",
       "Notre catalogue est organisé par produit, parce qu'un catalogue ne peut pas l'être autrement. Mais les demandes qui deviennent des commandes n'arrivent presque jamais produit par produit. Elles arrivent sous forme de tableau, ou de photo de tableau, et la réponse qui l'emporte est celle qui lit l'ensemble plutôt que la ligne. Si vous avez un tableau, envoyez-le : la réponse utile est de dire quels ensembles nous pouvons compléter, lesquels à un article près, et lesquels non — et cette réponse arrive plus vite qu'un devis ligne par ligne."
     ],
     "faq": [
@@ -504,6 +509,14 @@
       {
         "question": "Quelles sont les erreurs les plus courantes lorsqu'on chiffre un tableau de quincaillerie ?",
         "answer": "Quatre viennent du tableau plutôt que des produits : compter une porte double comme une seule porte alors que certaines pièces se comptent par vantail et d'autres par baie ; manquer une finition indiquée une seule fois dans les notes générales ; ignorer la combinaison des clés consignée dans une colonne de remarques ou un tableau séparé ; et chiffrer sur une ancienne révision. Lisez les notes avant les lignes, comptez les paires par vantail et par baie, et indiquez la révision du tableau sur le devis."
+      },
+      {
+        "question": "Que faut-il mesurer avant de remplacer une serrure ?",
+        "answer": "L'axe ; l'épaisseur de la porte au niveau de la serrure ; le coffre (hauteur, profondeur, épaisseur et, sur un coffre à profil européen, l'entraxe) ; la têtière et l'entraxe de ses vis ; la gâche ; chaque côté du cylindre depuis la vis de fixation ; la main ; le carré ; et les entraxes de fixation de la garniture. Envoyez les cotes avec une photo de l'ancienne serrure posée à côté d'une règle."
+      },
+      {
+        "question": "Existe-t-il un modèle de tableau de portes ?",
+        "answer": "Oui. Le tableur joint à cet article a une ligne par porte, avec des colonnes pour le numéro de porte, l'emplacement, le matériau du vantail et du dormant, les dimensions de la porte, l'épaisseur, le degré coupe-feu, la main, la fonction, le modèle de serrure, le cylindre, le ferme-porte, les paumelles, la fermeture anti-panique, le butoir et les remarques, plus un en-tête pour le projet, la révision, la finition et l'organigramme. Remplissez ce que vous savez et laissez le reste vide."
       }
     ],
     "sourceHash": {
@@ -511,8 +524,8 @@
       "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
-      "body": "b72f32a8a4bc",
-      "faq": "61aa3c65cd39"
+      "body": "1de6eb40acab",
+      "faq": "d8d9a1c7d8c7"
     }
   },
   "door-stop-holder-or-flush-bolt": {
