@@ -1594,6 +1594,82 @@
       "faq": "147c77b5742a"
     }
   },
+  "exit-device-locking-method-2026": {
+    "title": "Acil Çıkış Cihazında Kilitleme Yöntemi 2026: Yüzeye Monte, Yüzeye Monte Dikey Çubuklu, Gizli Dikey Çubuklu veya Gömme Kilitli, ve Hangisi Nereye Uyar",
+    "summary": "Bir acil çıkış cihazı iki kez seçilir: bir kez onu kullanacak insanlara göre, bir kez de kapıyı nasıl kilitlediğine göre. Yüzeye monte cihazlar kasada tek noktadan kilitlenir ve tek kanatlı kapılara ve orta kayıtlı çift kanatlı kapılara uyar. Yüzeye monte ve gizli dikey çubuklar üstte ve zeminde kilitlenir ve orta kayıtsız çift kanatlı kapılara uyar; karşılığında temiz tutulması gereken bir zemin karşılığı gerekir. Gömme kilitli cihazlar kapı kenarındaki bir kilit kasası üzerinden kilitlenir. Bu rehber her birinin nereye uyduğunu, EN 1125 ve UL 305'in yapılandırma hakkında ne söylediğini ve cihazlarımızdan hangisinin hangisi olduğunu anlatır.",
+    "seoTitle": "Acil çıkış cihazı 2026: yüzeye monte, dikey çubuk, gömme",
+    "seoDescription": "Yüzeye monte, dikey çubuklu (açık veya gizli) ya da gömme kilitli acil çıkış cihazı: çift kanatlı ve yangın kapılarında hangisi uyar. EN 1125, UL 305.",
+    "body": [
+      "Bir acil çıkış cihazı iki kez seçilir. İlk seçim insanlarla ilgilidir: çıkışın EN 1125'e göre bir panik bara mı yoksa EN 179'a göre bir acil durum koluna mı ihtiyaç duyduğu; bunu EN 1125 ile EN 179 arasındaki seçim üzerine rehberimiz ele alır. İkincisi kapıyla ilgilidir: cihazın kapıyı nasıl kilitlediği.",
+      "Bu ikinci seçimin dört cevabı vardır: yüzeye monte, yüzeye monte dikey çubuklu, gizli dikey çubuklu ve gömme kilitli. Kilitleme noktalarının nerede olacağına, kasanın ve zeminin neler sağlaması gerektiğine ve açıklığın kullanımda kaldığı sürece ne kadar bakım isteyeceğine bu seçim karar verir. Bu rehber dördünü, her birinin nereye uyduğunu ve kendi cihazlarımızdan hangisinin hangisi olduğunu anlatır.",
+      "## Dört yöntem yan yana",
+      "| Yöntem | Kilitleme noktaları | Olağan kullanım | Açıklığın sağlaması gereken | Dikkat edilecek nokta |\n| --- | --- | --- | --- | --- |\n| Yüzeye monte | bir, kilit tarafında | tek kanatlı kapılar; orta kayıtlı çift kanatlı kapılar | kasada veya orta kayıtta bir karşılık sacı | çift kanatlı kapı orta kayıt ister |\n| Yüzeye monte dikey çubuk | iki, üstte ve zeminde | orta kayıtsız çift kanatlı kapılar | bir üst karşılık ve bir zemin karşılığı | açıkta kalan çubuklar; zemin karşılığı |\n| Gizli dikey çubuk | iki, üstte ve zeminde | çubukların görünmemesi gereken çift kanatlı kapılar | çubuklar için hazırlanmış kanat; üst ve zemin karşılığı | ayarlaması ve onarımı daha zor |\n| Gömme kilitli | bir, kapı kenarındaki kilit kasası üzerinden | tek kanatlı kapılar; çift kanatlı kapının aktif kanadı | kilit kasası için hazırlanmış kapı kenarı | kasa hazırlığı siparişten önce belirlenir |",
+      "## Yüzeye monte cihazlar",
+      "Yüzeye monte bir cihaz dilini kapı yüzeyindeki uç gövdede taşır ve kilit tarafında kasadaki bir karşılık sacına kilitlenir. Dördü arasında takması ve bakımı en kolay olanıdır, kapı kenarına hiçbir şey açılmaz ve tek kanatlı bir kaçış kapısı için olağan seçimdir.",
+      "Çift kanatlı bir kapıda yüzeye monte cihaz ancak her kanadın kilitlenecek bir yeri varsa çalışır: kanatlar arasında bir orta kayıt. Sabit bir orta kayıt net geçiş genişliğini kalıcı olarak daraltır; anahtarla çıkarılan sökülebilir bir orta kayıt, ekipman geçmesi gerektiğinde tam genişliği geri verir. Yangına dayanıklı çift kanatlı bir kapıda orta kayıt da sistemin parçasıdır, bu yüzden kapının sertifikasının kapsadığı bir kayıt olmalıdır.",
+      "300 ve 302 modellerimiz, boyu ayarlanabilen tek kanat için yüzeye monte panik barlardır: 900mm ve 1040mm. Acil çıkış cihazları karşılaştırma rehberimiz ürün yelpazesindeki her yüzeye monte cihazı boyuna göre listeler.",
+      "## Yüzeye monte dikey çubuklu cihazlar",
+      "Yüzeye monte dikey çubuklu bir cihaz, kanat yüzeyindeki iki çubuğu hareket ettirir: biri kasanın üstündeki bir dile, diğeri zemindeki bir dile gider. Böylece çift kanatlı kapının her kanadı komşu kanada değil kasaya ve zemine kilitlenir; orta kayda gerek kalmaz ve iki kanat da kaçış için açılabilir.",
+      "Bunun bedeli alt dildir. Alt dil zeminin içindeki ya da üstündeki bir karşılığa girer ve zemin, bir binanın donanıma en sert davrandığı yerdir: toz ve kum karşılığı doldurur, arabalar ve temizlik makineleri çubuğa çarpar, yeni bir zemin kaplaması yüksekliği değiştirir ve menteşelerinde sarkan bir kanat karşılığa hiç ulaşamaz hale gelir. Artık kilitlenmeyen bir alt dil, kanadı yalnızca üstten tutulur halde bırakır.",
+      "Bu yüzden birçok cihaz alt çubuksuz olarak da sunulur: alt çubuk ve zemin karşılığı çıkarılır ve kanat yalnızca üstte kilitlenir. Sıradan bir kapıda bu bir bakım kararıdır. Yangına dayanıklı çift kanatlı bir kapıda ise bir sertifika meselesidir, çünkü test edilen yapılandırmada alt dil vardı; Amerika Birleşik Devletleri'ndeki üreticiler alt çubuksuz seçeneği yangın kapılarında genellikle yalnızca listeleme izin veriyorsa ve çoğu zaman ek bir yangın pimiyle kabul eder. Çubuğu çıkarmadan önce kapının ve cihazın sertifikasını kontrol edin.",
+      "316-D modelimiz, kaydında üstten ve alttan kilitleme belirtilen, çift kanatlı kapılar için yüzeye monte bir cihazdır; yukarıdaki fotoğraf parçalarını gösterir. 308-D üstte ve altta kilitlenen dikey çubuklarla birlikte gelir, 320 ise üst kasaya ve eşiğe kilitlenen iki noktalı bir panik bardır.",
+      "## Gizli dikey çubuklu cihazlar",
+      "Gizli dikey çubuklu bir cihaz aynı işi çubukları kanadın içinde tutarak yapar. Kapı yüzeyi temiz kalır ve çubuklar vandalizmden ve arabalardan korunur; bu yüzden kamu binalarında ve görünümün önemli olduğu kapılarda tercih edilir.",
+      "Kanadın çubuklar için üretilmesi veya hazırlanması gerekir; bu da onu sonradan eklenecek bir şey değil, kapı üreticisinin kararı yapar. Ayar ve onarım kapıyı açmayı gerektirir, alt dil ve zemin karşılığı da yüzeye monte çubuktaki sorunların aynısını taşır. Kataloğumuzda gizli dikey çubuklu bir cihaz bulunmuyor; bir projenin buna ihtiyacı olduğunda yerine yüzeye monte bir cihaz önermek yerine bunu açıkça söyleriz.",
+      "## Gömme kilitli acil çıkış cihazları",
+      "Gömme kilitli bir acil çıkış cihazı, kapı kenarına gömülü bir kilit kasasını çalıştırır. Kilitleme, yüzeye monte cihazdaki gibi kilit tarafında tek bir noktadır ama kapının içindedir ve dış donanım ile silindir kasa üzerinden çalışır. Kapıda zaten gömme bir kilit ve anahtarlı bir dış fonksiyon varsa ya da gerekiyorsa olağan cevap budur.",
+      "Kilit kasası hazırlığı siparişten önce belirlenir: kilit merkez mesafesi, eksen mesafesi ve silindir delikleri kapıyla eşleşmelidir, yoksa cihaz yerine oturmaz. 307 modelimiz, 65mm kilit merkez mesafesi, 72mm eksen mesafesi ve iki Avrupa tipi silindir deliği belirtilen 072 kilit kasasıyla çalışır. 311 ise kilit gövdesi, pirinç silindir ve paslanmaz çelik kolla birlikte set olarak satılır; silindir eksen mesafeleri 72mm ve 92mm'dir.",
+      "## Çift kanatlı kapılar: kilitlemenin üç yolu",
+      "İki kanatta da yüzeye monte cihaz, orta kayıtla: takması ve bakımı kolaydır, bedeli açıklıktaki orta kayıttır.",
+      "İki kanatta da dikey çubuk, orta kayıt olmadan: tam genişlik kullanılabilir ve iki kanat da kaçış için açılır, bedeli temiz tutulması gereken iki zemin karşılığıdır.",
+      "Pasif kanatta dikey çubuklu bir cihaz, aktif kanatta ise pasif kanada takılı bir karşılığa kilitlenen yüzeye monte veya gömme kilitli bir cihaz: bir kanat her gün, diğeri yalnızca kaçış veya ekipman geçişi için kullanılıyorsa olağan düzen budur.",
+      "Kanatları bindirmeli her çift kanatlı kapıda kanatların doğru sırayla kapanması da gerekir; bu, kapanma sırası düzenleyicinin işidir. Kapanmadıklarında ne olduğunu yangın kapılarının yıllık denetimi üzerine rehberimiz anlatır. Kaçış için açılması gereken bir pasif kanatta gömme sürgüler bir cihazın yerini tutmaz, çünkü sürgü ikinci bir hareket ekler.",
+      "## EN 1125 ve UL 305'in yöntem hakkında söyledikleri",
+      "Avrupa'da panik çıkış cihazları EN 1125'e göre test edilir, sınıflandırılır ve CE işareti taşır. Sınıflandırma, kapı uygulama alanını, yani cihazın tek kanatlı kapıya mı, aktif kanada mı yoksa pasif kanada mı uygun olduğunu ve yangın ile duman kapılarına uygunluğunu içerir. Bir cihaz, test edildiği yapılandırmada sertifikalandırılır: üst ve alt diller, belirli bir karşılık, belirtilmiş bir kapı boyutu. Alt çubuğu çıkarmak veya karşılığı değiştirmek bu yapılandırmayı değiştirmektir.",
+      "Amerika Birleşik Devletleri'nde UL 305 panik donanımı standardıdır. Bir yangın kapısında cihazın yangın çıkış donanımı olması, UL 305'e ve yangın testi UL 10C'ye göre listelenmiş olması gerekir; listeleme kapsadığı kapı boyutlarını, yapılandırmaları ve sınırlamaları belirtir. Yangın çıkış donanımında mekanik açık tutma (dogging) yoktur, çünkü bir yangın kapısı kilitli kalmalıdır.",
+      "Bugün acil çıkış cihazlarımızın hiçbiri EN 1125 sertifikasına veya UL 305 listelemesine sahip değildir ve ürün sayfalarımızın hiçbiri aksini ima etmez. Bir proje bunlardan birini gerektiriyorsa bize sorun; hangi cihazların karşılayabileceğini ve hangilerinin karşılayamayacağını açıkça söyleriz.",
+      "## Beş soruda seçim",
+      "Tek kanat mı, çift kanat mı? Tek kanatlı bir kapıya genellikle yüzeye monte veya gömme kilitli bir cihaz takılır.",
+      "Çift kanatlı kapıda açıklıkta bir orta kayıt kabul edilebilir mi? Evetse yüzeye monte cihazlar, hayırsa dikey çubuklar.",
+      "Açıklık yangına dayanıklı mı? O zaman yöntem, karşılıklar ve alt çubuksuz seçeneklerin tümü kapının ve cihazın sertifikası kapsamında olmalıdır.",
+      "Zemin beş yıl sonra nasıl olacak? Dış eşikler, yoğun araba trafiği ve sık zemin temizliği, sertifikanın izin verdiği yerde alt çubuksuz seçeneği ya da orta kaydı öne çıkarır.",
+      "Bakımı kim yapacak? Yüzeye monte bir cihaz tornavidayla ayarlanır; gizli olan kapıyı açmayı gerektirir. Cevapları kanat ölçüsü ve kapı kalınlığıyla birlikte gönderin, ilk yanıt bir cihaz önerebilir."
+    ],
+    "faq": [
+      {
+        "question": "Yüzeye monte acil çıkış cihazı ile dikey çubuklu cihaz arasındaki fark nedir?",
+        "answer": "Yüzeye monte cihaz, kilit tarafında tek bir noktadan kasadaki veya orta kayıttaki bir karşılığa kilitlenir. Dikey çubuklu cihaz iki noktadan, kasanın üstünde ve zeminde kilitlenir; böylece çift kanatlı bir kapı orta kayda ihtiyaç duymaz."
+      },
+      {
+        "question": "Gizli dikey çubuk yerine yüzeye monte dikey çubuk ne zaman kullanılmalı?",
+        "answer": "Yüzeye monte dikey çubuk kanadın yüzeyine takılır, ayarlaması ve onarımı daha kolaydır. Gizli dikey çubuk bunun için üretilmiş veya hazırlanmış bir kanadın içinden geçer, yüzeyi temiz tutar ve çubukları darbelerden korur, ancak ayar ve onarım kapıyı açmayı gerektirir."
+      },
+      {
+        "question": "Acil çıkış cihazında alt çubuksuz ne demektir?",
+        "answer": "Alt çubuk ve zemin karşılığı çıkarılır ve kanat yalnızca üstte kilitlenir. Zemin karşılığından kurtarır, ancak yangına dayanıklı çift kanatlı bir kapıda yalnızca kapının ve cihazın sertifikası izin veriyorsa, çoğu zaman ek bir yangın pimiyle kabul edilir."
+      },
+      {
+        "question": "Yüzeye monte cihazlı çift kanatlı bir kapı orta kayıt gerektirir mi?",
+        "answer": "Evet. Her yüzeye monte cihazın kilitleneceği bir karşılığa ihtiyacı vardır ve çift kanatlı kapıda bu karşılık kanatlar arasındaki bir orta kayıttadır. Sökülebilir bir orta kayıt, tam genişlik gerektiğinde anahtarla çıkarılabilir."
+      },
+      {
+        "question": "Gömme kilitli acil çıkış cihazı nedir?",
+        "answer": "Kapı kenarına gömülü bir kilit kasasını çalıştıran cihazdır. 307 modelimiz 65mm kilit merkez mesafesi ve 72mm eksen mesafesi belirtilen 072 kasasıyla çalışır; 311 kilit gövdesi, pirinç silindir ve kolla birlikte set olarak satılır."
+      },
+      {
+        "question": "Acil çıkış cihazlarınız EN 1125 sertifikalı veya UL 305 listeli mi?",
+        "answer": "Bugün değil. Acil çıkış cihazlarımızın hiçbiri EN 1125 sertifikasına veya UL 305 listelemesine sahip değildir ve sayfalarımızın hiçbiri aksini ima etmez. Bir proje bunlardan birini gerektiriyorsa bize sorun; hangi cihazların karşılayabileceğini ve hangilerinin karşılayamayacağını açıkça söyleriz."
+      }
+    ],
+    "sourceHash": {
+      "title": "804e4259c91b",
+      "summary": "d567cab52cd0",
+      "seoTitle": "b4cc025bcbb4",
+      "seoDescription": "bb10d74a1a8e",
+      "body": "d9623e15acc5",
+      "faq": "fc23e4baab35"
+    }
+  },
   "exit-device-outside-trim-functions-2026": {
     "title": "Panik Çıkış Cihazı Dış Kolu 2026: Tüm Dış Kol Fonksiyonları, Dogging Kuralları ve Kararın Neden Asla Bar Olmadığı",
     "summary": "İçerideki bar her zaman insanları dışarı çıkarır; dış kol kimin gireceğine, kapının mesai saatlerinde kilitsiz tutulup tutulamayacağına ve yangında hâlâ uygun olup olmadığına karar verir. Dili geri çekili tutan dogging, yangın kapısına yönelik her panik çıkış cihazında yasaktır, çünkü bir yangın kapısı kilitli kalarak işlev görür. Bu sayfa tüm dış kol işlevlerini, 4 cihaz tipini ve her birinin aldığı kolları, mekanik ve silindirli dogging farkını ve 15 dış kolumuzdan kaçının işlevini yayımladığını karşılaştırır.",
@@ -2223,6 +2299,78 @@
       "seoDescription": "ed392acd71ed",
       "body": "d841dbedfad0",
       "faq": "5d6d35613c73"
+    }
+  },
+  "importing-door-hardware-china-mexico-2026": {
+    "title": "Çin'den Meksika'ya Kapı Donanımı İthalatı 2026: Padrón de Importadores, Gümrük Müşaviri, Pedimento, Gümrük Tarife Sınıflandırması ve NOM Etiketlemesi",
+    "summary": "Kilit, menteşe ve diğer kapı donanımlarını Çin'den Meksika'ya ithal etmek, sabit adımlardan oluşan kamuya açık bir prosedürü izler: aktif bir RFC ve SAT'ın Padrón de Importadores kaydı, encargo conferido ile yetkilendirilmiş bir gümrük müşaviri, doğru fracción arancelaria ile hazırlanmış bir pedimento, Meksika ile ticaret anlaşması olmayan ülkeler için 2026'da yürürlükteki tarife, uygulandığı durumlarda NOM-050 ticari etiketlemesi, menşe belgeleri ve ithalatçının kim olduğuyla uyumlu bir Incoterm. Bu rehber her adımı oran vermeden anlatır, çünkü önemli olan tek oran, ithalat anında sizin fracción'unuz için yürürlükte olan orandır.",
+    "seoTitle": "Çin'den Meksika'ya kapı donanımı ithalatı 2026",
+    "seoDescription": "Çin'den Meksika'ya kapı donanımı ithalatı: ithalatçı kaydı, gümrük müşaviri, pedimento, 8301/8302, 2026 tarifesi, NOM-050 ve Incoterms adım adım.",
+    "body": [
+      "Çin'den Meksika'ya kapı donanımı ithal etmek karmaşık değildir, ama sabit adımları olan bir prosedürdür ve sorunlar genellikle adımlardan birinin kontrol edilmek yerine varsayıldığı yerde başlar. İthalatçı kaydı tamamlanmadan gelen, yanlış fracción ile beyan edilen ya da kuralların istediği etiket olmadan gelen bir konteyner kilit, masraflar işlerken limanda bekler.",
+      "Bu rehber kamuya açık prosedürü, ilk ithalatın karşılaştığı sırayla anlatır. Gümrük vergisi oranı vermez: oranlar fracción'a göre değişir ve 2026'da değişti, bu yüzden kullanmaya değer tek oran, ithalat anında gümrük müşavirinizin malınız için teyit ettiği orandır. Biz Çin'de bir üreticiyiz, Meksikalı bir gümrük müşaviri değiliz ve buradaki hiçbir şey bir müşavirin yerini tutmaz.",
+      "## 1. RFC ve Padrón de Importadores",
+      "Meksika'ya kesin ithalat yapabilmek için ithalatçının SAT'ın tuttuğu Padrón de Importadores'e (ithalatçılar sicili) kayıtlı olması gerekir. SAT'ın yayımladığı şartlar arasında aktif bir RFC, geçerli bir e.firma, Código Fiscal de la Federación'un 32-D maddesi uyarınca olumlu vergi uyum görüşü, bulunmuş olarak kayıtlı bir vergi adresi, doğrulanmış bir buzón tributario ve işlemleri yürütmek üzere atanmış bir gümrük müşaviri, gümrük vekili ya da yasal temsilci bulunur. Başvuru SAT portalı üzerinden yapılır.",
+      "Bazı fracción'lar ayrıca Padrón de Importadores de Sectores Específicos'e (belirli sektörler ithalatçı sicili) kaydı gerektirir; bu, kendi şartları olan ayrı bir işlemdir. Sizinkinin bunlardan biri olup olmadığını mallar yola çıktıktan sonra değil, sipariş vermeden önce kontrol edin.",
+      "## 2. Gümrük müşaviri ve encargo conferido",
+      "Uygulamada ithalatı lisanslı bir gümrük müşaviri olan agente aduanal yapar. İthalatçı onu SAT'a kaydedilen bir encargo conferido (yetkilendirme) ile yetkilendirir; bundan sonra müşavir malı sınıflandırır, pedimento'yu (gümrük beyannamesi) hazırlayıp sunar, vergileri hesaplayıp öder ve geçerli tarife dışı düzenlemeleri kontrol eder. Mallarınızın varacağı limanda çalışan bir müşavir seçin; Asya'dan deniz yükü için bu genellikle Manzanillo veya Lázaro Cárdenas gibi bir Pasifik limanıdır.",
+      "## 3. Fracción arancelaria (tarife pozisyonu)",
+      "Bir gümrük tarife kodunun ilk altı hanesi uluslararasıdır ve kapı donanımı neredeyse tamamen iki pozisyonda yer alır: kilitler, anahtarları ve parçaları için 8301; menteşeler, kilitleme işlevi olmayan kollar, sürgüler ve kapı kapatıcılar gibi bağlantı parçaları için 8302. Meksika, Ley de los Impuestos Generales de Importación y de Exportación'da kodu sekiz haneli bir fracción'a genişletir ve 2020'den beri buna iki haneli bir ticari tanımlama numarası, NICO, ekler.",
+      "Pozisyonu, bir ürünün kilitleyip kilitlemediği belirler; bu yüzden gömme kilit kasası ile menteşe aynı konteynerde olsalar bile farklı kodlarla taşınır. Kapı donanımı HS kodları rehberimiz 8301 ile 8302 arasındaki ayrımı ve en sık karıştırılan alt pozisyonları açıklar.",
+      "Sınıflandırma, müşavir aracılığıyla yerine getirilen bir ithalatçı sorumluluğudur. Çin'deki bir tedarikçi altı haneli kodu güvenilir biçimde belirtebilir; Meksika fracción'u ile NICO'yu müşaviriniz teyit etmelidir ve bir ürün tekrar tekrar ithal edilecekse gümrük idaresi tarife sınıflandırmasına ilişkin başvuruları kabul eder. Bir başvuru yapmaya değip değmeyeceğini müşaviriniz söyleyebilir.",
+      "## 4. 2026 tarifesi: son sevkiyatınızın değil, yürürlükteki oranın kontrolü",
+      "Meksika ithalat tarifesini değiştiren bir kararname 29 Aralık 2025'te Diario Oficial de la Federación'da yayımlandı ve 1 Ocak 2026'da yürürlüğe girdi. Kararname, aralarında Çin'in de bulunduğu, Meksika ile ticaret anlaşması olmayan ülkelerden gelen mallar için çok sayıda fracción'da genel ithalat vergisini artırdı. Yeni oranlar tek tip değildir: her fracción'un kendi oranı vardır ve tarife 2026 içinde yeniden değiştirildi.",
+      "Bu nedenle geçen yılın oranıyla hesaplanan bir maliyet gerçeğin çok uzağında kalabilir. Müşavirinizden, ithalat tarihinde Çin menşeli fracción'unuza uygulanan oranı isteyin. Pedimento ayrıca, aralarında gümrük işlem ücreti (DTA) ve katma değer vergisi (IVA) bulunan başka vergileri de içerir; müşaviriniz ayrıca Secretaría de Economía'nın o fracción ve o menşe için yürürlükte bir telafi edici vergisi (cuota compensatoria) olup olmadığını da kontrol etmelidir.",
+      "## 5. NOM-050 ticari etiketlemesi",
+      "NOM-050-SCFI-2004, daha özel bir standart uygulanmadığında Meksika'da tüketiciye satılan ürünlerin taşıması gereken genel ticari bilgileri belirler. Etiket İspanyolca olmalıdır; yanında başka diller de yer alabilir. Bilgiler arasında, açık değilse ürünün adı, miktar, üreticinin veya ithalatçının adı ya da unvanı ve adresi, menşe ülke, ürün tehlikeliyse uyarılar ve kullanım ya da bakım için gerekiyorsa talimatlar bulunur. Standardın kendisi istisnaları da sayar; bunlar arasında parça numarası veya koduyla tanımlanan yedek parçalar vardır.",
+      "Uygunluğun sınırda kontrol edilip edilmeyeceği fracción'a bağlıdır. Secretaría de Economía'nın dış ticarete ilişkin genel kurallarında, NOM eki olarak bilinen 2.4.1 numaralı bir ek bulunur ve giriş noktasında standartları karşılanması gereken fracción'ları listeler. Fracción'unuz listedeyse mallar ithalat anında, bu kuralların izin verdiği prosedürlerle uygun olmalıdır; listede değilse de ürün tüketiciye ulaştığında etiketin doğru olması gerekir.",
+      "Etiket Çin'de uygulanacaksa, ithalatçı bilgilerinizi içeren metni üretim başlamadan önce onaylayın. Garanti veriyorsanız, garantinin kendi şartları vardır.",
+      "## 6. Menşe ve menşe şahadetnamesi",
+      "Meksika ile Çin arasında serbest ticaret anlaşması yoktur, bu yüzden Çin menşe şahadetnamesi tercihli bir oran sağlamaz. Yine de menşe önemlidir: malları anlaşma olmayan ülkeler için 2026 oranlarının kapsamına sokan ve telafi edici verginin uygulanıp uygulanmayacağına karar veren odur. Ticari fatura menşe ülkeyi belirtir; ayrıca bir menşe şahadetnamesi gerektiğinde müşaviriniz size söyler.",
+      "## 7. Teslim şekli (Incoterms)",
+      "Incoterm, navlunu ve sigortayı kimin ödeyeceğini ve riskin nerede geçeceğini belirler ve Meksika'da ithalatçının kim olacağıyla örtüşmelidir. FOB Çin'de bir yükleme limanı adlandırır ve deniz navlununu alıcıya bırakır; bir terminalde teslim edilen konteynerler için ICC'nin Incoterms 2020 kuralları FCA'yı daha uygun koşul olarak gösterir. CFR ve CIF'te satıcı navlunu Meksika limanına kadar öder, ancak risk yine de malların Çin'de yüklenmesiyle geçer.",
+      "DDP, satıcıyı Meksika'da ithalattan ve vergilerin ödenmesinden sorumlu kılar; bu da orada RFC'si ve Padrón de Importadores kaydı olan ithalatçı olmayı gerektirir. Çin'deki bir tedarikçide normalde ikisi de yoktur, bu yüzden Çin'den DDP genellikle üçüncü bir tarafın tedarikçi adına ithalat yapması anlamına gelir. EXW ise Çin'deki ihracat işlemlerini bile alıcıya bırakır ve nadiren pratiktir.",
+      "## 8. Tedarikçiden istemeniz gereken belgeler",
+      "Her kalemi sınıflandırılabilecek şekilde tanımlayan (ne olduğu, ne işe yaradığı, malzemesi) ticari fatura; miktarlar, birim değerler, Incoterm ve menşe ülkeyle birlikte. Koli sayısı ile net ve brüt ağırlıkları gösteren çeki listesi. Konşimento. Müşaviriniz istediğinde menşe şahadetnamesi. Ve adından anlaşılmayan her şey için pozisyonu belirleyen teknik bilgi: kilitleyip kilitlemediği, neyden yapıldığı, nereye takıldığı.",
+      "Müşaviriniz fatura verilerini tek pencere VUCEM üzerinden elektronik olarak COVE biçiminde iletir ve bu kayıt pedimento ile ve ödenen tutarla uyuşmalıdır. Malı düşük değerle gösteren ya da bir kilidi kilitleme işlevi olmayan bir bağlantı parçası gibi tanımlayan bir fatura, onu düzenleyen tedarikçinin değil, ithalatçının sorunudur.",
+      "## Çin'deki bir tedarikçinin yapabilecekleri ve yapamayacakları",
+      "Her ürünü doğru biçimde tanımlayabilir, belgelerimizde altı haneli HS kodunu ve menşe ülkeyi belirtebilir, ürün sayfalarımızda malzemeleri, ölçüleri ve işlevleri İspanyolca yayımlayabiliriz; bir müşavirin sınıflandırma için ihtiyaç duyduğu da budur. Meksika'da ithalatçı olamayız, malları Meksika tarifesinde sınıflandırmayız ve Meksika gümrük oranlarını vermeyiz, çünkü bunları teyit etmek bize düşmez.",
+      "## İlk siparişten önce: beş kontrol",
+      "İthalatçı Padrón de Importadores'e ve fracción gerektiriyorsa sektörel sicile kayıtlıdır. Bir müşavire encargo conferido verilmiştir. Müşavir, Çin menşeli olarak fracción'u, NICO'yu ve yürürlükteki oranı teyit etmiştir. Fracción'un NOM ekinde olup olmadığını biliyorsunuz ve etiket metni onaylanmıştır. Incoterm, ithalatı yapanla örtüşmektedir. Bu beşi çözüldüğünde konteyner limanda yalnızca prosedürün kendisinin süresi kadar bekler."
+    ],
+    "faq": [
+      {
+        "question": "Meksika'ya kapı donanımı ithal etmek için Padrón de Importadores kaydı gerekir mi?",
+        "answer": "Evet, kesin ithalat için gerekir. SAT'ın yayımladığı şartlar arasında aktif bir RFC, geçerli bir e.firma, 32-D maddesi uyarınca olumlu uyum görüşü, bulunmuş bir vergi adresi, doğrulanmış bir buzón tributario ve atanmış bir gümrük müşaviri ya da temsilci bulunur. Bazı fracción'lar ayrıca sektörel sicili gerektirir."
+      },
+      {
+        "question": "Meksika'da kilitler ve menteşeler hangi tarife koduna girer?",
+        "answer": "Kilitler 8301 pozisyonuna, menteşeler, kollar ve diğer bağlantı parçaları 8302'ye girer. Meksika uluslararası altı haneyi sekiz haneli bir fracción ve iki haneli bir NICO'ya genişletir; bunu her ürün için gümrük müşaviriniz teyit etmelidir."
+      },
+      {
+        "question": "2026'da Çin'den gelen kapı donanımı Meksika'da ne kadar gümrük vergisi öder?",
+        "answer": "Oran vermiyoruz. 29 Aralık 2025'te yayımlanıp 1 Ocak 2026'dan beri yürürlükte olan bir kararname, aralarında Çin'in de bulunduğu, Meksika ile ticaret anlaşması olmayan ülkeler için birçok fracción'da ithalat vergisini artırdı ve oran fracción'a göre değişir. İthalat anında fracción'unuz için yürürlükteki oranı müşavirinizden isteyin."
+      },
+      {
+        "question": "Meksika'da kapı donanımı NOM-050 etiketi gerektirir mi?",
+        "answer": "Tüketiciye satılan ürünler, daha özel bir standart uygulanmadığında NOM-050-SCFI-2004 ticari bilgilerini İspanyolca taşımalıdır. Bunun sınırda kontrol edilip edilmeyeceği, fracción'un Secretaría de Economía dış ticaret kurallarının 2.4.1 ekinde yer alıp almadığına bağlıdır."
+      },
+      {
+        "question": "Çin menşe şahadetnamesi Meksika'daki vergiyi düşürür mü?",
+        "answer": "Hayır. Meksika ile Çin arasında serbest ticaret anlaşması yoktur, bu yüzden tercihli oran yoktur. Yine de anlaşma olmayan ülkeler için 2026 oranlarının ve olası bir telafi edici verginin uygulanıp uygulanmayacağına menşe karar verir."
+      },
+      {
+        "question": "Çin'den Meksika'ya ithalatta hangi Incoterm kullanılmalı?",
+        "answer": "Deniz navlununu siz ayarlıyorsanız FOB veya FCA, tedarikçi ayarlıyorsa CFR veya CIF. DDP, satıcının RFC'si ve Padrón de Importadores kaydı olan Meksikalı ithalatçı olmasını gerektirir; Çin'deki bir tedarikçide bu normalde yoktur."
+      }
+    ],
+    "sourceHash": {
+      "title": "8853868cdcc2",
+      "summary": "b27934ae714d",
+      "seoTitle": "3f4a4ff7a009",
+      "seoDescription": "8af8b7e97c83",
+      "body": "1016a3e0b50b",
+      "faq": "2449c13d7716"
     }
   },
   "key-blanks-and-restricted-profiles-2026": {

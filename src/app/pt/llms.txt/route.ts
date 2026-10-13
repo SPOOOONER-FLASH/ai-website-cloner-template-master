@@ -1,0 +1,8 @@
+import { localeLlmsResponse } from "@/lib/locale-llms";
+
+/** /pt/llms.txt — this locale's guides and news for answer engines (src/lib/locale-llms.ts). */
+export const dynamic = "force-static";
+
+export function GET(): Response {
+  return localeLlmsResponse("pt");
+}
