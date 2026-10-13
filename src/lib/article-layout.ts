@@ -1,5 +1,5 @@
 export type ArticleBlock = { kind: 'paragraph'; text: string } | { kind: 'heading'; text: string; id: string; level: 2 | 3 } | { kind: 'table'; headers: string[]; rows: string[][]; caption: string };
-export interface TableCell { text: string; value?: number }
+export interface TableCell { text: string; value?: number; href?: string }
 export type SortDirection = 'ascending' | 'descending' | null;
 
 function cells(line: string): string[] {

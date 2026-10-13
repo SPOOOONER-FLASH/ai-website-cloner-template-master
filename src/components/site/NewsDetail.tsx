@@ -5,7 +5,8 @@ import { newsKindLabels, formatNewsDate, getNewsBySlug } from "@/data/news";
 import { getGuideBySlug } from "@/data/guides";
 import { CREDENTIAL_TRANSLATIONS, authorHref, authorPath, authorPortrait } from "@/data/authors";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
-import { getProductByModel, isPublished } from "@/data/products";
+import { getProductByModel, isPublished, publishedProducts } from "@/data/products";
+import { firstMentions, rowHeaderHref } from "@/lib/article-products";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { NewsVisual } from "./NewsVisual";
@@ -177,6 +178,17 @@ export function NewsDetail({
     .filter((product) => product !== undefined)
     .filter(isPublished);
   const route = articleRoute(section, article.slug);
+  /* Model numbers in the prose and table row headers link to their product pages (article-products.ts). */
+  const modelIndex = new Map(publishedProducts.map((p) => [p.model, `${base}/products/${p.categoryPath[0]}/${p.slug}/`] as const));
+  const relatedModels = new Set(related.map((p) => p.model));
+  /* The guide cover links to the product it is a photograph of — matched by image file name, never
+     guessed. File name, not path: covers use the branded /images/products-hyde/ copy of /images/products/. */
+  const fileName = (src?: string) => src?.split("/").pop();
+  const cover = fileName(article.heroImage.src);
+  const coverOf = cover ? [...related, ...publishedProducts].find((p) => [p.heroImage, ...p.gallery].some((img) => fileName(img.src) === cover)) : undefined;
+  const coverProduct = coverOf && { href: `${base}/products/${coverOf.categoryPath[0]}/${coverOf.slug}/`, model: coverOf.model };
+  const mentions = firstMentions(blocks, modelIndex);
+  const rowHref = (cell: string) => rowHeaderHref(cell, modelIndex, relatedModels);
   const buyerHeading = tx(locale, "Related products", { es: "Productos relacionados", pt: "Produtos relacionados" });
   if (related.length) contents.push({ id: "article-products", text: buyerHeading, level: 2 });
 
@@ -331,7 +343,7 @@ export function NewsDetail({
 
           {/* Right column: the single editorial image, at press width. */}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-          {section === "guides" ? <GuideArticleIntro article={article} locale={locale} contents={contents} /> : <NewsVisual article={article} locale={locale} />}
+          {section === "guides" ? <GuideArticleIntro article={article} locale={locale} contents={contents} product={coverProduct} /> : <NewsVisual article={article} locale={locale} />}
           </div>
         </section>
 
@@ -346,7 +358,7 @@ export function NewsDetail({
               table rows — reached the live page as literal `##` and `| a | b |`. The block
               parser already ran for news (`blocks` above); its output was just unused.
             */}
-            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} figure={figure} /> : blocks.map((block, index) => {
+            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} /> : blocks.map((block, index) => {
               if (block.kind === "heading") {
                 return block.level === 2 ? (
                   <h2 key={block.id} id={block.id} className="mt-48 text-h3 text-ink">
@@ -369,7 +381,7 @@ export function NewsDetail({
                       caption={block.caption || tx(locale, "Reference table", { es: "Tabla de consulta", pt: "Tabela de consulta" })}
                       columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? "number" : "text" }))}
                       rows={block.rows.map((row) =>
-                        row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined })),
+                        row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined, href: column === 0 ? rowHref(text) : undefined })),
                       )}
                     />
                   </div>
@@ -385,7 +397,7 @@ export function NewsDetail({
                       : "mt-24 text-c1 text-ink-secondary"
                   }
                 >
-                  <InlineText text={block.text} />
+                  <InlineText text={block.text} links={mentions.get(index)} />
                 </p>
               );
             })}

@@ -6,14 +6,15 @@ import styles from './GuideEditorial.module.css';
 import { tx } from "@/lib/i18n";
 
 /** Navigation is drawn from the article itself; no invented dimensions or illustrative hardware. */
-export function GuideArticleIntro({ article, locale, contents }: {
+export function GuideArticleIntro({ article, locale, contents, product }: {
   article: NewsArticle;
   locale: Locale;
   contents: { id: string; text: string; level: number }[];
+  product?: { href: string; model: string };
 }) {
   const headings = contents.filter(item => item.id !== 'article-overview' && item.id !== 'article-faq' && item.id !== 'article-products').slice(0, 3);
   return <div className={styles.articleIntro} data-photo={isGuideProductPhoto(article.heroImage.src)}>
-    <GuideCover article={article} locale={locale} />
+    <GuideCover article={article} locale={locale} product={product} />
     {headings.length > 0 && <nav className={styles.readingPanel} aria-label={tx(locale, 'Start reading', { es: 'Empezar a leer', pt: 'Começar a ler' })}>
       <h2>{tx(locale, 'Before you specify', { es: 'Antes de especificar', pt: 'Antes de especificar' })}</h2>
       <ul>{headings.map(item => <li key={item.id}><a href={`#${item.id}`}>{item.text}</a></li>)}</ul>
