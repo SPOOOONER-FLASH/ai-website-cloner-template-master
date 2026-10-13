@@ -6,31 +6,20 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 501 次提交
+最近 30 天 · 共 490 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 00:34 | 中立 | Factory story photos: review fixes (claims match the frame; translations; records) | `616c365d07b` |
-| 00:27 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3813fbbc1b7` |
-| 00:27 | 中立 | Factory story: the client-confirmed polishing and assembly photos (steps 4-5) | `897601a3281` |
-| 00:11 | 中立 | Factory story: preload stage photos a screen and a half early | `383725116ce` |
-| 00:09 | HYDE | Guides: headings from capitals to sentence case in seven languages (#66) | `59e4e244cba` |
+| 01:10 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/brain-shell | `af4f62b8ae6` |
+| 01:10 | 中立 | Clarity：重跑话题补到 15 条提问、11 个旧话题统一改名 | `e8b97220bad` |
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 23:59 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `14700f31231` |
-| 23:58 | 中立 | Guide page: cover, section bars, contents \| text \| model rail, reading progress, prev/next | `71dd20c77f8` |
-| 23:48 | 中立 | Merge remote-tracking branch 'origin/main' into claude/br6-sm | `270409165fc` |
-| 23:48 | 中立 | 巴西专栏加回 BR6-SM（带微动开关）：沿棱线重修，独立复核通过 | `c33bd982960` |
-| 23:27 | HYDE | Homepage: opening curtain, smooth scroll, five-step factory story as in the demo | `835ff5ea9f9` |
-| 23:15 | 中立 · 发布 HYDE | Merge origin/main | `79283a3b5d4` |
-| 23:15 | 中立 | tasks: rows 59-65 (client 10-12 requests) | `f09ab9e437c` |
-| 17:21 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `bea67e5e73a` |
-| 17:21 | 中立 | Inner-page previews: 307 product page and exit-device guide, Yuangao four-in-one | `a894facd316` |
+| 16:59 | 中立 | Clarity 本周 10 个名额：重跑 6 个（9-21 后补过页面的）、新建 4 个（项目规格与门表、质检测试、西语、葡语），提问已写好 | `00ce4db2b42` |
 | 16:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `4667081845e` |
 | 16:54 | 中立 | Flyer: drop bathroom, floor springs, closers; add Alibaba flagship models | `c402d73955b` |
 | 08:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fae6618822c` |
