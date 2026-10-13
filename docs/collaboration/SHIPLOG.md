@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 508 次提交
+最近 30 天 · 共 509 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 10:38 | 中立 | Tasks: rows 78-79, welcome copy and menu imagery proposals | `a59e41f49da` |
 | 04:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `c943a5cbce2` |
 | 04:55 | 中立 | Header: every shelf opens with a ruled ledger; Resources items carry counts | `f6eafa34171` |
 | 04:40 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `54743bbfba2` |
