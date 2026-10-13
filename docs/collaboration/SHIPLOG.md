@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 488 次提交
+最近 30 天 · 共 489 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 17:14 | HYDE | 阶段 2：按区块统计文章里的产品与询价点击（十语页面类型、item_list_name/placement、source_article）；修正 3 个无法解析的 relatedModels 并加测试 | `46d0783cabe` |
 | 16:59 | 中立 | Clarity 本周 10 个名额：重跑 6 个（9-21 后补过页面的）、新建 4 个（项目规格与门表、质检测试、西语、葡语），提问已写好 | `00ce4db2b42` |
 | 16:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `4667081845e` |
 | 16:54 | 中立 | Flyer: drop bathroom, floor springs, closers; add Alibaba flagship models | `c402d73955b` |
