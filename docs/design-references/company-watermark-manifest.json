@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/company",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5,
+  "count": 7,
   "files": [
     {
       "source": "public/images/company/assembly-line.webp",
@@ -21,6 +21,24 @@
       },
       "sourceSha256": "3c50d1fa2806f85a446265449e2ee6e8ccba4751922046368e3c3a23f71230b9",
       "outputSha256": "a1c9d1db02c8328c9134be306a0d929654e5747e4abccd0f02fc97f506e4a273"
+    },
+    {
+      "source": "public/images/company/factory-assembly-quality-line.webp",
+      "output": "public/images/company-hyde/factory-assembly-quality-line.webp",
+      "width": 1776,
+      "height": 1184,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "73eb96e77563806086e83b198d4aec43fea6d4628017cb4cff8ecdaa15b20966",
+      "outputSha256": "c7be1ca1b4c84cc9fd9f862fc8509c40c825051a8bcfba93bfebd12cba2d5c00"
     },
     {
       "source": "public/images/company/factory-cnc-machining.webp",
@@ -57,6 +75,24 @@
       },
       "sourceSha256": "0e1283ba462b006881c4132a210c397b4842fa8354bbd6a2518d3823c539995c",
       "outputSha256": "a405b34209edd23f6833402e08ca6f3499192ac9ade241bda84437cfa649aede"
+    },
+    {
+      "source": "public/images/company/factory-polishing-workshop.webp",
+      "output": "public/images/company-hyde/factory-polishing-workshop.webp",
+      "width": 1776,
+      "height": 1184,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "388837cbafcd7d1fca2327f253f19f256c240e2602d8f9818e2f8bd1a131c1b2",
+      "outputSha256": "e77e5e4ce6d86d942d2499abaead358daf9ba167f3aaefd984ddb29615ba7aff"
     },
     {
       "source": "public/images/company/polishing-line.webp",

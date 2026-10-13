@@ -172,11 +172,16 @@
 /* A wipe made of two opposite transforms: the frame slides up while the photograph inside it
    slides down by the same amount, so the picture stays put and only its edge moves. Both are
    compositor-only; the first build animated clip-path on full-screen photographs, which
-   repaints every frame and is what the client felt as 「很卡」 (2026-10-12). */
+   repaints every frame and is what the client felt as 「很卡」 (2026-10-12).
+   The scale is the demo's push (client's screen recording, 2026-10-12): the incoming photo
+   settles from 1.02 to 1, the one it covers drifts on to 1.08, so the cut has depth. */
 .shot,
 .shot img {
-  transition: transform calc(var(--motion-slow) * 1.5) var(--motion-ease-crisp);
+  transition: transform calc(var(--motion-slow) * 2) var(--story-ease);
   will-change: transform;
+}
+.stage {
+  --story-ease: cubic-bezier(0.76, 0, 0.24, 1);
 }
 .shot {
   position: absolute;
@@ -190,17 +195,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translateY(-100%);
+  transform: translateY(-100%) scale(1.02);
 }
-.shot[data-k="0"],
-.shot[data-k="0"] img,
-.stage[data-active="1"] .shot[data-k="1"],
-.stage[data-active="1"] .shot[data-k="1"] img,
-.stage[data-active="2"] .shot:is([data-k="1"], [data-k="2"]),
-.stage[data-active="2"] .shot:is([data-k="1"], [data-k="2"]) img,
-.stage[data-active="3"] .shot,
-.stage[data-active="3"] .shot img {
+.shot:is([data-shot="on"], [data-shot="past"]) {
   transform: translateY(0);
+}
+.shot[data-shot="on"] img {
+  transform: translateY(0) scale(1);
+}
+.shot[data-shot="past"] img {
+  transform: translateY(0) scale(1.08);
 }
 .progress {
   position: absolute;
@@ -216,20 +220,14 @@
   background: rgb(255 255 255 / 0.3);
   position: relative;
 }
+/* Bar k is full once the reader is k+1 steps of n through the story (--story-p, StoryStage). */
 .progress i::after {
   content: "";
   position: absolute;
   inset: 0;
   background: var(--color-surface);
-  transform: scaleX(0);
+  transform: scaleX(clamp(0, calc(var(--story-p, 0) * var(--n) - var(--k)), 1));
   transform-origin: left;
-  transition: transform var(--motion-slow) var(--motion-ease);
-}
-.progress i:first-child::after,
-.stage[data-active="1"] .progress i:nth-child(-n + 2)::after,
-.stage[data-active="2"] .progress i:nth-child(-n + 3)::after,
-.stage[data-active="3"] .progress i::after {
-  transform: scaleX(1);
 }
 .step {
   display: flex;
@@ -254,7 +252,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .route, .pin, .label, .barFill, .shot, .shot img, .progress i::after, .familyName, .follow {
+  .route, .pin, .label, .barFill, .shot, .shot img, .familyName, .follow {
     transition: none;
   }
   .pulse, .followImage {

@@ -139,7 +139,7 @@ export function EngagementTracker() {
       const anchor = (event.target as Element | null)?.closest?.("a[href]");
       const href = anchor?.getAttribute("href");
       if (!href) return;
-      const intent = linkIntent(href, pathname);
+      const intent = linkIntent(href, pathname, anchor?.closest("[data-link-list]")?.getAttribute("data-link-list"));
       if (intent) send(intent.name, intent.params);
     };
 
