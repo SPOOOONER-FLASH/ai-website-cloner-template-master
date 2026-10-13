@@ -173,3 +173,8 @@
 | 167 | Ahrefs 3,843 页「nofollow 内链」与「结构化数据校验错误」：自查原因并修 | nofollow 10-12 完成（报价链接改片段）；结构化数据为价格/评价缺失，待甲方决定（见 tasks/2026-10-12-article-product-routes.md） |
 | 168 | 指南顶部大图点击进入对应产品页（GuideCover → 首个相关产品） | 10-12 完成（按图片文件名匹配，12 篇全中；图注加「View product」链接） |
 | 169 | Ahrefs：sitemap 格式错误 10 个、标题过短/过长（日 4、俄 1） | 10-12 完成（robots.txt 去掉 10 个 RSS；日语 5 个标题补全，俄 023 ETAN 75→65 字） |
+| 170 | 发布「Hyde 文案」会话 835ff5ea9f94：首页开场幕布、Lenis 平滑滚动、工厂故事 5 步；实测幕布/滚动/首页 JS 上限 | 10-13 完成（发布 2fc7e61f2ecf / GitLab 8a1d477d1a5；幕布、同会话跳过、进度条、导出守卫 30/0 实测通过；图片逐张推入由文案会话真滚轮实测 onnnn→ppppo；首跳黑底已修 383725116 随 #173 发布） |
+| 171 | 发布「Hyde 文案」会话 1f20fa20a44a：产品页模板改版（图库、吸顶分节导航）；实测首屏、吸顶高亮、手机无横向滚动、test:export | 10-13 完成（发布 8449150958 / GitLab f69b3d511ba；图库+大型号首屏、分节条吸顶 147px 贴页头、375px 无横向滚动、导出守卫 30/0；高亮切换由文案会话 Edge 真滚轮实测 #specifications→#related） |
+| 172 | 发布「hyde前端管理」会话 3185fdcbb031：BR6-SM 加回巴西专栏（40 款）；抽查 /products/brazil/ 与 /pt/products/brazil/ | 10-13 完成（同一版上线；/products/brazil/ 与 /pt/products/brazil/ 都有 BR6-SM 卡片和 br6-sm.webp） |
+| 173 | 发布「Hyde 文案」会话 71dd20c77f84 + 59e4e244cba5（指南小标题句首大写）+ 383725116ce5（工厂故事预载）：指南页模板改版（封面、目录进度、上一篇/下一篇，删 GuideArticleIntro）；实测旧标志、新闻页不变、死链，核对封面→产品链接仍在 | 10-13 完成（发布 a733bfd85b1 / GitLab 0f9dab6b825；导出守卫 30/0；exit-device 指南封面为 products-hyde 版、无红色旧标志、仍链 316-D；新闻页 UL 305 版式未变；小标题句首大写；封面图 200） |
+| 174 | 发布「Hyde 文案」会话 897601a3281f（工厂故事第 4、5 步换甲方确认实拍图）+ 616c365d07b4（装配句十语修正）；实测图片 | 10-13 完成（发布 bae0acf7053 / GitLab d90b329585a；导出守卫 30/0；首页第 4、5 步为 factory-polishing-workshop / factory-assembly-quality-line，原图+HYDE 版+480/960/1440 共 10 个 URL 均 200，旧图不再引用） |
