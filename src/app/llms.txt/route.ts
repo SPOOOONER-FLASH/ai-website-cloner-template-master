@@ -212,9 +212,10 @@ function body(): string {
     */
     "## Other languages",
     "",
-    `- Español: ${absoluteUrl("/es/")}`,
-    `- Português: ${absoluteUrl("/pt/")}`,
-    ...overlayLocales.map((code) => `- ${LANGUAGE_LABELS[code]}: ${absoluteUrl(`/${code}/`)}`),
+    /* Each language also has its own guide and news list: /<code>/llms.txt (src/lib/locale-llms.ts). */
+    `- Español: ${absoluteUrl("/es/")} — guides and news: ${absoluteUrl("/es/llms.txt")}`,
+    `- Português: ${absoluteUrl("/pt/")} — guides and news: ${absoluteUrl("/pt/llms.txt")}`,
+    ...overlayLocales.map((code) => `- ${LANGUAGE_LABELS[code]}: ${absoluteUrl(`/${code}/`)} — guides and news: ${absoluteUrl(`/${code}/llms.txt`)}`),
     "",
     "## Guides and articles",
     "",

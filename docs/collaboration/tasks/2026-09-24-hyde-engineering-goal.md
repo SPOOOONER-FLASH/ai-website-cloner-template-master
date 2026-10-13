@@ -183,3 +183,4 @@
 | 177 | 发布「Hyde 文案」会话 ca527e49ba1c：下拉菜单改版（左栏墨线、Resources 带数量、Events 显示 BAU、Newest guide）；实测 | 10-13 完成（发布 36b7fb6142b / GitLab b1594f05221；线上 Newest guide = 防火门年检 13 Oct 2026，菜单项带数量，法语 Events 显示 BAU 2027 11–15 janv. Hall C4 Stand 523） |
 | 178 | 发布「硬件产品数据库与报价系统」会话 c6da5496：3 篇新指南（防火门年检、逃生锁锁定方式、墨西哥进口西语首发）；实测 | 10-13 完成（发布 7f29e128b50d / GitLab be1db28ad9f；3 篇在 en/es/fr/ar 均 200，墨西哥篇在 /es/sitemap.xml） |
 | 179 | GEO：llms.txt 只列 1 个西语 URL，AI 引用 /es/ 为 0 → llms.txt 加西语指南段（/es/ URL + 西语一句话） | 10-13 完成（同版上线：线上 /llms.txt 有「Guías en español」46 条 /es/guides/ 链接；10-20 用 Clarity 复查 /es/ 是否被 AI 引用，仍为 0 再考虑英文指南加可见「Leer en español」链接） |
+| 180 | 客户 10-13：检查十个语种被 AI 引用的条件（llms.txt、sitemap、hreflang、译文覆盖、robots、结构化数据语言） | 10-13 完成（十语 sitemap/hreflang/lang/inLanguage/feed/robots 均正常；唯一缺口 llms.txt 只给 8 语首页 → 新增 /<语种>/llms.txt 九个 + robots 放行 + 根文件链接；见 agent-updates/2026-10-13-claude-locale-llms.md） |
