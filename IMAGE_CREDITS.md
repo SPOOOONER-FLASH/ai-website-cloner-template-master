@@ -298,6 +298,25 @@ inherits `--color-ink`.
 drawing; the pack contains none, so a clean hinge close-up stands in. **Flagged in
 BUILD_PLAN.md as "replace with CAD line art".**
 
+### 2026-10-13 stamping-plant set — `factory-workshop-01…12.webp`
+
+Source: **client-supplied phone photographs of the stamping plant**, sent 2026-10-13 with
+permission to publish (「…上架使用，他们授权了」). Used by the company page section "From press
+to packing" (`factoryWorkshop`, `src/data/company.ts`), in process order.
+
+Processing: company lettering on workwear, crates, one machine plate and one wall sign was
+painted out (OpenCV inpainting over a mask of the lettering only), one wall screen showing
+production figures was blurred, and each frame was cropped to 3:2. Machines, parts and
+people are untouched. Not HYDE-marked: these are not in `build-branded-editorial-list.mjs`.
+Do not name the plant anywhere on the site, and do not quote any remaining signage.
+
+| File | Shows | Output |
+|---|---|---|
+| `factory-workshop-01…03` | press shop | 1280–1600 px wide, 3:2 |
+| `factory-workshop-04…08` | machining and drilling | 1280–1600 px wide, 3:2 |
+| `factory-workshop-09…10` | assembly benches | 1200–1275 px wide, 3:2 |
+| `factory-workshop-11…12` | packing and finished goods | 1275–1280 px wide, 3:2 |
+
 ## Certificates — `public/images/certificates/`
 
 All 604×800, q=78. Transcribed into `src/data/company.ts`.

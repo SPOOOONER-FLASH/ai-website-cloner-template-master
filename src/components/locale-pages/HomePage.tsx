@@ -29,7 +29,7 @@ export function homeMetadata(locale: Locale): Metadata {
       title,
       description: tx(
         locale,
-        "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.",
+        "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001:2015 stamping plant; OEM production in Guangdong.",
       ),
     }),
     /* The segment root shares its layout's title template, which does not run here. */

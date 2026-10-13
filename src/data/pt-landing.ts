@@ -68,7 +68,7 @@ export const ptLanding = {
         "Um relatório de ensaio pertence a um modelo, não a uma gama. Por isso listamos os três documentos com emissor, referência, data e o modelo exacto que cada um cobre.",
         "EN 1125 — relatório de ensaio da Intertek Testing Services Shenzhen Ltd., filial de Cantão, referência 130722068GZU-001, emitido a 7 de Novembro de 2013. Cobre um modelo: KD070/30-290.",
         "Certificado CE de Conformidade com a EN 1125:2008, emitido pela CELAB, Itália, em 2010, para a série de dispositivos antipânico.",
-        "ISO 9001:2015 — sistema de gestão da qualidade, certificado desde 2002.",
+        "ISO 9001:2015 — a nossa unidade de estampagem é certificada (certificado 69125Q0026****, válido até 29 de outubro de 2028).",
         "Os dois primeiros emissores restringem a redistribuição dos documentos, pelo que os fornecemos contra uma consulta ou concurso identificado, e não como descarga aberta.",
       ],
     },

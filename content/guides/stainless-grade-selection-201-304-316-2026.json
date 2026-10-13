@@ -3,6 +3,7 @@
   "title": "Stainless Grade Selection 2026: 201 vs 304 vs 316, What Each Costs, and Why \"304/201\" on a Spec Sheet Is the Real Problem",
   "kind": "insight",
   "publishedAt": "2026-09-21",
+  "updatedAt": "2026-10-13",
   "summary": "201, 304 and 316 look identical in the hand and behave very differently on a building. This page sets out what separates them chemically, where each belongs, what the cost difference actually is, and then does the uncomfortable part, counts how many of our own 313 stainless products name a grade at all, and explains why a specification that says \"304/201\" has answered nothing.",
   "author": {
     "name": "Johnson Liu",
@@ -65,7 +66,7 @@
     "| What the material row says | Products |\n| --- | --- |\n| \"Stainless steel\", no grade named | 224 |\n| A pair or range, e.g. \"304/201\", \"304/316L\" | 73 |\n| A single grade named | 16 |\n| Total mentioning stainless | 313 |",
     "Seventy-two per cent of our stainless products do not name a grade at all, and a further 73 name two. Sixteen out of 313 answer the question this page says a buyer must ask.",
     "That is not a good number and printing it is deliberate. A buyer who reads it knows exactly what to do (ask for the grade, in writing, per order) and a buyer who assumed the catalog answered it would not have asked.",
-    "The reason it is that way is mundane rather than sinister: the grade is a purchasing fact that lives in the factory's material records, and the catalog was built from product descriptions rather than from those records. It is being closed by reconciliation, model by model, not by writing a plausible grade into 224 rows.",
+    "We will not write a plausible grade into those 224 rows. Where a row does not name the grade, ask for it per order.",
     "## What to put on your order",
     "Name the grade, not the family. \"304\" rather than \"stainless\".",
     "Say the environment if it is not ordinary interior (coastal, pool, industrial, coastal-and-sheltered) because that lets a supplier tell you when your grade is wrong rather than quoting it.",
@@ -96,7 +97,7 @@
       },
       {
         "question": "Do your product pages name the stainless grade?",
-        "answer": "Mostly not, and we would rather say so. Of 313 products mentioning stainless: 224 say only \"stainless steel\", 73 name a pair such as 304/201, and 16 name a single grade. The gap is being closed by reconciling with factory material records model by model, not by writing a plausible grade into 224 rows."
+        "answer": "Mostly not, and we would rather say so. Of 313 products mentioning stainless: 224 say only \"stainless steel\", 73 name a pair such as 304/201, and 16 name a single grade. We will not write a plausible grade into those 224 rows; ask for the grade per order."
       }
     ],
     "es": [
@@ -122,7 +123,7 @@
       },
       {
         "question": "¿Sus fichas indican el grado de inoxidable?",
-        "answer": "En su mayoría no, y preferimos decirlo. De 313 productos que mencionan inoxidable: 224 dicen solo «acero inoxidable», 73 nombran una pareja como 304/201, y 16 nombran un solo grado. El hueco se está cerrando reconciliando con los registros de material de fábrica modelo a modelo, no escribiendo un grado plausible en 224 filas."
+        "answer": "En su mayoría no, y preferimos decirlo. De 313 productos que mencionan inoxidable: 224 dicen solo «acero inoxidable», 73 nombran una pareja como 304/201, y 16 nombran un solo grado. No vamos a escribir un grado plausible en esas 224 filas; pida el grado en cada pedido."
       }
     ],
     "pt": [
@@ -148,7 +149,7 @@
       },
       {
         "question": "As suas páginas indicam o grau de inox?",
-        "answer": "Na maioria não, e preferimos dizê-lo. De 313 produtos que mencionam inox: 224 dizem só \"aço inox\", 73 nomeiam um par como 304/201, e 16 nomeiam um só grau. A lacuna está sendo fechada reconciliando com os registros de material da fábrica modelo a modelo, não escrevendo um grau plausível em 224 linhas."
+        "answer": "Na maioria não, e preferimos dizê-lo. De 313 produtos que mencionam inox: 224 dizem só \"aço inox\", 73 nomeiam um par como 304/201, e 16 nomeiam um só grau. Não vamos escrever um grau plausível nessas 224 linhas; peça o grau a cada pedido."
       }
     ]
   },
@@ -199,7 +200,7 @@
     "| Lo que dice la fila de material | Productos |\n| --- | --- |\n| «Acero inoxidable», sin grado | 224 |\n| Una pareja o rango, p. ej. «304/201», «304/316L» | 73 |\n| Un único grado nombrado | 16 |\n| Total que mencionan inoxidable | 313 |",
     "El setenta y dos por ciento de nuestros productos de inoxidable no nombra grado alguno, y otros 73 nombran dos. Dieciséis de 313 responden la pregunta que esta página dice que un comprador debe hacer.",
     "No es una buena cifra y publicarla es deliberado. Un comprador que la lee sabe exactamente qué hacer (pedir el grado, por escrito, pedido a pedido) y un comprador que hubiera supuesto que el catálogo lo respondía no habría preguntado.",
-    "La razón es mundana y no siniestra: el grado es un dato de compras que vive en los registros de material de la fábrica, y el catálogo se construyó a partir de descripciones de producto y no de esos registros. Se está cerrando por reconciliación, modelo a modelo, no escribiendo un grado plausible en 224 filas.",
+    "No vamos a escribir un grado plausible en esas 224 filas. Donde una fila no nombra el grado, pídalo en cada pedido.",
     "## Qué poner en su pedido",
     "Nombre el grado, no la familia. «304» y no «inoxidable».",
     "Diga el ambiente si no es interior ordinario (costero, piscina, industrial, costero y resguardado) porque eso permite que un proveedor le diga cuándo su grado está mal en vez de cotizarlo.",
@@ -253,7 +254,7 @@
     "| O que a linha de material diz | Produtos |\n| --- | --- |\n| \"Aço inox\", sem grau | 224 |\n| Um par ou faixa, p. ex. \"304/201\", \"304/316L\" | 73 |\n| Um único grau nomeado | 16 |\n| Total que menciona inox | 313 |",
     "Setenta e dois por cento dos nossos produtos de inox não nomeia grau nenhum, e outros 73 nomeiam dois. Dezasseis de 313 respondem à pergunta que esta página diz que um comprador deve fazer.",
     "Não é uma boa cifra e publicá-la é deliberado. Um comprador que a lê sabe exatamente o que fazer (pedir o grau, por escrito, pedido a pedido) e um comprador que tivesse suposto que o catálogo o respondia não teria perguntado.",
-    "A razão é mundana e não sinistra: o grau é um dado de compras que vive nos registros de material da fábrica, e o catálogo foi construído a partir de descrições de produto e não desses registros. Está sendo fechado por reconciliação, modelo a modelo, não escrevendo um grau plausível em 224 linhas.",
+    "Não vamos escrever um grau plausível nessas 224 linhas. Onde uma linha não indica o grau, peça-o a cada pedido.",
     "## O que pôr no seu pedido",
     "Nomeie o grau, não a família. \"304\" e não \"inox\".",
     "Diga o ambiente se não for interior ordinário (costeiro, piscina, industrial, costeiro e abrigado) porque isso permite a um fornecedor dizer-lhe quando o seu grau está errado em vez de o cotar.",

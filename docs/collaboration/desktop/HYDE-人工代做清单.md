@@ -1,6 +1,6 @@
 # HYDE 人工代做清单
 
-生成：`node scripts/organize-desktop-hyde.mjs`，来源是操作手册（CLIENT-RUNBOOK）里每一节「现在要做的」，2026-10-12 更新。做完一件告诉我，我从手册里移走，下次生成就不在这里了。
+生成：`node scripts/organize-desktop-hyde.mjs`，来源是操作手册（CLIENT-RUNBOOK）里每一节「现在要做的」，2026-10-13 更新。做完一件告诉我，我从手册里移走，下次生成就不在这里了。
 
 | # | 事项 | 第一步 |
 |---|---|---|

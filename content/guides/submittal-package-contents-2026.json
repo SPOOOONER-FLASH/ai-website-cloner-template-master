@@ -3,7 +3,7 @@
   "title": "Door Hardware Submittal Package 2026: Every Document the Reviewer Needs, and the Four That Get It Rejected",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-13",
   "summary": "A door hardware submittal package has 5 parts: the hardware schedule by opening, a datasheet per catalog number, dimensioned shop drawings, test evidence from an accredited laboratory, and the keying schedule where the project has one. It comes back for 4 omissions: finish names without codes, handing without its convention, a marketing claim where a certificate should be, and no preparation data. From us, drawings, specifications and the catalog are published; a spec export and test documents are sent on request; BIM families and editable CAD are not available.",
   "author": {
     "name": "Johnson Liu",
@@ -70,7 +70,7 @@
     "So a request that works states the specified product, the proposed product, and a line-by-line comparison of the properties the specification actually constrains (grade, cycles, fire suitability, corrosion class, finish code, dimensions) with the test evidence behind each one. Where a property is worse, say so, and say why it does not matter here.",
     "A request that hides a difference is refused the moment the reviewer finds it, and every later request from the same supplier is read with that in mind. The shared features were never the question.",
     "## Where our own gaps are",
-    "Some of our products are in testing and do not yet hold certificates. Where that is true we say so on the product page rather than implying a rating, and a submittal that needs a certificate we do not hold is a submittal we will tell you we cannot complete.",
+    "Some of our products do not hold certificates. Where that is true we say so on the product page rather than implying a rating, and a submittal that needs a certificate we do not hold is a submittal we will tell you we cannot complete.",
     "That is a smaller number of lost inquiries than it sounds, and it is the only position compatible with the rest of this page. A supplier who will write an unsupported \"fire rated\" on a submittal will also write an unsupported dimension on a drawing, and the reviewer knows it."
   ],
   "faq": {
@@ -204,7 +204,7 @@
     "Así que una solicitud que funciona indica el producto especificado, el propuesto y una comparación línea a línea de las propiedades que la especificación realmente restringe (grado, ciclos, aptitud al fuego, clase de corrosión, código de acabado, cotas) con la evidencia de ensayo detrás de cada una. Donde una propiedad sea peor, dígalo, y diga por qué aquí no importa.",
     "Una solicitud que esconde una diferencia se deniega en el momento en que el revisor la encuentra, y todas las solicitudes posteriores de ese proveedor se leen con eso en mente. Las características compartidas nunca fueron la pregunta.",
     "## Dónde están nuestros propios huecos",
-    "Algunos de nuestros productos están en ensayo y todavía no tienen certificado. Donde es así lo decimos en la ficha en vez de insinuar una clasificación, y un submittal que necesita un certificado que no tenemos es un submittal que le diremos que no podemos completar.",
+    "Algunos de nuestros productos no tienen certificado. Donde es así lo decimos en la ficha en vez de insinuar una clasificación, y un submittal que necesita un certificado que no tenemos es un submittal que le diremos que no podemos completar.",
     "Eso pierde menos consultas de las que parece, y es la única posición compatible con el resto de esta página. Un proveedor dispuesto a escribir un «cortafuego» sin respaldo en un submittal también escribirá una cota sin respaldo en un plano, y el revisor lo sabe."
   ],
   "titlePt": "Pacote de submittal de ferragens 2026: todos os documentos que o revisor precisa, e os quatro que o fazem ser rejeitado",
@@ -258,7 +258,7 @@
     "Então um pedido que funciona indica o produto especificado, o proposto e uma comparação linha a linha das propriedades que a especificação realmente restringe (grau, ciclos, aptidão ao fogo, classe de corrosão, código de acabamento, cotas) com a evidência de ensaio por trás de cada uma. Onde uma propriedade for pior, diga-o, e diga por que aqui não importa.",
     "Um pedido que esconde uma diferença é recusado no momento em que o revisor a encontra, e todos os pedidos posteriores desse fornecedor são lidos com isso em mente. As características partilhadas nunca foram a pergunta.",
     "## Onde estão as nossas próprias lacunas",
-    "Alguns dos nossos produtos estão em ensaio e ainda não têm certificado. Onde é assim dizemos isso na página em vez de insinuar uma classificação, e um submittal que precisa de um certificado que não temos é um submittal que lhe diremos que não podemos completar.",
+    "Alguns dos nossos produtos não têm certificado. Onde é assim dizemos isso na página em vez de insinuar uma classificação, e um submittal que precisa de um certificado que não temos é um submittal que lhe diremos que não podemos completar.",
     "Isso perde menos consultas do que parece, e é a única posição compatível com o resto desta página. Um fornecedor disposto a escrever um \"corta-fogo\" sem respaldo num submittal também escreverá uma cota sem respaldo num desenho, e o revisor sabe disso."
   ]
 }

@@ -3,7 +3,7 @@
   "title": "Samples and Incoming Inspection 2026: The Golden Sample, What to Measure, and What a Sample Cannot Tell You",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-13",
   "summary": "Ask for a pre-production sample whenever anything differs from the catalog, and make it a golden sample: two identical pieces signed and dated by both parties, one sealed with each side, with a reference number on the purchase order. A sample cannot show batch consistency, corrosion resistance or life at 200,000 cycles; those need a sampling plan and test reports. This page also lists what to measure on a lock, handle, hinge, closer and glass fitting, and how to write an inspection standard a third-party inspector can apply.",
   "author": {
     "name": "Johnson Liu",
@@ -55,14 +55,7 @@
     "Name the golden sample reference. State the measurements to be taken and the tolerance on each, a tolerance is what converts a measurement into a decision. State the sampling plan: how many cartons opened, how many pieces measured, and what constitutes a fail.",
     "State what is checked functionally and how many times. \"Operate the lock\" is not an instruction; \"operate the lock ten times and confirm the latch fully retracts and the lever returns to horizontal each time\" is.",
     "State the packing checks: carton markings, quantity per carton, inner packing, and whether the carton dimensions match the packing list, because a carton that is not the size the packing list says will not load the way the shipment was planned.",
-    "And state what happens on a fail (hold the shipment, re-inspect after rework, or accept with a concession) because an inspector who finds a problem and has no instruction will do nothing, which is the worst of the three outcomes.",
-    "## When to take the sample",
-    "While the specification is still open. This is the timing point that most affects the outcome and it is the one most often got wrong.",
-    "A sample taken after the deposit is paid and the run is scheduled is a sample whose only possible outcomes are relief and an argument. A sample taken while the specification can still be edited is a conversation, and a misunderstanding found there costs an email.",
-    "As our lead time page sets out, the production clock starts at order confirmation, so sampling early does not delay the order. It moves work into the period that is under your control anyway.",
-    "## What we do",
-    "We prepare samples to a written specification and we state on the sample record which specification it was made to, so that an approval is an approval of something identifiable rather than of an object in a box.",
-    "Where a sample differs from the catalog in any respect, we say so in writing with the sample rather than letting the difference be discovered. A supplier who ships a sample that is quietly better than the production intent has not won an approval; they have set a standard they will fail against, which is a worse outcome for both parties than an honest sample and a short conversation."
+    "And state what happens on a fail (hold the shipment, re-inspect after rework, or accept with a concession) because an inspector who finds a problem and has no instruction will do nothing, which is the worst of the three outcomes."
   ],
   "faq": {
     "en": [
@@ -73,10 +66,6 @@
       {
         "question": "What kind of sample should I ask for?",
         "answer": "A stock sample if you are evaluating a supplier. A pre-production sample if anything differs from the catalog (a finish, a backset, a spindle length, a printed box) because it proves the specification was understood. A production sample drawn from the actual run is what an inspection is carried out against."
-      },
-      {
-        "question": "When should I take a sample?",
-        "answer": "While the specification is still open, before the deposit. A sample taken after the run is scheduled has only two possible outcomes: relief or an argument. Taken earlier it is a conversation, and a misunderstanding found there costs an email. The production clock starts at order confirmation anyway, so sampling early does not delay anything."
       },
       {
         "question": "What can a sample not tell me?",
@@ -101,10 +90,6 @@
         "answer": "Una muestra de stock si está evaluando a un proveedor. Una muestra de preserie si algo difiere del catálogo (un acabado, una entrada, una longitud de cuadradillo, una caja impresa), porque demuestra que la especificación se entendió. Una muestra de producción sacada de la serie real es contra lo que se hace una inspección."
       },
       {
-        "question": "¿Cuándo debo tomar una muestra?",
-        "answer": "Mientras la especificación sigue abierta, antes de la señal. Una muestra tomada con la serie ya programada solo tiene dos desenlaces posibles: alivio o discusión. Tomada antes es una conversación, y un malentendido descubierto ahí cuesta un correo. El reloj de producción arranca de todas formas en la confirmación, así que muestrear pronto no retrasa nada."
-      },
-      {
         "question": "¿Qué no puede decirme una muestra?",
         "answer": "Tres cosas. La homogeneidad de lote: una muestra enseña lo que la fábrica sabe hacer, no lo que hará en cinco mil piezas. La resistencia a la corrosión: no se ven 240 horas de niebla salina. Y la vida en ciclos: una cerradura que gira suave a diez ciclos no dice nada sobre doscientos mil. Las tres exigen ensayos, no impresiones."
       },
@@ -125,10 +110,6 @@
       {
         "question": "Que tipo de amostra devo pedir?",
         "answer": "Uma amostra de estoque se está avaliando um fornecedor. Uma amostra de pré-série se algo difere do catálogo, um acabamento, uma distância ao eixo, um comprimento de quadrado, uma caixa impressa, porque prova que a especificação foi entendida. Uma amostra de produção tirada da série real é contra o que uma inspeção é feita."
-      },
-      {
-        "question": "Quando devo tirar uma amostra?",
-        "answer": "Enquanto a especificação ainda está aberta, antes do sinal. Uma amostra tirada com a série já programada só tem dois desfechos possíveis: alívio ou discussão. Tirada antes é uma conversa, e um mal-entendido descoberto ali custa um e-mail. O relógio de produção arranca de qualquer forma na confirmação, então amostrar cedo não atrasa nada."
       },
       {
         "question": "O que uma amostra não me pode dizer?",
@@ -180,14 +161,7 @@
     "Cite la referencia de muestra patrón. Indique las medidas a tomar y la tolerancia de cada una: una tolerancia es lo que convierte una medida en una decisión. Indique el plan de muestreo: cuántas cajas se abren, cuántas piezas se miden y qué constituye un rechazo.",
     "Indique qué se comprueba funcionalmente y cuántas veces. «Accionar la cerradura» no es una instrucción; «accionar la cerradura diez veces y confirmar que el pestillo se retrae del todo y la manija vuelve a la horizontal cada vez» sí lo es.",
     "Indique las comprobaciones de embalaje: marcado de cajas, cantidad por caja, embalaje interior, y si las dimensiones de caja coinciden con la lista de empaque, porque una caja que no mide lo que dice la lista no cargará como se planificó el envío.",
-    "E indique qué pasa ante un rechazo (retener el envío, reinspeccionar tras retrabajo, o aceptar con concesión), porque un inspector que encuentra un problema y no tiene instrucción no hará nada, que es el peor de los tres desenlaces.",
-    "## Cuándo tomar la muestra",
-    "Mientras la especificación sigue abierta. Este es el punto de calendario que más afecta al resultado y el que más se equivoca.",
-    "Una muestra tomada tras pagar la señal y programar la serie es una muestra cuyos únicos desenlaces posibles son el alivio y la discusión. Una muestra tomada mientras la especificación aún se puede editar es una conversación, y un malentendido encontrado ahí cuesta un correo.",
-    "Como recoge nuestra página de plazos, el reloj de producción arranca en la confirmación del pedido, así que muestrear pronto no retrasa el pedido. Traslada trabajo al periodo que ya está bajo su control.",
-    "## Lo que hacemos",
-    "Preparamos muestras según una especificación escrita e indicamos en el registro de muestra contra qué especificación se hizo, de modo que una aprobación sea la aprobación de algo identificable y no de un objeto en una caja.",
-    "Donde una muestra difiere del catálogo en cualquier aspecto, lo decimos por escrito junto con la muestra en vez de dejar que la diferencia se descubra. Un proveedor que envía una muestra silenciosamente mejor que la intención de producción no ha ganado una aprobación: ha fijado un estándar contra el que va a suspender, que es peor desenlace para ambas partes que una muestra honesta y una conversación corta."
+    "E indique qué pasa ante un rechazo (retener el envío, reinspeccionar tras retrabajo, o aceptar con concesión), porque un inspector que encuentra un problema y no tiene instrucción no hará nada, que es el peor de los tres desenlaces."
   ],
   "titlePt": "Amostras e inspeção de entrada 2026: a amostra padrão, o que medir e o que uma amostra não lhe pode dizer",
   "summaryPt": "Peça uma amostra de pré-produção sempre que algo diferir do catálogo, e transforme-a em amostra padrão: duas peças idênticas assinadas e datadas pelas duas partes, uma lacrada com cada lado, com um número de referência no pedido de compra. Uma amostra não pode demonstrar a uniformidade do lote, a resistência à corrosão nem a vida a 200.000 ciclos; isso exige um plano de amostragem e relatórios de ensaio. Esta página enumera também o que medir numa fechadura, numa maçaneta, numa dobradiça, numa mola e numa ferragem de vidro, e como redigir uma norma de inspeção que um inspetor externo possa aplicar.",
@@ -225,13 +199,6 @@
     "Cite a referência de amostra padrão. Indique as medidas a tomar e a tolerância de cada uma: uma tolerância é o que converte uma medida numa decisão. Indique o plano de amostragem: quantas caixas se abrem, quantas peças se medem e o que constitui uma reprovação.",
     "Indique o que é verificado funcionalmente e quantas vezes. \"Acionar a fechadura\" não é uma instrução; \"acionar a fechadura dez vezes e confirmar que o trinco recolhe por completo e a maçaneta volta à horizontal de cada vez\" é.",
     "Indique as verificações de embalagem: marcação de caixas, quantidade por caixa, embalagem interna, e se as dimensões de caixa coincidem com a lista de embalagem, porque uma caixa que não mede o que a lista diz não vai carregar como o embarque foi planejado.",
-    "E indique o que acontece numa reprovação, reter o embarque, reinspecionar após retrabalho, ou aceitar com concessão, porque um inspetor que encontra um problema e não tem instrução não fará nada, que é o pior dos três desfechos.",
-    "## Quando tirar a amostra",
-    "Enquanto a especificação ainda está aberta. Este é o ponto de calendário que mais afeta o resultado e o que mais se erra.",
-    "Uma amostra tirada depois de pago o sinal e programada a série é uma amostra cujos únicos desfechos possíveis são o alívio e a discussão. Uma amostra tirada enquanto a especificação ainda pode ser editada é uma conversa, e um mal-entendido encontrado ali custa um e-mail.",
-    "Como consta da nossa página de prazos, o relógio de produção arranca na confirmação do pedido, então amostrar cedo não atrasa o pedido. Transfere trabalho para o período que já está sob o seu controle.",
-    "## O que fazemos",
-    "Preparamos amostras conforme uma especificação escrita e indicamos no registro de amostra contra que especificação foi feita, de modo que uma aprovação seja a aprovação de algo identificável e não de um objeto numa caixa.",
-    "Onde uma amostra difere do catálogo em qualquer aspecto, dizemos isso por escrito junto com a amostra em vez de deixar a diferença ser descoberta. Um fornecedor que envia uma amostra silenciosamente melhor do que a intenção de produção não ganhou uma aprovação: fixou um padrão contra o qual vai reprovar, o que é pior desfecho para ambas as partes do que uma amostra honesta e uma conversa curta."
+    "E indique o que acontece numa reprovação, reter o embarque, reinspecionar após retrabalho, ou aceitar com concessão, porque um inspetor que encontra um problema e não tem instrução não fará nada, que é o pior dos três desfechos."
   ]
 }

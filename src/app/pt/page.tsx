@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "pt",
     title,
     description:
-      "Fabricante de fechaduras, barras antipânico e ferragens para obras internacionais desde 1998. ISO 9001 desde 2002; produção OEM em Guangdong.",
+      "Fabricante de fechaduras, barras antipânico e ferragens para obras internacionais desde 1998. Unidade de estampagem ISO 9001:2015; produção OEM em Guangdong.",
   }),
   // This page shares the /pt segment with its root layout, so the layout title template
   // does not run here. Keep the brand suffix explicit in the shipped home-page title.

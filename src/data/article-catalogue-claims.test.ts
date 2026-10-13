@@ -95,15 +95,7 @@ function claim(at: readonly [string, string], expect: () => string) {
   claims.push({ where: `${at[0]}/${at[1]}`, expect });
 }
 
-// why-the-catalogue-is-this-wide
-claim(NEWS("why-the-catalogue-is-this-wide"), () => {
-  const families = new Set(hyde.map(top));
-  return `${hyde.length} entries in ${word(families.size)} product families`;
-});
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `${hyde.filter((p) => !(p.specs ?? []).length).length} of those ${hyde.length} entries carry no specification rows at all, and ${hyde.filter((p) => !p.heroImage?.src).length} have no photograph`);
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `knob locks (${inFamily("knob-locks").length} entries), lever handles (${inFamily("lever-handles").length}), hardware accessories such as stops, flush bolts and viewers (${inFamily("hardware-accessories").length}), lock cases (${inFamily("lock-cases").length}), bathroom accessories (${inFamily("bathroom-accessories").length}) and panic exit devices (${inFamily("panic-exit-devices").length})`);
-// care-grab-bars joined the small end on 2026-09-24, when the grab bars and shower seat left bathroom-accessories.
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `sliding hook locks (${inFamily("sliding-hook-locks").length}), grab bars and shower seats (${inFamily("care-grab-bars").length}), door closers (${inFamily("door-closers").length}) and deadbolts (${inFamily("deadbolts").length})`);
+// why-the-catalogue-is-this-wide was drafted on 2026-10-13 (boss: tooling and internal process stay off the site); its claims went with it.
 
 // brass-piano-hinge-is-a-finish-not-a-metal
 claim(NEWS("brass-piano-hinge-is-a-finish-not-a-metal"), () => {
@@ -268,7 +260,7 @@ test("HYDE coverage articles use site-filtered counts in all three languages", (
       hyde.length,
       coverage.fields.finish.products,
     ] },
-    { dir: "content/guides", slug: "qualifying-a-hardware-supplier-2026", counts: inventory },
+    // qualifying-a-hardware-supplier-2026 left this list on 2026-10-13: its "Applying this to us" section, which held these counts, was cut.
     { dir: "content/guides", slug: "technical-drawings-what-to-expect-2026", counts: inventory },
     { dir: "content/news", slug: "what-documents-you-can-actually-get", counts: inventory },
   ];

@@ -34,7 +34,7 @@
       "L'ordre des questions est donc : l'autorité d'abord, la norme ensuite, le modèle en dernier. Concrètement, la stratégie incendie ou le dossier d'appel d'offres désigne la norme, le prescripteur la traduit en chiffres de classification comme ci-dessus, et c'est seulement alors qu'une référence entre dans la discussion. Les acheteurs qui procèdent à l'envers (choisir l'appareil, puis chercher une norme qui lui convient) sont ceux qui découvrent au contrôle que le certificat porte sur le bon produit, mais dans la mauvaise catégorie.",
       "Un dernier point piège les projets situés sur des marchés qui ont adopté les normes européennes sans être en Europe. Une norme et un régime de marquage sont deux choses différentes. Un appareil peut être testé selon l'EN 1125 par un laboratoire situé n'importe où ; savoir si un marché donné exige en plus un marquage de conformité particulier, un organisme notifié désigné ou une homologation locale relève de l'autorité de ce marché, et la réponse varie. Demandez au dossier d'appel d'offres quels justificatifs il attend, pas seulement quelle norme il cite.",
       "Rien de tout cela ne rend le choix difficile. Cela fixe simplement l'ordre des étapes, et c'est cet ordre qui empêche un appareil conforme d'arriver sur une porte pour laquelle il n'est pas certifié.",
-      "La position de Canton Hyland, sans détour. Nous fabriquons des fermetures anti-panique à barre de poussée en versions coupe-feu, avec alarme, multipoints, avec garniture extérieure et pour applications spéciales. Des rapports d'essai EN 1125 existent pour des modèles précis, et une grande partie de notre production est testée au nom de nos clients, à leurs frais ; pour le modèle que vous indiquez, nous vous dirons quel rapport le couvre et à quel nom il est établi. Nous ne détenons pas aujourd'hui de certification ANSI/BHMA. Des essais CE et ANSI à notre propre nom sont en préparation, et tant qu'ils ne sont pas délivrés, nous le disons au lieu de laisser entendre le contraire ; un fournisseur qui revendique les deux pour le même produit sans deux jeux de rapports revendique une chose qu'aucun laboratoire n'a délivrée. Si votre projet relève d'une prescription américaine, signalez-le dès la demande de prix et nous vous dirons franchement si nous pouvons y répondre dès maintenant. S'il relève d'une prescription européenne, demandez le rapport correspondant au modèle exact que vous comptez acheter, et lisez la référence deux fois."
+      "La position de Canton Hyland, sans détour. Nous fabriquons des fermetures anti-panique à barre de poussée en versions coupe-feu, avec alarme, multipoints, avec garniture extérieure et pour applications spéciales. Des rapports d'essai EN 1125 existent pour des modèles précis ; pour le modèle que vous indiquez, nous vous dirons quel rapport le couvre. Nous ne détenons pas aujourd'hui de certification ANSI/BHMA, et nous le disons au lieu de laisser entendre le contraire ; un fournisseur qui revendique les deux pour le même produit sans deux jeux de rapports revendique une chose qu'aucun laboratoire n'a délivrée. Si votre projet relève d'une prescription américaine, signalez-le dès la demande de prix et nous vous dirons franchement si nous pouvons y répondre dès maintenant. S'il relève d'une prescription européenne, demandez le rapport correspondant au modèle exact que vous comptez acheter, et lisez la référence deux fois."
     ],
     "faq": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "question": "Canton Hyland détient-il une certification ANSI ?",
-        "answer": "Non, pas aujourd'hui, et nous le disons au lieu de laisser entendre le contraire. Des essais CE et ANSI à notre propre nom sont en préparation. Des rapports d'essai EN 1125 existent pour des modèles précis, souvent au nom de nos clients ; pour le modèle que vous indiquez, nous vous dirons quel rapport le couvre et à quel nom il est établi. Un fournisseur qui revendique les deux pour le même produit sans deux jeux de rapports revendique une chose qu'aucun laboratoire n'a délivrée."
+        "answer": "Non, pas aujourd'hui, et nous le disons au lieu de laisser entendre le contraire. Des rapports d'essai EN 1125 existent pour des modèles précis ; pour le modèle que vous indiquez, nous vous dirons quel rapport le couvre. Un fournisseur qui revendique les deux pour le même produit sans deux jeux de rapports revendique une chose qu'aucun laboratoire n'a délivrée."
       }
     ],
     "sourceHash": {
@@ -59,8 +59,8 @@
       "summary": "1f8147fb29da",
       "seoTitle": "ab1caca8e148",
       "seoDescription": "da010e39f31c",
-      "body": "9eaf77d267ef",
-      "faq": "96eb5c1f970b"
+      "body": "7ca20a81d0e9",
+      "faq": "9dd31b9b3cc6"
     }
   },
   "brass-piano-hinge-is-a-finish-not-a-metal": {
@@ -74,12 +74,12 @@
       "Comme elle porte la charge partout et non en trois points, le matériau compte moins pour la résistance qu'on ne le croit, et davantage pour la corrosion qu'on ne l'imagine. Une charnière continue en fer est plus rigide qu'une charnière en laiton de même section (le laiton est le métal le plus tendre) : passer du fer au laiton massif n'est donc pas une amélioration structurelle. Ce qu'apporte le laiton massif, c'est que le métal sous la surface est le même que celui de la surface, et c'est toute la question sur une baie extérieure ou en bord de mer.",
       "C'est le même piège que celui décrit dans notre article sur les codes de finition du système nord-américain, et il mérite d'être présenté comme une seule idée plutôt que deux. Dans l'ANSI/BHMA A156.18, 626 désigne un chrome satiné sur base laiton et 652 un chrome satiné sur base acier : identiques en photo, différents à tous les autres égards. « Charnière piano laiton », c'est cette distinction écrasée dans un nom de produit, et le nom garde la moitié qui passe bien en photo.",
       "Notre propre catalogue se trompait, et il vaut la peine de dire exactement à quel point, car cela montre à quoi ressemble l'erreur vue de l'intérieur. La fiche indiquait le modèle « Brass Piano Hinge », le matériau « Stainless Steel 304 », et un champ de largeur défiguré lors d'un import en `1\"1-1/4 \"2 \"、3\"`. Trois affirmations, dont aucune paire ne pouvait être vraie en même temps. La fiche est restée ainsi jusqu'à ce que quelqu'un cherche ce que les acheteurs tapaient réellement, trouve la requête et examine la fiche correspondante.",
-      "Ce qu'elle indique désormais, c'est ce que l'usine nous a dit le 16 septembre 2026 : la lame est en fer. Les largeurs sont de 1 pouce, 1-1/4 pouce, 2 pouces et 3 pouces. La photo de cette page en montre deux, l'une en noir mat et l'autre en finition laiton poli, et c'est cette dernière qui explique le nom du modèle. La mention acier inoxydable a disparu, parce qu'elle n'a jamais été vraie.",
-      "Ce que nous ne publions toujours pas sur cette fiche, c'est ce dont un prescripteur a besoin ensuite : la longueur de livraison, l'épaisseur de lame, le matériau de la broche, le pas des nœuds et toute valeur de charge. Ce sont cinq tirets, pas cinq estimations. Nous savons que la charnière est en fer et nous connaissons les quatre largeurs ; le reste ne nous a pas été communiqué, et une épaisseur de lame déduite d'une photo est exactement le genre de chiffre qui fait rejeter un dossier de soumission. Posez la question et nous la transmettrons à l'usine au lieu d'y répondre nous-mêmes.",
+      "La fiche indique désormais que la lame est en fer. Les largeurs sont de 1 pouce, 1-1/4 pouce, 2 pouces et 3 pouces. La photo de cette page en montre deux, l'une en noir mat et l'autre en finition laiton poli, et c'est cette dernière qui explique le nom du modèle. La mention acier inoxydable a disparu, parce qu'elle n'a jamais été vraie.",
+      "Ce que nous ne publions toujours pas sur cette fiche, c'est ce dont un prescripteur a besoin ensuite : la longueur de livraison, l'épaisseur de lame, le matériau de la broche, le pas des nœuds et toute valeur de charge. Ce sont cinq tirets, pas cinq estimations. Nous savons que la charnière est en fer et nous connaissons les quatre largeurs ; le reste, nous ne le publions pas, et une épaisseur de lame déduite d'une photo est exactement le genre de chiffre qui fait rejeter un dossier de soumission. Posez la question avant de la prescrire.",
       "Pour l'ensemble de la gamme, recensée le 22 septembre 2026 : ce site publie 29 fiches de charnières et paumelles. Dix-neuf sont en acier inoxydable de différentes nuances, quatre en fer (la Brass Piano Hinge, BL027, IH01 et F100 SS), deux en laiton massif (B024 et B025), et quatre n'ont pas encore de ligne matériau. Si votre prescription dit laiton et parle du métal, écrivez-le en toutes lettres, car un code de finition ne porte pas ce sens et un nom de modèle ne le porte manifestement pas non plus. Si elle dit laiton et parle de la couleur, une lame en fer ou en inox avec finition laiton poli est moins chère, plus rigide et parfaitement légitime, à condition que chacun sache ce qui a été commandé.",
       "## Encore un nom qui ne correspond pas à son métal",
       "En recomptant la gamme pour le paragraphe précédent, nous avons trouvé un autre cas du problème même dont traite cet article, et il serait curieux d'écrire sur les noms trompeurs sans le mentionner.",
-      "Il s'agit de la F100 SS. Le SS du nom se lit comme « stainless steel », acier inoxydable ; la ligne matériau de la fiche indique fer. L'un des deux est faux, et nous ne savons pas encore lequel. Tant que l'usine ne l'a pas confirmé, considérez le matériau de la F100 SS comme non confirmé et posez la question avant de la commander pour tout emplacement où la corrosion compte.",
+      "Il s'agit de la F100 SS. Le SS du nom se lit comme « stainless steel », acier inoxydable ; la ligne matériau de la fiche indique fer. L'un des deux est faux, et nous ne savons pas encore lequel. Considérez le matériau de la F100 SS comme non confirmé et posez la question avant de la commander pour tout emplacement où la corrosion compte.",
       "Les quatre fiches sans aucune ligne matériau (AAH024, BL029, SSH021 et la fiche intitulée Stainless Steel Door Hinge) sont l'autre moitié de la même leçon. Une paumelle dite en acier inoxydable avec une ligne matériau vide, c'est un nom, pas une spécification. Tant que la ligne n'est pas renseignée, considérez le matériau comme non confirmé, quel que soit le titre, et demandez-le par écrit. Cela vaut pour tout fournisseur, pas seulement pour nous.",
       "## Comment savoir en quoi une charnière est faite",
       "Rien de tout cela ne devrait reposer sur la confiance accordée à une étiquette, la nôtre comprise. Voici donc les vérifications qu'un acheteur peut faire, échantillon en main.",
@@ -151,7 +151,7 @@
       "## Ce qu'il faut demander avant de commander",
       "| Question | Pourquoi c'est important | Notre réponse aujourd'hui |\n| --- | --- | --- |\n| La barre est-elle de classe F selon la NBR 11785 ? | Une porte coupe-feu exige la classe F | Nous ne détenons aucun essai NBR 11785 à notre propre nom. L'essai peut être réalisé au nom de la marque qui vend la barre |\n| Le rapport cite-t-il le modèle, et à quel nom est-il établi ? | Un rapport portant sur un autre modèle ne couvre pas le vôtre | Nous montrons ce qui existe, avec l'émetteur, la référence et le modèle couvert |\n| Quelle est la longueur de la barre ? | Au moins 50 % de la largeur du vantail | De 650 à 1110 mm selon le modèle ; les 320 et 330 sont fabriqués à la longueur commandée |\n| La porte double se verrouille-t-elle en haut et en bas ? | Aucun vantail ne doit dépendre de l'autre pour rester fermé | 316-D, 320, et l'ensemble 309-D pour les deux vantaux |\n| Y a-t-il un sélecteur de fermeture ? | Exigé sur les portes doubles par la révision de 2018 | DC02, pour vantaux de 55 à 100 kg |",
       "## La voie honnête pour une marque propre",
-      "Pour une marque qui vend sous son propre nom au Brésil, la voie qui fonctionne est la suivante : choisir le modèle, recevoir des échantillons identiques à la production, les faire tester par un laboratoire accrédité au nom de votre marque, et seulement ensuite commander le conteneur, avec le même modèle, le même matériau et la même finition que l'échantillon testé. Nous fournissons les échantillons, les plans et la fiche technique. Si un détail du produit doit changer pour réussir l'essai, nous modifions l'outillage.",
+      "Pour une marque qui vend sous son propre nom au Brésil, la voie qui fonctionne est la suivante : choisir le modèle, recevoir des échantillons identiques à la production, les faire tester par un laboratoire accrédité au nom de votre marque, et seulement ensuite commander le conteneur, avec le même modèle, le même matériau et la même finition que l'échantillon testé. Nous fournissons les échantillons, les plans et la fiche technique.",
       "Ce que nous ne faisons pas, c'est affirmer qu'un produit satisfait à une norme brésilienne avant que quelqu'un l'ait testé. Une porte coupe-feu ne vaut que ce que vaut la pièce la plus faible qui y est fixée, et l'inspecteur le sait. Mieux vaut le découvrir sur l'échantillon que le jour de l'AVCB."
     ],
     "faq": [
@@ -165,7 +165,7 @@
       },
       {
         "question": "Canton Hyland propose-t-il une barre anti-panique certifiée NBR 11785 ?",
-        "answer": "Pas à notre propre nom, aujourd'hui. Nous fournissons des échantillons identiques à la production, des plans et une fiche technique pour un essai au nom de votre marque, et nous modifions l'outillage si l'essai l'exige. Nous n'affirmons pas qu'un produit satisfait à une norme brésilienne avant qu'il ait été testé."
+        "answer": "Pas à notre propre nom, aujourd'hui. Nous fournissons des échantillons identiques à la production, des plans et une fiche technique pour un essai au nom de votre marque. Nous n'affirmons pas qu'un produit satisfait à une norme brésilienne avant qu'il ait été testé."
       }
     ],
     "sourceHash": {
@@ -173,8 +173,8 @@
       "summary": "804a2ae4cef9",
       "seoTitle": "4ab948c9ba10",
       "seoDescription": "2a285127e76d",
-      "body": "dd958d7f8e4c",
-      "faq": "110c63f9ce18"
+      "body": "8e91e2463453",
+      "faq": "8b512cf66ce1"
     }
   },
   "choosing-a-cylindrical-lock-entrance-privacy-passage": {
@@ -184,7 +184,7 @@
     "seoDescription": "La fonction d'abord : entrée, condamnation ou passage. Douze serrures cylindriques, axe courant 60/70 mm, porte 35–45 mm, et la 5831 pour un axe de 90 mm.",
     "body": [
       "Une serrure cylindrique (un ensemble à bouton ou à béquille qui se pose dans deux perçages plutôt que dans une mortaise) est la serrure la plus répandue au monde, et la choisir dans un catalogue est plus difficile qu'il ne faudrait, car les références ne disent pas ce qui les distingue. Cet article reprend les douze références de notre sélection et indique clairement quelles décisions les séparent réellement.",
-      "Il faut d'abord savoir à quel point elles se ressemblent. Sur les 607, 592, 598, 575, 595 et 609, l'axe est indiqué réglable à 60 mm (2-3/8\") ou 70 mm (2-3/4\"), et l'épaisseur de porte réglable de 35 mm (1-3/8\") à 45 mm (1-3/4\"). Ce n'est pas de la paresse dans les données ; c'est tout l'intérêt d'une serrure tubulaire à perçage. Une seule pièce couvre les deux axes posés dans le monde, et cette même pièce couvre la plupart des épaisseurs de portes résidentielles et tertiaires légères ; une erreur de prescription sur l'une de ces deux lignes se rattrape donc sur le chantier plutôt que dans un conteneur. Une correction par rapport aux versions précédentes de cette page : la 587 figurait ici avec le même axe et la même plage d'épaisseurs, mais aucune de ses onze fiches ne publie l'une ou l'autre ligne ; elle a donc été retirée de cette phrase jusqu'à confirmation par l'usine.",
+      "Il faut d'abord savoir à quel point elles se ressemblent. Sur les 607, 592, 598, 575, 595 et 609, l'axe est indiqué réglable à 60 mm (2-3/8\") ou 70 mm (2-3/4\"), et l'épaisseur de porte réglable de 35 mm (1-3/8\") à 45 mm (1-3/4\"). Ce n'est pas de la paresse dans les données ; c'est tout l'intérêt d'une serrure tubulaire à perçage. Une seule pièce couvre les deux axes posés dans le monde, et cette même pièce couvre la plupart des épaisseurs de portes résidentielles et tertiaires légères ; une erreur de prescription sur l'une de ces deux lignes se rattrape donc sur le chantier plutôt que dans un conteneur. Une correction par rapport aux versions précédentes de cette page : la 587 figurait ici avec le même axe et la même plage d'épaisseurs, mais aucune de ses onze fiches ne publie l'une ou l'autre ligne ; elle a donc été retirée de cette phrase.",
       "La vraie première décision est donc la fonction, et trois fonctions couvrent la plupart des portes. Entrée : à clé côté extérieur, toujours libre côté intérieur. Condamnation : la fonction salle de bains et chambre, avec un bouton tournant à l'intérieur, sans clé, et un petit déverrouillage de secours à l'extérieur. Passage : ce n'est pas une serrure du tout ; elle maintient la porte fermée sans aucune fonction de verrouillage dans un sens ni dans l'autre, ce qu'il vous faut sur une porte de couloir qui doit rester fermée contre la fumée sans jamais enfermer personne.",
       "Il existe ensuite un quatrième groupe que la plupart des catalogues enterrent, et c'est celui dont un projet d'établissement a besoin. La 5807 est publiée avec les fonctions COMMUNICATION LOCK, CLASSROOM LOCK et EXIT LATCH. Une fonction salle de classe se verrouille à clé depuis le couloir uniquement, si bien qu'un enseignant peut fermer la porte depuis l'intérieur de la salle sans qu'une clé soit nécessaire pour en sortir. Si votre cahier des charges mentionne une école, une clinique ou une résidence, regardez d'abord la 5807, car les onze autres de cette gamme sont prescrites autour du trio entrée-condamnation-passage.",
       "Le mécanisme est la seconde décision, et c'est surtout une question de trafic dans le bâtiment. La plupart de ces serrures sont en acier inoxydable ; la 5870 est publiée dans une variante en fer + acier inoxydable et dans une autre en Stainless Steel 304/201 ; les 592 et 595 sont publiées en laiton ou acier inoxydable, ce qui signifie que le métal de base est un choix que l'acheteur n'a pas encore fait. Ce dernier point compte plus qu'il n'y paraît : une spécification de finition écrite en numéros BHMA ne peut recevoir de réponse tant que le métal de base n'est pas fixé, pour la raison exposée dans notre article sur les codes de finition.",
@@ -240,7 +240,7 @@
       "summary": "71085d20087f",
       "seoTitle": "d57b1447b045",
       "seoDescription": "2d7f0314a5a3",
-      "body": "916fdaf19df2",
+      "body": "fa4bdf763736",
       "faq": "8a629f9ec0e9"
     }
   },
@@ -250,7 +250,7 @@
     "seoTitle": "Trouver l'équivalent d'une serrure | Canton Hyland",
     "seoDescription": "Trouver l'équivalent d'une serrure par six cotes, pas par la référence. Serrure à mortaiser : axe, entraxe, têtière, coffre, carré, épaisseur de porte.",
     "body": [
-      "Regardez les termes de recherche qui mènent au site d'une usine de quincaillerie et une tendance saute aux yeux : un grand nombre sont les références d'une autre entreprise. Une serrure en applique d'une marque, une charnière invisible d'une autre, un code de pêne relevé sur un carton vieux de vingt ans, une référence tirée d'un catalogue épuisé. Personne ne tape cela dans l'espoir de lire un article sur nous. On le tape parce qu'on a une pièce qui fonctionne, que le fournisseur a disparu, qu'il est lent ou cher, et qu'on a besoin de savoir quoi commander pour obtenir la même chose.",
+      "Beaucoup d'acheteurs qui contactent une usine de quincaillerie partent de la référence d'une autre entreprise. Une serrure en applique d'une marque, une charnière invisible d'une autre, un code de pêne relevé sur un carton vieux de vingt ans, une référence tirée d'un catalogue épuisé. Ils ont une pièce qui fonctionne, le fournisseur a disparu, il est lent ou cher, et ils ont besoin de savoir quoi commander pour obtenir la même chose.",
       "C'est une bonne question, et elle a une réponse précise : une serrure se définit par sa géométrie, pas par son nom. Deux serrures qui partagent les mêmes six cotes sont interchangeables, quel que soit leur nom. Deux serrures qui portent le même nom mais diffèrent d'une seule cote ne le sont pas.",
       "Pour une serrure à mortaiser, ces six cotes sont : l'axe, de la face de la têtière au centre du carré ; l'entraxe, entre le carré et le cylindre ou l'entrée de clé ; la longueur et la largeur de la têtière ; la hauteur et la profondeur du coffre ; la section du carré, presque toujours 8 mm (5/16\") mais à confirmer ; et la plage d'épaisseur de porte. Réunissez ces six cotes et la substitution fonctionne. Manquez l'entraxe, et la béquille et le cylindre ne s'aligneront pas tous deux sur les trous déjà percés dans la porte ; or la porte est justement ce que vous ne pouvez pas changer.",
       "Pour une serrure en applique ou un verrou de sûreté, la liste est plus courte mais de même nature : axe, dimensions du boîtier, cylindre simple ou double, saillie du pêne, et type de gâche, car une gâche d'applique et une gâche de verrou à pêne dormant en applique sont des pièces moulées différentes, et l'huisserie est déjà préparée pour l'une d'elles.",
@@ -312,7 +312,7 @@
       "summary": "0e5c32a3e3af",
       "seoTitle": "1c5b7fc8a4c7",
       "seoDescription": "b5807a07cd45",
-      "body": "e8132fc5b50e",
+      "body": "d0131d5f94ac",
       "faq": "cf71a9c02107"
     }
   },
@@ -476,10 +476,13 @@
       "La finition prescrite une fois et supposée partout : la finition figure souvent dans une note générale en tête, puis disparaît des lignes. Un fournisseur qui ne lit que les lignes chiffrera la finition par défaut ; celui qui lit la note chiffrera juste. Lisez les notes avant les lignes.",
       "La combinaison des clés dans les remarques : les groupes de clés figurent généralement dans une colonne de remarques ou dans un tableau de combinaison séparé, pas dans l'ensemble de quincaillerie. Une ligne de cylindre sans information de combinaison est incomplète, aussi soigneusement que le cylindre soit décrit.",
       "Les révisions : les tableaux sont réédités en cours de projet, et chaque révision peut modifier des ensembles sans le signaler. Chiffrez sur une révision précise, indiquez-la sur le devis et, à chaque nouvelle édition, demandez la liste des modifications plutôt que de relire tout le document.",
-      "## Comment nous répondons à un tableau",
-      "Quand un tableau nous parvient, la réponse que nous visons se fait ensemble par ensemble plutôt que ligne par ligne : pour chaque ensemble de quincaillerie, nous indiquons si nous pouvons le compléter, le compléter à l'exception d'articles nommés, ou non, et pour chaque article que nous ne pouvons pas fournir, lequel et pourquoi. Cette réponse est généralement plus utile à un distributeur qu'une liste chiffrée, car elle montre d'emblée où un second fournisseur est nécessaire et quelle part du projet une seule commande peut couvrir. Les prix suivent pour les ensembles que nous pouvons compléter, sur la révision que nous avons lue.",
+      "## Ce qu'il faut mesurer avant de remplacer une serrure",
+      "Un tableau pour un bâtiment neuf décrit des portes qui n'existent pas encore. Un remplacement, c'est l'inverse : la porte est déjà usinée, et la nouvelle serrure doit s'adapter à des perçages faits par quelqu'un d'autre. Mesurez donc l'ancienne quincaillerie et la porte, pas le catalogue, et envoyez les cotes avec une photo de l'ancienne serrure posée à côté d'une règle. Si la têtière porte un numéro de modèle gravé, photographiez-le aussi.",
+      "| Mesure | Comment la prendre | Pourquoi elle compte |\n| --- | --- | --- |\n| Axe (backset) | De la face de la têtière au centre du trou du carré, ou du cylindre sur une serrure tubulaire ou cylindrique | La nouvelle serrure doit placer la béquille et le cylindre là où sont les anciens perçages |\n| Épaisseur de porte | À travers le vantail au niveau de la serrure, revêtement ou plaque compris | Elle fixe la longueur du cylindre et du carré, et quelles serrures conviennent |\n| Coffre de serrure | Hauteur, profondeur dans la porte et épaisseur du coffre ; sur un coffre à profil européen, l'entraxe du carré au cylindre | Le coffre doit entrer dans la mortaise existante, et l'entraxe doit correspondre aux plaques des béquilles |\n| Têtière | Longueur, largeur, épaisseur, angles droits ou arrondis, et entraxe de ses vis | Une têtière plus grande oblige à reprendre le chant ; une plus petite laisse un jour |\n| Gâche | Longueur et largeur de la gâche, position des ouvertures du pêne demi-tour et du pêne dormant, et entraxe de ses vis | Un pêne qui manque la gâche existante oblige à reprendre le dormant |\n| Longueur du cylindre | Chaque côté séparément, du centre de la vis de fixation à la face extérieure, noté par exemple 30/30 | Trop court, la clé n'entre pas en prise ; trop long, il dépasse de la garniture |\n| Main | De quel côté sont les paumelles et dans quel sens la porte s'ouvre, vu d'un côté indiqué | Les coffres à pêne biseauté, et beaucoup de ferme-portes et de fermetures anti-panique, sont fabriqués pour une seule main |\n| Carré | Entre les faces plates du carré, et sa longueur | 8mm et 7mm sont tous deux courants, selon le marché, et l'un ne va pas dans l'autre |\n| Entraxes de fixation | De centre à centre des vis traversantes des rosaces ou des plaques, et des fixations d'une serrure en applique ou d'une fermeture anti-panique | La nouvelle garniture doit tomber sur les perçages existants, sinon les anciens restent visibles |",
+      "Mesurez en millimètres si possible, et précisez-le si vous avez mesuré en pouces. Une case vide dans cette liste coûte une question ; un chiffre presque juste coûte une serrure qui arrive et ne s'adapte pas.",
       "## Envoyer le tableau",
       "Tout format que nous pouvons lire vaut mieux qu'un résumé, mais certains sont meilleurs que d'autres. Un export tableur est l'idéal, car les ensembles peuvent être décomposés et comptés sans ressaisie. Un PDF convient. La photo d'une page imprimée suffit pour commencer. Quel que soit le format, joignez aux lignes les notes générales et le tableau de combinaison des clés (c'est dans les notes que se trouvent généralement la finition et la stratégie incendie), et indiquez la lettre de révision, pour que notre réponse et votre prochaine révision se rapportent au même document. Sans ses notes, un tableau est une liste de portes ; avec elles, c'est un cahier des charges auquel nous pouvons répondre.",
+      "Si le projet n'a pas encore de tableau, le modèle joint ci-dessous en est un vierge : une ligne par porte, avec des colonnes pour le numéro de porte, l'emplacement, le matériau du vantail et du dormant, les dimensions de la porte, l'épaisseur, le degré coupe-feu, la main, la fonction, le modèle de serrure, le cylindre, le ferme-porte, les paumelles, la fermeture anti-panique, le butoir et les remarques, plus un en-tête pour le projet, l'indice de révision, la finition et l'organigramme. C'est un simple tableur, sans macros. Remplissez ce que vous savez et laissez le reste vide.",
       "Notre catalogue est organisé par produit, parce qu'un catalogue ne peut pas l'être autrement. Mais les demandes qui deviennent des commandes n'arrivent presque jamais produit par produit. Elles arrivent sous forme de tableau, ou de photo de tableau, et la réponse qui l'emporte est celle qui lit l'ensemble plutôt que la ligne. Si vous avez un tableau, envoyez-le : la réponse utile est de dire quels ensembles nous pouvons compléter, lesquels à un article près, et lesquels non — et cette réponse arrive plus vite qu'un devis ligne par ligne."
     ],
     "faq": [
@@ -506,6 +509,14 @@
       {
         "question": "Quelles sont les erreurs les plus courantes lorsqu'on chiffre un tableau de quincaillerie ?",
         "answer": "Quatre viennent du tableau plutôt que des produits : compter une porte double comme une seule porte alors que certaines pièces se comptent par vantail et d'autres par baie ; manquer une finition indiquée une seule fois dans les notes générales ; ignorer la combinaison des clés consignée dans une colonne de remarques ou un tableau séparé ; et chiffrer sur une ancienne révision. Lisez les notes avant les lignes, comptez les paires par vantail et par baie, et indiquez la révision du tableau sur le devis."
+      },
+      {
+        "question": "Que faut-il mesurer avant de remplacer une serrure ?",
+        "answer": "L'axe ; l'épaisseur de la porte au niveau de la serrure ; le coffre (hauteur, profondeur, épaisseur et, sur un coffre à profil européen, l'entraxe) ; la têtière et l'entraxe de ses vis ; la gâche ; chaque côté du cylindre depuis la vis de fixation ; la main ; le carré ; et les entraxes de fixation de la garniture. Envoyez les cotes avec une photo de l'ancienne serrure posée à côté d'une règle."
+      },
+      {
+        "question": "Existe-t-il un modèle de tableau de portes ?",
+        "answer": "Oui. Le tableur joint à cet article a une ligne par porte, avec des colonnes pour le numéro de porte, l'emplacement, le matériau du vantail et du dormant, les dimensions de la porte, l'épaisseur, le degré coupe-feu, la main, la fonction, le modèle de serrure, le cylindre, le ferme-porte, les paumelles, la fermeture anti-panique, le butoir et les remarques, plus un en-tête pour le projet, la révision, la finition et l'organigramme. Remplissez ce que vous savez et laissez le reste vide."
       }
     ],
     "sourceHash": {
@@ -513,8 +524,8 @@
       "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
-      "body": "f6a944bda5ea",
-      "faq": "61aa3c65cd39"
+      "body": "1de6eb40acab",
+      "faq": "d8d9a1c7d8c7"
     }
   },
   "door-stop-holder-or-flush-bolt": {
@@ -523,7 +534,7 @@
     "seoTitle": "Butoir, verrou à encastrer ou arrêt de porte ?",
     "seoDescription": "DS013 est un butoir, DS011 un verrou à encastrer. Comment distinguer butoirs, arrêts et verrous, et pourquoi la saillie de la béquille décide du butoir.",
     "body": [
-      "Cet article existe à cause d'une recherche. Quelqu'un a tapé « door stopper ds013 vs ds011 » dans Bing et a atterri ici, et il avait raison d'attendre une comparaison : les deux références se suivent presque dans notre catalogue et ont l'air de cousines. Elles ne le sont pas. Le DS013 est un butoir de porte. Le DS011 est un verrou à encastrer. Ce ne sont pas deux variantes d'un même produit, mais deux produits différents qui se trouvent numérotés côte à côte ; si la numérotation a suffisamment trompé quelqu'un pour qu'il cherche une comparaison, l'honnêteté consiste à publier la réponse plutôt qu'à le laisser la deviner sur une photo.",
+      "On prend facilement DS013 et DS011 pour une paire : les deux références se suivent presque dans notre catalogue et ont l'air de cousines. Elles ne le sont pas. Le DS013 est un butoir de porte. Le DS011 est un verrou à encastrer. Ce ne sont pas deux variantes d'un même produit, mais deux produits différents qui se trouvent numérotés côte à côte ; si la numérotation a suffisamment trompé quelqu'un pour qu'il cherche une comparaison, l'honnêteté consiste à publier la réponse plutôt qu'à le laisser la deviner sur une photo.",
       "Un butoir de porte arrête une porte qui s'ouvre avant qu'elle ne heurte quelque chose. C'est tout son travail. Le DS013 est un butoir de sol ou mural en alliage de zinc de 110 × 66mm (2-5/8\"), disponible en dix finitions. Tout son problème de conception consiste à arrêter une porte en mouvement sans transmettre le choc à la fixation : c'est pourquoi la partie active est en caoutchouc, le métal servant à maintenir le caoutchouc au bon endroit et à résister aux coups de pied.",
       "Un verrou à encastrer fait l'inverse. Il maintient un vantail fermé et immobile, et il s'encastre dans le chant de la porte pour que rien ne dépasse. Le DS011 est un verrou à encastrer en laiton, en neuf finitions. Sur une porte à deux vantaux, c'est lui qui empêche le vantail semi-fixe de bouger, pour que le vantail de service ait un appui solide où se verrouiller ; sans lui, une porte double fléchit et la serrure ne semble jamais juste, aussi bonne soit-elle. Il n'empêche en rien une porte de pivoter : ce n'est pas son rôle.",
       "Le troisième article de cette famille de confusions est l'arrêt de porte, parfois vendu comme retenue en position ouverte. Il maintient volontairement une porte ouverte, ce qui n'est pas la même chose que l'arrêter. Un butoir est passif et encaisse un choc ; un arrêt est actif et résiste à une force de fermeture, souvent celle d'un ferme-porte. Prescrire un butoir là où l'on voulait un arrêt donne une porte qui se referme chaque fois qu'on la lâche, et la réclamation qui revient est « le butoir ne marche pas », alors qu'il fonctionne exactement comme prévu.",
@@ -579,7 +590,7 @@
       "summary": "2c7f2bc56dd9",
       "seoTitle": "72bd8307959d",
       "seoDescription": "8ce2cbdc20af",
-      "body": "f456f10acbc4",
+      "body": "a40e4c0ac2fd",
       "faq": "767e1d218915"
     }
   },
@@ -605,14 +616,14 @@
       "## Ligne 6 : le sélecteur de fermeture",
       "Le sélecteur fait se fermer le semi-fixe en premier, pour que le vantail de service vienne sur le battement et se verrouille. Notre DC02 est prévu pour des vantaux de 55 à 100kg, ce qui l'associe à quatre de nos ferme-portes : JU-072, JU-073, JU-088 et JU-093. Le DSL02 est un sélecteur en inox 304 à force de fermeture réglable ; sa plage de poids n'est pas encore publiée, demandez-nous. Notre article sur les sélecteurs de fermeture détaille le dimensionnement. En bref, le poids du vantail doit se situer à la fois dans la plage du ferme-porte et dans celle du sélecteur, et au-delà de 85kg nous ne fabriquons pas de ferme-porte à ce jour.",
       "## Ce qui vient du fabricant de portes",
-      "Le battement, les joints intumescents et les vantaux eux-mêmes viennent du fabricant de portes, et ils font partie de l'ensemble testé. Tout comme chaque dispositif qui y est monté. C'est la seule règle au-dessus des six lignes : une porte coupe-feu est testée comme un ensemble, donc la quincaillerie qu'elle porte doit correspondre à ce qui a été testé, jusqu'au modèle. Demandez le rapport d'essai, vérifiez qu'il cite le modèle que vous achetez, et vérifiez au nom de qui il est établi. Une grande partie de ce que nous fabriquons est testée au nom de nos clients, à leurs frais ; des essais à notre propre nom sont en préparation. Nous préférons que vous posiez la question plutôt que de le supposer.",
+      "Le battement, les joints intumescents et les vantaux eux-mêmes viennent du fabricant de portes, et ils font partie de l'ensemble testé. Tout comme chaque dispositif qui y est monté. C'est la seule règle au-dessus des six lignes : une porte coupe-feu est testée comme un ensemble, donc la quincaillerie qu'elle porte doit correspondre à ce qui a été testé, jusqu'au modèle. Demandez le rapport d'essai, vérifiez qu'il cite le modèle que vous achetez, et vérifiez au nom de qui il est établi. Nous préférons que vous posiez la question plutôt que de le supposer.",
       "## Là où deux lignes justes se contredisent",
       "| Ligne | Face à | Ce qui tourne mal | Ce qu'il faut vérifier |\n| --- | --- | --- | --- |\n| Garniture | Porte | Une garniture prévue pour 35–55mm sur une porte de 60mm | L'épaisseur de porte par rapport à la plage imprimée de la garniture |\n| Garniture | Dispositif | Un carré de 8mm dans un fouillot de 9mm | Le carré des deux, par écrit |\n| Ferme-porte | Sélecteur | Un vantail de 45kg sous un DC02 prévu à partir de 55kg | Le poids du vantail dans les deux plages |\n| Vantail semi-fixe | Vantail de service | Une barre anti-panique sur un vantail, des verrous manuels sur l'autre | La largeur d'évacuation sur le plan |\n| Finition | Finition | Barres rouges, garniture satinée, sélecteur argent | Une seule finition pour la baie, indiquée une fois |",
       "Chaque ligne de ce tableau réunit deux articles vérifiés chacun par rapport au catalogue, jamais l'un par rapport à l'autre. Aucun n'est coûteux à corriger dans un tableau de quincaillerie. Tous le sont sur un bâtiment.",
       "## Si vous vendez des baies, pas des articles",
-      "Beaucoup de nos clients sont des marques et des distributeurs qui vendent cet ensemble aux poseurs sous leur propre nom. Pour eux, l'ensemble est le produit : un devis, une fiche de données de vantaux, une finition, et des cartons étiquetés selon leur cahier des charges, par baie si c'est ainsi que travaillent leurs poseurs. Demandez l'ensemble de cette façon, et nous le chiffrerons de cette façon. Si une ligne sort de notre gamme, comme un ferme-porte pour un vantail de plus de 85kg, le devis le dira — avant le départ du conteneur, pas après.",
+      "L'ensemble peut être chiffré comme un seul produit : un devis, une fiche de données de vantaux, une finition, et des cartons étiquetés selon votre cahier des charges, par baie si c'est ainsi que travaillent vos poseurs. Demandez l'ensemble de cette façon, et nous le chiffrerons de cette façon. Si une ligne sort de notre gamme, comme un ferme-porte pour un vantail de plus de 85kg, le devis le dira — avant le départ du conteneur, pas après.",
       "## Ce qu'il faut nous envoyer",
-      "Six données suffisent pour chiffrer la baie entière : la largeur et le poids de chaque vantail ; l'épaisseur de porte ; le vantail de service ; si les deux vantaux comptent dans la largeur d'évacuation ; si l'extérieur demande une clé, un libre passage ou rien ; et une finition. Avec cela, nous vérifions chaque ligne par rapport à toutes les autres avant toute fabrication."
+      "Six données suffisent pour chiffrer la baie entière : la largeur et le poids de chaque vantail ; l'épaisseur de porte ; le vantail de service ; si les deux vantaux comptent dans la largeur d'évacuation ; si l'extérieur demande une clé, un libre passage ou rien ; et une finition."
     ],
     "faq": [
       {
@@ -637,7 +648,7 @@
       "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
-      "body": "7ac89beb63e2",
+      "body": "d1b6ecac92fd",
       "faq": "ba7a0cc545ad"
     }
   },
@@ -793,7 +804,7 @@
       "Cette longueur totale n'est pas la répartition. Un cylindre de 70mm (2-3/4\") est le plus souvent en 35/35, mais un 30/40 ou un 40/30 font aussi 70, et ce sont des pièces différentes qui conviennent à des portes différentes : la répartition se mesure depuis l'axe du panneton vers l'extérieur, et le panneton est l'endroit que traverse la vis de fixation. Nous l'avons détaillé dans un article distinct, car c'est l'erreur de commande la plus fréquente sur ce composant ; nous ne le répéterons pas ici.",
       "Tous les cylindres de cette gamme sont annoncés en laiton massif. Cela mérite d'être dit, car le laiton n'est pas la façon la moins chère de fabriquer un cylindre et la différence ne se voit pas de l'extérieur : un corps en laiton s'usine avec une tolérance plus serrée qu'une pièce moulée en zinc, et c'est ce qui permet à un mécanisme à cinq goupilles de tourner sans à-coups après dix ans de clés introduites légèrement de biais. C'est aussi pourquoi ces cylindres peuvent porter un numéro de finition BHMA, ce qui est impossible pour une pièce en alliage de zinc : les groupes de métal de base de l'A156.18 sont l'acier, le laiton et l'inox, et le zinc n'en fait pas partie.",
       "Les finitions sont publiées sous forme de liste plutôt que par variante : laiton poli (PB), chromé (CP), nickel satiné et le reste de notre gamme standard. Ces lettres sont documentées sur nos pages finitions et codes de commande, et un code de finition sur un cylindre se comporte comme sur n'importe quel autre produit : il désigne un aspect, et le numéro BHMA exige en plus le métal de base, qui est ici toujours le laiton.",
-      "Les lettres qui suivent la finition sont la partie qui n'est pas entièrement documentée, et nous préférons le dire plutôt que de les inventer. Plusieurs variantes de cette gamme portent DK, KT ou IK : ce sont des codes de fonction de notre propre système interne, dont l'usine ne nous a pas encore confirmé le sens par écrit. Ils figurent sur la liste des six codes de commande que nous attendons, une lettre de finition et cinq lettres de fonction. D'ici là, décrivez la fonction en toutes lettres dans votre demande, et nous la ferons correspondre au code plutôt que l'inverse.",
+      "Les lettres qui suivent la finition sont la partie qui n'est pas entièrement documentée, et nous préférons le dire plutôt que de les inventer. Plusieurs variantes de cette gamme portent DK, KT ou IK : ce sont des codes de fonction dont nous ne publions pas encore le sens. Décrivez la fonction en toutes lettres dans votre demande, et nous la ferons correspondre au code plutôt que l'inverse.",
       "Deux longueurs de la gamme retenue n'ont aucune ligne de caractéristiques publiée : le 60 et le 90. Cinq variantes du 60 et quatre du 90 figurent au catalogue avec des photos, mais sans ligne de matériau, de finition ou de dimension. La longueur est dans la référence, et c'est réellement tout ce que nous publions à leur sujet aujourd'hui. Elles figurent sur la liste envoyée à l'usine avec le reste ; en attendant, la réponse honnête à « en quoi est le 60 ? » est que nous allons demander, et non qu'il est en laiton comme ses voisins, même s'il l'est presque certainement.",
       "Le 70 est celui à examiner en premier si vous choisissez un standard pour un projet, simplement par le poids de la gamme : dix-neuf variantes publiées, contre six pour le 80 et trois pour le 45. C'est la longueur autour de laquelle le catalogue est construit, et un projet standardisé en 70mm (2-3/4\") dispose du plus large choix de finitions et de fonctions sans commande spéciale. Si vos portes demandent autre chose, la longueur est une variable de fabrication plutôt qu'une décision de stock : demandez-nous.",
       "Le cylindre est aussi le composant le plus souvent intégré à une combinaison de clés, et la combinaison est une discussion distincte de la longueur. Chacun de ces cylindres peut être livré s'entrouvrant au sein d'un groupe, ou intégré à un organigramme ; notre article sur les niveaux d'organigramme explique combien de niveaux un bâtiment exige réellement, et la réponse est généralement moins que ce que demande la consultation. Ce qui compte au stade de la commande, c'est que la combinaison soit décidée avant la taille des cylindres, et que le plan de combinaison soit un document dont quelqu'un a la charge.",
@@ -823,7 +834,7 @@
       },
       {
         "question": "Que signifient les lettres DK, KT et IK sur un cylindre ?",
-        "answer": "Nous ne le savons pas encore, et nous préférons le dire plutôt que de l'inventer. Ce sont des codes de fonction de notre propre système interne dont l'usine ne nous a pas confirmé le sens par écrit ; ils figurent sur la liste des six codes de commande que nous attendons, une lettre de finition et cinq lettres de fonction. D'ici là, décrivez la fonction en toutes lettres dans votre demande, et nous la ferons correspondre au code plutôt que l'inverse."
+        "answer": "Nous n'en publions pas encore le sens, et nous préférons le dire plutôt que de l'inventer. Ce sont des codes de fonction. Décrivez la fonction en toutes lettres dans votre demande, et nous la ferons correspondre au code plutôt que l'inverse."
       },
       {
         "question": "Pourquoi certaines longueurs n'ont-elles aucune caractéristique publiée ?",
@@ -843,8 +854,8 @@
       "summary": "4b440593405b",
       "seoTitle": "aa9271e5892f",
       "seoDescription": "1f1962b65bad",
-      "body": "3fa9f4678d2c",
-      "faq": "8e8a6243d9ab"
+      "body": "468aa71d8b3f",
+      "faq": "7ce8af514911"
     }
   },
   "exit-device-push-bar-length": {
@@ -868,7 +879,7 @@
       "La longueur n'est que la moitié de la pose d'une barre. L'autre moitié est la hauteur, fixée par la norme ou le code, pas par le goût. L'EN 1125 prévoit une barre de manœuvre posée entre 900mm et 1100mm (35-7/16\" à 43-5/16\") au-dessus du sol fini. En Amérique du Nord, la NFPA 101 place la quincaillerie anti-panique entre 34 et 48 pouces (864 à 1219mm). Ces plages se recoupent, ce qui est pratique, mais elles ne sont pas identiques, et c'est l'édition que fait appliquer votre autorité qui compte. Vérifiez le texte en vigueur plutôt qu'un chiffre retenu d'un projet précédent.",
       "La hauteur interagit avec la porte. La traverse intermédiaire d'un vantail à panneaux ou vitré peut se trouver exactement là où la barre doit aller, ou exactement là où elle ne doit pas aller, et une plaque de propreté ou un oculus peut entrer en conflit avec les embouts du dispositif. Reportez la hauteur de la barre sur l'élévation de la porte avant de commander, et regardez ce qui est déjà dessiné à cette hauteur.",
       "## Barre de poussée ou barre tactile, et pourquoi la longueur ne pèse pas pareil",
-      "Tout ce qui précède concerne la longueur de la barre sur le vantail, et vaut quel que soit l'organe de manœuvre du dispositif. Mais le choix entre une barre de poussée traditionnelle (une barre transversale pivotant sur deux embouts) et une barre tactile, dont toute la surface plane actionne le dispositif, change la tolérance sur la longueur. Notre article comparant barres de poussée et barres tactiles est la page de ce site que les moteurs de recherche IA citent le plus souvent, et il expose ce choix en détail. En bref, pour la longueur : quel que soit le type, la surface de manœuvre doit couvrir autant de vantail que l'exige la norme, et une barre trop courte laisse une bande où l'on pousse la porte plutôt que le dispositif.",
+      "Tout ce qui précède concerne la longueur de la barre sur le vantail, et vaut quel que soit l'organe de manœuvre du dispositif. Mais le choix entre une barre de poussée traditionnelle (une barre transversale pivotant sur deux embouts) et une barre tactile, dont toute la surface plane actionne le dispositif, change la tolérance sur la longueur. Notre article comparant barres de poussée et barres tactiles expose ce choix en détail. En bref, pour la longueur : quel que soit le type, la surface de manœuvre doit couvrir autant de vantail que l'exige la norme, et une barre trop courte laisse une bande où l'on pousse la porte plutôt que le dispositif.",
       "## Recouper à longueur, et quand s'en abstenir",
       "Seuls les modèles annoncés réglables peuvent être recoupés ou ajustés à longueur : dans notre gamme, les 300, 302 et 302-S, plus le 314 marqué sur mesure et les 320 et 330 fabriqués à longueur. Un dispositif à longueur fixe recoupé sur chantier n'est plus le dispositif livré, et sur une porte coupe-feu ou d'évacuation, cela peut compter pour celui qui réceptionne la porte. Si aucun modèle réglable ne convient au projet, demandez un dispositif fabriqué à longueur dès la commande plutôt que de prévoir d'en modifier un à la pose.",
       "Quand un projet compte de nombreuses largeurs de porte, il revient souvent moins cher au total de standardiser un modèle réglable que de commander une longueur fixe différente pour chaque baie. Une seule référence, une seule finition, un seul jeu de pièces de rechange, et l'équipe de chantier n'a qu'un dispositif à apprendre.",
@@ -909,7 +920,7 @@
       "summary": "07c496ad14e5",
       "seoTitle": "6cfbca699410",
       "seoDescription": "c3943b193f34",
-      "body": "d4564a8ca99a",
+      "body": "dcdf088f7b4e",
       "faq": "46f0bc9abe22"
     }
   },
@@ -925,7 +936,7 @@
       "630 est celui qui casse la règle, et c'est aussi la finition la plus prescrite en Amérique du Nord. Ce n'est pas du tout un revêtement : 630 est de l'acier inoxydable satiné, massif, dont la finition est travaillée dans le métal au lieu d'être appliquée dessus. C'est pourquoi 630 ne peut pas être proposé comme alternative à 626 pour une question de prix. Il n'y a rien à user, puisqu'il n'y a pas de revêtement ; et rien à plaquer, puisque la pièce est déjà dans le métal que nomme la finition.",
       "Conséquence pratique : un code de finition seul ne peut pas être converti en numéro BHMA. Notre catalogue enregistre un champ finition et un champ matériau distinct, et le numéro n'existe que si les deux sont connus. CP sur laiton et CP sur acier correspondent à deux numéros BHMA différents, et le champ finition ne dit pas lequel. La correspondance dans notre système prend donc les deux champs et ne renvoie rien dès qu'une moitié est inconnue ou cite plusieurs métaux.",
       "Appliquée à tout le catalogue, elle donne un numéro à 77 des 519 fiches publiées, environ quinze pour cent. Les plus fréquents sont 630 et 629, inox satiné et inox brillant, ce qui est logique pour un catalogue dont le premier groupe de matériaux est l'acier inoxydable ; viennent ensuite 605 laiton brillant, 625 chrome brillant, 626 chrome satiné, 619 nickel satiné. Une fiche aboutit à 652 plutôt qu'à 626, et cette seule fiche résume tout l'argument de cet article : même couleur, base acier, autre numéro.",
-      "Les 442 autres méritent d'être détaillées, car un fournisseur qui refuse de dire pourquoi un champ est vide cache généralement une supposition. Sur 277 fiches, aucune finition n'est indiquée : c'est une question pour notre usine, et elle est sur la liste. Sur 20, le champ matériau est vide. Sur 22, le matériau cite plusieurs métaux : « laiton ou acier inoxydable » est un choix que l'acheteur n'a pas encore fait, il n'y a donc pas de base à désigner. Dix-huit sont en laiton vieilli, une famille de finitions à reliefs plutôt qu'un numéro A156.18 unique, et douze disent « acier inoxydable » sans préciser satiné ou poli, cas où 630 et 629 conviennent tous deux et où deviner revient à en choisir un.",
+      "Les 442 autres méritent d'être détaillées, car un fournisseur qui refuse de dire pourquoi un champ est vide cache généralement une supposition. Sur 277 fiches, aucune finition n'est indiquée. Sur 20, le champ matériau est vide. Sur 22, le matériau cite plusieurs métaux : « laiton ou acier inoxydable » est un choix que l'acheteur n'a pas encore fait, il n'y a donc pas de base à désigner. Dix-huit sont en laiton vieilli, une famille de finitions à reliefs plutôt qu'un numéro A156.18 unique, et douze disent « acier inoxydable » sans préciser satiné ou poli, cas où 630 et 629 conviennent tous deux et où deviner revient à en choisir un.",
       "Cinquante-six sont en alliage de zinc, et ce groupe mérite sa propre phrase, car il s'agit d'un fait concernant la pièce, pas d'une lacune de nos données. Les métaux de base de l'A156.18 sont l'acier, le laiton et le bronze, et l'inox. L'alliage de zinc n'en fait pas partie, pas plus que l'aluminium. Un cahier des charges exigeant du 626 sur base laiton ne peut pas être satisfait par une pièce moulée en alliage de zinc, si proche que soit la couleur, et mieux vaut le dire à l'acheteur avant l'échantillon qu'après la soumission. Le dire nous coûte des demandes que nous aurions de toute façon perdues à l'examen.",
       "## Quatre questions réellement tapées, traitées dans l'ordre",
       "Ce ne sont pas des exemples inventés. Ce sont les quatre questions de finition qui mènent le plus souvent à cette page, et chacune a une réponse courte et juste que les tables de codes ne donnent pas.",
@@ -972,7 +983,7 @@
       "summary": "3a1d7e3e03cb",
       "seoTitle": "466e81b9fd29",
       "seoDescription": "d676be3b6346",
-      "body": "35d07ae85186",
+      "body": "d81d9340764a",
       "faq": "f20625faeb6a"
     }
   },
@@ -988,7 +999,7 @@
       "Étape deux : retirer la vis de fixation. Elle se trouve dans le chant de la porte, sur la têtière du coffre, à hauteur du milieu du cylindre : une seule vis, généralement la seule de la têtière qui ne tient pas la serrure elle-même. Vis retirée et clé toujours tournée, le cylindre se retire en tirant sur la clé. S'il ne bouge pas, le panneton n'est pas dégagé : tournez la clé un peu plus plutôt que de tirer plus fort.",
       "Étape trois : présenter le nouveau de la même façon. Clé introduite, panneton dégagé, glissez-le depuis la face extérieure. Étape quatre : poser la vis. Elle traverse le centre du cylindre (dans l'axe même du panneton) et n'entre donc que lorsque le cylindre est exactement à la bonne profondeur. Cette résistance est voulue : une vis qui entrerait facilement à la mauvaise profondeur laisserait le cylindre libre. Serrez fermement, et arrêtez-vous là. C'est une petite vis dans du laiton, et c'est elle qui casse si on la traite comme une fixation structurelle.",
       "L'étape cinq est celle qui décide si la porte est sûre, et elle prend dix secondes : regardez de combien le cylindre dépasse de l'entrée ou de la rosace de béquille. De l'affleurement à environ trois millimètres de saillie, c'est juste. Au-delà, un outil trouve une prise, et un cylindre qu'on peut saisir peut être cassé : c'est la façon la plus courante d'ouvrir sans clé une porte à profil européen. Trop enfoncé, c'est une autre défaillance : la clé ne s'engage pas complètement et la rosace frotte sur le barillet. Si la saillie est mauvaise, le cylindre a la mauvaise longueur ou la mauvaise répartition, et aucun serrage n'y remédiera.",
-      "Venons-en aux deux étapes que tout le monde saute. La première : testez la clé depuis LES DEUX faces, et le bouton s'il y en a un, avant de remonter les béquilles. La seconde, celle qui revient en réclamation : testez à nouveau porte FERMÉE. Sous son propre poids, une porte ne se place pas dans le dormant comme lorsqu'elle pivote ouverte, et un pêne demi-tour ou un pêne dormant qui passe aisément porte ouverte peut coincer contre une gâche décalée de deux millimètres. Chaque cylindre qui nous a été retourné comme défectueux et s'est révélé bon au banc relevait de ce cas.",
+      "Venons-en aux deux étapes que tout le monde saute. La première : testez la clé depuis LES DEUX faces, et le bouton s'il y en a un, avant de remonter les béquilles. La seconde, celle qui revient en réclamation : testez à nouveau porte FERMÉE. Sous son propre poids, une porte ne se place pas dans le dormant comme lorsqu'elle pivote ouverte, et un pêne demi-tour ou un pêne dormant qui passe aisément porte ouverte peut coincer contre une gâche décalée de deux millimètres.",
       "Ce que nous fournissons, et ce qu'il faut confirmer avec nous. Nos cylindres sont en laiton massif, au profil européen, et le catalogue compte neuf longueurs totales, 45, 47, 54, 56, 60, 65, 70, 80 et 90mm (3-9/16\"), la longueur étant le premier nombre de la référence. Ce que le catalogue ne publie pas pour chaque modèle, c'est la répartition, le type de panneton et le profil de clé : envoyez l'épaisseur de porte et ce qui est monté sur chaque face, et nous confirmerons les trois pour le modèle avant votre commande. Si les portes doivent s'entrouvrir ou être intégrées à un organigramme, réglez-le dans la même conversation : le profil de clé doit être commun à tout le système et ne peut pas être changé ensuite.",
       "## Quand il ne veut pas sortir",
       "L'une des requêtes qui mènent à cette page mérite d'être citée en entier, car c'est quelqu'un qui se trouve devant une porte en ce moment même : « euro profile cylinder removal, door unlocked, retaining screw, cam alignment ». Ce sont quatre problèmes simultanés, et ils ont une seule cause.",
@@ -1024,7 +1035,7 @@
       },
       {
         "question": "Quelles étapes de pose saute-t-on le plus souvent ?",
-        "answer": "Deux. Tester la clé depuis les deux faces, et le bouton s'il y en a un, avant de remonter les béquilles. Puis tester à nouveau porte fermée : sous son propre poids, une porte ne se place pas dans le dormant comme lorsqu'elle pivote ouverte, et un pêne qui passe aisément porte ouverte peut coincer contre une gâche décalée de deux millimètres. Chaque cylindre qui nous a été retourné comme défectueux et s'est révélé bon au banc relevait de ce cas."
+        "answer": "Deux. Tester la clé depuis les deux faces, et le bouton s'il y en a un, avant de remonter les béquilles. Puis tester à nouveau porte fermée : sous son propre poids, une porte ne se place pas dans le dormant comme lorsqu'elle pivote ouverte, et un pêne qui passe aisément porte ouverte peut coincer contre une gâche décalée de deux millimètres."
       },
       {
         "question": "Que faut-il nous envoyer pour commander un cylindre de remplacement ?",
@@ -1036,8 +1047,8 @@
       "summary": "8416328fdd90",
       "seoTitle": "0f9374d26209",
       "seoDescription": "05e819689fd0",
-      "body": "15de5535ebdf",
-      "faq": "7855c1eaa80b"
+      "body": "84a9365a6d09",
+      "faq": "6e7023f94b82"
     }
   },
   "handing-left-right-and-universal": {
@@ -1387,7 +1398,7 @@
       "Le terme à chercher, et la raison d'être de cet article, c'est que chaque marché nomme cette pièce différemment. Indicator bolt, indicator lock, occupied-vacant bolt, vacant-engaged bolt, washroom turn en anglais, et dans un cahier des charges souvent simplement « ensemble de condamnation avec voyant ». Tous décrivent la même pièce. Notre propre catalogue nomme la catégorie Voyant libre / occupé et indique la fonction du 200 comme « Vacant & Occupied Indicator », sa structure étant clairement désignée comme un verrou à coulisse.",
       "Notre 200 est en alliage de zinc, en applique, en finition satinée ou plaquée, et il est prévu pour les portes de cabines de WC, portes de sanitaires, hôtels, bureaux, hôpitaux et sanitaires publics. La pose en applique compte plus qu'il n'y paraît : la porte ne demande ni mortaise ni perçage traversant en dehors des fixations, et un voyant peut donc être ajouté sur une cabine existante, ce qui est le cas de la plupart.",
       "Le 400 et le 500 reprennent le même principe dans d'autres métaux. Le 400 est en alliage de zinc. Le 500 est en acier inoxydable, et c'est celui à prescrire là où les sanitaires sont nettoyés avec des produits agressifs ou dans un bâtiment en bord de mer : une pièce moulée en zinc à finition plaquée et une pièce en inox ne sont plus le même produit après deux ans de ce régime. Le 500 est aussi celui qui dispose d'une gamme complète de finitions : laiton vieilli, cuivre vieilli, laiton poli, laiton satiné, acier inoxydable, poli brillant, chrome satiné et nickel satiné.",
-      "Deux points que nous n'indiquons pas, et ce sont les deux les plus susceptibles de compter sur un bâtiment public. Nous ne publions pas d'endurance testée pour ces modèles : si votre cahier des charges exige un verrou testé sur un nombre de manœuvres donné, demandez avant de chiffrer au lieu de le supposer. Et nous ne publions pas de plage d'épaisseur de porte pour le 200, comme nous le faisons pour nos verrous de sûreté. Ces deux questions sont à poser à notre usine plutôt que des réponses que nous accepterions d'estimer, et elles sont sur la liste.",
+      "Deux points que nous n'indiquons pas, et ce sont les deux les plus susceptibles de compter sur un bâtiment public. Nous ne publions pas d'endurance testée pour ces modèles : si votre cahier des charges exige un verrou testé sur un nombre de manœuvres donné, demandez avant de chiffrer au lieu de le supposer. Et nous ne publions pas de plage d'épaisseur de porte pour le 200, comme nous le faisons pour nos verrous de sûreté.",
       "Pour des sanitaires tertiaires ordinaires, la réponse honnête est que le voyant est rarement la décision coûteuse, et souvent la décision visible. Assurez-vous du déblocage, choisissez le métal selon le régime de nettoyage, et vérifiez que la fenêtre se lit depuis le fond de la pièce plutôt qu'à bout de bras : une fenêtre techniquement à deux états mais illisible en pratique est la réclamation la plus fréquente dans cette catégorie de produits, et ce n'est jamais un défaut de fabrication.",
       "## Voyant en applique ou voyant sur serrure de salle de bains",
       "Il existe deux façons de placer un signal libre / occupé sur une porte de sanitaires, et elles conviennent à des portes différentes. La première est celle décrite plus haut : un verrou à voyant en applique, comme nos 200, 400 et 500, qui constitue sa propre serrure et ne demande aucune préparation en dehors de ses fixations. Il a sa place sur les portes de cabines et sur les portes existantes que l'on améliore.",
@@ -1438,7 +1449,7 @@
       "summary": "5490d89dde81",
       "seoTitle": "3ac2eef0e024",
       "seoDescription": "a671ec187536",
-      "body": "e529925518ff",
+      "body": "de4a7690cbbe",
       "faq": "ad83ebc715a6"
     }
   },
@@ -1516,7 +1527,7 @@
       "## Le piège de l'inversion, qui nous revient",
       "Regardez attentivement le premier tableau : vous y trouverez trois paires qui sont le même code écrit à l'envers.",
       "PB et BP signifient tous deux laiton poli. BN et NB, nickel noir. CB et BC, chrome brillant.",
-      "Ce n'est pas une coquille dans une fiche ; les deux graphies coexistent dans la gamme, parce qu'elles sont arrivées de sources différentes au fil des années et que personne ne les a harmonisées. Nous le disons ici plutôt que de normaliser discrètement, car un acheteur qui détient un ancien tarif doit savoir que `BP` et `PB` sur deux lignes différentes ne sont pas deux finitions différentes.",
+      "Ce n'est pas une coquille dans une fiche ; les deux graphies coexistent dans la gamme, parce qu'elles ont été écrites à des années différentes. Nous le disons ici plutôt que de normaliser discrètement, car un acheteur qui détient un ancien tarif doit savoir que `BP` et `PB` sur deux lignes différentes ne sont pas deux finitions différentes.",
       "Il en va de même du noir. BL, BRN et ORB désignent tous le noir dans nos données, et seul ORB porte une intention distincte, le bronze huilé, un noir à sous-ton chaud plutôt que neutre. Si le noir compte pour le projet, nommez la finition en toutes lettres sur la commande et demandez un échantillon ; les lettres ne trancheront pas.",
       "## La position prime sur les lettres",
       "Voici la règle qui rend tout le système lisible, et c'est celle que personne n'écrit.",
@@ -1556,7 +1567,7 @@
       "summary": "dbed28865350",
       "seoTitle": "46f074447228",
       "seoDescription": "3c7611367536",
-      "body": "f0a104da278c",
+      "body": "000bb82edd48",
       "faq": "08382c0a0382"
     }
   },
@@ -1710,7 +1721,7 @@
       "La saillie est la cote qui crée des problèmes sur chantier, et celle que les acheteurs vérifient en dernier. C'est la distance entre la face de la porte et le point le plus saillant de l'ensemble, et elle décide si la porte peut s'ouvrir contre un mur, si une béquille dégage la porte voisine d'une paire, et si la poignée accroche un manteau. Soixante millimètres est une valeur normale pour une béquille tertiaire ; l'essentiel est que les deux modèles la publient, et qu'on peut donc la vérifier par rapport à l'ébrasement avant de commander.",
       "Le diamètre de rosace compte pour une autre raison : il décide de ce que la béquille peut couvrir. Une rosace de 53mm ne masquera pas la préparation laissée par une serrure à rosace plus grande ; en rénovation, quand on remplace les béquilles de portes existantes, c'est donc l'ancien diamètre de rosace qu'il faut relever. C'est une façon courante de voir un simple remplacement à l'identique tourner au chantier de menuiserie.",
       "Les trois acceptent une porte de 35 à 50mm (1-3/8\" à 1-15/16\"), plage plus large que la plupart de nos ensembles de béquilles en alliage de zinc, et c'est pourquoi ce sont elles qu'on choisit pour un vantail plus lourd. Le cylindre des trois est en laiton. Les corps sont en acier inoxydable, ce qui les place dans une tout autre discussion que la gamme LH en alliage de zinc : l'inox se prescrit pour une porte extérieure, un bâtiment en bord de mer ou des sanitaires nettoyés avec des produits agressifs, et l'alliage de zinc partout ailleurs.",
-      "La 9008 fait partie de cette gamme retenue et publie en tout six lignes de caractéristiques sur ses deux variantes : acier inoxydable, cylindre en laiton, épaisseur de porte de 35 à 50mm. Ni longueur de béquille, ni diamètre de rosace, ni saillie. Nous ne les déduirons pas de la 9007 qui la côtoie dans la même série, car une saillie recopiée d'un modèle voisin est précisément le chiffre qui empêche une porte de s'ouvrir contre un mur. Ces cotes figurent sur la liste des mesures que nous avons demandées à l'usine.",
+      "La 9008 fait partie de cette gamme retenue et publie en tout six lignes de caractéristiques sur ses deux variantes : acier inoxydable, cylindre en laiton, épaisseur de porte de 35 à 50mm. Ni longueur de béquille, ni diamètre de rosace, ni saillie. Nous ne les déduirons pas de la 9007 qui la côtoie dans la même série, car une saillie recopiée d'un modèle voisin est précisément le chiffre qui empêche une porte de s'ouvrir contre un mur.",
       "Si vous hésitez entre elles, l'ordre pratique est le suivant : l'épaisseur de porte d'abord (les trois acceptent 35 à 50mm, elle tranche donc rarement), puis la saillie par rapport à l'ébrasement, puis la longueur de béquille par rapport à la largeur du montant, puis la finition. Et si la réponse est la 9008, demandez-nous les trois cotes manquantes avant la commande plutôt qu'après, car ce sont précisément les trois qu'on ne peut pas corriger sur chantier.",
       "## Quel inox, exactement",
       "Tout ce qui précède qualifie ces béquilles d'acier inoxydable, et à une exception près, c'est tout ce que disent les fiches : « acier inoxydable », sans nuance. L'exception est la 9088 SS, dont la fiche indique SUS 304, estampillé sur la plaque. Cela mérite d'être signalé plutôt qu'escamoté, car c'est précisément la nuance qui décide si l'inox se comporte comme l'acheteur l'attend. La nuance 304 est le choix habituel pour l'intérieur et l'extérieur courant ; la 316, avec son ajout de molybdène, est la nuance des atmosphères marines, des piscines et des nettoyages agressifs ; et la 201 est une nuance moins chère qui peut se marquer et se tacher dans des conditions que la 304 supporte sans peine. Notre article sur les nuances d'inox 304, 201 et 316 détaille ces différences.",
@@ -1744,7 +1755,7 @@
       },
       {
         "question": "Pourquoi la 9008 ne publie-t-elle ni longueur de béquille ni saillie ?",
-        "answer": "Parce que l'usine ne nous a pas encore communiqué ces cotes, et que nous ne les déduirons pas de la 9007 qui la côtoie dans la même série : une saillie recopiée d'un modèle voisin est précisément le chiffre qui empêche une porte de s'ouvrir contre un mur. La 9008 publie l'acier inoxydable, un cylindre en laiton et une épaisseur de porte de 35 à 50mm. Si c'est le modèle que vous voulez, demandez-nous les trois cotes manquantes avant la commande plutôt qu'après."
+        "answer": "Parce que ces cotes ne sont pas encore publiées, et que nous ne les déduirons pas de la 9007 qui la côtoie dans la même série : une saillie recopiée d'un modèle voisin est précisément le chiffre qui empêche une porte de s'ouvrir contre un mur. La 9008 publie l'acier inoxydable, un cylindre en laiton et une épaisseur de porte de 35 à 50mm. Si c'est le modèle que vous voulez, demandez-nous les trois cotes manquantes avant la commande plutôt qu'après."
       },
       {
         "question": "Quelle nuance d'inox pour les béquilles de la série 9000 ?",
@@ -1760,8 +1771,8 @@
       "summary": "2d3d9c020383",
       "seoTitle": "561e319323c3",
       "seoDescription": "ef9249c00346",
-      "body": "c3d495cfaf3b",
-      "faq": "7aa708306dd2"
+      "body": "e807a6dd4e98",
+      "faq": "de5eb43d79e4"
     }
   },
   "stainless-steel-grades-304-201-316": {
@@ -1770,7 +1781,7 @@
     "seoTitle": "Quelle nuance d’inox vous a-t-on proposée ? 304, 201 ou 316",
     "seoDescription": "Ce qui distingue les inox 201, 304 et 316 en quincaillerie, pourquoi le 201 rouille en bord de mer, le test à l'aimant, et quoi demander au fournisseur.",
     "body": [
-      "Une poignée inox coûte entre quatre et onze dollars chez des usines chinoises qui photographient toutes la même forme sur le même fond blanc. Les photos ne mentent pas. Le métal est différent, et la différence n'apparaît qu'après un an de pose sur le bâtiment, bien après le dédouanement du conteneur, la levée de la retenue de garantie et le départ de l'acheteur vers d'autres projets.",
+      "Les poignées inox de nombreuses usines sont photographiées sous la même forme, sur le même fond blanc. Les photos ne mentent pas. Le métal est différent, et la différence n'apparaît qu'après un an de pose sur le bâtiment, bien après le dédouanement du conteneur, la levée de la retenue de garantie et le départ de l'acheteur vers d'autres projets.",
       "Trois nuances circulent couramment. La 304 est l'inox architectural par défaut : environ 18 % de chrome, 8 % de nickel, pas de molybdène ajouté volontairement. C'est ce que la plupart des gens entendent par acier inoxydable, ce que visent la plupart des cahiers des charges, et dans un bâtiment ordinaire à l'intérieur des terres, elle ne se corrode pas. La 201 est un alliage de substitution inventé quand le nickel est devenu cher : elle ramène le nickel à environ 4 % et compense la structure austénitique par du manganèse et de l'azote. Elle coûte d'un cinquième à un tiers de moins, se polit en une finition impossible à distinguer de la 304 dans une salle d'exposition, et résiste nettement moins bien à la corrosion. La 316 va dans l'autre sens : elle ajoute 2 à 3 % de molybdène précisément pour résister à l'attaque des chlorures, le mode de défaillance qui pique la 304 près de l'eau salée et dans les piscines.",
       "## Pourquoi l'une rouille et l'autre non",
       "L'acier inoxydable n'est pas un métal qui ne peut pas rouiller. C'est un métal qui se répare lui-même. Au-delà d'environ 10,5 %, le chrome réagit avec l'oxygène de l'air pour former une couche passive épaisse de quelques atomes, et quand cette couche est rayée, elle se reforme en quelques secondes, à condition que l'oxygène soit disponible et que rien ne l'attaque chimiquement. Tout cet article revient à se demander si ce film tient bien, et à quelle vitesse il se reforme.",
@@ -1822,7 +1833,7 @@
       "summary": "86751d81e7c5",
       "seoTitle": "90bc71d688fb",
       "seoDescription": "63a932e15e31",
-      "body": "9e04a27c0656",
+      "body": "ba7c92c5a23d",
       "faq": "280ac87782b9"
     }
   },
@@ -1920,7 +1931,7 @@
       "C'est aussi là que les revendications coupe-feu des pages produits méritent le plus de scepticisme, les nôtres comprises. Une durée comme « 1,5 heure » ou « 2,5 heures » n'a de sens que comme degré d'un bloc-porte testé, identifié dans un rapport ou un listing. Seule à côté d'un dispositif, elle décrit une attente, pas une preuve. Demandez quel ensemble a été testé, par qui et selon quelle norme, et si la réponse est un chiffre sans document, traitez-la comme un chiffre sans document.",
       "## Si votre cahier des charges indique « UL listed »",
       "La première chose à établir est quelles portes l'exigence couvre réellement. Sur de nombreux projets, l'exigence de listing s'applique à certaines baies (portes classées, chemins d'évacuation, portes citées dans la stratégie incendie), pas à chaque porte équipée d'une béquille ou d'une barre. Un tableau de quincaillerie qui marque l'exigence baie par baie révèle souvent que seule une fraction des portes a besoin de dispositifs homologués.",
-      "Pour les baies qui exigent un listing, l'exigence n'est pas négociable avec nous, et il serait faux de prétendre le contraire. Nos 307 et 311 ont été soumis à essai, et tant que les numéros de certificat n'existent pas, nous ne laisserons entendre ni listing, ni grade, ni degré coupe-feu reconnu UL pour eux. Pour les baies qui n'en exigent pas (portes de service, réserves, portes hors du chemin réglementé), la discussion est ordinaire et porte sur le vantail, la longueur et la garniture, et nous pouvons l'avoir dès aujourd'hui.",
+      "Pour les baies qui exigent un listing, l'exigence n'est pas négociable avec nous, et il serait faux de prétendre le contraire. Nos 307 et 311 ne détiennent aujourd'hui aucun certificat, et tant que les numéros de certificat n'existent pas, nous ne laisserons entendre ni listing, ni grade, ni degré coupe-feu reconnu UL pour eux. Pour les baies qui n'en exigent pas (portes de service, réserves, portes hors du chemin réglementé), la discussion est ordinaire et porte sur le vantail, la longueur et la garniture, et nous pouvons l'avoir dès aujourd'hui.",
       "Ce que nous ne ferons pas, c'est suggérer une demande de substitution pour contourner une exigence écrite. Un architecte qui a prescrit un listing l'a fait pour une raison, et un fournisseur qui livre discrètement un dispositif non homologué contre ce cahier des charges transfère le risque à celui qui réceptionne la porte. Mieux vaut le savoir à la demande, quand la réponse change ce que vous commandez, qu'au contrôle, quand elle change ce que vous déposez.",
       "## Pourquoi un listing coûte plus cher qu'un rapport",
       "Des acheteurs demandent parfois pourquoi un dispositif homologué est plus cher qu'un dispositif semblable accompagné d'un rapport d'essai. La réponse se trouve dans la définition plus haut : un rapport est un essai unique d'un modèle unique à une date unique, alors qu'un listing est un engagement continu, l'organisme de certification inspectant périodiquement la production et le fabricant maintenant les conditions du listing entre les visites. Ce coût permanent est réel, il est porté par chaque dispositif fabriqué sous le listing, et c'est lui qui donne au listing un sens pour le dispositif dans votre carton plutôt que pour un échantillon d'il y a des années.",
@@ -1950,7 +1961,7 @@
       },
       {
         "question": "Que faire si mon cahier des charges exige un listing UL que le fournisseur n'a pas ?",
-        "answer": "Vérifiez d'abord quelles baies l'exigence couvre : souvent les portes classées et les chemins d'évacuation plutôt que toutes les portes. Pour ces baies, l'exigence n'est pas négociable : nous ne détenons pas de listing UL, nos 307 et 311 ont été soumis à essai, et nous ne laisserons rien entendre d'autre tant que les numéros de certificat n'existent pas. Pour les portes hors exigence, le choix est ordinaire et porte sur le vantail, la longueur et la garniture. Une demande de substitution pour contourner une exigence écrite ne fait que transférer le risque à celui qui réceptionne la porte."
+        "answer": "Vérifiez d'abord quelles baies l'exigence couvre : souvent les portes classées et les chemins d'évacuation plutôt que toutes les portes. Pour ces baies, l'exigence n'est pas négociable : nous ne détenons pas de listing UL, nos 307 et 311 ne détiennent aujourd'hui aucun certificat, et nous ne laisserons rien entendre d'autre tant que les numéros de certificat n'existent pas. Pour les portes hors exigence, le choix est ordinaire et porte sur le vantail, la longueur et la garniture. Une demande de substitution pour contourner une exigence écrite ne fait que transférer le risque à celui qui réceptionne la porte."
       }
     ],
     "sourceHash": {
@@ -1958,8 +1969,8 @@
       "summary": "b791d5579771",
       "seoTitle": "2ea370028a62",
       "seoDescription": "ba34e75c4fea",
-      "body": "fc3f6d52692f",
-      "faq": "8f19828761b0"
+      "body": "b4309f5b8796",
+      "faq": "414ea2ce0995"
     }
   },
   "what-a-frameless-glass-door-needs": {
@@ -2037,7 +2048,7 @@
       "Remarquez ce que cette liste ne dit pas. Elle ne dit pas que chaque fermeture anti-panique que nous fabriquons est testée EN 1125. Elle ne dit pas que la famille 607 est testée en endurance : elle dit qu'un de ses membres l'est, en acier inoxydable, en fonction ET. Changez la finition, le suffixe de fonction ou l'axe, et vous avez changé le produit que décrit le rapport, parfois de façon anodine, parfois non. Lesquels de ces changements comptent est une question pour le laboratoire et la norme, pas pour un commercial.",
       "C'est aussi pourquoi les dates comptent et pourquoi nous les imprimons. Un rapport de 2013 est un vrai rapport ; il a aussi treize ans, et les normes sont révisées. Si un projet exige une preuve récente selon l'édition en vigueur d'une norme, la réponse honnête est qu'un nouvel essai est nécessaire, et la réponse utile vous le dit avant la commande plutôt qu'au moment où le contrôleur le demande.",
       "La distinction voisine qui piège souvent est celle entre rapport d'essai et certificat. Un rapport est le compte rendu par un laboratoire de ce qui est arrivé à un échantillon : ce dispositif, ces cycles, ce résultat. Un certificat de conformité est l'attestation par un organisme qu'un produit satisfait à une norme, généralement assortie d'une obligation continue de contrôle de la production en usine. Ce sont deux instruments différents, de poids différent, et « nous avons les papiers » efface la différence d'une façon qui ne profite qu'au vendeur.",
-      "Indépendamment des documents produits, notre système de management de la qualité est certifié ISO 9001 depuis 2002. C'est une chose réelle et utile, et il vaut la peine d'en préciser le sens : l'ISO 9001 atteste que l'usine dispose d'un processus documenté et audité pour faire ce qu'elle dit faire. Ce n'est une note de performance pour aucun produit. Une usine peut détenir l'ISO 9001 et expédier, avec une parfaite constance, une serrure qui n'a jamais été testée selon quoi que ce soit.",
+      "Indépendamment des documents produits, notre unité d'emboutissage est certifiée ISO 9001:2015 (certificat 69125Q0026****, valable jusqu'au 29 octobre 2028). C'est une chose réelle et utile, et il vaut la peine d'en préciser le sens : l'ISO 9001 atteste que l'usine dispose d'un processus documenté et audité pour faire ce qu'elle dit faire. Ce n'est une note de performance pour aucun produit. Une usine peut détenir l'ISO 9001 et expédier, avec une parfaite constance, une serrure qui n'a jamais été testée selon quoi que ce soit.",
       "Nous publions les données des documents d'essai (titre, émetteur, numéro de référence, date d'émission et modèle exact couvert) plutôt que les scans eux-mêmes, car la diffusion des rapports appartient au laboratoire émetteur, et republier le document de quelqu'un d'autre ne nous revient pas. Si votre cahier des charges exige le document en main, demandez-le, et nous l'obtiendrons par la voie appropriée. Notre page certifications contient tout ce qu'il faut pour vérifier qu'il existe et voir précisément jusqu'où il s'étend.",
       "Conséquence pratique pour tout prescripteur : demandez le rapport qui couvre la référence que vous achetez réellement, dans la configuration où vous l'achetez, et lisez la ligne de périmètre avant le titre. Si un fournisseur répond à cette question par un nom de famille plutôt que par une référence, c'est la réponse. Le contrôle par un tiers avant expédition est bienvenu chez nous et ne se négocie pas : nommez l'inspecteur, et nous fixerons la date.",
       "## Lire un rapport d'essai en cinq lignes",
@@ -2072,7 +2083,7 @@
       },
       {
         "question": "L'ISO 9001 signifie-t-elle que le produit est testé ?",
-        "answer": "Non. Notre système de management de la qualité est certifié ISO 9001 depuis 2002, et le sens en est précis : l'usine dispose d'un processus documenté et audité pour faire ce qu'elle dit faire. Ce n'est une note de performance pour aucun produit. Une usine peut détenir l'ISO 9001 et expédier, avec une parfaite constance, une serrure qui n'a jamais été testée selon quoi que ce soit."
+        "answer": "Non. Notre unité d'emboutissage est certifiée ISO 9001:2015, et le sens en est précis : l'unité dispose d'un processus documenté et audité pour faire ce qu'elle dit faire. Ce n'est une note de performance pour aucun produit. Une usine peut détenir l'ISO 9001 et expédier, avec une parfaite constance, une serrure qui n'a jamais été testée selon quoi que ce soit."
       },
       {
         "question": "Pourquoi publiez-vous les données du rapport plutôt que le rapport lui-même ?",
@@ -2092,8 +2103,8 @@
       "summary": "f1970d77b6a7",
       "seoTitle": "66bd82d9e921",
       "seoDescription": "9edc936d2406",
-      "body": "fda91930c2e4",
-      "faq": "ecf6a6b8eb6c"
+      "body": "7fd0483c9e3f",
+      "faq": "ad79b0cfbd10"
     }
   },
   "what-an-old-padlock-tells-a-lock-factory": {
@@ -2102,7 +2113,7 @@
     "seoTitle": "Ce qu'un vieux cadenas apprend à une usine de serrures",
     "seoDescription": "Vieux cadenas enchaîné à un chevalier en Allemagne : plaques rivées, broche d'entrée pour clé creuse, serrure à gardes. Ce qu'y lit une usine de serrures.",
     "body": [
-      "Notre dirigeant marchait dans une rue d'Allemagne quand il s'est arrêté devant l'entrée d'un hôtel. Devant se dresse un chevalier en armure, en fonte, tenant un bouclier dont l'inscription revendique l'an 998 et nomme Richeza, reine de Pologne, petite-fille de l'empereur Otton II. Un cadenas est enchaîné aux chevilles du chevalier, et c'est le cadenas qu'il a photographié. Il a envoyé les photos au groupe de l'entreprise avec une seule ligne : mettez ça sur le site. Plus un objet est ancien, plus il attire, et plus il montre que nous savons ce que nous faisons.",
+      "Notre dirigeant marchait dans une rue d'Allemagne quand il s'est arrêté devant l'entrée d'un hôtel. Devant se dresse un chevalier en armure, en fonte, tenant un bouclier dont l'inscription revendique l'an 998 et nomme Richeza, reine de Pologne, petite-fille de l'empereur Otton II. Un cadenas est enchaîné aux chevilles du chevalier, et c'est le cadenas qu'il a photographié.",
       "Il taille des moules pour la quincaillerie de porte depuis 1998 ; quand il dit qu'un objet mérite qu'on le regarde, la bonne réaction est de le regarder. Voici ce que nous voyons, et (parce que c'est plus important) voici où s'arrête ce que nous voyons.",
       "Commençons par la façon dont il est assemblé. Huit rivets bombés entourent le corps : deux aux épaules, deux sur chaque flanc, deux en travers du pied. C'est un boîtier assemblé à partir de plaques, ni coulé d'une pièce ni soudé : découpées, empilées, percées, rivetées à froid, les dômes étant les têtes écrasées au marteau. C'est la construction qu'on emploie quand l'assemblage doit tenir sans chaleur, et c'est pourquoi l'objet a traversé un siècle d'intempéries en gardant sa forme, tandis que sa surface tournait à la rouille.",
       "Puis l'entrée de clé, la partie la plus bavarde de tout l'objet. Une broche se dresse en son milieu. Une broche signifie que la clé est creuse (une clé forée qui glisse sur la broche et se centre sur elle), et une clé creuse avec une large fente en dessous signifie une serrure à gardes : des obstacles fixes à l'intérieur, que la bonne clé est taillée pour franchir et la mauvaise non. Ce n'est pas un cylindre à goupilles et cela n'a jamais été conçu pour l'être. C'est le mécanisme qui a fermé l'Europe pendant plusieurs siècles avant que les cylindres ne le remplacent, et on l'identifie à deux mètres dès qu'on sait à quoi sert la broche.",
@@ -2117,7 +2128,7 @@
       "Nous pourrions écrire le paragraphe manquant. Un atelier allemand des années 1890, un nom de famille, une ligne sur le forgeron qui a posé ces rivets : cela se lirait merveilleusement, et ce serait une fiction. Nous ne le ferons pas, et ce n'est pas par modestie. Un acheteur qui commande un conteneur de quincaillerie à une usine qu'il n'a jamais visitée achète avant tout une chose : la conviction que nous n'inventons rien. Cette conviction est indivisible. Un fournisseur prêt à inventer la provenance d'un cadenas sur un blog inventera un axe de coffre de serrure dans un devis, et l'acheteur qui surprend la première invention a raison de supposer la seconde. Sur ce site, quand une cote n'est pas publiée, vous obtenez un tiret plutôt qu'un chiffre plausible. C'est la même règle, appliquée à une histoire.",
       "La serrure est aussi intéressante pour la raison inverse de celle qu'on attend. Elle est anonyme, et pendant la plus grande partie de l'histoire de ce métier, c'était normal : une serrure s'identifiait à l'homme qui l'avait faite, et si vous ne le connaissiez pas, vous ne pouviez pas acheter de pièce de rechange. Ce qui y a mis fin, ce ne sont pas de meilleures serrures. Ce sont les normes. Le profil pour lequel chaque coffre de serrure européen est usiné aujourd'hui est défini par la DIN 18252 en Allemagne et l'EN 1303 en Europe, avec une tolérance qui permet à un cylindre d'une usine d'entrer dans le coffre d'une autre, dans un autre pays, quarante ans plus tard. Le pays où notre dirigeant a trouvé cette serrure sans nom est celui-là même qui a rédigé la norme qui a rendu l'anonymat sans danger.",
       "C'est ce que nous fabriquons. Nos propres cylindres européens mesurent 45, 54, 60, 65, 70, 80 et 90mm (3-9/16\"), et aucune de ces valeurs n'est à nous : elles appartiennent à la norme, et toute la valeur de la pièce tient à ce que nous les atteignions exactement. Un cylindre fièrement différent de deux millimètres n'est pas un produit distinctif ; c'est une pièce qui n'entre pas. L'anonymat de la vieille serrure et l'interchangeabilité de la nouvelle sont la même histoire racontée deux fois : d'abord le nom du fabricant était la garantie, puis la norme l'a remplacé.",
-      "C'est là que passent réellement vingt-huit ans. Un moule pour une seule fermeture anti-panique demande trois à cinq mois avant de produire une pièce que quiconque accepterait de vendre, et l'essentiel de ce temps n'est pas de la taille d'acier : c'est le rodage de l'outil, la mesure de ce qui en sort et la correction de l'outil, parce que le métal ne fait pas ce que dit le plan. Viennent ensuite les essais auxquels la pièce doit survivre : feu, choc, endurance, pression. Rien de tout cela n'apparaît sur une photo. Cela apparaît quand la cent millième pièce est identique à la première.",
+      "C'est là que passent réellement vingt-huit ans. Une pièce doit aussi survivre à des essais : feu, choc, endurance, pression. Rien de tout cela n'apparaît sur une photo. Cela apparaît quand la cent millième pièce est identique à la première.",
       "## Si vous voulez un jour en lire un vous-même",
       "Quatre éléments survivent à la rouille, à peu près dans cet ordre, et un ne survit pas.",
       "Le mode d'assemblage du boîtier : rivets, agrafage, cordon de soudure ou coque coulée d'une seule pièce. Il se lit sous presque n'importe quelle corrosion, car c'est de la structure et non de la surface : on sent un rivet à travers une rouille qui a caché tout le reste. Rivets et agrafages signifient que le corps a été construit à partir de plaques.",
@@ -2152,7 +2163,7 @@
       "summary": "cc9471771c8a",
       "seoTitle": "de0d36e2f817",
       "seoDescription": "40f399a07aa6",
-      "body": "9b20f325e416",
+      "body": "b7e383ea7997",
       "faq": "bb4e64ac35fe"
     }
   },
@@ -2162,7 +2173,7 @@
     "seoTitle": "Fiches techniques, CAO et BIM : ce qui existe",
     "seoDescription": "HYDE compte 84 SVG cotés, dont 72 sur des fiches visibles, et un catalogue PDF consultable. Pas de bibliothèque BIM ni de SVG de préparation de porte.",
     "body": [
-      "Une même forme revient dans les requêtes qui arrivent sur ce site : les gens ne cherchent pas un produit, ils cherchent un fichier. Une fiche technique de serrure. Un modèle DraftSight ou DWG. Un objet BIM avec une ficha técnica. Un PDF exemple. Une fois, quelqu'un a collé toute une ligne de nomenclature (numéro de plan, repère, matériau, usage) directement dans un champ de recherche, ce que fait un ingénieur achats qui essaie de trouver la pièce répondant à un plan. Au fond, toutes ces demandes sont la même : donnez-moi quelque chose que je puisse intégrer à mon propre document.",
+      "Beaucoup d'acheteurs ne cherchent pas un produit, ils cherchent un fichier. Une fiche technique de serrure. Un modèle DraftSight ou DWG. Un objet BIM avec une ficha técnica. Un PDF exemple. Au fond, toutes ces demandes sont la même : donnez-moi quelque chose que je puisse intégrer à mon propre document.",
       "Voici donc l'inventaire honnête, par ordre de ce qui existe.",
       "Fichiers SVG cotés : 84 pour des références HYDE, sur 613 fiches du catalogue. Parmi eux, 72 figurent sur les 546 fiches produits avec photos que les acheteurs peuvent parcourir ; les 12 autres appartiennent à des fiches non répertoriées. Les dessins montrent les cotes étayées par les données sources publiées. Ce sont des vues produit, pas des gabarits de préparation de porte. Une position de trou devinée est pire que pas de dessin, car on risque d'y croire.",
       "Caractéristiques : sur chaque page produit, sous forme de tableau plutôt que de prose. Axe, entraxe, matériau, codes de finition, endurance quand elle a été testée, plage d'épaisseur de porte, sens d'ouverture. Quand une valeur manque, elle manque ; elle n'est pas estimée. S'il vous les faut dans un tableur plutôt que sur une page, demandez-les, et nous vous les enverrons.",
@@ -2299,9 +2310,9 @@
   },
   "what-oem-actually-changes": {
     "title": "Ce que l'OEM change réellement, et ce qu'il ne change pas",
-    "summary": "Mettre votre marque sur une serrure, ce sont 4 décisions distinctes : l'emballage et le marquage, la marque sur la pièce, la finition, et la pièce elle-même. Seule la quatrième demande un moule. Les changements d'emballage et de finition suivent le délai catalogue, à partir de 30 jours après confirmation de commande ; une matrice modifiée ajoute la modification ; un moule neuf demande 3 à 5 mois avant que la production puisse commencer. Cet article liste ce qu'il faut envoyer pour chacune des 4, pour que la première réponse soit une vraie réponse.",
+    "summary": "Mettre votre marque sur une serrure, ce sont 4 décisions distinctes : l'emballage et le marquage, la marque sur la pièce, la finition, et la pièce elle-même. Seule la quatrième demande un moule. Cet article liste ce qu'il faut envoyer pour chacune des 4, pour que la première réponse soit une vraie réponse.",
     "seoTitle": "Quincaillerie OEM et marque propre : ce qui change",
-    "seoDescription": "Quincaillerie OEM et marque propre : emballage et finition dès 30 jours, un logo sur la pièce modifie une matrice, un moule neuf prend trois à cinq mois.",
+    "seoDescription": "Quincaillerie OEM et marque propre : emballage et marquage, logo sur la pièce, finition ou pièce elle-même. Ce que chacun change et quoi envoyer.",
     "body": [
       "« Faites-vous de l'OEM ? » est la question la plus fréquente que reçoit notre service export, et la moins utile, car la réponse est toujours oui et ne règle rien. Ce que l'acheteur a réellement besoin de savoir, c'est laquelle de quatre choses différentes il demande, puisqu'elles se situent à quatre points très différents de l'échelle des coûts et des délais.",
       "La première est l'emballage et le marquage. Votre logo sur la boîte, vos marquages de cartons, vos codes-barres, votre notice, votre langue. Rien ne change dans la quincaillerie ; ce qui change, c'est ce qui arrive sur la palette et ce qu'un client voit en rayon. C'est de loin la forme de marque propre la moins chère, et pour un distributeur qui construit sa marque maison, c'est souvent tout ce qu'il faut.",
@@ -2309,7 +2320,7 @@
       "La troisième est la finition. Notre catalogue publie laiton poli, laiton vieilli, nickel satiné, chrome satiné, nickel noir, et inox satiné et poli, et une finition absente de la liste standard d'un modèle donné relève généralement du planning plutôt que du développement, car la ligne de traitement de surface la pratique déjà pour autre chose. Une finition distinctive est le chemin le plus rapide vers un produit qui vous ressemble plutôt qu'à tout le monde, et elle n'exige aucun nouveau moule.",
       "La quatrième est la pièce elle-même : un profil de béquille, une forme de rosace, une plaque, un axe, un coffre. C'est là qu'interviennent moules et outils, et là que la réponse honnête cesse d'être générale. Si un moule existe pour la forme souhaitée, nous la produisons. Sinon, nous en taillons un, et le coût d'outillage, le délai d'échantillonnage et la quantité minimale qui rend une série sur mesure rentable dépendent entièrement de la pièce. Une rosace n'est pas un coffre de serrure. Nous les chiffrons projet par projet plutôt que de publier une fourchette, car une fourchette assez large pour être vraie serait trop large pour être utile.",
       "Ce qui rend ce quatrième cas praticable ici, plutôt qu'un projet spécial, c'est que l'outillage de notre catalogue nous appartient. C'est la différence entre une usine et un bureau de négoce posté devant elle : quand l'outil est dans vos murs, un changement de profil de béquille est une décision de production prise par des gens qui peuvent aller jusqu'à la presse. Sinon, la même demande devient un e-mail à un tiers dont vous ne maîtrisez ni le planning ni la qualité, et si un acheteur n'obtient pas de réponse claire sur le délai, c'est généralement que celui qui répond n'en a pas non plus.",
-      "Partez de ce que vous avez plutôt que d'un cahier des charges. Un échantillon physique est l'idéal ; un plan vaut presque autant ; une photo avec une cote écrite dessus suffit pour commencer. Notre équipe technique reviendra vers vous avec ce qu'il faut pour le fabriquer, et vous dira clairement quand votre demande correspond à un nouveau moule plutôt qu'à une variante, car entre ces deux réponses il y a des semaines, et mieux vaut le savoir dès le départ.",
+      "Partez de ce que vous avez plutôt que d'un cahier des charges. Un échantillon physique est l'idéal ; un plan vaut presque autant ; une photo avec une cote écrite dessus suffit pour commencer.",
       "## Ce qu'il faut envoyer, pour chacun des quatre cas",
       "Chaque type de travail OEM part d'éléments différents, et une demande accompagnée des bons éléments obtient une vraie réponse dès la première réponse plutôt qu'à la troisième.",
       "Emballage et marquage : votre logo en fichier vectoriel plutôt qu'en capture d'écran ; le texte de marquage des cartons pour chaque marché, dans la langue où il sera lu ; vos numéros de codes-barres ; la notice, ou le texte que vous voulez y voir figurer ; et le nombre de pièces souhaité par boîte intérieure et par carton extérieur. Sur les codes-barres, un point qui évite des ennuis plus tard : les numéros appartiennent au propriétaire de la marque et vous sont attribués par votre organisme national de codification. Nous imprimons les numéros que vous nous donnez ; nous ne pouvons pas vous les attribuer, et un code emprunté à la plage de quelqu'un d'autre finira par être rejeté par le système d'un distributeur.",
@@ -2321,14 +2332,13 @@
       "Un rapport d'essai ou un certificat nomme le produit testé, par la référence du fabricant. Notre propre rapport d'essai EN 1125, par exemple, couvre un seul modèle, le KD070/30-290, comme indiqué sur notre page certifications. Si ce dispositif était vendu sous votre marque comme, disons, votre modèle EX-200, un contrôleur tenant votre dossier de soumission et notre rapport verrait deux références différentes sans lien entre elles. Le certificat serait authentique et ne répondrait pourtant pas à la question.",
       "La solution est administrative et peu coûteuse, et elle doit être mise en place dès la première commande : tenez une table de correspondance qui associe chacune de vos références aux nôtres, et faites figurer les deux sur tout dossier de soumission ou dossier technique où un certificat est cité. Elle vous protège aussi dans l'autre sens : si un composant change de notre côté, la table vous dit lesquels de vos produits sont concernés.",
       "## Ce que la marque propre ne change pas",
-      "Mieux vaut être clair sur les limites, car c'est la partie de l'OEM qu'on suppose le plus souvent au lieu de la demander. Rebaptiser un produit catalogue ne change ni ses performances ni ce selon quoi il a été testé ; ses preuves restent attachées au modèle pour lequel elles ont été émises. Modifier la pièce elle-même est différent. Un nouveau profil de béquille sur un mécanisme existant a généralement un effet esthétique, mais un coffre, un pêne ou un mécanisme modifié constitue un nouveau produit au regard des essais, et tout ce qu'un certificat couvrait doit être réexaminé. Notre article expliquant l'étendue du catalogue décrit cette séquence, et notre article sur l'outillage d'une nouvelle fermeture anti-panique en donne le calendrier.",
-      "Le délai suit la même logique. Un changement d'emballage ou de finition suit le délai catalogue, qui commence à 30 jours après confirmation de commande. Un outil modifié ajoute le temps de la modification. Un moule neuf demande trois à cinq mois avant que la production puisse commencer.",
+      "Mieux vaut être clair sur les limites, car c'est la partie de l'OEM qu'on suppose le plus souvent au lieu de la demander. Rebaptiser un produit catalogue ne change ni ses performances ni ce selon quoi il a été testé ; ses preuves restent attachées au modèle pour lequel elles ont été émises. Modifier la pièce elle-même est différent. Un nouveau profil de béquille sur un mécanisme existant a généralement un effet esthétique, mais un coffre, un pêne ou un mécanisme modifié constitue un nouveau produit au regard des essais, et tout ce qu'un certificat couvrait doit être réexaminé.",
       "## Approuver l'échantillon auquel tout sera comparé",
       "Tout programme de marque propre devrait disposer d'une référence physique conservée par les deux parties : un échantillon de présérie, approuvé par écrit, avec la finition, le marquage et l'emballage exactement tels qu'ils seront produits. La première commande est contrôlée par rapport à lui, et chaque réassort ensuite. Sans cet échantillon, la deuxième commande est jugée d'après le souvenir que quelqu'un garde de la première, et de petites dérives de couleur ou de marquage deviennent des disputes plutôt que des mesures.",
       "Demandez que l'échantillon soit scellé ou étiqueté avec la date et la commande qu'il a validée, rangez le vôtre en lieu sûr où on le retrouvera encore dans deux ans, et envoyez-en un nouveau à approuver chaque fois qu'un élément de la prescription change.",
       "## Qui possède quoi",
-      "Trois points méritent d'être réglés par écrit avant la production plutôt que supposés. Vos visuels et vos numéros de codes-barres vous appartiennent, et il est raisonnable de faire écrire qu'ils ne servent qu'à vos commandes. Les moules et outils taillés pour votre pièce font l'objet de leur propre accord (qui paie, à qui ils appartiennent, s'ils sont exclusifs, et ce qu'ils deviennent quand les commandes s'arrêtent), et notre article sur l'outillage d'une nouvelle fermeture anti-panique passe en revue ces quatre questions. Enfin, l'exclusivité sur une forme ou une finition se convient pour un produit et un marché définis ; elle ne découle pas du fait de l'avoir demandée en premier.",
-      "Deux points à fixer avant tout le reste, dans chacun des quatre cas. Confirmez la fonction et le sens d'ouverture nécessaires, car ET, BK et PS sont des fonctions et non des finitions, et une commande entière dans la mauvaise est inutilisable. Et confirmez la finition sur chaque article de l'ensemble : si la béquille est noire, les paumelles, l'entrée de cylindre et les vis visibles doivent l'être aussi ; les finitions mélangées sur une même porte sont l'erreur que nous relevons le plus souvent sur une première commande de marque propre. Le délai de production commence à 30 jours après confirmation de commande ; la date exacte dépend des modèles, des quantités et des finitions de votre commande."
+      "Trois points méritent d'être réglés par écrit avant la production plutôt que supposés. Vos visuels et vos numéros de codes-barres vous appartiennent, et il est raisonnable de faire écrire qu'ils ne servent qu'à vos commandes. Les moules et outils taillés pour votre pièce font l'objet de leur propre accord (qui paie, à qui ils appartiennent, s'ils sont exclusifs, et ce qu'ils deviennent quand les commandes s'arrêtent). Enfin, l'exclusivité sur une forme ou une finition se convient pour un produit et un marché définis ; elle ne découle pas du fait de l'avoir demandée en premier.",
+      "Deux points à fixer avant tout le reste, dans chacun des quatre cas. Confirmez la fonction et le sens d'ouverture nécessaires, car ET, BK et PS sont des fonctions et non des finitions, et une commande entière dans la mauvaise est inutilisable. Et confirmez la finition sur chaque article de l'ensemble : si la béquille est noire, les paumelles, l'entrée de cylindre et les vis visibles doivent l'être aussi."
     ],
     "faq": [
       {
@@ -2345,7 +2355,7 @@
       },
       {
         "question": "Que faut-il fixer avant toute commande de marque propre ?",
-        "answer": "La fonction et le sens d'ouverture, car ET, BK et PS sont des fonctions et non des finitions, et une commande entière dans la mauvaise est inutilisable. Et la finition sur chaque article de l'ensemble : si la béquille est noire, les paumelles, l'entrée de cylindre et les vis visibles doivent l'être aussi. Les finitions mélangées sur une même porte sont l'erreur que nous relevons le plus souvent sur une première commande de marque propre. Le délai de production commence à 30 jours après confirmation de commande."
+        "answer": "La fonction et le sens d'ouverture, car ET, BK et PS sont des fonctions et non des finitions, et une commande entière dans la mauvaise est inutilisable. Et la finition sur chaque article de l'ensemble : si la béquille est noire, les paumelles, l'entrée de cylindre et les vis visibles doivent l'être aussi."
       },
       {
         "question": "Un produit sous marque propre conserve-t-il la certification du fabricant ?",
@@ -2353,7 +2363,7 @@
       },
       {
         "question": "Que faut-il envoyer pour un emballage sous marque propre ?",
-        "answer": "Votre logo en fichier vectoriel, le texte de marquage des cartons pour chaque marché dans sa langue, vos numéros de codes-barres, le texte de la notice, et les quantités souhaitées par boîte intérieure et par carton. Les numéros de codes-barres doivent être les vôtres, attribués à votre marque par votre organisme national de codification : nous imprimons les numéros fournis, mais ne pouvons pas les attribuer. Les changements d'emballage suivent le délai catalogue, qui commence à 30 jours après confirmation de commande."
+        "answer": "Votre logo en fichier vectoriel, le texte de marquage des cartons pour chaque marché dans sa langue, vos numéros de codes-barres, le texte de la notice, et les quantités souhaitées par boîte intérieure et par carton. Les numéros de codes-barres doivent être les vôtres, attribués à votre marque par votre organisme national de codification : nous imprimons les numéros fournis, mais ne pouvons pas les attribuer."
       }
     ],
     "sourceHash": {
@@ -2361,8 +2371,8 @@
       "summary": "022466a8bc3f",
       "seoTitle": "67b353783478",
       "seoDescription": "50dfd4040e73",
-      "body": "1474dfdb6922",
-      "faq": "712704303255"
+      "body": "f4e81dbc57c5",
+      "faq": "02527e9b6341"
     }
   },
   "why-the-catalogue-is-this-wide": {

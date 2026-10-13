@@ -160,7 +160,7 @@
   },
   "certification-and-test-validation-2026": {
     "title": "Beschlag-Zertifikate prüfen 2026: Die sieben Bestandteile, Leistungserklärung und CE-Kennzeichnung, die sechs Warnsignale",
-    "summary": "Ein echtes Prüfzertifikat enthält 7 Teile: das ausstellende Labor mit Anschrift, seine Akkreditierungsnummer, die Norm mit Jahr, eine Bericht- oder Zertifikatsnummer, Ausstellungsdatum und Gültigkeit, den Anwendungsbereich und die geprüfte Konfiguration. Der Anwendungsbereich fehlt am häufigsten, und alle 7 zu prüfen dauert etwa 5 Minuten. Diese Seite erklärt auch Akkreditierung gegenüber Zertifizierung sowie CE-Kennzeichnung mit Leistungserklärung, nennt 6 Warnzeichen und sagt, was wir haben: Unsere Panikverschlüsse 307 und 311 sind in der Prüfung, und solange es keine Zertifikatsnummern gibt, beanspruchen wir für sie keine Klassifizierung.",
+    "summary": "Ein echtes Prüfzertifikat enthält 7 Teile: das ausstellende Labor mit Anschrift, seine Akkreditierungsnummer, die Norm mit Jahr, eine Bericht- oder Zertifikatsnummer, Ausstellungsdatum und Gültigkeit, den Anwendungsbereich und die geprüfte Konfiguration. Der Anwendungsbereich fehlt am häufigsten, und alle 7 zu prüfen dauert etwa 5 Minuten. Diese Seite erklärt auch Akkreditierung gegenüber Zertifizierung sowie CE-Kennzeichnung mit Leistungserklärung, nennt 6 Warnzeichen und sagt, was wir haben: Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate, und solange es keine Zertifikatsnummern gibt, beanspruchen wir für sie keine Klassifizierung.",
     "seoTitle": "Beschlag-Zertifikat prüfen: DoP, CE | Canton Hyland",
     "seoDescription": "Beschlag-Zertifikat prüfen: sieben Pflichtangaben, DoP und CE-Kennzeichnung, sechs Warnsignale und die Fünf-Minuten-Prüfung im Register des Ausstellers.",
     "body": [
@@ -207,9 +207,24 @@
       "„Deckt der Anwendungsbereich diese Größe und Ausführung ab?“ – nennen Sie Ihre Türblattgröße, Ihre Zargenart, Ihren Beschlagsatz.",
       "„Können wir neben dem Zertifikat auch den Prüfbericht bekommen?“ – die Bitte, die den Inhaber vom Weiterreicher trennt.",
       "Lautet die Antwort auf die erste Frage, dass das Produkt nicht zertifiziert ist, ist das eine brauchbare Antwort und für die Anwendung oft die richtige. Das Problem ist nicht ein unzertifiziertes Produkt, sondern ein unzertifiziertes Produkt, das beschrieben wird, als wäre es zertifiziert – und genau das erkennen die sechs Warnsignale oben.",
+      "## Wie man ein Zertifikat für Türbeschläge überprüft",
+      "Die Fünf-Minuten-Prüfung oben gilt für jedes Zertifikat. Bei Türbeschlägen begegnen einem vor allem vier Arten von Dokumenten, und jede hat ihren eigenen öffentlichen Ort, an dem man sie nachschlagen kann.",
+      "| Dokument | Ausgestellt von | Wo prüfen | Was übereinstimmen muss |\n| --- | --- | --- | --- |\n| CE-Kennzeichnung mit Kennnummer der notifizierten Stelle | Der Hersteller; die Nummer bezeichnet die notifizierte Stelle | NANDO, die Datenbank der Europäischen Kommission für notifizierte Stellen | Die Stelle ist nach der Bauproduktenverordnung notifiziert |\n| Leistungserklärung (DoP) | Der Hersteller | Der Hersteller selbst, der sie bereitstellen muss | Produkttyp, harmonisierte Norm, erklärte Klassifizierung, Kennnummer der notifizierten Stelle |\n| Zertifikat nach ISO 9001 | Eine akkreditierte Zertifizierungsstelle | IAF CertSearch oder das Register der Zertifizierungsstelle | Firmenname, Anschrift, Geltungsbereich und Ablaufdatum |\n| UL-Listung | UL | UL Product iQ, Suche nach File-Nummer | Firma, Produktkategorie und Modell |",
+      "CE-Kennzeichnung: Die vierstellige Nummer neben dem CE-Zeichen oder auf dem Zertifikat bezeichnet die notifizierte Stelle. Suchen Sie diese Nummer in NANDO und lesen Sie den Eintrag: den Namen der Stelle und die Rechtsvorschrift, für die sie notifiziert ist. Für Türbeschläge ist das die Bauproduktenverordnung. Eine Nummer, die in NANDO nicht vorkommt, oder eine Stelle, die nur für andere Rechtsvorschriften notifiziert ist, kann keine CE-Kennzeichnung auf Panik- oder Notausgangsverschlüssen stützen.",
+      "Prüfbericht, Zertifikat und DoP sind drei verschiedene Dokumente. Der Prüfbericht hält fest, was ein Labor an einem Muster gemessen hat. Das Zertifikat der Leistungsbeständigkeit ist die Erklärung der notifizierten Stelle, dass sie den Produkttyp bewertet hat und die werkseigene Produktionskontrolle überwacht. Die DoP ist die eigene Erklärung des Herstellers nach der Bauproduktenverordnung: Sie nennt die erklärte Leistung und die notifizierte Stelle. Paniktürverschlüsse nach EN 1125, Notausgangsverschlüsse nach EN 179 und Feuerschutztüren nach EN 16034, deren Feuerwiderstand nach EN 1634-1 geprüft wird, fallen unter harmonisierte Normen und werden deshalb mit einer DoP auf den europäischen Markt gebracht. Ein Prüfbericht, der dort angeboten wird, wo eine DoP verlangt ist, belegt, dass eine Prüfung stattgefunden hat, nicht eine Erklärung, für die jemand einsteht.",
+      "ISO 9001: Sie zertifiziert ein Managementsystem, kein Produkt, und sagt deshalb nichts darüber, ob ein Schloss EN 12209 oder ein Türschließer EN 1154 erfüllt. Prüfen lohnt sich trotzdem, in drei Schritten. Zuerst der Aussteller: Das Zertifikat sollte das Akkreditierungszeichen einer nationalen Akkreditierungsstelle tragen, die das multilaterale Anerkennungsabkommen des IAF unterzeichnet hat, etwa UKAS im Vereinigten Königreich, die DAkkS in Deutschland, ANAB in den USA oder CNAS in China. Dann das Zertifikat: Suchen Sie die Nummer in IAF CertSearch oder im Register der Zertifizierungsstelle. Für ein in China ausgestelltes Zertifikat bietet auch die CNCA, die nationale Zertifizierungsbehörde, eine öffentliche Abfrage. Schließlich der Inhalt: Firmenname und Anschrift, Geltungsbereich und Ablaufdatum müssen zum Lieferanten und zu dem Produkt passen, das Sie kaufen.",
+      "Ein Zertifikat nach ISO 9001 läuft in einem Dreijahreszyklus mit Überwachungsaudits dazwischen und kann zwischen zwei Audits ausgesetzt oder zurückgezogen werden. Das PDF ändert sich dabei nicht, das Register schon.",
+      "UL: Eine Listung prüft man in UL Product iQ anhand der File-Nummer, der Referenz, die ein gelisteter Hersteller sofort nennen kann. Der Eintrag zeigt Firma, Produktkategorie und die gelisteten Produkte. „UL tested“, „geprüft nach UL 10C“ oder „erfüllt UL-Normen“ ohne File-Nummer ist keine Listung. Zu einer Listung gehört außerdem die Überwachung: UL inspiziert die Fertigung regelmäßig, um zu bestätigen, dass sie noch dem Gelisteten entspricht, und genau das unterscheidet eine Listung von einer einmaligen Prüfung. Das Zeichen UL Recognized Component ist noch enger: Es gilt für ein Bauteil, das in ein gelistetes Produkt eingebaut wird, nicht für einen fertigen Artikel zur eigenständigen Montage.",
+      "Geprüft, zertifiziert und gelistet sind drei verschiedene Aussagen. Geprüft heißt, ein Labor hat ein Muster geprüft und einen Bericht geschrieben. Zertifiziert heißt, eine Stelle hat das Produkt anhand einer Norm bewertet und überwacht diese Aussage weiter. Gelistet heißt, das Produkt steht im öffentlichen Verzeichnis des Zertifizierers und unterliegt Folgeinspektionen. In jedem Fall deckt der Nachweis das Modell und die Konfiguration ab, die bewertet wurden. Ein Bericht über eine Drückergarnitur erstreckt sich nicht auf einen anderen Drücker, ein anderes Schlossgehäuse oder eine andere Oberfläche, nur weil sie auf derselben Katalogseite stehen.",
+      "Bei der Abfrage gibt es vier Ergebnisse, bei denen Sie aufhören sollten:",
+      "Der Name stimmt nicht: Das Zertifikat lautet auf einen anderen Namen als die Firma des Lieferanten, und niemand erklärt die Beziehung.",
+      "Die Daten sind abgelaufen: Das Ablaufdatum liegt hinter Ihnen, oder das Register zeigt einen Status, den das PDF nicht zeigt.",
+      "Der Geltungsbereich deckt etwas anderes ab: ein Geltungsbereich nach ISO 9001 für Handel statt Herstellung, eine andere Norm als die in Ihrer Ausschreibung genannte oder eine Produktfamilie, zu der Ihr Modell nicht gehört.",
+      "Nichts lässt sich nachschlagen: keine Nummer zum Suchen, kein Register, das sie enthält, oder ein Registereintrag, den der Lieferant Ihnen nicht nennen kann. Ein Zertifikat, das sich nicht prüfen lässt, ist kein Nachweis.",
+      "Dieselbe Prüfung gilt für uns. Unser Stanzwerk ist nach ISO 9001:2015 zertifiziert, Zertifikat 69125Q0026****, gültig bis 29. Oktober 2028. Fordern Sie das vollständige Zertifikat bei uns an und prüfen Sie es so, wie dieser Abschnitt es beschreibt: Aussteller, Akkreditierung, Firmenname, Geltungsbereich und Ablaufdatum.",
       "## Was wir haben, klar gesagt",
       "Wo eines unserer Produkte geprüft wurde und ein Zertifikat existiert, nennt die Produktseite Norm, Klassifizierung und Anwendungsbereich, und das Zertifikat ist auf Anfrage erhältlich. Unsere Dokumentenseite führt Prüfunterlagen als „auf Anfrage“ statt als veröffentlicht, und das ist wörtlich gemeint: Wir senden, was für genau die Modelle existiert, nach denen Sie fragen.",
-      "Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung: Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung andeuten – nicht in einer Beschreibung, nicht in einem Vergleich und nicht dadurch, dass eine Normnummer neben einem Produkt steht, das nicht danach geprüft wurde.",
+      "Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate: Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung andeuten – nicht in einer Beschreibung, nicht in einem Vergleich und nicht dadurch, dass eine Normnummer neben einem Produkt steht, das nicht danach geprüft wurde.",
       "Wir verwenden auch kein Zertifikat eines anderen Herstellers, um unser eigenes Produkt zu beschreiben. Ein Zertifikat gehört zu der Baugruppe, für die es ausgestellt wurde. Eines zu entleihen ist derselbe Fehler wie ein erfundenes Maß – das Argument unserer Seiten zu Maßen, übertragen auf Papier.",
       "## Warum ein Lieferant die Prüfung begrüßen sollte",
       "Die Fünf-Minuten-Prüfung oben wird manchmal als Misstrauen gelesen. Sie ist das Gegenteil: Sie ist das Einzige, was ein echtes Zertifikat wertvoller macht als einen selbstbewussten Satz.",
@@ -238,8 +253,16 @@
         "answer": "Ein Logo ohne Zertifikatsnummer (mit Abstand das häufigste). Ein Zertifikat auf einen anderen Namen als den des Lieferanten, das als eigenes präsentiert wird. „Geprüft nach“ statt „zertifiziert nach“. Ein Anwendungsbereich, der Ihre Größe oder Ausführung nicht nennt. Ein Zertifikat für eine vage „Serie“. Und die Weigerung, den zugrunde liegenden Bericht vorzulegen."
       },
       {
+        "question": "Wie prüfe ich ein CE-Zeichen, ein Zertifikat nach ISO 9001 oder eine UL-Listung nach?",
+        "answer": "CE: Suchen Sie die vierstellige Kennnummer der notifizierten Stelle in NANDO, der Datenbank der Europäischen Kommission, und fordern Sie beim Hersteller die Leistungserklärung an. ISO 9001: Prüfen Sie, ob die Zertifizierungsstelle akkreditiert ist, suchen Sie dann die Zertifikatsnummer in IAF CertSearch oder im Register des Ausstellers und gleichen Sie Firmenname, Geltungsbereich und Ablaufdatum ab. UL: Suchen Sie die File-Nummer in UL Product iQ. „UL tested“ ohne File-Nummer ist keine Listung."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen geprüft, zertifiziert und gelistet?",
+        "answer": "Geprüft heißt, ein Labor hat ein Muster geprüft und einen Bericht geschrieben. Zertifiziert heißt, eine Stelle hat das Produkt anhand einer Norm bewertet und überwacht die Aussage weiter. Gelistet heißt, das Produkt steht im öffentlichen Verzeichnis des Zertifizierers, mit Folgeinspektionen der Fertigung. Jedes davon deckt nur das bewertete Modell und die bewertete Konfiguration ab."
+      },
+      {
         "question": "Haben Ihre Panikverschlüsse eine Feuerschutzzertifizierung?",
-        "answer": "Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung andeuten. Wo ein Produkt geprüft wurde, nennt die Seite Norm, Klassifizierung und Anwendungsbereich, und das Zertifikat ist auf Anfrage erhältlich."
+        "answer": "Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung andeuten. Wo ein Produkt geprüft wurde, nennt die Seite Norm, Klassifizierung und Anwendungsbereich, und das Zertifikat ist auf Anfrage erhältlich."
       }
     ],
     "sourceHash": {
@@ -247,8 +270,8 @@
       "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
-      "body": "57e62f3e9f1a",
-      "faq": "fc86e6f3ef20"
+      "body": "fb2446f018d3",
+      "faq": "9ae909fed245"
     }
   },
   "chrome-finish-differences-2026": {
@@ -299,7 +322,7 @@
       "In 336 veröffentlichten Oberflächenzeilen ist dieselbe Oberfläche auf mehrere Arten geschrieben. „Satin Nickel (SN)“ erscheint 41-mal und „Satin nickel“ weitere 38-mal. „Polished Brass (PB)“ erscheint 68-mal, „polished brass“ 19-mal und „Polished brass (US3)“ 16-mal. Chrom erscheint als „Chrome Plated (CP)“ 51-mal, als „Satin Chrome (SC)“ 18-mal und als bloßes „chrome“ 17-mal.",
       "| Geschrieben als | Zeilen |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| „chrome“, ohne Code | 17 |\n| Satin Nickel (SN) | 41 |\n| „Satin nickel“, ohne Code | 38 |",
       "Das sind keine verschiedenen Oberflächen. Es ist eine Oberfläche, uneinheitlich geschrieben, und die Zeilen ohne Code sind die, nach denen ein Einkäufer nicht nachbestellen kann. Das ist das Argument dieser ganzen Seite, auf uns selbst angewendet.",
-      "Die Zeilen werden anhand der Codetabelle auf unserer Seite zu Oberflächencodes vereinheitlicht, statt sich selbst überlassen zu bleiben. Bis dahin: Nehmen Sie den Code, wo eine Zeile einen hat, und fragen Sie nach, wo nicht.",
+      "Nehmen Sie den Code, wo eine Zeile einen hat, und fragen Sie nach, wo nicht.",
       "Wo unsere Zeilen den Code tragen, zitieren Sie ihn so, wie er dasteht: Die Griffgarnitur 70722 DC ist in Nickel satiniert (US15) veröffentlicht, und der Profilzylinder 65SN führt verchromt (CP) und Chrom satiniert (SC) unter seinen Oberflächen.",
       "## Chrom so angeben, dass Sie zweimal dasselbe bekommen",
       "Geben Sie den Code an, nicht den Namen. US26D oder 626, nicht „Chrom matt“.",
@@ -331,7 +354,7 @@
       },
       {
         "question": "Nennen Ihre Produktseiten Oberflächencodes?",
-        "answer": "Uneinheitlich, und hier ist der richtige Ort, das zu sagen. In 336 Oberflächenzeilen ist dieselbe Oberfläche auf mehrere Arten geschrieben: „Satin Nickel (SN)“ 41-mal und „Satin nickel“ weitere 38-mal, Chrom als „Chrome Plated (CP)“, „Satin Chrome (SC)“ und bloßes „chrome“. Nach Zeilen ohne Code können Sie nicht nachbestellen. Sie werden anhand unserer Tabelle der Oberflächencodes vereinheitlicht."
+        "answer": "Uneinheitlich, und hier ist der richtige Ort, das zu sagen. In 336 Oberflächenzeilen ist dieselbe Oberfläche auf mehrere Arten geschrieben: „Satin Nickel (SN)“ 41-mal und „Satin nickel“ weitere 38-mal, Chrom als „Chrome Plated (CP)“, „Satin Chrome (SC)“ und bloßes „chrome“. Nach Zeilen ohne Code können Sie nicht nachbestellen."
       }
     ],
     "sourceHash": {
@@ -339,8 +362,8 @@
       "summary": "6619ce04a91d",
       "seoTitle": "b665add1ab44",
       "seoDescription": "c9aca5929017",
-      "body": "013c8ffc451a",
-      "faq": "1fdc19bda3a8"
+      "body": "480c8ee253cd",
+      "faq": "1c0b0c9b25f8"
     }
   },
   "commercial-lock-function-decision-2026": {
@@ -753,7 +776,7 @@
       "## Tubular-Schlösser nach Serie",
       "Alle 26 Tubular-Datensätze teilen dieselben Kernzeilen: Dornmaß 60/70mm verstellbar, Tür 35 bis 45mm, 200.000 Zyklen, Chassis und Fallengehäuse aus massivem Stahl, verzinkt, und ein Schließblech mit 57mm gebogener Lippe als Standard, 70mm-Lippe auf Anfrage. Die Serien unterscheiden sich in Oberfläche und Funktion; der 26. Datensatz mit dem Titel Tubular-Knaufschloss teilt die Kernzeilen, nennt aber weder Funktion noch Oberfläche.",
       "| Serie | Varianten | Funktionen | Veröffentlichte Oberflächen |\n| --- | --- | --- | --- |\n| 575 | 4 | Eingang | Messing antik, Kupfer antik, Edelstahl matt; die Zeile 575 CPET listet das ganze Sortiment |\n| 592 | 5 | Eingang, WC, Durchgang | Messing matt, Messing poliert, Edelstahl matt |\n| 595 | 2 | Eingang, WC | Kupfer antik |\n| 598 | 5 | Eingang, WC | Kupfer antik, Nickel matt, Edelstahl matt |\n| 607 | 7 | Eingang, WC, Durchgang | Kupfer antik, Messing poliert, Edelstahl poliert und matt |\n| 609 | 2 | Eingang | Messing poliert, Edelstahl matt |",
-      "Die 575 ist die Serie, die ihre Falle vollständig angibt: 12mm Vorschub, bei den Schlüsselfunktionen mit Fallensperre. Die 607 ist das breiteste Set, mit allen drei Funktionen und der Oberfläche Edelstahl poliert (US32), die keine andere Tubular-Serie führt. Sieben 607-Datensätze haben eine Fallenzeile, die das Dornmaß wiederholt (Adjustable 60 to 70mm), statt die Falle zu beschreiben. Wir korrigieren das; bis dahin gelten die Werte der 575 als die, die wir für die Falle bestätigen können.",
+      "Die 575 ist die Serie, die ihre Falle vollständig angibt: 12mm Vorschub, bei den Schlüsselfunktionen mit Fallensperre. Die 607 ist das breiteste Set, mit allen drei Funktionen und der Oberfläche Edelstahl poliert (US32), die keine andere Tubular-Serie führt. Sieben 607-Datensätze haben eine Fallenzeile, die das Dornmaß wiederholt (Adjustable 60 to 70mm), statt die Falle zu beschreiben. Es gelten die Werte der 575 als die, die wir für die Falle bestätigen können.",
       "## Zylindrische Schlösser, leichte und hohe Beanspruchung",
       "Die zylindrischen Schlösser für leichte Beanspruchung sind die Serie 578 (vier Varianten) und die Serie 587 (sieben). Sie beschreiben den Zylinder im Detail (5-Stift-Zuhaltung mit Messingkern und zwei vernickelten Messingschlüsseln bei der 578; Massivmessing oder Zink und Messing bei der 587) und dass sie gleichschließend mit unseren Riegelschlössern oder in einer Hauptschlüsselanlage geliefert werden können. Dornmaß und Türdicke nennen sie nicht. Fragen Sie vor der Bestellung nach beidem: Es sind die zwei Zeilen, die entscheiden, ob das Schloss überhaupt in die Tür passt.",
       "Bei der Familie für hohe Beanspruchung sind die Lücken am größten. Von ihren 17 Datensätzen veröffentlichen 6 Spezifikationszeilen: 5831 SSET, 5870 ACET und 5870 SSET, 5871 SSET, 5874 ACET und der Datensatz mit dem Titel Zylindrisches Knaufschloss. Die übrigen 11 (die vier 5831-90mm-Farbvarianten, die vier 9210-Varianten, 5870 SNET, S578 und 587 SSPT) haben ein Foto und sonst nichts. Die vier 5831-90mm-Varianten teilen vermutlich das 90mm-Dornmaß des 5831 SSET, wie ihr Name nahelegt – doch ein Name ist keine Spezifikation. Wir bestätigen sie auf Anfrage anhand der Zeichnung.",
@@ -799,7 +822,7 @@
       "summary": "a1495f21fa4b",
       "seoTitle": "532b656512d1",
       "seoDescription": "01e047ebdecd",
-      "body": "fa881171daef",
+      "body": "ef05ec626d4b",
       "faq": "0fefb97329cc"
     }
   },
@@ -1325,7 +1348,7 @@
       "Ergibt der Gangflügel allein die geforderte lichte Breite, kann der Standflügel mit Riegeln gesichert werden, und die Tür braucht zusätzlich einen Schließfolgeregler, damit die Flügel in der richtigen Reihenfolge schließen. Unsere Seite zu Panikverschlüssen erklärt, warum eine zweiflügelige Tür beim Beschlag mehr als das Doppelte einer einflügeligen kostet.",
       "## Was wir haben und was nicht",
       "Unser Katalog führt 46 Produkte, die als Panik- oder Notausgangsbeschläge bezeichnet sind: 30 Geräte, 15 Außenbeschläge und einen Schlosskasten.",
-      "Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung: Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie EN 1125, EN 179, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben – nicht in einer Beschreibung, nicht in einem Vergleich und nicht dadurch, dass eine Normnummer neben einem Produkt steht, das nicht danach geprüft wurde.",
+      "Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate: Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie EN 1125, EN 179, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben – nicht in einer Beschreibung, nicht in einem Vergleich und nicht dadurch, dass eine Normnummer neben einem Produkt steht, das nicht danach geprüft wurde.",
       "In dieser Kategorie ist das mehr als in jeder anderen ein echter wirtschaftlicher Nachteil, denn Rettungswegbeschläge werden nach Zertifizierung gekauft. Wir tragen ihn lieber, als eine Klassifizierung zu schreiben, für die wir keine Zertifikatsnummer vorlegen können. Unsere Seite zur Prüfung von Zertifikaten erklärt genau, wie ein Einkäufer die Angaben jedes Anbieters prüfen sollte, unsere eingeschlossen.",
       "Verlangt ein Projekt heute eine Zertifizierung nach EN 1125 oder EN 179, fragen Sie uns, und wir sagen Ihnen klar, ob wir sie erfüllen können. Bei mehreren Modellen lautet die Antwort derzeit nein, und diese Antwort nützt Ihnen mehr, als es ein Angebot täte."
     ],
@@ -1352,7 +1375,7 @@
       },
       {
         "question": "Haben Ihre Panikverschlüsse EN 1125 oder EN 179?",
-        "answer": "Unsere 307 und 311 befinden sich in der Prüfung. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie EN 1125, EN 179, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Verlangt ein Projekt heute eine Zertifizierung, fragen Sie, und wir sagen klar, ob wir sie erfüllen können – bei mehreren Modellen lautet die Antwort derzeit nein."
+        "answer": "Unsere 307 und 311 haben derzeit keine Zertifikate. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie EN 1125, EN 179, eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Verlangt ein Projekt heute eine Zertifizierung, fragen Sie, und wir sagen klar, ob wir sie erfüllen können – bei mehreren Modellen lautet die Antwort derzeit nein."
       }
     ],
     "sourceHash": {
@@ -1360,8 +1383,8 @@
       "summary": "33a2e0481503",
       "seoTitle": "8c8fd4020bcb",
       "seoDescription": "bada04362fef",
-      "body": "333d1a4d9a9c",
-      "faq": "a828c5bf11fe"
+      "body": "6c01e210fc50",
+      "faq": "2550eed57126"
     }
   },
   "en-ansi-bhma-cross-reference-2026": {
@@ -1391,7 +1414,7 @@
       "Drittens unterscheidet sich der Druck bei der Brandprüfung. Die neutrale Druckebene in der europäischen und der nordamerikanischen Ofenprüfung ist nicht dieselbe, sodass sich ein Ergebnis nach EN 1634-1 selbst bei identischer Baugruppe nicht auf UL 10C oder NFPA 252 übertragen lässt. Das ist der technische Kern, warum ein europäisches Zertifikat für eine Feuerschutztür eine nordamerikanische Bauaufsicht nicht zufriedenstellt.",
       "Viertens sind die Oberflächencodes ein Benennungssystem, keine Leistungsklasse. US26D, BHMA 626 und ein Werkscode wie SN können alle dieselbe matte Oberfläche bezeichnen, und keiner nennt eine Korrosionsleistung. Das ist die Aufgabe von EN 1670, und ein Oberflächencode bringt keine Klasse nach EN 1670 mit.",
       "## Was wir haben, klar gesagt",
-      "Für bestimmte Modelle unseres Sortiments an Panikverschlüssen liegen Prüfberichte nach EN 1125 vor, viele davon auf den Namen unserer Kunden; Prüfungen nach CE und ANSI auf unseren eigenen Namen werden vorbereitet. ANSI/BHMA-Grade oder UL-Listungen haben wir für dieses Sortiment derzeit nicht. Zwei Modelle, 307 und 311, befinden sich in der Prüfung für die nordamerikanische Zertifizierung, und es gibt noch keine Zertifikatsnummer.",
+      "Für bestimmte Modelle unseres Sortiments an Panikverschlüssen liegen Prüfberichte nach EN 1125 vor. ANSI/BHMA-Grade oder UL-Listungen haben wir für dieses Sortiment derzeit nicht.",
       "Dieser Satz ist so formuliert, weil UL Product iQ und das Verzeichnis zertifizierter BHMA-Produkte beide öffentlich durchsuchbar sind und ein Planer Zertifikatsnummern in Freigabeunterlagen schreibt. Eine Angabe, die einer Suche nicht standhält, kostet mehr als der Auftrag, den sie gewinnen sollte.",
       "Braucht ein Projekt heute einen ANSI/BHMA-Grad oder eine UL-Listung, lautet die ehrliche Antwort, dass ein Prüfbericht nach EN 1125 sie nicht ersetzt – und das sagen wir lieber jetzt als nach dem Versand eines Containers.",
       "## Wie man eine Spezifikation schreibt, die in beiden Märkten funktioniert",
@@ -1421,7 +1444,7 @@
       },
       {
         "question": "Hat Canton Hyland eine ANSI- oder UL-Zertifizierung?",
-        "answer": "Für das Sortiment an Panikverschlüssen derzeit nicht. Für bestimmte Modelle liegen Prüfberichte nach EN 1125 vor, viele davon auf den Namen unserer Kunden, und Prüfungen nach CE und ANSI auf unseren eigenen Namen werden vorbereitet. Die Modelle 307 und 311 befinden sich in der Prüfung für die nordamerikanische Zertifizierung, und es gibt noch keine Zertifikatsnummer. UL Product iQ und das BHMA-Verzeichnis sind öffentlich durchsuchbar – deshalb wird das hier klar gesagt statt nur angedeutet."
+        "answer": "Für das Sortiment an Panikverschlüssen derzeit nicht. Für bestimmte Modelle liegen Prüfberichte nach EN 1125 vor. UL Product iQ und das BHMA-Verzeichnis sind öffentlich durchsuchbar – deshalb wird das hier klar gesagt statt nur angedeutet."
       }
     ],
     "sourceHash": {
@@ -1429,8 +1452,8 @@
       "summary": "036dd1b2d40c",
       "seoTitle": "be50fdd1bf25",
       "seoDescription": "ff3b59babad8",
-      "body": "5aafe49e187e",
-      "faq": "84c409c9a4d8"
+      "body": "db48756f798b",
+      "faq": "cacd264a54ab"
     }
   },
   "euro-cylinder-size-chart-2026": {
@@ -1531,7 +1554,7 @@
       "## Datensätze, die für einen Vergleich zu wenig veröffentlichen",
       "Neun Geräte haben ein Foto und eine Seite, aber zu wenige Zeilen für eine Tabelle: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S und SH01. Manche nennen einen Werkstoff und sonst nichts; beim 312 und beim SH01 ist der Werkstoff die einzige Zeile. Der 316-S teilt seine Bauzeilen mit dem 316-D (aufliegend montiert, umkehrbar), nicht aber seine Länge. Ist eines davon das Gerät, das Sie wollen, nennen Sie uns den Flügel, und wir bestätigen die Zeilen vor dem Angebot.",
       "## Feuerwiderstand auf diesen Seiten",
-      "Keiner dieser Datensätze nennt eine Feuerwiderstandsdauer. Drei taten es früher (1,5 Stunden beim 300 und 310, 2,5 Stunden beim 307); diese Angaben haben wir im Oktober 2026 entfernt. Eine Feuerwiderstandsdauer bedeutet nur etwas als Klassifizierung einer geprüften Türbaugruppe, benannt in einem Bericht oder einer Listung, und keiner der drei veröffentlicht einen solchen. Wir haben keine UL-Listung; der 307 und der 311 wurden zur Prüfung eingereicht, und solange es keine Zertifikatsnummern gibt, werden wir für sie weder eine Listung noch eine Klassifizierung andeuten. Unser Artikel zu UL 305 erklärt, was eine Listung ist und wie man sie prüft.",
+      "Keiner dieser Datensätze nennt eine Feuerwiderstandsdauer. Eine Feuerwiderstandsdauer bedeutet nur etwas als Klassifizierung einer geprüften Türbaugruppe, benannt in einem Bericht oder einer Listung, und keiner dieser Datensätze veröffentlicht einen solchen. Wir haben keine UL-Listung; der 307 und der 311 haben derzeit keine Zertifikate, und solange es keine Zertifikatsnummern gibt, werden wir für sie weder eine Listung noch eine Klassifizierung andeuten. Unser Artikel zu UL 305 erklärt, was eine Listung ist und wie man sie prüft.",
       "## Auswählen in vier Fragen",
       "Ein Flügel oder zwei? Eine zweiflügelige Tür ohne Mittelpfosten braucht Verriegelung oben und unten und einen Schließfolgeregler, was die Wahl auf die zweite Tabelle eingrenzt. Wie breit ist der Flügel? Das entscheidet die Länge und ob ein verstellbares oder ein nach Maß gefertigtes Gerät die wirtschaftliche Antwort ist. Braucht die Außenseite einen Schlüssel oder einen Drücker? Dann wählen Sie ein Gerät, das mit dem nötigen Außenbeschlag arbeitet, oder ein Set wie den 311, das ihn enthält. Und liegt die Tür an etwas anderem als einem gewöhnlichen Flur – ein Kühlraum oder ein Notausgang mit Alarm? Dann ist die Tabelle der Sonderzwecke der Ausgangspunkt.",
       "Schicken Sie diese vier Antworten mit Flügelgröße und Türdicke, und schon die erste Antwort kann ein Gerät und einen Außenbeschlag nennen. Schicken Sie ein Foto einer roten Stange, und die erste Antwort werden diese vier Fragen sein."
@@ -1555,7 +1578,7 @@
       },
       {
         "question": "Sind die Feuerwiderstandsangaben auf Ihren Seiten zu Panikverschlüssen zertifiziert?",
-        "answer": "Nein. Die Datensätze 300 und 310 nennen 1,5 Stunden und der 307 nennt 2,5 Stunden, doch eine Feuerwiderstandsdauer bedeutet nur etwas als Klassifizierung einer geprüften Türbaugruppe, benannt in einem Bericht oder einer Listung, und keiner veröffentlicht eine. Wir haben keine UL-Listung; der 307 und der 311 wurden zur Prüfung eingereicht, und wir werden keine Klassifizierung andeuten, solange es keine Zertifikatsnummern gibt."
+        "answer": "Nein. Keiner dieser Datensätze nennt eine Feuerwiderstandsdauer: Eine solche Dauer bedeutet nur etwas als Klassifizierung einer geprüften Türbaugruppe, die in einem Bericht oder einer Listung benannt ist. Wir haben keine UL-Listung und werden keine Klassifizierung andeuten, solange es keine Zertifikatsnummern gibt."
       },
       {
         "question": "Warum zeigen einige Ihrer Panikverschlüsse fast keine Spezifikationen?",
@@ -1567,8 +1590,8 @@
       "summary": "ec12a7dec293",
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
-      "body": "5cadd9a03a41",
-      "faq": "5dd27b52fa34"
+      "body": "32798ab2f09c",
+      "faq": "147c77b5742a"
     }
   },
   "exit-device-outside-trim-functions-2026": {
@@ -1621,7 +1644,7 @@
       "Das Modell des Außenbeschlags und seine Funktion, benannt.",
       "Tagesentriegelung: keine, mechanisch oder per Zylinder – und bei einer Feuerschutztür keine, mit angegebenem Feuerwiderstand, damit ein Gerät ohne diese Funktion gewählt wird.",
       "Türbreite und DIN-Richtung, denn die Länge der Stange folgt der Tür, und der Außenbeschlag ist häufig richtungsgebunden.",
-      "Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Deshalb behandelt diese Seite die Regel zur Tagesentriegelung an Feuerschutztüren allgemein, statt auf ein Produkt zu zeigen."
+      "Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Deshalb behandelt diese Seite die Regel zur Tagesentriegelung an Feuerschutztüren allgemein, statt auf ein Produkt zu zeigen."
     ],
     "faq": [
       {
@@ -1654,7 +1677,7 @@
       "summary": "60fee76e98a5",
       "seoTitle": "436da21c0bc4",
       "seoDescription": "a6d9f0d49bd2",
-      "body": "84b30a6ab3e4",
+      "body": "9a791a70c527",
       "faq": "7dac59076eed"
     }
   },
@@ -1725,7 +1748,7 @@
   },
   "fire-door-hardware-what-must-be-rated-2026": {
     "title": "Beschläge für Feuerschutztüren 2026: Welche Bauteile klassifiziert sein müssen, EN 1634-1 gegenüber UL 10C und NFPA 252, und was ein Zertifikat abdeckt",
-    "summary": "Alles, was an einer Feuerschutztür befestigt oder in sie eingeschnitten ist, muss Teil der geprüften Baugruppe sein: die Bänder, das Schloss oder die Falle, der Türschließer, Dämmschicht- und Rauchdichtungen, Panikverschlüsse, Verglasung und Glasleisten, Treibriegel und Schließfolgeregler bei zweiflügeligen Türen sowie die Befestigungen. Ein Zertifikat deckt nur die geprüfte Konfiguration und ihren Anwendungsbereich ab, und eine Klassifizierung nach EN 1634-1 ist kein UL-10C-Listing. Unsere Panikverschlüsse 307 und 311 sind in der Prüfung; solange es keine Zertifikatsnummern gibt, beanspruchen wir für sie keine Feuerwiderstandsklasse.",
+    "summary": "Alles, was an einer Feuerschutztür befestigt oder in sie eingeschnitten ist, muss Teil der geprüften Baugruppe sein: die Bänder, das Schloss oder die Falle, der Türschließer, Dämmschicht- und Rauchdichtungen, Panikverschlüsse, Verglasung und Glasleisten, Treibriegel und Schließfolgeregler bei zweiflügeligen Türen sowie die Befestigungen. Ein Zertifikat deckt nur die geprüfte Konfiguration und ihren Anwendungsbereich ab, und eine Klassifizierung nach EN 1634-1 ist kein UL-10C-Listing. Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate; solange es keine Zertifikatsnummern gibt, beanspruchen wir für sie keine Feuerwiderstandsklasse.",
     "seoTitle": "Feuerschutztür-Beschläge: EN 1634-1, UL 10C | Canton Hyland",
     "seoDescription": "Feuerschutztür: Bänder, Schloss, Schließer, Dichtungen, Panikverschlüsse und Befestigungen gehören zur geprüften Baugruppe. EN 1634-1 vs. UL 10C, EI vs. E.",
     "body": [
@@ -1758,7 +1781,7 @@
       "## Was wir führen, klar gesagt",
       "An dieser Stelle wird die Seite eines Lieferanten normalerweise vage, also werden wir konkret.",
       "Wo eines unserer Produkte als Teil einer Baugruppe mit Feuerschutzklassifizierung geprüft wurde und ein Zertifikat existiert, nennt die Produktseite Norm, Klassifizierung und Anwendungsbereich, und das Zertifikat ist auf Anfrage erhältlich.",
-      "Wo ein Produkt nicht geprüft wurde, sagt die Seite nichts über das Brandverhalten, und dieses Schweigen ist gewollt. Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben – nicht in einer Produktbeschreibung, nicht in einem Vergleich und nicht dadurch, dass eine Normnummer neben einem Produkt steht, das nicht danach geprüft wurde.",
+      "Wo ein Produkt nicht geprüft wurde, sagt die Seite nichts über das Brandverhalten, und dieses Schweigen ist gewollt. Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben – nicht in einer Produktbeschreibung, nicht in einem Vergleich und nicht dadurch, dass eine Normnummer neben einem Produkt steht, das nicht danach geprüft wurde.",
       "Wir verwenden auch kein Zertifikat, keine Listung und keinen Grad eines anderen Herstellers, um unser eigenes Produkt zu beschreiben. Ein Zertifikat gehört zu der Baugruppe, für die es ausgestellt wurde, und eines zu entleihen ist derselbe Fehler wie ein erfundenes Maß.",
       "## Die fünf Fragen an jeden Lieferanten",
       "Welche Norm und welche Klassifizierung – EI oder E und wie viele Minuten; oder UL 10C und welche Listungsnummer.",
@@ -1790,7 +1813,7 @@
       },
       {
         "question": "Haben Ihre Panikverschlüsse eine Feuerschutzklassifizierung?",
-        "answer": "Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Wo ein Produkt geprüft wurde, nennt die Seite Norm, Klassifizierung und Anwendungsbereich, und das Zertifikat ist auf Anfrage erhältlich."
+        "answer": "Unsere Panikverschlüsse 307 und 311 haben derzeit keine Zertifikate. Solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Wo ein Produkt geprüft wurde, nennt die Seite Norm, Klassifizierung und Anwendungsbereich, und das Zertifikat ist auf Anfrage erhältlich."
       }
     ],
     "sourceHash": {
@@ -1798,8 +1821,8 @@
       "summary": "0d5137abc4eb",
       "seoTitle": "75373f19512f",
       "seoDescription": "17d1d81eb4c7",
-      "body": "576f9a48e143",
-      "faq": "08c49558371c"
+      "body": "81815c180c5b",
+      "faq": "b0b02e48f87a"
     }
   },
   "glass-door-thickness-and-cutouts-2026": {
@@ -2681,7 +2704,7 @@
   },
   "qualifying-a-hardware-supplier-2026": {
     "title": "Beschlaglieferanten prüfen 2026: Werk, Händler oder Vermittler, die fünf Fragen, die sie unterscheiden, und was sich überprüfen lässt",
-    "summary": "5 Fragen trennen ein Werk von einem Handelshaus oder einem Vermittler: Welche Modelle stellen Sie selbst her; können Sie das Dornmaß dieses Modells ändern, und was kostet das Werkzeug; wer übernimmt Ihre Galvanik; was ist die Mindestmenge in einer Oberfläche, und warum; und können wir die bemaßte Zeichnung haben. Ein Werk beantwortet jede sofort oder mit einem Grund. Diese Seite listet auch, was sich unabhängig prüfen lässt, wie eine erste Bestellung aussehen sollte, und wendet den ganzen Test auf uns an.",
+    "summary": "5 Fragen trennen ein Werk von einem Handelshaus oder einem Vermittler: Welche Modelle stellen Sie selbst her; können Sie das Dornmaß dieses Modells ändern, und was kostet das Werkzeug; wer übernimmt Ihre Galvanik; was ist die Mindestmenge in einer Oberfläche, und warum; und können wir die bemaßte Zeichnung haben. Ein Werk beantwortet jede sofort oder mit einem Grund. Diese Seite listet auch, was sich unabhängig prüfen lässt und wie eine erste Bestellung aussehen sollte.",
     "seoTitle": "Beschlaglieferant prüfen: Werk oder Händler | Canton Hyland",
     "seoDescription": "Beschlaglieferant prüfen: fünf Fragen trennen Werk, Händler und Vermittler; was Sie selbst prüfen und warum ein kleiner Auftrag mehr zählt als ein Muster.",
     "body": [
@@ -2695,7 +2718,7 @@
       "„Welche dieser Modelle fertigen Sie selbst, und welche kaufen Sie zu?“ Fast jedes echte Werk kauft einiges zu – Zylinder, Federn, Verpackung, manchmal ganze Kategorien. Ein Werk beantwortet das leicht und konkret. Ein Handelshaus antwortet allgemein, denn die ehrliche Antwort lautet „alle“.",
       "„Können Sie das Dornmaß bei diesem Modell ändern, und was würde das Werkzeug kosten?“ Ein Werk antwortet mit einer Zahl oder einem Grund. Alle anderen antworten mit einer Verzögerung, weil sie fragen müssen.",
       "„Wer macht Ihre Galvanik, und ist sie im Haus?“ Die Galvanik wird auch von echten Werken häufig ausgelagert, und das zu sagen ist normal. Aufschlussreich ist, ob sie die Antwort sofort wissen.",
-      "„Wie hoch ist das Minimum bei diesem Modell in einer Oberfläche, und warum genau diese Zahl?“ Unsere Seite zur Mindestbestellmenge erklärt die vier Faktoren, die ein Minimum bestimmen. Die Antwort eines Werks verweist auf mindestens einen davon – eine Oberflächencharge, eine Werkzeugamortisation, eine Druckauflage. Eine weitergegebene Antwort ist nur eine Zahl.",
+      "„Wie hoch ist das Minimum bei diesem Modell in einer Oberfläche, und warum genau diese Zahl?“ Die Antwort eines Werks nennt einen Grund – eine Oberflächencharge, eine Werkzeugamortisation, eine Druckauflage. Eine weitergegebene Antwort ist nur eine Zahl.",
       "„Können wir die Maßzeichnung für dieses Modell bekommen?“ Die nützlichste Einzelfrage der Liste. Ein Werk hat sie oder weiß, dass es sie für dieses Modell nicht gibt. Ein Händler hat, was ihm das Werk geschickt hat – oft eine Katalogseite.",
       "Niemand muss mit diesen Fragen ertappt werden. Ein Handelshaus, das antwortet „Wir fertigen diese nicht, wir arbeiten mit drei Werken in Guangdong, dieses hier stellt jenes her“, hat eine bessere Antwort gegeben als ein Werk, das vage bleibt, und ist nun ein Lieferant, mit dem Sie genau arbeiten können.",
       "## Was sich unabhängig überprüfen lässt",
@@ -2724,16 +2747,9 @@
       "## Vier Antworten, die schlecht aussehen und es nicht sind – und eine, die gut aussieht und es nicht ist",
       "„Wir lassen unsere Galvanik extern machen.“ Normal, auch bei großen und leistungsfähigen Werken. Galvanik ist ein spezialisierter, stark regulierter Prozess, und ihn auszulagern ist oft die qualitativ bessere Wahl. Entscheidend ist, ob sie den Galvanikbetrieb nennen und seinen Prozess kennen.",
       "„Für dieses Modell haben wir kein Zertifikat.“ Ebenfalls normal. Prüfungen sind je Modell teuer, und die meisten Kataloge sind nur teilweise geprüft. Ein Lieferant, der sagt, welche Modelle geprüft sind und welche nicht, ist vertrauenswürdiger als einer, dessen ganzes Sortiment als zertifiziert beschrieben wird.",
-      "„Unser Minimum dafür ist hoch.“ Ein Minimum mit Begründung zeigt, dass jemand die Arbeit kalkuliert hat. Unsere Seite zur Mindestbestellmenge nennt die vier Faktoren, die es bestimmen.",
+      "„Unser Minimum dafür ist hoch.“ Ein Minimum mit Begründung zeigt, dass jemand die Arbeit kalkuliert hat.",
       "„Das können wir nicht.“ Die am meisten unterschätzte Antwort der Liste. Ein Lieferant, der eine Änderung ablehnt, die er nicht gut umsetzen kann, hat Ihnen gerade ein Projekt gerettet und Ihnen gezeigt, dass seine Absagen etwas bedeuten.",
-      "Und die, die gut aussieht: Ja zu allem, sofort. Jedes Maß, jede Oberfläche, jede Menge, jede Lieferzeit, ohne Rückfrage. Ein Lieferant, der all das wirklich kann, hätte mindestens eine klärende Frage zu Ihrer Tür gestellt. Zustimmung ohne Fragen ist keine Leistungsfähigkeit; es ist ein Angebot, geschrieben, bevor jemand die Anfrage gelesen hat.",
-      "## Angewendet auf uns",
-      "Es wäre widersprüchlich, diese Seite zu veröffentlichen und sie nicht zu beantworten.",
-      "Wir sind ein Werk, und wie jedes echte Werk kaufen wir einige Bauteile zu, statt alles selbst zu fertigen. Fragen Sie je Modell, welche, und die Antwort kommt konkret.",
-      "Wir haben nicht für alles im Katalog Prüfzertifikate. Unsere Panikverschlüsse 307 und 311 befinden sich in der Prüfung, und solange es keine Zertifikatsnummern gibt, wird nichts, was wir veröffentlichen, andeuten, dass sie eine Feuerschutzklassifizierung, einen ANSI-Grad oder eine UL-Listung haben. Unsere Seite zu Zertifikaten erklärt, wie Sie diese Angabe prüfen sollten, auch bei uns.",
-      "Für die meisten Modelle veröffentlichen wir keine Zeichnung. Die 613 HYDE-Datensätze haben 84 bemaßte SVG-Dateien, 72 davon auf den 546 sichtbaren Produkteinträgen, und 0 HYDE-SVGs zur Türvorbereitung. Unsere Seite zu Zeichnungen nennt diese getrennten Zahlen, weil wir Frage fünf oben sonst zu locker beantworten würden.",
-      "Mehrere Spezifikationslücken sind offen und veröffentlicht: die Edelstahlsorte bei 224 Zeilen, die Zamaksorte bei 156, Messinglegierung und DZR-Status bei 57, die Zylinderaufteilung bei 45. Jede davon steht auf ihrer eigenen Seite, mit der Zahl.",
-      "Das ist eine schlechter aussehende Antwort als die der meisten Lieferanten, und es ist die, die die fünf Fragen übersteht. Ein Lieferant, dessen Katalog keine Lücken hat, hat entweder alles gemessen oder hingeschrieben, was in den Lücken stehen sollte – und das Zweite ist weit häufiger als das Erste."
+      "Und die, die gut aussieht: Ja zu allem, sofort. Jedes Maß, jede Oberfläche, jede Menge, jede Lieferzeit, ohne Rückfrage. Ein Lieferant, der all das wirklich kann, hätte mindestens eine klärende Frage zu Ihrer Tür gestellt. Zustimmung ohne Fragen ist keine Leistungsfähigkeit; es ist ein Angebot, geschrieben, bevor jemand die Anfrage gelesen hat."
     ],
     "faq": [
       {
@@ -2755,10 +2771,6 @@
       {
         "question": "Genügt ein Muster vor einem großen Auftrag?",
         "answer": "Nein. Muster, dann kleiner Auftrag, dann das Projekt – und der kleine Auftrag zählt mehr, denn ein Muster fertigt die beste verfügbare Person, einen kleinen Auftrag fertigt man so, wie man Aufträge fertigt. Er zeigt, ob die Verpackung der Packliste entspricht, ob die Lieferzeit echt war und ob die Teile in der Mitte des Kartons denen oben entsprechen."
-      },
-      {
-        "question": "Wie beantwortet Canton Hyland seine eigenen fünf Fragen?",
-        "answer": "Wir sind ein Werk und kaufen, wie jedes echte Werk, einige Bauteile zu. Wir haben nicht für alles Prüfzertifikate; 307 und 311 befinden sich in der Prüfung. Über 613 HYDE-Datensätze gibt es 84 bemaßte SVG-Dateien, 72 auf sichtbaren Produkteinträgen, und 0 HYDE-SVGs zur Türvorbereitung. Mehrere Spezifikationslücken sind auf eigenen Seiten gezählt."
       }
     ],
     "sourceHash": {
@@ -2807,14 +2819,7 @@
       "Nennen Sie die Referenz des Referenzmusters. Nennen Sie die zu nehmenden Maße und die Toleranz für jedes – eine Toleranz macht aus einer Messung eine Entscheidung. Nennen Sie den Stichprobenplan: wie viele Kartons geöffnet, wie viele Teile gemessen und was als Fehler gilt.",
       "Nennen Sie, was funktional geprüft wird und wie oft. „Schloss betätigen“ ist keine Anweisung; „Schloss zehnmal betätigen und jedes Mal bestätigen, dass die Falle vollständig zurückzieht und der Drücker in die Waagerechte zurückkehrt“ ist eine.",
       "Nennen Sie die Verpackungsprüfungen: Kartonbeschriftung, Menge pro Karton, Innenverpackung und ob die Kartonmaße der Packliste entsprechen – denn ein Karton, der nicht die Größe hat, die die Packliste angibt, lädt nicht so, wie die Sendung geplant war.",
-      "Und nennen Sie, was bei einem Fehler geschieht (Sendung zurückhalten, nach Nacharbeit erneut prüfen oder mit Sonderfreigabe annehmen), denn ein Prüfer, der ein Problem findet und keine Anweisung hat, tut nichts – das schlechteste der drei Ergebnisse.",
-      "## Wann Sie das Muster nehmen sollten",
-      "Solange die Spezifikation noch offen ist. Dieser Zeitpunkt beeinflusst das Ergebnis am stärksten und wird am häufigsten falsch gewählt.",
-      "Ein Muster, das nach gezahlter Anzahlung und eingeplantem Lauf genommen wird, hat nur zwei mögliche Ausgänge: Erleichterung oder Streit. Ein Muster, das genommen wird, solange die Spezifikation noch geändert werden kann, ist ein Gespräch, und ein dort gefundenes Missverständnis kostet eine E-Mail.",
-      "Wie unsere Seite zur Lieferzeit darlegt, beginnt die Fertigungsuhr bei der Auftragsbestätigung; ein frühes Muster verzögert den Auftrag also nicht. Es verlegt Arbeit in den Zeitraum, der ohnehin in Ihrer Hand liegt.",
-      "## Was wir tun",
-      "Wir fertigen Muster nach einer schriftlichen Spezifikation und vermerken auf dem Musterprotokoll, nach welcher Spezifikation es gefertigt wurde, damit eine Freigabe die Freigabe von etwas Identifizierbarem ist und nicht die eines Gegenstands in einer Schachtel.",
-      "Weicht ein Muster in irgendeiner Hinsicht vom Katalog ab, sagen wir das schriftlich mit dem Muster, statt die Abweichung entdecken zu lassen. Ein Lieferant, der ein Muster schickt, das still besser ist als die geplante Serie, hat keine Freigabe gewonnen; er hat einen Maßstab gesetzt, an dem er scheitern wird – für beide Seiten ein schlechteres Ergebnis als ein ehrliches Muster und ein kurzes Gespräch."
+      "Und nennen Sie, was bei einem Fehler geschieht (Sendung zurückhalten, nach Nacharbeit erneut prüfen oder mit Sonderfreigabe annehmen), denn ein Prüfer, der ein Problem findet und keine Anweisung hat, tut nichts – das schlechteste der drei Ergebnisse."
     ],
     "faq": [
       {
@@ -2824,10 +2829,6 @@
       {
         "question": "Welche Art Muster sollte ich anfordern?",
         "answer": "Ein Lagermuster, wenn Sie einen Lieferanten bewerten. Ein Vorserienmuster, wenn irgendetwas vom Katalog abweicht (eine Oberfläche, ein Dornmaß, eine Vierkantlänge, eine bedruckte Schachtel), weil es beweist, dass die Spezifikation verstanden wurde. Ein Serienmuster aus dem tatsächlichen Lauf ist das, woran eine Prüfung durchgeführt wird."
-      },
-      {
-        "question": "Wann sollte ich ein Muster nehmen?",
-        "answer": "Solange die Spezifikation noch offen ist, vor der Anzahlung. Ein Muster nach eingeplantem Lauf hat nur zwei mögliche Ausgänge: Erleichterung oder Streit. Früher genommen ist es ein Gespräch, und ein dort gefundenes Missverständnis kostet eine E-Mail. Die Fertigungsuhr beginnt ohnehin bei der Auftragsbestätigung, ein frühes Muster verzögert also nichts."
       },
       {
         "question": "Was kann mir ein Muster nicht sagen?",
@@ -2847,8 +2848,8 @@
       "summary": "3caddd1d93da",
       "seoTitle": "cdcd2908faf9",
       "seoDescription": "e57b01aa0552",
-      "body": "6533dc06e389",
-      "faq": "b349c914d5b4"
+      "body": "a1b0ae255310",
+      "faq": "a84677dc3ff6"
     }
   },
   "specification-section-08-71-00-2026": {
@@ -3061,7 +3062,7 @@
       "| Was die Werkstoffzeile sagt | Produkte |\n| --- | --- |\n| „Edelstahl“, keine Sorte genannt | 224 |\n| Ein Paar oder Bereich, z. B. „304/201“, „304/316L“ | 73 |\n| Eine einzelne Sorte genannt | 16 |\n| Gesamt mit Edelstahl | 313 |",
       "Zweiundsiebzig Prozent unserer Edelstahlprodukte nennen überhaupt keine Sorte, und weitere 73 nennen zwei. Sechzehn von 313 beantworten die Frage, die ein Einkäufer laut dieser Seite stellen muss.",
       "Das ist keine gute Zahl, und sie abzudrucken ist Absicht. Ein Einkäufer, der sie liest, weiß genau, was zu tun ist (nach der Sorte fragen, schriftlich, je Bestellung), und ein Einkäufer, der angenommen hätte, der Katalog beantworte das, hätte nicht gefragt.",
-      "Der Grund ist banal und nicht finster: Die Sorte ist eine Einkaufstatsache in den Werkstoffunterlagen des Werks, und der Katalog wurde aus Produktbeschreibungen gebaut, nicht aus diesen Unterlagen. Geschlossen wird die Lücke durch Abgleich, Modell für Modell, nicht indem man eine plausible Sorte in 224 Zeilen schreibt.",
+      "Wir schreiben keine plausible Sorte in diese 224 Zeilen. Wo eine Zeile die Sorte nicht nennt, fragen Sie sie pro Bestellung an.",
       "## Was in Ihre Bestellung gehört",
       "Nennen Sie die Sorte, nicht die Familie. „304“ statt „Edelstahl“.",
       "Nennen Sie die Umgebung, wenn sie kein gewöhnlicher Innenbereich ist (Küste, Schwimmbad, Industrie, Küste und geschützt), denn dann kann ein Lieferant Ihnen sagen, wenn Ihre Sorte falsch ist, statt sie einfach anzubieten.",
@@ -3091,7 +3092,7 @@
       },
       {
         "question": "Nennen Ihre Produktseiten die Edelstahlsorte?",
-        "answer": "Meist nicht, und das sagen wir lieber offen. Von 313 Produkten mit Edelstahl sagen 224 nur „Edelstahl“, 73 nennen ein Paar wie 304/201 und 16 eine einzelne Sorte. Die Lücke wird durch Abgleich mit den Werkstoffunterlagen des Werks geschlossen, Modell für Modell, nicht indem man eine plausible Sorte in 224 Zeilen schreibt."
+        "answer": "Meist nicht, und das sagen wir lieber offen. Von 313 Produkten mit Edelstahl sagen 224 nur „Edelstahl“, 73 nennen ein Paar wie 304/201 und 16 eine einzelne Sorte. Wir schreiben keine plausible Sorte in diese 224 Zeilen; fragen Sie die Sorte pro Bestellung an."
       }
     ],
     "sourceHash": {
@@ -3099,8 +3100,8 @@
       "summary": "50e13b3f4840",
       "seoTitle": "dd8266256598",
       "seoDescription": "80d997a17ec0",
-      "body": "c2186668496c",
-      "faq": "a0e9ae4e16e6"
+      "body": "fdbcbb13a841",
+      "faq": "55e38533abc3"
     }
   },
   "strike-plates-and-keeps-2026": {
@@ -3231,7 +3232,7 @@
       "Ein Antrag, der funktioniert, nennt also das spezifizierte Produkt, das vorgeschlagene Produkt und einen Zeile-für-Zeile-Vergleich der Eigenschaften, die die Spezifikation tatsächlich vorgibt (Klasse, Zyklen, Feuerschutzeignung, Korrosionsklasse, Oberflächencode, Maße), mit dem Prüfnachweis hinter jeder einzelnen. Wo eine Eigenschaft schlechter ist, sagen Sie es, und sagen Sie, warum es hier keine Rolle spielt.",
       "Ein Antrag, der einen Unterschied verschweigt, wird abgelehnt, sobald der Prüfer ihn findet, und jeder spätere Antrag desselben Lieferanten wird mit diesem Wissen gelesen. Die gemeinsamen Merkmale waren nie die Frage.",
       "## Wo unsere eigenen Lücken liegen",
-      "Einige unserer Produkte befinden sich in der Prüfung und haben noch keine Zertifikate. Wo das so ist, sagen wir es auf der Produktseite, statt eine Klassifizierung anzudeuten, und Freigabeunterlagen, die ein Zertifikat brauchen, das wir nicht haben, sind Unterlagen, bei denen wir Ihnen sagen, dass wir sie nicht vervollständigen können.",
+      "Einige unserer Produkte haben keine Zertifikate. Wo das so ist, sagen wir es auf der Produktseite, statt eine Klassifizierung anzudeuten, und Freigabeunterlagen, die ein Zertifikat brauchen, das wir nicht haben, sind Unterlagen, bei denen wir Ihnen sagen, dass wir sie nicht vervollständigen können.",
       "Das kostet weniger Anfragen, als es klingt, und es ist die einzige Haltung, die mit dem Rest dieser Seite vereinbar ist. Ein Lieferant, der ein unbelegtes „Feuerschutz“ in Freigabeunterlagen schreibt, schreibt auch ein unbelegtes Maß in eine Zeichnung, und der Prüfer weiß das."
     ],
     "faq": [
@@ -3265,7 +3266,7 @@
       "summary": "5ca1d67af7fc",
       "seoTitle": "0a676aa65028",
       "seoDescription": "3f3192edc0f6",
-      "body": "4167d2695ee3",
+      "body": "ae4a4d789b28",
       "faq": "b8c3b65d86e4"
     }
   },
@@ -3489,7 +3490,7 @@
       "Gezählt aus den Werkstoffzeilen aller Produkte, die eine haben.",
       "| Werkstoff | Zeilen | Anteil |\n| --- | --- | --- |\n| Edelstahl | 262 | 46% |\n| Zinklegierung | 156 | 28% |\n| Messing | 57 | 10% |\n| Eisen | 39 | 7% |\n| Aluminium | 26 | 5% |\n| Sonstige oder gemischt | 24 | 4% |",
       "Achtundzwanzig Prozent Zinklegierung ist ein normaler Anteil für ein Beschlagsortiment mit vielen galvanisierten Drückern und Rosetten. Es ist keine Zahl, die man verstecken muss, und sie zu veröffentlichen ist nützlicher als die übliche Alternative, alles als „hochwertige Legierung“ zu beschreiben.",
-      "Was unsere Zeilen derzeit nicht sagen, ist die Zamaksorte. „Zinc Alloy“ erscheint 70-mal und „Zinc alloy“ weitere 62-mal; keine nennt Zamak 3 oder Zamak 5. Das ist dieselbe Lücke, die unsere Edelstahlseite für 201 gegenüber 304 benennt, mit derselben ehrlichen Antwort: Fragen Sie je Auftrag nach, und die Lücke wird durch Abgleich mit den Werksunterlagen geschlossen, nicht indem man eine plausible Sorte in 156 Zeilen schreibt.",
+      "Was unsere Zeilen derzeit nicht sagen, ist die Zamaksorte. „Zinc Alloy“ erscheint 70-mal und „Zinc alloy“ weitere 62-mal; keine nennt Zamak 3 oder Zamak 5. Das ist dieselbe Lücke, die unsere Edelstahlseite für 201 gegenüber 304 benennt, mit derselben ehrlichen Antwort: Fragen Sie je Auftrag nach. Wir schreiben keine plausible Sorte in 156 Zeilen.",
       "## Was Sie fragen sollten, damit die Antwort etwas bedeutet",
       "Welche Zamaksorte, und ob tragende Innenteile aus Zink oder Stahl sind. Bei einem Schloss lautet die Antwort oft „der Kasten ist aus Zink, die Funktionsteile aus Stahl“ – eine gute Antwort, die aber gegeben und nicht angenommen werden sollte.",
       "Querschnittsdicke an den Lastpunkten: Eine Zeichnung beantwortet das; eine Beschreibung nicht.",
@@ -3528,7 +3529,7 @@
       "summary": "1edee3ddd5c4",
       "seoTitle": "61fa12ef5973",
       "seoDescription": "53af48b17bdf",
-      "body": "83d2ba973cd2",
+      "body": "e9c5b457f02b",
       "faq": "8739e9e9a76d"
     }
   }

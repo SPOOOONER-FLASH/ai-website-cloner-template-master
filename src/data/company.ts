@@ -11,14 +11,14 @@ import type { ImageRef } from "./types";
  */
 
 export const profile: string[] = [
-  "Canton Hyland Hardware & Building Material Co., Ltd. was founded in 1998 in Xiaolan, Zhongshan, the town that ships close to a third of China's lock exports. We stamp, polish, assemble and inspect our own parts, and our quality system has been certified to ISO 9001 since 2002.",
+  "Canton Hyland Hardware & Building Material Co., Ltd. was founded in 1998 in Xiaolan, Zhongshan, the town that ships close to a third of China's lock exports. We stamp, polish, assemble and inspect our own parts, and our stamping plant is certified to ISO 9001:2015 (certificate 69125Q0026****, valid to 29 October 2028).",
   "The range covers most of what a door needs: panic exit devices, cylindrical and tubular locks, deadbolts, mortise lock cases, profile cylinders, levers, glass door fittings, hinges, closers and the small parts that finish the job. Master key and construction key systems are a specialty. They are what a hospital, a school or an office tower asks of a lock supplier, and they are where a supplier's records either hold up or do not.",
   "Much of what we make leaves Xiaolan under our customers' brands. Bring us a drawing or a sample and we tool it. If a design runs into another maker's patent, our engineers change the parts or the appearance until it no longer does. We ship to brands and distributors in Europe, Russia, the Americas, Turkey and Southeast Asia. We are set up for importers, distributors and brands rather than single doors: most models start between 300 and 5,000 pieces, and a sample is charged and credited against the first production order. We exhibited at the Cologne hardware fair for years, and our Spanish-speaking team has exhibited in Lima and Buenos Aires.",
   "The best way to judge a factory is to stand in it. Buyers who want to see the floor before the first container are welcome in Zhongshan, and those who cannot travel can start with a sample.",
 ];
 
 export const profileEs: string[] = [
-  "Canton Hyland Hardware & Building Material Co., Ltd. se fundó en 1998 en Xiaolan, Zhongshan, la localidad de donde sale cerca de un tercio de las cerraduras que exporta China. Estampamos, pulimos, montamos e inspeccionamos nuestras propias piezas, y nuestro sistema de calidad está certificado según ISO 9001 desde 2002.",
+  "Canton Hyland Hardware & Building Material Co., Ltd. se fundó en 1998 en Xiaolan, Zhongshan, la localidad de donde sale cerca de un tercio de las cerraduras que exporta China. Estampamos, pulimos, montamos e inspeccionamos nuestras propias piezas, y nuestra planta de estampado está certificada según ISO 9001:2015 (certificado 69125Q0026****, válido hasta el 29 de octubre de 2028).",
   "La gama cubre casi todo lo que necesita una puerta: dispositivos antipánico, cerraduras cilíndricas y tubulares, cerrojos, cajas de cerradura de embutir, cilindros de perfil, manijas, herrajes para puertas de vidrio, bisagras, cierrapuertas y las piezas pequeñas que rematan el trabajo. Los sistemas de llave maestra y llave de obra son una especialidad. Es lo que un hospital, una escuela o una torre de oficinas pide a un proveedor de cerraduras, y es donde los registros de un proveedor se sostienen o no.",
   "Buena parte de lo que fabricamos sale de Xiaolan con la marca de nuestros clientes. Tráiganos un plano o una muestra y hacemos el molde. Si un diseño choca con la patente de otro fabricante, nuestros ingenieros cambian las piezas o el aspecto hasta que deja de chocar. Enviamos a marcas y distribuidores de Europa, Rusia, América, Turquía y el Sudeste Asiático. Trabajamos para importadores, distribuidores y marcas, no para puertas sueltas: la mayoría de los modelos parte de entre 300 y 5.000 piezas, y la muestra se cobra y se descuenta del primer pedido de producción. Expusimos durante años en la feria de ferretería de Colonia, y nuestro equipo de habla hispana ha expuesto en Lima y en Buenos Aires.",
   "La mejor manera de juzgar una fábrica es entrar en ella. Los compradores que quieran ver la planta antes del primer contenedor son bienvenidos en Zhongshan, y quienes no puedan viajar pueden empezar con una muestra.",
@@ -32,7 +32,7 @@ export const profileEs: string[] = [
  * client confirmed that on 2026-08-16 and it is not a translation decision.
  */
 export const profilePt: string[] = [
-  "A Canton Hyland Hardware & Building Material Co., Ltd. foi fundada em 1998 em Xiaolan, Zhongshan, a cidade de onde sai perto de um terço das fechaduras que a China exporta. Estampamos, polimos, montamos e inspecionamos as nossas próprias peças, e o nosso sistema de qualidade é certificado pela ISO 9001 desde 2002.",
+  "A Canton Hyland Hardware & Building Material Co., Ltd. foi fundada em 1998 em Xiaolan, Zhongshan, a cidade de onde sai perto de um terço das fechaduras que a China exporta. Estampamos, polimos, montamos e inspecionamos as nossas próprias peças, e a nossa unidade de estampagem é certificada pela ISO 9001:2015 (certificado 69125Q0026****, válido até 29 de outubro de 2028).",
   "A linha cobre quase tudo o que uma porta precisa: barras antipânico, fechaduras cilíndricas e tubulares, travas, caixas de fechadura de embutir, cilindros de perfil, maçanetas, ferragens para portas de vidro, dobradiças, molas aéreas e as peças pequenas que completam o serviço. Sistemas de chave-mestra e chave de obra são uma especialidade. É o que um hospital, uma escola ou um prédio de escritórios pede a um fornecedor de fechaduras, e é onde os registros de um fornecedor se sustentam ou não.",
   "Boa parte do que fabricamos sai de Xiaolan com a marca dos nossos clientes. Traga um desenho ou uma amostra e fazemos o ferramental. Se um projeto esbarra na patente de outro fabricante, nossos engenheiros alteram as peças ou a aparência até que deixe de esbarrar. Enviamos para marcas e distribuidores da Europa, da Rússia, das Américas, da Turquia e do Sudeste Asiático. Trabalhamos para importadores, distribuidores e marcas, e não para portas avulsas: a maioria dos modelos parte de 300 a 5.000 peças, e a amostra é cobrada e descontada do primeiro pedido de produção. Expusemos durante anos na feira de ferragens de Colônia, e nossa equipe que fala espanhol já expôs em Lima e em Buenos Aires.",
   "A melhor forma de julgar uma fábrica é entrar nela. Compradores que queiram ver a fábrica antes do primeiro contêiner são bem-vindos em Zhongshan, e quem não puder viajar pode começar com uma amostra.",
@@ -47,7 +47,7 @@ export const stats: { label: string; value: string }[] = [
   { label: "Workforce", value: "101–200 people" },
   { label: "Facility area", value: "3,000–5,000 m²" },
   { label: "Annual output value", value: "US$50–100 million" },
-  { label: "Quality system", value: "ISO 9001 since 2002" },
+  { label: "Quality system", value: "ISO 9001:2015 stamping plant" },
   { label: "Business type", value: "Manufacturer" },
   { label: "Location", value: "Guangdong, China" },
 ];
@@ -57,7 +57,7 @@ export const statsEs: { label: string; value: string }[] = [
   { label: "Equipo", value: "101–200 personas" },
   { label: "Superficie", value: "3.000–5.000 m²" },
   { label: "Producción anual", value: "US$50–100 millones" },
-  { label: "Sistema de calidad", value: "ISO 9001 desde 2002" },
+  { label: "Sistema de calidad", value: "Planta de estampado ISO 9001:2015" },
   { label: "Actividad", value: "Fabricante" },
   { label: "Ubicación", value: "Guangdong, China" },
 ];
@@ -67,7 +67,7 @@ export const statsPt: { label: string; value: string }[] = [
   { label: "Equipe", value: "101–200 pessoas" },
   { label: "Área fabril", value: "3.000–5.000 m²" },
   { label: "Produção anual", value: "US$ 50–100 milhões" },
-  { label: "Sistema de qualidade", value: "ISO 9001 desde 2002" },
+  { label: "Sistema de qualidade", value: "Unidade de estampagem ISO 9001:2015" },
   { label: "Atividade", value: "Fabricante" },
   { label: "Localização", value: "Guangdong, China" },
 ];
@@ -282,3 +282,97 @@ export const factoryAssemblyLine: ImageRef = {
   labelPt: "Nossa linha de montagem: dois operadores na bancada, com as peças em caixas etiquetadas ao longo da linha",
 };
 
+
+/*
+  The stamping plant at work, in process order: stamping, machining, assembly, packing and
+  dispatch. Supplied by the client on 2026-10-13 with permission to publish (IMAGE_CREDITS.md).
+  Lettering on workwear, crates, one machine plate and one wall sign was painted out at the
+  client's request and one wall screen blurred; machines, parts and people are untouched.
+  Cropped to 3:2 so the grid reads as one set.
+*/
+export const factoryWorkshop: ImageRef[] = [
+  {
+    src: "/images/company/factory-workshop-01.webp",
+    ratio: "3 / 2",
+    label: "An operator at a power press stamping lock-case plates",
+    labelEs: "Un operario en una prensa mecánica estampando placas de caja de cerradura",
+    labelPt: "Um operador numa prensa mecânica estampando placas de caixa de fechadura",
+  },
+  {
+    src: "/images/company/factory-workshop-02.webp",
+    ratio: "3 / 2",
+    label: "A row of mechanical punch presses in the press shop",
+    labelEs: "Una fila de prensas mecánicas en la sección de prensas",
+    labelPt: "Uma fila de prensas mecânicas no setor de prensas",
+  },
+  {
+    src: "/images/company/factory-workshop-03.webp",
+    ratio: "3 / 2",
+    label: "The press shop, with parts moving between stations in bins",
+    labelEs: "La sección de prensas, con las piezas pasando entre puestos en cajas",
+    labelPt: "O setor de prensas, com as peças passando entre os postos em caixas",
+  },
+  {
+    src: "/images/company/factory-workshop-04.webp",
+    ratio: "3 / 2",
+    label: "A machining station on the lock-case line",
+    labelEs: "Un puesto de mecanizado en la línea de cajas de cerradura",
+    labelPt: "Um posto de usinagem na linha de caixas de fechadura",
+  },
+  {
+    src: "/images/company/factory-workshop-05.webp",
+    ratio: "3 / 2",
+    label: "Checking stamped plates at a drilling station",
+    labelEs: "Revisión de placas estampadas en un puesto de taladrado",
+    labelPt: "Conferência de placas estampadas num posto de furação",
+  },
+  {
+    src: "/images/company/factory-workshop-06.webp",
+    ratio: "3 / 2",
+    label: "Bench drills for secondary machining of small parts",
+    labelEs: "Taladros de banco para el mecanizado secundario de piezas pequeñas",
+    labelPt: "Furadeiras de bancada para usinagem secundária de peças pequenas",
+  },
+  {
+    src: "/images/company/factory-workshop-07.webp",
+    ratio: "3 / 2",
+    label: "A hydraulic press at the head of the machining line",
+    labelEs: "Una prensa hidráulica al inicio de la línea de mecanizado",
+    labelPt: "Uma prensa hidráulica no início da linha de usinagem",
+  },
+  {
+    src: "/images/company/factory-workshop-08.webp",
+    ratio: "3 / 2",
+    label: "An operator drilling lock-case plates on a fixtured machine",
+    labelEs: "Una operaria taladrando placas de caja de cerradura en una máquina con utillaje",
+    labelPt: "Uma operadora furando placas de caixa de fechadura numa máquina com gabarito",
+  },
+  {
+    src: "/images/company/factory-workshop-09.webp",
+    ratio: "3 / 2",
+    label: "The assembly line, with parts staged in bins along the benches",
+    labelEs: "La línea de montaje, con las piezas preparadas en cajas a lo largo de los puestos",
+    labelPt: "A linha de montagem, com as peças separadas em caixas ao longo das bancadas",
+  },
+  {
+    src: "/images/company/factory-workshop-10.webp",
+    ratio: "3 / 2",
+    label: "Operators assembling at the benches",
+    labelEs: "Operarias montando en los puestos",
+    labelPt: "Operadoras montando nas bancadas",
+  },
+  {
+    src: "/images/company/factory-workshop-11.webp",
+    ratio: "3 / 2",
+    label: "The automatic carton sealer in the finished-goods packing area",
+    labelEs: "La precintadora automática de cajas en la zona de embalaje de producto terminado",
+    labelPt: "A seladora automática de caixas na área de embalagem de produto acabado",
+  },
+  {
+    src: "/images/company/factory-workshop-12.webp",
+    ratio: "3 / 2",
+    label: "Finished goods and cartons staged for packing and shipment",
+    labelEs: "Producto terminado y cajas preparados para embalaje y envío",
+    labelPt: "Produto acabado e caixas preparados para embalagem e embarque",
+  },
+];

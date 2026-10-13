@@ -235,13 +235,13 @@
     "src/data/finish-codes.ts:228"
   ],
   "A design you are free to put your name on": [
-    "src/components/site/ServicesView.tsx:67"
+    "src/components/site/ServicesView.tsx:66"
   ],
   "A door closer manufacturer in China supplying overhead closers with aluminum bodies for commercial, office and fire doors, plus a floor hinge for timber doors. Buyers select by door width and leaf weight, then ask for a double-door coordinator where a pair must close in order. {count} models, made in our own plant.": [
     "src/data/category-buying-guides.ts:437"
   ],
   "A door hardware maker in Xiaolan, since 1998.": [
-    "src/components/site/CompanyOverview.tsx:23"
+    "src/components/site/CompanyOverview.tsx:24"
   ],
   "A door is a set of parts that have to agree with each other: lever, lock case, cylinder, strike. We supply them together, each specified against the others, so the opening works the day it is fitted.": [
     "src/components/site/products-architecture.ts:190"
@@ -250,7 +250,7 @@
     "src/components/site/ProductDetail.tsx:142"
   ],
   "A drawing, sample or reference photograph": [
-    "src/components/site/ServicesView.tsx:51"
+    "src/components/site/ServicesView.tsx:50"
   ],
   "A DWG library per model": [
     "src/components/site/DocumentInventory.tsx:126"
@@ -291,8 +291,14 @@
   "A hook bolt, because a sliding leaf gives a straight latch nothing to catch.": [
     "src/data/category-positioning.json"
   ],
+  "A hydraulic press at the head of the machining line": [
+    "src/data/company.ts:339"
+  ],
   "A long pull on the outside with a lock behind it, for a main entrance door.": [
     "src/lib/configurator.ts:413"
+  ],
+  "A machining station on the lock-case line": [
+    "src/data/company.ts:318"
   ],
   "A master-key plan has to be decided before the cylinders are cut, not after they arrive. Changing the hierarchy later means new cylinders for every door in the group — which is why the plan sheet exists.": [
     "src/data/hardware-terms.ts:461"
@@ -312,6 +318,9 @@
   ],
   "A rim night latch is the lock a distributor buys for apartment and residential entrance doors that are already hung: it mounts on the face of the door through one cylinder hole. The {count} models here are made in our own factory for wholesale and private-label orders.": [
     "src/data/category-buying-guides.ts:113"
+  ],
+  "A row of mechanical punch presses in the press shop": [
+    "src/data/company.ts:304"
   ],
   "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalog's vocabulary.": [
     "src/data/finish-codes.ts:357"
@@ -409,6 +418,12 @@
   "An example three-level system: a grand master, two floor masters and the change keys below them, with the three decisions this article says belong at design time: one cross-keyed door, one door kept off every master, and one group reserved for expansion. Illustrative only; a real hierarchy is designed on the platform it will be cut on.": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:33"
   ],
+  "An operator at a power press stamping lock-case plates": [
+    "src/data/company.ts:297"
+  ],
+  "An operator drilling lock-case plates on a fixtured machine": [
+    "src/data/company.ts:346"
+  ],
   "and {n} more": [
     "src/lib/category-guide.ts:147"
   ],
@@ -504,7 +519,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:108"
   ],
   "Ask by model number and tell us what the document is for.": [
-    "src/components/site/ServicesView.tsx:87"
+    "src/components/site/ServicesView.tsx:86"
   ],
   "Ask by model number in the configuration you are buying, finish and function suffix included. A drawing of the 60mm (2-3/8\") backset version is not a drawing of the 45mm (1-3/4\") one.": [
     "src/components/site/DocumentInventory.tsx:145"
@@ -534,7 +549,7 @@
     "src/components/site/FactoryStory.tsx:43"
   ],
   "At a glance": [
-    "src/components/site/CompanyOverview.tsx:25"
+    "src/components/site/CompanyOverview.tsx:26"
   ],
   "Author": [
     "src/components/site/AuthorProfile.tsx:24"
@@ -600,6 +615,9 @@
   "Below the range the screws bottom out and the roses stand proud; above it the spindle does not reach through, and no amount of force will make it. This is the figure to check first on a glass or aluminum door, where leaves are thinner than the joinery a lock was designed around.": [
     "src/data/hardware-terms.ts:126"
   ],
+  "Bench drills for secondary machining of small parts": [
+    "src/data/company.ts:332"
+  ],
   "Black": [
     "src/components/site/brazil/brazil-data.ts:60",
     "src/data/finish-codes.ts:213",
@@ -642,7 +660,7 @@
     "src/data/finish-codes.ts:297"
   ],
   "Bring us a drawing. Leave with a product.": [
-    "src/components/site/ServicesView.tsx:41"
+    "src/components/site/ServicesView.tsx:40"
   ],
   "Bring your drawings. Meet our team.": [
     "src/data/bau-entry.ts:17"
@@ -707,7 +725,7 @@
     "src/data/category-buying-guides.ts:604"
   ],
   "Canton Hyland": [
-    "src/components/site/CompanyOverview.tsx:22"
+    "src/components/site/CompanyOverview.tsx:23"
   ],
   "Canton Hyland — Panic Exit Devices & Door Hardware Factory": [
     "src/data/site.ts:88"
@@ -779,7 +797,7 @@
     "src/components/site/ProductStudies.tsx:55"
   ],
   "Catalogs, drawings and technical files for our standard range are ready to download. For a part we develop with you, the drawings are yours as well.": [
-    "src/components/site/ServicesView.tsx:102"
+    "src/components/site/ServicesView.tsx:100"
   ],
   "Center distance": [
     "src/components/site/ArgentinaCollection.tsx:32",
@@ -827,6 +845,9 @@
   ],
   "Check the report before you specify the part.": [
     "src/components/locale-pages/CertificationsPage.tsx:97"
+  ],
+  "Checking stamped plates at a drilling station": [
+    "src/data/company.ts:325"
   ],
   "Choose a lock or handle range, then switch finish and function and watch the order code assemble. Every image is a photograph of the exact model.": [
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:55"
@@ -947,7 +968,7 @@
     "src/components/site/brazil/BrazilCollection.tsx:51"
   ],
   "Come and see the factory, or send us a drawing": [
-    "src/components/site/CompanyOverview.tsx:39"
+    "src/components/site/CompanyOverview.tsx:42"
   ],
   "Commercial project": [
     "src/components/site/InquiryForm.tsx:37"
@@ -1082,7 +1103,7 @@
     "src/components/locale-pages/ContactPage.tsx:154"
   ],
   "Custom tooling": [
-    "src/components/site/ServicesView.tsx:96"
+    "src/components/site/ServicesView.tsx:95"
   ],
   "Cutting": [
     "src/components/site/FactoryStory.tsx:39"
@@ -1113,7 +1134,7 @@
     "src/components/site/ProductDetail.tsx:102"
   ],
   "days minimum lead time": [
-    "src/data/capability.ts:191"
+    "src/data/capability.ts:185"
   ],
   "Deadbolt throw": [
     "src/data/hardware-terms.ts:134"
@@ -1229,7 +1250,7 @@
   "Dimension drawing": [
     "src/components/site/ArgentinaCollection.tsx:35"
   ],
-  "Dimensional and functional checks run against the same drawings the catalog publishes, under a quality system audited to ISO 9001. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.": [
+  "Dimensional and functional checks run against the same drawings the catalog publishes, and our stamping plant is certified to ISO 9001:2015. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.": [
     "src/data/capability.ts:158"
   ],
   "Dimensioned drawing": [
@@ -1248,7 +1269,7 @@
     "src/components/site/menu-experience.ts:270"
   ],
   "Discuss OEM or private-label production": [
-    "src/data/capability.ts:213"
+    "src/data/capability.ts:207"
   ],
   "Discuss this hardware package": [
     "src/components/site/ProjectDetail.tsx:24"
@@ -1290,7 +1311,7 @@
     "src/components/site/SiteFooter.tsx:53"
   ],
   "Documents already available": [
-    "src/components/site/ServicesView.tsx:100"
+    "src/components/site/ServicesView.tsx:98"
   ],
   "Documents We Can Supply": [
     "src/components/locale-pages/DocumentsPage.tsx:12"
@@ -1316,7 +1337,7 @@
   "door hardware accessory": [
     "src/data/category-sourcing.ts:44"
   ],
-  "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001.": [
+  "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001:2015 stamping plant.": [
     "src/data/site.ts:103"
   ],
   "Door hardware documents. What we can send you, and what we cannot.": [
@@ -1349,7 +1370,7 @@
   "Door hinges": [
     "src/components/site/products-architecture.ts:160"
   ],
-  "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001 certified since 2002, with OEM and private-label production for export.": [
+  "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001:2015 stamping plant, with OEM and private-label production for export.": [
     "src/components/locale-pages/SimplePages.tsx:16"
   ],
   "Door machining": [
@@ -1410,10 +1431,10 @@
     "src/components/site/ProductDetail.tsx:132"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
-    "src/components/site/ServicesView.tsx:86"
+    "src/components/site/ServicesView.tsx:85"
   ],
   "Drawings, datasheets and test reports": [
-    "src/components/site/ServicesView.tsx:85"
+    "src/components/site/ServicesView.tsx:84"
   ],
   "Drawings, specification and test reports": [
     "src/components/locale-pages/ContactPage.tsx:22"
@@ -1433,8 +1454,8 @@
   "Each answer sets aside the models that won't fit that door. Choices that lead nowhere are never offered.": [
     "src/components/site/ConfiguratorIntro.tsx:39"
   ],
-  "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers. Much of what we make is tested in our customers' names, at their cost; testing in our own name is being prepared.": [
-    "src/components/site/CompanyOverview.tsx:34"
+  "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers.": [
+    "src/components/site/CompanyOverview.tsx:37"
   ],
   "Each half is measured from the center of the fixing screw to the outer face of the escutcheon or rose on its side. Half-lengths come in 5mm steps from a minimum of 27.5mm, so the calculated figure is always rounded up: a half that is a little long can be covered with a rose, a half that is short cannot be fixed at the door.": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:45"
@@ -1624,7 +1645,7 @@
     "src/components/site/ExportMap.tsx:28"
   ],
   "Export, from Xiaolan to your port": [
-    "src/components/site/ServicesView.tsx:91"
+    "src/components/site/ServicesView.tsx:90"
   ],
   "Exterior lever and rose: 135 mm lever length and 53 × 53 × 8 mm rose, based on the published drawing.": [
     "public/downloads/models/index.json"
@@ -1643,7 +1664,7 @@
     "src/components/site/brazil/BrazilCollection.tsx:45"
   ],
   "Factory photograph": [
-    "src/components/site/CompanyOverview.tsx:30"
+    "src/components/site/CompanyOverview.tsx:31"
   ],
   "Factory time, GMT+8": [
     "src/components/site/ExportMap.tsx:31"
@@ -1727,6 +1748,9 @@
   "Finish with evidence, then talk to the factory.": [
     "src/components/site/products-architecture.ts:198"
   ],
+  "Finished goods and cartons staged for packing and shipment": [
+    "src/data/company.ts:374"
+  ],
   "Finishing": [
     "src/data/capability.ts:118"
   ],
@@ -1805,6 +1829,9 @@
   ],
   "From {moq}": [
     "src/components/site/ProductDetail.tsx:137"
+  ],
+  "From press to packing": [
+    "src/components/site/CompanyOverview.tsx:33"
   ],
   "From range to installed opening.": [
     "src/components/site/products-architecture.ts:192"
@@ -2038,9 +2065,6 @@
   "How we handle what you send: ": [
     "src/components/site/PrivacyNote.tsx:11"
   ],
-  "How we tool a part for your market": [
-    "src/components/site/ServicesView.tsx:99"
-  ],
   "HYDE Argentina AR-4": [
     "src/components/site/ArgentinaAr4Showcase.tsx:27",
     "src/data/home.ts:64"
@@ -2081,7 +2105,7 @@
     "src/components/site/DocumentPreview.tsx:8"
   ],
   "If the product you want is covered by another maker's patent, our engineers rework the internal parts or the appearance until it no longer conflicts with that patent, and we tell you exactly which features changed so your own patent check has something specific to review.": [
-    "src/components/site/ServicesView.tsx:68"
+    "src/components/site/ServicesView.tsx:67"
   ],
   "If you need the spec tables in a sheet rather than on a page — for a schedule, a comparison or a tender annex — ask and we will send them.": [
     "src/components/site/DocumentInventory.tsx:85"
@@ -2105,7 +2129,7 @@
     "src/components/site/ModelLookup.tsx:93"
   ],
   "Include the destination, the quantity and what the sample has to prove.": [
-    "src/components/site/ServicesView.tsx:81"
+    "src/components/site/ServicesView.tsx:80"
   ],
   "Individual models for selection. Confirm compatibility and the complete configuration before ordering; the composition does not represent installation scale.": [
     "src/components/site/ProductStudies.tsx:54"
@@ -2120,7 +2144,7 @@
     "src/components/site/CylinderCalculator.tsx:58"
   ],
   "Inside the factory": [
-    "src/components/site/CompanyOverview.tsx:31"
+    "src/components/site/CompanyOverview.tsx:32"
   ],
   "Inspection": [
     "src/data/capability.ts:154"
@@ -2137,14 +2161,14 @@
   "Is there hold-open, and can the closing speed be set?": [
     "src/data/category-buying-guides.ts:410"
   ],
-  "ISO 9001 since 2002": [
+  "ISO 9001:2015 stamping plant": [
     "src/data/company.ts:50"
   ],
   "Issue date": [
     "src/components/locale-pages/CertificationsPage.tsx:24"
   ],
   "Issued": [
-    "src/components/site/CompanyOverview.tsx:38"
+    "src/components/site/CompanyOverview.tsx:41"
   ],
   "Issuer": [
     "src/components/locale-pages/CertificationsPage.tsx:22"
@@ -2303,14 +2327,14 @@
   "Manufacturer & Supplier": [
     "src/components/locale-pages/CollectionPage.tsx:61"
   ],
-  "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
+  "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001:2015 stamping plant; OEM production in Guangdong.": [
     "src/components/locale-pages/HomePage.tsx:32"
   ],
   "Manufacturing": [
-    "src/data/capability.ts:208"
+    "src/data/capability.ts:202"
   ],
   "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries.": [
-    "src/components/site/CompanyOverview.tsx:218"
+    "src/components/site/CompanyOverview.tsx:226"
   ],
   "Manufacturing is in Zhongshan. These are the people to reach in each market.": [
     "src/components/locale-pages/ContactPage.tsx:121"
@@ -2514,7 +2538,7 @@
     "src/components/site/ProductImageZoom.tsx:56"
   ],
   "Much of the door hardware and ironmongery we make leaves Xiaolan under our customers' brands, and it is the work we are best at. We tool new parts to your drawing or sample, rework a design that runs into someone else's patent, and put your name, your instructions and your packaging on the result. Since 1998, for brands and distributors across Europe, the Americas, Turkey and Southeast Asia.": [
-    "src/components/site/ServicesView.tsx:43"
+    "src/components/site/ServicesView.tsx:42"
   ],
   "Name *": [
     "src/components/site/InquiryForm.tsx:28"
@@ -2553,7 +2577,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:152"
   ],
   "New tooling to your design": [
-    "src/components/site/ServicesView.tsx:61"
+    "src/components/site/ServicesView.tsx:60"
   ],
   "News": [
     "src/components/site/AuthorProfile.tsx:29",
@@ -2624,7 +2648,7 @@
   "No sign-up. Change any answer and the list rebuilds.": [
     "src/components/site/ConfiguratorIntro.tsx:45"
   ],
-  "Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first. We have made that door hardware, architectural ironmongery as the UK trade calls it, since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, ISO 9001 certified since 2002. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany. Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.": [
+  "Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first. We have made that door hardware, architectural ironmongery as the UK trade calls it, since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, and our stamping plant is certified to ISO 9001:2015. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany. Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.": [
     "src/components/site/WelcomeIntro.tsx:17"
   ],
   "None of these is a discontinued product. Where a model does go out of production we will say so here, in those words, with the date.": [
@@ -2701,7 +2725,7 @@
     "src/components/site/ProductDetail.tsx:120"
   ],
   "One chain, one roof": [
-    "src/data/capability.ts:209"
+    "src/data/capability.ts:203"
   ],
   "One contact from sample review to production order.": [
     "src/components/site/menu-experience.ts:117",
@@ -2738,7 +2762,7 @@
     "src/components/site/ModelPreview.tsx:50"
   ],
   "Open download center": [
-    "src/components/site/ServicesView.tsx:103"
+    "src/components/site/ServicesView.tsx:101"
   ],
   "Open full size": [
     "src/components/site/ProductDrawing.tsx:91"
@@ -2789,14 +2813,17 @@
   "Opens this model's listing, with current pricing, MOQ and lead time.": [
     "src/components/site/ProductDetail.tsx:112"
   ],
+  "Operators assembling at the benches": [
+    "src/data/company.ts:360"
+  ],
   "Or email us about this model:": [
     "src/components/site/ProductDetail.tsx:89"
   ],
   "Or start from our catalog": [
-    "src/components/site/ServicesView.tsx:45"
+    "src/components/site/ServicesView.tsx:44"
   ],
   "Or write to us directly:": [
-    "src/components/site/CompanyOverview.tsx:41"
+    "src/components/site/CompanyOverview.tsx:44"
   ],
   "Order {model} on Alibaba": [
     "src/components/site/ProductDetail.tsx:110"
@@ -2870,10 +2897,13 @@
     "src/components/site/ExportMap.tsx:35"
   ],
   "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.": [
-    "src/components/site/CompanyOverview.tsx:29"
+    "src/components/site/CompanyOverview.tsx:30"
   ],
   "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped.": [
     "src/components/site/FactoryStory.tsx:40"
+  ],
+  "Our stamping plant at work: the presses, the machining stations, the assembly benches and the packing area.": [
+    "src/components/site/CompanyOverview.tsx:34"
   ],
   "Our typeface and our product videos are served from our own server. Opening a page does not contact Google Fonts, YouTube or Vimeo.": [
     "src/data/privacy-policy.ts:72"
@@ -2912,7 +2942,7 @@
     "src/components/site/NewsDetail.tsx:164"
   ],
   "Packing + export": [
-    "src/data/capability.ts:180"
+    "src/data/capability.ts:174"
   ],
   "Panic bars for Brazil": [
     "src/components/site/brazil/brazil-data.ts:45",
@@ -3177,9 +3207,6 @@
   "Quality evidence": [
     "src/components/locale-pages/CertificationsPage.tsx:38"
   ],
-  "quality system": [
-    "src/lib/site-facts.ts:67"
-  ],
   "Quality system": [
     "src/data/company.ts:50"
   ],
@@ -3199,7 +3226,7 @@
     "src/lib/article-faq.ts:48"
   ],
   "Quotation, packing and shipping arranged around your Incoterm and destination. Our team works in English and Spanish, and we have an office in Germany for buyers who want to meet in Europe.": [
-    "src/components/site/ServicesView.tsx:92"
+    "src/components/site/ServicesView.tsx:91"
   ],
   "Quotes, pricing and export specialists": [
     "src/components/site/SiteHeader.tsx:108"
@@ -3263,7 +3290,7 @@
     "src/components/site/ProjectDetail.tsx:17"
   ],
   "Representative architectural entrance combining glass, metal and coordinated door hardware": [
-    "src/components/site/ServicesView.tsx:46"
+    "src/components/site/ServicesView.tsx:45"
   ],
   "Representative contacts": [
     "src/components/locale-pages/ContactPage.tsx:119"
@@ -3319,10 +3346,10 @@
     "src/data/finish-codes.ts:98"
   ],
   "Samples of the exact model, function and finish you will order, so the sample you approve is the product that ships, container after container. Samples are charged and the cost is credited against your first production order; a stocked model usually ships within days.": [
-    "src/components/site/ServicesView.tsx:80"
+    "src/components/site/ServicesView.tsx:79"
   ],
   "Samples that decide the order": [
-    "src/components/site/ServicesView.tsx:79"
+    "src/components/site/ServicesView.tsx:78"
   ],
   "Satin": [
     "src/data/finish-codes.ts:330"
@@ -3343,7 +3370,7 @@
     "src/components/locale-pages/DocumentsPage.tsx:41"
   ],
   "Scope": [
-    "src/components/site/CompanyOverview.tsx:35"
+    "src/components/site/CompanyOverview.tsx:38"
   ],
   "Scroll sideways to compare columns. Select a column heading to sort; select it three times to restore source order.": [
     "src/components/site/DataTable.tsx:13"
@@ -3415,13 +3442,13 @@
     "src/components/site/products-architecture.ts:191"
   ],
   "Send a drawing, a sample or a reference model. Our engineers work out the part, we cut the tooling, and you approve samples before a single production piece is made. Tooling cost and the minimum run are quoted per part; on our standard models, most minimums fall between 300 and 5,000 pieces.": [
-    "src/components/site/ServicesView.tsx:62"
+    "src/components/site/ServicesView.tsx:61"
   ],
   "Send a project inquiry": [
     "src/components/site/products-architecture.ts:200"
   ],
   "Send a service brief to Canton Hyland": [
-    "src/components/site/ServicesView.tsx:47"
+    "src/components/site/ServicesView.tsx:46"
   ],
   "Send another inquiry": [
     "src/components/site/InquirySuccess.tsx:10"
@@ -3439,7 +3466,7 @@
     "src/components/locale-pages/CylinderCalculatorPage.tsx:65"
   ],
   "Send the drawing or sample, the target market and your expected annual quantity.": [
-    "src/components/site/ServicesView.tsx:63"
+    "src/components/site/ServicesView.tsx:62"
   ],
   "Send the model, the door preparation and the format you need. We will tell you whether a datasheet, installation guide, CAD drawing or BIM object exists for it, and say so plainly if it does not.": [
     "src/components/locale-pages/DownloadsPage.tsx:159"
@@ -3457,13 +3484,13 @@
     "src/components/site/brazil/BrazilCollection.tsx:52"
   ],
   "Send your brief": [
-    "src/components/site/ServicesView.tsx:56"
+    "src/components/site/ServicesView.tsx:55"
   ],
   "Send your drawing or sample": [
-    "src/components/site/ServicesView.tsx:44"
+    "src/components/site/ServicesView.tsx:43"
   ],
   "Send your logo files, label text and the languages you need.": [
-    "src/components/site/ServicesView.tsx:75"
+    "src/components/site/ServicesView.tsx:74"
   ],
   "Sending…": [
     "src/components/site/BauMeetingForm.tsx:19",
@@ -3490,7 +3517,7 @@
   ],
   "Services": [
     "src/components/site/menu-experience.ts:286",
-    "src/components/site/ServicesView.tsx:40",
+    "src/components/site/ServicesView.tsx:39",
     "src/components/site/SiteHeader.tsx:52"
   ],
   "Set includes": [
@@ -3500,7 +3527,7 @@
     "src/components/site/FactoryStory.tsx:43"
   ],
   "Share the Incoterm and destination port when you know them.": [
-    "src/components/site/ServicesView.tsx:93"
+    "src/components/site/ServicesView.tsx:92"
   ],
   "Share the models, door thickness and required finish to confirm the parts for your order.": [
     "src/components/site/ProductStudies.tsx:58"
@@ -3657,6 +3684,10 @@
     "src/components/site/FactoryStory.tsx:40",
     "src/data/capability.ts:92"
   ],
+  "stamping plant": [
+    "src/data/capability.ts:166",
+    "src/lib/site-facts.ts:67"
+  ],
   "Stand": [
     "src/data/bau-entry.ts:18"
   ],
@@ -3696,7 +3727,7 @@
   ],
   "Step": [
     "src/components/site/Configurator.tsx:77",
-    "src/data/capability.ts:212"
+    "src/data/capability.ts:206"
   ],
   "Still not finding it?": [
     "src/components/locale-pages/ModelLookupPage.tsx:53"
@@ -3741,7 +3772,7 @@
     "src/components/locale-pages/ContactPage.tsx:16"
   ],
   "Talk to the people who make it": [
-    "src/components/site/CompanyOverview.tsx:40"
+    "src/components/site/CompanyOverview.tsx:43"
   ],
   "Technical": [
     "src/components/site/products-architecture.ts:135"
@@ -3762,7 +3793,7 @@
     "src/components/site/ConfiguratorTeaser.tsx:40"
   ],
   "Tell us which product it resembles and where you will sell it.": [
-    "src/components/site/ServicesView.tsx:69"
+    "src/components/site/ServicesView.tsx:68"
   ],
   "Tender / submittal": [
     "src/components/site/DocumentInventory.tsx:34"
@@ -3831,6 +3862,12 @@
   "The arithmetic, with a worked table": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
   ],
+  "The assembly line, with parts staged in bins along the benches": [
+    "src/data/company.ts:353"
+  ],
+  "The automatic carton sealer in the finished-goods packing area": [
+    "src/data/company.ts:367"
+  ],
   "The bolt that actually holds the door shut. The bevel direction decides which way the leaf closes.": [
     "src/data/category-positioning.json"
   ],
@@ -3881,7 +3918,7 @@
     "src/data/category-positioning.json"
   ],
   "The factory": [
-    "src/components/site/CompanyOverview.tsx:27",
+    "src/components/site/CompanyOverview.tsx:28",
     "src/components/site/FactoryStory.tsx:35"
   ],
   "The factory behind the bar": [
@@ -3959,6 +3996,9 @@
   "The polishing line decides whether a satin finish is even across a whole production run.": [
     "src/components/site/FactoryStory.tsx:42"
   ],
+  "The press shop, with parts moving between stations in bins": [
+    "src/data/company.ts:311"
+  ],
   "The Product Finder filters the full catalog by category, type, series, material, finish, door type and certification. Filters combine, counts update as you go, and the address bar keeps your selection — so a narrowed view can be pasted straight into an email to a colleague.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:93"
   ],
@@ -3986,7 +4026,7 @@
   "The record described the wrong kind of part. DS011 is a door stopper rather than a flush bolt, and 072 is the profile lock case that 307's specification names.": [
     "src/components/site/ModelLookup.tsx:62"
   ],
-  "The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another. Much of what we make for private-label customers is certified in our customers' own names, at their request and their cost, so those certificates are theirs to share. CE and ANSI testing in Canton Hyland's own name is being prepared for our core ranges; each new report will appear here, with its scope, as it is issued.": [
+  "The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another.": [
     "src/components/locale-pages/CertificationsPage.tsx:48"
   ],
   "The removable key-operated core. The cylinder decides the key; the lock case decides the function. Because it comes out without disturbing the lock, it is the part a master-key plan is written around.": [
@@ -4104,7 +4144,7 @@
     "src/data/privacy-policy.ts:95"
   ],
   "To quote a new part": [
-    "src/components/site/ServicesView.tsx:48"
+    "src/components/site/ServicesView.tsx:47"
   ],
   "to send occasional product, document and exhibition updates": [
     "src/data/privacy-policy.ts:96"
@@ -4128,7 +4168,7 @@
     "src/data/capability.ts:74"
   ],
   "Tooling cost and the minimum run for a new part are quoted per project, and who owns the mould is written into the same document as the price.": [
-    "src/components/site/ServicesView.tsx:98"
+    "src/components/site/ServicesView.tsx:97"
   ],
   "Top and bottom rods": [
     "src/components/site/brazil/brazil-data.ts:58"
@@ -4247,7 +4287,7 @@
     "src/data/privacy-policy.ts:133"
   ],
   "We are the factory, not a trading office in front of one. Everything below happens on our own floor, from the mould to the carton — which is why a change of finish or a customer's own drawing is a scheduling question here rather than a subcontracting one.": [
-    "src/data/capability.ts:211"
+    "src/data/capability.ts:205"
   ],
   "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.": [
     "src/components/site/InquiryForm.tsx:263"
@@ -4268,16 +4308,16 @@
     "src/data/privacy-policy.ts:102"
   ],
   "We make the hardware that goes on a door, and much of it leaves our factory under our customers' names. After twenty-eight years of that, we know who gets the call when a part fails: the one whose name is on it. We build for that person.": [
-    "src/components/site/CompanyOverview.tsx:24"
+    "src/components/site/CompanyOverview.tsx:25"
   ],
   "We make the metal moulds for our own hardware, which is why a part can be shaped to one market: a hole spacing that matches local frames, a backset for one country's doors, a lever the buyer owns. In the UK and Commonwealth the trade calls this architectural ironmongery; the work is the same. Our 311 exit device was tooled here from a customer's sample, and our AR-4 lock bodies were configured for Argentina.": [
-    "src/components/site/ServicesView.tsx:97"
+    "src/components/site/ServicesView.tsx:96"
   ],
   "We manufacture under our customers' own brands, so the buildings our hardware is installed in are not ours to name. These pages show the combinations rather than the clients: every model listed is one we make and publish, so you can price the whole schedule from them.": [
     "src/components/site/ProjectListing.tsx:25"
   ],
   "We need four things from you": [
-    "src/components/site/ServicesView.tsx:49"
+    "src/components/site/ServicesView.tsx:48"
   ],
   "We publish drawings as SVG, which any CAD package will import and which is dimensionally exact. We do not maintain native DWG files model by model.": [
     "src/components/site/DocumentInventory.tsx:127"
@@ -4353,7 +4393,7 @@
   ],
   "What is tested, and in whose name": [
     "src/components/locale-pages/DownloadsPage.tsx:107",
-    "src/components/site/CompanyOverview.tsx:32"
+    "src/components/site/CompanyOverview.tsx:35"
   ],
   "What is the {m} made from?": [
     "src/lib/product-faq.ts:99"
@@ -4395,7 +4435,7 @@
     "src/lib/product-faq.ts:90"
   ],
   "What we do for a private-label brand": [
-    "src/components/site/ServicesView.tsx:57"
+    "src/components/site/ServicesView.tsx:56"
   ],
   "What we receive (* required)": [
     "src/data/privacy-policy.ts:91"
@@ -4413,10 +4453,10 @@
     "src/components/site/SiteHeader.tsx:541"
   ],
   "Where we are": [
-    "src/components/site/CompanyOverview.tsx:26"
+    "src/components/site/CompanyOverview.tsx:27"
   ],
   "Where you will sell it, and the standard it must meet": [
-    "src/components/site/ServicesView.tsx:52"
+    "src/components/site/ServicesView.tsx:51"
   ],
   "Which {label} options are available for Canton Hyland {name}?": [
     "src/lib/category-guide.ts:151"
@@ -4516,19 +4556,19 @@
     "src/data/privacy-policy.ts:149"
   ],
   "Your brand, on every layer": [
-    "src/components/site/ServicesView.tsx:73"
+    "src/components/site/ServicesView.tsx:72"
   ],
   "Your branding: logo, labels, instruction language, packaging": [
-    "src/components/site/ServicesView.tsx:54"
-  ],
-  "Your carton, your markings, your logo. We ship to distributors, contractors and OEM partners in export markets and issue the documents an importer actually needs at the border rather than after it. Production lead time starts at 30 days from order confirmation; the exact date depends on the models, quantities and finishes on your order.": [
-    "src/data/capability.ts:184"
-  ],
-  "Your expected annual quantity": [
     "src/components/site/ServicesView.tsx:53"
   ],
+  "Your carton, your markings, your logo. We ship to distributors, contractors and OEM partners in export markets and issue the documents an importer actually needs at the border rather than after it. Production lead time starts at 30 days from order confirmation; the exact date depends on the models, quantities and finishes on your order.": [
+    "src/data/capability.ts:178"
+  ],
+  "Your expected annual quantity": [
+    "src/components/site/ServicesView.tsx:52"
+  ],
   "Your logo on the part, your labels, installation instructions in your market's language, and cartons and barcodes to your specification. The hardware arrives ready to sell as yours.": [
-    "src/components/site/ServicesView.tsx:74"
+    "src/components/site/ServicesView.tsx:73"
   ],
   "Your message has been sent to our export team. We look forward to learning about your project.": [
     "src/components/site/InquirySuccess.tsx:10"

@@ -155,23 +155,17 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       titleEs: "Inspección",
       titlePt: "Inspeção",
       body:
-        "Dimensional and functional checks run against the same drawings the catalog publishes, under a quality system audited to ISO 9001. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.",
+        "Dimensional and functional checks run against the same drawings the catalog publishes, and our stamping plant is certified to ISO 9001:2015. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.",
       bodyEs:
-        "Los controles dimensionales y funcionales se hacen contra los mismos planos que publica el catálogo, bajo un sistema de calidad auditado según ISO 9001. La inspección por tercero antes del embarque es bienvenida y no hay que negociarla: díganos qué inspector y reservamos la fecha.",
+        "Los controles dimensionales y funcionales se hacen contra los mismos planos que publica el catálogo, y nuestra planta de estampado está certificada según ISO 9001:2015. La inspección por tercero antes del embarque es bienvenida y no hay que negociarla: díganos qué inspector y reservamos la fecha.",
       bodyPt:
-        "Os controles dimensionais e funcionais são feitos contra os mesmos desenhos que o catálogo publica, sob um sistema de qualidade auditado conforme a ISO 9001. A inspeção por terceiros antes do embarque é bem-vinda e não precisa ser negociada: diga qual inspetor e reservamos a data.",
+        "Os controles dimensionais e funcionais são feitos contra os mesmos desenhos que o catálogo publica, e a nossa unidade de estampagem é certificada pela ISO 9001:2015. A inspeção por terceiros antes do embarque é bem-vinda e não precisa ser negociada: diga qual inspetor e reservamos a data.",
       figure: quality
         ? {
-            value: quality.split(" since ")[0],
-            label: quality.includes(" since ")
-              ? `certified since ${quality.split(" since ")[1]}`
-              : "quality system",
-            labelEs: quality.includes(" since ")
-              ? `certificado desde ${quality.split(" since ")[1]}`
-              : "sistema de calidad",
-            labelPt: quality.includes(" since ")
-              ? `certificado desde ${quality.split(" since ")[1]}`
-              : "sistema de qualidade",
+            value: quality.replace(/\s*stamping plant$/, ""),
+            label: "stamping plant",
+            labelEs: "planta de estampado",
+            labelPt: "unidade de estampagem",
           }
         : null,
     },

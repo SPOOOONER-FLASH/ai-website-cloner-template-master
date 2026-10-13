@@ -147,11 +147,7 @@ export function organisationSchema(): WithContext<Organization> {
           ],
         }
       : {}),
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "certification",
-      name: "ISO 9001",
-    },
+    /* No hasCredential: the ISO 9001:2015 certificate is held by our stamping plant, not by this organization. */
     knowsLanguage: ["en", "es", "zh-CN"],
   };
 }

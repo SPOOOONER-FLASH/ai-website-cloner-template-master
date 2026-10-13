@@ -3,7 +3,7 @@
   "title": "Chrome, Satin Chrome and Satin Nickel 2026: Why Two Suppliers' \"Polished Chrome\" Do Not Match, and How to Specify One That Does",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-13",
   "summary": "Chrome is a thin top layer over nickel, which is why nickel decides how it looks and how long it lasts. This page explains the plating stack, separates polished chrome from satin chrome from satin nickel by the property that actually distinguishes them, gives the codes, and shows from our own 336 finish rows why a finish written as a name rather than a code cannot be reordered.",
   "author": {
     "name": "Johnson Liu",
@@ -66,7 +66,7 @@
     "Across 336 published finish rows, the same finish is written several different ways. \"Satin Nickel (SN)\" appears 41 times and \"Satin nickel\" 38 more. \"Polished Brass (PB)\" appears 68 times, \"polished brass\" 19 times and \"Polished brass (US3)\" 16 times. Chrome appears as \"Chrome Plated (CP)\" 51 times, \"Satin Chrome (SC)\" 18 times and bare \"chrome\" 17 times.",
     "| Written as | Rows |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| \"chrome\", no code | 17 |\n| Satin Nickel (SN) | 41 |\n| \"Satin nickel\", no code | 38 |",
     "Those are not different finishes. They are one finish written inconsistently, and the rows without a code are the ones a buyer cannot reorder from, which is the argument this whole page is making, turned on ourselves.",
-    "It is being normalized against the code table on our finish code page rather than left to tidy itself. Until it is, take the code where a row has one and ask where it does not.",
+    "Take the code where a row has one and ask where it does not.",
     "Where our rows do carry the code, quote it as written: the 70722 DC grip handle set is published in Satin nickel (US15), and the 65SN euro cylinder lists Chrome Plated (CP) and Satin Chrome (SC) among its finishes.",
     "## How to specify chrome so you get the same thing twice",
     "Give the code, not the name. US26D or 626, not \"satin chrome\".",
@@ -99,7 +99,7 @@
       },
       {
         "question": "Do your product pages give finish codes?",
-        "answer": "Inconsistently, and this page is the right place to say so. Across 336 finish rows the same finish is written several ways, \"Satin Nickel (SN)\" 41 times and \"Satin nickel\" 38 more, chrome as \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" and bare \"chrome\". Rows without a code are the ones you cannot reorder from. It is being normalized against our finish code table."
+        "answer": "Inconsistently, and this page is the right place to say so. Across 336 finish rows the same finish is written several ways, \"Satin Nickel (SN)\" 41 times and \"Satin nickel\" 38 more, chrome as \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" and bare \"chrome\". Rows without a code are the ones you cannot reorder from."
       }
     ],
     "es": [
@@ -125,7 +125,7 @@
       },
       {
         "question": "¿Sus fichas dan códigos de acabado?",
-        "answer": "De forma inconsistente, y esta página es el sitio correcto para decirlo. En 336 filas de acabado el mismo acabado se escribe de varias formas: «Satin Nickel (SN)» 41 veces y «Satin nickel» 38 más; el cromo como «Chrome Plated (CP)», «Satin Chrome (SC)» y «chrome» a secas. Las filas sin código son de las que no se puede volver a pedir. Se está normalizando contra nuestra tabla de códigos."
+        "answer": "De forma inconsistente, y esta página es el sitio correcto para decirlo. En 336 filas de acabado el mismo acabado se escribe de varias formas: «Satin Nickel (SN)» 41 veces y «Satin nickel» 38 más; el cromo como «Chrome Plated (CP)», «Satin Chrome (SC)» y «chrome» a secas. Las filas sin código son de las que no se puede volver a pedir."
       }
     ],
     "pt": [
@@ -151,7 +151,7 @@
       },
       {
         "question": "As suas páginas dão códigos de acabamento?",
-        "answer": "De forma inconsistente, e esta página é o lugar certo para o dizer. Em 336 linhas de acabamento o mesmo acabamento é escrito de várias formas: \"Satin Nickel (SN)\" 41 vezes e \"Satin nickel\" mais 38; o cromo como \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" e \"chrome\" sozinho. As linhas sem código são aquelas de que não se pode voltar a pedir. Está sendo normalizado contra a nossa tabela de códigos."
+        "answer": "De forma inconsistente, e esta página é o lugar certo para o dizer. Em 336 linhas de acabamento o mesmo acabamento é escrito de várias formas: \"Satin Nickel (SN)\" 41 vezes e \"Satin nickel\" mais 38; o cromo como \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" e \"chrome\" sozinho. As linhas sem código são aquelas de que não se pode voltar a pedir."
       }
     ]
   },
@@ -202,7 +202,7 @@
     "En 336 filas de acabado publicadas, el mismo acabado se escribe de varias formas. «Satin Nickel (SN)» aparece 41 veces y «Satin nickel» 38 más. «Polished Brass (PB)» aparece 68 veces, «polished brass» 19 y «Polished brass (US3)» 16. El cromo aparece como «Chrome Plated (CP)» 51 veces, «Satin Chrome (SC)» 18 y «chrome» a secas 17.",
     "| Escrito como | Filas |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| «chrome», sin código | 17 |\n| Satin Nickel (SN) | 41 |\n| «Satin nickel», sin código | 38 |",
     "Esos no son acabados distintos. Son un acabado escrito de forma inconsistente, y las filas sin código son justamente de las que un comprador no puede volver a pedir, que es el argumento de toda esta página, vuelto contra nosotros mismos.",
-    "Se está normalizando contra la tabla de códigos de nuestra página de acabados en vez de dejarlo que se ordene solo. Hasta entonces, tome el código donde la fila lo tenga y pregunte donde no.",
+    "Tome el código donde la fila lo tenga y pregunte donde no.",
     "Donde nuestras filas sí llevan el código, cítelo tal como está escrito: el juego de manillón 70722 DC se publica en níquel satinado (US15), y el cilindro europeo 65SN incluye cromado (CP) y cromo satinado (SC) entre sus acabados.",
     "## Cómo especificar cromo para recibir lo mismo dos veces",
     "Dé el código, no el nombre. US26D o 626, no «cromo satinado».",
@@ -258,7 +258,7 @@
     "Em 336 linhas de acabamento publicadas, o mesmo acabamento é escrito de várias formas. \"Satin Nickel (SN)\" aparece 41 vezes e \"Satin nickel\" mais 38. \"Polished Brass (PB)\" aparece 68 vezes, \"polished brass\" 19 e \"Polished brass (US3)\" 16. O cromo aparece como \"Chrome Plated (CP)\" 51 vezes, \"Satin Chrome (SC)\" 18 e \"chrome\" sozinho 17.",
     "| Escrito como | Linhas |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| \"chrome\", sem código | 17 |\n| Satin Nickel (SN) | 41 |\n| \"Satin nickel\", sem código | 38 |",
     "Esses não são acabamentos diferentes. São um acabamento escrito de forma inconsistente, e as linhas sem código são justamente aquelas de que um comprador não pode voltar a pedir, que é o argumento de toda esta página, virado contra nós mesmos.",
-    "Está sendo normalizado contra a tabela de códigos da nossa página de acabamentos em vez de o deixar arrumar-se sozinho. Até lá, tome o código onde a linha o tiver e pergunte onde não tiver.",
+    "Tome o código onde a linha o tiver e pergunte onde não tiver.",
     "Onde as nossas linhas trazem o código, cite-o como está escrito: o conjunto de puxador 70722 DC é publicado em níquel acetinado (US15), e o cilindro europeu 65SN inclui cromado (CP) e cromo acetinado (SC) entre os acabamentos.",
     "## Como especificar cromo para receber o mesmo duas vezes",
     "Dê o código, não o nome. US26D ou 626, não \"cromo acetinado\".",

@@ -3,7 +3,7 @@
   "title": "Exit Device Comparison 2026: Every Push Bar in the Range by Length, Latching and Door",
   "kind": "insight",
   "publishedAt": "2026-09-23",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-13",
   "summary": "44 records sit in our panic exit device family, and only 27 of them are exit devices. Apart from the 315 pry latch and the ABS-and-aluminum 311, every one has an aluminum alloy body and an iron push bar, so the three tables (single doors, pairs, special purposes) compare what differs: length, latching and door, with the missing rows named.",
   "author": {
     "name": "Johnson Liu",
@@ -59,7 +59,7 @@
     "## Records that do not publish enough to compare",
     "Nine devices have a photograph and a page but too few rows to place in a table: the 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S and SH01. Some publish a material and nothing else; for the 312 and the SH01 the material is the only row. The 316-S shares its construction rows with the 316-D (surface mounted, reversible) but not its length. If one of these is the device you want, tell us the leaf and we will confirm the rows before quoting.",
     "## Fire ratings on these pages",
-    "None of these records states a fire duration. Three of them once did (1.5 hours on the 300 and the 310, 2.5 hours on the 307); we removed the figures in October 2026. A fire duration means something only as the rating of a tested door assembly, identified in a report or a listing, and none of these three publishes one. We do not hold a UL listing; the 307 and 311 have been submitted for testing, and until certificate numbers exist we will not imply a listing or a rating for them. Our article on UL 305 explains what a listing is and how to check one.",
+    "None of these records states a fire duration. A fire duration means something only as the rating of a tested door assembly, identified in a report or a listing, and none of these records publishes one. We do not hold a UL listing; the 307 and 311 do not hold certificates today, and until certificate numbers exist we will not imply a listing or a rating for them. Our article on UL 305 explains what a listing is and how to check one.",
     "## Choosing, in four questions",
     "Is it one leaf or a pair? A pair without a center mullion needs top and bottom latching and a coordinator, which narrows the choice to the second table. How wide is the leaf? That decides the length, and whether an adjustable device or a made-to-length one is the economical answer. Does the outside need a key or a lever? Then choose a device that works with the trim you need, or a set like the 311 that includes it. And does the door face something other than an ordinary corridor, a cold store or an alarmed exit? Then the special-purpose table is the place to start.",
     "Send those four answers with the leaf size and the door thickness, and the first reply can name a device and a trim. Send a photograph of a red bar, and the first reply will be these four questions."
@@ -84,7 +84,7 @@
       },
       {
         "question": "Are the fire ratings on your exit device pages certified?",
-        "answer": "No. The 300 and 310 records state 1.5 hours and the 307 states 2.5 hours, but a fire duration means something only as the rating of a tested door assembly named in a report or listing, and none of these publishes one. We do not hold a UL listing; the 307 and 311 have been submitted for testing, and we will not imply a rating until certificate numbers exist."
+        "answer": "No. None of these records states a fire duration: a fire duration means something only as the rating of a tested door assembly named in a report or listing. We do not hold a UL listing, and we will not imply a rating until certificate numbers exist."
       },
       {
         "question": "Why do some of your exit devices show almost no specifications?",
@@ -110,7 +110,7 @@
       },
       {
         "question": "¿Las resistencias al fuego de las fichas de sus dispositivos están certificadas?",
-        "answer": "No. Los registros de la 300 y la 310 indican 1,5 horas y el de la 307 indica 2,5 horas, pero una duración al fuego solo significa algo como clasificación de un conjunto de puerta ensayado que figura en un informe o un listado, y ninguno de ellos lo publica. No tenemos listado UL; la 307 y la 311 se enviaron a ensayo, y no daremos a entender una clasificación mientras no existan números de certificado."
+        "answer": "No. Ninguna de estas fichas indica una duración al fuego: una duración al fuego solo significa algo como clasificación de un conjunto de puerta ensayado, identificado en un informe o un listado. No tenemos listado UL, y no daremos a entender una clasificación mientras no existan números de certificado."
       },
       {
         "question": "¿Por qué algunos de sus dispositivos de salida casi no muestran especificaciones?",
@@ -136,7 +136,7 @@
       },
       {
         "question": "As resistências ao fogo nas páginas dos seus dispositivos são certificadas?",
-        "answer": "Não. Os registros da 300 e da 310 indicam 1,5 hora e o da 307 indica 2,5 horas, mas uma duração ao fogo só significa algo como classificação de um conjunto de porta ensaiado que conste de um relatório ou de uma listagem, e nenhum deles publica isso. Não temos listagem UL; a 307 e a 311 foram enviadas para ensaio, e não vamos insinuar uma classificação enquanto não existirem números de certificado."
+        "answer": "Não. Nenhuma dessas fichas informa uma duração ao fogo: uma duração ao fogo só significa algo como classificação de um conjunto de porta ensaiado, identificado num relatório ou numa listagem. Não temos listagem UL, e não vamos insinuar uma classificação enquanto não existirem números de certificado."
       },
       {
         "question": "Por que alguns dos seus dispositivos de saída quase não mostram especificações?",
@@ -171,7 +171,7 @@
     "## Registros que no publican lo suficiente para comparar",
     "Nueve dispositivos tienen fotografía y ficha pero muy pocas filas para ubicarlos en una tabla: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S y SH01. Algunos publican un material y nada más; en la 312 y la SH01 el material es la única fila. La 316-S comparte sus filas de construcción con la 316-D (de sobreponer, reversible) pero no su largo. Si uno de estos es el dispositivo que busca, díganos la hoja y confirmaremos las filas antes de cotizar.",
     "## Resistencia al fuego en estas fichas",
-    "Ninguno de estos registros indica una duración al fuego. Tres la indicaban (1,5 horas en la 300 y la 310, 2,5 horas en la 307); retiramos esas cifras en octubre de 2026. Una duración al fuego solo significa algo como clasificación de un conjunto de puerta ensayado, identificado en un informe o un listado, y ninguno de estos tres lo publica. No tenemos listado UL; la 307 y la 311 se enviaron a ensayo, y mientras no existan números de certificado no daremos a entender un listado ni una clasificación para ellas. Nuestro artículo sobre UL 305 explica qué es un listado y cómo comprobarlo.",
+    "Ninguno de estos registros indica una duración al fuego. Una duración al fuego solo significa algo como clasificación de un conjunto de puerta ensayado, identificado en un informe o un listado, y ninguna de estas fichas lo publica. No tenemos listado UL; la 307 y la 311 no tienen certificados hoy, y mientras no existan números de certificado no daremos a entender un listado ni una clasificación para ellas. Nuestro artículo sobre UL 305 explica qué es un listado y cómo comprobarlo.",
     "## Cómo elegir, en cuatro preguntas",
     "¿Es una hoja o dos? Una puerta de dos hojas sin montante central necesita trabado arriba y abajo y un selector de cierre, lo que reduce la elección a la segunda tabla. ¿Qué ancho tiene la hoja? Eso decide el largo, y si la respuesta económica es un dispositivo regulable o uno a medida. ¿Hace falta llave o manija por fuera? Entonces elija un dispositivo que trabaje con la guarnición que necesita, o un juego como la 311 que la incluye. ¿Y la puerta da a algo distinto de un pasillo común, una cámara frigorífica o una salida con alarma? Entonces la tabla de usos especiales es el lugar donde empezar.",
     "Envíe esas cuatro respuestas con la medida de la hoja y el espesor de la puerta, y la primera respuesta podrá nombrar un dispositivo y una guarnición. Envíe la foto de una barra roja, y la primera respuesta serán estas cuatro preguntas."
@@ -203,7 +203,7 @@
     "## Registros que não publicam o suficiente para comparar",
     "Nove dispositivos têm fotografia e página, mas poucas linhas para entrar numa tabela: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S e SH01. Alguns publicam um material e nada mais; na 312 e na SH01 o material é a única linha. A 316-S compartilha as linhas de construção com a 316-D (de sobrepor, reversível), mas não o comprimento. Se um destes for o dispositivo que você quer, diga a folha e confirmaremos as linhas antes de cotar.",
     "## Resistência ao fogo nestas páginas",
-    "Nenhum desses registros traz uma duração ao fogo. Três traziam (1,5 hora na 300 e na 310, 2,5 horas na 307); retiramos esses números em outubro de 2026. Uma duração ao fogo só significa algo como classificação de um conjunto de porta ensaiado, identificado num relatório ou numa listagem, e nenhum dos três publica isso. Não temos listagem UL; a 307 e a 311 foram enviadas para ensaio, e enquanto não existirem números de certificado não vamos insinuar uma listagem nem uma classificação para elas. Nosso artigo sobre a UL 305 explica o que é uma listagem e como conferi-la.",
+    "Nenhum desses registros traz uma duração ao fogo. Uma duração ao fogo só significa algo como classificação de um conjunto de porta ensaiado, identificado num relatório ou numa listagem, e nenhuma dessas fichas publica isso. Não temos listagem UL; a 307 e a 311 não têm certificados hoje, e enquanto não existirem números de certificado não vamos insinuar uma listagem nem uma classificação para elas. Nosso artigo sobre a UL 305 explica o que é uma listagem e como conferi-la.",
     "## Como escolher, em quatro perguntas",
     "É uma folha ou duas? Uma porta de duas folhas sem montante central precisa de travamento em cima e embaixo e de um coordenador de fechamento, o que reduz a escolha à segunda tabela. Qual a largura da folha? Isso decide o comprimento, e se a resposta econômica é um dispositivo regulável ou um feito sob medida. Precisa de chave ou maçaneta por fora? Então escolha um dispositivo que trabalhe com a maçaneta externa de que você precisa, ou um conjunto como a 311, que já a inclui. E a porta dá para algo diferente de um corredor comum, uma câmara fria ou uma saída com alarme? Então a tabela de usos especiais é o lugar para começar.",
     "Envie essas quatro respostas com a medida da folha e a espessura da porta, e a primeira resposta pode indicar um dispositivo e uma maçaneta externa. Envie a foto de uma barra vermelha, e a primeira resposta serão estas quatro perguntas."

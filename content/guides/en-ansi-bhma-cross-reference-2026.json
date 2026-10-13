@@ -3,6 +3,7 @@
   "title": "EN to ANSI/BHMA Cross-Reference 2026: What Maps, What Does Not, and Why",
   "kind": "insight",
   "publishedAt": "2026-09-21",
+  "updatedAt": "2026-10-13",
   "summary": "Specifiers ask for a conversion table between EN and ANSI/BHMA door hardware standards. What exists is a scope map, not an equivalence: the two systems classify different properties, and a product certified to one carries no automatic claim under the other. This page sets out which standard covers which product family on each side, what each one measures, and the four places the mapping genuinely breaks.",
   "author": {
     "name": "Johnson Liu",
@@ -50,7 +51,7 @@
     "Third, the fire test pressure differs. The neutral pressure plane used in the European and North American furnace tests is not the same, so an EN 1634-1 result cannot be read across to UL 10C or NFPA 252 even for an identical assembly. This is the technical core of why a European fire door certificate does not satisfy a North American authority having jurisdiction.",
     "Fourth, the finish codes are a naming system, not a performance grade. US26D, BHMA 626 and a factory code like SN can all describe the same satin finish, and none of them states corrosion performance. That is EN 1670's job, and a finish code carries no EN 1670 class with it.",
     "## What we hold, stated plainly",
-    "EN 1125 test reports exist for specific models in our exit device range, much of it in our customers' names; CE and ANSI testing in our own name is being prepared. We do not hold ANSI/BHMA grades or UL listings on this range today. Two models, 307 and 311, are in testing for North American certification and no certificate number exists yet.",
+    "EN 1125 test reports exist for specific models in our exit device range. We do not hold ANSI/BHMA grades or UL listings on this range today.",
     "That sentence is written this way because UL Product iQ and the BHMA certified product directory are both publicly searchable, and a specifier writes certificate numbers into submittal documents. A claim that cannot survive a search costs more than the order it was meant to win.",
     "If a project needs an ANSI/BHMA grade or a UL listing today, the honest answer is that an EN 1125 report does not substitute for it, and we would rather say that now than after a container has shipped.",
     "## How to write a specification that works in both markets",
@@ -81,7 +82,7 @@
       },
       {
         "question": "Does Canton Hyland hold ANSI or UL certification?",
-        "answer": "Not today on the exit device range. EN 1125 test reports exist for specific models, much of it in our customers' names, and CE and ANSI testing in our own name is being prepared. Models 307 and 311 are in testing for North American certification and no certificate number exists yet. UL Product iQ and the BHMA directory are publicly searchable, which is why this is stated plainly rather than implied."
+        "answer": "Not today on the exit device range. EN 1125 test reports exist for specific models. UL Product iQ and the BHMA directory are publicly searchable, which is why this is stated plainly rather than implied."
       }
     ],
     "es": [
@@ -107,7 +108,7 @@
       },
       {
         "question": "¿Canton Hyland tiene certificación ANSI o UL?",
-        "answer": "Hoy no, en la gama de antipánico. Hay informes de ensayo EN 1125 para modelos concretos, buena parte a nombre de nuestros clientes, y los ensayos CE y ANSI a nuestro propio nombre están en preparación. Los modelos 307 y 311 están en ensayo para certificación norteamericana y todavía no existe número de certificado. UL Product iQ y el directorio BHMA son públicos, por eso esto se dice claramente en vez de insinuarse."
+        "answer": "Hoy no, en la gama de antipánico. Hay informes de ensayo EN 1125 para modelos concretos. UL Product iQ y el directorio BHMA son públicos, por eso esto se dice claramente en vez de insinuarse."
       }
     ],
     "pt": [
@@ -133,7 +134,7 @@
       },
       {
         "question": "A Canton Hyland tem certificação ANSI ou UL?",
-        "answer": "Hoje não, na linha de antipânico. Existem relatórios de ensaio EN 1125 para modelos específicos, boa parte em nome dos nossos clientes, e os ensaios CE e ANSI em nosso próprio nome estão em preparação. Os modelos 307 e 311 estão em ensaio para certificação norte-americana e ainda não existe número de certificado. O UL Product iQ e o diretório BHMA são públicos, por isso isto é dito claramente em vez de insinuado."
+        "answer": "Hoje não, na linha de antipânico. Existem relatórios de ensaio EN 1125 para modelos específicos. O UL Product iQ e o diretório BHMA são públicos, por isso isto é dito claramente em vez de insinuado."
       }
     ]
   },
@@ -163,7 +164,7 @@
     "Tercero, la presión del ensayo de fuego difiere. El plano de presión neutra de los hornos europeo y norteamericano no es el mismo, así que un resultado EN 1634-1 no puede trasladarse a UL 10C ni a NFPA 252 ni siquiera para un conjunto idéntico. Ese es el núcleo técnico de por qué un certificado de puerta cortafuego europeo no satisface a una autoridad competente norteamericana.",
     "Cuarto, los códigos de acabado son un sistema de nombres, no un grado de desempeño. US26D, BHMA 626 y un código de fábrica como SN pueden describir el mismo satinado, y ninguno declara comportamiento frente a la corrosión. Eso es trabajo de EN 1670, y un código de acabado no lleva ninguna clase EN 1670 consigo.",
     "## Lo que tenemos, dicho claramente",
-    "Hay informes de ensayo EN 1125 para modelos concretos de nuestra gama de antipánico, buena parte a nombre de nuestros clientes; los ensayos CE y ANSI a nuestro propio nombre están en preparación. Hoy no tenemos grados ANSI/BHMA ni listados UL en esta gama. Dos modelos, 307 y 311, están en ensayo para certificación norteamericana y todavía no existe número de certificado.",
+    "Hay informes de ensayo EN 1125 para modelos concretos de nuestra gama de antipánico. Hoy no tenemos grados ANSI/BHMA ni listados UL en esta gama.",
     "Esta frase está escrita así porque UL Product iQ y el directorio de productos certificados BHMA son públicamente consultables, y un prescriptor escribe números de certificado en los documentos de aprobación. Una afirmación que no sobrevive a una búsqueda cuesta más que el pedido que pretendía ganar.",
     "Si una obra necesita hoy un grado ANSI/BHMA o un listado UL, la respuesta honesta es que un informe EN 1125 no lo sustituye, y preferimos decirlo ahora y no después de que haya salido un contenedor.",
     "## Cómo escribir una especificación que funcione en los dos mercados",
@@ -196,7 +197,7 @@
     "Terceiro, a pressão do ensaio de fogo difere. O plano de pressão neutra dos fornos europeu e norte-americano não é o mesmo, então um resultado EN 1634-1 não pode ser transferido para UL 10C nem NFPA 252 nem para um conjunto idêntico. Esse é o núcleo técnico de por que um certificado de porta corta-fogo europeu não satisfaz uma autoridade competente norte-americana.",
     "Quarto, os códigos de acabamento são um sistema de nomes, não um grau de desempenho. US26D, BHMA 626 e um código de fábrica como SN podem descrever o mesmo acetinado, e nenhum declara comportamento frente à corrosão. Isso é trabalho da EN 1670, e um código de acabamento não carrega nenhuma classe EN 1670 consigo.",
     "## O que temos, dito claramente",
-    "Existem relatórios de ensaio EN 1125 para modelos específicos da nossa linha de antipânico, boa parte em nome dos nossos clientes; os ensaios CE e ANSI em nosso próprio nome estão em preparação. Hoje não temos graus ANSI/BHMA nem listings UL nesta linha. Dois modelos, 307 e 311, estão em ensaio para certificação norte-americana e ainda não existe número de certificado.",
+    "Existem relatórios de ensaio EN 1125 para modelos específicos da nossa linha de antipânico. Hoje não temos graus ANSI/BHMA nem listings UL nesta linha.",
     "Esta frase está escrita assim porque o UL Product iQ e o diretório de produtos certificados BHMA são publicamente pesquisáveis, e um especificador escreve números de certificado nos documentos de aprovação. Uma afirmação que não sobrevive a uma busca custa mais do que o pedido que pretendia ganhar.",
     "Se uma obra precisa hoje de um grau ANSI/BHMA ou de um listing UL, a resposta honesta é que um relatório EN 1125 não substitui, e preferimos dizer agora e não depois de um contêiner ter partido.",
     "## Como escrever uma especificação que funcione nos dois mercados",
