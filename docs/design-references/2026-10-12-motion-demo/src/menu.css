@@ -1,0 +1,288 @@
+/* Mega-menu preview (menu.html), revised plan of 2026-10-13. Every selector is scoped under .pv-menu:
+   styles.css and inner.css load on the same page for the product preview underneath. Tokens are the
+   live site's (globals.css, 1rem = 10px there), written in px because this demo's root is 16px. */
+
+.pv-menu {
+  --ink: #11110f;
+  --ink-2: #6e6e73; /* ink-secondary, 5.0:1 on white: every grey line here */
+  --ink-3: #8e8e93; /* ink-tertiary: icons only, never text */
+  --line: #deddd8;
+  --hard: #d4d4ce;
+  --surface: #ffffff;
+  --motion-fast: 180ms;
+  --motion-medium: 260ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-crisp: cubic-bezier(0.33, 0, 0.2, 1);
+  --c1: clamp(16px, 0.191vw + 15.25px, 17px);
+  --l1: 25px;
+  --outset: clamp(16px, 1.5282vw + 9.994px, 32px);
+  --head-h: 123px; /* 72 top row + 1 rule + 50 rail, measured live at 1376–1599 */
+}
+@media (min-width: 1600px) { .pv-menu { --head-h: 72px; } }
+
+.pv-menu .pv-band { width: min(100% - 2 * var(--outset), 1376px); margin-inline: auto; }
+.pv-menu p { margin: 0; }
+.pv-menu ul { list-style: none; margin: 0; padding: 0; }
+.pv-menu button { font: inherit; cursor: pointer; }
+
+/* ---------- header ---------- */
+.pv-menu .pv-head {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--surface); color: var(--ink);
+  font-size: var(--c1); line-height: var(--l1);
+}
+.pv-menu .pv-top { display: flex; align-items: center; justify-content: space-between; gap: 32px; height: 72px; padding-top: 24px; }
+.pv-menu .pv-wide { display: none; gap: 16px; white-space: nowrap; }
+.pv-menu .pv-mark { display: flex; align-items: center; flex: none; }
+/* The live header artwork (hyde-logo-horizontal-black.svg) at HydeLockup's h-32: a 24px H. */
+.pv-menu .pv-mark img { height: 32px; width: auto; }
+.pv-menu .pv-tools { display: flex; align-items: center; gap: 24px; }
+.pv-menu .pv-langs { display: flex; gap: 14px; font-size: 13px; line-height: 18px; letter-spacing: 0.24px; color: var(--ink-2); }
+.pv-menu .pv-langs a:not(.on) { display: none; }
+.pv-menu .pv-langs .on { color: var(--ink); }
+.pv-menu .pv-icon { position: relative; display: grid; place-items: center; width: 20px; height: 20px; padding: 0; border: 0; background: none; color: var(--ink-3); }
+.pv-menu .pv-icon::before { content: ""; position: absolute; inset: -12px; } /* 44px target, 20px glyph */
+.pv-menu .pv-icon svg { width: 20px; height: 20px; }
+
+.pv-menu .pv-railbar { border-top: 1px solid var(--line); box-shadow: inset 0 -1px var(--line); } /* bottom line drawn inside, so the header stays 123px */
+.pv-menu .pv-railrow { display: flex; align-items: center; gap: 16px; }
+.pv-menu .pv-rail {
+  display: flex; align-items: center; gap: 20px; flex: 1; min-width: 0;
+  overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; white-space: nowrap;
+  mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent 100%);
+}
+.pv-menu [dir="rtl"] .pv-rail { mask-image: linear-gradient(to left, #000 calc(100% - 24px), transparent 100%); }
+.pv-menu .pv-rail::-webkit-scrollbar { display: none; }
+.pv-menu .ri {
+  flex: none; padding-block: 14px; border: 0; background: none; color: var(--ink);
+  font-size: 14px; line-height: 20px; letter-spacing: 0.28px;
+}
+/* Inset ring: the rail's overflow-x clips anything drawn outside the item. Shelf triggers (.nm)
+   show focus with their 2px marker instead, so marker and ring do not stack. */
+.pv-menu .ri:focus-visible { outline-offset: -2px; }
+.pv-menu .ri.nm:focus-visible { outline: none; }
+.pv-menu .cur { font-weight: 600; } /* current-nav: bold = you are here */
+.pv-menu .pv-cta {
+  flex: none; display: inline-flex; align-items: center; gap: 8px; margin-block: 8px;
+  border: 1px solid var(--ink); background: var(--ink); color: var(--surface);
+  padding: 6px 14px; font-size: 14px; font-weight: 600; line-height: 20px;
+}
+/* Stage 2b: the chevron turns down while the Buy shelf is open. U+203A is bidi-mirrored, so in RTL
+   it draws as ‹ and turns the other way to point down. */
+.pv-menu .pv-cta .chev { display: inline-block; transition: rotate var(--motion-fast) var(--motion-ease-crisp); }
+.pv-menu .pv-cta[aria-expanded="true"] .chev { rotate: 90deg; }
+.pv-menu [dir="rtl"] .pv-cta[aria-expanded="true"] .chev { rotate: -90deg; }
+
+.pv-menu .xl { display: none !important; }
+@media (min-width: 1376px) {
+  .pv-menu .xl { display: inline-flex !important; }
+  .pv-menu .lt-xl { display: none !important; }
+  .pv-menu .pv-langs a:not(.on) { display: inline; }
+  .pv-menu .pv-tools { gap: 32px; }
+}
+@media (min-width: 1600px) {
+  .pv-menu .pv-wide { display: flex; align-items: center; }
+  .pv-menu .pv-mark { flex: 1; justify-content: center; }
+  .pv-menu .pv-railbar { display: none; }
+}
+
+/* Triggers. The 2px marker is held while a shelf is open (data-open: the Products link carries no
+   aria-expanded). In the rail it is inset so overflow-x does not clip it. */
+.pv-menu .nm { position: relative; display: inline-block; padding: 0; border: 0; background: none; color: var(--ink); --mb: -8px; }
+.pv-menu .ri.nm { --mb: 8px; padding-block: 14px; }
+.pv-menu .mk { position: relative; display: inline-block; --mb: -4px; }
+.pv-menu .nm::after,
+.pv-menu .mk::after {
+  content: ""; position: absolute; inset-inline-start: 0; bottom: var(--mb);
+  width: min(64px, 100%); height: 2px; background: currentColor;
+  opacity: 0; transform: scaleX(0); transform-origin: left center;
+  transition: opacity var(--motion-fast) var(--motion-ease-crisp), transform var(--motion-fast) var(--motion-ease-crisp);
+}
+.pv-menu [dir="rtl"] .nm::after,
+.pv-menu [dir="rtl"] .mk::after { transform-origin: right center; }
+.pv-menu .nm[data-open]::after,
+.pv-menu .nm:focus-visible::after,
+.pv-menu a:focus-visible > .mk::after,
+.pv-menu a:focus-visible .pv-itrow > .mk::after { opacity: 1; transform: scaleX(1); }
+@media (hover: hover) {
+  .pv-menu .nm:hover::after,
+  .pv-menu a:hover > .mk::after,
+  .pv-menu a:hover .pv-itrow > .mk::after { opacity: 1; transform: scaleX(1); }
+  .pv-menu .pv-icon:hover { color: var(--ink); }
+}
+
+/* Products disclosure: visually hidden until keyboard focus; absolute, so the row never shifts. */
+.pv-menu .pv-pair { position: relative; display: inline-flex; align-items: center; }
+.pv-menu .pv-disc {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap; border: 0; background: var(--surface); color: var(--ink);
+}
+/* Exactly fills the gap (16px wide nav, 20px rail): the inset ring wraps the 12px glyph and touches neither label. */
+.pv-menu .pv-disc:focus-visible {
+  inset-inline-start: 100%; top: 50%; translate: 0 -50%; margin: 0; background: transparent;
+  display: grid; place-items: center; width: 16px; height: 24px; overflow: visible; clip-path: none;
+  outline: 2px solid var(--ink); outline-offset: -2px; z-index: 1;
+}
+.pv-menu .pv-rail .pv-disc:focus-visible { width: 20px; }
+.pv-menu .pv-disc svg { transition: rotate var(--motion-fast) var(--motion-ease-crisp); }
+.pv-menu .pv-disc[aria-expanded="true"] svg { rotate: 180deg; }
+
+/* ---------- shelf: the live mechanics (globals.css .header-shelf), unchanged ---------- */
+.pv-menu .pv-shelf {
+  position: absolute; top: 100%; inset-inline-start: 0; z-index: 20;
+  display: grid; width: 100%; grid-template-rows: 0fr;
+  border-bottom: 1px solid transparent; background: var(--surface);
+  opacity: 0; pointer-events: none; transform: translateY(-8px); visibility: hidden;
+  transition:
+    grid-template-rows var(--motion-medium) var(--motion-ease),
+    opacity var(--motion-fast) var(--motion-ease-crisp),
+    transform var(--motion-medium) var(--motion-ease),
+    visibility 0s linear var(--motion-medium);
+}
+.pv-menu .pv-shelf:focus { outline: none; } /* tabindex -1 only holds focus for a click on blank space */
+.pv-menu .pv-shelf.open {
+  grid-template-rows: 1fr; border-bottom-color: var(--line);
+  opacity: 1; pointer-events: auto; transform: translateY(0); visibility: visible; transition-delay: 0s;
+}
+/* Switching between open shelves replaces one panel with the next in one frame. */
+.pv-menu [data-shelf-swap] .pv-shelf { transition: none; }
+.pv-menu .pv-clip { min-height: 0; overflow: hidden; }
+/* Short screens: the body scrolls inside the shelf below the header (123px rail, 72px one-row), and
+   Lenis leaves it alone (data-lenis-prevent). */
+.pv-menu .pv-scroll { max-height: calc(100svh - var(--head-h)); overflow-y: auto; overscroll-behavior: contain; }
+.pv-menu .pv-pad { padding-block: 24px 32px; }
+@media (max-width: 1375.98px) {
+  .pv-menu .pv-shelf { display: none; } /* no shelves below xl: the rail and drawer serve those widths */
+  .pv-menu .pin-xl { display: none; }
+}
+
+/* ---------- the sheet: ledger (4 tracks) + four 5-track columns, 24-column grid ---------- */
+.pv-menu .pv-g24 { display: grid; grid-template-columns: repeat(24, minmax(0, 1fr)); column-gap: 16px; align-items: start; }
+.pv-menu .pv-ledger { grid-column: span 4; padding-top: 12px; }
+.pv-menu .pv-col { grid-column: span 5; border-top: 1px solid var(--ink); }
+.pv-menu .pv-ledger.pv-ruled { border-top: 1px solid var(--ink); }
+.pv-menu .pv-col-cta { border-top: 0; }
+
+.pv-menu :is(.pv-sm, .pv-dt) { text-wrap: pretty; } /* no one-word last line ("OEM", "references") */
+/* RTL mirrors the header but the copy is still English: keep its full stops, question mark and date
+   order. unicode-bidi is not inherited, so every text block (incl. the BAU .pv-line rows) gets it. */
+.pv-menu [dir="rtl"] .pv-shelf :is(p, .pv-dt, .pv-line) { unicode-bidi: plaintext; text-align: right; }
+.pv-menu .pv-sm { font-size: 13px; line-height: 18px; letter-spacing: 0.24px; color: var(--ink-2); }
+.pv-menu .pv-fig { font-weight: 600; font-variant-numeric: tabular-nums; }
+.pv-menu .pv-strong { font-weight: 600; }
+.pv-menu .pv-note { margin-top: 48px; }
+.pv-menu .pv-tool { display: block; width: fit-content; margin-top: 4px; }
+.pv-menu .pv-tool + .pv-tool { margin-top: 24px; } /* Studio does not answer "no model number" */
+.pv-menu .pv-mail { margin-top: 12px; }
+
+/* Products: group heading under an ink rule, families as hairline rows, 50px pitch. */
+.pv-menu .pv-gh { padding-block: 12px; border-bottom: 1px solid var(--line); font-size: 13px; line-height: 18px; font-weight: 600; letter-spacing: 0.24px; }
+.pv-menu .pv-famrow { padding-block: 12px; border-bottom: 1px solid var(--line); }
+.pv-menu .pv-fam { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.pv-menu .pv-fam .mk { min-width: 0; }
+.pv-menu .pv-fam[aria-current] .mk { font-weight: 600; }
+.pv-menu .pv-ct { flex: none; font-size: 13px; line-height: 18px; font-variant-numeric: tabular-nums; text-align: end; color: var(--ink-2); }
+/* 24px pitch, no indent: WCAG 2.2 SC 2.5.8 target spacing. */
+.pv-menu .pv-subs { margin-top: 4px; }
+.pv-menu .pv-subs a {
+  display: flex; min-height: 24px; align-items: center; width: fit-content;
+  font-size: 13px; line-height: 18px; letter-spacing: 0.24px; color: var(--ink-2);
+  transition: color var(--motion-fast) var(--motion-ease-crisp);
+}
+.pv-menu .pv-subs a:hover, .pv-menu .pv-subs a:focus-visible { color: var(--ink); }
+
+/* Company, Resources, Buy: single-row tables, ink rule on top only. */
+.pv-menu .pv-item { display: block; padding-block: 12px 16px; }
+.pv-menu .pv-itrow { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.pv-menu .pv-it { font-weight: 600; }
+.pv-menu .pv-dt { display: block; margin-top: 4px; font-size: 13px; line-height: 18px; letter-spacing: 0.24px; color: var(--ink-2); }
+.pv-menu .pv-line { display: block; }
+
+/* The only filled action in any shelf (locked: ink block, 9px hard plane). Margins are physical
+   because box-shadow is physical: the plane ends on the content edge in LTR and RTL alike. */
+.pv-menu .pv-ali {
+  display: flex; min-height: 96px; align-items: center; justify-content: space-between; gap: 16px;
+  margin-right: 9px; margin-bottom: 9px;
+  border: 1px solid var(--ink); background: var(--ink); box-shadow: 9px 9px 0 var(--hard); color: var(--surface);
+  padding: 16px 24px; font-size: 20px; font-weight: 600; line-height: 26px;
+  transition: box-shadow var(--motion-fast) var(--motion-ease-crisp), transform var(--motion-fast) var(--motion-ease-crisp);
+}
+.pv-menu .pv-ali:focus-visible { box-shadow: 12px 12px 0 var(--hard); outline: 2px solid var(--ink); outline-offset: 6px; transform: translate(-5px, -5px); }
+.pv-menu .pv-ali:active { box-shadow: 2px 2px 0 var(--hard); transform: translate(5px, 5px); }
+@media (hover: hover) { .pv-menu .pv-ali:hover { box-shadow: 12px 12px 0 var(--hard); transform: translate(-5px, -5px); } }
+
+/* ---------- drawer: concierge unchanged; family list in the four groups ---------- */
+.pv-menu .pv-drawer-wrap { position: fixed; inset: 0; z-index: 60; }
+.pv-menu .pv-scrim { position: absolute; inset: 0; background: rgba(17, 17, 15, 0.32); }
+.pv-menu .pv-drawer {
+  position: absolute; inset-block: 0; inset-inline-end: 0; width: min(100%, 440px);
+  overflow-y: auto; overscroll-behavior: contain; background: var(--surface); color: var(--ink);
+  padding: 0 var(--outset) 96px; font-size: 16px; line-height: 22px;
+}
+.pv-menu .pv-dr-head { display: flex; align-items: center; justify-content: space-between; height: 72px; padding-top: 24px; }
+.pv-menu .pv-dr-head img { height: 32px; width: auto; }
+.pv-menu .pv-dr-title { margin-top: 16px; font-size: 20px; line-height: 26px; font-weight: 600; }
+.pv-menu .pv-dr-routes { margin-top: 12px; }
+.pv-menu .pv-dr-routes a { display: block; padding-block: 12px; border-top: 1px solid var(--line); }
+.pv-menu .pv-dr-detail { display: block; margin-top: 2px; font-size: 13px; line-height: 18px; color: var(--ink-2); }
+.pv-menu .pv-dr-fam { margin-top: 24px; }
+.pv-menu .pv-dr-fam summary {
+  display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none;
+  padding-block: 18px; border-block: 1px solid var(--line); font-size: var(--c1);
+}
+.pv-menu .pv-dr-fam summary::-webkit-details-marker { display: none; }
+.pv-menu .pv-dr-fam[open] summary svg { rotate: 180deg; }
+.pv-menu .pv-dr-group + .pv-dr-group { margin-top: 8px; }
+/* Sentence case, 13/600 ink: not .drawer-eyebrow, which is tracked caps. */
+.pv-menu .pv-dr-gh { padding-top: 16px; padding-bottom: 4px; font-size: 13px; line-height: 18px; font-weight: 600; letter-spacing: 0.24px; }
+.pv-menu .pv-dr-link {
+  display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 11px 0; border: 0; background: none; color: var(--ink); text-align: start; font-size: 16px; line-height: 22px;
+}
+.pv-menu .pv-dr-count { flex: none; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; line-height: 18px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.pv-menu .pv-dr-link svg { transition: rotate var(--motion-fast) var(--motion-ease-crisp); }
+.pv-menu .pv-dr-link[aria-expanded="true"] svg { rotate: 180deg; }
+.pv-menu .pv-dr-sub { margin-inline-start: 2px; border-inline-start: 1px solid var(--line); padding-inline-start: 16px; }
+.pv-menu .pv-dr-sub .pv-dr-link { padding-block: 9px; font-size: 15px; }
+/* Live contact block and footer (EditorialCatalogue.module.css .contact / .menuFooter). */
+.pv-menu .pv-dr-contact { margin-top: 32px; border-top: 1px solid var(--ink); padding-top: 16px; }
+.pv-menu .pv-dr-promise { margin-bottom: 12px; font-size: 20px; line-height: 24px; font-weight: 500; letter-spacing: -0.5px; text-wrap: pretty; }
+.pv-menu .pv-dr-foot {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 32px;
+  border-top: 1px solid var(--line); padding-block: 20px; font-size: 13px; line-height: 18px; color: var(--ink-2);
+}
+.pv-menu .pv-dr-foot .mk { color: var(--ink); }
+.pv-menu a.mk:focus-visible::after { opacity: 1; transform: scaleX(1); }
+@media (hover: hover) { .pv-menu a.mk:hover::after { opacity: 1; transform: scaleX(1); } }
+/* The family list is the phone's (live .mobileFamilies shows below 768px only). */
+@media (min-width: 768px) { .pv-menu .pv-dr-fam { display: none; } }
+
+/* ---------- reviewer control ---------- */
+.pv-menu .pv-pin {
+  position: fixed; left: 10px; bottom: 10px; z-index: 70;
+  display: flex; flex-wrap: wrap; max-width: calc(100% - 20px);
+  border: 1px solid var(--ink); background: var(--surface); color: var(--ink); font-size: 13px; line-height: 18px;
+}
+.pv-menu .pv-pin > span { padding: 8px 10px; color: var(--ink-2); }
+.pv-menu .pv-pin button { padding: 8px 12px; border: 0; border-inline-start: 1px solid var(--ink); background: none; color: inherit; font-weight: 600; }
+.pv-menu .pv-pin button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+
+/* ---------- the 307 preview underneath sits below this header instead of its own ---------- */
+.pv-menu .ih { display: none; }
+.pv-menu .product { padding-top: 0; }
+/* One edge for header and page, as on the live site: the page takes the header's band. */
+.pv-menu .product .wrap { width: min(100% - 2 * var(--outset), 1376px); max-width: none; padding-inline: 0; margin-inline: auto; }
+.pv-menu .secnav { top: var(--head-h); }
+.pv-menu .buybox { top: calc(var(--head-h) + 24px); }
+.pv-menu .chapter-side .sticky { top: calc(var(--head-h) + 84px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .pv-menu .pv-shelf,
+  .pv-menu .nm::after,
+  .pv-menu .mk::after,
+  .pv-menu .pv-subs a,
+  .pv-menu .pv-cta .chev,
+  .pv-menu .pv-disc svg,
+  .pv-menu .pv-dr-link svg,
+  .pv-menu .pv-ali { transition: none; }
+}

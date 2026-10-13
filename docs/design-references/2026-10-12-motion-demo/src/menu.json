@@ -1,0 +1,421 @@
+{
+  "generatedBy": "docs/design-references/2026-10-12-motion-demo/prep-menu.mjs",
+  "snapshot": "2026-10-13",
+  "labels": {
+    "products": "Products",
+    "finder": "Product Finder",
+    "company": "Company",
+    "guides": "Guides",
+    "news": "News",
+    "resources": "Resources",
+    "buy": "Buy it now",
+    "drawerFamilies": "All product families"
+  },
+  "products": {
+    "total": 549,
+    "recordsLabel": "verified product records",
+    "noModel": "No model number yet?",
+    "tools": [
+      {
+        "label": "Configurator",
+        "href": "https://cantonlock.com/configurator/"
+      },
+      {
+        "label": "Configurator Studio",
+        "href": "https://cantonlock.com/configurator/studio/"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Exit devices and closers",
+        "families": [
+          {
+            "slug": "panic-exit-devices",
+            "label": "Panic Exit Devices",
+            "count": 44,
+            "href": "https://cantonlock.com/products/panic-exit-devices/",
+            "children": [
+              {
+                "slug": "fire-door",
+                "label": "Fire Door Devices",
+                "href": "https://cantonlock.com/collections/panic-exit-devices-fire-door/"
+              },
+              {
+                "slug": "alarmed",
+                "label": "Alarmed Devices",
+                "href": "https://cantonlock.com/collections/panic-exit-devices-alarmed/"
+              },
+              {
+                "slug": "multi-point",
+                "label": "Multi-Point Locking",
+                "href": "https://cantonlock.com/collections/panic-exit-devices-multi-point/"
+              },
+              {
+                "slug": "exterior-trim",
+                "label": "Exterior Trim",
+                "href": "https://cantonlock.com/collections/panic-exit-devices-exterior-trim/"
+              },
+              {
+                "slug": "special-applications",
+                "label": "Special Applications",
+                "href": "https://cantonlock.com/collections/panic-exit-devices-special-applications/"
+              }
+            ]
+          },
+          {
+            "slug": "door-closers",
+            "label": "Door Closers",
+            "count": 7,
+            "href": "https://cantonlock.com/products/door-closers/",
+            "children": []
+          },
+          {
+            "slug": "floor-springs-and-pivots",
+            "label": "Floor Springs and Door Pivots",
+            "count": 28,
+            "href": "https://cantonlock.com/products/floor-springs-and-pivots/",
+            "children": [
+              {
+                "slug": "floor-springs",
+                "label": "Floor Springs",
+                "href": "https://cantonlock.com/collections/floor-springs-and-pivots-floor-springs/"
+              },
+              {
+                "slug": "top-pivots",
+                "label": "Top Pivots",
+                "href": "https://cantonlock.com/collections/floor-springs-and-pivots-top-pivots/"
+              },
+              {
+                "slug": "pivot-top-patches",
+                "label": "Glass Door Top Patches",
+                "href": "https://cantonlock.com/collections/floor-springs-and-pivots-pivot-top-patches/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Locks and cylinders",
+        "families": [
+          {
+            "slug": "lock-cases",
+            "label": "Lock Cases",
+            "count": 48,
+            "href": "https://cantonlock.com/products/lock-cases/",
+            "children": []
+          },
+          {
+            "slug": "lock-cylinders",
+            "label": "Lock Cylinders",
+            "count": 45,
+            "href": "https://cantonlock.com/products/lock-cylinders/",
+            "children": []
+          },
+          {
+            "slug": "knob-locks",
+            "label": "Knob Locks",
+            "count": 59,
+            "href": "https://cantonlock.com/products/knob-locks/",
+            "children": [
+              {
+                "slug": "commercial-locks",
+                "label": "Commercial Locks",
+                "href": "https://cantonlock.com/collections/knob-locks-commercial-locks/"
+              },
+              {
+                "slug": "heavy-duty-cylindrical-locks",
+                "label": "Heavy Duty Cylindrical Locks",
+                "href": "https://cantonlock.com/collections/knob-locks-heavy-duty-cylindrical-locks/"
+              },
+              {
+                "slug": "light-duty-cylindrical-locks",
+                "label": "Light Duty Cylindrical Locks",
+                "href": "https://cantonlock.com/collections/knob-locks-light-duty-cylindrical-locks/"
+              },
+              {
+                "slug": "tubular-locks",
+                "label": "Tubular Locks",
+                "href": "https://cantonlock.com/collections/knob-locks-tubular-locks/"
+              }
+            ]
+          },
+          {
+            "slug": "deadbolts",
+            "label": "Deadbolts",
+            "count": 12,
+            "href": "https://cantonlock.com/products/deadbolts/",
+            "children": []
+          },
+          {
+            "slug": "night-latches-rim-locks",
+            "label": "Night Latches & Rim Locks",
+            "count": 25,
+            "href": "https://cantonlock.com/products/night-latches-rim-locks/",
+            "children": []
+          },
+          {
+            "slug": "sliding-hook-locks",
+            "label": "Sliding Hook Locks",
+            "count": 3,
+            "href": "https://cantonlock.com/products/sliding-hook-locks/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "Handles and glass-door fittings",
+        "families": [
+          {
+            "slug": "lever-handles",
+            "label": "Lever Handles",
+            "count": 49,
+            "href": "https://cantonlock.com/products/lever-handles/",
+            "children": []
+          },
+          {
+            "slug": "stainless-steel-handles",
+            "label": "Stainless Steel Handles",
+            "count": 43,
+            "href": "https://cantonlock.com/products/stainless-steel-handles/",
+            "children": []
+          },
+          {
+            "slug": "grip-handle-sets",
+            "label": "Grip Handle Sets",
+            "count": 14,
+            "href": "https://cantonlock.com/products/grip-handle-sets/",
+            "children": []
+          },
+          {
+            "slug": "glass-door-accessories",
+            "label": "Glass Door Accessories",
+            "count": 23,
+            "href": "https://cantonlock.com/products/glass-door-accessories/",
+            "children": [
+              {
+                "slug": "glass-door-patch-fittings",
+                "label": "Glass Door Patch Fittings",
+                "href": "https://cantonlock.com/collections/glass-door-accessories-glass-door-patch-fittings/"
+              },
+              {
+                "slug": "glass-door-handles",
+                "label": "Glass Door Handles",
+                "href": "https://cantonlock.com/collections/glass-door-accessories-glass-door-handles/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hinges and accessories",
+        "families": [
+          {
+            "slug": "brass-steel-hinges",
+            "label": "Brass & Steel Door Hinges",
+            "count": 30,
+            "href": "https://cantonlock.com/products/brass-steel-hinges/",
+            "children": []
+          },
+          {
+            "slug": "hardware-accessories",
+            "label": "Hardware Accessories",
+            "count": 69,
+            "href": "https://cantonlock.com/products/hardware-accessories/",
+            "children": [
+              {
+                "slug": "armoured-lock-covers",
+                "label": "Armoured Lock Covers",
+                "href": "https://cantonlock.com/collections/hardware-accessories-armoured-lock-covers/"
+              },
+              {
+                "slug": "door-viewers",
+                "label": "Door Viewers",
+                "href": "https://cantonlock.com/collections/hardware-accessories-door-viewers/"
+              },
+              {
+                "slug": "door-stoppers",
+                "label": "Door Stoppers",
+                "href": "https://cantonlock.com/collections/hardware-accessories-door-stoppers/"
+              },
+              {
+                "slug": "power-transfer-devices",
+                "label": "Power Transfer Devices",
+                "href": "https://cantonlock.com/collections/hardware-accessories-power-transfer-devices/"
+              },
+              {
+                "slug": "door-flush-bolts",
+                "label": "Door Flush Bolts",
+                "href": "https://cantonlock.com/collections/hardware-accessories-door-flush-bolts/"
+              },
+              {
+                "slug": "house-numbers",
+                "label": "House Numbers",
+                "href": "https://cantonlock.com/collections/hardware-accessories-house-numbers/"
+              },
+              {
+                "slug": "indicators",
+                "label": "Indicators",
+                "href": "https://cantonlock.com/collections/hardware-accessories-indicators/"
+              },
+              {
+                "slug": "latches",
+                "label": "Latches",
+                "href": "https://cantonlock.com/collections/hardware-accessories-latches/"
+              },
+              {
+                "slug": "security-door-guards",
+                "label": "Security Door Guards",
+                "href": "https://cantonlock.com/collections/hardware-accessories-security-door-guards/"
+              }
+            ]
+          },
+          {
+            "slug": "bathroom-accessories",
+            "label": "Bathroom Accessories",
+            "count": 42,
+            "href": "https://cantonlock.com/products/bathroom-accessories/",
+            "children": []
+          },
+          {
+            "slug": "care-grab-bars",
+            "label": "Care Grab Bars",
+            "count": 8,
+            "href": "https://cantonlock.com/products/care-grab-bars/",
+            "children": [
+              {
+                "slug": "flip-up-grab-bars",
+                "label": "Flip-Up Grab Bars",
+                "href": "https://cantonlock.com/collections/care-grab-bars-flip-up-grab-bars/"
+              },
+              {
+                "slug": "fixed-grab-bars",
+                "label": "Fixed Grab Bars",
+                "href": "https://cantonlock.com/collections/care-grab-bars-fixed-grab-bars/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "company": {
+    "legalName": "Canton Hyland Hardware & Building Material Co., Ltd.",
+    "town": "Zhongshan, Guangdong",
+    "items": [
+      {
+        "label": "Company overview",
+        "detail": "Manufacturing since 1998",
+        "href": "https://cantonlock.com/company/"
+      },
+      {
+        "label": "Services",
+        "detail": "OEM tooling, private label, export",
+        "href": "https://cantonlock.com/services/"
+      },
+      {
+        "label": "Events",
+        "detail": "Meet HYDE in global markets",
+        "href": "https://cantonlock.com/events/"
+      },
+      {
+        "label": "Certificates",
+        "detail": "Verified model-scoped reports",
+        "href": "https://cantonlock.com/certifications/"
+      }
+    ],
+    "bau": {
+      "endDate": "2027-01-15",
+      "year": "2027",
+      "venue": "Messe München",
+      "dates": "11 – 15 Jan 2027",
+      "hall": "Hall C4",
+      "stand": "Stand 523"
+    }
+  },
+  "resources": {
+    "latest": {
+      "label": "Newest guide",
+      "title": "Custom Door Hardware and Ironmongery: How We Tool a Part for Your Market",
+      "href": "https://cantonlock.com/guides/custom-door-hardware-tooling-2026/",
+      "date": "Sep 25, 2026"
+    },
+    "items": [
+      {
+        "label": "Applications",
+        "detail": "What each building type takes",
+        "count": 5,
+        "href": "https://cantonlock.com/projects/"
+      },
+      {
+        "label": "Guides",
+        "detail": "Size charts, standards and selection references",
+        "count": 45,
+        "href": "https://cantonlock.com/guides/"
+      },
+      {
+        "label": "News",
+        "detail": "Short answers to what buyers ask",
+        "count": 37,
+        "href": "https://cantonlock.com/news/"
+      },
+      {
+        "label": "Glossary",
+        "detail": "The terms on our specification tables, defined",
+        "count": 23,
+        "href": "https://cantonlock.com/glossary/"
+      }
+    ]
+  },
+  "buy": {
+    "promise": "One contact from sample review to production order.",
+    "email": "tec@cantonlock.com",
+    "items": [
+      {
+        "label": "Contact",
+        "detail": "Quotes, pricing and export specialists",
+        "href": "https://cantonlock.com/contact/"
+      },
+      {
+        "label": "FAQ",
+        "detail": "Minimum order, lead time, samples, payment, OEM",
+        "href": "https://cantonlock.com/faq/"
+      },
+      {
+        "label": "Downloads",
+        "detail": "Catalog and verified documents",
+        "href": "https://cantonlock.com/downloads/"
+      }
+    ],
+    "alibaba": {
+      "label": "Buy on Alibaba",
+      "href": "https://cnhyland.en.alibaba.com/"
+    }
+  },
+  "drawer": {
+    "concierge": {
+      "title": "What are you trying to specify?",
+      "routes": [
+        {
+          "label": "I want to see it",
+          "detail": "Switch finish and function on the real part and read off the order code",
+          "href": "https://cantonlock.com/configurator/studio/"
+        },
+        {
+          "label": "I know the model",
+          "detail": "Browse and filter published models",
+          "href": "https://cantonlock.com/product-finder/"
+        },
+        {
+          "label": "I know the door",
+          "detail": "Choose an opening and build the hardware set",
+          "href": "https://cantonlock.com/configurator/"
+        },
+        {
+          "label": "I need an engineer",
+          "detail": "Send the door schedule to our export team",
+          "href": "https://cantonlock.com/contact/"
+        }
+      ]
+    }
+  }
+}
