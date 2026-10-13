@@ -1594,6 +1594,82 @@
       "faq": "147c77b5742a"
     }
   },
+  "exit-device-locking-method-2026": {
+    "title": "Acil Çıkış Cihazında Kilitleme Yöntemi 2026: Yüzeye Monte, Yüzeye Monte Dikey Çubuklu, Gizli Dikey Çubuklu veya Gömme Kilitli, ve Hangisi Nereye Uyar",
+    "summary": "Bir acil çıkış cihazı iki kez seçilir: bir kez onu kullanacak insanlara göre, bir kez de kapıyı nasıl kilitlediğine göre. Yüzeye monte cihazlar kasada tek noktadan kilitlenir ve tek kanatlı kapılara ve orta kayıtlı çift kanatlı kapılara uyar. Yüzeye monte ve gizli dikey çubuklar üstte ve zeminde kilitlenir ve orta kayıtsız çift kanatlı kapılara uyar; karşılığında temiz tutulması gereken bir zemin karşılığı gerekir. Gömme kilitli cihazlar kapı kenarındaki bir kilit kasası üzerinden kilitlenir. Bu rehber her birinin nereye uyduğunu, EN 1125 ve UL 305'in yapılandırma hakkında ne söylediğini ve cihazlarımızdan hangisinin hangisi olduğunu anlatır.",
+    "seoTitle": "Acil çıkış cihazı 2026: yüzeye monte, dikey çubuk, gömme",
+    "seoDescription": "Yüzeye monte, dikey çubuklu (açık veya gizli) ya da gömme kilitli acil çıkış cihazı: çift kanatlı ve yangın kapılarında hangisi uyar. EN 1125, UL 305.",
+    "body": [
+      "Bir acil çıkış cihazı iki kez seçilir. İlk seçim insanlarla ilgilidir: çıkışın EN 1125'e göre bir panik bara mı yoksa EN 179'a göre bir acil durum koluna mı ihtiyaç duyduğu; bunu EN 1125 ile EN 179 arasındaki seçim üzerine rehberimiz ele alır. İkincisi kapıyla ilgilidir: cihazın kapıyı nasıl kilitlediği.",
+      "Bu ikinci seçimin dört cevabı vardır: yüzeye monte, yüzeye monte dikey çubuklu, gizli dikey çubuklu ve gömme kilitli. Kilitleme noktalarının nerede olacağına, kasanın ve zeminin neler sağlaması gerektiğine ve açıklığın kullanımda kaldığı sürece ne kadar bakım isteyeceğine bu seçim karar verir. Bu rehber dördünü, her birinin nereye uyduğunu ve kendi cihazlarımızdan hangisinin hangisi olduğunu anlatır.",
+      "## Dört yöntem yan yana",
+      "| Yöntem | Kilitleme noktaları | Olağan kullanım | Açıklığın sağlaması gereken | Dikkat edilecek nokta |\n| --- | --- | --- | --- | --- |\n| Yüzeye monte | bir, kilit tarafında | tek kanatlı kapılar; orta kayıtlı çift kanatlı kapılar | kasada veya orta kayıtta bir karşılık sacı | çift kanatlı kapı orta kayıt ister |\n| Yüzeye monte dikey çubuk | iki, üstte ve zeminde | orta kayıtsız çift kanatlı kapılar | bir üst karşılık ve bir zemin karşılığı | açıkta kalan çubuklar; zemin karşılığı |\n| Gizli dikey çubuk | iki, üstte ve zeminde | çubukların görünmemesi gereken çift kanatlı kapılar | çubuklar için hazırlanmış kanat; üst ve zemin karşılığı | ayarlaması ve onarımı daha zor |\n| Gömme kilitli | bir, kapı kenarındaki kilit kasası üzerinden | tek kanatlı kapılar; çift kanatlı kapının aktif kanadı | kilit kasası için hazırlanmış kapı kenarı | kasa hazırlığı siparişten önce belirlenir |",
+      "## Yüzeye monte cihazlar",
+      "Yüzeye monte bir cihaz dilini kapı yüzeyindeki uç gövdede taşır ve kilit tarafında kasadaki bir karşılık sacına kilitlenir. Dördü arasında takması ve bakımı en kolay olanıdır, kapı kenarına hiçbir şey açılmaz ve tek kanatlı bir kaçış kapısı için olağan seçimdir.",
+      "Çift kanatlı bir kapıda yüzeye monte cihaz ancak her kanadın kilitlenecek bir yeri varsa çalışır: kanatlar arasında bir orta kayıt. Sabit bir orta kayıt net geçiş genişliğini kalıcı olarak daraltır; anahtarla çıkarılan sökülebilir bir orta kayıt, ekipman geçmesi gerektiğinde tam genişliği geri verir. Yangına dayanıklı çift kanatlı bir kapıda orta kayıt da sistemin parçasıdır, bu yüzden kapının sertifikasının kapsadığı bir kayıt olmalıdır.",
+      "300 ve 302 modellerimiz, boyu ayarlanabilen tek kanat için yüzeye monte panik barlardır: 900mm ve 1040mm. Acil çıkış cihazları karşılaştırma rehberimiz ürün yelpazesindeki her yüzeye monte cihazı boyuna göre listeler.",
+      "## Yüzeye monte dikey çubuklu cihazlar",
+      "Yüzeye monte dikey çubuklu bir cihaz, kanat yüzeyindeki iki çubuğu hareket ettirir: biri kasanın üstündeki bir dile, diğeri zemindeki bir dile gider. Böylece çift kanatlı kapının her kanadı komşu kanada değil kasaya ve zemine kilitlenir; orta kayda gerek kalmaz ve iki kanat da kaçış için açılabilir.",
+      "Bunun bedeli alt dildir. Alt dil zeminin içindeki ya da üstündeki bir karşılığa girer ve zemin, bir binanın donanıma en sert davrandığı yerdir: toz ve kum karşılığı doldurur, arabalar ve temizlik makineleri çubuğa çarpar, yeni bir zemin kaplaması yüksekliği değiştirir ve menteşelerinde sarkan bir kanat karşılığa hiç ulaşamaz hale gelir. Artık kilitlenmeyen bir alt dil, kanadı yalnızca üstten tutulur halde bırakır.",
+      "Bu yüzden birçok cihaz alt çubuksuz olarak da sunulur: alt çubuk ve zemin karşılığı çıkarılır ve kanat yalnızca üstte kilitlenir. Sıradan bir kapıda bu bir bakım kararıdır. Yangına dayanıklı çift kanatlı bir kapıda ise bir sertifika meselesidir, çünkü test edilen yapılandırmada alt dil vardı; Amerika Birleşik Devletleri'ndeki üreticiler alt çubuksuz seçeneği yangın kapılarında genellikle yalnızca listeleme izin veriyorsa ve çoğu zaman ek bir yangın pimiyle kabul eder. Çubuğu çıkarmadan önce kapının ve cihazın sertifikasını kontrol edin.",
+      "316-D modelimiz, kaydında üstten ve alttan kilitleme belirtilen, çift kanatlı kapılar için yüzeye monte bir cihazdır; yukarıdaki fotoğraf parçalarını gösterir. 308-D üstte ve altta kilitlenen dikey çubuklarla birlikte gelir, 320 ise üst kasaya ve eşiğe kilitlenen iki noktalı bir panik bardır.",
+      "## Gizli dikey çubuklu cihazlar",
+      "Gizli dikey çubuklu bir cihaz aynı işi çubukları kanadın içinde tutarak yapar. Kapı yüzeyi temiz kalır ve çubuklar vandalizmden ve arabalardan korunur; bu yüzden kamu binalarında ve görünümün önemli olduğu kapılarda tercih edilir.",
+      "Kanadın çubuklar için üretilmesi veya hazırlanması gerekir; bu da onu sonradan eklenecek bir şey değil, kapı üreticisinin kararı yapar. Ayar ve onarım kapıyı açmayı gerektirir, alt dil ve zemin karşılığı da yüzeye monte çubuktaki sorunların aynısını taşır. Kataloğumuzda gizli dikey çubuklu bir cihaz bulunmuyor; bir projenin buna ihtiyacı olduğunda yerine yüzeye monte bir cihaz önermek yerine bunu açıkça söyleriz.",
+      "## Gömme kilitli acil çıkış cihazları",
+      "Gömme kilitli bir acil çıkış cihazı, kapı kenarına gömülü bir kilit kasasını çalıştırır. Kilitleme, yüzeye monte cihazdaki gibi kilit tarafında tek bir noktadır ama kapının içindedir ve dış donanım ile silindir kasa üzerinden çalışır. Kapıda zaten gömme bir kilit ve anahtarlı bir dış fonksiyon varsa ya da gerekiyorsa olağan cevap budur.",
+      "Kilit kasası hazırlığı siparişten önce belirlenir: kilit merkez mesafesi, eksen mesafesi ve silindir delikleri kapıyla eşleşmelidir, yoksa cihaz yerine oturmaz. 307 modelimiz, 65mm kilit merkez mesafesi, 72mm eksen mesafesi ve iki Avrupa tipi silindir deliği belirtilen 072 kilit kasasıyla çalışır. 311 ise kilit gövdesi, pirinç silindir ve paslanmaz çelik kolla birlikte set olarak satılır; silindir eksen mesafeleri 72mm ve 92mm'dir.",
+      "## Çift kanatlı kapılar: kilitlemenin üç yolu",
+      "İki kanatta da yüzeye monte cihaz, orta kayıtla: takması ve bakımı kolaydır, bedeli açıklıktaki orta kayıttır.",
+      "İki kanatta da dikey çubuk, orta kayıt olmadan: tam genişlik kullanılabilir ve iki kanat da kaçış için açılır, bedeli temiz tutulması gereken iki zemin karşılığıdır.",
+      "Pasif kanatta dikey çubuklu bir cihaz, aktif kanatta ise pasif kanada takılı bir karşılığa kilitlenen yüzeye monte veya gömme kilitli bir cihaz: bir kanat her gün, diğeri yalnızca kaçış veya ekipman geçişi için kullanılıyorsa olağan düzen budur.",
+      "Kanatları bindirmeli her çift kanatlı kapıda kanatların doğru sırayla kapanması da gerekir; bu, kapanma sırası düzenleyicinin işidir. Kapanmadıklarında ne olduğunu yangın kapılarının yıllık denetimi üzerine rehberimiz anlatır. Kaçış için açılması gereken bir pasif kanatta gömme sürgüler bir cihazın yerini tutmaz, çünkü sürgü ikinci bir hareket ekler.",
+      "## EN 1125 ve UL 305'in yöntem hakkında söyledikleri",
+      "Avrupa'da panik çıkış cihazları EN 1125'e göre test edilir, sınıflandırılır ve CE işareti taşır. Sınıflandırma, kapı uygulama alanını, yani cihazın tek kanatlı kapıya mı, aktif kanada mı yoksa pasif kanada mı uygun olduğunu ve yangın ile duman kapılarına uygunluğunu içerir. Bir cihaz, test edildiği yapılandırmada sertifikalandırılır: üst ve alt diller, belirli bir karşılık, belirtilmiş bir kapı boyutu. Alt çubuğu çıkarmak veya karşılığı değiştirmek bu yapılandırmayı değiştirmektir.",
+      "Amerika Birleşik Devletleri'nde UL 305 panik donanımı standardıdır. Bir yangın kapısında cihazın yangın çıkış donanımı olması, UL 305'e ve yangın testi UL 10C'ye göre listelenmiş olması gerekir; listeleme kapsadığı kapı boyutlarını, yapılandırmaları ve sınırlamaları belirtir. Yangın çıkış donanımında mekanik açık tutma (dogging) yoktur, çünkü bir yangın kapısı kilitli kalmalıdır.",
+      "Bugün acil çıkış cihazlarımızın hiçbiri EN 1125 sertifikasına veya UL 305 listelemesine sahip değildir ve ürün sayfalarımızın hiçbiri aksini ima etmez. Bir proje bunlardan birini gerektiriyorsa bize sorun; hangi cihazların karşılayabileceğini ve hangilerinin karşılayamayacağını açıkça söyleriz.",
+      "## Beş soruda seçim",
+      "Tek kanat mı, çift kanat mı? Tek kanatlı bir kapıya genellikle yüzeye monte veya gömme kilitli bir cihaz takılır.",
+      "Çift kanatlı kapıda açıklıkta bir orta kayıt kabul edilebilir mi? Evetse yüzeye monte cihazlar, hayırsa dikey çubuklar.",
+      "Açıklık yangına dayanıklı mı? O zaman yöntem, karşılıklar ve alt çubuksuz seçeneklerin tümü kapının ve cihazın sertifikası kapsamında olmalıdır.",
+      "Zemin beş yıl sonra nasıl olacak? Dış eşikler, yoğun araba trafiği ve sık zemin temizliği, sertifikanın izin verdiği yerde alt çubuksuz seçeneği ya da orta kaydı öne çıkarır.",
+      "Bakımı kim yapacak? Yüzeye monte bir cihaz tornavidayla ayarlanır; gizli olan kapıyı açmayı gerektirir. Cevapları kanat ölçüsü ve kapı kalınlığıyla birlikte gönderin, ilk yanıt bir cihaz önerebilir."
+    ],
+    "faq": [
+      {
+        "question": "Yüzeye monte acil çıkış cihazı ile dikey çubuklu cihaz arasındaki fark nedir?",
+        "answer": "Yüzeye monte cihaz, kilit tarafında tek bir noktadan kasadaki veya orta kayıttaki bir karşılığa kilitlenir. Dikey çubuklu cihaz iki noktadan, kasanın üstünde ve zeminde kilitlenir; böylece çift kanatlı bir kapı orta kayda ihtiyaç duymaz."
+      },
+      {
+        "question": "Gizli dikey çubuk yerine yüzeye monte dikey çubuk ne zaman kullanılmalı?",
+        "answer": "Yüzeye monte dikey çubuk kanadın yüzeyine takılır, ayarlaması ve onarımı daha kolaydır. Gizli dikey çubuk bunun için üretilmiş veya hazırlanmış bir kanadın içinden geçer, yüzeyi temiz tutar ve çubukları darbelerden korur, ancak ayar ve onarım kapıyı açmayı gerektirir."
+      },
+      {
+        "question": "Acil çıkış cihazında alt çubuksuz ne demektir?",
+        "answer": "Alt çubuk ve zemin karşılığı çıkarılır ve kanat yalnızca üstte kilitlenir. Zemin karşılığından kurtarır, ancak yangına dayanıklı çift kanatlı bir kapıda yalnızca kapının ve cihazın sertifikası izin veriyorsa, çoğu zaman ek bir yangın pimiyle kabul edilir."
+      },
+      {
+        "question": "Yüzeye monte cihazlı çift kanatlı bir kapı orta kayıt gerektirir mi?",
+        "answer": "Evet. Her yüzeye monte cihazın kilitleneceği bir karşılığa ihtiyacı vardır ve çift kanatlı kapıda bu karşılık kanatlar arasındaki bir orta kayıttadır. Sökülebilir bir orta kayıt, tam genişlik gerektiğinde anahtarla çıkarılabilir."
+      },
+      {
+        "question": "Gömme kilitli acil çıkış cihazı nedir?",
+        "answer": "Kapı kenarına gömülü bir kilit kasasını çalıştıran cihazdır. 307 modelimiz 65mm kilit merkez mesafesi ve 72mm eksen mesafesi belirtilen 072 kasasıyla çalışır; 311 kilit gövdesi, pirinç silindir ve kolla birlikte set olarak satılır."
+      },
+      {
+        "question": "Acil çıkış cihazlarınız EN 1125 sertifikalı veya UL 305 listeli mi?",
+        "answer": "Bugün değil. Acil çıkış cihazlarımızın hiçbiri EN 1125 sertifikasına veya UL 305 listelemesine sahip değildir ve sayfalarımızın hiçbiri aksini ima etmez. Bir proje bunlardan birini gerektiriyorsa bize sorun; hangi cihazların karşılayabileceğini ve hangilerinin karşılayamayacağını açıkça söyleriz."
+      }
+    ],
+    "sourceHash": {
+      "title": "804e4259c91b",
+      "summary": "d567cab52cd0",
+      "seoTitle": "b4cc025bcbb4",
+      "seoDescription": "bb10d74a1a8e",
+      "body": "d9623e15acc5",
+      "faq": "fc23e4baab35"
+    }
+  },
   "exit-device-outside-trim-functions-2026": {
     "title": "Panik Çıkış Cihazı Dış Kolu 2026: Tüm Dış Kol Fonksiyonları, Dogging Kuralları ve Kararın Neden Asla Bar Olmadığı",
     "summary": "İçerideki bar her zaman insanları dışarı çıkarır; dış kol kimin gireceğine, kapının mesai saatlerinde kilitsiz tutulup tutulamayacağına ve yangında hâlâ uygun olup olmadığına karar verir. Dili geri çekili tutan dogging, yangın kapısına yönelik her panik çıkış cihazında yasaktır, çünkü bir yangın kapısı kilitli kalarak işlev görür. Bu sayfa tüm dış kol işlevlerini, 4 cihaz tipini ve her birinin aldığı kolları, mekanik ve silindirli dogging farkını ve 15 dış kolumuzdan kaçının işlevini yayımladığını karşılaştırır.",
