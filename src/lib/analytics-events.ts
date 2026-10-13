@@ -41,6 +41,8 @@ export interface LeadEvent {
   page?: string;
   /** First-touch source of the session — "chatgpt", "google", "direct" (first-touch.ts). */
   firstTouch?: string;
+  /** The guide or news article whose quote link the buyer followed (`guides/<slug>`), 2026-10-12. */
+  sourceArticle?: string;
 }
 
 /**
@@ -59,6 +61,7 @@ export function trackLead(event: LeadEvent, gtag = globalThis.window?.gtag): voi
       ...(event.model ? { model: event.model } : {}),
       ...(event.page ? { page_path: event.page } : {}),
       ...(event.firstTouch ? { first_touch: event.firstTouch } : {}),
+      ...(event.sourceArticle ? { source_article: event.sourceArticle } : {}),
     });
   } catch {
     // An ad blocker, a consent tool, or a stubbed gtag in a test. Never surface it.

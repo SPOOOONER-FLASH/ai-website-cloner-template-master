@@ -49,3 +49,19 @@ test("GA4 client ID is read from the _ga cookie only", async () => {
   assert.equal(gaClientId("_ga_RBTE7KF82P=GS1.1.1727654321.1.0.1727654321.0.0.0"), null);
   assert.equal(gaClientId(""), null);
 });
+
+test("article pages in every locale count as articles, and a link list names its placement (2026-10-12)", () => {
+  assert.equal(pageType("/fr/guides/strike-plates-and-keeps-2026/"), "article");
+  assert.equal(pageType("/ar/news/finish-codes-us26d-626-630/"), "article");
+  assert.equal(pageType("/ja/products/lock-cases/"), "category");
+  const from = "/fr/guides/strike-plates-and-keeps-2026/";
+  assert.deepEqual(linkIntent("/fr/products/knob-locks/575-abet-tubular-lock/", from, "article-products"), {
+    name: "select_item",
+    params: { item_id: "575-abet-tubular-lock", item_list_name: "article-products" },
+  });
+  assert.deepEqual(linkIntent("/fr/contact/#model=575", from, "article-products"), {
+    name: "contact_click",
+    params: { method: "form", page_type: "article", placement: "article-products" },
+  });
+  assert.equal(linkIntent("/fr/products/knob-locks/575-abet-tubular-lock/", from)?.params.item_list_name, "article");
+});

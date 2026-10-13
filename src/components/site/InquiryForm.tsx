@@ -245,7 +245,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       await submitInquiry(payload);
 
       // 询盘已经送达。计数失败绝不能把成功面板带下去 —— trackLead 自身不抛。
-      trackLead({ locale, model, page: globalThis.location?.pathname, firstTouch });
+      trackLead({ locale, model, page: globalThis.location?.pathname, firstTouch, sourceArticle });
 
       form.reset();
       setProduct("");
