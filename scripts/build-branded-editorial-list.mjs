@@ -91,6 +91,15 @@ const DOCUMENTED_FACTORY_PHOTOGRAPHS = [
     photograph.
   */
   "factory-laser-cutter.webp",
+  /*
+    2026-10-13, the homepage factory story. IMAGE_CREDITS.md had both as "Accept for demo;
+    verify authenticity" because of their polished look and the Hyland signage in frame. The
+    client answered the question directly after seeing them in the motion demo —
+    「是啊是自家的实拍」 — the same one-file-at-a-time confirmation the CNC photograph got on
+    2026-09-17. The signage is the factory's own (the company is Canton Hyland) and stays.
+  */
+  "factory-polishing-workshop.webp",
+  "factory-assembly-quality-line.webp",
 ];
 
 /*

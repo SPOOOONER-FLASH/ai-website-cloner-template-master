@@ -30,3 +30,15 @@
 - **Release check (engineering session):** 66dcac4 is live. The curtain and the 5 steps work. A first jump straight into the story showed black frames for about 2.5 s while the lazy stage photos loaded.
 - **Fix:** `StoryStage` now observes the section with `rootMargin: 150% 0px` and, on first approach, sets the stage images to `loading="eager"`.
 - **Live check on origin** (`https://cantonlock.com/?nocache=…`; plain `/` is still the Cloudflare-cached old page until the client purges): wheel-scrolled with Lenis, `data-shot` stepped onnnn → ponnn → pponn → pppon → ppppo, `--story-p` reached 1.0, and all 5 stage images loaded.
+
+## 2026-10-13: the recording's polishing and assembly photos, confirmed and swapped in
+
+- **Client:** asked whether `factory-polishing-workshop.webp` and `factory-assembly-quality-line.webp` are real photographs of their own factory, answered 「是啊是自家的实拍」.
+- **Records:**
+  - IMAGE_CREDITS.md: both rows changed from "verify authenticity" to "confirmed 2026-10-13", plus a paragraph saying only these two were cleared.
+  - `build-branded-editorial-list.mjs` → `DOCUMENTED_FACTORY_PHOTOGRAPHS`, with branded-company-list.json regenerated.
+  - HYDE-marked copies in `company-hyde/`; responsive 480/960/1440 variants for both libraries.
+- **Story:** steps 4 and 5 now use these photos via new `factoryPolishingWorkshop` / `factoryAssemblyLine` (company.ts). The company page and `companyEditorialStudies` are unchanged.
+- **Signage:** the Hyland sign and bins in frame are the factory's own and are not retouched.
+- **Assembly text:** the step sentence used to describe the old photo (bagging, pallets). It now matches the new one, in ten languages.
+- **Retired photos:** `polishing-line` and `assembly-line` stay on the company page; copies are in Desktop `hyde\待用参考图片\工厂故事-换下的图`.

@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import type { Locale } from "@/data/site";
-import { companyEditorialStudies, factoryCncMachining } from "@/data/company";
+import { companyEditorialStudies, factoryAssemblyLine, factoryCncMachining, factoryPolishingWorkshop } from "@/data/company";
 import { dict } from "@/lib/i18n";
 import { getResponsiveEditorialImageProps } from "./editorial-images";
 import { StoryStage } from "./StoryStage";
@@ -25,8 +25,9 @@ const STEP_IMAGES = [
   "/images/company/factory-laser-cutter.webp",
   "/images/company/press-shop.webp",
   "/images/company/factory-cnc-machining.webp",
-  "/images/company/polishing-line.webp",
-  "/images/company/assembly-line.webp",
+  // The demo's polishing and assembly photographs, confirmed as the factory's own 2026-10-13.
+  "/images/company/factory-polishing-workshop.webp",
+  "/images/company/factory-assembly-quality-line.webp",
 ];
 
 const copy = {
@@ -39,7 +40,7 @@ const copy = {
       { title: "Stamping", text: "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped." },
       { title: "Machining", text: "CNC machining in house, on the same site as the press shop." },
       { title: "Polishing", text: "The polishing line decides whether a satin finish is even across a whole production run." },
-      { title: "Assembly and inspection", text: "Sets are built, checked and bagged at the benches, with finished goods palletized behind them." },
+      { title: "Assembly and inspection", text: "Sets are built and checked on the assembly line, each part taken from its own labeled bin." },
     ],
   },
   es: {
@@ -51,7 +52,7 @@ const copy = {
       { title: "Estampado", text: "Una fila de prensas mecánicas con su utillaje, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas." },
       { title: "Mecanizado", text: "Mecanizado CNC propio, en la misma planta que las prensas." },
       { title: "Pulido", text: "La línea de pulido decide si un acabado satinado sale uniforme en toda una serie de producción." },
-      { title: "Montaje e inspección", text: "Los juegos se montan, revisan y embolsan en los puestos, con el producto terminado paletizado detrás." },
+      { title: "Montaje e inspección", text: "Los juegos se montan y revisan en la línea de montaje, cada pieza tomada de su propia caja etiquetada." },
     ],
   },
   pt: {
@@ -63,13 +64,13 @@ const copy = {
       { title: "Estampagem", text: "Uma fila de prensas mecânicas com a ferramenta montada, onde são estampadas caixas de fechadura, espelhos e peças brutas de maçanetas." },
       { title: "Usinagem", text: "Usinagem CNC própria, no mesmo local da estamparia." },
       { title: "Polimento", text: "A linha de polimento decide se um acabamento acetinado sai uniforme em todo um lote de produção." },
-      { title: "Montagem e inspeção", text: "Os conjuntos são montados, conferidos e ensacados nas bancadas, com o produto acabado paletizado atrás." },
+      { title: "Montagem e inspeção", text: "Os conjuntos são montados e conferidos na linha de montagem, cada peça tirada da sua própria caixa etiquetada." },
     ],
   },
 };
 
 function alt(src: string, locale: Locale) {
-  const ref = [...companyEditorialStudies, factoryCncMachining].find((s) => s.src === src);
+  const ref = [...companyEditorialStudies, factoryCncMachining, factoryPolishingWorkshop, factoryAssemblyLine].find((s) => s.src === src);
   if (!ref) throw new Error(`FactoryStory: ${src} is not in companyEditorialStudies`);
   return (locale === "es" ? ref.labelEs : locale === "pt" ? ref.labelPt : undefined) ?? ref.label;
 }

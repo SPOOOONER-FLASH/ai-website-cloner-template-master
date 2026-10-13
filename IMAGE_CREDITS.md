@@ -271,10 +271,12 @@ on 2026-09-17: 是我们厂. The preview README's record is the correct one; the
 source PNG is the client's own photograph named as their transfer named it. Nothing else
 in this table is cleared by that answer — it was asked and answered about one file.
 
+**Two more were cleared the same way on 2026-10-13.** The client saw `factory-polishing-workshop.webp` and `factory-assembly-quality-line.webp` in the homepage motion demo, asked for them on the live factory story, and when asked whether they were real photographs of their own factory answered 「是啊是自家的实拍」. Each was asked about by name; the rest of the table is still uncleared.
+
 | File | Source file | Output | Size | P11 verdict |
 |---|---|---|---|---|
-| `factory-polishing-workshop.webp` | e60a1601…png | 1776×1184 | 223.7 KB | Accept for demo; verify authenticity |
-| `factory-assembly-quality-line.webp` | f0315c17…png | 1776×1184 | 234.6 KB | Accept for demo; verify authenticity |
+| `factory-polishing-workshop.webp` | e60a1601…png | 1776×1184 | 223.7 KB | **Confirmed by the client 2026-10-13 as their own factory** (「是啊是自家的实拍」). Cleared for public use; the Hyland signage in frame is the factory's own. |
+| `factory-assembly-quality-line.webp` | f0315c17…png | 1776×1184 | 234.6 KB | **Confirmed by the client 2026-10-13 as their own factory** (「是啊是自家的实拍」). Cleared for public use; the Hyland bins and sign are the factory's own. |
 | `factory-cnc-production.webp` | 63633323…png | 1776×1184 | 110.7 KB | Accept for demo; verify authenticity |
 | `factory-cnc-machining.webp` | 423b1423…png | 1776×1184 | 193.6 KB | **Confirmed by the client 2026-09-17 as their own factory.** Cleared for public use; it carries the HYDE mark. |
 | `showroom-product-gallery.webp` | ef4f1112…png | 1776×1184 | 135.3 KB | Accept for demo; verify authenticity |

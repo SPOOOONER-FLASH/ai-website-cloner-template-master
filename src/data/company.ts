@@ -259,3 +259,26 @@ export const factoryCncMachining: ImageRef = {
   labelEs: "Un operario en una máquina CNC de nuestra planta",
   labelPt: "Um operador numa máquina CNC da nossa fábrica",
 };
+
+/*
+  The polishing and assembly photographs from the client's 2026-08 set, cleared one by one on
+  2026-10-13 (「是啊是自家的实拍」; IMAGE_CREDITS.md). Kept out of companyEditorialStudies, like
+  the CNC photograph, so the company page is unchanged. The Hyland sign and bins in frame
+  are the factory's own (the company is Canton Hyland) and are not retouched.
+*/
+export const factoryPolishingWorkshop: ImageRef = {
+  src: "/images/company/factory-polishing-workshop.webp",
+  ratio: "3 / 2",
+  label: "Our polishing workshop: polishing machines under their extraction ducts, an operator at the bench and parts waiting on the trolley",
+  labelEs: "Nuestro taller de pulido: pulidoras bajo sus conductos de extracción, un operario en el banco y piezas esperando en el carro",
+  labelPt: "A nossa oficina de polimento: politrizes sob os dutos de exaustão, um operador na bancada e peças à espera no carrinho",
+};
+
+export const factoryAssemblyLine: ImageRef = {
+  src: "/images/company/factory-assembly-quality-line.webp",
+  ratio: "3 / 2",
+  label: "Our assembly line: two operators at the bench, with parts in labeled bins along the line",
+  labelEs: "Nuestra línea de montaje: dos operarios en el banco, con las piezas en cajas etiquetadas a lo largo de la línea",
+  labelPt: "A nossa linha de montagem: dois operadores na bancada, com as peças em caixas etiquetadas ao longo da linha",
+};
+
