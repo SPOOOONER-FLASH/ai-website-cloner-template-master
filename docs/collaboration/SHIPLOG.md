@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 487 次提交
+最近 30 天 · 共 488 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 17:21 | 中立 | Inner-page previews: 307 product page and exit-device guide, Yuangao four-in-one | `a894facd316` |
 | 16:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `4667081845e` |
 | 16:54 | 中立 | Flyer: drop bathroom, floor springs, closers; add Alibaba flagship models | `c402d73955b` |
 | 08:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fae6618822c` |
