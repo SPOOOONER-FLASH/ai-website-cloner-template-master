@@ -181,6 +181,12 @@ export function NewsDetail({
   /* Model numbers in the prose and table row headers link to their product pages (article-products.ts). */
   const modelIndex = new Map(publishedProducts.map((p) => [p.model, `${base}/products/${p.categoryPath[0]}/${p.slug}/`] as const));
   const relatedModels = new Set(related.map((p) => p.model));
+  /* The guide cover links to the product it is a photograph of — matched by image file name, never
+     guessed. File name, not path: covers use the branded /images/products-hyde/ copy of /images/products/. */
+  const fileName = (src?: string) => src?.split("/").pop();
+  const cover = fileName(article.heroImage.src);
+  const coverOf = cover ? [...related, ...publishedProducts].find((p) => [p.heroImage, ...p.gallery].some((img) => fileName(img.src) === cover)) : undefined;
+  const coverProduct = coverOf && { href: `${base}/products/${coverOf.categoryPath[0]}/${coverOf.slug}/`, model: coverOf.model };
   const mentions = firstMentions(blocks, modelIndex);
   const rowHref = (cell: string) => rowHeaderHref(cell, modelIndex, relatedModels);
   const buyerHeading = tx(locale, "Related products", { es: "Productos relacionados", pt: "Produtos relacionados" });
@@ -337,7 +343,7 @@ export function NewsDetail({
 
           {/* Right column: the single editorial image, at press width. */}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-          {section === "guides" ? <GuideArticleIntro article={article} locale={locale} contents={contents} /> : <NewsVisual article={article} locale={locale} />}
+          {section === "guides" ? <GuideArticleIntro article={article} locale={locale} contents={contents} product={coverProduct} /> : <NewsVisual article={article} locale={locale} />}
           </div>
         </section>
 
