@@ -235,7 +235,7 @@
     "src/data/finish-codes.ts:228"
   ],
   "A design you are free to put your name on": [
-    "src/components/site/ServicesView.tsx:67"
+    "src/components/site/ServicesView.tsx:66"
   ],
   "A door closer manufacturer in China supplying overhead closers with aluminum bodies for commercial, office and fire doors, plus a floor hinge for timber doors. Buyers select by door width and leaf weight, then ask for a double-door coordinator where a pair must close in order. {count} models, made in our own plant.": [
     "src/data/category-buying-guides.ts:437"
@@ -250,7 +250,7 @@
     "src/components/site/ProductDetail.tsx:142"
   ],
   "A drawing, sample or reference photograph": [
-    "src/components/site/ServicesView.tsx:51"
+    "src/components/site/ServicesView.tsx:50"
   ],
   "A DWG library per model": [
     "src/components/site/DocumentInventory.tsx:126"
@@ -504,7 +504,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:108"
   ],
   "Ask by model number and tell us what the document is for.": [
-    "src/components/site/ServicesView.tsx:87"
+    "src/components/site/ServicesView.tsx:86"
   ],
   "Ask by model number in the configuration you are buying, finish and function suffix included. A drawing of the 60mm (2-3/8\") backset version is not a drawing of the 45mm (1-3/4\") one.": [
     "src/components/site/DocumentInventory.tsx:145"
@@ -642,7 +642,7 @@
     "src/data/finish-codes.ts:297"
   ],
   "Bring us a drawing. Leave with a product.": [
-    "src/components/site/ServicesView.tsx:41"
+    "src/components/site/ServicesView.tsx:40"
   ],
   "Bring your drawings. Meet our team.": [
     "src/data/bau-entry.ts:17"
@@ -779,7 +779,7 @@
     "src/components/site/ProductStudies.tsx:55"
   ],
   "Catalogs, drawings and technical files for our standard range are ready to download. For a part we develop with you, the drawings are yours as well.": [
-    "src/components/site/ServicesView.tsx:102"
+    "src/components/site/ServicesView.tsx:100"
   ],
   "Center distance": [
     "src/components/site/ArgentinaCollection.tsx:32",
@@ -1082,7 +1082,7 @@
     "src/components/locale-pages/ContactPage.tsx:154"
   ],
   "Custom tooling": [
-    "src/components/site/ServicesView.tsx:96"
+    "src/components/site/ServicesView.tsx:95"
   ],
   "Cutting": [
     "src/components/site/FactoryStory.tsx:39"
@@ -1290,7 +1290,7 @@
     "src/components/site/SiteFooter.tsx:53"
   ],
   "Documents already available": [
-    "src/components/site/ServicesView.tsx:100"
+    "src/components/site/ServicesView.tsx:98"
   ],
   "Documents We Can Supply": [
     "src/components/locale-pages/DocumentsPage.tsx:12"
@@ -1410,10 +1410,10 @@
     "src/components/site/ProductDetail.tsx:132"
   ],
   "Drawings, datasheets and installation instructions by model. A test report is only useful if it names the model you are buying and says whose name it was issued in, so that is how we answer every request for one.": [
-    "src/components/site/ServicesView.tsx:86"
+    "src/components/site/ServicesView.tsx:85"
   ],
   "Drawings, datasheets and test reports": [
-    "src/components/site/ServicesView.tsx:85"
+    "src/components/site/ServicesView.tsx:84"
   ],
   "Drawings, specification and test reports": [
     "src/components/locale-pages/ContactPage.tsx:22"
@@ -1624,7 +1624,7 @@
     "src/components/site/ExportMap.tsx:28"
   ],
   "Export, from Xiaolan to your port": [
-    "src/components/site/ServicesView.tsx:91"
+    "src/components/site/ServicesView.tsx:90"
   ],
   "Exterior lever and rose: 135 mm lever length and 53 × 53 × 8 mm rose, based on the published drawing.": [
     "public/downloads/models/index.json"
@@ -2038,9 +2038,6 @@
   "How we handle what you send: ": [
     "src/components/site/PrivacyNote.tsx:11"
   ],
-  "How we tool a part for your market": [
-    "src/components/site/ServicesView.tsx:99"
-  ],
   "HYDE Argentina AR-4": [
     "src/components/site/ArgentinaAr4Showcase.tsx:27",
     "src/data/home.ts:64"
@@ -2081,7 +2078,7 @@
     "src/components/site/DocumentPreview.tsx:8"
   ],
   "If the product you want is covered by another maker's patent, our engineers rework the internal parts or the appearance until it no longer conflicts with that patent, and we tell you exactly which features changed so your own patent check has something specific to review.": [
-    "src/components/site/ServicesView.tsx:68"
+    "src/components/site/ServicesView.tsx:67"
   ],
   "If you need the spec tables in a sheet rather than on a page — for a schedule, a comparison or a tender annex — ask and we will send them.": [
     "src/components/site/DocumentInventory.tsx:85"
@@ -2105,7 +2102,7 @@
     "src/components/site/ModelLookup.tsx:93"
   ],
   "Include the destination, the quantity and what the sample has to prove.": [
-    "src/components/site/ServicesView.tsx:81"
+    "src/components/site/ServicesView.tsx:80"
   ],
   "Individual models for selection. Confirm compatibility and the complete configuration before ordering; the composition does not represent installation scale.": [
     "src/components/site/ProductStudies.tsx:54"
@@ -2514,7 +2511,7 @@
     "src/components/site/ProductImageZoom.tsx:56"
   ],
   "Much of the door hardware and ironmongery we make leaves Xiaolan under our customers' brands, and it is the work we are best at. We tool new parts to your drawing or sample, rework a design that runs into someone else's patent, and put your name, your instructions and your packaging on the result. Since 1998, for brands and distributors across Europe, the Americas, Turkey and Southeast Asia.": [
-    "src/components/site/ServicesView.tsx:43"
+    "src/components/site/ServicesView.tsx:42"
   ],
   "Name *": [
     "src/components/site/InquiryForm.tsx:28"
@@ -2553,7 +2550,7 @@
     "src/components/locale-pages/DownloadsPage.tsx:152"
   ],
   "New tooling to your design": [
-    "src/components/site/ServicesView.tsx:61"
+    "src/components/site/ServicesView.tsx:60"
   ],
   "News": [
     "src/components/site/AuthorProfile.tsx:29",
@@ -2738,7 +2735,7 @@
     "src/components/site/ModelPreview.tsx:50"
   ],
   "Open download center": [
-    "src/components/site/ServicesView.tsx:103"
+    "src/components/site/ServicesView.tsx:101"
   ],
   "Open full size": [
     "src/components/site/ProductDrawing.tsx:91"
@@ -2793,7 +2790,7 @@
     "src/components/site/ProductDetail.tsx:89"
   ],
   "Or start from our catalog": [
-    "src/components/site/ServicesView.tsx:45"
+    "src/components/site/ServicesView.tsx:44"
   ],
   "Or write to us directly:": [
     "src/components/site/CompanyOverview.tsx:41"
@@ -3199,7 +3196,7 @@
     "src/lib/article-faq.ts:48"
   ],
   "Quotation, packing and shipping arranged around your Incoterm and destination. Our team works in English and Spanish, and we have an office in Germany for buyers who want to meet in Europe.": [
-    "src/components/site/ServicesView.tsx:92"
+    "src/components/site/ServicesView.tsx:91"
   ],
   "Quotes, pricing and export specialists": [
     "src/components/site/SiteHeader.tsx:108"
@@ -3263,7 +3260,7 @@
     "src/components/site/ProjectDetail.tsx:17"
   ],
   "Representative architectural entrance combining glass, metal and coordinated door hardware": [
-    "src/components/site/ServicesView.tsx:46"
+    "src/components/site/ServicesView.tsx:45"
   ],
   "Representative contacts": [
     "src/components/locale-pages/ContactPage.tsx:119"
@@ -3319,10 +3316,10 @@
     "src/data/finish-codes.ts:98"
   ],
   "Samples of the exact model, function and finish you will order, so the sample you approve is the product that ships, container after container. Samples are charged and the cost is credited against your first production order; a stocked model usually ships within days.": [
-    "src/components/site/ServicesView.tsx:80"
+    "src/components/site/ServicesView.tsx:79"
   ],
   "Samples that decide the order": [
-    "src/components/site/ServicesView.tsx:79"
+    "src/components/site/ServicesView.tsx:78"
   ],
   "Satin": [
     "src/data/finish-codes.ts:330"
@@ -3415,13 +3412,13 @@
     "src/components/site/products-architecture.ts:191"
   ],
   "Send a drawing, a sample or a reference model. Our engineers work out the part, we cut the tooling, and you approve samples before a single production piece is made. Tooling cost and the minimum run are quoted per part; on our standard models, most minimums fall between 300 and 5,000 pieces.": [
-    "src/components/site/ServicesView.tsx:62"
+    "src/components/site/ServicesView.tsx:61"
   ],
   "Send a project inquiry": [
     "src/components/site/products-architecture.ts:200"
   ],
   "Send a service brief to Canton Hyland": [
-    "src/components/site/ServicesView.tsx:47"
+    "src/components/site/ServicesView.tsx:46"
   ],
   "Send another inquiry": [
     "src/components/site/InquirySuccess.tsx:10"
@@ -3439,7 +3436,7 @@
     "src/components/locale-pages/CylinderCalculatorPage.tsx:65"
   ],
   "Send the drawing or sample, the target market and your expected annual quantity.": [
-    "src/components/site/ServicesView.tsx:63"
+    "src/components/site/ServicesView.tsx:62"
   ],
   "Send the model, the door preparation and the format you need. We will tell you whether a datasheet, installation guide, CAD drawing or BIM object exists for it, and say so plainly if it does not.": [
     "src/components/locale-pages/DownloadsPage.tsx:159"
@@ -3457,13 +3454,13 @@
     "src/components/site/brazil/BrazilCollection.tsx:52"
   ],
   "Send your brief": [
-    "src/components/site/ServicesView.tsx:56"
+    "src/components/site/ServicesView.tsx:55"
   ],
   "Send your drawing or sample": [
-    "src/components/site/ServicesView.tsx:44"
+    "src/components/site/ServicesView.tsx:43"
   ],
   "Send your logo files, label text and the languages you need.": [
-    "src/components/site/ServicesView.tsx:75"
+    "src/components/site/ServicesView.tsx:74"
   ],
   "Sending…": [
     "src/components/site/BauMeetingForm.tsx:19",
@@ -3490,7 +3487,7 @@
   ],
   "Services": [
     "src/components/site/menu-experience.ts:286",
-    "src/components/site/ServicesView.tsx:40",
+    "src/components/site/ServicesView.tsx:39",
     "src/components/site/SiteHeader.tsx:52"
   ],
   "Set includes": [
@@ -3500,7 +3497,7 @@
     "src/components/site/FactoryStory.tsx:43"
   ],
   "Share the Incoterm and destination port when you know them.": [
-    "src/components/site/ServicesView.tsx:93"
+    "src/components/site/ServicesView.tsx:92"
   ],
   "Share the models, door thickness and required finish to confirm the parts for your order.": [
     "src/components/site/ProductStudies.tsx:58"
@@ -3762,7 +3759,7 @@
     "src/components/site/ConfiguratorTeaser.tsx:40"
   ],
   "Tell us which product it resembles and where you will sell it.": [
-    "src/components/site/ServicesView.tsx:69"
+    "src/components/site/ServicesView.tsx:68"
   ],
   "Tender / submittal": [
     "src/components/site/DocumentInventory.tsx:34"
@@ -4104,7 +4101,7 @@
     "src/data/privacy-policy.ts:95"
   ],
   "To quote a new part": [
-    "src/components/site/ServicesView.tsx:48"
+    "src/components/site/ServicesView.tsx:47"
   ],
   "to send occasional product, document and exhibition updates": [
     "src/data/privacy-policy.ts:96"
@@ -4128,7 +4125,7 @@
     "src/data/capability.ts:74"
   ],
   "Tooling cost and the minimum run for a new part are quoted per project, and who owns the mould is written into the same document as the price.": [
-    "src/components/site/ServicesView.tsx:98"
+    "src/components/site/ServicesView.tsx:97"
   ],
   "Top and bottom rods": [
     "src/components/site/brazil/brazil-data.ts:58"
@@ -4271,13 +4268,13 @@
     "src/components/site/CompanyOverview.tsx:24"
   ],
   "We make the metal moulds for our own hardware, which is why a part can be shaped to one market: a hole spacing that matches local frames, a backset for one country's doors, a lever the buyer owns. In the UK and Commonwealth the trade calls this architectural ironmongery; the work is the same. Our 311 exit device was tooled here from a customer's sample, and our AR-4 lock bodies were configured for Argentina.": [
-    "src/components/site/ServicesView.tsx:97"
+    "src/components/site/ServicesView.tsx:96"
   ],
   "We manufacture under our customers' own brands, so the buildings our hardware is installed in are not ours to name. These pages show the combinations rather than the clients: every model listed is one we make and publish, so you can price the whole schedule from them.": [
     "src/components/site/ProjectListing.tsx:25"
   ],
   "We need four things from you": [
-    "src/components/site/ServicesView.tsx:49"
+    "src/components/site/ServicesView.tsx:48"
   ],
   "We publish drawings as SVG, which any CAD package will import and which is dimensionally exact. We do not maintain native DWG files model by model.": [
     "src/components/site/DocumentInventory.tsx:127"
@@ -4395,7 +4392,7 @@
     "src/lib/product-faq.ts:90"
   ],
   "What we do for a private-label brand": [
-    "src/components/site/ServicesView.tsx:57"
+    "src/components/site/ServicesView.tsx:56"
   ],
   "What we receive (* required)": [
     "src/data/privacy-policy.ts:91"
@@ -4416,7 +4413,7 @@
     "src/components/site/CompanyOverview.tsx:26"
   ],
   "Where you will sell it, and the standard it must meet": [
-    "src/components/site/ServicesView.tsx:52"
+    "src/components/site/ServicesView.tsx:51"
   ],
   "Which {label} options are available for Canton Hyland {name}?": [
     "src/lib/category-guide.ts:151"
@@ -4516,19 +4513,19 @@
     "src/data/privacy-policy.ts:149"
   ],
   "Your brand, on every layer": [
-    "src/components/site/ServicesView.tsx:73"
+    "src/components/site/ServicesView.tsx:72"
   ],
   "Your branding: logo, labels, instruction language, packaging": [
-    "src/components/site/ServicesView.tsx:54"
+    "src/components/site/ServicesView.tsx:53"
   ],
   "Your carton, your markings, your logo. We ship to distributors, contractors and OEM partners in export markets and issue the documents an importer actually needs at the border rather than after it. Production lead time starts at 30 days from order confirmation; the exact date depends on the models, quantities and finishes on your order.": [
     "src/data/capability.ts:184"
   ],
   "Your expected annual quantity": [
-    "src/components/site/ServicesView.tsx:53"
+    "src/components/site/ServicesView.tsx:52"
   ],
   "Your logo on the part, your labels, installation instructions in your market's language, and cartons and barcodes to your specification. The hardware arrives ready to sell as yours.": [
-    "src/components/site/ServicesView.tsx:74"
+    "src/components/site/ServicesView.tsx:73"
   ],
   "Your message has been sent to our export team. We look forward to learning about your project.": [
     "src/components/site/InquirySuccess.tsx:10"
