@@ -55,15 +55,28 @@ const files = [
     ...readdirSync(SOURCE).filter((f) => f.endsWith(".webp") && !/-\d+\.webp$/.test(f)),
     ...heroSources.filter((rel) => existsSync(join(SOURCE, rel))),
   ]),
-];
+].map((file) => ({ file, src: join(SOURCE, file) }));
+/*
+  Products added after the 2026-09 import keep only the HYDE-marked copy (SH02's hero is
+  /images/products-hyde/sh02-spring-hinge-pin.webp, with no as-shot original), so the
+  directory pass never saw them and the flyer could not print them (2026-10-13). The
+  cut-out isolates the product and drops the floating mark, as it drops the old oval.
+*/
+const BRANDED = "public/images/products-hyde";
+for (const f of readdirSync("content/products").filter((x) => x.endsWith(".json"))) {
+  const src = JSON.parse(readFileSync(join("content/products", f), "utf8")).heroImage?.src;
+  if (typeof src !== "string" || !src.startsWith("/images/products-hyde/") || !src.endsWith(".webp")) continue;
+  const file = src.slice("/images/products-hyde/".length);
+  if (files.some((x) => basename(x.file) === basename(file)) || !existsSync(join(BRANDED, file))) continue;
+  files.push({ file, src: join(BRANDED, file) });
+}
 let done = 0;
 let fallback = 0;
 const report = {};
 
-for (const file of files) {
+for (const { file, src } of files) {
   const slug = basename(file, ".webp");
   const dest = join(outDir, `${slug}.jpg`);
-  const src = join(SOURCE, file);
   try {
     const cut = await cutOut(src);
     await sharp(cut.buffer)

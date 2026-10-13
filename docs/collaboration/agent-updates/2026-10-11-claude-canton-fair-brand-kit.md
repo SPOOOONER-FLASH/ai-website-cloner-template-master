@@ -95,3 +95,16 @@
 - `scripts/catalogue/flyer.py`: the bathroom family is gone, and so are F101 (floor spring) and DSL02/DC02 (closer arm/coordinator). `EXCLUDED` keeps closer, coordinator and floor-spring names out of every auto-pick. Replacements are taken from `docs/research/2026-09-11-alibaba-product-performance.json` (listings with inquiries) plus the AR4 locks: 316-S/D and 309-S/D, 6068, AR4-110/140/1121, 587 SSET, 607 SSET, 5836, 1073D and SSH016. Stainless handles get their own panel of ten Alibaba-listed models. Glass door handles now share a panel with levers. 79 products.
 - `_base` strips finish suffixes ("6491ABET" → "6491"), and auto-picks skip any base already chosen by hand.
 - Tests: the flyer builds and the previews were checked by eye. No site code was touched, so no release is needed.
+
+## 2026-10-13, flyer round 4: sixteen faces
+
+- Client sent catalogue pages 29 and 33 and the fire-door accessories page: 「这些产品加上去 那传单可以正反八页了 16页」.
+- `flyer.py`:
+  - `PANELS = 8` per side, flat 800 × 210 mm, 12 product panels, 109 products.
+  - New panels: "Fire-door coordinators & springs" (DC01, DC02, DSL02, SH01, SH02). Lock cases, cylinders, levers, knob/tubular, rim locks and glass handles each get a panel of their own.
+  - The coordinators come back by name; this page supersedes 10-12. `EXCLUDED` now drops closers, floor springs and glass patch fittings only.
+  - The range panel scales its rows for 12.
+  - Size-like models ("19-130MM") are skipped.
+- `build-catalogue-plates.mjs`: a product whose hero exists only as the HYDE-marked copy (SH02, added 10-08) was never plated. It now falls back to `products-hyde/`; the cut-out drops the mark, which I checked by eye.
+- Not done: 024 (catalogue page 33) has no site record or photo. Asked the client (task #71).
+- Desktop files are replaced; the notes doc and its docx are updated.

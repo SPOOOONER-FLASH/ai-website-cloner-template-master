@@ -1,21 +1,22 @@
-"""HYDE Canton Fair flyer: a 12-face accordion (six panels a side), the catalogue's look in your pocket.
+"""HYDE Canton Fair flyer: a 16-face accordion (eight panels a side), the catalogue's look in your pocket.
 
     py scripts/catalogue/flyer.py --out-dir DIR
 
 Client, 2026-10-11/12: a short "best of" flyer for the 140th Canton Fair, with QR codes and
-a folded preview. Drafts: 10 panels (「不够流畅」), then 3 a side; the client settled it as
-「单侧 6页」. Flat 600 x 210 mm, folds to 100 x 210.
+a folded preview. Drafts: 10 panels (「不够流畅」), then 3 a side, then 「单侧 6页」; on 2026-10-13
+the client added the rest of the fire-door pages and made it 「正反八页了 16页」. Flat 800 x 210 mm,
+folds to 100 x 210.
 
 Writes to <out-dir>:
   HYDE-flyer-2026-print.pdf    2 pages = side A and side B, 3 mm bleed, crop and fold marks
-  HYDE-flyer-2026-screen.pdf   12 single panels in reading order, for email
+  HYDE-flyer-2026-screen.pdf   16 single panels in reading order, for email
   传单预览/*.png                both sides flat, plus folded previews (closed, and each side
                                half-open in a zigzag) drawn from the same pages
 
-Folding (zigzag, an even number of panels): side A is A1..A6 left to right, side B is
-B1..B6 left to right as printed; B1 backs A6. Folded, A6 is the cover and A1 the back
+Folding (zigzag, an even number of panels): side A is A1..A8 left to right, side B is
+B1..B8 left to right as printed; B1 backs A8. Folded, A8 is the cover and A1 the back
 cover, both on side A. Opening the cover shows B1 | B2 (the factory, then the range with a
-code per family), and side B carries on into four product panels; side A holds four more.
+code per panel), and side B carries on into six product panels; side A holds six more.
 
 Same rules as the catalogue (docs/superpowers/specs/2026-10-08-canton-fair-catalogue-design.md):
 real cut-out photographs only (no as-shot plates, which carry the old supplier watermark),
@@ -40,7 +41,7 @@ import hyde_mark as hm  # noqa: E402
 import kit  # noqa: E402
 
 MM = 72 / 25.4
-PANEL_W, PANEL_H, PANELS = 100 * MM, 210 * MM, 6
+PANEL_W, PANEL_H, PANELS = 100 * MM, 210 * MM, 8
 BLEED, SLUG = 3 * MM, 12 * MM
 PAD = 6.5 * MM
 COMPANY = samples.COMPANY
@@ -56,8 +57,9 @@ FEATURED = {"307", "311", "305", "316-D", "309-D", "302", "LC14", "564", "9014",
             # Alibaba models with inquiries (docs/research/2026-09-11-alibaba-product-performance.json)
             "587", "607", "5836", "1073D", "SSH016", "70BK"}
 
-# The eight product panels, ten cards each: (title, [(family slug, count or explicit slugs)]). The
-# first four run on after the range panel on side B; the other four sit on side A between the covers.
+# The twelve product panels, up to ten cards each: (title, [(family slug, count or explicit
+# slugs)]). The first six run on after the range panel on side B; the other six sit on side A
+# between the covers.
 PRODUCT_PANELS = [
     # Client 2026-10-12: the panic-exit pages of the client's own catalogue go in whole, in
     # their order — devices, then outside trims, then fire-door hardware. Explicit slugs, not
@@ -71,39 +73,50 @@ PRODUCT_PANELS = [
         "026-panic-exit-device-trim", "027-panic-exit-device-trim", "028-panic-exit-device-trim",
         "030-panic-exit-device-trim", "033-panic-exit-device-trim", "035-panic-exit-device-trim",
         "037-panic-exit-device-trim"])]),
-    # Client 2026-10-12, second pass: 「卫浴的也下掉 地弹簧 闭门器也不要 换我们的新产品 拳头产品
-    # 阿里巴巴重要的产品」. DSL02 (closer-type arm) gives way to the 309 and 316 devices, both
-    # listed on the client's Alibaba storefront.
+    # Client 2026-10-12, second pass: the 309 and 316 devices, both on the client's Alibaba
+    # storefront; 2026-10-13: the catalogue's page 33 (023 series) and the 016 trim.
     ("Fire-door hardware", [("panic-exit-devices", [
-        "023-etan-anti-pick-panic-exit-device", "023-et-panic-exit-device-trim", "023-ps-panic-exit-device-trim",
-        "036-panic-exit-device", "sh01-panic-exit-device", "316-s-panic-exit-device", "316-d-panic-exit-device",
-        "309-s-s-panic-exit-device", "309-d-double-door-panic-exit-device"])]),
+        "316-s-panic-exit-device", "316-d-panic-exit-device", "309-s-s-panic-exit-device",
+        "309-d-double-door-panic-exit-device", "023-etan-anti-pick-panic-exit-device",
+        "023-et-panic-exit-device-trim", "023-ps-panic-exit-device-trim", "036-panic-exit-device",
+        "016-exterior-trim"])]),
+    # Client 2026-10-13, the catalogue page of fire-door accessories: 「这些产品加上去」. This
+    # supersedes the 10-12 instruction that dropped the coordinators along with the closers.
+    ("Fire-door coordinators & springs", [
+        ("hardware-accessories", ["dc01-door-coordinator", "dc02-door-coordinator", "dsl02-door-coordinator"]),
+        ("panic-exit-devices", ["sh01-panic-exit-device"]),
+        ("brass-steel-hinges", ["sh02-spring-hinge-pin"])]),
     # 6068 has the most Alibaba exposure of any lock case; the AR4 mortise locks are the newest range.
-    ("Lock cases & cylinders", [("lock-cases", ["6068-mortise-lever-handle-lock", "hyde-ar4-110-mortise-lock",
-                                                "hyde-ar4-140-mortise-lock", "hyde-ar4-1121-hook-bolt-lock"]),
-                                ("lock-cases", 2), ("lock-cylinders", 4)]),
-    ("Lever & glass door handles", [("lever-handles", 6), ("glass-door-accessories", [
-        "102-glass-door-handle", "100-glass-door-handle", "104-glass-door-handle", "106-glass-door-handle"])]),
-    ("Knob, tubular & rim locks", [("knob-locks", ["587-sset-light-duty-cylindrical-lock", "607-sset-tubular-lock"]),
-                                   ("knob-locks", 4),
-                                   ("night-latches-rim-locks", ["564-mb-night-latch-and-rim-lock",
-                                                                "5836-night-latch-and-rim-lock",
-                                                                "1073d-night-latch-and-rim-lock"]),
-                                   ("night-latches-rim-locks", 1)]),
-    ("Hinges & accessories", [("brass-steel-hinges", ["ssh016-brass-and-steel-hinges"]),
-                              ("brass-steel-hinges", 5), ("hardware-accessories", 4)]),
+    ("Lock cases", [("lock-cases", ["6068-mortise-lever-handle-lock", "hyde-ar4-110-mortise-lock",
+                                    "hyde-ar4-140-mortise-lock", "hyde-ar4-1121-hook-bolt-lock"]),
+                    ("lock-cases", 6)]),
+    ("Lock cylinders", [("lock-cylinders", 10)]),
+    ("Lever handles", [("lever-handles", 10)]),
     # Nine of the client's Alibaba listings are stainless handles: they get a panel of their own.
     ("Stainless steel handles", [("stainless-steel-handles", [
         "9014-ssbk-stainless-steel-handle", "lh1016-stainless-steel-handle", "lh1033-ss-stainless-steel-handle",
         "9010e-stainless-steel-handle", "nc013-stainless-steel-handle", "9008s-stainless-steel-handle",
         "9021-stainless-steel-handle", "9007e-stainless-steel-handle", "nc046-stainless-steel-handle",
         "lh1056-ss-stainless-steel-handle"])]),
+    ("Knob & tubular locks", [("knob-locks", ["587-sset-light-duty-cylindrical-lock", "607-sset-tubular-lock"]),
+                              ("knob-locks", 8)]),
+    ("Rim locks & night latches", [("night-latches-rim-locks", ["564-mb-night-latch-and-rim-lock",
+                                                                "5836-night-latch-and-rim-lock",
+                                                                "1073d-night-latch-and-rim-lock"]),
+                                   ("night-latches-rim-locks", 7)]),
+    ("Hinges & accessories", [("brass-steel-hinges", ["ssh016-brass-and-steel-hinges"]),
+                              ("brass-steel-hinges", 5), ("hardware-accessories", 4)]),
+    ("Glass door handles", [("glass-door-accessories", [
+        "102-glass-door-handle", "100-glass-door-handle", "104-glass-door-handle", "106-glass-door-handle"]),
+        ("glass-door-accessories", 6)]),
 ]
 # Lock cases the client's principal called too old to show (2026-10-12, 「这些太老旧了」),
 # with their finish variants (LC7065S, LC7065PS).
 RETIRED = ("LC33-5572", "AI8530", "LC7065")
-# Not on the flyer at all (client 2026-10-12): door closers and coordinators, floor springs.
-EXCLUDED = re.compile(r"closer|coordinator|floor.?spring", re.I)
+# Not on the flyer at all (client 2026-10-12): door closers and floor springs, including the
+# glass-door patch fittings that sit on a floor spring. Coordinators came back on 2026-10-13 by
+# name (panel above); CHOSEN keeps the auto-picks from repeating them.
+EXCLUDED = re.compile(r"closer|floor.?spring|patch.?fitting", re.I)
 # Models chosen by hand above are never picked again by a counted group.
 CHOSEN = {s for _, groups in PRODUCT_PANELS for _, spec in groups if isinstance(spec, list) for s in spec}
 
@@ -137,7 +150,7 @@ def pick(slug: str, n) -> list[variants.Card]:
     chosen = _chosen_bases()
     good = [c for c in variants.cards(samples.ordered(fam))
             if heroes.hero_plate(c.product) and len(samples.card_specs(slug, c.product, 2)) >= 1
-            and not re.match(r"^\d+\*\d", str(c.model))  # "6*3*3mm" is a size, not a model
+            and not re.match(r"^\d+\*\d|^\d+-\d+\s*mm$", str(c.model), re.I)  # "6*3*3mm", "19-130MM" are sizes, not models
             and c.product.get("slug") not in CHOSEN
             and _base(c.model) not in chosen
             and not EXCLUDED.search(f"{c.name} {c.product.get('slug')}")
@@ -319,31 +332,32 @@ def product_panel(s: Sheet, i: int, title: str, groups: list[tuple[str, int]]) -
 
 
 def range_panel(s: Sheet, i: int) -> None:
-    """The whole range on one panel: a photograph, model numbers and a code per family."""
+    """The whole range on one panel: a photograph, model numbers and a code per product panel.
+    Twelve rows since 2026-10-13, so the row, code and photograph scale with the count."""
     x0, x1 = i * PANEL_W + PAD, (i + 1) * PANEL_W - PAD
     s.text(x0, 18 * MM, "THE RANGE", 6, "text-medium", style.INK, track=160)
     s.para(x0, 21 * MM, x1, 36 * MM, "Scan a family for every model.", 14, "display", style.INK, 1.2)
     top = 40 * MM
     row = (PANEL_H - 8 * MM - top) / len(RANGE)
-    q, img_w = 14 * MM, 20 * MM
+    q = min(14 * MM, row - 2 * MM)
+    img_w = min(20 * MM, row * 1.4)
     for k, (title, groups) in enumerate(RANGE):
         y = top + k * row
         s.rule(x0, y, x1, style.RULE, 0.4)
-        lead = panel_cards(groups)[0][1]
-        s.image(x0, y + 2 * MM, x0 + img_w, y + row - 2 * MM, samples.grid_plate(lead.product))
-        tx = x0 + img_w + 4 * MM
+        cards = panel_cards(groups)
+        s.image(x0, y + 1.2 * MM, x0 + img_w, y + row - 1.2 * MM, samples.grid_plate(cards[0][1].product))
+        tx = x0 + img_w + 3 * MM
         tw = x1 - q - 3 * MM - tx
-        s.text(tx, y + 7 * MM, style.fit(title, tw, 7.4, "text-semibold"), 7.4, "text-semibold", style.INK)
-        models = [c.model for _, c in panel_cards(groups)][:4]
-        s.text(tx, y + 11.5 * MM, style.fit("  ·  ".join(models), tw, 5.6), 5.6, "text", style.INK2)
-        s.text(tx, y + 15.5 * MM, "Scan for all models", 4.9, "text", style.INK3)
+        s.text(tx, y + row * 0.42, style.fit(title, tw, 7, "text-semibold"), 7, "text-semibold", style.INK)
+        models = [c.model for _, c in cards][:4]
+        s.text(tx, y + row * 0.72, style.fit("  ·  ".join(models), tw, 5.4), 5.4, "text", style.INK2)
         s.qr(x1 - q, y + (row - q) / 2, q, qr.family_url(groups[0][0]))
     s.rule(x0, top + len(RANGE) * row, x1, style.RULE, 0.4)
 
 
 # Panels per side, left to right as printed (key, product-panel index), and reading order.
-SIDE_B = [("factory", None), ("range", None)] + [(f"products-{k + 1}", k) for k in range(4)]
-SIDE_A = [("back", None)] + [(f"products-{k + 1}", k) for k in range(4, 8)] + [("cover", None)]
+SIDE_B = [("factory", None), ("range", None)] + [(f"products-{k + 1}", k) for k in range(6)]
+SIDE_A = [("back", None)] + [(f"products-{k + 1}", k) for k in range(6, 12)] + [("cover", None)]
 READING = ["cover"] + [key for key, _ in SIDE_B] + [key for key, _ in SIDE_A[1:-1]] + ["back"]
 
 
@@ -466,9 +480,9 @@ def previews(doc: pymupdf.Document, out_dir: Path) -> list[Path]:
         pw = img.width // PANELS
         sides.append([img.crop((k * pw, 0, (k + 1) * pw, img.height)) for k in range(PANELS)])
     a, b = sides
-    folds = [out_dir / "折叠效果-1-合起-封面与封底.png", out_dir / "折叠效果-2-内侧-工厂-产品线-四类产品.png",
-             out_dir / "折叠效果-3-外侧-封底-四类产品-封面.png"]
-    _closed(a[-1], a[0], folds[0])   # cover A6, back cover A1
+    folds = [out_dir / "折叠效果-1-合起-封面与封底.png", out_dir / "折叠效果-2-内侧-工厂-产品线-六面产品.png",
+             out_dir / "折叠效果-3-外侧-封底-六面产品-封面.png"]
+    _closed(a[-1], a[0], folds[0])   # cover A8, back cover A1
     _zigzag(b, folds[1])
     _zigzag(a, folds[2])
     return paths + folds
@@ -480,7 +494,7 @@ def main() -> None:
     d = Path(ap.parse_args().out_dir)
     _, n = render_sides(d / "HYDE-flyer-2026-print.pdf", True)
     print(f"print: {d / 'HYDE-flyer-2026-print.pdf'} ({n} products)")
-    print(f"screen: {render_screen(d / 'HYDE-flyer-2026-screen.pdf')} (12 panels in reading order)")
+    print(f"screen: {render_screen(d / 'HYDE-flyer-2026-screen.pdf')} (16 panels in reading order)")
     flat, _ = render_sides(None, False)
     for p in previews(flat, d / "传单预览"):
         print(f"preview: {p}")
