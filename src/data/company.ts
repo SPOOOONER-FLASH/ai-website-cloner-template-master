@@ -244,3 +244,41 @@ export const companyEditorialStudies: ImageRef[] = [
       "A cortadora laser de fibra na nossa fábrica, que corta a chapa de aço de que saem caixas de fechadura e espelhos",
   },
 ];
+
+/*
+  The CNC photograph, kept out of companyEditorialStudies so the company page's grid is
+  unchanged. Cleared individually: the client answered 2026-09-17 「是我们厂」 (see
+  IMAGE_CREDITS.md and scripts/build-branded-editorial-list.mjs), and it carries the HYDE
+  mark. The machine's maker's name on its housing is equipment branding, as with the laser
+  cutter. Used by the homepage factory story (client, 2026-10-12).
+*/
+export const factoryCncMachining: ImageRef = {
+  src: "/images/company/factory-cnc-machining.webp",
+  ratio: "3 / 2",
+  label: "An operator at a CNC machine on our shop floor",
+  labelEs: "Un operario en una máquina CNC de nuestra planta",
+  labelPt: "Um operador numa máquina CNC da nossa fábrica",
+};
+
+/*
+  The polishing and assembly photographs from the client's 2026-08 set, cleared one by one on
+  2026-10-13 (「是啊是自家的实拍」; IMAGE_CREDITS.md). Kept out of companyEditorialStudies, like
+  the CNC photograph, so the company page is unchanged. The Hyland sign and bins in frame
+  are the factory's own (the company is Canton Hyland) and are not retouched.
+*/
+export const factoryPolishingWorkshop: ImageRef = {
+  src: "/images/company/factory-polishing-workshop.webp",
+  ratio: "3 / 2",
+  label: "Our polishing workshop: polishing machines under their extraction ducts, an operator at the bench and parts laid out on a bench in the foreground",
+  labelEs: "Nuestro taller de pulido: pulidoras bajo sus conductos de extracción, un operario en su puesto y piezas dispuestas sobre un banco de trabajo en primer plano",
+  labelPt: "Nosso setor de polimento: politrizes sob os dutos de exaustão, um operador na bancada e peças dispostas sobre uma bancada em primeiro plano",
+};
+
+export const factoryAssemblyLine: ImageRef = {
+  src: "/images/company/factory-assembly-quality-line.webp",
+  ratio: "3 / 2",
+  label: "Our assembly line: two operators at the bench, with parts in labeled bins along the line",
+  labelEs: "Nuestra línea de montaje: dos operarios en sus puestos, con las piezas en contenedores etiquetados a lo largo de la línea",
+  labelPt: "Nossa linha de montagem: dois operadores na bancada, com as peças em caixas etiquetadas ao longo da linha",
+};
+

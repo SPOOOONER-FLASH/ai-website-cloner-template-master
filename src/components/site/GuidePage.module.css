@@ -1,0 +1,306 @@
+/* Guide page, 2026-10-12 layout (client-approved preview): cover with the guide's number,
+   section bars, reading progress, a rail of the models the current section names, and an
+   ink previous/next pair. Ink and white only. */
+
+.cover {
+  display: grid;
+  gap: 2.4rem 6.4rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 64.5rem) {
+  .cover {
+    grid-template-columns: minmax(12rem, 2fr) 10fr;
+  }
+}
+.number {
+  font-size: clamp(6.4rem, 4rem + 6vw, 16.8rem);
+  font-weight: 600;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.numberLabel {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--color-ink-secondary);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mask {
+    display: block;
+    overflow: clip;
+  }
+  .mask > span {
+    display: inline-block;
+    animation: riseIn calc(var(--motion-slow) * 2) var(--motion-ease) both;
+  }
+}
+@keyframes riseIn {
+  from { transform: translateY(105%); }
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.8rem;
+  font-size: 1.4rem;
+  color: var(--color-ink-secondary);
+}
+.meta > * + *::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-inline-end: 1.8rem;
+  vertical-align: middle;
+  background: var(--color-line);
+}
+.ruled {
+  margin-top: 2.8rem;
+  padding-inline-start: 2rem;
+  border-inline-start: 2px solid var(--color-ink);
+}
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2.8rem;
+}
+.models a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6.4rem;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.models a > :first-child {
+  width: 6.4rem;
+  border: 1px solid var(--color-line);
+  transition: border-color var(--motion-fast) var(--motion-ease-crisp);
+}
+.models a:hover > :first-child {
+  border-color: var(--color-ink);
+}
+
+/* ---------------------------------------------------------------- section bars */
+
+.bars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 1.4rem 2.8rem;
+  padding-block: 2.8rem;
+  border-block: 1px solid var(--color-line);
+}
+.barLabel {
+  display: block;
+  overflow: hidden;
+  font-size: 1.3rem;
+  color: var(--color-ink-secondary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.barTrack {
+  display: block;
+  height: 6px;
+  margin-top: 0.6rem;
+  background: var(--color-surface-alt, #efede8);
+}
+.barFill {
+  display: block;
+  height: 100%;
+  background: var(--color-ink-secondary);
+  transform-origin: left;
+  transition: background-color var(--motion-fast) var(--motion-ease-crisp);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .barFill {
+    animation: grow calc(var(--motion-slow) * 1.5) var(--motion-ease) both;
+  }
+}
+@keyframes grow {
+  from { transform: scaleX(0); }
+}
+.bars a:hover .barFill,
+.bars a[aria-current] .barFill {
+  background: var(--color-ink);
+}
+.bars a[aria-current] .barLabel {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- reading */
+
+.progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: 3px;
+  background: var(--color-ink);
+  transform-origin: left;
+  pointer-events: none;
+}
+.left {
+  position: fixed;
+  inset-inline-start: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 45;
+  margin: 0;
+  padding: 0.9rem 1.4rem;
+  background: var(--color-ink);
+  color: var(--color-surface);
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(1.2rem);
+  transition:
+    opacity var(--motion-medium) var(--motion-ease),
+    transform var(--motion-medium) var(--motion-ease);
+  pointer-events: none;
+}
+.left[data-show="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------------------------------------------------------------- model rail */
+
+.rail {
+  position: sticky;
+  top: 13.2rem; /* level with the contents column (ArticleReading .contents) */
+}
+.railTitle {
+  margin: 0 0 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.railTitle span {
+  font-weight: 400;
+  color: var(--color-ink-secondary);
+}
+.rail ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin: 0 0 1.8rem;
+  padding: 0;
+  list-style: none;
+}
+.rail li a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.4rem;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  opacity: 0.45;
+  transition:
+    opacity var(--motion-medium) var(--motion-ease),
+    border-color var(--motion-medium) var(--motion-ease);
+}
+.rail li a > :first-child {
+  width: 4rem;
+  flex: none;
+}
+.rail li[data-lit="true"] a,
+.rail li a:hover {
+  opacity: 1;
+  border-color: var(--color-ink);
+}
+.railAction {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  background: var(--color-ink);
+  color: var(--color-surface);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- end */
+
+.end {
+  margin-top: 4.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--color-ink);
+  font-size: 1.4rem;
+  color: var(--color-ink-secondary);
+}
+.prevNext {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--color-ink);
+  color: var(--color-surface);
+}
+@media (min-width: 48rem) {
+  .prevNext {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.pn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  min-height: 36rem;
+  padding: clamp(4rem, 6vw, 8.8rem) var(--layout-outset, 3.2rem);
+  overflow: hidden;
+}
+.pn + .pn {
+  border-top: 1px solid rgb(255 255 255 / 0.16);
+}
+@media (min-width: 48rem) {
+  .pn + .pn {
+    border-top: 0;
+    border-inline-start: 1px solid rgb(255 255 255 / 0.16);
+  }
+}
+.pn img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+  transition:
+    opacity var(--motion-slow) var(--motion-ease),
+    transform calc(var(--motion-slow) * 2) var(--motion-ease);
+}
+.pn:hover img {
+  opacity: 0.34;
+  transform: scale(1.04);
+}
+.pn > :not(img) {
+  position: relative;
+}
+.pnLabel {
+  display: block;
+  font-size: 1.3rem;
+  color: rgb(255 255 255 / 0.64);
+}
+.pnTitle {
+  display: block;
+  max-width: 18em;
+  line-height: 1.15;
+  font-size: clamp(2.2rem, 1.6rem + 1vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.pnSummary {
+  display: -webkit-box;
+  max-width: 36em;
+  overflow: hidden;
+  font-size: 1.4rem;
+  color: rgb(255 255 255 / 0.64);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .left,
+  .rail li a,
+  .pn img {
+    transition: none;
+  }
+}

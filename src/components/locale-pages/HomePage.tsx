@@ -4,6 +4,8 @@ import { StudioShowcase } from "@/components/site/StudioShowcase";
 import { ExportMap } from "@/components/site/ExportMap";
 import { FamilyIndex } from "@/components/site/FamilyIndex";
 import { FactoryStory } from "@/components/site/FactoryStory";
+import { HomeIntro } from "@/components/site/HomeIntro";
+import { HomeSmoothScroll } from "@/components/site/HomeSmoothScroll";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import { BrazilHomeShowcase } from "@/components/site/brazil/BrazilHomeShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
@@ -47,7 +49,13 @@ export function homeMetadata(locale: Locale): Metadata {
 export function HomePage({ locale }: { locale: Locale }) {
   const content = homeContent(locale);
   return (
+    <>
+      {/* The opening curtain sits outside <main>: main is `isolate`, a stacking context its
+         z-index cannot leave, and the curtain has to cover the site header too. */}
+      <HomeIntro />
     <main className="isolate mt-48 flex-grow justify-self-start">
+      {/* Smoothed wheel scrolling, as in the 2026-10-12 motion demo (client). */}
+      <HomeSmoothScroll />
       <div className="modules mb-96 lg:mb-136">
         <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} homeAccent />
@@ -71,5 +79,6 @@ export function HomePage({ locale }: { locale: Locale }) {
         <FactoryStory locale={locale} />
       </div>
     </main>
+    </>
   );
 }

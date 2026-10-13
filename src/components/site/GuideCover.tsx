@@ -4,6 +4,7 @@ import type { Locale } from '@/data/site';
 import { isGuideProductPhoto } from '@/lib/guide-library';
 import styles from './GuideVisual.module.css';
 import { t, tx } from "@/lib/i18n";
+import { toHydeBrandedProductImageSrc } from '@/data/product-image-branding';
 
 /**
  * Preserve catalogue pixels; articles without a product photo use their technical reading navigation.
@@ -11,7 +12,9 @@ import { t, tx } from "@/lib/i18n";
  * opens that product page instead of the raw image file (2026-10-12, article → product plan).
  */
 export function GuideCover({ article, locale, compact = false, product }: { article: NewsArticle; locale: Locale; compact?: boolean; product?: { href: string; model: string } }) {
-  const source = article.heroImage.src;
+  /* The HYDE-marked copy of a product photograph: four guides named the as-shot original, which
+     still carries the old supplier mark (found 2026-10-12). */
+  const source = toHydeBrandedProductImageSrc(article.heroImage.src);
   const label = t(article.heroImage, "label", locale);
   if (!isGuideProductPhoto(source)) return null;
   const view = tx(locale, 'View product', { es: 'Ver producto', pt: 'Ver produto' });

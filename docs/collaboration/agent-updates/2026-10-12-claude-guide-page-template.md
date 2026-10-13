@@ -1,0 +1,23 @@
+# 2026-10-12 Claude: guide page template, as in the approved preview
+
+- **Request:** client 10-12, 「就用这个指南和产品页效果……方便大家观看，易于阅读理解 逻辑通畅 干净整洁有条理」.
+- **Guides only.** `NewsDetail` returns a separate guide layout when `section === "guides"`. The unreachable guide branches were removed from the news path, so news renders exactly as before; the dev server shows "Press inquiries" still on news.
+- **The guide layout:**
+  - A cover: the guide's number in publication order ("43", Guide 43 of 45); published and updated dates, reading time (English words ÷ 230), section count and model count; the title; the summary with a rule; the byline; thumbnails of the models it names.
+  - `GuideSectionBars`: one bar per H2, as long as its section, linking to it and highlighted while read.
+  - `GuideCover`, now always serving the HYDE-marked copy (`toHydeBrandedProductImageSrc`). Four guides had named the as-shot original, which carries the old supplier mark.
+  - Three columns:
+    - `ArticleContents`: a "03 / 10 · 28% read" line and position-based spy.
+    - The article body.
+    - `GuideModelRail`: the models in the guide, drawn in ink where the current section names them. Which section names which model is computed on the server from the blocks' own text.
+  - `GuideReading`: a progress hairline on the body and an "about N min left" note.
+  - An end mark, then an ink previous/next pair by publication order.
+- **Removed:** the dark-green "Before you specify" panel (`GuideArticleIntro.tsx` and its CSS), which had no other user.
+- **Capitalised headings:** headings stored in capitals render as smaller spaced capitals (`data-caps`, only for scripts that have case). The words are not touched. Sentence case needs a content edit in each language; German nouns rule out doing it in code. This is task #66.
+- **New shared hook:** `useScrollSpy`, shared by the three islands.
+- **i18n:** 13 new strings, translated in all seven overlays; fr and de use no-break spaces before %.
+- **Checks:**
+  - npm test 481/481, tsc, i18n-lint, spelling, motion:check.
+  - Dev-server screenshots on desktop and phone with no horizontal overflow; the prev/next pair checked separately.
+  - en, es and fr guides and a news page all return 200.
+- **Not run:** build and test:export; those are for the release session.

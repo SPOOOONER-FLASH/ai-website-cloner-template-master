@@ -1,18 +1,21 @@
+import type { CSSProperties } from "react";
 import type { Locale } from "@/data/site";
-import { companyEditorialStudies } from "@/data/company";
+import { companyEditorialStudies, factoryAssemblyLine, factoryCncMachining, factoryPolishingWorkshop } from "@/data/company";
 import { dict } from "@/lib/i18n";
 import { getResponsiveEditorialImageProps } from "./editorial-images";
 import { StoryStage } from "./StoryStage";
 import styles from "./HomeMotion.module.css";
 
 /**
- * "A factory, not a trading office": four steps through the plant, the photograph pinned on
+ * "A factory, not a trading office": five steps through the plant, the photograph pinned on
  * the left and wiped to the next as each step reaches the middle of the screen. From the
  * 2026-10-12 motion demo (design 4's sticky narrative), which the client picked for the
- * live homepage.
+ * live homepage; the client's screen recording of the demo the same evening asked for its
+ * wipe and its photographs here (「我要这个 那个滚动的视频 要这些图片」), so CNC machining
+ * joins as step 3 and the wipe now pushes in with a slight scale, as the demo's does.
  *
- * The four photographs are the client's own (companyEditorialStudies, src/data/company.ts,
- * where their provenance and captions are recorded), in process order. The laser cutter
+ * The photographs are the client's own (companyEditorialStudies and factoryCncMachining,
+ * src/data/company.ts, where their provenance and captions are recorded), in process order. The laser cutter
  * carries its maker's brand on the housing; it was left out on first build and put back at
  * the client's request (2026-10-12: 「激光切割加进去」) — equipment branding, not another
  * hardware brand, as content/rayen/assets.json already cleared for the company page. Each
@@ -21,49 +24,54 @@ import styles from "./HomeMotion.module.css";
 const STEP_IMAGES = [
   "/images/company/factory-laser-cutter.webp",
   "/images/company/press-shop.webp",
-  "/images/company/polishing-line.webp",
-  "/images/company/assembly-line.webp",
+  "/images/company/factory-cnc-machining.webp",
+  // The demo's polishing and assembly photographs, confirmed as the factory's own 2026-10-13.
+  "/images/company/factory-polishing-workshop.webp",
+  "/images/company/factory-assembly-quality-line.webp",
 ];
 
 const copy = {
   en: {
     eyebrow: "The factory",
     title: "A factory, not a trading office.",
-    body: "We cut, stamp, polish, assemble and inspect our own parts. Bring a drawing or a sample and we tool it.",
+    body: "We cut, stamp, machine, polish, assemble and inspect our own parts. Bring a drawing or a sample and we tool it.",
     steps: [
       { title: "Cutting", text: "A fiber laser cutter on our shop floor cuts the steel plate that becomes lock cases and backplates." },
       { title: "Stamping", text: "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped." },
+      { title: "Machining", text: "CNC machining in house, on the same site as the press shop." },
       { title: "Polishing", text: "The polishing line decides whether a satin finish is even across a whole production run." },
-      { title: "Assembly and inspection", text: "Sets are built, checked and bagged at the benches, with finished goods palletized behind them." },
+      { title: "Assembly and inspection", text: "Sets are built and checked on the assembly line, with parts in labeled bins along the bench." },
     ],
   },
   es: {
     eyebrow: "La fábrica",
     title: "Una fábrica, no una oficina comercial.",
-    body: "Cortamos, estampamos, pulimos, montamos e inspeccionamos nuestras propias piezas. Tráiganos un plano o una muestra y hacemos el utillaje.",
+    body: "Cortamos, estampamos, mecanizamos, pulimos, montamos e inspeccionamos nuestras propias piezas. Tráiganos un plano o una muestra y hacemos el utillaje.",
     steps: [
       { title: "Corte", text: "Una cortadora láser de fibra en nuestra planta corta la chapa de acero de la que salen cajas de cerradura y placas." },
-      { title: "Estampado", text: "Una fila de prensas mecánicas con su utillaje, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas." },
+      { title: "Estampado", text: "Una fila de prensas mecánicas con su utillaje, donde se estampan cajas de cerradura, placas y piezas en bruto de manijas." },
+      { title: "Mecanizado", text: "Mecanizado CNC propio, en la misma planta que las prensas." },
       { title: "Pulido", text: "La línea de pulido decide si un acabado satinado sale uniforme en toda una serie de producción." },
-      { title: "Montaje e inspección", text: "Los juegos se montan, revisan y embolsan en los puestos, con el producto terminado paletizado detrás." },
+      { title: "Montaje e inspección", text: "Los juegos se montan y revisan en la línea de montaje, con las piezas en contenedores etiquetados a lo largo del banco de trabajo." },
     ],
   },
   pt: {
     eyebrow: "A fábrica",
     title: "Uma fábrica, não um escritório comercial.",
-    body: "Cortamos, estampamos, polimos, montamos e inspecionamos as nossas próprias peças. Traga um desenho ou uma amostra e fazemos o ferramental.",
+    body: "Cortamos, estampamos, usinamos, polimos, montamos e inspecionamos as nossas próprias peças. Traga um desenho ou uma amostra e fazemos o ferramental.",
     steps: [
       { title: "Corte", text: "Uma cortadora laser de fibra na nossa fábrica corta a chapa de aço de que saem caixas de fechadura e espelhos." },
       { title: "Estampagem", text: "Uma fila de prensas mecânicas com a ferramenta montada, onde são estampadas caixas de fechadura, espelhos e peças brutas de maçanetas." },
+      { title: "Usinagem", text: "Usinagem CNC própria, no mesmo local da estamparia." },
       { title: "Polimento", text: "A linha de polimento decide se um acabamento acetinado sai uniforme em todo um lote de produção." },
-      { title: "Montagem e inspeção", text: "Os conjuntos são montados, conferidos e ensacados nas bancadas, com o produto acabado paletizado atrás." },
+      { title: "Montagem e inspeção", text: "Os conjuntos são montados e conferidos na linha de montagem, com as peças em caixas etiquetadas ao longo da bancada." },
     ],
   },
 };
 
 function alt(src: string, locale: Locale) {
-  const ref = companyEditorialStudies.find((s) => s.src === src);
-  if (!ref) throw new Error(`FactoryStory: ${src} is not in companyEditorialStudies`);
+  const ref = [...companyEditorialStudies, factoryCncMachining, factoryPolishingWorkshop, factoryAssemblyLine].find((s) => s.src === src);
+  if (!ref) throw new Error(`FactoryStory: ${src} has no ImageRef in src/data/company.ts`);
   return (locale === "es" ? ref.labelEs : locale === "pt" ? ref.labelPt : undefined) ?? ref.label;
 }
 
@@ -75,9 +83,9 @@ export function FactoryStory({ locale = "en" }: { locale?: Locale }) {
     <section className="layout mt-96 bg-ink text-surface lg:mt-136" aria-labelledby="factory-story-heading">
       <StoryStage />
       <div className="col-full grid lg:grid-cols-[7fr_5fr]">
-        <div className={styles.stage} data-stage data-active="0" aria-hidden="true">
+        <div className={styles.stage} data-stage aria-hidden="true">
           {STEP_IMAGES.map((src, k) => (
-            <div key={src} className={styles.shot} data-k={k}>
+            <div key={src} className={styles.shot} data-shot={k === 0 ? "on" : "next"}>
               {/* eslint-disable-next-line @next/next/no-img-element -- responsive editorial props, as MediaPlaceholder renders them */}
               <img
                 {...getResponsiveEditorialImageProps(src, "(min-width: 1032px) 58vw, 100vw")}
@@ -88,8 +96,9 @@ export function FactoryStory({ locale = "en" }: { locale?: Locale }) {
               />
             </div>
           ))}
+          {/* Each bar fills as the reader scrolls through its step; StoryStage sets --story-p. */}
           <div className={styles.progress}>
-            {STEP_IMAGES.map((src) => <i key={src} />)}
+            {STEP_IMAGES.map((src, k) => <i key={src} style={{ "--k": k, "--n": STEP_IMAGES.length } as CSSProperties} />)}
           </div>
         </div>
 

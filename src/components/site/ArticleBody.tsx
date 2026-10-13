@@ -15,7 +15,7 @@ export function ArticleBody({ blocks, locale, figure, mentions, rowHref }: { blo
 }
 
 function renderBlock(block: ArticleBlock, index: number, locale: Locale, mentions?: Map<number, Map<string, string>>, rowHref?: (cell: string) => string | undefined) {
-  if (block.kind === 'heading') return block.level === 2 ? <h2 key={block.id} id={block.id}>{block.text}</h2> : <h3 key={block.id} id={block.id}>{block.text}</h3>;
+  if (block.kind === 'heading') return block.level === 2 ? <h2 key={block.id} id={block.id} data-caps={/\p{Lu}/u.test(block.text) && block.text === block.text.toLocaleUpperCase()}>{block.text}</h2> : <h3 key={block.id} id={block.id}>{block.text}</h3>;
   if (block.kind === 'table') {
     const numeric = block.headers.map((_, column) => block.rows.every(row => /^-?\d+(?:\.\d+)?$/.test(row[column])));
     return <DataTable key={index} locale={locale} caption={block.caption || tx(locale, 'Reference table', { es: 'Tabla de consulta', pt: 'Tabela de consulta' })} columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? 'number' : 'text' }))} rows={block.rows.map(row => row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined, href: column === 0 ? rowHref?.(text) : undefined })))} />;
