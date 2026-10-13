@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 494 次提交
+最近 30 天 · 共 495 次提交
 
 ## 2026-10-12
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:58 | 中立 | Guide page: cover, section bars, contents \| text \| model rail, reading progress, prev/next | `71dd20c77f8` |
 | 23:48 | 中立 | Merge remote-tracking branch 'origin/main' into claude/br6-sm | `270409165fc` |
 | 23:48 | 中立 | 巴西专栏加回 BR6-SM（带微动开关）：沿棱线重修，独立复核通过 | `c33bd982960` |
 | 23:27 | HYDE | Homepage: opening curtain, smooth scroll, five-step factory story as in the demo | `835ff5ea9f9` |
