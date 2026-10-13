@@ -13,7 +13,7 @@ export function companyMetadata(locale: Locale): Metadata {
     locale,
     "/company",
     "Door Hardware Manufacturer in Xiaolan, China, Since 1998",
-    "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001 certified since 2002, with OEM and private-label production for export.",
+    "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001:2015 stamping plant, with OEM and private-label production for export.",
   );
 }
 

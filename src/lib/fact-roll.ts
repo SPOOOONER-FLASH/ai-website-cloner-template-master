@@ -34,7 +34,7 @@ export interface Rollable {
    * The number to arrive at, or undefined for "do not roll".
    *
    * Undefined is the safe default and it is load-bearing: on the real strip it is what
-   * keeps 1998 (a year), "ISO 9001" (not a number) and "101–200" (a range) from counting
+   * keeps 1998 (a year), "ISO 9001:2015" (not a number) and "101–200" (a range) from counting
    * up from nothing. See the `countTo` comment in site-facts.ts.
    */
   countTo?: number;

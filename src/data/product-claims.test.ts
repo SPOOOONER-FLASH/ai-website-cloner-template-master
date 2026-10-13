@@ -12,8 +12,8 @@ import test from "node:test";
  * certificate numbers exist. Three records still said "Standards: ANSI Grade 2/3" (copied
  * from Alibaba and stahlock.com listings), three panic devices carried a "Fire Rating" row in
  * hours, and nineteen records listed ISO 9001 as a product certification, which then became a
- * "Which standards does it hold?" FAQ answer. ISO 9001 is the company's quality system
- * (src/data/company.ts), not a property of a product, so it stays company-level only.
+ * "Which standards does it hold?" FAQ answer. ISO 9001 is a quality-system certificate held by
+ * our stamping plant (src/data/company.ts), not a property of a product, so it never goes on a record.
  *
  * Checked in all ten homes of the text: the record's en/es/pt fields and the seven overlays.
  */
@@ -88,5 +88,5 @@ test("no HYDE record lists ISO 9001 as a product certification", () => {
   const found = [...hyde]
     .filter(([, record]) => list(record.certifications).some((c) => /ISO 9001/.test(JSON.stringify(c))))
     .map(([id]) => id);
-  assert.deepEqual(found, [], "ISO 9001 is company-level: src/data/company.ts");
+  assert.deepEqual(found, [], "ISO 9001 is held by our stamping plant, not by a product: src/data/company.ts");
 });

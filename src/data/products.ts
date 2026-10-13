@@ -27,7 +27,7 @@ import { canonicalCategorySlug } from "./category-aliases";
  * 607 SS ET). None of them names the models below, so they are published as company
  * credentials in src/data/company.ts and NOT attached to individual products.
  * Per-product entries carry only:
- *   - ISO 9001, stated company-wide by the client and dated 2002
+ *   - nothing for ISO 9001: the certificate (ISO 9001:2015) is held by our stamping plant
  *   - no ANSI/BHMA grade anywhere: the client confirmed on 2026-08-27 that there is no
  *     BHMA certification, and the one record whose name asserted "ANSI Grade 3" has been
  *     renamed. Do not reintroduce a grade from a product name.

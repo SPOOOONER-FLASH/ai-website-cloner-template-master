@@ -1134,7 +1134,7 @@
     "src/components/site/ProductDetail.tsx:102"
   ],
   "days minimum lead time": [
-    "src/data/capability.ts:191"
+    "src/data/capability.ts:185"
   ],
   "Deadbolt throw": [
     "src/data/hardware-terms.ts:134"
@@ -1250,7 +1250,7 @@
   "Dimension drawing": [
     "src/components/site/ArgentinaCollection.tsx:35"
   ],
-  "Dimensional and functional checks run against the same drawings the catalog publishes, under a quality system audited to ISO 9001. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.": [
+  "Dimensional and functional checks run against the same drawings the catalog publishes, and our stamping plant is certified to ISO 9001:2015. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.": [
     "src/data/capability.ts:158"
   ],
   "Dimensioned drawing": [
@@ -1269,7 +1269,7 @@
     "src/components/site/menu-experience.ts:270"
   ],
   "Discuss OEM or private-label production": [
-    "src/data/capability.ts:213"
+    "src/data/capability.ts:207"
   ],
   "Discuss this hardware package": [
     "src/components/site/ProjectDetail.tsx:24"
@@ -1337,7 +1337,7 @@
   "door hardware accessory": [
     "src/data/category-sourcing.ts:44"
   ],
-  "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001.": [
+  "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001:2015 stamping plant.": [
     "src/data/site.ts:103"
   ],
   "Door hardware documents. What we can send you, and what we cannot.": [
@@ -1370,7 +1370,7 @@
   "Door hinges": [
     "src/components/site/products-architecture.ts:160"
   ],
-  "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001 certified since 2002, with OEM and private-label production for export.": [
+  "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001:2015 stamping plant, with OEM and private-label production for export.": [
     "src/components/locale-pages/SimplePages.tsx:16"
   ],
   "Door machining": [
@@ -2161,7 +2161,7 @@
   "Is there hold-open, and can the closing speed be set?": [
     "src/data/category-buying-guides.ts:410"
   ],
-  "ISO 9001 since 2002": [
+  "ISO 9001:2015 stamping plant": [
     "src/data/company.ts:50"
   ],
   "Issue date": [
@@ -2327,11 +2327,11 @@
   "Manufacturer & Supplier": [
     "src/components/locale-pages/CollectionPage.tsx:61"
   ],
-  "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001 since 2002; OEM production in Guangdong.": [
+  "Manufacturer of locks, panic exit devices and architectural hardware for international projects since 1998. ISO 9001:2015 stamping plant; OEM production in Guangdong.": [
     "src/components/locale-pages/HomePage.tsx:32"
   ],
   "Manufacturing": [
-    "src/data/capability.ts:208"
+    "src/data/capability.ts:202"
   ],
   "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries.": [
     "src/components/site/CompanyOverview.tsx:226"
@@ -2648,7 +2648,7 @@
   "No sign-up. Change any answer and the list rebuilds.": [
     "src/components/site/ConfiguratorIntro.tsx:45"
   ],
-  "Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first. We have made that door hardware, architectural ironmongery as the UK trade calls it, since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, ISO 9001 certified since 2002. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany. Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.": [
+  "Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first. We have made that door hardware, architectural ironmongery as the UK trade calls it, since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, and our stamping plant is certified to ISO 9001:2015. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany. Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.": [
     "src/components/site/WelcomeIntro.tsx:17"
   ],
   "None of these is a discontinued product. Where a model does go out of production we will say so here, in those words, with the date.": [
@@ -2725,7 +2725,7 @@
     "src/components/site/ProductDetail.tsx:120"
   ],
   "One chain, one roof": [
-    "src/data/capability.ts:209"
+    "src/data/capability.ts:203"
   ],
   "One contact from sample review to production order.": [
     "src/components/site/menu-experience.ts:117",
@@ -2942,7 +2942,7 @@
     "src/components/site/NewsDetail.tsx:164"
   ],
   "Packing + export": [
-    "src/data/capability.ts:180"
+    "src/data/capability.ts:174"
   ],
   "Panic bars for Brazil": [
     "src/components/site/brazil/brazil-data.ts:45",
@@ -3206,9 +3206,6 @@
   ],
   "Quality evidence": [
     "src/components/locale-pages/CertificationsPage.tsx:38"
-  ],
-  "quality system": [
-    "src/lib/site-facts.ts:67"
   ],
   "Quality system": [
     "src/data/company.ts:50"
@@ -3687,6 +3684,10 @@
     "src/components/site/FactoryStory.tsx:40",
     "src/data/capability.ts:92"
   ],
+  "stamping plant": [
+    "src/data/capability.ts:166",
+    "src/lib/site-facts.ts:67"
+  ],
   "Stand": [
     "src/data/bau-entry.ts:18"
   ],
@@ -3726,7 +3727,7 @@
   ],
   "Step": [
     "src/components/site/Configurator.tsx:77",
-    "src/data/capability.ts:212"
+    "src/data/capability.ts:206"
   ],
   "Still not finding it?": [
     "src/components/locale-pages/ModelLookupPage.tsx:53"
@@ -4286,7 +4287,7 @@
     "src/data/privacy-policy.ts:133"
   ],
   "We are the factory, not a trading office in front of one. Everything below happens on our own floor, from the mould to the carton — which is why a change of finish or a customer's own drawing is a scheduling question here rather than a subcontracting one.": [
-    "src/data/capability.ts:211"
+    "src/data/capability.ts:205"
   ],
   "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.": [
     "src/components/site/InquiryForm.tsx:263"
@@ -4561,7 +4562,7 @@
     "src/components/site/ServicesView.tsx:53"
   ],
   "Your carton, your markings, your logo. We ship to distributors, contractors and OEM partners in export markets and issue the documents an importer actually needs at the border rather than after it. Production lead time starts at 30 days from order confirmation; the exact date depends on the models, quantities and finishes on your order.": [
-    "src/data/capability.ts:184"
+    "src/data/capability.ts:178"
   ],
   "Your expected annual quantity": [
     "src/components/site/ServicesView.tsx:52"

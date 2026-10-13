@@ -178,7 +178,7 @@ function body(): string {
       file they learn to distrust (found 2026-09-23).
     */
     `- ${publishedProducts.length} published models across ${categoryLines.length} categories.`,
-    "- Quality management certified to ISO 9001.",
+    "- Our stamping plant is certified to ISO 9001:2015 (certificate 69125Q0026****, valid to 29 October 2028).",
     "- Test reports are published per model, not per range — see the download center.",
     "",
     "## Product categories",

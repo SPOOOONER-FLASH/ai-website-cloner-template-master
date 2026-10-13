@@ -100,16 +100,16 @@ export const defaultTitle: Record<Locale, string> = {
 export const defaultDescription: Record<Locale, string> = {
   // "architectural ironmongery" is what UK, Irish, Gulf and ANZ project buyers call this trade (client 2026-09-25,
   // docs/collaboration/tasks/2026-09-25-ironmongery-customize-brief.md). Once here, not in every title.
-  en: "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001.",
-  es: "Fabricante chino de barras antipánico, cerraduras de embutir, manijas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
-  pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Certificado ISO 9001, exportando para mais de trinta mercados.",
-  fr: "Fabricant chinois de fermetures anti-panique, serrures à mortaiser, béquilles, paumelles et quincaillerie de porte. Certifié ISO 9001, exportant vers plus de trente marchés.",
-  de: "Chinesischer Hersteller von Panikverschlüssen, Einsteckschlössern, Drückern, Bändern und Türbeschlägen. ISO 9001 zertifiziert, Export in mehr als dreißig Märkte.",
-  ja: "パニックバー、箱錠、レバーハンドル、丁番、建築用ドア金物の中国メーカー。ISO 9001 認証、30 以上の市場へ輸出。",
-  ko: "패닉바, 모티스 락, 레버 핸들, 경첩, 건축용 도어 철물의 중국 제조사. ISO 9001 인증, 30개 이상 시장에 수출.",
-  tr: "Panik bar, gömme kilit, kapı kolu, menteşe ve mimari kapı donanımı üreten Çinli üretici. ISO 9001 sertifikalı, 30'dan fazla pazara ihracat.",
-  ru: "Китайский производитель устройств «антипаника», врезных замков, нажимных ручек, петель и дверной фурнитуры. Сертификат ISO 9001, экспорт более чем в 30 стран.",
-  ar: "مصنّع صيني لأجهزة الخروج الطارئ والأقفال الغاطسة ومقابض الذراع والمفصلات وأجهزة الأبواب المعمارية. حاصل على ISO 9001، ويصدّر إلى أكثر من 30 سوقًا.",
+  en: "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001:2015 stamping plant.",
+  es: "Fabricante chino de barras antipánico, cerraduras de embutir, manijas y herrajes arquitectónicos. Planta de estampado ISO 9001:2015, exportando a más de treinta mercados.",
+  pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Unidade de estampagem ISO 9001:2015, exportando para mais de trinta mercados.",
+  fr: "Fabricant chinois de fermetures anti-panique, serrures à mortaiser, béquilles, paumelles et quincaillerie de porte. Unité d'emboutissage ISO 9001:2015, exportant vers plus de trente marchés.",
+  de: "Chinesischer Hersteller von Panikverschlüssen, Einsteckschlössern, Drückern, Bändern und Türbeschlägen. Stanzwerk nach ISO 9001:2015, Export in mehr als dreißig Märkte.",
+  ja: "パニックバー、箱錠、レバーハンドル、丁番、建築用ドア金物の中国メーカー。ISO 9001:2015 認証のプレス工場、30 以上の市場へ輸出。",
+  ko: "패닉바, 모티스 락, 레버 핸들, 경첩, 건축용 도어 철물의 중국 제조사. ISO 9001:2015 인증 프레스 공장, 30개 이상 시장에 수출.",
+  tr: "Panik bar, gömme kilit, kapı kolu, menteşe ve mimari kapı donanımı üreten Çinli üretici. ISO 9001:2015 sertifikalı pres tesisi, 30'dan fazla pazara ihracat.",
+  ru: "Китайский производитель устройств «антипаника», врезных замков, нажимных ручек, петель и дверной фурнитуры. Штамповочное производство по ISO 9001:2015, экспорт более чем в 30 стран.",
+  ar: "مصنّع صيني لأجهزة الخروج الطارئ والأقفال الغاطسة ومقابض الذراع والمفصلات وأجهزة الأبواب المعمارية. مصنع كبس معتمد وفق ISO 9001:2015، ويصدّر إلى أكثر من 30 سوقًا.",
 };
 
 /** Absolute URL helper — path must start with "/". */

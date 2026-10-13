@@ -49,7 +49,7 @@ export interface SiteFact {
    *
    *   1998        a year. Rolling 0 → 1998 is not "counting", it is a slot machine, and
    *               it reads as a company that opened some time after the Bronze Age.
-   *   ISO 9001    not a number at all.
+   *   ISO 9001:2015  not a number at all.
    *   101–200     a range. There is no single value to arrive at.
    *
    * So the data says which ones are countable and the component obeys. Adding a fact
@@ -64,7 +64,7 @@ const COPY = {
     families: "catalog categories",
     withVideo: "models with a demonstration video",
     founded: "manufacturing since",
-    quality: "quality system",
+    quality: "stamping plant",
     workforce: "people on site",
   },
   es: {
@@ -72,7 +72,7 @@ const COPY = {
     families: "categorías de catálogo",
     withVideo: "modelos con vídeo de demostración",
     founded: "fabricando desde",
-    quality: "sistema de calidad",
+    quality: "planta de estampado",
     workforce: "personas en planta",
   },
   pt: {
@@ -80,7 +80,7 @@ const COPY = {
     families: "categorias de catálogo",
     withVideo: "modelos com vídeo de demonstração",
     founded: "a fabricar desde",
-    quality: "sistema de qualidade",
+    quality: "unidade de estampagem",
     workforce: "pessoas na fábrica",
   },
 } as const;
@@ -119,11 +119,10 @@ export function siteFacts(locale: Locale = "en"): SiteFact[] {
 
   const quality = stat("Quality system");
   if (quality) {
-    /* "ISO 9001 since 2002" — the standard is the figure, the year is the qualifier. */
-    const [name, ...rest] = quality.split(" since ");
+    /* "ISO 9001:2015 stamping plant" — the standard is the figure; the holder (our stamping plant, not the company) is the label. */
     facts.push({
-      value: name,
-      label: rest.length ? `${t.quality} · ${rest.join(" since ")}` : t.quality,
+      value: quality.replace(/\s*stamping plant$/, ""),
+      label: t.quality,
       source: "src/data/company.ts",
     });
   }
