@@ -6,17 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 524 次提交
+最近 30 天 · 共 521 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 09:43 | HYDE | 十语 AI 引用检查：新增 /<语种>/llms.txt，robots 放行，根 llms.txt 链接 | `adbaa53286f` |
-| 09:34 | 中立 | 目标 #179：记 10-20 Clarity 复查与后续条件 | `4df7935c104` |
-| 09:27 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `dc3339f380e` |
-| 09:27 | 中立 | 目标清单 #175–#179：下线发布、菜单改版、3 篇新指南、llms.txt 西语段均已上线实测 | `40d2769ac1a` |
-| 08:44 | 中立 | llms.txt 加「Guías en español」：46 篇西语指南的 /es/ URL 与西语摘要 | `7812bd68be9` |
+| 10:12 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/brain-shell | `16ff27b5e94` |
+| 10:12 | 中立 | Clarity 结果文档：记下 10-13 上线的各语种 llms.txt，10-20 读数时分开看 | `fa37d5b8914` |
 | 08:30 | 中立 | Clarity 结果文档：五篇补缺文章标记完成，记下西语页不被引用的原因 | `7c1437c04ef` |
 | 08:28 | HYDE | 新指南（西语优先）：从中国进口门五金到墨西哥——进口商登记、报关行、报关单、税号与 NOM 标签（十种语言） | `df59dce1e6d` |
 | 08:19 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/brain-shell | `c717c51cb80` |
