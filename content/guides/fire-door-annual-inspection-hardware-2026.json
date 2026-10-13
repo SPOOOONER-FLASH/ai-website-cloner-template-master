@@ -1,0 +1,241 @@
+{
+  "slug": "fire-door-annual-inspection-hardware-2026",
+  "title": "Fire Door Annual Inspection 2026: The Hardware Items That Fail, from Closers and Latches to Labels, Under NFPA 80 and the EN Standards",
+  "kind": "insight",
+  "publishedAt": "2026-10-13",
+  "updatedAt": "2026-10-13",
+  "summary": "Many annual fire door inspection findings are hardware rather than the door itself: a closer that no longer latches the leaf, a latch that misses its strike, a door wedged open, a label painted over, a replacement part that was never rated, a pair that closes in the wrong order. This guide takes each finding in turn, under NFPA 80 in the United States and the EN standards and national rules in Europe, and says what normally puts it right.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/products-hyde/dc01-door-coordinator.webp",
+    "ratio": "1 / 1",
+    "label": "A DC01 door coordinator, the part that makes the inactive leaf of a pair close first",
+    "labelEs": "Un selector de cierre DC01, la pieza que hace cerrar primero la hoja pasiva de una puerta doble",
+    "labelPt": "Um coordenador DC01, a peça que faz a folha passiva de uma porta dupla fechar primeiro"
+  },
+  "relatedModels": ["DC01", "DC02", "DSL02"],
+  "seoTitle": "Fire Door Annual Inspection 2026: Hardware That Fails | Canton Hyland",
+  "seoDescription": "Fire door annual inspection: closers that stop short, latches that miss, wedged doors, painted labels, unrated spare parts, pairs. NFPA 80 and EN 16034.",
+  "body": [
+    "A fire door is inspected as an assembly, and it fails as one. The leaf can be sound and the frame can be sound, and the opening still fails because the closer no longer pulls the door into its latch.",
+    "This guide goes through the hardware findings that come up on annual fire door inspections, one at a time: what each one means, and what normally puts it right. Which components have to be rated in the first place is the subject of our guide Fire Door Hardware 2026: Which Components Must Be Rated; this one is about what happens to them in service.",
+    "## What the codes require",
+    "In the United States, NFPA 80, the standard for fire doors and other opening protectives, requires fire door assemblies to be inspected and tested not less than annually, by a person with knowledge and understanding of the operating components of the type of door being tested, and a signed record to be kept for the authority having jurisdiction. The building and life safety codes call it up, and the authority having jurisdiction decides which edition applies.",
+    "The standard also lists what the inspection has to verify on a swinging door: labels present and legible; no open holes or breaks in the door or frame; glazing and glazing beads intact; the door, frame, hinges, hardware and threshold secured, aligned and in working order; no missing or broken parts; clearances within the permitted limits; the self-closing device operational; on a pair with a coordinator, the inactive leaf closing before the active leaf; latching hardware securing the door when it is closed; no auxiliary hardware that interferes with operation; no field modifications that void the label; and gasketing and edge seals present and intact.",
+    "Europe has no single equivalent rule. The doorset is tested to EN 1634-1, and a fire-resisting doorset placed on the market is declared to the product standard EN 16034, read together with EN 14351-1 for external pedestrian doorsets. The hardware on it has standards of its own: EN 1154 for closers, EN 1155 for electrically powered hold-open devices, EN 1158 for coordinators, and EN 1125 and EN 179 for exit devices. How often an installed door is checked, and by whom, is set by each country.",
+    "England is a clear example. The Fire Safety (England) Regulations 2022 require the responsible person in a block of flats whose top floor is more than 11 meters above ground to check communal fire doors at least every three months, and to use best endeavors to check flat entrance doors at least every twelve months.",
+    "In Brazil, NBR 11742 covers fire doors on emergency exit routes and NBR 11785 covers panic bars; our article NBR 11742 and NBR 11785: What a Brazilian Inspection Checks on Fire Door Hardware goes through both.",
+    "Whatever the code, the hardware findings are much the same, because hardware wears out in the same ways everywhere.",
+    "## The closer that no longer closes the door",
+    "A frequent finding is a door that stops short of the frame. The closer is fitted and moving, but it no longer overcomes the latch, the smoke seals and the pressure difference across the opening. The test is simple: open the door fully, let it go, and it has to close and latch on its own, every time, from the fully open position.",
+    "The usual causes are adjustment, a closer of the wrong power size for the leaf, or a closer whose hydraulics have failed. Under EN 1154 the power size is matched to the leaf width and mass, and industry guidance treats power size 3 as the minimum for a fire door. Turning up the latching speed is an adjustment; replacing a leaking closer is a replacement, and on a certified door the new closer has to be one suitable for that door, not whatever fits the old holes. Our guide Door Closer Power Size 2026 covers the sizing.",
+    "## The latch that does not engage",
+    "A fire door works by staying shut while the leaf and frame distort in the heat, and the latch is what holds it. A latch bolt that no longer projects into the strike, or a strike that a sagging leaf now misses, leaves a door held only by its closer, and a closer alone does not keep a door shut under fire pressure.",
+    "The cause is usually worn hinges or a frame that has moved. Restoring the alignment is the repair. Enlarging the strike opening until the latch drops in is not a repair but a change to the assembly. A lock left on a hold-back setting so that the latch stays retracted counts as not latching, whatever the reason it was set that way.",
+    "## Wedged, hooked or held open",
+    "A fire door that is held open is not a fire door until somebody remembers to close it. Wedges, hooks, door stops on the floor, magnets that are not connected to the alarm, and furniture standing in the swing are exactly what an inspection looks for.",
+    "Where a door has to stand open in daily use, the compliant route is a device that releases it on a fire signal: in Europe an electrically powered hold-open device to EN 1155, or a closer with an integrated electric hold-open; in the United States a listed hold-open device or closer released by the fire alarm or a smoke detector. The wedge is cheaper and fails the inspection.",
+    "## Labels missing or painted over",
+    "The labels on the door and on the frame are the evidence that the assembly was certified. A label painted over during redecoration, removed with an old hinge, or hidden behind a kick plate turns a certified door into an undocumented one, and at an inspection an undocumented fire door and a failed one are treated alike.",
+    "Where a label has gone, the route back is normally a field label or a recertification by the listing or certification body, which is a survey and a cost rather than a form. The prevention costs one line in the maintenance specification: labels are masked during painting, never painted.",
+    "## Replacement parts that were never rated",
+    "This finding is invisible from the corridor. A failed lock replaced with whatever the maintenance store had, a hinge taken from another door, a closer swapped for a cheaper model, screws replaced with shorter ones. Each substitution can look identical and still take the door outside its certificate, because the certificate names the hardware set that was tested.",
+    "The rule is the same in every system: a replacement part on a fire door is a component suitable for that door, with the document that shows it, or it is a modification. Ask the supplier for the certificate or listing that covers the part on that type of door, and file it with the inspection record.",
+    "That applies to us as well. None of our product records carries a fire certificate today, including those whose application field names fire doors, so a buyer replacing hardware on a certified assembly should ask before assuming any of our parts is suitable for it.",
+    "## Pairs: closing order, coordinators and gaps",
+    "Pairs fail in ways single doors cannot. If the inactive leaf closes after the active one, the astragal or the latch stops the pair from closing, and the door stands ajar with both closers working perfectly. The coordinator is what enforces the order, and inspections find it disconnected, bent, or removed because somebody thought it was slowing the door down.",
+    "Gaps at the meeting edges and between leaf and frame have to stay within the clearances set by the standard and by the door's own certification. A pair that has dropped on its hinges usually shows it first as a widening gap at the top of the meeting edge.",
+    "Our DC01, DC02 and DSL02 are surface-mounted coordinators for pairs. None of them publishes a fire certificate, so on a certified pair the coordinator has to be one that the door's own certification covers. Our article Why a Double Fire Door Needs a Coordinator, and How to Size One explains how they work.",
+    "## Exit devices that do not latch",
+    "On a fire-rated exit door the exit device is also the latch. A rim strike that has worked loose, a vertical rod whose bottom latch no longer reaches its floor strike, a top latch that misses because the leaf has dropped: each leaves a door that opens under a push and does not stay shut under pressure.",
+    "In the United States, an exit device on a fire door has to be fire exit hardware, listed for both panic and fire use, and it has no mechanical dogging; a dogging key found in a fire exit device is a finding in itself. Our guide EN 1125 or EN 179 in 2026 covers why a fire exit is never dogged.",
+    "## Hinges and screws",
+    "Hinges carry a heavy leaf through daily use, and the first sign of wear is a door that rubs at the head or binds at the strike. Missing screws, screws replaced with shorter ones, and hinge pins working their way out are routine findings. The hinge type, count and fixings were part of the tested assembly: restoring them is maintenance, changing them is a modification.",
+    "## Field modifications",
+    "Every hole cut in a fire door after it left the factory is a question for the inspection: a card reader, a door viewer, a new lock preparation, a kick plate fixed with through-bolts, a hold-open screwed to the leaf. NFPA 80 limits what may be done on site without the listing organization, and European certificates state the permitted variations in their scope of application. Outside those limits a modification needs approval before the work, not an explanation after it.",
+    "## What to keep on file",
+    "An inspection is only as good as the record it leaves. For each door: its location and identification, the rating on its label, the date, the inspector, every item checked, what was found and what was done. For each replacement part: what it is, and the document that makes it suitable for that door. A building that can produce this file for every fire door gets through an audit quickly; one that cannot ends up surveying its doors again.",
+    "## Five checks before the inspector arrives",
+    "Open each door fully and let it go: it must close and latch on its own. On every pair, watch the inactive leaf close first. Remove every wedge and hook. Find the label on the door and on the frame. List every part replaced since the last inspection, with the document that covers it. Those five checks cover every hardware item described above."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "How often does a fire door have to be inspected?",
+        "answer": "In the United States, NFPA 80 requires fire door assemblies to be inspected and tested not less than annually, with a signed record kept for the authority having jurisdiction. In Europe the frequency is set nationally: in England, for example, communal fire doors in blocks of flats whose top floor is more than 11 meters above ground are checked at least every three months, and flat entrance doors at least every twelve months on a best-endeavors basis."
+      },
+      {
+        "question": "Who can carry out an NFPA 80 annual fire door inspection?",
+        "answer": "NFPA 80 requires a person with knowledge and understanding of the operating components of the type of door being tested. The authority having jurisdiction decides which edition of the standard applies and may set further requirements."
+      },
+      {
+        "question": "Can a fire door be held open?",
+        "answer": "Only by a device that releases it on a fire signal: an electrically powered hold-open device to EN 1155 or a closer with an integrated electric hold-open in Europe, or a listed hold-open device released by the fire alarm or a smoke detector in the United States. Wedges, hooks and floor stops are inspection failures."
+      },
+      {
+        "question": "What happens if the label on a fire door has been painted over or removed?",
+        "answer": "The door becomes undocumented, which an inspection treats the same as a failed door. The usual route back is a field label or a recertification by the listing or certification body. The prevention is to mask labels during painting."
+      },
+      {
+        "question": "Can a lock, closer or hinge on a fire door be replaced with any similar product?",
+        "answer": "No. A replacement has to be a component suitable for that door, with the certificate or listing that shows it; otherwise it is a modification that takes the door outside its certificate. None of our product records carries a fire certificate today, so ask before assuming any of our parts is suitable for a certified door."
+      },
+      {
+        "question": "Why does a pair of fire doors stay ajar when both closers work?",
+        "answer": "Because the leaves closed in the wrong order. The inactive leaf has to close before the active leaf, and the coordinator enforces that; a coordinator that is disconnected, bent or removed leaves the pair standing open on its astragal or latch."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cada cuánto hay que inspeccionar una puerta cortafuego?",
+        "answer": "En Estados Unidos, NFPA 80 exige inspeccionar y probar los conjuntos de puerta cortafuego al menos una vez al año, con un registro firmado a disposición de la autoridad competente. En Europa la frecuencia la fija cada país: en Inglaterra, por ejemplo, las puertas cortafuego de zonas comunes en edificios de departamentos cuyo último piso está a más de 11 metros del terreno se revisan al menos cada tres meses, y las puertas de entrada a las viviendas al menos cada doce meses, en la medida de lo posible."
+      },
+      {
+        "question": "¿Quién puede hacer la inspección anual de NFPA 80?",
+        "answer": "NFPA 80 exige una persona con conocimiento y comprensión de los componentes de funcionamiento del tipo de puerta que se prueba. La autoridad competente decide qué edición de la norma aplica y puede fijar requisitos adicionales."
+      },
+      {
+        "question": "¿Se puede mantener abierta una puerta cortafuego?",
+        "answer": "Solo con un dispositivo que la libere ante una señal de incendio: un retenedor electromagnético según EN 1155 o un cierrapuertas con retención eléctrica integrada en Europa, o un retenedor listado que libere la alarma de incendio o un detector de humo en Estados Unidos. Las cuñas, los ganchos y los topes de piso son fallas de inspección."
+      },
+      {
+        "question": "¿Qué pasa si la etiqueta de una puerta cortafuego se pintó o se retiró?",
+        "answer": "La puerta queda sin documentar, y una inspección la trata igual que a una puerta que falló. La vía habitual para recuperarla es una etiqueta de campo o una recertificación por el organismo de listado o certificación. La prevención es enmascarar las etiquetas al pintar."
+      },
+      {
+        "question": "¿Se puede cambiar la cerradura, el cierrapuertas o una bisagra de una puerta cortafuego por cualquier producto parecido?",
+        "answer": "No. El repuesto tiene que ser un componente apto para esa puerta, con el certificado o listado que lo demuestre; si no, es una modificación que saca a la puerta de su certificado. Ninguna de nuestras fichas de producto tiene hoy un certificado de fuego, así que consulte antes de suponer que una pieza nuestra sirve para una puerta certificada."
+      },
+      {
+        "question": "¿Por qué una puerta cortafuego de dos hojas queda entreabierta si los dos cierrapuertas funcionan?",
+        "answer": "Porque las hojas cerraron en el orden equivocado. La hoja pasiva tiene que cerrar antes que la activa, y el selector de cierre lo garantiza; un selector desconectado, doblado o retirado deja la puerta apoyada en el tapajuntas o en el pestillo."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Com que frequência uma porta corta-fogo precisa ser inspecionada?",
+        "answer": "Nos Estados Unidos, a NFPA 80 exige que os conjuntos de porta corta-fogo sejam inspecionados e testados pelo menos uma vez por ano, com um registro assinado à disposição da autoridade competente. Na Europa a frequência é definida por cada país: na Inglaterra, por exemplo, as portas corta-fogo das áreas comuns em prédios de apartamentos cujo último andar fica a mais de 11 metros do solo são verificadas pelo menos a cada três meses, e as portas de entrada dos apartamentos pelo menos a cada doze meses, na medida do possível."
+      },
+      {
+        "question": "Quem pode fazer a inspeção anual da NFPA 80?",
+        "answer": "A NFPA 80 exige uma pessoa com conhecimento e compreensão dos componentes de funcionamento do tipo de porta que está sendo testado. A autoridade competente decide qual edição da norma se aplica e pode definir exigências adicionais."
+      },
+      {
+        "question": "Uma porta corta-fogo pode ficar aberta?",
+        "answer": "Só com um dispositivo que a libere com um sinal de incêndio: um retentor eletromagnético conforme a EN 1155 ou uma mola com retenção elétrica integrada na Europa, ou um retentor listado liberado pelo alarme de incêndio ou por um detector de fumaça nos Estados Unidos. Calços, ganchos e batentes de piso são reprovações na inspeção."
+      },
+      {
+        "question": "O que acontece se a etiqueta de uma porta corta-fogo foi pintada ou retirada?",
+        "answer": "A porta fica sem documentação, e a inspeção a trata como uma porta reprovada. O caminho habitual de volta é uma etiqueta de campo ou uma recertificação pelo organismo de listagem ou certificação. A prevenção é proteger as etiquetas com fita durante a pintura."
+      },
+      {
+        "question": "Posso trocar a fechadura, a mola ou uma dobradiça de uma porta corta-fogo por qualquer produto parecido?",
+        "answer": "Não. A peça de reposição tem que ser um componente adequado àquela porta, com o certificado ou a listagem que comprove isso; caso contrário, é uma modificação que tira a porta do seu certificado. Nenhum dos nossos registros de produto tem hoje um certificado de fogo, então consulte antes de supor que uma peça nossa serve para uma porta certificada."
+      },
+      {
+        "question": "Por que uma porta corta-fogo de duas folhas fica entreaberta se as duas molas funcionam?",
+        "answer": "Porque as folhas fecharam na ordem errada. A folha passiva tem que fechar antes da ativa, e o coordenador garante isso; um coordenador desconectado, entortado ou retirado deixa a porta apoiada no mata-junta ou no trinco."
+      }
+    ]
+  },
+  "titleEs": "Inspección anual de puertas cortafuego 2026: los herrajes que fallan, del cierrapuertas y el pestillo a las etiquetas, según NFPA 80 y las normas EN",
+  "summaryEs": "Muchas de las observaciones de una inspección anual de puertas cortafuego son de herrajes y no de la puerta: un cierrapuertas que ya no hace entrar el pestillo, un pestillo que no encuentra el cerradero, una puerta acuñada abierta, una etiqueta pintada, un repuesto que nunca estuvo clasificado, una puerta de dos hojas que cierra en el orden equivocado. Esta guía repasa cada observación, según NFPA 80 en Estados Unidos y las normas EN y las reglas nacionales en Europa, y explica qué la corrige normalmente.",
+  "seoTitleEs": "Inspección anual de puertas cortafuego 2026: herrajes | Canton Hyland",
+  "seoDescriptionEs": "Inspección anual de puertas cortafuego: cierrapuertas que no cierran, pestillos que fallan, puertas acuñadas, etiquetas pintadas, repuestos. NFPA 80 y EN.",
+  "bodyEs": [
+    "Una puerta cortafuego se inspecciona como un conjunto, y falla como un conjunto. La hoja puede estar bien y el marco puede estar bien, y el vano falla igual porque el cierrapuertas ya no lleva la puerta hasta que entre el pestillo.",
+    "Esta guía repasa las observaciones de herrajes que aparecen en las inspecciones anuales de puertas cortafuego, una por una: qué significa cada una y qué la corrige normalmente. Qué componentes deben estar clasificados desde el principio es el tema de nuestra guía Herraje de puerta cortafuego 2026: qué componentes deben estar clasificados; esta trata de lo que les pasa en servicio.",
+    "## Qué exigen las normas",
+    "En Estados Unidos, NFPA 80, la norma de puertas cortafuego y otras protecciones de vanos, exige que los conjuntos de puerta cortafuego se inspeccionen y prueben al menos una vez al año, a cargo de una persona con conocimiento y comprensión de los componentes de funcionamiento del tipo de puerta que se prueba, y que se conserve un registro firmado para la autoridad competente. Los códigos de construcción y de seguridad humana la hacen obligatoria, y la autoridad competente decide qué edición aplica.",
+    "La norma enumera además lo que la inspección debe verificar en una puerta batiente: etiquetas presentes y legibles; ningún agujero ni rotura abierta en la puerta o el marco; acristalamiento y junquillos intactos; puerta, marco, bisagras, herrajes y umbral fijos, alineados y en funcionamiento; ninguna pieza faltante o rota; holguras dentro de los límites permitidos; el dispositivo de cierre automático en funcionamiento; en puertas de dos hojas con selector, la hoja pasiva cerrando antes que la activa; el herraje de pestillo asegurando la puerta cuando está cerrada; ningún herraje auxiliar que impida el funcionamiento; ninguna modificación en obra que anule la etiqueta; y juntas y burletes de canto presentes e intactos.",
+    "Europa no tiene una regla única equivalente. El conjunto de puerta se ensaya según EN 1634-1, y una puerta cortafuego que se pone en el mercado se declara según la norma de producto EN 16034, leída junto con EN 14351-1 para puertas peatonales exteriores. Sus herrajes tienen normas propias: EN 1154 para cierrapuertas, EN 1155 para retenedores eléctricos, EN 1158 para selectores de cierre, y EN 1125 y EN 179 para dispositivos de salida. Con qué frecuencia se revisa una puerta instalada, y quién lo hace, lo fija cada país.",
+    "Inglaterra es un ejemplo claro. Las Fire Safety (England) Regulations 2022 exigen al responsable de un edificio de departamentos cuyo último piso está a más de 11 metros del terreno revisar las puertas cortafuego de zonas comunes al menos cada tres meses, y hacer lo posible por revisar las puertas de entrada a las viviendas al menos cada doce meses.",
+    "En Brasil, NBR 11742 cubre las puertas cortafuego de rutas de salida de emergencia y NBR 11785 las barras antipánico; nuestro artículo NBR 11742 y NBR 11785: qué revisa una inspección brasileña en los herrajes de una puerta cortafuego explica las dos.",
+    "Sea cual sea la norma, las observaciones de herrajes son muy parecidas, porque los herrajes se desgastan igual en todas partes.",
+    "## El cierrapuertas que ya no cierra la puerta",
+    "Una observación frecuente es una puerta que se queda corta antes del marco. El cierrapuertas está instalado y se mueve, pero ya no vence el pestillo, las juntas de humo y la diferencia de presión del vano. La prueba es sencilla: abra la puerta del todo, suéltela, y tiene que cerrar y quedar con el pestillo puesto por sí sola, siempre, desde la apertura completa.",
+    "Las causas habituales son el ajuste, un cierrapuertas de potencia equivocada para la hoja, o un cierrapuertas con la hidráulica dañada. Según EN 1154 la potencia se elige por el ancho y la masa de la hoja, y la práctica del sector toma la potencia 3 como mínimo para una puerta cortafuego. Subir la velocidad de golpe final es un ajuste; cambiar un cierrapuertas que pierde aceite es un reemplazo, y en una puerta certificada el nuevo tiene que ser apto para esa puerta, no el que coincida con los agujeros viejos. Nuestra guía Potencia de cierrapuertas 2026 explica cómo dimensionarlo.",
+    "## El pestillo que no entra",
+    "Una puerta cortafuego funciona porque se mantiene cerrada mientras la hoja y el marco se deforman con el calor, y lo que la sostiene es el pestillo. Un pestillo que ya no entra en el cerradero, o un cerradero que la hoja descolgada ya no encuentra, deja la puerta sujeta solo por el cierrapuertas, y el cierrapuertas solo no mantiene cerrada una puerta bajo la presión de un incendio.",
+    "La causa suele ser el desgaste de las bisagras o un marco que se movió. Recuperar la alineación es la reparación. Agrandar la boca del cerradero hasta que el pestillo entre no es una reparación sino un cambio del conjunto. Una cerradura dejada en posición de retención, con el pestillo recogido, cuenta como puerta sin pestillo, sea cual sea el motivo.",
+    "## Acuñada, enganchada o retenida abierta",
+    "Una puerta cortafuego retenida abierta no es una puerta cortafuego hasta que alguien se acuerde de cerrarla. Cuñas, ganchos, topes de piso, imanes no conectados a la alarma y muebles dentro del barrido de la hoja son exactamente lo que busca una inspección.",
+    "Cuando una puerta debe quedar abierta en el uso diario, la vía correcta es un dispositivo que la libere ante una señal de incendio: en Europa un retenedor electromagnético según EN 1155, o un cierrapuertas con retención eléctrica integrada; en Estados Unidos un retenedor o cierrapuertas listado que libere la alarma de incendio o un detector de humo. La cuña es más barata y no pasa la inspección.",
+    "## Etiquetas faltantes o pintadas",
+    "Las etiquetas de la puerta y del marco son la prueba de que el conjunto se certificó. Una etiqueta pintada al redecorar, retirada junto con una bisagra vieja o tapada por una placa de patada convierte una puerta certificada en una puerta sin documentar, y en una inspección una puerta cortafuego sin documentar y una que falló se tratan igual.",
+    "Cuando la etiqueta desaparece, la vía de vuelta es normalmente una etiqueta de campo o una recertificación por el organismo de listado o certificación, que es una inspección técnica y un costo, no un formulario. La prevención cuesta una línea en la especificación de mantenimiento: las etiquetas se enmascaran al pintar, nunca se pintan.",
+    "## Repuestos que nunca estuvieron clasificados",
+    "Esta observación no se ve desde el pasillo. Una cerradura dañada sustituida por lo que había en el almacén de mantenimiento, una bisagra tomada de otra puerta, un cierrapuertas cambiado por uno más barato, tornillos reemplazados por otros más cortos. Cada sustitución puede verse idéntica y aun así sacar la puerta de su certificado, porque el certificado nombra el juego de herrajes que se ensayó.",
+    "La regla es la misma en todos los sistemas: un repuesto en una puerta cortafuego es un componente apto para esa puerta, con el documento que lo demuestra, o es una modificación. Pida al proveedor el certificado o listado que cubre la pieza en ese tipo de puerta, y archívelo con el registro de inspección.",
+    "Eso vale también para nosotros. Ninguna de nuestras fichas de producto tiene hoy un certificado de fuego, tampoco las que mencionan puertas cortafuego en su campo de aplicación, así que quien cambie herrajes en un conjunto certificado debe consultarnos antes de suponer que una pieza nuestra es apta.",
+    "## Puertas de dos hojas: orden de cierre, selectores y holguras",
+    "Las puertas de dos hojas fallan de formas que una puerta sencilla no puede. Si la hoja pasiva cierra después de la activa, el tapajuntas o el pestillo impiden que la puerta cierre, y queda entreabierta con los dos cierrapuertas funcionando perfectamente. El selector de cierre es lo que impone el orden, y las inspecciones lo encuentran desconectado, doblado o retirado porque alguien pensó que frenaba la puerta.",
+    "Las holguras en los cantos de encuentro y entre hoja y marco deben quedar dentro de lo que fijan la norma y la certificación de la propia puerta. Una puerta doble que se descolgó sobre sus bisagras suele mostrarlo primero como una holgura que se abre en la parte alta del canto de encuentro.",
+    "Nuestros DC01, DC02 y DSL02 son selectores de cierre de sobreponer para puertas de dos hojas. Ninguno publica un certificado de fuego, así que en una puerta doble certificada el selector tiene que ser uno cubierto por la certificación de la propia puerta. Nuestro artículo Por qué una puerta cortafuego de dos hojas necesita un selector de cierre, y cómo dimensionarlo explica cómo funcionan.",
+    "## Dispositivos de salida que no traban",
+    "En una puerta de salida cortafuego, el dispositivo de salida es también el pestillo. Un cerradero de sobreponer que se aflojó, una varilla vertical cuyo pestillo inferior ya no llega al cerradero de piso, un pestillo superior que no encuentra su cerradero porque la hoja se descolgó: cada uno deja una puerta que abre al empujar y no se mantiene cerrada bajo presión.",
+    "En Estados Unidos, el dispositivo de salida de una puerta cortafuego tiene que ser herraje de salida para fuego, listado para uso antipánico y para fuego a la vez, y no lleva retención mecánica; encontrar una llave de retención en uno de ellos ya es una observación. Nuestra guía EN 1125 o EN 179 en 2026 explica por qué una salida cortafuego nunca se deja retenida.",
+    "## Bisagras y tornillos",
+    "Las bisagras sostienen una hoja pesada en el uso diario, y el primer signo de desgaste es una puerta que roza arriba o se traba en el cerradero. Tornillos que faltan, tornillos cambiados por otros más cortos y pernos de bisagra que se salen son observaciones de rutina. El tipo de bisagra, su número y sus fijaciones formaron parte del conjunto ensayado: restituirlos es mantenimiento, cambiarlos es una modificación.",
+    "## Modificaciones en obra",
+    "Cada perforación hecha en una puerta cortafuego después de salir de fábrica es una pregunta para la inspección: un lector de tarjetas, una mirilla, una nueva preparación de cerradura, una placa de patada fijada con pernos pasantes, un retenedor atornillado a la hoja. NFPA 80 limita lo que se puede hacer en obra sin el organismo de listado, y los certificados europeos indican las variaciones permitidas en su campo de aplicación. Fuera de esos límites, una modificación necesita aprobación antes del trabajo, no una explicación después.",
+    "## Qué conservar en el expediente",
+    "Una inspección vale lo que vale el registro que deja. Por cada puerta: ubicación e identificación, la clasificación de su etiqueta, la fecha, el inspector, cada punto revisado, lo que se encontró y lo que se hizo. Por cada repuesto: qué es, y el documento que lo hace apto para esa puerta. Un edificio que puede presentar este expediente para cada puerta cortafuego pasa una auditoría con rapidez; uno que no puede termina inspeccionando sus puertas otra vez.",
+    "## Cinco revisiones antes de que llegue el inspector",
+    "Abra cada puerta del todo y suéltela: debe cerrar y quedar con el pestillo puesto por sí sola. En cada puerta doble, compruebe que la hoja pasiva cierra primero. Retire todas las cuñas y ganchos. Localice la etiqueta de la puerta y la del marco. Haga una lista de cada pieza cambiada desde la última inspección, con el documento que la cubre. Esas cinco revisiones cubren todos los herrajes descritos arriba."
+  ],
+  "titlePt": "Inspeção anual de portas corta-fogo 2026: as ferragens que reprovam, da mola e do trinco às etiquetas, segundo a NFPA 80 e as normas EN",
+  "summaryPt": "Muitas das não conformidades de uma inspeção anual de portas corta-fogo são de ferragens, e não da porta: uma mola que já não faz o trinco engatar, um trinco que não encontra a contra-testa, uma porta calçada aberta, uma etiqueta pintada, uma peça de reposição que nunca foi classificada, uma porta de duas folhas que fecha na ordem errada. Este guia percorre cada uma delas, segundo a NFPA 80 nos Estados Unidos e as normas EN e as regras nacionais na Europa, e diz o que normalmente as corrige.",
+  "seoTitlePt": "Inspeção anual de portas corta-fogo 2026: ferragens | Canton Hyland",
+  "seoDescriptionPt": "Inspeção anual de porta corta-fogo: molas que não fecham, trincos que falham, portas calçadas, etiquetas pintadas, peças sem certificado. NFPA 80 e EN.",
+  "bodyPt": [
+    "Uma porta corta-fogo é inspecionada como um conjunto, e é reprovada como um conjunto. A folha pode estar boa e o batente pode estar bom, e o vão é reprovado assim mesmo porque a mola já não leva a porta até o trinco engatar.",
+    "Este guia percorre as não conformidades de ferragens que aparecem nas inspeções anuais de portas corta-fogo, uma por uma: o que cada uma significa e o que normalmente a corrige. Quais componentes precisam ser classificados desde o início é o tema do nosso guia Ferragem de porta corta-fogo 2026: que componentes devem ser classificados; este trata do que acontece com eles em uso.",
+    "## O que as normas exigem",
+    "Nos Estados Unidos, a NFPA 80, a norma de portas corta-fogo e outras proteções de vãos, exige que os conjuntos de porta corta-fogo sejam inspecionados e testados pelo menos uma vez por ano, por uma pessoa com conhecimento e compreensão dos componentes de funcionamento do tipo de porta testado, e que um registro assinado seja mantido para a autoridade competente. Os códigos de edificação e de segurança à vida a tornam obrigatória, e a autoridade competente decide qual edição se aplica.",
+    "A norma também lista o que a inspeção deve verificar numa porta de abrir: etiquetas presentes e legíveis; nenhum furo ou rachadura aberta na porta ou no batente; vidros e baguetes intactos; porta, batente, dobradiças, ferragens e soleira fixos, alinhados e funcionando; nenhuma peça faltando ou quebrada; folgas dentro dos limites permitidos; o dispositivo de fechamento automático funcionando; em portas de duas folhas com coordenador, a folha passiva fechando antes da ativa; o trinco travando a porta quando fechada; nenhuma ferragem auxiliar que impeça o funcionamento; nenhuma modificação em obra que anule a etiqueta; e guarnições e vedações de borda presentes e íntegras.",
+    "A Europa não tem uma regra única equivalente. O conjunto de porta é ensaiado conforme a EN 1634-1, e uma porta corta-fogo colocada no mercado é declarada conforme a norma de produto EN 16034, lida junto com a EN 14351-1 para portas externas de pedestres. As ferragens têm normas próprias: EN 1154 para molas, EN 1155 para retentores elétricos, EN 1158 para coordenadores, e EN 1125 e EN 179 para dispositivos de saída. Com que frequência uma porta instalada é verificada, e por quem, é definido por cada país.",
+    "A Inglaterra é um exemplo claro. As Fire Safety (England) Regulations 2022 exigem que o responsável por um prédio de apartamentos cujo último andar fica a mais de 11 metros do solo verifique as portas corta-fogo das áreas comuns pelo menos a cada três meses, e faça o possível para verificar as portas de entrada dos apartamentos pelo menos a cada doze meses.",
+    "No Brasil, a NBR 11742 cobre as portas corta-fogo de rotas de saída de emergência e a NBR 11785 cobre as barras antipânico; nosso artigo NBR 11742 e NBR 11785: o que a vistoria confere nas ferragens de uma porta corta-fogo trata das duas.",
+    "Qualquer que seja a norma, as não conformidades de ferragens são muito parecidas, porque as ferragens se desgastam do mesmo jeito em todo lugar.",
+    "## A mola que já não fecha a porta",
+    "Uma não conformidade frequente é a porta que para antes do batente. A mola está instalada e se move, mas já não vence o trinco, as vedações de fumaça e a diferença de pressão no vão. O teste é simples: abra a porta totalmente, solte, e ela tem que fechar e engatar o trinco sozinha, sempre, a partir da abertura total.",
+    "As causas habituais são a regulagem, uma mola de potência errada para a folha, ou uma mola com a hidráulica danificada. Pela EN 1154 a potência é escolhida pela largura e pela massa da folha, e a prática do setor considera a potência 3 o mínimo para uma porta corta-fogo. Aumentar a velocidade de fechamento final é uma regulagem; trocar uma mola que vaza óleo é uma substituição, e numa porta certificada a nova mola tem que ser adequada àquela porta, e não a que coincide com os furos antigos. Nosso guia Potência de mola de porta 2026 explica o dimensionamento.",
+    "## O trinco que não engata",
+    "Uma porta corta-fogo funciona porque continua fechada enquanto a folha e o batente se deformam com o calor, e o que a segura é o trinco. Um trinco que já não entra na contra-testa, ou uma contra-testa que a folha caída já não encontra, deixa a porta presa só pela mola, e a mola sozinha não mantém uma porta fechada sob a pressão de um incêndio.",
+    "A causa costuma ser o desgaste das dobradiças ou um batente que se moveu. Recuperar o alinhamento é o reparo. Alargar a abertura da contra-testa até o trinco cair nela não é um reparo, e sim uma alteração do conjunto. Uma fechadura deixada na posição de retenção, com o trinco recolhido, conta como porta sem trinco, seja qual for o motivo.",
+    "## Calçada, enganchada ou retida aberta",
+    "Uma porta corta-fogo retida aberta não é uma porta corta-fogo até alguém lembrar de fechá-la. Calços, ganchos, batentes de piso, ímãs não ligados ao alarme e móveis no raio de abertura da folha são exatamente o que a inspeção procura.",
+    "Quando uma porta precisa ficar aberta no uso diário, o caminho correto é um dispositivo que a libere com um sinal de incêndio: na Europa um retentor eletromagnético conforme a EN 1155, ou uma mola com retenção elétrica integrada; nos Estados Unidos um retentor ou mola listado, liberado pelo alarme de incêndio ou por um detector de fumaça. O calço é mais barato e é reprovado na inspeção.",
+    "## Etiquetas faltando ou pintadas",
+    "As etiquetas da porta e do batente são a prova de que o conjunto foi certificado. Uma etiqueta pintada numa reforma, retirada junto com uma dobradiça velha ou escondida atrás de uma placa de proteção transforma uma porta certificada numa porta sem documentação, e na inspeção uma porta corta-fogo sem documentação e uma reprovada são tratadas da mesma forma.",
+    "Quando a etiqueta some, o caminho de volta normalmente é uma etiqueta de campo ou uma recertificação pelo organismo de listagem ou certificação, o que é uma vistoria técnica e um custo, e não um formulário. A prevenção custa uma linha na especificação de manutenção: as etiquetas são protegidas com fita na pintura, nunca pintadas.",
+    "## Peças de reposição que nunca foram classificadas",
+    "Esta não conformidade não se vê do corredor. Uma fechadura quebrada trocada pelo que havia no almoxarifado, uma dobradiça tirada de outra porta, uma mola trocada por um modelo mais barato, parafusos substituídos por outros mais curtos. Cada substituição pode parecer idêntica e ainda assim tirar a porta do seu certificado, porque o certificado nomeia o conjunto de ferragens que foi ensaiado.",
+    "A regra é a mesma em todos os sistemas: uma peça de reposição numa porta corta-fogo é um componente adequado àquela porta, com o documento que comprova isso, ou é uma modificação. Peça ao fornecedor o certificado ou a listagem que cobre a peça naquele tipo de porta, e arquive com o registro de inspeção.",
+    "Isso vale também para nós. Nenhum dos nossos registros de produto tem hoje um certificado de fogo, nem mesmo os que citam portas corta-fogo no campo de aplicação, então quem troca ferragens num conjunto certificado deve nos consultar antes de supor que uma peça nossa é adequada.",
+    "## Portas de duas folhas: ordem de fechamento, coordenadores e folgas",
+    "Portas de duas folhas falham de jeitos que uma porta simples não consegue. Se a folha passiva fecha depois da ativa, o mata-junta ou o trinco impedem o fechamento, e a porta fica entreaberta com as duas molas funcionando perfeitamente. O coordenador é o que impõe a ordem, e as inspeções o encontram desconectado, entortado ou retirado porque alguém achou que ele freava a porta.",
+    "As folgas nas bordas de encontro e entre folha e batente precisam ficar dentro do que definem a norma e a certificação da própria porta. Uma porta dupla que caiu nas dobradiças costuma mostrar isso primeiro como uma folga que se abre no alto da borda de encontro.",
+    "Nossos DC01, DC02 e DSL02 são coordenadores de sobrepor para portas de duas folhas. Nenhum publica um certificado de fogo, então numa porta dupla certificada o coordenador tem que ser um coberto pela certificação da própria porta. Nosso artigo Por que uma porta corta-fogo de duas folhas precisa de coordenador, e como dimensioná-lo explica como eles funcionam.",
+    "## Dispositivos de saída que não travam",
+    "Numa porta de saída corta-fogo, o dispositivo de saída é também o trinco. Uma contra-testa de sobrepor que se soltou, uma haste vertical cujo trinco inferior já não alcança a contra-testa de piso, um trinco superior que não encontra a sua contra-testa porque a folha caiu: cada um deixa uma porta que abre com um empurrão e não fica fechada sob pressão.",
+    "Nos Estados Unidos, o dispositivo de saída de uma porta corta-fogo tem que ser ferragem de saída para fogo, listada para uso antipânico e para fogo ao mesmo tempo, e não tem retenção mecânica; encontrar uma chave de retenção num deles já é uma não conformidade. Nosso guia EN 1125 ou EN 179 em 2026 explica por que uma saída corta-fogo nunca fica retida.",
+    "## Dobradiças e parafusos",
+    "As dobradiças sustentam uma folha pesada no uso diário, e o primeiro sinal de desgaste é uma porta que raspa em cima ou prende na contra-testa. Parafusos faltando, parafusos trocados por outros mais curtos e pinos de dobradiça saindo do lugar são não conformidades de rotina. O tipo de dobradiça, a quantidade e as fixações fizeram parte do conjunto ensaiado: restituí-los é manutenção, mudá-los é uma modificação.",
+    "## Modificações em obra",
+    "Cada furo feito numa porta corta-fogo depois que ela saiu da fábrica é uma pergunta para a inspeção: um leitor de cartão, um olho mágico, uma nova usinagem de fechadura, uma placa de proteção fixada com parafusos passantes, um retentor parafusado na folha. A NFPA 80 limita o que pode ser feito em obra sem o organismo de listagem, e os certificados europeus indicam as variações permitidas no seu campo de aplicação. Fora desses limites, uma modificação precisa de aprovação antes do serviço, e não de uma explicação depois.",
+    "## O que guardar no arquivo",
+    "Uma inspeção vale o registro que deixa. Para cada porta: localização e identificação, a classificação da etiqueta, a data, o inspetor, cada item verificado, o que foi encontrado e o que foi feito. Para cada peça de reposição: o que é, e o documento que a torna adequada àquela porta. Um prédio que consegue apresentar esse arquivo para cada porta corta-fogo passa por uma auditoria com rapidez; um que não consegue acaba vistoriando suas portas de novo.",
+    "## Cinco verificações antes de o inspetor chegar",
+    "Abra cada porta totalmente e solte: ela tem que fechar e engatar o trinco sozinha. Em cada porta dupla, confira se a folha passiva fecha primeiro. Retire todos os calços e ganchos. Encontre a etiqueta da porta e a do batente. Faça uma lista de cada peça trocada desde a última inspeção, com o documento que a cobre. Essas cinco verificações cobrem todas as ferragens descritas acima."
+  ]
+}
