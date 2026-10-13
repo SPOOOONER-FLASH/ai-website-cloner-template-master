@@ -2,7 +2,7 @@ import { absoluteUrl, indexable, legalName, siteName } from "@/data/site";
 import { categories } from "@/data/categories";
 import { publishedProducts } from "@/data/products";
 import { getAnsweredFaq } from "@/data/faq";
-import { getPublishedGuides } from "@/data/guides";
+import { getAllGuideParams, getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
 import { overlayLocales } from "@/data/locales";
 import { LANGUAGE_LABELS } from "@/lib/i18n";
@@ -86,6 +86,13 @@ function body(): string {
     (article) =>
       `- [${article.title}](${absoluteUrl(`/guides/${article.slug}/`)}): ${article.summary}${modelsOf(article)}`,
   );
+  /* Spanish guides with their /es/ URLs (2026-10-13): until now the only Spanish URL here was
+     /es/, and Clarity showed no /es/ page ever cited by an assistant. Only guides with a
+     Spanish page; title and summary are the record's own Spanish fields. */
+  const esSlugs = new Set(getAllGuideParams("es").map((p) => p.slug));
+  const esGuideLines = getPublishedGuides()
+    .filter((article) => esSlugs.has(article.slug) && article.titleEs && article.summaryEs)
+    .map((article) => `- [${article.titleEs}](${absoluteUrl(`/es/guides/${article.slug}/`)}): ${article.summaryEs}`);
   const newsLines = getPublishedNews().map(
     (article) =>
       `- [${article.title}](${absoluteUrl(`/news/${article.slug}/`)}): ${article.summary}${modelsOf(article)}`,
@@ -219,6 +226,7 @@ function body(): string {
     "",
     ...newsLines,
     "",
+    ...(esGuideLines.length ? ["## Guías en español", "", ...esGuideLines, ""] : []),
     "## Every published model",
     "",
     "Model number, product name and page, with material and finish in parentheses where",
