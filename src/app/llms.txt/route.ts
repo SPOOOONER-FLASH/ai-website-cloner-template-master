@@ -74,13 +74,21 @@ function body(): string {
     src/data/guides.ts: /guides/ is what a buyer checks before deciding, /news/ is
     shorter answers and factory notes.
   */
+  /* The published models each article lists (2026-10-12): an answer engine citing the guide
+     learns which product pages it is about. Capped at 8; the rest are counted. */
+  const modelsOf = (article: { relatedModels?: string[] }): string => {
+    const models = (article.relatedModels ?? []).filter((m) => publishedProducts.some((p) => p.model === m));
+    if (!models.length) return "";
+    const shown = models.slice(0, 8).join(", ");
+    return ` Models: ${shown}${models.length > 8 ? ` (+${models.length - 8})` : ""}.`;
+  };
   const guideLines = getPublishedGuides().map(
     (article) =>
-      `- [${article.title}](${absoluteUrl(`/guides/${article.slug}/`)}): ${article.summary}`,
+      `- [${article.title}](${absoluteUrl(`/guides/${article.slug}/`)}): ${article.summary}${modelsOf(article)}`,
   );
   const newsLines = getPublishedNews().map(
     (article) =>
-      `- [${article.title}](${absoluteUrl(`/news/${article.slug}/`)}): ${article.summary}`,
+      `- [${article.title}](${absoluteUrl(`/news/${article.slug}/`)}): ${article.summary}${modelsOf(article)}`,
   );
 
   /*
