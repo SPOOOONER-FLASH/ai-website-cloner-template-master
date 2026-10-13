@@ -1,5 +1,6 @@
 "use client";
 import { useId, useState } from 'react';
+import Link from 'next/link';
 import type { Locale } from '@/data/site';
 import { sortedTableRows, type SortDirection, type TableCell } from '@/lib/article-layout';
 import styles from './ArticleReading.module.css';
@@ -19,7 +20,7 @@ export function DataTable({ caption, columns, rows, locale = 'en' }: { caption: 
         <thead><tr>{columns.map((column, index) => <th scope="col" key={index} aria-sort={sort.column === index && sort.direction ? sort.direction : undefined}>
           {column.sort === false ? column.label : <button type="button" onClick={() => setSort({ column: index, direction: sort.column !== index || !sort.direction ? 'ascending' : sort.direction === 'ascending' ? 'descending' : null })}>{column.label}<svg width="12" height="16" viewBox="0 0 12 16" fill="none" stroke="currentColor" aria-hidden="true"><path d={sort.column === index && sort.direction === 'ascending' ? 'm2 6 4-4 4 4M6 2v12' : sort.column === index && sort.direction === 'descending' ? 'm2 10 4 4 4-4M6 14V2' : 'm2 5 4-3 4 3m-8 6 4 3 4-3'} /></svg></button>}
         </th>)}</tr></thead>
-        <tbody>{visible.map((row, index) => <tr key={index}>{row.map((cell, cellIndex) => cellIndex === 0 ? <th scope="row" key={cellIndex}>{cell.text}</th> : <td key={cellIndex}>{cell.text}</td>)}</tr>)}</tbody>
+        <tbody>{visible.map((row, index) => <tr key={index}>{row.map((cell, cellIndex) => cellIndex === 0 ? <th scope="row" key={cellIndex}>{cell.href ? <Link href={cell.href} className="text-brand underline decoration-1 underline-offset-2 hover:text-brand-hover">{cell.text}</Link> : cell.text}</th> : <td key={cellIndex}>{cell.text}</td>)}</tr>)}</tbody>
       </table>
     </div>
     <p className={styles.tableHint} role="status" aria-live="polite">{rows.length} {text.rows} · {sort.direction ? `${columns[sort.column].label}: ${sort.direction === 'ascending' ? text.asc : text.desc}` : text.source}</p>
