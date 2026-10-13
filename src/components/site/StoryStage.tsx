@@ -47,12 +47,26 @@ export function StoryStage() {
     const onScroll = () => {
       if (!frame) frame = requestAnimationFrame(measure);
     };
-    const near = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting)) {
-        window.addEventListener("scroll", onScroll, { passive: true });
-        onScroll();
-      } else window.removeEventListener("scroll", onScroll);
-    });
+    /*
+      "Near" is a screen and a half away, for two reasons. The listener is running before the
+      section arrives. And the stage photographs, lazy by default, are asked for early: on
+      2026-10-12 the release check jumped straight into the story and saw black frames for
+      ~2.5 s while five full-width images were still on their way.
+    */
+    let primed = false;
+    const near = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          if (!primed) {
+            primed = true;
+            stage.querySelectorAll("img").forEach((img) => (img.loading = "eager"));
+          }
+          window.addEventListener("scroll", onScroll, { passive: true });
+          onScroll();
+        } else window.removeEventListener("scroll", onScroll);
+      },
+      { rootMargin: "150% 0px" },
+    );
     near.observe(section);
 
     return () => {

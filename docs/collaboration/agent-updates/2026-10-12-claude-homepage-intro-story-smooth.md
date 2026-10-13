@@ -24,3 +24,9 @@
 - **Desktop:** `hyde\待用参考图片` holds the 8 old homepage module images, the 3 from the Columns module, and the 2 story photos retired here.
 - **Checks:** npm test 481/481 passed; tsc, eslint, motion:check and i18n-lint are clean. The curtain and all five story steps were screenshotted on the dev server (`shoot-live-home.mjs`). I did not run a full build or test:export; that belongs to the release session.
 - **Not touched:** the RAYEN lane and `out/`.
+
+## 2026-10-13: follow-up from the release check
+
+- **Release check (engineering session):** 66dcac4 is live. The curtain and the 5 steps work. A first jump straight into the story showed black frames for about 2.5 s while the lazy stage photos loaded.
+- **Fix:** `StoryStage` now observes the section with `rootMargin: 150% 0px` and, on first approach, sets the stage images to `loading="eager"`.
+- **Live check on origin** (`https://cantonlock.com/?nocache=…`; plain `/` is still the Cloudflare-cached old page until the client purges): wheel-scrolled with Lenis, `data-shot` stepped onnnn → ponnn → pponn → pppon → ppppo, `--story-p` reached 1.0, and all 5 stage images loaded.
