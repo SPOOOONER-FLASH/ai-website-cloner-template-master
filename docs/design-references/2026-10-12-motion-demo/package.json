@@ -5,7 +5,7 @@
   "scripts": {
     "prep": "node prep.mjs",
     "dev": "vite",
-    "build": "node prep.mjs && vite build"
+    "build": "node prep.mjs && node prep-inner.mjs && vite build"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.3.0",
