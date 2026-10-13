@@ -182,4 +182,4 @@
 | 176 | 发布「硬件产品数据库与报价系统」会话 d71a8bca：认证指南加「如何核验证书」十语、门表文章加「量什么」+ xlsx 模板；实测 | 10-13 完成（发布 c815e28653c0 / GitLab 1edd4271166；推送报 75 实为成功，ls-remote 确认；认证指南核验一节英法线上可见，门表 xlsx 200 且文章已链接） |
 | 177 | 发布「Hyde 文案」会话 ca527e49ba1c：下拉菜单改版（左栏墨线、Resources 带数量、Events 显示 BAU、Newest guide）；实测 | 10-13 完成（发布 36b7fb6142b / GitLab b1594f05221；线上 Newest guide = 防火门年检 13 Oct 2026，菜单项带数量，法语 Events 显示 BAU 2027 11–15 janv. Hall C4 Stand 523） |
 | 178 | 发布「硬件产品数据库与报价系统」会话 c6da5496：3 篇新指南（防火门年检、逃生锁锁定方式、墨西哥进口西语首发）；实测 | 10-13 完成（发布 7f29e128b50d / GitLab be1db28ad9f；3 篇在 en/es/fr/ar 均 200，墨西哥篇在 /es/sitemap.xml） |
-| 179 | GEO：llms.txt 只列 1 个西语 URL，AI 引用 /es/ 为 0 → llms.txt 加西语指南段（/es/ URL + 西语一句话） | 10-13 完成（同版上线：线上 /llms.txt 有「Guías en español」46 条 /es/guides/ 链接） |
+| 179 | GEO：llms.txt 只列 1 个西语 URL，AI 引用 /es/ 为 0 → llms.txt 加西语指南段（/es/ URL + 西语一句话） | 10-13 完成（同版上线：线上 /llms.txt 有「Guías en español」46 条 /es/guides/ 链接；10-20 用 Clarity 复查 /es/ 是否被 AI 引用，仍为 0 再考虑英文指南加可见「Leer en español」链接） |
