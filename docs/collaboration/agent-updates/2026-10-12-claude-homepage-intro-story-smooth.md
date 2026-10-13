@@ -42,3 +42,8 @@
 - **Signage:** the Hyland sign and bins in frame are the factory's own and are not retouched.
 - **Assembly text:** the step sentence used to describe the old photo (bagging, pallets). It now matches the new one, in ten languages.
 - **Retired photos:** `polishing-line` and `assembly-line` stay on the company page; copies are in Desktop `hyde\待用参考图片\工厂故事-换下的图`.
+- **Independent review (3-lens workflow, 2026-10-13), fixes applied:**
+  - The assembly sentence claimed "each part taken from its own labeled bin", which the photo does not show. It now reads "…with parts in labeled bins along the bench" in all ten languages, with de, ru, ar and ja grammar fixed and Spanish "contenedores" (not "cajas", which means lock cases here).
+  - The polishing caption's "parts waiting on the trolley" was wrong; the parts are on a bench. The pt captions now use Brazilian usage ("Nosso setor de polimento").
+  - Spanish Stamping text: "manillas" changed to "manijas", for site consistency.
+  - IMAGE_CREDITS: the section intro no longer says the homepage uses none of this set. `-wide` is noted as byte-identical to `factory-polishing-workshop`. Both rows now say the small signs and labels read as non-words at full size (an AI-enhanced copy) and must never be quoted. Asked the client for unenhanced originals (task #69).

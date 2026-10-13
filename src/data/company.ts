@@ -269,16 +269,16 @@ export const factoryCncMachining: ImageRef = {
 export const factoryPolishingWorkshop: ImageRef = {
   src: "/images/company/factory-polishing-workshop.webp",
   ratio: "3 / 2",
-  label: "Our polishing workshop: polishing machines under their extraction ducts, an operator at the bench and parts waiting on the trolley",
-  labelEs: "Nuestro taller de pulido: pulidoras bajo sus conductos de extracción, un operario en el banco y piezas esperando en el carro",
-  labelPt: "A nossa oficina de polimento: politrizes sob os dutos de exaustão, um operador na bancada e peças à espera no carrinho",
+  label: "Our polishing workshop: polishing machines under their extraction ducts, an operator at the bench and parts laid out on a bench in the foreground",
+  labelEs: "Nuestro taller de pulido: pulidoras bajo sus conductos de extracción, un operario en su puesto y piezas dispuestas sobre un banco de trabajo en primer plano",
+  labelPt: "Nosso setor de polimento: politrizes sob os dutos de exaustão, um operador na bancada e peças dispostas sobre uma bancada em primeiro plano",
 };
 
 export const factoryAssemblyLine: ImageRef = {
   src: "/images/company/factory-assembly-quality-line.webp",
   ratio: "3 / 2",
   label: "Our assembly line: two operators at the bench, with parts in labeled bins along the line",
-  labelEs: "Nuestra línea de montaje: dos operarios en el banco, con las piezas en cajas etiquetadas a lo largo de la línea",
-  labelPt: "A nossa linha de montagem: dois operadores na bancada, com as peças em caixas etiquetadas ao longo da linha",
+  labelEs: "Nuestra línea de montaje: dos operarios en sus puestos, con las piezas en contenedores etiquetados a lo largo de la línea",
+  labelPt: "Nossa linha de montagem: dois operadores na bancada, com as peças em caixas etiquetadas ao longo da linha",
 };
 

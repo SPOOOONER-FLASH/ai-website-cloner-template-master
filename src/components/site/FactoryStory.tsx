@@ -40,7 +40,7 @@ const copy = {
       { title: "Stamping", text: "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped." },
       { title: "Machining", text: "CNC machining in house, on the same site as the press shop." },
       { title: "Polishing", text: "The polishing line decides whether a satin finish is even across a whole production run." },
-      { title: "Assembly and inspection", text: "Sets are built and checked on the assembly line, each part taken from its own labeled bin." },
+      { title: "Assembly and inspection", text: "Sets are built and checked on the assembly line, with parts in labeled bins along the bench." },
     ],
   },
   es: {
@@ -49,10 +49,10 @@ const copy = {
     body: "Cortamos, estampamos, mecanizamos, pulimos, montamos e inspeccionamos nuestras propias piezas. Tráiganos un plano o una muestra y hacemos el utillaje.",
     steps: [
       { title: "Corte", text: "Una cortadora láser de fibra en nuestra planta corta la chapa de acero de la que salen cajas de cerradura y placas." },
-      { title: "Estampado", text: "Una fila de prensas mecánicas con su utillaje, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas." },
+      { title: "Estampado", text: "Una fila de prensas mecánicas con su utillaje, donde se estampan cajas de cerradura, placas y piezas en bruto de manijas." },
       { title: "Mecanizado", text: "Mecanizado CNC propio, en la misma planta que las prensas." },
       { title: "Pulido", text: "La línea de pulido decide si un acabado satinado sale uniforme en toda una serie de producción." },
-      { title: "Montaje e inspección", text: "Los juegos se montan y revisan en la línea de montaje, cada pieza tomada de su propia caja etiquetada." },
+      { title: "Montaje e inspección", text: "Los juegos se montan y revisan en la línea de montaje, con las piezas en contenedores etiquetados a lo largo del banco de trabajo." },
     ],
   },
   pt: {
@@ -64,14 +64,14 @@ const copy = {
       { title: "Estampagem", text: "Uma fila de prensas mecânicas com a ferramenta montada, onde são estampadas caixas de fechadura, espelhos e peças brutas de maçanetas." },
       { title: "Usinagem", text: "Usinagem CNC própria, no mesmo local da estamparia." },
       { title: "Polimento", text: "A linha de polimento decide se um acabamento acetinado sai uniforme em todo um lote de produção." },
-      { title: "Montagem e inspeção", text: "Os conjuntos são montados e conferidos na linha de montagem, cada peça tirada da sua própria caixa etiquetada." },
+      { title: "Montagem e inspeção", text: "Os conjuntos são montados e conferidos na linha de montagem, com as peças em caixas etiquetadas ao longo da bancada." },
     ],
   },
 };
 
 function alt(src: string, locale: Locale) {
   const ref = [...companyEditorialStudies, factoryCncMachining, factoryPolishingWorkshop, factoryAssemblyLine].find((s) => s.src === src);
-  if (!ref) throw new Error(`FactoryStory: ${src} is not in companyEditorialStudies`);
+  if (!ref) throw new Error(`FactoryStory: ${src} has no ImageRef in src/data/company.ts`);
   return (locale === "es" ? ref.labelEs : locale === "pt" ? ref.labelPt : undefined) ?? ref.label;
 }
 
