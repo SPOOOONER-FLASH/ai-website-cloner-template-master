@@ -90,7 +90,7 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
 
   // The IndexNow key file must stay fetchable — the blanket *.txt disallow would
   // otherwise hide the one file Bing uses to verify domain ownership.
-  const allow = ["/", "/llms.txt", ...(indexNowKey ? [`/${indexNowKey}.txt`] : [])];
+  const allow = ["/", "/llms.txt", "/*/llms.txt", ...(indexNowKey ? [`/${indexNowKey}.txt`] : [])];
   /*
     Keep the editor and generated RSC payloads out of search results without blocking
     /_next/static CSS and JavaScript that crawlers need to render pages.
