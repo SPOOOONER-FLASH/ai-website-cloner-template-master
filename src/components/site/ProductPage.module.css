@@ -1,0 +1,308 @@
+/* Product page, 2026-10-12 layout (client-approved preview): stage gallery, buy-box, section
+   nav, chapters with a heading that stays put, a dark band of the record's own numbers. */
+
+/* ---------------------------------------------------------------- gallery */
+
+/* Every view shares one grid cell, so the stage is as tall as the tallest view and nothing
+   jumps when the front one changes. */
+.stage {
+  position: relative;
+  display: grid;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+.view {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--motion-slow) var(--motion-ease),
+    visibility 0s linear var(--motion-slow);
+}
+.view[data-active="true"] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--motion-slow) var(--motion-ease);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .view[data-active="true"] {
+    animation: settle var(--motion-slow) var(--motion-ease);
+  }
+}
+@keyframes settle {
+  from { transform: scale(1.04); }
+}
+.counter {
+  position: absolute;
+  inset-inline-start: 1.6rem;
+  bottom: 1.4rem;
+  z-index: 2;
+  pointer-events: none;
+  font-size: 1.4rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-secondary);
+}
+.counter b {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.arrows {
+  position: absolute;
+  inset-inline-end: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 2;
+  display: flex;
+  gap: 0.6rem;
+}
+.arrows button {
+  display: grid;
+  width: 4.2rem;
+  height: 4.2rem;
+  place-items: center;
+  border: 1px solid var(--color-ink);
+  background: var(--color-surface);
+  font-size: 1.8rem;
+  transition:
+    background-color var(--motion-fast) var(--motion-ease-crisp),
+    color var(--motion-fast) var(--motion-ease-crisp);
+}
+.arrows button:hover {
+  background: var(--color-ink);
+  color: var(--color-surface);
+}
+.thumbs {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.thumb {
+  position: relative;
+  flex: 0 0 7.6rem;
+  padding: 0.4rem;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: auto -1px -1px;
+  height: 3px;
+  background: var(--color-ink);
+  transform: scaleX(0);
+  transition: transform var(--motion-medium) var(--motion-ease);
+}
+.thumb[aria-pressed="true"]::after {
+  transform: scaleX(1);
+}
+
+/* ---------------------------------------------------------------- buy-box */
+
+.model {
+  display: block;
+  font-size: clamp(7.2rem, 5rem + 6vw, 16rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+/* Models with a finish code ("3431 SSET", "LH1033 SS") run to two lines at the full size. */
+.model[data-long="true"] {
+  font-size: clamp(5.6rem, 3.6rem + 4vw, 11.2rem);
+}
+.name {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: clamp(2.4rem, 1.8rem + 1vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rise {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.06em;
+  }
+  .rise > span {
+    display: inline-block;
+    animation: riseIn calc(var(--motion-slow) * 1.8) var(--motion-ease) both;
+  }
+  .rise + .rise > span {
+    animation-delay: var(--motion-fast);
+  }
+}
+@keyframes riseIn {
+  from { transform: translateY(105%); }
+}
+.sheet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3.2rem;
+  border-top: 1px solid var(--color-ink);
+}
+.sheet > div {
+  padding: 1.4rem 1.6rem 1.4rem 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.sheet > div:nth-child(odd) {
+  border-inline-end: 1px solid var(--color-line);
+}
+.sheet > div:nth-child(even) {
+  padding-inline-start: 1.6rem;
+}
+
+/* ---------------------------------------------------------------- section nav */
+
+.sectionNav {
+  position: sticky;
+  top: var(--sticky-header, var(--h-main-nav));
+  z-index: 5;
+  margin-top: 9.6rem;
+  border-block: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+.sectionRow {
+  position: relative;
+  min-width: 0; /* a grid item: without this the scrolling row widens the page on phones */
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  min-height: 5.6rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.sectionRow > a {
+  color: var(--color-ink-secondary);
+  transition: color var(--motion-fast) var(--motion-ease-crisp);
+}
+.sectionRow > a:hover,
+.sectionRow > a[aria-current] {
+  color: var(--color-ink);
+}
+.sectionLead {
+  font-weight: 700;
+}
+.sectionBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: var(--w, 0);
+  height: 2px;
+  background: var(--color-ink);
+  transform: translateX(var(--x, 0));
+  transition:
+    transform var(--motion-medium) var(--motion-ease),
+    width var(--motion-medium) var(--motion-ease);
+}
+.sectionAction {
+  margin-inline-start: auto;
+  padding: 0.8rem 1.4rem;
+  background: var(--color-ink);
+  color: var(--color-surface) !important;
+  font-weight: 600;
+}
+@media (max-width: 47.9375rem) {
+  .sectionAction {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------- chapters */
+
+.chapter {
+  scroll-margin-top: calc(var(--sticky-header, var(--h-main-nav)) + 6.4rem);
+  border-top: 1px solid var(--color-line);
+  padding-block: 7.2rem;
+}
+.chapterHead {
+  position: sticky;
+  top: calc(var(--sticky-header, var(--h-main-nav)) + 8.8rem);
+}
+@media (max-width: 64.4375rem) {
+  .chapterHead {
+    position: static;
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: revealIn linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+  }
+}
+@keyframes revealIn {
+  from {
+    opacity: 0;
+    transform: translateY(2.4rem);
+  }
+}
+.copy {
+  min-width: 16em;
+  padding: 1.1rem 1.6rem;
+  border: 1px solid var(--color-ink);
+  background: var(--color-surface);
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition:
+    background-color var(--motion-fast) var(--motion-ease-crisp),
+    color var(--motion-fast) var(--motion-ease-crisp);
+}
+.copy[data-copied="true"] {
+  background: var(--color-ink);
+  color: var(--color-surface);
+}
+
+/* ---------------------------------------------------------------- number band */
+
+.band {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3.2rem;
+}
+.bandItem {
+  border-top: 1px solid rgb(255 255 255 / 0.16);
+  padding-top: 2.2rem;
+}
+.bandNumber {
+  display: block;
+  font-size: clamp(6rem, 3rem + 6vw, 13.2rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.bandNumber small {
+  margin-inline-start: 0.8rem;
+  font-size: 0.3em;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    /* clip, not hidden: overflow:hidden would make the mask a scroll container, and the
+       span's view() timeline would then track the mask instead of the page. */
+    .bandMask {
+      display: block;
+      overflow: clip;
+    }
+    .bandMask > span {
+      animation: riseIn linear both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 80%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .view,
+  .view[data-active="true"],
+  .thumb::after,
+  .sectionBar {
+    transition: none;
+  }
+}

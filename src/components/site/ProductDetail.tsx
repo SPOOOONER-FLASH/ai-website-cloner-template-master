@@ -12,7 +12,7 @@ import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
 import { CatalogueReturnLink } from "./CatalogueNavigation";
-import { ProductDrawing, DoorPreparation } from "./ProductDrawing";
+import { ProductDrawing, DoorPreparation, hasProductDrawings } from "./ProductDrawing";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { watchPagePath, watchVideo } from "@/lib/video-pages";
@@ -24,7 +24,12 @@ import { productModelFor } from "@/data/product-models";
 import { ProductModel } from "./ProductModel";
 import { ProductVariants } from "./ProductVariants";
 import { productVariants } from "@/lib/product-variants";
-import { ProductSpecSheetLink } from "./ProductSpecSheetLink";
+import { ProductSpecSheetLink, hasSpecSheet } from "./ProductSpecSheetLink";
+import { ProductGallery } from "./ProductGallery";
+import { SectionNav } from "./SectionNav";
+import { CopyText } from "./CopyText";
+import { MediaPlaceholder } from "./MediaPlaceholder";
+import pageStyles from "./ProductPage.module.css";
 import { dict, specLabel, t as tr } from "@/lib/i18n";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
@@ -107,6 +112,36 @@ const COPY = {
     listingHelp: "Opens this model's listing, with current pricing, MOQ and lead time.",
     storefrontHelp:
       "Opens our storefront already searched for this model — trade assurance, tiered pricing and order tracking are handled there.",
+    inRange: "{count} models in this range",
+    views: "Product views",
+    previousView: "Previous view",
+    nextView: "Next view",
+    showView: "Show view {n}",
+    onThisPage: "On this page",
+    navSpecs: "Specifications",
+    navDrawings: "Drawings",
+    navVideo: "Video",
+    navQuestions: "Questions",
+    navOrdering: "Ordering",
+    navCertifications: "Certifications",
+    specsAside: "As the record states them. Where a row is missing, ask: we confirm it against your drawing rather than guess.",
+    copySpecs: "Copy these rows for a tender",
+    copied: "Copied",
+    copyHelp: "Plain text: the model and its rows, ready to paste.",
+    features: "Features",
+    drawingsAside: "Drawings and files published for this model.",
+    videoAside: "{seconds} seconds of the part working.",
+    askModel: "Model and finish",
+    askModelHelp: "{model}, and the finish or color",
+    askQuantity: "Quantity",
+    askQuantityFrom: "From {moq}",
+    askQuantityHelp: "Per order, and per year if it repeats",
+    askDestination: "Destination country",
+    askDestinationHelp: "For freight and export documents",
+    askChanges: "Changes",
+    askChangesHelp: "A drawing or photograph of anything you want changed",
+    emailAnswers: "Email these answers",
+    copyList: "Copy the list",
   },
   es: {
     model: "Modelo",
@@ -162,6 +197,36 @@ const COPY = {
       "Abre la ficha de este modelo con el precio, el pedido mínimo y el plazo vigentes.",
     storefrontHelp:
       "Abre nuestra tienda con este modelo ya buscado; Alibaba gestiona el pago, el seguimiento y Trade Assurance.",
+    inRange: "{count} modelos en esta gama",
+    views: "Vistas del producto",
+    previousView: "Vista anterior",
+    nextView: "Vista siguiente",
+    showView: "Mostrar la vista {n}",
+    onThisPage: "En esta página",
+    navSpecs: "Especificaciones",
+    navDrawings: "Planos",
+    navVideo: "Vídeo",
+    navQuestions: "Preguntas",
+    navOrdering: "Pedidos",
+    navCertifications: "Certificaciones",
+    specsAside: "Tal como las publica la ficha. Si falta una fila, pregúntenos: la confirmamos con su plano, no la suponemos.",
+    copySpecs: "Copiar estas filas para un pliego",
+    copied: "Copiado",
+    copyHelp: "Texto plano: el modelo y sus filas, listo para pegar.",
+    features: "Características",
+    drawingsAside: "Planos y archivos publicados para este modelo.",
+    videoAside: "{seconds} segundos de la pieza funcionando.",
+    askModel: "Modelo y acabado",
+    askModelHelp: "{model} y el acabado o color",
+    askQuantity: "Cantidad",
+    askQuantityFrom: "Desde {moq}",
+    askQuantityHelp: "Por pedido, y por año si se repite",
+    askDestination: "País de destino",
+    askDestinationHelp: "Para el flete y los documentos de exportación",
+    askChanges: "Cambios",
+    askChangesHelp: "Un plano o una foto de lo que quiera cambiar",
+    emailAnswers: "Enviar estas respuestas por correo",
+    copyList: "Copiar la lista",
   },
   pt: {
     model: "Modelo",
@@ -217,6 +282,36 @@ const COPY = {
       "Abre a ficha deste modelo com o preço, a quantidade mínima e o prazo actuais.",
     storefrontHelp:
       "Abre a nossa loja com este modelo já procurado; o Alibaba trata do pagamento, do seguimento e do Trade Assurance.",
+    inRange: "{count} modelos nesta gama",
+    views: "Vistas do produto",
+    previousView: "Vista anterior",
+    nextView: "Próxima vista",
+    showView: "Mostrar a vista {n}",
+    onThisPage: "Nesta página",
+    navSpecs: "Especificações",
+    navDrawings: "Desenhos",
+    navVideo: "Vídeo",
+    navQuestions: "Perguntas",
+    navOrdering: "Encomendas",
+    navCertifications: "Certificações",
+    specsAside: "Tal como a ficha as publica. Se faltar uma linha, pergunte: confirmamos com o seu desenho, não supomos.",
+    copySpecs: "Copiar estas linhas para um edital",
+    copied: "Copiado",
+    copyHelp: "Texto simples: o modelo e as suas linhas, pronto para colar.",
+    features: "Características",
+    drawingsAside: "Desenhos e arquivos publicados para este modelo.",
+    videoAside: "{seconds} segundos da peça em funcionamento.",
+    askModel: "Modelo e acabamento",
+    askModelHelp: "{model} e o acabamento ou a cor",
+    askQuantity: "Quantidade",
+    askQuantityFrom: "A partir de {moq}",
+    askQuantityHelp: "Por encomenda, e por ano se for recorrente",
+    askDestination: "País de destino",
+    askDestinationHelp: "Para o frete e os documentos de exportação",
+    askChanges: "Alterações",
+    askChangesHelp: "Um desenho ou uma foto do que quiser alterar",
+    emailAnswers: "Enviar estas respostas por e-mail",
+    copyList: "Copiar a lista",
   },
 } as const;
 
@@ -319,7 +414,14 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
     (2026-09-26) sent every overlay locale to `featuresEs`: French, German, Japanese… product
     pages printed the Spanish bullets although their own were in content/i18n/<code>/products.json.
   */
-  const featureList = tr(product, "features", locale);
+  /*
+    Shown as the record states them, minus the typing of the source sheet: a heading line
+    ("Push Bar Features:") and hand-typed list markers ("1.", "•") are dropped, because the
+    list already is a list. The words themselves are untouched.
+  */
+  const featureList = tr(product, "features", locale)
+    ?.filter((line) => !/:\s*$/.test(line))
+    .map((line) => line.replace(/^\s*(?:\d+[.)]|[•·–-])\s*/, ""));
 
   const faqItems = productFaqItems(product, locale);
 
@@ -396,16 +498,57 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
         : t.moreInCategory.replace("{category}", categoryName)
     : "";
 
+  /*
+    The rows the buy-box shows beside the photograph: the record's first four, in its own
+    order. And the band of figures: only rows whose whole value is a number and a unit
+    ("1000mm", "50 pieces"), so a sentence is never cut into a headline.
+  */
+  const sheetRows = specs.slice(0, 4);
+  const bandFacts = specs
+    .map((spec) => ({ spec, match: /^(\d[\d.,]*)\s*(mm|cm|m|kg|g|pieces|pcs|sets|pairs|°|years|cycles)?\.?$/i.exec(spec.value.trim()) }))
+    .filter((f): f is { spec: (typeof specs)[number]; match: RegExpExecArray } => Boolean(f.match))
+    .slice(0, 3);
+  const moq = specs.find((spec) => /minimum order|pedido mínimo|quantidade mínima/i.test(spec.label))?.value;
+  const views = [heroImage, ...gallery];
+  const showDrawings = hasProductDrawings(product.slug) || hasSpecSheet(product.slug) || Boolean(referenceModel);
+  const asks: [string, string][] = [
+    [t.askModel, t.askModelHelp.replace("{model}", product.modelTbc ? name : product.model)],
+    [t.askQuantity, moq ? t.askQuantityFrom.replace("{moq}", moq) : t.askQuantityHelp],
+    [t.askDestination, t.askDestinationHelp],
+    [t.askChanges, t.askChangesHelp],
+  ];
+  const enquiryAddress = siteSettings.contact.technicalEmail || siteSettings.contact.email;
+  const enquiryBody = `${product.modelTbc ? name : `${product.model} ${name}`}\n\n${asks.map(([label]) => `${label}: `).join("\n")}\n`;
+  const specText = `HYDE ${product.modelTbc ? name : `${product.model} ${name}`}\n${specs
+    .map((spec) => `${specLabel(spec.label, locale)}: ${specValueFor(spec.value, locale)}${spec.unit ? ` ${spec.unit}` : ""}`)
+    .join("\n")}`;
+  const chapters = [
+    { id: "specifications", label: t.navSpecs },
+    ...(showDrawings ? [{ id: "drawings", label: t.navDrawings }] : []),
+    ...(product.videos?.length ? [{ id: VIDEO_ANCHOR, label: t.navVideo }] : []),
+    ...(faqItems.length ? [{ id: "questions", label: t.navQuestions }] : []),
+    { id: "ordering", label: t.navOrdering },
+    ...(product.certifications.length ? [{ id: "certifications", label: t.navCertifications }] : []),
+    { id: "next-steps", label: t.nextSteps },
+    ...(usedIn.length ? [{ id: "applications", label: t.applications }] : []),
+    ...(related ? [{ id: "related", label: relatedHeading }] : []),
+  ];
+
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
-      {/* 1 — Breadcrumb, title and model */}
+    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-96">
+      {/*
+        2026-10-12 layout, from the preview the client approved (「就用这个指南和产品页效果」):
+        a stage gallery and a buy-box on the first screen, a section bar that stays under the
+        header, then one chapter per question with its heading held at the left. Every
+        figure, row and sentence below is the record's own, exactly as before; only the
+        order and the presentation changed.
+      */}
       <section className="layout" aria-labelledby="product-title">
         <div className="col-content grid w-full grid-cols gap-x gap-y-24">
           {/*
             09-28: the category crumb carries the "back to your results" behaviour (it restores
             the filtered list and scroll position when there is one, and opens the category
-            otherwise), so the separate "← Back to previous results" line below it — the
-            same destination in most visits — is gone. One trail, one line, no repetition.
+            otherwise). One trail, one line, no repetition.
           */}
           <nav
             aria-label={t.breadcrumb}
@@ -428,578 +571,420 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
             </CatalogueReturnLink>
           </nav>
 
-          <div className="col-span-full mt-8 xl:col-span-12">
-            <p className="text-c1 text-ink-secondary">{product.series}</p>
+          {/* Stage gallery: every view in one place, the hero first and never lazy (LCP). */}
+          <div className="col-span-full mt-16 xl:col-span-13" aria-label={t.images} role="region">
+            <ProductGallery
+              labels={{ views: t.views, previous: t.previousView, next: t.nextView, show: t.showView }}
+              thumbnails={views.map((image) => (
+                <MediaPlaceholder key={`${image.src}-${image.label}`} src={image.src} ratio={image.ratio} label={image.label} sizes="76px" hiddenFromAssistiveTech />
+              ))}
+            >
+              <ProductImageZoom {...heroImage} priority locale={locale} />
+              {gallery.map((image) => (
+                <div key={`${image.src}-${image.label}`}>
+                  <ProductImageZoom {...image} locale={locale} />
+                </div>
+              ))}
+            </ProductGallery>
+          </div>
+
+          <div className="col-span-full mt-16 xl:col-span-10 xl:col-start-15">
+            <p className="text-c2 text-ink-secondary">
+              {product.series} · {t.inRange.replace("{count}", String(categoryCount))}
+            </p>
             {/*
               The H1 carries the model, because that is what a buyer types. 40 records are
-              named "Lock Case" and 38 "Lever Handle" — an H1 of just the name gave dozens
-              of pages the same heading, which is half of why Google groups them as
-              duplicates. `modelTbc` records have no real SKU yet, so they keep the plain
-              name rather than showing a working label as if it were orderable.
+              named "Lock Case" and 38 "Lever Handle" — an H1 of just the name gave dozens of
+              pages the same heading. `modelTbc` records have no real SKU yet, so they keep the
+              plain name rather than showing a working label as if it were orderable.
             */}
-            <h1 id="product-title" className="mt-8 text-h1 text-ink">
-              {product.modelTbc ? name : `${product.model} ${name}`}
+            <h1 id="product-title" className="mt-16 text-ink">
+              {product.modelTbc ? (
+                <span className={pageStyles.rise}><span className={pageStyles.name}>{name}</span></span>
+              ) : (
+                <>
+                  <span className={pageStyles.rise}><span className={pageStyles.model} data-long={product.model.length > 6}>{product.model}</span></span>{" "}
+                  <span className={pageStyles.rise}><span className={pageStyles.name}>{name}</span></span>
+                </>
+              )}
             </h1>
-          </div>
+            {product.modelTbc ? <p className="mt-8 text-c2 text-ink-secondary">{t.model}: {t.referenceOnRequest}</p> : null}
+            <p className="mt-24 text-lead text-ink">{summary}</p>
 
-          <div className="col-span-full mt-24 xl:col-span-8 xl:col-start-17">
-            <p className="text-c2 text-ink-secondary">{t.model}</p>
-            <p className="mt-8 text-lead tabular-nums text-ink">
-              {product.modelTbc ? t.referenceOnRequest : product.model}
-            </p>
-            {variants ? <ProductVariants variants={variants} locale={locale} /> : null}
-          </div>
-        </div>
-      </section>
-
-      {/* 2 — Hero image and gallery */}
-      <section className="layout mt-96 lg:mt-136" aria-label={t.images}>
-        <div className="col-outset">
-          <div className="layout">
-            <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-              <div className="col-span-full xl:col-span-12">
-                {/* The LCP element on every product page — never lazy. */}
-                <ProductImageZoom {...heroImage} priority locale={locale} />
-
-                {/*
-                  ── THE DEMONSTRATION, DIRECTLY UNDER THE PHOTOGRAPH ──────────
-
-                  Measured on /products/panic-exit-devices/015-panic-exit-device/ at
-                  1440×950: the clip used to begin at y=1349, which is 737px below the
-                  hero and BELOW THE TWO BUY BUTTONS. A buyer had to scroll past the
-                  request-a-quote block to discover that a film of the part working
-                  existed at all.
-
-                  That is the wrong order for this reader. A specifier's questions arrive
-                  as: what is it, DOES IT DO WHAT I NEED, will it fit, how do I order.
-                  The photograph answers the first, the spec table answers the third, the
-                  buttons answer the fourth — and the only thing on the page that answers
-                  the second is thirty seconds of a gloved hand pressing the bar. Putting
-                  the purchase request in front of the evidence asks for the decision
-                  before supplying what it rests on.
-
-                  It also renders full column width now. The old block was
-                  `md:grid-cols-2`, and 34 of the 35 products with a clip have exactly
-                  one — so every one of them drew a half-width video beside an empty half.
-                */}
-                {product.videos?.length ? (
-                  <div id={VIDEO_ANCHOR} className="mt-16 scroll-mt-96 space-y-16">
-                    {product.videos.map((video) => (
-                      <figure key={video.src} className="m-0">
-                        <ProductVideo video={video} />
-                        <figcaption className="mt-8 text-c2 text-ink-secondary">
-                          {/* English only: the watch pages are English-only (src/lib/video-pages.ts). */}
-                          {locale === "en" && watchVideo(product)?.src === video.src ? (
-                            <Link
-                              href={watchPagePath(product)}
-                              className="text-brand hover:text-brand-hover"
-                            >
-                              {video.label}
-                            </Link>
-                          ) : (
-                            video.label
-                          )}
-                          {video.durationSeconds ? (
-                            <span className="text-ink-secondary">
-                              {" · "}
-                              {Math.floor(video.durationSeconds / 60)}:
-                              {String(video.durationSeconds % 60).padStart(2, "0")}
-                            </span>
-                          ) : null}
-                        </figcaption>
-                      </figure>
-                    ))}
+            {sheetRows.length ? (
+              <dl className={pageStyles.sheet}>
+                {sheetRows.map((spec) => (
+                  <div key={`${spec.label}-${spec.value}`}>
+                    <dt className="text-c2 text-ink-secondary">{specLabel(spec.label, locale)}</dt>
+                    <dd className="mt-4 text-c1 font-semibold tabular-nums text-ink">
+                      {specValueFor(spec.value, locale)}
+                      {spec.unit ? ` ${spec.unit}` : ""}
+                    </dd>
                   </div>
-                ) : null}
-              </div>
-
-              <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
-                <div>
-                  <p className="text-lead text-ink">{summary}</p>
-
-                  {/*
-                    ── VERIFIED FEATURE BULLETS ────────────────────────────────
-
-                    The client's own checked copy from stahlock.com, cached since
-                    2026-09-04 and until now never written into a product record — see
-                    scripts/apply-stahlock-feature-lists.mjs. 194 products gain it; lever
-                    handles and knob locks previously had no feature text at all.
-
-                    Each locale sees its OWN list or no list.
-
-                    `!es` was the guard until 2026-09-17, and a guard written for two
-                    locales answers wrongly for a third: Portuguese took the English
-                    branch, so a Portuguese page carried English prose under Portuguese
-                    headings — exactly the drift this comment says it is avoiding.
-
-                    Both now have their own list, written by
-                    scripts/translate-product-features-pt.mjs and its Spanish sibling only
-                    where EVERY line of a record resolves, so a list is never half
-                    translated.
-
-                    Spanish was 0 of 216 until 2026-09-17 — not falling back to English,
-                    simply absent, because this block hid itself on every non-English page.
-                    Nobody could see the gap until Portuguese was filled in beside it and
-                    the count went 216 against 0. A fallback nobody can count is a fallback
-                    that becomes permanent.
-                  */}
-                  {featureList?.length ? (
-                    <ul className="mt-24 border-t border-line pt-16">
-                      {featureList.map((feature) => (
-                        <li
-                          key={feature}
-                          className="grid grid-cols-[1.2rem_1fr] gap-x-8 border-b border-line py-12 text-c1 text-ink"
-                        >
-                          <span aria-hidden="true" className="text-ink-tertiary">
-                            ·
-                          </span>
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
-
-                  {/*
-                    ── THE CUE THAT A DEMONSTRATION EXISTS ─────────────────────
-
-                    Moving the clip under the hero put it in the right place structurally
-                    and barely moved it up the page: measured at 1440×950 it went from
-                    y=1349 to y=1301, because the hero photograph is 673px square and the
-                    furniture above it is 612px — so THE HERO ITSELF ALREADY RUNS PAST THE
-                    FOLD. Nothing below a full-column square is reachable without
-                    scrolling, and no amount of reordering underneath it changes that.
-
-                    So the signal goes where the reader is actually looking on the first
-                    screen — beside the photograph, under the summary — and the clip stays
-                    where it belongs. The runtime is stated so the reader knows what they
-                    are committing to before they press anything.
-
-                    An anchor rather than a scroll handler: it works before hydration, it
-                    can be opened in a new tab, and scroll-margin-top on the target keeps
-                    the sticky header off it.
-                  */}
-                  {product.videos?.[0] ? (
-                    <a
-                      href={`#${VIDEO_ANCHOR}`}
-                      /*
-                        Spelled out, because the two spans concatenate for a screen reader
-                        into "Watch it work0:35". The gap is visual only; the accessible
-                        name has to carry the pause the layout provides.
-                      */
-                      aria-label={
-                        product.videos[0].durationSeconds
-                          ? `${t.watch} — ${Math.floor(product.videos[0].durationSeconds / 60)} min ${product.videos[0].durationSeconds % 60} s`
-                          : t.watch
-                      }
-                      className="short-marker short-marker-compact mt-16 inline-flex items-baseline gap-8 text-c1 text-brand hover:text-brand-hover"
-                    >
-                      {t.watch}
-                      {product.videos[0].durationSeconds ? (
-                        <span className="text-c2 tabular-nums text-ink-secondary">
-                          {Math.floor(product.videos[0].durationSeconds / 60)}:
-                          {String(product.videos[0].durationSeconds % 60).padStart(2, "0")}
-                        </span>
-                      ) : null}
-                    </a>
-                  ) : null}
-                  {/* CMS-authored long copy. Absent on every imported record — the legacy
-                      catalogue carries specifications, not prose, and none is invented. */}
-                  {!es && product.description ? (
-                    <Prose markdown={product.description} className="mt-24" />
-                  ) : null}
-                </div>
-
-                <div className="mt-64 flex flex-wrap items-center gap-16">
-                  {/*
-                    ── THREE ENTRY POINTS, NOT ONE ─────────────────────────────
-
-                    B2B buyers arrive at different readiness. One wants a price, one wants
-                    the catalogue to read offline before involving anyone, one wants a
-                    person. A single "Contact us" makes the last two either leave or use
-                    the wrong door, and an enquiry that starts with the wrong question
-                    costs the export desk a round trip.
-
-                    One primary, two secondary — not four equal buttons. The download is
-                    the useful addition here because it is the only one that costs the
-                    buyer nothing and still moves them forward.
-                  */}
-                  <Button href={quoteHref}>{t.quote}</Button>
-                  <Button href={`${base}/contact/`} variant="secondary">
-                    {t.ask}
-                  </Button>
-                                    <Button href={CATALOGUE_PDF} variant="secondary">
-                    {t.downloadCatalogue}
-                  </Button>
-                </div>
-
-                {/*
-                  What a quotation needs, said before the form asks (2026-09-27, from the
-                  Product-Led SEO brief: state the delivery boundary). Four facts turn the
-                  first reply into a price instead of a list of questions.
-                */}
-                <p className="mt-16 max-w-[62ch] text-c2 text-ink-secondary">{t.quoteNeeds}</p>
-
-                {/*
-                  A direct address at the point of highest intent. The two buttons above
-                  both lead to a form, and the Alibaba link below leads off-site; a buyer
-                  who would rather write from their own mailbox had nowhere to go, and the
-                  model number is right here to quote. Renders only once an address is set.
-                */}
-                {siteSettings.contact.technicalEmail || siteSettings.contact.email ? (
-                  <p className="mt-16 text-c2 text-ink-secondary">
-                    {t.orEmail}{" "}
-                    <EmailLink
-                      address={siteSettings.contact.technicalEmail || siteSettings.contact.email}
-                      subject={`${product.model} — ${name}`}
-                      className="text-brand hover:text-brand-hover"
-                    />
-                  </p>
-                ) : null}
-
-                {/*
-                  The second of the two routes this site exists to feed. Until now the
-                  only Alibaba link anywhere was in the footer, pointing at the
-                  storefront's front page — so a buyer who had just read this spec table
-                  had to go and find the model again by searching. This lands them on
-                  THIS model.
-                */}
-                {alibaba && (
-                  <div className="mt-32 border-t border-line pt-24">
-                    <a
-                      href={alibaba.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
-                    >
-                      {alibaba.kind === "listing"
-                        ? t.orderListing.replace("{model}", product.model)
-                        : t.findStorefront.replace("{model}", product.model)}
-                    </a>
-                    <p className="mt-8 max-w-[52ch] text-c2 text-ink-secondary">
-                      {alibaba.kind === "listing"
-                        ? t.listingHelp
-                        : t.storefrontHelp}
-                    </p>
-                  </div>
-                )}
-
-                {/*
-                  ── THE SPECIFICATION TABLE, BESIDE THE PHOTOGRAPH ────────────
-
-                  It was a full-width section 1,400px further down, and the column it now
-                  sits in ended in a column of white space — the page read as loose
-                  because it was: the reader had finished the right-hand column while the
-                  photograph beside it was still going.
-
-                  It also removes a duplication rather than just moving one. 348 of 435
-                  products printed their Material TWICE — once in a facts block here, once
-                  as a row in the table down there — and a third time in a "Configuration"
-                  section below that. Three blocks, two of them saying what the table
-                  already said, separated by enough scrolling that nobody could see they
-                  agreed. The facts block and the Configuration section are gone; the
-                  table is the one place a specification lives.
-
-                  This is the arrangement in the 2026-08-31 type mock-up, which the client
-                  asked for by name: lead, buttons, then the table, all beside the image.
-                */}
-                <div className="mt-48 border-t border-line pt-24">
-                  <h2 id="specifications-heading" className="text-h3 text-ink">
-                    {t.specifications}
-                  </h2>
-                  {specs.length ? (
-                    <dl className="mt-16 border-t border-line">
-                      {specs.map((spec) => (
-                        <div
-                          key={`${spec.label}-${spec.value}`}
-                          className="grid grid-cols-2 gap-16 border-b border-line py-12 text-c1"
-                        >
-                          <dt className="text-ink-secondary">{specLabel(spec.label, locale)}</dt>
-                          {/*
-                            英文页面的公制值后面配一个英制括号。见 src/lib/imperial.ts：
-                            换算是表现层的事，content/products 里那 891 条行一个字节都不动。
-                          */}
-                          <dd className="tabular-nums text-ink">
-                            {specValueFor(spec.value, locale)}
-                            {spec.unit ? ` ${spec.unit}` : ""}
-                          </dd>
-                        </div>
-                      ))}
-                    </dl>
-                  ) : (
-                    <div className="mt-16">
-                      <EmptyState>{t.noSpecs}</EmptyState>
-                    </div>
-                  )}
-
-                  {/*
-                    Only the facts the table does not already carry.
-
-                    Finishes are almost never a spec row and belong here; Material almost
-                    always is. Filtering rather than hard-coding which to show means a
-                    product whose data improves stops repeating itself automatically,
-                    instead of waiting for somebody to notice and delete a line.
-                  */}
-                  {uncoveredFacts.length ? (
-                    <dl className="mt-32 grid grid-cols-1 gap-24 sm:grid-cols-2">
-                      {uncoveredFacts.map((fact) => (
-                        <ProductFact
-                          key={fact.label}
-                          label={fact.label}
-                          values={fact.values}
-                          fallback={t.onRequest}
-                        />
-                      ))}
-                    </dl>
-                  ) : null}
-
-                  {/*
-                    ── COMMON QUESTIONS ────────────────────────────────────────
-
-                    Composed from this product's own spec rows by productFaqItems, and
-                    mirrored exactly by ProductFaqJsonLd. The two read from one function
-                    on purpose: Google treats a FAQPage whose answers are not visible on
-                    the page as a spam signal, and a few hundred product pages is exactly
-                    the scale at which that judgement gets made about a whole site.
-
-                    Rendered as a description list rather than an accordion. An accordion
-                    hides the answers behind a click, and the point of this block is that
-                    the answers are on the page — for a reader, for a crawler, and for the
-                    audit that checks the two agree.
-                  */}
-                  <ProductSpecSheetLink slug={product.slug} locale={locale} />
-                  <ProductDrawing slug={product.slug} locale={locale} />
-
-                  {/*
-                    A sibling, not a child: the two drawing populations do not overlap at
-                    all today. A pull handle publishes fixing centres and gets a
-                    preparation drawing; a lock case publishes case geometry and gets an
-                    outline. See the note in ProductDrawing.tsx.
-                  */}
-                  <DoorPreparation slug={product.slug} locale={locale} />
-                  {referenceModel ? <div className="mt-48"><ProductModel model={referenceModel} locale={locale} /></div> : null}
-
-                  {faqItems.length ? (
-                    <div className="mt-48 border-t border-line pt-24">
-                      <h2 id="product-faq-heading" className="text-h3 text-ink">
-                        {productFaqHeading(locale)}
-                      </h2>
-                      <dl className="mt-16">
-                        {faqItems.map((item) => (
-                          <div key={item.question} className="border-b border-line py-16">
-                            <dt className="text-c1 text-ink">{item.question}</dt>
-                            <dd className="mt-4 text-c2 text-ink-secondary">{item.answer}</dd>
-                          </div>
-                        ))}
-                      </dl>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="col-span-full mt-16">
-                {product.gallery.length ? (
-                  /*
-                    ── THE GALLERY HAS A FIRST VIEW ────────────────────────────
-
-                    It was `grid-cols-2 md:grid-cols-3 xl:grid-cols-4` — every view at
-                    identical size, which gives seven photographs of the same lock no
-                    reading order at all. The eye has to inspect each one to find out
-                    which is worth looking at.
-
-                    The client's own filenames carry their order (`2-015.jpg`,
-                    `3-015.jpg`, …) and the import preserves it, so the first gallery
-                    image is the view they chose to put first. Giving it two columns makes
-                    that choice visible and produces a rhythm — one large, then a run of
-                    small — instead of a uniform field.
-
-                    Below `md` the grid is two columns and the feature spans both, which
-                    is the same relationship at phone width rather than a different one.
-                  */
-                  <div className="product-gallery">
-                    {gallery.map((image, index) => (
-                      <div
-                        key={`${image.src}-${image.label}`}
-                        className={index === 0 ? "product-gallery-lead" : undefined}
-                      >
-                        <ProductImageZoom {...image} locale={locale} />
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <EmptyState>{t.noViews}</EmptyState>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/*
-        5 — Certifications, ONLY where a certificate actually exists.
-
-        Twenty of 435 models carry one. The other 415 rendered a heading, a sentence
-        saying there is nothing, and a second sentence about checking scope — three
-        lines that told the reader the site has no answer, repeated identically on 415
-        pages. The client's instruction was blunt and correct: take it down until there
-        is something to show. A section that only ever says "nothing here" is worse than
-        no section, and 415 identical paragraphs are duplicate content besides.
-      */}
-      {product.certifications.length ? (
-      <section className="layout mt-144 lg:mt-288" aria-labelledby="certifications-heading">
-        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full xl:col-span-8">
-            <h2 id="certifications-heading" className="text-h3 text-ink">
-              {t.certifications}
-            </h2>
-          </div>
-          <div className="col-span-full xl:col-span-16 xl:col-start-9">
-            {product.certifications.length ? (
-              <ul className="grid grid-cols-1 gap-16 sm:grid-cols-2">
-                {product.certifications.map((certification) => (
-                  <li
-                    key={`${certification.name}-${certification.standard ?? ""}`}
-                    className="border border-line bg-surface-alt p-24"
-                  >
-                    <p className="text-c1 font-semibold text-ink">{certification.name}</p>
-                    {certification.standard ? (
-                      <p className="mt-8 text-c1 text-ink-secondary">
-                        {certification.standard}
-                      </p>
-                    ) : null}
-                    {certification.downloadId ? (
-                      <ArrowLink
-                        href={`/downloads/#${certification.downloadId}`}
-                        className="mt-24"
-                      >
-                        {t.viewCertificate}
-                      </ArrowLink>
-                    ) : null}
-                  </li>
                 ))}
-              </ul>
-            ) : (
-              <EmptyState>{t.noCertificates}</EmptyState>
+              </dl>
+            ) : null}
+
+            {variants ? <ProductVariants variants={variants} locale={locale} /> : null}
+
+            {/*
+              The cue that a demonstration exists, beside the photograph where the reader is
+              looking on the first screen. An anchor rather than a scroll handler: it works
+              before hydration and can be opened in a new tab. The runtime is stated so the
+              reader knows what they are committing to.
+            */}
+            {product.videos?.[0] ? (
+              <a
+                href={`#${VIDEO_ANCHOR}`}
+                aria-label={
+                  product.videos[0].durationSeconds
+                    ? `${t.watch} — ${Math.floor(product.videos[0].durationSeconds / 60)} min ${product.videos[0].durationSeconds % 60} s`
+                    : t.watch
+                }
+                className="short-marker short-marker-compact mt-24 inline-flex items-baseline gap-8 text-c1 text-brand hover:text-brand-hover"
+              >
+                {t.watch}
+                {product.videos[0].durationSeconds ? (
+                  <span className="text-c2 tabular-nums text-ink-secondary">
+                    {Math.floor(product.videos[0].durationSeconds / 60)}:
+                    {String(product.videos[0].durationSeconds % 60).padStart(2, "0")}
+                  </span>
+                ) : null}
+              </a>
+            ) : null}
+
+            {/*
+              Three entry points, not one: a price, a person, or the catalogue to read offline.
+              One primary, two secondary — a single "Contact us" sends the last two through the
+              wrong door, and an enquiry that starts with the wrong question costs a round trip.
+            */}
+            <div className="mt-32 flex flex-wrap items-center gap-16">
+              <Button href={quoteHref}>{t.quote}</Button>
+              <Button href={`${base}/contact/`} variant="secondary">
+                {t.ask}
+              </Button>
+              <Button href={CATALOGUE_PDF} variant="secondary">
+                {t.downloadCatalogue}
+              </Button>
+            </div>
+
+            {enquiryAddress ? (
+              <p className="mt-16 text-c2 text-ink-secondary">
+                {t.orEmail}{" "}
+                <EmailLink
+                  address={enquiryAddress}
+                  subject={`${product.model} — ${name}`}
+                  className="text-brand hover:text-brand-hover"
+                />
+              </p>
+            ) : null}
+
+            {/* The second route this site exists to feed: this model on the Alibaba storefront. */}
+            {alibaba && (
+              <div className="mt-24 border-t border-line pt-16">
+                <a
+                  href={alibaba.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                >
+                  {alibaba.kind === "listing"
+                    ? t.orderListing.replace("{model}", product.model)
+                    : t.findStorefront.replace("{model}", product.model)}
+                </a>
+                <p className="mt-8 max-w-[52ch] text-c2 text-ink-secondary">
+                  {alibaba.kind === "listing" ? t.listingHelp : t.storefrontHelp}
+                </p>
+              </div>
             )}
-            <p className="mt-24 text-c2 text-ink-secondary">
-              {t.scope}
-            </p>
           </div>
         </div>
       </section>
-      ) : null}
 
-      {/*
-        6 — What used to be "Downloads", now something that exists.
+      <SectionNav
+        label={t.onThisPage}
+        items={chapters}
+        lead={product.modelTbc ? undefined : product.model}
+        action={{ href: quoteHref, label: t.quote }}
+      />
 
-        Not one product of 435 has an attachment, so this slot rendered the same
-        "available on request while the library is being prepared" sentence on every
-        page on the site — a promise with nothing behind it, in the position a buyer
-        looks for a datasheet.
+      {/* Specifications: the one place a specification lives (no repeated facts blocks). */}
+      <Chapter id="specifications" title={t.specifications} aside={t.specsAside}>
+        {!es && product.description ? <Prose markdown={product.description} className="mb-32" /> : null}
+        {specs.length ? (
+          <>
+            <dl className="border-t border-ink">
+              {specs.map((spec) => (
+                <div
+                  key={`${spec.label}-${spec.value}`}
+                  className={`${pageStyles.reveal} grid grid-cols-2 gap-16 border-b border-line py-16 text-c1`}
+                >
+                  <dt className="text-ink-secondary">{specLabel(spec.label, locale)}</dt>
+                  {/* English pages add an imperial bracket to metric values (src/lib/imperial.ts). */}
+                  <dd className="tabular-nums text-ink">
+                    {specValueFor(spec.value, locale)}
+                    {spec.unit ? ` ${spec.unit}` : ""}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-24 flex flex-wrap items-center gap-16">
+              <CopyText text={specText} label={t.copySpecs} done={t.copied} />
+              <span className="text-c2 text-ink-secondary">{t.copyHelp}</span>
+            </div>
+          </>
+        ) : (
+          <EmptyState>{t.noSpecs}</EmptyState>
+        )}
 
-        The client's call was to put the work already done here instead: the answered
-        buyer questions on /faq/, and the comparison table for this range. Both are real
-        pages with real content, and both are the next thing somebody reading a spec
-        table actually wants — "how do I order this" and "how does it differ from the
-        one next to it". It also earns the comparison pages an inbound link from all 435
-        product pages rather than from the catalogue index alone.
-      */}
-      <section className="layout mt-144 lg:mt-288" aria-labelledby="next-steps-heading">
-        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full xl:col-span-8">
-            <h2 id="next-steps-heading" className="text-h3 text-ink">
-              {t.nextSteps}
-            </h2>
-          </div>
-          <div className="col-span-full xl:col-span-16 xl:col-start-9">
-            <ul className="border-t border-line">
-              {product.attachmentIds.map((attachmentId) => (
-                <li key={attachmentId} className="border-b border-line py-16">
-                  <ArrowLink href={`/downloads/#${attachmentId}`}>{attachmentId}</ArrowLink>
+        {/* Only the facts the table does not already carry (finishes, mostly). */}
+        {uncoveredFacts.length ? (
+          <dl className="mt-32 grid grid-cols-1 gap-24 sm:grid-cols-2">
+            {uncoveredFacts.map((fact) => (
+              <ProductFact key={fact.label} label={fact.label} values={fact.values} fallback={t.onRequest} />
+            ))}
+          </dl>
+        ) : null}
+
+        {/* The client's own checked feature lines; each locale sees its own list or none. */}
+        {featureList?.length ? (
+          <div className="mt-48">
+            <h3 className="text-c1 font-semibold text-ink">{t.features}</h3>
+            <ul className="mt-16 border-t border-line">
+              {featureList.map((feature) => (
+                <li key={feature} className="grid grid-cols-[1.2rem_1fr] gap-x-8 border-b border-line py-12 text-c1 text-ink">
+                  <span aria-hidden="true" className="text-ink-tertiary">·</span>
+                  <span>{feature}</span>
                 </li>
               ))}
-              {citing.map(({ section, article }) => (
-                <li key={`${section}/${article.slug}`} className="border-b border-line py-16">
-                  <ArrowLink href={localisedHref(`/${section}/${article.slug}/`, locale)}>
-                    {tr(article, "title", locale)}
-                  </ArrowLink>
-                  <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">
-                    {section === "guides" ? t.citedGuide : t.citedNews}
-                  </p>
-                </li>
-              ))}
-              {compareHref ? (
-                <li className="border-b border-line py-16">
-                  <ArrowLink href={compareHref}>{t.compareRange}</ArrowLink>
-                  <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">
-                    {t.compareHelp}
-                  </p>
-                </li>
-              ) : null}
-              <li className="border-b border-line py-16">
-                <ArrowLink href={`${base}/faq/`}>{t.faqLink}</ArrowLink>
-                <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{t.faqHelp}</p>
-              </li>
             </ul>
           </div>
-        </div>
-      </section>
+        ) : null}
+      </Chapter>
 
-      {/* 6b — Application packages that use this model. Omitted when there are none. */}
-      {usedIn.length ? (
-        <section className="layout mt-144 lg:mt-288" aria-labelledby="applications-heading">
-          <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-            <div className="col-span-full xl:col-span-8">
-              <h2 id="applications-heading" className="text-h3 text-ink">
-                {t.applications}
-              </h2>
-            </div>
-            <div className="col-span-full xl:col-span-16 xl:col-start-9">
-              <ul className="border-t border-line">
-                {usedIn.map((project) => (
-                  <li key={project.slug} className="border-b border-line py-16">
-                    <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                      {t.representative}
-                    </p>
-                    <div className="mt-8">
-                      <ArrowLink href={`${base}/projects/${project.slug}/`}>
-                        {tr(project, "name", locale)}
-                      </ArrowLink>
-                    </div>
-                    <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">
-                      {tr(project, "summary", locale)}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      {/* The figures a buyer checks first, from rows whose whole value is a number. */}
+      {bandFacts.length >= 2 ? (
+        <section className="layout bg-ink py-96 text-surface lg:py-136" aria-label={t.specifications}>
+          <div className={`col-content ${pageStyles.band}`}>
+            {bandFacts.map(({ spec, match }) => (
+              <div key={spec.label} className={pageStyles.bandItem}>
+                <span className={pageStyles.bandMask}>
+                  <span className={pageStyles.bandNumber}>
+                    {match[1]}
+                    {match[2] ? <small>{match[2]}</small> : null}
+                  </span>
+                </span>
+                <span className="mt-12 block text-c2 text-surface/70">{specLabel(spec.label, locale)}</span>
+              </div>
+            ))}
           </div>
         </section>
       ) : null}
 
-      {/* 7 — Related products.
-          Omitted entirely when the product has no siblings — an empty-state sentence here
-          would be identical on every such page, which is a slice of the duplicate-content
-          problem this section is meant to help with. */}
+      {showDrawings ? (
+        <Chapter id="drawings" title={t.navDrawings} aside={t.drawingsAside}>
+          <ProductSpecSheetLink slug={product.slug} locale={locale} />
+          <ProductDrawing slug={product.slug} locale={locale} />
+          {/*
+            A sibling, not a child: the two drawing populations do not overlap. A pull handle
+            publishes fixing centres and gets a preparation drawing; a lock case publishes
+            case geometry and gets an outline. See the note in ProductDrawing.tsx.
+          */}
+          <DoorPreparation slug={product.slug} locale={locale} />
+          {referenceModel ? <div className="mt-48"><ProductModel model={referenceModel} locale={locale} /></div> : null}
+        </Chapter>
+      ) : null}
+
+      {/*
+        The demonstration, in its own chapter. A specifier's questions arrive as: what is it,
+        does it do what I need, will it fit, how do I order — and the only thing on the page
+        that answers the second is the film of the part working.
+      */}
+      {product.videos?.length ? (
+        <Chapter
+          id={VIDEO_ANCHOR}
+          title={t.navVideo}
+          aside={product.videos[0].durationSeconds ? t.videoAside.replace("{seconds}", String(product.videos[0].durationSeconds)) : undefined}
+        >
+          <div className="space-y-16">
+            {product.videos.map((video) => (
+              <figure key={video.src} className={`${pageStyles.reveal} m-0`}>
+                <ProductVideo video={video} />
+                <figcaption className="mt-8 text-c2 text-ink-secondary">
+                  {/* English only: the watch pages are English-only (src/lib/video-pages.ts). */}
+                  {locale === "en" && watchVideo(product)?.src === video.src ? (
+                    <Link href={watchPagePath(product)} className="text-brand hover:text-brand-hover">
+                      {video.label}
+                    </Link>
+                  ) : (
+                    video.label
+                  )}
+                  {video.durationSeconds ? (
+                    <span className="text-ink-secondary">
+                      {" · "}
+                      {Math.floor(video.durationSeconds / 60)}:{String(video.durationSeconds % 60).padStart(2, "0")}
+                    </span>
+                  ) : null}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </Chapter>
+      ) : null}
+
+      {/*
+        Common questions, composed from this product's own rows by productFaqItems and mirrored
+        exactly by ProductFaqJsonLd — a FAQPage whose answers are not visible on the page is a
+        spam signal, so they are a description list, not an accordion.
+      */}
+      {faqItems.length ? (
+        <Chapter id="questions" title={productFaqHeading(locale)}>
+          <dl className="border-t border-ink">
+            {faqItems.map((item) => (
+              <div key={item.question} className={`${pageStyles.reveal} border-b border-line py-16`}>
+                <dt className="text-c1 text-ink">{item.question}</dt>
+                <dd className="mt-4 text-c2 text-ink-secondary">{item.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </Chapter>
+      ) : null}
+
+      {/* What a quotation needs, as a list a buyer can send back filled in. */}
+      <Chapter id="ordering" title={t.navOrdering} aside={t.quoteNeeds}>
+        <ol className="border-t border-ink">
+          {asks.map(([label, help], k) => (
+            <li key={label} className={`${pageStyles.reveal} grid grid-cols-[3.2rem_1fr] gap-x-12 border-b border-line py-16 sm:grid-cols-[3.2rem_1fr_1.3fr]`}>
+              <span className="text-c2 tabular-nums text-ink-secondary">{k + 1}</span>
+              <span className="text-c1 font-semibold text-ink">{label}</span>
+              <span className="col-start-2 text-c2 text-ink-secondary sm:col-start-3">{help}</span>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-24 flex flex-wrap items-center gap-16">
+          {enquiryAddress ? (
+            <Button
+              href={`mailto:${enquiryAddress}?subject=${encodeURIComponent(`${product.model} — ${name}`)}&body=${encodeURIComponent(enquiryBody)}`}
+            >
+              {t.emailAnswers}
+            </Button>
+          ) : (
+            <Button href={quoteHref}>{t.quote}</Button>
+          )}
+          <CopyText text={enquiryBody} label={t.copyList} done={t.copied} />
+        </div>
+      </Chapter>
+
+      {/*
+        Certifications, ONLY where a certificate actually exists. A section that only ever
+        says "nothing here" is worse than no section, and 415 identical paragraphs are
+        duplicate content besides (client).
+      */}
+      {product.certifications.length ? (
+        <Chapter id="certifications" title={t.certifications} aside={t.scope}>
+          <ul className="grid grid-cols-1 gap-16 sm:grid-cols-2">
+            {product.certifications.map((certification) => (
+              <li key={`${certification.name}-${certification.standard ?? ""}`} className="border border-line bg-surface-alt p-24">
+                <p className="text-c1 font-semibold text-ink">{certification.name}</p>
+                {certification.standard ? <p className="mt-8 text-c1 text-ink-secondary">{certification.standard}</p> : null}
+                {certification.downloadId ? (
+                  <ArrowLink href={`/downloads/#${certification.downloadId}`} className="mt-24">
+                    {t.viewCertificate}
+                  </ArrowLink>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </Chapter>
+      ) : null}
+
+      {/*
+        Next steps: the guides and articles that cite this model (the link back up from the
+        articles that link down to it), the comparison table for the range, and the ordering
+        FAQ. Real pages, and the next thing somebody reading a spec table wants.
+      */}
+      <Chapter id="next-steps" title={t.nextSteps}>
+        <ul className="border-t border-ink">
+          {product.attachmentIds.map((attachmentId) => (
+            <li key={attachmentId} className="border-b border-line py-16">
+              <ArrowLink href={`/downloads/#${attachmentId}`}>{attachmentId}</ArrowLink>
+            </li>
+          ))}
+          {citing.map(({ section, article }) => (
+            <li key={`${section}/${article.slug}`} className={`${pageStyles.reveal} border-b border-line py-16`}>
+              <ArrowLink href={localisedHref(`/${section}/${article.slug}/`, locale)}>{tr(article, "title", locale)}</ArrowLink>
+              <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{section === "guides" ? t.citedGuide : t.citedNews}</p>
+            </li>
+          ))}
+          {compareHref ? (
+            <li className="border-b border-line py-16">
+              <ArrowLink href={compareHref}>{t.compareRange}</ArrowLink>
+              <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{t.compareHelp}</p>
+            </li>
+          ) : null}
+          <li className="border-b border-line py-16">
+            <ArrowLink href={`${base}/faq/`}>{t.faqLink}</ArrowLink>
+            <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{t.faqHelp}</p>
+          </li>
+        </ul>
+      </Chapter>
+
+      {/* Application packages that use this model. Omitted when there are none. */}
+      {usedIn.length ? (
+        <Chapter id="applications" title={t.applications}>
+          <ul className="border-t border-ink">
+            {usedIn.map((project) => (
+              <li key={project.slug} className="border-b border-line py-16">
+                <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">{t.representative}</p>
+                <div className="mt-8">
+                  <ArrowLink href={`${base}/projects/${project.slug}/`}>{tr(project, "name", locale)}</ArrowLink>
+                </div>
+                <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{tr(project, "summary", locale)}</p>
+              </li>
+            ))}
+          </ul>
+        </Chapter>
+      ) : null}
+
+      {/* Related products. Omitted entirely when the product has no siblings. */}
       {related ? (
-        <section className="layout mt-144 lg:mt-288" aria-labelledby="related-heading">
+        <section id="related" className={`layout ${pageStyles.chapter}`} aria-labelledby="related-heading">
           <div className="col-content grid w-full grid-cols gap-x gap-y-48">
             <div className="col-span-full">
               <h2 id="related-heading" className="text-h3 text-ink">
                 {relatedHeading}
               </h2>
             </div>
-
             {related.items.map((item) => (
               <ProductCard
                 key={item.slug}
                 product={item}
                 locale={locale}
-                className="col-span-full sm:col-span-4 md:col-span-6 xl:col-span-8"
+                className="col-span-full sm:col-span-4 md:col-span-6 xl:col-span-6"
               />
             ))}
           </div>
         </section>
       ) : null}
     </main>
+  );
+}
+
+/** One chapter: a rule, a heading held at the left while its content scrolls past (Yuangao design 4). */
+function Chapter({ id, title, aside, children }: { id: string; title: string; aside?: string; children: React.ReactNode }) {
+  return (
+    <section id={id} className={`layout ${pageStyles.chapter}`} aria-labelledby={`${id}-heading`}>
+      <div className="col-content grid w-full grid-cols gap-x gap-y-32">
+        <div className="col-span-full xl:col-span-7">
+          <div className={pageStyles.chapterHead}>
+            <h2 id={`${id}-heading`} className="text-h3 text-ink">
+              {title}
+            </h2>
+            {aside ? <p className="mt-12 max-w-[36ch] text-c2 text-ink-secondary">{aside}</p> : null}
+          </div>
+        </div>
+        <div className="col-span-full xl:col-span-16 xl:col-start-9">{children}</div>
+      </div>
+    </section>
   );
 }
