@@ -1,6 +1,7 @@
 User-Agent: *
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -11,6 +12,7 @@ Disallow: /*/__next.
 User-Agent: GPTBot
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -21,6 +23,7 @@ Disallow: /*/__next.
 User-Agent: OAI-SearchBot
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -31,6 +34,7 @@ Disallow: /*/__next.
 User-Agent: ChatGPT-User
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -41,6 +45,7 @@ Disallow: /*/__next.
 User-Agent: ClaudeBot
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -51,6 +56,7 @@ Disallow: /*/__next.
 User-Agent: Claude-User
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -61,6 +67,7 @@ Disallow: /*/__next.
 User-Agent: Claude-SearchBot
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -71,6 +78,7 @@ Disallow: /*/__next.
 User-Agent: PerplexityBot
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -81,6 +89,7 @@ Disallow: /*/__next.
 User-Agent: Perplexity-User
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -91,6 +100,7 @@ Disallow: /*/__next.
 User-Agent: Google-Extended
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
@@ -101,6 +111,7 @@ Disallow: /*/__next.
 User-Agent: CCBot
 Allow: /
 Allow: /llms.txt
+Allow: /*/llms.txt
 Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
