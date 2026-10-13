@@ -6,24 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 516 次提交
+最近 30 天 · 共 508 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 08:19 | HYDE | 新指南：逃生装置锁闭方式——明装、明装天地杆、暗装天地杆、插芯式（十种语言） | `f4613a7ca49` |
-| 04:54 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/brain-shell | `ad27e93d6ff` |
-| 04:53 | HYDE | 新指南：防火门年检中最常不合格的五金项（十种语言） | `0938747851d` |
-| 04:27 | HYDE | 门表文章：新增空白门表模板（xlsx）和「换锁前要量什么」一节（十种语言） | `1d87c265aa7` |
-| 04:19 | HYDE | 认证指南新增「如何核验门五金证书」一节（十种语言） | `0b3772d0a8d` |
-| 03:53 | HYDE | ISO 9001 改为冲压厂的 ISO 9001:2015 证书（号 69125Q0026****，至 2028-10-29），删去 since 2002（十种语言） | `6a88912d4a8` |
-| 03:39 | 中立 | Merge remote-tracking branch 'origin/main' into claude/iso-wording | `805be07b8da` |
-| 03:39 | HYDE | 删去文章里涉及工厂内部流程的句子（老板 10-13） | `6954ce56f98` |
-| 03:24 | 中立 | 公司页加 12 张冲压厂车间实拍（去字样、3:2），十种语言配图说明 | `7a3cf8dd9af` |
-| 02:49 | HYDE | 下架 4 篇涉及开模与下单流程的文章（老板 10-13） | `6251198d82c` |
-| 02:23 | 中立 | 老板 10-13：质检、开模、订单流程不上网，相关两篇撤下；发来的证书与车间照片不是我方的，不用；ISO 9001 声明待老板确认 | `8813b2dcfd4` |
-| 01:51 | 中立 | Clarity 10-13 十个话题结果：重跑 6 个全部上涨，西语最弱；缺口清单、写作顺序、要甲方给的 4 样资料 | `c9d5fdaabce` |
+| 04:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `c943a5cbce2` |
+| 04:55 | 中立 | Header: every shelf opens with a ruled ledger; Resources items carry counts | `f6eafa34171` |
+| 04:40 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `54743bbfba2` |
+| 04:37 | 中立 | Previews: welcome band with three scroll effects, unified mega menus, baseline finder | `c81afae4054` |
 | 01:44 | 中立 | Tasks: record the 10-13 design questions (welcome band, menus, finder) | `2df7933ed0b` |
 | 01:16 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `49e034b0b6c` |
 | 01:14 | 中立 | Flyer: sixteen faces, 109 products, fire-door accessories page added | `113460fff0d` |

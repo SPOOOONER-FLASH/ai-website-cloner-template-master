@@ -17,7 +17,11 @@ import {
 } from "./HeaderIslands";
 import navigationStyles from "./HeaderNavigation.module.css";
 import { BauInfoBand } from "./BauEntry";
-import { dict, tx } from "@/lib/i18n";
+import { dict, t as tr, tx } from "@/lib/i18n";
+import { bauEntryDetails, dateLocales } from "@/data/bau-entry";
+import { getAllGuideParams, getPublishedGuides } from "@/data/guides";
+import { getPublishedNews } from "@/data/news";
+import { projects } from "@/data/projects";
 
 /**
  * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
@@ -179,6 +183,21 @@ export function SiteHeader({
   const companyHrefs = dict(companyShelfLinks, locale).map((link) => localisedHref(link.href, locale));
   const buyHrefs = dict(buyShelfLinks, locale).map((link) => localisedHref(link.href, locale));
   const resourcesLabel = tx(locale, "Resources", { es: "Recursos", pt: "Recursos" });
+  /*
+    Every shelf opens with the same ruled "ledger" column holding one checkable fact, and the
+    items carry their own counts (client approved the 2026-10-13 menu preview: 「菜单设计的还行
+    信息不错」): the record count, the legal name, the newest guide. All computed at build time.
+  */
+  const productTotal = categories.reduce((n, category) => n + category.count, 0);
+  const guideSlugs = new Set(getAllGuideParams(locale).map((p) => p.slug));
+  const newestGuide = getPublishedGuides().find((article) => guideSlugs.has(article.slug));
+  const resourceCounts: Record<string, number> = {
+    "/projects": projects.length,
+    "/guides": guideSlugs.size,
+    "/news": getPublishedNews().length,
+  };
+  const bau = bauEntryDetails(locale);
+  const bauUpcoming = new Date().toISOString().slice(0, 10) <= bau.event.endDate;
   const buyLabel = tx(locale, "Buy it now", { es: "Comprar ahora", pt: "Comprar agora" });
 
   const header = (
@@ -416,17 +435,15 @@ export function SiteHeader({
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
-              <div>
-                <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {tx(locale, "Products", { es: "Productos", pt: "Produtos" })}
-                </p>
-                <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {tx(locale, "Fifteen product families. The number is how many verified records each one holds.", { es: "Quince familias de producto. El número es cuántas referencias verificadas contiene cada una.", pt: "Quinze famílias de produto. O número é quantas referências verificadas cada uma contém." })}
+              <div className="border-t border-ink pt-12">
+                <p className="text-h3 tabular-nums text-ink">{productTotal}</p>
+                <p className="text-c2 text-ink-secondary">
+                  {tx(locale, "verified product records", { es: "fichas de producto verificadas", pt: "fichas de produto verificadas" })}
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
                   prefetch={false}
-                  className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
+                  className="short-marker mt-24 block w-fit text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Product Finder", { es: "Buscador de productos", pt: "Localizador de produtos" })}
                 </Link>
@@ -435,7 +452,7 @@ export function SiteHeader({
                 <Link
                   href={localisedHref("/configurator/studio", locale)}
                   prefetch={false}
-                  className="short-marker mt-12 inline-block text-c1 text-ink no-underline"
+                  className="short-marker mt-12 block w-fit text-c1 text-ink no-underline"
                 >
                   {tx(locale, "Configurator Studio", { es: "Estudio de configuración", pt: "Estúdio de configuração" })}
                 </Link>
@@ -504,23 +521,26 @@ export function SiteHeader({
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
-              <div>
-                <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {tx(locale, "Company", { es: "Empresa", pt: "Empresa" })}
-                </p>
-                <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {tx(locale, "The factory, markets and technical support behind HYDE.", { es: "La fábrica, sus mercados y el apoyo técnico detrás de HYDE.", pt: "A fábrica, os mercados e o apoio técnico por trás da HYDE." })}
-                </p>
+              <div className="border-t border-ink pt-12">
+                <p className="max-w-[24rem] text-c1 font-semibold text-ink">{siteSettings.legalName}</p>
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-4">
                 {dict(companyShelfLinks, locale).map((link) => (
                   <HeaderLink
                     key={link.href}
                     href={localisedHref(link.href, locale)}
-                    className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
+                    className="header-shelf-link border-t border-ink pt-16 text-ink no-underline"
                   >
                     <span className="short-marker text-c1">{link.label}</span>
-                    <span className="mt-8 block text-c2 text-ink-secondary">{link.detail}</span>
+                    {link.href === "/events" && bauUpcoming ? (
+                      <span className="mt-8 block text-c2 text-ink-secondary">
+                        <bdi className="block">BAU {bau.year}, {bau.event.venue}</bdi>
+                        <bdi className="block">{bau.compactDates}</bdi>
+                        <span className="block">{bau.copy.hall} <bdi dir="ltr">{bau.event.hall}</bdi>, {bau.copy.stand} <bdi dir="ltr">{bau.event.stand}</bdi></span>
+                      </span>
+                    ) : (
+                      <span className="mt-8 block text-c2 text-ink-secondary">{link.detail}</span>
+                    )}
                   </HeaderLink>
                 ))}
               </nav>
@@ -533,16 +553,21 @@ export function SiteHeader({
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
-              <div>
-                <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {resourcesLabel}
-                </p>
-                <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {tx(locale, "Where the products are used, how to specify them, and what buyers ask.", {
-                    es: "Dónde se usan los productos, cómo especificarlos y qué preguntan los compradores.",
-                    pt: "Onde os produtos são usados, como especificá-los e o que os compradores perguntam.",
-                  })}
-                </p>
+              <div className="border-t border-ink pt-12">
+                {newestGuide ? (
+                  <>
+                    <p className="text-c2 text-ink-secondary">
+                      {tx(locale, "Newest guide", { es: "Guía más reciente", pt: "Guia mais recente" })},{" "}
+                      <bdi>{new Intl.DateTimeFormat(dateLocales[locale], { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(`${newestGuide.publishedAt}T00:00:00Z`))}</bdi>
+                    </p>
+                    <HeaderLink
+                      href={localisedHref(`/guides/${newestGuide.slug}`, locale)}
+                      className="header-shelf-link mt-4 block max-w-[28rem] text-c1 text-ink no-underline"
+                    >
+                      <span className="short-marker">{tr(newestGuide, "title", locale)}</span>
+                    </HeaderLink>
+                  </>
+                ) : null}
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-3">
                 {resourceLinks.map((link) => {
@@ -551,9 +576,12 @@ export function SiteHeader({
                     <HeaderLink
                       key={link.href}
                       href={localisedHref(link.href, locale)}
-                      className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
+                      className="header-shelf-link border-t border-ink pt-16 text-ink no-underline"
                     >
-                      <span className="short-marker text-c1">{navLabel(link, locale)}</span>
+                      <span className="flex items-baseline justify-between gap-16">
+                        <span className="short-marker text-c1">{navLabel(link, locale)}</span>
+                        <span className="text-c2 tabular-nums text-ink-secondary">{resourceCounts[link.href]}</span>
+                      </span>
                       <span className="mt-8 block text-c2 text-ink-secondary">{detail}</span>
                     </HeaderLink>
                   );
