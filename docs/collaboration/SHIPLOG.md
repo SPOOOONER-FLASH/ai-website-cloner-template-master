@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 504 次提交
+最近 30 天 · 共 505 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:37 | 中立 | Previews: welcome band with three scroll effects, unified mega menus, baseline finder | `c81afae4054` |
 | 01:44 | 中立 | Tasks: record the 10-13 design questions (welcome band, menus, finder) | `2df7933ed0b` |
 | 01:16 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `49e034b0b6c` |
 | 01:14 | 中立 | Flyer: sixteen faces, 109 products, fire-door accessories page added | `113460fff0d` |
