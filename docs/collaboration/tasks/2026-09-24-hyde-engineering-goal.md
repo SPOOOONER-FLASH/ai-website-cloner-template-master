@@ -180,6 +180,6 @@
 | 174 | 发布「Hyde 文案」会话 897601a3281f（工厂故事第 4、5 步换甲方确认实拍图）+ 616c365d07b4（装配句十语修正）；实测图片 | 10-13 完成（发布 bae0acf7053 / GitLab d90b329585a；导出守卫 30/0；首页第 4、5 步为 factory-polishing-workshop / factory-assembly-quality-line，原图+HYDE 版+480/960/1440 共 10 个 URL 均 200，旧图不再引用） |
 | 175 | 发布「硬件产品数据库与报价系统」会话 2c7e7dff：保密内容下线（4 篇转草稿、33 篇删内部流程句、ISO 9001 去 since 2002/证书号打码/去 hasCredential）、公司页 12 张车间图；实测 /company/、/fr/company/、4 个下线 URL 与 sitemap | 10-13 完成（发布 6a4774cf45f9 / GitLab f7b748c0e8f；40 个下线 URL 全 404，20 个 sitemap、llms.txt、search-index 均无；另清除 194 个仍含下线内容的保留旧 chunk 70894f541645；公司页 12 图 3:2、每行 3 张，法语 alt；图下无可见说明文字，已告知该会话） |
 | 176 | 发布「硬件产品数据库与报价系统」会话 d71a8bca：认证指南加「如何核验证书」十语、门表文章加「量什么」+ xlsx 模板；实测 | 10-13 完成（发布 c815e28653c0 / GitLab 1edd4271166；推送报 75 实为成功，ls-remote 确认；认证指南核验一节英法线上可见，门表 xlsx 200 且文章已链接） |
-| 177 | 发布「Hyde 文案」会话 ca527e49ba1c：下拉菜单改版（左栏墨线、Resources 带数量、Events 显示 BAU、Newest guide）；实测 | 待做 |
-| 178 | 发布「硬件产品数据库与报价系统」会话 c6da5496：3 篇新指南（防火门年检、逃生锁锁定方式、墨西哥进口西语首发）；实测 | 待做 |
-| 179 | GEO：llms.txt 只列 1 个西语 URL，AI 引用 /es/ 为 0 → llms.txt 加西语指南段（/es/ URL + 西语一句话） | 10-13 完成（llms.txt 新增「Guías en español」46 条，/es/ URL + 西语标题与摘要，约 29KB；随下一版发布） |
+| 177 | 发布「Hyde 文案」会话 ca527e49ba1c：下拉菜单改版（左栏墨线、Resources 带数量、Events 显示 BAU、Newest guide）；实测 | 10-13 完成（发布 36b7fb6142b / GitLab b1594f05221；线上 Newest guide = 防火门年检 13 Oct 2026，菜单项带数量，法语 Events 显示 BAU 2027 11–15 janv. Hall C4 Stand 523） |
+| 178 | 发布「硬件产品数据库与报价系统」会话 c6da5496：3 篇新指南（防火门年检、逃生锁锁定方式、墨西哥进口西语首发）；实测 | 10-13 完成（发布 7f29e128b50d / GitLab be1db28ad9f；3 篇在 en/es/fr/ar 均 200，墨西哥篇在 /es/sitemap.xml） |
+| 179 | GEO：llms.txt 只列 1 个西语 URL，AI 引用 /es/ 为 0 → llms.txt 加西语指南段（/es/ URL + 西语一句话） | 10-13 完成（同版上线：线上 /llms.txt 有「Guías en español」46 条 /es/guides/ 链接） |
