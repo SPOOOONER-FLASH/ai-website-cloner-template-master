@@ -47,15 +47,6 @@
 .links { display: flex; flex-wrap: wrap; column-gap: 28px; row-gap: 8px; }
 .page a:focus-visible, .page button:focus-visible, .page input:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 .articleTitle { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; text-wrap: balance; }
-.articleIntro { display: grid; grid-template-columns: 1fr; gap: 24px; }
-.readingPanel { background: #465246; color: #fff; padding: 28px; }
-.readingPanel h2 { font-size: 15px; font-weight: 500; margin-bottom: 16px; }
-.readingPanel ul { list-style: none; }
-.readingPanel li { padding: 10px 0 10px 4px; border-top: 1px solid #7c8878; font-size: 16px; line-height: 1.5; }
-.readingPanel a { display: block; text-underline-offset: 4px; }
-.readingPanel a:hover { text-decoration: underline; }
-.readingPanel a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
-@media (min-width: 1200px) { .articleIntro[data-photo='true'] { grid-template-columns: 1.1fr 1fr; align-items: start; } }
 @media (max-width: 1000px) {
   .hero h1 { font-size: 56px; }
   .libraryBody { grid-template-columns: 190px minmax(0, 1fr); gap: 5%; }
@@ -89,6 +80,5 @@
   .materialPhoto { display: block; margin-top: 28px; padding: 16px; }
   .materialPhoto img { height: 240px; }
   .evidence h2 { margin-bottom: 20px; font-size: 32px; }
-  .readingPanel { padding: 22px; }
 }
 @media (prefers-reduced-motion: reduce) { .textLink svg { transition: none; } }

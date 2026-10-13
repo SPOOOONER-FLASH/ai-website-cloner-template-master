@@ -1,6 +1,6 @@
 {
   " — Canton Hyland manufactures panic exit devices, locks and architectural door hardware for commercial and institutional projects, supplying specifiers and distributors internationally.": [
-    "src/components/site/NewsDetail.tsx:55"
+    "src/components/site/NewsDetail.tsx:60"
   ],
   " — the catalog on this site is a subset of what we manufacture.": [
     "src/components/site/ProductFinder.tsx:69"
@@ -69,7 +69,11 @@
   "{model}, and the finish or color": [
     "src/components/site/ProductDetail.tsx:135"
   ],
+  "{n} min read": [
+    "src/components/site/NewsDetail.tsx:269"
+  ],
   "{n} models": [
+    "src/components/site/NewsDetail.tsx:271",
     "src/components/site/OrderCodeTables.tsx:35",
     "src/components/site/ProductsEditorialOverview.tsx:30"
   ],
@@ -96,6 +100,12 @@
   ],
   "{n} published models. Every model has its own page with the specifications we have confirmed.": [
     "src/lib/category-guide.ts:149"
+  ],
+  "{n} sections": [
+    "src/components/site/NewsDetail.tsx:270"
+  ],
+  "{n}% read": [
+    "src/components/site/ArticleContents.tsx:17"
   ],
   "{name} catalog": [
     "src/components/locale-pages/CategoryPage.tsx:101"
@@ -124,11 +134,8 @@
   "{total}mm overall. Halves needed: {outside} outside, {inside} inside.": [
     "src/components/site/CylinderCalculator.tsx:64"
   ],
-  "← Back to all guides": [
-    "src/components/site/NewsDetail.tsx:223"
-  ],
   "← Back to all news": [
-    "src/components/site/NewsDetail.tsx:48"
+    "src/components/site/NewsDetail.tsx:53"
   ],
   "← Back to previous results": [
     "src/components/site/ProductDetail.tsx:92"
@@ -336,8 +343,11 @@
   "A wide-angle lens through the door leaf, so the person inside can see the caller without opening.": [
     "src/lib/configurator.ts:433"
   ],
+  "About {n} min left": [
+    "src/components/site/NewsDetail.tsx:241"
+  ],
   "About Canton Hyland": [
-    "src/components/site/NewsDetail.tsx:53"
+    "src/components/site/NewsDetail.tsx:58"
   ],
   "About the company": [
     "src/components/site/WelcomeIntro.tsx:24"
@@ -514,6 +524,9 @@
   "Ask us": [
     "src/components/locale-pages/GlossaryPage.tsx:68"
   ],
+  "Ask which one fits": [
+    "src/components/site/NewsDetail.tsx:414"
+  ],
   "Assembly": [
     "src/data/capability.ts:141"
   ],
@@ -583,9 +596,6 @@
   ],
   "BAU 2027, January 11–15, 2027, Messe München. Visit us in Hall C4, Stand 523": [
     "src/data/bau-2027.ts:70"
-  ],
-  "Before you specify": [
-    "src/components/site/GuideArticleIntro.tsx:19"
   ],
   "Below the range the screws bottom out and the roses stand proud; above it the spindle does not reach through, and no amount of force will make it. This is the figure to check first on a glass or aluminum door, where leaves are thinner than the joinery a lock was designed around.": [
     "src/data/hardware-terms.ts:126"
@@ -1032,7 +1042,7 @@
     "src/components/locale-pages/ContactPage.tsx:39"
   ],
   "Contact us": [
-    "src/components/site/NewsDetail.tsx:50",
+    "src/components/site/NewsDetail.tsx:55",
     "src/components/site/NewsListing.tsx:23"
   ],
   "Contemporary architectural threshold in Buenos Aires": [
@@ -1389,7 +1399,7 @@
   "Downloads": [
     "src/components/site/menu-experience.ts:102",
     "src/components/site/menu-experience.ts:287",
-    "src/components/site/NewsDetail.tsx:518",
+    "src/components/site/NewsDetail.tsx:384",
     "src/components/site/ProductDetail.tsx:64",
     "src/components/site/SiteHeader.tsx:110"
   ],
@@ -1413,6 +1423,9 @@
   ],
   "Drawn 1:1 from the published specification": [
     "src/components/site/ProductDrawing.tsx:90"
+  ],
+  "drawn in ink where this section names them": [
+    "src/components/site/NewsDetail.tsx:411"
   ],
   "Duplicate records merged": [
     "src/components/site/ModelLookup.tsx:47"
@@ -1453,6 +1466,9 @@
   "en-GB": [
     "src/components/site/PrivacyPolicy.tsx:3",
     "src/data/bau-entry.ts:68"
+  ],
+  "End of guide.": [
+    "src/components/site/NewsDetail.tsx:399"
   ],
   "Engineered by Canton Hyland": [
     "src/components/site/products-architecture.ts:188"
@@ -1864,6 +1880,9 @@
   "Guangdong, China": [
     "src/data/company.ts:52"
   ],
+  "Guide {n} of {total}": [
+    "src/components/site/NewsDetail.tsx:256"
+  ],
   "Guide that compares or cites this model": [
     "src/components/site/ProductDetail.tsx:69"
   ],
@@ -1875,7 +1894,7 @@
     "src/components/site/AuthorProfile.tsx:28",
     "src/components/site/GuideListing.tsx:13",
     "src/components/site/menu-experience.ts:89",
-    "src/components/site/NewsDetail.tsx:95"
+    "src/components/site/NewsDetail.tsx:100"
   ],
   "Guides and News": [
     "src/lib/article-feed.ts:34"
@@ -1960,7 +1979,7 @@
     "src/components/locale-pages/ProductPage.tsx:94",
     "src/components/locale-pages/ProductsIndexPage.tsx:35",
     "src/components/site/AuthorProfile.tsx:30",
-    "src/components/site/NewsDetail.tsx:46",
+    "src/components/site/NewsDetail.tsx:51",
     "src/components/site/ProductDetail.tsx:90",
     "src/components/site/ProductsEditorialOverview.tsx:22",
     "src/components/site/ProjectDetail.tsx:15"
@@ -2437,6 +2456,9 @@
   "More filters": [
     "src/components/site/ProductFinder.tsx:58"
   ],
+  "More guides": [
+    "src/components/site/NewsDetail.tsx:422"
+  ],
   "More in {category}": [
     "src/components/site/ProductDetail.tsx:109"
   ],
@@ -2524,6 +2546,9 @@
   "Narrow-stile lock": [
     "src/components/site/ArgentinaAr4Showcase.tsx:37"
   ],
+  "Nearly done": [
+    "src/components/site/NewsDetail.tsx:241"
+  ],
   "Need another file?": [
     "src/components/locale-pages/DownloadsPage.tsx:152"
   ],
@@ -2539,8 +2564,8 @@
   ],
   "News + Press": [
     "src/components/site/menu-experience.ts:90",
-    "src/components/site/NewsDetail.tsx:47",
-    "src/components/site/NewsDetail.tsx:94",
+    "src/components/site/NewsDetail.tsx:52",
+    "src/components/site/NewsDetail.tsx:99",
     "src/components/site/NewsListing.tsx:17"
   ],
   "Newsletter": [
@@ -2549,6 +2574,9 @@
   ],
   "Newsletter request": [
     "src/data/privacy-policy.ts:96"
+  ],
+  "Next guide": [
+    "src/components/site/NewsDetail.tsx:423"
   ],
   "Next step": [
     "src/components/site/ArticleBuyerBlock.tsx:120",
@@ -2719,7 +2747,7 @@
     "src/components/site/SiteHeader.tsx:326"
   ],
   "Open original image": [
-    "src/components/site/GuideCover.tsx:23"
+    "src/components/site/GuideCover.tsx:26"
   ],
   "Open original PDF": [
     "src/components/site/DocumentPreview.tsx:8"
@@ -2881,7 +2909,7 @@
     "src/components/site/CylinderCalculator.tsx:73"
   ],
   "Overview": [
-    "src/components/site/NewsDetail.tsx:159"
+    "src/components/site/NewsDetail.tsx:164"
   ],
   "Packing + export": [
     "src/data/capability.ts:180"
@@ -2985,16 +3013,19 @@
     "src/components/locale-pages/ContactPage.tsx:170"
   ],
   "Press inquiries": [
-    "src/components/site/NewsDetail.tsx:49"
+    "src/components/site/NewsDetail.tsx:54"
   ],
   "Press kit": [
-    "src/components/site/NewsDetail.tsx:52"
+    "src/components/site/NewsDetail.tsx:57"
   ],
   "Press releases, certification updates and technical notes from Canton Hyland, manufacturer of panic exit devices and architectural door hardware.": [
     "src/components/locale-pages/ArticlePages.tsx:25"
   ],
   "Preview the original catalog": [
     "src/components/site/DocumentPreview.tsx:8"
+  ],
+  "Previous guide": [
+    "src/components/site/NewsDetail.tsx:423"
   ],
   "Previous view": [
     "src/components/site/ProductDetail.tsx:117"
@@ -3088,7 +3119,7 @@
     "src/components/locale-pages/ProductsIndexPage.tsx:19"
   ],
   "Products mentioned": [
-    "src/components/site/NewsDetail.tsx:51"
+    "src/components/site/NewsDetail.tsx:56"
   ],
   "Project Planner": [
     "src/components/site/WelcomeIntro.tsx:22"
@@ -3184,7 +3215,8 @@
     "src/components/site/GuideLibrary.tsx:13"
   ],
   "Read next": [
-    "src/components/site/NewsDetail.tsx:500"
+    "src/components/site/NewsDetail.tsx:369",
+    "src/components/site/NewsDetail.tsx:748"
   ],
   "Read the guide": [
     "src/components/site/GuideListing.tsx:15"
@@ -3209,11 +3241,11 @@
   ],
   "Reference table": [
     "src/components/site/ArticleBody.tsx:21",
-    "src/components/site/NewsDetail.tsx:381"
+    "src/components/site/NewsDetail.tsx:629"
   ],
   "Related products": [
     "src/components/site/ArticleBuyerBlock.tsx:80",
-    "src/components/site/NewsDetail.tsx:192",
+    "src/components/site/NewsDetail.tsx:197",
     "src/components/site/ProductDetail.tsx:105",
     "src/components/site/ProjectDetail.tsx:21"
   ],
@@ -3331,6 +3363,9 @@
   ],
   "Seasonal market focus · Argentina": [
     "src/components/site/ArgentinaAr4Showcase.tsx:26"
+  ],
+  "Sections of this guide": [
+    "src/components/site/NewsDetail.tsx:317"
   ],
   "Security mortise lock": [
     "src/components/site/ArgentinaCollection.tsx:61",
@@ -3646,9 +3681,6 @@
   ],
   "Start again": [
     "src/components/site/Configurator.tsx:64"
-  ],
-  "Start reading": [
-    "src/components/site/GuideArticleIntro.tsx:18"
   ],
   "Start with the door, its opening action and the way it will be used.": [
     "src/components/site/products-architecture.ts:121"
@@ -4147,7 +4179,9 @@
     "src/data/finish-codes.ts:218"
   ],
   "Updated": [
-    "src/components/site/NewsDetail.tsx:242"
+    "src/components/site/NewsDetail.tsx:266",
+    "src/components/site/NewsDetail.tsx:402",
+    "src/components/site/NewsDetail.tsx:491"
   ],
   "Upper cylindrical housing envelopes only: Ø17 mm, two 30 mm segments with a 10 mm central gap.": [
     "public/downloads/models/index.json"
@@ -4189,7 +4223,7 @@
   ],
   "View product": [
     "src/components/site/EditorialAtlas.tsx:21",
-    "src/components/site/GuideCover.tsx:17"
+    "src/components/site/GuideCover.tsx:20"
   ],
   "View product and original photographs": [
     "src/components/site/ProductModel.tsx:16"
