@@ -160,7 +160,7 @@
   },
   "certification-and-test-validation-2026": {
     "title": "Valider un certificat de quincaillerie en 2026 : les sept éléments, DoP et marquage CE, et les six signaux d'alerte",
-    "summary": "Un certificat d'essai authentique comporte 7 éléments : le laboratoire émetteur avec son adresse, sa référence d'accréditation, la norme avec son année, un numéro de rapport ou de certificat, la date d'émission et de validité, le domaine d'application et la configuration essayée. Le domaine d'application est l'élément qui manque le plus souvent, et vérifier les 7 prend environ 5 minutes. Cette page explique aussi la différence entre accréditation et certification et le marquage CE avec sa déclaration des performances, liste 6 signaux d'alerte, et dit ce que nous détenons : nos fermetures anti-panique 307 et 311 sont en cours d'essai, et tant qu'il n'existe pas de numéros de certificat, nous ne leur attribuons aucune classification.",
+    "summary": "Un certificat d'essai authentique comporte 7 éléments : le laboratoire émetteur avec son adresse, sa référence d'accréditation, la norme avec son année, un numéro de rapport ou de certificat, la date d'émission et de validité, le domaine d'application et la configuration essayée. Le domaine d'application est l'élément qui manque le plus souvent, et vérifier les 7 prend environ 5 minutes. Cette page explique aussi la différence entre accréditation et certification et le marquage CE avec sa déclaration des performances, liste 6 signaux d'alerte, et dit ce que nous détenons : nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat, et tant qu'il n'existe pas de numéros de certificat, nous ne leur attribuons aucune classification.",
     "seoTitle": "Valider un certificat : DoP, CE et signaux d'alerte",
     "seoDescription": "Valider un certificat de quincaillerie : sept éléments, DoP et marquage CE, six signaux d'alerte, et cinq minutes de contrôle au registre de l'émetteur.",
     "body": [
@@ -209,7 +209,7 @@
       "Si la réponse à la première question est que le produit n'est pas certifié, c'est une réponse exploitable, et souvent la bonne pour l'usage prévu. Le problème n'est pas un produit non certifié ; c'est un produit non certifié décrit comme s'il l'était, et c'est ce que détectent tous les signaux d'alerte ci-dessus.",
       "## Ce que nous détenons, clairement",
       "Quand l'un de nos produits a été testé et qu'un certificat existe, la page produit indique la norme, la classification et le domaine d'application, et le certificat est disponible sur demande. Notre page documents indique les documents d'essai comme disponibles sur demande plutôt que publiés, et c'est à prendre au pied de la lettre : nous envoyons ce qui existe pour les modèles précis que vous demandez.",
-      "Nos fermetures anti-panique 307 et 311 sont en cours d'essai : tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un degré coupe-feu, un grade ANSI ou un listing UL — ni dans une description, ni dans une comparaison, ni en plaçant le numéro d'une norme près d'un produit qui n'a pas été testé selon elle.",
+      "Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat : tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un degré coupe-feu, un grade ANSI ou un listing UL — ni dans une description, ni dans une comparaison, ni en plaçant le numéro d'une norme près d'un produit qui n'a pas été testé selon elle.",
       "Nous ne reproduisons pas non plus le certificat d'un autre fabricant pour décrire notre propre produit. Un certificat appartient à l'ensemble pour lequel il a été émis, et en emprunter un relève de la même catégorie d'erreur qu'inventer une cote : c'est l'argument de nos pages sur les cotes, appliqué au papier.",
       "## Pourquoi un fournisseur devrait accueillir la vérification",
       "La vérification en cinq minutes décrite plus haut est parfois perçue comme de la méfiance. C'est l'inverse : c'est la seule chose qui donne à un certificat authentique plus de valeur qu'une phrase assurée.",
@@ -239,7 +239,7 @@
       },
       {
         "question": "Vos fermetures anti-panique détiennent-elles une certification coupe-feu ?",
-        "answer": "Nos fermetures anti-panique 307 et 311 sont en cours d'essai. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un degré coupe-feu, un grade ANSI ou un listing UL. Quand un produit a été testé, sa page indique la norme, la classification et le domaine d'application, et le certificat est disponible sur demande."
+        "answer": "Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un degré coupe-feu, un grade ANSI ou un listing UL. Quand un produit a été testé, sa page indique la norme, la classification et le domaine d'application, et le certificat est disponible sur demande."
       }
     ],
     "sourceHash": {
@@ -247,8 +247,8 @@
       "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
-      "body": "57e62f3e9f1a",
-      "faq": "fc86e6f3ef20"
+      "body": "654a65314771",
+      "faq": "187ef3bcdcb2"
     }
   },
   "chrome-finish-differences-2026": {
@@ -299,7 +299,7 @@
       "Sur 336 lignes de finition publiées, la même finition s'écrit de plusieurs façons. « Satin Nickel (SN) » apparaît 41 fois, et « Satin nickel » 38 fois de plus. « Polished Brass (PB) » apparaît 68 fois, « polished brass » 19 fois et « Polished brass (US3) » 16 fois. Le chrome apparaît sous la forme « Chrome Plated (CP) » 51 fois, « Satin Chrome (SC) » 18 fois et « chrome » seul 17 fois.",
       "| Écrit sous la forme | Lignes |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| « chrome », sans code | 17 |\n| Satin Nickel (SN) | 41 |\n| « Satin nickel », sans code | 38 |",
       "Ce ne sont pas des finitions différentes. C'est une seule finition écrite de façon incohérente, et les lignes sans code sont celles à partir desquelles un acheteur ne peut pas recommander : c'est l'argument de toute cette page, retourné contre nous.",
-      "Ces lignes sont en cours de normalisation d'après la table de codes de notre page sur les codes de finition, plutôt que laissées à se ranger toutes seules. D'ici là, prenez le code quand une ligne en porte un, et demandez-le quand elle n'en porte pas.",
+      "Prenez le code quand une ligne en porte un, et demandez-le quand elle n'en porte pas.",
       "Là où nos lignes portent bien le code, citez-le tel qu'il est écrit : l'ensemble à poignée 70722 DC est publié en nickel satiné (US15), et le cylindre européen 65SN compte le chromé (CP) et le chrome satiné (SC) parmi ses finitions.",
       "## Prescrire un chrome pour obtenir deux fois la même chose",
       "Donnez le code, pas le nom. US26D ou 626, pas « chrome satiné ».",
@@ -331,7 +331,7 @@
       },
       {
         "question": "Vos pages produits donnent-elles les codes de finition ?",
-        "answer": "De façon incohérente, et cette page est le bon endroit pour le dire. Sur 336 lignes de finition, la même finition s'écrit de plusieurs façons : « Satin Nickel (SN) » 41 fois et « Satin nickel » 38 fois de plus, le chrome sous la forme « Chrome Plated (CP) », « Satin Chrome (SC) » et « chrome » seul. Les lignes sans code sont celles à partir desquelles on ne peut pas recommander. Elles sont en cours de normalisation d'après notre table de codes de finition."
+        "answer": "De façon incohérente, et cette page est le bon endroit pour le dire. Sur 336 lignes de finition, la même finition s'écrit de plusieurs façons : « Satin Nickel (SN) » 41 fois et « Satin nickel » 38 fois de plus, le chrome sous la forme « Chrome Plated (CP) », « Satin Chrome (SC) » et « chrome » seul. Les lignes sans code sont celles à partir desquelles on ne peut pas recommander."
       }
     ],
     "sourceHash": {
@@ -339,8 +339,8 @@
       "summary": "6619ce04a91d",
       "seoTitle": "b665add1ab44",
       "seoDescription": "c9aca5929017",
-      "body": "013c8ffc451a",
-      "faq": "1fdc19bda3a8"
+      "body": "480c8ee253cd",
+      "faq": "1c0b0c9b25f8"
     }
   },
   "commercial-lock-function-decision-2026": {
@@ -753,7 +753,7 @@
       "## Serrures tubulaires, par série",
       "Les 26 fiches tubulaires partagent les mêmes lignes de base : axe réglable 60/70mm, porte de 35 à 45mm, 200 000 cycles, châssis et boîtier de pêne en acier massif zingué, et gâche à lèvre courbe de 57mm en standard, lèvre de 70mm sur demande. Les séries diffèrent par la finition et la fonction ; la 26e fiche, intitulée Serrure tubulaire à bouton, partage les lignes de base mais ne publie ni fonction ni finition.",
       "| Série | Variantes | Fonctions | Finitions publiées |\n| --- | --- | --- | --- |\n| 575 | 4 | entrée | laiton vieilli, cuivre vieilli, acier inoxydable satiné ; la ligne 575 CPET cite toute la gamme |\n| 592 | 5 | entrée, condamnation, passage | laiton satiné, laiton poli, acier inoxydable satiné |\n| 595 | 2 | entrée, condamnation | cuivre vieilli |\n| 598 | 5 | entrée, condamnation | cuivre vieilli, nickel satiné, acier inoxydable satiné |\n| 607 | 7 | entrée, condamnation, passage | cuivre vieilli, laiton poli, acier inoxydable poli et satiné |\n| 609 | 2 | entrée | laiton poli, acier inoxydable satiné |",
-      "La 575 est la série qui publie son pêne en entier : une course de 12mm, avec condamnation du pêne sur les fonctions à clé. La 607 offre l'éventail le plus large, avec les trois fonctions et la finition inox poli (US32) qu'aucune autre série tubulaire ne cite. Sept fiches 607 portent une ligne pêne qui répète l'axe (Réglable de 60 à 70mm) au lieu de décrire le pêne ; nous la corrigeons, et d'ici là, retenez les chiffres de la 575 comme ceux que nous pouvons confirmer pour le pêne.",
+      "La 575 est la série qui publie son pêne en entier : une course de 12mm, avec condamnation du pêne sur les fonctions à clé. La 607 offre l'éventail le plus large, avec les trois fonctions et la finition inox poli (US32) qu'aucune autre série tubulaire ne cite. Sept fiches 607 portent une ligne pêne qui répète l'axe (Réglable de 60 à 70mm) au lieu de décrire le pêne ; retenez les chiffres de la 575 comme ceux que nous pouvons confirmer pour le pêne.",
       "## Serrures cylindriques, usage léger et intensif",
       "Les serrures cylindriques usage léger sont les séries 578 (quatre variantes) et 587 (sept). Elles publient le cylindre en détail (5 goupilles avec rotor en laiton et deux clés en laiton nickelé sur la 578 ; laiton massif, ou zinc et laiton, sur la 587) et indiquent qu'elles peuvent s'entrouvrir avec nos verrous à pêne dormant ou être intégrées à un organigramme. Elles ne publient ni axe ni épaisseur de porte. Demandez les deux avant de commander : ce sont les deux lignes qui décident si la serrure convient seulement à la porte.",
       "C'est dans la famille usage intensif que les lacunes sont les plus grandes. Sur ses 17 fiches, 6 publient des lignes de caractéristiques : la 5831 SSET, les 5870 ACET et 5870 SSET, la 5871 SSET, la 5874 ACET et la fiche intitulée Serrure cylindrique à bouton. Les 11 autres (les quatre variantes de couleur 5831 90mm, les quatre variantes 9210, la 5870 SNET, la S578 et la 587 SSPT) ont une photo, et rien d'autre. Les quatre variantes 5831 90mm partagent vraisemblablement l'axe de 90mm de la 5831 SSET, comme leur nom le suggère, mais un nom n'est pas une caractéristique ; nous les confirmerons sur plan à la demande.",
@@ -799,7 +799,7 @@
       "summary": "a1495f21fa4b",
       "seoTitle": "532b656512d1",
       "seoDescription": "01e047ebdecd",
-      "body": "fa881171daef",
+      "body": "ef05ec626d4b",
       "faq": "0fefb97329cc"
     }
   },
@@ -1325,7 +1325,7 @@
       "Si le vantail de service donne seul la largeur de passage exigée, le vantail semi-fixe peut être immobilisé par des verrous, et la double porte a aussi besoin d'un sélecteur de fermeture pour que les vantaux se ferment dans le bon ordre. Notre page sur les fermetures anti-panique explique pourquoi, en quincaillerie, une double porte coûte plus du double d'une porte simple.",
       "## Ce que nous détenons, et ce que nous ne détenons pas",
       "Notre catalogue compte 46 produits désignés comme quincaillerie anti-panique ou d'issue de secours : 30 dispositifs, 15 garnitures extérieures et un coffre de serrure.",
-      "Nos fermetures anti-panique 307 et 311 sont en cours d'essai : tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent EN 1125, EN 179, un classement coupe-feu, un grade ANSI ou une homologation UL, ni dans une description, ni dans une comparaison, ni en plaçant le numéro d'une norme à côté d'un produit qui n'a pas été essayé selon elle.",
+      "Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat : tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent EN 1125, EN 179, un classement coupe-feu, un grade ANSI ou une homologation UL, ni dans une description, ni dans une comparaison, ni en plaçant le numéro d'une norme à côté d'un produit qui n'a pas été essayé selon elle.",
       "C'est un vrai coût commercial, plus dans cette catégorie que dans toute autre, car la quincaillerie d'évacuation s'achète sur certification. Nous préférons le supporter plutôt que d'écrire une classification pour laquelle nous ne pouvons pas produire de numéro de certificat, et notre page sur la validation des certificats explique précisément comment un acheteur doit vérifier la déclaration de quiconque, y compris la nôtre.",
       "Si un projet exige aujourd'hui une certification EN 1125 ou EN 179, demandez-nous et nous vous dirons franchement si nous pouvons y répondre. Sur plusieurs modèles, la réponse est actuellement non, et cette réponse vous est plus utile qu'un devis."
     ],
@@ -1352,7 +1352,7 @@
       },
       {
         "question": "Vos fermetures anti-panique détiennent-elles EN 1125 ou EN 179 ?",
-        "answer": "Nos 307 et 311 sont en cours d'essai. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent EN 1125, EN 179, un classement coupe-feu, un grade ANSI ou une homologation UL. Sur un projet qui exige une certification aujourd'hui, demandez-nous et nous dirons franchement si nous pouvons y répondre ; sur plusieurs modèles, la réponse est actuellement non."
+        "answer": "Nos 307 et 311 ne détiennent aujourd'hui aucun certificat. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent EN 1125, EN 179, un classement coupe-feu, un grade ANSI ou une homologation UL. Sur un projet qui exige une certification aujourd'hui, demandez-nous et nous dirons franchement si nous pouvons y répondre ; sur plusieurs modèles, la réponse est actuellement non."
       }
     ],
     "sourceHash": {
@@ -1360,8 +1360,8 @@
       "summary": "33a2e0481503",
       "seoTitle": "8c8fd4020bcb",
       "seoDescription": "bada04362fef",
-      "body": "333d1a4d9a9c",
-      "faq": "a828c5bf11fe"
+      "body": "6c01e210fc50",
+      "faq": "2550eed57126"
     }
   },
   "en-ansi-bhma-cross-reference-2026": {
@@ -1391,7 +1391,7 @@
       "Troisièmement, la pression d'essai au feu diffère. Le plan de pression neutre utilisé dans les essais au four européen et nord-américain n'est pas le même : un résultat EN 1634-1 ne peut donc pas être transposé à UL 10C ou NFPA 252, même pour un ensemble identique. C'est le fond technique de la raison pour laquelle un certificat européen de porte coupe-feu ne satisfait pas une autorité compétente nord-américaine.",
       "Quatrièmement, les codes de finition sont un système de dénomination, pas un grade de performance. US26D, BHMA 626 et un code d'usine comme SN peuvent tous décrire la même finition satinée, et aucun n'indique de performance à la corrosion. C'est le rôle d'EN 1670, et un code de finition n'emporte avec lui aucune classe EN 1670.",
       "## Ce que nous détenons, dit clairement",
-      "Des rapports d'essai EN 1125 existent pour certains modèles de notre gamme de fermetures anti-panique, pour une bonne part au nom de nos clients ; des essais CE et ANSI en notre propre nom sont en préparation. Nous ne détenons aujourd'hui ni grade ANSI/BHMA ni homologation UL sur cette gamme. Deux modèles, 307 et 311, sont en cours d'essai pour une certification nord-américaine, et aucun numéro de certificat n'existe encore.",
+      "Des rapports d'essai EN 1125 existent pour certains modèles de notre gamme de fermetures anti-panique. Nous ne détenons aujourd'hui ni grade ANSI/BHMA ni homologation UL sur cette gamme.",
       "Cette phrase est écrite ainsi parce que UL Product iQ et l'annuaire des produits certifiés BHMA sont tous deux consultables publiquement, et qu'un prescripteur inscrit les numéros de certificat dans les dossiers de soumission. Une déclaration qui ne résiste pas à une recherche coûte plus cher que la commande qu'elle devait remporter.",
       "Si un projet exige aujourd'hui un grade ANSI/BHMA ou une homologation UL, la réponse honnête est qu'un rapport d'essai EN 1125 ne s'y substitue pas, et nous préférons le dire maintenant plutôt qu'après l'expédition d'un conteneur.",
       "## Comment rédiger une prescription valable sur les deux marchés",
@@ -1421,7 +1421,7 @@
       },
       {
         "question": "Canton Hyland détient-il une certification ANSI ou UL ?",
-        "answer": "Pas aujourd'hui sur la gamme de fermetures anti-panique. Des rapports d'essai EN 1125 existent pour certains modèles, pour une bonne part au nom de nos clients, et des essais CE et ANSI en notre propre nom sont en préparation. Les modèles 307 et 311 sont en cours d'essai pour une certification nord-américaine, et aucun numéro de certificat n'existe encore. UL Product iQ et l'annuaire BHMA sont consultables publiquement ; c'est pourquoi nous le disons clairement au lieu de le laisser entendre."
+        "answer": "Pas aujourd'hui sur la gamme de fermetures anti-panique. Des rapports d'essai EN 1125 existent pour certains modèles. UL Product iQ et l'annuaire BHMA sont consultables publiquement ; c'est pourquoi nous le disons clairement au lieu de le laisser entendre."
       }
     ],
     "sourceHash": {
@@ -1429,8 +1429,8 @@
       "summary": "036dd1b2d40c",
       "seoTitle": "be50fdd1bf25",
       "seoDescription": "ff3b59babad8",
-      "body": "5aafe49e187e",
-      "faq": "84c409c9a4d8"
+      "body": "db48756f798b",
+      "faq": "cacd264a54ab"
     }
   },
   "euro-cylinder-size-chart-2026": {
@@ -1531,7 +1531,7 @@
       "## Fiches qui ne publient pas assez pour être comparées",
       "Neuf dispositifs ont une photo et une page mais trop peu de lignes pour figurer dans un tableau : les 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S et SH01. Certains publient un matériau et rien d'autre ; pour le 312 et le SH01, le matériau est la seule ligne. Le 316-S partage ses lignes de construction avec le 316-D (montage en applique, réversible), mais pas sa longueur. Si l'un d'eux est le dispositif qu'il vous faut, indiquez-nous le vantail et nous confirmerons les lignes avant de chiffrer.",
       "## Résistance au feu sur ces pages",
-      "Aucune de ces fiches n'indique de durée de résistance au feu. Trois en indiquaient une (1,5 heure sur le 300 et le 310, 2,5 heures sur le 307) ; nous avons retiré ces chiffres en octobre 2026. Une durée de résistance au feu n'a de sens que comme classement d'un bloc-porte essayé, identifié dans un rapport ou une homologation, et aucune de ces trois fiches n'en publie. Nous ne détenons pas d'homologation UL ; les 307 et 311 ont été soumis aux essais, et tant que les numéros de certificat n'existent pas, nous ne laisserons entendre ni homologation ni classement pour eux. Notre article sur UL 305 explique ce qu'est une homologation et comment la vérifier.",
+      "Aucune de ces fiches n'indique de durée de résistance au feu. Une durée de résistance au feu n'a de sens que comme classement d'un bloc-porte essayé, identifié dans un rapport ou une homologation, et aucune de ces fiches n'en publie. Nous ne détenons pas d'homologation UL ; les 307 et 311 ne détiennent aujourd'hui aucun certificat, et tant que les numéros de certificat n'existent pas, nous ne laisserons entendre ni homologation ni classement pour eux. Notre article sur UL 305 explique ce qu'est une homologation et comment la vérifier.",
       "## Choisir en quatre questions",
       "Un vantail ou deux ? Une double porte sans meneau central demande un verrouillage haut et bas et un sélecteur de fermeture, ce qui réduit le choix au deuxième tableau. Quelle largeur de vantail ? Elle fixe la longueur, et détermine si un dispositif réglable ou fabriqué à longueur est la réponse économique. L'extérieur demande-t-il une clé ou une béquille ? Choisissez alors un dispositif compatible avec la garniture nécessaire, ou un ensemble comme le 311 qui l'inclut. Et la porte donne-t-elle sur autre chose qu'un couloir ordinaire : une chambre froide ou une issue sous alarme ? C'est alors par le tableau des usages particuliers qu'il faut commencer.",
       "Envoyez ces quatre réponses avec la dimension du vantail et l'épaisseur de la porte, et la première réponse pourra nommer un dispositif et une garniture. Envoyez la photo d'une barre rouge, et la première réponse sera ces quatre questions."
@@ -1555,7 +1555,7 @@
       },
       {
         "question": "Les résistances au feu indiquées sur vos pages de fermetures anti-panique sont-elles certifiées ?",
-        "answer": "Non. Les fiches des 300 et 310 indiquent 1,5 heure et celle du 307 indique 2,5 heures, mais une durée de résistance au feu n'a de sens que comme classement d'un bloc-porte essayé nommé dans un rapport ou une homologation, et aucune n'en publie. Nous ne détenons pas d'homologation UL ; les 307 et 311 ont été soumis aux essais, et nous ne laisserons entendre aucun classement tant que les numéros de certificat n'existent pas."
+        "answer": "Non. Aucune de ces fiches n'indique de durée coupe-feu : une durée coupe-feu n'a de sens que comme classement d'un ensemble de porte testé, identifié dans un rapport ou une homologation. Nous ne détenons pas d'homologation UL, et nous ne laisserons entendre aucun classement tant que les numéros de certificat n'existent pas."
       },
       {
         "question": "Pourquoi certaines de vos fermetures anti-panique n'affichent-elles presque aucune caractéristique ?",
@@ -1567,8 +1567,8 @@
       "summary": "ec12a7dec293",
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
-      "body": "5cadd9a03a41",
-      "faq": "5dd27b52fa34"
+      "body": "32798ab2f09c",
+      "faq": "147c77b5742a"
     }
   },
   "exit-device-outside-trim-functions-2026": {
@@ -1621,7 +1621,7 @@
       "Le modèle de garniture et sa fonction, nommée.",
       "Le maintien en position ouverte : aucun, mécanique ou par cylindre ; et si la porte est coupe-feu, aucun, avec la résistance au feu indiquée pour que le dispositif choisi soit sans cette fonction.",
       "La largeur et la main de la porte, car la longueur de la barre suit la porte et la garniture a souvent une main.",
-      "Nos fermetures anti-panique 307 et 311 sont en cours d'essai. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement coupe-feu, un grade ANSI ou une homologation UL ; c'est aussi pourquoi cette page traite de la règle coupe-feu du maintien en position ouverte en termes généraux plutôt qu'en désignant un produit."
+      "Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement coupe-feu, un grade ANSI ou une homologation UL ; c'est aussi pourquoi cette page traite de la règle coupe-feu du maintien en position ouverte en termes généraux plutôt qu'en désignant un produit."
     ],
     "faq": [
       {
@@ -1654,7 +1654,7 @@
       "summary": "60fee76e98a5",
       "seoTitle": "436da21c0bc4",
       "seoDescription": "a6d9f0d49bd2",
-      "body": "84b30a6ab3e4",
+      "body": "9a791a70c527",
       "faq": "7dac59076eed"
     }
   },
@@ -1725,7 +1725,7 @@
   },
   "fire-door-hardware-what-must-be-rated-2026": {
     "title": "Quincaillerie de porte coupe-feu 2026 : quels composants doivent être classés, EN 1634-1 face à UL 10C et NFPA 252, et ce que couvre un certificat",
-    "summary": "Tout ce qui est fixé sur une porte coupe-feu ou découpé dans celle-ci doit faire partie de l'ensemble testé : les paumelles, la serrure ou le pêne, le ferme-porte, les joints intumescents et de fumée, les dispositifs anti-panique, le vitrage et ses parcloses, les verrous et sélecteurs sur les portes doubles, et les fixations. Un certificat ne couvre que la configuration et le domaine d'application testés, et une classification EN 1634-1 n'est pas un listage UL 10C. Nos fermetures anti-panique 307 et 311 sont en cours d'essai ; tant qu'il n'existe pas de numéros de certificat, nous ne leur attribuons aucune classification au feu.",
+    "summary": "Tout ce qui est fixé sur une porte coupe-feu ou découpé dans celle-ci doit faire partie de l'ensemble testé : les paumelles, la serrure ou le pêne, le ferme-porte, les joints intumescents et de fumée, les dispositifs anti-panique, le vitrage et ses parcloses, les verrous et sélecteurs sur les portes doubles, et les fixations. Un certificat ne couvre que la configuration et le domaine d'application testés, et une classification EN 1634-1 n'est pas un listage UL 10C. Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat ; tant qu'il n'existe pas de numéros de certificat, nous ne leur attribuons aucune classification au feu.",
     "seoTitle": "Quincaillerie coupe-feu 2026 : EN 1634-1, UL 10C",
     "seoDescription": "Quincaillerie coupe-feu à classer : paumelles, serrure, ferme-porte, joints, anti-panique, fixations, dans l'ensemble testé. EN 1634-1 ou UL 10C, EI ou E.",
     "body": [
@@ -1758,7 +1758,7 @@
       "## Ce que nous proposons, dit clairement",
       "C'est ici que la page d'un fournisseur devient d'ordinaire floue ; nous serons donc précis.",
       "Lorsqu'un de nos produits a été essayé dans un ensemble classé au feu et qu'un certificat existe, la fiche produit indique la norme, la classification et le domaine d'application, et le certificat est disponible sur demande.",
-      "Lorsqu'un produit n'a pas été essayé, la fiche ne dit rien de sa performance au feu, et ce silence est délibéré. Nos fermetures anti-panique 307 et 311 sont en cours d'essai. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement au feu, un grade ANSI ou une homologation UL, ni dans une description, ni dans une comparaison, ni en plaçant le numéro d'une norme à côté d'un produit qui n'a pas été essayé selon elle.",
+      "Lorsqu'un produit n'a pas été essayé, la fiche ne dit rien de sa performance au feu, et ce silence est délibéré. Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement au feu, un grade ANSI ou une homologation UL, ni dans une description, ni dans une comparaison, ni en plaçant le numéro d'une norme à côté d'un produit qui n'a pas été essayé selon elle.",
       "Nous ne reproduisons pas non plus le certificat, l'homologation ou le grade d'un autre fabricant pour décrire notre propre produit. Un certificat appartient à l'ensemble pour lequel il a été délivré, et en emprunter un relève de la même erreur qu'inventer une cote.",
       "## Les cinq questions à poser à tout fournisseur",
       "Quelle norme, et quelle classification : EI ou E, et combien de minutes ; ou UL 10C, et quel numéro d'homologation.",
@@ -1790,7 +1790,7 @@
       },
       {
         "question": "Vos fermetures anti-panique ont-elles un classement au feu ?",
-        "answer": "Nos fermetures anti-panique 307 et 311 sont en cours d'essai. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement au feu, un grade ANSI ou une homologation UL. Lorsqu'un produit a été essayé, la fiche indique la norme, la classification et le domaine d'application, et le certificat est disponible sur demande."
+        "answer": "Nos fermetures anti-panique 307 et 311 ne détiennent aujourd'hui aucun certificat. Tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement au feu, un grade ANSI ou une homologation UL. Lorsqu'un produit a été essayé, la fiche indique la norme, la classification et le domaine d'application, et le certificat est disponible sur demande."
       }
     ],
     "sourceHash": {
@@ -1798,8 +1798,8 @@
       "summary": "0d5137abc4eb",
       "seoTitle": "75373f19512f",
       "seoDescription": "17d1d81eb4c7",
-      "body": "576f9a48e143",
-      "faq": "08c49558371c"
+      "body": "81815c180c5b",
+      "faq": "b0b02e48f87a"
     }
   },
   "glass-door-thickness-and-cutouts-2026": {
@@ -2681,7 +2681,7 @@
   },
   "qualifying-a-hardware-supplier-2026": {
     "title": "Qualifier un fournisseur de quincaillerie 2026 : usine, négociant ou courtier, les cinq questions qui les distinguent, et ce qu'il faut vérifier",
-    "summary": "5 questions distinguent une usine d'une société de négoce ou d'un courtier : quels modèles fabriquez-vous vous-mêmes ; pouvez-vous changer l'axe de ce modèle, et combien coûterait l'outillage ; qui fait votre traitement de surface ; quel est le minimum dans une finition, et pourquoi ; et pouvons-nous avoir le plan coté. Une usine répond à chacune tout de suite ou avec une raison. Cette page liste aussi ce qui peut être vérifié de façon indépendante, ce que doit être une première commande, et nous applique tout le test.",
+    "summary": "5 questions distinguent une usine d'une société de négoce ou d'un courtier : quels modèles fabriquez-vous vous-mêmes ; pouvez-vous changer l'axe de ce modèle, et combien coûterait l'outillage ; qui fait votre traitement de surface ; quel est le minimum dans une finition, et pourquoi ; et pouvons-nous avoir le plan coté. Une usine répond à chacune tout de suite ou avec une raison. Cette page liste aussi ce qui peut être vérifié de façon indépendante et ce que doit être une première commande.",
     "seoTitle": "Qualifier un fournisseur 2026 : usine ou négociant",
     "seoDescription": "Usine, négociant ou courtier ? Cinq questions pour qualifier un fournisseur, quoi vérifier soi-même, pourquoi une petite commande plutôt qu'un échantillon.",
     "body": [
@@ -2695,7 +2695,7 @@
       "« Lesquels de ces modèles fabriquez-vous vous-mêmes, et lesquels achetez-vous ? » Presque toute véritable usine achète certaines choses : cylindres, ressorts, emballages, parfois des catégories entières. Une usine répond facilement et précisément. Une société de négoce répond de façon générale, car la réponse honnête est « tous ».",
       "« Pouvez-vous modifier l'axe de ce modèle, et quel serait le coût d'outillage ? » Une usine répond par un chiffre ou une raison. Tous les autres répondent par un délai, car ils doivent demander.",
       "« Qui réalise vos revêtements galvaniques, et est-ce en interne ? » La galvanoplastie est souvent sous-traitée, même par de vraies usines, et le dire est normal. Ce qui est instructif, c'est de savoir si elles connaissent la réponse immédiatement.",
-      "« Quel est le minimum sur ce modèle dans une finition, et pourquoi ce chiffre ? » Notre page sur la MOQ explique les quatre éléments qui fixent un minimum. La réponse d'une usine renvoie à au moins l'un d'eux : un lot de finition, un amortissement d'outillage, un tirage d'impression. Une réponse relayée n'est qu'un chiffre.",
+      "« Quel est le minimum sur ce modèle dans une finition, et pourquoi ce chiffre ? » La réponse d'une usine donne une raison : un lot de finition, un amortissement d'outillage, un tirage d'impression. Une réponse relayée n'est qu'un chiffre.",
       "« Pouvons-nous avoir le plan coté de ce modèle ? » La question la plus utile de la liste. Une usine l'a, ou sait qu'il n'existe pas pour ce modèle. Un négociant a ce que l'usine lui a envoyé, souvent une page de catalogue.",
       "Personne n'a besoin d'être pris en défaut par ces questions. Une société de négoce qui répond « nous ne fabriquons pas ces produits, nous travaillons avec trois usines du Guangdong, voici celle qui fabrique celui-ci » a donné une meilleure réponse qu'une usine évasive, et c'est désormais un fournisseur avec lequel vous pouvez travailler en connaissance de cause.",
       "## Ce qui peut être vérifié de façon indépendante",
@@ -2724,16 +2724,9 @@
       "## Quatre réponses qui semblent mauvaises et ne le sont pas, et une qui semble bonne et ne l'est pas",
       "« Nous sous-traitons nos revêtements galvaniques. » Normal, y compris dans de grandes usines compétentes. La galvanoplastie est un procédé spécialisé et très réglementé, et la sous-traiter est souvent le choix de la qualité. Ce qui compte, c'est qu'elles nomment le sous-traitant et connaissent son procédé.",
       "« Nous n'avons pas de certificat pour ce modèle. » Normal aussi. Les essais coûtent cher par modèle, et la plupart des catalogues ne sont que partiellement essayés. Un fournisseur qui dit quels modèles sont essayés et lesquels ne le sont pas est plus fiable qu'un fournisseur dont toute la gamme est présentée comme certifiée.",
-      "« Notre minimum sur ce produit est élevé. » Un minimum fondé sur une raison montre que quelqu'un a chiffré le travail. Notre page sur la MOQ expose les quatre éléments qui le fixent.",
+      "« Notre minimum sur ce produit est élevé. » Un minimum fondé sur une raison montre que quelqu'un a chiffré le travail.",
       "« Nous ne pouvons pas faire cela. » La réponse la plus sous-estimée de la liste. Un fournisseur qui refuse une modification qu'il ne peut pas bien exécuter vient de vous épargner un projet, et vous a montré que ses refus ont un sens.",
-      "Et celle qui semble bonne : oui à tout, immédiatement. N'importe quelle cote, n'importe quelle finition, n'importe quelle quantité, n'importe quel délai, sans aucune question en retour. Un fournisseur réellement capable de tout cela aurait posé au moins une question de clarification sur votre porte. Un accord sans questions n'est pas une capacité ; c'est un devis rédigé avant que quiconque ait lu la demande.",
-      "## L'appliquer à nous-mêmes",
-      "Il serait incohérent de publier cette page sans y répondre.",
-      "Nous sommes une usine, et comme toute véritable usine, nous achetons certains composants au lieu de tout fabriquer. Demandez lesquels, modèle par modèle, et la réponse vous reviendra précise.",
-      "Nous ne détenons pas de certificats d'essai pour tout le catalogue. Nos fermetures anti-panique 307 et 311 sont en cours d'essai, et tant que les numéros de certificat n'existent pas, rien de ce que nous publions ne laissera entendre qu'elles détiennent un classement au feu, un grade ANSI ou une homologation UL. Notre page sur les certificats explique comment vérifier cette déclaration, y compris la nôtre.",
-      "Nous ne publions pas de plan pour la plupart des modèles. Les 613 fiches HYDE comptent 84 fichiers SVG cotés, dont 72 sur les 546 fiches produit visibles, et 0 SVG HYDE de préparation de porte. Notre page sur les plans donne ces décomptes séparés, car la cinquième question ci-dessus est celle à laquelle nous répondrions sinon de façon trop vague.",
-      "Plusieurs lacunes de spécification sont ouvertes et publiées : la nuance d'inox sur 224 lignes, la nuance de zamak sur 156, l'alliage de laiton et le statut DZR sur 57, la répartition des cylindres sur 45. Chacune a sa propre page, avec le décompte.",
-      "C'est une réponse moins flatteuse que celle de la plupart des fournisseurs, et c'est celle qui résiste aux cinq questions. Un fournisseur dont le catalogue n'a aucune lacune a soit tout mesuré, soit écrit ce que les lacunes devraient dire, et le second cas est bien plus fréquent que le premier."
+      "Et celle qui semble bonne : oui à tout, immédiatement. N'importe quelle cote, n'importe quelle finition, n'importe quelle quantité, n'importe quel délai, sans aucune question en retour. Un fournisseur réellement capable de tout cela aurait posé au moins une question de clarification sur votre porte. Un accord sans questions n'est pas une capacité ; c'est un devis rédigé avant que quiconque ait lu la demande."
     ],
     "faq": [
       {
@@ -2755,10 +2748,6 @@
       {
         "question": "Un échantillon suffit-il avant une grosse commande ?",
         "answer": "Non. Un échantillon, puis une petite commande, puis le projet, et la petite commande compte davantage, car un échantillon est fait par la meilleure personne disponible et une petite commande est faite comme se font les commandes. Elle vous dit si le colisage correspond à la liste de colisage, si le délai était réel, et si les pièces du milieu du carton correspondent à celles du dessus."
-      },
-      {
-        "question": "Comment Canton Hyland répond-il à ses propres cinq questions ?",
-        "answer": "Nous sommes une usine et, comme toute véritable usine, nous achetons certains composants. Nous ne détenons pas de certificats d'essai pour tout ; les 307 et 311 sont en cours d'essai. Sur 613 fiches HYDE, il existe 84 fichiers SVG cotés, dont 72 sur des fiches visibles, et 0 SVG HYDE de préparation de porte. Plusieurs lacunes de spécification sont décomptées sur leurs propres pages."
       }
     ],
     "sourceHash": {
@@ -2807,14 +2796,7 @@
       "Citez la référence de l'échantillon de référence. Indiquez les mesures à prendre et la tolérance de chacune : c'est la tolérance qui transforme une mesure en décision. Indiquez le plan d'échantillonnage : combien de cartons ouverts, combien de pièces mesurées, et ce qui constitue un rejet.",
       "Indiquez ce qui est vérifié en fonctionnement, et combien de fois. « Actionner la serrure » n'est pas une instruction ; « actionner la serrure dix fois et vérifier à chaque fois que le pêne se rétracte complètement et que la béquille revient à l'horizontale » en est une.",
       "Indiquez les contrôles d'emballage : marquage des cartons, quantité par carton, calage intérieur, et correspondance des dimensions des cartons avec la liste de colisage, car un carton qui n'a pas la taille indiquée sur la liste de colisage ne se chargera pas comme l'expédition a été prévue.",
-      "Et indiquez ce qui se passe en cas de rejet (bloquer l'expédition, recontrôler après reprise, ou accepter avec dérogation), car un inspecteur qui trouve un problème sans instruction ne fera rien, ce qui est la pire des trois issues.",
-      "## Quand prendre l'échantillon",
-      "Tant que la spécification est encore ouverte. C'est le point de calendrier qui influe le plus sur le résultat, et celui qu'on rate le plus souvent.",
-      "Un échantillon pris après le versement de l'acompte et la planification de la série n'a que deux issues possibles : le soulagement ou la dispute. Un échantillon pris tant que la spécification peut encore être modifiée est une conversation, et un malentendu découvert à ce stade coûte un courriel.",
-      "Comme l'explique notre page sur les délais, le compteur de production démarre à la confirmation de commande : échantillonner tôt ne retarde donc pas la commande. Cela déplace le travail vers la période qui, de toute façon, dépend de vous.",
-      "## Ce que nous faisons",
-      "Nous préparons les échantillons selon une spécification écrite, et nous indiquons sur la fiche d'échantillon selon quelle spécification il a été fabriqué, pour qu'une approbation porte sur quelque chose d'identifiable et non sur un objet dans une boîte.",
-      "Lorsqu'un échantillon diffère du catalogue en quoi que ce soit, nous le disons par écrit avec l'échantillon, au lieu de laisser la différence être découverte. Un fournisseur qui envoie un échantillon discrètement meilleur que la production prévue n'a pas gagné une approbation ; il a fixé une norme qu'il ne tiendra pas, ce qui est pire pour les deux parties qu'un échantillon honnête et une courte conversation."
+      "Et indiquez ce qui se passe en cas de rejet (bloquer l'expédition, recontrôler après reprise, ou accepter avec dérogation), car un inspecteur qui trouve un problème sans instruction ne fera rien, ce qui est la pire des trois issues."
     ],
     "faq": [
       {
@@ -2824,10 +2806,6 @@
       {
         "question": "Quel type d'échantillon demander ?",
         "answer": "Un échantillon de stock si vous évaluez un fournisseur. Un échantillon de présérie si quoi que ce soit diffère du catalogue (une finition, un axe, une longueur de carré, une boîte imprimée), car il prouve que la spécification a été comprise. Un échantillon de production prélevé sur la série réelle est celui par rapport auquel se fait le contrôle."
-      },
-      {
-        "question": "Quand prendre un échantillon ?",
-        "answer": "Tant que la spécification est encore ouverte, avant l'acompte. Un échantillon pris après la planification de la série n'a que deux issues possibles : le soulagement ou la dispute. Pris plus tôt, c'est une conversation, et un malentendu découvert à ce stade coûte un courriel. Le compteur de production démarre de toute façon à la confirmation de commande : échantillonner tôt ne retarde rien."
       },
       {
         "question": "Que ne peut pas me dire un échantillon ?",
@@ -2847,8 +2825,8 @@
       "summary": "3caddd1d93da",
       "seoTitle": "cdcd2908faf9",
       "seoDescription": "e57b01aa0552",
-      "body": "6533dc06e389",
-      "faq": "b349c914d5b4"
+      "body": "a1b0ae255310",
+      "faq": "a84677dc3ff6"
     }
   },
   "specification-section-08-71-00-2026": {
@@ -3061,7 +3039,7 @@
       "| Ce que dit la ligne matériau | Produits |\n| --- | --- |\n| « Acier inoxydable », sans nuance | 224 |\n| Une paire ou une plage, p. ex. « 304/201 », « 304/316L » | 73 |\n| Une seule nuance nommée | 16 |\n| Total mentionnant l'inox | 313 |",
       "Soixante-douze pour cent de nos produits en inox ne nomment aucune nuance, et 73 autres en nomment deux. Seize sur 313 répondent à la question que cette page dit qu'un acheteur doit poser.",
       "Ce n'est pas un bon chiffre, et le publier est délibéré. Un acheteur qui le lit sait exactement quoi faire (demander la nuance, par écrit, à chaque commande), alors qu'un acheteur qui aurait cru que le catalogue y répondait n'aurait pas demandé.",
-      "La raison est banale plutôt qu'inquiétante : la nuance est une donnée d'achat qui figure dans les registres matière de l'usine, et le catalogue a été construit à partir de descriptions de produits plutôt qu'à partir de ces registres. La lacune se comble par rapprochement, modèle par modèle, et non en inscrivant une nuance plausible dans 224 lignes.",
+      "Nous n'inscrirons pas une nuance plausible dans ces 224 lignes. Quand une ligne ne nomme pas la nuance, demandez-la à chaque commande.",
       "## Ce qu'il faut mettre sur votre commande",
       "Nommez la nuance, pas la famille : « 304 » plutôt qu'« inox ».",
       "Indiquez l'environnement s'il ne s'agit pas d'un intérieur ordinaire (bord de mer, piscine, industriel, bord de mer et abrité), car cela permet à un fournisseur de vous dire quand votre nuance est inadaptée au lieu de simplement la chiffrer.",
@@ -3091,7 +3069,7 @@
       },
       {
         "question": "Vos fiches produit indiquent-elles la nuance d'inox ?",
-        "answer": "La plupart non, et nous préférons le dire. Sur 313 produits mentionnant l'inox : 224 disent seulement « acier inoxydable », 73 nomment une paire comme 304/201, et 16 nomment une seule nuance. La lacune se comble en rapprochant, modèle par modèle, les registres matière de l'usine, et non en inscrivant une nuance plausible dans 224 lignes."
+        "answer": "La plupart non, et nous préférons le dire. Sur 313 produits mentionnant l'inox : 224 disent seulement « acier inoxydable », 73 nomment une paire comme 304/201, et 16 nomment une seule nuance. Nous n'inscrirons pas une nuance plausible dans ces 224 lignes ; demandez la nuance à chaque commande."
       }
     ],
     "sourceHash": {
@@ -3099,8 +3077,8 @@
       "summary": "50e13b3f4840",
       "seoTitle": "dd8266256598",
       "seoDescription": "80d997a17ec0",
-      "body": "c2186668496c",
-      "faq": "a0e9ae4e16e6"
+      "body": "fdbcbb13a841",
+      "faq": "55e38533abc3"
     }
   },
   "strike-plates-and-keeps-2026": {
@@ -3231,7 +3209,7 @@
       "Une demande qui aboutit indique donc le produit prescrit, le produit proposé, et une comparaison ligne par ligne des propriétés que la prescription encadre réellement (grade, cycles, aptitude au feu, classe de corrosion, code de finition, dimensions), avec la preuve d'essai derrière chacune. Là où une propriété est inférieure, dites-le, et dites pourquoi cela ne compte pas ici.",
       "Une demande qui cache une différence est refusée dès que le contrôleur la trouve, et chaque demande ultérieure du même fournisseur est lue à cette lumière. Les caractéristiques communes n'ont jamais été la question.",
       "## Où sont nos propres lacunes",
-      "Certains de nos produits sont en cours d'essai et ne détiennent pas encore de certificats. Dans ce cas, nous le disons sur la fiche produit au lieu de laisser entendre un classement, et une soumission qui exige un certificat que nous ne détenons pas est une soumission dont nous vous dirons que nous ne pouvons pas la compléter.",
+      "Certains de nos produits ne détiennent pas de certificats. Dans ce cas, nous le disons sur la fiche produit au lieu de laisser entendre un classement, et une soumission qui exige un certificat que nous ne détenons pas est une soumission dont nous vous dirons que nous ne pouvons pas la compléter.",
       "Cela fait perdre moins de demandes qu'il n'y paraît, et c'est la seule position compatible avec le reste de cette page. Un fournisseur qui écrira un « coupe-feu » non étayé dans une soumission écrira aussi une cote non étayée sur un plan, et le contrôleur le sait."
     ],
     "faq": [
@@ -3265,7 +3243,7 @@
       "summary": "5ca1d67af7fc",
       "seoTitle": "0a676aa65028",
       "seoDescription": "3f3192edc0f6",
-      "body": "4167d2695ee3",
+      "body": "ae4a4d789b28",
       "faq": "b8c3b65d86e4"
     }
   },
@@ -3489,7 +3467,7 @@
       "Décompte établi à partir des lignes matériau de chaque produit qui en comporte une.",
       "| Matériau | Lignes | Part |\n| --- | --- | --- |\n| Acier inoxydable | 262 | 46 % |\n| Alliage de zinc | 156 | 28 % |\n| Laiton | 57 | 10 % |\n| Fer | 39 | 7 % |\n| Aluminium | 26 | 5 % |\n| Autre ou mixte | 24 | 4 % |",
       "Vingt-huit pour cent d'alliage de zinc est une proportion normale pour une gamme de quincaillerie qui comprend beaucoup de béquilles et de rosaces revêtues. Ce n'est pas un chiffre à cacher, et le publier est plus utile que l'alternative habituelle consistant à tout décrire comme un « alliage de haute qualité ».",
-      "Ce que nos lignes n'indiquent pas actuellement, c'est la nuance de zamak. « Zinc Alloy » apparaît 70 fois et « Zinc alloy » 62 fois de plus ; aucune ne nomme le Zamak 3 ou le Zamak 5. C'est la même lacune que notre page sur l'inox signale pour le 201 face au 304, avec la même réponse honnête : demandez à chaque commande ; la lacune se comble par rapprochement avec les registres de l'usine, et non en inscrivant une nuance plausible dans 156 lignes.",
+      "Ce que nos lignes n'indiquent pas actuellement, c'est la nuance de zamak. « Zinc Alloy » apparaît 70 fois et « Zinc alloy » 62 fois de plus ; aucune ne nomme le Zamak 3 ou le Zamak 5. C'est la même lacune que notre page sur l'inox signale pour le 201 face au 304, avec la même réponse honnête : demandez à chaque commande. Nous n'inscrirons pas une nuance plausible dans 156 lignes.",
       "## Quoi demander, pour que la réponse ait un sens",
       "Quelle nuance de zamak, et si les pièces internes sollicitées sont en zinc ou en acier. Sur une serrure, la réponse est souvent « le coffre est en zinc, les pièces de travail en acier », ce qui est une bonne réponse, mais elle doit être donnée et non supposée.",
       "L'épaisseur des sections aux points de charge : un plan y répond ; une description, non.",
@@ -3528,7 +3506,7 @@
       "summary": "1edee3ddd5c4",
       "seoTitle": "61fa12ef5973",
       "seoDescription": "53af48b17bdf",
-      "body": "83d2ba973cd2",
+      "body": "e9c5b457f02b",
       "faq": "8739e9e9a76d"
     }
   }

@@ -160,7 +160,7 @@
   },
   "certification-and-test-validation-2026": {
     "title": "2026'da Donanım Sertifikası Doğrulama: Yedi Bölüm, DoP ve CE İşareti, Altı Uyarı İşareti",
-    "summary": "Gerçek bir test sertifikası 7 bölüm taşır: düzenleyen laboratuvar ve adresi, akreditasyon referansı, yılıyla birlikte standart, rapor ya da sertifika numarası, düzenlenme tarihi ve geçerlilik, uygulama kapsamı ve test edilen yapılandırma. En sık eksik olan kapsamdır ve 7'sini birden kontrol etmek yaklaşık 5 dakika sürer. Bu sayfa ayrıca akreditasyon ile sertifikasyon farkını, CE işaretini ve Performans Beyanını açıklar, 6 tehlike işaretini listeler ve elimizde ne olduğunu söyler: 307 ve 311 panik çıkış cihazlarımız testtedir; sertifika numaraları çıkana kadar onlar için bir sınıf iddia etmiyoruz.",
+    "summary": "Gerçek bir test sertifikası 7 bölüm taşır: düzenleyen laboratuvar ve adresi, akreditasyon referansı, yılıyla birlikte standart, rapor ya da sertifika numarası, düzenlenme tarihi ve geçerlilik, uygulama kapsamı ve test edilen yapılandırma. En sık eksik olan kapsamdır ve 7'sini birden kontrol etmek yaklaşık 5 dakika sürer. Bu sayfa ayrıca akreditasyon ile sertifikasyon farkını, CE işaretini ve Performans Beyanını açıklar, 6 tehlike işaretini listeler ve elimizde ne olduğunu söyler: 307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir; sertifika numaraları çıkana kadar onlar için bir sınıf iddia etmiyoruz.",
     "seoTitle": "Donanım Sertifikası Doğrulama 2026: DoP, CE ve Uyarılar",
     "seoDescription": "Kapı donanımı sertifikasını doğrulayın: taşıması gereken yedi bölüm, DoP ve CE işareti, altı uyarı işareti ve düzenleyenin sicilinde beş dakikalık kontrol.",
     "body": [
@@ -209,7 +209,7 @@
       "İlk sorunun cevabı ürünün belgelendirilmemiş olduğuysa, bu kullanılabilir bir cevaptır ve uygulama için çoğu zaman doğru olandır. Başarısızlık belgelendirilmemiş bir ürün değil; belgelendirilmiş gibi tarif edilen belgelendirilmemiş bir üründür. Yukarıdaki altı uyarı işaretinin hepsinin yakaladığı şey budur.",
       "## Neye sahip olduğumuz, açıkça",
       "Ürünlerimizden birinin test edildiği ve bir sertifikanın bulunduğu yerde ürün sayfası standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine verilir. Belgeler sayfamız test belgelerini yayımlanmış değil talep üzerine verilen belgeler olarak listeler ve bu kelimenin tam anlamıyla böyledir: sorduğunuz tam modeller için var olanı göndeririz.",
-      "307 ve 311 panik çıkış cihazlarımız test aşamasındadır: sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; ne bir açıklamada, ne bir karşılaştırmada, ne de bir standardın numarasını ona göre test edilmemiş bir ürünün yanına koyarak.",
+      "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir: sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; ne bir açıklamada, ne bir karşılaştırmada, ne de bir standardın numarasını ona göre test edilmemiş bir ürünün yanına koyarak.",
       "Kendi ürünümüzü tarif etmek için başka bir üreticinin sertifikasını da çoğaltmayız. Bir sertifika düzenlendiği montaja aittir ve birini ödünç almak, bir ölçü uydurmakla aynı kategoride bir hatadır; ölçü sayfalarımızın savunduğu ilkenin kâğıda uygulanmış hâli.",
       "## Bir tedarikçi bu kontrolü neden memnuniyetle karşılamalı",
       "Yukarıdaki beş dakikalık kontrol bazen güvensizlik olarak okunur. Tersidir: gerçek bir sertifikayı kendinden emin bir cümleden daha değerli kılan tek şey odur.",
@@ -239,7 +239,7 @@
       },
       {
         "question": "Panik çıkış cihazlarınızın yangın belgesi var mı?",
-        "answer": "307 ve 311 panik çıkış cihazlarımız test aşamasındadır. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bir ürünün test edildiği yerde sayfa standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine verilir."
+        "answer": "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bir ürünün test edildiği yerde sayfa standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine verilir."
       }
     ],
     "sourceHash": {
@@ -247,8 +247,8 @@
       "summary": "0b705c3c94a8",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
-      "body": "57e62f3e9f1a",
-      "faq": "fc86e6f3ef20"
+      "body": "654a65314771",
+      "faq": "187ef3bcdcb2"
     }
   },
   "chrome-finish-differences-2026": {
@@ -299,7 +299,7 @@
       "Yayımlanmış 336 kaplama satırında aynı kaplama birkaç farklı şekilde yazılmış. \"Satin Nickel (SN)\" 41 kez, \"Satin nickel\" 38 kez daha geçiyor. \"Polished Brass (PB)\" 68 kez, \"polished brass\" 19 kez ve \"Polished brass (US3)\" 16 kez geçiyor. Krom, 51 kez \"Chrome Plated (CP)\", 18 kez \"Satin Chrome (SC)\" ve 17 kez çıplak \"chrome\" olarak görünüyor.",
       "| Yazılış biçimi | Satır |\n| --- | --- |\n| Chrome Plated (CP) | 51 |\n| Satin Chrome (SC) | 18 |\n| \"chrome\", kodsuz | 17 |\n| Satin Nickel (SN) | 41 |\n| \"Satin nickel\", kodsuz | 38 |",
       "Bunlar farklı kaplamalar değil. Tutarsız yazılmış tek bir kaplamadır ve kodu olmayan satırlar bir alıcının yeniden sipariş veremeyeceği satırlardır; bu sayfanın bütün argümanı, kendimize çevrilmiş hâliyle.",
-      "Kendi kendine düzelmeye bırakılmak yerine kaplama kodları sayfamızdaki kod tablosuna göre normalleştiriliyor. Bu tamamlanana kadar, bir satırda kod varsa onu alın, yoksa sorun.",
+      "Bir satırda kod varsa onu alın, yoksa sorun.",
       "Satırlarımızda kod varsa, yazıldığı gibi belirtin: 70722 DC kulp takımı saten nikel (US15) olarak yayımlanmıştır, 65SN Avrupa silindiri ise kaplamaları arasında krom kaplama (CP) ve saten krom (SC) sayar.",
       "## Kromu aynı şeyi iki kez alacak şekilde nasıl belirtirsiniz",
       "Adı değil kodu verin. \"Saten krom\" değil, US26D ya da 626.",
@@ -331,7 +331,7 @@
       },
       {
         "question": "Ürün sayfalarınız kaplama kodu veriyor mu?",
-        "answer": "Tutarsız biçimde ve bunu söylemek için doğru yer bu sayfa. 336 kaplama satırında aynı kaplama birkaç şekilde yazılmış: 41 kez \"Satin Nickel (SN)\", 38 kez daha \"Satin nickel\"; krom ise \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" ve çıplak \"chrome\" olarak. Kodu olmayan satırlar yeniden sipariş veremeyeceğiniz satırlardır. Kaplama kodu tablomuza göre normalleştiriliyor."
+        "answer": "Tutarsız biçimde ve bunu söylemek için doğru yer bu sayfa. 336 kaplama satırında aynı kaplama birkaç şekilde yazılmış: 41 kez \"Satin Nickel (SN)\", 38 kez daha \"Satin nickel\"; krom ise \"Chrome Plated (CP)\", \"Satin Chrome (SC)\" ve çıplak \"chrome\" olarak. Kodu olmayan satırlar yeniden sipariş veremeyeceğiniz satırlardır."
       }
     ],
     "sourceHash": {
@@ -339,8 +339,8 @@
       "summary": "6619ce04a91d",
       "seoTitle": "b665add1ab44",
       "seoDescription": "c9aca5929017",
-      "body": "013c8ffc451a",
-      "faq": "1fdc19bda3a8"
+      "body": "480c8ee253cd",
+      "faq": "1c0b0c9b25f8"
     }
   },
   "commercial-lock-function-decision-2026": {
@@ -753,7 +753,7 @@
       "## Serilere göre tübüler kilitler",
       "26 tübüler kaydın hepsi aynı temel satırları paylaşır: 60/70 mm ayarlanabilir backset, 35–45 mm kapı, 200.000 çevrim, çinko kaplı masif çelik şase ve dil gövdesi ve standart olarak 57 mm kavisli dudaklı karşılık, talep üzerine 70 mm dudak. Seriler kaplama ve fonksiyonda ayrışır; Tubular Knob Lock başlıklı 26. kayıt temel satırları paylaşır ama fonksiyon ya da kaplama yayımlamaz.",
       "| Seri | Varyant | Fonksiyonlar | Yayımlanan kaplamalar |\n| --- | --- | --- | --- |\n| 575 | 4 | giriş | antik pirinç, antik bakır, saten paslanmaz çelik; 575 CPET satırı tüm yelpazeyi listeler |\n| 592 | 5 | giriş, mahremiyet, geçiş | saten pirinç, parlak pirinç, saten paslanmaz çelik |\n| 595 | 2 | giriş, mahremiyet | antik bakır |\n| 598 | 5 | giriş, mahremiyet | antik bakır, saten nikel, saten paslanmaz çelik |\n| 607 | 7 | giriş, mahremiyet, geçiş | antik bakır, parlak pirinç, parlak ve saten paslanmaz çelik |\n| 609 | 2 | giriş | parlak pirinç, saten paslanmaz çelik |",
-      "575, dilini eksiksiz yayımlayan seridir: 12 mm hareket, anahtarlı fonksiyonlarda kilitlemeli. 607 en geniş settir; üç fonksiyonun hepsi ve başka hiçbir tübüler serinin listelemediği parlak paslanmaz kaplama (US32). Yedi 607 kaydı dili tarif etmek yerine backset'i tekrarlayan (Adjustable 60 to 70mm) bir dil satırı taşır; bunu düzeltiyoruz ve o zamana kadar dil için teyit edebileceğimiz değerler olarak 575'inkileri esas alın.",
+      "575, dilini eksiksiz yayımlayan seridir: 12 mm hareket, anahtarlı fonksiyonlarda kilitlemeli. 607 en geniş settir; üç fonksiyonun hepsi ve başka hiçbir tübüler serinin listelemediği parlak paslanmaz kaplama (US32). Yedi 607 kaydı dili tarif etmek yerine backset'i tekrarlayan (Adjustable 60 to 70mm) bir dil satırı taşır; dil için teyit edebileceğimiz değerler olarak 575'inkileri esas alın.",
       "## Silindirik kilitler: hafif ve ağır hizmet",
       "Hafif hizmet tipi silindirik kilitler 578 serisi (dört varyant) ve 587 serisidir (yedi). Silindiri ayrıntılı olarak yayımlarlar (578'de pirinç göbekli 5 pimli silindir ve iki nikel kaplı pirinç anahtar; 587'de masif pirinç ya da çinko ve pirinç) ve sürgü kilitlerimizle aynı anahtara uyarlanabileceklerini ya da master anahtarlanabileceklerini belirtirler. Backset ya da kapı kalınlığı yayımlamazlar. Sipariş etmeden önce ikisini de sorun: kilidin kapıya hiç uyup uymayacağını belirleyen iki satır bunlardır.",
       "Boşlukların en büyük olduğu yer ağır hizmet ailesidir. 17 kaydından 6'sı özellik satırı yayımlar: 5831 SSET, 5870 ACET ve 5870 SSET, 5871 SSET, 5874 ACET ve Cylindrical Knob Lock başlıklı kayıt. Diğer 11'inde (dört 5831 90mm renk varyantı, dört 9210 varyantı, 5870 SNET, S578 ve 587 SSPT) bir fotoğraf var, başka hiçbir şey yok. Dört 5831 90mm varyantı, adlarının düşündürdüğü gibi muhtemelen 5831 SSET'in 90 mm backset'ini paylaşır; ama ad bir şartname değildir; talep üzerine çizime göre teyit ederiz.",
@@ -799,7 +799,7 @@
       "summary": "a1495f21fa4b",
       "seoTitle": "532b656512d1",
       "seoDescription": "01e047ebdecd",
-      "body": "fa881171daef",
+      "body": "ef05ec626d4b",
       "faq": "0fefb97329cc"
     }
   },
@@ -1325,7 +1325,7 @@
       "Aktif kanat tek başına gereken net genişliği sağlıyorsa pasif kanat sürgülerle sabitlenebilir; çiftin ayrıca kanatların doğru sırayla kapanması için bir sıralayıcıya ihtiyacı vardır. Panik çıkış cihazı sayfamız bir çiftin donanım açısından neden tek bir kapının iki katından fazlasına mal olduğunu anlatıyor.",
       "## Neye sahibiz, neye sahip değiliz",
       "Kataloğumuz panik ya da çıkış donanımı olarak adlandırılan 46 ürün taşır: 30 cihaz, 15 dış kol ve bir kilit gövdesi.",
-      "307 ve 311 panik çıkış cihazlarımız test aşamasındadır: sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; ne bir açıklamada, ne bir karşılaştırmada, ne de bir standardın numarasını ona göre test edilmemiş bir ürünün yanına koyarak.",
+      "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir: sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; ne bir açıklamada, ne bir karşılaştırmada, ne de bir standardın numarasını ona göre test edilmemiş bir ürünün yanına koyarak.",
       "Bu, bu kategoride diğerlerinden daha fazla gerçek bir ticari bedeldir; çünkü kaçış donanımı belgelendirmeye göre satın alınır. Sertifika numarasını gösteremeyeceğimiz bir sınıflandırma yazmaktansa bu bedeli taşımayı tercih ederiz; sertifika doğrulama sayfamız bir alıcının bizimki dahil herkesin iddiasını nasıl kontrol etmesi gerektiğini tam olarak anlatıyor.",
       "Bir proje bugün EN 1125 ya da EN 179 belgelendirmesi gerektiriyorsa bize sorun, karşılayıp karşılayamayacağımızı açıkça söyleyelim. Birkaç modelde cevap şu anda hayırdır ve bu cevap sizin için bir tekliften daha faydalıdır."
     ],
@@ -1352,7 +1352,7 @@
       },
       {
         "question": "Panik çıkış cihazlarınız EN 1125 ya da EN 179 belgeli mi?",
-        "answer": "307 ve 311 modellerimiz test aşamasındadır. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bugün belgelendirme gerektiren bir projede sorun, karşılayıp karşılayamayacağımızı açıkça söyleyelim; birkaç modelde cevap şu anda hayırdır."
+        "answer": "307 ve 311 modellerimiz bugün sertifikaya sahip değildir. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bugün belgelendirme gerektiren bir projede sorun, karşılayıp karşılayamayacağımızı açıkça söyleyelim; birkaç modelde cevap şu anda hayırdır."
       }
     ],
     "sourceHash": {
@@ -1360,8 +1360,8 @@
       "summary": "33a2e0481503",
       "seoTitle": "8c8fd4020bcb",
       "seoDescription": "bada04362fef",
-      "body": "333d1a4d9a9c",
-      "faq": "a828c5bf11fe"
+      "body": "6c01e210fc50",
+      "faq": "2550eed57126"
     }
   },
   "en-ansi-bhma-cross-reference-2026": {
@@ -1391,7 +1391,7 @@
       "Üçüncüsü, yangın testi basıncı farklıdır. Avrupa ve Kuzey Amerika fırın testlerinde kullanılan nötr basınç düzlemi aynı değildir; bu yüzden bir EN 1634-1 sonucu, aynı montaj için bile UL 10C'ye ya da NFPA 252'ye aktarılamaz. Bir Avrupa yangın kapısı sertifikasının bir Kuzey Amerika yetkili kurumunu tatmin etmemesinin teknik özü budur.",
       "Dördüncüsü, kaplama kodları bir performans sınıfı değil bir adlandırma sistemidir. US26D, BHMA 626 ve SN gibi bir fabrika kodu aynı saten kaplamayı tarif edebilir ve hiçbiri korozyon performansını belirtmez. Bu EN 1670'in işidir ve bir kaplama kodu yanında hiçbir EN 1670 sınıfı taşımaz.",
       "## Neye sahip olduğumuz, açıkça",
-      "Çıkış cihazı yelpazemizdeki belirli modeller için EN 1125 test raporları mevcuttur; bunların büyük kısmı müşterilerimizin adınadır. Kendi adımıza CE ve ANSI testleri hazırlanmaktadır. Bu yelpazede bugün ANSI/BHMA sınıflarına ya da UL listelemelerine sahip değiliz. İki model, 307 ve 311, Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur.",
+      "Çıkış cihazı yelpazemizdeki belirli modeller için EN 1125 test raporları mevcuttur. Bu yelpazede bugün ANSI/BHMA sınıflarına ya da UL listelemelerine sahip değiliz.",
       "Bu cümle böyle yazıldı; çünkü UL Product iQ ve BHMA belgelendirilmiş ürün dizini kamuya açık olarak aranabilir ve bir şartname yazarı onay belgelerine sertifika numaralarını yazar. Bir aramadan sağ çıkamayan bir iddia, kazanmak için yapıldığı siparişten daha pahalıya mal olur.",
       "Bir proje bugün bir ANSI/BHMA sınıfı ya da bir UL listelemesi gerektiriyorsa dürüst cevap, bir EN 1125 raporunun onun yerini tutmadığıdır ve bunu bir konteyner yola çıktıktan sonra değil, şimdi söylemeyi tercih ederiz.",
       "## İki pazarda da işe yarayan bir şartname nasıl yazılır",
@@ -1421,7 +1421,7 @@
       },
       {
         "question": "Canton Hyland'ın ANSI ya da UL belgesi var mı?",
-        "answer": "Çıkış cihazı yelpazesinde bugün yok. Belirli modeller için EN 1125 test raporları mevcuttur; bunların büyük kısmı müşterilerimizin adınadır. Kendi adımıza CE ve ANSI testleri hazırlanmaktadır. 307 ve 311 modelleri Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur. UL Product iQ ve BHMA dizini kamuya açık olarak aranabilir; bunun ima edilmek yerine açıkça söylenmesinin nedeni budur."
+        "answer": "Çıkış cihazı yelpazesinde bugün yok. Belirli modeller için EN 1125 test raporları mevcuttur. UL Product iQ ve BHMA dizini kamuya açık olarak aranabilir; bunun ima edilmek yerine açıkça söylenmesinin nedeni budur."
       }
     ],
     "sourceHash": {
@@ -1429,8 +1429,8 @@
       "summary": "036dd1b2d40c",
       "seoTitle": "be50fdd1bf25",
       "seoDescription": "ff3b59babad8",
-      "body": "5aafe49e187e",
-      "faq": "84c409c9a4d8"
+      "body": "db48756f798b",
+      "faq": "cacd264a54ab"
     }
   },
   "euro-cylinder-size-chart-2026": {
@@ -1531,7 +1531,7 @@
       "## Karşılaştırmaya yetecek kadar yayımlamayan kayıtlar",
       "Dokuz cihazın bir fotoğrafı ve bir sayfası var ama bir tabloya yerleştirmek için çok az satırı var: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01. Bazıları bir malzeme yayımlar ve başka bir şey yayımlamaz; 312 ve SH01'de tek satır malzemedir. 316-S yapı satırlarını 316-D ile paylaşır (yüzeye monte, çevrilebilir) ama boyunu paylaşmaz. İstediğiniz cihaz bunlardan biriyse bize kanadı söyleyin, teklif vermeden önce satırları teyit edelim.",
       "## Bu sayfalardaki yangın dayanımları",
-      "Bu kayıtların hiçbiri bir yangın süresi belirtmez. Üçü eskiden belirtiyordu (300 ve 310'da 1,5 saat, 307'de 2,5 saat); bu rakamları Ekim 2026'da kaldırdık. Bir yangın süresi ancak bir raporda ya da listelemede tanımlanmış, test edilmiş bir kapı montajının dayanımı olarak anlam taşır ve bu üçünden hiçbiri böyle bir şey yayımlamaz. UL listelememiz yok; 307 ve 311 teste gönderildi ve sertifika numaraları oluşana kadar onlar için bir listeleme ya da dayanım ima etmeyeceğiz. UL 305 üzerine yazımız bir listelemenin ne olduğunu ve nasıl kontrol edileceğini anlatıyor.",
+      "Bu kayıtların hiçbiri bir yangın süresi belirtmez. Bir yangın süresi ancak bir raporda ya da listelemede tanımlanmış, test edilmiş bir kapı montajının dayanımı olarak anlam taşır ve bunlardan hiçbiri böyle bir şey yayımlamaz. UL listelememiz yok; 307 ve 311 bugün sertifikaya sahip değil ve sertifika numaraları oluşana kadar onlar için bir listeleme ya da dayanım ima etmeyeceğiz. UL 305 üzerine yazımız bir listelemenin ne olduğunu ve nasıl kontrol edileceğini anlatıyor.",
       "## Dört soruda seçim",
       "Tek kanat mı, çift mi? Orta kaydı olmayan bir çift, üstten ve alttan kilitleme ve bir sıralayıcı ister; bu da seçimi ikinci tabloya daraltır. Kanat ne kadar geniş? Bu boyu ve ayarlanabilir mi yoksa boya göre yapılan bir cihazın mı ekonomik cevap olduğunu belirler. Dış tarafın anahtara ya da kola ihtiyacı var mı? O zaman ihtiyacınız olan dış kolla çalışan bir cihaz ya da onu içeren 311 gibi bir set seçin. Kapı sıradan bir koridordan başka bir şeye mi bakıyor: bir soğuk depo ya da alarmlı bir çıkış? O zaman başlanacak yer özel amaç tablosudur.",
       "Bu dört cevabı kanat ölçüsü ve kapı kalınlığıyla gönderin; ilk yanıt bir cihaz ve bir dış kol adlandırabilir. Kırmızı bir barın fotoğrafını gönderin; ilk yanıt bu dört soru olur."
@@ -1555,7 +1555,7 @@
       },
       {
         "question": "Panik çıkış cihazı sayfalarınızdaki yangın dayanımları belgeli mi?",
-        "answer": "Hayır. 300 ve 310 kayıtları 1,5 saat, 307 ise 2,5 saat belirtir; ama bir yangın süresi ancak bir raporda ya da listelemede adı geçen, test edilmiş bir kapı montajının dayanımı olarak anlam taşır ve bunların hiçbiri böyle bir şey yayımlamaz. UL listelememiz yok; 307 ve 311 teste gönderildi ve sertifika numaraları oluşana kadar bir dayanım ima etmeyeceğiz."
+        "answer": "Hayır. Bu kayıtların hiçbiri bir yangın dayanım süresi belirtmiyor: yangın dayanım süresi ancak bir raporda ya da listelemede tanımlanmış, test edilmiş bir kapı sisteminin sınıfı olarak anlam taşır. UL listelememiz yok ve sertifika numaraları oluşana kadar bir sınıf ima etmeyeceğiz."
       },
       {
         "question": "Bazı panik çıkış cihazlarınız neden neredeyse hiç teknik özellik göstermiyor?",
@@ -1567,8 +1567,8 @@
       "summary": "ec12a7dec293",
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
-      "body": "5cadd9a03a41",
-      "faq": "5dd27b52fa34"
+      "body": "32798ab2f09c",
+      "faq": "147c77b5742a"
     }
   },
   "exit-device-outside-trim-functions-2026": {
@@ -1621,7 +1621,7 @@
       "Dış kol modeli ve adıyla belirtilmiş fonksiyonu.",
       "Dogging: yok, mekanik ya da silindirli; kapı yangın dayanımlıysa yok, ve seçilen cihazın bu tertibatı taşımayan bir cihaz olması için yangın dayanımı belirtilmiş olarak.",
       "Kapı genişliği ve yönü, çünkü panik bar boyu kapıya göre belirlenir ve dış kol sıklıkla yönlüdür.",
-      "307 ve 311 panik çıkış cihazlarımız teste giriyor. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; bu sayfanın yangın dogging kuralını bir ürünü göstermek yerine genel olarak anlatmasının nedeni de budur."
+      "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değil. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; bu sayfanın yangın dogging kuralını bir ürünü göstermek yerine genel olarak anlatmasının nedeni de budur."
     ],
     "faq": [
       {
@@ -1654,7 +1654,7 @@
       "summary": "60fee76e98a5",
       "seoTitle": "436da21c0bc4",
       "seoDescription": "a6d9f0d49bd2",
-      "body": "84b30a6ab3e4",
+      "body": "9a791a70c527",
       "faq": "7dac59076eed"
     }
   },
@@ -1725,7 +1725,7 @@
   },
   "fire-door-hardware-what-must-be-rated-2026": {
     "title": "Yangın Kapısı Donanımı 2026: Hangi Bileşenler Sertifikalı Olmalı, EN 1634-1 ile UL 10C ve NFPA 252 Farkı, Bir Sertifika Neyi Kapsar",
-    "summary": "Bir yangın kapısına sabitlenen ya da kapıya işlenen her şey test edilen montajın parçası olmalıdır: menteşeler, kilit ya da dil, kapı kapatıcı, genleşen ve duman contaları, panik çıkış cihazları, cam ve çıtaları, çift kanatlarda gömme sürgüler ve sıralayıcılar, ve bağlantı elemanları. Bir sertifika yalnızca test edilen yapılandırmayı ve kapsamı kapsar; EN 1634-1 sınıflandırması bir UL 10C listelemesi değildir. 307 ve 311 panik çıkış cihazlarımız testtedir; sertifika numaraları çıkana kadar onlar için bir yangın sınıfı iddia etmiyoruz.",
+    "summary": "Bir yangın kapısına sabitlenen ya da kapıya işlenen her şey test edilen montajın parçası olmalıdır: menteşeler, kilit ya da dil, kapı kapatıcı, genleşen ve duman contaları, panik çıkış cihazları, cam ve çıtaları, çift kanatlarda gömme sürgüler ve sıralayıcılar, ve bağlantı elemanları. Bir sertifika yalnızca test edilen yapılandırmayı ve kapsamı kapsar; EN 1634-1 sınıflandırması bir UL 10C listelemesi değildir. 307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değildir; sertifika numaraları çıkana kadar onlar için bir yangın sınıfı iddia etmiyoruz.",
     "seoTitle": "Yangın Kapısı Donanımı 2026: EN 1634-1, UL 10C ve Sertifika",
     "seoDescription": "Yangın kapısında sertifika şart: menteşe, kilit, kapatıcı, conta, çıkış cihazı, bağlantı; hepsi test edilen montajda. EN 1634-1 ile UL 10C, EI ile E farkı.",
     "body": [
@@ -1758,7 +1758,7 @@
       "## Elimizde ne var, açıkça",
       "Bir tedarikçinin sayfası normalde tam burada muğlaklaşır; o yüzden net olacağız.",
       "Ürünlerimizden biri yangına dayanıklı bir sistemin parçası olarak test edildiyse ve bir sertifika varsa, ürün sayfası standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine sunulur.",
-      "Bir ürün test edilmediyse sayfa yangın performansı hakkında hiçbir şey söylemez ve bu sessizlik bilinçlidir. 307 ve 311 panik çıkış cihazlarımız teste giriyor. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek: ne bir ürün açıklamasında, ne bir karşılaştırmada, ne de o standarda göre test edilmemiş bir ürünün yanına bir standart numarası koyarak.",
+      "Bir ürün test edilmediyse sayfa yangın performansı hakkında hiçbir şey söylemez ve bu sessizlik bilinçlidir. 307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değil. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek: ne bir ürün açıklamasında, ne bir karşılaştırmada, ne de o standarda göre test edilmemiş bir ürünün yanına bir standart numarası koyarak.",
       "Kendi ürünümüzü tarif etmek için başka bir üreticinin sertifikasını, listelemesini ya da sınıfını da kullanmayız. Bir sertifika, için düzenlendiği sisteme aittir ve birini ödünç almak, bir ölçü uydurmakla aynı türden bir hatadır.",
       "## Herhangi bir tedarikçiye sorulacak beş soru",
       "Hangi standart ve hangi sınıflandırma, EI mi E mi ve kaç dakika; ya da UL 10C ve hangi listeleme numarası.",
@@ -1790,7 +1790,7 @@
       },
       {
         "question": "Panik çıkış cihazlarınızın yangın sertifikası var mı?",
-        "answer": "307 ve 311 panik çıkış cihazlarımız teste giriyor. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Test edilmiş bir ürünün sayfası standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine sunulur."
+        "answer": "307 ve 311 panik çıkış cihazlarımız bugün sertifikaya sahip değil. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Test edilmiş bir ürünün sayfası standardı, sınıflandırmayı ve kapsamı belirtir; sertifika talep üzerine sunulur."
       }
     ],
     "sourceHash": {
@@ -1798,8 +1798,8 @@
       "summary": "0d5137abc4eb",
       "seoTitle": "75373f19512f",
       "seoDescription": "17d1d81eb4c7",
-      "body": "576f9a48e143",
-      "faq": "08c49558371c"
+      "body": "81815c180c5b",
+      "faq": "b0b02e48f87a"
     }
   },
   "glass-door-thickness-and-cutouts-2026": {
@@ -2681,7 +2681,7 @@
   },
   "qualifying-a-hardware-supplier-2026": {
     "title": "Donanım Tedarikçisini Değerlendirmek 2026: Fabrika, Tüccar ya da Aracı, Onları Ayıran Beş Soru ve Neyin Doğrulanması Gerektiği",
-    "summary": "Bir fabrikayı bir ticaret şirketinden ya da aracıdan 5 soru ayırır: hangi modelleri kendiniz üretiyorsunuz; bu modelin mesafesini (backset) değiştirebilir misiniz ve kalıp maliyeti ne olur; kaplamanızı kim yapıyor; tek bir kaplamada minimum nedir ve neden; ölçülü çizimi alabilir miyiz. Bir fabrika her birine hemen ya da bir gerekçeyle yanıt verir. Bu sayfa ayrıca bağımsız olarak doğrulanabilecekleri ve ilk siparişin nasıl olması gerektiğini listeler ve testin tamamını bize uygular.",
+    "summary": "Bir fabrikayı bir ticaret şirketinden ya da aracıdan 5 soru ayırır: hangi modelleri kendiniz üretiyorsunuz; bu modelin mesafesini (backset) değiştirebilir misiniz ve kalıp maliyeti ne olur; kaplamanızı kim yapıyor; tek bir kaplamada minimum nedir ve neden; ölçülü çizimi alabilir miyiz. Bir fabrika her birine hemen ya da bir gerekçeyle yanıt verir. Bu sayfa ayrıca bağımsız olarak doğrulanabilecekleri ve ilk siparişin nasıl olması gerektiğini listeler.",
     "seoTitle": "Donanım Tedarikçisi Değerlendirme 2026: Fabrika mı Tüccar mı",
     "seoDescription": "Donanım tedarikçisi değerlendirmesi: fabrikayı tüccar ya da aracıdan ayıran beş soru, kendiniz neyi doğrulamalısınız, küçük sipariş neden numuneden iyidir.",
     "body": [
@@ -2695,7 +2695,7 @@
       "\"Bu modellerden hangilerini kendiniz üretiyorsunuz, hangilerini dışarıdan alıyorsunuz?\" Neredeyse her gerçek fabrika bazı şeyleri dışarıdan alır: silindirler, yaylar, ambalaj, bazen bütün kategoriler. Bir fabrika bunu kolayca ve somut olarak cevaplar. Bir ticaret şirketi ise genel olarak cevaplar, çünkü dürüst cevap \"hepsini\"dir.",
       "\"Bu modelin backset'ini değiştirebilir misiniz ve kalıp maliyeti ne olur?\" Bir fabrika bir rakamla ya da bir gerekçeyle cevap verir. Diğer herkes bir gecikmeyle cevap verir, çünkü sormaları gerekir.",
       "\"Kaplamanızı kim yapıyor, kendi bünyenizde mi?\" Kaplama, gerçek fabrikalarda bile sıklıkla dışarıya verilir ve bunu söylemek normaldir. Bilgi veren şey, cevabı hemen bilip bilmedikleridir.",
-      "\"Bu modelde tek kaplamada minimum nedir ve neden bu sayı?\" MOQ sayfamız bir minimumu belirleyen dört şeyi açıklıyor. Bir fabrikanın cevabı bunlardan en az birine atıf yapar: bir kaplama partisi, bir kalıp amortismanı, bir baskı adedi. Aktarılmış bir cevap ise yalnızca bir sayıdır.",
+      "\"Bu modelde tek kaplamada minimum nedir ve neden bu sayı?\" Bir fabrikanın cevabı bir gerekçe söyler: bir kaplama partisi, bir kalıp amortismanı, bir baskı adedi. Aktarılmış bir cevap ise yalnızca bir sayıdır.",
       "\"Bu modelin ölçülü çizimini alabilir miyiz?\" Listedeki en yararlı tek soru. Bir fabrika ya ona sahiptir ya da o model için var olmadığını bilir. Bir tüccarın elinde fabrikanın ona ne gönderdiyse o vardır; bu da çoğu zaman bir katalog sayfasıdır.",
       "Kimsenin bunlarla köşeye sıkıştırılmasına gerek yok. \"Bunları biz üretmiyoruz, Guangdong'da üç fabrikayla çalışıyoruz, bunu şu üretiyor\" diyen bir ticaret şirketi, muğlak bir fabrikadan daha iyi bir cevap vermiştir ve artık doğru biçimde çalışabileceğiniz bir tedarikçidir.",
       "## Bağımsız olarak doğrulanabilecekler",
@@ -2724,16 +2724,9 @@
       "## Kötü görünen ama kötü olmayan dört cevap ve iyi görünen ama iyi olmayan bir cevap",
       "\"Kaplamamızı fason yaptırıyoruz.\" Büyük ve yetkin fabrikalar dahil normaldir. Kaplama uzmanlık gerektiren, sıkı düzenlenen bir prosestir ve onu dışarıya vermek çoğu zaman daha kaliteli seçimdir. Önemli olan, kaplamacının adını verip prosesini bilip bilmedikleridir.",
       "\"O model için sertifikamız yok.\" Bu da normaldir. Test model başına pahalıdır ve çoğu katalog yalnızca kısmen test edilmiştir. Hangi modellerin test edildiğini, hangilerinin edilmediğini söyleyen bir tedarikçi, tüm serisi sertifikalı diye tanımlanan birinden daha güvenilirdir.",
-      "\"O modelde minimumumuz yüksek.\" Arkasında bir gerekçe olan bir minimum, birinin işin maliyetini hesapladığının işaretidir. Bir minimumu belirleyen dört şeyi MOQ sayfamız ortaya koyuyor.",
+      "\"O modelde minimumumuz yüksek.\" Arkasında bir gerekçe olan bir minimum, birinin işin maliyetini hesapladığının işaretidir.",
       "\"Bunu yapamayız.\" Listedeki en hafife alınan cevap. İyi uygulayamayacağı bir değişikliği reddeden bir tedarikçi az önce size bir projeyi kurtarmıştır ve retlerinin bir anlam taşıdığını size söylemiştir.",
-      "Ve iyi görünen: her şeye, hemen evet. Her ölçü, her kaplama, her miktar, her termin, geri hiç soru sorulmadan. Bunların hepsini gerçekten yapabilen bir tedarikçi kapınız hakkında en az bir netleştirme sorusu sorardı. Sorusuz onay yetkinlik değildir; talebi kimse okumadan yazılmış bir tekliftir.",
-      "## Bunu kendimize uygulamak",
-      "Bu sayfayı yayımlayıp kendimiz cevaplamamak tutarsız olurdu.",
-      "Biz bir fabrikayız ve her gerçek fabrika gibi her şeyi kendimiz üretmek yerine bazı bileşenleri dışarıdan alıyoruz. Model bazında hangileri olduğunu sorun; cevap somut olarak gelir.",
-      "Katalogdaki her şey için test sertifikamız yok. 307 ve 311 panik çıkış cihazlarımız teste giriyor ve sertifika numaraları oluşana kadar yayımladığımız hiçbir şey bunların bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bu iddianın bize karşı da dahil nasıl kontrol edileceğini sertifika sayfamız açıklıyor.",
-      "Çoğu model için çizim yayımlamıyoruz. 613 HYDE kaydında 84 ölçülü SVG dosyası var; bunların 72'si görünür 546 ürün listelemesinde; HYDE kapı hazırlık SVG'si ise 0. Çizimler sayfamız bu ayrı sayıları veriyor, çünkü yukarıdaki beşinci soru, aksi hâlde fazla gevşek cevaplayacağımız sorudur.",
-      "Birkaç şartname eksiği açık ve yayımlanmış durumda: 224 satırda paslanmaz kalitesi, 156'sında zamak kalitesi, 57'sinde pirinç alaşımı ve DZR durumu, 45'inde silindir bölünmesi. Her birinin, sayısıyla birlikte, kendi sayfası var.",
-      "Bu, çoğu tedarikçinin verdiğinden daha kötü görünen bir cevap ve beş sorudan sağ çıkan cevap da bu. Kataloğunda hiç eksik olmayan bir tedarikçi ya her şeyi ölçmüştür ya da eksiklerin ne demesi gerektiğini yazmıştır ve ikincisi birincisinden çok daha yaygındır."
+      "Ve iyi görünen: her şeye, hemen evet. Her ölçü, her kaplama, her miktar, her termin, geri hiç soru sorulmadan. Bunların hepsini gerçekten yapabilen bir tedarikçi kapınız hakkında en az bir netleştirme sorusu sorardı. Sorusuz onay yetkinlik değildir; talebi kimse okumadan yazılmış bir tekliftir."
     ],
     "faq": [
       {
@@ -2755,10 +2748,6 @@
       {
         "question": "Büyük bir siparişten önce numune yeterli mi?",
         "answer": "Hayır. Numune, sonra küçük bir sipariş, sonra proje; ve küçük sipariş daha önemlidir, çünkü numuneyi mevcut en iyi kişi yapar, küçük siparişi ise siparişler nasıl yapılıyorsa öyle yapılır. Size ambalajın çeki listesiyle eşleşip eşleşmediğini, terminin gerçek olup olmadığını ve kolinin ortasındaki parçaların üsttekilerle eşleşip eşleşmediğini söyler."
-      },
-      {
-        "question": "Canton Hyland kendi beş sorusunu nasıl cevaplıyor?",
-        "answer": "Biz bir fabrikayız ve her gerçek fabrika gibi bazı bileşenleri dışarıdan alıyoruz. Her şey için test sertifikamız yok; 307 ve 311 teste giriyor. 613 HYDE kaydında 84 ölçülü SVG dosyası var, 72'si görünür ürün listelemelerinde, HYDE kapı hazırlık SVG'si ise 0. Birkaç şartname eksiği kendi sayfalarında sayılarıyla veriliyor."
       }
     ],
     "sourceHash": {
@@ -2807,14 +2796,7 @@
       "Altın numune referansını belirtin. Alınacak ölçüleri ve her birinin toleransını belirtin; bir ölçümü bir karara dönüştüren toleranstır. Örnekleme planını belirtin: kaç koli açılacak, kaç parça ölçülecek ve neyin kalma sayılacağı.",
       "Neyin işlevsel olarak ve kaç kez kontrol edileceğini belirtin. \"Kilidi çalıştırın\" bir talimat değildir; \"kilidi on kez çalıştırın ve her seferinde dilin tamamen geri çekildiğini ve kolun yatay konuma döndüğünü teyit edin\" bir talimattır.",
       "Ambalaj kontrollerini belirtin: koli işaretleri, koli başına miktar, iç ambalaj ve koli ölçülerinin çeki listesiyle eşleşip eşleşmediği; çünkü çeki listesinin söylediği ölçüde olmayan bir koli, sevkiyatın planlandığı şekilde yüklenmez.",
-      "Ve kalma durumunda ne olacağını belirtin (sevkiyatı durdur, yeniden işlemeden sonra tekrar kontrol et ya da tavizle kabul et), çünkü bir sorun bulan ve talimatı olmayan bir kontrolör hiçbir şey yapmaz; bu da üç sonucun en kötüsüdür.",
-      "## Numune ne zaman alınmalı",
-      "Şartname hâlâ açıkken. Sonucu en çok etkileyen zamanlama noktası budur ve en sık yanlış yapılan da budur.",
-      "Avans ödendikten ve seri planlandıktan sonra alınan bir numunenin yalnızca iki olası sonucu vardır: rahatlama ve bir tartışma. Şartname hâlâ düzenlenebilirken alınan bir numune ise bir konuşmadır ve orada bulunan bir yanlış anlama bir e-postaya mal olur.",
-      "Termin sayfamızın ortaya koyduğu gibi, üretim saati sipariş teyidinde başlar; dolayısıyla erken numune almak siparişi geciktirmez. İşi zaten sizin kontrolünüzde olan döneme taşır.",
-      "## Biz ne yapıyoruz",
-      "Numuneleri yazılı bir şartnameye göre hazırlıyor ve numune kaydında hangi şartnameye göre yapıldığını belirtiyoruz; böylece bir onay, bir kutudaki nesnenin değil, tanımlanabilir bir şeyin onayı olur.",
-      "Bir numune katalogdan herhangi bir açıdan farklıysa, farkın keşfedilmesini beklemek yerine bunu numuneyle birlikte yazılı olarak söylüyoruz. Üretim hedefinden sessizce daha iyi bir numune gönderen bir tedarikçi bir onay kazanmamıştır; karşısında kalacağı bir standart koymuştur ve bu, iki taraf için de dürüst bir numune ve kısa bir konuşmadan daha kötü bir sonuçtur."
+      "Ve kalma durumunda ne olacağını belirtin (sevkiyatı durdur, yeniden işlemeden sonra tekrar kontrol et ya da tavizle kabul et), çünkü bir sorun bulan ve talimatı olmayan bir kontrolör hiçbir şey yapmaz; bu da üç sonucun en kötüsüdür."
     ],
     "faq": [
       {
@@ -2824,10 +2806,6 @@
       {
         "question": "Nasıl bir numune istemeliyim?",
         "answer": "Bir tedarikçiyi değerlendiriyorsanız stok numune. Katalogdan farklı bir şey varsa (bir kaplama, bir backset, bir mil boyu, baskılı bir kutu) üretim öncesi numune, çünkü şartnamenin anlaşıldığını kanıtlar. Gerçek seriden çekilen üretim numunesi ise kontrolün karşısında yapıldığı numunedir."
-      },
-      {
-        "question": "Numuneyi ne zaman almalıyım?",
-        "answer": "Şartname hâlâ açıkken, avanstan önce. Seri planlandıktan sonra alınan bir numunenin yalnızca iki olası sonucu vardır: rahatlama ya da bir tartışma. Daha erken alındığında bir konuşmadır ve orada bulunan bir yanlış anlama bir e-postaya mal olur. Üretim saati zaten sipariş teyidinde başlar; dolayısıyla erken numune almak hiçbir şeyi geciktirmez."
       },
       {
         "question": "Bir numune bana neyi söyleyemez?",
@@ -2847,8 +2825,8 @@
       "summary": "3caddd1d93da",
       "seoTitle": "cdcd2908faf9",
       "seoDescription": "e57b01aa0552",
-      "body": "6533dc06e389",
-      "faq": "b349c914d5b4"
+      "body": "a1b0ae255310",
+      "faq": "a84677dc3ff6"
     }
   },
   "specification-section-08-71-00-2026": {
@@ -3061,7 +3039,7 @@
       "| Malzeme satırının dediği | Ürün |\n| --- | --- |\n| \"Paslanmaz çelik\", kalite adlandırılmamış | 224 |\n| Bir çift ya da aralık, örn. \"304/201\", \"304/316L\" | 73 |\n| Tek bir kalite adlandırılmış | 16 |\n| Paslanmazdan söz eden toplam | 313 |",
       "Paslanmaz ürünlerimizin yüzde yetmiş ikisi hiç kalite adlandırmıyor ve 73'ü daha iki kalite adlandırıyor. 313'ten on altısı, bu sayfanın bir alıcının sorması gerektiğini söylediği soruyu cevaplıyor.",
       "Bu iyi bir sayı değil ve onu yayımlamak bilinçli bir tercih. Bunu okuyan bir alıcı tam olarak ne yapacağını bilir (kaliteyi, yazılı olarak, sipariş bazında sormak); kataloğun bunu cevapladığını varsayan bir alıcı ise sormazdı.",
-      "Böyle olmasının nedeni kötü niyet değil, sıradan bir durumdur: kalite, fabrikanın malzeme kayıtlarında duran bir satın alma bilgisidir ve katalog o kayıtlardan değil ürün tariflerinden oluşturulmuştur. Bu eksik, 224 satıra akla yatkın bir kalite yazarak değil, model model mutabakatla kapatılıyor.",
+      "Bu 224 satıra akla yatkın bir kalite yazmayacağız. Bir satır kaliteyi belirtmiyorsa, her siparişte sorun.",
       "## Siparişinize ne yazmalısınız",
       "Aileyi değil kaliteyi adlandırın. \"Paslanmaz\" değil, \"304\".",
       "Ortam sıradan bir iç mekân değilse onu belirtin (kıyı, havuz, endüstriyel, kıyı ve korunaklı); çünkü bu, tedarikçinin kaliteniz yanlış olduğunda onu teklif etmek yerine size söylemesini sağlar.",
@@ -3091,7 +3069,7 @@
       },
       {
         "question": "Ürün sayfalarınız paslanmaz kalitesini adlandırıyor mu?",
-        "answer": "Çoğunlukla hayır ve bunu söylemeyi tercih ediyoruz. Paslanmazdan söz eden 313 üründen 224'ü yalnızca \"paslanmaz çelik\" diyor, 73'ü 304/201 gibi bir çift adlandırıyor ve 16'sı tek bir kalite adlandırıyor. Eksik, 224 satıra akla yatkın bir kalite yazarak değil, fabrika malzeme kayıtlarıyla model model mutabakat yapılarak kapatılıyor."
+        "answer": "Çoğunlukla hayır ve bunu söylemeyi tercih ediyoruz. Paslanmazdan söz eden 313 üründen 224'ü yalnızca \"paslanmaz çelik\" diyor, 73'ü 304/201 gibi bir çift adlandırıyor ve 16'sı tek bir kalite adlandırıyor. Bu 224 satıra akla yatkın bir kalite yazmayacağız; kaliteyi her siparişte sorun."
       }
     ],
     "sourceHash": {
@@ -3099,8 +3077,8 @@
       "summary": "50e13b3f4840",
       "seoTitle": "dd8266256598",
       "seoDescription": "80d997a17ec0",
-      "body": "c2186668496c",
-      "faq": "a0e9ae4e16e6"
+      "body": "fdbcbb13a841",
+      "faq": "55e38533abc3"
     }
   },
   "strike-plates-and-keeps-2026": {
@@ -3231,7 +3209,7 @@
       "Dolayısıyla işe yarayan bir talep tanımlanan ürünü, önerilen ürünü ve şartnamenin gerçekten sınırladığı özelliklerin (sınıf, çevrim, yangına uygunluk, korozyon sınıfı, kaplama kodu, ölçüler) her birinin arkasındaki test kanıtıyla birlikte satır satır karşılaştırmasını belirtir. Bir özellik daha kötüyse bunu söyleyin ve burada neden önemli olmadığını söyleyin.",
       "Bir farkı gizleyen talep, inceleyen onu bulduğu anda reddedilir ve aynı tedarikçiden gelen sonraki her talep bu akılda tutularak okunur. Ortak özellikler hiçbir zaman soru değildi.",
       "## Kendi eksiklerimiz nerede",
-      "Ürünlerimizin bir kısmı teste giriyor ve henüz sertifikası yok. Bunun doğru olduğu yerde bir dayanım ima etmek yerine ürün sayfasında bunu söylüyoruz ve sahip olmadığımız bir sertifikayı gerektiren bir onay dosyası, size tamamlayamayacağımızı söyleyeceğimiz bir onay dosyasıdır.",
+      "Ürünlerimizin bir kısmının sertifikası yok. Bunun doğru olduğu yerde bir dayanım ima etmek yerine ürün sayfasında bunu söylüyoruz ve sahip olmadığımız bir sertifikayı gerektiren bir onay dosyası, size tamamlayamayacağımızı söyleyeceğimiz bir onay dosyasıdır.",
       "Bu, kulağa geldiğinden daha az sayıda kaybedilmiş talep demektir ve bu sayfanın geri kalanıyla bağdaşan tek tutumdur. Bir onay dosyasına desteksiz bir \"yangına dayanıklı\" yazacak bir tedarikçi bir çizime de desteksiz bir ölçü yazar ve inceleyen bunu bilir."
     ],
     "faq": [
@@ -3265,7 +3243,7 @@
       "summary": "5ca1d67af7fc",
       "seoTitle": "0a676aa65028",
       "seoDescription": "3f3192edc0f6",
-      "body": "4167d2695ee3",
+      "body": "ae4a4d789b28",
       "faq": "b8c3b65d86e4"
     }
   },
@@ -3489,7 +3467,7 @@
       "Malzeme satırı olan her üründen sayılmıştır.",
       "| Malzeme | Satır | Pay |\n| --- | --- | --- |\n| Paslanmaz çelik | 262 | %46 |\n| Zamak (çinko alaşımı) | 156 | %28 |\n| Pirinç | 57 | %10 |\n| Demir | 39 | %7 |\n| Alüminyum | 26 | %5 |\n| Diğer ya da karışık | 24 | %4 |",
       "Yüzde yirmi sekiz çinko alaşımı, çok sayıda kaplamalı kol ve rozet içeren bir donanım serisi için normal bir orandır. Saklanacak bir sayı değildir ve onu yayımlamak, her şeyi \"yüksek kaliteli alaşım\" olarak tanımlama alışkanlığından daha yararlıdır.",
-      "Satırlarımızın şu anda söylemediği şey zamak kalitesidir. \"Zinc Alloy\" 70 kez, \"Zinc alloy\" ise 62 kez daha geçiyor; hiçbiri Zamak 3 ya da Zamak 5'i adlandırmıyor. Bu, paslanmaz sayfamızın 201'e karşı 304 için raporladığı eksiğin aynısıdır ve dürüst cevabı da aynıdır: sipariş bazında sorun; eksik, 156 satıra akla yatkın bir kalite yazarak değil, fabrika kayıtlarıyla mutabakat yapılarak kapatılıyor.",
+      "Satırlarımızın şu anda söylemediği şey zamak kalitesidir. \"Zinc Alloy\" 70 kez, \"Zinc alloy\" ise 62 kez daha geçiyor; hiçbiri Zamak 3 ya da Zamak 5'i adlandırmıyor. Bu, paslanmaz sayfamızın 201'e karşı 304 için raporladığı eksiğin aynısıdır ve dürüst cevabı da aynıdır: sipariş bazında sorun. 156 satıra akla yatkın bir kalite yazmayacağız.",
       "## Cevabın bir anlam taşıması için ne sorulmalı",
       "Hangi zamak kalitesi ve yük taşıyan iç parçaların çinko mu çelik mi olduğu. Bir kilitte cevap çoğu zaman \"gövde çinko, çalışan parçalar çelik\"tir; bu iyi bir cevaptır, ama varsayılmak yerine verilmelidir.",
       "Yük noktalarındaki kesit kalınlığı: bunu bir çizim cevaplar; bir tarif cevaplamaz.",
@@ -3528,7 +3506,7 @@
       "summary": "1edee3ddd5c4",
       "seoTitle": "61fa12ef5973",
       "seoDescription": "53af48b17bdf",
-      "body": "83d2ba973cd2",
+      "body": "e9c5b457f02b",
       "faq": "8739e9e9a76d"
     }
   }

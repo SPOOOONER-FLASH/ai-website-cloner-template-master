@@ -3,8 +3,8 @@
   "title": "Validating a Hardware Certificate 2026: The Seven Parts, DoP and CE Marking, and the Six Red Flags",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-10-09",
-  "summary": "A genuine test certificate carries 7 parts: the issuing laboratory with its address, its accreditation reference, the standard with its year, a report or certificate number, the date of issue and validity, the scope of application, and the tested configuration. The scope is the part most often missing, and checking all 7 takes about 5 minutes. This page also explains accreditation versus certification and CE marking with a Declaration of Performance, lists 6 red flags, and states what we hold: our 307 and 311 exit devices are in testing, and until certificate numbers exist we claim no rating for them.",
+  "updatedAt": "2026-10-13",
+  "summary": "A genuine test certificate carries 7 parts: the issuing laboratory with its address, its accreditation reference, the standard with its year, a report or certificate number, the date of issue and validity, the scope of application, and the tested configuration. The scope is the part most often missing, and checking all 7 takes about 5 minutes. This page also explains accreditation versus certification and CE marking with a Declaration of Performance, lists 6 red flags, and states what we hold: our 307 and 311 exit devices do not hold certificates today, and until certificate numbers exist we claim no rating for them.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -73,7 +73,7 @@
     "If the answer to the first is that the product is not certified, that is a usable answer and often the correct one for the application. The failure mode is not an uncertified product; it is an uncertified product described as though it were certified, which is what the six red flags above are all detecting.",
     "## What we hold, stated plainly",
     "Where one of our products has been tested and a certificate exists, the product page names the standard, the classification and the scope, and the certificate is available on request. Our documents page lists test documents as on-request rather than published, and that is literal: we send what exists for the exact models you ask about.",
-    "Our 307 and 311 exit devices are in testing: until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing, not in a description, not in a comparison, and not by placing a standard's number near a product that has not been tested to it.",
+    "Our 307 and 311 exit devices do not hold certificates today: until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing, not in a description, not in a comparison, and not by placing a standard's number near a product that has not been tested to it.",
     "We also do not reproduce another manufacturer's certificate to describe our own product. A certificate belongs to the assembly it was issued for, and borrowing one is the same category of error as inventing a dimension, which is the argument our dimensional pages make, applied to paper.",
     "## Why a supplier should welcome the check",
     "The five-minute check above is sometimes read as distrust. It is the opposite: it is the only thing that makes a genuine certificate worth more than a confident sentence.",
@@ -104,7 +104,7 @@
       },
       {
         "question": "Do your exit devices hold fire certification?",
-        "answer": "Our 307 and 311 exit devices are in testing. Until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing. Where a product has been tested, the page names the standard, classification and scope, and the certificate is available on request."
+        "answer": "Our 307 and 311 exit devices do not hold certificates today. Until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing. Where a product has been tested, the page names the standard, classification and scope, and the certificate is available on request."
       }
     ],
     "es": [
@@ -130,7 +130,7 @@
       },
       {
         "question": "¿Sus barras antipánico tienen certificación al fuego?",
-        "answer": "Nuestros modelos 307 y 311 están en ensayo. Hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL. Donde un producto sí se ha ensayado, la ficha nombra la norma, la clasificación y el campo de aplicación, y el certificado está disponible a petición."
+        "answer": "Nuestros modelos 307 y 311 no tienen certificados hoy. Hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL. Donde un producto sí se ha ensayado, la ficha nombra la norma, la clasificación y el campo de aplicación, y el certificado está disponible a petición."
       }
     ],
     "pt": [
@@ -156,12 +156,12 @@
       },
       {
         "question": "As suas barras antipânico têm certificação ao fogo?",
-        "answer": "Os nossos modelos 307 e 311 estão em ensaio. Até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL. Onde um produto foi ensaiado, a página nomeia a norma, a classificação e o campo de aplicação, e o certificado está disponível mediante pedido."
+        "answer": "Os nossos modelos 307 e 311 não têm certificados hoje. Até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL. Onde um produto foi ensaiado, a página nomeia a norma, a classificação e o campo de aplicação, e o certificado está disponível mediante pedido."
       }
     ]
   },
   "titleEs": "Validar un certificado de herraje 2026: las siete partes, DoP y marcado CE, y las seis señales de alarma",
-  "summaryEs": "Un certificado de ensayo auténtico lleva 7 partes: el laboratorio emisor con su dirección, su referencia de acreditación, la norma con su año, un número de informe o de certificado, la fecha de emisión y de validez, el campo de aplicación y la configuración ensayada. El campo de aplicación es la parte que más a menudo falta, y comprobar las 7 lleva unos 5 minutos. Esta página explica también la diferencia entre acreditación y certificación y el marcado CE con su Declaración de Prestaciones, enumera 6 señales de alarma, e indica lo que tenemos: nuestras barras antipánico 307 y 311 están en ensayo, y hasta que existan números de certificado no les atribuimos ninguna clasificación.",
+  "summaryEs": "Un certificado de ensayo auténtico lleva 7 partes: el laboratorio emisor con su dirección, su referencia de acreditación, la norma con su año, un número de informe o de certificado, la fecha de emisión y de validez, el campo de aplicación y la configuración ensayada. El campo de aplicación es la parte que más a menudo falta, y comprobar las 7 lleva unos 5 minutos. Esta página explica también la diferencia entre acreditación y certificación y el marcado CE con su Declaración de Prestaciones, enumera 6 señales de alarma, e indica lo que tenemos: nuestras barras antipánico 307 y 311 no tienen certificados hoy, y hasta que existan números de certificado no les atribuimos ninguna clasificación.",
   "seoTitleEs": "Validar un certificado de herraje 2026: DoP, CE y alarmas | Canton Hyland",
   "seoDescriptionEs": "Valide un certificado de herraje: las siete partes, DoP y marcado CE, las seis señales de alarma y la comprobación de cinco minutos en el registro.",
   "bodyEs": [
@@ -210,7 +210,7 @@
     "Si la respuesta a la primera es que el producto no está certificado, esa es una respuesta utilizable y a menudo la correcta para la aplicación. El modo de fallo no es un producto sin certificar: es un producto sin certificar descrito como si lo estuviera, que es lo que detectan las seis señales de alarma de arriba.",
     "## Qué tenemos, dicho sin rodeos",
     "Donde uno de nuestros productos se ha ensayado y existe certificado, la ficha nombra la norma, la clasificación y el campo de aplicación, y el certificado está disponible a petición. Nuestra página de documentos indica los documentos de ensayo como a petición y no como publicados, y eso es literal: mandamos lo que existe para los modelos exactos por los que pregunte.",
-    "Nuestras barras antipánico 307 y 311 están en ensayo: hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL: ni en una descripción, ni en una comparación, ni colocando el número de una norma cerca de un producto que no se ha ensayado a ella.",
+    "Nuestras barras antipánico 307 y 311 no tienen certificados hoy: hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL: ni en una descripción, ni en una comparación, ni colocando el número de una norma cerca de un producto que no se ha ensayado a ella.",
     "Tampoco reproducimos el certificado de otro fabricante para describir un producto nuestro. Un certificado pertenece al conjunto para el que se emitió, y tomarlo prestado es la misma categoría de error que inventar una cota, que es el argumento de nuestras páginas dimensionales, aplicado al papel.",
     "## Por qué un proveedor debería agradecer la comprobación",
     "La comprobación de cinco minutos de arriba se lee a veces como desconfianza. Es lo contrario: es lo único que hace que un certificado auténtico valga más que una frase segura.",
@@ -218,7 +218,7 @@
     "Así que pregunte, y espere la entrada del registro. Al proveedor no le cuesta nada y es la diligencia debida más barata de toda la compra."
   ],
   "titlePt": "Validar um certificado de ferragem 2026: as sete partes, DoP e marcação CE, e os seis sinais de alarme",
-  "summaryPt": "Um certificado de ensaio autêntico traz 7 partes: o laboratório emissor com o seu endereço, a sua referência de acreditação, a norma com o seu ano, um número de relatório ou de certificado, a data de emissão e de validade, o campo de aplicação e a configuração ensaiada. O campo de aplicação é a parte que mais falta, e conferir as 7 leva uns 5 minutos. Esta página explica também a diferença entre acreditação e certificação e a marcação CE com a Declaração de Desempenho, enumera 6 sinais de alerta, e diz o que temos: nossas barras antipânico 307 e 311 estão em ensaio, e até existirem números de certificado não lhes atribuímos nenhuma classificação.",
+  "summaryPt": "Um certificado de ensaio autêntico traz 7 partes: o laboratório emissor com o seu endereço, a sua referência de acreditação, a norma com o seu ano, um número de relatório ou de certificado, a data de emissão e de validade, o campo de aplicação e a configuração ensaiada. O campo de aplicação é a parte que mais falta, e conferir as 7 leva uns 5 minutos. Esta página explica também a diferença entre acreditação e certificação e a marcação CE com a Declaração de Desempenho, enumera 6 sinais de alerta, e diz o que temos: nossas barras antipânico 307 e 311 não têm certificados hoje, e até existirem números de certificado não lhes atribuímos nenhuma classificação.",
   "seoTitlePt": "Validar um certificado de ferragem 2026: DoP, CE e alarmes | Canton Hyland",
   "seoDescriptionPt": "Valide um certificado de ferragem: as sete partes que ele deve ter, DoP e marcação CE, seis sinais de alarme e a verificação de cinco minutos no registro.",
   "bodyPt": [
@@ -267,7 +267,7 @@
     "Se a resposta à primeira é que o produto não está certificado, essa é uma resposta utilizável e muitas vezes a correta para a aplicação. O modo de falha não é um produto sem certificação: é um produto sem certificação descrito como se estivesse, que é o que os seis sinais de alarme acima detetam.",
     "## O que temos, dito sem rodeios",
     "Onde um dos nossos produtos foi ensaiado e existe certificado, a página nomeia a norma, a classificação e o campo de aplicação, e o certificado está disponível mediante pedido. A nossa página de documentos indica os documentos de ensaio como mediante pedido e não como publicados, e isso é literal: mandamos o que existe para os modelos exatos sobre os quais perguntar.",
-    "As nossas barras antipânico 307 e 311 estão em ensaio: até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL: nem numa descrição, nem numa comparação, nem colocando o número de uma norma perto de um produto que não foi ensaiado a ela.",
+    "As nossas barras antipânico 307 e 311 não têm certificados hoje: até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL: nem numa descrição, nem numa comparação, nem colocando o número de uma norma perto de um produto que não foi ensaiado a ela.",
     "Também não reproduzimos o certificado de outro fabricante para descrever um produto nosso. Um certificado pertence ao conjunto para o qual foi emitido, e tomá-lo emprestado é a mesma categoria de erro que inventar uma cota, que é o argumento das nossas páginas dimensionais, aplicado ao papel.",
     "## Por que um fornecedor deveria agradecer a verificação",
     "A verificação de cinco minutos acima é lida às vezes como desconfiança. É o contrário: é a única coisa que faz um certificado autêntico valer mais do que uma frase confiante.",

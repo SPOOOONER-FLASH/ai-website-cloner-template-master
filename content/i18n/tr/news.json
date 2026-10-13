@@ -34,7 +34,7 @@
       "Dolayısıyla soruların sırası şudur: önce makam, sonra standart, en son model. Pratikte bu, yangın stratejisinin ya da ihale dokümanının standardı adlandırması, proje tasarımcısının bunu yukarıdaki sınıflandırma hanelerine çevirmesi ve ancak bundan sonra bir model numarasının konuşmaya girmesi demektir. Süreci tersinden işleten alıcılar (önce cihazı seçip sonra ona uyan bir standart arayanlar), denetimde sertifikanın doğru ürüne ama yanlış kategoriye ait olduğunu keşfedenlerdir.",
       "Avrupa standartlarını benimsemiş ama Avrupa'da olmayan pazarlardaki projeleri yakalayan bir konu daha var. Standart ile işaretleme rejimi iki ayrı şeydir. Bir cihaz dünyanın herhangi bir yerindeki bir laboratuvarda EN 1125'e göre test edilebilir. Belirli bir pazarın buna ek olarak belirli bir uygunluk işareti, adı belirtilmiş bir onaylanmış kuruluş ya da yerel bir onay isteyip istemediği ise o pazardaki makamın cevaplayacağı bir sorudur ve cevap değişir. İhale dokümanına yalnızca hangi standardı adlandırdığını değil, hangi kanıtı istediğini de sorun.",
       "Bunların hiçbiri seçimi zorlaştırmaz. Yalnızca sırayı sabitler; sabit bir sıra da uygun bir cihazın, sertifikalı olmadığı bir kapıya takılmasını önleyen şeydir.",
-      "Canton Hyland'ın durumu, açıkça: Yangın kapısı, alarmlı, çok noktalı, dış kollu ve özel uygulama tiplerinde itme barlı çıkış cihazları üretiyoruz. Belirli modeller için EN 1125 test raporları mevcuttur. Ürettiklerimizin önemli bir kısmı müşterilerimizin adına ve masrafıyla test edilmiştir; bu yüzden adını verdiğiniz model için hangi raporun onu kapsadığını ve raporun kimin adına olduğunu size söyleriz. Bugün ANSI/BHMA sertifikamız yoktur. Kendi adımıza CE ve ANSI testleri hazırlanmaktadır ve bunlar düzenlenene kadar aksini ima etmek yerine bunu açıkça söyleriz. Aynı ürün için iki ayrı rapor seti olmadan ikisini birden iddia eden bir tedarikçi, hiçbir laboratuvarın düzenlemediği bir şeyi iddia ediyordur. Projeniz Amerikan şartnamesine göreyse bunu teklif aşamasında belirtin; size şu anda hizmet verip veremeyeceğimizi dürüstçe söyleriz. Avrupa şartnamesine göreyse, satın almayı düşündüğünüz modelin tam kendisine ait raporu isteyin ve model numarasını iki kez okuyun."
+      "Canton Hyland'ın durumu, açıkça: Yangın kapısı, alarmlı, çok noktalı, dış kollu ve özel uygulama tiplerinde itme barlı çıkış cihazları üretiyoruz. Belirli modeller için EN 1125 test raporları mevcuttur. Adını verdiğiniz model için hangi raporun onu kapsadığını size söyleriz. Bugün ANSI/BHMA sertifikamız yoktur ve aksini ima etmek yerine bunu açıkça söyleriz. Aynı ürün için iki ayrı rapor seti olmadan ikisini birden iddia eden bir tedarikçi, hiçbir laboratuvarın düzenlemediği bir şeyi iddia ediyordur. Projeniz Amerikan şartnamesine göreyse bunu teklif aşamasında belirtin; size şu anda hizmet verip veremeyeceğimizi dürüstçe söyleriz. Avrupa şartnamesine göreyse, satın almayı düşündüğünüz modelin tam kendisine ait raporu isteyin ve model numarasını iki kez okuyun."
     ],
     "faq": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "question": "Canton Hyland'ın ANSI sertifikası var mı?",
-        "answer": "Hayır, bugün yok ve aksini ima etmek yerine bunu açıkça söylüyoruz. Kendi adımıza CE ve ANSI testleri hazırlanmaktadır. Belirli modeller için EN 1125 test raporları mevcuttur ve bunların önemli bir kısmı müşterilerimizin adınadır; bu yüzden adını verdiğiniz model için hangi raporun onu kapsadığını ve kimin adına olduğunu size söyleriz. Aynı ürün için iki ayrı rapor seti olmadan ikisini birden iddia eden bir tedarikçi, hiçbir laboratuvarın düzenlemediği bir şeyi iddia ediyordur."
+        "answer": "Hayır, bugün yok ve aksini ima etmek yerine bunu açıkça söylüyoruz. Belirli modeller için EN 1125 test raporları mevcuttur; adını verdiğiniz model için hangi raporun onu kapsadığını size söyleriz. Aynı ürün için iki ayrı rapor seti olmadan ikisini birden iddia eden bir tedarikçi, hiçbir laboratuvarın düzenlemediği bir şeyi iddia ediyordur."
       }
     ],
     "sourceHash": {
@@ -59,8 +59,8 @@
       "summary": "1f8147fb29da",
       "seoTitle": "ab1caca8e148",
       "seoDescription": "da010e39f31c",
-      "body": "9eaf77d267ef",
-      "faq": "96eb5c1f970b"
+      "body": "7ca20a81d0e9",
+      "faq": "9dd31b9b3cc6"
     }
   },
   "brass-piano-hinge-is-a-finish-not-a-metal": {
@@ -74,12 +74,12 @@
       "Yükü üç noktada değil her yerde taşıdığı için malzeme, dayanım açısından sanıldığından daha az, korozyon açısından ise beklenenden daha fazla önemlidir. Aynı kesitteki demir bir boy menteşesi pirinç olandan daha rijittir (pirinç daha yumuşak metaldir), bu yüzden demirden masif pirince \"yükseltmek\" yapısal bir iyileştirme değildir. Masif pirincin sağladığı şey, yüzeyin altındaki metalin yüzeydeki metalle aynı olmasıdır. Dış cephedeki ya da kıyıdaki bir açıklıkta bütün mesele budur.",
       "Bu, kaplama kodları makalemizin Kuzey Amerika sisteminde anlattığı tuzağın aynısıdır ve iki ayrı fikir olarak değil, tek fikir olarak adlandırılmayı hak eder. ANSI/BHMA A156.18'de 626 pirinç taban üzerinde saten krom, 652 ise çelik taban üzerinde saten kromdur: fotoğrafta aynı, geri kalan her açıdan farklıdır. \"Pirinç piyano menteşe\", bu ayrımın bir ürün adına sıkıştırılmış hâlidir ve ad, fotoğrafta iyi görünen yarıyı korur.",
       "Kendi kataloğumuz da yanlıştı ve ne kadar yanlış olduğunu tam olarak söylemeye değer, çünkü hatanın içeriden nasıl göründüğünü gösteriyor. Kayıtta model adı \"Brass Piano Hinge\", malzeme \"Stainless Steel 304\" yazıyordu; genişlik alanı ise bir içe aktarma sırasında bozulup `1\"1-1/4 \"2 \"、3\"` hâline gelmişti. Üç iddia vardı ve bunların hiçbir ikisi aynı anda doğru olamazdı. Biri alıcıların gerçekte ne yazdığını araştırıp bu sorguyu ve arkasındaki kaydı bulana kadar da öyle kaldı.",
-      "Kaydın bugün söylediği, fabrikanın 16 Eylül 2026'da bize bildirdiği şeydir: kanat demirdir. Genişlikler 1 inç, 1-1/4 inç, 2 inç ve 3 inçtir. O sayfadaki fotoğraf bunlardan ikisini gösterir: biri mat siyah, diğeri parlak pirinç kaplamalı. Modelin bu adı taşımasının nedeni de pirinç olanıdır. Paslanmaz çelik iddiası kaldırıldı, çünkü hiçbir zaman doğru değildi.",
-      "O kayıtta henüz yayımlamadığımız şey, bir proje tasarımcısının sıradaki ihtiyacı olan kısımdır: teslim boyu, kanat kalınlığı, pim malzemesi, boğum aralığı ve herhangi bir yük değeri. Bunlar beş tahmin değil, beş tiredir. Menteşenin demir olduğunu ve dört genişliği biliyoruz; gerisi bize bildirilmedi. Bir fotoğraftan uydurulmuş kanat kalınlığı, tam da bir onay dosyasını reddettiren türden bir sayıdır. Sorun; sorunuzu kendimiz cevaplamak yerine fabrikaya götürürüz.",
+      "Kayıt bugün kanadın demir olduğunu söylüyor. Genişlikler 1 inç, 1-1/4 inç, 2 inç ve 3 inçtir. O sayfadaki fotoğraf bunlardan ikisini gösterir: biri mat siyah, diğeri parlak pirinç kaplamalı. Modelin bu adı taşımasının nedeni de pirinç olanıdır. Paslanmaz çelik iddiası kaldırıldı, çünkü hiçbir zaman doğru değildi.",
+      "O kayıtta henüz yayımlamadığımız şey, bir proje tasarımcısının sıradaki ihtiyacı olan kısımdır: teslim boyu, kanat kalınlığı, pim malzemesi, boğum aralığı ve herhangi bir yük değeri. Bunlar beş tahmin değil, beş tiredir. Menteşenin demir olduğunu ve dört genişliği biliyoruz; gerisini yayımlamıyoruz. Bir fotoğraftan uydurulmuş kanat kalınlığı, tam da bir onay dosyasını reddettiren türden bir sayıdır. Şartnameye yazmadan önce sorun.",
       "Daha geniş ürün yelpazesine gelince, 22 Eylül 2026 itibarıyla sayıldığında: bu sitede 29 menteşe kaydı yayımlanmaktadır. On dokuzu çeşitli kalitelerde paslanmaz çeliktir, dördü demirdir (Brass Piano Hinge, BL027, IH01 ve F100 SS), ikisi masif pirinçtir (B024 ve B025) ve dördünde henüz malzeme satırı yoktur. Şartnameniz pirinç diyor ve metali kastediyorsa bunu açıkça bu sözcüklerle yazın; çünkü bir kaplama kodu bu anlamı taşımaz, bir model adı da taşımadığını açıkça göstermiştir. Pirinç diyor ve rengi kastediyorsa, parlak pirinç kaplamalı demir ya da paslanmaz kanat daha ucuz, daha rijit ve tamamen meşrudur; yeter ki herkes hangisinin sipariş edildiğini bilsin.",
       "## Metaliyle uyuşmayan bir ad daha",
       "Yukarıdaki paragraf için ürün yelpazesini yeniden sayarken, tam da bu makalenin konusu olan sorunun bir örneği daha ortaya çıktı. Yanıltıcı adlar hakkında yazıp bunu anmadan geçmek tuhaf olurdu.",
-      "Söz konusu ürün F100 SS. Model adındaki SS paslanmaz çelik olarak okunuyor; kayıttaki malzeme satırı ise demir diyor. Bu ikisinden biri yanlış ve hangisi olduğunu henüz bilmiyoruz. Fabrika teyit edene kadar F100 SS'i malzeme açısından teyit edilmemiş kabul edin ve korozyonun önemli olduğu her yer için sipariş vermeden önce sorun.",
+      "Söz konusu ürün F100 SS. Model adındaki SS paslanmaz çelik olarak okunuyor; kayıttaki malzeme satırı ise demir diyor. Bu ikisinden biri yanlış ve hangisi olduğunu henüz bilmiyoruz. F100 SS'i malzeme açısından teyit edilmemiş kabul edin ve korozyonun önemli olduğu her yer için sipariş vermeden önce sorun.",
       "Hiç malzeme satırı olmayan dört menteşe kaydı (AAH024, BL029, SSH021 ve Stainless Steel Door Hinge başlıklı kayıt) aynı dersin öteki yarısıdır. Malzeme satırı boş olan ve paslanmaz çelik diye adlandırılan bir menteşe bir addır, şartname değildir. Satır doldurulana kadar başlık ne derse desin malzemeyi teyit edilmemiş kabul edin ve yazılı olarak isteyin. Bu yalnızca bizim için değil, her tedarikçi için geçerlidir.",
       "## Bir menteşenin neyden yapıldığı nasıl anlaşılır",
       "Bunların hiçbiri, bizimki de dahil, bir etikete güvenmeye bağlı olmamalı. İşte elinde numune olan bir alıcının yapabileceği kontroller.",
@@ -151,7 +151,7 @@
       "## Sipariş vermeden önce sorulacaklar",
       "| Soru | Neden önemli | Bugünkü cevabımız |\n| --- | --- | --- |\n| Bar NBR 11785'e göre F sınıfı mı? | Yangın kapısı F sınıfı ister | Kendi adımıza bir NBR 11785 testimiz yok. Test, barı satan markanın adına yapılabilir |\n| Rapor modeli adlandırıyor mu, kimin adına? | Başka bir modele ait rapor sizinkini kapsamaz | Mevcut olanı düzenleyen kuruluş, referans ve kapsanan modelle birlikte gösteririz |\n| Bar ne kadar uzun? | Kanat genişliğinin en az %50'si | Modele göre 650 ile 1110 mm arası; 320 ve 330 sipariş edilen boyda üretilir |\n| Çift kanat üstten ve alttan kilitleniyor mu? | Hiçbir kanat kapalı kalmak için diğerine bağlı olmamalı | 316-D, 320 ve iki kanat için 309-D seti |\n| Kapanma sıralayıcısı var mı? | 2018 revizyonu çift kanatta ister | DC02, 55–100 kg kanatlar için |",
       "## Özel marka için dürüst yol",
-      "Brezilya'da kendi adıyla satış yapan bir marka için işleyen yol şudur: modeli seçin, üretimle birebir aynı numuneleri alın, bunları akredite bir laboratuvarda markanızın adına test ettirin ve ancak bundan sonra, test edilen numuneyle aynı model, aynı malzeme ve aynı kaplamayla konteyneri sipariş edin. Numuneleri, teknik çizimleri ve teknik föyü biz sağlarız. Testi geçmek için ürünün bir detayının değişmesi gerekirse kalıbı değiştiririz.",
+      "Brezilya'da kendi adıyla satış yapan bir marka için işleyen yol şudur: modeli seçin, üretimle birebir aynı numuneleri alın, bunları akredite bir laboratuvarda markanızın adına test ettirin ve ancak bundan sonra, test edilen numuneyle aynı model, aynı malzeme ve aynı kaplamayla konteyneri sipariş edin. Numuneleri, teknik çizimleri ve teknik föyü biz sağlarız.",
       "Yapmadığımız şey ise, biri test etmeden önce bir ürünün bir Brezilya standardını karşıladığını söylemektir. Bir yangın kapısı, ona sabitlenen en zayıf parça kadar iyidir ve denetçi bunu bilir. Bunu AVCB gününde değil, numunede öğrenmek daha iyidir."
     ],
     "faq": [
@@ -165,7 +165,7 @@
       },
       {
         "question": "Canton Hyland'ın NBR 11785'e göre sertifikalı bir panik barı var mı?",
-        "answer": "Bugün kendi adımıza yok. Markanızın adına yapılacak test için üretimle birebir aynı numuneler, teknik çizimler ve teknik föy sağlarız; test gerektirirse kalıbı değiştiririz. Bir ürünün, test edilmeden önce bir Brezilya standardını karşıladığını söylemeyiz."
+        "answer": "Bugün kendi adımıza yok. Markanızın adına yapılacak test için üretimle birebir aynı numuneler, teknik çizimler ve teknik föy sağlarız. Bir ürünün, test edilmeden önce bir Brezilya standardını karşıladığını söylemeyiz."
       }
     ],
     "sourceHash": {
@@ -173,8 +173,8 @@
       "summary": "804a2ae4cef9",
       "seoTitle": "4ab948c9ba10",
       "seoDescription": "2a285127e76d",
-      "body": "dd958d7f8e4c",
-      "faq": "110c63f9ce18"
+      "body": "8e91e2463453",
+      "faq": "8b512cf66ce1"
     }
   },
   "choosing-a-cylindrical-lock-entrance-privacy-passage": {
@@ -184,7 +184,7 @@
     "seoDescription": "Önce fonksiyon: giriş, mahremiyet ya da geçiş. On iki silindirik kilit, ortak 60/70 mm backset ve 35–45 mm kapı; 90 mm backset için 5831.",
     "body": [
       "Silindirik kilit (gömme bir cep yerine iki delme deliğe oturan topuzlu ya da kollu takım) dünyanın en yaygın kilididir. Katalogdan seçmek olması gerekenden zordur, çünkü model numaraları neyin farklı olduğunu söylemez. Bu yazı kendi seçili ürün yelpazemizdeki on iki numarayı ele alıyor ve onları gerçekte hangi kararların ayırdığını açıkça söylüyor.",
-      "Bilinmesi gereken ilk şey, ortak noktalarının ne kadar fazla olduğudur. 607, 592, 598, 575, 595 ve 609'da backset 60 mm (2-3/8\") ya da 70 mm (2-3/4\") ayarlanabilir, kapı kalınlığı ise 35 mm (1-3/8\") ile 45 mm (1-3/4\") arasında ayarlanabilir olarak belirtilir. Bu verideki bir tembellik değil, delme kilidin varlık nedenidir. Tek bir parça, dünyada uygulanan iki backset ölçüsünü karşılar; aynı parça konut ve hafif ticari kapı kalınlıklarının çoğunu da karşılar. Böylece bu iki satırdan birindeki şartname hatası konteynerde değil, şantiyede düzeltilebilir. Bu sayfanın önceki sürümlerine bir düzeltme: 587 burada aynı backset ve kapı aralığıyla listelenmişti, ancak on bir kaydının hiçbiri bu satırlardan birini yayımlamıyor. Bu yüzden fabrika teyit edene kadar o cümleden çıkarıldı.",
+      "Bilinmesi gereken ilk şey, ortak noktalarının ne kadar fazla olduğudur. 607, 592, 598, 575, 595 ve 609'da backset 60 mm (2-3/8\") ya da 70 mm (2-3/4\") ayarlanabilir, kapı kalınlığı ise 35 mm (1-3/8\") ile 45 mm (1-3/4\") arasında ayarlanabilir olarak belirtilir. Bu verideki bir tembellik değil, delme kilidin varlık nedenidir. Tek bir parça, dünyada uygulanan iki backset ölçüsünü karşılar; aynı parça konut ve hafif ticari kapı kalınlıklarının çoğunu da karşılar. Böylece bu iki satırdan birindeki şartname hatası konteynerde değil, şantiyede düzeltilebilir. Bu sayfanın önceki sürümlerine bir düzeltme: 587 burada aynı backset ve kapı aralığıyla listelenmişti, ancak on bir kaydının hiçbiri bu satırlardan birini yayımlamıyor. Bu yüzden o cümleden çıkarıldı.",
       "Dolayısıyla asıl ilk karar fonksiyondur ve kapıların çoğunu üç fonksiyon karşılar. Giriş (entrance) fonksiyonu dışarıdan anahtarla çalışır, içeriden her zaman serbesttir. Mahremiyet (privacy) banyo ve yatak odası fonksiyonudur: içeride bir çevirme düğmesi, anahtar yok, dışarıda küçük bir acil açma. Geçiş (passage) ise hiç kilit değildir: kapıyı dille tutar, iki yönde de kilitleme fonksiyonu yoktur. Dumana karşı kapalı durması gereken ama kimseyi asla içeride hapsetmemesi gereken bir koridor kapısında istediğiniz budur.",
       "Bir de çoğu kataloğun gözden sakladığı dördüncü bir grup vardır ve kurumsal bir projenin ihtiyaç duyduğu grup budur. 5807, COMMUNICATION LOCK (ara kapı), CLASSROOM LOCK (derslik) ve EXIT LATCH (çıkış dili) adlı fonksiyonlarla yayımlanır. Derslik fonksiyonu yalnızca koridor tarafından anahtarla kilitlenir; böylece öğretmen kapıyı sınıfın içinden kilitleyebilir ve dışarı çıkmak için anahtar gerekmez. Şartnamenizde okul, klinik ya da öğrenci yurdu geçiyorsa önce 5807'ye bakın, çünkü bu yelpazedeki diğer on bir model giriş-mahremiyet-geçiş setine göre tanımlanmıştır.",
       "Gövde ikinci karardır ve büyük ölçüde binanın trafiğine dair bir karardır. Bunların çoğu paslanmaz çeliktir. 5870 bir varyantta demir + paslanmaz çelik, bir diğerinde Paslanmaz Çelik 304/201 olarak yayımlanır. 592 ve 595 pirinç veya paslanmaz çelik olarak yayımlanır; yani taban metal, alıcının henüz vermediği bir karardır. Bu son nokta okunduğundan daha önemlidir: BHMA numaralarıyla yazılmış bir kaplama şartnamesi, kaplama kodları makalemizde açıklanan nedenle, taban metal belirlenmeden cevaplanamaz.",
@@ -240,7 +240,7 @@
       "summary": "71085d20087f",
       "seoTitle": "d57b1447b045",
       "seoDescription": "2d7f0314a5a3",
-      "body": "916fdaf19df2",
+      "body": "fa4bdf763736",
       "faq": "8a629f9ec0e9"
     }
   },
@@ -250,7 +250,7 @@
     "seoTitle": "Kapı Kilidi Muadili Nasıl Bulunur | Canton Hyland",
     "seoDescription": "Kapı kilidinin muadilini model numarasıyla değil, altı ölçüyle bulun. Gömme kilitte: backset, aks mesafesi, ön plaka, gövde, mil, kapı kalınlığı.",
     "body": [
-      "Bir hırdavat fabrikasının sitesine insanları getiren arama terimlerine bakınca bir örüntü hemen göze çarpar: çok büyük bir kısmı başka firmaların model numaralarıdır. Bir markanın sıva üstü kilidi, başka bir markanın gizli menteşesi, yirmi yıllık bir kolinin üzerindeki dil kodu, baskısı tükenmiş bir katalogdaki parça referansı. Bunları kimse bizim hakkımızda bir şey okumak için yazmaz. Ellerinde çalışan bir parça vardır; tedarikçi ya ortadan kalkmıştır ya yavaştır ya da pahalıdır ve aynı parçayı yeniden almak için ne sipariş etmeleri gerektiğini bilmek isterler.",
+      "Bir hırdavat fabrikasına başvuran alıcıların çoğu başka bir firmanın model numarasından yola çıkar. Bir markanın sıva üstü kilidi, başka bir markanın gizli menteşesi, yirmi yıllık bir kolinin üzerindeki dil kodu, baskısı tükenmiş bir katalogdaki parça referansı. Ellerinde çalışan bir parça vardır; tedarikçi ya ortadan kalkmıştır ya yavaştır ya da pahalıdır ve aynı parçayı yeniden almak için ne sipariş etmeleri gerektiğini bilmek isterler.",
       "Bu iyi bir sorudur ve kesin bir cevabı vardır: bir kilidi adı değil, geometrisi tanımlar. Altı ölçüsü aynı olan iki kilit, adları ne olursa olsun birbirinin yerine geçer. Adı aynı olup tek bir ölçüsü farklı olan iki kilit ise geçmez.",
       "Gömme kilitte bu altı ölçü şunlardır: kapı yüzeyinden mil merkezine olan backset; mil ile silindir ya da anahtar deliği arasındaki aks mesafesi; ön plakanın boyu ve eni; gövdenin yüksekliği ve derinliği; neredeyse her zaman 8 mm (5/16\") kare olan ama yine de teyit edilmesi gereken mil ölçüsü; ve kapı kalınlığı aralığı. Bu altısını doğru alırsanız muadil tutar. Aks mesafesini kaçırırsanız kol ve silindir, kapıda zaten açılmış deliklerle aynı anda hizalanmaz; kapı ise değiştiremeyeceğiniz tek şeydir.",
       "Sıva üstü kilit ya da gece kilidinde liste daha kısadır ama aynı niteliktedir: backset, gövde ölçüsü, silindirin tek mi çift mi olduğu, dil çıkıntısı ve karşılık tipi. Çünkü sıva üstü karşılık ile sıva üstü sürgü karşılığı farklı döküm parçalardır ve kasa bunlardan yalnızca biri için hazırlanmıştır.",
@@ -312,7 +312,7 @@
       "summary": "0e5c32a3e3af",
       "seoTitle": "1c5b7fc8a4c7",
       "seoDescription": "b5807a07cd45",
-      "body": "e8132fc5b50e",
+      "body": "d0131d5f94ac",
       "faq": "cf71a9c02107"
     }
   },
@@ -476,8 +476,6 @@
       "Kaplama bir kez yazılır ve her yerde varsayılır: kaplama çoğu zaman en üstteki genel bir notta yazılır ve satırlarda atlanır. Yalnızca satırları okuyan tedarikçi varsayılan kaplamayla teklif verir; notu okuyan doğru teklif verir. Satırlardan önce notları okuyun.",
       "Anahtarlama açıklamalarda: anahtar grupları genellikle donanım setinde değil, bir açıklamalar sütununda ya da ayrı bir anahtarlama listesinde yer alır. Anahtarlama bilgisi olmayan bir silindir satırı, silindir ne kadar dikkatle tanımlanmış olursa olsun eksiktir.",
       "Revizyonlar: listeler proje boyunca yeniden yayımlanır ve her revizyon setleri sessizce değiştirebilir. Belirtilmiş bir revizyona karşı teklif verin, o revizyonu teklifin üzerine yazın ve yenisi geldiğinde belgenin tamamını yeniden okumak yerine değişiklik listesini isteyin.",
-      "## Bir listeye nasıl yanıt veriyoruz",
-      "Bir liste geldiğinde göndermeyi hedeflediğimiz yanıt satır satır değil set settir: her donanım seti için onu tamamlayabilir miyiz, adı geçen kalemler dışında tamamlayabilir miyiz ya da tamamlayamaz mıyız; tedarik edemediğimiz her kalem için de hangi kalem ve neden. Bu yanıt bir distribütör için çoğu zaman fiyatlı bir listeden daha faydalıdır; çünkü ikinci bir tedarikçiye nerede ihtiyaç olduğunu ve tek bir siparişin projenin ne kadarını karşılayabileceğini bir bakışta gösterir. Tamamlayabildiğimiz setlerin fiyatları, okuduğumuz revizyona karşı, ardından gelir.",
       "## Listeyi göndermek",
       "Okuyabildiğimiz her format, listenin bir özetinden iyidir; ama bazıları diğerlerinden daha iyidir. En iyisi elektronik tablo çıktısıdır, çünkü setler yeniden yazılmadan açılıp sayılabilir. PDF de olur. Basılı bir sayfanın fotoğrafı başlamak için yeter. Format ne olursa olsun genel notları ve anahtarlama listesini satırlarla birlikte gönderin (kaplama ve yangın stratejisi genellikle notlarda yer alır) ve revizyon harfini ekleyin ki yanıtımız ile bir sonraki revizyonunuz aynı belgeye atıf yapsın. Notları olmayan bir liste, kapıların listesidir; notlarıyla birlikte ise yanıtlayabileceğimiz bir şartnamedir.",
       "Kataloğumuz ürüne göre düzenlenmiştir, çünkü bir katalog böyle düzenlenmek zorundadır. Ama siparişe dönüşen talepler neredeyse hiçbir zaman ürün ürün gelmez. Bir liste olarak ya da bir listenin fotoğrafı olarak gelir ve kazanan yanıt, satırı değil seti okuyan yanıttır. Elinizde bir liste varsa gönderin. İşe yarayan yanıt, hangi setleri tamamlayabildiğimiz, hangilerini tek bir kalem dışında tamamlayabildiğimiz ve hangilerini tamamlayamadığımızdır; bu yanıt satır satır bir tekliften daha hızlı gelir."
@@ -513,7 +511,7 @@
       "summary": "6f5fbde5cdf1",
       "seoTitle": "b0d37f6659f0",
       "seoDescription": "b0674d9fd1b9",
-      "body": "f6a944bda5ea",
+      "body": "b72f32a8a4bc",
       "faq": "61aa3c65cd39"
     }
   },
@@ -523,7 +521,7 @@
     "seoTitle": "Kapı Stoperi, Gömme Sürgü ve Tutucu Farkı | Canton Hyland",
     "seoDescription": "DS013 kapı stoperi, DS011 gömme sürgüdür. Stoper, tutucu ve gömme sürgü nasıl ayırt edilir; stoper neden kolun çıkıntısına göre seçilir?",
     "body": [
-      "Bu yazı bir arama yüzünden var. Biri Bing'e \"door stopper ds013 vs ds011\" yazıp buraya geldi ve bir karşılaştırma beklemekte haklıydı: iki model numarası kendi kataloğumuzda yan yana duruyor ve kardeş gibi görünüyor. Değiller. DS013 bir kapı stoperidir. DS011 bir gömme sürgüdür. Tek bir ürünün varyantları değil, rastlantı eseri yan yana numaralanmış iki farklı üründür. Numaralandırma birini bir karşılaştırma arayacak kadar yanılttıysa, dürüst olan cevabı yayımlamaktır; bunu bir fotoğraftan çıkarmaya bırakmak değil.",
+      "DS013 ile DS011 kolayca bir çift sanılır: iki model numarası kendi kataloğumuzda yan yana duruyor ve kardeş gibi görünüyor. Değiller. DS013 bir kapı stoperidir. DS011 bir gömme sürgüdür. Tek bir ürünün varyantları değil, rastlantı eseri yan yana numaralanmış iki farklı üründür. Numaralandırma birini bir karşılaştırma arayacak kadar yanılttıysa, dürüst olan cevabı yayımlamaktır; bunu bir fotoğraftan çıkarmaya bırakmak değil.",
       "Kapı stoperi açılan bir kapıyı bir şeye çarpmadan önce durdurur. İşin tamamı budur. DS013, 110 × 66 mm (2-5/8\") ölçüsünde, on kaplama seçeneğiyle sunulan zamak bir zemin ya da duvar stoperidir. Tüm tasarım sorunu, hareket eden bir kapıyı darbeyi sabitleme noktasına iletmeden durdurmaktır; bu yüzden çalışan kısım kauçuktur, metal ise kauçuğu doğru yerde tutmak ve tekmelere dayanmak için vardır.",
       "Gömme sürgü bunun tersidir. Bir kanadı kapalı ve hareketsiz tutar; hiçbir şey dışarı taşmasın diye kapının kenarına yerleştirilir. DS011, dokuz kaplama seçeneğiyle sunulan pirinç bir gömme sürgüdür. Çift kanatlı bir kapıda pasif kanadın hareket etmesini engelleyen ve aktif kanada dilini oturtacağı sağlam bir yüzey sağlayan odur; o olmadan çift kanatlı bir kapı esner ve kilit ne kadar iyi olursa olsun hiçbir zaman tam oturmaz. Kapının savrulmasını durdurmakla hiçbir ilgisi yoktur; bunun için yapılmamıştır.",
       "Bu karışıklık ailesinin üçüncü ürünü kapı tutucudur; bazen \"açık tutucu\" olarak da satılır. Kapıyı bilerek açık tutar; bu, onu durdurmakla aynı şey değildir. Stoper pasiftir ve bir darbeyi karşılar; tutucu aktiftir ve bir kapama kuvvetine, çoğu zaman bir kapı kapatıcınınkine direnir. Tutucu istenen yere stoper yazmak, biri her bıraktığında kapanan bir kapı üretir; geri gelen şikâyet \"stoper çalışmıyor\" olur, oysa stoper tam tasarlandığı gibi çalışıyordur.",
@@ -579,7 +577,7 @@
       "summary": "2c7f2bc56dd9",
       "seoTitle": "72bd8307959d",
       "seoDescription": "8ce2cbdc20af",
-      "body": "f456f10acbc4",
+      "body": "a40e4c0ac2fd",
       "faq": "767e1d218915"
     }
   },
@@ -605,14 +603,14 @@
       "## 6. kalem: sıralayıcı",
       "Sıralayıcı pasif kanadın önce kapanmasını sağlar; böylece aktif kanat kapı çıtasının üzerine iner ve dile oturur. DC02 modelimiz 55–100 kg kanatlar için derecelendirilmiştir; bu da onu kapatıcılarımızdan dördüyle eşleştirir: JU-072, JU-073, JU-088 ve JU-093. DSL02, ayarlanabilir kapama kuvvetli 304 paslanmaz bir sıralayıcıdır; ağırlık aralığı henüz yayımlanmadı, sorun. Kapanma sıralayıcıları üzerine yazımız boyutlandırmayı ayrıntılı ele alıyor. Kısacası kanat ağırlığı aynı anda hem kapatıcının aralığında hem sıralayıcının aralığında kalmalıdır; 85 kg'ın üzerinde ise şu anda kapatıcı üretmiyoruz.",
       "## Kapı üreticisinden gelenler",
-      "Kapı çıtası, intümesan contalar ve kanatların kendisi kapı üreticisinden gelir ve test edilmiş montajın parçasıdır. Üzerindeki her cihaz da öyledir. Altı kalemin hepsinin üstünde duran tek kural budur: yangın kapısı bir montaj olarak test edilir; bu yüzden üzerindeki donanım, modeline kadar test edilenle aynı olmalıdır. Test raporunu isteyin, satın aldığınız modeli adıyla anıp anmadığını ve kimin adına düzenlendiğini kontrol edin. Ürettiklerimizin büyük kısmı müşterilerimizin adına ve onların masrafıyla test edilir; kendi adımıza test hazırlık aşamasındadır. Varsaymanızdansa sormanızı tercih ederiz.",
+      "Kapı çıtası, intümesan contalar ve kanatların kendisi kapı üreticisinden gelir ve test edilmiş montajın parçasıdır. Üzerindeki her cihaz da öyledir. Altı kalemin hepsinin üstünde duran tek kural budur: yangın kapısı bir montaj olarak test edilir; bu yüzden üzerindeki donanım, modeline kadar test edilenle aynı olmalıdır. Test raporunu isteyin, satın aldığınız modeli adıyla anıp anmadığını ve kimin adına düzenlendiğini kontrol edin. Varsaymanızdansa sormanızı tercih ederiz.",
       "## İki doğru kalemin birbiriyle çeliştiği yerler",
       "| Kalem | Karşısında | Ne ters gider | Neyi kontrol etmeli |\n| --- | --- | --- | --- |\n| Dış kol | Kapı | 60 mm kapıda 35–55 mm için yapılmış bir dış kol | Kapı kalınlığını dış kolun basılı aralığıyla |\n| Dış kol | Cihaz | 9 mm göbekte 8 mm mil | İkisindeki kare mil ölçüsünü, yazılı olarak |\n| Kapatıcı | Sıralayıcı | 55 kg'dan başlayan DC02 altında 45 kg'lık bir kanat | Kanat ağırlığının iki aralıkta da kalmasını |\n| Pasif kanat | Aktif kanat | Bir kanatta panik bar, diğerinde elle atılan sürgüler | Çizimdeki kaçış genişliğini |\n| Kaplama | Kaplama | Kırmızı panik barlar, saten dış kol, gümüş sıralayıcı | Açıklık için tek kaplama, bir kez belirtilmiş |",
       "Bu tablodaki her satır, her biri katalogla kontrol edilmiş ama birbiriyle hiç kontrol edilmemiş iki kalemdir. Hiçbirini listede düzeltmek pahalı değildir. Hepsini binada düzeltmek pahalıdır.",
       "## Kalem değil açıklık satıyorsanız",
-      "Müşterilerimizin çoğu bu seti montajcılara kendi adlarıyla satan markalar ve distribütörlerdir. Onlar için ürün settir: tek teklif, tek sayfa kanat verisi, tek kaplama ve kendi şartnamelerine göre etiketlenmiş koliler; montajcıları öyle çalışıyorsa açıklık bazında. Seti bu şekilde isteyin, biz de öyle fiyatlandıralım. Bir kalem yelpazemizin dışındaysa (85 kg'ı aşan bir kanat için kapatıcı gibi) teklif bunu konteyner yola çıktıktan sonra değil, önce söyler.",
+      "Set tek bir ürün olarak fiyatlandırılabilir: tek teklif, tek sayfa kanat verisi, tek kaplama ve şartnamenize göre etiketlenmiş koliler; montajcılarınız öyle çalışıyorsa açıklık bazında. Seti bu şekilde isteyin, biz de öyle fiyatlandıralım. Bir kalem yelpazemizin dışındaysa (85 kg'ı aşan bir kanat için kapatıcı gibi) teklif bunu konteyner yola çıktıktan sonra değil, önce söyler.",
       "## Bize ne göndermelisiniz",
-      "Açıklığın tamamını altı bilgi fiyatlandırır: her kanadın genişliği ve ağırlığı; kapı kalınlığı; hangi kanadın aktif olduğu; iki kanadın da kaçış genişliğine sayılıp sayılmadığı; dış tarafta anahtar mı, serbest geçiş mi, yoksa hiçbir şey mi gerektiği; ve tek bir kaplama. Bunlarla, hiçbir şey üretilmeden önce her kalemi diğer her kalemle kontrol ederiz."
+      "Açıklığın tamamını altı bilgi fiyatlandırır: her kanadın genişliği ve ağırlığı; kapı kalınlığı; hangi kanadın aktif olduğu; iki kanadın da kaçış genişliğine sayılıp sayılmadığı; dış tarafta anahtar mı, serbest geçiş mi, yoksa hiçbir şey mi gerektiği; ve tek bir kaplama."
     ],
     "faq": [
       {
@@ -637,7 +635,7 @@
       "summary": "9f02abb408f0",
       "seoTitle": "34dfbca83da3",
       "seoDescription": "6395ea8aa1cf",
-      "body": "7ac89beb63e2",
+      "body": "d1b6ecac92fd",
       "faq": "ba7a0cc545ad"
     }
   },
@@ -793,7 +791,7 @@
       "Bu toplam, bölünme değildir. 70 mm (2-3/4\") bir silindir çoğunlukla 35/35’tir, ama 30/40 ve 40/30 da 70’tir ve farklı kapılara uyan farklı parçalardır. Bölünme, kamın merkezinden dışa doğru ölçülür; kam da bağlantı vidasının geçtiği yerdir. Bunu ayrı bir yazıda uzun uzun anlattık, çünkü bu parçada en sık yapılan sipariş hatası budur. Burada tekrarlamayacağız.",
       "Bu yelpazedeki her silindir masif pirinç olarak yayınlanmıştır. Bunu belirtmeye değer, çünkü pirinç silindir üretmenin en ucuz yolu değildir ve fark dışarıdan görünmez. Pirinç gövde, zamak dökümden daha sıkı toleransla işlenir; beş pimli bir mekanizmanın, anahtarın on yıl boyunca hafif eksen dışı itilmesinden sonra da düzgün dönmesini sağlayan budur. Bu silindirlerin, zamak bir parçanın taşıyamadığı bir BHMA kaplama numarası taşıyabilmesinin nedeni de budur: A156.18’in taban grupları çelik, pirinç ve paslanmaz çeliktir; çinko bunlardan biri değildir.",
       "Kaplamalar varyant başına değil, liste olarak yayınlanır: parlak pirinç (PB), krom kaplama (CP), saten nikel ve standart setimizin geri kalanı. Bu harfler kaplama ve sipariş kodu sayfalarımızda belgelenmiştir. Silindirdeki kaplama kodu, başka herhangi bir üründeki kaplama kodu gibi davranır: bir görünümü adlandırır; BHMA numarası için ise taban metal de gerekir, burada o metal her zaman pirinçtir.",
-      "Kaplamadan sonraki harfler tam olarak belgelenmemiş kısımdır ve uydurmaktansa bunu söylemeyi tercih ederiz. Bu yelpazedeki birkaç varyant DK, KT veya IK taşır. Bunlar kendi iç sistemimizdeki fonksiyon kodlarıdır ve fabrika anlamlarını bize henüz yazılı olarak teyit etmedi. Beklediğimiz altı sipariş kodunun listesindeler: bir kaplama harfi ve beş fonksiyon harfi. Cevap gelene kadar talebinizde fonksiyonu kelimelerle yazın; biz onu koda eşleştirelim, tersini değil.",
+      "Kaplamadan sonraki harfler tam olarak belgelenmemiş kısımdır ve uydurmaktansa bunu söylemeyi tercih ederiz. Bu yelpazedeki birkaç varyant DK, KT veya IK taşır. Bunlar fonksiyon kodlarıdır ve anlamlarını henüz yayımlamıyoruz. Talebinizde fonksiyonu kelimelerle yazın; biz onu koda eşleştirelim, tersini değil.",
       "Seçili yelpazedeki iki uzunluğun hiç yayınlanmış teknik satırı yoktur: 60 ve 90. 60’ın beş, 90’ın dört varyantı katalogda fotoğraflarıyla ama malzeme, kaplama veya ölçü satırı olmadan yer alır. Uzunluk model numarasındadır ve bugün bunlar hakkında yayınladığımız gerçekten bundan ibarettir. Diğerleriyle birlikte fabrika listesinde bekliyor. Cevap gelene kadar “60 neyden yapılmış?” sorusunun dürüst cevabı, neredeyse kesin öyle olsa da “komşuları gibi pirinç” değil, “soracağız”dır.",
       "Bir proje için standart seçiyorsanız önce 70’e bakın; nedeni yalnızca yelpazedeki ağırlığıdır: 80 için altı ve 45 için üç varyanta karşılık on dokuz yayınlanmış varyant. Katalog bu uzunluk etrafında kuruludur ve 70 mm’de (2-3/4\") standartlaşan bir proje, özel sipariş olmadan en geniş kaplama ve fonksiyon seçeneğine sahip olur. Kapılarınız başka bir ölçü gerektiriyorsa, uzunluk bir stok kararı değil, üretim değişkenidir; sorun.",
       "Silindir aynı zamanda en sık anahtarlanan parçadır ve anahtarlama uzunluktan ayrı bir konuşmadır. Bunların her biri bir grup içinde aynı anahtarlı olarak verilebilir ya da bir master anahtar sistemine dahil edilebilir. Master anahtar seviyeleri yazımız, bir binanın gerçekte kaç kademeye ihtiyaç duyduğunu anlatıyor; cevap genellikle talepte istenenden azdır. Sipariş aşamasında önemli olan, anahtarlamanın silindirler kesilmeden önce kararlaştırılması ve anahtarlama çizelgesinin sahiplenilmesi gereken bir belge olmasıdır.",
@@ -823,7 +821,7 @@
       },
       {
         "question": "Silindirdeki DK, KT ve IK harfleri ne anlama geliyor?",
-        "answer": "Henüz bilmiyoruz ve uydurmaktansa bunu söylemeyi tercih ederiz. Bunlar kendi iç sistemimizdeki fonksiyon kodlarıdır ve fabrika anlamlarını bize yazılı olarak teyit etmedi. Beklediğimiz altı sipariş kodunun listesindeler: bir kaplama harfi ve beş fonksiyon harfi. Cevap gelene kadar talebinizde fonksiyonu kelimelerle yazın; biz onu koda eşleştirelim, tersini değil."
+        "answer": "Anlamlarını henüz yayımlamıyoruz ve uydurmaktansa bunu söylemeyi tercih ederiz. Bunlar fonksiyon kodlarıdır. Talebinizde fonksiyonu kelimelerle yazın; biz onu koda eşleştirelim, tersini değil."
       },
       {
         "question": "Bazı uzunlukların neden yayınlanmış teknik özelliği yok?",
@@ -843,8 +841,8 @@
       "summary": "4b440593405b",
       "seoTitle": "aa9271e5892f",
       "seoDescription": "1f1962b65bad",
-      "body": "3fa9f4678d2c",
-      "faq": "8e8a6243d9ab"
+      "body": "468aa71d8b3f",
+      "faq": "7ce8af514911"
     }
   },
   "exit-device-push-bar-length": {
@@ -868,7 +866,7 @@
       "Uzunluk, barı takmanın yalnızca yarısıdır. Diğer yarısı yüksekliktir ve zevke göre değil, standarda veya yönetmeliğe göre belirlenir. EN 1125, çalıştırma barının bitmiş zeminden 900 mm ile 1100 mm (35-7/16\" ile 43-5/16\") arasına takılmasını öngörür. Kuzey Amerika’da NFPA 101 panik donanımını 34 ile 48 inç (864 ile 1219 mm) arasına koyar. Bu aralıklar çakışır, bu kullanışlıdır, ama aynı değildir ve geçerli olan, makamınızın uyguladığı baskıdır. Önceki bir projeden akılda kalan bir değere değil, güncel metne bakın.",
       "Yükseklik kapıyla etkileşir. Tablalı veya camlı bir kanattaki ara kayıt, tam barın gitmesi gereken yerde ya da tam gitmemesi gereken yerde olabilir; tekmelik veya cam panel de cihazın uç parçalarıyla çakışabilir. Sipariş vermeden önce bar yüksekliğini kapı görünüşüne işaretleyin ve o yükseklikte başka neyin çizili olduğuna bakın.",
       "## İtme barı mı dokunmatik bar mı ve uzunluk her birinde neden farklı önem taşır",
-      "Yukarıdakilerin hepsi barın kanat boyunca uzunluğuyla ilgilidir ve cihaz hangi çalıştırma elemanını kullanırsa kullansın geçerlidir. Ancak geleneksel itme barı (iki uç parçası üzerinde dönen çapraz bar) ile düz barın tamamının çalıştırma yüzeyi olduğu dokunmatik bar arasındaki seçim, uzunluğun ne kadar hata kaldırdığını değiştirir. İtme barı ile dokunmatik barı karşılaştıran yazımız, bu sitede yapay zekâ arama motorlarının en sık alıntıladığı yazıdır ve bu seçimi düzgünce anlatır. Uzunluk için kısa özet: iki tipte de çalıştırma yüzeyi, standardın gerektirdiği kadar kanadı kaplamalıdır. Kanattan kısa kalan bir bar, kişinin cihazı değil kapıyı ittiği bir şerit bırakır.",
+      "Yukarıdakilerin hepsi barın kanat boyunca uzunluğuyla ilgilidir ve cihaz hangi çalıştırma elemanını kullanırsa kullansın geçerlidir. Ancak geleneksel itme barı (iki uç parçası üzerinde dönen çapraz bar) ile düz barın tamamının çalıştırma yüzeyi olduğu dokunmatik bar arasındaki seçim, uzunluğun ne kadar hata kaldırdığını değiştirir. İtme barı ile dokunmatik barı karşılaştıran yazımız bu seçimi düzgünce anlatır. Uzunluk için kısa özet: iki tipte de çalıştırma yüzeyi, standardın gerektirdiği kadar kanadı kaplamalıdır. Kanattan kısa kalan bir bar, kişinin cihazı değil kapıyı ittiği bir şerit bırakır.",
       "## Boyuna kesmek ve ne zaman kesmemek",
       "Yalnızca ayarlanabilir olarak yayınlanmış modeller kesilmeli veya boyuna ayarlanmalıdır: yelpazemizde 300, 302 ve 302-S ile özel üretime açık 314 ve ölçüye göre üretilen 320 ve 330. Şantiyede kısaltılan sabit uzunluklu bir cihaz artık teslim edilen cihaz değildir ve yangın veya kaçış kapısında bu, kapıyı onaylayacak kişi için önem taşıyabilir. Ayarlanabilir modellerden hiçbiri projeye uymuyorsa, montajda birini değiştirmeyi planlamak yerine sipariş aşamasında ölçüye göre üretilmiş bir cihaz isteyin.",
       "Birçok kapı genişliği olan bir projede, her açıklık için farklı sabit uzunluk sipariş etmek yerine tek bir ayarlanabilir modelde standartlaşmak toplamda çoğu zaman daha ucuzdur. Tek parça numarası, tek kaplama ve tek yedek parça seti demektir; şantiye ekibi de tek bir cihazı öğrenir.",
@@ -909,7 +907,7 @@
       "summary": "07c496ad14e5",
       "seoTitle": "6cfbca699410",
       "seoDescription": "c3943b193f34",
-      "body": "d4564a8ca99a",
+      "body": "dcdf088f7b4e",
       "faq": "46f0bc9abe22"
     }
   },
@@ -925,7 +923,7 @@
       "Kalıbı bozan 630’dur ve aynı zamanda Kuzey Amerika’da şartnamelerde en çok yazılan kaplamadır. Hiç kaplama değildir: 630, masif saten paslanmaz çeliktir; yüzey işlemi üste uygulanmamış, metalin kendisine işlenmiştir. 630’un fiyat gerekçesiyle 626’ya alternatif olarak sunulamamasının nedeni budur. Aşınıp gidecek bir şey yoktur, çünkü kaplama yoktur; kaplanacak bir şey de yoktur, çünkü parça zaten kaplamanın adını verdiği metaldir.",
       "Pratik sonuç şu: tek başına bir kaplama kodu bir BHMA numarasına eşlenemez. Kataloğumuz bir kaplama alanı ve ayrı bir malzeme alanı tutar; numara ancak ikisi de biliniyorsa vardır. Pirinç üzerine CP ile çelik üzerine CP iki farklı BHMA numarasıdır ve kaplama alanı hangisi olduğunu söylemez. Bu yüzden sistemimizdeki eşleme iki alanı birden alır ve iki yarımdan biri bilinmiyorsa ya da birden fazla metal adlandırıyorsa hiçbir şey döndürmez.",
       "Bunu katalog genelinde çalıştırınca yayınlanmış 519 kaydın 77’si bir numara kazanır; yaklaşık yüzde on beş. En yaygınları 630 ve 629’dur, yani saten ve parlak paslanmaz çelik; en büyük malzeme grubu paslanmaz çelik olan bir katalogdan beklenecek şey budur. Ardından 605 parlak pirinç, 625 parlak krom, 626 saten krom, 619 saten nikel gelir. Bir kayıt 626 değil 652 çıkar ve bu tek kayıt yazının bütün argümanıdır: aynı renk, çelik taban, farklı numara.",
-      "Kalan 442’yi sıralamaya değer, çünkü bir alanın neden boş olduğunu söylemeyen tedarikçi genellikle bir tahmini saklıyordur. 277 kayıtta hiç kaplama belirtilmemiştir; bu fabrikamıza sorulacak bir sorudur ve listededir. 20 kayıtta malzeme alanı boştur. 22 kayıtta malzeme birden fazla metal adlandırır: “pirinç veya paslanmaz çelik” alıcının henüz yapmadığı bir seçimdir, dolayısıyla belirtilecek bir taban yoktur. On sekizi Antik Pirinç’tir; bu tek bir A156.18 numarası değil, bir eskitme kaplama ailesidir. On ikisi saten mi parlak mı olduğunu söylemeden “paslanmaz çelik” der; burada 630 da 629 da uyar ve tahmin etmek birini seçmek olur.",
+      "Kalan 442’yi sıralamaya değer, çünkü bir alanın neden boş olduğunu söylemeyen tedarikçi genellikle bir tahmini saklıyordur. 277 kayıtta hiç kaplama belirtilmemiştir. 20 kayıtta malzeme alanı boştur. 22 kayıtta malzeme birden fazla metal adlandırır: “pirinç veya paslanmaz çelik” alıcının henüz yapmadığı bir seçimdir, dolayısıyla belirtilecek bir taban yoktur. On sekizi Antik Pirinç’tir; bu tek bir A156.18 numarası değil, bir eskitme kaplama ailesidir. On ikisi saten mi parlak mı olduğunu söylemeden “paslanmaz çelik” der; burada 630 da 629 da uyar ve tahmin etmek birini seçmek olur.",
       "Elli altısı zamaktır ve bu grup kendi cümlesini hak eder, çünkü verimizdeki bir boşluk değil, parçaya dair bir gerçektir. A156.18’in taban malzemeleri çelik, pirinç ve bronz, ve paslanmaz çeliktir. Zamak bunlar arasında değildir, alüminyum da değildir. Pirinç taban üzerine 626 isteyen bir şartname, renk ne kadar yakın olursa olsun zamak bir dökümle karşılanamaz ve alıcının bunu onay dosyasından sonra değil, numuneden önce duyması daha iyidir. Bunu söylemek bize, zaten inceleme aşamasında kaybedeceğimiz talepleri kaybettirir.",
       "## İnsanların gerçekten yazdığı dört soru, sırayla yanıtlandı",
       "Bunlar uydurma örnekler değil. İnsanları bu sayfaya en sık getiren dört kaplama sorusudur ve her birinin, kod tablolarının vermediği kısa ve doğru bir cevabı vardır.",
@@ -972,7 +970,7 @@
       "summary": "3a1d7e3e03cb",
       "seoTitle": "466e81b9fd29",
       "seoDescription": "d676be3b6346",
-      "body": "35d07ae85186",
+      "body": "d81d9340764a",
       "faq": "f20625faeb6a"
     }
   },
@@ -988,7 +986,7 @@
       "İkinci adım, sabitleme vidasını çıkarın. Kapının kenarında, kilit gövdesinin ön plakasında, silindirin ortası hizasındadır; tek bir vida ve genellikle o ön plakada kilidin kendisini tutmayan tek parça. Vida çıkmış ve anahtar hâlâ çevrili hâldeyken silindir anahtardan tutularak dışarı çekilir. Hareket etmiyorsa kam serbest değildir; daha sert çekmek yerine anahtarı biraz daha çevirin.",
       "Üçüncü adım, yenisini aynı şekilde yerleştirin. Anahtar takılı, kam serbest konuma çevrilmiş, dış yüzden içeri kaydırın. Dördüncü adım, vidayı takın. Vida silindirin ortasından (kamın kendi ekseninden) geçer; bu yüzden yalnızca silindir tam doğru derinlikteyken girer. Bu direnç bir özelliktir: yanlış derinlikte kolayca giren bir vida silindiri gevşek bırakırdı. Sıkıca sıkın ve orada durun. Pirinç içinde küçük bir vidadır ve onu taşıyıcı bir bağlantı elemanı gibi zorlarsanız kopan parça odur.",
       "Beşinci adım kapının güvenli olup olmadığını belirleyen adımdır ve on saniye sürer: silindirin rozetten ya da kol aynasından ne kadar dışarı çıktığına bakın. Sıfırdan yaklaşık üç milimetreye kadar çıkıntı doğrudur. Daha fazlası bir alete tutunacak yer verir; tutulabilen bir silindir kırılabilir ve bu, Avrupa profilli bir kapının anahtarsız açılmasının en yaygın tek yoludur. Fazla içeride kalmak ise başka bir arızadır: anahtar tam oturmaz ve rozet gövdeye sürtünür. Çıkıntı yanlışsa silindirin boyu ya da bölünmesi yanlıştır; hiçbir sıkma bunu düzeltmez.",
-      "Şimdi herkesin atladığı iki adım. Birincisi: kolları yerine takmadan önce anahtarı İKİ yüzden de, varsa mandalı da deneyin. İkincisi, şikâyet olarak geri gelen asıl adım: kapı KAPALIYKEN tekrar deneyin. Kendi ağırlığı altındaki bir kapı kasaya, açıkken savrulduğundan farklı oturur; açık kapıda rahatça serbest kalan bir dil ya da sürgü, iki milimetre kaymış bir karşılığa sürtünebilir. Arızalı diye iade edilip tezgâhta sorunsuz çalışan her silindir bu durumdu.",
+      "Şimdi herkesin atladığı iki adım. Birincisi: kolları yerine takmadan önce anahtarı İKİ yüzden de, varsa mandalı da deneyin. İkincisi, şikâyet olarak geri gelen asıl adım: kapı KAPALIYKEN tekrar deneyin. Kendi ağırlığı altındaki bir kapı kasaya, açıkken savrulduğundan farklı oturur; açık kapıda rahatça serbest kalan bir dil ya da sürgü, iki milimetre kaymış bir karşılığa sürtünebilir.",
       "Neler tedarik ediyoruz ve bizimle neyi teyit etmelisiniz. Silindirlerimiz Avrupa profilinde masif pirinçtir ve katalogda dokuz toplam boy vardır: 45, 47, 54, 56, 60, 65, 70, 80 ve 90 mm (3-9/16\"); boy, model numarasının baştaki sayısıdır. Katalogun her model için yayımlamadığı şeyler bölünme, kam tipi ve anahtar profilidir; bu yüzden kapı kalınlığını ve her yüze neyin monte edildiğini gönderin, sipariş etmeden önce üçünü de modele göre teyit edelim. Kapılar aynı anahtarla ya da master anahtarla çalışacaksa bunu aynı görüşmede netleştirin; anahtar profili tüm sistemde ortak olmalıdır ve sonradan değiştirilemez.",
       "## Çıkmadığında",
       "Bu sayfaya ulaşan sorgulardan biri tamamen alıntılanmaya değer, çünkü şu anda bir kapının önünde duran birinden geliyor: \"euro profile cylinder removal, door unlocked, retaining screw, cam alignment\". Bu aynı anda ters giden dört ayrı şeydir ve hepsinin tek bir nedeni vardır.",
@@ -1024,7 +1022,7 @@
       },
       {
         "question": "İnsanlar hangi montaj adımlarını atlıyor?",
-        "answer": "İki adımı. Kollar yerine takılmadan önce anahtarı iki yüzden de, varsa mandalı da denemek. Ardından kapı kapalıyken yeniden denemek: kendi ağırlığı altındaki bir kapı kasaya, açıkken savrulduğundan farklı oturur ve açık kapıda rahatça serbest kalan bir dil ya da sürgü, iki milimetre kaymış bir karşılığa sürtünebilir. Arızalı diye iade edilip tezgâhta sorunsuz çalışan her silindir bu durumdu."
+        "answer": "İki adımı. Kollar yerine takılmadan önce anahtarı iki yüzden de, varsa mandalı da denemek. Ardından kapı kapalıyken yeniden denemek: kendi ağırlığı altındaki bir kapı kasaya, açıkken savrulduğundan farklı oturur ve açık kapıda rahatça serbest kalan bir dil ya da sürgü, iki milimetre kaymış bir karşılığa sürtünebilir."
       },
       {
         "question": "Yedek silindir sipariş ederken bize ne göndermelisiniz?",
@@ -1036,8 +1034,8 @@
       "summary": "8416328fdd90",
       "seoTitle": "0f9374d26209",
       "seoDescription": "05e819689fd0",
-      "body": "15de5535ebdf",
-      "faq": "7855c1eaa80b"
+      "body": "84a9365a6d09",
+      "faq": "6e7023f94b82"
     }
   },
   "handing-left-right-and-universal": {
@@ -1387,7 +1385,7 @@
       "Aranacak kelime ve bu makalenin var olma nedeni, farklı pazarların bu parçaya farklı adlar vermesidir. Indicator bolt, indicator lock, occupied-vacant bolt, vacant-engaged bolt, washroom turn; şartnamelerde çoğu zaman yalnızca \"privacy set with indicator\". Türkçede boş/dolu göstergeli sürgü, WC göstergeli kilit ya da boş/dolu kilidi olarak geçer. Hepsi aynı parçayı anlatır. Kendi kataloğumuz bu kategoriye Boş/Dolu Göstergesi (Indicator) der ve 200 modelinde işlevi \"Vacant & Occupied Indicator\" olarak listeler; yapısını da açıkça sürgülü kilit olarak adlandırır.",
       "200 modelimiz zamaktır (çinko alaşımı), sıva üstü monte edilir, saten ya da kaplamalı yüzeyle gelir ve tuvalet kabini kapıları, WC kapıları, oteller, ofisler, hastaneler ve umumi tuvaletler için öngörülmüştür. Sıva üstü olması göründüğünden daha önemlidir: kapıda gömme yuva ya da vida delikleri dışında bir hazırlık gerekmez. Yani gösterge mevcut bir kabine sonradan takılabilir; kabinlerin çoğu da zaten mevcut kabinlerdir.",
       "400 ve 500 aynı fikrin farklı metallerdeki hâlidir. 400 zamaktır. 500 paslanmaz çeliktir ve tuvaletin agresif maddelerle temizlendiği ya da binanın sahile yakın olduğu yerlerde tanımlanması gereken modeldir; kaplamalı bir zamak döküm ile paslanmaz bir parça, iki yıl böyle bir ortamdan sonra aynı ürün değildir. Tam yüzey seçeneğine sahip olan da 500'dür: antik pirinç, antik bakır, parlak pirinç, saten pirinç, paslanmaz çelik, ayna parlak, saten krom ve saten nikel.",
-      "Belirtmediğimiz iki şey var ve umumi bir binada en çok önem taşıması muhtemel olanlar da bu ikisi. Bu ürünler için bir çevrim testi değeri yayımlamıyoruz; şartnameniz belirli sayıda çalışmada test edilmiş bir sürgü istiyorsa, varsaymak yerine teklif vermeden önce sorun. Ayrıca gece kilitlerimizde yaptığımız gibi 200 için bir kapı kalınlığı aralığı da yayımlamıyoruz. İkisi de tahmin etmeye razı olduğumuz yanıtlar değil, fabrikamıza sorulacak sorulardır ve ikisi de yapılacaklar listesinde.",
+      "Belirtmediğimiz iki şey var ve umumi bir binada en çok önem taşıması muhtemel olanlar da bu ikisi. Bu ürünler için bir çevrim testi değeri yayımlamıyoruz; şartnameniz belirli sayıda çalışmada test edilmiş bir sürgü istiyorsa, varsaymak yerine teklif vermeden önce sorun. Ayrıca gece kilitlerimizde yaptığımız gibi 200 için bir kapı kalınlığı aralığı da yayımlamıyoruz.",
       "Sıradan bir ticari tuvalet için dürüst yanıt şu: gösterge nadiren pahalı karardır ama çoğu zaman görünen karardır. Acil açmayı alın, metali temizlik düzenine göre doğru seçin ve pencerenin kol mesafesinden değil odanın öbür ucundan okunduğunu kontrol edin. Teknik olarak iki durumlu ama pratikte okunamayan bir pencere, bu ürün kategorisindeki en yaygın şikâyettir ve hiçbir zaman bir üretim hatası değildir.",
       "## Sıva üstü gösterge mi, banyo kilidi üzerinde gösterge mi",
       "Bir tuvalet kapısına boş/dolu tabelası koymanın iki yolu vardır ve farklı kapılara uyarlar. Birincisi yukarıda anlatılandır: 200, 400 ve 500 modellerimiz gibi, kendi başına bir kilit olan ve vida delikleri dışında hazırlık gerektirmeyen sıva üstü göstergeli sürgü. Yeri kabin kapıları ve yenilenen mevcut kapılardır.",
@@ -1438,7 +1436,7 @@
       "summary": "5490d89dde81",
       "seoTitle": "3ac2eef0e024",
       "seoDescription": "a671ec187536",
-      "body": "e529925518ff",
+      "body": "de4a7690cbbe",
       "faq": "ad83ebc715a6"
     }
   },
@@ -1516,7 +1514,7 @@
       "## Ters yazım tuzağı; bunun sorumluluğu bizde",
       "İlk tabloya dikkatle bakarsanız, aynı kodun tersten yazılmış hâli olan üç çift bulursunuz:",
       "PB ve BP ikisi de parlak pirinç demektir. BN ve NB ikisi de siyah nikel demektir. CB ve BC ikisi de parlak krom demektir.",
-      "Bu tek bir kayıttaki yazım hatası değildir; iki yazım da seri genelinde görülür, çünkü farklı yıllarda farklı kaynaklardan gelmişlerdir ve kimse bunları birleştirmemiştir. Sessizce standartlaştırmak yerine burada açıkça belirtiyoruz; çünkü elinde eski bir fiyat listesi olan alıcının, iki farklı satırdaki `BP` ile `PB`'nin iki farklı yüzey olmadığını bilmesi gerekir.",
+      "Bu tek bir kayıttaki yazım hatası değildir; iki yazım da seri genelinde görülür, çünkü farklı yıllarda yazılmışlardır. Sessizce standartlaştırmak yerine burada açıkça belirtiyoruz; çünkü elinde eski bir fiyat listesi olan alıcının, iki farklı satırdaki `BP` ile `PB`'nin iki farklı yüzey olmadığını bilmesi gerekir.",
       "Aynısı siyah için de geçerlidir. BL, BRN ve ORB verilerimizde siyaha karşılık gelir; yalnızca ORB ayrı bir niyet taşır: eskitme bronz, yani nötr değil sıcak alt tonlu bir siyah. Siyahın proje için önemi varsa, siparişte yüzeyi kelimelerle yazın ve numune isteyin; harfler bunu çözmez.",
       "## Konum harflerden üstündür",
       "Bütün sistemi okunabilir kılan kural şu ve bunu kimse yazmaz.",
@@ -1556,7 +1554,7 @@
       "summary": "dbed28865350",
       "seoTitle": "46f074447228",
       "seoDescription": "3c7611367536",
-      "body": "f0a104da278c",
+      "body": "000bb82edd48",
       "faq": "08382c0a0382"
     }
   },
@@ -1710,7 +1708,7 @@
       "Çıkıntı, şantiyede sorun çıkaran ve alıcıların en son kontrol ettiği ölçüdür. Kapı yüzünden takımın en dıştaki noktasına olan mesafedir; kapının bir duvara karşı açılıp açılamayacağını, bir çiftte kolun yandaki kapıya çarpıp çarpmayacağını ve kolun bir paltoya takılıp takılmayacağını belirler. Ticari bir kol için altmış milimetre normaldir; mesele, ikisinin de bunu yayımlaması ve dolayısıyla hiçbir şey sipariş edilmeden önce pervaz derinliğiyle karşılaştırılabilmesidir.",
       "Rozet çapı başka bir nedenle önemlidir: kolun neyi örtebileceğini belirler. 53 mm'lik bir rozet, daha büyük rozetli bir kilidin bıraktığı hazırlığı gizlemez; dolayısıyla mevcut kapıların kollarının değiştirildiği bir renovasyonda ölçülecek sayı eski rozetin çapıdır. Basit bir birebir değişimin marangozluk işine dönüşmesinin yaygın bir yoludur.",
       "Üçü de 35–50 mm (1-3/8\" ile 1-15/16\") kapı alır; bu, zamak kollu takımlarımızın çoğundan daha geniş bir aralıktır ve daha ağır bir kanat için bunlara uzanılmasının nedenidir. Üçünde de silindir pirinçtir. Gövdeler paslanmaz çeliktir ve onları zamak LH serisinden farklı bir konuşmaya taşıyan da budur: paslanmaz; dış kapı, kıyı binası ya da agresif temizlenen bir tuvalet için şartnamedir, zamak ise diğer her yer için.",
-      "9008 bu seçili yelpazededir ve iki varyantında toplam altı özellik satırı yayımlar: paslanmaz çelik, pirinç silindir, 35–50 mm kapı kalınlığı. Kol boyu yok, rozet çapı yok, çıkıntı yok. Bunları aynı serideki komşusu 9007'den çıkarmayacağız; çünkü komşu bir modelden kopyalanan çıkıntı, tam da bir kapının duvara karşı açılamamasına yol açan sayıdır. Fabrikadan istediğimiz ölçüler listesinde yer alıyor.",
+      "9008 bu seçili yelpazededir ve iki varyantında toplam altı özellik satırı yayımlar: paslanmaz çelik, pirinç silindir, 35–50 mm kapı kalınlığı. Kol boyu yok, rozet çapı yok, çıkıntı yok. Bunları aynı serideki komşusu 9007'den çıkarmayacağız; çünkü komşu bir modelden kopyalanan çıkıntı, tam da bir kapının duvara karşı açılamamasına yol açan sayıdır.",
       "Aralarında seçim yapıyorsanız pratik sıra şudur: önce kapı kalınlığı (üçü de 35–50 mm aldığı için nadiren belirleyicidir), sonra pervaza karşı çıkıntı, sonra kayıt genişliğine karşı kol boyu, sonra kaplama. Cevap 9008 ise eksik üç değeri siparişten sonra değil önce bizden isteyin; çünkü şantiyede düzeltilemeyen tam da bu üçüdür.",
       "## Tam olarak hangi paslanmaz",
       "Yukarıdaki her şey bu kolları paslanmaz çelik olarak anıyor ve bir istisna dışında kayıtların söylediği de yalnızca bu: \"paslanmaz çelik\", kalite belirtilmeden. İstisna 9088 SS'dir; kaydı plakaya damgalı SUS 304'ü belirtir. Bunu geçiştirmek yerine işaretlemeye değer; çünkü paslanmazın alıcının beklediği gibi davranıp davranmayacağını belirleyen tam da kalitedir. 304 kalite, iç mekân ve genel dış mekân kullanımı için olağan seçimdir; eklenmiş molibdeniyle 316, kıyı havası, yüzme havuzları ve agresif temizlik için kalitedir; 201 ise 304'ün umursamadığı koşullarda iz bırakıp lekelenebilen daha ucuz bir kalitedir. 304, 201 ve 316 paslanmaz çelik kaliteleri üzerine yazımız farkları düzgünce anlatıyor.",
@@ -1744,7 +1742,7 @@
       },
       {
         "question": "9008 neden kol boyu ya da çıkıntı yayımlamıyor?",
-        "answer": "Çünkü fabrika bu değerleri bize henüz vermedi ve biz onları aynı serideki komşusu 9007'den çıkarmayacağız; komşu bir modelden kopyalanan çıkıntı, tam da bir kapının duvara karşı açılamamasına yol açan sayıdır. 9008 paslanmaz çelik, pirinç silindir ve 35–50 mm kapı kalınlığı yayımlar. İstediğiniz model buysa eksik üç değeri siparişten sonra değil önce bizden isteyin."
+        "answer": "Çünkü bu değerler henüz yayımlanmadı ve biz onları aynı serideki komşusu 9007'den çıkarmayacağız; komşu bir modelden kopyalanan çıkıntı, tam da bir kapının duvara karşı açılamamasına yol açan sayıdır. 9008 paslanmaz çelik, pirinç silindir ve 35–50 mm kapı kalınlığı yayımlar. İstediğiniz model buysa eksik üç değeri siparişten sonra değil önce bizden isteyin."
       },
       {
         "question": "9000 kapı kolları hangi kalite paslanmaz çelikten?",
@@ -1760,8 +1758,8 @@
       "summary": "2d3d9c020383",
       "seoTitle": "561e319323c3",
       "seoDescription": "ef9249c00346",
-      "body": "c3d495cfaf3b",
-      "faq": "7aa708306dd2"
+      "body": "e807a6dd4e98",
+      "faq": "de5eb43d79e4"
     }
   },
   "stainless-steel-grades-304-201-316": {
@@ -1770,7 +1768,7 @@
     "seoTitle": "Size Hangi Paslanmaz Sınıfı Teklif Edildi? 304, 201 mi 316 mı",
     "seoDescription": "Kapı donanımında 201, 304 ve 316 paslanmazı ayıran nedir, 201 kıyıda neden paslanır, numune mıknatısla nasıl test edilir ve tedarikçiye ne sorulmalı.",
     "body": [
-      "Paslanmaz bir kapı kolu, hepsi aynı biçimi aynı beyaz fonda fotoğraflayan Çinli fabrikalardan dört ila on bir dolar arasında herhangi bir fiyata gelir. Fotoğraflar yalan söylemiyor. Metal farklıdır ve fark, donanım bir binada bir yıl kaldıktan sonra ortaya çıkar; yani konteyner gümrükten çoktan çıkmış, teminat serbest bırakılmış ve alıcı başka işe geçmişken.",
+      "Pek çok fabrikanın paslanmaz kapı kolları aynı biçimde, aynı beyaz fonda fotoğraflanır. Fotoğraflar yalan söylemiyor. Metal farklıdır ve fark, donanım bir binada bir yıl kaldıktan sonra ortaya çıkar; yani konteyner gümrükten çoktan çıkmış, teminat serbest bırakılmış ve alıcı başka işe geçmişken.",
       "Olağan dolaşımda üç kalite vardır. 304 varsayılan mimari paslanmazdır: yaklaşık %18 krom, %8 nikel, kasıtlı eklenmiş molibden yok. İnsanların çoğu paslanmaz çelik dediğinde bunu kasteder, şartnamelerin çoğu bunu amaçlar ve normal bir iç bölge binasında korozyona uğramaz. 201, nikel pahalanınca icat edilmiş bir ikame alaşımdır: nikeli %4 civarına düşürür, östeniti mangan ve azotla tamamlar. Beşte bir ila üçte bir oranında daha ucuzdur, bir teşhir salonunun öbür ucundan 304'ten ayırt edilemeyecek bir yüzeye parlatılır ve belirgin biçimde daha düşük korozyon direnci taşır. 316 ise ters yöne gider: tuzlu suya yakın yerlerde ve yüzme havuzlarında 304'te çukurcuk açan arıza biçimi olan klorür saldırısına direnmek için özellikle %2 ila %3 molibden ekler.",
       "## Neden biri paslanır da diğeri paslanmaz",
       "Paslanmaz çelik paslanamayan bir metal değildir. Kendini onaran bir metaldir. Yaklaşık %10,5'in üzerindeki krom havadaki oksijenle tepkimeye girerek birkaç atom kalınlığında pasif bir tabaka oluşturur; bu tabaka çizildiğinde, ortamda oksijen olduğu ve onu kimyasal olarak saldıran bir şey bulunmadığı sürece saniyeler içinde yeniden oluşur. Bu yazıdaki her şey, o filmin ne kadar iyi tuttuğu ve ne kadar hızlı geri geldiğiyle ilgili bir sorudur.",
@@ -1822,7 +1820,7 @@
       "summary": "86751d81e7c5",
       "seoTitle": "90bc71d688fb",
       "seoDescription": "63a932e15e31",
-      "body": "9e04a27c0656",
+      "body": "ba7c92c5a23d",
       "faq": "280ac87782b9"
     }
   },
@@ -1920,7 +1918,7 @@
       "Ürün sayfalarındaki yangın iddialarının, bizimkiler dahil, en fazla şüpheyi hak ettiği yer de burasıdır. \"1,5 saat\" ya da \"2,5 saat\" gibi bir süre, ancak bir raporda ya da listelemede tanımlanmış, test edilmiş bir kapı montajının dayanımı olarak bir anlam taşır. Bir cihazın yanında tek başına durduğunda bir kanıtı değil bir beklentiyi tarif eder. Hangi montajın, kim tarafından ve hangi standarda göre test edildiğini sorun; cevap belgesiz bir sayıysa, onu belgesiz bir sayı olarak değerlendirin.",
       "## Şartnameniz \"UL listed\" diyorsa",
       "İlk yapılacak şey, gerekliliğin gerçekte hangi kapıları kapsadığını belirlemektir. Birçok projede listeleme gerekliliği, kol ya da bar taşıyan her kapıya değil, belirli açıklıklara (dayanımlı kapılar, kaçış yolları, yangın stratejisinde adı geçen kapılar) uygulanır. Gerekliliği açıklık açıklık işaretleyen bir donanım listesi çoğu zaman listelenmiş cihazların kapıların tamamında değil bir kısmında gerektiğini ortaya koyar.",
-      "Listeleme gerektiren açıklıklar için bu gereklilik bizimle pazarlık konusu değildir ve aksini iddia etmek yanlış olur. 307 ve 311 modellerimiz teste gönderildi ve sertifika numaraları oluşana kadar onlar için bir listeleme, bir sınıf ya da UL tarafından tanınan bir yangın dayanımı ima etmeyeceğiz. Listeleme gerektirmeyen açıklıklar için (arka servis kapıları, depolar, düzenlenmiş güzergâhın dışındaki kapılar) konuşma kanat, boy ve dış kol üzerine sıradan bir konuşmadır ve bugün yapabiliriz.",
+      "Listeleme gerektiren açıklıklar için bu gereklilik bizimle pazarlık konusu değildir ve aksini iddia etmek yanlış olur. 307 ve 311 modellerimiz bugün sertifikaya sahip değil ve sertifika numaraları oluşana kadar onlar için bir listeleme, bir sınıf ya da UL tarafından tanınan bir yangın dayanımı ima etmeyeceğiz. Listeleme gerektirmeyen açıklıklar için (arka servis kapıları, depolar, düzenlenmiş güzergâhın dışındaki kapılar) konuşma kanat, boy ve dış kol üzerine sıradan bir konuşmadır ve bugün yapabiliriz.",
       "Yapmayacağımız şey, yazılı bir gerekliliği aşmak için bir ikame talebi önermektir. Listeleme şartı koyan bir mimar bunu bir nedenle yapmıştır ve bu şartnameye karşı sessizce listelenmemiş bir cihaz tedarik eden bir tedarikçi, riski kapıyı onaylayan kişiye aktarmış olur. Bunu cevabın neyi sipariş ettiğinizi değiştirdiği talep aşamasında öğrenmek, neyi sökeceğinizi değiştirdiği denetimde öğrenmekten iyidir.",
       "## Listeleme neden bir rapordan pahalıdır",
       "Alıcılar bazen listelenmiş bir cihazın neden test raporlu, başka açılardan benzer bir cihazdan daha pahalı fiyatlandırıldığını sorar. Cevap yukarıdaki tanımdadır: rapor tek bir modelin tek bir tarihteki tek bir testidir; listeleme ise belgelendirme kuruluşunun üretimi periyodik olarak denetlediği ve üreticinin ziyaretler arasında listeleme koşullarını sürdürdüğü süregelen bir düzenlemedir. Bu süregelen maliyet gerçektir, listeleme altında üretilen her cihaz tarafından taşınır ve listelemeyi yıllar önceki bir numune hakkında değil, sizin kolinizdeki cihaz hakkında anlamlı kılan şey de odur.",
@@ -1950,7 +1948,7 @@
       },
       {
         "question": "Şartnamem UL listelemesi istiyor ve tedarikçinin listelemesi yoksa ne olur?",
-        "answer": "Önce gerekliliğin hangi açıklıkları kapsadığını kontrol edin; çoğu zaman her kapıyı değil, dayanımlı kapıları ve kaçış yollarını kapsar. O açıklıklar için gereklilik pazarlık konusu değildir: UL listelememiz yok, 307 ve 311 modellerimiz teste gönderildi ve sertifika numaraları oluşana kadar aksini ima etmeyeceğiz. Gerekliliğin dışındaki kapılar için seçim, kanat, boy ve dış kol üzerine sıradan bir seçimdir. Yazılı bir gerekliliği aşmaya yönelik bir ikame talebi yalnızca riski kapıyı onaylayan kişiye aktarır."
+        "answer": "Önce gerekliliğin hangi açıklıkları kapsadığını kontrol edin; çoğu zaman her kapıyı değil, dayanımlı kapıları ve kaçış yollarını kapsar. O açıklıklar için gereklilik pazarlık konusu değildir: UL listelememiz yok, 307 ve 311 modellerimiz bugün sertifikaya sahip değil ve sertifika numaraları oluşana kadar aksini ima etmeyeceğiz. Gerekliliğin dışındaki kapılar için seçim, kanat, boy ve dış kol üzerine sıradan bir seçimdir. Yazılı bir gerekliliği aşmaya yönelik bir ikame talebi yalnızca riski kapıyı onaylayan kişiye aktarır."
       }
     ],
     "sourceHash": {
@@ -1958,8 +1956,8 @@
       "summary": "b791d5579771",
       "seoTitle": "2ea370028a62",
       "seoDescription": "ba34e75c4fea",
-      "body": "fc3f6d52692f",
-      "faq": "8f19828761b0"
+      "body": "b4309f5b8796",
+      "faq": "414ea2ce0995"
     }
   },
   "what-a-frameless-glass-door-needs": {
@@ -2102,7 +2100,7 @@
     "seoTitle": "Eski Bir Asma Kilit Kilit Fabrikasına Ne Anlatır",
     "seoDescription": "Almanya'da şövalyeye zincirli eski asma kilit: perçinli plakalar, içi boş anahtar için anahtar deliğinde pim, engelli kilit. Kilit fabrikası onda ne okur?",
     "body": [
-      "Kurucumuz Almanya'da bir sokakta yürürken bir otelin kapısında durdu. Önünde zırhlı, dökme bir şövalye duruyor; elindeki kalkanın yazıtı 998 yılını anıyor ve İmparator Otto II'nin torunu, Polonya Kraliçesi Richeza'nın adını veriyor. Şövalyenin ayak bileklerine bir asma kilit zincirlenmiş ve kurucumuzun fotoğrafladığı şey bu kilitti. Fotoğrafları şirket grubuna tek bir satırla gönderdi: bunu web sitesine koyun. Bir şey ne kadar eskiyse insanları o kadar çeker ve işimizi bildiğimizi o kadar gösterir.",
+      "Kurucumuz Almanya'da bir sokakta yürürken bir otelin kapısında durdu. Önünde zırhlı, dökme bir şövalye duruyor; elindeki kalkanın yazıtı 998 yılını anıyor ve İmparator Otto II'nin torunu, Polonya Kraliçesi Richeza'nın adını veriyor. Şövalyenin ayak bileklerine bir asma kilit zincirlenmiş ve kurucumuzun fotoğrafladığı şey bu kilitti.",
       "1998'den beri kapı donanımı kalıpları kesiyor; dolayısıyla bir nesnenin bakmaya değer olduğunu söylediğinde doğru tepki ona bakmaktır. İşte görebildiklerimiz ve (daha önemlisi) görebildiklerimizin nerede bittiği.",
       "Nasıl bir arada tutulduğundan başlayın. Gövdenin çevresinde sekiz yuvarlak başlı perçin var: ikisi omuzlarda, ikişer tane her iki yanda, ikisi tabanda. Bu, tek parça dökülmemiş ve kaynaklanmamış, plakalardan birleştirilmiş bir gövdedir: kesilmiş, üst üste konmuş, delinmiş, soğuk perçinlenmiş; kubbeler de çekiçle yayılmış perçin başlarıdır. Bağlantının ısı olmadan tutması gerektiğinde kullanılan yapı budur. Yüzeyi pasa dönerken nesnenin bir asırlık hava koşullarını biçimini koruyarak atlatmasının nedeni de budur.",
       "Sonra anahtar deliği; bütün nesnenin en çok şey anlatan kısmı. Ortasında dikilen bir pim var. Pim, anahtarın içi boş olduğu anlamına gelir (pimin üzerine kayan ve onunla ortalanan bir namlu anahtar). Altında geniş bir yarık olan içi boş anahtar ise engelli (warded) bir kilit demektir: içeride, doğru anahtarın geçecek şekilde kesildiği, yanlışın geçemediği sabit engeller. Bu bir pimli silindir değildir ve hiçbir zaman öyle olması amaçlanmamıştır. Silindirler onun yerini almadan önce Avrupa'yı birkaç yüz yıl boyunca güvence altında tutan mekanizmadır ve pimin ne işe yaradığını bildiğinizde onu iki metre öteden tanıyabilirsiniz.",
@@ -2117,7 +2115,7 @@
       "Eksik paragrafı yazabilirdik. 1890'larda bir Alman atölyesi, bir aile adı, o perçinleri çakan demirci hakkında bir satır; güzel okunurdu ve kurgu olurdu. Yazmayacağız ve nedeni alçakgönüllülük değil. Hiç ziyaret etmediği bir fabrikadan bir konteyner donanım sipariş eden alıcı, her şeyden önce tek bir şey satın alır: bizim bir şey uydurmadığımız inancını. Bu inanç bölünmez. Bir blogda bir asma kilide köken uyduran tedarikçi, bir teklifte kilit gövdesine backset de uydurur; birincisini yakalayan alıcı ikincisini varsaymakta haklıdır. Bu sitede bir ölçü yayımlanmamışsa, akla yatkın bir sayı yerine bir tire görürsünüz. Bu, aynı kuralın bir hikâyeye uygulanmasıdır.",
       "Kilit, insanların beklediğinin tam tersi bir nedenle de ilginçtir. İsimsizdir ve bu mesleğin tarihinin büyük kısmında bu normaldi: bir kilit onu yapan ustayla tanınırdı ve ustayı tanımıyorsanız yedek parça alamazdınız. Bunu bitiren daha iyi kilitler olmadı. Standartlar oldu. Bugün her Avrupa kilit gövdesinin işlendiği profil, Almanya'da DIN 18252, Avrupa genelinde EN 1303 ile tanımlanır; tolerans, bir fabrikanın silindirinin kırk yıl sonra başka bir ülkedeki başka bir fabrikanın gövdesine oturmasına izin verecek düzeydedir. Kurucumuzun bu isimsiz kilidi bulduğu ülke, isimsizliği güvenli kılan standardı yazan ülkeyle aynıdır.",
       "Bizim ürettiğimiz de budur. Kendi Avrupa profil silindirlerimiz 45, 54, 60, 65, 70, 80 ve 90mm (3-9/16\") boylarındadır ve bu rakamların hiçbiri bize ait değildir; standarda aittir ve parçanın bütün değeri bu ölçüleri tam tutturmamızdadır. Gururla iki milimetre farklı yapılmış bir silindir ayırt edici bir ürün değildir; uymayan bir parçadır. Eski kilidin isimsizliği ile yenisinin birbirinin yerine geçebilmesi iki kez anlatılan aynı hikâyedir: önce ustanın adı güvenceydi, sonra onun yerini standart aldı.",
-      "Yirmi sekiz yılın asıl harcandığı yer de burasıdır. Tek bir çıkış cihazı için bir kalıp, satılabilecek bir parça üretmeden önce üç ila beş ay sürer ve bunun çoğu çelik kesmek değildir; kalıbı alıştırmak, çıkanı ölçmek ve kalıbı düzeltmektir, çünkü metal çizimin söylediğini yapmaz. Ardından parçanın atlatması gereken testler gelir: yangın, darbe, çevrim ömrü, basınç. Bunların hiçbiri bir fotoğrafta görünmez. Yüz bininci parçanın ilkiyle aynı çıkmasında görünür.",
+      "Yirmi sekiz yılın asıl harcandığı yer de burasıdır. Parçanın ayrıca atlatması gereken testler vardır: yangın, darbe, çevrim ömrü, basınç. Bunların hiçbiri bir fotoğrafta görünmez. Yüz bininci parçanın ilkiyle aynı çıkmasında görünür.",
       "## Bir gün kendiniz okumak isterseniz",
       "Pasa dört şey dayanır, kabaca bu sırayla; bir şey ise dayanmaz.",
       "Gövdenin nasıl birleştirildiği: perçinler, katlanmış bir dikiş, bir kaynak dikişi veya tek parça döküm kabuk. Bu neredeyse her miktarda korozyonun altında okunabilir, çünkü yüzey değil yapıdır; başka her şeyi gizlemiş bir pasın altından bile perçini elinizle hissedebilirsiniz. Perçinler ve katlanmış dikişler gövdenin plakadan oluşturulduğunu gösterir.",
@@ -2152,7 +2150,7 @@
       "summary": "cc9471771c8a",
       "seoTitle": "de0d36e2f817",
       "seoDescription": "40f399a07aa6",
-      "body": "9b20f325e416",
+      "body": "b7e383ea7997",
       "faq": "bb4e64ac35fe"
     }
   },
@@ -2162,7 +2160,7 @@
     "seoTitle": "Teknik Föy, CAD ve BIM: Neler Var | Canton Hyland",
     "seoDescription": "HYDE'nin 84 ölçülü SVG çizimi var, 72'si görünür ürün sayfalarında; bir de aranabilir katalog PDF'i. BIM kütüphanesi ve kapı hazırlık SVG'si yok.",
     "body": [
-      "Bu siteye ulaşan aramalarda tekrar eden bir kalıp var: insanlar bir ürün değil, bir dosya arıyor. Bir kilit için teknik föy. Bir DraftSight veya DWG modeli. Ficha técnica'sı olan bir BIM nesnesi. Örnek bir PDF. Bir keresinde biri bir malzeme listesi satırını (çizim numarası, pozisyon, malzeme, uygulama) olduğu gibi arama kutusuna yapıştırmıştı; bir satın alma mühendisi bir çizimi karşılayan parçayı bulmaya çalışırken tam olarak bunu yapar. Özünde hepsi aynı taleptir: bana kendi belgeme koyabileceğim bir şey verin.",
+      "Pek çok alıcı bir ürün değil, bir dosya arıyor. Bir kilit için teknik föy. Bir DraftSight veya DWG modeli. Ficha técnica'sı olan bir BIM nesnesi. Örnek bir PDF. Özünde hepsi aynı taleptir: bana kendi belgeme koyabileceğim bir şey verin.",
       "O halde işte dürüst envanter, ne kadarının var olduğu sırasıyla.",
       "Ölçülü SVG çizimleri: 613 katalog kaydı arasında HYDE model kısa adları için 84 adet. Bunların 72'si, alıcıların gezebildiği fotoğraflı 546 ürün sayfasında yer alır; diğer 12'si listelenmeyen kayıtlara aittir. Çizimler, yayımlanmış kaynak verilerle desteklenen ölçüleri gösterir. Bunlar ürün görünüşleridir, kapı kesim şablonu değildir. Tahmin edilmiş bir delik konumu hiç çizim olmamasından kötüdür, çünkü ona inanılabilir.",
       "Teknik özellikler: her ürün sayfasında, düz metin olarak değil tablo halinde. Backset, aks mesafesi, malzeme, kaplama kodları, test edilmişse çevrim ömrü, kapı kalınlığı aralığı, yön. Bir değer eksikse eksiktir, tahmin edilmez. Bunlara sayfa yerine elektronik tablo olarak ihtiyacınız varsa isteyin, gönderelim.",
@@ -2299,9 +2297,9 @@
   },
   "what-oem-actually-changes": {
     "title": "OEM Gerçekte Neyi Değiştirir, Neyi Değiştirmez",
-    "summary": "Markanızı bir kilide koymak 4 ayrı karardır: ambalaj ve işaretleme, parçanın üzerindeki marka, kaplama ve parçanın kendisi. Yalnızca dördüncüsü kalıp gerektirir. Ambalaj ve kaplama değişiklikleri katalog termininde, sipariş onayından itibaren 30 günden başlar; değiştirilmiş bir kalıp değişikliği ekler; yeni bir kalıp üretim başlamadan önce 3 ila 5 ay sürer. Bu yazı, ilk yanıt gerçek bir yanıt olsun diye 4'ünün her biri için ne gönderileceğini listeler.",
+    "summary": "Markanızı bir kilide koymak 4 ayrı karardır: ambalaj ve işaretleme, parçanın üzerindeki marka, kaplama ve parçanın kendisi. Yalnızca dördüncüsü kalıp gerektirir. Bu yazı, ilk yanıt gerçek bir yanıt olsun diye 4'ünün her biri için ne gönderileceğini listeler.",
     "seoTitle": "OEM ve Özel Etiketli Kapı Donanımı: Neler Değişir",
-    "seoDescription": "OEM ve özel etiketli kapı donanımı: ambalaj ve kaplama 30 günden başlar, parça üzerindeki logo bir kalıbı değiştirir, yeni kalıp üç ila beş ay sürer.",
+    "seoDescription": "OEM ve özel etiketli kapı donanımı: ambalaj ve işaretleme, parça üzerinde logo, kaplama ya da parçanın kendisi. Her birinin neyi değiştirdiği ve ne gönderileceği.",
     "body": [
       "\"OEM yapıyor musunuz?\" ihracat masamıza en sık gelen ve en az işe yarayan sorudur; çünkü cevap her zaman evettir ve hiçbir şeyi çözmez. Alıcının gerçekte bilmesi gereken, dört farklı şeyden hangisini istediğidir; çünkü bunlar maliyet ve teslim süresi ölçeğinde birbirinden çok farklı dört noktada durur.",
       "Birincisi ambalaj ve işaretlemedir. Kutudaki logonuz, koli işaretlemeleriniz, barkodlarınız, kullanım talimatınız, diliniz. Donanımla ilgili hiçbir şey değişmez; değişen, palette neyin geldiği ve bir müşterinin rafta ne gördüğüdür. Özel etiketin açık ara en ucuz biçimidir ve kendi markasını kuran bir distribütör için çoğu zaman gereken şeyin tamamıdır.",
@@ -2309,7 +2307,7 @@
       "Üçüncüsü kaplamadır. Kataloğumuz parlak pirinç, antik pirinç, saten nikel, saten krom, siyah nikel ve saten ile parlak paslanmaz yayımlar; belirli bir model için standart listede olmayan bir kaplama genellikle bir geliştirme değil bir planlama sorusudur, çünkü kaplama hattı onu zaten başka bir ürün için çalıştırıyordur. Ayırt edici bir kaplama, herkesinkine değil size ait gibi görünen bir ürüne en hızlı yoldur ve hiçbir yeni kalıp gerektirmez.",
       "Dördüncüsü parçanın kendisidir: bir kol profili, bir rozet biçimi, bir ayna, bir backset, bir gövde. Kalıpların devreye girdiği ve dürüst cevabın bir genelleme olmaktan çıktığı yer burasıdır. İstediğiniz biçim için bir kalıp varsa üretiriz. Yoksa bir kalıp yaparız; kalıp maliyeti, numune süresi ve özel üretim bir partiyi değerli kılan minimum miktar tamamen parçaya bağlıdır. Bir rozet bir kilit gövdesi değildir. Bunları bir aralık yayımlamak yerine proje bazında fiyatlandırırız; çünkü doğru olacak kadar geniş bir aralık, işe yarayamayacak kadar geniş olurdu.",
       "Dördüncü durumu burada özel bir proje olmaktan çıkarıp uygulanabilir kılan şey, kataloğumuzun arkasındaki kalıpların bize ait olmasıdır. Bir fabrika ile bir fabrikanın önünde duran bir ticaret ofisi arasındaki fark budur: kalıp kendi binanızdayken kol profilinde bir değişiklik, prese yürüyerek gidebilen insanların verdiği bir üretim kararıdır. Değilse aynı talep, takvimini ve kalitesini kontrol etmediğiniz üçüncü bir tarafa giden bir e-postaya dönüşür; bir alıcının teslim süresine dair net bir cevap alamamasının nedeni de genellikle cevap veren kişinin de bir cevabının olmamasıdır.",
-      "Bir şartnameyle değil elinizdekiyle başlayın. En iyisi fiziksel bir numunedir; bir çizim neredeyse aynı derecede iyidir; üzerine bir ölçü yazılmış bir fotoğraf başlamak için yeter. Mühendislik ekibimiz onu üretmek için neyin gerektiğini bildirir ve istediğiniz şeyin bir varyasyon değil yeni bir kalıp olduğu durumda bunu açıkça söyler; çünkü bu iki cevap arasındaki fark haftalardır ve başta bilinmesi daha iyidir.",
+      "Bir şartnameyle değil elinizdekiyle başlayın. En iyisi fiziksel bir numunedir; bir çizim neredeyse aynı derecede iyidir; üzerine bir ölçü yazılmış bir fotoğraf başlamak için yeter.",
       "## Dördünün her biri için ne göndermelisiniz",
       "Her OEM işi farklı bir malzemeden başlar ve doğru malzemeyle gelen bir talep, üçüncü yanıtta değil ilk yanıtta gerçek bir cevap alır.",
       "Ambalaj ve işaretleme: logonuz ekran görüntüsü olarak değil vektör dosyası olarak; her pazar için koli işaretleme metni, okunacağı dilde; barkod numaralarınız; kullanım talimatı ya da üzerinde olmasını istediğiniz metin; ve bir iç kutuda ve bir dış kolide kaç adet istediğiniz. Barkodlarla ilgili, ileride sorun çıkmasını önleyen bir nokta: numaralar marka sahibine aittir ve size ulusal numaralandırma kuruluşunuz tarafından verilir. Bize verdiğiniz numaraları basarız; size numara veremeyiz ve başkasının aralığından ödünç alınmış bir kod er geç bir perakendecinin sistemi tarafından reddedilir.",
@@ -2321,14 +2319,13 @@
       "Bir test raporu ya da sertifika, test edilen ürünü üreticinin model numarasıyla adlandırır. Örneğin kendi EN 1125 test raporumuz, belgelendirmeler sayfamızda anlatıldığı gibi tek bir modeli kapsar: KD070/30-290. O cihaz sizin markanızla, diyelim sizin EX-200 modeliniz olarak satılsaydı, elinde sizin onay dosyanız ve bizim raporumuz olan bir denetçi iki farklı numara ve aralarında hiçbir bağ görürdü. Sertifika gerçek olurdu ve yine de soruyu cevaplamazdı.",
       "Çözüm idari ve ucuzdur ve ilk siparişte yapılmalıdır: her model numaranızı bizimkiyle eşleştiren bir karşılık tablosu tutun ve bir sertifikaya atıf yapılan her onay dosyasına ya da teknik dosyaya ikisini birden koyun. Sizi ters yönde de korur: bizim tarafımızda bir bileşen değişirse karşılık tablosu bunun hangi ürünlerinizi etkilediğini söyler.",
       "## Özel etiket altında ne değişmez",
-      "Sınırlar konusunda net olmaya değer; çünkü OEM'in en sık sorulmadan varsayılan kısmı onlardır. Bir katalog ürününü yeniden markalamak, nasıl performans gösterdiğini ya da neye göre test edildiğini değiştirmez; kanıtları, düzenlendikleri modele bağlı kalır. Parçanın kendisini değiştirmek farklıdır. Mevcut bir mekanizma üzerindeki yeni bir kol profili genellikle etkisi bakımından kozmetiktir; ama değiştirilmiş bir gövde, sürgü ya da mekanizma test açısından yeni bir üründür ve bir sertifikanın kapsadığı her şeye yeniden bakılması gerekir. Kataloğun neden bu kadar geniş olduğu üzerine yazımız bu sırayı anlatıyor; yeni bir panik çıkış cihazının kalıbı üzerine yazımız da zaman çizelgesini veriyor.",
-      "Teslim süresi de aynı çizgiyi izler. Ambalaj ya da kaplama değişikliği, sipariş onayından itibaren 30 günden başlayan katalog teslim süresinde çalışır. Değiştirilmiş bir kalıp, değişikliğin süresini ekler. Yeni bir kalıp, üretim başlayabilmeden önce üç ila beş ay sürer.",
+      "Sınırlar konusunda net olmaya değer; çünkü OEM'in en sık sorulmadan varsayılan kısmı onlardır. Bir katalog ürününü yeniden markalamak, nasıl performans gösterdiğini ya da neye göre test edildiğini değiştirmez; kanıtları, düzenlendikleri modele bağlı kalır. Parçanın kendisini değiştirmek farklıdır. Mevcut bir mekanizma üzerindeki yeni bir kol profili genellikle etkisi bakımından kozmetiktir; ama değiştirilmiş bir gövde, sürgü ya da mekanizma test açısından yeni bir üründür ve bir sertifikanın kapsadığı her şeye yeniden bakılması gerekir.",
       "## Her şeyin karşılaştırıldığı numuneyi onaylamak",
       "Her özel etiket programının iki tarafın da sakladığı tek bir fiziksel referansı olmalıdır: kaplaması, işareti ve ambalajı tam olarak üretileceği gibi olan, yazılı olarak onaylanmış bir üretim öncesi numune. İlk sipariş onunla karşılaştırılarak kontrol edilir; sonraki her tekrar siparişi de öyle. O numune olmadan ikinci sipariş birinin ilk siparişe dair hafızasıyla değerlendirilir ve renkte ya da işaretlemede küçük kaymalar ölçüm değil tartışma konusu olur.",
       "Numunenin mühürlenmesini ya da onayladığı tarih ve siparişle etiketlenmesini isteyin, sizinkini iki yıl sonra da bulunacak güvenli bir yerde saklayın ve şartnamedeki herhangi bir şey değiştiğinde onay için yenisini gönderin.",
       "## Kim neyin sahibi",
-      "Üretimden önce varsaymak yerine yazılı olarak netleştirmeye değer üç şey var. Tasarımlarınız ve barkod numaralarınız sizindir ve bunların yalnızca sizin siparişlerinizde kullanılacağının yazıya geçirilmesi makuldür. Parçanız için işlenen kalıplar kendi anlaşmalarının konusudur (kim öder, kim sahibidir, münhasır mıdır ve siparişler durduğunda onlara ne olur); yeni bir panik çıkış cihazının kalıbı üzerine yazımız bu dört soruyu ele alıyor. Bir biçim ya da kaplama üzerindeki münhasırlık ise tanımlı bir ürün ve pazar için kararlaştırılan bir şeydir; ilk isteyen olmakla zımnen doğmaz.",
-      "Dört durumun hepsinde, her şeyden önce netleştirilmeye değer iki şey var. İhtiyaç duyduğunuz fonksiyonu ve kapı yönünü teyit edin; çünkü ET, BK ve PS kaplama değil fonksiyondur ve yanlış fonksiyondaki bir siparişin tamamı kullanılamaz. Setteki her kalemde kaplamayı teyit edin: kol siyahsa menteşeler, silindir rozeti ve görünen vidalar da siyah olmalıdır; tek bir kapıda karışık kaplama, ilk özel etiket siparişinde en sık yakaladığımız tek şeydir. Üretim teslim süresi sipariş onayından itibaren 30 günden başlar; kesin tarih siparişinizdeki modellere, miktarlara ve kaplamalara bağlıdır."
+      "Üretimden önce varsaymak yerine yazılı olarak netleştirmeye değer üç şey var. Tasarımlarınız ve barkod numaralarınız sizindir ve bunların yalnızca sizin siparişlerinizde kullanılacağının yazıya geçirilmesi makuldür. Parçanız için işlenen kalıplar kendi anlaşmalarının konusudur (kim öder, kim sahibidir, münhasır mıdır ve siparişler durduğunda onlara ne olur). Bir biçim ya da kaplama üzerindeki münhasırlık ise tanımlı bir ürün ve pazar için kararlaştırılan bir şeydir; ilk isteyen olmakla zımnen doğmaz.",
+      "Dört durumun hepsinde, her şeyden önce netleştirilmeye değer iki şey var. İhtiyaç duyduğunuz fonksiyonu ve kapı yönünü teyit edin; çünkü ET, BK ve PS kaplama değil fonksiyondur ve yanlış fonksiyondaki bir siparişin tamamı kullanılamaz. Setteki her kalemde kaplamayı teyit edin: kol siyahsa menteşeler, silindir rozeti ve görünen vidalar da siyah olmalıdır."
     ],
     "faq": [
       {
@@ -2345,7 +2342,7 @@
       },
       {
         "question": "Herhangi bir özel etiket siparişinden önce ne netleştirilmeli?",
-        "answer": "Fonksiyon ve kapı yönü; çünkü ET, BK ve PS kaplama değil fonksiyondur ve yanlış fonksiyondaki bir siparişin tamamı kullanılamaz. Ve setteki her kalemde kaplama: kol siyahsa menteşeler, silindir rozeti ve görünen vidalar da siyah olmalıdır. Tek bir kapıda karışık kaplama, ilk özel etiket siparişinde en sık yakaladığımız tek şeydir. Üretim teslim süresi sipariş onayından itibaren 30 günden başlar."
+        "answer": "Fonksiyon ve kapı yönü; çünkü ET, BK ve PS kaplama değil fonksiyondur ve yanlış fonksiyondaki bir siparişin tamamı kullanılamaz. Ve setteki her kalemde kaplama: kol siyahsa menteşeler, silindir rozeti ve görünen vidalar da siyah olmalıdır."
       },
       {
         "question": "Özel etiketli bir ürün üreticinin belgelendirmesini korur mu?",
@@ -2353,7 +2350,7 @@
       },
       {
         "question": "Özel etiketli ambalaj için ne göndermem gerekir?",
-        "answer": "Vektör dosyası olarak logonuzu, her pazar için kendi dilinde koli işaretleme metnini, barkod numaralarınızı, kullanım talimatı metnini ve istediğiniz iç kutu ve koli miktarlarını. Barkod numaraları sizin olmalı ve markanıza ulusal numaralandırma kuruluşunuz tarafından verilmiş olmalıdır; sağladığınız numaraları basarız ama numara veremeyiz. Ambalaj değişiklikleri, sipariş onayından itibaren 30 günden başlayan katalog teslim süresinde çalışır."
+        "answer": "Vektör dosyası olarak logonuzu, her pazar için kendi dilinde koli işaretleme metnini, barkod numaralarınızı, kullanım talimatı metnini ve istediğiniz iç kutu ve koli miktarlarını. Barkod numaraları sizin olmalı ve markanıza ulusal numaralandırma kuruluşunuz tarafından verilmiş olmalıdır; sağladığınız numaraları basarız ama numara veremeyiz."
       }
     ],
     "sourceHash": {
@@ -2361,8 +2358,8 @@
       "summary": "022466a8bc3f",
       "seoTitle": "67b353783478",
       "seoDescription": "50dfd4040e73",
-      "body": "1474dfdb6922",
-      "faq": "712704303255"
+      "body": "f4e81dbc57c5",
+      "faq": "02527e9b6341"
     }
   },
   "why-the-catalogue-is-this-wide": {

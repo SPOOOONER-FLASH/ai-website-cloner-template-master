@@ -260,7 +260,7 @@ test("HYDE coverage articles use site-filtered counts in all three languages", (
       hyde.length,
       coverage.fields.finish.products,
     ] },
-    { dir: "content/guides", slug: "qualifying-a-hardware-supplier-2026", counts: inventory },
+    // qualifying-a-hardware-supplier-2026 left this list on 2026-10-13: its "Applying this to us" section, which held these counts, was cut.
     { dir: "content/guides", slug: "technical-drawings-what-to-expect-2026", counts: inventory },
     { dir: "content/news", slug: "what-documents-you-can-actually-get", counts: inventory },
   ];

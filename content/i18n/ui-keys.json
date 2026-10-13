@@ -1454,7 +1454,7 @@
   "Each answer sets aside the models that won't fit that door. Choices that lead nowhere are never offered.": [
     "src/components/site/ConfiguratorIntro.tsx:39"
   ],
-  "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers. Much of what we make is tested in our customers' names, at their cost; testing in our own name is being prepared.": [
+  "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers.": [
     "src/components/site/CompanyOverview.tsx:37"
   ],
   "Each half is measured from the center of the fixing screw to the outer face of the escutcheon or rose on its side. Half-lengths come in 5mm steps from a minimum of 27.5mm, so the calculated figure is always rounded up: a half that is a little long can be covered with a rose, a half that is short cannot be fixed at the door.": [
@@ -4025,7 +4025,7 @@
   "The record described the wrong kind of part. DS011 is a door stopper rather than a flush bolt, and 072 is the profile lock case that 307's specification names.": [
     "src/components/site/ModelLookup.tsx:62"
   ],
-  "The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another. Much of what we make for private-label customers is certified in our customers' own names, at their request and their cost, so those certificates are theirs to share. CE and ANSI testing in Canton Hyland's own name is being prepared for our core ranges; each new report will appear here, with its scope, as it is issued.": [
+  "The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another.": [
     "src/components/locale-pages/CertificationsPage.tsx:48"
   ],
   "The removable key-operated core. The cylinder decides the key; the lock case decides the function. Because it comes out without disturbing the lock, it is the part a master-key plan is written around.": [
