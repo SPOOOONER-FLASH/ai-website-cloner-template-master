@@ -388,6 +388,19 @@
   "image": "/images/brazil-collection/br6-s.webp"
  },
  {
+  "id": "br6-sm",
+  "model": "BR6-SM",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar, with microswitch",
+  "namePt": "Barra antipânico para porta de uma folha, com microswitch",
+  "specs": [],
+  "image": "/images/brazil-collection/br6-sm.webp"
+ },
+ {
   "id": "br6-t",
   "model": "BR6-T",
   "family": "trim",
