@@ -241,7 +241,7 @@
     "src/data/category-buying-guides.ts:437"
   ],
   "A door hardware maker in Xiaolan, since 1998.": [
-    "src/components/site/CompanyOverview.tsx:23"
+    "src/components/site/CompanyOverview.tsx:24"
   ],
   "A door is a set of parts that have to agree with each other: lever, lock case, cylinder, strike. We supply them together, each specified against the others, so the opening works the day it is fitted.": [
     "src/components/site/products-architecture.ts:190"
@@ -291,8 +291,14 @@
   "A hook bolt, because a sliding leaf gives a straight latch nothing to catch.": [
     "src/data/category-positioning.json"
   ],
+  "A hydraulic press at the head of the machining line": [
+    "src/data/company.ts:339"
+  ],
   "A long pull on the outside with a lock behind it, for a main entrance door.": [
     "src/lib/configurator.ts:413"
+  ],
+  "A machining station on the lock-case line": [
+    "src/data/company.ts:318"
   ],
   "A master-key plan has to be decided before the cylinders are cut, not after they arrive. Changing the hierarchy later means new cylinders for every door in the group — which is why the plan sheet exists.": [
     "src/data/hardware-terms.ts:461"
@@ -312,6 +318,9 @@
   ],
   "A rim night latch is the lock a distributor buys for apartment and residential entrance doors that are already hung: it mounts on the face of the door through one cylinder hole. The {count} models here are made in our own factory for wholesale and private-label orders.": [
     "src/data/category-buying-guides.ts:113"
+  ],
+  "A row of mechanical punch presses in the press shop": [
+    "src/data/company.ts:304"
   ],
   "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalog's vocabulary.": [
     "src/data/finish-codes.ts:357"
@@ -408,6 +417,12 @@
   ],
   "An example three-level system: a grand master, two floor masters and the change keys below them, with the three decisions this article says belong at design time: one cross-keyed door, one door kept off every master, and one group reserved for expansion. Illustrative only; a real hierarchy is designed on the platform it will be cut on.": [
     "src/components/site/MasterKeyHierarchyFigure.tsx:33"
+  ],
+  "An operator at a power press stamping lock-case plates": [
+    "src/data/company.ts:297"
+  ],
+  "An operator drilling lock-case plates on a fixtured machine": [
+    "src/data/company.ts:346"
   ],
   "and {n} more": [
     "src/lib/category-guide.ts:147"
@@ -534,7 +549,7 @@
     "src/components/site/FactoryStory.tsx:43"
   ],
   "At a glance": [
-    "src/components/site/CompanyOverview.tsx:25"
+    "src/components/site/CompanyOverview.tsx:26"
   ],
   "Author": [
     "src/components/site/AuthorProfile.tsx:24"
@@ -599,6 +614,9 @@
   ],
   "Below the range the screws bottom out and the roses stand proud; above it the spindle does not reach through, and no amount of force will make it. This is the figure to check first on a glass or aluminum door, where leaves are thinner than the joinery a lock was designed around.": [
     "src/data/hardware-terms.ts:126"
+  ],
+  "Bench drills for secondary machining of small parts": [
+    "src/data/company.ts:332"
   ],
   "Black": [
     "src/components/site/brazil/brazil-data.ts:60",
@@ -707,7 +725,7 @@
     "src/data/category-buying-guides.ts:604"
   ],
   "Canton Hyland": [
-    "src/components/site/CompanyOverview.tsx:22"
+    "src/components/site/CompanyOverview.tsx:23"
   ],
   "Canton Hyland — Panic Exit Devices & Door Hardware Factory": [
     "src/data/site.ts:88"
@@ -828,6 +846,9 @@
   "Check the report before you specify the part.": [
     "src/components/locale-pages/CertificationsPage.tsx:97"
   ],
+  "Checking stamped plates at a drilling station": [
+    "src/data/company.ts:325"
+  ],
   "Choose a lock or handle range, then switch finish and function and watch the order code assemble. Every image is a photograph of the exact model.": [
     "src/components/locale-pages/ConfiguratorStudioPage.tsx:55"
   ],
@@ -947,7 +968,7 @@
     "src/components/site/brazil/BrazilCollection.tsx:51"
   ],
   "Come and see the factory, or send us a drawing": [
-    "src/components/site/CompanyOverview.tsx:39"
+    "src/components/site/CompanyOverview.tsx:42"
   ],
   "Commercial project": [
     "src/components/site/InquiryForm.tsx:37"
@@ -1434,7 +1455,7 @@
     "src/components/site/ConfiguratorIntro.tsx:39"
   ],
   "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers. Much of what we make is tested in our customers' names, at their cost; testing in our own name is being prepared.": [
-    "src/components/site/CompanyOverview.tsx:34"
+    "src/components/site/CompanyOverview.tsx:37"
   ],
   "Each half is measured from the center of the fixing screw to the outer face of the escutcheon or rose on its side. Half-lengths come in 5mm steps from a minimum of 27.5mm, so the calculated figure is always rounded up: a half that is a little long can be covered with a rose, a half that is short cannot be fixed at the door.": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:45"
@@ -1643,7 +1664,7 @@
     "src/components/site/brazil/BrazilCollection.tsx:45"
   ],
   "Factory photograph": [
-    "src/components/site/CompanyOverview.tsx:30"
+    "src/components/site/CompanyOverview.tsx:31"
   ],
   "Factory time, GMT+8": [
     "src/components/site/ExportMap.tsx:31"
@@ -1727,6 +1748,9 @@
   "Finish with evidence, then talk to the factory.": [
     "src/components/site/products-architecture.ts:198"
   ],
+  "Finished goods and cartons staged for packing and shipment": [
+    "src/data/company.ts:374"
+  ],
   "Finishing": [
     "src/data/capability.ts:118"
   ],
@@ -1805,6 +1829,9 @@
   ],
   "From {moq}": [
     "src/components/site/ProductDetail.tsx:137"
+  ],
+  "From press to packing": [
+    "src/components/site/CompanyOverview.tsx:33"
   ],
   "From range to installed opening.": [
     "src/components/site/products-architecture.ts:192"
@@ -2117,7 +2144,7 @@
     "src/components/site/CylinderCalculator.tsx:58"
   ],
   "Inside the factory": [
-    "src/components/site/CompanyOverview.tsx:31"
+    "src/components/site/CompanyOverview.tsx:32"
   ],
   "Inspection": [
     "src/data/capability.ts:154"
@@ -2141,7 +2168,7 @@
     "src/components/locale-pages/CertificationsPage.tsx:24"
   ],
   "Issued": [
-    "src/components/site/CompanyOverview.tsx:38"
+    "src/components/site/CompanyOverview.tsx:41"
   ],
   "Issuer": [
     "src/components/locale-pages/CertificationsPage.tsx:22"
@@ -2307,7 +2334,7 @@
     "src/data/capability.ts:208"
   ],
   "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries.": [
-    "src/components/site/CompanyOverview.tsx:218"
+    "src/components/site/CompanyOverview.tsx:226"
   ],
   "Manufacturing is in Zhongshan. These are the people to reach in each market.": [
     "src/components/locale-pages/ContactPage.tsx:121"
@@ -2786,6 +2813,9 @@
   "Opens this model's listing, with current pricing, MOQ and lead time.": [
     "src/components/site/ProductDetail.tsx:112"
   ],
+  "Operators assembling at the benches": [
+    "src/data/company.ts:360"
+  ],
   "Or email us about this model:": [
     "src/components/site/ProductDetail.tsx:89"
   ],
@@ -2793,7 +2823,7 @@
     "src/components/site/ServicesView.tsx:44"
   ],
   "Or write to us directly:": [
-    "src/components/site/CompanyOverview.tsx:41"
+    "src/components/site/CompanyOverview.tsx:44"
   ],
   "Order {model} on Alibaba": [
     "src/components/site/ProductDetail.tsx:110"
@@ -2867,10 +2897,13 @@
     "src/components/site/ExportMap.tsx:35"
   ],
   "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.": [
-    "src/components/site/CompanyOverview.tsx:29"
+    "src/components/site/CompanyOverview.tsx:30"
   ],
   "Our press shop: mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped.": [
     "src/components/site/FactoryStory.tsx:40"
+  ],
+  "Our stamping plant at work: the presses, the machining stations, the assembly benches and the packing area.": [
+    "src/components/site/CompanyOverview.tsx:34"
   ],
   "Our typeface and our product videos are served from our own server. Opening a page does not contact Google Fonts, YouTube or Vimeo.": [
     "src/data/privacy-policy.ts:72"
@@ -3340,7 +3373,7 @@
     "src/components/locale-pages/DocumentsPage.tsx:41"
   ],
   "Scope": [
-    "src/components/site/CompanyOverview.tsx:35"
+    "src/components/site/CompanyOverview.tsx:38"
   ],
   "Scroll sideways to compare columns. Select a column heading to sort; select it three times to restore source order.": [
     "src/components/site/DataTable.tsx:13"
@@ -3738,7 +3771,7 @@
     "src/components/locale-pages/ContactPage.tsx:16"
   ],
   "Talk to the people who make it": [
-    "src/components/site/CompanyOverview.tsx:40"
+    "src/components/site/CompanyOverview.tsx:43"
   ],
   "Technical": [
     "src/components/site/products-architecture.ts:135"
@@ -3828,6 +3861,12 @@
   "The arithmetic, with a worked table": [
     "src/components/locale-pages/CylinderCalculatorPage.tsx:70"
   ],
+  "The assembly line, with parts staged in bins along the benches": [
+    "src/data/company.ts:353"
+  ],
+  "The automatic carton sealer in the finished-goods packing area": [
+    "src/data/company.ts:367"
+  ],
   "The bolt that actually holds the door shut. The bevel direction decides which way the leaf closes.": [
     "src/data/category-positioning.json"
   ],
@@ -3878,7 +3917,7 @@
     "src/data/category-positioning.json"
   ],
   "The factory": [
-    "src/components/site/CompanyOverview.tsx:27",
+    "src/components/site/CompanyOverview.tsx:28",
     "src/components/site/FactoryStory.tsx:35"
   ],
   "The factory behind the bar": [
@@ -3955,6 +3994,9 @@
   ],
   "The polishing line decides whether a satin finish is even across a whole production run.": [
     "src/components/site/FactoryStory.tsx:42"
+  ],
+  "The press shop, with parts moving between stations in bins": [
+    "src/data/company.ts:311"
   ],
   "The Product Finder filters the full catalog by category, type, series, material, finish, door type and certification. Filters combine, counts update as you go, and the address bar keeps your selection — so a narrowed view can be pasted straight into an email to a colleague.": [
     "src/components/locale-pages/ProductsIndexPage.tsx:93"
@@ -4265,7 +4307,7 @@
     "src/data/privacy-policy.ts:102"
   ],
   "We make the hardware that goes on a door, and much of it leaves our factory under our customers' names. After twenty-eight years of that, we know who gets the call when a part fails: the one whose name is on it. We build for that person.": [
-    "src/components/site/CompanyOverview.tsx:24"
+    "src/components/site/CompanyOverview.tsx:25"
   ],
   "We make the metal moulds for our own hardware, which is why a part can be shaped to one market: a hole spacing that matches local frames, a backset for one country's doors, a lever the buyer owns. In the UK and Commonwealth the trade calls this architectural ironmongery; the work is the same. Our 311 exit device was tooled here from a customer's sample, and our AR-4 lock bodies were configured for Argentina.": [
     "src/components/site/ServicesView.tsx:96"
@@ -4350,7 +4392,7 @@
   ],
   "What is tested, and in whose name": [
     "src/components/locale-pages/DownloadsPage.tsx:107",
-    "src/components/site/CompanyOverview.tsx:32"
+    "src/components/site/CompanyOverview.tsx:35"
   ],
   "What is the {m} made from?": [
     "src/lib/product-faq.ts:99"
@@ -4410,7 +4452,7 @@
     "src/components/site/SiteHeader.tsx:541"
   ],
   "Where we are": [
-    "src/components/site/CompanyOverview.tsx:26"
+    "src/components/site/CompanyOverview.tsx:27"
   ],
   "Where you will sell it, and the standard it must meet": [
     "src/components/site/ServicesView.tsx:51"

@@ -7,6 +7,7 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 import {
   certificates,
   companyEditorialStudies,
+  factoryWorkshop,
   profile,
   profileEs,
   profilePt,
@@ -29,6 +30,8 @@ const copy = {
       "Our plant in Zhongshan, Guangdong: the press shop, the polishing line and the assembly hall. These are photographs of the plant at work, not staged studies.",
     contextImageNote: "Factory photograph",
     gallery: "Inside the factory",
+    workshop: "From press to packing",
+    workshopBody: "Our stamping plant at work: the presses, the machining stations, the assembly benches and the packing area.",
     quality: "What is tested, and in whose name",
     qualityBody:
       "Each document below is listed with the one model it covers. A report on one model does not approve another, so before you specify, ask us which current models a document still covers. Much of what we make is tested in our customers' names, at their cost; testing in our own name is being prepared.",
@@ -51,6 +54,8 @@ const copy = {
       "Nuestra planta en Zhongshan, Guangdong: la sección de prensas, la línea de pulido y la nave de montaje. Son fotografías de la planta en plena actividad, no estudios preparados.",
     contextImageNote: "Fotografía de la fábrica",
     gallery: "Dentro de la fábrica",
+    workshop: "De la prensa al embalaje",
+    workshopBody: "Nuestra planta de estampado en funcionamiento: las prensas, los puestos de mecanizado, los bancos de montaje y la zona de embalaje.",
     quality: "Qué está ensayado, y a nombre de quién",
     qualityBody:
       "Cada documento se muestra con el único modelo que cubre. El informe de un modelo no aprueba otro, así que antes de especificar, pregúntenos qué modelos actuales sigue cubriendo. Buena parte de lo que fabricamos se ensaya a nombre de nuestros clientes y a su cargo; los ensayos a nuestro propio nombre están en preparación.",
@@ -73,6 +78,8 @@ const copy = {
       "Nossa fábrica em Zhongshan, Guangdong: o setor de prensas, a linha de polimento e o galpão de montagem. São fotografias da fábrica em funcionamento, não estudos montados.",
     contextImageNote: "Fotografia da fábrica",
     gallery: "Dentro da fábrica",
+    workshop: "Da prensa à embalagem",
+    workshopBody: "Nossa planta de estampagem em funcionamento: as prensas, os postos de usinagem, as bancadas de montagem e a área de embalagem.",
     quality: "O que foi ensaiado, e em nome de quem",
     qualityBody:
       "Cada documento aparece com o único modelo que cobre. O relatório de um modelo não aprova outro; antes de especificar, pergunte quais modelos atuais ele ainda cobre. Boa parte do que fabricamos é ensaiada em nome dos nossos clientes, por conta deles; os ensaios em nosso próprio nome estão em preparação.",
@@ -103,8 +110,9 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
   const paragraphs = dict({ en: profile, es: profileEs, pt: profilePt }, locale);
   const companyStats = dict({ en: stats, es: statsEs, pt: statsPt }, locale);
   const contactHref = locale === "en" ? "/contact" : `/${locale}/contact`;
+  // tx: the seven overlay locales read the English caption through ui.json, as the copy above does.
   const localiseImageLabel = (label: string, labelEs?: string, labelPt?: string) =>
-    locale === "es" ? (labelEs ?? label) : locale === "pt" ? (labelPt ?? label) : label;
+    tx(locale, label, { es: labelEs, pt: labelPt });
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
@@ -249,6 +257,21 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
                 {...image}
                 label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
                 sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="col-content border-t border-line pt-48">
+          <h2 className="text-h2 text-ink">{text.workshop}</h2>
+          <p className="mt-24 max-w-[48rem] text-c1 text-ink-secondary">{text.workshopBody}</p>
+          <div className="mt-48 grid grid-cols-1 gap-x gap-y-32 sm:grid-cols-2 lg:grid-cols-3">
+            {factoryWorkshop.map((image) => (
+              <MediaPlaceholder
+                key={image.src}
+                {...image}
+                label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
+                sizes="(min-width: 1440px) 450px, (min-width: 1024px) 31vw, (min-width: 744px) 48vw, 96vw"
               />
             ))}
           </div>

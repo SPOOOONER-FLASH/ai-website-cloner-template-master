@@ -282,3 +282,97 @@ export const factoryAssemblyLine: ImageRef = {
   labelPt: "Nossa linha de montagem: dois operadores na bancada, com as peças em caixas etiquetadas ao longo da linha",
 };
 
+
+/*
+  The stamping plant at work, in process order: stamping, machining, assembly, packing and
+  dispatch. Supplied by the client on 2026-10-13 with permission to publish (IMAGE_CREDITS.md).
+  Lettering on workwear, crates, one machine plate and one wall sign was painted out at the
+  client's request and one wall screen blurred; machines, parts and people are untouched.
+  Cropped to 3:2 so the grid reads as one set.
+*/
+export const factoryWorkshop: ImageRef[] = [
+  {
+    src: "/images/company/factory-workshop-01.webp",
+    ratio: "3 / 2",
+    label: "An operator at a power press stamping lock-case plates",
+    labelEs: "Un operario en una prensa mecánica estampando placas de caja de cerradura",
+    labelPt: "Um operador numa prensa mecânica estampando placas de caixa de fechadura",
+  },
+  {
+    src: "/images/company/factory-workshop-02.webp",
+    ratio: "3 / 2",
+    label: "A row of mechanical punch presses in the press shop",
+    labelEs: "Una fila de prensas mecánicas en la sección de prensas",
+    labelPt: "Uma fila de prensas mecânicas no setor de prensas",
+  },
+  {
+    src: "/images/company/factory-workshop-03.webp",
+    ratio: "3 / 2",
+    label: "The press shop, with parts moving between stations in bins",
+    labelEs: "La sección de prensas, con las piezas pasando entre puestos en cajas",
+    labelPt: "O setor de prensas, com as peças passando entre os postos em caixas",
+  },
+  {
+    src: "/images/company/factory-workshop-04.webp",
+    ratio: "3 / 2",
+    label: "A machining station on the lock-case line",
+    labelEs: "Un puesto de mecanizado en la línea de cajas de cerradura",
+    labelPt: "Um posto de usinagem na linha de caixas de fechadura",
+  },
+  {
+    src: "/images/company/factory-workshop-05.webp",
+    ratio: "3 / 2",
+    label: "Checking stamped plates at a drilling station",
+    labelEs: "Revisión de placas estampadas en un puesto de taladrado",
+    labelPt: "Conferência de placas estampadas num posto de furação",
+  },
+  {
+    src: "/images/company/factory-workshop-06.webp",
+    ratio: "3 / 2",
+    label: "Bench drills for secondary machining of small parts",
+    labelEs: "Taladros de banco para el mecanizado secundario de piezas pequeñas",
+    labelPt: "Furadeiras de bancada para usinagem secundária de peças pequenas",
+  },
+  {
+    src: "/images/company/factory-workshop-07.webp",
+    ratio: "3 / 2",
+    label: "A hydraulic press at the head of the machining line",
+    labelEs: "Una prensa hidráulica al inicio de la línea de mecanizado",
+    labelPt: "Uma prensa hidráulica no início da linha de usinagem",
+  },
+  {
+    src: "/images/company/factory-workshop-08.webp",
+    ratio: "3 / 2",
+    label: "An operator drilling lock-case plates on a fixtured machine",
+    labelEs: "Una operaria taladrando placas de caja de cerradura en una máquina con utillaje",
+    labelPt: "Uma operadora furando placas de caixa de fechadura numa máquina com gabarito",
+  },
+  {
+    src: "/images/company/factory-workshop-09.webp",
+    ratio: "3 / 2",
+    label: "The assembly line, with parts staged in bins along the benches",
+    labelEs: "La línea de montaje, con las piezas preparadas en cajas a lo largo de los puestos",
+    labelPt: "A linha de montagem, com as peças separadas em caixas ao longo das bancadas",
+  },
+  {
+    src: "/images/company/factory-workshop-10.webp",
+    ratio: "3 / 2",
+    label: "Operators assembling at the benches",
+    labelEs: "Operarias montando en los puestos",
+    labelPt: "Operadoras montando nas bancadas",
+  },
+  {
+    src: "/images/company/factory-workshop-11.webp",
+    ratio: "3 / 2",
+    label: "The automatic carton sealer in the finished-goods packing area",
+    labelEs: "La precintadora automática de cajas en la zona de embalaje de producto terminado",
+    labelPt: "A seladora automática de caixas na área de embalagem de produto acabado",
+  },
+  {
+    src: "/images/company/factory-workshop-12.webp",
+    ratio: "3 / 2",
+    label: "Finished goods and cartons staged for packing and shipment",
+    labelEs: "Producto terminado y cajas preparados para embalaje y envío",
+    labelPt: "Produto acabado e caixas preparados para embalagem e embarque",
+  },
+];
