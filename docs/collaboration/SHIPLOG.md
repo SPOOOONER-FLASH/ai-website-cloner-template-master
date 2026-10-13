@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 517 次提交
+最近 30 天 · 共 518 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:28 | HYDE | 新指南（西语优先）：从中国进口门五金到墨西哥——进口商登记、报关行、报关单、税号与 NOM 标签（十种语言） | `df59dce1e6d` |
 | 08:19 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/brain-shell | `c717c51cb80` |
 | 08:19 | HYDE | 新指南：逃生装置锁闭方式——明装、明装天地杆、暗装天地杆、插芯式（十种语言） | `f4613a7ca49` |
 | 04:54 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/brain-shell | `ad27e93d6ff` |
