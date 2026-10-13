@@ -30,3 +30,9 @@
 - Client ran all 10 (6 reruns + 4 new). All 6 reruns rose (OEM citation 6.67→46.67%, euro cylinder 7.14→33.33%, exit devices 13.33→26.67%, documentation and fire safety from 0). Spanish topic is the weak one: 25% share, rank 21, 6.67% citation, and the only cited page was the English EN 1125 guide — no /es/ page was cited, which needs its own look.
 - Results, gap list and content queue: `docs/geo/results/2026-10-13-Clarity十个话题结果与下一步.md` (Desktop 03). Queue: certificate verification (CE/DoP/IAF/UL), fire-door inspection failures, exit-device latching types, downloadable door-schedule template, Spanish Mexico-import guide; QC process and tooling-cost pieces wait for client facts (ISO 9001 certificate, QC steps/AQL/equipment, tooling cost ranges). Chinese lock factories (zibaolock, jj-hardware, bolvralock) are what gets cited for QC today.
 - Runbook: Clarity row replaced by the 4 asks; manual AI-baseline row dropped (Clarity measures it weekly now). Next Clarity run 10-20 with unchanged prompts.
+
+## Boss decision 2026-10-13
+
+- QC process, tooling costs and order workflow are factory business secrets: not published, not to be requested again ("只展示产品"). The QC and tooling articles are dropped from the queue; the five remaining pieces are public industry knowledge only.
+- The four ISO 9001 certificates the client forwarded belong to other companies (a Suqian fan maker, a Beijing IP agency, a Huizhou stamping shop, a blank template; xiaohongshu watermarks) and the factory photos show supplier 星尚's workshop (shirts, crates, dashboard). None used, none stored in the repo.
+- Open question for the boss: `src/data/company.ts` and the company pages state "ISO 9001 since 2002". Keep only if HYDE holds its own certificate; otherwise remove in all ten locales.
