@@ -39,3 +39,15 @@
 - **Next step:**
   1. Send the previews and the three finder directions to the client.
   2. After the client chooses, port the chosen pieces into the live components as separate releases. Every new string costs es/pt plus 7 overlays.
+
+## Client decision (same day) and the live menu
+
+- **Client decision:** 「菜单设计的还行 信息不错……上架菜单」, and the welcome band and the finder previews are 「效果一般 不及预期 …… 其他的不行」. So only the menu goes live. The finder workflow was stopped before its builds finished, and rows 72, 74 and 77 are closed as not wanted.
+- **Live change** (`SiteHeader.tsx`): each of the Products, Company and Resources shelves now opens with a ruled ledger, a 1 px ink rule over a single checkable fact, replacing the tracked ALL-CAPS label and its sentence:
+  - Products: the record count, summed from the menu categories (549 locally), with Product Finder and Configurator Studio below it.
+  - Company: the legal name.
+  - Resources: the newest guide available in that locale, with its date and title as a link.
+- **Shelf items:** the Company and Resources items get ink rules. Resources items show counts (applications, guides available in the locale, published news). While BAU 2027 is still upcoming, Events shows the fair, its dates, and the hall and stand, all from `bauEntryDetails`. `dateLocales` in `bau-entry.ts` is now exported for the guide date.
+- **New string:** "Newest guide". It has es/pt in code and the 7 overlays in `ui.json`. "verified product records" already existed. Three old shelf sentences are gone.
+- **Checks:** `tsc` is clean. `i18n:keys` and `i18n-lint` are clean. 58 node tests pass (header-shelf, menu-experience, mobile-navigation, overlay-layering, home-accent, internal-link-placement, language-choices, services, i18n, type-scale, short-marker). On the dev server at 1700 px, en, es and ar (RTL) render with no page errors.
+- **Release:** the release is the engineering session's job. The local worktree showed 43 guides and an older newest guide because its generated guide list lags `content/`; the release build regenerates it.
