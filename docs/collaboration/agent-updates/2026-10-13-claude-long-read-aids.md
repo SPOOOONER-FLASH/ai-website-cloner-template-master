@@ -15,3 +15,7 @@ Client question: long-read pages (news, guides, /company/) — do they get paral
 - Guard: `src/data/article-reading-aids.test.ts` (in `npm test`) fails if a figure's heading is not a heading of that language's body or its value is not written in it, or a key-points row has the wrong cell count.
 - Checks: tsc, eslint, `npm test` 487/0, `npm run content`, i18n-lint, titles:check; local render en/es/pt with 4 figures + 1 table, fr with none, no page errors, no overflow at 1440/390.
 - Next: other long articles get aids only when their copy is reviewed; Company photo parallax (row 82).
+
+## Stage 3 — Company photographs drift (row 82)
+- `CompanyPhotos.module.css` + `CompanyOverview.tsx`: the factory photograph beside "The factory", the "Inside the factory" pair and the "From press to packing" grid each sit in a clipping frame; the photo is scaled 1.08 and moves ±3.5% on a `view()` timeline. No duration (scroll-linked), so the motion-token guard passes; reduced motion and browsers without scroll timelines see the still photograph. Text on the page does not move.
+- Checks: tsc, motion-token guard; local /company/ at 1440: translate varies with scroll (−0.3% … 1.9% across positions), no page errors, no overflow.
