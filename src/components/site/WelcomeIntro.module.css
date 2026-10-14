@@ -1,0 +1,170 @@
+/*
+  The homepage chapter (2026-10-13). Base styles are the finished state; every keyframe is
+  from-only, so reduced motion, print and browsers without scroll timelines show it as is.
+*/
+.chapter {
+  row-gap: 2.4rem;
+  border-top: 1px solid var(--color-line);
+  padding-top: 4.8rem;
+}
+@media (min-width: 1032px) {
+  .chapter { padding-top: 7.2rem; }
+}
+.chapter > * {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+.h1 {
+  text-wrap: balance;
+}
+.content {
+  display: grid;
+  row-gap: 2.4rem;
+  align-content: start;
+}
+.statement {
+  font-size: clamp(2.4rem, 1.6rem + 2vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  max-width: 21em;
+  text-wrap: pretty;
+  color: var(--color-ink);
+}
+.rest {
+  display: grid;
+  row-gap: 2.4rem;
+  max-width: 68ch;
+}
+.letterhead {
+  margin-top: 2.4rem;
+  max-width: 68ch;
+}
+
+/* The mark, 1998 to 2026: the original Hyland oval steps back as the rule draws to HYDE. */
+.marks {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+  margin: 0;
+}
+.mark {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.mark img {
+  height: 4rem;
+  width: auto;
+}
+.mark[data-era="1998"] {
+  opacity: 0.6;
+}
+.lockup {
+  height: 2.4rem;
+  width: auto;
+  margin-block: 0.8rem;
+}
+.year {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: var(--color-ink-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.line {
+  flex: 1 1 auto;
+  min-width: 3.2rem;
+  max-width: 9.6rem;
+  height: 1px;
+  margin-bottom: 3.5rem;
+  background: var(--color-ink);
+  transform-origin: left center;
+}
+:global([dir="rtl"]) .line {
+  transform-origin: right center;
+}
+
+.iso {
+  display: block;
+  width: 5.6rem;
+  height: auto;
+  margin-top: 1.6rem;
+}
+.rail {
+  margin-top: 4.8rem;
+  border-top: 1px solid var(--color-ink);
+}
+.rail li {
+  border-bottom: 1px solid var(--color-line);
+}
+.rail a {
+  display: block;
+  padding-block: 1.6rem;
+  font-size: var(--text-c1);
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.4rem;
+  transition: text-decoration-color var(--motion-fast) var(--motion-ease-crisp);
+}
+.rail a:hover,
+.rail a:focus-visible {
+  text-decoration-color: var(--color-ink);
+}
+
+@media (min-width: 1376px) {
+  .chapter { row-gap: 4.8rem; }
+  .h1 { grid-column: 1 / span 8; grid-row: 1; }
+  .content {
+    grid-column: 9 / span 16;
+    grid-row: 1 / span 2;
+    row-gap: 4.8rem;
+  }
+  .rest {
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3.2rem;
+  }
+  .letterhead {
+    grid-column: 1 / span 7;
+    grid-row: 2;
+    align-self: end;
+    margin-top: 0;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    /* Words brighten from ink-secondary (5.0:1, never fainter) as the statement crosses the view. */
+    .statement { view-timeline: --welcome-statement block; }
+    .statement > span {
+      animation: brighten linear both;
+      animation-timeline: --welcome-statement;
+      animation-range:
+        cover calc(15% + var(--k) / var(--n) * 35%)
+        cover calc(15% + (var(--k) + 1) / var(--n) * 35%);
+    }
+    /* The mark's history plays once as the letterhead enters. */
+    .marks { view-timeline: --welcome-marks block; }
+    .mark[data-era="1998"] {
+      animation: recede linear both;
+      animation-timeline: --welcome-marks;
+      animation-range: entry 30% cover 45%;
+    }
+    .line {
+      animation: draw linear both;
+      animation-timeline: --welcome-marks;
+      animation-range: entry 40% cover 50%;
+    }
+    .mark[data-era="2026"] {
+      animation: arrive linear both;
+      animation-timeline: --welcome-marks;
+      animation-range: entry 55% cover 55%;
+    }
+  }
+}
+@keyframes brighten { from { color: var(--color-ink-secondary); } }
+@keyframes recede { from { opacity: 1; } }
+@keyframes draw { from { transform: scaleX(0); } }
+@keyframes arrive { from { opacity: 0; translate: 0 1.2rem; } }

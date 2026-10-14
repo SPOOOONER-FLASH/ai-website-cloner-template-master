@@ -1,7 +1,7 @@
 import { articleFaqHeading, articleFaqItems, articleFaqLocale } from "@/lib/article-faq";
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
-import { newsKindLabels, formatNewsDate, getNewsBySlug } from "@/data/news";
+import { newsKindLabels, formatNewsDate, getNewsBySlug, getPublishedNews } from "@/data/news";
 import { getGuideBySlug, getPublishedGuides } from "@/data/guides";
 import { CREDENTIAL_TRANSLATIONS, authorHref, authorPath, authorPortrait } from "@/data/authors";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
@@ -226,6 +226,76 @@ export function NewsDetail({
   const thumb = (p: (typeof related)[number]) => (
     <MediaPlaceholder src={p.heroImage.src} ratio="1 / 1" label={`${p.model} ${tr(p, "name", locale)}`} sizes="64px" hiddenFromAssistiveTech />
   );
+  /* The cover both layouts share (row 87, client 2026-10-13: 「指南的页头设计我很喜欢 这个要普及」):
+     the article's place in its series as a figure, the facts, title, ruled summary, byline and
+     the photographed models. News passes its kind as the first fact. */
+  const coverSection = (position: number, total: number, numberLabel: string, kind?: string) => (
+      <section className={`col-content ${guide.cover}`}>
+        <div aria-hidden={position < 0}>
+          {position >= 0 ? (
+            <>
+              <span className={`${guide.mask} ${guide.number}`}><span>{String(position + 1).padStart(2, "0")}</span></span>
+              <span className={guide.numberLabel}>
+                {numberLabel.replace("{n}", String(position + 1)).replace("{total}", String(total))}
+              </span>
+            </>
+          ) : null}
+        </div>
+        <div className="min-w-0">
+          <p className={guide.meta}>
+            {kind ? <span>{kind}</span> : null}
+            <time dateTime={article.publishedAt}>{formatNewsDate(article.publishedAt, locale)}</time>
+            {article.updatedAt && article.updatedAt > article.publishedAt ? (
+              <span>
+                {tx(locale, "Updated", { es: "Actualizado", pt: "Atualizado" })} <time dateTime={article.updatedAt}>{formatNewsDate(article.updatedAt, locale)}</time>
+              </span>
+            ) : null}
+            <span>{tx(locale, "{n} min read", { es: "{n} min de lectura", pt: "{n} min de leitura" }).replace("{n}", String(minutes))}</span>
+            <span>{tx(locale, "{n} sections", { es: "{n} secciones", pt: "{n} seções" }).replace("{n}", String(level2.length))}</span>
+            {related.length ? <span>{tx(locale, "{n} models", { es: "{n} modelos", pt: "{n} modelos" }).replace("{n}", String(related.length))}</span> : null}
+          </p>
+          <h1 className={`mt-24 text-h1 text-ink ${editorial.articleTitle}`}>{title}</h1>
+          <p className={`max-w-[72ch] text-h4 text-ink-secondary ${guide.ruled}`}>{summary}</p>
+          {/*
+            THE BYLINE, visible because the structured data names a Person. The credential
+            shown is the one held; a real photograph of the person named, or nothing.
+          */}
+          {article.author ? (
+            <div className="mt-24 flex items-start gap-12">
+              {portrait ? (
+                <img src={portrait.src} alt={article.author?.name ?? ""} width={portrait.width} height={portrait.height} loading="lazy" className="h-48 w-48 flex-none rounded-[2px] object-cover" />
+              ) : null}
+              <p className="text-c2 text-ink-secondary">
+                <span className="text-ink">
+                  {authorPath(article.author) ? (
+                    <Link href={authorHref(article.author, locale)!} rel="author" className="short-marker">{article.author.name}</Link>
+                  ) : article.author.url ? (
+                    <a href={article.author.url} rel="author noopener noreferrer" target="_blank" className="short-marker">{article.author.name}</a>
+                  ) : (
+                    article.author.name
+                  )}
+                </span>
+                <span className="mt-4 block">{tx(locale, article.author.role, { es: article.author.roleEs, pt: article.author.rolePt })}</span>
+                {article.author.credential ? (
+                  <span className="block text-ink-secondary">{tx(locale, article.author.credential, CREDENTIAL_TRANSLATIONS[article.author.credential])}</span>
+                ) : null}
+              </p>
+            </div>
+          ) : null}
+          {related.length ? (
+            <div className={guide.models} data-link-list="article-rail" aria-label={t.mentioned} role="list">
+              {related.map((p) => (
+                <Link key={p.slug} href={productHref(p)} role="listitem" title={`${p.model} — ${tr(p, "name", locale)}`}>
+                  {thumb(p)}
+                  <span>{p.model}</span>
+                </Link>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      </section>
+  );
+
   if (section === "guides") {
     const ordered = getPublishedGuides().slice().sort((a, b) => a.publishedAt.localeCompare(b.publishedAt) || a.slug.localeCompare(b.slug));
     const position = ordered.findIndex((g) => g.slug === article.slug);
@@ -247,69 +317,7 @@ export function NewsDetail({
             </div>
           </section>
 
-          <section className={`col-content ${guide.cover}`}>
-            <div aria-hidden={position < 0}>
-              {position >= 0 ? (
-                <>
-                  <span className={`${guide.mask} ${guide.number}`}><span>{String(position + 1).padStart(2, "0")}</span></span>
-                  <span className={guide.numberLabel}>
-                    {tx(locale, "Guide {n} of {total}", { es: "Guía {n} de {total}", pt: "Guia {n} de {total}" }).replace("{n}", String(position + 1)).replace("{total}", String(ordered.length))}
-                  </span>
-                </>
-              ) : null}
-            </div>
-            <div className="min-w-0">
-              <p className={guide.meta}>
-                <time dateTime={article.publishedAt}>{formatNewsDate(article.publishedAt, locale)}</time>
-                {article.updatedAt && article.updatedAt > article.publishedAt ? (
-                  <span>
-                    {tx(locale, "Updated", { es: "Actualizado", pt: "Atualizado" })} <time dateTime={article.updatedAt}>{formatNewsDate(article.updatedAt, locale)}</time>
-                  </span>
-                ) : null}
-                <span>{tx(locale, "{n} min read", { es: "{n} min de lectura", pt: "{n} min de leitura" }).replace("{n}", String(minutes))}</span>
-                <span>{tx(locale, "{n} sections", { es: "{n} secciones", pt: "{n} seções" }).replace("{n}", String(level2.length))}</span>
-                {related.length ? <span>{tx(locale, "{n} models", { es: "{n} modelos", pt: "{n} modelos" }).replace("{n}", String(related.length))}</span> : null}
-              </p>
-              <h1 className={`mt-24 text-h1 text-ink ${editorial.articleTitle}`}>{title}</h1>
-              <p className={`max-w-[72ch] text-h4 text-ink-secondary ${guide.ruled}`}>{summary}</p>
-              {/*
-                THE BYLINE, visible because the structured data names a Person. The credential
-                shown is the one held; a real photograph of the person named, or nothing.
-              */}
-              {article.author ? (
-                <div className="mt-24 flex items-start gap-12">
-                  {portrait ? (
-                    <img src={portrait.src} alt={article.author?.name ?? ""} width={portrait.width} height={portrait.height} loading="lazy" className="h-48 w-48 flex-none rounded-[2px] object-cover" />
-                  ) : null}
-                  <p className="text-c2 text-ink-secondary">
-                    <span className="text-ink">
-                      {authorPath(article.author) ? (
-                        <Link href={authorHref(article.author, locale)!} rel="author" className="short-marker">{article.author.name}</Link>
-                      ) : article.author.url ? (
-                        <a href={article.author.url} rel="author noopener noreferrer" target="_blank" className="short-marker">{article.author.name}</a>
-                      ) : (
-                        article.author.name
-                      )}
-                    </span>
-                    <span className="mt-4 block">{tx(locale, article.author.role, { es: article.author.roleEs, pt: article.author.rolePt })}</span>
-                    {article.author.credential ? (
-                      <span className="block text-ink-secondary">{tx(locale, article.author.credential, CREDENTIAL_TRANSLATIONS[article.author.credential])}</span>
-                    ) : null}
-                  </p>
-                </div>
-              ) : null}
-              {related.length ? (
-                <div className={guide.models} data-link-list="article-rail" aria-label={t.mentioned} role="list">
-                  {related.map((p) => (
-                    <Link key={p.slug} href={productHref(p)} role="listitem" title={`${p.model} — ${tr(p, "name", locale)}`}>
-                      {thumb(p)}
-                      <span>{p.model}</span>
-                    </Link>
-                  ))}
-                </div>
-              ) : null}
-            </div>
-          </section>
+          {coverSection(position, ordered.length, tx(locale, "Guide {n} of {total}", { es: "Guía {n} de {total}", pt: "Guia {n} de {total}" }))}
 
           {level2.length > 1 ? (
             <section className="col-content">
@@ -441,158 +449,35 @@ export function NewsDetail({
     );
   }
 
+  const newsOrdered = getPublishedNews().slice().sort((a, b) => a.publishedAt.localeCompare(b.publishedAt) || a.slug.localeCompare(b.slug));
+  const newsPosition = newsOrdered.findIndex((a) => a.slug === article.slug);
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-64">
       <GuideReading
         targetId="article-overview"
         minutes={minutes}
         labels={{ left: tx(locale, "About {n} min left", { es: "Quedan unos {n} min", pt: "Faltam cerca de {n} min" }), nearly: tx(locale, "Nearly done", { es: "Casi terminado", pt: "Quase no fim" }) }}
       />
-      <div className="layout space-y-96 lg:space-y-136">
+      <div className="layout space-y-48 lg:space-y-64">
         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
           <div className="col-span-full">
-            <Breadcrumbs
-              items={[
-                { label: t.home, href: `${base}/` },
-                { label: sectionLabel, href: `${base}/${section}/` },
-                { label: title },
-              ]}
-            />
-          </div>
-
-          <h1 className="col-span-full mt-16 text-h1 text-ink xl:col-span-18">
-            {title}
-          </h1>
-
-          <p className="col-span-full max-w-[72ch] text-h4 text-ink-secondary xl:col-span-16">
-            {summary}
-          </p>
-
-          {/* Phones already have the breadcrumb one screen up; the repeat is desktop-only (09-28). */}
-          <div className="col-span-full max-md:hidden">
-            <Link
-              href={`${base}/${section}/`}
-              className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
-            >
-              {t.back}
-            </Link>
+            <Breadcrumbs items={[{ label: t.home, href: `${base}/` }, { label: sectionLabel, href: `${base}/${section}/` }, { label: title }]} />
           </div>
         </section>
 
-        <section className="col-content grid w-full grid-cols gap-x gap-y-48">
-          {/* Left column: the dateline, the contact route, and any linked products. */}
-          <div className="col-span-full lg:col-span-4 xl:col-span-8">
-            {section === "news" && <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-              {newsKindLabels(locale)[article.kind]}
-            </p>}
-            <time
-              dateTime={article.publishedAt}
-              className="mt-8 block text-h3 text-ink"
-            >
-              {formatNewsDate(article.publishedAt, locale)}
-            </time>
-            {article.updatedAt && article.updatedAt > article.publishedAt ? (
-              <p className="mt-4 text-c2 text-ink-secondary">
-                {tx(locale, "Updated", { es: "Actualizado", pt: "Atualizado" })}{" "}
-                <time dateTime={article.updatedAt}>{formatNewsDate(article.updatedAt, locale)}</time>
-              </p>
-            ) : null}
+        {coverSection(newsPosition, newsOrdered.length, tx(locale, "Article {n} of {total}", { es: "Artículo {n} de {total}", pt: "Artigo {n} de {total}" }), section === "news" ? newsKindLabels(locale)[article.kind] : undefined)}
 
-            {/*
-              THE BYLINE.
+        {level2.length > 1 ? (
+          <section className="col-content">
+            <GuideSectionBars
+              label={tx(locale, "Sections of this article", { es: "Secciones de este artículo", pt: "Seções deste artigo" })}
+              items={level2.map((item) => ({ id: item.id, text: item.text, share: (sectionText.get(item.id) ?? "").length / longest }))}
+            />
+          </section>
+        ) : null}
 
-              Visible because the structured data names a Person, and markup that asserts
-              an author the page never shows is the same drift the FAQ answers are
-              guarded against. The credential shown is the one held; nothing here claims
-              engineering authority, and where a factory engineer reviews a piece a
-              reviewer line can be added beside this — empty until a real name exists.
-            */}
-            {article.author ? (
-              <div className="mt-16 flex items-start gap-12">
-                {/*
-                  A real photograph of the person named, supplied by the client, or nothing.
-                  The alt names the author: image search indexes the portrait and the
-                  SEO/GEO graph audit counts an unnamed one as a missing alt (2026-09-28).
-                */}
-                {portrait ? (
-                  <img
-                    src={portrait.src}
-                    alt={article.author?.name ?? ""}
-                    width={portrait.width}
-                    height={portrait.height}
-                    loading="lazy"
-                    className="h-48 w-48 flex-none rounded-[2px] object-cover"
-                  />
-                ) : null}
-                <p className="text-c2 text-ink-secondary">
-                <span className="text-ink">
-                  {/* The on-site profile where one exists (09-28); otherwise the author's own page. */}
-                  {authorPath(article.author) ? (
-                    <Link href={authorHref(article.author, locale)!} rel="author" className="short-marker">
-                      {article.author.name}
-                    </Link>
-                  ) : article.author.url ? (
-                    <a
-                      href={article.author.url}
-                      rel="author noopener noreferrer"
-                      target="_blank"
-                      className="short-marker"
-                    >
-                      {article.author.name}
-                    </a>
-                  ) : (
-                    article.author.name
-                  )}
-                </span>
-                <span className="mt-4 block">
-                  {tx(locale, article.author.role, { es: article.author.roleEs, pt: article.author.rolePt })}
-                </span>
-                {article.author.credential ? (
-                  <span className="block text-ink-secondary">
-                    {tx(locale, article.author.credential, CREDENTIAL_TRANSLATIONS[article.author.credential])}
-                  </span>
-                ) : null}
-                </p>
-              </div>
-            ) : null}
-
-            {section === "news" && <div className="mt-32 border-t border-line pt-16">
-              <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                {t.pressEnquiries}
-              </p>
-              {/*
-                No named press officer. The client has not nominated one, and putting an
-                invented name on a page journalists are meant to act on is worse than
-                pointing at the enquiry form.
-              */}
-              <p className="mt-8 text-c1 text-ink">Canton Hyland</p>
-              <Link
-                href={`${base}/contact/`}
-                className="short-marker short-marker-compact mt-8 text-c1 text-brand hover:text-brand-hover"
-              >
-                {t.contact}
-              </Link>
-            </div>}
-
-            {related.length > 0 ? (
-              <div className="mt-32 border-t border-line pt-16">
-                <p className="text-c2 text-ink-secondary">{t.mentioned}</p>
-                <div className={guide.models} data-link-list="article-rail" aria-label={t.mentioned} role="list">
-                  {related.map((p) => (
-                    <Link key={p.slug} href={productHref(p)} role="listitem" title={`${p.model} — ${tr(p, "name", locale)}`}>
-                      {thumb(p)}
-                      <span>{p.model}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-          </div>
-
-          {/* Right column: the single editorial image, at press width. */}
-          <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
+        <section className="col-content">
           <NewsVisual article={article} locale={locale} />
-          </div>
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x">

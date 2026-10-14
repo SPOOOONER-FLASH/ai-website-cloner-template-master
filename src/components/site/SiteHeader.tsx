@@ -468,7 +468,7 @@ export function SiteHeader({
                         href={href}
                         className="header-shelf-link block border-t border-line pt-12 text-ink no-underline"
                       >
-                        <span className="short-marker text-c1">
+                        <span className="short-marker text-h3">
                           {category.labels[locale]}
                         </span>
                         <span className="ms-8 text-c2 tabular-nums text-ink-secondary">
@@ -531,7 +531,7 @@ export function SiteHeader({
                     href={localisedHref(link.href, locale)}
                     className="header-shelf-link border-t border-ink pt-16 text-ink no-underline"
                   >
-                    <span className="short-marker text-c1">{link.label}</span>
+                    <span className="short-marker text-h3">{link.label}</span>
                     {link.href === "/events" && bauUpcoming ? (
                       <span className="mt-8 block text-c2 text-ink-secondary">
                         <bdi className="block">BAU {bau.year}, {bau.event.venue}</bdi>
@@ -579,7 +579,7 @@ export function SiteHeader({
                       className="header-shelf-link border-t border-ink pt-16 text-ink no-underline"
                     >
                       <span className="flex items-baseline justify-between gap-16">
-                        <span className="short-marker text-c1">{navLabel(link, locale)}</span>
+                        <span className="short-marker text-h3">{navLabel(link, locale)}</span>
                         <span className="text-c2 tabular-nums text-ink-secondary">{resourceCounts[link.href]}</span>
                       </span>
                       <span className="mt-8 block text-c2 text-ink-secondary">{detail}</span>
