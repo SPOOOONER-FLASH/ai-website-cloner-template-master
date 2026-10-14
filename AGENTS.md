@@ -38,7 +38,7 @@ removed on 2026-09-28 because the site no longer emulates anything.
 
 ## Design Principles
 - **Real content** — real products, real photographs, real dimensions; never placeholders
-- See "Professional, not decorated" and "Never generate an imagined metal product" below
+- See "Professional, not decorated" and "Never generate an imagined metal product. Render only what the photographs prove." below (product renders allowed only when checked against the real photos, client 2026-10-13)
 
 ## Project Structure
 ```
@@ -421,7 +421,19 @@ cautious buyer more willing to sign"**. Concretely:
 This is the same principle as the image rule below, applied to everything else: the
 photograph is the specification's first draft, and the whole site is the factory's.
 
-### Never generate an imagined metal product. Ever.
+### Never generate an imagined metal product. Render only what the photographs prove.
+
+> **Current rule (client, 2026-10-13), read this first.** Scenes, installation shots and
+> mood images may be rendered around the product. **The product itself may be rendered
+> too** — 3D or an AI re-render — built from that model's own site photographs
+> (`public/images/products/`) and its published dimensions. Every rendered product is
+> compared side by side with those photographs: holes, screws, profile, proportions,
+> keyway, part count, finish. One mismatch means it does not ship, and the real photo is
+> used instead. A part the photographs do not show is never invented. What stays
+> forbidden is the *imagined* product: one not grounded in, or not matching, our
+> photographs. Details are under "What is allowed" below and in
+> `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`. The history below
+> explains why the check is mandatory.
 
 Client instruction, 2026-09-04, after the client's own principal rejected a set of
 AI-generated product images on sight:
@@ -429,7 +441,9 @@ AI-generated product images on sight:
 > 金属的孔位不对，螺丝不对，安装不上去，都不能用。
 > AI 可以把现有的图片清晰化、白化，但是它不能想象产品。
 
-**This is not a quality bar that better prompting clears. It is a category rule.**
+**This is not a quality bar that better prompting clears. It is a category rule** — for the
+*imagined* product. A render checked against the model's own photographs is not imagined
+(2026-10-13); an unchecked one is.
 
 A garment or a shoe tolerates invented detail — a buyer reads it as styling. **Door
 hardware does not.** Hole positions, thread pitch, spindle squares, backset, fixing
@@ -445,8 +459,9 @@ That is also why this matters more here than the same mistake would on a fashion
 
 #### What is forbidden
 
-- Generating a product that does not exist, in any style, for any purpose — hero,
-  editorial, category art, social, a mock-up, "just for the preview".
+- Generating a product that does not exist, or rendering a real one without checking it
+  against that model's photographs, in any style, for any purpose — hero, editorial,
+  category art, social, a mock-up, "just for the preview".
 - Adding, removing or restyling any component of a real product: swapping a hinge for a
   cylinder, adding a decorative escutcheon, changing a lever profile, inventing screws.
 - Assembling a "set" the factory does not sell as a set, or mixing finishes within one

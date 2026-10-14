@@ -81,7 +81,7 @@ const lines = [
 ];
 let day = "";
 for (const r of rows) {
-  const d = releaseDate(r.when);
+  const d = r.version.slice(1, 11).replaceAll(".", "-"); // the version's day, even if the commit landed after midnight
   if (d !== day) {
     day = d;
     lines.push(`## ${d}`, "");
