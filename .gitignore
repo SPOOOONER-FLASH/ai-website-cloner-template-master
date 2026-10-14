@@ -94,3 +94,4 @@ __pycache__/
 # tesseract 语言模型：5MB 的二进制，OCR 时按需下载，不进仓库
 eng.traineddata
 *.traineddata
+docs/research/image-audit/inventory.json
