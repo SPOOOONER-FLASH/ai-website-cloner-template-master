@@ -184,3 +184,5 @@
 | 178 | 发布「硬件产品数据库与报价系统」会话 c6da5496：3 篇新指南（防火门年检、逃生锁锁定方式、墨西哥进口西语首发）；实测 | 10-13 完成（发布 7f29e128b50d / GitLab be1db28ad9f；3 篇在 en/es/fr/ar 均 200，墨西哥篇在 /es/sitemap.xml） |
 | 179 | GEO：llms.txt 只列 1 个西语 URL，AI 引用 /es/ 为 0 → llms.txt 加西语指南段（/es/ URL + 西语一句话） | 10-13 完成（同版上线：线上 /llms.txt 有「Guías en español」46 条 /es/guides/ 链接；10-20 用 Clarity 复查 /es/ 是否被 AI 引用，仍为 0 再考虑英文指南加可见「Leer en español」链接） |
 | 180 | 客户 10-13：检查十个语种被 AI 引用的条件（llms.txt、sitemap、hreflang、译文覆盖、robots、结构化数据语言） | 10-13 完成（十语 sitemap/hreflang/lang/inLanguage/feed/robots 均正常；唯一缺口 llms.txt 只给 8 语首页 → 新增 /<语种>/llms.txt 九个 + robots 放行 + 根文件链接；见 agent-updates/2026-10-13-claude-locale-llms.md） |
+| 181 | 发布「Hyde 文案」会话 58dd7fc8e7d9：新闻页改用指南阅读布局、readingAids（双开门篇要点表+页边数字）、公司页视差；实测，并核对新闻页的相关产品区块仍在 | 10-13 完成（发布 0c58dddea2ce / GitLab 98ba4245577；双开门篇英文要点表+4 个页边数字、法语都没有；新闻页相关产品区块仍在；公司页 16 张图 view() 视差生效） |
+| 182 | 发布「Hyde 文案」会话 98e3fc369f53：菜单 text-h3、/events/ 重做、/faq/ 十语重做、首页开场大字主张+标志演变+视差、新闻页指南封面；实测 | 10-13 完成（发布 68fe33e76db4 / GitLab 1ddd44ddf21；前两次被 test:export 拦下：首页 1998 标志缺 srcset（补 2x）、西葡价格表链接 404（改指英文页）；线上 /events/ 11–15 Jan 2027、/faq/ 搜索+16 of 16、首页 Hyland 1998→HYDE 2026 标志、新闻页 Article 35 of 35） |

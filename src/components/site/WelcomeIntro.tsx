@@ -28,7 +28,7 @@ const introCopy = {
     company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     links: [
       { label: "Descargas", href: "/es/downloads" },
-      { label: "Lista de precios", href: "/es/request/price-list" },
+      { label: "Lista de precios", href: "/request/price-list" } /* English only; /es/request/price-list 404s */,
       { label: "Conozca la empresa", href: "/es/company" },
     ],
   },
@@ -39,7 +39,7 @@ const introCopy = {
     company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     links: [
       { label: "Downloads", href: "/pt/downloads" },
-      { label: "Lista de preços", href: "/pt/request/price-list" },
+      { label: "Lista de preços", href: "/request/price-list" } /* English only; /pt/request/price-list 404s */,
       { label: "Conheça a empresa", href: "/pt/company" },
     ],
   },
@@ -109,7 +109,7 @@ export function WelcomeIntro({
           >
             <span className={styles.mark} data-era="1998">
               {/* eslint-disable-next-line @next/next/no-img-element -- the original 1998 artwork, shown as it was */}
-              <img src="/images/brand/hyland-mark.png" alt="" width={254} height={150} loading="lazy" decoding="async" />
+              <img src="/images/brand/hyland-mark.png" srcSet="/images/brand/hyland-mark.png 2x" alt="" width={254} height={150} loading="lazy" decoding="async" />
               <span className={styles.year}>1998</span>
             </span>
             <span className={styles.line} aria-hidden="true" />
