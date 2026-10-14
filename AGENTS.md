@@ -465,8 +465,16 @@ That is also why this matters more here than the same mistake would on a fashion
 - **Scene and installation composites built from our real product photographs** (client,
   2026-10-13: 「可以运用我们的实拍图合成渲染……只要产品是对的，做出来逻辑、搭配、场景、安装位置都是对的就行，
   这个需要你们应用专业的五金知识」). Everything around the product may be rendered or
-  generated: door, wall, glass, stone, props, light. The product pixels stay the photograph.
-  The scene must be right as hardware: the correct door type, mounting position, height,
+  generated: door, wall, glass, stone, props, light. **The product itself may be rendered
+  too** (client, same day: 「产品本身也可以渲染呀，结合我们上传到网站这么多图片」): a 3D model
+  or AI re-render built from that model's own uploaded photographs — every angle the site
+  holds — plus its published dimensions. What makes it allowed is that it is checked,
+  not that it was prompted carefully. Before it ships, compare the rendered product with
+  its reference photographs on hole positions and count, screws, lever/bar profile,
+  proportions, keyway, finish and every component. Anything the photographs do not show
+  is left out or kept out of view, never invented. One mismatch and the image does not
+  ship; fall back to the photograph. That is still the 09-04 rule: the rendered part must
+  be one a buyer could install. The scene must be right as hardware: the correct door type, mounting position, height,
   handing and side, at true scale and in one finish. A panic bar on the pull side, or a
   hinge on the lock stile, fails this test just as a redrawn lever does.
   Brief, sources and the installation checklist: `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`.
