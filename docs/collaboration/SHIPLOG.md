@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 524 次提交
+最近 30 天 · 共 525 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 23:23 | 中立 | AGENTS.md 图片规矩统一：标题与禁止条款对齐 10-13 新规矩（可渲染，必须对照实拍图） | `5c49ba90d0d` |
 | 23:12 | 中立 | Tasks: row 93, which 308 images failed | `09978783108` |
 | 22:57 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `20ec8a4d27d` |
 | 22:56 | HYDE | 308: three of the five held images go up after the side-by-side check | `1d93389fa56` |
