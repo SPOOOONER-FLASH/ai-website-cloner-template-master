@@ -12,7 +12,7 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 22:07 | 中立 | 导出检查 check-article-routes：十语每篇文章页必须有买家区块和 /contact/# 报价链接 | `15d89a8be0e` |
+| 22:05 | 中立 | Codex 图片规矩：允许实拍图合成场景/安装图（甲方 10-13），取图改为站内 public/images/products | `3ef5c435212` |
 | 21:55 | 中立 | 上线日志：每次 HYDE 发布有版本号（vYYYY.MM.DD.N），记录带上线的改动，线上 /release.json 可查 | `333033d4d08` |
 | 20:59 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `261dfca428c` |
 | 20:57 | 中立 | Tasks: rows 82-89 live (releases 0c58dddea2ce, 68fe33e76db4) | `0f161eb9cae` |
