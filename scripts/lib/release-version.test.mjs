@@ -15,6 +15,11 @@ test("a version stamped in the subject wins, and nextVersion continues the day",
   assert.equal(nextVersion([r("2026-10-13T08:00:00Z")], "2026-10-13T23:00:00Z"), "v2026.10.13.2");
 });
 
+test("a release stamped on day D but committed after midnight does not consume day D+1's first number", () => {
+  const late = r("2026-10-14T07:17:00Z", "发布（HYDE（cantonlock.com）） v2026.10.13.13：构建 abc1234"); // 00:17 LA on 10-14
+  assert.equal(nextVersion([late], "2026-10-14T18:00:00Z"), "v2026.10.14.1");
+});
+
 test("hotfix only when every change is a fix", () => {
   assert.equal(releaseType(["首页链接 404 修复", "补 srcSet 解开阻断"]), "Hotfix");
   assert.equal(releaseType(["首页链接 404 修复", "新指南：防火门年检"]), "Update");
