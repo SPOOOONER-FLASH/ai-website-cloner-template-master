@@ -119,8 +119,14 @@ let ok = false;
 
 try {
   console.log(`→ ${NAME} 发布：拉取 origin/main（大仓库，可能要两三分钟）`);
-  must("git fetch", run("git", ["fetch", "origin", "main"], ROOT, NET));
-  const base = run("git", ["rev-parse", "--short", "origin/main"], ROOT, { capture: true }).out.trim();
+  /*
+    GitHub unreachable (account hidden, TLS failures — 2026-10-14, client: 「github上不去……用 gitlab 就行」):
+    build this checkout's own committed HEAD instead of stopping. The site deploys from GitLab either way.
+  */
+  const fetched = run("git", ["fetch", "origin", "main"], ROOT, NET).status === 0;
+  const SOURCE = fetched ? "origin/main" : run("git", ["rev-parse", "HEAD"], ROOT, { capture: true }).out.trim();
+  if (!fetched) console.log(`⚠ 拉不到 GitHub，改为构建本机已提交的 HEAD（${SOURCE.slice(0, 12)}）`);
+  const base = run("git", ["rev-parse", "--short", SOURCE], ROOT, { capture: true }).out.trim();
 
   if (fresh && existsSync(WT)) {
     run("git", ["worktree", "remove", "--force", WT], ROOT, { capture: true });
@@ -128,12 +134,12 @@ try {
   }
   if (existsSync(join(WT, ".git"))) {
     console.log(`→ 复用检出 ${WT}，切到 ${base}`);
-    must("git checkout", run("git", ["checkout", "-q", "--detach", "-f", "origin/main"], WT));
+    must("git checkout", run("git", ["checkout", "-q", "--detach", "-f", SOURCE], WT));
     must("git clean", run("git", ["clean", "-fdq"], WT));
   } else {
     console.log(`→ 在 ${WT} 建干净检出（${base}）`);
     run("git", ["worktree", "prune"], ROOT, { capture: true });
-    must("git worktree add", run("git", ["worktree", "add", "--detach", WT, "origin/main"], ROOT));
+    must("git worktree add", run("git", ["worktree", "add", "--detach", WT, SOURCE], ROOT));
   }
   if (existsSync(".env.local")) copyFileSync(".env.local", join(WT, ".env.local"));
 

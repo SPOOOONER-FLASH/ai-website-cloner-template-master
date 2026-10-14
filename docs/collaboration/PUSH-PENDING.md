@@ -325,3 +325,16 @@
 ## 2026/10/14 01:30:12 · HYDE（cantonlock.com）发布三次推送失败
 
 构建好的发布提交 `d09a7346f576`（源码 1fd9acd4305e）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/10/14 03:21:12 · 三次推送失败
+
+原因：fatal: unable to access 'https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git/': schannel: failed to receive handshake, SSL/TLS connection failed
+
+未推送的提交：
+
+- `fcaf8352b84a` shiplog: 更新上线存档
+- `2347ded30068` Merge remote-tracking branch 'origin/main' into HEAD
+- `8f34bd22d956` shiplog: 更新上线存档
+- `4dc6ea7bb59f` 037 PS 新品补生成 SEO 标题与描述（发布被 titles:check 拦下）
+
+下一次 `npm run ship` 成功时这些会一起推上去。
