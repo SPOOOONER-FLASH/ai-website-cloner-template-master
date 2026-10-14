@@ -469,6 +469,14 @@ export interface NewsArticle {
    * already answers the question still benefits from pairing it with one.
    */
   faq?: { en: { question: string; answer: string }[]; es?: { question: string; answer: string }[]; pt?: { question: string; answer: string }[] };
+  /**
+   * Reading aids for a long article (client 2026-10-13: 开头放一张要点表 / 关键数字提到页边),
+   * per language like `faq`. `keyPoints` is a short ruled table above the text; `figures`
+   * sets one number beside a section, matched by that section's heading text. A locale with
+   * no entry shows neither: an English table on a French page reads as a bug. Every value
+   * must already be written in that language's body (src/data/article-reading-aids.test.ts).
+   */
+  readingAids?: Partial<Record<"en" | "es" | "pt", ArticleReadingAids>>;
   title: string;
   titleEs?: string;
   titlePt?: string;
@@ -633,4 +641,9 @@ export interface Category {
   image: ImageRef;
   /** Sub-categories. Absent or empty means this is a leaf that holds products. */
   children?: Category[];
+}
+
+export interface ArticleReadingAids {
+  keyPoints?: { title: string; headers: string[]; rows: string[][] };
+  figures?: { heading: string; value: string; label: string }[];
 }

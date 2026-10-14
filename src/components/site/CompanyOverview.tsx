@@ -4,6 +4,7 @@ import { CapabilityChain } from "./CapabilityChain";
 import { representatives } from "@/data/representatives";
 import { publishedProducts } from "@/data/products";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import photos from "./CompanyPhotos.module.css";
 import {
   certificates,
   companyEditorialStudies,
@@ -235,7 +236,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             <h2 className="text-h2 text-ink">{text.context}</h2>
             <p className="mt-24 text-c1 text-ink-secondary">{text.contextBody}</p>
           </div>
-          <div className="hidden lg:col-span-7 lg:col-start-6 lg:block xl:col-span-15 xl:col-start-10">
+          <div className={`hidden lg:col-span-7 lg:col-start-6 lg:block xl:col-span-15 xl:col-start-10 ${photos.drift}`}>
             <MediaPlaceholder
               {...companyEditorialStudies[0]}
               label={localiseImageLabel(
@@ -252,12 +253,13 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <h2 className="text-h2 text-ink">{text.gallery}</h2>
           <div className="mt-48 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2">
             {companyEditorialStudies.slice(1).map((image) => (
-              <MediaPlaceholder
-                key={image.src}
-                {...image}
-                label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
-                sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
-              />
+              <div key={image.src} className={photos.drift}>
+                <MediaPlaceholder
+                  {...image}
+                  label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
+                  sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
+                />
+              </div>
             ))}
           </div>
         </section>
@@ -267,12 +269,13 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <p className="mt-24 max-w-[48rem] text-c1 text-ink-secondary">{text.workshopBody}</p>
           <div className="mt-48 grid grid-cols-1 gap-x gap-y-32 sm:grid-cols-2 lg:grid-cols-3">
             {factoryWorkshop.map((image) => (
-              <MediaPlaceholder
-                key={image.src}
-                {...image}
-                label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
-                sizes="(min-width: 1440px) 450px, (min-width: 1024px) 31vw, (min-width: 744px) 48vw, 96vw"
-              />
+              <div key={image.src} className={photos.drift}>
+                <MediaPlaceholder
+                  {...image}
+                  label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
+                  sizes="(min-width: 1440px) 450px, (min-width: 1024px) 31vw, (min-width: 744px) 48vw, 96vw"
+                />
+              </div>
             ))}
           </div>
         </section>

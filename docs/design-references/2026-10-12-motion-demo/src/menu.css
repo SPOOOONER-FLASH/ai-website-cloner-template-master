@@ -286,3 +286,9 @@
   .pv-menu .pv-dr-link svg,
   .pv-menu .pv-ali { transition: none; }
 }
+
+/* ?type=large (client 10-13: 菜单的单词加粗大号会好一些吗): item names at the Buy shelf size,
+   so every shelf reads as a list of destinations rather than a list of captions. */
+.pv-menu.pv-large .pv-it { font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -.01em; }
+.pv-menu.pv-large .pv-ct { font-size: 15px; line-height: 28px; }
+.pv-menu.pv-large .pv-dt { margin-top: 8px; }

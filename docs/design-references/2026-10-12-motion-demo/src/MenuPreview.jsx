@@ -130,7 +130,7 @@ export function MenuPreview() {
   const disclosure = <button className="pv-disc" aria-label={L.drawerFamilies} {...button("products")}><Chevron /></button>;
 
   return (
-    <div className="pv-menu">
+    <div className={`pv-menu${new URLSearchParams(location.search).get("type") === "large" ? " pv-large" : ""}`}>
       <div
         ref={head}
         className="pv-head"

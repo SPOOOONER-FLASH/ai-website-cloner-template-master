@@ -14,8 +14,6 @@ import type { Locale } from "@/data/site";
 import { articleBlocks } from "@/lib/article-layout";
 import { ArticleBody } from "./ArticleBody";
 import { MasterKeyHierarchyFigure, hasMasterKeyFigure } from "./MasterKeyHierarchyFigure";
-import { DataTable } from "./DataTable";
-import { InlineText } from "./InlineText";
 import { ArticleContents } from "./ArticleContents";
 import reading from "./ArticleReading.module.css";
 import { ArticleBuyerBlock } from "./ArticleBuyerBlock";
@@ -162,6 +160,8 @@ export function NewsDetail({
       ? { afterIndex: levelsTable, node: <MasterKeyHierarchyFigure locale={locale} /> }
       : undefined;
   const overview = tx(locale, "Overview", { es: "Resumen", pt: "Visão geral" });
+  /* Only where this locale has its own: see readingAids in types.ts. */
+  const aids = locale === "en" || locale === "es" || locale === "pt" ? article.readingAids?.[locale] : undefined;
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   /*
@@ -204,33 +204,33 @@ export function NewsDetail({
     current section names, and an ink previous/next pair. News keeps the press layout below.
     Every word is the article's own; the numbers are counted from it.
   */
+  /* Reading time from the English text, which every locale translates paragraph for paragraph. */
+  const minutes = Math.max(1, Math.round(article.body.join(" ").split(/\s+/).length / 230));
+  /* Section shapes and the models each section names, from the blocks themselves. */
+  const sectionText = new Map<string, string>([["article-overview", ""]]);
+  let current = "article-overview";
+  blocks.forEach((block) => {
+    if (block.kind === "heading") {
+      current = block.id;
+      sectionText.set(current, "");
+      return;
+    }
+    const text = block.kind === "table" ? [block.headers, ...block.rows].flat().join(" ") : block.text;
+    sectionText.set(current, `${sectionText.get(current) ?? ""} ${text}`);
+  });
+  const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&");
+  const names = (text: string) => related.filter((p) => new RegExp(`(^|[^\\w-])${escape(p.model)}(?![\\w-])`).test(text)).map((p) => p.model);
+  const level2 = contents.filter((item) => item.level === 2 && sectionText.has(item.id));
+  const longest = Math.max(1, ...level2.map((item) => (sectionText.get(item.id) ?? "").length));
+  const productHref = (p: (typeof related)[number]) => `${base}/products/${p.categoryPath[0]}/${p.slug}/`;
+  const thumb = (p: (typeof related)[number]) => (
+    <MediaPlaceholder src={p.heroImage.src} ratio="1 / 1" label={`${p.model} ${tr(p, "name", locale)}`} sizes="64px" hiddenFromAssistiveTech />
+  );
   if (section === "guides") {
     const ordered = getPublishedGuides().slice().sort((a, b) => a.publishedAt.localeCompare(b.publishedAt) || a.slug.localeCompare(b.slug));
     const position = ordered.findIndex((g) => g.slug === article.slug);
     const prev = position > 0 ? ordered[position - 1] : undefined;
     const next = position >= 0 && position < ordered.length - 1 ? ordered[position + 1] : undefined;
-    /* Reading time from the English text, which every locale translates paragraph for paragraph. */
-    const minutes = Math.max(1, Math.round(article.body.join(" ").split(/\s+/).length / 230));
-    /* Section shapes and the models each section names, from the blocks themselves. */
-    const sectionText = new Map<string, string>([["article-overview", ""]]);
-    let current = "article-overview";
-    blocks.forEach((block) => {
-      if (block.kind === "heading") {
-        current = block.id;
-        sectionText.set(current, "");
-        return;
-      }
-      const text = block.kind === "table" ? [block.headers, ...block.rows].flat().join(" ") : block.text;
-      sectionText.set(current, `${sectionText.get(current) ?? ""} ${text}`);
-    });
-    const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&");
-    const names = (text: string) => related.filter((p) => new RegExp(`(^|[^\\w-])${escape(p.model)}(?![\\w-])`).test(text)).map((p) => p.model);
-    const level2 = contents.filter((item) => item.level === 2 && sectionText.has(item.id));
-    const longest = Math.max(1, ...level2.map((item) => (sectionText.get(item.id) ?? "").length));
-    const productHref = (p: (typeof related)[number]) => `${base}/products/${p.categoryPath[0]}/${p.slug}/`;
-    const thumb = (p: (typeof related)[number]) => (
-      <MediaPlaceholder src={p.heroImage.src} ratio="1 / 1" label={`${p.model} ${tr(p, "name", locale)}`} sizes="64px" hiddenFromAssistiveTech />
-    );
     const neighbourImage = (g?: NewsArticle) => (g?.heroImage.src ? toHydeBrandedProductImageSrc(g.heroImage.src) : undefined);
 
     return (
@@ -329,7 +329,7 @@ export function NewsDetail({
               <ArticleContents items={contents} locale={locale} />
             </div>
             <div className="col-span-full min-w-0 lg:col-span-8 lg:col-start-5 xl:col-span-13 xl:col-start-7">
-              <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} />
+              <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} aids={aids} />
 
               {/* The question-and-answer block, after the argument it restates; ArticleFaqJsonLd emits the same items. */}
               {faq.length ? (
@@ -443,6 +443,11 @@ export function NewsDetail({
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+      <GuideReading
+        targetId="article-overview"
+        minutes={minutes}
+        labels={{ left: tx(locale, "About {n} min left", { es: "Quedan unos {n} min", pt: "Faltam cerca de {n} min" }), nearly: tx(locale, "Nearly done", { es: "Casi terminado", pt: "Quase no fim" }) }}
+      />
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
           <div className="col-span-full">
@@ -570,22 +575,16 @@ export function NewsDetail({
             </div>}
 
             {related.length > 0 ? (
-              <div className="mt-32 border-t border-line pt-16" data-link-list="article-rail">
-                <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                  {t.mentioned}
-                </p>
-                <ul className="mt-8 space-y-8">
-                  {related.map((product) => (
-                    <li key={product.slug}>
-                      <Link
-                        href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
-                        className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
-                      >
-                        {product.model} — {tr(product, "name", locale)}
-                      </Link>
-                    </li>
+              <div className="mt-32 border-t border-line pt-16">
+                <p className="text-c2 text-ink-secondary">{t.mentioned}</p>
+                <div className={guide.models} data-link-list="article-rail" aria-label={t.mentioned} role="list">
+                  {related.map((p) => (
+                    <Link key={p.slug} href={productHref(p)} role="listitem" title={`${p.model} — ${tr(p, "name", locale)}`}>
+                      {thumb(p)}
+                      <span>{p.model}</span>
+                    </Link>
                   ))}
-                </ul>
+                </div>
               </div>
             ) : null}
           </div>
@@ -597,58 +596,13 @@ export function NewsDetail({
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x">
-          <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-            {/*
-              News renders the same blocks as guides, in news styling.
-
-              Until 2026-09-23 news printed `body` paragraph by paragraph as plain strings,
-              so the headings and tables the 35 expanded articles carry — 273 `##` and 288
-              table rows — reached the live page as literal `##` and `| a | b |`. The block
-              parser already ran for news (`blocks` above); its output was just unused.
-            */}
-            {blocks.map((block, index) => {
-              if (block.kind === "heading") {
-                return block.level === 2 ? (
-                  <h2 key={block.id} id={block.id} className="mt-48 text-h3 text-ink">
-                    {block.text}
-                  </h2>
-                ) : (
-                  <h3 key={block.id} id={block.id} className="mt-32 text-c1 font-semibold text-ink">
-                    {block.text}
-                  </h3>
-                );
-              }
-              if (block.kind === "table") {
-                const numeric = block.headers.map((_, column) =>
-                  block.rows.every((row) => /^-?\d+(?:\.\d+)?$/.test(row[column])),
-                );
-                return (
-                  <div key={index} className="mt-24">
-                    <DataTable
-                      locale={locale}
-                      caption={block.caption || tx(locale, "Reference table", { es: "Tabla de consulta", pt: "Tabela de consulta" })}
-                      columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? "number" : "text" }))}
-                      rows={block.rows.map((row) =>
-                        row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined, href: column === 0 ? rowHref(text) : undefined })),
-                      )}
-                    />
-                  </div>
-                );
-              }
-              return (
-                <p
-                  key={index}
-                  className={
-                    // FSB sets the lede in bold and lets the rest run as body copy.
-                    index === 0
-                      ? "text-c1 font-semibold text-ink"
-                      : "mt-24 text-c1 text-ink-secondary"
-                  }
-                >
-                  <InlineText text={block.text} links={mentions.get(index)} />
-                </p>
-              );
-            })}
+          <div className="col-span-full min-w-0 lg:col-span-4 xl:col-span-5">
+            <ArticleContents items={contents} locale={locale} />
+          </div>
+          <div className="col-span-full min-w-0 lg:col-span-8 lg:col-start-5 xl:col-span-13 xl:col-start-7">
+            {/* Since 2026-10-13 news reads like a guide (client: 新闻页也用上指南页的阅读辅助): the same
+                blocks through the same ArticleBody, the contents beside them, the models on the right. */}
+            <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} aids={aids} />
 
             {/*
               The question-and-answer block.
@@ -792,6 +746,17 @@ export function NewsDetail({
               </p>
             </div>
           </div>
+          {related.length ? (
+            <aside className="max-xl:hidden xl:col-span-5 xl:col-start-20">
+              <GuideModelRail
+                title={t.mentioned}
+                note={tx(locale, "drawn in ink where this section names them", { es: "en negro donde esta sección los nombra", pt: "a preto onde esta seção os nomeia" })}
+                models={related.map((p) => ({ model: p.model, href: productHref(p), thumb: thumb(p) }))}
+                sections={[...sectionText.entries()].map(([id, text]) => ({ id, models: names(text) }))}
+                action={{ href: `${base}/contact/`, label: tx(locale, "Ask which one fits", { es: "Pregunte cuál encaja", pt: "Pergunte qual serve" }) }}
+              />
+            </aside>
+          ) : null}
         </section>
       </div>
     </main>
