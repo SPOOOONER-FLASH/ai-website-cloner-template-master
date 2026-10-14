@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 513 次提交
+最近 30 天 · 共 514 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 19:23 | HYDE | Long reads: key-points table and margin figures (readingAids) | `6aa8a1e848b` |
 | 19:18 | 中立 | News articles read like guides: contents, progress, model rail | `77befac2e1e` |
 | 10:49 | 中立 | Tasks: row 81, motion on long-read pages | `5c9e0e42891` |
 | 10:49 | 中立 | Previews: Events and FAQ inner pages in the product-page language; large menu labels | `79b4eee67fc` |
