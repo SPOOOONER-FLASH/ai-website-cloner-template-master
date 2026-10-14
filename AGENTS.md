@@ -650,6 +650,11 @@ Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在�
 - **The server pulls from GitLab, not GitHub (since 2026-10-12).** GitHub hid the account, so
   after every `release:hyde` (or any push the site must see), run `node scripts/mirror-to-gitlab.mjs`.
   It pushes one snapshot commit of `origin/main`'s tree; without it the server stays on the old version.
+  **Status 2026-10-14: the account is still hidden** (profile, repos and API 404 to logged-out
+  visitors; authenticated pushes work; every repo under SPOOOONER-FLASH is affected). Ticket #4847632
+  is the client's to chase (`docs/collaboration/2026-10-14-手动操作-GitHub工单催办.md`). Until it is
+  restored: never contact GitHub or change account/repo settings; no new repos, forks, bulk API calls
+  or force pushes; batch small commits where you can — we told GitHub we would push less often.
 - **Every HYDE release has a version number and a log entry (client, 2026-10-13: 「hot fix 或者 update
   日志……命名版本号，记录每次上线什么，有跟踪」).** `release:hyde` stamps `vYYYY.MM.DD.N` into the release
   commit and writes `out/release.json`, so https://cantonlock.com/release.json shows what is live.
