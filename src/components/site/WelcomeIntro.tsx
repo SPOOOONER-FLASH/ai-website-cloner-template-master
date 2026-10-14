@@ -109,7 +109,7 @@ export function WelcomeIntro({
           >
             <span className={styles.mark} data-era="1998">
               {/* eslint-disable-next-line @next/next/no-img-element -- the original 1998 artwork, shown as it was */}
-              <img src="/images/brand/hyland-mark.png" alt="" width={254} height={150} loading="lazy" decoding="async" />
+              <img src="/images/brand/hyland-mark.png" srcSet="/images/brand/hyland-mark.png 2x" alt="" width={254} height={150} loading="lazy" decoding="async" />
               <span className={styles.year}>1998</span>
             </span>
             <span className={styles.line} aria-hidden="true" />
