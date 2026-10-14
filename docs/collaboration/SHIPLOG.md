@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 516 次提交
+最近 30 天 · 共 518 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 20:57 | 中立 | Tasks: rows 82-89 live (releases 0c58dddea2ce, 68fe33e76db4) | `0f161eb9cae` |
+| 19:57 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `df303c09c06` |
 | 19:57 | HYDE | Events, FAQ, menu labels, homepage chapter with the 1998-2026 mark, guide cover on news | `3186fdcf7e6` |
 | 19:25 | 中立 | Company: factory photographs drift lightly on scroll | `fc70ac9fa55` |
 | 19:23 | HYDE | Long reads: key-points table and margin figures (readingAids) | `6aa8a1e848b` |
