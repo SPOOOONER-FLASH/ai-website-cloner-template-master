@@ -140,7 +140,7 @@ claim(GUIDE("mortise-lock-case-comparison-2026"), () => {
 // exit-device-comparison-2026 — counts over PUBLISHED records (the page only shows those)
 function exitFamily() {
   const all = inFamily("panic-exit-devices").filter((p) => p.heroImage?.src);
-  const trims = all.filter((p) => /^Trim handle/i.test(spec(p, "Type") ?? ""));
+  const trims = all.filter((p) => /^Trim (handle|knob)/i.test(spec(p, "Type") ?? ""));
   const cases = all.filter((p) => /lock case/i.test(spec(p, "Type") ?? ""));
   const coordinators = all.filter((p) => /sequencing|automatic closing/i.test(spec(p, "Function") ?? ""));
   const devices = all.filter((p) => !trims.includes(p) && !cases.includes(p) && !coordinators.includes(p));

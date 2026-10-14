@@ -1,7 +1,7 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
   "site": "hyde",
-  "totalProducts": 615,
+  "totalProducts": 616,
   "fields": {
     "backset": {
       "title": "Backset",
@@ -51,8 +51,8 @@
         "Applicable Door Thickness",
         "Glass door thickness"
       ],
-      "products": 215,
-      "rows": 215,
+      "products": 216,
+      "rows": 216,
       "distinctValues": 25
     },
     "handing": {
@@ -86,9 +86,9 @@
         "Surface Finish",
         "Surface Finish Options"
       ],
-      "products": 329,
-      "rows": 338,
-      "distinctValues": 87
+      "products": 330,
+      "rows": 339,
+      "distinctValues": 88
     }
   },
   "unregisteredLabels": {}
