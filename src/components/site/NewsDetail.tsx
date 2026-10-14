@@ -160,6 +160,8 @@ export function NewsDetail({
       ? { afterIndex: levelsTable, node: <MasterKeyHierarchyFigure locale={locale} /> }
       : undefined;
   const overview = tx(locale, "Overview", { es: "Resumen", pt: "Visão geral" });
+  /* Only where this locale has its own: see readingAids in types.ts. */
+  const aids = locale === "en" || locale === "es" || locale === "pt" ? article.readingAids?.[locale] : undefined;
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   /*
@@ -327,7 +329,7 @@ export function NewsDetail({
               <ArticleContents items={contents} locale={locale} />
             </div>
             <div className="col-span-full min-w-0 lg:col-span-8 lg:col-start-5 xl:col-span-13 xl:col-start-7">
-              <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} />
+              <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} aids={aids} />
 
               {/* The question-and-answer block, after the argument it restates; ArticleFaqJsonLd emits the same items. */}
               {faq.length ? (
@@ -600,7 +602,7 @@ export function NewsDetail({
           <div className="col-span-full min-w-0 lg:col-span-8 lg:col-start-5 xl:col-span-13 xl:col-start-7">
             {/* Since 2026-10-13 news reads like a guide (client: 新闻页也用上指南页的阅读辅助): the same
                 blocks through the same ArticleBody, the contents beside them, the models on the right. */}
-            <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} />
+            <ArticleBody blocks={blocks} locale={locale} figure={figure} mentions={mentions} rowHref={rowHref} aids={aids} />
 
             {/*
               The question-and-answer block.

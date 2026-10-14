@@ -7,3 +7,11 @@ Client question: long-read pages (news, guides, /company/) — do they get paral
 - No new strings: every label already existed for guides in all 10 locales.
 - Checks: tsc clean, eslint clean on the file (unused DataTable/InlineText imports removed), 23 article tests pass; local dev render of `/news/double-fire-exit-door-hardware-set/` at 1440 and 390, no page errors, no overflow.
 - Release: engineering session.
+
+## Stage 2 — key points and margin figures (rows 84, 85)
+- New optional article field `readingAids` (`types.ts`), per language like `faq`: `keyPoints` (a ruled table above the text) and `figures` (one number per section, matched by heading text, floated into the text's right margin; full width on phones). A locale without its own entry shows neither, so the 7 overlay locales show the article as before.
+- `ArticleBody` renders both (`KeyPoints`, `MarginFigure`); both news and guide layouts pass the locale's aids. Styles in `ArticleReading.module.css`; `.body h2` now clears floats.
+- First article: `double-fire-exit-door-hardware-set` in en/es/pt — "The set at a glance" (lines 1–2, 3, 4–5, 6; models; what sizes each) and figures 1110mm, 35–55mm, 45–85kg, 55–100kg, each copied from that language's body.
+- Guard: `src/data/article-reading-aids.test.ts` (in `npm test`) fails if a figure's heading is not a heading of that language's body or its value is not written in it, or a key-points row has the wrong cell count.
+- Checks: tsc, eslint, `npm test` 487/0, `npm run content`, i18n-lint, titles:check; local render en/es/pt with 4 figures + 1 table, fr with none, no page errors, no overflow at 1440/390.
+- Next: other long articles get aids only when their copy is reviewed; Company photo parallax (row 82).

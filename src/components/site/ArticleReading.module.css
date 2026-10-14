@@ -59,3 +59,23 @@
 }
 @keyframes body-in { from { opacity: 0; transform: translateY(16px); } }
 
+
+/* Reading aids (2026-10-13). The key points open the text under an ink rule, like a spec table;
+   a margin figure floats beside its section and the next heading clears it. */
+.body h2 { clear: both; }
+.keyPoints { margin: 0 0 4.8rem; }
+.keyPointsTitle { font-size: 1.3rem; line-height: 1.8rem; color: var(--color-ink-secondary); margin: 0 0 1.2rem; }
+.keyPoints table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--color-ink); font-size: 1.5rem; line-height: 2.2rem; }
+.keyPoints th, .keyPoints td { padding: 1.2rem 1.6rem 1.2rem 0; border-bottom: 1px solid var(--color-line); text-align: start; vertical-align: top; }
+.keyPoints thead th { font-size: 1.3rem; font-weight: 400; color: var(--color-ink-secondary); }
+.keyPoints tbody th { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--color-ink); }
+.keyPoints td { color: var(--color-ink); }
+.marginFigure { float: inline-end; width: min(22rem, 38%); margin: 0.4rem 0 1.6rem 3.2rem; padding-top: 1.2rem; border-top: 1px solid var(--color-ink); }
+.marginValue { display: block; font-size: clamp(3.2rem, 2rem + 2vw, 4.8rem); line-height: 1; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.marginValue small { margin-inline-start: 0.4rem; font-size: 0.4em; font-weight: 500; letter-spacing: 0; }
+.marginLabel { display: block; margin-top: 0.8rem; font-size: 1.3rem; line-height: 1.8rem; color: var(--color-ink-secondary); }
+@media (max-width: 743px) {
+  .marginFigure { float: none; width: auto; margin: 2.4rem 0; }
+  .keyPoints { overflow-x: auto; }
+  .keyPoints table { min-width: 52rem; }
+}

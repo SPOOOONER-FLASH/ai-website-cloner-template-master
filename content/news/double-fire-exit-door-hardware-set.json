@@ -57,6 +57,185 @@
     "JU-093",
     "JU-072"
   ],
+  "readingAids": {
+    "en": {
+      "keyPoints": {
+        "title": "The set at a glance",
+        "headers": [
+          "Line",
+          "Where",
+          "Our models",
+          "Sized by"
+        ],
+        "rows": [
+          [
+            "1–2",
+            "A device on each leaf",
+            "309-D, 316-D, 320",
+            "Which leaf is active"
+          ],
+          [
+            "3",
+            "Outside trim, on the active leaf",
+            "023 ET, 023 PS",
+            "Door thickness"
+          ],
+          [
+            "4–5",
+            "A closer on each leaf",
+            "JU-051 to JU-093",
+            "Width and weight of each leaf"
+          ],
+          [
+            "6",
+            "Coordinator",
+            "DC02, DSL02",
+            "Width and weight of the leaves"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "heading": "Lines 1 and 2: a device on each leaf",
+          "value": "1110mm",
+          "label": "the 309-D bar, one set for both leaves"
+        },
+        {
+          "heading": "Line 3: the outside trim, on the active leaf",
+          "value": "35–55mm",
+          "label": "door thickness the 028 and 037 trims fit"
+        },
+        {
+          "heading": "Lines 4 and 5: a closer on each leaf",
+          "value": "45–85kg",
+          "label": "the heaviest leaf in our JU range, closed by the JU-093"
+        },
+        {
+          "heading": "Line 6: the coordinator",
+          "value": "55–100kg",
+          "label": "the leaf weight the DC02 is rated for"
+        }
+      ]
+    },
+    "es": {
+      "keyPoints": {
+        "title": "El juego de un vistazo",
+        "headers": [
+          "Línea",
+          "Dónde",
+          "Nuestros modelos",
+          "Se dimensiona por"
+        ],
+        "rows": [
+          [
+            "1–2",
+            "Un dispositivo en cada hoja",
+            "309-D, 316-D, 320",
+            "Cuál es la hoja activa"
+          ],
+          [
+            "3",
+            "Guarnición exterior, en la hoja activa",
+            "023 ET, 023 PS",
+            "Espesor de la puerta"
+          ],
+          [
+            "4–5",
+            "Un cierrapuertas en cada hoja",
+            "JU-051 a JU-093",
+            "Ancho y peso de cada hoja"
+          ],
+          [
+            "6",
+            "Selector de cierre",
+            "DC02, DSL02",
+            "Ancho y peso de las hojas"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "heading": "Líneas 1 y 2: un dispositivo en cada hoja",
+          "value": "1110 mm",
+          "label": "la barra del 309-D, un juego para las dos hojas"
+        },
+        {
+          "heading": "Línea 3: la guarnición exterior, en la hoja activa",
+          "value": "35–55 mm",
+          "label": "espesor de puerta de las guarniciones 028 y 037"
+        },
+        {
+          "heading": "Líneas 4 y 5: un cierrapuertas en cada hoja",
+          "value": "45–85 kg",
+          "label": "la hoja más pesada de nuestra gama JU, con el JU-093"
+        },
+        {
+          "heading": "Línea 6: el selector de cierre",
+          "value": "55–100 kg",
+          "label": "el peso de hoja para el que está indicado el DC02"
+        }
+      ]
+    },
+    "pt": {
+      "keyPoints": {
+        "title": "O conjunto em resumo",
+        "headers": [
+          "Linha",
+          "Onde",
+          "Nossos modelos",
+          "Dimensionado por"
+        ],
+        "rows": [
+          [
+            "1–2",
+            "Um dispositivo em cada folha",
+            "309-D, 316-D, 320",
+            "Qual é a folha ativa"
+          ],
+          [
+            "3",
+            "Maçaneta externa, na folha ativa",
+            "023 ET, 023 PS",
+            "Espessura da porta"
+          ],
+          [
+            "4–5",
+            "Uma mola aérea em cada folha",
+            "JU-051 a JU-093",
+            "Largura e peso de cada folha"
+          ],
+          [
+            "6",
+            "Coordenador de fechamento",
+            "DC02, DSL02",
+            "Largura e peso das folhas"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "heading": "Linhas 1 e 2: um dispositivo em cada folha",
+          "value": "1110 mm",
+          "label": "a barra do 309-D, um conjunto para as duas folhas"
+        },
+        {
+          "heading": "Linha 3: a maçaneta externa, na folha ativa",
+          "value": "35–55 mm",
+          "label": "espessura de porta das maçanetas 028 e 037"
+        },
+        {
+          "heading": "Linhas 4 e 5: uma mola aérea em cada folha",
+          "value": "45–85 kg",
+          "label": "a folha mais pesada da nossa linha JU, com a JU-093"
+        },
+        {
+          "heading": "Linha 6: o coordenador de fechamento",
+          "value": "55–100 kg",
+          "label": "o peso de folha para o qual o DC02 é indicado"
+        }
+      ]
+    }
+  },
   "seoTitle": "Double Fire Exit Door with Panic Bars: Complete Hardware Set",
   "seoDescription": "The six hardware lines on a double fire exit door, from panic bars and outside trim to closers and the coordinator, sized from the same leaf data.",
   "titleEs": "Un vano, un pedido: el conjunto de herrajes para una puerta cortafuego de evacuación de dos hojas",
