@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 527 次提交
+最近 30 天 · 共 528 次提交
 
 ## 2026-10-14
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 01:18 | 中立 | 全站产品图审计：2,798 张逐张判定实拍/生成，963 张按对照清单核对，不通过 247；AI 出图标准给美工 | `419f1e1f2d2` |
 | 00:39 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `12f54b9c4c7` |
 | 00:38 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3ccdcf3fd50` |
 | 00:35 | 中立 | Tasks: 308 rows live (v2026.10.13.12, .13) | `f2b5b7c2e09` |
