@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 536 次提交
+最近 30 天 · 共 537 次提交
 
 ## 2026-10-14
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:32 | 中立 | 发布不再依赖 GitHub：拉不到 GitHub 时构建本机已提交的 HEAD，照样先同步 GitLab 上线 | `f0a42135e72` |
 | 03:18 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `2347ded3006` |
 | 03:17 | 中立 | 037 PS 新品补生成 SEO 标题与描述（发布被 titles:check 拦下） | `4dc6ea7bb59` |
 | 02:55 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `857e2eef2fd` |
