@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 533 次提交
+最近 30 天 · 共 534 次提交
 
 ## 2026-10-14
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:42 | 中立 | 四个表单加 hCaptcha：Web3Forms 已强制验证码，未带 token 的询盘全部被拒 | `2083674c9c9` |
 | 02:59 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `13c01a331c9` |
 | 02:53 | 中立 | 五金知识库 8 章：运行逻辑、安装、场景对错、功能、材料工序、拆解、演示、型号与数据疑点、标准 | `6d9cb8250c1` |
 | 02:01 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `e3dd90fe7d4` |
