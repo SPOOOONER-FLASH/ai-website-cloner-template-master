@@ -34,9 +34,11 @@ export function assignVersions(releases) {
 
 /** The version the next release on `nowIso` gets, given every earlier release. */
 export function nextVersion(releases, nowIso) {
-  const day = releaseDate(nowIso);
-  const n = releases.filter((r) => releaseDate(r.when) === day).length + 1;
-  return `v${day.replaceAll("-", ".")}.${n}`;
+  /* Count by version, not commit date: a release stamped late on day D can land after midnight. */
+  const prefix = `v${releaseDate(nowIso).replaceAll("-", ".")}.`;
+  const taken = assignVersions(releases).filter((r) => r.version.startsWith(prefix));
+  const n = Math.max(0, ...taken.map((r) => Number(r.version.slice(prefix.length)))) + 1;
+  return `${prefix}${n}`;
 }
 
 /** Hotfix when every change it carries reads as a fix; otherwise an update. */
