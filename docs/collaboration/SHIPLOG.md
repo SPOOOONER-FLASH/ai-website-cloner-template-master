@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 521 次提交
+最近 30 天 · 共 522 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 22:44 | 中立 | Codex 图片规矩补充：产品可按实拍图渲染，须逐张与实拍图核对（甲方 10-13） | `ffb17a9c66b` |
 | 22:42 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `73422354a7e` |
 | 22:39 | HYDE | 308-S and 308-D: new photographs and video; old 308 retired with a 301 | `59ab59ea1de` |
 | 20:59 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `261dfca428c` |
