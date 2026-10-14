@@ -227,6 +227,16 @@ try {
     );
     must("git commit", run("git", ["commit", "-q", "-F", msgFile], WT));
     /*
+      GitLab first (2026-10-14). The server deploys from GitLab, which this machine reaches over SSH;
+      GitHub HTTPS failed its TLS handshake for 90 minutes that day and a built release sat unpushed.
+      So the built tree goes to GitLab before the GitHub push; the post-push mirror then only updates
+      the source side. A failure here never stops the release.
+    */
+    if (site === "hyde") {
+      const m = run("node", ["scripts/mirror-to-gitlab.mjs", "--ref", "HEAD"], WT, { timeout: 10 * 60 * 1000 });
+      console.log(m.status === 0 ? "→ 已先同步到 GitLab：服务器 5 分钟内上线，GitHub 推送随后进行" : "⚠ GitLab 先行同步失败，推送后照常跑 mirror-to-gitlab");
+    }
+    /*
       The build rewrote the OTHER site's tree too (and a few generated files). None of it is
       committed, but it leaves the checkout dirty, and a dirty checkout makes the rebase below
       refuse to start ("cannot rebase: You have unstaged changes") the first time the other
