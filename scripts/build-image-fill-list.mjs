@@ -83,7 +83,7 @@ push(`生成：\`node scripts/build-image-fill-list.mjs --write\`（数字每次
 push();
 push("## Codex 开工前必读（AGENTS.md 硬规则）");
 push();
-push("- **规矩（2026-10-13 甲方更新）见 `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`：** 可以用我们的实拍产品图合成场景图、安装效果图；产品像素必须是实拍，场景、搭配、安装位置、朝向、比例要符合五金常识。不重画、不补全产品。");
+push("- **规矩（2026-10-13 甲方更新）见 `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`：** 可以用实拍产品图合成场景图、安装效果图，**产品本身也可以渲染**（3D 或 AI 重渲染），但要以该型号在网站上的全部实拍图和公布尺寸为依据，并且逐张和实拍图对照：孔位、螺丝、轮廓、比例、零件数都对上才能交。照片里看不到的部分不能补画。场景、搭配、安装位置、朝向、比例要符合五金常识。");
 push("- 每张交付图要写清：型号、slug、用的哪张原图（路径 + 哈希）、场景说明、逐张目检结论（对照原图检查孔位轮廓，再检查安装逻辑）。");
 push("- **取图位置：网站自己的产品图库** `public/images/products/<slug>[-N].webp`（干净无水印，后台 /admin/ 的媒体目录）；型号对应哪几张看 `content/products/<slug>.json` 的 heroImage / gallery。不要用加了水印的 products-hyde 做合成源，也不再用 G 盘。");
 push("- 先给甲方看 5 张样图（每个型号建议 1 张 KANEE 式氛围图 + 1 张安装效果图），方向定了再批量做。KANEE 图册：桌面 hyde/03-研究与方案/KANEE凯理五金2025产品图册.pdf，只学版式和光影。");
