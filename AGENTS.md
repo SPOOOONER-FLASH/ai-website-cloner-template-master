@@ -617,6 +617,13 @@ Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在�
 - **The server pulls from GitLab, not GitHub (since 2026-10-12).** GitHub hid the account, so
   after every `release:hyde` (or any push the site must see), run `node scripts/mirror-to-gitlab.mjs`.
   It pushes one snapshot commit of `origin/main`'s tree; without it the server stays on the old version.
+- **Every HYDE release has a version number and a log entry (client, 2026-10-13: 「hot fix 或者 update
+  日志……命名版本号，记录每次上线什么，有跟踪」).** `release:hyde` stamps `vYYYY.MM.DD.N` into the release
+  commit and writes `out/release.json`, so https://cantonlock.com/release.json shows what is live.
+  `docs/collaboration/上线日志-RELEASES.md` is generated from git (`scripts/build-release-log.mjs`; rules in
+  `scripts/lib/release-version.mjs`) and `npm run ship` refreshes it. After a release, run
+  `node scripts/build-release-log.mjs --docx` so `Desktop\hyde\06-上线日志` matches, and quote the version
+  in the report to the client.
 - **Exit 75 does not reliably mean "not pushed". Confirm with `git ls-remote` before you retry
   or re-run anything.** On 2026-09-29 `release:hyde` reported 「超时 推送失败（网络）」 on all
   three attempts and exited 75 — and the release commit was **already on `origin/main`**. One

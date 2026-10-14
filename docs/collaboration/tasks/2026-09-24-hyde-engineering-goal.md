@@ -186,3 +186,5 @@
 | 180 | 客户 10-13：检查十个语种被 AI 引用的条件（llms.txt、sitemap、hreflang、译文覆盖、robots、结构化数据语言） | 10-13 完成（十语 sitemap/hreflang/lang/inLanguage/feed/robots 均正常；唯一缺口 llms.txt 只给 8 语首页 → 新增 /<语种>/llms.txt 九个 + robots 放行 + 根文件链接；见 agent-updates/2026-10-13-claude-locale-llms.md） |
 | 181 | 发布「Hyde 文案」会话 58dd7fc8e7d9：新闻页改用指南阅读布局、readingAids（双开门篇要点表+页边数字）、公司页视差；实测，并核对新闻页的相关产品区块仍在 | 10-13 完成（发布 0c58dddea2ce / GitLab 98ba4245577；双开门篇英文要点表+4 个页边数字、法语都没有；新闻页相关产品区块仍在；公司页 16 张图 view() 视差生效） |
 | 182 | 发布「Hyde 文案」会话 98e3fc369f53：菜单 text-h3、/events/ 重做、/faq/ 十语重做、首页开场大字主张+标志演变+视差、新闻页指南封面；实测 | 10-13 完成（发布 68fe33e76db4 / GitLab 1ddd44ddf21；前两次被 test:export 拦下：首页 1998 标志缺 srcset（补 2x）、西葡价格表链接 404（改指英文页）；线上 /events/ 11–15 Jan 2027、/faq/ 搜索+16 of 16、首页 Hyland 1998→HYDE 2026 标志、新闻页 Article 35 of 35） |
+| 183 | 客户 10-13：上线日志——每次发布有版本号、记录上线了什么（hotfix / update），放 Desktop\hyde，可追踪；并汇报最近两天上线内容 | 10-13 完成（上线日志 docs/collaboration/上线日志-RELEASES.md + 桌面 06-上线日志；版本号 vYYYY.MM.DD.N 写进发布提交和线上 /release.json；ship 自动更新日志） |
+| 184 | 客户 10-13：继续做后面几个阶段（指南推产品计划剩余项：导出守卫、14/28 天复查等） | 待做 |
