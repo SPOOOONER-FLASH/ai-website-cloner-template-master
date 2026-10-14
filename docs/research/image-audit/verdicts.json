@@ -1113,7 +1113,7 @@
  "public/images/products/309-s-s-panic-exit-device-6.webp": {
   "type": "ai",
   "verdict": "不通过",
-  "issues": "推杆为细圆管、两端为小方块支座，实拍是梯形壳体加斜臂、宽黑推杆；锁舌端看不到锁舌；门上标牌图标为生成乱码",
+  "issues": "推杆为细圆管、两端为小方块支座，实拍是梯形壳体加斜臂、宽黑推杆；门上标牌图标为生成乱码",
   "ref": "309-s-s-panic-exit-device.webp"
  },
  "public/images/products/310-panic-exit-device.webp": {
@@ -11280,5 +11280,46 @@
  "public/images/stories/brazil/film-poster.webp": {
   "type": "photo",
   "confidence": "低"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim.webp": {
+  "type": "photo",
+  "confidence": "低"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-2.webp": {
+  "type": "photo",
+  "confidence": "低"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-3.webp": {
+  "type": "ai",
+  "verdict": "通过",
+  "issues": "球形执手在拉面、开启边；门开着时门内侧可见推杠锁盒，和外装推杠配外侧执手的逻辑一致",
+  "ref": "037-ps-panic-exit-device-trim"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-4.webp": {
+  "type": "drawing"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-5.webp": {
+  "type": "infographic",
+  "verdict": "通过",
+  "issues": "标注与规格一致，无认证说法",
+  "ref": "037-ps-panic-exit-device-trim"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-6.webp": {
+  "type": "ai",
+  "verdict": "通过",
+  "issues": "拉面、开启边，离地约 1 m",
+  "ref": "037-ps-panic-exit-device-trim"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-7.webp": {
+  "type": "ai",
+  "verdict": "通过",
+  "issues": "拉面、开启边，离地约 1 m",
+  "ref": "037-ps-panic-exit-device-trim"
+ },
+ "public/images/products/037-ps-panic-exit-device-trim-8.webp": {
+  "type": "infographic",
+  "verdict": "通过",
+  "issues": "外侧球形执手、内侧推杠，功能图标不是认证标志",
+  "ref": "037-ps-panic-exit-device-trim"
  }
 }
