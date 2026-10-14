@@ -4,7 +4,7 @@
 
 ## Codex 开工前必读（AGENTS.md 硬规则）
 
-- **规矩（2026-10-13 甲方更新）见 `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`：** 可以用我们的实拍产品图合成场景图、安装效果图；产品像素必须是实拍，场景、搭配、安装位置、朝向、比例要符合五金常识。不重画、不补全产品。
+- **规矩（2026-10-13 甲方更新）见 `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`：** 可以用实拍产品图合成场景图、安装效果图，**产品本身也可以渲染**（3D 或 AI 重渲染），但要以该型号在网站上的全部实拍图和公布尺寸为依据，并且逐张和实拍图对照：孔位、螺丝、轮廓、比例、零件数都对上才能交。照片里看不到的部分不能补画。场景、搭配、安装位置、朝向、比例要符合五金常识。
 - 每张交付图要写清：型号、slug、用的哪张原图（路径 + 哈希）、场景说明、逐张目检结论（对照原图检查孔位轮廓，再检查安装逻辑）。
 - **取图位置：网站自己的产品图库** `public/images/products/<slug>[-N].webp`（干净无水印，后台 /admin/ 的媒体目录）；型号对应哪几张看 `content/products/<slug>.json` 的 heroImage / gallery。不要用加了水印的 products-hyde 做合成源，也不再用 G 盘。
 - 先给甲方看 5 张样图（每个型号建议 1 张 KANEE 式氛围图 + 1 张安装效果图），方向定了再批量做。KANEE 图册：桌面 hyde/03-研究与方案/KANEE凯理五金2025产品图册.pdf，只学版式和光影。
@@ -21,30 +21,29 @@
 | 5 | **564** | `564-night-latch-and-rim-lock` | 2 | 60 | 6 | 1000 | 可做 KANEE 精修/多角度 |
 | 6 | **587 SS ET** | `587-sset-light-duty-cylindrical-lock` | 2 | 18 | 6 | 1000 | 可做 KANEE 精修/多角度 |
 | 7 | **5836** | `5836-night-latch-and-rim-lock` | 1 | 50 | 6 | 1000 | 可做 KANEE 精修/多角度 |
-| 8 | **308** | `308-panic-exit-device` | 1 | 37 | 7 | 1000 | 可做 KANEE 精修/多角度 |
-| 9 | **035** | `035-panic-exit-device-trim` | 1 | 26 | 5 | 1000 | 可做 KANEE 精修/多角度 |
-| 10 | **SSH016** | `ssh016-brass-and-steel-hinges` | 0 | 36 | 7 | 1000 | 可做 KANEE 精修/多角度 |
-| 11 | **587 SS ET** | `587-sset-light-duty-cylindrical-lock` | — | 34 | 6 | 1000 | 可做 KANEE 精修/多角度 |
-| 12 | **102** | `102-glass-door-handle` | 0 | 32 | 4 | 1000 | 可做 KANEE 精修/多角度 |
-| 13 | **607 SSET** | `607-sset-tubular-lock` | 0 | 26 | 6 | 1000 | 可做 KANEE 精修/多角度 |
-| 14 | **DC02** | `dc02-door-coordinator` | 0 | 24 | 7 | 1000 | 可做 KANEE 精修/多角度 |
-| 15 | **316-S** | `316-s-panic-exit-device` | 0 | 19 | 8 | 1000 | 可做 KANEE 精修/多角度 |
-| 16 | **9014S** | `9014s-stainless-steel-handle` | 0 | 18 | 4 | 1000 | 可做 KANEE 精修/多角度 |
-| 17 | **307** | `307-panic-exit-device` | 0 | 16 | 10 | 1000 | 可做 KANEE 精修/多角度 |
-| 18 | **F101** | `f101-glass-door-patch-fittings` | 0 | 13 | 7 | 1000 | 可做 KANEE 精修/多角度 |
-| 19 | **LH1016** | `lh1016-stainless-steel-handle` | 0 | 8 | 4 | 1000 | 可做 KANEE 精修/多角度 |
-| 20 | **9010E** | `9010e-stainless-steel-handle` | 0 | 6 | 5 | 1000 | 可做 KANEE 精修/多角度 |
-| 21 | **026** | `026-panic-exit-device-trim` | 0 | 5 | 7 | 1000 | 可做 KANEE 精修/多角度 |
-| 22 | **NC013** | `nc013-stainless-steel-handle` | 0 | 5 | 5 | 1000 | 可做 KANEE 精修/多角度 |
-| 23 | **9008S** | `9008s-stainless-steel-handle` | 0 | 3 | 5 | 1000 | 可做 KANEE 精修/多角度 |
-| 24 | **301** | `301-panic-exit-device` | 0 | 3 | 7 | 1000 | 可做 KANEE 精修/多角度 |
-| 25 | **9007 E** | `9007e-stainless-steel-handle` | 0 | 1 | 6 | 1000 | 可做 KANEE 精修/多角度 |
-| 26 | **9021** | `9021-stainless-steel-handle` | 0 | 1 | 5 | 1000 | 可做 KANEE 精修/多角度 |
-| 27 | **9007E** | `9007e-stainless-steel-handle` | 0 | 1 | 6 | 1000 | 可做 KANEE 精修/多角度 |
-| 28 | **NC046** | `nc046-stainless-steel-handle` | 0 | 1 | 5 | 1000 | 可做 KANEE 精修/多角度 |
-| 29 | **309-S** | `309-s-s-panic-exit-device` | 0 | 0 | 6 | 1000 | 可做 KANEE 精修/多角度 |
+| 8 | **035** | `035-panic-exit-device-trim` | 1 | 26 | 5 | 1000 | 可做 KANEE 精修/多角度 |
+| 9 | **SSH016** | `ssh016-brass-and-steel-hinges` | 0 | 36 | 7 | 1000 | 可做 KANEE 精修/多角度 |
+| 10 | **587 SS ET** | `587-sset-light-duty-cylindrical-lock` | — | 34 | 6 | 1000 | 可做 KANEE 精修/多角度 |
+| 11 | **102** | `102-glass-door-handle` | 0 | 32 | 4 | 1000 | 可做 KANEE 精修/多角度 |
+| 12 | **607 SSET** | `607-sset-tubular-lock` | 0 | 26 | 6 | 1000 | 可做 KANEE 精修/多角度 |
+| 13 | **DC02** | `dc02-door-coordinator` | 0 | 24 | 7 | 1000 | 可做 KANEE 精修/多角度 |
+| 14 | **316-S** | `316-s-panic-exit-device` | 0 | 19 | 8 | 1000 | 可做 KANEE 精修/多角度 |
+| 15 | **9014S** | `9014s-stainless-steel-handle` | 0 | 18 | 4 | 1000 | 可做 KANEE 精修/多角度 |
+| 16 | **307** | `307-panic-exit-device` | 0 | 16 | 10 | 1000 | 可做 KANEE 精修/多角度 |
+| 17 | **F101** | `f101-glass-door-patch-fittings` | 0 | 13 | 7 | 1000 | 可做 KANEE 精修/多角度 |
+| 18 | **LH1016** | `lh1016-stainless-steel-handle` | 0 | 8 | 4 | 1000 | 可做 KANEE 精修/多角度 |
+| 19 | **9010E** | `9010e-stainless-steel-handle` | 0 | 6 | 5 | 1000 | 可做 KANEE 精修/多角度 |
+| 20 | **026** | `026-panic-exit-device-trim` | 0 | 5 | 7 | 1000 | 可做 KANEE 精修/多角度 |
+| 21 | **NC013** | `nc013-stainless-steel-handle` | 0 | 5 | 5 | 1000 | 可做 KANEE 精修/多角度 |
+| 22 | **9008S** | `9008s-stainless-steel-handle` | 0 | 3 | 5 | 1000 | 可做 KANEE 精修/多角度 |
+| 23 | **301** | `301-panic-exit-device` | 0 | 3 | 7 | 1000 | 可做 KANEE 精修/多角度 |
+| 24 | **9007 E** | `9007e-stainless-steel-handle` | 0 | 1 | 6 | 1000 | 可做 KANEE 精修/多角度 |
+| 25 | **9021** | `9021-stainless-steel-handle` | 0 | 1 | 5 | 1000 | 可做 KANEE 精修/多角度 |
+| 26 | **9007E** | `9007e-stainless-steel-handle` | 0 | 1 | 6 | 1000 | 可做 KANEE 精修/多角度 |
+| 27 | **NC046** | `nc046-stainless-steel-handle` | 0 | 1 | 5 | 1000 | 可做 KANEE 精修/多角度 |
+| 28 | **309-S** | `309-s-s-panic-exit-device` | 0 | 0 | 6 | 1000 | 可做 KANEE 精修/多角度 |
 
-站上没有对应页面的阿里产品（14 个）—— 先建页面再谈图，这不是 Codex 的活：
+站上没有对应页面的阿里产品（15 个）—— 先建页面再谈图，这不是 Codex 的活：
 
 - （无型号）：Hotel/Garage Main Master Key Hyland OEM Brass Cylinder Key Three /two Groups Com（询盘 3，曝光 256）
 - （无型号）：American Standard Deadlatch Lock Key for Aluminum Storefront Doors Narrow Stile （询盘 3，曝光 48）
@@ -52,6 +51,7 @@
 - （无型号）：HYLAND OEM 90MM Tubular Lock Latch Cerradura De Puerta. Entry Door Lock Latch（询盘 2，曝光 57）
 - （无型号）：Matte Black Euro-standard Door Lock Cylinder Hyland OEM, 70mm Length Solid Brass（询盘 2，曝光 47）
 - （无型号）：Door Lock Cylinder Keys, Universal Blank Key Hyland OEM, Brass Material Normal K（询盘 1，曝光 309）
+- 308：Hyland 308 Zinc Alloy Panic Exit Device Push Bar Fire Door Hardware EN1125 CE Em（询盘 1，曝光 37）
 - 1073 DL：Smart Door Lock Rim Gate Door Lock Hyland OEM CE 1073 DL Double Cylinder Left Op（询盘 0，曝光 35）
 - 9087：HYLAND OEM 9087 Security 4-Round Bolt Lock Case 85mm Center 50/60mm Backset（询盘 0，曝光 13）
 - （无型号）：HYLAND 035 / Panic Exit Device Lever Trim Keyed Fire Door Lock ANSI Grade 2 Zinc（询盘 0，曝光 9）
