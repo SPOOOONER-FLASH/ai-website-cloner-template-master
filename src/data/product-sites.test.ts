@@ -2,6 +2,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 import assert from "node:assert/strict";
+import moves from "../../content/taxonomy-moves.json" with { type: "json" };
 
 /**
  * Two rules introduced by the 2026-09-08 supplier handle import, both of which are silent
@@ -61,7 +62,10 @@ test("每个 sites 值都是已知站点", () => {
  */
 test("构建产物里没有只上雷茵的型号", { skip: !existsSync(join(process.cwd(), "out", "products")) }, () => {
   const rayenOnly = records.filter((r) => r.sites && !r.sites.includes("hyde"));
-  const leaked = rayenOnly.filter((r) =>
+  /* A retired HYDE slug that 301s to its successor (taxonomy-moves productMerges, e.g. 308 ->
+     308-S on 2026-10-13) leaves a redirect stub at its old path. That stub is not a product page. */
+  const redirected = new Set((moves.productMerges ?? []).map((m: { from: string; category: string }) => `${m.category}/${m.from}`));
+  const leaked = rayenOnly.filter((r) => !redirected.has(`${r.categoryPath[0]}/${r.slug}`)).filter((r) =>
     existsSync(join(process.cwd(), "out", "products", r.categoryPath[0], r.slug)),
   );
   assert.deepEqual(

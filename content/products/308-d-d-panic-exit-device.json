@@ -21,26 +21,36 @@
   "heroImage": {
     "src": "/images/products/308-d-d-panic-exit-device.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 308-D d-panic exit device"
+    "label": "Hyland 308-D D-Panic Exit Device"
   },
   "gallery": [
     {
       "src": "/images/products/308-d-d-panic-exit-device-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 308-D two-point panic exit device, three-quarter view of the complete assembly with both vertical rods",
-      "labelEs": "Dispositivo antipánico de dos puntos 308-D de Hyland, vista en tres cuartos del conjunto completo con ambas varillas verticales"
+      "label": "Hyland 308-D the push bar and the two vertical rods laid out",
+      "labelEs": "308-D de Hyland: la barra de empuje y las dos varillas verticales extendidas",
+      "labelPt": "308-D da Hyland: a barra de empurrar e as duas hastes verticais estendidas"
     },
     {
       "src": "/images/products/308-d-d-panic-exit-device-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 308-D front elevation: the push bar with vertical rods running to the top and bottom latches",
-      "labelEs": "Alzado frontal del 308-D: la barra de empuje con las varillas verticales hacia los pestillos superior e inferior"
+      "label": "Hyland 308-D everything in the box: push bar, vertical rods, end cases, strikes, fixings and the push-bar-to-open sign",
+      "labelEs": "308-D de Hyland: todo lo que trae la caja: barra de empuje, varillas verticales, cajas de extremo, cerraderos, tornillería y el cartel de empujar para abrir",
+      "labelPt": "308-D da Hyland: tudo o que vem na caixa: barra de empurrar, hastes verticais, caixas das extremidades, contrachapas, parafusos e a placa de empurre para abrir"
     },
     {
       "src": "/images/products/308-d-d-panic-exit-device-4.webp",
       "ratio": "1 / 1",
-      "label": "Everything in the 308-D box: push bar, two vertical rods, rod guides, top and bottom latches, strikes, fixings and the fitting instructions",
-      "labelEs": "Todo lo que trae la caja del 308-D: barra, dos varillas verticales, guías, pestillos superior e inferior, cerraderos, tornillería e instrucciones"
+      "label": "Hyland 308-D an end case opened beside a closed one, showing the mechanism inside",
+      "labelEs": "308-D de Hyland: una caja de extremo abierta junto a una cerrada, con el mecanismo a la vista",
+      "labelPt": "308-D da Hyland: uma caixa da extremidade aberta ao lado de uma fechada, com o mecanismo à mostra"
+    },
+    {
+      "src": "/images/products/308-d-d-panic-exit-device-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 308-D dimension drawing",
+      "labelEs": "308-D de Hyland: plano de medidas",
+      "labelPt": "308-D da Hyland: desenho com as medidas"
     }
   ],
   "attachmentIds": [],
@@ -69,5 +79,18 @@
     "pitch": "For a pair of doors, supplied with a lock body and vertical rods that lock top and bottom.",
     "pitchEs": "Para puertas de dos hojas, con caja de cerradura y varillas verticales que traban arriba y abajo.",
     "pitchPt": "Para portas de duas folhas, com caixa de fechadura e hastes verticais de travamento superior e inferior."
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/308-d-d-panic-exit-device.mp4",
+      "poster": {
+        "src": "/images/products/308-d-d-panic-exit-device-video.webp",
+        "ratio": "16 / 9",
+        "label": "308-D D-Panic Exit Device, demonstration still"
+      },
+      "label": "308-D D-Panic Exit Device, product demonstration",
+      "durationSeconds": 17,
+      "uploadDate": "2026-10-14"
+    }
+  ]
 }
