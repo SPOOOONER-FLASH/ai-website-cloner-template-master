@@ -7,9 +7,28 @@
 
 **线上现在是哪一版**：打开 https://cantonlock.com/release.json （看 `version`）。服务器在发布后 5 分钟内拉取；Cloudflare purge 之前，不带参数的页面可能还是旧版。
 
-最近 30 天共 84 版。
+最近 30 天共 86 版。
+
+## 2026-10-14
+
+### v2026.10.13.13 · Update · 10/14 00:17
+
+发布提交 `6e9eb8130415`，构建源码 `727ac31be970`
+
+- 308: three of the five held images go up after the side-by-side check `1d93389fa56f`
+- 过短产品描述第二道兜底：补「广东制造、交期 30 天起」（十语已审措辞） `c612fa0baec5`
+- Codex 图片规矩补充：产品可按实拍图渲染，须逐张与实拍图核对（甲方 10-13） `ffb17a9c66bc`
+- （另有 2 个只改文档的提交，未列出）
 
 ## 2026-10-13
+
+### v2026.10.13.12 · Update · 10/13 23:31
+
+发布提交 `727ac31be970`，构建源码 `920f6e97a5a2`
+
+- 308-S and 308-D: new photographs and video; old 308 retired with a 301 `59ab59ea1dee`
+- 导出检查 check-article-routes：十语每篇文章页必须有买家区块和 /contact/# 报价链接 `15d89a8be0eb`
+- Codex 图片规矩：允许实拍图合成场景/安装图（甲方 10-13），取图改为站内 public/images/products `3ef5c435212f`
 
 ### v2026.10.13.11 · Update · 10/13 22:33
 
