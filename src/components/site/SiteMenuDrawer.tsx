@@ -186,9 +186,10 @@ export function SiteMenuDrawer({ locale, state = "open", currentPath, categories
 
 
         <footer className={styles.menuFooter}>
+          {/* The two ways to buy are buttons, not 13px footer text (client 2026-10-14: 「contact alibaba 很重要 但是这么不显眼」). */}
           <a href={siteSettings.alibaba.storefront} target="_blank" rel="noopener noreferrer" onClick={onClose}
-            className="short-marker font-semibold text-ink">{siteSettings.alibaba.label}</a>
-          {dict(buyingLinks, locale).map((link) => <Link key={link.href} href={link.href} onClick={onClose}>{link.label}</Link>)}
+            className={styles.footerCta}>{siteSettings.alibaba.label}<span aria-hidden="true">›</span></a>
+          {dict(buyingLinks, locale).map((link) => <Link key={link.href} href={link.href} onClick={onClose} className={styles.footerCtaSecondary}>{link.label}<span aria-hidden="true">›</span></Link>)}
           <ul className={styles.social}>
             {socialLinks.map((link) => <li key={link.label}><a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a></li>)}
           </ul>

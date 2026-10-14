@@ -12,7 +12,7 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 01:59 | HYDE | 037 PS 上架（037 的通道款外侧球形执手）；撤回「看不到锁舌」这条判图理由 | `fa7ad4e729a` |
+| 01:38 | 中立 | 菜单底栏：Buy on Alibaba / Contact 改成显眼按钮；社媒加 eBay | `5cc0c8ce125` |
 | 01:19 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `4f19c1792aa` |
 | 01:18 | 中立 | 全站产品图审计：2,798 张逐张判定实拍/生成，963 张按对照清单核对，不通过 247；AI 出图标准给美工 | `419f1e1f2d2` |
 | 00:39 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `12f54b9c4c7` |
