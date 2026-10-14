@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 535 次提交
+最近 30 天 · 共 537 次提交
 
 ## 2026-10-14
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:27 | 中立 | 目标 #188–#190：v2026.10.14.3 上线（hCaptcha 表单修复、菜单底栏与 eBay、037 PS）；上线日志更新 | `c65021a0fa9` |
+| 04:17 | 发布 HYDE | 发布（HYDE（cantonlock.com）） v2026.10.14.3：构建 90919c04edc2 | `7c32c4b5977` |
 | 03:43 | 中立 | Merge remote-tracking branch 'origin/main' into claude/hcaptcha | `6479b38dc8b` |
 | 03:42 | 中立 | 四个表单加 hCaptcha：Web3Forms 已强制验证码，未带 token 的询盘全部被拒 | `2083674c9c9` |
 | 02:59 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `13c01a331c9` |
