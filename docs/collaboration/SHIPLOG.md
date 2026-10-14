@@ -6,16 +6,19 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 523 次提交
+最近 30 天 · 共 526 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 22:45 | 中立 | Merge remote-tracking branch 'origin/main' into claude/codex-render-rule | `9a5d2be11be` |
-| 22:44 | 中立 | Codex 图片规矩补充：产品可按实拍图渲染，须逐张与实拍图核对（甲方 10-13） | `ffb17a9c66b` |
-| 22:42 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `73422354a7e` |
-| 22:39 | HYDE | 308-S and 308-D: new photographs and video; old 308 retired with a 301 | `59ab59ea1de` |
+| 22:48 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9e8b82ec99c` |
+| 22:48 | 中立 | 过短产品描述第二道兜底：补「广东制造、交期 30 天起」（十语已审措辞） | `c612fa0baec` |
+| 22:44 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `6ca01cd2a88` |
+| 22:22 | 发布 HYDE | 发布（HYDE（cantonlock.com）） v2026.10.13.11：构建 fecab66d634e | `e552b546c12` |
+| 22:08 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `49956e9176f` |
+| 22:07 | 中立 | 导出检查 check-article-routes：十语每篇文章页必须有买家区块和 /contact/# 报价链接 | `15d89a8be0e` |
+| 21:55 | 中立 | 上线日志：每次 HYDE 发布有版本号（vYYYY.MM.DD.N），记录带上线的改动，线上 /release.json 可查 | `333033d4d08` |
 | 20:59 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `261dfca428c` |
 | 20:57 | 中立 | Tasks: rows 82-89 live (releases 0c58dddea2ce, 68fe33e76db4) | `0f161eb9cae` |
 | 19:57 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `df303c09c06` |
