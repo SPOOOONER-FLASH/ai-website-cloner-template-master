@@ -22,3 +22,16 @@ Client: 「新品，要删除旧的308 麻烦上架」 with `Panic Exit Devices(
   - "why-the-catalogue-is-this-wide" keeps 616 because it is dated "as of September 2026".
 - **Checks:** tsc; `npm test` 487/0; i18n-lint; titles:check; motion tokens; image-config and watermark checks. Local render: 308-S (7 thumbs + video), 308-D (6 + video), old 308 URL redirects to 308-S, guide 43 has no bare 308.
 - **Release:** engineering session. Expect `product-sites` to stay green after the rebuild.
+
+## Follow-up the same day (row 92): the five held images
+
+The client changed the image rule (renders, 3D and AI re-renders are now allowed when they follow every real photograph and published dimension of the model; AGENTS.md on main, 8db621c0) and said 「5 张上架」. Each image was compared against the model's own photographs on the checklist: holes and screws, lever or bar profile and thickness, proportions against published dimensions, cylinder and keyway, part count, and finish.
+
+- **Published (3):**
+  - 308-S on a grey steel door (`-7`). This is a real photograph: latch case with its four screws and visible latch bolt, end case and bar all match. The baked-in logo was filled column-wise from the pixels directly above and below it.
+  - 308-S MATERIAL DETAILS (`-8`).
+  - 308-D MATERIAL DETAILS (`-6`), with its CE, fire and exit icons painted out. A CE mark on a panic device asserts conformity nobody has evidenced for this model; that is the "never claim certified to EN 1125" rule.
+- **Not published (2), failed the checklist:**
+  - 308-D grey double-door scene: the top rod carries two guide brackets where the real hero photograph and the dimension drawing show one, so there is one part too many.
+  - 308-S red double-door scene: the latch cases sit at the hinge edges of a mullion-less pair, and no latch bolt is visible, so the installation geometry is wrong for this device.
+  - Both reported to the client with these findings.

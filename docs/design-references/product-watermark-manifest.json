@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5414,
+  "count": 5417,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -10414,6 +10414,24 @@
       "outputSha256": "a4eaa54b881be314c960234793b62694c4b97e853ed03a6e4a245e543162bc1f"
     },
     {
+      "source": "public/images/products/308-d-d-panic-exit-device-6.webp",
+      "output": "public/images/products-hyde/308-d-d-panic-exit-device-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d063ea6a4112fae3ed34f4284fdaf3b2eeb8316b836921f111cde90fd908d348",
+      "outputSha256": "8868cb7e0792aee65f8aaee84999d78d925b10cdb7a96656f4f17ba7edff0b6e"
+    },
+    {
       "source": "public/images/products/308-d-d-panic-exit-device-video.webp",
       "output": "public/images/products-hyde/308-d-d-panic-exit-device-video.webp",
       "width": 1280,
@@ -10783,6 +10801,42 @@
       },
       "sourceSha256": "4df107314f630a9fbc1d77120184d7f010373339d19e216e9a2d6d09d8a2907f",
       "outputSha256": "cfac8e1f417ca560486faa1c2cec3436a23e519a95ef8b5f21e5f1e74bd49765"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-7.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "d6e91b1eaaf8af1e4835d2be4b73be795a23f580596d98dc823c33cc3fb3da6c",
+      "outputSha256": "276015c0c8a003e54ec1e7115c28470fd6adc3247c3b8a0fdbdc363575270135"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-8.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-8.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9b1c07b4111a3f013dfdca14bbd9e16b0e1aa1e7816ce7e6d5aa4725e0c0cd67",
+      "outputSha256": "7ee9c929613131215fb5c7eb7dd20843f6bd757c3868568a4ed77fc4830d97ec"
     },
     {
       "source": "public/images/products/308-s-s-panic-exit-device-video.webp",
