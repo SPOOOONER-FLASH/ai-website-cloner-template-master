@@ -447,4 +447,5 @@ Add `src/lib/article-layout.test.ts` coverage that `href` stays on its row after
 
 - 2026-10-12 阶段 1 已实现：1A 删除无证书支撑的产品认证说法（028/5831/black-tubular 的 ANSI 等级，300/307/310 的 Fire Rating，19 条产品级 ISO 9001）；1B ArticleBuyerBlock；1C 询价表单读片段（#model=…&from=…）并随询盘发 source_article；1D content/article-routes.json 29 条；1E 五处内容字段。Ahrefs (a)：产品页报价链接改片段、去掉 nofollow。
 - 2026-10-12 阶段 2–4 已上线（r48 fe4e1c479cb）：十语 pageType、item_list_name/placement、source_article；3 个 relatedModels 修正 + article-product-links 测试；正文首次提及与表格行首型号链接（article-products.ts）；产品 JSON-LD @id、文章 mentions（只 @id）；llms.txt 附 Models（60 行）。
-- 未做：check-article-routes.mjs 导出检查、GuideCover 主图链到产品、Ahrefs (c) sitemap 与 (e) 标题；+14 天和 +28 天看 GA4 select_item / generate_lead.source_article 与 Bing 产品页引用数（10-12 为 28）。
+- 2026-10-13：check-article-routes.mjs 导出检查已接入 test:export（十语 810 篇文章页全部有买家区块与 /contact/# 链接，每语 59/81 篇带产品链接）；GuideCover 主图链到产品、Ahrefs (c)(e) 已于 10-12 上线。
+- 未做：+14 天和 +28 天看 GA4 select_item / generate_lead.source_article 与 Bing 产品页引用数（10-12 为 28）。

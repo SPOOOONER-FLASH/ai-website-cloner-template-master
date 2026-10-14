@@ -4,10 +4,10 @@ Client-authorized scope: twenty natural premium product images close to KANEE's 
 
 ## Approved direction and checks
 
-- Replace the rejected side-white-card design with one coherent photographic field. No pasted secondary white rectangle, fake installation, new metal geometry, invented accessory or mixed finish set.
+- Replace the rejected side-white-card design with one coherent photographic field. No pasted secondary white rectangle, new metal geometry, invented accessory or mixed finish set.
 - Select only identifiable HYDE photographs and their genuine alternate views. Keep model/finish provenance. Unknown-model real editorial photographs may be style references, not named SKU evidence.
 - Generate only environmental backgrounds if useful. Retain the source product pixels. Match its camera angle, light direction and contact plane; reject a visually poor composite rather than count it toward twenty.
-- KANEE source: `C:/Users/johns/xwechat_files/wxid_kslpb8pv4u1c12_ba05/msg/file/2026-09/KANEE凯理五金2025产品图册.pdf`. Original user temp path expired. Reference only, never publish its products, claims, logos or photography as HYDE.
+- KANEE source: `C:/Users/johns/xwechat_files/wxid_kslpb8pv4u1c12_ba05/msg/file/2026-09/KANEE凯理五金2025产品图册.pdf`. Original user temp path expired; current copy (2026-10-13): `Desktop/hyde/03-研究与方案/KANEE凯理五金2025产品图册.pdf`. Reference only, never publish its products, claims, logos or photography as HYDE.
 - FSB source: `C:/Users/johns/Downloads/fsb-dieter-rams-hero-nosound-1920x1080-wlogo-haw-lin-small.mp4`. Borrow movement/lighting grammar, not branded frames or product geometry.
 - Deliver original-size image masters, web copies, source hashes, visual QA, and a video that decodes and plays. Separate motion trial from physically accurate 3D product animation.
 - Archive rejected iterations alongside reasons. `imagesAccepted` counts only inspected usable images, not generator exit codes.

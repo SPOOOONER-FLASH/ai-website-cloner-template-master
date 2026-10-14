@@ -83,11 +83,11 @@ push(`生成：\`node scripts/build-image-fill-list.mjs --write\`（数字每次
 push();
 push("## Codex 开工前必读（AGENTS.md 硬规则）");
 push();
-push("- **不生成产品。** 孔位、螺丝、执手轮廓、锁体都必须来自真实照片的像素。允许：抠图、白底/灰底、曝光、拉直、去灰去反光、统一阴影、按 KANEE 风格把真实产品放进生成的背景（产品像素不动）。");
-push("- 每张交付图要写清：型号、原图路径、原图哈希、逐张目检结论。对比原图检查孔位和轮廓，「提示词里写了保留」不算证据。");
-push("- 照片来源：甲方原图库 **G:/新网站资料**。本机今天没挂载 G 盘，开工前先确认路径。没有原图的型号不要补，在下表里标「缺原图」，交回甲方去拍。");
-push("- 现状参照：KANEE 二十张样图内部 QA 已完成，**甲方还没批准任何一张**（tasks/2026-09-28-kanee-real-products.json：clientApprovedImages 0）。先给甲方看五张样，方向通过再批量替换线上图。");
-push("- 换图只换文件，文件名和路径保持不变（产品页、srcset、水印清单都按路径引用）；交付后跑水印和 srcset 生成，由工程会话发布。");
+push("- **规矩（2026-10-13 甲方更新）见 `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`：** 可以用我们的实拍产品图合成场景图、安装效果图；产品像素必须是实拍，场景、搭配、安装位置、朝向、比例要符合五金常识。不重画、不补全产品。");
+push("- 每张交付图要写清：型号、slug、用的哪张原图（路径 + 哈希）、场景说明、逐张目检结论（对照原图检查孔位轮廓，再检查安装逻辑）。");
+push("- **取图位置：网站自己的产品图库** `public/images/products/<slug>[-N].webp`（干净无水印，后台 /admin/ 的媒体目录）；型号对应哪几张看 `content/products/<slug>.json` 的 heroImage / gallery。不要用加了水印的 products-hyde 做合成源，也不再用 G 盘。");
+push("- 先给甲方看 5 张样图（每个型号建议 1 张 KANEE 式氛围图 + 1 张安装效果图），方向定了再批量做。KANEE 图册：桌面 hyde/03-研究与方案/KANEE凯理五金2025产品图册.pdf，只学版式和光影。");
+push("- 新图作为新增角度加入图库（例如 `<slug>-scene-1.webp`），不覆盖已有实拍白底图；交付后跑水印和 srcset，发布交给工程会话。");
 push();
 
 const alibabaMapped = alibabaRows.filter((r) => r.product);

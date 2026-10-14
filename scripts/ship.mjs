@@ -44,10 +44,12 @@ const now = () => new Date().toLocaleString("zh-CN", { hour12: false });
   and conclude the merge. Any OTHER conflicted file still stops the run.
 */
 const SHIPLOG = "docs/collaboration/SHIPLOG.md";
+/* The versioned release log (scripts/build-release-log.mjs, client 2026-10-13) is generated from git too. */
+const RELEASES = "docs/collaboration/上线日志-RELEASES.md";
 function resolveLogConflicts(cwd) {
   const run = (args) => spawnSync("git", args, { cwd, encoding: "utf8", timeout: TIMEOUT });
   const conflicted = (run(["diff", "--name-only", "--diff-filter=U"]).stdout ?? "").split("\n").filter(Boolean);
-  if (!conflicted.length || conflicted.some((f) => f !== SHIPLOG && f !== PENDING)) return false;
+  if (!conflicted.length || conflicted.some((f) => f !== SHIPLOG && f !== RELEASES && f !== PENDING)) return false;
   if (conflicted.includes(PENDING)) {
     const stage = (n) => run(["show", `:${n}:${PENDING}`]).stdout ?? "";
     const [base, ours, theirs] = [1, 2, 3].map(stage);
@@ -59,15 +61,17 @@ function resolveLogConflicts(cwd) {
     writeFileSync(`${cwd}/${PENDING}`, u.stdout ?? ours);
     for (const s of "obt") rmSync(`${tmp}${s}`, { force: true });
   }
-  if (conflicted.includes(SHIPLOG)) {
-    run(["checkout", "--theirs", "--", SHIPLOG]);
+  for (const generated of [SHIPLOG, RELEASES].filter((f) => conflicted.includes(f))) {
+    run(["checkout", "--theirs", "--", generated]);
     // Regenerated again after the merge commit exists, below; this only clears the markers.
   }
   run(["add", "--", ...conflicted]);
   if (run(["commit", "--no-edit", "-q"]).status !== 0) return false;
   const gen = spawnSync("node", ["scripts/build-shiplog.mjs"], { cwd, encoding: "utf8" });
-  if (gen.status === 0 && run(["diff", "--quiet", "--", SHIPLOG]).status !== 0) {
-    run(["commit", "-q", "-m", "shiplog: 更新上线存档", "--", SHIPLOG]);
+  spawnSync("node", ["scripts/build-release-log.mjs"], { cwd, encoding: "utf8" });
+  const changed = [SHIPLOG, RELEASES].filter((f) => run(["diff", "--quiet", "--", f]).status !== 0);
+  if (gen.status === 0 && changed.length) {
+    run(["commit", "-q", "-m", "shiplog: 更新上线存档", "--", ...changed]);
   }
   return true;
 }
@@ -106,7 +110,10 @@ if (gen.status !== 0) {
   console.error(`✗ 生成 SHIPLOG 失败：${gen.stderr}`);
   process.exit(1);
 }
-const LOGS = ["docs/collaboration/SHIPLOG.md", ...(existsSync(PENDING) ? [PENDING] : [])];
+// The release log failing is not a reason to hold a push back; it is regenerated on the next ship.
+const rel = spawnSync("node", ["scripts/build-release-log.mjs"], { encoding: "utf8" });
+if (rel.status !== 0) console.error(`⚠ 上线日志未更新（继续推送）：${(rel.stderr || "").trim().split("\n").pop()}`);
+const LOGS = [SHIPLOG, ...(existsSync(RELEASES) ? [RELEASES] : []), ...(existsSync(PENDING) ? [PENDING] : [])];
 const dirty = LOGS.some((f) => !git(["diff", "--quiet", "--", f]).ok || !git(["ls-files", "--error-unmatch", f]).ok);
 if (dirty) {
   git(["add", "--", ...LOGS]);
