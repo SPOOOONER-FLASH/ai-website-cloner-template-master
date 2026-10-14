@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 528 次提交
+最近 30 天 · 共 529 次提交
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 20:27 | 中立 | 首页开场段西/葡「价格表」链接改指英文页，解开 audit-dead-links 发布阻断 | `96446fb3bf1` |
 | 20:14 | 中立 | 首页 1998 Hyland 标志补 2x srcSet，解开 static-export-performance 发布阻断 | `58a24966883` |
 | 20:01 | HYDE | 合并本地提交（ship 旁路合并） | `a10dfd36863` |
 | 19:58 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `accfdc502d7` |
