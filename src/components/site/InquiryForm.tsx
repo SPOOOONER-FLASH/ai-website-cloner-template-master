@@ -9,6 +9,7 @@ import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
+import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { EmailLink } from "./EmailLink";
 import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
@@ -138,6 +139,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const [fallback, setFallback] = useState("");
   const submitting = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
+  const captcha = useRef<HCaptchaHandle>(null);
   const [returnToForm, setReturnToForm] = useState(false);
   useEffect(() => {
     if (returnToForm && status === "idle") {
@@ -200,6 +202,11 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     if (submitting.current) return;
 
     const form = event.currentTarget;
+    if (!captcha.current?.token()) {
+      setStatus("error");
+      setStatusMessage(captchaMissingMessage(locale));
+      return;
+    }
     const payload = new FormData(form);
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
 
@@ -264,6 +271,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         : text.failure);
     } finally {
       submitting.current = false;
+      captcha.current?.reset();
     }
   }
 
@@ -355,6 +363,8 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
           required
         />
       </label>
+
+      <HCaptchaField ref={captcha} locale={locale} />
 
       <div className="flex flex-col items-start gap-16 sm:flex-row sm:items-center">
         <Button type="submit" disabled={status === "submitting"}>
