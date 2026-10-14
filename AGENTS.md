@@ -653,7 +653,8 @@ Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在�
   Since 2026-10-14 `release:hyde` sends the built tree to GitLab itself, **before** the GitHub push
   (GitHub HTTPS failed for 90 minutes that day while GitLab over SSH worked). If GitHub is down and a
   release commit exists only locally, deploy it with `node scripts/mirror-to-gitlab.mjs --ref <commit>`;
-  never wait on GitHub to put a release live.
+  never wait on GitHub to put a release live. If the GitHub fetch itself fails, `release:hyde` builds this checkout's committed HEAD
+  (so commit first) and still deploys through GitLab; the GitHub push is then best-effort (exit 75 = live, not mirrored to GitHub).
   **Status 2026-10-14: the account is still hidden** (profile, repos and API 404 to logged-out
   visitors; authenticated pushes work; every repo under SPOOOONER-FLASH is affected). Ticket #4847632
   is the client's to chase (`docs/collaboration/2026-10-14-手动操作-GitHub工单催办.md`). Until it is
