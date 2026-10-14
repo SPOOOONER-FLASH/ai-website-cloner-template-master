@@ -6,25 +6,22 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 532 次提交
+最近 30 天 · 共 529 次提交
 
 ## 2026-10-14
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 01:16 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `e1a2766adbc` |
-| 01:16 | 中立 | 上线版本号按版本日期续号：跨午夜提交的版本不再占用次日第 1 号（v2026.10.14.1 因此空缺） | `f90532ac51f` |
-| 00:37 | 中立 | GitHub 账号仍被隐藏：催办工单 #4847632 文本（原工单回复 + 备用新单），手册置顶，AGENTS.md 记状态与约束 | `faffb21687b` |
-| 00:32 | 中立 | 上线日志按版本号的日期分组（提交跨过午夜时不再归错日） | `4bb0d053caa` |
-| 00:31 | 中立 | 目标 #185 完成：308 两批上线实测；上线日志更新到 v2026.10.13.13 | `98d9b18e5d9` |
-| 00:17 | 发布 HYDE | 发布（HYDE（cantonlock.com）） v2026.10.13.13：构建 727ac31be970 | `6e9eb813041` |
+| 01:19 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `4f19c1792aa` |
+| 01:18 | 中立 | 全站产品图审计：2,798 张逐张判定实拍/生成，963 张按对照清单核对，不通过 247；AI 出图标准给美工 | `419f1e1f2d2` |
+| 00:39 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `12f54b9c4c7` |
+| 00:38 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3ccdcf3fd50` |
+| 00:35 | 中立 | Tasks: 308 rows live (v2026.10.13.12, .13) | `f2b5b7c2e09` |
 
 ## 2026-10-13
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 23:04 | 发布 HYDE | 发布（HYDE（cantonlock.com）） v2026.10.13.12：构建 920f6e97a5a2 | `727ac31be97` |
-| 23:23 | 中立 | AGENTS.md 图片规矩统一：标题与禁止条款对齐 10-13 新规矩（可渲染，必须对照实拍图） | `5c49ba90d0d` |
 | 23:12 | 中立 | Tasks: row 93, which 308 images failed | `09978783108` |
 | 22:57 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `20ec8a4d27d` |
 | 22:56 | HYDE | 308: three of the five held images go up after the side-by-side check | `1d93389fa56` |
