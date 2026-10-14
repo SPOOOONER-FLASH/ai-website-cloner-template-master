@@ -3,7 +3,7 @@
   "title": "Lock Function Selection 2026: A Decision Table by Room Type, and the Two Questions That Settle Every Opening",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-14",
   "summary": "Pick a lock function from 2 questions: who may come in from outside, and how the person inside gets out, which must be without a key and in one motion. Corridors take passage, main entrances take entrance (keyed outside), WCs take privacy, storerooms take storeroom, classrooms take classroom and escape stairs take an exit device. This page gives the full decision table by room, the 3 function errors that become life-safety problems, such as a double-cylinder deadbolt on an escape route, and how many models of each function our catalog carries.",
   "author": {
     "name": "Johnson Liu",
@@ -49,7 +49,7 @@
     "A teacher needs to secure a door against the corridor. With a storeroom or entrance function, they have to step into the corridor to use the key, which is the one place the threat might be. Classroom function lets the outside trim be locked and unlocked from inside the room, so the door is secured without anyone leaving it. The inside handle always retracts the latch, so the room can still be evacuated.",
     "It is a function worth knowing by name, because a specification that describes the behavior in words usually receives an entrance function and a note.",
     "## What our catalog actually carries",
-    "Function counts across the 616 records in our catalog, from the specification rows themselves.",
+    "Function counts across the 615 records in our catalog, from the specification rows themselves.",
     "| Function | Models |\n| --- | --- |\n| Entrance, keyed outside | 78 |\n| Privacy, bathroom, turn button inside | 27 |\n| Passage | 18 |\n| Single, double cylinder or self-locking | 21 |\n| Entrance, privacy, passage or dummy (selectable) | 8 |\n| Classroom | 1 |\n| Storeroom | 1 |\n| Communication | 1 |\n| Entrance and communication | 1 |\n| Exit latch | 1 |",
     "Read that honestly and it says something specific: we are strong on entrance, privacy and passage, and we are not a broad institutional function range. If a project needs classroom and storeroom functions across forty openings, we have one model of each and you should ask before designing around us.",
     "Publishing that table is more useful than implying a full function set and discovering the gap at the schedule stage. The order-code suffix carries the function on the models that have one (`ET` entrance, `BK` privacy, `PS` passage) so `201 PBET` is model 201, polished brass, entrance.",

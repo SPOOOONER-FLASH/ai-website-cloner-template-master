@@ -98,6 +98,9 @@ const KNOWN_REASONS: ReadonlySet<string> = new Set<MergeReason>([
  */
 export const renamedRecords: RenamedRecord[] = (moves.productMerges as MergeEntry[])
   .map((merge): RenamedRecord | null => {
+    /* A model the factory replaced with a new one (308 -> 308-S, 2026-10-13) still 301s, but it is
+       not a rename: "nothing about the part changed" would be false, so it is not listed here. */
+    if (merge.reason === "superseded-by-new-model") return null;
     const product = getProductBySlug(merge.category, merge.to);
     if (!product || !isPublished(product)) return null;
 

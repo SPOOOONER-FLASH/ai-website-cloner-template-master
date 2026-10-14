@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5409,
+  "count": 5414,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -10353,28 +10353,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "941779d21ad7c02fbaa504ebfd4d7d96e406812650e1cab10d3a516cfaa716ae",
-      "outputSha256": "b0ec6a053992a07def826c9fec3ddde6204264fda49c53a0dd737b86418f9642"
+      "sourceSha256": "9d026204cc4befd71a0128fdb374706432a38bfef2642dcc17a453a08889ec51",
+      "outputSha256": "c5b89cf74dc56ef9b3e2176f872e5e5f3f3b93de3ed10957ac2d5f7d8128fc39"
     },
     {
       "source": "public/images/products/308-d-d-panic-exit-device-3.webp",
@@ -10388,28 +10371,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0.1919889502762431,
-          "height": 152,
-          "left": 3,
-          "name": "below",
-          "top": 171,
-          "width": 212
-        }
-      },
-      "sourceSha256": "a0f5c841a6da0e9796800a6618f23f0fad3bfb96e15b27a25eb633c95042602d",
-      "outputSha256": "03f3996f70921c4e84eaa3c0476ba12b229b2304b3ed09e48f0ad18a408ae32f"
+      "sourceSha256": "60e50bf0c1ba14164d3949b8159ea928bb019c32a2b0f6a6d495fe6419533aec",
+      "outputSha256": "6e284b3396572c11d17c487d670de85b4b58adf8a919fcf2ef1e4b5b1fe277c1"
     },
     {
       "source": "public/images/products/308-d-d-panic-exit-device-4.webp",
@@ -10426,43 +10392,62 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "01b18c48ad8a7528608cfc7b6b5a40f4adaf4f469c20d77d80efb64844f0004e",
-      "outputSha256": "f2c3ae27fdf0e702ab560d11859ffc72e2d53fe401fab8c33e064c1ebe608f71"
+      "sourceSha256": "d3ae6441b54f588a412d0af14a9f8e71cd4f58db75514c0b2ab5ffcf171e27d0",
+      "outputSha256": "66690a1cbcd11e0a8a2cad64fcc50a441bc5e876cf27adb3ebf312c338e48876"
+    },
+    {
+      "source": "public/images/products/308-d-d-panic-exit-device-5.webp",
+      "output": "public/images/products-hyde/308-d-d-panic-exit-device-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c78ddc826a44b2656706f2b71af0f51673d8407a81ae5ae371d3983feee8e452",
+      "outputSha256": "a4eaa54b881be314c960234793b62694c4b97e853ed03a6e4a245e543162bc1f"
+    },
+    {
+      "source": "public/images/products/308-d-d-panic-exit-device-video.webp",
+      "output": "public/images/products-hyde/308-d-d-panic-exit-device-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8df7a7181bc75000afbf903d809ae36dcb0d152d03fe98c44cf33830fefdb5f6",
+      "outputSha256": "d8da851b573021ada288a1da022d13d718e44e7b285b83ab6318dfe17d558be6"
     },
     {
       "source": "public/images/products/308-d-d-panic-exit-device.webp",
       "output": "public/images/products-hyde/308-d-d-panic-exit-device.webp",
-      "width": 750,
-      "height": 750,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 19,
-        "logoWidth": 90,
-        "logoHeight": 23
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 89,
-          "left": 0,
-          "top": 14,
-          "width": 139
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 89,
-          "left": 0,
-          "name": "below",
-          "top": 109,
-          "width": 139
-        }
-      },
-      "sourceSha256": "a777b74751b033c3368dcd28ace45d813cc733760185090fb2c8bd8b03fe272b",
-      "outputSha256": "1dcdf4724a7b9b9a27368d4de404f14d26508cd1bb570f5329537e789c80153a"
+      "sourceSha256": "86a576ae8beca1dd1cb1ba6cfeafc76fe9bc9e0de56961fc1d7b901b440f1bc9",
+      "outputSha256": "68f740f26ea3e8bedabd84ade069ff5a61fe8a6df12815521082e53b769198ba"
     },
     {
       "source": "public/images/products/308-panic-exit-device-2.webp",
@@ -10721,28 +10706,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "fc293df267515c0af7323a2a7d30209c81970053230533be10c57f63c6d88a8d",
-      "outputSha256": "22faceaa457ea4bb848d3f4cf341da50037bbc1c634c7f017e869bf5defe059a"
+      "sourceSha256": "37d1338dda4b92491ed34aae7fbd3a7c6a39e6db7252624b946ea706b9e686e4",
+      "outputSha256": "085fc4dfb8f283ac9712bedf39e6c0625bf582d51dbf46ddc50efc869e549403"
     },
     {
       "source": "public/images/products/308-s-s-panic-exit-device-3.webp",
@@ -10756,28 +10724,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "7973f558b7fa36bf1a47d0c27f3a6c7488d37e46a7680d74d30beefbd2e65ca5",
-      "outputSha256": "f73610c69cafe13e4cb3d434f4253ef041d8af9b79b424d3d4b8d81dc38a3e2f"
+      "sourceSha256": "da4bf15fcef1dd4aaa9a26298f80f626d937b3db81cd28f7bf3a308feae95c66",
+      "outputSha256": "b3f97fc9d2a9d84dfe7e19217a11ab87b0a2c422f5deddb794f3c24c7baf198e"
     },
     {
       "source": "public/images/products/308-s-s-panic-exit-device-4.webp",
@@ -10794,43 +10745,80 @@
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "b7035220cd74615e491e2c7fd439b9be381b3e8e1ef814ea550ca8b03ecc0782",
-      "outputSha256": "70a49f9adb8136b6ec0bdfb47483575887596dbd71549e6f29cfad73be1758aa"
+      "sourceSha256": "97cf9f07711beb569d533c997d99d424bc82c9ef0bbb9c7af27f9798b3dfc403",
+      "outputSha256": "72a010a41843b5625465ec4898d9ee0daaadf9bba5699f5a3d6a5d04ef77800a"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-5.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d814e13afc95f7f6294bc5f38c90eec382b2c19b37104db3cab0e4abc79a6679",
+      "outputSha256": "8e0e9cc56da89138fe5cffebe3e0c56de2329c9679c3074b6c1692bceeaf9ce8"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-6.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4df107314f630a9fbc1d77120184d7f010373339d19e216e9a2d6d09d8a2907f",
+      "outputSha256": "cfac8e1f417ca560486faa1c2cec3436a23e519a95ef8b5f21e5f1e74bd49765"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-video.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6de6cf9875c3d56ceb4837c1035cc103de90f439b85f2a9b5d2984178279e712",
+      "outputSha256": "9fd36b93a8ac63bc3938bcbc73ee4234206b3d388dfce52ff1e27c96e57e24f9"
     },
     {
       "source": "public/images/products/308-s-s-panic-exit-device.webp",
       "output": "public/images/products-hyde/308-s-s-panic-exit-device.webp",
-      "width": 750,
-      "height": 750,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 19,
-        "logoWidth": 90,
-        "logoHeight": 23
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 89,
-          "left": 0,
-          "top": 14,
-          "width": 139
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 89,
-          "left": 145,
-          "name": "inward",
-          "top": 14,
-          "width": 139
-        }
-      },
-      "sourceSha256": "9c5e8c495fbe109ca34077428ea1fb37e62828a516d7c676f03bc193b3946521",
-      "outputSha256": "3de3f3f5db99113cfa6b9b1225f24c64d9acb7eac15a0d1ac22231fe77f4de6b"
+      "sourceSha256": "dfb61190d97557dcd4868fc4a614c160929cc65b230acd8bdb8cdccf962da611",
+      "outputSha256": "eedb568c5731e4ae84ac98b2945abc2c7483aeeee2f998b441cbd44c14e4c855"
     },
     {
       "source": "public/images/products/309-d-double-door-panic-exit-device-2.webp",
@@ -53474,24 +53462,6 @@
       "outputSha256": "3b335f2834deef023e7ac92e4f616a3f9ecbd20a5020d74444929146bb3d33f4"
     },
     {
-      "source": "public/images/products/argentina-ar4/hyde-ar4-111.webp",
-      "output": "public/images/products-hyde/argentina-ar4/hyde-ar4-111.webp",
-      "width": 1100,
-      "height": 1100,
-      "geometry": {
-        "margin": 28,
-        "logoWidth": 120,
-        "logoHeight": 30
-      },
-      "placement": {
-        "corner": "bottom-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "0befd901a759db3dd038903920c1d835a9547a7ebeecb6a14bbac9969893b958",
-      "outputSha256": "e60ad5476a3d78044a055d3e8269e6b64872f8f4bf87093571fce02bd0ffb611"
-    },
-    {
       "source": "public/images/products/argentina-ar4/hyde-ar4-110-2.webp",
       "output": "public/images/products-hyde/argentina-ar4/hyde-ar4-110-2.webp",
       "width": 1100,
@@ -53544,6 +53514,24 @@
       },
       "sourceSha256": "00c4133d30f86683ff2827761964dc842ea26fe6e580069e595c683ced6073f0",
       "outputSha256": "9d0ae349972e184a32792a401e7f9fa2118af19a9f7c4a2691e021bf8f495e9d"
+    },
+    {
+      "source": "public/images/products/argentina-ar4/hyde-ar4-111.webp",
+      "output": "public/images/products-hyde/argentina-ar4/hyde-ar4-111.webp",
+      "width": 1100,
+      "height": 1100,
+      "geometry": {
+        "margin": 28,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0befd901a759db3dd038903920c1d835a9547a7ebeecb6a14bbac9969893b958",
+      "outputSha256": "e60ad5476a3d78044a055d3e8269e6b64872f8f4bf87093571fce02bd0ffb611"
     },
     {
       "source": "public/images/products/argentina-ar4/hyde-ar4-1121-2.webp",
