@@ -462,6 +462,16 @@ That is also why this matters more here than the same mistake would on a fashion
 - **Correcting the client's own exhibition photographs** — angle, crop, keystone,
   colour. The client's principal supplies these; the products and the stand in them are
   real, and only the photography needs work.
+- **Scene and installation composites built from our real product photographs** (client,
+  2026-10-13: 「可以运用我们的实拍图合成渲染……只要产品是对的，做出来逻辑、搭配、场景、安装位置都是对的就行，
+  这个需要你们应用专业的五金知识」). Everything around the product may be rendered or
+  generated: door, wall, glass, stone, props, light. The product pixels stay the photograph.
+  The scene must be right as hardware: the correct door type, mounting position, height,
+  handing and side, at true scale and in one finish. A panic bar on the pull side, or a
+  hinge on the lock stile, fails this test just as a redrawn lever does.
+  Brief, sources and the installation checklist: `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`.
+  Source images are the site's own uploads, `public/images/products/` (clean, no watermark;
+  the CMS `/admin/` media folder). Do not use the G: library.
 
 #### The test before any image ships
 
