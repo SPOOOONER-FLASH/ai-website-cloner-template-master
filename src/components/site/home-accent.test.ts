@@ -93,11 +93,13 @@ test("current navigation is bold at rest without a persistent underline", () => 
   assert.doesNotMatch(drawer, /current-underline/);
 });
 
-test("homepage mobile disclosure preserves heading order", () => {
+// The "More links" disclosure left with the 2026-10-13 chapter; the band now holds one heading,
+// the page H1, and its links sit in a plain list, so no heading level can be skipped.
+test("homepage welcome band keeps a single heading level", () => {
   const welcome = read("src", "components", "site", "WelcomeIntro.tsx");
 
-  assert.match(welcome, /<h2 className="text-h3 text-ink">\{text\.more\}<\/h2>/);
-  assert.doesNotMatch(welcome, /<h3 className="text-h3 text-ink">\{text\.more\}<\/h3>/);
+  assert.match(welcome, /<h1 className=/);
+  assert.doesNotMatch(welcome, /<h[2-6][\s>]/);
 });
 
 test("homepage product CTA names its destination", () => {

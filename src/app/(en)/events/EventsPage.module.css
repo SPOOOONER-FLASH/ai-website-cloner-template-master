@@ -1,0 +1,164 @@
+/* Events (2026-10-13). One ink band, the dates set as the page's figure, then ruled rows. */
+.ink {
+  background: var(--color-ink);
+  color: var(--color-surface);
+  padding-block: 9.6rem 12rem;
+}
+
+.figure {
+  margin-top: 1.6rem;
+  font-size: clamp(7.2rem, 5rem + 6vw, 16rem);
+  line-height: 0.9;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.figure small {
+  font-size: 0.26em;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.mask {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.06em;
+}
+.mask > span {
+  display: block;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mask > span {
+    animation: rise calc(var(--motion-slow) * 1.8) var(--motion-ease) both;
+  }
+}
+@keyframes rise {
+  from { transform: translateY(105%); }
+}
+
+.sheet {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--color-surface);
+}
+.sheet > div {
+  padding: 1.6rem 1.6rem 1.6rem 0;
+  border-bottom: 1px solid rgb(255 255 255 / 0.16);
+}
+.sheet dt {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: rgb(255 255 255 / 0.7);
+}
+.sheet dd {
+  margin-top: 0.4rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.btnLight,
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  min-height: 4.8rem;
+  padding-inline: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--motion-medium) var(--motion-ease), color var(--motion-medium) var(--motion-ease);
+}
+.btnLight {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+.btnLight:hover {
+  background: var(--color-surface-alt);
+}
+.btnGhost {
+  border: 1px solid rgb(255 255 255 / 0.4);
+  color: var(--color-surface);
+}
+.btnGhost:hover {
+  border-color: var(--color-surface);
+}
+
+.chapter {
+  padding-block: 7.2rem 12rem;
+}
+.sticky {
+  position: sticky;
+  top: calc(var(--sticky-header, 12rem) + 3.2rem);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 9.6rem minmax(0, 1fr) 22rem;
+  gap: 2.4rem;
+  padding-block: 2.4rem;
+  border-bottom: 1px solid var(--color-line);
+}
+.row[data-past] {
+  opacity: 0.55;
+}
+.when {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.days {
+  font-size: 3.2rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink);
+}
+.name {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tag {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--color-line);
+  color: var(--color-ink-secondary);
+}
+.tag[data-kind="exhibiting"] {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-surface);
+}
+.tag[data-kind="past"] {
+  border-color: transparent;
+  padding-inline: 0;
+}
+.link {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: var(--color-ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-ink);
+}
+
+@media (max-width: 1031px) {
+  .sticky { position: static; }
+  .row { grid-template-columns: 8rem minmax(0, 1fr); }
+  .status { grid-column: 2; }
+}
+@media (max-width: 743px) {
+  .ink { padding-block: 5.6rem 7.2rem; }
+  .sheet { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .row { grid-template-columns: 6.8rem minmax(0, 1fr); gap: 1.6rem; }
+  .days { font-size: 2.6rem; }
+}

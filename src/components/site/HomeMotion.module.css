@@ -262,3 +262,23 @@
     display: none;
   }
 }
+
+/*
+  Homepage teaser (2026-10-13, the band the client approved): on a mouse device the two cards sit
+  side by side, and the second settles 6.4rem into line as the band enters. A named timeline on
+  the module, because view() on the card would bind to the overflow track and never move; the
+  track is overflow:visible where it wraps, so the settling card is not clipped. Touch devices
+  keep the scroll-snap track untouched.
+*/
+@supports (animation-timeline: view()) {
+  @media screen and (prefers-reduced-motion: no-preference) and (pointer: fine) {
+    .teaser { view-timeline: --home-teaser block; }
+    .teaser .teaserTrack { overflow: visible; }
+    .teaser .teaserTrack > :nth-child(2) {
+      animation: settle linear both;
+      animation-timeline: --home-teaser;
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+@keyframes settle { from { translate: 0 6.4rem; } }
