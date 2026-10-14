@@ -28,7 +28,7 @@ const introCopy = {
     company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     links: [
       { label: "Descargas", href: "/es/downloads" },
-      { label: "Lista de precios", href: "/es/request/price-list" },
+      { label: "Lista de precios", href: "/request/price-list" } /* English only; /es/request/price-list 404s */,
       { label: "Conozca la empresa", href: "/es/company" },
     ],
   },
@@ -39,7 +39,7 @@ const introCopy = {
     company: "Canton Hyland Hardware &\nBuilding Material Co., Ltd.",
     links: [
       { label: "Downloads", href: "/pt/downloads" },
-      { label: "Lista de preços", href: "/pt/request/price-list" },
+      { label: "Lista de preços", href: "/request/price-list" } /* English only; /pt/request/price-list 404s */,
       { label: "Conheça a empresa", href: "/pt/company" },
     ],
   },
