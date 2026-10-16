@@ -29,6 +29,11 @@ FONTS = {
     "cjk": Path("C:/Windows/Fonts/msyh.ttc"),
     "cjk-bold": Path("C:/Windows/Fonts/msyhbd.ttc"),
 }
+# Off Windows (the cloud container, 2026-10-16) YaHei is absent; WenQuanYi Zen Hei sets the
+# Chinese production notes for proofing. The ad company still sets final Chinese itself.
+for _k in ("cjk", "cjk-bold"):
+    if not FONTS[_k].exists() and Path("/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc").exists():
+        FONTS[_k] = Path("/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc")
 _F: dict[str, pymupdf.Font] = {}
 
 
