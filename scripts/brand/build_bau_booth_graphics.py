@@ -35,7 +35,9 @@ from kit import GREY, INK, RULE, WHITE, place_mark, text
 
 M = 100 * kit.MM          # 1 m at 1:10 = 100 mm on the page
 BLEED = 0.15              # client: 15 cm bleed on every side
-PHOTO = kit.ROOT / "public" / "images" / "company" / "press-shop.webp"
+PHOTOS = kit.ROOT / "public" / "images" / "company"
+QR_URL = "https://cantonlock.com/bau-2027/"   # spec sheets, the featured models and the meeting form
+SIDE_MARGIN = 0.30
 
 
 @dataclass
@@ -47,45 +49,83 @@ class Wall:
     header: float = 0.70             # header band from the top edge
     plinth: float = 0.30             # ink plinth from the floor
     lines: dict = field(default_factory=dict)
-    photo: tuple[float, float, float, float] | None = None  # x from left, bottom above floor, w, h (m)
+    base: list[str] = field(default_factory=list)   # white items set across the plinth
+    qr: bool = False
+    factory: bool = False            # the three-photo production column at the aisle end
 
 
 WALLS = [
     Wall("back-wall", "后墙", 6.50, lines={
         "en": "Panic exit devices, locks and door hardware.",
         "de": "Panikbeschläge, Schlösser und Türbeschläge.",
-        "kicker": "BAU 2027 · München",
+        "kicker": "BAU 2027 · Messe München",
         "big": "Stand C4.523",
-    }),
-    # The side wall's open end faces the aisle (stand plan render): the photograph sits there,
-    # at eye level, 1.20 × 0.80 m — the size the 2616 px file still holds at ~55 dpi.
+    }, base=["Since 1998", "Zhongshan, Guangdong, China", "ISO 9001:2015 stamping plant",
+             "OEM & private label", "MOQ 300–5,000 pcs"]),
+    # The side wall's open end faces the aisle (stand plan render), so the factory column is there.
     Wall("side-wall", "侧墙", 4.50, lines={
         "en": "Door hardware from Zhongshan, China, since 1998.",
         "de": "Türbeschläge aus Zhongshan, China – seit 1998.",
-        "kicker": "OEM · Private label · Eigenmarke",
+        "kicker": "Website · Webseite",
         "big": "cantonlock.com",
-    }, photo=(4.50 - 0.25 - 1.20, 0.85, 1.20, 0.80)),
+    }, base=["tec@cantonlock.com", "WhatsApp +1 703 967 7493"], qr=True, factory=True),
 ]
-CAPTION = "Stamping workshop, Zhongshan  ·  Stanzerei, Zhongshan"
-SIDE_MARGIN = 0.30
+
+# The production column: real factory photographs only, none with another sign or logo in frame
+# (several site photos show the old red "Hyland" sign or Chinese plates; those stay off the stand).
+# (file, crop focus 0–1 across the width, caption)
+FACTORY = [
+    ("press-shop.webp", 0.55, "01  Stamping · Stanzen"),
+    ("polishing-line.webp", 0.45, "02  Polishing · Polieren"),
+    ("factory-assembly-quality-line.webp", 0.30, "03  Assembly · Montage"),
+]
+
+_JPEG: dict[tuple, bytes] = {}
 
 
-_JPEG: dict[float, bytes] = {}
-
-
-def photo_jpeg(aspect: float) -> bytes:
-    """The photograph centre-cropped to the panel's aspect, as a full-resolution JPEG (q 95)."""
-    if aspect not in _JPEG:
+def photo_jpeg(name: str, aspect: float, focus: float = 0.5) -> bytes:
+    """The photograph cropped to the panel's aspect around `focus`, full resolution, JPEG q 95."""
+    key = (name, round(aspect, 4), focus)
+    if key not in _JPEG:
         import io
         from PIL import Image
-        im = Image.open(PHOTO).convert("RGB")
+        im = Image.open(PHOTOS / name).convert("RGB")
         w, h = im.size
-        cw, ch = (w, round(w / aspect)) if w / h < aspect else (round(h * aspect), h)
-        im = im.crop(((w - cw) // 2, (h - ch) // 2, (w - cw) // 2 + cw, (h - ch) // 2 + ch))
+        if w / h > aspect:
+            cw, ch = round(h * aspect), h
+            x0, y0 = round((w - cw) * focus), 0
+        else:
+            cw, ch = w, round(w / aspect)
+            x0, y0 = 0, (h - ch) // 2
+        im = im.crop((x0, y0, x0 + cw, y0 + ch))
         buf = io.BytesIO()
         im.save(buf, "JPEG", quality=95)
-        _JPEG[aspect] = buf.getvalue()
-    return _JPEG[aspect]
+        _JPEG[key] = buf.getvalue()
+    return _JPEG[key]
+
+
+def draw_qr(page: pymupdf.Page, r: pymupdf.Rect, data: str) -> None:
+    """A vector QR code (error level M, 4-module quiet zone) filling the square `r`."""
+    import segno
+    q = segno.make(data, error="m", micro=False)
+    rows = list(q.matrix)
+    n = len(rows) + 8
+    m = r.width / n
+    page.draw_rect(r, color=None, fill=WHITE, width=0)
+    for y, row in enumerate(rows):
+        for x, v in enumerate(row):
+            if v:
+                page.draw_rect(pymupdf.Rect(r.x0 + (x + 4) * m, r.y0 + (y + 4) * m, r.x0 + (x + 5) * m + 0.01,
+                                            r.y0 + (y + 5) * m + 0.01), color=None, fill=INK, width=0)
+
+
+def tab(page, x, y_bottom, label, s):
+    """A small ink tab with a white label, sitting on the bottom-left corner of a photograph."""
+    size = 0.034 * s
+    w = kit.text_width(label, size, "medium") + 0.05 * s
+    h = 0.065 * s
+    page.draw_rect(pymupdf.Rect(x, y_bottom - h, x + w, y_bottom), color=None, fill=INK, width=0)
+    text(page, x + 0.025 * s, y_bottom - 0.022 * s, label, size, "medium", WHITE)
 
 
 def draw_cloth(page: pymupdf.Page, o: pymupdf.Point, w: Wall, s: float, proof: bool) -> None:
@@ -95,31 +135,62 @@ def draw_cloth(page: pymupdf.Page, o: pymupdf.Point, w: Wall, s: float, proof: b
     page.draw_rect(full, color=None, fill=WHITE, width=0)
     X = lambda m: o.x + (B + m) * s          # noqa: E731  metres from the trim's left edge
     Y = lambda m: o.y + (B + m) * s          # noqa: E731  metres from the trim's top edge
+    right = w.width - SIDE_MARGIN
 
-    # Plinth: ink from the floor line up, running out into the bleed on three sides.
+    # Plinth: ink from the floor line up, running out into the bleed on three sides, carrying
+    # one row of facts in white, spread evenly from margin to margin.
     page.draw_rect(pymupdf.Rect(full.x0, Y(w.height - w.plinth), full.x1, full.y1), color=None, fill=INK, width=0)
+    if w.base:
+        size, base_y = 0.058 * s, Y(w.height - w.plinth / 2) + 0.018 * s
+        widths = [kit.text_width(t, size, "medium") for t in w.base]
+        gap = ((right - SIDE_MARGIN) * s - sum(widths)) / max(len(w.base) - 1, 1)
+        x = X(SIDE_MARGIN)
+        for t, tw in zip(w.base, widths):
+            text(page, x, base_y, t, size, "medium", WHITE)
+            if t is not w.base[-1]:
+                page.draw_line((x + tw + gap / 2, base_y - 0.045 * s), (x + tw + gap / 2, base_y + 0.008 * s),
+                               color=(0.55, 0.53, 0.5), width=0.003 * s)
+            x += tw + gap
 
-    # Header band: mark left, two lines under it, stand or address right, a hairline under.
+    # Header band: mark, the line in English and German, the stand or the address on the right.
     mark, mark_h = hm.horizontal(), 0.20
     mark_w = mark_h * mark.width / mark.height   # place_mark centres; a rect of the mark's own aspect keeps it flush left
     place_mark(page, pymupdf.Rect(X(SIDE_MARGIN), Y(0.12), X(SIDE_MARGIN + mark_w), Y(0.12 + mark_h)), mark)
     text(page, X(SIDE_MARGIN), Y(0.47), w.lines["en"], 0.085 * s, "medium")
-    text(page, X(SIDE_MARGIN), Y(0.585), w.lines["de"], 0.060 * s, "text", GREY)
-    text(page, X(w.width - SIDE_MARGIN), Y(0.205), w.lines["kicker"], 0.055 * s, "medium", GREY, track=40, align="right")
-    text(page, X(w.width - SIDE_MARGIN), Y(0.40), w.lines["big"], 0.150 * s, "display-semibold", align="right")
+    text(page, X(SIDE_MARGIN), Y(0.585), w.lines["de"], 0.058 * s, "text", GREY)
+    if w.qr:
+        q = 0.46
+        draw_qr(page, pymupdf.Rect(X(right - q), Y(0.12), X(right), Y(0.12 + q)), QR_URL)
+        right -= q + 0.08
+    text(page, X(right), Y(0.205), w.lines["kicker"], 0.050 * s, "medium", GREY, track=30, align="right")
+    # With the QR code beside it the address is set smaller, so it clears the tagline on a 4.50 m wall.
+    text(page, X(right), Y(0.40), w.lines["big"], (0.105 if w.qr else 0.150) * s, "display-semibold", align="right")
+    if w.qr:
+        text(page, X(right), Y(0.53), "Scan for spec sheets and to book a meeting.", 0.045 * s, "text", GREY, align="right")
+        text(page, X(right), Y(0.60), "Scannen: Datenblätter und Terminvereinbarung.", 0.045 * s, "text", GREY, align="right")
     page.draw_line((full.x0, Y(w.header)), (full.x1, Y(w.header)), color=INK, width=0.004 * s)
 
-    if w.photo:
-        px, bottom, pw, ph = w.photo
-        r = pymupdf.Rect(X(px), Y(w.height - bottom - ph), X(px + pw), Y(w.height - bottom))
-        page.insert_image(r, stream=photo_jpeg(pw / ph), keep_proportion=False)
-        text(page, X(px), Y(w.height - w.plinth / 2) + 0.018 * s, CAPTION, 0.045 * s, "medium", WHITE)
+    if w.factory:
+        cw, gap = 1.40, 0.04
+        x0 = w.width - 0.25 - cw
+        text(page, X(x0), Y(w.header + 0.165), "Our production in Zhongshan", 0.065 * s, "semibold")
+        text(page, X(x0), Y(w.header + 0.245), "Unsere Fertigung in Zhongshan", 0.048 * s, "text", GREY)
+        top, bottom = w.header + 0.29, w.height - w.plinth - 0.08
+        hero_h = (bottom - top - gap) * 0.58
+        small_w, small_h = (cw - gap) / 2, bottom - top - gap - hero_h
+        cells = [(x0, top, cw, hero_h), (x0, top + hero_h + gap, small_w, small_h),
+                 (x0 + small_w + gap, top + hero_h + gap, small_w, small_h)]
+        for (name, focus, cap), (cx, cy, cwid, chei) in zip(FACTORY, cells):
+            r = pymupdf.Rect(X(cx), Y(cy), X(cx + cwid), Y(cy + chei))
+            page.insert_image(r, stream=photo_jpeg(name, cwid / chei, focus), keep_proportion=False)
+            tab(page, r.x0, r.y1, cap, s)
 
     if proof:
         # Not printed: the trim line and the zone the boards may occupy.
         trim = pymupdf.Rect(X(0), Y(0), X(w.width), Y(w.height))
         page.draw_rect(trim, color=(0.85, 0.1, 0.1), width=0.6, dashes="[4 3] 0")
-        zone = pymupdf.Rect(X(0.05), Y(w.header + 0.05), X(w.width - 0.05), Y(w.height - w.plinth - 0.05))
+        zr = (w.width - 0.25 - 1.40 - 0.10) if w.factory else w.width - 0.05
+        zone = pymupdf.Rect(X(0.05), Y(w.header + 0.05), X(zr), Y(w.height - w.plinth - 0.05))
         page.draw_rect(zone, color=(0.2, 0.45, 0.8), width=0.5, dashes="[2 2] 0")
 
 
@@ -161,11 +232,11 @@ def proposal(out: Path) -> Path:
         y += (w.height + 2 * BLEED) * s + 30
     notes = [
         "材料：喷绘布（灯箱布/刀刮布按搭建方墙体），四边各出血 15 cm；文件为 1:10 矢量 PDF，放大 10 倍输出，TrimBox 即成品边。",
-        "颜色：只用墨色和白。墨色建议四色黑 C60 M50 Y50 K100（大面积底边），文字同色；不用金色、不加渐变。",
+        "颜色：只用墨色和白。墨色建议四色黑 C60 M50 Y50 K100（底边），文字同色；不用金色、不加渐变。照片按原样输出，不调色、不 AI 放大。",
         "墙高 2.50 m、楣头 0.70 m、底边 0.30 m 是按标准展位假设的，必须由搭建方确认真实尺寸后重出文件（改 WALLS 一行即可）。",
-        "照片：冲压车间实拍，2616 px，1.20 × 0.80 m 约 55 dpi，喷绘布近看略软；如有原始相机文件请提供，可放大到 1.8 m 宽。",
-        "侧墙照片放在靠通道一端（按效果图）；若侧墙朝向不同，左右翻转位置，文字不翻。展台前台正面已有 H 标，不在本次范围。",
-        "文字只用已确认的事实：BAU 2027、C4.523、1998 年、中山、OEM / 自有品牌、网址。不写认证、不写产能。",
+        "侧墙通道端 1.40 m 宽是「工厂实拍」栏：冲压、抛光、装配三张官网实拍，挑的是画面里没有旧招牌、没有中文标牌的；这一段不挂展板。",
+        "二维码（侧墙右上，46 cm）指向 cantonlock.com/bau-2027/（规格书 + 预约见面），已用解码器验证。底边：后墙为公司事实，侧墙为邮箱和 WhatsApp。",
+        "文字只用已确认的事实：1998 年、中山、ISO 9001:2015（冲压厂）、OEM / 自有品牌、起订量 300–5,000 件、C4.523。不写产能、不写其他认证。",
     ]
     for i, n in enumerate(notes):
         cjk(page, pad, A3.height - 108 + i * 15, f"{i + 1}. {n}", 8.6, color=INK)
