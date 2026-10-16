@@ -588,9 +588,9 @@
   },
   "037-panic-exit-device-trim": {
     "name": "Garniture extérieure pour fermeture anti-panique",
-    "summary": "Béquille extérieure pour barre anti-panique. Verrouillage et déverrouillage à clé.",
+    "summary": "Garniture extérieure à bouton pour barre anti-panique. La clé verrouille et déverrouille le bouton.",
     "features": [
-      "Béquille extérieure pour barre anti-panique",
+      "Bouton extérieur pour barre anti-panique",
       "Verrouillage et déverrouillage à clé",
       "Longueur du carré adaptée à l'épaisseur de la porte",
       "Plusieurs coloris au choix"
@@ -598,7 +598,7 @@
     "specs": [
       {
         "label": "Type",
-        "value": "Garniture · béquille extérieure pour fermetures anti-panique"
+        "value": "Garniture à bouton · bouton extérieur pour fermetures anti-panique"
       },
       {
         "label": "Material",
@@ -621,11 +621,64 @@
     "seoDescription": "037 Garniture extérieure pour fermeture anti-panique : fer + acier inoxydable. Direct usine, échantillons et devis sur demande.",
     "sourceHash": {
       "name": "cf2c2ed4be14",
-      "summary": "9105612bf15d",
+      "summary": "ab9fb8555235",
       "description": "dd29ecf524b0",
-      "features": "66a39e658843",
-      "specs": "f972357355bb"
+      "features": "c7c06416b137",
+      "specs": "b1c4fc3e38b3"
     }
+  },
+  "037-ps-panic-exit-device-trim": {
+    "name": "Garniture extérieure pour fermeture anti-panique",
+    "summary": "Bouton extérieur de passage pour barre anti-panique. Sans clé : le bouton ouvre toujours la porte depuis l'extérieur, et la barre anti-panique l'ouvre depuis l'intérieur.",
+    "features": [
+      "Bouton extérieur pour barre anti-panique, fonction passage",
+      "Sans cylindre : entrée libre depuis l'extérieur, sortie par la barre de poussée depuis l'intérieur",
+      "Carré et deux tiges de fixation traversant la porte jusqu'au dispositif anti-panique",
+      "Plaque de fixation avec repère côté chant de la porte"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Garniture à bouton · bouton extérieur de passage pour fermetures anti-panique"
+      },
+      {
+        "label": "Function",
+        "value": "Passage : bouton extérieur toujours libre, sans cylindre"
+      },
+      {
+        "label": "Material",
+        "value": "Bouton en fer, rosace en acier inoxydable"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel satiné ; autres finitions sur demande"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "75 mm"
+      },
+      {
+        "label": "Diameter",
+        "value": "57,5 mm (bouton)"
+      },
+      {
+        "label": "Projection",
+        "value": "78,5 mm depuis la face de la porte"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35–55 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "cf2c2ed4be14",
+      "summary": "3e93538ca46b",
+      "description": "dd29ecf524b0",
+      "features": "e523eafb7392",
+      "specs": "90b1a0852fde"
+    },
+    "seoTitle": "037 PS Garniture extérieure pour fermeture anti-panique | Canton Hyland",
+    "seoDescription": "037 PS Garniture extérieure pour fermeture anti-panique : fer + acier inoxydable. Direct usine, échantillons et devis sur demande."
   },
   "039-panic-exit-device-trim": {
     "name": "Garniture extérieure pour fermeture anti-panique",

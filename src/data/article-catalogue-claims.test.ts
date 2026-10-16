@@ -265,14 +265,56 @@ test("HYDE coverage articles use site-filtered counts in all three languages", (
     { dir: "content/news", slug: "what-documents-you-can-actually-get", counts: inventory },
   ];
   const bodyKeys = { en: "body", es: "bodyEs", pt: "bodyPt" } as const;
+  const has = (text: string, count: number) => new RegExp(`(?<![0-9A-Za-z])${count}(?![0-9A-Za-z])`).test(text);
 
   for (const { dir, slug, counts } of targets) {
     const article = JSON.parse(readFileSync(join(dir, `${slug}.json`), "utf8"));
     assert.doesNotMatch(JSON.stringify(article), /\b(?:964|973|95|79)\b/, `${slug} still quotes a shared-site or stale drawing count`);
     for (const [locale, bodyKey] of Object.entries(bodyKeys)) {
       const body = (article[bodyKey] as string[]).join("\n");
-      const missing = counts.filter((count) => !new RegExp(`(?<!\\d)${count}(?!\\d)`).test(body));
+      const missing = counts.filter((count) => !has(body, count));
       assert.deepEqual(missing, [], `${slug}/${locale} must state the current HYDE counts`);
+    }
+    // The seven overlay translations are the other homes of the same body (AGENTS.md: "an
+    // article body has ten homes"). On 2026-10-16 all seven still said 613 records three
+    // catalog changes after the English moved to 616.
+    for (const code of OVERLAY_CODES) {
+      const body = overlayBody(code, dir, slug);
+      if (body === undefined) continue;
+      const missing = counts.filter((count) => !has(body, count));
+      assert.deepEqual(missing, [], `content/i18n/${code} ${slug} must state the current HYDE counts`);
+    }
+  }
+});
+
+const OVERLAY_CODES = ["fr", "de", "ja", "ko", "tr", "ru", "ar"] as const;
+const overlays = new Map<string, { [slug: string]: { body?: string[]; faq?: { answer: string }[] } }>();
+function overlayBody(code: string, dir: string, slug: string): string | undefined {
+  const file = join("content/i18n", code, `${dir.endsWith("guides") ? "guides" : "news"}.json`);
+  if (!overlays.has(file)) overlays.set(file, JSON.parse(readFileSync(file, "utf8")));
+  const entry = overlays.get(file)![slug];
+  return entry?.body ? [...entry.body, ...(entry.faq ?? []).map((f) => f.answer)].join("\n") : undefined;
+}
+
+test("articles that state the catalog total state the current one in every language", () => {
+  // Sentences of the form "N records in our catalog" outside the registered claims above:
+  // the function-count FAQ and the backset article's Spanish and Portuguese bodies kept 613.
+  const totalStated = [
+    ["content/guides", "commercial-lock-function-decision-2026"],
+    ["content/news", "mortise-lock-backset-and-centre-distance-guide"],
+  ] as const;
+  // Any of the twenty totals just below today's, which is where a forgotten one sits.
+  const recent = Array.from({ length: 20 }, (_, i) => hyde.length - 1 - i).join("|");
+  const stale = new RegExp(`(?<![0-9A-Za-z])(?:${recent})(?![0-9A-Za-z])`);
+  for (const [dir, slug] of totalStated) {
+    const article = JSON.parse(readFileSync(join(dir, `${slug}.json`), "utf8"));
+    const faqs = Object.values((article.faq ?? {}) as { [locale: string]: { answer: string }[] }).flat().map((f) => f.answer);
+    const own = [...article.body, ...(article.bodyEs ?? []), ...(article.bodyPt ?? []), ...faqs].join("\n");
+    assert.doesNotMatch(own, stale, `${slug} still quotes an old catalog total; it is ${hyde.length} now`);
+    assert.ok(own.includes(String(hyde.length)), `${slug} should state the ${hyde.length} total`);
+    for (const code of OVERLAY_CODES) {
+      const body = overlayBody(code, dir, slug);
+      if (body !== undefined) assert.doesNotMatch(body, stale, `content/i18n/${code} ${slug} still quotes an old catalog total`);
     }
   }
 });

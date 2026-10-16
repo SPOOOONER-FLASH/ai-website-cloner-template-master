@@ -5,7 +5,7 @@
  * language — so the merge accepts them unchanged, the pruner drops any entry for them, and
  * the tracker leaves them out of the denominator. One rule, three scripts.
  */
-export const BRAND = /^(HYDE|STAHLOCK|Canton Hyland(?: Hardware\s*\(Group\) Co\.,? Ltd\.?)?|cantonlock\.com)$/u;
+export const BRAND = /^(HYDE|STAHLOCK|Canton Hyland(?: Hardware\s*(?:\(Group\)|&\s*Building Material) Co\.,? Ltd\.?)?|cantonlock\.com)$/u;
 /* Tokens that are not words to translate: SI and trade units, standards bodies, alloy codes. */
 /* Lookarounds rather than \b: "70mm" has no word boundary between the digit and the unit, so
    the ko/tr writers were refused on figures-only values on 2026-09-27 and had to respace them. */

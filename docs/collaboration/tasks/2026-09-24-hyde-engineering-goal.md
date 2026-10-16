@@ -70,9 +70,9 @@
 | 65 | 产品页 ↔ 应用案例互链（甲方 09-27 转来的「案例和产品关联」）：案例页已列产品，产品页还没有反向链接；十语种都要有，文案用已有译文 | 09-27 完成（18 个产品页 × 10 语种，本地实测；待下次 release:hyde） |
 | 66 | Zuperior Hardware（Dan，info@zuperiorhardware.com）询 magnetic door latch：官网没有这个品类；起草英文回信给甲方（价格留空由老板定，不编参数） | 09-27 完成（草稿在对话里交甲方） |
 | 69 | 磁性门锁舌（magnetic door latch）上官网：工厂确认能做后，给实拍照片 + 尺寸（锁舌中心距/面板/锁体长度、通道/隐私功能、表面）即可建品类页；现在不建，不编图不编参数 | 待甲方（工厂能否做 + 实物资料） |
-| 158 | 首页轮播：换逃生锁图（客户 10-12 给的图），加 AR-4、阿根廷集合两页（en/es/pt + 七语） | 进行中（10-12，等发布核对） |
+| 158 | 首页轮播：换逃生锁图（客户 10-12 给的图），加 AR-4、阿根廷集合两页（en/es/pt + 七语） | 10-16 核对完成（三页在 src/data/home.ts 与 es/pt/七语首页，out/ 已含 home-panic-exit-double-door、argentina-ar4-entry、home-argentina-collection） |
 | 159 | 首页轮播三张大图（阿根廷 ×2、巴西 ×1） | 待 Codex（docs/collaboration/tasks/2026-10-12-codex-home-carousel-argentina-images.md） |
-| 160 | 巴西逃生锁、阿根廷「单独开」：客户 10-12 答 A+B 都要。阿根廷落地页已有；巴西页 /pt/ferragens-porta-corta-fogo 已有，葡语首页轮播加一页 | 进行中（10-12） |
+| 160 | 巴西逃生锁、阿根廷「单独开」：客户 10-12 答 A+B 都要。阿根廷落地页已有；巴西页 /pt/ferragens-porta-corta-fogo 已有，葡语首页轮播加一页 | 10-16 核对完成（葡语首页轮播第二页 home-brazil-fire-door → /pt/ferragens-porta-corta-fogo，已在 out/pt/index.html；大图换新归 #159） |
 | 70 | 文案会话 09-27（docs/copy/guide-keyword-split.md）：5 对文章 seoTitle 同词分流 → 6 篇 × 10 语种改主词（功能开头 / 认报价钢种 / 总长 vs 分段 / 读锁体型号 / 按项目国家 vs 等级对比） | 09-27 完成 |
 | 71 | /euro-cylinder-calculator（文案会话新建，10 语种）title/description 目前写在页面 metadata；接手时按 seoTitle 规则审一遍，避免和 euro-cylinder-size-chart、length-and-split 抢词 | 09-27 完成（主词只占 calculator；7 语种 title/description 已译，正文待文案/多语言会话） |
 | 72 | 文案会话 09-27：ansi-grade-1-vs-en-1125 的 seoDescription 只讲等级对比，「按国家/项目市场选标准」留给 en-1125-or-ansi（10 语种） | 09-27 完成 |
@@ -152,7 +152,7 @@
 | 146 | 文案会话 10-09 全量审查：147 个指南/文章描述 > 160 字符（最长 262）；59 个视频页描述约 45 字符 | 10-10 上线（r33 bd1e79eb46c（别的会话发布，构建自 cd9affff11c）上线，10-10 ?nc= 实测：指南与西语描述为新文本、≤ 155；66 篇 161 条 en/es/pt 描述改写到 ≤ 155：答案与数字在前、只用正文事实；第二个代理逐条核对并改正 59 条（多为夸大或正文没有的说法）；1 条葡语把「mapa」改「quadro」过地区用词检查；前后对照与事实出处存 docs/research/analytics/2026-10-09/description-rewrites.json；新增 article-description-length 测试锁 ≤ 160，E1 三页 10-14 前豁免。视频页描述随 /video/ noindex 不再参与） |
 | 147 | 文案会话 10-09 全量审查：1,188 个产品页标题 > 60 字符（最长 75），建议型号 + 品类在前、厂名在后 | 10-09 完成，不改（r32 构建实测：超过 60 字符的产品标题约 97% 型号在前、约 99% 以「 \| Canton Hyland」收尾，Google 约 60 字符截断时丢的正是厂名；没型号在前的都是无真实型号的产品（如 Glass Door Patch Fitting Set）；超过 70 只剩 1 条俄语。维持甲方 10-08 定的 70 规则） |
 | 148 | 文案会话 10-09：源码 8a619bd608d 要发布（页脚「The 9014 lever」七语补译，约 5,500 页原显示英文） | 10-10 上线（r33 bd1e79eb46c（别的会话发布，构建自 cd9affff11c）上线，10-10 ?nc= 实测，含页脚补译、文案 #37、多语言会话 E1 七语与跟进、AR-4、规格书新公司名；我从 0e07bfcd372 的重建已停掉，内容重复） |
-| 149 | 远高评估阶段 1：欧标锁芯计算器「算给你看」——修偏心中心固定 "30" 的跳变 bug、aria-live 只挂结果句、印出代入数字的算式、带尺寸进询盘 | 部分完成（10-10 线上实测算式行「Outside: 30 + 4 = 34 mm → 35 mm」与 sr-only 结果句已上线；10-09：勾「偏心」时中心值取当前门厚 ÷ 2，不再固定 30 跳变；aria-live 从整个区块改为一句隐藏的结果句。结果表下印出代入读者数字的算式（外侧：中心 + 饰板 = 计算值 → 标准半长；内侧：门厚 − 中心 + 饰板），只用已有标签，不新增译文；sizeCylinder 返回 centerMm 并加测试。剩「带尺寸进询盘」（要十语新文案），上线后在线上点测） |
+| 149 | 远高评估阶段 1：欧标锁芯计算器「算给你看」——修偏心中心固定 "30" 的跳变 bug、aria-live 只挂结果句、印出代入数字的算式、带尺寸进询盘 | 部分完成（10-10 线上实测算式行「Outside: 30 + 4 = 34 mm → 35 mm」与 sr-only 结果句已上线；10-09：勾「偏心」时中心值取当前门厚 ÷ 2，不再固定 30 跳变；aria-live 从整个区块改为一句隐藏的结果句。结果表下印出代入读者数字的算式（外侧：中心 + 饰板 = 计算值 → 标准半长；内侧：门厚 − 中心 + 饰板），只用已有标签，不新增译文；sizeCylinder 返回 centerMm 并加测试。10-16 补完「带尺寸进询盘」：结果下加按钮（十语），跳 /contact/#product=…&note=…&from=tools/euro-cylinder-calculator，需求框预填结论句 + 门厚/两侧饰板/偏心中心；待发布后线上点测） |
 | 150 | 远高评估阶段 2/3（报价信息块、文档化编号、规格数字排版、统一章节开头、可复制规格行、开篇标题遮罩升起）：先给甲方看提案再做 | 待甲方 |
 | 151 | 规格会话 10-09：PR #20 AR-4 已合并 174bd024823（首页与 /products/argentina-ar4/ Elabora 式图块十语、110/140/1121 并入 AR4 三条记录 + 301、modelAliases 搜索、目录数 616→613）→ 随 r33 发布；先跑 npm run spec-sheets；上线后手册写 nginx 重载（deploy/install-nginx-redirects.sh） | 10-10 上线（r33 bd1e79eb46c（别的会话发布，构建自 cd9affff11c）上线，10-10 ?nc= 实测：110/140/1121 旧网址含 /es/ 已 301 到 AR4 新页，甲方无需重载 nginx；规格书 015 为新版 40814 字节；悬停蒙版修正 ca1764f62a6 随下一次发布） |
 | 152 | 甲方 10-09：13 家工厂目录（15 个 PDF、638 页）+ 2 张工厂报价表 → HYDE 专属产品数据库，对照图片/参数立即报价；GitHub 登录后台 + 内部交流 | 大部分完成（10-09：私有仓库 hyde-brain 19 本目录 764 页 4,947 个型号、2 张报价表、每厂问题清单 → 桌面 05 docx；待甲方给同事 GitHub 账号；登录页源码 8cd99f5c9f6 已推，需下一次 HYDE 发布上线 /admin/brain/；剩 8 本目录的二次看图核对，用量允许时做，见 hyde-brain docs/RESUME.md） |
@@ -194,3 +194,4 @@
 | 188 | 发布「hyde前端管理」会话 b5e49f1cdf2d：全屏菜单底栏按钮样式、社媒加 eBay（页脚与 sameAs）；实测手机/桌面菜单底栏与 eBay 链接 | 10-14 完成（v2026.10.14.3；eBay https://www.ebay.com/usr/hydecantonlock 在页脚与 sameAs） |
 | 189 | 发布「Hyde 文案」会话 7082b3175827：037 PS 新品（8 图 + 视频）、037 文案 knob、文章计数 616/549；实测新产品页与视频 | 10-14 完成（v2026.10.14.3；/products/panic-exit-devices/037-ps-panic-exit-device-trim/ 200，带视频；标题描述由生成器补齐） |
 | 190 | 紧急：所有询盘表单提交失败（Web3Forms 后台开了 hCaptcha，表单没带 token）→ 发布「hyde前端管理」修复 90919c04edc2；上线后请甲方真人提交一次确认 | 待甲方（v2026.10.14.3 已上线，/contact/ 实测加载 hCaptcha 脚本与验证框；需甲方真人提交一次询盘确认收到） |
+| 191 | 云端会话 10-16（接管 8 个本地会话）：锁芯计算器带尺寸进询盘（#149 收尾）；main 上 `npm run check` 第一步红（菜单底栏 CSS 裸 150ms）→ 改动效令牌；EN/ES/PT + 七语文章目录数 613→616、七语 546→549 / 326→330；七语镜像补齐（每语种界面 74 句、037 PS、16 条过期记录按段补丁 35 处，新脚本 i18n-stale-diff / i18n-apply-patch） | 待发布（分支 claude/loving-albattani-nmoa45 → PR；合并后由 johns 机器 release:hyde） |

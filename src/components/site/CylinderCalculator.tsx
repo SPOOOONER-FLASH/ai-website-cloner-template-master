@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import type { Locale } from "@/data/site";
+import { Button } from "@/components/site/Button";
+import { contactHref } from "@/lib/inquiry-prefill";
 import {
   MAX_PROUD_MM,
   PUBLISHED_LENGTHS_MM,
@@ -126,6 +128,24 @@ const COPY: { en: Copy; es: Copy; pt: Copy } = {
   },
 };
 
+/**
+ * The quote link under the result and the product line it pre-fills (goal #149, 2026-10-16).
+ * All ten languages here, because the overlay bundles only carry sentences that already exist
+ * in English elsewhere; the measurement lines in the message reuse the labels above.
+ */
+const QUOTE = {
+  en: { cta: "Ask for a quote with these sizes", product: "Euro profile cylinder" },
+  es: { cta: "Pedir cotización con estas medidas", product: "Cilindro de perfil europeo" },
+  pt: { cta: "Pedir cotação com estas medidas", product: "Cilindro de perfil europeu" },
+  fr: { cta: "Demander un devis pour ces cotes", product: "Cylindre profil européen" },
+  de: { cta: "Angebot mit diesen Maßen anfragen", product: "Profilzylinder" },
+  ja: { cta: "この寸法で見積もりを依頼する", product: "ユーロプロファイルシリンダー" },
+  ko: { cta: "이 치수로 견적 요청", product: "유로 프로파일 실린더" },
+  tr: { cta: "Bu ölçülerle teklif isteyin", product: "Avrupa profil silindir" },
+  ru: { cta: "Запросить цену по этим размерам", product: "Цилиндровый механизм европрофиля" },
+  ar: { cta: "اطلب عرض سعر لهذه المقاسات", product: "أسطوانة ببروفيل أوروبي" },
+};
+
 const FIELD_CLASS =
   "field min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink";
 
@@ -151,6 +171,26 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
   const ok = validCylinderInput(input);
   const r = ok ? sizeCylinder(input) : null;
   const fmt = (n: number) => (locale === "en" ? String(n) : String(n).replace(".", ","));
+  const q = dict(QUOTE, locale);
+  /* The buyer's own numbers go into the inquiry, so the export team quotes a length instead of
+     asking for the three measurements again. `from` tells them which tool sent the lead. */
+  const quoteHref = r
+    ? contactHref(locale === "en" ? "" : `/${locale}`, {
+        product: q.product,
+        note: [
+          r.publishedMm !== null
+            ? fill(t.orderAs, { total: fmt(r.publishedMm), outside: fmt(r.outside.halfMm), inside: fmt(r.inside.halfMm) })
+            : t.noModel,
+          `${t.door}: ${door.trim()}`,
+          `${t.outsideTrim}: ${outTrim.trim()}`,
+          `${t.insideTrim}: ${inTrim.trim()}`,
+          offCentre ? `${t.center}: ${center.trim()}` : "",
+        ]
+          .filter(Boolean)
+          .join("\n"),
+        from: "tools/euro-cylinder-calculator",
+      })
+    : undefined;
 
   return (
     <section className="col-content grid grid-cols gap-x gap-y-48">
@@ -266,6 +306,11 @@ export function CylinderCalculator({ locale }: { locale: Locale }) {
             <p className="mt-24 text-c2 text-ink-secondary">
               {t.published}: {PUBLISHED_LENGTHS_MM.join(", ")} mm
             </p>
+            {quoteHref ? (
+              <Button href={quoteHref} className="mt-32">
+                {q.cta}
+              </Button>
+            ) : null}
           </>
         ) : (
           <p className="text-c1 text-ink-secondary">{t.invalid}</p>
