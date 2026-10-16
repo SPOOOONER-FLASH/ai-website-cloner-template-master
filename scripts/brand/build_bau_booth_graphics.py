@@ -55,17 +55,23 @@ class Wall:
 
 
 WALLS = [
+    # One idea per wall, in large type, the way the category leaders run their stands
+    # (SIMONSWERK "Only a detail?", dormakaba "For Every Place That Matters"). Both lines are
+    # facts from content/bau-2027.json: much of the output leaves under customers' brands, and
+    # a drawing or a sample is tooled.
     Wall("back-wall", "后墙", 6.50, lines={
-        "en": "Panic exit devices, locks and door hardware.",
-        "de": "Panikbeschläge, Schlösser und Türbeschläge.",
+        "motto": "Your brand. Our factory.",
+        "motto_de": "Ihre Marke. Unser Werk.",
+        "line": "Panic exit devices · Locks · Door hardware",
         "kicker": "BAU 2027 · Messe München",
         "big": "Stand C4.523",
     }, base=["Since 1998", "Zhongshan, Guangdong, China", "ISO 9001:2015 stamping plant",
              "OEM & private label", "MOQ 300–5,000 pcs"]),
     # The side wall's open end faces the aisle (stand plan render), so the factory column is there.
     Wall("side-wall", "侧墙", 4.50, lines={
-        "en": "Door hardware from Zhongshan, China, since 1998.",
-        "de": "Türbeschläge aus Zhongshan, China – seit 1998.",
+        "motto": "Made to your drawing.",
+        "motto_de": "Gefertigt nach Ihrer Zeichnung.",
+        "line": "Door hardware from Zhongshan, China, since 1998",
         "kicker": "Website · Webseite",
         "big": "cantonlock.com",
     }, base=["tec@cantonlock.com", "WhatsApp +1 703 967 7493"], qr=True, factory=True),
@@ -152,22 +158,37 @@ def draw_cloth(page: pymupdf.Page, o: pymupdf.Point, w: Wall, s: float, proof: b
                                color=(0.55, 0.53, 0.5), width=0.003 * s)
             x += tw + gap
 
-    # Header band: mark, the line in English and German, the stand or the address on the right.
-    mark, mark_h = hm.horizontal(), 0.20
+    # Header band: the mark and the product line on the left, the wall's one idea in large type
+    # beside it, the stand or the address (and the QR code) on the right.
+    mark, mark_h = hm.horizontal(), 0.18
     mark_w = mark_h * mark.width / mark.height   # place_mark centres; a rect of the mark's own aspect keeps it flush left
-    place_mark(page, pymupdf.Rect(X(SIDE_MARGIN), Y(0.12), X(SIDE_MARGIN + mark_w), Y(0.12 + mark_h)), mark)
-    text(page, X(SIDE_MARGIN), Y(0.47), w.lines["en"], 0.085 * s, "medium")
-    text(page, X(SIDE_MARGIN), Y(0.585), w.lines["de"], 0.058 * s, "text", GREY)
+    place_mark(page, pymupdf.Rect(X(SIDE_MARGIN), Y(0.15), X(SIDE_MARGIN + mark_w), Y(0.15 + mark_h)), mark)
     if w.qr:
         q = 0.46
         draw_qr(page, pymupdf.Rect(X(right - q), Y(0.12), X(right), Y(0.12 + q)), QR_URL)
         right -= q + 0.08
-    text(page, X(right), Y(0.205), w.lines["kicker"], 0.050 * s, "medium", GREY, track=30, align="right")
-    # With the QR code beside it the address is set smaller, so it clears the tagline on a 4.50 m wall.
-    text(page, X(right), Y(0.40), w.lines["big"], (0.105 if w.qr else 0.150) * s, "display-semibold", align="right")
+    big = 0.105 if w.qr else 0.125
+    big_w = kit.text_width(w.lines["big"], big * s, "display-semibold") / s
+    text(page, X(right), Y(0.205), w.lines["kicker"], 0.045 * s, "medium", GREY, track=30, align="right")
+    text(page, X(right), Y(0.36), w.lines["big"], big * s, "display-semibold", align="right")
     if w.qr:
-        text(page, X(right), Y(0.53), "Scan for spec sheets and to book a meeting.", 0.045 * s, "text", GREY, align="right")
-        text(page, X(right), Y(0.60), "Scannen: Datenblätter und Terminvereinbarung.", 0.045 * s, "text", GREY, align="right")
+        text(page, X(right), Y(0.47), "Scan for spec sheets and to book a meeting.", 0.040 * s, "text", GREY, align="right")
+        text(page, X(right), Y(0.535), "Scannen: Datenblätter und Terminvereinbarung.", 0.040 * s, "text", GREY, align="right")
+    if w.qr:
+        # A 4.50 m wall cannot hold mark, motto and QR block on one line: the motto goes under the mark.
+        room = right - big_w - 0.30 - SIDE_MARGIN
+        size = min(0.115, room / kit.text_width(w.lines["motto"], 1, "display-semibold"))
+        text(page, X(SIDE_MARGIN), Y(0.485), w.lines["motto"], size * s, "display-semibold")
+        text(page, X(SIDE_MARGIN), Y(0.60), w.lines["motto_de"], 0.055 * s, "text", GREY)
+    else:
+        text(page, X(SIDE_MARGIN), Y(0.53), w.lines["line"], 0.042 * s, "medium", GREY)
+        # The motto starts after the mark and gets the room left before the right block.
+        mx = SIDE_MARGIN + mark_w + 0.45
+        room = right - big_w - 0.35 - mx
+        size = min(0.15, room / kit.text_width(w.lines["motto"], 1, "display-semibold"))
+        assert size > 0.08, f"{w.key}: the motto has only {room:.2f} m"
+        text(page, X(mx), Y(0.36), w.lines["motto"], size * s, "display-semibold")
+        text(page, X(mx), Y(0.53), w.lines["motto_de"], 0.070 * s, "text", GREY)
     page.draw_line((full.x0, Y(w.header)), (full.x1, Y(w.header)), color=INK, width=0.004 * s)
 
     if w.factory:
@@ -222,7 +243,7 @@ def proposal(out: Path) -> Path:
     cjk(page, pad, 52, "BAU 2027 · C4.523 展位喷绘方案（展板以外的墙面）", 20, bold=True)
     cjk(page, pad, 74, "两块整墙喷绘布，展板直接挂在布上。内容只放在楣头和底边，展板区留白，展板怎么排都不会挡字。红色虚线 = 成品边，蓝色虚线 = 展板可放区域（不印）。", 9.5, color=GREY)
     # Both walls at one scale, sized so they and the notes share the sheet.
-    room = A3.height - 100 - 125 - len(WALLS) * 30
+    room = A3.height - 100 - 140 - len(WALLS) * 30
     s = min((A3.width - 2 * pad) / (WALLS[0].width + 2 * BLEED), room / sum(w.height + 2 * BLEED for w in WALLS))
     cjk(page, A3.width - pad - 120, 52, f"示意比例约 1:{round(100 / (s / kit.MM / 10)) * 1}", 9.5, color=GREY)
     y = 100
@@ -236,10 +257,11 @@ def proposal(out: Path) -> Path:
         "墙高 2.50 m、楣头 0.70 m、底边 0.30 m 是按标准展位假设的，必须由搭建方确认真实尺寸后重出文件（改 WALLS 一行即可）。",
         "侧墙通道端 1.40 m 宽是「工厂实拍」栏：冲压、抛光、装配三张官网实拍，挑的是画面里没有旧招牌、没有中文标牌的；这一段不挂展板。",
         "二维码（侧墙右上，46 cm）指向 cantonlock.com/bau-2027/（规格书 + 预约见面），已用解码器验证。底边：后墙为公司事实，侧墙为邮箱和 WhatsApp。",
-        "文字只用已确认的事实：1998 年、中山、ISO 9001:2015（冲压厂）、OEM / 自有品牌、起订量 300–5,000 件、C4.523。不写产能、不写其他认证。",
+        "楣头主张（后墙 Your brand. Our factory. / 侧墙 Made to your drawing.）取自官网已确认事实：多数产品以客户品牌出厂、带图纸或样品即可开模。不写产能、不写其他认证。",
+        "建议（不印）：在展位开放角放一扇独立实物演示门（0.90×2.10 m 门扇带门框，装逃生锁和外执手），不靠墙以免挡住楣头。头部品牌都把产品装在真门上演示。",
     ]
     for i, n in enumerate(notes):
-        cjk(page, pad, A3.height - 108 + i * 15, f"{i + 1}. {n}", 8.6, color=INK)
+        cjk(page, pad, A3.height - 24 - (len(notes) - 1 - i) * 15, f"{i + 1}. {n}", 8.6, color=INK)
     doc.subset_fonts()
     return kit.save_pdf(doc, out / "BAU2027-C4-523-喷绘方案.pdf", "BAU 2027 C4.523 booth graphics proposal")
 
