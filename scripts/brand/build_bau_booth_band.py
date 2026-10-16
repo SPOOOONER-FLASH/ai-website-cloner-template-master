@@ -13,17 +13,16 @@ Geometry is the stand builder's drawing set (平面图 / A·B·C 立面图 / 门
              bottom 0.85 m, columns 325|600|150|…|600|325
   counter    1.20 m long, 0.60 m deep, about 0.90 m high, at the front left
 
-Client, same day: 「图片放在顶 3 米往下高度 1.1 米的位置，195 高度别超过，图片设计放置规整，加上大拉手和
-天地轴」, then three pivot pictures marked 420 × 370 mm each. So:
+Client, same day: 「图片放在顶 3 米往下高度 1.1 米的位置，195 高度别超过……加上大拉手和天地轴」,
+three pivot pictures marked 420 × 370 mm, then the first band render with 「就这个是我们要的款式」.
+So the band style of that render, at the drawing's sizes:
 
   zone       1.95–2.95 m on every wall (1.00 m; 1.10 m would cross the 1.95 m line)
-  module     420 × 370 mm picture tiles, two rows, every column centred on the board below it:
-             two tiles per 900 board (420 + 60 + 420 = 900), one per 600 board
-  header     one line of slogan / brand above the tiles
+  A (left)   "Made to your drawing." + the three pivot pictures, 420 × 370 scaled 1.5×
+  B (back)   white logo plate, "Your brand. Our factory.", five products incl. the D-3019 top pivot
+  C (right)  three big pull handles (105, 109, 102), cantonlock.com, the QR at the front end
 
-Each column shows the category of the board beneath it, so the wall reads top-down as a
-catalogue: levers, cylinders and lock cases, hinges (A); levers, knobs, lock cases, pivots,
-panic devices (B); panic devices and big pull handles (C). 48 pictures: 16 + 16 + 16.
+BOARD_SAMPLES only dresses the boards in the 3-D model; the boards themselves are the client's.
 
 Every product picture is a real site photograph cut out of its white ground (flood fill from
 the edges, see build_bau_booth_concepts.cutout), or of its dark studio ground (GrabCut, see
@@ -55,11 +54,6 @@ ZONE_BOTTOM = 1.95             # nothing below this line
 ZONE = H - ZONE_BOTTOM         # 1.00 m picture zone
 FASCIA_H, FASCIA_D = 0.55, 0.24
 BLEED = 0.15
-MOD_W, MOD_H = 0.42, 0.37      # the client's picture size
-GAP_X, GAP_Y = 0.06, 0.03
-HEAD = 0.18                    # header line (slogan) at the top of the zone
-ROW1 = HEAD + 0.03             # top of the first picture row, from the top of the zone
-ROW2 = ROW1 + MOD_H + GAP_Y
 COUNTER = (1.20, 0.90)         # front face; height read off the 门头图, confirm with the builder
 OUT_DEFAULT = kit.ROOT / "docs" / "design-references" / "bau-2027-booth-band"
 SOURCE = OUT_DEFAULT / "source"
@@ -83,9 +77,9 @@ BOARD_TITLES = {  # the builder's board names, for the model only
 }
 
 P = "products-hyde/"
-# One entry per board column: (column label, [pictures]). A picture is a site product slug, a
-# brazil/argentina collection path, "dark:<slug>" (dark studio ground) or "photo:<file>".
-COLUMNS = {
+# Stand-ins for the samples on each board, in the 3-D model only: (label, [pictures]). A picture is a
+# site product slug, a collection path, "dark:<slug>" (dark studio ground) or "photo:<file>".
+BOARD_SAMPLES = {
     "A": [
         ("Lever handle", [P + "lh1016-stainless-steel-handle", P + "9087-ss-stainless-steel-handle",
                           P + "9014s-stainless-steel-handle", P + "9004s-stainless-steel-handle"]),
@@ -119,7 +113,6 @@ COLUMNS = {
 }
 PHOTO_LABEL = {"pivot-heavy": "Heavy-duty series", "pivot-profile": "Profile series",
                "pivot-frameless": "Frameless glass series"}
-NEW = {"8829-bl-lever-handle"}
 
 
 def t(page, x, y, s, size, key="text", color=INK, track=0.0, align="left"):
@@ -135,6 +128,7 @@ def model_of(pic: str) -> str:
         return slug.upper().replace("BR1-SK", "BR-1 SK")
     rec = kit.ROOT / "content" / "products" / f"{slug}.json"
     model = json.loads(rec.read_text(encoding="utf-8")).get("model") or slug
+    model = {"LC14 85×50mm": "LC14"}.get(model, model)
     return "Glass door pull" if model.startswith("Stainless Steel Glass") else model
 
 
@@ -196,79 +190,98 @@ def picture(pic: str) -> bytes:
     return _IMG[pic]
 
 
-def tile(page, x, y, pic: str, label: str, ink: bool) -> None:
-    """One 420 × 370 picture tile with its top-left at (x, y) metres."""
-    r = pymupdf.Rect(x * S, y * S, (x + MOD_W) * S, (y + MOD_H) * S)
-    if pic.startswith("photo:"):
-        page.insert_image(r, stream=picture(pic), keep_proportion=False)
-        lw = len(model_of(pic)) * 0.0135 + 0.03
-        page.draw_rect(pymupdf.Rect(x * S, (y + MOD_H - 0.05) * S, (x + lw) * S, (y + MOD_H) * S), color=None, fill=WHITE, width=0)
-        t(page, x + 0.015, y + MOD_H - 0.017, model_of(pic), 0.022, "semibold", INK)
-        return
-    page.draw_rect(r, color=None, fill=PANEL if not ink else (0.955, 0.951, 0.944), width=0)
-    ir = pymupdf.Rect((x + 0.03) * S, (y + 0.025) * S, (x + MOD_W - 0.03) * S, (y + MOD_H - 0.06) * S)
-    page.insert_image(ir, stream=picture(pic), keep_proportion=True)
-    t(page, x + 0.018, y + MOD_H - 0.018, model_of(pic), 0.026, "semibold", INK)
-    t(page, x + MOD_W - 0.018, y + MOD_H - 0.018, label, 0.018, "text", GREY, align="right")
-    slug = pic.split("/")[-1]
-    if slug in NEW:
-        page.draw_rect(pymupdf.Rect((x + MOD_W - 0.085) * S, (y + 0.02) * S, (x + MOD_W - 0.02) * S, (y + 0.05) * S),
-                       color=None, fill=INK, width=0)
-        t(page, x + MOD_W - 0.0525, y + 0.0415, "NEW", 0.018, "semibold", WHITE, track=60, align="center")
+# The band, in the style the client chose on 2026-10-16 (「就这个是我们要的款式」, pointing at the
+# first band render): one light strip per wall, text on one side, large cut-out products on the
+# other, a white logo plate on the back wall, the QR at the front end of the right wall.
+BAND_ITEMS = {
+    "A": ["photo:pivot-heavy", "photo:pivot-profile", "photo:pivot-frameless"],
+    "B": [(P + "307-panic-exit-device", "Panic exit device"), (P + "lc14-85-50mm-lock-case", "Lock case"),
+          ("dark:d-3019-top-pivot", "Top pivot"), (P + "9014s-stainless-steel-handle", "Lever on rose"),
+          (P + "311-panic-exit-device", "Panic exit device")],
+    "C": [(P + "105-glass-door-handle", "Pull handle"), (P + "109-glass-door-handle", "Pull handle"),
+          (P + "102-glass-door-handle", "Pull handle")],
+}
+PHOTO_SCALE = 1.5   # the client's 420 × 370 pictures, scaled to 630 × 555 to sit with the products
+BAND_BG = (0.965, 0.962, 0.955)
 
 
-def module_xs(wall: str) -> list[tuple[int, float]]:
-    """(column index, wall x) of every tile column; two per 900 board, one per 600 board."""
-    b = BOARDS[wall]
-    out = []
-    for i, bx in enumerate(b["xs"]):
-        if b["w"] >= 0.9:
-            out += [(i, bx), (i, bx + MOD_W + GAP_X)]
-        else:
-            out.append((i, bx + (b["w"] - MOD_W) / 2))
-    return out
+def products_row(page, items, x0, x1, top, bottom, fg, sub) -> None:
+    """Cut-outs spread evenly between x0 and x1, each with its model and a short name under it."""
+    cw = (x1 - x0) / len(items)
+    for i, (pic, name) in enumerate(items):
+        cx = x0 + i * cw
+        r = pymupdf.Rect((cx + 0.04) * S, top * S, (cx + cw - 0.04) * S, (bottom - 0.15) * S)
+        page.insert_image(r, stream=picture(pic), keep_proportion=True)
+        t(page, cx + cw / 2, bottom - 0.065, model_of(pic), 0.050, "semibold", fg, align="center")
+        t(page, cx + cw / 2, bottom - 0.015, name, 0.032, "text", sub, align="center")
 
 
-# ---------------------------------------------------------------------------------- band
+def rule(page, x, y0, y1, color) -> None:
+    page.draw_line((x * S, y0 * S), (x * S, y1 * S), color=color, width=0.004 * S)
+
+
 def band(page, wall: str, ink: bool, x_off: float = 0.0, y_off: float = 0.0, full_wall: bool = False) -> None:
     """The zone of one wall. With full_wall, (x_off, y_off) is the wall's top-left corner and the
     band is drawn at its place on the wall; otherwise (x_off, y_off) is the band's top-left."""
     x0, x1 = BAND_X[wall]
-    ox = x_off - (0 if full_wall else x0)       # page x of wall x = 0
-    X = lambda m: ox + m                         # noqa: E731
-    Y = lambda m: y_off + m                      # noqa: E731
-    bg, fg, sub = (INK, WHITE, LIGHT) if ink else (WHITE, INK, GREY)
-    page.draw_rect(pymupdf.Rect(X(x0) * S, Y(0) * S, X(x1) * S, Y(ZONE) * S), color=None, fill=bg, width=0)
-    b = BOARDS[wall]
-    mods = module_xs(wall)
-    left, right = mods[0][1], mods[-1][1] + MOD_W      # the header aligns with the picture grid
-    base = HEAD - 0.025
+    ox = x_off + (x0 if full_wall else 0)        # page x of band x = 0
+    X = lambda m: ox + m                          # noqa: E731
+    Y = lambda m: y_off + m                       # noqa: E731
+    w = x1 - x0
+    bg, fg, sub, rule_c = (INK, WHITE, LIGHT, (0.32, 0.31, 0.29)) if ink else (BAND_BG, INK, GREY, (0.80, 0.78, 0.75))
+    page.draw_rect(pymupdf.Rect(X(0) * S, Y(0) * S, X(w) * S, Y(ZONE) * S), color=None, fill=bg, width=0)
     if wall == "B":
+        pw_, ph_ = 1.45, 0.46
+        r = pymupdf.Rect(X(0.30) * S, Y(0.5 - ph_ / 2) * S, X(0.30 + pw_) * S, Y(0.5 + ph_ / 2) * S)
+        page.draw_rect(r, color=None, fill=WHITE, width=0, radius=0.12)
+        if not ink:
+            page.draw_rect(r, color=(0.80, 0.78, 0.75), width=0.002 * S, radius=0.12)
         m = hm.horizontal()
-        mh = 0.085
+        mh = 0.17
         mw = mh * m.width / m.height
-        place_mark(page, pymupdf.Rect(X(left) * S, Y(base - mh) * S, X(left + mw) * S, Y(base) * S), m, hm.WHITE if ink else hm.INK)
-        t(page, X(mods[2][1]), Y(base), "Your brand. Our factory.", 0.135, "display-semibold", fg)
-        t(page, X(right), Y(0.075), "BAU 2027 · Messe München · Stand C4.523", 0.024, "semibold", sub, track=80, align="right")
-        t(page, X(right), Y(base), "Ihre Marke. Unser Werk.  ·  Since 1998, Zhongshan", 0.032, "text", sub, align="right")
+        place_mark(page, pymupdf.Rect(X(0.30 + (pw_ - mw) / 2) * S, Y(0.5 - mh / 2) * S, X(0.30 + (pw_ + mw) / 2) * S, Y(0.5 + mh / 2) * S), m)
+        sx = 2.00
+        t(page, X(sx), Y(0.255), "BAU 2027 · Messe München · Stand C4.523", 0.034, "semibold", sub, track=90)
+        sw = t(page, X(sx), Y(0.46), "Your brand. Our factory.", 0.150, "display-semibold", fg)
+        t(page, X(sx), Y(0.56), "Ihre Marke. Unser Werk.", 0.056, "text", sub)
+        t(page, X(sx), Y(0.68), "Panic exit devices, locks and door hardware", 0.040, "medium", fg)
+        t(page, X(sx), Y(0.74), "Made in Zhongshan, China, since 1998", 0.040, "text", sub)
+        rx = sx + sw + 0.15
+        rule(page, X(rx), Y(0.12), Y(ZONE - 0.12), rule_c)
+        products_row(page, BAND_ITEMS["B"], X(rx + 0.08), X(w - 0.15), Y(0.10), Y(ZONE - 0.08), fg, sub)
     elif wall == "A":
-        t(page, X(left), Y(base), "Made to your drawing.", 0.120, "display-semibold", fg)
-        t(page, X(right), Y(0.075), "OEM · Private label · Eigenmarke", 0.024, "semibold", sub, track=80, align="right")
-        t(page, X(right), Y(base), "Gefertigt nach Ihrer Zeichnung.  ·  Most models from 300 pieces", 0.030, "text", sub, align="right")
-    else:
-        t(page, X(left), Y(base), "cantonlock.com", 0.120, "display-semibold", fg)
-        t(page, X(right), Y(0.075), "Book a meeting · Termin vereinbaren", 0.024, "semibold", sub, track=80, align="right")
-        t(page, X(right), Y(base), "Spec sheets online  ·  tec@cantonlock.com", 0.030, "text", sub, align="right")
-    # pictures
-    cols = COLUMNS[wall]
-    seen: dict[int, int] = {}
-    for col, mx in module_xs(wall):
-        label, pics = cols[col]
-        k = seen.get(col, 0)
-        per_row = len(pics) // 2
-        tile(page, X(mx), Y(ROW1), pics[k], label, ink)
-        tile(page, X(mx), Y(ROW2), pics[k + per_row], label, ink)
-        seen[col] = k + 1
+        lx = 0.25
+        t(page, X(lx), Y(0.235), "OEM · Private label · Eigenmarke", 0.032, "semibold", sub, track=90)
+        tw = t(page, X(lx), Y(0.42), "Made to your drawing.", 0.120, "display-semibold", fg)
+        t(page, X(lx), Y(0.51), "Gefertigt nach Ihrer Zeichnung.", 0.048, "text", sub)
+        t(page, X(lx), Y(0.63), "Send a drawing or a sample: we cut the tool.", 0.036, "medium", fg)
+        t(page, X(lx), Y(0.69), "Lines made for Brazil and Argentina.", 0.036, "text", sub)
+        t(page, X(lx), Y(0.75), "Most models from 300 pieces.", 0.036, "text", sub)
+        pw, ph = 0.42 * PHOTO_SCALE, 0.37 * PHOTO_SCALE
+        gap = 0.05
+        px0 = w - 0.10 - 3 * pw - 2 * gap
+        rule(page, X(px0 - 0.10), Y(0.12), Y(ZONE - 0.12), rule_c)
+        del tw
+        t(page, X(px0), Y(0.12), "Top & bottom pivots · Boden- und Deckenlager", 0.032, "semibold", sub, track=60)
+        for i, pic in enumerate(BAND_ITEMS["A"]):
+            x = px0 + i * (pw + gap)
+            page.insert_image(pymupdf.Rect(X(x) * S, Y(0.16) * S, X(x + pw) * S, Y(0.16 + ph) * S), stream=picture(pic), keep_proportion=False)
+            t(page, X(x + pw / 2), Y(0.16 + ph + 0.075), model_of(pic), 0.042, "semibold", fg, align="center")
+            t(page, X(x + pw / 2), Y(0.16 + ph + 0.125), "Pivot", 0.030, "text", sub, align="center")
+    else:  # C, front end at the right
+        products_row(page, BAND_ITEMS["C"], X(0.15), X(1.95), Y(0.08), Y(ZONE - 0.08), fg, sub)
+        rule(page, X(2.05), Y(0.12), Y(ZONE - 0.12), rule_c)
+        tx = 2.18
+        t(page, X(tx), Y(0.235), "Book a meeting · Termin vereinbaren", 0.030, "semibold", sub, track=80)
+        t(page, X(tx), Y(0.40), "cantonlock.com", 0.105, "display-semibold", fg)
+        t(page, X(tx), Y(0.50), "Models, spec sheets and", 0.036, "medium", fg)
+        t(page, X(tx), Y(0.55), "meeting booking online.", 0.036, "medium", fg)
+        t(page, X(tx), Y(0.62), "Modelle, Datenblätter, Termine.", 0.034, "text", sub)
+        t(page, X(tx), Y(0.74), "tec@cantonlock.com", 0.036, "medium", fg)
+        q = 0.46
+        qx = w - 0.12 - q
+        page.draw_rect(pymupdf.Rect(X(qx - 0.02) * S, Y(0.5 - q / 2 - 0.02) * S, X(qx + q + 0.02) * S, Y(0.5 + q / 2 + 0.02) * S), color=None, fill=WHITE, width=0)
+        g.draw_qr(page, pymupdf.Rect(X(qx) * S, Y(0.5 - q / 2) * S, X(qx + q) * S, Y(0.5 + q / 2) * S), g.QR_URL)
 
 
 def counter_front(page, ink: bool, x_off=0.0, y_off=0.0):
@@ -276,19 +289,12 @@ def counter_front(page, ink: bool, x_off=0.0, y_off=0.0):
     bg, fg, sub = (INK, WHITE, LIGHT) if ink else (WHITE, INK, GREY)
     page.draw_rect(pymupdf.Rect(x_off * S, y_off * S, (x_off + w) * S, (y_off + h) * S), color=None, fill=bg, width=0)
     m = hm.stacked()
-    mh = 0.24
+    mh = 0.28
     mw = mh * m.width / m.height
-    place_mark(page, pymupdf.Rect((x_off + 0.10) * S, (y_off + 0.12) * S, (x_off + 0.10 + mw) * S, (y_off + 0.12 + mh) * S), m,
+    place_mark(page, pymupdf.Rect((x_off + (w - mw) / 2) * S, (y_off + 0.12) * S, (x_off + (w + mw) / 2) * S, (y_off + 0.12 + mh) * S), m,
                hm.WHITE if ink else hm.INK)
-    t(page, x_off + 0.10, y_off + 0.50, "Your brand.", 0.060, "display-semibold", fg)
-    t(page, x_off + 0.10, y_off + 0.565, "Our factory.", 0.060, "display-semibold", fg)
-    t(page, x_off + 0.10, y_off + 0.62, "Ihre Marke. Unser Werk.", 0.028, "text", sub)
-    q = 0.34
-    qx, qy = x_off + w - 0.10 - q, y_off + 0.10
-    page.draw_rect(pymupdf.Rect(qx * S, qy * S, (qx + q) * S, (qy + q) * S), color=None, fill=WHITE, width=0)
-    g.draw_qr(page, pymupdf.Rect((qx + 0.01) * S, (qy + 0.01) * S, (qx + q - 0.01) * S, (qy + q - 0.01) * S), g.QR_URL)
-    t(page, qx + q / 2, qy + q + 0.05, "Scan: models, spec sheets,", 0.022, "medium", fg, align="center")
-    t(page, qx + q / 2, qy + q + 0.08, "meeting booking", 0.022, "medium", fg, align="center")
+    t(page, x_off + w / 2, y_off + 0.56, "Your brand. Our factory.", 0.058, "display-semibold", fg, align="center")
+    t(page, x_off + w / 2, y_off + 0.62, "Ihre Marke. Unser Werk.", 0.032, "text", sub, align="center")
     page.draw_rect(pymupdf.Rect(x_off * S, (y_off + h - 0.10) * S, (x_off + w) * S, (y_off + h) * S), color=None,
                    fill=WHITE if ink else INK, width=0)
     t(page, x_off + w / 2, y_off + h - 0.04, "cantonlock.com", 0.030, "medium", INK if ink else WHITE, align="center")
@@ -300,8 +306,8 @@ def production(out: Path, ink: bool) -> list[Path]:
     files = []
     jobs = [(k, BAND_X[k][1] - BAND_X[k][0], ZONE) for k in WALL_W] + [("counter", COUNTER[0], COUNTER[1])]
     names = {"A": "A-left", "B": "B-back", "C": "C-right", "counter": "counter"}
-    fill = INK if ink else WHITE
     for key, w, h in jobs:
+        fill = (INK if ink else BAND_BG) if key != "counter" else (INK if ink else WHITE)
         doc = pymupdf.open()
         page = doc.new_page(width=(w + 2 * BLEED) * S, height=(h + 2 * BLEED) * S)
         page.draw_rect(page.rect, color=None, fill=fill, width=0)
@@ -330,7 +336,7 @@ def boards(page, wall: str, x_off: float, y_off: float, outline=True) -> None:
         r = pymupdf.Rect((x_off + bx) * S, (y_off + top) * S, (x_off + bx + b["w"]) * S, (y_off + top + b["h"]) * S)
         page.draw_rect(r, color=(0.78, 0.77, 0.74) if outline else None, fill=WHITE, width=0.002 * S)
         t(page, x_off + bx + b["w"] / 2, y_off + top + 0.05, BOARD_TITLES[wall][i], 0.022, "medium", GREY, align="center")
-        pics = [p for p in COLUMNS[wall][i][1] if not p.startswith("photo:")] or ["dark:d-3019-top-pivot"]
+        pics = [p for p in BOARD_SAMPLES[wall][i][1] if not p.startswith("photo:")] or ["dark:d-3019-top-pivot"]
         n = 3 if b["w"] >= 0.9 else 2
         rows = 2 if b["h"] < 0.8 else 3
         cw, ch = (b["w"] - 0.08) / n, (b["h"] - 0.12) / rows
@@ -358,8 +364,7 @@ def elevation(page, wall: str, ink: bool, x_off: float, y_off: float, dims=True)
             t(page, x_off - 0.12, y_off + yy + 0.012, lab, 0.035, "medium", red, align="right")
         t(page, x_off + w / 2, y_off + H + 0.12, {"A": "A · left wall 4.50 m", "B": "B · back wall 6.50 m", "C": "C · right wall 4.50 m"}[wall],
           0.06, "semibold", INK, align="center")
-        n = len(module_xs(wall)) * 2
-        t(page, x_off + w / 2, y_off + H + 0.20, f"{n} pictures · 420 × 370 mm · zone 1.95–2.95 m", 0.04, "text", GREY, align="center")
+        t(page, x_off + w / 2, y_off + H + 0.20, f"band {BAND_X[wall][1] - BAND_X[wall][0]:.2f} × {ZONE:.2f} m · zone 1.95–2.95 m", 0.04, "text", GREY, align="center")
 
 
 # --------------------------------------------------------------------------------- 3-D scene
