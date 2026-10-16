@@ -51,7 +51,6 @@ class Wall:
     lines: dict = field(default_factory=dict)
     base: list[str] = field(default_factory=list)   # white items set across the plinth
     qr: bool = False
-    factory: bool = False            # the three-photo production column at the aisle end
 
 
 WALLS = [
@@ -74,17 +73,54 @@ WALLS = [
         "line": "Door hardware from Zhongshan, China, since 1998",
         "kicker": "Website · Webseite",
         "big": "cantonlock.com",
-    }, base=["tec@cantonlock.com", "WhatsApp +1 703 967 7493"], qr=True, factory=True),
+    }, base=["tec@cantonlock.com", "WhatsApp +1 703 967 7493"], qr=True),
 ]
 
-# The production column: real factory photographs only, none with another sign or logo in frame
-# (several site photos show the old red "Hyland" sign or Chinese plates; those stay off the stand).
-# (file, crop focus 0–1 across the width, caption)
-FACTORY = [
-    ("press-shop.webp", 0.55, "01  Stamping · Stanzen"),
-    ("polishing-line.webp", 0.45, "02  Polishing · Polieren"),
-    ("factory-assembly-quality-line.webp", 0.30, "03  Assembly · Montage"),
-]
+# Product zones (client, 2026-10-16: 「可以放那个产品的图片……做的产品小图做背景……巴西逃生锁，4柱锁体，
+# 拉手，不锈钢拉手……放新产品 从仓库找到阿里巴巴热卖款，结合巴西逃生锁，阿根廷锁体……现在的留白太多了」).
+# Every tile is a real product photograph from public/images (the site's own uploads). The core
+# zones lead with the models the client's Alibaba data shows buyers ask about most
+# (docs/research/2026-09-11-alibaba-product-performance.json): 307, 311, 305, 310, 6068, 564,
+# 5836, 1073D, 587, 102, 9014S, LH1016. NEW marks the 2026-10 additions.
+# (image path under public/images, label, new?)
+P, H, BR, AR = "products/", "products-hyde/", "brazil-collection/", "argentina-collection/"
+ZONES = {
+    "back-wall": [
+        ("Panic exit devices", "Panikbeschläge",
+         "Single and double doors, side latch or top-and-bottom rods, with outside trims.",
+         [(H + "307-panic-exit-device", "307", False), (H + "311-panic-exit-device", "311", False),
+          (H + "305-fire-door-panic-exit-device", "305", False), (H + "310-panic-exit-device", "310", False),
+          (H + "308-d-d-panic-exit-device", "308-D", True), (H + "037-ps-panic-exit-device-trim", "037 PS", True)]),
+        ("Mortise lock cases", "Einsteckschlösser",
+         "Security cases with four round bolts, 85 mm centre, 50 or 60 mm backset.",
+         [(H + "lc14-85-50mm-lock-case", "LC14 85×50", False), (H + "lc04-85-60-lock-case", "LC04 85×60", False),
+          (H + "6068-mortise-lever-handle-lock", "6068", False), (H + "lc05-8560-lock-case", "LC05 8560", False),
+          (H + "lc35-8550-lock-case", "LC35 8550", False), (H + "hy006et-lock-case", "HY006ET", False)]),
+        ("Stainless steel handles", "Edelstahl-Drücker und Stoßgriffe",
+         "Lever handles on roses and pull handles for glass and timber doors.",
+         [(H + "102-glass-door-handle", "102", False), (H + "9014s-stainless-steel-handle", "9014S", False),
+          (H + "lh1016-stainless-steel-handle", "LH1016", False), (H + "9087-ss-stainless-steel-handle", "9087 SS", False),
+          (H + "8829-bl-lever-handle", "8829 BL", True), (H + "9007e-stainless-steel-handle", "9007E", False)]),
+        ("Rim locks and knob locks", "Kasten- und Knaufschlösser",
+         "Night latches, rim locks and cylindrical locks for entrance and interior doors.",
+         [(H + "564-night-latch-and-rim-lock", "564", False), (H + "5836-night-latch-and-rim-lock", "5836", False),
+          (H + "1073d-night-latch-and-rim-lock", "1073D", False), (H + "587-sset-light-duty-cylindrical-lock", "587 SSET", False),
+          (H + "d104-ss-deadbolts", "D104 SS", True), (H + "5871-sset-heavy-duty-cylindrical-lock", "5871 SSET", False)]),
+    ],
+    "side-wall": [
+        ("Panic bars for Brazil", "Barras antipânico · für Brasilien",
+         "Leading Brazilian fire-door makers buy their panic bars from us.",
+         [(BR + "br1-sk", "BR1-SK", False), (BR + "br5-s", "BR5-S", False), (BR + "br2-sk", "BR2-SK", False),
+          (BR + "br6-d", "BR6-D", False), (BR + "br1-stl", "BR1-STL", False), (BR + "br2-tk", "BR2-TK", False),
+          (BR + "br5-tk", "BR5-TK", False), (BR + "br7-t", "BR7-T", False)]),
+        ("Mortise locks for Argentina", "Cerraduras · für Argentinien",
+         "AR-4 and AR-5 lock bodies and deadlocks, with faceplate and case dimensions for every model.",
+         [(AR + "ar5-100-entero", "AR5-100", False), (AR + "ar5-102-entero", "AR5-102", False),
+          (AR + "ar5-104", "AR5-104", False), (AR + "ar5-105", "AR5-105", False), (AR + "ar5-106", "AR5-106", False),
+          (AR + "ar5-107", "AR5-107", False), (AR + "ar4-110", "AR4-110", False), (AR + "ar4-111-doble-perno", "AR4-111", False)]),
+    ],
+}
+BODY = (0.955, 0.950, 0.940)     # the warm light grey the tiles sit on
 
 _JPEG: dict[tuple, bytes] = {}
 
@@ -108,6 +144,80 @@ def photo_jpeg(name: str, aspect: float, focus: float = 0.5) -> bytes:
         im.save(buf, "JPEG", quality=95)
         _JPEG[key] = buf.getvalue()
     return _JPEG[key]
+
+
+_TILE: dict[str, bytes] = {}
+
+
+def tile_jpeg(path: str) -> bytes:
+    """A product photograph made square for a tile: the small corner mark cleared, the product
+    trimmed to its own extent and centred with even margins. Nothing in the product is touched."""
+    if path not in _TILE:
+        import io
+        from PIL import Image, ImageChops
+        im = Image.open(kit.ROOT / "public" / "images" / f"{path}.webp").convert("RGB")
+        w, h = im.size
+        # The site photos carry a small HYDE mark in one corner (top-left on most, top-right or
+        # bottom-left on some). In each corner, find the dark cluster; clear it only if it is small
+        # and isolated (a white ring around it), so a product edge reaching a corner is never touched.
+        g = im.convert("L")
+        px = g.load()
+        zone_w, zone_h = int(0.26 * w), int(0.13 * h)
+        for cx0, cy0 in ((0, 0), (w - zone_w, 0), (0, h - zone_h), (w - zone_w, h - zone_h)):
+            dark = [(x, y) for y in range(cy0, cy0 + zone_h) for x in range(cx0, cx0 + zone_w) if px[x, y] < 225]
+            if not dark:
+                continue
+            x0, y0 = min(p[0] for p in dark), min(p[1] for p in dark)
+            x1, y1 = max(p[0] for p in dark), max(p[1] for p in dark)
+            pad = int(0.025 * w)
+            ex = (max(x0 - pad, 0), max(y0 - pad, 0), min(x1 + pad, w - 1), min(y1 + pad, h - 1))
+            ring = [px[x, y] for y in range(ex[1], ex[3] + 1) for x in (ex[0], ex[2])] + \
+                   [px[x, y] for x in range(ex[0], ex[2] + 1) for y in (ex[1], ex[3])]
+            if (x1 - x0) < 0.22 * w and (y1 - y0) < 0.05 * h and min(ring) > 235:
+                im.paste((255, 255, 255), (ex[0], ex[1], ex[2] + 1, ex[3] + 1))
+                g.paste(255, (ex[0], ex[1], ex[2] + 1, ex[3] + 1))
+                px = g.load()
+        diff = ImageChops.difference(im, Image.new("RGB", im.size, (255, 255, 255))).convert("L").point(lambda v: 255 if v > 18 else 0)
+        bb = diff.getbbox() or (0, 0, w, h)
+        im = im.crop(bb)
+        side = int(max(im.size) * 1.12)
+        sq = Image.new("RGB", (side, side), (255, 255, 255))
+        sq.paste(im, ((side - im.width) // 2, (side - im.height) // 2))
+        buf = io.BytesIO()
+        sq.save(buf, "JPEG", quality=92)
+        _TILE[path] = buf.getvalue()
+    return _TILE[path]
+
+
+def draw_zones(page, X, Y, s, w: "Wall") -> None:
+    """The body of the wall: product zones on a warm grey field, each with a heading, a German
+    line, one sentence of fact and a grid of real product tiles with their model numbers."""
+    zones = ZONES[w.key]
+    top, bottom = w.header + 0.06, w.height - w.plinth - 0.06
+    left, right = 0.18, w.width - 0.18
+    gutter = 0.16
+    zw = (right - left - gutter * (len(zones) - 1)) / len(zones)
+    for i, (title, de, fact, items) in enumerate(zones):
+        zx = left + i * (zw + gutter)
+        text(page, X(zx), Y(top + 0.085), title, 0.068 * s, "semibold")
+        text(page, X(zx), Y(top + 0.145), de, 0.042 * s, "text", GREY)
+        text(page, X(zx), Y(top + 0.205), fact, 0.036 * s, "text", INK)
+        cols = 4 if len(items) > 6 else 3
+        gap = 0.03
+        label_h = 0.055
+        grid_top = top + 0.25
+        rows = (len(items) + cols - 1) // cols
+        t = min((zw - gap * (cols - 1)) / cols, (bottom - grid_top - rows * label_h - gap * (rows - 1)) / rows)
+        for j, (path, label, new) in enumerate(items):
+            cx = zx + (j % cols) * (t + gap)
+            cy = grid_top + (j // cols) * (t + label_h + gap)
+            r = pymupdf.Rect(X(cx), Y(cy), X(cx + t), Y(cy + t))
+            page.insert_image(r, stream=tile_jpeg(path), keep_proportion=True)
+            text(page, X(cx), Y(cy + t + 0.040), label, 0.034 * s, "medium")
+            if new:
+                tw = kit.text_width("NEW", 0.028 * s, "semibold") + 0.03 * s
+                page.draw_rect(pymupdf.Rect(r.x0, r.y0, r.x0 + tw, r.y0 + 0.05 * s), color=None, fill=INK, width=0)
+                text(page, r.x0 + 0.015 * s, r.y0 + 0.035 * s, "NEW", 0.028 * s, "semibold", WHITE)
 
 
 def draw_qr(page: pymupdf.Page, r: pymupdf.Rect, data: str) -> None:
@@ -191,28 +301,15 @@ def draw_cloth(page: pymupdf.Page, o: pymupdf.Point, w: Wall, s: float, proof: b
         text(page, X(mx), Y(0.53), w.lines["motto_de"], 0.070 * s, "text", GREY)
     page.draw_line((full.x0, Y(w.header)), (full.x1, Y(w.header)), color=INK, width=0.004 * s)
 
-    if w.factory:
-        cw, gap = 1.40, 0.04
-        x0 = w.width - 0.25 - cw
-        text(page, X(x0), Y(w.header + 0.165), "Our production in Zhongshan", 0.065 * s, "semibold")
-        text(page, X(x0), Y(w.header + 0.245), "Unsere Fertigung in Zhongshan", 0.048 * s, "text", GREY)
-        top, bottom = w.header + 0.29, w.height - w.plinth - 0.08
-        hero_h = (bottom - top - gap) * 0.58
-        small_w, small_h = (cw - gap) / 2, bottom - top - gap - hero_h
-        cells = [(x0, top, cw, hero_h), (x0, top + hero_h + gap, small_w, small_h),
-                 (x0 + small_w + gap, top + hero_h + gap, small_w, small_h)]
-        for (name, focus, cap), (cx, cy, cwid, chei) in zip(FACTORY, cells):
-            r = pymupdf.Rect(X(cx), Y(cy), X(cx + cwid), Y(cy + chei))
-            page.insert_image(r, stream=photo_jpeg(name, cwid / chei, focus), keep_proportion=False)
-            tab(page, r.x0, r.y1, cap, s)
+    # Body: the warm grey field and the product zones.
+    page.draw_rect(pymupdf.Rect(full.x0, Y(w.header) + 0.002 * s, full.x1, Y(w.height - w.plinth)), color=None, fill=BODY, width=0)
+    draw_zones(page, X, Y, s, w)
 
     if proof:
         # Not printed: the trim line and the zone the boards may occupy.
         trim = pymupdf.Rect(X(0), Y(0), X(w.width), Y(w.height))
         page.draw_rect(trim, color=(0.85, 0.1, 0.1), width=0.6, dashes="[4 3] 0")
-        zr = (w.width - 0.25 - 1.40 - 0.10) if w.factory else w.width - 0.05
-        zone = pymupdf.Rect(X(0.05), Y(w.header + 0.05), X(zr), Y(w.height - w.plinth - 0.05))
-        page.draw_rect(zone, color=(0.2, 0.45, 0.8), width=0.5, dashes="[2 2] 0")
+        pass
 
 
 def production(out: Path) -> list[Path]:
@@ -240,8 +337,8 @@ def proposal(out: Path) -> Path:
     A3 = pymupdf.Rect(0, 0, 1190.55, 841.89)
     page = doc.new_page(width=A3.width, height=A3.height)
     pad = 40
-    cjk(page, pad, 52, "BAU 2027 · C4.523 展位喷绘方案（展板以外的墙面）", 20, bold=True)
-    cjk(page, pad, 74, "两块整墙喷绘布，展板直接挂在布上。内容只放在楣头和底边，展板区留白，展板怎么排都不会挡字。红色虚线 = 成品边，蓝色虚线 = 展板可放区域（不印）。", 9.5, color=GREY)
+    cjk(page, pad, 52, "BAU 2027 · C4.523 展位墙面喷绘方案（第四版）", 20, bold=True)
+    cjk(page, pad, 74, "两块整墙喷绘布：楣头一句主张，中间按品类排满官网实拍产品小图并配说明，底边放公司事实与联系方式。红色虚线 = 成品边（不印）。", 9.5, color=GREY)
     # Both walls at one scale, sized so they and the notes share the sheet.
     room = A3.height - 100 - 140 - len(WALLS) * 30
     s = min((A3.width - 2 * pad) / (WALLS[0].width + 2 * BLEED), room / sum(w.height + 2 * BLEED for w in WALLS))
@@ -252,13 +349,13 @@ def proposal(out: Path) -> Path:
         draw_cloth(page, pymupdf.Point(pad, y + 8), w, s, proof=True)
         y += (w.height + 2 * BLEED) * s + 30
     notes = [
-        "材料：喷绘布（灯箱布/刀刮布按搭建方墙体），四边各出血 15 cm；文件为 1:10 矢量 PDF，放大 10 倍输出，TrimBox 即成品边。",
-        "颜色：只用墨色和白。墨色建议四色黑 C60 M50 Y50 K100（底边），文字同色；不用金色、不加渐变。照片按原样输出，不调色、不 AI 放大。",
+        "材料：喷绘布（灯箱布/刀刮布按搭建方墙体），四边各出血 15 cm；文件为 1:10 PDF，放大 10 倍输出，TrimBox 即成品边。底色暖灰、小图白底，只用墨色和白；照片原样输出，不调色、不 AI 放大。",
         "墙高 2.50 m、楣头 0.70 m、底边 0.30 m 是按标准展位假设的，必须由搭建方确认真实尺寸后重出文件（改 WALLS 一行即可）。",
-        "侧墙通道端 1.40 m 宽是「工厂实拍」栏：冲压、抛光、装配三张官网实拍，挑的是画面里没有旧招牌、没有中文标牌的；这一段不挂展板。",
-        "二维码（侧墙右上，46 cm）指向 cantonlock.com/bau-2027/（规格书 + 预约见面），已用解码器验证。底边：后墙为公司事实，侧墙为邮箱和 WhatsApp。",
-        "楣头主张（后墙 Your brand. Our factory. / 侧墙 Made to your drawing.）取自官网已确认事实：多数产品以客户品牌出厂、带图纸或样品即可开模。不写产能、不写其他认证。",
-        "建议（不印）：在展位开放角放一扇独立实物演示门（0.90×2.10 m 门扇带门框，装逃生锁和外执手），不靠墙以免挡住楣头。头部品牌都把产品装在真门上演示。",
+        "产品区全部是官网实拍小图（角上的小标已擦，产品本身未动）：后墙 4 区＝逃生锁、四柱锁体、不锈钢执手/拉手、外装锁/球锁，以阿里巴巴询盘最多的型号为主；侧墙 2 区＝巴西逃生锁、阿根廷锁体。NEW＝10 月新品。",
+        "展板：布面已经排满产品，原有展板如果还要挂墙会盖住小图——建议放在展台前台或独立支架上；若一定挂墙，请给我展板尺寸和位置，我在布上留出空位。",
+        "二维码（侧墙右上，46 cm）指向 cantonlock.com/bau-2027/（规格书 + 预约见面），已解码验证。底边：后墙为公司事实，侧墙为邮箱和 WhatsApp。",
+        "楣头主张（后墙 Your brand. Our factory. / 侧墙 Made to your drawing.）与各区说明句都取自官网已确认事实；不写产能、不写其他认证。电子锁：产品库里没有可确认的电子锁，1073D 未标「电子」，待确认。",
+        "建议（不印）：在展位开放角放一扇独立实物演示门（0.90×2.10 m 门扇带门框，装逃生锁和外执手），不靠墙以免挡住楣头。",
     ]
     for i, n in enumerate(notes):
         cjk(page, pad, A3.height - 24 - (len(notes) - 1 - i) * 15, f"{i + 1}. {n}", 8.6, color=INK)
