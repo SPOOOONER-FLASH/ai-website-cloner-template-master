@@ -17,7 +17,7 @@ Boards are ASSUMED: 0.60 × 0.85 m, bottom edge 1.00 m above the floor, 7 on the
 Writes <out-dir>/ (default docs/design-references/bau-2027-booth-concepts/):
   concept-<A-D>-scene.png    the stand from the aisle
   concept-<A-D>-walls.png    both walls flat, with the boards
-  BAU2027-四个方向对比.png     the four scenes on one sheet, with a line on each idea
+  BAU2027-方向对比.png        all scenes on one sheet, with a line on each idea
 Every photograph is a real one from public/images; every sentence is a fact the site already
 publishes (content/bau-2027.json, src/components/site/ExportMap.tsx, the product records).
 """
@@ -283,11 +283,108 @@ def concept_d(page, wall, w):
     plinth(page, w, items=("Since 1998", "ISO 9001:2015 stamping plant", "OEM & private label", "MOQ 300–5,000 pcs"))
 
 
+_CUT: dict[str, bytes] = {}
+
+
+def cutout(path: str) -> bytes:
+    """The product on a transparent ground: the tile (corner mark cleared, trimmed), then the white
+    background removed by flood fill from the edges only, so white or silver parts of the product
+    itself stay. Soft 1.5 px edge."""
+    if path not in _CUT:
+        im = Image.open(io.BytesIO(tile(path))).convert("RGB")
+        w, h = im.size
+        marker = (255, 0, 255)
+        filled = im.copy()
+        for seed in [(0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1), (w // 2, 0), (w // 2, h - 1), (0, h // 2), (w - 1, h // 2)]:
+            if filled.getpixel(seed) != marker and min(filled.getpixel(seed)) > 225:
+                ImageDraw.floodfill(filled, seed, marker, thresh=26)
+        bg = Image.new("L", (w, h), 0)
+        px, bp = filled.load(), bg.load()
+        for y in range(h):
+            for x in range(w):
+                if px[x, y] == marker:
+                    bp[x, y] = 255
+        alpha = Image.eval(bg.filter(ImageFilter.GaussianBlur(1.5)), lambda v: 255 - v)
+        rgba = im.copy()
+        rgba.putalpha(alpha)
+        buf = io.BytesIO()
+        rgba.save(buf, "PNG")
+        _CUT[path] = buf.getvalue()
+    return _CUT[path]
+
+
+HEROES = {  # (image, model, name EN, name DE, spec chips from the record or the site's own copy, new?)
+    "back": [
+        ("products-hyde/307-panic-exit-device", "307", "Panic exit device", "Panikstange",
+         ["Aluminum alloy body", "1000 mm bar", "Left or right hand", "MOQ 50 pcs"], False),
+        ("products-hyde/lc14-85-50mm-lock-case", "LC14", "Mortise lock case", "Einsteckschloss",
+         ["Four round bolts", "85 mm centre", "50 mm backset", "Euro profile"], False),
+        ("products-hyde/102-glass-door-handle", "102", "Pull handle", "Stoßgriff",
+         ["304 stainless steel", "600 mm · Ø32 mm", "Glass 10–12 mm", "Satin + polished"], False),
+    ],
+    "side": [
+        ("products-hyde/8829-bl-lever-handle", "8829 BL", "Magnetic mortise lever lock", "Magnet-Einsteckschloss",
+         ["Magnetic latch", "160 mm lever", "Matte black", "Slide to lock"], True),
+        ("brazil-collection/br1-sk", "BR series", "Panic bars for Brazil", "Barras antipânico",
+         ["Single or double leaf", "Side latch or rods", "Outside lever option"], False),
+    ],
+}
+
+
+def concept_e(page, wall, w):
+    """E · Product heroes: the header becomes a row of ink panels, one product each — big real
+    photograph, model, name, spec chips (after the BAFB stand the client sent, in HYDE's ink)."""
+    page.draw_rect(page.rect, color=None, fill=WHITE, width=0)
+    band = HEADER + 0.02
+    page.draw_rect(pymupdf.Rect(0, 0, w * S, band * S), color=None, fill=INK, width=0)
+    # a warm light line under the header, as a lit edge
+    for k in range(12):
+        a = 1 - k / 12
+        c = (1.0, 0.97 - 0.02 * a, 0.90 - 0.10 * a)
+        mix = tuple(1 - (1 - ci) * a * 0.9 for ci in c)
+        page.draw_line((0, (band + 0.002 * k) * S), (w * S, (band + 0.002 * k) * S), color=mix, width=0.0025 * S)
+    heroes = HEROES[wall]
+    pw = w / len(heroes)
+    light = (0.74, 0.72, 0.69)
+    for i, (path, model, name, de, chips, new) in enumerate(heroes):
+        x0 = i * pw
+        if i:
+            page.draw_line((x0 * S, 0.06 * S), (x0 * S, (band - 0.06) * S), color=(0.30, 0.29, 0.27), width=0.003 * S)
+        mark(page, x0 + 0.18, 0.07, 0.055, hm.WHITE)
+        if new:
+            nw = kit.text_width("NEW", 0.03 * S, "semibold") / S + 0.05
+            page.draw_rect(pymupdf.Rect((x0 + 0.18) * S, 0.15 * S, (x0 + 0.18 + nw) * S, 0.205 * S), color=None, fill=WHITE, width=0)
+            t(page, x0 + 0.205, 0.192, "NEW", 0.03, "semibold", INK)
+        t(page, x0 + 0.18, 0.33, model, 0.13, "display-semibold", WHITE)
+        t(page, x0 + 0.18, 0.40, name, 0.042, "medium", WHITE)
+        t(page, x0 + 0.18, 0.45, de, 0.034, "text", light)
+        # chips, two per row
+        cx, cy = x0 + 0.18, 0.49
+        for j, c in enumerate(chips):
+            cw = kit.text_width(c, 0.026 * S, "medium") / S + 0.06
+            if cx + cw > x0 + pw * 0.52:
+                cx, cy = x0 + 0.18, cy + 0.065
+            r = pymupdf.Rect(cx * S, cy * S, (cx + cw) * S, (cy + 0.05) * S)
+            page.draw_rect(r, color=(0.55, 0.53, 0.50), width=0.002 * S, radius=0.5)
+            t(page, cx + 0.03, cy + 0.035, c, 0.026, "medium", WHITE)
+            cx += cw + 0.02
+        # the product, large, on the right half of the panel
+        ix0, ix1 = x0 + pw * 0.50, x0 + pw - 0.10
+        page.insert_image(pymupdf.Rect(ix0 * S, 0.05 * S, ix1 * S, (band - 0.05) * S), stream=cutout(path), keep_proportion=True)
+    # under the boards: the figures row, as on the home page
+    if wall == "back":
+        facts_row(page, 0.30, w - 0.30, LOW_TOP + 0.05, FIGURES, big=0.08)
+    else:
+        facts_row(page, 0.30, w - 0.30, LOW_TOP + 0.05, [("Germany", "office in Brohl-Lützing"), ("OEM", "under your brand"), ("C4.523", "BAU 2027, Messe München")], big=0.08)
+    plinth(page, w, items=("BAU 2027 · Stand C4.523", "Your brand. Our factory.", "cantonlock.com"))
+
+
 CONCEPTS = [
     ("A", "杂志大片", "Magazine", concept_a, "低密度。一句超大标题、一张门场景大图、一行「工厂数据」，和官网首页同一套语言。最安静、最像品牌。"),
     ("B", "墨色画廊", "Ink gallery", concept_b, "中密度。墙面整体墨色，白色展板像画廊里的作品；后墙下方是官网同款出口点阵地图和德国办事处。最醒目、最有气场。"),
     ("C", "工程图纸", "Technical", concept_c, "中密度。10 cm 淡网格 + 真实尺寸线稿与实拍并排；侧墙讲「图纸→开模→样品→量产」四步。最体现工厂专业度。"),
     ("D", "产品目录", "Catalogue", concept_d, "高密度。展板下方一整条产品小图带（热卖款、四柱锁体、执手、巴西、阿根廷）。信息最多，最像卖场。"),
+    ("E", "单品主视觉楣头", "Product heroes", concept_e, "中高密度。参考广交会 BAFB：楣头墨色分 5 格，每格一个主推单品（大图+型号+规格标签），下沿一道暖光；展板下方放工厂数据。产品最突出、远看最清楚。"),
 ]
 
 
@@ -463,19 +560,28 @@ def main() -> None:
         sc.save(out / f"concept-{key}-scene.png", optimize=True)
         scenes.append((key, zh, en, idea, sc))
         print(f"{key} {en}: done")
-    # comparison sheet, 2 × 2
-    tw, th = 1200, 733
-    sheet = Image.new("RGB", (2 * tw + 90, 2 * (th + 150) + 140), (255, 255, 255))
+    # comparison sheet, 3 + 2
+    tw, th = 1000, 611
+    cols = 3
+    rows = (len(scenes) + cols - 1) // cols
+    sheet = Image.new("RGB", (cols * tw + (cols + 1) * 30, rows * (th + 170) + 140), (255, 255, 255))
     d = ImageDraw.Draw(sheet)
-    d.text((30, 30), "BAU 2027 · C4.523 墙面喷绘：四个方向（同一视角，展板按现有位置挂墙）", font=font(40, True), fill=INK_RGB)
-    d.text((30, 86), "展板为占位（0.60×0.85 m，下沿离地 1.00 m，后墙 7 块、侧墙 4 块，按假设）；人物 1.75 m 作比例参照。全部图片为官网实拍，文字均为官网已发布事实。", font=font(22), fill=(110, 108, 103))
+    d.text((30, 30), f"BAU 2027 · C4.523 墙面喷绘：{len(scenes)} 个方向（同一视角，展板按现有位置挂墙）", font=font(40, True), fill=INK_RGB)
+    d.text((30, 86), "展板为占位（0.60×0.85 m，下沿离地 1.00 m，后墙 7 块、侧墙 4 块，按假设）；人物约 1.7 m 作比例参照。全部图片为官网实拍，文字均为官网已发布事实。", font=font(22), fill=(110, 108, 103))
     for i, (key, zh, en, idea, sc) in enumerate(scenes):
-        x, y = 30 + (i % 2) * (tw + 30), 140 + (i // 2) * (th + 150)
+        x, y = 30 + (i % cols) * (tw + 30), 140 + (i // cols) * (th + 170)
         sheet.paste(sc.resize((tw, th), Image.LANCZOS), (x, y))
-        d.text((x, y + th + 14), f"{key}  {zh} · {en}", font=font(34, True), fill=INK_RGB)
-        d.text((x, y + th + 64), idea, font=font(22), fill=(80, 78, 74))
-    sheet.save(out / "BAU2027-四个方向对比.png", optimize=True)
-    print(out / "BAU2027-四个方向对比.png")
+        d.text((x, y + th + 12), f"{key}  {zh} · {en}", font=font(30, True), fill=INK_RGB)
+        # wrap the idea to the cell width
+        line, yy = "", y + th + 56
+        for ch in idea:
+            if d.textlength(line + ch, font=font(20)) > tw:
+                d.text((x, yy), line, font=font(20), fill=(80, 78, 74))
+                line, yy = "", yy + 28
+            line += ch
+        d.text((x, yy), line, font=font(20), fill=(80, 78, 74))
+    sheet.save(out / "BAU2027-方向对比.png", optimize=True)
+    print(out / "BAU2027-方向对比.png")
 
 
 if __name__ == "__main__":
