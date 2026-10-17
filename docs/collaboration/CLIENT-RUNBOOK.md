@@ -19,7 +19,7 @@
 
 ## 现在要做的（2026-10-17）：PR #22 已合并，发布并装上爬虫拦截（约 15 分钟）
 
-**先改 Cloudflare 规则（约 3 分钟）：** 你 10-17 决定不再封中国 IP，只拦中国 AI 爬虫。把规则 `Block CN and CN crawlers` 的表达式换掉，见桌面 `hyde` → `00-先看这里-人工待办` → `2026-10-17-手动操作-Cloudflare改为只拦中国AI爬虫.docx`。一键屏蔽 AI 爬虫的开关继续保持关闭。然后按顺序在 **johns 电脑**上做这三步，云端连不上 GitLab：
+**先改 Cloudflare 规则（约 3 分钟）：** 你 10-17 决定不封中国真人访客，但拦掉所有中国爬虫，包括豆包、文心、GLM、DeepSeek、Kimi、元宝、WorkBuddy。把原规则的表达式整段换掉，见桌面 `hyde` → `00-先看这里-人工待办` → `2026-10-17-手动操作-Cloudflare改为只拦中国AI爬虫.docx`。一键屏蔽 AI 爬虫的开关继续保持关闭。然后按顺序在 **johns 电脑**上做这三步，云端连不上 GitLab：
 
 1. HYDE 发布：在 HYDE 仓库目录运行 `npm run release:hyde`。它会构建、经 GitLab 部署，并推到 GitHub。成功的标志是最后打印出版本号 `vYYYY.MM.DD.N`。
 2. 雷茵发布：运行 `npm run release:rayen`。发布后雷茵站上的联系邮箱会变成 tec@cantonlock.com。
