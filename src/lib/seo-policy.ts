@@ -97,7 +97,7 @@ const ASSISTANT_CRAWLERS = [
  * Qihoo 360, Huawei (PetalBot), Zhipu (ChatGLM-Spider).
  *
  * robots.txt is a request, not a lock. The enforcement is the nginx file above and the
- * Cloudflare rule in docs/collaboration/2026-10-16-手动操作-屏蔽中国AI爬虫.md; this list keeps
+ * Cloudflare rule in docs/collaboration/archive/2026-10-16-手动操作-屏蔽中国AI爬虫.md; this list keeps
  * the three in step (seo-policy.test.ts fails if nginx misses a name). RAYEN (rayen.cn)
  * writes its own robots.txt and is not affected.
  */
