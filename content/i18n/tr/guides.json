@@ -267,7 +267,7 @@
     ],
     "sourceHash": {
       "title": "44cb79616657",
-      "summary": "0b705c3c94a8",
+      "summary": "7720ea4056c3",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
       "body": "fb2446f018d3",
@@ -397,7 +397,7 @@
       "Bir öğretmenin bir kapıyı koridora karşı kilitlemesi gerekir. Depo ya da giriş fonksiyonuyla anahtarı kullanmak için koridora, yani tehdidin bulunabileceği tek yere çıkması gerekir. Derslik fonksiyonu dış trimin odanın içinden kilitlenip açılmasına izin verir; böylece kapı kimse onu terk etmeden kilitlenir. İç kol her zaman dili geri çeker; dolayısıyla oda yine de boşaltılabilir.",
       "Adıyla bilinmeye değer bir fonksiyondur; çünkü davranışı kelimelerle tarif eden bir şartname genellikle bir giriş fonksiyonu ve bir not alır.",
       "## Kataloğumuz gerçekte ne taşıyor",
-      "Kataloğumuzdaki 613 kayıtta, özellik satırlarının kendisinden sayılmış fonksiyon dağılımı.",
+      "Kataloğumuzdaki 616 kayıtta, özellik satırlarının kendisinden sayılmış fonksiyon dağılımı.",
       "| Fonksiyon | Model |\n| --- | --- |\n| Giriş, dışarıdan anahtarlı | 78 |\n| Mahremiyet, banyo, içeride çevirme düğmesi | 27 |\n| Geçiş | 18 |\n| Tek, çift silindir ya da kendiliğinden kilitleme | 21 |\n| Giriş, mahremiyet, geçiş ya da sabit kol (seçilebilir) | 8 |\n| Derslik | 1 |\n| Depo | 1 |\n| Ara kapı (communication) | 1 |\n| Giriş ve ara kapı | 1 |\n| Çıkış dili | 1 |",
       "Dürüstçe okunduğunda belirli bir şey söyler: giriş, mahremiyet ve geçişte güçlüyüz ve geniş bir kurumsal fonksiyon yelpazesi değiliz. Bir proje kırk açıklıkta derslik ve depo fonksiyonuna ihtiyaç duyuyorsa her birinden bir modelimiz var; tasarımı bize göre kurmadan önce sorun.",
       "Bu tabloyu yayımlamak, eksiksiz bir fonksiyon seti ima edip boşluğu liste aşamasında keşfetmekten daha faydalıdır. Sipariş kodu eki, bir fonksiyonu olan modellerde fonksiyonu taşır (`ET` giriş, `BK` mahremiyet, `PS` geçiş); yani `201 PBET`, 201 modeli, parlak pirinç, giriş demektir.",
@@ -440,7 +440,7 @@
       },
       {
         "question": "Kataloğunuz gerçekte hangi fonksiyonları taşıyor?",
-        "answer": "Kataloğumuzdaki 613 kayıtta: giriş 78, mahremiyet 27, geçiş 18, tek/çift silindir ya da kendiliğinden kilitleme 21, seçilebilir fonksiyon 8; derslik, depo, ara kapı, giriş ve ara kapı ile çıkış dili ise birer model. Giriş, mahremiyet ve geçişte güçlüyüz ve geniş bir kurumsal fonksiyon yelpazesi değiliz; kırk açıklığı bize göre tasarlamadan önce sorun."
+        "answer": "Kataloğumuzdaki 616 kayıtta: giriş 78, mahremiyet 27, geçiş 18, tek/çift silindir ya da kendiliğinden kilitleme 21, seçilebilir fonksiyon 8; derslik, depo, ara kapı, giriş ve ara kapı ile çıkış dili ise birer model. Giriş, mahremiyet ve geçişte güçlüyüz ve geniş bir kurumsal fonksiyon yelpazesi değiliz; kırk açıklığı bize göre tasarlamadan önce sorun."
       }
     ],
     "sourceHash": {
@@ -448,8 +448,8 @@
       "summary": "3e4ccb83c3b5",
       "seoTitle": "6dda3d33e6ef",
       "seoDescription": "e4c4d5f6d587",
-      "body": "65aee5b63d97",
-      "faq": "055019d2670b"
+      "body": "ece2ad5d5cab",
+      "faq": "36a1edbcd409"
     }
   },
   "container-loading-door-hardware-2026": {
@@ -894,7 +894,7 @@
       },
       {
         "question": "Kilitlerinizin kaçı bu ölçüleri yayımlıyor?",
-        "answer": "255 kilit ürününden: backset 113 (%44), kapı kalınlığı 77 (%30), aks mesafesi 37 (%15), ön plaka 7 (%3), gövde ölçüsü 8 (%3). En pahalı arızalara yol açan iki ölçü en az yayımladığımız ikisidir. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
+        "answer": "257 kilit ürününden: backset 113 (%44), kapı kalınlığı 77 (%30), aks mesafesi 37 (%14), ön plaka 8 (%3), gövde ölçüsü 8 (%3). En pahalı arızalara yol açan iki ölçü en az yayımladığımız ikisidir. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
       },
       {
         "question": "Birebir yedek almak için ne göndermeliyim?",
@@ -911,7 +911,7 @@
       "seoTitle": "cdc77c60bb8f",
       "seoDescription": "c137bf8f8240",
       "body": "425fc059b14e",
-      "faq": "f1f72a2d0d71"
+      "faq": "71ae9c8aaf7d"
     }
   },
   "door-closer-mounting-positions-2026": {
@@ -1591,7 +1591,7 @@
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
       "body": "f895a9f586f0",
-      "faq": "276ab6d85670"
+      "faq": "9cd7a5bca8f6"
     }
   },
   "exit-device-locking-method-2026": {
@@ -1976,7 +1976,7 @@
     ],
     "sourceHash": {
       "title": "ca19e24bc00b",
-      "summary": "0d5137abc4eb",
+      "summary": "e8aef135116a",
       "seoTitle": "75373f19512f",
       "seoDescription": "17d1d81eb4c7",
       "body": "81815c180c5b",
@@ -2104,8 +2104,8 @@
       "Gruplama genellikle birkaç yüz satırı sekiz ya da on iki gerçek kaleme ve bir avuç tekil kaleme indirir; tekil kalemler en yakın gruba yuvarlanmak yerine kendi konuşmalarını hak eder. Grupları sipariş edin, tekil kalemleri de tekil kalem olarak sipariş edin.",
       "Sonra toplamı kontrol edin. Keşifteki kanat sayısı siparişteki donanım seti sayısına eşit olmalıdır. Bu, yazılamayacak kadar bariz gelir ve bir yenileme işindeki en yaygın tek aritmetik hatadır, çünkü çift kanatlar tek sayılır ve dolap kapıları tamamen unutulur.",
       "## Kataloğumuzun sizin için neyi cevaplayıp neyi cevaplayamayacağı",
-      "Bir keşif, tedarikçinin cevaplaması gereken sorular üretir. 613 HYDE katalog kaydı genelinde, yayımlanmış bir kaydın şu anda kimse bir çizim açmadan çözebildikleri şunlardır:",
-      "| Keşif alanı | Bunu yayımlayan ürünler |\n| --- | --- |\n| Kapı kalınlığı aralığı | 613'ün 216'sı |\n| Yön | 613'ün 184'ü |\n| Backset | 613'ün 182'si |\n| Aks mesafesi | 613'ün 44'ü |\n| Ön alın ölçüsü ve biçimi | 613'ün 7'si |",
+      "Bir keşif, tedarikçinin cevaplaması gereken sorular üretir. 616 HYDE katalog kaydı genelinde, yayımlanmış bir kaydın şu anda kimse bir çizim açmadan çözebildikleri şunlardır:",
+      "| Keşif alanı | Bunu yayımlayan ürünler |\n| --- | --- |\n| Kapı kalınlığı aralığı | 616'nın 216'sı |\n| Yön | 616'nın 184'ü |\n| Backset | 616'nın 182'si |\n| Aks mesafesi | 616'nın 44'ü |\n| Ön alın ölçüsü ve biçimi | 616'nın 7'si |",
       "Son satırı önceden bilmek işe yarar. Ön alın ölçüleri 8 üründe yayımlanıyor. Keşfiniz, yedek kilidin ön alınının mevcut kilit yuvasını örtüp örtmediğine bağlıysa katalog bunu çoğu model için cevaplamaz. Cevap teyitli bir çizimden ya da fiziksel bir numuneden gelmelidir. Montaj anında değil, erkenden sorun.",
       "Bu, bir sıfatla değil bir sayıyla ifade edilmiş bir sınırlamadır; bu sitedeki her eksiklik böyle yazılır. Bir yenileme işi için ölçmeye başlamadan önce size söyleyebileceğimiz en yararlı tek şey de budur."
     ],
@@ -2132,7 +2132,7 @@
       },
       {
         "question": "Canton Hyland kataloğu bir keşiften neyi cevaplayabilir?",
-        "answer": "613 HYDE kaydından kapı kalınlığı aralığı 216'sında, yön 184'ünde, backset 182'sinde, aks mesafesi 44'ünde, ön alın ölçüsü ve biçimi ise 7'sinde yayımlanıyor. Yedek ön alının mevcut kilit yuvasını örtmesi gerekiyorsa montajdan önce teyitli bir çizim ya da numune isteyin."
+        "answer": "616 HYDE kaydından kapı kalınlığı aralığı 216'sında, yön 184'ünde, backset 182'sinde, aks mesafesi 44'ünde, ön alın ölçüsü ve biçimi ise 7'sinde yayımlanıyor. Yedek ön alının mevcut kilit yuvasını örtmesi gerekiyorsa montajdan önce teyitli bir çizim ya da numune isteyin."
       }
     ],
     "sourceHash": {
@@ -2140,8 +2140,8 @@
       "summary": "af8752842c02",
       "seoTitle": "674b9de85346",
       "seoDescription": "13933819ebd7",
-      "body": "0c7340a898b5",
-      "faq": "12f08e378d12"
+      "body": "d8562ac13025",
+      "faq": "843c742934aa"
     }
   },
   "hardware-warranty-what-it-covers-2026": {
@@ -2844,7 +2844,7 @@
       "seoTitle": "2a8a61475200",
       "seoDescription": "7c5a3483bd71",
       "body": "3c3f326e5dc9",
-      "faq": "d83c6edc7268"
+      "faq": "d8e279c6c6c0"
     }
   },
   "powder-coating-and-ral-2026": {
@@ -2892,9 +2892,9 @@
       "İki tarafın imzaladığı fiziksel bir referans numune; uyuşmazlıkları gerçekten çözen satır budur. Böylece her parti, son partinin hatırasıyla değil numuneyle karşılaştırılır.",
       "Uygulama gerektiriyorsa korozyon sınıfını ve film kalınlığı aralığını ekleyin ve hangi yüzeylerin maskelendiğini belirtin.",
       "## Ne yayımlıyoruz, ne yayımlamıyoruz",
-      "613 HYDE katalog kaydında 326'sı bir kaplama satırı taşıyor. Kaplama adları tam olarak normalleştirilmiş değil: aynı kaplama farklı kayıtlarda \"Satin Nickel (SN)\", \"Satin nickel\" ve \"SN\" olarak görünüyor. Bu, bir şartname sorunu olmadan önce bir veri sorunudur.",
+      "616 HYDE katalog kaydının 330'u bir kaplama satırı taşıyor. Kaplama adları tam olarak normalleştirilmiş değil: aynı kaplama farklı kayıtlarda \"Satin Nickel (SN)\", \"Satin nickel\" ve \"SN\" olarak görünüyor. Bu, bir şartname sorunu olmadan önce bir veri sorunudur.",
       "Bazı satırlar toz boyayı adlandırıyor, bazıları yalnızca \"paint\" ya da \"painting\" diyor, bazıları ise toz boya mı, yaş boya mı, siyah nikel kaplama mı yoksa PVD mi olduğunu belirtmeden siyah bir kaplamayı adlandırıyor. Bu proseslerin onarım yolları farklıdır; bu yüzden bir sipariş için prosesin teyit edilmesi gerekir.",
-      "613 HYDE kaydında tek bir RAL numarası yok. Belirli bir renk önemliyse kodu ve prosesi üretim kayıtlarına göre teyit etmemizi isteyin.",
+      "616 HYDE kaydında tek bir RAL numarası yok. Belirli bir renk önemliyse kodu ve prosesi üretim kayıtlarına göre teyit etmemizi isteyin.",
       "Eksik budur, sıfatlarla değil sayılarla belirtilmiş olarak; ve paslanmaz ve zamak kaliteleriyle aynı şekilde kapatılıyor: satırların ne demesi gerektiğinden değil, üretim kayıtlarından. O zamana kadar, siparişinizde bir kaplama önemliyse onu yukarıdaki dört satırla isteyin ve her birini katalogla değil parçayla teyit etmemizi isteyin."
     ],
     "faq": [
@@ -2928,7 +2928,7 @@
       "summary": "b021e0487733",
       "seoTitle": "ac9904bc8b64",
       "seoDescription": "5a5c6778a1e7",
-      "body": "aae4c4679ea0",
+      "body": "2df8a7a44ec1",
       "faq": "826feadcde73"
     }
   },
@@ -3005,11 +3005,11 @@
     ],
     "sourceHash": {
       "title": "035bcbc4baf9",
-      "summary": "6c313098793c",
+      "summary": "3dfafc3944fa",
       "seoTitle": "92d83c3b55dd",
       "seoDescription": "1c754230aa01",
-      "body": "b39896bc9088",
-      "faq": "ed006bfea587"
+      "body": "be9fb7465b99",
+      "faq": "63b4aaadd6df"
     }
   },
   "samples-and-incoming-inspection-2026": {
@@ -3579,8 +3579,8 @@
       "summary": "3f21b6143e21",
       "seoTitle": "76f2f68626fd",
       "seoDescription": "ff5f64149058",
-      "body": "e05f1e0d44fa",
-      "faq": "1d859508aa43"
+      "body": "b558bfec61ba",
+      "faq": "f3a793c0d287"
     }
   },
   "universal-vs-handed-hardware-2026": {

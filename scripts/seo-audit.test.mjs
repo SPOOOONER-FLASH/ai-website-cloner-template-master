@@ -515,6 +515,16 @@ test("reports blocked render assets and public pages omitted from an indexable s
   });
 });
 
+test("a named crawler's Disallow: / is not read as a site-wide block", () => {
+  withIndexableFixture((state) => {
+    state.robots += "\nUser-Agent: Bytespider\nDisallow: /\n\nUser-Agent: Baiduspider\nDisallow: /\n";
+  }, (result) => {
+    const codes = issueCodes(result);
+    assert.equal(codes.includes("staging-page-indexable"), false);
+    assert.equal(codes.includes("staging-sitemap-not-empty"), false);
+  });
+});
+
 test("reports an indexable sitemap URL that has no exported canonical page", () => {
   withIndexableFixture((state) => {
     state.sitemap = state.sitemap.replace(

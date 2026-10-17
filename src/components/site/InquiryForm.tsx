@@ -131,6 +131,8 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const searchParams = useSearchParams();
   const [product, setProduct] = useState(() => queryValue(searchParams, "product"));
   const [model, setModel] = useState(() => queryValue(searchParams, "model"));
+  /* Requirements box: empty unless a tool link (the euro cylinder calculator) sent `note`. */
+  const [message, setMessage] = useState("");
   /* The article a quote link came from (`#from=guides/…`), sent with the lead so the export team sees which guide sold it. */
   const [sourceArticle, setSourceArticle] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -154,6 +156,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     setProduct(prefill.product);
     setModel(prefill.model);
     setSourceArticle(prefill.from);
+    if (prefill.note) setMessage(prefill.note);
     /* A fragment like #model=… names no element, so the browser keeps the previous page's scroll
        position and the buyer lands near the footer. Take them to the form they came for. */
     /* Deferred: the router's own scroll handling for the hash runs after this effect. */
@@ -257,6 +260,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       form.reset();
       setProduct("");
       setModel("");
+      setMessage("");
       setFallback("");
       setStatus("success");
       setStatusMessage(text.success);
@@ -359,6 +363,8 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         <textarea
           className={`${FIELD_CLASS} min-h-160 resize-y`}
           name="message"
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
           placeholder={text.placeholder}
           required
         />

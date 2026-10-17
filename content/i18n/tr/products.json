@@ -587,10 +587,10 @@
     }
   },
   "037-panic-exit-device-trim": {
-    "name": "Panik Çıkış Cihazı Dış Kolu",
-    "summary": "Panik bar için dış kol. Anahtarla kilitleme ve açma.",
+    "name": "Panik Çıkış Cihazı Dış Topuzu",
+    "summary": "Panik bar için dış topuz takımı. Anahtar topuzu kilitler ve açar.",
     "features": [
-      "Panik bar için dış kol",
+      "Panik bar için dış topuz",
       "Anahtarla kilitleme ve açma",
       "Kare mil uzunluğu kapı kalınlığına göre ayarlanabilir",
       "Çeşitli renk seçenekleri"
@@ -598,7 +598,7 @@
     "specs": [
       {
         "label": "Type",
-        "value": "Dış kol · panik çıkış cihazları için dış kol"
+        "value": "Dış topuz · panik çıkış cihazları için dış topuz"
       },
       {
         "label": "Material",
@@ -617,15 +617,68 @@
         "value": "35–55 mm"
       }
     ],
-    "seoTitle": "037 Panik Çıkış Cihazı Dış Kolu, demir + paslanmaz çelik | Canton Hyland",
-    "seoDescription": "037 Panik Çıkış Cihazı Dış Kolu: demir + paslanmaz çelik. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "seoTitle": "037 Panik Çıkış Cihazı Dış Topuzu, demir + paslanmaz çelik | Canton Hyland",
+    "seoDescription": "037 Panik Çıkış Cihazı Dış Topuzu: demir + paslanmaz çelik. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
       "name": "cf2c2ed4be14",
-      "summary": "9105612bf15d",
+      "summary": "ab9fb8555235",
       "description": "dd29ecf524b0",
-      "features": "66a39e658843",
-      "specs": "f972357355bb"
+      "features": "c7c06416b137",
+      "specs": "b1c4fc3e38b3"
     }
+  },
+  "037-ps-panic-exit-device-trim": {
+    "name": "Panik Çıkış Cihazı Dış Topuzu",
+    "summary": "Panik bar için dış geçiş topuzu. Anahtar yok: topuz kapıyı dışarıdan her zaman açar, panik bar ise içeriden açar.",
+    "features": [
+      "Panik bar için dış topuz, geçiş fonksiyonu",
+      "Silindir yok: dışarıdan serbest giriş, içeriden panik barla çıkış",
+      "Kapının içinden panik cihazına geçen kare mil ve iki bağlantı saplaması",
+      "Kapı kenarına gelecek tarafı işaretli montaj plakası"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Dış topuz · panik çıkış cihazları için dış geçiş topuzu"
+      },
+      {
+        "label": "Function",
+        "value": "Geçiş: dış topuz her zaman serbest, silindirsiz"
+      },
+      {
+        "label": "Material",
+        "value": "Demir topuz, paslanmaz çelik rozet"
+      },
+      {
+        "label": "Finish",
+        "value": "Saten nikel kaplama; talep üzerine diğer kaplamalar"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "75 mm"
+      },
+      {
+        "label": "Diameter",
+        "value": "57,5 mm (topuz)"
+      },
+      {
+        "label": "Projection",
+        "value": "Kapı yüzeyinden 78,5 mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35–55 mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "cf2c2ed4be14",
+      "summary": "3e93538ca46b",
+      "description": "dd29ecf524b0",
+      "features": "e523eafb7392",
+      "specs": "90b1a0852fde"
+    },
+    "seoTitle": "037 PS Panik Çıkış Cihazı Dış Topuzu | Canton Hyland",
+    "seoDescription": "037 PS Panik Çıkış Cihazı Dış Topuzu: demir + paslanmaz çelik. Fabrikadan doğrudan; numune ve teklif talep üzerine."
   },
   "039-panic-exit-device-trim": {
     "name": "Panik Çıkış Cihazı Dış Kolu",

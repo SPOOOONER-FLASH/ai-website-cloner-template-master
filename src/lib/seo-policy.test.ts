@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildLocaleSitemapEntries, buildRobotsRules } from "./seo-policy.ts";
+import { readFileSync } from "node:fs";
+import { BLOCKED_CRAWLERS, buildLocaleSitemapEntries, buildRobotsRules } from "./seo-policy.ts";
 import { hasSpanishMirror } from "./spanish-mirror.ts";
 import { localisedHref } from "./spanish-mirror.ts";
 
@@ -16,6 +17,27 @@ test("the launch robots policy keeps render assets crawlable and the CMS private
   assert.equal(disallow.includes("/_next/"), false);
   // the root payload (/__next._tree.txt) is not matched by /*/__next., which needs a directory level
   assert.ok(disallow.includes("/__next.") && disallow.includes("/*/__next."));
+});
+
+/*
+  Client, 2026-10-16: keep Chinese search and AI crawlers out. robots.txt only asks; the
+  nginx file refuses. A name added to one and not the other is a hole nobody would notice,
+  so both are checked from the one list.
+*/
+test("blocked crawlers are refused in robots.txt and by nginx, and assistants stay allowed", () => {
+  const rules = buildRobotsRules(true);
+  for (const name of BLOCKED_CRAWLERS) {
+    const group = rules.find((rule) => rule.userAgent === name);
+    assert.ok(group, `${name} has no robots group`);
+    assert.equal(group.disallow, "/");
+    assert.equal(group.allow, undefined);
+  }
+  const nginx = readFileSync(new URL("../../deploy/nginx/20-block-cn-crawlers.conf", import.meta.url), "utf8");
+  const pattern = nginx.match(/\$http_user_agent ~\* "\(([^)]+)\)"/)?.[1] ?? "";
+  for (const name of BLOCKED_CRAWLERS) assert.ok(pattern.split("|").includes(name), `nginx does not refuse ${name}`);
+  for (const allowed of ["GPTBot", "ClaudeBot", "PerplexityBot", "Googlebot", "bingbot", "curl", "node"]) {
+    assert.equal(new RegExp(pattern, "i").test(allowed), false, `nginx would refuse ${allowed}`);
+  }
 });
 
 test("sitemap entries omit invented freshness unless a real date is supplied", () => {
