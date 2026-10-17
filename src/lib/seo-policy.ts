@@ -94,10 +94,13 @@ const ASSISTANT_CRAWLERS = [
  * documented user-agent token: ByteDance (Bytespider feeds Doubao and is known to ignore
  * robots.txt, which is why deploy/nginx/20-block-cn-crawlers.conf refuses the same list with
  * a 403), Baidu (search and ERNIE), Alibaba's Shenma/Quark (YisouSpider), Tencent's Sogou,
- * Qihoo 360, Huawei (PetalBot), Zhipu (ChatGLM-Spider).
+ * Qihoo 360, Huawei (PetalBot), Zhipu GLM (ChatGLM-Spider). Added 2026-10-17 (client: 「还有 kimi
+ * GLM deepseek，所有中国 AI 都拦截」): DeepSeekBot, and Moonshot's three Kimi tokens. These come
+ * from crawler directories, not from the companies' own pages, and a 2026 test found Kimi
+ * fetching with faked browser user agents, which no name list can catch.
  *
  * robots.txt is a request, not a lock. The enforcement is the nginx file above and the
- * Cloudflare rule in docs/collaboration/2026-10-16-手动操作-屏蔽中国AI爬虫.md; this list keeps
+ * Cloudflare rule in docs/collaboration/archive/2026-10-16-手动操作-屏蔽中国AI爬虫.md; this list keeps
  * the three in step (seo-policy.test.ts fails if nginx misses a name). RAYEN (rayen.cn)
  * writes its own robots.txt and is not affected.
  */
@@ -111,6 +114,10 @@ export const BLOCKED_CRAWLERS = [
   "HaosouSpider",
   "PetalBot",
   "ChatGLM-Spider",
+  "DeepSeekBot",
+  "KimiBot",
+  "Kimi-SearchBot",
+  "Kimi-User",
 ];
 
 export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPolicyRule[] {

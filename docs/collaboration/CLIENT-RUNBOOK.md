@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-10-16 · 更新人：Claude · 新增：屏蔽中国 AI 爬虫；BAU 展位喷绘交广告公司**
+**最后更新：2026-10-17 · 更新人：Claude · 新增：PR #22 发布与爬虫拦截安装；BAU 展位喷绘交广告公司**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -17,9 +17,15 @@
 
 ---
 
-## 现在要做的（2026-10-16）：Cloudflare 屏蔽中国 IP 和中国 AI 爬虫（约 10 分钟）
+## 现在要做的（2026-10-17）：PR #22 已合并，发布并装上爬虫拦截（约 15 分钟）
 
-在 Cloudflare 加一条防火墙规则，拦中国大陆 IP 和字节、百度、阿里、搜狗、360、华为、智谱的爬虫；同时确认 Cloudflare 的「一键屏蔽 AI 爬虫」开关**没有打开**（它会连 ChatGPT、Claude 一起拦，GEO 就白做了）。规则一开，国内同事要开 VPN 才能打开官网和后台。表达式和步骤见桌面 `hyde` → `00-先看这里-人工待办` → `2026-10-16-手动操作-屏蔽中国AI爬虫.docx`。服务器上的 nginx 那一步等我通知发布后再做。
+**先改 Cloudflare 规则（约 3 分钟）：** 你 10-17 决定不封中国真人访客，但拦掉所有中国爬虫，包括豆包、文心、GLM、DeepSeek、Kimi、元宝、WorkBuddy。把原规则的表达式整段换掉，见桌面 `hyde` → `00-先看这里-人工待办` → `2026-10-17-手动操作-Cloudflare改为只拦中国AI爬虫.docx`。一键屏蔽 AI 爬虫的开关继续保持关闭。然后按顺序在 **johns 电脑**上做这三步，云端连不上 GitLab：
+
+1. HYDE 发布：在 HYDE 仓库目录运行 `npm run release:hyde`。它会构建、经 GitLab 部署，并推到 GitHub。成功的标志是最后打印出版本号 `vYYYY.MM.DD.N`。
+2. 雷茵发布：运行 `npm run release:rayen`。发布后雷茵站上的联系邮箱会变成 tec@cantonlock.com。
+3. 等 5 分钟让服务器拉到新版本，然后在服务器终端运行 `bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh`。成功的标志：最后多出 `verifying the crawler block at the origin:` 一段，6 行都是 `OK`（3 行 `OK 403`、3 行 `OK 200`）。出现 `BAD` 就停下，截图发我。
+
+做完记得 purge Cloudflare。
 
 ## 现在要做的（2026-10-16）：BAU 展位横带与柜台喷绘交广告公司（约 15 分钟）
 
