@@ -119,6 +119,33 @@ Disallow: /*.txt$
 Disallow: /__next.
 Disallow: /*/__next.
 
+User-Agent: Bytespider
+Disallow: /
+
+User-Agent: TikTokSpider
+Disallow: /
+
+User-Agent: Baiduspider
+Disallow: /
+
+User-Agent: YisouSpider
+Disallow: /
+
+User-Agent: Sogou web spider
+Disallow: /
+
+User-Agent: 360Spider
+Disallow: /
+
+User-Agent: HaosouSpider
+Disallow: /
+
+User-Agent: PetalBot
+Disallow: /
+
+User-Agent: ChatGLM-Spider
+Disallow: /
+
 Sitemap: https://cantonlock.com/sitemap.xml
 Sitemap: https://cantonlock.com/es/sitemap.xml
 Sitemap: https://cantonlock.com/pt/sitemap.xml
