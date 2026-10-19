@@ -12,7 +12,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 OUT = Path("docs/collaboration/assets/2026-10-19-canton-fair-route.png")
-W, H = 1080, 1600
+W, H = 1080, 1780
 FONT = "C:/Windows/Fonts/msyh.ttc"
 BOLD = "C:/Windows/Fonts/msyhbd.ttc"
 f = lambda s, b=False: ImageFont.truetype(BOLD if b else FONT, s)
@@ -21,11 +21,12 @@ INK, MUTED, LINE = (30, 30, 30), (110, 110, 110), (200, 200, 200)
 AREA = {"A": (66, 103, 178), "B": (196, 170, 90), "C": (60, 160, 140), "D": (140, 110, 170)}
 ROUTE = (214, 40, 40)
 STAR = (230, 120, 0)
+WATER = (30, 110, 200)
 
 im = Image.new("RGB", (W, H), "white")
 d = ImageDraw.Draw(im)
-d.text((40, 30), "广交会第一期 · 3 小时动线（从 B 区出发）", font=f(40, True), fill=INK)
-d.text((40, 88), "10-19 收展日 · 只画相对位置，不按比例 · 上北下南", font=f(24), fill=MUTED)
+d.text((40, 30), "广交会第一期 · 观展动线（从 B 区出发）", font=f(40, True), fill=INK)
+d.text((40, 88), "红 = HYDE   蓝 = 远高 / 惠恩   橙 = 可选 · 只画相对位置 · 上北下南", font=f(24), fill=MUTED)
 
 # 珠江与道路
 d.rectangle([40, 140, W - 40, 170], fill=(200, 225, 245))
@@ -93,40 +94,44 @@ def arrow(points, color=ROUTE, w=8, dash=False):
     d.polygon([(x1, y1), (x1 - L * math.cos(ang - 0.45), y1 - L * math.sin(ang - 0.45)), (x1 - L * math.cos(ang + 0.45), y1 - L * math.sin(ang + 0.45))], fill=color)
 
 
-# 路线：10.1 → 11.1 →（13.1）→ 2 楼散步道 → 中央平台 → A 区散步道 → 广交会会堂 3 楼
-arrow([(880, 530), (968, 530)])
-badge((842, 530), 1)
-badge((1004, 530), 2)
+# 路线：9.1 阀门 → 10.1 → 11.1 → 2 楼散步道 → 中央平台（新品首发）→ A 区 6.1 泵 → A 区 2.2 净水 → 广交会会堂 3 楼
+badge((750, 530), 1, WATER)
+arrow([(776, 530), (816, 530)], WATER, 6)
+badge((842, 530), 2)
+arrow([(868, 530), (968, 530)])
+badge((1004, 530), 3)
 arrow([(1004, 505), (1004, 392)], dash=True)
-badge((1012, 252), 3, MUTED, 20)
 arrow([(990, 380), (700, 380), (668, 380)])
 badge((643, 196), 4)
-arrow([(618, 380), (270, 380), (250, 300)])
-badge((160, 196), 5)
 d.text((700, 384), "2 楼珠江散步道", font=f(20), fill=ROUTE)
+arrow([(618, 375), (360, 375), (345, 360)], WATER, 6)
+badge((345, 196), 5, WATER)
+arrow([(330, 385), (382, 400)], WATER, 6, dash=True)
+badge((382, 600), 6, WATER)
+arrow([(300, 380), (262, 380), (250, 300)])
+badge((160, 196), 7)
 # 可选：C 区照明、D 区 17.2 安防
 arrow([(643, 560), (643, 690)], STAR, 6, dash=True)
 badge((900, 765), "C", STAR, 22)
-arrow([(250, 290), (200, 380)], STAR, 6, dash=True)
-badge((236, 600), "D", STAR, 22)
 
 # 图例 / 时间
 y = 940
 d.line((40, y - 16, W - 40, y - 16), fill=LINE, width=2)
 items = [
-    (ROUTE, "1", "10.1 锁具馆（1 楼）· 0:00–1:10", "雅洁 F15-16 ★ · 找推杆墙 H43 / K41 · 汉瑞 L07 · 补拍 OUBAO / 必达"),
-    (ROUTE, "2", "11.1 门窗五金（1 楼，东隔壁）· 1:10–1:55", "拓臣 H07-12 · TUTTI H34 · 富尔达 L25 · 闭门器一排 I17–J25 · 科艺 H19"),
-    (MUTED, "3", "13.1 合页铰链（北面）· 只扫一眼，5 分钟", "有时间才去；没时间跳过"),
-    (ROUTE, "4", "上 2 楼，经珠江散步道到中央平台 · 2:00–2:20", "中央平台西侧「新品首发展厅」：看单品展台和说明牌"),
-    (ROUTE, "5", "沿 A 区 2 楼往西到广交会会堂 3 楼 · 2:25–2:55", "CF 奖展示厅 ★：陈列、灯光、留白，最接近 BAU"),
-    (STAR, "C", "可选：C 区 14.4 / 15.4 照明（经中央平台南天桥）", "只看展位打光，拍天花和光斑；和第 5 站二选一"),
-    (STAR, "D", "可选：D 区 17.2 安防用品", "门禁、电锁，同一批工程客户；时间富余才去"),
+    (WATER, "1", "9.1 阀门（B 区 1 楼最西）· 0:00–0:25", "惠恩：远大 G43 · 北高在 11.1 · 华成 J13 · 河北五矿 G35 · 般德 F08"),
+    (ROUTE, "2", "10.1 锁具馆 · 0:25–1:30", "雅洁 F15-16 ★ · 找推杆墙 H43 / K41 · 汉瑞 L07 · 补拍 OUBAO / 必达"),
+    (ROUTE, "3", "11.1 门窗五金 + 阀门 · 1:30–2:20", "拓臣 · TUTTI · 闭门器一排 · 科艺；阀门：梵盛 G10 · 达柏林 A13 · 北高 G41"),
+    (ROUTE, "4", "上 2 楼到中央平台 · 2:25–2:40", "西侧「新品首发展厅」：单品展台和说明牌"),
+    (WATER, "5", "A 区 6.1 水泵（6 号馆 1 楼）· 2:45–3:20", "远高 / 惠恩：南方泵业 G37 · 新界 A09 · 凌霄 L10 · 瑞荣 E05"),
+    (WATER, "6", "A 区 2.2 净水（2 号馆 2 楼）· 3:25–3:45", "远高：九阳 A09-12 · 莱克 F13 · 世林在 1.2 · 伊美特在 5.2"),
+    (ROUTE, "7", "广交会会堂 3 楼 CF 奖展厅 ★ · 3:50–4:20", "陈列、灯光、留白，最接近 BAU"),
+    (STAR, "C", "可选：C 区 14.4 / 15.4 照明", "只看展位打光；时间富余才去"),
 ]
 for color, n, title, sub in items:
     badge((70, y + 22), n, color, 22)
     d.text((110, y), title, font=f(26, True), fill=INK)
     d.text((110, y + 38), sub, font=f(21), fill=MUTED)
-    y += 82
+    y += 80
 d.text((40, H - 40), "来源：广交会官方第一期导向手册 p3、p12；展位号：广交会 365，2026-10-18 查询", font=f(18), fill=MUTED)
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
