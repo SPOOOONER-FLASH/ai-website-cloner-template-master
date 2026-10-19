@@ -267,7 +267,7 @@
     ],
     "sourceHash": {
       "title": "44cb79616657",
-      "summary": "0b705c3c94a8",
+      "summary": "7720ea4056c3",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
       "body": "fb2446f018d3",
@@ -397,7 +397,7 @@
       "Eine Lehrkraft muss eine Tür gegen den Flur sichern. Mit Lagerraum- oder Eingangsfunktion müsste sie dafür auf den Flur treten, um den Schlüssel zu benutzen – genau dorthin, wo die Bedrohung sein könnte. Die Klassenzimmerfunktion erlaubt es, den Außenbeschlag vom Raum aus zu verriegeln und zu entriegeln, sodass die Tür gesichert wird, ohne dass jemand sie verlässt. Der innere Drücker zieht die Falle immer zurück, sodass der Raum weiterhin geräumt werden kann.",
       "Diese Funktion sollten Sie beim Namen kennen, denn eine Spezifikation, die das Verhalten in Worten beschreibt, bekommt meist eine Eingangsfunktion und eine Anmerkung.",
       "## Was unser Katalog tatsächlich führt",
-      "Funktionszählung über die 613 Datensätze in unserem Katalog, aus den Spezifikationszeilen selbst.",
+      "Funktionszählung über die 616 Datensätze in unserem Katalog, aus den Spezifikationszeilen selbst.",
       "| Funktion | Modelle |\n| --- | --- |\n| Eingangsfunktion, außen mit Schlüssel | 78 |\n| WC-Funktion, Bad, Drehknopf innen | 27 |\n| Durchgangsfunktion | 18 |\n| Einfach-, Doppelzylinder oder selbstverriegelnd | 21 |\n| Eingang, WC, Durchgang oder Blindgarnitur (wählbar) | 8 |\n| Klassenzimmer | 1 |\n| Lagerraum | 1 |\n| Kommunikation | 1 |\n| Eingang und Kommunikation | 1 |\n| Ausgangsfalle | 1 |",
       "Ehrlich gelesen sagt die Tabelle etwas Bestimmtes: Wir sind stark bei Eingangs-, WC- und Durchgangsfunktion und kein breites Sortiment für öffentliche Einrichtungen. Braucht ein Projekt Klassenzimmer- und Lagerraumfunktionen an vierzig Türöffnungen, haben wir von jeder ein Modell, und Sie sollten fragen, bevor Sie um uns herum planen.",
       "Diese Tabelle zu veröffentlichen ist nützlicher, als ein vollständiges Funktionsspektrum anzudeuten und die Lücke bei der Türliste zu entdecken. Bei den Modellen, die eine Funktion haben, steht sie im Suffix des Bestellcodes (`ET` Eingang, `BK` WC, `PS` Durchgang): `201 PBET` ist also Modell 201, Messing poliert, Eingangsfunktion.",
@@ -440,7 +440,7 @@
       },
       {
         "question": "Welche Funktionen führt Ihr Katalog tatsächlich?",
-        "answer": "Über die 613 Datensätze in unserem Katalog: Eingangsfunktion 78, WC-Funktion 27, Durchgangsfunktion 18, Einfach-/Doppelzylinder oder selbstverriegelnd 21, wählbare Funktion 8 sowie Klassenzimmer, Lagerraum, Kommunikation, Eingang und Kommunikation und Ausgangsfalle je ein Modell. Wir sind stark bei Eingang, WC und Durchgang und kein breites Sortiment für öffentliche Einrichtungen. Fragen Sie, bevor Sie vierzig Türöffnungen um uns herum planen."
+        "answer": "Über die 616 Datensätze in unserem Katalog: Eingangsfunktion 78, WC-Funktion 27, Durchgangsfunktion 18, Einfach-/Doppelzylinder oder selbstverriegelnd 21, wählbare Funktion 8 sowie Klassenzimmer, Lagerraum, Kommunikation, Eingang und Kommunikation und Ausgangsfalle je ein Modell. Wir sind stark bei Eingang, WC und Durchgang und kein breites Sortiment für öffentliche Einrichtungen. Fragen Sie, bevor Sie vierzig Türöffnungen um uns herum planen."
       }
     ],
     "sourceHash": {
@@ -448,8 +448,8 @@
       "summary": "3e4ccb83c3b5",
       "seoTitle": "6dda3d33e6ef",
       "seoDescription": "e4c4d5f6d587",
-      "body": "65aee5b63d97",
-      "faq": "055019d2670b"
+      "body": "ece2ad5d5cab",
+      "faq": "36a1edbcd409"
     }
   },
   "container-loading-door-hardware-2026": {
@@ -894,7 +894,7 @@
       },
       {
         "question": "Wie viele Ihrer Schlösser veröffentlichen diese Maße?",
-        "answer": "Von 255 Schlossprodukten: Dornmaß 113 (44%), Türdicke 77 (30%), Entfernung 37 (15%), Stulp 7 (3%), Kastengröße 8 (3%). Die beiden Maße mit den teuersten Fehlern veröffentlichen wir am seltensten. Ein fehlendes Maß kann auf Anfrage gemessen werden: Es fehlt, weil noch niemand dieses Modell gemessen hat, nicht weil es zurückgehalten wird."
+        "answer": "Von 257 Schlossprodukten: Dornmaß 113 (44%), Türdicke 77 (30%), Entfernung 37 (14%), Stulp 8 (3%), Kastengröße 8 (3%). Die beiden Maße mit den teuersten Fehlern veröffentlichen wir am seltensten. Ein fehlendes Maß kann auf Anfrage gemessen werden: Es fehlt, weil noch niemand dieses Modell gemessen hat, nicht weil es zurückgehalten wird."
       },
       {
         "question": "Was sollte ich schicken, um direkten Ersatz zu bekommen?",
@@ -911,7 +911,7 @@
       "seoTitle": "cdc77c60bb8f",
       "seoDescription": "c137bf8f8240",
       "body": "425fc059b14e",
-      "faq": "f1f72a2d0d71"
+      "faq": "71ae9c8aaf7d"
     }
   },
   "door-closer-mounting-positions-2026": {
@@ -1591,7 +1591,7 @@
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
       "body": "f895a9f586f0",
-      "faq": "276ab6d85670"
+      "faq": "9cd7a5bca8f6"
     }
   },
   "exit-device-locking-method-2026": {
@@ -1976,7 +1976,7 @@
     ],
     "sourceHash": {
       "title": "ca19e24bc00b",
-      "summary": "0d5137abc4eb",
+      "summary": "e8aef135116a",
       "seoTitle": "75373f19512f",
       "seoDescription": "17d1d81eb4c7",
       "body": "81815c180c5b",
@@ -2104,8 +2104,8 @@
       "Die Gruppierung verdichtet meist einige hundert Zeilen auf acht bis zwölf echte Positionen plus eine Handvoll Einzelfälle, und die Einzelfälle verdienen ein eigenes Gespräch, statt in die nächstliegende Gruppe gerundet zu werden. Bestellen Sie die Gruppen, und bestellen Sie die Einzelfälle als Einzelfälle.",
       "Dann prüfen Sie die Summe. Die Zahl der Flügel in der Bestandsaufnahme muss der Zahl der Beschlagsätze in der Bestellung entsprechen. Das klingt zu selbstverständlich, um es aufzuschreiben, und ist doch der häufigste Rechenfehler bei einer Sanierung, weil zweiflügelige Türen als eine gezählt und Schranktüren ganz vergessen werden.",
       "## Was unser Katalog für Sie beantworten kann und was nicht",
-      "Eine Bestandsaufnahme erzeugt Fragen, die der Lieferant beantworten muss. Über die 613 HYDE-Katalogdatensätze kann ein veröffentlichter Datensatz derzeit Folgendes klären, ohne dass jemand eine Zeichnung öffnet:",
-      "| Angabe der Bestandsaufnahme | Produkte mit dieser Angabe |\n| --- | --- |\n| Türdickenbereich | 216 von 613 |\n| Anschlagrichtung | 184 von 613 |\n| Dornmaß | 182 von 613 |\n| Entfernung | 44 von 613 |\n| Stulpgröße und -form | 7 von 613 |",
+      "Eine Bestandsaufnahme erzeugt Fragen, die der Lieferant beantworten muss. Über die 616 HYDE-Katalogdatensätze kann ein veröffentlichter Datensatz derzeit Folgendes klären, ohne dass jemand eine Zeichnung öffnet:",
+      "| Angabe der Bestandsaufnahme | Produkte mit dieser Angabe |\n| --- | --- |\n| Türdickenbereich | 216 von 616 |\n| Anschlagrichtung | 184 von 616 |\n| Dornmaß | 182 von 616 |\n| Entfernung | 44 von 616 |\n| Stulpgröße und -form | 7 von 616 |",
       "Die letzte Zeile sollten Sie vorab kennen. Stulpmaße sind bei 8 Produkten veröffentlicht. Hängt Ihre Bestandsaufnahme davon ab, ob der Stulp eines Ersatzschlosses die vorhandene Ausfräsung abdeckt, beantwortet der Katalog das für die meisten Modelle nicht. Die Antwort muss aus einer bestätigten Zeichnung oder einem physischen Muster kommen. Fragen Sie früh, nicht erst bei der Montage.",
       "Das ist eine Einschränkung, angegeben als Zahl statt als Adjektiv – so ist jede Lücke auf dieser Website formuliert. Für eine Sanierung ist es zudem das Nützlichste, was wir Ihnen sagen können, bevor Sie zu messen beginnen."
     ],
@@ -2132,7 +2132,7 @@
       },
       {
         "question": "Was kann der Katalog von Canton Hyland aus einer Bestandsaufnahme beantworten?",
-        "answer": "Von 613 HYDE-Datensätzen ist der Türdickenbereich bei 216 veröffentlicht, die Anschlagrichtung bei 184, das Dornmaß bei 182, die Entfernung bei 44 und Stulpgröße und -form bei 7. Muss der Stulp des Ersatzes eine vorhandene Ausfräsung abdecken, fordern Sie vor der Montage eine bestätigte Zeichnung oder ein Muster an."
+        "answer": "Von 616 HYDE-Datensätzen ist der Türdickenbereich bei 216 veröffentlicht, die Anschlagrichtung bei 184, das Dornmaß bei 182, die Entfernung bei 44 und Stulpgröße und -form bei 7. Muss der Stulp des Ersatzes eine vorhandene Ausfräsung abdecken, fordern Sie vor der Montage eine bestätigte Zeichnung oder ein Muster an."
       }
     ],
     "sourceHash": {
@@ -2140,8 +2140,8 @@
       "summary": "af8752842c02",
       "seoTitle": "674b9de85346",
       "seoDescription": "13933819ebd7",
-      "body": "0c7340a898b5",
-      "faq": "12f08e378d12"
+      "body": "d8562ac13025",
+      "faq": "843c742934aa"
     }
   },
   "hardware-warranty-what-it-covers-2026": {
@@ -2844,7 +2844,7 @@
       "seoTitle": "2a8a61475200",
       "seoDescription": "7c5a3483bd71",
       "body": "3c3f326e5dc9",
-      "faq": "d83c6edc7268"
+      "faq": "d8e279c6c6c0"
     }
   },
   "powder-coating-and-ral-2026": {
@@ -2892,9 +2892,9 @@
       "Ein physisches Referenzmuster, von beiden Seiten unterschrieben – die Zeile, die Streitigkeiten tatsächlich beilegt. Jede Charge wird dann mit dem Muster verglichen statt mit der Erinnerung an die letzte Charge.",
       "Ergänzen Sie Korrosionsklasse und Schichtdickenbereich, wo die Anwendung es rechtfertigt, und nennen Sie, welche Flächen abgedeckt werden.",
       "## Was wir veröffentlichen und was nicht",
-      "Von den 613 HYDE-Katalogdatensätzen haben 326 eine Oberflächenzeile. Die Oberflächennamen sind nicht vollständig vereinheitlicht: Dieselbe Oberfläche erscheint in verschiedenen Datensätzen als „Satin Nickel (SN)“, „Satin nickel“ und „SN“. Das ist ein Datenproblem, bevor es ein Spezifikationsproblem ist.",
+      "Von den 616 HYDE-Katalogdatensätzen haben 330 eine Oberflächenzeile. Die Oberflächennamen sind nicht vollständig vereinheitlicht: Dieselbe Oberfläche erscheint in verschiedenen Datensätzen als „Satin Nickel (SN)“, „Satin nickel“ und „SN“. Das ist ein Datenproblem, bevor es ein Spezifikationsproblem ist.",
       "Manche Zeilen nennen Pulverbeschichtung, andere nur „paint“ oder „painting“, und wieder andere nennen eine schwarze Oberfläche, ohne anzugeben, ob es Pulverbeschichtung, Nasslack, Schwarznickel oder PVD ist. Diese Verfahren haben verschiedene Reparaturwege, daher muss das Verfahren für eine Bestellung bestätigt werden.",
-      "In den 613 HYDE-Datensätzen steht keine einzige RAL-Nummer. Kommt es auf einen bestimmten Farbton an, bitten Sie uns, Code und Verfahren anhand der Fertigungsunterlagen zu bestätigen.",
+      "In den 616 HYDE-Datensätzen steht keine einzige RAL-Nummer. Kommt es auf einen bestimmten Farbton an, bitten Sie uns, Code und Verfahren anhand der Fertigungsunterlagen zu bestätigen.",
       "Das ist die Lücke, genannt als Zahlen statt als Adjektive, und sie wird auf dieselbe Weise geschlossen wie bei den Edelstahl- und Zamaksorten: aus Fertigungsunterlagen, nicht aus dem, was die Zeilen sagen sollten. Bis dahin: Wenn es bei Ihrer Bestellung auf eine Oberfläche ankommt, fragen Sie in den vier Zeilen oben danach und bitten Sie uns, jede am Teil statt am Katalog zu bestätigen."
     ],
     "faq": [
@@ -2928,7 +2928,7 @@
       "summary": "b021e0487733",
       "seoTitle": "ac9904bc8b64",
       "seoDescription": "5a5c6778a1e7",
-      "body": "aae4c4679ea0",
+      "body": "2df8a7a44ec1",
       "faq": "826feadcde73"
     }
   },
@@ -3005,11 +3005,11 @@
     ],
     "sourceHash": {
       "title": "035bcbc4baf9",
-      "summary": "6c313098793c",
+      "summary": "3dfafc3944fa",
       "seoTitle": "92d83c3b55dd",
       "seoDescription": "1c754230aa01",
-      "body": "b39896bc9088",
-      "faq": "ed006bfea587"
+      "body": "be9fb7465b99",
+      "faq": "63b4aaadd6df"
     }
   },
   "samples-and-incoming-inspection-2026": {
@@ -3579,8 +3579,8 @@
       "summary": "3f21b6143e21",
       "seoTitle": "76f2f68626fd",
       "seoDescription": "ff5f64149058",
-      "body": "e05f1e0d44fa",
-      "faq": "1d859508aa43"
+      "body": "b558bfec61ba",
+      "faq": "f3a793c0d287"
     }
   },
   "universal-vs-handed-hardware-2026": {

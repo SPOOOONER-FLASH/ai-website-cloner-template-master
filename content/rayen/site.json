@@ -16,6 +16,7 @@
     "== 联系方式还是空的 ==",
     "phone / wechat / email 空着会在页面上渲染成一条短横线。这是设计好的行为：",
     "cantonlock 的美国号码和 lock@cantonlock.com 是 HYDE 的，不是雷茵的，填上去就是错的。",
+    "例外（甲方 2026-10-17）：「雷茵官网的邮箱联系地址改为 tec@cantonlock.com」，email 由 645841671@qq.com 改成 tec@cantonlock.com。",
     "",
     "== 1688 店铺 ==",
     "alibaba1688 填了之后，页脚、联系页和每个型号页都会出现「1688 店铺」入口。",
@@ -45,7 +46,7 @@
     "country": "中国",
     "phone": "+86 138 7316 0696 / +86 137 9419 7190",
     "wechat": "雷茵&RAYEN 五金制品",
-    "email": "645841671@qq.com",
+    "email": "tec@cantonlock.com",
     "alibaba1688": "https://shop49ed1729u7054.1688.com/",
     "addressEn": "2/F-1, No. 28 Lehe Road, Lianfeng Community, Xiaolan Town, Zhongshan, Guangdong, China"
   },

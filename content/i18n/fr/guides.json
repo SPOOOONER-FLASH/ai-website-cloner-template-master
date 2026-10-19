@@ -267,7 +267,7 @@
     ],
     "sourceHash": {
       "title": "44cb79616657",
-      "summary": "0b705c3c94a8",
+      "summary": "7720ea4056c3",
       "seoTitle": "d10d38f8a8f3",
       "seoDescription": "454019433133",
       "body": "fb2446f018d3",
@@ -397,7 +397,7 @@
       "Un enseignant doit sécuriser une porte côté couloir. Avec une fonction réserve ou entrée, il doit sortir dans le couloir pour utiliser la clé, c'est-à-dire précisément là où la menace peut se trouver. La fonction salle de classe permet de verrouiller et déverrouiller la garniture extérieure depuis l'intérieur de la pièce, si bien que la porte est sécurisée sans que personne ne la quitte. La poignée intérieure rétracte toujours le pêne, si bien que la pièce reste évacuable.",
       "C'est une fonction à connaître par son nom, car un cahier des charges qui en décrit le comportement en toutes lettres reçoit généralement une fonction entrée assortie d'une note.",
       "## Ce que contient réellement notre catalogue",
-      "Décompte des fonctions sur les 613 fiches de notre catalogue, à partir des lignes de caractéristiques elles-mêmes.",
+      "Décompte des fonctions sur les 616 fiches de notre catalogue, à partir des lignes de caractéristiques elles-mêmes.",
       "| Fonction | Modèles |\n| --- | --- |\n| Entrée, à clé à l'extérieur | 78 |\n| Condamnation, salle de bains, bouton intérieur | 27 |\n| Passage | 18 |\n| Simple cylindre, double cylindre ou fermeture automatique | 21 |\n| Entrée, condamnation, passage ou factice (au choix) | 8 |\n| Salle de classe | 1 |\n| Réserve | 1 |\n| Communication | 1 |\n| Entrée et communication | 1 |\n| Pêne de sortie | 1 |",
       "Lu honnêtement, ce tableau dit quelque chose de précis : nous sommes solides en entrée, condamnation et passage, et nous ne sommes pas une gamme de fonctions étendue pour les établissements publics. Si un projet exige des fonctions salle de classe et réserve sur quarante baies, nous avons un modèle de chaque, et vous devriez nous interroger avant de concevoir autour de nous.",
       "Publier ce tableau est plus utile que de laisser entendre une gamme complète et de découvrir la lacune au stade du tableau de quincaillerie. Le suffixe du code de commande porte la fonction sur les modèles qui en ont une (`ET` entrée, `BK` condamnation, `PS` passage) : `201 PBET` désigne donc le modèle 201, laiton poli, fonction entrée.",
@@ -440,7 +440,7 @@
       },
       {
         "question": "Quelles fonctions votre catalogue propose-t-il réellement ?",
-        "answer": "Sur les 613 fiches de notre catalogue : entrée 78, condamnation 27, passage 18, simple ou double cylindre ou fermeture automatique 21, fonction au choix 8, et salle de classe, réserve, communication, entrée et communication, et pêne de sortie, un modèle chacun. Nous sommes solides en entrée, condamnation et passage, et ne sommes pas une gamme étendue pour les établissements publics ; interrogez-nous avant de concevoir quarante baies autour de nous."
+        "answer": "Sur les 616 fiches de notre catalogue : entrée 78, condamnation 27, passage 18, simple ou double cylindre ou fermeture automatique 21, fonction au choix 8, et salle de classe, réserve, communication, entrée et communication, et pêne de sortie, un modèle chacun. Nous sommes solides en entrée, condamnation et passage, et ne sommes pas une gamme étendue pour les établissements publics ; interrogez-nous avant de concevoir quarante baies autour de nous."
       }
     ],
     "sourceHash": {
@@ -448,8 +448,8 @@
       "summary": "3e4ccb83c3b5",
       "seoTitle": "6dda3d33e6ef",
       "seoDescription": "e4c4d5f6d587",
-      "body": "65aee5b63d97",
-      "faq": "055019d2670b"
+      "body": "ece2ad5d5cab",
+      "faq": "36a1edbcd409"
     }
   },
   "container-loading-door-hardware-2026": {
@@ -894,7 +894,7 @@
       },
       {
         "question": "Combien de vos serrures publient ces cotes ?",
-        "answer": "Sur 255 produits de serrurerie : axe 113 (44 %), épaisseur de porte 77 (30 %), entraxe 37 (15 %), têtière 7 (3 %), dimensions du coffre 8 (3 %). Les deux cotes qui provoquent les défaillances les plus coûteuses sont les deux que nous publions le moins. Une cote manquante peut être mesurée à la demande : elle manque parce que personne n'a encore mesuré ce modèle, pas parce qu'elle est retenue."
+        "answer": "Sur 257 produits de serrurerie : axe 113 (44 %), épaisseur de porte 77 (30 %), entraxe 37 (14 %), têtière 8 (3 %), dimensions du coffre 8 (3 %). Les deux cotes qui provoquent les défaillances les plus coûteuses sont les deux que nous publions le moins. Une cote manquante peut être mesurée à la demande : elle manque parce que personne n'a encore mesuré ce modèle, pas parce qu'elle est retenue."
       },
       {
         "question": "Que faut-il envoyer pour obtenir un remplacement à l'identique ?",
@@ -911,7 +911,7 @@
       "seoTitle": "cdc77c60bb8f",
       "seoDescription": "c137bf8f8240",
       "body": "425fc059b14e",
-      "faq": "f1f72a2d0d71"
+      "faq": "71ae9c8aaf7d"
     }
   },
   "door-closer-mounting-positions-2026": {
@@ -1591,7 +1591,7 @@
       "seoTitle": "58c651aa7c76",
       "seoDescription": "df271522780d",
       "body": "f895a9f586f0",
-      "faq": "276ab6d85670"
+      "faq": "9cd7a5bca8f6"
     }
   },
   "exit-device-locking-method-2026": {
@@ -1976,7 +1976,7 @@
     ],
     "sourceHash": {
       "title": "ca19e24bc00b",
-      "summary": "0d5137abc4eb",
+      "summary": "e8aef135116a",
       "seoTitle": "75373f19512f",
       "seoDescription": "17d1d81eb4c7",
       "body": "81815c180c5b",
@@ -2104,8 +2104,8 @@
       "Ce regroupement ramène généralement quelques centaines de lignes à huit ou douze vraies lignes de commande plus une poignée de cas isolés, et ces cas isolés méritent leur propre discussion plutôt que d'être arrondis au groupe le plus proche. Commandez les groupes, et commandez les cas isolés comme tels.",
       "Vérifiez ensuite le total. Le nombre de vantaux du relevé doit être égal au nombre d'ensembles de quincaillerie de la commande. Cela paraît trop évident pour être écrit, et c'est pourtant l'erreur arithmétique la plus fréquente en rénovation, parce que les doubles portes sont comptées pour une et que les portes de placard sont tout simplement oubliées.",
       "## Ce que notre catalogue peut ou non vous dire",
-      "Un relevé produit des questions auxquelles le fournisseur doit répondre. Sur les 613 fiches du catalogue HYDE, voici ce qu'une fiche publiée permet aujourd'hui de trancher sans que personne n'ouvre un plan :",
-      "| Champ du relevé | Produits qui le publient |\n| --- | --- |\n| Plage d'épaisseur de porte | 216 sur 613 |\n| Main | 184 sur 613 |\n| Axe | 182 sur 613 |\n| Entraxe | 44 sur 613 |\n| Dimension et forme de la têtière | 7 sur 613 |",
+      "Un relevé produit des questions auxquelles le fournisseur doit répondre. Sur les 616 fiches du catalogue HYDE, voici ce qu'une fiche publiée permet aujourd'hui de trancher sans que personne n'ouvre un plan :",
+      "| Champ du relevé | Produits qui le publient |\n| --- | --- |\n| Plage d'épaisseur de porte | 216 sur 616 |\n| Main | 184 sur 616 |\n| Axe | 182 sur 616 |\n| Entraxe | 44 sur 616 |\n| Dimension et forme de la têtière | 7 sur 616 |",
       "La dernière ligne est celle qu'il est utile de connaître d'avance. Les dimensions de têtière sont publiées sur 8 produits. Si votre relevé dépend de la question de savoir si la têtière d'une serrure de remplacement couvre la mortaise existante, le catalogue n'y répondra pas pour la plupart des modèles. La réponse doit venir d'un plan confirmé ou d'un échantillon physique. Posez la question tôt plutôt qu'au moment de la pose.",
       "C'est une limite énoncée par un chiffre plutôt que par un adjectif, comme chaque lacune sur ce site. C'est aussi, pour une rénovation, l'information la plus utile que nous puissions vous donner avant que vous ne commenciez à mesurer."
     ],
@@ -2132,7 +2132,7 @@
       },
       {
         "question": "Que peut dire le catalogue de Canton Hyland à partir d'un relevé ?",
-        "answer": "Sur 613 fiches HYDE, la plage d'épaisseur de porte est publiée sur 216, la main sur 184, l'axe sur 182, l'entraxe sur 44, et la dimension et la forme de la têtière sur 7. Si la têtière de remplacement doit couvrir une mortaise existante, demandez un plan confirmé ou un échantillon avant la pose."
+        "answer": "Sur 616 fiches HYDE, la plage d'épaisseur de porte est publiée sur 216, la main sur 184, l'axe sur 182, l'entraxe sur 44, et la dimension et la forme de la têtière sur 7. Si la têtière de remplacement doit couvrir une mortaise existante, demandez un plan confirmé ou un échantillon avant la pose."
       }
     ],
     "sourceHash": {
@@ -2140,8 +2140,8 @@
       "summary": "af8752842c02",
       "seoTitle": "674b9de85346",
       "seoDescription": "13933819ebd7",
-      "body": "0c7340a898b5",
-      "faq": "12f08e378d12"
+      "body": "d8562ac13025",
+      "faq": "843c742934aa"
     }
   },
   "hardware-warranty-what-it-covers-2026": {
@@ -2844,7 +2844,7 @@
       "seoTitle": "2a8a61475200",
       "seoDescription": "7c5a3483bd71",
       "body": "3c3f326e5dc9",
-      "faq": "d83c6edc7268"
+      "faq": "d8e279c6c6c0"
     }
   },
   "powder-coating-and-ral-2026": {
@@ -2892,9 +2892,9 @@
       "Un échantillon de référence physique, signé par les deux parties : c'est la ligne qui règle réellement les litiges. Chaque lot est alors comparé à l'échantillon, et non au souvenir du lot précédent.",
       "Ajoutez la classe de corrosion et la plage d'épaisseur de film quand l'application le justifie, et nommez les surfaces masquées.",
       "## Ce que nous publions, et ce que nous ne publions pas",
-      "Sur les 613 fiches du catalogue HYDE, 326 comportent une ligne finition. Les noms de finition ne sont pas entièrement normalisés : la même finition apparaît sous « Satin Nickel (SN) », « Satin nickel » et « SN » selon les fiches. C'est un problème de données avant d'être un problème de spécification.",
+      "Sur les 616 fiches du catalogue HYDE, 330 comportent une ligne finition. Les noms de finition ne sont pas entièrement normalisés : la même finition apparaît sous « Satin Nickel (SN) », « Satin nickel » et « SN » selon les fiches. C'est un problème de données avant d'être un problème de spécification.",
       "Certaines lignes mentionnent le thermolaquage, d'autres disent seulement « paint » ou « painting », et d'autres nomment une finition noire sans préciser s'il s'agit de thermolaquage, de peinture liquide, de nickelage noir ou de PVD. Ces procédés se réparent différemment : le procédé doit donc être confirmé pour une commande.",
-      "Il n'y a pas un seul numéro RAL dans les 613 fiches HYDE. Si une teinte précise compte, demandez-nous de confirmer le code et le procédé d'après les registres de production.",
+      "Il n'y a pas un seul numéro RAL dans les 616 fiches HYDE. Si une teinte précise compte, demandez-nous de confirmer le code et le procédé d'après les registres de production.",
       "Voilà la lacune, énoncée en chiffres plutôt qu'en adjectifs, et elle se comble de la même façon que pour les nuances d'inox et de zamak : à partir des registres de production, pas de ce que les lignes devraient dire. D'ici là, si une finition compte pour votre commande, demandez-la selon les quatre lignes ci-dessus et demandez-nous de confirmer chacune sur la pièce plutôt que d'après le catalogue."
     ],
     "faq": [
@@ -2928,7 +2928,7 @@
       "summary": "b021e0487733",
       "seoTitle": "ac9904bc8b64",
       "seoDescription": "5a5c6778a1e7",
-      "body": "aae4c4679ea0",
+      "body": "2df8a7a44ec1",
       "faq": "826feadcde73"
     }
   },
@@ -3005,11 +3005,11 @@
     ],
     "sourceHash": {
       "title": "035bcbc4baf9",
-      "summary": "6c313098793c",
+      "summary": "3dfafc3944fa",
       "seoTitle": "92d83c3b55dd",
       "seoDescription": "1c754230aa01",
-      "body": "b39896bc9088",
-      "faq": "ed006bfea587"
+      "body": "be9fb7465b99",
+      "faq": "63b4aaadd6df"
     }
   },
   "samples-and-incoming-inspection-2026": {
@@ -3579,8 +3579,8 @@
       "summary": "3f21b6143e21",
       "seoTitle": "76f2f68626fd",
       "seoDescription": "ff5f64149058",
-      "body": "e05f1e0d44fa",
-      "faq": "1d859508aa43"
+      "body": "b558bfec61ba",
+      "faq": "f3a793c0d287"
     }
   },
   "universal-vs-handed-hardware-2026": {

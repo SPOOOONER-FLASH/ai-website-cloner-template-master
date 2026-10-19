@@ -588,9 +588,9 @@
   },
   "037-panic-exit-device-trim": {
     "name": "패닉 엑시트 디바이스 트림",
-    "summary": "패닉바용 외측 레버 핸들입니다. 키로 잠그고 풉니다.",
+    "summary": "패닉바용 외측 노브 트림입니다. 키로 노브를 잠그고 풉니다.",
     "features": [
-      "패닉바용 외측 레버 핸들",
+      "패닉바용 외측 노브",
       "키로 잠금·해제",
       "문 두께에 맞춰 스핀들 길이 조정 가능",
       "다양한 색상 선택 가능"
@@ -598,7 +598,7 @@
     "specs": [
       {
         "label": "Type",
-        "value": "트림 핸들 · 패닉 엑시트 디바이스용 외측 레버"
+        "value": "트림 노브 · 패닉 엑시트 디바이스용 외측 노브"
       },
       {
         "label": "Material",
@@ -618,14 +618,67 @@
       }
     ],
     "seoTitle": "037 패닉 엑시트 디바이스 트림, 철+스테인리스 스틸 | Canton Hyland",
-    "seoDescription": "037 패닉 엑시트 디바이스 트림: 철+스테인리스 스틸. 패닉바용 외측 레버 핸들입니다. 납기는 30일부터이며 중국 광둥성에서 생산합니다.",
+    "seoDescription": "037 패닉 엑시트 디바이스 트림: 철+스테인리스 스틸. 패닉바용 외측 노브 트림입니다. 납기는 30일부터이며 중국 광둥성에서 생산합니다.",
     "sourceHash": {
       "name": "cf2c2ed4be14",
-      "summary": "9105612bf15d",
+      "summary": "ab9fb8555235",
       "description": "dd29ecf524b0",
-      "features": "66a39e658843",
-      "specs": "f972357355bb"
+      "features": "c7c06416b137",
+      "specs": "b1c4fc3e38b3"
     }
+  },
+  "037-ps-panic-exit-device-trim": {
+    "name": "패닉 엑시트 디바이스 트림",
+    "summary": "패닉바용 외측 통로형 노브입니다. 키가 없어 바깥에서는 노브로 항상 문을 열 수 있고, 안쪽에서는 패닉바로 엽니다.",
+    "features": [
+      "패닉바용 외측 노브, 통로용 기능",
+      "실린더 없음: 바깥에서는 자유 출입, 안쪽에서는 푸시바로 탈출",
+      "스핀들과 고정 포스트 2개가 문을 관통해 패닉 디바이스에 연결",
+      "문 옆면 위치가 표시된 장착 플레이트"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "트림 노브 · 패닉 엑시트 디바이스용 외측 통로형 노브"
+      },
+      {
+        "label": "Function",
+        "value": "통로용: 외측 노브 항상 자유 작동, 실린더 없음"
+      },
+      {
+        "label": "Material",
+        "value": "철제 노브, 스테인리스 스틸 로즈"
+      },
+      {
+        "label": "Finish",
+        "value": "새틴 니켈 도금, 기타 마감은 요청 시 제공"
+      },
+      {
+        "label": "Rose diameter",
+        "value": "75mm"
+      },
+      {
+        "label": "Diameter",
+        "value": "57.5mm(노브)"
+      },
+      {
+        "label": "Projection",
+        "value": "문 표면에서 78.5mm"
+      },
+      {
+        "label": "Door thickness",
+        "value": "35–55mm"
+      }
+    ],
+    "sourceHash": {
+      "name": "cf2c2ed4be14",
+      "summary": "3e93538ca46b",
+      "description": "dd29ecf524b0",
+      "features": "e523eafb7392",
+      "specs": "90b1a0852fde"
+    },
+    "seoTitle": "037 PS 패닉 엑시트 디바이스 트림 | Canton Hyland",
+    "seoDescription": "037 PS 패닉 엑시트 디바이스 트림: 철+스테인리스 스틸. 패닉바용 외측 통로형 노브입니다. 납기는 30일부터이며 중국 광둥성에서 생산합니다."
   },
   "039-panic-exit-device-trim": {
     "name": "패닉 엑시트 디바이스 트림",

@@ -85,6 +85,34 @@ const ASSISTANT_CRAWLERS = [
   "CCBot",
 ];
 
+/**
+ * Crawlers shut out of the whole site (client, 2026-10-16: 「防止中国 AI 爬取……不让别人中国公司来偷取
+ * 我的架构和成果」).
+ *
+ * cantonlock.com sells to buyers outside China and has no Chinese locale, so a Chinese search
+ * engine or model company gains our catalogue and brings no buyers back. Each name is a
+ * documented user-agent token: ByteDance (Bytespider feeds Doubao and is known to ignore
+ * robots.txt, which is why deploy/nginx/20-block-cn-crawlers.conf refuses the same list with
+ * a 403), Baidu (search and ERNIE), Alibaba's Shenma/Quark (YisouSpider), Tencent's Sogou,
+ * Qihoo 360, Huawei (PetalBot), Zhipu (ChatGLM-Spider).
+ *
+ * robots.txt is a request, not a lock. The enforcement is the nginx file above and the
+ * Cloudflare rule in docs/collaboration/2026-10-16-手动操作-屏蔽中国AI爬虫.md; this list keeps
+ * the three in step (seo-policy.test.ts fails if nginx misses a name). RAYEN (rayen.cn)
+ * writes its own robots.txt and is not affected.
+ */
+export const BLOCKED_CRAWLERS = [
+  "Bytespider",
+  "TikTokSpider",
+  "Baiduspider",
+  "YisouSpider",
+  "Sogou web spider",
+  "360Spider",
+  "HaosouSpider",
+  "PetalBot",
+  "ChatGLM-Spider",
+];
+
 export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPolicyRule[] {
   if (!indexable) return [{ userAgent: "*", disallow: "/" }];
 
@@ -127,6 +155,7 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
       naming them is for.
     */
     ...ASSISTANT_CRAWLERS.map((userAgent) => ({ userAgent, allow, disallow })),
+    ...BLOCKED_CRAWLERS.map((userAgent) => ({ userAgent, disallow: "/" })),
   ];
 }
 

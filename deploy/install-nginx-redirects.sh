@@ -77,7 +77,7 @@ say ""
 
 # --- 1. sanity: the sources exist and the destinations are where we think ------
 
-for f in taxonomy-redirects.conf legacy-redirects.conf; do
+for f in taxonomy-redirects.conf legacy-redirects.conf 20-block-cn-crawlers.conf; do
   [ -f "$REPO_DIR/deploy/nginx/$f" ] || { say "MISSING source: deploy/nginx/$f"; exit 1; }
 done
 
@@ -89,6 +89,7 @@ BACKUP_DIR="/www/backup/nginx-redirects-$STAMP"
 mkdir -p "$BACKUP_DIR"
 cp -p "$EXT_DIR/10-taxonomy-redirects.conf" "$BACKUP_DIR/" 2>/dev/null || true
 cp -p "$HTTP_DIR/0.legacy-redirects.conf" "$BACKUP_DIR/" 2>/dev/null || true
+cp -p "$EXT_DIR/20-block-cn-crawlers.conf" "$BACKUP_DIR/" 2>/dev/null || true
 say "backed up current configs to $BACKUP_DIR"
 
 # --- 3. install ---------------------------------------------------------------
@@ -102,12 +103,18 @@ say "backed up current configs to $BACKUP_DIR"
 CHANGED=0
 cmp -s "$REPO_DIR/deploy/nginx/taxonomy-redirects.conf" "$EXT_DIR/10-taxonomy-redirects.conf" || CHANGED=1
 cmp -s "$REPO_DIR/deploy/nginx/legacy-redirects.conf" "$HTTP_DIR/0.legacy-redirects.conf" || CHANGED=1
+cmp -s "$REPO_DIR/deploy/nginx/20-block-cn-crawlers.conf" "$EXT_DIR/20-block-cn-crawlers.conf" || CHANGED=1
+NEW_BLOCK=0
+[ -f "$EXT_DIR/20-block-cn-crawlers.conf" ] || NEW_BLOCK=1
 
 cp "$REPO_DIR/deploy/nginx/taxonomy-redirects.conf" "$EXT_DIR/10-taxonomy-redirects.conf"
 cp "$REPO_DIR/deploy/nginx/legacy-redirects.conf" "$HTTP_DIR/0.legacy-redirects.conf"
+# Chinese search/AI crawlers and bulk-scraping libraries get a 403 (client, 2026-10-16).
+cp "$REPO_DIR/deploy/nginx/20-block-cn-crawlers.conf" "$EXT_DIR/20-block-cn-crawlers.conf"
 say "installed:"
 say "  $EXT_DIR/10-taxonomy-redirects.conf   ($(grep -c 'return 301' "$EXT_DIR/10-taxonomy-redirects.conf") rules)"
 say "  $HTTP_DIR/0.legacy-redirects.conf     ($(grep -cE '^\s+[0-9]+ "/' "$HTTP_DIR/0.legacy-redirects.conf") ids)"
+say "  $EXT_DIR/20-block-cn-crawlers.conf   (crawler block)"
 if [ "$CHANGED" = "0" ]; then
   say ""
   say "  (both files were already identical — nothing actually changed)"
@@ -122,6 +129,9 @@ if ! nginx -t; then
   say "!! nginx -t FAILED — restoring the previous configs and NOT reloading."
   cp -p "$BACKUP_DIR/10-taxonomy-redirects.conf" "$EXT_DIR/" 2>/dev/null || true
   cp -p "$BACKUP_DIR/0.legacy-redirects.conf" "$HTTP_DIR/" 2>/dev/null || true
+  # The crawler block is new on 2026-10-16: on a first install there is no backup of it, so
+  # restoring means removing it, or the broken file would still be included.
+  if [ "$NEW_BLOCK" = "1" ]; then rm -f "$EXT_DIR/20-block-cn-crawlers.conf"; else cp -p "$BACKUP_DIR/20-block-cn-crawlers.conf" "$EXT_DIR/" 2>/dev/null || true; fi
   say "   restored. The site is unchanged. Send this output to the developer."
   exit 1
 fi
@@ -203,11 +213,35 @@ done <<'CHECKS'
 /index.php?lang=es/|301|/es/
 CHECKS
 
+#
+# The crawler block, checked both ways: a blocked user agent must get 403, and an ordinary
+# browser and the assistants we want quoting us (GPTBot, ClaudeBot) must still get 200.
+# A block that also refused GPTBot would quietly undo the site's GEO work.
+say ""
+say "verifying the crawler block at the origin:"
+while IFS='|' read -r agent expect; do
+  [ -n "$agent" ] || continue
+  code=$(curl -s -o /dev/null -w '%{http_code}' -A "$agent" -k --resolve cantonlock.com:443:127.0.0.1 "https://cantonlock.com/" || echo 000)
+  if [ "$code" = "$expect" ]; then
+    say "  OK   $code  $agent"
+  else
+    say "  BAD  got $code, expected $expect  $agent"
+    FAIL=1
+  fi
+done <<'AGENTS'
+Mozilla/5.0 (compatible; Bytespider; spider-feedback@bytedance.com)|403
+Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)|403
+python-requests/2.31.0|403
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36|200
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)|200
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)|200
+AGENTS
+
 say ""
 if [ "$FAIL" = "0" ]; then
   say "All redirects live. Now purge Cloudflare — it caches 301s."
 else
-  say "Some redirects are not live. Send this output to the developer."
+  say "Some checks failed (redirects or crawler block). Send this output to the developer."
   say "The previous configs are in $BACKUP_DIR if a rollback is needed."
   exit 1
 fi

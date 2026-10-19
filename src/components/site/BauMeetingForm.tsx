@@ -6,6 +6,7 @@ import type { BauCopy, BauLocale } from "@/data/bau-2027";
 import { submitInquiry } from "@/lib/inquiry-submit";
 import { trackLead } from "@/lib/analytics-events";
 import { Button } from "./Button";
+import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { PrivacyNote } from "./PrivacyNote";
 
 const FIELD_CLASS =
@@ -47,6 +48,8 @@ export function BauMeetingForm({
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [mailto, setMailto] = useState("");
   const submitting = useRef(false);
+  const captcha = useRef<HCaptchaHandle>(null);
+  const [captchaHint, setCaptchaHint] = useState(false);
 
   function asEmail(payload: FormData): string {
     const rows: [string, string][] = [
@@ -66,6 +69,11 @@ export function BauMeetingForm({
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (submitting.current) return;
+    if (!captcha.current?.token()) {
+      setCaptchaHint(true);
+      return;
+    }
+    setCaptchaHint(false);
     const form = event.currentTarget;
     const payload = new FormData(form);
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
@@ -96,6 +104,7 @@ export function BauMeetingForm({
       fail();
     } finally {
       submitting.current = false;
+      captcha.current?.reset();
     }
   }
 
@@ -177,6 +186,8 @@ export function BauMeetingForm({
       </label>
 
       <div className="space-y-12">
+        <HCaptchaField ref={captcha} locale={locale} />
+        {captchaHint ? <p role="alert" className="text-c2 text-ink">{captchaMissingMessage(locale)}</p> : null}
         <Button type="submit" disabled={status === "submitting"}>
           {status === "submitting" ? system.sending : copy.submit}
         </Button>

@@ -9,6 +9,7 @@ import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
+import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { EmailLink } from "./EmailLink";
 import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
@@ -130,6 +131,8 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const searchParams = useSearchParams();
   const [product, setProduct] = useState(() => queryValue(searchParams, "product"));
   const [model, setModel] = useState(() => queryValue(searchParams, "model"));
+  /* Requirements box: empty unless a tool link (the euro cylinder calculator) sent `note`. */
+  const [message, setMessage] = useState("");
   /* The article a quote link came from (`#from=guides/…`), sent with the lead so the export team sees which guide sold it. */
   const [sourceArticle, setSourceArticle] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -138,6 +141,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const [fallback, setFallback] = useState("");
   const submitting = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
+  const captcha = useRef<HCaptchaHandle>(null);
   const [returnToForm, setReturnToForm] = useState(false);
   useEffect(() => {
     if (returnToForm && status === "idle") {
@@ -152,6 +156,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     setProduct(prefill.product);
     setModel(prefill.model);
     setSourceArticle(prefill.from);
+    if (prefill.note) setMessage(prefill.note);
     /* A fragment like #model=… names no element, so the browser keeps the previous page's scroll
        position and the buyer lands near the footer. Take them to the form they came for. */
     /* Deferred: the router's own scroll handling for the hash runs after this effect. */
@@ -200,6 +205,11 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     if (submitting.current) return;
 
     const form = event.currentTarget;
+    if (!captcha.current?.token()) {
+      setStatus("error");
+      setStatusMessage(captchaMissingMessage(locale));
+      return;
+    }
     const payload = new FormData(form);
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
 
@@ -250,6 +260,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       form.reset();
       setProduct("");
       setModel("");
+      setMessage("");
       setFallback("");
       setStatus("success");
       setStatusMessage(text.success);
@@ -264,6 +275,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         : text.failure);
     } finally {
       submitting.current = false;
+      captcha.current?.reset();
     }
   }
 
@@ -351,10 +363,14 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         <textarea
           className={`${FIELD_CLASS} min-h-160 resize-y`}
           name="message"
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
           placeholder={text.placeholder}
           required
         />
       </label>
+
+      <HCaptchaField ref={captcha} locale={locale} />
 
       <div className="flex flex-col items-start gap-16 sm:flex-row sm:items-center">
         <Button type="submit" disabled={status === "submitting"}>

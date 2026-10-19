@@ -31,7 +31,23 @@ import {
   TableCell,
   WidthType,
   AlignmentType,
+  ImageRun,
 } from "docx";
+
+/*
+  `![说明](路径)` 嵌入 PNG / JPG（2026-10-18：广交会动线图要在手机上的 Word 里直接看到）。
+  路径相对于 markdown 文件所在目录；宽度缩到 600 px，按原图比例算高度。
+*/
+function imageSize(buf) {
+  if (buf.readUInt32BE(0) === 0x89504e47) return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+  for (let o = 2; o < buf.length; ) {
+    const marker = buf.readUInt16BE(o);
+    const len = buf.readUInt16BE(o + 2);
+    if (marker >= 0xffc0 && marker <= 0xffc3) return { w: buf.readUInt16BE(o + 7), h: buf.readUInt16BE(o + 5) };
+    o += 2 + len;
+  }
+  throw new Error("unreadable image size");
+}
 
 const argSrc = process.argv.indexOf("--src");
 const SOURCE = argSrc !== -1 ? process.argv[argSrc + 1] : "docs/collaboration/CLIENT-RUNBOOK.md";
@@ -130,6 +146,30 @@ function convert(markdown) {
         }),
       );
       out.push(new Paragraph({ text: "", spacing: { after: 120 } }));
+      continue;
+    }
+
+    // 图片
+    const image = line.match(/^\s*!\[([^\]]*)\]\(([^)]+)\)\s*$/);
+    if (image) {
+      const file = join(SOURCE.replace(/[\\/][^\\/]*$/, ""), image[2]);
+      const data = readFileSync(file);
+      const { w, h } = imageSize(data);
+      const width = Math.min(600, w);
+      out.push(
+        new Paragraph({
+          children: [
+            new ImageRun({
+              type: /\.png$/i.test(file) ? "png" : "jpg",
+              data,
+              transformation: { width, height: Math.round((h * width) / w) },
+              altText: { title: image[1], description: image[1], name: image[1] },
+            }),
+          ],
+          spacing: { after: 120 },
+        }),
+      );
+      i++;
       continue;
     }
 
