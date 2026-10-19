@@ -194,4 +194,5 @@
 | 188 | 发布「hyde前端管理」会话 b5e49f1cdf2d：全屏菜单底栏按钮样式、社媒加 eBay（页脚与 sameAs）；实测手机/桌面菜单底栏与 eBay 链接 | 10-14 完成（v2026.10.14.3；eBay https://www.ebay.com/usr/hydecantonlock 在页脚与 sameAs） |
 | 189 | 发布「Hyde 文案」会话 7082b3175827：037 PS 新品（8 图 + 视频）、037 文案 knob、文章计数 616/549；实测新产品页与视频 | 10-14 完成（v2026.10.14.3；/products/panic-exit-devices/037-ps-panic-exit-device-trim/ 200，带视频；标题描述由生成器补齐） |
 | 190 | 紧急：所有询盘表单提交失败（Web3Forms 后台开了 hCaptcha，表单没带 token）→ 发布「hyde前端管理」修复 90919c04edc2；上线后请甲方真人提交一次确认 | 待甲方（v2026.10.14.3 已上线，/contact/ 实测加载 hCaptcha 脚本与验证框；需甲方真人提交一次询盘确认收到） |
+| 191 | 发布「Hyde 文案」会话 ee8feaf3e009：按全站图片审计从 168 个产品页撤下 225 张不通过的图，19-130MM、6068 主图换实拍；实测并核对有无产品因此无图下架 | 10-19 完成（v2026.10.19.1，GitLab d71db10e39c；首发被 srcset 检查拦下，补 6068 新主图响应式尺寸后重发；核对 168 条无产品因撤图下架；线上 6068 用新主图） |
 | 191 | 云端会话 10-16（接管 8 个本地会话）：锁芯计算器带尺寸进询盘（#149 收尾）；main 上 `npm run check` 第一步红（菜单底栏 CSS 裸 150ms）→ 改动效令牌；EN/ES/PT + 七语文章目录数 613→616、七语 546→549 / 326→330；七语镜像补齐（每语种界面 74 句、037 PS、16 条过期记录按段补丁 35 处，新脚本 i18n-stale-diff / i18n-apply-patch） | 待发布（分支 claude/loving-albattani-nmoa45 → PR；合并后由 johns 机器 release:hyde） |
