@@ -108,6 +108,12 @@ const TARGETS = [
   "stainless-lever-range-9007-9008-9014",
   "deadbolt-d101-d102-and-the-rim-alternative",
   "brass-piano-hinge-is-a-finish-not-a-metal",
+  /* Week-1 articles of the 7-a-week plan (2026-10-19). Same rule. */
+  "flush-bolt-selection-manual-automatic-length-which-leaf",
+  "how-to-write-a-keying-schedule-with-template",
+  "satin-chrome-vs-satin-nickel-us26d-us15",
+  "fire-rated-door-knobs-and-levers-what-is-rated",
+  "why-key-bitting-must-be-unique-master-key-security",
 ];
 
 /**
