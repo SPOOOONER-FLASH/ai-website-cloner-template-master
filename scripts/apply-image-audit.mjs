@@ -16,7 +16,7 @@ const verdicts = JSON.parse(fs.readFileSync("docs/research/image-audit/verdicts.
 const v = (src) => verdicts[`public${src}`] ?? {};
 const failed = (src) => v(src).verdict === "不通过";
 
-let removed = 0, products = 0;
+let removed = 0, products = 0, swapped = 0;
 const kept = [];
 for (const f of fs.readdirSync("content/products").filter((x) => x.endsWith(".json"))) {
   const file = `content/products/${f}`;
@@ -30,6 +30,7 @@ for (const f of fs.readdirSync("content/products").filter((x) => x.endsWith(".js
     if (i === -1) kept.push(`${p.slug}: failed hero kept, no photograph to replace it`);
     else {
       const [g] = gallery.splice(i, 1);
+      swapped++;
       hero = { src: g.src, ratio: g.ratio ?? "1 / 1", label: hero.label };
       console.log(`${p.slug}: hero → ${g.src.split("/").pop()}`);
     }
@@ -46,4 +47,5 @@ for (const f of fs.readdirSync("content/products").filter((x) => x.endsWith(".js
   }
 }
 for (const k of kept) console.log(`! ${k}`);
+if (WRITE && swapped) console.log("! heroes changed: run node scripts/build-product-image-config.mjs && node scripts/generate-editorial-srcsets.mjs, then git-restore the variants of unrelated products (deploy:prep blocks a hero without 320–840w variants)");
 console.log(`${removed} image(s) off ${products} product page(s)${WRITE ? "" : " (dry run)"}`);
