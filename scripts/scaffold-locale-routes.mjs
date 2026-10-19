@@ -30,12 +30,16 @@ const STATIC = [
   ["configurator/studio", "ConfiguratorStudioPage", "ConfiguratorStudioPage", "configuratorStudioMetadata"],
   ["contact", "ContactPage", "ContactPage", "contactMetadata"],
   ["documents", "DocumentsPage", "DocumentsPage", "documentsMetadata"],
+  ["door-handing-finder", "ToolPages", "HandingFinderPage", "handingFinderMetadata"],
+  ["door-hardware-hs-code-finder", "ToolPages", "HsCodeFinderPage", "hsCodeFinderMetadata"],
   ["downloads", "DownloadsPage", "DownloadsPage", "downloadsMetadata"],
   ["euro-cylinder-calculator", "CylinderCalculatorPage", "CylinderCalculatorPage", "cylinderCalculatorMetadata"],
   ["faq", "FaqPage", "FaqPage", "faqMetadata"],
+  ["finish-code-converter", "ToolPages", "FinishConverterPage", "finishConverterMetadata"],
   ["finishes", "FinishesPage", "FinishesPage", "finishesMetadata"],
   ["glossary", "GlossaryPage", "GlossaryPage", "glossaryMetadata"],
   ["guides", "ArticlePages", "GuidesIndexPage", "guidesIndexMetadata"],
+  ["master-key-plan-generator", "ToolPages", "MasterKeyPlanPage", "masterKeyPlanMetadata"],
   ["model-lookup", "ModelLookupPage", "ModelLookupPage", "modelLookupMetadata"],
   ["news", "ArticlePages", "NewsIndexPage", "newsIndexMetadata"],
   ["product-finder", "ProductFinderPage", "ProductFinderPage", "productFinderMetadata"],
@@ -44,6 +48,7 @@ const STATIC = [
   ["products/argentina-ar4", "ArgentinaAr4Page", "ArgentinaAr4Page", "argentinaAr4Metadata"],
   ["projects", "ProjectPages", "ProjectsIndexPage", "projectsIndexMetadata"],
   ["services", "SimplePages", "ServicesPage", "servicesMetadata"],
+  ["tools", "ToolPages", "ToolsIndexPage", "toolsIndexMetadata"],
 ];
 
 /** Dynamic pages: dir → module, component, metadata builder, params builder, param names. */

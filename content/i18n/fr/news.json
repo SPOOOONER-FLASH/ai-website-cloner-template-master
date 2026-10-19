@@ -1185,7 +1185,7 @@
     "seoDescription": "Gauche, droite, inversé, réversible : DIN et ANSI/BHMA A156.115 nomment autrement la même porte. Noter le sens d'ouverture sur une commande sans ambiguïté.",
     "body": [
       "Le sens d'ouverture (la main) indique sur quel chant de la porte se trouvent les paumelles et dans quel sens pivote le vantail. Il compte parce qu'une béquille doit retomber du bon côté, qu'un pêne demi-tour a un biseau qui doit faire face au dormant, et qu'un coffre de serrure usiné pour une main ne fermera pas sur l'autre. C'est une lettre, et c'est le champ le plus souvent laissé vide dans une demande.",
-      "Il existe deux conventions, et elles ne concordent pas. La méthode européenne place l'observateur du côté vers lequel la porte s'ouvre (côté tirant) et la dit gauche si les paumelles sont à gauche. La méthode américaine (ANSI/BHMA A156.115) place l'observateur À L'EXTÉRIEUR, du côté où l'on utiliserait la clé, et ajoute « reverse » (inversé) pour les portes qui s'ouvrent en s'éloignant. La même porte physique est DIN gauche selon l'une et droite inversée selon l'autre.",
+      "Il existe deux conventions, et elles ne concordent pas. La méthode européenne place l'observateur du côté vers lequel la porte s'ouvre (côté tirant) et la dit gauche si les paumelles sont à gauche. La méthode américaine (ANSI/BHMA A156.115) place l'observateur À L'EXTÉRIEUR, du côté où l'on utiliserait la clé, et ajoute « reverse » (inversé) pour les portes qui s'ouvrent vers lui. La même porte physique est DIN gauche selon l'une et droite (right hand) selon l'autre.",
       "C'est pourquoi « gauche » écrit seul n'est pas une réponse. C'est une réponse assortie d'une hypothèse sur la convention qu'utilise le lecteur, et ce lecteur se trouve à l'autre bout du monde. La façon univoque de le dire est de décrire la porte : paumelles à gauche vues depuis le couloir, ouverture en s'éloignant de vous. Vingt mots impossibles à mal lire valent mieux qu'une lettre qui peut l'être.",
       "Un test utile qui ne dépend d'aucune convention : placez-vous là où entre la clé. Si les nœuds de paumelles sont à votre gauche, la porte est gauche au sens américain ; si, de là, elle s'ouvre vers vous, elle est « reverse ». Précisez de quel côté vous vous teniez, et la phrase survivra à la traduction.",
       "Certaines quincailleries n'en ont que faire. Un loqueteau tubulaire à pêne symétrique, la plupart des cylindres européens, les paumelles elles-mêmes et toute béquille sur rosace à ressort sont sans main (réversibles, marqués U), et le champ peut honnêtement l'indiquer. Les pênes réversibles sont un cas intermédiaire : le pêne peut être retourné sur chantier, ce qui est un vrai confort et aussi une vraie occasion de le retourner à tort sans que personne ne le vérifie.",
@@ -1248,7 +1248,7 @@
       "summary": "4773e078687f",
       "seoTitle": "8c2cde9e61ac",
       "seoDescription": "1e41fcb3c7e3",
-      "body": "3de4352e376e",
+      "body": "f18c10a3e7a4",
       "faq": "1b9a99b37c88"
     }
   },

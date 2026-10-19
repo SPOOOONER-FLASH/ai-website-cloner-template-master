@@ -105,6 +105,12 @@ export function siteSitemap(): MetadataRoute.Sitemap {
     // The euro cylinder calculator, 2026-09-27. A tool page: it ranks for the sizing
     // question a buyer asks before looking for a supplier.
     ...entry("/euro-cylinder-calculator", PRIORITY.support),
+    // The four tool pages of 2026-10-19 and their index: each answers a search the site already gets.
+    ...entry("/tools", PRIORITY.support),
+    ...entry("/door-hardware-hs-code-finder", PRIORITY.support),
+    ...entry("/finish-code-converter", PRIORITY.support),
+    ...entry("/master-key-plan-generator", PRIORITY.support),
+    ...entry("/door-handing-finder", PRIORITY.support),
     // The specification glossary. Definitional content is the most-cited kind we publish.
     ...entry("/glossary", PRIORITY.support),
     /*

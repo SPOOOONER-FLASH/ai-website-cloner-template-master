@@ -251,6 +251,25 @@ export function bhmaFinish(code: string, material: string | undefined): BhmaFini
   return row?.[base] ?? null;
 }
 
+/** One of our codes on one base, with its BHMA and US numbers: the table, flattened. */
+export interface BhmaRow extends BhmaFinish {
+  house: string;
+  base: BhmaBase;
+}
+
+/** Every exact equivalence in the table, for /finish-code-converter/. */
+export function bhmaRows(): BhmaRow[] {
+  return Object.entries(FINISH_TO_BHMA).flatMap(([house, bases]) =>
+    (Object.entries(bases) as [BhmaBase, BhmaFinish][]).map(([base, f]) => ({ house, base, ...f })),
+  );
+}
+
+/** Our code for a written-out finish name ("Satin Chrome" → "SC"), or the input upper-cased. */
+export function canonicalFinish(code: string): string {
+  const key = code.trim().toUpperCase();
+  return FINISH_ALIASES[key] ?? key;
+}
+
 /**
  * Every BHMA equivalent a product can claim, deduplicated, in catalogue order.
  *

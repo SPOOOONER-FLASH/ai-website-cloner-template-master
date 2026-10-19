@@ -80,6 +80,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Model lookup", href: "/model-lookup/" },
           { label: "Order codes", href: "/finishes/" },
           { label: "Cylinder calculator", href: "/euro-cylinder-calculator/" },
+          { label: "Tools", href: "/tools/" },
         ],
       },
       {
@@ -156,6 +157,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Buscador de modelos", href: "/es/model-lookup/" },
           { label: "Códigos de pedido", href: "/es/finishes/" },
           { label: "Calculadora de cilindro", href: "/es/euro-cylinder-calculator/" },
+          { label: "Herramientas", href: "/es/tools/" },
         ],
       },
       {
@@ -229,6 +231,7 @@ const concierge: LocaleDict<ConciergeExperience> = {
           { label: "Procurar modelo", href: "/pt/model-lookup/" },
           { label: "Códigos de pedido", href: "/pt/finishes/" },
           { label: "Calculadora de cilindro", href: "/pt/euro-cylinder-calculator/" },
+          { label: "Ferramentas", href: "/pt/tools/" },
         ],
       },
       {

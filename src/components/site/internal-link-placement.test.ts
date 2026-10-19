@@ -32,6 +32,10 @@ const EXEMPT: Record<string, string> = {
   "/video": "one watch page per product video, linked from that product page",
   "/privacy": "legal page, linked from every footer and under every form, not a drawer section",
   "/sitemap-index.xml": "XML for search engines (lists the ten sitemaps), not a page a reader visits",
+  "/door-handing-finder": "the /tools/ index (drawer and footer) lists it, and so do the articles it applies to (ArticleBuyerBlock TOOLS)",
+  "/door-hardware-hs-code-finder": "the /tools/ index (drawer and footer) lists it, and so do the articles it applies to (ArticleBuyerBlock TOOLS)",
+  "/finish-code-converter": "the /tools/ index (drawer and footer) lists it, and so do the articles it applies to (ArticleBuyerBlock TOOLS)",
+  "/master-key-plan-generator": "the /tools/ index (drawer and footer) lists it, and so do the articles it applies to (ArticleBuyerBlock TOOLS)",
 };
 
 /** The English sections: each top-level folder, or its first nested page when it has no index. */

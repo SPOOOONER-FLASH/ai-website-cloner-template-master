@@ -90,6 +90,12 @@ const SPANISH_MIRROR_PREFIXES = [
   "/glossary",
   // The euro cylinder calculator, 2026-09-27: a tool page, same buyer in every language.
   "/euro-cylinder-calculator",
+  // The four tool pages of 2026-10-19 and their index.
+  "/tools",
+  "/door-hardware-hs-code-finder",
+  "/finish-code-converter",
+  "/master-key-plan-generator",
+  "/door-handing-finder",
   // OEM / private-label services, 2026-09-24: Spanish copy written by the copy session.
   "/services",
 ];
@@ -232,6 +238,12 @@ const PORTUGUESE_MIRROR_PREFIXES = [
   "/glossary",
   // The euro cylinder calculator, 2026-09-27: a tool page, same buyer in every language.
   "/euro-cylinder-calculator",
+  // The four tool pages of 2026-10-19 and their index.
+  "/tools",
+  "/door-hardware-hs-code-finder",
+  "/finish-code-converter",
+  "/master-key-plan-generator",
+  "/door-handing-finder",
   "/documents",
   "/guides",
   // OEM / private-label services, 2026-09-24: Portuguese copy written by the copy session.

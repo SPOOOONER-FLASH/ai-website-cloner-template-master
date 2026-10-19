@@ -26,6 +26,30 @@ import { ProductCard } from "./ProductCard";
  */
 const MAX_CARDS = 3;
 
+/* The tool page that does what the article explains (2026-10-19): the reader who just learned the rule can apply it. */
+const TOOLS: Record<string, { path: string; en: string; es: string; pt: string }> = (() => {
+  const hs = { path: "/door-hardware-hs-code-finder/", en: "HS code finder", es: "Buscador de código HS", pt: "Localizador de código HS" };
+  const finish = { path: "/finish-code-converter/", en: "Finish code converter", es: "Conversor de códigos de acabado", pt: "Conversor de códigos de acabamento" };
+  const keys = { path: "/master-key-plan-generator/", en: "Master key plan generator", es: "Generador de plan de amaestramiento", pt: "Gerador de plano de chave mestra" };
+  const hand = { path: "/door-handing-finder/", en: "Door handing finder", es: "Mano de la puerta", pt: "Mão da porta" };
+  const cyl = { path: "/euro-cylinder-calculator/", en: "Euro cylinder calculator", es: "Calculadora de cilindro europeo", pt: "Calculadora de cilindro europeu" };
+  return {
+    "door-hardware-hs-codes-2026": hs,
+    "india-hsn-codes-door-hardware-2026": hs,
+    "finish-codes-us26d-626-630": finish,
+    "finish-code-reference-2026": finish,
+    "chrome-finish-differences-2026": finish,
+    "satin-chrome-vs-satin-nickel-us26d-us15": finish,
+    "master-key-hierarchy-planning-2026": keys,
+    "master-key-systems-how-many-levels-you-need": keys,
+    "how-to-write-a-keying-schedule-with-template": keys,
+    "why-key-bitting-must-be-unique-master-key-security": keys,
+    "handing-left-right-and-universal": hand,
+    "door-thickness-to-cylinder-length-2026": cyl,
+    "euro-cylinder-size-chart-2026": cyl,
+  };
+})();
+
 /* localisedHref, not a bare prefix: /request/price-list/ exists in English only, and a /fr/ link to it 404s. */
 function nextLink(next: ArticleNext, locale: Locale): { href: string; label: string; detail?: string } {
   const to = (path: string) => localisedHref(path, locale);
@@ -78,6 +102,7 @@ export function ArticleBuyerBlock({
     : contactHref(base, { from });
   const next = route?.next ? nextLink(route.next, locale) : undefined;
   const heading = tx(locale, "Related products", { es: "Productos relacionados", pt: "Produtos relacionados" });
+  const tool = TOOLS[slug];
 
   return (
     <section id="article-products" data-link-list="article-products" className="mt-64" aria-labelledby={related.length ? "article-products-heading" : undefined}>
@@ -104,6 +129,17 @@ export function ArticleBuyerBlock({
             </ul>
           ) : null}
         </>
+      ) : null}
+
+      {tool ? (
+        <Link href={localisedHref(tool.path, locale)} className="mt-48 block border-t border-line pt-16 hover:text-brand-hover" data-link-list="article-tool">
+          <span className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+            {tx(locale, "Try the tool", { es: "Pruebe la herramienta", pt: "Experimente a ferramenta" })}
+          </span>
+          <span className="short-marker short-marker-arrow relative mt-8 block ps-12 text-c1 text-brand">
+            {tx(locale, tool.en, { es: tool.es, pt: tool.pt })}
+          </span>
+        </Link>
       ) : null}
 
       <Link href={quote} className="mt-48 block border-t border-ink pt-16 hover:text-brand-hover">

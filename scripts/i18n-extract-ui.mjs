@@ -118,7 +118,8 @@ for (const file of files(ROOT)) {
         "Sign-up here") reached ui-keys.json, so all 748 pages of every locale printed them.
       */
       const literal = (arg) => arg && (ts.isStringLiteral(arg) || ts.isNoSubstitutionTemplateLiteral(arg)) ? arg : null;
-      const keyArg = callee === "tx" ? literal(node.arguments[1]) : callee === "say" || callee === "pick" ? literal(node.arguments[0]) : null;
+      /* L(locale, en, es, pt): the tool pages' wrapper (src/components/locale-pages/ToolPages.tsx, 2026-10-19). */
+      const keyArg = callee === "tx" || callee === "L" ? literal(node.arguments[1]) : callee === "say" || callee === "pick" ? literal(node.arguments[0]) : null;
       if (keyArg) add(keyArg.text, file, keyArg, sf);
       if (callee === "localeMetadata") {
         for (const arg of node.arguments.slice(2, 4)) {
