@@ -53,8 +53,10 @@ for (const route of ["/", "/de/", "/bau-2027/", "/de/bau-2027/"]) {
     if (expectAr4) {
       const ar4 = html.match(/<section\b[^>]*data-content-module="argentina-ar4"[^>]*>[\s\S]*?<\/section>/)?.[0];
       assert.ok(ar4, `${route}: original AR4 section`);
-      for (const model of ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"]) assert.ok(ar4.includes(model), `${route}: ${model}`);
-      assert.ok(ar4.includes("argentina-ar4-entry"), `${route}: original AR4 hero`);
+      for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) assert.ok(ar4.includes(model), `${route}: ${model}`);
+      /* Since 2026-10-12 the home module is the Argentina collection: an AR-5 row where the photograph was. */
+      for (const model of ["AR5-2000", "AR5-120", "AR5-113", "AR5-123"]) assert.ok(ar4.includes(model), `${route}: ${model}`);
+    assert.match(ar4, /href="(?:\/es)?\/products\/argentina\/#ar5-/, `${route}: AR-5 tiles open the collection`);
       for (const image of ar4.matchAll(/<img\b[^>]*src="([^"]+)"/g)) photographs.add(image[1]);
       assert.doesNotMatch(html, /<h2\b[^>]*id="flagship-tooling-heading"/, `${route}: repeated flagship section removed`);
     }

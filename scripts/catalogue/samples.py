@@ -20,7 +20,10 @@ from pathlib import Path
 import pymupdf
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "brand"))
 from catalogue import heroes, qr, style  # noqa: E402
+import hyde_mark as hm  # noqa: E402
+import kit  # noqa: E402
 from catalogue.heroes import legacy  # noqa: E402
 
 ROOT = style.ROOT
@@ -173,7 +176,7 @@ def grid_plate(product: dict) -> Path | None:
 
 def folio(c: Canvas, number: int, label: str) -> None:
     c.text(L, H - 34, label.upper(), 6.5, "text-medium", style.INK3, track=120)
-    c.text_right(R, H - 34, f"{number:03d}", 7.5, "text-semibold", style.BRASS)
+    c.text_right(R, H - 34, f"{number:03d}", 7.5, "text-semibold", style.ACCENT)
 
 
 # --------------------------------------------------------------------------- pages
@@ -182,8 +185,10 @@ def folio(c: Canvas, number: int, label: str) -> None:
 def cover(c: Canvas) -> None:
     fam = next(f for f in heroes.families() if f.slug == "lever-handles")
     _, hero = heroes.hero_for(fam)
-    c.text(L, 118, "HYDE", 72, "display-semibold", style.INK, track=40)
-    c.rule(L, 140, L + 64, style.BRASS, 1.2)
+    mark = hm.horizontal()   # the refined mark, not the word typed in Archivo
+    mh = 46
+    kit.place_mark(c.page, c.r(L, 118 - mh, L + mh * mark.width / mark.height, 118), mark, hm.INK)
+    c.rule(L, 140, L + 64, style.ACCENT, 1.2)
     c.text(L, 166, "Door hardware", 15, "text-medium", style.INK)
     c.text(L, 186, "Export catalogue 2026", 15, "text", style.INK2)
     c.text(L, 214, "SINCE 1998  ·  XIAOLAN, ZHONGSHAN, CHINA", 7, "text-medium", style.INK3, track=140)
@@ -194,7 +199,7 @@ def cover(c: Canvas) -> None:
 
 
 def factory(c: Canvas, number: int = 4) -> None:
-    c.text(L, 96, "THE FACTORY", 7, "text-medium", style.BRASS, track=160)
+    c.text(L, 96, "THE FACTORY", 7, "text-medium", style.ACCENT, track=160)
     c.text(L, 128, "A factory, not a trading office.", 24, "display", style.INK)
     # One photograph as large as its pixels allow: 1308 px prints 166 mm at 200 dpi,
     # nearly the full text width. Two side by side came out stamp-sized.
@@ -223,8 +228,8 @@ def factory(c: Canvas, number: int = 4) -> None:
 def opener(c: Canvas, number: int) -> None:
     fam = next(f for f in heroes.families() if f.slug == "panic-exit-devices")
     _, hero = heroes.hero_for(fam)
-    c.text(L, 96, f"{number:02d}", 9, "text-semibold", style.BRASS)
-    c.rule(L + 22, 93, L + 70, style.BRASS, 0.8)
+    c.text(L, 96, f"{number:02d}", 9, "text-semibold", style.ACCENT)
+    c.rule(L + 22, 93, L + 70, style.ACCENT, 0.8)
     c.text(L, 150, fam.name, 34, "display-semibold", style.INK)
     c.paragraph(L, 168, L + 330, 230, fam.summary, 11, "text", style.INK2, leading=1.4)
     c.text(L, 252, f"{len(fam.products)} MODELS", 7.5, "text-medium", style.INK3, track=140)
@@ -286,8 +291,8 @@ def product_page(c: Canvas, number: int) -> list[dict]:
 def band_page(c: Canvas, number: int, section: int) -> list[dict]:
     """Option B: the family's opener as a band at the top of its first product page."""
     fam = _panic()
-    c.text(L, 78, f"{section:02d}", 9, "text-semibold", style.BRASS)
-    c.rule(L + 22, 75, L + 70, style.BRASS, 0.8)
+    c.text(L, 78, f"{section:02d}", 9, "text-semibold", style.ACCENT)
+    c.rule(L + 22, 75, L + 70, style.ACCENT, 0.8)
     c.text(L, 118, fam.name, 28, "display-semibold", style.INK)
     c.paragraph(L, 132, L + 300, 180, fam.summary, 9.5, "text", style.INK2, leading=1.4)
     c.text(L, 196, f"{len(fam.products)} MODELS", 7, "text-medium", style.INK3, track=140)

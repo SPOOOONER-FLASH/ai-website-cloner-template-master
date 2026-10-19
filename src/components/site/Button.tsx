@@ -17,7 +17,9 @@ type ButtonProps = BaseProps &
 type AnchorProps = BaseProps & {
   href: string;
   /**
-   * Passed through to the anchor. Added for `nofollow` on the quote CTA.
+   * Passed through to the anchor. It was added for `nofollow` on the quote CTA; since 2026-10-12
+   * quote links put their values in the fragment (`/contact/#product=…`), which a crawler sees
+   * as the one contact URL, so that CTA no longer needs it. The history below is why.
    *
    * Every product page links to `/contact/?product=…&model=…`, so 870 pages generate 870
    * distinct crawlable URLs for one page. Search Console reports all 69 it has found as

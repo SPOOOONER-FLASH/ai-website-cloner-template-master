@@ -95,15 +95,7 @@ function claim(at: readonly [string, string], expect: () => string) {
   claims.push({ where: `${at[0]}/${at[1]}`, expect });
 }
 
-// why-the-catalogue-is-this-wide
-claim(NEWS("why-the-catalogue-is-this-wide"), () => {
-  const families = new Set(hyde.map(top));
-  return `${hyde.length} entries in ${word(families.size)} product families`;
-});
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `${hyde.filter((p) => !(p.specs ?? []).length).length} of those ${hyde.length} entries carry no specification rows at all, and ${hyde.filter((p) => !p.heroImage?.src).length} have no photograph`);
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `knob locks (${inFamily("knob-locks").length} entries), lever handles (${inFamily("lever-handles").length}), hardware accessories such as stops, flush bolts and viewers (${inFamily("hardware-accessories").length}), lock cases (${inFamily("lock-cases").length}), bathroom accessories (${inFamily("bathroom-accessories").length}) and panic exit devices (${inFamily("panic-exit-devices").length})`);
-// care-grab-bars joined the small end on 2026-09-24, when the grab bars and shower seat left bathroom-accessories.
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `sliding hook locks (${inFamily("sliding-hook-locks").length}), grab bars and shower seats (${inFamily("care-grab-bars").length}), door closers (${inFamily("door-closers").length}) and deadbolts (${inFamily("deadbolts").length})`);
+// why-the-catalogue-is-this-wide was drafted on 2026-10-13 (boss: tooling and internal process stay off the site); its claims went with it.
 
 // brass-piano-hinge-is-a-finish-not-a-metal
 claim(NEWS("brass-piano-hinge-is-a-finish-not-a-metal"), () => {
@@ -148,7 +140,7 @@ claim(GUIDE("mortise-lock-case-comparison-2026"), () => {
 // exit-device-comparison-2026 — counts over PUBLISHED records (the page only shows those)
 function exitFamily() {
   const all = inFamily("panic-exit-devices").filter((p) => p.heroImage?.src);
-  const trims = all.filter((p) => /^Trim handle/i.test(spec(p, "Type") ?? ""));
+  const trims = all.filter((p) => /^Trim (handle|knob)/i.test(spec(p, "Type") ?? ""));
   const cases = all.filter((p) => /lock case/i.test(spec(p, "Type") ?? ""));
   const coordinators = all.filter((p) => /sequencing|automatic closing/i.test(spec(p, "Function") ?? ""));
   const devices = all.filter((p) => !trims.includes(p) && !cases.includes(p) && !coordinators.includes(p));
@@ -268,19 +260,61 @@ test("HYDE coverage articles use site-filtered counts in all three languages", (
       hyde.length,
       coverage.fields.finish.products,
     ] },
-    { dir: "content/guides", slug: "qualifying-a-hardware-supplier-2026", counts: inventory },
+    // qualifying-a-hardware-supplier-2026 left this list on 2026-10-13: its "Applying this to us" section, which held these counts, was cut.
     { dir: "content/guides", slug: "technical-drawings-what-to-expect-2026", counts: inventory },
     { dir: "content/news", slug: "what-documents-you-can-actually-get", counts: inventory },
   ];
   const bodyKeys = { en: "body", es: "bodyEs", pt: "bodyPt" } as const;
+  const has = (text: string, count: number) => new RegExp(`(?<![0-9A-Za-z])${count}(?![0-9A-Za-z])`).test(text);
 
   for (const { dir, slug, counts } of targets) {
     const article = JSON.parse(readFileSync(join(dir, `${slug}.json`), "utf8"));
     assert.doesNotMatch(JSON.stringify(article), /\b(?:964|973|95|79)\b/, `${slug} still quotes a shared-site or stale drawing count`);
     for (const [locale, bodyKey] of Object.entries(bodyKeys)) {
       const body = (article[bodyKey] as string[]).join("\n");
-      const missing = counts.filter((count) => !new RegExp(`(?<!\\d)${count}(?!\\d)`).test(body));
+      const missing = counts.filter((count) => !has(body, count));
       assert.deepEqual(missing, [], `${slug}/${locale} must state the current HYDE counts`);
+    }
+    // The seven overlay translations are the other homes of the same body (AGENTS.md: "an
+    // article body has ten homes"). On 2026-10-16 all seven still said 613 records three
+    // catalog changes after the English moved to 616.
+    for (const code of OVERLAY_CODES) {
+      const body = overlayBody(code, dir, slug);
+      if (body === undefined) continue;
+      const missing = counts.filter((count) => !has(body, count));
+      assert.deepEqual(missing, [], `content/i18n/${code} ${slug} must state the current HYDE counts`);
+    }
+  }
+});
+
+const OVERLAY_CODES = ["fr", "de", "ja", "ko", "tr", "ru", "ar"] as const;
+const overlays = new Map<string, { [slug: string]: { body?: string[]; faq?: { answer: string }[] } }>();
+function overlayBody(code: string, dir: string, slug: string): string | undefined {
+  const file = join("content/i18n", code, `${dir.endsWith("guides") ? "guides" : "news"}.json`);
+  if (!overlays.has(file)) overlays.set(file, JSON.parse(readFileSync(file, "utf8")));
+  const entry = overlays.get(file)![slug];
+  return entry?.body ? [...entry.body, ...(entry.faq ?? []).map((f) => f.answer)].join("\n") : undefined;
+}
+
+test("articles that state the catalog total state the current one in every language", () => {
+  // Sentences of the form "N records in our catalog" outside the registered claims above:
+  // the function-count FAQ and the backset article's Spanish and Portuguese bodies kept 613.
+  const totalStated = [
+    ["content/guides", "commercial-lock-function-decision-2026"],
+    ["content/news", "mortise-lock-backset-and-centre-distance-guide"],
+  ] as const;
+  // Any of the twenty totals just below today's, which is where a forgotten one sits.
+  const recent = Array.from({ length: 20 }, (_, i) => hyde.length - 1 - i).join("|");
+  const stale = new RegExp(`(?<![0-9A-Za-z])(?:${recent})(?![0-9A-Za-z])`);
+  for (const [dir, slug] of totalStated) {
+    const article = JSON.parse(readFileSync(join(dir, `${slug}.json`), "utf8"));
+    const faqs = Object.values((article.faq ?? {}) as { [locale: string]: { answer: string }[] }).flat().map((f) => f.answer);
+    const own = [...article.body, ...(article.bodyEs ?? []), ...(article.bodyPt ?? []), ...faqs].join("\n");
+    assert.doesNotMatch(own, stale, `${slug} still quotes an old catalog total; it is ${hyde.length} now`);
+    assert.ok(own.includes(String(hyde.length)), `${slug} should state the ${hyde.length} total`);
+    for (const code of OVERLAY_CODES) {
+      const body = overlayBody(code, dir, slug);
+      if (body !== undefined) assert.doesNotMatch(body, stale, `content/i18n/${code} ${slug} still quotes an old catalog total`);
     }
   }
 });

@@ -1,0 +1,582 @@
+[
+ {
+  "id": "306-s-panic-exit-device",
+  "model": "306-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [
+   "grey"
+  ],
+  "nameEn": "Single Door Panic Exit Device",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [
+   {
+    "labelEn": "Material",
+    "labelPt": "Material",
+    "valueEn": "Aluminum alloy body, iron bar",
+    "valuePt": "Corpo em liga de alumínio, barra de ferro"
+   }
+  ],
+  "image": "/images/products-hyde/306-s-panic-exit-device.webp",
+  "href": "/products/panic-exit-devices/306-s-panic-exit-device/"
+ },
+ {
+  "id": "306-d-panic-exit-device",
+  "model": "306-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "grey"
+  ],
+  "nameEn": "Double Door Panic Exit Device",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [
+   {
+    "labelEn": "Material",
+    "labelPt": "Material",
+    "valueEn": "Aluminum alloy body, iron bar",
+    "valuePt": "Corpo em liga de alumínio, barra de ferro"
+   }
+  ],
+  "image": "/images/products-hyde/306-d-panic-exit-device.webp",
+  "href": "/products/panic-exit-devices/306-d-panic-exit-device/"
+ },
+ {
+  "id": "306-ps-panic-exit-device",
+  "model": "306 PS",
+  "family": "single",
+  "door": "single",
+  "outside": "none",
+  "colours": [
+   "grey"
+  ],
+  "nameEn": "Passage Push Bar",
+  "namePt": "Barra de empurrar de passagem livre",
+  "specs": [
+   {
+    "labelEn": "Material",
+    "labelPt": "Material",
+    "valueEn": "Aluminum alloy body, iron bar",
+    "valuePt": "Corpo em liga de alumínio, barra de ferro"
+   }
+  ],
+  "image": "/images/products-hyde/306-ps-panic-exit-device.webp",
+  "href": "/products/panic-exit-devices/306-ps-panic-exit-device/"
+ },
+ {
+  "id": "br1-d",
+  "model": "BR1-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "black"
+  ],
+  "nameEn": "Double-door panic bar",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-d.webp"
+ },
+ {
+  "id": "br1-dl",
+  "model": "BR1-DL",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "lever",
+  "colours": [
+   "grey"
+  ],
+  "nameEn": "Double-door panic bar, with outside lever",
+  "namePt": "Barra antipânico para porta de duas folhas, com maçaneta externa",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-dl.webp"
+ },
+ {
+  "id": "br1-dt",
+  "model": "BR1-DT",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Double-door panic bar, touch bar",
+  "namePt": "Barra antipânico para porta de duas folhas tipo touch",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-dt.webp"
+ },
+ {
+  "id": "br1-s",
+  "model": "BR1-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [
+   "stainless",
+   "grey"
+  ],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-s.webp"
+ },
+ {
+  "id": "br1-sk",
+  "model": "BR1-SK",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "lever-key",
+  "colours": [
+   "black",
+   "grey",
+   "white"
+  ],
+  "nameEn": "Single-door panic bar, with outside lever and key",
+  "namePt": "Barra antipânico para porta de uma folha, com maçaneta externa e chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-sk.webp"
+ },
+ {
+  "id": "br1-sl",
+  "model": "BR1-SL",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "lever",
+  "colours": [],
+  "nameEn": "Single-door panic bar, with outside lever",
+  "namePt": "Barra antipânico para porta de uma folha, com maçaneta externa",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-sl.webp"
+ },
+ {
+  "id": "br1-st",
+  "model": "BR1-ST",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar, touch bar",
+  "namePt": "Barra antipânico para porta de uma folha tipo touch",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-st.webp"
+ },
+ {
+  "id": "br1-stl",
+  "model": "BR1-STL",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "lever",
+  "colours": [],
+  "nameEn": "Single-door panic bar, touch bar, with outside lever",
+  "namePt": "Barra antipânico para porta de uma folha tipo touch, com maçaneta externa",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-stl.webp"
+ },
+ {
+  "id": "br1-stv",
+  "model": "BR1-STV",
+  "family": "single",
+  "door": "single",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "silver"
+  ],
+  "nameEn": "Single-door panic bar, touch bar, top and bottom rods",
+  "namePt": "Barra antipânico para porta de uma folha tipo touch, travamento vertical",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-stv.webp"
+ },
+ {
+  "id": "br1-tk",
+  "model": "BR1-TK",
+  "family": "trim",
+  "outside": "lever-key",
+  "colours": [
+   "grey",
+   "white"
+  ],
+  "nameEn": "Outside lever for panic bars with key",
+  "namePt": "Maçaneta externa para barra antipânico com chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br1-tk.webp"
+ },
+ {
+  "id": "br2-d",
+  "model": "BR2-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Double-door panic bar",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [],
+  "image": "/images/brazil-collection/br2-d.webp"
+ },
+ {
+  "id": "br2-dk",
+  "model": "BR2-DK",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "lever-key",
+  "colours": [
+   "black",
+   "grey",
+   "silver"
+  ],
+  "nameEn": "Double-door panic bar, with outside lever and key",
+  "namePt": "Barra antipânico para porta de duas folhas, com maçaneta externa e chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br2-dk.webp"
+ },
+ {
+  "id": "br2-sk",
+  "model": "BR2-SK",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "lever-key",
+  "colours": [
+   "silver",
+   "black"
+  ],
+  "nameEn": "Single-door panic bar, with outside lever and key",
+  "namePt": "Barra antipânico para porta de uma folha, com maçaneta externa e chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br2-sk.webp"
+ },
+ {
+  "id": "br2-sl",
+  "model": "BR2-SL",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "lever",
+  "colours": [],
+  "nameEn": "Single-door panic bar, with outside lever",
+  "namePt": "Barra antipânico para porta de uma folha, com maçaneta externa",
+  "specs": [],
+  "image": "/images/brazil-collection/br2-sl.webp"
+ },
+ {
+  "id": "br2-t",
+  "model": "BR2-T",
+  "family": "trim",
+  "outside": "lever",
+  "colours": [],
+  "nameEn": "Outside lever for panic bars",
+  "namePt": "Maçaneta externa para barra antipânico",
+  "specs": [],
+  "image": "/images/brazil-collection/br2-t.webp"
+ },
+ {
+  "id": "br2-tk",
+  "model": "BR2-TK",
+  "family": "trim",
+  "outside": "lever-key",
+  "colours": [],
+  "nameEn": "Outside lever for panic bars with key",
+  "namePt": "Maçaneta externa para barra antipânico com chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br2-tk.webp"
+ },
+ {
+  "id": "br3-d",
+  "model": "BR3-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Double-door panic bar",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [],
+  "image": "/images/brazil-collection/br3-d.webp"
+ },
+ {
+  "id": "br3-s",
+  "model": "BR3-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br3-s.webp"
+ },
+ {
+  "id": "br3-st",
+  "model": "BR3-ST",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar, touch bar",
+  "namePt": "Barra antipânico para porta de uma folha tipo touch",
+  "specs": [],
+  "image": "/images/brazil-collection/br3-st.webp"
+ },
+ {
+  "id": "br5-s",
+  "model": "BR5-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [
+   "black"
+  ],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br5-s.webp"
+ },
+ {
+  "id": "br5-tk",
+  "model": "BR5-TK",
+  "family": "trim",
+  "outside": "lever-key",
+  "colours": [
+   "grey",
+   "white",
+   "black"
+  ],
+  "nameEn": "Outside lever for panic bars with key",
+  "namePt": "Maçaneta externa para barra antipânico com chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br5-tk.webp"
+ },
+ {
+  "id": "br6-d",
+  "model": "BR6-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Double-door panic bar",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [],
+  "image": "/images/brazil-collection/br6-d.webp"
+ },
+ {
+  "id": "br6-s",
+  "model": "BR6-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br6-s.webp"
+ },
+ {
+  "id": "br6-sm",
+  "model": "BR6-SM",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar, with microswitch",
+  "namePt": "Barra antipânico para porta de uma folha, com microswitch",
+  "specs": [],
+  "image": "/images/brazil-collection/br6-sm.webp"
+ },
+ {
+  "id": "br6-t",
+  "model": "BR6-T",
+  "family": "trim",
+  "outside": "lever",
+  "colours": [],
+  "nameEn": "Outside lever for panic bars",
+  "namePt": "Maçaneta externa para barra antipânico",
+  "specs": [],
+  "image": "/images/brazil-collection/br6-t.webp"
+ },
+ {
+  "id": "br7-d",
+  "model": "BR7-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "silver"
+  ],
+  "nameEn": "Double-door panic bar",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-d.webp"
+ },
+ {
+  "id": "br7-dt",
+  "model": "BR7-DT",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "stainless"
+  ],
+  "nameEn": "Double-door panic bar, touch bar",
+  "namePt": "Barra antipânico para porta de duas folhas tipo touch",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-dt.webp"
+ },
+ {
+  "id": "br7-s",
+  "model": "BR7-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [
+   "silver"
+  ],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-s.webp"
+ },
+ {
+  "id": "br7-st",
+  "model": "BR7-ST",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [
+   "stainless"
+  ],
+  "nameEn": "Single-door panic bar, touch bar",
+  "namePt": "Barra antipânico para porta de uma folha tipo touch",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-st.webp"
+ },
+ {
+  "id": "br7-stv",
+  "model": "BR7-STV",
+  "family": "single",
+  "door": "single",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "stainless"
+  ],
+  "nameEn": "Single-door panic bar, touch bar, top and bottom rods",
+  "namePt": "Barra antipânico para porta de uma folha tipo touch, travamento vertical",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-stv.webp"
+ },
+ {
+  "id": "br7-sv",
+  "model": "BR7-SV",
+  "family": "single",
+  "door": "single",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "silver"
+  ],
+  "nameEn": "Single-door panic bar, top and bottom rods",
+  "namePt": "Barra antipânico para porta de uma folha, travamento vertical",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-sv.webp"
+ },
+ {
+  "id": "br7-t",
+  "model": "BR7-T",
+  "family": "trim",
+  "outside": "lever",
+  "colours": [
+   "silver"
+  ],
+  "nameEn": "Outside lever for panic bars",
+  "namePt": "Maçaneta externa para barra antipânico",
+  "specs": [],
+  "image": "/images/brazil-collection/br7-t.webp"
+ },
+ {
+  "id": "br8-d",
+  "model": "BR8-D",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Double-door panic bar",
+  "namePt": "Barra antipânico para porta de duas folhas",
+  "specs": [],
+  "image": "/images/brazil-collection/br8-d.webp"
+ },
+ {
+  "id": "br8-dg",
+  "model": "BR8-DG",
+  "family": "double",
+  "door": "double",
+  "locking": "vertical",
+  "outside": "none",
+  "colours": [
+   "silver"
+  ],
+  "nameEn": "Double-door panic bar for glass doors",
+  "namePt": "Barra antipânico para porta de duas folhas para porta de vidro",
+  "specs": [],
+  "image": "/images/brazil-collection/br8-dg.webp"
+ },
+ {
+  "id": "br8-s",
+  "model": "BR8-S",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar",
+  "namePt": "Barra antipânico para porta de uma folha",
+  "specs": [],
+  "image": "/images/brazil-collection/br8-s.webp"
+ },
+ {
+  "id": "br8-sg",
+  "model": "BR8-SG",
+  "family": "single",
+  "door": "single",
+  "locking": "lateral",
+  "outside": "none",
+  "colours": [],
+  "nameEn": "Single-door panic bar for glass doors",
+  "namePt": "Barra antipânico para porta de uma folha para porta de vidro",
+  "specs": [],
+  "image": "/images/brazil-collection/br8-sg.webp"
+ },
+ {
+  "id": "br8-tk",
+  "model": "BR8-TK",
+  "family": "trim",
+  "outside": "lever-key",
+  "colours": [],
+  "nameEn": "Outside lever for panic bars with key",
+  "namePt": "Maçaneta externa para barra antipânico com chave",
+  "specs": [],
+  "image": "/images/brazil-collection/br8-tk.webp"
+ }
+]

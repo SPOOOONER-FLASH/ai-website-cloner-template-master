@@ -64,7 +64,7 @@ const copy = {
   },
 } satisfies Record<Locale, BauEntryCopy>;
 
-const dateLocales: Record<Locale, string> = {
+export const dateLocales: Record<Locale, string> = {
   en: "en-GB", es: "es-419", pt: "pt-BR", fr: "fr-FR", de: "de-DE",
   ja: "ja-JP", ko: "ko-KR", tr: "tr-TR", ru: "ru-RU", ar: "ar",
 };

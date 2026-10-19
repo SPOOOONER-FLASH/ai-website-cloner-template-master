@@ -74,6 +74,22 @@ function existsInExport(path) {
 const hasExport = existsSync(EXPORT);
 const skipped = [];
 
+/*
+  A destination that IS a published HYDE product but is missing from the English export
+  means the export is stale, not that the page is meant to be absent. 2026-10-12: the
+  AR4-101 -> AR4-111 rename was generated against an export built before the rename, the
+  rule was skipped with only a printed warning, and the old URL shipped as a 404 instead of
+  a 301. A mirror may legitimately lack a page; the English catalogue may not. So stop.
+*/
+const staleExport = [];
+function expectInExport(slug, path) {
+  const file = `content/products/${slug}.json`;
+  if (!hasExport || !existsSync(file)) return;
+  const product = JSON.parse(readFileSync(file, "utf8"));
+  if (product.published === false || (product.sites && !product.sites.includes("hyde"))) return;
+  if (!existsInExport(path)) staleExport.push(path);
+}
+
 const lines = [
   "# Cantonlock catalog taxonomy redirects.",
   "#",
@@ -126,6 +142,7 @@ for (const [alias, { canonical, productSlugs }] of Object.entries(moves.category
 }
 
 for (const move of moves.productMoves) {
+  expectInExport(move.slug, `/products/${move.to}/${move.slug}/`);
   lines.push(`# ${move.slug}: ${move.from} -> ${move.to}`);
   lines.push(
     ...rule(`/products/${move.from}/${move.slug}`, `/products/${move.to}/${move.slug}/`),
@@ -139,6 +156,7 @@ for (const move of moves.productMoves) {
 */
 for (const merge of moves.productMerges ?? []) {
   const dest = merge.toCategory ?? merge.category; // renamed AND moved: still one hop
+  expectInExport(merge.to, `/products/${dest}/${merge.to}/`);
   lines.push(`# merged duplicate: ${merge.from} -> ${merge.to}`);
   lines.push(
     ...rule(`/products/${merge.category}/${merge.from}`, `/products/${dest}/${merge.to}/`),
@@ -171,6 +189,38 @@ for (const merge of moves.productMerges ?? []) {
 }
 if (videoRules.length) lines.push("# Renamed product videos", ...videoRules);
 
+/*
+  The /video/<slug>/ watch pages, 2026-10-12: the client's Ahrefs 404 list had
+  /video/dc01-panic-exit-device/ and /video/hy-0ss-lock-case/, both merged slugs whose new
+  watch page is live. Root only (no locale mirrors), and only when that page is in the export.
+*/
+const watchRules = [];
+for (const merge of moves.productMerges ?? []) {
+  if (!hasExport || !existsInExport(`/video/${merge.to}/`) || existsInExport(`/video/${merge.from}/`)) continue;
+  for (const from of [`/video/${merge.from}`, `/video/${merge.from}/`]) {
+    watchRules.push(`location = ${from} {`, `    return 301 /video/${merge.to}/;`, "}", "");
+  }
+}
+if (watchRules.length) lines.push("# Renamed video watch pages", ...watchRules);
+
+/*
+  Old-site sitemap names still requested (Ahrefs, first seen 2026-09-08). They are not
+  taxonomy, but this is the one generated conf the server installs on every pull.
+*/
+const RETIRED_FILES = [
+  ["/sitemap_cn.xml", "/sitemap-index.xml"],
+  ["/sitemap_es.xml", "/es/sitemap.xml"],
+];
+const fileRules = [];
+for (const [from, to] of RETIRED_FILES) {
+  if (hasExport && !existsSync(`${EXPORT}${to}`)) {
+    skipped.push(`${from} -> ${to} (not in the export)`);
+    continue;
+  }
+  fileRules.push(`location = ${from} {`, `    return 301 ${to};`, "}", "");
+}
+if (fileRules.length) lines.push("# Retired sitemap file names", ...fileRules);
+
 const conf = lines.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
 
 if (process.argv.includes("--check")) {
@@ -183,6 +233,13 @@ if (process.argv.includes("--check")) {
   }
   console.log(`${OUT} matches ${SOURCE}.`);
   process.exit(0);
+}
+
+if (staleExport.length) {
+  console.error(`✗ out/ is older than ${SOURCE}: ${staleExport.length} published product(s) missing from the export:`);
+  for (const path of staleExport) console.error(`    ${path}`);
+  console.error("  Build (or pull the latest release's out/) and run this again. Nothing was written.");
+  process.exit(1);
 }
 
 mkdirSync("deploy/nginx", { recursive: true });

@@ -3,7 +3,7 @@
   "title": "One Opening, One Order: The Hardware Set for a Double Fire Exit Door",
   "kind": "insight",
   "publishedAt": "2026-09-24",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-13",
   "summary": "A double fire exit door takes 6 lines of hardware: a device on each leaf, an outside trim on the active leaf, a closer on each leaf, and a coordinator so the inactive leaf closes first. All 6 are sized from 4 facts about the leaves: the width and weight of each leaf, the door thickness, and which leaf is active. This article takes them in that order, shows where 2 correct lines contradict each other, and lists what we need to quote it as one opening.",
   "author": {
     "name": "Johnson Liu",
@@ -31,14 +31,14 @@
     "## Line 6: the coordinator",
     "The coordinator makes the inactive leaf close first, so the active leaf lands on the astragal and latches. Our DC02 is rated for leaves of 55–100kg, which pairs it with four of our closers: JU-072, JU-073, JU-088 and JU-093. The DSL02 is a 304 stainless coordinator with an adjustable closing force; its weight range is not published yet, so ask. Our article on door coordinators covers the sizing in detail. The short version is that the leaf weight has to sit inside the closer's band and inside the coordinator's range at the same time, and above 85kg we do not currently make a closer.",
     "## What comes from the door maker",
-    "The astragal, the intumescent seals and the leaves themselves come from the door maker, and they are part of the tested assembly. So is every device on it. That is the one rule above all six lines: a fire door is tested as an assembly, so the hardware on it has to match what was tested, down to the model. Ask for the test report, check that it names the model you are buying, and check whose name it is issued in. Much of what we make is tested in our customers' names, at their cost; testing in our own name is being prepared. We would rather you asked than assumed.",
+    "The astragal, the intumescent seals and the leaves themselves come from the door maker, and they are part of the tested assembly. So is every device on it. That is the one rule above all six lines: a fire door is tested as an assembly, so the hardware on it has to match what was tested, down to the model. Ask for the test report, check that it names the model you are buying, and check whose name it is issued in. We would rather you asked than assumed.",
     "## Where two correct lines contradict each other",
     "| Line | Against | What goes wrong | What to check |\n| --- | --- | --- | --- |\n| Trim | Door | A trim made for 35–55mm on a 60mm door | Door thickness against the trim's printed range |\n| Trim | Device | An 8mm spindle in a 9mm follower | The spindle square on both, in writing |\n| Closer | Coordinator | A 45kg leaf under a DC02 rated from 55kg | Leaf weight inside both ranges |\n| Inactive leaf | Active leaf | A panic bar on one leaf, hand-thrown bolts on the other | The escape width on the drawing |\n| Finish | Finish | Red push bars, satin trim, a silver coordinator | One finish for the opening, stated once |",
     "Every row in that table is two lines that were each checked against the catalog and never against each other. None of them is expensive to fix on a schedule. All of them are expensive to fix on a building.",
     "## If you sell openings, not items",
-    "Many of our customers are brands and distributors who sell this set to installers under their own name. For them the set is the product: one quotation, one sheet of leaf data, one finish, and cartons labeled to their specification, by opening if that is how their installers work. Ask for the set that way and we will quote it that way. If a line is outside our range, as a closer for a leaf over 85kg is, the quotation will say so, before the container ships rather than after.",
+    "The set can be quoted as one product: one quotation, one sheet of leaf data, one finish, and cartons labeled to your specification, by opening if that is how your installers work. Ask for the set that way and we will quote it that way. If a line is outside our range, as a closer for a leaf over 85kg is, the quotation will say so, before the container ships rather than after.",
     "## What to send us",
-    "Six things quote the whole opening: the width and weight of each leaf; the door thickness; which leaf is active; whether both leaves count toward the escape width; whether the outside needs a key, free passage or nothing; and one finish. With those, we check every line against every other line before anything is made."
+    "Six things quote the whole opening: the width and weight of each leaf; the door thickness; which leaf is active; whether both leaves count toward the escape width; whether the outside needs a key, free passage or nothing; and one finish."
   ],
   "heroImage": {
     "src": "/images/products-hyde/309-d-double-door-panic-exit-device-2.webp",
@@ -57,6 +57,185 @@
     "JU-093",
     "JU-072"
   ],
+  "readingAids": {
+    "en": {
+      "keyPoints": {
+        "title": "The set at a glance",
+        "headers": [
+          "Line",
+          "Where",
+          "Our models",
+          "Sized by"
+        ],
+        "rows": [
+          [
+            "1–2",
+            "A device on each leaf",
+            "309-D, 316-D, 320",
+            "Which leaf is active"
+          ],
+          [
+            "3",
+            "Outside trim, on the active leaf",
+            "023 ET, 023 PS",
+            "Door thickness"
+          ],
+          [
+            "4–5",
+            "A closer on each leaf",
+            "JU-051 to JU-093",
+            "Width and weight of each leaf"
+          ],
+          [
+            "6",
+            "Coordinator",
+            "DC02, DSL02",
+            "Width and weight of the leaves"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "heading": "Lines 1 and 2: a device on each leaf",
+          "value": "1110mm",
+          "label": "the 309-D bar, one set for both leaves"
+        },
+        {
+          "heading": "Line 3: the outside trim, on the active leaf",
+          "value": "35–55mm",
+          "label": "door thickness the 028 and 037 trims fit"
+        },
+        {
+          "heading": "Lines 4 and 5: a closer on each leaf",
+          "value": "45–85kg",
+          "label": "the heaviest leaf in our JU range, closed by the JU-093"
+        },
+        {
+          "heading": "Line 6: the coordinator",
+          "value": "55–100kg",
+          "label": "the leaf weight the DC02 is rated for"
+        }
+      ]
+    },
+    "es": {
+      "keyPoints": {
+        "title": "El juego de un vistazo",
+        "headers": [
+          "Línea",
+          "Dónde",
+          "Nuestros modelos",
+          "Se dimensiona por"
+        ],
+        "rows": [
+          [
+            "1–2",
+            "Un dispositivo en cada hoja",
+            "309-D, 316-D, 320",
+            "Cuál es la hoja activa"
+          ],
+          [
+            "3",
+            "Guarnición exterior, en la hoja activa",
+            "023 ET, 023 PS",
+            "Espesor de la puerta"
+          ],
+          [
+            "4–5",
+            "Un cierrapuertas en cada hoja",
+            "JU-051 a JU-093",
+            "Ancho y peso de cada hoja"
+          ],
+          [
+            "6",
+            "Selector de cierre",
+            "DC02, DSL02",
+            "Ancho y peso de las hojas"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "heading": "Líneas 1 y 2: un dispositivo en cada hoja",
+          "value": "1110 mm",
+          "label": "la barra del 309-D, un juego para las dos hojas"
+        },
+        {
+          "heading": "Línea 3: la guarnición exterior, en la hoja activa",
+          "value": "35–55 mm",
+          "label": "espesor de puerta de las guarniciones 028 y 037"
+        },
+        {
+          "heading": "Líneas 4 y 5: un cierrapuertas en cada hoja",
+          "value": "45–85 kg",
+          "label": "la hoja más pesada de nuestra gama JU, con el JU-093"
+        },
+        {
+          "heading": "Línea 6: el selector de cierre",
+          "value": "55–100 kg",
+          "label": "el peso de hoja para el que está indicado el DC02"
+        }
+      ]
+    },
+    "pt": {
+      "keyPoints": {
+        "title": "O conjunto em resumo",
+        "headers": [
+          "Linha",
+          "Onde",
+          "Nossos modelos",
+          "Dimensionado por"
+        ],
+        "rows": [
+          [
+            "1–2",
+            "Um dispositivo em cada folha",
+            "309-D, 316-D, 320",
+            "Qual é a folha ativa"
+          ],
+          [
+            "3",
+            "Maçaneta externa, na folha ativa",
+            "023 ET, 023 PS",
+            "Espessura da porta"
+          ],
+          [
+            "4–5",
+            "Uma mola aérea em cada folha",
+            "JU-051 a JU-093",
+            "Largura e peso de cada folha"
+          ],
+          [
+            "6",
+            "Coordenador de fechamento",
+            "DC02, DSL02",
+            "Largura e peso das folhas"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "heading": "Linhas 1 e 2: um dispositivo em cada folha",
+          "value": "1110 mm",
+          "label": "a barra do 309-D, um conjunto para as duas folhas"
+        },
+        {
+          "heading": "Linha 3: a maçaneta externa, na folha ativa",
+          "value": "35–55 mm",
+          "label": "espessura de porta das maçanetas 028 e 037"
+        },
+        {
+          "heading": "Linhas 4 e 5: uma mola aérea em cada folha",
+          "value": "45–85 kg",
+          "label": "a folha mais pesada da nossa linha JU, com a JU-093"
+        },
+        {
+          "heading": "Linha 6: o coordenador de fechamento",
+          "value": "55–100 kg",
+          "label": "o peso de folha para o qual o DC02 é indicado"
+        }
+      ]
+    }
+  },
   "seoTitle": "Double Fire Exit Door with Panic Bars: Complete Hardware Set",
   "seoDescription": "The six hardware lines on a double fire exit door, from panic bars and outside trim to closers and the coordinator, sized from the same leaf data.",
   "titleEs": "Un vano, un pedido: el conjunto de herrajes para una puerta cortafuego de evacuación de dos hojas",
@@ -78,14 +257,14 @@
     "## Línea 6: el selector de cierre",
     "El selector hace que la hoja pasiva cierre primero, para que la activa asiente sobre el astrágalo y quede trabada. Nuestro DC02 está indicado para hojas de 55–100 kg, lo que lo empareja con cuatro de nuestros cierrapuertas: JU-072, JU-073, JU-088 y JU-093. El DSL02 es un selector de acero inoxidable 304 con fuerza de cierre regulable; su rango de peso aún no está publicado, así que pregunte. Nuestro artículo sobre selectores de cierre explica el dimensionamiento en detalle. En resumen: el peso de la hoja tiene que caer a la vez dentro de la banda del cierrapuertas y del rango del selector, y por encima de 85 kg hoy no fabricamos cierrapuertas.",
     "## Lo que pone el fabricante de la puerta",
-    "El astrágalo, las juntas intumescentes y las propias hojas las pone el fabricante de la puerta, y forman parte del conjunto ensayado. También cada dispositivo que lleva. Esa es la regla que está por encima de las seis líneas: una puerta cortafuego se ensaya como conjunto, así que sus herrajes tienen que coincidir con lo ensayado, hasta el modelo. Pida el informe de ensayo, compruebe que nombra el modelo que usted compra y a nombre de quién está emitido. Buena parte de lo que fabricamos se ensaya a nombre de nuestros clientes y a su cargo; los ensayos a nuestro propio nombre están en preparación. Preferimos que pregunte a que lo dé por hecho.",
+    "El astrágalo, las juntas intumescentes y las propias hojas las pone el fabricante de la puerta, y forman parte del conjunto ensayado. También cada dispositivo que lleva. Esa es la regla que está por encima de las seis líneas: una puerta cortafuego se ensaya como conjunto, así que sus herrajes tienen que coincidir con lo ensayado, hasta el modelo. Pida el informe de ensayo, compruebe que nombra el modelo que usted compra y a nombre de quién está emitido. Preferimos que pregunte a que lo dé por hecho.",
     "## Dónde se contradicen dos líneas correctas",
     "| Línea | Frente a | Qué falla | Qué comprobar |\n| --- | --- | --- | --- |\n| Guarnición | Puerta | Una guarnición para 35–55 mm en una puerta de 60 mm | El espesor de la puerta frente al rango publicado de la guarnición |\n| Guarnición | Dispositivo | Un cuadradillo de 8 mm en una nuez de 9 mm | El cuadradillo de ambos, por escrito |\n| Cierrapuertas | Selector | Una hoja de 45 kg con un DC02 indicado desde 55 kg | El peso de la hoja dentro de ambos rangos |\n| Hoja pasiva | Hoja activa | Barra antipánico en una hoja y pasadores manuales en la otra | El ancho de evacuación en el plano |\n| Acabado | Acabado | Barras rojas, guarnición satinada, selector plateado | Un solo acabado para el vano, indicado una vez |",
     "Cada fila de esa tabla son dos líneas que se comprobaron contra el catálogo y nunca entre sí. Ninguna es cara de corregir en una planilla. Todas son caras de corregir en un edificio.",
     "## Si usted vende vanos, no piezas",
-    "Muchos de nuestros clientes son marcas y distribuidores que venden este conjunto a instaladores con su propio nombre. Para ellos el conjunto es el producto: una cotización, una hoja de datos de las hojas, un acabado y cajas etiquetadas según su especificación, por vano si así trabajan sus instaladores. Pídalo así y así lo cotizaremos. Si una línea queda fuera de nuestra gama, como un cierrapuertas para una hoja de más de 85 kg, la cotización lo dirá, antes de que salga el contenedor y no después.",
+    "El conjunto se puede cotizar como un solo producto: una cotización, una hoja de datos de las hojas, un acabado y cajas etiquetadas según su especificación, por vano si así trabajan sus instaladores. Pídalo así y así lo cotizaremos. Si una línea queda fuera de nuestra gama, como un cierrapuertas para una hoja de más de 85 kg, la cotización lo dirá, antes de que salga el contenedor y no después.",
     "## Qué enviarnos",
-    "Seis datos bastan para cotizar el vano completo: el ancho y el peso de cada hoja; el espesor de la puerta; cuál es la hoja activa; si las dos hojas cuentan para el ancho de evacuación; si por fuera hace falta llave, paso libre o nada; y un acabado. Con eso comprobamos cada línea contra todas las demás antes de fabricar nada."
+    "Seis datos bastan para cotizar el vano completo: el ancho y el peso de cada hoja; el espesor de la puerta; cuál es la hoja activa; si las dos hojas cuentan para el ancho de evacuación; si por fuera hace falta llave, paso libre o nada; y un acabado."
   ],
   "seoTitleEs": "Herrajes para puerta cortafuego doble con barra antipánico",
   "seoDescriptionEs": "Las seis líneas de herrajes de una puerta cortafuego de dos hojas, de las barras antipánico al selector, calculadas con los mismos datos de hoja.",
@@ -164,14 +343,14 @@
     "## Linha 6: o coordenador de fechamento",
     "O coordenador faz a folha passiva fechar primeiro, para que a ativa assente sobre a mata-junta e fique travada. Nosso DC02 é indicado para folhas de 55–100 kg, o que o casa com quatro das nossas molas: JU-072, JU-073, JU-088 e JU-093. O DSL02 é um coordenador em aço inox 304 com força de fechamento regulável; a faixa de peso ainda não foi publicada, então pergunte. Nosso artigo sobre coordenadores explica o dimensionamento em detalhe. Resumindo: o peso da folha precisa estar ao mesmo tempo dentro da faixa da mola e da faixa do coordenador, e acima de 85 kg hoje não fabricamos mola.",
     "## O que vem do fabricante da porta",
-    "A mata-junta, as vedações intumescentes e as próprias folhas vêm do fabricante da porta, e fazem parte do conjunto ensaiado. Cada dispositivo instalado nela também. Essa é a regra acima das seis linhas: uma porta corta-fogo é ensaiada como conjunto, então as ferragens nela têm que coincidir com o que foi ensaiado, até o modelo. Peça o relatório de ensaio, confira se ele cita o modelo que você está comprando e em nome de quem foi emitido. Boa parte do que fabricamos é ensaiada em nome dos nossos clientes, por conta deles; os ensaios em nosso próprio nome estão em preparação. Preferimos que você pergunte a que presuma.",
+    "A mata-junta, as vedações intumescentes e as próprias folhas vêm do fabricante da porta, e fazem parte do conjunto ensaiado. Cada dispositivo instalado nela também. Essa é a regra acima das seis linhas: uma porta corta-fogo é ensaiada como conjunto, então as ferragens nela têm que coincidir com o que foi ensaiado, até o modelo. Peça o relatório de ensaio, confira se ele cita o modelo que você está comprando e em nome de quem foi emitido. Preferimos que você pergunte a que presuma.",
     "## Onde duas linhas corretas se contradizem",
     "| Linha | Contra | O que dá errado | O que conferir |\n| --- | --- | --- | --- |\n| Maçaneta externa | Porta | Uma maçaneta para 35–55 mm numa porta de 60 mm | A espessura da porta contra a faixa publicada da maçaneta |\n| Maçaneta externa | Dispositivo | Um quadrado de 8 mm num cubo de 9 mm | O quadrado dos dois, por escrito |\n| Mola aérea | Coordenador | Uma folha de 45 kg com um DC02 indicado a partir de 55 kg | O peso da folha dentro das duas faixas |\n| Folha passiva | Folha ativa | Barra antipânico numa folha e fechos manuais na outra | A largura da rota de fuga no projeto |\n| Acabamento | Acabamento | Barras vermelhas, maçaneta acetinada, coordenador prateado | Um só acabamento para o vão, informado uma vez |",
     "Cada linha dessa tabela são duas linhas do pedido que foram conferidas contra o catálogo e nunca uma contra a outra. Nenhuma custa caro para corrigir numa planilha. Todas custam caro para corrigir num prédio.",
     "## Se você vende vãos, não peças",
-    "Muitos dos nossos clientes são marcas e distribuidores que vendem este conjunto a instaladores com o próprio nome. Para eles, o conjunto é o produto: uma cotação, uma folha de dados das folhas, um acabamento e caixas etiquetadas conforme a especificação deles, por vão, se é assim que os instaladores trabalham. Peça assim e vamos cotar assim. Se uma linha estiver fora da nossa linha de produtos, como uma mola para folha acima de 85 kg, a cotação vai dizer, antes de o contêiner sair e não depois.",
+    "O conjunto pode ser cotado como um único produto: uma cotação, uma folha de dados das folhas, um acabamento e caixas etiquetadas conforme a sua especificação, por vão, se é assim que os seus instaladores trabalham. Peça assim e vamos cotar assim. Se uma linha estiver fora da nossa linha de produtos, como uma mola para folha acima de 85 kg, a cotação vai dizer, antes de o contêiner sair e não depois.",
     "## O que nos enviar",
-    "Seis dados bastam para cotar o vão inteiro: a largura e o peso de cada folha; a espessura da porta; qual é a folha ativa; se as duas folhas contam para a largura da rota de fuga; se por fora precisa de chave, passagem livre ou nada; e um acabamento. Com isso, conferimos cada linha contra todas as outras antes de fabricar qualquer coisa."
+    "Seis dados bastam para cotar o vão inteiro: a largura e o peso de cada folha; a espessura da porta; qual é a folha ativa; se as duas folhas contam para a largura da rota de fuga; se por fora precisa de chave, passagem livre ou nada; e um acabamento."
   ],
   "seoTitlePt": "Ferragens para porta corta-fogo dupla com barra antipânico",
   "seoDescriptionPt": "As seis linhas de ferragens de uma porta corta-fogo de duas folhas, das barras antipânico ao coordenador, dimensionadas com os mesmos dados da folha."

@@ -44,3 +44,38 @@
 .documentNav a { color: var(--color-ink); text-underline-offset: 5px; }
 @media(max-width:1023px) { .contents { position: static; max-height: none; padding: 0; margin-bottom: 28px; } .desktopContents { display: none; } .mobileContents { display: block; border-block: 1px solid var(--color-line); padding: 18px 0; } .mobileContents summary { cursor: pointer; font-weight: 500; } .mobileContents nav { margin-top: 20px; } }
 @media(max-width:600px) { .body p { font-size: 17px; line-height: 1.8; } .table th,.table td { min-width: 142px; padding: 14px; } .table th:first-child { min-width: 130px; max-width: 160px; } .tableScroll { max-height: 65vh; } .pdf { padding: 16px; } }
+/* 2026-10-12 (approved preview): where the reader is, as a count and a share of the text. */
+.contentsCount { margin: -8px 0 18px; font-size: 13px; color: var(--color-ink-secondary); font-variant-numeric: tabular-nums; }
+.contentsCount b { color: var(--color-ink); font-size: 18px; font-weight: 600; }
+.contents a[data-past="true"] { color: var(--color-ink); opacity: .55; }
+.contents a[aria-current="location"] { opacity: 1; border-inline-start-width: 3px; padding-inline-start: 14px; text-decoration: none; font-weight: 500; }
+/* Headings stored in capitals (most guides, in every language) read as shouting at full size;
+   set them as smaller spaced capitals instead of rewriting the words. */
+.body h2[data-caps="true"] { font-size: clamp(20px,1.7vw,24px); letter-spacing: .04em; line-height: 1.35; }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .body > p, .body > h2 { animation: body-in linear both; animation-timeline: view(); animation-range: entry 0% entry 40%; }
+  }
+}
+@keyframes body-in { from { opacity: 0; transform: translateY(16px); } }
+
+
+/* Reading aids (2026-10-13). The key points open the text under an ink rule, like a spec table;
+   a margin figure floats beside its section and the next heading clears it. */
+.body h2 { clear: both; }
+.keyPoints { margin: 0 0 4.8rem; }
+.keyPointsTitle { font-size: 1.3rem; line-height: 1.8rem; color: var(--color-ink-secondary); margin: 0 0 1.2rem; }
+.keyPoints table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--color-ink); font-size: 1.5rem; line-height: 2.2rem; }
+.keyPoints th, .keyPoints td { padding: 1.2rem 1.6rem 1.2rem 0; border-bottom: 1px solid var(--color-line); text-align: start; vertical-align: top; }
+.keyPoints thead th { font-size: 1.3rem; font-weight: 400; color: var(--color-ink-secondary); }
+.keyPoints tbody th { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--color-ink); }
+.keyPoints td { color: var(--color-ink); }
+.marginFigure { float: inline-end; width: min(22rem, 38%); margin: 0.4rem 0 1.6rem 3.2rem; padding-top: 1.2rem; border-top: 1px solid var(--color-ink); }
+.marginValue { display: block; font-size: clamp(3.2rem, 2rem + 2vw, 4.8rem); line-height: 1; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.marginValue small { margin-inline-start: 0.4rem; font-size: 0.4em; font-weight: 500; letter-spacing: 0; }
+.marginLabel { display: block; margin-top: 0.8rem; font-size: 1.3rem; line-height: 1.8rem; color: var(--color-ink-secondary); }
+@media (max-width: 743px) {
+  .marginFigure { float: none; width: auto; margin: 2.4rem 0; }
+  .keyPoints { overflow-x: auto; }
+  .keyPoints table { min-width: 52rem; }
+}

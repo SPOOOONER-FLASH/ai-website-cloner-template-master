@@ -45,7 +45,7 @@ export function CertificationsPage({ locale }: { locale: Locale }) {
             <p className="text-c1 text-ink">
               {tx(
                 locale,
-                "The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another. Much of what we make for private-label customers is certified in our customers' own names, at their request and their cost, so those certificates are theirs to share. CE and ANSI testing in Canton Hyland's own name is being prepared for our core ranges; each new report will appear here, with its scope, as it is issued.",
+                "The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another.",
               )}
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">

@@ -9,6 +9,7 @@ import { stats } from "@/data/company";
 import type { NewsArticle, Product, VideoRef } from "@/data/types";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { productFaqItems } from "@/lib/product-faq";
+import { getProductByModel, isPublished } from "@/data/products";
 import type {
   BreadcrumbList,
   DefinedTermSet,
@@ -146,11 +147,7 @@ export function organisationSchema(): WithContext<Organization> {
           ],
         }
       : {}),
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "certification",
-      name: "ISO 9001",
-    },
+    /* No hasCredential: the ISO 9001:2015 certificate is held by our stamping plant, not by this organization. */
     knowsLanguage: ["en", "es", "zh-CN"],
   };
 }
@@ -196,6 +193,8 @@ export function productSchema(
   return {
     "@context": "https://schema.org",
     "@type": "Product",
+    /* Article pages point at this node by @id (`mentions`), 2026-10-12. */
+    "@id": `${url}#product`,
     // Model first, matching both the H1 and `seoTitle`. The audit test asserts this string
     // is visible on the page, so the three must be changed together or not at all.
     name: `${product.modelTbc ? "" : `${product.model} `}${name}`.trim(),
@@ -338,6 +337,18 @@ export function newsArticleSchema(
       t(article, "summary", locale),
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    /*
+      The products the article is about, by reference only (2026-10-12). A typed Product here
+      would copy the product page's "missing offers" rich-result warning onto every article;
+      an @id costs nothing and tells an answer engine which model page the article sells.
+    */
+    ...(() => {
+      const mentions = (article.relatedModels ?? [])
+        .map((model) => getProductByModel(model))
+        .filter((p): p is Product => Boolean(p && isPublished(p)))
+        .map((p) => ({ "@id": `${absoluteUrl(localisedHref(`/products/${p.categoryPath[0]}/${p.slug}/`, locale))}#product` }));
+      return mentions.length ? { mentions } : {};
+    })(),
     datePublished: article.publishedAt,
     dateModified: article.updatedAt ?? article.publishedAt,
     ...(images.length ? { image: images } : {}),

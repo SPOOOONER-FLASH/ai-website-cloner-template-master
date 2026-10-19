@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     description: defaultDescription[LOCALE],
     images: [
       {
-        url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
+        url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
+        width: 1774,
+        height: 887,
         alt: "HYDE",
       },
     ],
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle[LOCALE],
     description: defaultDescription[LOCALE],
-    images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
+    images: [absoluteUrl("/images/editorial/home-panic-exit-double-door.webp")],
   },
   robots: indexable
     ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }

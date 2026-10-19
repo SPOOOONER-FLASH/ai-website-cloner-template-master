@@ -18,12 +18,14 @@ export const FOLDERS = {
   research: "03-研究与方案",
   data: "04-数据库-原始导出",
   sales: "05-目录与报价",
+  releases: "06-上线日志",
   archive: "09-旧资料归档",
 };
 
 /** Folder (relative to DESKTOP_HYDE) for a document by its file name. */
 export function folderFor(name) {
-  if (/CLIENT-RUNBOOK|手动操作|人工代做|目录说明/.test(name)) return FOLDERS.todo;
+  if (/CLIENT-RUNBOOK|手动操作|同事操作|人工代做|目录说明|DEEPLINKS/.test(name)) return FOLDERS.todo;
+  if (/上线日志|RELEASES/.test(name)) return FOLDERS.releases;
   if (/待做计划|目标清单|TODO/i.test(name)) return FOLDERS.plan;
   if (/Quotation|报价|目录2026|catalog(?:ue)?/i.test(name)) return FOLDERS.sales;
   if (/\.(csv|xlsx|zip)$/i.test(name) && /cantonlock\.com/i.test(name)) return FOLDERS.data;

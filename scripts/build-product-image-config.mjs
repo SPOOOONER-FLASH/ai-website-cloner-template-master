@@ -53,10 +53,10 @@ function homepageModels() {
   for (const model of ["307", "311"]) models.add(model);
 
   /* ArgentinaAr4Showcase — the seasonal market collection. */
-  for (const model of ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"]) models.add(model);
+  for (const model of ["AR4-110", "AR4-140", "AR4-111", "AR4-1121"]) models.add(model);
 
-  /* FeatureColumns — the door coordinator card carries a product plate. */
-  models.add("DC02");
+  /* BrazilHomeShowcase — HYDE's own Brazil-market bar; the other three tiles are collection images (editorial config). */
+  models.add("306-D");
 
   // Native home catalogue atlas: two direct product photographs alongside editorial plates.
   for (const model of ["Stainless Steel Flush Bolt", "600"]) models.add(model);
@@ -83,6 +83,17 @@ function homepageModels() {
     (product) => (!product.sites || product.sites.includes("hyde")) && product.heroImage?.src,
   );
   for (const member of studioShowcase(hyde)?.members ?? []) models.add(member.model);
+
+  /*
+    FamilyIndex (2026-10-12) — one lead product per family, by slug in src/lib/home-families.ts.
+    That module imports path aliases, so its `lead:` slugs are read as text.
+  */
+  const families = readFileSync("src/lib/home-families.ts", "utf8");
+  for (const [, slug] of families.matchAll(/lead:\s*"([^"]+)"/g)) {
+    const product = products.find((p) => p.slug === slug);
+    if (!product) throw new Error(`home-families lead ${slug} has no product record`);
+    models.add(String(product.model));
+  }
 
   return models;
 }

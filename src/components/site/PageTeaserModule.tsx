@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { cn } from "@/lib/utils";
+import motion from "./HomeMotion.module.css";
 import type { PageTeaserContent, TeaserCardContent } from "@/types/fsb-modules";
 
 /**
@@ -25,13 +26,14 @@ export function PageTeaserModule({
   homeAccent?: boolean;
 }) {
   return (
-    <div className="layout" data-content-module="page-teaser">
+    // homeAccent (the homepage band): the second card settles into line as the band enters (HomeMotion.module.css).
+    <div className={cn("layout", homeAccent && motion.teaser)} data-content-module="page-teaser">
       {content.heading ? (
         <h2 className="col-content mb-24 text-h3 text-ink md:mb-48">{content.heading}</h2>
       ) : null}
 
       <div className="col-outset">
-        <div className="horizontal-snap flex snap-x snap-mandatory gap-16 overflow-auto overscroll-x-contain px-outset scroll-px-outset pointer-fine:flex-wrap">
+        <div className={cn("horizontal-snap flex snap-x snap-mandatory gap-16 overflow-auto overscroll-x-contain px-outset scroll-px-outset pointer-fine:flex-wrap", homeAccent && motion.teaserTrack)}>
           {content.cards.map((card) => (
             <TeaserCard key={card.title} {...card} homeAccent={homeAccent} />
           ))}

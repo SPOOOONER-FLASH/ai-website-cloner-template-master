@@ -130,7 +130,8 @@ function localeHrefLeaks(locale: "es" | "pt", source: string, file: string): str
     if (!/^[a-z0-9-]+$/.test(segment)) continue;
     if (segment === locale) continue;
     const route = `/${segment}`;
-    if (!hasMirror(route)) continue;
+    // The target, not just its first segment: /products/argentina is en/es only, so a pt link to it is not a leak.
+    if (!hasMirror(route) || !hasMirror(href.split(/[?#]/)[0])) continue;
     leaks.push(`${file}: ${href} should start /${locale}${route}/`);
   }
   return leaks;
@@ -229,7 +230,9 @@ test("every overlay locale carries exactly the Portuguese route set", async () =
     assert.ok(fs.existsSync(path.join(APP, code, "layout.tsx")), `/${code}/ has no root layout`);
     /* Plus the partial routes built for this locale (/bau-2027 in de), and nothing else. */
     const partial = [...PARTIAL_ROUTES].filter(([, locales]) => locales.includes(code)).map(([route]) => route);
-    assert.deepEqual(routesUnder(code), [...reference, ...partial].sort(), `/${code}/ routes differ from /pt/`);
+    /* ...minus Portuguese pages that are partial routes not built for this locale (/products/brazil is en/pt). */
+    const shared = reference.filter((route) => PARTIAL_ROUTES.get(route)?.includes(code) ?? true);
+    assert.deepEqual(routesUnder(code), [...new Set([...shared, ...partial])].sort(), `/${code}/ routes differ from /pt/`);
   }
 });
 

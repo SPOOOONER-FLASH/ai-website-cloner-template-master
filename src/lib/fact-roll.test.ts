@@ -26,7 +26,7 @@ const FIXTURE: Fact[] = [
   { value: "361", label: "models", countTo: 361 },
   { value: "15", label: "families", countTo: 15 },
   { value: "1998", label: "since" },
-  { value: "ISO 9001", label: "quality" },
+  { value: "ISO 9001:2015", label: "stamping plant" },
   { value: "101–200", label: "people" },
 ];
 

@@ -23,14 +23,12 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules,
     /* The full map first, then one per non-English locale for their Search Console properties. */
-    /* The RSS feed is listed too: Google accepts RSS as a sitemap, and it carries the newest articles first (09-28). */
+    /* No RSS feeds here (removed 2026-10-12): Ahrefs reported exactly these ten as "sitemap has
+       wrong format". Feeds are found through each layout's <link rel="alternate">, and a feed
+       already submitted in Search Console stays submitted. */
     sitemap: [
       absoluteUrl("/sitemap.xml"),
       ...locales.filter((l) => l !== "en").map((l) => absoluteUrl(`/${l}/sitemap.xml`)),
-      /* Ten feeds since 2026-09-28: a per-market Search Console property only accepts a
-         sitemap under its own prefix, and Discover reads the feed of the language it serves. */
-      absoluteUrl("/feed.xml"),
-      ...locales.filter((l) => l !== "en").map((l) => absoluteUrl(`/${l}/feed.xml`)),
     ],
   };
 }

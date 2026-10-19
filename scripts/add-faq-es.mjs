@@ -21,8 +21,8 @@
  * The incoterms stay in their international form — EXW, FOB, DDP, DAP, T/T, L/C — because
  * that is what appears on the proforma and what the buyer will quote back at us.
  *
- * NUMBERS ARE NOT TRANSLATED, THEY ARE CARRIED. 300–5,000 pieces, 30 days, ISO 9001 since
- * 2002, 435 models, 15 families, thirty markets. Every one of these took a decision from
+ * NUMBERS ARE NOT TRANSLATED, THEY ARE CARRIED. 300–5,000 pieces, 30 days, ISO 9001:2015 with its
+ * certificate number and date, 435 models, 15 families, thirty markets. Every one of these took a decision from
  * the client; a translation that rounds or drops one is a different commitment.
  *
  * Idempotent. Run it twice and nothing changes.
@@ -86,7 +86,7 @@ const ITEMS = {
   },
   "Is Canton Hyland ISO 9001 certified?": {
     q: "¿Canton Hyland tiene la certificación ISO 9001?",
-    a: "Sí. La empresa mantiene la certificación ISO 9001 desde 2002.",
+    a: "Nuestra planta de estampado está certificada según ISO 9001:2015, certificado 69125Q0026****, válido hasta el 29 de octubre de 2028.",
   },
   "Are your panic exit devices EN 1125 certified?": {
     q: "¿Sus barras antipánico están certificadas según EN 1125?",

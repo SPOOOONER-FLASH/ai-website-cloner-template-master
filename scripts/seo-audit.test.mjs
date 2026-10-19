@@ -158,6 +158,7 @@ function writeValidStagingFixture(root, mutate = () => {}) {
     robots: "User-Agent: *\nDisallow: /\n",
     sitemap: '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',
     redirects: [],
+    adminBrainNoindex: true,
   };
 
   mutate(state);
@@ -166,6 +167,7 @@ function writeValidStagingFixture(root, mutate = () => {}) {
   writeFile(root, "products/lock/index.html", publicDocument(state.product));
   writeFile(root, "news/door-hardware-guide/index.html", publicDocument(state.news));
   writeFile(root, "admin/index.html", '<!doctype html><html lang="zh-CN"><head><meta name="robots" content="noindex,nofollow"></head><body>CMS</body></html>');
+  writeFile(root, "admin/brain/index.html", `<!doctype html><html lang="en"><head>${state.adminBrainNoindex ? '<meta name="robots" content="noindex,nofollow">' : ""}</head><body>Internal sign-in</body></html>`);
   writeFile(root, "status/index.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"></head><body><h1>Status</h1></body></html>');
   writeFile(root, "404.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"></head><body><h1>404</h1></body></html>');
   for (const redirect of state.redirects) {
@@ -439,6 +441,23 @@ test("accepts an indexable export only when robots, public pages, and sitemap ag
   });
 });
 
+test("treats a noindex admin child page as non-public", () => {
+  withIndexableFixture(() => {}, (result) => {
+    assert.equal(result.pages.find((page) => page.route === "/admin/brain/")?.public, false);
+    assert.deepEqual(result.semanticIssues, []);
+  });
+});
+
+test("reports an admin child page whose noindex is missing", () => {
+  withIndexableFixture((state) => {
+    state.adminBrainNoindex = false;
+  }, (result) => {
+    assert.ok(result.semanticIssues.some((issue) => (
+      issue.route === "/admin/brain/" && issue.code === "nonpublic-page-indexable"
+    )));
+  });
+});
+
 test("reports sitemap lastmod on a page without a tracked content date", () => {
   withIndexableFixture((state) => {
     state.sitemap = state.sitemap.replace(
@@ -493,6 +512,16 @@ test("reports blocked render assets and public pages omitted from an indexable s
     const codes = issueCodes(result);
     assert.ok(codes.includes("render-assets-disallowed"));
     assert.ok(codes.includes("sitemap-missing-page"));
+  });
+});
+
+test("a named crawler's Disallow: / is not read as a site-wide block", () => {
+  withIndexableFixture((state) => {
+    state.robots += "\nUser-Agent: Bytespider\nDisallow: /\n\nUser-Agent: Baiduspider\nDisallow: /\n";
+  }, (result) => {
+    const codes = issueCodes(result);
+    assert.equal(codes.includes("staging-page-indexable"), false);
+    assert.equal(codes.includes("staging-sitemap-not-empty"), false);
   });
 });
 

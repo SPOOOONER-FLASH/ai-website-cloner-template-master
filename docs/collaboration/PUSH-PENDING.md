@@ -279,3 +279,62 @@
 下一次 `npm run ship` 成功时这些会一起推上去。
 
 → 已推送（09-30，工程会话）：上面 16 个提交全部在远端，main = `5154fdd6503`。git push 报超时，`git ls-remote` 确认已到。
+
+## 2026/10/9 23:28:26 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in scripts/lib/seo-audit.mjs / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `76228a2eb95` shiplog: 更新上线存档
+- `092933e4808` seo-audit：/admin/ 之下的页面都不算公开页
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/12 04:48:35 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `bcafa1b8baaf` shiplog: 更新上线存档
+- `ad526cc50581` 首页加入三段：品类索引、出口地图、工厂故事（十语）（#48）
+- `d48b4732a48e` HYDE 动效四合一演示页（独立 Vite 项目，不进正式站）（#47）
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/12 07:43:16 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging src/components/site/editorial-images.config.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `6953d70a4779` shiplog: 更新上线存档
+- `b5223aa5e5a8` 首页：工厂故事换图改合成层并按文字切换、工厂图 2× 清晰化；地图按国家细分；移除 BAU、地图挪到数据条后（#51–#53）
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/10/13 05:26:25 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `c815e28653c0`（源码 70894f541645）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/10/14 00:08:27 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `0f510d0cc0c1`（源码 727ac31be970）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/10/14 01:30:12 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `d09a7346f576`（源码 1fd9acd4305e）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+## 2026/10/14 03:21:12 · 三次推送失败
+
+原因：fatal: unable to access 'https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git/': schannel: failed to receive handshake, SSL/TLS connection failed
+
+未推送的提交：
+
+- `fcaf8352b84a` shiplog: 更新上线存档
+- `2347ded30068` Merge remote-tracking branch 'origin/main' into HEAD
+- `8f34bd22d956` shiplog: 更新上线存档
+- `4dc6ea7bb59f` 037 PS 新品补生成 SEO 标题与描述（发布被 titles:check 拦下）
+
+下一次 `npm run ship` 成功时这些会一起推上去。

@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { Button } from "./Button";
+import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { PrivacyNote } from "./PrivacyNote";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
@@ -18,9 +19,15 @@ const FIELD_CLASS =
 export function NewsletterForm() {
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [message, setMessage] = useState("");
+  const captcha = useRef<HCaptchaHandle>(null);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!captcha.current?.token()) {
+      setStatus("error");
+      setMessage(captchaMissingMessage("en"));
+      return;
+    }
 
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
     if (!accessKey) {
@@ -59,6 +66,8 @@ export function NewsletterForm() {
           ? error.message
           : "The subscription request could not be sent. Please try again later.",
       );
+    } finally {
+      captcha.current?.reset();
     }
   }
 
@@ -116,6 +125,8 @@ export function NewsletterForm() {
           Canton Hyland. I can ask to unsubscribe at any time. *
         </span>
       </label>
+
+      <HCaptchaField ref={captcha} />
 
       <div className="flex flex-col items-start gap-16 sm:flex-row sm:items-center">
         <Button type="submit" disabled={status === "submitting"}>

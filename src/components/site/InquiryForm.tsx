@@ -9,10 +9,12 @@ import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
+import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { EmailLink } from "./EmailLink";
 import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
 import { dict } from "@/lib/i18n-client";
+import { inquiryPrefill } from "@/lib/inquiry-prefill";
 
 /** Where a failed enquiry goes instead. The orders desk, not the technical one. */
 const INQUIRY_ADDRESS = siteSettings.contact.email;
@@ -129,12 +131,17 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const searchParams = useSearchParams();
   const [product, setProduct] = useState(() => queryValue(searchParams, "product"));
   const [model, setModel] = useState(() => queryValue(searchParams, "model"));
+  /* Requirements box: empty unless a tool link (the euro cylinder calculator) sent `note`. */
+  const [message, setMessage] = useState("");
+  /* The article a quote link came from (`#from=guides/…`), sent with the lead so the export team sees which guide sold it. */
+  const [sourceArticle, setSourceArticle] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [statusMessage, setStatusMessage] = useState("");
   /** The typed enquiry, kept so a failed send can still be posted as an email. */
   const [fallback, setFallback] = useState("");
   const submitting = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
+  const captcha = useRef<HCaptchaHandle>(null);
   const [returnToForm, setReturnToForm] = useState(false);
   useEffect(() => {
     if (returnToForm && status === "idle") {
@@ -144,8 +151,22 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   }, [returnToForm, status]);
 
   useEffect(() => {
-    setProduct(queryValue(searchParams, "product"));
-    setModel(queryValue(searchParams, "model"));
+    /* Quote links carry their values in the fragment since 2026-10-12 (src/lib/inquiry-prefill.ts); the query still wins. */
+    const prefill = inquiryPrefill(window.location.search, window.location.hash);
+    setProduct(prefill.product);
+    setModel(prefill.model);
+    setSourceArticle(prefill.from);
+    if (prefill.note) setMessage(prefill.note);
+    /* A fragment like #model=… names no element, so the browser keeps the previous page's scroll
+       position and the buyer lands near the footer. Take them to the form they came for. */
+    /* Deferred: the router's own scroll handling for the hash runs after this effect. */
+    if (!window.location.hash.includes("=")) return;
+    const timer = window.setTimeout(() => {
+      const form = formRef.current;
+      /* 96px clears the sticky header. */
+      if (form) window.scrollTo({ top: Math.max(0, form.getBoundingClientRect().top + window.scrollY - 96) });
+    }, 120);
+    return () => window.clearTimeout(timer);
   }, [searchParams]);
 
   /**
@@ -184,6 +205,11 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     if (submitting.current) return;
 
     const form = event.currentTarget;
+    if (!captcha.current?.token()) {
+      setStatus("error");
+      setStatusMessage(captchaMissingMessage(locale));
+      return;
+    }
     const payload = new FormData(form);
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
 
@@ -223,16 +249,18 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       /* the sessionStorage getter itself throws when storage is blocked */
     }
     if (firstTouch) payload.set("first_touch", firstTouch);
+    if (sourceArticle) payload.set("source_article", sourceArticle);
 
     try {
       await submitInquiry(payload);
 
       // 询盘已经送达。计数失败绝不能把成功面板带下去 —— trackLead 自身不抛。
-      trackLead({ locale, model, page: globalThis.location?.pathname, firstTouch });
+      trackLead({ locale, model, page: globalThis.location?.pathname, firstTouch, sourceArticle });
 
       form.reset();
       setProduct("");
       setModel("");
+      setMessage("");
       setFallback("");
       setStatus("success");
       setStatusMessage(text.success);
@@ -247,6 +275,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         : text.failure);
     } finally {
       submitting.current = false;
+      captcha.current?.reset();
     }
   }
 
@@ -334,10 +363,14 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         <textarea
           className={`${FIELD_CLASS} min-h-160 resize-y`}
           name="message"
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
           placeholder={text.placeholder}
           required
         />
       </label>
+
+      <HCaptchaField ref={captcha} locale={locale} />
 
       <div className="flex flex-col items-start gap-16 sm:flex-row sm:items-center">
         <Button type="submit" disabled={status === "submitting"}>

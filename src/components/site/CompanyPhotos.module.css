@@ -1,0 +1,26 @@
+/*
+  The Company page's factory photographs drift a little as the page scrolls (client 2026-10-13:
+  「Company 页里的工厂实拍……可以加轻微视差」). Real photographs only, never the text. The frame
+  clips; the picture is 8% larger and moves 3.5% each way, so no edge ever shows. Scroll-linked,
+  so there is no duration to tokenise; reduced motion and browsers without view() timelines
+  see the still photograph.
+*/
+.drift {
+  overflow: clip;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .drift img {
+      scale: 1.08;
+      animation: drift linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+  }
+}
+
+@keyframes drift {
+  from { translate: 0 -3.5%; }
+  to { translate: 0 3.5%; }
+}

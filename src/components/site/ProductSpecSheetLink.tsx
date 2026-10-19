@@ -21,6 +21,10 @@ const LABEL: Record<Locale, string> = {
   ar: "تنزيل ورقة المواصفات (PDF)",
 };
 
+export function hasSpecSheet(slug: string): boolean {
+  return AVAILABLE.has(slug);
+}
+
 export function ProductSpecSheetLink({ slug, locale }: { slug: string; locale: Locale }) {
   if (!AVAILABLE.has(slug)) return null;
   const label = LABEL[locale];

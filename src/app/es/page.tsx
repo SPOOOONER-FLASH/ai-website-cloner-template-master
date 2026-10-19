@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import { pageMetadata, fitTitle } from "@/lib/seo";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
-import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { Spacer } from "@/components/site/Spacer";
-import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
-import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { BrazilHomeShowcase } from "@/components/site/brazil/BrazilHomeShowcase";
+import { ExportMap } from "@/components/site/ExportMap";
+import { FamilyIndex } from "@/components/site/FamilyIndex";
+import { FactoryStory } from "@/components/site/FactoryStory";
+import { HomeIntro } from "@/components/site/HomeIntro";
+import { HomeSmoothScroll } from "@/components/site/HomeSmoothScroll";
 import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { StudioShowcase } from "@/components/site/StudioShowcase";
-import { BauShowcase } from "@/components/site/BauEntry";
 import * as content from "@/data/home-es";
 import { siteName } from "@/data/site";
 
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     locale: "es",
     title,
     description:
-      "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998. ISO 9001 desde 2002; producción OEM en Guangdong.",
+      "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998. Planta de estampado ISO 9001:2015; producción OEM en Guangdong.",
   }),
   // This page shares the /es segment with its root layout, so the layout title template
   // does not run here. Keep the brand suffix explicit in the shipped home-page title.
@@ -33,7 +35,13 @@ export const metadata: Metadata = {
 
 export default function SpanishHomePage() {
   return (
+    <>
+      {/* The opening curtain sits outside <main>: main is `isolate`, a stacking context its
+         z-index cannot leave, and the curtain has to cover the site header too. */}
+      <HomeIntro />
     <main className="isolate mt-48 flex-grow justify-self-start">
+      {/* Smoothed wheel scrolling, as in the 2026-10-12 motion demo (client). */}
+      <HomeSmoothScroll />
       <div className="modules mb-96 lg:mb-136">
         <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} homeAccent />
@@ -46,37 +54,22 @@ export default function SpanishHomePage() {
         <SiteFacts facts={siteFacts("es")} heading={siteFactsHeading("es")} />
       </div>
       <div className="modules">
+        {/* Client 2026-10-12: the export map follows the facts strip directly (「地图挪到数据后面」),
+           which moves the recommended shelf of 2026-09-14 to second place. */}
+        <ExportMap locale="es" />
         {/* Same position as the English page. See there for why it leads. */}
         <DemandShowcase locale="es" />
         <StudioShowcase locale="es" />
+        <FamilyIndex locale="es" />
         <Spacer heights={content.spacers.s96} />
 
-        <BauShowcase locale="es" />
-        <Spacer heights={content.spacers.s96} />
-        {/* Restore the original AR4 photography below the BAU invitation. */}
         <ArgentinaAr4Showcase locale="es" />
+        <BrazilHomeShowcase locale="es" />
 
         {/* Buyer resources follow the market collection. */}
-        <FeatureColumns locale="es" />
-
-        <HeroModule content={content.hero2} homeEditorial />
-        <Spacer heights={content.spacers.s384} />
-        <TextModule content={content.text1} />
-        <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser2} homeAccent />
-        <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero3} homeEditorial />
-        <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero4} homeEditorial />
-        <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text2} />
-        <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser3} homeAccent />
-        <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text3} />
-        <Spacer heights={content.spacers.s48} />
-        <HeroModule content={content.hero5} homeEditorial />
+        <FactoryStory locale="es" />
       </div>
     </main>
+    </>
   );
 }

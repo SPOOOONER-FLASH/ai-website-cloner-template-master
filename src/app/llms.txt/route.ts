@@ -2,7 +2,7 @@ import { absoluteUrl, indexable, legalName, siteName } from "@/data/site";
 import { categories } from "@/data/categories";
 import { publishedProducts } from "@/data/products";
 import { getAnsweredFaq } from "@/data/faq";
-import { getPublishedGuides } from "@/data/guides";
+import { getAllGuideParams, getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
 import { overlayLocales } from "@/data/locales";
 import { LANGUAGE_LABELS } from "@/lib/i18n";
@@ -74,13 +74,28 @@ function body(): string {
     src/data/guides.ts: /guides/ is what a buyer checks before deciding, /news/ is
     shorter answers and factory notes.
   */
+  /* The published models each article lists (2026-10-12): an answer engine citing the guide
+     learns which product pages it is about. Capped at 8; the rest are counted. */
+  const modelsOf = (article: { relatedModels?: string[] }): string => {
+    const models = (article.relatedModels ?? []).filter((m) => publishedProducts.some((p) => p.model === m));
+    if (!models.length) return "";
+    const shown = models.slice(0, 8).join(", ");
+    return ` Models: ${shown}${models.length > 8 ? ` (+${models.length - 8})` : ""}.`;
+  };
   const guideLines = getPublishedGuides().map(
     (article) =>
-      `- [${article.title}](${absoluteUrl(`/guides/${article.slug}/`)}): ${article.summary}`,
+      `- [${article.title}](${absoluteUrl(`/guides/${article.slug}/`)}): ${article.summary}${modelsOf(article)}`,
   );
+  /* Spanish guides with their /es/ URLs (2026-10-13): until now the only Spanish URL here was
+     /es/, and Clarity showed no /es/ page ever cited by an assistant. Only guides with a
+     Spanish page; title and summary are the record's own Spanish fields. */
+  const esSlugs = new Set(getAllGuideParams("es").map((p) => p.slug));
+  const esGuideLines = getPublishedGuides()
+    .filter((article) => esSlugs.has(article.slug) && article.titleEs && article.summaryEs)
+    .map((article) => `- [${article.titleEs}](${absoluteUrl(`/es/guides/${article.slug}/`)}): ${article.summaryEs}`);
   const newsLines = getPublishedNews().map(
     (article) =>
-      `- [${article.title}](${absoluteUrl(`/news/${article.slug}/`)}): ${article.summary}`,
+      `- [${article.title}](${absoluteUrl(`/news/${article.slug}/`)}): ${article.summary}${modelsOf(article)}`,
   );
 
   /*
@@ -170,7 +185,7 @@ function body(): string {
       file they learn to distrust (found 2026-09-23).
     */
     `- ${publishedProducts.length} published models across ${categoryLines.length} categories.`,
-    "- Quality management certified to ISO 9001.",
+    "- Our stamping plant is certified to ISO 9001:2015 (certificate 69125Q0026****, valid to 29 October 2028).",
     "- Test reports are published per model, not per range — see the download center.",
     "",
     "## Product categories",
@@ -197,9 +212,10 @@ function body(): string {
     */
     "## Other languages",
     "",
-    `- Español: ${absoluteUrl("/es/")}`,
-    `- Português: ${absoluteUrl("/pt/")}`,
-    ...overlayLocales.map((code) => `- ${LANGUAGE_LABELS[code]}: ${absoluteUrl(`/${code}/`)}`),
+    /* Each language also has its own guide and news list: /<code>/llms.txt (src/lib/locale-llms.ts). */
+    `- Español: ${absoluteUrl("/es/")} — guides and news: ${absoluteUrl("/es/llms.txt")}`,
+    `- Português: ${absoluteUrl("/pt/")} — guides and news: ${absoluteUrl("/pt/llms.txt")}`,
+    ...overlayLocales.map((code) => `- ${LANGUAGE_LABELS[code]}: ${absoluteUrl(`/${code}/`)} — guides and news: ${absoluteUrl(`/${code}/llms.txt`)}`),
     "",
     "## Guides and articles",
     "",
@@ -211,6 +227,7 @@ function body(): string {
     "",
     ...newsLines,
     "",
+    ...(esGuideLines.length ? ["## Guías en español", "", ...esGuideLines, ""] : []),
     "## Every published model",
     "",
     "Model number, product name and page, with material and finish in parentheses where",

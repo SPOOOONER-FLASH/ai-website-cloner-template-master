@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="705" height="203" viewBox="0 0 705 203">
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,51,152)" d="M0 0H603V101H0Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,51,152)" d="M0 0H603V101H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+<path transform="matrix(1,0,0,1,51,51)" d="M0 3C0 1 1 0 3 0H19C21 0 22 1 22 3V39H94V3C94 1 95 0 97 0H113C115 0 116 1 116 3V98C116 100 115 101 113 101H97C95 101 94 100 94 98V58H22V98C22 100 21 101 19 101H3C1 101 0 100 0 98Z" fill="#14130f"/>
+<path transform="matrix(1,0,0,1,51,51)" d="M164.062 2.179C162.68733 .7263333 163 0 165 0H187C189 0 190.65068 .7593334 191.952 2.278L226 42 261.017 2.251C262.339 .7503333 264 0 266 0H288C290 0 290.306 .72 288.918 2.16L237 56V98C237 100 236 101 234 101H218C216 101 215 100 215 98V56Z" fill="#14130f"/>
+<path transform="matrix(1,0,0,1,51,51)" d="M341 0H400C433 0 452 18 452 50 452 83 433 101 400 101H341C339 101 338 100 338 98V3C338 1 339 0 341 0ZM360 18V83H397C418 83 430 70 430 50 430 30 418 18 397 18Z" fill="#14130f" fill-rule="evenodd"/>
+<path transform="matrix(1,0,0,1,51,51)" d="M502 3C502 1 503 0 505 0H600C602 0 603 1 603 3V15C603 17 602 18 600 18H523V40H591C593 40 594 41 594 43V54C594 56 593 57 591 57H523V83H600C602 83 603 84 603 86V98C603 100 602 101 600 101H505C503 101 502 100 502 98Z" fill="#14130f"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+# 2026-10-13 Claude: door-schedule article gets a template and "What to measure before replacing a lock"
+
+- **Why:** this is the second of two article extensions the client asked for after the Clarity AI-visibility report. The first was the certificate-verification section.
+- **Template:**
+  - Generator: `scripts/build_door_schedule_template.py`. It uses openpyxl, the same writer as the master-key workbook. Run it with `py scripts/build_door_schedule_template.py`.
+  - Output: `public/downloads/door-hardware-schedule-template.xlsx`, 8859 bytes.
+  - Layout: one sheet with a header block (project, revision, date, finish, master key, contact), then the 15 requested columns with a help row under them, and 60 bordered rows. Handing has a suggestion dropdown (LH/RH/LHR/RHR/clockwise/anticlockwise) that still accepts free text.
+  - The script reopens the file and asserts the column order.
+  - Wired as `attachment` on `content/news/door-hardware-schedule-guide.json`, the same field the master-key article uses, with title and note in en/es/pt. It is also listed in `content/downloads.json` (kind `planning`), so it appears on /downloads/.
+  - If the generator changes, update `sizeBytes` in both places.
+- **Body:**
+  - New section "What to measure before replacing a lock", placed before "Sending the schedule". It has a 9-row table: backset, door thickness, lock case and center distance, faceplate, strike, cylinder length each side, handing, spindle size, fixing centers.
+  - One paragraph pointing to the template, placed before the closing paragraph.
+  - Two FAQ entries.
+  - All ten languages. Overlay `sourceHash.body` moved to the new English hash because it was current. `faq` was already stale and stays stale.
+- **Checks:**
+  - pass: `npm run content`, i18n-lint, titles:check;
+  - pass: article-catalogue-claims, guide-library, article-description-length;
+  - pass: article-faq, translated-body, portuguese-brazilian, regional-terms, us-spelling, article-layout, article-routes.
+  - `editorial-image-uniqueness` fails here only because `public/images/products-hyde` and the editorial images are outside this sparse checkout. These are not files this change touched.
+- **Limits:**
+  - The xlsx is English only.
+  - The fr/de/ja/ko/tr/ru/ar pages show the attachment's English title and note, as they already do for the master-key sheet.
+  - The xlsx bytes are not reproducible run to run, because of zip timestamps. The size is.
+- **Not done:** no `out/` build. Release is for the HYDE baton holder.

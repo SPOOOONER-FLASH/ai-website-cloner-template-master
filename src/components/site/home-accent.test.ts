@@ -34,11 +34,11 @@ test("homepage accent surfaces are visually neutral until hover or keyboard focu
 
 test("homepage interaction hierarchy separates cards from editorial modules", () => {
   for (const page of [read("src", "app", "(en)", "page.tsx"), read("src", "app", "es", "page.tsx")]) {
-    assert.equal(page.match(/homeAccent/g)?.length, 3);
-    assert.equal(page.match(/homeEditorial/g)?.length, 4);
+    /* Client 2026-10-12 (「这都不要了」): teaser2, teaser3 and the four editorial heroes below
+       the factory story were retired; only the first teaser keeps the accent surface. */
+    assert.equal(page.match(/homeAccent/g)?.length, 1);
+    assert.equal(page.match(/homeEditorial/g)?.length ?? 0, 0);
     assert.match(page, /<PageTeaserModule content=\{content\.teaser1\} homeAccent \/>/);
-    assert.match(page, /<PageTeaserModule content=\{content\.teaser2\} homeAccent \/>/);
-    assert.match(page, /<PageTeaserModule content=\{content\.teaser3\} homeAccent \/>/);
     assert.doesNotMatch(page, /<WelcomeIntro[^>]*homeAccent/);
     assert.doesNotMatch(page, /<TextModule[^>]*homeAccent/);
     assert.doesNotMatch(page, /<HeroModule[^>]*homeAccent/);
@@ -93,11 +93,13 @@ test("current navigation is bold at rest without a persistent underline", () => 
   assert.doesNotMatch(drawer, /current-underline/);
 });
 
-test("homepage mobile disclosure preserves heading order", () => {
+// The "More links" disclosure left with the 2026-10-13 chapter; the band now holds one heading,
+// the page H1, and its links sit in a plain list, so no heading level can be skipped.
+test("homepage welcome band keeps a single heading level", () => {
   const welcome = read("src", "components", "site", "WelcomeIntro.tsx");
 
-  assert.match(welcome, /<h2 className="text-h3 text-ink">\{text\.more\}<\/h2>/);
-  assert.doesNotMatch(welcome, /<h3 className="text-h3 text-ink">\{text\.more\}<\/h3>/);
+  assert.match(welcome, /<h1 className=/);
+  assert.doesNotMatch(welcome, /<h[2-6][\s>]/);
 });
 
 test("homepage product CTA names its destination", () => {

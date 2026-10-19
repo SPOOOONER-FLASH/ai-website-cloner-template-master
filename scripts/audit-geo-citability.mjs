@@ -94,7 +94,8 @@ for (const file of walk(OUT)) {
 
   const route = `/${relative(OUT, file).split(sep).join("/")}`.replace(/index\.html$/, "");
   const text = visible(html);
-  const sentences = text.split(/(?<=[.!?])\s+/).filter((s) => s.length > 25);
+  // Japanese ends a sentence with 。！？ and no space; without the second branch a whole /ja page was one "sentence" and scored ~20 below the other locales.
+  const sentences = text.split(/(?<=[.!?])\s+|(?<=[。！？])/).filter((s) => s.length > 25);
 
   /*
     COUNT THE FIGURES, NOT THE SENTENCES CONTAINING THEM.

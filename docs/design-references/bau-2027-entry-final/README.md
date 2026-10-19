@@ -30,7 +30,7 @@ $env:BAU_QA_PLAYWRIGHT = 'C:/Users/johns/.cache/codex-runtimes/codex-primary-run
 node scripts/design/check-bau-entry-pages.mjs http://127.0.0.1:8770 docs/design-references/bau-2027-entry-final --expect-ar4
 ```
 
-It checks ten initial HTML homepages, both retained meeting forms, 15 language/viewport states, the AR4 section's order and original images, removal of the repeated flagship, real BAU navigation, mobile overflow, focus and sticky navigation. It saves nine captures and `results.json`. During the tall AR4 section capture only, the sticky navigation is temporarily hidden to prevent its overlay from obscuring the hero halfway through the image; navigation remains visible for the interaction checks. No meeting request is submitted. Stop the server with Ctrl+C when finished.
+Since 2026-10-12 the home module is the Argentina collection: an AR-5 row replaced the Buenos Aires photograph (client: 「四个框上面加多一栏给 ar-5」), and both verifiers check for the four AR-5 models instead of the photograph. It checks ten initial HTML homepages, both retained meeting forms, 15 language/viewport states, the AR4 section's order and original images, removal of the repeated flagship, real BAU navigation, mobile overflow, focus and sticky navigation. It saves nine captures and `results.json`. During the tall AR4 section capture only, the sticky navigation is temporarily hidden to prevent its overlay from obscuring the hero halfway through the image; navigation remains visible for the interaction checks. No meeting request is submitted. Stop the server with Ctrl+C when finished.
 
 ## Verify the deployed origin
 

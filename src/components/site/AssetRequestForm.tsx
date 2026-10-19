@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "./Button";
+import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { PrivacyNote } from "./PrivacyNote";
 
 /**
@@ -32,10 +33,16 @@ export function AssetRequestForm({
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  const captcha = useRef<HCaptchaHandle>(null);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (!captcha.current?.token()) {
+      setStatus("error");
+      setMessage(captchaMissingMessage("en"));
+      return;
+    }
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
 
     if (!accessKey) {
@@ -73,6 +80,8 @@ export function AssetRequestForm({
     } catch {
       setStatus("error");
       setMessage("The request could not be sent. Please email us directly instead.");
+    } finally {
+      captcha.current?.reset();
     }
   }
 
@@ -122,6 +131,7 @@ export function AssetRequestForm({
       </label>
 
       <div className="sm:col-span-2">
+        <HCaptchaField ref={captcha} />
         <Button type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Sending…" : "Request the document"}
         </Button>

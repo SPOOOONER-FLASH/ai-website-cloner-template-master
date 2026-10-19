@@ -70,6 +70,17 @@ export function GET(): Response {
 }
 `;
 
+const llmsRoute = (code) => `import { localeLlmsResponse } from "@/lib/locale-llms";
+
+${HEADER}
+/** /${code}/llms.txt — this locale's guides and news for answer engines (src/lib/locale-llms.ts). */
+export const dynamic = "force-static";
+
+export function GET(): Response {
+  return localeLlmsResponse("${code}");
+}
+`;
+
 const sitemapRoute = (code) => `import { localeSitemapResponse } from "@/lib/locale-sitemap-xml";
 
 ${HEADER}
@@ -129,9 +140,9 @@ export const metadata: Metadata = {
     description: defaultDescription[LOCALE],
     images: [
       {
-        url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
+        url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
+        width: 1774,
+        height: 887,
         alt: "HYDE",
       },
     ],
@@ -140,7 +151,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle[LOCALE],
     description: defaultDescription[LOCALE],
-    images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
+    images: [absoluteUrl("/images/editorial/home-panic-exit-double-door.webp")],
   },
   robots: indexable
     ? { index: true, follow: true, "max-image-preview": "large", googleBot: { index: true, follow: true, "max-image-preview": "large" } }
@@ -240,6 +251,7 @@ for (const code of LOCALES) {
   emit(join(root, "layout.tsx"), layout(code));
   emit(join(root, "sitemap.xml", "route.ts"), sitemapRoute(code));
   emit(join(root, "feed.xml", "route.ts"), feedRoute(code));
+  emit(join(root, "llms.txt", "route.ts"), llmsRoute(code));
   for (const entry of STATIC) emit(join(root, entry[0], "page.tsx"), staticPage(code, entry));
   for (const entry of DYNAMIC) emit(join(root, entry[0], "page.tsx"), dynamicPage(code, entry));
 

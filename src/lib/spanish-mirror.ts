@@ -113,6 +113,8 @@ function untranslatedGuide(clean: string, lacking: readonly string[]): boolean {
 export function hasSpanishMirror(enPath: string): boolean {
   const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
   if (clean === "/") return true;
+  const partial = PARTIAL_ROUTES.get(clean);
+  if (partial) return partial.includes("es");
   if (untranslatedGuide(clean, GUIDES_WITHOUT_ES)) return false;
   if (SPANISH_MIRROR_PATHS.has(clean)) return true;
   return SPANISH_MIRROR_PREFIXES.some(
@@ -171,6 +173,10 @@ export const PARTIAL_ROUTES: ReadonlyMap<string, readonly Locale[]> = new Map<st
   ["/bau-2027", ["en", "de"]],
   /* The privacy notice (2026-09-28): German because the BAU form collects data from German visitors. */
   ["/privacy", ["en", "de"]],
+  /* The Argentina collection (launched 2026-10-12): written for Argentine distributors, en and es only. */
+  ["/products/argentina", ["en", "es"]],
+  /* The Brazil panic-bar collection (2026-10-12): written for Brazilian buyers, en and pt only. */
+  ["/products/brazil", ["en", "pt"]],
 ]);
 
 /** The locales a partial route exists in, or null for an ordinary path. */
@@ -273,12 +279,15 @@ const PORTUGUESE_MIRROR_PREFIXES = [
  * at a URL that does not exist. `audit-seo` caught it as `hreflang-target-missing`, which
  * is exactly the error hreflang is punished for.
  */
-const PORTUGUESE_MIRROR_EXCEPTIONS = new Set(["/products/argentina-ar4"]);
+// /products/argentina (Candex + Elabora collection, 2026-10-10) is the same kind: en and es only.
+const PORTUGUESE_MIRROR_EXCEPTIONS = new Set(["/products/argentina-ar4", "/products/argentina"]);
 
 /** True when the given ENGLISH path also exists under /pt. */
 export function hasPortugueseMirror(enPath: string): boolean {
   const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
   if (clean === "/") return true;
+  const partial = PARTIAL_ROUTES.get(clean);
+  if (partial) return partial.includes("pt");
   if (PORTUGUESE_MIRROR_EXCEPTIONS.has(clean)) return false;
   if (untranslatedGuide(clean, GUIDES_WITHOUT_PT)) return false;
   return PORTUGUESE_MIRROR_PREFIXES.some(

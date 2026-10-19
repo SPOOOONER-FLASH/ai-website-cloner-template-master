@@ -2,7 +2,6 @@ import type {
   HeroCarouselContent,
   HeroModuleContent,
   PageTeaserContent,
-  TextModuleContent,
 } from "@/types/fsb-modules";
 import { spacers } from "./home";
 
@@ -31,14 +30,38 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "2400 / 943",
-        src: "/images/editorial/home-panic-exit-bars.webp",
-        label: "Aplicación 309-D en puerta de dos hojas: barra antipánico de pestillo lateral a la izquierda y dispositivo de varillas verticales con cierres superior e inferior visibles a la derecha",
+        ratio: "1800 / 900",
+        src: "/images/editorial/home-panic-exit-double-door.webp",
+        label: "Herrajes antipánico 306-D para puerta de dos hojas: barras en ambas hojas y varillas verticales vistas en la hoja cerrada, abierta a un patio exterior",
       },
       title: "Dispositivos antipánico",
       body: "Un empujón y la puerta se abre. Barras antipánico, guarniciones exteriores y cajas de cerradura para puertas de evacuación y cortafuego, pensadas como un conjunto.",
       linkLabel: "Explorar dispositivos",
       href: "/es/products/panic-exit-devices",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1672 / 941",
+        src: "/images/editorial/argentina-ar4-entry.webp",
+        label: "Umbral arquitectónico contemporáneo en Buenos Aires",
+      },
+      title: "HYDE Argentina AR-4",
+      body: "Cerraduras de embutir compactas seleccionadas para distribuidores argentinos, marcas privadas y pedidos OEM.",
+      linkLabel: "Explorar la colección AR-4",
+      href: "/es/products/argentina-ar4",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1800 / 900",
+        src: "/images/editorial/home-argentina-collection.webp",
+        label: "Cerradura de embutir AR5-115 con su frente largo aparte, niquelada, sobre fondo blanco",
+      },
+      title: "Colección HYDE Argentina",
+      body: "Cerraduras de embutir, cerrojos y cerraduras para batientes angostos fabricadas con matrices HYDE para distribuidores argentinos, con medidas de frente y caja de cada modelo.",
+      linkLabel: "Explorar la colección Argentina",
+      href: "/es/products/argentina",
     },
     hero1,
     {
@@ -84,124 +107,3 @@ export const teaser1: PageTeaserContent = {
   ],
 };
 
-export const hero2: HeroModuleContent = {
-  variant: "stacked",
-  media: {
-    ratio: "2400 / 1159",
-    src: "/images/editorial/home-commercial-egress.webp",
-    label: "Arquitectura de ruta de evacuación comercial con puertas dobles y pasillo tranquilo",
-  },
-  title: "Dispositivos antipánico",
-  body: "Nuestra gama principal, y la que mejor conocemos: barras antipánico para puertas de evacuación y cortafuego, desde dispositivos de sobreponer de un punto hasta juegos multipunto para puertas de dos hojas.",
-  linkLabel: "Explorar la gama principal",
-  href: "/es/products/panic-exit-devices",
-};
-
-export const text1: TextModuleContent = {
-  heading: "Aplicaciones de Canton Hyland",
-  body: "Nuestras barras antipánico, cerraduras, manijas y cierrapuertas se instalan en edificios comerciales, institucionales y residenciales de los mercados a los que exportamos, muchas veces con la marca de nuestros clientes.",
-  linkLabel: "Ver proyectos",
-  href: "/es/projects",
-};
-
-export const teaser2: PageTeaserContent = {
-  cards: [
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/project-commercial-egress.webp",
-        label: "Estudio representativo de evacuación comercial con puertas dobles de salida",
-      },
-      title: "Evacuación comercial",
-      subtitle: "Estudio representativo de herrajes para circulación y rutas de evacuación con criterios normativos",
-      href: "/es/projects/commercial-fire-egress-hardware",
-    },
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/project-hospitality-residential.webp",
-        label: "Estudio representativo de herrajes para hotelería y vivienda",
-      },
-      title: "Hotelería + vivienda",
-      subtitle: "Estudios de acceso y pasillo para conjuntos coordinados de herrajes",
-      href: "/es/projects/hospitality-residential-door-package",
-    },
-  ],
-};
-
-export const hero3: HeroModuleContent = {
-  variant: "side",
-  media: {
-    ratio: "3 / 2",
-    src: "/images/editorial/hyde-real-product-atlas.webp",
-    label: "Fotografías reales del catálogo de herrajes seleccionados para puertas",
-  },
-  title: "Diseñado para",
-  body: "Herrajes seleccionados, un solo cuadro coordinado",
-  linkLabel: "Ver catálogo",
-  href: "/es/products",
-};
-
-export const hero4: HeroModuleContent = {
-  variant: "stacked",
-  media: {
-    ratio: "1 / 1",
-    src: "/images/editorial/hyde-client-lc04-selection.webp",
-    label: "Cerradura de embutir con cuatro pestillos, cerradero y caja de cerradero",
-  },
-  title: "Materiales + ingeniería",
-  body: "Acabados iguales en toda una planilla de puertas, sistemas de llave maestra planificados antes de cortar el primer cilindro y documentación de exportación lista cuando sale el contenedor.",
-  linkLabel: "Cómo trabajamos",
-  href: "/es/company",
-};
-
-export const text2: TextModuleContent = {
-  heading: "Servicio + Descargas",
-  body: "Moldes nuevos a partir de su plano o su muestra, y su marca en la pieza. Si el diseño que nos trae está protegido por la patente de otro fabricante, nuestros ingenieros modifican las piezas o el aspecto hasta que deja de chocar con esa patente.",
-  linkLabel: "Descargas",
-  href: "/es/downloads",
-};
-
-export const teaser3: PageTeaserContent = {
-  cards: [
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-lockcase.webp",
-        label: "Fotografía original de herrajes de control de puertas",
-      },
-      title: "Envíenos sus requisitos de herrajes",
-      subtitle: "Asignaremos su proyecto al especialista de exportación adecuado",
-      href: "/es/contact",
-    },
-    {
-      media: {
-        ratio: "1 / 1",
-        src: "/images/editorial/hyde-client-black-hinge.webp",
-        label: "Bisagra negra con orificios de fijación alternados sobre fondo claro",
-      },
-      title: "Especifique con confianza",
-      subtitle: "Respuestas sobre instalación, acabados, normas y plazos",
-      href: "/es/faq",
-    },
-  ],
-};
-
-export const text3: TextModuleContent = {
-  heading: "Ingeniería para exportación",
-  body: "Selección de acabados, sistemas de llave maestra y detalles de especificación para cada mercado.",
-  linkLabel: "Contactar",
-  href: "/es/contact",
-};
-
-export const hero5: HeroModuleContent = {
-  variant: "stacked",
-  media: {
-    ratio: "2400 / 1464",
-    src: "/images/editorial/home-editorial-insight.webp",
-    label: "Estudio abstracto de luz arquitectónica con superficies de vidrio y metal",
-  },
-  title: "Especificación de herrajes",
-  linkLabel: "Hablar con exportación",
-  href: "/es/contact",
-};

@@ -2,25 +2,43 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/company",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5,
+  "count": 7,
   "files": [
     {
       "source": "public/images/company/assembly-line.webp",
       "output": "public/images/company-hyde/assembly-line.webp",
-      "width": 1308,
-      "height": 872,
+      "width": 2616,
+      "height": 1744,
       "geometry": {
-        "margin": 22,
+        "margin": 30,
         "logoWidth": 120,
         "logoHeight": 30
       },
       "placement": {
-        "corner": "bottom-left",
+        "corner": "bottom-right",
         "strategy": "adaptive-mark",
         "variant": "white"
       },
-      "sourceSha256": "3f3a3ea0f1519059bbc4623f8f4fa3a40844793cbce0193beb4c989f1266f99f",
-      "outputSha256": "b829acf1fad38db1baf67193a840afc2dcab95637f9f3f7c141e54e5ba69b9d3"
+      "sourceSha256": "3c50d1fa2806f85a446265449e2ee6e8ccba4751922046368e3c3a23f71230b9",
+      "outputSha256": "a1c9d1db02c8328c9134be306a0d929654e5747e4abccd0f02fc97f506e4a273"
+    },
+    {
+      "source": "public/images/company/factory-assembly-quality-line.webp",
+      "output": "public/images/company-hyde/factory-assembly-quality-line.webp",
+      "width": 1776,
+      "height": 1184,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "73eb96e77563806086e83b198d4aec43fea6d4628017cb4cff8ecdaa15b20966",
+      "outputSha256": "c7be1ca1b4c84cc9fd9f862fc8509c40c825051a8bcfba93bfebd12cba2d5c00"
     },
     {
       "source": "public/images/company/factory-cnc-machining.webp",
@@ -43,10 +61,10 @@
     {
       "source": "public/images/company/factory-laser-cutter.webp",
       "output": "public/images/company-hyde/factory-laser-cutter.webp",
-      "width": 1000,
-      "height": 667,
+      "width": 2000,
+      "height": 1334,
       "geometry": {
-        "margin": 17,
+        "margin": 30,
         "logoWidth": 120,
         "logoHeight": 30
       },
@@ -55,16 +73,34 @@
         "strategy": "adaptive-mark",
         "variant": "white"
       },
-      "sourceSha256": "9420cbf21a4957435ae2ff967aecb116fa0da77314395cfae0cf30b7df521c04",
-      "outputSha256": "fda5d57f700da0393f67982874a75dddc1710ef87b1df542350d15f5bfa22545"
+      "sourceSha256": "bb8049136cfcdf1dc1949e55a1c9fe8c665c24b4559a55536667dbb850fe2263",
+      "outputSha256": "e5bdbfaa03f64eaa6340772c07dd48f7b1f966f570187b68c183b845fbb87132"
+    },
+    {
+      "source": "public/images/company/factory-polishing-workshop.webp",
+      "output": "public/images/company-hyde/factory-polishing-workshop.webp",
+      "width": 1776,
+      "height": 1184,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "388837cbafcd7d1fca2327f253f19f256c240e2602d8f9818e2f8bd1a131c1b2",
+      "outputSha256": "e77e5e4ce6d86d942d2499abaead358daf9ba167f3aaefd984ddb29615ba7aff"
     },
     {
       "source": "public/images/company/polishing-line.webp",
       "output": "public/images/company-hyde/polishing-line.webp",
-      "width": 1308,
-      "height": 872,
+      "width": 2616,
+      "height": 1744,
       "geometry": {
-        "margin": 22,
+        "margin": 30,
         "logoWidth": 120,
         "logoHeight": 30
       },
@@ -73,26 +109,26 @@
         "strategy": "adaptive-mark",
         "variant": "white"
       },
-      "sourceSha256": "6655fae62ac78fe3f560c657e18c9f8236174ac3f285facebf26b40e266c5448",
-      "outputSha256": "1004e58a39394cebae0f6166ac347ebe4759277efb9163f38e996d8c6e16f259"
+      "sourceSha256": "68977acac3c371d9a434a868414c1dff3d222dc35f557453f68dbbf00b645098",
+      "outputSha256": "a647053ff77a0ca26270c7e7978c6f51e5b1376c659e58bdb8fd39fd447534d5"
     },
     {
       "source": "public/images/company/press-shop.webp",
       "output": "public/images/company-hyde/press-shop.webp",
-      "width": 1308,
-      "height": 872,
+      "width": 2616,
+      "height": 1744,
       "geometry": {
-        "margin": 22,
+        "margin": 30,
         "logoWidth": 120,
         "logoHeight": 30
       },
       "placement": {
         "corner": "bottom-left",
         "strategy": "adaptive-mark",
-        "variant": "black"
+        "variant": "white"
       },
-      "sourceSha256": "6364efad2edb3e27d9408eba31867c268e47c71dde13b8e7d9f58c10ebc51287",
-      "outputSha256": "98d8d7b2dac9d3a536cf2a444d8113ba6fc2ae89f7164d23ff2a831091ea3602"
+      "sourceSha256": "794f87fd2e8964785431a215fc86c9cb6c205e29c4bddfdced56db701d14f3fb",
+      "outputSha256": "5baa9b80bb704815719cb311a97cedfe089001f1beca7fcbb8f6656a0a1b2797"
     }
   ]
 }

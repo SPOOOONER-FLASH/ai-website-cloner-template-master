@@ -38,7 +38,7 @@ removed on 2026-09-28 because the site no longer emulates anything.
 
 ## Design Principles
 - **Real content** — real products, real photographs, real dimensions; never placeholders
-- See "Professional, not decorated" and "Never generate an imagined metal product" below
+- See "Professional, not decorated" and "Never generate an imagined metal product. Render only what the photographs prove." below (product renders allowed only when checked against the real photos, client 2026-10-13)
 
 ## Project Structure
 ```
@@ -176,6 +176,14 @@ whether "75 products have no photograph" is still true. A sheet with a generator
 `scripts/` is re-derivable forever — `npm run sheets` reprints both fill-in sheets from
 `content/products` in one second. Write the generator, then run it; do not write the
 output.
+
+### Reply to the client in Chinese
+
+Client instruction, 2026-10-10: 「中文回复 写进纪律」. Every reply to Spooner — chat
+answers, status reports, hand-offs, questions — is written in Simplified Chinese, whatever
+language the surrounding work is in. Code, commit messages, file paths, model numbers,
+standards and quoted site copy stay as they are. Messages to other agent sessions may use
+either language. The website itself still never shows Chinese on HYDE pages.
 
 ### Finish and communicate quickly
 
@@ -413,7 +421,19 @@ cautious buyer more willing to sign"**. Concretely:
 This is the same principle as the image rule below, applied to everything else: the
 photograph is the specification's first draft, and the whole site is the factory's.
 
-### Never generate an imagined metal product. Ever.
+### Never generate an imagined metal product. Render only what the photographs prove.
+
+> **Current rule (client, 2026-10-13), read this first.** Scenes, installation shots and
+> mood images may be rendered around the product. **The product itself may be rendered
+> too** — 3D or an AI re-render — built from that model's own site photographs
+> (`public/images/products/`) and its published dimensions. Every rendered product is
+> compared side by side with those photographs: holes, screws, profile, proportions,
+> keyway, part count, finish. One mismatch means it does not ship, and the real photo is
+> used instead. A part the photographs do not show is never invented. What stays
+> forbidden is the *imagined* product: one not grounded in, or not matching, our
+> photographs. Details are under "What is allowed" below and in
+> `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`. The history below
+> explains why the check is mandatory.
 
 Client instruction, 2026-09-04, after the client's own principal rejected a set of
 AI-generated product images on sight:
@@ -421,7 +441,9 @@ AI-generated product images on sight:
 > 金属的孔位不对，螺丝不对，安装不上去，都不能用。
 > AI 可以把现有的图片清晰化、白化，但是它不能想象产品。
 
-**This is not a quality bar that better prompting clears. It is a category rule.**
+**This is not a quality bar that better prompting clears. It is a category rule** — for the
+*imagined* product. A render checked against the model's own photographs is not imagined
+(2026-10-13); an unchecked one is.
 
 A garment or a shoe tolerates invented detail — a buyer reads it as styling. **Door
 hardware does not.** Hole positions, thread pitch, spindle squares, backset, fixing
@@ -437,8 +459,9 @@ That is also why this matters more here than the same mistake would on a fashion
 
 #### What is forbidden
 
-- Generating a product that does not exist, in any style, for any purpose — hero,
-  editorial, category art, social, a mock-up, "just for the preview".
+- Generating a product that does not exist, or rendering a real one without checking it
+  against that model's photographs, in any style, for any purpose — hero, editorial,
+  category art, social, a mock-up, "just for the preview".
 - Adding, removing or restyling any component of a real product: swapping a hinge for a
   cylinder, adding a decorative escutcheon, changing a lever profile, inventing screws.
 - Assembling a "set" the factory does not sell as a set, or mixing finishes within one
@@ -454,6 +477,24 @@ That is also why this matters more here than the same mistake would on a fashion
 - **Correcting the client's own exhibition photographs** — angle, crop, keystone,
   colour. The client's principal supplies these; the products and the stand in them are
   real, and only the photography needs work.
+- **Scene and installation composites built from our real product photographs** (client,
+  2026-10-13: 「可以运用我们的实拍图合成渲染……只要产品是对的，做出来逻辑、搭配、场景、安装位置都是对的就行，
+  这个需要你们应用专业的五金知识」). Everything around the product may be rendered or
+  generated: door, wall, glass, stone, props, light. **The product itself may be rendered
+  too** (client, same day: 「产品本身也可以渲染呀，结合我们上传到网站这么多图片」): a 3D model
+  or AI re-render built from that model's own uploaded photographs — every angle the site
+  holds — plus its published dimensions. What makes it allowed is that it is checked,
+  not that it was prompted carefully. Before it ships, compare the rendered product with
+  its reference photographs on hole positions and count, screws, lever/bar profile,
+  proportions, keyway, finish and every component. Anything the photographs do not show
+  is left out or kept out of view, never invented. One mismatch and the image does not
+  ship; fall back to the photograph. That is still the 09-04 rule: the rendered part must
+  be one a buyer could install. The scene must be right as hardware: the correct door type, mounting position, height,
+  handing and side, at true scale and in one finish. A panic bar on the pull side, or a
+  hinge on the lock stile, fails this test just as a redrawn lever does.
+  Brief, sources and the installation checklist: `docs/collaboration/tasks/2026-10-13-codex-scene-compositing.md`.
+  Source images are the site's own uploads, `public/images/products/` (clean, no watermark;
+  the CMS `/admin/` media folder). Do not use the G: library.
 
 #### The test before any image ships
 
@@ -606,6 +647,26 @@ Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在�
   the unpushed commits to `docs/collaboration/PUSH-PENDING.md`. Tell the client in one line, then
   continue with the next item. The next `npm run ship` carries the backlog up. Never sit in a
   retry loop; never `sleep` waiting for the network.
+- **The server pulls from GitLab, not GitHub (since 2026-10-12).** GitHub hid the account, so
+  after every `release:hyde` (or any push the site must see), run `node scripts/mirror-to-gitlab.mjs`.
+  It pushes one snapshot commit of `origin/main`'s tree; without it the server stays on the old version.
+  Since 2026-10-14 `release:hyde` sends the built tree to GitLab itself, **before** the GitHub push
+  (GitHub HTTPS failed for 90 minutes that day while GitLab over SSH worked). If GitHub is down and a
+  release commit exists only locally, deploy it with `node scripts/mirror-to-gitlab.mjs --ref <commit>`;
+  never wait on GitHub to put a release live. If the GitHub fetch itself fails, `release:hyde` builds this checkout's committed HEAD
+  (so commit first) and still deploys through GitLab; the GitHub push is then best-effort (exit 75 = live, not mirrored to GitHub).
+  **Status 2026-10-14: the account is still hidden** (profile, repos and API 404 to logged-out
+  visitors; authenticated pushes work; every repo under SPOOOONER-FLASH is affected). Ticket #4847632
+  is the client's to chase (`docs/collaboration/2026-10-14-手动操作-GitHub工单催办.md`). Until it is
+  restored: never contact GitHub or change account/repo settings; no new repos, forks, bulk API calls
+  or force pushes; batch small commits where you can — we told GitHub we would push less often.
+- **Every HYDE release has a version number and a log entry (client, 2026-10-13: 「hot fix 或者 update
+  日志……命名版本号，记录每次上线什么，有跟踪」).** `release:hyde` stamps `vYYYY.MM.DD.N` into the release
+  commit and writes `out/release.json`, so https://cantonlock.com/release.json shows what is live.
+  `docs/collaboration/上线日志-RELEASES.md` is generated from git (`scripts/build-release-log.mjs`; rules in
+  `scripts/lib/release-version.mjs`) and `npm run ship` refreshes it. After a release, run
+  `node scripts/build-release-log.mjs --docx` so `Desktop\hyde\06-上线日志` matches, and quote the version
+  in the report to the client.
 - **Exit 75 does not reliably mean "not pushed". Confirm with `git ls-remote` before you retry
   or re-run anything.** On 2026-09-29 `release:hyde` reported 「超时 推送失败（网络）」 on all
   three attempts and exited 75 — and the release commit was **already on `origin/main`**. One

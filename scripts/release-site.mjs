@@ -41,6 +41,7 @@ import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { OUTPUT_DIR, laneOf } from "./lib/site-lanes.mjs";
+import { RELEASE_SUBJECT, nextVersion } from "./lib/release-version.mjs";
 
 const args = process.argv.slice(2);
 const opt = (name) => {
@@ -118,8 +119,14 @@ let ok = false;
 
 try {
   console.log(`→ ${NAME} 发布：拉取 origin/main（大仓库，可能要两三分钟）`);
-  must("git fetch", run("git", ["fetch", "origin", "main"], ROOT, NET));
-  const base = run("git", ["rev-parse", "--short", "origin/main"], ROOT, { capture: true }).out.trim();
+  /*
+    GitHub unreachable (account hidden, TLS failures — 2026-10-14, client: 「github上不去……用 gitlab 就行」):
+    build this checkout's own committed HEAD instead of stopping. The site deploys from GitLab either way.
+  */
+  const fetched = run("git", ["fetch", "origin", "main"], ROOT, NET).status === 0;
+  const SOURCE = fetched ? "origin/main" : run("git", ["rev-parse", "HEAD"], ROOT, { capture: true }).out.trim();
+  if (!fetched) console.log(`⚠ 拉不到 GitHub，改为构建本机已提交的 HEAD（${SOURCE.slice(0, 12)}）`);
+  const base = run("git", ["rev-parse", "--short", SOURCE], ROOT, { capture: true }).out.trim();
 
   if (fresh && existsSync(WT)) {
     run("git", ["worktree", "remove", "--force", WT], ROOT, { capture: true });
@@ -127,12 +134,12 @@ try {
   }
   if (existsSync(join(WT, ".git"))) {
     console.log(`→ 复用检出 ${WT}，切到 ${base}`);
-    must("git checkout", run("git", ["checkout", "-q", "--detach", "-f", "origin/main"], WT));
+    must("git checkout", run("git", ["checkout", "-q", "--detach", "-f", SOURCE], WT));
     must("git clean", run("git", ["clean", "-fdq"], WT));
   } else {
     console.log(`→ 在 ${WT} 建干净检出（${base}）`);
     run("git", ["worktree", "prune"], ROOT, { capture: true });
-    must("git worktree add", run("git", ["worktree", "add", "--detach", WT, "origin/main"], ROOT));
+    must("git worktree add", run("git", ["worktree", "add", "--detach", WT, SOURCE], ROOT));
   }
   if (existsSync(".env.local")) copyFileSync(".env.local", join(WT, ".env.local"));
 
@@ -174,6 +181,7 @@ try {
   }
   must(`npm run ${prep}`, built);
 
+  let version = "";
   console.log(`→ 只暂存 ${OUT}/`);
   must("git add", run("git", ["add", "-A", "--", `${OUT}/`], WT));
   const staged = run("git", ["diff", "--cached", "--name-only"], WT, { capture: true })
@@ -190,11 +198,32 @@ try {
       .filter((l) => l.startsWith("??")).length;
     if (untracked) throw new Error(`${OUT}/ 里还有 ${untracked} 个未跟踪文件没被暂存`);
 
+    /*
+      HYDE version number (client 2026-10-13: 「命名版本号……有跟踪」): stamped into the release commit
+      and served as /release.json, so the live version can be checked against
+      docs/collaboration/上线日志-RELEASES.md. Same rule as that log (scripts/lib/release-version.mjs).
+    */
+    if (site === "hyde") {
+      const history = run("git", ["log", "--since=2026-09-20", "--reverse", "--format=%H%x09%cI%x09%s", "HEAD"], WT, { capture: true })
+        .out.split("\n")
+        .filter(Boolean)
+        .map((line) => {
+          const [sha, when, subject] = line.split("\t");
+          return { sha, when, subject };
+        })
+        .filter((r) => RELEASE_SUBJECT.test(r.subject));
+      const builtAt = new Date().toISOString();
+      version = nextVersion(history, builtAt);
+      writeFileSync(join(WT, OUT, "release.json"), `${JSON.stringify({ version, source: base, builtAt }, null, 2)}\n`);
+      console.log(`→ 版本号 ${version}（写入 ${OUT}/release.json）`);
+      must("git add", run("git", ["add", "--", `${OUT}/release.json`], WT));
+    }
+
     const msgFile = join(WT, ".release-message.txt");
     writeFileSync(
       msgFile,
       [
-        `发布（${NAME}）：构建 ${base}`,
+        `发布（${NAME}）${version ? ` ${version}` : ""}：构建 ${base}`,
         "",
         `由 scripts/release-site.mjs --site ${site} 在干净检出中构建，只提交 ${OUT}/（${staged.length} 个文件）。`,
         `源码即 ${base}，不含任何工作区里未提交的改动。另一站的输出目录未提交。`,
@@ -203,6 +232,16 @@ try {
       ].join("\n"),
     );
     must("git commit", run("git", ["commit", "-q", "-F", msgFile], WT));
+    /*
+      GitLab first (2026-10-14). The server deploys from GitLab, which this machine reaches over SSH;
+      GitHub HTTPS failed its TLS handshake for 90 minutes that day and a built release sat unpushed.
+      So the built tree goes to GitLab before the GitHub push; the post-push mirror then only updates
+      the source side. A failure here never stops the release.
+    */
+    if (site === "hyde") {
+      const m = run("node", ["scripts/mirror-to-gitlab.mjs", "--ref", "HEAD"], WT, { timeout: 10 * 60 * 1000 });
+      console.log(m.status === 0 ? "→ 已先同步到 GitLab：服务器 5 分钟内上线，GitHub 推送随后进行" : "⚠ GitLab 先行同步失败，推送后照常跑 mirror-to-gitlab");
+    }
     /*
       The build rewrote the OTHER site's tree too (and a few generated files). None of it is
       committed, but it leaves the checkout dirty, and a dirty checkout makes the rebase below

@@ -609,7 +609,76 @@ function composeTitle(product, locale) {
 /** 材质进句子：普通单词转小写，全大写缩写（ABS、304SS、PVD）保留原样。 */
 const inSentence = (m) => String(m).split(/(\s+)/).map((w) => (/^[A-ZÀ-Ý][a-zà-ÿ]+$/.test(w) ? w.toLowerCase() : w)).join("");
 
+/*
+  2026-10-12（Ahrefs 体检）：「Meta description too short」3,509 页 —— 事实少的产品（BH40 只有型号和名字）
+  描述停在 90 个字符。补的是这个产品自己的 summary 第一句（英西葡写在记录里，七语种是译者写的 summary），
+  不是套话：先插在「下一步」之前，放不下就用「型号 + summary」重写开头，仍放不下就不动。
+  带认证/等级措辞的句子不用（CERT），整句取用、不截断。
+*/
+const DESC_MIN = 110;
+const firstSentence = (text) => {
+  const t = String(text ?? "").replace(/\s+/g, " ").trim();
+  if (!t) return null;
+  const m = t.match(/^.+?[.!?。](?=\s|$)/u);
+  return (m ? m[0] : t).trim();
+};
+/*
+  Second fallback (2026-10-13, Ahrefs (d)): a description still under DESC_MIN after the summary gets the
+  client-confirmed sourcing sentence (made in Guangdong; lead time from 30 days, src/data/category-sourcing.ts),
+  in each locale's already-reviewed wording, before the closing call to action. Never past `max`.
+*/
+const SOURCING = {
+  en: "Made in Guangdong, China. Lead time from 30 days.",
+  es: "Fabricado en Guangdong, China. Plazo desde 30 días.",
+  pt: "Fabricado em Guangdong, China. Prazo a partir de 30 dias.",
+  fr: "Délai à partir de 30 jours, fabrication dans le Guangdong, en Chine.",
+  de: "Lieferzeit ab 30 Tagen, gefertigt in Guangdong, China.",
+  ja: "納期は30日から、中国・広東省で製造しています。",
+  ko: "납기는 30일부터이며 중국 광둥성에서 생산합니다.",
+  tr: "Teslim süresi 30 günden başlar; üretim Guangdong, Çin.",
+  ru: "Срок изготовления — от 30 дней, производство в Гуандуне, Китай.",
+  ar: "مدة التسليم من 30 يومًا، والتصنيع في قوانغدونغ، الصين.",
+};
+function lengthenWithSummary(desc, opts) {
+  const out = lengthenOnce(desc, opts);
+  const sourcing = SOURCING[opts.locale];
+  if (out.length >= DESC_MIN || !sourcing || out.includes(sourcing)) return out;
+  const { next, max = DESC_MAX, colon = ": " } = opts;
+  const sp = colon === "：" ? "" : " ";
+  const base = next && out.endsWith(next) ? out.slice(0, -next.length).trim() : out;
+  const candidates = [next && base !== out ? `${base}${sp}${sourcing}${sp}${next}` : null, `${out}${sp}${sourcing}`, base !== out ? `${base}${sp}${sourcing}` : null].filter(Boolean);
+  return candidates.find((c) => c.length <= max && c.length > out.length) ?? out;
+}
+
+function lengthenOnce(desc, { model, summary, next, max = DESC_MAX, lower = false, colon = ": " }) {
+  if (desc.length >= DESC_MIN) return desc;
+  let s = firstSentence(summary);
+  if (!s || CERT.test(s)) return desc;
+  if (!/[.!?。]$/.test(s)) s += colon === "：" ? "。" : ".";
+  if (desc.includes(s.slice(0, 24))) return desc;
+  const named = model && s.toLowerCase().includes(String(model).toLowerCase());
+  const body = lower && !/^\p{Lu}{2}/u.test(s) ? s.charAt(0).toLowerCase() + s.slice(1) : s;
+  const lead = named || !model ? s : lower ? `${model} ${body}` : `${model}${colon}${s}`;
+  const sp = colon === "：" ? "" : " ";
+  const base = next && desc.endsWith(next) ? desc.slice(0, -next.length).trim() : desc;
+  const candidates = [
+    next ? `${base}${sp}${s}${sp}${next}` : null,
+    `${base}${sp}${s}`,
+    next ? `${lead}${sp}${next}` : null,
+    lead,
+  ].filter(Boolean);
+  return candidates.find((c) => c.length <= max && c.length > desc.length) ?? desc;
+}
+
 function composeDescription(product, locale) {
+  const core = composeDescriptionCore(product, locale);
+  const summary = locale === "en" ? product.summary : locale === "es" ? product.summaryEs : product.summaryPt;
+  const model = product.modelTbc || modelIsName(product) ? null : glossModel(product.model, locale).trim();
+  const NEXT = { en: "Factory direct, samples and quotation on request.", es: "Directo de fábrica, muestras y cotización a pedido.", pt: "Direto da fábrica, amostras e orçamento sob consulta." };
+  return lengthenWithSummary(core, { model, summary, next: NEXT[locale], lower: true, locale });
+}
+
+function composeDescriptionCore(product, locale) {
   const model = glossModel(product.model, locale).trim();
   const name = displayName(product, locale);
 
@@ -1001,7 +1070,16 @@ for (const loc of OVERLAY_LOCALES) {
         ? `${head}。`
         : `${head}.`;
     const withNext = `${lead} ${OVERLAY_NEXT[loc]}`.replace("。 ", "。");
-    const desc = withNext.length <= DESC_MAX ? withNext : lead;
+    /* ja/ko: one character is about two Latin letters wide, so their ceiling is 90, not 150. */
+    const descMax = loc === "ja" || loc === "ko" ? 90 : DESC_MAX;
+    const desc = lengthenWithSummary(withNext.length <= descMax ? withNext : lead, {
+      model,
+      summary: tr.summary,
+      next: withNext.length <= descMax ? OVERLAY_NEXT[loc] : null,
+      max: descMax,
+      colon: loc === "ja" ? "：" : ": ",
+      locale: loc,
+    });
 
     if (CERT.test(title) || CERT.test(desc)) overlayIssues.push(`${loc} ${slug}: certification-like wording`);
     if (tr.seoTitle !== title || tr.seoDescription !== desc) {

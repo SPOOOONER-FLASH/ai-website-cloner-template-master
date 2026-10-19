@@ -190,7 +190,7 @@ function parsePage(outDir, file) {
     file,
     route,
     html,
-    public: !NON_PUBLIC_ROUTES.has(route),
+    public: !NON_PUBLIC_ROUTES.has(route) && !route.startsWith("/admin/"),
     /*
       Deliberately withheld — see the `withheldPages` note. Only counts alongside an
       actual noindex, so the marker on its own cannot exempt an indexable page from
@@ -244,9 +244,29 @@ function parseRobots(source) {
         ? { name: line.toLowerCase(), value: "" }
         : { name: line.slice(0, separator).trim().toLowerCase(), value: line.slice(separator + 1).trim() };
     });
+  /*
+    Only the `*` group speaks for every crawler. robots.txt also carries named groups —
+    since 2026-10-16 one `Disallow: /` per Chinese search/AI crawler (BLOCKED_CRAWLERS in
+    src/lib/seo-policy.ts) — and reading those as a site-wide block would report the
+    released site as staging. A group is the run of User-agent lines and the rules after
+    them, up to the next User-agent line that follows a rule.
+  */
+  const wildcard = [];
+  let agents = [];
+  let inRules = false;
+  for (const directive of directives) {
+    if (directive.name === "user-agent") {
+      if (inRules) agents = [];
+      inRules = false;
+      agents.push(directive.value);
+    } else if (directive.name === "allow" || directive.name === "disallow") {
+      inRules = true;
+      if (agents.includes("*")) wildcard.push(directive);
+    }
+  }
   return {
-    globalDisallow: directives.some(({ name, value }) => name === "disallow" && value === "/"),
-    disallows: directives.filter(({ name }) => name === "disallow").map(({ value }) => value),
+    globalDisallow: wildcard.some(({ name, value }) => name === "disallow" && value === "/"),
+    disallows: wildcard.filter(({ name }) => name === "disallow").map(({ value }) => value),
     sitemaps: directives.filter(({ name }) => name === "sitemap").map(({ value }) => value),
   };
 }

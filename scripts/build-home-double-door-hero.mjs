@@ -1,127 +1,87 @@
 #!/usr/bin/env node
-/**
- * Reframe the existing 309-D product-gallery application image for the home carousel.
- *
- * The source's full height is visible: the right leaf's upper and lower rod latches
- * must not be cropped out. No hardware is generated, moved or recoloured.
- * The dark side panels carry the approved HYDE vector lockup and model/application
- * lettering. The photo's legacy oval badge is replaced in its existing corner
- * watermark area. The tiny slogan below it is removed by vertically interpolating
- * through its 18-pixel strip; hardware geometry stays put.
- *
- * It also refreshes the three desktop srcset widths and the centred 4:3 phone crops,
- * using the same settings as the shared editorial asset generators.
- */
-import { readFile, writeFile } from "node:fs/promises";
+/** Preserve the photographed hardware; replace only the rejected office destination. */
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const source = join(root, "public/images/products/309-d-double-door-panic-exit-device-7.webp");
-const editorialRoot = join(root, "public/images/editorial");
-const destination = join(editorialRoot, "home-panic-exit-bars.webp");
-const width = 2400;
-const height = 943;
-const photoLeft = Math.round((width - height) / 2);
+const pack = join(root, "docs/design-references/home-hero-b-egress-2026-10-09");
+const receipt = JSON.parse(await readFile(join(pack, "receipt.json"), "utf8"));
+const base = await readFile(join(root, receipt.baseMaster));
+const courtyard = await readFile(join(pack, "empty-courtyard.png"));
+const photo = await readFile(join(root, receipt.source));
+const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
+assert.equal(hash(base), receipt.baseMasterSha256, "Approved B architecture changed");
+assert.equal(hash(courtyard), receipt.courtyardSha256, "Empty exterior plate changed");
+assert.equal(hash(photo), receipt.sourceSha256, "306-D customer source changed");
+assert.deepEqual(
+  await sharp(base).extract(receipt.masterPhotoBounds).removeAlpha().raw().toBuffer(),
+  await sharp(photo).extract(receipt.sourceCrop).removeAlpha().raw().toBuffer(),
+  "Original B no longer contains the customer photograph",
+);
+const { width: cropWidth, height: cropHeight } = receipt.sourceCrop;
+const points = receipt.environmentPolygon.map(([x, y]) => `${x - receipt.sourceCrop.left},${y - receipt.sourceCrop.top}`).join(" ");
+const mask = await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${cropWidth}" height="${cropHeight}"><rect width="100%" height="100%" fill="black"/><polygon points="${points}" fill="white"/></svg>`)).toColourspace("b-w").raw().toBuffer();
+const field = await sharp(courtyard).resize({ width: 255, height: 624, fit: "fill" })
+  .extend({ left: 45, top: 34, right: 296, bottom: 2, background: "black" })
+  .removeAlpha().png().toBuffer();
+const patch = await sharp(field).joinChannel(mask, { raw: { width: cropWidth, height: cropHeight, channels: 1 } }).png().toBuffer();
+const master = await sharp(base).composite([{ input: patch, left: receipt.masterPhotoBounds.left, top: receipt.masterPhotoBounds.top }]).png().toBuffer();
+assert.equal(hash(master), receipt.masterSha256, "Reviewed egress master changed");
+const actual = await sharp(master).extract(receipt.masterPhotoBounds).removeAlpha().raw().toBuffer();
+const original = await sharp(photo).extract(receipt.sourceCrop).removeAlpha().raw().toBuffer();
+let protectedPixels = 0;
+for (let pixel = 0; pixel < mask.length; pixel++) {
+  if (mask[pixel]) continue;
+  protectedPixels++;
+  for (let channel = 0; channel < 3; channel++) assert.equal(actual[pixel * 3 + channel], original[pixel * 3 + channel], `Photographed product changed at pixel ${pixel}`);
+}
+assert.equal(protectedPixels, receipt.protectedSourceRgbPixels);
 const check = process.argv.includes("--check");
-
-const hydeBrandRoot = join(root, "public/images/brand/hyde");
-const lockup = await sharp(join(hydeBrandRoot, "hyde-logo-horizontal-white.svg"))
-  .resize({ width: 250 })
-  .png()
-  .toBuffer();
-const icon = await sharp(join(hydeBrandRoot, "hyde-logo-icon-white.svg"))
-  .resize({ width: 70 })
-  .png()
-  .toBuffer();
-const { data: sourcePixels, info: sourceInfo } = await sharp(source)
-  .removeAlpha()
-  .raw()
-  .toBuffer({ resolveWithObject: true });
-if (sourceInfo.width !== 1000 || sourceInfo.height !== 1000 || sourceInfo.channels !== 3) {
-  throw new Error("309-D gallery source dimensions changed; review the legacy-logo cleanup bounds");
-}
-// The legacy slogan crosses a wall mullion and the left closer. Interpolate
-// along each column so both vertical shapes continue through the text strip.
-for (let x = 35; x <= 186; x += 1) {
-  for (let channel = 0; channel < sourceInfo.channels; channel += 1) {
-    const upper = sourcePixels[((101 * sourceInfo.width + x) * sourceInfo.channels) + channel];
-    const lower = sourcePixels[((120 * sourceInfo.width + x) * sourceInfo.channels) + channel];
-    for (let y = 102; y < 120; y += 1) {
-      const blend = (y - 101) / 19;
-      sourcePixels[((y * sourceInfo.width + x) * sourceInfo.channels) + channel] =
-        Math.round(upper * (1 - blend) + lower * blend);
-    }
-  }
-}
-const cleanedSource = await sharp(sourcePixels, {
-  raw: { width: sourceInfo.width, height: sourceInfo.height, channels: sourceInfo.channels },
-})
-  .png()
-  .toBuffer();
-const legacyBadgeCover = Buffer.from(`<svg width="172" height="86" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="86" cy="43" rx="84" ry="42" fill="#22272a"/>
-</svg>`);
-const photo = await sharp(cleanedSource)
-  .resize(height, height)
-  .composite([
-    { input: legacyBadgeCover, left: 20, top: 7 },
-    { input: icon, left: 71, top: 20 },
-  ])
-  .png()
-  .toBuffer();
-const lettering = Buffer.from(`<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    text { fill: #e5e7e5; font-family: Arial, Helvetica, sans-serif; }
-    .small { font-size: 22px; letter-spacing: 4px; }
-  </style>
-  <line x1="90" y1="190" x2="565" y2="190" stroke="#778080" stroke-width="2"/>
-  <text x="82" y="500" font-size="144px" font-weight="600" letter-spacing="-6px">309-D</text>
-  <text x="90" y="565" class="small">DOUBLE-LEAF EXIT</text>
-  <text x="90" y="606" class="small">APPLICATION</text>
-  <text x="1840" y="760" class="small">01 / RIM EXIT</text>
-  <text x="1840" y="802" class="small">02 / VERTICAL ROD</text>
-  <line x1="1840" y1="826" x2="2315" y2="826" stroke="#778080" stroke-width="2"/>
-</svg>`);
-
-const output = await sharp({
-  create: { width, height, channels: 3, background: "#22272a" },
-})
-  .composite([
-    { input: photo, left: photoLeft, top: 0 },
-    { input: lettering, left: 0, top: 0 },
-    { input: lockup, left: 90, top: 112 },
-  ])
-  .webp({ quality: 86, effort: 6 })
-  .toBuffer();
-
-const derivatives = [[destination, output]];
-for (const candidateWidth of [480, 800, 1600]) {
+// The existing desktop cover/entry zoom and phone crop must retain both rod ends.
+const desktopHeight = receipt.width / (1920 / 754) / 1.015;
+assert.ok(receipt.masterPhotoBounds.top >= (receipt.height - desktopHeight) / 2);
+assert.ok(receipt.masterPhotoBounds.top + receipt.masterPhotoBounds.height <= (receipt.height + desktopHeight) / 2);
+const mobileWidth = receipt.height * 4 / 3;
+assert.ok(receipt.masterPhotoBounds.left >= (receipt.width - mobileWidth) / 2);
+assert.ok(receipt.masterPhotoBounds.left + receipt.masterPhotoBounds.width <= (receipt.width + mobileWidth) / 2);
+const editorialRoot = join(root, "public/images/editorial");
+const sourceName = "home-panic-exit-bars";
+const output = await sharp(master).webp({ quality: 86, effort: 6 }).toBuffer();
+const derivatives = [[join(editorialRoot, `${sourceName}.webp`), output]];
+for (const width of [480, 800, 1600]) {
   derivatives.push([
-    join(editorialRoot, "responsive", `home-panic-exit-bars-${candidateWidth}w.webp`),
-    await sharp(output)
-      .resize({ width: candidateWidth, withoutEnlargement: true })
-      .webp({ quality: 80, effort: 6, smartSubsample: true })
-      .toBuffer(),
+    join(editorialRoot, "responsive", `${sourceName}-${width}w.webp`),
+    await sharp(output).resize({ width }).webp({ quality: 80, effort: 6, smartSubsample: true }).toBuffer(),
   ]);
 }
-for (const candidateWidth of [400, 800]) {
+for (const width of [400, 800]) {
   derivatives.push([
-    join(editorialRoot, "mobile-hero", `home-panic-exit-bars-${candidateWidth}w-4x3.webp`),
-    await sharp(output)
-      .resize({ width: candidateWidth, height: Math.round(candidateWidth * 3 / 4), fit: "cover", position: "centre" })
-      .webp({ quality: 80, effort: 6 })
-      .toBuffer(),
+    join(editorialRoot, "mobile-hero", `${sourceName}-${width}w-4x3.webp`),
+    await sharp(output).resize({ width, height: width * 3 / 4, fit: "cover", position: "centre" })
+      .webp({ quality: 80, effort: 6 }).toBuffer(),
   ]);
 }
-
-for (const [path, bytes] of derivatives) {
-  if (check) {
-    const published = await readFile(path);
-    if (!published.equals(bytes)) throw new Error(`${path} is stale`);
-  } else {
-    await writeFile(path, bytes);
+const provenance = {
+  kind: "client-approved-photograph-in-generated-architecture",
+  approvedDirection: "B — pale civic space, corrected to an outdoor escape destination by client 2026-10-09",
+  ...receipt,
+  preservedMasterRgbPixels: protectedPixels,
+  changedProtectedSourcePixels: 0,
+  delivery: "Lossy WebP encoding and responsive resizing; pixel equality applies to the PNG master only.",
+  independentlyVerifiedInstallation: false,
+  outputs: derivatives.map(([target, bytes]) => ({ path: target.slice(root.length + 1).replaceAll("\\", "/"), sha256: hash(bytes), bytes: bytes.length })),
+};
+derivatives.push([join(editorialRoot, `${sourceName}.webp.json`), Buffer.from(JSON.stringify(provenance, null, 2) + "\n")]);
+derivatives.push([join(pack, "master.png"), master]);
+for (const [target, bytes] of derivatives) {
+  if (check) assert.ok((await readFile(target)).equals(bytes), `${target} is stale`);
+  else {
+    await mkdir(dirname(target), { recursive: true });
+    await writeFile(target, bytes);
   }
 }
-console.log(`${check ? "Verified" : "Wrote"} 309-D home hero and five responsive derivatives.`);
+console.log(`${check ? "Verified" : "Wrote"} B outdoor egress hero and five derivatives; ${output.length} bytes; ${protectedPixels} source RGB pixels protected before WebP encoding.`);

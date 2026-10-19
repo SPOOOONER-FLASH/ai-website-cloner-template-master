@@ -1197,6 +1197,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
  * twin read Spanish-shaped Portuguese.
  */
 export const FINISH_NAMES_ES: Record<string, string> = {
+  "Nickel-plated":
+    "Niquelado",
   "Polished Brass":
     "Latón pulido",
   "Polished brass":
@@ -1286,6 +1288,9 @@ export const FINISH_NAMES_ES: Record<string, string> = {
  * alloy number is carried across unchanged, only the words move.
  */
 export const MATERIAL_NAMES_ES: Record<string, string> = {
+  /* The four AR-4 records (2026-10-10); same terms as "Lock case" and "Nickel Plated Iron". */
+  "Nickel-plated iron lock case":
+    "Caja de cerradura de hierro niquelado",
   "Stainless steel":
     "Acero inoxidable",
   "Stainless Steel":

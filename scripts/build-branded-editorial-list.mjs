@@ -62,7 +62,7 @@ const REAL_PHOTOGRAPH_KINDS = [
  * the old oval mark; machine branding is factual", and `09-real-assembly-line` as an
  * "untouched real assembly photograph" that replaced a rejected AI-cleaned attempt.
  *
- * The other eighteen files in public/images/company/ have no such record. They are not
+ * The other files in public/images/company/ (14 on 2026-10-13) have no such record. They are not
  * listed, and the report says so by name, which is how the client can confirm them one at
  * a time instead of approving a directory.
  */
@@ -91,6 +91,14 @@ const DOCUMENTED_FACTORY_PHOTOGRAPHS = [
     photograph.
   */
   "factory-laser-cutter.webp",
+  /*
+    2026-10-13, the homepage factory story. IMAGE_CREDITS.md had both as "Accept for demo;
+    verify authenticity" because of their polished look and the Hyland signage in frame. The
+    client answered the question directly after seeing them in the motion demo —
+    「是啊是自家的实拍」 — each confirmed by name, as the CNC photograph was on 2026-09-17. The signage is the factory's own (the company is Canton Hyland) and stays.
+  */
+  "factory-polishing-workshop.webp",
+  "factory-assembly-quality-line.webp",
 ];
 
 /*

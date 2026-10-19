@@ -1,0 +1,284 @@
+/*
+ * The three homepage sections taken from the 2026-10-12 motion demo (ExportMap, FamilyIndex,
+ * FactoryStory). One rule for all of them: the page is complete without this file's motion.
+ * Everything below either decorates a state that is already rendered, or is switched on by a
+ * small island (MotionArm, StoryStage, FamilyFollow) that first checks the content is still
+ * off screen. Durations come from the --motion-* tokens only (npm run motion:check).
+ */
+
+/* ---------------------------------------------------------------- export map */
+
+.map {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.dots {
+  fill: none;
+  stroke: var(--color-surface);
+  stroke-opacity: 0.18;
+  stroke-width: 3.4;
+  stroke-linecap: round;
+}
+.marketDots {
+  fill: none;
+  stroke: var(--color-surface);
+  stroke-opacity: 0.72;
+  stroke-width: 3.4;
+  stroke-linecap: round;
+}
+.route {
+  fill: none;
+  stroke: var(--color-surface);
+  stroke-opacity: 0.55;
+  stroke-width: 0.8;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset calc(var(--motion-slow) * 2) var(--motion-ease) calc(var(--motion-fast) * var(--i));
+}
+.pin {
+  fill: var(--color-surface);
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform var(--motion-enter) var(--motion-ease) calc(var(--motion-slow) + var(--motion-fast) * var(--i));
+}
+.label {
+  fill: var(--color-surface);
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity var(--motion-medium) var(--motion-ease-crisp) calc(var(--motion-slow) * 2 + var(--motion-fast) * var(--i));
+}
+.labelSub {
+  fill: var(--color-surface);
+  fill-opacity: 0.64;
+  font-size: 11.5px;
+}
+.travel {
+  fill: var(--color-surface);
+}
+.pulse {
+  fill: none;
+  stroke: var(--color-surface);
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pulse calc(var(--motion-slow) * 4) ease-out infinite;
+}
+.pulseLate {
+  animation-delay: calc(var(--motion-slow) * 2);
+}
+@keyframes pulse {
+  from { transform: scale(1); opacity: 0.9; }
+  to { transform: scale(5); opacity: 0; }
+}
+
+.barTrack {
+  height: 2px;
+  background: rgb(255 255 255 / 0.16);
+}
+.barFill {
+  display: block;
+  height: 100%;
+  background: var(--color-surface);
+  transform-origin: left;
+  transition: transform calc(var(--motion-slow) * 2) var(--motion-ease) calc(var(--motion-fast) * var(--i) * 0.5);
+}
+[dir="rtl"] .barFill {
+  transform-origin: right;
+}
+
+/* Armed by MotionArm only while the section is still below the fold. */
+[data-armed="true"]:not([data-inview="true"]) .route { stroke-dashoffset: 1; }
+[data-armed="true"]:not([data-inview="true"]) .pin { transform: scale(0); }
+[data-armed="true"]:not([data-inview="true"]) .label { opacity: 0; }
+[data-armed="true"]:not([data-inview="true"]) .travel { display: none; }
+[data-armed="true"]:not([data-inview="true"]) .barFill { transform: scaleX(0); }
+
+/* ---------------------------------------------------------------- family index */
+
+.familyRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 18px 16px;
+  border-bottom: 1px solid var(--color-frame);
+}
+.familyName {
+  font-size: clamp(2.8rem, 1.6rem + 2.4vw, 5.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  transition: transform var(--motion-medium) var(--motion-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .familyRow:hover .familyName,
+  .familyRow:focus-visible .familyName {
+    transform: translateX(16px);
+  }
+  [dir="rtl"] .familyRow:hover .familyName,
+  [dir="rtl"] .familyRow:focus-visible .familyName {
+    transform: translateX(-16px);
+  }
+  .thumb {
+    display: none;
+  }
+}
+.follow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  width: 320px;
+  height: 240px;
+  pointer-events: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-frame);
+  box-shadow: 8px 8px 0 var(--color-frame);
+  opacity: 0;
+  transition: opacity var(--motion-fast) var(--motion-ease-crisp);
+}
+.followOn {
+  opacity: 1;
+}
+.followImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+  animation: wipe var(--motion-enter) var(--motion-ease) both;
+}
+.followModel {
+  position: absolute;
+  left: 12px;
+  bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+@keyframes wipe {
+  from { clip-path: inset(0 0 100% 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+/* ---------------------------------------------------------------- factory story */
+
+.stage {
+  position: sticky;
+  top: var(--h-main-nav);
+  height: calc(100svh - var(--h-main-nav));
+  overflow: hidden;
+}
+/* A wipe made of two opposite transforms: the frame slides up while the photograph inside it
+   slides down by the same amount, so the picture stays put and only its edge moves. Both are
+   compositor-only; the first build animated clip-path on full-screen photographs, which
+   repaints every frame and is what the client felt as 「很卡」 (2026-10-12).
+   The scale is the demo's push (client's screen recording, 2026-10-12): the incoming photo
+   settles from 1.02 to 1, the one it covers drifts on to 1.08, so the cut has depth. */
+.shot,
+.shot img {
+  transition: transform calc(var(--motion-slow) * 2) var(--story-ease);
+  will-change: transform;
+}
+.stage {
+  --story-ease: cubic-bezier(0.76, 0, 0.24, 1);
+}
+.shot {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  transform: translateY(100%);
+}
+.shot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-100%) scale(1.02);
+}
+.shot:is([data-shot="on"], [data-shot="past"]) {
+  transform: translateY(0);
+}
+.shot[data-shot="on"] img {
+  transform: translateY(0) scale(1);
+}
+.shot[data-shot="past"] img {
+  transform: translateY(0) scale(1.08);
+}
+.progress {
+  position: absolute;
+  inset-inline: 32px;
+  bottom: 28px;
+  z-index: 5;
+  display: flex;
+  gap: 8px;
+}
+.progress i {
+  flex: 1;
+  height: 2px;
+  background: rgb(255 255 255 / 0.3);
+  position: relative;
+}
+/* Bar k is full once the reader is k+1 steps of n through the story (--story-p, StoryStage). */
+.progress i::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-surface);
+  transform: scaleX(clamp(0, calc(var(--story-p, 0) * var(--n) - var(--k)), 1));
+  transform-origin: left;
+}
+.step {
+  display: flex;
+  min-height: 88svh;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid rgb(255 255 255 / 0.16);
+}
+@media (max-width: 64.4375rem) {
+  .stage {
+    display: none;
+  }
+  .step {
+    min-height: 0;
+    padding-block: 40px;
+  }
+}
+@media (min-width: 64.5rem) {
+  .stepShot {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route, .pin, .label, .barFill, .shot, .shot img, .familyName, .follow {
+    transition: none;
+  }
+  .pulse, .followImage {
+    animation: none;
+  }
+  .travel {
+    display: none;
+  }
+}
+
+/*
+  Homepage teaser (2026-10-13, the band the client approved): on a mouse device the two cards sit
+  side by side, and the second settles 6.4rem into line as the band enters. A named timeline on
+  the module, because view() on the card would bind to the overflow track and never move; the
+  track is overflow:visible where it wraps, so the settling card is not clipped. Touch devices
+  keep the scroll-snap track untouched.
+*/
+@supports (animation-timeline: view()) {
+  @media screen and (prefers-reduced-motion: no-preference) and (pointer: fine) {
+    .teaser { view-timeline: --home-teaser block; }
+    .teaser .teaserTrack { overflow: visible; }
+    .teaser .teaserTrack > :nth-child(2) {
+      animation: settle linear both;
+      animation-timeline: --home-teaser;
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+@keyframes settle { from { translate: 0 6.4rem; } }

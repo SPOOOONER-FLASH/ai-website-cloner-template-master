@@ -1,30 +1,38 @@
 {
   "/images/company/assembly-line.webp": {
-    "sourceWidth": 1308,
+    "sourceWidth": 2616,
     "variants": [
       480,
-      960
+      960,
+      1440,
+      1920
     ]
   },
   "/images/company/factory-laser-cutter.webp": {
-    "sourceWidth": 1000,
+    "sourceWidth": 2000,
     "variants": [
       480,
-      960
+      960,
+      1440,
+      1920
     ]
   },
   "/images/company/polishing-line.webp": {
-    "sourceWidth": 1308,
+    "sourceWidth": 2616,
     "variants": [
       480,
-      960
+      960,
+      1440,
+      1920
     ]
   },
   "/images/company/press-shop.webp": {
-    "sourceWidth": 1308,
+    "sourceWidth": 2616,
     "variants": [
       480,
-      960
+      960,
+      1440,
+      1920
     ]
   },
   "/images/editorial/architecture-boutique-hotel.webp": {
@@ -284,7 +292,7 @@
     ]
   },
   "/images/editorial/home-panic-exit-bars.webp": {
-    "sourceWidth": 2400,
+    "sourceWidth": 1800,
     "variants": [
       480,
       800,
@@ -753,6 +761,187 @@
       480,
       960,
       1440
+    ]
+  },
+  "/images/editorial/home-panic-exit-double-door.webp": {
+    "sourceWidth": 1774,
+    "variants": [
+      480,
+      800,
+      1600
+    ]
+  },
+  "/images/editorial/home-argentina-collection.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      800,
+      1600
+    ]
+  },
+  "/images/editorial/home-brazil-fire-door.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      800,
+      1600
+    ]
+  },
+  "/images/argentina-collection/ar5-2000.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/argentina-collection/ar5-120.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/argentina-collection/ar5-113.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/argentina-collection/ar5-corrediza-123.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/brazil-collection/br5-s.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/brazil-collection/br7-st.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/brazil-collection/br5-tk.webp": {
+    "sourceWidth": 720,
+    "variants": [
+      320,
+      480
+    ]
+  },
+  "/images/company/factory-cnc-machining.webp": {
+    "sourceWidth": 1776,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/company/factory-polishing-workshop.webp": {
+    "sourceWidth": 1776,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/company/factory-assembly-quality-line.webp": {
+    "sourceWidth": 1776,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/company/factory-workshop-01.webp": {
+    "sourceWidth": 1280,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-02.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-03.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-04.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-05.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-06.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-07.webp": {
+    "sourceWidth": 1280,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-08.webp": {
+    "sourceWidth": 1280,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-09.webp": {
+    "sourceWidth": 1275,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-10.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-11.webp": {
+    "sourceWidth": 1280,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-workshop-12.webp": {
+    "sourceWidth": 1275,
+    "variants": [
+      480,
+      960
     ]
   }
 }

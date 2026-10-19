@@ -597,6 +597,20 @@
       "category": "lock-cases",
       "why": "同一把钩舌锁两条记录：1121 与 AR4-1121（同一照片，同为 40 中心到面板、140 × 25 面板）。2026-10-09 甲方要求合并：锁体 82.4 × 66.7 按 1121 自家工厂图纸并入，图库与视频一并转入。",
       "reason": "duplicate-merged"
+    },
+    {
+      "from": "hyde-ar4-101-mortise-lock",
+      "to": "hyde-ar4-111-mortise-lock",
+      "category": "lock-cases",
+      "why": "7240 改名：面板 220 × 25、中心距 72、锁体高 140 与 Elabora 111 一致（Elabora 101 是 183 × 18 窄面板）。2026-10-12 甲方「7240 改叫 AR4-111」；名称随之改为安全锁（Security Mortise Lock Body / Cerradura de seguridad）。",
+      "reason": "renamed"
+    },
+    {
+      "from": "308-panic-exit-device",
+      "to": "308-s-s-panic-exit-device",
+      "category": "panic-exit-devices",
+      "why": "甲方 2026-10-13 发来 308-S、308-D 新品照片和视频：「新品，要删除旧的308」。旧 308 记录设为 sites: []，HYDE 不再生成它的页面；雷茵本来就只展示 sites 含 rayen 的记录，原记录没有 sites，所以雷茵前后都不显示，中文镜像输出不变。旧网址 301 到单门款 308-S。旧 308 的规格（1050mm、面板 165 × 55、突出 99mm）没有搬到 308-S：新品的规格以新品自己的资料为准。",
+      "reason": "superseded-by-new-model"
     }
   ]
 }

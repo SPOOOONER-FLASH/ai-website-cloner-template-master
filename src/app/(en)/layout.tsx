@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     description: defaultDescription.en,
     images: [
       {
-        url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
-        width: 2400,
-        height: 943,
-        alt: "Representative commercial fire-exit doors with visible panic push bars",
+        url: absoluteUrl("/images/editorial/home-panic-exit-double-door.webp"),
+        width: 1774,
+        height: 887,
+        alt: "306-D double-door exit hardware with push bars and vertical rods, opening onto an outdoor courtyard",
       },
     ],
   },
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle.en,
     description: defaultDescription.en,
-    images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
+    images: [absoluteUrl("/images/editorial/home-panic-exit-double-door.webp")],
   },
   // Driven by the single `indexable` flag in src/data/site.ts, not hard-coded here.
   robots: indexable

@@ -52,7 +52,7 @@ export default function CertificacoesPagePt() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Os registros abaixo são publicados com o escopo de modelo exato que está impresso em cada documento, e o relatório de um modelo nunca é apresentado como aprovação de outro. Boa parte do que fabricamos para clientes de marca própria é certificada em nome desses clientes, a pedido e às custas deles, então cabe a eles compartilhar esses certificados. Estamos preparando os ensaios CE e ANSI em nome da Canton Hyland para as nossas linhas principais; cada relatório novo vai aparecer aqui, com o seu escopo, à medida que for emitido.
+              Os registros abaixo são publicados com o escopo de modelo exato que está impresso em cada documento, e o relatório de um modelo nunca é apresentado como aprovação de outro.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
               Os emissores restringem a cópia dos seus relatórios, por isso enviamos uma cópia completa sob pedido, para um modelo específico, em vez de publicar trechos.

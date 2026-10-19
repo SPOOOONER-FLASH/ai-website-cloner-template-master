@@ -118,7 +118,7 @@ dimensional, certification, or model-specific evidence.
 | `home-design-context.webp` | Architecture / material junctions | 1800×1200 | 253,806 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-editorial-insight.webp` | Architectural light / material study | 2400×1464 | 185,346 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-material-library.webp` | Architectural material-library study | 1800×1200 | 190,206 | 2026-08-24 | Built-in ImageGen, text-only; Sharp exact-ratio cover, opaque sRGB, WebP q=86 |
-| `home-panic-exit-bars.webp` | 309-D double-leaf exit application | 2400×943 | 37,136 | 2026-10-05 | Existing product-gallery image `public/images/products/309-d-double-door-panic-exit-device-7.webp`; `scripts/build-home-double-door-hero.mjs` preserves the full door and both rod latches, replaces the legacy badge with approved HYDE vectors, removes its tiny slogan and adds side panels; no generated hardware |
+| `home-panic-exit-bars.webp` | Client-selected B — 306-D, interior escape side facing outdoor clearance | 1800×900 | See provenance sidecar | 2026-10-09 | Client corrected the office destination. Built-in ImageGen generated an empty courtyard only; native composition replaces non-product pixels inside the open aperture. Both photographed doors, bars, upper/lower rods, latches, mounts and frame remain at source position/scale; 268,019 source RGB pixels outside the environment mask are unchanged in the PNG master. `scripts/build-home-double-door-hero.mjs` reconstructs and verifies the master and all six delivery WebPs. No generated hardware or verified installation/rating claim |
 | `hyde-source-by-range-2026.webp` | Coordinated hardware range / sample-kit editorial | 1254×1254 | 347,888 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; final edit removed keys and pseudo-engraving; Sharp square crop, WebP q=86 |
 | `hyde-source-by-project-2026.webp` | Project schedule and finish-board editorial | 1254×1254 | 136,120 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; blank non-readable schedule; Sharp square crop, WebP q=86 |
 | `hyde-nine-families-2026.webp` | Nine-family coordinated hardware board | 1536×1024 | 175,700 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; no model or specification claims; Sharp WebP q=86 |
@@ -223,11 +223,20 @@ contents of `public/images/products/`. These listed files are 1000×1000, croppe
 
 ## Company — `public/images/company/`
 
+**Super-resolution, 2026-10-12.** `press-shop`, `polishing-line`, `assembly-line` and
+`factory-laser-cutter` were enlarged 2× for the homepage factory story, where they fill half
+a wide screen (client: 「图片帮我优化下分辨率」). Method: Real-ESRGAN `realesrgan-x4plus`
+(ncnn-vulkan release v0.2.5.0) at 4×, then Lanczos down to 2× — sharpening of the existing
+pixels only. Nothing was added, removed or redrawn; before/after crops were compared by eye.
+The client's higher-resolution originals (G: library) were not mounted on the machine that
+did this; if they surface, replace these files with them and rerun
+`scripts/watermark-product-images.mjs` (company list) and `scripts/generate-editorial-srcsets.mjs`.
+
 | File | Source | Output | Size |
 |---|---|---|---|
-| `press-shop.webp` | 公司图 1.jpg | 1308×872 | 75.9 KB |
-| `polishing-line.webp` | 公司图 2.jpg | 1308×872 | 91.6 KB |
-| `assembly-line.webp` | 公司图 3.jpg | 1308×872 | 113.8 KB |
+| `press-shop.webp` | 公司图 1.jpg, 2× super-resolution (see note) | 2616×1744 | — |
+| `polishing-line.webp` | 公司图 2.jpg, 2× super-resolution (see note) | 2616×1744 | — |
+| `assembly-line.webp` | 公司图 3.jpg, 2× super-resolution (see note) | 2616×1744 | — |
 | `facility-yard.webp` | 公司图 大图.jpg | 1024×683 | 74.5 KB |
 | `hero-panic-exit-banner.webp` | 大图一.jpg | 822×397 | 31.8 KB |
 | `hero-grip-handle-banner.webp` | 大图二.jpg | 772×397 | 28.8 KB |
@@ -251,8 +260,9 @@ Source for every file below: **client-owned material supplied directly for the p
 WebP q=78, centre-cropped to 3:2, each under 300 KB. These files are technically suitable
 for the demo, but their highly polished / composited appearance and embedded Hyland signage
 must be confirmed by the client as faithful documentary photography before public launch.
-They remain archived for client review, but the public homepage and Company routes do not
-reference them; those surfaces use clearly identified representative editorial studies instead.
+They remain archived for client review, except the files individually confirmed below
+(`factory-cnc-machining`, `factory-polishing-workshop`, `factory-assembly-quality-line`), which the
+homepage factory story uses; the Company route still does not reference this set.
 
 **One of them has since been cleared individually.** `factory-cnc-machining.webp` had two
 records that disagreed — this table's "verify authenticity" verdict against the preview
@@ -262,16 +272,18 @@ on 2026-09-17: 是我们厂. The preview README's record is the correct one; the
 source PNG is the client's own photograph named as their transfer named it. Nothing else
 in this table is cleared by that answer — it was asked and answered about one file.
 
+**Two more were cleared the same way on 2026-10-13.** The client saw `factory-polishing-workshop.webp` and `factory-assembly-quality-line.webp` in the homepage motion demo, asked for them on the live factory story, and when asked whether they were real photographs of their own factory answered 「是啊是自家的实拍」. Each was asked about by name; the rest of the table is still uncleared.
+
 | File | Source file | Output | Size | P11 verdict |
 |---|---|---|---|---|
-| `factory-polishing-workshop.webp` | e60a1601…png | 1776×1184 | 223.7 KB | Accept for demo; verify authenticity |
-| `factory-assembly-quality-line.webp` | f0315c17…png | 1776×1184 | 234.6 KB | Accept for demo; verify authenticity |
+| `factory-polishing-workshop.webp` | e60a1601…png | 1776×1184 | 223.7 KB | **Confirmed by the client 2026-10-13 as their own factory** (「是啊是自家的实拍」). Cleared for public use; the Hyland logo (cropped) in frame is the factory's own. At full size the small signs read as non-words, the look of an AI-enhanced copy: never quote or translate any signage from it. |
+| `factory-assembly-quality-line.webp` | f0315c17…png | 1776×1184 | 234.6 KB | **Confirmed by the client 2026-10-13 as their own factory** (「是啊是自家的实拍」). Cleared for public use; the Hyland bins and sign are the factory's own. At full size the bin labels read as non-words (AI-enhanced copy): never quote them. |
 | `factory-cnc-production.webp` | 63633323…png | 1776×1184 | 110.7 KB | Accept for demo; verify authenticity |
 | `factory-cnc-machining.webp` | 423b1423…png | 1776×1184 | 193.6 KB | **Confirmed by the client 2026-09-17 as their own factory.** Cleared for public use; it carries the HYDE mark. |
 | `showroom-product-gallery.webp` | ef4f1112…png | 1776×1184 | 135.3 KB | Accept for demo; verify authenticity |
 | `showroom-emergency-hardware.webp` | ba72e861…png | 2390×1593 | 177.4 KB | Accept for demo; strongest documentary image |
 | `material-innovation-workshop.webp` | 60d70746…png | 1776×1184 | 148.7 KB | Internal demo only; verify sign and facility accuracy |
-| `factory-polishing-workshop-wide.webp` | cdc07db…png | 1776×1184 | 223.7 KB | Internal demo alternate; duplicate scene |
+| `factory-polishing-workshop-wide.webp` | cdc07db…png | 1776×1184 | 223.7 KB | Internal demo alternate; duplicate scene. **Byte-identical to `factory-polishing-workshop.webp`** (same git blob since 2026-08-16), so the 2026-10-13 confirmation covers the same picture; not cleared under its own name, and the two source attributions cannot both be right (originals no longer on disk). |
 
 The client approved both previously excluded files for this internal management prototype.
 `cdc07db…png` repeats the polishing-workshop scene; `60d70746…png` contains the wording
@@ -285,6 +297,25 @@ inherits `--color-ink`.
 `decorative-hinge-detail.webp` fills the 306:156 slot. The brief asked for a CAD line
 drawing; the pack contains none, so a clean hinge close-up stands in. **Flagged in
 BUILD_PLAN.md as "replace with CAD line art".**
+
+### 2026-10-13 stamping-plant set — `factory-workshop-01…12.webp`
+
+Source: **client-supplied phone photographs of the stamping plant**, sent 2026-10-13 with
+permission to publish (「…上架使用，他们授权了」). Used by the company page section "From press
+to packing" (`factoryWorkshop`, `src/data/company.ts`), in process order.
+
+Processing: company lettering on workwear, crates, one machine plate and one wall sign was
+painted out (OpenCV inpainting over a mask of the lettering only), one wall screen showing
+production figures was blurred, and each frame was cropped to 3:2. Machines, parts and
+people are untouched. Not HYDE-marked: these are not in `build-branded-editorial-list.mjs`.
+Do not name the plant anywhere on the site, and do not quote any remaining signage.
+
+| File | Shows | Output |
+|---|---|---|
+| `factory-workshop-01…03` | press shop | 1280–1600 px wide, 3:2 |
+| `factory-workshop-04…08` | machining and drilling | 1280–1600 px wide, 3:2 |
+| `factory-workshop-09…10` | assembly benches | 1200–1275 px wide, 3:2 |
+| `factory-workshop-11…12` | packing and finished goods | 1275–1280 px wide, 3:2 |
 
 ## Certificates — `public/images/certificates/`
 

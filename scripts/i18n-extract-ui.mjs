@@ -59,10 +59,10 @@ const FIELD_MODULES = {
 /* Named top-level constants that are English copy read through dict()/tx(): */
 const NAMED_CONSTS = {
   "src/lib/configurator.ts": /^OPTION_NOTES$/,
-  "src/data/company.ts": /^stats$/,
+  "src/data/company.ts": /^(stats|factoryWorkshop)$/,
 };
 
-const skipKey =/^(href|ctaHref|src|ratio|slug|model|id|key|kind|variant|code|url|email|phone|reference|coversModel|issuer|address|city|format|tag|type|number|ordinal)$/;
+const skipKey =/^(labelEs|labelPt|href|ctaHref|src|ratio|slug|model|id|key|kind|variant|code|url|email|phone|reference|coversModel|issuer|address|city|format|tag|type|number|ordinal)$/;
 function worth(text) {
   if (typeof text !== "string") return false;
   const t = text.trim();

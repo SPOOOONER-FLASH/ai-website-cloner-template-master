@@ -55,20 +55,6 @@ const FIXED_FRAMES = [
   { name: "news hero + card", frame: 16 / 9, dir: "content/news", field: "heroImage" },
   { name: "project card", frame: 3 / 2, dir: "content/projects", field: "heroImage" },
   /*
-    ⚠ The homepage column rail, added 2026-09-15 after it shipped a visibly cropped image.
-
-    The two surfaces above are found by scanning content/. This one is not: its images are
-    named in src/data/feature-columns.ts and its frame is a `ratio="3 / 2"` written inside
-    FeatureColumns.tsx. A content scan cannot see either, which is why a 1000×1000 plate
-    sat in a 3:2 frame losing a third of its height until the client noticed on the live
-    site.
-
-    The general shape of the miss: a fixed aspect ratio inside a component is a crop that
-    no content-driven audit is watching. When a new surface pins a ratio, it belongs here
-    the same day.
-  */
-  { name: "homepage column rail", frame: 3 / 2, module: "src/data/feature-columns.ts" },
-  /*
     The company overview rail, added 2026-09-16 at the same time as the factory photographs
     that now fill it.
 
