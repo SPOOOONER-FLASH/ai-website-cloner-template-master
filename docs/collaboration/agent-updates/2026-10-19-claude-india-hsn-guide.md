@@ -1,0 +1,10 @@
+# 2026-10-19 Claude: new guide, India HSN codes for door hardware (ten languages)
+
+- **Why:** week-1 topic #5 in `docs/collaboration/2026-10-19-数据结论-GSC排名下滑与每周7篇选题.md` (Bing AI "hsn code for hardware items" 51, "8301 hsn code" 10). Not a duplicate: `door-hardware-hs-codes-2026` stops at six digits; this one is India's eight.
+- **What:** `content/guides/india-hsn-codes-door-hardware-2026.json`: every eight-digit item under 8301 and 8302, the lock / fitting / closer / part logic (Chapter 83 note 1), our categories by line, how to reach the applicable duty, CAAR advance rulings, what we print on documents. 6 FAQ. fr/de/ja/ko/tr/ru/ar merged via `i18n-merge.mjs`. Topic `buying`; route `price-list`.
+- **Source (verified 2026-10-19):** CBIC Customs Tariff, "Tariff (as on 30.06.2025)" > Part II Import Tariff > Section XV > Chapter 83, `chap-83.pdf` from `https://www.cbic.gov.in/content/anotherfile/media/CONTENTREPO/Customs/Tariff/Tariff(ason30.06.2024)/CUSTOMS_TARIFF_VOL-I/chap-83.pdf` (found through `api/cbic-content-msts/MTcyNTcx`). Note the 2025 listing links a file in a 2024-named folder.
+- **Deliberately left out:** duty rates (the schedule's rate column is pre-notification; Finance Act 2026 may have changed it); the DGFT 2025 cabinet-hinge import condition (only secondary sources found); GST rates and invoice digit rules.
+- **Models cited (HYDE, no `sites` = both):** LC15, 45BN, B024 (brass), SSH011 (304), CH01 (zinc alloy/304), FB001, JU-061, 069. Hero: `/images/products-hyde/b024-brass-and-steel-hinges.webp` (unused by any article); share image generated.
+- **Checks:** content, i18n-lint, titles:check, article/guide/faq/image/regional/i18n/json-ld tests 106/107; the one failure is `seo-policy` reading `deploy/nginx/…`, absent from this sparse checkout (environment, not content). `picaporte` normalised to `pestillo` (D1).
+- **Topic list:** the 10-19 table has no status column, so it was not edited.
+- **Untouched:** `out/`, RAYEN lane. Release belongs to the engineering session.
