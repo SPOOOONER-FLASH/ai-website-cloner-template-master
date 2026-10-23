@@ -67,6 +67,13 @@ export const analytics = {
    */
   gtmId: "GTM-MQHHPGJL",
   /**
+   * Who is asked before GA4 and Clarity load (src/lib/consent.ts). "europe": browsers in a
+   * European time zone see the banner; everyone else is measured unless they switch it off
+   * in the footer. "everywhere": every visitor is asked first. GTM is not gated — its
+   * container is empty and writes no cookie; anything added inside it must respect consent.
+   */
+  consentScope: "europe" as "europe" | "everywhere",
+  /**
    * IndexNow key. Bing and Yandex fetch https://cantonlock.com/<key>.txt to prove
    * we own the domain, then accept instant submissions instead of waiting for a crawl.
    */

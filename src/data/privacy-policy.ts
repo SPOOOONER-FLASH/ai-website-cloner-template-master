@@ -7,7 +7,8 @@ import { siteSettings } from "@/data/navigation";
  *
  * EVERY SENTENCE HERE DESCRIBES WHAT THE CODE DOES TODAY. It was written from the forms
  * (Web3Forms), src/components/site/Analytics.tsx, the browser-storage keys and the
- * Cloudflare setup, and it says nothing about a consent banner because the site has none.
+ * Cloudflare setup. Since 2026-10-23 the analytics consent banner (src/lib/consent.ts) is
+ * part of what it describes: who is asked, where the answer is stored, what a withdrawal does.
  * The review draft with every open legal question is docs/legal/privacy-policy-draft-2026-09-28.md.
  *
  * Change the data collection → change this file in the same commit. A new tag inside GTM,
@@ -39,7 +40,7 @@ export type PrivacyCopy = {
 };
 
 /** The version date shown on the page. Change it whenever the text changes. */
-export const PRIVACY_UPDATED = "2026-09-28";
+export const PRIVACY_UPDATED = "2026-10-23";
 
 const { contact } = siteSettings;
 const address = [contact.address, `${contact.city}, ${contact.province}`, contact.country].join(", ");
@@ -76,6 +77,7 @@ const COPY: Record<PrivacyLocale, PrivacyCopy> = {
               "in session storage, the catalog page you came from, so the back link returns you to the same place. It is deleted when you close the tab;",
               "in local storage, when the promotions panel was last shown and its version, so it does not reappear too soon;",
               "in local storage, whether you closed the notice offering the page in your browser's language, so it is not offered again;",
+              "in local storage, your answer to the analytics question (accepted or declined), so you are not asked on every page. It is never sent to us;",
               "in session storage, one word for how you first reached the site in this visit (for example chatgpt, google or direct), taken from the referring site or a utm_source link parameter. It is deleted when you close the tab and sent to us only with a product inquiry (section 3).",
             ],
           },
@@ -106,10 +108,10 @@ const COPY: Record<PrivacyLocale, PrivacyCopy> = {
         id: "analytics",
         heading: "4. Analytics",
         body: [
-          "To understand which pages and products buyers look at, and where the site is hard to use, every page loads the following services.",
+          "To understand which pages and products buyers look at, and where the site is hard to use, the site can load the following services. If your browser is set to a European time zone, you are asked first and they load only if you accept. Elsewhere they load unless you decline. You can change your answer at any time under \"Cookie settings\" at the foot of every page.",
           "Google Analytics 4 and Google Tag Manager, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics sets cookies and records the pages viewed, approximate location, device and browser, how far you scroll, how long you read, and clicks on product and contact links. When you send a product inquiry, the inquiry event carries the same one-word first-touch source. Google Analytics 4 does not store IP addresses. Google Tag Manager loads such tags and does not itself profile you. Data may be processed by Google LLC in the USA. More: policies.google.com/privacy",
           "Microsoft Clarity, provided by Microsoft Ireland Operations Ltd., One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland. Clarity records how visitors move, scroll and click on a page and produces heatmaps and session replays; text typed into form fields is masked. We label sessions with the type of page, whether the visitor skimmed or read, and the one-word first-touch source. Data may be processed by Microsoft Corporation in the USA. More: privacy.microsoft.com/privacystatement",
-          "Legal basis: our legitimate interest in improving the site for buyers (Art. 6(1)(f) GDPR). You can object at any time (section 8). You can also stop both services with your browser's tracking protection or a content blocker, or install Google's opt-out add-on (tools.google.com/dlpage/gaoptout).",
+          "Legal basis: where you were asked, your consent (Art. 6(1)(a) GDPR; for the cookies, Art. 5(3) of the ePrivacy Directive and § 25(1) TDDDG). You can withdraw it at any time under \"Cookie settings\"; withdrawing deletes the analytics cookies this site set. Otherwise, our legitimate interest in improving the site for buyers (Art. 6(1)(f) GDPR); you can object at any time by declining under \"Cookie settings\" or as described in section 8. You can also stop both services with your browser's tracking protection or a content blocker, or install Google's opt-out add-on (tools.google.com/dlpage/gaoptout).",
         ],
       },
       {
@@ -181,6 +183,7 @@ const COPY: Record<PrivacyLocale, PrivacyCopy> = {
               "im Session Storage die Katalogseite, von der Sie kamen, damit der Zurück-Link Sie an dieselbe Stelle führt. Der Eintrag wird beim Schließen des Tabs gelöscht;",
               "im Local Storage, wann das Aktionsfenster zuletzt angezeigt wurde und in welcher Version, damit es nicht zu früh erneut erscheint;",
               "im Local Storage, ob Sie den Hinweis geschlossen haben, der die Seite in der Sprache Ihres Browsers anbietet, damit er nicht erneut erscheint;",
+              "im Local Storage Ihre Antwort auf die Frage zur Webanalyse (akzeptiert oder abgelehnt), damit Sie nicht auf jeder Seite gefragt werden. Sie wird nie an uns übermittelt;",
               "im Session Storage ein Wort dafür, wie Sie bei diesem Besuch zuerst auf die Website gekommen sind (zum Beispiel chatgpt, google oder direct), ermittelt aus der verweisenden Website oder einem utm_source-Linkparameter. Der Eintrag wird beim Schließen des Tabs gelöscht und nur mit einer Produktanfrage an uns übertragen (Abschnitt 3).",
             ],
           },
@@ -211,10 +214,10 @@ const COPY: Record<PrivacyLocale, PrivacyCopy> = {
         id: "analytics",
         heading: "4. Webanalyse",
         body: [
-          "Um zu verstehen, welche Seiten und Produkte Einkäufer ansehen und wo die Website schwer zu bedienen ist, lädt jede Seite die folgenden Dienste.",
+          "Um zu verstehen, welche Seiten und Produkte Einkäufer ansehen und wo die Website schwer zu bedienen ist, kann die Website die folgenden Dienste laden. Ist Ihr Browser auf eine europäische Zeitzone eingestellt, werden Sie vorher gefragt, und die Dienste laden nur, wenn Sie zustimmen. Andernorts laden sie, sofern Sie nicht ablehnen. Ihre Antwort können Sie jederzeit unter „Cookie-Einstellungen“ am Ende jeder Seite ändern.",
           "Google Analytics 4 und Google Tag Manager, Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics setzt Cookies und erfasst aufgerufene Seiten, ungefähren Standort, Gerät und Browser, Scrolltiefe, Lesedauer sowie Klicks auf Produkt- und Kontaktlinks. Wenn Sie eine Produktanfrage senden, enthält das Anfrage-Ereignis dieselbe Ein-Wort-Quelle des Erstkontakts. Google Analytics 4 speichert keine IP-Adressen. Der Google Tag Manager lädt solche Tags und erstellt selbst keine Profile. Daten können von Google LLC in den USA verarbeitet werden. Mehr: policies.google.com/privacy",
           "Microsoft Clarity, Anbieter: Microsoft Ireland Operations Ltd., One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Irland. Clarity erfasst, wie Besucher sich auf einer Seite bewegen, scrollen und klicken, und erstellt daraus Heatmaps und Sitzungsaufzeichnungen; Eingaben in Formularfelder werden maskiert. Wir kennzeichnen Sitzungen mit dem Seitentyp, damit, ob der Besucher überflogen oder gelesen hat, und mit der Ein-Wort-Quelle des Erstkontakts. Daten können von der Microsoft Corporation in den USA verarbeitet werden. Mehr: privacy.microsoft.com/privacystatement",
-          "Rechtsgrundlage: unser berechtigtes Interesse an der Verbesserung der Website für Einkäufer (Art. 6 Abs. 1 lit. f DSGVO). Sie können jederzeit widersprechen (Abschnitt 8). Sie können beide Dienste außerdem mit dem Tracking-Schutz Ihres Browsers oder einem Inhaltsblocker unterbinden oder das Deaktivierungs-Add-on von Google installieren (tools.google.com/dlpage/gaoptout).",
+          "Rechtsgrundlage: wenn Sie gefragt wurden, Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO; für die Cookies § 25 Abs. 1 TDDDG). Sie können sie jederzeit unter „Cookie-Einstellungen“ widerrufen; dabei werden die von dieser Website gesetzten Analyse-Cookies gelöscht. Andernfalls unser berechtigtes Interesse an der Verbesserung der Website für Einkäufer (Art. 6 Abs. 1 lit. f DSGVO); Sie können jederzeit widersprechen, indem Sie unter „Cookie-Einstellungen“ ablehnen oder wie in Abschnitt 8 beschrieben. Sie können beide Dienste außerdem mit dem Tracking-Schutz Ihres Browsers oder einem Inhaltsblocker unterbinden oder das Deaktivierungs-Add-on von Google installieren (tools.google.com/dlpage/gaoptout).",
         ],
       },
       {
