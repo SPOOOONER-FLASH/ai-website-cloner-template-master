@@ -1,0 +1,1305 @@
+{
+ "dimensionHeaders": [
+  {
+   "name": "eventName"
+  },
+  {
+   "name": "landingPage"
+  },
+  {
+   "name": "sessionSourceMedium"
+  }
+ ],
+ "metricHeaders": [
+  {
+   "name": "eventCount",
+   "type": "TYPE_INTEGER"
+  }
+ ],
+ "rows": [
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "24"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "exhibitors.bau-muenchen.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "11"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "9"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "chatgpt.com / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "127.0.0.1:4747 / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "bing / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/company"
+    },
+    {
+     "value": "chatgpt.com / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/de"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/de/products/glass-door-accessories/102-glass-door-handle"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/documents"
+    },
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/fr/products/floor-springs-and-pivots/d-3012-floor-spring"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "chatgpt.com / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/contact"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/es/products/argentina"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/es/products/lock-cases/hyde-ar4-110-mortise-lock"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/contact"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "127.0.0.1:4747 / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "doubao.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/ar/collections/knob-locks-commercial-locks"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/collections/hardware-accessories-latches"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/company"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/contact"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/de"
+    },
+    {
+     "value": "weixin110.qq.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/de/products/brass-steel-hinges/sh02-spring-hinge-pin"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/es"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/es/contact"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/es/products/hardware-accessories/dv10-door-viewer"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/es/products/panic-exit-devices"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/fr"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/news/master-key-systems-how-many-levels-you-need"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/product-finder"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/products"
+    },
+    {
+     "value": "hydeland.cn / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/products/floor-springs-and-pivots/d-5062-floor-spring"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "contact_click"
+    },
+    {
+     "value": "/products/glass-door-accessories/100-glass-door-handle"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/contact"
+    },
+    {
+     "value": "l.meta.ai / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/de/news/panic-hardware-types-en-1125-en-179-panikbeschlag"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/documents"
+    },
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/ko/products/lock-cases/lc05-8560-lock-case"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/products"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/products/door-closers"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "file_download"
+    },
+    {
+     "value": "/products/stainless-steel-handles/9088-ss-stainless-steel-handle"
+    },
+    {
+     "value": "chatgpt.com / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "(not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/ar"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/contact"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/de/downloads"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/es"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/es/contact"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/es/products/hardware-accessories/dv10-door-viewer"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/master-key-plan-generator"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/news/what-a-frameless-glass-door-needs"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/products/brass-steel-hinges"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/products/hardware-accessories/dv06-door-viewer"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/products/panic-exit-devices/016-exterior-trim"
+    },
+    {
+     "value": "127.0.0.1:4747 / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/products/panic-exit-devices/308-panic-exit-device"
+    },
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/products/panic-exit-devices/310-panic-exit-device"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "form_start"
+    },
+    {
+     "value": "/products/panic-exit-devices/315-pry-latch"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "127.0.0.1:4747 / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/contact"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/es/contact"
+    },
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "generate_lead"
+    },
+    {
+     "value": "/es/products/hardware-accessories/dv10-door-viewer"
+    },
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "rowCount": 71,
+ "metadata": {
+  "currencyCode": "USD",
+  "timeZone": "America/New_York"
+ },
+ "kind": "analyticsData#runReport"
+}

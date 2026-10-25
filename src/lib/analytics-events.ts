@@ -67,3 +67,23 @@ export function trackLead(event: LeadEvent, gtag = globalThis.window?.gtag): voi
     // An ad blocker, a consent tool, or a stubbed gtag in a test. Never surface it.
   }
 }
+
+/**
+ * Why an enquiry did not go out. 2026-10-25: 28 days showed 35 `form_start` and 9 `generate_lead`,
+ * and nothing in between, so nobody could tell a buyer who walked away from one the form turned away.
+ * Since 2026-10-14 every post needs an hCaptcha token, which adds two ways to fail (not solved, or the
+ * widget never loaded) to the two Web3Forms already had (rejected, no confirmation in time).
+ *
+ * One event name per reason (`inquiry_fail_captcha_unsolved` …), so GA4's own event list shows them
+ * with no custom dimension to register.
+ */
+export type InquiryFailure = "captcha_unsolved" | "captcha_unavailable" | "send" | "timeout";
+
+export function trackInquiryFailure(reason: InquiryFailure, event: { locale: string; page?: string }, gtag = globalThis.window?.gtag): void {
+  if (typeof gtag !== "function") return;
+  try {
+    gtag("event", `inquiry_fail_${reason}`, { locale: event.locale, ...(event.page ? { page_path: event.page } : {}) });
+  } catch {
+    // Same rule as trackLead: counting is our problem, not the buyer's.
+  }
+}

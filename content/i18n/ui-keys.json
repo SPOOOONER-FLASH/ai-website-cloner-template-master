@@ -1302,6 +1302,7 @@
     "content/news/how-to-write-a-keying-schedule-with-template.json",
     "content/news/lever-handle-range-lh852-lh853-lh855.json",
     "content/news/master-key-systems-how-many-levels-you-need.json",
+    "content/news/master-keying-a-campus-5000-openings.json",
     "content/news/mortise-lock-backset-and-centre-distance-guide.json",
     "content/news/narrow-stile-aluminium-door-lock-sag.json",
     "content/news/occupied-vacant-washroom-indicator-bolt.json",
@@ -3414,7 +3415,7 @@
     "src/components/site/brazil/BrazilCollection.tsx:47"
   ],
   "Please complete the verification above the button, then send again.": [
-    "src/components/site/HCaptchaField.tsx:58"
+    "src/components/site/HCaptchaField.tsx:67"
   ],
   "Polished Brass": [
     "src/data/finish-codes.ts:113",
@@ -4564,6 +4565,9 @@
   "The upper half of a pivot set. Order it with the floor spring, not after it.": [
     "src/data/category-positioning.json"
   ],
+  "The verification could not load on this connection, so this form cannot send. Please email us instead.": [
+    "src/components/site/HCaptchaField.tsx:79"
+  ],
   "The wall fixing carries the load, so the wall build-up decides the anchor before the bar does.": [
     "src/data/category-positioning.json"
   ],
@@ -4808,7 +4812,7 @@
     "src/data/capability.ts:205"
   ],
   "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.": [
-    "src/components/site/InquiryForm.tsx:274"
+    "src/components/site/InquiryForm.tsx:285"
   ],
   "We could not send this from the website.": [
     "src/components/site/InquiryForm.tsx:51"

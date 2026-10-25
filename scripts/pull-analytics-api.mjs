@@ -104,11 +104,11 @@ async function ga4() {
   if (!id) return "缺 GA4_PROPERTY_ID";
   const token = await googleToken("https://www.googleapis.com/auth/analytics.readonly");
   if (!token) return "缺 GOOGLE_SERVICE_ACCOUNT_JSON";
-  const run = (dimensions, metrics) =>
+  const run = (dimensions, metrics, dimensionFilter) =>
     json(`https://analyticsdata.googleapis.com/v1beta/properties/${id}:runReport`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ dateRanges: [{ startDate: `${DAYS}daysAgo`, endDate: "yesterday" }], dimensions: dimensions.map((name) => ({ name })), metrics: metrics.map((name) => ({ name })), limit: 10000 }),
+      body: JSON.stringify({ dateRanges: [{ startDate: `${DAYS}daysAgo`, endDate: "yesterday" }], dimensions: dimensions.map((name) => ({ name })), metrics: metrics.map((name) => ({ name })), ...(dimensionFilter ? { dimensionFilter } : {}), limit: 10000 }),
     });
   save("ga4-landing", await run(["landingPage"], ["sessions", "engagedSessions", "keyEvents"]));
   save("ga4-source", await run(["sessionSourceMedium"], ["sessions", "engagedSessions"]));
@@ -116,6 +116,13 @@ async function ga4() {
   save("ga4-events", await run(["eventName"], ["eventCount"]));
   save("ga4-landing-source", await run(["landingPage", "sessionSourceMedium"], ["sessions", "engagedSessions", "keyEvents"]));
   save("ga4-lead-pages", await run(["pagePath", "eventName"], ["eventCount"]));
+  // 询盘漏斗按「落地页 × 来源」：哪篇文章、哪个来源真正带来询盘（2026-10-25）。会话数被自动流量灌水
+  // （28 天 5,369 个 direct 会话参与率 9%，新加坡 1,293 个参与率 3%），事件数不会；tagassistant 与 127.0.0.1 是自测，读数时剔除。
+  // inquiry_fail_*：表单没发出去的四种原因（src/lib/analytics-events.ts trackInquiryFailure，2026-10-25 起才有）。
+  const funnel = ["generate_lead", "form_start", "contact_click", "file_download", "inquiry_fail_captcha_unsolved", "inquiry_fail_captcha_unavailable", "inquiry_fail_send", "inquiry_fail_timeout"];
+  save("ga4-funnel-landing", await run(["eventName", "landingPage", "sessionSourceMedium"], ["eventCount"], { filter: { fieldName: "eventName", inListFilter: { values: funnel } } }));
+  // 按天：2026-10-14 起询盘强制 hCaptcha，这张表看「开始填表 → 发出」在那天前后有没有断。
+  save("ga4-funnel-date", await run(["date", "eventName"], ["eventCount"], { filter: { fieldName: "eventName", inListFilter: { values: funnel } } }));
   return "ok";
 }
 

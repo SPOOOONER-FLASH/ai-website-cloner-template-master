@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { trackLead } from "./analytics-events.ts";
+import { trackInquiryFailure, trackLead } from "./analytics-events.ts";
 
 type Call = unknown[];
 
@@ -53,4 +53,19 @@ test("a throwing gtag never reaches the buyer", () => {
     () => trackLead({ locale: "en" }, exploding),
     "the inquiry is already sent by the time this runs; failing to count it is our problem, not theirs",
   );
+});
+
+test("each way an inquiry fails has its own event name, readable without a custom dimension", () => {
+  const { calls, gtag } = recorder();
+  for (const reason of ["captcha_unsolved", "captcha_unavailable", "send", "timeout"] as const) trackInquiryFailure(reason, { locale: "fr", page: "/fr/contact/" }, gtag);
+  assert.deepEqual(calls.map((c) => c[1]), ["inquiry_fail_captcha_unsolved", "inquiry_fail_captcha_unavailable", "inquiry_fail_send", "inquiry_fail_timeout"]);
+  assert.deepEqual(calls[0][2], { locale: "fr", page_path: "/fr/contact/" });
+});
+
+test("a failure event never throws either", () => {
+  const exploding = (() => {
+    throw new Error("blocked by an extension");
+  }) as never;
+  assert.doesNotThrow(() => trackInquiryFailure("send", { locale: "en" }, exploding));
+  assert.doesNotThrow(() => trackInquiryFailure("send", { locale: "en" }, undefined));
 });

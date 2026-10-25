@@ -3,18 +3,19 @@ import type { Locale } from "@/data/site";
 
 import { useEffect, useRef, useState } from "react";
 import { submitInquiry } from "@/lib/inquiry-submit";
-import { trackLead } from "@/lib/analytics-events";
+import { trackInquiryFailure, trackLead } from "@/lib/analytics-events";
 import { readFirstTouch } from "@/lib/first-touch";
 import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
-import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
+import { HCaptchaField, captchaMissingMessage, captchaUnavailableMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { EmailLink } from "./EmailLink";
 import { PrivacyNote } from "./PrivacyNote";
 import { siteSettings } from "@/data/navigation";
 import { dict } from "@/lib/i18n-client";
 import { inquiryPrefill } from "@/lib/inquiry-prefill";
+import { useHydrated } from "@/hooks/useHydrated";
 
 /** Where a failed enquiry goes instead. The orders desk, not the technical one. */
 const INQUIRY_ADDRESS = siteSettings.contact.email;
@@ -142,6 +143,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const submitting = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
   const captcha = useRef<HCaptchaHandle>(null);
+  const hydrated = useHydrated();
   const [returnToForm, setReturnToForm] = useState(false);
   useEffect(() => {
     if (returnToForm && status === "idle") {
@@ -205,19 +207,28 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     if (submitting.current) return;
 
     const form = event.currentTarget;
-    if (!captcha.current?.token()) {
-      setStatus("error");
-      setStatusMessage(captchaMissingMessage(locale));
-      return;
-    }
     const payload = new FormData(form);
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
+    const page = globalThis.location?.pathname;
 
     const fail = (message: string) => {
       setStatus("error");
       setStatusMessage(message);
       setFallback(asEmail(payload));
     };
+
+    if (!captcha.current?.token()) {
+      if (captcha.current?.unavailable()) {
+        // No widget will ever appear on this connection: hand over the email route with their text in it.
+        trackInquiryFailure("captcha_unavailable", { locale, page });
+        fail(captchaUnavailableMessage(locale));
+        return;
+      }
+      trackInquiryFailure("captcha_unsolved", { locale, page });
+      setStatus("error");
+      setStatusMessage(captchaMissingMessage(locale));
+      return;
+    }
 
     if (!accessKey) {
       /*
@@ -255,7 +266,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       await submitInquiry(payload);
 
       // 询盘已经送达。计数失败绝不能把成功面板带下去 —— trackLead 自身不抛。
-      trackLead({ locale, model, page: globalThis.location?.pathname, firstTouch, sourceArticle });
+      trackLead({ locale, model, page, firstTouch, sourceArticle });
 
       form.reset();
       setProduct("");
@@ -265,12 +276,14 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       setStatus("success");
       setStatusMessage(text.success);
     } catch (error) {
+      const timedOut = error instanceof DOMException && error.name === "TimeoutError";
+      trackInquiryFailure(timedOut ? "timeout" : "send", { locale, page });
       /*
         The service's own error text is not shown. It is written in English for a
         developer ("Invalid access key"), and it tells a buyer nothing they can act on —
         the next line does.
       */
-      fail(error instanceof DOMException && error.name === "TimeoutError"
+      fail(timedOut
         ? dict({ en: "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.", es: "No hemos podido confirmar la entrega. Es posible que su mensaje se haya recibido. Puede consultarnos por correo antes de volver a enviarlo.", pt: "Não foi possível confirmar a entrega. Sua mensagem pode ter sido recebida. Consulte-nos por e-mail antes de enviar novamente." }, locale)
         : text.failure);
     } finally {
@@ -373,7 +386,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
       <HCaptchaField ref={captcha} locale={locale} />
 
       <div className="flex flex-col items-start gap-16 sm:flex-row sm:items-center">
-        <Button type="submit" disabled={status === "submitting"}>
+        <Button type="submit" disabled={!hydrated || status === "submitting"}>
           {status === "submitting" ? text.sending : text.send}
         </Button>
         <p

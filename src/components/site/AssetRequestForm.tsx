@@ -3,8 +3,9 @@
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "./Button";
-import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
+import { HCaptchaField, captchaMissingMessage, captchaUnavailableMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { PrivacyNote } from "./PrivacyNote";
+import { useHydrated } from "@/hooks/useHydrated";
 
 /**
  * A short form that trades a business contact for a document.
@@ -34,13 +35,14 @@ export function AssetRequestForm({
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
   const captcha = useRef<HCaptchaHandle>(null);
+  const hydrated = useHydrated();
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     if (!captcha.current?.token()) {
       setStatus("error");
-      setMessage(captchaMissingMessage("en"));
+      setMessage(captcha.current?.unavailable() ? captchaUnavailableMessage("en") : captchaMissingMessage("en"));
       return;
     }
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
@@ -132,7 +134,7 @@ export function AssetRequestForm({
 
       <div className="sm:col-span-2">
         <HCaptchaField ref={captcha} />
-        <Button type="submit" disabled={status === "sending"}>
+        <Button type="submit" disabled={!hydrated || status === "sending"}>
           {status === "sending" ? "Sending…" : "Request the document"}
         </Button>
         {status === "error" ? (

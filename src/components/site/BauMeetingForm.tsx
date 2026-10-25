@@ -4,10 +4,11 @@ import { useRef, useState, type FormEvent } from "react";
 import siteSettings from "../../../content/site-settings.json";
 import type { BauCopy, BauLocale } from "@/data/bau-2027";
 import { submitInquiry } from "@/lib/inquiry-submit";
-import { trackLead } from "@/lib/analytics-events";
+import { trackInquiryFailure, trackLead } from "@/lib/analytics-events";
 import { Button } from "./Button";
 import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { PrivacyNote } from "./PrivacyNote";
+import { useHydrated } from "@/hooks/useHydrated";
 
 const FIELD_CLASS =
   "field min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink placeholder:text-ink-secondary";
@@ -49,6 +50,7 @@ export function BauMeetingForm({
   const [mailto, setMailto] = useState("");
   const submitting = useRef(false);
   const captcha = useRef<HCaptchaHandle>(null);
+  const hydrated = useHydrated();
   const [captchaHint, setCaptchaHint] = useState(false);
 
   function asEmail(payload: FormData): string {
@@ -70,6 +72,16 @@ export function BauMeetingForm({
     event.preventDefault();
     if (submitting.current) return;
     if (!captcha.current?.token()) {
+      const page = globalThis.location?.pathname;
+      if (captcha.current?.unavailable()) {
+        // The widget says why in its own box; the request goes out by email instead of nowhere.
+        trackInquiryFailure("captcha_unavailable", { locale, page });
+        setCaptchaHint(false);
+        setStatus("error");
+        setMailto(asEmail(new FormData(event.currentTarget)));
+        return;
+      }
+      trackInquiryFailure("captcha_unsolved", { locale, page });
       setCaptchaHint(true);
       return;
     }
@@ -100,7 +112,8 @@ export function BauMeetingForm({
       trackLead({ locale, model: products || undefined, page: globalThis.location?.pathname });
       form.reset();
       setStatus("success");
-    } catch {
+    } catch (error) {
+      trackInquiryFailure(error instanceof DOMException && error.name === "TimeoutError" ? "timeout" : "send", { locale, page: globalThis.location?.pathname });
       fail();
     } finally {
       submitting.current = false;
@@ -188,7 +201,7 @@ export function BauMeetingForm({
       <div className="space-y-12">
         <HCaptchaField ref={captcha} locale={locale} />
         {captchaHint ? <p role="alert" className="text-c2 text-ink">{captchaMissingMessage(locale)}</p> : null}
-        <Button type="submit" disabled={status === "submitting"}>
+        <Button type="submit" disabled={!hydrated || status === "submitting"}>
           {status === "submitting" ? system.sending : copy.submit}
         </Button>
         <p className="text-c2 text-ink-secondary">{copy.privacy}</p>

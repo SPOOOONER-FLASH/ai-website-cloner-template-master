@@ -3,8 +3,9 @@
 import { useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { Button } from "./Button";
-import { HCaptchaField, captchaMissingMessage, type HCaptchaHandle } from "./HCaptchaField";
+import { HCaptchaField, captchaMissingMessage, captchaUnavailableMessage, type HCaptchaHandle } from "./HCaptchaField";
 import { PrivacyNote } from "./PrivacyNote";
+import { useHydrated } from "@/hooks/useHydrated";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
@@ -20,12 +21,13 @@ export function NewsletterForm() {
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [message, setMessage] = useState("");
   const captcha = useRef<HCaptchaHandle>(null);
+  const hydrated = useHydrated();
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!captcha.current?.token()) {
       setStatus("error");
-      setMessage(captchaMissingMessage("en"));
+      setMessage(captcha.current?.unavailable() ? captchaUnavailableMessage("en") : captchaMissingMessage("en"));
       return;
     }
 
@@ -129,7 +131,7 @@ export function NewsletterForm() {
       <HCaptchaField ref={captcha} />
 
       <div className="flex flex-col items-start gap-16 sm:flex-row sm:items-center">
-        <Button type="submit" disabled={status === "submitting"}>
+        <Button type="submit" disabled={!hydrated || status === "submitting"}>
           {status === "submitting" ? "Sending…" : "Request subscription"}
         </Button>
         <p
