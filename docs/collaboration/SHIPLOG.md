@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 252 次提交
+最近 30 天 · 共 253 次提交
 
 ## 2026-10-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 12:38 | 中立 | Inquiry funnel: captcha dead end and pre-hydration GET fixed, failures now measured, ten-language captcha text | `aaf8e3c29d2` |
 | 11:49 | HYDE | Count drift after 8d872a44ccf fixed in ten languages; every counting sentence registered | `2d2c8f6b448` |
 | 11:33 | HYDE | Durability guide: "institutional grade" section in 10 languages; German master-key level names aligned | `08793afd0c3` |
 | 11:00 | HYDE | Data-driven week 2: campus master keying article (10 languages), E1 readout + E2 description test, ja/ko/ar heading fix | `bf46cadcc60` |
