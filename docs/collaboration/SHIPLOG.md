@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 249 次提交
+最近 30 天 · 共 250 次提交
 
 ## 2026-10-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 11:00 | HYDE | Data-driven week 2: campus master keying article (10 languages), E1 readout + E2 description test, ja/ko/ar heading fix | `bf46cadcc60` |
 | 10:15 | 中立 | analytics：GSC、GA4 接通（服务账号），脚本自动走代理；10-25 首次全量拉数 | `1deee298aa6` |
 | 10:00 | 中立 | analytics：pull-analytics-api.mjs（Bing 已接，GSC/GA4/Clarity 待授权）；甲方授权步骤交接；首次 Bing 拉数 | `6ff4bb059c3` |
 
