@@ -54,6 +54,8 @@ node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001-de" --
 ```
 德语、法语、阿拉伯语、土耳其语上线前，标题里的买家用语就从这几份里取。
 
+**API 拉数（2026-10-25 起）**：`node scripts/pull-analytics-api.mjs` 把 Bing / GSC / GA4 / Clarity 的接口原始返回存到 `docs/research/analytics/<日期>/raw/api/`；凭据只在本机 `.env.local` 和仓库外的 `E:\hyde-keys\`。Bing 已接，其余三家等甲方按 `docs/collaboration/2026-10-25-手动操作-数据看板API凭据.md` 授权。
+
 以后如果甲方愿意，可以换成 API 自动拉取（Clarity 数据导出令牌、GSC / GA4 服务账号）。那需要甲方自己在
 各后台生成凭据、放在本机 `.env` 里，**永远不进 git**。在此之前，CSV 这条路已经够用。
 
