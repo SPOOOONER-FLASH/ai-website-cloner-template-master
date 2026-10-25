@@ -114,6 +114,8 @@ async function ga4() {
   save("ga4-source", await run(["sessionSourceMedium"], ["sessions", "engagedSessions"]));
   save("ga4-country", await run(["country"], ["sessions", "engagedSessions"]));
   save("ga4-events", await run(["eventName"], ["eventCount"]));
+  save("ga4-landing-source", await run(["landingPage", "sessionSourceMedium"], ["sessions", "engagedSessions", "keyEvents"]));
+  save("ga4-lead-pages", await run(["pagePath", "eventName"], ["eventCount"]));
   return "ok";
 }
 

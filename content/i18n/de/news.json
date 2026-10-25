@@ -928,7 +928,7 @@
     "title": "US26D, 626, 630: Ein Oberflächencode ist keine Farbe",
     "summary": "Eine nordamerikanische Ausschreibung schreibt 626, nicht „Chrom matt“. Die Nummer verschlüsselt neben dem Erscheinungsbild auch das Grundmetall; 626 und 652 sind also dieselbe Farbe und verschiedene Produkte. Von 519 veröffentlichten Datensätzen von Canton Hyland lässt sich 77 ehrlich eine Nummer zuordnen; den übrigen 442 nicht, und für jeden gibt es einen Grund.",
     "seoTitle": "US26D, 626, 630: wie BHMA-Oberflächencodes funktionieren",
-    "seoDescription": "US26D ist 626, Chrom matt auf Messing oder Bronze; 652 dieselbe Optik auf Stahl, 630 massiver Edelstahl matt. Warum BHMA-Codes das Grundmetall benennen.",
+    "seoDescription": "US26D, 626, 652 und 630 im Vergleich: welches Grundmetall jeder Code nennt, die vollständige BHMA- und US-Tabelle und wann 652 statt 626 ein Ersatz ist.",
     "body": [
       "Im September kam ein Einkäufer mit der Teilenummer eines Wettbewerbers zu uns: `rxfse25r510l32d3`. Den Hersteller haben wir nie ermittelt, und das spielte keine Rolle, denn ein Fragment daraus verriet alles über den Einkäufer: 32D. Das ist kein Farbname, sondern ein Code des nordamerikanischen Oberflächensystems, und wer ihn schreibt, schreibt nach ANSI/BHMA aus. Unser eigener Katalog antwortet in einer anderen Sprache (SSET, ACBK, CPBK) – Hauscodes, die außerhalb unserer Preisliste nichts bedeuten. Dieser Artikel ist die Übersetzung, und die wichtige Hälfte davon ist die Stelle, an der die Übersetzung endet.",
       "Beginnen wir mit dem Teil, den alle kennen. US26D und 626 sind zwei Schreibweisen für dasselbe Erscheinungsbild, matt verchromt; die US-Nummer ist die ältere Konvention, die dreistellige Nummer gehört zu ANSI/BHMA A156.18. Die meisten Umschlüsselungstabellen im Netz drucken genau das, zwei Spalten breit, und hören auf. Diese Tabelle ist auf die eine Weise unvollständig, die einen Container kostet.",
@@ -982,7 +982,7 @@
       "title": "dd888bc13471",
       "summary": "3a1d7e3e03cb",
       "seoTitle": "466e81b9fd29",
-      "seoDescription": "d676be3b6346",
+      "seoDescription": "2383894ea6fb",
       "body": "d81d9340764a",
       "faq": "f20625faeb6a"
     }
@@ -1447,6 +1447,73 @@
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
       "faq": "2efa1a7ca90e"
+    }
+  },
+  "master-keying-a-campus-5000-openings": {
+    "title": "Schließanlage für einen Campus: Wie eine Anlage mit 5.000 Türen aufgebaut ist",
+    "summary": "Eine Schließanlage für einen Campus mit 5.000 Türen hat normalerweise vier oder fünf Ebenen: ein Generalhauptschlüssel (GGMK) für den Campus, ein Hauptschlüssel (GMK) für jedes Gebäude oder jeden Bereich, Gruppenschlüssel für Abteilungen oder Geschosse und Einzelschlüssel für die Räume. Bei dieser Größe ist der Plan der einfache Teil. Ob die Anlage in zehn Jahren noch funktioniert, hängt an drei Entscheidungen rund um den Plan: welche Türen von Schlüsseln auf Zutrittskontrolle per Karte wechseln, eine Profilfamilie, die die Schlüssel eines Gebäudes aus den Zylindern eines anderen heraushält, und eine Routine für die Schlüsselkontrolle, die Personalwechsel übersteht. Diese Seite zeigt den Aufbau an einem durchgerechneten Beispiel, wie große Anlagen umgeschlossen werden und was in die Zylinderbestellung gehört.",
+    "seoTitle": "Campus-Schließanlage: Aufbau für 5.000 Türen | Canton Hyland",
+    "seoDescription": "So ist eine Schließanlage im Hochschulmaßstab aufgebaut: ein GGMK für den Campus, ein GMK je Gebäude, Profilfamilien, Umschließen und Schlüsselkontrolle.",
+    "body": [
+      "Die meisten Ratgeber zu Schließanlagen sind für ein einzelnes Gebäude geschrieben: ein paar Dutzend Türen, drei Ebenen, ein Facility-Manager. Eine Universität, ein Klinikcampus oder ein großer Schulträger ist eine andere Aufgabe. Bei 5.000 Türen, verteilt auf Dutzende Gebäude, ist die Hierarchie selbst der einfache Teil. Ob die Anlage in zehn Jahren noch funktioniert, entscheidet sich daran, wie der Campus aufgeteilt wird, bevor der erste Zylinder gestiftet ist, und wie die Schlüssel danach kontrolliert werden.",
+      "Die kurze Antwort: Planen Sie vier oder fünf Ebenen, teilen Sie den Campus zuerst nach Gebäuden und erst dann nach Abteilungen auf, nehmen Sie die Außentüren aus der mechanischen Anlage heraus, wo eine Zutrittskontrolle per Karte sie bereits abdeckt, und bauen Sie auf einer Profilfamilie auf statt auf einem einzigen offenen Profil. Die Bezeichnungen der Ebenen, der Ebenenplan und was jede Ebene an Kapazität kostet, stehen in unserem Leitfaden zur Planung von Schließanlagen. Diese Seite behandelt, was sich ändert, wenn die Anlage die Größe eines Campus hat.",
+      "## Die Hierarchie im Maßstab eines Campus",
+      "Die Ebenen sind dieselben fünf wie überall. Was sich ändert, ist die Einheit, der jede Ebene zugeordnet wird. Auf einem Campus ist die natürliche Einheit das Gebäude, denn Gebäude werden einzeln gebaut, saniert und übergeben, und ein verlorener Schlüssel ist ein Problem von genau der Größe dessen, was er öffnet.",
+      "| Ebene | Zugeordnet zu | Typischer Inhaber | Öffnet |\n| --- | --- | --- | --- |\n| GGMK: Generalhauptschlüssel | Der ganze Campus | Sicherheitsleitung; ein versiegelter Notschlüsselsatz | Jedes mechanische Schloss |\n| GMK: Hauptschlüssel | Ein Gebäude oder ein Bereich kleiner Gebäude | Die Objektleitung des Gebäudes | Jedes Schloss in diesem Gebäude |\n| MK: Gruppenschlüssel | Eine Abteilung, ein Geschoss oder ein Flügel | Die Verwaltung der Abteilung | Die Räume dieser Abteilung |\n| SMK: Untergruppenschlüssel | Ein Gewerk oder eine Raumart innerhalb eines Gebäudes | Hausmeister, IT oder Haustechnik | Putzmittelräume, Steigschächte, IT-Räume |\n| Einzelschlüssel | Ein Raum oder eine Raumgruppe | Die Person, die den Raum nutzt | Eine Tür oder eine gleichschließende Gruppe |",
+      "Zwei Regeln halten diese Tabelle handhabbar. Ein Schlüssel für ein Gewerk (Hausmeisterdienst, IT, Instandhaltung) ist meist ein Untergruppenschlüssel innerhalb jedes Gebäudes und nicht ein einziger Schlüssel für den ganzen Campus: Ein einziger campusweiter Hausmeisterschlüssel ist ein GGMK, nur unter anderem Namen, und er wird kopiert, verliehen und verloren wie jeder Schlüssel im täglichen Gebrauch. Und der GGMK wird verwahrt, nicht mitgeführt. Vielerorts liegt er in einem versiegelten Notschlüsselsatz und in sehr wenigen Händen, denn ihn zu verlieren heißt, alles umzuschließen.",
+      "## Ein durchgerechnetes Beispiel: 5.000 Türen in 40 Gebäuden",
+      "Die folgenden Zahlen dienen der Veranschaulichung: ein erfundener Campus, der die Form der Anlage zeigt, kein Projekt von uns.",
+      "| Gruppe | Gebäude | Türen mit Zylinder | Verwendete Ebenen |\n| --- | --- | --- | --- |\n| Lehre und Büros | 18 | 2.100 | GGMK, GMK je Gebäude, MK je Abteilung, Einzelschlüssel |\n| Wohnheime | 12 | 1.900 | GGMK, GMK je Wohnheim, SMK für die Hauswirtschaft, Einzelschlüssel |\n| Labore | 6 | 700 | GGMK, GMK je Gebäude, MK je Laborgruppe, Einzelschlüssel |\n| Technik und Betrieb | 4 | 300 | GGMK, GMK, SMK je Gewerk, Einzelschlüssel |",
+      "An den Wohnheimen zeigt sich, warum die Zutrittskontrolle per Karte mitgedacht werden sollte. In diesem Beispiel wechseln an 1.900 Türen jedes Jahr die Bewohner, und jeder verlorene Schlüssel eines Studierenden zieht ein Umschließen nach sich. Viele Campusbetreiber stellen genau deshalb die Eingänge der Wohnheime, manchmal auch die Zimmertüren selbst, auf elektronische Berechtigungen um und behalten die mechanische Schließung für die Türen dahinter: Lager, Technikräume, Büros.",
+      "## Die Außenhaut aus der mechanischen Anlage herausnehmen",
+      "Der größte einzelne Hebel bei einer großen Anlage ist die Zahl der Türen, die sie abdecken muss. Außentüren werden von den meisten Menschen und über die meisten Stunden des Tages geöffnet, und an ihnen wiegt ein verlorener Schlüssel am schwersten. Wo ein Campus seine Gebäudeeingänge bereits über Zutrittskontrolle per Karte steuert, behalten diese Türen einen Zylinder nur noch als mechanische Übersteuerung, meist gestiftet auf GMK und GGMK und auf nichts darunter.",
+      "Jede Tür, die nicht mehr auf der Einzelschlüsselebene liegt, spart Kombinationen, die die Anlage sonst verbrauchen würde. Und ein verlorener Schlüssel von Studierenden oder Beschäftigten öffnet kein Gebäude mehr von der Straße aus; damit wird aus dem schlimmsten Fall eines Schlüsselverlusts ein gewöhnlicher.",
+      "## Profilfamilien: damit die Schlüssel eines Gebäudes nicht in die Schlösser eines anderen passen",
+      "In einem einzelnen Gebäude haben alle Zylinder dasselbe Profil. Auf einem Campus ist das ein Risiko: Ein Einzelschlüssel, der für ein Gebäude geschnitten wurde, passt physisch in jeden Zylinder auf dem Campus, und nur die Schließung hindert ihn daran, sich zu drehen. Große Anlagen bauen deshalb meist auf einer Profilfamilie auf: einem übergeordneten Profil, auf das die Schlüssel der obersten Ebenen geschnitten werden, unterteilt in Unterprofile. Ein Schlüssel auf dem Unterprofil eines Gebäudes lässt sich in die Zylinder eines anderen Gebäudes nicht einmal einstecken, während Schlüssel auf dem übergeordneten Profil in alle passen.",
+      "Das ergibt eine doppelte Trennung statt einer einfachen. Die Schließung trennt weiterhin die Türen innerhalb eines Gebäudes, und das Profil trennt die Gebäude voneinander. Außerdem streckt das die Kapazität, denn eine Schließung, die unter einem Unterprofil vergeben ist, lässt sich unter einem anderen noch einmal vergeben, ohne dass einer der beiden Schlüssel je die Schlösser des anderen betätigt. Eine Profilfamilie ist eine Eigenschaft der Zylinderplattform und nichts, was sich später ergänzen lässt; die Plattform muss deshalb mit Blick auf den ganzen Campus gewählt werden.",
+      "## Umschließen im großen Maßstab: Kerne oder ganze Zylinder",
+      "Auf einem Campus wird ständig umgeschlossen: Abgänge, verlorene Schlüssel, Sanierungen, eine Abteilung, die in ein anderes Gebäude zieht. Wie schnell sich eine Tür umschließen lässt, entscheidet darüber, wie oft es tatsächlich geschieht. In Nordamerika arbeiten viele Anlagen großer Einrichtungen mit Wechselkernen, im kleinen oder im großen Format: Der Kern, der die Schließung trägt, wird mit einem Steuerschlüssel herausgezogen und in Sekunden getauscht, und das Schloss bleibt an der Tür. Der Steuerschlüssel ist dann eine eigene Ebene und muss strenger kontrolliert werden als der GGMK, denn mit ihm lassen sich Kerne ausbauen.",
+      "Anlagen mit Profilzylindern, in Europa und in weiten Teilen der übrigen Welt die Regel, werden umgeschlossen, indem man den Zylinder tauscht. Auch das geht schnell: die eine Stulpschraube im Stulp des Schlosskastens herausdrehen, den Schließbart ausrichten, und der Zylinder lässt sich herausziehen, wie unser Beitrag zum Einbau eines Profilzylinders beschreibt. Dafür braucht es einen Vorrat gestifteter Reservezylinder in den richtigen Längen, damit der Tausch nicht auf eine Bestellung warten muss. So oder so: Halten Sie in jedem Gebäude einige Reservezylinder oder -kerne vor, gestiftet auf ungenutzte Einzelschlüssel, die zu diesem Gebäude gehören.",
+      "## Was versagt, ist die Schlüsselkontrolle",
+      "Anlagen dieser Größe scheitern selten daran, dass der Plan falsch war. Sie scheitern daran, dass niemand sagen kann, wer welchen Schlüssel hat. Die Routine, die das verhindert, ist einfach, und sie muss schriftlich festgelegt sein, bevor die Anlage übergeben wird:",
+      "- Jeder Schlüssel ist mit seiner Bezeichnung und einer Seriennummer geprägt und wird gegen Unterschrift ausgegeben.\n- Schlüssel oberhalb der Einzelschlüsselebene werden an eine Funktion ausgegeben, nicht an eine Person, und kommen zurück, wenn die Funktion wechselt.\n- Abgänge werden mit dem Ausgabeprotokoll abgeglichen, nicht mit dem Gedächtnis.\n- Ein verlorener Schlüssel löst das Umschließen jeder Tür aus, die er öffnet, und der Schließplan zeigt den Umfang dieser Arbeit im Voraus.\n- Nachschlüssel werden über das Profil kontrolliert, nicht über eine Prägung „Nicht kopieren“, an die sich ein Schlüsseldienst nicht halten muss.",
+      "Die Dokumente hinter dieser Routine sind der Schließplan mit einer Zeile je Tür und die Schließungsliste, die angibt, wie jeder Schlüssel geschnitten ist. Der Schließplan kann beim Facility-Team liegen. Die Schließungsliste nicht: Wer sie hat, kann jeden Schlüssel der Anlage schneiden; deshalb wird sie offline und in sehr wenigen Händen aufbewahrt. Unsere Beiträge zum Schreiben eines Schließplans und dazu, warum jede Schließung einmalig sein muss, behandeln beide Dokumente.",
+      "## Wachstum: Platz für Gebäude, die es noch nicht gibt",
+      "Ein Campus wächst um neue Gebäude. Platz für sie muss reserviert werden, wenn die Anlage zum ersten Mal angelegt wird: ungenutzte GMK-Positionen für künftige Gebäude und ungenutzte Unterprofile in der Profilfamilie. Eine Anlage, die für genau die 40 Gebäude angelegt ist, die es heute gibt, ist beim 41. erschöpft, und die Lösung besteht dann darin, ein Gebäude umzuschließen, das im ursprünglichen Plan nie vorkam. Unser Leitfaden zur Planung von Schließanlagen zeigt, wie eine Erweiterungsreserve von Anfang an eingeplant wird und warum sie sich nachträglich nicht hinzufügen lässt.",
+      "## Wie die Zylinderbestellung aussieht",
+      "Für einen Zylinderlieferanten ist ein Campus nicht eine Bestellung, sondern eine Reihe von Bestellungen, Gebäude für Gebäude, alle auf einer Plattform. Was vor der ersten feststehen muss:",
+      "- Zylinderprofil und Profilfamilie, in jedem Gebäude dieselben.\n- Längen und Aufteilungen Tür für Tür, abgeleitet aus der Türblattdicke und dem Beschlag auf jeder Seite. Ein Campus verwendet mehrere Längen, und bei unseren Zylindern ist die Länge die führende Zahl der Modellnummer: 60 CPDK ist ein 60mm langer Doppelzylinder.\n- Die Oberfläche, einheitlich innerhalb eines Gebäudes, damit ein Ersatzzylinder zu seinen Nachbarn passt.\n- Mengen je Schlüsselbezeichnung laut Schließplan, dazu die gestifteten Reservezylinder.\n- Wer die Anlage betreut und die Schließungsliste verwahrt, schriftlich festgehalten, bevor irgendetwas gestiftet wird.",
+      "Wir bestätigen die Zylinderserie, die Längen, Aufteilungen, Oberflächen und Mengen sowie die Zusagen zur Schlüsselkontrolle, je Auftrag und schriftlich. Die Hierarchie selbst entwirft, wer die Anlage betreut, meist ein Schlüsseldienst, ein Sicherheitsberater oder der Hersteller der Plattform, denn sie hängt von den Hauptschlüsselregeln der Plattform und von einem Organigramm ab, an dem wir nicht beteiligt sind. Schicken Sie uns die Zahl der Türen, die Gebäudeliste und die Türliste, und wir sagen Ihnen, welcher unserer Profilzylinder zu jeder Tür passt."
+    ],
+    "faq": [
+      {
+        "question": "Wie viele Ebenen braucht eine Schließanlage für einen Campus?",
+        "answer": "Meist vier oder fünf: ein Generalhauptschlüssel für den Campus, ein Hauptschlüssel je Gebäude oder Bereich, Gruppenschlüssel für Abteilungen oder Geschosse, Untergruppenschlüssel für Gewerke, wo sie gebraucht werden, und Einzelschlüssel für die Räume. Mehr Ebenen verbrauchen Kombinationen, ohne mehr Kontrolle zu bringen."
+      },
+      {
+        "question": "Was ist ein GGMK?",
+        "answer": "Der Generalhauptschlüssel, die oberste Ebene der Anlage: Er öffnet jedes mechanische Schloss darin. Auf einem Campus liegt er normalerweise in einem versiegelten Notschlüsselsatz und wird von sehr wenigen Personen verwahrt, denn ihn zu verlieren heißt, den ganzen Campus umzuschließen."
+      },
+      {
+        "question": "Was ist eine Profilfamilie in einer Schließanlage?",
+        "answer": "Eine Gruppe verwandter Profile, die auf einem gemeinsamen übergeordneten Profil aufbauen. Schlüssel auf dem Unterprofil eines Gebäudes passen nicht in die Zylinder anderer Gebäude, während die Schlüssel der obersten Ebenen, auf das übergeordnete Profil geschnitten, in alle passen. So sind die Gebäude nicht nur durch die Schließung, sondern auch durch das Profil voneinander getrennt."
+      },
+      {
+        "question": "Warum verwenden Universitäten Wechselkerne?",
+        "answer": "Weil auf einem Campus ständig umgeschlossen wird. Ein Wechselkern wird mit einem Steuerschlüssel herausgezogen und in Sekunden ersetzt, und das Schloss bleibt an der Tür. Anlagen mit Profilzylindern erreichen dasselbe, indem sie den ganzen Zylinder tauschen; das geht schnell, wenn gestiftete Reservezylinder vor Ort liegen."
+      },
+      {
+        "question": "Gehören Außentüren in die Schließanlage?",
+        "answer": "Wo eine Zutrittskontrolle per Karte die Eingänge bereits steuert, behalten diese Türen meist nur noch einen Zylinder als mechanische Übersteuerung, gestiftet auf die obersten Ebenen. Damit fallen die meistgenutzten Türen aus der Einzelschlüsselebene heraus, und ein verlorener Zimmerschlüssel öffnet kein Gebäude mehr."
+      }
+    ],
+    "sourceHash": {
+      "title": "68837280b667",
+      "summary": "0282dc7499d8",
+      "seoTitle": "f02cef17aa7c",
+      "seoDescription": "1a4f6939ab06",
+      "body": "65029da24edb",
+      "faq": "872f8ea29366"
     }
   },
   "mortise-lock-backset-and-centre-distance-guide": {

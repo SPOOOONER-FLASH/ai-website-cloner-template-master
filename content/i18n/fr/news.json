@@ -928,7 +928,7 @@
     "title": "US26D, 626, 630 : un code de finition n'est pas une couleur",
     "summary": "Un cahier des charges nord-américain écrit 626, pas « chrome satiné ». Le numéro code le métal de base autant que l'aspect : 626 et 652 sont donc la même couleur et deux produits différents. Sur 519 fiches Canton Hyland publiées, 77 peuvent honnêtement recevoir un numéro ; les 442 autres non, et chacune a sa raison.",
     "seoTitle": "US26D, 626, 630 : les codes de finition BHMA",
-    "seoDescription": "US26D = 626 : chromé satiné sur laiton ou bronze. 652, même aspect sur acier ; 630, inox satiné massif. Pourquoi les codes BHMA nomment le métal de base.",
+    "seoDescription": "US26D, 626, 652 et 630 côte à côte : le métal de base de chaque code, la table BHMA et US complète, et quand un 652 pour un 626 est une substitution.",
     "body": [
       "Un acheteur est arrivé en septembre avec la référence d'un concurrent, `rxfse25r510l32d3`. Le fabricant n'a jamais été identifié, et cela n'avait pas d'importance, car un fragment suffisait à situer l'acheteur : 32D. Ce n'est pas un nom de couleur, c'est un code du système de finitions nord-américain, et un acheteur qui l'écrit prescrit selon l'ANSI/BHMA. Notre propre catalogue répond dans une autre langue (SSET, ACBK, CPBK) : des codes maison qui ne signifient rien hors de notre tarif. Cet article en est la traduction, et la moitié importante porte sur l'endroit où la traduction s'arrête.",
       "Commençons par ce que tout le monde sait déjà. US26D et 626 sont deux façons d'écrire le même aspect, chromé satiné ; le numéro US est l'ancienne convention, le numéro à trois chiffres est celui de l'ANSI/BHMA A156.18. La plupart des tables de correspondance en ligne impriment exactement cela, sur deux colonnes, et s'arrêtent là. Cette table est incomplète de la seule façon qui coûte un conteneur.",
@@ -982,7 +982,7 @@
       "title": "dd888bc13471",
       "summary": "3a1d7e3e03cb",
       "seoTitle": "466e81b9fd29",
-      "seoDescription": "d676be3b6346",
+      "seoDescription": "2383894ea6fb",
       "body": "d81d9340764a",
       "faq": "f20625faeb6a"
     }
@@ -1447,6 +1447,73 @@
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
       "faq": "2efa1a7ca90e"
+    }
+  },
+  "master-keying-a-campus-5000-openings": {
+    "title": "Organigramme de campus : comment se structure un système de 5 000 portes",
+    "summary": "Un campus de 5 000 portes s'organise normalement sur quatre ou cinq niveaux : un grand passe général (GGMK) pour le campus, un passe général (GMK) par bâtiment ou par zone, des passes partiels par service ou par étage, et des clés individuelles pour les pièces. À cette échelle, le plan est la partie facile. Ce qui décide si l'organigramme fonctionnera encore dans dix ans, ce sont trois décisions qui l'entourent : quelles portes passent au contrôle d'accès par badge plutôt qu'à la clé, une famille de profils qui empêche les clés d'un bâtiment d'entrer dans les cylindres d'un autre, et une procédure de maîtrise des clés qui résiste au renouvellement du personnel. Cette page présente la structure à l'aide d'un exemple concret, la façon dont on change les combinaisons d'un grand organigramme, et ce qui figure sur la commande de cylindres.",
+    "seoTitle": "Organigramme de campus : structurer 5 000 portes | Canton Hyland",
+    "seoDescription": "Comment se structure un organigramme universitaire : GGMK du campus, GMK par bâtiment, familles de profils, changement de combinaison, maîtrise des clés.",
+    "body": [
+      "La plupart des conseils sur les organigrammes sont écrits pour un seul bâtiment : quelques dizaines de portes, trois niveaux, un responsable des services généraux. Une université, un campus hospitalier ou un grand réseau d'établissements scolaires pose un tout autre problème. Avec 5 000 portes réparties sur des dizaines de bâtiments, la hiérarchie elle-même est la partie facile. Ce qui décide si l'organigramme fonctionnera encore dans dix ans, c'est la façon dont le campus est découpé avant que le premier cylindre ne soit goupillé, et la façon dont les clés sont maîtrisées ensuite.",
+      "La réponse courte : prévoyez quatre ou cinq niveaux, découpez le campus d'abord par bâtiment, ensuite par service, retirez les portes extérieures de l'organigramme mécanique partout où le contrôle d'accès par badge les couvre déjà, et appuyez-vous sur une famille de profils plutôt que sur un profil libre unique. Le nom de chaque niveau, le tableau d'ensemble et ce que chaque niveau coûte en capacité sont traités dans notre guide sur la hiérarchie des passes. Cette page porte sur ce qui change quand l'organigramme a la taille d'un campus.",
+      "## La hiérarchie à l'échelle d'un campus",
+      "Ce sont les cinq mêmes niveaux que partout ailleurs. Ce qui change, c'est ce à quoi chaque niveau correspond. Sur un campus, l'unité naturelle est le bâtiment, parce que les bâtiments sont construits, rénovés et réceptionnés un par un, et parce qu'une clé perdue pose un problème exactement à la mesure de ce qu'elle ouvre.",
+      "| Niveau | Correspond à | Détenteur type | Ouvre |\n| --- | --- | --- | --- |\n| GGMK : grand passe général | Le campus entier | Responsable sûreté ; un jeu de secours sous scellés | Toutes les serrures mécaniques |\n| GMK : passe général | Un bâtiment, ou une zone de petits bâtiments | Le responsable des services généraux du bâtiment | Toutes les serrures de ce bâtiment |\n| MK : passe partiel | Un service, un étage ou une aile | Le responsable administratif du service | Les locaux de ce service |\n| SMK : sous-passe | Un métier ou un type de local au sein d'un bâtiment | Personnel d'entretien, informatique ou technique | Réserves de ménage, gaines techniques, salles informatiques |\n| Clé individuelle | Une pièce ou un ensemble de pièces | L'occupant | Une porte, ou un ensemble s'entrouvrant |",
+      "Deux règles rendent ce tableau applicable. Une clé de métier (entretien, informatique, maintenance) est généralement un sous-passe propre à chaque bâtiment plutôt qu'une clé unique pour tout le campus : une clé d'entretien valable sur tout le campus est un GGMK qui ne dit pas son nom, et elle est copiée, prêtée et perdue comme n'importe quelle clé d'usage courant. Et le GGMK se garde, il ne se porte pas. Sur de nombreux campus, il est conservé dans un jeu de secours sous scellés, entre très peu de mains, car le perdre impose de changer la combinaison de tous les cylindres.",
+      "## Un exemple concret : 5 000 portes dans 40 bâtiments",
+      "Les chiffres ci-dessous sont illustratifs : un campus inventé pour montrer la forme de l'organigramme, pas l'un de nos projets.",
+      "| Groupe | Bâtiments | Portes à clé | Niveaux utilisés |\n| --- | --- | --- | --- |\n| Enseignement et bureaux | 18 | 2 100 | GGMK, GMK par bâtiment, MK par service, clés individuelles |\n| Résidences | 12 | 1 900 | GGMK, GMK par résidence, SMK pour le ménage, clés individuelles |\n| Laboratoires | 6 | 700 | GGMK, GMK par bâtiment, MK par groupe de laboratoires, clés individuelles |\n| Locaux techniques et services d'appui | 4 | 300 | GGMK, GMK, SMK par métier, clés individuelles |",
+      "Ce sont les résidences qui justifient de penser au contrôle d'accès par badge. Dans cet exemple, 1 900 portes changent d'occupant chaque année, et chaque clé d'étudiant perdue impose un changement de combinaison. C'est précisément pour cette raison que de nombreux campus gèrent les entrées des résidences, et parfois les portes des chambres elles-mêmes, par identifiants électroniques, et conservent l'organigramme mécanique pour les portes situées derrière : réserves, locaux techniques, bureaux.",
+      "## Retirer les portes extérieures de l'organigramme mécanique",
+      "Sur un grand organigramme, le principal levier est le nombre de portes qu'il doit couvrir. Les portes extérieures sont celles qu'ouvre le plus de monde, sur la plus grande amplitude horaire, et ce sont aussi celles où une clé perdue pèse le plus. Lorsqu'un campus a déjà équipé les entrées de ses bâtiments d'un contrôle d'accès par badge, ces portes ne conservent un cylindre mécanique que comme commande de secours, généralement goupillé pour le GMK et le GGMK, et pour rien en dessous.",
+      "Chaque porte retirée du niveau des clés individuelles, c'est autant d'espace de combinaisons que l'organigramme ne consomme pas. Et la clé perdue d'un étudiant ou d'un membre du personnel n'ouvre plus un bâtiment depuis la rue, ce qui ramène le pire cas de clé perdue à un cas ordinaire.",
+      "## Familles de profils : empêcher les clés d'un bâtiment d'entrer dans les serrures d'un autre",
+      "Dans un seul bâtiment, tous les cylindres partagent un même profil. Sur un campus, c'est un risque : une clé individuelle taillée pour un bâtiment entre physiquement dans tous les cylindres du campus, et seul le taillage l'empêche de tourner. Les grands organigrammes reposent plutôt, en général, sur une famille de profils : un profil maître, sur lequel sont taillées les clés des niveaux supérieurs, divisé en sous-profils. Une clé taillée sur le sous-profil d'un bâtiment ne peut même pas entrer dans les cylindres d'un autre bâtiment, alors que les clés taillées sur le profil maître entrent dans tous.",
+      "On obtient ainsi deux séparations au lieu d'une. Le taillage sépare toujours les portes à l'intérieur d'un bâtiment, et le profil sépare les bâtiments entre eux. La capacité s'en trouve aussi élargie, car un taillage utilisé sous un sous-profil peut être réutilisé sous un autre sans que l'une des deux clés ouvre jamais les serrures de l'autre. Une famille de profils est une propriété de la plateforme de cylindres, pas un ajout ultérieur : la plateforme doit donc être choisie en pensant au campus entier.",
+      "## Changer les combinaisons à grande échelle : noyaux ou cylindres entiers",
+      "Un campus change des combinaisons en permanence : départs, clés perdues, rénovations, un service qui déménage dans un autre bâtiment. La rapidité avec laquelle on peut changer la combinaison d'une porte décide de la fréquence à laquelle on le fait réellement. En Amérique du Nord, de nombreux organigrammes institutionnels utilisent des noyaux interchangeables, en petit ou en grand format : le noyau goupillé se retire avec une clé de contrôle et se remplace en quelques secondes, et la serrure reste sur la porte. La clé de contrôle constitue alors un niveau à part entière, et elle doit être maîtrisée plus strictement encore que le GGMK, car elle permet de retirer les noyaux.",
+      "Les organigrammes à profil européen, la règle en Europe et dans une grande partie du reste du monde, changent de combinaison en remplaçant le cylindre. L'opération reste rapide : on retire l'unique vis de fixation qui traverse la têtière du coffre de serrure, on tourne le panneton pour l'aligner, et le cylindre glisse dehors, comme le décrit notre article sur la pose d'un cylindre européen. Ce qu'il faut, c'est un stock de cylindres de réserve goupillés, dans les bonnes longueurs, pour que l'échange n'attende pas une commande. Dans les deux cas, gardez quelques cylindres ou noyaux de réserve dans chaque bâtiment, goupillés sur des clés individuelles non attribuées de la plage de ce bâtiment.",
+      "## C'est la maîtrise des clés qui lâche",
+      "Les organigrammes de cette taille échouent rarement parce que le plan était faux. Ils échouent parce que personne ne peut dire qui détient quelle clé. La procédure qui l'évite est simple, et elle doit être écrite avant la remise de l'organigramme :",
+      "- Chaque clé est frappée de son symbole et d'un numéro de série, et remise contre signature.\n- Les clés au-dessus du niveau des clés individuelles sont attribuées à une fonction, pas à une personne, et sont restituées au changement de fonction.\n- Les départs sont vérifiés d'après le registre des remises, pas de mémoire.\n- Une clé perdue déclenche le changement de combinaison de toutes les portes qu'elle ouvre, et le tableau d'organigramme montre à l'avance l'ampleur de ce travail.\n- Les doubles sont maîtrisés par le profil, pas par une mention « ne pas reproduire », qu'un reproducteur de clés est libre d'ignorer.",
+      "Les documents qui sous-tendent cette procédure sont le tableau d'organigramme, avec une ligne par porte, et la liste des taillages, qui indique comment chaque clé est taillée. Le tableau peut rester aux services généraux. La liste des taillages, non : quiconque la détient peut tailler n'importe quelle clé de l'organigramme ; elle est donc conservée hors ligne, entre très peu de mains. Nos notes sur la rédaction d'un tableau d'organigramme et sur les raisons pour lesquelles chaque taillage doit être unique traitent de ces deux documents.",
+      "## Croissance : laisser de la place aux bâtiments qui n'existent pas encore",
+      "Un campus se dote de nouveaux bâtiments. Leur place doit être réservée dès la conception de l'organigramme : des positions de GMK non attribuées pour les bâtiments futurs, et des sous-profils inutilisés dans la famille de profils. Un organigramme conçu pour exactement les 40 bâtiments qui existent aujourd'hui s'épuise au 41e, et la solution consiste alors à changer les combinaisons d'un bâtiment qui n'a jamais figuré sur le plan d'origine. Le guide sur la hiérarchie explique comment une réserve d'extension se prévoit dès la conception, et pourquoi elle ne peut pas être ajoutée après coup.",
+      "## À quoi ressemble la commande de cylindres",
+      "Pour un fournisseur de cylindres, un campus n'est pas une commande mais une série de commandes, bâtiment par bâtiment, toutes sur une même plateforme. Ce qui doit être arrêté avant la première :",
+      "- Le profil du cylindre et la famille de profils de clé, identiques dans chaque bâtiment.\n- Les longueurs et répartitions, porte par porte, d'après l'épaisseur de la porte et la garniture de chaque face. Un campus utilise plusieurs longueurs, et sur nos cylindres la longueur est le premier nombre de la référence : le 60 CPDK est un cylindre double entrée de 60mm.\n- La finition, homogène dans tout un bâtiment, pour qu'un cylindre de remplacement soit assorti à ses voisins.\n- Les quantités par symbole de clé, d'après le tableau d'organigramme, plus les cylindres de réserve goupillés.\n- Qui détient le système et la liste des taillages, par écrit, avant que quoi que ce soit ne soit goupillé.",
+      "Nous confirmons la gamme de cylindres, les longueurs, les répartitions, les finitions et les quantités, ainsi que nos engagements de maîtrise des clés, commande par commande et par écrit. La hiérarchie elle-même est conçue par celui qui détient le système, en général un serrurier, un consultant en sûreté ou le fabricant de la plateforme, car elle dépend des règles de passe propres à la plateforme et d'un organigramme de l'organisation auquel nous n'avons pas part. Envoyez le nombre de portes, la liste des bâtiments et le tableau de quincaillerie, et nous vous dirons lequel de nos cylindres à profil européen convient à chaque porte."
+    ],
+    "faq": [
+      {
+        "question": "Combien de niveaux faut-il à l'organigramme d'un campus ?",
+        "answer": "En général quatre ou cinq : un grand passe général pour le campus, un passe général par bâtiment ou par zone, des passes partiels par service ou par étage, des sous-passes par métier là où ils sont nécessaires, et des clés individuelles pour les pièces. Au-delà, les niveaux supplémentaires consomment de l'espace de combinaisons sans apporter de maîtrise."
+      },
+      {
+        "question": "Qu'est-ce qu'un GGMK ?",
+        "answer": "Le grand passe général, le niveau le plus haut de l'organigramme, qui en ouvre toutes les serrures mécaniques. Sur un campus, il est normalement conservé dans un jeu de secours sous scellés et détenu par très peu de personnes, car le perdre impose de changer les combinaisons de tout le campus."
+      },
+      {
+        "question": "Qu'est-ce qu'une famille de profils dans un organigramme ?",
+        "answer": "Un ensemble de profils apparentés, construits sur un même profil maître. Les clés taillées sur le sous-profil d'un bâtiment ne peuvent pas entrer dans les cylindres des autres bâtiments, tandis que les clés des niveaux supérieurs, taillées sur le profil maître, entrent dans tous : les bâtiments sont ainsi séparés par le profil autant que par le taillage."
+      },
+      {
+        "question": "Pourquoi les universités utilisent-elles des noyaux interchangeables ?",
+        "answer": "Parce qu'un campus change des combinaisons en permanence. Un noyau interchangeable se retire avec une clé de contrôle et se remplace en quelques secondes, et la serrure reste sur la porte. Les organigrammes à profil européen obtiennent le même résultat en remplaçant le cylindre entier, ce qui est rapide quand des cylindres de réserve goupillés sont gardés sur place."
+      },
+      {
+        "question": "Les portes extérieures doivent-elles faire partie de l'organigramme ?",
+        "answer": "Lorsque le contrôle d'accès par badge gère déjà les entrées, ces portes ne conservent généralement un cylindre mécanique que comme commande de secours, goupillé pour les niveaux supérieurs. Les portes les plus fréquentées sortent ainsi du niveau des clés individuelles, et la clé perdue d'une pièce n'ouvre plus un bâtiment."
+      }
+    ],
+    "sourceHash": {
+      "title": "68837280b667",
+      "summary": "0282dc7499d8",
+      "seoTitle": "f02cef17aa7c",
+      "seoDescription": "1a4f6939ab06",
+      "body": "65029da24edb",
+      "faq": "872f8ea29366"
     }
   },
   "mortise-lock-backset-and-centre-distance-guide": {

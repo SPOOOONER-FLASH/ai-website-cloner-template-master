@@ -114,6 +114,8 @@ const TARGETS = [
   "satin-chrome-vs-satin-nickel-us26d-us15",
   "fire-rated-door-knobs-and-levers-what-is-rated",
   "why-key-bitting-must-be-unique-master-key-security",
+  // 2026-10-25: campus master keying (Bing AI query 39 citations, GSC "master key plan").
+  "master-keying-a-campus-5000-openings",
 ];
 
 /**

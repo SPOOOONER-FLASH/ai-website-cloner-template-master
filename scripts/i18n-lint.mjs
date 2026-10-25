@@ -61,6 +61,19 @@ for (const locale of LOCALES) {
         const enValue = field === "specs" ? (src.specs ?? []).map(({ label, value: v }) => ({ label, value: v })) : src[field];
         walk(locale, `${locale}/${kind}/${slug}.${field}`, enValue, value);
       }
+      /*
+        Article headings: where the English body has "## " or "### ", the overlay must too (2026-10-25:
+        490 markers were missing in ja/ko/ar/de/ru guides; on ja pages that let 1,053 short paragraphs
+        render as <h2>). Fix with node scripts/i18n-restore-heading-markers.mjs --write.
+      */
+      if ((kind === "news" || kind === "guides") && Array.isArray(entry.body) && Array.isArray(en.body) && entry.body.length === en.body.length) {
+        entry.body.forEach((p, i) => {
+          const marker = /^(#{2,3})\s/.exec(en.body[i] ?? "")?.[1];
+          if (typeof p === "string" && (marker ? !p.startsWith(`${marker} `) : /^#{2,3}\s/.test(p))) {
+            problems.push(`${locale}/${kind}/${slug}.body[${i}]: heading marker ${marker ? `"${marker}" missing` : "where the English has none"}`);
+          }
+        });
+      }
       if (kind === "products") {
         const clash = materialConflict(locale, en.material, entry.summary);
         if (clash) problems.push(`${locale}/products/${slug}.summary ${clash}`);

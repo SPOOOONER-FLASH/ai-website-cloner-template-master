@@ -21,3 +21,14 @@ test('sorting uses explicit numeric values, keeps empty cells last and never mut
   assert.equal(rows[0][0].text, '3/8 in');
   assert.deepEqual(sortedTableRows(rows, 0, null, 'number', 'en'), rows);
 });
+
+test('scripts without letter case need an explicit marker to become a heading', () => {
+  const blocks = articleBlocks([
+    'このページは主張ではなく集計です。以下の数値はカタログから取ったものです。',
+    '## バックセットはどこから測るか',
+    'الخامة، والمقطع، وترميز القطع',
+    '60 CPDK は60mmの両面シリンダーです。',
+    'LE PERÇAGE 161',
+  ]);
+  assert.deepEqual(blocks.map(b => b.kind), ['paragraph', 'heading', 'paragraph', 'paragraph', 'heading']);
+});

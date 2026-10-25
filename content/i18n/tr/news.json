@@ -928,7 +928,7 @@
     "title": "US26D, 626, 630: Kaplama Kodu Bir Renk Değildir",
     "summary": "Kuzey Amerika şartnamesi “saten krom” değil, 626 yazar. Numara görünümün yanında taban metali de kodlar; bu yüzden 626 ile 652 aynı renk ama farklı üründür. Canton Hyland’ın yayınlanmış 519 kaydından 77’sine dürüstçe bir numara verilebilir; kalan 442’sine verilemez ve her birinin bir nedeni vardır.",
     "seoTitle": "US26D, 626, 630: BHMA Kaplama Kodları Nasıl İşler",
-    "seoDescription": "US26D, 626’dır: pirinç veya bronz üzerine saten krom. 652 çelikte aynı görünüm, 630 masif saten paslanmazdır. BHMA kodları taban metali neden belirtir?",
+    "seoDescription": "US26D, 626, 652 ve 630 yan yana: her kodun belirttiği ana metal, tam BHMA ve US tablosu ve 626 şartnamesine 652 teklifi ne zaman ikamedir.",
     "body": [
       "Eylül’de bir alıcı elinde bir rakibin parça numarasıyla geldi: `rxfse25r510l32d3`. Üreticiyi hiç çözemedik, ama önemi yoktu; çünkü numaranın bir parçası alıcıyı tamamen tanımlıyordu: 32D. Bu bir renk adı değil, Kuzey Amerika kaplama sistemindeki bir koddur ve bunu yazan bir satın almacı ANSI/BHMA’ya göre şartname yazıyordur. Bizim kataloğumuz başka bir dilde cevap verir (SSET, ACBK, CPBK); fiyat listemizin dışında hiçbir anlamı olmayan şirket içi kodlar. Bu yazı bir çeviridir ve önemli yarısı, çevirinin nerede durduğudur.",
       "Herkesin bildiği kısımdan başlayalım. US26D ve 626 aynı görünümün, saten krom kaplamanın iki farklı yazılışıdır. US numarası eski teamüldür, üç haneli numara ise ANSI/BHMA A156.18’dir. İnternetteki karşılaştırma tablolarının çoğu tam olarak bunu, iki sütun halinde basar ve orada durur. Bu tablo, bir konteynere mal olacak tek bir noktada eksiktir.",
@@ -982,7 +982,7 @@
       "title": "dd888bc13471",
       "summary": "3a1d7e3e03cb",
       "seoTitle": "466e81b9fd29",
-      "seoDescription": "d676be3b6346",
+      "seoDescription": "2383894ea6fb",
       "body": "d81d9340764a",
       "faq": "f20625faeb6a"
     }
@@ -1447,6 +1447,73 @@
       "seoDescription": "93cba5460947",
       "body": "b024b9e67596",
       "faq": "2efa1a7ca90e"
+    }
+  },
+  "master-keying-a-campus-5000-openings": {
+    "title": "Kampüste Master Anahtarlama: 5.000 Kapılık Bir Sistem Nasıl Yapılandırılır",
+    "summary": "5.000 kapılık bir kampüs normalde dört ya da beş seviyede anahtarlanır: kampüs için bir great grand master (GGMK), her bina ya da bölge için bir grand master (GMK), departmanlar ya da katlar için masterlar ve odalar için değişim anahtarları. Bu büyüklükte şema işin kolay kısmıdır. Sistemin on yıl sonra hâlâ çalışıp çalışmayacağını onun etrafındaki üç karar belirler: hangi kapıların anahtar yerine kartlı geçişe taşınacağı, bir binanın anahtarlarını başka bir binanın silindirlerinden uzak tutan bir anahtar yuvası ailesi ve personel değişimlerinden sonra da işleyen bir anahtar kontrolü rutini. Bu sayfa yapıyı çözümlü bir örnekle ortaya koyuyor; büyük sistemlerin nasıl yeniden anahtarlandığını ve silindir siparişine nelerin yazıldığını da anlatıyor.",
+    "seoTitle": "Kampüs Master Anahtar Sistemi: 5.000 Kapılık Yapılanma | Canton Hyland",
+    "seoDescription": "Üniversite ölçekli master anahtar sisteminin yapısı: kampüs için GGMK, bina başına GMK, anahtar yuvası aileleri, yeniden anahtarlama ve anahtar kontrolü.",
+    "body": [
+      "Master anahtar konusundaki tavsiyelerin çoğu tek bir bina için yazılır: birkaç düzine kapı, üç seviye, bir tesis yöneticisi. Bir üniversite, bir hastane kampüsü ya da büyük bir okul bölgesi farklı bir sorundur. Düzinelerce binaya yayılmış 5.000 kapıda hiyerarşinin kendisi işin kolay kısmıdır. Sistemin on yıl sonra hâlâ çalışıp çalışmayacağını belirleyen, ilk silindir pimlenmeden önce kampüsün nasıl bölündüğü ve anahtarların sonrasında nasıl kontrol edildiğidir.",
+      "Kısa cevap: dört ya da beş seviye planlayın, kampüsü önce binaya, sonra departmana göre bölün, kartlı geçişin zaten kapsadığı her yerde dış kapıları mekanik sistemin dışına alın ve sistemi tek bir açık anahtar yuvası yerine bir anahtar yuvası ailesi üzerine kurun. Seviye adları, şema ve her seviyenin kapasiteden ne götürdüğü master anahtar hiyerarşisi rehberimizde ele alınıyor. Bu sayfa, sistem bir kampüs büyüklüğüne ulaştığında nelerin değiştiğini anlatıyor.",
+      "## Kampüs ölçeğinde hiyerarşi",
+      "Seviyeler her yerde kullanılan aynı beş seviyedir. Değişen, her seviyenin neye karşılık geldiğidir. Bir kampüste doğal birim binadır; çünkü binalar birer birer inşa edilir, yenilenir ve teslim edilir, kaybolan bir anahtar da tam olarak açtığı her şey kadar büyük bir sorundur.",
+      "| Seviye | Karşılık geldiği birim | Tipik sahibi | Açtığı |\n| --- | --- | --- | --- |\n| GGMK: great grand master | Kampüsün tamamı | Güvenlik şefi; mühürlü bir acil durum seti | Her mekanik kilit |\n| GMK: grand master | Tek bir bina ya da küçük binalardan oluşan bir bölge | Binanın tesis sorumlusu | O binadaki her kilit |\n| MK: master | Bir departman, bir kat ya da bir kanat | Departmanın idari sorumlusu | O departmanın odaları |\n| SMK: alt master | Tek bir bina içindeki bir hizmet birimi ya da oda tipi | Temizlik, IT ya da teknik personel | Temizlik depoları, şaftlar, IT odaları |\n| Değişim anahtarı | Tek bir oda ya da tek bir oda grubu | Odayı kullanan kişi | Tek bir kapı ya da aynı anahtarlı tek bir grup |",
+      "Bu tabloyu işler tutan iki kural vardır. Bir hizmet anahtarı (temizlik, IT, bakım) genellikle kampüsün tamamında geçen tek bir anahtar değil, her binanın içinde bir alt master'dır: kampüs genelinde geçen tek bir temizlik anahtarı, adı öyle olmasa da fiilen bir GGMK'dir ve gündelik kullanılan her anahtar gibi kopyalanır, ödünç verilir ve kaybolur. Ayrıca GGMK taşınmaz, saklanır. Birçok kampüste mühürlü bir acil durum setinde ve çok az kişinin elinde durur; çünkü onu kaybetmek her şeyi yeniden anahtarlamak demektir.",
+      "## Çözümlü örnek: 40 binada 5.000 kapı",
+      "Aşağıdaki rakamlar örnek amaçlıdır: sistemin biçimini göstermek için kurgulanmış bir kampüs, bizim bir projemiz değil.",
+      "| Grup | Bina | Anahtarlı kapı | Kullanılan seviyeler |\n| --- | --- | --- | --- |\n| Eğitim ve ofis binaları | 18 | 2.100 | GGMK, bina başına GMK, departman başına MK, değişim anahtarları |\n| Yurtlar | 12 | 1.900 | GGMK, yurt başına GMK, kat hizmetleri için SMK, değişim anahtarları |\n| Laboratuvarlar | 6 | 700 | GGMK, bina başına GMK, laboratuvar grubu başına MK, değişim anahtarları |\n| Teknik ve destek binaları | 4 | 300 | GGMK, GMK, hizmet birimi başına SMK, değişim anahtarları |",
+      "Kartlı geçişi neden akılda tutmak gerektiğini en iyi yurtlar gösterir. Bu örnekte 1.900 kapının kullanıcısı her yıl değişir ve kaybolan her öğrenci anahtarı bir yeniden anahtarlama demektir. Birçok kampüs tam da bu nedenle yurt girişlerini, bazen de oda kapılarının kendisini elektronik kimlikle çalışan geçiş sistemine alır ve mekanik anahtarlamayı bunların arkasındaki kapılar için korur: depolar, teknik odalar, ofisler.",
+      "## Dış kapıları mekanik sistemin dışına alın",
+      "Büyük bir sistemde en etkili tek kaldıraç, sistemin kaç kapıyı kapsamak zorunda olduğudur. Dış kapıları en çok insan, günün en çok saatinde açar ve kaybolan bir anahtarın en çok önem taşıdığı kapılar da bunlardır. Bir kampüs bina girişlerinde zaten kartlı geçiş kullanıyorsa, bu kapılarda mekanik silindir yalnızca bir baypas (override) olarak kalır; genellikle GMK'ye ve GGMK'ye göre anahtarlanır, bunların altındaki hiçbir anahtara göre değil.",
+      "Değişim anahtarı seviyesinden çıkarılan her kapı, sistemin kombinasyon havuzundan harcamadığı bir paydır. Ayrıca kaybolan bir öğrenci ya da personel anahtarı artık bir binayı sokaktan açmaz; bu da en kötü kayıp anahtar senaryosunu sıradan bir duruma dönüştürür.",
+      "## Anahtar yuvası aileleri: bir binanın anahtarlarını başka bir binanın kilitlerinden uzak tutmak",
+      "Tek bir binada her silindir aynı anahtar yuvasını paylaşır. Bir kampüste bu bir risktir: bir bina için kesilmiş bir değişim anahtarı kampüsteki her silindire fiziksel olarak girer ve onun dönmesini yalnızca diş kodu engeller. Büyük sistemler bu yüzden genellikle bir anahtar yuvası ailesi üzerine kurulur: üst seviye anahtarların kesildiği ve alt kesitlere bölünmüş bir master kesit. Bir binanın alt kesitinde kesilmiş bir anahtar başka bir binanın silindirlerine giremez bile; master kesitte kesilmiş anahtarlar ise hepsine girer.",
+      "Bu, tek yerine iki katmanlı bir ayrım sağlar. Diş kodu bir bina içindeki kapıları ayırmaya devam eder, anahtar yuvası ise binaları birbirinden ayırır. Kapasiteyi de genişletir; çünkü bir alt kesitte kullanılan bir diş kodu, iki anahtardan hiçbiri diğerinin kilitlerini çalıştırmadan başka bir alt kesitte yeniden kullanılabilir. Anahtar yuvası ailesi sonradan eklenen bir şey değil, silindir platformunun bir özelliğidir; bu yüzden platform tüm kampüs göz önünde tutularak seçilmelidir.",
+      "## Büyük ölçekte yeniden anahtarlama: göbek mi, silindirin tamamı mı",
+      "Bir kampüs sürekli yeniden anahtarlama yapar: ayrılan kişiler, kaybolan anahtarlar, tadilatlar, başka bir binaya taşınan bir departman. Bir kapının ne kadar hızlı yeniden anahtarlanabildiği, bunun gerçekte ne sıklıkla yapıldığını belirler. Kuzey Amerika'da birçok kurumsal sistem küçük ya da büyük formatta değiştirilebilir göbek (interchangeable core) kullanır: anahtarlanmış göbek bir kontrol anahtarıyla çıkarılır, saniyeler içinde yenisiyle değiştirilir ve kilit kapının üzerinde kalır. Bu durumda kontrol anahtarı başlı başına bir seviyedir ve GGMK'den daha sıkı kontrol edilmelidir, çünkü göbekleri söker.",
+      "Avrupa'da ve dünyanın geri kalanının büyük bölümünde norm olan Avrupa profil sistemlerde yeniden anahtarlama, silindir değiştirilerek yapılır. Bu da hızlıdır: Avrupa profil silindir montajı yazımızda anlatıldığı gibi, kilit gövdesinin ön plakasından geçen tek bir sabitleme vidası çıkarılır, kam hizaya çevrilir ve silindir kayarak dışarı çıkar. Gereken, doğru boylarda pimlenmiş yedek silindirlerden oluşan bir stoktur; böylece değişim bir siparişi beklemez. Hangi yöntem seçilirse seçilsin, her binada, o binanın aralığındaki kullanılmamış değişim anahtarlarına göre pimlenmiş birkaç yedek silindir ya da göbek bulundurun.",
+      "## Çöken kısım anahtar kontrolüdür",
+      "Bu büyüklükteki sistemler nadiren şema yanlış olduğu için çöker. Hangi anahtarın kimde olduğunu kimse söyleyemediği için çökerler. Bunu önleyen rutin basittir ve sistem teslim edilmeden önce yazıya dökülmelidir:",
+      "- Her anahtara sembolü ve bir seri numarası damgalanır ve anahtar imza karşılığında zimmetlenir.\n- Değişim anahtarı seviyesinin üstündeki anahtarlar kişiye göre değil göreve göre verilir ve görev değiştiğinde geri alınır.\n- Ayrılanlar hafızaya göre değil, zimmet kaydına göre kontrol edilir.\n- Kaybolan bir anahtar, açtığı her kapının yeniden anahtarlanmasını başlatır ve anahtarlama çizelgesi bu işin büyüklüğünü önceden gösterir.\n- Kopyalama, bir anahtarcının dikkate almak zorunda olmadığı \"kopyalanmaz\" damgasıyla değil, anahtar yuvasıyla kontrol edilir.",
+      "Bu rutinin arkasındaki belgeler, kapı başına bir satır içeren anahtarlama çizelgesi ve her anahtarın nasıl kesildiğini gösteren diş kodu listesidir. Çizelge tesis biriminde durabilir. Diş kodu listesi duramaz: onu elinde tutan herkes sistemdeki her anahtarı kesebilir; bu yüzden çevrimdışı ve çok az kişinin elinde saklanır. Anahtarlama çizelgesi yazmak ve her diş kodunun neden benzersiz olması gerektiği üzerine notlarımız iki belgeyi de ele alıyor.",
+      "## Büyüme: henüz var olmayan binalar için yer bırakın",
+      "Bir kampüse zamanla yeni binalar eklenir. Bu binalar için yer, sistem ilk kez kurgulanırken ayrılmalıdır: gelecekteki binalar için kullanılmamış GMK pozisyonları ve anahtar yuvası ailesinde kullanılmamış alt kesitler. Tam olarak bugün var olan 40 bina için kurgulanmış bir sistem 41. binada tükenir ve o noktadaki çözüm, özgün şemada hiç yer almamış bir binayı yeniden anahtarlamaktır. Hiyerarşi rehberi, genişleme payının tasarıma nasıl katıldığını ve neden sonradan eklenemeyeceğini anlatıyor.",
+      "## Silindir siparişi neye benzer",
+      "Bir silindir tedarikçisi için kampüs tek bir sipariş değil, hepsi aynı platform üzerinde, bina bina gelen bir sipariş dizisidir. İlkinden önce netleşmesi gerekenler:",
+      "- Silindir profili ve anahtar yuvası ailesi; her binada aynı.\n- Kapı kalınlığına ve her iki yüzdeki donanıma göre, kapı kapı boylar ve bölünmeler. Bir kampüste birkaç farklı boy kullanılır ve silindirlerimizde boy, model numarasının baştaki sayısıdır: 60 CPDK, 60mm'lik çift taraflı bir silindirdir.\n- Kaplama; yedek bir silindirin komşularıyla uyuşması için bir bina boyunca tutarlı.\n- Anahtarlama çizelgesinden anahtar sembolü başına miktarlar, artı pimlenmiş yedekler.\n- Sistemin ve diş kodu listesinin kimde olduğu; herhangi bir şey pimlenmeden önce ve yazılı olarak.",
+      "Silindir serisini, boyları, bölünmeleri, kaplamaları, miktarları ve anahtar kontrolü konusunda taahhüt edileni sipariş bazında ve yazılı olarak teyit ediyoruz. Hiyerarşinin kendisi sistemin sahibi tarafından tasarlanır; bu genellikle bir çilingir, bir güvenlik danışmanı ya da platformun üreticisidir, çünkü hiyerarşi platformun kendi masterlama kurallarına ve bizim taraf olmadığımız bir organizasyon şemasına bağlıdır. Kapı sayısını, bina listesini ve kapı listesini gönderin; Avrupa profil silindirlerimizden hangisinin hangi kapıya uyduğunu söyleriz."
+    ],
+    "faq": [
+      {
+        "question": "Bir kampüs master anahtar sistemi kaç seviyeye ihtiyaç duyar?",
+        "answer": "Genellikle dört ya da beş: kampüs için bir great grand master, bina ya da bölge başına bir grand master, departmanlar ya da katlar için masterlar, gereken yerlerde hizmet birimleri için alt masterlar ve odalar için değişim anahtarları. Bundan fazla seviye, kontrol eklemeden kombinasyon havuzundan harcar."
+      },
+      {
+        "question": "GGMK nedir?",
+        "answer": "Great grand master anahtar; sistemin en üst seviyesidir ve sistemdeki her mekanik kilidi açar. Bir kampüste normalde mühürlü bir acil durum setinde saklanır ve çok az kişinin elindedir, çünkü onu kaybetmek tüm kampüsü yeniden anahtarlamak demektir."
+      },
+      {
+        "question": "Master anahtar sisteminde anahtar yuvası ailesi nedir?",
+        "answer": "Tek bir master kesit üzerine kurulmuş, birbiriyle ilişkili anahtar yuvalarından oluşan bir settir. Bir binanın alt kesitinde kesilmiş anahtarlar diğer binaların silindirlerine giremez; master kesitte kesilmiş üst seviye anahtarlar ise hepsine girer. Böylece binalar yalnızca diş koduyla değil, anahtar yuvasıyla da birbirinden ayrılır."
+      },
+      {
+        "question": "Üniversiteler neden değiştirilebilir göbek kullanır?",
+        "answer": "Çünkü bir kampüs sürekli yeniden anahtarlama yapar. Değiştirilebilir göbek bir kontrol anahtarıyla çıkarılır ve saniyeler içinde yenisiyle değiştirilir; kilit kapının üzerinde kalır. Avrupa profil sistemler aynı sonuca silindirin tamamını değiştirerek ulaşır; pimlenmiş yedekler sahada tutulduğunda bu da hızlıdır."
+      },
+      {
+        "question": "Dış kapılar master anahtar sistemine dahil edilmeli mi?",
+        "answer": "Girişler zaten kartlı geçişle kontrol ediliyorsa, bu kapılarda mekanik silindir genellikle yalnızca bir baypas olarak kalır ve üst seviyelere göre anahtarlanır. Bu, en yoğun kapıları değişim anahtarı seviyesinden çıkarır ve kaybolan bir oda anahtarı artık bir binayı açmaz."
+      }
+    ],
+    "sourceHash": {
+      "title": "68837280b667",
+      "summary": "0282dc7499d8",
+      "seoTitle": "f02cef17aa7c",
+      "seoDescription": "1a4f6939ab06",
+      "body": "65029da24edb",
+      "faq": "872f8ea29366"
     }
   },
   "mortise-lock-backset-and-centre-distance-guide": {
