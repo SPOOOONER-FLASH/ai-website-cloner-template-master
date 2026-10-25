@@ -692,7 +692,7 @@
   },
   "cycle-testing-durability-grades-2026": {
     "title": "200 000 cycles : ce que signifie un chiffre d'endurance selon l'EN 1906 et selon l'ANSI/BHMA, et pourquoi ce n'est pas le même chiffre",
-    "summary": "Nous publions 200 000 cycles sur 132 modèles. Selon l'EN 1906, c'est la catégorie d'endurance la plus élevée. Selon l'ANSI/BHMA A156.2, c'est le grade d'entrée. Les deux affirmations sont vraies, et un cahier des charges qui lit l'une comme l'autre achètera trop ou trop peu. Cette page explique ce qu'est réellement un essai d'endurance, ce qu'exige chaque échelle, et où se situe notre propre chiffre sur l'une et l'autre.",
+    "summary": "Nous publions 200 000 cycles sur 132 modèles. Selon l'EN 1906, c'est la catégorie d'endurance la plus élevée. Selon l'ANSI/BHMA A156.2, c'est le grade d'entrée. Les deux affirmations sont vraies, et un cahier des charges qui lit l'une comme l'autre achètera trop ou trop peu. Cette page explique ce qu'est réellement un essai d'endurance, ce qu'exige chaque échelle, ce que « grade institutionnel » veut dire sur chacune, et où se situe notre propre chiffre sur l'une et l'autre.",
     "seoTitle": "Endurance en cycles : EN 1906 ou ANSI/BHMA",
     "seoDescription": "200 000 cycles : catégorie 7 de l'EN 1906, la plus haute en endurance, mais seulement Grade 3 en ANSI/BHMA A156.2, où le Grade 1 exige 1 000 000 de cycles.",
     "body": [
@@ -715,6 +715,11 @@
       "## Où se situe notre chiffre, dans les deux lectures",
       "Notre chiffre de 200 000 cycles figure sur 132 fiches de notre catalogue, dont 85 sur des pages produits publiées. Lu selon l'EN 1906, il correspond à la catégorie d'endurance la plus élevée. Lu selon l'ANSI/BHMA A156.2, il correspond à l'exigence de cycles du Grade 3.",
       "Nous publions les deux lectures, car n'en publier qu'une reviendrait à choisir la moitié flatteuse. Un prescripteur qui rédige selon une norme européenne et un prescripteur qui rédige selon une norme américaine ont tous deux le droit de situer correctement ce chiffre, et une seule de ces deux lectures nous avantage.",
+      "## Ce que « grade institutionnel » veut dire pour un essai d'endurance",
+      "« Grade institutionnel » (institutional grade) apparaît dans des cahiers des charges d'écoles, d'hôpitaux, d'universités et de bâtiments publics, et aucune des deux normes de cette page ne le définit. L'ANSI/BHMA classe un produit en Grade 1, 2 ou 3 ; l'EN 1906 le classe position par position. Une exigence qui ne nomme aucune norme ne nomme aucun essai, et la première réponse est donc une question : quelle norme, et quel grade, le rédacteur veut-il dire ?",
+      "Dans les cahiers des charges nord-américains, l'expression se lit normalement comme le Grade 1 ANSI/BHMA. Pour une serrure tubulaire selon l'A156.2, cela fait 1 000 000 de cycles, cinq fois le chiffre que nous publions, et les serrures à mortaiser selon l'A156.13 fixent le Grade 1 au même 1 000 000. « Institution » est aussi le nom d'une fonction de serrure dans les tableaux de quincaillerie nord-américains : les deux béquilles toujours fixes, le pêne demi-tour rentré uniquement par la clé, d'un côté comme de l'autre. Une fonction décrit ce que fait une serrure, pas combien de temps elle dure.",
+      "Sur l'échelle européenne, la question que pose l'expression se trouve surtout dans une autre position du code. L'endurance plafonne à la catégorie 7, les 200 000 cycles vus plus haut. La fréquence d'usage d'une porte, et le peu de soin qu'on y apportera, relèvent de la position catégorie d'utilisation : la catégorie d'utilisation 3 couvre un usage fréquent par le public, peu incité à faire attention et avec un risque élevé de mauvais usage ; la catégorie d'utilisation 4 couvre les portes soumises à un usage violent fréquent. Une béquille pour un couloir d'école se choisit sur les deux positions, pas sur le seul nombre de cycles.",
+      "C'est pourquoi cette page ne qualifie aucun de nos chiffres de grade institutionnel. Aucune de nos fiches produits n'indique un grade ANSI/BHMA ou une catégorie d'utilisation EN 1906 ; là où une fiche porte un chiffre d'endurance, c'est un nombre de cycles, et la dernière section de cette page dit jusqu'où ce nombre peut servir. Quand un cahier des charges demande un grade institutionnel, joignez-le à la demande et demandez quel rapport d'essai couvre le modèle proposé avant que ce modèle n'entre dans un dossier de soumission.",
       "## Ce que le nombre de cycles ne couvre pas",
       "La corrosion. Un essai d'endurance se déroule en laboratoire, pas en air salin. La résistance à la corrosion fait l'objet d'une classification distincte selon l'EN 1670 et d'une partie distincte de la série ANSI/BHMA, et un nombre de cycles élevé sur une finition qui lâche en deux hivers côtiers donne un produit qui cesse de fonctionner pour une raison que l'essai d'endurance n'a jamais examinée.",
       "La sécurité des biens. L'essai d'endurance mesure l'usure en fonctionnement normal, pas la résistance à l'effraction. Cela relève de l'EN 1303 pour les cylindres, et d'un tout autre essai.",
@@ -737,6 +742,10 @@
         "answer": "Pour les serrures tubulaires selon l'A156.2 : 1 000 000 de cycles pour le Grade 1, 400 000 pour le Grade 2, 200 000 pour le Grade 3. Les serrures à mortaiser selon l'A156.13 fixent le Grade 1 à 1 000 000. Le grade couvre plus que les cycles, mais le nombre de cycles est le chiffre le plus souvent cité."
       },
       {
+        "question": "Existe-t-il un essai d'endurance « grade institutionnel » ?",
+        "answer": "Aucune norme ne définit un tel essai. Dans les cahiers des charges nord-américains, l'expression se lit normalement comme le Grade 1 ANSI/BHMA, soit 1 000 000 de cycles pour les serrures tubulaires selon l'A156.2. Selon l'EN 1906, la question la plus proche est la catégorie d'utilisation : la catégorie 3 couvre un usage public fréquent, la catégorie 4 les portes soumises à un usage violent fréquent ; l'endurance plafonne à la catégorie 7, soit 200 000 cycles. Demandez quelle norme et quel grade le cahier des charges veut dire."
+      },
+      {
         "question": "Pourquoi les chiffres de cycles européens et américains diffèrent-ils autant ?",
         "answer": "Ils classent des choses différentes. L'ANSI/BHMA classe une serrure complète pour une baie tertiaire censée survivre à plusieurs occupants successifs. L'EN 1906 classe l'ensemble de béquilles comme garniture d'une porte dont le coffre de serrure fait l'objet d'une classification distincte : l'endurance exigée de la béquille n'est donc pas celle exigée de la serrure."
       },
@@ -751,11 +760,11 @@
     ],
     "sourceHash": {
       "title": "02121f32bf17",
-      "summary": "c052dc39cc77",
+      "summary": "62d97314bec7",
       "seoTitle": "2829afb6472a",
       "seoDescription": "7c7e3afa5335",
-      "body": "93b842761298",
-      "faq": "b42c916771b4"
+      "body": "c67d98cd6f82",
+      "faq": "fddad95b26f4"
     }
   },
   "cylindrical-and-tubular-lock-comparison-2026": {

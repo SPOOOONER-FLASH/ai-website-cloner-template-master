@@ -692,7 +692,7 @@
   },
   "cycle-testing-durability-grades-2026": {
     "title": "200.000 Çevrim: EN 1906'da ve ANSI/BHMA'da Dayanıklılık Değeri Ne Demektir ve Neden Aynı Sayı Değildir",
-    "summary": "132 modelde 200.000 çevrim yayımlıyoruz. EN 1906'da bu en üst dayanıklılık kategorisidir. ANSI/BHMA A156.2'de ise giriş sınıfıdır. İki ifade de doğrudur ve birini diğeri gibi okuyan bir şartname ya gereğinden fazla ya da gereğinden az satın alır. Bu sayfa bir çevrim testinin gerçekte ne olduğunu, her ölçeğin ne istediğini ve kendi değerimizin ikisinde de nerede durduğunu anlatıyor.",
+    "summary": "132 modelde 200.000 çevrim yayımlıyoruz. EN 1906'da bu en üst dayanıklılık kategorisidir. ANSI/BHMA A156.2'de ise giriş sınıfıdır. İki ifade de doğrudur ve birini diğeri gibi okuyan bir şartname ya gereğinden fazla ya da gereğinden az satın alır. Bu sayfa bir çevrim testinin gerçekte ne olduğunu, her ölçeğin ne istediğini, \"institutional grade\" ifadesinin her birinde ne anlama geldiğini ve kendi değerimizin ikisinde de nerede durduğunu anlatıyor.",
     "seoTitle": "Çevrim Testi 2026: EN 1906 ve ANSI/BHMA Sınıfları",
     "seoDescription": "200.000 çevrim, EN 1906'da en üst dayanıklılık sınıfı olan kategori 7'dir; ANSI/BHMA A156.2'de yalnızca Grade 3, Grade 1 için 1.000.000 çevrim gerekir.",
     "body": [
@@ -715,6 +715,11 @@
       "## Değerimiz nerede durur, iki şekilde de",
       "200.000 çevrim değerimiz kataloğumuzdaki 132 kayıtta görünür; bunların 85'i yayımlanmış ürün sayfalarındadır. EN 1906'ya göre okunduğunda en üst dayanıklılık kategorisine karşılık gelir. ANSI/BHMA A156.2'ye göre okunduğunda Grade 3 çevrim gerekliliğine karşılık gelir.",
       "İki okumayı da yayımlıyoruz; çünkü yalnızca birini yayımlamak, işimize gelen yarıyı seçmek olurdu. Bir Avrupa standardına göre yazan bir şartname yazarı da bir Amerikan standardına göre yazan da sayıyı doğru yere koymaya hakkı vardır ve bu iki okumadan yalnızca biri bizim işimize yarar.",
+      "## \"Institutional grade\" bir dayanıklılık testi için ne anlama gelir",
+      "\"Institutional grade\" (kurumsal sınıf) okul, hastane, üniversite ve kamu binası şartnamelerinde geçer ve bu sayfadaki iki standarttan hiçbiri onu tanımlamaz. ANSI/BHMA bir ürünü Grade 1, 2 ya da 3 olarak sınıflandırır; EN 1906 ise pozisyon pozisyon sınıflandırır. Standart adı vermeyen bir gereklilik test adı da vermez; bu yüzden ona ilk cevap bir sorudur: yazan kişi hangi standardı ve hangi sınıfı kastediyor?",
+      "Kuzey Amerika şartnamelerinde bu ifade normalde ANSI/BHMA Grade 1 olarak okunur. A156.2 kapsamındaki delme tip bir kilit için bu 1.000.000 çevrimdir, yani yayımladığımız değerin beş katı; A156.13 kapsamındaki gömme kilitler de Grade 1'i aynı 1.000.000'da belirler. \"Institution\" ayrıca Kuzey Amerika donanım listelerinde bir kilit fonksiyonunun adıdır: iki kol da her zaman sabittir, dil her iki taraftan yalnızca anahtarla geri çekilir. Bir fonksiyon kilidin ne yaptığını anlatır, ne kadar dayandığını değil.",
+      "Avrupa ölçeğinde bu ifadenin sorduğu soru çoğunlukla kodun başka bir pozisyonundadır. Dayanıklılık en fazla kategori 7'ye, yani yukarıdaki 200.000 çevrime çıkar. Bir kapının ne sıklıkta ve ne kadar özensiz kullanılacağını kullanım kategorisi pozisyonu anlatır: kullanım kategorisi 3, özen göstermek için pek nedeni olmayan ve kötü kullanım olasılığı yüksek olan kamunun yüksek sıklıklı kullanımını; kullanım kategorisi 4 ise sık sık şiddetli kullanıma maruz kalan kapıları kapsar. Bir okul koridorunun kolu yalnızca çevrim sayısına göre değil, iki pozisyona göre seçilir.",
+      "Bu yüzden bu sayfa değerlerimizin hiçbirine institutional grade demez. Ürün kayıtlarımızın hiçbiri bir ANSI/BHMA sınıfı ya da bir EN 1906 kullanım kategorisi belirtmez; bir kayıt dayanıklılık değeri taşıyorsa bu bir çevrim sayısıdır ve bu sayıya ne kadar dayanılabileceğini bu sayfanın son bölümü anlatır. Bir şartname institutional grade istiyorsa, şartnameyi talebinizle birlikte gönderin ve teklif edilen modeli bir onay dosyasına koymadan önce hangi test raporunun o modeli kapsadığını sorun.",
       "## Çevrim sayısının kapsamadıkları",
       "Korozyon. Çevrim testi tuzlu havada değil laboratuvarda yapılır. Korozyon direnci EN 1670 kapsamında ayrı bir sınıflandırma ve ANSI/BHMA setinin ayrı bir parçasıdır; iki kıyı kışında bozulan bir kaplama üzerindeki yüksek bir çevrim sayısı, çevrim testinin hiç bakmadığı bir nedenle çalışmayı bırakan bir üründür.",
       "Güvenlik. Çevrim testi saldırıya direnci değil, normal kullanımdaki aşınmayı ölçer. Silindirler için bu EN 1303'ün alanıdır ve tamamen farklı bir testtir.",
@@ -737,6 +742,10 @@
         "answer": "A156.2 kapsamındaki delme tip kilitlerde: Grade 1 için 1.000.000, Grade 2 için 400.000, Grade 3 için 200.000 çevrim. A156.13 kapsamındaki gömme kilitler Grade 1'i 1.000.000'da belirler. Sınıf çevrimden fazlasını kapsar, ama ondan en sık aktarılan değer çevrim sayısıdır."
       },
       {
+        "question": "\"Institutional grade\" diye bir dayanıklılık testi var mı?",
+        "answer": "Hiçbir standart böyle bir test tanımlamaz. Kuzey Amerika şartnamelerinde bu ifade normalde ANSI/BHMA Grade 1 olarak okunur; bu, A156.2 kapsamındaki delme tip kilitler için 1.000.000 çevrim demektir. EN 1906'da daha yakın soru kullanım kategorisidir: kullanım kategorisi 3 kamunun yüksek sıklıklı kullanımını, kullanım kategorisi 4 sık sık şiddetli kullanıma maruz kalan kapıları kapsar; dayanıklılık en fazla kategori 7'ye, yani 200.000 çevrime çıkar. Şartnamenin hangi standardı ve hangi sınıfı kastettiğini sorun."
+      },
+      {
         "question": "Avrupa ve Amerikan çevrim sayıları neden bu kadar farklı?",
         "answer": "Farklı şeyleri sınıflandırırlar. ANSI/BHMA, birkaç kiracıdan uzun ömürlü olması beklenen ticari bir açıklık için eksiksiz bir kilit takımını sınıflandırır. EN 1906 ise kol takımını, kilit gövdesi ayrıca sınıflandırılan bir kapıdaki aksesuar olarak sınıflandırır; dolayısıyla koldan istenen dayanıklılık kilitten istenen dayanıklılık değildir."
       },
@@ -751,11 +760,11 @@
     ],
     "sourceHash": {
       "title": "02121f32bf17",
-      "summary": "c052dc39cc77",
+      "summary": "62d97314bec7",
       "seoTitle": "2829afb6472a",
       "seoDescription": "7c7e3afa5335",
-      "body": "93b842761298",
-      "faq": "b42c916771b4"
+      "body": "c67d98cd6f82",
+      "faq": "fddad95b26f4"
     }
   },
   "cylindrical-and-tubular-lock-comparison-2026": {

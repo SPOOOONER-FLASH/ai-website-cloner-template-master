@@ -55,7 +55,7 @@ Data came from the API pull, `docs/research/analytics/2026-10-25/raw/api/`, plus
 ## Terminology conflicts the translators found (not fixed here; one pass each)
 
 - **fr.** GGMK is « grand passe général » in news and « Passe grand général » in guide/ui. Keying schedule is « plan de combinaison » in one place and « tableau d'organigramme » in another. « contrôle des clés » is used in the bitting article where the guides say « maîtrise des clés ».
-- **de.** The guide's level names are shifted one level against the news: guide GMK = Generalschlüssel and MK = Hauptschlüssel; news GMK = Hauptschlüssel. So "Hauptschlüssel" means two different levels. The fix is to align the guide to the news, which uses the common Generalhauptschlüssel → Hauptschlüssel → Gruppenschlüssel → Untergruppenschlüssel.
+- **de.** The guide's level names are shifted one level against the news: guide GMK = Generalschlüssel and MK = Hauptschlüssel; news GMK = Hauptschlüssel. So "Hauptschlüssel" means two different levels. The fix is to align the guide to the news, which uses the common Generalhauptschlüssel → Hauptschlüssel → Gruppenschlüssel → Untergruppenschlüssel. **Done the same day:** see `2026-10-25-claude-data-driven-week2-stage2.md`.
 - **ar.** In the levels article المفتاح الرئيسي الأعلى is GMK; in the guide it is GGMK. The schedule and bitting articles call the change key المفتاح الفرعي, which collides with SMK.
 - **ru.** The levels article summary says «генеральный мастер-ключ» while its body says «главный гранд-мастер-ключ».
 - **es/pt.** The hierarchy guide uses calques «gran gran maestra» / «grande grande mestra», and its pt contains European Portuguese («serralheiro»).

@@ -219,6 +219,13 @@ claim(GUIDE("cycle-testing-durability-grades-2026"), () => {
   const c = hyde.filter((p) => /200,000/.test(spec(p, "Cycle life") ?? ""));
   return `appears on ${c.length} records in our catalog, ${c.filter((p) => p.heroImage?.src).length} of them on published product pages`;
 });
+// Its "institutional grade" section (2026-10-25) rests on no record stating a grade or classification.
+claim(GUIDE("cycle-testing-durability-grades-2026"), () => {
+  const stated = (p: Record) => { const r = p as Record & { name?: string; summary?: string; description?: unknown; features?: unknown; certifications?: unknown }; return JSON.stringify([r.name, r.summary, r.description, r.specs, r.features, r.certifications]); };
+  const graded = hyde.filter((p) => /\bANSI\b|\bBHMA\b|\bGrade [123]\b|EN ?1906|category of use/i.test(stated(p)));
+  assert.deepEqual(graded.map((p) => p.slug), [], "these records now state an ANSI/BHMA grade or an EN 1906 classification: rewrite the guide's institutional-grade section");
+  return "None of our product records states an ANSI/BHMA grade or an EN 1906 category of use";
+});
 claim(GUIDE("dimensional-interchangeability-2026"), () => {
   const lockCats = new Set(["knob-locks", "lock-cases", "lock-cylinders", "deadbolts", "night-latches-rim-locks", "sliding-hook-locks"]);
   const locks = hyde.filter((p) => lockCats.has(top(p)) || /\b(lock|latch|cylinder|deadbolt)\b/i.test((p as { name?: string }).name ?? ""));

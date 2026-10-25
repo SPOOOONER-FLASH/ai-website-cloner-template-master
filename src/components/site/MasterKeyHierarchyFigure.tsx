@@ -82,21 +82,21 @@ const LABELS: Partial<Record<Locale, Labels>> = {
   de: {
     title: "Beispiel einer Schließanlagen-Hierarchie",
     caption:
-      "Ein Beispiel mit drei Ebenen: ein Generalschlüssel, zwei Hauptschlüssel je Etage und die Einzelschlüssel darunter, mit den drei Entscheidungen, die dieser Artikel in die Planung legt: eine Tür mit Überschneidung, eine Tür außerhalb jedes Hauptschlüssels und eine für Erweiterungen reservierte Gruppe. Nur zur Veranschaulichung; eine echte Hierarchie wird auf der Plattform geplant, auf der sie geschnitten wird.",
-    ggmk: ["Obergeneralschlüssel (GGMK)", "nur bei mehreren Anlagen; oft nicht ausgegeben"],
-    gmk: ["Generalschlüssel (GMK)", "schließt jede Tür dieser Anlage"],
-    mk: (n) => [`Hauptschlüssel (MK) · Etage ${n}`, `schließt jede Tür auf Etage ${n}`],
+      "Ein Beispiel mit drei Ebenen: ein Hauptschlüssel, zwei Gruppenschlüssel je Etage und die Einzelschlüssel darunter, mit den drei Entscheidungen, die dieser Artikel in die Planung legt: eine Tür mit Überschneidung, eine Tür, die kein übergeordneter Schlüssel öffnet, und eine für Erweiterungen reservierte Gruppe. Nur zur Veranschaulichung; eine echte Hierarchie wird auf der Plattform geplant, auf der sie geschnitten wird.",
+    ggmk: ["Generalhauptschlüssel (GGMK)", "nur bei mehreren Anlagen; oft nicht ausgegeben"],
+    gmk: ["Hauptschlüssel (GMK)", "schließt jede Tür dieser Anlage"],
+    mk: (n) => [`Gruppenschlüssel (MK) · Etage ${n}`, `schließt jede Tür auf Etage ${n}`],
     reserved: ["Reservierte Gruppe", "für Erweiterung nicht ausgegeben"],
     door: "Einzelschlüssel",
     cross: ["Besprechungsraum", "Überschneidung"],
-    noMaster: ["Serverraum", "auf keinem Hauptschlüssel"],
-    legend: ["Im Hauptschlüssel", "Überschneidung", "Reserviert oder optional"],
+    noMaster: ["Serverraum", "kein übergeordneter Schlüssel"],
+    legend: ["Eingebunden", "Überschneidung", "Reserviert oder optional"],
   },
   ja: {
     title: "マスターキー階層の例",
     caption:
       "3段階のシステムの例です。グランドマスター1本、各階のマスター2本、その下の個別キーに加えて、この記事が設計段階で決めるべきとする3点を示しています。相互キーの扉1枚、どのマスターにも入れない扉1枚、増設用に残すグループ1つです。図は説明用で、実際の階層は切削するプラットフォーム上で設計します。",
-    ggmk: ["グランドグランドマスター（GGMK）", "複数システム向け・発行しないことも多い"],
+    ggmk: ["グレートグランドマスター（GGMK）", "複数システム向け・発行しないことも多い"],
     gmk: ["グランドマスター（GMK）", "このシステムの全扉を開ける"],
     mk: (n) => [`マスター（MK）・${n}階`, `${n}階の全扉を開ける`],
     reserved: ["予備グループ", "増設用に未発行"],
@@ -109,7 +109,7 @@ const LABELS: Partial<Record<Locale, Labels>> = {
     title: "마스터키 계층 예시",
     caption:
       "3단계 시스템의 예입니다. 그랜드 마스터 1개, 층별 마스터 2개, 그 아래 개별 키와 함께, 이 글이 설계 단계에서 정해야 한다고 말하는 세 가지를 보여 줍니다. 크로스 키잉 문 1개, 어떤 마스터에도 넣지 않는 문 1개, 확장용으로 남겨 둔 그룹 1개입니다. 설명용 도식이며, 실제 계층은 가공할 플랫폼에서 설계합니다.",
-    ggmk: ["그랜드 그랜드 마스터(GGMK)", "여러 시스템용, 발급하지 않는 경우가 많음"],
+    ggmk: ["그레이트 그랜드 마스터(GGMK)", "여러 시스템용, 발급하지 않는 경우가 많음"],
     gmk: ["그랜드 마스터(GMK)", "이 시스템의 모든 문을 엶"],
     mk: (n) => [`마스터(MK) · ${n}층`, `${n}층의 모든 문을 엶`],
     reserved: ["예비 그룹", "확장용으로 미발급"],
@@ -135,7 +135,7 @@ const LABELS: Partial<Record<Locale, Labels>> = {
     title: "Пример иерархии мастер-ключей",
     caption:
       "Пример системы из трёх уровней: гранд-мастер, два поэтажных мастера и индивидуальные ключи под ними, а также три решения, которые, по этой статье, принимаются на этапе проектирования: одна дверь с перекрёстным ключом, одна дверь вне любого мастера и одна группа, оставленная под расширение. Схема иллюстративная; настоящая иерархия проектируется на той платформе, на которой будут нарезаться ключи.",
-    ggmk: ["Гранд-гранд-мастер (GGMK)", "только для нескольких систем; часто не выдаётся"],
+    ggmk: ["Главный гранд-мастер-ключ (GGMK)", "только для нескольких систем; часто не выдаётся"],
     gmk: ["Гранд-мастер (GMK)", "открывает все двери системы"],
     mk: (n) => [`Мастер (MK) · Этаж ${n}`, `открывает все двери этажа ${n}`],
     reserved: ["Резервная группа", "не выдана, под расширение"],

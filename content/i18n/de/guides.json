@@ -692,7 +692,7 @@
   },
   "cycle-testing-durability-grades-2026": {
     "title": "200.000 Zyklen: Was eine Dauerfunktionsangabe nach EN 1906 und nach ANSI/BHMA bedeutet – und warum es nicht dieselbe Zahl ist",
-    "summary": "Wir veröffentlichen 200.000 Zyklen bei 132 Modellen. Nach EN 1906 ist das die höchste Dauerfunktionsklasse. Nach ANSI/BHMA A156.2 ist es der Einstiegsgrad. Beide Aussagen stimmen, und eine Spezifikation, die die eine als die andere liest, kauft entweder zu viel oder zu wenig. Diese Seite erklärt, was eine Zyklusprüfung tatsächlich ist, was jede Skala verlangt und wo unsere eigene Zahl auf beiden steht.",
+    "summary": "Wir veröffentlichen 200.000 Zyklen bei 132 Modellen. Nach EN 1906 ist das die höchste Dauerfunktionsklasse. Nach ANSI/BHMA A156.2 ist es der Einstiegsgrad. Beide Aussagen stimmen, und eine Spezifikation, die die eine als die andere liest, kauft entweder zu viel oder zu wenig. Diese Seite erklärt, was eine Zyklusprüfung tatsächlich ist, was jede Skala verlangt, was „Institutional Grade“ auf jeder bedeutet und wo unsere eigene Zahl auf beiden steht.",
     "seoTitle": "Zyklusprüfung: EN 1906 vs. ANSI/BHMA | Canton Hyland",
     "seoDescription": "200.000 Zyklen sind nach EN 1906 Klasse 7, die höchste Dauerfunktionsklasse, nach ANSI/BHMA A156.2 aber nur Grade 3; Grade 1 verlangt 1.000.000 Zyklen.",
     "body": [
@@ -715,6 +715,11 @@
       "## Wo unsere Zahl steht, in beide Richtungen gesagt",
       "Unsere Angabe von 200.000 Zyklen steht bei 132 Datensätzen in unserem Katalog, 85 davon auf veröffentlichten Produktseiten. Gemessen an EN 1906 entspricht sie der höchsten Dauerfunktionsklasse. Gemessen an ANSI/BHMA A156.2 entspricht sie der Zyklusanforderung für Grade 3.",
       "Wir veröffentlichen beide Lesarten, weil die Veröffentlichung nur einer hieße, die schmeichelhafte Hälfte auszuwählen. Ein Planer, der nach einer europäischen Norm ausschreibt, und einer, der nach einer amerikanischen ausschreibt, haben beide Anspruch darauf, die Zahl richtig einzuordnen – und nur eine der beiden Lesarten hilft uns.",
+      "## Was „Institutional Grade“ für eine Zyklusprüfung bedeutet",
+      "„Institutional Grade“ steht in Ausschreibungen für Schulen, Krankenhäuser, Universitäten und öffentliche Gebäude, und keine der beiden Normen auf dieser Seite definiert den Begriff. ANSI/BHMA stuft ein Produkt als Grade 1, 2 oder 3 ein; EN 1906 klassifiziert es Stelle für Stelle. Eine Anforderung, die keine Norm nennt, nennt keine Prüfung; die erste Antwort darauf ist deshalb eine Frage: Welche Norm und welchen Grad meint der Verfasser?",
+      "In nordamerikanischen Ausschreibungen wird der Ausdruck normalerweise als ANSI/BHMA Grade 1 gelesen. Für ein Bohrschloss nach A156.2 sind das 1.000.000 Zyklen, das Fünffache der Zahl, die wir veröffentlichen, und Einsteckschlösser nach A156.13 setzen Grade 1 bei denselben 1.000.000 an. „Institution“ ist auf nordamerikanischen Türlisten außerdem der Name einer Schlossfunktion: beide Drücker stets fest, die Falle nur per Schlüssel von beiden Seiten zurückgezogen. Eine Funktion beschreibt, was ein Schloss tut, nicht, wie lange es hält.",
+      "Auf der europäischen Skala liegt die Frage, die der Ausdruck stellt, vor allem an einer anderen Stelle des Klassifizierungsschlüssels. Die Dauerfunktion endet bei Klasse 7, den 200.000 Zyklen von oben. Wie oft und wie sorglos eine Tür benutzt wird, beschreibt die Stelle Nutzungskategorie: Kategorie 3 gilt für häufige Nutzung durch die Öffentlichkeit, mit wenig Anreiz zur Sorgfalt und hoher Wahrscheinlichkeit von Fehlgebrauch; Kategorie 4 für Türen, die häufig gewaltsam benutzt werden. Ein Drücker für einen Schulflur wird nach beiden Stellen ausgewählt, nicht nach der Zykluszahl allein.",
+      "Deshalb nennt diese Seite keine unserer Angaben „Institutional Grade“. Keiner unserer Produktdatensätze nennt einen ANSI/BHMA-Grad oder eine Nutzungskategorie nach EN 1906; wo ein Datensatz eine Dauerfunktionsangabe trägt, ist es eine Zykluszahl, und der letzte Abschnitt dieser Seite sagt, wie weit diese Zahl trägt. Verlangt eine Ausschreibung Institutional Grade, schicken Sie sie mit der Anfrage und fragen Sie, welcher Prüfbericht das angebotene Modell abdeckt, bevor dieses Modell in Freigabeunterlagen eingeht.",
       "## Was die Zykluszahl nicht abdeckt",
       "Korrosion. Eine Zyklusprüfung läuft im Labor, nicht in salzhaltiger Luft. Die Korrosionsbeständigkeit ist eine eigene Klassifizierung nach EN 1670 und ein eigener Teil der ANSI/BHMA-Normenreihe. Eine hohe Zykluszahl bei einer Oberfläche, die nach zwei Wintern an der Küste versagt, ergibt ein Produkt, das aus einem Grund ausfällt, den die Zyklusprüfung nie betrachtet hat.",
       "Einbruchhemmung. Die Zyklusprüfung misst Verschleiß im Normalbetrieb, nicht den Widerstand gegen einen Angriff. Das ist bei Zylindern das Gebiet der EN 1303 und eine ganz andere Prüfung.",
@@ -737,6 +742,10 @@
         "answer": "Für Bohrschlösser nach A156.2: 1.000.000 Zyklen für Grade 1, 400.000 für Grade 2, 200.000 für Grade 3. Einsteckschlösser nach A156.13 setzen Grade 1 bei 1.000.000 an. Der Grad umfasst mehr als Zyklen, doch die Zykluszahl ist der Wert, der am häufigsten daraus zitiert wird."
       },
       {
+        "question": "Gibt es eine Zyklusprüfung für „Institutional Grade“?",
+        "answer": "Keine Norm definiert eine solche Prüfung. In nordamerikanischen Ausschreibungen wird der Ausdruck normalerweise als ANSI/BHMA Grade 1 gelesen, was bei Bohrschlössern nach A156.2 heißt: 1.000.000 Zyklen. Nach EN 1906 ist die nähere Frage die Nutzungskategorie: Kategorie 3 gilt für häufige öffentliche Nutzung, Kategorie 4 für Türen, die häufig gewaltsam benutzt werden; die Dauerfunktion endet bei Klasse 7, 200.000 Zyklen. Fragen Sie, welche Norm und welchen Grad die Ausschreibung meint."
+      },
+      {
         "question": "Warum unterscheiden sich die europäischen und amerikanischen Zykluszahlen so stark?",
         "answer": "Sie stufen Verschiedenes ein. ANSI/BHMA stuft eine vollständige Schlossgarnitur für eine Objekttür ein, die mehrere Mieter überdauern soll. EN 1906 stuft die Drückergarnitur als Beschlag an einer Tür ein, deren Schlosskasten gesondert klassifiziert ist. Die vom Drücker verlangte Dauerfunktion ist also nicht die vom Schloss verlangte."
       },
@@ -751,11 +760,11 @@
     ],
     "sourceHash": {
       "title": "02121f32bf17",
-      "summary": "c052dc39cc77",
+      "summary": "62d97314bec7",
       "seoTitle": "2829afb6472a",
       "seoDescription": "7c7e3afa5335",
-      "body": "93b842761298",
-      "faq": "b42c916771b4"
+      "body": "c67d98cd6f82",
+      "faq": "fddad95b26f4"
     }
   },
   "cylindrical-and-tubular-lock-comparison-2026": {
@@ -2616,31 +2625,31 @@
       "Eine Schließanlage ist ein Stück Architektur. Sie wird einmal entworfen, bevor irgendein Zylinder gefertigt wird, und dann lebt das Gebäude in diesem Entwurf, solange die Zylinder halten.",
       "Fast jede Anlage, die unbrauchbar wird, wird es aus einem von zwei Gründen, und beide sind Entwurfsentscheidungen aus der ersten Woche, keine Fehler, die sich später entwickeln.",
       "## Die Ebenen, von oben nach unten",
-      "| Ebene | Öffnet | Typische Inhaber |\n| --- | --- | --- |\n| Obergeneralschlüssel (GGMK) | Alles in jeder darunterliegenden Anlage | Sehr wenige Personen, im Alltag oft niemand |\n| Generalschlüssel (GMK) | Alles in einer Anlage | Liegenschafts- oder Gebäudemanagement |\n| Hauptschlüssel (MK) | Eine Abteilung, ein Geschoss oder ein Gebäude | Abteilungsleitung, diensthabende Leitung |\n| Gruppenschlüssel (SMK) | Eine Gruppe innerhalb dieser Abteilung | Teamleitung, Reinigungsaufsicht |\n| Einzelschlüssel | Eine Tür oder eine kleine Gruppe | Die Person, die diese Tür nutzt |",
+      "| Ebene | Öffnet | Typische Inhaber |\n| --- | --- | --- |\n| Generalhauptschlüssel (GGMK) | Alles in jeder darunterliegenden Anlage | Sehr wenige Personen, im Alltag oft niemand |\n| Hauptschlüssel (GMK) | Alles in einer Anlage | Liegenschafts- oder Gebäudemanagement |\n| Gruppenschlüssel (MK) | Eine Abteilung, ein Geschoss oder ein Gebäude | Abteilungsleitung, diensthabende Leitung |\n| Untergruppenschlüssel (SMK) | Eine Gruppe innerhalb dieser Abteilung | Teamleitung, Reinigungsaufsicht |\n| Einzelschlüssel | Eine Tür oder eine kleine Gruppe | Die Person, die diese Tür nutzt |",
       "Eine Anlage braucht nicht alle fünf. Die meisten Gebäude brauchen höchstens drei, und die Zahl der Ebenen sollte der Art folgen, wie die Organisation tatsächlich Befugnisse delegiert, nicht der Art, wie der Grundriss gezeichnet ist.",
-      "Diese Unterscheidung ist die erste Entwurfsentscheidung und die, die am häufigsten falsch getroffen wird. Ein zweigeschossiges Büro mit einem Gebäudeverwalter braucht keinen Generalschlüssel; es braucht einen Hauptschlüssel und Einzelschlüssel. Ebenen, die es nicht nutzt, kosten Kapazität, kosten Geld und erzeugen Schlüssel, die jemand verwalten muss.",
+      "Diese Unterscheidung ist die erste Entwurfsentscheidung und die, die am häufigsten falsch getroffen wird. Ein zweigeschossiges Büro mit einem Gebäudeverwalter braucht keinen Hauptschlüssel (GMK); es braucht einen Gruppenschlüssel (MK) und Einzelschlüssel. Ebenen, die es nicht nutzt, kosten Kapazität, kosten Geld und erzeugen Schlüssel, die jemand verwalten muss.",
       "## Warum jede Ebene Kapazität kostet",
       "Das wird selten erklärt und erklärt alles andere.",
       "Ein Schließprofil hat eine begrenzte Zahl nutzbarer Einzelschließungen – verschiedene Schließungen, die einen Zylinder und keinen anderen betätigen. Diesen Vorrat bestimmt die Plattform: die Zahl der Stiftpositionen, die Zahl der verfügbaren Tiefen je Position und die Regeln des Herstellers, welche Kombinationen zulässig sind.",
-      "Hauptschlüsselfähigkeit entsteht, indem ein Zylinder mehr als eine Trennstelle erhält, sodass Einzelschlüssel und Hauptschlüssel ihn betätigen. Jede zusätzliche Trennstelle nimmt andere Schließungen aus dem nutzbaren Vorrat, weil diese den Zylinder nun ebenfalls versehentlich betätigen würden.",
+      "Hauptschlüsselfähigkeit entsteht, indem ein Zylinder mehr als eine Trennstelle erhält, sodass der Einzelschlüssel und die übergeordneten Schlüssel ihn betätigen. Jede zusätzliche Trennstelle nimmt andere Schließungen aus dem nutzbaren Vorrat, weil diese den Zylinder nun ebenfalls versehentlich betätigen würden.",
       "Die Rechnung ist also nicht additiv, sondern subtraktiv. Jede zusätzliche Hauptschlüsselebene und jede Tür, die in mehr als eine Gruppe eingebunden wird, verkleinert die Zahl wirklich eindeutiger Einzelschlüssel, die die Anlage noch ausgeben kann.",
       "Deshalb „geht“ einer Anlage der Platz aus – nicht weil jemand die letzte Nummer einer Liste verbraucht hat, sondern weil die verbleibenden Kombinationen mit bereits ausgegebenen kollidieren würden.",
       "## Die Überschneidung ist die teure Gefälligkeit",
-      "Überschneidung heißt, dass ein Zylinder von Schlüsseln aus mehr als einem Zweig der Hierarchie betätigt wird – der klassische Fall ist ein Besprechungsraum, den der Hauptschlüssel des Vertriebs und der des Marketings öffnen.",
+      "Überschneidung heißt, dass ein Zylinder von Schlüsseln aus mehr als einem Zweig der Hierarchie betätigt wird – der klassische Fall ist ein Besprechungsraum, den der Gruppenschlüssel des Vertriebs und der des Marketings öffnen.",
       "Sie wird als kleine Erleichterung erbeten und genauso gewährt, Tür für Tür. Sie ist weder klein noch einmalig: Jeder Zylinder mit Überschneidung erhält zusätzliche Trennstellen und verbraucht überproportional aus dem Vorrat, und eine Anlage, in der Überschneidungen verstreut sind, ist lange vor ihrer Nennkapazität erschöpft.",
       "Außerdem schwächt sie die Schlüsselkontrolle auf eine Weise, die niemand bemerkt. Ein Zylinder mit vielen Trennstellen lässt sich von mehr Schlüsseln öffnen als beabsichtigt, auch von Schlüsseln, die nie in seiner Nähe funktionieren sollten.",
       "Was das verhindert, ist eine organisatorische und keine technische Disziplin: Anfragen nach Überschneidungen gehen an den Verantwortlichen der Anlage, nicht an den Schlüsseldienst, und werden am Entwurf gemessen statt an der Anfrage. Die meisten lassen sich besser lösen, indem man die Tür in eine andere Gruppe verlegt.",
       "## Die fünf Fragen, aus denen eine Hierarchie entsteht, in dieser Reihenfolge",
       "Wer eine Anlage entwirft, wird sie stellen. Liegen die Antworten bereit, wird aus einem dreiwöchigen Austausch ein einwöchiger.",
-      "Wer muss alles öffnen, und wie viele sind das? Sind es mehr als zwei oder drei Personen, ist meist die Frage falsch – eine große Zahl von Generalschlüsselinhabern ist in der Praxis eine Anlage ohne oberste Ebene, denn ein Schlüssel, den Dutzende tragen, lässt sich nicht zurückholen.",
-      "Welche ist die kleinste Gruppe, für die sich ein Hauptschlüssel lohnt? Ein Hauptschlüssel für vier Türen in der Hand einer Person ist meist schlechter als vier Einzelschlüssel am Ring, denn er verbraucht Kapazität und fügt einen Schlüssel hinzu, der mehr öffnet, als sein Inhaber braucht.",
-      "Welche Türen dürfen nie unter einen Hauptschlüssel fallen? Meist gibt es einige – ein Tresorraum, eine Apotheke, ein Serverraum, ein Büro mit Personalakten. Beim Entwurf ist das leicht gesagt; eine Tür später aus einem Hauptschlüssel herauszunehmen heißt, sie neu mit einem Zylinder auszustatten und jeden Schlüssel neu auszugeben, der sie öffnete.",
+      "Wer muss alles öffnen, und wie viele sind das? Sind es mehr als zwei oder drei Personen, ist meist die Frage falsch – eine große Zahl von Inhabern des Hauptschlüssels (GMK) ist in der Praxis eine Anlage ohne oberste Ebene, denn ein Schlüssel, den Dutzende tragen, lässt sich nicht zurückholen.",
+      "Welche ist die kleinste Gruppe, für die sich ein eigener Gruppenschlüssel lohnt? Ein Gruppenschlüssel für vier Türen in der Hand einer Person ist meist schlechter als vier Einzelschlüssel am Ring, denn er verbraucht Kapazität und fügt einen Schlüssel hinzu, der mehr öffnet, als sein Inhaber braucht.",
+      "Welche Türen dürfen nie von einem übergeordneten Schlüssel geöffnet werden? Meist gibt es einige – ein Tresorraum, eine Apotheke, ein Serverraum, ein Büro mit Personalakten. Beim Entwurf ist das leicht gesagt; eine Tür später aus den übergeordneten Schlüsseln herauszunehmen heißt, sie neu mit einem Zylinder auszustatten und jeden Schlüssel neu auszugeben, der sie öffnete.",
       "Wer bekommt einen Schlüssel zurück, wenn jemand geht? Das ist das Rückgabeverfahren, und seine Existenz macht den Rest des Entwurfs erst sinnvoll. Eine Anlage ohne Rückgabeverfahren verkommt in etwa fünf Jahren zu einem offenen System, gleich auf welchem Profil sie gefertigt wurde.",
-      "Was passiert, wenn ein Hauptschlüssel verloren geht? Dieser Frage weicht man aus, und an ihr hängt die größte Zahl. Ein verlorener Einzelschlüssel kostet einen Zylinder. Ein verlorener Hauptschlüssel kostet jeden Zylinder, den er betätigte, und die Entscheidung, umzuschließen oder das Risiko hinzunehmen, fällt viel leichter, wenn sie vorher besprochen wurde statt währenddessen.",
+      "Was passiert, wenn ein übergeordneter Schlüssel verloren geht? Dieser Frage weicht man aus, und an ihr hängt die größte Zahl. Ein verlorener Einzelschlüssel kostet einen Zylinder. Ein verlorener übergeordneter Schlüssel kostet jeden Zylinder, den er betätigte, und die Entscheidung, umzuschließen oder das Risiko hinzunehmen, fällt viel leichter, wenn sie vorher besprochen wurde statt währenddessen.",
       "## Zwei gängige Entwürfe und wann welcher richtig ist",
-      "Vertikal: Die Hierarchie folgt dem Gebäude – ein Hauptschlüssel je Geschoss, ein Generalschlüssel über alle Geschosse. Das passt zu Gebäuden, in denen der Zugang der Lage folgt: ein Hotel, ein Krankenhausflügel, ein Selfstorage-Lager.",
-      "Horizontal: Die Hierarchie folgt der Funktion – ein Hauptschlüssel für die Reinigung über alle Geschosse, einer für die Instandhaltung, einer für den Sicherheitsdienst. Das passt zu Gebäuden, in denen dieselbe Rolle auf jedem Geschoss dieselben Räume braucht, also zu den meisten Bürogebäuden.",
-      "Die meisten realen Anlagen sind Mischformen, und aus der Mischform kommt der Druck zu Überschneidungen, denn der Hauptschlüssel der Reinigung und der eines Geschosses wollen beide denselben Schrank öffnen.",
+      "Vertikal: Die Hierarchie folgt dem Gebäude – ein Gruppenschlüssel je Geschoss, ein Hauptschlüssel über alle Geschosse. Das passt zu Gebäuden, in denen der Zugang der Lage folgt: ein Hotel, ein Krankenhausflügel, ein Selfstorage-Lager.",
+      "Horizontal: Die Hierarchie folgt der Funktion – ein Gruppenschlüssel für die Reinigung über alle Geschosse, einer für die Instandhaltung, einer für den Sicherheitsdienst. Das passt zu Gebäuden, in denen dieselbe Rolle auf jedem Geschoss dieselben Räume braucht, also zu den meisten Bürogebäuden.",
+      "Die meisten realen Anlagen sind Mischformen, und aus der Mischform kommt der Druck zu Überschneidungen, denn der Gruppenschlüssel der Reinigung und der eines Geschosses wollen beide denselben Schrank öffnen.",
       "Sinnvoll ist, vor dem ersten Strich zu entscheiden, welche Achse die primäre ist. Eine überwiegend horizontale Anlage mit einigen lagebezogenen Ausnahmen ist schlüssig. Eine Anlage, die beides zugleich ist, Tür für Tür entschieden, ist die, der der Platz ausgeht.",
       "## Erweiterungsreserve – eingeplant oder gar nicht",
       "Eine Anlage, die genau auf das heutige Gebäude zugeschnitten ist, hat keinen Spielraum, und Gebäude verändern sich: Geschosse werden unterteilt, Abteilungen zusammengelegt, ein neuer Flügel kommt hinzu.",
@@ -2667,15 +2676,15 @@
     "faq": [
       {
         "question": "Wie viele Hauptschlüsselebenen braucht ein Gebäude?",
-        "answer": "Meist höchstens drei. Die Zahl sollte der Art folgen, wie die Organisation tatsächlich Befugnisse delegiert, nicht dem Grundriss. Ein zweigeschossiges Büro mit einem Gebäudeverwalter braucht einen Hauptschlüssel und Einzelschlüssel, keinen Generalschlüssel – zusätzliche Ebenen kosten Kapazität und Geld und erzeugen Schlüssel, die jemand verwalten muss."
+        "answer": "Meist höchstens drei. Die Zahl sollte der Art folgen, wie die Organisation tatsächlich Befugnisse delegiert, nicht dem Grundriss. Ein zweigeschossiges Büro mit einem Gebäudeverwalter braucht einen Gruppenschlüssel (MK) und Einzelschlüssel, keinen Hauptschlüssel (GMK) – zusätzliche Ebenen kosten Kapazität und Geld und erzeugen Schlüssel, die jemand verwalten muss."
       },
       {
         "question": "Warum geht einer Schließanlage die Kapazität aus?",
-        "answer": "Weil Hauptschlüsselfähigkeit subtraktiv ist. Ein Profil hat einen begrenzten Vorrat nutzbarer Einzelschließungen, und wer einem Zylinder zusätzliche Trennstellen gibt, damit auch ein Hauptschlüssel funktioniert, nimmt andere Schließungen aus diesem Vorrat – sie würden den Zylinder nun versehentlich öffnen. Jede Ebene und jede Überschneidung verkleinert den Rest."
+        "answer": "Weil Hauptschlüsselfähigkeit subtraktiv ist. Ein Profil hat einen begrenzten Vorrat nutzbarer Einzelschließungen, und wer einem Zylinder zusätzliche Trennstellen gibt, damit auch ein übergeordneter Schlüssel funktioniert, nimmt andere Schließungen aus diesem Vorrat – sie würden den Zylinder nun versehentlich öffnen. Jede Ebene und jede Überschneidung verkleinert den Rest."
       },
       {
         "question": "Was ist eine Überschneidung, und warum rät man davon ab?",
-        "answer": "Ein Zylinder, der von Schlüsseln aus mehr als einem Zweig der Hierarchie betätigt wird, etwa ein Besprechungsraum, den die Hauptschlüssel von Vertrieb und Marketing öffnen. Jede fügt Trennstellen hinzu und verbraucht überproportional aus dem Vorrat; eine Anlage mit verstreuten Überschneidungen ist daher lange vor ihrer Nennkapazität erschöpft und lässt sich von mehr Schlüsseln öffnen als beabsichtigt."
+        "answer": "Ein Zylinder, der von Schlüsseln aus mehr als einem Zweig der Hierarchie betätigt wird, etwa ein Besprechungsraum, den die Gruppenschlüssel von Vertrieb und Marketing öffnen. Jede fügt Trennstellen hinzu und verbraucht überproportional aus dem Vorrat; eine Anlage mit verstreuten Überschneidungen ist daher lange vor ihrer Nennkapazität erschöpft und lässt sich von mehr Schlüsseln öffnen als beabsichtigt."
       },
       {
         "question": "Lässt sich einer bestehenden Anlage Erweiterungskapazität hinzufügen?",
