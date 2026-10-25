@@ -837,7 +837,7 @@
   },
   "dimensional-interchangeability-2026": {
     "title": "Interchangeabilité dimensionnelle 2026 : les sept cotes qui décident si une serrure se remplace à l'identique, et combien nous en publions",
-    "summary": "« Est-ce interchangeable ? » se tranche avec sept cotes, et deux d'entre elles ne sont publiées par presque personne. Cette page les énumère dans l'ordre où elles provoquent des défaillances, explique pourquoi un axe identique ne suffit pas, indique quoi envoyer à une usine pour obtenir l'équivalent direct d'une serrure abandonnée, et compte combien de nos 255 produits de serrurerie publient chaque cote, y compris celle qui plafonne à trois pour cent.",
+    "summary": "« Est-ce interchangeable ? » se tranche avec sept cotes, et deux d'entre elles ne sont publiées par presque personne. Cette page les énumère dans l'ordre où elles provoquent des défaillances, explique pourquoi un axe identique ne suffit pas, indique quoi envoyer à une usine pour obtenir l'équivalent direct d'une serrure abandonnée, et compte combien de nos 257 produits de serrurerie publient chaque cote, y compris les deux qui plafonnent à trois pour cent.",
     "seoTitle": "Interchangeabilité des serrures : les sept cotes",
     "seoDescription": "Serrure interchangeable : sept cotes, pas seulement l'axe. Entraxe, dimensions du coffre, têtière, carré, entraxes de fixation et épaisseur de porte.",
     "body": [
@@ -857,9 +857,9 @@
       "Le rayon d'angle compte pour la même raison que sur une gâche : une mortaise taillée à la défonceuse a des angles arrondis, une mortaise taillée au ciseau des angles vifs, et l'écart se voit sous forme de quatre croissants ou de quatre carrés.",
       "C'est la cote que l'on découvre le plus souvent après la pose de la première porte, c'est-à-dire au moment où la décision de poursuivre a déjà été prise.",
       "## Ce que nous publions réellement",
-      "L'interchangeabilité est une question de cotes publiées ; l'honnêteté consiste donc à dire combien nous en publions. Décompte établi à partir des lignes de caractéristiques des 255 produits de notre catalogue dont la catégorie ou le nom les identifie comme serrures, pênes, cylindres ou verrous à pêne dormant.",
-      "| Cote | Produits de serrurerie qui la publient | Part |\n| --- | --- | --- |\n| Axe | 113 | 44 % |\n| Plage d'épaisseur de porte | 77 | 30 % |\n| Entraxe | 37 | 15 % |\n| Têtière | 7 | 3 % |\n| Dimensions du coffre | 8 | 3 % |",
-      "Ces trois dernières lignes sont la raison d'être de cette page. Les deux cotes qui provoquent les défaillances les plus coûteuses (entraxe et têtière) sont les deux que nous publions le moins, et les dimensions du coffre n'apparaissent que sur huit d'entre eux.",
+      "L'interchangeabilité est une question de cotes publiées ; l'honnêteté consiste donc à dire combien nous en publions. Décompte établi à partir des lignes de caractéristiques des 257 produits de notre catalogue dont la catégorie ou le nom les identifie comme serrures, pênes, cylindres ou verrous à pêne dormant.",
+      "| Cote | Produits de serrurerie qui la publient | Part |\n| --- | --- | --- |\n| Axe | 113 | 44 % |\n| Plage d'épaisseur de porte | 77 | 30 % |\n| Entraxe | 37 | 14 % |\n| Têtière | 8 | 3 % |\n| Dimensions du coffre | 8 | 3 % |",
+      "Ces trois dernières lignes sont la raison d'être de cette page. L'entraxe, la têtière et les dimensions du coffre, trois des quatre cotes dont les défaillances coûtent le plus, sont les trois que nous publions le moins ; la têtière et les dimensions du coffre n'apparaissent chacune que sur huit d'entre eux.",
       "Nous préférons imprimer ce tableau plutôt que de présenter nos données comme exhaustives. Un acheteur qui connaît la lacune peut demander la mesure ; un acheteur qui croit le catalogue complet le découvre après la découpe.",
       "Quand une cote manque, c'est que personne n'a encore mesuré ce modèle d'après un plan, pas qu'elle est retenue. Demandez le modèle dont vous avez besoin, et il pourra être mesuré : c'est une conversation courte, bien plus courte que celle qui suit un conteneur de portes.",
       "## Quoi envoyer pour obtenir l'équivalent direct d'une serrure que vous achetez déjà",
@@ -903,7 +903,7 @@
       },
       {
         "question": "Combien de vos serrures publient ces cotes ?",
-        "answer": "Sur 257 produits de serrurerie : axe 113 (44 %), épaisseur de porte 77 (30 %), entraxe 37 (14 %), têtière 8 (3 %), dimensions du coffre 8 (3 %). Les deux cotes qui provoquent les défaillances les plus coûteuses sont les deux que nous publions le moins. Une cote manquante peut être mesurée à la demande : elle manque parce que personne n'a encore mesuré ce modèle, pas parce qu'elle est retenue."
+        "answer": "Sur 257 produits de serrurerie : axe 113 (44 %), épaisseur de porte 77 (30 %), entraxe 37 (14 %), têtière 8 (3 %), dimensions du coffre 8 (3 %). L'entraxe, la têtière et les dimensions du coffre, trois des quatre cotes dont les défaillances coûtent le plus, sont les trois que nous publions le moins. Une cote manquante peut être mesurée à la demande : elle manque parce que personne n'a encore mesuré ce modèle, pas parce qu'elle est retenue."
       },
       {
         "question": "Que faut-il envoyer pour obtenir un remplacement à l'identique ?",
@@ -916,11 +916,11 @@
     ],
     "sourceHash": {
       "title": "0940f1649707",
-      "summary": "9fc6304f7b6d",
+      "summary": "805012713a6c",
       "seoTitle": "cdc77c60bb8f",
       "seoDescription": "c137bf8f8240",
-      "body": "425fc059b14e",
-      "faq": "71ae9c8aaf7d"
+      "body": "9b8b37334e89",
+      "faq": "4fe44f71fca0"
     }
   },
   "door-closer-mounting-positions-2026": {

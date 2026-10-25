@@ -837,7 +837,7 @@
   },
   "dimensional-interchangeability-2026": {
     "title": "2026'da Ölçüsel Değiştirilebilirlik: Bir Kilidin Yerine Oturup Oturmayacağını Belirleyen Yedi Ölçü ve Kaçını Yayımladığımız",
-    "summary": "\"Birbirinin yerine geçer mi?\" sorusunu yedi ölçü cevaplar ve bunların ikisi neredeyse kimsenin yayımlamadığı ölçülerdir. Bu sayfa onları arızaya yol açtıkları sırayla listeliyor, backset'i eşleştirmenin neden yetmediğini açıklıyor, üretimi durmuş bir kilidin birebir muadilini istediğinizde bir fabrikaya ne göndermeniz gerektiğini anlatıyor ve kendi 255 kilit ürünümüzden kaçının her ölçüyü yayımladığını, yüzde üçte kalan dahil, sayıyor.",
+    "summary": "\"Birbirinin yerine geçer mi?\" sorusunu yedi ölçü cevaplar ve bunların ikisi neredeyse kimsenin yayımlamadığı ölçülerdir. Bu sayfa onları arızaya yol açtıkları sırayla listeliyor, backset'i eşleştirmenin neden yetmediğini açıklıyor, üretimi durmuş bir kilidin birebir muadilini istediğinizde bir fabrikaya ne göndermeniz gerektiğini anlatıyor ve kendi 257 kilit ürünümüzden kaçının her ölçüyü yayımladığını, yüzde üçte kalan ikisi dahil, sayıyor.",
     "seoTitle": "Kilit Değiştirilebilirliği 2026: Belirleyici Yedi Ölçü",
     "seoDescription": "Kilit değiştirilebilirliği yalnızca backset'e değil yedi ölçüye dayanır: aks mesafesi, gövde ölçüsü, ön plaka, mil, sabitleme aralıkları ve kapı kalınlığı.",
     "body": [
@@ -857,9 +857,9 @@
       "Köşe yarıçapı, bir karşılık plakasında önemli olduğu nedenle önemlidir: frezeyle açılmış bir cebin köşeleri yuvarlaktır, keskiyle açılmış olanınki köşelidir ve uyumsuzluk dört hilal ya da dört kare olarak görünür.",
       "En sık ilk kapı takıldıktan sonra keşfedilen ölçü budur; bu da devam etme kararının zaten verilmiş olduğu andır.",
       "## Bunun ne kadarını gerçekten yayımlıyoruz",
-      "Değiştirilebilirlik yayımlanmış ölçülerle ilgili bir sorudur; dolayısıyla dürüst olan, kaçını yayımladığımızı söylemektir. Kataloğumuzda kategorisi ya da adı onları kilit, dil, silindir ya da sürgü kilit olarak tanımlayan 255 ürünün özellik satırlarından sayılmıştır.",
-      "| Ölçü | Yayımlayan kilit ürünü | Oran |\n| --- | --- | --- |\n| Backset | 113 | %44 |\n| Kapı kalınlığı aralığı | 77 | %30 |\n| Aks mesafesi | 37 | %15 |\n| Ön plaka | 7 | %3 |\n| Gövde ölçüsü | 8 | %3 |",
-      "Bu sayfanın amacı son üç satırdır. En pahalı arızalara yol açan iki ölçü (aks mesafesi ve ön plaka) en az yayımladığımız iki ölçüdür; gövde ölçüsü ise yalnızca sekizinde görünür.",
+      "Değiştirilebilirlik yayımlanmış ölçülerle ilgili bir sorudur; dolayısıyla dürüst olan, kaçını yayımladığımızı söylemektir. Kataloğumuzda kategorisi ya da adı onları kilit, dil, silindir ya da sürgü kilit olarak tanımlayan 257 ürünün özellik satırlarından sayılmıştır.",
+      "| Ölçü | Yayımlayan kilit ürünü | Oran |\n| --- | --- | --- |\n| Backset | 113 | %44 |\n| Kapı kalınlığı aralığı | 77 | %30 |\n| Aks mesafesi | 37 | %14 |\n| Ön plaka | 8 | %3 |\n| Gövde ölçüsü | 8 | %3 |",
+      "Bu sayfanın amacı son üç satırdır. Aks mesafesi, ön plaka ve gövde ölçüsü, arızaları en pahalıya mal olan dört ölçüden üçüdür ve en az yayımladığımız üç ölçüdür; ön plaka ve gövde ölçüsü yalnızca sekizer üründe görünür.",
       "Verimizi kapsamlı diye tarif etmektense bu tabloyu basmayı tercih ederiz. Boşluğu bilen bir alıcı ölçüyü isteyebilir; kataloğun eksiksiz olduğunu varsayan bir alıcı bunu kestikten sonra öğrenir.",
       "Bir ölçü eksikse bunun nedeni saklanması değil, o modeli henüz kimsenin bir çizime göre ölçmemiş olmasıdır. İhtiyacınız olan modeli sorun, ölçülebilir; bu kısa bir konuşmadır ve bir konteyner dolusu kapıdan sonraki konuşmadan çok daha kısadır.",
       "## Zaten satın aldığınız bir kilidin birebir muadilini istediğinizde ne göndermelisiniz",
@@ -903,7 +903,7 @@
       },
       {
         "question": "Kilitlerinizin kaçı bu ölçüleri yayımlıyor?",
-        "answer": "257 kilit ürününden: backset 113 (%44), kapı kalınlığı 77 (%30), aks mesafesi 37 (%14), ön plaka 8 (%3), gövde ölçüsü 8 (%3). En pahalı arızalara yol açan iki ölçü en az yayımladığımız ikisidir. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
+        "answer": "257 kilit ürününden: backset 113 (%44), kapı kalınlığı 77 (%30), aks mesafesi 37 (%14), ön plaka 8 (%3), gövde ölçüsü 8 (%3). Aks mesafesi, ön plaka ve gövde ölçüsü, arızaları en pahalıya mal olan dört ölçüden üçüdür ve en az yayımladığımız üç ölçüdür. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
       },
       {
         "question": "Birebir yedek almak için ne göndermeliyim?",
@@ -916,11 +916,11 @@
     ],
     "sourceHash": {
       "title": "0940f1649707",
-      "summary": "9fc6304f7b6d",
+      "summary": "805012713a6c",
       "seoTitle": "cdc77c60bb8f",
       "seoDescription": "c137bf8f8240",
-      "body": "425fc059b14e",
-      "faq": "71ae9c8aaf7d"
+      "body": "9b8b37334e89",
+      "faq": "4fe44f71fca0"
     }
   },
   "door-closer-mounting-positions-2026": {

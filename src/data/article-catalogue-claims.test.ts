@@ -107,12 +107,40 @@ claim(NEWS("brass-piano-hinge-is-a-finish-not-a-metal"), () => {
   const stainless = hinges.length - iron - brass - none;
   return `this site publishes ${hinges.length} hinge records. ${Word(stainless)} are stainless steel in various grades, ${word(iron)} are iron (the Brass Piano Hinge, BL027, IH01 and F100 SS), ${word(brass)} are solid brass (B024 and B025), and ${word(none)} carry no material row yet`;
 });
+// Its FAQ says the same thing in other words, and stayed at 29 / four when the body moved to 30 / five (2026-10-25).
+claim(NEWS("brass-piano-hinge-is-a-finish-not-a-metal"), () => {
+  const hinges = inFamily("brass-steel-hinges");
+  const mat = (p: Record) => spec(p, "Material") ?? "";
+  const iron = hinges.filter((p) => /iron/i.test(mat(p))).length;
+  const brass = hinges.filter((p) => /brass/i.test(mat(p)) && !/stainless/i.test(mat(p))).length;
+  const none = hinges.filter((p) => !mat(p)).length;
+  return `We publish ${hinges.length} hinge records as of 25 October 2026: ${word(hinges.length - iron - brass - none)} stainless steel in various grades, ${word(iron)} iron (the Brass Piano Hinge, BL027, IH01 and F100 SS), ${word(brass)} solid brass (B024 and B025) and ${word(none)} with no material row yet`;
+});
 
 // lever-handle-range-lh852-lh853-lh855
 claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => {
   const levers = inFamily("lever-handles");
   return `Of the ${levers.length} lever-handle entries on this site, ${levers.filter((p) => spec(p, "Cycle life")).length} are tubular lever sets`;
 });
+/*
+  2026-10-25: 8d872a44ccf added 8829 BL and moved one sentence to 63; the heading, the FAQ and "the other six"
+  stayed at 62 because the claim above is found in the body. Each place that counts is registered on its own.
+*/
+function leverFamily() {
+  const levers = inFamily("lever-handles");
+  const tubular = levers.filter((p) => spec(p, "Cycle life"));
+  const bare = levers.filter((p) => !(p.specs ?? []).length);
+  const other = levers.filter((p) => !tubular.includes(p) && !bare.includes(p));
+  assert.deepEqual(other.map((p) => p.model), ["8829 BL"], "a lever record that is neither a tubular set nor bare: body[10] and FAQ 5 name 8829 BL as the only other lock");
+  const list = (ps: Record[]) => ps.map((p) => p.model).sort().join(", ").replace(/, ([^,]+)$/, " and $1");
+  return { levers, tubular, bare, list };
+}
+claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => `## What the ${leverFamily().levers.length} lever entries on this site are`);
+claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => { const f = leverFamily(); return `Of the ${f.levers.length} lever-handle entries on this site, ${f.tubular.length} are tubular lever sets that publish the same core rows`; });
+claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => { const f = leverFamily(); return `Of the ${f.levers.length} lever-handle entries on this site, ${f.tubular.length} are tubular lever sets with the same published core`; });
+claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => { const f = leverFamily(); return `The other ${word(f.levers.length - f.tubular.length)} are not tubular sets.`; });
+claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => { const f = leverFamily(); return `The remaining ${word(f.bare.length)} publish no specification rows yet: ${f.list(f.bare)}.`; });
+claim(NEWS("lever-handle-range-lh852-lh853-lh855"), () => { const f = leverFamily(); return `The remaining ${word(f.bare.length)} (${f.list(f.bare)}) publish no specification rows yet`; });
 
 // euro-cylinder-range-45-to-90
 claim(NEWS("euro-cylinder-range-45-to-90"), () => {
@@ -226,14 +254,32 @@ claim(GUIDE("cycle-testing-durability-grades-2026"), () => {
   assert.deepEqual(graded.map((p) => p.slug), [], "these records now state an ANSI/BHMA grade or an EN 1906 classification: rewrite the guide's institutional-grade section");
   return "None of our product records states an ANSI/BHMA grade or an EN 1906 category of use";
 });
-claim(GUIDE("dimensional-interchangeability-2026"), () => {
+function dimensionCounts() {
   const lockCats = new Set(["knob-locks", "lock-cases", "lock-cylinders", "deadbolts", "night-latches-rim-locks", "sliding-hook-locks"]);
   const locks = hyde.filter((p) => lockCats.has(top(p)) || /\b(lock|latch|cylinder|deadbolt)\b/i.test((p as { name?: string }).name ?? ""));
-  const has = (p: Record, re: RegExp) => (p.specs ?? []).some((s) => re.test(s.label));
+  const count = (re: RegExp) => locks.filter((p) => (p.specs ?? []).some((s) => re.test(s.label))).length;
   const pct = (n: number) => `${Math.round((100 * n) / locks.length)}%`;
-  const cd = locks.filter((p) => has(p, /^(?:center|centre) distances?$/i)).length;
-  const cs = locks.filter((p) => has(p, /^case (size|height|depth)/i)).length;
-  return `${locks.length} lock products: backset ${locks.filter((p) => has(p, /^backset$/i)).length} (${pct(locks.filter((p) => has(p, /^backset$/i)).length)}), door thickness ${locks.filter((p) => has(p, /^door thickness$/i)).length} (${pct(locks.filter((p) => has(p, /^door thickness$/i)).length)}), center distance ${cd} (${pct(cd)}), forend ${locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length} (${pct(locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length)}), case size ${cs} (${pct(cs)})`;
+  return { total: locks.length, pct, backset: count(/^backset$/i), door: count(/^door thickness$/i), cd: count(/^(?:center|centre) distances?$/i), forend: count(/^(faceplate|face plate|forend)/i), cs: count(/^case (size|height|depth)/i) };
+}
+claim(GUIDE("dimensional-interchangeability-2026"), () => {
+  const d = dimensionCounts();
+  return `${d.total} lock products: backset ${d.backset} (${d.pct(d.backset)}), door thickness ${d.door} (${d.pct(d.door)}), center distance ${d.cd} (${d.pct(d.cd)}), forend ${d.forend} (${d.pct(d.forend)}), case size ${d.cs} (${d.pct(d.cs)})`;
+});
+// 2026-10-25: the FAQ above moved to 257 with the three new products (8d872a44ccf) while the summary, the
+// counting sentence and the table stayed at 255; these lock the rest of the article to the same count.
+claim(GUIDE("dimensional-interchangeability-2026"), () => `counts how many of our own ${dimensionCounts().total} lock products publish each dimension`);
+claim(GUIDE("dimensional-interchangeability-2026"), () => `Counted from the specification rows of the ${dimensionCounts().total} products in our catalog`);
+claim(GUIDE("dimensional-interchangeability-2026"), () => { const d = dimensionCounts(); return `| Backset | ${d.backset} | ${d.pct(d.backset)} |`; });
+claim(GUIDE("dimensional-interchangeability-2026"), () => { const d = dimensionCounts(); return `| Door thickness range | ${d.door} | ${d.pct(d.door)} |`; });
+claim(GUIDE("dimensional-interchangeability-2026"), () => { const d = dimensionCounts(); return `| Center distance | ${d.cd} | ${d.pct(d.cd)} |`; });
+claim(GUIDE("dimensional-interchangeability-2026"), () => { const d = dimensionCounts(); return `| Forend / faceplate | ${d.forend} | ${d.pct(d.forend)} |`; });
+claim(GUIDE("dimensional-interchangeability-2026"), () => { const d = dimensionCounts(); return `| Case size | ${d.cs} | ${d.pct(d.cs)} |`; });
+claim(GUIDE("dimensional-interchangeability-2026"), () => {
+  const d = dimensionCounts();
+  const [third, ...rest] = [d.cd, d.door, d.backset].sort((x, y) => x - y);
+  assert.ok(d.forend === d.cs && Math.max(d.forend, d.cs) < third && rest.every((n) => n > third), "forend and case size no longer tie as the two least published, with center distance third: rewrite body[18] and FAQ 4 in ten languages");
+  assert.equal(third, d.cd, "center distance is no longer the third least published dimension: rewrite body[18] and FAQ 4 in ten languages");
+  return `are the three we publish least; forend and case size appear on only ${word(d.forend)} of them each`;
 });
 
 test("every counted catalog claim in an article matches the catalog as this site sees it", () => {
