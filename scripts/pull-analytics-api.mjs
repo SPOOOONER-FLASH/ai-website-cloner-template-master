@@ -16,6 +16,13 @@
 import { createSign } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { spawnSync } from "node:child_process";
+
+// 这台电脑访问 Google 要走代理；Node 的 fetch 默认不读 HTTPS_PROXY，检测到就带 NODE_USE_ENV_PROXY=1 重跑自己。
+if ((process.env.HTTPS_PROXY || process.env.https_proxy) && !process.env.NODE_USE_ENV_PROXY) {
+  const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env: { ...process.env, NODE_USE_ENV_PROXY: "1" } });
+  process.exit(r.status ?? 1);
+}
 
 const SITE = "https://cantonlock.com/";
 const GSC_SITE = "sc-domain:cantonlock.com";

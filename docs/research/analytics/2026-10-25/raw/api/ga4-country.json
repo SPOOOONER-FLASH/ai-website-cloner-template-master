@@ -1,0 +1,1495 @@
+{
+ "dimensionHeaders": [
+  {
+   "name": "country"
+  }
+ ],
+ "metricHeaders": [
+  {
+   "name": "sessions",
+   "type": "TYPE_INTEGER"
+  },
+  {
+   "name": "engagedSessions",
+   "type": "TYPE_INTEGER"
+  }
+ ],
+ "rows": [
+  {
+   "dimensionValues": [
+    {
+     "value": "China"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2576"
+    },
+    {
+     "value": "260"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Singapore"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1293"
+    },
+    {
+     "value": "33"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "United States"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "650"
+    },
+    {
+     "value": "275"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Germany"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "272"
+    },
+    {
+     "value": "28"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "United Kingdom"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "180"
+    },
+    {
+     "value": "30"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Netherlands"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "131"
+    },
+    {
+     "value": "13"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Poland"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "96"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "France"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "90"
+    },
+    {
+     "value": "23"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Romania"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "82"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Italy"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "80"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "India"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "74"
+    },
+    {
+     "value": "17"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Japan"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "70"
+    },
+    {
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Brazil"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "65"
+    },
+    {
+     "value": "18"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Canada"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "33"
+    },
+    {
+     "value": "18"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Vietnam"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "32"
+    },
+    {
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Spain"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "31"
+    },
+    {
+     "value": "16"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Australia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "30"
+    },
+    {
+     "value": "15"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Türkiye"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "25"
+    },
+    {
+     "value": "15"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "South Korea"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "23"
+    },
+    {
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Argentina"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "22"
+    },
+    {
+     "value": "13"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Colombia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "22"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Hong Kong"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "20"
+    },
+    {
+     "value": "9"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Mexico"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "20"
+    },
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Sweden"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "18"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Nigeria"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "16"
+    },
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Austria"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "12"
+    },
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Saudi Arabia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "12"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Thailand"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "12"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Egypt"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "10"
+    },
+    {
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Philippines"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "10"
+    },
+    {
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Portugal"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "10"
+    },
+    {
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Malaysia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "9"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Belgium"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "8"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Venezuela"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "8"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Bangladesh"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Chile"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Iraq"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Morocco"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Russia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Taiwan"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "United Arab Emirates"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Algeria"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "6"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Ecuador"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "6"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Pakistan"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "6"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Sri Lanka"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "6"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "(not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Côte d’Ivoire"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Ireland"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "New Zealand"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Czechia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Israel"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Jordan"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Puerto Rico"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Qatar"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "South Africa"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Georgia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Indonesia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Iran"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Peru"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Albania"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Belarus"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Croatia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Dominican Republic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Finland"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Greece"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Hungary"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Kenya"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Libya"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Moldova"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Norway"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Slovakia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Trinidad & Tobago"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Yemen"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Angola"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Azerbaijan"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Bahrain"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Bolivia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Bulgaria"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Costa Rica"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "El Salvador"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Jersey"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Kosovo"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Laos"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Lebanon"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Lithuania"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Macao"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Maldives"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Malta"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Mauritius"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Myanmar (Burma)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Panama"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Papua New Guinea"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Somalia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Switzerland"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Syria"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Tunisia"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Uruguay"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "Uzbekistan"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  }
+ ],
+ "rowCount": 98,
+ "metadata": {
+  "currencyCode": "USD",
+  "timeZone": "America/New_York"
+ },
+ "kind": "analyticsData#runReport"
+}

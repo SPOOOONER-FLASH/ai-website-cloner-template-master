@@ -1,0 +1,550 @@
+{
+ "dimensionHeaders": [
+  {
+   "name": "sessionSourceMedium"
+  }
+ ],
+ "metricHeaders": [
+  {
+   "name": "sessions",
+   "type": "TYPE_INTEGER"
+  },
+  {
+   "name": "engagedSessions",
+   "type": "TYPE_INTEGER"
+  }
+ ],
+ "rows": [
+  {
+   "dimensionValues": [
+    {
+     "value": "(direct) / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5369"
+    },
+    {
+     "value": "487"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "google / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "379"
+    },
+    {
+     "value": "229"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "chatgpt.com / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "151"
+    },
+    {
+     "value": "90"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "(not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "112"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "bing / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "76"
+    },
+    {
+     "value": "48"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "tagassistant.google.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "47"
+    },
+    {
+     "value": "38"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "exhibitors.bau-muenchen.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "35"
+    },
+    {
+     "value": "28"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "duckduckgo / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "13"
+    },
+    {
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "127.0.0.1:4747 / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "10"
+    },
+    {
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "cn.bing.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "7"
+    },
+    {
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "weixin110.qq.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "6"
+    },
+    {
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "yahoo / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "5"
+    },
+    {
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "cn.etradeasia.com/ / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "4"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "facebook.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "m.facebook.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "3"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "chatgpt.com / (none)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "cn.etradeasia.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "cn.etradeasia.com / referral/"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "doubao.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "ecosia.org / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "hydeland.cn / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "2"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "baidu / organic"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "ca.search.yahoo.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "copilot.com / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "fr.search.yahoo.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "gemini / (not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "hk.search.yahoo.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "in.search.yahoo.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "l.meta.ai / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "perplexity / (not set)"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "perplexity.ai / ai-assistant"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "scriblihelp.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "search.brave.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "theo.funk-gruppe.cloud / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "dimensionValues": [
+    {
+     "value": "yuanbao.tencent.com / referral"
+    }
+   ],
+   "metricValues": [
+    {
+     "value": "1"
+    },
+    {
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "rowCount": 35,
+ "metadata": {
+  "currencyCode": "USD",
+  "timeZone": "America/New_York"
+ },
+ "kind": "analyticsData#runReport"
+}

@@ -13,3 +13,4 @@
   - 近 7 天展示 1,410、点击 23；前 7 天展示 910、点击 15。
 - **交接**：`docs/collaboration/2026-10-25-手动操作-数据看板API凭据.md`（桌面 00）。
 - **下一步**：甲方发服务账号文件名、GA4 媒体资源 ID、Clarity 令牌后，写入 `.env.local` 并跑全量；再把 `build-analytics-report.mjs` 接上 API 输出。
+- 10-25 追加：甲方给了服务账号（hyde-reader@hyde-analytics）和 GA4 媒体资源 548855806；密钥复制到 `E:\hyde-keys\`。GSC、GA4 首次拉通。这台机器访问 Google 要走代理，脚本检测到 HTTPS_PROXY 会自动带 NODE_USE_ENV_PROXY=1 重跑。28 天 GSC：点击 311、展示 28,123；GA4：generate_lead 10、chatgpt.com 会话 151。只差 Clarity 令牌。
