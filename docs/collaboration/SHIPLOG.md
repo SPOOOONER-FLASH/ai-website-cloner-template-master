@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 253 次提交
+最近 30 天 · 共 237 次提交
 
 ## 2026-10-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 19:29 | HYDE | Master-key terminology unified in fr, ar, ru, es, pt; this session takes over HYDE releases | `a85342d4723` |
 | 12:38 | 中立 | Inquiry funnel: captcha dead end and pre-hydration GET fixed, failures now measured, ten-language captcha text | `aaf8e3c29d2` |
 | 11:49 | HYDE | Count drift after 8d872a44ccf fixed in ten languages; every counting sentence registered | `2d2c8f6b448` |
 | 11:33 | HYDE | Durability guide: "institutional grade" section in 10 languages; German master-key level names aligned | `08793afd0c3` |
@@ -338,21 +339,4 @@
 | 23:08 | 中立 | Merge remote-tracking branch 'origin/main' | `f9a68d6b6d5` |
 | 23:05 | 中立 | 七语种：文章 100%（指南 45 篇、新闻 37 篇、案例 5 篇 × 7）；客户端字典按语种拆 chunk；/model-lookup 17 MB chunk 修掉；术语表 16 新键 | `2cf7664723f` |
 | 22:59 | 中立 | 规格覆盖报告：重新生成（DSL02 / DC01 / HY-0SS 改名后一个字段的不同取值数 31 → 30） | `7a55cfbd086` |
-| 18:52 | 中立 | 记录：本机构建不了七语种全站（31 workers 时崩溃），HYDE 发布交发布会话 | `16859228c24` |
-| 18:49 | HYDE · 发布 HYDE | Merge origin/main；七语种译文取远端（含 HY-0SS），seoTitle/seoDescription 重跑生成器补回 | `c95e730e2f1` |
-| 18:48 | 中立 | push-pending: 记录本地积压 | `3ad44167d43` |
-| 18:44 | 中立 | 七语种锁体标题带上中心距与背距（译名取自各语种 glossary.specLabels） | `71490f6047b` |
-| 18:11 | 中立 | 目标清单：#59 等 HY-0SS 七语种译文 | `add23a78486` |
-| 18:07 | 中立 | 目标清单：#54 等七语种发布；#58 cron 自动装跳转规则已实测生效 | `980aeb2b49b` |
-| 18:07 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `a50725f2107` |
-| 18:07 | HYDE | 计数随移类更新：五金配件 71、锁体 57、推杠 47；推杠指南改写顺序器所在类目，三语 | `9522d3c3875` |
-| 18:05 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `3a8ea5f05ef` |
-| 18:05 | HYDE | DSL02、DC01、HY-0SS 改名改 slug、301、移类（文案会话定名后） | `3f729ee4850` |
-| 17:58 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `881e5f83be3` |
-| 17:57 | 中立 | 七语种产品 seoTitle / seoDescription：生成器扩到 fr de ja ko tr ru ar（3,647 条） | `7f441723dbf` |
-| 17:54 | 中立 | 目标清单：#55–#57 | `c74fdc911a7` |
-| 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `8d9485369d2` |
-| 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `65285e19984` |
-| 17:53 | HYDE | DS011 门吸移到 hardware-accessories/door-stoppers（原在 door-flush-bolts，文案会话 09-25 发现）；标题重生成 | `705b16c0624` |
-| 17:51 | 中立 | ironmongery 分工文档：英文标题词序 door hardware 在前、ironmongery 第二（甲方 09-25） | `71b2c8c6bce` |
 
