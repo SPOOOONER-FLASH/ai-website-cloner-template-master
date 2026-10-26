@@ -3,7 +3,9 @@ import type { Locale } from "@/data/locales";
 import { dict, tx } from "@/lib/i18n";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings, whatsappHref } from "@/data/navigation";
+import { CONSENT_COPY } from "@/lib/consent-copy";
 import { ArrowLink } from "./ArrowLink";
+import { CookieSettingsButton } from "./ConsentGate";
 import { EmailLink } from "./EmailLink";
 import { FooterCurrentLink, FooterLanguageLinks } from "./FooterPathAware";
 
@@ -148,6 +150,10 @@ export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
                     </FooterCurrentLink>
                   </li>
                 ))}
+                {/* Reopens the analytics consent banner (ConsentGate.tsx) on any page. */}
+                <li className="col-span-2 md:col-span-3">
+                  <CookieSettingsButton label={CONSENT_COPY[locale].settings} />
+                </li>
                 {/*
                   THE ONLY RENDERED LINKS BETWEEN THE LANGUAGE TREES.
 
