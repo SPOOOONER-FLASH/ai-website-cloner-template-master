@@ -15,7 +15,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| **Claude 多语种（86132，`--root E:/release`）——持 HYDE 发布棒** | `out/`（只经 `npm run release:hyde`） | 甲方 10-26「你直接接管发布」。发布 origin/main，上线核验后在此行写结果并交还 | 2026-10-26 |
+| **Claude 多语种（86132，`--root E:/release`）——持 HYDE 发布棒** | `out/`（只经 `npm run release:hyde`） | 甲方 10-26「你直接接管发布」。v2026.10.25.1 已构建并推 GitHub（7ee34dc3e31）；**GitLab 未同步**：86132 无 GitLab 写权限，已生成部署密钥待甲方添加（runbook 10-26）。johns 上线也可跑 mirror-to-gitlab。上线核验后交还 | 2026-10-26 |
 | Claude 多语种（E:/cantonlock-hyde） | `content/i18n/**`、`src/app/{fr,de,ja,ko,tr,ru,ar}/**`（生成，勿手改）、`src/components/locale-pages/`、`src/lib/i18n.ts`、`scripts/i18n-*.mjs`、`scripts/scaffold-locale-routes.mjs`、`scripts/track-locale-mirror.mjs` | 七语种全栈镜像 M2–M8：术语表 → 界面 → 521 产品 → 新闻 → 指南 → 案例 → 母语抽查（tasks/2026-09-25-seven-locale-full-mirror.md）。不动 out/ | 2026-09-25 |
 | Claude HYDE工程交接配置（johns 机器，tmp/ship-merge） | SEO/GEO 审计、死链、JS、GTM 事件、数据看板；全站长尾词（所有 seoTitle*/seoDescription*、scripts/build-product-titles.mjs —— **从 Hyde 文案移交**，见 tasks/2026-09-24-division-of-labour.md）；美式拼写（content/products 规格标签 + 术语表键、src/app/(en)、src/components）；**HYDE 发布棒（常驻，甲方 09-28：所有发布部署在 johns 机器，本会话负责）** | 分工见 tasks/2026-09-24-division-of-labour.md | 2026-09-24 |
 | **雷茵已迁出本仓（2026-09-24）** | 甲方：「把雷茵放到另一个仓库，不要再互相影响」。雷茵的一切现在在私有仓 **SPOOOONER-FLASH/rayen**（本地 `C:UsersjohnsDownloads雷茵`），在那里构建、发布 | 本仓里的雷茵车道（out-rayen/、content/rayen/、zh 路由、rayen 脚本、products-rayen 图）**冻结**：不要再改，也不要在这里 release:rayen。服务器把 rayen.cn 切到新仓之前，本仓的 out-rayen/ 仍是线上源，**别删**；切换后再清理（步骤见新仓 CLIENT-RUNBOOK） | 2026-09-24 |
