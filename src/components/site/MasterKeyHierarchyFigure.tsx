@@ -43,12 +43,12 @@ const LABELS: Partial<Record<Locale, Labels>> = {
   es: {
     title: "Ejemplo de jerarquía de llave maestra",
     caption:
-      "Un sistema de ejemplo con tres niveles: una gran maestra, dos maestras de planta y las llaves diferentes debajo, con las tres decisiones que este artículo sitúa en la fase de diseño: una puerta con llave cruzada, una puerta fuera de toda maestra y un grupo reservado para ampliaciones. Solo ilustrativo; la jerarquía real se diseña sobre la plataforma en la que se va a cortar.",
-    ggmk: ["Gran gran maestra (GGMK)", "solo para varios sistemas; a menudo no se emite"],
+      "Un sistema de ejemplo con tres niveles: una gran maestra, dos maestras de planta y las llaves individuales debajo, con las tres decisiones que este artículo sitúa en la fase de diseño: una puerta con llave cruzada, una puerta fuera de toda maestra y un grupo reservado para ampliaciones. Solo ilustrativo; la jerarquía real se diseña sobre la plataforma en la que se va a cortar.",
+    ggmk: ["Gran maestra general (GGMK)", "solo para varios sistemas; a menudo no se emite"],
     gmk: ["Gran maestra (GMK)", "abre todas las puertas del sistema"],
     mk: (n) => [`Maestra (MK) · Planta ${n}`, `abre todas las puertas de la planta ${n}`],
     reserved: ["Grupo reservado", "sin emitir, para ampliaciones"],
-    door: "llave diferente",
+    door: "llave individual",
     cross: ["Sala de reuniones", "llave cruzada"],
     noMaster: ["Sala de servidores", "fuera de toda maestra"],
     legend: ["Amaestrada", "Llave cruzada", "Reservado u opcional"],
@@ -56,12 +56,12 @@ const LABELS: Partial<Record<Locale, Labels>> = {
   pt: {
     title: "Exemplo de hierarquia de chave mestra",
     caption:
-      "Um sistema de exemplo com três níveis: uma grande mestra, duas mestras de andar e as chaves diferentes abaixo delas, com as três decisões que este artigo coloca na fase de projeto: uma porta com chave cruzada, uma porta fora de qualquer mestra e um grupo reservado para ampliação. Apenas ilustrativo; a hierarquia real é projetada na plataforma em que será cortada.",
-    ggmk: ["Grande grande mestra (GGMK)", "só para vários sistemas; muitas vezes não é emitida"],
+      "Um sistema de exemplo com três níveis: uma grande mestra, duas mestras de andar e as chaves individuais abaixo delas, com as três decisões que este artigo coloca na fase de projeto: uma porta com chave cruzada, uma porta fora de qualquer mestra e um grupo reservado para ampliação. Apenas ilustrativo; a hierarquia real é projetada na plataforma em que será cortada.",
+    ggmk: ["Grande mestra geral (GGMK)", "só para vários sistemas; muitas vezes não é emitida"],
     gmk: ["Grande mestra (GMK)", "abre todas as portas do sistema"],
     mk: (n) => [`Mestra (MK) · Andar ${n}`, `abre todas as portas do andar ${n}`],
     reserved: ["Grupo reservado", "não emitido, para ampliação"],
-    door: "chave diferente",
+    door: "chave individual",
     cross: ["Sala de reuniões", "chave cruzada"],
     noMaster: ["Sala de servidores", "fora de qualquer mestra"],
     legend: ["Com mestra", "Chave cruzada", "Reservado ou opcional"],
@@ -70,7 +70,7 @@ const LABELS: Partial<Record<Locale, Labels>> = {
     title: "Exemple d’organigramme de passe",
     caption:
       "Un exemple de système à trois niveaux : un passe général, deux passes partiels d’étage et les clés individuelles en dessous, avec les trois décisions que cet article place au moment de la conception : une porte en croisement, une porte hors de tout passe et un groupe réservé pour l’extension. Illustration seulement ; un vrai organigramme se conçoit sur la plateforme sur laquelle il sera taillé.",
-    ggmk: ["Passe grand général (GGMK)", "seulement pour plusieurs systèmes ; souvent non émis"],
+    ggmk: ["Grand passe général (GGMK)", "seulement pour plusieurs systèmes ; souvent non émis"],
     gmk: ["Passe général (GMK)", "ouvre toutes les portes du système"],
     mk: (n) => [`Passe partiel (MK) · Étage ${n}`, `ouvre toutes les portes de l’étage ${n}`],
     reserved: ["Groupe réservé", "non émis, pour l’extension"],

@@ -3,7 +3,7 @@
   "title": "Master Key Hierarchy Planning 2026: The Levels, What Cross-Keying Really Costs, and How to Leave Room for the Building You Will Have",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-26",
   "summary": "A master key system has up to 5 levels (GGMK, GMK, MK, SMK and the change key), and most buildings need 3 at most. Every extra level and every cross-keyed door spends combinations from a finite pool, which is why systems run out. This page sets out the hierarchy, the 5 questions to answer before a cylinder is cut, vertical versus horizontal designs, and how to reserve room for the building to grow.",
   "author": {
     "name": "Johnson Liu",
@@ -105,7 +105,7 @@
     "es": [
       {
         "question": "¿Cuántos niveles de amaestramiento necesita un edificio?",
-        "answer": "Normalmente tres como mucho. El número debe seguir cómo delega la autoridad la organización en la práctica, no cómo está dibujada la planta. Una oficina de dos plantas con un solo responsable de mantenimiento necesita una llave maestra y diferentes, no una gran maestra: los niveles de más cuestan capacidad y dinero y crean llaves que alguien tiene que controlar."
+        "answer": "Normalmente tres como mucho. El número debe seguir cómo delega la autoridad la organización en la práctica, no cómo está dibujada la planta. Una oficina de dos plantas con un solo responsable de mantenimiento necesita una llave maestra y llaves individuales, no una gran maestra: los niveles de más cuestan capacidad y dinero y crean llaves que alguien tiene que controlar."
       },
       {
         "question": "¿Por qué se queda sin capacidad un amaestramiento?",
@@ -131,7 +131,7 @@
     "pt": [
       {
         "question": "Quantos níveis de chave mestra um edifício precisa?",
-        "answer": "Normalmente três no máximo. O número deve seguir como a organização delega autoridade na prática, não como a planta está desenhada. Um escritório de dois pisos com um único responsável de manutenção precisa de uma mestra e diferentes, não de uma grande mestra: os níveis a mais custam capacidade e dinheiro e criam chaves que alguém tem que controlar."
+        "answer": "Normalmente três no máximo. O número deve seguir como a organização delega autoridade na prática, não como a planta está desenhada. Um escritório de dois pisos com um único responsável de manutenção precisa de uma mestra e chaves individuais, não de uma grande mestra: os níveis a mais custam capacidade e dinheiro e criam chaves que alguém tem que controlar."
       },
       {
         "question": "Por que um sistema de chave mestra fica sem capacidade?",
@@ -163,14 +163,14 @@
     "Un amaestramiento es una pieza de arquitectura. Se diseña una vez, antes de cortar ningún cilindro, y después el edificio vive dentro de ese diseño mientras duren los cilindros.",
     "Casi todo sistema que se vuelve inviable lo hace por una de dos razones, y las dos son decisiones de diseño tomadas la primera semana y no fallos que aparezcan después.",
     "## Los niveles, de arriba abajo",
-    "| Nivel | Abre | Lo tiene normalmente |\n| --- | --- | --- |\n| Gran gran maestra (GGMK) | Todo en todos los sistemas inferiores | Muy pocas personas, a menudo ninguna en el día a día |\n| Gran maestra (GMK) | Todo dentro de un sistema | Dirección de patrimonio o mantenimiento |\n| Maestra (MK) | Un departamento, planta o edificio | Un jefe de departamento, un responsable de turno |\n| Submaestra (SMK) | Un grupo dentro de ese departamento | Un jefe de equipo, un supervisor de limpieza |\n| Llave diferente | Una puerta, o un grupo pequeño | Quien usa esa puerta |",
+    "| Nivel | Abre | Lo tiene normalmente |\n| --- | --- | --- |\n| Gran maestra general (GGMK) | Todo en todos los sistemas inferiores | Muy pocas personas, a menudo ninguna en el día a día |\n| Gran maestra (GMK) | Todo dentro de un sistema | Dirección de patrimonio o mantenimiento |\n| Maestra (MK) | Un departamento, planta o edificio | Un jefe de departamento, un responsable de turno |\n| Submaestra (SMK) | Un grupo dentro de ese departamento | Un jefe de equipo, un supervisor de limpieza |\n| Llave individual | Una puerta, o un grupo pequeño | Quien usa esa puerta |",
     "Un sistema no necesita los cinco. La mayoría de los edificios necesita tres como mucho, y el número de niveles debe seguir la forma en que la organización delega autoridad de verdad, no la forma en que está dibujada la planta.",
-    "Esa distinción es la primera decisión de diseño y la que más se equivoca. Una oficina de dos plantas con un solo responsable de mantenimiento no necesita gran maestra: necesita maestra y diferentes. Añadir niveles que no usa cuesta capacidad, cuesta dinero, y crea llaves que alguien tiene que controlar.",
+    "Esa distinción es la primera decisión de diseño y la que más se equivoca. Una oficina de dos plantas con un solo responsable de mantenimiento no necesita gran maestra: necesita maestra y llaves individuales. Añadir niveles que no usa cuesta capacidad, cuesta dinero, y crea llaves que alguien tiene que controlar.",
     "## Por qué cada nivel cuesta capacidad",
     "Esta es la parte que rara vez se explica y que explica todo lo demás.",
     "Una bocallave tiene un número finito de diferentes utilizables, dentados distintos que accionan un cilindro y ningún otro. Ese conjunto lo fija la plataforma: el número de posiciones de pitón, el número de profundidades disponibles en cada una, y las reglas del fabricante sobre qué combinaciones se permiten.",
-    "Amaestrar funciona dando a un cilindro más de un punto de corte, para que lo accionen tanto la llave diferente como la maestra. Cada punto de corte adicional retira otros dentados del conjunto utilizable, porque esos dentados ahora accionarían el cilindro por accidente.",
-    "Así que la aritmética no es aditiva, es sustractiva. Cada nivel de maestra que añade, y cada puerta que amaestra en más de un grupo, reduce el número de llaves diferentes genuinamente únicas que el sistema todavía puede emitir.",
+    "Amaestrar funciona dando a un cilindro más de un punto de corte, para que lo accionen tanto la llave individual como la maestra. Cada punto de corte adicional retira otros dentados del conjunto utilizable, porque esos dentados ahora accionarían el cilindro por accidente.",
+    "Así que la aritmética no es aditiva, es sustractiva. Cada nivel de maestra que añade, y cada puerta que amaestra en más de un grupo, reduce el número de llaves individuales genuinamente únicas que el sistema todavía puede emitir.",
     "Por eso un sistema «se agota»: no porque alguien usara el último número de una lista, sino porque las combinaciones que quedan entrarían en conflicto con combinaciones ya emitidas.",
     "## El cruce es el favor caro",
     "El amaestramiento cruzado significa que un cilindro lo accionan llaves de más de una rama de la jerarquía, el caso clásico es una sala de reuniones que abren la maestra de ventas y la de marketing.",
@@ -180,10 +180,10 @@
     "## Las cinco preguntas que producen una jerarquía, en orden",
     "Un diseñador de sistemas las hará. Tener las respuestas preparadas convierte un intercambio de tres semanas en uno de una.",
     "¿Quién necesita abrirlo todo, y cuántos son? Si la respuesta es más de dos o tres personas, la pregunta suele estar mal planteada: un número grande de portadores de gran maestra es un sistema sin nivel superior en la práctica, porque una llave que llevan docenas de personas es una llave que no se puede recuperar.",
-    "¿Cuál es el grupo más pequeño que merece amaestrarse? Una maestra que abre cuatro puertas y la tiene una sola persona suele ser peor que cuatro llaves diferentes en un llavero, porque consume capacidad y añade una llave que abre más de lo que su portador necesita.",
+    "¿Cuál es el grupo más pequeño que merece amaestrarse? Una maestra que abre cuatro puertas y la tiene una sola persona suele ser peor que cuatro llaves individuales en un llavero, porque consume capacidad y añade una llave que abre más de lo que su portador necesita.",
     "¿Qué puertas no deben estar nunca en una maestra? Normalmente hay unas cuantas: un cuarto seguro, una farmacia, una sala de servidores, un archivo de personal. Decirlo en el diseño es fácil; sacar una puerta de una maestra después significa recilindrarla y reemitir todas las llaves que la abrían.",
     "¿Quién entrega la llave cuando alguien se va? Ese es el procedimiento de recuperación, y su existencia es lo que da sentido al resto del diseño. Un sistema sin procedimiento de recuperación degenera en un sistema abierto en unos cinco años, sea cual sea el perfil sobre el que se cortó.",
-    "¿Qué pasa si se pierde una maestra? Es la pregunta que la gente evita y la que lleva la cifra más grande asociada. Una llave diferente perdida cuesta un cilindro. Una maestra perdida cuesta todos los cilindros que esa llave accionaba, y la decisión de recodificar o asumir el riesgo es mucho más fácil si se habló antes de que pasara y no durante.",
+    "¿Qué pasa si se pierde una maestra? Es la pregunta que la gente evita y la que lleva la cifra más grande asociada. Una llave individual perdida cuesta un cilindro. Una maestra perdida cuesta todos los cilindros que esa llave accionaba, y la decisión de recodificar o asumir el riesgo es mucho más fácil si se habló antes de que pasara y no durante.",
     "## Dos diseños habituales, y cuándo es correcto cada uno",
     "Vertical: la jerarquía sigue al edificio: una maestra por planta, una gran maestra sobre todas. Sirve para edificios donde el acceso sigue a la geografía: un hotel, un ala de hospital, un guardamuebles.",
     "Horizontal: la jerarquía sigue a la función: una maestra de limpieza para todas las plantas, otra de mantenimiento, otra de seguridad. Sirve para edificios donde el mismo rol necesita las mismas salas en todas las plantas, que es la mayoría de las oficinas.",
@@ -219,27 +219,27 @@
     "Um sistema de chave mestra é uma peça de arquitetura. É projetado uma vez, antes de cortar qualquer cilindro, e depois o edifício vive dentro desse projeto enquanto os cilindros durarem.",
     "Quase todo sistema que se torna inviável fá-lo por uma de duas razões, e as duas são decisões de projeto tomadas na primeira semana e não falhas que apareçam depois.",
     "## Os níveis, de cima para baixo",
-    "| Nível | Abre | Normalmente detida por |\n| --- | --- | --- |\n| Grande grande mestra (GGMK) | Tudo em todos os sistemas abaixo | Muito poucas pessoas, muitas vezes nenhuma no dia a dia |\n| Grande mestra (GMK) | Tudo dentro de um sistema | Direção de patrimônio ou manutenção |\n| Mestra (MK) | Um departamento, piso ou edifício | Um chefe de departamento, um responsável de turno |\n| Submestra (SMK) | Um grupo dentro desse departamento | Um chefe de equipe, um supervisor de limpeza |\n| Chave diferente | Uma porta, ou um grupo pequeno | Quem usa essa porta |",
+    "| Nível | Abre | Normalmente detida por |\n| --- | --- | --- |\n| Grande mestra geral (GGMK) | Tudo em todos os sistemas abaixo | Muito poucas pessoas, muitas vezes nenhuma no dia a dia |\n| Grande mestra (GMK) | Tudo dentro de um sistema | Direção de patrimônio ou manutenção |\n| Mestra (MK) | Um departamento, piso ou edifício | Um chefe de departamento, um responsável de turno |\n| Submestra (SMK) | Um grupo dentro desse departamento | Um chefe de equipe, um supervisor de limpeza |\n| Chave individual | Uma porta, ou um grupo pequeno | Quem usa essa porta |",
     "Um sistema não precisa dos cinco. A maioria dos edifícios precisa de três no máximo, e o número de níveis deve seguir a forma como a organização delega autoridade de verdade, não a forma como a planta está desenhada.",
-    "Essa distinção é a primeira decisão de projeto e a que mais se erra. Um escritório de dois pisos com um único responsável de manutenção não precisa de grande mestra: precisa de mestra e diferentes. Acrescentar níveis que não usa custa capacidade, custa dinheiro, e cria chaves que alguém tem que controlar.",
+    "Essa distinção é a primeira decisão de projeto e a que mais se erra. Um escritório de dois pisos com um único responsável de manutenção não precisa de grande mestra: precisa de mestra e chaves individuais. Acrescentar níveis que não usa custa capacidade, custa dinheiro, e cria chaves que alguém tem que controlar.",
     "## Por que cada nível custa capacidade",
     "Esta é a parte que raramente é explicada e que explica todo o resto.",
     "Um palhetão tem um número finito de diferentes utilizáveis, dentados distintos que acionam um cilindro e nenhum outro. Esse conjunto é fixado pela plataforma: o número de posições de pino, o número de profundidades disponíveis em cada uma, e as regras do fabricante sobre que combinações são permitidas.",
-    "Mestrar funciona dando a um cilindro mais de um ponto de corte, para que tanto a chave diferente como a mestra o acionem. Cada ponto de corte adicional retira outros dentados do conjunto utilizável, porque esses dentados agora acionariam o cilindro por acidente.",
-    "Então a aritmética não é aditiva, é subtrativa. Cada nível de mestra que acrescenta, e cada porta que mestra em mais de um grupo, reduz o número de chaves diferentes genuinamente únicas que o sistema ainda pode emitir.",
+    "Mestrar funciona dando a um cilindro mais de um ponto de corte, para que tanto a chave individual como a mestra o acionem. Cada ponto de corte adicional retira outros dentados do conjunto utilizável, porque esses dentados agora acionariam o cilindro por acidente.",
+    "Então a aritmética não é aditiva, é subtrativa. Cada nível de mestra que acrescenta, e cada porta que mestra em mais de um grupo, reduz o número de chaves individuais genuinamente únicas que o sistema ainda pode emitir.",
     "Por isso um sistema \"esgota-se\": não porque alguém usou o último número de uma lista, mas porque as combinações que restam entrariam em conflito com combinações já emitidas.",
     "## O cruzamento é o favor caro",
     "O chaveamento cruzado significa que um cilindro é acionado por chaves de mais de um ramo da hierarquia, o caso clássico é uma sala de reuniões que a mestra de vendas e a de marketing abrem.",
     "É pedido como uma pequena comodidade e concedido da mesma forma, porta a porta. Não é nem pequeno nem pontual: cada cilindro cruzado acrescenta pontos de corte e consome de forma desproporcionada do conjunto, e um sistema com cruzamentos espalhados esgota-se muito antes da sua capacidade nominal.",
     "Também enfraquece o controle de chave de uma forma que ninguém nota. Um cilindro com muitos pontos de corte pode ser aberto por mais chaves do que o previsto, incluindo chaves que nunca deviam funcionar perto dele.",
-    "A disciplina que o evita é de procedimento e não técnica: os pedidos de cruzamento vão a quem detém o sistema, não ao serralheiro, e são respondidos contra o projeto e não contra o pedido. A maioria resolve-se melhor movendo a porta para outro grupo.",
+    "A disciplina que o evita é de procedimento e não técnica: os pedidos de cruzamento vão a quem detém o sistema, não ao chaveiro, e são respondidos contra o projeto e não contra o pedido. A maioria resolve-se melhor movendo a porta para outro grupo.",
     "## As cinco perguntas que produzem uma hierarquia, por ordem",
     "Um projetista de sistemas vai fazê-las. Ter as respostas prontas transforma uma troca de três semanas numa de uma.",
     "Quem precisa de abrir tudo, e quantos são? Se a resposta é mais de duas ou três pessoas, a pergunta costuma estar mal colocada: um número grande de portadores de grande mestra é um sistema sem nível de topo na prática, porque uma chave que dezenas de pessoas levam é uma chave que não se consegue recuperar.",
-    "Qual é o menor grupo que vale a pena mestrar? Uma mestra que abre quatro portas e é detida por uma só pessoa costuma ser pior do que quatro chaves diferentes num porta-chaves, porque consome capacidade e acrescenta uma chave que abre mais do que o seu portador precisa.",
+    "Qual é o menor grupo que vale a pena mestrar? Uma mestra que abre quatro portas e é detida por uma só pessoa costuma ser pior do que quatro chaves individuais num porta-chaves, porque consome capacidade e acrescenta uma chave que abre mais do que o seu portador precisa.",
     "Que portas nunca devem estar numa mestra? Normalmente há algumas: um quarto seguro, uma farmácia, uma sala de servidores, um arquivo de pessoal. Dizê-lo no projeto é fácil; tirar uma porta de uma mestra depois significa recilindrá-la e reemitir todas as chaves que a abriam.",
     "Quem entrega a chave quando alguém sai? Esse é o procedimento de recolha, e a sua existência é o que dá sentido ao resto do projeto. Um sistema sem procedimento de recolha degenera num sistema aberto em cerca de cinco anos, seja qual for o perfil sobre o qual foi cortado.",
-    "O que acontece se uma mestra se perder? É a pergunta que as pessoas evitam e a que tem a cifra maior associada. Uma chave diferente perdida custa um cilindro. Uma mestra perdida custa todos os cilindros que essa chave acionava, e a decisão de recodificar ou assumir o risco é muito mais fácil se foi falada antes de acontecer e não durante.",
+    "O que acontece se uma mestra se perder? É a pergunta que as pessoas evitam e a que tem a cifra maior associada. Uma chave individual perdida custa um cilindro. Uma mestra perdida custa todos os cilindros que essa chave acionava, e a decisão de recodificar ou assumir o risco é muito mais fácil se foi falada antes de acontecer e não durante.",
     "## Dois projetos habituais, e quando cada um está certo",
     "Vertical: a hierarquia segue o edifício: uma mestra por piso, uma grande mestra sobre todos. Serve para edifícios onde o acesso segue a geografia: um hotel, uma ala de hospital, um armazém de arrumação.",
     "Horizontal: a hierarquia segue a função: uma mestra de limpeza para todos os pisos, outra de manutenção, outra de segurança. Serve para edifícios onde a mesma função precisa das mesmas salas em todos os pisos, que é a maioria dos escritórios.",
@@ -265,7 +265,7 @@
     "## O que confirmamos e o que não",
     "Confirmamos a linha de cilindro, os comprimentos e as repartições, os acabamentos e as quantidades, e confirmamos o perfil e o que é comprometido em controle de chave, pedido a pedido e por escrito.",
     "Do lado do catálogo, as páginas dizem quais produtos podem entrar num sistema: a fechadura cilíndrica 578 e a maçaneta 3431 são publicadas como podendo usar a mesma chave dos nossos ferrolhos ou ser mestradas.",
-    "O projeto da hierarquia é normalmente feito por quem detém o sistema (um serralheiro, um consultor de segurança, ou o fabricante de uma plataforma patenteada) porque depende das regras de mestragem dessa plataforma e de um organograma de que não fazemos parte. Preferimos dizê-lo sem rodeios a desenhar uma hierarquia que pareça correta e entre em conflito com a plataforma sobre a qual tem que ser cortada."
+    "O projeto da hierarquia é normalmente feito por quem detém o sistema (um chaveiro, um consultor de segurança, ou o fabricante de uma plataforma patenteada) porque depende das regras de mestragem dessa plataforma e de um organograma de que não fazemos parte. Preferimos dizê-lo sem rodeios a desenhar uma hierarquia que pareça correta e entre em conflito com a plataforma sobre a qual tem que ser cortada."
   ],
   "relatedModels": [
     "578 SSET",

@@ -3,7 +3,7 @@
   "title": "How to Write a Keying Schedule, With a Blank Template",
   "kind": "insight",
   "publishedAt": "2026-10-19",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-26",
   "summary": "A keying schedule is the door-by-door table cylinders are pinned from: door, cylinder type and length, function, key symbol, the master levels that open it, key quantity and notes. Here are the columns, how symbols such as AA1 and AB2 are named, a worked example for a small office, a blank template to copy, and what to send with an order.",
   "author": {
     "name": "Johnson Liu",
@@ -145,7 +145,7 @@
       },
       {
         "question": "O que significam símbolos de chave como AA1 e AB2?",
-        "answer": "Na convenção padrão de codificação cada caractere marca um nível. Num sistema de quatro níveis a GGM é a chave superior, uma letra só como A é uma grã-mestra, duas letras como AB são uma mestra sob A, e um número acrescentado, como em AB2, é uma chave individual sob essa mestra. O prefixo X, como em XAB2, marca um cilindro com chaveamento cruzado."
+        "answer": "Na convenção padrão de codificação cada caractere marca um nível. Num sistema de quatro níveis a GGM é a chave superior, uma letra só como A é uma grande mestra, duas letras como AB são uma mestra sob A, e um número acrescentado, como em AB2, é uma chave individual sob essa mestra. O prefixo X, como em XAB2, marca um cilindro com chaveamento cruzado."
       },
       {
         "question": "Qual a diferença entre planilha de chaves e quadro de chaves?",
@@ -169,7 +169,7 @@
     "Muitas planilhas acrescentam uma coluna de acabamento. Numa obra com um único acabamento, é mais limpo declará-lo uma vez no cabeçalho e usar a coluna só para exceções, porque um cilindro de outro acabamento numa sequência de portas iguais é notado por qualquer visitante.",
     "## Como nomear os símbolos de chave",
     "A maioria das planilhas usa a convenção padrão de codificação de chaves do setor de ferragens norte-americano, descrita na nomenclatura de mestragem do Door and Hardware Institute e refletida na prática recomendada da BHMA para sistemas de chaves mecânicos, A156.28. A vantagem é que cada símbolo carrega a própria posição na hierarquia, então quem revisa consegue ler uma linha sem consultar mais nada.",
-    "Num sistema de quatro níveis a chave superior é a GGM. Cada grã-mestra abaixo dela recebe uma letra: A, B. Cada mestra acrescenta uma segunda letra, então as mestras sob A são AA e AB, e a primeira mestra sob B é BA. As chaves individuais acrescentam um número: AA1, AA2, AB1, AB2. Lido da esquerda, AB2 diz chave individual 2, sob a mestra AB, sob a grã-mestra A, sob a GGM. Um sistema de cinco níveis coloca uma submestra entre a mestra e a chave individual acrescentando uma terceira letra, AAA, com chaves individuais AAA1, AAA2. Um sistema de três níveis começa mais abaixo: a chave superior é a GM, as mestras são A e B, e as chaves individuais são A1, A2, B1.",
+    "Num sistema de quatro níveis a chave superior é a GGM. Cada grande mestra abaixo dela recebe uma letra: A, B. Cada mestra acrescenta uma segunda letra, então as mestras sob A são AA e AB, e a primeira mestra sob B é BA. As chaves individuais acrescentam um número: AA1, AA2, AB1, AB2. Lido da esquerda, AB2 diz chave individual 2, sob a mestra AB, sob a grande mestra A, sob a GGM. Um sistema de cinco níveis coloca uma submestra entre a mestra e a chave individual acrescentando uma terceira letra, AAA, com chaves individuais AAA1, AAA2. Um sistema de três níveis começa mais abaixo: a chave superior é a GM, as mestras são A e B, e as chaves individuais são A1, A2, B1.",
     "Duas marcas a mais aparecem em quase todo planilha real. Um X antes do símbolo, como em XAB2, indica que o cilindro tem chaveamento cruzado: combinado a AB2, mas também aberto por uma chave de outro ramo, que a coluna de observações precisa nomear. E um símbolo que aparece em mais de uma linha indica que essas portas têm o mesmo segredo. Muitas vezes é intencional, duas portas de um mesmo escritório, e às vezes é erro de digitação, então a planilha deve declarar cada grupo de mesmo segredo nas observações em vez de deixar o leitor descobrir a repetição. Qualquer que seja a convenção, coloque uma legenda no topo da folha e mantenha a mesma em todas as páginas.",
     "## Exemplo resolvido: um escritório pequeno térreo",
     "Considere um escritório pequeno com sete portas com fechadura e três níveis: uma GM com o proprietário, a mestra A para a área de escritório, com o gerente, e a mestra B para a área de serviço, com a empresa de limpeza. Os cilindros são três dos nossos modelos de perfil europeu, lançados só como as fichas os publicam. O 70 SNKT-2 tem 70mm de comprimento total e a ficha dá a divisão como 30/10/30; a fotografia mostra chave de um lado e borboleta do outro. O 60 SNDK tem 60mm e o 70 SNDK tem 70mm, ambos com função de chave dos dois lados. Os três constam em níquel acetinado (SN). Nenhuma das duas fichas SNDK publica a divisão, então a planilha diz isso em vez de inventar uma. Os dois comprimentos seguem as portas conforme medidas, e mostram algo que vale guardar: um sistema pode misturar comprimentos, mas não perfis.",

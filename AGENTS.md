@@ -565,6 +565,13 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
    (`scripts/chunk-push-release.mjs` if a single push times out), verifies live and runs
    `npm run seo:indexnow:release`. Its release checkout is `tmp/claude-release/release-hyde`.
 
+   **2026-10-26: the 86132 multilingual session (「Hyde 多语言页面 SEO 优化」) also releases** (client:
+   「你直接接管发布」, while the johns engineering session was offline). It runs
+   `npm run release:hyde -- --root E:/release` on 86132. The 09-28 constraints still hold there: 16 GB RAM,
+   so close other builds first; if a push times out, use `scripts/chunk-push-release.mjs`; deploy goes
+   through GitLab as `release:hyde` already does. Whichever session releases, it holds the
+   「HYDE 发布棒」 row in NOW.md while it does, and gives it back when the release is verified live.
+
    **On the 86132 machine, put the checkout on E:** (client, 2026-09-24: 「改为 E 盘」). C: is full —
    on 2026-09-24 it had 2.8 GB left, a clean checkout is ~4 GB before dependencies, and the
    release died inside `git worktree add` with `No space left on device`, which reads like a
