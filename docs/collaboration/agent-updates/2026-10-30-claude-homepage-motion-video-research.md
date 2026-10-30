@@ -7,3 +7,10 @@
 - **关键判断：** 「高级动效」和「FSB 克制」不矛盾——Paperman/Steelworks 的高级来自物理感和克制节奏；会拉远距离的是发光、视差、3D 卡片、数字跳动那一层（10-09 远高评估已否）。实拍比 AI 视频更便宜且唯一合规（10-13 渲染核对规则下，10 秒视频逐帧核对不现实）；3D 只用于锁体爆炸图。
 - **未动代码。** 首页改版建议先取 Clarity 首页滚动深度和模块点击热图作依据，再实施。
 - **待甲方：** 保修年限（机械 / 表面）；首页 hero 用哪件产品（推荐 307）；是否安排一天工厂实拍。
+
+## 补充：网络放开后的实测（同日）
+
+- 甲方把环境网络改为 Full 后，用 Playwright 实测 8 个站首页（截图、视频数、动效库、`document.getAnimations()` 计数、页面高度）。结论写进研究文档第九节：页面长度是最大差距（我们 19,144 px，FSB 10,837，Olivari 3,150）；FSB、RMH 首页 0 视频 0 动画；我们真正循环的只有地图 2 个脉冲点，滚到一半时地图一次揭示 86 个元素。
+- 线上核对：v2026.10.29.4 已上线，robots 分组和 Cloudflare 规则生效（Bytespider / Baiduspider / DeepSeekBot 403，GPTBot 200）。
+- **雷茵邮箱未上线：** rayen.cn 线上显示 info@/sales@/tech@rayen.cn，不是仓库 main 里的 tec@cantonlock.com。已写进文档请雷茵核对，本会话不动 RAYEN 线。
+- WebFetch 工具仍解析不了这些域名（它不走代理），curl 和 Playwright 可以。以后实看站点用 Playwright。
