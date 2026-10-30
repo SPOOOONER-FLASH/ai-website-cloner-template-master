@@ -40,6 +40,7 @@
     ]
   },
   "scripts": {
+    "dashboards:api": "node scripts/fetch-dashboards-api.mjs",
     "dev": "next dev",
     "build": "next build && node scripts/normalize-next-export-segments.mjs && node scripts/build-rayen-site.mjs && node scripts/hoist-head-scripts.mjs",
     "start": "next start",

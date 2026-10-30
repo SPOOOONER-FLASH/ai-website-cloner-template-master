@@ -54,8 +54,13 @@ node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001-de" --
 ```
 德语、法语、阿拉伯语、土耳其语上线前，标题里的买家用语就从这几份里取。
 
-以后如果甲方愿意，可以换成 API 自动拉取（Clarity 数据导出令牌、GSC / GA4 服务账号）。那需要甲方自己在
-各后台生成凭据、放在本机 `.env` 里，**永远不进 git**。在此之前，CSV 这条路已经够用。
+**API 自动拉取（2026-10-25 起）**：`npm run dashboards:api`（即 `node scripts/fetch-dashboards-api.mjs`）。
+在 johns 机器上运行，云端会话的网络连不到这些接口。它直接从四个看板的接口取数，写到
+`docs/research/analytics/<日期>/api/`（每份报表一个 JSON，外加一份 `API-SUMMARY.md`）。凭据只放在仓库根目录的
+`.env.local` 里，**永远不进 git，也不要发在聊天里**；变量名见 `.env.example`，甲方的开通步骤见
+`docs/collaboration/2026-10-25-手动操作-看板API开通.md`。缺哪个凭据，就跳过哪个看板，并提示缺的变量名。
+接口拿不到的数据仍要手动导出 CSV：Bing 的 AI 表现页、Cloudflare AI Crawl Control、GSC 的「索引编制」和「生成式 AI 功能」。
+Clarity 的接口只给最近 1–3 天的数据，每天限 10 次请求，所以要每天或隔天拉一次才不丢数据。
 
 ## 报数口径（2026-09-30 起，所有会话）
 
